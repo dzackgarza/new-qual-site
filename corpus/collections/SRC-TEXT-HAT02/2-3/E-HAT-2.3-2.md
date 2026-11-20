@@ -133,7 +133,7 @@ $$
 Q(X)=JW_k(X)=\prod_{i\in\ZZ}\widetilde H_i(X)\big/\bigoplus_{i\in\ZZ}\widetilde H_i(X),
 \qquad \widetilde h_n(X)=Q(X).
 $$
-Casassas indexes his product over $i\ge0$ and Hatcher over $i\in\ZZ$; the two agree because reduced homology vanishes in negative degrees, $\widetilde H_i(X)=0$ for $i<0$, so the extra factors of Hatcher's product are trivial. (Hatcher allows negative subscripts but ordinary singular homology is zero there by definition, printed p. 161.) The factor in degree zero is the same in both, both authors using reduced groups.
+Casassas indexes his product over $i\ge0$ and Hatcher over $i\in\ZZ$; the two agree because reduced homology vanishes in negative degrees, $\widetilde H_i(X)=0$ for $i<0$, so the extra factors of Hatcher's product are trivial. (Hatcher allows negative subscripts but ordinary singular homology is zero there by definition, §2.3.) The factor in degree zero is the same in both, both authors using reduced groups.
 
 ::: pf
 
@@ -143,7 +143,7 @@ Homotopy invariance holds.
 
 ::: pf-proof
 
-If $f\simeq g$ as maps on a space or on a pair, then $\widetilde H_i(f)=\widetilde H_i(g)$ for each index $i$ by ordinary homotopy invariance. The induced maps on the product and on its direct-sum subgroup are therefore equal, and their induced maps on the quotient are equal. Thus $f_*=g_*$ on $Q(X)$. This is Casassas's homotopy-invariance step on p. 7, not merely preservation of homotopy equivalences.
+If $f\simeq g$ as maps on a space or on a pair, then $\widetilde H_i(f)=\widetilde H_i(g)$ for each index $i$ by ordinary homotopy invariance. The induced maps on the product and on its direct-sum subgroup are therefore equal, and their induced maps on the quotient are equal. Thus $f_*=g_*$ on $Q(X)$. This is Casassas's homotopy-invariance step in §2.1, not merely preservation of homotopy equivalences.
 
 :::
 
@@ -162,7 +162,7 @@ Q(\Sigma X)
 \cong\frac{\prod_j\widetilde H_j(X)}{\bigoplus_j\widetilde H_j(X)}
 =Q(X).
 $$
-This is the published $A_i\cong B_i$ step on p. 7. Consequently $\widetilde h_{n+1}(\Sigma X)\cong\widetilde h_n(X)$ for every $n$, independently of $n$ by construction.
+This is the published $A_i\cong B_i$ step in §2.1. Consequently $\widetilde h_{n+1}(\Sigma X)\cong\widetilde h_n(X)$ for every $n$, independently of $n$ by construction.
 
 :::
 
@@ -174,7 +174,7 @@ Exactness holds, with all connecting maps induced coordinatewise from ordinary h
 
 ::: pf-proof
 
-For a cofibration sequence $A\to X\to X/A$, ordinary reduced homology gives a long exact sequence, which is axiom (2) of p. 160. Reindexing turns the connecting map into a degree-preserving map between the products defining $Q$. As in Casassas p. 7, consider the family of sequences
+For a cofibration sequence $A\to X\to X/A$, ordinary reduced homology gives a long exact sequence, which is axiom (2) of §2.3. Reindexing turns the connecting map into a degree-preserving map between the products defining $Q$. As in Casassas §2.1, consider the family of sequences
 $$
 B_*^j=\cdots\longrightarrow \widetilde H_{n+1+j}(X,A)
 \longrightarrow\widetilde H_{n+j}(A)
@@ -199,7 +199,7 @@ The candidate vanishes on finite-dimensional complexes, in particular at a point
 
 ::: pf-proof
 
-If $X$ is a finite-dimensional CW complex, then $\widetilde H_i(X)=0$ for $i<0$ and for $i>\dim X$ (this is Theorem 2.35, whose cellular chain groups vanish above the dimension), so all but finitely many of the groups $\widetilde H_i(X)$ are zero. For such a family the direct sum already fills the product, so the quotient $Q(X)$ is trivial. This finite-support implication, that the canonical map $\bigoplus_i f_i\to\prod_i f_i$ is an isomorphism when all but finitely many $f_i$ vanish, is what <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/FamilyQuotient.lean> certifies, and it is exactly what the vanishing of the quotient needs; that file does not assert an isomorphism between the sum and the product for a family with infinite support, and there the quotient need not vanish, which is the failure exhibited in the next step. The point is the case of dimension $0$ with every $\widetilde H_i$ zero, and $S^0$ is the case in which only $\widetilde H_0(S^0)=\ZZ$ is nonzero. This is the vanishing the exercise asserts for finite-dimensional $X$; it is not the Eilenberg--Steenrod dimension axiom, which Hatcher omits from his axioms (printed p. 161) and which ordinary homology would supply with $\widetilde H_0(S^0)=\ZZ\ne Q(S^0)$.
+If $X$ is a finite-dimensional CW complex, then $\widetilde H_i(X)=0$ for $i<0$ and for $i>\dim X$ (this is Theorem 2.35, whose cellular chain groups vanish above the dimension), so all but finitely many of the groups $\widetilde H_i(X)$ are zero. For such a family the direct sum already fills the product, so the quotient $Q(X)$ is trivial. This finite-support implication, that the canonical map $\bigoplus_i f_i\to\prod_i f_i$ is an isomorphism when all but finitely many $f_i$ vanish, is what <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/FamilyQuotient.lean> certifies, and it is exactly what the vanishing of the quotient needs; that file does not assert an isomorphism between the sum and the product for a family with infinite support, and there the quotient need not vanish, which is the failure exhibited in the next step. The point is the case of dimension $0$ with every $\widetilde H_i$ zero, and $S^0$ is the case in which only $\widetilde H_0(S^0)=\ZZ$ is nonzero. This is the vanishing the exercise asserts for finite-dimensional $X$; it is not the Eilenberg--Steenrod dimension axiom, which Hatcher omits from his axioms (§2.3) and which ordinary homology would supply with $\widetilde H_0(S^0)=\ZZ\ne Q(S^0)$.
 
 :::
 

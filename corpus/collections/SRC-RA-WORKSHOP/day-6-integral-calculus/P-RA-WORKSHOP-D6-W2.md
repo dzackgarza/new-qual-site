@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-([Apo74, 7.12] c.f. [Rud76, p. 138 #3]) Give an example of a bounded function $f$ and an increasing function $\alpha$ defined on $[a,b]$ such that $\abs{f}\in\mathcal R(\alpha)$ but $f\notin\mathcal R(\alpha)$.
+([Apo74, 7.12] c.f. [Rud76, citation lacks a read source]) Give an example of a bounded function $f$ and an increasing function $\alpha$ defined on $[a,b]$ such that $\abs{f}\in\mathcal R(\alpha)$ but $f\notin\mathcal R(\alpha)$.
 :::
 
 ::: {.solution}

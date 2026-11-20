@@ -84,7 +84,7 @@ Show the degree of $f$ is $\sum_i \varepsilon_i$ where $\varepsilon_i$ is $+1$ o
 :::
 
 ::: {.solution}
-The argument is transcribed from the published solution of Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.3 Exercise 8, which sets up the diagram of local homology groups used below; the same argument, with the same diagram, is in the Math 538 homework solutions, HMW 4, handwritten pp. 1--2 (PDF pp. 17--18 of `tmp/sources/hatcher-math538-homework4-solutions.pdf`). It is checked against Hatcher, Algebraic Topology, Section 3.3 Exercise 8, and against the local degree discussion of p. 136.
+The argument is transcribed from the published solution of Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.3 Exercise 8, which sets up the diagram of local homology groups used below; the same argument, with the same diagram, is in the Math 538 homework solutions, HMW 4 (`tmp/sources/hatcher-math538-homework4-solutions.pdf`). It is checked against Hatcher, Algebraic Topology, Section 3.3 Exercise 8, and against the local degree discussion of §2.2.
 
 ::: pf
 

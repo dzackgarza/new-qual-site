@@ -36,7 +36,7 @@ whenever $s \neq 0, -1, -2, \ldots$.
 :::
 
 ::: {.solution}
-This is Exercise 1 of Chapter 6 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 174; the statement below is its wording.
+This is Exercise 1 of Chapter 6 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`; the statement below is its wording.
 **Goal:** Prove Gauss's limit formula for the Gamma function:
 $$
 \Gamma(s) = \lim_{n \to \infty} \frac{n^s n!}{s(s+1)(s+2)\cdots(s+n)} \qquad \text{for } s \in \CC \setminus \{0, -1, -2, \dots\}.

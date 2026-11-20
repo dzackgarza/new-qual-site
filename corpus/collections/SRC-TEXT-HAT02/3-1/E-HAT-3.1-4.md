@@ -61,7 +61,7 @@ More specifically, what are the groups $h_n(X; G)$ when $G = \ZZ$, $\ZZ_m$, and 
 :::
 
 ::: {.solution}
-Hatcher p.108: $C_n(X)$ is the free abelian group with basis the singular $n$-simplices of $X$, so it is torsion-free and has no nonzero element divisible by every integer, the two facts the last two cases use. We compute
+Hatcher, §2.1: $C_n(X)$ is the free abelian group with basis the singular $n$-simplices of $X$, so it is torsion-free and has no nonzero element divisible by every integer, the two facts the last two cases use. We compute
 $$
 h_n(X;G)=H_n\bigl(\operatorname{Hom}(G,C_\bullet(X))\bigr)
 $$
@@ -82,7 +82,7 @@ Evaluation at $1$ gives a natural isomorphism
 $$
 \operatorname{Hom}(\ZZ,C_n(X))\cong C_n(X)
 $$
-for every $n$, and under this identification the differential $\varphi \mapsto \partial \circ \varphi$, which is the dual of p.191 with the two entries interchanged, becomes $\partial$ itself applied to $\varphi(1)$. Thus the two chain complexes are naturally isomorphic and $h_n(X;\ZZ) = H_n(X;\ZZ)$, the singular homology of p.108.
+for every $n$, and under this identification the differential $\varphi \mapsto \partial \circ \varphi$, which is the dual of the cochain complex constructed in §3.1 with the two entries interchanged, becomes $\partial$ itself applied to $\varphi(1)$. Thus the two chain complexes are naturally isomorphic and $h_n(X;\ZZ) = H_n(X;\ZZ)$, the singular homology of §2.1.
 
 :::
 

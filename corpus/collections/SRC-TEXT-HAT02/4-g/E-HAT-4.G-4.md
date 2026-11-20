@@ -64,7 +64,7 @@ Let $X=\bigcup_{i\in I}X_i$ be a CW complex covered by subcomplexes. For each
 nonempty finite $\sigma\subset I$, put $X_\sigma=\bigcap_{i\in\sigma}X_i$.
 Every $X_\sigma$ is a subcomplex, and $\{X_\sigma\}$ is the diagram of
 finite intersections of the cover. Let $\Delta X_{\mathcal U}$ be its
-realization (p.458) and
+realization (§4.G) and
 
 $$
 p:\Delta X_{\mathcal U}\longrightarrow X,\qquad p(x_\sigma,s)=x_\sigma
@@ -159,7 +159,7 @@ $p:Y^n\to X^n$ is a homotopy equivalence. Taking direct limits over $n$,
 $X=\operatorname{colim}X^n$, $\Delta X_{\mathcal U}=\operatorname{colim}Y^n$ with
 the weak topology, and a direct limit of homotopy equivalences of CW inclusions
 is a homotopy equivalence, so $p:\Delta X_{\mathcal U}\to X$ is a homotopy
-equivalence. This is the subcomplex-cover version of Proposition 4G.2 (p.459).
+equivalence. This is the subcomplex-cover version of Proposition 4G.2.
 
 :::
 
@@ -176,7 +176,7 @@ and let $c_\sigma:X_\sigma\to\{x_\sigma\}$ be the constant map, a homotopy
 equivalence. The family $c_\sigma$ is a map of complexes of spaces from
 $\{X_\sigma\}$ to the constant diagram $\{\ast\}_\sigma$ over the same base
 $\Gamma=N(\mathcal U)$ (the nerve, whose $n$-simplices are the $\sigma$ with
-$\cardinality{\sigma}=n+1$ and $X_\sigma\neq\emptyset$). By Proposition 4G.1 (p.458), a map of
+$\cardinality{\sigma}=n+1$ and $X_\sigma\neq\emptyset$). By Proposition 4G.1, a map of
 complexes of spaces which is a homotopy equivalence on each vertex space induces a
 homotopy equivalence of realizations, so
 

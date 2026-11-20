@@ -46,7 +46,7 @@ audit:
 ---
 
 ::: {.exercise}
-This is Problem 1 of Chapter 10 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 314; the statement below is its wording.
+This is Problem 1 of Chapter 10 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`; the statement below is its wording.
 
 Suppose $n=4^a(8k+7)$, where $a$ and $k$ are positive integers. Show that $n$ cannot be written as a sum of three integer squares. The converse, that every $n$ that is not of that form can be written as the sum of three squares, is a difficult theorem of Legendre and Gauss.
 :::

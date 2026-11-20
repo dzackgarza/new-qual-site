@@ -46,7 +46,7 @@ for constants $a,b\in\CC$ with $\abs{a}=1$.
 :::
 
 ::: {.solution}
-The item is Section 2 item 1 of the Complex Analysis section of the Analysis Qualifier, Wesleyan University, Summer 2007 (an entire $f=u+iv$ with $u_xv_y-u_yv_x=1$ has the form $az+b$ with $\abs{a}=1$), on PDF p. 9 (printed p. 3 of the 2007 complex-analysis paper) of the retained scan
+The item is Section 2 item 1 of the Complex Analysis section of the Analysis Qualifier, Wesleyan University, Summer 2007 (an entire $f=u+iv$ with $u_xv_y-u_yv_x=1$ has the form $az+b$ with $\abs{a}=1$), in the retained scan
 assets/attachments/analysis_2003-2007.pdf.
 
 

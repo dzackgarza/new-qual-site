@@ -569,11 +569,11 @@ Away from the exceptional divisor the blowup is an isomorphism, so this
 is the only singular point of the first strict transform.
 
 The three charts are those of Yang Pi-Yeh, *Hartshorne Solutions*, solution
-5.5.8(b), printed p. 114, who writes $1+xy_1^3+x^3z_1^5$,
+5.5.8(b), who writes $1+xy_1^3+x^3z_1^5$,
 $x_1^2+y+y^3z_1^5$ and $x_1^2+zy_1^3+z^3$ and checks the first two by their
 Jacobians, and the third is item (i) of Exercise 8 of §5 of the NTU *Chapter
 V Surfaces* homework, Algebraic Geometry II, National Taiwan University, 2020
-Spring, solution by Yi-Heng, PDF p. 21, which reaches
+Spring, solution by Yi-Heng, which reaches
 $x_1^2+zy_1^3+z^3$ in the chart $z_1=1$.
 :::
 
@@ -631,9 +631,8 @@ $$
 E_1\cap E_2.
 $$
 
-The chart $y_2=1$ with $x_2^2+z_2y_1^2+y_1z^3$ is item (ii) of the NTU set,
-PDF p. 21. The other two charts are Yang Pi-Yeh's, solution 5.5.8(b), printed
-p. 114: the piece $z_2=1$ reads $x_2^2+z+y_2^3z^2$, which is $x_2^2+z+z^2y_2^3$
+The chart $y_2=1$ with $x_2^2+z_2y_1^2+y_1z^3$ is item (ii) of the NTU set.
+The other two charts are Yang Pi-Yeh's, solution 5.5.8(b): the piece $z_2=1$ reads $x_2^2+z+y_2^3z^2$, which is $x_2^2+z+z^2y_2^3$
 above, and the piece $x_2=1$ reads $1+z_2y_2^3x_1^2+z_2^3x_1$, which is the
 $x$-chart above and does not meet the exceptional curve.
 :::
@@ -700,7 +699,7 @@ $$
 with the two displayed intersection points still singular.
 
 The two germs are items (iii) of Exercise 8 of §5 of the NTU *Chapter V
-Surfaces* homework, PDF p. 21,
+Surfaces* homework,
 $x_3^2+z_3y_1+y_1^2z_3^3$ and $x_3^2+z_2y_3^2+y_3z_2^2$; that the second of
 them is $X^2+zY(Y+z)$ and the first is $X^2+yZ+y^2Z^3$, and that their
 exceptional curves are the strict transforms of $E_1$ and $E_2$ meeting
@@ -738,7 +737,7 @@ $$
 E_1-E_4-E_3.
 $$
 
-This step is the card's own. Item (iv) of the NTU set, PDF p. 21, records
+This step is the card's own. Item (iv) of the NTU set records
 the strict transform as nonsingular and gives no chart of it.
 :::
 
@@ -810,7 +809,7 @@ The point $Z=0$ is where the strict transform of $E_3$ meets $E_5$, the
 point $V=0$ is where the strict transform of $E_2$ meets $E_5$, and the
 third point is a free point of $E_5$.
 
-Item (v) of the NTU set, PDF p. 21, lists the three singular points of
+Item (v) of the NTU set lists the three singular points of
 the strict transform. Which exceptional curve each of them lies on, and so
 the incidences $E_3-E_5$ and $E_2-E_5$ below, is this card's own reading of
 the charts.
@@ -854,7 +853,7 @@ Each ordinary double point is resolved by its single blowup, and the
 three points are distinct. Therefore after these three blowups the strict
 transform is nonsingular.
 
-These are items (vi)--(viii) of the NTU set, PDF p. 21, item (vii) being
+These are items (vi)--(viii) of the NTU set, item (vii) being
 recorded there as "similar to (vi)". The chart checks of the three blows,
 and the resolution of each ordinary double point by a single blowup, are
 this card's own.
@@ -908,7 +907,7 @@ which is the Dynkin diagram $\mathbf E_8$.
 The count of eight is the count of the blows above. The derivation of
 the edges $E_1-E_4-E_3-E_7-E_5-E_6-E_2$ and $E_5-E_8$ from those charts,
 and so the identification of the diagram with $\mathbf E_8$, is this card's
-own: item (viii) of the NTU set, PDF p. 21, states the configuration and
+own: item (viii) of the NTU set states the configuration and
 does not derive it.
 :::
 
@@ -924,7 +923,7 @@ exceptional incidence graph required in part (b).
 :::
 
 ::: {.remark title="Published solution"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.8, printed p. 420.
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.8.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.5.8, gives part (a): he takes $z$ irreducible because $A/(z)=k[x,y]/(x^2+y^3)$ is an integral domain, which is true since the cusp is parametrized by $u\mapsto(u^3,-u^2)$ and $k[x,y]/(x^2+y^3)\cong k[u^2,u^3]$, and then $t=-(u^2+v^3)\in k[u,v]$ from $u^2+v^3=t^6(x^2+y^3)=-t$, $A[z^{-1}]=k[u,v,t^{-1}]$, and $A$ a UFD because the localization is one and an irreducible of $A$ outside $(z)$ stays irreducible and hence prime there. Steps [](#z-is-prime){.pf-ref}, [](#coordinate-change-ufd){.pf-ref} and [](#a-is-ufd){.pf-ref} prove the same three statements. For part (b) his computation runs three blowups, its last strict transform being $a^2+cY^2+Yc^3$, which is the card's $x_2^2+y^2z_2+yz_2^3$ of step [](#second-blowup-singular-locus){.pf-ref}. Jinhyun Park, *Solutions to Hartshorne's Algebraic Geometry*, Exercise V.5.8, gives part (a).
 :::
@@ -932,9 +931,9 @@ Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
 ::: {.remark title="Published solution"}
 The first two blowups of part (b) are computed chart by chart in two solution sets, the third in full in one of them and in one chart of the other, and the fourth to the eighth in one.
 
-Exercise 8 of §5 of the NTU *Chapter V Surfaces* homework, Algebraic Geometry II, National Taiwan University, 2020 Spring, solution by Yi-Heng, PDF p. 21, records the strict transforms chart by chart: (i) $x^2+y^3+z^5$ becomes $x_1^2+zy_1^3+z^3$ in the chart $z_1=1$; (ii) that becomes $x_2^2+z_2y_1^2+y_1z^3$ in the chart $y_2=1$; (iii) that becomes $x_3^2+z_3y_1+y_1^2z_3^3$ in the chart $y_3=1$ and $x_3^2+z_2y_3^2+y_3z_2^2$ in the chart $z_3=1$; (iv) the first is resolved by one further blowup; (v) the second acquires the three germs $x_4^2+z_4y_3+y_3z_4^2$, $x_4^2+z_2y_4^2+y_4z_2$ and $x_4^2+z_4y_3+y_3z_4^2$ at $z_4=-1$; (vi)--(viii) resolve those, and it closes "the inverse image of $P$ is a union of eight projective lines corresponding to $E_8$". Its equations are the ones used above.
+Exercise 8 of §5 of the NTU *Chapter V Surfaces* homework, Algebraic Geometry II, National Taiwan University, 2020 Spring, solution by Yi-Heng, records the strict transforms chart by chart: (i) $x^2+y^3+z^5$ becomes $x_1^2+zy_1^3+z^3$ in the chart $z_1=1$; (ii) that becomes $x_2^2+z_2y_1^2+y_1z^3$ in the chart $y_2=1$; (iii) that becomes $x_3^2+z_3y_1+y_1^2z_3^3$ in the chart $y_3=1$ and $x_3^2+z_2y_3^2+y_3z_2^2$ in the chart $z_3=1$; (iv) the first is resolved by one further blowup; (v) the second acquires the three germs $x_4^2+z_4y_3+y_3z_4^2$, $x_4^2+z_2y_4^2+y_4z_2$ and $x_4^2+z_4y_3+y_3z_4^2$ at $z_4=-1$; (vi)--(viii) resolve those, and it closes "the inverse image of $P$ is a union of eight projective lines corresponding to $E_8$". Its equations are the ones used above.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.5.8(b), printed pp. 114--115, gives the three charts of the first blowup, $1+xy_1^3+x^3z_1^5$, $x_1^2+y+y^3z_1^5$ and $x_1^2+zy_1^3+z^3$, with Jacobian checks for the first two, and the second blowup in its three charts. The chart $y_3=1$ of his third blowup, $x_3^2+z_2^2z_3+z_2z_3^2$, is the germ $X^2+zY(Y+z)$ of step [](#third-blowup-two-points){.pf-ref}.
+Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.5.8(b) gives the three charts of the first blowup, $1+xy_1^3+x^3z_1^5$, $x_1^2+y+y^3z_1^5$ and $x_1^2+zy_1^3+z^3$, with Jacobian checks for the first two, and the second blowup in its three charts. The chart $y_3=1$ of his third blowup, $x_3^2+z_2^2z_3+z_2z_3^2$, is the germ $X^2+zY(Y+z)$ of step [](#third-blowup-two-points){.pf-ref}.
 
 Miles Reid, *Chapters on Algebraic Surfaces* (arXiv alg-geom/9602006), Chapter 4, §4.2, carries out the $D_4$ resolution in full, including the divisor computation $2\Gamma_0^2+4=0$ that gives $\Gamma_0^2=-2$, and lists the equations $A_n:x^2+y^2+z^{n+1}$, $D_n:x^2+y^2z+z^{n-1}$, $E_6:x^2+y^3+z^4$, $E_7:x^2+y^3+yz^3$ and $E_8:x^2+y^3+z^5$, with "the resolution is a bunch of $-2$-curves whose configuration is given by the corresponding Dynkin diagram".
 :::

@@ -80,7 +80,7 @@ If we are willing to do harder commutative algebra and stick to noetherian schem
     - By taking a polynomial ring over $\OO$, reduce to the case where $L$ is a finite extension field of $K$.
     - Show that for a suitable choice of generators $x_1, \ldots, x_n$ of $\mfm$, the ideal $\mfa = (x_1)$ in $\OO' = \OO[x_2/x_1, \ldots, x_n/x_1]$ is not the unit ideal.
     - Let $\mfp$ be a minimal prime ideal of $\mfa$, and let $\OO'_\mfp$ be the localization of $\OO'$ at $\mfp$. This is a noetherian local domain of dimension $1$ dominating $\OO$.
-    - Let $\widetilde{\OO'_\mfp}$ be the integral closure of $\OO'_\mfp$ in $L$. Use the Krull-Akizuki theorem (Nagata, p. 115) to show that $\widetilde{\OO'_\mfp}$ is noetherian of dimension $1$.
+    - Let $\widetilde{\OO'_\mfp}$ be the integral closure of $\OO'_\mfp$ in $L$. Use the Krull-Akizuki theorem (Nagata, citation lacks a read source) to show that $\widetilde{\OO'_\mfp}$ is noetherian of dimension $1$.
     - Finally, take $R$ to be a localization of $\widetilde{\OO'_\mfp}$ at one of its maximal ideals.
 
 (b) Let $f: X \to Y$ be a morphism of finite type of noetherian schemes. Show that $f$ is separated, respectively proper, if and only if the criterion of (4.3), respectively (4.7), holds for all discrete valuation rings.
@@ -95,7 +95,7 @@ be a noetherian local domain with fraction field $K$, and let $L/K$ be finitely 
 
 As printed, part (a) needs no further hypothesis, and it fails in one case: if $\OO=K$ is a field and $L/K$ is algebraic, then no discrete valuation ring of $L$ dominates $\OO$. A ring $R$ dominating $\OO$ has $\mathfrak m_R\cap K=\mathfrak m_\OO=0$, so it is a valuation ring of $L$ trivial on $K$, and a valuation trivial on $K$ is trivial on an algebraic extension of $K$: for $a\in L$ with minimal polynomial $a^n+c_{n-1}a^{n-1}+\cdots+c_0$ over $K$, if $v(a)>0$ then $v(c_ia^i)=iv(a)$ has its minimum at $i=0$, so $v(a^n+c_{n-1}a^{n-1}+\cdots+c_0)=0$ while it is $nv(a)>0$; if $v(a)<0$ the minimum is at $i=n$ and the same contradiction holds. So the proof below, like any proof of the printed claim, keeps the hypothesis that $\OO$ is not a field or that $L$ is not algebraic over $K$, and the case it excludes is exactly $\OO=K$ with $L/K$ finite algebraic.
 
-The proof is the argument of Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.4.11, pp. 38--39 of the held scan, transcribed step by step and checked against the exercise and its hints at printed pp. 107--108: the reduction to a finite extension by adjoining the generators, the ideal $(x_1)$ in $\OO[x_2/x_1,\dots,x_n/x_1]$ that is not the unit ideal, the minimal prime and its one-dimensional localization, the Krull--Akizuki step, and the localization at a maximal ideal. Part (b) is proved from the criteria of (4.3) and (4.7) at printed pp. 100--103, which is where the book states them.
+The proof is the argument of Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.4.11, transcribed step by step and checked against the exercise and its hints (Exercise II.4.11): the reduction to a finite extension by adjoining the generators, the ideal $(x_1)$ in $\OO[x_2/x_1,\dots,x_n/x_1]$ that is not the unit ideal, the minimal prime and its one-dimensional localization, the Krull--Akizuki step, and the localization at a maximal ideal. Part (b) is proved from the criteria of (4.3) and (4.7), which is where the book states them.
 
 ::: pf
 

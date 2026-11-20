@@ -42,7 +42,7 @@ III. $\sum_{n=0}^{\infty} \frac{(n+1)^3}{5(n+2)(n+3)(n+4)}$
 :::
 
 ::: {.solution}
-This is question 41 of the Chapter 2 Review Questions of *Cracking the GRE Mathematics Subject Test*, retained in this repository as `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`, on PDF p. 112; the statement below is its wording.
+This is question 41 of the Chapter 2 Review Questions of *Cracking the GRE Mathematics Subject Test*, retained in this repository as `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`; the statement below is its wording.
 
 ::: pf
 

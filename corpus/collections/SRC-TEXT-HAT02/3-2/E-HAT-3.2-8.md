@@ -69,7 +69,7 @@ Show that $X$ and $Y$ have isomorphic cohomology rings with $\ZZ$ coefficients b
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: Guanyu Li's set stops at Section 3.2 Exercise 7 (its numbering 3.2.1 through 3.2.7), and the other retained Hatcher sets hold no Section 3.2 solutions. The argument is therefore the card's own, checked against Hatcher, Algebraic Topology, Section 3.2 Exercise 8, with the Cellular Boundary Formula (p. 141), the universal coefficient theorem (Theorem 3.2, p. 195) and the relative cup product (p. 209).
+No retained solution set covers this exercise: Guanyu Li's set stops at Section 3.2 Exercise 7 (its numbering 3.2.1 through 3.2.7), and the other retained Hatcher sets hold no Section 3.2 solutions. The argument is therefore the card's own, checked against Hatcher, Algebraic Topology, Section 3.2 Exercise 8, with the Cellular Boundary Formula (§2.2), the universal coefficient theorem (Theorem 3.2) and the relative cup product (§3.2).
 
 ::: pf
 
@@ -166,7 +166,7 @@ Let $i:\CP^2\to X$ be the inclusion of the subcomplex; it carries the $2$-cell a
 Every class $y\in H^2(Y;\ZZ_p)$ satisfies $y^2=0$.
 
 ::: pf-proof
-Write $Y=M\vee S^4$ with $M=M(\ZZ_p,2)$, and let $j:S^4\to Y$ be the inclusion of the second summand. In the cohomology of the wedge, $H^2(Y;\ZZ_p)\cong H^2(M;\ZZ_p)\oplus H^2(S^4;\ZZ_p)=H^2(M;\ZZ_p)$ because $H^2(S^4)=0$, so every $y$ restricts to $0$ on $S^4$. In the long exact sequence of the pair $(Y,S^4)$ the restriction $H^2(Y;\ZZ_p)\to H^2(S^4;\ZZ_p)$ is zero and $H^1(S^4;\ZZ_p)=0$, so $y$ is the image of a relative class $\bar y\in H^2(Y,S^4;\ZZ_p)$. The relative cup product $H^2(Y,S^4)\times H^2(Y,S^4)\to H^4(Y,S^4)$ of p. 209 then gives $y^2\in H^4(Y,S^4;\ZZ_p)$. Excision identifies $H^4(Y,S^4;\ZZ_p)$ with $\widetilde H^4(Y/S^4;\ZZ_p)=\widetilde H^4(M;\ZZ_p)$, and $M$ has cells only in dimensions $2$ and $3$, so $\widetilde H^4(M;\ZZ_p)=0$. Hence $y^2=0$.
+Write $Y=M\vee S^4$ with $M=M(\ZZ_p,2)$, and let $j:S^4\to Y$ be the inclusion of the second summand. In the cohomology of the wedge, $H^2(Y;\ZZ_p)\cong H^2(M;\ZZ_p)\oplus H^2(S^4;\ZZ_p)=H^2(M;\ZZ_p)$ because $H^2(S^4)=0$, so every $y$ restricts to $0$ on $S^4$. In the long exact sequence of the pair $(Y,S^4)$ the restriction $H^2(Y;\ZZ_p)\to H^2(S^4;\ZZ_p)$ is zero and $H^1(S^4;\ZZ_p)=0$, so $y$ is the image of a relative class $\bar y\in H^2(Y,S^4;\ZZ_p)$. The relative cup product $H^2(Y,S^4)\times H^2(Y,S^4)\to H^4(Y,S^4)$ of §3.2 then gives $y^2\in H^4(Y,S^4;\ZZ_p)$. Excision identifies $H^4(Y,S^4;\ZZ_p)$ with $\widetilde H^4(Y/S^4;\ZZ_p)=\widetilde H^4(M;\ZZ_p)$, and $M$ has cells only in dimensions $2$ and $3$, so $\widetilde H^4(M;\ZZ_p)=0$. Hence $y^2=0$.
 :::
 
 :::

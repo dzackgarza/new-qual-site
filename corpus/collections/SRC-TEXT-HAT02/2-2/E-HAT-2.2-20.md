@@ -56,7 +56,7 @@ For finite CW complexes $X$ and $Y$, show that $\chi(X \times Y) = \chi(X)\chi(Y
 :::
 
 ::: {.solution}
-The computation is that of **Sam's §2.2 Exercise 20** (printed p. 12 of that set): the product cell $e_{p}\times e_{q}$ has dimension $p+q$, and summing $(-1)^{p+q}$ over the product cells factorizes the alternating sum into $\chi(X)\chi(Y)$. It is checked here against Hatcher, §2.2 Exercise 20, and against the two facts the book supplies on pp. 8 and 146.
+The computation is that of **Sam's §2.2 Exercise 20**: the product cell $e_{p}\times e_{q}$ has dimension $p+q$, and summing $(-1)^{p+q}$ over the product cells factorizes the alternating sum into $\chi(X)\chi(Y)$. It is checked here against Hatcher, §2.2 Exercise 20, and against the two facts the book supplies in Chapter 0 and §2.2.
 
 Write $c_{p}(X)$ and $c_{q}(Y)$ for the numbers of cells of dimension $p$ and $q$ in the given finite CW structures.
 
@@ -66,7 +66,7 @@ Write $c_{p}(X)$ and $c_{q}(Y)$ for the numbers of cells of dimension $p$ and $q
 $X\times Y$ is a finite CW complex whose cells are the products $e^{p}\times e^{q}$, one of dimension $p+q$ for each ordered pair of cells.
 
 ::: pf-proof
-By the product cell structure of Hatcher p. 8, the products of cells are the cells of a CW structure on $X\times Y$ and $\dim(e^{p}\times e^{q})=p+q=\dim e^{p}+\dim e^{q}$. Since $X$ and $Y$ have finitely many cells each, the weak topology of this cell structure agrees with the product topology on $X\times Y$, as the book notes at the same place; so this is a finite CW structure on the product space.
+By the product cell structure of Hatcher, Chapter 0 ("Operations on Spaces"), the products of cells are the cells of a CW structure on $X\times Y$ and $\dim(e^{p}\times e^{q})=p+q=\dim e^{p}+\dim e^{q}$. Since $X$ and $Y$ have finitely many cells each, the weak topology of this cell structure agrees with the product topology on $X\times Y$, as the book notes at the same place; so this is a finite CW structure on the product space.
 :::
 
 :::
@@ -84,7 +84,7 @@ Each cell of $X\times Y$ is one product $e^{p}\times e^{q}$ and has dimension $p
 $\chi(Z)=\sum_{r}(-1)^{r}c_{r}(Z)$ for a finite CW complex $Z$.
 
 ::: pf-proof
-Hatcher p. 146 defines $\chi$ by the alternating sum of the ranks of the homology groups, and Theorem 2.44 there shows that for a finite CW complex this equals the alternating sum of the numbers of cells, $\sum_{r}(-1)^{r}c_{r}(Z)$.
+Hatcher, §2.2 defines $\chi$ by the alternating sum of the ranks of the homology groups, and Theorem 2.44 there shows that for a finite CW complex this equals the alternating sum of the numbers of cells, $\sum_{r}(-1)^{r}c_{r}(Z)$.
 :::
 
 :::
