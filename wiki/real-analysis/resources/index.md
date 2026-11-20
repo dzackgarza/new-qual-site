@@ -7,7 +7,7 @@ order: 11
 
 - [[real-analysis/resources/preface|Exercises from Folland]] -- exercises from chapters 1--3 of [@Fol99].
 
-- [[real-analysis/resources/topics|Real analysis topics]] -- a workshop schedule and topic lists from qualifying exam syllabi.
+- [[real-analysis/resources/topics|Real analysis topics]] -- the chapter's topics, by part.
 
 - [[real-analysis/resources/books-notes|Real analysis books and notes]] -- textbooks, course notes, and the UGA Math 8100 homework and exams.
 
@@ -15,6 +15,6 @@ order: 11
 
 - [[real-analysis/resources/solutions|Solutions]] -- solution collections.
 
-- [[real-analysis/resources/extra-questions|Extra questions]] -- problems from the UNL real analysis workshop packet, grouped by topic.
+- [[real-analysis/resources/extra-questions|Extra questions]] -- the problems of the UNL real analysis workshop packet, in source order on its collection page.
 
-The [Sources listing](sources.html) lists exams by subject, institution, and year, and each exam page links its source material.
+The [[archives/card-archives|Sources]] listing lists exams by subject, institution, and year, and each exam page links its source material.
