@@ -11,7 +11,7 @@ title: Objects and theorems of algebraic topology
 
 - [[D-QK5BM|Euler characteristic]]
 
-- [[topology/surfaces/classification-of-surfaces#Connected sums and polygon decompositions|Connected sum]]
+- [[D-CSUMM|Connected sum]]
 
 - [[topology/homology/homology|Homology]] and [[topology/appendices/appendix#Cup and cap products|cohomology]] groups
 
