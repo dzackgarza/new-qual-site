@@ -82,7 +82,7 @@ This is a further variant of the family of [@Rud76, ch. 4, Example 4.27]; the si
 ::: {.proposition title="The Darboux integrals of $x\qty{\chi_\QQ - \chi_{\RR\setminus\QQ}}$ on $[0,1]$"}
 For $f(x) \coloneqq x\qty{\chi_\QQ(x) - \chi_{\RR\setminus\QQ}(x)}$, the upper Darboux integral of $f$ on $[0,1]$ is $1/2$ and the lower Darboux integral is $-1/2$.
 
-The computation is the proof below; the upper and lower integrals it computes are those of [@Rud76, ch. 6, Definition 6.1].
+The upper and lower integrals it computes are those of [@Rud76, ch. 6, Definition 6.1].
 
 :::
 
