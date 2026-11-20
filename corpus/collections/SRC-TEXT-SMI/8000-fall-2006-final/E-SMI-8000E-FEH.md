@@ -31,6 +31,15 @@ audit:
     card states F a field, n ≥ 1 and A in M_n(F), and proves chi_A(A) = 0 by comparing
     coefficients in (tI - A)adj(tI - A) = chi_A(t)I and descending the recurrence to
     B_0. Correct. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 12, final part H(ii), with
+    hypotheses $F$ a field, $n\ge1$, $A\in M_n(F)$. Comparing coefficients in
+    $(tI-A)\operatorname{adj}(tI-A)=\chi_A(t)I$ gives $B_{n-1}=I$,
+    $B_{k-1}-AB_k=c_kI$ and $-AB_0=c_0I$; descending gives
+    $B_0=A^{n-1}+c_{n-1}A^{n-2}+\cdots+c_1I$ and hence $\chi_A(A)=0$. No defect.
 ---
 
 ::: {.exercise}
