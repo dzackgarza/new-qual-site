@@ -80,6 +80,22 @@ audit:
     cites Lemma 2.34 and Theorem 3F.8 for the deformation retraction instead of naming a section.
     No statement changed. Not checked: no certificate. The second direction's use of the direct
     limit over all finite subcomplexes, and the injectivity of $1-s_*$ in every degree, are as before.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The shift convention of the previous entry was wrong for homology and is repaired. Hatcher's
+    displayed $\varphi(g)_i=(-1)^{i-1}(g_i-\rho(g_{i+1}))$ in the proof of Theorem 3F.8 is the
+    cohomological formula, where the restriction maps go down in the index; in homology the only
+    maps between the summands are induced by the inclusions and go up, so the correct shift is
+    $(s_*g)_i=\rho_{i-1}(g_{i-1})$ and the formula is $g_i-\rho_{i-1}(g_{i-1})$. The error was
+    substantive, not cosmetic: with the downward shift and the direct sum the lowest summand lies in
+    the image ($\glpha(e_0a)=e_0a$ because there is no $e_{-1}$), so the cokernel vanishes, while
+    Hatcher's Example 3F.3 computes the telescope of degree-$p$ maps to have
+    $H_n\cong\ZZ[1/p]$. With the upward shift the relations are $g_i=p\,g_{i-1}$ and the cokernel is
+    $\ZZ[1/p]$, and injectivity of $1-s_*$ is read off the least index of the support, as the card
+    originally had it. Found by an independent check of this card, then verified here against
+    Example 3F.3 before the repair. Not checked: nothing else in the card changed in this pass.
 
 ---
 
@@ -145,12 +161,12 @@ The telescope is the quotient of $\coprod_i X_i\times[i,i+1]$ in which $(x,i+1)\
 :::
 
 ::: {.pf-step #mv}
-With $s_*$ defined by $(s_*g)_i=\rho(g_{i+1})$, $\rho$ being the map induced by the inclusion $X_i\subset X_{i+1}$, Mayer--Vietoris for $T=T_1\cup T_2$ and the wedge axiom (3) give an exact sequence
+Let $\rho_i:\widetilde h_n(X_i)\to\widetilde h_n(X_{i+1})$ be the map induced by the inclusion $X_i\subset X_{i+1}$, and let $s_*$ be the shift $(s_*g)_i=\rho_{i-1}(g_{i-1})$, with $g_{-1}=0$. Then Mayer--Vietoris for $T=T_1\cup T_2$ and the wedge axiom (3) give an exact sequence
 $$\bigoplus_i\widetilde h_n(X_i)\xrightarrow{\ \varphi\ }\bigoplus_i\widetilde h_n(X_i)\longrightarrow\widetilde h_n(T)\xrightarrow{\ \partial\ }\bigoplus_i\widetilde h_{n-1}(X_i),$$
-where $\varphi(g)_i=(-1)^{i-1}\bigl(g_i-\rho(g_{i+1})\bigr)$; after the change of coordinates $g_i\mapsto(-1)^{i-1}g_i$ on the even summands, $\varphi$ is $1-s_*$.
+where $\varphi(g)_i=(-1)^{i-1}\bigl(g_i-\rho_{i-1}(g_{i-1})\bigr)$; after the change of coordinates $g_i\mapsto(-1)^{i-1}g_i$ on the even summands, $\varphi$ is $1-s_*$.
 
 ::: pf-proof
-Apply step [](#mv-lemma){.pf-ref} to the subcomplexes $T_1$ and $T_2$ of $T$. Steps [](#telescope-cover){.pf-ref} and axiom (3) identify $\widetilde h_n(T_1)\oplus\widetilde h_n(T_2)$ with $\bigoplus_i\widetilde h_n(X_i)$, the odd summands lying in $T_1$ and the even ones in $T_2$, and identify $\widetilde h_n(T_1\cap T_2)$ with the same direct sum after naming each shared level by the index of the copy of $X_i$ that it carries; this re-indexing is the one Hatcher uses when he writes $\coprod_i X_i$ for the intersection in the proof of Theorem 3F.8. The two maps into the intersection are then the identity and the shift, and the difference of the two restricted classes is the formula displayed for $\varphi$, which is the one Hatcher records in that proof. Multiplying the coordinates of the even summands by $-1$ is an automorphism of the direct sum and replaces $\varphi$ by $1-s_*$, exactly as Hatcher removes the signs from his $\varphi$ by inserting a minus sign in the even coordinates. The map $\partial$ out of $\widetilde h_n(T)$ is the boundary of the pair $(T,T_1)$, transported across the isomorphism $T/T_1\cong T_2/(T_1\cap T_2)$ supplied by the same lemma; it is not itself $1-s_*$, which is the map that follows it.
+Apply step [](#mv-lemma){.pf-ref} to the subcomplexes $T_1$ and $T_2$ of $T$. Steps [](#telescope-cover){.pf-ref} and axiom (3) identify $\widetilde h_n(T_1)\oplus\widetilde h_n(T_2)$ with $\bigoplus_i\widetilde h_n(X_i)$, the odd summands lying in $T_1$ and the even ones in $T_2$, and identify $\widetilde h_n(T_1\cap T_2)$ with the same direct sum after naming each shared level by the index of the copy of $X_i$ that it carries; this re-indexing is the one Hatcher uses when he writes $\coprod_i X_i$ for the intersection in the proof of Theorem 3F.8. The two maps into the intersection are then the identity and the shift that reads the $(i-1)$-st summand into the $i$-th, and the difference of the two restricted classes is the formula displayed for $\varphi$. The shift goes up in the index because the only maps available between the summands of a homology theory are those induced by the inclusions $X_i\subset X_{i+1}$: Hatcher's displayed formula $\varphi(g)_i=(-1)^{i-1}(g_i-\rho(g_{i+1}))$ in the proof of Theorem 3F.8 is the cohomological case, where the natural maps are the restriction maps and go down in the index. With the upward shift the cokernel is the direct limit, as Example 3F.3 shows: for $X_i=S^n$ and $f_i$ of degree $p$, the relations $g_i=p\,g_{i-1}$ give $\ZZ[1/p]$; with the downward shift the bottom summand would be killed and the cokernel would vanish, which contradicts that example. Multiplying the coordinates of the even summands by $-1$ is an automorphism of the direct sum and replaces $\varphi$ by $1-s_*$, exactly as Hatcher removes the signs from his $\varphi$ by inserting a minus sign in the even coordinates. The map $\partial$ out of $\widetilde h_n(T)$ is the boundary of the pair $(T,T_1)$, transported across the isomorphism $T/T_1\cong T_2/(T_1\cap T_2)$ supplied by the same lemma; it is not itself $1-s_*$, which is the map that follows it.
 :::
 :::
 
@@ -158,7 +174,7 @@ Apply step [](#mv-lemma){.pf-ref} to the subcomplexes $T_1$ and $T_2$ of $T$. St
 $1-s_*$ is injective on the direct sum $\bigoplus_i\widetilde h_n(X_i)$.
 
 ::: pf-proof
-Let $x$ be a finite-support element with $(1-s_*)x=0$ and let $i$ be the largest index with $x_i\neq0$, which exists because the support is finite. The $i$-th coordinate of $(1-s_*)x$ is $x_i-(s_*x)_i=x_i-\rho(x_{i+1})=x_i$, since $x_{i+1}=0$ by the choice of $i$; so that coordinate is nonzero and $(1-s_*)x\neq0$, a contradiction. Hence $x=0$.
+Let $x$ be a finite-support element with $(1-s_*)x=0$ and let $i$ be the least index with $x_i\neq0$, which exists because the support is finite. The $i$-th coordinate of $(1-s_*)x$ is $x_i-(s_*x)_i=x_i-\rho_{i-1}(x_{i-1})=x_i$, since $x_{i-1}=0$ by the choice of $i$; so that coordinate is nonzero and $(1-s_*)x\neq0$, a contradiction. Hence $x=0$.
 :::
 :::
 
