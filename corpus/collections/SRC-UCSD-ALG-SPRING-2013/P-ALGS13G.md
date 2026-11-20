@@ -122,22 +122,12 @@ $$
 $$
 so $[E:F]$ is a power of $p$.
 
-::: pf-proof
-
-The Galois correspondence gives $[E:F]=[G:H]$.
-Since $G$ is a finite $p$-group, every subgroup index is a power of $p$.
-
-:::
-
-:::
-
-::: pf-step
-
 Therefore every finite separable extension of $F$ has degree a power of $p$.
 
 ::: pf-proof
 
-This is exactly step [](#s5){.pf-ref}.
+The Galois correspondence gives $[E:F]=[G:H]$.
+Since $G$ is a finite $p$-group, every subgroup index is a power of $p$.
 
 :::
 
