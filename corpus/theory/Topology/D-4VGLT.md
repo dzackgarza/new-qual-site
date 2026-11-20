@@ -19,5 +19,5 @@ The functor $\Tor_n^R(-, B)$ is the $n$th [[D-6B77N|left derived functor]] of $-
 $$
 \Tor_n^R(A, B) \coloneqq L_n(-\tensor_R B)(A) = H_n(P_\bullet\tensor_R B)
 ,$$
-where $P_\bullet \to A$ is a [[D-PKIY7|projective resolution]] of the $R$-module $A$ [@Wei94, Chapter 2].
+where $P_\bullet \to A$ is a [[D-PKIY7|projective resolution]] of the $R$-module $A$ [@Wei94, Definition 2.6.4].
 :::
