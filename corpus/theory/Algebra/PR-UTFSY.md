@@ -20,7 +20,7 @@ review: draft
 ::: {.proposition}
 Let $R$ be a [[D-GURUB|ring]] and $I\subsetneq R$ a proper [[D-GOFWL|ideal]].
 Then $I$ is contained in a [[D-7XH2R|maximal ideal]] of $R$.
-In particular, applying this to $I=0$, every nonzero ring has a maximal ideal.
+In particular, applying this to $I=0$, every nonzero ring has a maximal ideal [@AM18].
 :::
 
 ::: {.proof}
