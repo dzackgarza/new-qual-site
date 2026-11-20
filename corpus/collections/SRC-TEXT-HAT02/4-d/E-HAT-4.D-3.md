@@ -47,7 +47,7 @@ Use the Leray–Hirsch theorem as in Corollary 4D.3 to compute $H^*(V_n(\CC^k); 
 :::
 
 ::: {.solution}
-This is Hatcher Exercise 4.D.3, computed as in Corollary 4D.3. No published solution set is transcribed: the argument is the card's own, and the numbered results are Hatcher's Theorem 4D.1 (Leray--Hirsch), the Gysin sequence (p. 438) and the identification of the Euler class with the top Chern class (p. 444).
+This is Hatcher Exercise 4.D.3, computed as in Corollary 4D.3. No published solution set is transcribed: the argument is the card's own, and the numbered results are Hatcher's Theorem 4D.1 (Leray--Hirsch), the Gysin sequence (§4.D) and the identification of the Euler class with the top Chern class (§4.D).
 
 ::: pf
 
@@ -63,7 +63,7 @@ A point of $V_{n-1}(\CC^{k})$ is an orthonormal $(n-1)$-frame, and the fibre ove
 $E\oplus\underline{\CC}^{n-1}\cong\underline{\CC}^{k}$, so all Chern classes of $E$ vanish, in particular its Euler class $c_{k-n+1}(E)$.
 
 ::: pf-proof
-The tautological $(n-1)$-frame trivializes the orthogonal complement of $E$: the sum of $E$ with the bundle spanned by the frame vectors is the trivial bundle $V_{n-1}(\CC^{k})\times\CC^{k}$. Adding a trivial bundle does not change Chern classes of positive degree, so $c_{i}(E)=0$ for $i\geq1$, and the Euler class, which is the top Chern class $c_{k-n+1}(E)$ of the oriented real bundle underlying $E$ (p. 444), vanishes.
+The tautological $(n-1)$-frame trivializes the orthogonal complement of $E$: the sum of $E$ with the bundle spanned by the frame vectors is the trivial bundle $V_{n-1}(\CC^{k})\times\CC^{k}$. Adding a trivial bundle does not change Chern classes of positive degree, so $c_{i}(E)=0$ for $i\geq1$, and the Euler class, which is the top Chern class $c_{k-n+1}(E)$ of the oriented real bundle underlying $E$ (§4.D), vanishes.
 :::
 :::
 
