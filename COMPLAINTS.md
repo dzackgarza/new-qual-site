@@ -10816,6 +10816,20 @@ this turn, and no source obligation moves: none of the eleven has a located comp
 `E-HAT-2.C-1` `9383a69e9a`. `E-HAT-2.B-9`'s repair is `a6ff1e6bbe`, its locator pass `fe536e4369`, and the
 record of that repair `97a092da0e`.
 
+**The issue body's last obligation — the six text versions.** The body records that text versions were owed
+for Kottke, Stanford's §4, Davis--Kirk, Dugger, Bredon and Proudfoot. Five of the six are now in
+`tmp/sources` beside their PDFs: `kottke-brown-math2420-sp12-ps3-solutions.md`,
+`stanford-math215c-spring2009-solution2.md`, `-3.md` and `-4.md`,
+`davis-kirk-lecture-notes-algebraic-topology.md`, `dugger-involutions-surfaces-2016.md` and
+`uoregon-proudfoot-634-hw1.md` and `-hw2.md`. Bredon's book has no text version and, at the size of the
+retained PDF, none was attempted here; the one citation of Bredon that carries weight, Theorem 19.11 on
+`E-HAT-2.B-5`'s second proof, was instead read at its statement in the PDF's own text layer and is quoted on
+that card in the event of this date: the Generalized Schoenflies Theorem for an embedding
+$f:S^{n-1}\times[-1,1]\to S^n$, the closure of each component of $S^n-f(S^{n-1}\times\{0\})$ homeomorphic
+to $D^n$, with Bredon's own sentence that his treatment is based on Brown's proof. That is the hypothesis the
+card's bicollar supplies and the provenance the card claims, so the citation stands as the card states it.
+Commit `7ce441f7b3`.
+
 ## 2026-11-20, eighth item: nine more §4.2 cards read, two repaired
 
 Against Hatcher, *Algebraic Topology* (2002), §4.2 and the numbered results each step uses: the relative
