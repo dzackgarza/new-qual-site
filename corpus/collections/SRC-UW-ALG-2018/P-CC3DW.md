@@ -47,7 +47,7 @@ Use a suitable canonical form to show that $M$ is similar to its transpose $M^T$
 :::
 
 ::: {.solution}
-The collection's provenance is the examination paper alone, so no retained solution set covers this exercise; the argument is the card's own. The same question also stands as Problem 8 of the Algebra Preliminary Examination of September 8, 2008 (University of Washington), printed p. 2 of `assets/attachments/UW-Algebra-Qual-2008.pdf`, which is the paper the 2008 collection retains; that paper prints no solutions either.
+The collection's provenance is the examination paper alone, so no retained solution set covers this exercise; the argument is the card's own. The same question also stands as Problem 8 of the Algebra Preliminary Examination of September 8, 2008 (University of Washington), in `assets/attachments/UW-Algebra-Qual-2008.pdf`, which is the paper the 2008 collection retains; that paper prints no solutions either.
 
 Recall that two $n\times n$ matrices are similar when $M'=SMS^{-1}$ for some invertible $S$, that similarity is an equivalence relation, and that a matrix $C\in M_d(K)$ is cyclic when it has a cyclic vector: a vector $v\in K^d$ for which $v,Cv,\dots,C^{d-1}v$ is a basis of $K^d$. The quantifier matters here; a single $v$ is never asked to serve for every vector, and $v,Cv,\dots,C^{d-1}v$ is indeed dependent for most $v$.
 
