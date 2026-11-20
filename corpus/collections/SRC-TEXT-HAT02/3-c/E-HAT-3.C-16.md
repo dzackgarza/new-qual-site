@@ -17,6 +17,21 @@ audit:
   by: claude
   date: 2026-11-20
   note: >-
+    The two arguments the previous event recorded as not re-derived are now steps with proofs. Step
+    #kummer proves Legendre's formula $v_p(n!)=(n-s_p(n))/(p-1)$ by counting the base-$p$ digits in
+    the sum $\sum_j\lfloor n/p^j\rfloor$, and derives the digit-sum form of $v_p\binom nk$ from
+    additivity; step #flags-polynomial then compares the polynomial forms of least degrees $1$ and
+    $2$ case by case in the three parities, using $s_2(2m)=s_2(m)$, the bound
+    $s_2(a+b+1)\le s_2(a)+s_2(b)+1$ for the both-odd case, and the degree count $B_1=\FF_2$ against
+    $B_1=0$ for the non-isomorphism. Step #recursion proves the converse of the classification of
+    forms by induction on $j$, the induction step being the cocycle relation with $k=1$. The
+    earlier event's "not checked" lines on those two points are superseded by this one; what is
+    still not re-checked is the machine verification an earlier event records and the case analysis
+    of Theorem 3 beyond its own step.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
     Converted from prose to numbered steps under #2, thirteen of them, without changing the
     mathematics: the rational form and its coproduct coefficients, the integral lattices and their
     divisor conditions, the axiom audit with the cocycle relation, the two worked forms, the
@@ -300,6 +315,17 @@ $$
 
 :::
 
+::: {.pf-step #recursion}
+Conversely, if $(m_{ij})$ are positive integers with $m_{i0}=m_{0i}=1$ satisfying the cocycle relation, then the recursion $q_0=q_1=1$, $q_{n+1}=q_n/m_{n,1}$ gives $m_{ij}=q_iq_j/q_{i+j}$ for all $i,j$, so the formulae of step [](#lattices){.pf-ref} define an integral form.
+
+::: pf-proof
+The recursion determines the positive rationals $q_n$ uniquely. The claim is proved by induction on $j$, the case $j=0$ being $q_iq_0=m_{i0}q_i=q_i$ and the case $j=1$ being $q_iq_1=q_i=m_{i1}q_{i+1}$, which is the recursion. For the step, use the induction hypothesis and the recursion in the form $q_{j+1}=q_j/m_{j,1}$ and $q_{i+j+1}=q_{i+j}/m_{i+j,1}$:
+$$q_iq_{j+1}=\frac{q_iq_j}{m_{j,1}}=\frac{m_{ij}q_{i+j}}{m_{j,1}},\qquad m_{i,j+1}q_{i+j+1}=\frac{m_{i,j+1}q_{i+j}}{m_{i+j,1}},$$
+and the two right sides are equal because the cocycle relation with $k=1$ reads $m_{ij}m_{i+j,1}=m_{j,1}m_{i,j+1}$. Hence $q_iq_{j+1}=m_{i,j+1}q_{i+j+1}$, which is the claim for $j+1$. Reading the identity as $m_{ij}=q_iq_j/q_{i+j}$, the divisibility and coproduct conditions of step [](#lattices){.pf-ref} are exactly the hypotheses, so the lattice $\bigoplus_n\ZZ q_nt^n$ is an integral form.
+:::
+
+:::
+
 ::: {.pf-step #examples}
 The polynomial lattice $m_{ij}=1$ and, for even $d$, the divided-power lattice $m_{ij}=\binom{i+j}{i}$ are integral forms of $\QQ[t]$; for odd $d$ the polynomial form still occurs and the vanishing $b_{ij}$ allow further forms.
 
@@ -319,7 +345,7 @@ which gives the divided-power Hopf algebra $\Gamma_{\ZZ}[t]$. For odd $d$, the p
 :::
 
 ::: {.pf-step #reduction}
-For a prime $p$ put $B=A\otimes\FF_p$; the $\bar x_n$ are an $\FF_p$-basis of $B$, one vector in each degree $nd$, and the structure constants are the reductions of $m_{ij}$ and $c_{ij}$. Forms are compared only when they share their least degree $d$, and the hypothesis is not vacuous: the polynomial forms of least degrees $1$ and $2$ have identical flags but non-isomorphic reductions.
+For a prime $p$ put $B=A\otimes\FF_p$; the $\bar x_n$ are an $\FF_p$-basis of $B$, one vector in each degree $nd$, and the structure constants are the reductions of $m_{ij}$ and $c_{ij}$. Forms are compared only when they share their least degree $d$, and the hypothesis is not vacuous: the polynomial forms of least degrees $1$ and $2$ have identical flags but non-isomorphic reductions, as step [](#flags-polynomial){.pf-ref} proves.
 
 ::: pf-proof
 Now fix a prime $p$, put $B=A\otimes\FF_p$, and write $\bar x_n$ for the image of $x_n$; the $\bar x_n$ are an $\FF_p$-basis of $B$, one vector in each degree $nd$. The structure constants of $B$ are
@@ -334,6 +360,24 @@ where $\bar m_{ij}=m_{ij}\bmod p$ and $\bar c_{ij}$ is the reduction of the inte
 
 Two forms are only compared when they share their least degree $d$, hence their $b_{ij}$ and their $f_{ij}$. Nothing is lost: a form whose least degree is $d$ has $B=0$ in every degree that is not a multiple of $d$, so reductions of forms with different $d$ are already non-isomorphic as graded vector spaces. The hypothesis is not vacuous bookkeeping. The two polynomial forms with $d=1$ and $d=2$ have *identical* flags, and their reductions are not isomorphic. Their flags agree: both have $\delta\equiv0$, and for $p=2$ the second bit is $[\,v_2(b_{ij})=0\,]$, where $b_{ij}=\binom{i+j}{i}$ for $d=2$ and $b_{ij}=0$ for $i,j$ both odd and $\binom{\lfloor (i+j)/2\rfloor}{\lfloor i/2\rfloor}$ otherwise for $d=1$; Kummer's formula gives $v_2\binom{n}{k}=s_2(k)+s_2(n-k)-s_2(n)$, and writing $i=2a+\epsilon$, $j=2b+\eta$ it gives the same value $s_2(a)+s_2(b)-s_2(a+b)$ for both families in each of the three parity cases, while for $i,j$ both odd the $d=1$ coefficient vanishes and $\binom{i+j}{i}$ is even. Yet $B_1=\ZZ/2$ for $d=1$ and $B_1=0$ for $d=2$.
 
+:::
+
+:::
+
+::: {.pf-step #kummer}
+For a prime $p$, $v_p(n!)=\dfrac{n-s_p(n)}{p-1}$ and $v_p\binom nk=\dfrac{s_p(k)+s_p(n-k)-s_p(n)}{p-1}$, where $s_p$ is the sum of the base-$p$ digits; for $p=2$ the second reads $v_2\binom nk=s_2(k)+s_2(n-k)-s_2(n)$.
+
+::: pf-proof
+Legendre's formula gives $v_p(n!)=\sum_{j\ge1}\lfloor n/p^j\rfloor$. Write $n=\sum_i a_ip^i$ in base $p$, so $s_p(n)=\sum_ia_i$ and $\lfloor n/p^j\rfloor=\sum_{i\ge j}a_ip^{i-j}$. Summing over $j\ge1$ counts each $a_i$ once for each $j\le i$, giving $\sum_ia_i(1+p+\cdots+p^{i-1})=\sum_ia_i\frac{p^i-1}{p-1}=\frac{n-s_p(n)}{p-1}$. For the binomial, $v_p$ is additive over products, so the formula follows from $\binom nk=n!/(k!(n-k)!)$; at $p=2$ the denominator $p-1$ is $1$.
+:::
+
+:::
+
+::: {.pf-step #flags-polynomial}
+For $p=2$ the polynomial forms of least degree $1$ and $2$ have identical flags, and their reductions are not isomorphic.
+
+::: pf-proof
+Both have $m_{ij}=1$, so $e_{ij}=0$, $\delta\equiv0$, and the second bit is $\varepsilon_{ij}=[\,0=f_{ij}\,]=[\,v_2(b_{ij})=0\,]$, with $\varepsilon_{ij}=0$ where $b_{ij}=0$. For $d=2$, $b_{ij}=\binom{i+j}{i}$; for $d=1$, $b_{ij}=0$ when $i,j$ are both odd and $b_{ij}=\binom{\lfloor(i+j)/2\rfloor}{\lfloor i/2\rfloor}$ otherwise. Three parity cases. If $i=2a$, $j=2b$, step [](#kummer){.pf-ref} gives $v_2\binom{2a+2b}{2a}=s_2(a)+s_2(b)-s_2(a+b)=v_2\binom{a+b}{a}$, using $s_2(2m)=s_2(m)$. If $i=2a$, $j=2b+1$, it gives $s_2(a)+(s_2(b)+1)-(s_2(a+b)+1)=v_2\binom{a+b}{a}$, and the case $i$ odd, $j$ even is symmetric. If $i=2a+1$ and $j=2b+1$, the $d=1$ coefficient vanishes while $v_2\binom{2a+2b+2}{2a+1}=(s_2(a)+1)+(s_2(b)+1)-s_2(a+b+1)\ge1$, because $s_2(a+b+1)\le s_2(a)+s_2(b)+1$; so $\varepsilon_{ij}=0$ in both families. The flags therefore agree. They do not determine the class across different least degrees: $B_1=\FF_2$ for $d=1$, degree $1$ being $1\cdot d$, while $B_1=0$ for $d=2$, whose degrees are all even.
 :::
 
 :::
