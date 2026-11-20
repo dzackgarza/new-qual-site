@@ -33,6 +33,7 @@ Choose, using the axiom of choice, one representative in $[0,1]$ of each coset o
 The translates $V+r$ for $r\in\QQ\cap[-1,1]$ are pairwise disjoint, their union contains $[0,1]$, and it is contained in $[-1,2]$.
 If $V$ were Lebesgue measurable, translation invariance and countable additivity would give $1\leq\sum_{r}m(V)\leq3$, which is impossible for $m(V)=0$ and for $m(V)>0$.
 
+The construction and the contradiction are the card's own argument. The two properties it invokes are [[PR-LF7SW|the properties of Lebesgue outer measure]] — translation invariance and the bound $m^*([a,b])\le b-a$ together with $m^*([0,1])=1$ — and the countable additivity of $m$ on the measurable sets.
 :::
 
 ::: {.proposition}
