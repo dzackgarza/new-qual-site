@@ -53,6 +53,23 @@ audit:
     homology of $X$ vanishing because its cells sit in dimensions $0$ and $k$, and then the
     homology form of Whitehead. Invertibility over $\ZZ$ is $\det=\pm1$, i.e. $\operatorname{GL}_n(\ZZ)$.
     Nothing changed. Not claimed: a published solution, and no certificate.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher, §4.A Exercise 4, with the cellular approximation theorem, van Kampen's
+    theorem, Hurewicz's theorem, cellular homology, Corollary 4.33 and Proposition 4A.2. The
+    argument is correct: $X=\bigvee_n S^k$ is $(k-1)$-connected and $\pi_k(X)=H_k(X)=\ZZ^n$;
+    a based self-map is determined by its restrictions to the summands, so $[X,X]_*$ is the monoid
+    $M_n(\ZZ)$ of matrices acting on $\ZZ^n$; $f$ is a homotopy equivalence exactly when that
+    matrix is invertible, by Hurewicz naturality and the homology Whitehead theorem, since $X$ has
+    reduced homology only in degree $k$; and based and free classes agree because $X$ is simply
+    connected for $k>1$. No mathematics changed. Citation repaired under the owner's correction of
+    this date: the text named printed pages for the exercise and for Theorems 4.8, 1.20, 4.32 and
+    2.35, and now cites the numbered statements only. Not checked: no certificate; the two
+    phrases 'functoriality of induced maps' and 'cellular structure of a wedge of spheres' remain
+    sentence fragments in their proofs, which is a wording defect and not a gap.
+
 ---
 
 ::: {.problem}
@@ -61,7 +78,7 @@ With the notation of the preceding problem, show that $\operatorname{Aut}(\bigve
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §4.A Exercise 4, printed p. 426; the argument below is the card's own.
+The statement is Hatcher, *Algebraic Topology* (2002), §4.A Exercise 4; the argument below is the card's own, no retained solution set covering §4.A.
 
 ::: pf
 
@@ -74,7 +91,7 @@ Compute $\pi_k(X)$ for $X = \bigvee_{j=1}^n S^k$ ($k > 1$):
 Since $k > 1$, the space $X$ is $(k-1)$-connected: $\pi_1(X) = \cdots = \pi_{k-1}(X) = 0$.
 
 ::: pf-proof
-Every map $S^i\to X$ with $i<k$ is homotopic to a cellular map by the cellular approximation theorem (Theorem 4.8, p. 349), and a cellular map $S^i\to X$ has image in the $i$-skeleton of $X$, which is the single $0$-cell when $i<k$; so $\pi_i(X)=0$ for $0<i<k$. (For $i=1$ the same conclusion follows from van Kampen's theorem, Theorem 1.20, p. 43, since $k>1$ makes each summand $S^k$ simply connected and a wedge of simply connected spaces is simply connected.)
+Every map $S^i\to X$ with $i<k$ is homotopic to a cellular map by the cellular approximation theorem (Theorem 4.8), and a cellular map $S^i\to X$ has image in the $i$-skeleton of $X$, which is the single $0$-cell when $i<k$; so $\pi_i(X)=0$ for $0<i<k$. (For $i=1$ the same conclusion follows from van Kampen's theorem, Theorem 1.20, since $k>1$ makes each summand $S^k$ simply connected and a wedge of simply connected spaces is simply connected.)
 :::
 
 :::
@@ -86,7 +103,7 @@ $$
 $$
 
 ::: pf-proof
-Theorem 4.32 (p. 366), the Hurewicz theorem, applies because $X$ is $(k-1)$-connected with $k\ge2$ and gives $\pi_k(X)\cong H_k(X;\ZZ)$; and $H_k(\bigvee_j S^k)\cong\bigoplus_j H_k(S^k)\cong\ZZ^n$ since the $k$-spheres are the $k$-cells of $X$ and cellular homology is computed by the cellular chain complex (Theorem 2.35, p. 139).
+Theorem 4.32, the Hurewicz theorem, applies because $X$ is $(k-1)$-connected with $k\ge2$ and gives $\pi_k(X)\cong H_k(X;\ZZ)$; and $H_k(\bigvee_j S^k)\cong\bigoplus_j H_k(S^k)\cong\ZZ^n$ since the $k$-spheres are the $k$-cells of $X$ and cellular homology is computed by the cellular chain complex (Theorem 2.35).
 :::
 
 :::
@@ -95,7 +112,7 @@ Theorem 4.32 (p. 366), the Hurewicz theorem, applies because $X$ is $(k-1)$-conn
 Let $\iota_j: S^k \hookrightarrow X$ denote the inclusion of the $j$-th sphere summand; their homotopy classes $\{[\iota_1], \dots, [\iota_n]\}$ form a standard $\ZZ$-basis for $\pi_k(X)$.
 
 ::: pf-proof
-Each $\iota_j$ is a cellular cycle generating the $j$-th summand $H_k(S^k)\cong\ZZ$ of $H_k(X)$, and the Hurewicz isomorphism of Theorem 4.32 (p. 366) is natural, so their classes form a $\ZZ$-basis of $\pi_k(X)$.
+Each $\iota_j$ is a cellular cycle generating the $j$-th summand $H_k(S^k)\cong\ZZ$ of $H_k(X)$, and the Hurewicz isomorphism of Theorem 4.32 is natural, so their classes form a $\ZZ$-basis of $\pi_k(X)$.
 :::
 
 :::
