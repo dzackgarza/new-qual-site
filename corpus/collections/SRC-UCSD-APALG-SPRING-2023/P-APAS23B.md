@@ -55,7 +55,7 @@ $$
 
 
 ::: {.solution}
-The problem is Part A, Question 2 of the Spring 2023 Applied Algebra Qualifying Exam, printed p. 2 of the Part A paper retained at `assets/attachments/Applied_Algebra_Part_A_SP23.pdf`. No retained solution set covers it — that paper carries no solutions — so the argument below is the card's own and follows the card's previous prose.
+The problem is Part A, Question 2 of the Spring 2023 Applied Algebra Qualifying Exam, in the Part A paper retained at `assets/attachments/Applied_Algebra_Part_A_SP23.pdf`. No retained solution set covers it — that paper carries no solutions — so the argument below is the card's own and follows the card's previous prose.
 
 Throughout $A\in M_n$ is Hermitian, $A^H=A$, and its eigenvalues are ordered $\lambda_n\le\cdots\le\lambda_1$.
 
