@@ -67,6 +67,16 @@ audit:
     role of the space and f_0 the role of the point, gives a T-open
     neighbourhood W of f_0 with C x W inside that preimage; and any f in W then
     satisfies f(C) contained in U, so W lies in S(C,U). Nothing was changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read. The argument is right: it suffices to open the subbasis elements
+    $S(C,U)$; the preimage $e^{-1}(U)$ is open and contains the slice $C\times\{f_0\}$; the tube
+    lemma, with $C$ compact and the point $f_0$, gives $W\in\mathcal T$ containing $f_0$ with
+    $C\times W\subseteq e^{-1}(U)$; and every $f\in W$ then has $f(C)\subseteq U$. Citation by
+    number: §46 Exercise 8, Lemma 26.8.
+
 ---
 
 ::: {.exercise}
