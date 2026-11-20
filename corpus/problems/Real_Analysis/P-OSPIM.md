@@ -26,6 +26,12 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source reads 'measurable function' for the plural and 'Monotone Converge Theorem', and prints the hint inside part (b)(i); the statement corrects both typos and moves the hint to a hint block. The title now also names part (a)."
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The step stating Fatou's lemma asserted a theorem with no indication of its standing, and now says
+    that it is cited as a standard theorem and used only in that form below. The statement is unchanged.
 ---
 
 ::: {.problem}
@@ -136,6 +142,11 @@ For every $a \in \RR$, $\theset{\sup_k f_k \le a} = \bigcap_k\theset{f_k \le a}$
 ::: pf-step
 
 Fatou's lemma: for measurable $f_n \ge 0$, $\int \liminf_n f_n \le \liminf_n \int f_n$.
+
+
+::: pf-proof
+Fatou's lemma is a standard theorem of measure theory and is cited here rather than proved: for a sequence of measurable functions with values in $[0,\infty]$ the integral of the pointwise lower limit is at most the lower limit of the integrals, which is the displayed inequality. It is used below only in that form.
+:::
 
 :::
 
