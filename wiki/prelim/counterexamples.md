@@ -72,7 +72,13 @@ The derivative of $x^2\sin(1/x)$, extended by $0$ at $0$, is $2x\sin(1/x) - \cos
 :::
 
 ::: {.example title="A function with the intermediate value property need not be continuous"}
-Every derivative has the intermediate value property ([[P-BKF15-3A|Darboux's theorem]]), so a function without that property is not a derivative: the step function equal to $0$ on $[0,1/2)$ and $1$ on $[1/2,1]$ takes neither value strictly between $0$ and $1$, and is therefore no derivative.
+The function $f\colon\RR\to\RR$ with $f(x)=\sin(1/x)$ for $x\neq0$ and $f(0)=0$ has the intermediate value property and is discontinuous at $0$.
+
+For the intermediate value property, let $a<b$ and let $y$ lie strictly between $f(a)$ and $f(b)$. If $0\notin[a,b]$ then $f$ is continuous on $[a,b]$ and $y$ is attained there. If $0\in[a,b]$, then $f(a),f(b)\in[-1,1]$, so $y\in(-1,1)$; one of the intervals $(a,0)$ and $(0,b)$ is nonempty, and on it $1/x$ ranges over a half-line, hence over an interval of length exceeding $2\pi$, so $\sin(1/x)$ attains $y$ there.
+
+For the discontinuity, $f\bigl(1/(\pi/2+2\pi n)\bigr)=1$ and $f\bigl(1/(3\pi/2+2\pi n)\bigr)=-1$ for every $n\geq0$, and both arguments tend to $0$, so $f$ has no limit at $0$ while $f(0)=0$.
+
+Every derivative has the intermediate value property ([[P-BKF15-3A|Darboux's theorem]]), so the property is necessary for a derivative; this example shows that it does not imply continuity.
 
 :::
 

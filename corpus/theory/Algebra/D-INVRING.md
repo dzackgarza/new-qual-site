@@ -19,5 +19,5 @@ The \dfn{invariant ring} of the action is the subring
 $$
 k[V]^G \coloneqq \theset{f\in k[V]\st g\cdot f = f \text{ for all } g\in G}.
 $$
-It is a graded subring: a polynomial is fixed by $G$ exactly when each of its homogeneous components is, since $G$ acts by graded automorphisms, and $(\CC[V]^G)_d$ denotes its degree-$d$ part.
+It is a graded subring: a polynomial is fixed by $G$ exactly when each of its homogeneous components is, since $G$ acts by graded automorphisms, and $(k[V]^G)_d$ denotes its degree-$d$ part.
 :::
