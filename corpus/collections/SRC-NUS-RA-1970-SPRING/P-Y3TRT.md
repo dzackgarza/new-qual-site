@@ -107,7 +107,7 @@ Taking $x_1 \leq x_2$, steps [](#lipschitz-case-both-above){.pf-ref}, [](#lipsch
 :::
 
 ::: {.pf-step #ascoli-subsequence}
-Arzelà–Ascoli gives a subsequence $f_{n_k} \to f$ uniformly on $[0,1]$, with $f$ continuous.
+[[FF-XZGIY|Arzelà–Ascoli]] gives a subsequence $f_{n_k} \to f$ uniformly on $[0,1]$, with $f$ continuous.
 
 ::: pf-proof
 $\{f_n\}$ is uniformly bounded by $1$ (step [](#fn-well-defined-bounded){.pf-ref}) and equicontinuous (step [](#fn-lipschitz){.pf-ref}: a common Lipschitz constant), so Arzelà–Ascoli applies on the compact interval $[0,1]$.
