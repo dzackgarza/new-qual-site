@@ -11124,3 +11124,45 @@ this turn. No source obligation moves: none of the eleven has a located complete
 **Uncertainty:** the site's own warning that chapter numbers move still stands, so the lemma number is the fragile part of the sentence and the tag is the durable one; the tag is what a later reader should follow.
 
 **Repair:** this entry and the commit that carries it.
+
+## 2026-11-20, #170: the three §4.2 cards the last report left unread — two repaired, one correct
+
+**Object and need:** `E-HAT-4.2-7`, `E-HAT-4.2-13` and `E-HAT-4.2-30` of `SRC-TEXT-HAT02`, the three the
+eighth item of this date named "not yet read in this batch" and left on an older review. Each was read by
+independent readers working from the book's numbered statements, the reports collected under
+`.ultramath/smwowh6r3/` (VM-local), and every finding below was re-derived here before a card was touched.
+Six of the eight readers found both `-7` and `-13` defective; two called `-7` correct and were overruled on
+the two lines below.
+
+**`E-HAT-4.2-7` repaired, `1c6554b2c1`.** Two false claims in the proof text, neither in the construction or
+a step statement. The proof of step `induction` said the surjections onto $G_k$ for $k>m+1$ "survive because
+the composite $\pi_k(F_{m+1})\to\pi_k(F_m)\twoheadrightarrow G_k$ is still onto"; the inclusion induces
+$\pi_k(F_m)\to\pi_k(F_{m+1})$, so the displayed composite does not exist, and attaching the $(m+2)$-cells of
+step `kill` can destroy higher homotopy — with $F_0=S^2$, $G_2=\ZZ$, $G_3=0$, $G_4=\ZZ/2$ the construction
+forcing $F_3=\CP^2$ has $\pi_4(\CP^2)=0$ and the claimed surjection fails. The proof is now the induction that
+shows no cell is ever attached, step `start` giving $\pi_k(F_0)\cong G_k$ in every degree, and the solution
+block's sentence about killing the excess of the approximation is corrected with it. The proof of step
+`borel` wrote the deck transformation as $g\cdot(e,y)=(ge,y)$, which sends $[e,y]$ to $[e,g^{-1}y]$, so it
+does not cover the identity of $EG_1\times_{G_1}F$ and induces the trivial action on $\pi_k(F)$, contradicting
+the step's conclusion; it now reads $(ge,gy)$. Provenance: no retained solution set covers this exercise, so
+nothing on the card is transcribed and the construction remains the card's own.
+
+**`E-HAT-4.2-13` repaired, `9f272468ae`.** Two defects in the card's own step; Sam's part, which the solution
+block transcribes, is unchanged. The proof of step `lift` applied the lifting criterion (Proposition 1.33) to
+$f$ itself and concluded $f_*\pi_1(X)=0$; under the hypothesis $f_*\pi_1(X)=\pi_1(Y)$ that is false whenever
+$\pi_1(Y)\ne0$, and the criterion applies to the composite $fp_X:\widetilde X\to Y$, whose domain is simply
+connected. The proof of step `homology-iso` cited "Corollary 2.34", which the book does not have; the
+vanishing of $H_k$ above the dimension of a CW complex is Lemma 2.34(b), and the citation now reads that.
+Steps `n-connected`, `hurewicz-low`, `hurewicz-degree`, `conclusion` and `low-dimensions` were read and are
+unchanged.
+
+**`E-HAT-4.2-30` correct, no step changed.** The bundle condition forces $\RR-A\cong\RR$, hence $A$ one of the
+four closed shapes; the explicit $h_t$ was checked monotone and jointly continuous with $h_t$ and $h_t^{-1}$
+tending to the identity; and Proudfoot's Homework #7, the published set the step `proudfoot` transcribes, was
+compared with the card and its two formulas checked symbolically and at 60-digit precision. The suppressed
+choice of $\varepsilon$ in the trivialization is not a false claim.
+
+**Checks.** `qualc.authoring check` on both repaired cards: "schema and Markdown parsing OK (single card)";
+`tmp/lam.sh` on both: six and seven steps numbered, QED labels present. No whole-corpus `qualc check` in this
+turn. No source obligation moves: `-7` has no retained solution set, and `-13`'s and `-30`'s published sets
+are cited as before.
