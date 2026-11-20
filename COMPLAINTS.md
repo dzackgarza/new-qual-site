@@ -10432,3 +10432,33 @@ card.
 **Checks, on the one card touched.** `./.venv/bin/python -m qualc.authoring check P-AGH525INVARIANTE`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, steps 1 to 12 with QED labels present; `tools/sync_macros.py --check`, silent; `.scratch/report_check.py`, "1 card(s) checked, 0 diagnostic(s)". Not run: the whole-corpus `qualc check`, which is CI's, and no queue regeneration.
 
 **Repair.** `P-AGH525INVARIANTE` in `7208cd3d32`; this record in the COMPLAINTS commit that carries it, which changes no card.
+
+## 2026-11-20, fourth item: `E-HAT-4.D-7` read first-hand — the last verdict of this stream that rested on another reader
+
+The §4.D table of 2026-11-19 lists ten cards read correct, three of them marked first-hand (`-5`, `-6`,
+`-8`). `E-HAT-4.D-7` had a table row and no record of a reading behind it: the note of that date says the
+second reader did not read `-5`, `-6` and `-8`, and nothing names who read `-7` or how. Under QUAL-03 that
+row is not a verdict, so the card is read here step by step.
+
+Against Hatcher, *Algebraic Topology* (2002), §4.D Exercise 7 on printed p. 447, the Thom class on
+printed p. 441, the definition of orientability and Theorem 4D.10 on printed p. 442, and Proposition 4.61
+on printed p. 405. Correct as written, no card content changed; an audit event of this date records the
+reading. Each step checked in the book: the coboundary map does identify $H^n(D^n,S^{n-1};\ZZ)$ with
+$H^{n-1}(S^{n-1};\ZZ)$, in the direction `orientation-of-fibre` uses; orientability is defined by
+$L_\gamma$ acting as the identity on $H^{n-1}(S^{n-1};\ZZ)$ for every loop; Hatcher himself settles that a
+disk bundle counts as orientable when its boundary sphere bundle is; and the exercise is the one Hatcher
+names when he writes that "an exercise at the end of the section is to show that the converse of the last
+statement is also true", so the card's framing of the exercise as the converse of Theorem 4D.10 is the
+book's.
+
+**Checks.** `./.venv/bin/python -m qualc.authoring check E-HAT-4.D-7` from the repository root: "schema and
+Markdown parsing OK (single card)". `tmp/lam.sh` on the file: four steps numbered, QED labels present.
+Committed at `2292a75ccb`.
+
+**Uncertainty.** No retained solution set reaches §4.D, so nothing was compared against a published
+solution and none was searched for. No hypothesis on the base space beyond the section's own was examined.
+With this card, every card this stream still owns — the six of §3.F, the two of §4.A, the fourteen of
+§4.1, the ten of §4.D and the two of §4.L, thirty-four, together with the eight §4.2 cards assigned to it
+— has a reading recorded at first hand; §4.3 is hlg7's lane and is not in that count. The two open items
+of this stream are the source obligations on `E-HAT-2.B-4` and `E-HAT-4.A-4`, which are searches rather
+than readings.
