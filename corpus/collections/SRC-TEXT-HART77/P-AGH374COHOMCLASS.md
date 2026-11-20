@@ -1046,6 +1046,26 @@ audit:
     Theorem (0.4). Without that clause a reader can take the form to vanish in
     $H^n_Q$, which it does not. No statement changes and no other step is
     touched.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The five citations of the duality the steps use are sharpened. What the
+    steps need is the perfectness of the pairing
+    $H^q(X,\Omega^p)\times H^{n-q}(X,\Omega^{n-p})\to k$ on a nonsingular
+    projective variety, which is Corollary III.7.13; the card cited Theorem
+    III.7.6, the duality theorem for a projective scheme with a dualizing sheaf,
+    which yields it only after identifying the Ext group with
+    $H^{n-q}(X,\Omega^{n-p})$ through the local freeness of $\Omega^p$. Seven
+    occurrences, in the head's Gysin definition, at the head of s2, in s3's
+    projection formula, in s4's scalar argument, in s7, in s8's consequences and
+    in s9's definition of $\eta(Y)$, now cite III.7.13. The head's citation of
+    the trace itself stays III.7.2 with III.7.6, since that is where the
+    dualizing pair is defined. Read in this pass: Corollary III.7.13 in the text
+    version of the book, whose statement is the natural isomorphism
+    $H^q(X,\Omega^p)\cong H^{n-q}(X,\Omega^{n-p})^{\prime}$ for a nonsingular
+    projective $X$ of dimension $n$. Not checked: nothing else, and no other
+    sentence of the card changed.
 ---
 
 ::: {.problem}
@@ -1112,7 +1132,7 @@ is defined by adjunction with $j^*$ under the pairing $\langle\alpha,\beta\rangl
 $$
 \langle j_*(a),b\rangle_X=\langle a,j^*b\rangle_Y .
 $$
-The definition is forced by the exercise and is not a further choice: the exercise defines $\eta(Y)$ as the class of the functional $b\mapsto t_Y(j^*b)$, so $\eta(Y)=j_*(1)$. By III.7.6 the pairing is perfect, so this determines $j_*$.
+The definition is forced by the exercise and is not a further choice: the exercise defines $\eta(Y)$ as the class of the functional $b\mapsto t_Y(j^*b)$, so $\eta(Y)=j_*(1)$. By III.7.13 the pairing is perfect, so this determines $j_*$.
 
 One compatibility property is used, and it is proved below: the residue formula for a nonsingular divisor, step [](#s2){.pf-ref}, which relates the trace on $X$ to the trace on $D$. In class form it is part (d), the Gysin class of a divisor being the $c_1$ of its invertible sheaf; step [](#s7){.pf-ref} reads that form off. Step [](#s3){.pf-ref} then computes the Gysin class of a smooth complete intersection, in particular of a linear subspace, from it and from the projection formula, and step [](#s4){.pf-ref} proves part (b) by cutting $Y$ with $n-p$ general hyperplanes and iterating the divisor formula on $Y$ itself, which is the cut the printed hint asks for. Part (a) uses only (N).
 
@@ -1159,7 +1179,7 @@ Let $\iota:D\hookrightarrow X$ be a nonsingular divisor in a nonsingular project
 $$
 \boxed{t_X\bigl(c(\mcl(D))\smile\nu\bigr)=t_D\bigl(\restrictionof{\nu}{D}\bigr)} .
 $$
-Both sides are computed from one class on $X$ and its restriction to $D$, so no class of $D$ has to be lifted, and by (III.7.6) the identity is equivalent to the class identity $c(\mcl(D))=\iota_*(1)$: the class of a divisor is its Gysin class.
+Both sides are computed from one class on $X$ and its restriction to $D$, so no class of $D$ has to be lifted, and by (III.7.13) the identity is equivalent to the class identity $c(\mcl(D))=\iota_*(1)$: the class of a divisor is its Gysin class.
 
 ::: pf-proof
 
@@ -1222,7 +1242,7 @@ t_X\bigl(\iota_*\bigl(x\smile\restrictionof{\gamma}{D}\bigr)\smile z\bigr)
 =t_D\bigl(x\smile\restrictionof{\gamma}{D}\smile\restrictionof{z}{D}\bigr)
 =t_X\bigl(\iota_*(x)\smile\gamma\smile z\bigr),
 $$
-the middle term being $t_D\bigl(x\smile\restrictionof{(\gamma\smile z)}{D}\bigr)$ because restriction is a ring homomorphism. The pairing is perfect (III.7.6), so the two classes agree.
+the middle term being $t_D\bigl(x\smile\restrictionof{(\gamma\smile z)}{D}\bigr)$ because restriction is a ring homomorphism. The pairing is perfect (III.7.13), so the two classes agree.
 
 **The class of a complete intersection.** Put $Y_0=X$ and let $\nu_k:Y_k\hookrightarrow Y_{k-1}$ be the inclusion, so that $\iota_k=\iota_{k-1}\circ\nu_k$. The two adjunction Gysin maps compose, in the sense that
 $$
@@ -1303,7 +1323,7 @@ t_Y\bigl(c_Y^{\,m}\bigr)=t_{Y_m}(1)=\sum_{a=1}^d t_{P_a}(1)=d .
 $$
 The case $m=0$, where $Y=Y_m$ is already the set of $d$ points and the products are empty, is the same computation starting from $t_Y(1)=d$. In either case $\langle\eta(Y),\alpha_0\rangle_{\PP^n}=d\ne0$, and in particular $\alpha_0\ne0$.
 
-**The scalar.** By Exercise III.7.3 the space $H^p(\PP^n,\Omega_{\PP^n}^p)$ is one-dimensional, and by (III.7.6) the pairing is perfect. Since $\alpha_0\ne0$, the functional $u\mapsto\langle u,\alpha_0\rangle_{\PP^n}$ on that one-dimensional space is nonzero, hence injective, and the class $1_{\PP^n}$ of the statement, characterized by $t_{\PP^n}(1_{\PP^n}\smile\alpha_0)=1$, is the unique class pairing to $1$ with $\alpha_0$. Now $\langle d\cdot1_{\PP^n},\alpha_0\rangle_{\PP^n}=d=\langle\eta(Y),\alpha_0\rangle_{\PP^n}$, so $\eta(Y)-d\cdot1_{\PP^n}$ pairs to $0$ with $\alpha_0$ and vanishes:
+**The scalar.** By Exercise III.7.3 the space $H^p(\PP^n,\Omega_{\PP^n}^p)$ is one-dimensional, and by (III.7.13) the pairing is perfect. Since $\alpha_0\ne0$, the functional $u\mapsto\langle u,\alpha_0\rangle_{\PP^n}$ on that one-dimensional space is nonzero, hence injective, and the class $1_{\PP^n}$ of the statement, characterized by $t_{\PP^n}(1_{\PP^n}\smile\alpha_0)=1$, is the unique class pairing to $1$ with $\alpha_0$. Now $\langle d\cdot1_{\PP^n},\alpha_0\rangle_{\PP^n}=d=\langle\eta(Y),\alpha_0\rangle_{\PP^n}$, so $\eta(Y)-d\cdot1_{\PP^n}$ pairs to $0$ with $\alpha_0$ and vanishes:
 $$
 \eta(Y)=d\cdot1_{\PP^n},
 $$
@@ -1400,7 +1420,7 @@ $$
 
 ::: pf-proof
 
-Both sides lie in $H^1(X,\Omega_X)$, which is dual to $H^{n-1}(X,\Omega_X^{n-1})$ under the Serre pairing (III.7.6). For $\nu\in H^{n-1}(X,\Omega_X^{n-1})$ the definition of $\eta(Y)$ gives
+Both sides lie in $H^1(X,\Omega_X)$, which is dual to $H^{n-1}(X,\Omega_X^{n-1})$ under the Serre pairing (III.7.13). For $\nu\in H^{n-1}(X,\Omega_X^{n-1})$ the definition of $\eta(Y)$ gives
 $$
 \langle\eta(Y),\nu\rangle_X=t_X\bigl(j_*(1)\smile\nu\bigr)=t_Y(\restrictionof{\nu}{Y}),
 $$
@@ -1466,7 +1486,7 @@ $$
 $$
 The two pairings agree, which is the displayed vanishing for the class of this particular complete intersection; a general one is of this form for its own ample class and general members, and the pairing is linear in $\alpha_0$.
 
-**The consequences.** The spanning hypothesis below is not needed: step [](#s9){.pf-ref} identifies $\eta(Y)$ with $\gamma^{0,0}_{Y/X}(1)$ and proves the base change without it, using the multiplicativity of the Koszul map and the residue comparison, and its base-change lemma needs no hypothesis on $H$. What this paragraph adds is the independent detection by complete intersections, which evaluates both pairings at once. The classes $\eta_X(L)$ of smooth complete intersections of codimension $n-p$ are exactly the $n-p$-fold products of first Chern classes of invertible sheaves: one inclusion is step [](#s3){.pf-ref}, and for the other it suffices that every invertible sheaf is a difference of two very ample ones, $c_1(\mathcal L)=c_1(\mathcal L\otimes\mathcal M)-c_1(\mathcal M)$ for $\mathcal M$ ample enough, and that a very ample class is the class of a hyperplane section, whose products are complete-intersection classes. So the spanning condition below says that $H^{n-p}(X,\Omega^{n-p})$ is generated by products of first Chern classes; for $p=n-1$, where $Y$ is a curve, the products are single classes, and the condition is that the image of $c:\operatorname{Pic}X\otimes k\to H^1(X,\Omega^1)$ of part (c) be the whole of $H^1(X,\Omega^1)$. If that holds, then $\eta(Y)-\gamma^{0,0}_{Y/X}(1)$ pairs to zero with every class of the space; by (III.7.6) it is zero. Under the same spanning condition in $H$, the equality proved in $H$ gives $\eta_H(Z)=\gamma^{0,0}_{Z/H}(1)$, and Lemma 50.23.10  for the square over $H$ gives
+**The consequences.** The spanning hypothesis below is not needed: step [](#s9){.pf-ref} identifies $\eta(Y)$ with $\gamma^{0,0}_{Y/X}(1)$ and proves the base change without it, using the multiplicativity of the Koszul map and the residue comparison, and its base-change lemma needs no hypothesis on $H$. What this paragraph adds is the independent detection by complete intersections, which evaluates both pairings at once. The classes $\eta_X(L)$ of smooth complete intersections of codimension $n-p$ are exactly the $n-p$-fold products of first Chern classes of invertible sheaves: one inclusion is step [](#s3){.pf-ref}, and for the other it suffices that every invertible sheaf is a difference of two very ample ones, $c_1(\mathcal L)=c_1(\mathcal L\otimes\mathcal M)-c_1(\mathcal M)$ for $\mathcal M$ ample enough, and that a very ample class is the class of a hyperplane section, whose products are complete-intersection classes. So the spanning condition below says that $H^{n-p}(X,\Omega^{n-p})$ is generated by products of first Chern classes; for $p=n-1$, where $Y$ is a curve, the products are single classes, and the condition is that the image of $c:\operatorname{Pic}X\otimes k\to H^1(X,\Omega^1)$ of part (c) be the whole of $H^1(X,\Omega^1)$. If that holds, then $\eta(Y)-\gamma^{0,0}_{Y/X}(1)$ pairs to zero with every class of the space; by (III.7.13) it is zero. Under the same spanning condition in $H$, the equality proved in $H$ gives $\eta_H(Z)=\gamma^{0,0}_{Z/H}(1)$, and Lemma 50.23.10  for the square over $H$ gives
 $$
 i^*j_*(1)=i^*\eta(Y)=i^*\gamma^{0,0}_{Y/X}(1)=\gamma^{0,0}_{Z/H}(1)=\eta_H(Z)=(j_H)_*i_Y^*(1).
 $$
@@ -1507,7 +1527,7 @@ t_X\bigl(\gamma^{m,m}_{Y/X}(\xi)\bigr)=t_Y(\xi) .
 $$
 This is the chain of step [](#s2){.pf-ref} read for $\gamma(\xi)$. By the Residue Theorem (0.6)(d) each side is the sum of the residues of a presentation of its class. Lipman's Theorem (13.12) supplies the two presentations: the element $v'=c_R(\delta g_1\cdots\delta g_{n-d}\wedge v)$ of (13.12.1) is the Koszul lift of the local class $v$ of $\xi$, it is unique modulo the equations of $Y$, and (13.12.2) says that its residue at a closed point of $Y$ equals the residue of $v$ at that point. The presentation of $\gamma(\xi)$ built from (13.8) and (13.10) is carried by $Y$ with local classes $v'$, so its residue at a closed point outside $Y$ vanishes. Summing (13.12.2) over the closed points of $Y$ and applying (0.6)(d) on $X$ and on $Y$ gives the displayed identity.
 
-**The class of the exercise.** The exercise defines $\eta(Y)$ as the class of the functional $b\mapsto t_Y(\restrictionof{b}{Y})$, that is $\langle\eta(Y),b\rangle_X=t_Y(\restrictionof{b}{Y})$ by (III.7.6). For every $b\in H^{n-p}(X,\Omega^{n-p}_X)$ the two paragraphs above give
+**The class of the exercise.** The exercise defines $\eta(Y)$ as the class of the functional $b\mapsto t_Y(\restrictionof{b}{Y})$, that is $\langle\eta(Y),b\rangle_X=t_Y(\restrictionof{b}{Y})$ by (III.7.13). For every $b\in H^{n-p}(X,\Omega^{n-p}_X)$ the two paragraphs above give
 $$
 \bigl\langle\gamma^{0,0}_{Y/X}(1),b\bigr\rangle_X
 =t_X\bigl(\gamma^{0,0}_{Y/X}(1)\smile b\bigr)
