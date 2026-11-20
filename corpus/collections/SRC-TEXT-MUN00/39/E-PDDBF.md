@@ -43,6 +43,17 @@ audit:
     and because no $U_n$ meets $(-\infty,0]$; and it is not locally finite at $0$, every
     neighbourhood of which meets $U_n$ for all large $n$. Checked that the failure is at $0$ and
     not at $1$, where only finitely many $U_n$ reach a small neighbourhood.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 second read, on the verification member's report of this card. The family is
+    $\mathcal A=\{(-\infty,1),(0,\infty)\}\cup\{U_n\mid n\ge2\}$, and two steps quantified over
+    every $n$ with $1/n<\varepsilon$ and every $n>1/\varepsilon$: for $\varepsilon>1$ those
+    ranges include $n=1$, for which $U_1$ does not exist. The steps now restrict the index to
+    $n\ge2$, which is what their proofs already used, so nothing false was proved before. No other
+    step changed.
+
 ---
 
 ::: {.exercise}
@@ -114,7 +125,7 @@ $\mathcal{A}$ is not locally finite at $0$.
 :::: pf-proof
 
 ::: {.pf-step #meets-U-n}
-For every $\varepsilon>0$ the interval $(-\varepsilon,\varepsilon)$ meets $U_{n}$ for all $n$ with $1/n<\varepsilon$.
+For every $\varepsilon>0$ the interval $(-\varepsilon,\varepsilon)$ meets $U_{n}$ for all $n\ge2$ with $1/n<\varepsilon$.
 
 ::: pf-proof
 If $1/n<\varepsilon$ and $n\geq2$, then $\frac{1}{n+1}<\frac{1}{n}<\frac{1}{n-1}$, so $\frac{1}{n}\in U_{n}$, and also $\frac{1}{n}<\varepsilon$ with $\frac{1}{n}>0$, so $\frac{1}{n}\in(-\varepsilon,\varepsilon)$. Hence that point lies in the intersection.
@@ -126,7 +137,7 @@ If $1/n<\varepsilon$ and $n\geq2$, then $\frac{1}{n+1}<\frac{1}{n}<\frac{1}{n-1}
 No neighbourhood of $0$ meets only finitely many members of $\mathcal{A}$.
 
 ::: pf-proof
-A neighbourhood $W$ of $0$ contains an interval $(-\varepsilon,\varepsilon)$ with $\varepsilon>0$, and by step [](#meets-U-n){.pf-ref} it meets $U_{n}$ for every $n>1/\varepsilon$, of which there are infinitely many; so $W$ meets infinitely many members of $\mathcal{A}$.
+A neighbourhood $W$ of $0$ contains an interval $(-\varepsilon,\varepsilon)$ with $\varepsilon>0$, and by step [](#meets-U-n){.pf-ref} it meets $U_{n}$ for every $n\ge2$ with $n>1/\varepsilon$, of which there are infinitely many; so $W$ meets infinitely many members of $\mathcal{A}$.
 :::
 
 :::
