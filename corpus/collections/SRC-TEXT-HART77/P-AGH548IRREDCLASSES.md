@@ -435,6 +435,44 @@ audit:
     or preprint page. No statement, hypothesis, step or citation target changes: only the page
     locators are removed. The audit events above are left as written, and the pages they name
     remain the record of what was read.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The nonsingularity step is re-proved, the argument committed at `272545864d` being withdrawn as
+    a non-sequitur. That argument computed $p_g(Y)=p_a(Y)+h^1(X,\OO_X(D-H))$ for the general member
+    $Y$ and drew nonsingularity from $p_g(Y)=p_a(Y)$ together with a claimed inequality
+    $p_g(Y)\le g(\tilde Y)$ for the normalization. Both grounds fail. The identity $p_g(Y)=p_a(Y)$
+    holds for every reduced curve, not only for a nonsingular one, so it cannot imply
+    nonsingularity: for the dualizing sheaf, Serre duality on $Y$ gives
+    $h^1(\omega_Y)=h^0(\OO_Y)=1$ and $\chi(\omega_Y)=-\chi(\OO_Y)=p_a-1$, hence
+    $h^0(\omega_Y)=p_a$; a plane nodal cubic is an instance with $p_a=p_g=1$ that is singular. And
+    $p_g(Y)\le g(\tilde Y)$ is false: $\nu^*\omega_Y$ has degree $2p_a-2$, which exceeds
+    $2g(\tilde Y)-2$ as soon as $\sum\delta_p>0$, so it is not $\omega_{\tilde Y}$ and its sections
+    can exceed $g(\tilde Y)$; on the nodal cubic $\nu^*\omega_Y=\OO_{\PP^1}$ has $h^0=1$ while
+    $g(\tilde Y)=0$. What the computation does give is $h^1(X,\OO_X(D-H))=0$, which says nothing
+    about singularities. The step now proves that the morphism defined by $\linearsystem{D}$ is
+    birational, and then that a general member is nonsingular by the incidence count.
+    Riemann--Roch, Theorem V.1.6, with $h^1=h^2=0$ and $\chi(\OO_X)=1$, gives
+    $N=\dim\linearsystem{D}=(D^2+D\cdot H)/2$; a surface in $\PP^N$ that spans $\PP^N$ has degree at
+    least $N-1$, proved in the step by induction with projection from a general point of the
+    surface; $D^2=q\deg Y$ with $q$ the degree of the morphism then forces $q=1$, since $q\ge3$ gives
+    $D\cdot H\le1$ and $q=2$ gives $D\cdot H=2$, where the Cauchy--Schwarz enumeration of the classes
+    of degree $2$ meeting the six exceptional curves nonnegatively makes $D^2\le0$, the cases
+    $a=1,2,3$ being the classes $H-G_i$, $H-F_{ij}$ and $H-E_i$ of degree $2$ and square $0$ that
+    step conic-classes-contain-a-conic enumerates. With the morphism birational its differential has
+    rank $2$ at the generic point by Theorem II.8.6A, so the locus of rank at most $1$ has dimension
+    at most $1$; the rank-zero locus is finite rather than contracted, because a birational morphism
+    is an isomorphism over a dense open set; and the bad hyperplanes form a closed subset of the
+    dual of dimension at most $N-1$. No Bertini theorem for a very ample or a base-point-free system,
+    no separability of that morphism and no hypothesis on the characteristic is used. Read for this
+    pass: Hartshorne, Theorem V.1.6 with Lemma 1.7, Theorem V.1.9, Proposition V.4.8, Theorem V.4.9,
+    Theorem V.4.11 with Lemma V.4.12, Theorem II.8.6A, Theorem I.5.1, Corollary III.7.7 and Theorem
+    III.7.11, in tmp/sources/hartshorne-1977-algebraic-geometry.md; Harbourne, Anticanonical
+    Rational Surfaces, Corollary II.3, Lemma II.6 with its proof and Theorem III.1(a), in the text
+    version retained in tmp/sources. Not checked: any printing of either book, only those text
+    versions; no certificate or computation is claimed, and the degree bound and the degree-$2$
+    enumeration are the card's own arguments.
 ---
 
 ::: {.problem}
@@ -557,7 +595,7 @@ Fourth, a general member is reduced and irreducible: since $D^2>0$ the system is
 pencil, and Harbourne's Lemma II.6(b) then gives $D^2>0$ and that the general section
 of $D$ is reduced and irreducible.
 
-Finally, it is nonsingular, in every characteristic, by the genus identity below. Put
+Finally, it is nonsingular, in every characteristic. Put
 $H=\OO_X(1)=-K_X$, so $H^2=3$. Since $X$ is a cubic surface in $\PP^3$, the sequence
 $0\to\OO_{\PP^3}(-3)\to\OO_{\PP^3}\to\OO_X\to0$ gives $q(X)=h^1(\OO_X)=0$, and
 $p_g(X)=h^0(K_X)=h^0(\OO_X(-1))=0$. Also $D\cdot H\ge2$: the Hodge index theorem, Theorem V.1.9,
@@ -567,49 +605,71 @@ is ample. And $h^2(X,\OO_X(D))=0$: Serre duality, Corollary III.7.7, gives
 $h^2(D)=h^0(K_X-D)=h^0(-H-D)$, and $(-H-D)\cdot H=-3-D\cdot H<0$ with $H$ ample, so $-H-D$ is not
 effective.
 
-Let $Y\in\linearsystem{D}$ be a general member; by the fourth paragraph $Y$ is reduced and
-irreducible. Since $Y$ is a divisor in the smooth surface $X$, Theorem III.7.11,
-gives $\omega_Y\cong\restrictionof{(K_X+Y)}{Y}=\restrictionof{(D-H)}{Y}$. From
+It remains to show that a general member is nonsingular, and this is done without a Bertini theorem
+for a base-point-free system and without a hypothesis on the characteristic. Let
+$N=\dim\linearsystem{D}$, let $\varphi\colon X\to\PP^N$ be the morphism defined by
+$\linearsystem{D}$, whose general member is the preimage of a general hyperplane, and note that
+$N\ge2$, because a base-point-free pencil has $D^2=0$. Riemann--Roch, Theorem V.1.6, applied with
+$h^1(D)=h^2(D)=0$ and $\chi(\OO_X)=1-p_g(X)+q(X)=1$, gives
 $$
-0\longrightarrow\OO_X(K_X)\longrightarrow\OO_X(K_X+D)\longrightarrow\omega_Y\longrightarrow0
+h^0(\OO_X(D))=\chi(\OO_X(D))=\frac{1}{2}D\cdot(D-K_X)+1=\frac{1}{2}(D^2+D\cdot H)+1,
+\qquad\text{so}\qquad
+N=\frac{1}{2}(D^2+D\cdot H).
 $$
-and $h^0(K_X)=p_g(X)=0$, $h^1(K_X)=q(X)=0$, we get
+Let $Y=\varphi(X)$ be the image, a surface spanning $\PP^N$ because the system is complete, and let
+$q=[k(X):k(Y)]$ be the degree of $\varphi$; then $D^2=q\deg Y$ by the projection formula. A surface
+in $\PP^N$ that spans $\PP^N$ has degree at least $N-1$: a surface spanning $\PP^2$ is $\PP^2$
+itself, of degree $1$; a surface spanning $\PP^3$ is not a plane,
+and for $N\ge4$ the projection of $Y$ from a general point of $Y$ is a birational map onto a surface
+of degree $\deg Y-1$ in $\PP^{N-1}$ which still spans, a general $\PP^{N-2}$ through that point
+meeting $Y$ in $\deg Y$ points one of which is that point with multiplicity one, while a hyperplane
+of $\PP^{N-1}$ containing the image would lift to a hyperplane of $\PP^N$ containing $Y$. Hence
+$D^2=q\deg Y\ge q(N-1)$, and
 $$
-p_g(Y)=h^0(Y,\omega_Y)=h^0(X,\OO_X(D-H)).
+D\cdot H=2N-D^2\le 2N-q(N-1)=N(2-q)+q .
 $$
-Riemann--Roch on the surface, Theorem V.1.6, and $h^1(D)=h^2(D)=0$ give
-$$
-h^0(X,\OO_X(D))=\chi(\OO_X(D))=1+\tfrac12(D^2+D\cdot H),
-$$
-and the adjunction formula, Proposition V.1.5, gives
-$$
-p_a(Y)=1+\tfrac12(D^2-D\cdot H).
-$$
-By Bertini's theorem for hyperplane sections, Theorem II.8.18, a general plane
-section $H\in\linearsystem{-K_X}$ is a smooth plane cubic, of genus $1$; since
-$\deg\OO_H(D)=D\cdot H\ge2>0$, Riemann--Roch on $H$ gives $h^0(H,\OO_H(D))=D\cdot H$. From
-$$
-0\longrightarrow\OO_X(D-H)\longrightarrow\OO_X(D)\longrightarrow\OO_H(D)\longrightarrow0
-$$
-and $h^1(D)=0$,
-$$
-h^0(D-H)=h^0(D)-D\cdot H+h^1(D-H).
-$$
-Substituting the two displays,
-$$
-p_g(Y)=1+\tfrac12(D^2+D\cdot H)-D\cdot H+h^1(D-H)
-=p_a(Y)+h^1(D-H),
-$$
-so $p_a(Y)-p_g(Y)=-h^1(D-H)\le0$.
+If $q\ge3$ the right-hand side is at most $1$, contradicting $D\cdot H\ge2$. If $q=2$ then
+$D\cdot H=2$, and no class of degree $2$ meeting the six exceptional curves nonnegatively has
+positive square: writing $D\sim a\ell-\sum_ib_ie_i$ as in Proposition 4.8, the inequalities
+$D\cdot E_i=b_i\ge0$ and $3a-\sum_ib_i=D\cdot H=2$ give $a\ge1$, while $D^2=a^2-\sum_ib_i^2>0$ needs
+$a^2>(3a-2)^2/6$ by Cauchy--Schwarz, that is $3a^2-12a+4<0$ and $a\in\{1,2,3\}$, and six nonnegative
+integers $b_i$ with $\sum_ib_i$ equal to $1$, $4$ or $7$ have $\sum_ib_i^2$ at least $1$, $4$ or $9$,
+which is $a^2$; so $D^2\le0$ in each case, a contradiction. Therefore $q=1$ and $\varphi$ is
+birational; its differential has rank $2$ at the generic point of $X$, since $k(X)=k(Y)$ makes
+$\dim_{k(X)}\Omega_{k(X)/k(Y)}=0$ by Theorem II.8.6A, and the locus where the rank of $d\varphi$ is
+at most $1$ is a proper closed subset of the surface.
 
-For a reduced irreducible curve $Y$ one has $p_g(Y)\le p_a(Y)$: for the normalization
-$\nu\colon\tilde Y\to Y$, $\chi(\OO_Y)=\chi(\OO_{\tilde Y})-\ell(\nu_*\OO_{\tilde Y}/\OO_Y)$, so
-$p_a(Y)=g(\tilde Y)+\sum_{p\in Y_{\mathrm{sing}}}\delta_p$ with $\delta_p\ge1$, while
-$\nu^*\omega_Y\cong\omega_{\tilde Y}$ because both are line bundles on the smooth curve $\tilde Y$
-that agree on the dense open set where $\nu$ is an isomorphism, and pulling sections back gives
-$p_g(Y)=h^0(Y,\omega_Y)\le h^0(\tilde Y,\omega_{\tilde Y})=g(\tilde Y)$. Hence $p_a(Y)=p_g(Y)$
-and $\sum\delta_p=0$, so $Y$ is nonsingular. No Bertini theorem for a base-point-free system, no
-separability of the morphism of $\linearsystem{D}$ and no hypothesis on the characteristic is used.
+For $x\in X$ let $r(x)$ be the rank of $d\varphi_x\colon T_xX\to T_{\varphi(x)}\PP^N$, and let
+$$
+Z=\{(x,H)\in X\times\PP^{N\vee}:\varphi(x)\in H,\ d(\ell_H\circ\varphi)_x=0\},
+$$
+where $\ell_H$ is a linear form defining $H$. The local equation of the member $\varphi^{-1}(H)$ at a
+point $x$ of it is $\ell_H\circ\varphi$; if its differential is nonzero at $x$ it is part of a
+regular system of parameters of the local ring of the nonsingular surface $X$, so the quotient local
+ring is regular of dimension $1$ and the member is nonsingular at $x$ by Theorem I.5.1. It is
+therefore enough to show that the image of $Z$ in $\PP^{N\vee}$ is a proper closed subset.
+
+Where $r(x)=2$ the image $d\varphi_x(T_xX)$ is a $2$-plane in $T_{\varphi(x)}\PP^N$ when $N\ge3$, and
+the hyperplanes $H$ with $(x,H)\in Z$ are those containing it, a linear subspace of $\PP^{N\vee}$ of
+dimension $N-3$, so this part of $Z$ has dimension at most $2+(N-3)=N-1$; for $N=2$ no hyperplane
+contains that image and the part is empty. Where $r(x)=1$ the hyperplanes $H$ with $(x,H)\in Z$
+contain the line $d\varphi_x(T_xX)$, a linear subspace of dimension $N-2$, and over the at most
+one-dimensional locus $r=1$ this part of $Z$ has dimension at most $1+(N-2)=N-1$. Where $r(x)=0$
+every hyperplane through $\varphi(x)$ satisfies $(x,H)\in Z$; but $\varphi$ is birational, hence an
+isomorphism over a dense open subset of $X$, so the restriction of $\varphi$ to any curve is
+birational onto its image and has nonzero differential at that curve's generic point, and the locus
+$r=0$ is finite. This part of $Z$ lies in the union of the $\PP^{N-1}$ of hyperplanes through the
+finitely many points $\varphi$ of that locus, so it has dimension at most $N-1$.
+
+Thus $Z$ has dimension at most $N-1$, and so does its image in $\PP^{N\vee}$, which is closed because
+$X$ is proper. A general hyperplane $H$ therefore lies outside that image, and for such $H$ no point
+of the member $\varphi^{-1}(H)$ lies in $Z$, so the member, reduced and irreducible by the fourth
+paragraph, is nonsingular. This is the incidence
+count of the proof of Vakil's Bertini theorem, *The Rising Sea* (21 October 2025), Theorem 13.4.2,
+carried out for the morphism $\varphi$ rather than for a smooth closed subvariety of $\PP^N$: where
+$\varphi$ is an isomorphism the fibre of $Z$ is the $\PP^{N-1-\dim X}$ of that proof, and the cases
+$r=1$ and $r=0$ above are the additional $\PP^{N-2}$ and $\PP^{N-1}$ fibres created by the drop in
+rank.
 :::
 
 :::
@@ -705,10 +765,10 @@ composed with a pencil is a multiple of a class with reduced irreducible general
 III.1(a), that $-K_X\cdot D\ge2$ makes the system base point free with $h^1=0$. The
 paper works over an algebraically closed field of arbitrary characteristic, so its Lemma II.6 gives
 reduced irreducible members in every characteristic. The nonsingularity of the member of a class of
-the third alternative is then the genus identity of the step: for a general member $Y$,
-$\omega_Y\cong\restrictionof{(K_X+D)}{Y}$ by Theorem III.7.11, and the identity
-$p_a(Y)-p_g(Y)=-h^1(X,\OO_X(D-H))\le0$ together with $p_g(Y)\le p_a(Y)$ for a reduced curve makes
-$Y$ nonsingular.
+the third alternative is then the incidence count of Vakil's proof of Theorem 13.4.2, carried out
+for the morphism defined by $\linearsystem{D}$: Riemann--Roch and the degree of a surface spanning
+$\PP^N$ make that morphism birational, so the rank-zero stratum is finite and the bad hyperplanes
+form a closed subset of the dual of dimension at most $N-1$.
 
 I. V. Dolgachev, *Topics in Classical Algebraic Geometry* (September 27, 2010): Lemma 8.1.3 and its
 proof, on irreducible curves of negative self-intersection on a weak Del Pezzo
@@ -718,9 +778,9 @@ used: the numerical effectivity of step third-condition-contains-nonsingular-cur
 Hartshorne's Theorem 4.11, which has no hypothesis on the characteristic.
 
 Theorem 4.9 of Hartshorne, for the $27$ lines and for the curves of negative
-self-intersection; Hartshorne, Theorem III.7.11, Corollary III.7.7,
-Theorem V.1.6, Proposition V.1.5, Theorem V.1.9, and
-Theorem II.8.18, for the genus identity that makes the general member nonsingular.
+self-intersection; Hartshorne, Corollary III.7.7, Theorem V.1.6, Proposition V.1.5 and Theorem
+V.1.9 for the cohomology of $D$, the adjunction numbers and the degree of the morphism, and
+Theorem I.5.1 and Theorem II.8.6A for the nonsingularity of the general member.
 
 Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.8, argues both
 implications through the blowups $X_r$, $2\le r\le5$: it lists the lines of $X_r$, the $E_i$ and
