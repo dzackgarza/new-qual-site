@@ -11487,3 +11487,31 @@ joined by these; no further search of the same places is warranted without a new
 **No number was changed.** None read was wrong; the one change is `l1`'s sentence, which now attributes the measure step to 2.29 and the subsequence to 2.30. **Pages touched:** `wiki/real-analysis/integration/l1.md` only.
 
 **Uncertainty.** Wording comes from statement-preserving reproductions, so numbers and part-lettering are what is verified, not the printed wording; 2.11 and Exercise 2.5 rest on the reconstructed consecutive numbering and a corroborating use, and both would be settled by the printed book.
+
+
+## 2026-11-20 (#176/#177): the twelve Folland numbers and Theorem 1.11, now read in Folland's own text
+
+**Text used.** `tmp/sources/folland-1999-real-analysis.md`, the extraction of Folland, *Real Analysis*, second edition (Wiley 1999). This supersedes the reconstruction in the record above, which used Wesley's notes and Bishop's chapter-5 notes because the book was not in the checkout; every number below is now read in the book, and no page number is written here.
+
+**Theorem 1.11**, read verbatim: "If $\mu^*$ is an outer measure on $X$, the collection $\mathcal M$ of $\mu^*$-measurable sets is a $\sigma$-algebra, and the restriction of $\mu^*$ to $\mathcal M$ is a complete measure." The `outer-measure` page states exactly this, so its citation is **correct**.
+
+**The twelve, one by one.**
+
+| page | citation | Folland's text, as read | verdict |
+| --- | --- | --- | --- |
+| `is-it-measurable` | **Corollary 2.2** | "If $X$ and $Y$ are metric (or topological) spaces, every continuous $f:X\to Y$ is $(\mathcal B_X,\mathcal B_Y)$-measurable." | **correct** |
+| `is-it-measurable` | **Proposition 2.6** | "If $f,g:X\to\mathbb C$ are $\mathcal M$-measurable, then so are $f+g$ and $fg$." | **correct** |
+| `is-it-measurable` | **Corollary 2.9** | pointwise limits of measurable complex-valued functions are measurable | **correct** |
+| `is-it-measurable` | **Proposition 2.11** | "The following implications are valid iff the measure $\mu$ is complete: (a) $f$ measurable and $f=g$ $\mu$-a.e. implies $g$ measurable; (b) $f_n$ measurable and $f_n\to f$ a.e. implies $f$ measurable." | **correct**, and the page's appeal to completeness is exactly the hypothesis |
+| `is-it-measurable` | **Exercise 2.5** | "If $X=A\cup B$ where $A,B\in\mathcal M$, a function $f$ on $X$ is measurable iff $f$ is measurable on $A$ and on $B$." | **the finite case**; the page says it applies "the argument of Exercise 2.5 to the countably many pieces", which is what it does, and the countable union of the measurable pieces is measurable |
+| `is-it-measurable` | **Exercise 1.29(b)** | "If $m(E)>0$, then $E$ contains a nonmeasurable set", with $E$ Lebesgue measurable | **correct** |
+| `l1` | **Proposition 2.29** | "If $f_n\to f$ in $L^1$, then $f_n\to f$ in measure." | **correct** |
+| `l1` | **Theorem 2.30** | Cauchy in measure has a measurable limit in measure, **and** "there is a subsequence that converges a.e." | **correct**, and it is this theorem's second part, not 2.29, that gives the subsequence |
+| `which-big-theorem` | **Theorem 5.13** | "The Uniform Boundedness Principle": (a) a nonmeager set of bounded pointwise bounds gives a bound on the norms, (b) for $\mathcal X$ Banach and $\sup_{T\in\mathcal A}\norm{Tx}<\infty$ for all $x$, $\sup_T\norm T<\infty$ | **correct**; it is lettered (a)/(b), $\mathcal Y$ is an arbitrary normed space, and $\mathcal A$ is a set of operators |
+| `appendix-inequalities` | **Theorem 6.8(b)** | part (b) of the five-part Theorem 6.8: "$\norm{\cdot}_\infty$ is a norm on $L^\infty$" | **correct** |
+| `which-inequality` | **Proposition 6.10** | $0<p<q<r\le\infty$ gives $L^p\cap L^r\subset L^q$ and $\norm f_q\le\norm f_p^{\lambda}\norm f_r^{1-\lambda}$ with $\frac1q=\frac{\lambda}{p}+\frac{1-\lambda}{r}$ | **correct** |
+| `which-one-applies` | **Proposition 6.24** | $\int\abs f^p\,d\mu=p\int_0^\infty\alpha^{p-1}\lambda_f(\alpha)\,d\alpha$ for $0<p<\infty$ | **correct** |
+
+**No number changed.** Every one of the twelve states what the page using it says it states; the only difference found is that **Exercise 2.5 is the two-piece case**, which the page already describes as the argument applied to countably many pieces. **Pages touched in this pass: none** — the verification is the work and the pages were already right.
+
+**What this settles and what it does not.** The statements are read in the book's extraction, so number, part-lettering, hypotheses and conclusions are confirmed against the source itself. Not done: no page was checked line by line for other citations, and no other Folland number in the repository was re-read in this pass.
