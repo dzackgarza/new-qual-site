@@ -20,13 +20,13 @@ prompts:
 
 ::: {.definition title="Severi--Brauer variety"}
 Let $k$ be a field with separable closure $k^s$.
-A \dfn{Severi--Brauer variety} of dimension $n$ over $k$ is a variety $X$ over $k$ with $X_{k^s} \cong \PP^n_{k^s}$.
+A \dfn{Severi--Brauer variety} of dimension $n$ over $k$ is a variety $X$ over $k$ with $X_{k^s} \cong \PP^n_{k^s}$ [Serre, *Local Fields*, §X.6, where the same definition is stated for a separable splitting extension].
 :::
 
 ::: {.theorem}
 1. Isomorphism classes of Severi--Brauer varieties of dimension $n$ over $k$ are in bijection with $H^1(\Gal(k^s/k), \PGL_{n+1}(k^s))$, hence with isomorphism classes of central simple $k$-algebras of degree $n+1$; each has a class in $\operatorname{Br}(k)$.
 
-2. (Châtelet) $X \cong \PP^n_k$ if and only if $X(k) \neq \emptyset$, if and only if its Brauer class is trivial.
+2. (Châtelet) $X \cong \PP^n_k$ if and only if $X(k) \neq \emptyset$, if and only if its Brauer class is trivial [Serre, *Local Fields*, Exercise X.6.1].
 :::
 
 ::: {.example}
