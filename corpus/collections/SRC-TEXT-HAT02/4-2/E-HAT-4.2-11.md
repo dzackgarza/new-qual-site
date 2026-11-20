@@ -49,6 +49,23 @@ audit:
     by the antipodal deck transformation, of degree -1, so the coinvariants are Z/2, while the
     relative group is Z by relative Hurewicz; a homomorphism from a finite group to Z is zero.
     Statement unchanged; no retained solution set covers this exercise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.2 Exercise 11, Example 1B.1 and
+    Theorem 4.37's neighbourhood. One defect repaired in the opening paragraph: it justified the direct
+    product by "pi_2 of a pair is abelian", which is false. For X = T^2 with its standard structure,
+    pi_2(X) = 0 and pi_2(X, X^1) = K = ker(F_2 -> Z^2), free of infinite rank and not abelian; the
+    exercise's conclusion still holds there, because it is the splitting and not abelianness that gives
+    it. The paragraph now says the sequence splits into a semidirect product, that the action of K is
+    trivial because the action of pi_1(X^1) on pi_2(X, X^1) restricts to that on pi_2(X) through
+    pi_2(X^1) = 0, and it records the torus as the case showing pi_2 of a pair need not be abelian. The
+    steps are unchanged: pi_i(X^1) = 0 for i >= 2 and pi_1(X^1) -> pi_1(X) onto; the pair sequence gives
+    the short exact sequence with kernel K; K is free as a subgroup of the free group pi_1(X^1); and the
+    section exists because a homomorphism out of a free group is determined by arbitrary images of a free
+    basis. The RP^2 case is right: pi_2'(RP^2) = Z/2 and pi_2'(RP^2, (RP^2)^1) = Z, so no injective
+    homomorphism exists.
 ---
 
 ::: {.problem}
@@ -58,7 +75,7 @@ Show also that the map $\pi_2'(X) \to \pi_2'(X, X^1)$ need not be injective by c
 :::
 
 ::: {.solution}
-Since $X^1$ is a graph its higher homotopy vanishes, and $\pi_1(X^1)\to\pi_1(X)$ is onto because $X$ has no $1$-cells outside $X^1$; the long exact sequence of the pair therefore reads $0\to\pi_2(X)\to\pi_2(X,X^1)\to K\to1$ with $K=\ker(\pi_1(X^1)\to\pi_1(X))$ free. A free group splits the projection, by lifting a free basis, and $\pi_2$ of a pair is abelian, so the split extension is a direct product. For $X=\RP^2$ the two primed groups are $\ZZ/2$ and $\ZZ$, and a homomorphism from the first to the second is zero. The argument is this card's own: no retained solution set covers this exercise.
+Since $X^1$ is a graph its higher homotopy vanishes, and $\pi_1(X^1)\to\pi_1(X)$ is onto because $X$ has no $1$-cells outside $X^1$; the long exact sequence of the pair therefore reads $0\to\pi_2(X)\to\pi_2(X,X^1)\to K\to1$ with $K=\ker(\pi_1(X^1)\to\pi_1(X))$ free. A free group splits the projection, by lifting a free basis, so $\pi_2(X,X^1)$ is a semidirect product $\pi_2(X)\rtimes K$, and it is the direct product because $K$ acts trivially on $\pi_2(X)$: the action of $\pi_1(X^1)$ on $\pi_2(X,X^1)$ is conjugation inside that group, and it restricts to the action on $\pi_2(X)$ through $\pi_2(X^1)=0$. The group $\pi_2(X,X^1)$ itself is not abelian in general — for $X=T^2$ one has $\pi_2(X)=0$ and $\pi_2(X,X^1)\cong K$, free of infinite rank — so the splitting, not abelianness, is what the argument uses. For $X=\RP^2$ the two primed groups are $\ZZ/2$ and $\ZZ$, and a homomorphism from the first to the second is zero. The argument is this card's own: no retained solution set covers this exercise.
 
 ::: pf
 
