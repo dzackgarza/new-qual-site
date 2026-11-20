@@ -306,6 +306,17 @@ audit:
     Nothing changed this pass: the repair of `#proper-case` recorded on 2026-11-16 (the class dies
     through a contractible disk, no fundamental chain) is what the argument needs and uses.
     Not claimed: a published proof of (b), none located.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator repair, no mathematics: the one surviving page reference in the live text — "the printed page
+    and the correction are recorded in the Sources remark" — now reads "the statement in question and the
+    correction", which is what the remark gives. The card's exercise, its collared-disk reduction and its
+    invocations of Exercise 2.B.3, of Hatcher's Proposition 2B.1 and of Invariance of Domain Theorem 2B.3
+    are cited by number, and no page number remains in the problem, the solution or a remark. The dated
+    events above keep the text their sessions wrote, page references included, as QUAL-11 requires. No
+    claim changed; `qualc.authoring check` passes.
 ---
 
 ::: {.problem}
@@ -357,7 +368,7 @@ $$
 $$
 That the inverse is continuous and that the composites are the identity is what that source leaves as "clearly we have a continuous map (with continuous inverse), since the denominator in the image is never zero", and it is checked here.
 
-tom Dieck, §2.8.3, displays the same homeomorphism, in the direction of $\phi$ and with the two blocks of coordinates in the opposite order: for $S^{m+n+1}\subset\RR^{m+1}\oplus\RR^{n+1}$ and $(m,n)=(q-1,p-1)$ his map is $(x,y)\mapsto(\sqrt{1-\norm y^2}\,x,y)$, restricted to $\norm y<1$, with $x$ the unit vector in the direction of the last $q$ coordinates of the image and $y$ the first $p$. The reparametrization $y\mapsto y/\sqrt{1+\norm y^2}$ of the $\RR^p$ factor, a homeomorphism of $\RR^p$ onto the open unit ball, carries his formula to $\phi$. The exponent printed there in the target, $S^m\times E^n$, is one too small; the printed page and the correction are recorded in the Sources remark.
+tom Dieck, §2.8.3, displays the same homeomorphism, in the direction of $\phi$ and with the two blocks of coordinates in the opposite order: for $S^{m+n+1}\subset\RR^{m+1}\oplus\RR^{n+1}$ and $(m,n)=(q-1,p-1)$ his map is $(x,y)\mapsto(\sqrt{1-\norm y^2}\,x,y)$, restricted to $\norm y<1$, with $x$ the unit vector in the direction of the last $q$ coordinates of the image and $y$ the first $p$. The reparametrization $y\mapsto y/\sqrt{1+\norm y^2}$ of the $\RR^p$ factor, a homeomorphism of $\RR^p$ onto the open unit ball, carries his formula to $\phi$. The exponent printed there in the target, $S^m\times E^n$, is one too small; the statement in question and the correction are recorded in the Sources remark.
 
 :::
 
