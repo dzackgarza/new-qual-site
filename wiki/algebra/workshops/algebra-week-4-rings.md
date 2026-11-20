@@ -5,7 +5,7 @@ title: "Algebra qual prep week 4: rings"
 
 # Algebra qual prep week 4: rings
 
-The ring material of one session, in the order the questions are asked: what an ideal is and what it does to the quotient, how the classes of domains sit inside one another, and which of the properties are decided by a valuation, a chain condition, or a localization.
+The ring material of the week: what an ideal is and what it does to the quotient, how the classes of domains sit inside one another, and which of the properties are decided by a valuation, a chain condition, or a localization.
 
 ## Ideals and quotients
 
