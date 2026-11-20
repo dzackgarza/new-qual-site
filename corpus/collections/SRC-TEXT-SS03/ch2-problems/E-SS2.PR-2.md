@@ -37,6 +37,19 @@ audit:
     $r\ge1-\delta_q/2$ when $q\ge2$, states the case $q=1$ to be vacuous, and bounds the real part of
     the corresponding terms by $-2r^n/\delta_q$. The other three steps are unchanged. Not checked in
     this pass: the identity of step 1 and the convergence argument of step 4 beyond reading them.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Record of the search behind the solution's provenance sentence, which the reader asked for where
+    no published solution set covers the Problem. Read: the head of R. C. Rhoades,
+    *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), whose
+    abstract describes it as solutions or hints to "many of the exercises", with one part per
+    chapter. Searched the open web for a set answering the end-of-chapter Problems of this book: no
+    document answering Chapter 2, Problem 2 was found; the documents returned were the book itself,
+    the Rhoades set, and course pages. This search located no published set answering this Problem,
+    and none is retained in this repository. Not checked: whether such a set exists outside what a
+    web search reaches. The mathematics of the card is unchanged.
 ---
 
 ::: {.exercise}
