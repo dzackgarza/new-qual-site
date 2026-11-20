@@ -45,8 +45,7 @@ $$
 
 ::: {.solution}
 The item is Section 1 item 8 of the Complex Analysis Section of the Analysis Qualifier, Wesleyan
-University, Summer 2005 (evaluate the integral of e^{pi z}/(z-1)^2 over |z| = 2), on PDF p. 25 of the retained scan
-assets/attachments/analysis_2003-2007.pdf.
+University, Summer 2005 (evaluate the integral of e^{pi z}/(z-1)^2 over |z| = 2), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 Assume the circle $\abs{z}=2$ has its standard positive orientation.

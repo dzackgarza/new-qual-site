@@ -43,8 +43,7 @@ Let $(X,d)$ be a metric space.
 :::
 
 ::: {.solution}
-The item is item 1 of the Real Analysis Preliminary Examination, 2006 (On a metric space: Cauchy sequence, convergent implies Cauchy, completeness, Baire), on the first page
-of that paper, PDF p. 17 of the retained scan assets/attachments/analysis_2003-2007.pdf.
+The item is item 1 of the Real Analysis Preliminary Examination, 2006 (On a metric space: Cauchy sequence, convergent implies Cauchy, completeness, Baire), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 ::: pf

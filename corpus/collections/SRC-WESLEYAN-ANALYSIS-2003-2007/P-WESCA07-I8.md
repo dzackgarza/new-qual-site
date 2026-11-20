@@ -45,8 +45,7 @@ Define the arc length of a path $\gamma:[a,b]\to\CC$.
 :::
 
 ::: {.solution}
-The item is Section 1 item 8 of the Complex Analysis section of the Analysis Qualifier, Wesleyan University, Summer 2007 (the definition of the arc length of a path), on PDF p. 7 (printed p. 2 of the 2007 complex-analysis paper) of the retained scan
-assets/attachments/analysis_2003-2007.pdf.
+The item is Section 1 item 8 of the Complex Analysis section of the Analysis Qualifier, Wesleyan University, Summer 2007 (the definition of the arc length of a path), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 ::: pf

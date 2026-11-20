@@ -48,8 +48,7 @@ $$
 
 ::: {.solution}
 The item is Section 2 item 1 of the Complex Analysis Preliminary Examination of August 9, 2006
-(Find and classify all isolated singularities), on the first page of that paper, PDF p. 15 of the retained scan
-assets/attachments/analysis_2003-2007.pdf.
+(Find and classify all isolated singularities), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 ::: pf

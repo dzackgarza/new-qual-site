@@ -40,8 +40,7 @@ State the Maximum Principle.
 
 ::: {.solution}
 The item is Section 1 item 3 of the Complex Analysis Preliminary Examination of August 9, 2006
-(State the Maximum Principle), on the first page of that paper, PDF p. 15 of the retained scan
-assets/attachments/analysis_2003-2007.pdf.
+(State the Maximum Principle), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 ::: pf

@@ -57,9 +57,7 @@ $$
 :::
 
 ::: {.solution}
-The item is item 3 of the Real Analysis Preliminary Examination, 2006, whose parts a--c are on
-the first page of that paper (PDF p. 17 of the retained scan
-assets/attachments/analysis_2003-2007.pdf) and whose part d is on its second (PDF p. 19).
+The item is item 3 of the Real Analysis Preliminary Examination, 2006, whose parts a--c are in the retained scan `assets/attachments/analysis_2003-2007.pdf` and whose part d is its continuation.
 
 
 ::: pf

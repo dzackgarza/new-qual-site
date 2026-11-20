@@ -39,8 +39,7 @@ State the Open Mapping Theorem.
 
 ::: {.solution}
 The item is section 1.1 item 4 of the Preliminary Examination in Analysis, Wesleyan University,
-August 2, 2004 (statement of the open mapping theorem), on PDF p. 33 of the retained scan
-assets/attachments/analysis_2003-2007.pdf, printed page 1.
+August 2, 2004 (statement of the open mapping theorem), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 ::: pf

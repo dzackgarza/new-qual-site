@@ -39,8 +39,7 @@ $$
 
 ::: {.solution}
 The item is Section 2 item 3 of the Complex Analysis Section of the Analysis Qualifier, Wesleyan
-University, Summer 2005 (the maximum of |e^{z^2}| on the square [0,2] x [0,2]), on PDF p. 27 of the retained scan
-assets/attachments/analysis_2003-2007.pdf.
+University, Summer 2005 (the maximum of |e^{z^2}| on the square [0,2] x [0,2]), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 ::: pf

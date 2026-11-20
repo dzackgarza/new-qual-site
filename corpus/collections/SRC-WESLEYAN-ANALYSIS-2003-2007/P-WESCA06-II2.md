@@ -45,8 +45,7 @@ Show that $f$ is differentiable at every point on the line $y=x$ but is nowhere 
 
 ::: {.solution}
 The item is Section 2 item 2 of the Complex Analysis Preliminary Examination of August 9, 2006
-(f(z)=x^2+iy^2 differentiable on y=x and nowhere analytic), on the first page of that paper, PDF p. 15 of the retained scan
-assets/attachments/analysis_2003-2007.pdf.
+(f(z)=x^2+iy^2 differentiable on y=x and nowhere analytic), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 Write

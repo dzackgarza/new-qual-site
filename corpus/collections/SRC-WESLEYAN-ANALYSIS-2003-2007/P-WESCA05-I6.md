@@ -44,8 +44,7 @@ about the point $10+10i$.
 
 ::: {.solution}
 The item is Section 1 item 6 of the Complex Analysis Section of the Analysis Qualifier, Wesleyan
-University, Summer 2005 (winding number of 4e^{it}+2i about 10+10i), on PDF p. 25 of the retained scan
-assets/attachments/analysis_2003-2007.pdf.
+University, Summer 2005 (winding number of 4e^{it}+2i about 10+10i), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 ::: pf

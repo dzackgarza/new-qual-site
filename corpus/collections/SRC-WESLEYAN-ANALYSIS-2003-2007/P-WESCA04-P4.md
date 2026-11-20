@@ -45,8 +45,7 @@ Show that $f$ is constant on $D$.
 
 ::: {.solution}
 The item is section 1.3 item 4 of the Preliminary Examination in Analysis, Wesleyan University,
-August 2, 2004 (an analytic $f=u+iv$ with $v=u^2$ is constant), on PDF p. 34 of the retained scan
-assets/attachments/analysis_2003-2007.pdf, printed page 2.
+August 2, 2004 (an analytic $f=u+iv$ with $v=u^2$ is constant), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 ::: pf

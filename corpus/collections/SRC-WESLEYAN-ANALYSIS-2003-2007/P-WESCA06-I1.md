@@ -40,8 +40,7 @@ Define the winding number of a path $\gamma$ about a point $z\in\CC$.
 
 ::: {.solution}
 The item is Section 1 item 1 of the Complex Analysis Preliminary Examination of August 9, 2006
-(Define the winding number of a path about a point), on the first page of that paper, PDF p. 15 of the retained scan
-assets/attachments/analysis_2003-2007.pdf.
+(Define the winding number of a path about a point), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 Assume

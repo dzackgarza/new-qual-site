@@ -59,7 +59,7 @@ The examination prints $\norm{f}=\int_{[0,1]}f\,dm$ without absolute values, and
 functional is not a norm: it is negative at $f=-1$ and vanishes at $f(x)=x-\tfrac12$, so
 part (a) is not true of it as it stands. The norm proved below is the intended one,
 $\int_{[0,1]}\abs{f}\,dm$. The item is Part II, item 6, of the Real Analysis section of the
-Wesleyan analysis qualifier, Summer 2007, printed p. 2 of the retained scan.
+Wesleyan analysis qualifier, Summer 2007, in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 :::
 
 ::: {.solution}

@@ -44,8 +44,7 @@ in a Laurent series on the annulus $0<\abs{z}<\infty$.
 
 ::: {.solution}
 The item is Section 2 item 1 of the Complex Analysis Section of the Analysis Qualifier, Wesleyan
-University, Summer 2005 (Laurent series of e^{1/z^2} on 0<|z|<infty), on PDF p. 27 of the retained scan
-assets/attachments/analysis_2003-2007.pdf.
+University, Summer 2005 (Laurent series of e^{1/z^2} on 0<|z|<infty), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 ::: pf

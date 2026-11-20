@@ -40,8 +40,7 @@ State Cauchy's Integral Formula.
 
 ::: {.solution}
 The item is Section 1 item 5 of the Complex Analysis Preliminary Examination of August 9, 2006
-(State Cauchy's Integral Formula), on the first page of that paper, PDF p. 15 of the retained scan
-assets/attachments/analysis_2003-2007.pdf.
+(State Cauchy's Integral Formula), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 ::: pf

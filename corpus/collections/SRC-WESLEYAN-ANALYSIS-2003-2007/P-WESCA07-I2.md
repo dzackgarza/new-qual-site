@@ -39,8 +39,7 @@ Define what it means for $g$ to be a branch of $f^{-1}$ on $D$.
 :::
 
 ::: {.solution}
-The item is Section 1 item 2 of the Complex Analysis section of the Analysis Qualifier, Wesleyan University, Summer 2007 (the definition of a branch of the inverse of an analytic function), on PDF p. 7 (printed p. 2 of the 2007 complex-analysis paper) of the retained scan
-assets/attachments/analysis_2003-2007.pdf.
+The item is Section 1 item 2 of the Complex Analysis section of the Analysis Qualifier, Wesleyan University, Summer 2007 (the definition of a branch of the inverse of an analytic function), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 ::: pf

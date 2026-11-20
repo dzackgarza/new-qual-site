@@ -46,8 +46,7 @@ Give an example each of an analytic function having at the origin:
 
 ::: {.solution}
 The item is section 1.2 item 1 of the Preliminary Examination in Analysis, Wesleyan University,
-August 2, 2004 (examples of a removable singularity, a pole and an essential singularity at the origin), on PDF p. 33 of the retained scan
-assets/attachments/analysis_2003-2007.pdf, printed page 1.
+August 2, 2004 (examples of a removable singularity, a pole and an essential singularity at the origin), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 ::: pf

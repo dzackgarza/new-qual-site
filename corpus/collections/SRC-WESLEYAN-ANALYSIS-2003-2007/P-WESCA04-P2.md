@@ -47,8 +47,7 @@ are simply connected.
 
 ::: {.solution}
 The item is section 1.3 item 2 of the Preliminary Examination in Analysis, Wesleyan University,
-August 2, 2004 (intersection and union of two simply connected domains meeting in a connected set), on PDF p. 34 of the retained scan
-assets/attachments/analysis_2003-2007.pdf, printed page 2.
+August 2, 2004 (intersection and union of two simply connected domains meeting in a connected set), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 We use the standard planar-domain characterization:

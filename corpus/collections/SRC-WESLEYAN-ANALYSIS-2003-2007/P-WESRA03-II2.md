@@ -46,8 +46,7 @@ $$
 
 ::: {.solution}
 The item is Part II item 2 of the Preliminary Exam in Analysis, Wesleyan University,
-August 4, 2003 ($n\,m(E_n)\to 0$ for a Lebesgue integrable $f$), on PDF p. 38 of the retained scan
-assets/attachments/analysis_2003-2007.pdf, printed page 2.
+August 4, 2003 ($n\,m(E_n)\to 0$ for a Lebesgue integrable $f$), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 For

@@ -41,8 +41,7 @@ Define what it means for a function $f:U\to\CC$ to be uniformly continuous on $U
 
 ::: {.solution}
 The item is Section 1 item 4 of the Complex Analysis Section of the Analysis Qualifier, Wesleyan
-University, Summer 2005 (uniform continuity on an open set), on PDF p. 25 of the retained scan
-assets/attachments/analysis_2003-2007.pdf.
+University, Summer 2005 (uniform continuity on an open set), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 ::: pf

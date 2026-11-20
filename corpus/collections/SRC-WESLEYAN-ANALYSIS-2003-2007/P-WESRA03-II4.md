@@ -46,8 +46,7 @@ $$
 
 ::: {.solution}
 The item is Part II item 4 of the Preliminary Exam in Analysis, Wesleyan University,
-August 4, 2003 (absolute continuity of $\nu$ with respect to $\mu$ gives the $\varepsilon$-$\delta$ condition), on PDF p. 38 of the retained scan
-assets/attachments/analysis_2003-2007.pdf, printed page 2.
+August 4, 2003 (absolute continuity of $\nu$ with respect to $\mu$ gives the $\varepsilon$-$\delta$ condition), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 
 
 Suppose, toward a contradiction, that the asserted $\varepsilon$-$\delta$
