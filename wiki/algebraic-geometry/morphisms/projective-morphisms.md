@@ -9,7 +9,7 @@ topics:
 
 # Projective morphisms
 
-A morphism is projective when its source is a closed subscheme of $\PP^n_Y$ over its target, and the cohomological theorems of the next chapters are stated for that class: finiteness of cohomology, Serre vanishing, the Euler characteristic and the Hilbert polynomial all use a morphism that factors through some $\PP^n_Y$ [@Har77, Sections III.5 and III.8].
+A morphism is projective when its source is a closed subscheme of $\PP^n_Y$ over its target, and the cohomological theorems are stated for that class: finiteness of cohomology, Serre vanishing, the Euler characteristic and the Hilbert polynomial all use a morphism that factors through some $\PP^n_Y$ [@Har77, Sections III.5 and III.8].
 
 ## Proj of a graded ring
 
