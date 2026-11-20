@@ -224,7 +224,7 @@ a plane, contradicting step [](#s1){.pf-ref}.
 
 Suppose therefore that $Q$ is a quadric cone.  For a curve of even degree
 $2a$ on a quadric cone the genus is $a^2-2a+1=(a-1)^2$: Hartshorne's
-Remark 6.4.1(d), deferred there to V. Ex. 2.9 and
+Remark IV.6.4.1(d), deferred there to Exercise V.2.9 and
 proved on [[FE-CRVQUAD]].  Here $\deg X=4=2\cdot2$, so this gives
 $$
 p_a(X)=(2-1)^2=1,
