@@ -215,6 +215,28 @@ audit:
     page 34 carries "Lemma 2.6.3", the two folios agreeing with the PDF's page numbers. Re-checked
     and unchanged: the exactness and splitting of the $\ZZ_2$ two-sheet sequence, the statement as
     printed on p. 177, and the disposition of the exercise's source obligation.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, referee read of this card's own part, the two-sheet computation for the trivial
+    covering. Checked: for $\tilde X=X\amalg X$ the singular chain complex over $\ZZ_2$ is
+    $C_*(X;\ZZ_2)\oplus C_*(X;\ZZ_2)$; the sum of the two lifts is $\tau(c)=(c,c)$ and projection is
+    $p_\#(a,b)=a+b$, so the diagonal is injective, addition is surjective, and the kernel of addition
+    is exactly the diagonal because $b=-a=a$ in characteristic two; $s(c)=(c,0)$ is a chain map with
+    $p_\#s=\operatorname{id}$, so the sequence of chain complexes splits and its long exact sequence
+    breaks into the displayed short exact sequences, with every connecting homomorphism zero; and the
+    cohomological form is the dual computation, $C^*p(\varphi)=(\varphi,\varphi)$ and
+    $\tau^*(\alpha,\beta)=\alpha+\beta$, split by $\alpha\mapsto(\alpha,0)$. Checked against the
+    source the card says this goes beyond: Hausmann, Proposition 4.3.9, printed p. 123, is the exact
+    sequence $\cdots\to H^m(X)\xrightarrow{H^*p}H^m(\tilde X)\xrightarrow{\tau^*}H^m(X)
+    \xrightarrow{w(p)\smile-}H^{m+1}(X)\to\cdots$, functorial for induced coverings, and its Lemma
+    4.3.6(3), printed p. 120, states that $p$ is the trivial covering if and only if $w(p)=0$, so
+    the connecting map vanishes exactly in the case at hand, which is the card's use of it. Neither
+    passage prints the two-sheet coordinates, so the computation is the card's own, as its steps say;
+    Hatcher's $n$-sheeted transfer in §3.G, printed p. 321, is the one stated for any coefficient
+    group, and the remark records the $\ZZ$ form, whose kernel is the anti-diagonal. Not claimed: a
+    published solution of Exercise 2.B.9, none located.
 ---
 
 ::: {.problem}
