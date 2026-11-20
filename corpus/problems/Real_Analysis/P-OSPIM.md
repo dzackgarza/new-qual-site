@@ -32,6 +32,12 @@ audit:
   note: >-
     The step stating Fatou's lemma asserted a theorem with no indication of its standing, and now says
     that it is cited as a standard theorem and used only in that form below. The statement is unchanged.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The step's Fatou proof body restated the inequality while saying it was cited; it now names the card
+    and the numbered statement, Folland Lemma 2.18. The statement is unchanged.
 ---
 
 ::: {.problem}
@@ -145,7 +151,7 @@ Fatou's lemma: for measurable $f_n \ge 0$, $\int \liminf_n f_n \le \liminf_n \in
 
 
 ::: pf-proof
-Fatou's lemma is a standard theorem of measure theory and is cited here rather than proved: for a sequence of measurable functions with values in $[0,\infty]$ the integral of the pointwise lower limit is at most the lower limit of the integrals, which is the displayed inequality. It is used below only in that form.
+Fatou's lemma is a standard theorem of measure theory, cited here rather than proved: [[T-LDJNS|Fatou's lemma]] [@Fol99, Lemma 2.18]. It is used below only in that form.
 :::
 
 :::
