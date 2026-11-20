@@ -71,6 +71,8 @@ The feature of the boundary determines the factor to remove first.
   $$
 
 - $t\mapsto\tan t$ is a bijection $(-\pi/2,\pi/2)\to\RR$, which parameterizes the real line by a bounded interval.
+
+The inverse $\inverseof z=\bar z/\abs z^2$ is [@Ahl73, ch. 1, §1.4, Conjugation, Absolute Value]; the conformality of an analytic map with nonvanishing derivative, and the preservation of angles that gives the orthogonal and tangent cases, are [@Ahl73, ch. 3, §2.3, Conformal Mapping]; the statement that a linear transformation carries circles into circles, lines counting as circles through $\infty$, is [@Ahl73, ch. 3, §3.3, Symmetry], Theorem 14 of the chapter; and the cross ratio with its normalisation is [@Ahl73, ch. 3, §3.2, The Cross Ratio], which is also [[FF-W4FFF]]. The last item is the real tangent of [@Ahl73, ch. 2, §3.2, The Trigonometric Functions].
 :::
 
 ## Standard maps
