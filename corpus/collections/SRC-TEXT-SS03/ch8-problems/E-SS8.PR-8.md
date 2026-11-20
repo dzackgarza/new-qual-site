@@ -38,6 +38,20 @@ audit:
     $\abs{a_n}\le n$ for all $n\ge2$; this was proved by deBranges", and the conclusion
     $\abs{a_n}\le n$ of part (e). The rest of the statement is the print's, parts (a)--(f). Not
     checked: the argument, which this pass did not re-derive.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Repair of step s4 on the reader's report. The step bounded $\sum_{k\ge2}\abs{a_k}r^k$ by
+    $r^2\sum_{k\ge2}\abs{a_k}$ and called the sum finite because $f$ is holomorphic on a
+    neighbourhood of $\overline\DD$; that is not a hypothesis of the problem, and it is false for the
+    card's own example $f(z)=z/(1-z)^2$, whose coefficients are $a_k=k$ and whose coefficient sum
+    diverges. The bound now fixes $r_0<1$, uses the absolute convergence of $\sum_k\abs{a_k}r_0^k$
+    inside the radius of convergence, and gets $\sum_{k\ge2}\abs{a_k}r^k\le Cr^2$ with
+    $C=\sum_{k\ge2}\abs{a_k}r_0^{k-2}$ for $0<r\le r_0$, which is all that
+    $v=r\sin\theta(1+O(r))$ needs. No other step changed. Provenance: no published solution set
+    covers this Problem (Rhoades, *Solutions/Hints to the Exercises*, 2006, covers a selection of the
+    Exercises), so the argument is the card's own.
 
 ---
 
@@ -65,6 +79,7 @@ The book marks this problem with an asterisk (Chapter 8, Problem 8, printed p. 2
 :::
 
 ::: {.solution}
+No published solution set covers the end-of-chapter Problems of Stein--Shakarchi: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, and no other set was located. The argument is the card's own, following the printed hints.
 
 Let $f(z)=z+a_2z^2+a_3z^3+\cdots$ be injective and holomorphic on $\DD$ with $f(0)=0$, $f'(0)=1$, and suppose every $a_n\in\RR$. For $0<r<1$ and $z=re^{i\theta}$ put $v(r,\theta)=\operatorname{Im}f(re^{i\theta})$.
 
@@ -122,7 +137,7 @@ Part (d): $v(r,\theta)=r\sin\theta\,(1+O(r))$ as $r\to0$, uniformly in $\theta$;
 
 ::: pf-proof
 
-From the power series, $\abs{v(r,\theta)-r\sin\theta}\le\sum_{k\ge2}\abs{a_k}r^k\le Cr^2$ with $C=\sum_{k\ge2}\abs{a_k}$, which is finite because $f$ is holomorphic on a neighbourhood of $\overline\DD$; this is uniform in $\theta$. So $v(r,\theta)=r\sin\theta(1+O(r))$ with the $O(r)$ uniform in $\theta$.
+From the power series, $\abs{v(r,\theta)-r\sin\theta}\le\sum_{k\ge2}\abs{a_k}r^k$ for every $r<1$. Fix $0<r_0<1$; the series $\sum_k\abs{a_k}r_0^k$ converges because $r_0$ lies inside the radius of convergence $1$, so $C=\sum_{k\ge2}\abs{a_k}r_0^{k-2}$ is finite and $\sum_{k\ge2}\abs{a_k}r^k\le Cr^2$ for $0<r\le r_0$, uniformly in $\theta$. So $v(r,\theta)=r\sin\theta(1+O(r))$ with the $O(r)$ uniform in $\theta$.
 
 By step [](#s3){.pf-ref}, $v>0$ on $(0,\pi)$, and $\sin\theta\ge0$ on $[0,\pi]$; hence $v\sin\theta\ge0$.
 
