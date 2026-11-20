@@ -84,7 +84,7 @@ which vanishes above degree $1$, and
 $$
 \operatorname{Ext}(H,G)=H^1(\operatorname{Hom}(F_*,G))=\operatorname{Hom}(F_1,G)\big/d_1^*\operatorname{Hom}(F_0,G)
 $$
-by the definition on p. 195. Lemma 3.1(b) identifies this group for any two free resolutions of $H$, so it depends on $H$ and $G$ only. The exercise is Exercise 1 of §3.1.
+by the definition of §3.1. Lemma 3.1(b) identifies this group for any two free resolutions of $H$, so it depends on $H$ and $G$ only. The exercise is Exercise 1 of §3.1.
 
 ::: pf
 
