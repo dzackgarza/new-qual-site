@@ -27,10 +27,8 @@ The implication $\tau(f)\neq 0\Rightarrow$ $f$ has a fixed point has no converse
 
 [[T-WNOWY]]
 
-::: {.example title="The case $n=1$"}
-For continuous $f\colon S^1\to\RR$, set $g(x)\coloneqq f(x)-f(-x)$.
-Then $g(-x)=-g(x)$, so $g$ takes values of both signs or vanishes, and the intermediate value theorem on a path from $x$ to $-x$ gives $x$ with $g(x)=0$, that is, $f(x)=f(-x)$.
-
+::: {.remark}
+For $n=1$, [[T-WNOWY|Borsuk--Ulam]] says that every continuous odd function $S^1\to\RR$ has a zero.
 :::
 
 [[T-HAMS1]]
