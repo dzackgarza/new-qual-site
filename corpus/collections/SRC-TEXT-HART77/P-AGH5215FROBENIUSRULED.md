@@ -390,6 +390,29 @@ audit:
     pass: Xie's Example 3.1 was not re-read, and the statement repair the printed
     "nonsingular" needed is the one the earlier events of this card record and
     is not re-decided here.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #164, the reader's second NOT MET item, which has two halves. The
+    numbered-source half is a version difference, and the citation is right
+    against the file the card owns. The reader read
+    arxiv.org/pdf/math/0702554v3, where the construction is Theorem 3.1 and
+    begins on printed p. 4; the retained file is v5, whose first page carries
+    the arXiv stamp "math/0702554v5 [math.AG] 8 Oct 2008", and there the same
+    statement, word for word, is Example 3.1 on printed p. 5. Both were read
+    for this event: the v3 PDF was downloaded and its printed p. 4 reads
+    "Theorem 3.1. If C is a Tango curve, then there are a P1-bundle f: X -> C,
+    ...", and the v5 text of Example 3.1 is at the place in the proof the card
+    cites. The provenance paragraph now names the version and records the v3
+    numbering, so the two are not confused again. The second half stands: the
+    card's identification of Xie's divisor with 3 Sigma is not a transcription,
+    because Xie's claim that C' is irreducible and smooth fails here -- his
+    divisor is three times a section, so irreducibility can only name the
+    support and smoothness is false -- and no published solution covers the
+    case. That part of step s7 is now marked as the card's own, as step s9 and
+    the last paragraph of s10 already were. Not checked: the printed paper,
+    only the two arXiv PDFs.
 
 ---
 
@@ -410,7 +433,7 @@ and let $X$ be the corresponding ruled surface over $C$. Show that $X$ contains 
 :::
 
 ::: {.solution}
-A step that transcribes a published argument names the source, numbered statement and printed page; a step no source carries is marked as this card's. Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89, Lemma 3.1, printed pp. 84--85, and Example 3.2, printed pp. 85--86, for parts (a) and (b); and Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*, Example 3.1, printed pp. 5--6, and Lemma 4.4, printed pp. 10--11, for the curve of part (c). Hartshorne 1971 runs this example over a field of characteristic $3$ and its curve is the plane quartic of the exercise.
+A step that transcribes a published argument names the source, numbered statement and printed page; a step no source carries is marked as this card's. Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89, Lemma 3.1, printed pp. 84--85, and Example 3.2, printed pp. 85--86, for parts (a) and (b); and Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*, arXiv:math/0702554v5 (8 October 2008), Example 3.1, printed pp. 5--6, and Lemma 4.4, printed pp. 10--11, for the curve of part (c). Every citation of Xie below is to that version, in which the construction is Example 3.1 on printed p. 5; in v3 (7 May 2007) the same statement is Theorem 3.1, printed pp. 4--5, so the number and the page depend on the version. Hartshorne 1971 runs this example over a field of characteristic $3$ and its curve is the plane quartic of the exercise.
 
 As in Hartshorne's notation, write
 $$
@@ -558,6 +581,8 @@ $$
 
 Here $p=3$ and $\mathcal L=\OO_C(P)$ has degree $1$.
 
+Everything from here to the end of the step is this card's own, and no source read carries it: Xie prints only that $t$ determines an irreducible curve $C'$ of that class, and in this case the divisor is three times a section, so his irreducibility can only name the support while his smoothness claim is false.
+
 The second arrow in that chain is the adjoint of the cube map $M\to S^3M$, so the section $t$ is the cube of one section of a line bundle, not a general section of $\OO_X(3)\otimes f^*\OO_C(-3P)$. The copy of $\OO_C$ that the first arrow maps into is the quotient of $0\to\mathcal L^{-3}\to F^*\mathcal E\otimes\mathcal L^{-3}\to\OO_C\to0$, whose space of sections is $k$, and the section of $\mathcal E\otimes\mathcal L^{-1}$ mapping to $1\in H^0(\OO_C)$ is unique up to a scalar because $H^0(\mathcal L^{-1})=0$. Call it $s$, and let $\Sigma$ be the zero locus of the section of $\OO_X(1)\otimes f^*\mathcal L^{-1}$ it induces: $t=s^3$, so $Y=\operatorname{div}(t)=3\Sigma$.
 
 If $s$ never vanished, it would generate a copy of $\OO_C$ inside $\mathcal E\otimes\mathcal L^{-1}$ and the extension $0\to\mathcal L^{-1}\to\mathcal E\otimes\mathcal L^{-1}\to\OO_C\to0$ would split, which step [](#s5){.pf-ref} forbids; so $\Sigma$ is a nonempty curve, of class $C_0-f$ and of degree $\Sigma\cdot f=1$ over $C$. Since $C_0\cdot\Sigma=1-1=0$ while a fibre meets $C_0$ once, $\Sigma$ has no fibre as a component, so its components each meet a fibre, and the total $\Sigma\cdot f=1$ forces exactly one component, meeting every fibre once: $\Sigma$ is irreducible and is a section, hence isomorphic to $C$. Then $\Sigma^2=(C_0-f)^2=1+2(-1)=-1$, and $\OO_X(\Sigma)=\OO_X(1)\otimes f^*\mathcal L^{-1}$ gives $\OO_X(Y)=\OO_X(3)\otimes f^*\mathcal L^{-3}$, whose class in the basis $C_0$, $f$ of $\operatorname{Num}(X)$ is $3C_0-3f$; and $C_0\cdot\Sigma=0$ with both curves effective and irreducible gives $C_0\cap Y=\emptyset$, Xie's $E\cap C'=\emptyset$ with his $E$ the section $C_0$ of step [](#s6){.pf-ref}.
@@ -636,7 +661,7 @@ Parts (a) and (b) have complete published arguments, and part (c) is published t
 
 Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89: Lemma 3.1, printed pp. 84--85, is part (a), the vanishing of Frobenius on $H^1(C,\OO_C)$ through the identification with $H^2(\PP^2,\OO(-4))$ and the multiplication by $g^2$; Example 3.2, printed pp. 85--86, is part (b), the bundle, the two Riemann--Roch dimensions and the dimension count, together with the reason $E$ is not ample. He does not construct the curve $Y$ of part (c) and says nothing about $D=2C_0$.
 
-Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*: Example 3.1, printed pp. 5--6, is the construction of part (c), the section with $\OO_X(E)\cong\OO_X(1)$ and $E^2=\deg\mathcal E$, the split Frobenius pullback, and the curve $C'$ with $\OO_X(C')\cong\OO_X(p)\otimes f^*\mathcal L^{-p}$ disjoint from the section, which he calls irreducible and smooth; step [](#s7){.pf-ref} identifies it as $3\Sigma$, the triple of a section, so his ``irreducible'' can only name the support and his smoothness claim is false; Lemma 4.4(iii), printed pp. 10--11, is the pure inseparability of $\restrictionof{f}{R}$ for an irreducible $R$ with $R^2<0$. His Example 3.1 is stated for a base curve satisfying the Tango condition, which is how he produces the extension class; here the class is $\xi$ of part (b), so the construction applies as it stands with $p=3$ and $\mathcal L=\OO_C(P)$. His assertion that $C'$ is smooth over $k$ is false in this case, by the adjunction count of step [](#s9){.pf-ref}; for $p=3$, $\deg\mathcal L=1$ and $g(C)=3$ his curve has arithmetic genus $4$ and normalization $C$ of genus $3$.
+Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*, arXiv:math/0702554v5 (8 October 2008): Example 3.1, printed pp. 5--6, is the construction of part (c), the section with $\OO_X(E)\cong\OO_X(1)$ and $E^2=\deg\mathcal E$, the split Frobenius pullback, and the curve $C'$ with $\OO_X(C')\cong\OO_X(p)\otimes f^*\mathcal L^{-p}$ disjoint from the section, which he calls irreducible and smooth; step [](#s7){.pf-ref} identifies it as $3\Sigma$, the triple of a section, so his ``irreducible'' can only name the support and his smoothness claim is false; Lemma 4.4(iii), printed pp. 10--11, is the pure inseparability of $\restrictionof{f}{R}$ for an irreducible $R$ with $R^2<0$. His Example 3.1 is stated for a base curve satisfying the Tango condition, which is how he produces the extension class; here the class is $\xi$ of part (b), so the construction applies as it stands with $p=3$ and $\mathcal L=\OO_C(P)$. His assertion that $C'$ is smooth over $k$ is false in this case, by the adjunction count of step [](#s9){.pf-ref}; for $p=3$, $\deg\mathcal L=1$ and $g(C)=3$ his curve has arithmetic genus $4$ and normalization $C$ of genus $3$.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.15, PDF pp. 271--273, computes (a) as Hartshorne 1971 does, and for (c) writes only "To see the curve $Y\equiv3C_0-3f$ is inseparable is Miyanishi, *Open Algebraic Surfaces*, lemma 2.5.2.2". Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.15, printed pp. 105--106, reproduces (a) and has garbled (b) and (c). Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 15 of §2.
 :::
