@@ -9978,3 +9978,21 @@ layer's pass, not a reading of the proof. They are:
 None of the twenty-four needed repair, which is why none carries a review event: an unchanged card is not a commit.
 The reading is real — each was checked against its printed page — and this table is where it is recorded, under this
 stream's own lines, so that hlg7 can take anything in §4.2 that this list does not cover without duplicating it.
+
+## 2026-11-19, twenty-sixth item: the residue-5 Hoffman--Kunze cards are complete — the last three read, and the tally of the seventy
+
+**Object.** The last three residue-5 cards of `SRC-TEXT-HK71`, and the state of the collection's residue.
+
+**`E-HK-103-5`, §10.3 Exercise 5, printed p. 377 — correct, five parts.** $P f=\frac12(f(\alpha,\beta)-f(\beta,\alpha))$ is bilinear and linear in $f$; $(Pf)(\beta,\alpha)=-(Pf)(\alpha,\beta)$ gives $P^2=P$; the image is the space of skew-symmetric forms and the kernel the symmetric ones, so the rank is the number of entries above the diagonal, $n(n-1)/2$, and the nullity $n+n(n-1)/2=n(n+1)/2$; $U^\dagger f=f(U\cdot,U\cdot)$ is linear in $f$; and $PU^\dagger=U^\dagger P$ because both sides send $f$ to $\frac12(f(U\alpha,U\beta)-f(U\beta,U\alpha))$. Commit `9416880b24`.
+
+**`E-HK-103-11`, §10.3 Exercise 11, printed p. 378 — correct, four cases.** With $a=f(e_1,e_2)$, $b=f(e_1,e_3)$, $c=f(e_2,e_3)$: if $a\ne0$ take $L_1=x_1-\frac ca x_3$, $L_2=ax_2+bx_3$ (the $x_3y_3$ terms cancel); if $a=0\ne b$ take $L_1=x_1+\frac cb x_2$, $L_2=bx_3$; if $a=b=0\ne c$ take $L_1=x_2$, $L_2=cx_3$; and $f=0$ takes $L_1=L_2=0$. Each was expanded. Commit `30c8148762`.
+
+**`E-HK-104-5`, §10.4 Exercise 5, printed p. 382 — correct.** $O(n,\CC)$ contains a matrix with first column $X$ exactly when $X^tX=1$: necessity is the first column of $M^tM$; sufficiency takes the non-degenerate line $L=\CC X$, the non-degenerate complement $L^\perp$, an orthonormal basis of it over $\CC$, and the matrix of those columns. Commit `4ba6f59825`.
+
+**The tally, measured on the tree.** There are **70** problem cards of `SRC-TEXT-HK71` in residue 5, and **70 of 70** now carry a `claude` event of 2026-11-19 — checked by parsing each card's frontmatter, not inferred from this file. Of the seventy: 32 had the false clause "no text version of Hoffman and Kunze in the checkout" and were repaired in the provenance batch with the retained file and printed page; 11 more needed structural repair only — `E-HK-15-5`, `-24-5`, `-35-5`, `-53-11`, `-68-11`, `-72-5`, `-72-11`, `-83-5`, `-84-5`, `-85-5`, `-85-11` — for empty or back-reference proof bodies, placeholder sentences, a stray `**Goal.**` paragraph, or a closing `qed` doing a step's work; and the remaining 27 were read correct as written.
+
+**What this does and does not close.** It closes the reading of the residue's Hoffman--Kunze cards against the retained text. It does not close the corpus-wide provenance sentence on the collection's other 470 problem cards, which is the sweep recorded earlier as a dispatch decision, and it does not close the six non-residue cards that name Hungerford as their book (the eighth item).
+
+**Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, `E-HK-103-5` 1–6, `-103-11` 1–3, `-104-5` 1–2, QED labels present; the pre-commit card-YAML and schema hook on each commit.
+
+**Uncertainty.** "Read" here means the statement was checked against its printed page and the argument read for correctness at the level the card states it; no card's proof was re-derived beyond what the notes record, and no retained solution set exists for any of the seventy.
