@@ -9625,3 +9625,15 @@ measured, not carried.
 **What is needed.** A retained copy of the textbook restored to `tmp/sources` under the same name, or a decision that the extraction's markers plus the offset may stand as a page citation. Not attempted here: no download, no surrogate edition, and no citation written from the offset.
 
 **Uncertainty.** Whether the file was deleted by a session, moved by a cleanup, or lost with a VM image refresh was not determined; nothing in this repository records its removal.
+
+## 2026-11-19: #168's nineteenth round — V.4.16's two characteristic steps read
+
+**Object and need.** The eighteenth round re-derived V.4.16's family criteria; this round read the two steps that decide the automorphism group in characteristics $2$ and $3$, which the issue pairs with the incidence work. No card is changed.
+
+**`automorphism-group-characteristic-two` — the identities are right, and one word carries the argument.** In characteristic $2$ the Hermitian form $H(x,y)=\sum x_i\varphi(y_i)$ with $\varphi(x)=x^2$ has diagonal value $H(x,x)=\sum x_ix_i^2=\sum x_i^3$, so $S$ is the Hermitian zero locus and $\mathrm{PSU}_4(2)$ acts on it; $|\mathrm{PSU}_4(2)|=25920$ is index $2$ in $|W(\mathbf E_6)|=51840$, which is the number the step states, and the action on the $27$ lines injects $\Aut(S)$ into $W(\mathbf E_6)$ (Dolgachev--Duncan Section 1, printed pp. 3--4). The load-bearing word is that the Frobenius $\sigma$ "preserves $S(\FF_4)$": $\sigma$ is $\FF_4$-semilinear and not $k$-linear over an algebraically closed $k$, since $(cx)^2=c^2x^2\ne c\,x^2$, so it is a permutation of the $27$ lines and not an automorphism of $S$ over $k$. Read that way the step is consistent — $\Aut(S)$ contains a subgroup of index $2$ in $W(\mathbf E_6)$ and is not the whole Weyl group — and read as though $\sigma\in\Aut(S)$ the same argument would prove $\Aut(S)=W(\mathbf E_6)$ and the order $51840$ instead. The card's parenthetical "$S(\FF_4)$" is what keeps it right, and a reader who drops it gets the wrong group.
+
+**`characteristic-three` is right.** In characteristic $3$ the Frobenius is additive, so $\sum x_i^3=(x_0+x_1+x_2+x_3)^3$ and $S$ is the triple of the plane $\sum x_i=0$; Dolgachev--Duncan record the identity at the opening of Section 5, printed p. 24, and name the Fermat cubic in Section 1.3, printed p. 6. There is no smooth surface, so the exercise's question does not arise there, which is what the step says.
+
+**Checks.** No card changed, so no `qualc.authoring check` was run on a card.
+
+**Uncertainty.** Read: the two steps and the identities above. Not read: the full text of the last sentence of the characteristic-two step, `automorphism-group-not-two-three`, `twenty-seven-lines`, `incidence-ten-and-sixteen`, the bodies of `ac`/`bc-family-incidence`, and Dolgachev--Duncan at the printed pages named, which are the card's citations. So #168's acceptance is not met for V.4.16 as a whole; V.5.6 and V.5.8(b) remain unread.
