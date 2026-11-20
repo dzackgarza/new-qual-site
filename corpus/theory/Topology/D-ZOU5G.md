@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.definition}
-A \dfn{CW complex} is a topological space $X$ together with subspaces $X^0\subseteq X^1\subseteq\cdots$ constructed as follows [@Hat02].
+A \dfn{CW complex} is a topological space $X$ together with subspaces $X^0\subseteq X^1\subseteq\cdots$ constructed as follows [@Hat02, Chapter 0].
 
 1. $X^0$ is a discrete space; its points are the $0$-cells.
 
