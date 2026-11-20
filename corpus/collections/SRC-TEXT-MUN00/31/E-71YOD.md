@@ -28,6 +28,21 @@ audit:
     what its own construction gives is that their closures lie in the disjoint open sets U_x and
     U_y, which is the disjointness of the closures that the exercise asks for; the card states the
     conclusion at the level of closures.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Ten steps asserted their claim with no justification and the card is now three steps each deriving its
+    claim: the separation of the two points by disjoint open sets, from the $T_1$ axiom of a regular space
+    and the separation of a point from a closed set not containing it; the shrinking to neighbourhoods with
+    closed containment, by Lemma 31.1 applied to each point and its open set; and the conclusion
+    $\overline{U} \cap \overline{V} = \varnothing$ from the two inclusions into the disjoint $U_0$ and $V_0$.
+    The three label-claims are replaced by the assertions their proofs establish, and the terminal step
+    that only repeated the conclusion together with its literal "Q.E.D." is gone. Sources are cited by
+    numbered statement: Munkres, Topology, Section 31 Exercise 1 and Lemma 31.1, as the earlier event
+    records; no page reference is written in the body of this card or in the event above. The statement is
+    unchanged. The transcription correction recorded above is untouched: the conclusion is stated at the
+    level of closures, which is what the exercise asks for.
 ---
 
 ::: {.exercise}
@@ -40,75 +55,31 @@ Show that if $X$ is regular, every pair of points of $X$ have neighborhoods whos
 ::: pf
 
 ::: {.pf-step #separate-by-disjoint-opens}
-Separation of distinct points by disjoint open sets:
-Let $x, y \in X$ be distinct points ($x \neq y$).
-There exist disjoint open sets $U_0, V_0 \subseteq X$ such that $x \in U_0$ and $y \in V_0$.
+Distinct points $x \ne y$ of a regular space have disjoint open neighbourhoods $U_0 \ni x$ and $V_0 \ni y$.
 
 ::: pf-proof
-
-::: pf-step
-In a regular space, one-point sets are closed ($T_1$ axiom), so $\{y\}$ is closed in $X$.
-:::
-
-::: pf-step
-Because $x \neq y$, $x \notin \{y\}$.
-:::
-
-::: pf-step
-By regularity of $X$, there exist disjoint open sets $U_0$ containing $x$ and $V_0$ containing $\{y\}$ such that $U_0 \cap V_0 = \varnothing$.
-:::
-
+A regular space is $T_1$, so one-point sets are closed and in particular $\{y\}$ is closed in $X$; since $x \ne y$, the point $x$ does not lie in it. Regularity separates a point from a closed set not containing it, so there are disjoint open sets $U_0$ containing $x$ and $V_0$ containing $\{y\}$, hence containing $y$.
 :::
 
 :::
 
 ::: {.pf-step #shrink-to-closed-containment}
-Shrinking to open neighborhoods with closed containment:
-There exist open neighborhoods $U \subseteq X$ of $x$ and $V \subseteq X$ of $y$ such that $\overline{U} \subseteq U_0$ and $\overline{V} \subseteq V_0$.
+There are open neighbourhoods $U$ of $x$ and $V$ of $y$ with $\overline{U} \subseteq U_0$ and $\overline{V} \subseteq V_0$.
 
 ::: pf-proof
-
-::: pf-step
-By the standard characterization of regularity (Munkres Lemma 31.1), for any point $p$ and open neighborhood $W$ of $p$, there exists an open neighborhood $N$ of $p$ with $\overline{N} \subseteq W$.
-:::
-
-::: pf-step
-Applying this to the point $x$ and its open neighborhood $U_0$, there exists an open neighborhood $U$ of $x$ such that $\overline{U} \subseteq U_0$.
-:::
-
-::: pf-step
-Applying this to the point $y$ and its open neighborhood $V_0$, there exists an open neighborhood $V$ of $y$ such that $\overline{V} \subseteq V_0$.
-:::
-
+By the characterization of regularity in Munkres Lemma 31.1, for every point $p$ and every open neighbourhood $W$ of $p$ there is an open neighbourhood $N$ of $p$ with $\overline{N} \subseteq W$. Applying it to the point $x$ and its open neighbourhood $U_0$ gives an open $U \ni x$ with $\overline{U} \subseteq U_0$, and applying it to $y$ and $V_0$ gives an open $V \ni y$ with $\overline{V} \subseteq V_0$.
 :::
 
 :::
 
 ::: pf-step
-Disjointness of the closures:
+
+$\overline{U} \cap \overline{V} = \varnothing$.
 
 ::: pf-proof
-
-::: pf-step
-By step [](#shrink-to-closed-containment){.pf-ref}, $\overline{U} \subseteq U_0$ and $\overline{V} \subseteq V_0$.
+The two closures satisfy $\overline{U} \subseteq U_0$ and $\overline{V} \subseteq V_0$ by step [](#shrink-to-closed-containment){.pf-ref}, so $\overline{U} \cap \overline{V} \subseteq U_0 \cap V_0$; and $U_0 \cap V_0 = \varnothing$ by step [](#separate-by-disjoint-opens){.pf-ref}. A subset of the empty set is empty, so the intersection of the closures is empty. Thus $U$ and $V$ are open neighbourhoods of $x$ and $y$ with disjoint closures, as required.
 :::
 
-::: pf-step
-Therefore:
-$$\overline{U} \cap \overline{V} \subseteq U_0 \cap V_0.$$
-:::
-
-::: pf-step
-By step [](#separate-by-disjoint-opens){.pf-ref}, $U_0 \cap V_0 = \varnothing$, so $\overline{U} \cap \overline{V} = \varnothing$.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Conclusion:
-$U$ and $V$ are open neighborhoods of $x$ and $y$ respectively with $\overline{U} \cap \overline{V} = \varnothing$. Q.E.D.
 :::
 
 :::
