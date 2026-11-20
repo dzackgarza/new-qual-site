@@ -270,9 +270,7 @@ step [](#nakai-moishezon-ample){.pf-ref} gives the required ampleness.
 :::
 
 ::: {.remark title="Published solution"}
-The exercise stands on printed p. 394 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$, and the statement above is that page's text, the hint including.
-
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.3.3: he recalls I Ex. 7.5, that an irreducible plane curve of degree $d>1$ has no point of multiplicity $\ge d$, and generalizes it to $\PP^n$; then, since $D$ is very ample, $D\cdot C$ is $\deg C$, any class on $\widetilde X$ is $\pi^*C-rE$, and
+The exercise is Hartshorne, Exercise V.3.3, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; then, since $D$ is very ample, $D\cdot C$ is $\deg C$, any class on $\widetilde X$ is $\pi^*C-rE$, and
 $$
 (2\pi^*D-E)\cdot(\pi^*C-rE)=2\deg C-r>0,\qquad (2\pi^*D-E)^2=4D^2+E^2>0 .
 $$

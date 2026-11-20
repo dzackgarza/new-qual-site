@@ -487,7 +487,7 @@ This proves (c).
 :::
 
 ::: {.remark title="Published solution"}
-The exercise stands on printed p. 281 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, the hypothesis $N\ge2$ and both parts included.
+The exercise is Hartshorne, Exercise III.11.6, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is that exercise's text, the hypothesis $N\ge2$ and both parts included.
 
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §11, Exercise 11.6, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: for (a) he uses $0\to\mcf(-dn)\to\mcf\to\restrictionof{\mcf}{Y_n}\to0$ with $H^0$ and $H^1$ of $\mcf(-dn)$ vanishing for large $n$; for (b) he shows the kernel of a surjection of locally free formal sheaves is locally free, lifts the map of presentations through part (a), and takes the cokernel, using exactness of completion; for (c) he shows the algebraized coherent sheaf is invertible near $Y$ by a Nakayama argument on $\varprojlim A/f^nA$, then extends it off the finitely many remaining points. The proofs agree. The proof above states the last step as a reflexive-hull argument (a rank-one reflexive sheaf on the locally factorial $\PP^N$ is invertible, and it agrees with the algebraized sheaf near $Y$) instead of an extension over finitely many points, and proves the local freeness near $Y$ by faithful flatness of $A\to\hat A$ together with descent of finite projectivity.
 :::

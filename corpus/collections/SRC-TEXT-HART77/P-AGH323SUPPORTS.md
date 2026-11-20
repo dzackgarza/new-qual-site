@@ -248,7 +248,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, []
 :::
 
 ::: {.remark title="Published solution"}
-The exercise stands on printed p. 212 of Hartshorne, under its printed italic heading "Cohomology with Supports (Grothendieck [7])", read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, parts (a)--(d) included.
+The exercise is Hartshorne, Exercise III.2.3, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is that exercise's text, parts (a)--(d) included.
 
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §2, Exercise 3.2.3, text version `tmp/sources/hartshorne-solutions-kim.md`: (a) is the kernel description of $\Gamma_Y$; (b) is the snake lemma applied to the square of sections on $X$ and on $X-Y$, whose rows are exact on the right because $\mcf'$ is flasque; (c) repeats the induction of Proposition 3.2.5, with quotients of injectives flasque; (d) is referred back to (b); (e) is the short exact sequence of complexes that (d) supplies; (f) uses that an injective resolution restricts to a flasque resolution of $\mcf\restrict_V$ and that $\Gamma_Y(V,\mci^\bullet\restrict_V)=\Gamma_Y(X,\mci^\bullet)$. Saglam--Chris treat the exercise at PDF p. 114 and Cutrone--Marshburn at PDF p. 101.
 

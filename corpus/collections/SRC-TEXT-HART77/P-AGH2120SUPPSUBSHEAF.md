@@ -345,7 +345,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 :::
 
 ::: {.remark title="Published solution"}
-The exercise stands on printed p. 68 of Hartshorne, headed "Subsheaf with Supports", read off that page (a 100 dpi render of PDF p. 83, printed p. $N$ being PDF p. $N+15$, the text layer of this stretch dropping numbered lines); the statement above is that page's text, parts (a) and (b), the description of $\Gamma_Z(\mcf)$ as a sheaf on $X$ and the closing remark that $\mcf\to j_*j^{-1}\mcf$ is surjective for flasque $\mcf$, all included.
+The exercise is Hartshorne, Exercise II.1.20, headed "Subsheaf with Supports", read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is that exercise's text, parts (a) and (b), the description of $\Gamma_Z(\mcf)$ as a sheaf on $X$ and the closing remark that $\mcf\to j_*j^{-1}\mcf$ is surjective for flasque $\mcf$, all included.
 
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.20, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: (a) glue inside the sheaf $\mcf$ and check that the glued section has zero germs off $Z$; (b) $j_*(\restrictionof{\mcf}{U})(V)=\mcf(V\cap U)$, so the kernel is the group of sections vanishing on $V\cap U$, and flasque-ness makes the restriction $\mcf(V)\to\mcf(V\cap U)$ surjective on every open.
 The proof above is the same, with the support condition and the flasque case separated.

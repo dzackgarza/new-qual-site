@@ -264,7 +264,7 @@ claims.
 :::
 
 ::: {.remark title="Published solution"}
-The exercise stands on printed p. 276 of Hartshorne, under its printed italic heading "A linear system with moving singularities contained in the base locus (any characteristic)", read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text.
+The exercise is Hartshorne, Exercise III.10.8, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is that exercise's text.
 
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), text version `tmp/sources/hartshorne-solutions-kim.md`, Chapter III §10, Exercise 10.8, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he eliminates the line parameter to get $x^2-2x(w-t^{-1}z)+y^2=0$, i.e. the members $t(x^2+y^2-2xw)+2xz=0$ of the pencil $\langle x^2-2xw+y^2,\ -2xz\rangle$, identifies the base locus as the conic plus the $z$-axis, and remarks that characteristic $\neq2$ is needed "otherwise $(x-1)^2+y^2=1$ is $(x+y)^2=0$, so this is a constant linear system". The pencil, the base locus and the moving singularity agree with the proof above, which derives $F_t=tQ+2XZ$ and the singular point $[0:0:t:1]$ directly. Kim's remark is the first of the two conventions stated in the erratum at the start of the solution; the second, that at $t=0$ the cone degenerates to the plane $Z=0$ and so is not a member of the pencil, is not in his note.
 :::

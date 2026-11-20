@@ -152,7 +152,7 @@ Step [](#exact-sequence){.pf-ref} is the required left-exact sequence.
 :::
 
 ::: {.remark}
-The exercise stands on printed p. 66 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, the left exactness of $\Gamma(X,\cdot)$ on sheaves of abelian groups and the counterexample on presheaves included.
+The exercise is Hartshorne, Exercise II.1.8, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is that exercise's text, the left exactness of $\Gamma(X,\cdot)$ on sheaves of abelian groups and the counterexample on presheaves included.
 
 The functor $\Gamma(U, \mathcal{F})$ is not exact in general; Hartshorne II.1.21 supplies a counterexample on $\PP^1$.
 :::

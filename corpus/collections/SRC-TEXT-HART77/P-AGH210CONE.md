@@ -71,7 +71,7 @@ Hence $\dim C(Y) = \max_j (\dim Y_j + 1) = \dim Y + 1$.
 :::
 
 ::: {.remark title="Published solution"}
-The exercise stands on printed p. 12 of Hartshorne, headed "The Cone Over a Projective Variety (Fig. 1)", read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, the affine cone $C(Y)$ of the exercise included.
+The exercise is Hartshorne, Exercise I.2.10, headed "The Cone Over a Projective Variety (Fig. 1)", read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is that exercise's text, the affine cone $C(Y)$ of the exercise included.
 
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.10, text version `tmp/sources/hartshorne-solutions-borcherds.md`: (a) identifies $C(Y)$ with the affine zero set of the same ideal and reads off $I(C(Y))=I(Y)$; (b) sends irreducibility to primality of $I(Y)$ and back; (c) computes $\dim C(Y)=\dim S(Y)=\dim Y+1$ in the irreducible case and refers to Exercise 2.7 for the general one.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.10, text version `tmp/sources/hartshorne-solutions-troiani.md`: the same three arguments, with the general case of (c) also deferred to 2.7.

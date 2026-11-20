@@ -308,7 +308,7 @@ which is exactly the desired formula.
 :::
 
 ::: {.remark title="Published solution"}
-The exercise stands on printed p. 366 of Hartshorne, the first exercise under EXERCISES at the head of §V.1's exercises, read off that page of `tmp/sources/hartshorne-1977-algebraic-geometry.pdf` (printed p. $N$ is PDF p. $N+15$; the pages of §V.1 carry no text layer and were read as a 110 dpi render, folio 366 in the footer); the statement above is that page's text.
+The exercise is Hartshorne, Exercise V.1.1, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the pages of §V.1 carry no text layer and were read as a 110 dpi render, folio 366 in the footer); the statement above is that exercise's text.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.1: two proofs, both for curves meeting transversally — the first from $0\to\OO_X(-C)\to\OO_X\to\OO_C\to0$ and $0\to\OO_C(-D)\to\OO_C\to\OO_{C\cap D}\to0$ with additivity of $\chi$, concluding $\chi(\OO_X)-\chi(\OO_X(-D))-\chi(\OO_X(-C))+\chi(\OO_X(-C-D))=h^0(C\cap D)$; the second from the four-term sequence $0\to\OO_X(-C-D)\to\OO_X(-C)\oplus\OO_X(-D)\to\OO_X\to\OO_{C\cap D}\to0$, exactness being checked at the stalks, where "$\OO_x$ is a UFD, since $c,d$ are relatively prime" states the regularity of the pair. Neither proof covers divisors that are not differences of transverse nonsingular curves. Step [](#s1){.pf-ref} supplies the additivity in an effective divisor and step [](#s2){.pf-ref} the reduction $C\sim P-Q$ with $P,Q$ nonsingular very ample members, so the formula holds for arbitrary divisors. Matches on the transverse case; the general case is supplied here.
 
