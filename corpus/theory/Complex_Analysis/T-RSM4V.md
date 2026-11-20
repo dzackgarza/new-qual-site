@@ -18,8 +18,11 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $f$ be [[D-7DFVJ|meromorphic]] on $\CC$ with finitely many poles, and suppose $\abs{z^2f(z)}$ is bounded for $\abs z$ large.
-Suppose also that none of the points $\ZZ$ and $\tfrac12+\ZZ$ is a pole of $f$.
+Let $f$ be [[D-7DFVJ|meromorphic]] on $\CC$ with finitely many poles, and suppose there are $R>0$ and $C>0$ with
+$$
+\abs{f(z)}\le \frac{C}{\abs z^2}\qquad\text{for } \abs z\ge R .
+$$
+Suppose also that no pole of $f$ is one of the points $\ZZ$ or $\tfrac12+\ZZ$, that is, no pole of $f$ is a pole of any of the four kernels below.
 Then, each sum on the right being taken over the poles of $f$,
 $$
 \begin{aligned}
