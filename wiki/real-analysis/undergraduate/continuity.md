@@ -17,7 +17,9 @@ $$
 
 :::
 
-The equivalence is [[PR-LTRLV]], a Lipschitz function is uniformly continuous with $\delta=\varepsilon/C$ ([[PR-SX6NO]]), and a uniformly continuous function is continuous ([[D-WGYSB]]).
+The equivalence is [[PR-LTRLV]].
+A Lipschitz function is uniformly continuous ([[PR-SX6NO]]): for constant $C>0$ take $\delta=\varepsilon/C$, and for $C=0$ the function is constant.
+A uniformly continuous function is continuous because a $\delta$ that works at every pair of points works at each fixed $x_0$ ([[D-WGYSB]]).
 
 ## Discontinuity sets
 
