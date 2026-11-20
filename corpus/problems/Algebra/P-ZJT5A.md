@@ -12,6 +12,18 @@ classification:
   - Field Extensions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card carried no audit list; this one records the change. The fundamental theorem's statement was
+    the single step without a justification, and it now says why the two maps are inverse (Artin's count
+    $[L:L^H] = \abs{H}$ against $\abs{\Gal(L/L^H)}$), why they reverse inclusions, and how the normality
+    clause produces $\Gal(E/F) \cong G/H$ with $\Aut_F(E) \cong N_G(H)/H$ in general. The computation of
+    the splitting field, of its group and of the subgroup lattice was already justified and is unchanged.
+    The card stands alone, with no collection provenance and no retained published solution, so the
+    argument is the card's own. The statement is unchanged.
 ---
 
 ::: {.problem}
@@ -31,6 +43,11 @@ Galois theory studies a field extension through its group of automorphisms. Let 
 ::: {.pf-step #ftgt}
 
 (Fundamental theorem) If $L/F$ is a finite Galois extension with group $G$, then $E\mapsto\Gal(L/E)$ and $H\mapsto L^H$ are inverse inclusion-reversing bijections between intermediate fields $F\subseteq E\subseteq L$ and subgroups $H\le G$, with $[L:E]=\abs{H}$. Moreover $E/F$ is Galois exactly when $H\normal G$, in which case $\Gal(E/F)\cong G/H$; in general $\Aut_F(E)\cong N_G(H)/H$.
+
+
+::: pf-proof
+This is the fundamental theorem of Galois theory. The two maps are inverse: for a subgroup $H$ the fixed field $L^H$ satisfies $\Gal(L/L^H) \supseteq H$, and Artin's theorem gives $[L:L^H] = \abs{H} = \abs{\Gal(L/L^H)}$, so the inclusion is an equality; for an intermediate field $E$ the same count gives $[L:E] = \abs{\Gal(L/E)}$ and hence $E = L^{\Gal(L/E)}$. Both maps reverse inclusions because a larger subgroup fixes fewer elements, which is where $[L:E] = \abs{H}$ comes from. The extension $E/F$ is normal exactly when every $F$-embedding of $E$ into an algebraic closure has image $E$, and for $L/F$ Galois this happens exactly when $H$ is normal in $G$; then restriction $G \to \Gal(E/F)$ is onto with kernel $H$, so the quotient is $\Gal(E/F)$, while in general an $F$-automorphism of $E$ extends to $L$ exactly when it conjugates $H$ to itself, which gives $\Aut_F(E) \cong N_G(H)/H$.
+:::
 
 :::
 
