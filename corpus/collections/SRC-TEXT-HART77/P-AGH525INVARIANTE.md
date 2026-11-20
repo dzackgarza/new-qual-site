@@ -360,6 +360,20 @@ audit:
     pp. 5-6, and the field statement "an algebraically closed field of
     arbitrary characteristic" on printed p. 263. Not checked: any printing of
     the paper other than the retained PDF.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Two repairs. (i) Part (d) of the remark described Lange's reduction as
+    one to a quotient of degree > 3; the printed source has d >= 3, which is the
+    hypothesis step s11 assumes and states, and the remark now reads d >= 3. The
+    events above record that the text version's "d > 3" is an OCR error and that the
+    scan of the page reads d >= 3. (ii) No page locator remained in the rendered text
+    of this card, so none was removed; the audit events above keep the pages they
+    name, as the citation rule requires. Checked in this pass: the two occurrences of
+    the reduction in the rendered text, at step s11 and in the remark, both of which
+    now say d >= 3, and the absence of a page locator from that text. Not checked:
+    any printing of Lange's paper, only the PDF retained in tmp/sources.
 ---
 
 ::: {.problem}
@@ -613,7 +627,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 
 (c) Step [](#s9){.pf-ref} proves the existence for $g\ge2$ in every characteristic by the avoidance argument the hint names: the bad classes for the effective divisors $E$ of degree $d-1$ form a family of dimension $2d-3$ in $\PP H^1(\OO(-D))$, which has dimension $g-2+d$, and $2d-3<g-2+d$ because $d\le g$; a general class is therefore normalized and gives a non-split extension, the invariant being $-\deg\det=-d=e$. Lange and Narasimhan's Corollary 1.2, gives the same existence for $g\ge2$ over characteristic zero by the secant-variety count $\dim\mathrm{Sec}_{s-2}(X)\le2s-3<g+s-2=\dim\PP$.
 
-(d) Lange, *Higher secant varieties of curves and the theorem of Nagata on ruled surfaces*: the dimension theorem of §1, that $\dim\mathrm{Sec}_n(C)=\min(2n-1,N)$ for a nondegenerate curve in $\PP^N$, and the Lemma of §2, that a class of an extension lying in $\mathrm{Sec}_n(C)$ forces $s(E)\le2n-d$; the paper states an algebraically closed field of arbitrary characteristic. For a normalized bundle $s(E)=\deg\det E=-e$, and with $d=-e\ge3$ one gets $d\le2$, so $e\ge-2$ at $g=2$. That is the bound the printed Note attributes to Nagata [8]. The reduction to a quotient of degree $>3$ that opens the proof of his Theorem is stated there and not argued, and step [](#s11){.pf-ref} does not use it.
+(d) Lange, *Higher secant varieties of curves and the theorem of Nagata on ruled surfaces*: the dimension theorem of §1, that $\dim\mathrm{Sec}_n(C)=\min(2n-1,N)$ for a nondegenerate curve in $\PP^N$, and the Lemma of §2, that a class of an extension lying in $\mathrm{Sec}_n(C)$ forces $s(E)\le2n-d$; the paper states an algebraically closed field of arbitrary characteristic. For a normalized bundle $s(E)=\deg\det E=-e$, and with $d=-e\ge3$ one gets $d\le2$, so $e\ge-2$ at $g=2$. That is the bound the printed Note attributes to Nagata [8]. The reduction to a quotient of degree $d\ge3$ that opens the proof of his Theorem is stated there and not argued, and step [](#s11){.pf-ref} does not use it.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.5. Part (b) he proves: with $\xi\in H^1(\mathcal L(-D))$ the class of the extension and $\gamma:H^0(\mathcal L(D+K-E))\to H^1(\mathcal L(-E))$, injectivity of $\gamma$ is equivalent to $\mathcal E$ being normalized, and he runs the commutative square with $H^0(\OO_C)\to H^1(\mathcal L(-D))\to H^1(\mathcal L(-E))$ in both directions. For (a) he writes "This will get us all invariants for this problem with the help of thm V.2.12. This is F,P thm 4.12.4", a citation to Fuentes--Pedreira's Theorem 4.12(4), which takes a decomposable surface and an elementary transformation at a point outside $X_0$ and $X_1$ over a base point $P$ of $-\mfe$ and returns an indecomposable surface with invariant $e-1$; one application to the decomposable surface of invariant $e+1$ gives an indecomposable surface of invariant $e$, the base point $P$ being the one condition the theorem asks for. For (c) he writes "By proof of (a), I only need to find one with invariant $-g$ ... This is given by 3.13 in Maruyama", a citation to Maruyama. Part (d) he answers "By Theorem 1 in Nagata 'Self-intersection number'", which is the source of the printed Note, and step [](#s11){.pf-ref} gives the $g=2$ case from the dimension theorem of Lange's §1 and the Lemma of his §2.
 

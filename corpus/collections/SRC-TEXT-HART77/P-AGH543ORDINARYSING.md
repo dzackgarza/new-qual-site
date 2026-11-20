@@ -508,6 +508,22 @@ audit:
     tmp/sources/fulton-2008-algebraic-curves.pdf at PDF pp. 96-100. Not
     checked: any printing other than that PDF.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Page locators are removed from the rendered text, the citation rule of
+    CONTRIBUTING requiring numbered statements. Deleted, with the numbered statement
+    kept in each case: "printed p. 113" at Fulton's Appendix A, twice, in step
+    positive-characteristic and in the remark; "printed p. 88" for (1), (2) and (3),
+    for (4), and for the formulas of section 7.4; "printed p. 89" for (5) and for
+    (6); "printed p. 90" for (7), for (8) twice, and for Lemma 1; "printed
+    pp. 88--90" for (4) to (7); "printed p. 60" for Problem 5.26 and for Theorem 2
+    of section 5.4; "printed p. 91" for Theorem 2 of section 7.4; and "printed
+    p. 87" for the standard quadratic transformation. The audit events above are not
+    edited, and the pages they name remain the record of what was read. Not checked:
+    the rendered page, and no printing of Fulton other than the text version
+    retained in tmp/sources.
 ---
 
 ::: {.problem}
@@ -523,7 +539,7 @@ The argument is that of Fulton, *Algebraic Curves* (2008), §7.4, with Appendix 
 $$
 g^*(C)=\binom{n-1}{2}-\sum_{Q}\binom{r_Q}{2},
 $$
-the sum being taken over the multiple points of $C$. The terminating count is Fulton's Theorem 2: a curve with $N$ non-ordinary multiple points reaches one whose singularities are all ordinary after at most $N+g^*(C)$ steps. In characteristic $p>0$ the reduction is that of his Appendix A, printed p. 113, and it is not a reduction to another theorem: the preliminary transformation it prescribes is neutral for $N$ and for $g^*$, and it restores the separability that the count needs, so the same count runs in every characteristic with the bound doubled.
+the sum being taken over the multiple points of $C$. The terminating count is Fulton's Theorem 2: a curve with $N$ non-ordinary multiple points reaches one whose singularities are all ordinary after at most $N+g^*(C)$ steps. In characteristic $p>0$ the reduction is that of his Appendix A, and it is not a reduction to another theorem: the preliminary transformation it prescribes is neutral for $N$ and for $g^*$, and it restores the separability that the count needs, so the same count runs in every characteristic with the bound doubled.
 
 ::: pf
 
@@ -571,7 +587,7 @@ $$
 with the symmetric formulas $\mu_{P'}(C')=n-r-r''$ and $\mu_{P''}(C')=n-r-r'$; $F'$ is irreducible, $(F')'=F$, and $C'=V(F')$ is the strict transform of $C$.
 
 ::: pf-proof
-This is the opening of Fulton, §7.4, with (1), (2) and (3) of that section, all three printed p. 88. On $U=\PP^2-V(XYZ)$ the map $Q$ is its own inverse, so $Q$ is a birational map of $\PP^2$ with itself, and $C'=\overline{Q^{-1}(C\cap U)}$.
+This is the opening of Fulton, §7.4, with (1), (2) and (3) of that section. On $U=\PP^2-V(XYZ)$ the map $Q$ is its own inverse, so $Q$ is a birational map of $\PP^2$ with itself, and $C'=\overline{Q^{-1}(C\cap U)}$.
 
 For (1), write $F=F_r(X,Y)Z^{n-r}+\cdots+F_n(X,Y)$ with $F_i$ a form of degree $i$; substituting $YZ$, $XZ$, $XY$ for $X$, $Y$, $Z$ gives
 $$
@@ -605,15 +621,15 @@ $$
 $$
 
 ::: pf-proof
-This is (7) of Fulton, printed p. 90. In excellent position the points of $C\cap L'$ and of $C\cap L''$ are non-fundamental, so $P'\notin C$ and $P''\notin C$, that is $r'=r''=0$; step [](#algebraic-transform-multiplicities){.pf-ref} then gives the degree $2n-r$ and the three multiplicities.
+This is (7) of Fulton. In excellent position the points of $C\cap L'$ and of $C\cap L''$ are non-fundamental, so $P'\notin C$ and $P''\notin C$, that is $r'=r''=0$; step [](#algebraic-transform-multiplicities){.pf-ref} then gives the degree $2n-r$ and the three multiplicities.
 
-Part (a) of (7) follows because $C'\cap U$ and $C\cap U$ are isomorphic. Part (c) is (6) of the same section, printed p. 89, whose computation is
+Part (a) of (7) follows because $C'\cap U$ and $C\cap U$ are isomorphic. Part (c) is (6) of the same section, whose computation is
 $$
 \sum_{i=1}^{s}I(P_i,F'\cap Z)=\sum_{i=1}^{s}I(P_i,F_r(Y,X)\cap Z)=r
 $$
 and which gives $\mu_{P_i}(C')\le I(P_i,C'\cap L)$; applied with $P'$ and with $P''$ in the role of the centre, (6) says that the analogous sum equals $r'=0$ and $r''=0$, so there is no non-fundamental point on $C'\cap L'$ or on $C'\cap L''$.
 
-Part (b) is the case in which the reading is not immediate. Fulton obtains it by "applying (6) to the curves $C'$ and $(C')'=C$", which is legitimate because $C'$ is in good position by (4), printed p. 88; what that application gives is the count $\mu_P(C')=n$, the left-hand side of (6) being $\sum_i I(P_i,C\cap L)$ over the $n$ points $P_i$ of $C\cap L$, at each of which $L$ meets $C$ transversally and the intersection multiplicity is therefore $1$. The step from that count to the ordinariness of the three fundamental images is the card's own, and reads the local model (5) of printed p. 89 with $C'$ in the role of the curve there: the points of $C\cap L$ are the points in which the strict transform of $C'$ under the blowup of $P$ meets the exceptional curve $L$, and they correspond one to one to the tangent directions of $C'$ at $P$, the exponent of a direction in the tangent cone of $C'$ at $P$ being the intersection multiplicity of $C$ with $L$ at the corresponding point. Those $n$ exponents are $n$ positive integers with sum $\mu_P(C')=n$, so all are $1$; the tangent cone of $C'$ at $P$ is therefore a product of $n$ distinct lines, and $P$ is an ordinary $n$-fold point. The same reading with $P'$ and with $P''$ in the role of the centre gives $\mu_{P'}(C')=\mu_{P''}(C')=n-r$, ordinary there too.
+Part (b) is the case in which the reading is not immediate. Fulton obtains it by "applying (6) to the curves $C'$ and $(C')'=C$", which is legitimate because $C'$ is in good position by (4); what that application gives is the count $\mu_P(C')=n$, the left-hand side of (6) being $\sum_i I(P_i,C\cap L)$ over the $n$ points $P_i$ of $C\cap L$, at each of which $L$ meets $C$ transversally and the intersection multiplicity is therefore $1$. The step from that count to the ordinariness of the three fundamental images is the card's own, and reads the local model (5) with $C'$ in the role of the curve there: the points of $C\cap L$ are the points in which the strict transform of $C'$ under the blowup of $P$ meets the exceptional curve $L$, and they correspond one to one to the tangent directions of $C'$ at $P$, the exponent of a direction in the tangent cone of $C'$ at $P$ being the intersection multiplicity of $C$ with $L$ at the corresponding point. Those $n$ exponents are $n$ positive integers with sum $\mu_P(C')=n$, so all are $1$; the tangent cone of $C'$ at $P$ is therefore a product of $n$ distinct lines, and $P$ is an ordinary $n$-fold point. The same reading with $P'$ and with $P''$ in the role of the centre gives $\mu_{P'}(C')=\mu_{P''}(C')=n-r$, ordinary there too.
 :::
 
 :::
@@ -666,7 +682,7 @@ $$
 where $P_1,\dots,P_s$ are the non-fundamental points of $C'\cap L$. In particular $g^*(C')\le g^*(C)$, with equality exactly when no $P_i$ has multiplicity at least $2$.
 
 ::: pf-proof
-This is (8) of Fulton, printed p. 90, whose proof is given there as "a calculation, using (2) and (7)"; the calculation is the following. By step [](#excellent-position){.pf-ref} the multiple points of $C'$ are the multiple points $Q\neq P$ of $C$ with their multiplicities, the three ordinary points $P$, $P'$, $P''$ of multiplicities $n$, $n-r$, $n-r$, and the points $P_i$ of multiplicities $r_i$. With $\deg C'=2n-r$ this gives
+This is (8) of Fulton, whose proof is given there as "a calculation, using (2) and (7)"; the calculation is the following. By step [](#excellent-position){.pf-ref} the multiple points of $C'$ are the multiple points $Q\neq P$ of $C$ with their multiplicities, the three ordinary points $P$, $P'$, $P''$ of multiplicities $n$, $n-r$, $n-r$, and the points $P_i$ of multiplicities $r_i$. With $\deg C'=2n-r$ this gives
 $$
 g^*(C')=\binom{2n-r-1}{2}-\sum_{Q}\binom{r_Q}{2}-\binom{n}{2}-2\binom{n-r}{2}-\sum_{i=1}^{s}\binom{r_i}{2},
 $$
@@ -696,7 +712,7 @@ This is Fulton, Theorem 2 of §7.4. He takes successive quadratic transformation
 Assume $\operatorname{char}k=p>0$. Then the transformation sequence of step [](#termination){.pf-ref} exists in this characteristic, at most $2(N+g^*(C))$ transformations sufficing: where the projection from the chosen point is inseparable, one preliminary quadratic transformation, centred at a point of multiplicity $0$ or $1$ and two points off $C$, changes neither $N$ nor $g^*$, creates only ordinary points, and makes the projection from the image of that point separable.
 
 ::: pf-proof
-This is Appendix A of Fulton, printed p. 113. Call $P$ *terrible* for $F$ if infinitely many lines through $P$ meet $C$ in fewer than $n-r$ distinct points other than $P$. A terrible $P$ forces $p\mid(n-r)$: the projection $\pi_P\colon C\to\PP^1$ has degree $n-r$, a general line through $P$ meeting $C$ in $P$ with multiplicity $r$ and in $n-r$ further points counted with multiplicity; if $\pi_P$ were separable its general fibre would consist of $n-r$ distinct reduced points, whereas a terrible $P$ has non-reduced fibres over infinitely many lines, so the general fibre is not reduced and $\pi_P$ is not separable, and the inseparable degree of a finite morphism of curves is then a power $p^e>1$ dividing its degree $n-r$. Fulton states this at the head of Appendix A, "P can only be terrible if $p$ divides $n-r$", from Problem 5.26. The lines through $P$ form a line of the dual plane, so for a terrible $P$ the dual curve of $C$ contains infinitely many points of a line and, being irreducible, is that line; hence $F$ has at most one terrible point, and lines meeting $C$ in $n$ distinct points always exist.
+This is Appendix A of Fulton. Call $P$ *terrible* for $F$ if infinitely many lines through $P$ meet $C$ in fewer than $n-r$ distinct points other than $P$. A terrible $P$ forces $p\mid(n-r)$: the projection $\pi_P\colon C\to\PP^1$ has degree $n-r$, a general line through $P$ meeting $C$ in $P$ with multiplicity $r$ and in $n-r$ further points counted with multiplicity; if $\pi_P$ were separable its general fibre would consist of $n-r$ distinct reduced points, whereas a terrible $P$ has non-reduced fibres over infinitely many lines, so the general fibre is not reduced and $\pi_P$ is not separable, and the inseparable degree of a finite morphism of curves is then a power $p^e>1$ dividing its degree $n-r$. Fulton states this at the head of Appendix A, "P can only be terrible if $p$ divides $n-r$", from Problem 5.26. The lines through $P$ form a line of the dual plane, so for a terrible $P$ the dual curve of $C$ contains infinitely many points of a line and, being irreducible, is that line; hence $F$ has at most one terrible point, and lines meeting $C$ in $n$ distinct points always exist.
 
 If the chosen bad point $P$ is terrible for $F$, Fulton takes a quadratic transformation centred at a point $Q$ of multiplicity $m=0$ or $m=1$, so that $P$ lies on no fundamental line, and writes $F'$ for the transform; the two remaining centres are taken off $C$, so that $n'=\deg F'=2n-m$. Since $p$ divides $n-r$,
 $$
@@ -710,7 +726,7 @@ By step [](#excellent-position-attained){.pf-ref} excellent position at $P$ is a
 
 (ii) $\deg C_1=2n-m$ and $\mu_{P_1}(C_1)=r$ (step [](#algebraic-transform-multiplicities){.pf-ref}), so $\deg\pi_{P_1}=2n-m-r\equiv n-m\pmod p$. Since $p\mid(n-r)$, the choice $m=0$ when $p\nmid r$ and $m=1$ when $p\mid r$ gives $p\nmid(n-m)$, hence $p\nmid\deg\pi_{P_1}$; and an inseparable morphism of curves has degree divisible by $p$. So $\pi_{P_1}$ is separable.
 
-(iii) The points of $C_1$ over $Q$ are smooth, $m$ being $0$ or $1$; the three fundamental points of $C_1$ are ordinary multiple points of multiplicities $n$, $n-m$ and $n-m$, the fundamental lines meeting $C$ transversally at smooth points (step [](#excellent-position){.pf-ref}); and $T$ is an isomorphism near every other point of $C$, all singular points other than $P$ being off the fundamental lines by construction. Hence the non-ordinary points of $C_1$ are exactly those of $C$ other than $P$, together with $P_1$: $N(C_1)=N(C)$. For $g^*$, apply (8) of Fulton, printed p. 90, in the form step [](#genus-invariant-drops){.pf-ref} states it: the non-fundamental points of $C_1\cap L$, with $L$ the exceptional line through the two centres of multiplicity $0$, are the points of $C\cap L$, which the choice of the fundamental lines makes smooth and transverse, so their multiplicities $r_i$ are all $1$ and the sum $\sum_i\binom{r_i}{2}$ of (8) vanishes; hence $g^*(C_1)=g^*(C)$.
+(iii) The points of $C_1$ over $Q$ are smooth, $m$ being $0$ or $1$; the three fundamental points of $C_1$ are ordinary multiple points of multiplicities $n$, $n-m$ and $n-m$, the fundamental lines meeting $C$ transversally at smooth points (step [](#excellent-position){.pf-ref}); and $T$ is an isomorphism near every other point of $C$, all singular points other than $P$ being off the fundamental lines by construction. Hence the non-ordinary points of $C_1$ are exactly those of $C$ other than $P$, together with $P_1$: $N(C_1)=N(C)$. For $g^*$, apply (8) of Fulton in the form step [](#genus-invariant-drops){.pf-ref} states it: the non-fundamental points of $C_1\cap L$, with $L$ the exceptional line through the two centres of multiplicity $0$, are the points of $C\cap L$, which the choice of the fundamental lines makes smooth and transverse, so their multiplicities $r_i$ are all $1$ and the sum $\sum_i\binom{r_i}{2}$ of (8) vanishes; hence $g^*(C_1)=g^*(C)$.
 
 So $(C_1,P_1)$ has the numbers $N$ and $g^*$ of $(C,P)$, the singularity of $P$, and a separable projection at $P_1$; the descent step of steps [](#excellent-position-attained){.pf-ref} and [](#genus-invariant-drops){.pf-ref} then applies at $P_1$ and drops $N+g^*$ by at least $1$, as step [](#termination){.pf-ref} records. Each descent step is preceded by at most one preliminary transformation, so at most $2(N+g^*(C))$ quadratic transformations suffice, $N+g^*$ being a non-negative integer by step [](#genus-invariant-nonnegative){.pf-ref}. No theorem for characteristic $p$ beyond this count is used: the preliminary transformation is the one Fulton prescribes in Appendix A, and the only thing added here is that it is neutral for $N$ and $g^*$ and that it restores the hypothesis of step [](#excellent-position-attained){.pf-ref}.
 
@@ -729,7 +745,7 @@ Steps [](#algebraic-transform-multiplicities){.pf-ref} and [](#excellent-positio
 ::: {.remark title="Published solution"}
 The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.3, and its notion of ordinary singularity is that of (I, Ex. 5.14).
 
-The proof is William Fulton, *Algebraic Curves: An Introduction to Algebraic Geometry* (2008), §7.4 "Quadratic Transformations": the standard quadratic transformation on printed p. 87, the formulas (1), (2) and (3) on printed p. 88, good and excellent position with (4) to (7) on printed pp. 88--90, the invariant $g^*$ and (8) on printed p. 90, Lemma 1 on printed p. 90, resting on Problem 5.26 and on Theorem 2 of §5.4, both printed p. 60, Theorem 2 of §7.4 on printed p. 91, and Appendix A "Nonzero Characteristic" on printed p. 113. Appendix A is where the characteristic-$p$ case is settled, once it is observed that the preliminary transformation Fulton prescribes there is neutral for $N$ and for $g^*$ and restores the hypothesis of his Lemma 1: that observation is step [](#positive-characteristic){.pf-ref}, and with it his Theorem 2 runs unchanged in every characteristic.
+The proof is William Fulton, *Algebraic Curves: An Introduction to Algebraic Geometry* (2008), §7.4 "Quadratic Transformations": the standard quadratic transformation, the formulas (1), (2) and (3), good and excellent position with (4) to (7), the invariant $g^*$ and (8), Lemma 1, resting on Problem 5.26 and on Theorem 2 of §5.4, Theorem 2 of §7.4, and Appendix A "Nonzero Characteristic". Appendix A is where the characteristic-$p$ case is settled, once it is observed that the preliminary transformation Fulton prescribes there is neutral for $N$ and for $g^*$ and restores the hypothesis of his Lemma 1: that observation is step [](#positive-characteristic){.pf-ref}, and with it his Theorem 2 runs unchanged in every characteristic.
 
 Thomas Rüd, *Resolution of singularities on projective curves* (2015), treats the same theorem: Proposition 19, states excellent position; Propositions 20 and 21, prove the sum $\sum_i I(P_i,C'\cap L)=n$ and the multiplicities $n$, $n-r$, $n-r$, and Proposition 21 states the ordinariness of $P$, $P'$ and $P''$ in its second part while its proof reaches only those multiplicities, so that passage stays the card's own; the invariant $g^*$ is defined in the paragraph before his Remark 23, and Proposition 22, states that it is a nonnegative integer; Theorem 13, gives the finite sequence; and §7.3, treats a field of positive characteristic. Three of its arguments do not hold as printed, and the proof above uses none of the three: Proposition 19 infers from the irreducibility of $F$ that the section $G_\lambda$ is irreducible and therefore has no multiple root, which does not follow --- an irreducible polynomial over an algebraically closed field is linear. Theorem 13 uses Remark 23, which says that an ordinary multiple point contributes nothing to $g^*$, whereas an ordinary double point contributes $1$. And Proposition 22's first case, $\partial F/\partial z\ne0$, reaches only $\sum_Q r_Q(r_Q-1)\le n(n-1)$.
 :::
