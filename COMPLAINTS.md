@@ -10815,3 +10815,31 @@ this turn, and no source obligation moves: none of the eleven has a located comp
 `E-HAT-4.1-1` `e2b206cf8b`, `E-HAT-2.C-6` `109b656d72` with its locator commit `dfcb9f6eb0`, and
 `E-HAT-2.C-1` `9383a69e9a`. `E-HAT-2.B-9`'s repair is `a6ff1e6bbe`, its locator pass `fe536e4369`, and the
 record of that repair `97a092da0e`.
+
+## 2026-11-20, eighth item: nine more §4.2 cards read, two repaired
+
+Against Hatcher, *Algebraic Topology* (2002), §4.2 and the numbered results each step uses: the relative
+Hurewicz theorem, Corollary 4.12, Theorem 4.5, Proposition 4.1, Proposition 3.29, Theorem 4.37, the
+suspension isomorphism for reduced homology, the van Kampen theorem, and Poincaré duality.
+
+| card | verdict | how read |
+| --- | --- | --- |
+| `E-HAT-4.2-4` | read correct | the spheres meet only at the origin ($\abs{x}^2=2x_1/j$ for $x\in S_j^n$ forces $x_1=0$); $r_k$ is continuous at a point of $S_k^n$ because the other spheres are a positive distance away and at $0$ because each $r_k$ maps into $S_k^n$; $\Phi$ is a homomorphism since $r_k$ is based and composition respects the sum; $\pi_i(X)=0$ for $1\le i<n$ is Eda--Kawamura, Corollary 1.2, cited as such; and the maps $u_k$ on disjoint balls, assembled with $f=0$ off them, give the splitting, surjectivity checked coordinate by coordinate |
+| `E-HAT-4.2-6` | repaired, `e0874a6723` | the reduction for $n\ge3$ is right — $(CX,X)$ is $(n-1)$-connected via $\pi_i(CX,X)\cong\pi_{i-1}(X)$, the relative theorem applies in its isomorphism form because both spaces are simply connected, the boundary map is an isomorphism in homology, and naturality finishes. The exercise asks for dimension $n-1$ for all $n$, and the card silently took $n\ge3$. The case $n=2$ is the absolute theorem in dimension 1 and cannot use the isomorphism form, since $X$ is only path-connected; the card now proves it from the coinvariant form, the boundary isomorphism $\pi_2(CX,X)\cong\pi_1(X)$ carrying the action to conjugation |
+| `E-HAT-4.2-10` | read correct | $\pi_n'(X)$ is the coinvariant module $M/(t-1)M$ with $M=\ZZ[t,t^{-1}]/(p)$, so it is $\ZZ/(p(1))$: cyclic of order $\abs{p(1)}$ when $p(1)\ne0$ and infinite cyclic when $p(1)=0$. The four examples are the four combinations and I checked each: $t+1$ gives $\ZZ$ and $\ZZ/2$; $t-1$ gives $\ZZ$ and $\ZZ$; $2t-1$ gives $\ZZ[1/2]$, not finitely generated, and $0$; $p=0$ gives $\ZZ[t,t^{-1}]$, not finitely generated, and $\ZZ$ |
+| `E-HAT-4.2-15` | read correct | Poincaré duality on a closed simply connected $3$-manifold gives $H_1=H^2=0$ and $H_2=H^1=0$, so $M$ is a homology sphere; Hurewicz gives $\pi_2=0$ because $H_1=H_2=0$, hence $M$ is $2$-connected; a second Hurewicz gives $\pi_3\cong H_3\cong\ZZ$, a generating map $S^3\to M$ is an isomorphism on all homology, and Whitehead (with CW type from Corollary A.12) makes it a homotopy equivalence |
+| `E-HAT-4.2-16` | read correct | infinite $\pi_1$ makes the universal cover noncompact, so $H_i=0$ for $i\ge2$ by Proposition 3.29, and $H_1=0$ by simple connectivity; acyclicity kills every $\pi_k$ by Hurewicz in the least nonzero degree, and Whitehead makes the cover contractible |
+| `E-HAT-4.2-19` | read correct | $\widetilde X^{\,n}=p^{-1}(X^n)$ is the $n$-skeleton of the contractible cover, the pair has no relative cells of dimension at most $n$ so $\pi_i$ vanishes there by Corollary 4.12, the long exact sequence makes $\widetilde X^{\,n}$ $(n-1)$-connected, Hurewicz identifies $\pi_n$ with $H_n=\ker d_n$ — free abelian as a subgroup of a free abelian group since there are no $(n+1)$-cells — and the covering transfers $\pi_n$ for $n\ge2$ |
+| `E-HAT-4.2-35` | statement repaired, `ed11fd4f17` | the statement block carried "printed page = PDF page − 9" and the retained file name; both removed, so it cites §4.2 Exercise 35 and nothing else. The mathematics re-read and correct: complex numbers are central in $\quaternions$, so right multiplication by $e^{i\theta}$ is complex scalar multiplication on $\CC^{2n+2}$, whose unit-sphere orbits are the complex lines, giving $\CP^{2n+1}$; each fibre $S^3/S^1$ is $S^2$ by the Hopf bundle, and the $S^3$-equivariant local trivializations descend to $S^1$-equivariant ones |
+| `E-HAT-4.2-36` | read correct | $S^1\times S^n=S^1\vee S^n\cup e^{n+1}$ with attaching map the Whitehead product of the two inclusions; in the universal cover the lifted cell joins consecutive $n$-spheres, so its boundary is $\iota_n-(\iota_1\cdot\iota_n)$, and applying $f\vee g$ gives $[f,g]=\pm(g-fg)$ |
+| `E-HAT-4.2-37` | read correct | the product cell structure gives $S^p\times S^q=S^p\vee S^q\cup e^{p+q}$ with attaching map $w$; $F(x,y)=\mu(f(x),g(y))$ restricts to $f\vee g$ up to based homotopy by the H-space axioms of §3.C; $w$ is null-homotopic in $S^p\times S^q$ because it extends over the cell, so $F\circ w\simeq\ast$ and hence $(f\vee g)\circ w\simeq\ast$. That the multiplication is what supplies the extension — and that this is exactly what a general space lacks — is the point of the proof, and it is right |
+
+**Not yet read in this batch:** `E-HAT-4.2-7`, `-13`, `-30`. They remain on the older review and are named
+here rather than counted as done. `E-HAT-4.2-30` is the one covered by Proudfoot's Homework #7, whose coverage
+line lists §4.2 Problems 1, 2, 30, 31, 32, 39, so its reading has to compare the card against that solution
+and not only against the book.
+
+**Checks.** `qualc.authoring check` on `E-HAT-4.2-6` and `-35`, and on the cards of the earlier items of this
+date. `tmp/lam.sh` on `E-HAT-4.2-6` after the repair: four steps numbered, QED labels present; the first
+attempt inserted a second `pf-proof` block inside the same step and was corrected before committing. No
+whole-corpus gate in this turn.
