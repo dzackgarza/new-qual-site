@@ -61,7 +61,7 @@ Use $J=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$ and $\inner{Z}{W}={}^t\overline{W}
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 8, Problem 4, printed p. 257).
+The book marks this problem with an asterisk (Chapter 8, Problem 4).
 :::
 
 ::: {.hint}
