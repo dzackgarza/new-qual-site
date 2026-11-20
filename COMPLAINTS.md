@@ -10220,3 +10220,15 @@ the one the exercise cites.
 **Coverage.** The run commit is an ancestor of `main`'s tip. Every #160 commit of this date — `2922f53a72`, `c34ecd7222`, `149b8a2e0b`, `31904b1e29`, `a0f4d9db08`, `c2f490f474`, `4616cc3c62`, `a4a1b420b7`, `6d5534d6f3`, `a968b8450b` — is an ancestor of it, so the green covers the six cards in their final state. After the run commit, two files under the checked paths changed on `main`, both other lanes' work: `corpus/collections/SRC-TEXT-HK71/6-4/E-HK-64-8.md` and `wiki/algebra/rings-and-ideals/index.md`; the run does not certify those. The dirty-tree flag is stated: the run parsed the working tree, which carried other sessions' uncommitted edits beside the committed state of the six cards.
 
 **Repair.** This record in the COMPLAINTS commit that carries it, which changes no card.
+
+## 2026-11-20: one theorem in three cards — `P-FHW1-02`, `E-AMD-CY7I27YM` and `P-MUABR`
+
+**Object and need:** three problem cards in `corpus/` state that an algebraic extension of an algebraic extension is algebraic, and [#174](https://github.com/dzackgarza/new-qual-site/issues/174)'s read of `wiki/algebra/fields/extensions.md` found the page transcluding all three in one section.
+
+**Observed evidence:** `P-FHW1-02`, "Consider field extensions $E\subset F\subset K$. Suppose that $F$ is algebraic over $E$ and $K$ is algebraic over $F$. Show that $K$ is algebraic over $E$."; `E-AMD-CY7I27YM`, "Show that if $L/K/F$ with $K/F$ algebraic and $L/K$ algebraic then $L$ is algebraic."; `P-MUABR`, "Let $F \subseteq K \subseteq L$ be a tower of field extensions. Prove that if $K/F$ is algebraic and $L/K$ algebraic, then $L/F$ is algebraic." Same statement, three ids, three proofs, and a reader of the page met it three times in a row.
+
+**Impact and owner:** `CARD-04`. The page now transcludes `P-FHW1-02` alone, whose proof carries the induction over the coefficients of the polynomial of an element of $L$ over $K$; `E-AMD-CY7I27YM` and `P-MUABR` are still listed by `SRC-UNSORTED-ALGEBRA` and are referenced by no wiki page.
+
+**Uncertainty:** the survivor choice is a reading decision, not a measurement. `P-FHW1-02` is the one whose statement was checked against a page image of `assets/attachments/fields-homework-1.pdf` (its `source-checked` event of 2026-10-30); the other two carry no source check.
+
+**Repair:** not done. Merging repoints `SRC-UNSORTED-ALGEBRA`'s two list entries to the survivor and deletes the two cards, which is a card-corpus pass rather than a wiki read; [#174](https://github.com/dzackgarza/new-qual-site/issues/174) leaves it here and the page edit is the commit that carries this record.
