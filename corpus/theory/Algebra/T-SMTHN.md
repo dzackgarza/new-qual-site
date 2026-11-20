@@ -26,5 +26,5 @@ The matrices $P$ and $Q$ are the products of the elementary row and column opera
 :::
 
 ::: {.remark}
-Dummit and Foote carry the case of the matrix $xI-A$ over $F[x]$: for $A$ an $n\times n$ matrix over a field $F$, the matrix $xI-A$ can be put in Smith normal form, with monic diagonal entries $a_1(x)\divides\cdots\divides a_m(x)$ of degree at least one that are the invariant factors of $A$ [@DF04, Theorem 21], and the formula $a_i=d_i/d_{i-1}$ in terms of the greatest common divisors of the $i\times i$ minors of $xI-A$ is Exercise 35, printed at p. 502.
+Dummit and Foote carry the case of the matrix $xI-A$ over $F[x]$: for $A$ an $n\times n$ matrix over a field $F$, the matrix $xI-A$ can be put in Smith normal form, with monic diagonal entries $a_1(x)\divides\cdots\divides a_m(x)$ of degree at least one that are the invariant factors of $A$ [@DF04, Theorem 21], and the formula $a_i=d_i/d_{i-1}$ in terms of the greatest common divisors of the $i\times i$ minors of $xI-A$ is §12.3 Exercise 35 [@DF04].
 :::
