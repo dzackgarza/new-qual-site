@@ -88,7 +88,7 @@ Let $B\subseteq C$ be connected and let $x,y\in B$ with $x<y$. Choose $n$ with $
 (b) $C$ is compact.
 
 ::: pf-proof
-Each $A_{n}$ is a finite union of closed intervals, hence closed in $\RR$; so $C=\bigcap_{n}A_{n}$ is closed in $\RR$, and being a closed subset of the compact space $[0,1]$ it is compact (Theorem 26.2, printed p. 165).
+Each $A_{n}$ is a finite union of closed intervals, hence closed in $\RR$; so $C=\bigcap_{n}A_{n}$ is closed in $\RR$, and being a closed subset of the compact space $[0,1]$ it is compact (Theorem 26.2).
 :::
 
 :::
@@ -115,7 +115,7 @@ Let $x\in C$ and $n\in\ZZ_{+}$, and let $I$ be the interval of $A_{n}$ containin
 (e) $C$ is uncountable.
 
 ::: pf-proof
-$C$ is nonempty, since by step [](#intervals){.pf-ref} it contains the endpoints of the intervals of $A_{1}$, for instance $0,1/3,2/3,1$. It is compact Hausdorff by step [](#compact){.pf-ref}, and it has no isolated points by step [](#no-isolated){.pf-ref}; a nonempty compact Hausdorff space with no isolated points is uncountable (Theorem 27.7, printed p. 176).
+$C$ is nonempty, since by step [](#intervals){.pf-ref} it contains the endpoints of the intervals of $A_{1}$, for instance $0,1/3,2/3,1$. It is compact Hausdorff by step [](#compact){.pf-ref}, and it has no isolated points by step [](#no-isolated){.pf-ref}; a nonempty compact Hausdorff space with no isolated points is uncountable (Theorem 27.7).
 :::
 
 :::

@@ -48,7 +48,7 @@ Show that a retraction is a quotient map.
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 22.2, PDF p. 27** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both parts are theirs, and Whitman, printed p. 252, gives the same two arguments. The statement was checked against Munkres, *Topology* (2000), §22 Exercise 2, printed p. 144, with the definition of a quotient map printed on p. 137; the set $A$ of part (b) carries the subspace topology, that being the topology the exercise gives it. Throughout, $p^{-1}(U)=\theset{x\in X\mid p(x)\in U}$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 22.2, PDF p. 27** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both parts are theirs, and Whitman, gives the same two arguments. The statement was checked against Munkres, *Topology* (2000), §22 Exercise 2, with the definition of a quotient map printed on p. 137; the set $A$ of part (b) carries the subspace topology, that being the topology the exercise gives it. Throughout, $p^{-1}(U)=\theset{x\in X\mid p(x)\in U}$.
 
 ::: pf
 
@@ -94,7 +94,7 @@ the middle equality because $p\circ f=\mathrm{id}_{Y}$, and $(p\circ f)^{-1}(U)=
 
 ::: pf-proof
 
-A quotient map is a surjective continuous map $p$ under which a set $U\subset Y$ is open exactly when $p^{-1}(U)$ is open (§22, printed p. 137). The map $p$ is continuous by hypothesis, surjective by step [](#surjective){.pf-ref}, and satisfies the openness condition by step [](#open-iff){.pf-ref}.
+A quotient map is a surjective continuous map $p$ under which a set $U\subset Y$ is open exactly when $p^{-1}(U)$ is open (§22). The map $p$ is continuous by hypothesis, surjective by step [](#surjective){.pf-ref}, and satisfies the openness condition by step [](#open-iff){.pf-ref}.
 
 :::
 
@@ -118,7 +118,7 @@ The inclusion $i\colon A\to X$, $i(a)=a$, is continuous and $r\circ i=\mathrm{id
 
 ::: pf-proof
 
-$A$ carries the subspace topology, and the inclusion of a subspace is continuous (Theorem 18.2(b), printed p. 107). For $a\in A$ one has $r(i(a))=r(a)=a$, because $r$ is a retraction, so $r\circ i$ is the identity of $A$.
+$A$ carries the subspace topology, and the inclusion of a subspace is continuous (Theorem 18.2(b)). For $a\in A$ one has $r(i(a))=r(a)=a$, because $r$ is a retraction, so $r\circ i$ is the identity of $A$.
 
 :::
 

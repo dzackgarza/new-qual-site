@@ -54,7 +54,7 @@ Let $X$ be locally compact Hausdorff with one-point compactification $Y=X\cup\{\
 If $X$ has a countable basis, then $X=\bigcup_{n}K_{n}$ with each $K_{n}$ compact, $K_{n}\subseteq K_{n+1}$, and every compact subset of $X$ lying in some $K_{n}$.
 
 ::: pf-proof
-Each point of $X$ has an open neighbourhood with compact closure (local compactness, Theorem 29.1's setting, printed p. 183). From the countable basis choose a countable family $\theset{U_{n}}$ of such open sets with compact closures covering $X$ — possible since the basis is countable and only the basic sets with compact closure are needed. Put $K_{n}=\overline{U_{1}}\cup\cdots\cup\overline{U_{n}}$, compact and increasing, with union $X$. If $K\subseteq X$ is compact, the $U_{n}$ cover $K$, so finitely many cover it and $K\subseteq K_{N}$ for that $N$.
+Each point of $X$ has an open neighbourhood with compact closure (local compactness, Theorem 29.1's setting). From the countable basis choose a countable family $\theset{U_{n}}$ of such open sets with compact closures covering $X$ — possible since the basis is countable and only the basic sets with compact closure are needed. Put $K_{n}=\overline{U_{1}}\cup\cdots\cup\overline{U_{n}}$, compact and increasing, with union $X$. If $K\subseteq X$ is compact, the $U_{n}$ cover $K$, so finitely many cover it and $K\subseteq K_{N}$ for that $N$.
 :::
 
 :::
@@ -63,7 +63,7 @@ Each point of $X$ has an open neighbourhood with compact closure (local compactn
 The sets $Y\setminus K_{n}$ form a countable neighbourhood base at $\infty$.
 
 ::: pf-proof
-Each $Y\setminus K_{n}$ is open in $Y$ because $K_{n}$ is compact hence closed in $X$ (Theorem 26.3, printed p. 165), and it contains $\infty$. If $V$ is a neighbourhood of $\infty$ in $Y$, then $Y\setminus V$ is a compact subset of $X$, hence lies in some $K_{N}$ by step [](#exhaust){.pf-ref}, giving $\infty\in Y\setminus K_{N}\subseteq V$.
+Each $Y\setminus K_{n}$ is open in $Y$ because $K_{n}$ is compact hence closed in $X$ (Theorem 26.3), and it contains $\infty$. If $V$ is a neighbourhood of $\infty$ in $Y$, then $Y\setminus V$ is a compact subset of $X$, hence lies in some $K_{N}$ by step [](#exhaust){.pf-ref}, giving $\infty\in Y\setminus K_{N}\subseteq V$.
 :::
 
 :::
@@ -72,7 +72,7 @@ Each $Y\setminus K_{n}$ is open in $Y$ because $K_{n}$ is compact hence closed i
 If $X$ has a countable basis then $Y$ is metrizable.
 
 ::: pf-proof
-$Y$ is compact Hausdorff (Theorem 29.1, printed p. 183). A base for $Y$ is obtained from a countable base for $X$ together with the countable family of step [](#base-at-infinity){.pf-ref}, so $Y$ is second countable. A compact Hausdorff space with a countable base is metrizable by the Urysohn metrization theorem (Theorem 34.1, printed p. 219).
+$Y$ is compact Hausdorff (Theorem 29.1). A base for $Y$ is obtained from a countable base for $X$ together with the countable family of step [](#base-at-infinity){.pf-ref}, so $Y$ is second countable. A compact Hausdorff space with a countable base is metrizable by the Urysohn metrization theorem (Theorem 34.1).
 :::
 
 :::
@@ -81,7 +81,7 @@ $Y$ is compact Hausdorff (Theorem 29.1, printed p. 183). A base for $Y$ is obtai
 If $Y$ is metrizable then $X$ has a countable basis.
 
 ::: pf-proof
-A metrizable compact space is second countable, and a subspace of a second-countable space is second countable (Theorem 30.2, printed p. 194); $X$ is a subspace of $Y$, so it has a countable basis.
+A metrizable compact space is second countable, and a subspace of a second-countable space is second countable (Theorem 30.2); $X$ is a subspace of $Y$, so it has a countable basis.
 :::
 
 :::

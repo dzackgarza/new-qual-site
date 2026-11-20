@@ -45,7 +45,7 @@ Let $X$ be an ordered set in the order topology in which every closed interval i
 For $a\in A$ the closure $\overline A$ is a closed subset of the compact interval $[a,u]$, hence compact.
 
 ::: pf-proof
-$A\subseteq[a,u]$, so $\overline A\subseteq\overline{[a,u]}=[a,u]$, the interval being closed in the order topology; $[a,u]$ is compact by hypothesis, and a closed subset of a compact space is compact (Theorem 26.2, printed p. 165).
+$A\subseteq[a,u]$, so $\overline A\subseteq\overline{[a,u]}=[a,u]$, the interval being closed in the order topology; $[a,u]$ is compact by hypothesis, and a closed subset of a compact space is compact (Theorem 26.2).
 :::
 
 :::
@@ -54,7 +54,7 @@ $A\subseteq[a,u]$, so $\overline A\subseteq\overline{[a,u]}=[a,u]$, the interval
 The inclusion $\overline A\to X$, $x\mapsto x$, attains a maximum at some $b\in\overline A$.
 
 ::: pf-proof
-The inclusion is continuous (Theorem 18.2(b), printed p. 107), $\overline A$ is compact by step [](#compact-closure){.pf-ref}, and $X$ is an ordered set in the order topology; so the extreme value theorem (Theorem 27.4, printed p. 174) gives $b\in\overline A$ with $x\le b$ for all $x\in\overline A$. In particular $a\le b$ for all $a\in A$, so $b$ is an upper bound of $A$.
+The inclusion is continuous (Theorem 18.2(b)), $\overline A$ is compact by step [](#compact-closure){.pf-ref}, and $X$ is an ordered set in the order topology; so the extreme value theorem (Theorem 27.4) gives $b\in\overline A$ with $x\le b$ for all $x\in\overline A$. In particular $a\le b$ for all $a\in A$, so $b$ is an upper bound of $A$.
 :::
 
 :::

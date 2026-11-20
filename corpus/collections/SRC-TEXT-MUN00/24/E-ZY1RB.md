@@ -60,9 +60,9 @@ Show that if $X$ is connected, then $X$ is a linear continuum.
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.4, PDF p. 4** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both separations below are that solution's, and the argument for the nonemptiness of its first piece is supplied here, the source asserting it from the absence of a supremum, which does not give it. The statement was checked against Munkres, *Topology* (2000), §24 Exercise 4, printed p. 158, with the definition of a linear continuum printed on p. 153: a simply ordered set *having more than one element* with the least upper bound property and, for all $x<y$, an element strictly between them. The printed exercise omits the clause on the number of elements, and that clause cannot be dropped, since a one-point ordered set is connected and is not a linear continuum. The claim is therefore proved for an ordered set of more than one element, the only case in which the book's term applies.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.4, PDF p. 4** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both separations below are that solution's, and the argument for the nonemptiness of its first piece is supplied here, the source asserting it from the absence of a supremum, which does not give it. The statement was checked against Munkres, *Topology* (2000), §24 Exercise 4, with the definition of a linear continuum printed on p. 153: a simply ordered set *having more than one element* with the least upper bound property and, for all $x<y$, an element strictly between them. The printed exercise omits the clause on the number of elements, and that clause cannot be dropped, since a one-point ordered set is connected and is not a linear continuum. The claim is therefore proved for an ordered set of more than one element, the only case in which the book's term applies.
 
-Throughout, $X$ is a simply ordered set with more than one element carrying the order topology, and $X$ is assumed connected. For $x\in X$ the sets $(-\infty,x)=\theset{y\in X\mid y<x}$ and $(x,+\infty)=\theset{y\in X\mid x<y}$ are the open rays, which are open in the order topology (§14, printed p. 86). An upper bound of a subset $A\subset X$ is an element $b$ with $a\leq b$ for every $a\in A$, and $X$ has the least upper bound property when every nonempty such $A$ that has an upper bound has a least one.
+Throughout, $X$ is a simply ordered set with more than one element carrying the order topology, and $X$ is assumed connected. For $x\in X$ the sets $(-\infty,x)=\theset{y\in X\mid y<x}$ and $(x,+\infty)=\theset{y\in X\mid x<y}$ are the open rays, which are open in the order topology (§14). An upper bound of a subset $A\subset X$ is an element $b$ with $a\leq b$ for every $a\in A$, and $X$ has the least upper bound property when every nonempty such $A$ that has an upper bound has a least one.
 
 ::: pf
 
@@ -84,7 +84,7 @@ $C$ and $D$ are open in $X$.
 
 ::: pf-proof
 
-Each is a union of open rays, and the open rays are open in the order topology (§14, printed p. 86), so each is a union of open sets.
+Each is a union of open rays, and the open rays are open in the order topology (§14), so each is a union of open sets.
 
 :::
 

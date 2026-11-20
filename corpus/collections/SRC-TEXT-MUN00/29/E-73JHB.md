@@ -46,7 +46,7 @@ Show that the one-point compactification of $\ZZ_+$ is homeomorphic with the sub
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.8, PDF p. 23** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the map $n\mapsto 1/n$ and the appeal to Exercise 29.5 are that solution's. Two points it leaves implicit are supplied below: that $\ZZ_{+}$ is locally compact Hausdorff and not compact, which is what makes its one-point compactification exist, and that $\theset{1/n}$ is *dense* in $\theset{0}\cup\theset{1/n}$, which the definition of a compactification on printed p. 183 requires. The statement was checked against Munkres, *Topology* (2000), §29 Exercise 8, printed p. 186, with that definition, Theorem 27.3 on printed p. 173 and Exercise 29.5 on printed p. 186.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.8, PDF p. 23** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the map $n\mapsto 1/n$ and the appeal to Exercise 29.5 are that solution's. Two points it leaves implicit are supplied below: that $\ZZ_{+}$ is locally compact Hausdorff and not compact, which is what makes its one-point compactification exist, and that $\theset{1/n}$ is *dense* in $\theset{0}\cup\theset{1/n}$, which the definition of a compactification on printed p. 183 requires. The statement was checked against Munkres, *Topology* (2000), §29 Exercise 8, with that definition, Theorem 27.3 on printed p. 173 and Exercise 29.5 on printed p. 186.
 
 Throughout, $\ZZ_{+}$ is the subspace of $\RR$ consisting of the positive integers, $X\coloneqq\theset{1/n\mid n\in\ZZ_{+}}$, and $Y\coloneqq X\cup\theset{0}$, both with the subspace topology of $\RR$.
 
@@ -86,7 +86,7 @@ $Y$ is closed in $\RR$: its complement is
 $$
 (\RR-Y)=(-\infty,0)\cup(1,+\infty)\cup\bigcup_{n\geq1}\big(1/(n+1),1/n\big),
 $$
-a union of open intervals, hence open. It is bounded, being contained in $[0,1]$. A closed and bounded subset of $\RR$ is compact (Theorem 27.3, printed p. 173), so $Y$ is compact; and $Y$ is Hausdorff as a subspace of the Hausdorff space $\RR$.
+a union of open intervals, hence open. It is bounded, being contained in $[0,1]$. A closed and bounded subset of $\RR$ is compact (Theorem 27.3), so $Y$ is compact; and $Y$ is Hausdorff as a subspace of the Hausdorff space $\RR$.
 
 :::
 
@@ -122,7 +122,7 @@ Therefore the one-point compactification of $\ZZ_{+}$ is homeomorphic with $Y$.
 
 ::: pf-proof
 
-By step [](#locally-compact){.pf-ref} the space $\ZZ_{+}$ is a locally compact Hausdorff space that is not compact, so it has a one-point compactification $\ZZ_{+}^{+}$, and $X$ is a locally compact Hausdorff space, being homeomorphic to $\ZZ_{+}$ by step [](#homeo){.pf-ref}; its one-point compactification is $Y$ by step [](#one-point){.pf-ref}. Exercise 29.5 (printed p. 186) says a homeomorphism of locally compact Hausdorff spaces extends to a homeomorphism of their one-point compactifications, so the homeomorphism $f$ of step [](#homeo){.pf-ref} extends to one, and $\ZZ_{+}^{+}$ is homeomorphic with $Y$.
+By step [](#locally-compact){.pf-ref} the space $\ZZ_{+}$ is a locally compact Hausdorff space that is not compact, so it has a one-point compactification $\ZZ_{+}^{+}$, and $X$ is a locally compact Hausdorff space, being homeomorphic to $\ZZ_{+}$ by step [](#homeo){.pf-ref}; its one-point compactification is $Y$ by step [](#one-point){.pf-ref}. Exercise 29.5 says a homeomorphism of locally compact Hausdorff spaces extends to a homeomorphism of their one-point compactifications, so the homeomorphism $f$ of step [](#homeo){.pf-ref} extends to one, and $\ZZ_{+}^{+}$ is homeomorphic with $Y$.
 
 :::
 

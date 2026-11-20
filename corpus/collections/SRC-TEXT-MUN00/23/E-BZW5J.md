@@ -35,7 +35,7 @@ Show that if $A \cap A_\alpha \neq \varnothing$ for all $\alpha$, then $A \cup (
 
 ::: {.solution}
 
-The argument is **"positron0802"**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.3, PDF p. 2 (`tmp/sources/munkres-solutions-positron-ch3.pdf`); its two applications of Theorem 23.3 are the ones below, and the statement was checked against Munkres, *Topology* (2000), §23 Exercise 3, printed p. 152, with Theorem 23.3 on printed p. 150.
+The argument is **"positron0802"**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.3, PDF p. 2 (`tmp/sources/munkres-solutions-positron-ch3.pdf`); its two applications of Theorem 23.3 are the ones below, and the statement was checked against Munkres, *Topology* (2000), §23 Exercise 3, with Theorem 23.3 on printed p. 150.
 
 ::: pf
 
@@ -43,7 +43,7 @@ The argument is **"positron0802"**, *Solutions to Topology, Chapter 3* (1 Januar
 For every $\alpha$ the set $A\cup A_{\alpha}$ is connected.
 
 ::: pf-proof
-$A$ and $A_{\alpha}$ are connected subspaces of $X$ and $A\cap A_{\alpha}\neq\varnothing$ by hypothesis, so $A\cup A_{\alpha}$ is a union of connected subspaces with a common point and is connected by Theorem 23.3 (printed p. 150).
+$A$ and $A_{\alpha}$ are connected subspaces of $X$ and $A\cap A_{\alpha}\neq\varnothing$ by hypothesis, so $A\cup A_{\alpha}$ is a union of connected subspaces with a common point and is connected by Theorem 23.3.
 :::
 
 :::
@@ -70,7 +70,7 @@ A point of the left side lies in $A$ or in some $A_{\alpha}$, hence in the right
 Therefore $A\cup\bigcup_{\alpha}A_{\alpha}$ is connected.
 
 ::: pf-proof
-By steps [](#pairs-connected){.pf-ref} and [](#common-point){.pf-ref} it is, up to the rewriting of step [](#union-identity){.pf-ref}, a union of connected subspaces of $X$ that all contain the point $a_{0}$, so Theorem 23.3 (printed p. 150) makes it connected.
+By steps [](#pairs-connected){.pf-ref} and [](#common-point){.pf-ref} it is, up to the rewriting of step [](#union-identity){.pf-ref}, a union of connected subspaces of $X$ that all contain the point $a_{0}$, so Theorem 23.3 makes it connected.
 :::
 
 :::

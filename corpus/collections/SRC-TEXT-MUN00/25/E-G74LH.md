@@ -49,7 +49,7 @@ Show that every connected open set in $X$ is path connected.
 ::: {.solution}
 The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 25.4, PDF p. 9** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps; one step of it is supplied, where that text passes from "each path component of $U$ is open in $U$" to "thus each path component is both open and closed in $U$" without saying why a path component is closed, which is false in general.
 
-Throughout, $X$ is locally path connected: at each point and for each neighbourhood $U$ of it there is a path-connected neighbourhood contained in $U$ (§25, printed p. 161), and $U$ is an open connected subset of $X$.
+Throughout, $X$ is locally path connected: at each point and for each neighbourhood $U$ of it there is a path-connected neighbourhood contained in $U$ (§25), and $U$ is an open connected subset of $X$.
 
 ::: pf
 
@@ -57,7 +57,7 @@ Throughout, $X$ is locally path connected: at each point and for each neighbourh
 Each path component of $U$ is open in $U$.
 
 ::: pf-proof
-Theorem 25.4 (printed p. 161) states that $X$ is locally path connected if and only if for every open set $V$ of $X$ each path component of $V$ is open in $X$. Applying it to the open set $U$ gives that a path component $P$ of $U$ is open in $X$, and a set open in $X$ and contained in $U$ is open in the subspace $U$.
+Theorem 25.4 states that $X$ is locally path connected if and only if for every open set $V$ of $X$ each path component of $V$ is open in $X$. Applying it to the open set $U$ gives that a path component $P$ of $U$ is open in $X$, and a set open in $X$ and contained in $U$ is open in the subspace $U$.
 :::
 
 :::

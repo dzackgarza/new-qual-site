@@ -65,7 +65,7 @@ Show that for a $T_1$ space $X$, countable compactness is equivalent to limit po
 ::: {.solution}
 The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.4, PDF pp. 18--19** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps and following the printed hint; one step it leaves implicit is supplied below, the infinitude of the sequence chosen against the cover.
 
-Throughout, $X$ is a space; it is countably compact when every countable open cover has a finite subcover, and limit point compact when every infinite subset has a limit point (§28, printed p. 178, where both definitions are printed). The exercise is §28 Exercise 4 (printed p. 181), and the form of the $T_1$ axiom used is that of Exercise 17.15 (printed p. 101): any two distinct points have neighbourhoods each omitting the other.
+Throughout, $X$ is a space; it is countably compact when every countable open cover has a finite subcover, and limit point compact when every infinite subset has a limit point (§28, where both definitions are printed). The exercise is §28 Exercise 4, and the form of the $T_1$ axiom used is that of Exercise 17.15: any two distinct points have neighbourhoods each omitting the other.
 
 ::: pf
 
@@ -123,7 +123,7 @@ $\{U_1,\dots,U_n\}$ is a finite subcollection, so it does not cover $X$ and $x_n
 A limit point $y$ of $A$ gives a neighbourhood meeting $A$ in nothing, which is impossible.
 
 ::: pf-proof
-$A$ is infinite, so limit point compactness gives a limit point $y$; since $\{U_n\}$ covers $X$, $y\in U_N$ for some $N$. The limit point $y$ may itself be one of the points $x_i$, so the neighbourhood below is built only over the indices with $x_i\ne y$: for each $i\le N$ with $x_i\ne y$ the $T_1$ axiom gives an open neighbourhood $V_i$ of $y$ with $x_i\notin V_i$ (Exercise 17.15, printed p. 101), and we put
+$A$ is infinite, so limit point compactness gives a limit point $y$; since $\{U_n\}$ covers $X$, $y\in U_N$ for some $N$. The limit point $y$ may itself be one of the points $x_i$, so the neighbourhood below is built only over the indices with $x_i\ne y$: for each $i\le N$ with $x_i\ne y$ the $T_1$ axiom gives an open neighbourhood $V_i$ of $y$ with $x_i\notin V_i$ (Exercise 17.15), and we put
 $$
 W=\Big(\bigcap_{i\le N,\ x_i\ne y}V_i\Big)\cap U_N,
 $$

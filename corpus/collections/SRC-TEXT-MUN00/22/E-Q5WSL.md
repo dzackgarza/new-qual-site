@@ -68,7 +68,7 @@ Show that the following are topological groups:
 ::: {.solution}
 The argument is the retained published solution, **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise TG.2, printed pp. 260--264** (`tmp/sources/munkres-solutions-whitman.pdf`), restructured into steps, with the continuity statements cited by their page in Munkres.
 
-A topological group is a group that is also a topological space satisfying the $T_1$ axiom, in which multiplication $G\times G\to G$ and inversion $G\to G$ are continuous (Supplementary Exercises: Topological Groups, printed p. 145); the exercise is Exercise 2 there, printed p. 145. In each part below, the group axioms are the familiar ones for the operation named and are not re-derived; what is checked is $T_1$ and the continuity of the two maps. Three tools are used repeatedly: a subspace of a metric space is $T_1$; sums, differences, products and quotients of continuous real-valued functions are continuous, and a quotient $f/g$ is continuous where $g$ never vanishes (Theorem 21.5, printed p. 131); and a map into a product is continuous exactly when its component functions are (Theorem 18.4, printed p. 110), the product of subspaces carrying the subspace topology of the product (Theorem 16.3, printed p. 89).
+A topological group is a group that is also a topological space satisfying the $T_1$ axiom, in which multiplication $G\times G\to G$ and inversion $G\to G$ are continuous (Supplementary Exercises: Topological Groups, printed p. 145); the exercise is Exercise 2 there. In each part below, the group axioms are the familiar ones for the operation named and are not re-derived; what is checked is $T_1$ and the continuity of the two maps. Three tools are used repeatedly: a subspace of a metric space is $T_1$; sums, differences, products and quotients of continuous real-valued functions are continuous, and a quotient $f/g$ is continuous where $g$ never vanishes (Theorem 21.5); and a map into a product is continuous exactly when its component functions are (Theorem 18.4), the product of subspaces carrying the subspace topology of the product (Theorem 16.3).
 
 ::: pf
 
@@ -85,7 +85,7 @@ $\ZZ$ is a subspace of the metric space $\RR$, hence $T_1$. It is discrete, sinc
 (b) $(\RR,+)$ is a topological group.
 
 ::: pf-proof
-$\RR$ is a metric space, hence $T_1$. Addition $\RR\times\RR\to\RR$ is continuous (Exercise 21.12(a), printed p. 136), and negation $x\mapsto -x$ is an isometry of $\RR$, hence continuous.
+$\RR$ is a metric space, hence $T_1$. Addition $\RR\times\RR\to\RR$ is continuous (Exercise 21.12(a)), and negation $x\mapsto -x$ is an isometry of $\RR$, hence continuous.
 :::
 
 :::
@@ -94,7 +94,7 @@ $\RR$ is a metric space, hence $T_1$. Addition $\RR\times\RR\to\RR$ is continuou
 (c) $(\RR_+,\cdot)$ is a topological group.
 
 ::: pf-proof
-$\RR_+$ is the set of positive reals (printed p. 31), on which multiplication is an operation with identity $1$ and inverse $1/u$. As a subspace of the metric space $\RR$ it is $T_1$. Multiplication $\RR_+\times\RR_+\to\RR_+$ is the restriction of the continuous multiplication $\RR\times\RR\to\RR$ (Exercise 21.12(b), printed p. 136) to the subspace $\RR_+\times\RR_+$, which by Theorem 16.3 (printed p. 89) carries the product of the subspace topologies, so it is continuous. Inversion $u\mapsto 1/u$ is the restriction to $\RR_+$ of the continuous map $x\mapsto 1/x$ on $\RR-\{0\}$ (Exercise 21.12(c), printed p. 136), hence continuous.
+$\RR_+$ is the set of positive reals (printed p. 31), on which multiplication is an operation with identity $1$ and inverse $1/u$. As a subspace of the metric space $\RR$ it is $T_1$. Multiplication $\RR_+\times\RR_+\to\RR_+$ is the restriction of the continuous multiplication $\RR\times\RR\to\RR$ (Exercise 21.12(b)) to the subspace $\RR_+\times\RR_+$, which by Theorem 16.3 carries the product of the subspace topologies, so it is continuous. Inversion $u\mapsto 1/u$ is the restriction to $\RR_+$ of the continuous map $x\mapsto 1/x$ on $\RR-\{0\}$ (Exercise 21.12(c)), hence continuous.
 :::
 
 :::
@@ -107,7 +107,7 @@ $S^1$ is the group of complex numbers of modulus $1$, a subspace of $\CC=\RR^2$ 
 $$
 (x_1x_2-y_1y_2,\ x_1y_2+y_1x_2),
 $$
-and each of these two real-valued functions is continuous on $S^1\times S^1$ by Theorem 21.5 (printed p. 131), products and differences of the continuous coordinate functions; so the product map $S^1\times S^1\to S^1$ is continuous by Theorem 18.4 (printed p. 110). Inversion is $z\mapsto\overline{z}=(x,-y)$, the restriction to $S^1$ of the continuous map $z\mapsto\overline{z}$ of $\CC$, so it is continuous.
+and each of these two real-valued functions is continuous on $S^1\times S^1$ by Theorem 21.5, products and differences of the continuous coordinate functions; so the product map $S^1\times S^1\to S^1$ is continuous by Theorem 18.4. Inversion is $z\mapsto\overline{z}=(x,-y)$, the restriction to $S^1$ of the continuous map $z\mapsto\overline{z}$ of $\CC$, so it is continuous.
 :::
 
 :::
@@ -116,7 +116,7 @@ and each of these two real-valued functions is continuous on $S^1\times S^1$ by 
 (e) $(\mathrm{GL}(n),\cdot)$ is a topological group.
 
 ::: pf-proof
-$\mathrm{GL}(n)$ is the set of nonsingular matrices, a subspace of $\RR^{n^2}$ and hence $T_1$; it is even open there, being the preimage under the continuous determinant of $\RR-\{0\}$. Each entry of a product $AB$ is a finite sum of products of an entry of $A$ with an entry of $B$, hence a continuous real-valued function of the $2n^2$ entries by Theorem 21.5 (printed p. 131); so multiplication is continuous by Theorem 18.4 (printed p. 110). The inverse is $A^{-1}=\operatorname{adj}(A)/\det(A)$: the entries of the adjugate are polynomials in the entries of $A$ and $\det$ is such a polynomial, while $\det(A)\ne0$ on $\mathrm{GL}(n)$, so each entry of $A^{-1}$ is a quotient of continuous functions with nonzero denominator, hence continuous by Theorem 21.5 (printed p. 131), and inversion is continuous by Theorem 18.4.
+$\mathrm{GL}(n)$ is the set of nonsingular matrices, a subspace of $\RR^{n^2}$ and hence $T_1$; it is even open there, being the preimage under the continuous determinant of $\RR-\{0\}$. Each entry of a product $AB$ is a finite sum of products of an entry of $A$ with an entry of $B$, hence a continuous real-valued function of the $2n^2$ entries by Theorem 21.5; so multiplication is continuous by Theorem 18.4. The inverse is $A^{-1}=\operatorname{adj}(A)/\det(A)$: the entries of the adjugate are polynomials in the entries of $A$ and $\det$ is such a polynomial, while $\det(A)\ne0$ on $\mathrm{GL}(n)$, so each entry of $A^{-1}$ is a quotient of continuous functions with nonzero denominator, hence continuous by Theorem 21.5, and inversion is continuous by Theorem 18.4.
 :::
 
 :::

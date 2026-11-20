@@ -62,7 +62,7 @@ Show that a compact Hausdorff space $X$ is metrizable if it is locally metrizabl
 ::: {.solution}
 The argument is the retained published solution, **"Doug's World", *Munkres -- Topology -- Chapter 4 Solutions* (30 August 2017), Problem 34.7, printed p. 11** (`tmp/sources/munkres-solutions-dougsworld-ch4.pdf`), with the same proof at **dbFin, "Section 34: Problem 7 Solution"**, https://dbfin.com/topology/munkres/chapter-4/section-34-the-urysohn-metrization-theorem/problem-7-solution/ (read 2026-11-10); it is restructured into steps below. Both sources cite "Exercise 31.4" for the second countability of the closed metrizable piece, and Exercise 31.4 is about comparable topologies; the criterion they need is Exercise 30.4, which is what is cited here.
 
-Throughout, $X$ is compact Hausdorff and locally metrizable, and the exercise is §34 Exercise 7 (printed p. 218). Two facts about subspaces are used repeatedly: an open subspace of a second-countable space is second countable, and a subspace of a metrizable space is metrizable.
+Throughout, $X$ is compact Hausdorff and locally metrizable, and the exercise is §34 Exercise 7. Two facts about subspaces are used repeatedly: an open subspace of a second-countable space is second countable, and a subspace of a metrizable space is metrizable.
 
 ::: pf
 
@@ -70,7 +70,7 @@ Throughout, $X$ is compact Hausdorff and locally metrizable, and the exercise is
 $X$ is regular.
 
 ::: pf-proof
-Every compact Hausdorff space is normal (Theorem 32.3, printed p. 202), and its proof records the preceding step, that such a space is regular; for the form used below, regularity says that for a point $x$ and a neighbourhood $U$ of $x$ there is an open $V$ with $x\in V\subset\closure V\subset U$ (Lemma 31.1(a), printed p. 196).
+Every compact Hausdorff space is normal (Theorem 32.3), and its proof records the preceding step, that such a space is regular; for the form used below, regularity says that for a point $x$ and a neighbourhood $U$ of $x$ there is an open $V$ with $x\in V\subset\closure V\subset U$ (Lemma 31.1(a)).
 :::
 
 :::
@@ -91,7 +91,7 @@ Local metrizability gives a neighbourhood $N_x$ of $x$ that is metrizable in the
 Each $V_x$ has a countable basis.
 
 ::: pf-proof
-$\closure{V_x}$ is closed in the compact space $X$, hence compact (Theorem 26.2, printed p. 165), and it is metrizable because it is a subspace of the metrizable space $N_x$. A compact metrizable space has a countable basis (Exercise 30.4, printed p. 194), and $\closure{V_x}$ is second countable. The set $V_x$ is open in $X$, so $V_x=V_x\cap\closure{V_x}$ is open in the subspace $\closure{V_x}$, and a subspace of a second-countable space is second countable; a countable basis of $V_x$ as a subspace consists of sets open in $V_x$.
+$\closure{V_x}$ is closed in the compact space $X$, hence compact (Theorem 26.2), and it is metrizable because it is a subspace of the metrizable space $N_x$. A compact metrizable space has a countable basis (Exercise 30.4), and $\closure{V_x}$ is second countable. The set $V_x$ is open in $X$, so $V_x=V_x\cap\closure{V_x}$ is open in the subspace $\closure{V_x}$, and a subspace of a second-countable space is second countable; a countable basis of $V_x$ as a subspace consists of sets open in $V_x$.
 :::
 
 :::
@@ -100,7 +100,7 @@ $\closure{V_x}$ is closed in the compact space $X$, hence compact (Theorem 26.2,
 Finitely many of the $V_x$ cover $X$.
 
 ::: pf-proof
-The family $\{V_x\}_{x\in X}$ is an open cover of $X$, and $X$ is compact, so finitely many members $V_{x_1},\ldots,V_{x_m}$ cover $X$ (Lemma 26.1, printed p. 164).
+The family $\{V_x\}_{x\in X}$ is an open cover of $X$, and $X$ is compact, so finitely many members $V_{x_1},\ldots,V_{x_m}$ cover $X$ (Lemma 26.1).
 :::
 
 :::
@@ -118,7 +118,7 @@ For each $i$ let $\mathcal{B}_i$ be a countable basis of the open subspace $V_{x
 $X$ is metrizable.
 
 ::: pf-proof
-$X$ is regular by step [](#regular){.pf-ref} and has a countable basis by step [](#countable-basis){.pf-ref}; the Urysohn metrization theorem (Theorem 34.1, printed p. 215) states that every regular space with a countable basis is metrizable.
+$X$ is regular by step [](#regular){.pf-ref} and has a countable basis by step [](#countable-basis){.pf-ref}; the Urysohn metrization theorem (Theorem 34.1) states that every regular space with a countable basis is metrizable.
 :::
 
 :::

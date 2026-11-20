@@ -55,7 +55,7 @@ What does compactness of $X$ under one of these topologies imply about compactne
 ::: {.solution}
 The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.1, PDF p. 12** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps; its counterexample for the converse in part (a) is replaced, the one given there being false.
 
-Throughout, $\mathcal{T}\subset\mathcal{T}'$ are topologies on a set $X$; a subset is called $\mathcal{T}$-compact when it is compact as a subspace of $(X,\mathcal{T})$. The exercise is §26 Exercise 1 (printed p. 170).
+Throughout, $\mathcal{T}\subset\mathcal{T}'$ are topologies on a set $X$; a subset is called $\mathcal{T}$-compact when it is compact as a subspace of $(X,\mathcal{T})$. The exercise is §26 Exercise 1.
 
 ::: pf
 
@@ -72,7 +72,7 @@ Let $Y\subset X$ be $\mathcal{T}'$-compact and let $\{U_\alpha\}$ be a cover of 
 (a) The converse fails: compactness of $(X,\mathcal{T})$ does not give compactness of $(X,\mathcal{T}')$.
 
 ::: pf-proof
-Take $X=\RR$ with $\mathcal{T}$ the finite complement topology, which is compact: given an open cover, one member of it has finite complement and the finitely many remaining points are covered by finitely many further members (Exercise 26.2(a), printed p. 170), and take $\mathcal{T}'$ the discrete topology, which contains $\mathcal{T}$ because every subset is discrete-open. The family of singletons is an open cover of $\RR$ in the discrete topology with no finite subcover, since $\RR$ is infinite, so $(\RR,\mathcal{T}')$ is not compact. A finite set would not serve as an example: every space with finitely many points is compact (Example 3, printed p. 164), under any topology.
+Take $X=\RR$ with $\mathcal{T}$ the finite complement topology, which is compact: given an open cover, one member of it has finite complement and the finitely many remaining points are covered by finitely many further members (Exercise 26.2(a)), and take $\mathcal{T}'$ the discrete topology, which contains $\mathcal{T}$ because every subset is discrete-open. The family of singletons is an open cover of $\RR$ in the discrete topology with no finite subcover, since $\RR$ is infinite, so $(\RR,\mathcal{T}')$ is not compact. A finite set would not serve as an example: every space with finitely many points is compact (Example 3), under any topology.
 :::
 
 :::
@@ -86,7 +86,7 @@ Take $X=\RR$ with $\mathcal{T}$ the finite complement topology, which is compact
 Every $\mathcal{T}'$-closed subset of $X$ is $\mathcal{T}$-closed.
 
 ::: pf-proof
-Let $B$ be $\mathcal{T}'$-closed. Then $B$ is a closed subspace of the compact space $(X,\mathcal{T}')$, hence $\mathcal{T}'$-compact (Theorem 26.2, printed p. 165), hence $\mathcal{T}$-compact by step [](#coarser){.pf-ref}; and a compact subspace of the Hausdorff space $(X,\mathcal{T})$ is $\mathcal{T}$-closed (Theorem 26.3, printed p. 165).
+Let $B$ be $\mathcal{T}'$-closed. Then $B$ is a closed subspace of the compact space $(X,\mathcal{T}')$, hence $\mathcal{T}'$-compact (Theorem 26.2), hence $\mathcal{T}$-compact by step [](#coarser){.pf-ref}; and a compact subspace of the Hausdorff space $(X,\mathcal{T})$ is $\mathcal{T}$-closed (Theorem 26.3).
 :::
 
 :::

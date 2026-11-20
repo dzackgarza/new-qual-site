@@ -45,7 +45,7 @@ Let $X$ be normal and let $A,B\subseteq X$ be disjoint closed sets; the goal is 
 Define $f:A\cup B\to[-1,1]$ by $f(a)=0$ for $a\in A$ and $f(b)=1$ for $b\in B$. Then $f$ is continuous and $A\cup B$ is closed in $X$.
 
 ::: pf-proof
-$A$ and $B$ are disjoint and closed in $X$, so each is closed in the subspace $A\cup B$, and each is also open in it: $A=(A\cup B)\setminus B$ and $B=(A\cup B)\setminus A$ are complements of closed sets of the subspace. The restrictions $f\restriction_A$ and $f\restriction_B$ are constant, hence continuous, and they agree on $A\cap B=\varnothing$ vacuously; so $f$ is continuous by the pasting lemma (Theorem 18.3, printed p. 108) applied to the two closed subsets $A$, $B$ of $A\cup B$. A union of two closed sets is closed, so $A\cup B$ is closed in $X$.
+$A$ and $B$ are disjoint and closed in $X$, so each is closed in the subspace $A\cup B$, and each is also open in it: $A=(A\cup B)\setminus B$ and $B=(A\cup B)\setminus A$ are complements of closed sets of the subspace. The restrictions $f\restriction_A$ and $f\restriction_B$ are constant, hence continuous, and they agree on $A\cap B=\varnothing$ vacuously; so $f$ is continuous by the pasting lemma (Theorem 18.3) applied to the two closed subsets $A$, $B$ of $A\cup B$. A union of two closed sets is closed, so $A\cup B$ is closed in $X$.
 :::
 
 :::
@@ -54,7 +54,7 @@ $A$ and $B$ are disjoint and closed in $X$, so each is closed in the subspace $A
 $f$ extends to a continuous $F:X\to[-1,1]$.
 
 ::: pf-proof
-$X$ is normal, $A\cup B$ is a closed subset of $X$ by step [](#model){.pf-ref}, and $f$ takes values in the closed interval $[-1,1]$; so the Tietze extension theorem (Theorem 35.1, printed p. 219) gives a continuous $F:X\to[-1,1]$ with $F\restriction_{A\cup B}=f$.
+$X$ is normal, $A\cup B$ is a closed subset of $X$ by step [](#model){.pf-ref}, and $f$ takes values in the closed interval $[-1,1]$; so the Tietze extension theorem (Theorem 35.1) gives a continuous $F:X\to[-1,1]$ with $F\restriction_{A\cup B}=f$.
 :::
 
 :::
@@ -63,7 +63,7 @@ $X$ is normal, $A\cup B$ is a closed subset of $X$ by step [](#model){.pf-ref}, 
 $u=t\circ F:X\to[0,1]$, where $t(s)=\min\theset{1,\max\theset{0,s}}$, is continuous, with $u(A)=0$ and $u(B)=1$.
 
 ::: pf-proof
-$t:\RR\to[0,1]$ is continuous, being built from the continuous maps $\max\theset{0,s}$ and $\min\theset{1,s}$; so $u$ is continuous (Theorem 18.2(c), printed p. 107) and takes values in $[0,1]$. For $a\in A$, $F(a)=f(a)=0$ and $t(0)=0$, so $u(a)=0$; for $b\in B$, $F(b)=1$ and $t(1)=1$, so $u(b)=1$.
+$t:\RR\to[0,1]$ is continuous, being built from the continuous maps $\max\theset{0,s}$ and $\min\theset{1,s}$; so $u$ is continuous (Theorem 18.2(c)) and takes values in $[0,1]$. For $a\in A$, $F(a)=f(a)=0$ and $t(0)=0$, so $u(a)=0$; for $b\in B$, $F(b)=1$ and $t(1)=1$, so $u(b)=1$.
 :::
 
 :::

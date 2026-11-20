@@ -45,7 +45,7 @@ audit:
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 3.10, printed pp. 28--30** (`tmp/sources/munkres-solutions-whitman.pdf`); part (a) is his, and part (b) is his with the square completions written out below. The statement is Munkres, *Topology*, 2nd ed. (2000), §3 Exercise 10, printed p. 29. Throughout, $\abs{t}<1$ gives $t^2<1$ and hence $1-t^2>0$.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 3.10, printed pp. 28--30** (`tmp/sources/munkres-solutions-whitman.pdf`); part (a) is his, and part (b) is his with the square completions written out below. The statement is Munkres, *Topology*, 2nd ed. (2000), §3 Exercise 10. Throughout, $\abs{t}<1$ gives $t^2<1$ and hence $1-t^2>0$.
 
 ::: pf
 

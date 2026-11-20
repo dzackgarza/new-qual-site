@@ -43,7 +43,7 @@ Show by means of an example that $X$ and $Y$ need not be homeomorphic.
 
 ::: {.solution}
 
-The three parts follow the retained solution of **"positron0802"**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.1, PDF p. 3 (`tmp/sources/munkres-solutions-positron-ch3.pdf`); part (a) is reorganised below around the points whose removal leaves a connected space, which is what the book's hint points at. The statement was checked against Munkres, *Topology* (2000), §24 Exercise 1, printed p. 157, with Corollary 24.2 on printed p. 154 and Example 4 on printed p. 156.
+The three parts follow the retained solution of **"positron0802"**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.1, PDF p. 3 (`tmp/sources/munkres-solutions-positron-ch3.pdf`); part (a) is reorganised below around the points whose removal leaves a connected space, which is what the book's hint points at. The statement was checked against Munkres, *Topology* (2000), §24 Exercise 1, with Corollary 24.2 on printed p. 154 and Example 4 on printed p. 156.
 
 ::: pf
 
@@ -65,7 +65,7 @@ The restriction of a homeomorphism to a subspace and its image is a homeomorphis
 The numbers of points whose removal leaves a connected space are $0$ for $(0,1)$, $1$ for $(0,1]$, and $2$ for $[0,1]$.
 
 ::: pf-proof
-In $(0,1)$, deleting $p$ leaves $(0,p)\cup(p,1)$, two nonempty disjoint sets open in the subspace, so no deletion leaves a connected space. In $(0,1]$, deleting $1$ leaves $(0,1)$, which is connected by Corollary 24.2 (printed p. 154), while deleting $p\neq1$ leaves $(0,p)\cup(p,1]$ with both members nonempty and open in the subspace. In $[0,1]$, deleting $0$ leaves $(0,1]$ and deleting $1$ leaves $(0,1)$, both connected by Corollary 24.2, while deleting $p$ with $0<p<1$ leaves $[0,p)\cup(p,1]$, again two nonempty disjoint sets open in the subspace.
+In $(0,1)$, deleting $p$ leaves $(0,p)\cup(p,1)$, two nonempty disjoint sets open in the subspace, so no deletion leaves a connected space. In $(0,1]$, deleting $1$ leaves $(0,1)$, which is connected by Corollary 24.2, while deleting $p\neq1$ leaves $(0,p)\cup(p,1]$ with both members nonempty and open in the subspace. In $[0,1]$, deleting $0$ leaves $(0,1]$ and deleting $1$ leaves $(0,1)$, both connected by Corollary 24.2, while deleting $p$ with $0<p<1$ leaves $[0,p)\cup(p,1]$, again two nonempty disjoint sets open in the subspace.
 :::
 
 :::
@@ -96,7 +96,7 @@ Take $X=(0,1)$, $Y=(0,1]$. The inclusion $f\colon X\to Y$, $f(x)=x$, is continuo
 (c) $\RR^{n}$ and $\RR$ are not homeomorphic when $n>1$.
 
 ::: pf-proof
-Suppose $h\colon\RR^{n}\to\RR$ were a homeomorphism and put $q\coloneqq h(0)$; by step [](#cut-transport){.pf-ref} it would restrict to a homeomorphism $\RR^{n}-\theset{0}\to\RR-\theset{q}$. But $\RR^{n}-\theset{0}$ is path connected for $n>1$ by Example 4 (printed p. 156), hence connected, while $\RR-\theset{q}=(-\infty,q)\cup(q,\infty)$ is a union of two nonempty disjoint open sets and is disconnected. A homeomorphism preserves connectedness, so no such $h$ exists.
+Suppose $h\colon\RR^{n}\to\RR$ were a homeomorphism and put $q\coloneqq h(0)$; by step [](#cut-transport){.pf-ref} it would restrict to a homeomorphism $\RR^{n}-\theset{0}\to\RR-\theset{q}$. But $\RR^{n}-\theset{0}$ is path connected for $n>1$ by Example 4, hence connected, while $\RR-\theset{q}=(-\infty,q)\cup(q,\infty)$ is a union of two nonempty disjoint open sets and is disconnected. A homeomorphism preserves connectedness, so no such $h$ exists.
 :::
 
 :::

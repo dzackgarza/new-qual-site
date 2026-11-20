@@ -47,7 +47,7 @@ Let $G$ be a topological group, $H$ a subspace of $G$ that is also a subgroup, a
 $f$ is continuous, $\overline{H\times H}=\overline H\times\overline H$ in $G\times G$, a continuous map sends closures into closures of images, and a subset of a closure lies in the closure of a subset: $A\subseteq B$ implies $\overline A\subseteq\overline B$.
 
 ::: pf-proof
-$f=m\circ(\mathrm{id}\times\iota)$ is a composite of the continuous multiplication and inversion of $G$, hence continuous (Theorem 18.2(c), printed p. 107). The closure identity is Exercise 17.9 (printed p. 101). For a continuous $f$ and any $A$ one has $f(\overline A)\subseteq\overline{f(A)}$ (Theorem 18.1(2), printed p. 104), and $A\subseteq B$ implies $\overline A\subseteq\overline B$ (Exercise 17.6(a), printed p. 101).
+$f=m\circ(\mathrm{id}\times\iota)$ is a composite of the continuous multiplication and inversion of $G$, hence continuous (Theorem 18.2(c)). The closure identity is Exercise 17.9. For a continuous $f$ and any $A$ one has $f(\overline A)\subseteq\overline{f(A)}$ (Theorem 18.1(2)), and $A\subseteq B$ implies $\overline A\subseteq\overline B$ (Exercise 17.6(a)).
 :::
 
 :::
@@ -56,7 +56,7 @@ $f=m\circ(\mathrm{id}\times\iota)$ is a composite of the continuous multiplicati
 $H$ and $\overline H$ satisfy the $T_{1}$ axiom.
 
 ::: pf-proof
-$G$ satisfies it, and a subspace of a $T_{1}$ space does: for distinct $x,y$ in the subspace there is a neighbourhood of $x$ in $G$ missing $y$, whose trace is a neighbourhood of $x$ in the subspace missing $y$, and symmetrically (Exercise 17.15, printed p. 101).
+$G$ satisfies it, and a subspace of a $T_{1}$ space does: for distinct $x,y$ in the subspace there is a neighbourhood of $x$ in $G$ missing $y$, whose trace is a neighbourhood of $x$ in the subspace missing $y$, and symmetrically (Exercise 17.15).
 :::
 
 :::
@@ -101,7 +101,7 @@ By step [](#closure-inside){.pf-ref} the set $\overline H$ satisfies the criteri
 The multiplication and inversion of $H$, and of $\overline H$, are continuous in the subspace topology.
 
 ::: pf-proof
-The multiplication of $G$ is a continuous map $G\times G\to G$; on $H$ the multiplication is the composite of the continuous map $H\times H\to G\times G$, $(x,y)\mapsto(x,y)$, with it, so it is continuous (Theorem 18.2(c), printed p. 107), and it is the restriction to the subspace $H\times H$ of $G\times G$ (Theorem 18.2(d), printed p. 107). The same applies with $\overline H$ in place of $H$, and the inversion of $H$ and of $\overline H$ is the restriction of the continuous inversion of $G$ to that subspace.
+The multiplication of $G$ is a continuous map $G\times G\to G$; on $H$ the multiplication is the composite of the continuous map $H\times H\to G\times G$, $(x,y)\mapsto(x,y)$, with it, so it is continuous (Theorem 18.2(c)), and it is the restriction to the subspace $H\times H$ of $G\times G$ (Theorem 18.2(d)). The same applies with $\overline H$ in place of $H$, and the inversion of $H$ and of $\overline H$ is the restriction of the continuous inversion of $G$ to that subspace.
 :::
 
 :::

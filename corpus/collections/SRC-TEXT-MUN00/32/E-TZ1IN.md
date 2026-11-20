@@ -50,9 +50,9 @@ Show that $X$ is completely normal if and only if for every pair $A, B$ of separ
 
 The argument follows **"Doug's World", "Munkres - Topology - Chapter 4 Solutions" (30 August 2017), the second item printed under the heading "Problem 32.6", printed pp. 6--7** (`tmp/sources/munkres-solutions-dougsworld-ch4.pdf`), whose two directions these are, with the ambient-and-subspace closures separated as below.
 
-The exercise as printed needs one hypothesis the statement leaves implicit, and the solution names it: Munkres' *normal* requires one-point sets to be closed (§31, printed p. 195), so the implication from the separated-sets condition back to complete normality requires one-point sets to be closed in $X$. Without it the condition is vacuous on some spaces that are not normal: in the two-point indiscrete space no two nonempty sets are separated, both closures being the whole space, yet that space is not normal, its points not being closed, and it is a subspace of itself. The forward implication needs no such hypothesis, and with one-point sets closed the two are equivalent, which is the content of the exercise for the spaces the book considers.
+The exercise as printed needs one hypothesis the statement leaves implicit, and the solution names it: Munkres' *normal* requires one-point sets to be closed (§31), so the implication from the separated-sets condition back to complete normality requires one-point sets to be closed in $X$. Without it the condition is vacuous on some spaces that are not normal: in the two-point indiscrete space no two nonempty sets are separated, both closures being the whole space, yet that space is not normal, its points not being closed, and it is a subspace of itself. The forward implication needs no such hypothesis, and with one-point sets closed the two are equivalent, which is the content of the exercise for the spaces the book considers.
 
-The statement was checked against Munkres, *Topology* (2000), §32 Exercise 6, printed p. 205, with the definition of normality in §31 (printed p. 195) and Theorems 17.2 and 17.4. Throughout, $X$ is a space, $\overline{A}$ is the closure of $A$ in $X$, $\overline{A}^{Y}$ is its closure in a subspace $Y$, and $A$ and $B$ are *separated* when $\overline{A}\cap B=\varnothing$ and $A\cap\overline{B}=\varnothing$.
+The statement was checked against Munkres, *Topology* (2000), §32 Exercise 6, with the definition of normality in §31 and Theorems 17.2 and 17.4. Throughout, $X$ is a space, $\overline{A}$ is the closure of $A$ in $X$, $\overline{A}^{Y}$ is its closure in a subspace $Y$, and $A$ and $B$ are *separated* when $\overline{A}\cap B=\varnothing$ and $A\cap\overline{B}=\varnothing$.
 
 ::: pf
 
@@ -106,7 +106,7 @@ $U^{\prime}$ and $V^{\prime}$ are open in $X$.
 
 ::: pf-proof
 
-$Y$ is open in $X$ by step [](#closed-in-Y){.pf-ref}, and a set open in an open subspace is open in the space: by the definition of the subspace topology (§16, printed p. 88) $U^{\prime}=Y\cap O$ for some open $O\subset X$, and that intersection of open sets is open.
+$Y$ is open in $X$ by step [](#closed-in-Y){.pf-ref}, and a set open in an open subspace is open in the space: by the definition of the subspace topology (§16) $U^{\prime}=Y\cap O$ for some open $O\subset X$, and that intersection of open sets is open.
 
 :::
 
@@ -190,7 +190,7 @@ Every subspace $Y$ of $X$ is normal, so $X$ is completely normal.
 
 ::: pf-proof
 
-Let $A,B$ be disjoint closed subsets of $Y$. Steps [](#traces){.pf-ref} and [](#points){.pf-ref} give disjoint open sets of $Y$ containing them and the closedness of one-point sets in $Y$; those are the two clauses of the definition of normality (§31, printed p. 195), so $Y$ is normal. As $Y$ was arbitrary, every subspace is normal.
+Let $A,B$ be disjoint closed subsets of $Y$. Steps [](#traces){.pf-ref} and [](#points){.pf-ref} give disjoint open sets of $Y$ containing them and the closedness of one-point sets in $Y$; those are the two clauses of the definition of normality (§31), so $Y$ is normal. As $Y$ was arbitrary, every subspace is normal.
 
 :::
 

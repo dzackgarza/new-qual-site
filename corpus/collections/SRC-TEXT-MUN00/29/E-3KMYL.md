@@ -63,7 +63,7 @@ Let $\theset{X_\alpha}$ be an indexed family of nonempty spaces.
 ::: {.solution}
 The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.2, PDF pp. 21--22** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps.
 
-Throughout, a space is locally compact at a point when some compact subspace contains a neighbourhood of that point (Munkres, *Topology* (2000), §29, printed p. 182), the topologies on products are the product topologies, and $\pi_\beta$ is the projection to the factor $X_\beta$.
+Throughout, a space is locally compact at a point when some compact subspace contains a neighbourhood of that point (Munkres, *Topology* (2000), §29), the topologies on products are the product topologies, and $\pi_\beta$ is the projection to the factor $X_\beta$.
 
 ::: pf
 
@@ -85,7 +85,7 @@ Local compactness at $\mathbf{x}$ supplies a compact $C$ containing a neighbourh
 $X_\beta$ is compact for every $\beta\notin F$.
 
 ::: pf-proof
-The projection $\pi_\beta$ is continuous, so $\pi_\beta(C)$ is compact (Theorem 26.5, printed p. 166), and it is a subspace of $X_\beta$. On the other hand $U_\beta=X_\beta$ for $\beta\notin F$, and $\pi_\beta\big(\prod_\alpha U_\alpha\big)=U_\beta$, so $X_\beta\subset\pi_\beta(C)$. Hence $X_\beta=\pi_\beta(C)$ is compact, and a compact space is locally compact at each of its points (printed p. 182).
+The projection $\pi_\beta$ is continuous, so $\pi_\beta(C)$ is compact (Theorem 26.5), and it is a subspace of $X_\beta$. On the other hand $U_\beta=X_\beta$ for $\beta\notin F$, and $\pi_\beta\big(\prod_\alpha U_\alpha\big)=U_\beta$, so $X_\beta\subset\pi_\beta(C)$. Hence $X_\beta=\pi_\beta(C)$ is compact, and a compact space is locally compact at each of its points (printed p. 182).
 :::
 
 :::
@@ -121,7 +121,7 @@ Let $F$ be the finite set of indices at which $X_\alpha$ is not compact. For $\a
 $\prod_\alpha C_\alpha$ is compact and contains $\prod_\alpha U_\alpha$, which is a neighbourhood of $\mathbf{x}$; hence the product is locally compact at $\mathbf{x}$.
 
 ::: pf-proof
-Each $C_\alpha$ is compact, so $\prod_\alpha C_\alpha$ is compact in the product topology by the Tychonoff theorem (Theorem 37.3, printed p. 234), which is the hypothesis of this part. Since $U_\alpha\subset C_\alpha$ for every $\alpha$, the product $\prod_\alpha U_\alpha$ lies in $\prod_\alpha C_\alpha$, and it is a basis element of the product topology because $U_\alpha=X_\alpha$ for all $\alpha$ outside the finite set $F$ of step [](#b-factors){.pf-ref}; it contains $\mathbf{x}$ since each $U_\alpha$ contains $x_\alpha$. As $\mathbf{x}$ was arbitrary, the product is locally compact.
+Each $C_\alpha$ is compact, so $\prod_\alpha C_\alpha$ is compact in the product topology by the Tychonoff theorem (Theorem 37.3), which is the hypothesis of this part. Since $U_\alpha\subset C_\alpha$ for every $\alpha$, the product $\prod_\alpha U_\alpha$ lies in $\prod_\alpha C_\alpha$, and it is a basis element of the product topology because $U_\alpha=X_\alpha$ for all $\alpha$ outside the finite set $F$ of step [](#b-factors){.pf-ref}; it contains $\mathbf{x}$ since each $U_\alpha$ contains $x_\alpha$. As $\mathbf{x}$ was arbitrary, the product is locally compact.
 :::
 
 :::

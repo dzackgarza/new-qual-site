@@ -37,7 +37,7 @@ Justify your answers.
 
 ::: {.solution}
 
-The two counterexamples are those of **"positron0802"**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.11, PDF p. 6 (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the statement was checked against Munkres, *Topology* (2000), §24 Exercise 11, printed p. 158, with the definition of connectedness on printed p. 148, Theorem 23.3 on printed p. 150, and Theorem 24.1 on printed p. 153. Interior and boundary are taken in the ambient space.
+The two counterexamples are those of **"positron0802"**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.11, PDF p. 6 (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the statement was checked against Munkres, *Topology* (2000), §24 Exercise 11, with the definition of connectedness on printed p. 148, Theorem 23.3 on printed p. 150, and Theorem 24.1 on printed p. 153. Interior and boundary are taken in the ambient space.
 
 ::: pf
 
@@ -50,7 +50,7 @@ A connected subspace of $\RR^{2}$ whose interior is not connected.
 Let $D_{0}$ be the closed unit disc about the origin and $D_{2}$ the closed unit disc about $2\times0$, and put $A\coloneqq D_{0}\cup D_{2}$. Then $A$ is connected.
 
 ::: pf-proof
-Each closed disc is path connected by straight-line paths and hence connected (printed p. 155), and $(1,0)\in D_{0}\cap D_{2}$; a union of connected subspaces with a common point is connected by Theorem 23.3 (printed p. 150).
+Each closed disc is path connected by straight-line paths and hence connected (printed p. 155), and $(1,0)\in D_{0}\cap D_{2}$; a union of connected subspaces with a common point is connected by Theorem 23.3.
 :::
 
 :::
@@ -81,7 +81,7 @@ The two open discs are nonempty, disjoint, and open in $\RR^{2}$, hence open in 
 A connected subspace of $\RR$ whose boundary is not connected.
 
 ::: pf-proof
-Let $A\coloneqq(0,1)\subset\RR$, which is connected by Theorem 24.1 (printed p. 153). Its closure is $[0,1]$ and the closure of its complement is $(-\infty,0]\cup[1,\infty)$, so $\operatorname{Bd}A=\theset{0,1}$ by the definition of the boundary (§17, printed p. 101). In the subspace $\theset{0,1}$ each of the one-point sets $\theset{0}$ and $\theset{1}$ is nonempty and open, and they are disjoint with union $\operatorname{Bd}A$, a separation.
+Let $A\coloneqq(0,1)\subset\RR$, which is connected by Theorem 24.1. Its closure is $[0,1]$ and the closure of its complement is $(-\infty,0]\cup[1,\infty)$, so $\operatorname{Bd}A=\theset{0,1}$ by the definition of the boundary (§17). In the subspace $\theset{0,1}$ each of the one-point sets $\theset{0}$ and $\theset{1}$ is nonempty and open, and they are disjoint with union $\operatorname{Bd}A$, a separation.
 :::
 
 :::
@@ -104,7 +104,7 @@ No interval of positive length is contained in $\QQ$, since every such interval 
 $\operatorname{Int}\QQ$ and $\operatorname{Bd}\QQ$ are connected while $\QQ$ is not.
 
 ::: pf-proof
-$\operatorname{Bd}\QQ=\RR$ is connected by Theorem 24.1 (printed p. 153). The empty space is connected: a separation is a pair of disjoint nonempty open sets with union the space (§23, printed p. 148), and no nonempty set has union $\varnothing$. The space $\QQ$ is not connected: choosing rationals $p<q$ and an irrational $a$ with $p<a<q$, the sets $\QQ\cap(-\infty,a)$ and $\QQ\cap(a,\infty)$ are nonempty, disjoint, open in $\QQ$, and cover $\QQ$, which is the argument of Example 4 on printed p. 149.
+$\operatorname{Bd}\QQ=\RR$ is connected by Theorem 24.1. The empty space is connected: a separation is a pair of disjoint nonempty open sets with union the space (§23), and no nonempty set has union $\varnothing$. The space $\QQ$ is not connected: choosing rationals $p<q$ and an irrational $a$ with $p<a<q$, the sets $\QQ\cap(-\infty,a)$ and $\QQ\cap(a,\infty)$ are nonempty, disjoint, open in $\QQ$, and cover $\QQ$, which is the argument of Example 4 on printed p. 149.
 :::
 
 :::

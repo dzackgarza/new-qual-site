@@ -55,7 +55,7 @@ For what values of $a$ other than $a = 1/3$ (if any) does the proof go through?
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It is checked against the proof of the Tietze theorem, Munkres §35 Step 1, printed pp. 220--221, in which the interval $[-r,r]$ is cut into the three equal pieces $a=1/3$.
+The argument is the card's own; no retained solution set is cited on the card. It is checked against the proof of the Tietze theorem, Munkres §35 Step 1, in which the interval $[-r,r]$ is cut into the three equal pieces $a=1/3$.
 
 ::: pf
 

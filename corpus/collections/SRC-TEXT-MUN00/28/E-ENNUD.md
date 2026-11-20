@@ -56,7 +56,7 @@ Find an infinite subset of this space that has no limit point.
 ::: {.solution}
 The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.1, PDF p. 18** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps.
 
-Throughout, $[0,1]^\omega$ carries the uniform topology, whose metric is $\bar\rho(\mathbf{x},\mathbf{y})=\sup_i\min\{\abs{x_i-y_i},1\}$ (§20, printed p. 124), $Y=\{0,1\}^\omega$ is the set of sequences with every coordinate $0$ or $1$, and a limit point of $Y$ is a point whose every neighbourhood meets $Y$ in a point other than itself (§17, printed p. 97).
+Throughout, $[0,1]^\omega$ carries the uniform topology, whose metric is $\bar\rho(\mathbf{x},\mathbf{y})=\sup_i\min\{\abs{x_i-y_i},1\}$ (§20), $Y=\{0,1\}^\omega$ is the set of sequences with every coordinate $0$ or $1$, and a limit point of $Y$ is a point whose every neighbourhood meets $Y$ in a point other than itself (§17).
 
 ::: pf
 

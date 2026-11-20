@@ -59,7 +59,7 @@ audit:
 :::
 
 ::: {.solution}
-The argument is transcribed from the retained solution "Doug's World", *Munkres — Topology — Chapter 4 Solutions* (30 August 2017; the file names no author), Problem 33.2, printed p. 8 of the file (`tmp/sources/munkres-solutions-dougsworld-ch4.pdf`), with the countable-space-is-Lindelöf step stated and proved on the card. It is checked against Munkres, Topology (2000), §33 Exercise 2, printed p. 212, Urysohn's lemma (§33), Theorem 32.1 (regular Lindelöf implies normal) and the countability results of §30.
+The argument is transcribed from the retained solution "Doug's World", *Munkres — Topology — Chapter 4 Solutions* (30 August 2017; the file names no author), Problem 33.2, printed p. 8 of the file (`tmp/sources/munkres-solutions-dougsworld-ch4.pdf`), with the countable-space-is-Lindelöf step stated and proved on the card. It is checked against Munkres, Topology (2000), §33 Exercise 2, Urysohn's lemma (§33), Theorem 32.1 (regular Lindelöf implies normal) and the countability results of §30.
 
 ::: pf
 

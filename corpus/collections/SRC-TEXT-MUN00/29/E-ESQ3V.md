@@ -36,7 +36,7 @@ Show that $[0, 1]^\omega$ is not locally compact in the uniform topology.
 
 ::: {.solution}
 
-The contradiction is that of **"positron0802"**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.4, PDF p. 22 (`tmp/sources/munkres-solutions-positron-ch3.pdf`), and this card's earlier version followed it. One step of that argument is false and is replaced here: the open ball $B_{\bar\rho}(\mathbf{0},\varepsilon)\cap X$ is not the half-open box $[0,\varepsilon)^{\omega}$. A point of that box may have $\sup_{i}x_{i}=\varepsilon$ — for instance $x_{i}=\varepsilon\big(1-\frac{1}{i+1}\big)$ — and such a point is at distance exactly $\varepsilon$ from $\mathbf{0}$, hence outside the open ball. What is needed, and what is used below, is a strictly smaller closed box: for $0<\eta<\varepsilon$ the box $[0,\eta]^{\omega}$ does lie in the ball, so it lies in any compact set containing that ball. The statement was checked against Munkres, *Topology* (2000), §29 Exercise 4, printed p. 186, with §28 Exercise 1 on printed p. 181, Theorem 28.1 on printed p. 179, and Theorems 26.2 and 26.3 on printed p. 165.
+The contradiction is that of **"positron0802"**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.4, PDF p. 22 (`tmp/sources/munkres-solutions-positron-ch3.pdf`), and this card's earlier version followed it. One step of that argument is false and is replaced here: the open ball $B_{\bar\rho}(\mathbf{0},\varepsilon)\cap X$ is not the half-open box $[0,\varepsilon)^{\omega}$. A point of that box may have $\sup_{i}x_{i}=\varepsilon$ — for instance $x_{i}=\varepsilon\big(1-\frac{1}{i+1}\big)$ — and such a point is at distance exactly $\varepsilon$ from $\mathbf{0}$, hence outside the open ball. What is needed, and what is used below, is a strictly smaller closed box: for $0<\eta<\varepsilon$ the box $[0,\eta]^{\omega}$ does lie in the ball, so it lies in any compact set containing that ball. The statement was checked against Munkres, *Topology* (2000), §29 Exercise 4, with §28 Exercise 1 on printed p. 181, Theorem 28.1 on printed p. 179, and Theorems 26.2 and 26.3 on printed p. 165.
 
 Throughout, $X\coloneqq[0,1]^{\omega}$ carries the uniform metric $\bar\rho$, $\mathbf{0}$ is the zero sequence, and $\mathbf{e}_{n}$ is the sequence with $n$-th coordinate $1$ and all others $0$.
 
@@ -69,7 +69,7 @@ For $\mathbf{x}\in[0,\eta]^{\omega}$ every coordinate lies in $[0,\eta]$, so by 
 $[0,\eta]^{\omega}$ is closed in $X$.
 
 ::: pf-proof
-If a sequence of points of the box converges in $X$ with the uniform metric, then each coordinate sequence converges, because $\abs{x_{i}^{(k)}-x_{i}}\leq\bar\rho(\mathbf{x}^{(k)},\mathbf{x})$; each coordinate limit lies in the closed interval $[0,\eta]$, so the limit point lies in the box. A set containing the limit of every convergent sequence from it is closed in a metric space (Lemma 21.2, printed p. 130).
+If a sequence of points of the box converges in $X$ with the uniform metric, then each coordinate sequence converges, because $\abs{x_{i}^{(k)}-x_{i}}\leq\bar\rho(\mathbf{x}^{(k)},\mathbf{x})$; each coordinate limit lies in the closed interval $[0,\eta]$, so the limit point lies in the box. A set containing the limit of every convergent sequence from it is closed in a metric space (Lemma 21.2).
 :::
 
 :::
@@ -82,7 +82,7 @@ If a sequence of points of the box converges in $X$ with the uniform metric, the
 If $X$ were locally compact at $\mathbf{0}$, then $[0,\eta]^{\omega}$ is compact for some $\eta>0$.
 
 ::: pf-proof
-Local compactness at $\mathbf{0}$ gives a compact subspace $C$ of $X$ containing a neighbourhood $U$ of $\mathbf{0}$ (printed p. 182). Since the balls form a basis for the metric topology (§20, printed p. 119), there is $\varepsilon>0$ with $B_{\bar\rho}(\mathbf{0},\varepsilon)\subset U\subset C$; choose $\eta$ with $0<\eta<\varepsilon$, and note $\eta<1$. Step [](#box-in-ball){.pf-ref} then gives $[0,\eta]^{\omega}\subset C$. A compact subspace of the metric space $X$ is closed by Theorem 26.3 (printed p. 165), so $C$ is closed; $[0,\eta]^{\omega}$ is closed by step [](#box-in-ball){.pf-ref} and lies in the compact space $C$, so it is compact by Theorem 26.2 (printed p. 165).
+Local compactness at $\mathbf{0}$ gives a compact subspace $C$ of $X$ containing a neighbourhood $U$ of $\mathbf{0}$ (printed p. 182). Since the balls form a basis for the metric topology (§20), there is $\varepsilon>0$ with $B_{\bar\rho}(\mathbf{0},\varepsilon)\subset U\subset C$; choose $\eta$ with $0<\eta<\varepsilon$, and note $\eta<1$. Step [](#box-in-ball){.pf-ref} then gives $[0,\eta]^{\omega}\subset C$. A compact subspace of the metric space $X$ is closed by Theorem 26.3, so $C$ is closed; $[0,\eta]^{\omega}$ is closed by step [](#box-in-ball){.pf-ref} and lies in the compact space $C$, so it is compact by Theorem 26.2.
 :::
 
 :::
@@ -118,7 +118,7 @@ Let $\mathbf{y}\in[0,\eta]^{\omega}$ and suppose $\eta\mathbf{e}_{n}$ and $\eta\
 Therefore $[0,1]^{\omega}$ is not locally compact in the uniform topology.
 
 ::: pf-proof
-If it were locally compact at $\mathbf{0}$, step [](#compact-box){.pf-ref} would make $[0,\eta]^{\omega}$ compact for some $\eta>0$; but a compact space is limit point compact by Theorem 28.1 (printed p. 179), that is, every infinite subset of it has a limit point, whereas step [](#no-limit-point){.pf-ref} exhibits the infinite subset $E$ with none. This contradiction shows that $X$ is not locally compact at $\mathbf{0}$, hence not locally compact.
+If it were locally compact at $\mathbf{0}$, step [](#compact-box){.pf-ref} would make $[0,\eta]^{\omega}$ compact for some $\eta>0$; but a compact space is limit point compact by Theorem 28.1, that is, every infinite subset of it has a limit point, whereas step [](#no-limit-point){.pf-ref} exhibits the infinite subset $E$ with none. This contradiction shows that $X$ is not locally compact at $\mathbf{0}$, hence not locally compact.
 :::
 
 :::

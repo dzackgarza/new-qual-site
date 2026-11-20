@@ -89,7 +89,7 @@ Three types, using step [](#bijection){.pf-ref}. An open interval: $f\big((a,b)\
 $f$ and $f^{-1}$ are continuous.
 
 ::: pf-proof
-A map is continuous when the preimage of every basis element is open, since an open set is a union of basis elements (§18, printed p. 103). By step [](#basis){.pf-ref}, $f^{-1}$ of each basis element of $Y$ is a basis element of $X$, hence open, so $f$ is continuous; and $f$ of each basis element of $X$ is a basis element of $Y$, so $f^{-1}$ is continuous. Since $f$ is a bijection, this says $f$ is a homeomorphism.
+A map is continuous when the preimage of every basis element is open, since an open set is a union of basis elements (§18). By step [](#basis){.pf-ref}, $f^{-1}$ of each basis element of $Y$ is a basis element of $X$, hence open, so $f$ is continuous; and $f$ of each basis element of $X$ is a basis element of $Y$, so $f^{-1}$ is continuous. Since $f$ is a bijection, this says $f$ is a homeomorphism.
 
 :::
 

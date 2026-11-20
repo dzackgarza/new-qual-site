@@ -48,7 +48,7 @@ Give an example showing that a space can be completely normal, and satisfy the f
 
 ::: {.solution}
 
-The example is the one **Jesper Michael Moller**, *Solutions to exercises in Munkres*, S34 Exercise 34.2, page 1 of that file (`tmp/sources/munkres-solutions-poulsen-S34.pdf`) gives, namely the Sorgenfrey line; the list of properties is the card's, and the arguments for first countability, separability and non-metrizability are written out below. The statement was checked against Munkres, *Topology* (2000), §34 Exercise 2, printed p. 218.
+The example is the one **Jesper Michael Moller**, *Solutions to exercises in Munkres*, S34 Exercise 34.2, page 1 of that file (`tmp/sources/munkres-solutions-poulsen-S34.pdf`) gives, namely the Sorgenfrey line; the list of properties is the card's, and the arguments for first countability, separability and non-metrizability are written out below. The statement was checked against Munkres, *Topology* (2000), §34 Exercise 2.
 
 The Sorgenfrey line $\RR_{\ell}$ is $\RR$ with the topology having as basis the half-open intervals $[a,b)$ with $a<b$.
 
@@ -67,7 +67,7 @@ At $x$ the family $\{[x,x+1/n)\mid n\geq1\}$ is countable, each member is a basi
 $\RR_{\ell}$ is Lindelöf.
 
 ::: pf-proof
-This is stated by Munkres in Example 4 of §30 (printed p. 192), where $\RR_{\ell}$ is used as an example of a Lindelöf space whose square is not Lindelöf. The card cites it rather than reproving it. The stronger statement that every subspace of $\RR_{\ell}$ is Lindelöf is also true but is neither proved here nor needed for the exercise.
+This is stated by Munkres in Example 4 of §30, where $\RR_{\ell}$ is used as an example of a Lindelöf space whose square is not Lindelöf. The card cites it rather than reproving it. The stronger statement that every subspace of $\RR_{\ell}$ is Lindelöf is also true but is neither proved here nor needed for the exercise.
 :::
 
 :::

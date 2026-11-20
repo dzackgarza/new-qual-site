@@ -50,7 +50,7 @@ Show that every locally compact Hausdorff space is completely regular.
 
 The argument is the one of **Jesper Michael Moller, "Solutions to exercises in Munkres", file S33.pdf, Exercise 33.7, page 2 of the file** (`tmp/sources/munkres-solutions-poulsen-S33.pdf`), which runs through the one-point compactification, as does that of **"Doug's World", "Munkres - Topology - Chapter 4 Solutions", Problem 33.7, printed p. 9** (`tmp/sources/munkres-solutions-dougsworld-ch4.pdf`); the card applies Urysohn's lemma to the pair $\theset{x}$ and $A\cup\theset{\infty}$ directly instead of separating the pair by the normality of a subspace. One phrase of the earlier prose is replaced by the argument: it said $A\cup\theset{\infty}$ is closed in $X^{*}$ "because its complement $X-A$ is open in $X$, hence open in $X^{*}$ away from the point at infinity", which is right in substance and vague in expression, so the card now names the clause of Theorem 29.1 that puts an open set of $X$ into $X^{*}$.
 
-The statement was checked against Munkres, *Topology* (2000), §33 Exercise 7, printed p. 213, with the definition of complete regularity on printed p. 211, the Urysohn lemma (Theorem 33.1) on printed p. 207, Theorem 32.3 on printed p. 202 and Theorem 29.1 on printed p. 183, whose Step 2 describes the topology of $X^{*}$. Throughout, $X$ is a locally compact Hausdorff space, $X^{*}=X\cup\theset{\infty}$ is its one-point compactification, and complete regularity is as defined on printed p. 211: one-point sets are closed and each point can be separated from a closed set not containing it by a continuous map to $[0,1]$ taking the value $1$ at the point and $0$ on the set.
+The statement was checked against Munkres, *Topology* (2000), §33 Exercise 7, with the definition of complete regularity on printed p. 211, the Urysohn lemma (Theorem 33.1) on printed p. 207, Theorem 32.3 on printed p. 202 and Theorem 29.1 on printed p. 183, whose Step 2 describes the topology of $X^{*}$. Throughout, $X$ is a locally compact Hausdorff space, $X^{*}=X\cup\theset{\infty}$ is its one-point compactification, and complete regularity is as defined on printed p. 211: one-point sets are closed and each point can be separated from a closed set not containing it by a continuous map to $[0,1]$ taking the value $1$ at the point and $0$ on the set.
 
 ::: pf
 
@@ -60,7 +60,7 @@ $X^{*}$ exists and is a compact Hausdorff space in which $X$ is a subspace with 
 
 ::: pf-proof
 
-$X$ is locally compact Hausdorff, so Theorem 29.1 (printed p. 183) supplies a space $Y$ containing $X$ as a subspace, with $Y-X$ a single point and $Y$ compact Hausdorff; that space is $X^{*}$.
+$X$ is locally compact Hausdorff, so Theorem 29.1 supplies a space $Y$ containing $X$ as a subspace, with $Y-X$ a single point and $Y$ compact Hausdorff; that space is $X^{*}$.
 
 :::
 
@@ -72,7 +72,7 @@ Every set open in $X$ is open in $X^{*}$, and $X$ itself is open in $X^{*}$.
 
 ::: pf-proof
 
-By the construction in Step 2 of the proof of Theorem 29.1 (printed p. 184) the open sets of $X^{*}$ are (1) the sets $U$ that are open in $X$ and (2) the sets $X^{*}-C$ with $C$ a compact subspace of $X$. So an open set of $X$ is open in $X^{*}$ by clause (1), and $X$ is open in $X$ and therefore open in $X^{*}$ by the same clause.
+By the construction in Step 2 of the proof of Theorem 29.1 the open sets of $X^{*}$ are (1) the sets $U$ that are open in $X$ and (2) the sets $X^{*}-C$ with $C$ a compact subspace of $X$. So an open set of $X$ is open in $X^{*}$ by clause (1), and $X$ is open in $X$ and therefore open in $X^{*}$ by the same clause.
 
 :::
 
@@ -96,7 +96,7 @@ $\theset{x}$ and $A\cup\theset{\infty}$ are disjoint closed sets of $X^{*}$.
 
 ::: pf-proof
 
-$X^{*}$ is Hausdorff by step [](#exists){.pf-ref}, so its one-point sets are closed (Theorem 17.8, printed p. 99). The set $A\cup\theset{\infty}$ is closed by step [](#closed){.pf-ref}. They are disjoint because $x\in X-A$, so $x\notin A$, and $x\neq\infty$.
+$X^{*}$ is Hausdorff by step [](#exists){.pf-ref}, so its one-point sets are closed (Theorem 17.8). The set $A\cup\theset{\infty}$ is closed by step [](#closed){.pf-ref}. They are disjoint because $x\in X-A$, so $x\notin A$, and $x\neq\infty$.
 
 :::
 
@@ -108,7 +108,7 @@ $X^{*}$ is normal.
 
 ::: pf-proof
 
-A compact Hausdorff space is normal (Theorem 32.3, printed p. 202), and $X^{*}$ is compact Hausdorff by step [](#exists){.pf-ref}.
+A compact Hausdorff space is normal (Theorem 32.3), and $X^{*}$ is compact Hausdorff by step [](#exists){.pf-ref}.
 
 :::
 
@@ -120,7 +120,7 @@ There is a continuous $F\colon X^{*}\to[0,1]$ with $F=0$ on $A\cup\theset{\infty
 
 ::: pf-proof
 
-By the Urysohn lemma (Theorem 33.1, printed p. 207), in a normal space any two disjoint closed sets can be separated by a continuous map to $[0,1]$ taking the value $0$ on the first and $1$ on the second. Apply it to the disjoint closed sets of step [](#pair){.pf-ref}, with $A\cup\theset{\infty}$ first and $\theset{x}$ second.
+By the Urysohn lemma (Theorem 33.1), in a normal space any two disjoint closed sets can be separated by a continuous map to $[0,1]$ taking the value $0$ on the first and $1$ on the second. Apply it to the disjoint closed sets of step [](#pair){.pf-ref}, with $A\cup\theset{\infty}$ first and $\theset{x}$ second.
 
 :::
 
@@ -132,7 +132,7 @@ The restriction $f$ of $F$ to $X$ is continuous and satisfies $f=0$ on $A$ and $
 
 ::: pf-proof
 
-The restriction of a continuous map to a subspace is continuous (Theorem 18.2(d), printed p. 107). Both $x$ and every point of $A$ lie in $X$, so the values are those computed in step [](#urysohn){.pf-ref}.
+The restriction of a continuous map to a subspace is continuous (Theorem 18.2(d)). Both $x$ and every point of $A$ lie in $X$, so the values are those computed in step [](#urysohn){.pf-ref}.
 
 :::
 

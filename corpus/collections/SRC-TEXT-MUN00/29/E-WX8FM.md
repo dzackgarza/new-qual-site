@@ -46,7 +46,7 @@ Let $X_{1}^{+}=X_{1}\cup\theset{\infty_{1}}$ and $X_{2}^{+}=X_{2}\cup\theset{\in
 $X_{i}^{+}$ is compact and Hausdorff and contains $X_{i}$ as an open subspace, and a subset of $X_{i}^{+}$ that is closed in $X_{i}^{+}$ and misses $\infty_{i}$ is compact as a subset of $X_{i}$.
 
 ::: pf-proof
-The first two assertions are Theorem 29.1 (printed p. 183). If $C\subseteq X_{i}^{+}$ is closed in $X_{i}^{+}$ and $\infty_{i}\notin C$, then $C\subseteq X_{i}$ and $C$ is a closed subspace of the compact space $X_{i}^{+}$, hence compact (Theorem 26.2, printed p. 165); its topology as a subspace of $X_{i}$ is the same, so it is compact as a subset of $X_{i}$.
+The first two assertions are Theorem 29.1. If $C\subseteq X_{i}^{+}$ is closed in $X_{i}^{+}$ and $\infty_{i}\notin C$, then $C\subseteq X_{i}$ and $C$ is a closed subspace of the compact space $X_{i}^{+}$, hence compact (Theorem 26.2); its topology as a subspace of $X_{i}$ is the same, so it is compact as a subset of $X_{i}$.
 :::
 
 :::
@@ -73,7 +73,7 @@ Then $U\subseteq X_{1}$, and $U$ is open in the subspace $X_{1}$; $f(U)$ is open
 If $U$ is open in $X_{1}^{+}$ and $\infty_{1}\in U$, then $g(U)$ is open in $X_{2}^{+}$.
 
 ::: pf-proof
-Put $C=X_{1}^{+}\setminus U$, which is closed in $X_{1}^{+}$ and misses $\infty_{1}$, hence compact as a subset of $X_{1}$ by step [](#facts){.pf-ref}. Then $f(C)$ is compact, being a continuous image of a compact set (Theorem 26.5, printed p. 166), hence closed in the Hausdorff space $X_{2}^{+}$ (Theorem 26.3, printed p. 165). Since $g$ is a bijection with $g(\infty_{1})=\infty_{2}\notin f(C)$, one has $g(U)=X_{2}^{+}\setminus g(C)=X_{2}^{+}\setminus f(C)$, which is open.
+Put $C=X_{1}^{+}\setminus U$, which is closed in $X_{1}^{+}$ and misses $\infty_{1}$, hence compact as a subset of $X_{1}$ by step [](#facts){.pf-ref}. Then $f(C)$ is compact, being a continuous image of a compact set (Theorem 26.5), hence closed in the Hausdorff space $X_{2}^{+}$ (Theorem 26.3). Since $g$ is a bijection with $g(\infty_{1})=\infty_{2}\notin f(C)$, one has $g(U)=X_{2}^{+}\setminus g(C)=X_{2}^{+}\setminus f(C)$, which is open.
 :::
 
 :::

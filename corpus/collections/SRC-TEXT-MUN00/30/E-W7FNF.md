@@ -48,7 +48,7 @@ Show that $\RR_\ell$ and $I_o^2$ are not metrizable.
 
 ::: {.solution}
 
-The route is that of **Ana Emilia de Orellana, "Solutions - Topology Munkres", Section 30 Exercise 6, printed p. 31** (`tmp/sources/munkres-solutions-anadeore.pdf`), with the non-separability of the ordered square proved rather than asserted. The statement was checked against Munkres, *Topology* (2000), §30 Exercise 6, printed p. 194.
+The route is that of **Ana Emilia de Orellana, "Solutions - Topology Munkres", Section 30 Exercise 6, printed p. 31** (`tmp/sources/munkres-solutions-anadeore.pdf`), with the non-separability of the ordered square proved rather than asserted. The statement was checked against Munkres, *Topology* (2000), §30 Exercise 6.
 
 ::: pf
 
@@ -101,7 +101,7 @@ Let $(Z,d)$ be compact. For each $n$ the balls $B(z,1/n)$ with $z\in Z$ cover $Z
 $I_{o}^{2}$ is not metrizable.
 
 ::: pf-proof
-$I_{o}^{2}$ is compact, this being Example 5 of §30 (printed p. 193). Were it metrizable, step [](#compact-separable){.pf-ref} would make it separable, contradicting step [](#square-not-separable){.pf-ref}.
+$I_{o}^{2}$ is compact, this being Example 5 of §30. Were it metrizable, step [](#compact-separable){.pf-ref} would make it separable, contradicting step [](#square-not-separable){.pf-ref}.
 :::
 
 :::

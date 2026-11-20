@@ -43,7 +43,7 @@ is connected.
 
 ::: {.solution}
 
-The argument is the published solution of **positron0802**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.9, PDF p. 2 (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the T-shaped sets $U_{x}$ and $V_{y}$ and their union are that solution's, and every step below is checked against Munkres, *Topology* (2000), §23 Exercise 9, printed p. 152, with Theorem 23.3 and Theorem 23.5 on printed p. 150. Throughout, $X$ and $Y$ are connected spaces, $A\subsetneq X$ and $B\subsetneq Y$, and $X-A$, $Y-B$ denote complements in $X$ and $Y$.
+The argument is the published solution of **positron0802**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.9, PDF p. 2 (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the T-shaped sets $U_{x}$ and $V_{y}$ and their union are that solution's, and every step below is checked against Munkres, *Topology* (2000), §23 Exercise 9, with Theorem 23.3 and Theorem 23.5 on printed p. 150. Throughout, $X$ and $Y$ are connected spaces, $A\subsetneq X$ and $B\subsetneq Y$, and $X-A$, $Y-B$ denote complements in $X$ and $Y$.
 
 ::: pf
 
@@ -65,7 +65,7 @@ For every $x\in X-A$ the set $U_{x}\coloneqq(X\times\theset{d})\cup(\theset{x}\t
 $X\times\theset{d}$ and $\theset{x}\times Y$ are connected.
 
 ::: pf-proof
-The maps $u\mapsto(u,d)$ and $v\mapsto(x,v)$ are homeomorphisms of $X$ and $Y$ onto those two slices. Both slices are therefore continuous images of connected spaces, hence connected by Theorem 23.5 (printed p. 150).
+The maps $u\mapsto(u,d)$ and $v\mapsto(x,v)$ are homeomorphisms of $X$ and $Y$ onto those two slices. Both slices are therefore continuous images of connected spaces, hence connected by Theorem 23.5.
 :::
 
 :::
@@ -83,7 +83,7 @@ The point $(x,d)$ has second coordinate $d$ and first coordinate $x$, so it belo
 $U_{x}$ is connected and $(c,d)\in U_{x}$.
 
 ::: pf-proof
-$U_{x}$ is a union of connected subspaces of $X\times Y$ with the common point $(x,d)$ of step [](#meet){.pf-ref}, so it is connected by Theorem 23.3 (printed p. 150); this uses step [](#slices){.pf-ref}. Since $c\in X-A$ and $d\in Y-B$, the point $(c,d)$ satisfies $(c,d)\in X\times\theset{d}\subset U_{x}$.
+$U_{x}$ is a union of connected subspaces of $X\times Y$ with the common point $(x,d)$ of step [](#meet){.pf-ref}, so it is connected by Theorem 23.3; this uses step [](#slices){.pf-ref}. Since $c\in X-A$ and $d\in Y-B$, the point $(c,d)$ satisfies $(c,d)\in X\times\theset{d}\subset U_{x}$.
 :::
 
 :::
@@ -96,7 +96,7 @@ $U_{x}$ is a union of connected subspaces of $X\times Y$ with the common point $
 $U\coloneqq\bigcup_{x\in X-A}U_{x}$ is connected and contains $(c,d)$.
 
 ::: pf-proof
-This is a union of connected subspaces of $X\times Y$ that share the point $(c,d)$ by step [](#t-connected){.pf-ref}, so Theorem 23.3 (printed p. 150) applies.
+This is a union of connected subspaces of $X\times Y$ that share the point $(c,d)$ by step [](#t-connected){.pf-ref}, so Theorem 23.3 applies.
 :::
 
 :::
@@ -123,7 +123,7 @@ For the inclusion $\subset$: a point of $X\times\theset{d}$ has second coordinat
 Therefore $(X\times Y)-(A\times B)$ is connected.
 
 ::: pf-proof
-By step [](#cover){.pf-ref} the complement is $U\cup V$, a union of the connected sets of steps [](#u-connected){.pf-ref} and [](#v-connected){.pf-ref} sharing the point $(c,d)$; Theorem 23.3 (printed p. 150) makes it connected.
+By step [](#cover){.pf-ref} the complement is $U\cup V$, a union of the connected sets of steps [](#u-connected){.pf-ref} and [](#v-connected){.pf-ref} sharing the point $(c,d)$; Theorem 23.3 makes it connected.
 :::
 
 :::

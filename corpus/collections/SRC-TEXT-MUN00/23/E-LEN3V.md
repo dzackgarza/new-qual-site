@@ -36,7 +36,7 @@ Show that $\bigcup A_n$ is connected.
 
 ::: {.solution}
 
-The argument is **"positron0802"**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.2, PDF p. 1 (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the induction below is that solution's, and the statement was checked against Munkres, *Topology* (2000), §23 Exercise 2, printed p. 152, with Lemma 23.1 and Lemma 23.2 on printed pp. 148--149. The card's earlier page reference, PDF pp. 1--2, is corrected to p. 1.
+The argument is **"positron0802"**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.2, PDF p. 1 (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the induction below is that solution's, and the statement was checked against Munkres, *Topology* (2000), §23 Exercise 2, with Lemma 23.1 and Lemma 23.2 on printed pp. 148--149. The card's earlier page reference, is corrected to p. 1.
 
 ::: pf
 
@@ -44,7 +44,7 @@ The argument is **"positron0802"**, *Solutions to Topology, Chapter 3* (1 Januar
 Suppose that $Y\coloneqq\bigcup_{n\in\NN}A_{n}$ admits a separation $Y=B\cup C$ into disjoint nonempty sets $B,C$ open in $Y$. Then every $A_{n}$ lies in $B$ or in $C$.
 
 ::: pf-proof
-Each $A_{n}$ is a connected subspace of the space $Y$, and $B,C$ form a separation of $Y$; by Lemma 23.2 (printed p. 149) a connected subspace of a space with a separation lies entirely in one member of it.
+Each $A_{n}$ is a connected subspace of the space $Y$, and $B,C$ form a separation of $Y$; by Lemma 23.2 a connected subspace of a space with a separation lies entirely in one member of it.
 :::
 
 :::
@@ -89,7 +89,7 @@ The natural numbers are generated from $1$ by the successor operation, so a prop
 No separation of $Y$ exists, so $Y$ is connected.
 
 ::: pf-proof
-Under the supposition of step [](#separation-setup){.pf-ref} all the $A_{n}$ lie in $B$ by step [](#induction){.pf-ref}, hence $Y=\bigcup_{n}A_{n}\subset B$ and $C=Y-B=\varnothing$, contradicting the requirement that the members of a separation be nonempty. Hence no separation exists and $Y$ is connected by the definition of connectedness (§23, printed p. 148).
+Under the supposition of step [](#separation-setup){.pf-ref} all the $A_{n}$ lie in $B$ by step [](#induction){.pf-ref}, hence $Y=\bigcup_{n}A_{n}\subset B$ and $C=Y-B=\varnothing$, contradicting the requirement that the members of a separation be nonempty. Hence no separation exists and $Y$ is connected by the definition of connectedness (§23).
 :::
 
 :::

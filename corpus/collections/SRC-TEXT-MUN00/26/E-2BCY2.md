@@ -62,7 +62,7 @@ Let $X$ be compact Hausdorff, let $\mathcal{A}$ be a nonempty collection of clos
 $Y$ is closed in $X$, and if $Y=C\cup D$ is a separation then $C$ and $D$ are disjoint nonempty compact subsets of $X$.
 
 ::: pf-proof
-$Y$ is an intersection of closed sets, hence closed. A separation writes $Y$ as a union of two disjoint nonempty sets $C$, $D$ each closed in $Y$; since $Y$ is closed in $X$, a set closed in $Y$ is closed in $X$ (Theorem 17.3, printed p. 95: the closed subsets of a subspace are its intersections with closed sets of the ambient space, and intersecting a closed set with $Y$ keeps it closed). Closed subsets of the compact space $X$ are compact (Theorem 26.2, printed p. 165).
+$Y$ is an intersection of closed sets, hence closed. A separation writes $Y$ as a union of two disjoint nonempty sets $C$, $D$ each closed in $Y$; since $Y$ is closed in $X$, a set closed in $Y$ is closed in $X$ (Theorem 17.3: the closed subsets of a subspace are its intersections with closed sets of the ambient space, and intersecting a closed set with $Y$ keeps it closed). Closed subsets of the compact space $X$ are compact (Theorem 26.2).
 :::
 
 :::
@@ -71,7 +71,7 @@ $Y$ is an intersection of closed sets, hence closed. A separation writes $Y$ as 
 There are disjoint open sets $U\supseteq C$ and $V\supseteq D$ of $X$.
 
 ::: pf-proof
-$C$ and $D$ are disjoint compact subspaces of the Hausdorff space $X$, so Exercise 26.5 (printed p. 167) supplies such $U$ and $V$.
+$C$ and $D$ are disjoint compact subspaces of the Hausdorff space $X$, so Exercise 26.5 supplies such $U$ and $V$.
 :::
 
 :::
@@ -107,7 +107,7 @@ By hypothesis the $A_{i}$ are simply ordered by proper inclusion, so after relab
 $\bigcap_{A\in\mathcal{A}}\big(A\setminus(U\cup V)\big)\ne\varnothing$, which is impossible.
 
 ::: pf-proof
-By step [](#fip){.pf-ref} the family is a collection of closed subsets of the compact space $X$ with the finite intersection property, so its total intersection is nonempty (Theorem 26.9, printed p. 169). A point $y$ of it lies in every $A\in\mathcal{A}$, hence in $Y$, and lies in $X\setminus(U\cup V)$, so $y\notin C\cup D=Y$: a contradiction.
+By step [](#fip){.pf-ref} the family is a collection of closed subsets of the compact space $X$ with the finite intersection property, so its total intersection is nonempty (Theorem 26.9). A point $y$ of it lies in every $A\in\mathcal{A}$, hence in $Y$, and lies in $X\setminus(U\cup V)$, so $y\notin C\cup D=Y$: a contradiction.
 :::
 
 :::
