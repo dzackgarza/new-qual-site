@@ -17,6 +17,36 @@ audit:
   by: claude
   date: 2026-11-20
   note: >-
+    #161, part (a)'s Claim 1, which the reader refuted. The claim read: if the vertical maps at
+    $\pi_0(A,x_0)$ and at $\pi_0(X,A,x_0)$ are bijections, then so is
+    $\Phi:\pi_0(X,x_0)\to\pi_0(Y,y_0)$; its injectivity step passed from $\Phi[x_1]=\Phi[x_2]$, an
+    equality in $\pi_0(Y,y_0)$, to the equality of $[\varphi(a_1)]$ and $[\varphi(a_2)]$ in
+    $\pi_0(B,y_0)$ from which injectivity of the map at $\pi_0(A,x_0)$ recovers $[a_1]=[a_2]$. That
+    passage needs a path in $B$ between the two images, and the two $\pi_0$ hypotheses supply only a
+    path in $Y$; the counterexample is now on the card, $X=A=\{a_1,a_2\}$ discrete, $Y=[0,1]$,
+    $B=\{0,1\}$, $\varphi(a_1)=0$, $\varphi(a_2)=1$, where both cited maps are bijections of
+    two-point and one-point sets and $\Phi$ is two points to one. Claim 1 now states the four
+    surrounding maps of its own window --- the vertical maps at $\pi_1(X,A,a)$ and at $\pi_0(A,a)$
+    for every $a\in A$, at $\pi_0(X,A,x_0)$ and at the terminal $0$ --- and proves both directions
+    step by step. Surjectivity uses the maps at $\pi_0(A,x_0)$ and at $\pi_0(X,A,x_0)$ only.
+    Injectivity uses the map at $\pi_1(X,A,a_2)$ at the point $a_2$ that the argument produces, the
+    map at $\pi_0(A,x_0)$ and the map at $\pi_0(X,A,x_0)$: the path $\omega$ in $Y$ from
+    $\varphi(a_1)$ to $\varphi(a_2)$ is lifted by surjectivity at $\pi_1(X,A,a_2)$, and the lifted
+    relative homotopy carries its start point along a path in $B$ from $\varphi(a_3)$ to
+    $\varphi(a_1)$, which is the equality in $\pi_0(B,y_0)$ the old step assumed. The paragraph
+    after Claim 2 that recorded the two claims' hypotheses now names the $\pi_1$ family, and the two
+    later references to Claim 1 --- in the window inventory of part (a) and in the Sources remark ---
+    were re-read and remain true of the repaired statement. Checked: the definition of
+    $\pi_0(X,A,x_0)$ as the quotient collapsing exactly the components meeting $A$, the definition
+    of $\pi_1(X,A,a)$ as classes of paths from a point of $A$ to $a$ under homotopies that keep the
+    endpoint and move the start point in $A$, every term of the counterexample, and the two later
+    mentions of Claim 1. Not checked: no retained solution set states the exercise, so the repaired
+    argument is the card's own, as the provenance paragraph says; and the Lean declarations linked
+    on the card were not re-elaborated.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
     #161, the acceptance's second clause, sentence by sentence. The clause is read as the card's own
     claim, and QUAL-11 governs the record: each of the six sentences below stands in a dated event as
     what that session found on its day and is not edited, and each is named here with the step of the
@@ -879,14 +909,16 @@ Since $\gamma$ is onto, $\omega=i'_*\gamma(a)=\delta h(a)$ for some $a\in\pi_1(A
 
 Both arguments use one exactness assertion outside their window, at the centre's target, and both use the two-sided invertibility of the bijections at the surrounding terms; the products and inverses are taken in groups, and no map into a pointed set is treated as a homomorphism.
 
-*Claim 1: the term $\pi_0(X,x_0)$.* If the vertical maps at $\pi_0(A,x_0)$ and at $\pi_0(X,A,x_0)$ are bijections, then so is the vertical map $\Phi:\pi_0(X,x_0)\to\pi_0(Y,y_0)$. The four surrounding maps of the window centred at $\pi_0(X,x_0)$ are the vertical maps at $\pi_1(X,A,x_0)$, at $\pi_0(A,x_0)$, at $\pi_0(X,A,x_0)$ and at the terminal $0$, the last being $0\to0$; the argument below uses the two at $\pi_0(A,x_0)$ and $\pi_0(X,A,x_0)$.
+*Claim 1: the term $\pi_0(X,x_0)$.* The four surrounding maps of the window centred at $\pi_0(X,x_0)$ are the vertical maps at $\pi_1(X,A,a)$ and at $\pi_0(A,a)$, both for every $a\in A$, the vertical map at $\pi_0(X,A,x_0)$, and the terminal map $0\to0$. If these are bijections, then so is the vertical map $\Phi:\pi_0(X,x_0)\to\pi_0(Y,y_0)$. The argument uses the vertical map at $\pi_1(X,A,a_2)$ at the single point $a_2\in A$ that it produces, the vertical map at $\pi_0(A,x_0)$ and the vertical map at $\pi_0(X,A,x_0)$; it does not use the vertical maps at $\pi_1(A,a)$ and at $\pi_1(X,a)$. Since $a_2$ may be any point of $A$, the hypothesis on $\pi_1(X,A,\cdot)$ is needed at every point of $A$, which is what the exercise's "for all choices of $x_0$" supplies.
 
-- *Injectivity.* Let $\Phi[x_1]=\Phi[x_2]$. Then $\theta j[x_1]=\theta j[x_2]$ by commutativity of the ladder, so $j[x_1]=j[x_2]$ because $\theta$, the vertical map at $\pi_0(X,A,x_0)$, is injective. Two components of $X$ have the same class in $\pi_0(X,A,x_0)=\pi_0(X,x_0)/i_*\pi_0(A,x_0)$ exactly when they are the same component or both meet $A$; in the second case injectivity of the vertical map at $\pi_0(A,x_0)$ puts them in one component of $A$, hence of $X$. So $[x_1]=[x_2]$.
-- *Surjectivity.* Let $[y]\in\pi_0(Y,y_0)$. If $[y]$ meets $B$, choose $b\in B$ and $[a]\in\pi_0(A,x_0)$ with $\Phi[a]=[b]=[y]$, which exists because the vertical map at $\pi_0(A,x_0)$ is onto. Otherwise $[y]$ does not meet $B$, so $j'[y]$ is not the base class, and $\theta$ is onto, so $j'[y]=\theta[x]$ for some $[x]\in\pi_0(X,A,x_0)$; for a representative $x_1$ of $[x]$, $j'\Phi[x_1]=\theta j[x_1]=j'[y]$, so $\Phi[x_1]$ meets $B$ exactly when $[y]$ does, and it does not, hence $\Phi[x_1]=[y]$.
+- *Injectivity.* Let $\Phi[x_1]=\Phi[x_2]$. Then $\theta j[x_1]=j'\Phi[x_1]=j'\Phi[x_2]=\theta j[x_2]$ by commutativity of the ladder, so $j[x_1]=j[x_2]$ because $\theta$, the vertical map at $\pi_0(X,A,x_0)$, is injective. If $[x_1]=[x_2]$ there is nothing to prove. Otherwise, by the definition of $\pi_0(X,A,x_0)$ as the quotient that identifies exactly the components of $X$ meeting $A$, both components meet $A$: choose $a_1,a_2\in A$ with $[a_1]=[x_1]$ and $[a_2]=[x_2]$ in $\pi_0(X,x_0)$. Then $\Phi[x_1]=[\varphi(a_1)]$ and $\Phi[x_2]=[\varphi(a_2)]$ in $\pi_0(Y,y_0)$, so $\Phi[x_1]=\Phi[x_2]$ gives a path $\omega$ in $Y$ from $\varphi(a_1)$ to $\varphi(a_2)$. Its start point lies in $B$ and its endpoint is $\varphi(a_2)$, so $\omega$ represents a class in $\pi_1(Y,B,\varphi(a_2))$. By surjectivity of the vertical map at $\pi_1(X,A,a_2)$ there are a path $\eta$ in $X$ from a point $a_3\in A$ to $a_2$ and a homotopy $H:I^2\to Y$ with $H(s,0)=\varphi\eta(s)$, $H(s,1)=\omega(s)$, $H(0,t)\in B$ and $H(1,t)=\varphi(a_2)$. The start-point track $t\mapsto H(0,t)$ is then a path in $B$ from $\varphi(a_3)$ to $\varphi(a_1)$, so $[\varphi(a_3)]=[\varphi(a_1)]$ in $\pi_0(B,y_0)$. Injectivity of the vertical map at $\pi_0(A,x_0)$ gives $[a_3]=[a_1]$ in $\pi_0(A,x_0)$, hence in $\pi_0(X,x_0)$; and $\eta$ is a path in $X$ from $a_3$ to $a_2$, so $[a_2]=[a_3]$ in $\pi_0(X,x_0)$. Therefore $[x_1]=[a_1]=[a_3]=[a_2]=[x_2]$, and $\Phi$ is injective.
+- *Surjectivity.* Let $[y]\in\pi_0(Y,y_0)$. If $[y]$ meets $B$, choose $b\in[y]\cap B$ and $[a]\in\pi_0(A,x_0)$ with $[\varphi(a)]=[b]$ in $\pi_0(B,y_0)$, which exists because the vertical map at $\pi_0(A,x_0)$ is onto; then $\Phi[a]=[\varphi(a)]=[b]=[y]$. Otherwise $[y]$ does not meet $B$, so $j'[y]$ is not the base class of $\pi_0(Y,B,y_0)$, and surjectivity of $\theta$ gives $j'[y]=\theta[x]$ for some $[x]\in\pi_0(X,A,x_0)$; for a representative $x_1$ of $[x]$ one has $j'\Phi[x_1]=\theta j[x_1]=j'[y]$. Two components of $Y$ have the same class in $\pi_0(Y,B,y_0)$ exactly when they are equal or both meet $B$, and $[y]$ does not meet $B$, so $\Phi[x_1]=[y]$. Thus $\Phi$ is onto.
+
+*Why the hypothesis cannot be weakened.* The $\pi_1$ hypothesis is not decoration. Take $X=A=\{a_1,a_2\}$ discrete with $x_0=a_1$, $Y=[0,1]$, $B=\{0,1\}$ with $y_0=0$, and $\varphi(a_1)=0$, $\varphi(a_2)=1$. Then $\pi_0(A,x_0)\to\pi_0(B,y_0)$ is a bijection of two-point sets and $\pi_0(X,A,x_0)\to\pi_0(Y,B,y_0)$ is a bijection of one-point sets, but $\Phi:\pi_0(X,x_0)\to\pi_0(Y,y_0)$ is two points to one and is not injective. The hypothesis fails at $\pi_1$: $\pi_1(X,A,a_1)$ is the one-point set of the constant path at $a_1$, while $\pi_1(Y,B,0)$ consists of the classes of the constant path at $0$ and of $t\mapsto1-t$, which are distinct because the start-point track of a relative homotopy runs in the discrete set $B$. So the two $\pi_0$ bijections alone do not give $\Phi$. The missing step is exactly the path $\omega$ above: its endpoints lie in $B$, in different components of $B$ but in the one component of $Y$, and lifting $\omega$ is what produces a path in $B$ between the preimages of its endpoints.
 
 *Claim 2: the term $\pi_0(X,A,x_0)$.* If the vertical maps at $\pi_0(A,x_0)$ and at $\pi_0(X,x_0)$ are bijections, then so is the vertical map at $\pi_0(X,A,x_0)$. Indeed that map is induced by a bijection $\pi_0(X,x_0)\to\pi_0(Y,y_0)$ which carries the subset $i_*\pi_0(A,x_0)$ bijectively onto $i_*\pi_0(B,y_0)$, and a bijection of sets carrying one subset onto another induces a bijection of the quotients.
 
-The two claims are conditional statements about the same four surrounding maps and are not circular: Claim 1 uses the bijections at $\pi_0(A,x_0)$ and at $\pi_0(X,A,x_0)$, Claim 2 those at $\pi_0(A,x_0)$ and at $\pi_0(X,x_0)$, so under the exercise's hypothesis every one of the three $\pi_0$ terms is settled.
+The two claims are conditional statements about the maps surrounding their own terms and are not circular: Claim 1 uses the bijections at $\pi_1(X,A,a)$ for $a\in A$, at $\pi_0(A,x_0)$ and at $\pi_0(X,A,x_0)$, Claim 2 those at $\pi_0(A,x_0)$ and at $\pi_0(X,x_0)$, so under the exercise's hypothesis every one of the three $\pi_0$ terms is settled.
 
 ### (b) The triple sequence
 
