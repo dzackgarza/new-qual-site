@@ -22,7 +22,7 @@ A Hilbert basis $m_1,\ldots,m_r$ of $S_\sigma$ gives a closed embedding $U_\sigm
 
 [[PR-FULCOTAN]]
 
-For a two-dimensional cone with primitive ray generators $u_1,u_2$, $\abs{\det(u_1,u_2)}=1$ exactly when $U_\sigma$ is smooth, and $\Cl(U_\sigma)$ is cyclic of order $\abs{\det(u_1,u_2)}$.
+For a two-dimensional cone with primitive ray generators $u_1,u_2$, $\abs{\det(u_1,u_2)}=1$ exactly when $U_\sigma$ is smooth, and $\Cl(U_\sigma)$ is cyclic of order $\abs{\det(u_1,u_2)}$ ([[PR-FULCOTAN]], [[PR-TORSMAFF]]).
 
 ## Saturation and normality
 
