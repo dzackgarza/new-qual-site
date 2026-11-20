@@ -7,7 +7,8 @@ title: Solution collections
 
 Solutions to qualifying examinations, to course finals, and to the exercises of
 texts the corpus draws on. Each entry names the examination or the book, the
-author of the solutions, and the material the document covers.
+author of the solutions where the document names one, and the material the
+document covers.
 
 ## Algebra
 
