@@ -99,6 +99,23 @@ audit:
     partition for L >= 0, with the single interval of the case L <= delta/16 degenerate at L = 0, where
     b_0 = b_1 = -1 and J_1 contains -1. The upper side is covered "the same way", which now includes its
     own degenerate case. Nothing else on the card changed.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card stood in queue D: its solution was prose in six headed steps with no `pf` structure. It
+    is now a `pf` with nine steps, the interval construction carried as a sub-step of the near-cover
+    step, and every step carrying a `pf-proof`. Cited by numbered statement only: Munkres, Topology,
+    §50 Exercise 3, the definition of topological dimension in §50, Lemma 27.5 (the Lebesgue number
+    lemma), Theorem 27.3 (Heine--Borel), Theorem 20.3 (the square metric induces the usual topology),
+    Example 3 of §18 and Example 7 of §24, with §50 Exercise 2 on [[E-KWBI9]] for the lower bound. No
+    retained published set answers this exercise, and the card says so in its preamble: the sets
+    searched are the ones recorded in the COMPLAINTS.md entry for §43--§50, and the Chapter 7
+    self-study notes state the exercise without answering it. Checked: that the Lebesgue number
+    applies to a cover of the compact space, the four consequences listed for the constants, the
+    disjointness and the length bound of the $J_k$ in the interval sub-step including the case
+    $L=0$, the two diameter estimates with the mean value theorem and $\abs{1/x-1/x'}\le\ell/\eta^2$,
+    and the three cases of the order-two count.
 ---
 
 ::: {.exercise}
@@ -107,59 +124,127 @@ Show that the topologist's sine curve has dimension 1.
 :::
 
 ::: {.solution}
-Let
-$$
-S=\{(x,\sin(1/x)):0<x\le1\},\qquad V=\{0\}\times[-1,1],\qquad \bar S=S\cup V
-$$
-be the topologist's sine curve, as in Example 7 of §24. Give $\RR^2$ the square metric $\rho$, which induces the usual topology (Theorem 20.3), and give $\bar S$ the subspace metric.
 
-**Step 1: what has to be produced.** By the definition of topological dimension (printed p. 305), $\dim\bar S\le1$ means that every open covering $\mathcal A$ of $\bar S$ has an open covering refining $\mathcal A$ in which no point lies in more than two members. So let $\mathcal A$ be an open covering of $\bar S$. The space $\bar S$ lies in $[0,1]\times[-1,1]$ and is closed in $\RR^2$, so it is compact (Theorem 27.3); let $\delta>0$ be a Lebesgue number for $\mathcal A$ (Lemma 27.5). It is enough to cover $\bar S$ by open subsets of $\bar S$, each of diameter less than $\delta$, no point lying in more than two of them: by the Lebesgue number lemma each of those sets is contained in a member of $\mathcal A$, so the family refines $\mathcal A$.
+No retained published solution of Munkres, *Topology*, §50 Exercise 3 was located: the sets searched are listed in the `COMPLAINTS.md` entry for §43--§50 of `SRC-TEXT-MUN00`, and the self-study notes that reach Chapter 7 state this exercise without answering it. The proof is the card's own, checked against the numbered statements it cites: the definition of topological dimension in §50, Lemma 27.5 (the Lebesgue number lemma), Theorem 27.3 (Heine--Borel), Theorem 20.3 (the square metric induces the usual topology) and Example 7 of §24.
 
-**Step 2: constants.** Choose real numbers with
+::: pf
+
+::: {.pf-step #setup}
+Let $S=\{(x,\sin(1/x)):0<x\le1\}$, $V=\{0\}\times[-1,1]$ and $\bar S=S\cup V$, the topologist's sine curve of Munkres, Example 7 of §24, with the metric $\rho$ it inherits from the square metric of $\RR^2$, which induces the usual topology.
+
+::: pf-proof
+Example 7 of §24 defines the space as this union, so the set is as displayed. The square metric induces the usual topology of $\RR^2$ by Munkres, Theorem 20.3, so the subspace metric $\rho$ induces the subspace topology and the diameters computed below are diameters for the topology of $\bar S$.
+:::
+
+:::
+
+::: {.pf-step #criterion}
+It is enough to produce, for an arbitrary open cover $\mathcal A$ of $\bar S$, an open cover of $\bar S$ refining it in which no point lies in more than two members.
+
+::: pf-proof
+Munkres, §50 defines $\dim X\le n$ to mean that every open cover of $X$ has an open refinement of order at most $n+1$, that is, one in which no point lies in more than $n+1$ members. With $n=1$ this is exactly the requirement stated, and $\dim\bar S\le1$ follows once it holds for every $\mathcal A$.
+:::
+
+:::
+
+::: {.pf-step #compact-lebesgue}
+$\bar S$ is compact and, for the given cover $\mathcal A$, there is $\delta>0$ such that every subset of $\bar S$ of diameter less than $\delta$ lies in a member of $\mathcal A$.
+
+::: pf-proof
+$\bar S\subseteq[0,1]\times[-1,1]$ is bounded and closed in $\RR^2$, so it is compact by Munkres, Theorem 27.3 (Heine--Borel); note that a cover of $\bar S$ by sets open in $\bar S$ is a cover of the compact space $\bar S$. The number $\delta$ is then supplied by Munkres, Lemma 27.5 (the Lebesgue number lemma, which is stated for a compact metric space and an open cover of it).
+:::
+
+:::
+
+::: {.pf-step #constants}
+Choose reals
 $$
 0<\eta\le\tfrac12,\quad \eta<\frac{\delta}{8},\qquad \rho_0=\frac{\delta}{16},\qquad \sigma=\frac{\delta}{64},\qquad 0<\ell<\min\Bigl\{\frac{\delta}{8},\ \frac{\delta\eta^2}{16}\Bigr\},\qquad \nu=\min\Bigl\{\frac{\delta}{32},\ \frac{\ell}{4},\ \frac{\eta}{2}\Bigr\}.
 $$
-Note $\eta<\delta$, $2\nu\le\ell/2<\delta$, $2\sigma<\delta$, and $\ell/\eta^2<\delta/16$. (The symbol $\rho_0$ is used for the radius to avoid a clash with the square metric $\rho$.)
+Then $\eta<\delta$, $2\nu\le\ell/2<\delta$, $2\sigma<\delta$, $4\nu\le\ell$ and $\ell/\eta^2<\delta/16$.
 
-**Step 3: the cover near the vertical segment.** Let $y_0=\sin(1/\eta)$. Choose open intervals $I_1,\dots,I_p$ of $\RR$ covering $[-1,1]$ such that
+::: pf-proof
+Each of $\eta,\ell,\nu$ is required only to be a positive number below finitely many positive bounds, so the choices are possible. The listed consequences follow by the displayed definitions: $\eta<\delta/8<\delta$; $2\nu\le2\cdot\ell/4=\ell/2<\delta/2$; $2\sigma=2\delta/64=\delta/32<\delta$; $4\nu\le4\cdot\ell/4=\ell$; and $\ell<\delta\eta^2/16$ says $\ell/\eta^2<\delta/16$.
+:::
 
-- no point of $[-1,1]$ lies in more than two of the $I_i$;
-- one of them, call it $I_0$, is $(y_0-2\sigma,\,y_0+2\sigma)$, and every other $I_i$ is contained either in $(-\infty,\,y_0-\sigma)$ or in $(y_0+\sigma,\,\infty)$, so that a point of $\bar S$ whose second coordinate satisfies $\abs{y-y_0}<\sigma$ lies in exactly one of the $I_i$;
-- $\abs{I_i}<\delta/2$ for every $i$.
+:::
 
-Such intervals exist. Write $L=y_0-2\sigma+1$, so that $y_0-2\sigma=-1+L$. If $L<0$ then no point of $[-1,1]$ lies below $y_0-2\sigma$, and $-1$ lies in $I_0$, so nothing is needed on that side. If $L\ge0$ take $b_0\le b_1\le\dots\le b_q$ with $b_0=-1$, $b_q=y_0-2\sigma$ and consecutive points at distance $m\le\frac{\delta}{16}$, equal only when $L=0$: if $L>\frac{\delta}{16}$ take $q$ with $\frac{16L}{\delta}<q<\frac{32L}{\delta}$, which exists because that open interval of real numbers has length $\frac{16L}{\delta}>1$ and so contains an integer, and put $b_k=-1+k\frac{L}{q}$ so that $m=\frac{L}{q}\in(\frac{\delta}{32},\frac{\delta}{16})$; if $0\le L\le\frac{\delta}{16}$ take $q=1$, so that $m=L\le\frac{\delta}{16}$ and there is only one interval, the degenerate one $-1=b_0=b_1=y_0-2\sigma$ when $L=0$. Put $J_k=(b_{k-1}-\frac{\delta}{128},\,b_k+\frac{\delta}{128})$, so that $J_1$ contains $-1$ and $y_0-2\sigma$. Then $J_k\cap J_l=\emptyset$ when $\abs{k-l}\ge2$: if $q\ge2$ the mesh satisfies $m>\frac{\delta}{64}=\frac{2\delta}{128}$, so $b_{k+1}-\frac{\delta}{128}>b_k+\frac{\delta}{128}$, and if $q=1$ there are no two such indices. Each $J_k$ has length $m+\frac{\delta}{64}\le\frac{5\delta}{64}<\frac{\delta}{8}$; and each $J_k$ is contained in $(-\infty,y_0-\sigma)$, because its right end is at most $(y_0-2\sigma)+\frac{\delta}{128}=y_0-2\sigma+\frac{\sigma}{2}<y_0-\sigma$. Cover $[y_0+2\sigma,1]$ the same way when that interval is nonempty, with the roles of $y_0-\sigma$ and $y_0+\sigma$ exchanged, and add $I_0$; the points of $[-1,1]$ outside $(y_0-2\sigma,y_0+2\sigma)$ are covered by the $J$'s.
-
-For each of these intervals let
+::: {.pf-step #near-cover}
+Let $y_0=\sin(1/\eta)$. There are open intervals $I_1,\dots,I_p$ of $\RR$ covering $[-1,1]$, of order at most two, with $\abs{I_i}<\delta/2$, one of them $I_0=(y_0-2\sigma,y_0+2\sigma)$ and every other contained in $(-\infty,y_0-\sigma)$ or in $(y_0+\sigma,\infty)$; and then
 $$
-W(I)=\bar S\cap\bigl\{(x,y):y\in I\bigr\}\cap\bigl\{(x,y):x<\eta\bigr\}.
+W(I)=\bar S\cap\{(x,y):y\in I\}\cap\{(x,y):x<\eta\}
 $$
-This is open in $\bar S$, being the trace on $\bar S$ of the open set $\{y\in I\}\cap\{x<\eta\}$ of $\RR^2$. Its first coordinates lie in $[0,\eta]$ and its second in $I$, so its diameter under the square metric is $\max\{\eta,\abs{I}\}<\delta$. The family $\{W(I)\}$ covers every point of $\bar S$ whose first coordinate is less than $\eta$, since the $I$'s cover $[-1,1]$; no point of $\bar S$ lies in more than two members, since its second coordinate lies in at most two of the $I$'s; and a point of $\bar S$ with $x<\eta$ and $\abs{y-y_0}<\sigma$ lies in exactly one member.
+is open in $\bar S$, the family $\{W(I)\}$ covers every point of $\bar S$ with first coordinate below $\eta$, has diameter less than $\delta$, and no point of $\bar S$ lies in more than two of its members.
 
-**Step 4: the cover of the part away from the segment.** Put $s_k=\eta+k\ell$ and take $N\ge1$ with $s_N\ge1$. For $k=0,\dots,N-1$ and $j=0,\dots,N$ let
+::: pf-proof
+
+::: {.pf-step #intervals}
+The intervals $I_i$ with those four properties exist.
+
+::: pf-proof
+Write $L=y_0-2\sigma+1$, so that $y_0-2\sigma=-1+L$. If $L<0$ no point of $[-1,1]$ lies below $y_0-2\sigma$ and nothing is needed on that side. If $L\ge0$ take $-1=b_0\le b_1\le\cdots\le b_q=y_0-2\sigma$ with consecutive points at distance $m\le\delta/16$, equal only when $L=0$: if $L>\delta/16$ choose an integer $q$ with $16L/\delta<q<32L/\delta$, possible because that interval has length $16L/\delta>1$, and put $b_k=-1+kL/q$, so that $m=L/q\in(\delta/32,\delta/16)$; if $0\le L\le\delta/16$ take $q=1$, so that $m=L\le\delta/16$, the interval being degenerate when $L=0$. Put $J_k=(b_{k-1}-\delta/128,\ b_k+\delta/128)$; then $J_1$ contains $-1$ and $y_0-2\sigma$, and $J_k\cap J_l=\varnothing$ when $\abs{k-l}\ge2$, because for $q\ge2$ one has $m>\delta/64=2\delta/128$, so $b_{k+1}-\delta/128>b_k+\delta/128$, while for $q=1$ there is no pair of such indices. Each $J_k$ has length $m+\delta/64\le5\delta/64<\delta/8$, and each lies in $(-\infty,y_0-\sigma)$, its right end being at most $y_0-2\sigma+\delta/128=y_0-2\sigma+\sigma/2<y_0-\sigma$. Covering $[y_0+2\sigma,1]$ the same way when it is nonempty, with the roles of $y_0-\sigma$ and $y_0+\sigma$ exchanged, and adding $I_0=(y_0-2\sigma,y_0+2\sigma)$ gives the family: the $J$'s cover $[-1,1]$ outside $(y_0-2\sigma,y_0+2\sigma)$, they are pairwise disjoint except for consecutive ones, so no point lies in more than two, and every one of them misses $(y_0-\sigma,y_0+\sigma)$ while $I_0$ lies inside it, so a point with $\abs{y-y_0}<\sigma$ lies in $I_0$ alone.
+:::
+
+:::
+
+::: {.pf-step #near-properties}
+Each $W(I)$ is open in $\bar S$, the family covers the points of $\bar S$ with $x<\eta$, each has diameter less than $\delta$ in the square metric, and no point of $\bar S$ lies in more than two of them.
+
+::: pf-proof
+$W(I)$ is the trace on $\bar S$ of $\{y\in I\}\cap\{x<\eta\}$, an open subset of $\RR^2$, so it is open in $\bar S$. A point of $\bar S$ with $x<\eta$ has its second coordinate in $[-1,1]$, hence in some $I$ by step [#intervals]{.pf-ref}, so it lies in that $W(I)$. A member's first coordinates lie in $[0,\eta]$ and its second coordinates in $I$, so its diameter in the square metric $\rho$ is $\max\{\eta,\abs{I}\}<\delta$, since $\eta<\delta/8$ and $\abs{I}<\delta/2$. A point of $\bar S$ lies in $W(I)$ only if its second coordinate lies in $I$, and that coordinate lies in at most two of the $I$'s; so it lies in at most two of the $W(I)$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #far-cover}
+Put $s_k=\eta+k\ell$ and take $N\ge1$ with $s_N\ge1$. For $k=0,\dots,N-1$ and $j=0,\dots,N$ let
 $$
 C_k=\bar S\cap\{s_k<x<s_{k+1}\}\cap\{\abs{y-\sin(1/x)}<\rho_0\},\qquad
 D_j=\bar S\cap\{\abs{x-s_j}<\nu\}\cap\{\abs{y-\sin(1/s_j)}<\sigma\},
 $$
-and delete any of these sets that is empty. Each is open in $\bar S$: the map $(x,y)\mapsto\sin(1/x)$ is continuous on the open set $\{x>\eta/2\}$, which contains all the sets displayed ($\sin$ is continuous by the familiar properties quoted in Example 3 of §18, and $x\mapsto1/x$ is continuous where $x\ne0$), and each of the sets is $\bar S$ meet an open subset of $\RR^2$ contained in that half-plane.
+deleting empty members. Each is open in $\bar S$, each has diameter less than $\delta$, and together they cover every point of $\bar S$ whose first coordinate is at least $\eta$.
 
-Their diameters are less than $\delta$. For $C_k$: two of its points $(x,y)$, $(x',y')$ have $s_k<x,x'<s_{k+1}$, so $\abs{x-x'}<\ell$, and then, with $x,x'\ge\eta$,
+::: pf-proof
+The map $x\mapsto\sin(1/x)$ is continuous on $\{x>\eta/2\}\supseteq[0,1]\cap\{x\ge\eta\}$, since $x\mapsto1/x$ is continuous where $x\ne0$ and $\sin$ is continuous (Munkres, Example 3 of §18), and each displayed set is $\bar S$ meet an open subset of $\RR^2$ contained in that half-plane; so each is open in $\bar S$. For $C_k$ take two of its points $(x,y),(x',y')$; then $s_k<x,x'<s_{k+1}$ gives $\abs{x-x'}<\ell$, and with $x,x'\ge\eta$,
 $$
-\abs{y-y'}\le\abs{y-\sin(1/x)}+\abs{\sin(1/x)-\sin(1/x')}+\abs{\sin(1/x')-y'}<\rho_0+\frac{\abs{x-x'}}{xx'}+\rho_0\le 2\rho_0+\frac{\ell}{\eta^2}<\frac{\delta}{8}+\frac{\delta}{16},
+\abs{y-y'}\le\abs{y-\sin(1/x)}+\abs{\sin(1/x)-\sin(1/x')}+\abs{\sin(1/x')-y'}<\rho_0+\frac{\abs{x-x'}}{xx'}+\rho_0\le2\rho_0+\frac{\ell}{\eta^2}<\frac{\delta}{8}+\frac{\delta}{16},
 $$
-where $\abs{\sin a-\sin a'}\le\abs{a-a'}$ (mean value theorem) and $\abs{1/x-1/x'}=\abs{x-x'}/xx'\le\ell/\eta^2$ are used; hence $\operatorname{diam}C_k\le\max\{\ell,3\delta/16\}<\delta$. For $D_j$: the first coordinates span less than $2\nu\le\ell/2<\delta$ and the second less than $2\sigma<\delta$.
+using the mean value theorem for $\abs{\sin a-\sin a'}\le\abs{a-a'}$ and $\abs{1/x-1/x'}=\abs{x-x'}/xx'\le\ell/\eta^2$; so $\operatorname{diam}C_k\le\max\{\ell,3\delta/16\}<\delta$. For $D_j$ the first coordinates span less than $2\nu\le\ell/2<\delta$ and the second less than $2\sigma<\delta$, so its diameter is below $\delta$. For the cover, a point of $\bar S$ with $0<x\le1$ has $y=\sin(1/x)$, so it lies in $C_k$ when $s_k<x<s_{k+1}$ and in $D_j$ when $x=s_j$; there are no points of $\bar S$ with first coordinate at least $\eta$ other than these, since $\bar S$'s vertical part has first coordinate $0$.
+:::
 
-These sets cover every point of $\bar S$ whose first coordinate is at least $\eta$: such a point with $0<x\le1$ satisfies $y=\sin(1/x)$, so it lies in $C_k$ if $s_k<x<s_{k+1}$, and it lies in $D_j$ if $x=s_j$; there are no other points of $\bar S$ with first coordinate at least $\eta$.
+:::
 
-**Step 5: no point lies in more than two sets.** Let $q=(x,y)\in\bar S$.
+::: {.pf-step #order-two}
+No point of $\bar S$ lies in more than two members of the family consisting of the $W(I)$, the $C_k$ and the $D_j$.
 
-- If $x<\eta$: then $q$ lies in at most two of the $W(I)$, and in no $C_k$; it lies in a $D_j$ only if $\abs{x-s_j}<\nu$. For $j\ge1$ this needs $x>s_j-\nu\ge\eta+\ell-\nu>\eta$ because $\nu\le\ell/4$; so only $j=0$ can occur, and then $\abs{y-y_0}<\sigma$, so $q$ lies in exactly one $W(I)$. Hence $q$ lies in at most two members.
-- If $x=s_j$ for some $j$: then $q\in D_j$ and $q$ lies in no $C_k$ and in no $W(I)$ (since $x\ge\eta$); so $q$ lies in exactly one member.
-- If $s_k<x<s_{k+1}$ for some $k$: then $q\in C_k$ and $q$ lies in no $W(I)$; it lies in $D_j$ only if $\abs{x-s_j}<\nu$, which for $\nu\le\ell/4$ happens for at most one $j$, namely $j=k$ or $j=k+1$. So $q$ lies in at most two members.
+::: pf-proof
+Let $q=(x,y)\in\bar S$. If $x<\eta$ then $q$ lies in at most two of the $W(I)$ and in no $C_k$, and it lies in $D_j$ only if $\abs{x-s_j}<\nu$; for $j\ge1$ that needs $x>s_j-\nu\ge\eta+\ell-\nu>\eta$ because $\nu\le\ell/4$, so only $j=0$ can occur, and then $\abs{y-y_0}<\sigma$ puts $q$ in exactly one $W(I)$; so at most two members contain $q$. If $x=s_j$ for some $j$ then $q\in D_j$ and $q$ lies in no $C_k$ and in no $W(I)$, since $x\ge\eta$; exactly one member. If $s_k<x<s_{k+1}$ then $q\in C_k$, $q$ lies in no $W(I)$, and $q$ lies in $D_j$ only if $\abs{x-s_j}<\nu$, which for $4\nu\le\ell$ happens for at most one $j$; so at most two members.
+:::
 
-So the family consisting of the sets $W(I)$, $C_k$ and $D_j$ is an open cover of $\bar S$, every member of which has diameter less than $\delta$ and no point of which lies in more than two members; by Step 1 it refines $\mathcal A$. As $\mathcal A$ was arbitrary, $\dim\bar S\le1$.
+:::
 
-**Step 6: the lower bound.** By Example 7 of §24 the space $\bar S$ is connected, it is metrizable hence $T_1$, and it has more than one point; by [[E-KWBI9]] every connected $T_1$ space with more than one point has dimension at least $1$. Hence
-$$
-\dim\bar S=1 .
-$$
+::: {.pf-step #upper-bound}
+$\dim\bar S\le1$.
+
+::: pf-proof
+The family of steps [#near-cover]{.pf-ref} and [#far-cover]{.pf-ref} is an open cover of $\bar S$ refining $\mathcal A$, since every member has diameter less than $\delta$ and therefore lies in a member of $\mathcal A$ by step [#compact-lebesgue]{.pf-ref}, and no point lies in more than two members by step [#order-two]{.pf-ref}. As $\mathcal A$ was arbitrary, the criterion of step [#criterion]{.pf-ref} gives $\dim\bar S\le1$.
+:::
+
+:::
+
+::: {.pf-step #lower-bound}
+$\dim\bar S\ge1$, and hence $\dim\bar S=1$.
+
+::: pf-proof
+$\bar S$ is connected by Munkres, Example 7 of §24, it is metrizable and hence $T_1$, and it has more than one point. A connected $T_1$ space with more than one point has dimension at least $1$, which is proved on [[E-KWBI9]] (Munkres §50 Exercise 2). With step [#upper-bound]{.pf-ref} this gives $\dim\bar S=1$.
+:::
+
+:::
+
+:::
+
 :::
