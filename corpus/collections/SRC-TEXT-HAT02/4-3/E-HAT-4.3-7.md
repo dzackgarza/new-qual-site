@@ -53,6 +53,20 @@ audit:
     $\mu^*u=\operatorname{pr}_1^*u+\operatorname{pr}_2^*u$ from the $n$-skeleton of
     $K\times K$, is the card's own. Mathematics unchanged and re-read; the exercise is on
     printed p. 419.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher, §4.3 Exercise 7, printed p. 419, and the retained solution of
+    Steven V. Sam, §4.3 Exercise 7, printed p. 25 of
+    `tmp/sources/hatcher-solutions-sam-2008.pdf`. The construction is correct: unitality gives
+    the restriction of $\mu^*u$ to each factor, the $n$-skeleton of $K\times K$ is the union of
+    the two factors because $K$ has cells only in dimensions $\ge n$, and the difference class
+    vanishes by Mayer--Vietoris. One gap repaired: step #universal read
+    $H^{n}(K;G)\approx\Hom(H_{n}(K),G)$ off the universal coefficient theorem without the Ext
+    term, and now names the extension and the vanishing of $\Ext(H_{n-1}(K),G)$ in the two
+    cases $n\ge2$ and $n=1$. No other change; the statement is unchanged. Not checked: no
+    certificate, and Sam's one-line answer was not expanded into an independent proof.
 ---
 
 ::: {.problem}
@@ -70,7 +84,7 @@ Throughout $K=K(G,n)$, $K\times K$ carries the product cell structure of two cop
 There is a class $u\in H^n(K;G)$ such that for every CW complex $X$ the map $\Phi:\langle X,K\rangle\to H^n(X;G)$, $\Phi([f])=f^*u$, is a bijection, natural in $X$.
 
 ::: pf-proof
-By the universal coefficient theorem $H^n(K;G)\approx\operatorname{Hom}(H_n(K),G)=\operatorname{Hom}(G,G)$, and $u$ is the class of the identity. That $\Phi$ is a bijection for every CW complex $X$ is the isomorphism $H^n(X;G)\approx\langle X,K(G,n)\rangle$ of §4.3, printed pp. 393–395; naturality, $\Phi([f\circ h])=h^*\Phi([f])$, is the functoriality of $H^n$ together with $(f\circ h)^*u=h^*f^*u$.
+By the universal coefficient theorem $H^n(K;G)$ is an extension of $\operatorname{Hom}(H_n(K),G)=\operatorname{Hom}(G,G)$ by $\Ext(H_{n-1}(K),G)$, and the Ext term vanishes: $H_{n-1}(K)=0$ for $n\ge2$ because $K$ is $(n-1)$-connected, and $H_0(K)=\ZZ$ is free for $n=1$. So $H^n(K;G)\approx\operatorname{Hom}(G,G)$, and $u$ is the class of the identity. That $\Phi$ is a bijection for every CW complex $X$ is the isomorphism $H^n(X;G)\approx\langle X,K(G,n)\rangle$ of §4.3, printed pp. 393–395; naturality, $\Phi([f\circ h])=h^*\Phi([f])$, is the functoriality of $H^n$ together with $(f\circ h)^*u=h^*f^*u$.
 
 :::
 
