@@ -21,4 +21,6 @@ $$
 d(f(x),f(y)) \leq c\, d(x,y) \quad\text{for all } x, y\in X.
 $$
 Then $f$ has a unique fixed point: there is exactly one $x^*\in X$ with $f(x^*) = x^*$.
+
+This is [@Rud76, ch. 9, Theorem 9.23]. The statement above adds that $X$ is nonempty, which [@Rud76] needs for the construction of $x_0$ and which the existence half of the theorem uses.
 :::
