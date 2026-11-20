@@ -34,8 +34,9 @@ Then $\Hom(\mcg, \mci) \cong \prod_x \Hom_{\ZZ}(\mcg_x, I_x)$. The stalk functor
 ::: {.remark title="Acyclic resolutions"}
 If $\mcf\to\mca^\bullet$ is a resolution by $\globsec{X;-}$-acyclic sheaves, then
 $$
-H^i(X,\mcf)\cong H^i\bigl(\globsec{X;\mca^\bullet}\bigr).
+H^i(X,\mcf)\cong H^i\bigl(\globsec{X;\mca^\bullet}\bigr)
 $$
-Flasque sheaves are $\globsec{X;-}$-acyclic, so flasque resolutions compute sheaf cohomology.
-The functors $(H^i)_{i\geq0}$ form the universal cohomological $\delta$-functor extending global sections. Thus a natural transformation from $H^0$ to the degree-zero term of another cohomological $\delta$-functor extends uniquely to a morphism from $(H^i)$ to that $\delta$-functor. Additional hypotheses are required for such a comparison to be an isomorphism in positive degrees.
+[@Har77, Proposition III.1.2A], which is the content of [[D-DEFACYC]].
+Flasque sheaves are $\globsec{X;-}$-acyclic ([[D-COHFLQ]]), so flasque resolutions compute sheaf cohomology, and so does the Godement resolution ([[D-COHGODEMENT]]).
+The functors $(H^i)_{i\geq0}$ form the universal cohomological $\delta$-functor extending global sections [@Har77, Corollary III.1.4]. Thus a natural transformation from $H^0$ to the degree-zero term of another cohomological $\delta$-functor extends uniquely to a morphism from $(H^i)$ to that $\delta$-functor. Additional hypotheses are required for such a comparison to be an isomorphism in positive degrees.
 :::
