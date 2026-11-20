@@ -15,7 +15,7 @@ topics:
 
 # The standard spaces
 
-The fundamental groups and homology groups of the spaces from which exam problems are built, with the definitions, cell structures and constructions in the cards below.
+The fundamental groups and homology groups of the spaces from which exam problems are built.
 The computations of the table are the examples of Hatcher, §§1.1 and 2.2 [@Hat02].
 
 | $X$ | $\pi_1$ | $H_*$ | Notes |
@@ -26,7 +26,7 @@ The computations of the table are the examples of Hatcher, §§1.1 and 2.2 [@Hat
 | $T^n$ | $\ZZ^n$ | $\ZZ^{\binom nk}$ in degree $k$ | universal cover $\RR^n$; product of circles |
 | $\RP^n$, $n\geq 2$ | $\ZZ/2$ | $\ZZ, \ZZ/2, 0, \ZZ/2, \ldots$ | universal cover $S^n$; $H_n = \ZZ$ iff $n$ odd |
 | $\CP^n$ | $1$ | $\ZZ$ in every even degree $\leq 2n$ | no odd cells, so all boundary maps vanish |
-| Klein bottle $K$ | $\generators{a,b \st aba\inverseof{b}}$ | $\ZZ, \ZZ\oplus\ZZ/2, 0$ | non-orientable, so $H_2 = 0$ |
+| Klein bottle $\KK$ | $\generators{a,b \st aba\inverseof{b}}$ | $\ZZ, \ZZ\oplus\ZZ/2, 0$ | non-orientable, so $H_2 = 0$ |
 | $\Sigma_g$, genus $g$ | $\generators{a_i,b_i \st \prod[a_i,b_i]}$ | $\ZZ, \ZZ^{2g}, \ZZ$ | closed orientable |
 | $N_k$, $k$ crosscaps | $\generators{a_i \st \prod a_i^2}$ | $\ZZ, \ZZ^{k-1}\oplus\ZZ/2, 0$ | closed non-orientable |
 | $\bigvee_n S^1$ | free on $n$ | $\ZZ, \ZZ^n$ | $\pi_1$ free, homology free |
