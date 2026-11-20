@@ -31,6 +31,8 @@ $$
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.5.3, printed p. 124. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §5, Exercise 2.5.3, printed p. 50, proves the equivalence through the same two maps, the obvious one from the right-hand side by taking global sections and its inverse read off on the distinguished opens $D(f)$, where the identifications reduce to $M_f$ and $\Gamma$.
+
 Use the canonical identifications $\widetilde M(D(f))\cong M_f$ and $\Gamma(X,\widetilde M)\cong M$ [@Har77, Proposition II.5.1].
 For $f\in A$, write $r_f:\mcf(X)\to\mcf(D(f))$ for restriction.
 
