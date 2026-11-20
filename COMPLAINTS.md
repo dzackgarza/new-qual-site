@@ -10574,3 +10574,12 @@ every step and found the QED labels in each.
 **Also open on the same search.** The proposition "Summing series by residues" on `wiki/complex-analysis/appendices/special-functions` states the four cotangent, cosecant, tangent and secant summation formulas with no card and no retained text stating them; no text in either set states them.
 
 **Uncertainty.** Won's sheet and McMullen's notes are a qual-review sheet and course notes, not textbooks; both citations name section and item and carry no page. No textbook statement of the symmetric Rouché or of the general fractional residue is retained.
+
+
+## 2026-11-20 (#176): the Ahl73 record and the retained Ahlfors are different printings — the citation stays, the mismatch is recorded
+
+**What was compared.** The `Ahl73` fields in `vocabularies/references.yaml` — Ahlfors, Lars V.; year 1973; McGraw-Hill; New York; title "Complex Analysis"; no edition field and no ISBN — against the title page of the retained text, `tmp/sources/ahlfors-1966-complex-analysis.md`: "COMPLEX ANALYSIS / an introduction to the theory of analytic functions of one complex variable", "second edition", McGraw-Hill Book Company, whose copyright page reads "Copyright © 1966 ... ISBN 07-00656-3".
+
+**Mismatch.** Year (1973 against 1966), edition (the entry names none; the copy is the second edition) and title (the entry omits the subtitle). The statement numbering used on `T-C7GBB` — ch. 2, §1.3, Theorem 1 — is that of the second edition.
+
+**Disposition.** The citation on `T-C7GBB` is kept. Canonical metadata is Zotero's and was not edited here; if a record for the 1966 second edition is added, the card should point at it.
