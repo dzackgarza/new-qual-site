@@ -86,6 +86,18 @@ audit:
     Its line $x=1/2$ asserted $-1/2+iy=\overline{1/2+iy}-1$, whose right side is $-1/2-iy$; it now
     reads $-1/2+iy=-\overline{1/2+iy}$, again with evenness. The conclusions, and the lines
     $y=0$ and $y=t/2$, are unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Record of the search behind the solution's provenance sentence, which the reader asked for where
+    no published solution set covers the Problem. Read: the head of R. C. Rhoades,
+    *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), whose
+    abstract describes it as solutions or hints to "many of the exercises", with one part per
+    chapter. Searched the open web for a set answering the end-of-chapter Problems of this book: no
+    document answering Chapter 9, Problem 4 was found. This search located no published set answering
+    this Problem, and none is retained in this repository. Not checked: whether such a set exists
+    outside what a web search reaches. The mathematics of the card is unchanged.
 ---
 
 ::: {.exercise}
