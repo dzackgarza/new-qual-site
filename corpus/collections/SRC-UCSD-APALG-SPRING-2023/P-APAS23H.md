@@ -38,7 +38,7 @@ Does $\CC^2$ admit a $G$-invariant inner product?
 
 ::: {.solution}
 
-The problem is Part B, Problem 4 of the Spring 2023 Applied Algebra Qualifying Exam, printed p. 4 of the Part B paper retained at `assets/attachments/Applied_Algebra_Part_B_SP23.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own.
+The problem is Part B, Problem 4 of the Spring 2023 Applied Algebra Qualifying Exam, in the Part B paper retained at `assets/attachments/Applied_Algebra_Part_B_SP23.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own.
 
 No.
 
