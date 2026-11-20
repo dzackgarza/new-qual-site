@@ -61,6 +61,15 @@ audit:
     step s5 adds that display to the first integral. The sentence now reads "minus the second
     integral equals", which is what is proved and what s5 uses; the coefficient $b_n=a_{-n}$ and
     everything else are unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Asterisk status read from the book: Chapter 3 sets its asterisks before Problems 1, 4 and 5
+    only, so none stands before Problem 3. The remark records that. The locator by numbered
+    statement is Chapter 3, Problem 3; the page readings recorded in the earlier events are
+    superseded by it, the events themselves standing as written. Not checked in this pass: the
+    wording of the statement and the argument.
 ---
 
 ::: {.exercise}
@@ -79,6 +88,10 @@ $$
 f(z)=\frac{1}{2\pi i}\int_{C_{r_2}}\frac{f(\zeta)}{\zeta-z}\,d\zeta-\frac{1}{2\pi i}\int_{C_{r_1}}\frac{f(\zeta)}{\zeta-z}\,d\zeta
 $$
 when $r_1<\abs{z-z_0}<r_2$, and argue as in the proof of Theorem 4.4, Chapter 2. Here $C_{r_1}$ and $C_{r_2}$ are the circles bounding the annulus.
+:::
+
+::: {.remark}
+The book sets no asterisk before this problem (Chapter 3, Problem 3).
 :::
 
 ::: {.solution}
