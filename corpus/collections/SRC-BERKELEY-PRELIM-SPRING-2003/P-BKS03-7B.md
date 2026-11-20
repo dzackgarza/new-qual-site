@@ -35,7 +35,7 @@ If $f$ has two distinct fixed points in the disk, prove that $f(z)=z$ identicall
 :::
 
 ::: {.solution}
-The published solution is the collection's own retained sheet, **Spring 2003 prelim solutions, Problem 7B, PDF p. 6** (`assets/attachments/s03solution.pdf`, the file named in this collection's `provenance`): the normalization by a disk automorphism, the function $h=g/z$, the bound $\abs h\le1$ by the maximum principle, and the conclusion $h\equiv1$ are that solution's. The sheet prints "$S(0)=x_1$" where its own notation has $z_1$; the card uses $z_1$. The card also separates the two uses of the maximum principle, which the sheet invokes twice in one sentence.
+The published solution is the collection's own retained sheet, **Spring 2003 prelim solutions, Problem 7B** (`assets/attachments/s03solution.pdf`, the file named in this collection's `provenance`): the normalization by a disk automorphism, the function $h=g/z$, the bound $\abs h\le1$ by the maximum principle, and the conclusion $h\equiv1$ are that solution's. The sheet prints "$S(0)=x_1$" where its own notation has $z_1$; the card uses $z_1$. The card also separates the two uses of the maximum principle, which the sheet invokes twice in one sentence.
 
 Throughout $f$ is analytic on $\DD=\theset{\abs z<1}$ with $\abs{f(z)}\le1$ there, and $z_1\ne z_2$ are the two fixed points, $f(z_j)=z_j$.
 

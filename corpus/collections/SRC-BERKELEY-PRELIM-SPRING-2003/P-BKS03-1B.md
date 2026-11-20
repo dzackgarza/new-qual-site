@@ -39,7 +39,7 @@ $$
 :::
 
 ::: {.solution}
-The published solution is the collection's own retained sheet, **Spring 2003 prelim solutions, Problem 1B, PDF p. 4** (`assets/attachments/s03solution.pdf`, the file named in this collection's `provenance`): the reduction to $\abs{J(f)}=1$, the conclusion $f(x)=c\pm x$, and the example $(x,y)\mapsto(e^{-y}x,e^y)$ are that solution's. The card supplies what the sheet leaves implicit — that the Jacobian condition holds *everywhere* and not merely almost everywhere, and the verification that the example is a bijection with Jacobian $1$ — and it treats the two parts in the order of the printed problem.
+The published solution is the collection's own retained sheet, **Spring 2003 prelim solutions, Problem 1B** (`assets/attachments/s03solution.pdf`, the file named in this collection's `provenance`): the reduction to $\abs{J(f)}=1$, the conclusion $f(x)=c\pm x$, and the example $(x,y)\mapsto(e^{-y}x,e^y)$ are that solution's. The card supplies what the sheet leaves implicit — that the Jacobian condition holds *everywhere* and not merely almost everywhere, and the verification that the example is a bijection with Jacobian $1$ — and it treats the two parts in the order of the printed problem.
 
 Throughout, a map is measure preserving when $m(f^{-1}E)=m(E)$ for every measurable $E$ for which the left side is defined, $J(f)$ is the Jacobian determinant, and $\RR_{>0}=(0,\infty)$.
 

@@ -39,7 +39,7 @@ for all $x\in C$ and $y\in D$.
 :::
 
 ::: {.solution}
-The published solution is the collection's own retained sheet, **Spring 2003 prelim solutions, Problem 5B, PDF p. 5** (`assets/attachments/s03solution.pdf`, the file named in this collection's `provenance`): the reduction to the bounded case, the truncating ball $B_{R_1}$ with $R_1=R_0+d_0+\varepsilon$, and the final compactness argument are that solution's. The card repairs one step of it: the sheet says "it follows that $D\cap B_{R_1}$ is non-empty" without proof, whereas that nonemptiness is what makes the truncated product nonempty; the argument is supplied in step [](#nonempty){.pf-ref} below.
+The published solution is the collection's own retained sheet, **Spring 2003 prelim solutions, Problem 5B** (`assets/attachments/s03solution.pdf`, the file named in this collection's `provenance`): the reduction to the bounded case, the truncating ball $B_{R_1}$ with $R_1=R_0+d_0+\varepsilon$, and the final compactness argument are that solution's. The card repairs one step of it: the sheet says "it follows that $D\cap B_{R_1}$ is non-empty" without proof, whereas that nonemptiness is what makes the truncated product nonempty; the argument is supplied in step [](#nonempty){.pf-ref} below.
 
 Throughout $C,D\subseteq\RR^n$ are nonempty, $C$ is closed and bounded and $D$ is closed, $d$ is the Euclidean metric, and
 $$

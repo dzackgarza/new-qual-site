@@ -39,7 +39,7 @@ Let $A\subseteq\RR$ be uncountable.
 :::
 
 ::: {.solution}
-The published solution is the collection's own retained sheet, **Spring 2003 prelim solutions, Problem 9B, PDF p. 6** (`assets/attachments/s03solution.pdf`, the file named in this collection's `provenance`): the split of $\RR$ into the half-open unit intervals, the boundedness argument for (a), and the reduction of (b) to a countable union of closed sets are that solution's. The card supplies three things the sheet uses without proof: that the set of accumulation points is closed, that its complement is a countable union of closed sets, and why an accumulation point of $A\cap C_n$ is one of $A$.
+The published solution is the collection's own retained sheet, **Spring 2003 prelim solutions, Problem 9B** (`assets/attachments/s03solution.pdf`, the file named in this collection's `provenance`): the split of $\RR$ into the half-open unit intervals, the boundedness argument for (a), and the reduction of (b) to a countable union of closed sets are that solution's. The card supplies three things the sheet uses without proof: that the set of accumulation points is closed, that its complement is a countable union of closed sets, and why an accumulation point of $A\cap C_n$ is one of $A$.
 
 Throughout $A\subseteq\RR$ is uncountable, and by the definition stated in the problem $p$ is an accumulation point of $A$ iff $p$ is the limit of a sequence of distinct terms of $A$. Write $B$ for the set of accumulation points of $A$.
 
