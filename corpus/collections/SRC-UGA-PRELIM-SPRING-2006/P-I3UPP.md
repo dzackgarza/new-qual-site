@@ -15,6 +15,21 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Eight steps asserted their claim with no justification and the card is now three steps each deriving its
+    claim: exactness of $y\,dx + x\,dy$, with the product rule giving $d(xy)$ and the fundamental theorem
+    for line integrals giving $f(B) - f(A)$, together with the remark that the value depends only on the
+    endpoints, which is what licenses computing it on any path; the evaluation $\frac{12}{25}$ from the two
+    endpoint values; and the independent check by parametrizing the arc, where $\sin(2t_0) = 2\sin t_0\cos
+    t_0$ is now written out rather than left implicit. The three label-claims are replaced by the assertions
+    their proofs establish, and the closing pf-qed, which only restated the value, is gone. Sources are cited
+    by numbered statement: the fundamental theorem for line integrals, and the product rule for
+    differentials; no page reference is written in the body of this card or in the event above. The
+    statement is unchanged. The collection retains the UGA prelim Spring 2006 paper and no solution sheet,
+    so the argument is the card's own.
 ---
 
 ::: {.problem}
@@ -26,98 +41,35 @@ Compute $$\int_\tau x\,dy + y\,dx.$$
 
 ::: pf
 
-::: pf-step
-Exact differential formulation:
+::: {.pf-step #potential}
+$\omega = y\,dx + x\,dy$ equals $d(xy)$, so $\int_\tau \omega = f(B) - f(A)$ for $f(x,y) = xy$ and every piecewise smooth path from $A$ to $B$.
 
 ::: pf-proof
-
-::: pf-step
-Consider the differential 1-form $\omega = y\,dx + x\,dy$.
-By the product rule for differentials:
-$$
-\omega = d(xy).
-$$
-
-:::
-
-::: pf-step
-Thus $\omega$ is an exact 1-form on $\RR^2$ with potential function $f(x, y) = xy$.
-
+The product rule for differentials gives $d(xy) = y\,dx + x\,dy = \omega$, so $\omega$ is exact on $\RR^2$ with potential $f(x,y) = xy$. The fundamental theorem for line integrals then says that for a piecewise smooth path $\tau$ from $A$ to $B$, $\int_\tau \omega = \int_\tau df = f(B) - f(A)$; in particular the value depends only on the endpoints, not on the path, which is why the arc of the circle may be replaced by any path with the same endpoints.
 :::
 
 :::
 
-:::
-
-::: pf-step
-Application of the Fundamental Theorem of Line Integrals:
-
-::: pf-proof
-
-::: pf-step
-Let $\tau$ be any piecewise smooth path starting at $A = (1, 0)$ and ending at $B = (3/5, 4/5)$.
-By the Fundamental Theorem for Line Integrals:
-$$
-\int_\tau (x\,dy + y\,dx) = \int_\tau d(xy) = f(B) - f(A).
-$$
-
-:::
-
-::: pf-step
-Evaluate the potential function at the endpoints:
-- $f(A) = f(1, 0) = 1 \cdot 0 = 0$,
-- $f(B) = f\left(\frac{3}{5}, \frac{4}{5}\right) = \frac{3}{5} \cdot \frac{4}{5} = \frac{12}{25}$.
-
-:::
-
-::: pf-step
-Therefore:
-$$
-\int_\tau (x\,dy + y\,dx) = \frac{12}{25} - 0 = \frac{12}{25}.
-$$
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-Alternative verification via trigonometric parametrization:
-
-::: pf-proof
-
-::: pf-step
-Parametrize the arc $\tau$ by $x(t) = \cos t, y(t) = \sin t$ for $t \in [0, t_0]$, where $\cos t_0 = 3/5$ and $\sin t_0 = 4/5$.
-Then $dx = -\sin t\,dt$ and $dy = \cos t\,dt$.
-
-:::
-
-::: pf-step
-The integrand becomes:
-$$
-x\,dy + y\,dx = (\cos^2 t - \sin^2 t)\,dt = \cos(2t)\,dt.
-$$
-
-:::
-
-::: pf-step
-Integrating:
-$$
-\int_0^{t_0} \cos(2t)\,dt = \left[ \frac{\sin(2t)}{2} \right]_0^{t_0} = \sin(t_0)\cos(t_0) = \frac{4}{5} \cdot \frac{3}{5} = \frac{12}{25}.
-$$
-
-:::
-
-:::
-
-:::
-
-::: pf-qed
-Conclusion:
+::: {.pf-step #value}
 $\int_\tau x\,dy + y\,dx = \frac{12}{25}$.
+
+::: pf-proof
+With $f(x,y) = xy$ and the endpoints $A = (1,0)$ and $B = (3/5, 4/5)$ one has $f(A) = 1 \cdot 0 = 0$ and $f(B) = \frac35 \cdot \frac45 = \frac{12}{25}$. The preceding step gives $\int_\tau (x\,dy + y\,dx) = f(B) - f(A) = \frac{12}{25} - 0 = \frac{12}{25}$.
 :::
 
 :::
 
+::: pf-step
+
+$\int_\tau x\,dy + y\,dx = \frac{12}{25}$ by direct parametrization, agreeing with the potential computation.
+
+::: pf-proof
+Parametrize the arc by $x(t) = \cos t$ and $y(t) = \sin t$ for $t \in [0, t_0]$, where $\cos t_0 = 3/5$ and $\sin t_0 = 4/5$; then $dx = -\sin t\,dt$ and $dy = \cos t\,dt$, so the integrand is
+$$x\,dy + y\,dx = \cos^2 t\,dt - \sin^2 t\,dt = \cos(2t)\,dt.$$
+Integrating, $\int_0^{t_0}\cos(2t)\,dt = \left[\frac{\sin(2t)}{2}\right]_0^{t_0} = \frac{\sin(2t_0)}{2} = \sin t_0\cos t_0 = \frac45\cdot\frac35 = \frac{12}{25}$, using $\sin(2t_0) = 2\sin t_0\cos t_0$. This agrees with step [](#value){.pf-ref}.
+:::
+
+:::
+
+:::
 :::
