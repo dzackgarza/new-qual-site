@@ -33,7 +33,7 @@ Classifying a group up to isomorphism becomes the search for normal subgroups of
 
 ::: {.example title="A normal Sylow subgroup with a complement"}
 Let $N$ be a normal Sylow subgroup of $G$ with a complement $H$, so that $N\intersect H=1$ and $NH=G$.
-The recognition theorem below applies to the pair, and $G$ is the semidirect product of $N$ by $H$ with twisting map $H\to\Aut(N)$ given by conjugation.
+The recognition theorem [[T-SB6AV]] applies to the pair, and $G$ is the semidirect product of $N$ by $H$ with twisting map $H\to\Aut(N)$ given by conjugation.
 :::
 
 [[T-SB6AV]]
