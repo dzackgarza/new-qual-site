@@ -352,6 +352,28 @@ audit:
     "schema and Markdown parsing OK (single card)", and tools/check_macros.py,
     both exit 0. Not checked: the printed copies, and no other page of either
     paper.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #164, the reader's third NOT MET item, does not hold, and no
+    mathematical change follows from it. The reader reads Proposition 6 as
+    assuming degree n > 3; the printed statement assumes n >= 3. PDF p. 6 of
+    tmp/sources/eisenbud-van-de-ven-1981-normal-bundles-rational-space-curves.pdf,
+    folio 458, was rendered at 600 dpi and read as an image: "Proposition 6. A
+    smooth rational space-curve C of degree n >= 3 which is contained in a
+    smooth quadric has normal bundle N_C = O(2n-1) + O(2n-1)." The glyph is the
+    two-stroke greater-or-equal, and the text layer prints ">" because the
+    lower bar is dropped in extraction, which is what the reader read. The
+    paper also treats degree 3 in its own right: Section 2, "Realising the
+    Splitting of the Normal Bundle", printed p. 462, opens "Let C be a smooth
+    rational curve of degree 3" and states "In fact, N = O_c(5) + O_c(5)". The
+    introduction's n >= 4 is qualified as not holding for the auxiliary curves
+    and is not the hypothesis of the proposition. Lines 371 and 707 therefore
+    stand, and the application at n = 3 is the paper's degree 3, which is the
+    card's n = 2 for the twisted cubic. Not checked: the printed journal, only
+    the retained PDF.
+
 ---
 
 ::: {.problem}
