@@ -29,7 +29,7 @@ title: Summary of standard topics
 
 - [[PR-LR35S|Top homology of a closed manifold]]
 
-- Reduced homology and cohomology, [[PR-B6BB2|additive over a wedge]]
+- [[PR-B6BB2|Reduced homology]] and cohomology, additive over a wedge
 
 - [[topology/homology/homology#Relative homology|Relative homology]]
 
