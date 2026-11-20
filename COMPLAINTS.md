@@ -10741,3 +10741,64 @@ does not occur in any of the 654 files in `tmp/sources`.
 **Uncertainty:** the two rules as they stand cannot both be met by a lane. `CARD-04` says the retired duplicate is deleted and keeps no alias; `QUAL-11` as `tools/qualc/authoring.py` enforces it refuses any commit that removes an audit event dated before the commit, and a deleted card has no file in which to hold the new record the rule asks for. One of them needs the owner's decision: either an exemption in the gate for a card retired as a duplicate, naming the survivor, or authorisation to delete a record.
 
 **Repair:** the withdrawal above, and this record. The duplicate itself stands open, and the page-level half of `#174`'s item is met: the theorem is transcluded once from `P-FHW1-02`.
+
+## 2026-11-20: `wiki/algebraic-geometry/resources.md` — the unkeyed lines are given numbered statements or destinations, and what the page still carries
+
+**Object and need:** the last open item of [#175](https://github.com/dzackgarza/new-qual-site/issues/175). Ten lines of the page identified a work with no `[@Key]`, and `vocabularies/references.yaml` holds no key for any of FGA, EGA, SGA, GAGA, the three Edidin items, Fantechi, Mumford's *Picard groups of moduli problems*, Vistoli or Litt. `tools/sync_bibliography.py` exports only keys already cited in `wiki/` and `corpus/`, and the Zotero endpoint at `127.0.0.1:23119` does not answer, so no key could be created and no line could be repaired by citation except through a work that already has one.
+
+**Observed evidence:** one of the ten is stated as a numbered theorem by a retained keyed text. Serre's GAGA is Theorem 2.1 of Hartshorne's Appendix B, and Chow's theorem is Theorem 2.2 there, both in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the page's GAGA line now carries `[@Har77, Appendix B, Theorem 2.1]`, and `corpus/theory/Algebraic_Geometry/T-GAGA.md` states the same two results with the same two citations, which it previously stated with none. The other nine have no retained text that states them: a content search of `tmp/sources` for FGA, SGA, Edidin, Fantechi, Vistoli and the Picard paper finds nothing, and the only retained EGA is volume II. They are therefore navigation, and the discriminator applied is the publication record: an entry names the document behind its link and says what the reader finds there, and any imprint — journal, series, volume, publisher, year — is what only a key may assert. Three carried an imprint (*Notices of the AMS* 50 (2003), European Congress of Mathematics (2000), and Olsson's *Algebraic Spaces and Stacks*, AMS Colloquium Publications 62 (2016), the last with no link at all and no reliance anywhere in the corpus, removed). Every destination was fetched in this session: the FGA and SGA hosts are gone (no A record for `www.math.jussieu.fr`; `modular.fas.harvard.edu` resolves and does not answer) and the lines now point at archived copies that answer 200, the GAGA translation at mcmaster answers 403 and is dropped, and the two Litt parts moved off Stanford (404 on the whole `~dlitt` path) to `daniellitt.com`, where both answer 200. Two further repairs came out of the same reading: three local PDFs were linked at `/assets/attachments/`, where no file exists — `tools/qualc/static_site.py` only rescues an href whose path starts with `assets/`, so those three were 404 on the site — and now link the files that do exist at `assets/algebraic-geometry/resources/`; and two labels contradicted their files, the Kawamata volume being a paper by Kawamata, Matsuda and Matsuki rather than lecture notes, and the Tripos scan being the Part II papers 2009--2021 rather than a Part III collection.
+
+**Impact and owner:** the page and the two cards named above. `corpus/theory/Algebraic_Geometry/D-SCHRELSPECPROJ.md`'s remark called projectivity "projective in the sense of EGA" without a number; it now cites [@Vak25, Definition 17.3.1] and [@Vak25, Exercise 17.3.A(c)] for the claim, keeps the EGA attribution as numbered statements (Définition 5.5.2, Proposition 5.5.1), and states the hypothesis under which the two definitions agree — the base admitting an ample invertible sheaf — which is what the retained Hartshorne text warns about and what the card previously compressed into "when $X$ is affine".
+
+**Uncertainty:** the discriminator is an editorial reading, and the stricter one is available: if an author and title inside a link label are themselves a bibliographic claim, then seven more lines still need keys and could not have got them this session. The reading taken is the one the repository already applies on `wiki/algebra/resources/books-notes.md` and `wiki/topology/resources/solutions.md`, where a document with no bibliography record is identified by author and title and then located by numbered contents. Four further defects on this page are open and are recorded here rather than repaired blind: the Dolgachev entry names a published book under a host that no longer resolves on either URL, while `P-AGH5415GENPOSITION` relies on Dolgachev and the corpus holds a retained transcription of a different Dolgachev work; the `### Problem sets` heading still holds four solution documents and two course pages (`RES-01`); `(compare Stacks Project 32.14 on universally closed morphisms)` names a locator no tag or link confirms; and the Borcherds entry dates the 256A course to 1994 while the bibliography record carries 2012, which one of the two should settle.
+
+**Repair:** this entry and the commit that carries it. Not checked: no whole-corpus `qualc check` was run; `qualc.authoring check` passes for both cards and Pandoc parses the page with the bibliography.
+
+## 2026-11-20, #170: the eleven cards cite by numbered statement only, and four more of their own parts read
+
+**Object and need:** the eleven cards of [#170](https://github.com/dzackgarza/new-qual-site/issues/170). The
+issue's acceptance is that each card's own part is read correct, or repaired, by a reader other than its
+author; the owner's further instruction of this date is that no card cite a page, every reference naming the
+chapter, section and numbered statement instead.
+
+**Locator pass, finished for all eleven.** No page number remains in the problem block, the solution block,
+the proof steps or a remark of `E-HAT-2.B-3`, `-2.B-4`, `-2.B-5`, `-2.B-7`, `-2.B-9`, `E-HAT-2.C-1`,
+`-2.C-6`, `E-HAT-3.3-21`, `E-HAT-4.1-1`, `-4.1-7` and `E-HAT-4.A-1`. Five were already clean; six were
+changed this pass, each with its own commit and its own `qualc.authoring check` green: `E-HAT-2.B-3` cites
+the reduced Mayer--Vietoris sequence of §2.2 and Bredon's Corollary 19.3 and Theorem 19.4; `E-HAT-2.B-4`
+cites its own exercise, Exercise 2.B.3 and Theorem 2B.3; `E-HAT-2.B-5` cites Brown's Theorem 5, Hatcher's
+Proposition 2B.1(a) and (b), Bredon's Theorem 19.11 and Putman's §1 and §3; `E-HAT-2.B-7` cites Exercise
+2.B.7's figure, Example 2B.2, Riebe's Figure 1 and Bredon's Figure IV-9; `E-HAT-3.3-21` cites Eda--Kawamura
+Theorem 3.1, Wiegold and Frankland's Theorems 2.1 and 1.3; `E-HAT-4.1-7` cites Hatcher's §4.1 with Theorem
+4.3, tom Dieck's §6.2 with Propositions (6.2.1), (6.2.2), (6.2.3) and Remark (6.1.4), May's Ch. 7 §6 and
+Ch. 9 §5, and Davis--Kirk's Theorem 6.63 with Definition 6.52 and Theorem 6.53.
+
+**The limit on that pass, measured rather than asserted.** 458 page references remain in the same eleven
+cards, all of them inside audit events dated 2026-11-06 through 2026-11-19 — none in an event of this date.
+`QUAL-11` makes a dated event append-only, and the shared gate names a card and an event and refuses the
+commit that would change one; `--no-verify` is barred. So the events keep the text their sessions wrote,
+page references included, and the cards' live text offers citations by numbered statement only. Whether a
+historical event's page reference is a page reference the card "carries" is a policy question for the owner,
+not something to settle by rewriting records.
+
+**Four of the eleven read step by step in this batch, all found correct, no step changed.**
+`E-HAT-4.A-1`: the normalisation $F(z,t)=H(z,t)\gamma(t)^{-1}$ is continuous, starts at $f$, ends at $g$ and
+carries $z_0$ to $x_0$ for every $t$, with no hypothesis on $Z$ beyond pointedness and homotopy; tom Dieck's
+Lemma (2.7.4) is the circle case and its surjectivity half is not asked. `E-HAT-4.1-1`: the interchange
+$(f+g)+'(h+k)=(f+'h)+(g+'k)$ was checked in all four quarters as an identity of maps, the unit homotopy $H_t$
+is continuous and stationary on the boundary, and tom Dieck's (4.3.1) chain gives $+_1=+_2$ with
+commutativity and associativity. `E-HAT-2.C-6`: the model has $\chi=2-4m$, $f$ is a free involution with
+$f\circ f=\mathrm{id}$, $H_1$ is $\bigoplus_{i=1}^{2m}H_1(T_i)$ of rank $4m$ on which $f_*$ is $m$
+transpositions, hence trace $0$, $f_*$ on $H_2$ is the local degree $-1$, and $\tau(f)=1-0-1=0$.
+`E-HAT-2.C-1`: the lifted-cover vertex count gives $e(K)\ge n\,e(L)$, the fundamental-cycle form agrees,
+$e(L)\ge3$, the polygon attains $3n$, and the cases $n<0$ and $n=0$ give $e(K)=3\max\{1,\abs n\}$ with
+$e(L)=3$, so the two readings of the question — the pair and the total — agree.
+
+**Checks.** `qualc.authoring check` on each card touched, green. No whole-corpus `qualc check` was run in
+this turn, and no source obligation moves: none of the eleven has a located complete published solution.
+
+**Commits.** `E-HAT-2.B-3` `1d8840166c`, `-2.B-4` `8d4262a7dd`, `-2.B-5` `af0e1ab4b0`, `-2.B-7` `d6247b9e79`,
+`E-HAT-3.3-21` `1001c802d9`, `E-HAT-4.1-7` `afdef40405`; the four reads `E-HAT-4.A-1` `7a2145b115`,
+`E-HAT-4.1-1` `e2b206cf8b`, `E-HAT-2.C-6` `109b656d72` with its locator commit `dfcb9f6eb0`, and
+`E-HAT-2.C-1` `9383a69e9a`. `E-HAT-2.B-9`'s repair is `a6ff1e6bbe`, its locator pass `fe536e4369`, and the
+record of that repair `97a092da0e`.
