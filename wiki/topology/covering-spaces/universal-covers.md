@@ -12,6 +12,17 @@ topics:
 
 The basic properties of a covering map, the lifting criteria, deck transformations, and the classification of connected covering spaces by subgroups of the fundamental group.
 
+## Basic properties
+
+[[D-COVCHI]]
+
+[[D-COVORI]]
+
+[[D-COVBND]]
+
+[[T-F4PQY]]
+
+
 ## Universal covers
 
 [[D-MWD2L]]
@@ -37,11 +48,6 @@ X
 [[T-SKJB2]]
 
 [[T-EF5IX]]
-
-::: {.remark title="Lifts from simply connected spaces"}
-If $Y$ is simply connected, path-connected, and locally path-connected, then $f_*(\pi_1(Y))$ is trivial, so every map $f\colon Y\to X$ lifts to $\tilde X$.
-
-:::
 
 [[PR-R5EN3]]
 
