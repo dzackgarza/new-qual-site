@@ -13,6 +13,6 @@ The representation-theory problems of the compiled preliminary examinations are 
 
 - [[SRC-ART-ALG-2003-2009-PRELIMS]]
 
-## Notes
+## The statements of the chapter
 
 The statements used in this chapter are on [[algebra/representations/index|Representations]]: Maschke's theorem, Schur's lemma, the orthogonality relations, and the construction of a character table.
