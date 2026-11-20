@@ -36,7 +36,11 @@ Let $A\subseteq X$ be a subspace with inclusion $\iota\colon A\injects X$.
 (b) Continuous maps $r\colon X\to A$ with $r\circ\iota=\id_A$ correspond bijectively to continuous maps $\rho\colon X\to X$ with $\rho(X)=A$ and $\rho(a)=a$ for all $a\in A$, via $\rho=\iota\circ r$.
 :::
 
-::: {.remark}
-If $r$ is a retraction and $a_0\in A$, then $r_*\circ\iota_* = \id$ on $\pi_1(A, a_0)$ and on $H_n(A)$, so $\iota_*\colon \pi_1(A, a_0)\to\pi_1(X, a_0)$ and $\iota_*\colon H_n(A)\to H_n(X)$ are injective.
-For every point $x_0$ of a topological space $X$, the subspace $\theset{x_0}$ is a retract of $X$, via the constant map $X\to\theset{x_0}$.
+::: {.proposition}
+Let $A\subseteq X$ be a subspace with inclusion $\iota\colon A\injects X$, and let $r\colon X\to A$ be a retraction.
+Then $r_*\circ\iota_* = \id$ on $\pi_1(A, a_0)$ for every $a_0\in A$ and on $H_n(A)$ for every $n$, so $\iota_*\colon \pi_1(A, a_0)\to\pi_1(X, a_0)$ and $\iota_*\colon H_n(A)\to H_n(X)$ are injective [@Hat02, Proposition 1.17; §2.2, Splitting Lemma].
+:::
+
+::: {.example}
+For every point $x_0$ of a topological space $X$, the subspace $\theset{x_0}$ is a retract of $X$, via the constant map $X\to\theset{x_0}$ [@Hat02, Chapter 0].
 :::
