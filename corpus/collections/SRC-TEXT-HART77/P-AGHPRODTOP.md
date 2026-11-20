@@ -27,6 +27,17 @@ audit:
     mathematics; nothing else differs, and the exercise carries no star. No repair
     was needed. What was not checked: the solution was read only for consistency
     with the statement, not re-derived.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card stood in queue D: its solution was prose with no numbered step. It is now a `pf`
+    with three steps, each carrying a `pf-proof`, and the two remarks that follow the proof are
+    kept verbatim outside it. The diagonal counterexample and both remarks are unchanged. Cited
+    by number only: Exercise I.1.1 of the book for the closed sets of $\AA^1$ being the finite
+    ones, and the definition of the product topology. Checked: that a nonempty Zariski-open
+    subset of $\AA^1$ is the complement of a finite set, and that a $z$ avoiding finitely many
+    values exists over an infinite field.
 ---
 
 ::: {.problem}
@@ -35,13 +46,46 @@ Show that the Zariski topology on $\AA^2$ is not the product topology of the Zar
 :::
 
 ::: {.solution}
-The diagonal $\Delta = V(x-y)$ is Zariski closed in $\AA^2$, and it is not closed in the product topology.
 
-Suppose it were.
-Then $\AA^2 \sm \Delta$ is open in the product, so it contains a basic box $U \times V$ around each of its points.
-On $\AA^1$ the Zariski topology is cofinite, so $U = \AA^1 \sm \theset{p_1,\ldots,p_m}$ and $V = \AA^1 \sm \theset{q_1,\ldots,q_n}$.
-Over an infinite field pick $z$ distinct from every $p_i$ and $q_j$; then $(z,z)$ lies in $U \times V$ and on $\Delta$, contradicting $U \times V \subseteq \AA^2 \sm \Delta$.
+::: pf
 
+::: pf-step
+
+The diagonal $\Delta=V(x-y)$ is Zariski closed in $\AA^2$, and it is not closed in the product topology on $\AA^1\times\AA^1$.
+
+::: pf-proof
+
+$x-y$ is a polynomial, so its zero set is Zariski closed. For the second claim it suffices, by the definition of the product topology, to show that no basic open box $U\times V$ contained in the complement of $\Delta$ can contain a point of the complement: the complement is then not open in the product topology.
+
+:::
+
+:::
+
+::: pf-step
+
+Suppose $\Delta$ were closed in the product topology. Then $\AA^2\setminus\Delta$ is open in the product, so it contains a basic box $U\times V$ around each of its points. On $\AA^1$ the Zariski topology is cofinite, so $U=\AA^1\setminus\{p_1,\dots,p_m\}$ and $V=\AA^1\setminus\{q_1,\dots,q_n\}$.
+
+::: pf-proof
+
+If $\Delta$ were closed, its complement would be open; a basic open set of the product is a product $U\times V$ of nonempty open subsets of the factors, and a nonempty open subset of $\AA^1$ in the Zariski topology is the complement of a finite set, because the closed sets of $\AA^1$ are the finite sets and $\AA^1$ itself (the zero sets of polynomials in one variable, Hartshorne Exercise I.1.1).
+
+:::
+
+:::
+
+::: pf-step
+
+Over an infinite field pick $z$ distinct from every $p_i$ and $q_j$; then $(z,z)$ lies in $U\times V$ and on $\Delta$, contradicting $U\times V\subseteq\AA^2\setminus\Delta$. Hence the Zariski topology on $\AA^2$ is not the product topology.
+
+::: pf-proof
+
+The field is infinite, so only finitely many values $p_1,\dots,p_m,q_1,\dots,q_n$ are excluded and a $z$ outside them exists. Then $z\in U$ and $z\in V$, so $(z,z)\in U\times V$, while $z-z=0$ shows $(z,z)\in V(x-y)=\Delta$; that contradicts $U\times V\subseteq\AA^2\setminus\Delta$. Since the diagonal is Zariski closed and not product-closed, the two topologies differ.
+
+:::
+
+:::
+
+:::
 :::
 
 ::: {.remark}
