@@ -1,101 +1,19 @@
 ---
+title: Examples of covering spaces
 order: 220
 topics:
 - Covering Spaces
-- Covering Transformations
 - Universal Cover
-- Group Actions
 - Free Groups
-- Free Products
-title: Covering spaces and deck transformations
 ---
 
-# Covering spaces and deck transformations
+# Examples of covering spaces
 
-![An evenly covered open set $U$: $p^{-1}(U)$ is a disjoint union of open sets, each mapped homeomorphically onto $U$ by $p$](../../../../assets/assets/Topology/figures/image_2021-01-10-13-45-42.png)
+[[D-ANO2D]]
 
-![A covering space of a disk with three holes, with a loop based at $x$ and its lift](../../../../assets/assets/Topology/figures/image_2021-01-09-00-19-03.png)
+The covering maps below are the standard ones: the universal cover of a circle, the two-sheeted covers of projective space and of the Klein bottle, and the universal covers of wedges.
 
-## Basic properties
-
-::: {.fact title="Euler characteristics are multiplicative on covering spaces"}
-For a finite CW complex $B$ and an $n$-sheeted [[D-ANO2D|covering map]] $p\colon A \to B$ with $n$ finite,
-$$
-\chi(A) = n\, \chi(B).
-$$
-
-:::
-
-::: {.fact}
-A covering space of an [[D-6CI7D|orientable]] manifold is an orientable manifold.
-
-:::
-
-::: {.fact}
-If $B$ is a manifold with boundary and $p\colon A\to B$ is a covering map, then $A$ is a manifold with boundary and $p^{-1}(\bd B)=\bd A$.
-
-:::
-
-::: {.fact}
-For a path-connected covering space $\tilde X$ of a path-connected, locally path-connected space $X$, the deck group acts freely on each fiber, and it acts transitively on each fiber if and only if the cover is [[D-MWD2L|normal]], which holds if and only if $p_*\pi_1(\tilde X,\tilde x_0)$ is a normal subgroup of $\pi_1(X,x_0)$.
-
-:::
-
-## Universal covers
-
-[[D-MWD2L]]
-
-[[PR-UBJ6P]]
-
-::: {.remark}
-A Galois cover $\tilde X\to X$ with $\Deck(\tilde X) = G$ is equivalently a principal $G\dash$bundle for a discrete $G$:
-
-\begin{tikzcd}
-G 
-  \ar[r] 
-& 
-\tilde X
-  \ar[d] 
-\\
-& 
-X 
-\end{tikzcd}
-
-:::
-
-[[T-SKJB2]]
-
-[[T-EF5IX]]
-
-::: {.remark title="Lifts from simply connected spaces"}
-If $Y$ is simply connected, path-connected, and locally path-connected, then $f_*(\pi_1(Y))$ is trivial, so every map $f\colon Y\to X$ lifts to $\tilde X$.
-
-:::
-
-[[PR-R5EN3]]
-
-[[T-F4PQY]]
-
-::: {.theorem title="Classification of covering spaces"}
-Let $X$ be path-connected, locally path-connected, and [[D-EPQ54|semilocally simply connected]], with basepoint $x_0$.
-Sending a connected covering space $p\colon(\tilde X,\tilde x_0)\to(X,x_0)$ to $p_*\pi_1(\tilde X,\tilde x_0)$ gives bijections
-$$
-\begin{aligned}
-\correspond{\text{connected based covering spaces } (\tilde X,\tilde x_0)\to(X,x_0)}/\text{based isomorphism}
-&\mapstofrom
-\correspond{\text{subgroups } H\leq\pi_1(X,x_0)}, \\
-\correspond{\text{connected covering spaces } \tilde X\to X}/\text{isomorphism over } X
-&\mapstofrom
-\correspond{\text{subgroups } H\leq\pi_1(X,x_0)}/\text{conjugacy},
-\end{aligned}
-$$
-under which normal covering spaces correspond to normal subgroups $H\normal\pi_1(X,x_0)$ [@Hat02, Theorem 1.38].
-
-:::
-
-[[PR-BHJGY]]
-
-### Examples
+## Examples
 
 ::: {.example title="Common covering spaces"}
 In each diagram the group on the left is the deck group of the covering map on the right.
@@ -126,7 +44,6 @@ Any subgroup $H \leq \pi_1(S^1; 1) = \ZZ$ is of the form $H = n\ZZ$, and the cor
 	\arrow[dashed, from=2-3, to=1-4]
 	\arrow[dotted, from=4-3, to=3-4]
 \end{tikzcd}
-
 
 \begin{tikzcd}
 \ZZ/n
@@ -270,7 +187,7 @@ In the tree describing the universal cover, each red vertex is a copy of $S^2$ c
 
 :::
 
-### Applications
+## Applications
 
 [[T-TQ4J3]]
 
@@ -284,3 +201,4 @@ In the tree describing the universal cover, each red vertex is a copy of $S^2$ c
 A one-sheeted covering map $f\colon X\to Y$ is a homeomorphism: it is a bijective local homeomorphism, hence an open continuous bijection.
 
 :::
+
