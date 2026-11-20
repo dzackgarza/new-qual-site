@@ -9509,3 +9509,19 @@ measured, not carried.
 **Checks.** No card changed, so no `qualc.authoring check` was run on a card.
 
 **Uncertainty.** The card cites Exercise 7 of §3 of the National Taiwan University set at PDF pp. 13--14; those pages were not re-opened this round, and nothing here is a check of that source, only of the mathematics the card states. Step texts not read in full: `summary-table` and the (c) and (e) steps beyond their $\delta$ labels, though their content is what the recomputation above establishes. #168's acceptance is now met for every §V.3 card it names, and what remains is IV.2.3(h), IV.3.11(b), V.2.12, V.2.13, V.4.16, V.5.6 and V.5.8(b).
+
+## 2026-11-19: #168's twelfth round — IV.2.3(h)'s three named steps read, all correct
+
+**Object and need.** The eleventh round closed §V.3; the next card #168 names is `P-AGH423DUALCURVE` (IV.2.3), whose steps `s4`, `s7` and `s12` the issue singles out, together with the printed "(h)" whose "tacnode" the issue records as false. This round read the statement and the three steps. No card is changed.
+
+**The statement is the printed one.** Printed (h), on printed p. 358, reads "A plane quartic curve has exactly 28 bitangents. (This holds even if the curve has a tangent with four-fold contact, provided such a line is counted as a bitangent; the corresponding point of the dual curve $X^*$ is a unibranch singular point of multiplicity $3$)", and the card states exactly that, unibranch triple point rather than tacnode. A tangent with four-fold contact gives one branch of the dual of multiplicity $r-1=3$, which is unibranch and not a tacnode, so the printed parenthetical is right and the reading the issue warns about is not on the card.
+
+**`s4` is correct, and its load-bearing point is the tangent direction.** Reiser, printed pp. 356--357. At a contact point with $M=V(x)$ the curve is $x=uy^2$ with $u$ a unit, so $y$ is a local parameter and the dual branch is $t\mapsto[1:-(u't^2+2u(t)t):u't^3+u(t)t^2]$, whose derivative at $0$ is $(-2u(0),0)\ne0$: the branch is nonsingular and its tangent direction depends only on $M$, so branches belonging to distinct contact points have distinct tangents, which is the ordinary $s$-fold point.
+
+**`s7`'s number is consistent with Hurwitz.** For $O$ off $X$ and off all inflectional and multiple tangents, projection from $O$ is a degree-$d$ morphism $X\to\PP^1$ ramified exactly where $O\in T_P$, with index $2$; Hurwitz gives $\sum(e_P-1)=2g-2+2d=(d-1)(d-2)-2+2d=d(d-1)$, the degree of the dual, and the card's $(d+1)(d-2)$ for $O\in X$ is that count with the two coincidences at $O$ itself removed, which is what "(d) ... not counting the tangent at $O$" asks.
+
+**`s12`'s count checks out.** With $m=d(d-1)$, $p_a(X^*)=\frac{(m-1)(m-2)}2$, the genus formula at the hypothesis gives $b=\frac{(m-1)(m-2)}2-\frac{(d-1)(d-2)}2-3d(d-2)$, and expanding with $u=d^2-d$ gives $\frac{d^4-2d^3-9d^2+18d}{2}=\frac12d(d-2)(d-3)(d+3)$, which is the displayed answer. The exclusions it needs are the ones the hypothesis supplies: a contact of order $r\ge4$ would give a dual branch of multiplicity $r-1\ge3$, and a multiple tangent at three or more points a point of multiplicity at least three, neither a node nor an ordinary cusp.
+
+**Checks.** No card changed, so no `qualc.authoring check` was run on a card.
+
+**Uncertainty.** Read: the statement, `s4`, `s7` and `s12`, and the counts verified above; Reiser's printed pp. 356--358 are the card's citations and were not re-opened, and the printed (h) was taken from the text version. Not read: `s1`--`s3`, `s5`, `s6`, `s8`--`s11`, `s13` and `s14`, which the three steps rest on. So #168's acceptance is met for the three named steps and not for the card. Still unread: IV.3.11(b), V.2.12, V.2.13, V.4.16, V.5.6, V.5.8(b).
