@@ -211,7 +211,7 @@ The pairs $(n,k)$ are countable and each $S_{n,k}$ is countable by step [#counta
 (c) One-point sets in $X$ are closed, so $X$ is $T_1$.
 
 ::: pf-proof
-Let $y\ne z$. If $z$ is an ordinary point, a short horizontal segment through $z$ avoiding $y$ and the top points $p_{n,k}$ is a type-(i) neighbourhood of $z$ missing $y$ if $y$ has the same height, and otherwise any short type-(i) segment through $z$ misses $y$; if $z=p_{n,k}$, the type-(ii) set obtained from $C_{n,k}$ by deleting $y$ as well is a neighbourhood of $z$ missing $y$; if $z=a$ (respectively $z=b$), the type-(iii) sets $B_m$ with $m$ large (the type-(iv) sets with $m$ small) contain $z$ and miss $y$ once $|m|$ exceeds the modulus of $y$'s first coordinate.
+Let $y\ne z$. If $z$ is an ordinary point, a short horizontal segment through $z$ avoiding $y$ and the top points $p_{n,k}$ is a type-(i) neighbourhood of $z$ missing $y$ if $y$ has the same height, and otherwise any short type-(i) segment through $z$ misses $y$; if $z=p_{n,k}$, the type-(ii) set obtained from $C_{n,k}$ by deleting $y$ as well is a neighbourhood of $z$ missing $y$; if $z=a$ (respectively $z=b$), the type-(iii) sets $B_m$ with $m$ large (the type-(iv) sets with $m$ small) contain $z$ and miss $y$ once $\abs{m}$ exceeds the modulus of $y$'s first coordinate.
 :::
 
 :::
