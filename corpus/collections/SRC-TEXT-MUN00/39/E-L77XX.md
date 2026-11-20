@@ -57,6 +57,24 @@ audit:
     at the (n+1)-st coordinate, and all contain the origin. No repair to the statement.
     What was not done: the blog post itself is not in the checkout, so its wording was not
     re-read this pass; the mathematics below stands on its own check.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read against the published solution, Feryll, *Praying For Stockholm*, "Countable
+    Local Finiteness (6.39.5-6)" (26 December 2014), fetched again this date at the URL in the
+    solution. The post's three claims are the card's: each $\mathcal B_n$ is locally finite because
+    two members with different binary tails are at uniform distance $1$; $\mathcal B_1$ is
+    uncountable because its tails are the subsets of the integers above $1$; and the family is not
+    locally finite at the constant sequence $1$, which lies in every member whose tail is constant
+    $1$. The card's radius-$1/3$ ball and its witness $\mathbf 0$ are its own renderings of the
+    same arguments, and both are correct. What was corrected: the sentence proving the $C_n$
+    pairwise distinct said that at the $(n+1)$-st coordinate "the first is free and the second is
+    $0$", which is backwards --- $C_n$ has $\{0\}$ there and $C_m$ with $m>n$ has $\RR$, since
+    $n+1\le m$ --- and it now reads that way. The clause about a web page having no printed page is
+    dropped from the solution. Each of the three claims stands. Citation by number: §39 Exercise 6,
+    read in `tmp/sources/munkres-2000-topology.md`.
+
 ---
 
 ::: {.exercise}
@@ -67,7 +85,7 @@ Show that the collection $\mathcal{B} = \bigcup \mathcal{B}_n$ is countably loca
 :::
 
 ::: {.solution}
-The construction and the three claims are those of the retained published solution, **Feryll, *Praying For Stockholm*, "Countable Local Finiteness (6.39.5-6)" (26 December 2014), http://feryll.blogspot.com/2014/12/countable-local-finiteness-6395-6.html**, read 2026-11-10; being a web page it has no printed page, and it is cited by its URL and the date read. The steps below are its argument, with the ball of radius $1/3$ used where the post's remark speaks of the $1/2$-neighbourhood (see the audit).
+The construction and the three claims are those of the retained published solution, **Feryll, *Praying For Stockholm*, "Countable Local Finiteness (6.39.5-6)" (26 December 2014), http://feryll.blogspot.com/2014/12/countable-local-finiteness-6395-6.html**, read 2026-11-10 and again on 2026-11-20, and cited by its URL and the date read. The steps below are its argument, with the ball of radius $1/3$ used where the post's remark speaks of the $1/2$-neighbourhood (see the audit).
 
 Throughout, $\RR^\omega$ carries the uniform metric $\bar\rho(x,y)=\sup_i\min\{\abs{x_i-y_i},1\}$ (Munkres, *Topology* (2000), §20), the exercise is §39 Exercise 6, and $\mathcal{B}=\bigcup_{n\ge1}\mathcal{B}_n$ is the collection defined there.
 
@@ -131,7 +149,7 @@ By step [](#parametrise){.pf-ref} the subcollection $\mathcal{B}_1$ is in biject
 $\mathcal{B}$ is not locally finite.
 
 ::: pf-proof
-Let $\mathbf{0}=(0,0,\ldots)$ and for each $n$ put $C_n=\RR^n\times\prod_{i>n}\{0\}$, which is the member $B_\epsilon$ of $\mathcal{B}_n$ for the tail $\epsilon$ all of whose entries are $0$. The sets $C_n$ are pairwise distinct, since $C_n$ and $C_m$ with $n<m$ differ in the $(n+1)$-st coordinate, where the first is free and the second is $0$. Each $C_n$ contains $\mathbf{0}$, so every neighbourhood of $\mathbf{0}$ meets every $C_n$, that is infinitely many members of $\mathcal{B}$. Hence $\mathcal{B}$ is not locally finite.
+Let $\mathbf{0}=(0,0,\ldots)$ and for each $n$ put $C_n=\RR^n\times\prod_{i>n}\{0\}$, which is the member $B_\epsilon$ of $\mathcal{B}_n$ for the tail $\epsilon$ all of whose entries are $0$. The sets $C_n$ are pairwise distinct, since $C_n$ and $C_m$ with $n<m$ differ in the $(n+1)$-st coordinate, where $C_n$ has $\{0\}$ and $C_m$ has $\RR$, as $n+1\le m$. Each $C_n$ contains $\mathbf{0}$, so every neighbourhood of $\mathbf{0}$ meets every $C_n$, that is infinitely many members of $\mathcal{B}$. Hence $\mathcal{B}$ is not locally finite.
 :::
 
 :::
