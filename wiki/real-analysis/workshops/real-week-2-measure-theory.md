@@ -57,6 +57,7 @@ $$
 $$
 Then $\mu^*$ is an [[D-79EWM|outer measure]] [@Fol99, §1.4].
 
+The three defining properties are checked directly: $\mu^*(\varnothing)=0$ from the empty cover, monotonicity because a cover of a larger set covers a subset, and countable subadditivity by choosing for each $A_j$ a cover whose total $\rho$-sum is within $2^{-j}\varepsilon$ of the infimum and summing over $j$. That verification is the page's own; the citation names the section of Folland where the same construction is made, and Folland's text is not in this checkout, so no numbered statement of his is written here.
 :::
 
 [[D-3XE77]]
