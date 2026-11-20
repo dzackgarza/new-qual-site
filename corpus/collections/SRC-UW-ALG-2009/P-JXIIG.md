@@ -16,6 +16,17 @@ audit:
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Step 3, the tower-law step on which part (b) rests, asserted its degree formula with no
+    proof body; it now carries a `pf-proof` deriving the two cases from the minimal polynomial
+    of $\sqrt{D_2}$ over $F(\sqrt{D_1})$ and the tower law. No claim was changed and both
+    statements stand as they were; steps 1, 2, 4 and 5 keep their own proofs. Checked: that
+    $x^2-D_2$ is irreducible over $F(\sqrt{D_1})$ exactly when it has no root there, and that
+    the factor $2$ in the product is step 2. Not checked: the examination paper the problem
+    comes from is not in the checkout; no published solution was consulted.
 ---
 
 ::: {.problem}
@@ -70,7 +81,11 @@ $$
 $$
 Thus the degree is $2$ or $4$ according as $\sqrt{D_2}$ does or does not lie in $F(\sqrt{D_1})$.
 
+::: pf-proof
+$\sqrt{D_2}$ is a root of $x^2-D_2\in F(\sqrt{D_1})[x]$, so its minimal polynomial over $F(\sqrt{D_1})$ divides that quadratic and the degree $[F(\sqrt{D_1},\sqrt{D_2}):F(\sqrt{D_1})]$ is $1$ or $2$. It is $1$ exactly when $\sqrt{D_2}\in F(\sqrt{D_1})$; otherwise the quadratic has no root in $F(\sqrt{D_1})$, hence is irreducible there, and the degree is $2$. The tower law gives the displayed product, and $[F(\sqrt{D_1}):F]=2$ is step 2.
 :::
+:::
+
 
 ::: {.pf-step #s4}
 One has
