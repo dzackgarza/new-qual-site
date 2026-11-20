@@ -39,6 +39,18 @@ audit:
     printed p. 109; PDF p. 127 is printed p. 108 and carries Problem 1 and the start of Problem 2.
     The item was not otherwise re-read in this pass, and this card carries no asterisk -- the print's
     Chapter 3 marks are before Problems 1, 4 and 5 only.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Repair of step s4 on the reader's report. Its claim read $b_n=-a_{-n}$, while its own computation
+    — integrating the geometric expansion of $1/(\zeta-z)$ on $C_{r_1}$ and moving the integral from
+    $C_{r_1}$ to $C_{r_2}$ by Cauchy's theorem — gives $b_n=+a_{-n}$, and the Laurent sum of step s5
+    needs the plus sign. The claim now reads $b_n=a_{-n}$; nothing else changed. The four other steps
+    were read and are untouched. Provenance: no published solution set covers the end-of-chapter
+    Problems of Stein--Shakarchi (R. C. Rhoades, *Solutions/Hints to the Exercises from Complex
+    Analysis by Stein and Shakarchi*, 2006, covers a selection of the Exercises only), so the
+    argument is the card's own.
 ---
 
 ::: {.exercise}
@@ -60,6 +72,7 @@ when $r_1<\abs{z-z_0}<r_2$, and argue as in the proof of Theorem 4.4, Chapter 2.
 :::
 
 ::: {.solution}
+No published solution set covers the end-of-chapter Problems of Stein--Shakarchi: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, and no other set was located. The argument is the card's own, following the book's printed hint.
 
 Let $0<r_1<r_2$, let $A=\{z:r_1<\abs{z-z_0}<r_2\}$ be the open annulus and $\bar A=\{z:r_1\le\abs{z-z_0}\le r_2\}$, on which $f$ is holomorphic. Fix $z\in A$.
 
@@ -118,7 +131,7 @@ the geometric series converging uniformly in $\zeta\in C_{r_2}$ by step [](#s2){
 
 ::: {.pf-step #s4}
 
-The second integral equals $\sum_{n\ge1}b_n(z-z_0)^{-n}$ with $b_n=\frac{1}{2\pi i}\int_{C_{r_1}}f(\zeta)(\zeta-z_0)^{n-1}d\zeta$, and $b_n=-a_{-n}$ with $a_{-n}$ given by the same formula with $C_{r_2}$.
+The second integral equals $\sum_{n\ge1}b_n(z-z_0)^{-n}$ with $b_n=\frac{1}{2\pi i}\int_{C_{r_1}}f(\zeta)(\zeta-z_0)^{n-1}d\zeta$, and $b_n=a_{-n}$ with $a_{-n}$ given by the same formula with $C_{r_2}$.
 
 ::: pf-proof
 
