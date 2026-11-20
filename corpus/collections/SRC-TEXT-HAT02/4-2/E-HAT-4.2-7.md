@@ -50,6 +50,28 @@ audit:
     for cellular approximation, the killing procedure described on printed p. 403, the bundle
     sequence on printed p. 376, and the exercise on printed p. 389. Not claimed: a retained
     solution set, so the construction is the card's own.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.2 Exercise 7, Theorem 4.8, the
+    long exact sequence of a fibration, and the theory of G-CW complexes. Two defects repaired, both in
+    the card's own framing rather than in its conclusion. First, the preamble justified replacing the
+    product construction by saying that F = prod K(G_i,i) "does not have pi_i(F) = G_i" because
+    K(G_j,j) has nontrivial homotopy above degree j. That is false: pi_i(K(G_j,j)) vanishes for i != j
+    by the definition of an Eilenberg-MacLane space, and pi_i of a product is the product of the
+    pi_i of the factors, so the product has exactly the prescribed groups. What the product fails to
+    be is a CW complex, an infinite product of CW complexes with cells in unboundedly many dimensions
+    being none, and a CW complex is what the cell attachments and the colimit require. The preamble now
+    says that, and step `start` takes an equivariant CW approximation of the product instead of the
+    product. Second, step `start` computed pi_k of the product as merely projecting onto G_k; it now
+    records the exact identification pi_k = G_k as G_1-modules. Step `induction` notes that with such
+    an F_0 the kernel it kills is trivial, so the machinery is stated for the general case and the
+    construction completes at once. Steps `kill`, `colimit`, `borel` and `conclusion` are unchanged and
+    correct: attaching a free orbit of (m+1)-cells kills a G_1-invariant normal closure without
+    disturbing lower groups by cellular approximation, the colimit computes homotopy groups by
+    compactness, and the Borel construction EG_1 x_{G_1} F has the stated fundamental group, homotopy
+    groups and action. No page locator remains in the card text.
 ---
 
 ::: {.problem}
@@ -57,7 +79,7 @@ Construct a CW complex $X$ with prescribed homotopy groups $\pi_i(X)$ and prescr
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 7. No retained solution set covers this exercise, so the construction and its verification below are the card's own. It replaces the previous prose construction, which took $F=\prod_{i>1}K(G_i,i)$; that product does **not** have $\pi_i(F)=G_i$, because $K(G_j,j)$ has nontrivial homotopy above degree $j$, so $\pi_i(F)=\prod_{j}\pi_i(K(G_j,j))$ is strictly larger than $G_i$ in general. The excess is killed here, in increasing degree, and the killing is done equivariantly so that the prescribed $\pi_1$-action survives.
+The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 7. No retained solution set covers this exercise, so the construction and its verification below are the card's own. It replaces the previous prose construction, which took $F=\prod_{i>1}K(G_i,i)$. That product does have the prescribed homotopy groups: $\pi_i$ of a product is the product of the $\pi_i$ of the factors, and $\pi_i(K(G_j,j))=0$ for $i\ne j$, so $\pi_i(F)=G_i$ exactly. What it is not is a CW complex: an infinite product of CW complexes carrying cells in unboundedly many dimensions is not one, and the construction here needs a CW complex, both to attach cells and to take the colimit. The repair is to replace the product by an equivariant CW approximation of it, which is a weak $G_1$-equivalence and so carries the same homotopy groups and the same action, and then to kill, in increasing degree, whatever excess the approximation leaves in the degrees above the ones already fixed. The killing is done equivariantly so that the prescribed $\pi_1$-action survives.
 
 Throughout, $G_1$ is a group, $G_i$ for $i>1$ is an abelian group with a homomorphism $\rho_i:G_1\to\operatorname{Aut}(G_i)$, and "prescribed action" means the action of $G_1$ on $\pi_i$ through $\rho_i$; $EG_1$ is a free contractible $G_1$-CW complex.
 
@@ -67,7 +89,7 @@ Throughout, $G_1$ is a group, $G_i$ for $i>1$ is an abelian group with a homomor
 Let $X$ be a $G_1$-CW complex, $m\ge1$, and $A\subset\pi_m(X)$ a $G_1$-invariant set of classes whose normal closure $N(A)$ is $G_1$-invariant. Then there is a $G_1$-CW complex $X'\supset X$ with $\pi_m(X')=\pi_m(X)/N(A)$, with $\pi_k(X')\cong\pi_k(X)$ for $k\le m-1$, and with the $G_1$-action compatible with the isomorphism.
 
 ::: pf-proof
-Choose a representative map $f_\alpha:S^m\to X$ for each class $\alpha\in A$ and attach a free $G_1$-orbit of $(m+1)$-cells along the maps $g\circ f_\alpha$ for $g\in G_1$; the result $X'$ is again a $G_1$-CW complex. Attaching an $(m+1)$-cell along $f_\alpha$ kills the class of $f_\alpha$ in $\pi_m$ and imposes no other relation, which is the procedure the book describes when it kills $\pi_{n+1}(S^n)$ by attaching $(n+2)$-cells (printed p. 403); attaching the whole orbit kills the orbit of the class, and the classes killed generate $N(A)$ by construction, so $\pi_m(X')=\pi_m(X)/N(A)$. Since $N(A)$ is $G_1$-invariant, the quotient inherits the action. For the lower groups, a map $S^k\to X'$ and a homotopy of such maps can be pushed off the open $(m+1)$-cells when $k\le m-1$, by cellular approximation (Theorem 4.8), so the inclusion induces an isomorphism $\pi_k(X)\cong\pi_k(X')$ for $k\le m-1$; the action is transported along it because the inclusion is equivariant.
+Choose a representative map $f_\alpha:S^m\to X$ for each class $\alpha\in A$ and attach a free $G_1$-orbit of $(m+1)$-cells along the maps $g\circ f_\alpha$ for $g\in G_1$; the result $X'$ is again a $G_1$-CW complex. Attaching an $(m+1)$-cell along $f_\alpha$ kills the class of $f_\alpha$ in $\pi_m$ and imposes no other relation, which is the procedure the book describes when it kills $\pi_{n+1}(S^n)$ by attaching $(n+2)$-cells; attaching the whole orbit kills the orbit of the class, and the classes killed generate $N(A)$ by construction, so $\pi_m(X')=\pi_m(X)/N(A)$. Since $N(A)$ is $G_1$-invariant, the quotient inherits the action. For the lower groups, a map $S^k\to X'$ and a homotopy of such maps can be pushed off the open $(m+1)$-cells when $k\le m-1$, by cellular approximation (Theorem 4.8), so the inclusion induces an isomorphism $\pi_k(X)\cong\pi_k(X')$ for $k\le m-1$; the action is transported along it because the inclusion is equivariant.
 
 :::
 
@@ -77,7 +99,7 @@ Choose a representative map $f_\alpha:S^m\to X$ for each class $\alpha\in A$ and
 There is a simply connected $G_1$-CW complex $F_0$ with $\pi_k(F_0)$ mapping onto $G_k$ for every $k\ge2$, the map being a homomorphism of $G_1$-groups onto the prescribed module.
 
 ::: pf-proof
-Take a $G_1$-CW model of $K(G_k,k)$ on which $G_1$ acts through $\rho_k$; such a model exists because $G_k$ is a $\ZZ[G_1]$-module by $\rho_k$, so an equivariant Moore space $M(G_k,k)$ with $\pi_k=G_k$ is built from a free $\ZZ[G_1]$-resolution of $G_k$ by attaching free orbits of $k$- and $(k+1)$-cells, and the remaining homotopy is then killed in higher degrees by step [](#kill){.pf-ref}. Let $F_0=\prod_{k\ge2}K(G_k,k)$ with the diagonal $G_1$-action. For a product of spaces, $\pi_k$ of the product is the product of the $\pi_k$ of the factors (a map into a product is a tuple of maps), so $\pi_k(F_0)=\prod_{j\ge2}\pi_k(K(G_j,j))$, which projects onto the factor $\pi_k(K(G_k,k))=G_k$; the projection is $G_1$-equivariant because the action is diagonal and the factor action is $\rho_k$. Finally $\pi_1(F_0)=\prod_{j\ge2}\pi_1(K(G_j,j))=0$.
+Take a $G_1$-CW model of $K(G_k,k)$ on which $G_1$ acts through $\rho_k$; such a model exists because $G_k$ is a $\ZZ[G_1]$-module by $\rho_k$, so an equivariant Moore space $M(G_k,k)$ with $\pi_k=G_k$ is built from a free $\ZZ[G_1]$-resolution of $G_k$ by attaching free orbits of $k$- and $(k+1)$-cells, and the remaining homotopy is then killed in higher degrees by step [](#kill){.pf-ref}. Let $P=\prod_{k\ge2}K(G_k,k)$ with the diagonal $G_1$-action, and let $F_0\to P$ be an equivariant CW approximation, which exists for a $G_1$-space and is a weak $G_1$-equivalence. For a product of spaces, $\pi_k$ of the product is the product of the $\pi_k$ of the factors (a map into a product is a tuple of maps), and $\pi_k(K(G_j,j))=0$ for $j\ne k$, so $\pi_k(P)=\pi_k(K(G_k,k))=G_k$; the identification is $G_1$-equivariant because the action on $P$ is diagonal and the action on the $k$th factor is $\rho_k$. Since $F_0\to P$ is a weak equivalence inducing isomorphisms of homotopy groups compatible with the $G_1$-action, $\pi_k(F_0)\cong G_k$ as $G_1$-modules, and $\pi_1(F_0)=\pi_1(P)=\prod_{j\ge2}\pi_1(K(G_j,j))=0$. Being a $G_1$-CW approximation, $F_0$ is a $G_1$-CW complex.
 
 :::
 
@@ -87,7 +109,7 @@ Take a $G_1$-CW model of $K(G_k,k)$ on which $G_1$ acts through $\rho_k$; such a
 There is a chain $F_0\subset F_1\subset F_2\subset\cdots$ of $G_1$-CW complexes with: $\pi_k(F_m)=G_k$ for $2\le k\le m$ as $G_1$-modules, and $\pi_k(F_m)\twoheadrightarrow G_k$ a $G_1$-equivariant surjection for $k>m$.
 
 ::: pf-proof
-Induction on $m$. The case $m=0$ is step [](#start){.pf-ref}. For the step, let $A\subset\pi_{m+1}(F_m)$ be the kernel of the surjection onto $G_{m+1}$; it is a $G_1$-invariant subset, and its normal closure is a $G_1$-invariant subgroup, so step [](#kill){.pf-ref} applies with $m+1$ in place of $m$ and produces $F_{m+1}$ with $\pi_{m+1}(F_{m+1})=G_{m+1}$ and $\pi_k(F_{m+1})\cong\pi_k(F_m)$ for $k\le m$. Those isomorphisms give $\pi_k(F_{m+1})=G_k$ for $2\le k\le m$, and the surjections onto $G_k$ for $k>m+1$ survive because the composite $\pi_k(F_{m+1})\to\pi_k(F_m)\twoheadrightarrow G_k$ is still onto.
+Induction on $m$. The case $m=0$ is step [](#start){.pf-ref}, where already $\pi_k(F_0)\cong G_k$ for every $k\ge2$, so the kernel below is trivial and one may take $F_{m+1}=F_m$; the construction is stated for the general case so that it also covers a starting space with excess in the degrees above those already fixed. For the step, let $A\subset\pi_{m+1}(F_m)$ be the kernel of the surjection onto $G_{m+1}$; it is a $G_1$-invariant subset, and its normal closure is a $G_1$-invariant subgroup, so step [](#kill){.pf-ref} applies with $m+1$ in place of $m$ and produces $F_{m+1}$ with $\pi_{m+1}(F_{m+1})=G_{m+1}$ and $\pi_k(F_{m+1})\cong\pi_k(F_m)$ for $k\le m$. Those isomorphisms give $\pi_k(F_{m+1})=G_k$ for $2\le k\le m$, and the surjections onto $G_k$ for $k>m+1$ survive because the composite $\pi_k(F_{m+1})\to\pi_k(F_m)\twoheadrightarrow G_k$ is still onto.
 
 :::
 
@@ -107,7 +129,7 @@ Homotopy groups of a CW colimit are the colimit of the homotopy groups of the st
 For a simply connected $G_1$-space $F$ with $\pi_k(F)\cong G_k$ as $G_1$-modules, the Borel construction $X=EG_1\times_{G_1}F$ satisfies $\pi_1(X)\cong G_1$, $\pi_k(X)\cong G_k$ for $k\ge2$, and the action of $\pi_1(X)$ on $\pi_k(X)$ is $\rho_k$.
 
 ::: pf-proof
-$X$ is the total space of the fiber bundle $F\to X\to BG_1=K(G_1,1)$ associated to $EG_1\to BG_1$. Its fibre is simply connected, so the long exact sequence of the bundle (printed p. 376) gives $\pi_1(X)\cong\pi_1(BG_1)=G_1$ and $\pi_k(X)\cong\pi_k(F)$ for $k\ge2$. The total space $EG_1\times F$ of the pullback over $EG_1$ is homotopy equivalent to $F$, hence simply connected, and it is the universal cover of $X$; its group of deck transformations is $G_1$, acting by $g\cdot(e,y)=(ge,y)$, so the action of $\pi_1(X)$ on $\pi_k(X)=\pi_k(F)$ is the given action of $G_1$ on $\pi_k(F)$, which is $\rho_k$ by step [](#colimit){.pf-ref}.
+$X$ is the total space of the fiber bundle $F\to X\to BG_1=K(G_1,1)$ associated to $EG_1\to BG_1$. Its fibre is simply connected, so the long exact sequence of the bundle gives $\pi_1(X)\cong\pi_1(BG_1)=G_1$ and $\pi_k(X)\cong\pi_k(F)$ for $k\ge2$. The total space $EG_1\times F$ of the pullback over $EG_1$ is homotopy equivalent to $F$, hence simply connected, and it is the universal cover of $X$; its group of deck transformations is $G_1$, acting by $g\cdot(e,y)=(ge,y)$, so the action of $\pi_1(X)$ on $\pi_k(X)=\pi_k(F)$ is the given action of $G_1$ on $\pi_k(F)$, which is $\rho_k$ by step [](#colimit){.pf-ref}.
 
 :::
 
