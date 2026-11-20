@@ -443,6 +443,8 @@ $$
 $$
 
 
+In other words, $(e_n)$ is complete.
+
 ::: pf-proof
 
 The range of the synthesis isometry $E$ is precisely the closed span of the orthonormal system $(e_n)$. Step [](#s1-18){.pf-ref} says this range is all of $\mathcal H$.
@@ -451,22 +453,9 @@ The range of the synthesis isometry $E$ is precisely the closed span of the orth
 
 :::
 
-::: {.pf-step #s1-20}
-
-Therefore $(e_n)$ is complete.
-
-
-::: pf-proof
-
-This is exactly step [](#s1-19){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-7){.pf-ref} proves part (a), and step [](#s1-20){.pf-ref} proves part (b).
+Step [](#s1-7){.pf-ref} proves part (a), and step [](#s1-19){.pf-ref} proves part (b).
 
 :::
 
