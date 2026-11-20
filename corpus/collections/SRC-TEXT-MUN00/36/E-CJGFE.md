@@ -102,6 +102,22 @@ audit:
     open subspace is countable and dense there, since a nonempty open subset of the subspace is
     open in the whole space. Not checked: no published key to these exercises was located, and
     none is claimed here.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card stood in queue D: its solution was a table with one paragraph per group of rows and no
+    numbered step. It is now a `pf` with nine steps, the table carried as the last step, each step
+    holding a `pf-proof`. Cited by numbered statement only: Munkres, Topology, §36 Exercise 1,
+    Theorem 25.3, Theorem 25.4, Theorem 26.2, Theorem 27.1, Theorem 28.1, Exercise 28.3(b),
+    Corollary 29.3, Theorem 30.2, Exercise 30.9, Theorem 31.2(a) and (b), Theorem 33.2, Exercise
+    21.1, Exercise 32.1, with Examples 1 of §29, 2 of §32, 3 of §25, 3 of §31, 5 of §30 as the
+    witnesses. No retained published set answers the exercise, and the card's preamble says so.
+    Checked: that each "yes" row names the theorem that gives it to the closed, open or arbitrary
+    subspace as the column says, that each "no" row names a witness failing exactly that column,
+    and that $(0,1)$ is an open subspace of $[0,1]$ with no limit point of $\{1/n:n\ge2\}$ inside
+    it.
+
 ---
 
 ::: {.exercise}
@@ -114,7 +130,85 @@ To an open subspace?
 :::
 
 ::: {.solution}
-Number the properties as in Exercise `E-PWXIV`. The preservation table is:
+
+Number the properties as in [[E-PWXIV]]; each of the 51 entries is decided below by a numbered result of Munkres, *Topology*, or by an explicit witness. No retained published solution of §36 Exercise 1 was located: the sets searched are listed in the `COMPLAINTS.md` entry for §30--§36 of `SRC-TEXT-MUN00`. "Arbitrary" below means an arbitrary subspace of a space having the property.
+
+::: pf
+
+::: {.pf-step #rows-hereditary}
+(1) Hausdorff, regular, completely regular, first countable, second countable, locally metrizable and metrizable pass to every subspace.
+
+::: pf-proof
+Theorem 31.2(a) for Hausdorff, Theorem 31.2(b) for regular, Theorem 33.2 for completely regular; Theorem 30.2 for first and second countability. For the metric rows, Exercise 21.1: the restriction of a metric to a subspace induces the subspace topology, so a metrizable space has every subspace metrizable, and a metrizable neighbourhood in $X$ meets the subspace in a metrizable neighbourhood of any of its points, so local metrizability is hereditary too. A closed or open subspace is a subspace.
+:::
+
+:::
+
+::: {.pf-step #rows-locally-connected}
+(2) Locally connected and locally path connected pass to open subspaces only.
+
+::: pf-proof
+If $X$ is locally connected and $U\subseteq X$ is open, every set open in $U$ is open in $X$, so by Theorem 25.3 each component of an open subset of $U$ is open in $U$, which is local connectedness of $U$; Theorem 25.4 gives local path connectedness the same way. For the negative entries, the topologist's sine curve is closed in $\RR^2$, connected and not locally connected (Example 3 of §25), so closed subspaces fail; a locally path connected space is locally connected, so it fails for local path connectedness as well, and an arbitrary subspace includes the closed ones.
+:::
+
+:::
+
+::: {.pf-step #rows-compact}
+(3) Compactness and limit point compactness pass to closed subspaces only.
+
+::: pf-proof
+Theorem 26.2: a closed subspace of a compact space is compact; Exercise 28.3(b): a closed subspace of a limit point compact space is limit point compact. For the negative entries, $(0,1)$ is an open subspace of $[0,1]$, and it is neither compact nor limit point compact, since $\{1/n:n\ge2\}$ is an infinite subset of it with no limit point in $(0,1)$, its only limit point in $\RR$ being $0$; a compact space is limit point compact by Theorem 28.1. An open subspace is a subspace, so the arbitrary column fails too.
+:::
+
+:::
+
+::: {.pf-step #rows-locally-compact}
+(4) Local compact Hausdorffness passes to closed and to open subspaces but not to arbitrary ones.
+
+::: pf-proof
+Corollary 29.3 gives both positive entries. For the negative entry, $\QQ\subseteq\RR$ is neither closed nor open and is not locally compact (Example 1 of §29).
+:::
+
+:::
+
+::: {.pf-step #rows-normal}
+(5) Normality passes to closed subspaces only.
+
+::: pf-proof
+Exercise 32.1: a closed subspace of a normal space is normal. For the negative entries, $S_\Omega\times\overline S_\Omega$ is not normal (Example 2 of §32) and is an open subspace of the compact Hausdorff, hence normal, $\overline S_\Omega\times\overline S_\Omega$, because $S_\Omega$ is open in $\overline S_\Omega$; an open subspace is a subspace, so both the open and the arbitrary columns fail.
+:::
+
+:::
+
+::: {.pf-step #rows-lindelof}
+(6) Lindelöfness passes to closed subspaces only.
+
+::: pf-proof
+Exercise 30.9: a closed subspace of a Lindelöf space is Lindelöf. For the negative entries, $A=I\times(0,1)$ is an open subspace of the ordered square, which is compact hence Lindelöf (Theorem 27.1), and $A$ is not Lindelöf: the sets $\{x\}\times(0,1)$ are pairwise disjoint and open in $A$ and no proper subcollection covers $A$ (Example 5 of §30). Being open, $A$ settles the open and the arbitrary columns.
+:::
+
+:::
+
+::: {.pf-step #rows-separable}
+(7) Having a countable dense subset passes to open subspaces only.
+
+::: pf-proof
+If $D$ is countable and dense in $X$ and $U\subseteq X$ is open, then $D\cap U$ is countable, and a nonempty open subset of $U$ is open in $X$ and therefore meets $D$, so $D\cap U$ is dense in $U$. For the negative entries, the anti-diagonal $L=\{x\times(-x)\}$ of the Sorgenfrey plane is closed and discrete (Example 3 of §31), so no countable subset of $L$ is dense in $L$, while the Sorgenfrey plane itself is separable through its points with rational coordinates. $L$ is closed, so both the closed and the arbitrary columns fail.
+:::
+
+:::
+
+::: {.pf-step #rows-connected}
+(8) Connectedness and path connectedness pass to no subspace of the three kinds.
+
+::: pf-proof
+$[0,1]\cup[2,3]$ is a closed subspace of $\RR$ and is disconnected, so closed subspaces fail; $(0,1)\cup(2,3)$ is an open subspace of $\RR$ and is disconnected, so open subspaces fail; and a subspace includes the closed ones, so the arbitrary column fails. A path connected space is connected, so the two disconnected witnesses settle the path connected column as well, since a path connected subspace would be a connected one.
+:::
+
+:::
+
+::: {.pf-step #table}
+(9) The preservation table is:
 
 | property | arbitrary subspace | closed subspace | open subspace |
 |---|:---:|:---:|:---:|
@@ -136,27 +230,12 @@ Number the properties as in Exercise `E-PWXIV`. The preservation table is:
 | (16) locally metrizable | yes | yes | yes |
 | (17) metrizable | yes | yes | yes |
 
-Each of the 51 entries is decided by a numbered result of the book or by an explicit witness, row by row.
+::: pf-proof
+Every "yes" is one of the positive statements of steps [#rows-hereditary]{.pf-ref}, [#rows-locally-connected]{.pf-ref}, [#rows-compact]{.pf-ref}, [#rows-locally-compact]{.pf-ref}, [#rows-normal]{.pf-ref}, [#rows-lindelof]{.pf-ref} and [#rows-separable]{.pf-ref}, and every "no" is the negative statement of one of them or of step [#rows-connected]{.pf-ref}; the rows are in the numbering of [[E-PWXIV]].
+:::
 
-**1 Connected, 2 Path connected: no in all three columns.** $[0,1]\cup[2,3]$ is a closed subspace of $\RR$ and is disconnected, so closed subspaces fail, and with them arbitrary ones; $(0,1)\cup(2,3)$ is an open subspace of $\RR$ and is disconnected, so open subspaces fail. A path connected space is connected, so the two spaces settle the path column as well.
+:::
 
-**3 Locally connected, 4 Locally path connected: yes for open subspaces, no for closed and arbitrary ones.** If $X$ is locally connected and $U\subseteq X$ is open, every open subset of $U$ is open in $X$, so by Theorem 25.3 each of its components is open in $U$ and $U$ is locally connected; Theorem 25.4 gives the same for local path connectedness. In the other direction the topologist's sine curve is closed in $\RR^2$, connected and not locally connected, Example 3 of §25, so closed subspaces and hence arbitrary subspaces fail; it is not locally path connected either, since a locally path connected space is locally connected.
-
-**5 Compact, 6 Limit point compact: yes for closed subspaces, no otherwise.** Theorem 26.2 for compactness and Exercise 28.3(b) for limit point compactness. The open subspace $(0,1)$ of $[0,1]$ is neither compact nor limit point compact, the set $\{1/n \mid n \ge 2\}$ in it being infinite with no limit point in $(0,1)$, its only limit point in $\RR$ being $0$; compactness would give a limit point, Theorem 28.1.
-
-**7 Locally compact Hausdorff: yes for closed and for open subspaces, no for arbitrary ones.** Corollary 29.3. $\QQ\subset\RR$ is neither closed nor open and is not locally compact, Example 1 of §29.
-
-**8 Hausdorff, 9 Regular, 10 Completely regular: yes in all three columns.** Theorems 31.2(a), 31.2(b) and 33.2: a subspace of a Hausdorff, of a regular, of a completely regular space has the same property.
-
-**11 Normal: yes for closed subspaces, no otherwise.** Exercise 32.1. For the negative entries, $S_\Omega\times\overline S_\Omega$ is not normal, Example 2 of §32, and it is an open subspace of the compact Hausdorff, hence normal, $\overline S_\Omega\times\overline S_\Omega$, since $S_\Omega$ is open in $\overline S_\Omega$; an open subspace is a subspace, so this settles the open and the arbitrary columns at once.
-
-**12 First countable, 13 Second countable: yes in all three columns.** Theorem 30.2: both axioms pass to subspaces.
-
-**14 Lindelöf: yes for closed subspaces, no otherwise.** Exercise 30.9. For the negative entries, $A = I\times(0,1)$ is an open subspace of the ordered square, which is compact hence Lindelöf, and $A$ is not Lindelöf: the sets $\{x\}\times(0,1)$ are pairwise disjoint and open in $A$, and no proper subcollection of them covers $A$, Example 5 of §30. Being open, $A$ settles the open and the arbitrary columns.
-
-**15 Countable dense subset: yes for open subspaces, no otherwise.** If $D$ is countable and dense in $X$ and $U\subseteq X$ is open, then $D\cap U$ is countable and dense in $U$: a nonempty open subset of $U$ is open in $X$ and meets $D$. For the negative entries, the anti-diagonal $L = \{x\times(-x)\}$ of the Sorgenfrey plane is closed and discrete, Example 3 of §31, so no countable set is dense in $L$; and the Sorgenfrey plane itself is separable, its points with rational coordinates being dense. $L$ is closed, so this settles the closed and the arbitrary columns.
-
-**16 Locally metrizable, 17 Metrizable: yes in all three columns.** Exercise 21.1: the restriction of a metric to a subspace gives its topology. A metrizable neighbourhood of a point of $X$, met with the subspace, is a metrizable neighbourhood of the point in the subspace, so local metrizability is hereditary too.
-
+:::
 
 :::
