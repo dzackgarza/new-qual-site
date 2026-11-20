@@ -42,6 +42,19 @@ audit:
     p. 131, and its printed words are the card's. The chapter, the problem number and the page
     are now named in the solution's opening sentence. Not checked in this pass: the argument, which
     the edit does not touch.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The sentence of the 2026-11-19 event above that says "its printed words are the card's" does not
+    hold: the print's display is $\abs{f(z)}\le Ae^{a\abs{z}^q}$ with the hypothesis's own $a$,
+    while the card has $A,C>0$ and $e^{C\abs{z}^q}$. Re-read at printed p. 131 (PDF p. 150) today,
+    the print does print $a$ there, and that form is false: with $p=q=2$ and
+    $\widehat f(\xi)=e^{-a\xi^2}$ the inverse transform is $\sqrt{\pi/a}\,e^{-\pi^2z^2/a}$, which
+    grows like $e^{(\pi^2/a)\abs z^2}$, and $\pi^2/a>a$ whenever $a<\pi$. The card's $C$ is
+    therefore a repair and not a weakening, the exponent actually delivered being
+    $c(p)a^{-1/(p-1)}$; the remark below states this on the page. Not checked: the argument, which
+    the 2026-11-19 event reviews and this pass did not re-derive.
 ---
 
 ::: {.exercise}
@@ -56,6 +69,10 @@ for some $A, C > 0$, where $1/p + 1/q = 1$.
 Note that on the one hand, when $p \to \infty$ then $q \to 1$, and this limiting case can be interpreted as part of Theorem 3.3. On the other hand, when $p \to 1$ then $q \to \infty$, and this limiting case in a sense brings us back to Theorem 2.1.
 
 [Hint: To prove the result, use the inequality $-\xi^p + \xi u \leq u^q$, which is valid when $\xi$ and $u$ are non-negative. To establish this inequality, examine separately the cases $\xi^p \geq \xi u$ and $\xi^p < \xi u$; note also that the functions $\xi = u^{q-1}$ and $u = \xi^{p-1}$ are inverses of each other because $(p - 1)(q - 1) = 1$.]
+:::
+
+::: {.remark}
+The print states the growth as $\abs{f(z)}\le Ae^{a\abs{z}^q}$ with the same constant $a$ that the hypothesis fixes. That is false as printed: for $p=q=2$ and $\widehat f(\xi)=e^{-a\xi^2}$ one has $f(z)=\sqrt{\pi/a}\,e^{-\pi^2z^2/a}$, so $\abs{f(z)}$ grows like $e^{(\pi^2/a)\abs{z}^2}$, and for $0<a<\pi$ no constant $A$ makes this $\le Ae^{a\abs{z}^2}$. The exponent delivered by the integral estimate is $c(p)a^{-1/(p-1)}$ with $c(p)=(p-1)p^{-q}(2\pi)^q$, which is a function of $a$ and $p$ and not $a$ itself; the statement on this card keeps a constant $C$ in place of the print's $a$ for that reason, and the argument below produces it.
 :::
 
 ::: {.solution}
