@@ -54,7 +54,7 @@ The results of [[E-SS8.EX-18|Exercise 18]] extend to the case when $\gamma$ is a
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 8, Problem 6, printed p. 258).
+The book marks this problem with an asterisk (Chapter 8, Problem 6).
 :::
 
 ::: {.solution}
