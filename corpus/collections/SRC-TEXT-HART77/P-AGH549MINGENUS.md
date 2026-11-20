@@ -429,6 +429,23 @@ audit:
     unchanged steps. Not checked: no certificate or computation was run in this pass; the
     characteristic-p attainment remains the independent proof's; no printed copy of a source was
     read.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card's citations now name numbered statements and carry no page locator, as CONTRIBUTING
+    requires. Every page reference in the solution and the remark was deleted and the numbered
+    statement it accompanied kept, so a citation reads "Theorem V.1.9", "Corollary II.3",
+    "Lemma II.6(b)", "Theorem III.1(a)" or "Lemma 8.1.3" where it previously also gave a printed
+    or preprint page. No statement, hypothesis, step or citation target changes: only the page
+    locators are removed. The audit events above are left as written, and the pages they name
+    remain the record of what was read.
+    One mathematical error is repaired in the same pass. The first step of the published solution
+    wrote the Hodge index theorem as the equality $3D^2=(D\cdot H)^2$; it is the inequality
+    $3D^2\le(D\cdot H)^2=d^2$, and the bound $g\le1+\frac16d(d-3)$ that makes Theorem 2.5 of
+    [@GP82] applicable is drawn from the inequality. Checked against Theorem V.1.9, which states
+    $(D\cdot H)^2\ge D^2H^2$ for $H$ ample and $D^2>0$. Not checked: no printed copy of any source
+    was read.
 ---
 
 ::: {.problem}
@@ -441,7 +458,7 @@ and this minimum value of $g>0$ is achieved for each $d$ in the range given.
 
 ::: {.solution title="Published solution"}
 The exercise is Hartshorne V.4.9. Its published solution is the case $r=2$ of
-Gruson--Peskine [@GP82], Proposition 2.1  and Theorem 2.5 . That
+Gruson--Peskine [@GP82], Proposition 2.1 and Theorem 2.5. That
 article works over an algebraically closed field of characteristic $0$ (footnote (1)), and the transcription below follows its argument at $r=2$; the characteristic-$p$
 attainment, which its Bertini step does not give, is supplied by the second solution on this card,
 which is the card's own.
@@ -464,8 +481,9 @@ d(\OO_S(D))=-D\cdot K_S=d,
 \qquad
 r(D)=d-\max\{D\cdot E:E^2=E\cdot K_S=-1\}.
 $$
-The Hodge index theorem, Theorem V.1.9, gives $3D^2=(D\cdot H)^2\le d^2$ with
-$H=-K_S$, so $g=1+\frac12(D^2-d)\le 1+\frac16d(d-3)$. Theorem 2.5 of [@GP82],
+The Hodge index theorem, Theorem V.1.9, applied to $D$ with $D^2>0$ and to the ample class
+$H=-K_S$, gives $3D^2\le(D\cdot H)^2=d^2$, so
+$g=1+\frac12(D^2-d)\le 1+\frac16d(d-3)$. Theorem 2.5 of [@GP82],
 therefore applies: with $r$ the least positive integer such that $g\le F_d(r)$, where
 $F_d(r)=1+\frac12\bigl((r-1)d-\frac34r^2\bigr)$, and except for the three triples $(9,1,2)$,
 $(23,22,4)$ and $(27,28,4)$, the number $8(F_d(r)-g)$ is a sum of squares of five integers of one
