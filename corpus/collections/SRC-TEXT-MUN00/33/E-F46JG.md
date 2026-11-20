@@ -43,6 +43,27 @@ audit:
     {f < t} a union of the U(p) and {f > t} a union of the complements of the closed U(p).
     The argument is the card's own: no checkable published solution was located, as the
     earlier note records. The printed construction needed no repair.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against Munkres, Topology (2000), Section 33 Exercise 10, printed p. 213, and
+    repaired in one place. Step `f-well-defined` concluded $f(z)\le1$ for an arbitrary $z\in G$
+    from "$z\in U(1)=V_0$", which is false of the points of $G-V_0$: $U(1)=V_0$ is a
+    neighbourhood of $e$ and not all of $G$, and those are exactly the points that step `values`
+    sends to $1$. The bound is now read off the definition instead, every dyadic $p>1$ satisfying
+    $U(p)=G$, so that $f(z)\le p$ for all of them and $f(z)\le1$; the step also records that $1$
+    need not belong to the set whose infimum is taken. Re-read and unchanged: the cases $k=0$,
+    $k=2j$, $k=1$ and $k=2j+1$ of the induction for $V_{n}U(k/2^{n})\subset
+    U((k+1)/2^{n})$, the first empty and the others an equality or an application of
+    $V_{n+1}^{2}\subset V_{n}$; the nesting from $e\in V_{n}$; the closure inclusion from
+    symmetry of $V_{n}$ and the choice of adjacent dyadics $r<r+2^{-n}$ inside $(p,q)$; the two
+    families $\{f<t\}$ and $\{f>t\}$; $f(e)=0$; $f=1$ on $G-V_{0}$, which the corrected bound
+    makes available; and the passage to $g(z)=f(x^{-1}z)$ for a closed $A$ and $x\notin A$. The
+    card's use of the $T_1$ axiom is right: the definition in the Supplementary Exercises on
+    Topological Groups includes it. Not checked: the printed folio of Exercise 10, the only copy
+    of the book in the checkout being the extraction `tmp/sources/munkres-2000-topology.md`, which
+    records page ranges and not folios; and no published solution was searched for in this pass.
 ---
 
 ::: {.exercise}
@@ -155,7 +176,7 @@ Define $f(z)=\inf\{p\in\mathcal{D}\mid z\in U(p)\}$. Then $f:G\to[0,1]$ is well 
 $f(z)$ is a real number in $[0,1]$ for every $z$.
 
 ::: pf-proof
-The set in the infimum is nonempty, because $U(p)=G\ni z$ for every dyadic $p>1$, and it is bounded below by $0$, because $U(p)=\varnothing$ for $p\le0$. So the infimum exists; it is $\ge0$ and $\le1$, since $z\in U(1)=V_{0}$ gives $f(z)\le1$.
+The set in the infimum is nonempty, because $U(p)=G\ni z$ for every dyadic $p>1$, and it is bounded below by $0$, because $U(p)=\varnothing$ for $p\le0$. So the infimum exists and is $\ge0$. It is $\le1$ because every dyadic $p>1$ lies in the set, so $f(z)\le p$ for each such $p$, and $1$ is their infimum. The value $1$ need not belong to the set: $U(1)=V_{0}$ is a neighbourhood of $e$ and not all of $G$.
 :::
 
 :::
