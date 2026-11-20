@@ -34,7 +34,7 @@ For $a>1$ two distinct Sylow $p$-subgroups can intersect nontrivially: in $S_4$,
 
 [[T-3X5FF]]
 
-## Applications
+## Frattini's argument and nilpotence from normal Sylow subgroups
 
 A normal Sylow subgroup $P$ gives a quotient $G/P$ of order $m$ coprime to $p$, so the classification arguments proceed by induction on $\size G$ through that quotient.
 
