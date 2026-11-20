@@ -53,7 +53,7 @@ Find a point-finite open covering $\mathcal{A}$ of $\RR$ that is not locally fin
 
 ::: {.solution}
 
-No retained solution set covers this exercise: the card's audit records that no complete published solution was located, and none is used here, so the construction and its verification are the card's own. The statement was checked against Munkres, *Topology* (2000), §39 Exercise 2, printed p. 248, and the definitions of point-finite and locally finite families are the ones in §39, printed p. 244.
+No retained solution set covers this exercise: the card's audit records that no complete published solution was located, and none is used here, so the construction and its verification are the card's own. The statement was checked against Munkres, *Topology* (2000), §39 Exercise 2, and the definitions of point-finite and locally finite families are the ones in §39.
 
 Throughout,
 $$
