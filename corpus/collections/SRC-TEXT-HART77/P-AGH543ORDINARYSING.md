@@ -455,6 +455,41 @@ audit:
     checked: any printing other than that text version, and no source outside
     Fulton was re-read, Hirschfeld's Theorem 3.27 no longer being used anywhere
     in the proof.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The characteristic-p step is read against Fulton's own numbered
+    statements, and two of its sentences are rewritten to carry their proofs;
+    no statement changes. (i) The step asserted of a terrible point that
+    "then p divides n-r". Fulton states this at the head of Appendix A,
+    printed p. 113, from Problem 5.26, printed p. 60, and the card gave no
+    argument. The argument is now supplied: the projection from P has degree
+    n-r; a separable projection has reduced general fibre, that is n-r
+    distinct points; a terrible point gives a non-reduced general fibre, so
+    the projection is inseparable, and the inseparable degree is a power of p
+    dividing the degree. (ii) The sentence on g^* said that the cancellation
+    of step genus-invariant-drops "applies verbatim with the sum taken over
+    the points over the three centres". The right invocation is (8) of
+    Fulton, printed p. 90: with the centre of multiplicity m = 0 or 1, the
+    non-fundamental points of C_1 on the exceptional line L through the two
+    centres of multiplicity 0 are the points of C on that line, smooth and
+    transverse by the choice of the fundamental lines, so all r_i = 1 and the
+    sum in (8) vanishes. Read for this pass, in
+    tmp/sources/fulton-2008-algebraic-curves-pp55-62-86-92-110-115.md, printed
+    pp. 87-91 and 113: (1) to (3), printed pp. 88-89, against step
+    algebraic-transform-multiplicities; (4) and (6), printed pp. 89-90,
+    against step excellent-position; (7), printed p. 90, against the
+    ordinariness of P, P', P'' and the absence of non-fundamental points on
+    C' cap L' and C' cap L''; (8), printed p. 90, against step
+    genus-invariant-drops; Lemma 1, printed p. 90, with Problem 5.26, printed
+    p. 60, against step excellent-position-attained; Theorem 2, printed p. 91,
+    against step termination; and Appendix A, printed p. 113, against this
+    step, including its misprint "p doesn't divide n-r" where the congruence
+    needs n'-r, and the two further centres of the preparatory transformation
+    being off C, which the card states and Fulton leaves implicit. Not
+    checked: any printing other than that text version, and Problem 4.16, to
+    which Lemma 1 defers the change of coordinates.
 
 ---
 
@@ -644,7 +679,7 @@ This is Fulton, Theorem 2 of §7.4, printed p. 91. He takes successive quadratic
 Assume $\operatorname{char}k=p>0$. Then the transformation sequence of step [](#termination){.pf-ref} exists in this characteristic, at most $2(N+g^*(C))$ transformations sufficing: where the projection from the chosen point is inseparable, one preliminary quadratic transformation, centred at a point of multiplicity $0$ or $1$ and two points off $C$, changes neither $N$ nor $g^*$, creates only ordinary points, and makes the projection from the image of that point separable.
 
 ::: pf-proof
-This is Appendix A of Fulton, printed p. 113. Call $P$ *terrible* for $F$ if infinitely many lines through $P$ meet $C$ in fewer than $n-r$ distinct points other than $P$; then $p$ divides $n-r$. The lines through $P$ form a line of the dual plane, so for a terrible $P$ the dual curve of $C$ contains infinitely many points of a line and, being irreducible, is that line; hence $F$ has at most one terrible point, and lines meeting $C$ in $n$ distinct points always exist.
+This is Appendix A of Fulton, printed p. 113. Call $P$ *terrible* for $F$ if infinitely many lines through $P$ meet $C$ in fewer than $n-r$ distinct points other than $P$. A terrible $P$ forces $p\mid(n-r)$: the projection $\pi_P\colon C\to\PP^1$ has degree $n-r$, a general line through $P$ meeting $C$ in $P$ with multiplicity $r$ and in $n-r$ further points counted with multiplicity; if $\pi_P$ were separable its general fibre would be $n-r$ distinct reduced points, so $\pi_P$ is not separable, and the inseparable degree of a finite morphism of curves is a power of $p$ dividing its degree. Fulton states this at the head of Appendix A, "P can only be terrible if $p$ divides $n-r$", from Problem 5.26, printed p. 60. The lines through $P$ form a line of the dual plane, so for a terrible $P$ the dual curve of $C$ contains infinitely many points of a line and, being irreducible, is that line; hence $F$ has at most one terrible point, and lines meeting $C$ in $n$ distinct points always exist.
 
 If the chosen bad point $P$ is terrible for $F$, Fulton takes a quadratic transformation centred at a point $Q$ of multiplicity $m=0$ or $m=1$, so that $P$ lies on no fundamental line, and writes $F'$ for the transform; the two remaining centres are taken off $C$, so that $n'=\deg F'=2n-m$. Since $p$ divides $n-r$,
 $$
@@ -658,7 +693,7 @@ By step [](#excellent-position-attained){.pf-ref} excellent position at $P$ is a
 
 (ii) $\deg C_1=2n-m$ and $\mu_{P_1}(C_1)=r$ (step [](#algebraic-transform-multiplicities){.pf-ref}), so $\deg\pi_{P_1}=2n-m-r\equiv n-m\pmod p$. Since $p\mid(n-r)$, the choice $m=0$ when $p\nmid r$ and $m=1$ when $p\mid r$ gives $p\nmid(n-m)$, hence $p\nmid\deg\pi_{P_1}$; and an inseparable morphism of curves has degree divisible by $p$. So $\pi_{P_1}$ is separable.
 
-(iii) The points of $C_1$ over $Q$ are smooth, $m$ being $0$ or $1$; the three fundamental points of $C_1$ are ordinary multiple points of multiplicities $n$, $n-m$ and $n-m$, the fundamental lines meeting $C$ transversally at smooth points (step [](#excellent-position){.pf-ref}); and $T$ is an isomorphism near every other point of $C$, all singular points other than $P$ being off the fundamental lines by construction. Hence the non-ordinary points of $C_1$ are exactly those of $C$ other than $P$, together with $P_1$: $N(C_1)=N(C)$, and $g^*(C_1)=g^*(C)$ because the cancellation of step [](#genus-invariant-drops){.pf-ref} applies verbatim with the sum taken over the points over the three centres, each of multiplicity at most $1$ here.
+(iii) The points of $C_1$ over $Q$ are smooth, $m$ being $0$ or $1$; the three fundamental points of $C_1$ are ordinary multiple points of multiplicities $n$, $n-m$ and $n-m$, the fundamental lines meeting $C$ transversally at smooth points (step [](#excellent-position){.pf-ref}); and $T$ is an isomorphism near every other point of $C$, all singular points other than $P$ being off the fundamental lines by construction. Hence the non-ordinary points of $C_1$ are exactly those of $C$ other than $P$, together with $P_1$: $N(C_1)=N(C)$. For $g^*$, apply (8) of Fulton, printed p. 90, in the form step [](#genus-invariant-drops){.pf-ref} states it: the non-fundamental points of $C_1\cap L$, with $L$ the exceptional line through the two centres of multiplicity $0$, are the points of $C\cap L$, which the choice of the fundamental lines makes smooth and transverse, so their multiplicities $r_i$ are all $1$ and the sum $\sum_i\binom{r_i}{2}$ of (8) vanishes; hence $g^*(C_1)=g^*(C)$.
 
 So $(C_1,P_1)$ has the numbers $N$ and $g^*$ of $(C,P)$, the singularity of $P$, and a separable projection at $P_1$; the descent step of steps [](#excellent-position-attained){.pf-ref} and [](#genus-invariant-drops){.pf-ref} then applies at $P_1$ and drops $N+g^*$ by at least $1$, as step [](#termination){.pf-ref} records. Each descent step is preceded by at most one preliminary transformation, so at most $2(N+g^*(C))$ quadratic transformations suffice, $N+g^*$ being a non-negative integer by step [](#genus-invariant-nonnegative){.pf-ref}. No theorem for characteristic $p$ beyond this count is used: the preliminary transformation is the one Fulton prescribes in Appendix A, and the only thing added here is that it is neutral for $N$ and $g^*$ and that it restores the hypothesis of step [](#excellent-position-attained){.pf-ref}.
 
