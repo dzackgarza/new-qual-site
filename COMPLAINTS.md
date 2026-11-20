@@ -11026,3 +11026,18 @@ unchanged, so none was needed on them. No whole-corpus gate this turn.
 **Uncertainty:** the parenthesis may have been right when written, against an older chapter numbering. Its being unverifiable now is evidence about the locator's form, not about whether the underlying comparison holds.
 
 **Repair:** this entry. The remaining page work is that one reference and the four hosts that timeout from this address and are unproven either way.
+
+
+## 2026-11-20 (#176): the fourteen conformal-map cards cited, and two of them state the same correspondence
+
+**Object.** The conformal-map propositions of `corpus/theory/Complex_Analysis` that carried no citation: `PR-3CDLG`, `PR-OOHFS`, `PR-TWG7E`, `PR-FL6T7`, `PR-L5UH3`, `PR-XCDL5`, `PR-SF23E`, `PR-TQDIL`, `PR-IK6LA`, `PR-PELLF`, `PR-PW4Z6`, `PR-AQFRA`, `PR-BPP7D`, `PR-7TLAS`.
+
+**Where the statements are.** Ahlfors, ch. 3, §4.1 "The Use of Level Curves", is the section that states, unnumbered: that $w=z^\alpha$ carries the sector $S_0(\varphi_1,\varphi_2)$ of (14) onto $S_0(\alpha\varphi_1,\alpha\varphi_2)$ when $\alpha(\varphi_2-\varphi_1)\le2\pi$; that $\zeta=e^z$ maps the strip $-\pi/2<y<\pi/2$ onto $\xi>0$, with the lines $x=x_0$ and $y=y_0$ going to circles about the origin and rays; and that $w=(\zeta-1)/(\zeta+1)$ maps $\xi>0$ onto $\abs w<1$. Ahlfors, ch. 3, §4.2 "A Survey of Elementary Mappings", is the section that maps the exterior of a segment by (15) and advises the two-step reduction. Stein--Shakarchi ch. 8, **Theorem 1.2**, is the biholomorphism $(i-z)/(i+z):\HH\to\DD$ with inverse $i(1-w)/(1+w)$, and ch. 3, §6 "The complex logarithm", is the principal branch $\log z=\log r+i\theta$ with $\abs\theta<\pi$.
+
+**How each card is covered.** `PR-FL6T7` and `PR-OOHFS` are that theorem and that theorem followed by a rotation of the disc. `PR-TWG7E` and `PR-L5UH3` are the Ahlfors map of §4.1 in the other direction, the second followed by a rotation. `PR-XCDL5`, `PR-3CDLG`, `PR-TQDIL`, `PR-7TLAS` and `PR-PELLF` are the exponential correspondence of §4.1, each card differing from the cited statement by a rotation of the two planes or a restriction to a half-strip or half-disc, and each card now names the rotation or restriction. `PR-AQFRA` is the sector rule of §4.1 with $\alpha=n$. `PR-SF23E` is the principal-branch formula of Stein--Shakarchi ch. 3 §6 read on a circle and a ray. `PR-PW4Z6` is the §4.1 map restricted to the upper half-disc. `PR-IK6LA` is (15) rescaled. `PR-BPP7D` is the composite the §4.2 preamble prescribes, its two steps being §4.1 and Theorem 1.2.
+
+**A defect of the corpus, found in the reading.** `PR-7TLAS` and `PR-TQDIL` state the same correspondence: the domain $\{\abs{\Re z}<\pi/2,\ \Im z>0\}$, the map $z\mapsto e^{iz}$, the image $\DD\cap\{\Re w>0\}$, and the same inverse. Both cards are cited now, since both are otherwise correct, but one of them should be merged away; that is a corpus decision and is not taken here.
+
+**What still has no source in either book.** `D-5NQWE` (rising and falling factorials) and `D-BPBSQ` (singularities at infinity, defined through $g(w)=f(1/w)$) are in neither Ahlfors nor Stein--Shakarchi under those notions; they need a third standard text cited by numbered statement, and none is retained.
+
+**Uncertainty.** The Ahlfors statements used here are unnumbered prose in §4.1 and §4.2, so the citations name the section as the brief allows for unnumbered statements; the two Stein--Shakarchi citations are numbered. No card's statement was changed in this pass.
