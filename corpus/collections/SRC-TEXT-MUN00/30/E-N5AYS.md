@@ -39,7 +39,7 @@ Show that if $X$ has a countable dense subset, every collection of disjoint open
 :::
 
 ::: {.solution}
-The published solution is **"Doug's World", *Munkres - Topology - Chapter 4 Solutions* (30 August 2017; the file names no author), the second item under its heading "Problem 30.12", printed p. 3** (`tmp/sources/munkres-solutions-dougsworld-ch4.pdf`); the numbering slip is the source's, and the exercise it answers is Exercise 30.13 of Munkres, which is the one on this card. The injection below is its argument.
+The published solution is **"Doug's World", *Munkres - Topology - Chapter 4 Solutions* (30 August 2017; the file names no author), the second item under its heading "Problem 30.12"** (`tmp/sources/munkres-solutions-dougsworld-ch4.pdf`); the numbering slip is the source's, and the exercise it answers is Exercise 30.13 of Munkres, which is the one on this card. The injection below is its argument.
 
 ::: pf
 

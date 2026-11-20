@@ -49,7 +49,7 @@ Show that $\QQ$ is countably infinite.
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 7.1, printed pp. 80--81** (`tmp/sources/munkres-solutions-whitman.pdf`); the surjection $\ZZ_+\times\ZZ_+\to\QQ_+$ and the passage to $\QQ$ are his. The statement is Munkres, *Topology* (2000), §7 Exercise 1.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 7.1** (`tmp/sources/munkres-solutions-whitman.pdf`); the surjection $\ZZ_+\times\ZZ_+\to\QQ_+$ and the passage to $\QQ$ are his. The statement is Munkres, *Topology* (2000), §7 Exercise 1.
 
 ::: pf
 

@@ -53,7 +53,7 @@ Let $X$ be the two-element set $\{0,1\}$ . Show there is a bijective corresponde
 
 ::: {.solution}
 
-The characteristic-function bijection is that of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 7.3, printed p. 84** (`tmp/sources/munkres-solutions-whitman.pdf`); the two directions are written out below.
+The characteristic-function bijection is that of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 7.3** (`tmp/sources/munkres-solutions-whitman.pdf`); the two directions are written out below.
 
 Let $X=\{0,1\}$ and let $X^{\omega}$ be the set of sequences $(x_{1},x_{2},\dots)$ with $x_{n}\in X$.
 

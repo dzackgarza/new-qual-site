@@ -60,7 +60,7 @@ Show that a compact Hausdorff space $X$ is metrizable if it is locally metrizabl
 :::
 
 ::: {.solution}
-The argument is the retained published solution, **"Doug's World", *Munkres -- Topology -- Chapter 4 Solutions* (30 August 2017), Problem 34.7, printed p. 11** (`tmp/sources/munkres-solutions-dougsworld-ch4.pdf`), with the same proof at **dbFin, "Section 34: Problem 7 Solution"**, https://dbfin.com/topology/munkres/chapter-4/section-34-the-urysohn-metrization-theorem/problem-7-solution/ (read 2026-11-10); it is restructured into steps below. Both sources cite "Exercise 31.4" for the second countability of the closed metrizable piece, and Exercise 31.4 is about comparable topologies; the criterion they need is Exercise 30.4, which is what is cited here.
+The argument is the retained published solution, **"Doug's World", *Munkres -- Topology -- Chapter 4 Solutions* (30 August 2017), Problem 34.7** (`tmp/sources/munkres-solutions-dougsworld-ch4.pdf`), with the same proof at **dbFin, "Section 34: Problem 7 Solution"**, https://dbfin.com/topology/munkres/chapter-4/section-34-the-urysohn-metrization-theorem/problem-7-solution/ (read 2026-11-10); it is restructured into steps below. Both sources cite "Exercise 31.4" for the second countability of the closed metrizable piece, and Exercise 31.4 is about comparable topologies; the criterion they need is Exercise 30.4, which is what is cited here.
 
 Throughout, $X$ is compact Hausdorff and locally metrizable, and the exercise is §34 Exercise 7. Two facts about subspaces are used repeatedly: an open subspace of a second-countable space is second countable, and a subspace of a metrizable space is metrizable.
 

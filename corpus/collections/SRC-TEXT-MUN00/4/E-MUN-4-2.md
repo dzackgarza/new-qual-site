@@ -76,7 +76,7 @@ Prove the following "laws of inequalities" for $\RR$, using axioms (1)-(6) along
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.2, printed pp. 45--49** (`tmp/sources/munkres-solutions-whitman.pdf`); the eleven arguments below, each written in terms of $x>y\iff x-y>0$ together with axiom (6), are his.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.2** (`tmp/sources/munkres-solutions-whitman.pdf`); the eleven arguments below, each written in terms of $x>y\iff x-y>0$ together with axiom (6), are his.
 
 Recall that $x>y$ means $x-y>0$, and that axiom (6) of §4 has two clauses: $x>y$ implies $x+z>y+z$, and $x>y$ with $z>0$ implies $xz>yz$. Also $x<y$ means $y>x$.
 

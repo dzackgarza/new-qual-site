@@ -40,7 +40,7 @@ Define two points $(x_0, y_0)$ and $(x_1, y_1)$ of the plane to be equivalent if
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 3.1, printed p. 19** (`tmp/sources/munkres-solutions-whitman.pdf`), whose three checks and description of the classes are the steps below; the statement is Munkres, *Topology* (2000), §3 Exercise 1.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 3.1** (`tmp/sources/munkres-solutions-whitman.pdf`), whose three checks and description of the classes are the steps below; the statement is Munkres, *Topology* (2000), §3 Exercise 1.
 
 ::: pf
 

@@ -74,7 +74,7 @@ Does the converse hold?
 
 ::: {.solution}
 
-The four parts are those of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 5.3, printed pp. 69--70** (`tmp/sources/munkres-solutions-whitman.pdf`); the explicit strictness example in (d) and the two inclusions of the intersection identity are supplied below.
+The four parts are those of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 5.3** (`tmp/sources/munkres-solutions-whitman.pdf`); the explicit strictness example in (d) and the two inclusions of the intersection identity are supplied below.
 
 Following Munkres, an element of $A=\prod_{i\geq1}A_{i}$ is a function $x$ with domain $\ZZ_{+}$ such that $x_{i}\in A_{i}$ for every $i$; this is the convention that makes the parenthetical in part (a) unnecessary. Write $B=\prod_{i\geq1}B_{i}$ similarly.
 

@@ -54,7 +54,7 @@ Is the axiom of choice needed?
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.5, printed pp. 104--105** (`tmp/sources/munkres-solutions-whitman.pdf`); the choice from the fibres in (a) and the forced left inverse in (b) are his.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.5** (`tmp/sources/munkres-solutions-whitman.pdf`); the choice from the fibres in (a) and the forced left inverse in (b) are his.
 
 Throughout, $f^{-1}(\{b\})=\{a\in A:f(a)=b\}$ is the fibre of $f$ over $b$, a right inverse of $f$ is a map $h:B\to A$ with $f\circ h=i_B$, and a left inverse is a map $g:B\to A$ with $g\circ f=i_A$ (§2 Exercise 5). Munkres states the choice axiom for a collection of **disjoint** nonempty sets: there is a set meeting each member in exactly one point (§9). The exercise is on printed p. 62.
 

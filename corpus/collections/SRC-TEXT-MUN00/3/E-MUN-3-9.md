@@ -41,7 +41,7 @@ Check that the dictionary order is an order relation: for sets $A$ and $B$ with 
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 3.9, printed pp. 27--28** (`tmp/sources/munkres-solutions-whitman.pdf`); the case analysis below is his, and the statement is Munkres, *Topology* (2000), §3 Exercise 9.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 3.9** (`tmp/sources/munkres-solutions-whitman.pdf`); the case analysis below is his, and the statement is Munkres, *Topology* (2000), §3 Exercise 9.
 
 ::: pf
 

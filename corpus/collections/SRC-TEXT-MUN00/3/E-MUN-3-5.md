@@ -67,7 +67,7 @@ $$
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 3.5, printed pp. 21--24** (`tmp/sources/munkres-solutions-whitman.pdf`); the three parts, the five sets $S_1,\dots,S_5$ and the class description below are his.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 3.5** (`tmp/sources/munkres-solutions-whitman.pdf`); the three parts, the five sets $S_1,\dots,S_5$ and the class description below are his.
 
 Throughout, a relation on $\RR$ is a subset of $\RR\times\RR$, and it is an equivalence relation when it is reflexive, symmetric and transitive (§3). The two given relations are
 $$

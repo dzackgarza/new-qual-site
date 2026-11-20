@@ -50,7 +50,7 @@ Define an injective map $f: \ZZ_+ \to X^\omega$, where $X$ is the two-element se
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.1, printed pp. 100--101** (`tmp/sources/munkres-solutions-whitman.pdf`); he uses the indicator of a single point where the card uses an initial block of ones, and both are explicit injections. The statement is Munkres, *Topology* (2000), §9 Exercise 1.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.1** (`tmp/sources/munkres-solutions-whitman.pdf`); he uses the indicator of a single point where the card uses an initial block of ones, and both are explicit injections. The statement is Munkres, *Topology* (2000), §9 Exercise 1.
 
 ::: pf
 

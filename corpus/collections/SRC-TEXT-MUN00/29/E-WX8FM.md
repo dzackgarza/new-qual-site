@@ -36,7 +36,7 @@ If $f: X_1 \to X_2$ is a homeomorphism of locally compact Hausdorff spaces, show
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.5, PDF p. 22** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the extension map and the openness argument are theirs, split below into the two cases.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.5** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the extension map and the openness argument are theirs, split below into the two cases.
 
 Let $X_{1}^{+}=X_{1}\cup\theset{\infty_{1}}$ and $X_{2}^{+}=X_{2}\cup\theset{\infty_{2}}$ be the one-point compactifications of the locally compact Hausdorff spaces $X_{1}$, $X_{2}$, and let $f:X_{1}\to X_{2}$ be a homeomorphism.
 

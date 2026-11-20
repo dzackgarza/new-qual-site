@@ -67,7 +67,7 @@ If $B$ and $C$ are locally compact Hausdorff spaces, then $p \times q: A \times 
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.11, PDF p. 23** (`tmp/sources/munkres-solutions-positron-ch3.pdf`) for part (a) — its numbering runs past the ten exercises of §29 into the supplementary exercises on nets, where this is the last of them — with the saturation argument written out, as their paragraph only asserts the last step. Part (b) is not in that set and is proved below from part (a).
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.11** (`tmp/sources/munkres-solutions-positron-ch3.pdf`) for part (a) — its numbering runs past the ten exercises of §29 into the supplementary exercises on nets, where this is the last of them — with the saturation argument written out, as their paragraph only asserts the last step. Part (b) is not in that set and is proved below from part (a).
 
 ::: pf
 

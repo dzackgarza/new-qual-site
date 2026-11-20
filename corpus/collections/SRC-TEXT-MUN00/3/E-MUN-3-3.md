@@ -46,7 +46,7 @@ Here is a "proof" that every relation $C$ that is both symmetric and transitive 
 
 ::: {.solution}
 
-The diagnosis and the counterexample are those of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 3.3, printed pp. 19--20** (`tmp/sources/munkres-solutions-whitman.pdf`); the quantifier analysis and the three verifications are written out below.
+The diagnosis and the counterexample are those of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 3.3** (`tmp/sources/munkres-solutions-whitman.pdf`); the quantifier analysis and the three verifications are written out below.
 
 Throughout, $C$ is a relation on a set $A$, so $aCb$ means $(a,b)\in C$; $C$ is symmetric if $aCb$ implies $bCa$, transitive if $aCb$ and $bCc$ imply $aCc$, and reflexive if $aCa$ for every $a\in A$.
 

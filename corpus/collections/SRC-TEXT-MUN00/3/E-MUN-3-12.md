@@ -55,7 +55,7 @@ In these order relations, which elements have immediate predecessors? Does the s
 
 ::: {.solution}
 
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 3.12, printed pp. 31--35** (`tmp/sources/munkres-solutions-whitman.pdf`); the three answers, the case analyses and the separation of the order types are his. Throughout, an element has no immediate predecessor exactly when each element below it has something strictly between.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 3.12** (`tmp/sources/munkres-solutions-whitman.pdf`); the three answers, the case analyses and the separation of the order types are his. Throughout, an element has no immediate predecessor exactly when each element below it has something strictly between.
 
 ::: pf
 

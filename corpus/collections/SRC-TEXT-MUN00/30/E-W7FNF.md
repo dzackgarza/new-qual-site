@@ -48,7 +48,7 @@ Show that $\RR_\ell$ and $I_o^2$ are not metrizable.
 
 ::: {.solution}
 
-The route is that of **Ana Emilia de Orellana, "Solutions - Topology Munkres", Section 30 Exercise 6, printed p. 31** (`tmp/sources/munkres-solutions-anadeore.pdf`), with the non-separability of the ordered square proved rather than asserted. The statement was checked against Munkres, *Topology* (2000), §30 Exercise 6.
+The route is that of **Ana Emilia de Orellana, "Solutions - Topology Munkres", Section 30 Exercise 6** (`tmp/sources/munkres-solutions-anadeore.pdf`), with the non-separability of the ordered square proved rather than asserted. The statement was checked against Munkres, *Topology* (2000), §30 Exercise 6.
 
 ::: pf
 

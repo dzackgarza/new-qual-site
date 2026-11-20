@@ -55,7 +55,7 @@ Show that if $B$ is not finite and $B \subset A$, then $A$ is not finite.
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 6.2, printed p. 76** (`tmp/sources/munkres-solutions-whitman.pdf`), which argues through the book's Theorem 6.2 that a proper subset of a finite set is finite; the card proves that input directly instead, by induction on $n$.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 6.2** (`tmp/sources/munkres-solutions-whitman.pdf`), which argues through the book's Theorem 6.2 that a proper subset of a finite set is finite; the card proves that input directly instead, by induction on $n$.
 
 A set $S$ is finite when $S=\varnothing$ or there is a bijection of $S$ with $\{1,\dots,n\}$ for some $n\in\ZZ_{+}$; this is the book's definition.
 

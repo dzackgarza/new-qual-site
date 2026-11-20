@@ -50,7 +50,7 @@ Show that there exists a unique function $h:\ZZ_+\to\RR_+$ satisfying this formu
 
 ::: {.solution}
 
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 8.6, printed pp. 96--97** (`tmp/sources/munkres-solutions-whitman.pdf`); both parts are his.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 8.6** (`tmp/sources/munkres-solutions-whitman.pdf`); both parts are his.
 
 ::: pf
 

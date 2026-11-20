@@ -43,7 +43,7 @@ Show that every locally compact Hausdorff space is regular.
 :::
 
 ::: {.solution}
-The published solution is **"Doug's World", *Munkres - Topology - Chapter 4 Solutions* (30 August 2017; the file names no author), Problem 32.3, printed p. 6** (`tmp/sources/munkres-solutions-dougsworld-ch4.pdf`); the route through Theorem 29.2 below is the card's direct one, which is the statement that source reproduces.
+The published solution is **"Doug's World", *Munkres - Topology - Chapter 4 Solutions* (30 August 2017; the file names no author), Problem 32.3** (`tmp/sources/munkres-solutions-dougsworld-ch4.pdf`); the route through Theorem 29.2 below is the card's direct one, which is the statement that source reproduces.
 
 ::: pf
 

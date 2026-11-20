@@ -55,7 +55,7 @@ Let $A$ be a nonempty finite simply ordered set.
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 6.4, printed pp. 76--78** (`tmp/sources/munkres-solutions-whitman.pdf`); both inductions on $\cardinality{A}$ are his, as is the extension of the order isomorphism of $A-\{M\}$ by the largest element. The statement is Munkres, *Topology*, 2nd ed. (2000), §6 Exercise 4.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 6.4** (`tmp/sources/munkres-solutions-whitman.pdf`); both inductions on $\cardinality{A}$ are his, as is the extension of the order isomorphism of $A-\{M\}$ by the largest element. The statement is Munkres, *Topology*, 2nd ed. (2000), §6 Exercise 4.
 
 ::: pf
 

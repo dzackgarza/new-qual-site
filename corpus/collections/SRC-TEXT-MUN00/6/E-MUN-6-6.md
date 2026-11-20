@@ -42,7 +42,7 @@ audit:
 
 ::: {.solution}
 
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 6.6, printed pp. 78--79** (`tmp/sources/munkres-solutions-whitman.pdf`); the indicator-tuple bijection and the transfer along a bijection with a section are his.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 6.6** (`tmp/sources/munkres-solutions-whitman.pdf`); the indicator-tuple bijection and the transfer along a bijection with a section are his.
 
 ::: pf
 

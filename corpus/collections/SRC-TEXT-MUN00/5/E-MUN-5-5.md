@@ -61,7 +61,7 @@ Which of the following subsets of $\RR^{\omega}$ can be expressed as the cartesi
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 5.5, printed pp. 74--75** (`tmp/sources/munkres-solutions-whitman.pdf`), with the same four answers; the card replaces his two constant sequences in (d) by the equivalent argument that both values must lie in every factor.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 5.5** (`tmp/sources/munkres-solutions-whitman.pdf`), with the same four answers; the card replaces his two constant sequences in (d) by the equivalent argument that both values must lie in every factor.
 
 Throughout, a subset $S\subset\RR^\omega$ is a cartesian product of subsets of $\RR$ when $S=\prod_{i\in\ZZ_+}A_i$ with $A_i\subset\RR$, and then $A_i$ is the $i$-th projection of $S$, since $\pi_i\big(\prod_jA_j\big)=A_i$ (§5; the exercise is on printed p. 39).
 

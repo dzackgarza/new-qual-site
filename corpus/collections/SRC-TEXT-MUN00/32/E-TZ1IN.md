@@ -48,7 +48,7 @@ Show that $X$ is completely normal if and only if for every pair $A, B$ of separ
 
 ::: {.solution}
 
-The argument follows **"Doug's World", "Munkres - Topology - Chapter 4 Solutions" (30 August 2017), the second item printed under the heading "Problem 32.6", printed pp. 6--7** (`tmp/sources/munkres-solutions-dougsworld-ch4.pdf`), whose two directions these are, with the ambient-and-subspace closures separated as below.
+The argument follows **"Doug's World", "Munkres - Topology - Chapter 4 Solutions" (30 August 2017), the second item printed under the heading "Problem 32.6"** (`tmp/sources/munkres-solutions-dougsworld-ch4.pdf`), whose two directions these are, with the ambient-and-subspace closures separated as below.
 
 The exercise as printed needs one hypothesis the statement leaves implicit, and the solution names it: Munkres' *normal* requires one-point sets to be closed (§31), so the implication from the separated-sets condition back to complete normality requires one-point sets to be closed in $X$. Without it the condition is vacuous on some spaces that are not normal: in the two-point indiscrete space no two nonempty sets are separated, both closures being the whole space, yet that space is not normal, its points not being closed, and it is a subspace of itself. The forward implication needs no such hypothesis, and with one-point sets closed the two are equivalent, which is the content of the exercise for the spaces the book considers.
 
