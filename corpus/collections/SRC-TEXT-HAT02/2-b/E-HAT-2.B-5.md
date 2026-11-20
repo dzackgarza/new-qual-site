@@ -299,6 +299,23 @@ audit:
     step takes from its source is unchanged, and the split the card draws — published step or the card's own —
     is unchanged. The dated events above keep their text, page references included, as QUAL-11 requires.
     `qualc.authoring check` passes.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The Bredon citation this card's second proof rests on, checked at its statement in the retained PDF's own
+    text layer, because Bredon has no text version in `tmp/sources`. Bredon, *Topology and Geometry*, Chapter
+    IV, §19, Theorem 19.11, is printed as "Theorem (Generalized Schoenflies Theorem). Suppose
+    $f:S^{n-1}\times[-1,1]\to S^n$ is an embedding. Then the closure of each component of
+    $S^n-f(S^{n-1}\times\{0\})$ is homeomorphic to $D^n$", and the paragraph that introduces it says that the
+    higher-dimensional case was proved by Mazur under an extra hypothesis removed by Morse, that M. Brown gave
+    an independent proof avoiding it, and "Our treatment is based on Brown's proof". Both halves of the card's
+    sentence are therefore exact: it is the same theorem as Brown's Theorem 5, and it is proved by Brown's
+    argument. The hypothesis Bredon states is an embedding of $S^{n-1}\times[-1,1]$, which is what the card's
+    bicollar $\beta$ of $\Sigma$ supplies; the card's citation is by theorem number and needs no other change.
+    What this event does not claim: that the five lemmas of Bredon's §19 preceding it were re-read here, or
+    that his proof was carried out line by line — the check is of the statement, of the hypothesis it requires
+    and of the proof's stated provenance, which are what the card cites it for. `qualc.authoring check` passes.
 ---
 
 ::: {.problem}
