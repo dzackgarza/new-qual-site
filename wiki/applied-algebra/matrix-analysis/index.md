@@ -16,42 +16,38 @@ Throughout, $A$ is a complex $n\times n$ matrix, $A^*$ is its conjugate transpos
 
 ## Classes of matrices
 
-| $A$ is | Definition | Consequences |
-| --- | --- | --- |
-| Hermitian | $A^* = A$ | real eigenvalues; eigenvectors for distinct eigenvalues are orthogonal |
-| positive definite | $A^* = A$ and $x^*Ax > 0$ for all $x\neq0$ | positive eigenvalues; a Cholesky factorization; a unique positive definite square root |
-| unitary | $A^*A = I$ | eigenvalues of absolute value $1$; $\norm{Ax} = \norm x$ for all $x$ |
-| normal | $A^*A = AA^*$ | unitarily diagonalizable |
-
-Hermitian, skew-Hermitian, and unitary matrices are normal, and by the spectral theorem $A$ is unitarily diagonalizable if and only if $A$ is normal.
+The adjoint, symmetric, Hermitian, orthogonal, and unitary matrices are defined on [[D-DVLK5|adjoint, symmetric, Hermitian, orthogonal, and unitary matrices]].
+A Hermitian matrix has real eigenvalues, and eigenvectors for distinct eigenvalues are orthogonal ([[T-WQHMA|the spectral theorem for Hermitian and real symmetric matrices]]); a matrix is unitarily diagonalizable if and only if it is normal, [[T-SPRTR|which characterises the normal matrices]].
 
 ## Factorizations
 
-- **Spectral decomposition.** $A = U\Lambda U^*$ with $U$ unitary and $\Lambda$ diagonal, for normal $A$.
+The spectral decomposition $A = U\Lambda U^*$, with $U$ unitary and $\Lambda$ diagonal, exists if and only if $A$ is normal ([[T-SPRTR]]).
 
-- **Singular value decomposition.** Every $m\times n$ complex matrix has a factorization $A = U\Sigma V^*$ with $U$ and $V$ unitary and $\Sigma$ an $m\times n$ diagonal matrix whose diagonal entries are the singular values of $A$, the nonnegative square roots of the eigenvalues of $A^*A$.
-  The operator norm is $\norm A_2 = \sigma_{\max}$, the largest singular value.
+Every $m\times n$ complex matrix has a singular value decomposition $A = U\Sigma V^*$, with $U$ and $V$ unitary and $\Sigma$ an $m\times n$ diagonal matrix whose diagonal entries are the singular values of $A$, the nonnegative square roots of the eigenvalues of $A^*A$; the operator norm is then $\norm A_2 = \sigma_{\max}$, the largest singular value ([[P-U547U|the singular value decomposition]], with its proof).
 
-- **Cholesky factorization.** $A = LL^*$ with $L$ lower triangular with positive diagonal entries, for positive definite $A$.
+A positive definite $A$ has a Cholesky factorization $A = LL^*$, with $L$ lower triangular of positive diagonal, and a unique positive definite square root; the factorization is stated in the upper triangular form $A = R^tR$ on [[P-BKF20-6A|Cholesky factorization and a related similarity]].
 
-- **QR factorization.** $A = QR$ with $Q$ unitary and $R$ upper triangular; for invertible $A$ it is Gram--Schmidt orthonormalization applied to the columns of $A$.
+An invertible $A$ has a QR factorization $A = QR$, with $Q$ unitary and $R$ upper triangular of positive diagonal, unique in this normalization ([[P-BKS83-11|QR decomposition with positive diagonal]]); for a real invertible $A$ it is Gram--Schmidt orthonormalization applied to the columns.
 
 ## Eigenvalue location
 
-- **Gershgorin.** Every eigenvalue of $A=(a_{ij})$ lies in some disc $\theset{z \st \abs{z-a_{ii}}\leq\sum_{j\neq i}\abs{a_{ij}}}$.
-  A union of $k$ discs disjoint from the other $n-k$ discs contains exactly $k$ eigenvalues, counted with multiplicity.
+Every eigenvalue of $A = (a_{ij})$ lies in one of the discs $\theset{z\st\abs{z-a_{ii}}\leq\sum_{j\neq i}\abs{a_{ij}}}$ ([[P-APAS24B|Gershgorin discs contain every eigenvalue]]).
 
-- **Courant--Fischer.** For Hermitian $A$ with eigenvalues $\lambda_1\geq\cdots\geq\lambda_n$, $\lambda_k = \max_{\dim S = k}\min_{0\neq x\in S} x^*Ax/x^*x$.
-  Hence the eigenvalues of $A$ and of $A + vv^*$ interlace.
+For a Hermitian $A$ with eigenvalues $\lambda_1\geq\cdots\geq\lambda_n$,
+$$
+\lambda_k = \max_{\dim S = k}\min_{0\neq x\in S} \frac{x^*Ax}{x^*x},
+$$
+by [[P-UCLAB10S-02|the Courant--Fischer characterization of the ordered eigenvalues]]; the same characterization shows that the eigenvalues of $A$ and of $A + vv^*$ interlace.
 
-- **Trace and determinant.** $\tr A = \sum_i\lambda_i$ and $\det A = \prod_i\lambda_i$.
+The trace and the determinant are the coefficients of $t^{n-1}$ and $t^0$ in the characteristic polynomial, so $\tr A = \sum_i\lambda_i$ and $\det A = \prod_i\lambda_i$.
 
 ## Norms
 
-A matrix norm is submultiplicative if $\norm{AB}\leq\norm A\norm B$ for all $A,B$; operator norms are submultiplicative.
+A matrix norm is submultiplicative when $\norm{AB}\leq\norm A\norm B$ for all $A$ and $B$; an operator norm is submultiplicative, since $\norm{ABx}\leq\norm A\norm{Bx}\leq\norm A\norm B\norm x$.
 
 ::: {.example}
 The entrywise maximum norm $\norm A_{\max} = \max_{i,j}\abs{a_{ij}}$ is not submultiplicative: for $A = \matt{1}{1}{1}{1}$, $\norm{A^2}_{\max} = 2 > 1 = \norm A_{\max}^2$.
 :::
 
-For every submultiplicative norm, the spectral radius satisfies $\rho(A)\leq\norm A$, and $\rho(A) = \lim_{k\to\infty} \norm{A^k}^{1/k}$ by Gelfand's formula.
+For every submultiplicative norm, $\rho(A)\leq\norm A$, and $\rho(A) = \lim_{k\to\infty}\norm{A^k}^{1/k}$.
+The inequality follows from $\rho(A)^k = \rho(A^k)\leq\norm{A^k}$; for the limit, the Jordan form supplies for every $\varepsilon>0$ a norm with $\norm A\leq\rho(A)+\varepsilon$, and equivalence of the norms on a finite-dimensional space gives $\norm{A^k}^{1/k}\leq(\rho(A)+\varepsilon)(1+o(1))$, so the limit is at most $\rho(A)$.
