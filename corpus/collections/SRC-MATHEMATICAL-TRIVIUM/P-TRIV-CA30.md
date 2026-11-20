@@ -81,7 +81,7 @@ Apply Stirling's formula to $(2N)!$ and to each factor $N!$.
 
 ::: {.pf-step #s1-3}
 
-Therefore
+Part (a): therefore
 $$
 \boxed{
 \binom{2N}{N}
@@ -109,19 +109,6 @@ $$
 =
 \frac1{\sqrt{\pi N}}.
 $$
-
-:::
-
-:::
-
-::: {.pf-step #s1-4}
-
-Part (a) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -318,7 +305,7 @@ steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} give the standard fixed-dens
 
 ::: pf-qed
 
-Steps [](#s1-4){.pf-ref} and [](#s1-9){.pf-ref} establish parts (a) and (b), respectively.
+Steps [](#s1-3){.pf-ref} and [](#s1-9){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 
