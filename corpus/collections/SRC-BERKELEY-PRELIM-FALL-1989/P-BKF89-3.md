@@ -119,27 +119,6 @@ Proceed by induction on $n$. Step [](#s1){.pf-ref} is the base case. For $n>1$, 
 
 :::
 
-::: {.pf-step #s5}
-
-Therefore
-$$
-\boxed{A\text{ is diagonal}}.
-$$
-
-::: pf-proof
-
-This is step [](#s4){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s5){.pf-ref} is the required conclusion.
-
-:::
-
 :::
 
 :::
