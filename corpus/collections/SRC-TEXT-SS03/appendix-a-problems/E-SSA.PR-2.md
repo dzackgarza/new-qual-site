@@ -27,6 +27,14 @@ audit:
   date: 2026-11-01
   note: >-
     Solution installed: the expansion is obtained from the exact substitution Phi = v^2/2 near x = 1, with A(v) = v/(x(v)-1) giving the coefficients a_j = alpha_{2j}(2j-1)!! and a_1 = 1/12, a Gaussian cut-off Watson lemma for the remainder, and the tails estimated by the book's iteration for e^{-s Phi}. The stated range Re s >= 1/2 is extended to Re s >= 0 through Gamma(s+1) = s Gamma(s).
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator correction to the events above: Appendix A's Problems occupy PDF pp. 360--362 of the
+    retained scan, printed pp. 341--343, not PDF pp. 359--363; PDF p. 359 is printed p. 340 and
+    PDF p. 363 is the Appendix B title page. This item was not otherwise re-read in this pass, and it
+    carries no asterisk -- the print's Appendix A mark is before Problem 5 only.
 ---
 
 ::: {.exercise}
@@ -122,7 +130,7 @@ $$
 $$
 
 ::: pf-proof
-The odd integral vanishes because the integrand is odd and integrable. For the even one, $G(\lambda):=\int_{\RR}e^{-\lambda v^{2}/2}dv=\sqrt{2\pi}\,\lambda^{-1/2}$ (the Gaussian integral, by the change of variables $v=u\sqrt{2}$ and $\int_{\RR}e^{-u^{2}}du=\sqrt\pi$). Both sides are holomorphic in $\lambda$ on $\Re(\lambda)>0$, and differentiating $k$ times under the integral sign is legitimate there (dominated convergence on compact subsets, since $|v^{2k}e^{-\lambda v^{2}/2}|\le C_{k,\lambda_0}e^{-\lambda_0 v^{2}/4}$ for $\Re\lambda\ge\lambda_0$). As $\partial_\lambda^{k}e^{-\lambda v^{2}/2}=(-1)^{k}2^{-k}v^{2k}e^{-\lambda v^{2}/2}$ and $\partial_\lambda^{k}\bigl(\sqrt{2\pi}\lambda^{-1/2}\bigr)=(-1)^{k}2^{-k}(2k-1)!!\sqrt{2\pi}\lambda^{-k-1/2}$, the formula follows.
+The odd integral vanishes because the integrand is odd and integrable. For the even one, $G(\lambda):=\int_{\RR}e^{-\lambda v^{2}/2}dv=\sqrt{2\pi}\,\lambda^{-1/2}$ (the Gaussian integral, by the change of variables $v=u\sqrt{2}$ and $\int_{\RR}e^{-u^{2}}du=\sqrt\pi$). Both sides are holomorphic in $\lambda$ on $\Re(\lambda)>0$, and differentiating $k$ times under the integral sign is legitimate there (dominated convergence on compact subsets, since $\abs{v^{2k}e^{-\lambda v^{2}/2}}\le C_{k,\lambda_0}e^{-\lambda_0 v^{2}/4}$ for $\Re\lambda\ge\lambda_0$). As $\partial_\lambda^{k}e^{-\lambda v^{2}/2}=(-1)^{k}2^{-k}v^{2k}e^{-\lambda v^{2}/2}$ and $\partial_\lambda^{k}\bigl(\sqrt{2\pi}\lambda^{-1/2}\bigr)=(-1)^{k}2^{-k}(2k-1)!!\sqrt{2\pi}\lambda^{-k-1/2}$, the formula follows.
 
 :::
 
@@ -150,7 +158,7 @@ $$
 $$
 the boundary terms vanish at $\pm\infty$ because $g$ has compact support, and $g/v$ is $C^{1}$ near $0$ because $g(0)=0$. Put $Dg=(g/v)'$. If $g$ is $C^\infty$ with compact support and vanishes at $0$ to order $q$, then $g/v$ vanishes to order $q-1$ and $Dg$ to order $q-2$, so the formula may be applied again as long as $q-2\ge1$, i.e. as long as $q\ge3$. Applying it $K+1$ times to $g=R$, which is $C^\infty$ with compact support and vanishes at $0$ to order $q=2K+2\ge 2(K+1)$ (so that $q-2m\ge2$ for $m\le K$), we get
 $$
-\Bigl|\int_{\RR}e^{-sv^{2}/2}R\,dv\Bigr|\le\abs{s}^{-K-1}\int_{\RR}\abs{D^{K+1}R(v)}\,dv,
+\abs{\int_{\RR}e^{-sv^{2}/2}R\,dv}\le\abs{s}^{-K-1}\int_{\RR}\abs{D^{K+1}R(v)}\,dv,
 $$
 since $\abs{e^{-sv^{2}/2}}=e^{-\Re(s)v^{2}/2}\le1$ and $D^{K+1}R$ is again $C^\infty$ with compact support.
 
