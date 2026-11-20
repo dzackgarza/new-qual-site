@@ -345,6 +345,49 @@ audit:
     4.12, printed pp. 405-406, and Dolgachev's introduction, which names C as
     the base field, in the text versions retained in tmp/sources. Not checked:
     any printing of either book, only those text versions.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The characteristic-free nonsingularity proof of step
+    third-condition-contains-nonsingular-curve is replaced, closing the defect an
+    independent reader reported on this date. The old paragraph counted the bad
+    hyperplanes over the complement of the open set where phi is smooth as the dual
+    of a curve, but over a point where phi is not smooth it admitted every hyperplane
+    through the image of the point, so over a curve the incidence can fill the whole
+    dual and the bound dim Z <= N-1 did not follow; and Vakil's Theorem 13.4.2 is
+    stated for a smooth closed subvariety of projective space, not for a morphism. The
+    step now stratifies X by the rank of d(phi): rank 2 gives a P^{N-3} of bad
+    hyperplanes over the surface, rank 1 a P^{N-2} over a divisor, and rank 0 a
+    P^{N-1} over a locus that phi contracts to finitely many points, because
+    otherwise the general member would be non-reduced (Propositions IV.2.1 and IV.2.5
+    against Lemma II.6(b)); each stratum has dimension at most N-1, the image in the
+    dual is closed because X is proper, and a general hyperplane avoids it. The Vakil
+    citation is kept for the incidence count of its proof with the difference of the
+    two settings stated, and the unused Proposition 10.4 and Lemma 8.9 citations are
+    replaced by Theorem I.5.1, Theorem II.8.6A, Exercise II.5.7(a), Proposition IV.2.1
+    and Proposition IV.2.5. Read for this: Hartshorne I.5 Theorem 5.1 with the
+    Jacobian definition, II.8.6A, Exercise II.5.7, III.10.4, IV.2.1 and IV.2.5 in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md at the printed pages named;
+    Harbourne's Lemma II.6(b) with its proof, preprint p. 4; and Vakil's Theorem
+    13.4.2 with its proof, printed pp. 375-376, in the 21 October 2025 PDF. Not
+    checked: any printed copy of Hartshorne or Vakil, only the text version and the
+    PDF retained in tmp/sources; no characteristic-p computation beyond the argument
+    above.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Re-read the repaired step and the steps it uses. The hypotheses are the ones
+    already established in the same step: D nef and effective, |D| base-point-free
+    with h^1 = 0, the general member reduced and irreducible by Harbourne's Lemma
+    II.6(b), and D^2 > 0, which excludes a pencil and makes phi generically finite
+    onto a surface. Checked the three rank strata, the closedness of the image of Z
+    (X is proper), the passage from a hyperplane outside that image to nonsingularity
+    of the member by Theorem I.5.1, and the two facts of Chapter IV used on the
+    rank-zero locus. No statement, hypothesis or alternative of the exercise changes;
+    the step's conclusion is the one it stated before. Not checked: no certificate or
+    computation is claimed, and no printing of the book was read.
 ---
 
 ::: {.problem}
@@ -470,35 +513,60 @@ pencil, and Harbourne's Lemma II.6(b), preprint p. 4, then gives $D^2>0$ and tha
 of $D$ is reduced and irreducible.
 
 Finally, it is nonsingular, in every characteristic. Let $\varphi\colon X\to\PP^N$ be the morphism
-defined by the base-point-free system $\linearsystem{D}$, and let $Z\subseteq X\times\PP^{N\vee}$ be the closed
-subset of pairs $(x,H)$ with $\varphi(x)\in H$ and either $\varphi$ is not smooth at $x$, or $H$ is
-tangent to $\varphi(X)$ at $\varphi(x)$, or $\varphi(X)\subseteq H$. The morphism $\varphi$ is
-separable: the general member is reduced by Harbourne's Lemma II.6(b), preprint p. 4, and an
-inseparable morphism onto its image pulls a general hyperplane back to a non-reduced divisor. Hence
-$\Omega_{X/\varphi(X)}$ is zero at the generic point: the extension of function fields
-$k(X)/k(\varphi(X))$ is finite and separable of transcendence degree $0$, so
-$\dim_{k(X)}\Omega_{k(X)/k(\varphi(X))}=0$ by II.8.6A, printed p. 174, and is locally free of rank
-$0$ on a nonempty open set by Exercise II.5.7(a), printed p. 125, the stalk at the generic point
-being free of rank $0$ over the function field $k(X)$, and it stays so
-after shrinking that set. Let $U$ be the open set of points at which $\Omega_{X/\varphi(X)}$ is
-locally free of rank $0$ and $\varphi(x)$ is a nonsingular point of the surface $\varphi(X)$; it is
-nonempty, both conditions holding at the generic point of $X$, whose image is the generic point of
-$\varphi(X)$, and on it $\varphi$ is smooth of relative dimension $0$ by Proposition 10.4, printed
-p. 270, applied to the morphism $U\to\varphi(U)$, whose source and target are nonsingular varieties
-there, the relative dimension being $\dim U-\dim\varphi(U)=0$. At $x\in U$ the differential $T_xX\to T_{\varphi(x)}\varphi(X)$ is onto, so a hyperplane $H$
-through $\varphi(x)$ meets $\varphi(X)$ transversally there exactly when
-$T_{\varphi(x)}H\cap T_{\varphi(x)}\varphi(X)$ is a line, and for such an $H$ the tangent space
-$T_x\varphi^{-1}(H)$ is the inverse image of that line, of dimension $1$, which is the dimension of
-$\varphi^{-1}(H)$, so $\varphi^{-1}(H)$ is nonsingular at $x$. Over a point of $U$ the hyperplanes
-through $\varphi(x)$ and tangent to the image form a linear subspace of codimension $2$ in
-$\PP^{N\vee}$, of dimension $N-3$; over the complement of $U$, a proper closed subset of the
-surface, the hyperplanes meeting $\varphi(X\setminus U)$ form the dual of a curve, of dimension
-$N-1$. Thus $\dim Z\le N-1$, and a general hyperplane $H$ lies outside the image of $Z$ in
-$\PP^{N\vee}$. For such $H$ every point of the member $\varphi^{-1}(H)$ lies in $U$, where $\varphi$
-is smooth and $H$ is transverse, so the member is nonsingular. This is the
-argument of Vakil's Bertini theorem, *The Rising Sea* (21 October 2025), Theorem 13.4.2 and its
-proof, printed p. 375, applied to the linear system $\linearsystem{D}$ instead of the hyperplane system; the
-characteristic-zero Corollary III.10.9, printed p. 274, is not needed.
+defined by the base-point-free system $\linearsystem{D}$; then $N=\dim\linearsystem{D}\ge2$,
+because a base-point-free pencil has $D^2=0$, and $\varphi$ is generically finite onto a surface,
+because if the image of $\varphi$ were a curve then $D=\varphi^*\OO(1)$ would have $D^2=0$. The
+morphism $\varphi$ is separable: if $k(X)/k(\varphi(X))$ were not separable, $\varphi$ would
+factor as a purely inseparable morphism $f\colon X\to X'$ of degree $p^m>1$ followed by a morphism
+to $\varphi(X)$, and the pullback of a general hyperplane would be $p^m$ times a divisor, hence
+non-reduced, whereas the general member is reduced by Harbourne's Lemma II.6(b), preprint p. 4.
+Consequently $\varphi$ has generic rank $2$, and $\Omega_{X/\varphi(X)}$ is zero at the generic
+point: the extension $k(X)/k(\varphi(X))$ is finite and separable of transcendence degree $0$, so
+$\dim_{k(X)}\Omega_{k(X)/k(\varphi(X))}=0$ by Theorem II.8.6A, printed p. 174, and the sheaf is
+locally free of rank $0$ on a nonempty open set by Exercise II.5.7(a), printed p. 125.
+
+For $x\in X$ let $r(x)$ be the rank of the differential
+$d\varphi_x\colon T_xX\to T_{\varphi(x)}\PP^N$, and let
+$$
+Z=\{(x,H)\in X\times\PP^{N\vee}:\varphi(x)\in H,\ d(\ell_H\circ\varphi)_x=0\},
+$$
+where $\ell_H$ is a linear form defining $H$. At $(x,H)$ the local equation of the member
+$\varphi^{-1}(H)$ on the nonsingular surface $X$ is $\ell_H\circ\varphi$; if its differential is
+nonzero at $x$ it is part of a regular system of parameters, so the quotient local ring is regular
+of dimension $1$ and the member is nonsingular at $x$ by Theorem I.5.1, printed p. 32. It is
+therefore enough to show that the image of $Z$ in $\PP^{N\vee}$ is a proper closed subset.
+
+The locus $r=2$ is nonempty and open, because $\varphi$ has generic rank $2$; hence the locus
+$r\le1$ is a proper closed subset of the surface, of dimension at most $1$. Where $r(x)=2$ the
+image $d\varphi_x(T_xX)$ is a $2$-plane in $T_{\varphi(x)}\PP^N$, and the hyperplanes $H$ with
+$(x,H)\in Z$ are those containing it, a linear subspace of $\PP^{N\vee}$ of dimension $N-3$; this
+part of $Z$ has dimension at most $2+(N-3)=N-1$. Where $r(x)=1$ the hyperplanes $H$ with
+$(x,H)\in Z$ contain the line $d\varphi_x(T_xX)$, a linear subspace of dimension $N-2$; over the
+at most one-dimensional locus $r=1$ this part of $Z$ has dimension at most $1+(N-2)=N-1$. Where
+$r(x)=0$ every hyperplane through $\varphi(x)$ satisfies $(x,H)\in Z$. Each component $C$ of the
+closed locus $r=0$ is contracted by $\varphi$: if $\restrictionof{\varphi}{C}$ were non-constant, then on the
+normalization of $C$ it would be a finite morphism of smooth curves with identically zero
+differential, hence not separable by Theorem II.8.6A, printed p. 174. A finite morphism of curves
+is a separable morphism followed by a purely inseparable one, and a separable one has nonzero
+differential at the generic point by Proposition IV.2.1, printed p. 300, so the separable part is
+trivial and $\restrictionof{\varphi}{C}$ is purely inseparable, a composition of Frobenius morphisms by Proposition
+IV.2.5, printed p. 302; the pullback of a local parameter of $\varphi(C)$ would then be a $p$-th
+power, so
+for a general hyperplane $H$ meeting $\varphi(C)$ the equation $\ell_H\circ\varphi$ would have
+multiplicity at least $p$ at the corresponding point of $C$, and $\varphi^{-1}(H)$ would be
+non-reduced, contradicting the reducedness of the general member. Hence $\varphi$ maps the locus
+$r=0$ to a finite set, and this part of $Z$ lies in the union of the $\PP^{N-1}$ of hyperplanes
+through the finitely many points of that set, so it has dimension at most $N-1$.
+
+Thus $Z$ has dimension at most $N-1$, and so does its image in $\PP^{N\vee}$, which is closed
+because $X$ is proper. A general hyperplane $H$ therefore lies outside that image, and for such
+$H$ no point of the member $\varphi^{-1}(H)$ lies in $Z$, so the member is nonsingular. This is
+the incidence count of the proof of Vakil's Bertini theorem, *The Rising Sea* (21 October 2025),
+Theorem 13.4.2, printed pp. 375--376, carried out for the morphism $\varphi$ rather than for a
+smooth closed subvariety of $\PP^N$: where $\varphi$ is a closed immersion the fibre of $Z$ is the
+$\PP^{N-1-\dim X}$ of Vakil's proof, and the cases $r=1$ and $r=0$ above are the additional
+$\PP^{N-2}$ and $\PP^{N-1}$ fibres created by the drop in rank. The characteristic-zero Corollary
+III.10.9, printed p. 274, is not used.
 :::
 
 :::
@@ -594,9 +662,10 @@ composed with a pencil is a multiple of a class with reduced irreducible general
 III.1(a), preprint p. 7, that $-K_X\cdot D\ge2$ makes the system base point free with $h^1=0$. The
 paper works over an algebraically closed field of arbitrary characteristic, so its Lemma II.6 gives
 reduced irreducible members in every characteristic. The nonsingularity of the member of a class of
-the third alternative is then the incidence count of Vakil's Bertini theorem, printed p. 375,
-applied to the linear system $\linearsystem{D}$: the bad hyperplanes form a closed subset of the dual of
-dimension at most $N-1$.
+the third alternative is then the incidence count of Vakil's proof of Theorem 13.4.2, printed
+pp. 375--376, carried out for the morphism defined by $\linearsystem{D}$ and stratified by the rank of
+its differential: the bad hyperplanes form a closed subset of the dual of dimension at most $N-1$,
+the rank-zero stratum being contracted because otherwise the general member would be non-reduced.
 
 I. V. Dolgachev, *Topics in Classical Algebraic Geometry* (September 27, 2010): Lemma 8.1.3 and its
 proof, printed p. 248, on irreducible curves of negative self-intersection on a weak Del Pezzo
@@ -607,9 +676,9 @@ Hartshorne's Theorem 4.11, printed pp. 405--406, which has no hypothesis on the 
 
 Theorem 4.9 of Hartshorne, printed pp. 402--403, for the $27$ lines and for the curves of negative
 self-intersection; J. Vakil, *The Rising Sea* (21 October 2025), Theorem 13.4.2 and its proof,
-printed p. 375, for the incidence count used on the linear system $\linearsystem{D}$; Hartshorne, Proposition
-10.4, printed p. 270, II.8.6A, printed p. 174, and Lemma 8.9, printed p. 175, for the smoothness of a
-separable morphism on an open set.
+printed pp. 375--376, for the incidence count; Hartshorne, Theorem I.5.1, printed p. 32, Theorem
+II.8.6A, printed p. 174, Exercise II.5.7(a), printed p. 125, and Propositions IV.2.1 and IV.2.5,
+printed pp. 300 and 302, for the nonsingularity of the general member and for the rank-zero stratum.
 
 Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.8, printed p. 110, argues both
 implications through the blowups $X_r$, $2\le r\le5$: it lists the lines of $X_r$, the $E_i$ and
