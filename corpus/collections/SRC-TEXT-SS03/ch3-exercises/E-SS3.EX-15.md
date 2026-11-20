@@ -18,6 +18,14 @@ audit:
     date: 2026-11-18
     note: >-
       Restructured the prose solution of the four-part exercise into Lamport steps. The collection's provenance is the publisher's catalogue record only, with no retained text and no retained solution set, so the statement is taken as the card prints it; the argument is the card's own. Checked: the Cauchy estimate $\lvert a_n\rvert\le(AR^k+B)R^{-n}$ and its limit for $n>k$; the reflection argument on a boundary arc together with the identity theorem; the maximum principle for the monic polynomial and the intermediate value argument on the circle; and $\lvert e^{f}\rvert=e^{\Re f}$ with Liouville.
+  - event: source-corrected
+    by: claude
+    date: 2026-11-20
+    note: >-
+      The solution's opening sentence cited the book through the printed pages. It now cites
+      Chapter 3, Exercise 15, and the printed page numbers are gone from the rendered text; the book
+      was read for this edit and its part (a) is the statement the card carries. Statement
+      unchanged; the argument was not re-read in this pass.
 ---
 
 ::: {.exercise}
@@ -37,7 +45,7 @@ for all $R > 0$, and for some integer $k \geq 0$ and some constants $A, B > 0$, 
 :::
 
 ::: {.solution}
-The statement is Exercise 15 of [@SS03, ch. 3 (pp. 105--106)], printed as: use the Cauchy inequalities or the maximum modulus principle to show that an entire $f$ with $\sup_{\abs z=R}\abs{f(z)}\le AR^k+B$ for all $R>0$ is a polynomial of degree at most $k$.
+The statement is Exercise 15 of [@SS03, ch. 3], printed as: use the Cauchy inequalities or the maximum modulus principle to show that an entire $f$ with $\sup_{\abs z=R}\abs{f(z)}\le AR^k+B$ for all $R>0$ is a polynomial of degree at most $k$.
 
 No retained text and no retained solution set for this collection: its provenance is the publisher's catalogue record, so the statement is taken as the card prints it, and the argument is the card's own.
 
