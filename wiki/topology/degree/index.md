@@ -8,4 +8,8 @@ topics:
 
 # Degree and fixed points
 
-- [[topology/degree/fixed-points-and-degree|Fixed points and degree]], Brouwer, Lefschetz, Borsuk--Ulam.
+The degree of a map of spheres, and the fixed point theorems proved from it.
+
+- [[topology/degree/degree-of-a-map|Degree of a map]], the definition, its properties, and the exercises on degree.
+
+- [[topology/degree/fixed-point-theorems|Fixed point theorems]], Brouwer, Lefschetz, Borsuk--Ulam, the ham sandwich theorem and the hairy ball theorem.
