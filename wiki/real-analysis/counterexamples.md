@@ -79,11 +79,7 @@ $f_n(x)\coloneqq x^n$ on $[0,1]$ converges pointwise to $\chi_{\theset{1}}$.
 
 :::
 
-::: {.example title="A uniform limit of differentiable functions need not be differentiable"}
-$f_n(x)\coloneqq\sqrt{x^2+1/n}$ converges uniformly on $\RR$ to $\abs x$, which is not differentiable at $0$.
-The converse hypothesis that rules this out is on [[T-RA-WORKSHOP-D7-6-4|uniform convergence of derivatives]].
-
-:::
+[[PR-DWOXP]]
 
 ::: {.example title="A differentiable function need not be continuously differentiable"}
 $f(x)\coloneqq x^2\sin(1/x)$ for $x\neq0$ and $f(0)\coloneqq0$ is differentiable on $\RR$ with $f'(0)=0$, and $f'(x) = 2x\sin(1/x)-\cos(1/x)$ has no limit as $x\to0$.
