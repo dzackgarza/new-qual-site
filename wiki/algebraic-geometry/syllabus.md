@@ -7,7 +7,7 @@ topics:
 
 # Sample syllabi
 
-Topic lists from algebraic geometry qualifying and oral examination syllabi, each naming its source document.
+Topic lists for algebraic geometry qualifying and oral examinations. A section names the document whose list it transcribes, and where the list is a topic outline it names the reading that covers the topics instead.
 Past examinations with transcribed questions are linked from [[algebraic-geometry/resources|Resources]].
 
 ## Harvard qualifying examination
@@ -34,7 +34,7 @@ Reading pointers: [@Sha94; @Har92].
 
 ## Scheme theory, cohomology and curves
 
-Source: the [qualifying exam syllabus and transcript](https://math.berkeley.edu/~ritvik/Qualifying_Exam_Syllabus_and_Transcript.pdf#page=1).
+Source: the [qualifying exam syllabus and transcript](https://math.berkeley.edu/~ritvik/Qualifying_Exam_Syllabus_and_Transcript.pdf).
 
 Scheme theory:
 
@@ -148,7 +148,9 @@ Cohomology of sheaves:
 
 ## Varieties, schemes, cohomology and curves
 
-Source: [@Har77, Chapters I--IV] and [@Mir95, Chapters I--VIII]; the numbered items group their topics by subject.
+The numbered items group the topics by subject.
+
+Reading pointers: [@Har77, Chapters I--IV] and [@Mir95, Chapters I--VIII].
 
 1. Varieties: quasiprojective varieties, regular and rational maps, the definition of singularities and analytic isomorphism, abstract nonsingular curves, intersections in projective space.
 
@@ -160,7 +162,9 @@ Source: [@Har77, Chapters I--IV] and [@Mir95, Chapters I--VIII]; the numbered it
 
 ## Complex algebraic surfaces
 
-Source: [@GH94, Chapters 0--4], [@Mir95, Chapters XI--XII] and [@Har92, Chapter V]; the numbered items follow those chapters.
+The numbered items group the topics by subject.
+
+Reading pointers: [@GH94, Chapters 0--4] and [@Mir95, Chapters XI--XII]; for the surface topics, Miles Reid, *Chapters on Algebraic Surfaces* (Park City lecture notes, 1993): Riemann--Roch in Chapter B, §B.9 (item ix), Noether's formula in Chapter C, §C.1.4, the genus formula in Chapter A, §A.12, del Pezzo surfaces in Chapter 1, §1.12 (item 4), K3 surfaces in Chapter 3, §3.3 and §3.7, Enriques surfaces in §C.5.6 (item 3), Du Val singularities in Chapter 4, §4.1--§4.2, and the Enriques--Kodaira classification in Chapters C and E.
 
 1. Cohomology: the Riemann–Roch theorem, Noether's formula, the genus formula.
 
@@ -178,7 +182,9 @@ Source: [@GH94, Chapters 0--4], [@Mir95, Chapters XI--XII] and [@Har92, Chapter 
 
 ## Toric varieties
 
-Source: [@Ful93, Sections 1.1--1.5, 2.1--2.6, 3.1--3.5 and 5.1--5.2]; the numbered items follow those sections.
+The numbered items group the topics by subject.
+
+Reading pointers: [@Ful93, Sections 1.1--1.5, 2.1--2.6, 3.1--3.5 and 5.1--5.2].
 
 1. Definitions: convex polyhedral cones, geometry of convex sets, affine toric varieties, fans and toric varieties, toric varieties from polytopes.
 
@@ -190,7 +196,7 @@ Source: [@Ful93, Sections 1.1--1.5, 2.1--2.6, 3.1--3.5 and 5.1--5.2]; the number
 
 ## Complex algebraic geometry (minor topic)
 
-Source: [@GH94, Chapters 0--1] and [@Mir95, Chapters V--IX]; the chapter ranges under each heading locate its topics.
+The chapter ranges under each heading locate its topics.
 
 Complex geometry [@GH94, Ch. 0.1–0.2, 0.4–0.7, 1.1–1.4]:
 
