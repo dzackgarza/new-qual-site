@@ -459,9 +459,45 @@ audit:
     and this event's own locators were replaced by the statements in the commit
     that follows it; the earlier dated events of this card keep the printed
     pages they were read in and are left as they were written. Not checked: the
-    printed copies of Xie, Egbert
-    or Yang, only the retained text layers and, for Xie, the arXiv v5, v6 and
-    v7 PDF text.
+    printed copies of Xie, Egbert or Yang, only the retained text layers and,
+    for Xie, the arXiv v5, v6 and v7 PDF text.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #164, the two items left open by the pass recorded above: the
+    falsity of the printed (c) now stands as a theorem with its proof, and the
+    genus defect of the unique member is computed rather than inferred. Step
+    s9 was rewritten. It derives, for a ruled surface over a curve of genus g
+    with invariant e and a divisor Y = 3C_0-3f, the two pairings Y^2 =
+    -9e-18 and Y.K_X = 3e+6g in the basis (C_0, f) of Num(X) with C_0^2 =
+    -e, C_0.f = 1, f^2 = 0 and K_X = -2C_0+(2g-2-e)f of Corollary 2.11, hence
+    2p_a-2 = -6e+6g-18 and p_a = 3g-8-3e, which is p_a = 1-3e at g = 3. Since
+    2p_a-2 = -6e is divisible by 3 for every integer e, while a purely
+    inseparable finite morphism of degree 3 onto C keeps the genus
+    (Proposition IV.2.5), giving 2g(Y)-2 = 4, no nonsingular curve in the class
+    has a purely inseparable projection on any such surface; the separable case
+    is excluded by Riemann-Hurwitz (Corollary IV.2.4) at e = -1, where
+    2p_a-2 = 6 < 12+deg R. The member 3 Sigma is then computed from O_D
+    itself: I_Σ^3 gives O_D = O_X/I_Σ^3 a filtration with quotients O_Σ,
+    N^vee and (N^vee)^2, of degrees 0, 1 and 2 because Sigma^2 = -1, so
+    chi(O_D) = -2-1+0 = -3 and p_a(D) = 4 by Riemann-Roch on Sigma alone,
+    independently of adjunction. The map O_D -> O_Σ is surjective with
+    nilpotent kernel, so Sigma is the normalization and
+    delta = chi(O_Σ)-chi(O_D) = 1. That delta is the genus defect of the whole
+    divisor and not a point invariant, and the step now says so: at P in Sigma
+    the local ring is k[[s,t]]/(t^3), of embedding dimension 2 in dimension 1,
+    so every point of Sigma is singular and the singular locus is not finite.
+    This corrects the phrasing of the event of 2026-11-11 above, which left
+    open "whether Y as constructed is singular with delta = 1": 3 Sigma is not
+    a curve with one singular point of delta 1, and the card no longer suggests
+    it. The qed summary and the closing remark were brought into line with the
+    new step; nothing else on the card changed, and the rendered statement of
+    (c) keeps the book's words. Citations in this event and in the new text are by
+    numbered statement; the earlier dated events keep the pages they were read
+    in and are not edited (QUAL-11). Not checked: the printed book, only the
+    retained text layer; and no example was computed for a surface with
+    e <= -2, where the separable case of the exclusion is not decided here.
 
 ---
 
@@ -651,7 +687,7 @@ By step [](#s7){.pf-ref}, $Y=3\Sigma$ and $\restrictionof{\pi}{\Sigma}:\Sigma\to
 :::
 
 ::: {.pf-step #s9}
-The divisor $3\Sigma$ is the only effective divisor in the class $3C_0-3f$; in particular no nonsingular curve has that class, and Xie's $Y=3\Sigma$ is not reduced, its reduction being the section $\Sigma\cong C$ of genus $3$ while $p_a(Y)=4$.
+Every effective divisor $Y\equiv3C_0-3f$ on a ruled surface over a curve of genus $3$ has $p_a(Y)=1-3e$, and on the exercise's surface, where $e=-1$ and so $p_a=4$, the only effective divisor in the class is the triple $3\Sigma$ of step [](#s7){.pf-ref}. That member is reduced nowhere: its normalization is the section $\Sigma\cong C$, and the genus defect $\delta=p_a(3\Sigma)-p_a(\Sigma)$ is $1$. Hence the class contains no nonsingular curve, and the printed ``nonsingular'' of part (c) is false.
 
 ::: pf-proof
 This step is this card's own, and no source read carries it. The class has exactly one member. A divisor of $\OO_X(3)\otimes f^*\OO_C(-3P)$ is a section of that line bundle, and $H^0(X,\OO_X(3)\otimes f^*\OO_C(-3P))=H^0(C,S^3\mathcal E\otimes\OO_C(-3P))$; the subbundle $\OO_C\subset\mathcal E$ of step [](#s6){.pf-ref}, whose quotient is $\OO_C(P)$, gives $S^3\mathcal E$ a filtration whose successive quotients are $\OO_C(3P)$, $\OO_C(2P)$, $\OO_C(P)$ and $\OO_C$, so the twisted bundle has quotients $\OO_C$, $\OO_C(-P)$, $\OO_C(-2P)$ and $\OO_C(-3P)$, and
@@ -660,18 +696,40 @@ h^0(C,S^3\mathcal E\otimes\OO_C(-3P))\le h^0(\OO_C)+h^0(\OO_C(-P))+h^0(\OO_C(-2P
 $$
 because $\deg\OO_C(-P)=-1$ makes each of the last three negative. The space is not zero, since $t\ne0$ by step [](#s7){.pf-ref}; so it is one-dimensional and $3\Sigma=\operatorname{div}(t)$ is its only effective divisor.
 
-Independently, for an effective divisor $Y$ in the class, adjunction gives
+The arithmetic genus of every divisor in the class, for any invariant $e$. In the basis $C_0,f$ of $\operatorname{Num}(X)$ one has $C_0^2=-e$, $C_0\cdot f=1$ and $f^2=0$, and $K_X\equiv-2C_0+(2g-2-e)f$ by Corollary 2.11. Expanding,
 $$
-p_a(Y)=1+\frac12\qty(Y^2+Y\cdot K_X),
+Y^2=9C_0^2-18\,C_0\cdot f+9f^2=-9e-18,
 $$
-and with $C_0^2=1$ and $K_X\equiv-2C_0+(2g-2-e)f=-2C_0+5f$ the value is
 $$
-1+\frac12\qty(-9+15)=4.
+Y\cdot K_X=(3C_0-3f)\cdot\qty(-2C_0+(2g-2-e)f)=-6C_0^2+3(2g-2-e)(C_0\cdot f)+6(f\cdot C_0)=3e+6g,
 $$
+the terms in $f^2$ vanishing. Adjunction, Proposition 1.5, then gives
+$$
+2p_a(Y)-2=Y^2+Y\cdot K_X=-6e+6g-18,\qquad p_a(Y)=3g-8-3e,
+$$
+which for $g=3$ is $p_a(Y)=1-3e$. In particular $2p_a(Y)-2=-6e$ is divisible by $3$ for every integer $e$.
 
-Suppose a nonsingular curve $Y$ had this class. Then $Y\cdot f=3$, so $\restrictionof{\pi}{Y}:Y\to C$ is finite of degree $3$, and it is either separable or purely inseparable. If it is purely inseparable, Hartshorne IV.2.5 makes it a composition of $k$-linear Frobenius morphisms and gives $g(Y)=g(C)=3$, against $g(Y)=p_a(Y)=4$. If it is separable, Riemann--Hurwitz, IV.2.4 gives $2\cdot4-2=3(2\cdot3-2)+\deg R$, that is $6=12+\deg R<0$. So no nonsingular curve has the class.
+A nonsingular curve in the class can be excluded in both cases of the projection. Purely inseparably: if $\restrictionof{\pi}{Y}$ is purely inseparable, then $g(Y)=g(C)=3$ by Proposition IV.2.5, which makes a purely inseparable finite morphism of curves an isomorphism of abstract schemes; then $2g(Y)-2=4$, which is not divisible by $3$, while $-6e$ is. So on no ruled surface of this kind, for any $e$, does the class hold a nonsingular curve whose projection to $C$ is purely inseparable. Separably: if $\restrictionof{\pi}{Y}$ is separable, Riemann--Hurwitz, Corollary IV.2.4, gives $2g(Y)-2=3(2g(C)-2)+\deg R=12+\deg R\ge12$; on the exercise's surface $e=-1$, so $2p_a(Y)-2=6$, which is below $12$. Since $Y\cdot f=3$, the projection is finite of degree $3$ and one of the two cases holds, so no nonsingular curve has the class at all. This is the failure of the printed statement of (c).
 
-For Xie's divisor, step [](#s7){.pf-ref} gives $Y=3\Sigma$ with $\Sigma\cong C$ of genus $3$; the adjunction count above, read with $Y=3\Sigma$ and $\Sigma\cdot K_X=2g-2-\Sigma^2=4+1=5$, is $1+\frac12(-9+15)=4$, so $p_a(3\Sigma)=4$ while its reduction has genus $3$: the divisor is not reduced, and every point of $\Sigma$ is a singular point of it.
+The member $3\Sigma$ and its genus defect. The unique member is $D=3\Sigma$ by step [](#s7){.pf-ref} and the count above gives $p_a(D)=4$. The same value, and the structure of $D$, come from $\OO_D$ directly. The ideal sheaf of $D$ is $I_\Sigma^3$, so $\OO_D=\OO_X/I_\Sigma^3$ carries the filtration
+$$
+0\subset I_\Sigma^2/I_\Sigma^3\subset I_\Sigma/I_\Sigma^3\subset\OO_D
+$$
+whose successive quotients are $\OO_\Sigma$, $I_\Sigma/I_\Sigma^2=N^\vee$ and $I_\Sigma^2/I_\Sigma^3=(N^\vee)^2$, where $N=\OO_\Sigma(\Sigma)$ is the normal bundle of $\Sigma$ in $X$, of degree $\Sigma^2=-1$; thus $N^\vee$ has degree $1$ and $(N^\vee)^2$ degree $2$. On $\Sigma$, a curve of genus $g(\Sigma)=3$ by step [](#s7){.pf-ref}, Riemann--Roch reads $\chi(L)=\deg L+1-g(\Sigma)$, so
+$$
+\chi(\OO_\Sigma)=1-3=-2,\qquad\chi(N^\vee)=1+1-3=-1,\qquad\chi\qty((N^\vee)^2)=2+1-3=0,
+$$
+and additivity of $\chi$ on the filtration gives
+$$
+\chi(\OO_D)=-2-1+0=-3,\qquad p_a(D)=1-\chi(\OO_D)=4,
+$$
+in agreement with the adjunction count and without using it.
+
+The map $\OO_D\to\OO_\Sigma$ is surjective with kernel $I_\Sigma/I_\Sigma^3$, which is nilpotent, so $\Sigma$ is the normalization of $D$ and
+$$
+\delta:=p_a(D)-p_a(\Sigma)=\chi(\OO_\Sigma)-\chi(\OO_D)=-2+3=1 .
+$$
+This $\delta$ is the genus defect of the whole divisor and is not the invariant of a single point, and for this divisor no such point invariant can be meant. At a point $P\in\Sigma$, with $\Sigma$ cut out by $t=0$ and $s$ a transverse coordinate, $\OO_{D,P}=k[[s,t]]/(t^3)$: its maximal ideal is generated by the two elements $s$ and $t$, so the local ring has embedding dimension $2$ in dimension $1$ and is singular, and its reduction is $k[[s]]=\OO_{\Sigma,P}$. Every point of $\Sigma$ is therefore a singular point of $D$, the singular locus is not finite, and $D$ is reduced nowhere; the integer $\delta=1$ records that the triple structure adds exactly one to the genus of the section.
 :::
 
 :::
@@ -700,7 +758,7 @@ Hartshorne 1971 announces the same failure for the bundle: its Example 3.2, is "
 :::
 
 ::: pf-qed
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), steps [](#s4){.pf-ref} and [](#s5){.pf-ref} part (b), steps [](#s6){.pf-ref} to [](#s8){.pf-ref} the divisor $3\Sigma$ of part (c) with its purely inseparable projection, step [](#s9){.pf-ref} the correction of the printed \"nonsingular\", and step [](#s10){.pf-ref} the divisor $D=2C_0$.
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), steps [](#s4){.pf-ref} and [](#s5){.pf-ref} part (b), steps [](#s6){.pf-ref} to [](#s8){.pf-ref} the divisor $3\Sigma$ of part (c) with its purely inseparable projection, step [](#s9){.pf-ref} the theorem that $p_a=1-3e$ on the class and that no nonsingular curve lies in it, and step [](#s10){.pf-ref} the divisor $D=2C_0$.
 :::
 
 :::
@@ -718,5 +776,5 @@ Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
 :::
 
 ::: {.remark}
-The book's (c), Exercise V.2.15(c), reads "Show that $X$ contains a nonsingular curve $Y\equiv3C_0-3f$, such that $\pi:Y\to C$ is purely inseparable", and the adjective is what fails: step [](#s9){.pf-ref} shows that the class $3C_0-3f$ has $3\Sigma$ as its only effective divisor --- the space of sections is one-dimensional --- so it contains no nonsingular curve at all, and that Xie's divisor is the triple of the section $\Sigma\cong C$ of step [](#s7){.pf-ref}, so it is not even reduced. The statement above keeps the book's words, and the printed "nonsingular" is recorded as false here rather than kept.  Xie's Example 3.1, asserts the smoothness of his curve as well, and it fails for him by the same count.
+The book's (c), Exercise V.2.15(c), reads "Show that $X$ contains a nonsingular curve $Y\equiv3C_0-3f$, such that $\pi:Y\to C$ is purely inseparable", and the adjective is what fails. Step [](#s9){.pf-ref} gives two independent reasons. The class $3C_0-3f$ has $3\Sigma$ as its only effective divisor --- the space of sections is one-dimensional --- and that member is reduced nowhere, its normalization being the section $\Sigma\cong C$ with $\delta=1$. And no nonsingular curve in the class can have a purely inseparable projection at all: $2p_a(Y)-2=-6e$ is divisible by $3$ for every $e$, while $g(Y)=g(C)=3$ would give $2g(Y)-2=4$. The statement above keeps the book's words, and the printed "nonsingular" is recorded as false here rather than kept. Xie's Example 3.1 asserts the smoothness of his curve as well, and it fails for him by the same computation.
 :::
