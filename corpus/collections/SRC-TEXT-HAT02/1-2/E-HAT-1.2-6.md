@@ -126,7 +126,7 @@ Topology: $Z$ is closed, each $B_d$ is closed, the interiors of the balls are pa
 $$
 \{Z\}\cup\{B_d:d\in D\}
 $$
-is a locally finite closed cover of $\RR^n$, so $\RR^n$ carries the weak topology with respect to it. That is precisely the topology of the space obtained from $Z$ by attaching the $n$-cells $B_d$ along the attaching maps $\partial B_d\to Z$ of the construction on p. 49.
+is a locally finite closed cover of $\RR^n$, so $\RR^n$ carries the weak topology with respect to it. That is precisely the topology of the space obtained from $Z$ by attaching the $n$-cells $B_d$ along the attaching maps $\partial B_d\to Z$ of the construction preceding Proposition 1.26.
 
 :::
 
