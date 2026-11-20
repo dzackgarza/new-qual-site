@@ -14,7 +14,7 @@ Classifications of groups of small order reduce to three arguments: the order is
 
 [[ST-DKYXZ]]
 
-## Groups of special orders
+## Orders with one, two, and three prime factors
 
 [[PR-LFGHA]]
 
