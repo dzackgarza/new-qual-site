@@ -1,4 +1,5 @@
 ---
+title: Useful tricks
 order: 2
 ---
 
