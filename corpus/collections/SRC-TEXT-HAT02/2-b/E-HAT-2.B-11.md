@@ -167,7 +167,7 @@ For $n=0$, $H_0(B)\cong H_0(X)$ because $\RP^\infty$ is connected. Iterating the
 :::
 
 :::
-The covering-space recurrence is in **Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf)**, Exercise 2.B.2 (Hatcher 2.B.11), printed p. 43 of `tmp/sources/hatcher-solutions-guanyu-li.pdf`. The source's displayed statement reads $\bigoplus_{i\leq n}H_n(X;\ZZ_2)$, with $H_n$ where $H_i$ is intended; step [](#s3){.pf-ref} gives the corrected induction. In the present proof the two lifts in $S^\infty$ have the same $X$-coordinate, so the transfer is zero over $\ZZ_2$, and the section $j$ splits the sequence. Li instead only observes that the sequence splits over a field.
+The covering-space recurrence is in **Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf)**, Exercise 2.B.2 (Hatcher §2.B Exercise 11), in `tmp/sources/hatcher-solutions-guanyu-li.pdf`. The source's displayed statement reads $\bigoplus_{i\leq n}H_n(X;\ZZ_2)$, with $H_n$ where $H_i$ is intended; step [](#s3){.pf-ref} gives the corrected induction. In the present proof the two lifts in $S^\infty$ have the same $X$-coordinate, so the transfer is zero over $\ZZ_2$, and the section $j$ splits the sequence. Li instead only observes that the sequence splits over a field.
 
 
 :::

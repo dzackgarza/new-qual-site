@@ -53,7 +53,7 @@ Show that $H_{n+1}(K(G, n); \ZZ) = 0$ if $n > 1$. [Build a $K(G, n)$ from a Moor
 :::
 
 ::: {.solution}
-The proof below is the published one, transcribed and checked against the book: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 22**. Sam's argument is this one — a Moore space $M(G,n)$ has $\widetilde H_{n+1}=0$ and $\pi_n=G$, and a $K(G,n)$ is obtained from it by attaching cells of dimension at least $n+2$, which leaves $H_{n+1}$ unchanged. The book's own statement of the construction is the proof of the existence of $K(G,n)$ by killing homotopy groups (printed p. 365), and the Moore space is Example 2.40 .
+The proof below is the published one, transcribed and checked against the book: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 22**. Sam's argument is this one — a Moore space $M(G,n)$ has $\widetilde H_{n+1}=0$ and $\pi_n=G$, and a $K(G,n)$ is obtained from it by attaching cells of dimension at least $n+2$, which leaves $H_{n+1}$ unchanged. The book's own statement of the construction is the proof of the existence of $K(G,n)$ by killing homotopy groups (§4.2), and the Moore space is Example 2.40 .
 
 For $n>1$, choose an $(n-1)$-connected Moore space $M(G,n)$, so
 $$

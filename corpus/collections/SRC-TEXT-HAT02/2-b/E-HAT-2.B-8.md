@@ -145,7 +145,7 @@ $$
 \boxed{\RR^{2n+1}\text{ admits no real division-algebra structure for }n>0.}
 $$
 
-The continuous determinant path is printed in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.B.8, printed p. 71 of the local PDF `tmp/sources/demason-m382c-hatcher-20210404.pdf`. As in the source, step [](#s1){.pf-ref} makes every left multiplication by a nonzero element invertible by solvability of $ax=b$, step [](#s3){.pf-ref} gives the sign change $\det L_{-a}=-\det L_a$ in odd dimension, and step [](#s4){.pf-ref} obtains the contradiction in closed form. The optional degree-of-maps remark in the source is not needed and is not used here.
+The continuous determinant path is printed in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher §2.B Exercise 8, given in the local PDF `tmp/sources/demason-m382c-hatcher-20210404.pdf`. As in the source, step [](#s1){.pf-ref} makes every left multiplication by a nonzero element invertible by solvability of $ax=b$, step [](#s3){.pf-ref} gives the sign change $\det L_{-a}=-\det L_a$ in odd dimension, and step [](#s4){.pf-ref} obtains the contradiction in closed form. The optional degree-of-maps remark in the source is not needed and is not used here.
 
 
 :::

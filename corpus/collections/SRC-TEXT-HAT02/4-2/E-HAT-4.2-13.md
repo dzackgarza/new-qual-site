@@ -107,7 +107,7 @@ For $n=0$ a connected $0$-dimensional CW complex is a point, so $f$ is a homeomo
 For $n\ge2$ the pair $(M_{\widetilde f},\widetilde X)$, where $M_{\widetilde f}$ is the mapping cylinder of $\widetilde f$, is $(n-1)$-connected: $\pi_i(M_{\widetilde f},\widetilde X)=0$ for $i\le n$.
 
 ::: pf-proof
-The pair is path connected. Its homotopy exact sequence (printed p. 344) reads
+The pair is path connected. Its homotopy exact sequence (§4.1) reads
 $$
 \pi_i(\widetilde X)\xrightarrow{\ \widetilde f_*\ }\pi_i(\widetilde Y)\to\pi_i(M_{\widetilde f},\widetilde X)\to\pi_{i-1}(\widetilde X)\xrightarrow{\ \widetilde f_*\ }\pi_{i-1}(\widetilde Y)
 $$
@@ -121,7 +121,7 @@ for $i\ge2$, using $M_{\widetilde f}\simeq\widetilde Y$. For $2\le i\le n$ both 
 $H_i(M_{\widetilde f},\widetilde X;\ZZ)=0$ for $i\le n$.
 
 ::: pf-proof
-Theorem 4.37 (relative Hurewicz, printed p. 371) for the $(n-1)$-connected pair of step [](#n-connected){.pf-ref} gives $H_i(M_{\widetilde f},\widetilde X)=0$ for $i\le n$.
+Theorem 4.37 (relative Hurewicz, Theorem 4.37) for the $(n-1)$-connected pair of step [](#n-connected){.pf-ref} gives $H_i(M_{\widetilde f},\widetilde X)=0$ for $i\le n$.
 
 :::
 
@@ -153,7 +153,7 @@ The long exact sequence of the pair $(M_{\widetilde f},\widetilde X)$, with $M_{
 $$
 H_{i+1}(M_{\widetilde f},\widetilde X)\to H_i(\widetilde X)\to H_i(\widetilde Y)\to H_i(M_{\widetilde f},\widetilde X) .
 $$
-For $i\le n$ the outer groups vanish by step [](#hurewicz-low){.pf-ref} and step [](#hurewicz-degree){.pf-ref} (the latter for $i=n$), so the middle map is an isomorphism for $i\le n$. For $i>n$ both $\widetilde X$ and $\widetilde Y$ are $n$-dimensional CW complexes, so both groups vanish (Corollary 2.34 or the cellular complex of printed p. 139), and the map between two zero groups is an isomorphism.
+For $i\le n$ the outer groups vanish by step [](#hurewicz-low){.pf-ref} and step [](#hurewicz-degree){.pf-ref} (the latter for $i=n$), so the middle map is an isomorphism for $i\le n$. For $i>n$ both $\widetilde X$ and $\widetilde Y$ are $n$-dimensional CW complexes, so both groups vanish (Corollary 2.34 or the cellular complex of §2.2), and the map between two zero groups is an isomorphism.
 
 :::
 

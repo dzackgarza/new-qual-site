@@ -76,7 +76,7 @@ If $M_g$ denotes the closed orientable surface of genus $g$, show that degree 1 
 :::
 
 ::: {.solution}
-Step [](#s1){.pf-ref} proves the converse, used by Exercises 12 and 13, although the printed sentence asks only for the direction $g\ge h$. Step [](#s2){.pf-ref} is the existence construction in Guanyu Li, Exercise 3.3.6 (Hatcher §3.3 #11), pp. 57--58.
+Step [](#s1){.pf-ref} proves the converse, used by Exercises 12 and 13, although the printed sentence asks only for the direction $g\ge h$. Step [](#s2){.pf-ref} is the existence construction in Guanyu Li, Exercise 3.3.6 (Hatcher §3.3 Exercise 11).
 
 ::: pf
 
@@ -180,7 +180,7 @@ and form the quotient $M_g/X$. The first $2h$ loops map to the loops of $M_h$, a
 
 ::: pf-proof
 
-The quotient identification is immediate from the two attaching words: the loops in $X$ become the basepoint, so their commutators disappear, and exactly the attaching word of $M_h$ remains. This is the construction in Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf), Exercise 3.3.6 (Hatcher §3.3 #11), printed pp. 57--58 (local file `tmp/sources/hatcher-solutions-guanyu-li.pdf`).
+The quotient identification is immediate from the two attaching words: the loops in $X$ become the basepoint, so their commutators disappear, and exactly the attaching word of $M_h$ remains. This is the construction in Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf), Exercise 3.3.6 (Hatcher §3.3 Exercise 11, local file `tmp/sources/hatcher-solutions-guanyu-li.pdf`).
 :::
 
 :::
@@ -191,7 +191,7 @@ The quotient map has degree $1$ after the positive generators of the two $2$-cel
 
 ::: pf-proof
 
-In these one-$2$-cell structures, the two fundamental classes are the positive $2$-cell chains. The quotient carries one to the other exactly once and with the chosen orientation. This is the degree computation at the top of printed p. 58 of Li's solution; it supplies the existence direction explicitly.
+In these one-$2$-cell structures, the two fundamental classes are the positive $2$-cell chains. The quotient carries one to the other exactly once and with the chosen orientation. This is the degree computation at the top of Li's solution; it supplies the existence direction explicitly.
 :::
 
 :::

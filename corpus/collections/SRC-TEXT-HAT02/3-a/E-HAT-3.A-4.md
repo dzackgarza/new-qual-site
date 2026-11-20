@@ -144,7 +144,7 @@ $$
 \cong\varinjlim_\alpha L_n(-\otimes_\ZZ B)(A_\alpha)
 \cong\varinjlim_\alpha\operatorname{Tor}_n^{\ZZ}(A_\alpha,B).
 $$
-The first and last equalities are (iii), the middle is (ii). The exercise's $\operatorname{Tor}$ is $\operatorname{Tor}_1^{\ZZ}$, Hatcher's convention on printed p. 263, so the case $n=1$ is the second identity; $\operatorname{Tor}_n^{\ZZ}=0$ for $n>1$ because every abelian group has a free resolution of length one, so nothing is lost in restricting to $n=1$.
+The first and last equalities are (iii), the middle is (ii). The exercise's $\operatorname{Tor}$ is $\operatorname{Tor}_1^{\ZZ}$, Hatcher's convention in §3.A, so the case $n=1$ is the second identity; $\operatorname{Tor}_n^{\ZZ}=0$ for $n>1$ because every abelian group has a free resolution of length one, so nothing is lost in restricting to $n=1$.
 :::
 
 :::

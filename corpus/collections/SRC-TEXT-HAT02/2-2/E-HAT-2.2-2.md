@@ -61,7 +61,7 @@ Every map $f: S^{2n} \to S^{2n}$ has $f(x) = x$ or $f(x) = -x$ for some $x$.
 If $f(x) \neq x$ for all $x$, then $f$ has no fixed point, so $\deg f = (-1)^{2n+1} = -1$.
 
 ::: pf-proof
-a fixed-point-free map of $S^m$ has degree $(-1)^{m+1}$: the antipodal map $x\mapsto -x$ has degree $(-1)^{m+1}$ by property (f) of degree (Hatcher, p. 134) and any fixed-point-free map is homotopic to it, as in property (g) on the same page.
+a fixed-point-free map of $S^m$ has degree $(-1)^{m+1}$: the antipodal map $x\mapsto -x$ has degree $(-1)^{m+1}$ by property (f) of degree and any fixed-point-free map is homotopic to it, as in property (g) on the same page.
 :::
 
 :::
@@ -79,7 +79,7 @@ $-f$ is fixed-point-free, so by step [](#s1-1){.pf-ref} its degree is $(-1)^{2n+
 But $\deg(-f) = (-1)^{2n+1}\deg f = -\deg f = -(-1) = 1$, contradiction.
 
 ::: pf-proof
-$-f$ is the composite of the antipodal map with $f$, which has degree $(-1)^{2n+1}$ by property (f) of degree (Hatcher, p. 134), so $\deg(-f) = (-1)^{2n+1}\deg f = -\deg f$ by property (d) on the same page.
+$-f$ is the composite of the antipodal map with $f$, which has degree $(-1)^{2n+1}$ by property (f) of degree, so $\deg(-f) = (-1)^{2n+1}\deg f = -\deg f$ by property (d) on the same page.
 :::
 
 :::
@@ -161,7 +161,7 @@ $T$ has no real eigenvectors (its eigenvalues are $\pm i$), so the induced map o
 :::
 
 :::
-The three parts are checked against **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.2.2, printed p. 64 (`tmp/sources/demason-m382c-hatcher-20210404.pdf`): fixed-point-freeness gives antipodal degree $-1$, absence of antipodal matching identities gives degree $1$, lifting to $S^{2n}$ gives the projective-space result, and the standard no-real-eigenvector rotation gives the odd-dimensional fixed-point-free example. The card contains the same computations and their explicit homotopies.
+The three parts are checked against **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher §2.2 Exercise 2 (`tmp/sources/demason-m382c-hatcher-20210404.pdf`): fixed-point-freeness gives antipodal degree $-1$, absence of antipodal matching identities gives degree $1$, lifting to $S^{2n}$ gives the projective-space result, and the standard no-real-eigenvector rotation gives the odd-dimensional fixed-point-free example. The card contains the same computations and their explicit homotopies.
 
 
 :::
