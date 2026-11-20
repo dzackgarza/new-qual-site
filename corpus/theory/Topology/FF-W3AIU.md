@@ -21,7 +21,7 @@ The [[D-QK5BM|Euler characteristics]] of the following spaces are
 $$
 \chi(S^n) = 1 + (-1)^n \quad (n\geq 0),\qquad
 \chi(\RP^2) = 1,\qquad
-\chi(\KK) = 0,
+\chi(K) = 0,
 $$
-where $\KK$ is the Klein bottle [@Hat02, Theorem 2.44]; the Euler characteristics of all compact surfaces are in [[T-NBARV|the classification of surfaces]].
+where $\KK$ is the Klein bottle [@Hat02]; the Euler characteristics of all compact surfaces are in [[T-NBARV|the classification of surfaces]].
 :::
