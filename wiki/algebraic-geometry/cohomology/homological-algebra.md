@@ -19,7 +19,7 @@ Sheaf cohomology is its right derived functor, so computing $H^i(X,\mcf)$ means 
 [[D-A7LCT]]
 
 Both $\mods{A}$ for a ring $A$ and $\mods{\OO_X}$ are abelian.
-In $\mods{A}$ the cokernel of $f\colon M\to N$ is the quotient $N/\im f$ on underlying modules, while in $\mods{\OO_X}$ the cokernel of a morphism of sheaves is the sheaf associated to the presheaf cokernel, since that presheaf satisfies neither sheaf axiom in general [@Har77, II.1, pp. 63--64].
+In $\mods{A}$ the cokernel of $f\colon M\to N$ is the quotient $N/\im f$ on underlying modules, while in $\mods{\OO_X}$ the cokernel of a morphism of sheaves is the sheaf associated to the presheaf cokernel, since that presheaf satisfies neither sheaf axiom in general [@Har77, Section II.1].
 
 ## Additive functors and exactness
 
@@ -41,7 +41,7 @@ $\Gamma(X,-)$ is left exact and not exact: on $X=\CC\sm\theset{0}$ the exponenti
 [[D-DEFPROJO]]
 
 Every ringed space has $\mods{\OO_X}$ with enough injectives, so the right derived functors of a left exact functor on $\mods{\OO_X}$ exist [@Har77, Proposition III.2.2].
-For $X=\PP^1_k$ over an infinite field there is no projective $\mcp\in\mods{\OO_X}$ admitting a surjection onto $\OO_X$, so $\mods{\OO_X}$ does not have enough projectives and $\Hom$ has no right derived functors in its first variable [@Har77, Caution III.6.5.2, p. 235 and Exercise III.6.2]; sheaf cohomology is therefore a right derived functor and $\Tor$ a left one.
+For $X=\PP^1_k$ over an infinite field there is no projective $\mcp\in\mods{\OO_X}$ admitting a surjection onto $\OO_X$, so $\mods{\OO_X}$ does not have enough projectives and $\Hom$ has no right derived functors in its first variable [@Har77, Caution III.6.5.2 and Exercise III.6.2]; sheaf cohomology is therefore a right derived functor and $\Tor$ a left one.
 
 ## Derived functors
 
