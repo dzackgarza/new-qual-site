@@ -35,9 +35,9 @@ $$
 [[T-5BFVS]]
 
 ::: {.remark}
-For $1<p<\infty$, equality holds in Hölder's inequality exactly when $\abs f^p$ and $\abs g^q$ are proportional almost everywhere [@Fol99, §6.1].
+For $1<p<\infty$, equality holds in [[PR-7BGSE|Hölder's inequality]] exactly when $\abs f^p$ and $\abs g^q$ are proportional almost everywhere [@Fol99, §6.1].
 
-The case of equality is the case of equality in the Young inequality $\abs{fg}\le\frac{\abs f^p}{p}+\frac{\abs g^q}{q}$ used in the proof: that inequality is an equality exactly when $\abs f^p=\abs g^q$, and after normalising $\norm f_p=\norm g_q=1$ the Hölder bound is attained there. The card's [[T-5BFVS|Hölder inequality]] is the statement; Folland's text is not in this checkout, so the citation names the section and no numbered statement of his is written here.
+The case of equality in Hölder's inequality is the case of equality in the Young inequality $\abs{fg}\le\frac{\abs f^p}{p}+\frac{\abs g^q}{q}$ used in the proof: that inequality is an equality exactly when $\abs f^p=\abs g^q$, and after normalising $\norm f_p=\norm g_q=1$ the Hölder bound is attained there.
 :::
 
 
