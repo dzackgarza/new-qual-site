@@ -243,14 +243,14 @@ review: draft
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 4.1 of Hatcher, *Algebraic Topology* (2002), printed p. 358, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Exercise 1 of Section 4.1 of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.md`; the statement below is its wording.
 
 Suppose a sum $f +' g$ of maps $f, g: (I^n, \partial I^n) \to (X, x_0)$ is defined using a coordinate of $I^n$ other than the first coordinate as in the usual sum $f + g$.
 Verify the formula $(f + g) +' (h + k) = (f +' h) + (g +' k)$, and deduce that $f +' k \simeq f + k$ so the two sums agree on $\pi_n(X, x_0)$, and also that $g +' h \simeq h + g$ so the addition is abelian.
 :::
 
 ::: {.solution}
-The group laws and the proposition are those of tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), §4.3, printed pp. 87--88; the four-quarter computation is also the accepted answer 161511 (2012-06-22) to Math Stack Exchange question 161507. The stretching homotopy and the presentation as numbered steps are the card's own. Throughout $n\ge2$, since for $n=1$ there is no coordinate other than the first.
+The group laws and the proposition are those of tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), §4.3; the four-quarter computation is also the accepted answer 161511 (2012-06-22) to Math Stack Exchange question 161507. The stretching homotopy and the presentation as numbered steps are the card's own. Throughout $n\ge2$, since for $n=1$ there is no coordinate other than the first.
 
 ::: pf
 
@@ -262,7 +262,7 @@ $$
 defines a sum on maps of pairs $(I^n,\partial I^n)\to(X,x_0)$, with $+_1$ Hatcher's $+$ and $+_2$ the exercise's $+'$.
 
 ::: pf-proof
-Both halves are maps of $I^n$ into $X$, they agree on $s_i=\tfrac12$, and each is continuous; on the boundary $\partial I^n$ at least one coordinate is $0$ or $1$, so the corresponding input of $f$ or of $g$ lies on $\partial I^n$ and the value is $x_0$. Hence the sum is again a map of pairs. The identification of the cube model $\pi_n(X,x_0)=[I^n/\partial I^n,X]_0=[\Sigma^nS^0,X]_0$ with tom Dieck's is [loc. cit., pp. 87--88], where $+_1$ and $+_2$ are the laws attached to the first and second coordinates; the homeomorphism $I^n/\partial I^n\cong\Sigma^nS^0$ and the identification of $\pi_n(X,x_0)$ with $[I^n/\partial I^n,X]_0$ are on printed p. 88.
+Both halves are maps of $I^n$ into $X$, they agree on $s_i=\tfrac12$, and each is continuous; on the boundary $\partial I^n$ at least one coordinate is $0$ or $1$, so the corresponding input of $f$ or of $g$ lies on $\partial I^n$ and the value is $x_0$. Hence the sum is again a map of pairs. The identification of the cube model $\pi_n(X,x_0)=[I^n/\partial I^n,X]_0=[\Sigma^nS^0,X]_0$ with tom Dieck's is [loc. cit.], where $+_1$ and $+_2$ are the laws attached to the first and second coordinates; the homeomorphism $I^n/\partial I^n\cong\Sigma^nS^0$ and the identification of $\pi_n(X,x_0)$ with $[I^n/\partial I^n,X]_0$ are in the same section.
 :::
 
 :::
@@ -284,7 +284,7 @@ which is continuous in $(s,t)$, starts at $f+_i0$, ends at $f$, and is stationar
 $(f+g)+'(h+k)=(f+'h)+(g+'k)$ holds as an identity of maps, not merely up to homotopy.
 
 ::: pf-proof
-Split $I^n$ according to $s_1\lessgtr\tfrac12$ and $s_2\lessgtr\tfrac12$. On $s_1\le\tfrac12,s_2\le\tfrac12$ the left side equals $(f+g)(s_1,2s_2,\ldots)=f(2s_1,2s_2,\ldots)$ and the right side equals $(f+'h)(2s_1,s_2,\ldots)=f(2s_1,2s_2,\ldots)$. On $s_1\le\tfrac12,s_2\ge\tfrac12$ the left side is $(h+k)(s_1,2s_2-1,\ldots)=h(2s_1,2s_2-1,\ldots)$ and the right side is again $(f+'h)(2s_1,s_2,\ldots)=h(2s_1,2s_2-1,\ldots)$. On $s_1\ge\tfrac12,s_2\le\tfrac12$ both sides are $g(2s_1-1,2s_2,\ldots)$, and on $s_1\ge\tfrac12,s_2\ge\tfrac12$ both are $k(2s_1-1,2s_2-1,\ldots)$. The two maps agree at every point of $I^n$, boundary included. This is tom Dieck's identity $(a+_1b)+_2(c+_1d)=(a+_2c)+_1(b+_2d)$ on printed p. 88, and the clause-by-clause computation is the one in the accepted answer 161511.
+Split $I^n$ according to $s_1\lessgtr\tfrac12$ and $s_2\lessgtr\tfrac12$. On $s_1\le\tfrac12,s_2\le\tfrac12$ the left side equals $(f+g)(s_1,2s_2,\ldots)=f(2s_1,2s_2,\ldots)$ and the right side equals $(f+'h)(2s_1,s_2,\ldots)=f(2s_1,2s_2,\ldots)$. On $s_1\le\tfrac12,s_2\ge\tfrac12$ the left side is $(h+k)(s_1,2s_2-1,\ldots)=h(2s_1,2s_2-1,\ldots)$ and the right side is again $(f+'h)(2s_1,s_2,\ldots)=h(2s_1,2s_2-1,\ldots)$. On $s_1\ge\tfrac12,s_2\le\tfrac12$ both sides are $g(2s_1-1,2s_2,\ldots)$, and on $s_1\ge\tfrac12,s_2\ge\tfrac12$ both are $k(2s_1-1,2s_2-1,\ldots)$. The two maps agree at every point of $I^n$, boundary included. This is tom Dieck's identity $(a+_1b)+_2(c+_1d)=(a+_2c)+_1(b+_2d)$ in §4.3, and the clause-by-clause computation is the one in the accepted answer 161511.
 :::
 
 :::
@@ -293,7 +293,7 @@ Split $I^n$ according to $s_1\lessgtr\tfrac12$ and $s_2\lessgtr\tfrac12$. On $s_
 If a set $M$ carries two composition laws $+_1,+_2$ with neutral elements $e_1,e_2$ satisfying the commutation rule, then $+_1=+_2=+$, $e_1=e_2$, and $+$ is associative and commutative.
 
 ::: pf-proof
-tom Dieck's (4.3.1), printed p. 88, by the chain
+tom Dieck's (4.3.1) by the chain
 $$
 a=a+_2e_2=(a+_1e_1)+_2(e_1+_1e_2)=(a+_2e_1)+_1(e_1+_2e_2)=(a+_2e_1)+_1e_1=a+_2e_1,
 $$
@@ -310,7 +310,7 @@ Take $M=\pi_n(X,x_0)$ with $+_1=+$ and $+_2=+'$; the commutation rule of step []
 $$
 [f+'k]=[f]+_2[k]=[f]+_1[k]=[f+k]\quad\text{and}\quad [g+'h]=[g]+_2[h]=[g]+[h]=[h]+[g]=[h+'g]=[h+g],
 $$
-which is the two assertions; the proposition also yields associativity, which the exercise does not ask for. Writing $+_i,+_j$ for the laws attached to coordinates $i,j$ and repeating the same verification with the pair $(i,j)$ in place of $(1,2)$ gives $+_i=+_j$ for all $i,j$, the book's conclusion on p. 88.
+which is the two assertions; the proposition also yields associativity, which the exercise does not ask for. Writing $+_i,+_j$ for the laws attached to coordinates $i,j$ and repeating the same verification with the pair $(i,j)$ in place of $(1,2)$ gives $+_i=+_j$ for all $i,j$, the book's conclusion after (4.3.1).
 :::
 
 :::
