@@ -31,7 +31,7 @@ Determine the number of rotationally distinct colorings by two colors of the edg
 :::
 
 ::: {.solution}
-The argument is the retained solution sheet's: **Berkeley preliminary examination, Fall 2009, solutions** (`assets/attachments/f09solutions.pdf`), Problem 4B, PDF p. 6, which gives two counts. The group acting is the rotation group of the regular tetrahedron, of order $12$, acting on the six edges, and the colourings are the $2^{6}$ assignments of two colours to the edges.
+The argument is the retained solution sheet's: **Berkeley preliminary examination, Fall 2009, solutions** (`assets/attachments/f09solutions.pdf`), Problem 4B, which gives two counts. The group acting is the rotation group of the regular tetrahedron, of order $12$, acting on the six edges, and the colourings are the $2^{6}$ assignments of two colours to the edges.
 
 ::: pf
 

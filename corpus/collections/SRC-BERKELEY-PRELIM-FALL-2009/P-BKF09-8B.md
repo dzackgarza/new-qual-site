@@ -34,7 +34,7 @@ prove or disprove that $C_6$ is isomorphic to a subgroup of it.
 :::
 
 ::: {.solution}
-The argument is the retained solution sheet's: **Berkeley preliminary examination, Fall 2009, solutions** (`assets/attachments/f09solutions.pdf`), Problem 8B, PDF p. 8. Throughout $C_{n}$ is the cyclic group of order $n$, so that $C_{6}$ is cyclic of order $6$.
+The argument is the retained solution sheet's: **Berkeley preliminary examination, Fall 2009, solutions** (`assets/attachments/f09solutions.pdf`), Problem 8B. Throughout $C_{n}$ is the cyclic group of order $n$, so that $C_{6}$ is cyclic of order $6$.
 
 ::: pf
 
