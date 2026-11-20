@@ -25,19 +25,12 @@ In particular, $H_0(X) \cong \ZZ$ if $X$ is path connected, and $H_0(X) \cong \Z
 ::: {.example title="Wedges of spheres"}
 For $n\geq 1$ and $k\geq 1$,
 $$
-H_{n}\qty{\bigvee^{k} S^n} \cong \ZZ^k.
+H_{n}\qty{\bigvee^{k} S^n} \cong \ZZ^k
 $$
+by additivity of reduced homology over a wedge [[PR-B6BB2]], with $\tilde H_n(S^n)\cong\ZZ$.
 
 :::
 
-::: {.proof}
-Give the finite wedge one $0$-cell and $k$ cells in dimension $n$.
-Its cellular chain group in degree $n$ is therefore $\ZZ^k$, with zero incoming and outgoing cellular differential in that degree, so
-$$
-H_n\qty{\bigvee_{j=1}^k S^n}\cong \ZZ^k.
-$$
-
-:::
 
 ::: {.remark}
 In general $H_{n} \qty{ \prod_ \alpha X_ \alpha}\not\cong\prod_ \alpha H_{n} (X_ \alpha)$; for a finite product, the Künneth theorem computes $H_n$.
@@ -63,7 +56,7 @@ where $\mathcal P(n,k)$ is the set of $k$-tuples $\mathbf x=(x_1,\ldots,x_k)$ of
 \envlist
 
 - If a CW complex has no $n\dash$cells, then its cellular chain group $C_n(X)$ is zero, hence $H_n(X)=0$.
-- If a CW complex has a single $0\dash$cell, then its cellular differential $d_1:C_1(X)\to C_0(X)$ is zero.
+- If a CW complex has a single $0\dash$cell, then its cellular differential $d_1\colon C_1(X)\to C_0(X)$ is zero.
 
 :::
 
