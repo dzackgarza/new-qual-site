@@ -27,8 +27,6 @@ The implications among the classes of rings, with a ring separating each class f
 
 ## Classes of rings
 
-Recall that a commutative ring $R\neq 0$ is an [[D-QJ3QL|integral domain]] if it has no nonzero [[D-4I3SL|zero divisors]], equivalently if $ab=ac$ and $a\neq0$ imply $b=c$, and that it is a [[D-UI6CU|field]] if every nonzero element is a unit.
-
 [[D-7O2CH]]
 
 [[D-4I3SL]]
@@ -42,8 +40,6 @@ Recall that a commutative ring $R\neq 0$ is an [[D-QJ3QL|integral domain]] if it
 [[E-HOJKE]]
 
 ### Euclidean domains, principal ideal domains, and unique factorization domains
-
-Euclidean domains, principal ideal domains and unique factorization domains are ordered by adding a requirement at each step, and each of the two inclusions is strict.
 
 [[PR-LLBRB]]
 
@@ -84,8 +80,6 @@ Euclidean domains, principal ideal domains and unique factorization domains are 
 [[FF-CQSNC]]
 
 ## Structure theorems
-
-Recall that an $R$-module is [[D-4KM4P|simple]] if it is nonzero and has no submodules other than $0$ and itself, and [[D-CYAJI|semisimple]] if it is a direct sum of simple modules.
 
 [[D-4KM4P]]
 
