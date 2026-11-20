@@ -50,6 +50,19 @@ audit:
     written. No other step changed. Provenance: no published solution set covers this Problem
     (Rhoades, *Solutions/Hints to the Exercises*, 2006, covers a selection of the Exercises), so the
     argument is the card's own.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The repair of step `watson` recorded above did not hold, and is replaced on a referee's report of
+    this session: renaming $B$ as $B\chi$ leaves $R=B\chi-P$ equal to $-P$ off
+    $\operatorname{supp}\chi$, so $R$ is still not compactly supported. The step now splits
+    $B\chi=P+R-Q$ with $R=\chi(B-P)$, which is compactly supported and vanishes to order $2K+2$ at
+    $0$, and $Q=P(1-\chi)$, which vanishes identically near $0$ but is only of polynomial growth at
+    infinity; the integration-by-parts identity is stated under the weaker hypothesis that
+    $e^{-\sigma_0v^2/2}g/v\to0$ at infinity, so it applies to both, and the two remainders are
+    bounded by $C_R\abs{s}^{-K-1}$ and $C_Q\abs{s}^{-K-1}$. The step's statement, the moments
+    computation and every other step are unchanged.
 ---
 
 ::: {.exercise}
@@ -162,22 +175,44 @@ $$
 the constant in $O$ depending only on $\rho,\sigma_0,K,B$ and $\chi$, uniformly for $\Re(s)\ge\sigma_0$.
 
 ::: pf-proof
-Let $B_1=B\chi$, let $P(v)=\sum_{n=0}^{2K+1}\beta_nv^n$, and put $R=B_1-P$. Then $B_1\in C_c^\infty(\RR)$ with $\operatorname{supp}B_1\subset[-2\rho,2\rho]$, hence $R\in C_c^\infty(\RR)$ with $\operatorname{supp}R\subset[-2\rho,2\rho]$, and $R$ vanishes at $v=0$ together with its derivatives of order $\le 2K+1$, because $\chi\equiv1$ on $[-\rho,\rho]$ and $B-P$ vanishes to order $2K+2$ at $0$ there. The integral to be estimated is $\int_{\RR}e^{-sv^{2}/2}R\,dv$, since $B\chi=B_1$ by definition.
+Let $P(v)=\sum_{n=0}^{2K+1}\beta_nv^n$ and set
+$$
+R(v)=\chi(v)\bigl(B(v)-P(v)\bigr),\qquad Q(v)=P(v)\bigl(1-\chi(v)\bigr).
+$$
+Since $\operatorname{supp}\chi$ is a compact subset of the open disc $\abs{v}<2\rho$ on which $B$ is holomorphic, both $R$ and $Q$ are $C^\infty$ on $\RR$, and the identity
+$$
+B\chi=P+R-Q
+$$
+holds on $\RR$. The function $R$ has compact support, $\operatorname{supp}R\subset\operatorname{supp}\chi\subset[-2\rho,2\rho]$, so $R\in C_c^\infty(\RR)$, and $R$ vanishes at $v=0$ together with its derivatives of order $\le 2K+1$, because $\chi\equiv1$ on $[-\rho,\rho]$ and $B-P$ vanishes to order $2K+2$ at $0$ there. The function $Q$ vanishes identically on $[-\rho,\rho]$ and equals $-P$ for $\abs v\ge2\rho$; it is $C^\infty$ and of polynomial growth at infinity, but it is not of compact support, which is why it is kept apart from $R$ and estimated separately below.
 By step [](#moments){.pf-ref} applied with $\lambda=s$ (legitimate since $\Re(s)\ge\sigma_0>0$),
 $$
 \int_{\RR}e^{-sv^{2}/2}P(v)\,dv=\sum_{k=0}^{K}\beta_{2k}\int_{\RR}e^{-sv^{2}/2}v^{2k}\,dv=\sum_{k=0}^{K}\beta_{2k}(2k-1)!!\sqrt{2\pi}s^{-k-1/2},
 $$
-the odd powers contributing zero. It remains to estimate $\int_{\RR}e^{-sv^{2}/2}R\,dv$.
+the odd powers contributing zero. It remains to estimate $\int_{\RR}e^{-sv^{2}/2}R\,dv$ and $\int_{\RR}e^{-sv^{2}/2}Q\,dv$.
 
-Since $e^{-sv^{2}/2}=-\frac{1}{sv}\frac{d}{dv}\bigl(e^{-sv^{2}/2}\bigr)$, integration by parts gives, for every $C^{1}$ function $g$ whose support is compact and which vanishes at $0$,
+Since $e^{-sv^{2}/2}=-\frac{1}{sv}\frac{d}{dv}\bigl(e^{-sv^{2}/2}\bigr)$, integration by parts gives, for every $C^{1}$ function $g$ on $\RR$ with $g/v\in C^{1}(\RR)$ and $e^{-\sigma_0 v^{2}/2}g(v)/v\to0$ as $\abs v\to\infty$,
 $$
 \int_{\RR}e^{-sv^{2}/2}g(v)\,dv=\frac1s\int_{\RR}e^{-sv^{2}/2}\frac{d}{dv}\Bigl(\frac{g}{v}\Bigr)dv :
 $$
-the boundary terms vanish at $\pm\infty$ because $g$ has compact support, and $g/v$ is $C^{1}$ near $0$ because $g(0)=0$. Put $Dg=(g/v)'$. If $g$ is $C^\infty$ with compact support and vanishes at $0$ to order $q$, then $g/v$ vanishes to order $q-1$ and $Dg$ to order $q-2$, so the formula may be applied again as long as $q-2\ge1$, i.e. as long as $q\ge3$. Applying it $K+1$ times to $g=R$, which is $C^\infty$ with compact support and vanishes at $0$ to order $q=2K+2\ge 2(K+1)$ (so that $q-2m\ge2$ for $m\le K$), we get
+the two boundary terms at $\pm\infty$ vanish by hypothesis, and no boundary term occurs at $0$, where $g/v$ is continuous. Both kinds of function used below satisfy the hypothesis: a $C^{1}$ function with compact support, for which the condition at $\pm\infty$ is automatic, and a function of polynomial growth vanishing identically on a neighbourhood of $0$, for which $g/v$ is $C^{1}$ and $e^{-\sigma_0v^{2}/2}$ dominates the growth. Put $Dg=(g/v)'$. If $g$ is $C^\infty$ with compact support and vanishes at $0$ to order $q$, then $g/v$ vanishes to order $q-1$ and $Dg$ to order $q-2$, so the formula may be applied to $Dg$ in turn as long as $q-2\ge1$, i.e. as long as $q\ge3$; and if $g$ vanishes identically near $0$, every $D^mg$ does too, so no vanishing order is needed at all.
+
+The formula may therefore be applied $K+1$ times to $g=R$: the function $R$ is $C^\infty$ with compact support and vanishes at $0$ to order $q=2K+2\ge2(K+1)$, so $q-2m\ge2$ for $m\le K$ and each $D^mR$ is again $C^\infty$ with compact support. Hence
 $$
-\abs{\int_{\RR}e^{-sv^{2}/2}R\,dv}\le\abs{s}^{-K-1}\int_{\RR}\abs{D^{K+1}R(v)}\,dv,
+\abs{\int_{\RR}e^{-sv^{2}/2}R\,dv}\le\abs{s}^{-K-1}\int_{\RR}\abs{D^{K+1}R(v)}\,dv=:C_R\abs{s}^{-K-1},
 $$
-since $\abs{e^{-sv^{2}/2}}=e^{-\Re(s)v^{2}/2}\le1$ and $D^{K+1}R$ is again $C^\infty$ with compact support.
+since $\abs{e^{-sv^{2}/2}}=e^{-\Re(s)v^{2}/2}\le1$ and $D^{K+1}R$ is again $C^\infty$ with compact support, so that $C_R<\infty$ depends only on $\rho,K,B$ and $\chi$.
+
+The formula applies equally to $g=Q$, and here no support is needed: $Q$ and all its derivatives vanish identically on the neighbourhood $[-\rho,\rho]$ of $0$, so $D^mQ$ is $C^\infty$ for every $m$, and $D^mQ=-D^mP$ for $\abs v\ge2\rho$, so $D^mQ$ is of polynomial growth at infinity. Applying the formula $K+1$ times to $Q$ and using $\sigma=\Re(s)\ge\sigma_0$,
+$$
+\abs{\int_{\RR}e^{-sv^{2}/2}Q(v)\,dv}\le\abs{s}^{-K-1}\int_{\RR}e^{-\sigma_0v^{2}/2}\abs{D^{K+1}Q(v)}\,dv=:C_Q\abs{s}^{-K-1},
+$$
+where $C_Q<\infty$ because $D^{K+1}Q$ is $C^\infty$ of polynomial growth at infinity, and $C_Q$ depends only on $\rho,\sigma_0,K,B$ and $\chi$.
+
+Adding the three estimates along the identity $B\chi=P+R-Q$,
+$$
+\int_{\RR}e^{-sv^{2}/2}B(v)\chi(v)\,dv=\sum_{k=0}^{K}\beta_{2k}(2k-1)!!\sqrt{2\pi}\,s^{-k-1/2}+O\bigl(\abs{s}^{-K-1}\bigr),
+$$
+the constant in $O$ being $C_R+C_Q$, which depends only on $\rho,\sigma_0,K,B$ and $\chi$, uniformly for $\Re(s)\ge\sigma_0$.
 
 :::
 
