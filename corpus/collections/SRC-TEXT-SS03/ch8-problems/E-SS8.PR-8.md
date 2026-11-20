@@ -52,6 +52,22 @@ audit:
     $v=r\sin\theta(1+O(r))$ needs. No other step changed. Provenance: no published solution set
     covers this Problem (Rhoades, *Solutions/Hints to the Exercises*, 2006, covers a selection of the
     Exercises), so the argument is the card's own.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Second repair of step s4, on the reader's report that the step's conclusion still did not
+    follow. The previous bound $\abs{v-r\sin\theta}\le Cr^2$ does not give
+    $v=r\sin\theta(1+O(r))$ uniformly in $\theta$: recovering the factor $1+O(r)$ means dividing by
+    $\sin\theta$, and no bound uniform in $\theta$ survives that near $\theta=0$ and $\theta=\pi$.
+    The step now estimates term by term with part (b), $\abs{\sin(k\theta)}\le k\sin\theta$, which
+    gives $\abs{v-r\sin\theta}\le Cr^2\sin\theta$ with $C=\sum_{k\ge2}k\abs{a_k}r_0^{k-2}$ finite for
+    any fixed $0<r_0<1$ because $\sum_k ka_kz^{k-1}$ is the termwise derivative of a series with
+    radius of convergence at least $1$. The bound carries the factor $\sin\theta$ itself, so it is
+    valid at the endpoints, and $v\sin\theta\ge r\sin^2\theta(1-Cr)$ settles the sign for small $r$;
+    for the remaining $r$ the step invokes step s3, which gives $v>0$ on $(0,\pi)$ for every
+    $0<r<1$. No other step changed, and the provenance sentence above stands: the argument is the
+    card's own.
 
 ---
 
@@ -133,13 +149,33 @@ Since $f$ is injective with $f(0)=0$ and $f'(0)=1$, one has $f(z)=z(1+O(z))$, so
 
 ::: {.pf-step #s4}
 
-Part (d): $v(r,\theta)=r\sin\theta\,(1+O(r))$ as $r\to0$, uniformly in $\theta$; consequently $v(r,\theta)\sin\theta\ge0$ for $0<r<1$ and $0\le\theta\le\pi$.
+Part (d): there are constants $C<\infty$ and $r_0>0$ such that
+$$
+\abs{v(r,\theta)-r\sin\theta}\le Cr^2\sin\theta
+$$
+for $0<r\le r_0$ and every $\theta\in[0,\pi]$. Hence $v(r,\theta)=r\sin\theta\,(1+O(r))$ as $r\to0$, with the $O(r)$ uniform in $\theta$, and consequently $v(r,\theta)\sin\theta\ge0$ for $0<r<1$ and $0\le\theta\le\pi$.
 
 ::: pf-proof
 
-From the power series, $\abs{v(r,\theta)-r\sin\theta}\le\sum_{k\ge2}\abs{a_k}r^k$ for every $r<1$. Fix $0<r_0<1$; the series $\sum_k\abs{a_k}r_0^k$ converges because $r_0$ lies inside the radius of convergence $1$, so $C=\sum_{k\ge2}\abs{a_k}r_0^{k-2}$ is finite and $\sum_{k\ge2}\abs{a_k}r^k\le Cr^2$ for $0<r\le r_0$, uniformly in $\theta$. So $v(r,\theta)=r\sin\theta(1+O(r))$ with the $O(r)$ uniform in $\theta$.
+Since every $a_k$ is real and $a_1=1$,
+$$
+v(r,\theta)=\sum_{k\ge1}a_kr^k\sin(k\theta),\qquad v(r,\theta)-r\sin\theta=\sum_{k\ge2}a_kr^k\sin(k\theta).
+$$
+Fix $0<r_0<1$. The series $\sum_k a_kz^k$ has radius of convergence at least $1$, because $f$ is holomorphic on $\DD$, so its termwise derivative $\sum_k ka_kz^{k-1}$ converges absolutely at $z=r_0$, that is,
+$$
+C\coloneqq\sum_{k\ge2}k\abs{a_k}r_0^{k-2}<\infty .
+$$
+In particular $\sum_{k\ge2}\abs{a_k}r^k\abs{\sin(k\theta)}$ converges for $0<r\le r_0$, so the difference may be estimated term by term; and step [](#s2){.pf-ref} gives $\abs{\sin(k\theta)}\le k\sin\theta$ for $0\le\theta\le\pi$. Therefore
+$$
+\abs{v(r,\theta)-r\sin\theta}\le\sum_{k\ge2}\abs{a_k}r^k\abs{\sin(k\theta)}\le\sin\theta\sum_{k\ge2}k\abs{a_k}r^k\le Cr^2\sin\theta
+$$
+for $0<r\le r_0$ and $0\le\theta\le\pi$, the last step because $k\abs{a_k}r^k=r^2\bigl(k\abs{a_k}r^{k-2}\bigr)\le r^2k\abs{a_k}r_0^{k-2}$.
 
-By step [](#s3){.pf-ref}, $v>0$ on $(0,\pi)$, and $\sin\theta\ge0$ on $[0,\pi]$; hence $v\sin\theta\ge0$.
+Writing $R(r,\theta)=v(r,\theta)-r\sin\theta$, dividing the display by $r\sin\theta$ for $0<\theta<\pi$ gives $v=r\sin\theta\,(1+\varepsilon)$ with $\abs{\varepsilon}\le Cr$; at $\theta=0$ and $\theta=\pi$ both $v(r,\theta)$ and $r\sin\theta$ vanish, so the display still holds there. Multiplying by $\sin\theta\ge0$,
+$$
+v(r,\theta)\sin\theta=r\sin^2\theta+R(r,\theta)\sin\theta\ge r\sin^2\theta-Cr^2\sin^2\theta=r\sin^2\theta\,(1-Cr),
+$$
+which is non-negative for $0<r\le r_0$ with $Cr\le1$ (and for every $0<r\le r_0$ when $C=0$). For the remaining $r$, step [](#s3){.pf-ref} gives $v(r,\theta)>0$ whenever $0<\theta<\pi$ and $0<r<1$, while $v(r,\theta)\sin\theta=0$ at $\theta=0$ and $\theta=\pi$ because $\sin\theta=0$. Hence $v(r,\theta)\sin\theta\ge0$ for all $0<r<1$ and $0\le\theta\le\pi$.
 
 :::
 
