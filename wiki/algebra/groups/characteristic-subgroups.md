@@ -8,7 +8,7 @@ topics:
 
 # Characteristic subgroups, normal closures, and cores
 
-Normality is not transitive, and the standard counterexample is on [[algebra/counterexamples|Counterexamples]]. Two corrections: a stronger invariance on $H$ itself, and the normal subgroups of $G$ that $H$ determines.
+Normality is not transitive, and the standard counterexample is on [[algebra/counterexamples|Counterexamples]].
 
 ## Characteristic subgroups
 
