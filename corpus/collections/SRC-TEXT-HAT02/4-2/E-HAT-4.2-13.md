@@ -77,10 +77,12 @@ audit:
     Read step by step against Hatcher, Algebraic Topology (2002), §4.2 Exercise 13, Proposition 4.1,
     Theorem 4.37, Theorem 4.5 and Corollary 2.34. Two repairs. (1) Step `conclusion` deduced the
     homotopy equivalence from "Exercise 12 of §4.2", which is a different exercise and is not proved on
-    this card, so the proof did not close on its own. It now closes directly: f is an isomorphism on
-    pi_1 by hypothesis, on pi_i for 2 <= i <= n through the identification of the homotopy groups of a
-    space with those of its universal cover, and on pi_i for i > n because both complexes are
-    n-dimensional and those groups vanish; Whitehead's theorem then gives the homotopy equivalence.
+    this card, so the proof did not close on its own. It now closes on Corollary 4.33: the lift is a
+    homology isomorphism between simply connected CW complexes, hence a homotopy equivalence, hence an
+    isomorphism on pi_i for every i >= 2, which transfers to f through the covers, and f is an
+    isomorphism on pi_1 by hypothesis; Theorem 4.5 then gives the homotopy equivalence. A first version
+    of this repair argued that pi_i(X) = pi_i(Y) = 0 for i > n because both complexes are n-dimensional,
+    which is false — S^2 is 2-dimensional and pi_3(S^2) = Z — and it is withdrawn here.
     (2) Step `n-connected` said the pair is "(n-1)-connected" while giving the vanishing for i <= n,
     which is n-connectedness; the wording now matches the claim, and the step relying on it in the
     Hurewicz argument says which degrees follow from the vanishing of pi and which from the isomorphism
@@ -181,7 +183,7 @@ For $i\le n$ the outer groups vanish by step [](#hurewicz-low){.pf-ref} and step
 $f$ is a homotopy equivalence.
 
 ::: pf-proof
-$f$ induces an isomorphism on every homotopy group, and no further input is needed: on $\pi_1$ by hypothesis, and on $\pi_i$ for $i\ge2$ because the covering projections identify $\pi_i(\widetilde X)=\pi_i(X)$ and $\pi_i(\widetilde Y)=\pi_i(Y)$ with the maps conjugated, while $\widetilde f_*$ is an isomorphism on $\pi_i$ for $2\le i\le n$ by step [](#lift){.pf-ref} and $\pi_i(X)=\pi_i(Y)=0$ for $i>n$ because both are $n$-dimensional CW complexes. So $f$ is a weak homotopy equivalence between CW complexes, and Whitehead's theorem (Theorem 4.5) makes it a homotopy equivalence. The same conclusion follows from step [](#homology-iso){.pf-ref} by Whitehead's theorem applied to the simply connected complexes $\widetilde X,\widetilde Y$, since a homology isomorphism between simply connected CW complexes is a homotopy equivalence.
+Step [](#homology-iso){.pf-ref} says that $\widetilde f:\widetilde X\to\widetilde Y$ is a homology isomorphism, and $\widetilde X,\widetilde Y$ are simply connected CW complexes, so $\widetilde f$ is a homotopy equivalence by the homology form of Whitehead's theorem (Corollary 4.33). It follows that $\widetilde f_*:\pi_i(\widetilde X)\to\pi_i(\widetilde Y)$ is an isomorphism for every $i\ge2$, and the covering projections identify $\pi_i(\widetilde X)$ with $\pi_i(X)$ and $\pi_i(\widetilde Y)$ with $\pi_i(Y)$ in that range, with $f_*$ the conjugate of $\widetilde f_*$; so $f_*$ is an isomorphism on $\pi_i$ for $i\ge2$. On $\pi_1$ it is an isomorphism by hypothesis. Hence $f$ is a weak homotopy equivalence between CW complexes, and Whitehead's theorem (Theorem 4.5) makes it a homotopy equivalence.
 
 :::
 
