@@ -10583,3 +10583,17 @@ every step and found the QED labels in each.
 **Mismatch.** Year (1973 against 1966), edition (the entry names none; the copy is the second edition) and title (the entry omits the subtitle). The statement numbering used on `T-C7GBB` — ch. 2, §1.3, Theorem 1 — is that of the second edition.
 
 **Disposition.** The citation on `T-C7GBB` is kept. Canonical metadata is Zotero's and was not edited here; if a record for the 1966 second edition is added, the card should point at it.
+
+## 2026-11-20: the three transitivity cards are merged into `P-FHW1-02`
+
+**Object and need:** the record of this date above, "one theorem in three cards -- `P-FHW1-02`, `E-AMD-CY7I27YM` and `P-MUABR`", found the duplicate and left the merge. It is done, under `CARD-04`.
+
+**Repair:** `E-AMD-CY7I27YM` and `P-MUABR` are deleted, and the two `SRC-UNSORTED-ALGEBRA` entries that listed them now list `P-FHW1-02`, so the collection keeps both of its positions. Card commit `34d8e3eea7`. `wiki/algebra/fields/extensions.md` already transcluded `P-FHW1-02` alone (commit `927889f6f8`).
+
+**Records preserved:** a deletion takes a card's dated events with the file, so the four are quoted here whole:
+- `E-AMD-CY7I27YM`: `solution-written` by gemini-3.7-flash, 2026-08-16; `solution-written` by OpenAI GPT-5.6 Sol, 2026-09-09.
+- `P-MUABR`: `solution-written` by Gemini 3.7 Flash, 2026-08-30; `solution-written` by OpenAI GPT-5.6 Sol, 2026-09-09.
+
+**Not changed:** `artifacts/import-manifests/authored-md.json` and the two `sources/*.jsonl` routing records still name `E-AMD-CY7I27YM` among the cards an intake run minted. They record what that run created; rewriting them would falsify the intake history.
+
+**Uncertainty:** the appearance list of `P-FHW1-02` now names `SRC-UNSORTED-ALGEBRA` twice, because the collection held the theorem in two places. Whether a repeated appearance of one card in one collection should collapse is a rendering question this record does not settle, and no check for it was run: the whole-corpus gate was not run in this turn, only the two single-card checks named in the card commit.
