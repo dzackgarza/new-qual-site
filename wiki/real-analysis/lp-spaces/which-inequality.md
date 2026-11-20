@@ -28,7 +28,7 @@ For $0<p<r<q\leq\infty$ and $\frac1r=\frac\theta p+\frac{1-\theta}q$ with $\thet
 $$
 \norm f_r \leq \norm f_p^{\theta}\norm f_q^{1-\theta}
 $$
-[@Fol99, §6.5].
+[@Fol99, Proposition 6.10].
 
 :::
 
