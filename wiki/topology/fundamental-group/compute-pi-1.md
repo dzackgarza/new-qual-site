@@ -16,7 +16,7 @@ topics:
 ## Deformation retracts
 
 ::: {.fact}
-If $A\subseteq X$ is a [[D-6UHU7|deformation retract]], then inclusion induces an isomorphism of [[D-EBNUE|fundamental groups]] $\pi_1(A,a) \cong \pi_1(X,a)$ for $a\in A$.
+If $A\subseteq X$ is a [[D-6UHU7|deformation retract]], then inclusion induces an isomorphism of [[D-EBNUE|fundamental groups]] $\pi_1(A,a) \cong \pi_1(X,a)$ for $a\in A$ [@Hat02, Proposition 1.17].
 
 - $\RR^n \sm \theset{0}$ deformation retracts onto $S^{n-1}$.
 - A torus minus a point deformation retracts onto $S^1\vee S^1$.
@@ -59,10 +59,7 @@ The universal covers $\RR \to S^1$, $\RR^2\to T^2$, and $S^n \to \RP^n$ for $n\g
 
 ## Products and quotients
 
-::: {.fact}
-For path-connected spaces $X$ and $Y$, the projections induce $\pi_1(X\times Y) \cong \pi_1(X)\times\pi_1(Y)$.
-
-:::
+[[PR-OO3DH]]
 
 The fundamental groups of quotients such as projective spaces and closed surfaces are listed on [[topology/the-standard-spaces|The standard spaces]].
 
