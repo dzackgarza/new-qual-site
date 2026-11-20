@@ -267,6 +267,32 @@ audit:
     1125594), each of which asserts the step or omits it. Not checked: no
     source outside those named was read; the five steps were checked as
     named and not re-derived beyond that.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The three numbered statements this card rests on are read off the pages of
+    Abhyankar, On the valuations centered in a local domain, Amer. J. Math. 78
+    (1956), pp. 321--348, of which the retained file is the whole paper.
+    Definition 3, printed p. 335: the sequence R_0 = R, R_i the first
+    quadratic transform of R_{i-1} along v, defined while dim R_{i-1} > 1.
+    Lemma 10, printed p. 334: for a regular local domain of dimension s with a
+    minimal basis ordered so that v(x_1) is least, A = R[x_2/x_1,...,x_s/x_1],
+    P = A cap M_v, S = A_P, N = PS, then (S,N) is regular of dimension
+    t <= s with v centred in it and s - t = d - d*. Lemma 12, printed
+    pp. 337--338, is stated for a strictly ascending sequence of TWO
+    dimensional regular local domains. That hypothesis is what stops it from
+    closing this exercise: by Lemma 10 the dimensions of the quadratic
+    transforms along v fall with the R-dimension of v, so in the infinite
+    closed-center case the chain is not in general a chain of two-dimensional
+    rings, and no dimension hypothesis may be added to the exercise to make it
+    one. Lemma 12 is therefore cited on this card only for the two-dimensional
+    sub-case, and nowhere is it offered as the proof of kind (3). The card's
+    own proof of R contained in R_0 stands as the card's, together with the
+    earlier record that no published proof of that inclusion was located. Not
+    read in this pass: Lemma 12's proof entire, whose opening was read only as
+    far as the insertion of intermediate quadratic transforms, and
+    Proposition 3, printed pp. 336--337, was not re-opened.
 ---
 
 ::: {.problem}
