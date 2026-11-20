@@ -75,6 +75,7 @@ The even and odd partial sums are monotone and bounded, so they converge, and $S
 
 - For $\gamma\colon[a,b]\to\RR^2$ piecewise $C^1$, $\int_\gamma F\cdot \dr = \int_a^b F(\gamma(t))\cdot \gamma'(t) \dt$.
 
+The line integral and its independence of a piecewise $C^1$ parametrization are [@Ahl73, ch. 4, §1.1, Line Integrals], which defines $\int_\gamma p\,\dx+q\,\dy$ by this integral along the parameter; the chain rule in the second item is [@Rud76, ch. 9, Theorem 9.15], and the gradient, curl and divergence are the coordinate expressions of that derivative.
 :::
 
 ### Green's theorem
@@ -95,6 +96,7 @@ Then $p/q$ is a sum of the following terms:
 
 - for each irreducible quadratic factor $h$ of multiplicity $k$, terms $\frac{B_1x+C_1}{h(x)}, \ldots, \frac{B_kx+C_k}{h(x)^k}$.
 
+The decomposition is [@Ahl73, ch. 5, §2.1, Partial Fractions], which attaches to each pole of a meromorphic function its singular part and, for a rational function, assembles the sum of those parts as the polynomial part plus the proper fraction; over $\RR$ the irreducible quadratic factors are the conjugate pairs of nonreal roots.
 :::
 
 [[PR-4LISY]]
@@ -120,6 +122,7 @@ The Cauchy product of power series and the standard power series are on [[comple
 ::: {.fact title="Polynomial division"}
 For polynomials $f, g$ over a field with $g\neq 0$, there are unique polynomials $q, r$ with $f = qg + r$ and $\deg r < \deg g$ or $r = 0$.
 
+This is division with remainder in the [[D-NKRGN|Euclidean domain]] $k[x]$, whose Euclidean function is the degree: subtracting a suitable multiple of $g$ lowers the degree of $f$ until it falls below $\deg g$, and the remainder is unique because a difference of two remainders of degree below $\deg g$ that is a multiple of $g$ must vanish.
 :::
 
 [[FT-3ZL25]]
