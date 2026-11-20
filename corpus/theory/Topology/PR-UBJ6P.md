@@ -16,8 +16,8 @@ review: draft
 
 ::: {.proposition}
 Let $X$ be path-connected, locally path-connected and [[D-EPQ54|semilocally simply connected]].
-Then $X$ has a [[D-BX3WD|universal cover]] $p\colon\hat X \to X$ [@Hat02]; conversely, a path-connected, locally path-connected space with a universal cover is semilocally simply connected [@Hat02].
-If $q\colon C\to X$ is a covering map with $C$ path-connected, then there is a covering map $\tilde p\colon \hat{X} \to C$ with $q\circ\tilde p = p$ [@Hat02]:
+Then $X$ has a [[D-BX3WD|universal cover]] $p\colon\hat X \to X$ [@Hat02, Proposition 1.36]; conversely, a path-connected, locally path-connected space with a universal cover is semilocally simply connected [@Hat02, §1.3].
+If $q\colon C\to X$ is a covering map with $C$ path-connected, then there is a covering map $\tilde p\colon \hat{X} \to C$ with $q\circ\tilde p = p$ [@Hat02, Proposition 1.33]:
 
 \begin{tikzcd}
 	{C} && {\hat X} \\
@@ -33,5 +33,5 @@ In particular, $\hat X$ is unique up to isomorphism of covering spaces.
 
 ::: {.remark}
 The [[D-4VGAW|deck transformation group]] of the universal cover is isomorphic to $\pi_1(X)$.
-More generally, for a covering map $q\colon C\to X$ with $C$ path-connected and $H\coloneqq q_*\pi_1(C)\leq\pi_1(X)$, the deck transformation group of $q$ is [[T-F4PQY|isomorphic to $N_{\pi_1(X)}(H)/H$]] [@Hat02].
+More generally, for a covering map $q\colon C\to X$ with $C$ path-connected and $H\coloneqq q_*\pi_1(C)\leq\pi_1(X)$, the deck transformation group of $q$ is [[T-F4PQY|isomorphic to $N_{\pi_1(X)}(H)/H$]] [@Hat02, Proposition 1.39].
 :::
