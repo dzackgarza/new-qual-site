@@ -41,8 +41,16 @@ $$
 
 ::: {.pf-step #s1-1}
 
-The functions in $M$ have a common zero in $[0,1]$.
-
+The functions in $M$ have a common zero $x_0\in[0,1]$. With
+$$
+I_{x_0}
+\coloneqq
+\{f\in R:f(x_0)=0\},
+$$
+this says
+$$
+M\subseteq I_{x_0}.
+$$
 
 ::: pf-proof
 
@@ -155,28 +163,6 @@ $$
 
 :::
 
-::: {.pf-step #s1-2}
-
-Define
-$$
-I_{x_0}
-\coloneqq
-\{f\in R:f(x_0)=0\}.
-$$
-Then
-$$
-M\subseteq I_{x_0}.
-$$
-
-
-::: pf-proof
-
-This is exactly the conclusion of step [](#s1-1){.pf-ref}.
-
-:::
-
-:::
-
 ::: {.pf-step #s1-3}
 
 The evaluation map
@@ -275,7 +261,7 @@ for some $x_0\in[0,1]$.
 
 ::: pf-proof
 
-By step [](#s1-2){.pf-ref},
+By step [](#s1-1){.pf-ref},
 $$
 M\subseteq I_{x_0}.
 $$
