@@ -46,7 +46,7 @@ Separable extensions form a [[D-JMATC|distinguished class]].
 
 ### Galois
 
-A Galois extension is one whose fixed field is the base field; a separable splitting field is the case the criterion detects.
+Recall that an extension is [[D-5JYEI|Galois]] when it is normal and separable, equivalently when its fixed field is the base field; a separable splitting field is the case the criterion detects.
 
 [[PR-ZCKLJ]]
 
