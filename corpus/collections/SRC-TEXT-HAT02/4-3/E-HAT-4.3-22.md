@@ -11,6 +11,23 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Restructured under #2 into numbered steps. The printed statement was re-read on the page
+    image: Exercise 22 on printed p. 420 reads "is fiber homotopy equivalent to the product
+    Omega C x B iff it has a section", so the card's "if and only if" is the printed wording and
+    is kept; the OCR text in tmp/hat/AT.txt prints "if" there, which is an extraction loss, and
+    the page image decides it. No retained solution set covers §4.3 Exercise 22 (Sam's set has 17
+    and 19-20, not 22), so the argument is the card's own. The two directions are now separated:
+    the pullback model is shown to be fibre homotopy equivalent to the product by an explicit
+    fibre-wise homeomorphism omega -> omega . gamma_b, and the converse reads a strict section off
+    the fibre-preserving map back from the product, so no homotopy-lifting strictification is
+    needed. Checked against the definition of a principal fibration, printed p. 412, Proposition
+    4.62, printed p. 406, Proposition 4.65, printed p. 408, the remark on printed p. 405, and
+    Theorem 4.5, printed p. 346. Not checked: no certificate, and the §4.H exercise proving the
+    p. 405 remark was not read.
 - event: solution-reviewed
   by: claude
   date: 2026-11-19
@@ -48,31 +65,55 @@ audit:
     Proof completed: the statement is an iff, and only the direction section => fibre homotopy equivalent to Omega C x B was proved. The converse is now supplied: a fibre homotopy equivalence over B contains a map r: B x Omega C -> E with p r = pr_B, and composing with the product's own section const_{c_0} gives a section of E -> B.
 ---
 
-::: {.problem}
-Show that a principal fibration $\Omega C \to E \xrightarrow{p} B$ is fiber homotopy equivalent to the product $\Omega C \times B$ if and only if it has a section, a map $s: B \to E$ with $ps = \id$.
+::: {.solution}
+No retained solution set covers this exercise, so the argument is the card's own. The printed statement is an equivalence: a principal fibration $\Omega C\to E\xrightarrow{p}B$ is fibre homotopy equivalent to the product $\Omega C\times B$ if and only if it has a section. The proof reduces to the pullback model that the definition of a principal fibration provides, where both directions are explicit.
+
+::: pf
+
+::: {.pf-step #principal}
+It suffices to prove the statement for the pullback $q\colon f^*(PC)\to B$ of the path fibration along a map $f\colon B\to C$.
+
+::: pf-proof
+By the definition of a principal fibration (printed p.~412) there is a commutative diagram whose second row is the fibration sequence $\Omega C\to PC\to C$ and whose vertical maps are weak homotopy equivalences; the map $E\to B$ therefore compares with $PC\to C$ over $C$, and the universal property of the pullback gives a map $E\to f^*(PC)$ over $B$, again a weak homotopy equivalence. In the CW setting in which Hatcher uses the notion (the Postnikov towers of printed pp.~410--412) the total spaces have CW type, so by Whitehead's theorem (Theorem 4.5, printed p.~346) these vertical maps are homotopy equivalences; a fibre-preserving homotopy equivalence is a fibre homotopy equivalence by the fact recorded on printed p.~405. Both properties compared by the exercise --- having a section, and being fibre homotopy equivalent to the product --- are invariant under fibre homotopy equivalence over $B$, so it is enough to treat $q$.
 :::
 
-::: {.solution}
-Hatcher's definition (printed p. 412) is that a fibration $F\to E\to B$ is principal if there is a commutative diagram whose second row is a fibration sequence and whose vertical maps are weak homotopy equivalences; as he notes there, this says that $E\to B$ is, up to a weak homotopy equivalence over $B$, the pullback of the path--loop fibration
-$$
-\Omega C\longrightarrow PC\xrightarrow{\operatorname{ev}_1}C
-$$
-along a map $f:B\to C$. That comparison can be taken to be a fibre homotopy equivalence: a fibre-preserving map that is a homotopy equivalence is a fibre homotopy equivalence (printed p. 405, where Hatcher records the fact and defers its proof to §4.H), and a weak homotopy equivalence of total spaces is a homotopy equivalence by Whitehead's theorem as soon as both spaces have CW type, which fibrations over a CW base do. So the total space may be represented, up to fibre homotopy equivalence over $B$, by pairs $(b,\gamma)$ with $\gamma(0)=c_0$ and $\gamma(1)=f(b)$, and both properties in the statement — having a section up to homotopy, and being fibre homotopy equivalent to a product — are invariant under fibre homotopy equivalence over $B$.
+:::
 
-A section assigns to each $b$ such a path $\gamma_b$, continuously in $b$. The formula
-$$
-H(b,t)=\gamma_b(t)
-$$
-is a homotopy from the constant map at $c_0$ to $f$. By homotopy invariance of pullback fibrations (Proposition 4.62, printed p. 406), pulling the path-space fibration back along $f$ gives a fibration fibre homotopy equivalent to its pullback along the constant map. The latter is
-$$
-B\times\Omega C\longrightarrow B.
-$$
-Consequently $E\to B$ is fiber homotopy equivalent to the stated product fibration.
+::: {.pf-step #model}
+A section $s(b)=(b,\gamma_b)$ of $q$ gives a fibre homotopy equivalence $\Phi\colon B\times\Omega C\to f^*(PC)$ over $B$.
 
-Conversely, suppose $E\to B$ is fiber homotopy equivalent to the product fibration
-$B\times\Omega C\to B$. A fiber homotopy equivalence over $B$ contains a map
-$r:B\times\Omega C\to E$ with $p\,r=\mathrm{pr}_B$, and the product fibration has the section
-$s_0(b)=(b,\mathrm{const}_{c_0})$. Then $s=r\circ s_0$ satisfies $p\,s=\mathrm{pr}_B\circ s_0=\id$,
-so $E\to B$ has a section. Together with the preceding paragraph this shows that $E\to B$ has a
-section if and only if it is fiber homotopy equivalent to $\Omega C\times B\to B$.
+::: pf-proof
+Here $f^*(PC)=\{(b,\gamma):\gamma\colon I\to C,\ \gamma(0)=c_0,\ \gamma(1)=f(b)\}$ and $q(b,\gamma)=b$, so the fibre over $b$ is the space of paths from $c_0$ to $f(b)$, and a section is a continuous choice of such a path $\gamma_b$ for each $b$. Define $\Phi(b,\omega)=(b,\omega\cdot\gamma_b)$, the concatenation of the loop $\omega$ at $c_0$ with $\gamma_b$; this path starts at $c_0$ and ends at $f(b)$, and $q\Phi(b,\omega)=b$, so $\Phi$ is fibre preserving. On the fibre over $b$ it is the map $\omega\mapsto\omega\cdot\gamma_b$ from $\Omega C$ to the path space $P_{c_0,f(b)}C$, whose inverse up to homotopy is $\delta\mapsto\delta\cdot\gamma_b^{-1}$, concatenation with the reverse path; both composites are homotopic to the identity through maps that keep the fibre fixed. Hence $\Phi$ is a fibre homotopy equivalence over $B$.
+:::
+
+:::
+
+::: {.pf-step #forward}
+If the principal fibration has a section, it is fibre homotopy equivalent to $\Omega C\times B$.
+
+::: pf-proof
+A section of $E\to B$ gives a section of the pullback model by step [](#principal){.pf-ref}, hence a fibre homotopy equivalence $\Phi$ as in step [](#model){.pf-ref}, and $\Phi$ is a fibre homotopy equivalence between $E\to B$ and the product by step [](#principal){.pf-ref}. The product here is $\Omega C\times B\to B$, the projection.
+:::
+
+:::
+
+::: {.pf-step #backward}
+If the principal fibration is fibre homotopy equivalent to $\Omega C\times B\to B$, it has a section.
+
+::: pf-proof
+The product carries the section $s_0(b)=(b,\mathrm{const}_{c_0})$. Let $\Psi\colon\Omega C\times B\to E$ be a fibre-preserving map that is a homotopy inverse to the given fibre homotopy equivalence over $B$; being fibre preserving, it satisfies $p\Psi=\operatorname{pr}_B$. Then $s=\Psi\circ s_0$ is a map $B\to E$ with $p\,s=\operatorname{pr}_B s_0=\id_B$, a strict section.
+:::
+
+:::
+
+::: {.pf-step}
+A principal fibration $\Omega C\to E\to B$ is fibre homotopy equivalent to $\Omega C\times B$ if and only if it has a section.
+
+::: pf-proof
+Step [](#forward){.pf-ref} gives the implication from a section to the product, and step [](#backward){.pf-ref} the converse.
+:::
+
+:::
+
+:::
 :::
