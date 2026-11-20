@@ -72,7 +72,7 @@ A selection of exercises from [@Har77] recommended by Elham Izadi, by chapter an
 
 - II.4: 1, 2, 3, 4, 6.
 
-- II.5: 1, 3, 5; 2, 4, 7, 8, 9; 10, 11, 12, 13; 14, 15, 16, 17, 18. Many textbooks prove these results in the text.
+- II.5: 1, 3, 5; 2, 4, 7, 8, 9; 10, 11, 12, 13; 14, 15, 16, 17, 18.
 
 - II.6: 1, 8; 5, 10; and the problem on [[P-AGXMISCINJINVERTIBLE|injectivity of nonzero maps of invertible sheaves]].
 
@@ -81,7 +81,7 @@ A selection of exercises from [@Har77] recommended by Elham Izadi, by chapter an
 - II.8: 1, 2, 3; 4, 5.
 
 Richard Borcherds' Berkeley Math 256A (1994) assigned, in order: I.1.1–1.6; I.1.7, 1.8, 1.9, 1.11, 1.12; I.2.1, 2.3, 2.4, 2.5, 2.9; I.2.12–2.17; I.3.1, 3.2, 3.4, 3.5, 3.6, 3.8, 3.11, 3.13; I.3.15, 3.16, 3.17, 3.19, 3.21; I.4.1, 4.4, 4.5, 4.6, 4.10; I.5.1, 5.2, 5.3, 5.6 with V.5.8(b); I.5.8, 5.10, 5.12, 5.14, 5.15; I.6.1, 6.2, 6.6, 6.7; I.6.3, 6.4, 6.5 with IV.2.5; II.1.1, 1.3, 1.8, 1.13, 1.18; II.2.2, 2.5, 2.6, 2.9, 2.10, 2.11; II.3.1, 3.2, 3.3, 3.5, 3.9, 3.11, 3.15, 3.18.
-The [course page](https://math.berkeley.edu/~reb/courses/256A/) has solutions to I.1.1–1.7, IV.4.1 and IV.4.3.
+Solutions to I.1.1–1.7, IV.4.1 and IV.4.3 are on the course page cited at [@Bor12].
 
 ## Reference documents
 
@@ -123,6 +123,10 @@ The [course page](https://math.berkeley.edu/~reb/courses/256A/) has solutions to
 - [Stacks Project, final exam questions](https://stacks.math.columbia.edu/tag/0G12): exam questions collected in the Stacks Project.
 
 - [Arthur Ogus, Math 256B (2017)](https://math.berkeley.edu/~ogus/Math_256B-2017/index.html): Berkeley course page.
+
+- [Oprea, UC San Diego Math 145 (Spring 2008)](https://mathweb.ucsd.edu/~doprea/145s08/): course page.
+
+- [Osserman, UC Davis Math 248A and 248B](https://www.math.ucdavis.edu/~osserman/classes/): course pages.
 
 ### Foundational texts: links to editions and scans
 
@@ -196,17 +200,7 @@ The [course page](https://math.berkeley.edu/~reb/courses/256A/) has solutions to
 
 - [Cambridge Part III algebraic geometry exercises](https://www.maths.cam.ac.uk/postgrad/part-iii/files/misc/AlgebraicGeometryExercises.pdf)
 
-- [Buch, Rutgers (Fall 2014), solutions 1](http://sycon.rutgers.edu/~asbuch/alggeo_f14/sol01.pdf)
-
-- [Migliore, Notre Dame (Spring 2018), problem set 1 solutions](https://www3.nd.edu/~jmiglior/S2018%20PS1%20solutions.pdf)
-
-- [Tramel, Illinois Math 418 (Spring 2016), homework 12 solutions](https://faculty.math.illinois.edu/~rtramel/Math418Spring2016HW12Sol.pdf)
-
-- [Humboldt-Universität Berlin, solutions on schemes](http://didaktik1.mathematik.hu-berlin.de/files/solnsalgeom.pdf)
-
 - [Feng, algebraic geometry problems](https://www.mit.edu/~fengt/AGProblems.pdf)
-
-- [Oprea, UCSD Math 145 (Spring 2008)](https://mathweb.ucsd.edu/~doprea/145s08/)
 
 - MIT 18.726 (Spring 2009) problem sets [1](https://ocw.mit.edu/courses/mathematics/18-726-algebraic-geometry-spring-2009/assignments/MIT18_726s09_pset01.pdf) through [12](https://ocw.mit.edu/courses/mathematics/18-726-algebraic-geometry-spring-2009/assignments/MIT18_726s09_pset12.pdf), each at `MIT18_726s09_pset<nn>.pdf` in the same directory.
 
@@ -214,7 +208,15 @@ The [course page](https://math.berkeley.edu/~reb/courses/256A/) has solutions to
 
 - [Wisconsin Math 764 homeworks](https://hilbert.math.wisc.edu/wiki/index.php/Math_764_--_Algebraic_Geometry_II_--_Homeworks)
 
-- [Osserman, UC Davis 248A and 248B](https://www.math.ucdavis.edu/~osserman/classes/)
+### Problem-set solutions
+
+- [Buch, Rutgers (Fall 2014), solutions 1](http://sycon.rutgers.edu/~asbuch/alggeo_f14/sol01.pdf)
+
+- [Migliore, Notre Dame (Spring 2018), problem set 1 solutions](https://www3.nd.edu/~jmiglior/S2018%20PS1%20solutions.pdf)
+
+- [Tramel, Illinois Math 418 (Spring 2016), homework 12 solutions](https://faculty.math.illinois.edu/~rtramel/Math418Spring2016HW12Sol.pdf)
+
+- [Humboldt-Universität Berlin, solutions on schemes](http://didaktik1.mathematik.hu-berlin.de/files/solnsalgeom.pdf)
 
 ### Past examinations
 
