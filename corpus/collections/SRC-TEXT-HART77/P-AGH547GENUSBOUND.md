@@ -347,6 +347,27 @@ audit:
     card's own step is what supplies it. The statement, the steps and the
     attainment argument are unchanged, and no part of the proof was moved from
     proved to open or the reverse.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Page correction to the degree 4 proof, and no change of mathematics.
+    Corollary 4.7 of Hartshorne, V.4, is stated on printed p. 400, with its
+    proof running from there to printed p. 401; the source-corrected event of
+    2026-11-19 above, in both of its page references, and the rendered degree
+    4 paragraph cited printed p. 405, which is where the proof of Theorem 4.11
+    and Corollary 4.13 stand, not Corollary 4.7. The event itself is left as
+    written, per QUAL-11; this one carries the correction. Checked in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, whose
+    markers for PDF pages 415 and 416 give printed pages 400 and 401 by the
+    offset printed = PDF - 15 that the folios 179, 245 and 270 also satisfy
+    there: the statement of Corollary 4.7, with Theorem 4.6 and its proof,
+    lies after the marker of PDF p. 415 and before that of PDF p. 416, and
+    the proof of the corollary crosses that second marker. The mathematics
+    is unchanged: Corollary 4.7 proves that for each r = 0,...,6 the linear
+    system d' = |pi^*3L - E_1 - ... - E_r| embeds the blowup of P^2 at r
+    points in P^{9-r}, and r = 5 is the case used. Not checked: any printing
+    of the book, only the text version retained in tmp/sources.
 ---
 
 ::: {.problem}
@@ -538,7 +559,7 @@ degrees are attained over every algebraically closed field $k$.
 
 The classes of degrees $1$ and $2$ are the line and the conic of step
 [](#small-degrees){.pf-ref}. The class of degree $4$ is $H+E_6=\pi^*(3L)-E_1-\cdots-E_5$, the pullback of
-the class $\mathfrak d'$ of Corollary 4.7 of the book, printed p. 405, with $r=5$, which that corollary
+the class $\mathfrak d'$ of Corollary 4.7 of the book, printed p. 400, with $r=5$, which that corollary
 proves very ample and which embeds the blowup of $\PP^2$ at five points in $\PP^4$; since
 $H+E_6$ meets $E_6$ in $0$, its sections are the pullbacks of the sections of $\mathfrak d'$, so a
 general member of $\linearsystem{H+E_6}$ is the pullback of a general member of $\linearsystem{\mathfrak d'}$ and is isomorphic to
