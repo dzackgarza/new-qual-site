@@ -65,7 +65,7 @@ $\displaystyle\oint_C\frac{dz}{z^2-14z+1}=-\frac{\pi i}{4\sqrt3}$.
 ::: pf-proof
 
 The roots of $z^2-14z+1$ are $z_\pm=7\pm4\sqrt3$, and $z_+z_-=1$ with $z_+>1$, so only $z_-$ lies inside $C$.
-It is a simple pole with residue $\frac{1}{z_--z_+}=-\frac{1}{8\sqrt3}$, and the residue theorem gives $2\pi i\cdot\qty(-\frac1{8\sqrt3})$.
+It is a simple pole with residue $\frac{1}{z_--z_+}=-\frac{1}{8\sqrt3}$, and the [[T-HRPNO|residue theorem]] gives $2\pi i\cdot\qty(-\frac1{8\sqrt3})$.
 
 :::
 
