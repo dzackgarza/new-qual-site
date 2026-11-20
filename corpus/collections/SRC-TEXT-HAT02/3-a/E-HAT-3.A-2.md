@@ -11,6 +11,23 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Weibel §3.1 read against the six steps of this card, in `tmp/sources/weibel-03-tor-and-ext.md`,
+    together with Corollary 2.6.16 in `tmp/sources/weibel-02-derived-functors.md`. Each step matches
+    the numbered statement it cites: Calculation 3.1.1 gives Tor_0(Z/p,B)=B/pB, Tor_1(Z/p,B) the
+    elements killed by p, and vanishing for n at least 2, and the card's step is the same resolution
+    with n in place of p, now said in those words; Proposition 3.1.3 is Tor_1^Z(Q/Z,B) equal to the
+    torsion subgroup of B, the second-variable step; Proposition 3.1.4 is the vanishing for
+    torsionfree A in degrees other than 0; Corollary 3.1.5 is the two-sided equivalence, the converse
+    step; and Corollary 2.6.16, that a left derived functor of a left adjoint commutes with filtered
+    colimits, is the first-variable colimit formula the card uses with F the tensor product with B
+    and by Theorem 2.7.2 the left derived functors of that F are Tor. One wording repaired and no
+    mathematics: the cyclic step now says that Weibel states the calculation for Z/p and that the
+    card's Z/n is the same resolution. Not checked: no certificate, and the Balancing Remark's proof
+    was not re-read beyond its statement.
 - event: solution-written
   by: claude
   date: 2026-11-20
@@ -160,7 +177,7 @@ Write $\operatorname{Tor}=\operatorname{Tor}_1^{\ZZ}$. Hatcher records, immediat
 For $n\ge1$ and any $B$, $\operatorname{Tor}_0^{\ZZ}(\ZZ/n,B)=B/nB$, $\operatorname{Tor}_1^{\ZZ}(\ZZ/n,B)=B[n]\coloneqq\{b\in B:nb=0\}$, and $\operatorname{Tor}_i^{\ZZ}(\ZZ/n,B)=0$ for $i\ge2$.
 
 ::: pf-proof
-This is Weibel's Calculation 3.1.1. The free resolution $0\to\ZZ\xrightarrow{n}\ZZ\to\ZZ/n\to0$ computes $\operatorname{Tor}_*^{\ZZ}(\ZZ/n,B)$ as the homology of $0\to B\xrightarrow{n}B\to0$, which is $B/nB$ in degree $0$, the kernel $B[n]$ in degree $1$, and zero above.
+This is Weibel's Calculation 3.1.1, which states it for $\ZZ/p$ with $p$ any integer and proves it from the free resolution $0\to\ZZ\xrightarrow{p}\ZZ\to\ZZ/p\to0$; the same resolution with $n$ in place of $p$ gives the statement for $\ZZ/n$, computing $\operatorname{Tor}_*^{\ZZ}(\ZZ/n,B)$ as the homology of $0\to B\xrightarrow{n}B\to0$, which is $B/nB$ in degree $0$, the kernel $B[n]$ in degree $1$, and zero above.
 :::
 
 :::
