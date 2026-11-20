@@ -37,10 +37,19 @@ audit:
     p. 254, and its printed words are the card's. The chapter, the problem number and the page
     are now named in the solution's opening sentence. Not checked in this pass: the argument, which
     the edit does not touch.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Asterisk status read from the book: Chapter 8 sets its asterisks before Problems 3, 4, 6, 7, 8
+    and 9 only, so none stands before Problem 1. The remark records that. The locator by numbered
+    statement is Chapter 8, Problem 1; the page readings recorded in the earlier events are
+    superseded by it, the events themselves standing as written. Not checked in this pass: the
+    wording of the statement and the argument.
 ---
 
 ::: {.exercise}
-This is Problem 1 of Chapter 8 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 254; the statement below is its wording.
+This is Problem 1 of Chapter 8 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`; the statement below is its wording.
 
 Let $f$ be a complex-valued $C^1$ function defined in the neighborhood of a point $z_0$. There are several notions closely related to conformality at $z_0$. We say that $f$ is isogonal at $z_0$ if whenever $\gamma(t)$ and $\eta(t)$ are two smooth curves with $\gamma(0) = \eta(0) = z_0$, that make an angle $\theta$ there ($\abs{\theta} < \pi$), then $f(\gamma(t))$ and $f(\eta(t))$ make an angle of $\theta'$ at $t = 0$ with $\abs{\theta'} = \abs{\theta}$ for all $\theta$. Also, $f$ is said to be isotropic if it magnifies lengths by some factor for all directions emanating from $z_0$, that is, if the limit
 $$
@@ -49,6 +58,10 @@ $$
 exists, is non-zero, and independent of $\theta$.
 
 Then $f$ is isogonal at $z_0$ if and only if it is isotropic at $z_0$; moreover, $f$ is isogonal at $z_0$ if and only if either $f'(z_0)$ exists and is non-zero, or the same holds for $f$ replaced by $\overline{f}$.
+:::
+
+::: {.remark}
+The book sets no asterisk before this problem (Chapter 8, Problem 1).
 :::
 
 ::: {.solution}
