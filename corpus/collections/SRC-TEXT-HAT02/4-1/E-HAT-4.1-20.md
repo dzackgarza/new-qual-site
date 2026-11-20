@@ -51,6 +51,24 @@ audit:
     stated separately because pi_1 is not abelian; and the choices over the finitely many cells
     are independent because a homotopy is determined cell by cell. Not claimed: any bound sharper
     than finiteness, or anything about X infinite, where the induction gives no finiteness.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 20, printed p. 359,
+    and the obstruction theory of §4.3 (printed pp. 412-419). Two repairs, both in the proofs rather
+    than in the statements. (1) Step `postnikov` justified the vanishing of the obstructions with "the
+    coefficients vanish for i >= d+1", which is false: above degree d the fibre of Y -> Y^d has the
+    homotopy of Y, and the statement assumes nothing there. The step now separates the two ranges:
+    pi_i of the fibre vanishes for i <= d because Y -> Y^d is an isomorphism there, and the
+    cohomology vanishes for i >= d+1 because X is d-dimensional. (2) Step `percell` stated its count
+    for the whole k-skeleton, where the number of extensions is the product over the k-cells, not
+    |pi_k|; its own sub-step `independent` and step `induction` both read it per cell. The statement
+    is now about a single k-cell, which is what the argument proves. Steps `obstruction`, `choices`,
+    `independent`, `components` and `induction` are unchanged and correct: the obstruction per cell is
+    the class of the composite with the attaching map, extensions over a disc up to homotopy rel
+    boundary form a pi_k-torsor, and homotopies glue cell by cell. Not checked: no sharper bound, and
+    nothing about infinite X.
 ---
 
 ::: {.problem}
@@ -66,7 +84,7 @@ The argument is the card's own; no retained solution set is cited on the card, a
 With $d=\dim X$ and $Y^{d}$ the $d$-th Postnikov stage of $Y$, the map $Y\to Y^{d}$ induces a bijection $[X,Y]\to[X,Y^{d}]$.
 
 ::: pf-proof
-$Y\to Y^{d}$ is by construction an isomorphism on $\pi_i$ for $i\le d$ and $\pi_i(Y^{d})=0$ for $i>d$. Since $X$ is $d$-dimensional, obstruction theory gives that every map $X\to Y^{d}$ lifts to $Y$ up to homotopy, that every homotopy between such maps does as well, and that the resulting map on homotopy classes is a bijection — the obstructions lie in $H^{i+1}(X;\pi_i)$ for $i\ge d+1$, where the coefficients vanish.
+$Y\to Y^{d}$ is by construction an isomorphism on $\pi_i$ for $i\le d$ and $\pi_i(Y^{d})=0$ for $i>d$. Since $X$ is $d$-dimensional, obstruction theory gives that every map $X\to Y^{d}$ lifts to $Y$ up to homotopy, that every homotopy between such maps does as well, and that the resulting map on homotopy classes is a bijection — with $F$ the homotopy fibre of $Y\to Y^{d}$, the obstructions are classes in $H^{i+1}(X;\pi_i(F))$, and these vanish in the two ranges for two different reasons: $\pi_i(F)=0$ for $i\le d$, because $Y\to Y^{d}$ is an isomorphism on $\pi_i$ there, and $H^{i+1}(X;\cdot)=0$ for $i\ge d+1$, because $X$ has no cohomology above its dimension. Nothing is assumed about $\pi_i(F)$ for $i\ge d+1$, where it equals $\pi_i(Y)$.
 :::
 
 :::
@@ -81,7 +99,7 @@ $X$ is connected, so its image is connected and lies in one component. The compo
 :::
 
 ::: {.pf-step #percell}
-Fix a component $C$ of $Y^{d}$, a $k\ge1$ and a map $\varphi:X^{k-1}\to C$. The extensions of $\varphi$ over $X^{k}$ up to homotopy relative to $X^{k-1}$ are either none, or in bijection with a quotient of the finite group $\pi_k(C)$ by the action of $\pi_1$ in the case $k=1$; in either case there are at most $\cardinality{\pi_k(C)}$ of them.
+Fix a component $C$ of $Y^{d}$, a $k\ge1$, a map $\varphi:X^{k-1}\to C$ and a $k$-cell $e$ of $X$. The extensions of $\varphi$ over $e$, up to homotopy relative to $\partial e$, are either none, or in bijection with a quotient of the finite group $\pi_k(C)$ by the action of $\pi_1$ in the case $k=1$; in either case there are at most $\cardinality{\pi_k(C)}$ of them.
 
 :::: pf-proof
 
