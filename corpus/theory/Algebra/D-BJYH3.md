@@ -29,7 +29,7 @@ The same definition applies to a sequence indexed by $\ZZ$ or by an infinite int
 $$
 \cdots\to A_{n+1}\mapsvia{d_{n+1}}A_n\mapsvia{d_n}A_{n-1}\to\cdots:
 $$
-it is exact at $A_n$ if $\im d_{n+1}=\ker d_n$, and exact if it is exact at every term that has both an incoming and an outgoing map [@Hat02].
+it is exact at $A_n$ if $\im d_{n+1}=\ker d_n$, and exact if it is exact at every term that has both an incoming and an outgoing map [@Hat02, §2.1].
 :::
 
 ::: {.remark}
