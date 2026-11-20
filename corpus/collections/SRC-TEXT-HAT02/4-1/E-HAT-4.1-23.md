@@ -51,8 +51,7 @@ audit:
   by: claude
   date: 2026-11-20
   note: >-
-    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 23, printed p. 360,
-    Example 4.11 (cellular approximation for pairs) and Corollary 4.12. One repair, in step
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 23, Example 4.11 (cellular approximation for pairs) and Corollary 4.12. One repair, in step
     `cw-cylinder`: its cell list named the cells of Y' and the cells e^k x (0,1) but not the cells
     e^k x {0}, so the closure of e^k x (0,1) contained points of X' x {0} that were not cells; the
     decomposition was therefore not a CW structure, and the claim that X' x {0} is a subcomplex did
