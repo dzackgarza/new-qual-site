@@ -49,10 +49,17 @@ audit:
     Re-confirmed in this pass rather than copied: PDF p. 401 carries the running head 392.
     The durable part of the locator is that printed page; the file path names this machine's copy and
     `tmp/sources` does not survive a VM reset. No mathematics changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The statement block carried the locator "printed page = PDF page - 9" and the name of the file the
+    exercise was read in. Both are removed: the exercise is cited as §4.2 Exercise 35, and the wording
+    is otherwise untouched. No mathematics changed.
 ---
 
 ::: {.problem}
-This is Exercise 35 of Section 4.2 of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 35; the statement below is its wording.
 
 Show that the fiber bundle $S^3 \to S^{4n+3} \to \quatprojective^n$ gives rise to a quotient fiber bundle $S^2 \to \CP^{2n+1} \to \quatprojective^n$ by factoring out the action of $S^1$ on $S^{4n+3}$ by complex scalar multiplication.
 :::
