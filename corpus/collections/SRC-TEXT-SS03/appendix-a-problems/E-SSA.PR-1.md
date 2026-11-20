@@ -68,6 +68,17 @@ audit:
     there by the integral formula (1). The citation now names those two. The citation of Lemma 1.2
     inside the final step stands: that step applies the recursion, which is what the lemma states.
     The mathematics of the argument is unchanged and was not re-read in this pass.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Chapter named in a second citation of the same solution: the sentence that identifies the
+    substitution of the step with "the computation (5) of Proposition 1.2" named no chapter, and
+    Chapter 6 has no Proposition 1.2 -- its numbered statements are Proposition 1.1, Lemma 1.2,
+    Theorem 1.3, Theorem 1.4, Lemma 1.5, Theorem 1.6 and Theorem 1.7. Read in the retained book, the
+    statement meant is Appendix A, Proposition 1.2, whose equation (5) is the truncated integral
+    $\int_0^a e^{-sx}x^m\,dx=s^{-m-1}\Gamma(m+1)+O(e^{-cs})$; the sentence now names Appendix A.
+    Nothing else changed.
 ---
 
 ::: {.exercise}
@@ -129,7 +140,7 @@ $$
 \int_0^\infty e^{-sx}x^m\,dx=s^{-m-1}\int_0^\infty e^{-t}t^m\,dt=s^{-m-1}\Gamma(m+1),
 \tag{1}
 $$
-which is also the computation (5) of Proposition 1.2.
+which is also the computation (5) of Proposition 1.2 of Appendix A.
 Define
 $$
 D(s)=\int_0^\infty e^{-sx}x^m\eta(x)\,dx-s^{-m-1}\Gamma(m+1),\qquad T(s)=\int_0^\infty e^{-sx}x^m\chi(x)\,dx .
