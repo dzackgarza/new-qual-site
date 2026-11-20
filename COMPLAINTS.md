@@ -10120,3 +10120,30 @@ Three remain from the eight and are not recorded here as read: `E-HAT-4.2-5`, `-
 **Checks.** No card changed, so no `qualc.authoring check` was run on a card.
 
 **Uncertainty.** Read: Lemma 12's statement down to the point where the extraction truncates it, and its proof's opening; not the whole statement or proof. PDF p. 27 is rendered at `.scratch/abhy-p27-27.png` but was not needed. The five steps of V.5.6 remain unread, so #168's acceptance is still unmet for that card; V.5.8(b), V.4.16's named steps, IV.2.3 and IV.3.11 are not reached.
+
+## 2026-11-19, ninth item: the last three split §4.2 cards read step by step, so all eight are done
+
+The three left by the previous item, each read against the printed exercise and the numbered statements it cites,
+none needing repair.
+
+- `E-HAT-4.2-17` (printed p. 390), every step. The $n=1$ case is Theorem 1B.9. For $n\ge2$ the CW model has one
+  $0$-cell and none in dimensions $1,\dots,n-1$, so $C_{n-1}=0$, every based map is constant on $X^{n-1}$, and
+  $C_n=Z_n$; a based map gives $\theta_f:C_n\to\pi_n(Y)$ by the classes of $f\Phi_\alpha$, the obstruction to
+  extending over an $(n+1)$-cell is $\theta_f(d_{n+1}e)$, so $\theta_f$ factors through $H_n(X)=\pi_n(X)$ by
+  Hurewicz; surjectivity extends over cells of dimension at least $n+2$ because $\pi_i(Y)=0$ for $i>n$, and
+  injectivity is the same obstruction theory on $X\times I$ with obstructions in $\pi_i(Y)$, $i\ge n+1$.
+- `E-HAT-4.2-33` (p. 392), every step. The long exact sequence of $S^{n-1}\to S^{2n-1}\to S^n$ gives
+  $\pi_i(S^n)\cong\pi_{i-1}(S^{n-1})$ for $i\le 2n-2$; Exercise 31 applies because the fibre inclusion lands in
+  $\pi_{n-1}(S^{2n-1})=0$, giving $\pi_i(S^n)\cong\pi_i(S^{2n-1})\oplus\pi_{i-1}(S^{n-1})$; the double induction on
+  $i$ and on the sphere dimension then gives finite generation, and nonvanishing runs from $\pi_2(S^2)=\ZZ$ up
+  through $\pi_j(S^2)\cong\pi_j(S^3)\twoheadrightarrow\pi_{j-1}(S^2)$ and then down the splitting to $S^n$.
+- `E-HAT-4.2-5` (p. 389), every step. $f_*$ is $\begin{psmallmatrix}1&1\\0&1\end{psmallmatrix}$ because $f$ is the
+  identity on $S^2_\alpha$ and $\mathrm{id}+h$ on $S^2_\beta$; $f$ is a homotopy equivalence by the homology
+  Whitehead theorem, so the universal cover of the mapping torus is a telescope of homotopy equivalences, giving
+  $\pi_2(X)=\ZZ\oplus\ZZ$ and $\pi_1(X)=\ZZ$; $A=S^1\times S^2_\alpha$ has $\pi_2=\pi_1=\ZZ$; the boundary map
+  $\pi_2(X,A)\to\pi_1(A)$ is zero because $\pi_1(A)\to\pi_1(X)$ is an isomorphism, so
+  $0\to\ZZ\to\ZZ\oplus\ZZ\to\ZZ\to0$ is exact; and the three actions are the monodromy $f_*$, trivial on $\ZZ\alpha$
+  and on the quotient $\ZZ\beta$, nontrivial on $\ZZ\oplus\ZZ$ since $\beta\mapsto\beta+\alpha$.
+
+With this, all eight cards of the split are read step by step: `-5`, `-17`, `-21`, `-25`, `-27`, `-29`, `-32`, `-33`,
+none of them needing repair.
