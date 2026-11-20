@@ -32,6 +32,15 @@ audit:
     exists; for order 10, n_5 = 1 gives C_5 normal, the Sylow 2-subgroup is C_2, and
     the two possible C_2-actions on C_5 give C_10 and the dihedral group, so exactly
     one nonabelian group of order 10. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 12, final part D(i). A
+    group of order $9$ has centre of order $3$ or $9$; a cyclic central quotient forces
+    abelian, so all groups of order $9$ are abelian. For order $10$, $n_5=1$ gives
+    $C_5\trianglelefteq G$, $Q=C_2$, $G=C_5\rtimes C_2$; $\operatorname{Aut}(C_5)=C_4$ has
+    only the trivial and the inversion action, giving $C_{10}$ and $D_{10}$. No defect.
 ---
 
 ::: {.exercise}
