@@ -27,9 +27,9 @@ audit:
 
 (i) Give a definition of $L^\infty(\RR^n)$.
 
-(ii) Verify that $\norm{\wait}_\infty$ defines a norm on $L^\infty(\RR^n)$.
+(ii) Verify that $\norm{\cdot}_\infty$ defines a norm on $L^\infty(\RR^n)$.
 
-(iii) Carefully prove that $(L^\infty(\RR^n), \norm{\wait}_\infty)$ is a Banach space.
+(iii) Carefully prove that $(L^\infty(\RR^n), \norm{\cdot}_\infty)$ is a Banach space.
 
 (b) Prove that for any measurable $f:\RR^n \to \CC$,
 $$
