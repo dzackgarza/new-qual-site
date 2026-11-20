@@ -72,17 +72,17 @@ Show that if $A$ is a deformation retract of $X$, and $B$ is a deformation retra
 
 ::: {.solution}
 The exercise is §58 Exercise 1, and the notion is the book's
-definition of a deformation retract on printed p. 360: $A\subseteq X$ is a
+definition of a deformation retract in §58: $A\subseteq X$ is a
 deformation retract of $X$ when there is a continuous $H:X\times I\to X$ with
 $H(x,0)=x$ and $H(x,1)\in A$ for all $x\in X$, and $H(a,t)=a$ for all $a\in A$.
 The last clause is what some texts call a *strong* deformation retraction, and
 both sources below use the book's version.
 
 The proof is transcribed from UC Riverside Math 205A, Fall 2014, Solutions Part
-7, Munkres §58 Exercise 1, the sheet's p. 8, held at
+7, Munkres §58 Exercise 1, that sheet, held at
 `tmp/sources/ucr-math205A-2014-solutions07.md`, which composes the two
 deformation retractions. Pearse, *Topology (2nd ed.) — James R. Munkres*,
-solutions, Cornell 2005, §58 Exercise 1, his p. 20, proves the same statement by
+solutions, Cornell 2005, §58 Exercise 1, proves the same statement by
 writing the composite homotopy in two stages, and that formula is step
 [](#two-stage){.pf-ref}.
 
@@ -156,7 +156,7 @@ sets $X\times[0,\tfrac12]$ and $X\times[\tfrac12,1]$. Further $F(x,0)=H(x,0)=x$
 and $F(x,1)=K(r(x),1)=s(r(x))=\rho(x)\in B$; and for $b\in B$ we have
 $F(b,t)=H(b,2t)=b$ for $t\le\tfrac12$, while $F(b,t)=K(r(b),2t-1)=K(b,2t-1)=b$
 for $t\ge\tfrac12$, because $r(b)=b$ and $K$ fixes $B$. So $F$ is a deformation
-retraction of $X$ onto $B$ in the sense of printed p. 360, which is the
+retraction of $X$ onto $B$ in the sense of §58, which is the
 assertion.
 :::
 

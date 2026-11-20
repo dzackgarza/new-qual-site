@@ -120,8 +120,7 @@ $\boxed{A\ \text{is contractible}}$.
 
 ::: pf-proof
 Step [](#composite){.pf-ref} exhibits a homotopy from $\operatorname{id}_A$ to a
-constant map of $A$, which is exactly the definition of contractibility on
-printed p. 330. So a retract of a contractible space is contractible.
+constant map of $A$, which is exactly the definition of contractibility in §52. So a retract of a contractible space is contractible.
 :::
 
 :::

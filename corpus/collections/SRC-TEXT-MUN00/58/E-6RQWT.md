@@ -69,7 +69,7 @@ Notation. $X$ is contractible when $\operatorname{id}_X$ is nulhomotopic
 (§51 Exercise 3), and $X$ has the homotopy type of a one-point
 space when there are a one-point space $\theset y$ and maps $f:X\to\theset y$,
 $g:\theset y\to X$ with $g\circ f\simeq\operatorname{id}_X$ and
-$f\circ g\simeq\operatorname{id}_{\theset y}$ (definition on printed p. 363).
+$f\circ g\simeq\operatorname{id}_{\theset y}$ (definition of homotopy inverse, §58).
 
 ::: pf
 
@@ -95,7 +95,7 @@ Let $Y=\theset y$ and let $f:X\to Y$, $g:Y\to X$ satisfy
 $g\circ f\simeq\operatorname{id}_X$. Put $x_0=g(y)$, the only value of $g$. For
 every $x\in X$ we have $f(x)=y$, so $(g\circ f)(x)=g(y)=x_0$; thus $g\circ f$ is
 the constant map $c_{x_0}$, and $\operatorname{id}_X\simeq c_{x_0}$. By the
-definition of contractibility at printed p. 330 this is the assertion.
+definition of contractibility in §52 this is the assertion.
 :::
 
 :::

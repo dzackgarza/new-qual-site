@@ -58,7 +58,7 @@ Compare [[E-PBG3W]].
 
 ::: {.solution}
 
-By the Convention of Chapter 13  all covering maps of this chapter have path connected and locally path connected total space and base, and $c_*$ is injective for a covering map $c$ (printed p. 477). Let $\rho: \widetilde Z \to Z$ be a universal covering of $Z$, that is, $\widetilde Z$ is simply connected.
+By the Convention of Chapter 13  all covering maps of this chapter have path connected and locally path connected total space and base, and $c_*$ is injective for a covering map $c$ (Theorem 54.6(a)). Let $\rho: \widetilde Z \to Z$ be a universal covering of $Z$, that is, $\widetilde Z$ is simply connected.
 
 Part (a) is David Yang's proof, *MATH104: Topology, Fall 2023*, Homework 11, in `HW/hw11.tex` lines 79--100 of `dyang5/MATH104-Topology` at commit 12686a815d58f29aeaadb90a30449ae85c0a613f (2024-05-04), https://github.com/dyang5/MATH104-Topology/blob/12686a815d58f29aeaadb90a30449ae85c0a613f/HW/hw11.tex#L79-L100. By Theorem 80.3 , applied to the covering $\rho:\widetilde Z\to Z$ with $\widetilde Z$ simply connected and to $r:Y\to Z$, there is a covering map $t:\widetilde Z\to Y$ with $r\circ t=\rho$; applied again to $t$ and to $q:X\to Y$, there is a covering map $u:\widetilde Z\to X$ with $q\circ u=t$. Then
 $$
@@ -104,7 +104,7 @@ $c^{-1}(U)$ is the disjoint union of these path components, and each of them is 
 
 ::: pf-proof
 
-$c^{-1}(U)$ is open in $E$, and $E$ is locally path connected by the Convention, so the path components of the open subspace $c^{-1}(U)$ are open in $c^{-1}(U)$. They are disjoint and cover it by definition. The slices of the definition of a covering map (printed p. 336) are exactly these sets, so $U$ is evenly covered by $c$.
+$c^{-1}(U)$ is open in $E$, and $E$ is locally path connected by the Convention, so the path components of the open subspace $c^{-1}(U)$ are open in $c^{-1}(U)$. They are disjoint and cover it by definition. The slices of the definition of a covering map (§53) are exactly these sets, so $U$ is evenly covered by $c$.
 
 :::
 
@@ -150,7 +150,7 @@ $p^{-1}(U)$ is a disjoint union of open sets, each mapped homeomorphically onto 
 
 ::: pf-proof
 
-By step [](#lemma){.pf-ref} applied to $c = q$ and to the path-connected open set $V_\alpha$, each $q^{-1}(V_\alpha)$ is a disjoint union of open sets $W_{\alpha\beta}$ mapped homeomorphically onto $V_\alpha$. Then $p^{-1}(U) = q^{-1}(r^{-1}(U)) = \bigsqcup_{\alpha,\beta} W_{\alpha\beta}$, and $p\restrict_{W_{\alpha\beta}} = r\restrict_{V_\alpha} \circ q\restrict_{W_{\alpha\beta}}$ is a homeomorphism onto $U$. Also $p$ is surjective, being a composite of surjective maps, which is required of a covering map by the definition (printed p. 336).
+By step [](#lemma){.pf-ref} applied to $c = q$ and to the path-connected open set $V_\alpha$, each $q^{-1}(V_\alpha)$ is a disjoint union of open sets $W_{\alpha\beta}$ mapped homeomorphically onto $V_\alpha$. Then $p^{-1}(U) = q^{-1}(r^{-1}(U)) = \bigsqcup_{\alpha,\beta} W_{\alpha\beta}$, and $p\restrict_{W_{\alpha\beta}} = r\restrict_{V_\alpha} \circ q\restrict_{W_{\alpha\beta}}$ is a homeomorphism onto $U$. Also $p$ is surjective, being a composite of surjective maps, which is required of a covering map by the definition (§53).
 
 :::
 

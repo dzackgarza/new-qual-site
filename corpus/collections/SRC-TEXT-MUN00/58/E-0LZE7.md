@@ -277,7 +277,7 @@ theta space are homotopy equivalent}.}$
 $f$ is continuous by step [](#mapf){.pf-ref}, $g$ by step
 [](#mapg){.pf-ref}, and the two composites are homotopic to the respective
 identities by steps [](#left){.pf-ref} and [](#right){.pf-ref}; that is the
-definition of homotopy inverse on printed p. 363, and the exercise's two maps are
+definition of homotopy inverse in §58, and the exercise's two maps are
 described.
 
 What the formulas say, in the source's terms: $g$ collapses the bar of the theta

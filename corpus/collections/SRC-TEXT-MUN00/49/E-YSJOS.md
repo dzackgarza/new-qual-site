@@ -95,7 +95,7 @@ each term taken only when defined, and let $\Delta_h f=\inf\{\Delta f(x,h)\mid x
 For $n\ge2$ and continuous $f:I\to\RR$: if $\Delta f(x,h)\ge\alpha$ for all $x\in I$ and some $0<h\le1/n$, and $\alpha>n$, then $f\in U_n$.
 
 ::: pf-proof
-$\Delta_h f=\inf_x\Delta f(x,h)\ge\alpha>n$ because $\alpha\le\Delta f(x,h)$ for every $x$, and $h\le1/n$; this is exactly the condition in the definition of $U_n$ (printed p. 301).
+$\Delta_h f=\inf_x\Delta f(x,h)\ge\alpha>n$ because $\alpha\le\Delta f(x,h)$ for every $x$, and $h\le1/n$; this is exactly the condition in the definition of $U_n$ (§49).
 :::
 
 :::

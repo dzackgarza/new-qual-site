@@ -84,7 +84,7 @@ Any two vertices $m<n$ are joined by the edge path that traverses the edges join
 $T$ contains no closed reduced edge path, so $T$ is a tree.
 
 ::: pf-proof
-In this graph two consecutive edges with opposite orientations would be the same edge, so a reduced edge path has all its steps in the same direction and passes through each vertex at most once; such a path is not closed (definition of reduced edge path and of a tree, printed pp. 506--507). Hence $T$ is a tree.
+In this graph two consecutive edges with opposite orientations would be the same edge, so a reduced edge path has all its steps in the same direction and passes through each vertex at most once; such a path is not closed (definition in §84 of reduced edge path and of a tree). Hence $T$ is a tree.
 :::
 
 :::

@@ -109,7 +109,7 @@ $n\in\ZZ_+$, of $0\times I$ and of $I\times 0$ in $\RR^2$, and $x_0=(0,1)$.
 The proof is transcribed from Cameron Gordon, *Algebraic Topology*, Fall 2019,
 notes by Jackson Van Dyke, Example 1.11 with Claim 1.1 and its proof, read in `tmp/sources/utexas-gordon-algtop-notes.md`. The claim there
 is that the comb space does not strong deformation retract to $(0,1)$, which in
-this book's terminology (printed p. 360) is the assertion that $\theset{x_0}$ is
+this book's terminology (§58) is the assertion that $\theset{x_0}$ is
 not a deformation retract of $X$; the contractibility of the comb is part of the
 same example. The source's argument is the tube lemma (Lemma 26.8) applied to an open disc about $x_0$, and it is the only part of the proof
 that needs an idea; the contractibility is a two-stage deformation retraction
@@ -144,7 +144,7 @@ equivalently, $X$ being contractible it is path connected by §51 Exercise 3(b)
 , and then any two of its self-maps are homotopic by §51 Exercise
 3(d). With
 $r\circ i=\operatorname{id}_{\theset{x_0}}$, the maps $i$ and $r$ are homotopy
-inverse by the definition on printed p. 363, and $i$ is a homotopy equivalence.
+inverse by the definition of homotopy inverse in §58, and $i$ is a homotopy equivalence.
 :::
 
 :::
@@ -176,8 +176,7 @@ from above, so for $y\in(\tfrac12,1]$ the points $(1/n,y)$ lie in $U\cap X$ for
 every large $n$ and tend to $(0,y)$.
 
 The set $F^{-1}(U)$ is open in $X\times I$ and contains $x_0\times I$, because
-$F(x_0,t)=x_0\in U$. Since $I$ is compact, Lemma 26.8, the tube lemma (printed
-p. 168), applied with the compact factor $I$ gives a neighbourhood $W$ of $x_0$
+$F(x_0,t)=x_0\in U$. Since $I$ is compact, Lemma 26.8, the tube lemma (§26), applied with the compact factor $I$ gives a neighbourhood $W$ of $x_0$
 in $X$ with $W\times I\subseteq F^{-1}(U)$.
 
 Since $1/n\to0$, the set $W$ contains a point $(1/n,1)$ for some $n\ge3$. Then

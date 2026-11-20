@@ -46,7 +46,7 @@ Show that the one-point compactification of $\ZZ_+$ is homeomorphic with the sub
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.8** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the map $n\mapsto 1/n$ and the appeal to Exercise 29.5 are that solution's. Two points it leaves implicit are supplied below: that $\ZZ_{+}$ is locally compact Hausdorff and not compact, which is what makes its one-point compactification exist, and that $\theset{1/n}$ is *dense* in $\theset{0}\cup\theset{1/n}$, which the definition of a compactification on printed p. 183 requires. The statement was checked against Munkres, *Topology* (2000), §29 Exercise 8, with that definition, Theorem 27.3 and Exercise 29.5.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.8** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the map $n\mapsto 1/n$ and the appeal to Exercise 29.5 are that solution's. Two points it leaves implicit are supplied below: that $\ZZ_{+}$ is locally compact Hausdorff and not compact, which is what makes its one-point compactification exist, and that $\theset{1/n}$ is *dense* in $\theset{0}\cup\theset{1/n}$, which the definition of a compactification in §29 requires. The statement was checked against Munkres, *Topology* (2000), §29 Exercise 8, with that definition, Theorem 27.3 and Exercise 29.5.
 
 Throughout, $\ZZ_{+}$ is the subspace of $\RR$ consisting of the positive integers, $X\coloneqq\theset{1/n\mid n\in\ZZ_{+}}$, and $Y\coloneqq X\cup\theset{0}$, both with the subspace topology of $\RR$.
 
@@ -110,7 +110,7 @@ $Y$ is the one-point compactification of $X$.
 
 ::: pf-proof
 
-By steps [](#compact){.pf-ref} and [](#dense){.pf-ref} the space $Y$ is compact Hausdorff, contains $X$ as a proper subspace whose closure is $Y$, and $Y-X$ is a single point: so $Y$ is a compactification of $X$ which is a one-point compactification, in the sense of the definition on printed p. 183.
+By steps [](#compact){.pf-ref} and [](#dense){.pf-ref} the space $Y$ is compact Hausdorff, contains $X$ as a proper subspace whose closure is $Y$, and $Y-X$ is a single point: so $Y$ is a compactification of $X$ which is a one-point compactification, in the sense of the definition in §29.
 
 :::
 
