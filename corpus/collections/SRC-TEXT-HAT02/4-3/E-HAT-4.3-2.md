@@ -11,6 +11,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Restructured under #2, transcribing the retained solution of Steven V. Sam, Solutions to
+    Algebraic Topology (2008), §4.3 Exercise 2, printed pp. 24-25 of
+    tmp/sources/hatcher-solutions-sam-2008.pdf (the statement on printed p. 24, the solution on
+    printed p. 25; PDF pp. 25-26). Sam's argument is kept: pointwise multiplication descends to
+    homotopy classes, and the bijection T of Theorem 4.57 is additive because
+    (f+g)^*(alpha) = f^*(alpha) + g^*(alpha). Sam compresses the last identity into "clear from
+    the definition of pullback"; the card now derives it from mu^*u = pr_1^*u + pr_2^*u, which is
+    the Kunneth formula of Theorem 3.15, printed p. 216, together with the two restrictions of mu
+    to the factors. Checked against the numbered statements named; Theorem 4.57 is printed p. 393
+    and S^1 = K(Z,1) because its universal cover is contractible. Not checked: no certificate, and
+    nothing outside this exercise.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -41,36 +56,55 @@ audit:
     records the read. Not claimed: a published solution of this exercise, and no certificate.
 ---
 
-::: {.problem}
-Show that the group structure on $S^1$ coming from multiplication in $\CC$ induces a group structure on $\langle X, S^1 \rangle$ such that the bijection $\langle X, S^1 \rangle \to H^1(X; \ZZ)$ of Theorem 4.57 is an isomorphism.
+::: {.solution}
+The argument is that of the retained solution set: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 2**, printed pp.~24--25 of `tmp/sources/hatcher-solutions-sam-2008.pdf`. Sam multiplies maps pointwise into $S^1\subset\CC^\times$, observes that the product descends to homotopy classes, and concludes through the identity $(f+g)^*(\alpha)=f^*(\alpha)+g^*(\alpha)$ for the bijection $T([f])=f^*(\alpha)$ of Theorem 4.57; the identity itself he leaves to the definition of pullback, and step [](#kunneth){.pf-ref} supplies the computation. Let $u$ generate $H^1(S^1;\ZZ)\cong\ZZ$ and let $\mu\colon S^1\times S^1\to S^1$ be the multiplication.
+
+::: pf
+
+::: {.pf-step #group}
+Pointwise multiplication and inversion give $\langle X,S^1\rangle$ the structure of an abelian group.
+
+::: pf-proof
+$S^1\subset\CC^\times$ is an abelian topological group with identity $1$. For based maps $f,g\colon(X,x_0)\to(S^1,1)$ the pointwise product $fg$ and the pointwise inverse $\bar f(x)=f(x)^{-1}$ are again based, and the group axioms hold pointwise, hence exactly, not only up to homotopy; the group is abelian because $S^1$ is. If $H_1\colon f\simeq f'$ and $H_2\colon g\simeq g'$ are based homotopies, then $(x,t)\mapsto H_1(x,t)H_2(x,t)$ is a based homotopy $fg\simeq f'g'$, so the operation is well defined on homotopy classes. This is Sam's step.
 :::
 
-::: {.solution}
-For maps $f,g:X\to S^1$, define
-$$
-(fg)(x)=f(x)g(x)
-$$
-using multiplication in $S^1\subset\CC$. Pointwise multiplication and inversion descend to homotopy classes, giving a group structure on $\langle X,S^1\rangle$.
+:::
 
-Let
-$$
-u\in H^1(S^1;\ZZ)
-$$
-be the canonical generator. For the multiplication
-$$
-\mu:S^1\times S^1\to S^1,
-$$
-restriction to each factor has degree $1$, so by Künneth
-$$
-\mu^*u=\operatorname{pr}_1^*u+\operatorname{pr}_2^*u.
-$$
-Therefore
-$$
-(fg)^*u=(f,g)^*\mu^*u=f^*u+g^*u.
-$$
-Theorem 4.57 identifies $[f]$ with $f^*u$, hence this bijection preserves addition. Thus
-$$
-\boxed{\langle X,S^1\rangle\cong H^1(X;\ZZ)}
-$$
-as groups.
+::: {.pf-step #kunneth}
+$\mu^*u=\operatorname{pr}_1^*u+\operatorname{pr}_2^*u$ in $H^1(S^1\times S^1;\ZZ)$.
+
+::: pf-proof
+$H^*(S^1;\ZZ)$ is free and finitely generated in each degree, so the Künneth formula (Theorem 3.15, printed p.~216) identifies $H^*(S^1\times S^1;\ZZ)$ with $H^*(S^1;\ZZ)\otimes H^*(S^1;\ZZ)$, and $H^1(S^1\times S^1;\ZZ)$ has the basis $\operatorname{pr}_1^*u,\operatorname{pr}_2^*u$. So $\mu^*u=a\operatorname{pr}_1^*u+b\operatorname{pr}_2^*u$ for integers $a,b$. Let $i_1(s)=(s,1)$ and $i_2(t)=(1,t)$. Since $\mu\,i_1=\id=\mu\,i_2$, applying $i_1^*$ gives $u=i_1^*\mu^*u=a\,i_1^*\operatorname{pr}_1^*u+b\,i_1^*\operatorname{pr}_2^*u=a\,u$, the second term vanishing because $\operatorname{pr}_2i_1$ is the constant map at $1$; hence $a=1$, and applying $i_2^*$ in the same way gives $b=1$.
+:::
+
+:::
+
+::: {.pf-step #pullback}
+$(fg)^*u=f^*u+g^*u$ for based maps $f,g\colon X\to S^1$.
+
+::: pf-proof
+By definition $fg=\mu\circ(f,g)$, so $(fg)^*u=(f,g)^*\mu^*u=(f,g)^*(\operatorname{pr}_1^*u+\operatorname{pr}_2^*u)=f^*u+g^*u$, using step [](#kunneth){.pf-ref} and the identities $\operatorname{pr}_1(f,g)=f$, $\operatorname{pr}_2(f,g)=g$.
+:::
+
+:::
+
+::: {.pf-step #iso}
+$T\colon\langle X,S^1\rangle\to H^1(X;\ZZ)$, $T([f])=f^*u$, is an isomorphism of groups.
+
+::: pf-proof
+$S^1$ is a $K(\ZZ,1)$, its universal cover $\RR$ being contractible, so Theorem 4.57 (printed p.~393) with $G=\ZZ$ and $n=1$ gives a bijection $T$ of the stated form. By step [](#pullback){.pf-ref}, $T([f][g])=(fg)^*u=f^*u+g^*u=T([f])+T([g])$, so $T$ is a homomorphism, and a bijective homomorphism is an isomorphism.
+:::
+
+:::
+
+::: {.pf-step}
+$\langle X,S^1\rangle\cong H^1(X;\ZZ)$ as groups, with the group structure induced by multiplication in $\CC$.
+
+::: pf-proof
+Steps [](#group){.pf-ref} and [](#iso){.pf-ref} give the group structure and the isomorphism, and step [](#pullback){.pf-ref} is the additivity that makes the bijection of Theorem 4.57 an isomorphism.
+:::
+
+:::
+
+:::
 :::
