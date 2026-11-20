@@ -32,6 +32,21 @@ audit:
     both directions to conclude that the vertex bijection is an isomorphism of simplicial complexes.
     Not re-read this session: printed p. 178.
 - event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher §4.G Exercise 3 and the definition of the nerve in §4.G. The mathematics is
+    right: the cover by open stars, the barycentre argument, the converse that a point in several
+    open stars lies in the interior of one simplex containing all those vertices, and the resulting
+    isomorphism with $K$. Two repairs. The first step justified openness of the open star by saying
+    it is a union of interiors of simplices "which are open in $\realization{K}$", and that is false
+    as soon as a simplex has a proper face: the interior of an edge of a triangle is not open. The
+    star is now shown open as the complement of the closed simplices not having the vertex. The lead
+    no longer locates the exercise by printed page, and no longer points at a file under `tmp`,
+    which does not survive a VM reset; it names the exercise and says which retained sets stop
+    before §4.G. No statement changed. Not checked: no certificate; nothing here was verified by
+    computation.
+- event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
 - event: source-corrected
@@ -52,7 +67,7 @@ What is the nerve of the cover of a simplicial complex by the open stars of its 
 
 ::: {.solution}
 
-The argument is the card's own; no retained solution set in `tmp/sources` covers Section 4.G Exercise 3. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.G Exercise 3, and the identification of open stars with simplices is the one used in the proof of Lemma 2C.2 (printed p. 178).
+No retained solution set covers this exercise: Sam's set stops at §4.3, and the retained sets that reach further record no solution for §4.G. The argument is the card's own, and the identification of open stars with simplices is the one used in the proof of Lemma 2C.2.
 
 Let $K$ be a simplicial complex with geometric realization $\realization{K}$; for a vertex $v$ let $\operatorname{st}^{\circ}(v)$ be its open star, the union of the interiors of the simplices containing $v$. The nerve $N(\mathcal{U})$ of a cover $\mathcal{U}$ has a vertex for each member $U$ and a $q$-simplex for each $(q+1)$-tuple of members with nonempty intersection.
 
@@ -62,7 +77,7 @@ Let $K$ be a simplicial complex with geometric realization $\realization{K}$; fo
 $\{\operatorname{st}^{\circ}(v)\mid v\text{ a vertex of }K\}$ is an open cover of $\realization{K}$.
 
 ::: pf-proof
-Each open star is open, being a union of interiors of simplices, which are open in $\realization{K}$. If $p\in\realization{K}$, then $p$ lies in the interior of a unique simplex $\sigma$; writing $p=\sum_{v\in\sigma}t_{v}v$ with all $t_{v}>0$, we have $p\in\operatorname{st}^{\circ}(v)$ for every vertex $v$ of $\sigma$, in particular for one. So every point lies in some member.
+The complement of $\operatorname{st}^{\circ}(v)$ is the union of the closed simplices of $K$ that do not have $v$ as a vertex, a closed set, so the open star is open; the interiors of simplices are not themselves open in $\realization{K}$ when the simplex has faces. If $p\in\realization{K}$, then $p$ lies in the interior of a unique simplex $\sigma$; writing $p=\sum_{v\in\sigma}t_{v}v$ with all $t_{v}>0$, we have $p\in\operatorname{st}^{\circ}(v)$ for every vertex $v$ of $\sigma$, in particular for one. So every point lies in some member.
 :::
 
 :::
