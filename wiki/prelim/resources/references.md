@@ -7,27 +7,27 @@ order: 1
 
 ## References
 
-[UCLA summer notes](https://www.math.ucla.edu/~bonsoon/summer2020/files/concepts.pdf)
+The texts the topic lists and the problem solutions draw on, by subject.
 
-- [@Ahl73]
+- [@Ahl73] -- complex analysis.
 
-- [@Arn73]
+- [@Arn73] -- ordinary differential equations.
 
-- [@Art91]
+- [@Art91] -- abstract algebra.
 
-- [@Kir92]
+- [@Kir92] -- complex algebraic curves.
 
-- [@Mas91]
+- [@Mas91] -- algebraic topology.
 
-- [@Mil97]
+- [@Mil97] -- differential topology.
 
-- [@Ros97]
+- [@Ros97] -- probability.
 
-- [@Rud74]
+- [@Rud74] -- real and complex analysis.
 
-- [@Ser73]
+- [@Ser77] -- linear representations of finite groups.
 
-- [@Ser77]
+- [@Ser73] -- arithmetic.
 
 ## Notes
 
