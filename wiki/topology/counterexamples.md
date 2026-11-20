@@ -7,6 +7,8 @@ topics:
 
 # Counterexamples
 
+For each statement that fails without a hypothesis, the space or map that witnesses the failure.
+
 ## Point-set
 
 ::: {.example title="A compact subset need not be closed"}
@@ -112,13 +114,7 @@ The Klein bottle is non-orientable and has $H_2=0$, while the torus has $H_2\con
 
 :::
 
-::: {.example title="A manifold need not be triangulable"}
-Every topological manifold of dimension at most $3$ is triangulable.
-Freedman's $E_8$ manifold is a closed topological $4$-manifold that admits no triangulation.
-
-:::
-
 ::: {.example title="Homotopy equivalent manifolds need not be homeomorphic"}
-The lens spaces $L(7,1)$ and $L(7,2)$ are homotopy equivalent closed $3$-manifolds that are not homeomorphic.
+The [[D-UI3FE|lens spaces]] $L(7,1)$ and $L(7,2)$ are homotopy equivalent closed $3$-manifolds that are not homeomorphic [@Hat02, Example 2.43].
 
 :::
