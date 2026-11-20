@@ -5,7 +5,7 @@ title: "Algebra qual prep week 3: Sylow theory"
 
 # Algebra qual prep week 3: Sylow theory
 
-The three Sylow theorems, the counting argument they support, and the classification of the groups of small composite order — the material on [[algebra/group-actions/sylow|Sylow theory]] and [[algebra/groups/groups-of-small-order|Groups of small order]], collected for one session.
+The three Sylow theorems, the counting argument they support, and the classification of the groups of small composite order — the material on [[algebra/group-actions/sylow|Sylow theory]] and [[algebra/groups/groups-of-small-order|Groups of small order]].
 
 ## The three theorems
 
