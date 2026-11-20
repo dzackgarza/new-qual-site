@@ -78,7 +78,7 @@ is injective.
 
 ::: pf-proof
 
-The long exact sequence of the pair $(X^{n-1},X^{n-2})$ is that of Theorem 2.16, applied to the short exact sequence of chain complexes $0\to C_*(X^{n-2})\to C_*(X^{n-1})\to C_*(X^{n-1},X^{n-2})\to 0$ of p. 115, and it contains
+The long exact sequence of the pair $(X^{n-1},X^{n-2})$ is that of Theorem 2.16, applied to the short exact sequence of chain complexes $0\to C_*(X^{n-2})\to C_*(X^{n-1})\to C_*(X^{n-1},X^{n-2})\to 0$ of §2.2, and it contains
 $$
 H_{n-1}(X^{n-2})
 \longrightarrow H_{n-1}(X^{n-1})
@@ -135,7 +135,7 @@ The relative group
 $$
 H_n(X^n,X^{n-1})
 $$
-is free abelian with basis the $n$-cells of $X$ by Lemma 2.34(a). By step [](#s2){.pf-ref}, $H_n(X^n)$ is a subgroup of this free abelian group. Every subgroup of a free abelian group is free abelian, the standard structure theorem for finitely generated abelian groups applied as Hatcher applies it in (ii) on p. 140. Hence $H_n(X^n)$ is free.
+is free abelian with basis the $n$-cells of $X$ by Lemma 2.34(a). By step [](#s2){.pf-ref}, $H_n(X^n)$ is a subgroup of this free abelian group. Every subgroup of a free abelian group is free abelian, the standard structure theorem for finitely generated abelian groups applied as Hatcher applies it in part (ii) of the proof of Theorem 2.35. Hence $H_n(X^n)$ is free.
 
 :::
 
