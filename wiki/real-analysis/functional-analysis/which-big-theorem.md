@@ -11,17 +11,16 @@ topics:
 Let $X$ and $Y$ be normed spaces.
 The statements are on [[real-analysis/appendices/functional-analysis|Appendix: Functional analysis]].
 
-| Hypothesis | Theorem | Conclusion |
-| --- | --- | --- |
-| $X$ Banach; $T_\alpha\colon X\to Y$ bounded linear with $\sup_\alpha\norm{T_\alpha x}<\infty$ for each $x$ | uniform boundedness | $\sup_\alpha\norm{T_\alpha}<\infty$ |
-| $X, Y$ Banach; $T\colon X\to Y$ bounded linear and surjective | open mapping | $T$ is open; if $T$ is also injective, $T^{-1}$ is bounded |
-| $X, Y$ Banach; $T\colon X\to Y$ linear with closed graph | closed graph | $T$ is bounded |
-| $M\subseteq X$ a subspace; $f$ a bounded linear functional on $M$ | Hahn--Banach | an extension $F\in X^*$ of $f$ with $\norm F = \norm f$ |
+## Which theorem applies?
 
-The uniform boundedness principle applies the Baire category theorem to the complete space $X$.
-The open mapping theorem applies the Baire category theorem to $Y$ and uses the completeness of $X$ to sum an absolutely convergent series.
-The closed graph theorem follows from the bounded inverse theorem applied to the projection from the graph of $T$, a Banach space, onto $X$.
-The Hahn--Banach theorem is proved using Zorn's lemma and holds for every normed space $X$.
+| Question | Theorem |
+| --- | --- |
+| Is a family of operators pointwise bounded on a Banach space? | [[FT-JRRRW|Uniform boundedness]] |
+| Is a bounded operator between Banach spaces surjective? | [[T-KQTPR|Open mapping]] |
+| Is a linear map between Banach spaces known to have closed graph? | [[T-TTLXS|Closed graph]] |
+| Is a bounded functional given on a subspace? | [[T-OW2QG|Hahn--Banach]] |
+
+The bounded inverse theorem is the open mapping theorem for a bijection: [[T-FO27T]].
 
 ## Consequences
 
