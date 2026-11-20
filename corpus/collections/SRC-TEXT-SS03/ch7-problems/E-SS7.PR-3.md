@@ -27,6 +27,20 @@ audit:
     identity $\int_1^\infty(\psi(x)-x)x^{-s-1}dx=-\frac1s\frac{\zeta'}{\zeta}(s)-\frac1{s-1}$ and its
     holomorphic extension; and the pole argument at a zero $\rho$ with $\Re\rho>\alpha$. Not checked:
     the zero-counting estimate $N(T)=O(T\log T)$, which is cited as standard and not proved here.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Repair of step `tauberian` on the reader's report. The averaging estimate is
+    $\psi(x)-x=O(x^{\alpha+2\epsilon})$ with $h=x^{\alpha+\epsilon}$, not $O(x^{\alpha+\epsilon})$:
+    the passage from the average to $\psi(x)$ costs $O(h\log x)=O(x^{\alpha+2\epsilon})$, so the
+    displayed conclusion and the closing "renaming" sentence asserted the claim from a weaker bound.
+    The display now reads $O(x^{\alpha+2\epsilon})$, and the closing sentence states the substitution
+    that yields the claim: the argument is applied with $\epsilon/2$ in place of $\epsilon$, so that
+    $h=x^{\alpha+\epsilon/2}$ and the average is $x+O(x^{\alpha+\epsilon/2})$, whence
+    $\psi(x)-x=O(x^{\alpha+\epsilon})$. All other steps are unchanged; the constants were not
+    recomputed. Provenance: no published solution set covers this Problem (Rhoades, *Solutions/Hints
+    to the Exercises*, 2006, covers a selection of the Exercises), so the argument is the card's own.
 ---
 
 ::: {.exercise}
@@ -42,6 +56,7 @@ The book marks this problem with an asterisk (Chapter 7, Problem 3, printed p. 2
 :::
 
 ::: {.solution}
+No published solution set covers the end-of-chapter Problems of Stein--Shakarchi: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, and no other set was located. The argument is the card's own, following the printed hint.
 Let
 $$
 \psi(x)=\sum_{n\le x}\Lambda(n),\qquad
@@ -155,9 +170,9 @@ $$
 $$
 Hence the average differs from $\psi(x)$ by $O(h\log x)=O(x^{\alpha+2\epsilon})$, and
 $$
-\psi(x)-x=O(x^{\alpha+\epsilon}).
+\psi(x)-x=O(x^{\alpha+2\epsilon}).
 $$
-Renaming $\epsilon$ gives the claim.
+Since $\epsilon>0$ was arbitrary, applying the argument with $\epsilon/2$ in place of $\epsilon$ — so that $h=x^{\alpha+\epsilon/2}$ and the average is $x+O(x^{\alpha+\epsilon/2})$ — gives $\psi(x)-x=O(x^{\alpha+\epsilon})$, which is the claim.
 :::
 
 :::
