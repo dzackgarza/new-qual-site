@@ -302,6 +302,50 @@ audit:
     p. 44 beside Dolgachev's, so the order part (c) uses has two printed
     derivations, one on the exceptional vectors and one on the roots. No
     statement, step, hypothesis or number of the card changes.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read at its printed pages, independently of the two events above, the
+    passage step weyl-faithful cites. J. E. Humphreys, *Reflection Groups and
+    Coxeter Groups*, Cambridge Studies in Advanced Mathematics 29 (1990), in
+    the scan at tmp/sources/humphreys-reflection-groups-coxeter-groups.pdf,
+    rendered page by page as images and each page read at its own folio:
+    printed p. 111 (PDF p. 128, folio legible in the head) opens 5.4, "Positive
+    and negative roots", and carries Theorem 5.4 verbatim as "Let w in W and s
+    in S. If l(ws) > l(w), then w(a_s) > 0. If l(ws) < l(w), then w(a_s) < 0";
+    its proof begins on that page (the set A and the induction on l(w)) and
+    runs through printed p. 112 (PDF p. 129, the two cases m(s,s') infinite and
+    finite) to the top of printed p. 113 (PDF p. 130), where it closes with the
+    square; the Corollary at the head of printed p. 113 reads "The
+    representation sigma : W -> GL(V) is faithful", with the proof printed
+    under it: if w lies in the kernel and w is not 1, choose s with
+    l(ws) < l(w), so w(a_s) < 0 by the theorem, while w(a_s) = a_s > 0, a
+    contradiction; and 5.5, "Parabolic subgroups", begins below, so the
+    Corollary is the last item of 5.4. The offset printed p. N = PDF p. N + 17
+    was verified on each of the three folios read, and not assumed. The card's
+    quotation is verbatim and its page range is right, with the correction that
+    Theorem 5.4's statement is on printed p. 111 alone and it is the proof that
+    spans 111--113. Not read: Humphreys outside 2.11 and 5.3--5.4; the printed
+    book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #158's acceptance item for part (c) is closed on this card. The bound
+    the card needed is the inequality |E_6| <= 51840, and it now rests on a
+    read, paged, published proof: Humphreys' Corollary at printed p. 113, read
+    in the event above at its folio, gives that the geometric representation of
+    the Coxeter group presented in part (c) is faithful, so the group injects
+    into the reflection group of the E_6 root lattice; the card's own steps
+    identify that image with W(E_6) and evaluate its order as 51840, from
+    Dolgachev's Corollary 8.2.16 at printed pp. 261--262 and again from
+    Humphreys 2.11 at printed p. 44. No step, statement, hypothesis or number
+    of the card changes in this pass. The two events dated 2026-11-16 on this
+    card that say the inequality "is not supplied by any source read" describe
+    the card as it stood before the 2026-11-19 work and are superseded on that
+    point; they are left in place as the log they are, and the bound is not open
+    on this card.
 ---
 
 ::: {.problem}
