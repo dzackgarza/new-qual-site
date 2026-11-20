@@ -97,7 +97,7 @@ Logs and exponentials:
 
 [[PR-PELLF]]
 
-[[PR-7TLAS]]
+[[PR-TQDIL]]
 
 Joukowski maps:
 
