@@ -25,6 +25,7 @@ For Lebesgue measure $m$ on $\RR^d$ and $\varepsilon>0$, the three principles sa
 ::: {.example title="Egorov's theorem needs finite measure"}
 On $\RR$, $f_n\coloneqq\chi_{[n,n+1]}\to0$ pointwise, but $\sup_{A}\abs{f_n}=1$ for all $n$ on any $A$ with $m(\RR\setminus A)<1$, since such $A$ meets every $[n,n+1]$ in positive measure.
 
+The computation is the card's own; the theorem whose hypothesis it removes is [[FT-OGS76|Egorov's theorem]], and the finiteness of the measure is what it needs.
 :::
 
 The statements are also on [[real-analysis/measure/littlewood-principles-notes|Egorov and Lusin]] and [[real-analysis/integration/the-convergence-theorems|The convergence theorems]].
