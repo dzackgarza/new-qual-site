@@ -55,7 +55,7 @@ audit:
 ---
 
 ::: {.problem}
-This is Exercise 29 of Section 2.1 of Hatcher, *Algebraic Topology* (2002), printed p. 133, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Hatcher, *Algebraic Topology* (2002), §2.1 Exercise 29; the statement below is its wording.
 
 Show that $S^1 \times S^1$ and $S^1 \lor S^1 \lor S^2$ have isomorphic homology groups in all dimensions, but their universal covering spaces do not.
 :::
