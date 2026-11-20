@@ -174,10 +174,38 @@ audit:
     so the printed page is the one the card's earlier event claimed. The durable part of the locator
     is that printed page; the file path names this machine's copy and `tmp/sources` does not survive a
     VM reset. No mathematics changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, the problem block's locator repaired. It named printed p. 421 for the exercise, which
+    is where §4.A opens, not where the exercise stands: PDF page 430 of the author's copy carries the
+    running head "Basepoints and Homotopy / Section 4.A / 421", while the exercise is on PDF page 435
+    = printed p. 426, under the heading "Exercises" that closes the section, and its wording there is
+    the card's. The solution's own opening sentence already said printed p. 426, so the two halves of
+    the card disagreed and the statement's half was the wrong one. The block now names the text
+    version `tmp/sources/hatcher-2002-algebraic-topology.md`, which is present, in place of a PDF that
+    is no longer in `tmp/sources`, and gives the PDF page of the author's copy. Nothing in the
+    displayed statement changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, referee read of this card's own part, the normalisation of the unbased homotopy.
+    Checked: for $H:Z\times I\to X$ an unbased homotopy of the pointed maps $f,g:(Z,z_0)\to(X,x_0)$,
+    the path $\gamma(t)=H(z_0,t)$ is a loop at $x_0$ because $\gamma(0)=f(z_0)=x_0=\gamma(1)=g(z_0)$;
+    $F(z,t)=H(z,t)\gamma(t)^{-1}$ is continuous, multiplication and inversion being continuous in a
+    topological group; $F(z,0)=f(z)x_0^{-1}=f(z)$ and $F(z,1)=g(z)x_0^{-1}=g(z)$; and
+    $F(z_0,t)=\gamma(t)\gamma(t)^{-1}=x_0$, so $F$ is a homotopy through based maps. The single
+    formula does all three jobs, which is what the exercise asks, and no hypothesis on $Z$ is used.
+    Checked that this is the published normalisation in the one case a source proves it: tom Dieck,
+    Lemma (2.7.4), printed p. 49, is $(x,t)\mapsto H(x,t)H(1,t)^{-1}$ for pointed maps $S^1\to S^1$,
+    the same formula with $Z=X=S^1$; the card says so and does not claim the general statement from
+    it. Not claimed: a published proof of the general statement in this form.
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 4.A of Hatcher, *Algebraic Topology* (2002), printed p. 421, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Exercise 1 of Section 4.A of Hatcher, *Algebraic Topology* (2002), printed p. 426, read in `tmp/sources/hatcher-2002-algebraic-topology.md`; the exercise stands on PDF page 435 of the author's copy, printed page = PDF page - 9. The statement below is its wording.
 
 Show directly that if $X$ is a topological group with identity element $x_0$, then any two maps $f, g: (Z, z_0) \to (X, x_0)$ which are homotopic are homotopic through basepoint-preserving maps.
 :::
