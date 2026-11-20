@@ -84,6 +84,20 @@ audit:
     $f(a)=f(b)$ through the type-(iii) and type-(iv) neighbourhoods. The statement and the basis types
     are cited by number, no page. Not checked in this commit: nothing of part (c) was touched or
     re-read.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Part (c) is converted to numbered steps, the third and last commit on this card, and the card is now
+    wholly structured: ten steps in three `pf` blocks, each step with a `pf-proof`. Part (c) is four
+    steps: one-point sets are closed, giving $T_1$; each $C_{n,k}$ is closed, separating a point off it
+    on a line $L_m$ by horizontal distance at least $1/k$, on another $C_{n',k'}$ by the finiteness of
+    the intersection, and the points $a,b$ by the one-sided type-(iii) and type-(iv) sets; every basis
+    element of each of the four types contains one whose closure lies inside it, including the
+    closedness of $C_{n,k}\setminus F$ used in type (ii); and $X$ is regular by Theorem 33.1 while it
+    is not completely regular, because part (b) forces $f(a)=f(b)$ for every continuous real-valued
+    $f$, so no such function separates $a$ from the closed set $\{b\}$. Cited by number: Munkres §33
+    Exercise 11, Theorem 33.1, and the basis types (i)--(iv). No page in the new text.
 
 ---
 
@@ -191,19 +205,44 @@ The pairs $(n,k)$ are countable and each $S_{n,k}$ is countable by step [#counta
 
 :::
 
-(c) First, one-point sets are closed, so $X$ is $T_1$: given distinct points $y\ne z$, a short horizontal segment through $z$ avoiding both $y$ and the points $p_{n,k}$ is a type-(i) neighbourhood of $z$ missing $y$ when $z$ is an ordinary point, a type-(ii) neighbourhood with $F$ enlarged by $y$ does the same when $z=p_{n,k}$, and the type-(iii) sets $B_m$ with $m$ large contain $z$ but not $y$ while the type-(iv) sets with $m$ small do the same for $z=b$.
+::: pf
 
-We prove regularity by shrinking basis neighbourhoods: for a point $x$ and a basis element $B\ni x$, a basis element $V$ with $x\in V$ and $\overline{V}\subseteq B$ is produced, which is the form the axiom takes in a space whose one-point sets are closed.
+::: {.pf-step #t1}
+(c) One-point sets in $X$ are closed, so $X$ is $T_1$.
 
-**The sets $C_{n,k}$ are closed.** Let $z\in X-C_{n,k}$. If $z=(m,y)$ lies on a line $L_m$, with $m$ even, then every point of $C_{n,k}$ has first coordinate in $[n-1+1/k,n+1-1/k]$ and $\abs{m-n}\ge1$, so the horizontal distance from $z$ to $C_{n,k}$ is at least $1/k$; a horizontal segment about $z$ of half-width less than $1/k$ and less than $1$, which contains no $p_{n',k'}$ because the top points on the horizontal line through $z$ lie at odd integers, is a type-(i) neighbourhood of $z$ missing $C_{n,k}$. If $z$ is an ordinary point of some $C_{n',k'}$, or a top point $p_{n',k'}$, with $(n',k')\ne(n,k)$, then $C_{n',k'}\cap C_{n,k}$ is finite --- two distinct circles meet in at most two points, a circle meets one of these vertical segments in at most two, and two of the segments are either disjoint or equal, the latter impossible for distinct pairs --- and $p_{n',k'}\notin C_{n,k}$; so $C_{n',k'}$ minus that finite intersection is a type-(ii) neighbourhood of $z$ missing $C_{n,k}$. Finally $a$ has the type-(iii) neighbourhood $B_m$ for any even $m\le n-1$, which misses $C_{n,k}$ because every point of $C_{n,k}$ has first coordinate greater than $n-1$, and $b$ has the type-(iv) neighbourhood with $m\ge n+1$, which misses it for the same reason on the other side.
+::: pf-proof
+Let $y\ne z$. If $z$ is an ordinary point, a short horizontal segment through $z$ avoiding $y$ and the top points $p_{n,k}$ is a type-(i) neighbourhood of $z$ missing $y$ if $y$ has the same height, and otherwise any short type-(i) segment through $z$ misses $y$; if $z=p_{n,k}$, the type-(ii) set obtained from $C_{n,k}$ by deleting $y$ as well is a neighbourhood of $z$ missing $y$; if $z=a$ (respectively $z=b$), the type-(iii) sets $B_m$ with $m$ large (the type-(iv) sets with $m$ small) contain $z$ and miss $y$ once $|m|$ exceeds the modulus of $y$'s first coordinate.
+:::
 
-**Type (i).** Let $B=X\cap((x_0-\epsilon,x_0+\epsilon)\times\{y_0\})$ contain $x$ and contain no $p_{n,k}$, and let $B'=X\cap((x_0-\epsilon',x_0+\epsilon')\times\{y_0\})$ with $0<\epsilon'<\epsilon$. Then $\overline{B'}\subseteq B$, because a point $z\in X-B$ is separated from $B'$ by a basis element containing it: if $z$ has second coordinate $y_0$ and $\abs{x_z-x_0}\ge\epsilon$, a horizontal segment about $z$ at height $y_0$, short enough to miss $B'$ and to contain no $p_{n,k}$, which is possible because the top points on that line lie at odd integers; if $z$ has second coordinate $y_z\ne y_0$ and is an ordinary point of its line or its circle, a short horizontal segment at height $y_z$ misses $B'$; if $z=p_{n,k}$, the set obtained from $C_{n,k}$ by deleting the finitely many of its points that lie in $B'$ is a type-(ii) neighbourhood of $z$ missing $B'$, and it contains $z$ because $z\notin B'$; and $a$ is separated from $B'$ by $B_m$ for an even $m<x_0-\epsilon'$, and $b$ by the type-(iv) set for an even $m>x_0+\epsilon'$.
+:::
 
-**Type (ii).** Let $x=p_{n,k}$ and $B=C_{n,k}\setminus F$ with $F$ finite and $p_{n,k}\notin F$. No point of $F$ is a top point, since $C_{n,k}$ meets $\{p_{n',k'}\}$ only at $p_{n,k}$; so each $z\in F$ is an ordinary point of $C_{n,k}$, and a horizontal segment through $z$ short enough to contain no $p_{n',k'}$ meets $C_{n,k}$ in $z$ alone, a horizontal line meeting $C_{n,k}$ in at most four points, pairwise separated. Such a segment is a type-(i) basis element, so $F$ is open in the subspace $C_{n,k}$ and $B$ is closed in $C_{n,k}$; and $C_{n,k}$ is closed in $X$, so $B$ is closed in $X$. Since $x\in B$, the set $B$ itself is a basis element with $\overline{B}=B\subseteq B$.
+::: {.pf-step #c-closed}
+(c) Each $C_{n,k}$ is closed in $X$.
 
-**Types (iii) and (iv).** Let $B_m=\{a\}\cup\{(x,y)\in X:x<m\}$ with $m$ even and take an even $m'<m$. If $z\notin B_m$ then $z\ne a$ and $x_z\ge m$, and $z$ has a basis element containing it and missing $B_{m'}$: for an ordinary point $z$ a horizontal segment at its own height and of half-width less than $m-m'$ stays at first coordinate greater than $m'$; for $z=p_{n,k}$ one has $n\ge m$, so every point of $C_{n,k}$ has first coordinate at least $n-1+1/k\ge m-1+1/k>m'$, and the type-(ii) set $C_{n,k}$ itself is a neighbourhood of $z$ missing $B_{m'}$. Hence $\overline{B_{m'}}\subseteq B_m$. The type-(iv) case at $b$ is symmetric, with $m'>m$.
+::: pf-proof
+Let $z\in X-C_{n,k}$. If $z=(m,y)$ lies on a line $L_m$, then every point of $C_{n,k}$ has first coordinate in $[n-1+1/k,n+1-1/k]$ and $\abs{m-n}\ge1$, so the horizontal distance from $z$ to $C_{n,k}$ is at least $1/k$, and a horizontal segment about $z$ of half-width below $1/k$ and below $1$, containing no $p_{n',k'}$ because the top points on that line lie at odd integers, is a type-(i) neighbourhood missing $C_{n,k}$. If $z$ is an ordinary point of $C_{n',k'}$, or a top point $p_{n',k'}$, with $(n',k')\ne(n,k)$, then $C_{n',k'}\cap C_{n,k}$ is finite, since two circles meet in at most two points, a circle meets one of these segments in at most two, and two of the segments are disjoint or equal, the latter impossible; so $C_{n',k'}$ minus that finite intersection is a type-(ii) neighbourhood of $z$ missing $C_{n,k}$, and it contains $z$ because $z\notin C_{n,k}$. Finally $a$ has the type-(iii) set $B_m$ for even $m\le n-1$, which misses $C_{n,k}$ as every point of $C_{n,k}$ has first coordinate above $n-1$, and $b$ has the type-(iv) set with $m\ge n+1$.
+:::
 
-Thus every point and every basis element containing it admit a basis element with closure inside the given one, so $X$ is regular.
+:::
 
-It is not completely regular. The points $a\ne b$ are closed, but part (b) shows that every continuous real-valued function on $X$ satisfies $f(a)=f(b)$. Complete regularity would provide a continuous $f:X\to[0,1]$ separating $a$ from the closed set $\{b\}$, impossible. Hence $X$ is regular but not completely regular.
+::: {.pf-step #c-shrink}
+(c) Every basis element $B\ni x$ contains a basis element $V\ni x$ with $\overline V\subseteq B$, in each of the four types.
+
+::: pf-proof
+Type (i): let $B=X\cap((x_0-\epsilon,x_0+\epsilon)\times\{y_0\})$ contain no $p_{n,k}$ and let $V$ be the same with $0<\epsilon'<\epsilon$. A point $z\in X-B$ is separated from $V$ by a basis element: if $z$ has height $y_0$ and $\abs{x_z-x_0}\ge\epsilon$, a short horizontal segment at that height misses $V$; if $z$ has another height and is ordinary, a short horizontal segment misses $V$; if $z=p_{n,k}$, then $C_{n,k}$ minus the finitely many of its points in $V$ is a type-(ii) neighbourhood of $z$ missing $V$; and $a$ is separated from $V$ by $B_m$ for even $m<x_0-\epsilon'$, $b$ by the type-(iv) set for even $m>x_0+\epsilon'$. Type (ii): let $x=p_{n,k}$ and $B=C_{n,k}\setminus F$ with $F$ finite not containing $p_{n,k}$. No point of $F$ is a top point, so each $z\in F$ is ordinary and a short horizontal segment through $z$ meets $C_{n,k}$ in $z$ alone, $F$ being open in the subspace $C_{n,k}$; then $B$ is closed in $C_{n,k}$ and $C_{n,k}$ is closed in $X$ by step [#c-closed]{.pf-ref}, so $B$ is closed in $X$ and $V=B$ serves. Types (iii) and (iv): for $B_m$ with $m$ even take an even $m'<m$ and $V=B_{m'}$; a point $z\notin B_m$ has a basis element missing $B_{m'}$ — a horizontal segment of half-width below $m-m'$ at an ordinary point, a type-(ii) set about $p_{n,k}$ with $n\ge m$ (so every point of $C_{n,k}$ has first coordinate at least $n-1+1/k>m'$), and the type-(iv) sets for $b$ — so $\overline{B_{m'}}\subseteq B_m$; the type-(iv) case is the mirror image in $x\mapsto-x$.
+:::
+
+:::
+
+::: {.pf-step #part-c}
+(c) $X$ is regular but not completely regular.
+
+::: pf-proof
+Steps [#t1]{.pf-ref} and [#c-shrink]{.pf-ref} show that $X$ is $T_1$ and that every basis neighbourhood of a point contains a smaller one whose closure lies inside it, which is regularity for a $T_1$ space (Munkres, Theorem 33.1). For complete regularity, part (b) shows that every continuous $f:X\to\RR$ satisfies $f(a)=f(b)$; so no continuous real-valued function separates the point $a$ from the closed set $\{b\}$, and $X$ is not completely regular.
+:::
+
+:::
+
+:::
+
 :::
