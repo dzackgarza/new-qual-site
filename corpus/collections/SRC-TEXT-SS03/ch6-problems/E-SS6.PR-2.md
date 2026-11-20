@@ -27,6 +27,18 @@ audit:
     analytic on $\operatorname{Re}(s)>0$ minus $s=1$ by the uniform convergence already proved, that
     the domain is connected and meets $\operatorname{Re}(s)>1$, and that $s=1$ is excluded because
     both sides have a simple pole there. Not checked: nothing else; the item carries no hint.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance sentence added, which the card lacked: a published solution of this Problem is Wang
+    Zirui, *Complete Solutions for Chapter 6*, in the public repository
+    `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, read at its Problem 2 and
+    checked against Chapter 6, Problem 2: it integrates the counting function $\lfloor x\rfloor=x-\{x\}$
+    by parts, giving $\zeta(s)=s\int_1^\infty\lfloor x\rfloor x^{-s-1}dx=s/(s-1)-s\int_1^\infty\{x\}x^{-s-1}dx$.
+    That is the card's step s1's identity; the card's later steps supply the uniform convergence and
+    the continuation that the published text compresses. Not checked: anything in that document
+    outside its Problem 2.
 ---
 
 ::: {.exercise}
@@ -42,6 +54,7 @@ The book marks this problem with an asterisk (Chapter 6, Problem 2). Both sides 
 :::
 
 ::: {.solution}
+A published solution of this Problem is Wang Zirui, *Complete Solutions for Chapter 6* (Problem 2), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`: it integrates the counting function $\lfloor x\rfloor=x-\{x\}$ by parts, which gives $\zeta(s)=s\int_1^\infty\lfloor x\rfloor x^{-s-1}\,dx=\frac{s}{s-1}-s\int_1^\infty\{x\}x^{-s-1}\,dx$ on $\Re(s)>0$. The steps below follow that route and supply the convergence and continuation detail it compresses; the audit trail records the comparison.
 
 ::: pf
 
