@@ -52,8 +52,7 @@ Let $(X,\mu)$ be a measure space and $1\leq p\leq\infty$.
 
 ## Density and duality arguments
 
-If $\Phi,\Psi\colon L^p\to Y$ are continuous maps into a metric space $Y$ and $\Phi=\Psi$ on a dense subset of $L^p$, such as $C_c(\RR^d)$ for $1\leq p<\infty$, then $\Phi=\Psi$ on $L^p$.
-For $1\leq p<\infty$ and $f\in L^p$, if $\int fg=0$ for every $g$ in a dense subset of $L^q$, then $f=0$ almost everywhere.
+For $1\leq p<\infty$ every continuous linear functional on $L^p$ is $g\mapsto\int fg$ for one $g\in L^q$ ([[T-5BFVS]]), so two continuous maps on $L^p$ that agree on a dense subset agree on $L^p$, and a function $f\in L^p$ with $\int fg=0$ on a dense subset of $L^q$ has $f=0$ almost everywhere.
 
 [[E-IAQ6D]]
 
