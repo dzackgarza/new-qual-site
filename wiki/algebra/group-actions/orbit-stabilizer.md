@@ -36,11 +36,11 @@ Cauchy's theorem is the converse for prime divisors.
 
 ## Fixed points and nontrivial orbits
 
+::: {.fact title="A finite set is a fixed-point set plus orbits"}
 The orbits partition the set, the orbits of size one are the fixed points, and every other orbit has size $[G:G_x]$, so the size of a finite set is the number of fixed points plus a sum of indices of stabilizers, each of them a divisor of $\size G$ greater than $1$.
+:::
 
-[[L-DJKXL]]
-
-The class equation is this count for the conjugation action of $G$ on itself; see [[algebra/group-actions/the-class-equation|The class equation]].
+For the conjugation action of $G$ on itself that count is the class equation, on [[algebra/group-actions/the-class-equation|The class equation]].
 
 ## Four actions
 
