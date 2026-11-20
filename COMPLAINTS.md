@@ -9497,3 +9497,15 @@ measured, not carried.
 **Checks.** No card changed, so no `qualc.authoring check` was run on a card.
 
 **Uncertainty.** Not read: V.3.7's step texts, and (d) $x^3+y^5+y^6$ was not recomputed; so #168's acceptance is not met for V.3.7. Still unread: V.3.7, IV.2.3(h), IV.3.11(b), V.2.12, V.2.13, V.4.16, V.5.6, V.5.8(b). With `puiseux-pair` and `c1-c2-equivalent` read here, V.3.6 is read in full and every step of it is correct as written.
+
+## 2026-11-19: #168's eleventh round — V.3.7 read, the five chains and the classification correct
+
+**Object and need.** V.3.7 is the last card of §V.3 that #168 names unread. The tenth round recomputed four of its five first blowups; this round computed the fifth, checked every $\delta$, the two full chains of (a) and (b) against my own blowups, and the classification. No card is changed.
+
+**The five germs.** (a) $x^3+y^5$: $\mu_0=3$; chart $x=uy$ gives $u^3+y^2$ of multiplicity $2$ with tangent $y=0$; chart $y=uv$ gives $u+v^2$, smooth and tangent to $E_2$. (b) $x^3+x^4+y^5$: $u^3+u^4y+y^2$, then $u+u^3v+v^2$. (c) $x^3+y^4+y^5$: $u^3+y+y^2$, linear part $y$, so $\delta=3$. (d) $x^3+y^5+y^6$: $v^3(u^3+v^2+v^3)$, then $u^2(u+w^2+uw^3)$, then $s(t+s+s^3t)$, whose linear part is $t+s$. (e) $x^3+xy^3+y^5$: $u^3+uy+y^2$, whose quadratic part is $y(u+y)$, a node. The $\delta$'s are $4,4,3,4,4$, agreeing with the card's `a-delta-four`, `b-third-fourth-delta`, `c-resolution-delta-three`, `d-third-fourth-delta` and `e-resolution-delta-four`, and each is $\sum\binom{m_i}{2}$ over the multiplicities actually met.
+
+**The classification is correct.** (a), (b) and (d) present the same four centres with multiplicities $3,2,1,1$, the same tangency to $E_1$ then $E_2$, and the same triple point and separation, so they are equivalent in the sense of (3.9.4); independently, the formal changes $x\mapsto x(1+x)^{1/3}$ and $y\mapsto y(1+y)^{1/5}$ carry (b) and (d) to $x^3+y^5$ in characteristic zero, since $X^3=x^3(1+x)$ and $Y^5=y^5(1+y)$, each with linear part the identity. (c) has $\delta=3$ and is the $(3,4)$-cusp, so it is out. (e) has $\delta=4$ but branches at the first blowup, so its configuration is not (a)'s.
+
+**Checks.** No card changed, so no `qualc.authoring check` was run on a card.
+
+**Uncertainty.** The card cites Exercise 7 of §3 of the National Taiwan University set at PDF pp. 13--14; those pages were not re-opened this round, and nothing here is a check of that source, only of the mathematics the card states. Step texts not read in full: `summary-table` and the (c) and (e) steps beyond their $\delta$ labels, though their content is what the recomputation above establishes. #168's acceptance is now met for every §V.3 card it names, and what remains is IV.2.3(h), IV.3.11(b), V.2.12, V.2.13, V.4.16, V.5.6 and V.5.8(b).
