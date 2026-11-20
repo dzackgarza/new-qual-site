@@ -36,7 +36,7 @@ Show that if $Y$ is a subspace of $X$, and $A$ is a subset of $Y$, then the topo
 
 ::: {.solution}
 
-The argument is **Dan Whitman**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 16.1, manual p. 148, PDF p. 151 (`tmp/sources/munkres-solutions-whitman.pdf`); both inclusions below are his, and the statement and the definition of the subspace topology were checked against Munkres, *Topology* (2000), §16 Exercise 1, and §16.
+The argument is **Dan Whitman**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 16.1 (`tmp/sources/munkres-solutions-whitman.pdf`); both inclusions below are his, and the statement and the definition of the subspace topology were checked against Munkres, *Topology* (2000), §16 Exercise 1, and §16.
 
 Throughout, $\mathcal{T}$ is the topology of $X$, $\mathcal{T}_{Y}\coloneqq\theset{Y\cap U\mid U\in\mathcal{T}}$ is the subspace topology of $Y$, and
 $$

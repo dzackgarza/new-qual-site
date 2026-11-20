@@ -38,7 +38,7 @@ The quotient $\RR/\ZZ$ is a familiar topological group; what is it?
 
 ::: {.solution}
 
-**Dan Whitman**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise TG.6, manual p. 270, PDF p. 273 (`tmp/sources/munkres-solutions-whitman.pdf`), states the identification but expressly does not prove it ("We shall not show this rigorously as doing so would be tedious"); the argument below is therefore the card's own, and it replaces the card's earlier attribution of the argument to that set. The statement was checked against Munkres, *Topology* (2000), §22 Supplementary Exercise 6, with the definition of a topological group on printed p. 145, Theorem 22.2 and Corollary 22.3, and Theorem 18.4.
+**Dan Whitman**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise TG.6 (`tmp/sources/munkres-solutions-whitman.pdf`), states the identification but expressly does not prove it ("We shall not show this rigorously as doing so would be tedious"); the argument below is therefore the card's own, and it replaces the card's earlier attribution of the argument to that set. The statement was checked against Munkres, *Topology* (2000), §22 Supplementary Exercise 6, with the definition of a topological group on printed p. 145, Theorem 22.2 and Corollary 22.3, and Theorem 18.4.
 
 Throughout, $\ZZ<\RR$ is the subgroup of integers, $\RR/\ZZ$ is the quotient group with the quotient topology, $S^{1}=\theset{z\in\CC\mid\abs{z}=1}$ is the circle group under multiplication, and
 $$
@@ -51,7 +51,7 @@ $$
 $\ZZ$ is a normal subgroup of $(\RR,+)$.
 
 ::: pf-proof
-$\ZZ$ is a subgroup of $(\RR,+)$ under addition, and $(\RR,+)$ is abelian, so $x+h-x=h\in\ZZ$ for every $x\in\RR$ and $h\in\ZZ$; hence $\ZZ$ is normal in the sense of the definition (§22 Supplementary Exercises, printed p. 146) that $x\cdot h\cdot x^{-1}\in\ZZ$.
+$\ZZ$ is a subgroup of $(\RR,+)$ under addition, and $(\RR,+)$ is abelian, so $x+h-x=h\in\ZZ$ for every $x\in\RR$ and $h\in\ZZ$; hence $\ZZ$ is normal in the sense of the definition (§22 Supplementary Exercises) that $x\cdot h\cdot x^{-1}\in\ZZ$.
 :::
 
 :::

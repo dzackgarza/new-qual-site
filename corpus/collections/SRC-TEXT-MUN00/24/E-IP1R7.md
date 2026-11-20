@@ -37,7 +37,7 @@ Show that if $A$ is a countable subset of $\RR^2$, then $\RR^2 - A$ is path conn
 
 ::: {.solution}
 
-The two-line argument is **"positron0802"**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.9 (`tmp/sources/munkres-solutions-positron-ch3.pdf`), and the statement was checked against Munkres, *Topology* (2000), §24 Exercise 9, with Exercise 8(d) on the same page and the definition of path connectedness on printed p. 155. The line count is made explicit below: it does not follow from each line meeting $A$ in at most $\cardinality{A}$ points, since there are uncountably many lines, but from each such line being determined by one point of $A$.
+The two-line argument is **"positron0802"**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.9 (`tmp/sources/munkres-solutions-positron-ch3.pdf`), and the statement was checked against Munkres, *Topology* (2000), §24 Exercise 9, with Exercise 8(d) and the definition of path connectedness in §24. The line count is made explicit below: it does not follow from each line meeting $A$ in at most $\cardinality{A}$ points, since there are uncountably many lines, but from each such line being determined by one point of $A$.
 
 For $p=(p_{1},p_{2})\in\RR^{2}$ and $t\in\RR$ let
 $$

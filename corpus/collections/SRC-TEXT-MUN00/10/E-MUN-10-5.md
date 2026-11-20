@@ -45,7 +45,7 @@ Show the well-ordering theorem implies the choice axiom.
 ::: {.solution}
 The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 10.5** (`tmp/sources/munkres-solutions-whitman.pdf`); the construction is his, and the card adds the bookkeeping that the set obtained is exactly the form the choice axiom asserts for a disjoint family, together with the choice-function form for a general one.
 
-Throughout, $A$ with an order relation is well-ordered when every nonempty subset of $A$ has a smallest element (definition, printed p. 63), and then every subset of $A$ is well ordered in the restricted order (property (1) of §10). The well-ordering theorem is the assertion that every set admits an order relation making it well ordered (§10); the exercise is on printed p. 67.
+Throughout, $A$ with an order relation is well-ordered when every nonempty subset of $A$ has a smallest element (§10, definition), and then every subset of $A$ is well ordered in the restricted order (property (1) of §10). The well-ordering theorem is the assertion that every set admits an order relation making it well ordered (§10); the exercise is.
 
 ::: pf
 

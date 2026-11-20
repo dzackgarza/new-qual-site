@@ -45,7 +45,7 @@ Lemma (Kuratowski). Let $\mathcal A$ be a collection of sets. Suppose that for e
 ::: {.solution}
 The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 11.5** (`tmp/sources/munkres-solutions-whitman.pdf`); the reduction to Zorn's lemma is his, and the observation that the hypothesis forces $\varnothing\in\mathcal{A}$ — which is what makes Zorn's lemma applicable at a nonempty set — is supplied below.
 
-Throughout, a strict partial order $\prec$ on a set is irreflexive and transitive, a subset is simply ordered when any two of its elements are comparable under $\prec$, an upper bound on $B$ is an element $c$ with $b=c$ or $b\prec c$ for every $b\in B$, and a maximal element is an $m$ with $m\prec a$ for no $a$ (definitions). Zorn's Lemma is the assertion that a strictly partially ordered set in which every simply ordered subset has an upper bound has a maximal element (printed p. 70); the exercise is.
+Throughout, a strict partial order $\prec$ on a set is irreflexive and transitive, a subset is simply ordered when any two of its elements are comparable under $\prec$, an upper bound on $B$ is an element $c$ with $b=c$ or $b\prec c$ for every $b\in B$, and a maximal element is an $m$ with $m\prec a$ for no $a$ (definitions). Zorn's Lemma is the assertion that a strictly partially ordered set in which every simply ordered subset has an upper bound has a maximal element (§11); the exercise is.
 
 ::: pf
 

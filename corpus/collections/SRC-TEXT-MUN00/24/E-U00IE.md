@@ -70,7 +70,7 @@ Reversing the order of a simply ordered set exchanges least upper bounds with gr
 :::
 
 ::: {.pf-qed}
-$L$ is a simply ordered set with the least upper bound property and with more than one point, and it is dense by step [](#dense){.pf-ref}; those are the two conditions defining a linear continuum (printed p. 151). So $X\times[0,1)$ in the dictionary order is a linear continuum.
+$L$ is a simply ordered set with the least upper bound property and with more than one point, and it is dense by step [](#dense){.pf-ref}; those are the two conditions defining a linear continuum (§24). So $X\times[0,1)$ in the dictionary order is a linear continuum.
 :::
 
 :::

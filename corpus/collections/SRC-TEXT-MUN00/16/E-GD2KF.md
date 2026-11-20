@@ -37,7 +37,7 @@ If $\mathcal{T}$ and $\mathcal{T}'$ are topologies on $X$ and $\mathcal{T}'$ is 
 
 ::: {.solution}
 
-The argument is **Dan Whitman**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 16.2, manual p. 149, PDF p. 152 (`tmp/sources/munkres-solutions-whitman.pdf`); the claim and both examples are his, with the two checks that each displayed family is a topology added here, and the statement was checked against Munkres, *Topology* (2000), §16 Exercise 2.
+The argument is **Dan Whitman**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 16.2 (`tmp/sources/munkres-solutions-whitman.pdf`); the claim and both examples are his, with the two checks that each displayed family is a topology added here, and the statement was checked against Munkres, *Topology* (2000), §16 Exercise 2.
 
 Throughout, $\mathcal{T}$ and $\mathcal{T}'$ are topologies on $X$ with $\mathcal{T}\subsetneq\mathcal{T}'$, the subset $Y\subset X$ carries the two subspace topologies
 $$
