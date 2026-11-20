@@ -31,6 +31,13 @@ audit:
     combining with the definition of $\wp$ and with $F$ in the same order gives the identity. The
     constant $c=-F(\tau)$ is confirmed by the absence of a constant term in $\wp$. Nothing is left
     in outline.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Asterisk status read from the book: Chapter 9 sets its asterisks before Problems 3 and 4 only,
+    so none stands before Problem 2. The remark records that. Not checked in this pass: the wording
+    of the statement and the argument.
 ---
 
 ::: {.exercise}
@@ -40,6 +47,10 @@ $$
 \frac{1}{\sin^2(\pi(z+m\tau))}
 $$
 for an appropriate constant $c$. In fact, by part (b) of the previous problem, $c=-F(\tau)$, where $F$ is the forbidden Eisenstein series.
+:::
+
+::: {.remark}
+The book sets no asterisk before this problem (Chapter 9, Problem 2).
 :::
 
 ::: {.solution}
