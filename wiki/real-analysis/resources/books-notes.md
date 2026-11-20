@@ -9,24 +9,16 @@ order: 15
 
 ## Textbooks
 
-- Rudin, *Real and complex analysis*.
+- [@Rud74]
 
 - [@SS05]
 
   Chapters 1--3 treat Lebesgue measure, integration, and differentiation on $\RR^d$; Chapters 4--5 treat $L^2$ and Hilbert spaces; Chapter 6 treats abstract measure spaces.
-  $L^p$ spaces for general $p$ are treated in [@Fol99, chap. 6] and, with convexity inequalities, in Lieb and Loss, *Analysis*, Chapter 2.
+  $L^p$ spaces for general $p$ are treated in [@Fol99, chap. 6].
 
 - [@SS03a]
 
   Chapters 2 and 3 treat Fourier series, and Chapter 5 treats the Fourier transform on $\RR$.
-
-- Evans, *Partial differential equations*, Chapter 5 (Sobolev spaces).
-
-- Shiryayev, *Probability*.
-
-- Feller, *An introduction to probability theory and its applications*.
-
-- Durrett, *Probability: theory and examples*.
 
 ## Course notes
 
@@ -34,7 +26,7 @@ order: 15
 
 - [Real analysis course notes](attachments/Real_Analysis_Course_Notes.pdf)
 
-- [Dexter Chua, *Part IB — Analysis II* (Michaelmas 2015)](attachments/cambride_analysis_ii.pdf) -- course notes based on lectures by N. Wickramasekera, covering uniform convergence and continuity, Riemann integration, normed and metric spaces, contraction mappings, and multivariable differentiation.
+- [Dexter Chua, *Part IB -- Analysis II* (Michaelmas 2015)](attachments/cambride_analysis_ii.pdf) -- course notes based on lectures by N. Wickramasekera, covering uniform convergence and continuity, Riemann integration, normed and metric spaces, contraction mappings, and multivariable differentiation.
 
 Homework and exams from UGA Math 8100, as posted by Neil Lyall:
 
