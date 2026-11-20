@@ -42,6 +42,19 @@ audit:
   date: 2026-11-18
   note: >-
     Lamport structure for the quasi-circle, which is what Queue D asks for on this card. The two facts taken from §1.3 Exercise 7 are a step, the Peano-curve reduction of a map from a sphere to a path is a step, the vanishing of the homotopy groups is a step (with the basepoint inside the contracting tree made explicit), non-contractibility is a step, and the exclusion of CW homotopy type is the last. The lift argument is written as an application of the homotopy lifting property with the lift of the terminal constant map, which the prose abbreviated. No retained set covers this exercise; the card now says so. Locators checked: §1.3 Exercise 7 on printed p. 79, Whitehead's theorem (Theorem 4.5) on printed p. 346, the exercise on printed p. 358. No statement repair.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 10 and the two facts it
+    takes from §1.3 Exercise 7, together with Theorem 4.5. The argument is correct as written: a path in
+    the quasi-circle meeting only finitely many of the oscillating arcs lies in a finite tree and so is
+    nullhomotopic through the basepoint placed inside that tree; the Peano-curve reduction handles a
+    general map of a sphere by projecting a nullhomotopy to the quotient; and a lift of the essential
+    map q to RR is forbidden by the lifting criterion, which is the non-contractibility. Contradiction
+    with Whitehead then excludes a CW homotopy type. Four page locators removed from the body, in the
+    opening paragraph, the step citing §1.3 Exercise 7, and the step invoking Theorem 4.5; no
+    mathematics changed.
 ---
 
 ::: {.problem}
@@ -49,7 +62,7 @@ Show the 'quasi-circle' described in Exercise 7 in §1.3 has trivial homotopy gr
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: the Hatcher sets in the checkout reach §4.1 in Proudfoot's Homework #6, which holds exercises 4, 11, 12, 14 and 15 of the section, and in the Proudfoot Homework #4 sheet, which holds none of exercise 10. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.1 Exercise 10, printed p. 358, and it uses the two facts established in the exercise it cites, §1.3 Exercise 7, printed p. 79.
+No retained solution set covers this exercise: the Hatcher sets in the checkout reach §4.1 in Proudfoot's Homework #6, which holds exercises 4, 11, 12, 14 and 15 of the section, and in the Proudfoot Homework #4 sheet, which holds none of exercise 10. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.1 Exercise 10, and it uses the two facts established in the exercise it cites, §1.3 Exercise 7.
 
 Let $Y$ be the quasi-circle of §1.3 Exercise 7, and $q:Y\to S^1$ the quotient map collapsing its vertical segment.
 
@@ -59,7 +72,7 @@ Let $Y$ be the quasi-circle of §1.3 Exercise 7, and $q:Y\to S^1$ the quotient m
 Every path in $Y$ has image in a finite tree contained in $Y$, and $q$ does not lift to $\RR\to S^1$.
 
 ::: pf-proof
-Both are proved in §1.3 Exercise 7, printed p. 79. The oscillating graph has the vertical segment as its only accumulation and a path is compact, so its image misses a neighbourhood of the oscillation in each direction and lies in a finite truncation together with the segment and the joining arc, which is a finite tree. And a lift of $q$ would give a path in $\RR$ joining the two heights that $q$ identifies on the vertical segment, which the lifting criterion forbids because $q$ is essential on that loop.
+Both are proved in §1.3 Exercise 7. The oscillating graph has the vertical segment as its only accumulation and a path is compact, so its image misses a neighbourhood of the oscillation in each direction and lies in a finite truncation together with the segment and the joining arc, which is a finite tree. And a lift of $q$ would give a path in $\RR$ joining the two heights that $q$ identifies on the vertical segment, which the lifting criterion forbids because $q$ is essential on that loop.
 :::
 
 :::
@@ -95,7 +108,7 @@ If $Y$ were contractible then $q:Y\to S^1$ would be nullhomotopic, through a hom
 $Y$ does not have the homotopy type of a CW complex.
 
 ::: pf-proof
-Suppose $Y\simeq K$ with $K$ a CW complex. Then $K$ is weakly equivalent to a point, by step [](#trivial-groups){.pf-ref}: its homotopy groups vanish in all degrees and it is connected. Whitehead's theorem, Theorem 4.5 printed p. 346, applies to CW complexes and makes the map $K\to\ast$ a homotopy equivalence, so $K$ is contractible and then $Y$ is too, contradicting step [](#not-contractible){.pf-ref}. Hence $Y$ has no CW homotopy type: it is weakly contractible but not contractible, which is what the exercise asks.
+Suppose $Y\simeq K$ with $K$ a CW complex. Then $K$ is weakly equivalent to a point, by step [](#trivial-groups){.pf-ref}: its homotopy groups vanish in all degrees and it is connected. Whitehead's theorem, Theorem 4.5, applies to CW complexes and makes the map $K\to\ast$ a homotopy equivalence, so $K$ is contractible and then $Y$ is too, contradicting step [](#not-contractible){.pf-ref}. Hence $Y$ has no CW homotopy type: it is weakly contractible but not contractible, which is what the exercise asks.
 :::
 
 :::
