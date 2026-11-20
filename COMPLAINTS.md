@@ -11535,7 +11535,7 @@ joined by these; no further search of the same places is warranted without a new
 
 **Uncertainty.** Read in the extraction, not on paper: number, lettering, hypotheses and conclusions are confirmed, the printer's spacing and any figure are not.
 
-## 2026-11-21, item: the named retained sets checked for `2.B-4(b)` and `4.A-4`, and the two open re-reads finished
+## 2026-11-20, fourteenth item: the named retained sets checked for `2.B-4(b)` and `4.A-4`, and the two open re-reads finished
 
 **The retained sets, checked one by one.** The sets named for this sweep, and what each holds:
 
