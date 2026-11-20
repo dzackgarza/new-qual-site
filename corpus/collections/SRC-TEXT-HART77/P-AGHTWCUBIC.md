@@ -49,7 +49,7 @@ We say $Y$ is given by the \dfn{parametric representation} $x = t,\ y = t^2,\ z 
 :::
 
 ::: {.solution}
-The argument is the card's own, and it takes the same two steps as the three retained solutions cited in the remark below: **Borcherds, Exercise 1.2, PDF p. 1**, **Park, Exercise 1.2, PDF p. 2**, **Troiani, Exercise 1.2, PDF p. 2**. The exercise is Hartshorne, *Algebraic Geometry*, §I.1 Exercise 1.2, where $k$ is algebraically closed, hence infinite.
+The argument is the card's own, and it takes the same two steps as the three retained solutions cited in the remark below: **Borcherds, Exercise 1.2**, **Park, Exercise 1.2**, **Troiani, Exercise 1.2**. The exercise is Hartshorne, *Algebraic Geometry*, §I.1 Exercise 1.2, where $k$ is algebraically closed, hence infinite.
 
 Put $\mathfrak a=\generators{y-x^2,z-x^3}$ and $Y=\theset{(t,t^2,t^3)\st t\in k}$.
 
@@ -113,7 +113,7 @@ Steps [](#variety){.pf-ref} and [](#dimension){.pf-ref} give the first two asser
 :::
 
 ::: {.remark title="Published solution"}
-Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.2, PDF p. 1, text version `tmp/sources/hartshorne-solutions-borcherds.md`, and Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.2, PDF p. 2, text version `tmp/sources/hartshorne-solutions-park.md`, and William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 1.2, PDF p. 2, text version `tmp/sources/hartshorne-solutions-troiani.md`: all three compute $k[x,y,z]/(y-x^2,z-x^3)\cong k[x]$, conclude that $(y-x^2,z-x^3)$ is radical because $k[x]$ is a domain, and read off $I(Y)$, $A(Y)\cong k[x]$ and $\dim Y=1$; Borcherds states the two results in one line and omits the dimension count.
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.2, text version `tmp/sources/hartshorne-solutions-borcherds.md`, and Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.2, text version `tmp/sources/hartshorne-solutions-park.md`, and William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 1.2, text version `tmp/sources/hartshorne-solutions-troiani.md`: all three compute $k[x,y,z]/(y-x^2,z-x^3)\cong k[x]$, conclude that $(y-x^2,z-x^3)$ is radical because $k[x]$ is a domain, and read off $I(Y)$, $A(Y)\cong k[x]$ and $\dim Y=1$; Borcherds states the two results in one line and omits the dimension count.
 The proof above takes the steps in the opposite order: it proves $I(Y)=(y-x^2,z-x^3)$ first, by reducing modulo that ideal and using that a polynomial vanishing at every $t\in k$ is zero, and then gets $A(Y)\cong k[t]$ and the dimension from the resulting presentation.
 The same reduction is the main step in both, and both identify the quotient with $k[t]$; agree.
 :::
