@@ -25,7 +25,7 @@ This is the half-plane form of [[T-C7GBB]], iterated: the proof is below.
 For $f(z) = (z-1)(z-2)(z-3) = z^3-6z^2+11z-6$ the zeros lie on the line $\RR$, and $f''(z) = 6z-12$ vanishes only at $z=2$, which is the midpoint of $1$ and $3$ and lies in the hull $[1,3]$ of the zeros.
 The corollary with the half-plane $H = \theset{z : \Im z\geq0}$ gives the same thing, and the same argument applies to every $f^{(k)}$ that is nonconstant.
 
-This is the corollary above at $k=2$: its hypothesis holds for $f$ since the zeros $1,2,3$ lie on $\RR\subseteq H$, so $f''$ has its zero at $2$ in $H$, as computed.
+This is the half-plane consequence of [[T-C7GBB]] stated above, at $k=2$: its hypothesis holds for $f$ since the zeros $1,2,3$ lie on $\RR\subseteq H$, so $f''$ has its zero at $2$ in $H$, as computed.
 :::
 
 ::: {.proof}
