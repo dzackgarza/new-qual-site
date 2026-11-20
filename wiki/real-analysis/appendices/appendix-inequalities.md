@@ -9,19 +9,6 @@ order: 23
 
 [[PR-X5D4Z]]
 
-::: {.remark title="Cauchy--Schwarz in coordinates and in $L^2$"}
-For $a,b\in\RR^n$ and for $f,g\in L^2(\RR^n)$, the inequality reads
-$$
-\begin{aligned}
-\left(\sum_{k=1}^{n} a_{k} b_{k}\right)^{2}
-&\leq\left(\sum_{k=1}^{n} a_{k}^{2}\right)\left(\sum_{k=1}^{n} b_{k}^{2}\right), \\
-\abs{\int_{\RR^{n}} f(x) \overline{g(x)} \dx}^{2}
-&\leq \int_{\RR^{n}}\abs{f(x)}^{2} \dx \int_{\RR^{n}}\abs{g(x)}^{2} \dx.
-\end{aligned}
-$$
-
-:::
-
 [[PR-IJOPU]]
 
 [[PR-7BGSE]]
@@ -33,7 +20,7 @@ $$
 [[T-5AALA]]
 
 ::: {.remark title="Parseval's identity for Fourier series"}
-For $f\in L^2(-\pi,\pi)$ and the orthonormal basis $\theset{e^{ikx}/\sqrt{2\pi}}_{k\in\ZZ}$, Parseval's identity reads
+For the orthonormal basis $\theset{e^{ikx}/\sqrt{2\pi}}_{k\in\ZZ}$ of $L^2(-\pi,\pi)$, Parseval's identity ([[T-5AALA]]) reads
 $$
 {1\over 2\pi} \int_{(-\pi, \pi)} \abs{f}^2 = \sum_{k\in \ZZ} \abs{c_k}^2, \qquad c_k \coloneqq {1\over 2\pi } \int_{(-\pi, \pi)} f(x) e^{-ikx} \dx.
 $$
@@ -55,19 +42,6 @@ Together with the case $1\leq p<\infty$, Minkowski's inequality is the triangle 
 :::
 
 [[PR-2C3SZ]]
-
-::: {.remark title="Special cases of Young's convolution inequality"}
-For conjugate exponents $p,q$ and $1\leq p\leq\infty$,
-$$
-\begin{aligned}
-\norm{f\ast g}_1      & \leq \norm{f}_1 \norm{g}_1, \\
-\norm{f\ast g}_p      & \leq \norm{f}_1 \norm{g}_p, \\
-\norm{f\ast g}_\infty & \leq \norm{f}_p \norm{g}_q, \\
-\norm{f\ast g}_\infty & \leq \norm{f}_2 \norm{g}_2.
-\end{aligned}
-$$
-
-:::
 
 ## Elementary inequalities
 
