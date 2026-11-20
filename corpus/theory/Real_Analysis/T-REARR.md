@@ -20,5 +20,7 @@ Then there is a rearrangement $\sum_n a'_n$ of $\sum_n a_n$, with partial sums $
 $$
 \liminf_{n\to\infty} s'_n = \alpha, \qquad \limsup_{n\to\infty} s'_n = \beta .
 $$
-Taking $\alpha=\beta=x$ gives a rearrangement converging to $x$; the two limits are the extremes of the set of values of the convergent rearrangements.
+
+This is [@Rud76, Theorem 3.54].
+Taking $\alpha=\beta=x$ gives a rearrangement that converges to $x$, so the sum of a conditionally convergent series is a property of the order of its terms.
 :::
