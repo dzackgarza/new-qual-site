@@ -55,6 +55,19 @@ audit:
     retained scan, printed pp. 341--343, not PDF pp. 359--363; PDF p. 359 is printed p. 340 and
     PDF p. 363 is the Appendix B title page. This item was not otherwise re-read in this pass, and it
     carries no asterisk -- the print's Appendix A mark is before Problem 5 only.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Citation corrected on the reader's report. The solution's opening sentence cited Chapter 6,
+    Lemma 1.2 for $\Gamma(m+1)=\int_0^\infty e^{-t}t^m\,dt$; that lemma states the recursion
+    $\Gamma(s+1)=s\Gamma(s)$ and its consequence $\Gamma(n+1)=n!$, and carries no integral. Read
+    again in the retained book, the integral formula is Chapter 6, equation (1),
+    $\Gamma(s)=\int_0^\infty e^{-t}t^{s-1}\,dt$ for $s>0$, at $s=m+1$, together with Chapter 6,
+    Proposition 1.1, which states that $\Gamma$ extends analytically to $\Re(s)>0$ and is still given
+    there by the integral formula (1). The citation now names those two. The citation of Lemma 1.2
+    inside the final step stands: that step applies the recursion, which is what the lemma states.
+    The mathematics of the argument is unchanged and was not re-read in this pass.
 ---
 
 ::: {.exercise}
@@ -83,7 +96,7 @@ Appendix A sets its asterisk before Problem 5 only, so none stands before this p
 
 ::: {.solution}
 This is Problem 1 of Section 5 of Appendix A of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`; the statement below is its wording.
-Throughout, $\eta\in C^\infty(\RR)$ is supported in a finite interval $[-b,b]$ with $b>0$, and $\eta=1$ on $(-a,a)$ for some $0<a\le b$; put $\chi=1-\eta$, so that $\chi\equiv 0$ on $(-a,a)$ and $\chi\equiv 1$ on $(b,\infty)$. We write $s^{-m-1}$ for the branch of the power on $\CC\setminus(-\infty,0]$ that is positive on $(0,\infty)$, and $\Gamma$ for Euler's gamma function, so that $\Gamma(m+1)=\int_0^\infty e^{-t}t^m\,dt$ for $m>-1$ (Chapter 6, Lemma 1.2). Since $N>0$ is arbitrary, it suffices to prove, for each integer $n\ge 1$, the estimate $O(\abs{s}^{-n})$ with a constant depending only on $m$, $n$ and $\eta$; the assertion for a given $N$ then follows with $n=\max(1,\lceil N\rceil)$. All estimates below are uniform for $\Re(s)\ge 0$ and $\abs{s}\ge 1$, and $s\ne 0$.
+Throughout, $\eta\in C^\infty(\RR)$ is supported in a finite interval $[-b,b]$ with $b>0$, and $\eta=1$ on $(-a,a)$ for some $0<a\le b$; put $\chi=1-\eta$, so that $\chi\equiv 0$ on $(-a,a)$ and $\chi\equiv 1$ on $(b,\infty)$. We write $s^{-m-1}$ for the branch of the power on $\CC\setminus(-\infty,0]$ that is positive on $(0,\infty)$, and $\Gamma$ for Euler's gamma function, so that $\Gamma(m+1)=\int_0^\infty e^{-t}t^m\,dt$ for $m>-1$ (Chapter 6, equation (1) and Proposition 1.1). Since $N>0$ is arbitrary, it suffices to prove, for each integer $n\ge 1$, the estimate $O(\abs{s}^{-n})$ with a constant depending only on $m$, $n$ and $\eta$; the assertion for a given $N$ then follows with $n=\max(1,\lceil N\rceil)$. All estimates below are uniform for $\Re(s)\ge 0$ and $\abs{s}\ge 1$, and $s\ne 0$.
 
 ::: pf
 
