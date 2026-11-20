@@ -25,10 +25,14 @@ Let $X$ be a projective scheme over $\CC$ and $X^{an}$ its associated complex an
 1. For every coherent sheaf $\mathcal{F}$ on $X$, the natural maps $H^i(X, \mathcal{F}) \to H^i(X^{an}, \mathcal{F}^{an})$ are isomorphisms, where $\mathcal{F}^{an} = h^* \mathcal{F}$.
 
 2. The functor $\mathcal{F} \mapsto \mathcal{F}^{an}$ is an equivalence from coherent $\OO_X$-modules to coherent analytic sheaves on $X^{an}$.
+
+[@Har77, Appendix B, Theorem 2.1]
 :::
 
 ::: {.corollary title="Chow's theorem"}
 A closed analytic subspace of $\PP^n(\CC)$ is algebraic, and a holomorphic map between projective varieties is a morphism.
+
+[@Har77, Appendix B, Theorem 2.2]
 :::
 
 ::: {.example}

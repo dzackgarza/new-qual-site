@@ -60,5 +60,5 @@ It carries the invertible sheaf $\OO(1)$ obtained by gluing the sheaves $\OO_{\P
 ::: {.remark}
 For $X = \Spec A$ affine, $\operatorname{\mathbf{Proj}}_X \mathcal{S} = \Proj \mathcal{S}(X)$.
 For $\mathcal{S} = \operatorname{Sym}^\bullet \OO_X^{\oplus(n+1)}$ it is $\PP^n_X$.
-A morphism $Y \to X$ isomorphic over $X$ to $\operatorname{\mathbf{Proj}}_X \mathcal{S}$, for such an $\mathcal{S}$ with $\mathcal{S}_1$ of finite type, is projective in the sense of EGA; when $X$ is affine this agrees with the definition in [[D-MORPROJ]] by a closed immersion into $\PP^n_X$.
+A morphism $Y \to X$ isomorphic over $X$ to $\operatorname{\mathbf{Proj}}_X \mathcal{S}$, for such an $\mathcal{S}$ with $\mathcal{S}_1$ of finite type, is projective [@Vak25, Definition 17.3.1]; this is the form of the definition EGA II, Définition 5.5.2 gives, whose Proposition 5.5.1 is the equivalent embedding into a projective bundle. When the base admits an ample invertible sheaf, in particular when $X$ is affine, it agrees with the definition in [[D-MORPROJ]] by a closed immersion into $\PP^n_X$ [@Vak25, Exercise 17.3.A(c)].
 :::

@@ -107,11 +107,11 @@ The [course page](https://math.berkeley.edu/~reb/courses/256A/) has solutions to
 
 ### Course notes and exam papers
 
-- [Yujiro Kawamata, Introduction to the Minimal Model Problem](/assets/attachments/Kawamata%20Intro%20MMP.pdf): lecture notes on the minimal model program.
+- [Kawamata, Matsuda and Matsuki, *Introduction to the Minimal Model Problem*](assets/algebraic-geometry/resources/Kawamata%20Intro%20MMP.pdf): an introduction to the minimal model program.
 
-- [Cambridge Tripos Part III Algebraic Geometry Collection](/assets/attachments/Algebraic%20Geometry%20All%20Tripos.pdf): examination problems and course material.
+- [Cambridge Part II Algebraic Geometry papers](assets/algebraic-geometry/resources/Algebraic%20Geometry%20All%20Tripos.pdf): the Tripos papers by year.
 
-- [UW Spring 2016 Introduction to Algebraic Geometry](/assets/attachments/iag.pdf): lecture notes from affine varieties through schemes.
+- [Kovács, *Introduction to Algebraic Geometry* (Washington, 2016), transcribed by Swanson](assets/algebraic-geometry/resources/iag.pdf): lecture notes from affine varieties through schemes.
 
 - [Cambridge Part III past papers](https://www.maths.cam.ac.uk/postgrad/part-iii/pastpapers/2016/index.html): examination papers by year.
 
@@ -126,15 +126,15 @@ The [course page](https://math.berkeley.edu/~reb/courses/256A/) has solutions to
 
 ### Foundational texts: links to editions and scans
 
-- [Grothendieck, *Fondements de la Géométrie Algébrique* (FGA)](http://www.math.jussieu.fr/~leila/grothendieckcircle/FGA.pdf)
+- [Grothendieck, *Fondements de la géométrie algébrique* (FGA)](https://web.archive.org/web/20121109150626/http://www.math.jussieu.fr/~leila/grothendieckcircle/FGA.pdf): the collected Bourbaki exposés.
 
-- [Grothendieck and Dieudonné, *Éléments de géométrie algébrique* (EGA), reference page](http://en.wikipedia.org/wiki/Elements%20de%20geometrie%20algebrique)
+- [Grothendieck and Dieudonné, *Éléments de géométrie algébrique* (EGA), II](https://www.numdam.org/item/PMIHES_1961__8__5_0/): Définition 5.5.2 states projectivity, Proposition 5.5.1 its equivalent form as a closed immersion into a projective bundle, and Théorème 5.6.1 is Chow's lemma.
 
-- [*Séminaire de Géométrie Algébrique du Bois Marie* (SGA)](http://modular.fas.harvard.edu/sga/sga/)
+- [*Séminaire de géométrie algébrique du Bois Marie* (SGA)](https://web.archive.org/web/20100909013636/http://modular.fas.harvard.edu:80/sga/sga/): the seminar volumes, listed by number.
 
-- [Serre, *Géométrie algébrique et géométrie analytique* (GAGA)](http://www.numdam.org/item?id=AIF_1956__6__1_0), and an [English translation](http://www.math.mcmaster.ca/~arnoldt/Serre-GAGA.dvi)
+- [Serre, *Géométrie algébrique et géométrie analytique* (GAGA)](https://www.numdam.org/item?id=AIF_1956__6__1_0): the comparison of coherent algebraic and analytic sheaves on a projective scheme over $\CC$, with the isomorphisms on cohomology, which Hartshorne states as Theorem 2.1 of Appendix B [@Har77, Appendix B, Theorem 2.1].
 
-- Serre, *Faisceaux algébriques cohérents* [@Ser55]; English translation: [fac.pdf](http://students.mimuw.edu.pl/~pta/fac/fac.pdf).
+- Serre, *Faisceaux algébriques cohérents* [@Ser55].
 
 ### Lecture notes
 
@@ -176,21 +176,19 @@ The [course page](https://math.berkeley.edu/~reb/courses/256A/) has solutions to
 
 - [Alper, University of Washington Math 582C](https://sites.math.washington.edu/~jarod/math582C.html): course page on stacks and moduli.
 
-- Olsson, *Algebraic Spaces and Stacks*, American Mathematical Society Colloquium Publications 62 (2016).
+- [Edidin, "What is a stack?"](http://www.ams.org/notices/200304/what-is.pdf)
 
-- [Edidin, "What is a stack?"](http://www.ams.org/notices/200304/what-is.pdf), *Notices of the AMS* 50 (2003).
+- [Edidin, "Equivariant geometry and the cohomology of the moduli space of curves"](https://arxiv.org/abs/1006.2364): the integral cohomology of a stack, its equivariant description for quotient stacks, and the rational comparison with the cohomology of the coarse moduli space, for smooth and stable curves.
 
-- [Edidin, "Equivariant geometry and the cohomology of the moduli space of curves"](https://arxiv.org/abs/1006.2364).
+- [Edidin, "Notes on the construction of the moduli space of curves"](https://arxiv.org/abs/math/9805101): the moduli problem for curves, the stack of stable curves as a smooth Deligne--Mumford stack proper over $\Spec \ZZ$, and the use of geometric invariants in constructing the moduli space.
 
-- [Edidin, "Notes on the construction of the moduli space of curves"](https://arxiv.org/abs/math/9805101).
+- [Fantechi, "Stacks for everybody"](http://www.mathematik.uni-bielefeld.de/~rehmann/ECM/cdrom/3ecm/pdfs/pant3/fantechi.pdf)
 
-- [Fantechi, "Stacks for everybody"](http://www.mathematik.uni-bielefeld.de/~rehmann/ECM/cdrom/3ecm/pdfs/pant3/fantechi.pdf), European Congress of Mathematics (2000).
+- [Mumford, "Picard groups of moduli problems"](http://www.mathcs.emory.edu/~brussel/Scans/mumfordpicard.pdf), with Litt's exposition in two parts: [part I](https://www.daniellitt.com/s/picardI.pdf) constructs quotient stacks and computes the line bundles on a classifying stack, and [part II](https://www.daniellitt.com/s/picardII.pdf) computes the Picard group of the moduli stack of elliptic curves.
 
-- [Mumford, "Picard groups of moduli problems"](http://www.mathcs.emory.edu/~brussel/Scans/mumfordpicard.pdf), with Litt's exposition in two parts: [part I](http://math.stanford.edu/~dlitt/exposnotes/picardI.pdf), [part II](http://math.stanford.edu/~dlitt/exposnotes/picardII.pdf).
+- [Vistoli, "Notes on Grothendieck topologies, fibered categories and descent theory"](https://arxiv.org/abs/math/0412512): an introduction to descent theory, from Grothendieck topologies through fibered categories to stacks.
 
-- [Vistoli, "Notes on Grothendieck topologies, fibered categories and descent theory"](https://arxiv.org/abs/math/0412512).
-
-- [Lecture notes on stacks](https://stacky.net/files/written/Stacks/Stacks.pdf), hosted at stacky.net.
+- [Olsson, Berkeley Math 274 notes on stacks, written up by Geraschenko](https://stacky.net/files/written/Stacks/Stacks.pdf): Grothendieck topologies, descent, algebraic spaces and fibered categories.
 
 ### Problem sets
 
