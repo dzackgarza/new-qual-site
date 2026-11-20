@@ -24,5 +24,5 @@ where $a = u\,p_1^{e_1}\cdots p_k^{e_k}$ is the factorization of a generator $a$
 :::
 
 ::: {.remark}
-Part (b) of that exercise identifies the primary ideals of a principal ideal domain as the ideals $\generators{p^n}$ with $p$ prime, part (c) says that for distinct primes $p_1,\ldots,p_k$ the product $\generators{p_1^{e_1}}\cdots\generators{p_k^{e_k}}$ equals the intersection $\bigcap_i\generators{p_i^{e_i}}$, and part (d) says that every proper ideal is an intersection of finitely many primary ideals, unique up to order.
+Part (b) of that exercise identifies the primary ideals of a principal ideal domain as the ideals $\generators{p^n}$ with $p$ prime, together with the zero ideal, part (c) says that for distinct primes $p_1,\ldots,p_k$ the product $\generators{p_1^{e_1}}\cdots\generators{p_k^{e_k}}$ equals the intersection $\bigcap_i\generators{p_i^{e_i}}$, and part (d) says that every proper ideal is an intersection of finitely many primary ideals, unique up to order.
 :::
