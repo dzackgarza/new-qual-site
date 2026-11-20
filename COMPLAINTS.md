@@ -1002,8 +1002,15 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    and the sequence would split, making every $\pi_i(S^n)$ a direct sum of lower ones inductively; that would
    leave them free abelian, contradicting the torsion these groups are known to carry.
 
-   Remaining unread in this item's set: §4.2 (8 more, incl. -5 and -29), §4.3 (24) --- 33 proofs. Split
-   corrected: this chat takes §4.2 and §4.3; the #163 chat hyl0 takes §3.F and §4.1.
+   **Split of the remainder, 2026-11-19, as the owner last stated it.** The #163 chat hyl0 takes every
+   remaining §4.2 card --- `-5`, `-17`, `-21`, `-25`, `-27`, `-29`, `-32` and `-33` --- and §3.F and §4.1;
+   this chat takes the whole of §4.3, twenty-four cards, each read step by step against Hatcher and against
+   a cited published solution where one exists, repaired or recorded read. §4.D was assigned to hyl0 in the
+   previous statement of the split and then withdrawn from this chat's list as well; it is not in this
+   item's set, which never listed it.
+
+   Remaining unread in this item's set: §4.3 (24) --- 33 proofs overall, of which §4.2's eight belong to
+   the other chat.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
