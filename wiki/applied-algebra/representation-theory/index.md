@@ -37,10 +37,11 @@ The remaining entries are then determined by the column orthogonality relations,
 
 ## Induced representations, the symmetric group, and indicators
 
-For $H\leq G$, a character $\psi$ of $H$, and a character $\chi$ of $G$, Frobenius reciprocity gives
+For $H\leq G$, a character $\psi$ of $H$, and a character $\chi$ of $G$, [[P-SJBKE|Frobenius reciprocity]], the adjunction $\Hom_{R[G]}(\Indcat_H^GV,W)\cong\Hom_{R[H]}(V,\Res_H^GW)$, gives the character form
 $$
 \inner{\Indcat_H^G \psi}{\chi}_G = \inner{\psi}{\Res^G_H\chi}_H,
 $$
+since by [[T-YHH3M|Schur's lemma]] and the orthogonality relations the inner product of a character with an irreducible character is the dimension of the corresponding Hom space, and both sides are linear in $\chi$,
 so characters of $G$ are obtained by inducing characters of subgroups and decomposing the result.
 
 The irreducible representations of $S_n$ are indexed by the partitions of $n$, their characters are computed by the Murnaghan--Nakayama rule, and their dimensions by [[T-HOOK|the hook length formula]]; see [[applied-algebra/symmetric-functions/index|Symmetric functions]].

@@ -16,7 +16,7 @@ Throughout, $A$ is a complex $n\times n$ matrix, $A^*$ is its conjugate transpos
 
 ## Classes of matrices
 
-The adjoint, symmetric, Hermitian, orthogonal, and unitary matrices are defined on [[D-DVLK5|adjoint, symmetric, Hermitian, orthogonal, and unitary matrices]].
+The adjoint, symmetric, Hermitian, orthogonal, unitary, positive definite, and normal matrices are defined on [[D-DVLK5|adjoint, symmetric, Hermitian, orthogonal, unitary, positive definite, and normal matrices]].
 A Hermitian matrix has real eigenvalues, and eigenvectors for distinct eigenvalues are orthogonal ([[T-WQHMA|the spectral theorem for Hermitian and real symmetric matrices]]); a matrix is unitarily diagonalizable if and only if it is normal, [[T-SPRTR|which characterises the normal matrices]].
 
 ## Factorizations
