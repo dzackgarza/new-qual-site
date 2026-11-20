@@ -71,7 +71,7 @@ title: Objects and theorems of algebraic topology
 
 - [[D-HOCNK|Homotopy lifting property]]
 
-- [[D-SI6OM|Deck transformations]]
+- [[D-4VGAW|Deck transformations]]
 
 - [[D-6BK54|The action of the fundamental group on fibers]]
 

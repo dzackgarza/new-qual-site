@@ -203,7 +203,7 @@ $T^2$ and $S^2 \vee S^1 \vee S^1$ have isomorphic cohomology groups, and they ar
 
 [[D-MMDM3]]
 
-[[D-SI6OM]]
+[[D-4VGAW]]
 
 [[D-6UHU7]]
 
