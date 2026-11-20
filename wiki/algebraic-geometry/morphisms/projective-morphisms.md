@@ -33,7 +33,7 @@ Everything said about projectivity over a field therefore applies fibrewise over
 
 [[D-MORPROJ]]
 
-Properness of a projective morphism is a composition of three facts: a closed immersion is proper, properness is stable under composition, and $\PP^N_\ZZ\to\Spec\ZZ$ is universally closed by elimination theory — given a closed subset of $\PP^N_Y$ defined by homogeneous equations, the locus of $y$ where it meets the fibre is closed because it is cut out by the coefficients of the resultant of those equations.
+A projective morphism of noetherian schemes is proper [@Har77, Theorem II.4.9].
 The converse fails: a nonsingular complete threefold over $\CC$ that admits no embedding in any projective space exists [@Har77, Appendix B, Example 3.4.1].
 
 ## Ample and very ample sheaves
