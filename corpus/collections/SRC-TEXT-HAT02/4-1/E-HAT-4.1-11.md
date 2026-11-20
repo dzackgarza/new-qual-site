@@ -55,6 +55,22 @@ audit:
     proudfoot-634-hw6.md`, solves it on p. 1. The rendered sentence now cites both and says what
     the card adds. Found by screening the residue's absence claims against the solution sets
     inventoried in `wiki/topology/resources/solutions.md`; no step of the proof changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 11, printed p. 358,
+    Proposition A.1 (printed p. 520) for compact images, and Theorem 4.5 for Whitehead. Repair: step
+    `groups` concluded pi_n(X) = 0 from a nullhomotopy, but step `null` produces only a free one, and
+    the passage from a free nullhomotopy of a based map to a vanishing based class is not free when
+    n >= 1. The step now runs that passage: the change-of-basepoint isomorphism beta_gamma, taken along
+    the path the nullhomotopy traces at the basepoint, sends [f] to the class of a constant map, and
+    X is path-connected by step `path`, so [f] = 0. The remaining steps are unchanged and correct: the
+    two points of `path` meet in a common X_k and the nullhomotopy of X_k -> X_{k+1} supplies both
+    paths to one point; `finite` is Proposition A.1 plus the finiteness of the cells and the
+    increasingness of the sequence; `null` composes the nullhomotopy of the inclusion; `whitehead`
+    applies Theorem 4.5 to X -> *. The examples stand: Y -> Sigma Y factors through the cone CY.
+    Not checked: nothing recomputed; no retained solution set was re-read in this pass.
 ---
 
 ::: {.problem}
@@ -101,7 +117,7 @@ $f$ is the composite $S^n\to X_i\hookrightarrow X$. The inclusion $X_i\hookright
 $\pi_n(X)=0$ for all $n\ge1$, and $\pi_0(X)$ is a point.
 
 ::: pf-proof
-Every element of $\pi_n(X)$ is represented by a based map $S^n\to X$ with $n\ge1$, which is nullhomotopic by steps [](#finite){.pf-ref} and [](#null){.pf-ref}, so every element is the identity. $\pi_0(X)$ is a point by step [](#path){.pf-ref}.
+Every element of $\pi_n(X)$ is represented by a based map $S^n\to X$ with $n\ge1$, and steps [](#finite){.pf-ref} and [](#null){.pf-ref} produce a free nullhomotopy of it. That suffices: if $H$ is such a nullhomotopy and $\gamma(t)=H(s_0,t)$ is the path it traces at the basepoint, then the change-of-basepoint map sends $[f]$ to the class of a constant map, and $\beta_\gamma$ is an isomorphism, so $[f]=0$ and every element is the identity. $\pi_0(X)$ is a point by step [](#path){.pf-ref}.
 :::
 
 :::
