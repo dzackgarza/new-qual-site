@@ -321,6 +321,19 @@ audit:
     Not checked: the body of Kaji 1986, unchanged, the citation resting on Fukasawa,
     arXiv:2108.00650v3, section 1.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Citation form, on the rule that a card cites a numbered statement rather than a page (#184).
+    Every reference in this card's statement, remarks and steps is now carried by its numbered
+    statement: Exercise IV.6.7; the definition of multisecant in IV.3 with Proposition IV.3.7;
+    Proposition IV.3.1; Exercise IV.3.4(a) and (b); Exercise IV.3.6(b); Theorem IV.6.4;
+    Proposition II.7.3; Example II.8.20.3; and Fukasawa, arXiv:2108.00650v3, section 1, for the
+    Kaji restatement. No page, PDF page or page offset appears in the card's text. The page
+    locators that the events of 2026-11-01, 2026-11-02 and 2026-11-19 carry are records of those
+    passes and are left as written (QUAL-11); this event is the card's statement of the form its
+    citations now take. No mathematical claim changed in this pass.
 ---
 
 ::: {.problem}
@@ -886,5 +899,5 @@ form.
 :::
 
 ::: {.remark}
-The exercise stands on printed p. 355 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$, and it is printed without qualification: "The line, the conic, the twisted cubic curve and the elliptic quartic curve in $\PP^3$ have no multisecants.  Every other curve in $\PP^3$ has infinitely many multisecants."  Two qualifications are needed, and the statement above carries both.  In characteristic $p\ge3$ the second sentence is false: the graph of Frobenius of degree $p+1$ on a smooth quadric surface is a smooth nonplanar curve through which no line passes meeting it in three distinct points, and the last step proves this.  The second sentence also fails for singular curves in characteristic zero: the rational quartic $X$ parametrized by $[s:t]\mapsto[s^4:s^2t^2:s^3t:t^4]$ is $Q_1\cap Q_2$ for $Q_1=X_0X_3-X_1^2$ and $Q_2=X_1X_3-X_2^2$, so it is integral, nonplanar and of degree $4$, and it is singular at $[1:0:0:0]$, where the gradient of $Q_2$ vanishes; it has no multisecants, since a trisecant would meet each quadric in three distinct points, hence lie on both, hence lie in $X$, impossible for a line contained in a curve of degree $4$; and it is neither the twisted cubic nor the elliptic quartic.  Neither qualification is an addition to the printed exercise as the book intends it, since the Terminology reserves the word curve, in Chapter IV, for a nonsingular projective curve: characteristic zero is the one hypothesis this card adds, and the printed hint, projection from a point of the curve to $\PP^2$, is the route the proof takes.
+The exercise is Hartshorne, Exercise IV.6.7, printed without qualification: "The line, the conic, the twisted cubic curve and the elliptic quartic curve in $\PP^3$ have no multisecants.  Every other curve in $\PP^3$ has infinitely many multisecants."  Two qualifications are needed, and the statement above carries both.  In characteristic $p\ge3$ the second sentence is false: the graph of Frobenius of degree $p+1$ on a smooth quadric surface is a smooth nonplanar curve through which no line passes meeting it in three distinct points, and the last step proves this.  The second sentence also fails for singular curves in characteristic zero: the rational quartic $X$ parametrized by $[s:t]\mapsto[s^4:s^2t^2:s^3t:t^4]$ is $Q_1\cap Q_2$ for $Q_1=X_0X_3-X_1^2$ and $Q_2=X_1X_3-X_2^2$, so it is integral, nonplanar and of degree $4$, and it is singular at $[1:0:0:0]$, where the gradient of $Q_2$ vanishes; it has no multisecants, since a trisecant would meet each quadric in three distinct points, hence lie on both, hence lie in $X$, impossible for a line contained in a curve of degree $4$; and it is neither the twisted cubic nor the elliptic quartic.  Neither qualification is an addition to the printed exercise as the book intends it, since the Terminology reserves the word curve, in Chapter IV, for a nonsingular projective curve: characteristic zero is the one hypothesis this card adds, and the printed hint, projection from a point of the curve to $\PP^2$, is the route the proof takes.
 :::
