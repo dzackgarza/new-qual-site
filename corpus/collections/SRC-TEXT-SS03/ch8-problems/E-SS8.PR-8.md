@@ -75,7 +75,7 @@ $$
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 8, Problem 8, printed p. 259).
+The book marks this problem with an asterisk (Chapter 8, Problem 8).
 :::
 
 ::: {.solution}
