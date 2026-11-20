@@ -51,6 +51,14 @@ audit:
     finite intersection of the singletons' balls. The exercise is Theorem 46.7 as printed.
     Citation by number: §46 Exercise 3 (Theorem 46.7).
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Correction to this card's event of the same date: the exercise is §46 Exercise 2, as the
+    collection index records (§46.2) and as the retained text has it, not Exercise 3. The
+    mathematics of that event is unaffected.
+
 ---
 
 ::: {.exercise}
