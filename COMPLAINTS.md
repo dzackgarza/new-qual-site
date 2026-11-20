@@ -9400,3 +9400,19 @@ the printed book itself. The citation of (2.5) inside 4.4.20(b) was taken from t
 **Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering 1–3 with QED labels on both; the pre-commit card-YAML and schema hook on each commit.
 
 **Not checked.** Neither card has a retained solution set. `E-HK-95-5` uses the spectral theorem for normal operators and `E-HK-95-11` uses Exercise 10's multiplicativity; both are the book's own results and were not re-proved here.
+
+## 2026-11-19: #168's ninth round — six of V.3.6's eight unread steps read, all correct
+
+**Object and need.** The eighth round read V.3.6's Tjurina half and left `analytic-implies-topological`, `topological-type-multiplicity-sequences`, `characteristic-exponents`, `ambient-automorphism-lift`, `automorphism-identifies-resolution-data`, `same-multiplicity-sequence`, `puiseux-pair` and `c1-c2-equivalent` unread. This round read the first six; the last two are not read. No card is changed.
+
+**The chain is sound.** Analytic isomorphism of plane-curve germs is topological equivalence, so every topological invariant is an analytic one (Greuel--Lossen--Shustin, Definition 3.30, printed p. 202, with Hartshorne's $I,5.6.1$ at printed p. 34 the notion the exercise uses); topological equivalence of reduced plane-curve singularities is equality of the system of multiplicity sequences (their Theorem 3.42, printed p. 217, after Brauner and Zariski, with the system defined on printed p. 215); and that system is determined by the characteristic exponents of the branches together with their pairwise intersection numbers (their Proposition 3.41, printed pp. 216--217). The citation of 3.42 is to a statement about topological type, which is what it is, and the analytic step is the one before it.
+
+**`ambient-automorphism-lift` is correct.** An isomorphism $A_f\to A_g$ of complete local rings induces a surjection of two-dimensional cotangent spaces, hence an isomorphism, so lifts $X,Y$ of the images of $x,y$ have linearly independent linear parts; the formal inverse-function theorem makes $x\mapsto X$, $y\mapsto Y$ an automorphism $\Phi$, which carries the principal ideal $(f)$ onto $(g)$, so $\Phi(f)=ug$ with $u$ a unit.
+
+**`automorphism-identifies-resolution-data` is correct.** $\Phi$ fixes $(x,y)$ and identifies the curve ideals, so it induces an isomorphism of the blowups, which are the Proj of the Rees algebra of $(x,y)$; the same construction at each induced isomorphism of completed local rings identifies every later blowup, hence the infinitely near points, the exceptional components, the branch incidences and the multiplicities.
+
+**`same-multiplicity-sequence` is correct.** For $f_1=y^3+x^7$ the lowest term at the origin is $y^3$, so $\mu_0=3$; in the chart $y=vx$ the strict transform is $v^3+u^4$, again of multiplicity $3$, and one more blowup makes it smooth, whence $3,3,1,1,1$ with the two final $1$'s from the blowups needed to separate it from the exceptional curves. For $f_2=y^3+x^5y+x^7$ the monomial $x^5y$ has $3\cdot5+7\cdot1=22>21$, so it lies in the ideal $I$ of Greuel--Lossen--Shustin's Example 3.43.1(a), printed p. 218, which records that every germ $f+g$ with $g\in I$ has that same sequence.
+
+**Checks.** No card changed, so no `qualc.authoring check` was run on a card.
+
+**Uncertainty.** Not read this round: `puiseux-pair` and `c1-c2-equivalent`, the two steps that compute the characteristic exponents of the two germs and match the systems; so #168's acceptance is not yet met for them. V.3.7 is not reached. Still unread: V.3.7, IV.2.3(h), IV.3.11(b), V.2.12, V.2.13, V.4.16, V.5.6, V.5.8(b). The pages of Greuel--Lossen--Shustin were taken as the card quotes them and were not re-opened.
