@@ -16,6 +16,21 @@ audit:
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Part (a) asks for the expansion to be checked by means of the SF package. The solution
+    asserted that the package count had been reproduced by an enumeration and that the
+    package "computes the same expansion"; no package run is possible here, so the solution
+    now states what it actually performs, an independent enumeration of the
+    Littlewood--Richardson tableaux and a hook-content specialisation, and says that the
+    package check the problem asks for is not performed. The Littlewood--Richardson rule is
+    now stated on the theorem card T-LRULR and cited there instead of being restated inside
+    the solution. Checked: the six coefficients by the tableaux listed in the proof step, and
+    the hook-content values 2, 48, 400, 2000, 7350, 21952, 56448 at n = 2,...,8, recomputed
+    from the hook-content formula. Not checked: no run of the SF package; no retained
+    solution set exists for this exercise.
 ---
 
 ::: {.problem}
@@ -28,7 +43,7 @@ Compute the Schur function expansion of $s_{2,2} \times s_{2,1}$ by constructing
 
 ::: {.solution}
 
-No retained solution set covers this exercise: the expansion is the card's own computation, and part (a)'s check has been carried out here by exhaustive enumeration of the Littlewood–Richardson tableaux — the same count the SF package performs — and confirmed independently by hook-content specialisations.
+No retained solution set covers this exercise: the expansion is the card's own computation. Part (a) asks for the expansion to be checked by means of the SF package; the card does not run that package, and what it performs instead is an independent enumeration of the Littlewood--Richardson tableaux together with a hook-content check, which verifies the same expansion by a different route.
 
 ::: pf
 
@@ -36,7 +51,7 @@ No retained solution set covers this exercise: the expansion is the card's own c
 $s_{(2,2)}s_{(2,1)}=\sum_{\lambda\vdash7}c^{\lambda}_{(2,2),(2,1)}s_{\lambda}$, where $c^{\lambda}_{(2,2),(2,1)}$ is the number of semistandard tableaux of skew shape $\lambda/(2,2)$ with content $(2,1)$ whose reverse reading word is a lattice word.
 
 ::: pf-proof
-This is the Littlewood–Richardson rule: for partitions $\mu,\nu$, $s_{\mu}s_{\nu}=\sum_{\lambda}c^{\lambda}_{\mu\nu}s_{\lambda}$, with $c^{\lambda}_{\mu\nu}$ the number of LR skew tableaux of shape $\lambda/\mu$ and content $\nu$ — semistandard, with the Yamanouchi (lattice) condition on the word read right to left along the rows, top to bottom.
+This is [[T-LRULR|the Littlewood--Richardson rule]] with $\mu=(2,2)$ and $\nu=(2,1)$: the coefficient $c^{\lambda}_{\mu\nu}$ counts the semistandard tableaux of skew shape $\lambda/\mu$ and content $\nu$ whose word, read from right to left in each row from the top, is a lattice word.
 :::
 
 :::
@@ -55,7 +70,7 @@ A shape $\lambda\vdash7$ must contain $(2,2)$ with $\lambda/(2,2)$ of size $3$; 
 (a) The expansion is confirmed independently: for every $n=2,\dots,8$ one has $s_{(2,2)}(1^{n})\,s_{(2,1)}(1^{n})=\sum_{\lambda}s_{\lambda}(1^{n})$ over the six listed $\lambda$ and no others.
 
 ::: pf-proof
-Each $s_{\lambda}(1^{n})$ is computed by the hook-content formula $s_{\lambda}(1^{n})=\prod_{(i,j)\in\lambda}\frac{n+j-i}{h(i,j)}$, which is polynomial in $n$. The products and sums agree at $n=2,3,4,5,6,7,8$ — for instance $2,48,400,2000,7350,21952,56448$ on both sides. Agreement at seven distinct values of $n$ for polynomials of degree $7$ forces the identity, so the six coefficients above are right; the SF package computes the same expansion by the same LR count.
+Each $s_{\lambda}(1^{n})$ is computed by the hook-content formula $s_{\lambda}(1^{n})=\prod_{(i,j)\in\lambda}\frac{n+j-i}{h(i,j)}$, which is polynomial in $n$. The products and sums agree at $n=2,3,4,5,6,7,8$ — for instance $2,48,400,2000,7350,21952,56448$ on both sides. The difference of the two sides is a polynomial in $n$ of degree $7$, so agreement at seven values forces it to vanish identically; since the functions $n\mapsto s_{\lambda}(1^{n})$ for $\lambda\vdash7$ are linearly independent, the six coefficients above are the whole expansion. This is the check of (a) that the card performs; the SF package is not run here.
 :::
 
 :::

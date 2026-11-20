@@ -19,6 +19,7 @@ The \dfn{elementary symmetric functions} in $x_1, \ldots, x_n$ are $e_0 \coloneq
 $$
 e_k \coloneqq \sum_{1\leq i_1 < i_2 < \cdots < i_k\leq n} x_{i_1} x_{i_2}\cdots x_{i_k} \in R[x_1, \ldots, x_n], \qquad 1 \leq k \leq n.
 $$
+For a [[D-YTABL|partition]] $\lambda$ one sets $e_\lambda\coloneqq\prod_i e_{\lambda_i}$.
 :::
 
 ::: {.proposition}
