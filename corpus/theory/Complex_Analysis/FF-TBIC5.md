@@ -25,4 +25,6 @@ $$
 d\theta &= \frac{dz}{iz}.
 \end{aligned}
 $$
+
+This is the substitution of [@Ahl73, ch. 4, §5.3, Evaluation of Definite Integrals]: that section replaces an integral in $\theta$ over $[0,2\pi]$ by $-i$ times an integral over $\abs z=1$, displaying $\frac12(z+1/z)$ for $\cos\theta$, $\frac{1}{2i}(z-1/z)$ for $\sin\theta$ and $dz/z$ for $d\theta$, which is the display above with $z=e^{i\theta}$ and $dz=iz\,d\theta$.
 :::
