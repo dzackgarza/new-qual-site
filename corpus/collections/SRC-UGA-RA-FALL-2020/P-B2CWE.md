@@ -61,7 +61,7 @@ $$
 ::: pf
 
 ::: pf-step
-Part (a): Boundedness of $A_\delta f$ in $L^1(\RR)$.
+$\norm{A_\delta f}_{L^1} \le \norm{\varphi}_{L^1}\norm{f}_{L^1}$ for every $\delta > 0$.
 
 ::: pf-proof
 
@@ -134,7 +134,7 @@ Substituting the translation invariance into the double integral leaves $\norm{f
 :::
 
 ::: pf-step
-Part (b): Representation of the error $A_\delta f(x) - \alpha f(x)$.
+$A_\delta f(x) - \alpha f(x) = \int_{\RR} (f(x - \delta z) - f(x))\varphi(z)\,dz$ for every $x$ and every $\delta > 0$.
 
 ::: pf-proof
 
@@ -186,7 +186,7 @@ With $y = \delta z$ one has $dy = \delta\,dz$ and $\delta^{-1}\varphi(\delta^{-1
 :::
 
 ::: pf-step
-Part (b): $L^1$ norm estimate and Dominated Convergence Theorem.
+$\norm{A_\delta f - \alpha f}_{L^1} \to 0$ as $\delta \to 0^+$.
 
 ::: pf-proof
 
