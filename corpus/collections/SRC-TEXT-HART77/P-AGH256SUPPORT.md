@@ -49,6 +49,8 @@ For part (d), use (Ex. 1.20) and (5.8) to show a priori that $\mch^0_Z(\mcf)$ is
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.5.6, printed p. 124. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §5, Exercise 2.5.6, printed p. 51, proves the same two statements: that the support of a section is $V(\operatorname{Ann}m)$, so it is closed, and that the support of a finitely generated module is closed, for which he notes noetherianity is not needed.
+
 Use the [[D-UDIVH|support]] conventions of [[P-AGH2114SUPPORT]] and the [[P-AGH2120SUPPSUBSHEAF|subsheaf of sections with support in a closed set]].
 For $X=\Spec A$ and $\mcf=\widetilde M$, the stalk at $\mathfrak p$ is $M_{\mathfrak p}$ and the sections on $D(f)$ are $M_f$ [@Har77, Proposition II.5.1].
 
