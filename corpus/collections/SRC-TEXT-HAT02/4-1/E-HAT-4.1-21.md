@@ -87,7 +87,7 @@ Thus $\pi_i(X_m^n) \approx \pi_i(X)$ for $m \leq i \leq n$ and all other homotop
 :::
 
 ::: {.solution}
-The exercise is §4.1 Exercise 21, printed p. 359.
+The exercise is §4.1 Exercise 21.
 
 Let $X^n$ be the $n$-th Postnikov stage of $X$, and $X_m$ an $(m-1)$-connected covering of $X$. The two constructions affect disjoint ranges of homotopy groups:
 
