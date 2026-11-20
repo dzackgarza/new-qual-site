@@ -524,6 +524,40 @@ audit:
     qualification is needed. Re-checked and unchanged: the boundary values of $\delta$, the
     agreements at $\partial Q$, the well-definedness families, the extension lemma, the identity
     $\beta_\gamma=(\bar\gamma)_\#$ and the additivity step.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, referee read of this card's own part: well-definedness, the relative homomorphism
+    property, and $\gamma f$ as the transport. Checked first the model, since the whole construction
+    turns on it: Hatcher's printed p. 343, read verbatim, takes $I^{n-1}$ to be the face $s_n=0$ and
+    $J^{n-1}$ to be "the closure of $\partial I^n-I^{n-1}$, the union of the remaining faces" --- so
+    the side walls together with the face $s_n=1$ --- and defines $\pi_n(X,A,x_0)$ by maps
+    $(I^n,\partial I^n,J^{n-1})\to(X,A,x_0)$; the card's step `model` states exactly this, and its
+    later claim that the sum uses a coordinate other than $s_n$ is the book's next sentence. Checked
+    the explicit $\delta$: with $\nu$ the distance of $(s_1,\dots,s_{n-1})$ from
+    $[\varepsilon,1-\varepsilon]^{n-1}$ and $\tau$ that of $s_n$ from $[0,1-\varepsilon]$, both
+    truncated at $1$, $\delta=1-\max(\nu,\tau)$ is $0$ on every remaining face ($\nu=1$ on
+    $\partial I^{n-1}$, $\tau=1$ at $s_n=1$), is $1$ on $\partial Q$ away from $\operatorname{int}B$
+    and on $\partial B$, and runs from $0$ to $1$ across $\Sigma$; so the two clauses of $\gamma f$
+    agree on the interface and $\gamma f(J^{n-1})=\gamma(0)=x_0$, which is the requirement the
+    earlier defective version could not meet. Checked the two independence arguments: the interface
+    $Q\cap S=\partial Q$ is matched by $h(-,u)(J^{n-1})=x_1$ and $f(J^{n-1})=x_1$ on the non-bottom
+    faces and on $\partial B$, and the shell clauses are independent of $u$ or land in $A$ because
+    $\gamma$ and $G$ are paths in $A$; each stage is a map of triples and its $J^{n-1}$ value is the
+    constant $x_0$. Checked the transport lemma against May: $p:E\to A$, evaluation at the cone
+    basepoint, is a fibration with $\pi_n(X,A,a)\cong\pi_0(F_a)$; two lifts of $v$ with the same
+    initial point are joined by a lift of the constant homotopy $v(s)$ prescribed on three sides of
+    the square, and the edge $s=1$ joins $V_1$ to $W_1$ inside $F_{a_1}$. That is a proof of the
+    independence the source asserts, and it needs no extension into $A$. Checked the additivity: the
+    sum in the first coordinate is a map of triples because $s_n$ is the special coordinate, and the
+    two clauses of $W_t$ agree on $s_1=\tfrac12$ because the faces $s_1=0,1$ lie in $J^{n-1}$; hence
+    $v_\#$ is a homomorphism for $n\ge2$, and the identification $\beta_\gamma=(\bar\gamma)_\#$
+    carries it to $\beta_\gamma$. Checked the composition and bijectivity:
+    $\beta_{\gamma\eta}=(\bar\eta\bar\gamma)_\#=(\bar\gamma)_\#(\bar\eta)_\#$, and
+    $\beta_{\bar\gamma}\beta_\gamma$ and $\beta_\gamma\beta_{\bar\gamma}$ are the identity because a
+    path followed by its reverse is homotopic rel endpoints to the constant path, where the transport
+    is the identity. Not claimed: a published solution of Exercise 4.1.7, none located.
 ---
 
 ::: {.problem}
