@@ -141,6 +141,18 @@ audit:
     Lindelöf but not metrizable by Exercise 30.6, hence not locally metrizable by Exercise 34.8;
     and (11) by the transfer of cardinality, $\abs{\RR_\ell^2}=\abs{\RR}$. Not checked: no
     published key to these exercises was located, and none is claimed.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Five steps asserted their claim with no justification and each now carries one: connectedness from the
+    absence of a separation of the image, path connectedness from the composite path, compactness from the
+    pulled-back cover, Lindelöfness from the countable subcover of the pulled-back cover, and the countable
+    dense subset from countability of the image and the inclusion $f(\overline D) \subseteq \overline{f(D)}$.
+    The statements cited are numbered: Theorem 23.5, Theorem 26.5, and the continuity property of closures.
+    No page reference is written in the body of this card or in the event above. The statement is
+    unchanged. The exercise is Supplementary Exercise 3 of Section 36 of Munkres, Topology, and the card
+    records its own survey rather than a transcription.
 ---
 
 ::: {.exercise}
@@ -163,22 +175,47 @@ The five properties (1), (2), (5), (14) and (15) are preserved by continuous map
 
 ::: {.pf-step #pos-1}
 (1) Connectedness: the continuous image of a connected space is connected (Theorem 23.5).
+
+::: pf-proof
+If $f(X) = P \cup Q$ were a separation into disjoint nonempty sets open in the subspace $f(X)$, then $X = f^{-1}(P) \cup f^{-1}(Q)$ would express $X$ as the union of two disjoint nonempty sets open in $X$, because $f$ is continuous; that is a separation of the connected space $X$, a contradiction. So $f(X)$ is connected.
+:::
+
 :::
 
 ::: {.pf-step #pos-2}
 (2) Path connectedness: if $g:X\to Y$ is continuous and $f:[0,1]\to X$ is a path from $x$ to $x'$, then $g\circ f$ is a path from $g(x)$ to $g(x')$ (the remark after Example 5 of §24).
+
+::: pf-proof
+Let $u = g(x)$ and $v = g(x')$ be points of the image. The composite $g \circ f \colon [0,1] \to Y$ is continuous, being a composite of continuous maps, and it satisfies $(g \circ f)(0) = u$ and $(g \circ f)(1) = v$; so it is a path in $f(X)$ joining two arbitrary points of it.
+:::
+
 :::
 
 ::: {.pf-step #pos-5}
 (5) Compactness: the continuous image of a compact space is compact (Theorem 26.5).
+
+::: pf-proof
+Let $\{U_i\}$ be a family of open sets of $Y$ covering $f(X)$. The preimages $f^{-1}(U_i)$ are open in $X$ and cover $X$, since every $x$ has $f(x)$ in some $U_i$; compactness of $X$ gives finitely many indices $i_1, \dots, i_n$ with $X = \bigcup_k f^{-1}(U_{i_k})$, and then $f(X) \subseteq \bigcup_k U_{i_k}$. So every open cover of $f(X)$ has a finite subcover.
+:::
+
 :::
 
 ::: {.pf-step #pos-14}
 (14) Lindelöfness: if $f:X\to Y$ is continuous and $X$ is Lindelöf, pull an open cover of $f(X)$ back to $X$, take a countable subcover and push it forward.
+
+::: pf-proof
+An open cover of $f(X)$ by open sets of $Y$ pulls back to the open cover $\{f^{-1}(U_i)\}$ of $X$; Lindelöfness selects countably many indices covering $X$, and their images cover $f(X)$, so the original cover has a countable subcover.
+:::
+
 :::
 
 ::: {.pf-step #pos-15}
 (15) Countable dense subset: if $D\subset X$ is countable and dense then $f(D)$ is countable and dense in $f(X)$, since $f(\overline{D})\subset\overline{f(D)}$ for continuous $f$.
+
+::: pf-proof
+The image of a countable set under any map is countable, so $f(D)$ is countable. For continuous $f$ one has $f(\overline{D}) \subseteq \overline{f(D)}$, since the preimage of the closed set $\overline{f(D)}$ is closed and contains $D$; taking closures, $f(X) = f(\overline{D}) \subseteq \overline{f(D)}$ because $D$ is dense in $X$. Hence $f(D)$ meets every nonempty open set of the subspace $f(X)$, that is it is dense there.
+:::
+
 :::
 
 :::
