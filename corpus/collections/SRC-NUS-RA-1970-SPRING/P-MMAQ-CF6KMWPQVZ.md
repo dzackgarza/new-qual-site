@@ -103,7 +103,7 @@ $\chi_{\Gamma(f)}$ is a non-negative measurable function on $\RR^2$.
 :::
 
 ::: pf-step
-By Tonelli's Theorem:
+By [[T-X7XZX|Tonelli's theorem]]:
 $$
 m_2(\Gamma(f)) = \int_{\RR^2} \chi_{\Gamma(f)}(x, y)\,d(x, y) = \int_E \left( \int_\RR \chi_{\Gamma(f)}(x, y)\,dy \right) dx.
 $$
