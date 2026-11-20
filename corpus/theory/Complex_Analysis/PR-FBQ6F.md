@@ -19,4 +19,6 @@ $$
 \Gamma(s+1) = s\,\Gamma(s).
 $$
 Consequently $\Gamma(n+1)=n!$ for every integer $n\ge0$.
+
+This is [@SS03, ch. 6, Lemma 1.2], which states the recurrence for $\Re(s)>0$ and derives $\Gamma(n+1)=n!$ from it.
 :::
