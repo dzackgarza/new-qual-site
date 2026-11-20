@@ -46,7 +46,7 @@ The table is Hatcher's [@Hat02, §4.1], extracted there from Toda's *Composition
 | $S^7$ | 0 | 0 | 0 | 0 | 0 | 0 | $\ZZ$ | 2 | 2 | 24 | 0 | 0 |
 | $S^8$ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | $\ZZ$ | 2 | 2 | 24 | 0 |
 
-For real projective space the covering $S^n\to\RP^n$ gives $\pi_k(\RP^n)\cong\pi_k(S^n)$ for $k\geq2$ and $\pi_1(\RP^n)\cong\ZZ/2$:
+For $n\geq2$ the covering $S^n\to\RP^n$ gives $\pi_k(\RP^n)\cong\pi_k(S^n)$ for $k\geq2$ and $\pi_1(\RP^n)\cong\ZZ/2$ [@Hat02, Example 1.43]:
 
 |       | $\pi_1$ | $\pi_2$ | $\pi_3$ | $\pi_4$ | $\pi_5$ | $\pi_6$ | $\pi_7$ | $\pi_8$ | $\pi_9$ | $\pi_{10}$ | $\pi_{11}$ | $\pi_{12}$ |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -66,14 +66,4 @@ For complex projective space the fibration $S^1\to S^{2n+1}\to\CP^n$ gives $\pi_
 
 ## Bott periodicity
 
-::: {.proposition title="Bott periodicity in the stable range"}
-For $k$ in the stable range ($k\leq 2n-1$ for $U(n)$, $k\leq n-2$ for $O(n)$, $k\leq 4n$ for $Sp(n)$),
-$$
-\begin{aligned}
-\pi_k(U(n)) &\cong \begin{cases} \ZZ & k \text{ odd}, \\ 0 & k \text{ even}, \end{cases} \\
-\pi_k(O(n)) &\cong \begin{cases} \ZZ/2 & k\equiv 0,1 \pmod 8, \\ \ZZ & k\equiv 3,7 \pmod 8, \\ 0 & \text{otherwise}, \end{cases} \\
-\pi_k(Sp(n)) &\cong \begin{cases} \ZZ & k\equiv 3,7 \pmod 8, \\ \ZZ/2 & k\equiv 4,5 \pmod 8, \\ 0 & \text{otherwise}. \end{cases}
-\end{aligned}
-$$
-The inclusion $SU(n)\injects U(n)$ induces isomorphisms on $\pi_k$ for $k\geq 2$, and $\pi_1(U(n))\cong\ZZ$ through the determinant while $\pi_1(SU(n))=1$ [@Hat02, Example 4.55].
-:::
+[[PR-B0TT5]]

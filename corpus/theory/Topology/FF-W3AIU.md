@@ -23,5 +23,5 @@ $$
 \chi(\RP^2) = 1,\qquad
 \chi(K) = 0,
 $$
-where $K$ is the Klein bottle [@Hat02]; the Euler characteristics of all compact surfaces are in [[T-NBARV|the classification of surfaces]].
+where $\KK$ is the Klein bottle [@Hat02]; the Euler characteristics of all compact surfaces are in [[T-NBARV|the classification of surfaces]].
 :::

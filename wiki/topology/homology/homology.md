@@ -92,7 +92,9 @@ The Mayer--Vietoris sequence for open neighborhoods of the two pieces, which def
 
 [[D-UEWPN]]
 
-For a good pair $(X,A)$, the quotient map induces $H_n(X,A)\cong\tilde H_n(X/A)$ [@Hat02, Proposition 2.22]. The cellular filtration has $H_j(X^{(k)},X^{(k-1)})\cong\ZZ[\theset{\text{$k$-cells of $X$}}]$ for $j=k$ and $0$ otherwise, since $X^{(k)}/X^{(k-1)}$ is a wedge of $k$-spheres.
+[[PR-P222G]]
+
+For the cellular filtration of a CW complex, $H_j(X^{(k)},X^{(k-1)})\cong\ZZ[\theset{\text{$k$-cells of $X$}}]$ for $j=k$ and $0$ otherwise, since $X^{(k)}/X^{(k-1)}$ is a wedge of $k$-spheres.
 
 ## Exercises
 

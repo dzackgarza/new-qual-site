@@ -19,6 +19,6 @@ review: draft
 
 ::: {.fact}
 Let $\Sigma$ be a compact connected surface with [[D-QK5BM|Euler characteristic]] $\chi(\Sigma) = 0$.
-If $\Sigma$ is [[FD-QPIIL|closed]], then $\Sigma$ is homeomorphic to the torus $T^2$ or to the Klein bottle $K$ [@Mun00]; [@Hat02].
+If $\Sigma$ is [[FD-QPIIL|closed]], then $\Sigma$ is homeomorphic to the torus $T^2$ or to the Klein bottle $\KK$ [@Mun00]; [@Hat02].
 If $\Sigma$ has nonempty boundary, then $\Sigma$ is homeomorphic to the annulus $S^1\times I$ or to the Möbius band.
 :::

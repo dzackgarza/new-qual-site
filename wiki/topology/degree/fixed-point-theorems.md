@@ -11,7 +11,7 @@ topics:
 
 # Fixed point theorems
 
-Brouwer's theorem, the Lefschetz fixed point theorem, the Borsuk--Ulam theorem and the hairy ball theorem; the degree arguments that relate them sit on the cards, and the propositions below record the reductions between them.
+Brouwer's theorem, the Lefschetz fixed point theorem, the Borsuk--Ulam theorem, the ham sandwich theorem, and the hairy ball theorem.
 
 [[T-S2OLJ]]
 
@@ -33,11 +33,7 @@ Then $g(-x)=-g(x)$, so $g$ takes values of both signs or vanishes, and the inter
 
 :::
 
-::: {.proposition title="Ham sandwich theorem"}
-For Lebesgue measurable sets $A_1,\ldots,A_n\subseteq\RR^n$ of finite measure, there is an affine hyperplane $P$ such that each $A_i$ meets the two open half-spaces of $\RR^n\sm P$ in sets of equal measure.
-This is [[T-WNOWY]] applied to $f=(f_1,\ldots,f_n)\colon S^n\to\RR^n$, where $f_i(u)$ is the measure of $A_i\intersect\theset{x \st \inner{u'}{x} > u_0}$ for $u=(u_0,u')\in S^n\subseteq\RR\times\RR^n$; a point with $f(u)=f(-u)$ gives the hyperplane $\inner{u'}{x}=u_0$, unless $u'=0$, in which case any hyperplane bisects the sets.
-
-:::
+[[T-HAMS1]]
 
 ## Hairy ball theorem
 

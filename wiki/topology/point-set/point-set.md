@@ -89,7 +89,7 @@ For every $x_0 \in X$, the constant map $r\colon X \to \theset{x_0}$ is a [[D-NC
 In $\RR\cross\RR$, the open set $N\coloneqq\theset{(x,y) \suchthat \abs y < e^{-x^2}}$ contains the slice $\RR\cross\theset{0}$, and it contains no tube $\RR\cross(-\delta,\delta)$ with $\delta>0$, since $e^{-x^2}<\delta$ for large $\abs x$.
 Here the slice is taken in the noncompact factor $\RR$.
 
-![The region between a Gaussian and its reflection](../../../../assets/assets/figures/image_2021-05-21-01-39-26.png)
+![The region between a Gaussian and its reflection](/assets/figures/image_2021-05-21-01-39-26.png)
 
 :::
 

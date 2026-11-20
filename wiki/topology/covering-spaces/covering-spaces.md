@@ -101,7 +101,7 @@ T^n
 \end{tikzcd}
 where the universal cover is the $2n$-valent Cayley graph of the free group $F_n\cong\ZZ^{\ast n}$ with respect to its free generators.
 
-![The Cayley graph of the free group on a, b: the 4-valent tree with vertices labeled by reduced words e, a, b, ab, ba^{-1}, and so on](../../../../assets/assets/Topology/figures/2021-07-03_16-55-01.png)
+![The Cayley graph of the free group on a, b: the 4-valent tree with vertices labeled by reduced words e, a, b, ab, ba^{-1}, and so on](/assets/figures/2021-07-03_16-55-01.png)
 
 \begin{tikzcd}
 \ZZ/n
@@ -164,7 +164,7 @@ The fiber over the base point is the integer lattice $\ZZ \cross \ZZ$, and $\Dec
 ::: {.example title="Wedge of circles"}
 The fundamental group of $S^1 \vee S^1$ is $\ZZ \ast \ZZ$ by van Kampen's theorem, and the universal cover is the $4$-valent Cayley graph of $\ZZ\ast\ZZ$:
 
-![The universal cover of $S^1 \vee S^1$](../../../../assets/assets/Topology/figures/image_2021-01-10-13-19-32.png)
+![The universal cover of $S^1 \vee S^1$](/assets/figures/image_2021-01-10-13-19-32.png)
 
 [@Hat02, p. 58] draws further covering spaces of $S^1\vee S^1$.
 
@@ -175,7 +175,7 @@ The fundamental group of $S^1 \vee S^1$ is $\ZZ \ast \ZZ$ by van Kampen's theore
 ::: {.example title="Wedge of projective spaces"}
 The fundamental group of $\RP^2 \vee \RP^2$ is $\ZZ/2 \ast \ZZ/2$, and the universal cover is an infinite chain of copies of $S^2$, each attached to its two neighbors at antipodal points:
 
-![The universal cover of RP^2 v RP^2: an infinite chain of spheres, each joined to its two neighbors at a pair of antipodal points](../../../../assets/assets/Topology/figures/image_2021-01-10-13-14-27.png)
+![The universal cover of RP^2 v RP^2: an infinite chain of spheres, each joined to its two neighbors at a pair of antipodal points](/assets/figures/image_2021-01-10-13-14-27.png)
 
 :::
 
@@ -183,7 +183,7 @@ The fundamental group of $\RP^2 \vee \RP^2$ is $\ZZ/2 \ast \ZZ/2$, and the unive
 The fundamental group of $\RP^2 \vee T^2$ is $\ZZ/2 \ast \ZZ^2$.
 In the tree describing the universal cover, each red vertex is a copy of $S^2$ covering $\RP^2$ and has $2$ neighbors, and each blue vertex is a copy of $\RR^2$ covering $T^2$ and has countably many neighbors, one for each point of $\ZZ^2$.
 
-![Universal cover of $T^2 \vee \RP^2$](../../../../assets/assets/Topology/figures/tree_cover.png)
+![Universal cover of $T^2 \vee \RP^2$](/assets/figures/tree_cover.png)
 
 :::
 
@@ -196,9 +196,4 @@ In the tree describing the universal cover, each red vertex is a copy of $S^2$ c
 [[PR-TRSHQ]]
 
 [[T-O44GI]]
-
-::: {.fact}
-A one-sheeted covering map $f\colon X\to Y$ is a homeomorphism: it is a bijective local homeomorphism, hence an open continuous bijection.
-
-:::
 
