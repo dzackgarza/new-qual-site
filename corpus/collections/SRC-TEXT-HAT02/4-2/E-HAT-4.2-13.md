@@ -90,6 +90,26 @@ audit:
     on pi_1 is an isomorphism, the maps on pi_i for 2 <= i <= n agree under the covers, the pair
     sequence makes the relative groups vanish in degrees at most n, and the boundary map in
     pi_{n+1} is killed by the vanishing of H_{n+1} of the n-dimensional cover.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Independent referee read against Hatcher, Algebraic Topology (2002), §4.2 Exercise 13,
+    Proposition 1.33, Proposition 4.1, Theorem 4.37, Lemma 2.34 and Corollary 4.33, and
+    against Steven V. Sam's solutions, Exercise 4.2.13, whose part the solution block
+    transcribes and which is unchanged. Two defects repaired in the card's own step. (1) The
+    proof of step `lift` applied the lifting criterion to $f$ itself and concluded that
+    $f_*\pi_1(X)=0$; under the hypothesis $f_*\pi_1(X)=\pi_1(Y)$ that is false whenever
+    $\pi_1(Y)\ne0$. The criterion applies to the composite $fp_X:\widetilde X\to Y$, whose
+    domain is simply connected, and the proof now says so. (2) The proof of step
+    `homology-iso` cited "Corollary 2.34" for the vanishing of $H_i$ above the dimension of a
+    CW complex; the book has no such corollary, the statement being Lemma 2.34(b), and the
+    citation now reads that. The remaining steps were read and are unchanged: the pair
+    sequence of the mapping cylinder in `n-connected`, the relative Hurewicz theorem in
+    `hurewicz-low` and `hurewicz-degree` with the pair $n$-connected, the boundary map
+    vanishing because the map on $\pi_n$ is injective, `homology-iso` and the closing
+    Whitehead and Hurewicz applications, and the two low-dimensional cases. Not claimed:
+    anything beyond this exercise, and no page locator is written here.
 ---
 
 ::: {.problem}
@@ -107,7 +127,7 @@ Throughout $f:X\to Y$ is a map of connected $n$-dimensional CW complexes inducin
 $f_*$ is an isomorphism on $\pi_1$, so $f$ lifts to a map of universal covers $\widetilde f:\widetilde X\to\widetilde Y$ with $p_Y\widetilde f=fp_X$, and $\widetilde f_*:\pi_i(\widetilde X)\to\pi_i(\widetilde Y)$ is an isomorphism for $2\le i\le n$.
 
 ::: pf-proof
-A map lifts to the universal covers exactly when it carries $\pi_1$ of the domain into the subgroup $\pi_1(\widetilde Y)=0$ of $\pi_1(Y)$, that is, when $f_*\pi_1(X)=0$; here $f_*$ is an isomorphism onto $\pi_1(Y)$, so this holds only after choosing the basepoints in the same path component, which is the case. For $i\ge2$ the covering projection induces an isomorphism $\pi_i(\widetilde X)\cong\pi_i(X)$ and likewise for $Y$ (Proposition 4.1), so $\widetilde f_*$ is the conjugate of $f_*$ and is an isomorphism in the stated range.
+Choose basepoints with $f(x_0)=y_0$. The composite $fp_X:\widetilde X\to Y$ carries $\pi_1(\widetilde X)=0$ into $p_{Y*}\pi_1(\widetilde Y)=0$, so the lifting criterion (Proposition 1.33), applied to $fp_X$, gives $\widetilde f:\widetilde X\to\widetilde Y$ with $p_Y\widetilde f=fp_X$; its hypotheses hold, $\widetilde X$ being path-connected and locally path-connected. For $i\ge2$ the covering projection induces an isomorphism $\pi_i(\widetilde X)\cong\pi_i(X)$ and likewise for $Y$ (Proposition 4.1), so $\widetilde f_*$ is the conjugate of $f_*$ and is an isomorphism in the stated range.
 
 :::
 
@@ -173,7 +193,7 @@ The long exact sequence of the pair $(M_{\widetilde f},\widetilde X)$, with $M_{
 $$
 H_{i+1}(M_{\widetilde f},\widetilde X)\to H_i(\widetilde X)\to H_i(\widetilde Y)\to H_i(M_{\widetilde f},\widetilde X) .
 $$
-For $i\le n$ the outer groups vanish by step [](#hurewicz-low){.pf-ref} and step [](#hurewicz-degree){.pf-ref} (the latter for $i=n$), so the middle map is an isomorphism for $i\le n$. For $i>n$ both $\widetilde X$ and $\widetilde Y$ are $n$-dimensional CW complexes, so both groups vanish (Corollary 2.34 or the cellular complex of §2.2), and the map between two zero groups is an isomorphism.
+For $i\le n$ the outer groups vanish by step [](#hurewicz-low){.pf-ref} and step [](#hurewicz-degree){.pf-ref} (the latter for $i=n$), so the middle map is an isomorphism for $i\le n$. For $i>n$ both $\widetilde X$ and $\widetilde Y$ are $n$-dimensional CW complexes, so both groups vanish (Lemma 2.34(b), or the cellular complex of §2.2), and the map between two zero groups is an isomorphism.
 
 :::
 
