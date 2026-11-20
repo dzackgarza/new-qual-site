@@ -261,11 +261,11 @@ Then use (2.12), and study how the ruled surface $\PP(\mathcal{E})$ with $\mathc
 :::
 
 ::: {.solution}
-By Proposition 1.2 of Fuentes and Pedreira, printed p. 3, which is Hartshorne V.2.2, the two geometrically ruled surfaces are
+By Proposition 1.2 of Fuentes and Pedreira, which is Hartshorne V.2.2, the two geometrically ruled surfaces are
 $$
 X=\PP(\mathcal E),\qquad X'=\PP(\mathcal E')
 $$
-for locally free sheaves $\mathcal E,\mathcal E'$ of rank $2$ on $C$, in the quotient convention of Hartshorne V.2. An elementary transformation is the operation of Hartshorne's Example 5.7.1: blow up a point and contract the strict transform of the fibre through it (Definition 4.3 below, printed p. 26).
+for locally free sheaves $\mathcal E,\mathcal E'$ of rank $2$ on $C$, in the quotient convention of Hartshorne V.2. An elementary transformation is the operation of Hartshorne's Example 5.7.1: blow up a point and contract the strict transform of the fibre through it (Definition 4.3 below).
 
 ::: pf
 
@@ -273,7 +273,7 @@ for locally free sheaves $\mathcal E,\mathcal E'$ of rank $2$ on $C$, in the quo
 For a ruled surface $\pi:S\to C$ with invariant $e$ and minimum-self-intersection curve $X_0$, and a point $x\in S$ with $\pi(x)=P$, the elementary transform $S'=\operatorname{elm}_x(S)$ is built by blowing up $S$ at $x$, say $\epsilon:S_x\to S$ with exceptional divisor $E$, and contracting the strict transform $\widetilde{Pf}$ of the fibre through $x$, say $\sigma:S_x\to S'$. If $S'=\operatorname{elm}_x(S)$ then $S$ is the elementary transform of $S'$ at the point $y$ where $\widetilde{Pf}$ meets $E$.
 
 ::: pf-proof
-This is Definition 4.3 of Fuentes and Pedreira, printed p. 26, including the closing sentence that the inverse of the elementary transform at $x$ is the elementary transform of $S'$ at $y$, the image under $\sigma$ of the intersection of the two exceptional divisors $\widetilde{Pf}$ and $E$. The blown-up surface is the same object in the two directions, so the operation is reversible by an operation of the same kind.
+This is Definition 4.3 of Fuentes and Pedreira, including the closing sentence that the inverse of the elementary transform at $x$ is the elementary transform of $S'$ at $y$, the image under $\sigma$ of the intersection of the two exceptional divisors $\widetilde{Pf}$ and $E$. The blown-up surface is the same object in the two directions, so the operation is reversible by an operation of the same kind.
 :::
 
 :::
@@ -290,7 +290,7 @@ $$
 Applied to $C=D$ a section through the centre $x$ this gives $\widetilde D^{\,2}=D^2-1$, the first computation of the printed hint.
 
 ::: pf-proof
-This is Proposition 4.4(3) of Fuentes and Pedreira, statement printed p. 26 and proof printed p. 27. The proof computes $C'\cdot D'=\sigma^*(\sigma_*(\widetilde C))\cdot\widetilde D$ and uses
+This is Proposition 4.4(3) of Fuentes and Pedreira. The proof computes $C'\cdot D'=\sigma^*(\sigma_*(\widetilde C))\cdot\widetilde D$ and uses
 $$
 \sigma^*(\sigma_*(\widetilde C))=\widetilde C+\bigl(\widetilde C\cdot\widetilde{Pf}\bigr)\widetilde{Pf},
 \qquad
@@ -310,7 +310,7 @@ $$
 and its minimum-self-intersection curve is $X_0'$.
 
 ::: pf-proof
-This is Theorem 4.9 of Fuentes and Pedreira, statement printed p. 30 and proof printed p. 31. The curve $X_0$ satisfies $X_0^2=-e$ and every other unisecant curve $D$ satisfies $D^2\ge-e$. By step [](#intersection-formula){.pf-ref}, $D'^2=D^2-1$ if $x\in D$ and $D'^2=D^2+1$ if $x\notin D$; so $X_0'^2=X_0^2-1$ and every other unisecant curve satisfies $D'^2\ge D^2-1\ge X_0^2-1=X_0'^2$. Hence $X_0'$ is the minimum-self-intersection curve of $S'$ and
+This is Theorem 4.9 of Fuentes and Pedreira. The curve $X_0$ satisfies $X_0^2=-e$ and every other unisecant curve $D$ satisfies $D^2\ge-e$. By step [](#intersection-formula){.pf-ref}, $D'^2=D^2-1$ if $x\in D$ and $D'^2=D^2+1$ if $x\notin D$; so $X_0'^2=X_0^2-1$ and every other unisecant curve satisfies $D'^2\ge D^2-1\ge X_0^2-1=X_0'^2$. Hence $X_0'$ is the minimum-self-intersection curve of $S'$ and
 $$
 e'=-X_0'^2=-X_0^2+1=e+1.
 $$
@@ -323,7 +323,7 @@ Lemma 4.6, computes the normal bundle of a transformed section and gives $\OO_{X
 Every indecomposable ruled surface over $C$ is obtained from a decomposable one by finitely many elementary transformations.
 
 ::: pf-proof
-This is Corollary 4.10 of Fuentes and Pedreira, printed p. 31, with the proof printed there. Starting from an indecomposable $S_0$ with invariant $e_0$ and applying step [](#invariant-rises){.pf-ref} at a point of the minimum-self-intersection curve gives $S_1$ with $e_1=e_0+1$, and by step [](#elementary-transform-and-its-inverse){.pf-ref} the surface $S_0$ is obtained from $S_1$ by one elementary transformation, so iterating gives $S_n$ with $e_n=e_0+n$. By Theorem 3.2(2) of the same paper, printed p. 15, the invariant of an indecomposable ruled surface satisfies $e\le2g-2$. For $n$ large enough $e_n>2g-2$, and then $S_n$ is decomposable.
+This is Corollary 4.10 of Fuentes and Pedreira, with its proof. Starting from an indecomposable $S_0$ with invariant $e_0$ and applying step [](#invariant-rises){.pf-ref} at a point of the minimum-self-intersection curve gives $S_1$ with $e_1=e_0+1$, and by step [](#elementary-transform-and-its-inverse){.pf-ref} the surface $S_0$ is obtained from $S_1$ by one elementary transformation, so iterating gives $S_n$ with $e_n=e_0+n$. By Theorem 3.2(2) of the same paper, the invariant of an indecomposable ruled surface satisfies $e\le2g-2$. For $n$ large enough $e_n>2g-2$, and then $S_n$ is decomposable.
 :::
 
 :::
@@ -332,12 +332,12 @@ This is Corollary 4.10 of Fuentes and Pedreira, printed p. 31, with the proof pr
 Every ruled surface over $C$ is obtained from $C\times\PP^1$ by finitely many elementary transformations.
 
 ::: pf-proof
-This is Corollary 4.11 of Fuentes and Pedreira, printed p. 31. Let $S$ be a ruled surface over $C$. By step [](#decomposable-reachable){.pf-ref} a finite number of elementary transformations carries $S$ to a decomposable ruled surface
+This is Corollary 4.11 of Fuentes and Pedreira. Let $S$ be a ruled surface over $C$. By step [](#decomposable-reachable){.pf-ref} a finite number of elementary transformations carries $S$ to a decomposable ruled surface
 $$
 S_0\cong\PP\bigl(\OO_C\oplus\OO_C(\mathfrak e_0)\bigr)
 \qquad\text{with } -\mathfrak e_0 \text{ effective.}
 $$
-The product $C\times\PP^1$ corresponds to the decomposable model $\PP(\OO_C\oplus\OO_C)$; writing $-\mathfrak e_0\sim P_1+\cdots+P_e$, one makes elementary transformations of $\PP(\OO_C\oplus\OO_C)$ on its minimum-self-intersection curve at the points $P_if\cap X_0$. Each of those steps changes the determinant of the normalized sheaf by $\mathfrak e\mapsto\mathfrak e-P$, by Theorem 4.9 of step [](#invariant-rises){.pf-ref}, so the $e$ of them carry $\OO_C$ to $\OO_C(\mathfrak e_0)$, because $-\mathfrak e_0$ is congruent to $P_1+\cdots+P_e$. A determinant class fixes only $\bigwedge^2$ of the normalized sheaf, and at $e\le2g-2$ an indecomposable normalized sheaf can share it, so Theorem 4.9 alone does not identify the surface reached; Theorem 4.12(1) of the same paper, printed p. 31, does: the elementary transform of a decomposable ruled surface at a point of its minimum-self-intersection curve is again decomposable, with $\mathfrak e'\sim\mathfrak e-P$. Each of the $e$ steps therefore keeps the surface decomposable, and the decomposable normalized model with determinant $\OO_C(\mathfrak e_0)$ is $\PP(\OO_C\oplus\OO_C(\mathfrak e_0))\cong S_0$. So $S_0$, and with it $S$, is obtained from $C\times\PP^1$ by finitely many elementary transformations.
+The product $C\times\PP^1$ corresponds to the decomposable model $\PP(\OO_C\oplus\OO_C)$; writing $-\mathfrak e_0\sim P_1+\cdots+P_e$, one makes elementary transformations of $\PP(\OO_C\oplus\OO_C)$ on its minimum-self-intersection curve at the points $P_if\cap X_0$. Each of those steps changes the determinant of the normalized sheaf by $\mathfrak e\mapsto\mathfrak e-P$, by Theorem 4.9 of step [](#invariant-rises){.pf-ref}, so the $e$ of them carry $\OO_C$ to $\OO_C(\mathfrak e_0)$, because $-\mathfrak e_0$ is congruent to $P_1+\cdots+P_e$. A determinant class fixes only $\bigwedge^2$ of the normalized sheaf, and at $e\le2g-2$ an indecomposable normalized sheaf can share it, so Theorem 4.9 alone does not identify the surface reached; Theorem 4.12(1) of the same paper, does: the elementary transform of a decomposable ruled surface at a point of its minimum-self-intersection curve is again decomposable, with $\mathfrak e'\sim\mathfrak e-P$. Each of the $e$ steps therefore keeps the surface decomposable, and the decomposable normalized model with determinant $\OO_C(\mathfrak e_0)$ is $\PP(\OO_C\oplus\OO_C(\mathfrak e_0))\cong S_0$. So $S_0$, and with it $S$, is obtained from $C\times\PP^1$ by finitely many elementary transformations.
 :::
 
 :::
@@ -372,11 +372,11 @@ Steps [](#elementary-transform-and-its-inverse){.pf-ref} and [](#intersection-fo
 :::
 
 ::: {.remark title="Published solutions"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.5, printed p. 419. The operation is his Example 5.7.1, and the three printed hints are the three steps of the proof above: the drop $\widetilde D^{\,2}=D^2-1$ for a section through the centre is step [](#intersection-formula){.pf-ref}, the passage to a ruled surface with $e\gg0$ is steps [](#invariant-rises){.pf-ref} and [](#decomposable-reachable){.pf-ref}, and the decomposable case is step [](#from-the-product){.pf-ref}, where the paper's Theorem 3.2 takes the place of the book's (2.12).
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.5. The operation is his Example 5.7.1, and the three printed hints are the three steps of the proof above: the drop $\widetilde D^{\,2}=D^2-1$ for a section through the centre is step [](#intersection-formula){.pf-ref}, the passage to a ruled surface with $e\gg0$ is steps [](#invariant-rises){.pf-ref} and [](#decomposable-reachable){.pf-ref}, and the decomposable case is step [](#from-the-product){.pf-ref}, where the paper's Theorem 3.2 takes the place of the book's (2.12).
 
 Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces*, is a complete printed proof of the exercise: Corollary 4.11 states that any ruled surface over the curve is obtained from $X\times\PP^1$ by finitely many elementary transformations, and its proof rests on Corollary 4.10 (from a decomposable surface, via Theorem 4.9's $e'=e+1$ and the bound $e\le2g-2$ of Theorem 3.2 for indecomposable surfaces) and on Definition 4.3 and Proposition 4.4 for the operation and its intersection numbers. The decomposability of the surface reached from $X\times\PP^1$ is Theorem 4.12(1); Theorem 4.9 fixes only $\bigwedge^2$ of the normalized sheaf. The one point the statement of Corollary 4.11 leaves to the reader is the passage from one ruled surface to another, the corollary joining each of the two to $X\times\PP^1$; step [](#two-surfaces-joined){.pf-ref} composes the two sequences, using the reversibility that Definition 4.3 states.
 
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.5, printed p. 299, says only "Consequence of my proof of exc V.2.5.a". That is a cross-reference, not a proof.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.5, says only "Consequence of my proof of exc V.2.5.a". That is a cross-reference, not a proof.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.5.5, printed pp. 113--114, is the nearest of the retained sets and its outline is the printed hint's. He writes the formula $C'\cdot D'=C\cdot D+ac-a\,\mu_P(D)-c\,\mu_P(C)$ for $C\sim aC_0+bf$ and $D\sim cC_0+df$, so that $\operatorname{elm}_P$ at $P\in C_0$ has invariant $e+1$, and finitely many transformations make $e,e'>2g-2$; there (2.12)(b) makes both bundles decomposable, and further transformations at points of $C_0$ change the divisor class $\mathfrak e$ by the class of the underlying point of $C$, so that the classes can be made equal, after which $X\cong X'$. As printed it has three gaps: the sign, since (2.8.1) sets $e=-\deg\mathfrak e$ and the kernel of $\mathcal E\to k(P)$ has determinant $(\bigwedge^2\mathcal E)(-P)$, so $\mathfrak e\mapsto\mathfrak e-P$ and $e\mapsto e+1$, not $\mathfrak e+P$; the effect of $\operatorname{elm}_P$ on the normalized bundle, which he asserts "by definition" and which is step [](#invariant-rises){.pf-ref} here; and the choice of the points whose classes must be matched, which needs that every class of degree at least $2g-1$ is effective, by Riemann--Roch, and is neither stated nor used there. His sentence "So we may blow-up $X$ and $X'$ more and assume $\mathfrak e=\mathfrak e'$" is the third gap in one line.
+Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.5.5, is the nearest of the retained sets and its outline is the printed hint's. He writes the formula $C'\cdot D'=C\cdot D+ac-a\,\mu_P(D)-c\,\mu_P(C)$ for $C\sim aC_0+bf$ and $D\sim cC_0+df$, so that $\operatorname{elm}_P$ at $P\in C_0$ has invariant $e+1$, and finitely many transformations make $e,e'>2g-2$; there (2.12)(b) makes both bundles decomposable, and further transformations at points of $C_0$ change the divisor class $\mathfrak e$ by the class of the underlying point of $C$, so that the classes can be made equal, after which $X\cong X'$. As printed it has three gaps: the sign, since (2.8.1) sets $e=-\deg\mathfrak e$ and the kernel of $\mathcal E\to k(P)$ has determinant $(\bigwedge^2\mathcal E)(-P)$, so $\mathfrak e\mapsto\mathfrak e-P$ and $e\mapsto e+1$, not $\mathfrak e+P$; the effect of $\operatorname{elm}_P$ on the normalized bundle, which he asserts "by definition" and which is step [](#invariant-rises){.pf-ref} here; and the choice of the points whose classes must be matched, which needs that every class of degree at least $2g-1$ is effective, by Riemann--Roch, and is neither stated nor used there. His sentence "So we may blow-up $X$ and $X'$ more and assume $\mathfrak e=\mathfrak e'$" is the third gap in one line.
 :::

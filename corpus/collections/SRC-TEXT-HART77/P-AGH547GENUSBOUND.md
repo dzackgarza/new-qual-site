@@ -402,11 +402,10 @@ p_a(D)=\tfrac12(D^2-d)+1 .
 $$
 
 ::: pf-proof
-The line bundle computations are items (c), (d), (e), (f) and (g) of Proposition 4.8 of the book,
-printed pp. 401--402: the degree is $D\cdot h=d$, the self-intersection is $a^2-\sum_ib_i^2$ because
+The line bundle computations are items (c), (d), (e), (f) and (g) of Proposition 4.8 of the book: the degree is $D\cdot h=d$, the self-intersection is $a^2-\sum_ib_i^2$ because
 $\ell^2=1$ and $e_i^2=-1$ with all other pairings zero, $D\cdot K_X=-D\cdot h=-d$, and (g) is
 $2p_a(D)-2=D\cdot(D+K_X)$. Chapter V §4 Exercise 7 of the National Taiwan University *Algebraic
-Geometry II* homework (2020 Spring), by Yi-Tsung Wang, printed pp. 16--17, writes $D=D_1-D_2$ with
+Geometry II* homework (2020 Spring), by Yi-Tsung Wang writes $D=D_1-D_2$ with
 $D_1,D_2$ effective and reads $\deg D=3a-\sum_ib_i$ and $D^2=a^2-\sum_ib_i^2$ off (4.8)(b) and (e),
 which the book states for effective divisors; it then writes "$2p_a(D)=D^2+D\cdot K=a^2-\sum
 b_i^2-\deg D$", whose left side omits the $-2$ of the adjunction formula.
@@ -540,7 +539,7 @@ degree $d$ contains an irreducible nonsingular curve over every algebraically cl
 
 ::: pf-proof
 For the classes of the first three families of step [](#extremal-classes){.pf-ref} and for the class of
-degree $5$, Corollary 4.13 of the book, printed p. 406, applies. Its part (a) says that $D$ is ample
+degree $5$, Corollary 4.13 of the book, applies. Its part (a) says that $D$ is ample
 exactly when $b_i>0$ for each $i$, $a>b_i+b_j$ for each $i,j$, and $2a>\sum_{i\ne j}b_i$ for each $j$;
 for those classes $a=d$ and $\sum_ib_i=2d$, so the last condition reads $2d>2d-b_j$, the middle one
 $d>b_i+b_j$, which for the largest pair is $d>\frac{2(d+2)}{3}$, that is $d>4$, in the second family,
@@ -548,8 +547,7 @@ $d>\frac{2(d+1)}{3}$, that is $d>2$, in the third, and $d>\frac{2d}{3}$ in the f
 because $d>0$ in the first family, $d>1$ in the second and $d>2$ in the third. The class of degree $5$
 has $a=4$, $b_1=2$ and the remaining $b_i$ equal to $1$, so $a=4>b_i+b_j$ and
 $2a=8>6=\sum_ib_i-1\ge\sum_{i\ne j}b_i$. By Corollary 4.13(b) each of these classes contains an
-irreducible nonsingular curve; the corollary's proof uses Bertini's theorem for hyperplane sections, II.8.18 of
-the book, printed p. 179, together with III.7.9.1, printed p. 245, and neither carries a hypothesis on
+irreducible nonsingular curve; the corollary's proof uses Bertini's theorem for hyperplane sections, II.8.18 of the book, together with III.7.9.1, and neither carries a hypothesis on
 the characteristic: II.8.18 is stated for a nonsingular closed subvariety of $\PP^n_k$ over an
 algebraically closed field $k$ and proves regularity by counting the dimension of the bad hyperplanes
 $B_x$, and the connectedness III.7.9.1 adds is Corollary III.7.9, for an integral
@@ -559,7 +557,7 @@ degrees are attained over every algebraically closed field $k$.
 
 The classes of degrees $1$ and $2$ are the line and the conic of step
 [](#small-degrees){.pf-ref}. The class of degree $4$ is $H+E_6=\pi^*(3L)-E_1-\cdots-E_5$, the pullback of
-the class $\mathfrak d'$ of Corollary 4.7 of the book, printed p. 400, with $r=5$, which that corollary
+the class $\mathfrak d'$ of Corollary 4.7 of the book, with $r=5$, which that corollary
 proves very ample and which embeds the blowup of $\PP^2$ at five points in $\PP^4$; since
 $H+E_6$ meets $E_6$ in $0$, its sections are the pullbacks of the sections of $\mathfrak d'$, so a
 general member of $\linearsystem{H+E_6}$ is the pullback of a general member of $\linearsystem{\mathfrak d'}$ and is isomorphic to
@@ -567,8 +565,8 @@ it. And
 $$
 (H+E_6)^2=9-5=4,\qquad (H+E_6)\cdot K_X=-9+5=-4,\qquad p_a(H+E_6)=\tfrac12(4-4)+1=1,
 $$
-which is the bound at $d=4$. Bertini's theorem II.8.18 of the book, printed p. 179, and the
-connectedness of III.7.9.1, printed p. 245, give that a general member of $\linearsystem{\mathfrak d'}$, hence of
+which is the bound at $d=4$. Bertini's theorem II.8.18 of the book, and the
+connectedness of III.7.9.1 give that a general member of $\linearsystem{\mathfrak d'}$, hence of
 $\linearsystem{H+E_6}$, is an irreducible nonsingular curve, in every characteristic.
 The class $H+F_{56}$ of the
 earlier numbering also has degree $4$, square $4$ and $p_a=1$, and meets every one of the $27$ lines
@@ -602,14 +600,14 @@ Steps [](#intersection-data){.pf-ref}, [](#reduction-to-self-intersection){.pf-r
 
 ::: {.remark title="Published solution"}
 National Taiwan University, *Algebraic Geometry II* (2020 Spring, Chin-Lung Wang), Chapter V §4,
-Exercise 7, by Yi-Tsung Wang, printed pp. 16--17: the reduction of $2p_a(D)-2$ to
+Exercise 7, by Yi-Tsung Wang: the reduction of $2p_a(D)-2$ to
 $a^2-\sum b_i^2-d$, the bound $a^2-\sum b_i^2\le d^2/3$ by Cauchy--Schwarz and one square, its
 sharpening in the residues $1,2$ modulo $3$ by integrality, and the classes attaining it. The source
 writes $2p_a(D)=D^2+D\cdot K$ for $2p_a(D)-2=D\cdot(D+K)$; it interchanges the two multiplicities in
 its $d\equiv2$ family, so that family as printed has degree $d+2$; and it leaves $d=4$ open, stating
 its conclusion for every $d>0$ "possibly except $d=4$".
 
-Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.7, printed pp. 109--110, proves the
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.7, proves the
 same bound in a second arrangement of the same two inputs, for arbitrary real $b_i$. With
 $a=\frac{1}{3}(d+\sum b_i)$ it writes
 $$
@@ -632,7 +630,7 @@ source. Of those classes the source says only that they "achieve the bound", com
 nothing of an irreducible nonsingular member of one, so the exercise's second request is not proved
 there and remains the card's own step.
 
-For the curves in those classes: Corollary 4.13(a),(b) of Hartshorne, printed p. 406, for the ample
+For the curves in those classes: Corollary 4.13(a),(b) of Hartshorne for the ample
 ones, and, at $d=4$, condition (c) of Exercise V.4.8, whose sufficiency is proved on
 [[P-AGH548IRREDCLASSES]] in every characteristic.
 :::

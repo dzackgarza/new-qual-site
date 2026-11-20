@@ -37,7 +37,7 @@ Show that there are nonhyperelliptic curves of genus 6 which cannot be represent
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise IV.5.6. Yang Pi-Yeh, *Hartshorne Solutions*, Solution 4.5.6, printed p. 96, proves the first part by the adjunction count on $\linearsystem{K-D}$ for a putative $g^1_3$ — a pencil of conics in the plane model — and the second by the same count applied to a plane quintic.
+The argument is the card's own, and it is checked against Hartshorne's Exercise IV.5.6. Yang Pi-Yeh, *Hartshorne Solutions*, Solution 4.5.6, proves the first part by the adjunction count on $\linearsystem{K-D}$ for a putative $g^1_3$ — a pencil of conics in the plane model — and the second by the same count applied to a plane quintic.
 
 Let
 $$

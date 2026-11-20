@@ -251,7 +251,7 @@ iterated intersection-multiplicity formula.
 :::
 
 ::: {.remark title="Published solution"}
-The exercise stands on printed p. 394 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$, and the statement above is that page's text.
+The exercise is Hartshorne, Exercise V.3.2, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is that exercise's text.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.3.2: $\pi^*D\cdot\pi^*C=C\cdot D$, $E\cdot\pi^*C=0$, $E^2=-1$, then $\pi^*C=\widetilde C+rE$ from (3.6) and
 $$
@@ -259,5 +259,5 @@ $$
 $$
 "so that's the first part. The second part follows trivially." Steps [](#total-transform-formula){.pf-ref} and [](#blowup-intersection-identities){.pf-ref} supply the three identities he quotes, and steps [](#finite-resolution-disjoint){.pf-ref} to [](#sum-over-common-points){.pf-ref} are the telescoping sum he leaves at "trivially", which needs a resolution of $C\cup D$ and an extra blowup at each remaining transverse intersection. Matches.
 
-Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.3.2, printed p. 107, is the same computation: $\widetilde C=\pi^*C-\mu_P(C)E$ and $\widetilde D=\pi^*D-\mu_P(D)E$, so $\widetilde C\cdot\widetilde D=C\cdot D-\mu_P(C)\mu_P(D)$, and $\widetilde C\cdot\widetilde D=0$ for curves meeting only at $P$ gives $C\cdot D=\mu_P(C)\mu_P(D)$. Its display writes the strict transform with a plus sign, $\widetilde C=\pi^*C+\mu_P(C)E$, which would give $C\cdot D=-\mu_P(C)\mu_P(D)$; the minus sign is the one the pullback formula $\pi^*C=\widetilde C+\mu_P(C)E$ carries, and the entry's conclusion uses it.
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.3.2, is the same computation: $\widetilde C=\pi^*C-\mu_P(C)E$ and $\widetilde D=\pi^*D-\mu_P(D)E$, so $\widetilde C\cdot\widetilde D=C\cdot D-\mu_P(C)\mu_P(D)$, and $\widetilde C\cdot\widetilde D=0$ for curves meeting only at $P$ gives $C\cdot D=\mu_P(C)\mu_P(D)$. Its display writes the strict transform with a plus sign, $\widetilde C=\pi^*C+\mu_P(C)E$, which would give $C\cdot D=-\mu_P(C)\mu_P(D)$; the minus sign is the one the pullback formula $\pi^*C=\widetilde C+\mu_P(C)E$ carries, and the entry's conclusion uses it.
 :::
