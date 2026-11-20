@@ -90,6 +90,26 @@ audit:
     published set answering this Problem that could be read, and none is retained in this
     repository. Not checked: whether such a set exists outside what a web search reaches. The
     mathematics of the card is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected: a published solution of this Problem was located, so the sentence saying
+    that none existed is replaced. The set is Wang Zirui, *Complete Solutions for Chapter 8* (SJTU),
+    in the public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, file
+    `book-2-complex/tex/stein-shakarchi-book2-chapter08-solutions.tex`, whose abstract claims all 24
+    Exercises and 9 Problems of the chapter. Read at its Problem 7 and checked against Chapter 8,
+    Problem 7: part (a) by Rouché on a circle of radius $r<r_K$, which gives $D(0,r)\subseteq f(K)$
+    and so $r_{f(K)}\ge r_K$, together with the minimum principle for $g=f/z$, which gives
+    $\abs{f'(0)}=\abs{g(0)}>1$; part (b) from $F_n'(0)=\prod_k f_k'(0)$, monotone and bounded by
+    Cauchy's estimate on a disc inside $K_0$, so that $\abs{f_n'(0)}\to1$; part (c) by normal-family
+    compactness and inverse maps; part (d) by $f=\psi_\beta\circ S\circ\psi_\alpha$ with the Schwarz
+    lemma on the inverse and $\abs{f'(0)}=(1+r_K)/(2\sqrt{r_K})$, which equals
+    $1+(\sqrt{r_K}-1)^2/(2\sqrt{r_K})$ and therefore forces $r_{K_n}\to1$ in part (e). The card's
+    steps s1--s8 take those four routes and supply the detail the published text compresses: the
+    Rouché comparison that carries a zero of $F_{n_j}-w$ to $F-w$ in step s5, and the passage from
+    the convergent subsequence of step s4 to the whole sequence in step s6. Not checked: nothing in
+    the published document beyond its Problem 7, and no claim about its other chapters.
 
 ---
 
@@ -120,7 +140,7 @@ The book marks this problem with an asterisk (Chapter 8, Problem 7). Part (d) is
 :::
 
 ::: {.solution}
-No published solution set covers the end-of-chapter Problems of Stein--Shakarchi: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, and no other set was located. The argument is the card's own, following the book's hints.
+The published solution of this Problem is Wang Zirui, *Complete Solutions for Chapter 8* (Problem 7), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`: it carries parts (a)--(d) in outline, part (a) by Rouché's theorem on a circle of radius $r<r_K$ together with the minimum principle for $g=f/z$, part (b) by the product formula for $F_n'(0)$ and Cauchy's estimate, part (c) by normal-family compactness with inverse maps, and part (d) by $f=\psi_\beta\circ S\circ\psi_\alpha$ with the Schwarz lemma on its inverse. The steps below follow that route and supply what it compresses, namely the Rouché transfer of a zero of $F_{n_j}-w$ to $F-w$ in part (c) and the passage from a subsequence to the whole sequence; the audit trail records which step is which.
 
 Throughout $K$ is a Koebe domain, $r_K=\sup\{\rho:D(0,\rho)\subseteq K\}$, and $f:K\to\DD$ is an expansion: $f(0)=0$ and $\abs{f(z)}>\abs z$ for $z\in K\setminus\{0\}$.
 
