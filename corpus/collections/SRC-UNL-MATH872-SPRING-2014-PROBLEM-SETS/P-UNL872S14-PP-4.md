@@ -512,7 +512,9 @@ $$
 
 ::: pf-proof
 
-This is step [](#s1-11){.pf-ref}.
+Step [](#s1-11){.pf-ref} computes $\partial_1(x_p,x_q,x_r,x_s)=(x_p+x_q-x_r-x_s)(B-A)$.
+The $0$-cells $A$ and $B$ are distinct basis elements of $C_0(X)$, so this vanishes
+exactly when $x_p+x_q-x_r-x_s=0$.
 
 :::
 
