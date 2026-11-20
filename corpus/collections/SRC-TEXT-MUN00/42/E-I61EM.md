@@ -50,6 +50,22 @@ audit:
     Part (a) said that an ordered space is regular without a reference; the section $S_x$ is a well-ordered
     set in the order topology, hence normal by Theorem 32.4 and regular, which is the hypothesis the Urysohn
     metrization theorem (Theorem 34.1) needs, its countable basis being the countability of $S_x$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 correctness read, with the #184 citation repair. Part (a): a section
+    $S_x=[0,x)$ is countable (Lemma 10.2) and convex, so its order and subspace topologies agree
+    (Theorem 16.4); the intervals and rays with endpoints in $S_x$ are countably many and form a
+    basis, the member $[0,x)=S_x$ being needed only for the one-point section; and a well-ordered
+    set is normal (Theorem 32.4), hence regular, so Theorem 34.1 metrizes it. Part (b):
+    $[0,x+1)$ is a metrizable neighbourhood of $x$; $S_\Omega$ is limit point compact and not
+    compact by Example 2 of §28, re-proved here from Theorem 27.1 and Theorem 28.1; and a
+    paracompact $S_\Omega$ would be metrizable by Theorem 42.1 and then compact by Theorem 28.2,
+    a contradiction. Citation by number: §42 Exercise 2, read in
+    `tmp/sources/munkres-2000-topology.md`; the earlier events' page locators are superseded,
+    their text kept as written (QUAL-11).
+
 ---
 
 ::: {.exercise}
