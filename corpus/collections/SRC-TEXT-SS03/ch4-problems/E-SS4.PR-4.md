@@ -85,6 +85,21 @@ audit:
     document answering Chapter 4, Problem 4 was found. This search located no published set answering
     this Problem, and none is retained in this repository. Not checked: whether such a set exists
     outside what a web search reaches. The mathematics of the card is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected: a published solution of this Problem was located, so the sentence saying
+    that none existed is replaced. The set is Wang Zirui, *Complete Solutions for Chapter 4*, in the
+    public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, read at its
+    Problem 4 and checked against Chapter 4, Problem 4: part (a) with $A_n=a_n(2\pi i)^{-n-1}/n!$,
+    $g(w)=\sum_nA_nw^{-n-1}$ holomorphic outside the circle of radius $M$ and vanishing at infinity,
+    the circle integral reproducing $f$ and conversely obeying the type estimate; part (b) by Fourier
+    inversion, the deformation of the circle onto the two sides of the slit, the identification of
+    $g$ with $\frac1{2\pi i}\int_{-M}^{M}\hat f(\xi)/(\xi-z)\,d\xi$, and the jump $g_+-g_-=\hat f$
+    from the Poisson kernel. Its text is an outline; the card's steps supply the estimates, the
+    orientation of the slit boundary, and the sign check the earlier repair recorded. Not checked:
+    anything in the published document outside its Problem 4.
 ---
 
 ::: {.exercise}
@@ -108,7 +123,7 @@ See Problem 5 in Chapter 3.
 :::
 
 ::: {.solution}
-No published solution set covers the end-of-chapter Problems of Stein--Shakarchi: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, and no other set was located. The argument is the card's own.
+A published solution of this Problem is Wang Zirui, *Complete Solutions for Chapter 4* (Problem 4), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`. Checked against Chapter 4, Problem 4, it carries both parts: the coefficients $A_n=a_n(2\pi i)^{-n-1}/n!$ give $g(w)=\sum_nA_nw^{-n-1}$ holomorphic outside the circle of radius $M$ and vanishing at infinity, the integral over a circle of radius larger than $M$ reproduces $f$, and conversely that integral obeys the stated type estimate; under the Paley--Wiener hypotheses, Fourier inversion and the deformation of the circle to the two sides of the slit identify $g$ with $\frac1{2\pi i}\int_{-M}^{M}\hat f(\xi)/(\xi-z)\,d\xi$ and give the jump $g_+-g_-=\hat f$. The proof below follows that route and supplies the estimates it compresses, as the audit trail records.
 
 Write $f(z)=\sum_{n\ge0}a_nz^n$ and $A_n=\dfrac{a_n\,n!}{(2\pi i)^{n+1}}$, so that the series proposed for $g$ is $g(w)=\sum_{n\ge0}A_nw^{-n-1}$.
 
