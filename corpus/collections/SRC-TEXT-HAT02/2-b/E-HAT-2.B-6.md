@@ -115,7 +115,7 @@ Modify the construction of the Alexander horned sphere to produce an embedding $
 :::
 
 ::: {.solution}
-Use **J. W. Alexander, *An Example of a Simply Connected Surface Bounding a Region which is not Simply Connected*, pp. 9--10** (`tmp/sources/alexander-horned-sphere-1924.pdf`) and **R. H. Bing, *Examples and Counterexamples*, Pi Mu Epsilon Journal 1 (1953), p. 316** (`tmp/sources/bing-examples-counterexamples-1953.pdf`).
+Use **J. W. Alexander, *An Example of a Simply Connected Surface Bounding a Region which is not Simply Connected*** (`tmp/sources/alexander-horned-sphere-1924.pdf`) and **R. H. Bing, *Examples and Counterexamples*, Pi Mu Epsilon Journal 1 (1953)** (`tmp/sources/bing-examples-counterexamples-1953.pdf`).
 
 ::: pf
 
