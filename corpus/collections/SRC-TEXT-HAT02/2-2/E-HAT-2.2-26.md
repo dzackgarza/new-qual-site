@@ -47,6 +47,15 @@ audit:
     contractible pair (CA,A) together with Proposition 2.22; excision is Theorem 2.20 p. 119.
     What is not covered: the good-pair hypothesis for (Y,X) is asserted from the deformation
     retraction of a neighborhood, not constructed.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The closing step combined the two preceding isomorphisms without saying so, and now names them: the
+    composite of $H_n(X,A)\cong\widetilde H_n(Y)$ from Theorem 2.20 with the splitting of
+    $\widetilde H_n(Y)$ from the retraction gives the displayed direct sum. Sources are cited by numbered
+    statement, Theorem 2.16 and Theorem 2.20 of Hatcher, Algebraic Topology. No page reference is written
+    in the body of this card or in the event above. The statement is unchanged.
 ---
 
 ::: {.problem}
@@ -183,6 +192,11 @@ Combining steps [](#s4){.pf-ref} and [](#s5){.pf-ref} yields
 $$
 \boxed{H_n(X,A)\cong\widetilde H_n(X)\oplus\widetilde H_{n-1}(A).}
 $$
+
+::: pf-proof
+Step [](#s5){.pf-ref} gives $H_n(X,A)\cong\widetilde H_n(Y)$, and step [](#s4){.pf-ref} expands $\widetilde H_n(Y)$ as $\widetilde H_n(X)\oplus\widetilde H_{n-1}(A)$; composing the two isomorphisms gives the displayed identity. Both are natural in the pair, so the composite is.
+:::
+
 :::
 
 :::
