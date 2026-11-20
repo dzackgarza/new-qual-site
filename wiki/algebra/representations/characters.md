@@ -13,15 +13,19 @@ Throughout, $G$ is a finite group and representations are finite-dimensional ove
 
 ## Characters and their arithmetic
 
-The character is constant on conjugacy classes, its value at the identity is the degree, and it is additive over direct sums and multiplicative over tensor products.
+::: {.proposition}
+Let $V$ and $W$ be finite-dimensional representations of $G$ over $\CC$, with characters $\chi_V$ and $\chi_W$.
 
 - $\chi_V$ is a class function, since the trace is invariant under conjugation.
 
 - $\chi_V(1) = \dim V$.
 
 - $\chi_{V\oplus W} = \chi_V + \chi_W$ and $\chi_{V\tensor W} = \chi_V\chi_W$.
+:::
 
-Because a representation of a finite group splits into irreducibles, the character is a complete invariant once the multiplicities are read off it.
+::: {.proposition}
+A finite-dimensional representation of $G$ over $\CC$ splits into irreducibles, so its character is a complete invariant of it once the multiplicities of the irreducible characters are read off.
+:::
 
 [[T-PIO2B]]
 
@@ -29,11 +33,15 @@ Because a representation of a finite group splits into irreducibles, the charact
 
 ## Orthogonality
 
-The orthogonality relations are the statement that the irreducible characters are orthonormal for the inner product of class functions, and the column form is what determines the last entries of a table.
+::: {.proposition}
+The irreducible characters are orthonormal for the inner product of class functions, and the column form of the same relations determines the last entries of a character table.
+:::
 
 [[P-ZCY6S]]
 
 ## Building a character table
+
+::: {.proposition}
 
 1. The number of irreducible characters equals the number of conjugacy classes, so the character table is square.
 
@@ -44,6 +52,7 @@ The orthogonality relations are the statement that the irreducible characters ar
 4. For an action of $G$ on a finite set $X$, the permutation character is $\chi(g) = \size{\Fix(g)}$; if the action is $2$-transitive, then $\chi-\chi_{\text{triv}}$ is irreducible.
 
 5. The remaining entries are determined by [[P-ZCY6S|the column orthogonality relations]].
+:::
 
 [[P-MD6VX]]
 
