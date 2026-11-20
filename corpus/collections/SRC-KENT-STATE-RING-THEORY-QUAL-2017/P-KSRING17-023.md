@@ -87,27 +87,6 @@ $$
 
 :::
 
-::: pf-step
-
-The map
-$$
-\varphi:X\to X,
-\qquad
-\varphi(x)
-\coloneqq
-b+(1-xa)
-$$
-is well-defined.
-
-
-::: pf-proof
-
-This is exactly step [](#s1-1){.pf-ref}.
-
-:::
-
-:::
-
 ::: {.pf-step #s1-3}
 
 The map $\varphi$ is injective.
