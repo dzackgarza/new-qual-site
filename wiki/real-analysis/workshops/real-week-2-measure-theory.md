@@ -90,8 +90,16 @@ Every slice $E_x$ is $[0,1]$ or $\varnothing$, hence measurable, but $E$ is not 
 ::: {.corollary}
 Let $f\geq0$ on $\RR^d$ and $\mathcal A\coloneqq\theset{(x,y)\in\RR^d\times\RR \st 0\leq y\leq f(x)}$.
 Then $f$ is measurable if and only if $\mathcal A$ is measurable in $\RR^{d+1}$, and in that case $\int_{\RR^d}f(x)\dx = m(\mathcal A)$.
+:::
 
-The computation is [[FT-4JRQX|Tonelli's theorem]] applied to the indicator of $\mathcal A$: $\mathcal A$ is measurable exactly when every slice $\mathcal A_x=[0,f(x)]$ is, which is the section criterion of [[D-SLICES]], and Tonelli gives $m(\mathcal A)=\int_{\RR^d}\int_0^{f(x)}\dy\,\dx=\int_{\RR^d}f(x)\dx$. The statement is not printed in either retained book, so no numbered source is cited for it.
+::: {.remark}
+If $f$ is measurable then $\mathcal A=\theset{y\geq0}\cap\theset{y\leq f(x)}$ is measurable.
+Conversely, if $\mathcal A$ is measurable then [[FT-4JRQX|Tonelli's theorem]] applied to $\chi_{\mathcal A}$ gives
+$$
+m(\mathcal A)=\int_{\RR^d}m(\mathcal A_x)\dx=\int_{\RR^d}f(x)\dx,
+$$
+and it makes $x\mapsto m(\mathcal A_x)=f(x)$ measurable, which is the section direction of the [[PR-6NDTF|measurable-slice theorem]].
+The slices $\mathcal A_x=[0,f(x)]$ being intervals does not by itself make $\mathcal A$ measurable: the non-measurable $E$ above has every slice measurable.
 :::
 
 ## Qual problems
