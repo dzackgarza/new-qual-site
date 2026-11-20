@@ -28,5 +28,5 @@ The \dfn{normalization} of $X$ is the morphism $\nu\colon\tilde X\to X$ obtained
 
 ::: {.proposition}
 $\tilde X$ is a normal integral scheme and $\nu$ is integral and surjective [@Har77, Exercise II.3.8].
-The normalization is characterized by a universal property: every dominant morphism $Z\to X$ from a normal integral scheme factors uniquely through $\nu$, so $\nu$ is the initial object among dominant morphisms to $X$ from normal integral schemes ([[D-QJ5M9]]).
+The normalization is characterized by a universal property: every dominant morphism $Z\to X$ from a normal integral scheme factors uniquely through $\nu$, so $\nu$ is the terminal object among dominant morphisms to $X$ from normal integral schemes ([[D-QJ5M9]]).
 :::
