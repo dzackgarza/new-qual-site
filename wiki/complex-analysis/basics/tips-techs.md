@@ -169,6 +169,7 @@ $$
 - For $f\colon[a,b]\to\RR$ differentiable with $\abs{f'} \leq M$, the mean value theorem gives $\abs{f(x) - f(y)} \leq M\abs{x-y}$.
 - If $h$ is holomorphic on $\DD$ with $\abs h\leq 1$ and $h(0) = 0$, then $\abs{h(z)}\leq\abs z$ by the [[complex-analysis/conformal-maps/the-schwarz-lemma|Schwarz lemma]]; applied to $h \coloneqq f/g$ this gives $\abs{f(z)}\leq\abs{z}\abs{g(z)}$.
 
+The first inequality is the reverse triangle inequality of [@Ahl73, ch. 1, §1.5, Inequalities]; the third is the maximum principle applied to the harmonic difference, [@Ahl73, ch. 4, §6, Theorem 23]; the fourth is the mean value theorem, [@Rud76, ch. 5, Theorem 5.10], applied to each coordinate of $f$.
 :::
 
 ::: {.example}
