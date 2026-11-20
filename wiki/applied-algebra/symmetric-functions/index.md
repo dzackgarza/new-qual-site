@@ -11,11 +11,9 @@ topics:
 
 ## Bases
 
-Each of the following families, indexed by the partitions $\lambda$ of $d$, is a basis of $\Lambda^d$ [@FH91, Appendix A].
+Each of the following families, indexed by the partitions $\lambda$ of $d$, is a basis of $\Lambda^d$ [@FH91, Appendix A]: the monomial symmetric functions, the [[D-FK47C|elementary symmetric functions]] $e_\lambda$, the complete homogeneous symmetric functions, the power sums, and the Schur functions.
 
 [[D-MSYMF]]
-
-The [[D-FK47C|elementary symmetric functions]] $e_\lambda$.
 
 [[D-HSYMF]]
 
