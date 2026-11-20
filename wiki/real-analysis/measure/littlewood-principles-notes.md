@@ -17,7 +17,7 @@ In both theorems the remaining set is closed, and it depends on $\varepsilon$.
 
 [[FT-OGS76]]
 
-On a set of finite measure, almost everywhere convergence implies [[FD-D7HOH|convergence in measure]] ([[FR-GG457]], [@Fol99, Theorem 2.33 and Exercise 2.39]).
+On a set of finite measure, almost everywhere convergence implies [[FD-D7HOH|convergence in measure]] ([[FR-GG457|a direct proof]], [@Fol99, Theorem 2.33 and Exercise 2.39]).
 
 The finite-measure hypothesis is needed: [[real-analysis/measure/littlewoods-principles|Littlewood's three principles]] gives a sequence for which no set of finite complement carries uniform convergence.
 
