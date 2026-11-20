@@ -22,5 +22,5 @@ If
 $$
 \sup_{T \in \mathcal{F}} \norm{Tx}_Y < \infty \quad\text{for every } x\in X,
 $$
-then $\sup_{T\in \mathcal{F}} \norm{T} < \infty$, where $\norm{T}\coloneqq\sup_{\norm{x}_X\le1}\norm{Tx}_Y$ is the operator norm.
+then $\sup_{T\in \mathcal{F}} \norm{T} < \infty$, where $\norm{T}\coloneqq\sup_{\norm{x}_X\le1}\norm{Tx}_Y$ is the operator norm [@Fol99, Theorem 5.13(b)].
 :::
