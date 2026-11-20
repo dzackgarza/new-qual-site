@@ -11084,3 +11084,31 @@ proofs of `-1.2-1` and `-1.B-5`.
 
 **Checks.** `qualc.authoring check` on all seven cards, each reporting "schema and Markdown parsing OK". No
 whole-corpus gate this turn.
+
+## 2026-11-20, #170: the three page locators the reader found, replaced by numbered statements
+
+**Object and need:** the independent reader's verdict on [#170](https://github.com/dzackgarza/new-qual-site/issues/170)
+at `f84472807899` returns the eleven mathematical items met and three page locators not met, each in card body
+text: `E-HAT-2.B-3`'s remark, `E-HAT-2.B-7`'s first step proof and `E-HAT-2.B-5`'s source remark.
+
+**The three replacements, line by line.** `E-HAT-2.B-3` now cites "Hatcher, *Algebraic Topology*, errata for
+§2.B, Exercise 3", the section and exercise number, in place of "errata for §2.B, page 176, Exercise 3".
+`E-HAT-2.B-7` now cites "the piece $Z$ of Hatcher's Example 2B.2, a ball with two straight tubes removed", in
+place of "the piece $Z$ of Hatcher's page 171"; Example 2B.2 is the numbered statement that constructs $Z$
+and computes $\pi_1(Z)=F_2$, and it is the paragraph the card's preceding sentence already names.
+`E-HAT-2.B-5`'s Brown citation now reads "Bull. Amer. Math. Soc. 66 (1960), read in ...: Theorem 5", the
+journal article cited by its theorem number as the rule requires, in place of the page range 74--76; Theorem 5
+and Theorem 0 are named in the same sentence, and Theorem 5 is the statement the second proof uses.
+
+**A measurement on the previous entry of this date was wrong, and this entry corrects it.** That entry said
+that "no page number remains in the problem block, the solution block, the proof steps or a remark" of the
+eleven cards, and gave the audit-event count of 458 as "measured rather than asserted". The count of events
+was measured; the body text was not re-scanned after the locator pass, and three page locators survived in it,
+as the reader found. The previous entry's own limit still stands and is unchanged: page references remain
+inside the dated audit events, and `QUAL-11` forbids changing a dated event, so those stay.
+
+**Checks.** `qualc.authoring check` on each of the three cards: "schema and Markdown parsing OK (single card)".
+The three changed lines were verified in the remote blobs, not only locally. No whole-corpus `qualc check`
+this turn. No source obligation moves: none of the eleven has a located complete published solution.
+
+**Commit.** `a8e5acdf5b`, landed on `main` (the remote tip `1a65b10a51` contains it).
