@@ -63,6 +63,18 @@ audit:
     $e^{-\sigma_0v^2/2}g/v\to0$ at infinity, so it applies to both, and the two remainders are
     bounded by $C_R\abs{s}^{-K-1}$ and $C_Q\abs{s}^{-K-1}$. The step's statement, the moments
     computation and every other step are unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Record of the search behind the solution's provenance sentence, which the reader asked for where
+    no published solution set covers the Problem. Read: the head of R. C. Rhoades,
+    *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), whose
+    abstract describes it as solutions or hints to "many of the exercises", with one part per
+    chapter. Searched the open web for a set answering the end-of-chapter Problems of this book: no
+    document answering Appendix A, Problem 2 was found. This search located no published set
+    answering this Problem, and none is retained in this repository. Not checked: whether such a set
+    exists outside what a web search reaches. The mathematics of the card is unchanged.
 ---
 
 ::: {.exercise}
