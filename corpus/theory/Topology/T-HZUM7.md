@@ -20,7 +20,7 @@ $$
 \pi_i(S^n) \to \pi_{i+1}(S^{n+1})
 $$
 is an isomorphism for $i < 2n-1$ and a surjection for $i = 2n-1$.
-More generally, for an $(n-1)$-connected CW complex $X$, the suspension map $\pi_i(X)\to\pi_{i+1}(SX)$ is an isomorphism for $i < 2n-1$ and a surjection for $i = 2n-1$ [@Hat02].
+More generally, for an $(n-1)$-connected CW complex $X$, the suspension map $\pi_i(X)\to\pi_{i+1}(SX)$ is an isomorphism for $i < 2n-1$ and a surjection for $i = 2n-1$ [@Hat02, Corollary 4.24].
 :::
 
 ::: {.remark}
