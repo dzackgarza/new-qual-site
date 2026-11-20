@@ -41,6 +41,18 @@ audit:
     and the normal subgroups are 1, N, N⋊C_2, N⋊C_3, G, whose fixed fields are E,
     Q(ζ_7), Q(ζ_7 + ζ_7^{-1}), Q(√-7) and Q of degrees 42, 6, 3, 2, 1. All three parts
     check. No defect.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The closing sentence was wrong where it said $\QQ(\sqrt{-7})$ is the unique quadratic
+    subfield of the real cubic field: $\QQ(\sqrt{-7})$ is imaginary and lies in $\QQ(\zeta_7)$,
+    not in its maximal real subfield. The sentence now names the subgroups: complex
+    conjugation is $\tau^3$ and fixes the real cubic field, while $\QQ(\sqrt{-7})$ is fixed by
+    $N\rtimes\langle\tau^2\rangle$. The rest of part (iii), and parts (i) and (ii), were read
+    against Smith 8000e.pdf page 12: the Eisenstein translations, the three-real-roots and
+    $S_5$ argument with discriminant $-818400000$ of square class $-5115$, and the
+    $C_7\rtimes C_6$ computation with $\tau\sigma\tau^{-1}=\sigma^3$, all correct.
 ---
 
 ::: {.exercise}
@@ -540,8 +552,9 @@ $$
 42,\ 6,\ 3,\ 2,\ 1.
 $$
 The cubic field is the maximal real subfield of $\QQ(\zeta_7)$, fixed
-by complex conjugation, and $\QQ(\sqrt{-7})$ is its unique quadratic
-subfield.
+by complex conjugation $\tau^3$, and $\QQ(\sqrt{-7})$ is the unique quadratic
+subfield of $\QQ(\zeta_7)$, fixed by $N\rtimes\langle\tau^2\rangle$. It is not
+a subfield of the real cubic field.
 :::
 
 :::
