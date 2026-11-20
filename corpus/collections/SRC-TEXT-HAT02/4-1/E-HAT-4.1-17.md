@@ -48,6 +48,24 @@ audit:
     requirement is a single 0-cell. Not checked this session: the printed page numbers of the
     exercise and of the corollary, which the earlier reading recorded as 358 and the corollary
     unnumbered in the text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 17, printed p. 358,
+    Corollary 4.12 (printed p. 351, statement "A CW pair (X,A) is n connected if all the cells in
+    X - A have dimension greater than n"), and the CW approximation construction of pp. 352-353. Two
+    repairs. (1) Step `model` asserted that no (i+1)-cells are needed at stage i <= m without saying
+    why the kernel being killed is trivial; the step now runs the induction: a Z_i with no cells of
+    dimension <= i has one 0-cell and trivial pi_i by cellular approximation, so the kernel is trivial
+    and the (i+2)-cells of stage i realize pi_{i+1}(X) = 0 for i+1 <= m. (2) The proof silently
+    replaced X and Y by the models, and the conclusion is stated about the given X and Y; the step now
+    records that a homotopy equivalence of pairs preserves k-connectedness and that the pair and the
+    smash product computed with the models are homotopy equivalent to the originals, and fixes the
+    convention that later steps use X and Y for the models. Steps `product-cells`, `dimension`,
+    `pair`, `smash-cells` and `smash` are unchanged and correct, and `smash` is right that for a pair
+    with A a point pi_i(Z,*) = pi_i(Z). Not checked: neither assertion recomputed; no retained
+    solution set covers the exercise and none was searched for again.
 
 ---
 
@@ -67,7 +85,9 @@ Say that a CW complex $Z$ is $k$-connected if $\pi_{i}(Z)=0$ for $0\leq i\leq k$
 If $X$ is $m$-connected and $Y$ is $n$-connected, then each is homotopy equivalent to a CW complex with a single $0$-cell and no cells in dimensions $1,\dots,m$ respectively $1,\dots,n$.
 
 ::: pf-proof
-Hatcher's CW approximation theorem attaches, in its inductive construction, one cell for each generator of each homotopy group of the target: $Z_{i+1}$ is obtained from $Z_{i}$ by attaching $(i+1)$-cells killing the kernel of $\pi_{i}(Z_{i})\to\pi_{i}(X)$ and $(i+2)$-cells realizing generators of $\pi_{i+1}(X)$. If $X$ is path-connected, the construction begins with a single $0$-cell; if moreover $\pi_{i}(X)=0$ for $1\leq i\leq m$, then no $i$-cell and no $(i+1)$-cell is needed at stage $i\leq m$, so the approximation has no cells in dimensions $1,\dots,m$. The approximation is a weak homotopy equivalence to $X$, hence a homotopy equivalence by Whitehead's theorem, both spaces being CW complexes. The same applies to $Y$. When $m=0$ the requirement is only a single $0$-cell, and when $m\geq1$ it is the absence of cells of dimensions $1$ through $m$.
+Hatcher's CW approximation theorem attaches, in its inductive construction, one cell for each generator of each homotopy group of the target: $Z_{i+1}$ is obtained from $Z_{i}$ by attaching $(i+1)$-cells killing the kernel of $\pi_{i}(Z_{i})\to\pi_{i}(X)$ and $(i+2)$-cells realizing generators of $\pi_{i+1}(X)$. If $X$ is path-connected, the construction begins with a single $0$-cell. Suppose $\pi_{j}(X)=0$ for $1\leq j\leq i$ and that $Z_{i}$ has no cells of dimensions $1,\dots,i$; then $Z_{i}$ has a single $0$-cell, so a map $S^{i}\to Z_{i}$ lands in the $i$-skeleton, a point, and $\pi_{i}(Z_{i})=0$; the kernel killed at stage $i$ is therefore trivial and no $(i+1)$-cells are attached, and the $(i+2)$-cells of stage $i$ realize generators of $\pi_{i+1}(X)$, of which there are none when $i+1\leq m$. Inducting from $i=0$, where the single $0$-cell is $Z_{0}$, gives that $Z$ has no cells in dimensions $1,\dots,m$. The approximation is a weak homotopy equivalence to $X$, hence a homotopy equivalence by Whitehead's theorem, both spaces being CW complexes. The same applies to $Y$. When $m=0$ the requirement is only a single $0$-cell, and when $m\geq1$ it is the absence of cells of dimensions $1$ through $m$.
+
+Because a homotopy equivalence of pairs preserves $k$-connectedness, it is enough to prove the two assertions for models $X',Y'$ obtained this way: a homotopy equivalence of pairs $(X'\times Y',X'\vee Y')\to(X\times Y,X\vee Y)$ and a homotopy equivalence $X'\wedge Y'\to X\wedge Y$ transfer each conclusion back. In the steps below $X$ and $Y$ denote these models.
 :::
 
 :::
