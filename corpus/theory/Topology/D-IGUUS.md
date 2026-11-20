@@ -16,7 +16,7 @@ review: draft
 
 ::: {.definition}
 Let $(X_\alpha, x_\alpha)_{\alpha\in A}$ be a family of based topological spaces.
-The \dfn{wedge sum} $\bigvee_{\alpha\in A} X_\alpha$ is the quotient space of the disjoint union $\coprod_{\alpha\in A} X_\alpha$ obtained by identifying all the basepoints $x_\alpha$ to a single point, which is its basepoint [@Hat02].
+The \dfn{wedge sum} $\bigvee_{\alpha\in A} X_\alpha$ is the quotient space of the disjoint union $\coprod_{\alpha\in A} X_\alpha$ obtained by identifying all the basepoints $x_\alpha$ to a single point, which is its basepoint [@Hat02, Chapter 0].
 For two based spaces, $X\vee Y$ is the quotient of $X\sqcup Y$ identifying $x_0$ with $y_0$.
 :::
 
