@@ -23,7 +23,7 @@ For a complete toric variety, convex support means base-point free, strict conve
 
 ::: {.definition title="Support function"}
 For a Cartier divisor $D = \sum a_\rho D_\rho$ the \dfn{support function} $\varphi_D : \abs{\Sigma} \to \RR$ is the unique function that is linear on each cone with $\varphi_D(u_\rho) = -a_\rho$.
-On a maximal cone $\sigma$ it is $\varphi_D = \inner{m_\sigma}{\wait}$ for the Cartier datum $m_\sigma \in M$.
+On a maximal cone $\sigma$ it is $\varphi_D = \inner{m_\sigma}{-}$ for the Cartier datum $m_\sigma \in M$.
 It is \dfn{integral} if $\varphi_D(\abs{\Sigma} \intersect N) \subseteq \ZZ$, and \dfn{upper convex} if
 $$
 \varphi_D(t u + (1-t) v) \geq t \varphi_D(u) + (1-t)\varphi_D(v) ,
