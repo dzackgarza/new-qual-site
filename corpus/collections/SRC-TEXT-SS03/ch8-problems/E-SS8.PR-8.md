@@ -125,6 +125,19 @@ audit:
     Zirui set covers "parts (a)--(c) and (f)" in outline, whereas it covers all six parts -- (a), (b),
     (c), (d) with the defective inference, (e) and (f) -- as read in
     `stein-shakarchi-book2-chapter08-solutions.tex` at its Problem 8. No mathematics changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Parts (c), (d) and (f) restored to the printed wording, word for word, read against Chapter 8,
+    Problem 8 in the retained book. The print's (c) opens "Use the fact that $a_n\in\RR$ to show
+    that $f(\DD)$ is symmetric with respect to the real axis", where the card had "Use $a_n\in\RR$"
+    and "symmetric about"; the print's (d) puts the display after "Show that for $r$ small," where
+    the card had "for small $r$" at the end of the sentence; and the print's (f) reads "Check that
+    the function $f(z)=z/(1-z)^2$ satisfies all the hypotheses and that $\abs{a_n}=n$ for all $n$",
+    where the card had "meets the hypotheses and has $\abs{a_n}=n$ for every $n$". The mathematical
+    content of the three parts is unchanged, parts (a), (b) and (e) are untouched, and the asterisk
+    remark is untouched.
 
 ---
 
@@ -138,13 +151,17 @@ $$
 
 (b) Show that $\abs{\sin(n\theta)}\leq n\sin\theta$ for $0\leq\theta\leq\pi$ and $n\geq1$.
 
-(c) Use $a_n\in\RR$ to show that $f(\DD)$ is symmetric about the real axis, and use this fact to show that $f$ maps the upper half-disc into either the upper or lower part of $f(\DD)$.
+(c) Use the fact that $a_n\in\RR$ to show that $f(\DD)$ is symmetric with respect to the real axis, and use this fact to show that $f$ maps the upper half-disc into either the upper or lower part of $f(\DD)$.
 
-(d) Show that $v(r,\theta)=r\sin\theta[1+O(r)]$ for small $r$, and use the previous part to conclude that $v(r,\theta)\sin\theta\geq0$ for all $0<r<1$ and $0\leq\theta\leq\pi$.
+(d) Show that for $r$ small,
+$$
+v(r,\theta)=r\sin\theta[1+O(r)],
+$$
+and use the previous part to conclude that $v(r,\theta)\sin\theta\geq0$ for all $0<r<1$ and $0\leq\theta\leq\pi$.
 
 (e) Prove that $\abs{a_nr^n}\leq nr$, and let $r\to1$ to conclude that $\abs{a_n}\leq n$.
 
-(f) Check that $f(z)=z/(1-z)^2$ meets the hypotheses and has $\abs{a_n}=n$ for every $n$.
+(f) Check that the function $f(z)=z/(1-z)^2$ satisfies all the hypotheses and that $\abs{a_n}=n$ for all $n$.
 :::
 
 ::: {.remark}
