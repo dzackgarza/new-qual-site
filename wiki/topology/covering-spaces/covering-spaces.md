@@ -155,11 +155,11 @@ S^1
  \ZZ^{\times n}
   \ar[r] 
 & 
-\hat{\TT^n} =\RR^n
+\hat{T}^n =\RR^n
   \ar[d] 
 \\
 & 
-\TT^n 
+T^n 
 \end{tikzcd}
 
 \begin{tikzcd}
@@ -263,11 +263,11 @@ The fundamental group of $\RP^2 \vee \RP^2$ is $\ZZ/2 \ast \ZZ/2$, and the unive
 
 :::
 
-::: {.example title="$\RP^2 \wedgeprod T^2$"}
+::: {.example title="$\RP^2 \vee T^2$"}
 The fundamental group of $\RP^2 \vee T^2$ is $\ZZ/2 \ast \ZZ^2$.
-In the tree describing the universal cover, each red vertex is a copy of $S^2$ covering $\RP^2$ and has $2$ neighbors, and each blue vertex is a copy of $\RR^2$ covering $\TT^2$ and has countably many neighbors, one for each point of $\ZZ^2$.
+In the tree describing the universal cover, each red vertex is a copy of $S^2$ covering $\RP^2$ and has $2$ neighbors, and each blue vertex is a copy of $\RR^2$ covering $T^2$ and has countably many neighbors, one for each point of $\ZZ^2$.
 
-![Universal cover of $\TT^2 \vee \RP^2$](../../../../assets/assets/Topology/figures/tree_cover.png)
+![Universal cover of $T^2 \vee \RP^2$](../../../../assets/assets/Topology/figures/tree_cover.png)
 
 :::
 
