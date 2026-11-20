@@ -334,6 +334,31 @@ audit:
     locators that the events of 2026-11-01, 2026-11-02 and 2026-11-19 carry are records of those
     passes and are left as written (QUAL-11); this event is the card's statement of the form its
     citations now take. No mathematical claim changed in this pass.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Status of the card, stated once so that no reader has to date-order the events. Every step
+    s1--s13 is read and correct as the card now writes it; the assertions of the earlier events that
+    they "were not re-derived" are records of those passes and are superseded by the events of
+    2026-11-19 above, which name them. Two further sentences of earlier events are superseded in
+    substance and are named here, because the 2026-11-19 event quotes only the "Not checked ...
+    s1--s13" clauses: the 2026-10-31 sentence that "the tangent-contact implication remains open" is
+    discharged by the step tangent-char-zero, whose characteristic-zero input is cited to Fukasawa,
+    arXiv:2108.00650v3, section 1, and whose contact-order paragraph is now proved on the card; and
+    the 2026-11-01 sentence recording that the card had no solution section is discharged by the
+    solution block the card now carries.
+
+    What is not checked, and is not a step of this card: the body of Kaji, J. London Math. Soc. (2)
+    33 (1986) 430--440. The step that uses his theorem cites the restatement it actually read, and
+    the paper is kept as the primary reference without any claim to have been read.
+
+    Citation form: every reference in the card's statement, remarks and steps is to a numbered
+    statement -- Exercise IV.6.7; the definition of multisecant in IV.3 with Proposition IV.3.7;
+    Proposition IV.3.1; Exercise IV.3.4(a), (b); Exercise IV.3.6(b); Theorem IV.6.4;
+    Proposition II.7.3; Example II.8.20.3; Remark IV.6.4.1(d) with Exercise V.2.9; and Fukasawa,
+    arXiv:2108.00650v3, section 1. No page locator appears in the card's own text.
+
 ---
 
 ::: {.problem}
