@@ -82,8 +82,8 @@ Appendix A sets its asterisk before Problem 5 only, so none stands before this p
 :::
 
 ::: {.solution}
-This is Problem 1 of Section 5 of Appendix A of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed pp. 341-343; the statement below is its wording.
-Throughout, $\eta\in C^\infty(\RR)$ is supported in a finite interval $[-b,b]$ with $b>0$, and $\eta=1$ on $(-a,a)$ for some $0<a\le b$; put $\chi=1-\eta$, so that $\chi\equiv 0$ on $(-a,a)$ and $\chi\equiv 1$ on $(b,\infty)$. We write $s^{-m-1}$ for the branch of the power on $\CC\setminus(-\infty,0]$ that is positive on $(0,\infty)$, and $\Gamma$ for Euler's gamma function, so that $\Gamma(m+1)=\int_0^\infty e^{-t}t^m\,dt$ for $m>-1$ (Chapter 6, printed p. 160). Since $N>0$ is arbitrary, it suffices to prove, for each integer $n\ge 1$, the estimate $O(\abs{s}^{-n})$ with a constant depending only on $m$, $n$ and $\eta$; the assertion for a given $N$ then follows with $n=\max(1,\lceil N\rceil)$. All estimates below are uniform for $\Re(s)\ge 0$ and $\abs{s}\ge 1$, and $s\ne 0$.
+This is Problem 1 of Section 5 of Appendix A of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`; the statement below is its wording.
+Throughout, $\eta\in C^\infty(\RR)$ is supported in a finite interval $[-b,b]$ with $b>0$, and $\eta=1$ on $(-a,a)$ for some $0<a\le b$; put $\chi=1-\eta$, so that $\chi\equiv 0$ on $(-a,a)$ and $\chi\equiv 1$ on $(b,\infty)$. We write $s^{-m-1}$ for the branch of the power on $\CC\setminus(-\infty,0]$ that is positive on $(0,\infty)$, and $\Gamma$ for Euler's gamma function, so that $\Gamma(m+1)=\int_0^\infty e^{-t}t^m\,dt$ for $m>-1$ (Chapter 6, Lemma 1.2). Since $N>0$ is arbitrary, it suffices to prove, for each integer $n\ge 1$, the estimate $O(\abs{s}^{-n})$ with a constant depending only on $m$, $n$ and $\eta$; the assertion for a given $N$ then follows with $n=\max(1,\lceil N\rceil)$. All estimates below are uniform for $\Re(s)\ge 0$ and $\abs{s}\ge 1$, and $s\ne 0$.
 
 ::: pf
 
@@ -116,7 +116,7 @@ $$
 \int_0^\infty e^{-sx}x^m\,dx=s^{-m-1}\int_0^\infty e^{-t}t^m\,dt=s^{-m-1}\Gamma(m+1),
 \tag{1}
 $$
-which is also the computation (5) of Proposition 1.2, printed p. 321.
+which is also the computation (5) of Proposition 1.2.
 Define
 $$
 D(s)=\int_0^\infty e^{-sx}x^m\eta(x)\,dx-s^{-m-1}\Gamma(m+1),\qquad T(s)=\int_0^\infty e^{-sx}x^m\chi(x)\,dx .
@@ -201,7 +201,7 @@ $$
 F_0=s^{-k}\bigl(c\,\Gamma(m-k+1)s^{-m+k-1}+O(\abs{s}^{-n})\bigr)+O\bigl(\abs{s}^{-n-1}\bigr)
 =c\,\Gamma(m-k+1)s^{-m-1}+O\bigl(\abs{s}^{-n}\bigr).
 $$
-By Lemma 1.2 of Chapter 6 (printed p. 161), $\Gamma(w+1)=w\Gamma(w)$; applied $k$ times, with all arguments $m-k+1,\dots,m$ lying in $\{\Re(w)>0\}$ because $m-k+1>0$, it gives $\Gamma(m+1)=m(m-1)\cdots(m-k+1)\Gamma(m-k+1)=c\,\Gamma(m-k+1)$. This proves the claim.
+By Lemma 1.2 of Chapter 6, $\Gamma(w+1)=w\Gamma(w)$; applied $k$ times, with all arguments $m-k+1,\dots,m$ lying in $\{\Re(w)>0\}$ because $m-k+1>0$, it gives $\Gamma(m+1)=m(m-1)\cdots(m-k+1)\Gamma(m-k+1)=c\,\Gamma(m-k+1)$. This proves the claim.
 
 :::
 
