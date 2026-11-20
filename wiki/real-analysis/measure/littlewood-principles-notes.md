@@ -20,7 +20,7 @@ In both theorems the remaining set is closed, and it depends on $\varepsilon$.
 [[FR-GG457]]
 
 ::: {.remark}
-The finite-measure hypothesis is not a technical convenience: on $\RR$, $f_n \coloneqq \chi_{[n,n+1]}$ converges pointwise to $0$, while every set on which the convergence is uniform has complement of measure at least $1$ ([[real-analysis/measure/littlewoods-principles|Littlewood's three principles]]).
+The finite-measure hypothesis is not a technical convenience: on $\RR$, $f_n \coloneqq \chi_{[n,n+1]}$ converges pointwise to $0$, while every set on which the convergence is uniform has complement of infinite measure ([[real-analysis/measure/littlewoods-principles|Littlewood's three principles]]).
 On a set of finite measure, almost everywhere convergence therefore implies [[FD-D7HOH|convergence in measure]].
 :::
 
