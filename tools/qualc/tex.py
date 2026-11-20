@@ -164,7 +164,7 @@ def macro_body(definition: str | list) -> str:
 def unrenderable_tex(
     pandoc: PandocServer,
     documents: list[tuple[str, str]],
-    preamble: dict[str, str],
+    preamble: dict[str, str | list],
 ) -> list[Diagnostic]:
     """Report raw TeX the HTML writer drops and macros nothing defines.
 
