@@ -111,7 +111,7 @@ If moreover $U = \CC$, then $f$ is constant if any of the following holds:
 - $\abs f\geq M$ for some $M>0$, by Liouville's theorem applied to $1/f$.
 - $e^f$ or $e^{-f}$ is bounded, since $\abs{e^{f}} = e^{\Re f}$.
 - $f$ is periodic with two $\RR$-linearly independent periods, since then $f$ is bounded by its bound on a closed fundamental parallelogram.
-- $f$ omits two values of $\CC$, for instance when $f(\CC)$ misses an open set (little Picard theorem).
+- $f$ omits two values of $\CC$, for instance when $f(\CC)$ misses an open set ([[T-HWBWI|little Picard theorem]]).
 
 If $f$ and $g$ are holomorphic on a domain $U$ and $f-g$ has a zero set with a limit point in $U$, then $f = g$ ([[complex-analysis/cauchy-theory/the-identity-principle|identity principle]]).
 
@@ -133,7 +133,7 @@ A meromorphic function $f$ and its derivative $f'$ have the same poles, and at s
 :::
 
 ::: {.fact}
-If $h$ has an essential singularity at $z_0$, then by the great Picard theorem, in every punctured neighborhood of $z_0$, $h$ takes every value of $\CC$ infinitely often with at most one exception.
+If $h$ has an essential singularity at $z_0$, then by the [[T-DDOWW|great Picard theorem]], in every punctured neighborhood of $z_0$, $h$ takes every value of $\CC$ infinitely often with at most one exception.
 With $h \coloneqq f/g$, this shows $f(z) = cg(z)$ for infinitely many $z$ near $z_0$, for all but at most one $c\in\CC$.
 
 :::
