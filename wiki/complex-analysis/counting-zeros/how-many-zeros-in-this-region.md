@@ -29,6 +29,8 @@ For a polynomial whose roots can be computed, the factorization gives the zeros 
 - A zero of $f$ of multiplicity $m\geq2$ is a zero of $f'$, and a solution of $f(z) = a$ of multiplicity $m\geq2$ is a zero of $f'$.
 
 - $f$ and $f-w$ have the same derivative, so the multiple solutions of $f(z) = w$, for every $w$, lie among the zeros of $f'$.
+
+Both follow from the factorisation of a [[D-65VIK|zero of order $m$]]: $f(z)=(z-z_0)^mg(z)$ with $g(z_0)\neq0$ gives $f'=(z-z_0)^{m-1}\qty{mg+(z-z_0)g'}$, whose bracket is $mg(z_0)\neq0$ at $z_0$, so $f'$ vanishes at $z_0$ to order $m-1\ge1$; and $f-w$ differs from $f$ by a constant, so the two have the same derivative.
 :::
 
 ## A dominant term on the boundary
