@@ -33,12 +33,12 @@ Every sequence converging in $L^p$ has a subsequence converging almost everywher
 ## Measure
 
 ::: {.example title="A subset of $\RR$ that is not Lebesgue measurable"}
-The Vitali set, a set of representatives of $\RR/\QQ$ in $[0,1]$ chosen using the axiom of choice, is not Lebesgue measurable.
+[[T-KZNWM|The Vitali set]], a set of representatives of $\RR/\QQ$ in $[0,1]$ chosen using the axiom of choice, is not Lebesgue measurable.
 
 :::
 
 ::: {.example title="A Lebesgue measurable set that is not Borel"}
-The Lebesgue $\sigma$-algebra is the completion of the Borel $\sigma$-algebra.
+The Lebesgue measurable sets are the Borel sets together with null sets: $E\in\mathcal L$ if and only if $E=H\cup N$ with $H$ a Borel set and $m(N)=0$, so $\mathcal L$ is the completion of the Borel $\sigma$-algebra [@Fol99, Theorem 1.19].
 Let $c$ be the Cantor function and $\psi(x) \coloneqq x + c(x)$, a homeomorphism $[0,1]\to[0,2]$ that maps the Cantor set $C$ onto a set of measure $1$.
 Choose a non-measurable $A\subseteq\psi(C)$ and put $B\coloneqq\psi^{-1}(A)\subseteq C$.
 Then $B$ is Lebesgue measurable, being a subset of the null set $C$, but $B$ is not Borel, since $\psi(B)=A$ is the preimage of $B$ under the continuous map $\psi^{-1}$ and preimages of Borel sets under continuous maps are Borel.
