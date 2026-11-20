@@ -9316,3 +9316,54 @@ read only its first two lines of.
 **Checks.** No card changed, so no `qualc.authoring check` was run on a card; the printed statements of III.11.7 and III.12.3 were read in the sixth round at printed pp. 281 and 291--292.
 
 **Uncertainty.** Read for this record: III.12.3's `s1` and `s2` and V.3.8's `a-branches-separate`, `b-resolves-after-blowup` and the two $\delta$ steps, with both blowup computations redone here; and the earlier steps of V.3.8 were not re-read. Not read: III.12.3's remark, beyond the sentence quoted, and the sources' printed pages as such. #168 is still not met for IV.2.3(h), IV.3.11(b), V.2.12, V.2.13, V.3.6, V.3.7, V.4.16, V.5.6 and V.5.8(b).
+
+## 2026-11-19, Yang sweep: IV.4.20 and IV.4.21 cited, §IV.4 finished; two cards this batch
+
+**Object.** Two Chapter IV cards of `SRC-TEXT-HART77`, against Yang Pi-Yeh, *Hartshorne Solutions*
+(9 June 2019), retained as `tmp/sources/lfwin-hartshorne-solutions.pdf`, whose PDF pages are its
+printed pages. Entry 4.4.20 begins on printed p. 94 and its part (d) is at the head of p. 95;
+4.4.21 and 4.4.22 follow on p. 95. **This batch is two cards, not the usual three**: 4.4.20 needed
+p. 95 read for its last part, and the third slot of the turn went to reading that page rather than to
+a card read on a guess.
+
+**`P-AGH4420ENDOMORPHISMRINGCHARP`, IV.4.20 — cited, printed pp. 94--95, one misstated step.**
+(a) writes the Legendre curve's twist $y^2=x^3-(\lambda+1)^{1/p}x^2+\lambda^{1/p}x$ and gets
+$j(X_p)=j(X)^{1/p}$, hence $X\cong X_p$ exactly when $j\in\FF_p$. (b) factors $[p]_X=\pi\hat\pi$ with
+both factors of degree $p$ when $X\cong X_p$, and reads off Hasse zero exactly when the two are
+associates, by (2.5). (c) is on printed p. 94: Hasse zero makes $\hat F'$ purely inseparable, so
+$[p]_X=F'\hat F'$ is purely inseparable of degree $p^2$, giving $X_{p^2}\cong X$ and
+$j_X=j_X^{p^2}$, i.e. $j_X\in\FF_{p^2}$. (d) defines $\lambda_f$ by $f^*=\lambda_f$ on the
+one-dimensional $H^1(\OO_X)$ and concludes $\lambda_f\in\FF_p$ and $R/\mathfrak p\cong\FF_p$. The
+conclusion stands and two printed steps do not: the commutation $f\circ F=F\circ f$ is said to follow
+from $(f_i)^p=f_i(x^p,y^p,z^p)$ "since they are all in $k$", an identity that needs the coefficients
+in $\FF_p$ --- what is true is that $f^*$ and $F^*$ are both the $p$-th power map on the structure
+sheaf, so they commute for every $f$ over $k$ --- and the displayed comparison writes $F^*$ applied to
+a scalar, where the step that works is $F^*(\lambda_fv)=\lambda_f^pF^*(v)\ne\lambda_fF^*(v)$ for
+$\lambda_f\notin\FF_p$, against $F^*f^*=f^*F^*$. Both recorded on the card. Commit `819798b618`.
+
+**`P-AGH4421CONDUCTOROFANORDER`, IV.4.21 — cited, printed p. 95, one restriction of scope.** With
+$\OO=\ZZ\oplus\ZZ\omega$ and $f$ the least positive integer with $f\omega\in R$, any
+$a+b\omega\in R$ has $b\omega\in R$ since $\ZZ\subseteq R$, and $b=qf+r$ leaves $r\omega\in R$ with
+$0\le r<f$, so $r=0$ and $f\mid b$; hence $R=\ZZ\oplus\ZZ(f\omega)=\ZZ+f\OO$, and $f$ is unique
+because it is determined by $R$. The printed $\omega=\frac{d+\sqrt d}{2}$ generates $\OO$ only when
+$-d\equiv1\bmod4$, where it spans the same lattice as $\frac{1+\sqrt d}{2}$; for
+$-d\equiv2,3\bmod4$ one must take $\omega=\sqrt d$, and the entry does not split on that residue, so
+it proves the statement in one of the two shapes. Recorded on the card. Commit `4f2d8b837e`.
+
+**§IV.4 is now complete on both sides**: every Chapter IV card from IV.4.1 to IV.4.21 carries a Yang
+citation, and the sweep's queue has crossed into §IV.5.
+
+**Checks, per card.** `./.venv/bin/python -m qualc.authoring check <id>` printed
+`schema and Markdown parsing OK (single card)`; `bash tmp/lam.sh <file>` numbered $1$--$11$ and
+$1$--$4$ with `(QED labels present)`; `qualc.card_completeness.check_card` returned `[]`;
+`qualc.authoring.raw_notation` returned `None` on both at the first attempt; the macro sweep reported
+only standard names (`\sharp`, `\varphi`). Both pushes were refused `non_fast_forward` and a fetch then
+showed both card commits already on `main`, carried by a sibling's push.
+
+**Not checked.** Yang's Solutions outside printed pp. 94--95; the Hartshorne pages of the two
+exercises, not reopened in this pass, the comparison being against the statements the cards carry; and
+the printed book itself. The citation of (2.5) inside 4.4.20(b) was taken from the text.
+
+**The remainder.** Fifteen cards still lack Yang, all now in §IV.5; the queue starts at IV.5.1
+`P-AGH451HYPERELLIPTICNOTCOMPLETEINTERSECTION`. Yang's 4.5.1--4.5.3 are on printed p. 95 and
+4.5.4--4.5.6 on p. 96, so the next batch reads p. 95 from the entry 4.4.22 downward.
