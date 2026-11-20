@@ -27,6 +27,13 @@ audit:
       checkout; the statement is as transcribed on the card. No retained solution
       set covers the exercise (the collection's provenance is a Google Books
       record), so the argument is the card's own. No statement repair.
+  - event: source-corrected
+    by: claude
+    date: 2026-11-20
+    note: >-
+      The solution's opening sentence cited the book through the printed page. It now cites the
+      numbered statement, Chapter 3, Exercise 4, and the page is gone from the rendered text. The
+      statement is unchanged and the argument was not re-read in this pass.
 ---
 
 ::: {.exercise}
@@ -37,7 +44,7 @@ $$
 :::
 
 ::: {.solution}
-The statement is Exercise 4 of [@SS03, ch. 3 (p. 103)], printed as $\int_{-\infty}^\infty\frac{x\sin x}{x^2+a^2}\,dx=\pi e^{-a}$ for $a>0$. No retained solution set covers this exercise: the collection's provenance is a Google Books record, so the argument is the card's own. Let $a>0$ and put
+The statement is Exercise 4 of [@SS03, ch. 3], printed as $\int_{-\infty}^\infty\frac{x\sin x}{x^2+a^2}\,dx=\pi e^{-a}$ for $a>0$. No retained solution set covers this exercise: the collection's provenance is a Google Books record, so the argument is the card's own. Let $a>0$ and put
 $$
 F(z)=\frac{z\,e^{iz}}{z^2+a^2},
 $$
