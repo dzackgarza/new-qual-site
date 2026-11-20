@@ -18,20 +18,7 @@ Adding to $M$ a function $m$ with $\abs{m} < \abs{M}$ on the boundary curve does
 
 ## Forms of the hypothesis
 
-::: {.remark}
-Let $f$, $g$, $M$, $m$ be holomorphic on a neighborhood of the closed region bounded by $\gamma$, and write $Z_h$ for the number of zeros of $h$ inside $\gamma$.
-
-- For $f = M + m$ with $\abs{m} < \abs{M}$ on $\gamma$, $Z_f = Z_M$; the theorem gives a count when $Z_M$ is known.
-
-- If $\abs{m} < \abs{M}$ on $\gamma$, then $\abs{\pm m}<\abs M$, so each of $\pm(M \pm m)$ has $Z_M$ zeros.
-
-- If $\abs{f-g} < \abs{f}$ on $\gamma$, then $Z_f = Z_g$.
-  The symmetric form of Rouché's theorem reaches the same conclusion from $\abs{f-g} < \abs f + \abs g$ on $\gamma$.
-
-- If $\abs{f-g} < 1$ on $\gamma$ and $\abs f \geq 1$ or $\abs g \geq 1$ on $\gamma$, then $Z_f = Z_g$.
-
-- For partial sums $f_n$ of a power series of $f$: if $\abs f\geq L$ and $\abs{f - f_n}\leq U$ on $\gamma$ with $U < L$, then $Z_f = Z_{f_n}$.
-:::
+[[T-CJCKL]]
 
 ::: {.example title="Zeros of a monic polynomial in a disc"}
 Let $p(z) = z^d + a_1z^{d-1} + \cdots + a_d$ with $\abs{a_i} < R^i/d$ for each $i$.
