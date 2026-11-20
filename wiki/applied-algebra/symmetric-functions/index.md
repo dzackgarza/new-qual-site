@@ -11,7 +11,7 @@ topics:
 
 ## Bases
 
-Each of the following families, indexed by the partitions $\lambda$ of $d$, is a basis of $\Lambda^d$ [@FH91, Appendix A]: the monomial symmetric functions, the [[D-FK47C|elementary symmetric functions]] $e_\lambda$, the complete homogeneous symmetric functions, the power sums, and the Schur functions.
+Each of the following families, indexed by the partitions $\lambda$ of $d$, is a basis of $\Lambda^d\otimes\QQ$ [@FH91, Appendix A]: the monomial symmetric functions, the [[D-FK47C|elementary symmetric functions]] $e_\lambda$, the complete homogeneous symmetric functions, the power sums, and the Schur functions. Over $\ZZ$ the families $e_\lambda$, $h_\lambda$, $m_\lambda$ and $s_\lambda$ are bases of $\Lambda^d$, but $p_\lambda$ is not: for instance $e_2=(p_1^2-p_2)/2$.
 
 [[D-MSYMF]]
 
@@ -29,7 +29,7 @@ Newton's identities relate the power sums to the elementary symmetric functions:
 $$
 p_k - e_1p_{k-1} + \cdots + (-1)^{k-1}e_{k-1}p_1 + (-1)^k k e_k = 0,
 $$
-which is the expansion of $\sum_i \prod_{j\neq i}(t - x_j)$ evaluated at $t = x_i$ and summed over $i$; over a field in which $k$ is invertible, it expresses $e_k$ in terms of $p_1,\ldots,p_k$, so the two bases determine one another.
+which for $1\leq k\leq n$ is the coefficient identity obtained from $-\frac{d}{dt}\log\prod_i(1-x_it)=\sum_{k\geq1}p_kt^{k-1}$, and for $k>n$ has its last term dropped, the sum ending at $(-1)^ne_np_{k-n}$; over a field in which $k$ is invertible, it expresses $e_k$ in terms of $p_1,\ldots,p_k$, so the two bases determine one another.
 
 By [[T-JTRUDI|the Jacobi--Trudi identity]], $s_\lambda$ is the determinant $\det(h_{\lambda_i - i + j})$ of complete homogeneous symmetric functions, of size $\ell(\lambda)$ and independent of the size of the determinant once that exceeds $\ell(\lambda)$.
 
