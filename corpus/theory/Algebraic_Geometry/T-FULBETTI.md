@@ -32,6 +32,8 @@ Then the odd Betti numbers vanish and
 $$
 \beta_{2k} = \sum_{i=k}^{n} (-1)^{i-k} \binom{i}{k} \size \Sigma(n-i) .
 $$
+
+The formula is Cox--Little--Schenck, *Toric Varieties*, Theorem 12.3.12, stated there for a complete simplicial fan — a smooth complete fan being simplicial, this card's hypothesis is the stronger one — together with the symmetry $\beta_{2k}=\beta_{2n-2k}$ that the same theorem records. The vanishing of the odd Betti numbers is Theorem 12.3.11 of the same chapter, whose object is that the cohomology of a complete simplicial toric variety is concentrated in even degrees and computed by the Danilov--Jurkiewicz spectral sequence (12.3.11). Neither work has a key in `vocabularies/references.yaml`, so the attribution is by author, title and statement number.
 :::
 
 ::: {.theorem title="Two special cases"}
