@@ -40,6 +40,17 @@ audit:
     mathematics and so reaches the reader literally. The forty occurrences now read `\mathcal{F}`, and
     that sentence now names the macro inside math. No mathematics was changed.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The remark's provenance sentence called `\wait` an undefined control word that "has been
+    replaced by the macro this card uses everywhere else, $\mathcal{F}$". `vocabularies/macros.json`
+    defines `\wait` as `{-}`, so it is not undefined, and the sentence itself wrote the argument of
+    $\Gamma(U,-)$ as a dash rather than as $\mathcal{F}$. The sentence is deleted and the duplicate
+    provenance paragraph that commit dfba611652 added beside it is collapsed into one. No mathematics
+    was changed.
+
 ---
 
 ::: {.problem}
@@ -141,8 +152,6 @@ Step [](#exact-sequence){.pf-ref} is the required left-exact sequence.
 :::
 
 ::: {.remark}
-The exercise stands on printed p. 66 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, the left exactness of $\Gamma(U,-)$ on sheaves of abelian groups and the presheaf counterexample included.  The undefined control word `\wait` that stood for the sheaf in $\Gamma(U,-)$ has been replaced by the macro this card uses everywhere else, $\mathcal{F}$, written out in full.
-
 The exercise stands on printed p. 66 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, the left exactness of $\Gamma(X,\cdot)$ on sheaves of abelian groups and the counterexample on presheaves included.
 
 The functor $\Gamma(U, \mathcal{F})$ is not exact in general; Hartshorne II.1.21 supplies a counterexample on $\PP^1$.
