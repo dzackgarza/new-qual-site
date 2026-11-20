@@ -62,6 +62,10 @@ $$
 [Hint: For (b), use (a), or alternatively, apply Problem 4 in Chapter 5 to the power series for $\operatorname{Ai}$. Compare also with Problem 1, Chapter 4.]
 :::
 
+::: {.remark}
+Appendix A sets its asterisk before Problem 5 only, so none stands before this problem (Appendix A, Problem 3).
+:::
+
 ::: {.solution}
 No retained solution set covers this problem: the argument below is the card's own, with the printed sources it uses named at each step, and the defect in the printed display is dealt with first. The statement was checked against Stein--Shakarchi, *Complex Analysis*, Appendix A, §5, Problem 3, printed pp. 341--343.
 
