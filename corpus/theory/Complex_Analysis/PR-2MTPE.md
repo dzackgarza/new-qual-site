@@ -31,6 +31,8 @@ $$
 $$
 A_{n} B_{n}=\sum_{k=1}^{n} A_{k} b_{k}+\sum_{k=1}^{n} a_{k} B_{k-1}.
 $$
+
+Part (a) is [@Rud76, ch. 3, Theorem 3.41], the partial summation formula, with his $p,q$ written $m,n$: his right-hand side $\sum_{k=m}^{n-1}A_k(b_k-b_{k+1})+A_nb_n-A_{m-1}b_m$ is the display in (a) with the summand's sign reversed. Parts (b) and (c) are the same identity in the two other conventional notations and are not separate statements in the book.
 :::
 
 ::: {.remark}
