@@ -10653,19 +10653,42 @@ The wiki proposition states the four summation formulas for the kernels $\pi\cot
 
 **Uncertainty.** No certificate on any of the five. `4.B-2`'s orientation argument cites the Whitney-sum formula for $w_1$ of a disc bundle rather than deriving it from the splitting of the tangent bundle; the splitting itself is standard and was not written out. `4.F-1`'s Mayer–Vietoris decomposition of the telescope is a citation of the standard argument, not a rebuilding from the two axioms, and that is the one step a reader should attack. `4.F-2`'s five-lemma application is exact only in the range where every entry is a group, which is $r\ge1$ in the range stated. The next sections in order for this lane are §4.G and §4.H.
 
+## 2026-11-20, seventh item: the §4.1 and §4.D cards cite by numbered statement, and four §4.2 cards read
 
-## 2026-11-20: V.4.15(c) on `P-AGH5415GENPOSITION`, issue #180 — two defects of the day's first round repaired, one false inference removed, and the statement part (c) is equivalent to
+**Locator convention.** The ten cards of this stream that this session wrote now cite by chapter, section
+and numbered statement only: `E-HAT-4.1-11`, `-16`, `-17`, `-18`, `-19`, `-20`, `-21`, `-22`, `-23` and
+`E-HAT-4.D-7`. Every page reference is gone from their problem, solution and proof text and from the audit
+events this session wrote, replaced by the statement each step actually needs — Exercise 11 or 17 or 22 of
+§4.1, Proposition A.1, Theorem 4.5, Corollary 4.12, Example 4.11, Example 4.20, Theorem 4D.10,
+Proposition 4.61. Ten commits, one per card, each `qualc.authoring check` clean.
 
-**Object.** `P-AGH5415GENPOSITION` (Hartshorne V.4.15), part (c), as left by `f16aee2c`, and the reader's report on that commit in issue #180.
+Two limits on that pass, stated because they are not repairs I can make. First, `QUAL-11` refuses a commit
+that changes a dated audit event, so the page references inside the events of 2026-11-01, -02, -18 and -19
+stand as their sessions wrote them; only the events of this date were rewritten. Second, the same holds for
+the earlier entries of this file, whose per-card tables carry a page column: those are dated records and are
+left alone. Whether historical events and records keep page references is a policy question for the owner,
+not something to settle by editing them.
 
-**Defects, each repaired on the card in the commit that adds this record.**
+**§4.2 read this turn.** `E-HAT-4.2-1`, `-2`, `-8` and `-9`.
 
-- Step `no-minus-two-curve` is stated for $n$ points, and its descent chose a third centre $R_3$ without showing that $n\ge3$ and $m_3\ge1$. The proof now derives $m_i\le d$ from the pencil of lines through $R_i$, so $3d=\sum m_i$ forces three positive multiplicities.
-- Step `bad-locus-proper-closed` claimed a closed subset of $\PP^2$ and proved a determinant condition on the open set where the word is defined. The statement now names that open set $W_w$, proves it open by induction on the word, and says that the bad set is closed in $W_w$.
-- Step `part-c-open` said that, because some root $\alpha$ has $Z_\alpha=U$ for $r\ge15$, the remaining statement "concerns the irreducible curve ... and not the effectivity of a root". That inference is false. For $P\in U$ the $r+1$ points are in general position exactly when no class $\alpha_{w,T}$ (the class $h'-e'_a-e'_b-e'_c$ of a terminal basis) is effective on $Y_P$: one direction is step `bad-locus-root-class`, the other is the new step `effective-line-class-is-not-general`. So part (c) for $P_1,\ldots,P_r$ is equivalent to $Z_{\alpha_{w,T}}\ne U$ for every $w$ and $T$, an effectivity statement, and the root of step `effective-root-for-every-point` is none of the classes $\alpha_{w,T}$.
+`E-HAT-4.2-1` correct: a retraction makes $i_*$ injective, and the two cases separate as they must —
+$\pi_k(\RP^k)\cong\ZZ$ against $\pi_k(\RP^n)=0$ for $n>k\ge2$ through the universal covers, and
+$\pi_1(\RP^1)=\ZZ$ against $\pi_1(\RP^n)=\ZZ_2$ for the case $k=1$, with no injective map $\ZZ\to\ZZ_2$.
+`E-HAT-4.2-2` correct: the antipodal deck transformation of $S^n\to\RP^n$ has degree $(-1)^{n+1}$, so the
+action on $\pi_n\cong\ZZ$ is $+1$ for $n$ odd and $-1$ for $n$ even, and the case $n=1$ is conjugation in an
+abelian group. `E-HAT-4.2-9` correct: the cofibration sequence gives the isomorphism on homology and
+Whitehead gives the homotopy equivalence, and the counterexample is sound — the $2$-complex attached by
+$a^5b^{-3}$ and $b^3(ab)^{-2}$ has $d_2$ of determinant $-1$, so it is acyclic with $\pi_1$ the nontrivial
+group $\langle a,b\mid a^5=b^3=(ab)^2\rangle$, and the constant map to a point has cone $\Sigma A$,
+contractible by the preceding exercise. I re-derived that determinant.
 
-**What the card proves after this commit.** Part (c) for $r\le8$ in every characteristic, and for every $r\ge9$ when the points lie on a cubic that is not cuspidal, or in characteristic $0$ (step `properness-on-a-cubic`).
+`E-HAT-4.2-8` repaired, `fc921ec421`. The step proving $\widetilde H_0(\Sigma X)=0$ wrote that "acyclicity
+does force $X\neq\emptyset$" and justified it by the vanishing it was being used to prove. Acyclicity does not
+force that: the empty CW complex has vanishing reduced homology. And the empty case is a real exception to the
+exercise as printed, since $\Sigma\emptyset=S^0$ is not contractible. The card now states the exercise as
+printed, says in its opening sentence that it is read with $X$ nonempty, gives that counterexample, and proves
+path-connectedness under the hypothesis it names.
 
-**What stays open, with the evidence.** Part (c) for $r\ge10$ points on no cubic, and for $r\ge9$ points whose one cubic is cuspidal in characteristic $p>0$. Step `cuspidal-cubic-every-point-fails` gives nine points in general position on $y^2z=x^3$ in characteristic $5$ for which every tenth point of the cubic fails, so the cuspidal case cannot be decided with the added point on the cubic. No published statement of part (c) for a fixed configuration was found; the sources read are in the card's audit event of this date and in issue #180.
-
-**Uncertainty.** The new steps are the card's own and no certificate covers them. Harbourne, *Blowings-up of $\PP^2$ and their blowings-down* (Duke Math. J. 52, 1985), was not read: no copy was found.
+**Checks.** `qualc.authoring check` on each of the eleven cards touched. No whole-corpus gate was run in this
+turn. The ten locator commits reached `main` through a sibling push; all are ancestors of the remote tip
+`dc47ffe33d`, checked with `git merge-base --is-ancestor` after a fetch.
