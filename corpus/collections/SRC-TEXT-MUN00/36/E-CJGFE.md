@@ -106,7 +106,7 @@ audit:
 
 ::: {.exercise}
 
-Consider the seventeen properties listed at the head of the Supplementary Exercises (Review of the Basics), printed p. 228.
+Consider the seventeen properties listed at the head of the Supplementary Exercises (Review of the Basics).
 
 Which of these properties are preserved when one passes to a subspace?
 To a closed subspace?
