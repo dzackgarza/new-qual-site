@@ -473,10 +473,9 @@ audit:
     (2) Page locators. The card's statement, remark and steps carry none: every
     reference is to a numbered statement, and the transcription added under (3) is
     cited as Andrew Egbert, Solutions to Hartshorne's Algebraic Geometry, Exercise
-    IV.6.7, with no page. The page locators that the reader's report finds are not
-    in the card's text: every one of them lies inside a dated event of 2026-11-19
-    or 2026-11-20, which records what that pass read and where, and this event
-    names none of them by page or by line, since both would rot. A dated event is append-only
+    IV.6.7, with no page. The reader's line numbers 159, 182--187 and 247--252
+    are not in the card's text: they lie inside the dated events of 2026-11-19,
+    which record what those passes read and where. A dated event is append-only
     under QUAL-11, and tools/qualc/authoring.py refuses a commit that changes or
     deletes one, so those locators remain as the record of their day; this event
     is the card's statement that no page locator stands in its own text.
@@ -504,6 +503,33 @@ audit:
     exercise in tmp/sources/hartshorne-solutions-egbert.md. Not checked: the body
     of Kaji 1986, as before, the step resting on the restatement in Fukasawa,
     arXiv:2108.00650v3, section 1.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    A restoration and two corrections of the record above, all of the same day.
+    The event above was edited in place by a later commit of this day: its
+    paragraph on page locators was rewritten once and then rewritten again. That
+    edit is withdrawn, and the event carries again, whole, the text it carried
+    when it was written, which is the change QUAL-11 asks for in place of a
+    rewrite. The one substantive point of the later text is kept here instead: a
+    line number is a position in a file that is being rewritten, so this event
+    names none, and the page locators the reader's report finds stand only inside
+    the dated events that record what those passes read. Nothing in the card's
+    statement, remark or solutions carries one.
+
+    The transcription block of the same day was revised by the two commits that
+    follow, and this event is the record of that revision. The block now names
+    three places where Egbert's text is terse or wrong, not two: the third is his
+    degree-four sentence "the genus is 0,1 depending on nodes", which is wrong of
+    X because his own projection formula gives g = 1 there. His "any degree term
+    higher than 3" is now stated as being read as "degree at least 3", and the
+    rational-quartic step is scoped to the model that Example II.7.8.6 exhibits,
+    where the type (1,3) and the trisecants of one ruling are checked, since the
+    general sentence is not among the results the book states at that point.
+    Nothing in the card's own proof changes in either commit, and no step of
+    s1--s13 changes.
 
 ---
 
