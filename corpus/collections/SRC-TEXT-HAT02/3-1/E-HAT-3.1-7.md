@@ -83,7 +83,7 @@ is multiplication by $m$.
 
 ::: pf-proof
 
-Theorem 2.35 with the Cellular Boundary Formula (p.140): with one $1$-cell and one $2$-cell attached by a map of degree $m$, the cellular boundary $H_2(X,A)\to H_1(A)$ is multiplication by $m$, since the only incidence number is the degree of the attaching map. This is the Moore space $M(\ZZ_m,1)$ of Exercise 11.
+Theorem 2.35 with the Cellular Boundary Formula of §2.2: with one $1$-cell and one $2$-cell attached by a map of degree $m$, the cellular boundary $H_2(X,A)\to H_1(A)$ is multiplication by $m$, since the only incidence number is the degree of the attaching map. This is the Moore space $M(\ZZ_m,1)$ of Exercise 11.
 
 :::
 

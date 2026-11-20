@@ -75,7 +75,7 @@ For an abelian group $H$ choose a free resolution
 $$
 0\longrightarrow F_1\xrightarrow{d_1}F_0\xrightarrow{\varepsilon}H\longrightarrow0,
 $$
-which exists with $F_0$ free on a set of generators of $H$ and $F_1=\ker\varepsilon$ free, being a subgroup of a free abelian group (Hatcher, p. 195). Applying $\operatorname{Hom}(-,G)$ gives the cochain complex
+which exists with $F_0$ free on a set of generators of $H$ and $F_1=\ker\varepsilon$ free, being a subgroup of a free abelian group (Hatcher, §3.1). Applying $\operatorname{Hom}(-,G)$ gives the cochain complex
 $$
 0\longrightarrow\operatorname{Hom}(F_0,G)\xrightarrow{d_1^*}\operatorname{Hom}(F_1,G)\longrightarrow0,
 \qquad d_1^*(\varphi)=\varphi\circ d_1,
