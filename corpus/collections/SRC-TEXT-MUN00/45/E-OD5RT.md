@@ -16,7 +16,7 @@ audit:
   by: claude
   date: 2026-11-11
   note: >-
-    No complete published solution of Munkres §45 Exercise 1 (printed p. 280) was located; the sets searched are listed in
+    No complete published solution of Munkres §45 Exercise 1 was located; the sets searched are listed in
     the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. Checked line by line against the book, with
     Exercise 20.3(b) for the metric D on the product, Theorem 45.1 (compact iff complete and totally
     bounded), Theorem 28.2 for sequential compactness and the definition of total boundedness in §45. The
@@ -58,7 +58,19 @@ audit:
     recorded here and in the COMPLAINTS.md entry for §43--§50 as located with its formulas
     unreadable, the site answering an automated request with a Cloudflare human check, which is not
     worked around.
-
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card stood in queue D: its solution was prose with no numbered step. It is now a `pf`
+    with seven steps, each carrying a `pf-proof`: the empty-product case, the choice of $N$ and
+    the finite nets, the $\varepsilon$-net and total boundedness, the coordinatewise convergence
+    of a $D$-Cauchy sequence, the convergence in $D$, and the appeal to Theorem 45.1. The
+    arguments are the card's own and the statement is unchanged. Cited by number only:
+    Exercise 20.3(b) for the metric $D$ and the product topology, Theorem 28.2 for sequential
+    compactness of a compact metric space, Theorem 45.1 (complete and totally bounded implies
+    compact), and the definition of total boundedness in §45. One page citation in the earliest
+    event is removed under the citation rule now in force.
 ---
 ::: {.exercise}
 
@@ -74,17 +86,96 @@ Conclude without using the Tychonoff theorem that a countable product of compact
 :::
 
 ::: {.solution}
-If some $X_i$ is empty, the product is empty and both claims follow. Assume every factor is nonempty.
 
-Fix $\varepsilon>0$. Choose $N$ so large that $1/(N+1)<\varepsilon$. For each $1\le i\le N$, total boundedness of $(X_i,d_i)$ (equivalently of $(X_i,\bar d_i)$) gives a finite $\varepsilon i$-net $F_i\subset X_i$ for $\bar d_i$. Choose arbitrary basepoints $a_i\in X_i$ for $i>N$. The finite set
+::: pf
+
+::: pf-step
+
+If some $X_i$ is empty, the product is empty and both claims follow; assume every factor is nonempty.
+
+::: pf-proof
+
+A product with an empty factor is empty, and the empty metric space is totally bounded (the empty set is an $\varepsilon$-net for every $\varepsilon$) and compact (every open cover has the empty subcover). So the two assertions are trivial in that case, and the arguments below may choose basepoints in each factor.
+
+:::
+
+:::
+
+::: pf-step
+
+Fix $\varepsilon>0$ and choose $N$ with $1/(N+1)<\varepsilon$. For each $1\le i\le N$, total boundedness of $(X_i,d_i)$, equivalently of $(X_i,\bar d_i)$, gives a finite $\varepsilon i$-net $F_i\subset X_i$ for $\bar d_i$.
+
+::: pf-proof
+
+Such an $N$ exists because $1/(N+1)\to0$. On $X_i$ the metrics $d_i$ and $\bar d_i=\min(d_i,1)$ have the same Cauchy sequences and the same totally boundedness: a set is $\delta$-dense for $d_i$ if and only if it is $\delta$-dense for $\bar d_i$ whenever $\delta\le1$, and for $\delta>1$ the whole space is $\delta$-dense for $\bar d_i$. So total boundedness of $(X_i,d_i)$ supplies a finite $F_i$ with every point of $X_i$ within $\varepsilon i$ of it in $\bar d_i$.
+
+:::
+
+:::
+
+::: pf-step
+
+Choose basepoints $a_i\in X_i$ for $i>N$; then
 $$
 F=F_1\times\cdots\times F_N\times\prod_{i>N}\{a_i\}
 $$
-is an $\varepsilon$-net for $X$: given $x$, choose $y_i\in F_i$ with $\bar d_i(x_i,y_i)<\varepsilon i$ for $i\le N$ and put $y_i=a_i$ afterwards. Then for $i>N$,
-$$
-\bar d_i(x_i,y_i)/i\le1/i<\varepsilon,
-$$
-so $D(x,y)<\varepsilon$. Thus $(X,D)$ is totally bounded.
+is finite, and for every $x\in X$ there is $y\in F$ with $D(x,y)<\varepsilon$.
 
-If every $X_i$ is compact, each is complete. A $D$-Cauchy sequence is Cauchy in every coordinate because $\bar d_i(x_i,y_i)\le iD(x,y)$; hence it converges coordinatewise to some $x\in X$. Given $\varepsilon>0$, choose $N$ with $1/(N+1)<\varepsilon$; the terms with $i>N$ in $D(x^{(k)},x)$ are at most $1/(N+1)$, and the finitely many terms with $i\le N$ are less than $\varepsilon$ for large $k$. So $x^{(k)}\to x$ in $D$, and $X$ is complete. A complete totally bounded metric space is compact. Hence the countable product of compact metrizable spaces is compact, without invoking Tychonoff.
+::: pf-proof
+
+$F$ is a product of finitely many finite sets and singleton factors, hence finite, and nonempty because every factor is nonempty. Given $x$, choose $y_i\in F_i$ with $\bar d_i(x_i,y_i)<\varepsilon i$ for $i\le N$, possible by step 2, and put $y_i=a_i$ for $i>N$; then $y\in F$. For $i\le N$ the $i$-th term of the supremum is below $\varepsilon$, and for $i>N$ it is $\bar d_i(x_i,y_i)/i\le1/i\le1/(N+1)<\varepsilon$; hence $D(x,y)\le\varepsilon$, and the bound is strict because all terms are.
+
+:::
+
+:::
+
+::: pf-step
+
+Thus $(X,D)$ is totally bounded.
+
+::: pf-proof
+
+Step 3 produces, for every $\varepsilon>0$, a finite $\varepsilon$-net $F$; that is the definition of total boundedness for the metric $D$ of Exercise 20.3(b).
+
+:::
+
+:::
+
+::: pf-step
+
+If every $X_i$ is compact then each is complete, and a $D$-Cauchy sequence is Cauchy in every coordinate because $\bar d_i(x_i,y_i)\le i\,D(x,y)$; hence it converges coordinatewise to some $x\in X$.
+
+::: pf-proof
+
+A compact metric space is complete: a Cauchy sequence has a convergent subsequence by compactness of the completion-free sequential compactness of metric spaces (Theorem 28.2), and a Cauchy sequence with a convergent subsequence converges. For the coordinate claim, $\bar d_i(x_i,y_i)/i\le D(x,y)$ gives $\bar d_i(x_i,y_i)\le iD(x,y)$, so a $D$-Cauchy sequence is $\bar d_i$-Cauchy for each $i$, hence $d_i$-Cauchy, hence convergent in $X_i$; the coordinatewise limits define a point $x$ of the product.
+
+:::
+
+:::
+
+::: pf-step
+
+Given $\varepsilon>0$ choose $N$ with $1/(N+1)<\varepsilon$; the terms with $i>N$ in $D(x^{(k)},x)$ are at most $1/(N+1)$, and the finitely many terms with $i\le N$ are below $\varepsilon$ for large $k$. So $x^{(k)}\to x$ in $D$, and $X$ is complete.
+
+::: pf-proof
+
+For $i>N$ every term satisfies $\bar d_i(x^{(k)}_i,x_i)/i\le1/i\le1/(N+1)$. For each of the finitely many $i\le N$ the coordinate sequence converges, so there is $k_i$ with $\bar d_i(x^{(k)}_i,x_i)<\varepsilon i$ for $k\ge k_i$; taking $k$ at least the maximum of the $k_i$ makes all $i\le N$ terms below $\varepsilon$ and hence $D(x^{(k)},x)<\varepsilon$. A Cauchy sequence with a limit is convergent, so every Cauchy sequence converges.
+
+:::
+
+:::
+
+::: pf-step
+
+A complete totally bounded metric space is compact, so the countable product of compact metrizable spaces is compact without invoking Tychonoff.
+
+::: pf-proof
+
+That is Theorem 45.1. Steps 4 and 6 give total boundedness and completeness of $(X,D)$, and $D$ induces the product topology by Exercise 20.3(b), so $X$ is compact in the product topology.
+
+:::
+
+:::
+
+:::
 :::
