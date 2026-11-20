@@ -70,8 +70,7 @@ audit:
   by: claude
   date: 2026-11-20
   note: >-
-    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 22, printed p. 359,
-    Proposition A.1 (printed p. 520) and the simplicial approximation results of §2.C. One repair:
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 22, Proposition A.1 and the simplicial approximation results of §2.C. One repair:
     step `s2` justified "a compact subset of a CW complex lies in a finite subcomplex" by saying the
     cells it does not meet have an open complement, which is false — the complement of a single open
     cell is not open, and the cells a compact set misses are in any case not what bounds their number.
@@ -95,7 +94,7 @@ Show that a path-connected space $X$ has a CW approximation with countably many 
 :::
 
 ::: {.solution}
-The exercise is §4.1 Exercise 22, printed p. 359, where the hint is printed in brackets.
+The exercise is §4.1 Exercise 22, where the hint is printed in brackets.
 
 We use the standard inductive construction of a CW approximation, keeping track of cardinalities.
 
