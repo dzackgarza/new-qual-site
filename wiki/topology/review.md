@@ -1,9 +1,11 @@
 ---
-title: Review sheet
+title: Theorems of the topology chapters
 order: 7
 ---
 
-# Review sheet
+# Theorems of the topology chapters
+
+The theorems each chapter of the topology wiki states, collected in one place for review.
 
 ## Point-set
 
@@ -14,8 +16,6 @@ order: 7
 [[FT-52GNK]]
 
 [[FT-6WPJI]]
-
-[[topology/point-set/point-set|Point-set topology]] gathers the point-set definitions, theorems and counterexamples.
 
 ## Fundamental group
 
@@ -39,8 +39,6 @@ order: 7
 
 [[PR-OO3DH]]
 
-[[topology/fundamental-group/theorems|Theorems: algebraic topology]] gathers the homotopy and fundamental-group theorems with worked examples, such as an amalgamated product.
-
 ## Homology
 
 [[T-FBMYQ]]
@@ -55,12 +53,7 @@ order: 7
 
 [[PR-6PENU]]
 
-[[topology/homology/homology|Homology theory and computations]] places the homology tools next to the computations that use them.
-
 ## The standard computations
-
-The fundamental groups and homology groups of spheres, tori, projective spaces, surfaces, and wedges of spheres are tabulated on [[topology/the-standard-spaces|The standard spaces]].
 
 ## Counterexamples
 
-[[topology/counterexamples|Counterexamples]] gives, for statements that fail without a hypothesis, a space or map witnessing the failure.
