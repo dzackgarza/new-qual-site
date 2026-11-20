@@ -73,7 +73,7 @@ The inclusion
 $$
 A_n\cong X\hookrightarrow X\times S^n
 $$
-has the projection $X\times S^n\to X$ as a retraction. Hence its induced map on homology is injective and split. The long exact sequence of the pair, that of Theorem 2.16, therefore breaks by the Splitting Lemma (pp. 147--148) into split short exact sequences
+has the projection $X\times S^n\to X$ as a retraction. Hence its induced map on homology is injective and split. The long exact sequence of the pair, that of Theorem 2.16, therefore breaks by the Splitting Lemma of §2.2 into split short exact sequences
 $$
 0\to H_i(X)\to H_i(P_n)\to H_i(P_n,A_n)\to0.
 $$
@@ -88,7 +88,7 @@ H_i(P_n,A_n)\cong H_{i-1}(P_{n-1},A_{n-1}).
 $$
 
 ::: pf-proof
-Choose $x_0$ on the equator $S^{n-1}$. Cover $S^n$ by open, slightly enlarged upper and lower hemispheres $U_+$ and $U_-$. Each $U_\pm$ contracts to $x_0$ while fixing $x_0$, and their intersection is an equatorial band that deformation retracts onto $S^{n-1}$ while fixing $x_0$. Apply the relative Mayer--Vietoris sequence, which is described on p. 153 and applies to a decomposition $(X,Y)=(A\cup B,\,C\cup D)$ with $C=D$, here $A=X\times U_+$, $B=X\times U_-$ and $C=D=X\times\{x_0\}$. The sequence is
+Choose $x_0$ on the equator $S^{n-1}$. Cover $S^n$ by open, slightly enlarged upper and lower hemispheres $U_+$ and $U_-$. Each $U_\pm$ contracts to $x_0$ while fixing $x_0$, and their intersection is an equatorial band that deformation retracts onto $S^{n-1}$ while fixing $x_0$. Apply the relative Mayer--Vietoris sequence of §2.2, which applies to a decomposition $(X,Y)=(A\cup B,\,C\cup D)$ with $C=D$, here $A=X\times U_+$, $B=X\times U_-$ and $C=D=X\times\{x_0\}$. The sequence is
 $$
 \cdots\to H_i(A\cap B,C\cap D)\to H_i(A,C)\oplus H_i(B,D)\to H_i(X\times S^n,X\times\{x_0\})\to H_{i-1}(A\cap B,C\cap D)\to\cdots
 $$
