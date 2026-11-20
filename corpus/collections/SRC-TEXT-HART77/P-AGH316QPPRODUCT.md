@@ -363,7 +363,7 @@ The Math Stack Exchange answers, which have no printed page and are cited by ans
 
 Joe Harris, *Algebraic Geometry: A First Course*, Graduate Texts in Mathematics 133, Springer, 1992, Example 2.21: the definition of the product as the Segre image, and the categorical product with the regularity computation in the coordinates $[1,\ldots,f_i,\ldots,g_j,\ldots,f_ig_j,\ldots]$.
 
-Aaron Bertram, *Algebraic Geometry* (Math 6130, University of Utah), Section 4, Proposition 4.3 with the paragraphs following it, printed pp. 5--6, states the universality "in the category of prevarieties" and proves it for $W\to\PP^m\times\PP^n$; the extension to subvarieties is one sentence, and the display that follows it,
+Aaron Bertram, *Algebraic Geometry* (Math 6130, University of Utah), Section 4, Proposition 4.3 with the paragraphs following it, states the universality "in the category of prevarieties" and proves it for $W\to\PP^m\times\PP^n$; the extension to subvarieties is one sentence, and the display that follows it,
 $$
 Y\times Z=V(\langle F_i(x_{00},\ldots,x_{m0}),\ G_j(x_{00},\ldots,x_{0n})\rangle),
 $$
