@@ -81,9 +81,9 @@ where $\mobiusband$ is the Möbius band, $\KK$ the Klein bottle, and $\Sigma_g$ 
 - [[D-ANO2D|Covering spaces]]
 - [[D-UI3FE|Lens spaces]]
 - Matrix groups, the subgroups of [[D-J5AAX|$\GL_n(\RR)$]]
-- Prism manifolds, the quotients of $S^3$ by a finite [[D-2PNEG|free action]]
+- Prism manifolds, a family of spherical 3-manifolds $S^3/G$ with $G$ finite and acting [[D-2PNEG|freely]]
 - The pair of pants, the sphere [[D-SPHER|$S^2$]] with three open discs removed
-- Seifert surfaces, the compact surfaces in $S^3$ bounded by a knot [[PR-6HORN|knot complements]]
+- Seifert surfaces, the compact orientable surfaces in $S^3$ whose boundary is a knot [[PR-6HORN|knot complements]]
 - Surgery on manifolds, removing $S^k\cross D^{n-k}$ and gluing in $D^{k+1}\cross S^{n-k-1}$ along the boundary [[D-JKH35|products]]
 - [[D-NJ2Y6|Simplicial complexes]], such as the following:
 
