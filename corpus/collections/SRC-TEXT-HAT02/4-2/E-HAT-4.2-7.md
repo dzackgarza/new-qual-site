@@ -113,6 +113,15 @@ audit:
     killing lemma attaches a free orbit of cells and leaves lower groups alone by Theorem 4.8, the
     colimit computes homotopy groups by compactness, and the Borel construction has the stated
     fundamental group, homotopy groups and action.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The last step applied Theorem 4.41, which is stated for fibrations, to a fiber bundle without saying
+    why the bundle qualifies. Proposition 4.48 supplies exactly that: a fiber bundle has the homotopy
+    lifting property with respect to all CW pairs, so over the CW base BG_1 the bundle F -> X -> BG_1 is a
+    fibration in the sense Theorem 4.41 uses. The step now cites Proposition 4.48 for that, and nothing
+    else changed.
 ---
 
 ::: {.problem}
@@ -172,7 +181,7 @@ Homotopy groups of a CW colimit are the colimit of the homotopy groups of the st
 For a simply connected $G_1$-space $F$ with $\pi_k(F)\cong G_k$ as $G_1$-modules, the Borel construction $X=EG_1\times_{G_1}F$ satisfies $\pi_1(X)\cong G_1$, $\pi_k(X)\cong G_k$ for $k\ge2$, and the action of $\pi_1(X)$ on $\pi_k(X)$ is $\rho_k$.
 
 ::: pf-proof
-$X$ is the total space of the fiber bundle $F\to X\to BG_1=K(G_1,1)$ associated to $EG_1\to BG_1$. Its fibre is simply connected, so the long exact sequence of a fibration, Theorem 4.41, gives $\pi_1(X)\cong\pi_1(BG_1)=G_1$ and $\pi_k(X)\cong\pi_k(F)$ for $k\ge2$. The total space $EG_1\times F$ of the pullback over $EG_1$ is homotopy equivalent to $F$, hence simply connected, and it is the universal cover of $X$; its group of deck transformations is $G_1$, acting by $g\cdot(e,y)=(ge,gy)$, so the action of $\pi_1(X)$ on $\pi_k(X)=\pi_k(F)$ is the given action of $G_1$ on $\pi_k(F)$, which is $\rho_k$ by step [](#colimit){.pf-ref}.
+$X$ is the total space of the fiber bundle $F\to X\to BG_1=K(G_1,1)$ associated to $EG_1\to BG_1$. A fiber bundle with CW base has the homotopy lifting property with respect to all CW pairs, by Proposition 4.48, so it is a fibration in the sense Theorem 4.41 needs, $BG_1$ being a CW complex. Its fibre is simply connected, so the long exact sequence of a fibration, Theorem 4.41, gives $\pi_1(X)\cong\pi_1(BG_1)=G_1$ and $\pi_k(X)\cong\pi_k(F)$ for $k\ge2$. The total space $EG_1\times F$ of the pullback over $EG_1$ is homotopy equivalent to $F$, hence simply connected, and it is the universal cover of $X$; its group of deck transformations is $G_1$, acting by $g\cdot(e,y)=(ge,gy)$, so the action of $\pi_1(X)$ on $\pi_k(X)=\pi_k(F)$ is the given action of $G_1$ on $\pi_k(F)$, which is $\rho_k$ by step [](#colimit){.pf-ref}.
 
 :::
 
