@@ -22,7 +22,7 @@ For $w = s\in[0,1)$ the shortest curve from $0$ to $s$ is the segment, and its l
 $$
 \int_0^s\frac{\dr}{1-r^2} = \operatorname{artanh}s = \frac12\log\frac{1+s}{1-s},
 $$
-so $d_{\DD}(0,w) = \frac12\log\frac{1+\abs w}{1-\abs w} = \operatorname{artanh}\abs w$ [@SS03, ch. 8, Problem 3(d) (p. 256)].
+so $d_{\DD}(0,w) = \frac12\log\frac{1+\abs w}{1-\abs w} = \operatorname{artanh}\abs w$ [@SS03, ch. 8, Problem 3(d)].
 
 [[T-DAETF]]
 
@@ -31,7 +31,7 @@ For holomorphic $f\colon\DD\to\DD$ the Schwarz lemma applied to $\psi_{f(z)}\cir
 $$
 \frac{\abs{f'(z)}}{1-\abs{f(z)}^2}\leq\frac{1}{1-\abs z^2}\qquad\text{for all } z\in\DD,
 $$
-which says that $f$ does not increase hyperbolic length; integrating it along a curve gives $d_{\DD}(f(z),f(w))\leq d_{\DD}(z,w)$ [@SS03, ch. 8, Problem 3(a)--(b) (p. 256)].
+which says that $f$ does not increase hyperbolic length; integrating it along a curve gives $d_{\DD}(f(z),f(w))\leq d_{\DD}(z,w)$ [@SS03, ch. 8, Problem 3(a)--(b)].
 Equality at one point forces $f$ to be an automorphism of $\DD$.
 :::
 
