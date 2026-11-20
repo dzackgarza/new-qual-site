@@ -8,7 +8,7 @@ topics:
 
 # Series and solvability
 
-Three series measure three different failures of commutativity: a central series iterates commutators with the whole group, the derived series iterates commutators of the series with itself, and a composition series is one that cannot be refined, so its factors are simple.
+Throughout, $G$ is a group, and the theorems that read a chain off Sylow or maximal subgroups assume it finite.
 
 ## Normal and composition series
 
@@ -23,8 +23,6 @@ Three series measure three different failures of commutativity: a central series
 [[FD-T7IQV]]
 
 ## Central and derived series
-
-The lower central series descends and the upper central series ascends; the derived series lies below the lower central series, since $G^{(i)}\leq\gamma_{i+1}(G)$ for every $i$.
 
 [[D-5NV3N]]
 
