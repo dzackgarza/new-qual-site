@@ -2,8 +2,8 @@
 schema: qual/card@1
 id: T-FSIND
 kind: theorem
-title: The Frobenius--Schur indicator
-slogan: '$\nu(\chi)$ is $1$, $0$, or $-1$: real, non-real, or quaternionic'
+title: The Frobenius--Schur theorem and the three types of irreducible representations
+slogan: 'a real-valued character is realizable over $\RR$ exactly when the invariant bilinear form is symmetric'
 classification:
   areas:
   - algebra
@@ -15,10 +15,11 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $G$ be a finite group and $\chi$ an irreducible character of $G$ over $\CC$.
-The Frobenius--Schur indicator
-$$
-\nu(\chi)\coloneqq\frac{1}{\size G}\sum_{g\in G}\chi(g^2)
-$$
-takes the value $1$ when $\chi$ is the character of a representation realizable over $\RR$, the value $0$ when $\chi$ is not real-valued, and the value $-1$ otherwise, in which case the representation is quaternionic.
+Let $\rho\colon G\to\GL(V)$ be a representation of a finite group over $\CC$ with character $\chi$.
+Then $\chi$ takes real values if and only if $V$ has a nondegenerate $G$-invariant bilinear form, and $\rho$ is realizable over $\RR$ if and only if $V$ has a nondegenerate symmetric $G$-invariant bilinear form.
+Such a form, when it exists, is unique up to homothety, and it is either symmetric or alternating; it is symmetric exactly when the representation is realizable over $\RR$.
+
+So an irreducible representation over $\CC$ is of exactly one of three types: its character is not real-valued; its character is real-valued and the representation is realizable over $\RR$; or its character is real-valued, the representation is not realizable over $\RR$, and its restriction of scalars to $\RR$ has the quaternions as commuting algebra.
+
+This is [@Ser77, sec. 13.2, Theorem 31 and Proposition 38].
 :::
