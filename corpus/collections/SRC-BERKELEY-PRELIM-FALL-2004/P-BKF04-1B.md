@@ -33,7 +33,7 @@ Let $S_{n}$ be the group of permutations of $\{1, \ldots, n\}$, and let $A_{n}$ 
 :::
 
 ::: {.solution}
-The published solution is the collection's own retained sheet, **Fall 2004 preliminary examination solutions, Problem 1B, PDF p. 5** (`assets/attachments/f04solution.pdf`, the file named in this collection's `provenance`), whose argument both parts below are: the restriction of $\operatorname{sgn}_n$ to $S_m$ is $\operatorname{sgn}_m$, and the diagonal embedding of $S_m\times S_m$ into $S_{2m}$ gives the counterexample. The card corrects one printed slip: the sheet says the second factor permutes $\{n+1,\dots,2m\}$, which is $\{m+1,\dots,2m\}$ for its own $n=2m$.
+The published solution is the collection's own retained sheet, **Fall 2004 preliminary examination solutions, Problem 1B** (`assets/attachments/f04solution.pdf`, the file named in this collection's `provenance`), whose argument both parts below are: the restriction of $\operatorname{sgn}_n$ to $S_m$ is $\operatorname{sgn}_m$, and the diagonal embedding of $S_m\times S_m$ into $S_{2m}$ gives the counterexample. The card corrects one printed slip: the sheet says the second factor permutes $\{n+1,\dots,2m\}$, which is $\{m+1,\dots,2m\}$ for its own $n=2m$.
 
 Throughout $S_k$ is the symmetric group on $\theset{1,\dots,k}$ and $A_k$ its alternating subgroup, and $S_m\subset S_n$ means the subgroup of permutations fixing $m+1,\dots,n$.
 
