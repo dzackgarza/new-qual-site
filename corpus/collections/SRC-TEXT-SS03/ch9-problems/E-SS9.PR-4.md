@@ -46,6 +46,20 @@ audit:
     conjugation symmetry $\wp(\bar z)=\overline{\wp(z)}$ for a real lattice, the period $\tau$
     giving $\wp(z+\tau)=\wp(z)$, the critical points at the three half-periods lying on the grid,
     and the image open with boundary in $\mathbb{R}$) but were not re-derived in this pass.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Repair of step s4 on the reader's report. It concluded injectivity of $\restrictionof{\wp}{R}$
+    from "$\wp$ is a local homeomorphism on $R$ and $R$ is simply connected without critical points",
+    which is false as an inference: $\exp$ is a local biholomorphism on the simply connected $\CC$
+    and is not injective. The step now argues that $\restrictionof{\wp}{R}$ is proper — a compact
+    $K\subseteq\wp(R)$ has $\wp^{-1}(K)\cap R$ closed in the bounded $R$ and at positive distance
+    from $\partial R$, since $\wp(\partial R)\subseteq\RR\cup\{\infty\}$ misses $K$ — and that a
+    proper local homeomorphism onto the simply connected half-plane $\wp(R)$ is a homeomorphism.
+    Steps s1--s3 are unchanged. Provenance: no published solution set covers this Problem (Rhoades,
+    *Solutions/Hints to the Exercises*, 2006, covers a selection of the Exercises), so the argument
+    is the card's own.
 ---
 
 ::: {.exercise}
@@ -61,6 +75,7 @@ The book marks this problem with an asterisk (Chapter 9, Problem 4, printed p. 2
 :::
 
 ::: {.solution}
+No published solution set covers the end-of-chapter Problems of Stein--Shakarchi: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, and no other set was located. The argument is the card's own.
 
 Let $\tau=it$ with $t>0$, $\Lambda=\ZZ+\ZZ it$, and $\wp$ the Weierstrass function of $\Lambda$.
 
@@ -134,7 +149,9 @@ $\wp$ maps $R$ bijectively onto either the upper or the lower half-plane, hence 
 
 $\wp(R)$ is open (step [](#s3){.pf-ref} and the open mapping theorem) and connected. Its boundary is contained in $\wp(\partial R)\subseteq\RR$ by step [](#s2){.pf-ref}: for a sequence $z_k\in R$ with $z_k\to z\in\partial R$, the values $\wp(z_k)$ have limit points in $\RR$ (including possibly $\infty$ at the corners, which are not in $\Lambda$, so the limit is finite unless $z\in\Lambda$; the corners $0,\tfrac12,\tfrac{it}{2},\tfrac{1+it}{2}$ are the half-periods and $0$, and $0\in\Lambda$ gives the pole).
 
-An open connected subset of $\CC\setminus\RR$ whose boundary lies in $\RR$ is contained in, and hence equals, one of the two half-planes: it is a connected component of $\CC\setminus\RR$. Since $\wp$ is a local homeomorphism on $R$ and $R$ is simply connected without critical points, $\restrictionof{\wp}{R}$ is injective, so it is a conformal map onto that half-plane.
+An open connected subset of $\CC\setminus\RR$ whose boundary lies in $\RR$ is contained in, and hence equals, one of the two half-planes: it is a connected component of $\CC\setminus\RR$.
+
+It remains to see that $\restrictionof{\wp}{R}$ is injective, which does not follow from local injectivity alone: $\exp$ is a local biholomorphism on the simply connected $\CC$ and is not injective. What is needed is properness. Let $K\subseteq\wp(R)$ be compact. Then $\wp^{-1}(K)\cap R$ is closed in $R$, and it stays at a positive distance from $\partial R$: if $z_k\in\wp^{-1}(K)\cap R$ tended to $z\in\partial R$, then $\wp(z_k)\in K$ would converge to $\wp(z)\in\RR$ by continuity of $\wp$ on $\overline R\setminus\Lambda$, or to $\infty$ at the corner $0\in\Lambda$, and either is impossible because $K$ is a compact subset of a half-plane. Since $\overline R$ is bounded, $\wp^{-1}(K)\cap R$ is compact, so $\restrictionof{\wp}{R}$ is proper. A proper local homeomorphism is a covering map, and a covering of the simply connected $\wp(R)$ by the connected $R$ is trivial, so $\restrictionof{\wp}{R}$ is a homeomorphism onto $\wp(R)$: it is injective and conformal.
 
 Which half-plane depends on the rectangle: adjacent rectangles give opposite signs, because the values on a shared edge are real and $\wp$ is a local homeomorphism there, so the images lie on opposite sides.
 
