@@ -42,7 +42,7 @@ audit:
 :::
 
 ::: {.solution}
-Both parts are the two bounds on the dimension of an intersection: $\dim V\cap W\le\min(\dim V,\dim W)$ because the intersection lies in both, and $\dim V\cap W\ge\dim V+\dim W-n$ by the dimension formula inside an ambient space of dimension $n$; then every intermediate value is realised by coordinate subspaces. This is Problem 11 of the retained Week 4 solutions (`assets/attachments/Week4_solns.pdf`, PDF p. 4), and the argument is that sheet's: the two bounds, the ranges $0\le\dim(V\cap W)\le2$ and $1\le\dim(V\cap W)\le4$, and the coordinate examples for the first case are its; the explicit witnesses $W_k$ for the second case are added here, which the sheet leaves to the reader.
+Both parts are the two bounds on the dimension of an intersection: $\dim V\cap W\le\min(\dim V,\dim W)$ because the intersection lies in both, and $\dim V\cap W\ge\dim V+\dim W-n$ by the dimension formula inside an ambient space of dimension $n$; then every intermediate value is realised by coordinate subspaces. This is Problem 11 of the retained Week 4 solutions (`assets/attachments/Week4_solns.pdf`), and the argument is that sheet's: the two bounds, the ranges $0\le\dim(V\cap W)\le2$ and $1\le\dim(V\cap W)\le4$, and the coordinate examples for the first case are its; the explicit witnesses $W_k$ for the second case are added here, which the sheet leaves to the reader.
 
 ::: pf
 
