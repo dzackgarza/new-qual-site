@@ -11166,3 +11166,13 @@ choice of $\varepsilon$ in the trivialization is not a false claim.
 `tmp/lam.sh` on both: six and seven steps numbered, QED labels present. No whole-corpus `qualc check` in this
 turn. No source obligation moves: `-7` has no retained solution set, and `-13`'s and `-30`'s published sets
 are cited as before.
+
+## 2026-11-20, `E-HAT-4.2-13` again: a third defect, in the low-dimensional step
+
+Six of the eight reader reports of the §4.2 pass flagged the step `low-dimensions`, and their reading holds:
+the step asserted the general principle that "a map whose lift to universal covers is a homotopy equivalence is
+itself a homotopy equivalence", and $z\mapsto z^{2}$ on $S^{1}$ lifts to $t\mapsto2t$ on $\RR$, a
+homeomorphism, and is not a homotopy equivalence. The step now derives the case $n=1$ from Lemma 1A.3, the
+consequence stated after Proposition 1A.2, the deformation retraction in the proof of Proposition 1A.1,
+Proposition 4.1 and Theorem 4.5, and records the counterexample. The entry above counts two repairs on this
+card; it took three. The two reported there stand. Commit `2c469a0de4`.
