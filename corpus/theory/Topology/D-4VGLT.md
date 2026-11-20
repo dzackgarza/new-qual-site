@@ -15,9 +15,9 @@ review: draft
 
 ::: {.definition}
 Let $R$ be a commutative ring, let $B$ be an $R$-module, and let $n\geq 0$.
-The functor $\Tor_n^R(\wait, B)$ is the $n$th [[D-6B77N|left derived functor]] of $\wait\tensor_R B$:
+The functor $\Tor_n^R(-, B)$ is the $n$th [[D-6B77N|left derived functor]] of $-\tensor_R B$:
 $$
-\Tor_n^R(A, B) \coloneqq L_n(\wait\tensor_R B)(A) = H_n(P_\bullet\tensor_R B)
+\Tor_n^R(A, B) \coloneqq L_n(-\tensor_R B)(A) = H_n(P_\bullet\tensor_R B)
 ,$$
 where $P_\bullet \to A$ is a [[D-PKIY7|projective resolution]] of the $R$-module $A$ [@DF04].
 :::
