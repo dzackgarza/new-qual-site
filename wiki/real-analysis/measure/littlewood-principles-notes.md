@@ -10,8 +10,7 @@ topics:
 # Egorov and Lusin
 
 Let $m$ be Lebesgue measure on $\RR^d$, let $E\subseteq\RR^d$ be measurable with $m(E)<\infty$, and let $\varepsilon>0$.
-Egorov's theorem discards a set of measure less than $\varepsilon$ and makes an almost everywhere convergent sequence converge uniformly on the rest; Lusin's theorem discards such a set and makes a measurable function continuous on the rest.
-In both theorems the remaining set is closed, and it depends on $\varepsilon$.
+The remaining set in both theorems is closed and depends on $\varepsilon$: Egorov's discards one of measure less than $\varepsilon$ and makes an almost everywhere convergent sequence converge uniformly on the rest, and Lusin's discards such a set and makes a measurable function continuous on the rest.
 
 ## Egorov: almost uniform convergence
 
