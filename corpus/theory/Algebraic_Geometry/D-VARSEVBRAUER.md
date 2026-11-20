@@ -24,7 +24,7 @@ A \dfn{Severi--Brauer variety} of dimension $n$ over $k$ is a variety $X$ over $
 :::
 
 ::: {.theorem}
-1. Isomorphism classes of Severi--Brauer varieties of dimension $n$ over $k$ are in bijection with $H^1(\Gal(k^s/k), \PGL_{n+1}(k^s))$, hence with isomorphism classes of central simple $k$-algebras of degree $n+1$; each has a class in $\operatorname{Br}(k)$.
+1. Isomorphism classes of Severi--Brauer varieties of dimension $n$ over $k$ are in bijection with $H^1(\Gal(k^s/k), \PGL_{n+1}(k^s))$ [Serre, *Local Fields*, §X.6], hence with isomorphism classes of central simple $k$-algebras of degree $n+1$ [Serre, *Local Fields*, Proposition 8 of §X.5], each with a class in $\operatorname{Br}(k)$.
 
 2. (Châtelet) $X \cong \PP^n_k$ if and only if $X(k) \neq \emptyset$, if and only if its Brauer class is trivial [Serre, *Local Fields*, Exercise X.6.1].
 :::
