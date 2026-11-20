@@ -473,6 +473,56 @@ audit:
     version retained in tmp/sources. Not checked: any printing of either book, only those text
     versions; no certificate or computation is claimed, and the degree bound and the degree-$2$
     enumeration are the card's own arguments.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The rank-zero step of the nonsingularity proof is replaced; a reader of
+    #160 reported it not met at da0687f2e4. The step drew from birationality that
+    phi is an isomorphism over a dense open set, hence that its restriction to any
+    curve is birational onto its image with nonzero differential at the curve's
+    generic point, and hence that the locus r = 0 is finite. A birational morphism
+    contracts curves, so that inference is false and is withdrawn. The paragraph now
+    splits by characteristic. In characteristic 0 the general member is nonsingular
+    by Corollary III.10.9 of the book, the system being base point free. In
+    characteristic p the locus W = {x in X : d phi_x = 0} is shown finite: it is
+    closed and is not all of X; if an irreducible curve C lay in W, then in
+    coordinates (u,v) at a smooth point of C with C defined by u = 0, and in an
+    affine chart of PP^N containing the image of that point, the vanishing of d phi
+    along C would put the two partial derivatives of each coordinate function f_i in
+    the ideal (u), which forces f_i = c_i(v) + u^2 k_i with c_i' = 0, hence c_i in
+    k[v^p]; then k(f_1,...,f_N) lies in k(u,v^p), over which k(u,v) has degree p,
+    contradicting q = 1. Checked in this pass: the two integrations in u, the
+    inference from c_i' = 0 to c_i in k[v^p], the degree [k(u,v) : k(u,v^p)] = p, and
+    the closedness of the image of Z in the dual from properness of X. Not checked:
+    any printing of the book, only the text version retained in tmp/sources; the
+    characteristic-0 case is now a citation of Corollary III.10.9 and is no longer
+    re-proved on the card.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The coordinate argument recorded in the event above is withdrawn, and the rank-zero step is
+    proved instead by a global argument; the body of the card is also checked for page locators. The
+    withdrawal: that event infers from f_i in k[v^p] + u^2k[u,v] that f_i lies in k(u,v^p),
+    and the inclusion is false, because v is not in k(u,v^p); the shape alone yields no contradiction,
+    since u^2, u^2v, u^3 and v^p all have differentials vanishing along u = 0 and generate k(u,v). What
+    replaces it: if d(phi)_x = 0 at a point x, then a plane through x exists whose section X_0 is a
+    smooth plane cubic, because the tangent planes through x are the images of the curve Q_x cap X
+    under the Gauss map, Q_x being the polar quadric of x; the 1-jet image of the restricted system W_0
+    in the two-dimensional space L(x) tensor O/m_x^2 is one-dimensional, so ker(ev_x) lies in
+    H^0(L(-2x)), which has dimension D.H - 2 on the elliptic curve; hence dim W_0 <= D.H - 1, so
+    h^0(D-H) >= p_a + 1, while Riemann-Roch gives chi(D-H) = p_a and h^2(D-H) = 0, so h^1(D-H) >= 1,
+    which Serre duality turns into h^1(O_X(-D)) >= 1, against the vanishing that a reduced connected
+    member of the linear system gives. So no point of X has rank 0, and a curve contracted by the
+    morphism, such as E_1 when D = H + E_1, is a curve of rank 1, already bounded by the r = 1
+    paragraph. The body carries no printed or PDF page locator; the page locators inside the earlier
+    dated events are left as written under QUAL-11 and remain the record of what was read. Checked:
+    Euler's relation for the polar quadric, D.H >= 3 from the Hodge index theorem and the integrality
+    of N, h^0(L(-2x)) = D.H - 2 on the elliptic section, the two Riemann-Roch computations, the duality
+    h^1(D-H) = h^1(-D), the vanishing of h^1(O_X(-D)), and the failure of the inclusion, by the four
+    generating functions named. Not checked: no printing of the book was read, only the text version
+    retained in tmp/sources; no certificate or computation is claimed for this step.
 ---
 
 ::: {.problem}
@@ -647,29 +697,57 @@ where $\ell_H$ is a linear form defining $H$. The local equation of the member $
 point $x$ of it is $\ell_H\circ\varphi$; if its differential is nonzero at $x$ it is part of a
 regular system of parameters of the local ring of the nonsingular surface $X$, so the quotient local
 ring is regular of dimension $1$ and the member is nonsingular at $x$ by Theorem I.5.1. It is
-therefore enough to show that the image of $Z$ in $\PP^{N\vee}$ is a proper closed subset.
+therefore enough to show that the image of $Z$ in $\PP^{N\vee}$ is a proper closed subset. In
+characteristic $0$ that is Bertini's corollary, Corollary III.10.9 of the book, $\linearsystem{D}$
+having no base point; so suppose from here on that $\operatorname{char}k=p>0$.
 
 Where $r(x)=2$ the image $d\varphi_x(T_xX)$ is a $2$-plane in $T_{\varphi(x)}\PP^N$ when $N\ge3$, and
 the hyperplanes $H$ with $(x,H)\in Z$ are those containing it, a linear subspace of $\PP^{N\vee}$ of
 dimension $N-3$, so this part of $Z$ has dimension at most $2+(N-3)=N-1$; for $N=2$ no hyperplane
 contains that image and the part is empty. Where $r(x)=1$ the hyperplanes $H$ with $(x,H)\in Z$
 contain the line $d\varphi_x(T_xX)$, a linear subspace of dimension $N-2$, and over the at most
-one-dimensional locus $r=1$ this part of $Z$ has dimension at most $1+(N-2)=N-1$. Where $r(x)=0$
-every hyperplane through $\varphi(x)$ satisfies $(x,H)\in Z$; but $\varphi$ is birational, hence an
-isomorphism over a dense open subset of $X$, so the restriction of $\varphi$ to any curve is
-birational onto its image and has nonzero differential at that curve's generic point, and the locus
-$r=0$ is finite. This part of $Z$ lies in the union of the $\PP^{N-1}$ of hyperplanes through the
-finitely many points $\varphi$ of that locus, so it has dimension at most $N-1$.
+one-dimensional locus $r=1$ this part of $Z$ has dimension at most $1+(N-2)=N-1$. Where $r(x)=0$ the two conditions on $H$ reduce to $\varphi(x)\in H$, since
+$d(\ell_H\circ\varphi)_x=\ell_H\circ d\varphi_x$ vanishes; and there is no such point. Suppose that
+$d\varphi_x=0$. The planes through $x$ that are tangent to $X$ are the planes $T_pX$ with
+$x\in T_pX$, and $x\in T_pX$ is equivalent to $p\in Q_x\cap X$, where
+$Q_x=\{y:\sum_ix_i\partial_iF(y)=0\}$ is the polar quadric of $x$: the relation is Euler's,
+$\sum_ip_i\partial_iF(p)=3F(p)=0$ for $p\in X$. That intersection is a curve, so its image under
+$p\mapsto T_pX$ is at most one-dimensional in the plane of planes through $x$, and a general plane
+$\Pi$ through $x$ is not tangent to $X$; for such a $\Pi$ the section $X_0=X\cap\Pi$ is a smooth
+plane cubic.
 
-Thus $Z$ has dimension at most $N-1$, and so does its image in $\PP^{N\vee}$, which is closed because
+Let $L=\OO_{X_0}(D)$, of degree $\delta=D\cdot H$, and let $W_0\subseteq H^0(L)$ be the image of
+$H^0(\OO_X(D))$; $W_0$ defines the morphism $\psi=\restrictionof{\varphi}{X_0}$ and is base point free. Since
+$d\psi_x=0$, every quotient $s/t$ of members of $W_0$ with $t(x)\ne0$ has zero derivative at $x$, so
+the image of $W_0$ in the two-dimensional space $L(x)\otimes\OO_{X_0}/\mathfrak m_x^2$ is
+one-dimensional; hence every $s\in W_0$ with $s(x)=0$ has $ds_x=0$, that is,
+$\ker(\operatorname{ev}_x)\subseteq H^0(L(-2x))$. Now $\delta\ge3$: the Hodge index theorem,
+Theorem V.1.9, gives $(D\cdot H)^2\ge3D^2$, so $D\cdot H\ge2$, and $D\cdot H=2$ would give $D^2=1$
+and $2N=D^2+D\cdot H=3$, which is impossible. The curve $X_0$ is elliptic, so $h^0(L(-2x))=\delta-2$; with
+$\dim\ker(\operatorname{ev}_x)=\dim W_0-1$ this gives $\dim W_0\le\delta-1$.
+
+The sequence $0\to\OO_X(D-H)\to\OO_X(D)\to L\to0$ identifies $H^0(D-H)$ with the kernel of
+$H^0(\OO_X(D))\to H^0(L)$, so $h^0(D-H)=(N+1)-\dim W_0\ge N+2-\delta$, and $\delta=D\cdot H=2N-D^2$
+makes this $D^2-N+2=p_a+1$, where $p_a=D^2-N+1=1+\frac12(D^2-D\cdot H)$ is the arithmetic genus of
+a member of $\linearsystem{D}$ by adjunction. On the other hand Riemann--Roch gives
+$\chi(\OO_X(D-H))=\frac12\bigl((D-H)^2-(D-H)\cdot K\bigr)+1=\frac12(D^2-D\cdot H)+1=p_a$, and
+$h^2(D-H)=h^0(K-D+H)=h^0(-D)=0$ because $(-D)\cdot H<0$ with $H$ ample, so
+$h^0(D-H)=p_a+h^1(D-H)$ and $h^1(D-H)\ge1$. Serre duality, Corollary III.7.7, gives
+$h^1(D-H)=h^1(-D)$, hence $h^1(\OO_X(-D))\ge1$. But that group vanishes: for a reduced connected
+member $A$ of $\linearsystem{D}$ the sequence $0\to\OO_X(-D)\to\OO_X\to\OO_A\to0$ gives
+$0\to H^0(\OO_X)\to H^0(\OO_A)\to H^1(\OO_X(-D))\to H^1(\OO_X)=0$, and $h^0(\OO_X)=h^0(\OO_A)=1$
+because $X$ is rational and $A$ is a reduced connected curve. So $r(x)\ge1$ at every point of $X$,
+and a curve contracted by $\varphi$, such as $E_1$ when $D=H+E_1$, is a curve of rank $1$ and is
+covered by the preceding paragraph.
+
+Thus the image of $Z$ has dimension at most $N-1$, and it is closed because
 $X$ is proper. A general hyperplane $H$ therefore lies outside that image, and for such $H$ no point
 of the member $\varphi^{-1}(H)$ lies in $Z$, so the member, reduced and irreducible by the fourth
 paragraph, is nonsingular. This is the incidence
 count of the proof of Vakil's Bertini theorem, *The Rising Sea* (21 October 2025), Theorem 13.4.2,
 carried out for the morphism $\varphi$ rather than for a smooth closed subvariety of $\PP^N$: where
-$\varphi$ is an isomorphism the fibre of $Z$ is the $\PP^{N-1-\dim X}$ of that proof, and the cases
-$r=1$ and $r=0$ above are the additional $\PP^{N-2}$ and $\PP^{N-1}$ fibres created by the drop in
-rank.
+$\varphi$ is an isomorphism the fibre of $Z$ is the $\PP^{N-1-\dim X}$ of that proof, and the case
+$r=1$ above is the additional $\PP^{N-2}$ fibre created by the drop in rank.
 :::
 
 :::
@@ -767,8 +845,9 @@ paper works over an algebraically closed field of arbitrary characteristic, so i
 reduced irreducible members in every characteristic. The nonsingularity of the member of a class of
 the third alternative is then the incidence count of Vakil's proof of Theorem 13.4.2, carried out
 for the morphism defined by $\linearsystem{D}$: Riemann--Roch and the degree of a surface spanning
-$\PP^N$ make that morphism birational, so the rank-zero stratum is finite and the bad hyperplanes
-form a closed subset of the dual of dimension at most $N-1$.
+$\PP^N$ make that morphism birational; in characteristic $0$ Bertini's corollary, Corollary
+III.10.9, then gives the nonsingularity, and in characteristic $p$ there is no point of rank zero at all
+and the bad hyperplanes form a closed subset of the dual of dimension at most $N-1$.
 
 I. V. Dolgachev, *Topics in Classical Algebraic Geometry* (September 27, 2010): Lemma 8.1.3 and its
 proof, on irreducible curves of negative self-intersection on a weak Del Pezzo
