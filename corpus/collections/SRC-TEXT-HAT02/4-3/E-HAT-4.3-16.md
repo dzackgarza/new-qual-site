@@ -11,6 +11,14 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The connectedness step said H~_0 is "the reduced group Z^{pi_0}", which is not the reduced
+    homology of a space and would make H~_0 vanish for the empty space, which has no path
+    component. F_f is nonempty (it contains (x_0, const_{y_0})), and for a nonempty space H~_0 is
+    free abelian of rank |pi_0| - 1, so the conclusion is unchanged.
 - event: solution-written
   by: claude
   date: 2026-11-20
@@ -76,7 +84,7 @@ Let $E_f=\{(x,\gamma):x\in X,\ \gamma\colon I\to Y,\ \gamma(0)=f(x)\}$ and $p(x,
 $F_f$ is path connected.
 
 ::: pf-proof
-The hypothesis $\widetilde H_*(F_f;\ZZ)=0$ includes $\widetilde H_0(F_f;\ZZ)=0$. For a space, $\widetilde H_0$ is the reduced group $\ZZ^{\pi_0}$ of the set of path components, which vanishes exactly when there is one path component; so $F_f$ is path connected.
+$F_f$ is nonempty, since it contains the pair $(x_0,\mathrm{const}_{y_0})$. The hypothesis $\widetilde H_*(F_f;\ZZ)=0$ includes $\widetilde H_0(F_f;\ZZ)=0$. For a nonempty space, $\widetilde H_0$ is free abelian of rank one less than the number of path components, so it vanishes exactly when there is one path component; hence $F_f$ is path connected.
 :::
 
 :::
