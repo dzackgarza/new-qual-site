@@ -129,13 +129,13 @@ def staged_records(root: Path) -> str:
 
 def run_staged(root: Path) -> subprocess.CompletedProcess[str]:
     """The project's staged validator, fed as the shared hook feeds it."""
-    return subprocess.run([sys.executable, str(ROOT / "scripts/local-validate.py"), "--mode", "staged"], cwd=root, input=staged_records(root), capture_output=True, text=True)
+    return subprocess.run([sys.executable, "-m", "qualc.authoring", "check-changes", "--mode", "staged"], cwd=root, input=staged_records(root), capture_output=True, text=True)
 
 
 def run_push(root: Path, tip: str, *paths: str) -> subprocess.CompletedProcess[str]:
     """The project's push validator, fed as the shared hook feeds it: the pushed tip."""
     payload = "".join(json.dumps({"path": path, "version": tip}) + "\n" for path in paths)
-    return subprocess.run([sys.executable, str(ROOT / "scripts/local-validate.py"), "--mode", "push"], cwd=root, input=payload, capture_output=True, text=True)
+    return subprocess.run([sys.executable, "-m", "qualc.authoring", "check-changes", "--mode", "push"], cwd=root, input=payload, capture_output=True, text=True)
 
 
 def validate_candidate(root: Path, mode: str, monkeypatch: pytest.MonkeyPatch, stamp: str, *paths: str) -> subprocess.CompletedProcess[str]:
@@ -162,13 +162,13 @@ def track(root: Path, commit: str) -> None:
 
 
 def install_gate(root: Path) -> None:
-    """The staged chain: the hook builds the shared payload and runs the project validator."""
+    """The staged chain: a hook builds the changed-file payload and runs qualc check-changes."""
     runner = root / ".git" / "hooks" / "staged-gate.py"
     runner.write_text(
         "import json, subprocess, sys\n"
         "names = subprocess.run(['git', 'diff', '--cached', '--name-only', '--diff-filter=ACMR', '-z'], check=True, stdout=subprocess.PIPE).stdout.decode()\n"
         "records = ''.join(json.dumps({'path': path, 'version': 'index'}) + '\\n' for path in names.split('\\0') if path)\n"
-        f"raise SystemExit(subprocess.run([sys.executable, {str(ROOT / 'scripts/local-validate.py')!r}, '--mode', 'staged'], input=records.encode()).returncode)\n"
+        f"raise SystemExit(subprocess.run([sys.executable, '-m', 'qualc.authoring', 'check-changes', '--mode', 'staged'], input=records.encode()).returncode)\n"
     )
     hook = root / ".git" / "hooks" / "pre-commit"
     hook.write_text(f"#!/bin/sh\nexec {shlex.quote(sys.executable)} {shlex.quote(str(runner))}\n")
@@ -1129,7 +1129,7 @@ def test_shared_push_payload_validates_each_exact_candidate_commit(repo: Path) -
     payload = "\n".join(json.dumps({"path": "corpus/one card.md", "version": commit}) for commit in (valid, invalid))
 
     result = subprocess.run(
-        [sys.executable, str(ROOT / "scripts/local-validate.py"), "--mode", "push"],
+        [sys.executable, "-m", "qualc.authoring", "check-changes", "--mode", "push"],
         cwd=repo,
         input=payload,
         capture_output=True,
@@ -1160,7 +1160,7 @@ def test_push_rejects_a_deleted_card_that_is_still_referenced(repo: Path) -> Non
 
     def push() -> subprocess.CompletedProcess[str]:
         # A deletion-only range gives the shared hook no changed card to send.
-        return subprocess.run([sys.executable, str(ROOT / "scripts/local-validate.py"), "--mode", "push"], cwd=repo, input="", capture_output=True, text=True)
+        return subprocess.run([sys.executable, "-m", "qualc.authoring", "check-changes", "--mode", "push"], cwd=repo, input="", capture_output=True, text=True)
 
     assert push().returncode == 0
     git(repo, "rm", "-q", "corpus/P-GONE.md")

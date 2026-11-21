@@ -842,7 +842,7 @@ The same changed-card validation obligation holds at each supported content rout
   not how they were committed.
 
 - **Push.** The push hook validates the committed card blobs in the outgoing range, including cards
-  committed without hooks, and runs the shared syntax checks. It calls `scripts/local-validate.py` with
+  committed without hooks, and runs the shared syntax checks. Its `test-push` recipe runs `qualc.authoring check-changes --mode push` on
   the exact blob identities, so content commits made through the hook-free authoring route are still
   checked before upload. At the outgoing tip it also rejects any collection member, relation target,
   guide `ref`, or card-id link in a card or wiki page that names an id no card carries, so a
@@ -876,8 +876,8 @@ YAML and schema check plus the shared syntax checks; it runs on staged or commit
 whole-corpus load, and it is independent of Pandoc, site emission, and broad audits.
 
 Push hooks validate committed card blobs selected for every outgoing ref, including cards committed
-without hooks, and run the shared syntax checks. The shared hooks call `scripts/local-validate.py`
-with the exact Git blob identities. `just test-push` additionally runs the extraction detector, macro
+without hooks, and run the shared syntax checks. The `test-commit` and `test-push` recipes run `qualc.authoring check-staged` and `check-changes --mode push`
+on the exact Git blob identities. `just test-push` additionally runs the extraction detector, macro
 mirror check, and focused parser and Git-boundary tests. It is the explicit project diagnostic command;
 the shared Git hooks own the automatic syntax and card-data checks.
 The full test suite and report generation run in CI. Download the
