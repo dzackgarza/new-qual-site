@@ -11,6 +11,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 7 of the Spring 2013 UCSD Algebra Qualifying Examination, printed p. 1
+    of the single-page paper retained at assets/attachments/SP13_200_Algebra_Qual.pdf, is the statement
+    the card answers, and the paragraph at the head of the solution records that the paper prints no
+    solutions, so the argument is the card's own. Checked: the statement against the paper's text layer
+    at the page named; the solution read for the normal closure, the Sylow $p$-subgroup, and the fixed
+    field $N^P$ used to force $G$ to be a $p$-group; `qualc.authoring check` on the card, and
+    `tmp/lam.sh` for the numbering and the QED. The card's statement writes the hypothesis for
+    extensions with $E\ne F$; the printed wording does not, and at $E=F$ the printed hypothesis would
+    fail since $1$ is not divisible by $p$, so the qualification is a clarification of the printed
+    sentence and not a weakening of the claim. Not checked: no retained solution set exists for this
+    paper to compare the argument with, and no other card of the collection in this pass.
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
@@ -35,6 +50,9 @@ Prove that the degree of any finite separable extension $E/F$ is a power of $p$.
 :::
 
 ::: {.solution}
+
+The problem is Problem 7 of the Spring 2013 UCSD Algebra Qualifying Examination, retained at `assets/attachments/SP13_200_Algebra_Qual.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the normal closure $N$ of $E$ and $G=\operatorname{Gal}(N/F)$: the hypothesis gives $p\mid\cardinality{G}$, a proper Sylow $p$-subgroup $P$ would make $N^P/F$ a proper extension of degree $[G:P]$ prime to $p$, so $G$ is a $p$-group and $[E:F]=[G:H]$ is a power of $p$
+
 
 ::: pf
 
@@ -104,22 +122,12 @@ $$
 $$
 so $[E:F]$ is a power of $p$.
 
-::: pf-proof
-
-The Galois correspondence gives $[E:F]=[G:H]$.
-Since $G$ is a finite $p$-group, every subgroup index is a power of $p$.
-
-:::
-
-:::
-
-::: pf-step
-
 Therefore every finite separable extension of $F$ has degree a power of $p$.
 
 ::: pf-proof
 
-This is exactly step [](#s5){.pf-ref}.
+The Galois correspondence gives $[E:F]=[G:H]$.
+Since $G$ is a finite $p$-group, every subgroup index is a power of $p$.
 
 :::
 

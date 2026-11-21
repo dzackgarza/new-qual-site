@@ -69,6 +69,36 @@ audit:
     recorded here and in the COMPLAINTS.md entry for §43--§50 as located with its formulas
     unreadable, the site answering an automated request with a Cloudflare human check, which is not
     worked around. The card keeps its own proof.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked the geometric decay of the successive distances
+    by induction, the Cauchy estimate with the geometric tail bounded by alpha^n/(1-alpha),
+    convergence by completeness, continuity of f from the Lipschitz bound, the fixed point
+    identity, and uniqueness from (1-alpha)d(x,y) <= 0. The argument is the card's own; no
+    retained set is cited on it. No repair needed to the statement.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read. The proof is correct: the bound $d(x_{n+1},x_n)\le\alpha^nc$ by induction, the
+    Cauchy estimate $d(x_m,x_n)\le c\alpha^n/(1-\alpha)$ from the triangle inequality and the
+    geometric sum, completeness giving the limit, continuity from the Lipschitz inequality, and the
+    uniqueness step. No numbered theorem is cited beyond the definitions of completeness and of a
+    contraction; the argument is the card's own, and no retained solution set covers the exercise.
+    Citation by number: §43 Exercise 5, read in `tmp/sources/munkres-2000-topology.md`.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 second read, on the verification member's report of this card. The induction step
+    multiplied $d(x_{n+1},x_n)\le\alpha^nc$ by $\alpha$, which preserves the inequality only for
+    $\alpha\ge0$, while the exercise assumes only $\alpha<1$. The step now begins by noting that
+    $\alpha<0$ forces $d(f(x),f(y))<0$ for $x\ne y$, hence a space with at most one point, where
+    the claim is trivial, and then assumes $\alpha\ge0$. Nothing else changed.
+
 ---
 
 ::: {.exercise}
@@ -85,35 +115,70 @@ Compare [[E-70TGS]].
 :::
 
 ::: {.solution}
-Choose $x_0\in X$ and define
-$$
-x_{n+1}=f(x_n).
-$$
-If $c=d(x_1,x_0)$, repeated use of the contraction inequality gives
-$$
-d(x_{n+1},x_n)\le \alpha^n c.
-$$
-Hence for $m>n$,
-$$
-d(x_m,x_n)
-\le\sum_{k=n}^{m-1}d(x_{k+1},x_k)
-\le c\sum_{k=n}^{m-1}\alpha^k
-\le \frac{c\alpha^n}{1-\alpha}.
-$$
-The right side tends to $0$, so $(x_n)$ is Cauchy. Completeness gives $x_n\to x\in X$.
+The argument is the card's own; no retained solution set is cited on it. This is the Banach fixed point theorem, Munkres §43, and the card records the comparison with [[E-70TGS]], where compactness replaces completeness and the map need only be shrinking.
 
-The contraction inequality implies that $f$ is Lipschitz, hence continuous. Therefore
-$$
-f(x)=f\left(\lim_nx_n\right)
- =\lim_nf(x_n)
- =\lim_nx_{n+1}
- =x.
-$$
-Thus a fixed point exists.
+::: pf
 
-If $x$ and $y$ are fixed points, then
+::: {.pf-step #geometric}
+With $x_{0}\in X$ arbitrary and $x_{n+1}=f(x_{n})$, one has $d(x_{n+1},x_{n})\le\alpha^{n}c$ for all $n\ge0$, where $c=d(x_{1},x_{0})$.
+
+::: pf-proof
+If $\alpha<0$ then $d(f(x),f(y))\le\alpha d(x,y)<0$ for every $x\ne y$, which is impossible, so in that case $X$ has at most one point and the claim is trivial; assume $\alpha\ge0$, which the multiplication by $\alpha$ below uses. For $n=0$ this reads $d(x_{1},x_{0})\le c$, an equality. If it holds for $n$, then $d(x_{n+2},x_{n+1})=d\big(f(x_{n+1}),f(x_{n})\big)\le\alpha\,d(x_{n+1},x_{n})\le\alpha^{n+1}c$; so it holds for all $n$ by induction.
+:::
+
+:::
+
+::: {.pf-step #cauchy}
+$(x_{n})$ is Cauchy.
+
+::: pf-proof
+For $m>n$, the triangle inequality and step [](#geometric){.pf-ref} give
 $$
-d(x,y)=d(f(x),f(y))\le\alpha d(x,y).
+d(x_{m},x_{n})\le\sum_{k=n}^{m-1}d(x_{k+1},x_{k})\le c\sum_{k=n}^{m-1}\alpha^{k}\le\frac{c\,\alpha^{n}}{1-\alpha},
 $$
-Since $\alpha<1$, this forces $d(x,y)=0$, hence $x=y$. The fixed point is unique.
+the last because the geometric tail is bounded by $\alpha^{n}/(1-\alpha)$ when $0\le\alpha<1$. The bound tends to $0$ as $n\to\infty$, so for every $\varepsilon>0$ there is $N$ with $d(x_{m},x_{n})<\varepsilon$ for all $m>n\ge N$.
+:::
+
+:::
+
+::: {.pf-step #limit}
+$(x_{n})$ converges, say to $x$, and $f$ is continuous.
+
+::: pf-proof
+$X$ is complete and $(x_{n})$ is Cauchy, so $x_{n}\to x$ for some $x\in X$. The contraction inequality gives $d\big(f(u),f(v)\big)\le\alpha d(u,v)\le d(u,v)$ for all $u,v$, so $f$ is Lipschitz with constant $\alpha$ and in particular continuous.
+:::
+
+:::
+
+::: {.pf-step #fixed}
+$f(x)=x$.
+
+::: pf-proof
+By continuity of $f$ and step [](#limit){.pf-ref},
+$$
+f(x)=f\Big(\lim_{n}x_{n}\Big)=\lim_{n}f(x_{n})=\lim_{n}x_{n+1}=x .
+$$
+:::
+
+:::
+
+::: {.pf-step #unique}
+The fixed point is unique.
+
+::: pf-proof
+If $f(x)=x$ and $f(y)=y$ then $d(x,y)=d\big(f(x),f(y)\big)\le\alpha\,d(x,y)$, so $(1-\alpha)d(x,y)\le0$; since $1-\alpha>0$ and $d(x,y)\ge0$, this gives $d(x,y)=0$ and hence $x=y$.
+:::
+
+:::
+
+::: {.pf-step}
+A contraction of a nonempty complete metric space has exactly one fixed point.
+
+::: pf-proof
+Steps [](#cauchy){.pf-ref}, [](#limit){.pf-ref} and [](#fixed){.pf-ref} produce a fixed point, and step [](#unique){.pf-ref} shows it is the only one.
+:::
+
+:::
+
+:::
 :::

@@ -22,6 +22,8 @@ $$
 $$
 is a [[D-TM4TE|biholomorphism]], with inverse $\Psi^{-1}(w)=i\,\frac{1+w}{1-w}$.
 It restricts to a biholomorphism from the first quadrant $Q_1\coloneqq\theset{z\st\Re z>0,\ \Im z>0}$ onto the lower half-disc $\theset{w\in\DD\st\Im w<0}$.
+
+The biholomorphism of $\HH$ onto $\DD$ is [@SS03, ch. 8, Theorem 1.2], whose map is $(i-z)/(i+z)$ with inverse $i(1-w)/(1+w)$. The transform above is that map followed by a rotation of $\DD$ by $\pi$: $(z-i)/(z+i)=-(i-z)/(i+z)$, so its inverse is $i(1+w)/(1-w)$; the image of the quadrant is the corresponding rotation of a half-disc, which is why it is the lower one.
 :::
 
 ::: {.remark}

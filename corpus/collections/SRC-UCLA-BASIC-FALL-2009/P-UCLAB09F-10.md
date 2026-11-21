@@ -6,7 +6,9 @@ title: Integral mean values on an interval and a square
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integrals
+  - Mean Value Theorem
 relations: []
 review: draft
 audit:

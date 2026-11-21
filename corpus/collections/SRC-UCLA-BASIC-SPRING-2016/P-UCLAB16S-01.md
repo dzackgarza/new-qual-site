@@ -6,7 +6,9 @@ title: Continuity along the diagonal under separate monotonicity
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Continuity
+  - Monotone Functions
 relations: []
 review: draft
 audit:

@@ -18,6 +18,14 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Restored the lost prime in f'(x) and separated the three functions against Real Analysis Problem 1 on page 8 of the source PDF.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Big_List_of_Math_Problems.pdf`: the statement is Problem 1 of the Real Analysis chapter, and
+    its printed words are the card's. The chapter, the problem number and the file are now named in
+    the solution's opening sentence. Not checked in this pass: the argument, which the edit does not
+    touch.
 ---
 
 ::: {.problem}
@@ -25,6 +33,7 @@ Find $f'(x)$, if $f(x) = \log\frac{a}{x}$, $\cos\arcsin x$, $\frac{x^2+1}{x^3+1}
 :::
 
 ::: {.solution}
+This is Problem 1 of the Real Analysis chapter of *Mathematical Trivium*, retained in this repository as `assets/attachments/Big_List_of_Math_Problems.pdf`; the statement below is its wording.
 
 ::: pf
 

@@ -36,7 +36,22 @@ audit:
     trace on 0 → Z_n → C_n → B_{n-1} → 0 and 0 → B_n → Z_n → H_n → 0, cancelling in
     the alternating sum) identifies the alternating chain trace with tau(f); and the
     alternating count of simplices is the Euler characteristic. No defect.
----
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 4 of §2.C, printed p. 184, with its printed hint, in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`, and against DeMason, Hatcher 2.C.4, printed
+    pp. 85--88 — his solution starts on p. 85, runs through pp. 86--87 and closes at the head of p. 88,
+    where 2.C.9 then begins. Checked: after one barycentric subdivision an $f$-invariant simplex has
+    vertices of distinct dimensions, hence is fixed pointwise, so the fixed set is a subcomplex; a
+    permuted simplex off the diagonal contributes nothing to the trace and a fixed one contributes
+    $+1$, so the trace on $C_n$ is $c_n(F)$; the Hopf trace formula follows from additivity of trace
+    on $0\to Z_n\to C_n\to B_{n-1}\to0$ and $0\to B_n\to Z_n\to H_n\to0$ with the boundary terms
+    cancelling; and the alternating simplex count of a finite complex is $\chi(F)$. The isolated case
+    is right: a fixed subcomplex containing an edge would have its interior fixed, so an isolated
+    fixed set consists of vertices and $\chi(F)=\#F$. No defect.
+
 ---
 
 ::: {.problem}
@@ -125,7 +140,7 @@ $$
 \tau(f)=\#F.
 $$
 
-The subdivision and fixed-simplex arguments are in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.C.4, printed pp. 85--88. In the refined complex a preserved simplex is fixed pointwise, so every diagonal trace entry is $+1$. It follows that the alternating chain trace over $n$ is $\sum(-1)^nc_n(F)=\chi(F)$, and for an isolated fixed point set this is just $\#F$.
+The subdivision and fixed-simplex arguments are in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher §2.C Exercise 4. In the refined complex a preserved simplex is fixed pointwise, so every diagonal trace entry is $+1$. It follows that the alternating chain trace over $n$ is $\sum(-1)^nc_n(F)=\chi(F)$, and for an isolated fixed point set this is just $\#F$.
 
 
 :::

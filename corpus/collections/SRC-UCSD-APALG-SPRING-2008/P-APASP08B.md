@@ -80,9 +80,6 @@ Step [](#semisimple-has-no-nilpotents){.pf-ref} (the only nilpotent element of a
 
 :::
 
-::: pf-qed
-Step [](#f-is-zero){.pf-ref}.
-:::
 
 :::
 

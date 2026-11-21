@@ -278,6 +278,11 @@ audit:
     printed pp. 3--5, is the cap and cross product formula and is not a Hatcher §3.B
     exercise. The attribution itself, and the reason §3.B stops at Exercise 5 on printed
     p. 280, stand as the event above states them.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Lamport structure for the cross product of fundamental classes, which is what Queue D asks for on this card. The prose ran as eight italicised paragraphs, two of which said outright that they were not steps of the proof; the five that are steps of the argument are now the five numbered steps, and the Kottke sheet's second route, with its two cautions, is a remark after the proof where the card's block order puts it. The coefficient-ring passage the source asserts in one sentence is the step that carries the universal coefficient theorem (Theorem 3A.3, printed p. 264) and Proposition 3B.1, and the disconnected case is settled inside the last step rather than in a separate aside. Locators re-checked against the book's text: the relative cross product and relative Kunneth on printed p. 276, the fundamental class definition on p. 236, Theorem 3A.3 on p. 264, Theorem 3B.6 on p. 275, and the exercise on printed p. 280. No statement repair.
 ---
 
 ::: {.problem}
@@ -285,46 +290,76 @@ Show that the cross product of fundamental classes for closed $R$-orientable man
 :::
 
 ::: {.solution}
-The proof below is **C. Kottke, *Math 2420 Problem Set 3 solutions*, Brown University, Spring 2012, Problem 1, printed p. 1** (text version `tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.md`, extracted from the set's PDF), transcribed. That problem proves two things: that $M$ and $N$ are orientable if and only if $M\times N$ is, and that $\alpha\times\beta$ is a fundamental class for $M\times N$. The exercise here is the second, which is Exercise 4 of §3.B, printed p. 280. The one step the source leaves is its passage from $R=\ZZ$ to an arbitrary commutative ring, made in a single sentence --- "it still holds that the product of generators is a generator (i.e. $\pm1\times1=\pm1$ still holds in (1))" --- and it is filled in *The coefficient ring* below from Hatcher's universal coefficient theorem, printed p. 264.
+The proof is **C. Kottke, *Math 2420 Problem Set 3 solutions*, Brown University, Spring 2012, Problem 1** (text version `tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.md`, extracted from the set's PDF, `tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.pdf`, sha256 `e84fd60496037db45bb18457b7c922233f5912a41b5d067112ba75a8211c22a7`), transcribed, with its one asserted passage — from $R=\ZZ$ to an arbitrary commutative ring — filled in below from Hatcher's universal coefficient theorem. That problem proves both that $M$ and $N$ are orientable if and only if $M\times N$ is and that $\alpha\times\beta$ is a fundamental class; the exercise here is the second, Hatcher §3.B Exercise 4.
 
-Let $R$ be a commutative ring with identity, let $M^m$ and $N^n$ be closed $R$-orientable manifolds with fundamental classes $\alpha\in H_m(M;R)$ and $\beta\in H_n(N;R)$, and write $\alpha_x$, $\beta_y$ for their images in the local groups at $x\in M$ and $y\in N$. Write $H_m(M\mid x;R)=H_m(M,M-x;R)$, Hatcher's notation for the local group (printed p. 234).
+Let $R$ be a commutative ring with identity, let $M^m$ and $N^n$ be closed $R$-orientable manifolds with fundamental classes $\alpha\in H_m(M;R)$ and $\beta\in H_n(N;R)$, and write $\alpha_x$, $\beta_y$ for the images of $\alpha$ and $\beta$ in the local groups at $x\in M$ and $y\in N$. Write $H_m(M\mid x;R)=H_m(M,M-\{x\};R)$ for the local group, Hatcher's notation on printed p. 234.
 
-*The local cross product.* Since
-$$
-(M-x)\times N\ \cup\ M\times(N-y)=M\times N-\{(x,y)\},
-$$
-the relative cross product of §3.B (printed p. 276) is a map
+::: pf
+
+::: {.pf-step #local-cross-product}
+The relative cross product of §3.B is a map
 $$
 \times:\ H_m(M\mid x;R)\otimes_R H_n(N\mid y;R)\longrightarrow H_{m+n}\bigl(M\times N\mid (x,y);R\bigr).
 $$
 
-*The integral case at a point.* Take $R=\ZZ$ and excise the charts, so that the local groups are those of the CW pairs $(D^m,S^{m-1})$, $(D^n,S^{n-1})$ and $(D^m\times D^n,\ S^{m-1}\times D^n\cup D^m\times S^{n-1})$, the product pair being reached by radial deformation of $D^m\times D^n-\{0\}$ onto that subcomplex. The relative Künneth theorem (printed p. 276) then gives
-$$
-H_{m+n}\bigl(D^m\times D^n,\ S^{m-1}\times D^n\cup D^m\times S^{n-1}\bigr)
-\cong\bigoplus_{p+q=m+n}H_p(D^m,S^{m-1})\otimes H_q(D^n,S^{n-1})
-\ \oplus\!\!\bigoplus_{p+q=m+n-1}\!\!\operatorname{Tor}\bigl(H_p(D^m,S^{m-1}),H_q(D^n,S^{n-1})\bigr),
-$$
-whose only surviving summands are the top ones; so the local cross product is an isomorphism over $\ZZ$. Replacing $x$ and $y$ by closed balls of finite radius gives the same statement for the groups $H_*(M\mid B_1)$ and $H_*(N\mid B_2)$ of a pair of balls, which is the form the compatibility condition of an orientation uses.
+::: pf-proof
+$(M-\{x\})\times N\cup M\times(N-\{y\})=M\times N-\{(x,y)\}$, so the pair on the right is exactly a product pair, and the relative cross product of §3.B, is defined on it.
+:::
 
-*The coefficient ring.* This is the step the source asserts. The relative chain complex $C_*(M,M-x)$ is free in each degree (printed p. 261), so the universal coefficient theorem for homology, Theorem 3A.3 (printed p. 264), gives the natural short exact sequence
+:::
+
+::: {.pf-step #integral-local}
+Over $R=\ZZ$ the local cross product is an isomorphism, at points and over balls.
+
+::: pf-proof
+Excision replaces the local groups by those of the CW pairs $(D^m,S^{m-1})$, $(D^n,S^{n-1})$ and $(D^m\times D^n,\ S^{m-1}\times D^n\cup D^m\times S^{n-1})$, the last by radial deformation of $D^m\times D^n-\{0\}$ onto that subcomplex. The relative Künneth theorem, printed p. 276, gives
+$$
+H_{m+n}\bigl(D^m\times D^n,\ S^{m-1}\times D^n\cup D^m\times S^{n-1}\bigr)\cong\bigoplus_{p+q=m+n}H_p(D^m,S^{m-1})\otimes H_q(D^n,S^{n-1})\ \oplus\bigoplus_{p+q=m+n-1}\operatorname{Tor}\bigl(H_p(D^m,S^{m-1}),H_q(D^n,S^{n-1})\bigr),
+$$
+and of these summands only $H_m(D^m,S^{m-1})\otimes H_n(D^n,S^{n-1})=\ZZ\otimes\ZZ$ survives, since each disc pair has homology only in degrees $0$ and its top one. So the local cross product is an isomorphism over $\ZZ$. Replacing $x$ and $y$ by closed balls of finite radius gives the same statement for the groups $H_*(M\mid B_1)$ and $H_*(N\mid B_2)$, which is the form the compatibility condition of an orientation uses.
+:::
+
+:::
+
+::: {.pf-step #coefficient-ring}
+For a general $R$, $H_m(M\mid x;R)\cong R$ and $H_n(N\mid y;R)\cong R$, and the local cross product is an isomorphism $R\otimes_RR\to R$: the product of generators is a generator.
+
+::: pf-proof
+The relative chain complex $C_*(M,M-\{x\})$ is free in each degree, printed p. 261, so the universal coefficient theorem for homology, Theorem 3A.3, gives the natural short exact sequence
 $$
 0\to H_m(M\mid x;\ZZ)\otimes_\ZZ R\to H_m(M\mid x;R)\to\operatorname{Tor}\bigl(H_{m-1}(M\mid x;\ZZ),R\bigr)\to 0 .
 $$
-By excision $H_m(M\mid x;\ZZ)\cong H_m(D^m,S^{m-1})\cong\ZZ$ and $H_{m-1}(M\mid x;\ZZ)=0$, so $H_m(M\mid x;R)\cong\ZZ\otimes_\ZZ R=R$, and the generator over $R$ is the image $\zeta_x\otimes 1$ of an integral generator $\zeta_x$; the same holds at $y$. By Proposition 3B.1 and the identification $C_*(X;R)\otimes_R C_*(Y;R)=C_*(X\times Y;R)$ used on printed p. 276, the cross product with coefficients in $R$ is the integral chain-level cross product followed by $-\otimes_\ZZ R$. Hence the local cross product carries $\zeta_x\otimes1$ and $\zeta_y\otimes1$ to $(\zeta_x\times\zeta_y)\otimes1=\pm1$: over $R$ it too is an isomorphism $R\otimes_R R\to R$, and the product of generators is a generator.
+By step [](#integral-local){.pf-ref} and excision $H_m(M\mid x;\ZZ)\cong\ZZ$ and $H_{m-1}(M\mid x;\ZZ)=0$, so $H_m(M\mid x;R)\cong\ZZ\otimes_\ZZ R=R$, the generator over $R$ being the image $\zeta_x\otimes1$ of an integral generator $\zeta_x$; the same holds at $y$. By Proposition 3B.1 the cross product with coefficients in $R$ is the integral chain-level cross product followed by $-\otimes_\ZZ R$, using $C_*(X;R)\otimes_RC_*(Y;R)=C_*(X\times Y;R)$ as on printed p. 276. Hence the local cross product carries $\zeta_x\otimes1$ and $\zeta_y\otimes1$ to $(\zeta_x\times\zeta_y)\otimes1$, which is $\pm1$ by step [](#integral-local){.pf-ref}; over $R$ it is therefore the isomorphism $R\otimes_RR\to R$ that multiplies, and the product of generators is a generator.
+:::
 
-*Orientations multiply.* If $x\mapsto\mu_x$ and $y\mapsto\nu_y$ are $R$-orientations of $M$ and $N$, then $(x,y)\mapsto\mu_x\times\nu_y$ is an $R$-orientation of $M\times N$: it is a section of the local system by the two paragraphs above, and it satisfies the compatibility condition by passing to the product of closed balls $B_1\ni x$ and $B_2\ni y$. So $M\times N$ is $R$-orientable, with no hypothesis beyond the exercise's. If $M$ and $N$ are connected then so is $M\times N$, and Theorem 3.26(a) (printed p. 236, stated for a closed connected manifold) then gives that the map $H_{m+n}(M\times N;R)\to H_{m+n}(M\times N\mid (x,y);R)\cong R$ is an isomorphism. That sentence, and the paragraph two below on integral coefficients, are the source's first route to the conclusion: they need more than the exercise's hypotheses and are not steps of the proof given here. Connectedness is a hypothesis of Theorem 3.26 and is not needed for the exercise's conclusion, which is a statement about local groups. For a closed $R$-orientable $M$ with components $M_i$, a fundamental class is the sum $\sum_i\alpha_i$ of fundamental classes of the pieces $M_i$: $H_*(M)=\bigoplus_iH_*(M_i)$, and a class is a generator in every local group exactly when each summand $\alpha_i$ is. The cross product is bilinear, so $\alpha\times\beta=\sum_{i,j}\alpha_i\times\beta_j$, and $M\times N$ is the disjoint union of the closed connected manifolds $M_i\times N_j$. The statement for possibly disconnected $M$ and $N$ is therefore the statement for connected ones applied component by component, which is what the last paragraph below checks. Theorem 3.26(a) is not a consequence of the exercise: the exercise produces a class whose image in every local group is a generator, which by Hatcher's definition on printed p. 236 is exactly a fundamental class, while Theorem 3.26(a) is the different assertion that for a closed connected $R$-orientable manifold the map $H_n(M;R)\to H_n(M\mid x;R)$ is an isomorphism, and nothing here proves that.
+:::
 
-*The closed manifolds, integral coefficients.* This is the source's second route to the conclusion, it needs more than the exercise's hypotheses, and the paragraph after this one does not use it. Take $R=\ZZ$, so that $M$ and $N$ are now $\ZZ$-orientable — an $R$-orientable manifold need not be: with $R=\ZZ/2$ the projective plane $\RP^2$ is $\ZZ/2$-orientable while $H_2(\RP^2;\ZZ)=0$, so it has no $\ZZ$ fundamental class — and suppose $M$ and $N$ connected, so that $H_m(M;\ZZ)\cong\ZZ\cong H_n(N;\ZZ)$. Kottke's next computation is the Künneth formula for the product, Theorem 3B.6 (printed p. 275), which applies since a closed manifold is homotopy equivalent to a CW complex (Corollary A.12, printed p. 529):
-$$
-H_{m+n}(M\times N)\ \cong\ H_m(M)\otimes H_n(N)\ \oplus\ \operatorname{Tor}\bigl(H_m(M),H_{n-1}(N)\bigr)\ \oplus\ \operatorname{Tor}\bigl(H_{m-1}(M),H_n(N)\bigr)\ =\ H_m(M)\otimes H_n(N),
-$$
-all other terms vanishing and the two Tor groups vanishing because the top degree groups are free. So $[M]\times[N]$ is a generator of $H_{m+n}(M\times N)\cong\ZZ$. The connectedness supposed here is doing real work in that last display: without it $H_{m+n}(M\times N;\ZZ)$ is not $\ZZ$ — for $M$ with $k$ components and $N$ with $\ell$ it is $\ZZ^{k\ell}$, one copy for each pair of components — and $[M]\times[N]$ is a generator of each summand, which is the componentwise form of the conclusion reached in the next paragraph.
+::: {.pf-step #orientation}
+If $x\mapsto\mu_x$ and $y\mapsto\nu_y$ are $R$-orientations of $M$ and $N$, then $(x,y)\mapsto\mu_x\times\nu_y$ is an $R$-orientation of $M\times N$, so $M\times N$ is $R$-orientable.
 
-*The fundamental class.* Finally, for each $(x,y)$ the naturality of the cross product in the pair variables gives
-$$
-(\alpha\times\beta)_{(x,y)}=\alpha_x\times\beta_y\ \in\ H_{m+n}\bigl(M\times N\mid (x,y);R\bigr),
-$$
-and by *The coefficient ring* this is a generator whenever $\alpha_x$ and $\beta_y$ are. So $\alpha\times\beta$ has a generator as its image in every local group, which by Hatcher's definition of a fundamental class (printed p. 236) is exactly that $\alpha\times\beta$ is a fundamental class for $M\times N$ with coefficients in $R$.
+::: pf-proof
+Each $\mu_x\times\nu_y$ is a generator of $H_{m+n}(M\times N\mid(x,y);R)$ by step [](#coefficient-ring){.pf-ref}, so the assignment is a section of the local system. For the compatibility condition, let $B_1\ni x$ and $B_2\ni y$ be closed balls over which $\mu$ and $\nu$ are restrictions of single classes $\mu_{B_1}\in H_m(M\mid B_1;R)$ and $\nu_{B_2}\in H_n(N\mid B_2;R)$; then $\mu_{B_1}\times\nu_{B_2}\in H_{m+n}(M\times N\mid B_1\times B_2;R)$ restricts to $\mu_z\times\nu_w$ at each $(z,w)\in B_1\times B_2$, because the cross product is natural in the pair variables in each factor. So the assignment is locally consistent and is an $R$-orientation.
+:::
 
-Hatcher's pages above are cited from the checked-in text of the book, `tmp/sources/hatcher-2002-algebraic-topology.md`, and Kottke's set from its text version, `tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.md`, the extraction of the set's own five-page PDF `tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.pdf` (sha256 e84fd60496037db45bb18457b7c922233f5912a41b5d067112ba75a8211c22a7).
+:::
+
+::: {.pf-step #fundamental}
+$\alpha\times\beta$ is a fundamental class for $M\times N$ with coefficients in $R$.
+
+::: pf-proof
+For each $(x,y)$ the naturality of the cross product in the pair variables gives
+$$
+(\alpha\times\beta)_{(x,y)}=\alpha_x\times\beta_y\in H_{m+n}\bigl(M\times N\mid(x,y);R\bigr),
+$$
+and this is a generator whenever $\alpha_x$ and $\beta_y$ are, by step [](#coefficient-ring){.pf-ref}. So the image of $\alpha\times\beta$ in every local group is a generator, which by Hatcher's definition of a fundamental class, printed p. 236, is exactly that $\alpha\times\beta$ is a fundamental class for $M\times N$. For possibly disconnected $M$ and $N$ the same conclusion is read componentwise: a fundamental class of a closed $R$-orientable $M$ with components $M_i$ is the sum $\sum_i\alpha_i$ of fundamental classes of the pieces, because $H_*(M)=\bigoplus_iH_*(M_i)$ and a class generates every local group exactly when each summand does; the cross product is bilinear, so $\alpha\times\beta=\sum_{i,j}\alpha_i\times\beta_j$, and $M\times N$ is the disjoint union of the closed connected $M_i\times N_j$, on each of which the connected case applies. Thus $\alpha\times\beta$ is a fundamental class for $M\times N$, which is the exercise.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.remark}
+Kottke's sheet also gives a second route for connected $M$ and $N$ with $R=\ZZ$, which is not a step of the proof above and needs more than the exercise's hypotheses: it computes $H_{m+n}(M\times N;\ZZ)$ by the Künneth formula, Theorem 3B.6, valid since a closed manifold is homotopy equivalent to a CW complex (Corollary A.12), obtaining $H_m(M)\otimes H_n(N)$ with all other terms vanishing because the top groups are free, so that $[M]\times[N]$ is a generator. Two cautions belong with it. An $R$-orientable manifold need not be $\ZZ$-orientable: with $R=\ZZ/2$ the projective plane is $\ZZ/2$-orientable while $H_2(\RP^2;\ZZ)=0$, so it has no $\ZZ$ fundamental class, which is why the integral route cannot replace the coefficient-ring argument for general $R$. And connectedness does real work there, since for $M$ with $k$ components and $N$ with $\ell$ the top group is $\ZZ^{k\ell}$, one copy per pair of components, which is the componentwise form of the step above. The conclusion itself is a statement about local groups and needs neither hypothesis, and it is not Theorem 3.26(a): that theorem asserts that $H_n(M;R)\to H_n(M\mid x;R)$ is an isomorphism for a closed connected $R$-orientable $M$, which nothing here proves.
 :::

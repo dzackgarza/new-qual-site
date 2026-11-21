@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP04-07
 kind: problem
 title: Lindelöfness of products with and without metrizability
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Countability, Product Topology]}
 relations: []
 review: draft
 audit:

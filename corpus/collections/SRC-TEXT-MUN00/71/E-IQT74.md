@@ -23,6 +23,22 @@ audit:
     Theorem 26.5 and Theorem 27.3 (printed pp. 165--173), and the definition of coherence (printed p. 435).
     Part (c) is written as a quotient, so that both the circle topologies and the failure of the Hausdorff
     condition are computed from the definition of the quotient topology rather than asserted.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    All three parts are correct. In (a) each circle is compact, hence closed in a
+    Hausdorff space; conversely, with the circles closed, the diagonal is the
+    finite union of the diagonals of the closed subsets S_i x S_i, each closed
+    because a circle is Hausdorff, so the diagonal is closed and the space is
+    Hausdorff. In (b), closedness of the circles gives coherence directly, and
+    coherence gives closedness because each S_i meets every S_j in S_i or in the
+    single point p, both closed in S_j. Part (c) is a genuine example: the two
+    arcs are identified away from the marked points, which keeps each circle a
+    closed copy of S^1 in the quotient while making every neighbourhood of q_1
+    meet every neighbourhood of q_2. One wording point, not an error: the closing
+    sentence of step 3 is clumsy, the argument it points at being step 4. Nothing
+    was changed.
 ---
 
 ::: {.exercise}
@@ -48,7 +64,7 @@ Assume there is a point $p$ of $X$ such that $S_i \cap S_j = \theset{p}$ for $i 
 
 ::: pf-proof
 
-$S_i$ is compact: it is homeomorphic to $S^1$, which is a closed bounded subspace of $\RR^2$, hence compact by Theorem 27.3 (printed p. 173), and the continuous image of a compact space is compact (Theorem 26.5, printed p. 166). A compact subspace of a Hausdorff space is closed (Theorem 26.3, printed p. 165).
+$S_i$ is compact: it is homeomorphic to $S^1$, which is a closed bounded subspace of $\RR^2$, hence compact by Theorem 27.3 , and the continuous image of a compact space is compact (Theorem 26.5). A compact subspace of a Hausdorff space is closed (Theorem 26.3).
 
 :::
 
@@ -60,7 +76,7 @@ $S_i$ is compact: it is homeomorphic to $S^1$, which is a closed bounded subspac
 
 ::: pf-proof
 
-By Exercise 13 of §17 (printed p. 101) it suffices to show that the diagonal $\Delta=\theset{x\times x\mid x\in X}$ is closed in $X\times X$. Each $S_i\times S_i$ is closed in $X\times X$, and $\Delta_{S_i}=\Delta\cap(S_i\times S_i)$ is closed in $S_i\times S_i$ because $S_i$ is Hausdorff, being a subspace of the Hausdorff space $\RR^2$ (Theorem 17.11, printed p. 100), hence closed in $X\times X$. Finally $\Delta=\bigcup_i\Delta_{S_i}$: a point of $\Delta$ is $x\times x$, and $x$ lies in some $S_i$, so $x\times x\in\Delta_{S_i}$; the reverse inclusion is clear. A finite union of closed sets is closed.
+By Exercise 13 of §17  it suffices to show that the diagonal $\Delta=\theset{x\times x\mid x\in X}$ is closed in $X\times X$. Each $S_i\times S_i$ is closed in $X\times X$, and $\Delta_{S_i}=\Delta\cap(S_i\times S_i)$ is closed in $S_i\times S_i$ because $S_i$ is Hausdorff, being a subspace of the Hausdorff space $\RR^2$ (Theorem 17.11), hence closed in $X\times X$. Finally $\Delta=\bigcup_i\Delta_{S_i}$: a point of $\Delta$ is $x\times x$, and $x$ lies in some $S_i$, so $x\times x\in\Delta_{S_i}$; the reverse inclusion is clear. A finite union of closed sets is closed.
 
 :::
 
@@ -84,7 +100,7 @@ Let $C\subseteq X$ with $C\cap S_i$ closed in $S_i$ for every $i$. Since $S_i$ i
 
 ::: pf-proof
 
-Fix $i$ and consider $S_i\subseteq X$. For every $j$, $S_i\cap S_j$ equals $S_i$ if $j=i$ and $\theset{p}$ if $j\ne i$; both are closed in $S_j$, the second because a finite point set in the Hausdorff space $S_j$ is closed (Theorem 17.8, printed p. 99). By coherence $S_i$ is closed in $X$, for every $i$, and step 2 gives that $X$ is Hausdorff. Conversely, if $X$ is Hausdorff then the $S_i$ are closed by step 1 and the topology is coherent by step 3. This proves (b) in both directions.
+Fix $i$ and consider $S_i\subseteq X$. For every $j$, $S_i\cap S_j$ equals $S_i$ if $j=i$ and $\theset{p}$ if $j\ne i$; both are closed in $S_j$, the second because a finite point set in the Hausdorff space $S_j$ is closed (Theorem 17.8). By coherence $S_i$ is closed in $X$, for every $i$, and step 2 gives that $X$ is Hausdorff. Conversely, if $X$ is Hausdorff then the $S_i$ are closed by step 1 and the topology is coherent by step 3. This proves (b) in both directions.
 
 :::
 

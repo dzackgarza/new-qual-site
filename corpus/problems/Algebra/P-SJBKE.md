@@ -10,6 +10,18 @@ classification:
   - Representation Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card carried no audit list; this one records the change. The statement step was the single step
+    without a justification, and it now says where the bijection comes from: the tensor--hom adjunction
+    for $R[G]\otimes_{R[H]}V$ together with the observation that $G$-linearity of the left-hand map is
+    exactly $H$-linearity of its restriction to the generators $1\otimes v$. The two constructions and
+    the closing inverse-and-naturality argument were already justified and are unchanged. The card stands
+    alone, with no collection provenance and no retained published solution, so the argument is the
+    card's own. The statement is unchanged.
 ---
 
 ::: {.problem}
@@ -28,6 +40,11 @@ Statement: there is an isomorphism, natural in $V$ and $W$,
 $$
 \Hom_{R[G]}\bigl(\operatorname{Ind}_H^GV,W\bigr)\cong\Hom_{R[H]}\bigl(V,\Res_H^GW\bigr).
 $$
+
+
+::: pf-proof
+Unwinding the two sides: a $G$-linear map out of $R[G]\otimes_{R[H]}V$ is determined by its values on the generators $1\otimes v$, because those generate the module over $R[G]$, and the adjunction $\Hom_R(R[G]\otimes_{R[H]}V, W)\cong\Hom_{R[H]}(V,W)$ identifies the $R$-linear maps on the left with the $H$-linear maps $V\to W$; the requirement that the map be $G$-linear is exactly that the corresponding $H$-map be $H$-linear. So the stated bijection is the tensor--hom adjunction restricted to the trivial action on $W$, and the two steps below construct both directions on elements, the closing step proving them inverse and natural.
+:::
 
 :::
 

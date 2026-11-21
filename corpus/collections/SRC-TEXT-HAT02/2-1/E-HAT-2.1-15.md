@@ -28,6 +28,19 @@ audit:
   date: 2026-10-31
   note: >-
     Read both directions: if $C=0$ then exactness at $B$ makes $\alpha$ surjective and exactness at $D$ makes $\delta$ injective; conversely surjectivity of $\alpha$ and injectivity of $\delta$ force $\beta=0$ and $\gamma=0$. The application to $(X,A)$ follows from the long exact sequence.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 15 of §2.1, in the exercise block printed on pp. 131--133.
+    Correct. If $C=0$ then $\beta=0$ and exactness at $B$ gives $\operatorname{im}\alpha=B$, while
+    $\gamma=0$ and exactness at $D$ gives $\ker\delta=0$. Conversely surjectivity of $\alpha$ gives
+    $\ker\beta=B$, so $\beta=0$ and $\gamma$ is injective, while injectivity of $\delta$ gives
+    $\operatorname{im}\gamma=0$, so $\gamma=0$ and $C=\ker\gamma=0$. The application is the
+    five-term segment $H_n(A)\to H_n(X)\to H_n(X,A)\to H_{n-1}(A)\to H_{n-1}(X)$ of the pair, to
+    which the criterion is applied in each degree, giving the equivalence of the vanishing of all
+    relative groups with all $i_*$ being isomorphisms. Nothing changed. Not claimed: a published
+    solution, and no certificate.
 ---
 
 ::: {.problem}

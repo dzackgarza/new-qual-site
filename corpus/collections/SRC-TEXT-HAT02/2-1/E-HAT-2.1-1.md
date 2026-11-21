@@ -35,9 +35,32 @@ audit:
   date: 2026-10-31
   note: >-
     Read the proof: the order-preserving identification merges the three vertices, the two boundary edges become a single edge class $a$ with $b$ a loop, and the $\Delta$-complex chain complex gives $H_1=\ZZ$ and $H_0=\ZZ$, so the quotient is $S^1$.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 140 carries the running head 131,
+    so the printed page is the one the card's earlier event claimed. The durable part of the locator
+    is that printed page; the file path names this machine's copy and `tmp/sources` does not survive a
+    VM reset. No mathematics changed.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 1 of §2.1, printed p. 131. Correct: the order-preserving
+    identification sends $v_0\mapsto v_1\mapsto v_2$, so the three vertices merge; the oriented
+    boundary $[v_0,v_1]+[v_1,v_2]-[v_0,v_2]$ becomes $2a-b$, giving $C_2=\ZZ$, $C_1=\ZZ\langle a,b\rangle$,
+    $\partial_2=2a-b$, hence $H_0=\ZZ$, $H_1=\ZZ$ and $H_2=0$ — the homology of the Möbius band,
+    which is the space the quotient polygon is: the rectangle with one pair of opposite sides
+    identified in reverse, cut along a diagonal, and its boundary circle representing $a^2=b$.
+    Removed one thing only: a closing step whose proof was the single word-reference to step s3
+    (STYLE-08). Not claimed: a published solution, and no certificate.
 ---
 
 ::: {.problem}
+This is Hatcher, *Algebraic Topology* (2002), §2.1 Exercise 1; the statement below is its wording.
+
 What familiar space is the quotient $\Delta$-complex of a 2 simplex $[v_0, v_1, v_2]$ obtained by identifying the edges $[v_0, v_1]$ and $[v_1, v_2]$, preserving the ordering of vertices?
 :::
 
@@ -111,21 +134,6 @@ $$
 b=a^2
 $$
 encoded by step [](#s2){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-step
-
-Therefore the familiar quotient space is
-$$
-\boxed{\text{the Möbius band}.}
-$$
-
-::: pf-proof
-
-This is step [](#s3){.pf-ref}.
 
 :::
 

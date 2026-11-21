@@ -14,6 +14,17 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. For a partition x_0 < ... < x_n,
+    |g(x_i) - g(x_{i-1})| = |f(x_{i-1}) - f(x_i)| / |f(x_i) f(x_{i-1})| <=
+    |f(x_i) - f(x_{i-1})| / c^2 because both values have modulus at least c, so every variation sum
+    of g is at most c^{-2} times the corresponding sum for f, and taking suprema gives
+    V(g) <= c^{-2} V(f) < infinity. The hypothesis |f| >= c is used exactly there, and it cannot be
+    weakened to f having no zeros at isolated points without losing uniformity of the bound. The
+    card's steps follow this. Not claimed: any quantitative improvement on the constant c^{-2}.
 ---
 ::: {.problem}
 Let $f$ be a function of bounded variation on $[a,b]$.

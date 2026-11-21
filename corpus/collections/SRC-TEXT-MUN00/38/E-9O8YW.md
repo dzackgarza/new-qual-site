@@ -33,6 +33,15 @@ audit:
     no stated justification, and the reverse implication was written as a contradiction argument through
     {f}^{-1}({0,1}); the card's proof is now the sheet's two implications, with the density and closedness
     of the two-point target's preimage stated where they are used.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked that the closure of a connected set is
+    connected (Theorem 23.4) for one direction, and for the other the two-valued map of a
+    separation, its extension to the compactification (Theorem 38.4) and the separation of
+    the compactification it produces. The argument is the card's own; no retained set is
+    cited. Munkres §38 Exercise 1, printed p. 241. The printed statement needed no repair.
 ---
 
 ::: {.exercise}
@@ -43,15 +52,65 @@ Show that $X$ is connected if and only if $\beta(X)$ is connected.
 :::
 
 ::: {.solution}
-Let $i:X\to\beta(X)$ be the inclusion of the dense subspace.
+The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §38 Exercise 1, with Theorem 23.4 (the closure of a connected set is connected) and Theorem 38.4 (the Stone--Čech extension property).
 
-If $X$ is connected, then $\beta(X)$ is connected: $i(X)=\beta(X)$ is the closure of the connected set $i(X)$ in $\beta(X)$, and the closure of a connected set is connected (Theorem 23.4).
+Let $i:X\to\beta(X)$ be the inclusion of $X$ as a dense subspace of its Stone--Čech compactification.
 
-Conversely, suppose $X$ is not connected, and let $X=A\cup B$ be a separation: $A,B$ nonempty, disjoint and open (hence also closed) in $X$. The function $f:X\to\{0,1\}$, $f(a)=0$ for $a\in A$ and $f(b)=1$ for $b\in B$, is continuous, because $\{0\}$ and $\{1\}$ are the two preimages of points of the discrete space $\{0,1\}$ and $A=f^{-1}(0)$, $B=f^{-1}(1)$ are open; it is onto. The space $\{0,1\}$ is compact Hausdorff, so by Theorem 38.4 the map $f$ extends to a continuous $\tilde f:\beta(X)\to\{0,1\}$. This extension is onto, since $\tilde f(\beta(X))\supset\tilde f(i(X))=f(X)=\{0,1\}$. Then
-$$
-\beta(X)=\tilde f^{-1}(0)\cup\tilde f^{-1}(1)
-$$
-is a separation of $\beta(X)$ into two disjoint nonempty sets open in $\beta(X)$: the space $\beta(X)$ is not connected.
+::: pf
 
-So $X$ is connected if and only if $\beta(X)$ is connected.
+::: {.pf-step #connected-forward}
+If $X$ is connected, then $\beta(X)$ is connected.
+
+::: pf-proof
+The subspace $i(X)$ is homeomorphic to $X$, hence connected, and it is dense in $\beta(X)$. The closure of a connected subset is connected (Theorem 23.4), so $\beta(X)=\overline{i(X)}$ is connected.
+:::
+
+:::
+
+::: {.pf-step #not-connected-forward}
+If $X$ is not connected, then $\beta(X)$ is not connected.
+
+:::: pf-proof
+
+::: {.pf-step #separation}
+A separation $X=A\cup B$ gives a continuous surjection $f:X\to\{0,1\}$ with $A=f^{-1}(0)$ and $B=f^{-1}(1)$.
+
+::: pf-proof
+A separation is a pair of disjoint nonempty open sets with union $X$. Define $f(a)=0$ for $a\in A$ and $f(b)=1$ for $b\in B$; then $f^{-1}(0)=A$ and $f^{-1}(1)=B$ are open, and the preimages of the four open sets of the discrete two-point space are among $\varnothing,A,B,X$, all open, so $f$ is continuous. It is onto because $A$ and $B$ are nonempty.
+:::
+
+:::
+
+::: {.pf-step #extension}
+$f$ extends to a continuous surjection $\tilde f:\beta(X)\to\{0,1\}$.
+
+::: pf-proof
+$\{0,1\}$ is compact and Hausdorff, so by the extension property of $\beta(X)$ (Theorem 38.4) the continuous map $f$ defined on the subspace $X$ extends to a continuous $\tilde f:\beta(X)\to\{0,1\}$. It is onto, since $\tilde f\big(\beta(X)\big)\supset\tilde f\big(i(X)\big)=f(X)=\{0,1\}$.
+:::
+
+:::
+
+::: {.pf-step}
+$\beta(X)$ is not connected.
+
+::: pf-proof
+The sets $\tilde f^{-1}(0)$ and $\tilde f^{-1}(1)$ are disjoint, open, nonempty, and their union is $\beta(X)$; so they separate $\beta(X)$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step}
+$X$ is connected if and only if $\beta(X)$ is connected.
+
+::: pf-proof
+Steps [](#connected-forward){.pf-ref} and [](#not-connected-forward){.pf-ref} are the two implications.
+:::
+
+:::
+
+:::
 :::

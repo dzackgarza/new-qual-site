@@ -75,7 +75,7 @@ This is the definition of the one-parameter family in the problem.
 
 ::: {.pf-step #s1-2}
 
-Since $\phi_0$ is an extremum of $E$, one has
+Part (a): since $\phi_0$ is an extremum of $E$, one has
 $$
 \boxed{
 \evaluated{
@@ -88,19 +88,6 @@ $$
 ::: pf-proof
 
 An extremum has zero derivative along every differentiable admissible curve through it. Apply this to the curve $\lambda\mapsto\phi_\lambda$ from step [](#s1-1){.pf-ref}.
-
-:::
-
-:::
-
-::: {.pf-step #s1-3}
-
-Part (a) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -219,7 +206,7 @@ Differentiate the two powers of $\lambda$ in step [](#s1-8){.pf-ref} and evaluat
 
 ::: {.pf-step #s1-10}
 
-Combining steps [](#s1-2){.pf-ref} and [](#s1-9){.pf-ref} gives
+Part (b): combining steps [](#s1-2){.pf-ref} and [](#s1-9){.pf-ref} gives
 $$
 \boxed{
 (2-d)\Gamma-d\Pi=0.
@@ -230,19 +217,6 @@ $$
 ::: pf-proof
 
 Step [](#s1-2){.pf-ref} gives $E'(1)=0$, while step [](#s1-9){.pf-ref} computes that derivative explicitly.
-
-:::
-
-:::
-
-::: {.pf-step #s1-11}
-
-Part (b) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-10){.pf-ref}.
 
 :::
 
@@ -335,7 +309,7 @@ The equality $\Gamma=\Pi$ is compatible with positive values of both terms, so n
 
 ::: {.pf-step #s1-17}
 
-The dimension-by-dimension conclusion is
+Part (c): the dimension-by-dimension conclusion is
 $$
 \boxed{
 \begin{array}{c|c}
@@ -355,22 +329,9 @@ Combine steps [](#s1-13){.pf-ref} through [](#s1-16){.pf-ref}.
 
 :::
 
-::: {.pf-step #s1-18}
-
-Part (c) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-17){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Steps [](#s1-3){.pf-ref} and [](#s1-11){.pf-ref}, and [](#s1-18){.pf-ref} establish parts (a), (b), and (c), respectively.
+Steps [](#s1-2){.pf-ref} and [](#s1-10){.pf-ref}, and [](#s1-17){.pf-ref} establish parts (a), (b), and (c), respectively.
 
 :::
 

@@ -18,6 +18,13 @@ audit:
     An endomorphism fixes a nonzero vector exactly when A-I is singular.
     Translation by I is a bijection on M_2(F), so the count is the
     number of singular 2 by 2 matrices: q^4-|GL_2(F_q)|.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Spring01.pdf`: the statement is its Problem 1, and
+    the printed words are the card's. The problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the count, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -26,6 +33,7 @@ Find the number of endomorphisms of $V$ that fix at least one nonzero vector.
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Spring 2001, retained in this repository as `assets/attachments/Spring01.pdf`, and the statement below is its wording.
 Choose a basis of $V$, so that
 $$
 \operatorname{End}_F(V)\cong M_2(F).

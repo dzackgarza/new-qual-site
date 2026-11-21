@@ -6,7 +6,9 @@ title: Dimension of the span of powers of an endomorphism
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Minimal and Characteristic Polynomials
+  - Linear Transformations
 relations: []
 review: draft
 audit:

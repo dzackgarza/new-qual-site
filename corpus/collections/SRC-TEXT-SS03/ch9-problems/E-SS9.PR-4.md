@@ -33,6 +33,86 @@ audit:
     all of which lie on the grid, so the open rectangle carries no critical point and wp is a local
     homeomorphism there; its image is an open connected set whose boundary lies in the real axis, hence
     one of the two half-planes, and injectivity follows. Nothing is left in outline.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Two corrections to the first event above. Its locator "(PDF page 300)" is wrong: Problem 4 is on
+    PDF p. 301, printed p. 282; PDF p. 300 is printed p. 281 and carries Problems 1--3. And its
+    sentence that "the asterisk marking a starred problem ... [is] preserved" is wrong: nothing on
+    the card recorded the mark, which the remark below now does. Re-read on printed p. 282 today,
+    the statement is the print's, both parts and the parenthetical example of the rectangle; the
+    asterisk stands before "4." Not checked: the two parts of the argument were read for sense (the
+    conjugation symmetry $\wp(\bar z)=\overline{\wp(z)}$ for a real lattice, the period $\tau$
+    giving $\wp(z+\tau)=\wp(z)$, the critical points at the three half-periods lying on the grid,
+    and the image open with boundary in $\mathbb{R}$) but were not re-derived in this pass.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Repair of step s4 on the reader's report. It concluded injectivity of $\restrictionof{\wp}{R}$
+    from "$\wp$ is a local homeomorphism on $R$ and $R$ is simply connected without critical points",
+    which is false as an inference: $\exp$ is a local biholomorphism on the simply connected $\CC$
+    and is not injective. The step now argues that $\restrictionof{\wp}{R}$ is proper — a compact
+    $K\subseteq\wp(R)$ has $\wp^{-1}(K)\cap R$ closed in the bounded $R$ and at positive distance
+    from $\partial R$, since $\wp(\partial R)\subseteq\RR\cup\{\infty\}$ misses $K$ — and that a
+    proper local homeomorphism onto the simply connected half-plane $\wp(R)$ is a homeomorphism.
+    Steps s1--s3 are unchanged. Provenance: no published solution set covers this Problem (Rhoades,
+    *Solutions/Hints to the Exercises*, 2006, covers a selection of the Exercises), so the argument
+    is the card's own.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Second component of step s4 repaired, on a referee's report of this session: the properness
+    argument, and the identification of $\wp(R)$ with a half-plane before it, presupposed that
+    $\wp(R)$ meets neither the real axis nor infinity, which the card had not proved. A connected
+    open subset of $\CC\setminus\RR$ whose boundary lies in $\RR$ is a half-plane, but only under
+    that disjointness, which fails for $\CC\setminus[0,\infty)$. The step now proves it: if
+    $\wp(z)\in\RR$ then $\wp(z)=\wp(\bar z)$ by step s1, and $\wp(z)=\wp(w)$ forces
+    $z\equiv\pm w\pmod\Lambda$ since $\wp$ is even with a double pole at $0$ as its only pole, so
+    $2\operatorname{Im}z\in t\ZZ$ or $2\operatorname{Re}z\in\ZZ$, neither of which holds on $R$.
+    The rest of the step is unchanged.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Steps s1 and s2 repaired, on the same referee's report. Step s1's second identity read
+    $\wp(z+it)=\wp(\bar z)$, which is false: the left side is $\wp(z)$ by periodicity while the right
+    side is $\overline{\wp(z)}$, so it would make $\wp$ real everywhere. It now states the three
+    facts actually used — conjugation, evenness, $it$-periodicity — and the proof closes with
+    evenness instead of the false composition. Step s2's line $x=0$ asserted $z+it=\bar z$, which for
+    $z=iy$ would say $i(y+t)=-iy$; it now writes $w=i(y+t)=\overline w$ and passes through evenness.
+    Its line $x=1/2$ asserted $-1/2+iy=\overline{1/2+iy}-1$, whose right side is $-1/2-iy$; it now
+    reads $-1/2+iy=-\overline{1/2+iy}$, again with evenness. The conclusions, and the lines
+    $y=0$ and $y=t/2$, are unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Record of the search behind the solution's provenance sentence, which the reader asked for where
+    no published solution set covers the Problem. Read: the head of R. C. Rhoades,
+    *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), whose
+    abstract describes it as solutions or hints to "many of the exercises", with one part per
+    chapter. Searched the open web for a set answering the end-of-chapter Problems of this book: no
+    document answering Chapter 9, Problem 4 was found. This search located no published set answering
+    this Problem, and none is retained in this repository. Not checked: whether such a set exists
+    outside what a web search reaches. The mathematics of the card is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected: a published solution of this Problem was located, so the sentence saying
+    that none existed is replaced. The set is Wang Zirui, *Complete Solutions for Chapter 9*, in the
+    public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, read at its
+    Problem 4 and checked against Chapter 9, Problem 4: conjugation invariance of the lattice
+    $\ZZ+\ZZ i t$ gives $\wp(\overline z)=\overline{\wp(z)}$, reflection in each line $x=n/2$ and
+    $y=mt/2$ plus evenness and periodicity gives $\wp(z)=\overline{\wp(z)}$ on them, the zeros of
+    $\wp'$ are the three nonzero half-periods, and the argument principle gives one preimage per
+    half-plane. Its text is an outline; the card's steps supply the argument-principle count on a
+    boundary avoiding the branch values, the treatment of infinity as a fourth branch value, and the
+    alternation of adjacent rectangles. Not checked: anything in the published document outside its
+    Problem 4.
 ---
 
 ::: {.exercise}
@@ -43,7 +123,12 @@ Suppose $\tau$ is purely imaginary, say $\tau=it$ with $t>0$. Consider the divis
 (b) Prove that $\wp$ maps the interior of each rectangle conformally to the upper (or lower) half-plane.
 :::
 
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 9, Problem 4).
+:::
+
 ::: {.solution}
+A published solution of this Problem is Wang Zirui, *Complete Solutions for Chapter 9* (Problem 4), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`. Checked against Chapter 9, Problem 4, it makes the same three moves: conjugation invariance of the lattice for $\wp(\overline z)=\overline{\wp(z)}$ and the reflection in each line $x=n/2$, $y=mt/2$; the location of the zeros of $\wp'$ at the three nonzero half-periods, so that no critical point lies inside the rectangle; and the argument principle to count preimages, which gives a conformal map of the rectangle onto a half-plane with adjacent rectangles alternating. The proof below follows that route and supplies the detail it compresses, as the audit trail records.
 
 Let $\tau=it$ with $t>0$, $\Lambda=\ZZ+\ZZ it$, and $\wp$ the Weierstrass function of $\Lambda$.
 
@@ -51,7 +136,7 @@ Let $\tau=it$ with $t>0$, $\Lambda=\ZZ+\ZZ it$, and $\wp$ the Weierstrass functi
 
 ::: {.pf-step #s1}
 
-$\wp(\bar z)=\overline{\wp(z)}$ and $\wp(z+it)=\wp(\bar z)$.
+$\wp(\bar z)=\overline{\wp(z)}$, $\wp(-z)=\wp(z)$, and $\wp(z+it)=\wp(z)$.
 
 ::: pf-proof
 
@@ -61,7 +146,7 @@ $$
 $$
 gives $\wp(\bar z)=\overline{\wp(z)}$, because $\overline{\Lambda}=\Lambda$ and the series converges absolutely.
 
-$\wp$ is $\Lambda$-periodic, so $\wp(z+it)=\wp(z)$ since $it\in\Lambda$. Composing with the first identity, $\wp(z+it)=\wp(\bar z)$.
+$\wp$ is even and $\Lambda$-periodic: $-\Lambda=\Lambda$, and $(-z+\omega)^2=(z-\omega)^2$ runs through the same terms, so $\wp(-z)=\wp(z)$; and $\wp(z+it)=\wp(z)$ since $it\in\Lambda$.
 
 :::
 
@@ -75,15 +160,15 @@ $\wp$ is real-valued on the lines $x=n/2$ and $y=tm/2$.
 
 *On $y=0$*, i.e. $z=x$ real: $\bar z=z$, so $\wp(x)=\overline{\wp(x)}$ by step [](#s1){.pf-ref}, hence $\wp(x)\in\RR$.
 
-*On $x=0$*, i.e. $z=iy$: write $z+it=i(y+t)$. Then $z+it=\overline{z}$, so by step [](#s1){.pf-ref}
+*On $x=0$*, i.e. $z=iy$: write $w=i(y+t)$, so that $\wp(iy)=\wp(i(y+t))=\wp(w)$ by $it$-periodicity and $\overline w=-w$. By step [](#s1){.pf-ref},
 $$
-\wp(iy)=\wp(i(y+t))=\wp(\overline{iy})=\overline{\wp(iy)},
+\wp(iy)=\wp(w)=\wp(-w)=\wp(\overline w)=\overline{\wp(w)}=\overline{\wp(iy)},
 $$
 so $\wp(iy)\in\RR$.
 
-*On $x=1/2$*: $\wp(x+iy)$ is $1$-periodic in $x$, so $\wp(1/2+iy)=\wp(-1/2+iy)$. Now $-1/2+iy=\overline{1/2+iy}-1$, so using periodicity and step [](#s1){.pf-ref},
+*On $x=1/2$*: $\wp(x+iy)$ is $1$-periodic in $x$, so $\wp(1/2+iy)=\wp(-1/2+iy)$, and $-1/2+iy=-\overline{1/2+iy}$. Using step [](#s1){.pf-ref},
 $$
-\wp(1/2+iy)=\wp(-1/2+iy)=\wp(\overline{1/2+iy})=\overline{\wp(1/2+iy)},
+\wp(1/2+iy)=\wp(-1/2+iy)=\wp(-\overline{1/2+iy})=\wp(\overline{1/2+iy})=\overline{\wp(1/2+iy)},
 $$
 hence real.
 
@@ -117,7 +202,11 @@ $\wp$ maps $R$ bijectively onto either the upper or the lower half-plane, hence 
 
 $\wp(R)$ is open (step [](#s3){.pf-ref} and the open mapping theorem) and connected. Its boundary is contained in $\wp(\partial R)\subseteq\RR$ by step [](#s2){.pf-ref}: for a sequence $z_k\in R$ with $z_k\to z\in\partial R$, the values $\wp(z_k)$ have limit points in $\RR$ (including possibly $\infty$ at the corners, which are not in $\Lambda$, so the limit is finite unless $z\in\Lambda$; the corners $0,\tfrac12,\tfrac{it}{2},\tfrac{1+it}{2}$ are the half-periods and $0$, and $0\in\Lambda$ gives the pole).
 
-An open connected subset of $\CC\setminus\RR$ whose boundary lies in $\RR$ is contained in, and hence equals, one of the two half-planes: it is a connected component of $\CC\setminus\RR$. Since $\wp$ is a local homeomorphism on $R$ and $R$ is simply connected without critical points, $\wp|_R$ is injective, so it is a conformal map onto that half-plane.
+An open connected subset of $\CC\setminus\RR$ whose boundary lies in $\RR$ is contained in, and hence equals, one of the two half-planes: it is a connected component of $\CC\setminus\RR$.
+
+It remains to see that $\restrictionof{\wp}{R}$ is injective, which does not follow from local injectivity alone: $\exp$ is a local biholomorphism on the simply connected $\CC$ and is not injective. First, $\wp$ takes no real value on $R$. If $\wp(z)\in\RR$, then $\wp(z)=\overline{\wp(z)}=\wp(\bar z)$ by step [](#s1){.pf-ref}; and $\wp(z)=\wp(w)$ forces $z\equiv\pm w\pmod\Lambda$, because for fixed $w$ the function $\wp(z)-\wp(w)$ has its only pole at $0$, of order $2$, and therefore exactly two zeros counted with multiplicity, at $z=w$ and $z=-w$. Hence $z\equiv\bar z$ or $z\equiv-\bar z\pmod\Lambda$, that is $2\operatorname{Im}z\in t\ZZ$ or $2\operatorname{Re}z\in\ZZ$, and neither holds on $R$. So $\wp(R)\subseteq\CC\setminus\RR$.
+
+What is needed next is properness. Let $K\subseteq\wp(R)$ be compact. Then $\wp^{-1}(K)\cap R$ is closed in $R$, and it stays at a positive distance from $\partial R$: if $z_k\in\wp^{-1}(K)\cap R$ tended to $z\in\partial R$, then $\wp(z_k)\in K$ would converge to $\wp(z)\in\RR$ by continuity of $\wp$ on $\overline R\setminus\Lambda$, or to $\infty$ at the corner $0\in\Lambda$, and either is impossible because $K$ is a compact subset of a half-plane. Since $\overline R$ is bounded, $\wp^{-1}(K)\cap R$ is compact, so $\restrictionof{\wp}{R}$ is proper. A proper local homeomorphism is a covering map, and a covering of the simply connected $\wp(R)$ by the connected $R$ is trivial, so $\restrictionof{\wp}{R}$ is a homeomorphism onto $\wp(R)$: it is injective and conformal.
 
 Which half-plane depends on the rectangle: adjacent rectangles give opposite signs, because the values on a shared edge are real and $\wp$ is a local homeomorphism there, so the images lie on opposite sides.
 

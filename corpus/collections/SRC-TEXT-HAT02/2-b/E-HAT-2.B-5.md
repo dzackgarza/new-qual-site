@@ -1,4 +1,7 @@
 ---
+
+
+
 schema: qual/card@1
 id: E-HAT-2.B-5
 kind: problem
@@ -181,6 +184,138 @@ audit:
     generator it is, not the proof that it is one. Unchanged and re-checked: the statement as printed
     on p. 176, the second proof's excision and bicollar steps, and the first proof's label. Not
     claimed: a published solution of Exercise 2.B.5.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    #123 pass: Brown's paper, which Hatcher's §2.B points at, is now cited on this card for the
+    flatness the second proof uses. Read this pass in the supplied text version
+    `tmp/sources/brown-1960-generalized-schoenflies.md` (PDF beside it, three pages, printed page =
+    PDF page): Theorem 5 on printed p. 76, "Let h be a homeomorphic embedding of $S^{n-1}\times I$
+    into $S^n$. Then the closure of either complementary domain of $h(S^{n-1}\times 1/2)$ is an
+    $n$-cell", which with $n=k$ is the step the bicollar $\beta$ feeds; and Theorem 0 on printed
+    p. 74, the disk-complement statement under an inverse-set hypothesis. Checked in Hatcher that the
+    pointer is at printed p. 169 ("See [Brown 1960] for a precise statement and proof"), in the
+    paragraph after Proposition 2B.1. The paper's own cross-reference on printed p. 76 prints the
+    first of those as "Theorem 0", and the extraction renders the numeral as the letter O. Checked:
+    both theorem statements and both page numbers. Not checked: Brown's proofs of Theorems 1--5,
+    which the card does not use; the card quotes Theorem 5's statement only. The homology isomorphism
+    itself remains assembled on this card from Hatcher's Proposition 2B.1(a) and (b), printed
+    pp. 169--170, with excision and Mayer--Vietoris, and Bredon's Theorem 19.11 remains cited as a
+    second statement of the same theorem. Not claimed: a published solution of Exercise 2.B.5.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule of this date applied, with the disposition the owner fixed for this
+    card: Brown, Theorem 5, printed p. 76, is cited at the step that needs the flatness, and
+    Hatcher's Proposition 2B.1(b), printed p. 169, at the step that computes the homology of the
+    complement, with Proposition 2B.1(a) for the acyclicity of $S^n-D'$ in the second proof; the
+    excision and Mayer--Vietoris assembly between them is marked as the card's own, and the remark
+    says that no single source states the exercise. Brown is named first in the Schoenflies step's
+    statement and in the application, with Bredon's Theorem 19.11, printed p. 236, as the same
+    theorem. Checked this pass: both step statements, their page numbers, and the acyclicity step's
+    citation. Not re-verified: Brown's proof of Theorem 5, whose statement is what the card uses.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    A false record corrected: the remark said that Putman and Bredon have no text versions in
+    `tmp/sources` and were read in their PDFs' text layers. Putman's notes do have one,
+    `tmp/sources/putman-generalized-schoenflies.md`, whose §3 "Schoenflies via infinite repetition"
+    is Mazur's proof and carries Theorem 2.1; the remark now cites that text version. Bredon still
+    has only the PDF, and the remark keeps the reading copy and the page arithmetic for it
+    (PDF page 131 = printed pp. 236--237). Checked: the presence of the two files, and that the
+    Putman text version contains §3 and Theorem 2.1. Not changed: any page number or argument.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, the correctness read of this card's own steps. One gap found and repaired, in
+    step `#schoenflies-pair`: it concluded from the acyclicity of $X$ and $A$ that $H_j(X,A)=0$
+    for all $j>0$, which the exact sequence gives only for $j\geq2$. In degree one exactness gives
+    $H_1(X,A)\cong\ker(H_0(A)\to H_0(X))$, and that needs the separate remark that $A$ is
+    connected and $X$ path-connected, so that the map is an isomorphism of two copies of $\ZZ$;
+    the step now says this. Checked and unchanged in the same step: $D\cap S=h'(D^k\setminus L)=\ell$
+    and $D\cap D'=\varnothing$; $D^n\setminus L$ is star-shaped about $0$, so $D$ is contractible;
+    $S\setminus\Sigma=\ell\sqcup(S\setminus\bar\ell)$ with exactly two components, from
+    $\widetilde H_0(S\setminus\Sigma)=\ZZ$ by Proposition 2B.1(b) applied in $S\cong S^k$ and local
+    path connectedness; $D'=\overline{S\setminus\bar\ell}$ is a compact $k$-manifold with boundary
+    $\Sigma$, near $\Sigma$ through the chart $h'^{-1}$ and the half-space
+    $\{\norm{x}\geq1/2\}$; the bicollar $\beta(h'(x),t)=h'((1+t/2)x)$ has image in
+    $h'(\{\tfrac14\leq\norm x\leq\tfrac34\})\subset h'(\operatorname{int}D^k)\subset S$; Brown's
+    Theorem 5 with $n=k$ and Bredon's Theorem 19.11 then make $D'$ a disk. The excision hypotheses
+    hold as written: $\overline{\ell}^{X}=\ell$ because $\Sigma\subseteq D'$, and
+    $\ell\subseteq U=h'(\operatorname{int}D^n)\setminus h'(L)\subseteq D$, since
+    $h'(\operatorname{int}D^n)$ is open by Invariance of Domain and $h'(L)$ is compact.
+    $D\setminus\ell=h'(D^n\setminus D^k)$ deformation retracts onto $\{0\}^k\times S^{n-k-1}$ by
+    collapsing the first $k$ coordinates and pushing the last $n-k$ out, so the exact sequence of
+    the excised pair gives the isomorphism in every degree, $H_0$ included because both relative
+    groups adjacent to it vanish. The $k=0$ paragraph was checked separately: $L=\varnothing$,
+    $D'=S^0\setminus\ell$ a point, $X\cong\RR^n$ acyclic, and $D\setminus\ell\simeq S^{n-1}$.
+    Also checked, in the first proof, that its nonvanishing is not claimed from the duality
+    pairing and that step `#normal-generator` names `#schoenflies-pair` as what supplies it. Not
+    claimed: a published solution of Exercise 2.B.5.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, referee read of this card's own part, the bicollar step of the second proof and what
+    it rests on. The bicollar is an embedding as written: for $\norm{x}=\tfrac12$ the point
+    $(1+t/2)x$ has norm $\tfrac12+\tfrac t4\in[\tfrac14,\tfrac34]$, so $(x,t)\mapsto(1+t/2)x$ is a
+    homeomorphism of $S^{k-1}(\tfrac12)\times[-1,1]$ onto the annulus $\{\tfrac14\le\norm{y}\le
+    \tfrac34\}$ with inverse $y\mapsto(y/2\norm{y},\,4\norm{y}-2)$, and composing it with the
+    embedding $h'$ gives an embedding $\beta:\Sigma\times[-1,1]\to
+    h'(\operatorname{int}D^k)\subset S$ whose restriction to $\Sigma\times\{0\}$ is the identity.
+    That is exactly the hypothesis Bredon states: Theorem 19.11, printed p. 236, "Suppose
+    $f:S^{n-1}\times[-1,1]\to S^n$ is an embedding. Then the closure of each component of
+    $S^n-f(S^{n-1}\times\{0\})$ is homeomorphic to $D^n$", read in the text layer of
+    `tmp/sources/bredon-topology-and-geometry.pdf` (PDF page 131 = printed pp. 236--237), the proof
+    ending on printed p. 239 (PDF page 132) immediately above the section's Problems, which is the
+    extent the card claims. Brown's Theorem 5, printed p. 76 of
+    `tmp/sources/brown-1960-generalized-schoenflies.md`, is the same statement in the same form, so
+    the citation pair is not a mismatched pair. That the two components of $S-\Sigma$ are $\ell$ and
+    $S-\bar\ell$ was checked: both are open in $S$, nonempty, disjoint, and cover $S-\Sigma$, and
+    $\widetilde H_0(S-\Sigma)\cong\ZZ$ by Proposition 2B.1(b), printed p. 169, so there are exactly
+    two; hence $D'$ is the closure of the component $S-\bar\ell$ and the theorem makes it a $k$-disk.
+    Re-read in the same step and unchanged: $D\cap S=\ell$ and $D\cap D'=\varnothing$; the
+    star-shaped contraction of $D^n-L$ to $0$, which keeps a nonzero last coordinate nonzero; the
+    compact $k$-manifold structure of $D'$ near $\Sigma$ through $h'^{-1}$ and the half-space
+    $\{\norm{x}\ge\tfrac12\}$; the excision hypotheses $\overline\ell^{\,X}=\ell$ and
+    $\ell\subset U=h'(\operatorname{int}D^n)\setminus h'(L)\subset A$; the vanishing of $H_j(X,A)$
+    in every degree, degree one through $\ker(H_0(A)\to H_0(X))=0$; the deformation retraction of
+    $D^n-D^k$ onto $\{0\}^k\times S^{n-k-1}$; and the case $k=0$, where no Schoenflies theorem is
+    used. Not claimed: a published solution of Exercise 2.B.5, none located.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator repair, no mathematics: every page reference is gone from the live text — Alexander duality is
+    Theorem 3.44, the generalized Schoenflies input is M. Brown's Theorem 5, the acyclicity of $S^n-D'$ is
+    Hatcher's Proposition 2B.1(a) with its proof, the homological assembly is Proposition 2B.1(b), the flatness
+    making $D'$ a disk is Brown's Theorem 5 and equivalently Bredon's Theorem 19.11, and Putman's paper is
+    cited by its §1 and §3. The remark's sentence that a paper's bit and a PDF's pages agree now simply names
+    the theorem, and the note that Bredon was read in a PDF's text layer no longer quotes a page. What each
+    step takes from its source is unchanged, and the split the card draws — published step or the card's own —
+    is unchanged. The dated events above keep their text, page references included, as QUAL-11 requires.
+    `qualc.authoring check` passes.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The Bredon citation this card's second proof rests on, checked at its statement in the retained PDF's own
+    text layer, because Bredon has no text version in `tmp/sources`. Bredon, *Topology and Geometry*, Chapter
+    IV, §19, Theorem 19.11, is printed as "Theorem (Generalized Schoenflies Theorem). Suppose
+    $f:S^{n-1}\times[-1,1]\to S^n$ is an embedding. Then the closure of each component of
+    $S^n-f(S^{n-1}\times\{0\})$ is homeomorphic to $D^n$", and the paragraph that introduces it says that the
+    higher-dimensional case was proved by Mazur under an extra hypothesis removed by Morse, that M. Brown gave
+    an independent proof avoiding it, and "Our treatment is based on Brown's proof". Both halves of the card's
+    sentence are therefore exact: it is the same theorem as Brown's Theorem 5, and it is proved by Brown's
+    argument. The hypothesis Bredon states is an embedding of $S^{n-1}\times[-1,1]$, which is what the card's
+    bicollar $\beta$ of $\Sigma$ supplies; the card's citation is by theorem number and needs no other change.
+    What this event does not claim: that the five lemmas of Bredon's §19 preceding it were re-read here, or
+    that his proof was carried out line by line — the check is of the statement, of the hypothesis it requires
+    and of the proof's stated provenance, which are what the card cites it for. `qualc.authoring check` passes.
 ---
 
 ::: {.problem}
@@ -207,7 +342,7 @@ An embedded $n$-sphere in $S^n$ is all of $S^n$ by invariance of domain. Hence b
 For $k<n$, both $S^r$ and $S^n-S$ have reduced homology $\ZZ$ in degree $r$ and zero in every other degree.
 
 ::: pf-proof
-Now $r\ge0$, and Alexander duality for the embedded proper subsphere $S\cong S^k$ gives
+Now $r\ge0$, and Alexander duality for the embedded proper subsphere $S\cong S^k$, Theorem 3.44 --- the same two values being what Proposition 2B.1(b) gives for the complement of an embedded sphere --- gives
 $$
 \widetilde H_i(S^n\setminus S)\cong\widetilde H^{\,n-i-1}(S)
 \cong
@@ -224,13 +359,13 @@ The image of the oriented fundamental class of $S^r$ is a generator of $\widetil
 ::: pf-proof
 By step [](#complement-homology){.pf-ref} both reduced homology groups are $\ZZ$ in degree $r$ and zero elsewhere. What has to be shown is that the inclusion $S^r\hookrightarrow S^n-S$ carries the fundamental class of $S^r$ to a generator of $\widetilde H_r(S^n\setminus S)\cong\ZZ$; nonvanishing alone would not suffice, since $2\in\ZZ$ is nonzero and generates the proper subgroup $2\ZZ$.
 
-That the class is a generator is proved, not asserted: step [](#schoenflies-pair){.pf-ref} below proves, without Alexander duality, that the inclusion $S^{n-k-1}\hookrightarrow S^n-S$ is an isomorphism on homology in every degree, so it carries the fundamental class of $S^r$ to a generator. What the duality route adds is which generator it is, and that is a statement about the pairing, not a step of the proof: inside the coordinate disk $D^n$ the normal disk $D^{n-k}$ meets $S\cap D^n=D^k$ in the single point $0$, which is interior to $D^{n-k}$, and $S^r=\partial D^{n-k}$. The concentric sphere $\partial B$ of radius $\tfrac12$ lies in $D^{n-k}$ and the annulus $\{\tfrac12\le\norm{x}\le1\}$ of the last $n-k$ coordinates joins the two spheres inside $D^{n-k}-\{0\}\subset S^n-S$, so $[S^r]=[\partial B]$ in $\widetilde H_r(S^n-S)$; the intersection number of $S$ with the disk $B$ is $\pm1$, one transverse point, which is the linking-number description of Alexander duality's coordinate of $[\partial B]$ under $\widetilde H_r(S^n-S)\cong\widetilde H^{\,k}(S)$, Theorem 3.44, printed p. 254. That description is stated here as the geometric account of the isomorphism and is not used as a step: the nonvanishing it reports is what the second route proves.
+That the class is a generator is proved, not asserted: step [](#schoenflies-pair){.pf-ref} below proves, without Alexander duality, that the inclusion $S^{n-k-1}\hookrightarrow S^n-S$ is an isomorphism on homology in every degree, so it carries the fundamental class of $S^r$ to a generator. What the duality route adds is which generator it is, and that is a statement about the pairing, not a step of the proof: inside the coordinate disk $D^n$ the normal disk $D^{n-k}$ meets $S\cap D^n=D^k$ in the single point $0$, which is interior to $D^{n-k}$, and $S^r=\partial D^{n-k}$. The concentric sphere $\partial B$ of radius $\tfrac12$ lies in $D^{n-k}$ and the annulus $\{\tfrac12\le\norm{x}\le1\}$ of the last $n-k$ coordinates joins the two spheres inside $D^{n-k}-\{0\}\subset S^n-S$, so $[S^r]=[\partial B]$ in $\widetilde H_r(S^n-S)$; the intersection number of $S$ with the disk $B$ is $\pm1$, one transverse point, which is the linking-number description of Alexander duality's coordinate of $[\partial B]$ under $\widetilde H_r(S^n-S)\cong\widetilde H^{\,k}(S)$, Theorem 3.44. That description is stated here as the geometric account of the isomorphism and is not used as a step: the nonvanishing it reports is what the second route proves.
 :::
 
 :::
 
 ::: {.pf-step #schoenflies-pair}
-A second proof, independent of Alexander duality and of any intersection number, cuts $S$ along an equatorial sphere into the two disks whose union it is and reaches the isomorphism through excision; its one external input is the generalized Schoenflies theorem for a bicollared sphere, Bredon's Theorem 19.11 (printed p. 236, proved on printed pp. 236--239). The construction is the asker's own solution to Hatcher's exercise, carried in the body of Math StackExchange question 4773641 rather than in an answer --- that thread has no answers at all (`answer_count` 0, read through the Stack Exchange API on 2026-11-16) --- and it is a user post, not a publication, so every step below is checked directly.
+A second proof, independent of Alexander duality and of any intersection number, cuts $S$ along an equatorial sphere into the two disks whose union it is and reaches the isomorphism through excision; its one external input is the generalized Schoenflies theorem for a bicollared sphere, M. Brown's Theorem 5, the statement Hatcher's §2.B points at (Bredon's Theorem 19.11 is the same theorem, proved by Brown's argument). The construction is the asker's own solution to Hatcher's exercise, carried in the body of Math StackExchange question 4773641 rather than in an answer --- that thread has no answers at all (`answer_count` 0, read through the Stack Exchange API on 2026-11-16) --- and it is a user post, not a publication, so every step below is checked directly.
 
 ::: pf-proof
 Let $h\colon S^k\to S^n$ and $h'\colon D^n\to S^n$ be embeddings with $S=h(S^k)$ and $h'(D^n)\cap S=h'(D^k)$, the second being the hypothesis of the exercise. Put $\ell_0=\{x\in D^k:\norm{x}<\tfrac12\}$, $L=D^k\setminus\ell_0$, and
@@ -247,9 +382,9 @@ For $k\ge1$, $D'$ is a closed $k$-disk. Let $\Sigma=h'(\{x\in\RR^k:\norm{x}=\tfr
 $$
 S\cap h'(\operatorname{int}D^n)=h'(D^k)\cap h'(\operatorname{int}D^n)=h'(\operatorname{int}D^k).
 $$
-Hence $h'^{-1}$ carries $D'$ near $\Sigma$ to the closed half-space $\{x\in\operatorname{int}D^k:\norm{x}\ge\tfrac12\}$, whose boundary sphere $\{\norm{x}=\tfrac12\}$ maps onto $\Sigma$, while $D'\setminus\Sigma=S\setminus\bar\ell$ is open in $S$. Thus $D'=\overline{S\setminus\bar\ell}$ is a compact $k$-manifold with boundary $\Sigma$, namely the closure of that component of $S\setminus\Sigma$. That manifold hypothesis is not automatic --- for the non-simply-connected side of the Alexander horned sphere the corresponding closure is not a manifold --- but the coordinate chart supplies it here. $\Sigma$ is also bicollared in $S$: for $x$ with $\norm{x}=\tfrac12$ the formula $\beta(h'(x),t)=h'((1+\tfrac t2)x)$, $t\in[-1,1]$, defines an embedding $\beta:\Sigma\times[-1,1]\to S$ onto $h'(\{\tfrac14\le\norm{x}\le\tfrac34\})$, a subset of $h'(\operatorname{int}D^k)$ because $\tfrac34<1$ and $\tfrac14>0$, and $\beta(-,0)$ is the identity of $\Sigma$. That is the hypothesis Bredon's theorem asks for. For $k\ge2$ the Generalized Schoenflies Theorem (Bredon, *Topology and Geometry*, Theorem 19.11, printed p. 236: for an embedding $S^{k-1}\times[-1,1]\to S^k$, the closure of each component of the complement of the embedded $S^{k-1}$ is homeomorphic to $D^k$), applied to the bicollar $\beta:\Sigma\times[-1,1]\to S\cong S^k$ and to the component $S\setminus\bar\ell$, whose closure is $D'$, then makes that closure a disk, so $D'\cong D^k$; for $k=1$, $S\cong S^1$, $\ell$ is an open interval and $D'$ a closed interval.
+Hence $h'^{-1}$ carries $D'$ near $\Sigma$ to the closed half-space $\{x\in\operatorname{int}D^k:\norm{x}\ge\tfrac12\}$, whose boundary sphere $\{\norm{x}=\tfrac12\}$ maps onto $\Sigma$, while $D'\setminus\Sigma=S\setminus\bar\ell$ is open in $S$. Thus $D'=\overline{S\setminus\bar\ell}$ is a compact $k$-manifold with boundary $\Sigma$, namely the closure of that component of $S\setminus\Sigma$. That manifold hypothesis is not automatic --- for the non-simply-connected side of the Alexander horned sphere the corresponding closure is not a manifold --- but the coordinate chart supplies it here. $\Sigma$ is also bicollared in $S$: for $x$ with $\norm{x}=\tfrac12$ the formula $\beta(h'(x),t)=h'((1+\tfrac t2)x)$, $t\in[-1,1]$, defines an embedding $\beta:\Sigma\times[-1,1]\to S$ onto $h'(\{\tfrac14\le\norm{x}\le\tfrac34\})$, a subset of $h'(\operatorname{int}D^k)$ because $\tfrac34<1$ and $\tfrac14>0$, and $\beta(-,0)$ is the identity of $\Sigma$. That is the hypothesis Bredon's theorem asks for. For $k\ge2$ the Generalized Schoenflies Theorem (Brown, Theorem 5; Bredon, *Topology and Geometry*, Theorem 19.11, states it in the same bicollar form: for an embedding $S^{k-1}\times[-1,1]\to S^k$, the closure of each component of the complement of the embedded $S^{k-1}$ is homeomorphic to $D^k$), applied to the bicollar $\beta:\Sigma\times[-1,1]\to S\cong S^k$ and to the component $S\setminus\bar\ell$, whose closure is $D'$, then makes that closure a disk, so $D'\cong D^k$; for $k=1$, $S\cong S^1$, $\ell$ is an open interval and $D'$ a closed interval.
 
-So $D'$ is an embedded closed $k$-disk in $S^n$, and Hatcher's Proposition 2B.1(a), printed p. 169, gives
+So $D'$ is an embedded closed $k$-disk in $S^n$, and Hatcher's Proposition 2B.1(a), gives
 $$
 \widetilde H_i(S^n\setminus D')=0\qquad\text{for all }i .
 $$
@@ -260,7 +395,7 @@ H_j(X,A)\cong H_j\bigl((S^n\setminus D')\setminus\ell,\,D\setminus\ell\bigr)
 $$
 the right-hand side using $D'\cup\ell=S$ and $(D^n\setminus L)\setminus\ell_0=D^n\setminus D^k$.
 
-Both $X$ and $A$ are acyclic, so the exact sequence of the pair $(X,A)$ gives $H_j(X,A)=0$ for $j>0$, and also $H_0(X,A)=0$ because $X$ is path-connected and $A\ne\varnothing$. Now $D\setminus\ell=h'(D^n\setminus D^k)$, and $D^n\setminus D^k$ deformation retracts onto $\{0\}^k\times S^{n-k-1}$: collapse the first $k$ coordinates to $0$, which keeps every point outside $D^k$ since its last coordinates stay nonzero, then push the last $n-k$ coordinates radially out to the unit sphere. Hence $D\setminus\ell$ is homotopy equivalent to the sphere $S^{n-k-1}$ of the statement. In the exact sequence of the excised pair
+Both $X$ and $A$ are acyclic, so the exact sequence of the pair $(X,A)$ gives $H_j(X,A)=0$ for $j\geq2$. In degree $1$ exactness gives $H_1(X,A)\cong\ker\bigl(H_0(A)\to H_0(X)\bigr)$, and that kernel is zero: $A=D$ is contractible and $X$ is path-connected, so both $H_0$ are $\ZZ$ and the map between them is an isomorphism. Also $H_0(X,A)=0$, because $X$ is path-connected and $A\ne\varnothing$, so every path component of $X$ meets $A$. Now $D\setminus\ell=h'(D^n\setminus D^k)$, and $D^n\setminus D^k$ deformation retracts onto $\{0\}^k\times S^{n-k-1}$: collapse the first $k$ coordinates to $0$, which keeps every point outside $D^k$ since its last coordinates stay nonzero, then push the last $n-k$ coordinates radially out to the unit sphere. Hence $D\setminus\ell$ is homotopy equivalent to the sphere $S^{n-k-1}$ of the statement. In the exact sequence of the excised pair
 $$
 \cdots\to H_j(S^n\setminus S,\,D\setminus\ell)\to H_{j-1}(D\setminus\ell)\xrightarrow{\ i_*\ }H_{j-1}(S^n\setminus S)\to H_{j-1}(S^n\setminus S,\,D\setminus\ell)\to\cdots
 $$
@@ -284,7 +419,9 @@ For $k<n$, step [](#complement-homology){.pf-ref} leaves only degree $r$ to chec
 :::
 
 ::: {.remark title="Source"}
-Andrew Putman, *The generalized Schoenflies theorem*, printed p. 1 and §3, printed pp. 3--4, of `tmp/sources/putman-generalized-schoenflies.pdf`: for a topological embedding $\varphi:S^{n-1}\to S^n$ with $n\ge2$ whose image bounds a component whose closure $A$ is a manifold with boundary, $A\cong D^n$ (Mazur's proof is §3, printed pp. 3--4; it is Theorem 2.1, in §2, that extends $\varphi$ to an embedding $S^{n-1}\times[0,1]\to S^n$ and so supplies the collar such an $A$ has), together with Hatcher, *Algebraic Topology* (2002), Proposition 2B.1(a) and its printed proof, pp. 169--170, read in `tmp/sources/hatcher-2002-algebraic-topology.md`. The exercise is Exercise 5 of §2.B, printed p. 176; the disk $D^n$ supplies the collar Putman's theorem needs, and Hatcher's (a) is what makes $X=S^n-D'$ acyclic.
+Andrew Putman, *The generalized Schoenflies theorem*, §1 and §3, of `tmp/sources/putman-generalized-schoenflies.pdf`: for a topological embedding $\varphi:S^{n-1}\to S^n$ with $n\ge2$ whose image bounds a component whose closure $A$ is a manifold with boundary, $A\cong D^n$ (Mazur's proof is §3; it is Theorem 2.1, in §2, that extends $\varphi$ to an embedding $S^{n-1}\times[0,1]\to S^n$ and so supplies the collar such an $A$ has), together with Hatcher, *Algebraic Topology* (2002), Proposition 2B.1(a) and its printed proof, read in `tmp/sources/hatcher-2002-algebraic-topology.md`. The exercise is Exercise 5 of §2.B; the disk $D^n$ supplies the collar Putman's theorem needs, and Hatcher's (a) is what makes $X=S^n-D'$ acyclic.
 
-The input quoted for the second proof is Bredon, *Topology and Geometry*, Theorem 19.11 (Generalized Schoenflies Theorem), printed p. 236, whose proof occupies printed pp. 236--239 and follows M. Brown's argument; it needs an embedding $S^{k-1}\times[-1,1]\to S^k$, which the bicollar $\beta$ of $\Sigma$ in the proof supplies. The same section proves, by Mayer--Vietoris induction and without duality, the two complement computations this card uses: Corollary 19.3, printed p. 233, that $S^n-f(D^r)$ has trivial reduced homology for an embedding $f:D^r\to S^n$, and Theorem 19.4 (Generalized Jordan Curve Theorem), printed p. 233, that $\widetilde H_i(S^n-f(S^r))=\ZZ$ for $i=n-r-1$ and $0$ otherwise. Those are Hatcher's Proposition 2B.1(a) and (b), printed pp. 169--170, so either book may be cited for them; Putman's notes are a second published proof of the Schoenflies input. Bredon and Putman have no text versions in `tmp/sources` yet and were read in the text layer of their PDFs, `tmp/sources/bredon-topology-and-geometry.pdf` (PDF page 131 = printed pp. 236--237) and `tmp/sources/putman-generalized-schoenflies.pdf`; the Math StackExchange thread 4773641 was read through the Stack Exchange API.
+Brown's theorem is the one Hatcher's §2.B points at, and it is the statement the second proof's collaring uses. Hatcher, §2.B, read in `tmp/sources/hatcher-2002-algebraic-topology.md`: "it is known that any locally nicely embedded $S^{n-1}$ in $S^n$ is equivalent to the standard $S^{n-1}\subset S^n$ ... In particular, both complementary regions are homeomorphic to open balls. See [Brown 1960] for a precise statement and proof." M. Brown, *A proof of the generalized Schoenflies theorem*, Bull. Amer. Math. Soc. 66 (1960), read in `tmp/sources/brown-1960-generalized-schoenflies.md` with its PDF beside it: Theorem 5, "Let $h$ be a homeomorphic embedding of $S^{n-1}\times I$ into $S^n$. Then the closure of either complementary domain of $h(S^{n-1}\times 1/2)$ is an $n$-cell", which with $n=k$ is exactly the step the bicollar $\beta:\Sigma\times[-1,1]\to S\cong S^k$ feeds into the second proof; and Theorem 0, the disk-complement statement under the hypothesis that the map has finitely many inverse sets, from which Theorems 1--5 are derived (the extraction prints that numeral as the letter O, and the paper's own cross-reference prints it as "Theorem 0"). Bredon's Theorem 19.11 states the same theorem and follows Brown's argument, so either may be cited for it. Brown's paper does not do the exercise, and neither does any single source: what the card records is two citations, each attached to the step it decides --- Brown's Theorem 5, for the flatness that makes $D'$ a disk, and Hatcher's Proposition 2B.1(b) (equivalently Corollary 19.3 and Theorem 19.4 of Bredon), for the homology of the complements, with Proposition 2B.1(a) for the acyclicity of $S^n-D'$ in the second proof. The excision and Mayer--Vietoris assembly between them is the card's own and is marked as such.
+
+The input quoted for the second proof is Bredon, *Topology and Geometry*, Theorem 19.11 (Generalized Schoenflies Theorem), whose proof follows M. Brown's argument; it needs an embedding $S^{k-1}\times[-1,1]\to S^k$, which the bicollar $\beta$ of $\Sigma$ in the proof supplies. The same section proves, by Mayer--Vietoris induction and without duality, the two complement computations this card uses: Corollary 19.3, that $S^n-f(D^r)$ has trivial reduced homology for an embedding $f:D^r\to S^n$, and Theorem 19.4 (Generalized Jordan Curve Theorem), that $\widetilde H_i(S^n-f(S^r))=\ZZ$ for $i=n-r-1$ and $0$ otherwise. Those are Hatcher's Proposition 2B.1(a) and (b), so either book may be cited for them; Putman's notes are a second published proof of the Schoenflies input, read in the text version `tmp/sources/putman-generalized-schoenflies.md` (its §3, "Schoenflies via infinite repetition", is Mazur's proof; the PDF is beside it). Bredon has no text version in `tmp/sources` and was read in the text layer of `tmp/sources/bredon-topology-and-geometry.pdf`.
 :::

@@ -10,9 +10,9 @@ topics:
 
 # Sheaves of modules
 
-This chapter covers quasicoherent and coherent sheaves, twisting sheaves, and line bundles.
+A quasicoherent sheaf is locally $\widetilde M$ on an affine cover ([[D-QNTZY]]), and the twisting sheaves $\OO(n)$ on projective space and the invertible sheaves of the Picard group are the two families the chapter computes with ([[D-CB9XS]], [[PR-DIVLB]]).
 
-Natural sheaves such as the sheaf of differentials are tested for quasicoherence on affine charts, while resolutions by twists reduce many coherent-sheaf cohomology computations on projective space to $H^*(\PP^n,\OO(d))$.
+Natural sheaves such as the sheaf of differentials are tested for quasicoherence on affine charts ([[D-4GCH6]]), while resolutions by twists reduce many coherent-sheaf cohomology computations on projective space to $H^*(\PP^n,\OO(d))$ ([[T-MODRES]]).
 
 ## Syllabus
 

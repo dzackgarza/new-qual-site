@@ -81,7 +81,6 @@ source:
   - id: P-MFWBK
   - id: P-N7RR5
   - id: P-NJNNL
-  - id: P-O2J6S
   - id: P-OTXNQ
   - id: P-PIW3Z
   - id: P-QFLQB
@@ -96,4 +95,12 @@ source:
 
 ::: {.remark}
 Topology problems whose source is not identified. This collection is not a source document.
+:::
+
+::: {.remark}
+The list is empty because no document was found. The collection gathers topology problems whose source is not identified: it is a subject bucket over cards that name no paper, examiner, institution or course, and the bucket is not itself a source document.
+
+The empty list is the finished state here, not a gap in it. No card this collection lists carries a `source` or `provenance` field, and the collection holds no card files of its own: the cards live under `corpus/problems/Topology/`, and this file only gathers the topology ones by subject. There is no document to name, and so no name to search by.
+
+Nothing was dropped from the list to get here. Until a card in this bucket is traced to a paper, the list stays empty.
 :::

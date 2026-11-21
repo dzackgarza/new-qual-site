@@ -5,7 +5,9 @@ kind: problem
 title: '$L^1$ convergence implies convergence in measure'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - L¹
+  - Convergence in Measure
 relations: []
 review: draft
 audit:

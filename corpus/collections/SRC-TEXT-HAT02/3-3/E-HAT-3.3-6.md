@@ -77,6 +77,28 @@ audit:
     closed connected 1-manifold is a circle, so the connected sum is S^1, part (a) is vacuous there
     (0 < i < 1) and part (b) reads 0 = 0 + 0 - 0.
 
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §3.3. Read against Hatcher, Exercise 6 of §3.3, printed p. 257 — the
+    exercises of §3.3 are 1--6 on p. 257, 7--14 on p. 258, 15--26 on p. 259 and 27--35 on p. 260,
+    checked at PDF pages 266--269 of the held book — and against the sheet the card transcribes, the
+    Math 538 homework solutions, where "Hotcher 3.3. #6" heads the connected-sum solution and the
+    relative homology argument follows, identified in the OCR of `tmp/sources/hatcher-math538-homework4-solutions.md`
+    (`tmp/sources/hatcher-math538-homework4-solutions.pdf`, 19 image-only pages). The claim that the
+    passage is on PDF pages 14--16 is the earlier event's and was not re-rendered this pass. One
+    repair of the argument: step `#cases` said, in the case where neither factor is orientable, that
+    the middle group of $0\to\ZZ\to H_{n-1}(M)\to H_{n-1}(M_1)\oplus H_{n-1}(M_2)\to0$ "is the
+    direct sum with an extra $\ZZ$". Exactness alone gives only an extension, and the quotient here
+    carries $\ZZ_2$ summands, so the extension does not split by freeness. The step now says that, and
+    points to step `#torsion`, which does determine the group: Corollary 3.28 makes the torsion of
+    $H_{n-1}(M)$ exactly $\ZZ_2$, and the rank rises by one, so
+    $H_{n-1}(M)\cong\ZZ\oplus H_{n-1}(M_1)\oplus H_{n-1}(M_2)$ — one $\ZZ_2$ of the pair replaced
+    by $\ZZ$, as the exercise says. Checked and unchanged: the good-pair identification with
+    $M_1\vee M_2$, the pair sequence and the middle degrees, the boundary maps (an isomorphism for
+    an orientable factor and zero for a nonorientable one), and part (b)'s rank count, in which the
+    two alternatives both contribute $(-1)^{n+1}$ and give $-\chi(S^n)=-1-(-1)^n$.
 ---
 
 ::: {.problem}
@@ -90,37 +112,97 @@ Given two disjoint connected $n$-manifolds $M_1$ and $M_2$, a connected $n$-mani
 :::
 
 ::: {.solution}
-Put $N_i=M_i\setminus\operatorname{int}B_i$, so that $M=M_1\sharp M_2=N_1\cup_{S^{n-1}}N_2$ with $N_1\cap N_2=S^{n-1}$, and collapsing the glued sphere gives $M/S^{n-1}=M_1\vee M_2$. Since $\partial N_i=S^{n-1}$ has a collar in $M$, $(M,S^{n-1})$ is a good pair, so $H_i(M,S^{n-1})\cong\widetilde H_i(M_1\vee M_2)=\widetilde H_i(M_1)\oplus\widetilde H_i(M_2)$ for $i\ge1$. The pair sequence of $(M,S^{n-1})$ therefore reads
+The exercise is §3.3 Exercise 6.
+
+The solution is the one printed in the Math 538 homework solutions, HMW 3, handwritten pages 2--4 (PDF pages 14, 15 and 16 of `tmp/sources/hatcher-math538-homework4-solutions.pdf`), Hatcher 3.3 #6: the same identification $M_1\sharp M_2/S^{n-1}=M_1\vee M_2$, the same pair sequence, the same three cases with Corollary 3.28 for the torsion, and part (b) by a degree-by-degree count of ranks. Two things that sheet leaves implicit are supplied here: the case $n=2$, where $H_{n-2}(S^{n-1})\ne0$ and the sequence must be read in reduced homology, and the good-pair justification of $H_i(M,S^{n-1})\cong\widetilde H_i(M_1\vee M_2)$. Coefficients are $\ZZ$ throughout.
+
+Let $M_1,M_2$ be closed connected $n$-manifolds, $B_i\subset M_i$ closed balls embedded nicely, $N_i=M_i\setminus\operatorname{int}B_i$, and $M=M_1\sharp M_2=N_1\cup_{S^{n-1}}N_2$ with $S^{n-1}=N_1\cap N_2$ the identified boundary.
+
+::: pf
+
+::: {.pf-step #good-pair}
+$H_i(M,S^{n-1})\cong\widetilde H_i(M_1\vee M_2)=\widetilde H_i(M_1)\oplus\widetilde H_i(M_2)$ for all $i$.
+
+::: pf-proof
+The identification of the two boundary spheres makes $M$ the union of $N_1$ and $N_2$ along their common boundary $S^{n-1}$, and collapsing that sphere gives $M/S^{n-1}\cong M_1\vee M_2$: each $N_i$ becomes $M_i$ with the ball collapsed to the wedge point. Since $\partial N_i=S^{n-1}$ has a collar in $M$ — the balls are embedded nicely in larger balls, so the boundary has a product neighbourhood — the pair $(M,S^{n-1})$ is a good pair, and $H_i(M,S^{n-1})\cong\widetilde H_i(M/S^{n-1})$. Reduced homology of a wedge of two spaces is the sum of the reduced homologies.
+:::
+
+:::
+
+::: {.pf-step #sequence}
+The long exact sequence of the pair reads
 $$
-\cdots\to\widetilde H_i(S^{n-1})\to H_i(M)\to H_i(M_1)\oplus H_i(M_2)\to\widetilde H_{i-1}(S^{n-1})\to\cdots
+\cdots\to\widetilde H_i(S^{n-1})\to\widetilde H_i(M)\to\widetilde H_i(M_1)\oplus\widetilde H_i(M_2)\xrightarrow{\ \partial\ }\widetilde H_{i-1}(S^{n-1})\to\cdots
 $$
-with $\widetilde H_i(S^{n-1})=0$ for $i\ne n-1$ and $\widetilde H_{n-1}(S^{n-1})=\ZZ$.
+with $\widetilde H_i(S^{n-1})=0$ for $i\ne n-1$ and $\widetilde H_{n-1}(S^{n-1})\cong\ZZ$.
 
-For $1\le i\le n-2$ both neighbouring terms vanish, so $H_i(M)\cong H_i(M_1)\oplus H_i(M_2)$: this is the claimed formula in those degrees.
+::: pf-proof
+The pair sequence in reduced homology, with the relative terms replaced by step [](#good-pair){.pf-ref}, has the displayed form; the homology of $S^{n-1}$ is $\ZZ$ in degrees $0$ and $n-1$ and zero between, so the reduced homology vanishes except in degree $n-1$, where it is $\ZZ$ generated by the fundamental class.
+:::
 
-In degree $n-1$, take $n\ge3$ first, so that $H_{n-2}(S^{n-1})=0$ and the sequence ends
+:::
+
+::: {.pf-step #middle}
+For $1\le i\le n-2$, $H_i(M)\cong H_i(M_1)\oplus H_i(M_2)$.
+
+::: pf-proof
+For such $i$ both neighbouring terms of step [](#sequence){.pf-ref} vanish: $\widetilde H_i(S^{n-1})=0$ because $i\ne n-1$, and $\widetilde H_{i-1}(S^{n-1})=0$ because $i-1\ne n-1$. So the map $\widetilde H_i(M)\to\widetilde H_i(M_1)\oplus\widetilde H_i(M_2)$ has zero kernel and zero cokernel, hence is an isomorphism; and for $i\ge1$ the reduced and unreduced groups coincide.
+:::
+
+:::
+
+::: {.pf-step #top}
+For $n\ge3$ the end of the sequence is
 $$
-0\to H_n(M)\to H_n(M_1)\oplus H_n(M_2)\xrightarrow{\ \psi\ }\ZZ\to H_{n-1}(M)\to H_{n-1}(M_1)\oplus H_{n-1}(M_2)\to0 .
+0\to H_n(M)\to H_n(M_1)\oplus H_n(M_2)\xrightarrow{\ \psi\ }\ZZ\to H_{n-1}(M)\to H_{n-1}(M_1)\oplus H_{n-1}(M_2)\to0,
 $$
-Here $H_n(M_i)$ is $\ZZ$ or $0$ according as $M_i$ is orientable (Theorem 3.26, p. 236), and $\psi$ is the sum of the two boundary maps $\ZZ\to\ZZ$, each of which is an isomorphism for an orientable summand and zero for a nonorientable one. Three cases follow.
+where $H_n(M_i)$ is $\ZZ$ if $M_i$ is orientable and $0$ otherwise, and $\psi$ is the sum of the two boundary maps $H_n(M_i)\to H_{n-1}(S^{n-1})$, each an isomorphism for an orientable summand and zero for a nonorientable one.
 
-If both $M_i$ are orientable, $\psi:\ZZ\oplus\ZZ\to\ZZ$ is onto, so $H_n(M)\cong\ker\psi\cong\ZZ$ — which makes $M$ orientable — and $H_{n-1}(M)\cong H_{n-1}(M_1)\oplus H_{n-1}(M_2)$.
+::: pf-proof
+For $n\ge3$ one has $n-2\ne n-1$, so $\widetilde H_{n-2}(S^{n-1})=0$, which turns the two ends of the fragment into the zero groups displayed. A closed connected $n$-manifold has $H_n\cong\ZZ$ when orientable and $H_n=0$ when not (Theorem 3.26), and the boundary map of a collared boundary sphere is an isomorphism onto $H_{n-1}(S^{n-1})$ in the orientable case and zero in the nonorientable one.
+:::
 
-If exactly one is orientable, $\psi:\ZZ\to\ZZ$ is an isomorphism, so $H_n(M)=0$, $M$ is nonorientable, and again $H_{n-1}(M)\cong H_{n-1}(M_1)\oplus H_{n-1}(M_2)$.
+:::
 
-If neither is orientable, $\psi=0$ and $0\to\ZZ\to H_{n-1}(M)\to H_{n-1}(M_1)\oplus H_{n-1}(M_2)\to0$ is exact. In this case $M$, $M_1$ and $M_2$ are all nonorientable, so Corollary 3.28 (p. 238) gives torsion $\ZZ_2$ to $H_{n-1}$ of each of them; hence $H_{n-1}(M)=\ZZ\oplus F\oplus\ZZ_2$ while $H_{n-1}(M_1)\oplus H_{n-1}(M_2)=F\oplus\ZZ_2\oplus\ZZ_2$ with $F$ free. One of the two $\ZZ_2$ summands is replaced by a $\ZZ$ summand, as claimed.
+::: {.pf-step #cases}
+For $n\ge3$ the following hold, and $M$ is orientable exactly when both $M_i$ are: if both are orientable then $H_n(M)\cong\ZZ$ and $H_{n-1}(M)\cong H_{n-1}(M_1)\oplus H_{n-1}(M_2)$; if exactly one is, then $H_n(M)=0$ and the same isomorphism for $H_{n-1}$; if neither is, then $\psi=0$ and $H_{n-1}(M)\cong\ZZ\oplus H_{n-1}(M_1)\oplus H_{n-1}(M_2)$.
 
-For $n=1$ a closed connected $1$-manifold is a circle, so $M_1\sharp M_2=S^1$: part (a) has no degrees to prove, its range $0<i<1$ being empty, and part (b) reads $0=0+0-0$, both sides being $\chi(S^1)$.
+::: pf-proof
+Both orientable: $\psi:\ZZ\oplus\ZZ\to\ZZ$ is onto, so $H_n(M)=\ker\psi\cong\ZZ$ and $H_{n-1}(M)\cong\operatorname{coker}\psi=0$ in the exact fragment of step [](#top){.pf-ref}, that is $H_{n-1}(M)\cong H_{n-1}(M_1)\oplus H_{n-1}(M_2)$. Exactly one orientable: $\psi:\ZZ\to\ZZ$ is an isomorphism, so $H_n(M)=0$ and again $\operatorname{coker}\psi=0$. Neither: $\psi=0$, so the fragment is $0\to\ZZ\to H_{n-1}(M)\to H_{n-1}(M_1)\oplus H_{n-1}(M_2)\to0$; exactness makes $H_{n-1}(M)$ an extension of that direct sum by $\ZZ$, and the extension need not split a priori, since the quotient carries $\ZZ_2$ summands — what it is, step [](#torsion){.pf-ref} determines, from Corollary 3.28 and the rank, to be $\ZZ\oplus H_{n-1}(M_1)\oplus H_{n-1}(M_2)$. Orientability is read off from $H_n(M)=\ker\psi$.
+:::
 
-The three cases also settle orientability, since $H_n(M)=\ker\psi$. The map $\psi$ is the sum of the two boundary maps $H_n(M_i)\to H_{n-1}(S^{n-1})$, and each of those is an isomorphism when $M_i$ is orientable (so $H_n(M_i)=\ZZ$) and zero when it is not (so $H_n(M_i)=0$); hence $\ker\psi\cong\ZZ$ exactly when both $M_i$ are orientable and $\ker\psi=0$ otherwise. So $M_1\sharp M_2$ is orientable exactly when both summands are, which is what the torsion step in the third case uses.
+:::
 
-For $n=2$ the same three cases apply with the sequence read in reduced homology, where $\widetilde H_0(S^1)=0$ replaces the copy of $\ZZ$ that appears at $i=0$ in the unreduced sequence; the conclusions, and the torsion statement of Corollary 3.28, are unchanged.
+::: {.pf-step #torsion}
+In the case where neither $M_i$ is orientable, $H_{n-1}(M)$ is obtained from $H_{n-1}(M_1)\oplus H_{n-1}(M_2)$ by replacing one $\ZZ_2$ summand by $\ZZ$.
 
-For (b), compute the Euler characteristic degree by degree, as the handout does. Since $H_i(M)\cong H_i(M_1)\oplus H_i(M_2)$ for $1\le i\le n-2$, and $H_n(M)$ is $\ZZ$ or $0$ according to the three cases, while $\operatorname{rank} H_{n-1}(M)=\operatorname{rank} H_{n-1}(M_1)+\operatorname{rank} H_{n-1}(M_2)$ in the first two cases and that rank plus one in the third,
+::: pf-proof
+By Corollary 3.28 the torsion subgroup of $H_{n-1}$ of a closed connected nonorientable $n$-manifold is $\ZZ_2$, and there is no other torsion; so $H_{n-1}(M_i)\cong F_i\oplus\ZZ_2$ with $F_i$ free. With $F=F_1\oplus F_2$, step [](#cases){.pf-ref} gives $H_{n-1}(M)\cong\ZZ\oplus F\oplus\ZZ_2$ while $H_{n-1}(M_1)\oplus H_{n-1}(M_2)\cong F\oplus\ZZ_2\oplus\ZZ_2$: one of the two $\ZZ_2$ summands has become a $\ZZ$.
+:::
+
+:::
+
+::: {.pf-step #low-dimensions}
+For $n\le2$ the assertions hold.
+
+::: pf-proof
+$n=1$: a closed connected $1$-manifold is $S^1$, so $M_1\sharp M_2\cong S^1$; the range $0<i<n$ is empty and part (b) reads $\chi(S^1)=0=0+0-0$ with $\chi(S^1)=0$. $n=2$: the same three cases apply, with the fragment of step [](#top){.pf-ref} replaced by the sequence in reduced homology, where $\widetilde H_0(S^1)=0$ gives the same vanishing at the lower end, and the torsion statement of Corollary 3.28 is unchanged, so the conclusions and part (b) are the same.
+:::
+
+:::
+
+::: {.pf-step #euler}
+(b) $\chi(M)=\chi(M_1)+\chi(M_2)-\chi(S^n)$.
+
+::: pf-proof
+Rank by rank: at $i=0$ one has $H_0(M)\cong\ZZ$ while $H_0(M_1)\oplus H_0(M_2)\cong\ZZ^{2}$, since $M$ is connected, so this degree contributes $-1$ to the difference. For $1\le i\le n-2$ the ranks agree by step [](#middle){.pf-ref}. At $i=n$ and $i=n-1$ step [](#cases){.pf-ref} gives: in the first two cases the rank of $H_n$ drops by $1$ and that of $H_{n-1}$ is unchanged, contributing $(-1)^{n}\cdot(-1)=(-1)^{n+1}$; in the third case the rank of $H_n$ is unchanged and that of $H_{n-1}$ rises by $1$, contributing $(-1)^{n-1}=(-1)^{n+1}$. Both alternatives give the same number, so
 $$
-\chi(M)=\chi(M_1)+\chi(M_2)+(-1)+(-1)^{n+1}=\chi(M_1)+\chi(M_2)-\bigl(1+(-1)^n\bigr)=\chi(M_1)+\chi(M_2)-\chi(S^n),
+\chi(M)-\chi(M_1)-\chi(M_2)=(-1)+(-1)^{n+1}=-(1+(-1)^{n})=-\chi(S^{n}),
 $$
-because $(-1)+(-1)^{n+1}=-(1+(-1)^n)$ and $\chi(S^n)=1+(-1)^n$ (Corollary 2.14, p. 114).
+because $(-1)+(-1)^{n+1}=-(1+(-1)^{n})$ and $\chi(S^{n})=1+(-1)^{n}$ (Corollary 2.14). Hence $\chi(M)=\chi(M_1)+\chi(M_2)-\chi(S^n)$.
+:::
 
-This is the solution printed in the Math 538 homework solutions, HMW 3, handwritten pages 2--4 (PDF pages 14, 15 and 16 of `tmp/sources/hatcher-math538-homework4-solutions.pdf`), Hatcher 3.3 #6: the same identification $M_1\sharp M_2/S^{n-1}=M_1\vee M_2$, the same pair sequence, the same three cases with Corollary 3.28 for the torsion, and part (b) by the degree-by-degree count of ranks ending in the identity $(-1)+(-1)^{n+1}=-\chi(S^n)$. Two things that sheet leaves implicit are supplied here: the case $n=2$, where $H_{n-2}(S^{n-1})\ne0$ and the sequence must be read in reduced homology, and the good-pair justification of $H_i(M,S^{n-1})\cong H_i(M_1\vee M_2)$.
+:::
+
+:::
 :::

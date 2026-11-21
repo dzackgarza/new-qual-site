@@ -27,6 +27,8 @@ $$
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the workshop problem sheets alone, so the argument is the card's own.
 Choose $M\geq0$ with $\abs{f}\leq M$. For a tagged partition $(P,\tau)$, write $S_\alpha(f;P,\tau)$ for its Stieltjes sum and $S(f\alpha';P,\tau)$ for its ordinary Riemann sum.
 
 ::: pf

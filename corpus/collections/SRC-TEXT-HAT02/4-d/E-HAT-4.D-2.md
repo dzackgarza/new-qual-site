@@ -22,6 +22,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 2 of §4.D, printed p. 447, with the Leray--Hirsch theorem on
+    printed p. 432 and the Bockstein of §3.E (p. 303). Correct: $S^\infty/\ZZ_p$ is a $K(\ZZ_p,1)$
+    and the bundle $S^1\to S^\infty/\ZZ_p\to\CP^\infty$ has fibre $S^1/\ZZ_p\cong S^1$; the
+    restriction of the degree-one class $a$ generates $H^1$ of the fibre because
+    $H^1(-;\ZZ_p)=\operatorname{Hom}(\pi_1(-),\ZZ_p)$ and $\ZZ\to\ZZ_p$ is onto, so Leray--Hirsch
+    gives $H^*=\ZZ_p[b]\{1,a\}$ with $|a|=1$, $|b|=2$. For odd $p$, $a^2=-a^2$ by graded
+    commutativity, so the ring is $\Lambda(a)\otimes\ZZ_p[b]$; for $p=2$, $a^2\ne0$ and the
+    Bockstein is $Sq^1$, which on a degree-one class is the square, so $b=a^2$ and the ring is
+    $\ZZ_2[a]$. Nothing changed. Not claimed: a published solution, and no certificate.
 ---
 
 ::: {.problem}
@@ -41,7 +54,7 @@ Here $S^\infty/\ZZ_p$ is a $K(\ZZ_p,1)$, since $\ZZ_p\subset S^1$ acts freely on
 $$
 a\in H^1(S^\infty/\ZZ_p;\ZZ_p)
 $$
-restricts to the generator of $H^1(S^1;\ZZ_p)$. The Leray--Hirsch theorem (Theorem 4D.1, p. 432) applies, since $H^*(S^1;\ZZ_p)$ is free with generator the restriction of $a$; it gives
+restricts to the generator of $H^1(S^1;\ZZ_p)$. The Leray--Hirsch theorem (Theorem 4D.1) applies, since $H^*(S^1;\ZZ_p)$ is free with generator the restriction of $a$; it gives
 $$
 H^*(K(\ZZ_p,1);\ZZ_p)
 \cong H^*(\CP^\infty;\ZZ_p)\{1,a\}
@@ -57,7 +70,7 @@ $$
 \boxed{H^*(K(\ZZ_p,1);\ZZ_p)
 \cong \Lambda(a)\otimes\ZZ_p[b]\qquad(p\text{ odd}).}
 $$
-The Bockstein associated to $0\to\ZZ_p\to\ZZ_{p^2}\to\ZZ_p\to0$ (defined in §3.E, p. 303) satisfies $\beta(a)=b$: by construction it detects whether the class lifts to $\ZZ_{p^2}$ coefficients, and $a$ does not, while $a$ generates $H^1$ of the fiber. For $p=2$ the Bockstein is $Sq^1$ (Theorem 4L.12(7), p. 504), and $Sq^1$ of a degree-one class is its square, so $b=a^2$. Hence
+The Bockstein associated to $0\to\ZZ_p\to\ZZ_{p^2}\to\ZZ_p\to0$ (defined in §3.E) satisfies $\beta(a)=b$: by construction it detects whether the class lifts to $\ZZ_{p^2}$ coefficients, and $a$ does not, while $a$ generates $H^1$ of the fiber. For $p=2$ the Bockstein is $Sq^1$ (Theorem 4L.12(7)), and $Sq^1$ of a degree-one class is its square, so $b=a^2$. Hence
 $$
 \boxed{H^*(K(\ZZ_2,1);\ZZ_2)\cong\ZZ_2[a],\quad \gradeddegree{a}=1.}
 $$

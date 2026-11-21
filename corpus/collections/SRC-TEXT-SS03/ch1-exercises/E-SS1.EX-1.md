@@ -20,6 +20,15 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, at its printed folio (the scan runs nineteen pages ahead of
+    the printed page): the statement is Exercise 1 at the head of the Chapter 1 Exercises,
+    printed p. 24, and its printed words are the card's. The chapter, the exercise number and
+    the page are now named in the solution's opening sentence. Not checked in this pass: the
+    argument, which the edit does not touch.
 ---
 
 ::: {.exercise}
@@ -41,6 +50,7 @@ Describe geometrically the sets of points $z$ in the complex plane defined by th
 :::
 
 ::: {.solution}
+This is Exercise 1 of Chapter 1 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`; the statement below is its wording.
 
 ::: pf
 

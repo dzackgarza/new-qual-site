@@ -7,10 +7,16 @@ topics: [Contour Integration]
 # Real integrals by residues
 
 Worked evaluations and exercises, grouped by the contour cases on [[complex-analysis/residues-and-contours/which-contour-do-i-close|Which contour do I close?]].
+The evaluations every qual expects are on [[complex-analysis/standard-integrals|Standard integrals]], and the estimates that close the arcs are on [[complex-analysis/residues-and-contours/arc-estimates|Arc estimates]].
 
 ## Rational, superlinear decay
 
-Upper semicircle; the arc integral tends to $0$ by the ML estimate.
+Upper semicircle; the arc integral tends to $0$ by the [[T-SFXI7|ML estimate]].
+
+::: {.example title="$\displaystyle\int_\RR{\dx\over 1+x^4} = {\pi\over\sqrt 2}$"}
+The poles of $1/(1+z^4)$ are the fourth roots of $-1$, of which $e^{i\pi/4}$ and $e^{3i\pi/4}$ lie in $\HH$, and the residue at a simple pole $z_0$ is $1/(4z_0^3) = -z_0/4$, since $z_0^4 = -1$.
+The two residues sum to $-\qty{e^{i\pi/4}+e^{3i\pi/4}}/4 = -i\sqrt2/4$, so the integral is $2\pi i\cdot(-i\sqrt2/4) = \pi\sqrt2/2 = \pi/\sqrt2$.
+:::
 
 [[E-SS3.EX-2]]
 [[E-SS3.EX-6]]
@@ -18,7 +24,19 @@ Upper semicircle; the arc integral tends to $0$ by the ML estimate.
 
 ## Rational against $e^{iz}$
 
-Upper semicircle applied to $f(z)e^{iz}$; the arc integral tends to $0$ by Jordan's lemma.
+Upper semicircle applied to $f(z)e^{iz}$; the arc integral tends to $0$ by [[T-ZO5UU|Jordan's lemma]].
+
+::: {.example title="$\displaystyle\int_\RR{x\sin x\over x^2+1}\,\dx = {\pi\over e}$"}
+The function $ze^{iz}/(z^2+1)$ has simple poles at $\pm i$, and only $z=i$ lies in $\HH$, with residue
+$$
+\Res_{z=i}{ze^{iz}\over z^2+1} = {ie^{i\cdot i}\over 2i} = {e^{-1}\over 2}.
+$$
+The integrand on $\abs z = R$ is $\bigo(1/R)$ and $\abs{e^{iz}}\leq 1$ on $\HH$, so the arc vanishes by Jordan's lemma, and
+$$
+\int_\RR{xe^{ix}\over x^2+1}\dx = 2\pi i\cdot{e^{-1}\over 2} = {\pi i\over e},
+$$
+whose imaginary part is the value.
+:::
 
 [[E-SS3.EX-4]]
 [[E-SS3.EX-3]]
@@ -53,6 +71,19 @@ $$
 [[E-SS3.EX-8]]
 
 ## Branch cuts: logarithms
+
+::: {.example title="$\displaystyle\int_0^\infty{\log x\over 1+x^3}\dx = -{2\pi^2\over 27}$"}
+The logarithm is the derivative in the exponent of the power integral: for $0<a<n$,
+$$
+\int_0^\infty{x^{a-1}\over 1+x^n}\dx = {\pi/n\over\sin(\pi a/n)},
+$$
+whose value for a *single* $a$ comes from the keyhole or sector contour with the branch cut, and differentiating in $a$ gives
+$$
+\int_0^\infty{x^{a-1}\log x\over 1+x^n}\dx = -{\pi^2\over n^2}{\cos(\pi a/n)\over\sin^2(\pi a/n)}.
+$$
+At $a=1$ and $n=3$ this is $-(\pi^2/9)\cot(\pi/3)\csc(\pi/3) = -(\pi^2/9)\cdot{1\over\sqrt3}\cdot{2\over\sqrt3} = -2\pi^2/27$, and numerically the integral is $-0.7310818\ldots$ either way.
+Differentiating under the integral sign is justified on any compact interval of $a$ inside $(0,n)$, where $x^{a-1}\abs{\log x}/(1+x^n)$ is integrable and bounds the derivative.
+:::
 
 [[E-SS3.EX-10]]
 [[P-3JE4U]]

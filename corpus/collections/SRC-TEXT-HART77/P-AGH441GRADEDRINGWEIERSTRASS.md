@@ -29,6 +29,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.4.1, printed pp. 89,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF pages are the printed
+    pages. Checked against the book: Hartshorne IV.4.1, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the Hilbert function of $k[x,y,t]/(y^2-x(x-t^2)(x-\lambda t^2))$ with $\deg t,\deg x,\deg y=1,2,3$: the series $(1-s^6)/((1-s)(1-s^2)(1-s^3))$ has coefficients $1,1,2,3,4,5,6,7,8,9,\ldots$, so $\dim S_n=n$ for every $n\ge1$, matching $h^0(X,\OO_X(nP))=n$.
+    Not checked: Yang's Solutions outside printed pp. 89; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's
+    Solution 4.4.1 at printed pp. 89; it had none before. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -419,4 +439,8 @@ as graded rings.
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.1, proves the presentation by exhibiting the map. With $X$ in Legendre form $y^2=x(x-1)(x-\lambda)$ and $P$ the point at infinity, it defines $\phi:k[x,y,t]\to R=\bigoplus_{n}H^0(X,\OO_X(nP))$ by $x\mapsto x$, $y\mapsto y$ and $t\mapsto 1\in H^0(X,\OO_X(P))$; that is legitimate because $h^0(X,\OO_X(P))=1=g$, so the degree-one piece of $R$ is the line spanned by the constant section. Surjectivity is the observation that a section of $\OO_X(nP)$ is a rational function with a single pole at $P$, hence the restriction of a rational function on $\AA^2$, hence a polynomial in $x$ and $y$; and $y^2-x(x-t^2)(x-\lambda t^2)$ is in the kernel because $t\mapsto1$. The entry then closes: by Riemann--Roch $\dim H^0(X,\OO_X(nP))=n$, 'which is equal to $\dim R_{(n)}$', so $\phi$ is an isomorphism. That comparison is with the target, where it is a tautology; what the conclusion needs is the same Hilbert function for the source, and $\bigl(1-s^6\bigr)/\bigl((1-s)(1-s^2)(1-s^3)\bigr)$ has coefficients $1,1,2,3,4,5,6,\dots$, so that $\dim S_n=n$ for $n\geq1$ and surjectivity of $\phi$ does give the isomorphism. The entry leaves that count implicit.
 :::

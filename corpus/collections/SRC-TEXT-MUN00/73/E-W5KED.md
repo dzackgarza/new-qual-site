@@ -44,7 +44,7 @@ Find spaces whose fundamental groups are isomorphic to the following groups.
 
 ::: {.solution}
 
-Write $D_n$ for the $n$-fold dunce cap, $n>1$ (defined on printed p. 443), a compact path-connected space with $\pi_1(D_n)\cong\ZZ/n$ by Theorem 73.4 (printed p. 444).
+Write $D_n$ for the $n$-fold dunce cap, $n>1$ (defined on printed p. 443), a compact path-connected space with $\pi_1(D_n)\cong\ZZ/n$ by Theorem 73.4.
 
 ::: pf
 
@@ -54,7 +54,7 @@ $\pi_1(D_n\times D_m)\cong\ZZ/n\times\ZZ/m$, and $\pi_1(D_n\vee D_m)\cong\ZZ/n*\
 
 ::: pf-proof
 
-For the product, Theorem 60.1 (printed p. 371) gives $\pi_1(X\times Y,x_0\times y_0)\cong\pi_1(X,x_0)\times\pi_1(Y,y_0)$, so the fundamental group of $D_n\times D_m$ is $\ZZ/n\times\ZZ/m$. For the wedge, let $p$ be the common point. In $D_n$ the point $p$ is a deformation retract of an open neighbourhood: the dunce cap is a quotient of $B^2$ that identifies only points of $S^1$, so the image of the open ball of radius $1/2$ about the centre is an open set $W\subseteq D_n$ homeomorphic to a ball with a point of its boundary, which is star-shaped and hence retracts onto $p$; the same holds in $D_m$. Exercise 1 of §71 (printed p. 438) then gives $\pi_1(D_n\vee D_m,p)\cong\pi_1(D_n,p)*\pi_1(D_m,p)\cong\ZZ/n*\ZZ/m$.
+For the product, Theorem 60.1 gives $\pi_1(X\times Y,x_0\times y_0)\cong\pi_1(X,x_0)\times\pi_1(Y,y_0)$, so the fundamental group of $D_n\times D_m$ is $\ZZ/n\times\ZZ/m$. For the wedge, let $p$ be the common point. In $D_n$ the point $p$ is a deformation retract of an open neighbourhood: the dunce cap is a quotient of $B^2$ that identifies only points of $S^1$, so the image of the open ball of radius $1/2$ about the centre is an open set $W\subseteq D_n$ homeomorphic to a ball with a point of its boundary, which is star-shaped and hence retracts onto $p$; the same holds in $D_m$. Exercise 1 of §71 then gives $\pi_1(D_n\vee D_m,p)\cong\pi_1(D_n,p)*\pi_1(D_m,p)\cong\ZZ/n*\ZZ/m$.
 
 :::
 

@@ -6,7 +6,9 @@ title: Quadratic convergence of Newton iteration near a simple root
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - 'Newton''s Method'
+  - Differentiation
 relations: []
 review: draft
 audit:

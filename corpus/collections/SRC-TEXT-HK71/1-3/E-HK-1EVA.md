@@ -22,6 +22,17 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Exhausted the zero-row and two-nonzero-row cases under the book's pivot-column conditions and checked all three surviving matrices directly."
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read as a second reader against the retained text; the statement matches Hoffman and Kunze
+    Exercise 1.3.6, printed p. 11. The enumeration was checked case by case: with both rows
+    nonzero the leading 1s sit in different columns, giving I2 or the anti-identity, both of sum
+    2; with exactly one nonzero row it must lead in column 1, giving [[1,-1],[0,0]] or
+    [[0,0],[1,-1]], each of sum 0; and the zero matrix is row-reduced with sum 0. So exactly
+    three, and the three displayed matrices are they. The solution now cites the retained text;
+    no proof step changed.
 ---
 
 ::: {.exercise}
@@ -36,6 +47,8 @@ Suppose that $A$ is row-reduced and also that $a + b + c + d = 0$ . Prove that t
 :::
 
 ::: {.solution}
+No retained solution set covers this exercise; the book's text is retained as `assets/attachments/Hoffman-Kunze-Linear-Algebra.pdf` (Hoffman and Kunze, *Linear Algebra*, 2nd ed., 1971), where it is §1.3 Exercise 6. The argument is the card's own.
+
 The three matrices are
 $$
 \boxed{

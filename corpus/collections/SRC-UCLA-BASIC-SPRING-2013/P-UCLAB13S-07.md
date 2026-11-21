@@ -5,7 +5,9 @@ kind: problem
 title: Matrix exponential and logarithm from operator-norm series
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Matrix Exponential
+  - Matrix Logarithm
 relations: []
 review: draft
 audit:

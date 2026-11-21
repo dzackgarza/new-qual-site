@@ -64,8 +64,8 @@ Show that $h_*$ carries a generator of $\pi_1(S^1, b_0)$ to an odd power of itse
 :::
 
 ::: {.solution}
-The exercise is §57 Exercise 3, printed p. 359. The proof is transcribed from
-Hatcher, *Algebraic Topology* (2002), the proof of Theorem 1.10, printed p. 33:
+The exercise is §57 Exercise 3. The proof is transcribed from
+Hatcher, *Algebraic Topology* (2002), the proof of Theorem 1.10:
 the lifting step there takes a loop $h$ with $h(s+\frac12)=-h(s)$ and shows that
 its lift $\tilde h$ satisfies $\tilde h(s+\frac12)=\tilde h(s)+\frac q2$ for a
 single odd integer $q$, so that $\tilde h(1)=\tilde h(0)+q$ and the loop
@@ -77,8 +77,8 @@ hint (use the map $k$ constructed in the proof of Theorem 57.1) reaches the
 same conclusion through $q(z)=z^2$; the computation below does not need it.
 
 Notation. Let $p:\RR\to S^1$ be the covering map $p(t)=e^{2\pi it}$ of Theorem
-53.1 (printed p. 337), put $b_0=p(0)=1$, let $p_0=\restrictionof{p}{[0,1]}$, and let
-$a=[p_0]\in\pi_1(S^1,b_0)$. By Theorem 54.5 (printed p. 345) with $e_0=0$ the
+53.1 , put $b_0=p(0)=1$, let $p_0=\restrictionof{p}{[0,1]}$, and let
+$a=[p_0]\in\pi_1(S^1,b_0)$. By Theorem 54.5  with $e_0=0$ the
 lifting correspondence $\phi:\pi_1(S^1,b_0)\to\ZZ$, which sends $[f]$ to the
 endpoint $\tilde f(1)\in p^{-1}(b_0)=\ZZ$ of the lift of $f$ starting at $0$, is
 an isomorphism of groups, and $\phi(a)=1$; so $a$ generates the infinite cyclic
@@ -117,7 +117,7 @@ There is a path $\tilde\ell:I\to\RR$ with $p\circ\tilde\ell=\ell$ and
 $\tilde\ell(0)=0$.
 
 ::: pf-proof
-Apply the path-lifting lemma (Lemma 54.1, printed p. 342) to the covering map
+Apply the path-lifting lemma (Lemma 54.1) to the covering map
 $p$ and the path $\ell$ starting at $b_0=p(0)$; it gives a unique lift
 $\tilde\ell$ of $\ell$ with $\tilde\ell(0)=0$.
 :::

@@ -126,14 +126,13 @@ The following subsets of $\RR^2$:
 :::
 
 ::: {.solution}
-The exercise is §58 Exercise 2, printed p. 366, and its question is which of
+The exercise is §58 Exercise 2, and its question is which of
 three alternatives holds for each of the twelve spaces. The proofs for (a),
 (b), (c), (d), (f), (g), (h), (k) and (l) are transcribed from Pearse,
 *Topology (2nd ed.) — James R. Munkres*, solutions, Cornell 2005, §58 Exercise 2,
-his pp. 20--22, read in `tmp/sources/cornell-erin-munkres.md`; each of them
-exhibits a deformation retraction and applies Theorem 58.3 (printed p. 361),
-together with the computation $\pi_1(S^1)\cong\ZZ$ of Theorem 54.5 (printed
-p. 345) and the two deformation retracts of the doubly punctured plane listed as
+his, read in `tmp/sources/cornell-erin-munkres.md`; each of them
+exhibits a deformation retraction and applies Theorem 58.3,
+together with the computation $\pi_1(S^1)\cong\ZZ$ of Theorem 54.5  and the two deformation retracts of the doubly punctured plane listed as
 Examples 2 and 3 on printed p. 362.
 
 Three parts of that answer are not taken over.
@@ -152,9 +151,9 @@ Three parts of that answer are not taken over.
 
 Notation. For a space with a closed subspace $W$, "$W$ is a deformation retract
 of $X$" is the book's notion on printed p. 360, and then
-$\pi_1(X)\cong\pi_1(W)$ by Theorem 58.3 (printed p. 361); a homeomorphism or
+$\pi_1(X)\cong\pi_1(W)$ by Theorem 58.3; a homeomorphism or
 homotopy equivalence induces an isomorphism of fundamental groups by Theorem
-58.7 (printed p. 364). Both facts are used without further comment below.
+58.7. Both facts are used without further comment below.
 
 ::: pf
 
@@ -202,14 +201,14 @@ q_0\times\operatorname{id}_I:\ (I^2-\theset c)\times I\longrightarrow
 (T-\theset{q(c)})\times I,
 $$
 where $q_0=\restrictionof{q}{I^2-\theset c}$. That map is a quotient map, so by
-Theorem 22.2 (printed p. 142) there is a continuous
+Theorem 22.2 there is a continuous
 $\bar H:(T-\theset{q(c)})\times I\to T-\theset{q(c)}$ with
 $\bar H\circ(q_0\times\operatorname{id}_I)=q_0\circ H$. It is a quotient map for
 two reasons: $I^2-\theset c$ is open in $I^2$ and saturated for $q$, because
 $q^{-1}(q(c))=\theset c$, so $q_0$ is a quotient map onto $T-\theset{q(c)}$ by
-Theorem 22.1 (printed p. 140); and $I$ is compact Hausdorff, hence locally compact
+Theorem 22.1; and $I$ is compact Hausdorff, hence locally compact
 Hausdorff, so a quotient map times $\operatorname{id}_I$ is a quotient map by the
-lemma in §29 Exercise *11(a) (printed p. 186).
+lemma in §29 Exercise *11(a).
 
 It satisfies $\bar H(y,0)=y$, $\bar H(y,1)\in q(\partial I^2)$ and
 $\bar H(y,t)=y$ for $y\in q(\partial I^2)$.
@@ -266,7 +265,7 @@ onto $\RR^2$, and it carries the other two deleted points $e_2,e_3$ to two point
 of $\RR^2$; restricted to the subspace $Z=S^2-\theset{e_1,e_2,e_3}$ it is
 therefore a homeomorphism onto $\RR^2$ with those two points deleted — the doubly
 punctured plane, which is the space $Z'$ of Example 2. So
-$\pi_1(Z)\cong\pi_1(Z')$ by Theorem 58.7. By Example 2, printed p. 362, the figure
+$\pi_1(Z)\cong\pi_1(Z')$ by Theorem 58.7. By Example 2, the figure
 eight is a deformation retract of the doubly punctured plane $Z'$, so
 $\pi_1(Z')$ is the fundamental group of the figure eight by Theorem 58.3.
 
@@ -372,8 +371,7 @@ $H(x,t)$ is a positive multiple of $x$ and so again lies in $\RR\times 0
 \subseteq X$, while for $\norm x\le1$ the map is the identity. Thus $H$ is a
 deformation retraction of $X$ onto
 $S^1\cup([-1,1]\times 0)$, which is the theta space of Example 3 under a
-rotation, and $\pi_1(X)\cong\pi_1(\theta)$ by Theorem 58.3. Example 3, printed
-p. 362, records that the theta space is a deformation retract of the doubly
+rotation, and $\pi_1(X)\cong\pi_1(\theta)$ by Theorem 58.3. Example 3, records that the theta space is a deformation retract of the doubly
 punctured plane, of which the figure eight is a deformation retract by Example 2;
 two applications of Theorem 58.3 give
 $\pi_1(\theta)\cong\pi_1(\RR^2-p-q)\cong\pi_1(\text{figure eight})$.

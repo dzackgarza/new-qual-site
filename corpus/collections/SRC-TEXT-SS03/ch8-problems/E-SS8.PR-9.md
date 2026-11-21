@@ -21,6 +21,18 @@ audit:
     date: 2026-11-01
     note: >-
       (a) monotonicity and $a_n-b_n\le(a-b)/2^n$, giving a common limit. (b) the Landen invariance is verified by the substitution $\sin\theta=\frac{2a\sin\varphi}{(a+b)+(a-b)\sin^2\varphi}$, with the derivative computed in full: it reduces to the identity $\bigl((a+b)-(a-b)s^2\bigr)^2=(a+b)^2-2(a^2-b^2)s^2+(a-b)^2s^4$; then continuity of $I$ gives $I(a,b)=I(M,M)=\pi/(2M)$. The relation $I(a,b)=K(k)/a$ follows from the substitution $x=\sin\theta$.
+  - event: source-checked
+    by: claude
+    date: 2026-11-20
+    note: >-
+      Read against the printed item, Chapter 8, Problem 9, which begins on printed p. 259 (PDF p. 278)
+      and runs to p. 260 (PDF p. 279): the statement is the print's, the arithmetic and geometric
+      means $a_{n+1}=(a_n+b_n)/2$ and $b_{n+1}=\sqrt{a_nb_n}$, the definition of $M(a,b)$, Gauss's
+      identity with $I(a,b)$ the bare integral, the invariance (6), and the reduction to
+      $I(a,b)=\frac1aK(k)$ with $k^2=1-b^2/a^2$ and to Exercise 24(b). The asterisk the print sets
+      before "9." is recorded in the remark; the normalisation of $I$ that the first event records is
+      the print's. Not checked: the argument, which this pass did not re-derive.
+
 ---
 
 ::: {.exercise}
@@ -47,6 +59,10 @@ I(a,b)=\frac1a K(k)=\frac1a\int_0^1
 \qquad k^2=1-\frac{b^2}{a^2},
 $$
 and that the invariance follows from Chapter 8, Exercise 24(b).
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 8, Problem 9).
 :::
 
 ::: {.hint}

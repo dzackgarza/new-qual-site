@@ -14,6 +14,28 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 4 of the Algebra Preliminary Examination, Autumn 2016
+    (University of Washington), printed p. 1 of the two-page paper retained at
+    assets/attachments/UW-Algebra-Qual-2016.pdf, is the statement the card answers, and the
+    paragraph at the head of the solution records that the paper prints no solutions, so the
+    argument is the card's own. Checked: the three parts against the paper's text layer at the page
+    named; the solution read for the affine subgroup of order 20, the coset embedding, and the
+    transitivity comparison that makes the resulting automorphism outer; `qualc.authoring check` on
+    the card, and `tmp/lam.sh` for the numbering and the QED. Not checked: no retained solution set
+    exists for this paper to compare the argument with, and no other card of the collection in this
+    pass.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Step 4, which introduces the image $J=\rho(S_5)$, was the card's only step with no proof
+    body; it now carries one, deducing $J\cong S_5$ from the injectivity of step 3, the index
+    $[S_6:J]=6$ from the two orders, and transitivity of the $J$-action from transitivity of the
+    coset action. Nothing else on the card is changed.
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
@@ -32,6 +54,8 @@ An outer automorphism is an automorphism that is not inner.
 
 
 ::: {.solution}
+
+The problem is Problem 4 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and it supplies all three parts — the affine group of the line over $\FF_5$ as the subgroup of order $20$, its coset action as the transitive embedding into $S_6$, and the action of $S_6$ on the six cosets of that subgroup as an automorphism carrying a transitive subgroup to an intransitive one, hence outer.
 
 ::: pf
 
@@ -98,6 +122,14 @@ $$
 J=\rho(S_5)\le S_6.
 $$
 Then $J\cong S_5$, has index $6$ in $S_6$, and is transitive in the natural action on six letters.
+
+::: pf-proof
+$\rho$ is injective by step [](#s3){.pf-ref}, so it is an isomorphism of $S_5$ onto its image $J$. Hence $\cardinality{J}=\cardinality{S_5}=120$, and the index is
+$$
+[S_6:J]=\frac{720}{120}=6.
+$$
+The action of $S_5$ on the cosets is transitive — given cosets $xH$ and $yH$, the element $yx^{-1}$ carries the first to the second — and the action of $J$ on the same set is the action of $S_5$ read through the isomorphism $\rho$, so it is transitive as well.
+:::
 
 :::
 

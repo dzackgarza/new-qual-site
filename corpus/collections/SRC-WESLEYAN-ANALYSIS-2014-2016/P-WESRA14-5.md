@@ -5,7 +5,9 @@ kind: problem
 title: 'Convergence off sets of small measure: a.e. convergence, and the converse by Egorov''s theorem'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Convergence in Measure
+  - Egorov
 relations: []
 review: draft
 audit:

@@ -30,42 +30,60 @@ Then either $f$ is constant or $f(G) \subset \DD \setminus \{0\}$.
 :::
 
 ::: {.solution}
-(a) **False.** Möbius transformations are conformal and hence preserve the
-angles of a polygonal boundary. The triangle with vertices $0,i,1$ has angle
-multiset $\{\pi/2,\pi/4,\pi/4\}$, whereas the triangle with vertices
-$0,i,2$ is not isosceles and has a different angle multiset. Thus no Möbius
-map can carry one triangle onto the other.
 
-(b) **True.** Let $x_{n_j}\to x$. Given $\varepsilon>0$, choose $N$ so that
-$d(x_m,x_n)<\varepsilon/2$ for $m,n\ge N$, and choose $j$ with
-$n_j\ge N$ and $d(x_{n_j},x)<\varepsilon/2$. Then for every $n\ge N$,
-$$
-d(x_n,x)\le d(x_n,x_{n_j})+d(x_{n_j},x)<\varepsilon.
-$$
+No retained solution set covers this exercise: the card's own five answers are settled here, each in one step, with the reason the truth value turns on (angles, Cauchy, endpoints, Hurwitz, the exponent inequality) made explicit.
 
-(c) **True.** The integrand has the primitive
-$$
--\frac1{2z-1},
-$$
-on $\CC\setminus\{1/2\}$. Both curves run from $1$ to $-1$ and avoid
-$1/2$, so the two integrals are equal.
+::: pf
 
-(d) **True.** By Hurwitz's theorem, a locally uniform limit of zero-free
-holomorphic functions is either identically zero or zero-free. If $f$ is not
-constant, it is zero-free; moreover $\abs{f}\le1$, and the maximum principle
-excludes an interior value of modulus $1$. Hence
-$f(G)\subset\DD\setminus\{0\}$.
+::: {.pf-step #a}
+(a) False.
 
-(e) **False.** By Cauchy--Hadamard,
-$$
-1=\limsup_{n\to\infty}\abs{a_n}^{1/n}.
-$$
-For the lacunary series, the relevant limsup is
-$\limsup \abs{a_n}^{1/p_n}$. Since $p_n\ge n$, values with $\abs{a_n}\ge1$ can only
-decrease after taking the $p_n$th root, while values with $\abs{a_n}<1$ remain
-below $1$. Thus
-$$
-\limsup \abs{a_n}^{1/p_n}\le1,
-$$
-so its radius of convergence is at least $1$, never less than $1$.
+::: pf-proof
+Viewing a triangle as the closed region bounded by its three sides: a Möbius map that carried one region onto the other is conformal, and by Carathéodory's theorem for Jordan domains it extends to a homeomorphism of the closed regions, so it permutes the three corners. Hence the multisets of interior angles must agree. The triangle with vertices $0,i,1$ has angles $90^{\circ},45^{\circ},45^{\circ}$ (right angle at $0$, and equal angles at $i$ and $1$ by symmetry), whereas $0,i,2$ has $90^{\circ}$ at $0$ and the unequal pair $\arctan(1/2)$ and $90^{\circ}-\arctan(1/2)$ at $2$ and $i$. The multisets differ, so no such map exists.
+:::
+
+:::
+
+::: {.pf-step #b}
+(b) True.
+
+::: pf-proof
+Let $x_{n_{k}}\to x$. Given $\varepsilon>0$ choose $N$ with $d(x_{m},x_{n})<\varepsilon/2$ for $m,n\ge N$ (Cauchy) and $K\ge N$ with $d(x_{n_{k}},x)<\varepsilon/2$ for $n_{k}\ge K$. For $n\ge\max(N,n_{K})$ pick a subsequence index $n_{k}\ge n$; then $d(x_{n},x)\le d(x_{n},x_{n_{k}})+d(x_{n_{k}},x)<\varepsilon$. So $x_{n}\to x$, and the limit is the subsequential limit.
+:::
+
+:::
+
+::: {.pf-step #c}
+(c) True.
+
+::: pf-proof
+$\dfrac{2}{(2z-1)^{2}}$ has the antiderivative $F(z)=-\dfrac{1}{2z-1}$ on $\CC\setminus\{\tfrac12\}$, and neither arc $\gamma_{\pm}$ meets $\tfrac12$ since $\abs{\gamma_{\pm}(t)}=1$. An integral of a derivative along a path depends only on its endpoints, so both integrals equal $F(-1)-F(1)=\frac13+1=\frac43$. (Equivalently, the closed curve $\gamma_{+}*\gamma_{-}^{-1}$ avoids the pole, so Cauchy gives equality.)
+:::
+
+:::
+
+::: {.pf-step #d}
+(d) True.
+
+::: pf-proof
+$f_{n}\to f$ locally uniformly, so $f$ is holomorphic on $G$. If $f$ is nonconstant, Hurwitz's theorem applies: a locally uniform limit of functions with no zeros in $G$ is either identically zero or has no zeros in $G$, and $f\not\equiv0$ here. So $f$ has no zeros, and $\abs{f}\le1$ by continuity of the limit on compacts, hence $f(G)\subseteq\overline\DD\setminus\{0\}$; the maximum modulus principle applied on each component of $G$ rules out $\abs{f}=1$ at an interior point unless $f$ is constant, so a nonconstant $f$ maps into $\DD\setminus\{0\}$.
+:::
+
+:::
+
+::: {.pf-step #e}
+(e) False, for the stated conclusion "less than one".
+
+::: pf-proof
+Let $b_{m}=a_{n}$ when $m=p_{n}$ and $b_{m}=0$ otherwise, so the second series is $\sum b_{m}z^{m}$ with radius $1/\limsup\abs{b_{m}}^{1/m}$. If $\limsup\abs{b_{m}}^{1/m}>1$ then $\abs{a_{n}}^{1/p_{n}}>1$ for infinitely many $n$, so $\abs{a_{n}}>1$ there; since $p_{n}\ge n$ we then have $\abs{a_{n}}^{1/p_{n}}\le\abs{a_{n}}^{1/n}$, giving $\limsup\abs{b_{m}}^{1/m}\le\limsup\abs{a_{n}}^{1/n}=1$, which contradicts the previous inequality. So the radius of the second series is at least the radius of the first, here at least $1$, and cannot be less than one.
+:::
+
+:::
+
+::: {.pf-qed}
+(a) false by step [](#a){.pf-ref}, (b), (c), (d) true by steps [](#b){.pf-ref}, [](#c){.pf-ref}, [](#d){.pf-ref}, and (e) false by step [](#e){.pf-ref}.
+:::
+
+:::
+
 :::

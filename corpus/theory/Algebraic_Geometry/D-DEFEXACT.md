@@ -41,8 +41,8 @@ $F$ is \dfn{exact} if it is both, in which case short exact sequences go to shor
 :::
 
 ::: {.remark}
-The functor $\Hom_A(N, \wait)$ is left exact and $\wait \tensor_A N$ is right exact, since $\wait\tensor_AN$ is left adjoint to $\Hom_A(N,\wait)$ ([[D-DEFADJ]]).
+The functor $\Hom_A(N, -)$ is left exact and $- \tensor_A N$ is right exact, since $-\tensor_AN$ is left adjoint to $\Hom_A(N,-)$ ([[D-DEFADJ]]).
 Over $A = \ZZ$ with $N = \ZZ/2$, apply both to $0 \to \ZZ \mapsvia{2} \ZZ \to \ZZ/2 \to 0$.
 The map $\Hom(\ZZ/2,\ZZ)=0\to\Hom(\ZZ/2,\ZZ/2)=\ZZ/2$ is not surjective, and the map $\ZZ\tensor\ZZ/2\to\ZZ\tensor\ZZ/2$ induced by multiplication by $2$ is the zero map $\ZZ/2\to\ZZ/2$, which is not injective.
-The long exact sequences of $\Ext^i_\ZZ(\ZZ/2,\wait)$ and $\Tor_i^\ZZ(\wait,\ZZ/2)$ continue these sequences, with $\Ext^1_\ZZ(\ZZ/2,\ZZ)\cong\ZZ/2$ and $\Tor_1^\ZZ(\ZZ/2,\ZZ/2)\cong\ZZ/2$.
+The long exact sequences of $\Ext^i_\ZZ(\ZZ/2,-)$ and $\Tor_i^\ZZ(-,\ZZ/2)$ continue these sequences, with $\Ext^1_\ZZ(\ZZ/2,\ZZ)\cong\ZZ/2$ and $\Tor_1^\ZZ(\ZZ/2,\ZZ/2)\cong\ZZ/2$.
 :::

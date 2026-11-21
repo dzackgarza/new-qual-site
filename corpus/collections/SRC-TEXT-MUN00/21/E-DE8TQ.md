@@ -42,23 +42,44 @@ It is called an isometric imbedding of $X$ in $Y$.
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.2, PDF p. 23** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the argument is theirs. Whitman's printed p. 235 runs the same three steps.
 
-Let $f:X\to Y$ satisfy $d_{Y}(f(x_{1}),f(x_{2}))=d_{X}(x_{1},x_{2})$ for all $x_{1},x_{2}\in X$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.2** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the three steps are theirs. Dan Whitman, *Solutions Manual*, runs the same three.
 
-*Injectivity.* If $f(x)=f(y)$ then $d_{X}(x,y)=d_{Y}(f(x),f(y))=0$, so $x=y$.
+Let $f:X\to Y$ satisfy $d_{Y}\big(f(x_{1}),f(x_{2})\big)=d_{X}(x_{1},x_{2})$ for all $x_{1},x_{2}\in X$, and let $f':X\to f(X)$ be $f$ with its range restricted.
 
-*Continuity.* Let $x\in X$ and let $V$ be a neighbourhood of $f(x)$ in $Y$; choose $r>0$ with $B_{d_{Y}}(f(x),r)\subset V$. Then
-$$
-f^{-1}\big(B_{d_{Y}}(f(x),r)\big)=\{y\in X\mid d_{Y}(f(y),f(x))<r\}=\{y\in X\mid d_{X}(y,x)<r\}=B_{d_{X}}(x,r),
-$$
-which is a neighbourhood of $x$ mapped into $V$. So $f$ is continuous, and so is its restriction $f':X\to f(X)$ (range restricted).
+::: pf
 
-*$f'$ is open onto its image.* Let $U\subset X$ be open and let $f(x)\in f'(U)$ with $x\in U$; choose $r>0$ with $B_{d_{X}}(x,r)\subset U$. Then
-$$
-f'\big(B_{d_{X}}(x,r)\big)=B_{d_{Y}}(f(x),r)\cap f(X),
-$$
-because $d_{Y}(f(y),f(x))<r\iff d_{X}(y,x)<r$. So the image of $U$ contains the trace on $f(X)$ of an open ball of $Y$ around $f(x)$: $f'(U)$ is open in the subspace $f(X)$.
+::: {.pf-step #injective}
+$f$ is injective.
 
-Hence $f'$ is a continuous bijection onto $f(X)$ whose inverse carries each $f'(U)$ to an open set, that is, $f'$ is a homeomorphism and $f$ an imbedding.
+::: pf-proof
+If $f(x)=f(y)$ then $d_{X}(x,y)=d_{Y}\big(f(x),f(y)\big)=0$, and a metric vanishes only on the diagonal, so $x=y$.
+:::
+
+:::
+
+::: {.pf-step #continuous}
+$f$, and hence $f'$, is continuous.
+
+::: pf-proof
+Let $x\in X$ and let $V$ be a neighbourhood of $f(x)$ in $Y$; choose $r>0$ with $B_{d_{Y}}\big(f(x),r\big)\subseteq V$. Then $f^{-1}\big(B_{d_{Y}}(f(x),r)\big)=\theset{y\in X\mid d_{Y}(f(y),f(x))<r}=\theset{y\mid d_{X}(y,x)<r}=B_{d_{X}}(x,r)$, a neighbourhood of $x$ carried into $V$; so $f$ is continuous at $x$. The restriction of the range of a continuous map to a subspace containing its image is continuous (Theorem 18.2(e)), so $f'$ is continuous.
+:::
+
+:::
+
+::: {.pf-step #open-image}
+$f'$ carries open sets of $X$ to open sets of the subspace $f(X)$.
+
+::: pf-proof
+Let $U\subseteq X$ be open and let $f(x)\in f'(U)$ with $x\in U$; choose $r>0$ with $B_{d_{X}}(x,r)\subseteq U$. For $y\in X$ one has $d_{Y}(f(y),f(x))<r$ exactly when $d_{X}(y,x)<r$, so $f'\big(B_{d_{X}}(x,r)\big)=B_{d_{Y}}\big(f(x),r\big)\cap f(X)$. Hence $f'(U)\supseteq B_{d_{Y}}\big(f(x),r\big)\cap f(X)$, a neighbourhood of $f(x)$ in the subspace $f(X)$; so $f'(U)$ is open in $f(X)$.
+:::
+
+:::
+
+::: {.pf-qed}
+$f'$ is a bijection onto $f(X)$ by step [](#injective){.pf-ref}, continuous by step [](#continuous){.pf-ref}, and open onto $f(X)$ by step [](#open-image){.pf-ref}; so $f'$ is a homeomorphism and $f$ is an imbedding.
+:::
+
+:::
+
 :::

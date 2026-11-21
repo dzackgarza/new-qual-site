@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP11-1
 kind: problem
 title: Core point-set definitions and four separation/product theorems
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Separation Axioms, Product Topology]}
 relations: []
 review: draft
 audit:

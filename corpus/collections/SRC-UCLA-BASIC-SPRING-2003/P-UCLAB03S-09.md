@@ -5,7 +5,9 @@ kind: problem
 title: A determinant-one orthogonal matrix in dimension three has eigenvalue one
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Orthogonal Matrices
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

@@ -28,6 +28,18 @@ audit:
     replaces the nesting step by the diagonal choice of the points, which needs no nesting. Checked against the
     definition of coherent topology (printed p. 435) and the definition of the infinitely generated wedge
     (printed p. 435).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found, and the diagonal choice that repairs the published solution is sound. If
+    {U_n} were a countable basis at the wedge point p, pick distinct indices alpha_n and a point
+    x_n != p in the open subset U_n cap S_{alpha_n} of the circle S_{alpha_n}; then V with
+    V cap S_alpha = S_alpha - {x_n} for alpha = alpha_n and S_alpha otherwise is open by the coherence
+    condition and contains p, while x_k lies in U_k and not in V, so no U_k sits inside V. Checked
+    that the construction needs no nesting of the U_n (which is exactly what the published solution
+    assumes and need not hold), that x_n != p is what keeps p in V, and that the coherence form of
+    openness is the right criterion for the quotient's open sets.
 ---
 
 ::: {.exercise}

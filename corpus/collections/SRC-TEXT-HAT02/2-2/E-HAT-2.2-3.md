@@ -43,6 +43,15 @@ audit:
     hence of degree zero for n >= 2, and the card's separate paragraph for n = 1 is correct: a
     continuous nonvanishing F on an interval has one sign throughout, giving outward at one
     endpoint and inward at the other, where no degree argument is available. No defect.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the page locators in the card's text are removed; the degree properties (a), (b), (c) and (f) of §2.2 are cited
+    by number (or, where Hatcher prints none, by the section that carries them), each read in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`. The earlier events keep their text
+    (QUAL-11); these citations supersede their page locators. No step changes.
+
 ---
 
 ::: {.problem}
@@ -91,7 +100,7 @@ This contradicts $\deg(f) = 0$.
 Thus there exists $x \in S^n$ such that $f(x) = x$.
 
 ::: pf-proof
-Property (c) of degree (Hatcher p. 134) gives $\deg f = \deg a$ for homotopic maps, and property (f) (p. 134) gives $\deg(-11) = (-1)^{n+1}$ for the antipodal map, which is nonzero.
+Property (c) of degree (§2.2) gives $\deg f = \deg a$ for homotopic maps, and property (f) (§2.2) gives $\deg(-11) = (-1)^{n+1}$ for the antipodal map, which is nonzero.
 :::
 
 :::
@@ -133,7 +142,7 @@ Thus $\deg(f) = \deg(\operatorname{id}_{S^n}) = 1$, contradicting $\deg(f) = 0$.
 Therefore there exists $y \in S^n$ such that $f(y) = -y$.
 
 ::: pf-proof
-Property (a) of degree (Hatcher p. 134) gives $\deg 11 = 1$, and property (c) (p. 134) transports it along the homotopy $G$ to $\deg f$.
+Property (a) of degree (§2.2) gives $\deg 11 = 1$, and property (c) (§2.2) transports it along the homotopy $G$ to $\deg f$.
 :::
 
 :::
@@ -161,7 +170,7 @@ $F(z) \neq 0$ ensures $\widetilde{F}$ is well-defined and continuous.
 Since $g$ extends over $D^n$ via $\widetilde{F}$, the formula $H(x, t) = \widetilde{F}((1-t)x)$ is defined for $(1-t)x \in D^n$ and gives a homotopy from $g$ to the constant map at $\widetilde{F}(0)$, so $\deg(g) = 0$.
 
 ::: pf-proof
-For $n-1 \ge 1$ a constant map of $S^{n-1}$ is not surjective, so it has degree $0$ by property (b) of degree (Hatcher p. 134), and property (c) (p. 134) gives $\deg g = 0$.
+For $n-1 \ge 1$ a constant map of $S^{n-1}$ is not surjective, so it has degree $0$ by property (b) of degree (§2.2), and property (c) (§2.2) gives $\deg g = 0$.
 :::
 
 :::

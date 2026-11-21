@@ -5,7 +5,9 @@ kind: problem
 title: Primitive roots of unity over finite fields
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Finite Fields
+  - Roots of Unity
 relations: []
 review: draft
 ---

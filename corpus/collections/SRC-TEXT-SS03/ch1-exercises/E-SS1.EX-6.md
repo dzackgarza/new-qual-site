@@ -30,17 +30,62 @@ Thus $\Omega$ is the union of all its connected components, and two components a
 :::
 
 ::: {.solution}
-Let $\mathcal C_z$ be the set of points of $\Omega$ that can be joined to $z$ by a curve lying in $\Omega$.
 
-For openness, take $w\in\mathcal C_z$. Since $\Omega$ is open, some disc $D(w,r)$ is contained in $\Omega$. Every $u\in D(w,r)$ can be joined to $w$ by the line segment in that disc, and concatenating this segment with a curve from $z$ to $w$ shows $u\in\mathcal C_z$. Hence $\mathcal C_z$ is open. It is path connected by definition, hence connected.
+The argument is the card's own: components are the equivalence classes of "joinable by a curve", they are open because $\Omega$ is, and countability comes from rational points.
 
-The relation $w\sim z$ defined by $w\in\mathcal C_z$ is reflexive (use the constant curve), symmetric (reverse a joining curve), and transitive (concatenate joining curves). Hence it is an equivalence relation. Its equivalence classes are exactly the connected components $\mathcal C_z$, so two components are either equal or disjoint and their union is $\Omega$.
+::: pf
 
-For countability, every component is a nonempty open subset of $\CC\cong\RR^2$, hence contains a point of $\QQ^2$. Distinct components are disjoint, so choosing one rational point from each component gives an injection from the set of components into the countable set $\QQ^2$. Therefore there are at most countably many components.
+::: {.pf-step #open}
 
-Finally suppose $\Omega=\CC\setminus K$ with $K$ compact. Choose $R>0$ such that $K\subset D(0,R)$. The exterior
+For $z\in\Omega$ the set $\mathcal{C}_{z}$ of points joinable to $z$ by a curve in $\Omega$ is open and connected.
+
+::: pf-proof
+
+Take $w\in\mathcal{C}_{z}$. Since $\Omega$ is open, some disc $D(w,r)\subset\Omega$; each $u\in D(w,r)$ is joined to $w$ by the line segment in that disc, and concatenating it with a curve from $z$ to $w$ joins $z$ to $u$, so $u\in\mathcal{C}_{z}$ and $D(w,r)\subset\mathcal{C}_{z}$. Hence $\mathcal{C}_{z}$ is open. It is path connected, because any two of its points are joined by way of $z$, with one curve reversed; a path connected set is connected.
+
+:::
+
+:::
+
+::: {.pf-step #equivalence}
+
+$w\in\mathcal{C}_{z}$ is an equivalence relation, with $\mathcal{C}_{z}$ as the class of $z$.
+
+::: pf-proof
+
+Reflexivity: the constant curve joins $z$ to $z$. Symmetry: reversing a curve from $z$ to $w$ gives one from $w$ to $z$, so $w\in\mathcal{C}_{z}$ implies $z\in\mathcal{C}_{w}$. Transitivity: concatenating a curve from $z$ to $w$ with one from $w$ to $\zeta$ gives a curve from $z$ to $\zeta$, so $w\in\mathcal{C}_{z}$ and $\zeta\in\mathcal{C}_{w}$ give $\zeta\in\mathcal{C}_{z}$, which by symmetry is the assertion $w\in\mathcal{C}_{z}$ and $z\in\mathcal{C}_{\zeta}$ imply $w\in\mathcal{C}_{\zeta}$. Hence the classes are the sets $\mathcal{C}_{z}$, they are pairwise disjoint or equal, and their union is $\Omega$ since $z\in\mathcal{C}_{z}$.
+
+:::
+
+:::
+
+::: {.pf-step #countable}
+
+(b) $\Omega$ has at most countably many components.
+
+::: pf-proof
+
+Each component $\mathcal{C}_{z}$ is nonempty and open by step [](#open){.pf-ref}, and $\Omega\subset\CC\cong\RR^{2}$ is second countable with $\QQ^{2}$ dense, so $\mathcal{C}_{z}$ contains a point of $\QQ^{2}$. Distinct components are disjoint by step [](#equivalence){.pf-ref}, so choosing one rational point in each gives an injection from the set of components into the countable set $\QQ^{2}$; a set injecting into a countable set is countable.
+
+:::
+
+:::
+
+::: {.pf-step #unbounded}
+
+(c) If $\Omega$ is the complement of a compact set then $\Omega$ has exactly one unbounded component.
+
+::: pf-proof
+
+Write $\Omega=\CC-K$ with $K$ compact. Choose $R>0$ with $K\subset D(0,R)$; then the exterior $E=\{z:\abs{z}>R\}$ lies in $\Omega$ and is connected, being homeomorphic to $(R,\infty)\times S^{1}$, so $E$ is contained in the single component $U$ of $\Omega$ that contains it. Any unbounded component $V$ contains a point with $\abs{z}>R$, hence meets $E\subset U$; two components that meet are equal, so $V=U$:
 $$
-E=\{z:\abs{z}>R\}
+\boxed{\Omega=\CC-K\ \text{with } K \text{ compact has exactly one unbounded component, and } \mathcal{C}_{z} \text{ is countably many open connected pieces.}}
 $$
-is connected and lies in $\Omega$, so it is contained in a single component $U$ of $\Omega$. If $V$ is any unbounded component, then $V$ contains some point with modulus $>R$, hence meets $E\subset U$. Components that meet are equal, so $V=U$. Thus $\Omega$ has exactly one unbounded component.
+
+:::
+
+:::
+
+:::
+
 :::

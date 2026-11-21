@@ -37,6 +37,19 @@ audit:
   date: 2026-11-11
   note: >-
     Step-by-step check against the printed pages, and the repair. Every step now cites Munkres by number and page: Lemma 79.1 (printed p. 478) for existence and uniqueness of based lifts, Theorem 60.1 (printed p. 371) for pi_1 of a product, the definition of a topological group in the supplementary exercises of §22 (printed p. 145), and the Convention of Chapter 13 (printed p. 477). Corrected: part (a) justified the lifting criterion by the assertion that pi_1(G,e) is abelian and that m_* is "addition", which is neither a numbered result of the book nor needed; the computation is now the group-theoretic one, p_*(pi_1 of the product) = H x H and m_* of an ordered pair of classes is their product, so the image of pi_1(G x G) is H*H = H because H is a subgroup, and the image of pi_1(G) under I o p is H^{-1} = H. Nothing in the proof now uses commutativity. What the certificate does not cover: the continuity of m and I is the definition of a topological group, not re-proved on the card.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps, one per part, and re-checked each: the image
+    computations (p x p)_* = H x H, m_* as the product of classes and (I o p)_* = H^-1, from
+    which the lifting criterion of Lemma 79.1 gives the unique based lifts; the identity
+    claim by comparing two maps with the same projection; the inverse claim by comparing two
+    lifts of the constant map; associativity by comparing the two triple products through p
+    and at the base point; and the group axioms, continuity, homomorphism property and
+    uniqueness of the multiplication. No repair needed: the card's proof was already
+    correct, and the two published arguments it uses are now credited at the steps that use
+    them (Jack Lee, MSE 5414; Jose Carlos Santos, MSE 3967971).
 ---
 
 ::: {.exercise}
@@ -72,51 +85,88 @@ are equal.
 :::
 
 ::: {.solution}
-By the Convention of Chapter 13 (printed p. 477), $\overline{G}$ and $G$ are path connected and locally path connected; a product of finitely many such spaces is again path connected and locally path connected, a path being given coordinatewise. The multiplication $m$ and the inversion $I$ are continuous by the definition of a topological group (supplementary exercises of §22, printed p. 145).
+The proof is the card's own, with two steps drawn from published answers and credited in those steps: the two-sided identity argument is **Jack Lee's, Math Stack Exchange answer 5414**, and the associativity comparison is **José Carlos Santos', answer 3967971**. Nothing else is taken from a retained set; the exercise is the theorem of §79.
 
-Put
-$$
-H=p_*\pi_1(\overline G,\tilde e)\le\pi_1(G,e).
-$$
-By Theorem 60.1 (printed p. 371) the inclusions of the two factors induce an isomorphism $\pi_1(\overline G,\tilde e)\times\pi_1(\overline G,\tilde e)\cong\pi_1(\overline G\times\overline G,(\tilde e,\tilde e))$, and under it $(p\times p)_*$ has image $H\times H$, while $m_*$ carries the pair $(u,v)$ to the product $u\cdot v$. Since $H$ is a subgroup, $H\cdot H=H$, and since $H$ is closed under inverses, $I_*(H)=H^{-1}=H$.
+By the Convention of Chapter 13 , $\overline{G}$ and $G$ are path connected and locally path connected, and a finite product of such spaces is again path connected and locally path connected. The multiplication $m$ and the inversion $I$ are continuous by the definition of a topological group (§22 supplementary exercises, printed p. 145).
 
-(a) The maps $m\circ(p\times p):\overline G\times\overline G\to G$ and $I\circ p:\overline G\to G$ carry the respective base points to $e$. By the computation above,
-$$
-(m\circ(p\times p))_*\pi_1(\overline G\times\overline G,(\tilde e,\tilde e))=H\cdot H=H=p_*\pi_1(\overline G,\tilde e),
-$$
-and $(I\circ p)_*\pi_1(\overline G,\tilde e)=H^{-1}=H$. The lifting criterion of Lemma 79.1 (printed p. 478) and its uniqueness assertion therefore give unique maps $\overline m:\overline G\times\overline G\to\overline G$ and $\overline I:\overline G\to\overline G$ with
-$$
-p\circ\overline m=m\circ(p\times p),\qquad \overline I(\tilde e)=\tilde e,\qquad p\circ\overline I=I\circ p,\qquad \overline m(\tilde e,\tilde e)=\tilde e .
-$$
+::: pf
 
-(b) Define $L(\tilde g)=\overline m(\tilde e,\tilde g)$ and $R(\tilde g)=\overline m(\tilde g,\tilde e)$. Then
-$$
-pL(\tilde g)=m(e,p\tilde g)=p\tilde g,\qquad pR(\tilde g)=m(p\tilde g,e)=p\tilde g,
-$$
-so $L$ and $R$ both lift $p$ and both send $\tilde e$ to $\overline m(\tilde e,\tilde e)=\tilde e$; the identity map of $\overline G$ is a third such lift. By the uniqueness part of Lemma 79.1 (printed p. 478), $L=R=1_{\overline G}$. So $\tilde e$ is a two-sided identity for $\overline m$. This argument is Jack Lee's, answer 5414 (https://math.stackexchange.com/a/5414), posted 2010-09-25 to Math Stack Exchange question 5391, "Covering of a topological group is a topological group" (https://math.stackexchange.com/questions/5391, asked by Down on 2010-09-24): the map $x\mapsto\overline m(x,\tilde e)$ is a lift of $p$ agreeing with the identity at $\tilde e$, so the two agree by uniqueness of lifts.
+::: {.pf-step #image}
+Put $H=p_{*}\pi_{1}(\overline{G},\tilde{e})\le\pi_{1}(G,e)$. Under the isomorphism $\pi_{1}(\overline{G},\tilde{e})\times\pi_{1}(\overline{G},\tilde{e})\cong\pi_{1}(\overline{G}\times\overline{G},(\tilde{e},\tilde{e}))$ of Theorem 60.1, the image of $(p\times p)_{*}$ is $H\times H$, the map $m_{*}$ sends $(u,v)$ to the product $u\cdot v$, and the image of $(I\circ p)_{*}$ is $H^{-1}$; since $H$ is a subgroup, $H\cdot H=H$ and $H^{-1}=H$.
 
-(c) For $A(\tilde g)=\overline m(\tilde g,\overline I(\tilde g))$ and $B(\tilde g)=\overline m(\overline I(\tilde g),\tilde g)$,
-$$
-pA(\tilde g)=p\tilde g\cdot(p\tilde g)^{-1}=e,\qquad pB(\tilde g)=(p\tilde g)^{-1}\cdot p\tilde g=e,
-$$
-so $A$ and $B$ both lift the constant map $\overline G\to\{e\}$, and $A(\tilde e)=B(\tilde e)=\overline m(\tilde e,\tilde e)=\tilde e$. The constant map $\tilde g\mapsto\tilde e$ is such a lift, so by Lemma 79.1 (printed p. 478), $A=B\equiv\tilde e$. Thus $\overline I$ gives two-sided inverses.
+::: pf-proof
+$\pi_{1}$ of a product is the product of the fundamental groups, the inclusions of the factors inducing the isomorphism (Theorem 60.1); under it $(p\times p)_{*}$ acts coordinatewise as $p_{*}$, so its image is $H\times H$. For classes $u$, $v$ represented by loops $\alpha$, $\beta$ at $e$, the composite $m\circ(\alpha\times\beta)$ is the loop $t\mapsto\alpha(t)\beta(t)$, which is homotopic to the concatenation $\alpha*\beta$ by the standard reparametrization of a product of loops; so $m_{*}(u,v)=u\cdot v$, the product in $\pi_{1}(G,e)$. Similarly $I\circ\alpha$ represents $u^{-1}$. Since $H$ is a subgroup it contains products and inverses of its elements.
+:::
 
-(d) Let
-$$
-F(\tilde g,\tilde g',\tilde g'')=\overline m(\tilde g,\overline m(\tilde g',\tilde g'')),\qquad
-F'(\tilde g,\tilde g',\tilde g'')=\overline m(\overline m(\tilde g,\tilde g'),\tilde g'').
-$$
-Their projections to $G$ agree, by associativity of the multiplication in $G$:
-$$
-pF=p\tilde g\cdot(p\tilde g'\cdot p\tilde g'')=(p\tilde g\cdot p\tilde g')\cdot p\tilde g''=pF',
-$$
-and both send $(\tilde e,\tilde e,\tilde e)$ to $\tilde e$. So $F$ and $F'$ are two based lifts of the same map out of the path connected and locally path connected space $\overline G\times\overline G\times\overline G$, and Lemma 79.1 (printed p. 478) gives $F=F'$, that is, $\overline m$ is associative. The comparison is José Carlos Santos', answer 3967971 (https://math.stackexchange.com/a/3967971), posted 2020-12-31 to Math Stack Exchange question 3967945, "Covering space of a topological group is itself a topological group" (https://math.stackexchange.com/questions/3967945, asked by user674359 on the same day): two triple products that project to the same map and agree at $(\tilde e,\tilde e,\tilde e)$ are equal. The second answer there, 3967979 by Bananach Space, expresses the same comparison as agreement of two maps differing by a deck transformation.
+:::
 
-(e) Parts (b), (c) and (d) show that $\overline m$ is an associative multiplication on $\overline G$ with two-sided identity $\tilde e$ and two-sided inverses $\overline I$, that is, a group structure; $\overline m$ and $\overline I$ are continuous by construction, so $(\overline G,\overline m,\overline I,\tilde e)$ is a topological group. By construction,
-$$
-p(\overline m(x,y))=p(x)p(y),\qquad p(\overline I(x))=p(x)^{-1},
-$$
-so $p$ is a continuous group homomorphism.
+::: {.pf-step #part-a}
+(a) There are unique maps $\overline{m}:\overline{G}\times\overline{G}\to\overline{G}$ and $\overline{I}:\overline{G}\to\overline{G}$ with $\overline{m}(\tilde{e},\tilde{e})=\tilde{e}$, $\overline{I}(\tilde{e})=\tilde{e}$, $p\circ\overline{m}=m\circ(p\times p)$ and $p\circ\overline{I}=I\circ p$.
 
-For uniqueness, let $m'$ be any multiplication on $\overline G$ making $\tilde e$ the identity and $p$ a homomorphism. Then $p\circ m'=m\circ(p\times p)$ and $m'(\tilde e,\tilde e)=\tilde e$, so $m'$ is a based lift of $m\circ(p\times p)$, hence $m'=\overline m$ by Lemma 79.1.
+::: pf-proof
+The map $m\circ(p\times p)$ carries $(\tilde{e},\tilde{e})$ to $m(e,e)=e$, and $I\circ p$ carries $\tilde{e}$ to $I(e)=e$. By step [](#image){.pf-ref},
+$$
+\big(m\circ(p\times p)\big)_{*}\pi_{1}\big(\overline{G}\times\overline{G},(\tilde{e},\tilde{e})\big)=H\cdot H=H=p_{*}\pi_{1}(\overline{G},\tilde{e}),
+\qquad
+(I\circ p)_{*}\pi_{1}(\overline{G},\tilde{e})=H^{-1}=H .
+$$
+The lifting criterion of Lemma 79.1  applies to each, since the domains are path connected and locally path connected, and gives based lifts $\overline{m}$ and $\overline{I}$; the uniqueness assertion of the same lemma, again by path connectedness of the domains, gives uniqueness of each lift.
+:::
+
+:::
+
+::: {.pf-step #part-b}
+(b) $\overline{m}(\tilde{e},\tilde{g})=\overline{m}(\tilde{g},\tilde{e})=\tilde{g}$ for every $\tilde{g}\in\overline{G}$.
+
+::: pf-proof
+Let $L(\tilde{g})=\overline{m}(\tilde{e},\tilde{g})$ and $R(\tilde{g})=\overline{m}(\tilde{g},\tilde{e})$. Then $pL(\tilde{g})=m\big(e,p\tilde{g}\big)=p\tilde{g}$ and $pR(\tilde{g})=m\big(p\tilde{g},e\big)=p\tilde{g}$, and $L(\tilde{e})=R(\tilde{e})=\overline{m}(\tilde{e},\tilde{e})=\tilde{e}$; the identity of $\overline{G}$ is a third map with the same projection and the same value at $\tilde{e}$. Two maps with the same projection to $G$ that agree at one point of the path connected space $\overline{G}$ agree everywhere, by the uniqueness part of Lemma 79.1; so $L=R=\mathsf{l}_{\overline{G}}$, that is, $\tilde{e}$ is a two-sided identity. This is Jack Lee's argument, MSE answer 5414.
+:::
+
+:::
+
+::: {.pf-step #part-c}
+(c) $\overline{m}\big(\tilde{g},\overline{I}(\tilde{g})\big)=\overline{m}\big(\overline{I}(\tilde{g}),\tilde{g}\big)=\tilde{e}$ for every $\tilde{g}$.
+
+::: pf-proof
+Put $A(\tilde{g})=\overline{m}\big(\tilde{g},\overline{I}(\tilde{g})\big)$ and $B(\tilde{g})=\overline{m}\big(\overline{I}(\tilde{g}),\tilde{g}\big)$. Then
+$$
+pA(\tilde{g})=p\tilde{g}\cdot(p\tilde{g})^{-1}=e,\qquad pB(\tilde{g})=(p\tilde{g})^{-1}\cdot p\tilde{g}=e,
+$$
+so both lift the constant map $\overline{G}\to\{e\}$, and both send $\tilde{e}$ to $\overline{m}\big(\tilde{e},\overline{I}(\tilde{e})\big)=\overline{m}(\tilde{e},\tilde{e})=\tilde{e}$. The constant map $\tilde{g}\mapsto\tilde{e}$ is a third lift, so by Lemma 79.1 all three agree: $A=B\equiv\tilde{e}$.
+:::
+
+:::
+
+::: {.pf-step #part-d}
+(d) $\overline{m}\big(\tilde{g},\overline{m}(\tilde{g}',\tilde{g}'')\big)=\overline{m}\big(\overline{m}(\tilde{g},\tilde{g}'),\tilde{g}''\big)$ for all $\tilde{g},\tilde{g}',\tilde{g}''$.
+
+::: pf-proof
+Let $F$ and $F'$ be the two maps $\overline{G}^{3}\to\overline{G}$ displayed, which are continuous because $\overline{m}$ is. Their projections agree, by associativity of the multiplication in $G$:
+$$
+pF=p\tilde{g}\cdot\big(p\tilde{g}'\cdot p\tilde{g}''\big)=\big(p\tilde{g}\cdot p\tilde{g}'\big)\cdot p\tilde{g}''=pF',
+$$
+and both send $(\tilde{e},\tilde{e},\tilde{e})$ to $\overline{m}\big(\tilde{e},\overline{m}(\tilde{e},\tilde{e})\big)=\tilde{e}$ and to $\overline{m}\big(\overline{m}(\tilde{e},\tilde{e}),\tilde{e}\big)=\tilde{e}$. The domain $\overline{G}^{3}$ is path connected and locally path connected, so the uniqueness part of Lemma 79.1 gives $F=F'$. This comparison is José Carlos Santos', MSE answer 3967971.
+:::
+
+:::
+
+::: {.pf-step #part-e}
+(e) $(\overline{G},\overline{m},\overline{I},\tilde{e})$ is a topological group, $p$ is a continuous homomorphism, and no other multiplication has both properties.
+
+::: pf-proof
+By steps [](#part-b){.pf-ref}, [](#part-c){.pf-ref} and [](#part-d){.pf-ref}, $\overline{m}$ is an associative multiplication on $\overline{G}$ with two-sided identity $\tilde{e}$ and two-sided inverses given by $\overline{I}$, so $\overline{G}$ is a group; $\overline{m}$ and $\overline{I}$ are continuous by construction, so it is a topological group. By construction $p\big(\overline{m}(x,y)\big)=p(x)p(y)$ and $p\big(\overline{I}(x)\big)=p(x)^{-1}$, so $p$ is a continuous homomorphism. If $m'$ is another multiplication making $\tilde{e}$ the identity and $p$ a homomorphism, then $p\circ m'=m\circ(p\times p)$ and $m'(\tilde{e},\tilde{e})=\tilde{e}$, so $m'$ is a based lift of $m\circ(p\times p)$ and equals $\overline{m}$ by the uniqueness part of Lemma 79.1.
+:::
+
+:::
+
+::: {.pf-step}
+The theorem holds.
+
+::: pf-proof
+Step [](#part-a){.pf-ref} secures the multiplication and inversion, step [](#part-e){.pf-ref} verifies the group axioms, continuity and the homomorphism property, and gives uniqueness.
+:::
+
+:::
+
+:::
 :::

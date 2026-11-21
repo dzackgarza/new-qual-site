@@ -6,7 +6,9 @@ title: Inner product on three-by-three skew-symmetric matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Skew-Symmetric Matrices
+  - Inner Product Spaces
 relations: []
 review: draft
 audit:

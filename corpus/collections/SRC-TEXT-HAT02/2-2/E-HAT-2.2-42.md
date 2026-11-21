@@ -97,7 +97,7 @@ What goes wrong when $m = 2$?
 :::
 
 ::: {.solution}
-Use **Andrew Putman, *The action on homology of finite groups of automorphisms of surfaces and graphs*, Theorem 3.1, pp. 4--5** (`tmp/sources/putman-finite-order-homology.pdf`) for integral homology, and **Jean-Pierre Serre, *Bounds for the orders of the finite subgroups of $G(k)$*, §1.2, Lemma 1, printed p. 5** (`tmp/sources/serre-bounds-finite-subgroups.pdf`) for modular coefficients.
+Use **Andrew Putman, *The action on homology of finite groups of automorphisms of surfaces and graphs*, Theorem 3.1** (`tmp/sources/putman-finite-order-homology.pdf`) for integral homology, and **Jean-Pierre Serre, *Bounds for the orders of the finite subgroups of $G(k)$*, §1.2, Lemma 1** (`tmp/sources/serre-bounds-finite-subgroups.pdf`) for modular coefficients.
 
 ::: pf
 

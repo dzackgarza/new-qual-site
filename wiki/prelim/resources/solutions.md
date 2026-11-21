@@ -5,21 +5,30 @@ order: 4
 
 # Solutions
 
-## Berkeley preliminary exams
+Solutions to preliminary examinations, to course examinations, and to practice
+packets, with the material each document covers.
 
-- [Berkeley prelim exam archive](https://math.berkeley.edu/programs/graduate/prelim-exams/archive)
+## Berkeley preliminary examinations
 
-- [Fall 2020 online graduate preliminary exam, Part A, with solutions](attachments/prelimsolutions.pdf)
+The sittings held here are one collection each, listed by institution, subject, and date on [[archives/card-archives|the Sources listing]] under Berkeley.
 
-- [Spring 2021 online graduate preliminary exam, Part A, with solutions](attachments/prelimsolutions_0.pdf)
+- [Fall 2020 online graduate preliminary examination, Part A, with solutions](attachments/prelimsolutions.pdf) --
+  one sitting's Part A, solved.
 
-- [[attachments/f03solution.pdf|Fall 2003 preliminary-exam solutions]]
+- [Spring 2021 online graduate preliminary examination, Part A, with solutions](attachments/prelimsolutions_0.pdf) --
+  one sitting's Part A, solved.
+
+- [[attachments/f03solution.pdf|Fall 2003 preliminary-exam solutions]] --
+  the solutions to one sitting.
 
 ## General practice packets
 
-- [Multivariable-calculus practice](attachments/multivariable_calculus.pdf)
+- [Multivariable-calculus practice](attachments/multivariable_calculus.pdf) --
+  practice problems in multivariable calculus, with solutions.
 
-- [Selected calculus practice from GRE Mathematics Test Form GR8767](attachments/more_calculus_from_test2.pdf) -- multiple-choice calculus questions from the GRE Mathematics Test form GR8767, with the answer key and item difficulty worksheet for the form.
+- [Selected calculus practice from GRE Mathematics Test Form GR8767](attachments/more_calculus_from_test2.pdf) --
+  multiple-choice calculus questions from the GRE Mathematics Test form GR8767,
+  with the answer key and item difficulty worksheet for the form.
 
 - [Week 1: Calculus I practice solutions](attachments/Week1_solns.pdf)
 
@@ -35,9 +44,9 @@ order: 4
 
 ## Harvard Math 21b, Spring 2018
 
-- [Course exam archive](http://people.math.harvard.edu/~knill/teaching/math21b2018/exams.html)
+The course's own examinations are collections here, listed on [[archives/card-archives|the Sources listing]] under Harvard applied algebra; the local documents in this section are its final examination and practice finals.
 
-- [Final exam with solutions](attachments/solution.pdf)
+- [Final examination with solutions](attachments/solution.pdf)
 
 - [Practice final 1 with solutions](attachments/solution1.pdf)
 
@@ -57,4 +66,5 @@ order: 4
 
 ## Topology
 
-- [[attachments/Point_Set_Topology_Midterm_with_Solns_-_Unknown.pdf|Point-set topology midterm with solutions]]
+- [[attachments/Point_Set_Topology_Midterm_with_Solns_-_Unknown.pdf|Point-set topology midterm with solutions]] --
+  one midterm's problems, solved.

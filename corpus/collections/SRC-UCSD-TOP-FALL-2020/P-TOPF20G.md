@@ -13,6 +13,21 @@ classification:
   - Lefschetz Fixed Point Theorem
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The computation is correct. Over the rationals the Kunneth decomposition puts
+    each H_p tensor H_q in degree p+q, and the swap acts by (-1)^{pq} composed with
+    the flip; summands with p different from q cancel in the trace, and on the
+    diagonal the flip has trace b_p, so with the (-1)^{2p} sign the Lefschetz
+    number is the alternating sum of the Betti numbers, which is the Euler
+    characteristic. That number is nonzero by hypothesis, it is a homotopy
+    invariant, and the Lefschetz fixed point theorem for the compact triangulable
+    manifold M x M then forces a fixed point for every map homotopic to the swap.
+    Nothing was changed. The statement was not re-read against a scan in this
+    pass.
 ---
 
 ::: {.problem}

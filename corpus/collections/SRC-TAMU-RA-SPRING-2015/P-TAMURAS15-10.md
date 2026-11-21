@@ -83,7 +83,7 @@ Prove the following statements:
 :::
 
 ::: {.solution}
-Use the Hahn--Banach theorem in the form: a linear functional on a subspace $Y\subseteq X$ that is dominated there by $q\|\cdot\|$, for a seminorm $q$, extends to a linear functional on $X$ still dominated by $q\|\cdot\|$.
+Use the Hahn--Banach theorem in the form: a linear functional on a subspace $Y\subseteq X$ that is dominated there by $q\norm{\cdot}$, for a seminorm $q$, extends to a linear functional on $X$ still dominated by $q\norm{\cdot}$.
 The set $S$ is nonempty, since $0\in S$, and it is symmetric, since $-\varphi\in S$ whenever $\varphi\in S$.
 
 ::: pf
@@ -105,10 +105,10 @@ For every $x\in X\setminus Y$ there is $\varphi\in S$ with $\varphi(x)\ne0$.
 
 ::: pf-proof
 Since $Y$ is closed and $x\notin Y$, the number $d=\inf_{y\in Y}\norm{x-y}$ is positive.
-Let $Z=Y+\RR x$, a subspace on which each element is uniquely $y+tx$ with $y\in Y$ and $t\in\RR$, and define $\psi(y+tx)=t$.
-For $t\ne0$ one has $\abs{\psi(y+tx)}=\abs t\le\norm{y+tx}/d$, and for $t=0$ it vanishes; hence $\abs{\psi(z)}\le d^{-1}\norm z$ on $Z$, and $\psi$ is linear with $\psi(x)=1$.
-By Hahn--Banach $\psi$ extends to $\varphi\in X^*$ with $\abs{\varphi(x')}\le d^{-1}\norm{x'}\le K\norm{x'}$ for all $x'$, and $\varphi$ vanishes on $Y$.
-So $\varphi\in S$ and $\varphi(x)=1\ne0$.
+Let $Z=Y+\RR x$, a subspace on which each element is uniquely $y+tx$ with $y\in Y$ and $t\in\RR$, and define $\psi(y+tx)=td$.
+For $t\ne0$ one has $\norm{y+tx}=\abs t\norm{x-(-y/t)}$ with $-y/t\in Y$, so $\norm{y+tx}\ge\abs t d=\abs{\psi(y+tx)}$, and for $t=0$ both sides vanish; hence $\psi$ is linear on $Z$ and $\abs{\psi(z)}\le\norm z$ there, with $\psi(x)=d$.
+By Hahn--Banach $\psi$ extends to $\varphi\in X^*$ with $\abs{\varphi(x')}\le\norm{x'}\le K\norm{x'}$ for all $x'$, the last inequality because $K>1$; and $\varphi$ vanishes on $Y$, since $\psi$ does.
+So $\varphi\in S$ and $\varphi(x)=d\ne0$.
 :::
 
 :::
@@ -155,7 +155,7 @@ for every $x\in X$.
 :::
 
 ::: {.remark}
-The paper prints problem 10 with a subspace $Y$ and no closedness hypothesis.
+The examination paper is retained at `assets/attachments/j15.pdf`, and problem 10 is printed there with a subspace $Y$ and no closedness hypothesis.
 As printed, statement (i) fails: for $X=C[0,1]$ with the sup norm, $Y$ the polynomials and $\norm y_1=2\norm y$, every $\varphi\in S$ is bounded and vanishes on a dense subspace, so $S=\{0\}$ and $\norm x_2=0$ for every $x$.
 The statement above adds closedness, and that replacement is certified: <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/Tamuras15_10.lean> proves `corrected_statement`, which says that for `Y` closed the supremum norm of the problem is a norm on `X`, agrees with the given norm on `Y`, and satisfies `K^-1 * ||x|| <= ||x||_2 <= K * ||x||`, and its `#print axioms` lines report only `propext`, `Classical.choice` and `Quot.sound`, with no `sorryAx`.
 :::

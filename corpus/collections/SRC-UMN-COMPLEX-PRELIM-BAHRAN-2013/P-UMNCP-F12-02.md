@@ -6,7 +6,9 @@ title: Analyticity from analytic square and cube
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Holomorphic Functions
+  - Analytic Continuation
 relations: []
 review: draft
 audit:

@@ -28,6 +28,7 @@ Give an example to show that this is not true for arbitrary schemes.
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.14, transcribed and checked against the exercise as printed: the reduction to $X=\Spec A$ with $A$ a finitely generated $k$-algebra, hence a Jacobson ring, the set $\operatorname{Spm}A$ of maximal ideals identified with the closed points, and the argument that a proper open subset meets no maximal ideal in a dense subset, together with the counterexample $\Spec A=\{(0),\mathfrak m\}$ over a non-Jacobson ring.
 
 ::: pf
 
@@ -133,7 +134,9 @@ Step [](#closed-points-dense){.pf-ref} proves density for finite-type schemes ov
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.14, PDF p. 26, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim takes a nonempty open, produces a closed point inside an affine chart by Zariski's lemma, remarks that such a point need not be closed in $X$, and repairs this with the formula expressing $X-\{x\}$ as a union of open charts minus $x$; his counterexample is $\Spec k[x]_{(x)}$.
+The exercise is II.3.14 of Hartshorne, *Algebraic Geometry* (1977), read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`.
+
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.14, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim takes a nonempty open, produces a closed point inside an affine chart by Zariski's lemma, remarks that such a point need not be closed in $X$, and repairs this with the formula expressing $X-\{x\}$ as a union of open charts minus $x$; his counterexample is $\Spec k[x]_{(x)}$.
 The proof above isolates the two lemmas behind that argument, that a point with residue field finite over $k$ is closed in $X$ and that every nonempty open contains such a point, and takes the same discrete valuation ring.
 Agree.
 :::

@@ -5,7 +5,9 @@ kind: problem
 title: Dimension of intersections of subspaces
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Dimension
+  - Subspaces
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP09-I5
 kind: problem
 title: A Hausdorff continuous image of the unit interval is metrizable
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Metrizability, Hausdorff Spaces]}
 relations: []
 review: draft
 audit:

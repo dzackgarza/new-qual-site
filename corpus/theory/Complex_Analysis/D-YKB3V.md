@@ -15,6 +15,8 @@ review: draft
 ::: {.definition}
 A \dfn{toy contour} is a positively oriented closed piecewise-smooth curve $\gamma$ in $\CC$ whose interior is evident from the picture, such as a circle, a triangle, a rectangle, a keyhole, or an indented semicircle.
 Cauchy's theorem and its consequences are proved for toy contours by direct arguments, without appeal to the Jordan curve theorem.
+
+This is [@SS03, ch. 2, §2, Local existence of primitives and Cauchy's theorem in a disc], where a toy contour is defined and given the orientation for which its interior lies to the left; the "loosely stated" phrasing is the book's.
 :::
 
 ::: {.remark}

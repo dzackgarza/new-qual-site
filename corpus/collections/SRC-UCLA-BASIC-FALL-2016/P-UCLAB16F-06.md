@@ -5,7 +5,9 @@ kind: problem
 title: Rational eigenvectors for a rational eigenvalue
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Eigenvalues and Eigenvectors
+  - Rational Numbers
 relations: []
 review: draft
 audit:

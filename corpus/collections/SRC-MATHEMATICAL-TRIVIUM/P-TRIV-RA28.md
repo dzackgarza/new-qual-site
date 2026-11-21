@@ -15,6 +15,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Real Analysis, Problem 28, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked at both endpoints separately, which is what decides
+    these integrals. (a) at x = 1 the integrand behaves like (x-1)^{-beta}, so convergence needs
+    beta < 1; at x = 0, log^{-beta} x -> 0 for beta < 1, so the integrand is o(x^{-alpha}) and
+    alpha < 1 suffices, while alpha = 1 would require beta > 1 by the substitution u = log x,
+    contradicting beta < 1. Hence alpha < 1 and beta < 1. (b) again beta < 1 at x = 1, and at
+    infinity alpha > 1 works for every beta while alpha = 1 needs beta > 1. Hence alpha > 1 and
+    beta < 1. Both boxes are right, and the reason the same beta condition appears twice is that
+    both integrals have the same behaviour at x = 1.
 ---
 
 ::: {.problem}

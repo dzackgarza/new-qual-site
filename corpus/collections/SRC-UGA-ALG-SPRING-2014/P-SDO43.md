@@ -17,6 +17,16 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. If T: R^n -> R^n is onto then, R^n being free on n generators, a
+    right inverse S exists by choosing preimages of the standard basis and extending linearly; then
+    det(T) det(S) = det(TS) = 1, so det T is a unit of R and T is invertible, in particular injective.
+    Checked that this uses exactly that R is commutative with identity (so that the determinant is
+    multiplicative, and over a commutative ring) and that the right inverse is R-linear by construction
+    rather than by a splitting axiom.
 ---
 
 ::: {.problem}

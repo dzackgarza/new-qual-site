@@ -6,7 +6,9 @@ title: Disjoint cycles, order and parity of $(4\ 2\ 1)(6\ 1\ 3\ 2)$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Permutations
+  - Cycle Decomposition
 relations: []
 review: draft
 audit:

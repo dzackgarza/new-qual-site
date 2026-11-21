@@ -6,7 +6,9 @@ title: Convergence of the integral-sum discrepancy for a decreasing function
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integrals
+  - Monotone Functions
 relations: []
 review: draft
 audit:
@@ -221,6 +223,12 @@ N\to\infty.
 $$
 
 
+Therefore
+$$
+\boxed{\int_1^{N+1}f(x)\,dx-\sum_{n=1}^Nf(n)}
+$$
+converges to a finite limit.
+
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref},
@@ -233,30 +241,9 @@ Take the limit from step [](#s1-6){.pf-ref}.
 
 :::
 
-::: {.pf-step #s1-8}
-
-Therefore
-$$
-\boxed{
-\int_1^{N+1}f(x)\,dx
--
-\sum_{n=1}^Nf(n)
-}
-$$
-converges to a finite limit.
-
-
-::: pf-proof
-
-This is exactly step [](#s1-7){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-8){.pf-ref} is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP11-4
 kind: problem
 title: Maximal ideals of rings of continuous functions on compact Hausdorff spaces
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Rings of Continuous Functions, Maximal Ideals]}
 relations: []
 review: draft
 audit:
@@ -32,6 +32,8 @@ $$
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination papers alone, so the argument is the card's own.
 
 For
 $$

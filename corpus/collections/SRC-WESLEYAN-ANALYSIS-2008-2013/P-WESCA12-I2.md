@@ -5,7 +5,8 @@ kind: problem
 title: 'Integral formula for higher derivatives of analytic functions'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy Integral Formula
 relations: []
 review: draft
 audit:

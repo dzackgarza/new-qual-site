@@ -5,191 +5,193 @@ title: Undergraduate syllabus topics
 
 # Undergraduate syllabus topics
 
+The topics of the undergraduate courses in calculus, linear algebra, algebra,
+real analysis, complex analysis, and point-set topology, grouped by course.
+Each topic links the card or page that treats it, or its entry page if that page is not written yet.
+
 ## Calculus (Stewart)
 
-- chain rule
-- derivatives of maps $\RR^m\to\RR^n$
-- explicit solutions of simple equations
-- Gauss's theorem
-- gradient
-- Green's theorem
-- Lagrange multipliers
-- line and surface integrals of scalar and vector functions
-- maxima and minima
-- ordinary differential equations
-- Stokes' theorem
-- the differential of a smooth map between open subsets of Euclidean spaces; the matrix of partial derivatives; the inverse and implicit function theorems; multivariable Riemann integration
+- [[real-analysis/calculus/chain-rule|chain rule]]
+- [[real-analysis/calculus/derivatives-of-maps|derivatives of maps $\RR^m\to\RR^n$]]
+- [[real-analysis/calculus/explicit-solutions-of-simple-equations|explicit solutions of simple equations]]
+- [[real-analysis/calculus/gausss-theorem|Gauss's theorem]]
+- [[real-analysis/calculus/gradient|gradient]]
+- [[T-4M73O|Green's theorem]]
+- [[real-analysis/calculus/lagrange-multipliers|Lagrange multipliers]]
+- [[real-analysis/calculus/line-and-surface-integrals-of-scalar-and-vector|line and surface integrals of scalar and vector functions]]
+- [[real-analysis/calculus/maxima-and-minima|maxima and minima]]
+- [[real-analysis/calculus/ordinary-differential-equations|ordinary differential equations]]
+- [[T-LO7QM|Stokes' theorem]]
+- [[real-analysis/calculus/the-differential-of-a-smooth-map-between-open|the differential of a smooth map between open subsets of Euclidean spaces; the matrix of partial derivatives; the inverse and implicit function theorems; multivariable Riemann integration]]
 
 ## Linear algebra
 
-- adjoints of linear transformations
-- basis and dimension
-- canonical forms
-- Cayley--Hamilton theorem
-- change of basis
-- characteristic and minimal polynomials
-- determinants
-- diagonalization and triangularization of operators
-- diagonalization of Hermitian and symmetric matrices
-- dual spaces
-- eigenvalues
-- eigenvectors
-- exponentiation of matrices and application to differential equations
-- Gaussian elimination
-- Gram--Schmidt process
-- Hermitian and unitary operators
-- inner product spaces
-- invariant subspaces
-- Jordan normal form
-- least squares problems
-- linear transformations
-- LU decomposition
-- nullity
-- rank--nullity theorem
-- orthogonal and unitary matrices
-- orthogonality
-- orthonormality
-- quadratic forms
-- rank
-- rational canonical form
-- row-reduced form
-- similarity of matrices
-- solvability criteria
-- subspaces
-- symmetric matrices
-- systems of linear equations
-- trace
-- vector spaces
-- finite-dimensional vector spaces over $\RR$ and linear maps between them: subspaces, quotient spaces, dimension, bases, matrix representations; positive definite inner products, orthonormal bases, extension of orthonormal subsets to orthonormal bases; eigenvalues and eigenvectors of automorphisms; the characteristic polynomial
+- [[algebra/linear-algebra/adjoints-of-linear-transformations|adjoints of linear transformations]]
+- [[algebra/linear-algebra/basis-and-dimension|basis and dimension]]
+- [[algebra/linear-algebra/canonical-forms|canonical forms]]
+- [[T-SJCF7|Cayley--Hamilton theorem]]
+- [[algebra/linear-algebra/change-of-basis|change of basis]]
+- [[algebra/linear-algebra/characteristic-and-minimal-polynomials|characteristic and minimal polynomials]]
+- [[algebra/linear-algebra/determinants|determinants]]
+- [[algebra/linear-algebra/diagonalization-and-triangularization|diagonalization and triangularization of operators]]
+- [[algebra/linear-algebra/diagonalization-of-hermitian-and-symmetric|diagonalization of Hermitian and symmetric matrices]]
+- [[algebra/linear-algebra/dual-spaces|dual spaces]]
+- [[algebra/linear-algebra/eigenvalues|eigenvalues]]
+- [[algebra/linear-algebra/eigenvectors|eigenvectors]]
+- [[algebra/linear-algebra/exponentiation-of-matrices-and-application|exponentiation of matrices and application to differential equations]]
+- [[algebra/linear-algebra/gaussian-elimination|Gaussian elimination]]
+- [[algebra/linear-algebra/gram-schmidt-process|Gram--Schmidt process]]
+- [[algebra/linear-algebra/hermitian-and-unitary-operators|Hermitian and unitary operators]]
+- [[algebra/linear-algebra/inner-product-spaces|inner product spaces]]
+- [[algebra/linear-algebra/invariant-subspaces|invariant subspaces]]
+- [[algebra/linear-algebra/jordan-normal-form|Jordan normal form]]
+- [[algebra/linear-algebra/least-squares-problems|least squares problems]]
+- [[algebra/linear-algebra/linear-transformations|linear transformations]]
+- [[algebra/linear-algebra/lu-decomposition|LU decomposition]]
+- [[algebra/linear-algebra/nullity|nullity]]
+- [[algebra/linear-algebra/rank-nullity-theorem|rank--nullity theorem]]
+- [[algebra/linear-algebra/orthogonal-and-unitary-matrices|orthogonal and unitary matrices]]
+- [[algebra/linear-algebra/orthogonality|orthogonality]]
+- [[algebra/linear-algebra/orthonormality|orthonormality]]
+- [[algebra/linear-algebra/quadratic-forms|quadratic forms]]
+- [[algebra/linear-algebra/rank|rank]]
+- [[algebra/linear-algebra/rational-canonical-form|rational canonical form]]
+- [[algebra/linear-algebra/row-reduced-form|row-reduced form]]
+- [[algebra/linear-algebra/similarity-of-matrices|similarity of matrices]]
+- [[algebra/linear-algebra/solvability-criteria|solvability criteria]]
+- [[algebra/linear-algebra/subspaces|subspaces]]
+- [[algebra/linear-algebra/symmetric-matrices|symmetric matrices]]
+- [[algebra/linear-algebra/systems-of-linear-equations|systems of linear equations]]
+- [[algebra/linear-algebra/trace|trace]]
+- [[algebra/linear-algebra/vector-spaces|vector spaces]]
+- [[algebra/linear-algebra/finite-dimensional-vector-spaces-over|finite-dimensional vector spaces over $\RR$ and linear maps between them: subspaces, quotient spaces, dimension, bases, matrix representations; positive definite inner products, orthonormal bases, extension of orthonormal subsets to orthonormal bases; eigenvalues and eigenvectors of automorphisms; the characteristic polynomial]]
 
 ## Algebra (Artin, Herstein)
 
-- automorphisms
-- cyclic groups
-- dihedral groups
-- Euclidean domains
-- fields of fractions
-- finite field extensions
-- finite fields
-- finitely generated abelian groups
-- groups
-- groups acting on sets
-- homomorphisms
-- ideals
-- matrix groups
-- maximal ideals
-- normal subgroups
-- permutation groups
-- polynomial rings
-- prime ideals
-- principal ideal domains
-- quotient groups
-- quotient rings
-- rings
-- roots of polynomials
-- subgroups
-- Sylow theorems and applications
-- unique factorization domains
-- units
-- definitions of groups, rings, fields, and modules over a ring; homomorphisms of these objects; subgroups, normal subgroups, quotient groups; cyclic groups, the structure theorem for finite abelian groups; ideals, prime and maximal ideals, and their quotients, with the examples $\ZZ$, $k[X]$, and rings of algebraic integers; field extensions, splitting fields of polynomials, normal extensions
+- [[algebra/automorphisms|automorphisms]]
+- [[algebra/cyclic-groups|cyclic groups]]
+- [[algebra/dihedral-groups|dihedral groups]]
+- [[algebra/euclidean-domains|Euclidean domains]]
+- [[algebra/fields-of-fractions|fields of fractions]]
+- [[algebra/finite-field-extensions|finite field extensions]]
+- [[algebra/fields/finite-fields|finite fields]]
+- [[algebra/finitely-generated-abelian-groups|finitely generated abelian groups]]
+- [[algebra/groups/index|groups]]
+- [[algebra/groups-acting-on-sets|groups acting on sets]]
+- [[algebra/homomorphisms|homomorphisms]]
+- [[algebra/ideals|ideals]]
+- [[algebra/matrix-groups|matrix groups]]
+- [[algebra/maximal-ideals|maximal ideals]]
+- [[algebra/normal-subgroups|normal subgroups]]
+- [[algebra/permutation-groups|permutation groups]]
+- [[algebra/rings-and-ideals/polynomial-rings|polynomial rings]]
+- [[algebra/prime-ideals|prime ideals]]
+- [[algebra/principal-ideal-domains|principal ideal domains]]
+- [[algebra/quotient-groups|quotient groups]]
+- [[algebra/quotient-rings|quotient rings]]
+- [[algebra/rings|rings]]
+- [[algebra/roots-of-polynomials|roots of polynomials]]
+- [[algebra/subgroups|subgroups]]
+- [[algebra/sylow-theorems-and-applications|Sylow theorems and applications]]
+- [[algebra/unique-factorization-domains|unique factorization domains]]
+- [[D-QQIQZ|units]]
+- [[algebra/definitions-of-groups-rings-fields-and-modules|definitions of groups, rings, fields, and modules over a ring; homomorphisms of these objects; subgroups, normal subgroups, quotient groups; cyclic groups, the structure theorem for finite abelian groups; ideals, prime and maximal ideals, and their quotients, with the examples $\ZZ$, $k[X]$, and rings of algebraic integers; field extensions, splitting fields of polynomials, normal extensions]]
 
 ## Real analysis (Rudin)
 
-- accumulation points
-- Arzelà--Ascoli theorem
-- Bolzano--Weierstrass theorem
-- boundary points
-- Cauchy sequences
-- Cauchy--Schwarz inequality
-- chain rule
-- change of variables formula
-- closure
-- compactness
-- compactness in function spaces
-- completeness
-- connectedness
-- continuity
-- contraction maps
-- convergence of improper integrals
-- convergence of sequences of numbers and functions
-- definition of differentiability in several variables (approximating linear transformation)
-- differentiation under the integral sign
-- Dini's theorem
-- epsilon-delta arguments
-- equality of mixed partials
-- equicontinuity
-- existence and uniqueness theorems for solutions of ordinary differential equations
-- fixed point theory
-- Fourier series
-- fundamental theorem of calculus
-- Heine--Borel theorem
-- implicit function theorem
-- interior points
-- intermediate value theorem
-- inverse function theorem
-- least upper bound property of $\RR$
-- limit points
-- limits
-- limsup and liminf
-- maxima and minima
-- mean value theorem for integrals
-- multivariable integration
-- numerical integration with error estimation
-- open and closed sets
-- order axioms
-- partial derivatives
-- radius of convergence
-- Riemann integral
-- sequences and series of functions
-- series
-- spaces of functions
-- Stone--Weierstrass theorem
-- supremum and infimum
-- Taylor expansion in several variables
-- Taylor expansion with remainder
-- the derivative
-- the derivative as a linear map
-- the mean value theorem
-- topology of $\RR^n$ and metric spaces; properties of continuous functions
-- triangle inequalities
-- uniform continuity
-- uniform convergence and integration
-- uniform convergence and its relation to derivatives and integrals
-- Weierstrass $M$-test
+- [[real-analysis/accumulation-points|accumulation points]]
+- [[real-analysis/arzel-ascoli-theorem|Arzelà--Ascoli theorem]]
+- [[T-YKVFQ|Bolzano--Weierstrass theorem]]
+- [[real-analysis/boundary-points|boundary points]]
+- [[real-analysis/cauchy-sequences|Cauchy sequences]]
+- [[PR-X5D4Z|Cauchy--Schwarz inequality]]
+- [[real-analysis/change-of-variables-formula|change of variables formula]]
+- [[real-analysis/closure|closure]]
+- [[real-analysis/compactness|compactness]]
+- [[real-analysis/compactness-in-function-spaces|compactness in function spaces]]
+- [[real-analysis/completeness|completeness]]
+- [[real-analysis/connectedness|connectedness]]
+- [[real-analysis/undergraduate/continuity|continuity]]
+- [[real-analysis/contraction-maps|contraction maps]]
+- [[real-analysis/convergence-of-improper-integrals|convergence of improper integrals]]
+- [[real-analysis/convergence-of-sequences-of-numbers|convergence of sequences of numbers and functions]]
+- [[real-analysis/definition-of-differentiability-in-several|definition of differentiability in several variables (approximating linear transformation)]]
+- [[real-analysis/differentiation-under-the-integral-sign|differentiation under the integral sign]]
+- [[real-analysis/dinis-theorem|Dini's theorem]]
+- [[real-analysis/epsilon-delta-arguments|epsilon-delta arguments]]
+- [[real-analysis/equality-of-mixed-partials|equality of mixed partials]]
+- [[real-analysis/equicontinuity|equicontinuity]]
+- [[real-analysis/existence-and-uniqueness-theorems-for-solutions|existence and uniqueness theorems for solutions of ordinary differential equations]]
+- [[real-analysis/fixed-point-theory|fixed point theory]]
+- [[real-analysis/fourier-series|Fourier series]]
+- [[real-analysis/fundamental-theorem-of-calculus|fundamental theorem of calculus]]
+- [[T-QPTHZ|Heine--Borel theorem]]
+- [[T-TUXBP|implicit function theorem]]
+- [[real-analysis/interior-points|interior points]]
+- [[T-RA-WORKSHOP-D4-3-4|intermediate value theorem]]
+- [[T-XECJ3|inverse function theorem]]
+- [[real-analysis/least-upper-bound-property|least upper bound property of $\RR$]]
+- [[real-analysis/limit-points|limit points]]
+- [[real-analysis/limits|limits]]
+- [[real-analysis/limsup-and-liminf|limsup and liminf]]
+- [[T-RA-WORKSHOP-D6-5-5|mean value theorem for integrals]]
+- [[real-analysis/multivariable-integration|multivariable integration]]
+- [[real-analysis/numerical-integration-with-error-estimation|numerical integration with error estimation]]
+- [[real-analysis/open-and-closed-sets|open and closed sets]]
+- [[real-analysis/order-axioms|order axioms]]
+- [[real-analysis/partial-derivatives|partial derivatives]]
+- [[real-analysis/radius-of-convergence|radius of convergence]]
+- [[real-analysis/riemann-integral|Riemann integral]]
+- [[real-analysis/sequences-and-series-of-functions|sequences and series of functions]]
+- [[real-analysis/series|series]]
+- [[real-analysis/spaces-of-functions|spaces of functions]]
+- [[T-RA-WORKSHOP-D7-6-7|Stone--Weierstrass theorem]]
+- [[real-analysis/supremum-and-infimum|supremum and infimum]]
+- [[real-analysis/taylor-expansion-in-several-variables|Taylor expansion in several variables]]
+- [[real-analysis/taylor-expansion-with-remainder|Taylor expansion with remainder]]
+- [[real-analysis/the-derivative|the derivative]]
+- [[real-analysis/the-derivative-as-a-linear-map|the derivative as a linear map]]
+- [[real-analysis/the-mean-value-theorem|the mean value theorem]]
+- [[real-analysis/topology-of-and-metric-spaces-properties|topology of $\RR^n$ and metric spaces; properties of continuous functions]]
+- [[real-analysis/triangle-inequalities|triangle inequalities]]
+- [[real-analysis/uniform-continuity|uniform continuity]]
+- [[real-analysis/uniform-convergence-and-integration|uniform convergence and integration]]
+- [[real-analysis/uniform-convergence-and-its-relation|uniform convergence and its relation to derivatives and integrals]]
+- [[real-analysis/weierstrass-test|Weierstrass $M$-test]]
 
 ## Complex analysis (Ahlfors)
 
-- analytic functions
-- analyticity of limit functions
-- argument principle
-- basic properties of harmonic functions in the plane
-- basic properties of the complex number system
-- Cauchy--Riemann equations
-- Cauchy's integral formula
-- Cauchy's theorem
-- classification of isolated singularities, including a singularity at $\infty$
-- complex roots
-- conformal equivalences of the unit disk with itself and with the upper half-plane
-- conformality
-- elementary functions and their basic properties
-- evaluation of definite integrals
-- exponential function
-- harmonic conjugates
-- isolation of zeros
-- Liouville's theorem
-- logarithm function
-- mapping properties of linear fractional transformations
-- maximum principle
-- residue theorem
-- mean value property
-- Morera's theorem
-- power series and Laurent series
-- rational functions
-- Rouché's theorem
-- Schwarz lemma
-- trigonometric functions
-- definition of holomorphic functions, the Cauchy integral formula, power series representations of holomorphic functions, radius of convergence, meromorphic functions, residues
+- [[complex-analysis/analytic-functions|analytic functions]]
+- [[complex-analysis/analyticity-of-limit-functions|analyticity of limit functions]]
+- [[complex-analysis/argument-principle|argument principle]]
+- [[complex-analysis/basic-properties-of-harmonic-functions|basic properties of harmonic functions in the plane]]
+- [[complex-analysis/basic-properties-of-the-complex-number-system|basic properties of the complex number system]]
+- [[complex-analysis/cauchy-riemann-equations|Cauchy--Riemann equations]]
+- [[complex-analysis/cauchys-integral-formula|Cauchy's integral formula]]
+- [[complex-analysis/cauchy-theory/cauchys-theorem|Cauchy's theorem]]
+- [[complex-analysis/classification-of-isolated-singularities|classification of isolated singularities, including a singularity at $\infty$]]
+- [[complex-analysis/complex-roots|complex roots]]
+- [[complex-analysis/conformal-equivalences-of-the-unit-disk|conformal equivalences of the unit disk with itself and with the upper half-plane]]
+- [[complex-analysis/conformality|conformality]]
+- [[complex-analysis/elementary-functions-and-their-basic-properties|elementary functions and their basic properties]]
+- [[complex-analysis/evaluation-of-definite-integrals|evaluation of definite integrals]]
+- [[complex-analysis/exponential-function|exponential function]]
+- [[complex-analysis/harmonic-conjugates|harmonic conjugates]]
+- [[complex-analysis/isolation-of-zeros|isolation of zeros]]
+- [[T-QHIHJ|Liouville's theorem]]
+- [[complex-analysis/logarithm-function|logarithm function]]
+- [[complex-analysis/mapping-properties-of-linear-fractional|mapping properties of linear fractional transformations]]
+- [[T-BYNL5|maximum principle]]
+- [[T-HRPNO|residue theorem]]
+- [[complex-analysis/mean-value-property|mean value property]]
+- [[T-LHSMY|Morera's theorem]]
+- [[complex-analysis/power-series-and-laurent-series|power series and Laurent series]]
+- [[complex-analysis/rational-functions|rational functions]]
+- [[complex-analysis/counting-zeros/rouches-theorem|Rouché's theorem]]
+- [[T-DAETF|Schwarz lemma]]
+- [[complex-analysis/trigonometric-functions|trigonometric functions]]
+- [[complex-analysis/definition-of-holomorphic-functions-the-cauchy|definition of holomorphic functions, the Cauchy integral formula, power series representations of holomorphic functions, radius of convergence, meromorphic functions, residues]]
 
 ## Topology
 
-- open and closed sets, continuous functions; connectedness, compactness, the Hausdorff property, normality; metric spaces, $\RR^n$, the Heine--Borel theorem
+- [[topology/open-and-closed-sets-continuous-functions|open and closed sets, continuous functions; connectedness, compactness, the Hausdorff property, normality; metric spaces, $\RR^n$, the Heine--Borel theorem]]

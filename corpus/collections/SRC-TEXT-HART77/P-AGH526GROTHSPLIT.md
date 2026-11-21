@@ -28,6 +28,28 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 5.2.6, printed p. 103,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.2.6, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    H^1(P^1, E(n)) = 0 for n large and H^0(P^1, E(-n)) = 0 for n
+    large by Serre duality, the resulting 0 -> O(i) -> E -> F -> 0, and
+    Ext^1(O(n_j), O(i)) = H^1(P^1, O(i - n_j)) = 0 for n_j <= i. Not checked: Yang's Solutions outside printed pp. 100-107; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.2.6 at printed
+    p. 103 beside Egbert's entry. No step, statement or hypothesis of
+    the card changes.
 ---
 
 ::: {.problem}
@@ -225,5 +247,9 @@ $\PP^1$ is a direct sum of invertible sheaves.
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.6, PDF pp. 264--265: after Potier, he takes $i$ largest with $H^0(\mathcal E(-i))\neq0$, splits off $\OO(i)$ using $0\to\OO(i)\to\mathcal E\to\mathcal F\to0$ with $\mathcal F$ locally free, splits $\mathcal F$ by induction, has $j\le i$ for every summand because otherwise $\mathcal E(-i-1)$ would have a section, and splits the sequence because $H^1(X,\mathcal H om(\mathcal F,\OO(i)))=0$. That is steps [](#s1){.pf-ref} to [](#s5){.pf-ref}, with the saturation of the section's image and the Ext computation written out and Hartshorne III.5.1 in place of his Weibel 10.1 and III Ex. 6.1. Matches.
+The exercise is V.2.6 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is its text, the printed hint including.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.6: after Potier, he takes $i$ largest with $H^0(\mathcal E(-i))\neq0$, splits off $\OO(i)$ using $0\to\OO(i)\to\mathcal E\to\mathcal F\to0$ with $\mathcal F$ locally free, splits $\mathcal F$ by induction, has $j\le i$ for every summand because otherwise $\mathcal E(-i-1)$ would have a section, and splits the sequence because $H^1(X,\mathcal H om(\mathcal F,\OO(i)))=0$. That is steps [](#s1){.pf-ref} to [](#s5){.pf-ref}, with the saturation of the section's image and the Ext computation written out and Hartshorne III.5.1 in place of his Weibel 10.1 and III Ex. 6.1. Matches.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.2.6, proves the splitting by induction on the rank: (III, 8.8) gives $H^1(\PP^1,\mathcal E(n))=0$ for $n\gg0$ and Serre duality $H^0(\PP^1,\mathcal E(-n))=0$, so there is a largest $i$ with a section of $\mathcal E(-i)$, which gives $0\to\OO(i)\to\mathcal E\to\mathcal F\to0$ with $\mathcal F$ locally free of rank $r-1$; if $\mathcal F=\bigoplus_{j\le r-1}\OO(n_j)$, any $n_j>i$ would give a section of $\mathcal E(-n_j)$ and contradict the maximality of $i$, so all $n_j\le i$, and $\operatorname{Ext}^1(\OO(n_j),\OO(i))=H^1(\PP^1,\OO(i-n_j))=0$ makes the extension split. That is the printed hint's induction with the maximal-degree subinvertible sheaf replaced by the largest twist carrying a section.
 :::

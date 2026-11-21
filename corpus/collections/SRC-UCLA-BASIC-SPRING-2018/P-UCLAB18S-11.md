@@ -6,7 +6,9 @@ title: An isometry of a compact metric space is onto
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Compactness
+  - Metric Spaces
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP03-08
 kind: problem
 title: Are maps from a simply connected space to $S^1$ nullhomotopic?
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Simply Connected, Fundamental Group]}
 relations: []
 review: draft
 audit:

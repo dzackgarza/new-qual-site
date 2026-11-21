@@ -16,6 +16,14 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: "Re-transcribed from Chapter 6 review Question 1 in assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md (Mistral OCR), compared with assets/attachments/chapter-6_extracted.md, replacing the earlier paraphrased transcription."
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`: the statement is question 1 of the Chapter 6
+    Review Questions, printed on PDF p. 264, and its printed words are the card's. The chapter,
+    the question number and the page are now named in the solution's opening sentence. Not checked
+    in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -29,6 +37,7 @@ There is only one integer, $x$, between $100$ and $200$ such that integer pair $
 :::
 
 ::: {.solution}
+This is question 1 of the Chapter 6 Review Questions of *Cracking the GRE Mathematics Subject Test*, retained in this repository as `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`, on PDF p. 264; the statement below is its wording.
 
 ::: pf
 

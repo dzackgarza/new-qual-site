@@ -6,7 +6,9 @@ title: Order of a group with a subgroup of order 7 and no element of order 2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Cosets and Lagrange
+  - Groups
 relations: []
 review: draft
 audit:

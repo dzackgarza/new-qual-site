@@ -6,7 +6,9 @@ title: Zeros of $z^7+z^3+\frac{1}{16}$ in the disk of radius $\frac12$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 audit:

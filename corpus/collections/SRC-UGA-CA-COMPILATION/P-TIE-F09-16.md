@@ -6,7 +6,9 @@ title: Goursat's theorem with a bounded isolated singularity
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Singularities
+  - Removable Singularities
 relations: []
 review: draft
 audit:

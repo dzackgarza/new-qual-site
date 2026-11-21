@@ -33,7 +33,15 @@ audit:
     commute elementwise and multiply to G; and the list is C_45 and
     C_3 × C_3 × C_5, the only groups of order 9 being C_9 and C_3 × C_3. No
     defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 7, Sylow problem 2, with its
+    three bracketed instructions. $n_5\mid9$ and $\equiv1\pmod5$ force $n_5=1$; $n_3\mid5$ and
+    $\equiv1\pmod3$ force $n_3=1$; the two normal Sylow subgroups of coprime order commute
+    elementwise and multiply to $G$; and $|H|=9$ gives $C_9$ or $C_3\times C_3$, so the groups
+    are $C_{45}$ and $C_3\times C_3\times C_5$. No defect.
 ---
 
 ::: {.exercise}

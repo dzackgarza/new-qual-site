@@ -15,6 +15,17 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Linear Algebra, Problem 34, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked, including the sign convention. Writing
+    F(lambda) = e^{-lambda B} A e^{lambda B}, one has F'(lambda) = e^{-lambda B}[A,B]e^{lambda B}
+    and, by induction, F^{(n)}(0) = [A,B] with B adjoined n times on the right; Taylor at 0 gives
+    sum lambda^n/n! [A,B]^(n). The sign is the one worth checking and it is right: the minus sign in
+    e^{-lambda B} cancels against ad_B(A) = [B,A] = -[A,B], so the first-order term is +lambda[A,B]
+    rather than -lambda. The first-order box and the all-orders box are both consistent with this.
+    Not claimed: convergence for arbitrary unbounded operators, where the series is formal.
 ---
 
 ::: {.problem}
@@ -93,7 +104,7 @@ Substitute $\lambda=0$ into the definitions in step [](#s1-1){.pf-ref}.
 
 ::: {.pf-step #s1-3}
 
-Therefore, to first order,
+Part (a): therefore, to first order,
 $$
 \boxed{
 e^{-\lambda B}Ae^{\lambda B}
@@ -106,19 +117,6 @@ $$
 ::: pf-proof
 
 Apply the Taylor expansion of $F$ at $\lambda=0$ using step [](#s1-2){.pf-ref}.
-
-:::
-
-:::
-
-::: {.pf-step #s1-4}
-
-Part (a) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -243,7 +241,7 @@ Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} give the expansion to arbitr
 
 ::: pf-qed
 
-Steps [](#s1-4){.pf-ref} and [](#s1-9){.pf-ref} establish parts (a) and (b), respectively.
+Steps [](#s1-3){.pf-ref} and [](#s1-9){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 

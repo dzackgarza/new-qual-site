@@ -5,7 +5,9 @@ kind: problem
 title: A linear map whose every vector is an eigenvector is scalar
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Transformations
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

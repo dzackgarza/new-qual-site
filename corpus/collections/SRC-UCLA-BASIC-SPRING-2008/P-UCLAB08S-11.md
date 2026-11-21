@@ -6,7 +6,8 @@ title: A finite-order complex matrix is diagonalizable
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Diagonalization
 relations: []
 review: draft
 audit:

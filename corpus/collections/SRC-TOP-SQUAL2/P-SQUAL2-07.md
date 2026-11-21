@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-SQUAL2-07
 kind: problem
 title: A $\Delta$-complex structure and homology of $S^2\vee T^2$
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Delta Complexes, Simplicial Homology, Wedge Sums]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP13-II4
 kind: problem
 title: Simplicial homology of $S^1$, the torus, and the punctured torus
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Simplicial Homology]}
 relations: []
 review: draft
 audit:

@@ -49,6 +49,45 @@ audit:
     closed-slice argument for the normal case (the product is T1, so the slice is an intersection of
     preimages of closed points, hence closed, and a closed subspace of a normal space is normal), and
     this exercise stays in the COMPLAINTS.md entry for the normal case.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked the slice imbedding (Theorem 18.4), inheritance
+    of the Hausdorff and regular properties by a subspace (Theorem 31.2), and the normal
+    case: the slice is closed because a normal space is T_1 and a closed subspace of a
+    normal space is normal (Exercise 32.1). dbFin, Section 32 Problem 2 Solution, as the
+    earlier audit note records; Munkres §32 Exercise 2, printed p. 205. The printed
+    statement needed no repair.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against Munkres, Topology (2000), Section 32 Exercise 2, printed p. 205, and
+    repaired in two places. (i) The imbedding step cited Theorem 18.4 twice. That theorem is
+    "Maps into products" for two factors, $f:A\to X\times Y$, and the map here goes into
+    $\prod_{\beta}X_{\beta}$ over an arbitrary index set; the statement the step uses is
+    Theorem 19.6, printed p. 117, whose proof also records that the projections $\pi_{\beta}$ are
+    continuous, which is the second of the two citations. Both now name Theorem 19.6. (ii) The
+    normal case concluded that each $\{a_{\beta}\}$ is closed in $X_{\beta}$ from "$X$ is
+    normal, hence $T_{1}$", which says nothing about the factors; what supplies it is the
+    Hausdorff case already proved on this card, the product being Hausdorff, so the step now cites
+    the earlier step. Re-read and unchanged: the slice $S$ is closed as
+    $\bigcap_{\beta\ne\alpha}\pi_{\beta}^{-1}(\{a_{\beta}\})$ over an arbitrary index set,
+    which is closed being an intersection of closed sets; a closed subspace of a normal space is
+    normal, which is Exercise 32.1, printed p. 205, read on the page and exactly that sentence;
+    subspaces of Hausdorff and of regular spaces are Hausdorff and regular by Theorem 31.2,
+    printed p. 197, whose (a) and (b) say so; and the nonemptiness of the factors is what supplies
+    the basepoints $a_{\beta}$. Also checked and kept: dbFin's normal step, projecting arbitrary
+    disjoint open sets of the product, is not a proof, since projections of disjoint open sets of a
+    product can meet -- the closed-slice argument is the card's and is the one that works. Page
+    note: the folios 205, 205, 197 and 117 above were read from a copy of
+    `tmp/sources/munkres-2000-topology.md` carrying `<!-- page pdf=N folio=M -->` markers at every
+    page, which existed in the checkout during this pass and was replaced afterwards by the
+    version carrying only the three page-range markers; the agreement of Exercise 32.2 and
+    Exercise 32.1 with printed p. 205, of Theorem 31.2 with p. 197 and of Theorem 19.6 with p. 117
+    is therefore an observation of this pass that a later reader cannot repeat from the current
+    file.
 ---
 
 ::: {.exercise}
@@ -58,19 +97,69 @@ Show that if $\prod X_\alpha$ is Hausdorff, or regular, or normal, then so is $X
 :::
 
 ::: {.solution}
-Fix an index $\alpha$, and choose basepoints $a_\beta\in X_\beta$ for every $\beta\ne\alpha$. The map
-$$
-i:X_\alpha\to\prod_\beta X_\beta,
-\qquad
- i(x)_\alpha=x,\quad i(x)_\beta=a_\beta\ (\beta\ne\alpha)
-$$
-is a homeomorphism from $X_\alpha$ onto the corresponding slice $S$.
+The published solution is reported on this card's earlier audit note from **dbFin, "Section 32: Problem 2 Solution"** (`tmp/sources/dbfin/section-32-normal-spaces/problem-2-solution.txt`); the slice argument below is the standard one and is checked against Munkres §32 Exercise 2, Theorem 31.2 and Exercise 32.1.
 
-Hausdorffness and regularity are hereditary to subspaces, so if the product is Hausdorff or regular, then $S$, hence $X_\alpha$, has the same property.
+Fix an index $\alpha$ and choose a basepoint $a_{\beta}\in X_{\beta}$ for every $\beta\ne\alpha$; the spaces are nonempty.
 
-If the product is normal, then it is $T_1$, so every singleton $\{a_\beta\}$ is closed. Hence
+::: pf
+
+::: {.pf-step #slice}
+The map $i:X_{\alpha}\to\prod_{\beta}X_{\beta}$, with $i(x)_{\alpha}=x$ and $i(x)_{\beta}=a_{\beta}$ for $\beta\ne\alpha$, is an imbedding onto the slice $S=i(X_{\alpha})$.
+
+::: pf-proof
+$i$ is injective, since $x$ is recovered as the $\alpha$-coordinate of $i(x)$. It is continuous because each coordinate function $\pi_{\beta}\circ i$ is either the identity of $X_{\alpha}$ or a constant map, and a map into a product with the product topology is continuous as soon as all its coordinate functions are: that is Theorem 19.6, and its two-factor case, Theorem 18.4, does not cover an arbitrary index set. Its inverse on $S$ is the restriction of $\pi_{\alpha}$, which is continuous, the projections of a product being continuous, as the proof of the same theorem records; so $i$ is a homeomorphism onto $S$ and an imbedding.
+:::
+
+:::
+
+::: {.pf-step #hausdorff-regular}
+If the product is Hausdorff, or regular, then so is $X_{\alpha}$.
+
+::: pf-proof
+$S$ is a subspace of the product, and subspaces of Hausdorff spaces are Hausdorff and subspaces of regular spaces are regular (Theorem 31.2). Since $X_{\alpha}$ is homeomorphic with $S$ by step [](#slice){.pf-ref}, it has the same property.
+:::
+
+:::
+
+::: {.pf-step #normal}
+If the product is normal, then so is $X_{\alpha}$.
+
+:::: pf-proof
+
+::: {.pf-step #slice-closed}
+$S$ is closed in the product.
+
+::: pf-proof
+A normal space is $T_{1}$ and hence Hausdorff, and by step [](#hausdorff-regular){.pf-ref} each factor $X_{\beta}$ is Hausdorff as well, so each singleton $\{a_{\beta}\}$ is closed in $X_{\beta}$. Then
 $$
-S=\bigcap_{\beta\ne\alpha}\pi_\beta^{-1}(\{a_\beta\})
+S=\bigcap_{\beta\ne\alpha}\pi_{\beta}^{-1}\big(\{a_{\beta}\}\big)
 $$
-is closed in the product. Closed subspaces of normal spaces are normal. Therefore $X_\alpha$ is normal as well.
+is an intersection of preimages of closed sets under the continuous maps $\pi_{\beta}$, hence closed.
+:::
+
+:::
+
+::: {.pf-step}
+$X_{\alpha}$ is normal.
+
+::: pf-proof
+A closed subspace of a normal space is normal (Exercise 32.1), so $S$ is normal; by step [](#slice){.pf-ref} $X_{\alpha}$ is homeomorphic with $S$, hence normal.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step}
+The property passes to every factor.
+
+::: pf-proof
+Steps [](#hausdorff-regular){.pf-ref} and [](#normal){.pf-ref} cover the three cases, and $\alpha$ was arbitrary.
+:::
+
+:::
+
+:::
 :::

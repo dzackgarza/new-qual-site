@@ -51,7 +51,7 @@ Show that if $G$ is abelian, so is $\overline{G}$.
 
 ::: {.solution}
 
-The argument is that of Tsemo Aristide, answer 1527797 (https://math.stackexchange.com/a/1527797), posted 2015-11-13 to Math Stack Exchange question 1527760, "Covering space of an abelian topological group is abelian if the covering map is a homomorphism" (https://math.stackexchange.com/questions/1527760, asked by Empiromancer on the same day), in three sentences: the commutator map $m:\overline G\times\overline G\to\overline G$ has image in $p^{-1}(e)$, which is discrete, and since $\overline G$ is connected its image is connected, hence the identity. The steps below write that argument out, using the path connectedness that the chapter's convention gives (printed p. 477) in place of connectedness, so that the path argument replaces "the image of a connected set is connected"; the discreteness of the fibre, the identification of $p\circ\phi$ with the commutator in $G$, and the conclusion are the answer's.
+The argument is that of Tsemo Aristide, answer 1527797 (https://math.stackexchange.com/a/1527797), posted 2015-11-13 to Math Stack Exchange question 1527760, "Covering space of an abelian topological group is abelian if the covering map is a homomorphism" (https://math.stackexchange.com/questions/1527760, asked by Empiromancer on the same day), in three sentences: the commutator map $m:\overline G\times\overline G\to\overline G$ has image in $p^{-1}(e)$, which is discrete, and since $\overline G$ is connected its image is connected, hence the identity. The steps below write that argument out, using the path connectedness that the Convention of Chapter 13 gives in place of connectedness, so that the path argument replaces "the image of a connected set is connected"; the discreteness of the fibre, the identification of $p\circ\phi$ with the commutator in $G$, and the conclusion are the answer's.
 
 ::: pf
 
@@ -65,7 +65,7 @@ is continuous.
 
 ::: {.pf-proof}
 
-Multiplication $\overline G\times\overline G\to\overline G$ and inversion $\overline G\to\overline G$ are continuous by the definition of a topological group (supplementary exercises of §22, printed p. 145), and a composite of continuous maps is continuous.
+Multiplication $\overline G\times\overline G\to\overline G$ and inversion $\overline G\to\overline G$ are continuous by the definition of a topological group (supplementary exercises of §22), and a composite of continuous maps is continuous.
 
 :::
 
@@ -83,7 +83,7 @@ Every point of $p^{-1}(e)$ is isolated in $p^{-1}(e)$.
 
 ::: {.pf-proof}
 
-Since $p$ is a covering map, $e$ has an open neighbourhood $U$ evenly covered by $p$ (Definition of a covering map, printed p. 336): $p^{-1}(U)$ is the disjoint union of open slices $V_\alpha$, each mapped homeomorphically onto $U$ by $p$. A slice $V_\alpha$ meeting $p^{-1}(e)$ meets it in exactly one point, because $p\restrict_{V_\alpha}$ is injective, so $V_\alpha$ is an open neighbourhood of that point in $\overline G$ meeting $p^{-1}(e)$ in that point alone.
+Since $p$ is a covering map, $e$ has an open neighbourhood $U$ evenly covered by $p$ (Definition of a covering map, §53): $p^{-1}(U)$ is the disjoint union of open slices $V_\alpha$, each mapped homeomorphically onto $U$ by $p$. A slice $V_\alpha$ meeting $p^{-1}(e)$ meets it in exactly one point, because $p\restrict_{V_\alpha}$ is injective, so $V_\alpha$ is an open neighbourhood of that point in $\overline G$ meeting $p^{-1}(e)$ in that point alone.
 
 :::
 
@@ -95,7 +95,7 @@ $p(\phi(x,y))=e$ for all $x,y\in\overline G$.
 
 ::: {.pf-proof}
 
-Because $p$ is a homomorphism (p. 330, definition of homomorphism),
+Because $p$ is a homomorphism (§52, definition of homomorphism),
 $$
 p(\phi(x,y))=p(x)p(y)p(x)^{-1}p(y)^{-1}=[p(x),p(y)],
 $$
@@ -121,7 +121,7 @@ $\overline G\times\overline G$ is path connected.
 
 ::: {.pf-proof}
 
-By the Convention of Chapter 13 (printed p. 477), $\overline G$ is path connected. Given points $(x,y)$ and $(x',y')$ of $\overline G\times\overline G$, choose paths $\alpha$ from $x$ to $x'$ and $\beta$ from $y$ to $y'$; then $t\mapsto(\alpha(t),\beta(t))$ is a path from $(x,y)$ to $(x',y')$, because a map into a product is continuous when its coordinate functions are.
+By the Convention of Chapter 13 , $\overline G$ is path connected. Given points $(x,y)$ and $(x',y')$ of $\overline G\times\overline G$, choose paths $\alpha$ from $x$ to $x'$ and $\beta$ from $y$ to $y'$; then $t\mapsto(\alpha(t),\beta(t))$ is a path from $(x,y)$ to $(x',y')$, because a map into a product is continuous when its coordinate functions are.
 
 :::
 
@@ -133,7 +133,7 @@ A path in a discrete space is constant.
 
 ::: {.pf-proof}
 
-Let $\gamma:[0,1]\to D$ be a path with $D$ discrete. Its image is connected, being the image of the connected space $[0,1]$ (Theorem 24.1, printed p. 153) under a continuous map (Theorem 23.5, printed p. 150). A subspace of a discrete space with more than one point is a separation of itself into two nonempty open singletons, so it is not connected (definition of connectedness, §23); hence $\gamma([0,1])$ is a single point.
+Let $\gamma:[0,1]\to D$ be a path with $D$ discrete. Its image is connected, being the image of the connected space $[0,1]$ (Theorem 24.1) under a continuous map (Theorem 23.5). A subspace of a discrete space with more than one point is a separation of itself into two nonempty open singletons, so it is not connected (definition of connectedness, §23); hence $\gamma([0,1])$ is a single point.
 
 :::
 

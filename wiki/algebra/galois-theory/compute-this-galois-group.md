@@ -11,8 +11,6 @@ topics:
 Throughout, $f \in \QQ[x]$ is separable of degree $n$ with roots $r_1,\ldots,r_n$, and $G = \Gal(\SF(f)/\QQ)$, which acts faithfully on the roots and so embeds in $S_n$.
 The group $G$ is determined by combining upper bounds (the transitive subgroups of $S_n$, the discriminant) with elements exhibited in $G$ (cycle types from reduction modulo primes, complex conjugation).
 
-Galois theory exercises with solutions: [chapter 4](https://feog.github.io/chap4.pdf).
-
 ## Degree bounds
 
 - For each root $r_i$, $[\QQ(r_i):\QQ]$ divides $[\SF(f):\QQ]$.
@@ -21,25 +19,13 @@ Galois theory exercises with solutions: [chapter 4](https://feog.github.io/chap4
 
 ## Transitive subgroups of $S_n$
 
-::: {.fact title="Transitive subgroups of $S_n$ for $n\leq 5$"}
-Write $C_n$ for the cyclic group of order $n$.
+The classification of the transitive subgroups of $S_n$ is known up to conjugacy for $n\leq5$, and the two degrees a qualifying problem asks about are $3$ and $4$.
 
-| $n$ | Transitive subgroups of $S_n$ up to conjugacy | Orders | Nonabelian |
-| --- | --- | --- | --- |
-| $1$ | $1$ | $1$ | none |
-| $2$ | $S_2 \cong C_2$ | $2$ | none |
-| $3$ | $S_3\cong D_3$, $A_3 \cong C_3$ | $6$, $3$ | $S_3$ |
-| $4$ | $S_4$, $A_4$, $D_4$, $C_4$, $C_2^2$ | $24$, $12$, $8$, $4$, $4$ | $S_4$, $A_4$, $D_4$ |
-| $5$ | $S_5$, $A_5$, $F_5\cong C_5\semidirect C_4$, $D_5$, $C_5$ | $120$, $60$, $20$, $10$, $5$ | $S_5$, $A_5$, $F_5$, $D_5$ |
+[[P-IFQ4C]]
 
-Here $\size{D_n} = 2n$, $\size{S_n} = n!$, $\size{A_n} = n!/2$, and $F_5$ has presentation $\generators{a,b \st a^5, b^4, ba\inverseof{b} = a^2}$.
+[[P-PDJ5S]]
 
-The quaternion group
-$$
-Q_{8}=\left\langle\alpha, \beta \mid \alpha^{4}=\beta^{4}=1, \alpha \beta \alpha=\beta, \beta^{2}=\alpha^{2}\right\rangle
-$$
-is a transitive subgroup of $S_8$ via its regular action, and it is not isomorphic to a subgroup of $S_m$ for any $m<8$.
-:::
+The case $n=5$ runs the same way: a subgroup of $S_5$ of order divisible by $5$ contains a $5$-cycle, and the transitive subgroups are $S_5$, $A_5$, the Frobenius group $F_5$ of order $20$, $D_5$ and $C_5$, with $F_5=\generators{a,b \st a^5,\ b^4,\ ba\inverseof{b}=a^2}$.
 
 ## The discriminant
 
@@ -51,13 +37,9 @@ $$
 G \subseteq A_n \iff \sqrt{\Delta_f} \in \QQ.
 $$
 
-::: {.remark title="Formulas"}
-- For $f = ax^2+bx+c$, $\Delta = b^2-4ac$.
-
-- For $f = ax^3+bx^2+cx+d$, $\Delta = b^2c^2 - 4ac^3 - 4b^3d - 27a^2d^2 + 18abcd$.
-  For $a=1$, the substitution $x = t - b/3$ gives $t^3+pt+q$, with the same discriminant $\Delta = -4p^3-27q^2$.
-
-- $\Delta_f = 0$ if and only if $f$ has a repeated root.
+::: {.example title="Discriminants in low degree"}
+The definition gives $\Delta = b^2-4ac$ for $f = ax^2+bx+c$ and $\Delta = b^2c^2 - 4ac^3 - 4b^3d - 27a^2d^2 + 18abcd$ for $f = ax^3+bx^2+cx+d$.
+For $a=1$ the substitution $x = t-b/3$ gives $t^3+pt+q$ with the same discriminant, $\Delta = -4p^3-27q^2$.
 :::
 
 ## Cycle types from reduction modulo $p$
@@ -67,8 +49,6 @@ $$
 ::: {.warnings}
 Dedekind's theorem applies only to $f\in\ZZ[x]$ and to primes $p$ not dividing the leading coefficient for which $f \bmod p$ is squarefree.
 :::
-
-For such a prime $p$, if $f \bmod p$ factors into irreducibles of degrees $d_1,\ldots,d_k$, then $G$ contains an element of cycle type $(d_1,\ldots,d_k)$.
 
 ::: {.example title="A transposition and a $5$-cycle"}
 Let $f$ be irreducible of degree $5$ with exactly two nonreal roots.
@@ -102,27 +82,19 @@ Similarly, $x^7-x-1$ is irreducible modulo $2$ and factors modulo $3$ into irred
 
 ## Distinguishing the remaining candidates
 
-::: {.remark title="Criteria for $n = 4$ and $n=5$"}
-$n=4$:
+For $n=4$, $C_4$ contains a $4$-cycle and $C_2^2$ does not, while both contain elements of type $(2,2)$; $A_4$ contains neither a transposition nor a $4$-cycle, so exhibiting either one excludes it, and the discriminant separates $S_4$ from $A_4$.
 
-- $C_4$ contains a $4$-cycle and $C_2^2$ does not; both contain elements of type $(2,2)$.
+For $n=5$, a transposition together with a $5$-cycle generates $S_5$, and in general a transposition $(a\,b)$ together with an $n$-cycle generates $S_n$ exactly when $\gcd(b-a,n)=1$.
 
-- $A_4$ contains no transposition and no $4$-cycle, so either one in $G$ excludes $A_4$; the discriminant separates $S_4$ from $A_4$.
+[[P-C2K6O]]
 
-$n=5$ and general $n$:
-
-- A subgroup of $S_5$ containing a transposition and a $5$-cycle is $S_5$.
-
-- $S_n = \generators{(a,b), (1,2,\ldots,n)}$ if and only if $\gcd(b-a, n) = 1$.
-:::
+[[P-MQK32]]
 
 [[PR-5PI25]]
 
-::: {.remark title="Parity"}
-\envlist
+Parity is read off the cycle type, so a cycle type decides membership in $A_n$ without writing the permutation as a product of transpositions.
 
-- A permutation lies in $A_n$ if and only if it has an even number of cycles of even length.
-:::
+[[FD-GHDF2]]
 
 ::: {.fact title="Cycle types in the transitive subgroups of $S_4$"}
 Number of elements of each cycle type in each transitive subgroup of $S_4$, with $V=\theset{e,(12)(34),(13)(24),(14)(23)}$:
@@ -137,30 +109,13 @@ Number of elements of each cycle type in each transitive subgroup of $S_4$, with
 | Order | $24$ | $12$ | $8$ | $4$ | $4$ |
 :::
 
-::: {.fact title="Generating sets"}
-Generating sets for $S_n$, $A_n$, $\SL_2(\ZZ)$ and $\GL_n(\RR)$, from [Keith Conrad, Generating sets](https://kconrad.math.uconn.edu/blurbs/grouptheory/genset.pdf):
+[[P-ZFVEO]]
 
-| Group | Generating set | Size |
-| --- | --- | --- |
-| $S_n$, $n\geq2$ | all transpositions $(i\,j)$ | $n(n-1)/2$ |
-| | $(1\,2),(1\,3),\ldots,(1\,n)$ | $n-1$ |
-| | $(1\,2),(2\,3),\ldots,(n-1\;n)$ | $n-1$ |
-| | $(1\,2),(1\,2\,\cdots\,n)$ | $2$ |
-| | $(1\,2),(2\,3\,\cdots\,n)$, $n\geq3$ | $2$ |
-| | $(a\,b),(1\,2\,\cdots\,n)$ with $\gcd(b-a,n)=1$ | $2$ |
-| $A_n$, $n\geq3$ | all $3$-cycles | $n(n-1)(n-2)/3$ |
-| | $(1\,i\,j)$ | $(n-1)(n-2)$ |
-| | $(1\,2\,i)$ | $n-2$ |
-| | $(i\;i+1\;i+2)$ | $n-2$ |
-| | $(1\,2\,3),(1\,2\,\cdots\,n)$, $n\geq4$ odd | $2$ |
-| | $(1\,2\,3),(2\,3\,\cdots\,n)$, $n\geq4$ even | $2$ |
-| $\SL_2(\ZZ)$ | $\begin{pmatrix}0&-1\\1&0\end{pmatrix},\begin{pmatrix}1&1\\0&1\end{pmatrix}$ | $2$ |
-| $\GL_n(\RR)$, $\SL_n(\RR)$ | elementary matrices | infinite |
-:::
+[[PR-JY4PV]]
 
-## Structural facts
+## Constraints on the Galois group
 
-::: {.fact title="Structural facts"}
+::: {.fact title="Constraints from the factorization and the roots"}
 \envlist
 
 - If $f = f_1\cdots f_k$ with the $f_i$ irreducible, then $G$ permutes the roots of each $f_i$ among themselves, so $G$ embeds in $\prod_i\Gal(\SF(f_i)/\QQ)$.
@@ -172,16 +127,10 @@ Generating sets for $S_n$, $A_n$, $\SL_2(\ZZ)$ and $\GL_n(\RR)$, from [Keith Con
 
 - If every exponent in $f$ is even, the roots come in pairs $\pm r$, and $G$ permutes these pairs; for example, $x^4-5x^2+5$ has Galois group $C_4$.
 
-- For positive integers $a\neq b$, $\QQ(\zeta_a) = \QQ(\zeta_b)$ if and only if one of $a,b$ is odd and the other is twice it.
-
 - [[PR-RRTST|Rational root theorem]].
 
-Subgroup lattices of small groups: [Groups of small order](https://hobbes.la.asu.edu/groups/groups.html).
 :::
 
-::: {.remark title="Degrees and indices"}
-For a finite Galois extension $L/F$ with $G = \Gal(L/F)$ and an intermediate field $K$ corresponding to $H = \Gal(L/K)$,
-$$
-[L:K] = \size H, \qquad [K:F] = [G:H], \qquad [L:F] = \size G.
-$$
-:::
+The degree and index bookkeeping that turns a subgroup of $G=\Gal(L/F)$ into the degree of the corresponding intermediate field is part of the correspondence.
+
+[[T-NLPZY]]

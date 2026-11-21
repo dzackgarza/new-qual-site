@@ -5,7 +5,9 @@ kind: problem
 title: Rearrange the alternating harmonic series to any prescribed real sum
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Series of Numbers
+  - Convergence Tests
 relations: []
 review: draft
 audit:

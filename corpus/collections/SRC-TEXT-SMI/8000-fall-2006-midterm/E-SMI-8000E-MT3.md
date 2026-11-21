@@ -34,7 +34,16 @@ audit:
     standard existence argument and is sound. (b) is right: 360 = 2^3·3^2·5 gives
     p(3)p(2)p(1) = 6 classes, and the six groups are displayed explicitly. No
     defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 10, midterm 3(a),(b). The
+    invariant-factor form $M\cong R^r\oplus R/(d_1)\oplus\cdots\oplus R/(d_t)$ with
+    $d_1\mid\cdots\mid d_t$ nonunits and its elementary-divisor form are stated correctly;
+    the existence sketch (finite presentation, minimal-size pivot, termination at Smith normal
+    form, cokernel, determinantal-divisor uniqueness) is sound; and $360=2^3\cdot3^2\cdot5$
+    gives $p(3)p(2)p(1)=6$ groups, listed explicitly. No defect.
 ---
 
 ::: {.exercise}

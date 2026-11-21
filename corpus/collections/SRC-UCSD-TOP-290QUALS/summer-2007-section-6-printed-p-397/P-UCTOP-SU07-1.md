@@ -10,6 +10,16 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained compilation `assets/attachments/UCSD_290_Qualifying_Exams.pdf`, whose contents page gives the exam as item
+    397 of the printed sequence: the statement is Problem 1 of the Summer 2007 exam on printed
+    p. 397, and the printed words are the card's. The exam, the problem number and the page are
+    now named in the solution's opening sentence. Not checked in this pass: the computation,
+    which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -20,6 +30,7 @@ Compute the fundamental group of the resulting quotient space.
 :::
 
 ::: {.solution}
+This is Problem 1 of the Summer 2007 qualifying exam in the retained compilation `assets/attachments/UCSD_290_Qualifying_Exams.pdf`, and the statement below is its wording.
 
 ::: pf
 
@@ -83,7 +94,9 @@ $$
 $$
 
 ::: pf-proof
-This is the conclusion of step [](#boundary-simply-connected){.pf-ref}.
+
+Step [](#boundary-simply-connected){.pf-ref} shows the quotient is simply connected. A path-connected space is simply connected exactly when its fundamental group is trivial, so $\pi_1=1$.
+
 :::
 
 :::

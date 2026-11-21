@@ -11,6 +11,15 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded. The argument is Problem 5A, printed p. 2 of the packet, the packet the collection retains,
+    transcribed as the paragraph now at the head of the solution says; the card's addition is the
+    step structure and the details named there, and no claim of the problem changes. Checked: the
+    packet read in its text layer at the pages named, the card's steps compared with it, and
+    `qualc.authoring check` on the card. Not checked: no other card of the collection in this pass.
+- event: source-checked
   by: chatgpt
   date: 2026-09-12
   note: Checked against Problem 5A of the retained Berkeley Fall 2010 preliminary-exam solution packet f10solutions.pdf.
@@ -34,6 +43,8 @@ converges uniformly on every bounded interval in $\RR$.
 :::
 
 ::: {.solution}
+
+The argument is Problem 5A of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed pp. 1--2 of that file, transcribed: $(\sin x)/x$ extends continuously to $\RR$ and so is bounded on a bounded interval, which gives $\abs{\sin x}\le C\abs{x}$ there, and the summands are then bounded by $BC/n^2$, so the Weierstrass $M$-test applies. The card takes the stronger estimate $C=1$, which the packet records as a parenthetical remark ('with a little extra work one can show that $C=1$ works for all of $\RR$') and proves from $\abs{\sin t}\le\abs{t}$; the step structure is the card's.
 Let $I\subseteq\RR$ be a bounded interval.
 
 ::: pf

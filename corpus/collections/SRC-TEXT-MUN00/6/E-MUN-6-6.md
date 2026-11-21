@@ -41,19 +41,50 @@ audit:
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 6.6, printed pp. 78--79** (`tmp/sources/munkres-solutions-whitman.pdf`); the indicator-tuple bijection and the transfer along a bijection with a section are his.
 
-(a) For $S\subseteq A$, let $\chi_S(i)=1$ if $i\in S$, and let
-$\chi_S(i)=0$ otherwise. The map
-$$
-S\longmapsto(\chi_S(1),\ldots,\chi_S(n))
-$$
-from $\mathcal P(A)$ to $\{0,1\}^n$ is bijective. Its inverse sends a
-binary $n$-tuple $(x_1,\ldots,x_n)$ to $\{i\in A:x_i=1\}$.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 6.6** (`tmp/sources/munkres-solutions-whitman.pdf`); the indicator-tuple bijection and the transfer along a bijection with a section are his.
 
-(b) Any finite set $A$ has a bijection with $\{1,\ldots,n\}$ for some
-$n\ge0$. This induces a bijection of their power sets. By part (a),
-$\mathcal P(A)$ has $2^n$ elements, so it is finite. For $n=0$, the
-power set of the empty set is $\{\varnothing\}$, in agreement with
-$2^0=1$.
+::: pf
+
+::: {.pf-step #indicator}
+
+For $S\subseteq A$ the indicator tuple $(\chi_{S}(1),\dots,\chi_{S}(n))$, with $\chi_{S}(i)=1$ if $i\in S$ and $0$ otherwise, lies in $\{0,1\}^{n}$.
+
+::: pf-proof
+
+Each $\chi_{S}(i)$ is $0$ or $1$ by definition, and the tuple has one entry for each $i\in A=\{1,\dots,n\}$, so it is an element of the $n$-fold cartesian product $\{0,1\}^{n}$.
+
+:::
+
+:::
+
+::: {.pf-step #bijection}
+
+(a) $S\mapsto(\chi_{S}(1),\dots,\chi_{S}(n))$ is a bijection $\mathcal{P}(A)\to X^{n}$.
+
+::: pf-proof
+
+Its inverse candidate is $\Psi(x_{1},\dots,x_{n})=\{i\in A:x_{i}=1\}$. For $S\subseteq A$, $\Psi(\chi_{S})=\{i:i\in S\}=S$. For a tuple $x\in\{0,1\}^{n}$ and each $i$, the $i$-th entry of $\chi_{\Psi(x)}$ is $1$ exactly when $i\in\Psi(x)$, that is exactly when $x_{i}=1$, so $\chi_{\Psi(x)}=x$. A map with a two-sided inverse is a bijection.
+
+:::
+
+:::
+
+::: {.pf-step #finite}
+
+(b) If $A$ is finite then $\mathcal{P}(A)$ is finite.
+
+::: pf-proof
+
+A finite set $A$ admits a bijection $\varphi:A\to\{1,\dots,n\}$ for some $n\ge0$. Then $S\mapsto\varphi(S)$ is a bijection $\mathcal{P}(A)\to\mathcal{P}(\{1,\dots,n\})$ with inverse $T\mapsto\varphi^{-1}(T)$, since the two operations are mutually inverse on subsets. By step [](#bijection){.pf-ref}, applied for $n\ge1$, $\mathcal{P}(\{1,\dots,n\})$ is in bijection with the finite product $\{0,1\}^{n}$, which has $2^{n}$ elements; for $n=0$, $A=\varnothing$ and $\mathcal{P}(A)=\{\varnothing\}$ is a one-element, hence finite, set. A set in bijection with a finite set is finite, so
+$$
+\boxed{\mathcal{P}(A)\ \text{is finite whenever } A \text{ is, with } \cardinality{\mathcal{P}(A)}=2^{\cardinality{A}}.}
+$$
+
+:::
+
+:::
+
+:::
+
 :::

@@ -45,6 +45,17 @@ audit:
     establishes the same two statements with Theorem 17.2 and Theorem 18.1 (printed pp. 94, 104) and the product
     description of T^2 - C_1, and the citation records the located statement. Nothing else on the card was re-read
     in this pass.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. Both halves check out. For C_1 = S^1 x {y_0} the complement is
+    S^1 x (S^1 - {y_0}) which is homeomorphic to S^1 x (0,1), a product of connected spaces and hence
+    connected, so C_1 does not separate; for a small circle C_2 bounding a closed disk D inside a chart,
+    T^2 - C_2 is the disjoint union of the nonempty open sets Int D and T^2 - D, so it is disconnected
+    and C_2 separates. Checked that both sets in the second decomposition are nonempty and open in the
+    complement, which is what makes them a separation rather than just a covering, and that
+    S^1 x (0,1) is the complement exactly rather than only up to homotopy.
 ---
 
 ::: {.exercise}

@@ -51,6 +51,24 @@ audit:
     necessity direction uses Ex.10 and H_1 rank; the checked cup-product necessity on this card is
     retained and the printed if-statement is not widened.
 
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §3.3. Read against Hatcher, Exercise 11 of §3.3, printed p. 258, and
+    against the published construction the card transcribes, Guanyu Li, Exercise 3.3.6 (Hatcher
+    §3.3 #11), printed pp. 57--58 of `tmp/sources/hatcher-solutions-guanyu-li.pdf` — the statement and
+    the first direction on p. 57, the sentence "Conversely, if $g\geq h$, consider the cell structures
+    of both manifolds" opening p. 58, so the page range is right. Checked in the card: the converse
+    from $\deg f=1$ — $f^*(\mu_h)=\mu_g$, nondegeneracy of the cup pairing on $H^1$ of a closed
+    orientable surface, $f^*(\alpha)\smile f^*(\beta)=\mu_g\neq0$, and $2h\leq2g$; and the existence
+    direction — the one-vertex cell structures, the quotient by $X=\bigcup_{i=h+1}^{g}(a_i\cup b_i)$,
+    the surviving attaching word $\prod_{i\leq h}[c_i,d_i]$, and the single $2$-cell carrying the
+    positive generator once onto the positive generator. One repair: the solution ended with a
+    "Conclusion" step whose whole content was "Steps s1 and s2" and "Q.E.D.", a step that only
+    back-references and, in its display, widened the printed "if $g\geq h$" to an "if and only if" the
+    card's statement does not claim. The step is removed, its two references are kept as a closing
+    sentence outside the proof, and the sentence says that the converse is the addition.
 ---
 
 ::: {.problem}
@@ -58,7 +76,7 @@ If $M_g$ denotes the closed orientable surface of genus $g$, show that degree 1 
 :::
 
 ::: {.solution}
-Step [](#s1){.pf-ref} proves the converse, used by Exercises 12 and 13, although the printed sentence asks only for the direction $g\ge h$. Step [](#s2){.pf-ref} is the existence construction in Guanyu Li, Exercise 3.3.6 (Hatcher §3.3 #11), pp. 57--58.
+Step [](#s1){.pf-ref} proves the converse, used by Exercises 12 and 13, although the printed sentence asks only for the direction $g\ge h$. Step [](#s2){.pf-ref} is the existence construction in Guanyu Li, Exercise 3.3.6 (Hatcher §3.3 Exercise 11).
 
 ::: pf
 
@@ -162,7 +180,7 @@ and form the quotient $M_g/X$. The first $2h$ loops map to the loops of $M_h$, a
 
 ::: pf-proof
 
-The quotient identification is immediate from the two attaching words: the loops in $X$ become the basepoint, so their commutators disappear, and exactly the attaching word of $M_h$ remains. This is the construction in Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf), Exercise 3.3.6 (Hatcher §3.3 #11), printed pp. 57--58 (local file `tmp/sources/hatcher-solutions-guanyu-li.pdf`).
+The quotient identification is immediate from the two attaching words: the loops in $X$ become the basepoint, so their commutators disappear, and exactly the attaching word of $M_h$ remains. This is the construction in Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf), Exercise 3.3.6 (Hatcher §3.3 Exercise 11, local file `tmp/sources/hatcher-solutions-guanyu-li.pdf`).
 :::
 
 :::
@@ -173,7 +191,7 @@ The quotient map has degree $1$ after the positive generators of the two $2$-cel
 
 ::: pf-proof
 
-In these one-$2$-cell structures, the two fundamental classes are the positive $2$-cell chains. The quotient carries one to the other exactly once and with the chosen orientation. This is the degree computation at the top of printed p. 58 of Li's solution; it supplies the existence direction explicitly.
+In these one-$2$-cell structures, the two fundamental classes are the positive $2$-cell chains. The quotient carries one to the other exactly once and with the chosen orientation. This is the degree computation at the top of Li's solution; it supplies the existence direction explicitly.
 :::
 
 :::
@@ -181,19 +199,9 @@ In these one-$2$-cell structures, the two fundamental classes are the positive $
 :::
 
 :::
-::: pf-step
-
-Conclusion:
-Degree 1 maps $M_g \to M_h$ exist if and only if $g \ge h$. Q.E.D.
-
-::: pf-proof
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
 
 :::
 
-:::
-
-:::
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give the two directions. The printed exercise asks only for $g\ge h$; the converse is the addition stated at the head of the solution, and nothing on the card widens the printed statement.
 
 :::

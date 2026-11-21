@@ -33,7 +33,15 @@ audit:
     5-cycle; and a 5-cycle together with any transposition generates S_5 by
     conjugating the transposition around the 5-cycle. Hence the Galois group is
     S_5. No defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 9, prelim item 10.
+    $X^5+X+1=(X^2+X+1)(X^3+X^2+1)$ over $\mathbf F_2$ with both factors irreducible, so a
+    $(2)(3)$ element and its cube a transposition; $X^5+2X+2$ is irreducible over
+    $\mathbf F_3$ (no root, and the three monic quadratics leave remainders $2,X+2,X+2$),
+    so a $5$-cycle; a $5$-cycle and a transposition generate $S_5$. No defect.
 ---
 
 ::: {.exercise}

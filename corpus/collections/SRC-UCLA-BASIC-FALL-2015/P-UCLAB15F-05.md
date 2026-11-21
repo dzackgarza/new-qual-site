@@ -6,7 +6,9 @@ title: Cyclic derivative identity from the implicit function theorem
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Implicit Function Theorem
+  - Partial Derivatives
 relations: []
 review: draft
 audit:

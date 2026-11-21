@@ -27,6 +27,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continued §4.2 read. Read against Hatcher, Exercise 36 of §4.2, printed p. 392, and
+    the printed page is added, the card having had none. Checked: $S^1\times S^n$ is $S^1\vee S^n$
+    with one $(n+1)$-cell attached by the Whitehead product $[\iota_1,\iota_n]$; the universal cover
+    of the wedge is the bi-infinite string of $n$-spheres indexed by $\pi_1=\ZZ$, and the lifted top
+    cell joins consecutive spheres, its boundary representing
+    $\iota_n-\iota_1\cdot\iota_n$ up to orientation; applying $f\vee g$ gives
+    $[f,g]=\pm(g-fg)$. No defect.
 ---
 
 ::: {.problem}
@@ -34,6 +45,8 @@ For basepoint-preserving maps $f: S^1 \to X$ and $g: S^n \to X$ with $n > 1$, sh
 :::
 
 ::: {.solution}
+The exercise is §4.2 Exercise 36.
+
 Let
 $$
 f:S^1\to X,\qquad g:S^n\to X,

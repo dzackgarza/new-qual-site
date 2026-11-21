@@ -6,7 +6,9 @@ title: A transcendental equation has one root in the right half-plane
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Rouché
+  - Argument Principle
 relations: []
 review: draft
 audit:

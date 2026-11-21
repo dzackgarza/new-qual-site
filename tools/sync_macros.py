@@ -53,8 +53,11 @@ SEARCH_PATH = (PREAMBLE.parent / "macros",)
 COMMENT_RE = re.compile(r"(?<!\\)%.*")
 INPUT_RE = re.compile(r"\\input\{([^}]+)\}")
 # The optional groups are LaTeX's argument count and default first argument.
+# Both are captured: a declaration with a default has an optional parameter, and
+# a macro so declared is not its body alone. `\surjectsvia` is `[2][]`, and
+# reading only the body gave MathJax two mandatory parameters (#164).
 COMMAND_RE = re.compile(
-    r"\\(?:(?:re)?newcommand|providecommand)\*?\s*\{?\\([A-Za-z]+)\}?\s*(?:\[\d+\])?(?:\[[^\]]*\])?\s*\{"
+    r"\\(?:(?:re)?newcommand|providecommand)\*?\s*\{?\\([A-Za-z]+)\}?\s*(?:\[(\d+)\])?(?:\[([^\]]*)\])?\s*\{"
 )
 OPERATOR_RE = re.compile(r"\\DeclareMathOperator\*?\s*\{?\\([A-Za-z]+)\}?\s*\{")
 # mathtools' `\DeclarePairedDelimiter\qty{(}{)}` defines `\qty{x}` as the scaled
@@ -162,11 +165,28 @@ def group_at(text: str, start: int) -> str:
     return text[start : at - 1]
 
 
-def definitions(text: str) -> dict[str, str]:
-    """Every macro the preamble defines, under the definition that survives."""
-    found: list[tuple[int, str, str]] = []
+def definitions(text: str) -> dict[str, str | list]:
+    """Every macro the preamble defines, under the definition that survives.
+
+    A macro declared with an optional first parameter is returned as
+    `[body, parameters, default]`, the form MathJax's `macros` option takes and
+    the one `tex_preamble` writes back as `\\newcommand{\\name}[n][default]{...}`.
+    Every other macro is its body alone, with the arity read off the `#1..#9` it
+    uses. `\\surjectsvia` is the one the corpus met: its body is two parameters,
+    but its declaration is `[2][]`, and only the declaration says so.
+    """
+    found: list[tuple[int, str, str | list]] = []
     for match in COMMAND_RE.finditer(text):
-        found.append((match.start(), match.group(1), group_at(text, match.end())))
+        body = group_at(text, match.end())
+        count, default = match.group(2), match.group(3)
+        entry: str | list = body
+        if default is not None:
+            if count is None:
+                raise ValueError(
+                    f"\\{match.group(1)}: a default argument without a parameter count"
+                )
+            entry = [body, int(count), default]
+        found.append((match.start(), match.group(1), entry))
     for match in OPERATOR_RE.finditer(text):
         found.append(
             (
@@ -186,6 +206,11 @@ def definitions(text: str) -> dict[str, str]:
             )
         )
     return {name: body for _, name, body in sorted(found)}
+
+
+def body_of(entry: str | list) -> str:
+    """The replacement text of a definition, which may carry an optional default."""
+    return entry[0] if isinstance(entry, list) else entry
 
 
 def main() -> int:
@@ -208,17 +233,20 @@ def main() -> int:
         keep[name] = defined[name]
         frontier |= {
             n
-            for n in MACRO_USE_RE.findall(defined[name])
+            for n in MACRO_USE_RE.findall(body_of(defined[name]))
             if n in defined and n not in keep
         }
 
-    macros = {
-        "\\" + name: UNRENDERABLE[name]
-        if name in UNRENDERABLE
-        else TEX_ONLY.sub("", body).strip()
-        for name, body in sorted(keep.items())
-        if name not in NATIVE
-    }
+    macros: dict[str, str | list] = {}
+    for name, body in sorted(keep.items()):
+        if name in NATIVE:
+            continue
+        if name in UNRENDERABLE:
+            macros["\\" + name] = UNRENDERABLE[name]
+        elif isinstance(body, list):
+            macros["\\" + name] = [TEX_ONLY.sub("", body[0]).strip(), body[1], body[2]]
+        else:
+            macros["\\" + name] = TEX_ONLY.sub("", body).strip()
     mirror = ROOT / "vocabularies" / "macros.json"
     text = json.dumps(macros, indent=2, ensure_ascii=False) + "\n"
     if "--check" in sys.argv[1:]:

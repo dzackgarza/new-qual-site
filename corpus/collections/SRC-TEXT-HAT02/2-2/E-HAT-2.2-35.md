@@ -43,6 +43,21 @@ audit:
     summand of a free abelian group free. What is not covered: N is treated as open (the
     mapping cylinder itself has a boundary), and the bracketed Alexander-duality remark is not
     proved.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Restructured into a structured proof under #2. Re-checked: the mapping cylinder retracts onto $X$
+    and its complement is $S\times[0,1)$, giving $H_1(N)\cong H_1(X)$ and $H_1(N\setminus X)\cong H_1(S)$;
+    $X$ compact makes it closed, so $N$ and $\RR^3\setminus X$ are excisive with intersection
+    $N\setminus X$; Mayer--Vietoris with $\RR^3$ contractible yields the splitting
+    $H_1(S)\cong H_1(X)\oplus H_1(\RR^3\setminus X)$; and $H_1(S)=\ZZ^{2g}$ is free, so the finitely
+    generated summand $H_1(X)$ is free. Added: the contractibility of $\RR^3$ as the reason the two
+    outer groups vanish, the finite generation of $H_1(X)$ as the reason the summand is free, and
+    the explicit note that the bracketed Alexander-duality remark is not proved here. The earlier
+    audit's caveat that $N$ is treated as open (the mapping cylinder has a boundary) stands and is
+    not repaired in this batch. No defect found in the statement, §2.2 Exercise 35. No retained
+    solution set covers it.
 ---
 
 ::: {.problem}
@@ -51,17 +66,45 @@ Use the Mayer–Vietoris sequence to show that a nonorientable closed surface, o
 :::
 
 ::: {.solution}
-Suppose such an embedding and neighborhood $N$ exist. The mapping cylinder of $f:S\to X$ deformation retracts onto $X$, so the deformation retraction induces $H_1(N)\cong H_1(X)$ by Corollary 2.11 (p. 111). Its complement of the base $X$ is the cylinder $S\times[0,1)$, and hence
-$$
-H_1(N\setminus X)\cong H_1(S).
-$$
+No retained solution set covers this exercise, so the argument is the card's own; it is the Mayer--Vietoris computation of the printed hint. Suppose $X$ embeds in $\RR^3$ with a neighbourhood $N$ homeomorphic to the mapping cylinder of a map $f\colon S\to X$ from a closed orientable surface $S$.
 
-Because $X$ is compact, it is closed in $\RR^3$. The sets $N$ and $\RR^3\setminus X$ form an excisive cover of $\RR^3$: $N$ contains a neighborhood of every point of $X$, while $\RR^3\setminus X$ is open. The Mayer--Vietoris sequence of pp. 149--150 therefore contains
-$$
-0=H_2(\RR^3)
-\longrightarrow H_1(N\setminus X)
-\longrightarrow H_1(N)\oplus H_1(\RR^3\setminus X)
-\longrightarrow H_1(\RR^3)=0.
-$$
-Thus $H_1(S)\cong H_1(X)\oplus H_1(\RR^3\setminus X)$. Since $S$ is a closed orientable surface, $H_1(S)$ is free abelian, being $\ZZ^{2g}$ for a surface of genus $g$ by Example 2.36 (p. 141). The group $H_1(X)$ is finitely generated because $X$ is a finite simplicial complex, and a finitely generated direct summand of a free abelian group is free abelian. Hence $H_1(X)$ is free abelian, contrary to the torsion hypothesis. A nonorientable closed surface has torsion in $H_1$, since $H_1(N_g)$ contains a $\ZZ_2$ summand by Example 2.37 (p. 141), so it is included in this conclusion.
+::: pf
+
+::: {.pf-step #pieces}
+$H_1(N)\cong H_1(X)$ and $H_1(N\setminus X)\cong H_1(S)$.
+
+::: pf-proof
+The mapping cylinder of $f$ deformation retracts onto its base $X$, and homotopy equivalent spaces have isomorphic homology (Corollary 2.11); so $H_1(N)\cong H_1(X)$. The complement of the base in the mapping cylinder is $S\times[0,1)$, which deformation retracts onto $S\times\{0\}=S$, so $H_1(N\setminus X)\cong H_1(S)$.
+:::
+
+:::
+
+::: {.pf-step #mayer-vietoris}
+There is an exact sequence $0=H_2(\RR^3)\to H_1(N\setminus X)\to H_1(N)\oplus H_1(\RR^3\setminus X)\to H_1(\RR^3)=0$, hence $H_1(S)\cong H_1(X)\oplus H_1(\RR^3\setminus X)$.
+
+::: pf-proof
+$X$ is compact, hence closed in $\RR^3$, so $\RR^3\setminus X$ is open; $N$ contains a neighbourhood of every point of $X$, so $N$ and $\RR^3\setminus X$ are an excisive cover of $\RR^3$ with intersection $N\setminus X$. Mayer--Vietoris (pp. 149--150) gives the exact sequence displayed, with $H_2(\RR^3)=H_1(\RR^3)=0$ because $\RR^3$ is contractible; a short exact sequence with vanishing ends is an isomorphism, so $H_1(N\setminus X)\cong H_1(N)\oplus H_1(\RR^3\setminus X)$. Substituting step [](#pieces){.pf-ref} gives the stated splitting.
+:::
+
+:::
+
+::: {.pf-step #free}
+$H_1(S)$ is free abelian, and $H_1(X)$ is a finitely generated direct summand of it.
+
+::: pf-proof
+$S$ is a closed orientable surface, so $H_1(S)\cong\ZZ^{2g}$ for its genus $g$, by the computation of Example 2.36; in particular it is free abelian. By step [](#mayer-vietoris){.pf-ref} the group $H_1(X)$ is a direct summand of $H_1(S)$, and it is finitely generated because $X$ is a finite simplicial complex. A finitely generated direct summand of a free abelian group is free abelian.
+:::
+
+:::
+
+::: {.pf-step}
+$\boxed{\text{No such embedding exists when }H_1(X)\text{ has torsion}}$.
+
+::: pf-proof
+Under the hypotheses of the exercise, step [](#free){.pf-ref} makes $H_1(X)$ free abelian, contradicting the assumption that $H_1(X)$ contains torsion. A nonorientable closed surface has torsion in $H_1$, since $H_1(N_g)$ has a $\ZZ_2$ summand by Example 2.37, so the stated case of a nonorientable closed surface is included. The bracketed remark that Alexander duality in §3.3 removes the hypothesis on the neighbourhood is recorded and not proved here.
+:::
+
+:::
+
+:::
 :::

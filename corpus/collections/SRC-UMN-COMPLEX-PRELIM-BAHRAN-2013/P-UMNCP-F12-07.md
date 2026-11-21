@@ -6,7 +6,9 @@ title: A positive-real-part function has a removable puncture
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Removable Singularities
+  - Harmonic Functions
 relations: []
 review: draft
 audit:

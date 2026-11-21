@@ -10,6 +10,16 @@ classification:
   - Representation Theory
 relations: []
 review: draft
+audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Notation repair after the corpus check reported an undefined control word. The
+    three occurrences of `\Ind_{H}^{G}`, in parts (a) and (c) and in the proof of (a), name a
+    control word that neither vocabularies/macros.json nor the MathJax command set the site
+    loads defines, so the page could not render it; all three now read
+    `\operatorname{Ind}_{H}^{G}`, the operator spelling. Mathematics and wording unchanged.
 ---
 
 ::: {.problem}
@@ -35,103 +45,53 @@ $$
 :::
 
 ::: {.solution}
-Let $V$ be the representation space of $A$. The induced representation is
-$$
-\operatorname{Ind}_H^G V
- =\CC[G]\otimes_{\CC[H]}V,
-$$
-with $G$ acting by left multiplication on the first tensor factor:
-$$
-g\cdot(x\otimes v)=(gx)\otimes v.
-$$
-This is the representation denoted $A\uparrow_H^G$.
 
-Choose representatives $t_1,\ldots,t_r$ for the left cosets $G/H$. Then
-$$
-\operatorname{Ind}_H^G V
- =\bigoplus_{i=1}^r t_i\otimes V.
-$$
-Fix $g\in G$. The operator induced by $g$ sends the summand $t_i\otimes V$ to $t_j\otimes V$ whenever
-$$
-gt_iH=t_jH.
-$$
-Hence only those coset summands fixed by $g$ contribute to the trace. The coset $t_iH$ is fixed exactly when
-$$
-t_i^{-1}gt_i\in H.
-$$
-On such a fixed summand,
-$$
-g(t_i\otimes v)
-=t_i\otimes A(t_i^{-1}gt_i)v,
-$$
-so its trace is $\chi^A(t_i^{-1}gt_i)$. Therefore
-$$
-\chi^{A\uparrow_H^G}(g)
-=\sum_{\substack{i\\t_i^{-1}gt_i\in H}}
-\chi^A(t_i^{-1}gt_i).
-$$
+No retained solution set covers this exercise: the three parts are set out as separate steps, with the character computation counted over the cosets and the reciprocity proved by the tensor-Hom adjunction rather than by comparing inner products.
 
-Now each left coset $t_iH$ contains $\cardinality{H}$ elements, and if $x=t_ih$, then
-$$
-x^{-1}gx=h^{-1}(t_i^{-1}gt_i)h.
-$$
-Since $\chi^A$ is a class function on $H$, whenever $t_i^{-1}gt_i\in H$ we have
-$$
-\chi^A(x^{-1}gx)=\chi^A(t_i^{-1}gt_i).
-$$
-Thus
-$$
-\chi^{A\uparrow_H^G}(g)
-=\frac1{\cardinality{H}}\sum_{x\in G}\chi^{\overline A}(x^{-1}gx).
-$$
-If the action of $x\in G$ on functions is written as
-$$
-(x\cdot f\cdot x^{-1})(g)=f(x^{-1}gx),
-$$
-this is exactly
-$$
-\boxed{
-\chi^{A\uparrow_H^G}
-=\frac1{\cardinality{H}}\sum_{x\in G}x\cdot\chi^{\overline A}\cdot x^{-1}.}
-$$
+Let $H\le G$ finite, $A:H\to\GL_{n}(\CC)$ with space $V$ and character $\chi^{A}$, and let $\chi^{\overline A}$ be $\chi^{A}$ on $H$ and $0$ off $H$.
 
-For part (c), Frobenius reciprocity states that if $V$ is a finite-dimensional representation of $H$ with character $\chi$, and $W$ is a finite-dimensional representation of $G$ with character $\psi$, then
-$$
-\boxed{
-\left\langle \operatorname{Ind}_H^G\chi,\psi\right\rangle_G
-=
-\left\langle \chi,\operatorname{Res}_H^G\psi\right\rangle_H.}
-$$
-Equivalently,
-$$
-\dim\operatorname{Hom}_G(\operatorname{Ind}_H^G V,W)
-=
-\dim\operatorname{Hom}_H(V,\operatorname{Res}_H^G W).
-$$
+::: pf
 
-Using the character formula just proved,
-$$
-\begin{aligned}
-\left\langle \operatorname{Ind}_H^G\chi,\psi\right\rangle_G
-&=\frac1{\cardinality{G}}\sum_{g\in G}
-\left(\frac1{\cardinality{H}}\sum_{x\in G}\chi^{\overline A}(x^{-1}gx)\right)
-\overline{\psi(g)}\\
-&=\frac1{\cardinality{G}\cardinality{H}}\sum_{x\in G}\sum_{g\in G}
-\chi^{\overline A}(x^{-1}gx)\overline{\psi(g)}.
-\end{aligned}
-$$
-For fixed $x$, substitute $h=x^{-1}gx$. Since $\psi$ is a class function,
-$$
-\psi(g)=\psi(xhx^{-1})=\psi(h).
-$$
-Hence the inner sum is independent of $x$, and
-$$
-\begin{aligned}
-\left\langle \operatorname{Ind}_H^G\chi,\psi\right\rangle_G
-&=\frac1{\cardinality{H}}\sum_{h\in G}\chi^{\overline A}(h)\overline{\psi(h)}\\
-&=\frac1{\cardinality{H}}\sum_{h\in H}\chi(h)\overline{\psi(h)}\\
-&=\left\langle \chi,\operatorname{Res}_H^G\psi\right\rangle_H.
-\end{aligned}
-$$
-This proves Frobenius reciprocity.
+::: {.pf-step #define}
+(a) $A\uparrow_{H}^{G}$ is the representation of $G$ on $\operatorname{Ind}_{H}^{G}V=\CC[G]\otimes_{\CC[H]}V$ with $g\cdot(x\otimes v)=(gx)\otimes v$.
+
+::: pf-proof
+$\CC[G]$ is a $(G,H)$-bimodule, so the tensor product over $\CC[H]$ carries a left $G$-action by multiplication on the first factor, and it is finite dimensional: choosing coset representatives $t_{1},\dots,t_{r}$ of $G/H$ gives $\CC[G]=\bigoplus_{i}t_{i}\CC[H]$ as right $\CC[H]$-modules, hence $\operatorname{Ind}_{H}^{G}V=\bigoplus_{i}t_{i}\otimes V\cong V^{\oplus r}$ as vector spaces.
+:::
+
+:::
+
+::: {.pf-step #char-cosets}
+$\chi^{A\uparrow}(g)=\sum_{i}\chi^{A}(t_{i}^{-1}gt_{i})$, where the $i$-th term is read as $0$ when $t_{i}^{-1}gt_{i}\notin H$.
+
+::: pf-proof
+On the direct sum decomposition $t_{i}\otimes V$, the operator $g$ sends $t_{i}\otimes v$ to $gt_{i}\otimes v=t_{j}\otimes(h v)$ when $gt_{i}=t_{j}h$ with $h\in H$; so it maps the $i$-th summand to the $j(i)$-th, and the trace is the sum over those $i$ with $j(i)=i$, where the induced map on $V$ is $v\mapsto hv$ with $h=t_{i}^{-1}gt_{i}$.
+:::
+
+:::
+
+::: {.pf-step #char-formula}
+(b) $\chi^{A\uparrow}(g)=\dfrac{1}{\cardinality{H}}\sum_{\sigma\in G}\chi^{\overline A}(\sigma^{-1}g\sigma)$.
+
+::: pf-proof
+Fix $g$ and $h\in H$; for $x\in G$ one has $(xh)^{-1}g(xh)=h^{-1}(x^{-1}gx)h$, which lies in $H$ exactly when $x^{-1}gx$ does, and then its trace-of-$A$ value is $\chi^{A}\big(h^{-1}(x^{-1}gx)h\big)=\chi^{A}(x^{-1}gx)$ since characters are constant on conjugacy classes of $H$. Hence as $x$ ranges over the coset $t_{i}H$, the value $\chi^{\overline A}(x^{-1}gx)$ is constantly $\chi^{A}(t_{i}^{-1}gt_{i})$ (or $0$), and each coset contributes $\cardinality{H}$ times that. Summing over the $r$ cosets and dividing by $\cardinality{H}$ gives exactly the sum of step [](#char-cosets){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #reciprocity}
+(c) For a representation $W$ of $G$ with character $\chi^{B}$, $\dim\Hom_{G}\big(\operatorname{Ind}_{H}^{G}V,W\big)=\dim\Hom_{H}\big(V,\Res_{H}^{G}W\big)$, equivalently $\langle\chi^{A\uparrow},\chi^{B}\rangle_{G}=\langle\chi^{A},\restrictionof{\chi^{B}}{H}\rangle_{H}$.
+
+::: pf-proof
+Tensor-Hom adjunction for the ring extension $\CC[H]\subseteq\CC[G]$ gives a natural isomorphism $\Hom_{G}\big(\CC[G]\otimes_{\CC[H]}V,W\big)\cong\Hom_{H}\big(V,W\big)$, the $H$-module structure on the right being the restriction; and $\Hom_{G}(\CC[G],W)\cong W$ by evaluation at $1$, which is compatible with the $H$-action. Taking dimensions gives the stated equality of inner products, since $\dim\Hom_{G}(U,W)=\langle\chi^{U},\chi^{W}\rangle_{G}$ for finite groups.
+:::
+
+:::
+
+::: {.pf-qed}
+(a) is step [](#define){.pf-ref}, (b) is steps [](#char-cosets){.pf-ref} and [](#char-formula){.pf-ref}, (c) is step [](#reciprocity){.pf-ref}.
+:::
+
+:::
+
 :::

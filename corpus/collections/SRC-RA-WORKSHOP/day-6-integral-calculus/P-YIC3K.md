@@ -16,6 +16,16 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. This is the first mean value theorem for
+    integrals: x^4 >= 0 on [0,1] and f is continuous, so m = min f and M = max f satisfy
+    m/5 <= int_0^1 x^4 f(x) dx <= M/5, and continuity of f on the connected interval gives xi with
+    5 int x^4 f = f(xi). The card states the weighted form with the weight x^4 and applies the
+    theorem, which is the correct route; the hypothesis that f is real-valued and continuous is used
+    exactly in the intermediate value step. Not claimed: any statement about uniqueness of xi.
 ---
 
 ::: {.problem}

@@ -25,6 +25,20 @@ audit:
     H^{n+1} = Ext(G,−) and kills the rest; the Bockstein sequence of
     0 → A → B → C → 0 (§3.E, p. 305) therefore has only two nonzero terms, and the
     displayed six-term sequence is its exactness written out. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §3.F Exercise 8, printed p. 320.
+    The mathematics of the conclusion is right, but the proof had three defects and
+    was rewritten. (1) Step #s1's proof read only "definition of a Moore space." and
+    #s2's only "Step [](#s1) and the universal coefficient theorem."; both now carry
+    the argument, including the degree range. (2) Step #s4 said all other terms
+    vanish, which is false at n = 1: the term before H^1(M;A) is H^0(M;C) = C, and
+    the sequence begins 0 -> H^1 only because A -> B injective makes B -> C onto, so
+    the connecting map C -> H^1(M;A) is zero. That case is now argued. (3) The
+    vanishing range is stated for i >= 1 with the two exceptional degrees. Statement
+    unchanged. Not checked: nothing outside this exercise.
 ---
 
 ::: {.problem}
@@ -34,16 +48,17 @@ $$0 \to \operatorname{Hom}(G,A) \to \operatorname{Hom}(G,B) \to \operatorname{Ho
 :::
 
 ::: {.solution}
+The statement is Hatcher, *Algebraic Topology* (2002), §3.F Exercise 8; the argument below is the card's own.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-For a Moore space $M(G, n)$, $\widetilde H_n(M(G,n)) = G$ and $\widetilde H_i(M(G,n)) = 0$ for $i \neq n$.
+For a Moore space $M(G, n)$ with $n\ge1$: $\widetilde H_n(M(G,n)) = G$, $\widetilde H_i(M(G,n)) = 0$ for $i \neq n$, and $M(G,n)$ is path connected.
 
 ::: pf-proof
 
-definition of a Moore space.
+A Moore space $M(G,n)$ is by definition a CW complex with $\widetilde H_n(M(G,n))\cong G$ and $\widetilde H_i(M(G,n))=0$ for $i\ne n$, and with $n\ge1$ its reduced homology in degree $0$ vanishes, so it is connected and hence path connected as a CW complex.
 
 :::
 
@@ -51,11 +66,15 @@ definition of a Moore space.
 
 ::: {.pf-step #s2}
 
-By the universal coefficient theorem, $H^n(M(G,n); A) \cong \operatorname{Hom}(G, A)$ and $H^{n+1}(M(G,n); A) \cong \operatorname{Ext}(G, A)$, with all other cohomology groups (in positive degrees) zero.
+$H^n(M(G,n); A) \cong \operatorname{Hom}(G, A)$ and $H^{n+1}(M(G,n); A) \cong \operatorname{Ext}(G, A)$, while $H^i(M(G,n); A)=0$ for $1\le i\le n-1$ and for $i\ge n+2$.
 
 ::: pf-proof
 
-Step [](#s1){.pf-ref} and the universal coefficient theorem.
+The universal coefficient theorem gives, for each $i$, the short exact sequence
+$$
+0\to\operatorname{Ext}(H_{i-1}(M(G,n)), A)\to H^i(M(G,n);A)\to\operatorname{Hom}(H_i(M(G,n)),A)\to0 .
+$$
+By step [](#s1){.pf-ref} the group $H_i(M(G,n))$ vanishes for $i\ne n$ and equals $G$ for $i=n$, so the $\operatorname{Hom}$ term vanishes unless $i=n$ and the $\operatorname{Ext}$ term vanishes unless $i-1=n$. For $i=n$ the sequence reads $0\to0\to H^n\to\operatorname{Hom}(G,A)\to0$, and for $i=n+1$ it reads $0\to\operatorname{Ext}(G,A)\to H^{n+1}\to0$; for every other $i\ne n,n+1$ both ends vanish, and $i=n$ and $i=n+1$ are the only degrees where either end can be nonzero.
 
 :::
 
@@ -68,7 +87,7 @@ $$\cdots \to H^i(M; A) \to H^i(M; B) \to H^i(M; C) \xrightarrow{\beta} H^{i+1}(M
 
 ::: pf-proof
 
-the long exact sequence in cohomology from a short exact sequence of coefficients.
+A short exact sequence of coefficient groups induces a long exact sequence in cohomology, natural in the space and additive in the coefficients; that sequence is displayed, its connecting homomorphism being the Bockstein homomorphism $\beta$.
 
 :::
 
@@ -76,12 +95,12 @@ the long exact sequence in cohomology from a short exact sequence of coefficient
 
 ::: {.pf-step #s4}
 
-Since $H^i(M(G,n); \cdot) = 0$ except for $i = n$ and $i = n+1$, the long exact sequence collapses to the exact sequence
+Since $H^i(M(G,n); \cdot) = 0$ for $i\ne n,n+1$ with $i\ge1$, the long exact sequence collapses to the exact sequence
 $$0 \to H^n(M;A) \to H^n(M;B) \to H^n(M;C) \to H^{n+1}(M;A) \to H^{n+1}(M;B) \to H^{n+1}(M;C) \to 0.$$
 
 ::: pf-proof
 
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} (all other terms vanish).
+By step [](#s2){.pf-ref} the six displayed groups are the only ones in degrees $\ge1$ that can be nonzero, and the sequence of step [](#s3){.pf-ref} restricts to an exact sequence through them. At the left end: for $n\ge2$ the preceding term is $H^{n-1}(M;A)=0$; for $n=1$ it is $H^0(M;A)=A$, and $A\to B$ injective makes $B\to C$ onto, so the connecting map $C\to H^1(M;A)$ is zero and the sequence begins $0\to H^1(M;A)$. At the right end the next term is $H^{n+2}(M;A)=0$ in both cases, since $n+2\ge3$.
 
 :::
 
@@ -94,18 +113,17 @@ $$0 \to \operatorname{Hom}(G,A) \to \operatorname{Hom}(G,B) \to \operatorname{Ho
 
 ::: pf-proof
 
-Step [](#s4){.pf-ref}.
+In step [](#s4){.pf-ref} replace $H^n(M;-)$ by $\operatorname{Hom}(G,-)$ and $H^{n+1}(M;-)$ by $\operatorname{Ext}(G,-)$, which step [](#s2){.pf-ref} licenses, and use that both are functors in the coefficient group, so the maps of the exact sequence are the ones displayed.
 
 :::
 
 :::
 
-::: pf-qed
+::: {.pf-qed}
 
-Step [](#s5){.pf-ref}.
-
-:::
+The sequence of step [](#s5){.pf-ref} is exact and is the sequence the exercise asks for.
 
 :::
 
+:::
 :::

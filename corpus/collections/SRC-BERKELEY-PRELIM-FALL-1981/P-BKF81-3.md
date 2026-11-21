@@ -21,6 +21,15 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Decomposed the n points into G-orbits, whose sizes are powers of p, and used p∤n to force an orbit of size one."
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. Orbits of a p-group have size p^j by orbit-stabilizer, and n is the
+    sum of the orbit sizes; since p does not divide n, at least one orbit has size p^0 = 1, and a
+    point of that orbit is fixed. Checked that the argument uses only that a subgroup's index divides
+    |G| and that a sum of positive multiples of p is itself a multiple of p. Not checked: the printed
+    paper, which was not re-read in this pass.
 ---
 
 ::: {.problem}

@@ -19,6 +19,8 @@ The \dfn{contour integral} of $f$ along $\gamma$ is
 $$
 \int_{\gamma}f\dz\coloneqq\int_a^b f(\gamma(t))\,\gamma'(t)\dt.
 $$
+
+This is the line integral of [@Ahl73, ch. 4, §1.1, Line Integrals], defined there as the integral of $f(z(t))z'(t)$ over the parameter interval.
 :::
 
 ::: {.remark}

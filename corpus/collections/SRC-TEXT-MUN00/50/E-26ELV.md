@@ -93,6 +93,20 @@ audit:
     C(C, R^{2m+1}) to an unnamed "density lemma"; the density is part (2) of the proof of Theorem 50.5
     (printed p. 312), and the step now names it there. Parts (a)--(c) and the rest of (d) were not
     changed.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof. A corpus measurement had listed this card as having six vacuous
+    steps; a stack parse of the file shows that all six of its blank pf-proof frames carry nested steps,
+    so the count was an artifact of the measuring scanner, and nothing was deleted. What was actually
+    missing was a justification on 24 of the 40 steps: each now has one, and the six container steps now
+    say why their subclaims suffice. Checked against Munkres, Topology (2000), §50 Exercise 6, printed
+    pp. 311-316, with the uniform metric of p. 266, the fibre-diameter definition of p. 311, and
+    Theorems 26.3, 26.5, 26.6, 29.1, 29.2, 32.2, 33.1, 34.1, 35.1, 43.5, 48.2 and part (2) of the proof
+    of Theorem 50.5 on p. 312. Not checked again: the two Math StackExchange answers recorded in the
+    2026-11-15 event, and the density statement of the imbedding theorem beyond the citation the card
+    already makes.
 ---
 
 ::: {.exercise}
@@ -137,22 +151,43 @@ The locally compact second-countable Hausdorff space $X$ is metrizable by the Ur
 Part (a): Perturbation of proper maps.
 
 ::: pf-proof
+It is enough to run the definition for an arbitrary $n$: the second and third subclaims produce a compact set outside which $\norm{g}>n$, and the fourth records that $n$ was arbitrary.
 
 ::: pf-step
 Let $n \in \ZZ_+$.
 Since $f(x) \to \infty$, there exists a compact $C \subset X$ such that $\norm{f(x)} > n + 1$ for all $x \in X \setminus C$.
+
+::: pf-proof
+This is the defining property of $f(x)\to\infty$ applied to the number $n+1$.
+:::
+
 :::
 
 ::: pf-step
 Since $\bar{\rho}(f, g) < 1$, $\norm{f(x) - g(x)} \le 1$ for all $x \in X$.
+
+::: pf-proof
+On $\RR^N$ the uniform metric is $\bar\rho(f,g)=\sup_x \bar d(f(x),g(x))$ with $\bar d(a,b)=\min\{\norm{a-b},1\}$ (printed p. 266). If some value $\bar d(f(x),g(x))$ equalled $1$ then the supremum would be at least $1$, so every value is $<1$, which forces $\bar d(f(x),g(x))=\norm{f(x)-g(x)}<1$.
+:::
+
 :::
 
 ::: pf-step
 For any $x \in X \setminus C$: $$\norm{g(x)} \ge \norm{f(x)} - \norm{f(x) - g(x)} > (n + 1) - 1 = n.$$
+
+::: pf-proof
+The first inequality is the reverse triangle inequality $\norm{g}\ge\norm{f}-\norm{f-g}$; the strict inequality substitutes the bounds of the two preceding subclaims.
+:::
+
 :::
 
 ::: pf-step
 Hence $g(x) \to \infty$ as $x \to \infty$.
+
+::: pf-proof
+The preceding subclaim exhibits, for the given $n$, a compact $C$ with $\norm{g}>n$ on $X\setminus C$, which is exactly the condition of the definition for the number $n$.
+:::
+
 :::
 
 :::
@@ -163,13 +198,24 @@ Hence $g(x) \to \infty$ as $x \to \infty$.
 Part (b): Continuous extension to one-point compactifications and closed embeddings.
 
 ::: pf-proof
+The first two subclaims construct the extension $f^*$ and the next two check its continuity at the two kinds of point; the last three deduce, under the added injectivity, that $f^*$ is an embedding with closed image, and pass back to $X$.
 
 ::: pf-step
 Let $X^* = X \cup \{\infty_X\}$ and $(\RR^N)^* = \RR^N \cup \{\infty\}$ be the one-point compactifications.
+
+::: pf-proof
+Both exist: a locally compact Hausdorff space has a one-point compactification (Theorem 29.1), and $\RR^N$ is locally compact Hausdorff, so the same theorem applies to it.
+:::
+
 :::
 
 ::: pf-step
 Define $f^*: X^* \to (\RR^N)^*$ by $f^*(x) = f(x)$ for $x \in X$ and $f^*(\infty_X) = \infty$.
+
+::: pf-proof
+The formula defines a function on the disjoint union $X\cup\{\infty_X\}$, since $\infty_X\notin X$, and its values lie in $\RR^N\cup\{\infty\}=(\RR^N)^*$.
+:::
+
 :::
 
 ::: pf-step
@@ -192,14 +238,29 @@ Every neighbourhood $V$ of $\infty$ in $(\RR^N)^*$ contains $(\RR^N \setminus \o
 
 ::: pf-step
 If $f$ is injective, then $f^*$ is an injective continuous map from the compact Hausdorff space $X^*$ into the Hausdorff space $(\RR^N)^*$, hence a topological embedding.
+
+::: pf-proof
+Injectivity: if $x,y\in X$ and $f(x)=f(y)$ then $x=y$; and $f^*(\infty_X)=\infty\notin f(X)=f^*(X)$, so no point of $X$ is sent to $\infty$. Continuity is the two preceding subclaims. A continuous injection of a compact space into a Hausdorff space is a homeomorphism onto its image (Theorem 26.6 applied to $f^*$ as a map of $X^*$ onto the subspace $f^*(X^*)$), which is the definition of an embedding.
+:::
+
 :::
 
 ::: pf-step
 The image $f^*(X^*)$ is compact, hence closed in $(\RR^N)^*$.
+
+::: pf-proof
+The image of the compact space $X^*$ under the continuous map $f^*$ is compact (Theorem 26.5), and a compact subspace of a Hausdorff space is closed (Theorem 26.3), which $(\RR^N)^*$ is.
+:::
+
 :::
 
 ::: pf-step
 Restricting to $X$, $f(X) = f^*(X^*) \cap \RR^N$ is closed in $\RR^N$, and $f: X \to f(X)$ is a homeomorphism.
+
+::: pf-proof
+Since $f^*(\infty_X)=\infty\notin\RR^N$ and $f^*$ agrees with $f$ on $X$, one has $f(X)=f^*(X^*)\cap\RR^N$, and this is closed in the subspace $\RR^N$ because $f^*(X^*)$ is closed in the ambient space $(\RR^N)^*$. A homeomorphism restricted to a subspace is a homeomorphism onto its image, so the embedding $f^*$ restricts to a homeomorphism of $X$ onto $f(X)$.
+:::
+
 :::
 
 :::
@@ -210,6 +271,7 @@ Restricting to $X$, $f(X) = f^*(X^*) \cap \RR^N$ is closed in $\RR^N$, and $f: X
 Part (c): Openness of $U_\varepsilon(C)$.
 
 ::: pf-proof
+The first subclaim turns membership in $U_\varepsilon(C)$ into a statement about pairs of points at distance at least $\varepsilon$; the remaining subclaims produce, for a given $f\in U_\varepsilon(C)$, a uniform ball around $f$ contained in $U_\varepsilon(C)$.
 
 ::: pf-step
 The condition $\Delta(f\restrict_C) < \varepsilon$ is equivalent to saying that if $x_1, x_2 \in C$ with $d(x_1, x_2) \ge \varepsilon$, then $f(x_1) \neq f(x_2)$.
@@ -224,18 +286,38 @@ The set $P=\theset{(x_1,x_2)\in C\times C : f(x_1)=f(x_2)}$ is the preimage of t
 
 ::: pf-step
 The set $S = \{(x_1, x_2) \in C \times C : d(x_1, x_2) \ge \varepsilon\}$ is compact.
+
+::: pf-proof
+The metric $d$ is continuous on $C\times C$ and $[\varepsilon,\infty)$ is closed in $\RR$, so $S$ is a closed subset of the compact space $C\times C$ and is compact (Theorem 26.2).
+:::
+
 :::
 
 ::: pf-step
 If $S=\varnothing$, then $U_\varepsilon(C)$ is the whole function space. Otherwise, if $f \in U_\varepsilon(C)$, the continuous function $(x_1, x_2) \mapsto \norm{f(x_1) - f(x_2)}$ is strictly positive on compact $S$, so it achieves a minimum $\delta = \min_S \norm{f(x_1) - f(x_2)} > 0$.
+
+::: pf-proof
+If $S=\varnothing$ there is no pair of points of $C$ at distance at least $\varepsilon$, so the condition of the first subclaim holds for every $f$. If $S\neq\varnothing$ then $S$ is non-empty and compact by the preceding subclaim; the displayed function is continuous, and it is strictly positive on $S$ because $(x_1,x_2)\in S$ with $f(x_1)=f(x_2)$ would violate that condition. A continuous real function on a non-empty compact space attains its minimum, which is therefore positive.
+:::
+
 :::
 
 ::: pf-step
 If $\bar{\rho}(f, g) < \min\{1,\delta/3\}$, then $\norm{f(x)-g(x)}\le\bar\rho(f,g)$ for every $x$, and for all $(x_1, x_2) \in S$: $$\norm{g(x_1) - g(x_2)} \ge \norm{f(x_1) - f(x_2)} - 2\bar{\rho}(f, g) > \delta - \frac{2\delta}{3} = \frac{\delta}{3} > 0.$$
+
+::: pf-proof
+Since $\bar\rho(f,g)<1$, no value $\bar d(f(x),g(x))$ equals $1$, so $\bar d(f(x),g(x))=\norm{f(x)-g(x)}$ for every $x$ and $\norm{f(x)-g(x)}\le\bar\rho(f,g)$. The displayed inequality is the triangle inequality in the form $\norm{g(x_1)-g(x_2)}\ge\norm{f(x_1)-f(x_2)}-\norm{f(x_1)-g(x_1)}-\norm{g(x_2)-f(x_2)}$, with the bound just obtained applied twice and $\norm{f(x_1)-f(x_2)}\ge\delta$ on $S$.
+:::
+
 :::
 
 ::: pf-step
 Thus $g \in U_\varepsilon(C)$, so $U_\varepsilon(C)$ is open.
+
+::: pf-proof
+For every $(x_1,x_2)\in S$ the preceding subclaim gives $g(x_1)\neq g(x_2)$, so $g$ satisfies the condition of the first subclaim and lies in $U_\varepsilon(C)$. The ball of radius $\min\{1,\delta/3\}$ about $f$ is therefore contained in $U_\varepsilon(C)$, and $S=\varnothing$ was disposed of in the third subclaim.
+:::
+
 :::
 
 :::
@@ -246,22 +328,43 @@ Thus $g \in U_\varepsilon(C)$, so $U_\varepsilon(C)$ is open.
 Part (d): Density of $U_\varepsilon(C)$ for $N = 2m + 1$.
 
 ::: pf-proof
+The first subclaim is the density in the compact case, supplied by the imbedding theorem; the remaining subclaims transfer it to $X$ by the Tietze device of the exercise's hint.
 
 ::: pf-step
 Since $C$ is compact metrizable with $\dim C \le m$, the maps with $\Delta < \varepsilon$ are dense in $\mathcal{C}(C, \RR^{2m+1})$: this is part (2) of the proof of Theorem 50.5 (printed p. 312), the imbedding theorem for a compact metrizable space of dimension at most $m$, applied to $C$.
+
+::: pf-proof
+$C$ is a compact subspace of $X$, so its topological dimension is at most $m$ by hypothesis; it is metrizable and compact, hence second countable and regular, so the Urysohn metrization theorem (Theorem 34.1) describes it as a subspace of a compact metrizable space; the density statement quoted is the one proved there for such a space, and it gives maps arbitrarily close to a given map with $\Delta<\varepsilon$ on $C$.
+:::
+
 :::
 
 ::: pf-step
 Given $f \in \mathcal{C}(X, \RR^N)$ and $\delta > 0$, choose $g_0 \in \mathcal{C}(C, \RR^N)$ such that $\norm{f\restrict_C - g_0} < \delta$ and $\Delta(g_0) < \varepsilon$.
+
+::: pf-proof
+Apply the density of the preceding subclaim to the restriction $f\restrict_C\in\mathcal{C}(C,\RR^{2m+1})$ with the radius $\delta$.
+:::
+
 :::
 
 ::: pf-step
 The metrizable space $X$ is normal. By the Tietze extension theorem, extend the coordinate functions of $g_0 - f\restrict_C: C \to [-\delta, \delta]^N$ to a continuous map $h: X \to [-\delta, \delta]^N$.
+
+::: pf-proof
+Every metrizable space is normal (Theorem 32.2). The set $C$ is compact in the Hausdorff space $X$, hence closed. The map $g_0-f\restrict_C$ takes values in $[-\delta,\delta]^N$ because $\norm{f\restrict_C-g_0}<\delta$; Tietze's theorem (Theorem 35.1), applied to each of the finitely many coordinate functions on the closed subspace $C$, extends it to a continuous $h$ with the same bound.
+:::
+
 :::
 
 ::: pf-step
 Define $g = f + h \in \mathcal{C}(X, \RR^N)$.
 Then $\bar{\rho}(f, g) \le \delta$ and $g\restrict_C = g_0 \in U_\varepsilon(C)$, proving density.
+
+::: pf-proof
+$\norm{h(x)}\le\delta$ for every $x$, so $\bar\rho(f,g)=\sup_x\min\{\norm{h(x)},1\}\le\delta$ (the minimum is at most $\norm{h(x)}\le\delta$ when $\delta\le1$, and at most $1<\delta$ otherwise). On $C$ one has $h=g_0-f\restrict_C$, so $g\restrict_C=g_0$, whose $\Delta$ is less than $\varepsilon$; hence $g\in U_\varepsilon(C)$ and $g$ is within $\delta$ of $f$.
+:::
+
 :::
 
 :::
@@ -272,6 +375,7 @@ Then $\bar{\rho}(f, g) \le \delta$ and $g\restrict_C = g_0 \in U_\varepsilon(C)$
 Part (e): there is a continuous map $f_0: X \to \RR$ with $f_0(x) \to \infty$ as $x \to \infty$.
 
 ::: pf-proof
+The first three subclaims produce the increasing compact exhaustion and the Urysohn functions attached to it; the last three sum those functions and verify the resulting map tends to infinity.
 
 ::: pf-step
 There is a countable basis $\theset{B_i}$ of $X$ consisting of open sets with compact closure.
@@ -335,9 +439,15 @@ Given $n$, take the compact set $C=C_{n+2}$; for $x\in X\setminus C$ step [](#ps
 Part (f): an injective map $f$ with $f(x) \to \infty$ exists.
 
 ::: pf-proof
+The Baire category theorem applied to the ball $B$ around $f_1$ produces one map that satisfies $\Delta<1/n$ on $C_n$ simultaneously for all $n$, which is what forces injectivity; the last two subclaims apply parts (a) and (b) to it.
 
 ::: pf-step
 Since $\RR^N$ is complete, $(\mathcal{C}(X, \RR^N), \bar{\rho})$ is a complete metric space (Theorem 43.5), hence a Baire space.
+
+::: pf-proof
+Theorem 43.5 states that $\mathcal{C}(X,Y)$ is complete in the uniform metric when $Y$ is complete, and $\RR^N$ with the maximum norm is complete. A complete metric space is a Baire space (Theorem 48.2).
+:::
+
 :::
 
 ::: pf-step
@@ -352,29 +462,59 @@ Its first coordinate $\psi$ is continuous by step [](#s5){.pf-ref} and $\norm{f_
 ::: pf-step
 Let $B = \{g \in \mathcal{C}(X, \RR^N) : \bar{\rho}(f_1, g) < 1\}$.
 $B$ is a non-empty open subspace, hence a Baire space.
+
+::: pf-proof
+$f_1\in B$, so $B\neq\varnothing$, and $B$ is the open ball of radius $1$ about $f_1$. An open subspace of a Baire space is a Baire space: if a closed subset $D\subseteq B$ has empty interior in $B$ and its closure in $X$ contained a non-empty open $W\subseteq B$, then $W\subseteq D$, a contradiction, so $D$ is nowhere dense in $B$ exactly when it is nowhere dense in the ambient space.
+:::
+
 :::
 
 ::: pf-step
 For each $n \in \ZZ_+$, $U_{1/n}(C_n) \cap B$ is open and dense in $B$ by step [](#s3){.pf-ref} and step [](#s4){.pf-ref}.
+
+::: pf-proof
+$U_{1/n}(C_n)$ is open in $\mathcal{C}(X,\RR^N)$ by part (c), so its intersection with $B$ is open in $B$. It is dense in the whole space by part (d), and a set dense in the whole space meets every non-empty open set, in particular every non-empty open subset of $B$; hence the intersection is dense in $B$.
+:::
+
 :::
 
 ::: pf-step
 By the Baire category theorem, the intersection $G = \bigcap_{n=1}^\infty U_{1/n}(C_n) \cap B$ is dense in $B$, hence non-empty.
+
+::: pf-proof
+It is a countable intersection of open dense subsets of the Baire space $B$, so it is dense in $B$; a dense subset of the non-empty space $B$ is non-empty.
+:::
+
 :::
 
 ::: pf-step
 Choose $f \in G$.
 Since $f \in B$, $\bar\rho(f_1,f)<1$ and $f_1(x)\to\infty$, so $f(x) \to \infty$ as $x \to \infty$ by step [](#s1){.pf-ref}.
+
+::: pf-proof
+Part (a) applies with $f_1$ in the role of $f$ and the chosen $f$ in the role of $g$: the hypothesis $\bar\rho(f_1,f)<1$ and the conclusion $f_1(x)\to\infty$ are exactly what it needs.
+:::
+
 :::
 
 ::: pf-step
 For any distinct $x_1, x_2 \in X$, there exists $n$ such that $x_1, x_2 \in C_n$ and $d(x_1, x_2) \ge \frac{1}{n}$.
 Since $f \in U_{1/n}(C_n)$, $f(x_1) \neq f(x_2)$.
 Thus $f$ is injective.
+
+::: pf-proof
+The subspaces $C_n$ increase and cover $X$, so some $C_m$ contains both points; taking $n\ge m$ with $n\ge 1/d(x_1,x_2)$, which is possible because $d(x_1,x_2)>0$, keeps both points in $C_n$ and gives $d(x_1,x_2)\ge1/n$. Membership in $U_{1/n}(C_n)$ says $\Delta(f\restrict_{C_n})<1/n$, so by part (c) two points of $C_n$ at distance at least $1/n$ cannot have the same image.
+:::
+
 :::
 
 ::: pf-step
 By step [](#s2){.pf-ref}, $f$ is a homeomorphism of $X$ onto a closed subspace of $\RR^{2m+1}$.
+
+::: pf-proof
+The map $f$ is injective and $f(x)\to\infty$, so part (b) applies with $N=2m+1$ and gives that $f$ is a homeomorphism of $X$ onto a closed subspace of $\RR^{2m+1}$.
+:::
+
 :::
 
 :::

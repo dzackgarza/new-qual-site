@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP04-10
 kind: problem
 title: Axiom of Choice and one of its standard equivalent maximality principles
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Axiom of Choice]}
 relations: []
 review: draft
 audit:
@@ -25,6 +25,8 @@ The source lists five familiar principles equivalent to the Axiom of Choice: Zor
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the examination papers alone, so the argument is the card's own.
 
 ::: pf
 

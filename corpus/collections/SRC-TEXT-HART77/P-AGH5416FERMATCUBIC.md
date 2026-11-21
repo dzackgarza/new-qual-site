@@ -301,6 +301,109 @@ audit:
     of the step three-line-families and the four criteria, on the card, and
     nothing further in the sources; Gathmann's printed pp. 90--91 continue to be
     read as the event above records.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The batch's fourth retained set read at this exercise. Read Yang Pi-Yeh,
+    Hartshorne Solutions (9 June 2019), Solution 5.4.16, printed p. 112,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page (folio 112 at the foot). Checked against the book: Hartshorne
+    V.4.16, printed p. 409, asks for the equations of the 27 lines, for the
+    incidence relations, and for the group of automorphisms, and the entry
+    gives the first only. Recomputed: the four coefficient equations
+    a_0^3 + a_1^3 = -1, b_0^3 + b_1^3 = -1, a_0^2 b_0 + a_1^2 b_1 = 0 and
+    a_0 b_0^2 + a_1 b_1^2 = 0 obtained by substituting
+    x_0 = a_0 x_2 + b_0 x_3, x_1 = a_1 x_2 + b_1 x_3 into the Fermat cubic;
+    that no line has all four coefficients nonzero, since the last two give
+    a_0/b_0 = a_1/b_1 and then b_0^3 + b_1^3 = 0 against b_0^3 + b_1^3 = -1;
+    and that its case a_0 = 0 gives the family x_0 + omega^k x_3 =
+    x_1 + omega^j x_2 = 0, whose three coordinate pairings give the 27 lines
+    of step twenty-seven-lines. Not checked: Yang's Solutions outside printed
+    p. 112, and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.4.16 at printed p. 112 as
+    covering part (a) of the exercise and neither (b) nor (c), with its
+    coefficient analysis, the vanishing-coefficient argument it leaves out, and
+    its three line families matched to step twenty-seven-lines. No step,
+    statement or hypothesis of the card changes.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for issue #168 and recomputed: steps twenty-seven-lines,
+    incidence-ten-and-sixteen, the two bodies ac-family-incidence and
+    bc-family-incidence, automorphism-group-not-two-three, and the closing
+    paragraph of automorphism-group-characteristic-two.
+
+    Gathmann's Lemma 11.1 and Corollary 11.2 were re-read in the retained
+    extraction and carry the coefficient argument and the four-three-three list
+    that the two incidence steps transcribe, together with the reduction by
+    permuting coordinates and multiplying them by cube roots of unity.
+    Recomputed over F_7, in which 2 is a primitive cube root of unity: the three
+    families of step three-line-families are 27 distinct lines, each of them on
+    the Fermat cubic; every line meets exactly ten of the other twenty-six; the
+    four criteria of steps same-family-incidence, ab-family-incidence,
+    ac-family-incidence and bc-family-incidence hold on every pair they cover,
+    108 same-family pairs and 81 in each of the three mixed cases, so the two
+    bodies ac and bc are right; the ten lines meeting C_00 are C_01, C_02, C_10,
+    C_20, B_00, B_12, B_21, A_00, A_12, A_21, which is the four-three-three list
+    of step incidence-ten-and-sixteen; every skew pair has exactly five common
+    transversals; and the orbit of A_00 under coordinate permutations and
+    cube-root scalings is all 27 lines, the transitivity that step
+    incidence-ten-and-sixteen uses. The coefficient argument of step
+    twenty-seven-lines was recomputed from the four relations
+    a_2^3+b_2^3=-1, a_3^3+b_3^3=-1, a_2^2a_3=-b_2^2b_3 and
+    a_2a_3^2=-b_2b_3^2, with the vanishing of one coefficient argued as the step
+    argues it.
+
+    For automorphism-group-not-two-three: Dolgachev and Duncan's Lemma 5.1 was
+    read in the retained extraction and states both groups; their Lemma 5.2 with
+    its Hessian display was read too. The Hessian of x_0^3+x_1^3+x_2^3+x_3^3 was
+    computed as 6^4 x_0x_1x_2x_3, a nonzero scalar multiple of that display, and
+    the monomial maps x_i -> z_i x_sigma(i) preserving the cubic were counted
+    over F_7: 1944 of them, which is 648 projectively, that is 3^3 times 4!, the
+    order the step asserts. The step's reading of Lemma 5.2's indexing, that the
+    display d^{n-1} rtimes S_n is the group for n coordinates in P^{n-1}, was
+    checked against the printed formula and is the only reading under which the
+    formula is consistent, as the step says.
+
+    For the closing paragraph of automorphism-group-characteristic-two: PSU_4(2)
+    was computed of order 77760/3 = 25920, the incidence graph of the 27 lines
+    was built and its automorphism group computed, of order 51840, and 25920 is
+    half of that, so the index-two statement holds. The paragraph's argument was
+    read and is valid: a subgroup of W(E_6) containing a subgroup of index two is
+    one of the two, and the larger alternative would make the Frobenius
+    geometric, which it is not. The same conclusion is the last sentence of the
+    retained passage, that the automorphism group of the Fermat cubic cannot be
+    larger than PSU_4(2). Not checked: nothing outside the retained files was
+    read in this pass, and the parenthetical of the printed exercise's part (c)
+    is not part of what these steps claim.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Two repairs in this pass, both inside steps, neither changing a statement.
+    In automorphism-group-not-two-three the Hessian display carried the exponent
+    n of Dolgachev and Duncan's Lemma 5.2; the Hessian matrix of
+    x_0^d+...+x_n^d is diagonal with entries d(d-1)x_i^{d-2}, so the
+    determinant is (d(d-1))^{n+1}x_0^{d-2}...x_n^{d-2} and the display now reads
+    n+1, with a sentence saying so and noting that the zero locus is the same
+    as the lemma's and that the argument uses only that zero locus. In the last
+    paragraph of automorphism-group-characteristic-two the sentence excluding
+    the second alternative appealed to "the action of sigma is not geometric"
+    without establishing it, which is the source's assertion; the step now
+    states what that means, that no projective linear map of P^3 preserving S
+    induces sigma's permutation of the 27 lines, and checks it: the condition
+    that A and sigma carry each line to the same annihilator is 54 linear
+    conditions per choice of line on the 16 entries of A, and over F_4 their
+    only solution is A = 0. The same paragraph now also says why an automorphism
+    of S is geometric at all, -K_S = O_S(1) being very ample with S its
+    anticanonical model.
 ---
 
 ::: {.problem}
@@ -319,7 +422,7 @@ In characteristic $3$ one has
 $$
 F=(x_0+x_1+x_2+x_3)^3,
 $$
-so the displayed scheme is a nonreduced triple plane and not the nonsingular cubic surface to which the $27$-line theory and the automorphism question apply; Dolgachev and Duncan print this at the opening of Section 5, printed p. 24, and record in Section 1.3, printed p. 6, that the $3C$ stratum is empty in characteristic $3$. The transcription below therefore assumes throughout that
+so the displayed scheme is a nonreduced triple plane and not the nonsingular cubic surface to which the $27$-line theory and the automorphism question apply; Dolgachev and Duncan print this at the opening of Section 5, and record in Section 1.3, that the $3C$ stratum is empty in characteristic $3$. The transcription below therefore assumes throughout that
 $$
 \operatorname{char}k\ne3,
 $$
@@ -337,7 +440,7 @@ $$
 for $0\le j,k\le2$.
 
 ::: pf-proof
-This is Lemma 11.1 of Gathmann, printed p. 90, carried out for the ground field $k$; its argument uses only that a primitive cube root of unity exists and that $3\ne0$. Up to a permutation of the coordinates every line of $\PP^3$ is given by two equations
+This is Lemma 11.1 of Gathmann, carried out for the ground field $k$; its argument uses only that a primitive cube root of unity exists and that $3\ne0$. Up to a permutation of the coordinates every line of $\PP^3$ is given by two equations
 $$
 x_0=a_2x_2+a_3x_3,\qquad x_1=b_2x_2+b_3x_3
 $$
@@ -358,7 +461,7 @@ If all four of $a_2,a_3,b_2,b_3$ are nonzero, then dividing the square of the th
 Each line of $S$ meets exactly $10$ of the other $26$ lines and is skew to the remaining $16$.
 
 ::: pf-proof
-This is Corollary 11.2(a) of Gathmann, printed p. 91, whose proof is the verification: knowing all the lines from step [](#twenty-seven-lines){.pf-ref}, and using that permuting the coordinates and multiplying them by cube roots of unity takes any line of $S$ to any other, one may assume the given line is $L:\ x_0+x_3=x_1+x_2=0$. The lines of $S$ meeting $L$ are then exactly
+This is Corollary 11.2(a) of Gathmann, whose proof is the verification: knowing all the lines from step [](#twenty-seven-lines){.pf-ref}, and using that permuting the coordinates and multiplying them by cube roots of unity takes any line of $S$ to any other, one may assume the given line is $L:\ x_0+x_3=x_1+x_2=0$. The lines of $S$ meeting $L$ are then exactly
 $$
 x_0+x_3\omega^k=x_1+x_2\omega^j=0\quad\text{with } (j,k)=(1,0),(2,0),(0,1),(0,2),
 $$
@@ -546,7 +649,7 @@ other lines. Coordinate symmetry gives the same count for every $B$- and $C$-lin
 Two skew lines of $S$ are met by exactly $5$ further lines of $S$.
 
 ::: pf-proof
-Gathmann states this as Corollary 11.2(b), printed p. 91, and prints "The proof of part (b) is analogous" for it, so the count is derived here from the criteria of steps [](#same-family-incidence){.pf-ref}, [](#ab-family-incidence){.pf-ref}, [](#ac-family-incidence){.pf-ref} and [](#bc-family-incidence){.pf-ref}, and that derivation is the card's own.
+Gathmann states this as Corollary 11.2(b), and prints "The proof of part (b) is analogous" for it, so the count is derived here from the criteria of steps [](#same-family-incidence){.pf-ref}, [](#ab-family-incidence){.pf-ref}, [](#ac-family-incidence){.pf-ref} and [](#bc-family-incidence){.pf-ref}, and that derivation is the card's own.
 
 Two skew lines lie either in one family or in two. If they are $A_{ab}$ and $A_{cd}$ in the first family, then $a\ne c$ and $b\ne d$ by step [](#same-family-incidence){.pf-ref}. The $A$-lines meeting both are exactly $A_{ad}$ and $A_{cb}$, one for each way of matching the two first exponents with the two second ones. A $B$-line $B_{a'b'}$ meets $A_{ab}$ exactly when $a'-b'\equiv a-b$ and meets $A_{cd}$ exactly when $a'-b'\equiv c-d$, by step [](#ab-family-incidence){.pf-ref}, so it meets both exactly when $a-b\equiv c-d$, and then all three such $B$-lines do; a $C$-line $C_{a'b'}$ meets $A_{ab}$ exactly when $a'\equiv a+b+b'$ and $A_{cd}$ exactly when $a'\equiv c+d+b'$, by step [](#ac-family-incidence){.pf-ref}, so it meets both exactly when $a+b\equiv c+d$, and then all three such $C$-lines do. Writing $x=a-c$ and $y=b-d$, both nonzero, the first condition is $x\equiv y$ and the second is $x\equiv-y$, and $y$ and $-y$ are the two nonzero residues modulo $3$: exactly one of them holds, and the count is $2+3=5$.
 
@@ -559,7 +662,7 @@ If the two lines lie in different families, a transposition of two coordinates p
 No source listed for this card prints a criterion deciding, pair by pair, which lines of the three families meet, nor a result that the two counts determine the configuration.
 
 ::: pf-proof
-Gathmann verifies the incidence relations of the Fermat cubic as the counts of his Corollary 11.2, printed pp. 90--91, and leaves the proof of part (b) as "analogous"; the National Taiwan University set counts intersecting pairs and points of multiplicity three and settles no pair. The criteria above are therefore the card's own, and they answer the exercise's second request without a cited source.
+Gathmann verifies the incidence relations of the Fermat cubic as the counts of his Corollary 11.2, and leaves the proof of part (b) as "analogous"; the National Taiwan University set counts intersecting pairs and points of multiplicity three and settles no pair. The criteria above are therefore the card's own, and they answer the exercise's second request without a cited source.
 :::
 
 :::
@@ -571,11 +674,16 @@ $$
 $$
 
 ::: pf-proof
-The statement is Lemma 5.1 of Dolgachev and Duncan, printed p. 25, and the proof they give for this case is Lemma 5.2 with its proof, printed p. 25. Let $Z=V(x_0^d+\cdots+x_n^d)\subseteq\PP^n$ with $d\ge3$ and $p\nmid d(d-1)$; the Hessian hypersurface of $Z$ is
+The statement is Lemma 5.1 of Dolgachev and Duncan, and the proof they give for this case is Lemma 5.2 with its proof. Let $Z=V(x_0^d+\cdots+x_n^d)\subseteq\PP^n$ with $d\ge3$ and $p\nmid d(d-1)$; the Hessian hypersurface of $Z$ is
 $$
-\operatorname{He}(Z)=\left\{(d(d-1))^n x_0^{d-2}\cdots x_n^{d-2}=0\right\},
+\operatorname{He}(Z)=\left\{(d(d-1))^{n+1} x_0^{d-2}\cdots x_n^{d-2}=0\right\},
 $$
-which is nontrivial under those hypotheses. The Hessian is intrinsic to the projective embedding and not to the choice of coordinates, so a projective automorphism of $Z$ induces one of $\operatorname{He}(Z)$. The automorphisms of the union of the coordinate hyperplanes are generated by permutations of the coordinates and by multiplying coordinates by constants, and for such a transformation to preserve $Z$ those constants must be $d$-th roots of unity. Lemma 5.2, printed p. 25, is stated for the hypersurface $x_0^d+\cdots+x_n^d=0$ in $\PP^n$ with $n\ge4$ and displays the group $d^{n-1}\rtimes\Sigma_n$: as indexed, the group carries one factor of $d$ fewer than the hypersurface has coordinates, and the cubic in this step's coordinates, $x_0^3+\cdots+x_n^3$, is a surface only at $n=3$, below the printed bound. The display is the group of a Fermat hypersurface with $n$ coordinates, which lies in $\PP^{n-1}$, and at four coordinates --- the Fermat cubic in $\PP^3$ --- it gives $3^3\rtimes\Sigma_4$, of order $3^3\cdot4!=648$. That reading, and not the printed indexing of the ambient space, is what is used here, and Lemma 5.1 states the same group for the cubic without any indexing. The same group is printed independently by Dolgachev, Theorem 9.5.7 with Table 9.4, printed pp. 386--387, whose type I is the Fermat surface: its proof reads that an automorphism permutes the planes $t_i+\varepsilon t_j=0$ and that $\Aut(S)$ therefore "consists of permutations of the variables and multiplying the variables by cube roots of unity".
+which is nontrivial under those hypotheses. The exponent is $n+1$, the number of
+coordinates of $Z$, and not the $n$ the lemma prints: the Hessian matrix of
+$x_0^d+\cdots+x_n^d$ is diagonal with entries $d(d-1)x_i^{d-2}$, so its
+determinant is $(d(d-1))^{n+1}x_0^{d-2}\cdots x_n^{d-2}$. The zero locus is the
+same either way, and the argument below uses only that it is the union of the
+coordinate hyperplanes. The Hessian is intrinsic to the projective embedding and not to the choice of coordinates, so a projective automorphism of $Z$ induces one of $\operatorname{He}(Z)$. The automorphisms of the union of the coordinate hyperplanes are generated by permutations of the coordinates and by multiplying coordinates by constants, and for such a transformation to preserve $Z$ those constants must be $d$-th roots of unity. Lemma 5.2, is stated for the hypersurface $x_0^d+\cdots+x_n^d=0$ in $\PP^n$ with $n\ge4$ and displays the group $d^{n-1}\rtimes\Sigma_n$: as indexed, the group carries one factor of $d$ fewer than the hypersurface has coordinates, and the cubic in this step's coordinates, $x_0^3+\cdots+x_n^3$, is a surface only at $n=3$, below the printed bound. The display is the group of a Fermat hypersurface with $n$ coordinates, which lies in $\PP^{n-1}$, and at four coordinates --- the Fermat cubic in $\PP^3$ --- it gives $3^3\rtimes\Sigma_4$, of order $3^3\cdot4!=648$. That reading, and not the printed indexing of the ambient space, is what is used here, and Lemma 5.1 states the same group for the cubic without any indexing. The same group is printed independently by Dolgachev, Theorem 9.5.7 with Table 9.4, whose type I is the Fermat surface: its proof reads that an automorphism permutes the planes $t_i+\varepsilon t_j=0$ and that $\Aut(S)$ therefore "consists of permutations of the variables and multiplying the variables by cube roots of unity".
 :::
 
 :::
@@ -587,7 +695,7 @@ $$
 $$
 
 ::: pf-proof
-This is the second case of Lemma 5.1 of Dolgachev and Duncan, printed p. 25, proved in Section 5.1, printed pp. 25--28. Let $\varphi\colon\FF_4\to\FF_4$ be the Frobenius automorphism $\varphi(x)=x^2$ and let $H$ be the Hermitian form
+This is the second case of Lemma 5.1 of Dolgachev and Duncan, proved in Section 5.1. Let $\varphi\colon\FF_4\to\FF_4$ be the Frobenius automorphism $\varphi(x)=x^2$ and let $H$ be the Hermitian form
 $$
 H(x,y)=\sum_{i=0}^3x_i\varphi(y_i)
 $$
@@ -599,9 +707,11 @@ which is the defining equation of $S$, so the projective special unitary group $
 $$
 \sigma(x_0:x_1:x_2:x_3)=(\varphi(x_0):\varphi(x_1):\varphi(x_2):\varphi(x_3))
 $$
-preserves $S(\FF_4)$ in its diagonal form and permutes the $27$ lines preserving their configuration, so $\sigma$ acts as an element of $W(\mathbf E_6)$, and no element of $\operatorname{PSU}_4(2)$ acts in this way: the action of $\sigma$ is not geometric. Hence $\sigma$ and $\operatorname{PSU}_4(2)$ generate all of $W(\mathbf E_6)$.
+preserves $S(\FF_4)$ in its diagonal form and permutes the $27$ lines preserving their configuration, so $\sigma$ acts as an element of $W(\mathbf E_6)$.
 
-The source's last step, unpacked: the action on the $27$ lines gives an injection $\Aut(S)\to W(\mathbf E_6)$ (Section 1, printed pp. 3--4), and $\operatorname{PSU}_4(2)$ has index $2$ in $W(\mathbf E_6)$, so a subgroup of $W(\mathbf E_6)$ containing $\operatorname{PSU}_4(2)$ is either $\operatorname{PSU}_4(2)$ itself or all of $W(\mathbf E_6)$. The second alternative would make every element of $W(\mathbf E_6)$ geometric and in particular $\sigma$, which the previous paragraph denies. So $\Aut(S)=\operatorname{PSU}_4(2)$.
+The assertion that carries the rest of the argument is that $\sigma$ is not geometric, that is, that no projective linear map of $\PP^3$ taking $S$ to itself induces its permutation of the $27$ lines; this is the source's "the action of $\sigma$ is not geometric", and it is checked here. A matrix $A$ induces that permutation exactly when $A(L)$ and $\sigma(L)$ have the same annihilator for each of the $27$ lines $L$, which is two linear conditions on the $16$ entries of $A$ per line, $54$ conditions in all; solving them over $\FF_4$ leaves only $A=0$. So $\sigma$ is not geometric, and in particular no element of $\operatorname{PSU}_4(2)$, all of whose elements are geometric, acts as $\sigma$ does. Hence $\sigma$ and $\operatorname{PSU}_4(2)$ generate all of $W(\mathbf E_6)$.
+
+The source's last step, unpacked: the action on the $27$ lines gives an injection $\Aut(S)\to W(\mathbf E_6)$ (Section 1), and $\operatorname{PSU}_4(2)$ has index $2$ in $W(\mathbf E_6)$, so a subgroup of $W(\mathbf E_6)$ containing $\operatorname{PSU}_4(2)$ is either $\operatorname{PSU}_4(2)$ itself or all of $W(\mathbf E_6)$. An automorphism of $S$ is induced by a projective linear map, since $-K_S=\OO_S(1)$ is very ample and a cubic surface is its anticanonical model, so the automorphisms of $S$ are exactly the geometric elements of $W(\mathbf E_6)$. The second alternative would therefore make every element of $W(\mathbf E_6)$ geometric and in particular $\sigma$, which the previous paragraph denies. So $\Aut(S)=\operatorname{PSU}_4(2)$.
 :::
 
 :::
@@ -610,7 +720,7 @@ The source's last step, unpacked: the action on the $27$ lines gives an injectio
 If $\operatorname{char}k=3$, the equation defines a nonreduced triple plane and the exercise's question has no smooth surface to ask it of.
 
 ::: pf-proof
-In characteristic $3$ the Frobenius is additive, so $x_0^3+x_1^3+x_2^3+x_3^3=(x_0+x_1+x_2+x_3)^3$. Dolgachev and Duncan record this at the opening of Section 5, printed p. 24, and in Section 1.3, printed p. 6, where the Fermat cubic is named as the unique surface carrying an automorphism of class $3C$ and is said not to be reduced when $p=3$, the $3C$ stratum then being empty. Their Table 1, printed p. 4, gives the $3C$ row the group $3^3\rtimes\Sigma_4$ of order $648$ in characteristic not $2$ or $3$ and $\operatorname{PSU}_4(2)$ of order $25920$ in characteristic $2$, and has no entry in characteristic $3$.
+In characteristic $3$ the Frobenius is additive, so $x_0^3+x_1^3+x_2^3+x_3^3=(x_0+x_1+x_2+x_3)^3$. Dolgachev and Duncan record this at the opening of Section 5, and in Section 1.3, where the Fermat cubic is named as the unique surface carrying an automorphism of class $3C$ and is said not to be reduced when $p=3$, the $3C$ stratum then being empty. Their Table 1 gives the $3C$ row the group $3^3\rtimes\Sigma_4$ of order $648$ in characteristic not $2$ or $3$ and $\operatorname{PSU}_4(2)$ of order $25920$ in characteristic $2$, and has no entry in characteristic $3$.
 :::
 
 :::
@@ -623,13 +733,25 @@ Step [](#twenty-seven-lines){.pf-ref} gives the equations of the $27$ lines; ste
 :::
 
 ::: {.remark title="Published solutions"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.16, printed p. 409: the equations of the twenty-seven lines, a verification of their incidence relations, and the group of automorphisms.
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.16: the equations of the twenty-seven lines, a verification of their incidence relations, and the group of automorphisms.
 
-Andreas Gathmann, *Algebraic Geometry* (2014), Chapter 11, is the source of the lines and of the incidence count. Lemma 11.1, printed p. 90, contains the whole coefficient argument that produces exactly $27$ lines on the Fermat cubic and prints the three families; Corollary 11.2, printed pp. 90--91, then proves that exactly $10$ other lines meet a given one, working one line out in full after reducing by a coordinate permutation and multiplications by cube roots of unity, and states that exactly $5$ lines meet two given skew ones with the proof given as "analogous", which step [](#two-skew-lines-meet-five){.pf-ref} derives from the criteria of the three families. What Gathmann does not print is a criterion deciding, for each pair of the three families, whether the two lines meet; the incidence relations he verifies are the two counts. His chapter works over $\CC$; the argument uses only a primitive cube root of unity and $3\ne0$.
+Andreas Gathmann, *Algebraic Geometry* (2014), Chapter 11, is the source of the lines and of the incidence count. Lemma 11.1, contains the whole coefficient argument that produces exactly $27$ lines on the Fermat cubic and prints the three families; Corollary 11.2, then proves that exactly $10$ other lines meet a given one, working one line out in full after reducing by a coordinate permutation and multiplications by cube roots of unity, and states that exactly $5$ lines meet two given skew ones with the proof given as "analogous", which step [](#two-skew-lines-meet-five){.pf-ref} derives from the criteria of the three families. What Gathmann does not print is a criterion deciding, for each pair of the three families, whether the two lines meet; the incidence relations he verifies are the two counts. His chapter works over $\CC$; the argument uses only a primitive cube root of unity and $3\ne0$.
 
-Igor V. Dolgachev and Alexander Duncan, *Automorphisms of cubic surfaces in positive characteristic*, gives the automorphism group in every characteristic. Theorem 1.1 with Table 1, printed pp. 3--4, lists the possible groups by stratum: the row $3C$ has $3^3\rtimes\mathfrak S_4$ of order $648$ for $\operatorname{char}k\ne2,3$ and $\operatorname{PSU}_4(2)$ of order $25920$ for $\operatorname{char}k=2$, and has no entry for $\operatorname{char}k=3$. Lemma 5.1, printed p. 25, states both values for the Fermat cubic itself; Lemma 5.2 with its proof, printed p. 25, is the Hessian argument for the first, and Section 5.1, printed pp. 25--28, is the Hermitian-form and Frobenius argument for the second. Section 1.3, printed p. 6, records the same two facts in words: the Fermat cubic is the unique surface with an automorphism of class $3C$, it is not reduced when $p=3$ and the $3C$ stratum is then empty, its group is generated by permutations and by multiplying coordinates by third roots of unity when $p\ge5$, and it is $\operatorname{PSU}_4(2)$ of order $25920$ when $p=2$.
+Igor V. Dolgachev and Alexander Duncan, *Automorphisms of cubic surfaces in positive characteristic*, gives the automorphism group in every characteristic. Theorem 1.1 with Table 1, lists the possible groups by stratum: the row $3C$ has $3^3\rtimes\mathfrak S_4$ of order $648$ for $\operatorname{char}k\ne2,3$ and $\operatorname{PSU}_4(2)$ of order $25920$ for $\operatorname{char}k=2$, and has no entry for $\operatorname{char}k=3$. Lemma 5.1, states both values for the Fermat cubic itself; Lemma 5.2 with its proof, is the Hessian argument for the first, and Section 5.1, is the Hermitian-form and Frobenius argument for the second. Section 1.3, records the same two facts in words: the Fermat cubic is the unique surface with an automorphism of class $3C$, it is not reduced when $p=3$ and the $3C$ stratum is then empty, its group is generated by permutations and by multiplying coordinates by third roots of unity when $p\ge5$, and it is $\operatorname{PSU}_4(2)$ of order $25920$ when $p=2$.
 
-Igor V. Dolgachev, *Topics in Classical Algebraic Geometry*, Theorem 9.5.7 with Table 9.4, printed pp. 386--387, classifies all automorphism groups of nonsingular cubic surfaces in characteristic zero and lists the Fermat surface as type I with group $3^3:\mathfrak S_4$ of order $648$; his proof of that row is the permutation-of-planes argument quoted at step [](#automorphism-group-not-two-three){.pf-ref}. That duplicates the characteristic-zero half of Dolgachev--Duncan's Lemma 5.1 in a second printed place.
+Igor V. Dolgachev, *Topics in Classical Algebraic Geometry*, Theorem 9.5.7 with Table 9.4, classifies all automorphism groups of nonsingular cubic surfaces in characteristic zero and lists the Fermat surface as type I with group $3^3:\mathfrak S_4$ of order $648$; his proof of that row is the permutation-of-planes argument quoted at step [](#automorphism-group-not-two-three){.pf-ref}. That duplicates the characteristic-zero half of Dolgachev--Duncan's Lemma 5.1 in a second printed place.
 
-The nearest published attempt at the exercise itself remains Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework, exercise 16 of Section 4 (by Po-Sheng Wu), printed pp. 18--19. It gives the $27$ lines as $x_0+\omega^ix_1=x_2+\omega^jx_3=0$ over the three coordinate pairings, which agrees with step [](#twenty-seven-lines){.pf-ref}, and describes the group as $\operatorname{diag}(1,\omega^i,\omega^j,\omega^k)$ composed with a permutation of the coordinates, which agrees with step [](#automorphism-group-not-two-three){.pf-ref}; it states no order, assumes $\operatorname{char}k\ne2$ where the lines need $\operatorname{char}k\ne3$, equates the two products $(x_0+x_1)(x_0+\omega x_1)(x_0+\omega^2x_1)$ and $(x_2+x_3)(x_2+\omega x_3)(x_2+\omega^2x_3)$ where the Fermat cubic is their sum, and lists the $18$ triple points as $(1,\omega^i,0,0)$ and its permutations, which are not on the surface, their cubes summing to $2$ rather than $0$.
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.16, covers the
+exercise's first part only. Writing a line of $\PP^3$ as $a_0x_2+b_0x_3-x_0=a_1x_2+b_1x_3-x_1=0$
+and substituting into $x_0^3+x_1^3+x_2^3+x_3^3$, it gets $a_0^3+a_1^3=-1$, $b_0^3+b_1^3=-1$,
+$a_0^2b_0+a_1^2b_1=0$ and $a_0b_0^2+a_1b_1^2=0$, and lists the $27$ lines as
+$x_0+\omega^kx_3=x_1+\omega^jx_2=0$, $x_0+\omega^kx_2=x_3+\omega^jx_1=0$ and
+$x_0+\omega^kx_1=x_3+\omega^jx_2=0$ over $0\le j,k\le2$, the three coordinate pairings of step
+[](#twenty-seven-lines){.pf-ref}. Its reduction to $a_0=0$ omits the argument that some coefficient
+must vanish — if all four are nonzero the last two equations give $a_0/b_0=a_1/b_1$ and then
+$b_0^3+b_1^3=0$ — and the coordinate symmetry of the Fermat cubic supplies the rest. It says nothing
+of the incidence relations or of the automorphism group, so it covers part (a) of the exercise and
+neither (b) nor (c).
+
+The nearest published attempt at the exercise itself remains Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework, exercise 16 of Section 4 (by Po-Sheng Wu). It gives the $27$ lines as $x_0+\omega^ix_1=x_2+\omega^jx_3=0$ over the three coordinate pairings, which agrees with step [](#twenty-seven-lines){.pf-ref}, and describes the group as $\operatorname{diag}(1,\omega^i,\omega^j,\omega^k)$ composed with a permutation of the coordinates, which agrees with step [](#automorphism-group-not-two-three){.pf-ref}; it states no order, assumes $\operatorname{char}k\ne2$ where the lines need $\operatorname{char}k\ne3$, equates the two products $(x_0+x_1)(x_0+\omega x_1)(x_0+\omega^2x_1)$ and $(x_2+x_3)(x_2+\omega x_3)(x_2+\omega^2x_3)$ where the Fermat cubic is their sum, and lists the $18$ triple points as $(1,\omega^i,0,0)$ and its permutations, which are not on the surface, their cubes summing to $2$ rather than $0$.
 :::

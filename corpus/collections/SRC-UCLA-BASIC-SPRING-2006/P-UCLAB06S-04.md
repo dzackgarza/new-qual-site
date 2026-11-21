@@ -5,7 +5,8 @@ kind: problem
 title: Implicit function theorem for $x^2y^3+x^3z+2yz^4=4$ at $(1,1,1)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Implicit Function Theorem
 relations: []
 review: draft
 audit:

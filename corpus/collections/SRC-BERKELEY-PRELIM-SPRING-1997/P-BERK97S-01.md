@@ -23,6 +23,13 @@ audit:
   note: >-
     Verified eventual monotonicity, the condensation reduction, and all
     boundary cases in alpha and beta.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained source: the statement is Problem 1 of the Preliminary Exam, Spring 1997 (`assets/attachments/Spring97.pdf`), and the printed words are
+    the card's. The problem number and the file are now named in the solution's opening sentence.
+    Not checked in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -34,6 +41,7 @@ converge?
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Spring 1997, retained in this repository as `assets/attachments/Spring97.pdf`, and the statement below is its wording.
 Put
 $$
 a_n\coloneqq\frac{1}{n^\alpha(\log n)^\beta}.

@@ -21,12 +21,12 @@ prompts:
 ---
 
 ::: {.definition title="flat"}
-An $A$-module $N$ is \dfn{flat} if the functor $\wait \tensor_A N$ is exact.
+An $A$-module $N$ is \dfn{flat} if the functor $-\tensor_A N$ is exact.
 An $A$-algebra $B$ is flat if it is flat as an $A$-module.
 :::
 
 ::: {.remark}
-Since $\wait \tensor_A N$ is right exact, $N$ is flat if and only if for every injection $M' \injects M$, the induced map $M' \tensor_A N \to M \tensor_A N$ is injective.
+Since $-\tensor_A N$ is right exact, $N$ is flat if and only if for every injection $M' \injects M$, the induced map $M' \tensor_A N \to M \tensor_A N$ is injective.
 
 Free $\implies$ projective $\implies$ flat, and neither implication reverses in general.
 Over $A=\ZZ/6$, the module $\ZZ/2$ is projective, being a direct summand of $A\cong\ZZ/2\times\ZZ/3$, and not free.

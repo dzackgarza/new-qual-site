@@ -32,7 +32,15 @@ audit:
     blocks at 1 are 3 and 1 (the partition (2,2) would give kernel dimension 4), the
     eigenvalue 2 contributes a single 1 by 1 block, m_A = (x-1)^3(x-2), and (b) is
     J = diag(1,1,1,1,2) + N_J with N_J^3 = 0. No defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 11, midterm 6(a),(b). The block
+    form gives $\chi_A=(x-1)^2\cdot(x-1)^2(x-2)=(x-1)^4(x-2)$; $\ker(A-I)$ has dimension $2$
+    and $\ker(A-I)^2$ dimension $3$, so the blocks at $1$ are $3$ and $1$ (a $(2,2)$ partition
+    would give kernel dimension $4$); eigenvalue $2$ gives a single block; $m_A=(x-1)^3(x-2)$;
+    and $J=\operatorname{diag}(1,1,1,1,2)+N_J$ with $N_J^3=0$. No defect.
 ---
 
 ::: {.exercise}

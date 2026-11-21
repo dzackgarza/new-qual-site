@@ -5,7 +5,9 @@ kind: problem
 title: Evaluation functionals and interpolatory quadrature
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Interpolation
+  - Linear Functionals
 relations: []
 review: draft
 audit:

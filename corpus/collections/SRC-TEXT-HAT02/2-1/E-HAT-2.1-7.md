@@ -25,6 +25,18 @@ audit:
   date: 2026-10-31
   note: >-
     Read the join description and the pairings: collapsing each edge of the join gives $S^1*S^1\cong S^3$, and the affine face pairings preserve vertex order, so the quotient carries a $\Delta$-complex structure with one 3-simplex.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 7 of §2.1, in the block printed on pp. 131--133. Correct: with
+    $\Delta^3=[v_0,v_1]*[v_2,v_3]$ and the two stated pairings the quotient is
+    $S^1*S^1\cong S^3$ (the join map to the unit sphere of $\CC^2$), and the pairings are affine
+    and order-preserving, so a $\Delta$-complex with one $3$-simplex results. The chain groups have
+    ranks $2,3,2,1$; $\partial P=b$, $\partial Q=a$, $\partial a=\partial b=0$, $\partial c=B-A$ and
+    $\partial_3\sigma=0$, so $H_0=\ZZ$, $H_1=(a,b)/(a,b)=0$, $H_2=0$, $H_3=\ZZ$ — the homology of
+    $S^3$ in its stated degrees. Nothing changed. Not claimed: a published solution, and no
+    certificate.
 ---
 
 ::: {.problem}

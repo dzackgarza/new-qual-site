@@ -6,7 +6,9 @@ title: Dirichlet test for series
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Series of Numbers
+  - Convergence Tests
 relations: []
 review: draft
 ---

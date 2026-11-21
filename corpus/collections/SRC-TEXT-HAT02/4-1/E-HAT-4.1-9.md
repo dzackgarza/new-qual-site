@@ -1,4 +1,6 @@
 ---
+
+
 schema: qual/card@1
 id: E-HAT-4.1-9
 kind: problem
@@ -11,6 +13,384 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    #161, part (a)'s Claim 1, which the reader refuted. The claim read: if the vertical maps at
+    $\pi_0(A,x_0)$ and at $\pi_0(X,A,x_0)$ are bijections, then so is
+    $\Phi:\pi_0(X,x_0)\to\pi_0(Y,y_0)$; its injectivity step passed from $\Phi[x_1]=\Phi[x_2]$, an
+    equality in $\pi_0(Y,y_0)$, to the equality of $[\varphi(a_1)]$ and $[\varphi(a_2)]$ in
+    $\pi_0(B,y_0)$ from which injectivity of the map at $\pi_0(A,x_0)$ recovers $[a_1]=[a_2]$. That
+    passage needs a path in $B$ between the two images, and the two $\pi_0$ hypotheses supply only a
+    path in $Y$; the counterexample is now on the card, $X=A=\{a_1,a_2\}$ discrete, $Y=[0,1]$,
+    $B=\{0,1\}$, $\varphi(a_1)=0$, $\varphi(a_2)=1$, where both cited maps are bijections of
+    two-point and one-point sets and $\Phi$ is two points to one. Claim 1 now states the four
+    surrounding maps of its own window --- the vertical maps at $\pi_1(X,A,a)$ and at $\pi_0(A,a)$
+    for every $a\in A$, at $\pi_0(X,A,x_0)$ and at the terminal $0$ --- and proves both directions
+    step by step. Surjectivity uses the maps at $\pi_0(A,x_0)$ and at $\pi_0(X,A,x_0)$ only.
+    Injectivity uses the map at $\pi_1(X,A,a_2)$ at the point $a_2$ that the argument produces, the
+    map at $\pi_0(A,x_0)$ and the map at $\pi_0(X,A,x_0)$: the path $\omega$ in $Y$ from
+    $\varphi(a_1)$ to $\varphi(a_2)$ is lifted by surjectivity at $\pi_1(X,A,a_2)$, and the lifted
+    relative homotopy carries its start point along a path in $B$ from $\varphi(a_3)$ to
+    $\varphi(a_1)$, which is the equality in $\pi_0(B,y_0)$ the old step assumed. The paragraph
+    after Claim 2 that recorded the two claims' hypotheses now names the $\pi_1$ family, and the two
+    later references to Claim 1 --- in the window inventory of part (a) and in the Sources remark ---
+    were re-read and remain true of the repaired statement. Checked: the definition of
+    $\pi_0(X,A,x_0)$ as the quotient collapsing exactly the components meeting $A$, the definition
+    of $\pi_1(X,A,a)$ as classes of paths from a point of $A$ to $a$ under homotopies that keep the
+    endpoint and move the start point in $A$, every term of the counterexample, and the two later
+    mentions of Claim 1. Not checked: no retained solution set states the exercise, so the repaired
+    argument is the card's own, as the provenance paragraph says; and the Lean declarations linked
+    on the card were not re-elaborated.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    #161, the acceptance's second clause, sentence by sentence. The clause is read as the card's own
+    claim, and QUAL-11 governs the record: each of the six sentences below stands in a dated event as
+    what that session found on its day and is not edited, and each is named here with the step of the
+    present solution that supersedes it. (1) The third pass of 2026-11-16, "the surjectivity half is
+    open there", of the window centred at $\pi_2(X,A,x_0)$: superseded by that window's coset lemma,
+    the paragraph opening "The surjectivity half needs a fact about the boundary map that the abstract
+    five-lemma does not see", together with the paragraph opening "Now let $c'\in\pi_2(Y,C)$", which
+    closes the window with $c'=\gamma(g(b)a)$. (2) The same event, "Printed part (b) remains unproved
+    at the two $\pi_1$ pointed-set windows": superseded by the *Surjectivity* paragraphs of the
+    windows centred at $\pi_1(A,B,x_0)$ and at $\pi_1(X,B,x_0)$, which lift a relative $2$-disk and a
+    reversed starting edge respectively. (3) The third pass continued of 2026-11-16, "neither
+    direction of the exercise's claim is proved": superseded by the *Injectivity* and *Surjectivity*
+    paragraphs of both those windows, four arguments in all. (4) The fourth pass of 2026-11-16,
+    "remain unproved as claims": superseded by the same four arguments. (5) The fifth pass of
+    2026-11-16, "their surjectivity halves are not proved": superseded by the two *Surjectivity*
+    paragraphs. (6) The sixth pass of 2026-11-16, "The surjectivity halves remain unproved":
+    superseded by the same two. The prose of the solution and of the remark asserts no open half at
+    any window, and the four set-valued windows of the triple ladder are proved in both directions.
+    Checked: each of the six phrases against the event that carries it, and each superseding step
+    against the solution's own heading for it. Not checked: the Lean declarations linked on the card
+    were not re-elaborated.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    #161, the 2026-11-20 reader's report, the two items that name a line of the proof. (1) The
+    converse of the coset lemma justified $q(\alpha')=q(\alpha)$ for $\alpha'=\beta\cdot\alpha$ by
+    calling $\beta\cdot\alpha$ and $\alpha$ homotopic rel endpoints in $A$; that is false, and the
+    wedge-of-two-intervals sentence that said so is withdrawn. The step is replaced by the homotopy
+    now displayed in the lemma: it runs from $\beta\cdot\alpha$ to $\alpha$, keeps the endpoint at
+    $x_0$, and moves the start point along $\beta$ inside $B$, which is exactly the freedom a
+    relative path has under Hatcher's definition of $\pi_1(A,B,x_0)$ in §4.1. For $A=B=S^1$ with $\alpha$ the
+    constant loop and $\beta$ the generator the two loops are not homotopic rel endpoints, which is
+    why the moving start point is needed; the same formula is used at $\lambda\cdot q$ in the
+    surjectivity argument at $\pi_1(A,B,x_0)$. The conclusion $q(\alpha')=q(\alpha)$, the coset lemma
+    and the surjectivity half at the $\pi_2(X,A,x_0)$ window are unchanged. (2) The census of retained
+    solution sets in the remark now names the retained copy of each set and the §4.1 exercises it
+    contains, re-read in this pass: DeMason §4.1 Exercises 2, 8 and 11, Sam
+    Exercises 2, 3, 5, 10, 11, 12, 13, 14, 19 and 20, Proudfoot Exercises 4, 11, 12, 14 and 15, Li
+    Exercise 1 with no solution written, Koukpari Exercise 1, and Poulsen nothing in §4.1. No
+    retained set treats Exercise 9, so there is no transcription of it to make; the exactness half
+    remains the transcription of Hatcher's proof of Theorem 4.3 and the five-lemma half the card's
+    own argument under the re-derivation rule. Checked: the homotopy's boundary conditions at every
+    $(s,t)$, and every exercise number above against the retained file named. Not checked: the Lean
+    declarations linked on the card were not re-elaborated, and no source outside the retained sets
+    was read. (3) The card now cites by numbered statement only. The page references it carried,
+    including those the events of this date carried, are replaced by the section, theorem,
+    corollary, example, problem and exercise numbers they name --- §4.1, Theorem 4.3, §3.A, §1,
+    Theorem 4.9, Corollary 4.11, Example 4.10, §6.1 Problem 3, §6.2 Problem 3 and §4.1 Exercise 9
+    --- with no change to any finding or mathematical claim. One citation needed a second pass:
+    naturality is not part of Theorem 4.3, which states exactness only, but the paragraph of §4.1
+    that follows Example 4.4, and the two places that read "naturality in Theorem 4.3" now read
+    "naturality of the long exact sequence, stated in §4.1 after Example 4.4". The events dated
+    before this one keep the page references they were written with, which QUAL-11 does not allow
+    this commit to rewrite.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    #161, the reader's report of this date, item by item. (1) The action. Hatcher's §4.1 gives an
+    action of $\pi_1(A,x_0)$ on $\pi_n(X,A,x_0)$, and for $n=1$ the class $c\cdot\nu$ is the class
+    of $c$ followed by the loop $\nu$; this is a right action, Hatcher's left action differing
+    from it only by inversion of the loop. The correction $c\cdot\nu$ at $\pi_1(A,B,x_0)$ is taken in
+    this action. The correction $\rho\cdot r$ at $\pi_1(X,B,x_0)$ is not: $\rho$ runs from a point
+    of $B$ to $b_0$ and $r$ from $b_0$ to $x_0$, so $\rho\cdot r$ is ordinary concatenation of
+    relative paths at the interior point $b_0$. The sentence of the 2026-11-20 event below this one
+    that called $\rho\cdot r$ a product in an action of $\pi_1(X,x_0)$, and the sentence that made
+    a basepoint fibre a union of orbits by equivariance alone, are withdrawn: that conclusion needs
+    the target's basepoint fixed, which fails at $\pi_1(A,B,x_0)$, and no orbit decomposition
+    other than the coset lemma is used. (2) The degenerate case. With
+    $B=\{x_0\}$ part (b) has the conclusion of part (a) at $x_0$ under a weaker hypothesis, not
+    under the same one:
+    part (a) requires the four bijections at every point of $A$, part (b) only at the sole point of
+    $B$. The solution now says that; the four-window proofs are unchanged. (3) The published
+    solution. No retained set covers the exercise --- DeMason treats §4.1 Exercises 2, 8 and 11,
+    Sam 2, 3, 5, 10, 11, 12, 13, 14, 19 and 20, Li stops at Exercise 1 without a solution, Proudfoot
+    4, 11, 12, 14 and 15, Poulsen before §4.1, and Koukpari at Exercise 1 --- so the five-lemma half is the card's own, as
+    the solution's provenance paragraph says; the exactness half is Hatcher's proof of Theorem
+    4.3. (4) The acceptance's second clause. The solution and the remark contain no sentence
+    asserting an outstanding half; the events of 2026-11-14, 2026-11-16 and 2026-11-19 that do are
+    dated records of those days, kept under QUAL-11 and superseded by the proofs now on the card.
+    The current state is stated here: every term of the triple sequence is proved exact and both
+    halves of the five-lemma are proved at all four set-valued windows.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    #161, the pointed-set action, cited to Hatcher. Hatcher's §4.1 records that $\pi_1(A,x_0)$ acts on
+    $\pi_n(X,A,x_0)$ for every $n\ge1$ and on the whole long exact sequence, the action commuting with
+    its maps, read in the section's own text. The
+    solution now states, before the windows, the two instances it uses --- the left action of
+    $\pi_1(B,x_0)$ on $\pi_1(A,x_0)$ through $i_*$, whose orbits are the fibres of $q$ and which is the
+    coset lemma at $\pi_2(X,A,x_0)$, and the action of $\pi_1(A,x_0)$ on $\pi_1(A,B,x_0)$ and
+    $\pi_1(X,B,x_0)$ by concatenation at the endpoint, in which the surjectivity corrections
+    $c\cdot\bar\nu$ and $\rho\cdot r$ are taken --- and that the vertical maps preserve these actions.
+    Exactness at a pointed-set term is recorded there as the image-equals-fibre statement, the fibre
+    being a union of orbits. Nothing else changed: the two $\pi_1$ windows keep the full injectivity and
+    surjectivity proofs of the previous pass. No half at any set-valued window is open.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    #161, the state of the record, and the reconciliation the acceptance asks for. The notes below this
+    one which assert a half of a set-valued window to be open, with the phrase each uses: 2026-11-14,
+    "The windows centred at $\pi_1(A,x_0)$ and $\pi_1(X,x_0)$ are not [settled]"; 2026-11-14, "is not
+    proved on this card"; 2026-11-16, "states that the surjectivity halves are not established, with the
+    reason (the difference of two classes over the same image in $\pi_1(Y,D)$ is a path in $C$ between
+    interior points, not a class ending at the basepoint)"; 2026-11-16, "surjectivity half is open
+    there. The withdrawal stands at the two $\pi_1$ pointed-set windows"; 2026-11-16, "Printed part (b)
+    remains unproved at the two"; 2026-11-16, "remain unproved as claims"; and 2026-11-16, "The
+    surjectivity halves remain unproved". Each is superseded by the proofs now in part (b) of the
+    solution, and the reason quoted in the third of them is exactly the step those proofs take: the
+    difference of two classes over the same image in $\pi_1(Y,D)$ is a path in $C$, and what turns it
+    into a class ending at the basepoint is the relative $2$-disk the surjectivity paragraph builds from
+    the square $H$ --- its boundary in $C$ supplies $\partial\eta$, the lift $\mu$ of $\eta$ gives
+    $\nu=\partial\mu$, and $c\cdot\bar\nu$ is the corrected class. At the window centred at
+    $\pi_2(X,A,x_0)$ that step is the coset lemma, $h=q\circ\partial$ with $\partial$ a homomorphism and
+    $q$ the map of the pair sequence, so the fibres of $h$ are the cosets of $\ker h$ --- the argument
+    COMPLAINTS.md records for that window. At each of the four set-valued windows the solution now
+    states what exactness means there before proving both halves. Part (a)'s two set-valued terms remain
+    carried by the declarations of lean-categories#156, cited on the card and not restated, and were not
+    re-elaborated in this pass. No half at any set-valued window of the triple ladder is open.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    #161. The three exactness arguments for degrees $n\ge2$ were cited to Hatcher's proof of Theorem
+    4.3 and are now transcribed on the card, with the compression criterion's two directions stated
+    once (printed pp. 343--344) and used in each: at $\pi_n(X,B,x_0)$ to replace a class that vanishes
+    in $\pi_n(X,A,x_0)$ by a map with image in $A$; at $\pi_n(X,A,x_0)$ to tack a homotopy of the face
+    $I^{n-1}$ onto a relative cube; and at $\pi_n(A,B,x_0)$ to tack $g$ onto $f$ after reparametrizing
+    the $n$-th and $(n+1)$-st coordinates. With this the card proves exactness at every term of the
+    triple sequence from its own text, instead of referring the reader to the book for the group
+    degrees; the degree-one cases remain the three bullets that follow, and the sentence introducing
+    the block now says that the transcription follows. Nothing else changes. Checked line by line
+    against Hatcher's criterion and three paragraphs on printed pp. 343--345. Not checked: no new
+    source, and the Lean declarations were not re-elaborated.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    #161, the state of the record, so that the second clause of the acceptance ("no note on the card
+    says a half is open") can be read off the audit rather than found by searching it. Six events
+    assert openness, each as the finding of its own day: 2026-11-14, "Withdraws the two counterexamples
+    added earlier today" (the question open at $\pi_1(X,A,x_0)$ and $\pi_0(A,x_0)$); 2026-11-14,
+    "Three statements were wrong and are repaired" (a set-valued five-lemma for the triple not proved
+    on the card); 2026-11-16 third pass, "The withdrawal stands at the two $\pi_1$ pointed-set
+    windows" and "Printed part (b) remains unproved at the two $\pi_1$ pointed-set windows"; 2026-11-16
+    third pass continued, "Open, and stated as open: both directions at those two $\pi_1$ pointed-set
+    windows"; 2026-11-16 fourth pass, "The two windows centred at the pointed sets
+    $\pi_1(A,B,x_0)$ and $\pi_1(X,B,x_0)$ remain unproved as claims"; and 2026-11-16 fifth and sixth
+    passes, "their surjectivity halves are not proved" and "The surjectivity halves remain unproved".
+    Each is superseded, and the pairs are: the two $\pi_1(X,A,x_0)$ and $\pi_0(A,x_0)$ windows by the
+    2026-11-14 event beginning "The printed (a) is now stated as proved at both set-valued terms",
+    whose certificate is the `lean-categories` declarations; the two $\pi_1$ windows of the triple by
+    the three events of 2026-11-16 at the head of this list, which prove the two surjectivity halves
+    by explicit homotopies, prove full injectivity at both windows, and withdraw the sentence "The
+    surjectivity halves remain unproved"; and the remaining caution in the fifth- and sixth-pass
+    events by the same three. This date's events then add what those did not: exactness at the three
+    degree-one terms, the all-basepoints clause as a stated hypothesis with the example that makes it
+    necessary, the published sources, and the end-to-end review. No event of this date, and none of
+    the three 2026-11-16 events at the head of the list, asserts any half of the five-lemma or any
+    instance of exactness to be open. The earlier six stand as the record of their days and are not
+    edited (QUAL-11).
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    #161. The card now checks its two parts against each other in the one case where they overlap.
+    With $B=\{x_0\}$ and $D=\{y_0\}$ the triple sequence is the pair sequence of $(X,A)$ and
+    $\pi_0(A,B,x_0)=\pi_0(A,x_0)$, so part (b) is part (a) there; its four set-valued windows are the
+    windows of part (a) centred at $\pi_2(X,x_0)$, $\pi_2(X,A,x_0)$, $\pi_1(A,x_0)$ and
+    $\pi_1(X,x_0)$, and the two hypotheses agree, "bijective at every basepoint of $B$" becoming
+    "bijective at $x_0$". The windows part (a) has beyond those exist only in that degenerate case,
+    where the sequence continues by the two steps to $\pi_0(X,x_0)$ that Hatcher notes after the
+    triple display and then by the terminal term of part (a); the general triple has no such
+    continuation, which is the card's example. The four-window inventory of part (b), repaired in the
+    earlier passes of this date, is unchanged and is consistent with this. Checked against Hatcher's
+    display and the sentence after it on printed p. 344 and the exercise on printed p. 358. Not
+    checked: no new source, and the Lean declarations were not re-elaborated.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    #161. The Brown paragraph of the remark was read line by line against the text version and now
+    carries the passage that matters most for this card's claim. Verified as stated: 4.9(a), printed
+    p. 121, concludes that $f:\pi_0F\to\pi_0F'$ is surjective when $h:H\{v\}\to H'\{v'\}$, and
+    $g:\pi_0G\to\pi_0G'$ are surjective and $h:\pi_0H\to\pi_0H'$ is injective; 4.9(b) concludes that
+    $f$ is injective on $\ker(i:\pi_0F\to\pi_0G)$ when $h:H\{v\}\to H'\{v'\}$ is injective and
+    $g:G\{x\}\to G'\{x'\}$ is surjective; and Corollary 4.11, printed p. 123, forces $f:F\to F'$ to be
+    an equivalence when $h$ and $g$ are, its proof applying 4.9 to get $\pi_0F\cong\pi_0F'$ and then
+    "the ordinary 5-lemma for groups" to diagram 4.8 for the vertex groups. Added: Brown's own remark
+    after 4.9 and his Example 4.10, printed p. 122, which show that the groupoid analogue is strictly
+    weaker --- the hypotheses of 4.9(b) do not make $f:\pi_0F\to\pi_0F'$ injective even when
+    $g:\pi_0G\to\pi_0G'$ is injective --- so the groupoid statement cannot stand in for the
+    space-level one at the pointed-set terms. Not changed: no argument on the card uses Brown.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    #161. The Lean caveat made precise, so that a later pass does not have to rediscover it. The two
+    declarations this card links were read at the pinned commit `9b8b85840c` and their signatures
+    match what the remark says of them: `relativePiOne_map_bijective` takes $\pi_0(A)\to\pi_0(B)$,
+    $\pi_1(X,a)\to\pi_1(Y,fa)$ and $\pi_1(A,a)\to\pi_1(B,fa)$ bijective for every $a\in A$ together
+    with $\pi_0(X)\to\pi_0(Y)$ bijective, and concludes $\pi_1(X,A,x_0)\to\pi_1(Y,B,y_0)$ bijective;
+    `zerothHomotopySubtypeMap_bijective` is the $\pi_0(A,x_0)$ term, with the vertical maps at
+    $\pi_1(X,A,a)$, at $\pi_1(X,a)$ for every $a$, at $\pi_0(X)$ and at $\pi_0(X,A,x_0)$ as its four.
+    Re-elaboration is not possible in this image: no repository under
+    `$HOME/sage-image/rootfs/repos` has a built Mathlib (none has
+    `.lake/build/lib/lean/Mathlib`), so a Mathlib-importing file cannot be checked there, and the
+    host toolchain at `/opt` is not the pinned baseline and may not be cited as one. What would
+    settle it is a checkout of `lean-categories` at the pinned commit with its pinned Mathlib built;
+    the corpus gate's link check already resolves the declaration URL at that commit.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Full read-through of the card after this date's repairs, against Hatcher's printed pp. 343--345
+    and the exercise on printed p. 358. Re-read and accepted: part (a)'s chases at the five group
+    windows, the four surrounding maps recorded for each set-valued term, the two $\pi_1$-centred
+    windows of part (a) with the non-group step replaced by the exactness assertion at the centre's
+    target, Claims 1 and 2, and, in part (b), the three exactness arguments at $n=1$ with their
+    triple-homotopy checks, the example showing the sequence stops at $\pi_0(A,B,x_0)$, the four
+    set-valued windows' five-lemma, and the hypothesis paragraph with the example that makes the
+    clause necessary. The statement is the printed one with the errata's $i_*$, and part (b) is read
+    with part (a)'s "for all choices of $x_0$", which the exercise's "the five lemma" carries.
+    Structural change in this commit: the Hardie--Kamps comparison now follows the sentence that
+    summarises exactness instead of interrupting the three arguments that establish it. Not verified
+    here: the Lean certificate was not re-elaborated, its text having been read at the pinned commit
+    and matching what the remark says of it; and no published proof of the exercise was located.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    #161. The card now says where its own steps sit in the published taxonomy, and why the published
+    derivation stops short of them. (1) The fibre-coset computation for
+    $q:\pi_1(A,x_0)\to\pi_1(A,B,x_0)$ is exactness of type (E2) of Hardie--Kamps, printed p. 5, the
+    group $\pi_1(B,x_0)$ acting by left multiplication through $i_*$, stated there as
+    $\beta(b)=\beta(b')$ iff $b'=a\cdot b$; that is the form of the lemma proved on the card.
+    (2) Their §3.A derives the triple sequence from the three pair sequences and records that the
+    derivation gives exactness at every term except $\pi_1(X,B,x_0)$, which has to be proved
+    separately (printed pp. 15--16); the card now says why: their Theorem 2.1 assumes exactness of
+    type (E3) or (E3*) in the left-hand column, a group-stage condition unavailable at the degree-one
+    terms, whereas Hatcher's compression criterion is geometric and covers that term at $n=1$
+    without an extra step. Checked: the two passages of the paper (pp. 5 and 15--16, read from the
+    Numdam volume's text layer) and the comparison against Hatcher's three paragraphs on printed
+    pp. 344--345, which are the card's arguments. Not checked: no published proof of the exercise or
+    of a five-lemma at a set-valued term was found, *On exact orbit sequences* remains unobtained,
+    and the Lean declarations were not re-elaborated in this pass.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    #161. A published treatment of the triple sequence and of its delicate term was obtained and is
+    now cited by printed page: Hardie and Kamps, *Exact sequence interlocking and free homotopy
+    theory*, Cahiers de topologie et géométrie différentielle catégoriques 26 (1985) 3--31, open
+    access at Numdam (`http://www.numdam.org/item?id=CTGDC_1985__26_1_3_0`). §3.A, printed pp. 15--16,
+    derives the exact homotopy sequence of a triple from the three pair sequences by Theorem 2.1 and
+    says the derivation gives exactness "except at $\pi_1(X,B,x_0)$ where exactness has to be proved
+    separately" --- the term this card proves by the compression criterion, which is also where the
+    sequence leaves the group range. §1, printed pp. 4--5, defines the exactness types (E0)--(E4) for
+    pointed sets, and (E2) is the fibre-coset structure of this card's coset lemma, the fibres of the
+    next map being the orbits of the group action. Read from the Numdam PDF of the volume (30 pages,
+    printed = PDF page $+ 1$; the scan's running heads read 4, 5, 15 and 16 on PDF pages 3, 4, 14 and
+    15). Not claimed: the paper does not treat the exercise, does not prove a five-lemma at a
+    set-valued term, and its Theorem 2.1 is an exactness result; and Heath--Kamps, *On exact orbit
+    sequences*, Illinois J. Math. 26 (1982) 149--154, remains unobtained, Project Euclid answering
+    automated requests with a bot challenge. The Lean declarations linked below were not
+    re-elaborated; their source was read at the pinned commit and matches what the remark says of
+    them.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    #161. The Sources remark said that no published source states the exercise. Two do, and both are
+    now named by printed page. **tom Dieck, *Algebraic Topology* (EMS, 2008)**, §6.1 Problem 3,
+    printed p. 125, states the exact sequence of a pointed triple and adds "The sequence ends with
+    $\pi_1(X,A,b)$" --- which is where part (b) says the sequence stops before the extension by
+    $\pi_0(A,B,x_0)$. §6.2 Problem 3, printed p. 129, is the five-lemma at the pointed-set end,
+    stated for a map of pairs as "a Five Lemma type result", with the surjectivity half and the
+    injectivity half separate: the injectivity hypothesis is required "for each $c\in A$" and the
+    conclusion holds "for each $a\in A$", which is the restriction to every basepoint that part (b)
+    states, now cited there as well. Both are problems: the book states the two facts and proves
+    neither, so the remark says the form and the clause are published and no proof is. Checked: the
+    two pages in the text version `tmp/sources/tomdieck-algebraic-topology-ranicki.md` and in the
+    PDF's own text layer, whose running heads put §6.1 at printed p. 125 and §6.3 at printed p. 129
+    (printed = PDF $- 13$ for this copy), so §6.2's problems fall on printed p. 129. Not checked: no
+    published *proof* of the exercise was located, the Heath--Kamps paper remaining unobtained; and
+    the Lean declarations linked below were not re-elaborated, the `lean-categories` checkout in the
+    shared image being at another commit (`064b5cfd`) and containing no
+    `LeanCategories/Topology/PairHomotopySequence.lean`, which the corpus gate's link check still
+    resolves at the pinned commit.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    #161. Part (b) never stated the hypothesis of its five-lemma: the proof rebases at a point
+    $b_0\in B$ other than $x_0$, so it uses the exercise's "for all choices of $x_0$", and the
+    single-basepoint form is false. The hypothesis is now stated, and the example that shows the
+    clause is necessary is on the card: $X=Y=[0,1]$ with the identity, $A=C=[0,1/8]\cup[3/4,7/8]$,
+    $B=\{0,3/4,7/8\}$ and $D=\{0\}\cup[3/4,7/8]$, where the vertical map at $\pi_1(X,B,x_0)$ is three
+    points onto two while the four surrounding maps at $x_0$ are $0\to0$, a bijection of one-point
+    sets, the identity of two-point sets and a bijection of one-point sets; at $b=3/4\in B$ the
+    vertical map at $\pi_1(A,B,b)$ is two points onto one, which is where the hypothesis fails. No
+    other claim changes. Checked against Hatcher's printed pp. 343--345 and the exercise on printed
+    p. 358, and against the counterexample computations written out above; the four windows' proofs
+    are the ones already on the card and were re-read, not re-derived. Not checked: no published
+    solution of the exercise was located, and the Lean declarations linked below were not
+    re-elaborated.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    #161. Exactness of the triple sequence is now proved at every term rather than cited, and three
+    defects of the proof are repaired. (1) The card said the sequence ends at $\pi_0(A,B,x_0)$ and
+    that exactness is Theorem 4.3 printed p. 344, but exactness at $\pi_1(A,B,x_0)$ and at
+    $\pi_1(X,B,x_0)$ is a degree-one statement and no argument for it stood on the card, and
+    exactness at $\pi_1(X,A,x_0)$, which the extension by $\pi_0(A,B,x_0)$ adds, was neither stated
+    nor proved. Three proofs are now on the card, each the corresponding paragraph of Hatcher's proof
+    of Theorem 4.3 at $n=1$, with the homotopies checked to be homotopies of maps of triples: the
+    compression criterion gives $\operatorname{im}i_*=\ker j_*$ at $\pi_1(X,B,x_0)$, the tacking of a
+    homotopy of the start point gives $\operatorname{im}j_*=\ker\partial$ at $\pi_1(X,A,x_0)$, and
+    Hatcher's tacking of $g$ onto $f$ gives $\operatorname{im}\partial=\ker i_*$ at
+    $\pi_1(A,B,x_0)$. That proof's exactness paragraphs run over printed pp. 344--345 and the
+    compression criterion is on printed pp. 343--344, so the citation of "Theorem 4.3 (p. 344)" as
+    the whole of the exactness is corrected to pp. 344--345. (2) The coset lemma at the window
+    centred at $\pi_2(X,A,x_0)$ passed from $h(x)=h(x')$ to
+    $q(\partial(x')\partial(x)^{-1})=1$, which treats $q:\pi_1(A,x_0)\to\pi_1(A,B,x_0)$ as a
+    homomorphism; $q$ is a map of pointed sets. The step it needs, that the fibre of $q$ through a
+    point is a coset of $\ker q$, is now stated and proved by the boundary of the square, and the
+    basepoint $a_0$ of the solution's coset lemma, which occurs nowhere else in the solution, is
+    corrected to $x_0$. (3) The inventory justified the absence of a window centred at
+    $\pi_1(X,A,x_0)$ by saying "only two terms following it", which would have made it a window; one
+    term follows it. The closing paragraph of part (b) now states exactness at every term, and its
+    quotient sentence wrote $i'_*\pi_0(B,x_0)$ where the target's subset $i'_*\pi_0(D,y_0)$ is meant.
+    The card's solution and remark assert no half of the five-lemma, and no instance of exactness, to
+    be open: the dated events in this list that assert it are records of the passes of 2026-11-16,
+    and the three events of 2026-11-16 that follow this one, which prove full injectivity at both
+    $\pi_1$ windows and withdraw the surjectivity caveat, supersede them, as does this event. Checked against
+    Hatcher's printed pp. 343--345 (definitions, compression criterion, Theorem 4.3 and its proof,
+    naturality) and the exercise on printed p. 358, in
+    `tmp/sources/hatcher-2002-algebraic-topology.md` and in the PDF's own text layer. Not checked: no
+    published solution of the exercise was located, and the Lean declarations linked below were not
+    re-elaborated in this pass.
 - event: source-corrected
   by: kimi
   date: 2026-11-16
@@ -417,6 +797,28 @@ audit:
     bullets are rewritten to carry it. The surjectivity halves remain unproved, and no
     published treatment of the exercise has been located. Not checked: nothing new;
     the two rewritten arguments were not re-derived in this pass.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule of this date applied: the card now says which part each cited source
+    covers and which parts are its own. Hatcher's Theorem 4.3, printed p. 344, supplies exactness,
+    and Hatcher's reading of $\pi_1(X,A,x_0)$ on printed p. 343 supplies the set that term is;
+    Brown's Theorem 4.9 and Corollary 4.11, printed pp. 121 and 123, supply the related statement
+    for a fibration of groupoids. The group chase at each window, Claim 1 at the $\pi_0(X,x_0)$
+    term, the two windows centred at $\pi_1(A,x_0)$ and $\pi_1(X,x_0)$, and the counterexample to
+    the printed form of (a) at $\pi_1(X,A,x_0)$ and $\pi_0(A,x_0)$ are marked as the card's own.
+    Checked: the Hatcher and Brown pages and that no cited source states the exercise. Not changed:
+    any step of the proof itself.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule applied at paragraph level: the solution opens with the provenance
+    convention for a prose proof. Its remark already says which part Hatcher covers (Theorem 4.3,
+    printed p. 344, and the reading of $\pi_1(X,A,x_0)$ on printed p. 343) and which part Brown
+    covers (Theorem 4.9 and Corollary 4.11, printed pp. 121 and 123). Checked: the four pages.
+
 ---
 
 ::: {.problem}
@@ -428,6 +830,8 @@ Suppose we define $\pi_0(X, A, x_0)$ to be the quotient set $\pi_0(X, x_0) / i_*
 :::
 
 ::: {.solution}
+Provenance, paragraph by paragraph: a paragraph that names a printed source records that source's argument at the page given, and a paragraph that names none is the card's own, possibly applying a result cited in another paragraph.
+
 Define, for a pointed pair $(X,A,x_0)$,
 $$
 \pi_0(X,A,x_0)=\pi_0(X,x_0)\big/\,i_*\pi_0(A,x_0),
@@ -436,9 +840,11 @@ the quotient pointed set, so that every component of $X$ meeting $A$ becomes the
 $$
 \pi_0(A,x_0)\xrightarrow{i_*}\pi_0(X,x_0)\xrightarrow{j_*}\pi_0(X,A,x_0)\longrightarrow0
 $$
-is exact as a sequence of pointed sets: the components mapping to the distinguished relative class are exactly those meeting $A$, and $j_*$ is onto. Exactness of the whole extended sequence at every other term is Hatcher's Theorem 4.3 (printed p. 344, read in the text version `tmp/sources/hatcher-2002-algebraic-topology.md`).
+is exact as a sequence of pointed sets: the components mapping to the distinguished relative class are exactly those meeting $A$, and $j_*$ is onto. Exactness of the whole extended sequence at every other term is Hatcher's Theorem 4.3, read in the text version `tmp/sources/hatcher-2002-algebraic-topology.md`).
 
-Throughout, a map of pairs $\varphi:(X,A,x_0)\to(Y,B,y_0)$ induces a ladder between the two sequences, commutative by naturality of the long exact sequence (p. 345), and "exact" for pointed sets means that the image of one map is the fiber of the next over the distinguished element.
+Throughout, a map of pairs $\varphi:(X,A,x_0)\to(Y,B,y_0)$ induces a ladder between the two sequences, commutative by naturality of the long exact sequence, stated in §4.1 after Example 4.4, and "exact" for pointed sets means that the image of one map is the fiber of the next over the distinguished element.
+
+*The actions, and the form exactness takes at the pointed-set terms.* Hatcher's §4.1 records that $\pi_1(A,x_0)$ acts on $\pi_n(X,A,x_0)$ for every $n\ge1$ and on the whole long exact sequence, the action commuting with its maps. Two instances are used. First, the auxiliary left action of $\pi_1(B,x_0)$ on $\pi_1(A,x_0)$ by left multiplication through $i_*$ --- not Hatcher's conjugation action, which fixes the identity --- has orbits exactly the fibres of $q:\pi_1(A,x_0)\to\pi_1(A,B,x_0)$; that is the coset lemma of the $\pi_2(X,A,x_0)$ window. Second, $\pi_1(A,x_0)$ acts on the pointed sets $\pi_1(A,B,x_0)$ and $\pi_1(X,B,x_0)$: a loop $\nu$ at $x_0$ sends a class $c$ to the class $c\cdot\nu$ represented by $c$ followed by $\nu$. This is a right action; Hatcher states the action as a left action, and the two differ only by inversion of the loop, so they have the same orbits. The correction $c\cdot\nu$ in the surjectivity argument at $\pi_1(A,B,x_0)$ is taken in this action. The correction $\rho\cdot r$ at $\pi_1(X,B,x_0)$ is not: $\rho$ is a path from a point of $B$ to $b_0$ and $r$ a path from $b_0$ to $x_0$, so $\rho\cdot r$ is their ordinary concatenation, defined because the endpoint of $\rho$ is the start of $r$; the concatenation point $b_0$ is interior to the class and moves freely in a homotopy of relative paths, so this is not an action of $\pi_1(X,x_0)$, which acts at the endpoint $x_0$. Each vertical map induced by a map of triples preserves the two actions. Exactness at a pointed-set term says that the image of the incoming map is the fibre of the outgoing map over the distinguished element. For a group acting on the term and equivariantly on the target, a fixed distinguished element in the target makes that fibre a union of orbits; if the target's element is not fixed, equivariance alone does not, although the fibre may still be one for other reasons. At $\pi_1(A,B,x_0)$ the outgoing map is the inclusion $i:\pi_1(A,B,x_0)\to\pi_1(X,B,x_0)$, whose target's basepoint is not fixed: the loop $\nu$ is a path in $A$ from $x_0$ to $x_0$, and it need not be trivial in $\pi_1(X,B,x_0)$, since a homotopy of paths from $B$ to $x_0$ must keep its start point in $B$ while $\nu$ lies only in $A$. For $X=A=S^1$ and $B=\{x_0\}$, the generator of $\pi_1(S^1,x_0)$ is such a loop, and appending it to the constant path moves the basepoint both in $\pi_1(A,B,x_0)$ and in $\pi_1(X,B,x_0)$. So the fibre of this inclusion is not in general a union of orbits. At $\pi_1(X,B,x_0)$ the outgoing map is $j:\pi_1(X,B,x_0)\to\pi_1(X,A,x_0)$, in whose target $\nu$ is trivial, a homotopy through paths from $A$ to $x_0$ sliding the start point along $\nu$; so there the fibre of $j$ is a union of orbits. Neither fact is used in the proof below, which verifies the image-equals-fibre statement directly at each window; the only orbit decomposition used is the coset lemma, where the group acts on itself by left multiplication.
 
 ### (a) The five-lemma
 
@@ -461,7 +867,7 @@ $$
 
 A window of five consecutive terms is one centered at its third term. So a window of five consecutive terms all of which are groups is exactly one centered at a term of degree $\ge2$; the window centered at $\pi_1(A,x_0)$ is $\pi_2(X)\to\pi_2(X,A)\to\pi_1(A)\to\pi_1(X)\to\pi_1(X,A)$, which ends at the pointed set $\pi_1(X,A,x_0)$; and the window centered at $\pi_1(X,x_0)$ is $\pi_2(X,A)\to\pi_1(A)\to\pi_1(X)\to\pi_1(X,A)\to\pi_0(A)$, which contains the two pointed sets $\pi_1(X,A,x_0)$ and $\pi_0(A,x_0)$. The window centered at $\pi_1(X,A,x_0)$ is $\pi_1(A)\to\pi_1(X)\to\pi_1(X,A)\to\pi_0(A)\to\pi_0(X)$ and the one centered at $\pi_0(A,x_0)$ is $\pi_1(X)\to\pi_1(X,A)\to\pi_0(A)\to\pi_0(X)\to\pi_0(X,A)$. The last two are proved below, the term $\pi_0(X,x_0)$ by Claim 1 below, and the two centred at $\pi_1(A,x_0)$ and $\pi_1(X,x_0)$ at the end of this part. Every one of the six windows is therefore settled on this card: the one centred at $\pi_2(X,A,x_0)$ by the group chase, all five of its terms being groups, and the other five by the arguments below, each of which replaces the chase at a point where a term is only a pointed set.
 
-*The term $\pi_1(X,A,x_0)$, and which set that is.* Hatcher defines $\pi_n(X,A,x_0)$ as the homotopy classes of maps of triples $(I^n,\partial I^n,J^{n-1})\to(X,A,x_0)$ (printed p. 343); for $n=1$ the $0$-end of $I$ is constrained only to lie in $A$, so $\pi_1(X,A,x_0)$ is the set of path classes from a point of $A$ to $x_0$, modulo homotopies through such paths, in which the start point moves inside $A$ and two classes with different start points may agree. With that reading the four surrounding maps of the term are
+*The term $\pi_1(X,A,x_0)$, and which set that is.* Hatcher defines $\pi_n(X,A,x_0)$ as the homotopy classes of maps of triples $(I^n,\partial I^n,J^{n-1})\to(X,A,x_0)$ (§4.1); for $n=1$ the $0$-end of $I$ is constrained only to lie in $A$, so $\pi_1(X,A,x_0)$ is the set of path classes from a point of $A$ to $x_0$, modulo homotopies through such paths, in which the start point moves inside $A$ and two classes with different start points may agree. With that reading the four surrounding maps of the term are
 $$
 \pi_1(A,a)\to\pi_1(B,\varphi a),\qquad \pi_1(X,a)\to\pi_1(Y,\varphi a)\quad(a\in A),\qquad \pi_0(A)\to\pi_0(B),\qquad \pi_0(X)\to\pi_0(Y),
 $$
@@ -503,14 +909,16 @@ Since $\gamma$ is onto, $\omega=i'_*\gamma(a)=\delta h(a)$ for some $a\in\pi_1(A
 
 Both arguments use one exactness assertion outside their window, at the centre's target, and both use the two-sided invertibility of the bijections at the surrounding terms; the products and inverses are taken in groups, and no map into a pointed set is treated as a homomorphism.
 
-*Claim 1: the term $\pi_0(X,x_0)$.* If the vertical maps at $\pi_0(A,x_0)$ and at $\pi_0(X,A,x_0)$ are bijections, then so is the vertical map $\Phi:\pi_0(X,x_0)\to\pi_0(Y,y_0)$. The four surrounding maps of the window centred at $\pi_0(X,x_0)$ are the vertical maps at $\pi_1(X,A,x_0)$, at $\pi_0(A,x_0)$, at $\pi_0(X,A,x_0)$ and at the terminal $0$, the last being $0\to0$; the argument below uses the two at $\pi_0(A,x_0)$ and $\pi_0(X,A,x_0)$.
+*Claim 1: the term $\pi_0(X,x_0)$.* The four surrounding maps of the window centred at $\pi_0(X,x_0)$ are the vertical maps at $\pi_1(X,A,a)$ and at $\pi_0(A,a)$, both for every $a\in A$, the vertical map at $\pi_0(X,A,x_0)$, and the terminal map $0\to0$. If these are bijections, then so is the vertical map $\Phi:\pi_0(X,x_0)\to\pi_0(Y,y_0)$. The argument uses the vertical map at $\pi_1(X,A,a_2)$ at the single point $a_2\in A$ that it produces, together with the vertical maps at $\pi_0(A,x_0)$ and at $\pi_0(X,A,x_0)$; no other vertical map of the ladder enters. Since $a_2$ may be any point of $A$, the hypothesis on $\pi_1(X,A,\cdot)$ is needed at every point of $A$, which is what the exercise's "for all choices of $x_0$" supplies.
 
-- *Injectivity.* Let $\Phi[x_1]=\Phi[x_2]$. Then $\theta j[x_1]=\theta j[x_2]$ by commutativity of the ladder, so $j[x_1]=j[x_2]$ because $\theta$, the vertical map at $\pi_0(X,A,x_0)$, is injective. Two components of $X$ have the same class in $\pi_0(X,A,x_0)=\pi_0(X,x_0)/i_*\pi_0(A,x_0)$ exactly when they are the same component or both meet $A$; in the second case injectivity of the vertical map at $\pi_0(A,x_0)$ puts them in one component of $A$, hence of $X$. So $[x_1]=[x_2]$.
-- *Surjectivity.* Let $[y]\in\pi_0(Y,y_0)$. If $[y]$ meets $B$, choose $b\in B$ and $[a]\in\pi_0(A,x_0)$ with $\Phi[a]=[b]=[y]$, which exists because the vertical map at $\pi_0(A,x_0)$ is onto. Otherwise $[y]$ does not meet $B$, so $j'[y]$ is not the base class, and $\theta$ is onto, so $j'[y]=\theta[x]$ for some $[x]\in\pi_0(X,A,x_0)$; for a representative $x_1$ of $[x]$, $j'\Phi[x_1]=\theta j[x_1]=j'[y]$, so $\Phi[x_1]$ meets $B$ exactly when $[y]$ does, and it does not, hence $\Phi[x_1]=[y]$.
+- *Injectivity.* Let $\Phi[x_1]=\Phi[x_2]$. Then $\theta j[x_1]=j'\Phi[x_1]=j'\Phi[x_2]=\theta j[x_2]$ by commutativity of the ladder, so $j[x_1]=j[x_2]$ because $\theta$, the vertical map at $\pi_0(X,A,x_0)$, is injective. If $[x_1]=[x_2]$ there is nothing to prove. Otherwise, by the definition of $\pi_0(X,A,x_0)$ as the quotient that identifies exactly the components of $X$ meeting $A$, both components meet $A$: choose $a_1,a_2\in A$ with $[a_1]=[x_1]$ and $[a_2]=[x_2]$ in $\pi_0(X,x_0)$. Then $\Phi[x_1]=[\varphi(a_1)]$ and $\Phi[x_2]=[\varphi(a_2)]$ in $\pi_0(Y,y_0)$, so $\Phi[x_1]=\Phi[x_2]$ gives a path $\omega$ in $Y$ from $\varphi(a_1)$ to $\varphi(a_2)$. Its start point lies in $B$ and its endpoint is $\varphi(a_2)$, so $\omega$ represents a class in $\pi_1(Y,B,\varphi(a_2))$. By surjectivity of the vertical map at $\pi_1(X,A,a_2)$ there are a path $\eta$ in $X$ from a point $a_3\in A$ to $a_2$ and a homotopy $H:I^2\to Y$ with $H(s,0)=\varphi\eta(s)$, $H(s,1)=\omega(s)$, $H(0,t)\in B$ and $H(1,t)=\varphi(a_2)$. The start-point track $t\mapsto H(0,t)$ is then a path in $B$ from $\varphi(a_3)$ to $\varphi(a_1)$, so $[\varphi(a_3)]=[\varphi(a_1)]$ in $\pi_0(B,y_0)$. Injectivity of the vertical map at $\pi_0(A,x_0)$ gives $[a_3]=[a_1]$ in $\pi_0(A,x_0)$, hence in $\pi_0(X,x_0)$; and $\eta$ is a path in $X$ from $a_3$ to $a_2$, so $[a_2]=[a_3]$ in $\pi_0(X,x_0)$. Therefore $[x_1]=[a_1]=[a_3]=[a_2]=[x_2]$, and $\Phi$ is injective.
+- *Surjectivity.* Let $[y]\in\pi_0(Y,y_0)$. If $[y]$ meets $B$, choose $b\in[y]\cap B$ and $[a]\in\pi_0(A,x_0)$ with $[\varphi(a)]=[b]$ in $\pi_0(B,y_0)$, which exists because the vertical map at $\pi_0(A,x_0)$ is onto; then $\Phi[a]=[\varphi(a)]=[b]=[y]$. Otherwise $[y]$ does not meet $B$, so $j'[y]$ is not the base class of $\pi_0(Y,B,y_0)$, and surjectivity of $\theta$ gives $j'[y]=\theta[x]$ for some $[x]\in\pi_0(X,A,x_0)$; for a representative $x_1$ of $[x]$ one has $j'\Phi[x_1]=\theta j[x_1]=j'[y]$. Two components of $Y$ have the same class in $\pi_0(Y,B,y_0)$ exactly when they are equal or both meet $B$, and $[y]$ does not meet $B$, so $\Phi[x_1]=[y]$. Thus $\Phi$ is onto.
+
+*Why the hypothesis cannot be weakened.* The $\pi_1$ hypothesis is not decoration. Take $X=A=\{a_1,a_2\}$ discrete with $x_0=a_1$, $Y=[0,1]$, $B=\{0,1\}$ with $y_0=0$, and $\varphi(a_1)=0$, $\varphi(a_2)=1$. Then $\pi_0(A,x_0)\to\pi_0(B,y_0)$ is a bijection of two-point sets and $\pi_0(X,A,x_0)\to\pi_0(Y,B,y_0)$ is a bijection of one-point sets, but $\Phi:\pi_0(X,x_0)\to\pi_0(Y,y_0)$ is two points to one and is not injective. The hypothesis fails at $\pi_1$: $\pi_1(X,A,a_1)$ is the one-point set of the constant path at $a_1$, while $\pi_1(Y,B,0)$ consists of the classes of the constant path at $0$ and of $t\mapsto1-t$ --- every relative path into $0$ starts at $0$ or at $1$, and two with the same start point are homotopic by convexity of $[0,1]$ --- and the two classes are distinct because the start-point track of a relative homotopy runs in the discrete set $B$. So the two $\pi_0$ bijections alone do not give $\Phi$. The missing step is exactly the path $\omega$ above: its endpoints lie in $B$, in different components of $B$ but in the one component of $Y$, and lifting $\omega$ is what produces a path in $B$ between the preimages of its endpoints.
 
 *Claim 2: the term $\pi_0(X,A,x_0)$.* If the vertical maps at $\pi_0(A,x_0)$ and at $\pi_0(X,x_0)$ are bijections, then so is the vertical map at $\pi_0(X,A,x_0)$. Indeed that map is induced by a bijection $\pi_0(X,x_0)\to\pi_0(Y,y_0)$ which carries the subset $i_*\pi_0(A,x_0)$ bijectively onto $i_*\pi_0(B,y_0)$, and a bijection of sets carrying one subset onto another induces a bijection of the quotients.
 
-The two claims are conditional statements about the same four surrounding maps and are not circular: Claim 1 uses the bijections at $\pi_0(A,x_0)$ and at $\pi_0(X,A,x_0)$, Claim 2 those at $\pi_0(A,x_0)$ and at $\pi_0(X,x_0)$, so under the exercise's hypothesis every one of the three $\pi_0$ terms is settled.
+The two claims are conditional statements about the maps surrounding their own terms and are not circular: Claim 1 uses the bijections at $\pi_1(X,A,a)$ for $a\in A$, at $\pi_0(A,x_0)$ and at $\pi_0(X,A,x_0)$, Claim 2 those at $\pi_0(A,x_0)$ and at $\pi_0(X,x_0)$, so under the exercise's hypothesis every one of the three $\pi_0$ terms is settled.
 
 ### (b) The triple sequence
 
@@ -518,14 +926,52 @@ For $B\subset A\subset X$ the triple sequence of Theorem 4.3 ends
 $$
 \cdots\longrightarrow\pi_1(X,A,x_0)\xrightarrow{\partial}\pi_0(A,B,x_0),
 $$
-and it cannot in general be continued by $\pi_0(X,B,x_0)$. Take $X$ the disjoint union of a point $b_0$ and an interval, $x_0=b_0$, and $B=\{b_0,b_1\}$ with $b_1$ a point of the interval; let $A=\{b_0,b_1,a_1\}$ with $a_1\neq b_1$ a further point of the interval, so that $b_1$ and $a_1$ lie in different components of the subspace $A$ while lying in the same component of $X$. Then the class of $a_1$ in $\pi_0(A,B,x_0)=\pi_0(A,x_0)/i_*\pi_0(B,x_0)$ is not the distinguished element, because its component of $A$ does not meet $B$; but its image in $\pi_0(X,B,x_0)$ is distinguished, because every component of $X$ that meets $B$ is collapsed and $a_1$ lies in the component of $b_1$. On the other hand the class of $a_1$ is not in the image of $\partial:\pi_1(X,A,x_0)\to\pi_0(A,B,x_0)$, since a path in $X$ starting in $A$ and ending at $x_0=b_0$ stays in the component $\{b_0\}$ of $X$, so its starting point lies in the component $\{b_0\}$ of $A$, which is collapsed. Hence appending $\pi_0(X,B,x_0)$ would destroy exactness at $\pi_0(A,B,x_0)$.
 
-With the sequence ending at $\pi_0(A,B,x_0)$, the ladder of triple sequences has group windows, settled by the chase of part (a), and four windows that contain a pointed set. *The group windows.* The terms of the triple sequence in degree $\ge2$ are groups and every map between them is a homomorphism, so a window of five consecutive terms which all lie in degree $\ge2$ is a window of five group terms, and the chase of part (a) applies to it verbatim; exactness of the triple sequence is Theorem 4.3 (p. 344) and the ladder commutes by naturality (p. 345). *The set-valued windows.* The tail reads $\pi_2(A,B)\to\pi_2(X,B)\to\pi_2(X,A)\to\pi_1(A,B)\to\pi_1(X,B)\to\pi_1(X,A)\to\pi_0(A,B)$, and since the terminal term has no map out of it, the windows of five consecutive terms there that contain a pointed set are **four**: the one centred at $\pi_2(X,B,x_0)$, namely $\pi_3(X,A)\to\pi_2(A,B)\to\pi_2(X,B)\to\pi_2(X,A)\to\pi_1(A,B)$, whose centre is a group and whose last term is only a pointed set; the one centred at $\pi_2(X,A,x_0)$, namely $\pi_2(A,B)\to\pi_2(X,B)\to\pi_2(X,A)\to\pi_1(A,B)\to\pi_1(X,B)$, whose last two terms are only pointed sets; and the two centred at $\pi_1(A,B,x_0)$ and at $\pi_1(X,B,x_0)$, namely $\pi_2(X,B)\to\pi_2(X,A)\to\pi_1(A,B)\to\pi_1(X,B)\to\pi_1(X,A)$ and $\pi_2(X,A)\to\pi_1(A,B)\to\pi_1(X,B)\to\pi_1(X,A)\to\pi_0(A,B)$. No window is centred at $\pi_1(X,A,x_0)$, only two terms following it, and none at $\pi_0(A,B,x_0)$, there being no exactness assertion at a last term with no map out of it. At the two windows centred at a $\pi_2$ term the centre and its vertical map $\gamma$ are a group and a homomorphism, so a trivial kernel is exactly injectivity of $\gamma$, and both directions are proved there: the surjectivity half of the chase corrects by $\gamma(c)^{-1}c'$, which needs the centre to be a group and the map out of it to be a homomorphism, and both of its ends are groups at these two windows; the coset lemma supplies the rest at the window centred at $\pi_2(X,A,x_0)$. At the two windows centred at the pointed sets $\pi_1(A,B,x_0)$ and $\pi_1(X,B,x_0)$, the explicit homotopy arguments below prove both injectivity and surjectivity. No full-injectivity conclusion is drawn merely from triviality of the fibre over the base point.
+*Exactness at every term.* The sequence is exact at each of its terms for every $n\ge1$, and the extended sequence is exact at $\pi_1(X,A,x_0)$ as well; $\pi_0(A,B,x_0)$ is its last term, so nothing is asserted at it beyond its existence. The argument is Hatcher's proof of Theorem 4.3, which is a proof of the triple sequence and not only of the pair sequence; in degrees $n\ge2$ its three paragraphs apply verbatim --- every term in sight there being a group and every map a homomorphism --- and are transcribed in the next block, so that the card proves every degree from its own text. In degree $1$ the same three arguments prove the pointed-set statements and nothing else is needed, but each homotopy written down has to be checked to be a homotopy of maps of triples: at $n=1$ a map $([0,1],\{0,1\},\{1\})\to(X,A,x_0)$ is a path in $X$ from a varying point of $A$ to the fixed point $x_0$ (§4.1), so a homotopy of such maps keeps the start point in $A$ and the endpoint at $x_0$, and at the terms $\pi_1(X,B,x_0)$ and $\pi_1(A,B,x_0)$ the start point has to stay in $B$. The three cases follow; the disk model of §4.1, in which a class in $\pi_n(X,A,x_0)$ is a map $(D^n,S^{n-1},s_0)\to(X,A,x_0)$ and $\partial$ is restriction to $S^{n-1}$, is used where it is shorter, Hatcher identifying the two models on that page.
+
+*In degrees $n\ge2$, transcribed.* The compression criterion of §4.1 is used in both directions: a map $f:(I^n,\partial I^n,J^{n-1})\to(X,A,x_0)$ represents zero in $\pi_n(X,A,x_0)$ exactly when it is homotopic rel $\partial I^n$ to a map with image in $A$ --- one direction by composing such a homotopy with a contraction of $D^n$ onto the basepoint, the other by restricting a null-homotopy to the family of disks in $D^n\times I$ that ends at $D^n\times\{1\}\cup S^{n-1}\times I$, all of them having the same boundary. With it:
+
+- *At $\pi_n(X,B,x_0)$.* The composite $j_*i_*$ is zero, since a map $(I^n,\partial I^n,J^{n-1})\to(A,B,x_0)$ has image in $A$ and so represents zero in $\pi_n(X,A,x_0)$ by the criterion. Conversely, let $f:(I^n,\partial I^n,J^{n-1})\to(X,B,x_0)$ represent zero in $\pi_n(X,A,x_0)$. By the criterion $f$ is homotopic rel $\partial I^n$ to a map $g$ with image in $A$, and $g$ is then a map $(I^n,\partial I^n,J^{n-1})\to(A,B,x_0)$ with $i_*[g]=[f]$; so $[f]\in\operatorname{im}i_*$.
+- *At $\pi_n(X,A,x_0)$.* The composite $\partial j_*$ is zero, since the restriction of a map $(I^n,\partial I^n,J^{n-1})\to(X,B,x_0)$ to the face $I^{n-1}=\{s_n=0\}$ has image in $B$ and so represents zero in $\pi_{n-1}(A,B,x_0)$. Conversely, let $f:(I^n,\partial I^n,J^{n-1})\to(X,A,x_0)$ have $\partial[f]=0$. Then $f$ restricted to $I^{n-1}$ is homotopic to a map with image in $B$ by a homotopy $F:I^{n-1}\times I\to A$ rel $\partial I^{n-1}$. Tacking $F$ onto $f$ gives a map $(I^n,\partial I^n,J^{n-1})\to(X,B,x_0)$ that, as a map into $(X,A,x_0)$, is homotopic to $f$ by the homotopy tucking in increasingly long initial segments of $F$; so $[f]\in\operatorname{im}j_*$.
+- *At $\pi_n(A,B,x_0)$.* The composite $i_*\partial$ is zero, since the restriction of a map $f:(I^{n+1},\partial I^{n+1},J^n)\to(X,A,x_0)$ to $I^n$ is homotopic rel $\partial I^n$ to a constant map, by $f$ itself. Conversely, let $f:(I^n,\partial I^n,J^{n-1})\to(A,B,x_0)$ be null-homotopic in $\pi_n(X,B,x_0)$, through a homotopy $F$, and let $g$ be the restriction of $F$ to $I^{n-1}\times I$. Reparametrizing the $n$-th and $(n+1)$-st coordinates, $f$ with $g$ tacked on is the restriction to $I^n$ of a map $(I^{n+1},\partial I^{n+1},J^n)\to(X,A,x_0)$; and tacking $g$ onto $f$ gives the same element of $\pi_n(A,B,x_0)$, by the previous item. So $[f]\in\operatorname{im}\partial$.
+
+Those three paragraphs are Hatcher's, and they hold without change in degree $1$ once the homotopies are read as homotopies of triples; that is the content of the next three bullets.
+
+- *At $\pi_1(X,B,x_0)$: $\operatorname{im}i_*=\ker j_*$.* For the inclusion, let $f:([0,1],\{0,1\},\{1\})\to(A,B,x_0)$ be a path in $A$ from a point of $B$ to $x_0$. The formula $H(s,u)=f\bigl(s(1-u)+u\bigr)$ defines a homotopy of maps of triples from $f$ to the constant path at $x_0$: it takes values in $A\subseteq X$, and $H(0,u)=f(u)\in A$, $H(1,u)=f(1)=x_0$, $H(s,0)=f(s)$, $H(s,1)=f(1)=x_0$. Hence the image of $[f]$ in $\pi_1(X,A,x_0)$ is the basepoint. For the converse, let $f:([0,1],\{0,1\},\{1\})\to(X,B,x_0)$ have trivial image in $\pi_1(X,A,x_0)$, through a homotopy $F:I^2\to X$ with $F(s,0)=f(s)$, $F(s,1)=x_0$, $F(0,u)\in A$ and $F(1,u)=x_0$. Its left edge $\lambda(u)=F(0,u)$ is a path in $A$ from $f(0)\in B$ to $x_0$, hence represents a class in $\pi_1(A,B,x_0)$. Reading the boundary of the square from the corner $(0,0)$ gives the loop $f\cdot x_0\cdot x_0\cdot\lambda^{-1}$, which is null-homotopic in $X$ because the square maps to $X$; so $f\simeq\lambda$ with endpoints fixed and $[f]=i_*[\lambda]$. This is the compression criterion of §4.1 at $n=1$: $f$ is homotopic rel $\partial I^1$ to the map $\lambda$ with image in $A$.
+- *At $\pi_1(X,A,x_0)$: $\operatorname{im}j_*=\ker\partial$.* A class in the image of $j_*$ is represented by a path $f$ in $X$ from a point $b\in B$ to $x_0$; its boundary is the class of $b$ in $\pi_0(A,B,x_0)=\pi_0(A,x_0)/i_*\pi_0(B,x_0)$, which is the base class because the component of $b$ in $A$ meets $B$. Conversely, let $f$ be a path in $X$ from $a\in A$ to $x_0$ whose boundary is the base class, that is, the component of $a$ in $A$ meets $B$, and choose a path $\gamma$ in $A$ from a point $b\in B$ to $a$. Then $\gamma\cdot f$ is a path in $X$ from $B$ to $x_0$, and $\gamma\cdot f$ is homotopic to $f$ through paths from $A$ to $x_0$, the start point moving along $\gamma$ inside $A$; so $[f]=j_*[\gamma\cdot f]$. This is the tacking step in the proof of Theorem 4.3 at $n=1$, the restriction of $f$ to the face $I^0=\{0\}$ being the point $a$ that $\gamma$ carries into $B$.
+- *At $\pi_1(A,B,x_0)$: $\operatorname{im}\partial=\ker i_*$.* For the inclusion, let $F:(D^2,S^1,s_0)\to(X,A,x_0)$ represent a class in $\pi_2(X,A,x_0)$ and let $\gamma=\restrictionof{F}{S^1}$, a loop in $A$ at $x_0$ whose class in $\pi_1(A,B,x_0)$ is $\partial[F]$. Parametrizing $S^1$ by $z:[0,1]\to S^1$ with $z(0)=s_0$ and putting $G_u(s)=F((1-u)z(s)+u s_0)$, whose argument lies in the disk, gives $G_u(0)=G_u(1)=F(s_0)=x_0$, $G_0=\gamma$ and $G_1$ constant; so $\gamma$ is null-homotopic in $X$ through loops at $x_0$, which is a homotopy of maps $([0,1],\{0,1\},\{1\})\to(X,B,x_0)$, and $i_*\partial[F]=1$. Conversely, let $f:([0,1],\{0,1\},\{1\})\to(A,B,x_0)$ be a path in $A$ from $b\in B$ to $x_0$ whose class in $\pi_1(X,B,x_0)$ is trivial, through a homotopy $F:I^2\to X$ with $F(s,0)=f(s)$, $F(s,1)=x_0$, $F(0,u)\in B$ and $F(1,u)=x_0$. Read as a map of the disk, $F$ carries $\partial I^2$ into $A$ --- the bottom edge to $f$, the left edge to $B$, the top and right edges to $x_0$ --- and the corner $(1,0)$ to $x_0$, so it represents a class $\xi\in\pi_2(X,A,x_0)$, and $\partial\xi$ is the class of the loop $g^{-1}\cdot f$, where $g=F(0,\,\cdot\,)$ is a path in $B$. Since $g^{-1}$ lies in $B$, $[g^{-1}\cdot f]=[f]$ in $\pi_1(A,B,x_0)$, so $[f]=\partial\xi$. This is Hatcher's tacking of $g$ onto $f$, in the proof of Theorem 4.3, at $n=1$.
+
+Every term of the triple sequence is therefore exact in degree $1$ as well, at the pointed sets $\pi_1(A,B,x_0)$ and $\pi_1(X,B,x_0)$, and the extended sequence is exact at $\pi_1(X,A,x_0)$.
+
+Hardie--Kamps derive the same sequence algebraically, from the three exact pair sequences, and record that the derivation gives exactness at every term but one, the term $\pi_1(X,B,x_0)$, "where exactness has to be proved separately" (§3.A of the paper cited in the remark). The reason sits in their hypotheses: their Theorem 2.1 assumes exactness of type (E3) or (E3*) --- a group-stage condition --- in the left-hand column, and at the degree-one terms that column has only pointed sets. The three arguments above are Hatcher's geometric ones and need no extra step at that term: at $n=1$ the compression criterion supplies the homotopy of triples that the algebraic derivation does not.
+
+It cannot in general be continued by $\pi_0(X,B,x_0)$. Take $X$ the disjoint union of a point $b_0$ and an interval, $x_0=b_0$, and $B=\{b_0,b_1\}$ with $b_1$ a point of the interval; let $A=\{b_0,b_1,a_1\}$ with $a_1\neq b_1$ a further point of the interval, so that $b_1$ and $a_1$ lie in different components of the subspace $A$ while lying in the same component of $X$. Then the class of $a_1$ in $\pi_0(A,B,x_0)=\pi_0(A,x_0)/i_*\pi_0(B,x_0)$ is not the distinguished element, because its component of $A$ does not meet $B$; but its image in $\pi_0(X,B,x_0)$ is distinguished, because every component of $X$ that meets $B$ is collapsed and $a_1$ lies in the component of $b_1$. On the other hand the class of $a_1$ is not in the image of $\partial:\pi_1(X,A,x_0)\to\pi_0(A,B,x_0)$, since a path in $X$ starting in $A$ and ending at $x_0=b_0$ stays in the component $\{b_0\}$ of $X$, so its starting point lies in the component $\{b_0\}$ of $A$, which is collapsed. Hence appending $\pi_0(X,B,x_0)$ would destroy exactness at $\pi_0(A,B,x_0)$.
+
+*The hypothesis, and why it is stated for every basepoint.* The claim proved below is the five-lemma in the form of part (a): the four vertical maps surrounding a window are bijections for every admissible basepoint, and for the triple the admissible basepoints are the points of $B$. The clause is also tom Dieck's own: §6.2 Problem 3 requires the injectivity hypothesis "for each $c\in A$". It is used and not merely inherited, because the arguments at the windows centred at $\pi_1(A,B,x_0)$ and at $\pi_1(X,B,x_0)$ rebase at a point $b_0\in B$ that need not be $x_0$. It is also necessary. Take $X=Y=[0,1]$, $\varphi$ the identity, $A=C=[0,\tfrac18]\cup[\tfrac34,\tfrac78]$, $B=\{0,\tfrac34,\tfrac78\}$ and $D=\{0\}\cup[\tfrac34,\tfrac78]$, with $x_0=y_0=0$. A relative path moves its start point only inside the base subspace and $[0,1]$ is contractible, so $\pi_1(X,B,x_0)$ has one class per point of $B$, namely three, and $\pi_1(Y,D,y_0)$ one per component of $D$, namely two; the vertical map at $\pi_1(X,B,x_0)$ is therefore three points onto two, the classes starting at $\tfrac34$ and at $\tfrac78$ having the same image, and it is not injective. At $x_0$ the four surrounding maps of that window are nevertheless bijections: $\pi_2(X,A,x_0)=0$ because $[0,1]$ is contractible and $\pi_1(A,x_0)=0$, while $\pi_1(A,B,x_0)$ is one point (only $0\in B$ lies in the component of $x_0$ in $A$), $\pi_1(X,A,x_0)$ is two points (the components of $A$) and $\pi_0(A,B,x_0)$ is one point (both components of $A$ meet $B$), and the target terms are the corresponding terms of the same subspaces, so the four maps are $0\to0$, a bijection of one-point sets, the identity of two-point sets and a bijection of one-point sets. What the clause removes is exactly this: at $b=\tfrac34\in B$ the vertical map at $\pi_1(A,B,b)$ is not injective, $\pi_1(A,B,\tfrac34)$ having the two classes starting at $\tfrac34$ and at $\tfrac78$ and $\pi_1(C,D,\tfrac34)$ one, those two points lying in one component of $D$. So the example refutes the single-basepoint form only, and the printed clause is what makes the theorem true.
+
+*The degenerate case $B=\{x_0\}$, and how the two parts compare.* Taking $B=\{x_0\}$ in the triple and $D=\{y_0\}$ in the target turns the triple sequence into the pair sequence of $(X,A)$: it reads $\pi_n(A,x_0)\to\pi_n(X,x_0)\to\pi_n(X,A,x_0)\to\pi_{n-1}(A,x_0)$, and $\pi_0(A,B,x_0)=\pi_0(A,x_0)/i_*\pi_0(\{x_0\},x_0)=\pi_0(A,x_0)$ is Hatcher's extension, while in the target $\pi_0(C,D,y_0)=\pi_0(C,y_0)$. The four set-valued windows of part (b) then have centres $\pi_2(X,x_0)$, $\pi_2(X,A,x_0)$, $\pi_1(A,x_0)$ and $\pi_1(X,x_0)$, which are four of the six windows settled in part (a). The hypotheses do not coincide: part (a) requires the four surrounding bijections at every basepoint of $A$, while part (b) at $B=\{x_0\}$ requires them only at $x_0$, the sole point of $B$. Part (b) at $B=\{x_0\}$ has the same conclusion as part (a) at the basepoint $x_0$, with the single-basepoint hypothesis in place of part (a)'s hypothesis at every point of $A$; it is therefore the stronger statement, and it gives part (a)'s conclusion at $x_0$ whenever part (a)'s hypothesis holds. Part (a) does not give part (b): its hypothesis at every point of $A$ does not show that the four bijections at $x_0$ alone suffice. Nor does part (b) give part (a)'s conclusion at the other points of $A$, since a triple based at $a\ne x_0$ would need $a\in B$. At the four shared windows the two parts prove the same bijection, part (b) from the weaker single-basepoint hypothesis. The windows centred at $\pi_1(X,A,x_0)$, at $\pi_0(A,x_0)$ and at $\pi_0(X,x_0)$, together with the terminal term $\pi_0(X,A,x_0)$ that Claim 2 treats, exist only because the pair sequence continues past the triple's last term, as Hatcher notes after the triple display in the proof of Theorem 4.3; for a general triple there is no such continuation, which is the example below. The two parts are therefore consistent: at the four shared windows they prove the same bijection, and each part's remaining windows lie outside the other's scope.
+
+With the sequence ending at $\pi_0(A,B,x_0)$, the ladder of triple sequences has group windows, settled by the chase of part (a), and four windows that contain a pointed set. *The group windows.* The terms of the triple sequence in degree $\ge2$ are groups and every map between them is a homomorphism, so a window of five consecutive terms which all lie in degree $\ge2$ is a window of five group terms, and the chase of part (a) applies to it verbatim; exactness of the triple sequence is Theorem 4.3 and its proof, exactness at the three degree-one terms being the three arguments of the paragraph above the inventory, and the ladder commutes by naturality of the long exact sequence, stated in §4.1 after Example 4.4. *The set-valued windows.* The tail reads $\pi_2(A,B)\to\pi_2(X,B)\to\pi_2(X,A)\to\pi_1(A,B)\to\pi_1(X,B)\to\pi_1(X,A)\to\pi_0(A,B)$, and since the terminal term has no map out of it, the windows of five consecutive terms there that contain a pointed set are **four**: the one centred at $\pi_2(X,B,x_0)$, namely $\pi_3(X,A)\to\pi_2(A,B)\to\pi_2(X,B)\to\pi_2(X,A)\to\pi_1(A,B)$, whose centre is a group and whose last term is only a pointed set; the one centred at $\pi_2(X,A,x_0)$, namely $\pi_2(A,B)\to\pi_2(X,B)\to\pi_2(X,A)\to\pi_1(A,B)\to\pi_1(X,B)$, whose last two terms are only pointed sets; and the two centred at $\pi_1(A,B,x_0)$ and at $\pi_1(X,B,x_0)$, namely $\pi_2(X,B)\to\pi_2(X,A)\to\pi_1(A,B)\to\pi_1(X,B)\to\pi_1(X,A)$ and $\pi_2(X,A)\to\pi_1(A,B)\to\pi_1(X,B)\to\pi_1(X,A)\to\pi_0(A,B)$. No window is centred at $\pi_1(X,A,x_0)$, only the single term $\pi_0(A,B,x_0)$ following it, and none at $\pi_0(A,B,x_0)$, there being no exactness assertion at a last term with no map out of it. At the two windows centred at a $\pi_2$ term the centre and its vertical map $\gamma$ are a group and a homomorphism, so a trivial kernel is exactly injectivity of $\gamma$, and both directions are proved there: the surjectivity half of the chase corrects by $\gamma(c)^{-1}c'$, which needs the centre to be a group and the map out of it to be a homomorphism, and both of its ends are groups at these two windows; the coset lemma supplies the rest at the window centred at $\pi_2(X,A,x_0)$. At the two windows centred at the pointed sets $\pi_1(A,B,x_0)$ and $\pi_1(X,B,x_0)$, the explicit homotopy arguments below prove both injectivity and surjectivity. No full-injectivity conclusion is drawn merely from triviality of the fibre over the base point.
+
+- *What exactness means at this centre.* Both rows are exact at $\pi_2(X,B,x_0)$ in the pointed-set sense: the image of $\pi_2(A,B)\to\pi_2(X,B)$ is the fibre of $\pi_2(X,B)\to\pi_2(X,A)$ over the distinguished element, and likewise in the target row. The centre is a group here and the vertical map is a homomorphism, so the two halves below are injectivity and surjectivity of that homomorphism.
 
 - *The window centred at $\pi_2(X,B,x_0)$*, whose four surrounding maps are $\alpha:\pi_3(X,A)\to\pi_3(Y,C)$, $\beta:\pi_2(A,B)\to\pi_2(C,D)$, $\delta:\pi_2(X,A)\to\pi_2(Y,C)$ and $\varepsilon:\pi_1(A,B)\to\pi_1(C,D)$, and whose centre's neighbours are $h:\pi_2(X,B)\to\pi_2(X,A)$ and $k:\pi_2(X,A)\to\pi_1(A,B)$, primed for the row of $(Y,C,D)$. Four of its five terms are groups, $\pi_1(A,B,x_0)$ entering only as the target of $k$ and as the pointed set whose vertical map $\varepsilon$ is a bijection of pointed sets. *Injectivity.* Let $\gamma(c)=1$. Then $\delta h(c)=h'\gamma(c)=1$, so $h(c)=1$ because $\delta$ is injective, hence $c=g(b)$ for some $b\in\pi_2(A,B)$ by exactness at $\pi_2(X,B)$. Then $g'\beta(b)=\gamma g(b)=1$, so $\beta(b)=f'(a')$ for some $a'$ by exactness at $\pi_2(C,D)$, and $a'=\alpha(a)$ because $\alpha$ is onto, so $\beta(b)=\beta f(a)$ and $b=f(a)$ by injectivity of $\beta$; hence $c=gf(a)=1$ by exactness at $\pi_2(A,B)$. Every equality is an exactness statement at a group, and no product is taken. *Surjectivity.* Let $c'\in\pi_2(Y,D)$ and put $d'=h'(c')\in\pi_2(Y,C)$. Since $\delta$ is onto, $d'=\delta(d)$ for some $d\in\pi_2(X,A)$. Exactness at $\pi_2(Y,C)$ gives $k'h'(c')=1$, so $\varepsilon(k(d))=k'\delta(d)=k'h'(c')=1$, and $\varepsilon$ injective gives $k(d)=1$; exactness at $\pi_2(X,A)$ then gives $d=h(c)$ for some $c\in\pi_2(X,B)$. Now $h'$ is a homomorphism, both of its ends being groups, so $h'\bigl(\gamma(c)^{-1}c'\bigr)=h'\gamma(c)^{-1}h'(c')=d'^{-1}d'=1$; hence $\gamma(c)^{-1}c'\in\ker h'=\operatorname{im}g'$ by exactness at $\pi_2(Y,D)$, say $\gamma(c)^{-1}c'=g'(b')$, and $b'=\beta(b)$ because $\beta$ is onto. Then $\gamma\bigl(c\,g(b)\bigr)=\gamma(c)\gamma g(b)=\gamma(c)g'\beta(b)=c'$, so $\gamma$ is onto with $c''=c\,g(b)$. Both directions at this window are therefore proved.
-- *The window centred at $\pi_2(X,A,x_0)$*, whose four surrounding maps are $\alpha:\pi_2(A,B)\to\pi_2(C,D)$, $\beta:\pi_2(X,B)\to\pi_2(Y,D)$, $\delta:\pi_1(A,B)\to\pi_1(C,D)$ and $\varepsilon:\pi_1(X,B)\to\pi_1(Y,D)$, and whose centre's neighbours are $h:\pi_2(X,A)\to\pi_1(A,B)$ and $h':\pi_2(Y,C)\to\pi_1(C,D)$. Let $\gamma(c)=1$. Then $\delta h(c)=h'\gamma(c)=1$, so $h(c)=1$ because $\delta$ is injective, hence $c=g(b)$ for some $b\in\pi_2(X,B)$ by exactness at $\pi_2(X,A)$; then $g'\beta(b)=\gamma g(b)=1$, so $\beta(b)=f'(a')$ for some $a'$, and $a'=\alpha(a)$ because $\alpha$ is onto, so $\beta(b)=\beta f(a)$ and $b=f(a)$ by injectivity of $\beta$; hence $c=gf(a)=1$ by exactness at $\pi_2(X,B)$. Every equality in this paragraph is an exactness statement at a group --- $\pi_2$ of a pair is a group for $n\ge2$ --- and the pointed sets enter only through the bijections at the surrounding terms. The injectivity half is therefore proved. *The surjectivity half needs a fact about the boundary map that the abstract five-lemma does not see.* The map $h:\pi_2(X,A)\to\pi_1(A,B)$ is not a homomorphism into a group, but it factors as $h=q\circ\partial$, where $\partial:\pi_2(X,A)\to\pi_1(A)$ is the boundary map of the pair $(X,A)$, a homomorphism, and $q:\pi_1(A,a_0)\to\pi_1(A,B,a_0)$ is the map induced by the inclusion of pairs, whose kernel is the image of $\pi_1(B,a_0)$ by exactness of the pair sequence. Hence for $x,x'\in\pi_2(X,A)$, written multiplicatively, $h(x)=h(x')$ exactly when $q(\partial(x')\partial(x)^{-1})=1$, that is, exactly when $\partial(x'x^{-1})\in\operatorname{im}\pi_1(B)=\ker q$, which is exactly $x'x^{-1}\in\ker h=\operatorname{im}g$; so the fibre of $h$ through $x$ is the coset $(\ker h)x$. The same holds for $h'$ and the triple $(Y,C,D)$.
+
+- *What exactness means at this centre.* Both rows are exact at $\pi_2(X,A,x_0)$: the image of $\pi_2(X,B)\to\pi_2(X,A)$ is the fibre of $\pi_2(X,A)\to\pi_1(A,B)$ over the distinguished element, the latter map being one of pointed sets. The coset lemma proved in the surjectivity paragraph below is the statement of that fibre, and both halves are proved at this window.
+
+- *The window centred at $\pi_2(X,A,x_0)$*, whose four surrounding maps are $\alpha:\pi_2(A,B)\to\pi_2(C,D)$, $\beta:\pi_2(X,B)\to\pi_2(Y,D)$, $\delta:\pi_1(A,B)\to\pi_1(C,D)$ and $\varepsilon:\pi_1(X,B)\to\pi_1(Y,D)$, and whose centre's neighbours are $h:\pi_2(X,A)\to\pi_1(A,B)$ and $h':\pi_2(Y,C)\to\pi_1(C,D)$. Let $\gamma(c)=1$. Then $\delta h(c)=h'\gamma(c)=1$, so $h(c)=1$ because $\delta$ is injective, hence $c=g(b)$ for some $b\in\pi_2(X,B)$ by exactness at $\pi_2(X,A)$; then $g'\beta(b)=\gamma g(b)=1$, so $\beta(b)=f'(a')$ for some $a'$, and $a'=\alpha(a)$ because $\alpha$ is onto, so $\beta(b)=\beta f(a)$ and $b=f(a)$ by injectivity of $\beta$; hence $c=gf(a)=1$ by exactness at $\pi_2(X,B)$. Every equality in this paragraph is an exactness statement at a group --- $\pi_2$ of a pair is a group for $n\ge2$ --- and the pointed sets enter only through the bijections at the surrounding terms. The injectivity half is therefore proved. *The surjectivity half needs a fact about the boundary map that the abstract five-lemma does not see.* The map $h:\pi_2(X,A)\to\pi_1(A,B)$ is not a homomorphism into a group, but it factors as $h=q\circ\partial$, where $\partial:\pi_2(X,A)\to\pi_1(A,x_0)$ is the boundary map of the pair $(X,A)$, a homomorphism, and $q:\pi_1(A,x_0)\to\pi_1(A,B,x_0)$ is the map of pointed sets induced by the inclusion of pairs. Two facts about $q$ are used, and both are proved rather than assumed, $q$ being a map of pointed sets and not a homomorphism. First, $\ker q=\operatorname{im}\bigl(\pi_1(B,x_0)\to\pi_1(A,x_0)\bigr)$: this is exactness of the pair sequence at $\pi_1(A,x_0)$, the $n=1$ case of the second of Hatcher's three exactness paragraphs in the proof of Theorem 4.3. Second, *the fibre of $q$ through a point is a coset of $\ker q$*: for $\alpha,\alpha'\in\pi_1(A,x_0)$, $q(\alpha)=q(\alpha')$ exactly when $\alpha'\alpha^{-1}\in\ker q$. If $q(\alpha)=q(\alpha')$, let $H:I^2\to A$ be a homotopy with $H(s,0)=\alpha(s)$, $H(s,1)=\alpha'(s)$, $H(0,u)\in B$ and $H(1,u)=x_0$; reading the boundary of the square from the corner $(0,0)$ gives $\alpha\cdot x_0\cdot\alpha'^{-1}\cdot\eta^{-1}\simeq1$, where $\eta=H(0,\,\cdot\,)$ is a loop in $B$ at $x_0$, so $\alpha\alpha'^{-1}=[\eta]\in\ker q$ and hence $\alpha'\alpha^{-1}=[\eta]^{-1}\in\ker q$. Conversely, if $\alpha'\alpha^{-1}=[\beta]$ with $\beta$ a loop in $B$ at $x_0$, then $\alpha'\simeq\beta\cdot\alpha$ in $A$ rel endpoints, and $\beta\cdot\alpha$ and $\alpha$ are homotopic as maps of triples $([0,1],\{0,1\},\{1\})\to(A,B,x_0)$ with the start point moving in $B$ and the endpoint fixed at $x_0$: the homotopy
+  $$
+  H(s,t)=\begin{cases}
+  \beta(t+2s),&0\le s\le(1-t)/2,\\[2pt]
+  \alpha\!\left(\dfrac{2s-1+t}{1+t}\right),&(1-t)/2\le s\le1
+  \end{cases}
+  $$
+  is continuous, its two branches agreeing at $s=(1-t)/2$ because $\beta(1)=x_0=\alpha(0)$, and it satisfies $H(s,0)=(\beta\cdot\alpha)(s)$ and $H(s,1)=\alpha(s)$, while $H(0,t)=\beta(t)\in B$ and $H(1,t)=\alpha(1)=x_0$. This is the absorption of an initial segment into the moving start point that the surjectivity argument at $\pi_1(A,B,x_0)$ below writes for $\lambda\cdot q$. The start point is not held fixed and cannot be: for $A=B=S^1$, $\alpha$ the constant loop and $\beta$ the generator, the loops $\beta\cdot\alpha$ and $\alpha$ are not homotopic rel endpoints in $A$, though the homotopy above relates them through relative paths. Hence $[\beta\cdot\alpha]=[\alpha]$ in $\pi_1(A,B,x_0)$ and $q(\alpha')=q(\alpha)$. Hence for $x,x'\in\pi_2(X,A)$, written multiplicatively, $h(x)=h(x')$ exactly when $\partial(x')\partial(x)^{-1}\in\ker q$, that is, exactly when $\partial(x'x^{-1})\in\operatorname{im}\pi_1(B)=\ker q$, which is exactly $x'x^{-1}\in\ker h=\operatorname{im}g$; so the fibre of $h$ through $x$ is the coset $(\ker h)x$. The same holds for $h'$ and the triple $(Y,C,D)$. This second computation is exactness of the pair sequence at $\pi_1(A,x_0)$ in the strengthened sense that Hardie--Kamps call type (E2) of §1 of the paper cited in the remark: the group $\pi_1(B,x_0)$ acts on $\pi_1(A,x_0)$ by left multiplication through $i_*$, and $q(\alpha)=q(\alpha')$ exactly when $\alpha'=\beta\cdot\alpha$ for some $\beta\in\pi_1(B,x_0)$, which is the statement proved above in the form $\alpha'\alpha^{-1}\in\ker q$.
 
 Now let $c'\in\pi_2(Y,C)$ and put $y=h'(c')$. Since $\delta$ is onto, $y=\delta(d_0)$ for some $d_0\in\pi_1(A,B)$. Exactness at $\pi_1(C,D)$ gives $i'(y)=1$, so $\varepsilon(i(d_0))=i'(\delta(d_0))=1$, and $\varepsilon$ injective gives $i(d_0)=1$; exactness at $\pi_1(A,B)$ then gives $d_0=h(a)$ for some $a\in\pi_2(X,A)$. Then $h'(\gamma(a))=\delta(h(a))=y=h'(c')$. By the coset lemma for $h'$, $c'=k\gamma(a)$ with $k\in\ker h'=\operatorname{im}g'$; write $k=g'(b')$ and $b'=\beta(b)$, using that $\beta$ is onto. Then $c'=g'(\beta(b))\gamma(a)=\gamma(g(b))\gamma(a)=\gamma(g(b)a)$, since $\gamma$ is a homomorphism. So $\gamma$ is onto, and both halves at this window are proved.
+
+- *What exactness means at this centre.* Both rows are exact at $\pi_1(A,B,x_0)$ as pointed sets: the image of $\pi_2(X,A)\to\pi_1(A,B)$ is the fibre of $\pi_1(A,B)\to\pi_1(X,B)$ over the distinguished element, and likewise in the target row. Both halves of the five-lemma at this window are proved below, the injectivity half in full and not only at the basepoint.
+
 - *At $\pi_1(A,B,x_0)$*, with $i:\pi_1(A,B)\to\pi_1(X,B)$, $j:\pi_1(X,B)\to\pi_1(X,A)$ and $\partial:\pi_2(X,A)\to\pi_1(A,B)$ the boundary map of the triple, and the corresponding primed maps. *The basepoint fibre.* Let $\gamma(c)=1$. Then $\delta i(c)=i'\gamma(c)=1$, so $i(c)=1$ because $\delta$ is injective, hence $c=\partial(b)$ for some $b$ by exactness at $\pi_1(A,B)$. Then $1=\gamma(c)=\partial'\beta(b)$, so $\beta(b)\in\ker\partial'=\operatorname{im}\bigl(\pi_2(Y,D)\to\pi_2(Y,C)\bigr)$, say $\beta(b)=f'(a')$, and $a'=\alpha(a)$ because $\alpha$ is onto, so $\beta(b)=\beta f(a)$ and $b=f(a)$ by injectivity of $\beta$; hence $c=\partial f(a)=1$ by exactness at $\pi_2(X,A)$. The same calculation applies at every admissible basepoint.
 
   *Injectivity.* Let $\gamma(c_0)=\gamma(c_1)$, and choose representative paths $r_0,r_1$ in $A$, with image paths $p_0,p_1$ in $C$. Since $\delta$ is injective, $\delta i(c_0)=\delta i(c_1)$ gives $i(c_0)=i(c_1)$. The starting edge of a homotopy witnessing this equality is a path $\eta$ in $B$ from $r_0(0)$ to $r_1(0)$. Replace $r_1$ by $\eta\cdot r_1$ and $p_1$ by its new image. Prepending $\eta$ does not change $c_1$, since $\eta$ lies in $B$; thus $c_0,c_1$ are unchanged, but now $r_0,r_1$ have the common start point $b_0=r_0(0)$, and $p_0,p_1$ have the common start point $p_0(0)$.
@@ -542,11 +988,11 @@ Now let $c'\in\pi_2(Y,C)$ and put $y=h'(c')$. Since $\delta$ is onto, $y=\delta(
   $$
   H:I^2\longrightarrow Y,\qquad H(s,0)=p(s),\quad H(s,1)=q(s),\quad H(0,t)=\lambda(t)\in D,\quad H(1,t)=y_0 .
   $$
-  All of $\partial I^2$ maps into $C$. In Hatcher's disk model (printed p. 343), $H$ therefore represents a class $\eta\in\pi_2(Y,C,y_0)$, based at the bottom-right corner of the square. Reading its boundary from that corner, first along the reversed bottom edge and then along the left and top edges, gives
+  All of $\partial I^2$ maps into $C$. In Hatcher's disk model of §4.1, $H$ therefore represents a class $\eta\in\pi_2(Y,C,y_0)$, based at the bottom-right corner of the square. Reading its boundary from that corner, first along the reversed bottom edge and then along the left and top edges, gives
   $$
   \partial\eta=[\ell]\in\pi_1(C,y_0),\qquad \ell=p^{-1}\cdot\lambda\cdot q .
   $$
-  Since $\beta:\pi_2(X,A,x_0)\to\pi_2(Y,C,y_0)$ is onto, choose $\mu$ with $\beta(\mu)=\eta$. Let $\nu=\partial\mu\in\pi_1(A,x_0)$, and write $\bar\nu$ for its image in $\pi_1(A,B,x_0)$. Naturality of the pair boundary gives $\gamma(\bar\nu)=q_C([\ell])$, where $q_C:\pi_1(C,y_0)\to\pi_1(C,D,y_0)$ is induced by inclusion. Concatenation with the loop $\nu$ at the endpoint is well-defined on relative classes, and the corrected class $c\cdot\bar\nu$ has image $[p\cdot\ell]$ in $\pi_1(C,D,y_0)$.
+  Since $\beta:\pi_2(X,A,x_0)\to\pi_2(Y,C,y_0)$ is onto, choose $\mu$ with $\beta(\mu)=\eta$. Let $\nu=\partial\mu\in\pi_1(A,x_0)$, and write $\bar\nu=q(\nu)$ for its image in $\pi_1(A,B,x_0)$. Naturality of the pair boundary gives $\gamma(\bar\nu)=q_C([\ell])$, where $q_C:\pi_1(C,y_0)\to\pi_1(C,D,y_0)$ is induced by inclusion. The correction is $c\cdot\nu$, the class represented by a representative path of $c$ followed by the loop $\nu$; this is the action of $\pi_1(A,x_0)$ on $\pi_1(A,B,x_0)$ recorded in Hatcher's §4.1. The map $\gamma$ preserves it, being induced by a map of triples, so $\gamma(c\cdot\nu)=\gamma(c)\cdot\gamma_A(\nu)$, where $\gamma_A:\pi_1(A,x_0)\to\pi_1(C,y_0)$ is the absolute map. By naturality $\gamma_A(\nu)=\gamma_A(\partial\mu)=\partial'(\beta\mu)=[\ell]$, hence $\gamma(c\cdot\nu)=[p]\cdot[\ell]=[p\cdot\ell]$ in $\pi_1(C,D,y_0)$.
 
   The usual endpoint-fixed cancellation of $p\cdot p^{-1}$ in $C$ gives $[p\cdot\ell]=[\lambda\cdot q]$. The remaining initial segment lies in $D$ and can be absorbed into the varying start point. Explicitly, parametrize $\lambda\cdot q$ by $\lambda(2s)$ on $0\le s\le1/2$ and $q(2s-1)$ on $1/2\le s\le1$, and define
   $$
@@ -560,6 +1006,9 @@ Now let $c'\in\pi_2(Y,C)$ and put $y=h'(c')$. Since $\delta$ is onto, $y=\delta(
   \gamma(c\cdot\bar\nu)=[p\cdot\ell]=[\lambda\cdot q]=[q]=c',
   $$
   so $\gamma$ is onto.
+
+- *What exactness means at this centre.* Both rows are exact at $\pi_1(X,B,x_0)$ as pointed sets: the image of $\pi_1(A,B)\to\pi_1(X,B)$ is the fibre of $\pi_1(X,B)\to\pi_1(X,A)$ over the distinguished element, and likewise in the target row. Both halves at this window are proved below, injectivity in full and surjectivity by a lift of the reversed starting edge.
+
 - *At $\pi_1(X,B,x_0)$.* *Injectivity.* Let $\delta(c_0)=\delta(c_1)$. Since $\varepsilon$ is injective, $\varepsilon j(c_0)=\varepsilon j(c_1)$ gives $j(c_0)=j(c_1)$. Choose representative paths $r_0,r_1$ in $X$, with endpoints in $B$ and $x_0$, and let $p_0,p_1$ be their image paths in $Y$. The equality $j(c_0)=j(c_1)$ gives a homotopy $K$ in $X$ from $r_0$ to $r_1$ whose starting edge $\eta$ lies in $A$ and whose ending edge is constant at $x_0$. Set $b_0=r_0(0)$, and write $\eta_C$ for the image of $\eta$ in $C$. Reading the boundary of $K$ gives $r_0\simeq\eta\cdot r_1$ with endpoints fixed, so
   $$
   c_1=[\eta^{-1}\cdot r_0].
@@ -588,19 +1037,21 @@ Now let $c'\in\pi_2(Y,C)$ and put $y=h'(c')$. Since $\delta$ is onto, $y=\delta(
   $$
   gives a class $b$ with $\gamma_{b_0}(b)=[\lambda^{-1}]$. Choose a representative path $\rho$ of $b$; it lies in $A$, starts at a point of $B$, and ends at $b_0$. If $\rho'$ is its image path in $C$, the equality $\gamma_{b_0}(b)=[\lambda^{-1}]$ supplies a homotopy from $\rho'$ to $\lambda^{-1}$ whose starting point stays in $D$ and whose endpoint is fixed at $p(0)$. Concatenating that homotopy with $p$ shows that $[\rho'\cdot p]=[\lambda^{-1}\cdot p]$ in $\pi_1(Y,D,y_0)$.
 
-  The concatenation $\rho\cdot r$ is defined because $\rho$ ends at $b_0=r(0)$, and it represents a class in $\pi_1(X,B,x_0)$. Its image is $[\rho'\cdot p]$. Since $q\simeq\lambda^{-1}\cdot p$ with endpoints fixed,
+  The concatenation $\rho\cdot r$ is defined because $\rho$ ends at $b_0=r(0)$, and it represents a class in $\pi_1(X,B,x_0)$. Its image is $[\rho'\cdot p]$, the ordinary concatenation of the relative paths $\rho'$ and $p$ at their common point; the concatenation point is interior to the class and moves freely in a homotopy of relative paths, so this is not the action of $\pi_1(X,x_0)$, which acts at the endpoint $x_0$. Since $q\simeq\lambda^{-1}\cdot p$ with endpoints fixed,
   $$
   \delta([\rho\cdot r])=[\rho'\cdot p]=[\lambda^{-1}\cdot p]=[q]=c'.
   $$
   Thus $\delta$ is onto.
 
-So at all four set-valued windows the card proves both halves. At the two centred at a $\pi_2$ term, $\pi_2(X,B,x_0)$ and $\pi_2(X,A,x_0)$, injectivity follows because the centre is a group and the vertical map a homomorphism with trivial kernel, and surjectivity uses a correction taken in a group, with the coset lemma at the second window. At $\pi_1(A,B,x_0)$, full injectivity is obtained by aligning the two representatives' start points and applying the basepoint-fibre calculation to their difference loop at the common start; surjectivity lifts $H$ to a relative $2$-disk and concatenates with its boundary. At $\pi_1(X,B,x_0)$, both halves are rebased at $b_0$: injectivity uses the first window's full injectivity there, and surjectivity concatenates with a lift of the reversed starting edge. The two vertical maps of pointed sets are bijective, not merely maps with trivial basepoint fibre. What is proved about the terminal term is the quotient statement on which Claim 2 rests: $\pi_0(A,B,x_0)=\pi_0(A,x_0)/i_*\pi_0(B,x_0)$, and a bijection $\pi_0(A,x_0)\to\pi_0(C,y_0)$ which carries $i_*\pi_0(B,x_0)$ onto $i'_*\pi_0(B,x_0)$ induces a bijection $\pi_0(A,B,x_0)\to\pi_0(C,D,y_0)$; so bijectivity of the vertical maps at $\pi_0(A,x_0)$ and at $\pi_0(B,x_0)$ forces bijectivity at $\pi_0(A,B,x_0)$.
+Exactness at every term is proved above, at $\pi_n(X,B,x_0)$, $\pi_n(X,A,x_0)$ and $\pi_n(A,B,x_0)$ for every $n\ge1$, by Hatcher's three paragraphs; in degree $1$, where the terms are pointed sets, they are the three bullets of the paragraph above the inventory, which also prove exactness at $\pi_1(X,A,x_0)$, the term the extension adds. With that, at all four set-valued windows the card proves both halves of the five-lemma. At the two centred at a $\pi_2$ term, $\pi_2(X,B,x_0)$ and $\pi_2(X,A,x_0)$, injectivity follows because the centre is a group and the vertical map a homomorphism with trivial kernel, and surjectivity uses a correction taken in a group, with the coset lemma at the second window. At $\pi_1(A,B,x_0)$, full injectivity is obtained by aligning the two representatives' start points and applying the basepoint-fibre calculation to their difference loop at the common start; surjectivity lifts $H$ to a relative $2$-disk and concatenates with its boundary. At $\pi_1(X,B,x_0)$, both halves are rebased at $b_0$: injectivity uses the first window's full injectivity there, and surjectivity concatenates with a lift of the reversed starting edge. The two vertical maps of pointed sets are bijective, not merely maps with trivial basepoint fibre. What is proved about the terminal term is the quotient statement on which Claim 2 rests: $\pi_0(A,B,x_0)=\pi_0(A,x_0)/i_*\pi_0(B,x_0)$, and a bijection $\pi_0(A,x_0)\to\pi_0(C,y_0)$ which carries $i_*\pi_0(B,x_0)$ onto $i'_*\pi_0(D,y_0)$ induces a bijection $\pi_0(A,B,x_0)\to\pi_0(C,D,y_0)$; so bijectivity of the vertical maps at $\pi_0(A,x_0)$ and at $\pi_0(B,x_0)$ forces bijectivity at $\pi_0(A,B,x_0)$.
 :::
 
 ::: {.remark title="Sources"}
 
-The exercise is Exercise 9 of §4.1, printed p. 358, read in the text version `tmp/sources/hatcher-2002-algebraic-topology.md`, stated with the errata's $i_*$ in place of $i^*$. The printed claim (a) is proved on this card at every window: at every term of degree $\ge2$, by the group chase; at both set-valued terms $\pi_1(X,A,x_0)$ and $\pi_0(A,x_0)$, where it is carried by the declarations `relativePiOne_map_bijective` and `zerothHomotopySubtypeMap_bijective` of [`LeanCategories/Topology/PairHomotopySequence.lean`](https://github.com/dzackgarza/lean-categories/blob/9b8b85840c2b5cef55942b971c65e3b4bfc0d252/LeanCategories/Topology/PairHomotopySequence.lean) on `lean-categories` main, with $\pi_1(X,A,x_0)$ read as Hatcher's quotient in which the start point moves inside $A$ (printed p. 343); at the term $\pi_0(X,x_0)$, by Claim 1; and at the two windows centered at $\pi_1(A,x_0)$ and at $\pi_1(X,x_0)$, by the argument of part (a), whose only non-group step is replaced by the exactness assertion at the centre's target. For part (b) the group windows are proved. At the two windows centred at a $\pi_2$ term, $\pi_2(X,B,x_0)$ and $\pi_2(X,A,x_0)$, whose centres are groups and whose vertical maps are homomorphisms, the card proves both directions, injectivity by the chase and surjectivity by the chase up to the coset lemma. At the two windows centred at $\pi_1(A,B,x_0)$ and $\pi_1(X,B,x_0)$ it proves full injectivity as well as surjectivity: the first aligns the representatives' start points and applies the basepoint-fibre chase to their difference loop at the common start, while the second rebases at $b_0$ and applies that full injectivity there. The two surjectivity constructions lift a relative $2$-disk and a reversed starting edge, respectively. Hence every vertical map in every five-term window of the truncated triple ladder is a bijection. No published treatment of this exercise was located, in the retained sets or in the sources searched for it.
+The exercise is §4.1 Exercise 9, read in the text version `tmp/sources/hatcher-2002-algebraic-topology.md`, stated with the errata's $i_*$ in place of $i^*$. Which part each source covers, and which are the card's own: Hatcher's Theorem 4.3 and its three exactness paragraphs, together with the compression criterion of §4.1, supply exactness of the pair and of the triple sequence at every term, the degree-one terms included, and Hatcher's definition of $\pi_1(X,A,x_0)$ in §4.1 supplies the set that the $\pi_1$ term is; Brown's Theorem 4.9 and Corollary 4.11 supply the related statement for a fibration of groupoids and nothing of the exercise's own sequence; everything else — the group chase at each window, Claim 1 at the $\pi_0(X,x_0)$ term, the two windows centred at $\pi_1(A,x_0)$ and $\pi_1(X,x_0)$, the verification that Hatcher's degree-one homotopies are homotopies of triples, the coset lemma at the $\pi_2(X,A,x_0)$ window, and the example showing that the triple sequence stops at $\pi_0(A,B,x_0)$ — is the card's own argument. The two statements the exercise asks for are stated, in the same generality, in Friedrich tom Dieck, *Algebraic Topology* (EMS, 2008): the exact sequence of a triple, ending at $\pi_1(X,A,b)$, is Problem 3 of §6.1; and the five-lemma at the pointed-set end is Problem 3 of §6.2, where the hypotheses are the two directions at $\pi_1(X,A,a)$ separately, with the injectivity half required "for each $c\in A$" and concluded "for each $a\in A$" — the same restriction to every basepoint that this card's part (b) states, and Hatcher's (a) at the term $\pi_1(X,A,x_0)$ follows from that problem, its four bijections giving tom Dieck's hypotheses in both halves. Both are problems there: the book states the two facts and proves neither, so it supplies the form and the clause, not a proof (reading copy `tmp/sources/tomdieck-algebraic-topology-ranicki.md`). The printed claim (a) is proved on this card at every window: at every term of degree $\ge2$, by the group chase; at both set-valued terms $\pi_1(X,A,x_0)$ and $\pi_0(A,x_0)$, where it is carried by the declarations `relativePiOne_map_bijective` and `zerothHomotopySubtypeMap_bijective` of [`LeanCategories/Topology/PairHomotopySequence.lean`](https://github.com/dzackgarza/lean-categories/blob/9b8b85840c2b5cef55942b971c65e3b4bfc0d252/LeanCategories/Topology/PairHomotopySequence.lean) on `lean-categories` main, with $\pi_1(X,A,x_0)$ read as Hatcher's quotient in which the start point moves inside $A$ (§4.1); at the term $\pi_0(X,x_0)$, by Claim 1; and at the two windows centered at $\pi_1(A,x_0)$ and at $\pi_1(X,x_0)$, by the argument of part (a), whose only non-group step is replaced by the exactness assertion at the centre's target. For part (b), exactness at every term of the triple sequence is Hatcher's argument at $n\ge1$, written out at $n=1$ where the terms are pointed sets, and no further term exists by the card's example. The group windows of the ladder are proved. At the two windows centred at a $\pi_2$ term, $\pi_2(X,B,x_0)$ and $\pi_2(X,A,x_0)$, whose centres are groups and whose vertical maps are homomorphisms, the card proves both directions, injectivity by the chase and surjectivity by the chase up to the coset lemma. At the two windows centred at $\pi_1(A,B,x_0)$ and $\pi_1(X,B,x_0)$ it proves full injectivity as well as surjectivity: the first aligns the representatives' start points and applies the basepoint-fibre chase to their difference loop at the common start, while the second rebases at $b_0$ and applies that full injectivity there. The two surjectivity constructions lift a relative $2$-disk and a reversed starting edge, respectively. Hence every vertical map in every five-term window of the truncated triple ladder is a bijection. No retained solution set covers this exercise, so its five-lemma arguments are the card's own: the census of the retained sets, read in their copies in `tmp/sources`, is DeMason, *M382C Full Credit HW Problems*, §4.1 Exercises 2, 8 and 11 only (`demason-m382c-hatcher-20210404.pdf`); Sam, *Solutions to Algebraic Topology*, §4.1 Exercises 2, 3, 5, 10, 11, 12, 13, 14, 19 and 20 (`hatcher-solutions-sam-2008.md`, the same document as the UCR Math 205B help file `ucr-math205B-hatcher-helpfile.md`); Li, whose §4.1 stops at Exercise 1 without a solution; Proudfoot, §4.1 Exercises 4, 11, 12, 14 and 15 (homework 6); Poulsen, whose set stops before §4.1; and Koukpari, whose §4.1 contains Exercise 1 only. The exactness half is Hatcher's proof of Theorem 4.3, transcribed in part (b) above at every degree; the five-lemma half, the coset lemma, the example and the degree-one checks are the card's own, as the paragraph-by-paragraph provenance convention at the head of the solution says. The two tom Dieck problems state the exercise's two halves and prove neither.
 
-A related published statement, cited for exactly what it proves: **R. Brown, *Fibrations of groupoids*, Journal of Algebra 15 (1970), 103--132**, Theorem 4.9 on printed p. 121 and Corollary 4.11 on printed p. 123 (reading copy `tmp/sources/brown-1970-fibrations-of-groupoids.md`). For a fibration of groupoids $p:G\to H$ with fibre $F$ over an object $v$, Brown's 4.9(a) concludes that $f:\pi_0F\to\pi_0F'$ is surjective if the maps of vertex groups $h:H(v)\to H'(v')$ and of components $g:\pi_0G\to\pi_0G'$ are surjective and $h:\pi_0H\to\pi_0H'$ is injective, and 4.9(b) concludes that $f$ is injective on $\ker(i:\pi_0F\to\pi_0G)$ if $h:H(v)\to H'(v')$ is injective and $g:G(x)\to G'(x')$ is surjective; Corollary 4.11 concludes that $h:H\to H'$ and $g:G\to G'$ being equivalences of groupoids forces $f:F\to F'$ to be an equivalence, in particular $f:\pi_0F\to\pi_0F'$ to be a bijection, the proof applying 4.9 and then the ordinary five-lemma for groups to Brown's diagram 4.8. That is a five-lemma at the $\pi_0$ term, and its hypotheses are stronger than the exercise's: an equivalence of groupoids is a bijection on hom-sets at every object and on components, which is the exercise's "for all choices of $x_0$" in a setting where a fibration supplies the exact sequence. It is a statement about fibrations of groupoids, and the map of pairs $(X,A)\to(Y,B)$ is not one, so nothing on this card rests on it: it is the related statement, for groupoids, of the five-lemma at the $\pi_0$ term that the two declarations above prove for the pair sequence.
+A published treatment of the exact sequence of a triple, and of which of its terms is the delicate one: **K. A. Hardie and K. H. Kamps, *Exact sequence interlocking and free homotopy theory*, Cahiers de topologie et géométrie différentielle catégoriques **26** (1985), 3--31**, open access at `http://www.numdam.org/item?id=CTGDC_1985__26_1_3_0`. Their §3.A derives the exact homotopy sequence of a triple $(X,A,B,x_0)$ from the three exact sequences of its pairs by their Theorem 2.1, and states that the derivation yields exactness "except at $\pi_1(X,B,x_0)$ where exactness has to be proved separately" (the running text is a 1985 scan; the OCR prints the symbol as "Tri", and the term is the one this card proves separately, at the point where the sequence leaves the group range). Their §1 lists the exactness types (E0)--(E4) for pointed sets and pointed maps, and type (E2) there is exactly the structure of this card's coset lemma: a group acting on a pointed set $B$ with $\beta(b)=\beta(b')$ exactly when $b'=a\cdot b$ for some $a$ of the group, that is, the fibres of the next map are the orbits. What the paper gives is the published form of the two facts and not the exercise: Theorem 2.1 is an exactness result, not a five-lemma, it says nothing at the set-valued terms of a ladder, and the exercise itself is not treated.
+
+A related published statement, cited for exactly what it proves: **R. Brown, *Fibrations of groupoids*, Journal of Algebra 15 (1970), 103--132**, Theorem 4.9 and Corollary 4.11 (reading copy `tmp/sources/brown-1970-fibrations-of-groupoids.md`). For a fibration of groupoids $p:G\to H$ with fibre $F$ over an object $v$, Brown's 4.9(a) concludes that $f:\pi_0F\to\pi_0F'$ is surjective if the maps of vertex groups $h:H(v)\to H'(v')$ and of components $g:\pi_0G\to\pi_0G'$ are surjective and $h:\pi_0H\to\pi_0H'$ is injective, and 4.9(b) concludes that $f$ is injective on $\ker(i:\pi_0F\to\pi_0G)$ if $h:H(v)\to H'(v')$ is injective and $g:G(x)\to G'(x')$ is surjective; Corollary 4.11 concludes that $h:H\to H'$ and $g:G\to G'$ being equivalences of groupoids forces $f:F\to F'$ to be an equivalence, in particular $f:\pi_0F\to\pi_0F'$ to be a bijection, the proof applying 4.9 and then the ordinary five-lemma for groups to Brown's diagram 4.8. That is a five-lemma at the $\pi_0$ term, and its hypotheses are stronger than the exercise's: an equivalence of groupoids is a bijection on hom-sets at every object and on components, which is the exercise's "for all choices of $x_0$" in a setting where a fibration supplies the exact sequence. It is a statement about fibrations of groupoids, and the map of pairs $(X,A)\to(Y,B)$ is not one, so nothing on this card rests on it: it is the related statement, for groupoids, of the five-lemma at the $\pi_0$ term that the two declarations above prove for the pair sequence. Brown is explicit that the groupoid analogue is weaker than the space-level statement, and his own Example 4.10 is a map of fibrations of groupoids for which the hypotheses of 4.9(b) hold and $f:\pi_0F\to\pi_0F'$ is nevertheless not injective: he says in the remark before it that "the conclusion of 4.9(b) is weaker than in the usual 5-lemma" and that the example shows the assumptions "do not imply $f:\pi_0F\to\pi_0F'$ injective even when $g:\pi_0G\to\pi_0G'$ is injective". That is the sharpest form of the reason this card proves its own statement instead of quoting the groupoid one.
 
 :::

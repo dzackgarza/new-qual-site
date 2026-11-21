@@ -9,10 +9,10 @@ topics:
 # Schwarz reflection
 
 A holomorphic function on the upper half of a symmetric region that is real on the real axis extends to the whole region by reflection.
-The proof glues two holomorphic functions along a segment and applies Morera's theorem.
+The proof glues two holomorphic functions along a segment and applies [[T-LHSMY|Morera's theorem]].
 
 ::: {.remark}
-Throughout, $\Omega$ is an open set symmetric about the real axis, so $z\in \Omega \iff \bar{z} \in \Omega$, and $\Omega^+ \coloneqq \Omega\cap\theset{\Im z>0}$, $I\coloneqq\Omega\cap\RR$, and $\Omega^- \coloneqq \Omega\cap\theset{\Im z<0}$.
+Throughout, $\Omega$ is an open set symmetric about the real axis, so $z\in \Omega \iff \bar{z} \in \Omega$.
 
 :::
 

@@ -342,6 +342,11 @@ If $f$ were constant, its modulus could not be both $<1$ on $\Omega$ and equal t
 Therefore no connected component of $U$ can be bounded.
 
 
+that is,
+$$
+\boxed{\text{every connected component of }\{z:\abs{f(z)}<1\}\text{ is unbounded}.}
+$$
+
 ::: pf-proof
 
 The assumption of a bounded component led to the contradiction in step [](#s1-16){.pf-ref}.
@@ -350,28 +355,9 @@ The assumption of a bounded component led to the contradiction in step [](#s1-16
 
 :::
 
-::: {.pf-step #s1-18}
-
-Thus
-$$
-\boxed{
-\text{every connected component of }
-\{z:\abs{f(z)}<1\}
-\text{ is unbounded}.}
-$$
-
-
-::: pf-proof
-
-This is step [](#s1-17){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-18){.pf-ref} is the required conclusion.
+Step [](#s1-17){.pf-ref} is the required conclusion.
 
 :::
 

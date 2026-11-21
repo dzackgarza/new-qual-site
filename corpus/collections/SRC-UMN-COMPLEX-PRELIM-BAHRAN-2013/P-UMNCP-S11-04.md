@@ -6,7 +6,9 @@ title: Second derivative equality case in Schwarz lemma
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Schwarz Lemma
+  - Cauchy Estimates
 relations: []
 review: draft
 audit:

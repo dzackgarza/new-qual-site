@@ -12,7 +12,9 @@ topics:
 ::: {.example title="Converse of Lagrange's theorem"}
 A finite group need not have a subgroup of each order dividing its order.
 The [[D-TMME3|alternating group]] $A_4$ has order $12$ and no subgroup of order $6$; $A_5$ has order $60$ and no subgroup of order $30$.
-The proofs are on [[algebra/group-actions/orbit-stabilizer|Orbit-stabilizer]].
+
+For $A_5$: a subgroup of index $2$ is normal, and $A_5$ is simple ([[P-HPYC5]]), so there is none of order $30$.
+For $A_4$: suppose $H\leq A_4$ has order $6$. The $3$-cycles generate $A_4$ ([[PR-JY4PV]]), so some $3$-cycle $x$ lies outside $H$; the cosets $H$, $xH$, $x^2H$ are only two distinct cosets, and each coincidence forces $x\in H$: $H=xH$ gives $x\in H$, $x^2H=H$ gives $x^2=\inverseof{x}\in H$, and $xH=x^2H$ gives $x=x^2\inverseof{x}\in H$.
 :::
 
 ::: {.example title="Groups of prime-cube order"}
@@ -70,19 +72,11 @@ An [[D-BJYH3|exact sequence]] need not [[D-3JJJN|split]]; $0\to\ZZ/2\to\ZZ/4\to\
 
 ## Linear algebra
 
-Further matrix counterexamples are on [[algebra/linear-algebra/matrix-counterexamples|Matrix counterexamples]].
-
 ::: {.example title="Characteristic polynomials and similarity"}
 Matrices with the same [[D-QFYAC|characteristic polynomial]] and the same [[D-GK5SF|minimal polynomial]] need not be [[D-JIGMN|similar]]; $J_2(0)\oplus J_2(0)$ and $J_2(0)\oplus J_1(0) \oplus J_1(0)$ both have characteristic polynomial $x^4$ and minimal polynomial $x^2$.
 :::
 
-::: {.example title="Real eigenvalues"}
-A real matrix need not have a real eigenvalue: the rotation $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ has characteristic polynomial $x^2+1$.
-:::
-
-::: {.example title="Diagonalizability over the real and complex numbers"}
-The same rotation is diagonalizable over $\CC$, with eigenvalues $\pm i$, and not over $\RR$.
-:::
+A real rotation with no real eigenvalue, the Jordan blocks $J_2(1)$ and $J_3(1)$, and a pair of nilpotent matrices with equal characteristic polynomials are worked on [[algebra/linear-algebra/matrix-counterexamples|Matrix counterexamples]].
 
 ## Fields
 

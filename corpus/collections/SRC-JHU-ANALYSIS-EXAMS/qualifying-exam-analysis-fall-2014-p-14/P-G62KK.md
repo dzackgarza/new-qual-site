@@ -33,6 +33,16 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: "Spring 2014 problem 1 is the only occurrence of this statement in the JHU packet; merged the duplicate card P-8XT02 and kept its tail-set proof as a second solution."
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card carried two solution blocks: a provenance note that no retained solution set covers the
+    problem, and the solution itself. Both rendered as solutions, and the second one carries two pf roots
+    because the argument treats the two directions separately. The note was moved to the head of the
+    single solution block and the two pf blocks were left as they were, since each proves a different
+    implication; nothing in the note or the proof was reworded.
+
 ---
 
 ::: {.problem}
@@ -47,6 +57,7 @@ $f_k\to f$ uniformly on $A_\varepsilon$.
 :::
 
 ::: {.solution}
+No retained solution set covers this problem: the collection's provenance is the collection of past analysis examinations alone, so the argument is the card's own.
 
 ::: pf
 
@@ -160,10 +171,6 @@ such that $f_k\to f$ uniformly on $A_\varepsilon$, as required.
 
 :::
 
-:::
-
-::: {.solution}
-
 ::: pf
 
 ::: pf-step
@@ -267,5 +274,5 @@ and uniform convergence on $E\setminus B$ implies uniform convergence on $A_\eps
 :::
 
 :::
-
 :::
+

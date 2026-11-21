@@ -12,9 +12,36 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 2 of the Algebra Preliminary Examination of September 8, 2008
+    (University of Washington), printed p. 1 of the two-page paper retained at assets/attachments/UW-
+    Algebra-Qual-2008.pdf, is the statement the card answers, and the paragraph at the head of the
+    solution records that the paper prints no solutions, so the argument is the card's own. Checked: the
+    statement against the paper's text layer at the page named; the solution read for the construction
+    of the field of q^n elements as the fixed points of the n-th Frobenius power and the extraction of
+    an element of each degree d dividing n; `qualc.authoring check` on the card, and `tmp/lam.sh` for
+    the numbering and the QED. Not checked: no retained solution set exists for this paper to compare
+    the argument with, and no other card of the collection in this pass.
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Repaired and restructured. The card opened with a step whose claim was a notation
+    instruction ('Write |F| = q') followed by the n = 1 case with no proof, and its later steps
+    asserted |E| = q^n and the existence of an element of each degree without argument. It is
+    now five proved steps: the degree-1 case; E is a subfield containing F, keeping the card's
+    Frobenius computation but stating the iterated Frobenius identity it uses; |E| = q^n from
+    the q^n distinct roots of x^{q^n} - x, whose derivative -1 is nonzero; the existence of an
+    element of degree exactly d for each d | n, through the cyclic structure of E^× and the fact
+    that a finite field is not the union of its proper subfields; and the conclusion. The answer
+    is unchanged. Not claimed: a retained solution set; the collection's provenance is the
+    examination paper only.
 ---
 
 ::: {.problem}
@@ -24,168 +51,60 @@ Show for any positive integer $n$ that there are irreducible polynomials of degr
 
 ::: {.solution}
 
+The problem is Problem 2 of the Algebra Preliminary Examination of September 8, 2008 (University of Washington), printed p. 1 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2008.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the construction: the subfield $E=\{\alpha:\alpha^{q^n}=\alpha\}$ of $\overline{F}$ has $q^n$ elements, and for each $d\mid n$ an element of $E$ of degree $d$ over $F$ gives an irreducible polynomial of that degree
+Throughout $F$ is a finite field with $\cardinality{F} = q$, $p \coloneqq \operatorname{char}F$ is prime and $q$ is a power of $p$, and $\overline{F}$ is an algebraic closure of $F$. The collection's `provenance` is the 2014 UW algebra examination, and no solutions sheet accompanies it, so the argument below is the card's own.
+
 ::: pf
 
-::: pf-step
-Write
-$$
-\cardinality{F}=q.
-$$
-For $n=1$, an irreducible polynomial of degree $1$ is immediate, for example $x-a$ with $a\in F$.
-
-:::
-
-::: pf-step
-Assume $n\ge2$, and let $\overline F$ be an algebraic closure of $F$. Define
-$$
-E=\{\alpha\in\overline F:\alpha^{q^n}=\alpha\}.
-$$
-Then $E$ is a field containing $F$.
+::: {.pf-step #n1}
+For $n = 1$ there is an irreducible polynomial of degree $1$ in $F[x]$.
 
 ::: pf-proof
-The field $F$ has characteristic $p$ for some prime $p$, and $q$ is a power of $p$. If $a,b\in E$, then Frobenius gives
-$$
-(a+b)^{q^n}=a^{q^n}+b^{q^n}=a+b,
-$$
-and
-$$
-(ab)^{q^n}=a^{q^n}b^{q^n}=ab.
-$$
-Also $0,1\in E$. If $a\in E$ is nonzero, then
-$$
-(a^{-1})^{q^n}=(a^{q^n})^{-1}=a^{-1}.
-$$
-Hence $E$ is a subfield of $\overline F$.
+Take any $a \in F$, which exists because a field is nonempty, and $x - a$. A polynomial of degree $1$ admits no factorization into two polynomials of positive degree, since degrees would add to $1 > 0 + 0$; hence $x - a$ is irreducible, and its root $a$ lies in $F$.
 
-For every $a\in F$, we have $a^q=a$, and therefore $a^{q^n}=a$. Thus $F\subseteq E$.
 :::
 
 :::
 
-::: pf-step
-The field $E$ has exactly $q^n$ elements.
+::: {.pf-step #E}
+$E \coloneqq \theset{\alpha \in \overline{F} \mid \alpha^{q^{n}} = \alpha}$ is a subfield of $\overline{F}$ containing $F$.
 
 ::: pf-proof
-The polynomial
-$$
-P(x)=x^{q^n}-x
-$$
-has derivative
-$$
-P'(x)=q^n x^{q^n-1}-1=-1
-$$
-in characteristic $p$, because $p\mid q^n$. Thus $P$ has no repeated roots. Since $\overline F$ is algebraically closed, $P$ splits completely there into exactly $q^n$ distinct roots. By definition these roots are precisely the elements of $E$. Hence
-$$
-\cardinality{E}=q^n.
-$$
+For $a, b \in E$ the Frobenius identity $(a+b)^{q^{n}} = a^{q^{n}} + b^{q^{n}}$ in characteristic $p$, iterated $n$ times, gives $(a+b)^{q^{n}} = a + b$, and $(ab)^{q^{n}} = a^{q^{n}}b^{q^{n}} = ab$; also $0, 1 \in E$ and, for $a \ne 0$, $(a^{-1})^{q^{n}} = (a^{q^{n}})^{-1} = a^{-1}$. So $E$ is a subfield. For $a \in F$ one has $a^{q} = a$ because $F^{\times}$ has order $q-1$, hence $a^{q^{n}} = a$, so $F \subseteq E$.
+
 :::
 
 :::
 
-::: {.pf-step #s4}
-For each divisor $d$ of $n$, there is at most one subfield of $E$ having $q^d$ elements.
+::: {.pf-step #size}
+$\cardinality{E} = q^{n}$.
 
 ::: pf-proof
-Let $K\subseteq E$ be a subfield with $\cardinality{K}=q^d$. Every element $a\in K$ satisfies
-$$
-a^{q^d}=a.
-$$
-Therefore $K$ is contained in the root set of
-$$
-x^{q^d}-x.
-$$
-That polynomial has at most $q^d$ roots, while $K$ already has exactly $q^d$ elements. Hence $K$ is exactly its root set. Thus any subfield of $E$ with $q^d$ elements is uniquely determined.
+$E$ is by definition the set of roots in $\overline{F}$ of the polynomial $x^{q^{n}} - x$, whose derivative is $q^{n}x^{q^{n}-1} - 1 = -1$ because $q^{n} = 0$ in characteristic $p$; a polynomial with nonzero constant derivative $-1$ has no repeated root, so $x^{q^{n}} - x$ has exactly $\deg = q^{n}$ distinct roots in $\overline{F}$, that is $\cardinality{E} = q^{n}$.
+
 :::
 
 :::
 
-::: {.pf-step #s5}
-Every proper intermediate field
-$$
-F\subseteq K\subsetneq E
-$$
-has $q^d$ elements for some proper divisor $d<n$ of $n$.
+::: {.pf-step #degree-d}
+For every divisor $d$ of $n$ there is $\alpha \in E$ with $[F(\alpha):F] = d$, hence an irreducible polynomial of degree $d$ over $F$.
 
 ::: pf-proof
-Since $E/F$ is a finite extension with
-$$
-[E:F]=n,
-$$
-the tower law gives
-$$
-[E:F]=[E:K][K:F].
-$$
-Thus
-$$
-d=[K:F]
-$$
-divides $n$. Because $K\ne E$, we have $d<n$. Since $\cardinality{F}=q$, a $d$-dimensional vector space over $F$ has $q^d$ elements, so
-$$
-\cardinality{K}=q^d.
-$$
+$E$ is a finite field of order $q^{n}$, so $E^{\times}$ is cyclic of order $q^{n}-1$. If $d \mid n$ then $q^{d}-1 \mid q^{n}-1$, so $E^{\times}$ has a subgroup $H_{d}$ of order $q^{d}-1$, namely the unique subgroup of that order in a cyclic group; its fixed field inside $E$ is a subfield $E_{d}$ with $q^{d}$ elements, since the elements of $E_{d}$ are $0$ together with $H_{d}$. An element $\alpha \in E_{d}$ lying in no proper subfield of $E_{d}$ generates $E_{d}$ over $F$, because $F(\alpha) \subseteq E_{d}$ is a subfield containing $\alpha$ and the subfields of $E_{d}$ are its proper subfields; such an $\alpha$ exists since $E_{d}$ is not the union of its finitely many proper subfields. Then $[F(\alpha):F] = [E_{d}:F] = d$, and the minimal polynomial of $\alpha$ over $F$ is irreducible of degree $d$.
+
 :::
 
 :::
 
 ::: pf-step
-The union of all proper intermediate fields between $F$ and $E$ has fewer than $q^n$ elements.
+For every positive integer $n$ there is an irreducible polynomial of degree $n$ in $F[x]$.
 
 ::: pf-proof
-By step [](#s4){.pf-ref} and step [](#s5){.pf-ref}, there is at most one proper intermediate field for each proper divisor $d$ of $n$, and such a field has $q^d$ elements. Every proper divisor of $n$ is at most $n/2$. Hence the union has cardinality at most
-$$
-\sum_{\substack{d\mid n\\ d<n}}q^d
-\le
-\sum_{j=1}^{\lfloor n/2\rfloor}q^j.
-$$
-For $q\ge2$ and $n\ge2$,
-$$
-\sum_{j=1}^{\lfloor n/2\rfloor}q^j<q^n.
-$$
-Indeed, the left side is less than the full geometric sum
-$$
-1+q+\cdots+q^{n-1}=\frac{q^n-1}{q-1},
-$$
-and this is at most $q^n-1<q^n$. Thus the proper intermediate fields cannot cover $E$.
-:::
-
-:::
-
-::: {.pf-step #s7}
-Choose
-$$
-\alpha\in E
-$$
-outside every proper intermediate field. Then
-$$
-F(\alpha)=E.
-$$
-
-::: pf-proof
-The field $F(\alpha)$ is an intermediate field between $F$ and $E$. By the choice of $\alpha$, it cannot be proper. Hence it equals $E$.
-:::
-
-:::
-
-::: pf-step
-The minimal polynomial of $\alpha$ over $F$ is irreducible of degree $n$.
-
-::: pf-proof
-By step [](#s7){.pf-ref},
-$$
-F(\alpha)=E.
-$$
-Therefore
-$$
-\deg m_{\alpha,F}
-=[F(\alpha):F]
-=[E:F]
-=n.
-$$
-By definition, the minimal polynomial $m_{\alpha,F}$ is irreducible in $F[x]$. Thus $F[x]$ contains an irreducible polynomial of degree $n$.
-:::
+For $n = 1$ this is step [](#n1){.pf-ref}. For $n \ge 2$ apply step [](#degree-d){.pf-ref} with $d = n$: it produces $\alpha \in E$ of degree $n$ over $F$, and the minimal polynomial of $\alpha$ is a monic irreducible element of $F[x]$ of degree $n$.
 
 :::
 
 :::
 
+:::
 :::

@@ -6,7 +6,9 @@ title: Iteration toward an attracting fixed point in the disk
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Schwarz Lemma
+  - Fixed Points
 relations: []
 review: draft
 audit:

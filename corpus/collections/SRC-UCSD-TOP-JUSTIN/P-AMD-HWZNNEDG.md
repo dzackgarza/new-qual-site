@@ -19,6 +19,8 @@ Prove that for a SES $0\into A\into B\into C$, the group $\Ext(C,A)$ classifies 
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem sheets alone, so the argument is the card's own.
+
 ::: pf
 
 ::: pf-step

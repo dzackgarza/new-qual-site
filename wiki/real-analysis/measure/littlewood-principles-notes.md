@@ -1,11 +1,13 @@
 ---
 title: "Egorov and Lusin"
 order: 60
+topics:
+- Measure Theory
+- Egorov
+- Convergence of Functions
 ---
 
 # Egorov and Lusin
-
-For Lebesgue measure $m$ on $\RR^d$ and a measurable set $E$ with $m(E)<\infty$, Egorov's theorem upgrades almost-everywhere convergence to uniform convergence, and Lusin's theorem upgrades measurability to continuity, on a closed subset $F\subseteq E$ with $m(E\setminus F)$ arbitrarily small.
 
 ## Egorov: almost uniform convergence
 
@@ -13,6 +15,10 @@ For Lebesgue measure $m$ on $\RR^d$ and a measurable set $E$ with $m(E)<\infty$,
 
 [[FR-GG457]]
 
+Egorov's theorem needs its finite-measure hypothesis: [[real-analysis/measure/littlewoods-principles|Littlewood's three principles]] gives a sequence for which no set of finite complement carries uniform convergence.
+
 ## Lusin: almost continuity
 
 [[T-CGFCU]]
+
+Both theorems express one of [[real-analysis/measure/littlewoods-principles|Littlewood's three principles]]: measurable sets are nearly finite unions of intervals, measurable functions are nearly continuous, and almost everywhere convergent sequences are nearly uniformly convergent.

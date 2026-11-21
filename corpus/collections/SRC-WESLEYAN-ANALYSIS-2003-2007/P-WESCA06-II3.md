@@ -5,7 +5,8 @@ kind: problem
 title: "The maximum of $\\abs{f}+\\abs{g}$ occurs on the boundary"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:
@@ -17,6 +18,24 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: The source assumed only that f and g are analytic on D, so the boundary maximum is undefined for f(z)=1/(1-z) on the unit disc; the statement now also assumes f and g continuous on the closure of D.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf, PDF p. 15: the Complex Analysis
+    Preliminary Examination of August 9, 2006, Section 2 item 3. The page had cited
+    only the extraction; it now names the examination, its item and the page of
+    the scan. The statement is unchanged.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The proof ended with a pf-qed that only announced that earlier steps had answered
+    the question, which STYLE-08 forbids; it is dropped, and the last step that carries
+    content is now the QED step. No argument or statement changes.
+
 ---
 
 ::: {.problem}
@@ -36,6 +55,9 @@ The intended hypothesis is that $f$ and $g$ are also continuous on $\overline D$
 :::
 
 ::: {.solution}
+The item is Section 2 item 3 of the Complex Analysis Preliminary Examination of August 9, 2006
+(|f|+|g| attains its maximum on the boundary), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
+
 
 ::: pf
 
@@ -327,11 +349,6 @@ has the same maximal value.
 
 :::
 
-::: pf-qed
-
-Step [](#s1-9){.pf-ref} is the assertion.
-
-:::
 
 :::
 

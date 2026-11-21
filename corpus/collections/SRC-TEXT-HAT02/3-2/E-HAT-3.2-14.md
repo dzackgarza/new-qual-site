@@ -39,6 +39,30 @@ audit:
   note: >-
     Read against Exercise 14 (p.230) and Theorem 3.19 p.220, Theorem 3.5 p.203, Theorem 3.2 p.195. Verified: the homeomorphism RP^{2k}/RP^{2k-1} -> CP^k/CP^{k-1} and its quaternionic analogue; q^* x = gamma on H^2 with the good pair (RP^2,RP^1); gamma^k nonzero because the mod 2 reduction is injective on Z_2, whose kernel is the image of multiplication by 2, zero there; the cells of X and the two coboundary computations giving H^m(X;Z) = Z for even m <= 2n, Z_2 for even m >= 2n+2 and 0 for odd m, hence Z[alpha]/(2 alpha^(n+1)); and the mod 2 ring Z_2[alpha,beta]/(beta^2 - alpha^(2n+1)) with the basis {alpha^k, beta alpha^l} matched degree by degree. CORRECTION OF THE EVENT ABOVE, which recorded a defect here that does not exist. CP^(2n) is a projective space of complex dimension 2n, so its cells are the real dimensions 0,2,...,4n; the cells of CP^inf outside CP^(2n) are therefore the even dimensions 4n+2, 4n+4, ... and CP^inf has no odd cells at all. Hence the cells of Y are the cells 0,4,...,4n of HP^n together with the even dimensions at least 4n+2, every boundary vanishes because every cell has even dimension and there are no odd cells to receive one, and H^m(Y;R) = R exactly in those degrees. That is the additive structure of R[mu,nu]/(nu^2 - mu^(2n+1)), |mu| = 4, |nu| = 4n+2, whose R-basis is mu^k in degree 4k and nu mu^l in degree 4n+2+4l. The relations hold because j^*(nu) = x^(2n+1) and j^*(nu^2) = x^(4n+2) = j^*(mu^(2n+1)) with j^* injective in degree 4n+2. For n = 1 the cells are 0,4,6,8,..., so H^3(Y;Z) = 0; the earlier claim that Y has a 3-cell was the error, and the step as written on this card is correct.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 14 of §3.2, printed p. 230, with Theorem 3.5 (p. 203),
+    Theorem 3.19 (p. 220) and Theorem 3.2 (p. 195). Correct in all three parts. (i) For each $k$
+    the map $q$ carries $\RP^{2k}\setminus\RP^{2k-1}$ homeomorphically onto
+    $\CP^k\setminus\CP^{k-1}$ — both are the open $2k$-disk in the normalised coordinates of the
+    card — so $\RP^{2k}/\RP^{2k-1}\cong\CP^k/\CP^{k-1}$; for $k=1$ this makes $q^*$ on $H^2$ the
+    map $H^2(\RP^2,\RP^1)\to H^2(\RP^2)$ of the pair sequence, surjective since $H^2(\RP^1)=0$,
+    whence $q^*x=\gamma$. Then $\gamma^k\ne0$ because $\rho(\gamma^k)=w^{2k}\ne0$ and $\rho$ is
+    injective ($\ker\rho$ is the image of multiplication by $2$, which is zero on $\ZZ_2$), so
+    $q^*$ is onto in every even degree. (ii) $X$ is $\CP^n$ with the cells $e^m$, $m\ge2n+1$, of
+    $\RP^\infty$ attached; the boundary of $e^{2n+1}$ vanishes because
+    $1+(-1)^{2n+1}=0$, and $de^m=2e^{m-1}$ for even $m\ge2n+2$, which gives $\ZZ$ in degrees
+    $0,2,\dots,2n$, $\ZZ_2$ in even degrees at least $2n+2$ and $0$ in odd degrees, hence
+    $\ZZ[\alpha]/(2\alpha^{n+1})$. Mod $2$ all coboundaries vanish and the basis
+    $\{\alpha^k,\beta\alpha^l\}$ matches degree by degree, with $\beta^2=\alpha^{2n+1}$ because
+    $j^*$ is injective in degree $4n+2$. (iii) The quaternionic quotient sends $u\mapsto\pm x^2$,
+    so the image is $\ZZ[x^2]$, and the quotient $Y$ of $\CP^\infty$ and $\HP^n$ has
+    $R[\mu,\nu]/(\nu^2-\mu^{2n+1})$ with $|\mu|=4$, $|\nu|=4n+2$ over $R=\ZZ$ and $R=\ZZ_2$.
+    The card also carries the 2026-11-07 correction of an earlier claim that $Y$ has a $3$-cell;
+    that correction is right, and $H^3(Y;\ZZ)=0$. Nothing changed this session. Not claimed:
+    a certificate.
 ---
 
 ::: {.problem}

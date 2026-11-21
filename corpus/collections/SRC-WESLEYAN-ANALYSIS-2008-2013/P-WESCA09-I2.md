@@ -5,7 +5,9 @@ kind: problem
 title: 'Define free homotopy of closed paths'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Homotopy
+  - Contour Integration
 relations: []
 review: draft
 audit:

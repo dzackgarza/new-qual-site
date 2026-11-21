@@ -6,7 +6,9 @@ title: Integrals of $\abs{\psi_\alpha'}^2$ and $\abs{\psi_\alpha'}$ over the dis
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Blaschke Products
+  - Conformal Maps
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: 'Entire functions and singularities at infinity'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Singularities
+  - Entire Functions
 relations: []
 review: draft
 audit:

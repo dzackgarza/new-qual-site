@@ -12,6 +12,15 @@ classification:
   - Graphs
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the checked-in extraction of the retained qual `assets/attachments/FA10_290_Topology_Qual.pdf`: the statement is Problem 8, and the
+    printed words are the card's. The problem number, the file and the extraction are now named in the
+    solution's opening sentence. The card carried no audit key before this pass. Not checked: the
+    argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -20,6 +29,7 @@ What is the group of deck translations (covering automorphisms) of the covering?
 :::
 
 ::: {.solution}
+This is Problem 8 of the 2010 Fall Topology Qual, retained in this repository as `assets/attachments/FA10_290_Topology_Qual.pdf` and read in its checked-in extraction `assets/attachments/FA10_290_Topology_Qual_extracted.md`; the statement below is its wording.
 
 ::: pf
 

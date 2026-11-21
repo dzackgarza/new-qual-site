@@ -5,7 +5,8 @@ kind: problem
 title: 'Residues of products at simple poles and a weighted residue formula'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residues
 relations: []
 review: draft
 audit:

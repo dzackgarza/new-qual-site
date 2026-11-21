@@ -5,7 +5,8 @@ kind: problem
 title: 'Sigma-algebras, rings of sets, and finite sigma-algebras'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Sigma-Algebras
 relations: []
 review: draft
 audit:

@@ -18,6 +18,15 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the one step that stated its function without a justification now
+    says why the formula defines a function on the whole interval and why it is bounded. The mathematics
+    is unchanged: the step function with a single jump is of bounded variation, which is what refutes the
+    statement. Nothing in the statement was changed.
+
 ---
 
 ::: {.problem}
@@ -35,6 +44,8 @@ If $\{f_n\}$ converges uniformly to a function $f$ on $I$, then $f$ is also unif
 
 ::: {.solution}
 
+The argument is the card's own: a step function for (a), the intermediate value theorem applied to $f(x)-x$ for (b), the three-$\eps$ argument for (c), and for (d) a smooth function on the circle whose gradient is orthogonal to the chord at every point of the circle while its two endpoint values differ. No source is transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
+
 ::: pf
 
 ::: pf-step
@@ -44,6 +55,10 @@ Statement (a) is false.
 
 ::: pf-step
 Let $f(x) = 0$ on $[0, 1/2]$ and $f(x) = 1$ on $(1/2, 1]$.
+
+::: pf-proof
+The two intervals are disjoint and their union is $[0,1]$, so the formula defines a function on the whole of $[0,1]$; its values are $0$ and $1$, so it is bounded.
+:::
 :::
 
 ::: pf-step
@@ -87,7 +102,7 @@ $f: [0,1] \to [0,1]$, so $f(0) \in [0,1]$ and $f(1) \in [0,1]$; continuity of $g
 :::
 
 ::: pf-step
-By the intermediate value theorem, there is $x_0 \in [0,1]$ with $g(x_0) = 0$, i.e. $f(x_0) = x_0$.
+By the [[T-RA-WORKSHOP-D4-3-4|intermediate value theorem]], there is $x_0 \in [0,1]$ with $g(x_0) = 0$, i.e. $f(x_0) = x_0$.
 
 ::: pf-proof
 IVT applied to $g$: $0$ lies between $g(0) \geq 0$ and $g(1) \leq 0$.

@@ -37,6 +37,28 @@ audit:
     H_m = 0, and Whitehead applies since X and a point are CW complexes. Not checked: Hatcher's proof
     of Theorem 4.32 was not re-read, only its statement and hypothesis.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 12 of §4.1, which is on printed p. 359 and not p. 358 — the
+    section's Exercises 1--11 are on p. 358 and 12--22 on p. 359, checked at PDF page 368 of
+    `tmp/sources/hatcher-2002-algebraic-topology.pdf`, whose folio is 359 — and against the published
+    solution of the exercise, Andrew Proudfoot, *Math 634: Algebraic Topology I*, Partial Solutions to
+    Homework #6, Problem 12, printed p. 1 of `tmp/sources/uoregon-proudfoot-634-hw6.pdf`. The card's
+    own Hurewicz argument was checked in the event of 2026-11-02 and is unchanged. Proudfoot's route is
+    now transcribed on the card with two corrections that the transcribed text needs. (1) His citation
+    "Corollary 4.16" is the statement printed as **Proposition 4.15 on printed p. 353** of the book
+    held here — for an $n$-connected CW pair $(X,A)$ there is $(Z,A)\simeq(X,A)$ rel $A$ with all cells
+    of $Z-A$ of dimension greater than $n$ — which with $A$ a $0$-cell gives his $Z$; the errata's
+    renumbering table moves the earlier 4.16 to 4.15, and the book calls it a proposition. (2) His
+    sentence "the image of $f$ lies in the $n$-skeleton of $Z$, which is a single point" requires $X$
+    to be $n$-dimensional, which is the exercise's hypothesis and is missing from his restatement of
+    it: a cellular map sends $X_n$ to $Z_n$, and $X=X_n$ only then. With both supplied the argument
+    closes. Checked also: cellular approximation (Theorem 4.8) is available for maps of CW complexes,
+    and a nullhomotopic homotopy equivalence has contractible source and target. Not claimed: that
+    the printed set states the dimension hypothesis.
+
 ---
 
 ::: {.problem}
@@ -44,29 +66,57 @@ Show that an $n$-connected, $n$-dimensional CW complex is contractible.
 :::
 
 ::: {.solution}
-Let $X$ be an $n$-connected, $n$-dimensional CW complex. Thus
-$$
-\pi_i(X)=0\qquad(0\le i\le n).
-$$
-If $n=0$ then $X$ is a path-connected CW complex with no positive-dimensional cells, hence a single point, and is contractible; so assume $n\ge1$.
-Suppose some higher homotopy group were nonzero, and let $m>n$ be the least integer with
-$$
-\pi_m(X)\ne0.
-$$
-Then $X$ is $(m-1)$-connected, and $m\ge n+1\ge2$, so the Hurewicz theorem applies in its absolute form, whose hypothesis is $(m-1)$-connected with $m\ge2$ (Hatcher, Theorem 4.32); at $m=1$ it would give only the abelianized $\pi_1$, which is why the case $n=0$ was disposed of first. Thus the Hurewicz map
-$$
-\pi_m(X)\longrightarrow H_m(X;\ZZ)
-$$
-is an isomorphism. Hence $H_m(X;\ZZ)\ne0$.
 
-But $X$ has no cells in dimensions greater than $n$, so its cellular chain complex is zero above dimension $n$. Therefore
-$$
-H_m(X;\ZZ)=0\qquad(m>n),
-$$
-a contradiction. Thus every homotopy group of $X$ is trivial.
+The argument is the card's own: Hurewicz in the least degree above $n$ where homotopy survives, against the vanishing of cellular homology above the dimension, then Whitehead.
 
-The map $X\to *$ is consequently an isomorphism on all homotopy groups. Since $X$ and a point are CW complexes, Whitehead's theorem implies that $X\to *$ is a homotopy equivalence. Hence
+Let $X$ be an $n$-connected, $n$-dimensional CW complex, so that $\pi_{i}(X)=0$ for $0\le i\le n$.
+
+::: pf
+
+::: {.pf-step #zero}
+If $n=0$ then $X$ is a point, hence contractible.
+
+::: pf-proof
+A $0$-dimensional CW complex is a discrete space, and $0$-connected means path connected, so $X$ is a single point; a point is contractible. This case is separated because the Hurewicz theorem below needs $m\ge2$, and at $m=1$ it would only identify the abelianised $\pi_{1}$.
+:::
+
+:::
+
+::: {.pf-step #hurewicz}
+If $n\ge1$ and some homotopy group $\pi_{m}(X)$ with $m>n$ is nonzero, then $H_{m}(X;\ZZ)\ne0$ for the least such $m$.
+
+::: pf-proof
+Let $m>n$ be the least integer with $\pi_{m}(X)\ne0$, which exists by hypothesis. Then $\pi_{i}(X)=0$ for all $i<m$, that is $X$ is $(m-1)$-connected, and $m\ge n+1\ge2$. The absolute Hurewicz theorem (Hatcher, Theorem 4.32) then says the Hurewicz map $\pi_{m}(X)\to H_{m}(X;\ZZ)$ is an isomorphism, so $H_{m}(X;\ZZ)\cong\pi_{m}(X)\ne0$.
+:::
+
+:::
+
+::: {.pf-step #homology}
+$H_{m}(X;\ZZ)=0$ for every $m>n$.
+
+::: pf-proof
+The cellular chain group $C_{m}(X)$ is free on the $m$-cells, of which there are none when $m>n$, so the cellular chain complex vanishes in degrees above $n$ and its homology does too; cellular homology agrees with singular homology.
+:::
+
+:::
+
+::: {.pf-step #contractible}
+$X$ is contractible.
+
+::: pf-proof
+Steps [](#hurewicz){.pf-ref} and [](#homology){.pf-ref} contradict each other unless no such $m$ exists, so $\pi_{i}(X)=0$ for every $i\ge0$; with step [](#zero){.pf-ref} this covers $n=0$ as well. Hence the map $X\to\ast$ induces isomorphisms on all homotopy groups, and both $X$ and the point are CW complexes, so Whitehead's theorem gives that $X\to\ast$ is a homotopy equivalence. Therefore
 $$
 \boxed{X\text{ is contractible}.}
 $$
+*A second, published route.* Andrew Proudfoot, *Math 634: Algebraic Topology I*, Partial Solutions to Homework #6, Problem 12, printed p. 1 of `tmp/sources/uoregon-proudfoot-634-hw6.pdf`, argues from the cell structure instead of from Hurewicz:
+
+> Let $X$ be an $n$-connected CW complex. Applying Corollary 4.16 when $A$ is a single $0$-cell, we see that there exists a CW complex $Z$ which is homotopy equivalent to $X$ and has the property that $Z$ has one $0$-cell and no $k$-cells for $1\leq k\leq n$. Let $f:X\to Z$ be a homotopy equivalence. By cellular approximation, we may assume that the image of $f$ lies in the $n$-skeleton of $Z$, which is a single point! Hence $f$ is a nullhomotopic homotopy equivalence, which implies that $X$ and $Z$ are contractible.
+
+Two points of the printed argument need attention before it is used. (1) The statement it cites is **Proposition 4.15, printed p. 353** of the book held here: if $(X,A)$ is an $n$-connected CW pair then there is a CW pair $(Z,A)\simeq(X,A)$ rel $A$ with all cells of $Z-A$ of dimension greater than $n$. With $A=\{x_0\}$ this is Proudfoot's $Z$; his "Corollary 4.16" is that statement in the earlier numbering, which the book's errata renumbers to 4.15, and the book calls it a proposition. (2) The step "the image of $f$ lies in the $n$-skeleton of $Z$, which is a single point" uses that $X$ is $n$-dimensional, which the exercise's hypothesis supplies and Proudfoot's sentence does not: a cellular map carries $X_n$ into $Z_n$, and $X=X_n$ only under that hypothesis. With it restored the argument is complete — $f$ is homotopic to a cellular map with image the single $0$-cell, hence nullhomotopic, and a nullhomotopic homotopy equivalence has contractible source and target.
+
+:::
+
+:::
+
+:::
 :::

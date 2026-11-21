@@ -46,6 +46,8 @@ audit:
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the examination papers alone, so the argument is the card's own.
+
 Let
 $$
 p:(E,e_0)\to(B,b_0)

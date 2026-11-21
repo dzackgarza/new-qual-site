@@ -23,6 +23,17 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Checked all partitions of the primary exponents, the orders of all four products, and their distinct group exponents."
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Step 1, the statement of the structure theorem, was the card's only step with no proof body;
+    it now carries one, naming the theorem as the structure theorem for finitely generated
+    modules over the principal ideal domain $\ZZ$ and saying what each invariant in the display
+    is and why it is an invariant. No claim is changed and the list of four groups in step 2,
+    with its proof, stands as it was. Cited by number only: the structure theorem in §12.1 of
+    Dummit and Foote. Checked: that only finitely many $t_p$ are nonzero, that $t_p=0$ is the
+    empty sum, and that the uniqueness clause is what makes the invariants determine the group.
 ---
 ::: {.problem}
 (a) State the structure theorem for finitely generated Abelian groups.
@@ -51,6 +62,10 @@ $1\leq e_{p,1}\leq\cdots\leq e_{p,t_p}$.
 The integer $r$ and the lists of exponents for each prime are
 uniquely determined by $A$. This is the structure theorem for
 finitely generated abelian groups [@DF04]. Empty sums are allowed.
+
+::: pf-proof
+$\ZZ$ is a principal ideal domain and $A$ is a finitely generated $\ZZ$-module, so the structure theorem for finitely generated modules over a principal ideal domain ([@DF04], §12.1) writes $A$ as the direct sum of a free part $\ZZ^r$ and cyclic torsion summands $\ZZ/(p^{e})$ with $p$ prime. Collecting summands by the prime $p$ and ordering each prime's exponents increasingly gives the displayed decomposition: $t_p$ is the number of summands belonging to $p$ and $e_{p,1}\le\cdots\le e_{p,t_p}$ are their exponents. Only finitely many $t_p$ are nonzero, because $A$ has a finite generating set and each generator involves finitely many summands; $t_p=0$ is the empty sum, meaning that no summand for $p$ occurs. The uniqueness clause of the same theorem says the elementary divisors are determined up to order, so $r$ and the sorted exponent lists are invariants, and two groups with the same invariants are isomorphic by matching summands.
+:::
 
 :::
 

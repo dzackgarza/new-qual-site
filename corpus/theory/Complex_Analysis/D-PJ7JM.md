@@ -19,4 +19,6 @@ The \dfn{winding number}, or \dfn{index}, of $\gamma$ about $z_0$ is
 $$
 n(\gamma, z_0)\coloneqq\frac{1}{2\pi i}\int_\gamma\frac{1}{\xi-z_0}\dxi.
 $$
+
+This is the index of [@Ahl73, ch. 4, §2.1, The Index of a Point with Respect to a Closed Curve], there denoted $n(\gamma,a)$.
 :::

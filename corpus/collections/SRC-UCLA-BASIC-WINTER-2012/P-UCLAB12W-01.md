@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB12W-01
 kind: problem
 title: Hausdorff distance on closed subsets of the unit interval
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Metric Spaces, Compactness]}
 relations: []
 review: draft
 audit:

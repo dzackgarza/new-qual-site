@@ -258,18 +258,6 @@ $$
 f=\nu\circ\widetilde f.
 $$
 
-::: pf-proof
-
-On overlaps of affine opens of $X$, the factorizations from step [](#s7){.pf-ref} are all induced by the same map of function fields and the same canonical transition isomorphisms of step [](#s2){.pf-ref}.  They therefore agree and glue to a morphism $\widetilde f$.
-
-The composite $\nu\circ\widetilde f$ agrees with $f$ over every affine open of $X$, hence globally.  If another morphism had the same property, its restriction over every affine open would equal the unique local factorization from step [](#s7){.pf-ref}, so it would equal $\widetilde f$.
-
-:::
-
-:::
-
-::: {.pf-step #s9}
-
 Thus $\nu:\widetilde X\to X$ has the universal property of normalization:
 $$
 \boxed{
@@ -284,7 +272,9 @@ $$
 
 ::: pf-proof
 
-This is exactly step [](#s8){.pf-ref}.
+On overlaps of affine opens of $X$, the factorizations from step [](#s7){.pf-ref} are all induced by the same map of function fields and the same canonical transition isomorphisms of step [](#s2){.pf-ref}.  They therefore agree and glue to a morphism $\widetilde f$.
+
+The composite $\nu\circ\widetilde f$ agrees with $f$ over every affine open of $X$, hence globally.  If another morphism had the same property, its restriction over every affine open would equal the unique local factorization from step [](#s7){.pf-ref}, so it would equal $\widetilde f$.
 
 :::
 
@@ -331,7 +321,7 @@ and step [](#s10){.pf-ref} shows that $\widetilde A$ is finite as an $A$-module.
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} construct the normal integral scheme $\widetilde X$ and its morphism to $X$; steps [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref} and [](#s9){.pf-ref} prove the universal property; steps [](#s10){.pf-ref} and [](#s11){.pf-ref} prove finiteness over a field.
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} construct the normal integral scheme $\widetilde X$ and its morphism to $X$; steps [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref} and [](#s8){.pf-ref} prove the universal property; steps [](#s10){.pf-ref} and [](#s11){.pf-ref} prove finiteness over a field.
 
 :::
 
@@ -340,7 +330,9 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.8, PDF pp. 22--23, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim's gluing input is the sheaf property in the form $\widetilde U_f$ equal to the normalization of $U_f$ and the equalizer sequence over a finite cover, with uniqueness of the factorization on affines coming from $\Gamma(X,\OO_X)\hookrightarrow\Gamma(Z,\OO_Z)$; finiteness over a field he proves by Noether normalization together with the Galois and purely inseparable cases and the trace pairing.
+The exercise is II.3.8, Hartshorne, *Algebraic Geometry* (1977), read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$.
+
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.8, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim's gluing input is the sheaf property in the form $\widetilde U_f$ equal to the normalization of $U_f$ and the equalizer sequence over a finite cover, with uniqueness of the factorization on affines coming from $\Gamma(X,\OO_X)\hookrightarrow\Gamma(Z,\OO_Z)$; finiteness over a field he proves by Noether normalization together with the Galois and purely inseparable cases and the trace pairing.
 The proof above proves the localization statement, glues through 2.12 with the cocycle condition, obtains uniqueness from writing $x=a/s$ with $a,s\in A$, and for finiteness invokes the book's Theorem I.3.9A instead of Kim's trace argument.
 Agree on the universal property.
 :::

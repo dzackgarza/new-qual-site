@@ -125,7 +125,7 @@ sections:
       - ref: PR-UWGI6
       - ref: PR-6WOTK
       - ref: PR-QW3ZK
-      - ref: C-KOFDQ
+      - ref: PR-QW3ZK
       - ref: D-XR64P
   - slug: cauchy-theory
     title: Cauchy theory
@@ -200,7 +200,7 @@ sections:
       - ref: D-AUD6K
       - ref: D-C3JIU
       - ref: D-VKP6N
-      - ref: T-EO65T
+      - ref: T-C5VEI
       - ref: D-7DFVJ
   - slug: argument-principle
     title: The argument principle
@@ -229,9 +229,9 @@ sections:
     items:
       - ref: D-IA5FS
       - ref: D-PJ7JM
-      - ref: T-VCX3Y
+      - ref: T-JXDQT
       - ref: T-52HK6
-      - ref: T-5JNUU
+      - ref: T-CJCKL
       - ref: C-FRF33
       - ref: T-YLI6Y
   - slug: residues

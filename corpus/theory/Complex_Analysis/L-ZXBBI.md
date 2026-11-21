@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: L-ZXBBI
 kind: lemma
-title: Nonconstant holomorphic maps from compact Riemann surfaces
+title: A nonconstant holomorphic map from a compact Riemann surface is surjective
 slogan: 'A nonconstant holomorphic map from a compact Riemann surface is onto a compact target, with finite fibres and finite branching.'
 classification:
   areas:
@@ -26,6 +26,8 @@ Then
 - $\inverseof{f}(q)$ is finite for every $q\in Y$, and
 
 - the ramification locus of $f$ in $X$ and the branch locus $f(\text{ramification locus})$ in $Y$ are finite.
+
+Surjectivity is the statement, in the proper-maps paragraph of §2 of C. McMullen, *Advanced Complex Analysis*, that a holomorphic map from a compact Riemann surface is proper and a nonconstant proper map is surjective; the same paragraph gives the degree as the constant number of preimages with multiplicity. The compactness of $Y$ and the finiteness of the fibres are compactness of the image and discreteness of a fibre in the compact $X$, and the ramification and branch loci are finite because each is the image of a finite union of finite fibres.
 :::
 
 ::: {.proof}

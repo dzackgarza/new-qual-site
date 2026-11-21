@@ -12,6 +12,19 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. The two definitions are the standard ones: k-transitive means the
+    action is transitive on ordered k-tuples of distinct points, sharply k-transitive adds uniqueness
+    of the group element. The three examples check out: S_n is sharply n-transitive because exactly
+    one permutation carries one ordering of {1,...,n} to another; PGL_2(k) is sharply 3-transitive on
+    the projective line because a Mobius map is determined by the images of three distinct points; and
+    AGL_1(k) is sharply 2-transitive on k, a unique affine map carrying x1 to y1 and x2 to y2 when
+    x1 != x2 and y1 != y2. Checked that each example's sharpness comes from the same counting reason
+    rather than from an unstated hypothesis. Not checked: the oral examination itself, which is not a
+    printed source in the checkout.
 ---
 
 ::: {.problem}

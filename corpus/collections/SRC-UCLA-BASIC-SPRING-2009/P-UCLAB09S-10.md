@@ -6,7 +6,9 @@ title: Leibniz series from an integral
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Power Series
+  - Integration
 relations: []
 review: draft
 audit:

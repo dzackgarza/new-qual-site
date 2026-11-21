@@ -5,7 +5,9 @@ kind: problem
 title: 'The disk, plane, and sphere are pairwise not conformally equivalent'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Conformal Maps
+  - Riemann Sphere
 relations: []
 review: draft
 audit:

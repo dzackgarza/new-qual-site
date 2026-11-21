@@ -37,6 +37,30 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-19
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A third retained solution read at this exercise. Read Yang Pi-Yeh,
+    Hartshorne Solutions (9 June 2019), Solution 5.4.2, printed p. 109,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.4.2, printed pp. 406-407,
+    asks for the degree 2d - r_1 - r_2 - r_3 of the strict transform and the
+    three multiplicities d - r_2 - r_3, d - r_1 - r_3 and d - r_1 - r_2 at
+    Q_1, Q_2, Q_3, for a curve of arbitrary singularities. The entry's
+    coordinates, substitution and division are Egbert's, and its two displayed
+    numbers are the exercise's. Not checked: Yang's Solutions outside printed
+    pp. 109-111, the printed book itself, and the case in which a component of
+    C passes through a centre, which the card's intersection-number argument
+    covers and the entry's division does not discuss.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.4.2 at printed p. 109 as the
+    same computation as Egbert's, reaching the exercise's three numbers. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -299,5 +323,9 @@ Step [](#degree-formula){.pf-ref} proves the degree formula, steps [](#multiplic
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.4.2, PDF p. 286: he puts $P_1=(0,0,1)$, $P_2=(0,1,0)$, $P_3=(1,0,0)$ and takes $(x,y,z)\mapsto(yz,xz,xy)$; writing $f=\sum_i f_i(x,y)z^{d-i}$ where $f_{r_1}$ is the lowest part in $x,y$, he divides $f(yz,xz,xy)$ by $x^{r_1}y^{r_2}z^{r_3}$ and reads off the degree $2d-r_1-r_2-r_3$ and, after the substitution $(0,0,1)$, the multiplicity $d-r_2-r_3$ at $Q_1$. Steps [](#morphism-from-linear-system){.pf-ref} and [](#contracted-lines-blowup-identification){.pf-ref} reach the same statement through the resolved transformation as the blowup at three points followed by three contractions, and steps [](#degree-formula){.pf-ref} to [](#multiplicities-at-q2-q3){.pf-ref} compute the degree and the three multiplicities as intersection numbers with $H'$ and $L_{jk}$, which is the printed hint (Ex. 3.2). Matches.
+The exercise is Hartshorne, Exercise V.4.2, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$, and the statement above is that text, the reference to (4.2.3) and the closing sentence with the hint (Ex. 3.2) included.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.4.2: he puts $P_1=(0,0,1)$, $P_2=(0,1,0)$, $P_3=(1,0,0)$ and takes $(x,y,z)\mapsto(yz,xz,xy)$; writing $f=\sum_i f_i(x,y)z^{d-i}$ where $f_{r_1}$ is the lowest part in $x,y$, he divides $f(yz,xz,xy)$ by $x^{r_1}y^{r_2}z^{r_3}$ and reads off the degree $2d-r_1-r_2-r_3$ and, after the substitution $(0,0,1)$, the multiplicity $d-r_2-r_3$ at $Q_1$. Steps [](#morphism-from-linear-system){.pf-ref} and [](#contracted-lines-blowup-identification){.pf-ref} reach the same statement through the resolved transformation as the blowup at three points followed by three contractions, and steps [](#degree-formula){.pf-ref} to [](#multiplicities-at-q2-q3){.pf-ref} compute the degree and the three multiplicities as intersection numbers with $H'$ and $L_{jk}$, which is the printed hint (Ex. 3.2). Matches.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.2, is the same computation in the same coordinates: $P_1=(1,0,0)$, $P_2=(0,1,0)$, $P_3=(0,0,1)$, the substitution $(x,y,z)\mapsto(yz,zx,xy)$, the division by $x^{r_1}y^{r_2}z^{r_3}$, the degree $2d-r_1-r_2-r_3$, and the multiplicity $d-r_2-r_3$ at $Q_1$, the other two by symmetry. It reaches the exercise's three numbers and adds nothing to Egbert's entry, so the card's own intersection-number computation remains the one the steps carry.
 :::

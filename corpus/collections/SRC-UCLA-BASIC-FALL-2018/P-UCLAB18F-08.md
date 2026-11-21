@@ -6,7 +6,9 @@ title: Resolvent row norm identity for a symmetric matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Symmetric Matrices
+  - Matrix Norms
 relations: []
 review: draft
 audit:

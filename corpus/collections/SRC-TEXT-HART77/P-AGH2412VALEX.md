@@ -61,6 +61,7 @@ Furthermore, every valuation ring of $K/k$ except $K$ itself is one of the three
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.4.12, p. 39 of the held scan, transcribed and checked against the exercise: part (a), that every valuation ring of a function field of dimension $1$ over $k$ other than $K$ itself is discrete, and the valuation rings of part (b).
 For the third construction put $X_0=X$, $A_i=\OO_{X_i,x_i}$, and let $\mathfrak m_i$ be the maximal ideal of $A_i$.
 All these rings are viewed inside $K$ through the birational maps.
 

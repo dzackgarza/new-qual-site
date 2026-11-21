@@ -21,6 +21,11 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-08
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Lamport structure. The total variation bound is derived from the supremum over finite measurable partitions, the density of the total variation is stated with the reason, and the final set is taken as {|f| > 1 + 1/n} over n rather than over rationals, which removes the need for a density argument in the last line. No retained solution set covers the exercise; the card says the argument is its own.
 ---
 
 ::: {.problem}
@@ -36,59 +41,51 @@ almost everywhere.
 :::
 
 ::: {.solution}
-Define the finite signed or complex measure
-$$
-\nu(E)=\int_E f\,dm.
-$$
-The hypothesis says
-$$
-\abs{\nu(E)}\le m(E)
-$$
-for every measurable set $E$.
+No retained solution set covers this exercise: the collection's provenance is the JHU examination papers and the card records only the statement. The argument is the card's own.
 
-Let $A$ be measurable and let
-$$
-A=\bigsqcup_{j=1}^N A_j
-$$
-be any finite measurable partition. Then
-$$
-\sum_{j=1}^N\abs{\nu(A_j)}
-\le\sum_{j=1}^N m(A_j)
-=m(A).
-$$
-Taking the supremum over all finite measurable partitions of $A$ gives
-$$
-\totalvariation{\nu}(A)\le m(A),
-$$
-where $\totalvariation{\nu}$ is the total variation measure of $\nu$.
+Let $\nu(E)=\int_Ef\,dm$, a finite signed (or complex) measure by $f\in L^1$.
 
-Since $\nu$ has density $f$ with respect to Lebesgue measure, its total variation has density $\abs{f}$:
-$$
-\totalvariation{\nu}(A)=\int_A\abs{f}\,dm.
-$$
-Therefore
-$$
-\int_A\abs{f}\,dm\le m(A)
-$$
-for every measurable $A$.
+::: pf
 
-Fix $\varepsilon>0$ and let
+::: {.pf-step #variation}
+$\abs\nu(A)\le m(A)$ for every measurable $A$, where $\abs\nu$ is the total variation measure.
+
+::: pf-proof
+For a finite measurable partition $A=\bigsqcup_{j=1}^NA_j$, the hypothesis gives $\sum_j\abs{\nu(A_j)}\le\sum_jm(A_j)=m(A)$. The total variation is the supremum of such sums over finite measurable partitions, so $\abs\nu(A)\le m(A)$.
+:::
+
+:::
+
+::: {.pf-step #density}
+$\abs\nu(A)=\int_A\abs f\,dm$ for every measurable $A$.
+
+::: pf-proof
+For a measure with density $f$ with respect to $m$, the total variation has density $\abs f$: on a set where $f$ has constant sign (or, in the complex case, constant argument up to $2\pi/n$) the variation is the integral of $\pm f$, and a partition into such sets exhibits both inequalities.
+:::
+
+:::
+
+::: {.pf-step #bound}
+$\int_A\abs f\,dm\le m(A)$ for every measurable $A$.
+
+::: pf-proof
+Combine steps [](#variation){.pf-ref} and [](#density){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step}
+$\abs f\le1$ almost everywhere.
+
+::: pf-proof
+For $n\ge1$ let $A_n=\{\abs f>1+1/n\}$, a measurable set. On $A_n$, $\abs f>1+1/n$, so
 $$
-A_\varepsilon=\{x:\abs{f(x)}>1+\varepsilon\}.
+\left(1+\frac1n\right)m(A_n)\le\int_{A_n}\abs f\,dm\le m(A_n),
 $$
-Then
-$$
-(1+\varepsilon)m(A_\varepsilon)
-<\int_{A_\varepsilon}\abs{f}\,dm
-\le m(A_\varepsilon).
-$$
-Hence
-$$
-m(A_\varepsilon)=0.
-$$
-Taking the union over positive rational $\varepsilon$ gives
-$$
-m\{x:\abs{f(x)}>1\}=0.
-$$
-Thus $\abs{f}\le1$ almost everywhere.
+which forces $m(A_n)=0$. Then $\{\abs f>1\}=\bigcup_nA_n$ has measure $0$, so $\abs f\le1$ almost everywhere.
+:::
+
+:::
+
+:::
 :::

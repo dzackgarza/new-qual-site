@@ -5,7 +5,8 @@ kind: problem
 title: 'Residues of sums and products'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residues
 relations: []
 review: draft
 audit:
@@ -96,6 +97,11 @@ $$
 $$
 
 
+Hence the answer to part $1$ is
+$$
+\boxed{\text{yes}}.
+$$
+
 ::: pf-proof
 
 By step [](#s1-2){.pf-ref}, the coefficient of $(z-z_0)^{-1}$ in $f+g$ is
@@ -103,22 +109,6 @@ $$
 a_{-1}+b_{-1}.
 $$
 Apply step [](#s1-1){.pf-ref}.
-
-:::
-
-:::
-
-::: {.pf-step #s1-4}
-
-Hence the answer to part $1$ is
-$$
-\boxed{\text{yes}}.
-$$
-
-
-::: pf-proof
-
-This is exactly step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -288,7 +278,7 @@ Step [](#s1-10){.pf-ref} provides a counterexample.
 
 ::: pf-qed
 
-Step [](#s1-4){.pf-ref} answers part $1$, and step [](#s1-11){.pf-ref} answers part $2$.
+Step [](#s1-3){.pf-ref} answers part $1$, and step [](#s1-11){.pf-ref} answers part $2$.
 
 :::
 

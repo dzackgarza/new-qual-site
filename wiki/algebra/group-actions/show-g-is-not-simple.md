@@ -10,6 +10,10 @@ topics:
 
 Throughout, $G$ is a finite group of order $n$, $p$ is a prime, $n = p^k m$ with $p\notdivides m$, and $n_p$ is the number of Sylow $p$-subgroups of $G$.
 
+[[FD-2UWAQ]]
+
+[[D-7TQ2M]]
+
 ## Constraints from the order
 
 By Sylow's third theorem,
@@ -18,12 +22,11 @@ n_p \equiv 1 \pmod p, \qquad n_p \divides m.
 $$
 If $n_p = 1$, the unique Sylow $p$-subgroup $P$ is normal: for $g\in G$, $gP\inverseof{g}$ is again a Sylow $p$-subgroup, so $gP\inverseof{g} = P$.
 
-Groups of prime-power order:
+For a prime-power order the answer is always no except at the primes: a group of order $p$ is simple, and a group of order $p^k$ with $k\geq 2$ has a proper nontrivial normal subgroup, the center when the group is nonabelian and a subgroup of order $p$ when it is abelian.
 
-- If $n$ is prime, $G$ is cyclic and simple.
+[[P-NZOMZ]]
 
-- If $n = p^k$ with $k\geq 2$, then $Z(G) \neq 1$ by the class equation.
-  If $Z(G)\neq G$, then $Z(G)$ is a proper nontrivial normal subgroup; if $Z(G)=G$, then $G$ is abelian and every subgroup of order $p$ is proper, nontrivial, and normal.
+[[T-4CDTT]]
 
 ## A Sylow count with $n_p = 1$
 
@@ -48,7 +51,7 @@ Hence $n_5 = 1$ or $n_3 = 1$.
 
 If $G$ is simple and $H < G$ has index $k > 1$, then the action of $G$ on the $k$ left cosets of $H$ has kernel a proper normal subgroup, hence trivial, so $G$ embeds in $S_k$ and
 $$
-\size G \divides k!.
+n \divides k!.
 $$
 The subgroup $H$ can be a Sylow subgroup or the normalizer $N_G(P)$ of a Sylow subgroup $P$.
 
@@ -61,42 +64,56 @@ If $n_2 = 1$, the Sylow $2$-subgroup is normal.
 
 ## Index the smallest prime
 
-If $H \leq G$ has index $q$, the smallest prime dividing $\size G$, then $H$ is normal in $G$.
-In particular, a subgroup of index $2$ is normal.
+A subgroup of index the smallest prime dividing $n$ is normal, so a subgroup of index $2$ is normal and the search for a proper nontrivial normal subgroup ends there.
 
 [[PR-PADL7]]
 
 ## The normalizer of a Sylow subgroup
 
-For a Sylow $p$-subgroup $P$, orbit-stabilizer for the conjugation action on the Sylow $p$-subgroups gives $n_p = [G : N_G(P)]$.
-Hence a bound on $n_p$ is a bound on the index of the subgroup $N_G(P)$, to which [[algebra/group-actions/show-g-is-not-simple#A subgroup of small index|A subgroup of small index]] and [[algebra/group-actions/show-g-is-not-simple#Index the smallest prime|Index the smallest prime]] apply.
+A bound on $n_p$ is a bound on the index of the subgroup $N_G(P)$, to which [[algebra/group-actions/show-g-is-not-simple#A subgroup of small index|A subgroup of small index]] and [[algebra/group-actions/show-g-is-not-simple#Index the smallest prime|Index the smallest prime]] apply.
+
+[[T-3X5FF]]
 
 ## Two Sylow subgroups meeting nontrivially
 
 Suppose the Sylow $p$-subgroups have order $p^2$ and two of them, $P \neq Q$, satisfy $\size{P\intersect Q} = p$.
+
+[[PR-IGLFV]]
+
 Groups of order $p^2$ are abelian, so $D \coloneqq P\intersect Q$ is normal in both $P$ and $Q$, and $N_G(D)$ contains the subgroup $\langle P, Q\rangle$, whose order is a multiple of $p^2$ greater than $p^2$.
-Hence $[G:N_G(D)]$ is a proper divisor of $m$. If $N_G(D) = G$, then $D$ is a proper nontrivial normal subgroup. If $N_G(D) < G$ and $k=[G:N_G(D)]$, then simplicity would force $\size G\divides k!$ by [[algebra/group-actions/show-g-is-not-simple#A subgroup of small index|A subgroup of small index]], so any possible $k$ with $\size G\notdivides k!$ also rules out simplicity. If instead any two distinct Sylow $p$-subgroups intersect trivially, [[algebra/group-actions/show-g-is-not-simple#Counting elements|Counting elements]] applies with $n_p(p^2-1)$ nonidentity elements.
+Hence $[G:N_G(D)]$ is a proper divisor of $m$. If $N_G(D) = G$, then $D$ is a proper nontrivial normal subgroup. If $N_G(D) < G$ and $k=[G:N_G(D)]$, then simplicity would force $n\divides k!$ by [[algebra/group-actions/show-g-is-not-simple#A subgroup of small index|A subgroup of small index]], so any possible $k$ with $n\notdivides k!$ also rules out simplicity. If instead any two distinct Sylow $p$-subgroups intersect trivially, [[algebra/group-actions/show-g-is-not-simple#Counting elements|Counting elements]] applies with $n_p(p^2-1)$ nonidentity elements.
 
 ## The action on the Sylow subgroups
 
 $G$ acts by conjugation on its $n_p$ Sylow $p$-subgroups, giving a homomorphism $\rho\colon G \to S_{n_p}$.
 By Sylow's second theorem the action is transitive, so $\ker\rho$ is a proper normal subgroup when $n_p > 1$.
-If $G$ is simple and $n_p>1$, then $\rho$ is injective and $\size G \divides n_p!$.
+If $G$ is simple and $n_p>1$, then $\rho$ is injective and $n \divides n_p!$.
 This is the action of $G$ on the cosets of $N_G(P)$.
 
-## Arguments and conclusions
+[[T-EF2MZ]]
+
+## What each argument needs
+
+The order in which the arguments are tried is itself a strategy: the Sylow count first, because it is the only one that needs no element count, and the counting arguments only for the primes the count leaves open.
+
+[[ST-DKYXZ]]
 
 | Argument | Input | Conclusion |
 | --- | --- | --- |
 | Sylow count | the factorization of $n$ | $n_p = 1$, so a Sylow $p$-subgroup is normal |
 | element count | Sylow subgroups of prime order | some $n_p = 1$ |
-| small index | a proper subgroup of index $k$ | $G$ simple implies $\size G \divides k!$ |
+| small index | a proper subgroup of index $k$ | $G$ simple implies $n \divides k!$ |
 | smallest prime index | a subgroup of index the least prime dividing $n$ | that subgroup is normal |
 | normalizer | $n_p = [G:N_G(P)]$ | a subgroup of index $n_p$ |
 | intersecting Sylow subgroups | $\size{P\intersect Q} = p$ for Sylow subgroups of order $p^2$ | a subgroup $N_G(P\intersect Q)$ of index a proper divisor of $m$ |
-| action on Sylow subgroups | $n_p > 1$ | $G$ simple implies $\size G \divides n_p!$ |
+| action on Sylow subgroups | $n_p > 1$ | $G$ simple implies $n \divides n_p!$ |
 
 ## Simple groups
 
-The groups of prime order and the alternating groups $A_n$ for $n\geq 5$ are simple.
-The group $A_5$ of order $60$ is the smallest nonabelian simple group, and every simple group of order $60$ is isomorphic to $A_5$.
+The groups of prime order and the alternating groups $A_n$ for $n\geq 5$ are the simple groups these arguments are tested against, and $A_5$ of order $60$ is the smallest nonabelian one.
+
+[[P-SPA3I]]
+
+[[P-HPYC5]]
+
+[[P-MMAQ-RQA4XXNOF3]]

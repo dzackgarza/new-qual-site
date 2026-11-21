@@ -12,6 +12,22 @@ classification:
   - Zeros
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The proof is correct, and the preamble handles the one point where the printed
+    wording is too weak: on a disconnected open set a function constant on one
+    component and nonconstant on another is nonconstant, yet its image need not be
+    open, so the hypothesis has to be nonconstancy on each component, which is what
+    the card says at the start. For the argument: zeros of f - w_0 are isolated, so
+    a circle about z_0 can be chosen on which f - w_0 does not vanish and inside
+    which z_0 is the only zero; the minimum delta of |f - w_0| on that circle is
+    positive, and for |w - w_0| < delta Rouche applies since |w - w_0| is smaller
+    than |f - w_0| on the circle, giving f - w as many zeros inside as f - w_0,
+    namely at least one; so the disc of radius delta about w_0 lies in the image.
+    Nothing was changed.
 ---
 
 ::: {.problem}

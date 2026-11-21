@@ -28,20 +28,38 @@ topics:
 
 ## Criteria for Galois extensions
 
-**Irreducibility of $f\in\QQ[x]$.** Apply [[T-CF6S3|Eisenstein's criterion]] to $f(x)$, to $f(x+a)$ for some $a\in\ZZ$, or to the reversed polynomial $x^nf(1/x)$. If $f\in\ZZ[x]$ has leading coefficient prime to $p$ and $f\bmod p$ is irreducible over $\FF_p$, then $f$ is irreducible over $\QQ$. A polynomial of degree $2$ or $3$ is irreducible if and only if it has no root.
+### Irreducibility of a polynomial over $\QQ$
 
-**Separability.** [[PR-TLBPS|The derivative detects separability]]; [[PR-25FLW|algebraic extensions of perfect fields are separable]]; [[PR-3VQBI|characterizations of separability for finite extensions]]; separable extensions form a [[D-JMATC|distinguished class]].
+[[T-CF6S3|Eisenstein's criterion]] may be applied to $f(x)$, to $f(x+a)$ for some $a\in\ZZ$, or to the reversed polynomial $x^nf(1/x)$. If $f\in\ZZ[x]$ has leading coefficient prime to $p$ and $f\bmod p$ is irreducible over $\FF_p$, then $f$ is irreducible over $\QQ$. A polynomial of degree $2$ or $3$ is irreducible if and only if it has no root.
 
-**Normality.** [[PR-TZN4M|Finite normal extensions are splitting fields]].
+### Separability
 
-**Galois.** [[D-5JYEI|Galois extension]]; [[PR-ZCKLJ|separable splitting fields are Galois]]. Every finite extension of finite fields is Galois: $\FF_{p^n}$ is the splitting field of the separable polynomial $x^{p^n}-x$ over every subfield.
+Separability is read off the derivative ([[PR-TLBPS|the derivative detects separability]]) and holds automatically over a perfect base ([[PR-25FLW|algebraic extensions of perfect fields are separable]]).
+
+[[PR-3VQBI]]
+
+Separable extensions form a [[D-JMATC|distinguished class]].
+
+### Normality
+
+[[PR-TZN4M|Finite normal extensions are splitting fields]].
+
+### Galois
+
+Recall that an extension is [[D-5JYEI|Galois]] when it is normal and separable, equivalently when its fixed field is the base field; a separable splitting field is the case the criterion detects.
+
+[[PR-ZCKLJ]]
+
+Every finite extension of finite fields is Galois: $\FF_{p^n}$ is the splitting field of the separable polynomial $x^{p^n}-x$ over every subfield, so the Frobenius automorphism generates the group.
+
+[[PR-OGUA5]]
 
 ## Irreducibility
 
 [[PR-PB6UE]]
 
-::: {.remark}
-Over a finite field $\FF_p$, a polynomial of degree $d$ is irreducible if and only if it has no monic irreducible factor of degree at most $d/2$, which can be checked by dividing by each monic irreducible polynomial of degree at most $d/2$.
+::: {.proposition title="Irreducibility over a finite field needs only the factors up to half the degree"}
+Over a finite field $\FF_p$, a polynomial of degree $d$ with no monic irreducible factor of degree at most $d/2$ is irreducible: a factorization $f=gh$ into factors of degree at least $1$ has one factor of degree at most $d/2$. So irreducibility is decided by dividing by the monic irreducibles up to degree $d/2$.
 :::
 
 ::: {.example title="Irreducibility modulo $2$"}
@@ -51,7 +69,7 @@ Modulo $2$, $f(0)=f(1)=1$, so $f$ has no linear factor, and the only monic irred
 
 [[T-CF6S3]]
 
-::: {.remark title="Shifting"}
+::: {.proposition title="Shifting to reach Eisenstein's criterion"}
 For $a\in\ZZ$, $g(x)\mapsto g(x+a)$ is a ring automorphism of $\QQ[x]$, so if $f(x+a)$ satisfies Eisenstein's criterion at $p$, then $f$ is irreducible.
 For monic $f$ of degree $n\geq2$, in that case $f(x+a)\equiv x^n \pmod p$, so $f \bmod p$ has a repeated root, and $p$ divides $\Delta_f = \Delta_{f(x+a)}$; the primes to test are among the prime divisors of the discriminant.
 :::

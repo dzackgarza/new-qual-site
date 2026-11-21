@@ -24,6 +24,20 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Enumerated every partition of 4 and 2, checked uniqueness rather than relying only on group exponents, and canceled all free-rank and prime-power multiplicity invariants."
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Step 1, the structure theorem on which both parts rest, stated its decomposition and
+    uniqueness with no proof body; it now carries a `pf-proof` naming it as the
+    elementary-divisor form of the structure theorem for finitely generated modules over the
+    PID $\ZZ$ and saying what each invariant is. The closing `pf-qed`, whose whole content was
+    to point at parts (a) and (b), is removed under STYLE-08. No claim was changed; both
+    statements, the ten groups and the cancellation argument stand as they were. Checked: that
+    $\ZZ$ is a PID and that the cited form of the theorem gives exactly the displayed
+    decomposition, and that the invariants of step 1 are what steps 2 and 3 add and subtract.
+    Not checked: the printed examination paper, the statement being vouched for by the
+    `source-checked` event of 2026-09-10.
 ---
 ::: {.problem}
 (a) How many abelian groups of order $720$ are there?
@@ -33,6 +47,7 @@ Prove that $M \cong N$.
 :::
 
 ::: {.solution}
+
 Write $C_m=\ZZ/m\ZZ$ as an additive group.
 
 ::: pf
@@ -51,6 +66,12 @@ uniquely determined by $A$. This is the elementary-divisor form
 of the structure theorem for finitely generated abelian groups
 [@DF04]. In particular, equality of all these invariants is
 equivalent to isomorphism.
+
+::: pf-proof
+
+$\ZZ$ is a principal ideal domain and $A$ is a finitely generated $\ZZ$-module, so the structure theorem for finitely generated modules over a PID applies: $A$ is the direct sum of a free part $\ZZ^{r_A}$ and one cyclic torsion summand $\ZZ/(p^e)$ for each elementary divisor $p^e$, $p$ prime. That is the displayed decomposition, with $m_A(p,e)$ the number of elementary divisors equal to $p^e$; that number is finite for each $(p,e)$ and zero for all but finitely many pairs because the module is finitely generated. Uniqueness of the elementary divisors up to order (Dummit and Foote, §12.1) makes $r_A$ and the $m_A(p,e)$ invariants of $A$, and matching summands of two such decompositions gives an isomorphism.
+
+:::
 
 :::
 
@@ -122,12 +143,5 @@ isomorphism.
 
 :::
 
-::: pf-qed
-
-Step [](#s2){.pf-ref} answers part (a), and step [](#s3){.pf-ref} proves part (b).
-
 :::
-
-:::
-
 :::

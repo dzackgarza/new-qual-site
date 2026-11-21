@@ -1,9 +1,9 @@
 ---
-title: Review sheet
+title: Theorems of the topology chapters
 order: 7
 ---
 
-# Review sheet
+# Theorems of the topology chapters
 
 ## Point-set
 
@@ -14,8 +14,6 @@ order: 7
 [[FT-52GNK]]
 
 [[FT-6WPJI]]
-
-[[topology/point-set/point-set|Point-set topology]] gathers the point-set definitions, theorems and counterexamples.
 
 ## Fundamental group
 
@@ -39,8 +37,6 @@ order: 7
 
 [[PR-OO3DH]]
 
-[[topology/fundamental-group/theorems|Theorems: algebraic topology]] gathers the homotopy and fundamental-group theorems with worked examples, such as an amalgamated product.
-
 ## Homology
 
 [[T-FBMYQ]]
@@ -55,12 +51,16 @@ order: 7
 
 [[PR-6PENU]]
 
-[[topology/homology/homology|Homology theory and computations]] places the homology tools next to the computations that use them.
-
 ## The standard computations
 
-The fundamental groups and homology groups of spheres, tori, projective spaces, surfaces, and wedges of spheres are tabulated on [[topology/the-standard-spaces|The standard spaces]].
+[[FF-2Q7RD]]
+
+[[PR-LR35S]]
+
+[[C-CT2NX]]
 
 ## Counterexamples
 
-[[topology/counterexamples|Counterexamples]] gives, for statements that fail without a hypothesis, a space or map witnessing the failure.
+[[topology/counterexamples|Counterexamples]] collects, for each statement that fails without a hypothesis, the space or map that witnesses the failure.
+The ones used most often in solutions are the line with two origins, for a compact subset that is not closed and for a quotient of a Hausdorff space that is not Hausdorff; the closed unit ball of an infinite-dimensional normed space, for a closed and bounded set that is not compact; the topologist's sine curve, for a connected space that is not path connected; and the Hawaiian earring, for a path-connected space with no universal cover.
+

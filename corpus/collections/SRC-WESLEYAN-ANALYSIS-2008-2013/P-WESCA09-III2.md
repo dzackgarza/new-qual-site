@@ -5,7 +5,8 @@ kind: problem
 title: 'Harmonic conjugates on simply connected domains'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Harmonic Conjugates
 relations: []
 review: draft
 audit:

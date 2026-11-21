@@ -5,7 +5,9 @@ kind: problem
 title: Uniform limits of Riemann integrable functions are Riemann integrable
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Riemann Integration
+  - Uniform Convergence
 relations: []
 review: draft
 audit:

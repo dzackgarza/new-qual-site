@@ -5,7 +5,9 @@ kind: problem
 title: Spectral theorem for normal complex matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Spectral Theorem
+  - Normal Operators
 relations: []
 review: draft
 audit:

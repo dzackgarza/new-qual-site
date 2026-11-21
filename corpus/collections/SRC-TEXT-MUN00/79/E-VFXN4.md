@@ -51,6 +51,15 @@ audit:
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 79 Exercise 2, printed p. 483. Part (a) from pi_1(P^2) = Z/2, which has no nontrivial map to Z, and the lifting criterion; part (b) the projection onto a factor of the torus. Checked against Corollary 60.4, Theorem 79.1 and Theorem 60.1. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked (a) that pi_1(P^2) has order 2 and every
+    homomorphism to Z is zero, that the lifting criterion then gives a lift to the universal
+    cover of S^1, and that contractibility of R gives the nullhomotopy; (b) that the first
+    projection induces (r,s) -> r, which is nonzero, against Corollary 58.6. Part (a) is
+    Meyer's and SL2's answers to MSE 142987; part (b) is the card's own. No repair needed.
 ---
 
 ::: {.exercise}
@@ -61,20 +70,45 @@ audit:
 :::
 
 ::: {.solution}
+Part (a) is the argument of two answers to Math Stack Exchange question 142987, "Prove every map from the projective plane to the circle is nullhomotopic" (asked 2012-05-09): answer 143112 by Fredrik Meyer (every homomorphism $\ZZ/2\to\ZZ$ is zero) and answer 143123 by SL2 (a map whose induced homomorphism is zero lifts to the universal cover of $S^{1}$ and so is nullhomotopic), both posted 2012-05-09. Part (b) is the card's own; no answer in the saved threads treats it.
 
-(a) The proof is that of two answers to Math StackExchange question 142987, "Prove every map from the projective plane to the circle is nullhomotopic" (https://math.stackexchange.com/questions/142987, asked by Proton 2012-05-09): answer 143112 by Fredrik Meyer (https://math.stackexchange.com/a/143112), that every homomorphism $\ZZ/2\to\ZZ$ is zero, and answer 143123 by SL2 (https://math.stackexchange.com/a/143123), that a map whose induced homomorphism is zero lifts to the universal cover of $S^1$ and so is nullhomotopic. Both were posted 2012-05-09.
+::: pf
 
-Let $f:P^2\to S^1$ and $x_0\in P^2$. By Corollary 60.4 (printed p. 373) the group $\pi_1(P^2,x_0)$ has order $2$, and by Theorem 54.5 (printed p. 345) $\pi_1(S^1)\cong\ZZ$. A homomorphism $h:\ZZ/2\to\ZZ$ satisfies $2h(1)=h(0)=0$, and $\ZZ$ has no element of order $2$, so $h=0$; hence
-$$
-f_*\pi_1(P^2,x_0)=0 .
-$$
-Let $p:\RR\to S^1$ be the universal covering, put $b_0=f(x_0)$ and choose $e_0\in p^{-1}(b_0)$, so that $p(e_0)=b_0=f(x_0)$. The space $P^2$ is path connected and locally path connected, so Lemma 79.1, the general lifting lemma (printed p. 478), applied with $Y=P^2$ and $y_0=x_0$, gives $\tilde f:P^2\to\RR$ with $p\circ\tilde f=f$. Since $\RR$ is contractible, $\tilde f$ is homotopic to a constant map, and composing with $p$ gives a nullhomotopy of $f$.
+::: {.pf-step #induced-zero}
+(a) For every continuous $f:P^{2}\to S^{1}$ the induced homomorphism $f_{*}:\pi_{1}(P^{2},x_{0})\to\pi_{1}(S^{1},f(x_{0}))$ is zero.
 
-A third answer, 1841392 by user84976 (https://math.stackexchange.com/a/1841392, 2016-06-27) to question 1831470, reaches the same lift without computing $\pi_1(P^2)$: it lifts $f\circ q$ along the quotient $q:S^2\to P^2$, whose domain is simply connected, and shows that the two values of the lift at antipodal points agree, because $x\mapsto\tilde g(x)-\tilde g(-x)$ is continuous, integer valued on the connected space $S^2$, and odd. That route is longer and is not used here; the answer 1840953 in the same thread is the argument above.
+::: pf-proof
+$\pi_{1}(P^{2},x_{0})$ has order $2$ (Corollary 60.4) and $\pi_{1}(S^{1})\cong\ZZ$ (Theorem 54.5). In the identification $\pi_{1}(P^{2},x_{0})=\ZZ/2$, a homomorphism $h$ into $\ZZ$ satisfies $2h(1)=h(0)=0$, and $\ZZ$ has no element of order $2$, so $h(1)=0$ and $h$ is the zero homomorphism.
+:::
 
-(b) The first projection
-$$
-f:T^2=S^1\times S^1\longrightarrow S^1,\qquad f(x,y)=x,
-$$
-is not nullhomotopic. Under the isomorphism $\pi_1(T^2)\cong\ZZ\oplus\ZZ$ of Corollary 60.2 (printed p. 372), the induced homomorphism $f_*$ carries $(r,s)$ to $r$; it is onto, and a nullhomotopic map induces the trivial homomorphism on fundamental groups (Corollary 58.6, printed p. 364). So $f$ is not nullhomotopic. This part is the card's own: no answer in either saved thread treats part (b).
+:::
+
+::: {.pf-step #lift}
+(a) $f$ lifts to $\tilde f:P^{2}\to\RR$ along the universal covering $p:\RR\to S^{1}$, and is therefore nulhomotopic.
+
+::: pf-proof
+$P^{2}$ is path connected and locally path connected. Let $p:\RR\to S^{1}$ be the universal covering, put $b_{0}=f(x_{0})$ and choose $e_{0}\in p^{-1}(b_{0})$. Since $f_{*}\pi_{1}(P^{2},x_{0})=0\subset p_{*}\pi_{1}(\RR,e_{0})$, the general lifting lemma (Lemma 79.1) applies with $Y=P^{2}$ and gives a continuous $\tilde f:P^{2}\to\RR$ with $p\circ\tilde f=f$. The space $\RR$ is contractible, so $\tilde f$ is homotopic to the constant map at $\tilde f(x_{0})$; composing that homotopy with $p$ gives a homotopy from $f$ to the constant map at $b_{0}$.
+:::
+
+:::
+
+::: {.pf-step #torus}
+(b) The first projection $f:T^{2}\to S^{1}$, $f(x,y)=x$, is not nulhomotopic.
+
+::: pf-proof
+Under the isomorphism $\pi_{1}(T^{2})\cong\ZZ\oplus\ZZ$ (Corollary 60.2) the induced homomorphism $f_{*}$ carries the class of a loop with winding numbers $(r,s)$ to $r$; in particular $f_{*}$ is onto $\ZZ$ and not the zero homomorphism. A nulhomotopic map induces the trivial homomorphism on fundamental groups (Corollary 58.6), so $f$ is not nulhomotopic.
+:::
+
+:::
+
+::: {.pf-step}
+Both parts hold.
+
+::: pf-proof
+Steps [](#induced-zero){.pf-ref} and [](#lift){.pf-ref} prove (a), and step [](#torus){.pf-ref} proves (b).
+:::
+
+:::
+
+:::
 :::

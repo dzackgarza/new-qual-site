@@ -19,6 +19,14 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the final step now records that separability is the existence of a
+    countable dense subset, which is what the two preceding steps supply. Nothing mathematical was
+    changed.
+
 ---
 
 ::: {.exercise}
@@ -66,6 +74,11 @@ so $p/q\in(a,b)\cap\QQ$. Hence every nonempty basic open set meets $\QQ$.
 ::: pf-step
 
 Therefore $\RR$ has a countable dense subset and is separable.
+
+
+::: pf-proof
+$\QQ$ is countable and dense by the two preceding steps, and a separable space is by definition one with a countable dense subset.
+:::
 
 :::
 

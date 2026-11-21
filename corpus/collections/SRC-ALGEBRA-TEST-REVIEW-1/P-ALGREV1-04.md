@@ -6,7 +6,9 @@ title: A homomorphism from Z8 to Z20
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Homomorphisms
+  - Cyclic Groups
 relations: []
 review: draft
 audit:

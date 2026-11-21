@@ -6,7 +6,9 @@ title: Square roots of a nilpotent operator in dimensions six and twelve
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Nilpotent Operators
+  - Jordan Canonical Form
 relations: []
 review: draft
 audit:

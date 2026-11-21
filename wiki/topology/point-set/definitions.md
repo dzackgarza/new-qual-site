@@ -1,4 +1,5 @@
 ---
+title: Point-set definitions
 order: 1
 topics:
 - Point-Set Topology
@@ -15,7 +16,7 @@ topics:
 - Countability
 ---
 
-# Definitions
+# Point-set definitions
 
 ## Point-set topology
 
@@ -104,11 +105,6 @@ Local connectedness and local path connectedness use the second.
 
 [[D-NCLVD]]
 
-::: {.remark}
-If $r\colon X\to A$ is a retraction and $\iota\colon A\injects X$ the inclusion, then $r\circ\iota=\id_A$, so $\iota_*$ is injective on $\pi_1$ and on homology.
-For every point $x_0$ of a space $X$, the constant map $X\to\theset{x_0}$ is a retraction.
-:::
-
 [[D-KWWVL]]
 
 [[D-3O6QH]]
@@ -194,16 +190,15 @@ An infinite intersection of open sets need not be open: in $\RR$, $\bigcap_{n\ge
 
 [[D-B2JER]]
 
-::: {.example title="Applications of the cup product"}
-On a closed oriented manifold, the cup product of the Poincaré duals of transversely intersecting closed oriented submanifolds is the Poincaré dual of their intersection.
-$T^2$ and $S^2 \vee S^1 \vee S^1$ have isomorphic cohomology groups, and they are not homotopy equivalent: the cup product of the two degree-$1$ generators is nonzero for $T^2$ and zero for the wedge.
+::: {.example title="The cup product distinguishes the torus from a wedge"}
+$T^2$ and $S^2 \vee S^1 \vee S^1$ have isomorphic cohomology groups, and they are not homotopy equivalent: the cup product of the two degree-$1$ generators is nonzero for $T^2$ and zero for the wedge, whose reduced cohomology ring is a product ring ([[D-B2JER|cup product]]) [@Hat02, §3.2].
 :::
 
 [[D-ZOU5G]]
 
 [[D-MMDM3]]
 
-[[D-SI6OM]]
+[[D-4VGAW]]
 
 [[D-6UHU7]]
 
@@ -218,10 +213,6 @@ If spaces $X$ and $Y$ both deformation retract onto a common subspace $A$, then 
 [[D-QK5BM]]
 
 [[D-S7L6M]]
-
-::: {.example title="A right exact functor"}
-For a commutative ring $R$ and an $R$-module $M$, $\wait \tensor_{R} M$ is right exact, and it is exact if and only if $M$ is flat.
-:::
 
 [[D-455S6]]
 
@@ -366,8 +357,6 @@ For a commutative ring $R$ and an $R$-module $M$, $\wait \tensor_{R} M$ is right
 [[D-MQTEG]]
 
 [[D-OH4ON]]
-
-[[D-4VGAW]]
 
 [[D-6B77N]]
 

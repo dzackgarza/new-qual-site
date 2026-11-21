@@ -5,7 +5,9 @@ kind: problem
 title: 'An integral inequality from $fg\ge1$ on a probability space'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Inequalities
+  - Integrals
 relations: []
 review: draft
 audit:

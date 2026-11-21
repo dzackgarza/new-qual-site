@@ -6,7 +6,9 @@ title: Range of a matrix and its Gram product
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Column Space
+  - Rank and Nullity
 relations: []
 review: draft
 audit:

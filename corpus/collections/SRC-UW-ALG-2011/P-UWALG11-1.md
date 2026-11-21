@@ -27,7 +27,6 @@ audit:
     class of $\operatorname{diag}(\zeta,1)$, and two such are conjugate to each other. Nothing is
     left in outline.
 ---
----
 
 ::: {.problem}
 Let $\GL_2(\CC)$ be the general linear group of $2\times2$ complex matrices, let $H$ be the subgroup of $\GL_2(\CC)$ consisting of non-zero multiples of the identity matrix, and let $\operatorname{PGL}_2(\CC)$ be the quotient group $\GL_2(\CC)/H$.

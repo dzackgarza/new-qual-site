@@ -21,6 +21,17 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read as a second reader against the retained text; the statement matches Hoffman and
+    Kunze Exercise 1.3.4, printed p. 11. The displayed R was verified by an independent
+    route: the third row of A is -2i times the first minus the second, so A has rank 2;
+    the null space of A is spanned by (1-i, 1, 1+i), which scaled by 1/(1+i) is (-i,
+    (1-i)/2, 1), exactly the null vector of R; and R has leading 1s in columns 1 and 2,
+    each the only nonzero entry of its column, with the zero row last, so it is row-
+    reduced. No defect found; nothing was changed.
 ---
 
 ::: {.exercise}

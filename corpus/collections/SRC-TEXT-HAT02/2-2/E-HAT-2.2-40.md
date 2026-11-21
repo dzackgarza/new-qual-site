@@ -64,7 +64,7 @@ $$
 \longrightarrow C_*(X;\ZZ_n)
 \longrightarrow0
 $$
-is the one discussed in the subsection on homology with coefficients (pp. 153--154), where $C_i(X;\ZZ_n)$ is identified with the chains with $\ZZ_n$ coefficients; the exactness of the sequence of chain complexes is immediate because $C_i(X)$ is free. It gives the long exact sequence, by Theorem 2.16 (p. 117),
+is the one discussed in the subsection on homology with coefficients (pp. 153--154), where $C_i(X;\ZZ_n)$ is identified with the chains with $\ZZ_n$ coefficients; the exactness of the sequence of chain complexes is immediate because $C_i(X)$ is free. It gives the long exact sequence, by Theorem 2.16,
 $$
 \cdots\to H_i(X)\xrightarrow{n}H_i(X)
 \to H_i(X;\ZZ_n)
@@ -157,7 +157,7 @@ $$
 \iff
 \widetilde H_i(X)\text{ is a }\QQ\text{-vector space for all }i.}
 $$
-In degree $0$ both sides say the same thing about the number of path components: $\widetilde H_0(X;\ZZ_p)\cong\ZZ_p^{c-1}$ and $\widetilde H_0(X)\cong\ZZ^{c-1}$ for $c$ the number of path components, by Proposition 2.6 (p. 109) applied to each coefficient group, so both vanish for all $p$ exactly when $c=1$, which is also exactly when $\widetilde H_0(X)$ is a $\QQ$-vector space.The coefficient exact sequence and divisibility conclusion match **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.2.40, printed p. 68. In particular, $G/pG=0$ and ${}_pG=0$ for all primes $p$ says precisely that $G$ is uniquely $p$-divisible for every $p$, which is the scalar restriction from $\QQ$ to $\ZZ$. Hence it has a natural $\QQ$-vector-space structure exactly when every reduced mod-$p$ group vanishes.
+In degree $0$ both sides say the same thing about the number of path components: $\widetilde H_0(X;\ZZ_p)\cong\ZZ_p^{c-1}$ and $\widetilde H_0(X)\cong\ZZ^{c-1}$ for $c$ the number of path components, by Proposition 2.6 applied to each coefficient group, so both vanish for all $p$ exactly when $c=1$, which is also exactly when $\widetilde H_0(X)$ is a $\QQ$-vector space.The coefficient exact sequence and divisibility conclusion match **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher §2.2 Exercise 40. In particular, $G/pG=0$ and ${}_pG=0$ for all primes $p$ says precisely that $G$ is uniquely $p$-divisible for every $p$, which is the scalar restriction from $\QQ$ to $\ZZ$. Hence it has a natural $\QQ$-vector-space structure exactly when every reduced mod-$p$ group vanishes.
 
 
 :::

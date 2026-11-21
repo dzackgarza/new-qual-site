@@ -6,7 +6,9 @@ title: Parseval's identity for power series and Liouville's theorem
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Power Series
+  - 'Liouville''s Theorem'
 relations: []
 review: draft
 audit:

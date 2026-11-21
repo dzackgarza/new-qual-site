@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-ALGQUAL18W-II4
 kind: problem
 title: A quotient by an ideal with maximal radical is finite-dimensional
-classification: {areas: [algebra], topics: []}
+classification: {areas: [algebra], topics: [Radical of an Ideal, Maximal Ideals, Dimension]}
 relations: []
 review: draft
 audit:

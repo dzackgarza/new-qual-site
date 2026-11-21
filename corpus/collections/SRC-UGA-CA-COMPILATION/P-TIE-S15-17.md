@@ -6,7 +6,9 @@ title: Partial fraction expansion of $\pi^2/\sin^2\pi z$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Partial Fractions
+  - Meromorphic Functions
 relations: []
 review: draft
 audit:

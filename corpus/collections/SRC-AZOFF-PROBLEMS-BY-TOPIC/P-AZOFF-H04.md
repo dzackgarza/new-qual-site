@@ -32,6 +32,8 @@ How many roots does the equation $z^7-4z^3-1=0$ have in the open disk $\abs{z}<1
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the problem compilation alone, so the argument is the card's own.
 Set
 $$
 p(z)=z^7-4z^3-1.
@@ -75,7 +77,7 @@ Hence the strict inequality holds.
 ::: {.pf-step #s2}
 
 The polynomial $p$ has exactly three zeros in the open unit disk,
-counting multiplicity.
+counting multiplicity, so the requested number of zeros is $3$.
 
 ::: pf-proof
 
@@ -89,27 +91,6 @@ $-4z^3$ has exactly three zeros there, all at $z=0$ counted with
 multiplicity.
 
 :::
-
-:::
-
-::: {.pf-step #s3}
-
-The answer is
-$$
-\boxed{3}.
-$$
-
-::: pf-proof
-
-This is step [](#s2){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s3){.pf-ref} gives the requested number of roots.
 
 :::
 

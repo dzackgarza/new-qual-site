@@ -32,6 +32,16 @@ audit:
   date: 2026-11-11
   note: >-
     Step-by-step check against the printed pages, and the repair. Citations added: the paragraph before Lemma 83.1 (printed p. 502), which proves that $X^0$ is a closed discrete subspace and that every subset of $X^0$ is closed in $X$, and the two steps of the printed proof of Lemma 83.1 (printed p. 502) in which the assumption is used. Corrected: the proof did not say why the substituted set $B\cup D$ is still disjoint from $C$ nor that its closedness is what the substitution needs; both are now stated. What the certificate does not cover: Lemma 83.1 itself is the book's, and only the reduction in its first line is discussed here.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked that every subset of the vertex set is closed
+    in a linear graph, that the pair of closed sets can be enlarged so that B contains all
+    vertices, and the two places where the printed proof of Lemma 83.1 (printed p. 502) uses
+    that assumption: disjointness of the edgewise open sets and the equality U cap A_alpha =
+    U_alpha giving openness. Paul Frost's MSE answer 4911528 supplies the enlargement; the
+    location of the use is the card's own argument. The printed statement needed no repair.
 ---
 
 ::: {.exercise}
@@ -41,18 +51,56 @@ In the proof of normality of a linear graph $X$, why did we assume that every ve
 :::
 
 ::: {.solution}
+The published answer this card rests on is **Paul Frost, answer 4911528 to Math Stack Exchange question 4911475, "Every linear graph $X$ is normal"** (posted 2024-05-05); Frost shows that the vertex assumption of the printed proof costs nothing. The argument below, which locates where the assumption is used, is the card's own.
 
-The question of this exercise is answered by Paul Frost, answer 4911528 (https://math.stackexchange.com/a/4911528), posted 2024-05-05 to Math Stack Exchange question 4911475, "Every linear graph $X$ is normal" (https://math.stackexchange.com/questions/4911475, asked by Davood Karimi on the same day): let $V$ be the set of vertices belonging to neither $B$ nor $C$; by the result on printed p. 502 a union of vertices and edges is closed in a linear graph, so $V$ is closed, $B'=B\cup V$ is a closed set disjoint from $C$, and every vertex lies in $B'$ or in $C$. That is why the assumption costs nothing. What the answer does not do is show where the assumption is used: the printed proof's argument that $U$ and $V$ are disjoint fails at a vertex in neither $B$ nor $C$, since such a vertex may lie in some $U_\alpha$ and some $V_\beta$ with $\alpha\ne\beta$. The card's own proof below makes that point.
+Throughout, $X$ is a linear graph, $X^{0}$ its set of vertices, and the printed proof is that of Lemma 83.1 (printed p. 502), in which the two closed sets $B$ and $C$ are separated by open sets $U_{\alpha}\subset A_{\alpha}$ and $V_{\beta}\subset A_{\beta}$ chosen on the edges $A_{\alpha}$.
 
+::: pf
 
-Let $X^0$ be the set of vertices of the linear graph $X$. As proved just before Lemma 83.1 (printed p. 502), $X^0$ is a closed discrete subspace of $X$, and in fact every subset of $X^0$ is closed in $X$, since its intersection with each edge is empty or a one-point set.
+::: {.pf-step #vertices-closed}
+Every subset of $X^{0}$ is closed in $X$, and $X^{0}$ is a closed discrete subspace.
 
-Given the disjoint closed sets $B,C$ of the printed proof of Lemma 83.1 (printed p. 502), let
-$$
-D=X^0-(B\cup C).
-$$
-Then $D$ is closed, because every subset of $X^0$ is closed in $X$; so $B'=B\cup D$ is closed, and $B'\cap C=\varnothing$ because $D\cap C=\varnothing$ and $B\cap C=\varnothing$. Replacing $B$ by $B'$ therefore leaves a pair of disjoint closed sets, whose union contains every vertex of $X$. Separating $B'$ and $C$ separates $B$ and $C$, so it is enough to prove the lemma under the extra assumption.
+::: pf-proof
+This is proved just before Lemma 83.1 (printed p. 502): each vertex is closed in $X$ and the subspace $X^{0}$ is discrete. Moreover, for any $S\subset X^{0}$ and any edge $A$ of $X$, the intersection $S\cap A$ is empty or a single point, hence closed in $A$; so $S$ is closed in $X$ by the coherent topology on a linear graph.
+:::
 
-This extra condition is used twice in the printed proof. First, when open sets $U_\alpha\subseteq A_\alpha$ and $V_\beta\subseteq A_\beta$ for distinct edges are seen to be disjoint: a point of $U_\alpha\cap V_\beta$ lies on both arcs, hence is a vertex, and a vertex of $B$ lies in no $V_\beta$ while a vertex of $C$ lies in no $U_\alpha$. Second, when the unions $U=\bigcup U_\alpha$ and $V=\bigcup V_\beta$ are shown to be open through the coherent topology: a point of $U\cap A_\alpha$ outside $U_\alpha$ lies on another arc as well, hence is a vertex, and a vertex of $B$ lies in $U_\alpha$ by the definition of $U_\alpha$ while a vertex of $C$ cannot lie in $U$. Without the assumption those vertices outside $B\cup C$ would be unaccounted for, since the sets $U_\alpha$ are chosen only to contain $B\cap A_\alpha$.
+:::
 
+::: {.pf-step #reduce}
+It suffices to separate the two closed sets under the extra assumption that every vertex of $X$ lies in $B\cup C$.
+
+::: pf-proof
+Let $D=X^{0}-(B\cup C)$ and $B'=B\cup D$. Then $D$ is closed by step [](#vertices-closed){.pf-ref}, so $B'$ is closed, and $B'\cap C=\varnothing$ because $D\cap C=\varnothing$ and $B\cap C=\varnothing$. The set $B'$ contains every vertex of $X$, since a vertex outside $B$ lies in $C$ or in $D$. A separation of the pair $B'$, $C$ separates $B\subset B'$ from $C$, so it is enough to prove the lemma for the pair $B'$, $C$.
+:::
+
+:::
+
+::: {.pf-step #used-disjointness}
+Under that assumption, $U_{\alpha}\cap V_{\beta}=\varnothing$ for distinct edges $A_{\alpha}$, $A_{\beta}$.
+
+::: pf-proof
+A point of $U_{\alpha}\cap V_{\beta}$ lies in $A_{\alpha}\cap A_{\beta}$, and distinct edges of a linear graph meet in at most one vertex, so it is a vertex. A vertex of $B$ lies in no $V_{\beta}$, because $V_{\beta}$ was chosen inside $A_{\beta}$ avoiding $C$ and the vertices of $B$ are not in $C$; symmetrically a vertex of $C$ lies in no $U_{\alpha}$. Since the assumption puts every vertex in $B$ or in $C$, no vertex lies in both, and the intersection is empty.
+:::
+
+:::
+
+::: {.pf-step #used-openness}
+Under that assumption, $U=\bigcup_{\alpha}U_{\alpha}$ and $V=\bigcup_{\beta}V_{\beta}$ are open in $X$.
+
+::: pf-proof
+By the coherent topology it suffices that $U\cap A_{\alpha}$ be open in $A_{\alpha}$ for each edge. If $x\in U\cap A_{\alpha}$ and $x\notin U_{\alpha}$, then $x$ lies in some other $U_{\beta}$ with $\beta\ne\alpha$, so $x\in A_{\beta}$ and hence $x$ is a vertex. By the assumption $x\in B$ or $x\in C$; a vertex of $B$ lies in $U_{\alpha}$ by the definition of $U_{\alpha}$, which contains $B\cap A_{\alpha}$, and a vertex of $C$ cannot lie in $U$. So every point of $U\cap A_{\alpha}$ is in $U_{\alpha}$, that is $U\cap A_{\alpha}=U_{\alpha}$, which is open in $A_{\alpha}$. The same argument with $B$, $U$ replaced by $C$, $V$ shows $V\cap A_{\alpha}=V_{\alpha}$.
+:::
+
+:::
+
+::: {.pf-step}
+The vertex assumption is what the printed proof needs, and it can always be arranged.
+
+::: pf-proof
+Steps [](#used-disjointness){.pf-ref} and [](#used-openness){.pf-ref} locate the two places where the proof uses that every vertex lies in $B\cup C$: without it, a vertex outside $B\cup C$ may lie in some $U_{\alpha}$ and some $V_{\beta}$ with $\alpha\ne\beta$, and the sets $U_{\alpha}$ are chosen only to contain $B\cap A_{\alpha}$, so such a vertex would be unaccounted for. Step [](#reduce){.pf-ref} shows the assumption can always be arranged by enlarging $B$ with the closed set of remaining vertices.
+:::
+
+:::
+
+:::
 :::

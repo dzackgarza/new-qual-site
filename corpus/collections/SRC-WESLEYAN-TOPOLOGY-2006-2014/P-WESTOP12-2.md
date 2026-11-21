@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP12-2
 kind: problem
 title: Construct the long exact homology sequence of a short exact sequence of chain complexes
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Chain Complexes, Homological Algebra]}
 relations: []
 review: draft
 audit:

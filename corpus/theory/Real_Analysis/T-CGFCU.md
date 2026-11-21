@@ -23,6 +23,8 @@ $$
 F_\varepsilon \subseteq E \quad\text{and}\quad m(E \setminus F_\varepsilon) \leq \varepsilon
 $$
 such that the restriction $\restrictionof{f}{F_\varepsilon}\colon F_\varepsilon\to\RR$ is continuous.
+
+[@Fol99, Theorem 7.10]
 :::
 
 ::: {.example}

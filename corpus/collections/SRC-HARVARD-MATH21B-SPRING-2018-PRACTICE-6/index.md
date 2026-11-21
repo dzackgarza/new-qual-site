@@ -11,7 +11,7 @@ relations: []
 review: draft
 provenance:
 - assets/attachments/solution6.pdf
-- http://people.math.harvard.edu/~knill/teaching/math21b2018/exams.html
+- https://people.math.harvard.edu/~knill/teaching/math21b2018/final/practice6.pdf
 source:
   source_kind: university-exam
   institution: harvard

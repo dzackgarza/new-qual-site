@@ -6,7 +6,9 @@ title: Determinant identity for a block of an inverse matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Determinants
+  - Matrix Inverses
 relations: []
 review: draft
 audit:

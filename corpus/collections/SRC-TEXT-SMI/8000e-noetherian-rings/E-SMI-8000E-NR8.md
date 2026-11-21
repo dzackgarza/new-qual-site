@@ -33,7 +33,14 @@ audit:
     side and the same computation gives the right), the induced map has kernel zero,
     and primality pulls back because f(1) = 1 keeps the contraction proper. No
     defect.
----
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the contraction step against the printed problem, Smith 8000e.pdf page 5, problem 8.
+    The step verified only $ra\in J$ and concluded that $J$ is an ideal; the right multiplication
+    $ar$ is now written as well, from $f(ar)=f(a)f(r)\in I$. The two-sidedness of $f^{-1}(I)$
+    now follows from the two displayed computations rather than from an unstated symmetry.
 ---
 
 ::: {.exercise}
@@ -66,8 +73,10 @@ and hence $a-b\in J$.
 If $r\in R$ and $a\in J$, then
 $$
 f(ra)=f(r)f(a)\in I
+\quad\text{and}\quad
+f(ar)=f(a)f(r)\in I
 $$
-because $I$ is an ideal of $S$. Thus $ra\in J$. Therefore $J$ is an ideal.
+because $I$ is a two-sided ideal of $S$. Thus $ra,ar\in J$. Therefore $J$ is a two-sided ideal.
 
 :::
 

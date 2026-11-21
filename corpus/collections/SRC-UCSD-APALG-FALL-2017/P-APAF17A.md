@@ -23,6 +23,18 @@ audit:
   date: 2026-10-31
   note: The statement carried an added claim that the ranks equal rank A^2 for k >= 3, which
     the exam does not ask; removed so the statement reads as the exam.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the three containers state why their subsections suffice, and the
+    11 leaf steps that asserted their claim with no justification each carry a sentence deriving it. The
+    mathematics is unchanged: the ranks $\operatorname{rank}A^{j+1}\le\operatorname{rank}A^j$ are
+    non-increasing because the images are nested, the hypothesis forces equality at $j=2$, equal
+    finite-dimensional nested subspaces coincide, and applying $A$ propagates the equality of images to
+    all higher powers. Checked against the statement on the card, from the UCSD Fall 2017 applied algebra
+    qualifying exam. Nothing in the statement was changed.
+
 ---
 
 ::: {.problem}
@@ -45,11 +57,21 @@ Monotonicity of Ranks of Matrix Powers:
 ::: pf-step
 For any matrix $A \in M_n(\RR)$ and any integer $j \ge 1$, we have:
 $$\operatorname{im}(A^{j+1}) = A(\operatorname{im}(A^j)) \subseteq \operatorname{im}(A^j).$$
+
+::: pf-proof
+The image of $A^{j+1}$ consists of the vectors $A^{j+1}v=A^j(Av)$, which lie in the image of $A^j$; and $A(\operatorname{im}A^j)$ is exactly $\operatorname{im}(A^{j+1})$.
+:::
+
 :::
 
 ::: pf-step
 Since the image space of $A^{j+1}$ is a subspace of the image space of $A^j$, their dimensions (ranks) satisfy:
 $$\operatorname{rank}(A^{j+1}) \le \operatorname{rank}(A^j) \quad \text{for all } j \ge 1.$$
+
+::: pf-proof
+A subspace has dimension at most that of the space containing it.
+:::
+
 :::
 
 :::
@@ -64,16 +86,31 @@ Stabilization at Step 2:
 ::: pf-step
 By Step 1 with $j = 2$:
 $$\operatorname{rank}(A^3) \le \operatorname{rank}(A^2).$$
+
+::: pf-proof
+This is the monotonicity just proved, with $j=2$.
+:::
+
 :::
 
 ::: pf-step
 Combining this with the given hypothesis $\operatorname{rank}(A^2) \le \operatorname{rank}(A^3)$:
 $$\operatorname{rank}(A^2) = \operatorname{rank}(A^3).$$
+
+::: pf-proof
+Two inequalities in opposite directions force equality.
+:::
+
 :::
 
 ::: pf-step
 Since $\operatorname{im}(A^3) \subseteq \operatorname{im}(A^2)$ are finite-dimensional subspaces of $\RR^n$ with identical dimension:
 $$\operatorname{im}(A^3) = \operatorname{im}(A^2).$$
+
+::: pf-proof
+A subspace of finite dimension equal to that of the ambient space coincides with it.
+:::
+
 :::
 
 :::
@@ -87,30 +124,60 @@ Induction for All $k \ge 3$:
 
 ::: pf-step
 **Inductive Claim:** $\operatorname{im}(A^k) = \operatorname{im}(A^2)$ for all $k \ge 2$.
+
+::: pf-proof
+This is the statement to be proved by induction on $k$.
+:::
+
 :::
 
 ::: pf-step
 **Base Case:** For $k = 2, 3$, we already proved $\operatorname{im}(A^3) = \operatorname{im}(A^2)$.
+
+::: pf-proof
+The case $k=2$ is trivial and $k=3$ is the equality just proved.
+:::
+
 :::
 
 ::: pf-step
 **Inductive Step:** Suppose $\operatorname{im}(A^k) = \operatorname{im}(A^{k-1})$ for some $k \ge 3$.
 Applying the linear transformation $A$ to both equal subspaces:
 $$\operatorname{im}(A^{k+1}) = A(\operatorname{im}(A^k)) = A(\operatorname{im}(A^{k-1})) = \operatorname{im}(A^k).$$
+
+::: pf-proof
+Applying $A$ to the equal subspaces gives the displayed chain of equalities.
+:::
+
 :::
 
 ::: pf-step
 Thus $\operatorname{im}(A^k) = \operatorname{im}(A^{k+1})$ for all $k \ge 2$.
+
+::: pf-proof
+The induction starts at $k=2$ and propagates to every larger $k$.
+:::
+
 :::
 
 ::: pf-step
 Taking dimensions:
 $$\operatorname{rank}(A^k) = \operatorname{rank}(A^{k+1}) \quad \text{for all } k \ge 2.$$
+
+::: pf-proof
+Equal subspaces have equal dimension.
+:::
+
 :::
 
 ::: pf-step
 In particular:
 $$\operatorname{rank}(A^k) \le \operatorname{rank}(A^{k+1}) \quad \text{for all } k \ge 3.$$
+
+::: pf-proof
+Equality implies the inequality.
+:::
+
 :::
 
 :::

@@ -12,6 +12,28 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained exam assets/attachments/SP08_290_Topology_Qual.pdf,
+    problem 7: for a degree-one self-map of the two-torus, the induced map on
+    first cohomology defines an element of SL_2(Z) with respect to the basis
+    coming from the product decomposition. The card agrees. The extraction's
+    optical character recognition prints the induced map as "J*" in place of
+    "f*", which is a rendering artifact of the scan.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The argument is correct. Choosing a basis of H^1 with alpha cup beta equal to
+    the orientation class, the induced map is given by a two by two integer
+    matrix, and naturality together with graded commutativity turns the cup
+    product of the two images into the determinant of that matrix times the
+    orientation class; since the self-map has degree one, the induced map on top
+    cohomology is the identity, so the determinant is 1 and the matrix lies in
+    SL_2(Z). Nothing was changed.
 ---
 
 ::: {.problem}

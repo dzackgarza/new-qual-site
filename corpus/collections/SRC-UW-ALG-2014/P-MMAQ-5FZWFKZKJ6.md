@@ -11,6 +11,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 8 of the 2014 Algebra Preliminary Examination (University of
+    Washington, September 8, 2014), printed p. 2 of the two-page paper retained at
+    assets/attachments/UW-Algebra-Qual-2014.pdf, is the statement the card answers, and the paragraph at
+    the head of the solution records that the paper prints no solutions, so the argument is the card's
+    own. Checked: the statement against the paper's text layer at the page named; the solution read for
+    the four parts: the class sums as a Z-basis, the Cayley-Hamilton argument, the scalar by which P_C
+    acts, and algebraic integrality; `qualc.authoring check` on the card, and `tmp/lam.sh` for the
+    numbering and the QED. Not checked: no retained solution set exists for this paper to compare the
+    argument with, and no other card of the collection in this pass.
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
@@ -38,6 +51,9 @@ where $\chi_\pi(C)$ is the value of the character $\chi_\pi$ on any element of $
 :::
 
 ::: {.solution}
+
+The problem is Problem 8 of the 2014 Algebra Preliminary Examination (University of Washington, September 8, 2014), printed p. 2 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2014.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the four parts: the class sums as a $\ZZ$-basis of the centre, the Cayley--Hamilton argument that produces a monic integral polynomial, the scalar by which $\pi(P_C)$ acts, and the algebraic integrality of $\cardinality{C}\chi_\pi(C)/\dim V$
+
 Write $\omega_\pi(C)=\cardinality{C}\chi_\pi(C)/\dim V$.
 
 **Goal:** Prove that class sums form a $\ZZ$-basis of $Z(\ZZ[G])$, that finite free $\ZZ$-algebras are integral, that $\pi(P_C)$ acts by scalar $\omega_\pi(C)$ via Schur's Lemma, and that $\omega_\pi(C)$ is an algebraic integer.

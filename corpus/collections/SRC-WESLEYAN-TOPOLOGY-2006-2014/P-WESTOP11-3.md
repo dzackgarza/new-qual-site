@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP11-3
 kind: problem
 title: Zorn's lemma and existence of maximal ideals
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Zorn's Lemma, Maximal Ideals]}
 relations: []
 review: draft
 audit:

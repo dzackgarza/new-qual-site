@@ -24,4 +24,6 @@ and at $(x_0,y_0)$
 $$
 \dd{u}{x} = \dd{v}{y}, \qquad \dd{u}{y} = -\dd{v}{x}.
 $$
+
+The equations are [@SS03, ch. 1, Proposition 2.3], which states that a function holomorphic at $z_0$ has $\partial f/\partial\overline z(z_0)=0$ with $f'(z_0)=\partial f/\partial z(z_0)$, the Cauchy--Riemann equations being the real and imaginary parts of $\partial f/\partial\overline z=0$ displayed in that section; with the two operators there, $\partial f/\partial z=\frac12\qty{f_x+\frac1i f_y}$ and $\partial f/\partial\overline z=0$ give $f'(z_0)=f_x(z_0)=\frac1i f_y(z_0)$.
 :::

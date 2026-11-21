@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-SQUAL2-03
 kind: problem
 title: Products of completely Hausdorff spaces are completely Hausdorff
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Separation Axioms, Product Topology]}
 relations: []
 review: draft
 audit:

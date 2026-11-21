@@ -102,13 +102,14 @@ $$
 
 The homology groups are
 $$
+\boxed{
 H_n(X;\ZZ)\cong
 \begin{cases}
 \ZZ,&n=0,\\
 \ZZ,&n=1,\\
 \ZZ^2,&n=2,\\
 0,&n\ge3.
-\end{cases}
+\end{cases}}
 $$
 
 ::: pf-proof
@@ -142,22 +143,6 @@ $$
 H_2(X;\ZZ)=\ker\partial_2\cong\ZZ^2.
 $$
 Finally there are no cells in dimensions at least $3$, so $H_n(X;\ZZ)=0$ for $n\ge3$.
-
-:::
-
-:::
-
-::: pf-step
-
-Thus
-$$
-\boxed{H_0(X)\cong\ZZ,\qquad H_1(X)\cong\ZZ,\qquad H_2(X)\cong\ZZ^2,}
-$$
-and $H_n(X)=0$ for $n\ge3$.
-
-::: pf-proof
-
-This is step [](#s3){.pf-ref}.
 
 :::
 

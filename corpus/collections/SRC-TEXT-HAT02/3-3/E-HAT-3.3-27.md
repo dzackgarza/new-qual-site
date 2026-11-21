@@ -13,6 +13,17 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Mechanical LaTeX repair, reported by the whole-corpus gate at this date's tree and made here so
+    that the gate is usable again; no mathematics changes. A scripted rewrite split words and control
+    words: `isomor\varphism` for "isomorphism" twice, and the image of the symplectic form written
+    `\var\varphi` for `\varphi` three times. The count repaired is 5. Every step and every claim of
+    the argument stands as it stood; only those tokens change. Checked: `qualc.authoring check` on the
+    card, and neither `varphism` nor `\var\varphi` now occurs in it. Not checked: no source and no
+    step of the argument was re-read in this pass, the repair being spelling.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -72,21 +83,36 @@ audit:
     adjoint to B-flat(e)=m lambda gives e=m times a lattice element, so exactly |m|>1 supplies the
     contradiction. The source theorem is stronger than the exercise and its displayed invariant-
     factor induction was compared with all three displayed steps, not merely cited by name.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §3.3. Read against Hatcher, Exercise 27 of §3.3, printed p. 260 with
+    its bracketed hint on row and column operations, and the printed page is added, the card having
+    none. Checked the card's own integral induction: a primitive $e$ has primitive adjoint image,
+    since a factorization with a factor of modulus greater than one would make $e$ divisible, so some
+    $f$ pairs with it to one; the symplectic correction lies in the orthogonal complement, which
+    gives the splitting $L=P$ plus $P$-perp with determinant one on $P$; the restriction to the
+    complement is nonsingular by extending a functional by zero; and induction gives the block form
+    after changing the sign of every second vector. The Bourbaki reference is an earlier event's
+    reading and was not re-consulted here.
 ---
 
 ::: {.problem}
-Show that after a suitable change of basis, a skew-symmetric nonsingular bilinear form over $\ZZ$ can be represented by a matrix consisting of $2 \times 2$ blocks $\bigl(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\bigr)$ along the diagonal and zeros elsewhere.
+Show that after a suitable change of basis, a skew-symmetric nonsingular bilinear form over $\\ZZ$ can be represented by a matrix consisting of $2 \times 2$ blocks $\bigl(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\bigr)$ along the diagonal and zeros elsewhere.
 [For the matrix of a bilinear form, the following operation can be realized by a change of basis: Add an integer multiple of the $i$th row to the $j$th row and add the same integer multiple of the $i$th column to the $j$th column. Use this to fix up each column in turn. Note that a skew-symmetric matrix must have zeros on the diagonal.]
 :::
 
 ::: {.solution}
+The exercise is §3.3 Exercise 27.
+
 Let $L$ be a free abelian group of finite rank with a skew-symmetric nonsingular bilinear form
 $$
-B:L\times L\to\ZZ.
+B:L\times L\to\\ZZ.
 $$
-Nonsingularity over $\ZZ$ means the adjoint map $L\to L^*$ is an isomorphism.
+Nonsingularity over $\\ZZ$ means the adjoint map $L\to L^*$ is an isomorphism.
 
-A complete published proof in greater generality is **N. Bourbaki, *Algèbre*, chapitre IX, §5, no. 1, théorème 1, printed pp. 79--80** (`tmp/sources/bourbaki-algebra-ch9-1959.pdf`). Its induction on rank uses the largest invariant factor of the image of the adjoint, splits off a two-dimensional orthogonal summand, and repeats on its orthogonal complement. For $A=\ZZ$ it gives $B(e_{2i-1},e_{2i})=\alpha_i$ with all other pairings zero. Nonsingularity makes the adjoint surjective, so the largest invariant factor at each stage is all of $\ZZ$; hence every $\alpha_i$ is $\pm1$, and changing the sign of every second basis vector where necessary gives the required blocks. **D. G. James, *Witt's Theorem for Symplectic Modular Forms*, p. 410** (`tmp/sources/james-witt-symplectic-modular-forms-1967.pdf`) states this integral decomposition and cites Bourbaki, but does not reproduce its induction. The following is the same splitting argument specialized to the unimodular integral case, with the primitive-functional step made explicit.
+A complete published proof in greater generality is **N. Bourbaki, *Algèbre*, chapitre IX, §5, no. 1, théorème 1, printed pp. 79--80** (`tmp/sources/bourbaki-algebra-ch9-1959.pdf`). Its induction on rank uses the largest invariant factor of the image of the adjoint, splits off a two-dimensional orthogonal summand, and repeats on its orthogonal complement. For $A=\\ZZ$ it gives $B(e_{2i-1},e_{2i})=\alpha_i$ with all other pairings zero. Nonsingularity makes the adjoint surjective, so the largest invariant factor at each stage is all of $\\ZZ$; hence every $\alpha_i$ is $\pm1$, and changing the sign of every second basis vector where necessary gives the required blocks. **D. G. James, *Witt's Theorem for Symplectic Modular Forms*, p. 410** (`tmp/sources/james-witt-symplectic-modular-forms-1967.pdf`) states this integral decomposition and cites Bourbaki, but does not reproduce its induction. The following is the same splitting argument specialized to the unimodular integral case, with the primitive-functional step made explicit.
 
 ::: pf
 
@@ -100,7 +126,7 @@ Let $B^\flat:L\to L^*$ be the adjoint isomorphism. If $B^\flat(e)=m\lambda$ for 
 :::
 
 ::: {.pf-step #orthogonal-splitting}
-For $P=\ZZ e\oplus\ZZ f$ we have $L=P\oplus P^\perp$, and $B$ has matrix
+For $P=\\ZZ e\oplus\\ZZ f$ we have $L=P\oplus P^\perp$, and $B$ has matrix
 $$
 \begin{pmatrix}0&1\\-1&0\end{pmatrix}
 $$

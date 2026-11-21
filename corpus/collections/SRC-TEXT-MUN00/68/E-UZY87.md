@@ -41,7 +41,7 @@ There is a homomorphism $\theta:G_1*G_2\to G_1\times G_2$ with $\theta(g_1)=(g_1
 
 ::: pf-proof
 
-The projections $G_i\hookrightarrow G_i$ followed by the inclusions into $G_1\times G_2$ are homomorphisms $G_i\to G_1\times G_2$, so the extension condition of Lemma 68.3 (printed p. 418) for the free product $G_1*G_2$ produces $\theta$.
+The projections $G_i\hookrightarrow G_i$ followed by the inclusions into $G_1\times G_2$ are homomorphisms $G_i\to G_1\times G_2$, so the extension condition of Lemma 68.3  for the free product $G_1*G_2$ produces $\theta$.
 
 :::
 

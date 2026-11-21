@@ -32,8 +32,10 @@ replacement. A correction is marked settled on its card only when a file here ce
 | <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/Tamuras15_10.lean> | `P-TAMURAS15-10` | The corrected statement in full, including the `x ∈ Y` case `exists_mem_S` by Hahn--Banach. | the statement |
 | <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/MooreSpaceExactness.lean> | `E-HAT-2.3-1` | The group data behind the two exactness failures: $\ZZ/m$ is nontrivial for $m\ge2$ and torsion; a sequence with trivial ends cannot be exact at $\ZZ/m$; multiplication by $m\ge2$ on $\ZZ$ is injective but not surjective. | part |
 | <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorTorsion.lean> | `E-HAT-3.A-6` | The coordinate step of the converse and the refutation of the inference it replaces: `ratchet_le`, `exact_order_smul`, `exists_coord`, `zmod_two_no_exact_order_eight`, `zmod_eight_order_four`. | part |
+| <https://github.com/dzackgarza/lean-categories/blob/5848f0f2f881ba032eb8bb69baa051300498ba6b/LeanCategories/Homological/TorExercise3A2.lean> | `E-HAT-3.A-2` | **The card's whole statement, for every abelian group `A`.** `torOneQzAddEquivTorsion` proves `Tor₁(A, ℚ/ℤ) ≅ T(A)`, the torsion subgroup as `Submodule.torsion ℤ A`; `isTorsionFree_iff_forall_subsingleton_torOne` proves `A` torsion-free if and only if `Tor₁(A, B)` is trivial for every abelian group `B`. `Tor₁` is `TorBridge.torOne`, the left derived functor of `tensorLeft B`, and both are proved at the canonical presentation `0 → ker π → (A →₀ ℤ) → A → 0`, whose middle term is free on `A` itself — no finiteness hypothesis on `A`, and no freeness of `ker π`. Lean 4.36.0 at Mathlib `6d97e8ad`; axioms `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`. | the statement |
+| <https://github.com/dzackgarza/lean-categories/blob/5848f0f2f881ba032eb8bb69baa051300498ba6b/LeanCategories/Homological/TorExercise3A6.lean> | `E-HAT-3.A-6` | **The card's whole statement, for all abelian groups `A` and `B`.** `isAddTorsion_torOne` proves `Tor₁(A, B)` is a torsion group; `torOne_exists_addOrderOf_iff` proves, for every positive `n`, that `Tor₁(A, B)` has an element of order `n` if and only if both `A` and `B` have one — the printed direction and its converse. The route: the presentation bridge `torOneTorKernelAddEquiv` (`Tor₁(A, B) ≅ ker ((ker π) ⊗ B → F ⊗ B)` for any surjection `π` from a free `F`), the stage descent `exists_fg_stage` to a finitely generated direct summand of the free middle term, Smith normal form (`Submodule.smithNormalForm`) killing the stage's kernel by the product of its diagonal entries (`exists_nsmul_eq_zero_of_stage`), the transport `nsmul_eq_zero_of_nsmul_map_eq_zero`, and for the order statement the purity of the syzygy's cyclic subgroup (`exists_torOne_of_addOrderOf`) and the stage's elementary divisors (`exists_addOrderOf_of_torOne`). No filtered-colimit statement is used. Lean 4.36.0 at Mathlib `6d97e8ad`; axioms `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`. | the statement |
 | <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/FamilyQuotient.lean> | `E-HAT-2.3-2` | The precise implication the dimension step needs: if the family $(f_i)_{i\in\ZZ}$ of groups is carried by a `Finset` (every group outside it is trivial), then the canonical map $\bigoplus_i f_i\to\prod_i f_i$ is **surjective**, so the quotient $\prod_i f_i\big/\bigoplus_i f_i$ is trivial; stated as `directSumToPi_surjective_of_finite_support` and `quotient_subsingleton_of_finite_support`, with the point case (all groups trivial) and the $S^0$ case (exactly one nonzero index) as corollaries. It does **not** assert that the sum and the product are isomorphic, and says nothing for a family with infinite support — there the map is not surjective in general, which is why the candidate fails the wedge axiom. The identification of the $f_i$ with reduced homology groups is not formalized. | part |
-| <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/ChainLevelSteps.lean> | `E-HAT-2.2-16` | The degree-zero and skeleton steps of the repair, but not the enumeration of the simplex's chains: `choose_rank_step` (Pascal's identity), `ker_ne_top_of_surjective_to_int` (a surjection onto $\ZZ$ has proper kernel), `not_subsingleton_ordinary_homology` (with $\ker\varepsilon=\operatorname{im}\partial_1$ and $\varepsilon$ onto $\ZZ$, the ordinary $C_0/\operatorname{im}\partial_1\cong\ZZ$ is not trivial, so $Z_0/B_0$ cannot stand in for $\widetilde H_0$), and `ker_eq_range_of_comm_iso` (exactness transports across an isomorphism of three-term complexes, which is how the $k$-skeleton inherits exactness in the degrees where its differentials agree with the simplex's). **Certified elsewhere**: the simplex's augmented exactness (<https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/SimplexChains.lean>) and $\widetilde H_i((\Delta^n)^k)=0$ for $i<k$ (<https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/SkeletonHomology.lean>). **Not** certified anywhere: that the chains are the *barycentric* ones, for which the pin has no `SSet.B` and no `sd ⟶ B` (§5b).  Plus `skSimplexEquiv`: the `i`-simplices of the `k`-skeleton are those of `X` for `i ≤ k`, from `IsIso ((SSet.skAdj k).unit)` — the simplex-level half of the skeleton step, not its chain-level half. Plus `skSimplexEquiv_δ`: that equivalence intertwines the face maps `δ_i` whenever `j + 1 ≤ k` (`NatTrans.naturality_apply` at the truncated face map) — the compatibility the chain-level half needs. And `skChainsIso`: the alternating face map complexes' degree-`i` objects are isomorphic for `i ≤ k`, since that complex carries the free group on the `i`-simplices in degree `i`. The differentials' agreement is now proved as well: `skChainsIso_δ` (the degree-wise isomorphism commutes with every face map, checked on the free generators `freeMk x`, where the statement is exactly `skSimplexEquiv_δ`), `skChainsIso_d` (the differential square `iso_{i+1} ≫ d_sk = d_X ≫ iso_i` for `i + 1 ≤ k`, from `AlternatingFaceMapComplex.obj_d_eq` and `comp_sum`/`sum_comp`/`comp_zsmul`/`zsmul_comp`), and — with `comp_inv_of_inv_comp` — `skChains_exact`, which transports one degree of exactness to the skeleton. Axioms `propext, Classical.choice, Quot.sound`, no `sorryAx`. | part |
+| <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/ChainLevelSteps.lean> | `E-HAT-2.2-16` | The degree-zero and skeleton steps of the repair, but not the enumeration of the simplex's chains: `choose_rank_step` (Pascal's identity), `ker_ne_top_of_surjective_to_int` (a surjection onto $\ZZ$ has proper kernel), `not_subsingleton_ordinary_homology` (with $\ker\varepsilon=\operatorname{im}\partial_1$ and $\varepsilon$ onto $\ZZ$, the ordinary $C_0/\operatorname{im}\partial_1\cong\ZZ$ is not trivial, so $Z_0/B_0$ cannot stand in for $\widetilde H_0$), and `ker_eq_range_of_comm_iso` (exactness transports across an isomorphism of three-term complexes, which is how the $k$-skeleton inherits exactness in the degrees where its differentials agree with the simplex's). **Certified elsewhere**: the simplex's augmented exactness (<https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/SimplexChains.lean>) and $\widetilde H_i((\Delta^n)^k)=0$ for $i<k$ (<https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/SkeletonHomology.lean>). **Not** certified anywhere, and withdrawn as an obligation: that the chains are the *barycentric* ones, for which the pin has no `SSet.B` and no `sd ⟶ B` (§5; the card's own model on vertex subsets is certified by its `DeltaSimplexChains` row).  Plus `skSimplexEquiv`: the `i`-simplices of the `k`-skeleton are those of `X` for `i ≤ k`, from `IsIso ((SSet.skAdj k).unit)` — the simplex-level half of the skeleton step, not its chain-level half. Plus `skSimplexEquiv_δ`: that equivalence intertwines the face maps `δ_i` whenever `j + 1 ≤ k` (`NatTrans.naturality_apply` at the truncated face map) — the compatibility the chain-level half needs. And `skChainsIso`: the alternating face map complexes' degree-`i` objects are isomorphic for `i ≤ k`, since that complex carries the free group on the `i`-simplices in degree `i`. The differentials' agreement is now proved as well: `skChainsIso_δ` (the degree-wise isomorphism commutes with every face map, checked on the free generators `freeMk x`, where the statement is exactly `skSimplexEquiv_δ`), `skChainsIso_d` (the differential square `iso_{i+1} ≫ d_sk = d_X ≫ iso_i` for `i + 1 ≤ k`, from `AlternatingFaceMapComplex.obj_d_eq` and `comp_sum`/`sum_comp`/`comp_zsmul`/`zsmul_comp`), and — with `comp_inv_of_inv_comp` — `skChains_exact`, which transports one degree of exactness to the skeleton. Axioms `propext, Classical.choice, Quot.sound`, no `sorryAx`. | part |
 | <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/BarySign.lean> | `E-HAT-2.1-25` | The **all-`n` counting and sign algebra** behind the corrected subdivision formula. `card_pairSet`: the pairs `i < j` in `Fin N` number `N(N-1)/2`, via `Finset.card_sigma`, `Fin.card_Iio`, `Fin.sum_univ_eq_sum_range` and `Finset.sum_range_id`. `noninv_add_inv`: inversions and noninversions partition those pairs, via `Finset.card_filter_add_card_filter_not`. `sign_eq_neg_one_pow_inv`: `π.sign = (-1)^{inv π}` in `ℤˣ`, from the maintained `Equiv.Perm.sign_eq_prod_prod_Iio` (`GroupTheory/Perm/Fin.lean`) together with `Finset.prod_sigma'`, an induction over the pair set, `Finset.card_insert_of_notMem` and `pow_succ`. Axioms `propext`, `Classical.choice`, `Quot.sound`. It also proves the **deletion-index correspondence**: `delSum π = Σ_j #{i ∈ Iic j : π i < π j}` is the recursion's exponent, since the step `F_j → F_{j-1}` deletes `π j`; `filter_Iic_eq_filter_Iio` kills the diagonal, `filter_pairSet` filters the sigma set, and `delSum_eq_noninv` concludes `delSum π = noninv π`; `pow_delSum_eq_global_mul_sign` then gives the all-`n` identity `(-1)^{delSum π} = (-1)^{N(N-1)/2} sgn(π)`. **What this file is not:** it is the sign algebra of the corrected formula, not the recursion. The recursion itself is modelled, with every coefficient computed, in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/BarySubdiv.lean> (next row). The two files cannot import each other, so the recursion file restates these theorems, with these proofs, before applying them (<https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/BarySubdiv.lean>, section 8). What no file does is identify either with Hatcher's operator on singular chains. The pinned tree has the raw material — `AlgebraicTopology.singularChainComplexFunctor` (`AlgebraicTopology/SingularHomology/Basic.lean`), `SSet.ιChainComplex_d` and `SSet.chainComplex_hom_ext` (`SSet/Homology/Basic`) — and the missing step is the definition of the subdivision operator on that complex together with `S λ = b_λ (S ∂λ)`, which is not built. | part |
 | <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/BarySubdiv.lean> | `E-HAT-2.1-25` | **Hatcher's recursion itself, modelled, with its coefficients computed.** In `FreeAbelianGroup (List (Finset (Fin N)))`, `N = n+1`: `deletionPos` is the position of a vertex in a face and `stepExp`/`stepSign` the exponent and sign the boundary contributes along a peeling order, with `stepSign_eq_pow_stepExp`; `stepExp_eq_pairCount` proves the accumulated exponent depends only on the peeling order and not on the intermediate faces — it is the number of pairs `i < j` of that order with `l_j < l_i`, the deletion-index identity. `subdiv` is `S λ = b_λ (S ∂λ)` with the apex prepended; `coeff_subdiv` computes **every** coefficient of it and `coeff_subdiv_chainOf` shows the coefficient of the chain of a peeling order is exactly the recursion's `stepSign` there (`coeff_subdiv_chainOf_eq_pow` reads it as a power of `−1`). Permutation side: `deletionPos_univ` (at the top face the deletion position of a vertex is its value — the outermost deletion's factor), `peel π = (π n, …, π 0)` (the order the recursion deletes in) with `coeff_subdiv_peel` for the chain it builds. Geometric side: `baryWeight`/`baryWeight_mem` (a face's barycentre as a point of `stdSimplex`), `affineMap`/`affineMap_mem`/`affineMap_single` (the affine map spanned by an ordered vertex list, and the listed vectors are its vertices), `descFace`/`descVertex` with `descVertex_zero` — the descending barycentric vertex list of `π` begins at the barycentre of the whole simplex, which is the vertex the cone prepends. **The coefficient theorem, for every `π`:** `pairCount_ofFn` (a list count over `List.ofFn g` is the `Fin`-indexed count of pairs `i < j` with `g j < g i`, with `length_filter_ofFn`, `card_filter_pos` and `card_filter_succ_lt` carrying a filtered list length to a `Fin`-indexed cardinal), `pairCount_peel_eq_delSum` (the peeling order `peel π = (π (N-1), …, π 0)` has deletion-position count exactly the permutation's deletion sum `delSum π = Σ_j #{i ≤ j : π i < π j}`), the sign algebra restated here and applied (`pow_delSum_eq_global_mul_sign`, `pow_delSum_eq_global_mul_sign_int`), and therefore `coeff_subdiv_peel_sign`: for every `N` and every `π`, the recursion's coefficient of the descending chain of `π` is exactly `(−1)^{N(N-1)/2} sgn(π)` — the number the card displays, derived from the recursion rather than assumed. **The whole chain, not only its coefficients:** `chainCoeff_exists_chainOf` (support exhaustion: a chain with nonzero predicted coefficient is `chainOf F l` for a `Nodup` `l` enumerating `F`, by induction along `chainCoeff`'s recursion) and `chainOf_injective` (nonduplication: two peeling orders enumerating `F` and giving the same chain are equal, by strong induction on `F`, the head of the chain forcing the erased vertex) give, with `exists_perm_peel` (every `Nodup` enumeration of `univ` is some `peel π`) and `chainOf_peel_injective`, the identity `subdiv_univ_eq_sum_perm`: `subdiv univ` **equals** `Σ_π (−1)^{N(N-1)/2} sgn(π) • of (chainOf univ (peel π))` in the free abelian group on chains of faces — one summand per permutation, nothing else in the support (`ext_coeff` compares all coefficients). **Transport side, proved:** `chainOf_getElem?_take` (the `k`-th face of a chain is `F` with the first `k` peeled vertices removed), `descFace_antitone` (the descending flags are nested), and with `descVertex_zero`/`descVertex_last` the descending barycentric vertex list runs from the barycentre of the whole simplex to the vertex `π 0` itself; `affineMap_mem`/`affineMap_single` give the affine simplex spanned by such a list. **The flags, and the transport to vertex lists:** `chainOf_peel_eq_ofFn_descFace` identifies the recursion's chain for `π` with the list of prefix faces (`peel_take_toFinset`, `rev_image_Iio`, `sdiff_image_of_bijective`, `univ_sdiff_Ioi`, `peel_take_face`, `chainOf_length`); `map_baryWeight_chainOf_peel` reads those faces as their barycentres and gets exactly the descending vertex list; `map_subdiv_univ_bary` is the linear extension of that reading over the free abelian group, carrying the whole recursion to the signed sum of the descending vertex lists; `affineMap_cons_apply` is the coordinate form of Hatcher's prepend (the apex enters with its own barycentric coordinate `x 0`), and `continuous_affineMap` with `affineMap_mem` and `affineMap_single` makes that list a continuous affine map of the standard simplex with exactly those vertices. **Hatcher's operator formula:** `chainAffineMap` reads a chain of faces geometrically (vertex `k` is the barycentre of the `k`-th face), `barySimplex` is `Δ̄_π` on the descending barycentric vertex list, `chainAffineMap_chainOf_peel` proves the chain of `π` **is** its `Δ̄_π`, and `hatcher_formula` states, for an arbitrary continuous `σ` out of the standard `n`-simplex, `map (c ↦ σ ∘ (chain c)) (subdiv univ) = Σ_π (−1)^{n(n+1)/2} sgn(π) • of (σ ∘ Δ̄_π)` — the left side being Hatcher's `S σ` defined from `S λ = b_λ (S ∂λ)`, the right side the displayed closed formula. **Into degree `n` of the maintained chain complex:** `barySimplexOn`/`barySimplexSingular` package `Δ̄_π` through `TopCat.toSSetObjEquiv` as an honest singular `M`-simplex of the standard simplex (`toSSetObjEquiv_barySimplexSingular` shows the packaging is faithful); the degree-`M` group of `X.chainComplex (ModuleCat.of ℤ ℤ)` is *definitionally* the coproduct of one copy of `ℤ` per singular `M`-simplex (checked by `rfl`), so `singularChainIota` is the coprojection with no extra identification, and `singular_chain_formula` states the recursion pushed through `chainSingular`/`barySingular` and the coprojections: `lift (c ↦ ι (chainSingular c)) (subdiv univ) = Σ_π (−1)^{n(n+1)/2} sgn(π) • ι (Δ̄_π)`. **For an arbitrary singular simplex:** `chainVertex`/`chainAffineOn` corestrict each chain's affine map to the standard-simplex subtype with `affineMap_mem` (fixed-vertex junk fallback, so the map is total on chains), `chainAffineOn_chainOf_peel` makes it `Δ̄_π` on the recursion's chains, `chainSigma`/`barySigma` package `σ ∘ (·)` as singular `M`-simplices of `X` through `TopCat.toSSetObjEquiv` (read back by `toSSetObjEquiv_barySigma` / `toSSetObjEquiv_chainSigma`), and `hatcher_formula_arbitrary` states, for `σ : Δⁿ → X` arbitrary, `lift (c ↦ ι (chainSigma σ c)) (subdiv univ) = Σ_π (−1)^{n(n+1)/2} sgn(π) • ι (barySigma σ π)` — the left side the transported prepend-cone recursion, the right side the closed formula with the descending parametrisation. Axioms `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`; 58 printed theorems, `exit 0`. **Boundary, stated:** the chain-map property `∂ ∘ S = S ∘ ∂` is not claimed — the exercise asks for the coefficient formula, which is what is proved. | the statement |
 | `cards/bary_regression.py` | `E-HAT-2.1-25` | **A bounded regression, not a certificate.** For `n = 1, 2, 3` only, with executable assertions (the operator must equal `(-1)^{n(n+1)/2}` times the descending formula and must differ from the ascending formula and from its negative), it computes in the free abelian group on vertex tuples (i) Hatcher's recursive subdivision operator `S(lambda) = b_lambda(S partial lambda)`, (ii) the ascending barycentric formula the card used to carry, and (iii) the descending one it now carries. It confirms `S = (-1)^{n(n+1)/2}` times the descending formula for those three dimensions and refutes the ascending formula, including the exact failure in dimension `1` (`[b,v_1] - [b,v_0]` against `[v_0,b] - [v_1,b]`, different generators of `C_1`). It does **not** prove the identity for `n >= 4`: that rests on the induction written out in the card, which is not formalized, and the all-`n` identity in Lean remains an open obligation. |
@@ -61,18 +63,18 @@ state, after <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs
 
 | <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/LensDegree.lean> | `E-HAT-3.E-2` | The local-degree bookkeeping of the angular extension `(r,θ) ↦ (r, k_j θ)` on `S^{2n-1}`, which is what the card's sign count needs: `det_angDeriv` (the frame derivative is `diag(1,k)`, determinant `k`), `orientation_iff` (the coordinate map preserves orientation exactly when `k>0`), `natAbs_mul_orientation` (one coordinate contributes `|k|·sgn(k)=k`) and `prod_natAbs_mul_orientation` (the product over the coordinates). Scope, stated precisely: this certifies **arithmetic only** — the determinant of `diag(1,k)`, the orientation criterion, and `|k|·sgn(k)=k` with its product over the coordinates. It does **not** certify that the angular extension `f~` has that derivative, that its local degree is `sgn(k_j)`, or `deg f~ = k_1⋯k_n`; those three are named inputs from the lens-space discussion in §3.E, and the degree of `f` follows from them by the covering square `p' f~ = f p`. Written because an earlier repair of the card wrongly explained the sign by the holomorphic power `z ↦ 1/z^{|k|}`, which is conformal with local degree `+1`; the angular extension is a different map when `k<0`. | part |
 | <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/SimplexChains.lean> | `E-HAT-2.2-16` | **The standard simplex's chain complex is acyclic in positive degrees**, from maintained API and nothing bespoke: `SSet.Augmented.StandardSimplex.extraDegeneracy` transports along the free `ℤ`-module functor (`ExtraDegeneracy.map`), and `ExtraDegeneracy.homotopyEquiv` then gives `chainsHomotopyEquiv`, a homotopy equivalence of the alternating face map complex of the free simplicial group on `Δ^m` with the complex supported in degree `0`. Consequences, both with axioms `propext, Classical.choice, Quot.sound` and no `sorryAx`: `isZero_homology` (`H̃_i(Δ^m) = 0` for `i ≠ 0`, i.e. exactness of the augmented complex above degree zero) and `homologyZeroIso` (`H_0` of the complex is the augmentation's target, which is the form `ker ε = im ∂_1` takes). `normalizedHomotopyEquiv` and `normalizedChainsHomotopyEquiv` apply the maintained Dold--Kan comparison (`DoldKan.homotopyEquivNormalizedMooreComplexAlternatingFaceMapComplex`, valid for every simplicial object in an abelian category), giving `isZero_normalizedHomology`: the same vanishing holds in the **normalized** Moore model, so the model choice does not matter for this step. Scope: it does **not** touch the `k`-skeleton maps and says nothing about barycentric chains, so it discharges the first of the three things §5 lists for `E-HAT-2.2-16` and no more. | part |
-| <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/SkeletonHomology.lean> | `E-HAT-2.2-16` | **The card's sentence**: $\widetilde H_i((\Delta^m)^k)=0$ for $i<k$, i.e. `isZero_skHomology`: for `j + 2 ≤ k` the `k`-skeleton's chain complex has vanishing homology in degree `j + 1`. The composition is `ShortComplex.isoMk` of the three chain-group isomorphisms and the two differential squares (`scIso`), `ShortComplex.exact_of_iso` to carry `Exact` across it (`skExactAt`, through `HomologicalComplex.exactAt_iff'`), and the simplex's `isZero_homology` read as `ExactAt` (`exactAt_simplex`). It is *not* the `ker = range` transport: Mathlib's `ExactAt` is already the statement about the three-term complex, so no `Submodule`/`LinearEquiv` plumbing is needed. Axioms `propext, Classical.choice, Quot.sound`, no `sorryAx`. It copies its two inputs' statements in, since a file here cannot import a sibling. Scope: nothing about barycentric chains (§5b). | part |
-| <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorStages.lean> | `E-HAT-3.A-6`, `E-HAT-3.A-2` | The genuine stage construction for a presented group, **completed for a free middle term**. The stage: `stageRel` (its relations inside `F'`), `map_stageRel` (they are the relations of the sub-presentation `comap f F' → F'`), `stageMap` (`A' → A`, by `Submodule.mapQ`) and `stageMap_injective`, so the stage is a subgroup `A' ≤ A`. Its own presentation: `stageRelMap` with `range_stageRelMap` (the cokernel is `A'`) and `subtype_comp_stageRelMap`. The directed system: `stageIncl` with `stageIncl_refl` and `stageIncl_comp` (a functor on the poset of submodules of `F`), `stageMap_comp_stageIncl` (the triangles `A' → A'' → A` and `A' → A` commute) and `stageIncl_injective`. The filtered-colimit step, with its hypothesis isolated and sharp: `rTensor_subtype_injective_of_retraction` (a retraction of `F' ↪ F` makes `F' ⊗ B → F ⊗ B` injective), `rTensor_subtype_not_injective` (**certified counterexample**: `F' = 2ℤ ⊆ F = ℤ`, `B = ℤ/2`, so a submodule that is not a direct summand breaks the step even though `F` is free), `exists_stage_witness_of_retraction` (descent for such a stage). Then the choice of stage for free `F`: `coordProj`/`coordSpan`/`coordRetract` with `coordRetract_comp_subtype` (a span of finitely many basis vectors is a direct summand), `coordSpan_fg`, `exists_fg_summand` (every finitely generated `P ≤ K` lies in a finitely generated direct summand), and `exists_stage_of_free`: **every element of `torKernel f` is carried by the `Tor` of a stage whose middle term is a finitely generated direct summand**, and already vanishes there. **Not** proved: the torsion statement for a finitely generated stage, and the filtered-colimit passage from a stage to an arbitrary `A`. The presentation-level `Tor` of a stage *is* now identified with `\\operatorname{Tor}(A,B)` — section 5b's `torOne_iso_kernel`, at a two-term free resolution of a finitely generated `A` — so Hatcher's Lemma 3A.2 is no longer what blocks those two, and `isZero_torOne_of_finite_torsionFree` settles the torsion-free case outright. The identifications the cards make about the stage itself are proved rather than assumed: `stage_range_fg` (a stage of a finitely generated `F'` is a **finitely generated subgroup** of `A`, since `stageMap` is injective with range the image of `F'`), `stage_finite` (its group is a finitely generated `Z`-module, the hypothesis the structure theorem consumes) and `exists_stage_containing` (**the stages cover `A`**: every element lies in the image of the stage of some finitely generated `F'`, taking `span {x}` for a lift `x`; a covering stage need not be a direct summand, which is why `exists_fg_summand` is a separate statement). | part |
-| <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorReductions.lean> | `E-HAT-3.A-6` | The presentation-level `Tor` and the parts of Hatcher's Proposition 3A.5 that Mathlib supplies: the free case of (3) (`torKernel_eq_bot_of_subsingleton`), the group in (5) (`torsionBy_eq_ker`), the torsion-free-is-flat hypothesis of (3) (`flat_of_torsionFree`, Mathlib's Dedekind-domain instance), and the flatness form of (6) (`rTensor_injective_of_flat`, Mathlib's `Module.Flat.rTensor_preserves_injective_linearMap`); and, for the step that needs the *$p$-primary* hypothesis rather than torsion-freeness, item (5) in full: `lid_rTensor_mulByInt` and `map_torKernel_mulByInt`, that the kernel of $(n\cdot\mathrm{id})\otimes\mathrm{id}_B$ inside $\ZZ\otimes B$ is carried by $\ZZ\otimes B\cong B$ onto $B[n]$ — that is, $\operatorname{Tor}(\ZZ/n,B)\cong B[n]$ for this resolution — together with `eq_zero_of_pow_smul_eq_zero`, `torsionBy_pow_eq_bot_of_no_p_torsion` (no $p$-torsion gives $C[p^k]=0$) and `mem_of_p_smul_mem_of_pPrimary` ($B_p$ is saturated for multiplication by $p$, i.e. $B/B_p$ has no $p$-torsion). Additivity (2) is now proved as `prodLeft_comp_rTensor` and `map_prodLeft_torKernel`: the presentation of a direct sum is the direct sum of the presentations, so `torKernel (f₁ ⊕ f₂)` is carried by `TensorProduct.prodLeft` onto `torKernel f₁ × torKernel f₂`. The proof avoids `prodLeft.symm` on arbitrary elements by rewriting the kernel as a `comap` and mapping forward through `Submodule.map_comap_eq_self`. **Not** certified: that the presentation-level kernel computes $\operatorname{Tor}$ for an arbitrary resolution (Lemma 3A.2) and commutation with filtered colimits (Exercise 4), which is what carries the cyclic case and the summand-by-summand case to an arbitrary $p$-primary or torsion-free group. | part |
+| <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/SkeletonHomology.lean> | `E-HAT-2.2-16` | **The card's sentence**: $\widetilde H_i((\Delta^m)^k)=0$ for $i<k$, i.e. `isZero_skHomology`: for `j + 2 ≤ k` the `k`-skeleton's chain complex has vanishing homology in degree `j + 1`. The composition is `ShortComplex.isoMk` of the three chain-group isomorphisms and the two differential squares (`scIso`), `ShortComplex.exact_of_iso` to carry `Exact` across it (`skExactAt`, through `HomologicalComplex.exactAt_iff'`), and the simplex's `isZero_homology` read as `ExactAt` (`exactAt_simplex`). It is *not* the `ker = range` transport: Mathlib's `ExactAt` is already the statement about the three-term complex, so no `Submodule`/`LinearEquiv` plumbing is needed. Axioms `propext, Classical.choice, Quot.sound`, no `sorryAx`. It copies its two inputs' statements in, since a file here cannot import a sibling. Scope: nothing about barycentric chains (§5, where that item is withdrawn). | part |
+| <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorStages.lean> | `E-HAT-3.A-6`, `E-HAT-3.A-2` | The genuine stage construction for a presented group, **completed for a free middle term**. The stage: `stageRel` (its relations inside `F'`), `map_stageRel` (they are the relations of the sub-presentation `comap f F' → F'`), `stageMap` (`A' → A`, by `Submodule.mapQ`) and `stageMap_injective`, so the stage is a subgroup `A' ≤ A`. Its own presentation: `stageRelMap` with `range_stageRelMap` (the cokernel is `A'`) and `subtype_comp_stageRelMap`. The directed system: `stageIncl` with `stageIncl_refl` and `stageIncl_comp` (a functor on the poset of submodules of `F`), `stageMap_comp_stageIncl` (the triangles `A' → A'' → A` and `A' → A` commute) and `stageIncl_injective`. The filtered-colimit step, with its hypothesis isolated and sharp: `rTensor_subtype_injective_of_retraction` (a retraction of `F' ↪ F` makes `F' ⊗ B → F ⊗ B` injective), `rTensor_subtype_not_injective` (**certified counterexample**: `F' = 2ℤ ⊆ F = ℤ`, `B = ℤ/2`, so a submodule that is not a direct summand breaks the step even though `F` is free), `exists_stage_witness_of_retraction` (descent for such a stage). Then the choice of stage for free `F`: `coordProj`/`coordSpan`/`coordRetract` with `coordRetract_comp_subtype` (a span of finitely many basis vectors is a direct summand), `coordSpan_fg`, `exists_fg_summand` (every finitely generated `P ≤ K` lies in a finitely generated direct summand), and `exists_stage_of_free`: **every element of `torKernel f` is carried by the `Tor` of a stage whose middle term is a finitely generated direct summand**, and already vanishes there. **Not** proved in this file: the torsion statement for a finitely generated stage, and the filtered-colimit passage from a stage to an arbitrary `A`. The stage torsion statement is supplied at the same presentation by `TorExercise3A6.exists_nsmul_eq_zero_of_stage` (Smith normal form on the stage's relation submodule, with `exists_fg_stage` choosing a finitely generated direct summand), and no card route takes a filtered colimit (section 5b). The presentation-level `Tor` of a stage *is* now identified with `\\operatorname{Tor}(A,B)` — section 5b's `torOne_iso_kernel`, at a two-term free resolution of a finitely generated `A` — so Hatcher's Lemma 3A.2 is no longer what blocks those two, and `isZero_torOne_of_finite_torsionFree` settles the torsion-free case outright. The identifications the cards make about the stage itself are proved rather than assumed: `stage_range_fg` (a stage of a finitely generated `F'` is a **finitely generated subgroup** of `A`, since `stageMap` is injective with range the image of `F'`), `stage_finite` (its group is a finitely generated `Z`-module, the hypothesis the structure theorem consumes) and `exists_stage_containing` (**the stages cover `A`**: every element lies in the image of the stage of some finitely generated `F'`, taking `span {x}` for a lift `x`; a covering stage need not be a direct summand, which is why `exists_fg_summand` is a separate statement). | part |
+| <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorReductions.lean> | `E-HAT-3.A-6` | The presentation-level `Tor` and the parts of Hatcher's Proposition 3A.5 that Mathlib supplies: the free case of (3) (`torKernel_eq_bot_of_subsingleton`), the group in (5) (`torsionBy_eq_ker`), the torsion-free-is-flat hypothesis of (3) (`flat_of_torsionFree`, Mathlib's Dedekind-domain instance), and the flatness form of (6) (`rTensor_injective_of_flat`, Mathlib's `Module.Flat.rTensor_preserves_injective_linearMap`); and, for the step that needs the *$p$-primary* hypothesis rather than torsion-freeness, item (5) in full: `lid_rTensor_mulByInt` and `map_torKernel_mulByInt`, that the kernel of $(n\cdot\mathrm{id})\otimes\mathrm{id}_B$ inside $\ZZ\otimes B$ is carried by $\ZZ\otimes B\cong B$ onto $B[n]$ — that is, $\operatorname{Tor}(\ZZ/n,B)\cong B[n]$ for this resolution — together with `eq_zero_of_pow_smul_eq_zero`, `torsionBy_pow_eq_bot_of_no_p_torsion` (no $p$-torsion gives $C[p^k]=0$) and `mem_of_p_smul_mem_of_pPrimary` ($B_p$ is saturated for multiplication by $p$, i.e. $B/B_p$ has no $p$-torsion). Additivity (2) is now proved as `prodLeft_comp_rTensor` and `map_prodLeft_torKernel`: the presentation of a direct sum is the direct sum of the presentations, so `torKernel (f₁ ⊕ f₂)` is carried by `TensorProduct.prodLeft` onto `torKernel f₁ × torKernel f₂`. The proof avoids `prodLeft.symm` on arbitrary elements by rewriting the kernel as a `comap` and mapping forward through `Submodule.map_comap_eq_self`. **Not** certified: that the presentation-level kernel computes $\operatorname{Tor}$ for an arbitrary resolution (Lemma 3A.2) and commutation with filtered colimits (Exercise 4); neither is on the route that certifies the two cards, which takes the presentation $\pi : (A\to_0\ZZ)\to A$ and the stage descent of section 5b. | part |
 
-| <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorBridge.lean> | `E-HAT-3.A-6`, `E-HAT-3.A-2` | **`Tor₁` is the homology of the tensored projective resolution**, proved: `torOneIsoHomology` gives `((tensorLeft B).leftDerived 1).obj A ≅ H₁(P.complex ⊗ B)` for every projective resolution `P` of `A`, by `ProjectiveResolution.isoLeftDerivedObj` at degree one, with the tensored complex and its degree-1 differential named (`resolutionTensor`, `tensorDiffOne`). Axioms `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`. **Also proved:** the two-term step, `homologyIsoKernelOfZero`, `homologyOneIsoKernelOfD`, `homologyOneIsoKernel` and `tensor_d_two_one_eq_zero`, giving `torOneIsoKernel`: for a projective resolution with `IsZero (P.complex.X 2)`, `Tor₁(A,B) ≅ kernel((resolutionTensor B P).d 1 0)`, plus `torOneIsoKerLinear` composed with `ModuleCat.kernelIsoKer`. The map-level content is `resolutionTensor_d` (the tensored differential is the tensor of the resolution's differential). **Also proved:** the orientation `ker_rTensor_eq_comap_ker_lTensor` (`ker (f.rTensor N)` is the `comm`-preimage of `ker (f.lTensor N)`, by `LinearMap.lTensor_comm`), the pinned kernel module `kerModule` with `kernelIsoKerModule` (the `ℤ`-module instance diamond resolved at that boundary), and `tensor_d_hom_eq_lTensor` (the tensored differential is the resolution differential with `B` on the left). **Open:** the single packaging step that composes the two-term bridge with the `comm`-transport into one isomorphism naming `kerModule` of `f.hom.rTensor ↥B`. See section 5b. | part |
-| <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/CyclicTor.lean> | `E-HAT-3.A-6` | **The cyclic stage's index transport.** `ker_d_rTensor_eq`: the kernel of the cyclic resolution's tensored first differential is the preimage, under `syzygyEquiv ⊗ id_B`, of the kernel of `(n · id) ⊗ id_B` — that is, of the presentation-level `torKernel` whose image under `TensorProduct.lid` is `B[n]` (`TorReductions.map_torKernel_mulByInt`). Supporting facts, all proved in the file: `d_apply` (the resolution's first differential is `constOne ∘ (n · id) ∘ syzygyEquiv`, pointwise), `projZero_comp_constOne` (the zeroth coordinate retracts `constOne`), `constOne_tmul_eq_zero`, `ker_constOne_rTensor_eq_bot` (`constOne ⊗ id_B` is injective), and the generic `ker_subtype_rTensor_eq`. Axioms `propext, Classical.choice, Quot.sound`, no `sorryAx`. Two elaboration facts worth keeping: the transport is stated for `(LinearMap.ker f).subtype`, because `↑((twoTermComplex 1 (cyclicPresentation n)).X 1)` and `↥(LinearMap.ker …)` are not interchangeable in `⊗ₜ` although `twoTermComplex_X_one` is `rfl`; and the factorisation is stated through `ModuleCat.ofHom` composites so that `ModuleCat.isModule` is on both sides, a plain `LinearMap.comp` composite being headed by `Int.instRing.toSemiring`. **The hop is closed**: `map_ker_d_rTensor_eq` maps the preimage back to `ker ((n · id) ⊗ id_B)` by `σ ⊗ id_B`, using `Submodule.map_comap_eq_self` and invertibility of the tensored `σ` (`TensorProduct.induction_on` on a pure tensor), and `map_comp_map` is the composition step. **Not yet written**: the final composition with `TorReductions.map_torKernel_mulByInt` into `Submodule.torsionBy ℤ ↥B (n:ℤ)`, blocked by instance ascription on the two `Submodule` types (`TensorProduct.instModule` on one side, `Int.instCommSemiring` on the other). | part |
+| <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorBridge.lean> | `E-HAT-3.A-6`, `E-HAT-3.A-2` | **`Tor₁` is the homology of the tensored projective resolution**, proved: `torOneIsoHomology` gives `((tensorLeft B).leftDerived 1).obj A ≅ H₁(P.complex ⊗ B)` for every projective resolution `P` of `A`, by `ProjectiveResolution.isoLeftDerivedObj` at degree one, with the tensored complex and its degree-1 differential named (`resolutionTensor`, `tensorDiffOne`). Axioms `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`. **Also proved:** the two-term step, `homologyIsoKernelOfZero`, `homologyOneIsoKernelOfD`, `homologyOneIsoKernel` and `tensor_d_two_one_eq_zero`, giving `torOneIsoKernel`: for a projective resolution with `IsZero (P.complex.X 2)`, `Tor₁(A,B) ≅ kernel((resolutionTensor B P).d 1 0)`, plus `torOneIsoKerLinear` composed with `ModuleCat.kernelIsoKer`. The map-level content is `resolutionTensor_d` (the tensored differential is the tensor of the resolution's differential). **Also proved:** the orientation `ker_rTensor_eq_comap_ker_lTensor` (`ker (f.rTensor N)` is the `comm`-preimage of `ker (f.lTensor N)`, by `LinearMap.lTensor_comm`), the pinned kernel module `kerModule` with `kernelIsoKerModule` (the `ℤ`-module instance diamond resolved at that boundary), and `tensor_d_hom_eq_lTensor` (the tensored differential is the resolution differential with `B` on the left). **Open:** the single packaging step that composes the two-term bridge with the `comm`-transport into one isomorphism naming `kerModule` of `f.hom.rTensor ↥B`. The cards do not need it: section 5b's presentation bridge is a different construction, and §7c records that this packaging is supporting development rather than a card correction. | part |
+| <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/CyclicTor.lean> | `E-HAT-3.A-6` | **The cyclic stage's index transport.** `ker_d_rTensor_eq`: the kernel of the cyclic resolution's tensored first differential is the preimage, under `syzygyEquiv ⊗ id_B`, of the kernel of `(n · id) ⊗ id_B` — that is, of the presentation-level `torKernel` whose image under `TensorProduct.lid` is `B[n]` (`TorReductions.map_torKernel_mulByInt`). Supporting facts, all proved in the file: `d_apply` (the resolution's first differential is `constOne ∘ (n · id) ∘ syzygyEquiv`, pointwise), `projZero_comp_constOne` (the zeroth coordinate retracts `constOne`), `constOne_tmul_eq_zero`, `ker_constOne_rTensor_eq_bot` (`constOne ⊗ id_B` is injective), and the generic `ker_subtype_rTensor_eq`. Axioms `propext, Classical.choice, Quot.sound`, no `sorryAx`. Two elaboration facts worth keeping: the transport is stated for `(LinearMap.ker f).subtype`, because `↑((twoTermComplex 1 (cyclicPresentation n)).X 1)` and `↥(LinearMap.ker …)` are not interchangeable in `⊗ₜ` although `twoTermComplex_X_one` is `rfl`; and the factorisation is stated through `ModuleCat.ofHom` composites so that `ModuleCat.isModule` is on both sides, a plain `LinearMap.comp` composite being headed by `Int.instRing.toSemiring`. **The hop is closed**: `map_ker_d_rTensor_eq` maps the preimage back to `ker ((n · id) ⊗ id_B)` by `σ ⊗ id_B`, using `Submodule.map_comap_eq_self` and invertibility of the tensored `σ` (`TensorProduct.induction_on` on a pure tensor), and `map_comp_map` is the composition step. **Not yet written in this file**: the final composition with `TorReductions.map_torKernel_mulByInt` into `Submodule.torsionBy ℤ ↥B (n:ℤ)`, blocked by instance ascription on the two `Submodule` types (`TensorProduct.instModule` on one side, `Int.instCommSemiring` on the other); the cards take the presentation-level route to `Submodule.torsion ℤ A` instead (`TorExercise3A2.torOneQzAddEquivTorsion`, through `torsionToSyzKernel`). | part |
 | <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorArbitrary.lean> | `E-HAT-3.A-6`, `E-HAT-3.A-2` | **The dimension-shift platform for an arbitrary abelian group.** `presComplex f`: a projective resolution of `A` over *any* epimorphism `f : P ⟶ A` from a projective — `P` in degree zero, then Mathlib's `Projective.syzygies`/`Projective.d` for the kernel, its kernel, and so on, built with `ChainComplex.mk'` (for `f = Projective.π A` this is Mathlib's own `ProjectiveResolution.of`). `presComplex_exactAt_succ` (exactness in positive degrees), degreewise projectivity, the augmentation `presPi` and its quasi-isomorphism (degree zero through `ModuleCat.isColimitCokernelCofork`, as in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorFreeResolution.lean>) — so `presResolution f` is a genuine `ProjectiveResolution A` with a *prescribed first presentation*, which is what an arbitrary `A` needs: no hypothesis on the kernel of `f`, hence no "every subgroup of a free abelian group is free". `torOneIsoTensorSplice` bridges `Tor₁(A,B)` to `H₁` of the tensored splice. `hom_lTensor` is the dictionary between the `ModuleCat`-monoidal tensor maps and `LinearMap.lTensor`. `ker_dOne_eq_kerCov` (the kernel of the first differential is the kernel of the kernel cover, by injectivity of the kernel inclusion), `exact_dTwo_kerCov` (the untensored second differential and the kernel cover are an exact pair), and **`range_dTwoT_eq`: the boundaries of the tensored splice are the kernel of the tensored kernel cover** — the right-exactness input of dimension shifting, from Mathlib's `lTensor_exact`, stated through the dictionary form so the two tensor-module instance worlds never meet in a statement (`exact_tensored` bridges by defeq). **The ψ-map of the third isomorphism, at the additive-group level** (an `AddMonoidHom` mentions no `Module ℤ` instance, so the instance diamond of the linear spellings does not arise): `mapCycles_eq_kerIncl` (the image of the cycles under the tensored kernel cover is the kernel of the tensored kernel inclusion, the surjectivity half, by `LinearMap.ker_comp` and `Submodule.map_comap_eq_self`), `psiAdd`/`psiAdd_surjective`/`psiAdd_ker` (the ψ-map, its surjectivity, and its kernel as the additive view of the boundaries), `psiAddQuotientEquiv`/`boundariesQuotientEquiv` (the third isomorphism, additive form: the additive quotient of the cycles by the kernel of ψ is the kernel of the tensored kernel inclusion, transported along `psiAdd_ker` with `QuotientAddGroup.quotientAddEquivOfEq`). **The promotion lemma of #138:** `addEquiv_intLinearEquiv` — an additive equivalence `M ≃+ N` is a ℤ-linear equivalence `M ≃ₗ[ℤ] N` for **any** two `Module ℤ` instances on the carriers (every `Module ℤ` structure agrees with `zsmul` by `int_smul_eq_zsmul`, and an additive homomorphism preserves `zsmul` by `AddMonoidHom.map_zsmul`); the two instances are the lemma's explicit instance arguments, so that no instance is synthesized on the carrier at the application site. **Its use, the homology equivalence of #138:** `homologyEquiv` — the carrier of the homology of the tensored splice is the kernel of the tensored kernel inclusion, as a ℤ-linear equivalence, the promotion of the additive composite `boundariesQuotientEquiv` under the instance `H.isModule` on the left carrier (the right carries `AddCommGroup.toIntModule`, which is what the `≃ₗ[ℤ]` notation synthesizes there). **The dimension-shift bridge of #139:** `torOneIsoKerIncl` — `Tor₁(A, B) ≅ ker(ι ⊗ B)` — the composite of `torOneIsoTensorSplice`, Mathlib's `HomologicalComplex.homologyIsoSc'` (with the `ComplexShape.prev_eq'`/`next_eq'` side conditions of the down shape), `ShortComplex.moduleCatHomologyIso`, and the ℤ-linear homology equivalence above, packaged as an isomorphism in `ModuleCat ℤ` by `LinearEquiv.toModuleIso`. Axioms `propext, Classical.choice, Quot.sound`, no `sorryAx`. | part |
 | <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorFreeResolution.lean> | `E-HAT-3.A-6`, `E-HAT-3.A-2` | **The two-term free resolution, and `Tor₁` as the kernel of its tensored differential.** The syzygy of a finite free presentation is finitely generated, torsion-free, free and projective (`syzygy_finite`, `syzygy_torsionFree`, `syzygy_free`, `syzygy_projective`); the complex `0 → K → ℤⁿ → 0` is `twoTermComplex` (`twoTermComplex_isZero_X` for every degree `≥ 2`, `twoTermComplex_projective` degreewise), its augmentation onto `single₀ A` is `twoTermPi`, and that augmentation is a quasi-isomorphism — degree zero by `ShortComplex.quasiIso_iff_of_zeros'` from `ModuleCat.isColimitCokernelCofork` (`quasiIsoAt_twoTermPi_zero`, resting on `coker_subtype_iso`), every positive degree by `quasiIsoAt_twoTermPi_of_pos` — so `twoTermProjectiveResolution` is a genuine `ProjectiveResolution`, and `torOne_iso_kernel` gives `Tor₁(A,B) ≅ kernel ((tensorLeft B).map (d 1 0))`. Above that, `isZero_torOne_of_projective` holds that `Tor₁` of a projective module vanishes, hence `isZero_torOne_of_finite_torsionFree`: the finitely generated case of "torsion-free implies `Tor₁(A,B) = 0`", at the derived functor, for every `B` at once. The cyclic stage's syzygy is identified with `ℤ` (`cyclicPresentation`, `syzygyEquiv`); its transport to `B[n]` is **not** proved, and the section docstring records the coercion-shape reason. Axioms `propext, Classical.choice, Quot.sound`, no `sorryAx`. | part |
 | <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/ColimitTensor.lean> | `E-HAT-3.A-6`, `E-HAT-3.A-2` | Exercise 4 of §3.A, the `⊗` half, completely: `tensorLeft_preserves_colimits` (for `B : ModuleCat ℤ`, `tensorLeft B` preserves colimits, Mathlib's instance `instPreservesColimitsTensorLeft`) and `tensorLeft_colim_iso`, the comparison `B ⊗ colim F ≅ colim (B ⊗ F ·)` for any `F : J ⥤ ModuleCat ℤ` with `HasColimitsOfShape J (ModuleCat ℤ)`, built from `PreservesColimit.preserves` (which yields `Nonempty (IsColimit _)`, extracted with `Classical.choice`) and `IsColimit.coconePointUniqueUpToIso`. Axioms: propext, Classical.choice, Quot.sound. **Not** certified: the `Tor` half. | part |
-| <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorTorsionClass.lean> | `E-HAT-3.A-6` | **`Tor` of a torsion module is torsion, by the torsion-class route instead of a free resolution.** `prop_homology` (a property closed under subobjects and quotients passes from a complex term to its homology in the same degree) and `prop_leftDerived_obj` (if an additive functor sends projectives into such a class, every left derived functor does) are proved for a general abelian setting; `AddCommGrpCat.isTorsion` is the class of torsion abelian groups with its `IsClosedUnderSubobjects` and `IsClosedUnderQuotients` instances; `isAddTorsion_tensorProduct_left` (tensoring a torsion monoid is torsion, no flatness, no finite generation); and `isAddTorsion_Tor_left`: for `M`, `N` in `ModuleCat R` over **any** commutative ring, `IsAddTorsion M → IsAddTorsion (((Tor (ModuleCat R) n).obj M).obj N)`, with the `ℤ` form `isAddTorsion_tor_int`. Axioms `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`; `exit 0`. **Provenance:** this is a **port**, not new mathematics — the four lemmas are copied from the Tau Ceti project at commit `67e852853c5192ec69775bb7ef417fc199e4190e` (Apache-2.0), see section 7. **No node obligation attaches to this file**: `Tor(A,B)` is torsion is not a corrected claim, so `certify-card-corrections` does not reach it, and the card is discharged by citing the upstream theorem with its hypotheses (§7c). It is kept as a supplement, not as a card requirement. **What it does not cover:** the card's statement is about **all** `A`, and this file proves the case where `A` is torsion — the reduction `Tor(A,B) ≅ Tor(T(A),B)` is §7b's named residual; the second half of the card (an element of order `n` in `Tor(A,B)` iff in both `A` and `B`), which no located formalization proves; and it says nothing about `Tor'`, the other orientation. It does not need — and does not supply — Hatcher's Lemma 3A.2 or a finite-stage witness, because the left-derived-functor definition of `Tor` is already resolution-independent. | part |
+| <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorTorsionClass.lean> | `E-HAT-3.A-6` | **`Tor` of a torsion module is torsion, by the torsion-class route instead of a free resolution.** `prop_homology` (a property closed under subobjects and quotients passes from a complex term to its homology in the same degree) and `prop_leftDerived_obj` (if an additive functor sends projectives into such a class, every left derived functor does) are proved for a general abelian setting; `AddCommGrpCat.isTorsion` is the class of torsion abelian groups with its `IsClosedUnderSubobjects` and `IsClosedUnderQuotients` instances; `isAddTorsion_tensorProduct_left` (tensoring a torsion monoid is torsion, no flatness, no finite generation); and `isAddTorsion_Tor_left`: for `M`, `N` in `ModuleCat R` over **any** commutative ring, `IsAddTorsion M → IsAddTorsion (((Tor (ModuleCat R) n).obj M).obj N)`, with the `ℤ` form `isAddTorsion_tor_int`. Axioms `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`; `exit 0`. **Provenance:** this is a **port**, not new mathematics — the four lemmas are copied from the Tau Ceti project at commit `67e852853c5192ec69775bb7ef417fc199e4190e` (Apache-2.0), see section 7. **No node obligation attaches to this file**: `Tor(A,B)` is torsion is not a corrected claim, so `certify-card-corrections` does not reach it, and the card is discharged by citing the upstream theorem with its hypotheses (§7c). It is kept as a supplement, not as a card requirement. **What it does not cover:** the card's statement is about **all** `A`, and this file proves the case where `A` is torsion — the reduction `Tor(A,B) ≅ Tor(T(A),B)` is §7b's named residual; the second half of the card (an element of order `n` in `Tor(A,B)` iff in both `A` and `B`), which `TorExercise3A6.torOne_exists_addOrderOf_iff` proves for every `n > 0` at the presentation of section 5b rather than here; and it says nothing about `Tor'`, the other orientation. It does not need — and does not supply — Hatcher's Lemma 3A.2 or a finite-stage witness, because the left-derived-functor definition of `Tor` is already resolution-independent. | part |
 
-| <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/DeltaSimplexChains.lean> | `E-HAT-2.2-16` | **The card's own Δ-complex chain model of `Δ^n`, certified end to end, including the boxed skeleton claim.** The `i`-chains are the free abelian group on the `(i+1)`-element vertex subsets (`Simplices`, `chains`, `gen_c`), the boundary is the alternating sum over ordered deletions (`boundary`, with `pos_of` the deletion position), the augmentation reads off the coefficient sum (`aug`), and the file proves: `finrank_chains` ($\operatorname{rank} C_i = \binom{n+1}{i+1}$, the count of $(i+1)$-element subsets); `aug_comp_boundary` and `boundary_comp_boundary` ($\varepsilon\partial_1 = 0$, $\partial_i\partial_{i+1} = 0$, so the augmented complex is a complex); the cone contraction $h_i(s) = (-1)^i \cdot (0$ if $n \in s$, else $s \cup \{n\})$ — `homotopy_succ`, `homotopy_zero`, `aug_h_minus` give $(\partial h + h\partial)(x) = -x$ degree by degree — and hence the exactness of the augmented complex `exact_zero`, `exact_succ`, `cycles_aug_eq_boundaries`; and the rank induction $\operatorname{rank} B_i = \operatorname{rank} Z_i = \binom{n}{i+1}$ by rank-nullity over $\ZZ$ with Pascal's identity `finrank_boundaries`, `finrank_cycles_aug` (the base case is the augmentation's range $\ZZ$, `aug_surjective` and `finrank_range_add_finrank_ker`; the step is the kernel of `boundary` read through `exact_succ`). **The skeleton section is the card's boxed claim, and it uses the agreement, not a second complex:** the skeleton is the truncation of the model — its chain groups are the simplex's in degrees `i ≤ k` and trivial above (`skCycles`, `skBoundaries`) — so `skCycles_eq` and `skBoundaries_eq` record the agreement with the simplex's groups, `sk_cycles_aug_eq_sk_boundaries` and `subsingleton_sk_homology` give $\widetilde H_i((\Delta^n)^k) = 0$ for `i < k` (below degree `k` the skeleton's cycles and boundaries are the simplex's, and the simplex's augmented complex is exact), and `skBoundaries_top`, `skCycles_top`, `skHomologyTopIso` and `sk_homology_top_basis` give $\widetilde H_k((\Delta^n)^k)$ free of rank $\binom{n}{k+1}$: there are no `(k+1)`-chains in the skeleton, so the top homology *is* the simplex's `k`-cycles, a subgroup of the free abelian group on the `k`-simplices, free over $\ZZ$ by `Submodule.basisOfPid` (the structure theorem for submodules of a finite free module over a PID) with rank `finrank_cycles_aug`. Axioms `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`. **What it does not cover:** the passage from the chain model to the homology of the *space* $(\Delta^n)^k$ — that is the card's citation of Hatcher's Theorem 2.27 (p. 128), a category-3 identification, and stays a citation. The three files <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/SimplexChains.lean>, <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/ChainLevelSteps.lean> and <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/SkeletonHomology.lean> certify the same homological statements in Mathlib's alternating-face-map model; this file is the certificate of the model the card itself writes down. | the statement |
+| <https://github.com/dzackgarza/lean-categories/blob/5848f0f2f881ba032eb8bb69baa051300498ba6b/LeanCategories/Homological/DeltaSimplexChains.lean> | `E-HAT-2.2-16` | **The card's own Δ-complex chain model of `Δ^n`, certified end to end, including the boxed skeleton claim.** The declaration is on lean-categories main, where every Lean declaration of this corpus lives — it moved there from `proofs/cards/` under lean-categories#141 — and the row links it at `5848f0f2`, the commit that pins Mathlib's master head `6d97e8ad`. The `i`-chains are the free abelian group on the `(i+1)`-element vertex subsets (`Simplices`, `chains`, `gen_c`), the boundary is the alternating sum over ordered deletions (`boundary`, with `pos_of` the deletion position), the augmentation reads off the coefficient sum (`aug`), and the file proves: `finrank_chains` ($\operatorname{rank} C_i = \binom{n+1}{i+1}$, the count of $(i+1)$-element subsets); `aug_comp_boundary` and `boundary_comp_boundary` ($\varepsilon\partial_1 = 0$, $\partial_i\partial_{i+1} = 0$, so the augmented complex is a complex); the cone contraction $h_i(s) = (-1)^i \cdot (0$ if $n \in s$, else $s \cup \{n\})$ — `homotopy_succ`, `homotopy_zero`, `aug_h_minus` give $(\partial h + h\partial)(x) = -x$ degree by degree — and hence the exactness of the augmented complex `exact_zero`, `exact_succ`, `cycles_aug_eq_boundaries`; and the rank induction $\operatorname{rank} B_i = \operatorname{rank} Z_i = \binom{n}{i+1}$ by rank-nullity over $\ZZ$ with Pascal's identity `finrank_boundaries`, `finrank_cycles_aug` (the base case is the augmentation's range $\ZZ$, `aug_surjective` and `finrank_range_add_finrank_ker`; the step is the kernel of `boundary` read through `exact_succ`). **The skeleton section is the card's boxed claim, and it uses the agreement, not a second complex:** the skeleton is the truncation of the model — its chain groups are the simplex's in degrees `i ≤ k` and trivial above (`skCycles`, `skBoundaries`) — so `skCycles_eq` and `skBoundaries_eq` record the agreement with the simplex's groups, `sk_cycles_aug_eq_sk_boundaries` and `subsingleton_sk_homology` give $\widetilde H_i((\Delta^n)^k) = 0$ for `i < k` (below degree `k` the skeleton's cycles and boundaries are the simplex's, and the simplex's augmented complex is exact), and `skBoundaries_top`, `skCycles_top`, `skHomologyTopIso` and `sk_homology_top_basis` give $\widetilde H_k((\Delta^n)^k)$ free of rank $\binom{n}{k+1}$: there are no `(k+1)`-chains in the skeleton, so the top homology *is* the simplex's `k`-cycles, a subgroup of the free abelian group on the `k`-simplices, free over $\ZZ$ by `Submodule.basisOfPid` (the structure theorem for submodules of a finite free module over a PID) with rank `finrank_cycles_aug`. Axioms `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`. **Scope, and the source boundary:** this proves the card's statement in the card's own chain model — the ranks of the chain, cycle and boundary groups, and both halves of the boxed claim, `subsingleton_sk_homology` for $i<k$ and `sk_homology_top_basis` in degree $k$ — which is what the row's `Covers` cell records. **What it does not cover:** the passage from the chain model to the homology of the *space* $(\Delta^n)^k$; that is the card's citation of Hatcher's Theorem 2.27 (p. 128), a category-3 identification, and stays a citation. The three files <https://github.com/dzackgarza/lean-categories/blob/5848f0f2f881ba032eb8bb69baa051300498ba6b/LeanCategories/Homological/SimplexChains.lean>, <https://github.com/dzackgarza/lean-categories/blob/5848f0f2f881ba032eb8bb69baa051300498ba6b/LeanCategories/Homological/ChainLevelSteps.lean> and <https://github.com/dzackgarza/lean-categories/blob/5848f0f2f881ba032eb8bb69baa051300498ba6b/LeanCategories/Homological/SkeletonHomology.lean> certify the same homological statements in Mathlib's alternating-face-map model, at the same commit; this file is the certificate of the model the card itself writes down. | the statement |
 
 ## 2. Exact finite computations: Sage chain complexes, GAP groups
 
@@ -108,6 +110,16 @@ state, after <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs
 
 Every entry is a finite check of the chain-level statement for the listed parameters. None
 of them is a statement about a space, and none settles the corresponding uniform claim.
+
+Its certificate is <https://github.com/dzackgarza/new-qual-site/blob/d4122f28c509b86fb8f1ad5e9c80e7b72ccbae75/proofs/cards/V49FiveSquaresTuples.sage>, a
+symbolic rather than a finite check, run on the same Sage development image (11.0.beta5, Python
+3.14.10, source HEAD `6301b4e43e`); <https://github.com/dzackgarza/new-qual-site/blob/d4122f28c509b86fb8f1ad5e9c80e7b72ccbae75/proofs/cards/V49FiveSquaresTuples.out> is
+its recorded output, which keeps each earlier revision's runs beside the current one and records
+every run set's script sha256:
+
+| Card | What is checked exactly | Range | Certificate | Covers |
+| --- | --- | --- | --- | --- |
+| `P-AGH549MINGENUS` | the arithmetic at $r=2$ of one hypothesis of Gruson--Peskine Proposition 2.1 (printed p. 407) and Theorem 2.5 (printed p. 409), and **not** either statement: the six listed tuples' exact integer squared sums — $4,12,20$ for $(2,0,0,0,0)$, $(2,2,2,0,0)$, $(2,2,2,2,2)$ and $0,8,16$ for $(0,0,0,0,0)$, $(2,2,0,0,0)$, $(2,2,2,2,0)$ — each of one parity with $\abs{x_i}\le2$; the polynomial identity $\sum x_i^2=8(F_d(2)-g)$ with $F_d(2)=(d-1)/2$, at the genus listed for each row, over $\QQ[m]$ with $d=2m$ and $d=2m+1$; that $(d-1-j)/2$ lies in $\ZZ[m]$ exactly for odd $j$ when $d=2m$ and even $j$ when $d=2m+1$, the rows' sums being the corresponding $4j$ — an arithmetic statement about those integers, not a classification of the tuples a curve can carry; that the representative odd tuple $(1,1,1,1,1)$ has squared sum $5$ and $8F_d(2)=4(d-1)$ is divisible by $4$ while $5$ is not — two divisibility facts, not an enumeration of the odd tuples; and the corrected $8$ against $16$: $(2,2,0,0,0)$ equals $8(F_d(2)-g)$ at $(d-3)/2$ and not at $(d-5)/2$, while $16$ is the value at $(d-5)/2$ and the squared sum of $(2,2,2,2,0)$. **Not** certified, and untouched by the computation: that a smooth connected curve of the stated degree and genus exists on a smooth cubic surface, its smoothness, connectedness or irreducibility, either statement as a whole with its hypotheses ($\CC$ and $g>0$, $0\le r\le2d/3$, the window $F_d(r-1)<g\le F_d(r)$, $g\le1+d(d-3)/6$, $r$ the least such integer, the three printed triples $(9,1,2)$, $(23,22,4)$, $(27,28,4)$), the minimum-genus bound of Exercise V.4.9 and the closedness of its range, and the attribution $r(\OO_S(C))=2$; this row closes neither [#111](https://github.com/dzackgarza/new-qual-site/issues/111) nor [#121](https://github.com/dzackgarza/new-qual-site/issues/121). | every degree of both families; no degree is sampled | <https://github.com/dzackgarza/new-qual-site/blob/d4122f28c509b86fb8f1ad5e9c80e7b72ccbae75/proofs/cards/V49FiveSquaresTuples.sage> | part |
 
 ## 3. The topological identification (cited, hypotheses verified)
 
@@ -207,260 +219,89 @@ vanishes. The proof applies the maintained
 as the surjection, exactness from `Submodule.mkQ_apply` and `LinearMap.mem_range`) and moves from
 `lTensor` to the `rTensor` factor order by `LinearMap.lTensor_inj_iff_rTensor_inj`. Axioms
 `propext`, `Classical.choice`, `Quot.sound`. This settles the vanishing direction of `E-HAT-3.A-2`
-for a genuine free resolution, which is what the cards need; the identification
-`Tor 1 A B ≅ ker (f.rTensor B)` for an arbitrary two-term resolution remains the open item, with
-`ProjectiveResolution.isoLeftDerivedObj` as the maintained bridge.
+for a genuine free resolution, which is one route to it; the identification
+`Tor 1 A B ≅ ker (f.rTensor B)`, which this route stops short of, is closed for every surjection from
+a free module — hence for every abelian group `A` — by
+`TorExercise3A6.torOneTorKernelAddEquiv`, and section 5b records how.
 
 ## 5. Outstanding obligations
 
-Repairs made to a stored proof whose mathematical content no file here certifies. Each is a
-claim of the form "this argument proves the stored statement", and none may be reported as
-settled until a file here covers it:
+**None.** Every entry this section has carried is withdrawn below, each into a certificate that
+settles the claim without the step it named, and the route each certificate takes is recorded in
+section 5b. Nothing here is a repair awaiting a certificate.
 
-- `E-HAT-3.A-6` and `E-HAT-3.A-2`, the filtered-colimit passage (Exercise 4 of §3.A). The
-  `⊗` half is closed: `ColimitTensor.tensorLeft_colim_iso` gives `B ⊗ colim F ≅ colim (B ⊗ F ·)`,
-  built from `PreservesColimit.preserves` with `PreservesColimits (tensorLeft B)` obtained
-  explicitly from `ModuleCat.monoidalCategory` and `ModuleCat.monoidalClosed`. The `Tor` half
-  is now reduced to two things, both recorded in section 5b: the choice of the stages among
-  the direct summands of `F`, and Hatcher's Lemma 3A.2 (presentation-independence), which is a
-  citation on top and is not formalized.
-- `E-HAT-3.A-2`: the restored direction "torsion-free implies $\operatorname{Tor}(A,B)=0$
-  for all $B$". The **finitely generated case is now proved**, and not by citation:
-  <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorFreeResolution.lean>'s `isZero_torOne_of_finite_torsionFree` states
-  `IsZero (Tor₁(A,B))` for `Module.Finite ℤ A` and `Module.IsTorsionFree ℤ A`, at the derived
-  functor and for every `B` at once, with no presentation chosen. The route is
-  finitely generated torsion-free ⟹ free (`Module.free_of_finite_type_torsion_free'`) ⟹ projective
-  (`Module.Projective.of_free`, `ModuleCat.projective_of_category_module_projective`) ⟹
-  `isZero_torOne_of_projective`, which is Mathlib's
-  `Functor.isZero_leftDerived_obj_projective_succ` applied to `tensorLeft B`: projective objects have
-  no higher left derived functor. Axioms `propext, Classical.choice, Quot.sound`.
-  What remains for **arbitrary** `A` is one named statement and nothing else: that
-  $\operatorname{Tor}$ commutes with the filtered colimit of the finitely generated subgroups
-  (<https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorReductions.lean>'s presentation-level ingredients — a finitely generated torsion-free
-  $\ZZ$-module is free, `free_of_finite_torsionFree`, and the presentation-level
-  $\operatorname{Tor}$ of a free presentation vanishes, `torKernel_eq_bot_of_subsingleton` — do not
-  reach past the finitely generated case). This is exercise 4 of the same section, and it is absent
-  at the pin rather than merely unnamed: `CategoryTheory/Abelian/LeftDerived.lean` contains no
-  filtered-colimit result at all (its only occurrence of "colimit" is the docstring at line 36 about
-  right exactness), so nothing there commutes a left derived functor with a filtered colimit, and
-  `CategoryTheory/Monoidal/Tor.lean` supplies no comparison either.
-## 5b. The two card applications that stay open, and why
+The form an entry takes, so that a new one is written the same way, is a repair made to a stored
+proof whose mathematical content no file here certifies: a claim of the form "this argument proves
+the stored statement", which may not be reported as settled until a file here covers it.
 
-These are the applications that the group lemmas do not reach. They are stated here with the
-obstruction named, so that neither is closed by a name check against the pinned source: each
-requires a construction, not a citation.
+~~`E-HAT-3.A-6` and `E-HAT-3.A-2`, the filtered-colimit passage (Exercise 4 of §3.A)~~ —
+  **withdrawn: both cards are certified without it, for every abelian group `A`.** The certificates
+  take the presentation `π : (A →₀ ℤ) → A`, whose middle term is free on the whole group `A`, so
+  neither a filtered colimit nor a descent through the finitely generated subgroups is on the route:
+  `TorExercise3A6.torOneTorKernelAddEquiv` is the identification of `Tor₁(A, B)` with the kernel of
+  the right-tensored syzygy inclusion for *any* such `π`, and that kernel is killed by a product of
+  Smith-normal-form diagonal entries (`exists_fg_stage`, `exists_nsmul_eq_zero_of_stage`,
+  `nsmul_eq_zero_of_nsmul_map_eq_zero`). The `⊗` half recorded here still stands —
+  `ColimitTensor.tensorLeft_colim_iso` gives `B ⊗ colim F ≅ colim (B ⊗ F ·)` — and is simply no
+  longer needed (§1's rows).
 
-- **the resolution bridge is split, and only half is closed.** <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorBridge.lean> proves
-  `torOneIsoHomology`: for every abelian group `A`, `B` and **every** projective resolution `P` of
-  `A`, `Tor₁(A,B) = ((tensorLeft B).leftDerived 1).obj A ≅ H₁(P.complex ⊗ B)`, by
-  `ProjectiveResolution.isoLeftDerivedObj` applied to `tensorLeft B` at degree one — the
-  derived-functor half, unconditional in the resolution. **The two-term step is now closed:** 
-  `homologyOneIsoKernelOfD` (`K.d 2 1 = 0`) and `homologyOneIsoKernel` (`IsZero (K.X 2)`) identify
-  that homology with `kernel (K.d 1 0)` via `HomologicalComplex.homologyIsoSc'` and
-  `ShortComplex.LeftHomologyData.ofHasKernel` (whose homology object is definitionally the kernel),
-  `tensor_d_two_one_eq_zero` supplies the vanishing differential from the shape by `eq_of_src`, and
-  `torOneIsoKernel` composes: `Tor₁(A,B) ≅ kernel ((resolutionTensor B P).d 1 0)` with `P` a
-  projective resolution and `IsZero (P.complex.X 2)` the only extra hypothesis. The map-level check is
-  `resolutionTensor_d` — the tensored differential *is* `(tensorLeft B).map` of the resolution's
-  differential. **The orientation glue is proved:** `ker_rTensor_eq_comap_ker_lTensor` states exactly
-  `ker (f.rTensor N) = (ker (f.lTensor N)).comap (TensorProduct.comm ℤ M N)`, by
-  `LinearMap.lTensor_comm` — not by an assumed equality — and `tensor_d_hom_eq_lTensor` identifies the
-  tensored complex's differential map with `(P.complex.d 1 0).hom.lTensor ↥B` on the `ModuleCat` side.
-  **The instance diamond is resolved at the boundary:** `kerModule` pins the kernel's `ℤ`-module
-  structure (`letI := f.hom.ker.module`) and `kernelIsoKerModule` is `ModuleCat.kernelIsoKer` stated
-  over that pinned module, so the categorical kernel and the linear-map kernel are identified without a
-  diamond. **The symmetry on the kernels is now a map-level equivalence at an explicitly ascribed boundary:**
-  in a section whose tensor products carry `TensorProduct.instModule` built from the given structures —
-  `tensorMod`, `tensorModPN`, `tensorModNM`, `tensorModNP`, declared as inherited local instances —
-  `kerCommEquiv` gives `ker (f.rTensor N) ≃ₗ ker (f.lTensor N)` with `comm` and `comm.symm` as its two
-  maps and both inverse identities checked, and the orientation equality is restated under those same
-  instances (`ker_rTensor_eq_comap_ker_lTensor'`), which is what the earlier attempts lacked: the lemma
-  and the maps now mention *one* tensor module structure. The remaining mismatch is one level further
-  in, on the kernel subtypes: `ModuleCat.ofHom (e : p ≃ₗ q)` synthesizes
-  `AddCommGroup.toIntModule ↥p` where `ModuleCat.of` (via `submoduleModule`, which pins `p.module`)
-  infers `p.module`, with the compiler reporting
-  "'synthesized type class instance is not definitionally equal to expression inferred by typing rules'
-  — synthesized `AddCommGroup.toIntModule ↥p`, inferred `p.module`". Pinning the subtype structures the
-  same way is what the earlier passes tried and did not settle.
-  **The packaging step is now proved, and it is closed by not going through subtypes at all.**
-  `TorBridge.torOneIsoTorKernel` composes `torOneIsoKernel` with `kernel.mapIso` transported across
-  the tensor symmetry, and names `torOne A B ≅ Limits.kernel (diffRight P)`: the kernel of the
-  **right-tensored** differential `X₁ ⊗ B → X₀ ⊗ B`, which is what the presentation-level
-  `torKernel f` of <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorReductions.lean> is. Every object in that statement is a *bundled*
-  `ModuleCat ℤ`, so no submodule module structure is synthesized anywhere in it; the ambient tensor
-  instances are ascribed in the section, so both sides of the two `comm` isomorphisms mention the same
-  one; and the commuting square `kernel.mapIso` asks for is `LinearMap.lTensor_comm` and nothing else
-  (`diff_square`). Axioms `propext, Classical.choice, Quot.sound`; no `sorryAx`, on the pinned
-  baseline. The subtype route through `kerCommEquiv` stays in the file and stays correct — it is
-  simply no longer needed for the composition, and its two instance diamonds (on the kernel subtype
-  and on the ambient tensor) are recorded above as what the bundling avoids.
+~~`E-HAT-3.A-2`: the restored direction "torsion-free implies $\operatorname{Tor}(A,B)=0$ for all
+  $B$"~~ — **withdrawn: proved for arbitrary `A`.**
+  `TorExercise3A2.isTorsionFree_iff_forall_subsingleton_torOne` is the full biconditional at
+  `TorBridge.torOne` for every abelian group `A`: forward, a torsion-free `ℤ`-module is flat, so the
+  syzygy inclusion stays injective after tensoring with `B`
+  (`TorReductions.rTensor_injective_of_flat_cokernel`) and `Tor₁(A, B)` is trivial; backward,
+  `B = ℚ/ℤ` and the first statement. The finitely generated half recorded here
+  (`isZero_torOne_of_finite_torsionFree`) stands and is no longer the end of the argument.
 
-  Hatcher's Lemma 3A.2 as the cards use it is the *unrestricted* application: it needs that kernel
-  step **together with** the finite-stage descent already proved in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorStages.lean>
-  (`exists_stage_of_free`, `stageMap_injective`, the directed system). The flat-cokernel lemma
-  (`torKernel_eq_bot_of_flat_cokernel`) and the finite-stage lemmas are unchanged and still stand.
+With both entries withdrawn this section names no outstanding obligation of the two cards; the
+route each certificate takes is recorded in section 5b.
 
-  **The dimension-shift descent itself is now closed, for every `A`.** <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorArbitrary.lean>'s
-  `torOneIsoKerIncl` proves `Tor₁(A, B) ≅ ker(ι ⊗ B)` — Weibel, Exercise 2.4.3 — for **any**
-  epimorphism `f : P ⟶ A` from a projective and every abelian group `A`, with no hypothesis on
-  `A`: the third isomorphism is realised at the additive-group level (`psiAdd`, `psiAdd_ker`,
-  `boundariesQuotientEquiv`), promoted to a ℤ-linear equivalence by `addEquiv_intLinearEquiv`
-  (whose two `Module ℤ` instances are explicit, so no instance is synthesized on the carrier), and
-  the homology equivalence `homologyEquiv` carries the instance `H.isModule` on the left carrier —
-  the promotion the earlier linear spellings could not elaborate. The composite with
-  `torOneIsoTensorSplice`, `HomologicalComplex.homologyIsoSc'`,
-  `ShortComplex.moduleCatHomologyIso` and `LinearEquiv.toModuleIso` is the isomorphism in
-  `ModuleCat ℤ` that issue #139 asked for. What this closes is the descent of §5b's first half;
-  the finite-stage descent and the colimit passage below are untouched by it.
+## 5b. The card applications: what closed them
 
-- **both card applications are pending.** The lemmas `exists_fg_stage` and
-  `lTensor_subtype_injective_of_flat` are proved and useful, but they are not the implication
-  the cards need, and the record must not conflate the two.
+The applications the group lemmas did not reach, recorded with the obstruction each named so that
+none could be closed by a name check against the pinned source. All three are closed, and by a
+route that avoids every obstruction this section used to name.
 
-  `exists_fg_stage` holds `F` and `B` fixed and restricts only `K`: it produces a finitely
-  generated `P ≤ K` and a class `t ∈ P ⊗ B` mapping to `x` with `(f|_P ⊗ id_B) t = 0`. It does
-  **not** produce a finitely generated subgroup `A_α ≤ A = coker(f)` with a compatible
-  presentation, and the stage it does produce need not embed in `A`: with `f = id_ℤ`, `K = F = ℤ`
-  and `P = 2ℤ`, the stage's cokernel is `ℤ/2` while `A = coker(id_ℤ) = 0`. Nothing in the lemma
-  gives the class, order or transition maps the cards use.
+**The presentation bridge is closed, and it is not the projective-resolution route.**
+  <https://github.com/dzackgarza/lean-categories/blob/5848f0f2f881ba032eb8bb69baa051300498ba6b/LeanCategories/Homological/TorExercise3A6.lean>'s
+  `torOneTorKernelAddEquiv` states, for **every** abelian group `A`, every **surjection**
+  `π : F →ₗ[ℤ] A` from a free `F` and every abelian group `B`,
 
-  `lTensor_subtype_injective_of_flat` gives injectivity *given* a submodule `B' ≤ B`; it does
-  not produce a finitely generated `B'` and does not lift an element.
+  `Tor₁(A, B) ≃+ ker ((ker π).subtype.rTensor B : ker π ⊗ B → F ⊗ B)`,
 
-  The stage construction of <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorStages.lean> is that second route, and it is now
-  complete. For `A = coker(f)` and `F_α ⊆ F` finitely generated and a *direct summand*,
-  `K_α = K ∩ f^{-1}(F_α)` presents `A_α ≅ F_α/(F_α ∩ f(K))` by `K_α → F_α`, the inclusion
-  `A_α ↪ A` is injective (`stageMap_injective`), the transition maps commute with the maps
-  into `A` (`stageMap_comp_stageIncl`), and — `exists_stage_of_free` — every element of
-  `torKernel f` is carried by one such stage and already vanishes there.
+  `Tor₁` being `TorBridge.torOne`, the left derived functor of `tensorLeft B`. Nothing is assumed of
+  `ker π`: it need not be free, finitely generated or projective, so the upstream gap recorded in the
+  provider requests below ("every subgroup of a free abelian group is free") is not on this route and
+  no resolution of an arbitrary `A` is built. The map is
+  `TorArbitrary.torOneIsoKerIncl`'s dimension-shift isomorphism (Weibel, *An Introduction to
+  Homological Algebra*, Exercise 2.4.3) transported to the presentation-level kernel through
+  `HomologicalComplex.homologyIsoSc'` and `ModuleCat.kernelIsoKer`.
 
-  The one subtlety, and it is not the flatness step one would first try: vanishing in
-  `F ⊗ B` descends to `F_α ⊗ B` only when `F_α` is a direct summand of `F`. It is false for a
-  general submodule, and `TorStages.rTensor_subtype_not_injective` certifies the failure with
-  `F = ℤ`, `F_α = 2ℤ`, `B = ℤ/2`: `2ℤ ⊗ ℤ/2 → ℤ ⊗ ℤ/2` kills the nonzero generator `2 ⊗ 1`,
-  even though `F` is free. `TorStages.rTensor_subtype_injective_of_retraction` is the right
-  hypothesis, and for a free `F` the summands are produced from finite sets of basis vectors
-  (`coordSpan`, `coordRetract`, `exists_fg_summand`).
+**The descent, the torsion statement and the order statement are closed at the stage, not at a
+  colimit.** `exists_fg_stage` carries a vanishing class to a finitely generated direct summand `F'`
+  of the free middle term (`TorStages.exists_stage_of_free`), and `exists_nsmul_eq_zero_of_stage`
+  puts that stage's relation submodule into Smith normal form (`Submodule.smithNormalForm`); the
+  diagonal entries' product then kills every element of the stage's kernel, and
+  `nsmul_eq_zero_of_nsmul_map_eq_zero` transports the killing integer back along the bridge. That is
+  `isAddTorsion_torOne`: `Tor₁(A, B)` is a torsion group for all `A` and `B`. The order statement is
+  `torOne_exists_addOrderOf_iff` for every positive `n`, assembled from the prime-power core
+  `torOne_prime_pow_iff`: its forward half `exists_addOrderOf_of_torOne` reads `p ^ k` off an
+  elementary divisor of the stage, and its backward half `exists_torOne_of_addOrderOf` uses that the
+  cyclic subgroup `ℤ z` generated by the syzygy element is **pure** in `ker (pres A)` — so the
+  quotient is torsion-free, hence flat, and `ℤ z ⊗ B → ker (pres A) ⊗ B` is injective — giving an
+  element of `Tor₁(A, B)` of order `p ^ k` from elements of that order in `A` and in `B`.
 
-  What stays open for the two cards is therefore no longer the colimit passage, and it is no longer
-  the identification of a presentation-level `Tor` with `\\operatorname{Tor}(A,B)` either: as section
-  5b's resolution bullet now records, that identification is `ProjectiveResolution.isoLeftDerivedObj`
-  applied to a resolution the file builds, so it holds for a two-term free resolution of a finitely
-  generated `A`. Two things remain, and neither is discharged by a citation.
-  - **The torsion-free case of `E-HAT-3.A-2` is proved at the level of the derived functor and for
-    every `B`**: <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorFreeResolution.lean>'s `isZero_torOne_of_finite_torsionFree`, through
-    `isZero_torOne_of_projective` and Mathlib's projective-vanishing of higher left derived functors.
-    No resolution and no presentation is chosen there.
-  - **The torsion statement for a finitely generated stage is still open.** It needs the structure
-    theorem applied to the stage plus additivity of `Tor` in its first argument; what the file supplies
-    is the projective-vanishing end of that, not the decomposition. For the cyclic stage the syzygy
-    half is proved — `cyclicPresentation`, its surjectivity, the divisibility characterising its
-    syzygy, and `syzygyEquiv` identifying that syzygy with `ℤ` — while the transport of
-    `kernel ((resolutionTensor B (cyclicResolution n)).d 1 0)` to `kernel (mulByIntEndo B n)` is not.
-    The blocker is isolated in the file's section docstring as five facts checked in the pinned
-    elaborator: the left-tensored objects are not definitionally the tensor of `X j` with `B` (`rfl`
-    fails on both `j`), so the square must be stated on right-tensored objects; an element of `X 1`
-    does not coerce to `Fin 1 → ℤ` by ascription even though the carriers are `rfl`-equal, so a
-    `cycSyzygy`-style transport comes first; `TensorProduct.congr_tmul` then fails to match
-    syntactically and `erw` exceeds the default 200000-heartbeat budget; `ModuleCat.Hom.hom` versus
-    `ConcreteCategory.hom` blocks `ModuleCat.comp_apply`; and the closed scalar equation is not `rfl`
-    because its two sides carry `DistribMulAction.toDistribSMul.toSMul` and `ZSMul.toSMul`, which
-    `Int.cast_smul_eq_zsmul` bridges. None of that is mathematics: the computation is
-    `n * (a / n) = a` for `n ∣ a`.
-  - **The passage from a stage to an arbitrary `A`** needs `Tor` to commute with the filtered colimit
-    of the finitely generated subgroups — exercise 4 of the same section — and that statement is
-    absent at the pin rather than merely unnamed: `CategoryTheory/Abelian/LeftDerived.lean` carries no
-    filtered-colimit result (its only "colimit" mention is the right-exactness docstring at line 36),
-    and `CategoryTheory/Monoidal/Tor.lean` provides no comparison. Until one of the two ends is
-    supplied, `E-HAT-3.A-6`'s torsion conclusion for arbitrary `A` rests on that exercise.
+**What the earlier record held open, and why none of it is needed.** The filtered-colimit passage
+  (Exercise 4), the construction of a free resolution of an arbitrary `A`, and Hatcher's Lemma 3A.2
+  as presentation-independence: none of the three is invoked by either certificate. The finitely
+  generated resolution <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorFreeResolution.lean>
+  remains a valid separate route to `IsZero (Tor₁(A, B))` for a finitely generated torsion-free `A`,
+  and is not a step of the arbitrary-`A` argument. Axioms for every declaration named above:
+  `propext`, `Classical.choice`, `Quot.sound`; no `sorryAx`; elaborated on Lean 4.36.0 at Mathlib
+  `6d97e8ad`, the head `lake-manifest.json` of lean-categories main pins.
 
-  The obstruction is not the structure theorem: that theorem is in Mathlib at the pinned
-  revision as `Module.equiv_free_prod_directSum` (a finitely generated module over a PID is
-  `(Fin n -> R) x (direct sum of R / R * (p i ^ e i))`), and it is not rebuilt here. Nor is the
-  obstruction the choice of an "arbitrary presentation" in the sense of a redundant generating
-  set for a resolution: what matters is whether the relation map *is* the one of a free
-  resolution. The presentation-level kernel is computed from `f : K -> F` and does not depend on
-  `A = coker f` alone: with `f = (u,v) |-> 2u` from `Z x Z` to `Z` and `B = Z` the cokernel is
-  `Z/2`, yet `(f (x) id) ((0,1) (x) 1) = 0` while `(0,1) (x) 1` is killed by no nonzero integer,
-  so the kernel is not torsion. That `f` is **not** injective (its kernel is `0 x Z`), so
-  `0 -> Z x Z -> Z -> Z/2 -> 0` is not exact and this example says nothing about Lemma 3A.2; it
-  says that the kernel of `f (x) id` is only `Tor` when `f` is the relation map of a free
-  resolution. The application therefore has to instantiate an **injective** `K -> F` coming from a
-  genuine free resolution of `A`, check the hypotheses the stage lemmas need (`F'` a finitely
-  generated direct summand, `P <= comap f F'` finitely generated, the class already vanishing at
-  the stage), and only then invoke 3A.2 and the structure theorem of the finite stage. Proved and
-  reusable for that: `map_torKernel_mulByInt` (the cyclic case), `map_prodLeft_torKernel`
-  (additivity over a binary sum), `stage_range_fg` and `stage_finite` (the stage is a finitely
-  generated subgroup and a finitely generated `Z`-module), `stageMap_injective`,
-  `stageMap_comp_stageIncl` with `stageIncl_refl`/`stageIncl_comp`, `exists_fg_summand` (a
-  finitely generated `P` lies in a finitely generated direct summand of a free `F`),
-  `rTensor_subtype_injective_of_retraction`, `exists_stage_witness_of_retraction` and
-  `exists_stage_of_free` (every class of `torKernel f` descends to such a stage).
-  Missing, and named as such: the free-resolution instantiation itself and Lemma 3A.2. The
-  example above is prose, not certified.
-
-  **What the free-resolution instantiation now reduces to, checked against the pin.** It cannot use
-  `ProjectiveResolution.of`: that construction is an infinite resolution, so `IsZero (P.complex.X 2)`
-  fails and `torOneIsoTorKernel` does not apply to it. A two-term resolution `0 → K → F → A → 0`
-  needs `K` projective, i.e. (over `ℤ`) free, and the resolution has to be built. Two facts decide
-  how far that reaches:
-  - For **finitely generated** `A` the presentation is `ℤⁿ → A`, the kernel `K ≤ ℤⁿ` is finitely
-    generated (a submodule of a finite free module over the Noetherian ring `ℤ`) and torsion-free,
-    so `K` is free by `Module.free_of_finite_type_torsion_free'` — note the prime in the name at
-    this pin; the unprimed form does not exist here. That is the case the card application needs,
-    since §5b's stages are finitely generated.
-  - For **arbitrary** `A` the corresponding statement is "every subgroup of a free abelian group is
-    free", and no such instance is present at `db584cd6`: a search for a `Module.Free` or `Projective`
-    instance on `↥(N)` for `N : Submodule ℤ (ι → ℤ)` with arbitrary `ι` returns only the lattice
-    case (`Algebra/Module/Lattice.lean:173`) and the finite-index Smith-normal-form lemmas
-    (`LinearAlgebra/FreeModule/Int.lean`). That is a named upstream gap, not a gap in this
-    directory's reasoning.
-  That split the work in two: build the two-term resolution in the finitely generated case and
-  instantiate `torOneIsoTorKernel` there, and leave the unrestricted statement on the upstream
-  lemma. The first half is now done.
-  **The instantiation is now delivered, for every `A` presented by `ℤⁿ`.** <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorFreeResolution.lean>
-  proves, for every `f : ℤⁿ → A`, that the syzygy `ker f` is finitely generated (`syzygy_finite`),
-  torsion-free (`syzygy_torsionFree`), free (`syzygy_free`) and hence projective
-  (`syzygy_projective`), and that `ℤⁿ` is projective (`free_projective`), together in
-  `presentation_projective`; it then builds the resolution itself. `twoTermComplex` is the complex
-  `0 → K → ℤⁿ → 0` (`ChainComplex.mk'` data, with `twoTermComplex_isZero_X` giving vanishing in every
-  degree `n ≥ 2` and `twoTermComplex_mono_d_one_zero` the injectivity of its first differential),
-  `twoTermPi` is the augmentation onto `single₀ A` (`ChainComplex.toSingle₀Equiv`), and the
-  augmentation is a quasi-isomorphism in two steps: above degree zero both sides have vanishing
-  homology (`twoTermComplex_homology_pos_isZero` against `single₀_homology_pos_isZero`, by
-  `IsZero.isIso`), and in degree zero — the one degree carrying homology — `F/K → A` is an
-  isomorphism, which is what `ShortComplex.quasiIso_iff_of_zeros'` asks for and is discharged by
-  `ModuleCat.isColimitCokernelCofork` on the exact pair `K ↪ F ->> A` (`quasiIsoAt_twoTermPi_zero`);
-  `coker_subtype_iso` is the cokernel identification it rests on, and `quasiIso_twoTermPi` is the
-  all-degrees statement. With the degreewise projectivity `twoTermComplex_projective`,
-  `twoTermProjectiveResolution` assembles these into a `ProjectiveResolution (ModuleCat.of ℤ A)`, and
-  `torOne_iso_kernel` applies the file's `torOneIsoKernel` to it:
-  `Tor₁(A,B) ≅ kernel ((tensorLeft B).map (d 1 0))` — the kernel of the tensored first differential
-  of a genuine free resolution, which is the presentation-level `torKernel` of
-  <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorReductions.lean>. Axioms `propext, Classical.choice, Quot.sound` for every declaration in
-  the file, no `sorryAx`, on the pinned baseline.
-
-  Two scoping remarks, so that the statement is not read as more than it is. It names the
-  **left**-tensored differential — `torOne` is `((tensorLeft B).leftDerived 1).obj A` and
-  `resolutionTensor` applies `tensorLeft B` — while `TorBridge.torOneIsoTorKernel` names the
-  right-tensored `diffRight P`; the two differ only by the tensor symmetry `TorBridge` already
-  transports, so neither statement loses content. And it is the derived-functor computation applied to
-  a *chosen* two-term resolution. Because `ProjectiveResolution.isoLeftDerivedObj` holds for every
-  projective resolution, applying `torOneIsoHomology` to two of them composes to an isomorphism
-  between their homologies: **resolution-independence for two-term free resolutions of a finitely
-  generated `A` is an instance of the API, not an extra theorem.** It is worth recording why: a
-  `ProjectiveResolution` at the pin is `CategoryTheory.Preadditive/Projective/Resolution.lean:41` —
-  a degreewise projective complex in degrees `≥ 0` with a quasi-isomorphic augmentation to
-  `single₀ Z` — which is exactly Hatcher's data for a free resolution, since a free module is
-  projective and exactness of the augmented sequence is that quasi-isomorphism. So the content of
-  Lemma 3A.2 for a resolution *in hand* is not an open mathematical step; what §5b's obstruction
-  really consists of is **producing** the resolution for a given presentation, which for arbitrary
-  `A` is the upstream gap recorded above ("every subgroup of a free abelian group is free"), and
-  whether the citation of 3A.2 is acceptable in place of that construction is a ruling for the
-  owner, not something this file decides. The obligation below is restated in those terms rather
-  than deleted.
-
-- ~~the simplex chain-model comparison for `E-HAT-2.2-16`: identifying the chains the card writes down
+~~the simplex chain-model comparison for `E-HAT-2.2-16`: identifying the chains the card writes down
   with the barycentric ones~~ — **withdrawn: the obligation it named is discharged.**
   <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/DeltaSimplexChains.lean> certifies the chains the card writes down — free abelian groups on
   the `(i+1)`-element vertex subsets — in their own model, end to end: acyclicity, the ranks, the
@@ -491,16 +332,18 @@ for a name.
    `Submodule.nonempty_basis_of_pid` and `Submodule.basisOfPid`
    (`LinearAlgebra/FreeModule/PID.lean:272`, `:295`) both carry `[Finite ι]`, and the only general
    `Module.Free`-on-a-submodule instance is the lattice case (`Algebra/Module/Lattice.lean:173`).
-   *Needed by:* the **unrestricted** form of Hatcher's Lemma 3A.2, where a free resolution of an
-   arbitrary `A` has to be built rather than assumed — not by the two-term resolution delivered here,
-   which needs the freeness only for a finitely generated `A`, supplied by the
-   principal-ideal-domain result.
+   *Needed by:* nothing in this directory any more. The two Tor cards take the presentation
+   `π : (A →₀ ℤ) → A`, whose middle term is free by construction, so neither a resolution of an
+   arbitrary `A` nor freeness of its kernel is required (section 5b); the finitely generated
+   two-term resolution needs the freeness only for a finitely generated `A`, supplied by the
+   principal-ideal-domain result. The absence is still true, and still the reason the unrestricted
+   Lemma 3A.2 has no formal counterpart.
 2. **`Tor` commutes with filtered colimits** (§3.A exercise 4): for a filtered diagram
    `A : J ⥤ ModuleCat ℤ`, `Tor₁(colim A, B) ≅ colim Tor₁(A ·, B)`. Absent in any formulation tried:
    `CategoryTheory/Abelian/LeftDerived.lean` carries no filtered-colimit result at all, and
-   `CategoryTheory/Monoidal/Tor.lean` supplies no comparison. *Needed by:* `E-HAT-3.A-6` and
-   `E-HAT-3.A-2` for arbitrary `A` — the only step of either that `isZero_torOne_of_finite_torsionFree`
-   and the stage lemmas do not reach.
+   `CategoryTheory/Monoidal/Tor.lean` supplies no comparison. *Needed by:* nothing in this directory
+   any more: both cards are certified for arbitrary `A` without a filtered-colimit statement, by the
+   stage argument of section 5b. The absence stands and is recorded here for whoever asks next.
 3. ~~**`SSet.B`**, the functor sending `X` to the nerve of its partially ordered type of nondegenerate
    simplices, **together with a natural transformation `sd ⟶ B`**~~ — **withdrawn.** The
    `E-HAT-2.2-16` identification it was wanted for is no longer an obligation:
@@ -538,6 +381,13 @@ and nothing is claimed as certified. No machine certificate exists for any of th
 
 A `solution-reviewed` note on a card records that the proof was read and what was checked;
 it is a review record, not a certificate.
+
+`solution-corrected` is the one event kind that records a correction of a card's
+mathematics, as against a citation, a layout or a statement restored to the print. Recording
+it obliges the card's certificate in the same change: `proofs/justfile`'s registry half
+checks that a row covers the statement, and the commit gate
+(`qualc.authoring`, `corrections_without_certificates`) refuses a staged change that records
+the event on a card no such row covers — so the correction cannot reach `main` without one.
 
 ## 7. Reuse audit: what the formalization corpus already owns
 
@@ -597,9 +447,12 @@ torsion case of `E-HAT-3.A-6`'s first claim — *a step, not the claim*: the car
 torsion for **all** `A`, and what is proved is the case where `A` is torsion. It carries **no node
 obligation**; §7c explains why, and what the card is actually discharged by.
 
-**What is genuinely missing, and whether it is scheduled work:**
+**What stood missing, and what stands there now:**
 
-- **The reduction `A ↦ T(A)` in the first claim of `E-HAT-3.A-6`. Not scheduled.** Over `ℤ` it
+- **The reduction `A ↦ T(A)` in the first claim of `E-HAT-3.A-6`. Not scheduled, and not on the
+  certificate's route.** `TorExercise3A6.isAddTorsion_torOne` proves the first claim for every `A`
+  without it, by the stage descent of section 5b, so no card obligation waits on this port; it
+  stays recorded because the categorical route below is the one that would need it. Over `ℤ` it
   needs `Tor_n(A,B) ≅ Tor_n(T(A),B)` for `n ≥ 1`, from `0 → T(A) → A → A/T(A) → 0` with `A/T(A)`
   torsion-free, hence flat. Two pieces, both already in the located source and neither ours:
   flat ⇒ `Tor`-acyclic (Tau Ceti `isZero_Tor_succ_of_flat`, itself `Functor.isZero_leftDerived_succ`
@@ -609,17 +462,25 @@ obligation**; §7c explains why, and what the card is actually discharged by.
   pin). It is a port of perhaps 150 lines rather than research, and it is the price of an
   *executable local* proof of a claim that is neither corrected nor required by a node — so it waits
   until a card needs `Tor`-acyclicity or the long exact sequence inside Lean for its own sake.
-- **The second half of `E-HAT-3.A-6`** (an element of order `n` in `Tor(A,B)` iff in both `A` and
-  `B`). No located source proves it. <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorTorsion.lean> certifies only its group-theoretic core.
-  It still needs `Tor(\ZZ/n, B) ≅ B[n]` — for which <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorReductions.lean> has the kernel
-  computation for one resolution, and the ported `torOneIsoKernel` would give it for any projective
-  presentation — and the primary decomposition of `\operatorname{Tor}`.
+- ~~**The second half of `E-HAT-3.A-6`** (an element of order `n` in `Tor(A,B)` iff in both `A` and
+  `B`)~~ — **closed: proved for every `n > 0`.** `TorExercise3A6.torOne_exists_addOrderOf_iff`
+  states the biconditional at `TorBridge.torOne` for all abelian groups `A` and `B`, at the
+  canonical presentation `π : (A →₀ ℤ) → A` that section 5b describes, assembled from the
+  prime-power core `torOne_prime_pow_iff`: forward from an elementary divisor of the stage
+  (`exists_addOrderOf_of_torOne`), backward from the purity of the syzygy's cyclic subgroup
+  (`exists_torOne_of_addOrderOf`). The two inputs the earlier record named as still needed are
+  inside that file rather than cited: `Tor(\ZZ/n, B) ≅ B[n]` through the presentation bridge
+  `torOneTorKernelAddEquiv`, and the primary decomposition through `torOne_prime_pow_iff`. No
+  located published source proves this half, so the proof is the declaration and not a
+  transcription; §1's
+  <https://github.com/dzackgarza/lean-categories/blob/5848f0f2f881ba032eb8bb69baa051300498ba6b/LeanCategories/Homological/TorExercise3A6.lean>
+  row is the one that covers the card's statement.
 - **The packaging step in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/TorBridge.lean>** (composing `torOneIsoKernel` with the orientation
   transport) is *not* card-specific. `ShortExact.torOneIsoKernel` upstream states the same
   isomorphism in a general monoidal abelian category, with naturality in both variables; the honest
-  route is to port that statement rather than to keep fighting the `ModuleCat ℤ` instance diamonds in
-  section 5b. Any repair attempted there should first ask whether the general statement makes the
-  special one unnecessary.
+  route is to port that statement rather than to keep fighting the `ModuleCat ℤ` instance diamonds
+  that section 1's `TorArbitrary.lean` row records. Any repair attempted there should first ask
+  whether the general statement makes the special one unnecessary.
 
 ### 7c. What these findings discharge, and what they do not oblige
 
@@ -664,23 +525,46 @@ special case of it.
 
 ## Checking
 
-The Lean certificates left this repository (issue #141): the `.lean` files, the lake
-project (`lakefile.toml`, `lake-manifest.json`, `lean-toolchain`) and the Lake lines of
-`.gitignore` are deleted, and each row of section 1 is now a link — the file at commit
-`16c09abaa4` of this repository until lean-categories#141 lands the declaration on
-`dzackgarza/lean-categories` main. `qualc check` follows each link and fails when the
-link's target does not exist; the files stay readable at `16c09abaa4` regardless.
+The proof-artifact entry point is `proofs/justfile`. Run it from the repository root:
 
-The elaboration baseline the lake project pinned while it lived here — Mathlib master
-`c9f80237cb8abbd41e5443d1ab83ec88d2a5f9ce` on `leanprover/lean4:v4.36.0-rc2`, fetched
-from the official cache with `lake update mathlib && lake exe cache get` — is recorded
-with the Toolchain history below.
+```
+just --justfile proofs/justfile check
+```
 
-The Sage check is unchanged; its entry point is the image's own (the image has no `sage` on
-`PATH`, so the command used is the one recorded in section 2, not a path invented here).
+It checks two things and elaborates nothing.
 
-`#print axioms` at the end of each file must show only `propext`, `Classical.choice` and
-`Quot.sound`; any appearance of `sorryAx` means the certificate is not a proof.
+- `registry` — `python -m qualc.proofs`, the registry check `qualc check` runs (a row naming a
+  card the corpus does not carry, a link whose target is not there, a row that does not say
+  whether it covers the card's statement or a part of one, a row in a section no reader of the
+  registry treats as a certificate) read without the pandoc build, together with the recipe
+  checked against the tree: every artifact `proofs/justfile` invokes is present, it invokes no
+  Lean file, and every artifact under `proofs/cards/` is invoked by it. The first four of those
+  are `certificate.registry_errors`; `qualc check` calls the same function, so the two entry
+  points cannot disagree. A lean-categories row is confirmed over HTTPS, so on a machine with no
+  network each such row is reported as a missing target: that is the check's own message, and it
+  names the network rather than a moved file.
+- `artifacts` — the exact Sage, GAP and Python computations retained in `proofs/cards/`. Each
+  exits non-zero on a failed assertion, and section 2 records the interpreter and the output its
+  published run carried. The interpreters are `sage` and `gap` on `PATH` by default; the shared
+  research image has no `sage` on `PATH`, so there the recipe is run as
+  `SAGE=/sage/.venv/bin/sage just --justfile proofs/justfile check`, that being the interpreter
+  section 2's recorded runs used.
+
+Lean declarations are validated in lean-categories, where they live, not here: the `.lean`
+files, the lake project (`lakefile.toml`, `lake-manifest.json`, `lean-toolchain`) and the Lake
+lines of `.gitignore` left this repository under issue #141. Each row of section 1 is a link to
+the file at commit `16c09abaa4` of this repository, which stays readable, or to the declaration
+on `dzackgarza/lean-categories` main, where lean-categories#141 ported it. `qualc check` follows
+each link and fails when its target is not there, so a row is correct in either of the two
+forms. Four rows of section 1 name the second form: the two `Tor` rows and
+`E-HAT-2.2-16`'s at `5848f0f2`, and `E-HAT-4.1-9`'s at `9b8b8584`. The rest still name
+the file at `16c09abaa4`, and the movement of a row from one form to the other is a link
+correction, not a change of what the row says it proves.
+
+For a Lean certificate, `#print axioms` on the declaration the row names must show only
+`propext`, `Classical.choice` and `Quot.sound`; any appearance of `sorryAx` means the
+certificate is not a proof. That check is run in lean-categories, and the elaboration each row
+records is the one its author ran there.
 
 ## Toolchain: what these certificates were elaborated with, and the shared-image block
 
@@ -805,17 +689,23 @@ Verified in the pinned tree, as the maintained inputs:
 
 That yields a chain homotopy contraction of the *alternating face map* complex of the standard
 simplex onto a single copy of the coefficients in degree `0`, which is exactly the exactness
-of the augmented complex that `ker_eq_range_of_comm_iso` consumes. Two steps remain, and
-neither is a formality:
+of the augmented complex that `ker_eq_range_of_comm_iso` consumes. Two steps stood between it
+and the card, and neither was a formality:
 
 1. the card's chain model for `Δ^n` is the simplicial one on **nondegenerate** simplices,
    while `AlternatingFaceMapComplex` is the unnormalised complex; passing between them needs
-   the normalisation comparison, which is not cited yet;
+   the normalisation comparison, which was not cited in this tree;
 2. the `k`-skeleton maps have to be built and shown to commute with the differentials in
    degrees at most `k`, which is the hypothesis of `ker_eq_range_of_comm_iso`.
 
-Until both exist, `ker_eq_range_of_comm_iso` still has no instantiation and the card's
-vanishing statement stays uncertified. *(Historical note, superseded: the normalisation
-comparison and the skeleton transport are both proved in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/SimplexChains.lean>,
+Both were proved afterwards in the alternating-face-map model — the same vanishing in the
+normalised Moore model is `isZero_normalizedHomology`, and the skeleton transport is
+`skChains_exact` — and the card needs neither, because its boxed claim is certified in its own
+Δ-complex chain model by
+<https://github.com/dzackgarza/lean-categories/blob/5848f0f2f881ba032eb8bb69baa051300498ba6b/LeanCategories/Homological/DeltaSimplexChains.lean>:
+`subsingleton_sk_homology` for $i<k$ and `sk_homology_top_basis` in degree $k$. The vanishing
+statement is therefore certified, and no step of this section is an open obligation of
+`E-HAT-2.2-16` as of 2026-11-17. *(Historical note, superseded: the normalisation comparison
+and the skeleton transport are both proved in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/SimplexChains.lean>,
 <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/ChainLevelSteps.lean> and <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/SkeletonHomology.lean> in the alternating-face-map
 model, and the card's own model is certified outright by <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/DeltaSimplexChains.lean>.)

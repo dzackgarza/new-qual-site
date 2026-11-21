@@ -46,6 +46,7 @@ For (e), consider the graph morphism $\Gamma_f: X \to \fiberprod{X}{Z}{Y}$ and n
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.4.8, transcribed and checked against the exercise as printed: that the property is preserved under composition, under base change and under closed subschemes, which are the three clauses the exercise asks for. The page carries the folio 37 and the running heads of that set.
 Assume throughout that the property $\mathscr P$ satisfies (a), (b), and (c).
 
 ::: pf

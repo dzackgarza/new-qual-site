@@ -43,6 +43,27 @@ audit:
     non-simply-connected coefficients, and the identification of the cup
     product ring with the divided polynomial algebra is reported as the book's
     consequence, not re-proved.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 17 of §3.2, printed p. 230, which is the single bracketed
+    sentence the card reproduces, and against Proposition 3.22, printed p. 224, whose statement the
+    card quotes and whose proof occupies pp. 224--225. The statement matches the printed one, and
+    the two formulas of the odd case are Hatcher's own on p. 225. Checked: the cell structure of
+    $J_m(S^n)$ with one cell in each multiple of $n$; the vanishing of the cellular boundary, from
+    the cellular surjection $q\colon(S^n)^m\to J_m(S^n)$ and the vanishing of $\partial$ on
+    $(S^n)^m$, which follows because that complex is free with cohomology of the rank of its chain
+    groups in every degree; $q^*(x_k)=\sum_{|I|=k}\alpha_I$; $x_1^m=m!\,x_m$ for even $n$ from
+    $(\alpha_1+\cdots+\alpha_m)^m=m!\,\alpha_1\cdots\alpha_m$; and the two coefficient sums of the
+    odd case, $\sum_{i=1}^{2m+1}(-1)^{i-1}=1$ and $\sum_{i_1<i_2}(-1)^{i_1+i_2-3}=m$, the second
+    checked at $m=1,2$ by hand and following the induction the card gives. Not checked: the
+    orientation conventions in $q^*(x_k)$, which the card takes with coefficient $+1$ and which are
+    a choice of cell orientations — the identities they produce are the book's, so the conventions
+    are consistent; and the identification of the even-$n$ ring with the divided polynomial algebra
+    is Hatcher's, as the card says. The terminal `pf-qed` names steps rather than carrying an
+    argument; it is left as it stands because the steps above it do carry theirs. Not claimed:
+    a certificate.
 ---
 
 ::: {.problem}
@@ -50,9 +71,9 @@ audit:
 :::
 
 ::: {.solution}
-The printed exercise has no assertion of its own in this printing: it records that its content is Proposition 3.22 of p.224, which is therefore what is proved here.
+The printed exercise has no assertion of its own in this printing: it records that its content is Proposition 3.22, which is therefore what is proved here.
 
-**Proposition 3.22** (p.224). For $n>0$, $H^*(J(S^n);\ZZ)$ consists of a $\ZZ$ in each dimension a multiple of $n$. If $n$ is even, the $i$th power of a generator of $H^n(J(S^n);\ZZ)$ is $i!$ times a generator of $H^{in}(J(S^n);\ZZ)$, for each $i\ge1$. When $n$ is odd, $H^*(J(S^n);\ZZ)$ is isomorphic as a graded ring to $H^*(S^n;\ZZ)\otimes H^*(J(S^{2n});\ZZ)$.
+**Proposition 3.22**. For $n>0$, $H^*(J(S^n);\ZZ)$ consists of a $\ZZ$ in each dimension a multiple of $n$. If $n$ is even, the $i$th power of a generator of $H^n(J(S^n);\ZZ)$ is $i!$ times a generator of $H^{in}(J(S^n);\ZZ)$, for each $i\ge1$. When $n$ is odd, $H^*(J(S^n);\ZZ)$ is isomorphic as a graded ring to $H^*(S^n;\ZZ)\otimes H^*(J(S^{2n});\ZZ)$.
 
 ::: pf
 
@@ -69,7 +90,7 @@ Hatcher p.224: $J_m(S^n)$ is a quotient of $(S^n)^m$ obtained by gluing the $m$ 
 For $n>1$, the conclusion about the additive structure follows from cellular cohomology alone.
 
 ::: pf-proof
-With one cell in each dimension a multiple of $n$, the cellular cochain complex has $C^{kn}=\ZZ$ and $C^j=0$ for $j$ not a multiple of $n$. For $n>1$ the two neighbours of the degree $kn$ are $kn\pm1$, neither a multiple of $n$, so both differentials into and out of $C^{kn}$ are zero and Theorem 3.5 (p.203) gives $H^{kn}=\ZZ$ and $H^j=0$ otherwise. For $n=1$ the neighbours are nonzero and this argument says nothing, which is why the next step is needed.
+With one cell in each dimension a multiple of $n$, the cellular cochain complex has $C^{kn}=\ZZ$ and $C^j=0$ for $j$ not a multiple of $n$. For $n>1$ the two neighbours of the degree $kn$ are $kn\pm1$, neither a multiple of $n$, so both differentials into and out of $C^{kn}$ are zero and Theorem 3.5 gives $H^{kn}=\ZZ$ and $H^j=0$ otherwise. For $n=1$ the neighbours are nonzero and this argument says nothing, which is why the next step is needed.
 :::
 
 
@@ -78,7 +99,7 @@ With one cell in each dimension a multiple of $n$, the cellular cochain complex 
 For every $n\ge1$ the cellular boundary maps of $J_m(S^n)$, and hence of $J(S^n)$, are zero, so $H^*(J(S^n);\ZZ)$ is free on the cells.
 
 ::: pf-proof
-The quotient map $q:(S^n)^m\to J_m(S^n)$ carries each cell homeomorphically onto a cell and takes $k$-skeleta to $k$-skeleta, so it is cellular and induces a chain map of cellular chain complexes, surjective on chains because every cell of $J_m(S^n)$ is the homeomorphic image of a cell of $(S^n)^m$. The boundary maps of $(S^n)^m$ are zero: its cohomology is $\bigotimes_{i=1}^m(\ZZ\oplus\ZZ)$ in degrees $0$ and $n$ by Theorem 3.15 (p.216), so in each degree the rank of the cohomology equals the number of cells of that degree, and a free complex whose cohomology has the rank of its chain groups in every degree has zero differentials. Now let $e$ be a cell of $J_m(S^n)$ and $c$ a cell of $(S^n)^m$ with $q_\#(c)=e$. Since $q$ is a chain map and $\partial c=0$, $\partial e=\partial q_\#(c)=q_\#(\partial c)=0$. So the cellular boundaries of $J_m(S^n)$ vanish, and the inclusion $J_m(S^n)\subset J(S^n)$ induces isomorphisms on $H^i$ for $i\le mn$ because the two have the same cells up to dimension $m$.
+The quotient map $q:(S^n)^m\to J_m(S^n)$ carries each cell homeomorphically onto a cell and takes $k$-skeleta to $k$-skeleta, so it is cellular and induces a chain map of cellular chain complexes, surjective on chains because every cell of $J_m(S^n)$ is the homeomorphic image of a cell of $(S^n)^m$. The boundary maps of $(S^n)^m$ are zero: its cohomology is $\bigotimes_{i=1}^m(\ZZ\oplus\ZZ)$ in degrees $0$ and $n$ by Theorem 3.15, so in each degree the rank of the cohomology equals the number of cells of that degree, and a free complex whose cohomology has the rank of its chain groups in every degree has zero differentials. Now let $e$ be a cell of $J_m(S^n)$ and $c$ a cell of $(S^n)^m$ with $q_\#(c)=e$. Since $q$ is a chain map and $\partial c=0$, $\partial e=\partial q_\#(c)=q_\#(\partial c)=0$. So the cellular boundaries of $J_m(S^n)$ vanish, and the inclusion $J_m(S^n)\subset J(S^n)$ induces isomorphisms on $H^i$ for $i\le mn$ because the two have the same cells up to dimension $m$.
 :::
 
 
@@ -87,7 +108,7 @@ The quotient map $q:(S^n)^m\to J_m(S^n)$ carries each cell homeomorphically onto
 Let $x_k\in H^{kn}(J_m(S^n);\ZZ)$ be dual to the $kn$ cell, with $q^*(x_k)=\sum_{i_1<\cdots<i_k}\alpha_{i_1}\cdots\alpha_{i_k}$, where $\alpha_i\in H^n((S^n)^m;\ZZ)$ is dual to the $i$th $n$ cell.
 
 ::: pf-proof
-Since $q$ identifies the $m$ copies of the $n$ cell to form the $n$ cell of $J_m(S^n)$, cellular cohomology gives $q^*(x_1)=\alpha_1+\cdots+\alpha_m$; applying the same reasoning to the $kn$ cell, which is the image of the cells indexed by $k$-element subsets of the $m$ coordinates, gives the displayed formula. Cellular cohomology is Theorem 3.5 (p.203).
+Since $q$ identifies the $m$ copies of the $n$ cell to form the $n$ cell of $J_m(S^n)$, cellular cohomology gives $q^*(x_1)=\alpha_1+\cdots+\alpha_m$; applying the same reasoning to the $kn$ cell, which is the image of the cells indexed by $k$-element subsets of the $m$ coordinates, gives the displayed formula. Cellular cohomology is Theorem 3.5.
 :::
 
 
@@ -96,7 +117,7 @@ Since $q$ identifies the $m$ copies of the $n$ cell to form the $n$ cell of $J_m
 If $n$ is even then $x_1^m=m!\,x_m$ in $H^{mn}(J(S^n);\ZZ)$.
 
 ::: pf-proof
-For even $n$ the classes $\alpha_i$ commute with each other, and $H^*((S^n)^m;\ZZ)=\ZZ[\alpha_1,\dots,\alpha_m]/(\alpha_1^2,\dots,\alpha_m^2)$ by Theorem 3.15 (p.216). Then
+For even $n$ the classes $\alpha_i$ commute with each other, and $H^*((S^n)^m;\ZZ)=\ZZ[\alpha_1,\dots,\alpha_m]/(\alpha_1^2,\dots,\alpha_m^2)$ by Theorem 3.15. Then
 $$q^*(x_1^m)=(\alpha_1+\cdots+\alpha_m)^m=m!\,\alpha_1\cdots\alpha_m=m!\,q^*(x_m),$$
 the middle equality because every other monomial contains a repeated factor. Since $q^*$ is an isomorphism on $H^{mn}$, this gives $x_1^m=m!\,x_m$ in $J_m(S^n)$, and the inclusion of step three carries it to $H^*(J(S^n);\ZZ)$.
 :::
@@ -107,7 +128,7 @@ the middle equality because every other monomial contains a repeated factor. Sin
 If $n$ is odd then $x_1^2=0$ and, in $H^*(J(S^n);\ZZ)$, $x_1x_2^m=x_{2m+1}$ and $x_2x_1^{2m-2}=m\,x_{2m}$ for $m\ge1$.
 
 ::: pf-proof
-For odd $n$ the classes $\alpha_i$ anticommute, so $H^*((S^n)^m;\ZZ)=\Lambda_{\ZZ}[\alpha_1,\dots,\alpha_m]$ and $x_1^2=0$ by graded commutativity of the cup product (Theorem 3.11, p.210). For the first formula, in $\Lambda_{\ZZ}[\alpha_1,\dots,\alpha_{2m+1}]$,
+For odd $n$ the classes $\alpha_i$ anticommute, so $H^*((S^n)^m;\ZZ)=\Lambda_{\ZZ}[\alpha_1,\dots,\alpha_m]$ and $x_1^2=0$ by graded commutativity of the cup product (Theorem 3.11). For the first formula, in $\Lambda_{\ZZ}[\alpha_1,\dots,\alpha_{2m+1}]$,
 $$q^*(x_1x_2^m)=\Big(\sum_i\alpha_i\Big)\Big(\sum_{i_1<\cdots<i_m}\alpha_{i_1}\cdots\alpha_{i_m}\Big)=\sum_i(-1)^{i-1}\alpha_1\cdots\alpha_{2m+1},$$
 and the coefficients $+1,-1,+1,\dots,+1$ over an odd number of terms sum to $+1$. For the second, in $\Lambda_{\ZZ}[\alpha_1,\dots,\alpha_{2m}]$,
 $$q^*(x_2x_1^{2m-2})=\Big(\sum_{i_1<i_2}\alpha_{i_1}\alpha_{i_2}\Big)\alpha_1\cdots\widehat{\alpha_{i_1}}\cdots\widehat{\alpha_{i_2}}\cdots\alpha_{2m}=\sum_{i_1<i_2}(-1)^{i_1-1}(-1)^{i_2-2}\alpha_1\cdots\alpha_{2m},$$

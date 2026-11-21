@@ -5,7 +5,9 @@ kind: problem
 title: Completing a regular scalar function to local coordinates
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Implicit Function Theorem
+  - Gradient
 relations: []
 review: draft
 audit:

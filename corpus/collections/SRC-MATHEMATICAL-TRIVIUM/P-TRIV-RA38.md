@@ -28,6 +28,8 @@ unit ball. The same computation gives the radius-$R$ formula as well.
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #s1-1}

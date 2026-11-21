@@ -5,7 +5,9 @@ kind: problem
 title: A deformation retraction induces an isomorphism on fundamental groups
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Fundamental Group
+  - Homotopy Equivalence
 relations: []
 review: draft
 audit:

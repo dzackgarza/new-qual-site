@@ -22,25 +22,63 @@ Suppose $f$ is entire and never vanishes, and that none of the higher derivative
 :::
 
 ::: {.solution}
-Because $f$ is entire, of finite order, and never vanishes, Hadamard's factorization theorem gives
-$$
-f(z)=e^{P(z)}
-$$
-for some polynomial $P$.
 
-Differentiating,
-$$
-f'(z)=P'(z)e^{P(z)}.
-$$
-By hypothesis $f'$ never vanishes, and $e^{P(z)}$ never vanishes, so $P'$ has no zeros. If $\deg P\ge2$, then $P'$ is a nonconstant polynomial and therefore has a complex zero by the fundamental theorem of algebra, a contradiction. Hence $\deg P\le1$.
+The argument is the card's own: Hadamard's theorem writes a finite-order never-vanishing entire function as $e^{P}$ with $P$ polynomial, and the nonvanishing of $f'$ bounds $\deg P$.
 
-Thus
+::: pf
+
+::: {.pf-step #hadamard}
+
+$f=e^{P}$ for a polynomial $P$.
+
+::: pf-proof
+
+$f$ is entire and never vanishes, so the Hadamard factorisation of $f$ has no primary factors at all: all its zeros would have to be absent, hence the genus-$0$ product is empty. A function of finite order with no zeros is therefore of the form $e^{P}$ with $P$ a polynomial, of degree at most the order of $f$; this is the standard consequence of Hadamard's theorem for functions of finite order.
+
+:::
+
+:::
+
+::: {.pf-step #derivative}
+
+$f'=P'e^{P}$, and $P'$ has no zeros.
+
+::: pf-proof
+
+Differentiating $f=e^{P}$ by the chain rule gives $f'=P'e^{P}$. The exponential never vanishes, so $f'(z_{0})=0$ exactly when $P'(z_{0})=0$; the hypothesis that the higher derivatives never vanish, applied to $f'$, says $f'$ has no zeros. Hence $P'$ has none.
+
+:::
+
+:::
+
+::: {.pf-step #degree}
+
+$\deg P\le1$.
+
+::: pf-proof
+
+If $\deg P\ge2$ then $P'$ is a nonconstant polynomial, and by the fundamental theorem of algebra a nonconstant complex polynomial has a zero; this contradicts step [](#derivative){.pf-ref}. So $\deg P\le1$, that is $P(z)=az+b$ for constants $a,b\in\CC$. Conversely any such $P$ gives $P'=a$ with no zeros when $a\ne0$.
+
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+
+$f(z)=e^{az+b}$.
+
+::: pf-proof
+
+Steps [](#hadamard){.pf-ref} and [](#degree){.pf-ref} give
 $$
-P(z)=az+b
+\boxed{f(z)=e^{az+b}\qquad(a,b\in\CC).}
 $$
-for constants $a,b\in\CC$, and
-$$
-\boxed{f(z)=e^{az+b}}.
-$$
-Under the stated hypothesis that no positive-order derivative ever vanishes, necessarily $a\ne0$; indeed, if $a=0$, then $f'\equiv0$.
+If $a=0$ then $f\equiv e^{b}$ is constant and $f'\equiv0$, which violates the hypothesis that $f'$ never vanishes; so in fact $a\ne0$ under the stated hypotheses.
+
+:::
+
+:::
+
+:::
+
 :::

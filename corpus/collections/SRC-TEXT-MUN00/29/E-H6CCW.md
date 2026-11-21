@@ -33,6 +33,23 @@ audit:
     https://math.stackexchange.com/questions/4068934, which is the same two-line argument.
     dbFin's page states the upper bound only; the card also states that the restricted order is a
     partial order, as Magidin's answer does. This supersedes the 2026-11-10 note above.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Munkres, Topology, 2nd ed. (2000), §29 Supplementary Exercises: Nets,
+    Exercise 2 on printed p. 187, the page whose folio the retained extraction records:
+    "A subset $K$ of $J$ is said to be cofinal in $J$ if for each $\alpha \in J$, there
+    exists $\beta \in K$ such that $\alpha \preceq \beta$. Show that if $J$ is a directed set
+    and $K$ is cofinal in $J$, then $K$ is a directed set." The card states it verbatim and
+    uses the partial order and directed set printed on the same page. The three steps are
+    sound: a restriction of a partial order is a partial order; for $a, b \in K$ directedness
+    of $J$ gives $\alpha \in J$ above both and cofinality gives $\beta \in K$ above $\alpha$,
+    so $\beta$ is an upper bound of $a$ and $b$ in $K$; the conclusion follows. dbFin's
+    solution to this exercise proves the upper-bound half only, as the 2026-11-15 note says,
+    and Arturo Magidin's answer 4068942 to Math StackExchange 4068934 states the restricted
+    order as step 1 does. No defect found; nothing was changed. Not checked: no published set
+    outside those two was read in this pass.
 ---
 
 ::: {.exercise}

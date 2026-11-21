@@ -235,6 +235,145 @@ audit:
     statement of the Theorem and not on the derivation that follows it, so the
     number decides nothing on the card. The PDF has no text layer, which is why
     the page was rendered rather than extracted.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Part of #160's row for this card: parts (a) and (b) are characteristic-free,
+    and the card's qed and remark now say so instead of restricting them to
+    characteristic zero. Checked on the steps: s1 uses Ext^1(L,O) = H^1(L^-1)
+    and Serre duality H^1(K-A) = H^0(A)^*, both over any field; s2 the long
+    exact sequence of the twist, s3 the splitting of an extension and the
+    normalization degree bounds, s4 the invariant e = -deg det; s5 the duality
+    between extension classes and H^0(K+D); s6 the pullback square and its
+    dual multiplication by s_F; s7 the splitting followed by the inclusion;
+    s8 the saturation of a subsheaf and an effective divisor T of degree a-1.
+    None uses characteristic zero or the compact-Riemann-surface theory; the
+    Gunning and Lange--Narasimhan statements are the standard forms of these
+    identifications. Part (c) for g at least 2 still rests on Lange--
+    Narasimhan's Corollary 1.2, printed p. 58, whose dimension count is stated
+    over characteristic zero; the genus-one case is Hartshorne's Example
+    2.11.6, printed p. 375, and is characteristic-free; part (d) is Lange's
+    Theorem over an algebraically closed field of arbitrary characteristic,
+    printed pp. 267--268. So (a), (b), (c) at g = 1 and (d) now stand over any
+    algebraically closed field; (c) at g at least 2 remains characteristic
+    zero. Not checked: no source outside those already on the card was read,
+    and the steps were checked for their field hypotheses, not re-derived.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Part (c) at g at least 2 is now proved in every characteristic, and the card
+    no longer depends on Lange--Narasimhan for it. The argument is the one the
+    printed hint asks for: for d = -e with 1 <= d <= g and D of degree d,
+    extension classes lie in V = H^1(O(-D)) of dimension g-1+d. For an
+    effective E of degree d-1 the bad classes are ker(beta_E), of dimension
+    d-1, since h^0(K+D-E) = g by Riemann--Roch at degree 2g-1. For d at least
+    2 the bad pairs form a family of dimension (d-1)+(d-2) = 2d-3 in P V, and
+    for d = 1 the only E is 0, whose kernel is zero; since 2d-3 < g-2+d for
+    d <= g, a general class avoids every kernel. Part (b) makes the extension
+    normalized, and a nonzero class makes it indecomposable because a splitting
+    would realize O_C and O_C(D) as summands. Checked: the dimensions and the
+    inequality, and that the determinant is O_C(D). The Lange--Narasimhan
+    Corollary 1.2 route is kept in the remark as the characteristic-zero
+    alternative. No statement changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Reader's finding on the event above, repaired here; that event is left as
+    written. Its last inference is false: a non-split extension of O_C(D) by
+    O_C need not be indecomposable. A standard non-split extension realises
+    O_C(P) + O_C(Q) for distinct points P, Q of C: the diagonal O_C inside that
+    sum has quotient of degree 2 and hence isomorphic to O_C(P+Q), so
+    O_C(P) + O_C(Q) is a non-split extension of O_C(P+Q) by O_C, and at
+    g = 3 with d = 2 it is normalized, h^0 being nonzero and h^0 of a twist by
+    O_C(-R) vanishing unless R is P or Q. Non-splitting gives only that the
+    bundle is not O_C + O_C(D), which is what the argument proves. Part (c)
+    asks for a ruled surface of invariant e and not for an indecomposable
+    bundle, that being the condition of part (a), so step s9 now states the
+    non-splitting, and its use of Notation 2.8.1, printed p. 373, that the
+    invariant of P(E) is minus the degree of the determinant for a normalized
+    E, is unchanged. Checked in this pass, from the printed statements: that
+    h^0(K_C+D-E) = g for an effective E of degree d-1, the degree 2g-1 being
+    greater than 2g-2, so that ker(beta_E) has dimension d-1 inside the
+    (g-1+d)-dimensional H^1(C,O_C(-D)); that the bad pairs form a family of
+    dimension 2d-3, the effective divisors of degree d-1 forming a family of
+    that dimension minus one and each kernel a linear subspace of dimension
+    d-2 projectively; and the inequality 2d-3 < g-2+d for d <= g. Read for this
+    pass: Hartshorne V.2, exercise 2.5 with Notation 2.8.1 and Proposition 2.8,
+    printed pp. 372-377, in tmp/sources/hartshorne-1977-algebraic-geometry.md,
+    and step s6 of this card. Not checked: Lange and Narasimhan's Corollary
+    1.2 beyond the statement and page the card records, and no printing of the
+    book other than the text version.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Part (d) is proved on the card without the reduction that the issue names
+    as unargued in Lange's paper, and the claim "and more generally e >= -g",
+    which needed that reduction, leaves step s11's statement; the exercise's
+    part (d), e >= -2 at g = 2, is unchanged. Lange's proof of his Theorem
+    opens "For the proof we may suppose without loss of generality that there
+    is an exact sequence 0 -> O_X -> E -> L -> 0 with a line bundle L of
+    degree d > 3", and it does not argue that passage; the card previously
+    used the Theorem as a black box. It now uses only the two results of the
+    paper that are argued. Let E be normalized, so e = -deg det E and E sits
+    in 0 -> O_C -> E -> L -> 0 with deg L = d = -e, the maximum of c_1 over
+    sublinebundles being 0 by normalization. If d <= 2 there is nothing to
+    prove; if d >= 3, |K_C tensor L| is very ample of degree 2+d >= 2g+1
+    (Hartshorne, Corollary IV.3.2(b), printed p. 308) and embeds C
+    nondegenerately in P^N with N = d; the nonzero extension class is a point
+    of P^N and lies in Sec_n(C) for n = floor((2+d)/2) because the dimension
+    theorem of Lange's §1, printed p. 266, gives dim Sec_n(C) =
+    min(2n-1, N) = N; the Lemma of his §2, printed p. 267, then gives
+    s(E) <= 2n-d <= 2 = g, against s(E) = d >= 3. So d <= 2. Read for this:
+    the introduction (field statement), §1's Theorem and its Lemmas 1-3, and
+    §2's Theorem, Lemma and their proofs, in
+    tmp/sources/lange-1984-higher-secant-varieties-nagata.md, together with
+    Hartshorne IV.3.2(b) at the printed page. Not checked: the printed paper,
+    only the retained text version, whose scan carries no per-page markers, so
+    the printed pages 266-267 are the ones the card's earlier events recorded;
+    and no other proof of Nagata's bound was read.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The event above quoted the reduction that opens Lange's proof as "a line
+    bundle L of degree d > 3". That was a regression: the card's event of
+    2026-11-16 had already read printed p. 267 as an image and recorded that
+    the page prints "d >= 3", the bar being lost in the text version's OCR, and
+    the step it corrected quoted d >= 3; rewriting the step in this pass took
+    the OCR reading instead. Re-read here from a rendering of the retained PDF
+    at 220 dpi: PDF p. 6 of
+    tmp/sources/lange-1984-higher-secant-varieties-nagata.pdf is printed
+    p. 267 and carries §2's Theorem "s(E) <= g", the sentence "For the proof
+    we may suppose without loss of generality that there is an exact sequence
+    O -> O_X -> E -> L -> 0 (e) with a line bundle L of degree d >= 3 on X",
+    and the Lemma "If (e) in Sec_n(X) for an n in N, then s(E) <= 2n-d";
+    PDF p. 5 is printed p. 266 and carries the theorem of §1,
+    dim Sec_n(X) = min(2n-1, N). The step now quotes d >= 3, and the separate
+    sentence about a standing supposition d > 3 and the coverage of d = 3 is
+    withdrawn, since the Lemma is stated for the same d >= 3 as the
+    contradiction assumes. No mathematics changes: the proof assumes d >= 3
+    and the Lemma applies there. Read for this: the same rendering at PDF
+    pp. 5-6, and the field statement "an algebraically closed field of
+    arbitrary characteristic" on printed p. 263. Not checked: any printing of
+    the paper other than the retained PDF.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Two repairs. (i) Part (d) of the remark described Lange's reduction as
+    one to a quotient of degree > 3; the printed source has d >= 3, which is the
+    hypothesis step s11 assumes and states, and the remark now reads d >= 3. The
+    events above record that the text version's "d > 3" is an OCR error and that the
+    scan of the page reads d >= 3. (ii) No page locator remained in the rendered text
+    of this card, so none was removed; the audit events above keep the pages they
+    name, as the citation rule requires. Checked in this pass: the two occurrences of
+    the reduction in the rendered text, at step s11 and in the remark, both of which
+    now say d >= 3, and the absence of a page locator from that text. Not checked:
+    any printing of Lange's paper, only the PDF retained in tmp/sources.
 ---
 
 ::: {.problem}
@@ -270,9 +409,9 @@ Recall that a rank-two bundle $\mathcal E$ on $C$ is normalized when
 $$
 H^0(C,\mathcal E)\ne0
 $$
-but $H^0(C,\mathcal E\tensor\mathcal M)=0$ for every invertible sheaf $\mathcal M$ of negative degree, Proposition 2.8, printed p. 372, and that for such a bundle the invariant of $X=\PP(\mathcal E)$ is $e=-\deg\det\mathcal E$, Notation 2.8.1, printed p. 373.
+but $H^0(C,\mathcal E\tensor\mathcal M)=0$ for every invertible sheaf $\mathcal M$ of negative degree, Proposition 2.8, and that for such a bundle the invariant of $X=\PP(\mathcal E)$ is $e=-\deg\det\mathcal E$, Notation 2.8.1.
 
-Part (a) is transcribed from Gunning, *Lectures on vector bundles over Riemann surfaces*, Theorem 13, printed pp. 71--74, and Theorem 14, printed pp. 87--90, together with the duality half of Hartshorne's proof of Theorem 2.12, printed p. 376; part (b) from Proposition 1.1, printed p. 57, of Lange and Narasimhan, *Maximal subbundles of rank two vector bundles on curves*, whose statement is the criterion that the printed "Cf. proof of (2.15)" points at, that is the proof of Theorem 2.15, printed pp. 377--379; part (c) from their Corollary 1.2, printed p. 58, with Example 2.11.6, printed p. 375, for genus one; part (d) from Lange, *Higher secant varieties of curves and the theorem of Nagata on ruled surfaces*, §2 Theorem, printed pp. 267--268. Lange and Narasimhan work over an algebraically closed field of characteristic zero and Gunning over a compact Riemann surface; where a quoted statement's hypotheses are narrower than the exercise's, the step that quotes it says so.
+Part (a) is transcribed from Gunning, *Lectures on vector bundles over Riemann surfaces*, Theorem 13, and Theorem 14, together with the duality half of Hartshorne's proof of Theorem 2.12; part (b) from Proposition 1.1, of Lange and Narasimhan, *Maximal subbundles of rank two vector bundles on curves*, whose statement is the criterion that the printed "Cf. proof of (2.15)" points at, that is the proof of Theorem 2.15; part (c) from the card's avoidance argument for $g\ge2$, with Lange and Narasimhan's Corollary 1.2, as the characteristic-zero alternative, and Example 2.11.6, for genus one; part (d) from the dimension theorem of Lange, *Higher secant varieties of curves and the theorem of Nagata on ruled surfaces*, §1, and the Lemma of its §2, applied in the case $d=-e\ge3$, so that the unargued reduction that opens the proof of his §2 Theorem is not used. Lange and Narasimhan work over an algebraically closed field of characteristic zero and Gunning over a compact Riemann surface; where a quoted statement's hypotheses are narrower than the exercise's, the step that quotes it says so. The arguments of parts (a), (b), (c) and (d) use only $\Ext^1\cong H^1$, Serre duality, the pullback square, the dimension count of step $s9$ and the two results of Lange cited for (d), all of which hold over an algebraically closed field of any characteristic; so all four parts hold there.
 
 ::: pf
 
@@ -291,11 +430,11 @@ Choose an effective divisor $A$ of degree $2g-2-e$ and put $\mathcal L=\OO_C(A-K
 $$
 \Ext^1_C(\mathcal L,\OO_C)\cong H^1(C,\mathcal L^{-1})=H^1\qty(C,\OO_C(K_C-A)),
 $$
-which is Theorem 13 of Gunning, printed pp. 71--74. In his notation an extension $0\to\OO(\varphi_1)\to\OO(\Phi)\to\OO(\varphi_2)\to0$ has $\varphi_1$ the subbundle and $\varphi_2$ the quotient, and its classes are the elements of $H^1(C,\OO(\varphi_1\varphi_2^{-1}))$; for $\varphi_1=\OO_C$ and $\varphi_2=\mathcal L$ that group is $H^1(C,\OO_C(\mathcal L^{-1}))$, the group of the extension above. Serre duality gives
+which is Theorem 13 of Gunning. In his notation an extension $0\to\OO(\varphi_1)\to\OO(\Phi)\to\OO(\varphi_2)\to0$ has $\varphi_1$ the subbundle and $\varphi_2$ the quotient, and its classes are the elements of $H^1(C,\OO(\varphi_1\varphi_2^{-1}))$; for $\varphi_1=\OO_C$ and $\varphi_2=\mathcal L$ that group is $H^1(C,\OO_C(\mathcal L^{-1}))$, the group of the extension above. Serre duality gives
 $$
 H^1\qty(C,\OO_C(K_C-A))^\vee\cong H^0(C,\OO_C(A)),
 $$
-which is nonzero because $A$ is effective. This is the duality step of the proof of Theorem 2.12, printed p. 376, read in the other direction: there $H^1(\mathcal L^\vee)\ne0$ forces $\deg\mathcal L^\vee\le2g-2$, which for the present $\mathcal L$ is the inequality $e\le2g-2$.
+which is nonzero because $A$ is effective. This is the duality step of the proof of Theorem 2.12, read in the other direction: there $H^1(\mathcal L^\vee)\ne0$ forces $\deg\mathcal L^\vee\le2g-2$, which for the present $\mathcal L$ is the inequality $e\le2g-2$.
 
 :::
 
@@ -311,7 +450,7 @@ $$
 $$
 
 ::: pf-proof
-The argument is that of Example 2.11.6, printed p. 375. The inclusion of $\OO_C$ gives $H^0(C,\mathcal E)\ne0$. Let $\mathcal M$ have negative degree and tensor the sequence by it:
+The argument is that of Example 2.11.6. The inclusion of $\OO_C$ gives $H^0(C,\mathcal E)\ne0$. Let $\mathcal M$ have negative degree and tensor the sequence by it:
 $$
 0\longrightarrow\mathcal M
 \longrightarrow\mathcal E\tensor\mathcal M
@@ -328,7 +467,7 @@ Both end terms have negative degree, $\deg\mathcal L\tensor\mathcal M=-e+\deg\ma
 The bundle $\mathcal E$ of step [](#s2){.pf-ref} is indecomposable.
 
 ::: pf-proof
-Gunning, Theorem 13, printed pp. 71--74, attaches the split extension to the zero class, so a nonzero class gives a nonsplit sequence. Suppose then that $\mathcal E\cong\mathcal A\oplus\mathcal B$ with $\mathcal A,\mathcal B$ invertible. Since $H^0(C,\mathcal E)\ne0$, one summand, say $\mathcal A$, has a nonzero section and hence $\deg\mathcal A\ge0$; normalization bounds $\deg\mathcal A\le0$ because the inclusion $\OO_C=\mathcal A\tensor\mathcal A^{-1}\subseteq\mathcal E\tensor\mathcal A^{-1}$ carries a nonzero section of $\mathcal A$ to one of $\mathcal E\tensor\mathcal A^{-1}$, and $\deg\mathcal A^{-1}<0$. So $\mathcal A\cong\OO_C$ and $\mathcal B\cong\det\mathcal E\cong\mathcal L$. If $\mathcal L$ is not trivial then $H^0(C,\mathcal L)=0$, since $\deg\mathcal L=-e\le0$, so the injection $\OO_C\to\OO_C\oplus\mathcal L$ lands in the first summand and splits; if $\mathcal L\cong\OO_C$ it is a nonzero constant vector, and a constant change of basis splits it as well. Either way the extension splits, contradicting the choice of a nonzero class.
+Gunning, Theorem 13, attaches the split extension to the zero class, so a nonzero class gives a nonsplit sequence. Suppose then that $\mathcal E\cong\mathcal A\oplus\mathcal B$ with $\mathcal A,\mathcal B$ invertible. Since $H^0(C,\mathcal E)\ne0$, one summand, say $\mathcal A$, has a nonzero section and hence $\deg\mathcal A\ge0$; normalization bounds $\deg\mathcal A\le0$ because the inclusion $\OO_C=\mathcal A\tensor\mathcal A^{-1}\subseteq\mathcal E\tensor\mathcal A^{-1}$ carries a nonzero section of $\mathcal A$ to one of $\mathcal E\tensor\mathcal A^{-1}$, and $\deg\mathcal A^{-1}<0$. So $\mathcal A\cong\OO_C$ and $\mathcal B\cong\det\mathcal E\cong\mathcal L$. If $\mathcal L$ is not trivial then $H^0(C,\mathcal L)=0$, since $\deg\mathcal L=-e\le0$, so the injection $\OO_C\to\OO_C\oplus\mathcal L$ lands in the first summand and splits; if $\mathcal L\cong\OO_C$ it is a nonzero constant vector, and a constant change of basis splits it as well. Either way the extension splits, contradicting the choice of a nonzero class.
 
 :::
 
@@ -342,7 +481,7 @@ $$
 so that $X=\PP(\mathcal E)$ is a ruled surface with invariant $e$. This proves part (a).
 
 ::: pf-proof
-By step [](#s2){.pf-ref} the bundle is normalized, so the invariant of $\PP(\mathcal E)$ is $-\deg\det\mathcal E$ by Notation 2.8.1, printed p. 373, and $\deg\det\mathcal E=\deg\mathcal L=-e$; step [](#s3){.pf-ref} gives indecomposability. Theorem 14 of Gunning, printed pp. 87--90, is the existence statement in this form: for line bundles $\varphi$ and $\xi$ with $c(\varphi)\ge\frac12c(\xi)$ and determinant $\xi$, the indecomposable bundles with subbundle $\varphi$ and determinant $\xi$ are parametrized by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$, which for $\varphi=\OO_C$ and $\xi=\mathcal L$ is $\PP H^1(C,\mathcal L^{-1})$, nonempty by step [](#s1){.pf-ref}; the bundle produced there is the extension of step [](#s2){.pf-ref}, whose normalization and indecomposability are steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+By step [](#s2){.pf-ref} the bundle is normalized, so the invariant of $\PP(\mathcal E)$ is $-\deg\det\mathcal E$ by Notation 2.8.1, and $\deg\det\mathcal E=\deg\mathcal L=-e$; step [](#s3){.pf-ref} gives indecomposability. Theorem 14 of Gunning, is the existence statement in this form: for line bundles $\varphi$ and $\xi$ with $c(\varphi)\ge\frac12c(\xi)$ and determinant $\xi$, the indecomposable bundles with subbundle $\varphi$ and determinant $\xi$ are parametrized by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$, which for $\varphi=\OO_C$ and $\xi=\mathcal L$ is $\PP H^1(C,\mathcal L^{-1})$, nonempty by step [](#s1){.pf-ref}; the bundle produced there is the extension of step [](#s2){.pf-ref}, whose normalization and indecomposability are steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
 
 :::
 
@@ -356,7 +495,7 @@ $$
 is a nonzero linear functional on $V=H^0(C,\OO_C(K_C+D))$, and the subsystem $H\subseteq\linearsystem{D+K}$ of codimension one is $\PP(\ker\xi)$.
 
 ::: pf-proof
-The identification of extension classes with $H^1(C,\OO_C(-D))$ is Gunning, Theorem 13, printed pp. 71--74, and the duality $H^1(C,\OO_C(-D))^\vee\cong H^0(C,\OO_C(K_C+D))$ is Serre duality; that is the interpretation the exercise states, and the book's proof of Theorem 2.15 uses the class in exactly this form, as an element of $H^1(\mathcal L(-P-Q))$ dual to $H^0(\mathcal L(P+Q))$, printed p. 378.
+The identification of extension classes with $H^1(C,\OO_C(-D))$ is Gunning, Theorem 13, and the duality $H^1(C,\OO_C(-D))^\vee\cong H^0(C,\OO_C(K_C+D))$ is Serre duality; that is the interpretation the exercise states, and the book's proof of Theorem 2.15 uses the class in exactly this form, as an element of $H^1(\mathcal L(-P-Q))$ dual to $H^0(\mathcal L(P+Q))$.
 
 :::
 
@@ -375,11 +514,11 @@ L_F=\linearsystem{K_C+D-F}+F.
 $$
 
 ::: pf-proof
-This is the criterion of Lange and Narasimhan, Proposition 1.1, printed p. 57, in its two directions. The inclusion is multiplication by a section $s_F$ of $\OO_C(F)$, so under Serre duality the dual of $\beta_F$ is
+This is the criterion of Lange and Narasimhan, Proposition 1.1, in its two directions. The inclusion is multiplication by a section $s_F$ of $\OO_C(F)$, so under Serre duality the dual of $\beta_F$ is
 $$
 H^0(C,\OO_C(K_C+D-F))\xrightarrow{\cdot s_F}H^0(C,\OO_C(K_C+D)),
 $$
-whose projective image is $L_F$; hence the pullback splits exactly when $\xi$ annihilates that image, that is when $L_F\subseteq H$. Proposition 1.1 states them as the equivalence of $\mathrm{(i)}$ and $\mathrm{(ii)}$ for one extension $0\to\OO_X\to E\to L\to0$: the class lies in the span of an effective divisor $D$ exactly when $L(-D)$ is a subsheaf of $E$, which is the splitting of the pullback. Its §1 assumes $d\ge2$ when $g\ge2$, and it works over an algebraically closed field of characteristic zero; the cases $d=1$ and $g=1$ are outside it, and steps [](#s7){.pf-ref} and [](#s8){.pf-ref} use only the pullback square.
+whose projective image is $L_F$; hence the pullback splits exactly when $\xi$ annihilates that image, that is when $L_F\subseteq H$. Proposition 1.1 states them as the equivalence of $\mathrm{(i)}$ and $\mathrm{(ii)}$ for one extension $0\to\OO_X\to E\to L\to0$: the class lies in the span of an effective divisor $D$ exactly when $L(-D)$ is a subsheaf of $E$, which is the splitting of the pullback. Its §1 assumes $d\ge2$ when $g\ge2$ and a field of characteristic zero; the criterion as proved in steps [](#s7){.pf-ref} and [](#s8){.pf-ref} uses only the pullback square, so it is characteristic-free, and those steps also reach $d=1$ and $g=1$.
 
 :::
 
@@ -393,7 +532,7 @@ Step [](#s6){.pf-ref} gives $\beta_E(\xi)=0$, so the pullback
 $$
 0\longrightarrow\OO_C\longrightarrow\mathcal E_E\longrightarrow\OO_C(D-E)\longrightarrow0
 $$
-splits, and the splitting followed by $\mathcal E_E\to\mathcal E$ embeds $\OO_C(D-E)$ in $\mathcal E$; its inverse has degree $-1$, so a negative twist of $\mathcal E$ has a nonzero section. This is the implication the book uses in the proof of Theorem 2.15, printed p. 378: normalization makes the map $\gamma$ injective, which is the statement that no $L_E$ lies in $H$. The step is the card's own: it runs the pullback square of step [](#s6){.pf-ref} and uses no hypothesis on $d$ or $g$, so it reaches $d=1$ and $g=1$, which the propositions quoted above exclude.
+splits, and the splitting followed by $\mathcal E_E\to\mathcal E$ embeds $\OO_C(D-E)$ in $\mathcal E$; its inverse has degree $-1$, so a negative twist of $\mathcal E$ has a nonzero section. This is the implication the book uses in the proof of Theorem 2.15: normalization makes the map $\gamma$ injective, which is the statement that no $L_E$ lies in $H$. The step is the card's own: it runs the pullback square of step [](#s6){.pf-ref} and uses no hypothesis on $d$ or $g$, so it reaches $d=1$ and $g=1$, which the propositions quoted above exclude.
 
 :::
 
@@ -403,7 +542,7 @@ splits, and the splitting followed by $\mathcal E_E\to\mathcal E$ embeds $\OO_C(
 Conversely, if $\mathcal E$ is not normalized, some effective divisor $E$ of degree $d-1$ satisfies $L_E\subseteq H$.
 
 ::: pf-proof
-There is a line bundle $\mathcal M$ of negative degree and a nonzero morphism $\mathcal M^{-1}\to\mathcal E$; saturating its image gives a subbundle $\mathcal A\hookrightarrow\mathcal E$ of positive degree $a$. Its composite with the quotient $\mathcal E\to\OO_C(D)$ is nonzero, since a zero composite would factor $\mathcal A$ through $\OO_C$, whereas a nonzero section of $\mathcal A^{-1}$ would impose a negative twist on $\mathcal E$. A nonzero map $\mathcal A\to\OO_C(D)$ has an effective zero divisor $F$, so $\mathcal A\cong\OO_C(D-F)$ with $\deg F=d-a\le d-1$, and the inclusion already lifts to $\mathcal E$, so the pullback splits and $L_F\subseteq H$ by step [](#s6){.pf-ref}. Choosing an effective $T$ of degree $a-1$ and setting $E=F+T$ gives $\deg E=d-1$ and $L_E\subseteq L_F\subseteq H$. This is the converse implication of Proposition 1.1 of Lange and Narasimhan, printed p. 57. The step is the card's own, as in step [](#s7){.pf-ref}: it runs the pullback square of step [](#s6){.pf-ref} and uses no hypothesis on $d$ or $g$, so it reaches the cases $d=1$ and $g=1$ that lie outside the proposition's section. Steps [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (b).
+There is a line bundle $\mathcal M$ of negative degree and a nonzero morphism $\mathcal M^{-1}\to\mathcal E$; saturating its image gives a subbundle $\mathcal A\hookrightarrow\mathcal E$ of positive degree $a$. Its composite with the quotient $\mathcal E\to\OO_C(D)$ is nonzero, since a zero composite would factor $\mathcal A$ through $\OO_C$, whereas a nonzero section of $\mathcal A^{-1}$ would impose a negative twist on $\mathcal E$. A nonzero map $\mathcal A\to\OO_C(D)$ has an effective zero divisor $F$, so $\mathcal A\cong\OO_C(D-F)$ with $\deg F=d-a\le d-1$, and the inclusion already lifts to $\mathcal E$, so the pullback splits and $L_F\subseteq H$ by step [](#s6){.pf-ref}. Choosing an effective $T$ of degree $a-1$ and setting $E=F+T$ gives $\deg E=d-1$ and $L_E\subseteq L_F\subseteq H$. This is the converse implication of Proposition 1.1 of Lange and Narasimhan. The step is the card's own, as in step [](#s7){.pf-ref}: it runs the pullback square of step [](#s6){.pf-ref} and uses no hypothesis on $d$ or $g$, so it reaches the cases $d=1$ and $g=1$ that lie outside the proposition's section. Steps [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (b).
 
 :::
 
@@ -413,15 +552,11 @@ There is a line bundle $\mathcal M$ of negative degree and a nonzero morphism $\
 If $-g\le e<0$ and $g\ge2$, there is a ruled surface over $C$ with invariant $e$. This is part (c) for $g\ge2$.
 
 ::: pf-proof
-Put $d=-e$, so $1\le d\le g$, and let $L_1,L_2$ be line bundles with $\deg L_1=d$ and $\deg L_2=2d$. Corollary 1.2 of Lange and Narasimhan, printed p. 58, applies with $0<c_1(L_2)-c_1(L_1)=d\le g$ and produces an extension
+Put $d=-e$, so $1\le d\le g$, and fix a divisor $D$ of degree $d$. An extension
 $$
-0\longrightarrow L_1\longrightarrow\mathcal E\longrightarrow L_2\longrightarrow0
+0\longrightarrow\OO_C\longrightarrow\mathcal E\longrightarrow\OO_C(D)\longrightarrow0
 $$
-whose maximal subbundle degree is $d$, and its proof is a dimension count: $\dim\mathrm{Sec}_{d-2}(X)\le2d-3<g+d-2=\dim\PP$ in the notation of its §1, which is the count the exercise's hint asks for. Tensoring by $L_1^{-1}$ gives
-$$
-0\longrightarrow\OO_C\longrightarrow\mathcal E\tensor L_1^{-1}\longrightarrow L_2L_1^{-1}\longrightarrow0,
-$$
-in which the maximal subbundle degree has dropped to $0$; so $\mathcal E\tensor L_1^{-1}$ is normalized, having a nonzero section and no nonzero section after a negative twist. Its determinant is $L_2L_1^{-1}$ of degree $d$, so $\PP(\mathcal E\tensor L_1^{-1})$ has invariant $-d=e$ by Notation 2.8.1, printed p. 373. Corollary 1.2 is stated for $g\ge2$ over an algebraically closed field of characteristic zero; the genus-one case is step [](#s10){.pf-ref}.
+is determined by its class in $V=H^1(C,\OO_C(-D))$, a vector space of dimension $g-1+d$ by Riemann--Roch and Serre duality. For an effective divisor $E$ of degree $d-1$, the classes for which $L_E\subseteq H$ are the kernel of the pullback map $\beta_E\colon V\to H^1(C,\OO_C(-E))$ of step [](#s6){.pf-ref}, a linear subspace. Since $\deg(K_C+D-E)=2g-1$, Riemann--Roch gives $h^0(K_C+D-E)=g$; hence $\ker\beta_E$ has dimension $(g-1+d)-g=d-1$. For $d\ge2$ the pairs $(E,\xi)$ with $\xi\in\ker\beta_E$ form a family of dimension $(d-1)+(d-2)=2d-3$ in $\PP V$, and for $d=1$ the only effective $E$ is $0$, whose kernel is zero. Since $2d-3<g-2+d=\dim\PP V$ for $d\le g$, a general $\xi$ lies in no such kernel. By part (b) the extension is normalized, and a nonzero $\xi$ means that the extension does not split, that is $\mathcal E\not\cong\OO_C\oplus\OO_C(D)$. Its determinant is $\OO_C(D)$ of degree $d$, so $\PP(\mathcal E)$ has invariant $-d=e$ by Notation 2.8.1. Part (c) asks for the surface and its invariant, not for an indecomposable $\mathcal E$, which is the condition of part (a); non-splitting of the extension is what the argument gives, and it is all that the invariant needs. This is the avoidance argument the printed hint asks for; the genus-one case is step [](#s10){.pf-ref}.
 
 :::
 
@@ -431,7 +566,7 @@ in which the maximal subbundle degree has dropped to $0$; so $\mathcal E\tensor 
 If $g=1$ and $-g\le e<0$, that is $e=-1$, there is a ruled surface over $C$ with invariant $e$.
 
 ::: pf-proof
-This is Example 2.11.6, printed p. 375, which constructs $\mathcal E$ as an extension $0\to\OO_C\to\mathcal E\to\mathcal L(P)\to0$ with $\xi\ne0$, shows it normalized by the long exact sequence of the twisted sequence, and concludes that $\PP(\mathcal E)$ is an elliptic ruled surface with $e=-1$; the proof of Theorem 2.15, printed pp. 377--378, repeats the construction and shows that it is the only one. Steps [](#s9){.pf-ref} and [](#s10){.pf-ref} prove part (c).
+This is Example 2.11.6, which constructs $\mathcal E$ as an extension $0\to\OO_C\to\mathcal E\to\mathcal L(P)\to0$ with $\xi\ne0$, shows it normalized by the long exact sequence of the twisted sequence, and concludes that $\PP(\mathcal E)$ is an elliptic ruled surface with $e=-1$; the proof of Theorem 2.15, repeats the construction and shows that it is the only one. Steps [](#s9){.pf-ref} and [](#s10){.pf-ref} prove part (c).
 
 :::
 
@@ -442,21 +577,42 @@ For $g=2$ the inequality
 $$
 e\ge-2
 $$
-holds for every ruled surface over $C$. This is part (d), and more generally $e\ge-g$.
+holds for every ruled surface over $C$. This is part (d).
 
 ::: pf-proof
-Let $\mathcal E$ be the normalized bundle of $X$, so that $e=-\deg\det\mathcal E$ by Notation 2.8.1. Lange, *Higher secant varieties of curves and the theorem of Nagata on ruled surfaces*, §2, printed pp. 267--268, defines
+Let $\mathcal E$ be the normalized bundle of $X$, so that $e=-\deg\det\mathcal E$ by Notation 2.8.1. A nonzero section of $\mathcal E$ spans a sub-line-bundle $\OO_C\subseteq\mathcal E$, and the quotient is a line bundle
 $$
-s(\mathcal E)=c_1(\mathcal E)-2\max c_1(\mathcal L),
+0\longrightarrow\OO_C\longrightarrow\mathcal E\longrightarrow\mathcal L\longrightarrow0,
+\qquad
+\deg\mathcal L=\deg\det\mathcal E=-e=:d,
 $$
-the maximum over the sublinebundles $\mathcal L\subseteq\mathcal E$, and proves the Theorem $s(\mathcal E)\le g$. His proof is the dimension theorem of §1, printed p. 266, that the $n$-secant variety of a nondegenerate curve in $\PP^N$ has dimension $\min(2n-1,N)$, applied to $C$ embedded by $\linearsystem{K_C\otimes L}$ together with the §2 Lemma that a class lying in $\mathrm{Sec}_n(C)$ forces $s(\mathcal E)\le2n-d$; the maximum is $0$ for a normalized bundle, since $H^0(\mathcal E)\ne0$ gives a subbundle of nonnegative degree and normalization excludes a positive one, so $s(\mathcal E)=\deg\det\mathcal E=-e$ and $-e\le g$. At $g=2$ this is $e\ge-2$, which is the bound the printed Note attributes to Nagata and which the book's own proof of Theorem 2.12 does not reach, arriving only at $e\ge-2g$. The paper's proof, printed p. 267, opens by saying that one may suppose without loss of generality that there is an exact sequence $0\to\OO_C\to\mathcal E\to L\to0$ with a line bundle $L$ of degree $d\ge3$, and it does not argue that reduction; in the case it treats, its Lemma gives $s(\mathcal E)\le2\floor{(d+g)/2}-d\le g$. The reduction being stated and not argued, what is used here is the Theorem as printed, and not the derivation that follows it. The paper states its field as an algebraically closed field of arbitrary characteristic.
+because $\det\mathcal E=\det\OO_C\otimes\det\mathcal L=\mathcal L$. The maximum of $c_1$ over the sublinebundles of $\mathcal E$ is $0$: $\OO_C$ has degree $0$, and a sublinebundle $\mathcal M$ of positive degree would give a nonzero section of $\mathcal E\otimes\mathcal M^{-1}$ with $\deg\mathcal M^{-1}<0$, against normalization; hence
+$$
+s(\mathcal E)=c_1(\mathcal E)-2\max c_1=\deg\det\mathcal E=d.
+$$
+If $d\le2$ there is nothing to prove, so suppose $d\ge3$. Then $\deg(K_C\otimes\mathcal L)=2g-2+d=2+d\ge5=2g+1$, so $\linearsystem{K_C\otimes\mathcal L}$ is very ample by Hartshorne, Corollary IV.3.2(b), and embeds $C$ nondegenerately in $\PP^N$ with $N=h^0(K_C\otimes\mathcal L)-1=(2+d)-2+1=d$ by Riemann--Roch and Serre duality. Since $d>0$, the extension does not split, or $\mathcal L$ would be a sublinebundle of $\mathcal E$ of positive degree; so its class $\xi\in H^1(C,\mathcal L^{-1})$ is nonzero, and by Serre duality it is a nonzero element of $H^0(C,K_C\otimes\mathcal L)^\vee$, that is a point of the dual $\PP^N$, which we identify with $\PP^N$.
 
+Let $n=\lfloor (2+d)/2\rfloor$. By the theorem of Lange, §1, $\dim\mathrm{Sec}_n(C)=\min(2n-1,N)$ for a nondegenerate curve in $\PP^N$; here $2n-1\ge N=d$, since $n=(d+2)/2$ gives $2n-1=d+1$ for $d$ even and $n=(d+1)/2$ gives $2n-1=d$ for $d$ odd, so $\mathrm{Sec}_n(C)=\PP^N$ and $\xi\in\mathrm{Sec}_n(C)$.
+
+By the Lemma of Lange, §2, if the class of an extension lies in $\mathrm{Sec}_n(C)$ then $s(\mathcal E)\le2n-d$. His proof, which he repeats there, is this: $\xi\in\mathrm{Sec}_n(C)$ means that there is an effective divisor $D$ of degree $n$ with $\xi$ in the kernel of $H^0(C,K_C\otimes\mathcal L)^\vee\to H^0(C,K_C\otimes\mathcal L(-D))^\vee$, that is, by Serre duality, in the kernel of $H^1(C,\mathcal L^{-1})\to H^1(C,\mathcal M^{-1})$ with $\mathcal M=\mathcal L(-D)$; then $\mathcal M\subseteq\mathcal E$ is a sublinebundle of degree $d-n$, so
+$$
+s(\mathcal E)=c_1(\mathcal E)-2\max c_1\le d-2(d-n)=2n-d.
+$$
+Hence
+$$
+d=s(\mathcal E)\le2n-d\le d+2-d=2=g,
+$$
+the middle inequality because $2n\le2+d$, a contradiction with $d\ge3$. So $d\le2$, that is $e=-d\ge-2$.
+
+The Lemma is stated in the paper after that reduction, so for $d\ge3$, which is the case here; no separate argument for $d=3$ is needed.
+
+The proof of the theorem in Lange's paper opens by supposing without loss of generality that $\mathcal E$ sits in an extension with quotient of degree $d\ge3$, a reduction it states and does not argue; that reduction is not used here. What is used is the part of his proof that is argued, the dimension theorem of §1 and the Lemma of §2, stated for $d\ge3$ as the paper's reduction gives it, over the algebraically closed field of arbitrary characteristic that the paper names in its introduction, and the hypothesis $d\ge3$ of the contradiction is exactly the case in which the reduction would have been needed.
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (a) from Gunning's Theorems 13 and 14, which are stated over a compact Riemann surface. Steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (b) over an algebraically closed field of characteristic zero: steps [](#s5){.pf-ref} and [](#s6){.pf-ref} carry Proposition 1.1 of Lange and Narasimhan, and steps [](#s7){.pf-ref} and [](#s8){.pf-ref} are the card's own and reach the cases $d=1$ and $g=1$ that its hypotheses exclude. Steps [](#s9){.pf-ref} and [](#s10){.pf-ref} prove part (c) for $g\ge2$ over a field of characteristic zero, from Corollary 1.2, and for $g=1$ from Example 2.11.6. Step [](#s11){.pf-ref} proves part (d) from the statement of Lange's Theorem $s(\mathcal E)\le g$, stated over an algebraically closed field of arbitrary characteristic.
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (a) over an algebraically closed field of any characteristic: the construction uses only $\Ext^1\cong H^1$ and Serre duality, and Gunning's Theorems 13 and 14 state the same identifications over a compact Riemann surface. Steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (b) over an algebraically closed field of any characteristic: [](#s5){.pf-ref} and [](#s6){.pf-ref} identify the extension class by Serre duality, and [](#s7){.pf-ref} and [](#s8){.pf-ref} are the card's own and run the pullback square, reaching also the cases $d=1$ and $g=1$ that the proposition's hypotheses exclude. Steps [](#s9){.pf-ref} and [](#s10){.pf-ref} prove part (c) for $g\ge2$ by the avoidance argument and for $g=1$ from Example 2.11.6, both characteristic-free. Step [](#s11){.pf-ref} proves part (d) at $g=2$ from the dimension theorem of Lange's §1 and the Lemma of his §2, both argued in the paper and stated there over an algebraically closed field of arbitrary characteristic, in the case $d=-e\ge3$, without the reduction that his §2 Theorem assumes without proof.
 
 :::
 
@@ -465,17 +621,17 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 :::
 
 ::: {.remark title="Published solution"}
-(a) Gunning's Theorem 13, printed pp. 71--74, identifies the extensions of one line bundle by another with a first cohomology group, and his Theorem 14, printed pp. 87--90, parametrizes the indecomposable bundles with a given subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$; with $\varphi=\OO_C$ and $\xi$ of degree $-e$ that space is $\PP H^1(C,\mathcal L^{-1})$, nonempty by Serre duality, which is steps [](#s1){.pf-ref} to [](#s4){.pf-ref}. Gunning works over a compact Riemann surface.
+(a) Gunning's Theorem 13, identifies the extensions of one line bundle by another with a first cohomology group, and his Theorem 14, parametrizes the indecomposable bundles with a given subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$; with $\varphi=\OO_C$ and $\xi$ of degree $-e$ that space is $\PP H^1(C,\mathcal L^{-1})$, nonempty by Serre duality, which is steps [](#s1){.pf-ref} to [](#s4){.pf-ref}. Gunning works over a compact Riemann surface; the steps use only the characteristic-free identifications $\Ext^1\cong H^1$ and Serre duality, so they give part (a) over any algebraically closed field.
 
-(b) Lange and Narasimhan, Proposition 1.1, printed p. 57, is the criterion the printed "Cf. proof of (2.15)" points at, and the book's proof of Theorem 2.15, printed pp. 377--379, runs one direction of it: normalization makes the map $\gamma$ injective. Their Proposition 1.1 assumes $d\ge2$ when $g\ge2$, so the cases $d=1$ and $g=1$ lie outside it, and their field is an algebraically closed field of characteristic zero; steps [](#s7){.pf-ref} and [](#s8){.pf-ref} carry those two cases.
+(b) Lange and Narasimhan, Proposition 1.1, is the criterion the printed "Cf. proof of (2.15)" points at, and the book's proof of Theorem 2.15, runs one direction of it: normalization makes the map $\gamma$ injective. Their Proposition 1.1 assumes $d\ge2$ when $g\ge2$, so the cases $d=1$ and $g=1$ lie outside it, and their field is an algebraically closed field of characteristic zero; the two directions in steps [](#s7){.pf-ref} and [](#s8){.pf-ref} use only the pullback square, so part (b) holds over any algebraically closed field, and they carry those two cases.
 
-(c) Their Corollary 1.2, printed p. 58, gives for $g\ge2$ and $0<c_1(L_2)-c_1(L_1)=s\le g$ an extension with $s(E)=s$; with line bundles of degrees $d$ and $2d$, $d=-e$, its twist by the inverse of the subbundle has invariant $e$. Their proof is the dimension count $\dim\mathrm{Sec}_{s-2}(X)\le2s-3<g+s-2=\dim\PP$ that the exercise's hint asks for, over a field of characteristic zero.
+(c) Step [](#s9){.pf-ref} proves the existence for $g\ge2$ in every characteristic by the avoidance argument the hint names: the bad classes for the effective divisors $E$ of degree $d-1$ form a family of dimension $2d-3$ in $\PP H^1(\OO(-D))$, which has dimension $g-2+d$, and $2d-3<g-2+d$ because $d\le g$; a general class is therefore normalized and gives a non-split extension, the invariant being $-\deg\det=-d=e$. Lange and Narasimhan's Corollary 1.2, gives the same existence for $g\ge2$ over characteristic zero by the secant-variety count $\dim\mathrm{Sec}_{s-2}(X)\le2s-3<g+s-2=\dim\PP$.
 
-(d) Lange, *Higher secant varieties of curves and the theorem of Nagata on ruled surfaces*, §2, printed pp. 267--268, proves $s(E)\le g$ for every rank-two bundle, over an algebraically closed field of arbitrary characteristic; for a normalized bundle $s(E)=\deg\det E=-e$, so $e\ge-g$, and $e\ge-2$ at $g=2$. That is the bound the printed Note attributes to Nagata [8].
+(d) Lange, *Higher secant varieties of curves and the theorem of Nagata on ruled surfaces*: the dimension theorem of §1, that $\dim\mathrm{Sec}_n(C)=\min(2n-1,N)$ for a nondegenerate curve in $\PP^N$, and the Lemma of §2, that a class of an extension lying in $\mathrm{Sec}_n(C)$ forces $s(E)\le2n-d$; the paper states an algebraically closed field of arbitrary characteristic. For a normalized bundle $s(E)=\deg\det E=-e$, and with $d=-e\ge3$ one gets $d\le2$, so $e\ge-2$ at $g=2$. That is the bound the printed Note attributes to Nagata [8]. The reduction to a quotient of degree $d\ge3$ that opens the proof of his Theorem is stated there and not argued, and step [](#s11){.pf-ref} does not use it.
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.5. Part (b) he proves: with $\xi\in H^1(\mathcal L(-D))$ the class of the extension and $\gamma:H^0(\mathcal L(D+K-E))\to H^1(\mathcal L(-E))$, injectivity of $\gamma$ is equivalent to $\mathcal E$ being normalized, and he runs the commutative square with $H^0(\OO_C)\to H^1(\mathcal L(-D))\to H^1(\mathcal L(-E))$ in both directions. For (a) he writes "This will get us all invariants for this problem with the help of thm V.2.12. This is F,P thm 4.12.4", a citation to Fuentes--Pedreira's Theorem 4.12(4), printed pp. 31--32, which takes a decomposable surface and an elementary transformation at a point outside $X_0$ and $X_1$ over a base point $P$ of $-\mfe$ and returns an indecomposable surface with invariant $e-1$; one application to the decomposable surface of invariant $e+1$ gives an indecomposable surface of invariant $e$, the base point $P$ being the one condition the theorem asks for. For (c) he writes "By proof of (a), I only need to find one with invariant $-g$ ... This is given by 3.13 in Maruyama", a citation to Maruyama. Part (d) he answers "By Theorem 1 in Nagata 'Self-intersection number'", which is the source of the printed Note, and step [](#s11){.pf-ref} gives that bound from Lange's Theorem.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.5. Part (b) he proves: with $\xi\in H^1(\mathcal L(-D))$ the class of the extension and $\gamma:H^0(\mathcal L(D+K-E))\to H^1(\mathcal L(-E))$, injectivity of $\gamma$ is equivalent to $\mathcal E$ being normalized, and he runs the commutative square with $H^0(\OO_C)\to H^1(\mathcal L(-D))\to H^1(\mathcal L(-E))$ in both directions. For (a) he writes "This will get us all invariants for this problem with the help of thm V.2.12. This is F,P thm 4.12.4", a citation to Fuentes--Pedreira's Theorem 4.12(4), which takes a decomposable surface and an elementary transformation at a point outside $X_0$ and $X_1$ over a base point $P$ of $-\mfe$ and returns an indecomposable surface with invariant $e-1$; one application to the decomposable surface of invariant $e+1$ gives an indecomposable surface of invariant $e$, the base point $P$ being the one condition the theorem asks for. For (c) he writes "By proof of (a), I only need to find one with invariant $-g$ ... This is given by 3.13 in Maruyama", a citation to Maruyama. Part (d) he answers "By Theorem 1 in Nagata 'Self-intersection number'", which is the source of the printed Note, and step [](#s11){.pf-ref} gives the $g=2$ case from the dimension theorem of Lange's §1 and the Lemma of his §2.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.5, printed p. 103, treats all four parts. For (a) it argues that $\Ext^1(\mathcal L,\OO_C)\cong H^0(C,\omega_C\tensor\mathcal L)$ "and $\deg\omega_C\tensor\mathcal L=2g-2-e\ge0$, hence $\Ext^1$ is nontrivial": a line bundle of nonnegative degree on a curve of genus $g$ need not have a section, and the correct bound is $h^0\ge\deg-g+1=g-1-e$, which is negative for $e\ge g-1$. Step [](#s1){.pf-ref} avoids the issue by taking $\mathcal L=\OO_C(A-K_C)$ with $A$ effective, so that $H^0(\OO_C(A))\ne0$ directly. Its (b) is the square of step [](#s6){.pf-ref} written out; its (c) is the dimension count of step [](#s9){.pf-ref}; its (d) is garbled ("all $\ker\xi$ form the Grassmannian $G^{d+1}_d$, which has dimension $d$ ... so we have $d\le2(d-1)$").
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.5, treats all four parts. For (a) it argues that $\Ext^1(\mathcal L,\OO_C)\cong H^0(C,\omega_C\tensor\mathcal L)$ "and $\deg\omega_C\tensor\mathcal L=2g-2-e\ge0$, hence $\Ext^1$ is nontrivial": a line bundle of nonnegative degree on a curve of genus $g$ need not have a section, and the correct bound is $h^0\ge\deg-g+1=g-1-e$, which is negative for $e\ge g-1$. Step [](#s1){.pf-ref} avoids the issue by taking $\mathcal L=\OO_C(A-K_C)$ with $A$ effective, so that $H^0(\OO_C(A))\ne0$ directly. Its (b) is the square of step [](#s6){.pf-ref} written out; its (c) is the dimension count of step [](#s9){.pf-ref}; its (d) is garbled ("all $\ker\xi$ form the Grassmannian $G^{d+1}_d$, which has dimension $d$ ... so we have $d\le2(d-1)$").
 
 Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, has no entry for Exercise 5 of §2.
 :::

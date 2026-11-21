@@ -48,6 +48,18 @@ audit:
     1 on B_{i+1} - B_i, which is right, but states the conclusion as z in U(y,B) cap U; the card
     states both memberships. This supersedes the previous note, which recorded that only the book's
     outline had been found.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card stood in queue D: its solution was prose with no numbered step. It is now a `pf`
+    with eleven steps, one for each move of the proof, each carrying a `pf-proof`; the claims
+    are the prose's own, distributed and not weakened, and the exercise statement is untouched.
+    Cited by number only: the definition of the product topology, the closedness of
+    $\ZZ_+$ in $\RR$, and the fact that a closed subspace of a normal space is normal (proved
+    in the last step). Checked: that $B_{i+1}\subseteq A$ makes $B\cap B_{i+1}$ contained in
+    $B_i$, which is what makes the two coordinate prescriptions compatible, and that
+    $\mathbf x_i$ and $\mathbf y$ lie in $P_1$ and $P_2$ respectively.
 ---
 
 ::: {.exercise}
@@ -119,59 +131,170 @@ is not empty.
 :::
 
 ::: {.solution}
+
 Let $X=(\ZZ_+)^J$, with each factor discrete.
 
-(a) In the product topology, a basic open set specifies open conditions in only finitely many coordinates. Since the factors are discrete, we may refine each specified coordinate condition to a singleton. Thus the sets
+::: pf
+
+::: pf-step
+
+In the product topology the sets
 $$
 U(\mathbf x,B)=\{\mathbf y:\mathbf y(\alpha)=\mathbf x(\alpha)\text{ for all }\alpha\in B\},
 $$
 with $B\subset J$ finite, form a basis.
 
-(b) The complement of $P_n$ is open. Indeed, $\mathbf x\notin P_n$ exactly when there are distinct $\alpha,\beta\in J$ and an integer $m\ne n$ such that
-$$
-\mathbf x(\alpha)=\mathbf x(\beta)=m.
-$$
-The cylinder imposing these two equalities is an open neighborhood of $\mathbf x$ contained in $X\setminus P_n$. Hence $P_n$ is closed.
+::: pf-proof
 
-The sets $P_1$ and $P_2$ are disjoint. If $\mathbf x$ belonged to both, then no two distinct coordinates could have the same value: a repetition at value $1$ is forbidden by membership in $P_2$, a repetition at value $2$ is forbidden by membership in $P_1$, and a repetition at any other value is forbidden by both. Thus $\mathbf x:J\to\ZZ_+$ would be injective, impossible because $J$ is uncountable.
+A basis element of the product $\prod_{\alpha}(\ZZ_+)_\alpha$ is a product $\prod_\alpha V_\alpha$ with each $V_\alpha$ open in the discrete factor $\ZZ_+$ and $V_\alpha=\ZZ_+$ for all but finitely many $\alpha$. Since every subset of a discrete space is open, $V_\alpha$ may be replaced by the singleton $\{\mathbf x(\alpha)\}$ at each of the finitely many constrained coordinates; what remains is exactly $U(\mathbf x,B)$ with $B$ the finite set of constrained coordinates. Every $U(\mathbf x,B)$ is itself such a product, hence open, and it contains $\mathbf x$. So the family is a basis for the topology.
 
-(c) We construct the sequences recursively. For $i=1$, $\mathbf x_1$ is the constant function $1$, hence lies in $P_1\subset U$. By (a), choose a finite set $C_1\subset J$ such that
+:::
+
+:::
+
+::: pf-step
+
+Each $P_n$ is closed: if $\mathbf x\notin P_n$ then $\mathbf x$ is not injective on $J\setminus\mathbf x^{-1}(n)$, so there are distinct $\alpha,\beta\in J$ and an integer $m\ne n$ with
 $$
-U(\mathbf x_1,C_1)\subset U.
+\mathbf x(\alpha)=\mathbf x(\beta)=m,
 $$
-Enumerate the elements of $C_1$ among distinct points $\alpha_1,\dots,\alpha_{n_1}$, enlarging if necessary so $n_1>0$. Then
+and then $U(\mathbf x,\{\alpha,\beta\})$ is an open neighbourhood of $\mathbf x$ inside $X\setminus P_n$.
+
+::: pf-proof
+
+$\mathbf x\notin P_n$ says exactly that the restriction of $\mathbf x$ to $J\setminus\mathbf x^{-1}(n)$ is not injective, that is, that two distinct coordinates outside $\mathbf x^{-1}(n)$ carry one value $m$; being outside $\mathbf x^{-1}(n)$ means $m\ne n$. If $\mathbf y\in U(\mathbf x,\{\alpha,\beta\})$ then $\mathbf y(\alpha)=\mathbf y(\beta)=m\ne n$, so $\mathbf y$ also fails to be injective off $\mathbf y^{-1}(n)$ and $\mathbf y\notin P_n$. Thus $U(\mathbf x,\{\alpha,\beta\})\subseteq X\setminus P_n$, and $X\setminus P_n$ is open.
+
+:::
+
+:::
+
+::: pf-step
+
+$P_1$ and $P_2$ are disjoint: a point of $P_1\cap P_2$ would be an injective map $J\to\ZZ_+$, which is impossible for uncountable $J$.
+
+::: pf-proof
+
+Let $\mathbf x\in P_1\cap P_2$ and let $\alpha\ne\beta$ be two coordinates. If $\mathbf x(\alpha)=\mathbf x(\beta)=1$ then the repetition occurs off $\mathbf x^{-1}(2)$, contradicting $\mathbf x\in P_2$; if the common value is $2$ the repetition occurs off $\mathbf x^{-1}(1)$, contradicting $\mathbf x\in P_1$; if it is $m\ne1,2$ it occurs off both $\mathbf x^{-1}(1)$ and $\mathbf x^{-1}(2)$, contradicting either membership. So no two distinct coordinates carry the same value: $\mathbf x$ is injective. An injection of the uncountable set $J$ into the countable set $\ZZ_+$ does not exist, so $P_1\cap P_2=\varnothing$.
+
+:::
+
+:::
+
+::: pf-step
+
+For $i=1$: $\mathbf x_1\equiv1$ lies in $P_1\subset U$, so there is a finite $C_1\subset J$ with $U(\mathbf x_1,C_1)\subset U$; enumerating $C_1$ among distinct points $\alpha_1,\dots,\alpha_{n_1}$, with $n_1>0$, gives
 $$
-U(\mathbf x_1,B_1)\subset U(\mathbf x_1,C_1)\subset U.
+U(\mathbf x_1,B_1)\subset U(\mathbf x_1,C_1)\subset U,
+\qquad B_1=\{\alpha_1,\dots,\alpha_{n_1}\}.
 $$
 
-Suppose $\alpha_1,\dots,\alpha_{n_{i-1}}$ and $n_{i-1}$ have been chosen. Define $\mathbf x_i$ as in the problem. Outside the value $1$, its values are among $2,\dots,n_{i-1}$, each occurring at most once, so $\mathbf x_i\in P_1\subset U$. Choose a finite $C_i\subset J$ with
+::: pf-proof
+
+The constant function $1$ has $\mathbf x_1^{-1}(1)=J$, so off that set (the empty set) it is injective, that is $\mathbf x_1\in P_1\subseteq U$. Since $U$ is open and the sets of step 1 are a basis, some $U(\mathbf x_1,C_1)$ with $C_1$ finite contains $\mathbf x_1$ and lies in $U$; enlarging $C_1$ shrinks $U(\mathbf x_1,C_1)$, so $C_1$ may be taken nonempty. Listing $C_1$ as the first $n_1$ of the $\alpha_j$'s gives $C_1\subseteq B_1$, and $U(\mathbf x_1,B_1)\subseteq U(\mathbf x_1,C_1)$ because prescribing more coordinates shrinks the set.
+
+:::
+
+:::
+
+::: pf-step
+
+For the recursion step: given $\alpha_1,\dots,\alpha_{n_{i-1}}$ and $\mathbf x_i$ defined by
 $$
-U(\mathbf x_i,C_i)\subset U.
+\mathbf x_i(\alpha_j)=j\ \ (1\le j\le n_{i-1}),
+\qquad
+\mathbf x_i(\alpha)=1\ \ \text{otherwise},
 $$
-Since $J$ is uncountable and only finitely many $\alpha_j$ have been used, extend the sequence by finitely many new distinct $\alpha_j$'s so that $C_i\subset B_i=\{\alpha_1,\dots,\alpha_{n_i}\}$ for some $n_i>n_{i-1}$. Then
+one has $\mathbf x_i\in P_1\subset U$.
+
+::: pf-proof
+
+Off $\mathbf x_i^{-1}(1)=\{\alpha_1,\dots,\alpha_{n_{i-1}}\}$ the function $\mathbf x_i$ takes the values $1,2,\dots,n_{i-1}$ at the distinct points $\alpha_1,\dots,\alpha_{n_{i-1}}$, and those values are distinct, so $\mathbf x_i$ is injective there. Hence $\mathbf x_i\in P_1$, and $P_1\subseteq U$ by hypothesis.
+
+:::
+
+:::
+
+::: pf-step
+
+There is a finite $C_i\subset J$ with $U(\mathbf x_i,C_i)\subset U$, and since $J$ is uncountable while only finitely many $\alpha_j$ have been used, the list can be extended so that $C_i\subset B_i=\{\alpha_1,\dots,\alpha_{n_i}\}$ with $n_i>n_{i-1}$; then
 $$
 U(\mathbf x_i,B_i)\subset U.
 $$
-This completes the recursion.
 
-(d) The function $\mathbf y$ lies in $P_2$: outside the value $2$, its values on $A=\{\alpha_j\}$ are distinct, and all points outside $A$ have value $2$. Hence $\mathbf y\in V$. Choose a finite $B\subset J$ with
+::: pf-proof
+
+$U$ is open and contains $\mathbf x_i$ by step 5, so the basis of step 1 gives a finite $C_i$ with $\mathbf x_i\in U(\mathbf x_i,C_i)\subseteq U$. Only the finitely many points $\alpha_1,\dots,\alpha_{n_{i-1}}$ and the finitely many points of $C_i$ have been named; $J$ is uncountable, so there are distinct new points $\alpha_{n_{i-1}+1},\dots,\alpha_{n_i}$ completing $C_i$ to $B_i$, with $n_i>n_{i-1}$. Prescribing the extra coordinates shrinks the set, so $U(\mathbf x_i,B_i)\subseteq U(\mathbf x_i,C_i)\subseteq U$.
+
+:::
+
+:::
+
+::: pf-step
+
+The function $\mathbf y$ defined by $\mathbf y(\alpha_j)=j$ on $A$ and $\mathbf y(\alpha)=2$ elsewhere lies in $P_2\subset V$, so there is a finite $B\subset J$ with $U(\mathbf y,B)\subset V$.
+
+::: pf-proof
+
+$\mathbf y^{-1}(2)=J\setminus A$, and on $A$ the values $\mathbf y(\alpha_j)=j$ are distinct, so $\mathbf y$ is injective off $\mathbf y^{-1}(2)$; hence $\mathbf y\in P_2\subseteq V$. $V$ is open, so the basis of step 1 gives a finite $B$ with $\mathbf y\in U(\mathbf y,B)\subseteq V$.
+
+:::
+
+:::
+
+::: pf-step
+
+Because $B\cap A$ is finite, there is $i$ with $B\cap A\subset B_i$.
+
+::: pf-proof
+
+$A=\{\alpha_1,\alpha_2,\dots\}$ and the sets $B_i=\{\alpha_1,\dots,\alpha_{n_i}\}$ increase with $i$ and exhaust $A$. A finite subset $B\cap A$ of the union therefore lies in some $B_i$: each of its finitely many points is some $\alpha_j$, and $B_i$ contains all $\alpha_j$ with $j\le n_i$.
+
+:::
+
+:::
+
+::: pf-step
+
+With such an $i$, the two coordinate prescriptions are compatible and
 $$
-U(\mathbf y,B)\subset V.
-$$
-Because $B\cap A$ is finite, choose $i$ such that
-$$
-B\cap A\subset B_i.
+U(\mathbf x_{i+1},B_{i+1})\cap U(\mathbf y,B)\ne\varnothing.
 $$
 
-The coordinate prescriptions defining $U(\mathbf x_{i+1},B_{i+1})$ and $U(\mathbf y,B)$ are compatible. On $B\cap B_{i+1}$, every coordinate lies in $B\cap A\subset B_i$, and for $\alpha_j\in B_i$ both functions take the value $j$. On coordinates of $B\setminus A$, only $\mathbf y$ prescribes a value, and on coordinates of $B_{i+1}\setminus B$, only $\mathbf x_{i+1}$ does. Hence one can define a function $\mathbf z:J\to\ZZ_+$ agreeing with both prescriptions on $B\cup B_{i+1}$, arbitrarily elsewhere. Then
-$$
-\mathbf z\in U(\mathbf x_{i+1},B_{i+1})\cap U(\mathbf y,B).
-$$
-Thus every open $U\supset P_1$ and $V\supset P_2$ intersect, so the disjoint closed sets $P_1,P_2$ cannot be separated by disjoint open neighborhoods. Hence $X$ is not normal.
+::: pf-proof
 
-Finally, $X=(\ZZ_+)^J$ is closed in $\RR^J$, since
+A point of the intersection must satisfy $\mathbf z(\alpha)=\mathbf x_{i+1}(\alpha)$ on $B_{i+1}$ and $\mathbf z(\alpha)=\mathbf y(\alpha)$ on $B$. The two prescriptions can conflict only on $B\cap B_{i+1}$, and $B_{i+1}\subseteq A$, so $B\cap B_{i+1}=B\cap A\cap B_{i+1}\subseteq B_i$ by step 8; there $\mathbf x_{i+1}(\alpha_j)=j=\mathbf y(\alpha_j)$ because $j\le n_i$. On $B\setminus A$ only $\mathbf y$ prescribes a value, and $B\setminus A$ meets $B_{i+1}\subseteq A$ in nothing; on $B_{i+1}\setminus B$ only $\mathbf x_{i+1}$ prescribes one. So defining $\mathbf z$ to equal the common prescription on $B\cup B_{i+1}$ and $1$ elsewhere gives a function $J\to\ZZ_+$ lying in both sets.
+
+:::
+
+:::
+
+::: pf-step
+
+Hence every open $U\supset P_1$ and open $V\supset P_2$ intersect, so the disjoint closed sets $P_1,P_2$ are not separated by disjoint open sets, and $X$ is not normal.
+
+::: pf-proof
+
+Given such $U$ and $V$, steps 4--6 produce the sequences and step 7 produces $B$, after which steps 8 and 9 produce a point of $U(\mathbf x_{i+1},B_{i+1})\cap U(\mathbf y,B)\subseteq U\cap V$. So $U\cap V\ne\varnothing$ for every pair of open sets containing $P_1$ and $P_2$; since $P_1$ and $P_2$ are disjoint and closed by steps 2 and 3, they are closed sets that cannot be separated, and $X$ is not normal.
+
+:::
+
+:::
+
+::: pf-step
+
+Finally $X=(\ZZ_+)^J$ is closed in $\RR^J$, since
 $$
 X=\bigcap_{\alpha\in J}\pi_\alpha^{-1}(\ZZ_+)
 $$
-and $\ZZ_+$ is closed in $\RR$. If $\RR^J$ were normal, its closed subspace $X$ would be normal, contradiction. Therefore $\RR^J$ is not normal for uncountable $J$.
+and $\ZZ_+$ is closed in $\RR$; a closed subspace of a normal space is normal, so $\RR^J$ is not normal for uncountable $J$.
+
+::: pf-proof
+
+Each $\pi_\alpha$ is continuous, so $\pi_\alpha^{-1}(\ZZ_+)$ is closed in $\RR^J$ when $\ZZ_+$ is closed in $\RR$; an intersection of closed sets is closed, and a point of $\RR^J$ lies in all of them exactly when every coordinate is a positive integer, which is $X$. For the last step: if $F,G$ are disjoint closed subsets of a closed subspace $A$ of a normal space $Y$, then $F,G$ are closed in $Y$ and have disjoint open neighbourhoods in $Y$, whose intersections with $A$ separate them in $A$; so $A$ is normal. If $\RR^J$ were normal, its closed subspace $X$ would be normal, which step 10 denies.
+
+:::
+
+:::
+
+:::
 :::

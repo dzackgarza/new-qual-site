@@ -5,7 +5,9 @@ kind: problem
 title: 'Uniqueness of finite measures agreeing on a generating algebra'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Measure Theory
+  - Monotone Convergence Theorem
 relations: []
 review: draft
 audit:

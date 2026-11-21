@@ -49,6 +49,41 @@ audit:
     $[0,1]^J$ on the ground that it is not locally compact; that is withdrawn. The $\sigma$-compact part of
     the proof below is unchanged and is what the printed skeleton yields. Not checked here: nothing beyond
     the printed exercise's own proof outline is claimed.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against §41 Exercise 10 and found correct, with the printed statement itself the
+    only source and it false. Searched the retained sets first: Poulsen's sheets are §31, §33, §34,
+    §35 and §38, dbFin's index stops at §67 with a gap between §56 and it, and no other set in the
+    checkout reaches §41, so there is nothing to transcribe and none is claimed. The
+    counterexample: for uncountable $J$ the space $X=[0,1]^J$ is Hausdorff and compact by the
+    Tychonoff theorem, hence locally compact and paracompact, and connected by Theorem 23.6, so it
+    is its own component; and it has no countable basis, so the printed conclusion fails. The
+    corrected statement is that each component is a countable union of compact subspaces, and the
+    card proves it: with a locally finite cover of the component by open sets with compact closures,
+    only finitely many members meet a compact closure, so $U_n$ is a finite union of sets with
+    compact closures and its closure is compact by induction, while the union of the $U_n$ is open
+    and closed in the component and hence all of it. Both halves were re-read; the induction and the
+    open-and-closed argument are the printed proof's, carried out. Not checked: whether the book
+    records this erratum anywhere, no errata sheet being in the checkout.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 second read, on the verification member's report of this card. Three repairs in the
+    text. The printed skeleton opens "let $\mathcal C$ be a locally finite covering of $X_0$ by
+    sets open in $X_0$ that have compact closures", and the card used $\mathcal C$ without
+    deriving it; a new first step derives it from local compactness and paracompactness of $X_0$,
+    the closure of a member of a refinement lying in the compact closure of the member refined.
+    In the counterexample, "regular (Theorem 32.3)" cited a theorem that gives normality: the
+    step now says compact Hausdorff is normal with one-point sets closed. And "§41, the definition
+    and the remark after it" is corrected, the remark that a compact space is paracompact standing
+    before the definition. Recorded, since audit text is kept as written (QUAL-11): the 2026-11-20
+    event says $X$ is "connected by Theorem 23.6", which is the finite-product statement and does
+    not cover an uncountable product --- the proof uses path connectedness through Theorem 19.6
+    and §24 --- and it places the exercise on a page it does not occupy. No other step changed.
+
 ---
 
 ::: {.exercise}
@@ -64,12 +99,21 @@ Show that $\overline{U}_n$ is compact, and the sets $U_n$ cover $X_0$.
 :::
 
 ::: {.solution}
-The printed conclusion is false. Let $J$ be an uncountable set and let $X=[0,1]^J$ carry the product topology. Then $X$ is compact by the Tychonoff theorem (Theorem 37.3) and Hausdorff, being a product of Hausdorff spaces (Theorem 19.4); hence $X$ is locally compact, since a compact space is automatically locally compact (§29, the remark following the definition), and paracompact, since a finite open covering is a locally finite one and a compact space is therefore paracompact (§41, the definition and the remark after it). $X$ is connected: for $x,y\in X$ the map $\gamma:[0,1]\to X$ whose $\alpha$-th coordinate is $(1-t)x_\alpha+ty_\alpha$ is a path from $x$ to $y$, since each of its coordinate functions is continuous and $X$ carries the product topology (Theorem 19.6), and a path connected space is connected (§24). So $X$ is a component of itself, and it has no countable basis: a compact Hausdorff space with a countable basis is regular (Theorem 32.3) and hence metrizable by the Urysohn metrization theorem (Theorem 34.1), while $X$ is not metrizable, because it fails the sequence lemma (Lemma 21.2) --- the set $A$ of points of $X$ that are $1$ in all but finitely many coordinates has $0$ in its closure, and a sequence in $A$ is $1$ in some coordinate outside the countable set of coordinates in which its terms differ from $1$, so it does not converge to $0$; this is the argument of Example 2 of §21.
+The printed conclusion is false. Let $J$ be an uncountable set and let $X=[0,1]^J$ carry the product topology. Then $X$ is compact by the Tychonoff theorem (Theorem 37.3) and Hausdorff, being a product of Hausdorff spaces (Theorem 19.4); hence $X$ is locally compact, since a compact space is automatically locally compact (§29, the remark following the definition), and paracompact, since a finite open covering is a locally finite one and a compact space is therefore paracompact (the remark opening §41, before the definition of paracompactness). $X$ is connected: for $x,y\in X$ the map $\gamma:[0,1]\to X$ whose $\alpha$-th coordinate is $(1-t)x_\alpha+ty_\alpha$ is a path from $x$ to $y$, since each of its coordinate functions is continuous and $X$ carries the product topology (Theorem 19.6), and a path connected space is connected (§24). So $X$ is a component of itself, and it has no countable basis: a compact Hausdorff space with a countable basis is regular, being compact Hausdorff and so normal (Theorem 32.3) with one-point sets closed, and hence metrizable by the Urysohn metrization theorem (Theorem 34.1), while $X$ is not metrizable, because it fails the sequence lemma (Lemma 21.2) --- the set $A$ of points of $X$ that are $1$ in all but finitely many coordinates has $0$ in its closure, and a sequence in $A$ is $1$ in some coordinate outside the countable set of coordinates in which its terms differ from $1$, so it does not converge to $0$; this is the argument of Example 2 of §21.
 
 So the hypothesis holds and the conclusion fails. What the printed proof establishes, and what is proved below, is the corrected statement: each component of $X$ is a countable union of compact subspaces. Closures are taken in $X_0$.
 
 
 ::: pf
+
+::: {.pf-step #cover-exists}
+There is a locally finite covering $\mathcal{C}$ of $X_0$ by sets open in $X_0$ that have compact closures.
+
+::: pf-proof
+Local compactness gives, for each $x\in X_0$, an open neighbourhood $V_x$ of $x$ in $X_0$ whose closure is compact (§29). The family $\{V_x\}_{x\in X_0}$ is an open cover of $X_0$, which is paracompact, so it has an open locally finite refinement $\mathcal{C}$ covering $X_0$; each $C\in\mathcal{C}$ lies in some $V_x$, so $\overline{C}\subseteq\overline{V_x}$ is compact.
+:::
+
+:::
 
 ::: {.pf-step #closures-compact}
 $\overline{U}_n$ is compact for every $n \ge 1$.

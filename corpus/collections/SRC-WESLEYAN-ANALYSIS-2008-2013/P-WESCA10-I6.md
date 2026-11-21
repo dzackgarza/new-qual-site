@@ -5,7 +5,8 @@ kind: problem
 title: 'Define a branch of the logarithm'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Complex Logarithm
 relations: []
 review: draft
 audit:

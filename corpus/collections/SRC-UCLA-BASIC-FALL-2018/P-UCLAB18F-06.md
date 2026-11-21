@@ -6,7 +6,9 @@ title: A parameter integral and its C1 inverse
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Improper Integrals
+  - Inverse Functions
 relations: []
 review: draft
 audit:

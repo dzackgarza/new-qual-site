@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB12W-03
 kind: problem
 title: Bolzano–Weierstrass theorem on the unit interval
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Bolzano-Weierstrass Theorem, Compactness]}
 relations: []
 review: draft
 audit:

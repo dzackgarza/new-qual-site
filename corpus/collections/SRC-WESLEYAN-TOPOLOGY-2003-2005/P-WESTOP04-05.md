@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP04-05
 kind: problem
 title: Classify a surface obtained from a labeled hexagon
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Classification of Surfaces]}
 relations: []
 review: draft
 audit:

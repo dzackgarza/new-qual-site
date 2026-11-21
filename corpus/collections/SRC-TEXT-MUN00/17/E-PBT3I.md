@@ -27,6 +27,11 @@ audit:
     Chapter 2" (1 January 2021), Exercise 17.3, PDF p. 6. The complement of A x B is the
     union of (X - A) x Y and X x (Y - B), which are product basis elements because A and B
     are closed. (tmp/sources/munkres-solutions-positron-ch2.pdf).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into STYLE-08: the complement identity, then closedness of $A\times B$. Re-checked that $X-A$ and $Y-B$ are open and that a product of open sets is a basis element of the product topology (printed p. 86). No statement change.
 ---
 
 ::: {.exercise}
@@ -35,15 +40,33 @@ Show that if $A$ is closed in $X$ and $B$ is closed in $Y$, then $A \times B$ is
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.3, PDF p. 6** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the argument is theirs. Whitman's printed p. 159 has the same proof, with the identity below verified pointwise.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.3** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the argument is theirs. Whitman's printed p. 159 has the same proof, with the identity below verified pointwise.
 
-Since $A$ is closed in $X$, the set $X-A$ is open in $X$; since $B$ is closed in $Y$, the set $Y-B$ is open in $Y$. For a point $(x,y)\in X\times Y$,
-$$
-(x,y)\in A\times B\iff x\in A \text{ and } y\in B,
-$$
-so
-$$
-X\times Y-A\times B=\big((X-A)\times Y\big)\cup\big(X\times(Y-B)\big).
-$$
-The two sets on the right are basis elements of the product topology on $X\times Y$, hence open, so their union is open and $A\times B$ is closed in $X\times Y$.
+::: pf
+
+::: {.pf-step #diff}
+
+$X\times Y-A\times B=\big((X-A)\times Y\big)\cup\big(X\times(Y-B)\big)$.
+
+::: pf-proof
+
+A point $(x,y)\in X\times Y$ lies in $A\times B$ exactly when $x\in A$ and $y\in B$. Negating, $(x,y)$ lies outside $A\times B$ exactly when $x\notin A$ or $y\notin B$, that is exactly when $(x,y)\in(X-A)\times Y$ or $(x,y)\in X\times(Y-B)$.
+
+:::
+
+:::
+
+::: pf-step
+
+$A\times B$ is closed in $X\times Y$.
+
+::: pf-proof
+
+Since $A$ is closed in $X$, the set $X-A$ is open in $X$, so $(X-A)\times Y$ is a basis element of the product topology on $X\times Y$ and hence open; since $B$ is closed in $Y$, likewise $X\times(Y-B)$ is open. By step [](#diff){.pf-ref} the complement of $A\times B$ is the union of these two open sets, hence open, so $A\times B$ is closed in $X\times Y$.
+
+:::
+
+:::
+
+:::
 :::

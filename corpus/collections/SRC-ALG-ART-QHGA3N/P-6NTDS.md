@@ -12,6 +12,20 @@ classification:
   - Centralizers and Normalizers
 relations: []
 review: draft
+audit:
+  - event: solution-reviewed
+    by: claude
+    date: 2026-11-19
+    note: >-
+      Read against the Lamport standard and checked mathematically. Step s1: |Z(G)| is 1, p, p^2 or
+      p^3 by Lagrange; not p^3 because G is nonabelian; not 1 because a nontrivial finite p-group has
+      nontrivial centre; not p^2 because then G/Z(G) has order p, is cyclic, and G is abelian — the
+      three exclusions are each the right reason. Step s2: |G/Z(G)| = p^2, so G/Z(G) is abelian (every
+      group of order p^2 is abelian, which the step should be read as invoking through "smallest
+      normal subgroup with abelian quotient"), hence [G,G] <= Z(G). Step s3: [G,G] <= Z(G) of order p
+      forces |[G,G]| in {1,p}, and [G,G] != 1 because G is nonabelian. The conclusion Z(G) = [G,G]
+      follows. Nothing outside this exercise checked; the remark's attribution to Paco Adajar is not
+      verified here.
 ---
 
 ::: {.problem}

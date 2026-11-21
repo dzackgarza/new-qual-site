@@ -11,6 +11,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read step by step. The step that parametrises the four sides of $\partial R$ recorded
+    $dy = dy$ on the right edge and $dy = -dy$ on the left, which is not a parametrisation of
+    anything; each edge now carries its map $t\mapsto(\cdot,\cdot)$, its range and the
+    contribution it makes to $\oint_{\partial R} P\,dy$, and the sum that follows is the one
+    those contributions give. The two claims (I) and (II), the identification
+    $\mathbf{n}\,ds=(dy,-dx)$ and the Fubini steps were re-derived and are unchanged. Not
+    checked in this pass: a published solution of the exercise, none being retained for this
+    collection.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
@@ -21,6 +33,8 @@ State and prove the divergence theorem on any rectangle in $\RR^2$.
 :::
 
 ::: {.solution}
+
+The argument is the card's own: the theorem is proved here by identifying $\mathbf n\,ds=(dy,-dx)$ along the counterclockwise boundary and applying the fundamental theorem of calculus to each of the two claims, with no source transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
 ### Statement of the divergence theorem on a rectangle
 
 Let $R = [a, b] \times [c, d] \subset \RR^2$ be a closed rectangle, and let $\partial R$ denote its boundary oriented counterclockwise.
@@ -91,13 +105,13 @@ By Fubini's Theorem and the Fundamental Theorem of Calculus: $$\iint_R \frac{\pa
 ::: pf-step
 Parametrize the four sides of the boundary $\partial R = \gamma_1 + \gamma_2 + \gamma_3 + \gamma_4$:
 
-- Bottom edge $\gamma_1$: $x \in [a, b], y = c \implies dy = 0$.
+- Bottom edge $\gamma_1$: $t \mapsto (t, c)$ for $t \in [a, b]$, so $dy = 0$.
 
-- Right edge $\gamma_2$: $x = b, y \in [c, d]$ (oriented upwards) $\implies dy = dy$.
+- Right edge $\gamma_2$: $t \mapsto (b, t)$ for $t \in [c, d]$, oriented upwards, so $dy = dt$ and the contribution is $\int_c^d P(b, y) \, dy$.
 
-- Top edge $\gamma_3$: $x \in [a, b], y = d \implies dy = 0$.
+- Top edge $\gamma_3$: $t \mapsto (t, d)$ traversed from $x = b$ to $x = a$, so $dy = 0$.
 
-- Left edge $\gamma_4$: $x = a, y \in [c, d]$ (oriented downwards) $\implies dy = -dy$.
+- Left edge $\gamma_4$: $t \mapsto (a, t)$ traversed from $y = d$ down to $y = c$, so the contribution is $\int_d^c P(a, y) \, dy = -\int_c^d P(a, y) \, dy$.
 
 ::: pf-proof
 *Proof:* Counterclockwise orientation of the rectangle perimeter.

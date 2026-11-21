@@ -6,7 +6,9 @@ title: Divergence preserved by a nonlinear summand transform
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Series of Numbers
+  - Convergence Tests
 relations: []
 review: draft
 audit:

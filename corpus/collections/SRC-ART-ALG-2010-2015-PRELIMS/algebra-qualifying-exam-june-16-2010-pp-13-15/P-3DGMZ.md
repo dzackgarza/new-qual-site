@@ -36,14 +36,13 @@ $\cardinality{G}=p^a m$ with $a\geq0$ and $p\nmid m$.
 
 ::: {.pf-step #s1}
 
-Existence, containment, and conjugacy.
+A Sylow $p$-subgroup is a subgroup of order $p^{a}$; such subgroups exist, every subgroup of $G$ of $p$-power order lies in one of them, and any two are conjugate in $G$.
 
-A Sylow $p$-subgroup is a subgroup of order $p^a$.
-Such subgroups exist. Every subgroup of $G$ whose order
-is a power of $p$ is contained in a Sylow $p$-subgroup.
-Any two Sylow $p$-subgroups are conjugate by an element
-of $G$ [@DF04, sec. 4.5].
+::: pf-proof
 
+This is the first and second Sylow theorems, quoted rather than proved here because the exercise asks for the statements; the citation is [@DF04, sec. 4.5], where existence and the containment of every $p$-subgroup are Theorem 4.5.14 and conjugacy is Theorem 4.5.16.
+
+:::
 :::
 
 ::: {.pf-step #s2}

@@ -6,7 +6,8 @@ title: Riemann integrability after changing a convergent sequence
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Riemann Integration
 relations: []
 review: draft
 audit:

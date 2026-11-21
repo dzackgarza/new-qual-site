@@ -28,6 +28,17 @@ audit:
   date: 2026-10-31
   note: >-
     Read the reduction to ordinary homology in positive degrees and the separate treatment of degree zero, where reduced homology differs by a $\ZZ$ summand.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 13 of §2.1, printed p. 131. Correct: for $n>0$ reduced and
+    ordinary homology agree, so homotopy invariance of ordinary homology gives the result at once;
+    in degree zero $\widetilde H_0(Z)=\ker\epsilon$ and a continuous map commutes with the
+    augmentation, so the restrictions of $f_*$ and $g_*$ to that kernel agree because the maps
+    themselves do; the empty space is disposed of separately. Removed one thing only: a closing
+    step whose proof was 'combine steps s1 and s2', which STYLE-08 forbids. Nothing else changed.
+    Not claimed: a published solution, and no certificate.
 ---
 
 ::: {.problem}
@@ -85,21 +96,6 @@ $$
 f_*=g_*:H_0(X)\to H_0(Y),
 $$
 their restrictions to the augmentation kernel are equal. These restrictions are precisely the induced maps on $\widetilde H_0$. If $X$ is empty the assertion is trivial.
-
-:::
-
-:::
-
-::: pf-step
-
-Hence
-$$
-\boxed{f_*=g_*:\widetilde H_n(X)\to\widetilde H_n(Y)\text{ for all }n.}
-$$
-
-::: pf-proof
-
-Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
 
 :::
 

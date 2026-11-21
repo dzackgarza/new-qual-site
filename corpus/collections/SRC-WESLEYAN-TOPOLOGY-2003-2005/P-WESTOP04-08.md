@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP04-08
 kind: problem
 title: Zero-dimensional spaces are exactly subspaces of generalized Cantor cubes
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Cantor Set, Subspaces]}
 relations: []
 review: draft
 audit:

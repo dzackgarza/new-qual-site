@@ -11,6 +11,19 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 4 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p.
+    4 of the paper's own numbered pages, is the statement the card answers, and the head of the solution
+    names it; the file retained at assets/attachments/SP24_math_202_exam.pdf puts a cover page before
+    those pages, so paper p. 4 is its page 5. Checked: the statement against the paper's text layer at
+    the page named; the weighted 1-norm estimate under conjugation by
+    $D=\operatorname{diag}(\eta^{j-1})$; `qualc.authoring check` on the card; the card carries no `pf`
+    block, so `tmp/lam.sh` does not apply and was not run. Not checked: no retained solution set exists
+    for this paper to compare the argument with, and no other card of the collection in this pass.
 ---
 
 ::: {.problem}
@@ -30,6 +43,9 @@ for all $B\in M_n(\CC)=\CC^{n\times n}$.
 :::
 
 ::: {.solution}
+
+The problem is Problem 4 of the Qualifier Exam in Applied Algebra of May 23, 2024's numbered pages — the retained file `assets/attachments/SP24_math_202_exam.pdf` puts a cover page before them. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own.
+
 Let
 $$
 D=\operatorname{diag}(1,\eta,\eta^2,\ldots,\eta^{n-1}).

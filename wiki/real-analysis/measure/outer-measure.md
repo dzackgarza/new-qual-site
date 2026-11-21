@@ -24,7 +24,11 @@ topics:
 
 [[D-TWUBM]]
 
-By Carathéodory's theorem, the [[D-TWUBM|Carathéodory measurable]] sets form a $\sigma$-algebra on which $\mu^*$ is countably additive, hence a measure.
+::: {.proposition}
+Let $\mu^*$ be an [[D-79EWM|outer measure]] on a set $X$.
+The [[D-TWUBM|Carathéodory measurable]] subsets of $X$ form a $\sigma$-algebra $\mathcal M$, and $\mu^*$ restricted to $\mathcal M$ is a complete measure [@Fol99, Thm. 1.11].
+
+:::
 
 [[PR-LF7SW]]
 
@@ -53,8 +57,7 @@ By Carathéodory's theorem, the [[D-TWUBM|Carathéodory measurable]] sets form a
 [[PR-UHWNM]]
 
 ::: {.remark}
-A $\sigma$-finite measure space is a countable union of sets of finite measure, so theorems proved for finite measures, such as the Tonelli and Fubini theorems for product measures, extend to $\sigma$-finite measures by exhaustion.
-For Lebesgue measure, every measurable set of finite measure $E$ also contains a compact $K$ with $m(E\setminus K)<\varepsilon$.
+A $\sigma$-finite measure space is a countable union of sets of finite measure ([[D-BXAUS]]), so a theorem proved for finite measures can be applied on each set of an exhausting sequence; passing to the union needs its own argument.
 
 :::
 

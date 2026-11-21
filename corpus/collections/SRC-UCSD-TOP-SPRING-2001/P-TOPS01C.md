@@ -13,6 +13,30 @@ classification:
   - Manifolds
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained exam assets/attachments/SP01_290_Topology_Qual.pdf,
+    problem 3: the definition of the connect sum of oriented 4-manifolds by
+    removing open balls and gluing along the boundary spheres orientation-
+    compatibly, and the request for the cohomology ring of CP^2 # (S^2 x S^2).
+    The card agrees.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The ring is correct. Additively, the degree-two cohomology of a connected sum
+    of closed oriented four-manifolds is the direct sum of the summands' degree
+    two groups and the two top classes become one orientation class, so Z in
+    degrees 0 and 4 and Z^3 in degree 2 with nothing else. For the products, the
+    intersection form of the connected sum is the orthogonal direct sum, and by
+    Poincare duality the cup product of two degree-two classes is their
+    intersection number times the orientation class. The form of CP^2 is (1) and
+    that of S^2 x S^2 in the two factor generators is the hyperbolic matrix, so
+    x^2 = u, ab = u, and a^2 = b^2 = xa = xb = 0, with every product of degree
+    above four vanishing for degree reasons. Nothing was changed.
 ---
 
 ::: {.problem}

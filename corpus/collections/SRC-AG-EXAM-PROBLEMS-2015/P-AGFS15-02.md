@@ -5,7 +5,9 @@ kind: problem
 title: Morphisms of affine varieties and coordinate-ring maps
 classification:
   areas: [algebraic-geometry]
-  topics: []
+  topics:
+  - Morphisms of Varieties
+  - Coordinate Rings
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP07-08
 kind: problem
 title: Covering-space proof that $\pi_1(S^1)\cong\ZZ$
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Covering Spaces, Fundamental Group]}
 relations: []
 review: draft
 audit:

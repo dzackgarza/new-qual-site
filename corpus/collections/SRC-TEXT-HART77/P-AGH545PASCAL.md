@@ -37,6 +37,34 @@ audit:
     reduced nondegenerate locus; the final determinant argument makes the
     specialization step precise on the irreducible six-fold product of a
     smooth conic and by closure in the universal conic family.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A third retained solution read at this exercise. Read Yang Pi-Yeh,
+    Hartshorne Solutions (9 June 2019), Solution 5.4.5, printed p. 109,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.4.5, printed p. 407, asks for
+    the collinearity of P, Q, R for six points on a conic; Corollary 4.5 is
+    the book's statement that eight points in the plane, no four collinear and
+    no seven on a conic, determine a ninth through which every cubic through
+    the eight passes, printed p. 400 (PDF p. 415), read there again.
+    Recomputed: the two cubics X = AB' + BC' + CA' and Y = A'B + B'C + C'A
+    meet in the nine points A, B, C, A', B', C', P, Q, R; the cubic S + PQ,
+    with S the conic, passes through the eight others; the line AB' meets S in
+    A and B' only, so R is not on S. Not checked: Yang's Solutions outside
+    printed pp. 109-111, the printed book itself, and whether his entry's
+    genericity hypotheses are met without the card's specialization step.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.4.5 at printed p. 109 as the
+    same argument with Corollary 4.5 of the book named instead of
+    Cayley--Bacharach, and records that its hypotheses are not checked there
+    and are supplied by step extends-to-degenerate-case. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -234,5 +262,9 @@ specializations.
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.4.5, PDF pp. 287--288: with the cubics $X=AB'\cup BC'\cup CA'$ and $Y=AC'\cup BA'\cup CB'$ meeting in nine points, six on the conic and $P,Q,R$, he takes $E=K\cup PQ$ and concludes by Cayley--Bacharach that $R\in PQ$. Steps [](#nine-intersection-points){.pf-ref}, [](#eight-points-on-conic-union-line){.pf-ref}, [](#r-lies-on-z){.pf-ref}, [](#r-not-on-conic){.pf-ref} and [](#pqr-collinear-nondegenerate){.pf-ref} are that argument with the two cubics relabelled (the three components of each are the same three lines, paired the other way), and step [](#extends-to-degenerate-case){.pf-ref} adds the specializations he does not discuss. Matches.
+The exercise is Hartshorne, Exercise V.4.5, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is that exercise's text, "any six points on a conic" and the figure reference included.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.4.5: with the cubics $X=AB'\cup BC'\cup CA'$ and $Y=AC'\cup BA'\cup CB'$ meeting in nine points, six on the conic and $P,Q,R$, he takes $E=K\cup PQ$ and concludes by Cayley--Bacharach that $R\in PQ$. Steps [](#nine-intersection-points){.pf-ref}, [](#eight-points-on-conic-union-line){.pf-ref}, [](#r-lies-on-z){.pf-ref}, [](#r-not-on-conic){.pf-ref} and [](#pqr-collinear-nondegenerate){.pf-ref} are that argument with the two cubics relabelled (the three components of each are the same three lines, paired the other way), and step [](#extends-to-degenerate-case){.pf-ref} adds the specializations he does not discuss. Matches.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.5, printed p. 109, runs the same argument with Corollary 4.5 of the book named instead of Cayley--Bacharach. With $X=AB'\cup BC'\cup CA'$ and $Y=A'B\cup B'C\cup C'A$ meeting in the nine points $A,B,C,A',B',C',P,Q,R$, the cubic $S\cup PQ$, the conic through the six together with the line $PQ$, passes through the eight points $A,B,C,A',B',C',P,Q$; Corollary 4.5, then puts the ninth point $R$ on it. Since $R\notin S$ — the line $AB'$ meets the conic in $A$ and $B'$ only — $R\in PQ$. That is steps [](#nine-intersection-points){.pf-ref} to [](#pqr-collinear-nondegenerate){.pf-ref} with $S\cup PQ$ in place of $K\cup PQ$; the corollary's hypotheses, no four collinear and no seven on a conic, are not checked in the entry, and step [](#extends-to-degenerate-case){.pf-ref} supplies the specializations in which they fail.
 :::

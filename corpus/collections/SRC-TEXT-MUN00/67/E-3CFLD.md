@@ -48,7 +48,7 @@ $G$ is free abelian of rank $n$.
 
 ::: pf-proof
 
-By Theorem 67.8 (printed p. 411) the rank of a free abelian group with a finite basis is the number of elements in a basis, and $\theset{\mathbf{e}_1,\dots,\mathbf{e}_n}$ is a basis of $G$ by the definition on p. 410.
+By Theorem 67.8 the rank of a free abelian group with a finite basis is the number of elements in a basis, and $\theset{\mathbf{e}_1,\dots,\mathbf{e}_n}$ is a basis of $G$ by the definition on p. 410.
 
 :::
 

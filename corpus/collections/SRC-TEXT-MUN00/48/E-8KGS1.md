@@ -31,6 +31,21 @@ audit:
     U, and the Baire property of U produces a point of W cap U outside all of them. The card's closing
     references to two step labels that no step carried are replaced by the prose sentence that closes the
     argument.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Rewrote the solution's frame on 2026-11-19, leaving every argument as it was.
+    The three steps opened with run-in titles and "Proof:" lines instead of
+    claims, the page cited no source, and the solution ended with a paragraph
+    outside the proof repeating the conclusion. The steps are now labelled s1 to
+    s3 with claims as their first paragraphs, the stray paragraph is gone, and the
+    preamble names the published solution transcribed (the University of
+    California, Riverside, Mathematics 205A set, Part 3, answer to §48 Exercise
+    4, printed p. 6 of that set) and the pages checked in the book: the exercise
+    on printed p. 299, Lemma 48.1 on printed p. 296 and Lemma 48.4 on printed
+    p. 297. No statement, argument or citation changes.
+
 ---
 
 ::: {.exercise}
@@ -40,13 +55,12 @@ Show that if every point $x$ of $X$ has a neighborhood that is a Baire space, th
 :::
 
 ::: {.solution}
+The proof is the one in "Solutions to exercises for Mathematics 205A" (University of California, Riverside, Fall 2014), Part 3, answer to Munkres §48 Exercise 4, printed p. 6 of that set. The exercise is Munkres, *Topology* (2000), Section 48, Exercise 4; the open-set formulation of the Baire condition is Lemma 48.1, and the fact that an open subspace of a Baire space is Baire is Lemma 48.4.
 
 ::: pf
 
-::: pf-step
-
-Reduction to an open cover by Baire open sets:
-    *Proof:*
+::: {.pf-step #s1}
+Every point of $X$ has an open neighbourhood that is a Baire space in the subspace topology, so $X$ has an open cover by Baire subspaces.
 
 ::: pf-proof
 
@@ -72,10 +86,8 @@ Thus $X$ possesses an open covering $\mathcal{U} = \{U_\alpha\}_{\alpha \in J}$ 
 
 :::
 
-::: pf-step
-
-Open set / nowhere dense formulation of the Baire condition:
-    *Proof:*
+::: {.pf-step #s2}
+A space $Y$ is Baire exactly when, for every countable family of closed sets with empty interior and every non-empty open $W\subseteq Y$, the difference $W\setminus\bigcup_n A_n$ is non-empty.
 
 ::: pf-proof
 
@@ -89,10 +101,8 @@ A topological space $X$ is a Baire space if and only if for every countable coll
 
 :::
 
-::: pf-step
-
-Verification of the Baire property on $X$:
-    *Proof:*
+::: {.pf-step #s3}
+$X$ is a Baire space.
 
 ::: pf-proof
 
@@ -163,5 +173,4 @@ Since $y \in V \subseteq W$, we have $y \in W \setminus \bigcup_{n=1}^\infty A_n
 
 :::
 
-Thus $W \setminus \bigcup_n A_n$ is nonempty for every nonempty open $W\subseteq X$, which is the open-set formulation of the Baire condition; so $X$ is a Baire space.
 :::

@@ -14,6 +14,20 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 8 of the Algebra Preliminary Examination 2017 (University of
+    Washington), printed p. 1 of the single-page paper retained at
+    assets/attachments/UW-Algebra-Qual-2017.pdf, is the statement the card answers, and the
+    paragraph at the head of the solution records that the paper prints no solutions, so the
+    argument is the card's own. Checked: the statement against the paper's text layer at the page
+    named; the solution read for the tensor-square computation through F_4 tensor over F_2 with F_4
+    equal to F_4 x F_4 and the matrix-ring identification giving M_4(F_4) x M_4(F_4);
+    `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the QED. Not
+    checked: no retained solution set exists for this paper to compare the argument with, and no
+    other card of the collection in this pass.
+- event: source-checked
+  by: claude
   date: 2026-11-01
   note: >-
     Statement read from the card in `corpus/collections/SRC-UW-ALG-2017`; no correction is claimed.
@@ -34,6 +48,8 @@ Given an explicit description of $M_2(\FF_4)\otimes_{\FF_2}M_2(\FF_4)$ as a dire
 :::
 
 ::: {.solution}
+
+The problem is Problem 8 of the Algebra Preliminary Examination 2017 (University of Washington), printed p. 1 of the single-page paper retained at `assets/attachments/UW-Algebra-Qual-2017.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the explicit computation $M_2(\FF_4)\otimes_{\FF_2}M_2(\FF_4)\cong M_4(\FF_4)\times M_4(\FF_4)$, through $M_n(R)\otimes_S M_m(R')\cong M_{nm}(R\otimes_S R')$ and the splitting $\FF_4\otimes_{\FF_2}\FF_4\cong\FF_4\times\FF_4$.
 
 Let $A=M_2(\FF_4)$, regarded as an $\FF_4$-algebra and hence as an $\FF_2$-algebra of dimension $8$. We describe $A\otimes_{\FF_2}A$.
 

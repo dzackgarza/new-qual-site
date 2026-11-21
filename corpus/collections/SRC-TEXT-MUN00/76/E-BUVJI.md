@@ -62,33 +62,74 @@ Which (if either) argument is correct?
 :::
 
 ::: {.solution}
-The first argument is valid and the second is not.
 
-For the first sequence, after the indicated permutation and flip we have
-$$
-ccab\qquad\text{and}\qquad b^{-1}a^{-1}cc.
-$$
-The label $b$ now occurs exactly on the two edges being pasted, with opposite exponents, so the pasting operation is legitimate and gives
-$$
-ccaa^{-1}cc.
-$$
-Here the adjacent $a,a^{-1}$ pair satisfies the hypotheses of the cancelling operation: the label $a$ appears nowhere else and the words on either side, $cc$ and $cc$, each have length at least two. Thus cancellation gives
-$$
-cccc.
-$$
-Hence this sequence is a valid sequence of elementary operations.
+The argument is the card's own; no published solution of Munkres §76 Exercise 2 was located, and the sets searched are recorded in the audit trail. The elementary operations are those of §76: permuting the edge labels cyclically, flipping a scheme, pasting two polygons along a pair of edges whose label occurs exactly twice in the total scheme, and cancelling an adjacent pair $aa^{-1}$ whose label occurs nowhere else.
 
-The second sequence starts by trying to paste the original schemes
-$$
-abcc,\qquad c^{-1}c^{-1}ab
-$$
-along a pair of $c$-edges. But the label $c$ occurs four times in the total scheme. Therefore the two selected edges are not the only edges required to be identified with one another. The inverse-cutting theorem does not permit replacing the two polygons by a single polygon along such a pair: once those edges become an interior seam, the remaining required $c$-identifications are not represented by the resulting boundary word.
+Let $X$ be obtained from two polygonal regions with schemes $w_{1}=abcc$ and $w_{2}=c^{-1}c^{-1}ab$.
 
-Thus
-$$
-abcc,\ c^{-1}c^{-1}ab\not\longmapsto abcc^{-1}ab
-$$
-by the elementary pasting operation. The subsequent cancellation is irrelevant because the first step is invalid.
+::: pf
 
-Therefore only the first argument is correct, and $X$ is represented by the scheme $cccc$, i.e. by the four-fold dunce-cap scheme, not by the claimed $abab$ scheme.
+::: {.pf-step #first-valid}
+The first sequence is a valid sequence of elementary operations, and it presents $X$ by the scheme $cccc$.
+
+::: pf-proof
+
+::: {.pf-step #permute}
+Permuting and flipping carries the pair $(abcc,\ c^{-1}c^{-1}ab)$ to $(ccab,\ b^{-1}a^{-1}cc)$.
+
+::: pf-proof
+A cyclic permutation of $abcc$ gives $ccab$, and a cyclic permutation of $c^{-1}c^{-1}ab$ gives $ab\,c^{-1}c^{-1}$, whose flip is $cc\,b^{-1}a^{-1}$ up to cyclic permutation. Both operations are elementary: they replace a scheme by another scheme for the same quotient space (§76).
+:::
+
+:::
+
+::: {.pf-step #paste}
+Pasting along the two $b$-edges gives $cc\,aa^{-1}cc$.
+
+::: pf-proof
+In the total scheme $(ccab,\ b^{-1}a^{-1}cc)$ the label $b$ occurs exactly twice, once as $b$ in the first word and once as $b^{-1}$ in the second, so the two $b$-edges are exactly the pair being identified and the pasting operation applies: the two polygons are replaced by one whose boundary word is obtained by deleting the two $b$-edges, which gives $cc\,aa^{-1}cc$.
+:::
+
+:::
+
+::: {.pf-step #cancel}
+Cancelling the pair $aa^{-1}$ gives $cccc$.
+
+::: pf-proof
+In $cc\,aa^{-1}cc$ the label $a$ occurs exactly in the adjacent pair $aa^{-1}$, with opposite exponents, and the words on either side of that pair are $cc$ and $cc$, each of length at least two; these are the hypotheses of the cancelling operation (§76), which deletes the pair and gives $cccc$.
+:::
+
+:::
+
+::: {.pf-qed}
+Steps [](#permute){.pf-ref}, [](#paste){.pf-ref} and [](#cancel){.pf-ref} are the three arrow steps of the first sequence, each elementary, and they carry the original pair of schemes to $cccc$, the scheme of the four-fold dunce cap (§75).
+:::
+
+:::
+
+:::
+
+::: {.pf-step #second-invalid}
+The second sequence is not a valid sequence of elementary operations.
+
+::: pf-proof
+Its first arrow pastes the two polygons along a pair of $c$-edges. But the label $c$ occurs four times in the total scheme $abcc,\ c^{-1}c^{-1}ab$: twice in the first word and twice in the second. The elementary pasting operation requires the label of the selected edges to occur exactly twice in the total scheme, since otherwise the remaining edges with that label are also to be identified and the seam is not the only identification between the two polygons; the inverse-cutting theorem does not license replacing the pair by a single polygon whose boundary word drops the other occurrences. So
+$$
+abcc,\ c^{-1}c^{-1}ab\ \not\longmapsto\ abcc^{-1}ab
+$$
+by an elementary pasting, and the later cancellation from $abcc^{-1}ab$ to $abab$ proceeds from a scheme not known to present $X$, so it establishes nothing about $X$.
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+Only the first argument is correct: $X$ is homeomorphic to the four-fold dunce cap, not to $P^{2}$.
+
+::: pf-proof
+The first sequence is valid by step [](#first-valid){.pf-ref} and presents $X$ by the scheme $cccc$; the second is not by step [](#second-invalid){.pf-ref}, so no scheme $abab$ is obtained for $X$. The schemes $cccc$ and $abab$ present the four-fold dunce cap and $P^{2}$ respectively (§75), and these spaces are not homeomorphic: the scheme $cccc$ has one vertex class, so by Theorem 74.2 its fundamental group is $\langle c\mid c^{4}=1\rangle\cong\ZZ/4$, while $P^{2}$ has fundamental group $\ZZ/2$; groups of different orders are not isomorphic, and a homeomorphism would induce an isomorphism of fundamental groups (Corollary 52.5). So the two conclusions cannot both be right, and the valid computation gives the four-fold dunce cap.
+:::
+
+:::
+
+:::
 :::

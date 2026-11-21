@@ -30,6 +30,17 @@ audit:
     $\wp(\alpha-z)$, and $\alpha$ is then chosen so that the value at one point matches, giving
     $I(\wp(z+\alpha))=z$ on a neighbourhood. The two obstructions to a global statement (the branch
     of the square root and the evenness of $\wp$) are stated. Nothing is left in outline.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The asterisk the print sets before "3." was read from the page image of printed p. 281 (PDF
+    p. 300) and is recorded in the remark, which already carried the locality note. The statement was
+    compared with the printed words there and is theirs, including the exclusion of the three roots
+    of $4z^3-g_2z-g_3$ and the printed bracketed hint that the card carries as its hint block. The
+    argument was read: the derivative $\bigl(I(\wp(z+\alpha))\bigr)'$ computed from
+    $\wp'^2=4\wp^3-g_2\wp-g_3$ and the sign adjusted through the evenness of $\wp$. Not checked: the
+    choice of $\alpha$ at the closing step was read for sense and not recomputed.
 ---
 
 ::: {.exercise}
@@ -46,7 +57,7 @@ Show that $\bigl(I(\wp(z+\alpha))\bigr)'=\pm1$ and use that $\wp$ is even.
 :::
 
 ::: {.remark}
-The inverse identity is local: it holds on a neighborhood where $\wp(z+\alpha)$ takes values in $\Omega$ and the chosen branch of the square root gives the required sign. The statement does not specify a global domain for the inverse.
+The book marks this problem with an asterisk (Chapter 9, Problem 3). The inverse identity is local: it holds on a neighborhood where $\wp(z+\alpha)$ takes values in $\Omega$ and the chosen branch of the square root gives the required sign. The statement does not specify a global domain for the inverse.
 :::
 
 ::: {.solution}

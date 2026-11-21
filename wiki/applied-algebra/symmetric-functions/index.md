@@ -7,38 +7,43 @@ topics:
 
 # Symmetric functions
 
+[[D-SYMFN]]
+
 ## Bases
 
-Each of the following families is indexed by partitions $\lambda$ of $n$ and is a basis of the space of symmetric functions of degree $n$.
+Each of the following families, indexed by the partitions $\lambda$ of $d$, is a basis of $\Lambda^d\otimes\QQ$ [@FH91, Appendix A]: the monomial symmetric functions, the [[D-FK47C|elementary symmetric functions]] $e_\lambda$, the complete homogeneous symmetric functions, the power sums, and the Schur functions. Over $\ZZ$ the families $e_\lambda$, $h_\lambda$, $m_\lambda$ and $s_\lambda$ are bases of $\Lambda^d$, but $p_\lambda$ is not: for instance $e_2=(p_1^2-p_2)/2$.
 
-| Basis | Notation | Description |
-| --- | --- | --- |
-| monomial | $m_\lambda$ | the sum of the distinct monomials $x^\alpha$ with $\alpha$ a rearrangement of $\lambda$ |
-| elementary | $e_\lambda$ | $e_\lambda=\prod_i e_{\lambda_i}$, where $e_k$ is the coefficient of $t^k$ in $\prod_i(1+x_it)$ |
-| complete homogeneous | $h_\lambda$ | $h_\lambda=\prod_i h_{\lambda_i}$, where $h_k$ is the coefficient of $t^k$ in $\prod_i\inverseof{(1-x_it)}$ |
-| power sum | $p_\lambda$ | $p_\lambda=\prod_i p_{\lambda_i}$ with $p_k = \sum_i x_i^k$; related to $e$ by Newton's identities, and to the characters of $S_n$ |
-| Schur | $s_\lambda$ | the sum over semistandard Young tableaux of shape $\lambda$; the characters of the polynomial irreducible representations of $\GL_n$ |
+[[D-MSYMF]]
 
-By the fundamental theorem of symmetric polynomials, the ring of symmetric polynomials in $x_1,\ldots,x_n$ over $\ZZ$ is $\ZZ[e_1,\ldots,e_n]$, and $e_1,\ldots,e_n$ are algebraically independent.
+[[D-HSYMF]]
 
-## Computations
+[[D-PSYMF]]
 
-- **Change of basis.** Newton's identities relate the power sums and the elementary symmetric functions:
-  $$
-  p_k - e_1p_{k-1} + \cdots + (-1)^{k-1}e_{k-1}p_1 + (-1)^k k e_k = 0.
-  $$
+[[D-SCHUR]]
 
-- **Expansion of Schur functions.** $s_\lambda$ is the sum over semistandard tableaux of shape $\lambda$ of the corresponding monomials, and by the Jacobi--Trudi identity $s_\lambda = \det(h_{\lambda_i - i + j})$.
+By the fundamental theorem of symmetric polynomials, the ring of symmetric polynomials in $x_1,\ldots,x_n$ over $\ZZ$ is $\ZZ[e_1,\ldots,e_n]$, with $e_1,\ldots,e_n$ algebraically independent: the elementary symmetric functions generate, since the $x_i$ are the roots of $\prod_i(t+x_i) = \sum_k e_k t^{n-k}$ and hence each $x_i$ is integral over $\ZZ[e_1,\ldots,e_n]$; and they are independent, since a relation of least degree in $e_n$, specialized at $x_n = 0$, is a relation among $e_1,\ldots,e_{n-1}$ in $n-1$ variables, hence vanishes by induction, which makes the relation divisible by $e_n$ and leaves one of smaller degree.
 
-- **Products of Schur functions.** The coefficients of $s_\mu s_\nu = \sum_\lambda c^\lambda_{\mu\nu}s_\lambda$ are given by the Littlewood--Richardson rule; they are also the multiplicities in tensor products of polynomial representations of $\GL_n$ and in induction products of representations of symmetric groups.
+## Change of basis
+
+Newton's identities relate the power sums to the elementary symmetric functions:
+$$
+p_k - e_1p_{k-1} + \cdots + (-1)^{k-1}e_{k-1}p_1 + (-1)^k k e_k = 0,
+$$
+which for $1\leq k\leq n$ is the coefficient identity obtained from $-\frac{d}{dt}\log\prod_i(1-x_it)=\sum_{k\geq1}p_kt^{k-1}$, and for $k>n$ has its last term dropped, the sum ending at $(-1)^ne_np_{k-n}$; over a field in which $k$ is invertible, it expresses $e_k$ in terms of $p_1,\ldots,p_k$, so the two bases determine one another.
+
+By [[T-JTRUDI|the Jacobi--Trudi identity]], $s_\lambda$ is the determinant $\det(h_{\lambda_i - i + j})$ of complete homogeneous symmetric functions, of size $\ell(\lambda)$ and independent of the size of the determinant once that exceeds $\ell(\lambda)$.
+
+The coefficients of $s_\mu s_\nu = \sum_\lambda c^\lambda_{\mu\nu}s_\lambda$ are the Littlewood--Richardson coefficients of [[T-LRULR|the Littlewood--Richardson rule]], which states that $c^\lambda_{\mu\nu}$ counts the semistandard tableaux of skew shape $\lambda/\mu$ and content $\nu$ whose word is a lattice word, read from right to left in each row from the top; [[P-APASP08I|one card computes $c^\lambda_{(2,2),(2,1)}$ by that rule]]. These coefficients are the multiplicities in the tensor products of polynomial representations of $\GL_n$ and in the inductions from $S_k\times S_{n-k}$ to $S_n$.
 
 ## The characteristic map
 
-The Frobenius characteristic map is an isometry from the class functions on $S_n$ to the symmetric functions of degree $n$, sending the irreducible character $\chi^\lambda$ to $s_\lambda$.
+The [[T-FROBCH|Frobenius characteristic map]] $\operatorname{ch}$ takes a class function on $S_n$ to the symmetric function of degree $n$; it is an isometry from the class functions with the inner product $\frac1{n!}\sum_g\chi(g)\overline{\psi(g)}$ to $\Lambda^n$ with the Hall inner product, in which the Schur functions are orthonormal, and it sends the irreducible character $\chi^\lambda$ to $s_\lambda$.
+
 For partitions $\mu$ of $k$ and $\nu$ of $n-k$, it sends $\Indcat_{S_k\times S_{n-k}}^{S_n}(\chi^\mu\times\chi^\nu)$ to $s_\mu s_\nu$, so the multiplicity of $\chi^\lambda$ in that induced character is the Littlewood--Richardson coefficient $c^\lambda_{\mu\nu}$.
+
 It also gives
 $$
 p_\rho = \sum_\lambda \chi^\lambda(\rho)\, s_\lambda,
 $$
-where $\chi^\lambda(\rho)$ is the value of $\chi^\lambda$ on permutations of cycle type $\rho$; the Murnaghan--Nakayama rule computes these values.
-For $\rho = (1^n)$, the coefficient $\chi^\lambda(1) = \dim\chi^\lambda$ of $s_\lambda$ in $p_1^n$ is the number of standard Young tableaux of shape $\lambda$, which the hook length formula evaluates.
+where $\chi^\lambda(\rho)$ is the value of $\chi^\lambda$ on the permutations of cycle type $\rho$; the Murnaghan--Nakayama rule computes these values by removing border strips from $\lambda$, one for each part of $\rho$, with the sign $(-1)^{\text{height}}$.
+For $\rho = (1^n)$ the coefficient $\chi^\lambda(1) = \dim\chi^\lambda$ of $s_\lambda$ in $p_1^n$ is the number of standard Young tableaux of shape $\lambda$, which [[T-HOOK|the hook length formula]] evaluates as the quotient of $n!$ by the product of the hook lengths.

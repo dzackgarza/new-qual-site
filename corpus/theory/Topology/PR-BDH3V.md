@@ -17,7 +17,7 @@ review: draft
 ::: {.proposition}
 There is a homeomorphism
 $$
-\RP^2 \# \KK \cong \RP^2 \# \TT^2
+\RP^2 \# \KK \cong \RP^2 \# T^2
 ,$$
-and both surfaces are homeomorphic to $\RP^2\#\RP^2\#\RP^2$ [@Mun00].
+and both surfaces are homeomorphic to $\RP^2\#\RP^2\#\RP^2$ [@Mun00, Theorem 77.5].
 :::

@@ -15,6 +15,16 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Checked against Question 34 of the Chapter 7 review questions in assets/attachments/extracted/Chapter-7.md (Mistral OCR), compared with the same page in the Cracking the GRE Mathematics Subject Test book extraction.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. A = (0,1) union [4,6) in R with the usual
+    topology; its closure adds the limit points 0, 1 and 6, giving [0,1] union [4,6], and the
+    exterior is the complement of the closure, (-infinity,0) union (1,4) union (6,infinity), which
+    is choice (C). The three pieces are open and disjoint, and the endpoints 0, 1, 4, 6 are
+    correctly excluded because each lies in the closure of A. Nothing outside this question
+    checked.
 ---
 
 ::: {.problem}

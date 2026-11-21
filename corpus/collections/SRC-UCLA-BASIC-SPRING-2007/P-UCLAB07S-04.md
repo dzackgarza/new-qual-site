@@ -6,7 +6,9 @@ title: Limits of even powers of a symmetric matrix quadratic form
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Quadratic Forms
+  - Symmetric Matrices
 relations: []
 review: draft
 audit:

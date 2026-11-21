@@ -5,7 +5,8 @@ kind: problem
 title: "State the Residue Theorem"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residue Theorem
 relations: []
 review: draft
 audit:
@@ -13,6 +14,23 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis section 1.1, item 2 (August 2, 2004) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 33, printed page 1: section 1.1 item 2 of
+    the Preliminary Examination in Analysis, Wesleyan University, August 2, 2004. The
+    page had cited only the extraction; it now names the examination, its item and the
+    page of the scan. The statement is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The proof ended with a pf-qed that only announced that an earlier step had answered
+    the question, which STYLE-08 forbids; it is dropped, and the step that carries the
+    result is now the QED step. No argument or statement changes.
+
 ---
 
 ::: {.problem}
@@ -20,6 +38,9 @@ State the Residue Theorem.
 :::
 
 ::: {.solution}
+The item is section 1.1 item 2 of the Preliminary Examination in Analysis, Wesleyan University,
+August 2, 2004 (statement of the residue theorem), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
+
 
 ::: pf
 
@@ -241,12 +262,6 @@ inside and $0$ outside, so this reduces to step [](#s1-5){.pf-ref}.
 
 :::
 
-::: pf-qed
-
-Step [](#s1-5){.pf-ref} is the usual Residue Theorem, and step [](#s1-6){.pf-ref} records its standard
-homological generalization.
-
-:::
 
 :::
 

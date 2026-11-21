@@ -6,7 +6,9 @@ title: Normal equations for full-column-rank least squares
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Orthogonal Projection
+  - Linear Systems
 relations: []
 review: draft
 audit:

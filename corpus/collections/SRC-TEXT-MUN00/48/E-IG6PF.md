@@ -63,6 +63,22 @@ audit:
     never restricted admits every value. The product case of the solution now states the restricted-coordinate
     fact it uses. Nothing else on the card changed, and the other answer's Frolik-based proof still is not
     transcribed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Structured into Lamport steps from the card's own prose. Added the shrinking step the two
+    constructions use and the card only asserted: in the product topology a point of an open set
+    has a basic neighbourhood whose closure, a product of finitely many closed intervals and R
+    elsewhere, still lies in it, which is what makes the recursion possible without invoking
+    regularity of R^J as a theorem. The coordinatewise assembly is now its own step, with the
+    nested-interval argument recorded for restricted coordinates and the free choice for
+    unrestricted ones. In the box topology the diameter 1/n shrinking is now attached to
+    completeness of R coordinate by coordinate. The uniform case is split into completeness of the
+    uniform metric and the Baire theorem applied to it. What was not checked: the printed page of
+    Theorem 43.5, which the card's earlier note cites without one; the citation now names the
+    theorem and says its page is not recorded here. The exercise page, 300, and Theorem 48.2 on
+    printed p. 296 are as the card and the §48 cards beside it record.
 ---
 
 ::: {.exercise}
@@ -71,19 +87,73 @@ Show that $\RR^J$ is a Baire space in the box, product, and uniform topologies.
 :::
 
 ::: {.solution}
-For the product topology, let $G_1, G_2, \ldots$ be dense open sets and $U_0$ a nonempty basic open set. Recursively choose nonempty basic opens $U_n$ with
-$$
-\overline{U_n}\subset U_{n-1}\cap G_n,
-$$
-changing only finitely many coordinates at stage $n$ and choosing closed bounded coordinate intervals there. A coordinate once restricted stays restricted from then on: $U_n$ is contained in $U_{n-1}$, so at a coordinate where $U_{n-1}$ is a bounded interval the projection of $U_n$ lies inside that interval. In a coordinate that is ever restricted, the closure of the first interval chosen there is compact, and all later closed intervals are nested inside it, so their intersection is nonempty. Choose any real number in every coordinate never restricted. The resulting point lies in $U_0\cap\bigcap G_n$.
+The argument is the card's own: no published solution set is transcribed. Math StackExchange 2344060 states this exercise and proves it through Frolík's countably complete spaces, resting on two theorems of a paper the card does not cite, so it is recorded in the audit and not used here. The book's §48 Exercise 12 is printed on p. 300, and the numbered results cited are Theorem 48.2, that a complete metric space is Baire, and Theorem 43.5 of §43, the completeness of the uniform metric on the function space, whose page is not recorded here.
 
-For the box topology, perform the same construction coordinatewise, now shrinking every coordinate interval at stage $n$ and arranging diameter $<1/n$. Completeness of $\RR$ gives a point in every coordinate intersection, hence a point of $U_0\cap\bigcap G_n$.
+::: pf
 
-For the uniform topology, the uniform metric
-$$
-\bar\rho(x,y)=\sup_{j\in J}\min\{\abs{x_j-y_j},1\}
-$$
-is complete: a Cauchy sequence is uniformly Cauchy in every coordinate, has coordinatewise limits, and the same uniform estimate gives convergence in $\bar\rho$. Hence the uniform topology is Baire by the complete-metric Baire theorem.
+::: {.pf-step #shrinking}
+Given a nonempty open set $V$ and a point $x\in V$, there is a basic open set $U$ with $x\in U\subset\overline{U}\subset V$ whose closure in $\RR^{J}$ is a product of closed intervals, restricted in finitely many coordinates.
 
-Thus $\RR^J$ is Baire in all three topologies.
+::: pf-proof
+Write $V=\bigcup_{k}V_{k}$ with $V_{k}$ basic open, and pick $k$ with $x\in V_{k}$. Then $V_{k}=\prod_{j}W_{j}$, where each $W_{j}$ is an open interval of $\RR$ or all of $\RR$, and $W_{j}=\RR$ for all but finitely many $j$. For each of the finitely many other $j$ choose a closed interval $[a_{j},b_{j}]$ with $x_{j}\in[a_{j},b_{j}]\subset W_{j}$, which is possible because $W_{j}$ is an open interval containing $x_{j}$; set $[a_{j},b_{j}]=\RR$ in the remaining coordinates. Then $U=\prod_{j}(a_{j},b_{j})$ is a basic open set containing $x$, and $\overline{U}=\prod_{j}[a_{j},b_{j}]$ is a closed subset of $V_{k}\subset V$: a product of closed sets is closed in the product topology, and each factor lies in $W_{j}$.
+:::
+:::
+
+::: {.pf-step #product-recursion}
+Let $G_{1},G_{2},\ldots$ be dense open subsets of $\RR^{J}$ with the product topology and $U_{0}$ a nonempty basic open set. There are nonempty basic open sets $U_{1},U_{2},\ldots$ with $\overline{U_{n}}\subset U_{n-1}\cap G_{n}$ for every $n$, each $U_{n}$ obtained from $U_{n-1}$ by restricting finitely many further coordinates to bounded open intervals.
+
+::: pf-proof
+Inductively, $U_{n-1}\cap G_{n}$ is nonempty and open: $G_{n}$ is dense, so it meets the nonempty open set $U_{n-1}$. Pick a point of it and apply step [](#shrinking){.pf-ref} inside $U_{n-1}\cap G_{n}$, taking as the finitely many coordinates to restrict those already restricted in $U_{n-1}$ together with those the new basic set restricts; the resulting $U_{n}$ is contained in $U_{n-1}$, so a coordinate restricted at an earlier stage stays restricted, with its interval nested in the earlier one.
+:::
+:::
+
+::: {.pf-step #product-point}
+There is a point $x\in U_{0}\cap\bigcap_{n}G_{n}$.
+
+::: pf-proof
+For each coordinate $j$ let $I_{n,j}$ be the closure of the projection of $U_{n}$ to the $j$-th coordinate, so that $\overline{U_{n}}=\prod_{j}I_{n,j}$. If $j$ is restricted at some stage $n_{0}$, then $I_{n_{0},j}$ is a closed bounded interval, the intervals $I_{n,j}$ for $n\geq n_{0}$ are closed, bounded and nested inside it, so their intersection is nonempty by compactness of $I_{n_{0},j}$, and the intervals for $n<n_{0}$ contain $I_{n_{0},j}$ because the $U_{n}$ decrease with $n$; choose $x_{j}$ in the intersection over all $n$. If $j$ is never restricted, every $I_{n,j}$ is $\RR$ and any real number will do. The point $x=(x_{j})$ then lies in $\overline{U_{n}}$ for every $n$, hence in $U_{n-1}\cap G_{n}$ for every $n\geq1$, hence in $U_{0}\cap\bigcap_{n}G_{n}$.
+:::
+:::
+
+::: {.pf-step #product-baire}
+$\RR^{J}$ is a Baire space in the product topology.
+
+::: pf-proof
+A nonempty open set $U_{0}$ meets $\bigcap_{n}G_{n}$ by step [](#product-point){.pf-ref}, so $\bigcap_{n}G_{n}$ is dense; that is the defining property of a Baire space.
+:::
+:::
+
+::: {.pf-step #box-baire}
+$\RR^{J}$ is a Baire space in the box topology.
+
+::: pf-proof
+Let $G_{1},G_{2},\ldots$ be dense open and $U_{0}$ nonempty open in the box topology, which is finer, so $U_{0}$ contains a box-basic set. Recursively choose nonempty box-basic $U_{n}=\prod_{j}(a_{n,j},b_{n,j})$ with $\overline{U_{n}}\subset U_{n-1}\cap G_{n}$ and $b_{n,j}-a_{n,j}<1/n$ for every $j$: step [](#shrinking){.pf-ref} applies in every coordinate at once, since a box-basic open set restricts all of them. For each $j$ the intervals $[a_{n,j},b_{n,j}]$ are closed, nested and of diameter tending to $0$, so $\bigcap_{n}[a_{n,j},b_{n,j}]$ is a single point $x_{j}$ by completeness of $\RR$. Then $x\in\overline{U_{n}}$ for every $n$, so $x\in U_{0}\cap\bigcap_{n}G_{n}$, and $\bigcap_{n}G_{n}$ is dense.
+:::
+:::
+
+::: {.pf-step #uniform-complete}
+$\RR^{J}$ is complete in the uniform metric $\bar\rho(x,y)=\sup_{j\in J}\min\{\abs{x_{j}-y_{j}},1\}$.
+
+::: pf-proof
+Let $(x^{k})$ be $\bar\rho$-Cauchy. For each $j$ one has $\min\{\abs{x^{k}_{j}-x^{l}_{j}},1\}\leq\bar\rho(x^{k},x^{l})$, so the coordinate sequence is Cauchy in $\RR$ and converges to some $x_{j}$. Given $\varepsilon\in(0,1)$ choose $K$ with $\bar\rho(x^{k},x^{l})<\varepsilon/2$ for $k,l\geq K$; then for $k\geq K$ and every $j$, $\abs{x^{k}_{j}-x_{j}}=\lim_{l}\abs{x^{k}_{j}-x^{l}_{j}}\leq\varepsilon/2$, so $\bar\rho(x^{k},x)<\varepsilon$ and $x^{k}\to x$.
+:::
+:::
+
+::: {.pf-step #uniform-baire}
+$\RR^{J}$ is a Baire space in the uniform topology.
+
+::: pf-proof
+The uniform topology is the topology of the complete metric $\bar\rho$ by step [](#uniform-complete){.pf-ref}, and a complete metric space is a Baire space (Theorem 48.2).
+:::
+:::
+
+::: {.pf-step #conclusion}
+$\RR^{J}$ is a Baire space in the box, product and uniform topologies.
+
+::: pf-proof
+Steps [](#product-baire){.pf-ref}, [](#box-baire){.pf-ref} and [](#uniform-baire){.pf-ref} are the three cases.
+:::
+:::
+:::
+
 :::

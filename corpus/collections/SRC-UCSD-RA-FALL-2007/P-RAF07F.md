@@ -118,11 +118,6 @@ Step [](#s6){.pf-ref}, dividing by $3^n$.
 
 :::
 
-::: pf-qed
-
-Step [](#s7){.pf-ref}.
-
-:::
 
 :::
 

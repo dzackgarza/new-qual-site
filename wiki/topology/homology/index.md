@@ -14,4 +14,4 @@ topics:
 
 - [[topology/homology/homological-algebra|Homological algebra]] — chain complexes, exact sequences, $\operatorname{Tor}$, and $\operatorname{Ext}$.
 
-- [[topology/homology/exercises|Exercises]].
+- [[topology/homology/exercises|Homotopy, $\pi_1$, and surfaces]].

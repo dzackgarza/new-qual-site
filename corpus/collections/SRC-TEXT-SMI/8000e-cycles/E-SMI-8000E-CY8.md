@@ -25,6 +25,20 @@ audit:
     and with one 2-cycle it contains every transposition and equals S_p. A subgroup
     containing a p-cycle is transitive, so the consequence stated in the exercise
     follows. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The three assertions are correct. Conjugation carries the relation i ~ j
+    (that is, the transposition (i j) lying in H) to the relation between the
+    images, so each element of H permutes the classes, and bijectivity makes the
+    image of a class a whole class. Transitivity then moves any class onto any
+    other, so all classes have the same size m, and p = km with k the number of
+    classes; primality forces m = 1, no 2-cycles, or m = p, one class and every
+    2-cycle. Since transpositions generate the symmetric group, a transitive
+    subgroup of S(p) containing one 2-cycle is all of S(p), and a subgroup
+    containing a p-cycle is transitive because the powers of that cycle move one
+    point to every other. Nothing was changed.
 ---
 
 ::: {.exercise}

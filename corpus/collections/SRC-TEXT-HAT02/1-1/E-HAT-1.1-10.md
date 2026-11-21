@@ -32,7 +32,7 @@ Construct an explicit homotopy demonstrating this.
 :::
 
 ::: {.solution}
-The isomorphism in question is Proposition 1.12 (p. 34).
+The isomorphism in question is Proposition 1.12.
 Let
 $$
 a:I\to X,

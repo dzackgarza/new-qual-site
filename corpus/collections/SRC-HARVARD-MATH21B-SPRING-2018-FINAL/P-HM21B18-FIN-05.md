@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-HM21B18-FIN-05
 kind: problem
 title: Least-squares fit for a two-parameter rational-expression model
-classification: {areas: [applied-algebra], topics: []}
+classification: {areas: [applied-algebra], topics: [Orthogonal Projection, Linear Systems]}
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: A multivariable-calculus proof of the arithmetic-geometric mean inequalit
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Inequalities
+  - Multivariable Calculus
 relations: []
 review: draft
 audit:

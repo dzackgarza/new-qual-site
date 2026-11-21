@@ -19,9 +19,9 @@ review: draft
 ---
 
 ::: {.theorem ref="CauchyIntegral"}
-Let $\Omega\subseteq\CC$ be open, let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$, and let $z_0\in\Omega$ and $R>0$ satisfy $\overline{D_R(z_0)}\subseteq\Omega$.
-Let $\gamma\coloneqq\partial D_R(z_0)$, oriented counterclockwise.
-Then for every $z\in D_R(z_0)$ and every $n\geq0$,
+Let $\Omega\subseteq\CC$ be open, let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$, and let $z_0\in\Omega$ and $R>0$ satisfy $\overline{\DD_R(z_0)}\subseteq\Omega$.
+Let $\gamma\coloneqq\bd\DD_R(z_0)$, oriented counterclockwise.
+Then for every $z\in \DD_R(z_0)$ and every $n\geq0$,
 $$
 f^{(n)}(z)=\frac{n!}{2\pi i}\int_\gamma\frac{f(\xi)}{(\xi-z)^{n+1}}\dxi,
 $$
@@ -30,4 +30,6 @@ Consequently, the coefficients of the Taylor expansion $f(z)=\sum_{k\geq0}c_k(z-
 $$
 c_k=\frac{f^{(k)}(z_0)}{k!}=\frac{1}{2\pi i}\int_\gamma\frac{f(\xi)}{(\xi-z_0)^{k+1}}\dxi.
 $$
+
+This is [@SS03, Theorem 4.1].
 :::

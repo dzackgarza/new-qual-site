@@ -5,7 +5,9 @@ kind: problem
 title: "Does $v=u^2$ force an analytic function to be constant?"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy-Riemann
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:
@@ -13,6 +15,30 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis Section III, problem 3 (Summer 2007) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 13 (printed p. 5 of the 2007 complex-analysis paper). The card had cited neither the
+    examination nor a page; it now names both, and the statement was compared with the
+    printed item and left unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The proof ended with a pf-qed that only announced that an earlier step had answered
+    the question, which STYLE-08 forbids; it is dropped, and the step that carries the
+    result is now the QED step. No argument or statement changes.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -27,6 +53,8 @@ If not, give a counterexample and modify the statement so that the corresponding
 :::
 
 ::: {.solution}
+The item is Section 3 item 3 of the Complex Analysis section of the Analysis Qualifier, Wesleyan University, Summer 2007 (whether $v=u^2$ on a general open set forces $f$ to be constant).
+
 
 ::: pf
 
@@ -146,11 +174,6 @@ while step [](#s1-5){.pf-ref} says that $P$ contains no nonempty open set. This 
 
 :::
 
-::: pf-qed
-
-Step [](#s1-2){.pf-ref} disproves the original statement, and step [](#s1-6){.pf-ref} proves the corrected connected-domain statement.
-
-:::
 
 :::
 

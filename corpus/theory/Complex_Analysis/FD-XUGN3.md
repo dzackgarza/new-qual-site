@@ -22,4 +22,6 @@ $$
 \sinh(z)&\coloneqq\frac{e^{z}-e^{-z}}{2}.
 \end{aligned}
 $$
+
+These are the definitions given in [@Ahl73, ch. 2, §3.2, The Trigonometric Functions], where they are introduced together with the request to express them through $\cos iz$ and $\sin iz$.
 :::

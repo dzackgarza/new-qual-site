@@ -6,7 +6,9 @@ title: Directional derivatives without differentiability at the origin
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Directional Derivatives
+  - Partial Derivatives
 relations: []
 review: draft
 audit:

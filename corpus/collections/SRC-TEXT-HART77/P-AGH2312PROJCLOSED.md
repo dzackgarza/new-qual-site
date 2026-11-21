@@ -33,6 +33,7 @@ Show that $I$ and $I'$ determine the same closed subscheme.
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.12 (Closed Subschemes of $\Proj S$), transcribed and checked against the exercise as printed: that $\varphi$ preserves degrees so $S_+\subseteq T_+$, the one-to-one correspondence between homogeneous prime ideals of $T$ containing $\varphi(S_+)$ and homogeneous prime ideals of $S$ containing $S_+$, the identification $\Proj(T)\cong V(\ker\varphi)$, and part (b) on the quotients $S/I$.
 
 ::: pf
 
@@ -245,7 +246,7 @@ Hartshorne II.5.16 shows that every closed subscheme of $X$ comes from a homogen
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.12, PDF p. 25, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim gets $U=\Proj T$ from $\phi(S_+)=T_+$ and closedness of $\Proj T\to\Proj S$ from surjectivity of $(S_f)_0\to(T_{\phi(f)})_0$ for homogeneous $f\in S_+$, and disposes of (b) by noting that $S/I$ and $S/I'$ agree in large degree and citing 2.14.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.12, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim gets $U=\Proj T$ from $\phi(S_+)=T_+$ and closedness of $\Proj T\to\Proj S$ from surjectivity of $(S_f)_0\to(T_{\phi(f)})_0$ for homogeneous $f\in S_+$, and disposes of (b) by noting that $S/I$ and $S/I'$ agree in large degree and citing 2.14.
 The proof above proves the degree-zero surjectivity by lifting a homogeneous numerator, notes that $I'$ is an ideal, and cites 2.14(c) for the same isomorphism in large degree.
 Agree.
 :::

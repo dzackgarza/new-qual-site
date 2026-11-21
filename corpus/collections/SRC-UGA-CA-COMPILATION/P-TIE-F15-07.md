@@ -6,7 +6,9 @@ title: The Gaussian $e^{-\pi x^2}$ is its own Fourier transform for complex freq
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Fourier Transform
+  - Gaussian Integrals
 relations: []
 review: draft
 audit:

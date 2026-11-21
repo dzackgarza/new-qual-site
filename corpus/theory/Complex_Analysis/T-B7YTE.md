@@ -21,4 +21,6 @@ $$
 \lim_{r\to1^-}\sum_{k\ge0}c_kr^k=\sum_{k\ge0}c_k,
 $$
 where the limit is taken over real $r\in(0,1)$.
+
+This is [@SS03, ch. 1, Exercise 15].
 :::

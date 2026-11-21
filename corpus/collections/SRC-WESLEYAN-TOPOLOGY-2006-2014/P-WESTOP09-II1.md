@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP09-II1
 kind: problem
 title: Simple connectivity, retractions, and deformation retracts on fundamental groups
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Simply Connected, Retracts]}
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: 'Cauchy–Riemann equations are not sufficient for analyticity'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy-Riemann
 relations: []
 review: draft
 audit:

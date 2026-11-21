@@ -30,7 +30,14 @@ audit:
     Correct: X^3+X+1 takes the values 1, 3, 1, 1, 4 on F_5, so it has no root and,
     being cubic, is irreducible; the quotient is then a field of 5^3 = 125
     elements. No defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 10, Galois problem 2.
+    $X^3+X+1$ takes the values $1,3,1,1,4$ on $\mathbf F_5$, so it has no root and is
+    irreducible; the quotient has $5^3=125$ elements with unique representatives
+    $a+b\alpha+c\alpha^2$. No defect.
 ---
 
 ::: {.exercise}

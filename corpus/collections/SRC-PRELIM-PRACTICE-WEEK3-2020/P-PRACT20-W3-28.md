@@ -27,6 +27,17 @@ audit:
   date: 2026-11-06
   note: >-
     The booklet's use of the divergence theorem is transcribed, with the flux through the base disc shown to vanish and the volume of the half-ball computed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked by two routes. Directly: on the unit sphere the
+    outward normal is the position vector, so F . n = 1 there and the flux over the hemisphere is
+    its area, 2 pi. By the divergence theorem: div F = 3 on the half-ball of volume 2 pi/3, giving
+    flux 2 pi through the closed hemisphere, and the flat disk contributes nothing because on
+    z = 0 the field is (x,y,0) and the outward normal is (0,0,-1), so F . n = 0. The two answers
+    agree, which is what the card's two steps establish. Not claimed: any orientation other than
+    the upward one, which would change the sign.
 ---
 
 ::: {.problem}

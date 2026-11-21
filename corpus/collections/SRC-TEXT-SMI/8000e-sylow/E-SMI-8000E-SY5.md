@@ -33,7 +33,15 @@ audit:
     n_q = p^2 would force q | p + 1 so (p,q) = (2,3), and the remaining order 12
     case is closed by the count 4·2 = 8 elements of order 3 leaving a unique Sylow
     2-subgroup. No defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 7, Sylow problem 5. For order
+    $pq$ with $p<q$, $n_q=1$ gives the abelian tower $G\trianglerighteq Q\trianglerighteq1$; for
+    $p^2q$ with $q<p$, $n_p=1$ gives the tower through $P$; for $p<q$, $n_q=p^2$ forces $q\mid p+1$
+    and hence $(p,q)=(2,3)$; and order $12$ is settled by the $4\cdot2=8$ elements of order $3$
+    leaving a unique Sylow $2$-subgroup. No defect.
 ---
 
 ::: {.exercise}

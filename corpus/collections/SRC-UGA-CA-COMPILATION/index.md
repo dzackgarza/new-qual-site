@@ -9,7 +9,8 @@ classification:
   topics: []
 relations: []
 review: draft
-provenance: []
+provenance:
+- assets/attachments/Questions_from_Tie.pdf
 source:
   source_kind: compilation
   sections:
@@ -222,4 +223,6 @@ source:
     kind: unknown
 ---
 
-
+::: {.remark}
+The list names the retained compilation `assets/attachments/Questions_from_Tie.pdf`, which the cards cite by term and question number and from which they were transcribed. It is one compilation holding six terms of complex-analysis problems — Fall 2009, Fall 2011, Spring 2014, Fall 2015, Spring 2015 and Fall 2016 — rather than one examination; the individual papers inside it were not located separately and are not listed.
+:::

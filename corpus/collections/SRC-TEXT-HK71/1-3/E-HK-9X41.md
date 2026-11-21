@@ -21,6 +21,15 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained scan `assets/attachments/Hoffman-Kunze-Linear-Algebra.pdf`, at its printed
+    folio: the exercise is §1.3 Exercise 3 on printed p. 11 (PDF page 18), whose matrix and two
+    equations are the card's. The collection index records this card as Hoffman and Kunze 1.3.3,
+    which is what the printed item number says. The page is now named in the solution's opening
+    sentence. Not checked in this pass: the elimination, which the edit does not touch.
 ---
 
 ::: {.exercise}
@@ -34,6 +43,8 @@ find all solutions of $AX = 2X$ and all solutions of $AX = 3X$. (The symbol $cX$
 :::
 
 ::: {.solution}
+No retained solution set covers this exercise; the argument is the card's own, checked against Hoffman--Kunze, *Linear Algebra* (1971), §1.3 Exercise 3.
+
 The equation $AX=cX$ is equivalent to
 $$
 (A-cI)X=0.

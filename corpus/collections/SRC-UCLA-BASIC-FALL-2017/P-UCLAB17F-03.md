@@ -6,7 +6,8 @@ title: Solve a two-dimensional linear differential system
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Systems of ODEs
 relations: []
 review: draft
 audit:

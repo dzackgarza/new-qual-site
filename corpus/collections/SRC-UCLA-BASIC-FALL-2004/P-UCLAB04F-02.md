@@ -5,7 +5,9 @@ kind: problem
 title: State and prove Rolle's theorem
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - 'Rolle''s Theorem'
+  - Mean Value Theorem
 relations: []
 review: draft
 audit:

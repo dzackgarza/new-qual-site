@@ -31,9 +31,9 @@ $$
 
 [[PR-DWOXP]]
 
-::: {.example title="A differentiable function need not have a continuous derivative"}
-$f(x)\coloneqq x^2\sin(1/x)$ for $x\neq0$ and $f(0)\coloneqq0$ is differentiable on $\RR$, and $f'(x) = 2x\sin(1/x)-\cos(1/x)$ has no limit at $0$.
-A continuous function need not be differentiable: $\abs x$ is continuous and not differentiable at $0$, and the Weierstrass function is continuous and differentiable nowhere.
+::: {.example title="A continuous function need not be differentiable"}
+$\abs x$ is continuous and not differentiable at $0$, and the Weierstrass function is continuous and differentiable nowhere ([[real-analysis/counterexamples-undergraduate#The Weierstrass function|Undergraduate counterexamples]]).
+A differentiable function whose derivative is discontinuous is on [[real-analysis/counterexamples#Undergraduate analysis|Counterexamples]].
 
 :::
 

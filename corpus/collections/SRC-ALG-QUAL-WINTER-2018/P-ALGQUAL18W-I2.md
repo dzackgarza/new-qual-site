@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-ALGQUAL18W-I2
 kind: problem
 title: Simple modules over upper-triangular complex matrices
-classification: {areas: [algebra], topics: []}
+classification: {areas: [algebra], topics: [Simple Modules, Modules]}
 relations: []
 review: draft
 audit:

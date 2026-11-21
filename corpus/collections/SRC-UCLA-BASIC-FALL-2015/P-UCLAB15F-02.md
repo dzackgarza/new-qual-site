@@ -6,7 +6,9 @@ title: Weighted mean value theorem for integrals
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Mean Value Theorem
+  - Integrals
 relations: []
 review: draft
 audit:

@@ -98,7 +98,7 @@ Their cross product has norm $R^2\sin\theta$.
 
 ::: {.pf-step #s1-3}
 
-Hence
+Part (a): hence
 $$
 \operatorname{Area}(S_R^2)
 =
@@ -120,19 +120,6 @@ and
 $$
 \int_0^{2\pi}d\varphi=2\pi.
 $$
-
-:::
-
-:::
-
-::: {.pf-step #s1-4}
-
-Part (a) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -229,7 +216,7 @@ is the product of these norms.
 
 ::: {.pf-step #s1-8}
 
-Therefore
+Part (b): therefore
 $$
 \begin{aligned}
 \operatorname{Area}(T^2)
@@ -259,22 +246,9 @@ Multiplying by the $2\pi$ from the $\varphi$-integration gives the result.
 
 :::
 
-::: {.pf-step #s1-9}
-
-Part (b) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-8){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Steps [](#s1-4){.pf-ref} and [](#s1-9){.pf-ref} establish parts (a) and (b), respectively.
+Steps [](#s1-3){.pf-ref} and [](#s1-8){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 

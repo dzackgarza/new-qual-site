@@ -126,9 +126,8 @@ These are precisely the defining conditions for $\phi':X'\to Y'$ to be a morphis
 :::
 
 ::: {.remark title="Published solution"}
-Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 3.10, PDF p. 4, text version `tmp/sources/hartshorne-solutions-borcherds.md`: every point $x\in X'$ has an affine neighborhood $U$ in $X$ on which $\phi$ is given by a regular function $f$ to $Y$, and $f$ restricts to a regular function on $U\cap X'$ with values in $Y'$.
-William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.10, PDF p. 12, text version `tmp/sources/hartshorne-solutions-troiani.md`: for $f=f_1/f_2$ regular on $U\subseteq Y'$ with $f_2$ nowhere zero, write $U=U'\cap Y'$ with $U'$ open in $Y$; then $f$ extends to $U'\cap Z(f_2)^c$, on which $f\circ\phi$ is regular because $\phi$ is a morphism, and restriction to $X'$ gives $\restrictionof{f\circ\phi}{X'}$. He notes that local closedness of $X'$ and $Y'$ is needed only for them to be varieties in their own right.
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.10, PDF p. 33, text version `tmp/sources/hartshorne-solutions-egbert.md`: that a locally regular map is regular.
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 3.10, text version `tmp/sources/hartshorne-solutions-borcherds.md`: every point $x\in X'$ has an affine neighborhood $U$ in $X$ on which $\phi$ is given by a regular function $f$ to $Y$, and $f$ restricts to a regular function on $U\cap X'$ with values in $Y'$.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.10, text version `tmp/sources/hartshorne-solutions-troiani.md`: for $f=f_1/f_2$ regular on $U\subseteq Y'$ with $f_2$ nowhere zero, write $U=U'\cap Y'$ with $U'$ open in $Y$; then $f$ extends to $U'\cap Z(f_2)^c$, on which $f\circ\phi$ is regular because $\phi$ is a morphism, and restriction to $X'$ gives $\restrictionof{f\circ\phi}{X'}$. He notes that local closedness of $X'$ and $Y'$ is needed only for them to be varieties in their own right.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.10, text version `tmp/sources/hartshorne-solutions-egbert.md`: that a locally regular map is regular.
 The proof above separates the two defining conditions of a morphism, continuity for the subspace topologies and the pullback of regular functions through a local ambient representative, which is what the published versions run together.
-Agree.
 :::

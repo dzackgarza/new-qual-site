@@ -6,7 +6,9 @@ title: Asymptotics of the sine iteration
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Limits
+  - Sequences of Numbers
 relations: []
 review: draft
 audit:

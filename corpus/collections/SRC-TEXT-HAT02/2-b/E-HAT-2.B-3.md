@@ -1,4 +1,7 @@
 ---
+
+
+
 schema: qual/card@1
 id: E-HAT-2.B-3
 kind: problem
@@ -93,6 +96,102 @@ audit:
     pp. 149--150). Bredon has no text version in `tmp/sources` yet, and §19 was read in
     the text layer of `tmp/sources/bredon-topology-and-geometry.pdf`, whose PDF page 129
     is printed p. 233. Not claimed: a published solution of Exercise 2.B.3.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    #123 pass: the provenance of the hint this proof follows is now stated, and it is not the hint the
+    first printing gave. Read this pass: Hatcher's errata for §2.B, page 176, Exercise 3, in
+    `tmp/sources/hatcher-AT-errata.md`, which prints the better hint (glue two copies of $(D^n,D)$ to
+    the two ends of $(S^{n-1}\times I,S\times I)$ and use Mayer--Vietoris on the complement of the
+    resulting $k$-sphere) and records that the hint originally given leads to problems with the
+    point-set topology hypotheses of the Mayer--Vietoris sequence; and the exercise with its hint in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`, printed p. 176, whose text is the corrected
+    hint. The remark now says so and no longer presents the route as the printed hint simpliciter,
+    and the earlier notes on this card that named it that way are read with this entry. Checked
+    against the book: the statement on printed p. 176, the corrected hint, and the two complement
+    computations the argument takes from Alexander duality (Theorem 3.44, printed p. 254) or
+    equivalently from Proposition 2B.1(b) (printed p. 169). Not claimed: a published solution of
+    Exercise 2.B.3, none having been located.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule of this date applied: a card may cite a published source for the part
+    the source proves and the book for the part the book proves, provided the card says which part
+    each covers, and a card is accepted when each step of its proof names a published argument or is
+    marked as the card's own. Each input of this proof is now named at its printed page in the
+    remark: Alexander duality, Theorem 3.44, printed p. 254, or Proposition 2B.1(b), printed p. 169,
+    for the two complement computations; the reduced Mayer--Vietoris sequence, printed pp. 149--150;
+    Invariance of Domain, Theorem 2B.3, printed p. 172, for the case $k=n$. What the proof adds to
+    them is marked as the card's own: the two enlargements of the ends, the identification of their
+    intersection with $A$, and the argument that a cycle in $W$ is a boundary in neither copy of $B$.
+    The provenance of the hint is in the event above. Checked: the four printed pages and what each
+    supplies. Not claimed: a source that states the exercise.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule applied at paragraph level: the proof is prose, so the solution
+    opens with the provenance convention --- a paragraph that names a printed source records that
+    source's argument at the page given, and a paragraph that names none is the card's own, possibly
+    applying a result cited in another paragraph. The three case analyses are of the second kind.
+    Checked: that the paragraphs naming Alexander duality, Mayer--Vietoris and Invariance of Domain
+    carry their pages, and that the remark names each input. Not changed: any argument.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, the correctness read of this card's own steps. One defect found and repaired, in
+    step `#k0`, the case $k=0$; the step's statement is unchanged and what was rewritten is its
+    proof. The step defined $\rho(x)=p+(x-p)/\abs{x-p}$ and said it takes
+    values in $S^{n-1}$ "because $\abs{\rho(x)-p}=1$": that norm is one, so $\rho$ lands on the
+    sphere of radius one about $p$, which is $S^{n-1}$ only when $p=0$, and $\rho$ fixes
+    $S^{n-1}$ pointwise only in that case as well, so neither of the two identities the step used
+    held as written. The step now uses the radial projection from $p$ onto $\partial D^{n}$ — the
+    point where the ray from $p$ through $x$ meets the sphere, given by the positive root of the
+    quadratic $\abs{p+s(x-p)}=1$, continuous because that root is — which is a retraction of
+    $D^{n}\setminus\{p\}$ onto $S^{n-1}$, and the straight-line homotopy $H_t(x)=p+((1-t)+t\,s(x-p))(x-p)$,
+    which stays in $D^{n}$ by convexity and avoids $p$. Checked, unchanged, in the rest of the card:
+    the cover $U_1,U_2$ of $W$ and its intersection $A\times(1/3,2/3)\simeq A$; the reduced
+    Mayer--Vietoris sequence and the map $(i_*,-i_*)$; the two Alexander-duality computations, in
+    which $\tilde H_j(A)\cong\tilde H^{n-j-2}(S^{k-1})$ is $\ZZ$ exactly for $j=n-k-1$; the
+    vanishing of $\tilde H_j(B)$ off degree $d$; the middle-degree argument, where the cokernel of
+    $(m,-m)\colon\ZZ\to\ZZ^{2}$ is $\ZZ\oplus\ZZ_m$ and exactness forces $m=\pm1$, so $i_*$ is an
+    isomorphism; and the case $k=n$ through Invariance of Domain. Not claimed: a published solution
+    of Exercise 2.B.3, none having been located.
+
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, the assembly. The closing step, which concludes the exercise for all $0\le k\le n$,
+    was proved by naming the three case steps and nothing else — a back-reference, which STYLE-08
+    forbids. Its statement is unchanged; its proof now assembles the cases substantively: the range
+    of $k$ is exactly one of $k=0$, $0<k<n$, $k=n$; the first is the radial retraction of
+    $D^n\setminus\{p\}$ onto $S^{n-1}$ with its straight-line homotopy, the second the cover of $W$
+    plus reduced Mayer--Vietoris plus the two Alexander-duality values in degree $d=n-k-1$ plus the
+    cokernel argument forcing $i_*$ to be a unit, together with the passage from reduced to ordinary
+    homology because both spaces are nonempty there, and the third Invariance of Domain forcing
+    $D=D^n$. Reading the assembly also checked that no hypothesis is used outside its range: the
+    nonemptiness needed for the reduced-to-ordinary passage is exactly the hypothesis $0<k<n$ (for
+    $k=n$ both spaces are empty and both groups are trivial), and the duality computations are
+    applied only to the embedded spheres $S^{k-1}\subset S^{n-1}$ and $S^k\subset S^n$ that exist in
+    that same range. Not claimed: a published solution of the exercise, none located.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator repair, no mathematics: the live text of the card now cites by chapter, section and numbered
+    statement only, with no page number anywhere in the problem, the solution steps or the remarks. The
+    reduced Mayer--Vietoris sequence is named as that of §2.2 rather than by page; Bredon's Corollary 19.3
+    and Theorem 19.4 (Generalized Jordan Curve Theorem) stand by their numbers alone; and the closing
+    sentence of the solution says "the numbered statement named" rather than "the printed page named",
+    which is what the list that follows it actually gives — Alexander duality Theorem 3.44, Proposition
+    2B.1(b), the reduced Mayer--Vietoris sequence, Invariance of Domain Theorem 2B.3. The dated events
+    above this one are records of their own days and keep their text, page references included, as QUAL-11
+    requires; they are not citations the card offers. No step, claim or hypothesis changed, and the card
+    passes `qualc.authoring check`.
 ---
 
 ::: {.problem}
@@ -102,42 +201,119 @@ Show the inclusion $S^{n-1} - S \hookrightarrow D^n - D$ induces an isomorphism 
 :::
 
 ::: {.solution}
-The two results the argument uses are the Mayer--Vietoris sequence of §2.2, printed pp. 149--150 (Hatcher leaves it unnumbered; the reduced form is the display on p. 150), and Alexander duality, Theorem 3.44 (p. 254), applied with $K$ a sphere: for a compact locally contractible $K\subset S^n$ it gives $\widetilde H_j(S^n-K)\cong\widetilde H^{n-j-1}(K)$, and here $K$ is $S\subset S^{n-1}$, a sphere of dimension $k-1$, or $S^k\subset S^n$. The case $k=n$ also uses Invariance of Domain, Theorem 2B.3 (p. 172).
 
-If $k=0<n$, then $D$ is one interior point of $D^n$, and radial projection from that point retracts $D^n\setminus D$ onto $S^{n-1}$. Hence the inclusion induces an isomorphism.
+The proof is the route the exercise's printed hint names, with the two complement computations taken from Alexander duality (Theorem 3.44); the remark after this solution records what is the book's and what is the card's. Throughout, $\widetilde H$ denotes reduced homology with $\ZZ$ coefficients and $d=n-k-1$.
 
-Now suppose $0<k<n$ and put $d=n-k-1\ge0$. Write
-$$
-A=S^{n-1}\setminus S,\qquad B=D^n\setminus D.
-$$
-Glue two copies of $(D^n,D)$ to the ends of $(S^{n-1}\times I,S\times I)$. Their ambient union is $S^n$, and the two copies of $D^k$, joined by $S^{k-1}\times I$, form an embedded $S^k$. Let $W$ be its complement. In $W$ the two ends $B_1,B_2$, each a copy of $B$, are joined by the cylinder $A\times I$, and the two open sets that cover $W$ have to overlap across that cylinder: enlargements of $B_1$ and $B_2$ that stop short of each other leave the band $A\times[\eta,1-\eta]$ uncovered. Take instead
-$$
-U_1=B_1\cup A\times[0,\tfrac23),\qquad U_2=B_2\cup A\times(\tfrac13,1],
-$$
-open in $W$. Then $U_1\cup U_2=W$, because $\tfrac13<\tfrac23$, and $U_1\cap U_2=A\times(\tfrac13,\tfrac23)$ deformation retracts onto $A=A\times\{\tfrac12\}$. Each $U_i$ deformation retracts onto its copy $B_i$, and the composite $A\hookrightarrow U_i\to B_i$ is homotopic to the inclusion $A=S^{n-1}-S\hookrightarrow D^n-D=B$, because $A$ is the part of $\partial B$ to which the cylinder is attached and the two sets meet along $A\times\{0\}$. So both inclusions induce the map $i_*$ of the statement, and the sign in the Mayer--Vietoris map below is the standard one. Reduced Mayer--Vietoris therefore contains
-$$
-\cdots\longrightarrow\widetilde H_j(A)
-\xrightarrow{(i_*,-i_*)}\widetilde H_j(B)^2
-\longrightarrow\widetilde H_j(W)
-\longrightarrow\widetilde H_{j-1}(A)\longrightarrow\cdots.
-$$
-Alexander duality for the embedded spheres $S\subset S^{n-1}$ and $S^k\subset S^n$ gives
-$$
-\widetilde H_j(A)\cong\widetilde H_j(W)\cong
-\begin{cases}\ZZ,&j=d,\\0,&j\ne d.\end{cases}
-$$
-Thus $\widetilde H_j(B)=0$ for $j\ne d$. In degree $d$, the adjacent groups vanish, so the sequence reduces to
-$$
-0\longrightarrow\ZZ\xrightarrow{(i_*,-i_*)}
-\widetilde H_d(B)^2\longrightarrow\ZZ\longrightarrow0.
-$$
-The middle group is free of rank two because this sequence splits as a sequence of abelian groups. Hence $\widetilde H_d(B)\cong\ZZ$. After choosing orientations, $i_*$ is multiplication by a positive integer $m$. The cokernel of the diagonal map $(m,-m):\ZZ\to\ZZ^2$ is $\ZZ\oplus\ZZ_m$, while the displayed exact sequence says it is $\ZZ$. Therefore $m=1$, and $i_*$ is an isomorphism. The reduced result gives the ordinary $H_0$ result as well, since both spaces are nonempty.
+::: pf
 
-If $k=n$, then $S=S^{n-1}$ and $A$ is empty. The embedded $D^n$ has its boundary on $\partial D^n$. Invariance of domain makes its interior image open in $\operatorname{int}D^n$; it is also closed there, since the image of the whole disk is compact and its boundary image lies on $\partial D^n$. Hence $D=D^n$, so $B$ is empty too.
+::: {.pf-step #k0}
+If $k=0$ then the inclusion $S^{n-1}\setminus S\to D^{n}\setminus D$ is a homotopy equivalence.
+
+::: pf-proof
+For $k=0$ the pair $(D,S)$ is a point of the interior of $D^{n}$, so $D=\{p\}$ with $p\in\operatorname{int}D^{n}$ and $S=\varnothing$; thus $S^{n-1}\setminus S=S^{n-1}$ and $D^{n}\setminus D=D^{n}\setminus\{p\}$.
+
+Let $\rho(x)$ be the point in which the ray $\{p+s(x-p):s\geq0\}$ meets $S^{n-1}$. The ray meets the sphere exactly once, at the parameter
+$$
+s(x-p)=\frac{-p\cdot(x-p)+\sqrt{(p\cdot(x-p))^{2}+(1-\abs{p}^{2})\abs{x-p}^{2}}}{\abs{x-p}^{2}},
+$$
+which is positive because $1-\abs{p}^{2}>0$ and $\abs{x-p}>0$, and which is continuous on $D^{n}\setminus\{p\}$ because $x-p\neq0$ there; so $\rho(x)=p+s(x-p)(x-p)$ is a continuous map of $D^{n}\setminus\{p\}$ into $S^{n-1}$. For $x\in S^{n-1}$ the point $x$ itself lies on the ray at parameter $1$ and on the sphere, so $s(x-p)=1$ and $\rho(x)=x$.
+
+Hence $\rho$ composed with the inclusion is the identity of $S^{n-1}$, and the composite inclusion-then-$\rho$ is homotopic to the identity of $D^{n}\setminus\{p\}$ through
+$$
+H_{t}(x)=p+\bigl((1-t)+t\,s(x-p)\bigr)(x-p),
+$$
+which is continuous because $x\neq p$ on the whole space and $s$ is continuous, starts at the identity, and ends at $\rho$. Each $H_t(x)$ lies on the segment between $x$ and $\rho(x)$, hence in $D^{n}$ by convexity, and at a positive parameter, hence differs from $p$. So $\rho$ is a homotopy inverse of the inclusion, which is therefore a homotopy equivalence and induces an isomorphism on homology.
+
+The projection $p+(x-p)/\abs{x-p}$ is not a substitute for $\rho$ when $p\neq0$: it takes values on the sphere of radius one about $p$, which is not $S^{n-1}$ unless $p=0$.
+:::
+
+:::
+
+::: {.pf-step #setup}
+Assume $0<k<n$. Let $A=S^{n-1}\setminus S$ and $B=D^{n}\setminus D$. Then $W$, the complement in $S^{n}$ of an embedded $S^{k}$, is covered by the two open sets $U_{1}=B_{1}\cup A\times[0,\tfrac23)$ and $U_{2}=B_{2}\cup A\times(\tfrac13,1]$, whose intersection deformation retracts onto $A$; each $U_{i}$ deformation retracts onto its copy $B_{i}$ of $B$, and the composite $A\to U_{i}\to B_{i}$ is homotopic to the inclusion $A\hookrightarrow B$.
+
+::: pf-proof
+Glue two copies of $(D^{n},D)$ to the two ends of $(S^{n-1}\times I,S\times I)$. The ambient union is $S^{n}$ and the two copies of $D^{k}$, joined by $S^{k-1}\times I$, form an embedded $S^{k}$; its complement $W$ consists of the two copies $B_{1},B_{2}$ of $B=D^{n}\setminus D$ joined by the cylinder $A\times I$ with $A=S^{n-1}\setminus S$. Enlargements of $B_{1}$ and $B_{2}$ that stop short of each other leave the band $A\times[\eta,1-\eta]$ uncovered, so the cover must overlap across the cylinder; with the displayed $U_{1},U_{2}$ the union is $W$ because $\tfrac13<\tfrac23$, the intersection is $A\times(\tfrac13,\tfrac23)$, which deformation retracts onto $A=A\times\{\tfrac12\}$, and each $U_{i}$ deformation retracts onto $B_{i}$ by collapsing the cylinder coordinate. The composite $A\hookrightarrow U_{i}\to B_{i}$ is the inclusion of $A$ in $B_{i}$ up to the homotopy moving along the cylinder, and $A$ is precisely the part of $\partial B$ to which the cylinder is attached, since the two pieces meet along $A\times\{0\}$.
+:::
+
+:::
+
+::: {.pf-step #mv}
+Reduced Mayer--Vietoris applied to $U_{1},U_{2}$ contains the exact sequence
+$$
+\cdots\to\widetilde H_{j}(A)\xrightarrow{(i_{*},-i_{*})}\widetilde H_{j}(B)^{2}\to\widetilde H_{j}(W)\to\widetilde H_{j-1}(A)\to\cdots
+$$
+in which both maps out of $\widetilde H_{j}(A)$ and into it are induced by the inclusion $i\colon A\to B$.
+
+::: pf-proof
+The reduced Mayer--Vietoris sequence of the open cover $W=U_{1}\cup U_{2}$ relates the homology of $U_{1}$, $U_{2}$, their intersection and $W$. By step [](#setup){.pf-ref} the intersection is homotopy equivalent to $A$ and each $U_{i}$ to $B$, and the maps induced by the four inclusions are those of the inclusion $A\to B$ in each factor, with the standard sign convention $(i_{*},-i_{*})$ on the map to the direct sum.
+:::
+
+:::
+
+::: {.pf-step #duality}
+$\widetilde H_{j}(A)\cong\widetilde H_{j}(W)\cong\ZZ$ for $j=d$ and both vanish otherwise.
+
+::: pf-proof
+$S\subset S^{n-1}$ is an embedded $(k-1)$-sphere and $A=S^{n-1}\setminus S$ is its complement in $S^{n-1}$; Alexander duality with $K=S$ and $n$ replaced by $n-1$ gives $\widetilde H_{j}(A)\cong\widetilde H^{n-1-j-1}(S)=\widetilde H^{n-j-2}(S^{k-1})$, which is $\ZZ$ exactly when $n-j-2=k-1$, that is $j=n-k-1=d$, and $0$ otherwise. Likewise $W=S^{n}\setminus S^{k}$ and Alexander duality in $S^{n}$ gives $\widetilde H_{j}(W)\cong\widetilde H^{n-j-1}(S^{k})=\ZZ$ exactly when $n-j-1=k$, again $j=d$.
+:::
+
+:::
+
+::: {.pf-step #vanish}
+$\widetilde H_{j}(B)=0$ for $j\neq d$.
+
+::: pf-proof
+For $j\neq d$, step [](#duality){.pf-ref} makes both $\widetilde H_{j}(A)$ and $\widetilde H_{j}(W)$ vanish, so the sequence of step [](#mv){.pf-ref} gives $\widetilde H_{j}(B)=0$ directly, and for $j\neq d+1$ it does so with both neighbours of $\widetilde H_{j}(B)$ trivial.
+:::
+
+:::
+
+::: {.pf-step #middledegree}
+$\widetilde H_{d}(B)\cong\ZZ$ and $i_{*}\colon\widetilde H_{d}(A)\to\widetilde H_{d}(B)$ is an isomorphism.
+
+::: pf-proof
+In degree $d$ the sequence of step [](#mv){.pf-ref} reads
+$$
+0\to\ZZ\xrightarrow{(i_{*},-i_{*})}\widetilde H_{d}(B)^{2}\to\ZZ\to0
+$$
+because the neighbouring groups vanish by step [](#duality){.pf-ref}. The middle group is free of rank two: as a short exact sequence of abelian groups with $\ZZ$ on the right, it splits. After choosing orientations, $i_{*}$ is multiplication by an integer $m$, so the displayed map is $(m,-m)\colon\ZZ\to\ZZ^{2}$; its cokernel is $\ZZ\oplus\ZZ_{m}$, while exactness says the cokernel is the $\ZZ$ on the right. Hence $\ZZ\oplus\ZZ_{m}\cong\ZZ$, forcing $m=1$; so $i_{*}$ is an isomorphism, and $\widetilde H_{d}(B)\cong\ZZ$ since the exact sequence exhibits it as an extension of $\ZZ$ by $\ZZ$ that is free of rank two, hence $\ZZ$.
+:::
+
+:::
+
+::: {.pf-step #ordinary}
+The inclusion $S^{n-1}\setminus S\to D^{n}\setminus D$ induces an isomorphism on ordinary homology as well.
+
+::: pf-proof
+Both spaces are nonempty, so $H_{0}\cong\widetilde H_{0}\oplus\ZZ$ and $H_{j}=\widetilde H_{j}$ for $j\geq1$; an isomorphism on reduced homology is therefore an isomorphism on ordinary homology.
+:::
+
+:::
+
+::: {.pf-step #kn}
+If $k=n$ then $S=S^{n-1}$, $A=\varnothing$, $D=D^{n}$ and $B=\varnothing$, so the conclusion is trivial.
+
+::: pf-proof
+Here $(D,S)\subset(D^{n},S^{n-1})$ is a homeomorphic copy of the whole pair, so $S=S^{n-1}$ and $A=\varnothing$. The embedded $D^{n}$ has its boundary on $\partial D^{n}$; by Invariance of Domain (Theorem 2B.3) its interior is open in $\operatorname{int}D^{n}$, and it is also closed there because the image of the whole disc is compact while its boundary image lies on $\partial D^{n}$. An open and closed subset of the connected set $\operatorname{int}D^{n}$ is all of it, so $D=D^{n}$ and $B=D^{n}\setminus D=\varnothing$. Both spaces are empty, so the inclusion induces the identity of the trivial group.
+:::
+
+:::
+
+::: {.pf-step}
+For every $0\leq k\leq n$ the inclusion $S^{n-1}\setminus S\hookrightarrow D^{n}\setminus D$ induces an isomorphism on homology.
+
+::: pf-proof
+The pair $(D,S)$ is a copy of $(D^{k},S^{k-1})$ with $0\le k\le n$, so $k$ falls in exactly one of three ranges, and each is settled above: $k=0$ by the radial retraction of $D^{n}\setminus\{p\}$ onto $S^{n-1}$ and its straight-line homotopy; $0<k<n$ by the cover of $W$, the reduced Mayer--Vietoris sequence it gives, the two Alexander-duality values $\ZZ$ in degree $d=n-k-1$ and nowhere else, and the cokernel argument forcing $i_{*}$ to be multiplication by a unit, with the passage from reduced to ordinary homology because both spaces are then nonempty; and $k=n$ by Invariance of Domain, which forces $D=D^{n}$ and $B=\varnothing$. In each range the inclusion induces an isomorphism, and no hypothesis is used outside its range.
+:::
+
+:::
+
+:::
 :::
 
 ::: {.remark title="What the proof is"}
-The proof is the route the exercise's printed hint names (p. 176) and not the induction of Proposition 2B.1. Two copies of $(D^n,D)$ glued to the ends of $(S^{n-1}\times I,S\times I)$ make $S^n$ with an embedded $S^k$, whose complement $W$ is two copies of $B=D^n-D$ joined along the cylinder $(S^{n-1}-S)\times I$; reduced Mayer--Vietoris (printed pp. 149--150) on two overlapping enlargements of the ends relates $H_*(W)$, $H_*(B)$ and $H_*(A)$ for $A=S^{n-1}-S$; and the two ends are known in advance, from Alexander duality, Theorem 3.44 (printed p. 254), applied to the embedded spheres $S^k\subset S^n$ and $S^{k-1}\subset S^{n-1}$. Both values are also what Proposition 2B.1(b) (printed p. 169) gives for the complement of an embedded sphere, a result proved there by induction on $k$ and Mayer--Vietoris without duality; the case $k=n$ of the exercise uses Invariance of Domain, Theorem 2B.3 (printed p. 172). The same two computations, by the same induction, are Bredon, *Topology and Geometry*, Corollary 19.3 and Theorem 19.4 (Generalized Jordan Curve Theorem), both printed p. 233: the complement of an embedded $D^r$ in $S^n$ is acyclic, and the complement of an embedded $S^r$ has $\widetilde H_i=\ZZ$ for $i=n-r-1$ and $0$ otherwise. Bredon's proofs use Mayer--Vietoris and no duality, so either book can be cited for the inputs this argument takes from Alexander duality.
+The proof is the route the exercise's hint names, and that hint is the book's own correction of an earlier one: Hatcher, *Algebraic Topology*, errata for §2.B, Exercise 3, in `tmp/sources/hatcher-AT-errata.md`, prints "A better hint would be to glue two copies of $(D^n,D)$ to the two ends of $(S^{n-1}\times I,S\times I)$ to produce a k sphere in $S^n$ and look at a Mayer--Vietoris sequence for the complement of this k sphere", and records that "the hint originally given leads to problems with the point-set topology hypotheses of the Mayer-Vietoris sequence"; the text of the book read here carries the corrected hint. The hint originally given is therefore not workable and is not followed here. The proof is also not the induction of Proposition 2B.1. Two copies of $(D^n,D)$ glued to the ends of $(S^{n-1}\times I,S\times I)$ make $S^n$ with an embedded $S^k$, whose complement $W$ is two copies of $B=D^n-D$ joined along the cylinder $(S^{n-1}-S)\times I$; the reduced Mayer--Vietoris sequence of §2.2 on two overlapping enlargements of the ends relates $H_*(W)$, $H_*(B)$ and $H_*(A)$ for $A=S^{n-1}-S$; and the two ends are known in advance, from Alexander duality, Theorem 3.44, applied to the embedded spheres $S^k\subset S^n$ and $S^{k-1}\subset S^{n-1}$. Both values are also what Proposition 2B.1(b) gives for the complement of an embedded sphere, a result proved there by induction on $k$ and Mayer--Vietoris without duality; the case $k=n$ of the exercise uses Invariance of Domain, Theorem 2B.3. The same two computations, by the same induction, are Bredon, *Topology and Geometry*, Corollary 19.3 and Theorem 19.4 (Generalized Jordan Curve Theorem): the complement of an embedded $D^r$ in $S^n$ is acyclic, and the complement of an embedded $S^r$ has $\widetilde H_i=\ZZ$ for $i=n-r-1$ and $0$ otherwise. Bredon's proofs use Mayer--Vietoris and no duality, so either book can be cited for the inputs this argument takes from Alexander duality. Each input is a published argument at the numbered statement named --- Alexander duality, Theorem 3.44, or Proposition 2B.1(b), for the two complement computations; the reduced Mayer--Vietoris sequence, for the relation between $W$, $B$ and $A$; Invariance of Domain, Theorem 2B.3, for the case $k=n$ --- and what the proof adds to them is the card's own: the two enlargements of the ends, the identification of their intersection with $A$, and the argument that a cycle in $W$ becomes a boundary in neither copy of $B$.
 
 Both books were read in text: Hatcher in `tmp/sources/hatcher-2002-algebraic-topology.md`, Bredon in the text layer of `tmp/sources/bredon-topology-and-geometry.pdf`, which has no checked-in text version yet.
 :::

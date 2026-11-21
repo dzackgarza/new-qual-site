@@ -6,7 +6,9 @@ title: Intersections of normal subgroups
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Normal Subgroups
+  - Subgroups
 relations: []
 review: draft
 audit:

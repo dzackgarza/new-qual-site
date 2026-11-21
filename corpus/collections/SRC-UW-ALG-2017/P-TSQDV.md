@@ -14,6 +14,20 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 5 of the Algebra Preliminary Examination 2017 (University of
+    Washington), printed p. 1 of the single-page paper retained at
+    assets/attachments/UW-Algebra-Qual-2017.pdf, is the statement the card answers, and the
+    paragraph at the head of the solution records that the paper prints no solutions, so the
+    argument is the card's own. Checked: both parts, including the printed presentation of H_n and
+    its order n^3, against the paper's text layer at the page named; the solution read for the
+    isomorphism with the unitriangular matrices and the list of irreducible complex representations
+    of H_p (p^2 characters and p - 1 of dimension p); `qualc.authoring check` on the card, and
+    `tmp/lam.sh` for the numbering and the QED. Not checked: no retained solution set exists for
+    this paper to compare the argument with, and no other card of the collection in this pass.
+- event: source-checked
+  by: claude
   date: 2026-11-01
   note: >-
     Statement read from the card in `corpus/collections/SRC-UW-ALG-2017`; no correction is claimed.
@@ -26,7 +40,6 @@ audit:
     is $(\ZZ/p)^2$, giving $p^2$ characters, and the dimension count
     $\sum d^2=\abs{H_p}$ leaves exactly $p-1$ irreducibles of dimension $p$, one for each nontrivial
     character of the centre $\langle c\rangle$, constructed explicitly. Nothing is left in outline.
----
 ---
 
 ::: {.problem}
@@ -44,6 +57,8 @@ $$
 :::
 
 ::: {.solution}
+
+The problem is Problem 5 of the Algebra Preliminary Examination 2017 (University of Washington), printed p. 1 of the single-page paper retained at `assets/attachments/UW-Algebra-Qual-2017.pdf`, both parts. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is (a) the isomorphism of $H_n$ with the upper unitriangular matrices over $\ZZ/n\ZZ$ with its order count, and (b) the classification of the irreducible complex representations of $H_p$ — the $p^2$ characters and the $p-1$ representations of dimension $p$, induced from the characters of the index-$p$ abelian subgroup $\langle a,c\rangle$ on which $c$ acts nontrivially.
 
 For $n\ge1$ let
 $$
@@ -98,7 +113,7 @@ A one-dimensional representation factors through the abelianisation, which by st
 
 Let $\rho$ be an irreducible that is not one-dimensional. Then $\rho$ does not factor through the abelianisation, so $\rho(c)\ne\mathrm{Id}$. Since $c$ is central, Schur's lemma gives $\rho(c)=\zeta\,\mathrm{Id}$ with $\zeta$ a $p$-th root of unity, $\zeta\ne1$.
 
-Let $A=\langle a,c\rangle\subseteq H_p$, an abelian subgroup of order $p^2$, hence of index $p$, and let $\chi$ be an irreducible constituent of $\rho|_A$. Then $\chi(c)=\zeta\ne1$, and $\chi$ is one-dimensional because $A$ is abelian. Since $A$ is the stabiliser of $\chi$ under the conjugation action of the abelian group $A$ on its own characters, the representation $\operatorname{Ind}_A^{H_p}\chi$ is irreducible of dimension $[H_p:A]=p$; its character vanishes off $A$ and equals $p\chi$ on $A$, and by Frobenius reciprocity $\rho$ is a constituent of it, so $\rho\cong\operatorname{Ind}_A^{H_p}\chi$ and $\dim\rho=p$.
+Let $A=\langle a,c\rangle\subseteq H_p$, an abelian subgroup of order $p^2$, hence of index $p$, and let $\chi$ be an irreducible constituent of $\restrictionof{\rho}{A}$. Then $\chi(c)=\zeta\ne1$, and $\chi$ is one-dimensional because $A$ is abelian. Since $A$ is the stabiliser of $\chi$ under the conjugation action of the abelian group $A$ on its own characters, the representation $\operatorname{Ind}_A^{H_p}\chi$ is irreducible of dimension $[H_p:A]=p$; its character vanishes off $A$ and equals $p\chi$ on $A$, and by Frobenius reciprocity $\rho$ is a constituent of it, so $\rho\cong\operatorname{Ind}_A^{H_p}\chi$ and $\dim\rho=p$.
 
 Dimension count, $\sum_id_i^2=\abs{H_p}$:
 $$

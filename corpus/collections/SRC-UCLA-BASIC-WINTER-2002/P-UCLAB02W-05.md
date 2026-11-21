@@ -5,7 +5,9 @@ kind: problem
 title: Differentiability and the multivariable chain rule
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Differentiation
+  - Chain Rule
 relations: []
 review: draft
 audit:

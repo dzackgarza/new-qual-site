@@ -9,16 +9,17 @@ order: 30
 
 | Question | Page |
 | --- | --- |
-| Is this function holomorphic, and where? | [[complex-analysis/holomorphic-functions/is-it-holomorphic\|Is it holomorphic?]] |
-| Show that $f$ is constant | [[complex-analysis/cauchy-theory/theorems-that-give-a-constant\|Theorems that give a constant]] |
-| Classify this singularity, or compute its order | [[complex-analysis/singularities/classifying-a-singularity\|Classifying a singularity]] |
-| Evaluate this real integral | [[complex-analysis/residues-and-contours/which-contour-do-i-close\|Which contour do I close?]] |
-| How many zeros are in this region? | [[complex-analysis/counting-zeros/how-many-zeros-in-this-region\|How many zeros in this region?]] |
-| Find a conformal map from here to there | [[complex-analysis/conformal-maps/build-me-a-map\|Build me a map]] |
+| Is this function holomorphic, and where? | [[complex-analysis/holomorphic-functions/is-it-holomorphic]] |
+| Show that $f$ is constant | [[complex-analysis/cauchy-theory/theorems-that-give-a-constant]] |
+| Classify this singularity, or compute its order | [[complex-analysis/singularities/classifying-a-singularity]] |
+| Evaluate this real integral | [[complex-analysis/residues-and-contours/which-contour-do-i-close]] |
+| How many zeros are in this region? | [[complex-analysis/counting-zeros/how-many-zeros-in-this-region]] |
+| Find a conformal map from here to there | [[complex-analysis/conformal-maps/build-me-a-map]] |
+| Expand this function in a series, or compute a residue | [[complex-analysis/singularities/laurent-series]] and [[complex-analysis/residues-and-contours/computing-residues]] |
 
 ## Chapters
 
-1. [[complex-analysis/holomorphic-functions/index|Holomorphic functions]] -- arithmetic, the logarithm, Cauchy-Riemann, power series, harmonic functions.
+1. [[complex-analysis/holomorphic-functions/index|Holomorphic functions]] -- arithmetic, the logarithm, Cauchy--Riemann, power series, harmonic functions.
 
 2. [[complex-analysis/cauchy-theory/index|Cauchy theory]] -- the integral theorems and what they immediately give.
 
@@ -40,91 +41,84 @@ Three pages collect material from several chapters:
 
 [[complex-analysis/basics/index|Background and reference]] covers undergraduate analysis and standard series expansions; [[complex-analysis/appendices/index|Appendix notes]] holds supplementary proofs and special functions.
 
+Further pages: [[complex-analysis/resources/index|resources]], the [[complex-analysis/resources/study-schedule-and-topics|syllabus topic list]], and the [[complex-analysis/workshops/index|workshops]].
+
 ## The syllabus
 
 ### Calculus and undergraduate analysis
 
-- Continuity and differentiation in one and several real variables
+> References: [@Rud76, chaps. 2--7, 9].
 
-- Inverse and implicit function theorems
+- Continuity and differentiation in one and several real variables: [[real-analysis/undergraduate/continuity|continuity]] and [[real-analysis/undergraduate/differentiability|differentiability]].
 
-- Compactness and connectedness in analysis
+- Inverse and implicit function theorems: [[complex-analysis/basics/calculus-preliminaries#The implicit and inverse function theorems|the implicit and inverse function theorems]].
 
-- Uniform convergence and uniform continuity
+- Compactness and connectedness in analysis: [[real-analysis/undergraduate/sets-and-compactness|compactness and connectedness]].
 
-- Riemann integrals
+- Uniform convergence and uniform continuity: [[complex-analysis/basics/uniform-convergence|uniform convergence]] and Heine--Cantor.
 
-- Contour integrals and Green's theorem
+- Riemann integrals: [[real-analysis/undergraduate/riemann-integrability|Riemann integrability]].
 
-> Reference: Rudin.
+- Contour integrals and Green's theorem: [[complex-analysis/cauchy-theory/contours-and-primitives|contours and primitives]] and [[complex-analysis/basics/calculus-preliminaries#Green's theorem|Green's theorem]].
 
 ### Preliminary topics in complex analysis
 
-- Complex arithmetic
+> References: [@Ahl79, chaps. 1--2]; [@SS03, chap. 1].
 
-- Analyticity, harmonic functions, and the Cauchy-Riemann equations
+- Complex arithmetic: [[complex-analysis/basics/complex-arithmetic|complex arithmetic]].
 
-- Contour integration in $\CC$
+- Analyticity, harmonic functions, and the Cauchy--Riemann equations: [[complex-analysis/holomorphic-functions/index|holomorphic functions]].
 
-> References: Ahlfors ch. 1--2; Hille ch. 1, 2, 4; Stein--Shakarchi ch. 1.
+- Contour integration in $\CC$: [[complex-analysis/cauchy-theory/contours-and-primitives|contours and primitives]].
 
 ### Cauchy's theorem and its consequences
 
-- Cauchy's theorem and integral formula
+> References: [@Ahl79, chaps. 4--6]; [@SS03, chaps. 2, 3, 5, 8 (§2--3)].
 
-- Morera's theorem
+- Cauchy's theorem and integral formula: [[complex-analysis/cauchy-theory/cauchys-theorem|Cauchy's theorem]] and [[complex-analysis/cauchy-theory/the-integral-formula|the integral formula]].
 
-- Schwarz reflection
+- Morera's theorem: [[complex-analysis/cauchy-theory/morera-and-converses#Morera's theorem|Morera's theorem]].
 
-- Uniform convergence of analytic functions
+- Schwarz reflection: [[complex-analysis/cauchy-theory/schwarz-reflection|the Schwarz reflection principle]].
 
-- Taylor and Laurent expansions
+- Uniform convergence of analytic functions: [[complex-analysis/cauchy-theory/morera-and-converses#Locally uniform limits|locally uniform limits]] and [[complex-analysis/conformal-maps/normal-families-and-montel|normal families]].
 
-- Maximum modulus principle and Schwarz's lemma
+- Taylor and Laurent expansions: [[complex-analysis/holomorphic-functions/power-series|power series]] and [[complex-analysis/singularities/laurent-series|Laurent series]].
 
-- Liouville's theorem and the fundamental theorem of algebra
+- Maximum modulus principle and Schwarz's lemma: [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|maximum modulus]] and [[complex-analysis/conformal-maps/the-schwarz-lemma|the Schwarz lemma]].
 
-- Residue theorem and applications
+- Liouville's theorem and the fundamental theorem of algebra: [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estimates and Liouville]] and [[complex-analysis/appendices/appendix-fta-proofs|routes to the fundamental theorem]].
 
-- Singularities and meromorphic functions
+- Residue theorem and applications: [[complex-analysis/residues-and-contours/the-residue-theorem|the residue theorem]].
 
-- Casorati-Weierstrass theorem
+- Singularities and meromorphic functions: [[complex-analysis/singularities/classifying-a-singularity|classifying a singularity]] and [[complex-analysis/singularities/meromorphic-functions|meromorphic functions]].
 
-- Rouché's theorem, the argument principle, and the open mapping theorem
+- Casorati--Weierstrass theorem: [[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati--Weierstrass and Picard]].
 
-- Estimates from the Cauchy integral formula: the Cauchy inequalities, and bounds on holomorphic functions and their derivatives on compact sets
+- Rouché's theorem, the argument principle, and the open mapping theorem: [[complex-analysis/counting-zeros/rouches-theorem|Rouché]], [[complex-analysis/counting-zeros/the-argument-principle|the argument principle]], and [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping#The open mapping theorem|the open mapping theorem]].
 
-> References: Ahlfors ch. 4--6; Hille ch. 5, 7, 8, 9; Stein--Shakarchi ch. 2, 3, 5, 8 (§2--3).
+- Estimates from the Cauchy integral formula: [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|the Cauchy inequalities]] and bounds on holomorphic functions and their derivatives on compact sets.
 
 ### Conformal mapping
 
-- General properties of conformal mappings
+> References: [@Ahl79, chaps. 3, 8]; [@SS03, chap. 8 (§1--2)].
 
-- Analytic and mapping properties of linear fractional transformations
+- General properties of conformal mappings: [[complex-analysis/conformal-maps/index|conformal maps]].
 
-- Automorphisms of the disc, plane, and Riemann sphere
+- Analytic and mapping properties of linear fractional transformations: [[complex-analysis/conformal-maps/mobius-transformations|Möbius transformations]].
 
-> References: Ahlfors ch. 3, 8; Hille ch. 3, 4; Stein--Shakarchi ch. 8 (§1--2).
+- Automorphisms of the disc, plane, and Riemann sphere: [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|automorphisms]] and [[complex-analysis/basics/the-riemann-sphere|the Riemann sphere]].
+
+- The hyperbolic metric: [[complex-analysis/conformal-maps/the-hyperbolic-metric|the hyperbolic metric]].
+
+- Riemann surfaces and uniformization: [[complex-analysis/conformal-maps/riemann-surfaces-and-uniformization|Riemann surfaces and uniformization]].
+
+- [[complex-analysis/conformal-maps/sl2-and-modular-forms|Modular forms]] and the action of $\SL_2(\RR)$ on the upper half plane.
 
 ### References
 
-1. L. Ahlfors, *Complex Analysis*, third edition, McGraw-Hill.
+- [@Ahl79]
 
-2. E. Hille, *Analytic Function Theory*, vol. 1, Ginn and Company.
+- [@Rud76]
 
-3. W. Rudin, *Principles of Mathematical Analysis*, third edition, McGraw-Hill.
-
-4. E. M. Stein and R. Shakarchi, *Complex Analysis*, Princeton University Press.
-
-## Acknowledgements
-
-Thanks to:
-
-- Edward Azoff, for a problem sheet broken out by topic.
-
-- Mentzelos Melistas, for explaining and documenting many solutions.
-
-- Jingzhi Tie, for many additional problems and solutions.
-  Notation used with those problems: $f_x \coloneqq \dd{f}{x}$ for partial derivatives, and $\bd_z^n f$ for $f^{(n)}(z)$.
-
-- Swaroop Hegde, for a number of proofs.
+- [@SS03]

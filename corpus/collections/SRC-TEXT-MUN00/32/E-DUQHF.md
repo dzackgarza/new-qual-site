@@ -27,6 +27,15 @@ audit:
     B̃ closed sets in X" and then jumps to the disjoint open sets of X, omitting the observation that
     Ã and B̃ may be taken to be A and B themselves because Y is closed; the card makes that step.
     Orellana's is the only located proof of the exercise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. Y closed in a normal X is T1 because the singletons are closed in X and
+    Y inherits that; and for disjoint closed A, B in Y, both are closed in X because Y is closed in X,
+    so normality of X separates them by disjoint open U, V whose traces U cap Y and V cap Y are the
+    required disjoint Y-open sets. Checked that closedness of Y in X is used exactly once, at the step
+    passing A and B from Y-closed to X-closed, which is the step that fails for a non-closed subspace.
 ---
 
 ::: {.exercise}

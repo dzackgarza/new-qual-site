@@ -39,6 +39,20 @@ audit:
   date: 2026-11-07
   note: >-
     Statement matches Exercise 7 (p.205). Rechecked the counterexample: for X = S^1 with a 2-cell attached by a degree-m map, Theorem 2.35 and the Cellular Boundary Formula (pp.139, 141) give partial = multiplication by m, so h^1(X) = Hom(Z_m,Z) = 0, h^1(A) = h^2(X,A) = Z with the connecting map multiplication by m, and h^2(X) = Hom(H_2 X,Z) = 0; the resulting 0 -> Z ->^m Z -> 0 cannot be exact. Citations added: Theorem 2.16 p.117 for the sequence of the pair and p.160 for the axioms. Not covered: the exercise asks only for failure on CW complexes, and only the exactness axiom is tested.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 7 of §3.1, printed p. 205, with Theorem 2.16 on printed p. 117
+    and the axioms of printed p. 160. Verified the counterexample: for $X=M(\ZZ_m,1)=S^1\cup_m
+    e^2$ one has $H_1(X)=\ZZ_m$, $H_2(X)=0$, $H_2(X,A)=\ZZ$ and $\partial$ multiplication by $m$,
+    so $h^1(X)=\operatorname{Hom}(\ZZ_m,\ZZ)=0$, $h^1(A)=\ZZ$, $h^2(X,A)=\ZZ$ and
+    $h^2(X)=\operatorname{Hom}(0,\ZZ)=0$, and the connecting map $\ZZ\to\ZZ$ is multiplication by
+    $m$, which is not surjective for $m>1$; the segment $0\to\ZZ\xrightarrow{m}\ZZ\to0$ of the
+    sequence of the pair is therefore not exact. One citation repaired: the Cellular Boundary
+    Formula is printed on p. 140, not p. 141 as the card and the event of 2026-11-08 had it (book
+    PDF page 149, folio 140). Not claimed: a published solution of this exercise, and no
+    certificate.
 ---
 
 ::: {.problem}
@@ -69,7 +83,7 @@ is multiplication by $m$.
 
 ::: pf-proof
 
-Theorem 2.35 (p.139) with the Cellular Boundary Formula (p.141): with one $1$-cell and one $2$-cell attached by a map of degree $m$, the cellular boundary $H_2(X,A)\to H_1(A)$ is multiplication by $m$, since the only incidence number is the degree of the attaching map. This is the Moore space $M(\ZZ_m,1)$ of Exercise 11 (p.205).
+Theorem 2.35 with the Cellular Boundary Formula of §2.2: with one $1$-cell and one $2$-cell attached by a map of degree $m$, the cellular boundary $H_2(X,A)\to H_1(A)$ is multiplication by $m$, since the only incidence number is the degree of the attaching map. This is the Moore space $M(\ZZ_m,1)$ of Exercise 11.
 
 :::
 
@@ -96,7 +110,7 @@ One has $\operatorname{Hom}(\ZZ_m,\ZZ)=0$ and $\operatorname{Hom}(\ZZ,\ZZ)=\ZZ$.
 
 ::: pf-step
 
-If the $h^n$ formed a cohomology theory in the sense of the axioms on p.160, the long exact sequence of the pair (Theorem 2.16, p.117) would contain
+If the $h^n$ formed a cohomology theory in the sense of the axioms of §2.3, the long exact sequence of the pair (Theorem 2.16) would contain
 $$
 0=h^1(X)\longrightarrow h^1(A)=\ZZ
 \xrightarrow{\,m\,}h^2(X,A)=\ZZ

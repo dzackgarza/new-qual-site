@@ -105,7 +105,7 @@ are chain maps and form a short exact sequence of chain complexes.
 
 Both are given by inclusions of chains, which commute with the simplicial boundary, so both are chain maps: $\partial(x,-x)=(\partial x,-\partial x)$ and $\partial(x+y)=\partial x+\partial y$.
 
-That $\ker\varphi=0$ is immediate, since a chain of $A\cap B$ that is zero as a chain of $A$ is zero. $\operatorname{Im}\varphi\subset\ker\psi$ because $\psi\varphi(x)=x-x=0$. For $\ker\psi\subset\operatorname{Im}\varphi$, if $x+y=0$ in $\Delta_n(X)$ then $x=-y$, so $x$ is a chain carried by simplices lying in both $A$ and $B$, that is $x\in\Delta_n(A\cap B)$, and $(x,y)=(x,-x)$. Surjectivity of $\psi$ is step [](#s1){.pf-ref}. These are exactly the checks made for the singular case on p. 150.
+That $\ker\varphi=0$ is immediate, since a chain of $A\cap B$ that is zero as a chain of $A$ is zero. $\operatorname{Im}\varphi\subset\ker\psi$ because $\psi\varphi(x)=x-x=0$. For $\ker\psi\subset\operatorname{Im}\varphi$, if $x+y=0$ in $\Delta_n(X)$ then $x=-y$, so $x$ is a chain carried by simplices lying in both $A$ and $B$, that is $x\in\Delta_n(A\cap B)$, and $(x,y)=(x,-x)$. Surjectivity of $\psi$ is step [](#s1){.pf-ref}. These are exactly the checks made for the singular case in Hatcher's Mayer--Vietoris subsection.
 
 :::
 
@@ -113,14 +113,14 @@ That $\ker\varphi=0$ is immediate, since a chain of $A\cap B$ that is zero as a 
 
 ::: {.pf-step #s3}
 
-Theorem 2.16 (p. 117) applied to this short exact sequence gives the exact sequence
+Theorem 2.16 applied to this short exact sequence gives the exact sequence
 $$
 \cdots\to H_n(A\cap B)\xrightarrow{\ \Phi\ }H_n(A)\oplus H_n(B)\xrightarrow{\ \Psi\ }H_n(X)\xrightarrow{\ \partial\ }H_{n-1}(A\cap B)\to\cdots
 $$
 
 ::: pf-proof
 
-Theorem 2.16 produces the long exact sequence of a short exact sequence of chain complexes, and pp. 116--117 construct its connecting map. Here $\Phi$ and $\Psi$ are the maps induced in homology by $\varphi$ and $\psi$, and the connecting map is computed as follows. Let $z$ be a cycle in $\Delta_n(X)$ and write $z=x+y$ with $x\in\Delta_n(A)$ and $y\in\Delta_n(B)$, which is possible by step [](#s1){.pf-ref}. Then $\partial x=-\partial y$ because $\partial z=0$, so $\partial x$ is a chain lying in both $A$ and $B$, and it is a cycle: $\partial\partial x=0$. The class of $\partial x$ in $H_{n-1}(A\cap B)$ is independent of the choice of $x$ and $y$, by the argument on p. 150, and is $\partial[z]$. Exactness at each term is that of Theorem 2.16.
+Theorem 2.16 produces the long exact sequence of a short exact sequence of chain complexes, and its proof constructs the connecting map. Here $\Phi$ and $\Psi$ are the maps induced in homology by $\varphi$ and $\psi$, and the connecting map is computed as follows. Let $z$ be a cycle in $\Delta_n(X)$ and write $z=x+y$ with $x\in\Delta_n(A)$ and $y\in\Delta_n(B)$, which is possible by step [](#s1){.pf-ref}. Then $\partial x=-\partial y$ because $\partial z=0$, so $\partial x$ is a chain lying in both $A$ and $B$, and it is a cycle: $\partial\partial x=0$. The class of $\partial x$ in $H_{n-1}(A\cap B)$ is independent of the choice of $x$ and $y$, by the argument given for the singular case there, and is $\partial[z]$. Exactness at each term is that of Theorem 2.16.
 
 :::
 
@@ -132,7 +132,7 @@ This is the Mayer--Vietoris sequence of $X=A\cup B$.
 
 ::: pf-proof
 
-The sequence of step [](#s3){.pf-ref} has the form displayed in the subsection on Mayer--Vietoris sequences beginning on p. 149, with the same maps $\Phi$ and $\Psi$. The derivation here is elementary in that no subdivision is needed: for the singular theory one must invoke Proposition 2.21 (p. 119) to know that a class of $X$ is represented by a sum of chains in $A$ and in $B$, whereas for a $\Delta$-complex with $A$ and $B$ subcomplexes every simplex already lies in one of them, which is step [](#s1){.pf-ref}.
+The sequence of step [](#s3){.pf-ref} has the form displayed in the subsection on Mayer--Vietoris sequences in §2.2, with the same maps $\Phi$ and $\Psi$. The derivation here is elementary in that no subdivision is needed: for the singular theory one must invoke Proposition 2.21 to know that a class of $X$ is represented by a sum of chains in $A$ and in $B$, whereas for a $\Delta$-complex with $A$ and $B$ subcomplexes every simplex already lies in one of them, which is step [](#s1){.pf-ref}.
 
 :::
 

@@ -9,13 +9,9 @@ title: "Algebra qual prep week 1: groups warmup"
 
 - Subgroups
 
-  - The one-step subgroup test
+  - The [[PR-U5CHT|one-step subgroup test]]
 
-    - A nonempty subset $H\subseteq G$ with $x\inverseof{y} \in H$ for all $x,y\in H$ is a subgroup
-
-  - Cosets
-
-    - $xH \coloneqq \theset{xh\st h\in H}$, $G/H \coloneqq \theset{xH \st x\in G}$, and the left cosets partition $G$
+  - Cosets: the [[D-VJGH5|index of a subgroup]], and [[PR-VUKHO|left cosets are equal or disjoint]]
 
   - The index of a subgroup
 
@@ -59,33 +55,27 @@ title: "Algebra qual prep week 1: groups warmup"
 
   - cyclic $\implies$ abelian $\implies$ nilpotent $\implies$ solvable
 
-## Review exercises
+## Homomorphisms, centralizers, normalizers, and commutators
 
-- State the definitions of the following:
+- Group homomorphisms, and the first isomorphism theorem they give: [[T-I5N43]]
 
-  - Group homomorphism
+- Centralizer of an element and of a subset: [[D-PX64W]]
 
-  - Centralizer
+- Normalizer of a subgroup: [[D-OZ2RR]]
 
-  - Normalizer
+- Conjugacy class: [[D-HLDEY]]
 
-  - Conjugacy class
+- Center: [[D-NK7G7]]
 
-  - Center
+- Inner automorphisms and their quotient by the center: [[PR-IN9ZP]]
 
-  - Inner automorphism
+- Commutator and commutator subgroup: [[D-BQ4BQ]]
 
-  - Commutator
+- $p$-groups: [[D-FIB7S]]
 
-  - $p\dash$group
+- Even and odd permutations, and the sign homomorphism: [[D-BZ3KD]]
 
-- Write definitions or presentations for the families of groups in the topic list.
-
-- State what it means for a permutation to be even or odd.
-
-- Find a counterexample for the converse of Lagrange's theorem.
-
-- State the four isomorphism theorems.
+- The presentations of the standard families are on [[algebra/groups/the-standard-families|The standard families]]; the converse of Lagrange's theorem fails, and the two standard counterexamples are on [[algebra/counterexamples|Counterexamples]].
 
 ## Problems by topic
 
@@ -95,7 +85,7 @@ For everything that follows, assume $G$ is a finite group.
 
 - $\size G$ denotes the order of $G$.
 
-- $e$ or $e_G$ denotes the identity element of $G$.
+- $e$ denotes the identity element of $G$.
 
 - The group operation is written multiplicatively.
 

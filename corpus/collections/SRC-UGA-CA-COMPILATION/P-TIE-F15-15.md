@@ -6,7 +6,8 @@ title: Schwarz lemma for functions with positive real part
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Schwarz Lemma
 relations: []
 review: draft
 audit:

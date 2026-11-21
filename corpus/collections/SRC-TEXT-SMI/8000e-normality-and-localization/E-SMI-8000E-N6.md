@@ -31,7 +31,13 @@ audit:
     PR_P is exactly the set of a/s with a in P, well defined because at = ps in P
     with t not in P forces a in P; every a/s with a not in P is a unit; so PR_P is
     proper and maximal, and every proper ideal is contained in it. No defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 6, Exercise 6. $PR_P$ is
+    exactly the set of fractions with numerator in $P$; every fraction with numerator outside
+    $P$ is a unit; so $PR_P$ is proper, maximal, and contains every proper ideal. No defect.
 ---
 
 ::: {.exercise}

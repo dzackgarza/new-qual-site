@@ -24,34 +24,22 @@ The real and imaginary parts of a holomorphic function are harmonic, and a harmo
 
 [[PR-UWGI6]]
 
-::: {.proof}
-Define
-$$
-F(r) \coloneqq {1\over 2\pi r} \oint_{\bd \DD_r(z_0)} u\,ds = {1\over 2\pi} \int_{[-\pi, \pi]} u(z_0 + re^{it} ) \dt
-,$$
-and differentiate:
-$$
-\begin{aligned}
-F'(r)
-&= {1\over 2 \pi} \int_{[-\pi, \pi]} \cos(t) u_x(z_0 +re^{it} ) + \sin(t) u_y(z_0 + re^{it}) \dt \\
-&= {1\over 2\pi r} \oint_{\bd \DD_r(z_0)}\qty{x-x_0\over r} u_x(x, y) + \qty{y-y_0\over r}u_y(x, y) \,ds \\
-&= {1\over 2\pi r} \oint_{\bd \DD_r(z_0)} \dd{u}{n} \,ds \qquad n = \thevector{{x-x_0\over r}, {y-y_0\over r}} \\
-&= {1\over 2\pi r} \iint_{\DD_r(z_0)} \laplacian u \dx \dy \\
-&= 0
-\end{aligned},$$
-where $n$ is the outward unit normal, using Green's theorem and $\laplacian u = 0$.
-So $F$ is constant, and letting $r\to 0$,
-$$
-F(r) = {1\over 2\pi} \int_{[-\pi, \pi]} u(z_0 + re^{it}) \dt \too u(z_0)
-.$$
-Multiplying $u(z_0) = F(s)$ by $s$ and integrating over $0\leq s\leq r$ gives $\frac{r^2}{2}u(z_0) = \frac{1}{2\pi}\iint_{\DD_r(z_0)} u \dx\dy$ in polar coordinates, which is the area mean.
+The circular form is the mean value property of the real part of a holomorphic function [@SS03, ch. 3, Corollary 7.3]; the disc form follows from it by integrating the circular average over $0\leq s\leq r$ in polar coordinates.
 
+[[T-HMVPC]]
+
+::: {.remark}
+The mean value property gives the [[PR-6WOTK|strict maximum principle]]: a real harmonic function on a connected open set that attains its maximum is constant, by the argument on [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|Maximum modulus and open mapping]].
 :::
 
-::: {.remark title="Converse"}
-A continuous $u$ satisfying the mean value property on every disc in its domain is harmonic, so the mean value property characterizes harmonic functions among continuous functions.
-The mean value property gives the [[PR-6WOTK|strict maximum principle]]: a real harmonic function on a connected open set that attains its maximum is constant, by the argument on [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|Maximum modulus and open mapping]].
-
+::: {.example title="The mean value property for $u = x^2-y^2$"}
+$u(x,y) = x^2-y^2$ is the real part of $z^2$ and hence harmonic.
+On the circle of radius $r$ about $z_0 = a+ib$,
+$$
+u\qty(a+r\cos\theta,\ b+r\sin\theta) = (a^2-b^2) + 2ar\cos\theta - 2br\sin\theta + r^2\cos 2\theta,
+$$
+whose terms in $\cos\theta$, $\sin\theta$ and $\cos 2\theta$ all average to $0$ over $[0,2\pi]$; so the circular average is $a^2-b^2 = u(z_0)$, the mean value property [@SS03, ch. 3, Corollary 7.3].
+At $z_0 = 1+i$, $r = 2$ both the average and $u(z_0)$ are $0$, and at $z_0 = -2+\tfrac12 i$, $r = 3/2$ both are $3.75$; the numerical averages over the circle agree.
 :::
 
 ## Exercises

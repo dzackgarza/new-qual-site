@@ -55,6 +55,21 @@ audit:
     (c) of the first exercise; that route is available and is not the one on the card. The
     2026-11-15 note above said that the three corrections it made to dbFin were "none of them
     mathematical"; that claim was wrong for this one and is corrected here.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Both directions are correct. For compactness to accumulation points: the
+    tails B_alpha have the finite intersection property because the index set is
+    directed, so their closures have it too, and compactness gives a common point;
+    any neighbourhood of that point meets every tail, which is exactly the
+    accumulation property. For the converse: the nonempty finite subsets of a
+    family with the finite intersection property, ordered by inclusion, form a
+    directed set, each carries a chosen point of the corresponding finite
+    intersection, and an accumulation point of that net lies in the closure of
+    every member of the family, hence in every member, since they are closed. The
+    passage between accumulation points and convergent subnets is the lemma of
+    the preceding exercise, as the card says. Nothing was changed.
 ---
 
 ::: {.exercise}

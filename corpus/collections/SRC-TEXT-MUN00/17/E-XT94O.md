@@ -26,6 +26,11 @@ audit:
     singletons are the required neighbourhoods, and conversely the union of the
     neighbourhoods omitting x is the complement of {x}. (tmp/sources/munkres-solutions-
     positron-ch2.pdf).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into STYLE-08 as the two directions of the equivalence. Re-checked that one-point sets are closed in a $T_{1}$ space and Theorem 17.8 (printed p. 98) for the converse. No statement change.
 ---
 
 ::: {.exercise}
@@ -34,15 +39,39 @@ Show that the $T_1$ axiom is equivalent to the condition that for each pair of p
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.15, PDF p. 8** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both directions are theirs. Whitman, printed p. 166, gives the same two directions through Corollary 17.7.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.15** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both directions are theirs. Whitman, gives the same two directions through Corollary 17.7.
 
-The points in question must be distinct, since a neighbourhood of a point contains that point.
+The points in the condition are distinct, since a neighbourhood of a point contains that point.
 
-*$T_{1}$ implies the condition.* Let $x\ne y$. In a $T_{1}$ space one-point sets are closed, so $X-\{x\}$ is open; it contains $y$ and not $x$. Likewise $X-\{y\}$ is a neighbourhood of $x$ not containing $y$.
+::: pf
 
-*The condition implies $T_{1}$.* It is enough to show that every one-point set is closed (Munkres, Theorem 17.8: $X$ is $T_{1}$ exactly when its finite subsets are closed). Let $x\in X$. For each $y\in X-\{x\}$ the condition gives a neighbourhood $U_{y}$ of $y$ with $x\notin U_{y}$, that is $U_{y}\subset X-\{x\}$. Then
+::: pf-step
+
+If $X$ satisfies the $T_{1}$ axiom, then each of two distinct points has a neighbourhood not containing the other.
+
+::: pf-proof
+
+Let $x\ne y$. In a $T_{1}$ space one-point sets are closed, so $X-\{x\}$ is open; it contains $y$ and not $x$. Likewise $X-\{y\}$ is open, contains $x$ and not $y$.
+
+:::
+
+:::
+
+::: pf-step
+
+If each of two distinct points has a neighbourhood not containing the other, then $X$ satisfies the $T_{1}$ axiom.
+
+::: pf-proof
+
+By Theorem 17.8 it is enough to show that every one-point set is closed. Let $x\in X$. For each $y\in X-\{x\}$ the hypothesis gives a neighbourhood $U_{y}$ of $y$ with $x\notin U_{y}$, that is $U_{y}\subset X-\{x\}$. Then
 $$
-X-\{x\}=\bigcup_{y\in X-\{x\}}U_{y}
+X-\{x\}=\bigcup_{y\in X-\{x\}}U_{y},
 $$
-is a union of open sets, hence open, and $\{x\}$ is closed.
+a union of the open sets $U_{y}$, hence open, and $\{x\}$ is closed.
+
+:::
+
+:::
+
+:::
 :::

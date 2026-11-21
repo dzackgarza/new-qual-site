@@ -15,6 +15,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF pp. 31-32: item 2 of the Real
+    Analysis Preliminary Examination, 2005, which begins on p. 31 and whose parts (a)
+    iii-iv and (b)-(c) continue on p. 32. This is the first check against the scan; the
+    card previously cited no source at all, and the provenance record listed it among
+    the four whose extraction does not settle a glyph. The statement agrees with the
+    page, including the stage convention that the middle third removed first is stage
+    zero.
 ---
 
 ::: {.problem}
@@ -34,6 +46,9 @@ Let $X=[0,1]$, let $\mathcal A$ be the Borel sigma-algebra, and let $\lambda$ be
 :::
 
 ::: {.solution}
+The item is item 2 of the Real Analysis Preliminary Examination, 2005 (four Lebesgue
+measures on $[0,1]$; the monotone convergence theorem; and measurability and integral of
+the Cantor-stage function), retained in the scan assets/attachments/analysis_2003-2007.pdf.
 
 ::: pf
 

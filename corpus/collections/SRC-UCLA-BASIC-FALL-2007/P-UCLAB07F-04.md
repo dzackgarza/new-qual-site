@@ -5,7 +5,9 @@ kind: problem
 title: Midpoint quadrature error from a bounded second derivative
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integrals
+  - Differentiation
 relations: []
 review: draft
 audit:

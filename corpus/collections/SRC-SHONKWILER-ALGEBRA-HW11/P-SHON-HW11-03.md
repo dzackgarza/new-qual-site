@@ -447,8 +447,12 @@ Step [](#s1-17){.pf-ref} says the exponent of $p$ in the prime factorization of 
 
 ::: {.pf-step #s1-19}
 
-Therefore no such field $M$ exists.
-
+Therefore no such field $M$ exists:
+$$
+\boxed{
+\widetilde L\text{ contains no subfield }M\text{ with }
+M/K\text{ Galois and }[M:K]=p.}
+$$
 
 ::: pf-proof
 
@@ -458,29 +462,9 @@ The assumption of its existence led to the contradiction in step [](#s1-18){.pf-
 
 :::
 
-::: {.pf-step #s1-20}
-
-Thus
-$$
-\boxed{
-\widetilde L
-\text{ contains no subfield }M
-\text{ with }
-M/K\text{ Galois and }[M:K]=p.}
-$$
-
-
-::: pf-proof
-
-This is step [](#s1-19){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-20){.pf-ref} is the required conclusion.
+Step [](#s1-19){.pf-ref} is the required conclusion.
 
 :::
 

@@ -5,7 +5,9 @@ kind: problem
 title: Separating disjoint finite subsets in a Hausdorff space
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Hausdorff Spaces
+  - Separation Axioms
 relations: []
 review: draft
 audit:

@@ -15,7 +15,7 @@ Throughout, $G$ is a finite group, $p$ is a prime, $\size G = p^a m$ with $p\not
 
 ::: {.remark title="Intersections of Sylow subgroups"}
 If $a=1$, distinct Sylow $p$-subgroups intersect trivially, so they contain exactly $n_p(p-1)$ elements of order $p$.
-For $a>1$, two distinct Sylow $p$-subgroups can intersect nontrivially.
+For $a>1$ two distinct Sylow $p$-subgroups can intersect nontrivially: in $S_4$, where $a=3$ and $n_2=3$, the three Sylow $2$-subgroups of order $8$ meet pairwise in a subgroup of order $4$.
 :::
 
 [[L-DJKXL]]
@@ -34,20 +34,17 @@ For $a>1$, two distinct Sylow $p$-subgroups can intersect nontrivially.
 
 [[T-3X5FF]]
 
-::: {.remark title="Where the conditions on $n_p$ come from"}
-The equality $n_p = [G : N_G(P)]$ is orbit-stabilizer for the transitive conjugation action of $G$ on $\Syl_p(G)$.
-The congruence $n_p\equiv1\pmod p$ follows from the conjugation action of $P$ on $\Syl_p(G)$: its only fixed point is $P$, and every other orbit has size divisible by $p$.
-:::
+## Frattini's argument and nilpotence from normal Sylow subgroups
 
-## Applications
+A normal Sylow subgroup $P$ gives a quotient $G/P$ of order $m$ coprime to $p$, so the classification arguments proceed by induction on $\size G$ through that quotient.
+
+[[T-4XKGD]]
+
+[[P-2BYEN]]
+
+[[T-GM7EB]]
 
 Arguments producing normal subgroups from Sylow counts are collected on [[algebra/group-actions/show-g-is-not-simple|Show $G$ is not simple]].
-
-- **Classifying groups of a given order.** If $n_p = 1$, then $P\in\Syl_p(G)$ is normal, $\size{G/P} = m$ is coprime to $\size P$, and by the Schur--Zassenhaus theorem $P$ has a complement $H$, so $G \cong P\semidirect H$.
-
-- **Induction on the order.** A normal Sylow subgroup $P$ gives the quotient $G/P$ of order $m < \size G$.
-
-- **Nilpotence.** A finite group is [[D-53JVH|nilpotent]] if and only if every Sylow subgroup is normal, in which case it is the direct product of its Sylow subgroups.
 
 ## Exercises
 

@@ -26,6 +26,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.4.14, printed pp. 93,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF pages are the printed
+    pages. Checked against the book: Hartshorne IV.4.14, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the multinomial match $3i=3j=3k=p-1$ and the coefficient $\frac{(p-1)!}{(((p-1)/3)!)^3}$ as a unit mod $p$, and the density of the primes $2\bmod3$ as $\frac12$.
+    Not checked: Yang's Solutions outside printed pp. 93; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's
+    Solution 4.4.14 at printed pp. 93; it had none before. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -160,4 +180,8 @@ Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} determine the required set of primes
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.14, uses the criterion of (4.21) on the Fermat cubic: $X_{(p)}$ is supersingular exactly when $(xyz)^{p-1}$ has coefficient zero in $(x^3+y^3-z^3)^{p-1}$. A term $x^{3i}y^{3j}(-z)^{3k}$ with $i+j+k=p-1$ matches $x^{p-1}y^{p-1}z^{p-1}$ only if $3i=3j=3k=p-1$, which is impossible when $3\nmid p-1$; when $3\mid p-1$ the match is $i=j=k=\frac{p-1}{3}$ and the coefficient is $\pm\frac{(p-1)!}{(((p-1)/3)!)^3}$, a unit because neither factorial carries the prime $p$. So $X_{(p)}$ is supersingular exactly for $p\equiv2\bmod3$, and by Dirichlet that set has density $\frac12$. The printed coefficient omits the sign $(-1)^{(p-1)/3}$ that the $z$-entries contribute; it is nonzero either way, so the argument stands.
 :::

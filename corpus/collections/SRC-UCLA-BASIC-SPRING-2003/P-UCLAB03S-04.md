@@ -5,7 +5,9 @@ kind: problem
 title: Quadratic solutions of the one-dimensional wave equation
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Wave Equation
+  - Partial Differential Equations
 relations: []
 review: draft
 audit:

@@ -33,7 +33,6 @@ audit:
     r = y - qx ∈ I with δ(r) < δ(x) forces r = 0, and r ↦ rx is an R-module
     isomorphism R → (x) because R is a domain, giving I = {0} or I ≅ R. No defect.
 ---
----
 
 ::: {.exercise}
 Assume $R$ is a Euclidean domain.

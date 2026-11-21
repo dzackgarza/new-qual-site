@@ -41,10 +41,62 @@ Show that $\beta(\ZZ_+)$ has cardinality at least as great as $I^I$, where $I = 
 :::
 
 ::: {.solution}
-Let $I=[0,1]$. The product $I^I=[0,1]^{[0,1]}$ is compact Hausdorff by Tychonoff's theorem (Theorem 37.3). By Exercise 30.16(a) the product $\RR^I$ has a countable dense subset; since $(0,1)$ is homeomorphic to $\RR$, the same holds for $(0,1)^I$, giving a countable set $D_0\subset(0,1)^I$ whose closure in $\RR^I$ contains the closure of $(0,1)^I$, namely $I^I$. So $D_0$ is a countable dense subset of $I^I$; as $I^I$ is infinite, $D_0$ is infinite, and enumerating it as $D=\{y_n\mid n\in\ZZ_+\}$ gives an injective map $f:\ZZ_+\to I^I$, $f(n)=y_n$. The domain $\ZZ_+$ is discrete, so $f$ is continuous, and it is an imbedding onto $D$; since $D$ is dense and $I^I$ is compact Hausdorff, $I^I$ is a compactification of $\ZZ_+$.
 
-By Exercise 38.4 (card E-QZUV0), applied to the compactification $I^I$ of $\ZZ_+$, there is a continuous surjective map $g:\beta(\ZZ_+)\to I^I$. A surjection onto $I^I$ gives
-$$
-\cardinality{\beta(\ZZ_+)}\ge\cardinality{I^I}=(2^{\aleph_0})^{2^{\aleph_0}}=2^{2^{\aleph_0}}.
-$$
+No retained solution set covers this exercise: the card's own argument follows, with the countable dense subset of $I^{I}$ and the compactification step separated.
+
+Let $I=[0,1]$.
+
+::: pf
+
+::: {.pf-step #dense}
+$I^{I}$ has a countable dense subset.
+
+:::: {.pf-proof}
+
+::: {.pf-step #dense-open-interval}
+$(0,1)^{I}$ has a countable dense subset.
+
+::: pf-proof
+$(0,1)$ is homeomorphic to $\RR$ (the map $t\mapsto\tan\big(\pi(t-1/2)\big)$), so the product $(0,1)^{I}$ is homeomorphic to $\RR^{I}$, which has a countable dense subset (Exercise 30.16(a)). A homeomorphism carries a countable dense subset to one.
+:::
+
+:::
+
+::: {.pf-step #dense-closed-interval}
+That countable set is dense in $I^{I}$.
+
+::: pf-proof
+$I^{I}$ is the product $\prod_{i\in I}[0,1]$, and the closure of the subset $(0,1)^{I}$ in it is $I^{I}$, because the closure of a product is the product of the closures in the product topology (each $(0,1)$ is dense in $[0,1]$). Density passes through a dense subspace: if $D$ is dense in $S$ and $S$ is dense in $T$, then $D$ is dense in $T$, since a nonempty open set of $T$ meets $S$ and hence meets $D$.
+:::
+
+:::
+
+::::
+
+:::
+
+::: {.pf-step #compactification}
+$I^{I}$ is a compactification of $\ZZ_{+}$.
+
+::: pf-proof
+$I^{I}$ is compact and Hausdorff (Theorem 37.3, Tychonoff's theorem). Let $D$ be the countable dense subset of step [](#dense){.pf-ref}; $I^{I}$ is infinite, so $D$ is infinite, and enumerating $D=\theset{y_{n}\mid n\in\ZZ_{+}}$ gives a bijection $f:\ZZ_{+}\to D$. The subspace $\ZZ_{+}$ of $\RR$ is discrete, so every map out of it is continuous, and $f$ is injective: $f$ is an imbedding with dense image $D$. So $I^{I}$ is a compact Hausdorff space containing a dense homeomorphic copy of $\ZZ_{+}$, that is, a compactification of it.
+:::
+
+:::
+
+::: {.pf-step #surjection}
+There is a continuous surjection $\beta(\ZZ_{+})\to I^{I}$.
+
+::: pf-proof
+$I^{I}$ is a compactification of $\ZZ_{+}$ by step [](#compactification){.pf-ref}, and every compactification $Y$ of a space $X$ receives a continuous surjection from $\beta(X)$ (Exercise 38.4; card [[E-QZUV0]]).
+:::
+
+:::
+
+::: {.pf-qed}
+A surjection onto $I^{I}$ gives $\cardinality{\beta(\ZZ_{+})}\ge\cardinality{I^{I}}=2^{2^{\aleph_{0}}}$, since $\cardinality{I^{I}}=(2^{\aleph_{0}})^{2^{\aleph_{0}}}=2^{2^{\aleph_{0}}}$.
+:::
+
+:::
+
 :::

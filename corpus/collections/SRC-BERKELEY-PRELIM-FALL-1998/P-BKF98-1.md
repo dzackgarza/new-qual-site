@@ -20,6 +20,13 @@ audit:
     Chose doubled local balls inside cover members, covered the compact set
     by the corresponding half-radius balls, and took the minimum of finitely
     many radii to control an entire ambient ball around every point of C.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Fall98.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -31,6 +38,7 @@ is contained in at least one $U_\alpha$.
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Fall 1998, retained in this repository as `assets/attachments/Fall98.pdf`; the statement below is its wording.
 
 ::: pf
 

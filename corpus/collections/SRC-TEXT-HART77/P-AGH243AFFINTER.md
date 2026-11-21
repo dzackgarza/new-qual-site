@@ -30,6 +30,7 @@ Give an example to show that this fails if $X$ is not separated.
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.4.3, transcribed and checked against the exercise as printed in §II.4, Exercise 4.3: the diagonal as a closed immersion, the two projections $X\times_SX\to X$ and $\Delta^{-1}(\pi_1^{-1}(U)\cap\pi_2^{-1}(V))$ as the intersection, and the counterexample in which the two copies of $\AA^2$ in the doubled affine plane meet in $\AA^2$ minus a point.
 Let
 $$
 p:X\longrightarrow S

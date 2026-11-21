@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.definition}
-A \dfn{closed manifold} is a [[D-EILKJ|compact]] [[D-UBWVX|manifold]] without boundary [@Hat02].
+A \dfn{closed manifold} is a [[D-EILKJ|compact]] [[D-UBWVX|manifold]] without boundary [@Hat02, §3.3].
 :::

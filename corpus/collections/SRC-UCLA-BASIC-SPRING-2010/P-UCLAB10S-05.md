@@ -6,7 +6,9 @@ title: Similarity from characteristic and minimal polynomials
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Similarity
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 audit:

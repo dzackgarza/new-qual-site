@@ -6,7 +6,9 @@ title: Remainders in the Euclidean algorithm for 273 and 110
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Euclidean Algorithm
+  - Greatest Common Divisors
 relations: []
 review: draft
 audit:

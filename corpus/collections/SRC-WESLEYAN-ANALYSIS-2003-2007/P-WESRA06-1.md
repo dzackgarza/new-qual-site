@@ -19,6 +19,15 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 17: the Real Analysis Preliminary
+    Examination, 2006, item 1. The page had cited only the extraction; it now names the
+    examination, its item and the page of the scan. The statement is unchanged.
+
 ---
 
 ::: {.problem}
@@ -34,6 +43,8 @@ Let $(X,d)$ be a metric space.
 :::
 
 ::: {.solution}
+The item is item 1 of the Real Analysis Preliminary Examination, 2006 (On a metric space: Cauchy sequence, convergent implies Cauchy, completeness, Baire), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
+
 
 ::: pf
 

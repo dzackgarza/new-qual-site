@@ -45,47 +45,52 @@ Check the details of the proof of Theorem 34.2 (the imbedding theorem for a spac
 :::
 
 ::: {.solution}
-Let $\{f_n:X\to\RR\}_{n\ge1}$ be a countable family of continuous functions that separates points from closed sets, and define
-$$
-F:X\longrightarrow\RR^\omega,
-\qquad
-F(x)=(f_1(x),f_2(x),\ldots),
-$$
-where $\RR^\omega$ has the product topology. We verify that $F$ is an embedding.
 
-First, $F$ is continuous. A subbasic open set in the product has the form
-$$
-\pi_n^{-1}(U),
-$$
-with $U\subset\RR$ open, and
-$$
-F^{-1}(\pi_n^{-1}(U))=f_n^{-1}(U),
-$$
-which is open in $X$.
+The check is the card's own; the assertion is the proof of Theorem 34.2 (printed p. 215), whose four points are verified here as the exercise asks.
 
-Second, $F$ is injective. If $x\ne y$, the singleton $\{y\}$ is closed under the hypotheses of the theorem (the space is regular, hence $T_1$). Since the family separates points from closed sets, some $f_n$ satisfies
-$$
-f_n(x)\notin \overline{f_n(\{y\})}=\{f_n(y)\}.
-$$
-Thus $F(x)\ne F(y)$.
+Let $X$ be regular, let $\{f_{n}:X\to\RR\}_{n\ge1}$ be a countable family of continuous functions separating points from closed sets — for each $x$ and each closed $C$ with $x\notin C$ some $f_{n}$ has $f_{n}(x)\notin\overline{f_{n}(C)}$ — and let $F:X\to\RR^{\omega}$, $F(x)=\big(f_{1}(x),f_{2}(x),\ldots\big)$, with $\RR^{\omega}$ in the product topology.
 
-It remains to prove that $F^{-1}:F(X)\to X$ is continuous. It is enough to show that for every open $U\subset X$ and every $x\in U$, there is a product-open set $W\subset\RR^\omega$ such that
+::: pf
+
+::: {.pf-step #continuous}
+$F$ is continuous.
+
+::: pf-proof
+For $n$ and $U\subset\RR$ open, the preimage $F^{-1}\big(\pi_{n}^{-1}(U)\big)=f_{n}^{-1}(U)$ is open in $X$ because $f_{n}$ is continuous, and the sets $\pi_{n}^{-1}(U)$ form a subbasis of the product topology (§19, printed p. 114); a map whose preimages of subbasic open sets are open is continuous (Theorem 18.1, printed p. 104).
+:::
+
+:::
+
+::: {.pf-step #injective}
+$F$ is injective.
+
+::: pf-proof
+Let $x\ne y$. The space $X$ is regular, hence $T_{1}$, so $\{y\}$ is closed (§17, printed p. 99). By separation there is $n$ with $f_{n}(x)\notin\overline{f_{n}(\{y\})}=\{f_{n}(y)\}$, since $f_{n}(\{y\})$ is a point and points are closed in $\RR$; so $f_{n}(x)\ne f_{n}(y)$ and $F(x)\ne F(y)$.
+:::
+
+:::
+
+::: {.pf-step #open}
+$F$ carries open sets of $X$ to open sets of the subspace $F(X)$.
+
+::: pf-proof
+Let $U\subset X$ be open and $x\in U$. The set $C=X\setminus U$ is closed and does not contain $x$, so there is $n$ with $f_{n}(x)\notin\overline{f_{n}(C)}$. Hence there is an open interval $V\ni f_{n}(x)$ disjoint from $f_{n}(C)$: take $V$ an interval about $f_{n}(x)$ inside the open set $\RR\setminus\overline{f_{n}(C)}$. Put $W=\pi_{n}^{-1}(V)$, which is open in $\RR^{\omega}$; then $F(x)\in W$, and $z\in F^{-1}(W)$ means $f_{n}(z)\in V$, so $z\notin C$, that is $z\in U$. Therefore
 $$
-F(x)\in W
-\quad\text{and}\quad
-F^{-1}(W)\subset U.
+F(U)=F(X)\cap\bigcup_{x\in U}W_{x}
 $$
-Let $C=X-U$, a closed set not containing $x$. By separation, choose $f_n$ such that
-$$
-f_n(x)\notin\overline{f_n(C)}.
-$$
-There is therefore an open interval $V\subset\RR$ containing $f_n(x)$ and disjoint from $f_n(C)$. Set
-$$
-W=\pi_n^{-1}(V).
-$$
-Then $W$ is product-open, contains $F(x)$, and if $z\in F^{-1}(W)$, then $f_n(z)\in V$, so $z\notin C$, hence $z\in U$. Thus
-$$
-F(U)=F(X)\cap \bigcup_{x\in U}W_x
-$$
-is open in $F(X)$. Therefore $F$ is a homeomorphism from $X$ onto the subspace $F(X)\subset\RR^\omega$, as required.
+is open in $F(X)$, because the two sets have the same elements: if $F(z)\in W_{x}$ for some $x\in U$ then $z\in U$ by the choice of $W_{x}$, and if $z\in U$ then $F(z)\in W_{z}$.
+:::
+
+:::
+
+::: {.pf-step #imbedding}
+$F$ is an imbedding of $X$ in $\RR^{\omega}$.
+
+::: pf-proof
+$F$ is continuous by step [](#continuous){.pf-ref} and injective by step [](#injective){.pf-ref}, so it is a bijection of $X$ onto the subspace $F(X)$; step [](#open){.pf-ref} says that this bijection carries open sets to open sets of $F(X)$, so its inverse is continuous and $F$ is a homeomorphism of $X$ with $F(X)$ — that is, an imbedding. In particular $F$ is an imbedding of $X$ in $\RR^{\omega}$ in the product topology.
+:::
+
+:::
+
+:::
 :::

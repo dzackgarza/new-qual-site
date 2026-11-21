@@ -36,6 +36,38 @@ audit:
     space with infinitely many components). Not checked: no re-derivation of the Postnikov-stage reduction
     beyond the argument given.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps. No retained solution set is cited on the card and none was
+    located among the retained Hatcher sets, so the argument is the card's own. Checked against
+    Hatcher, Section 4.1 Exercise 20, printed p. 359, and the obstruction theory of Section 4.3
+    (pp. 412-419). Each step re-read: Y -> Y^d is an isomorphism on pi_i for i <= d with
+    pi_i(Y^d) = 0 above, so a map of the d-dimensional X factors through it up to homotopy and so
+    do homotopies; X connected means a map lands in one path component and pi_0(Y) is finite; for
+    a single k-cell the obstruction is the class in pi_{k-1} of the composite with the attaching
+    map, and the extensions up to homotopy rel boundary are as many as pi_k, with the k = 1 case
+    stated separately because pi_1 is not abelian; and the choices over the finitely many cells
+    are independent because a homotopy is determined cell by cell. Not claimed: any bound sharper
+    than finiteness, or anything about X infinite, where the induction gives no finiteness.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 20, and the obstruction theory of §4.3. Two repairs, both in the proofs rather
+    than in the statements. (1) Step `postnikov` justified the vanishing of the obstructions with "the
+    coefficients vanish for i >= d+1", which is false: above degree d the fibre of Y -> Y^d has the
+    homotopy of Y, and the statement assumes nothing there. The step now separates the two ranges:
+    pi_i of the fibre vanishes for i <= d because Y -> Y^d is an isomorphism there, and the
+    cohomology vanishes for i >= d+1 because X is d-dimensional. (2) Step `percell` stated its count
+    for the whole k-skeleton, where the number of extensions is the product over the k-cells, not
+    |pi_k|; its own sub-step `independent` and step `induction` both read it per cell. The statement
+    is now about a single k-cell, which is what the argument proves. Steps `obstruction`, `choices`,
+    `independent`, `components` and `induction` are unchanged and correct: the obstruction per cell is
+    the class of the composite with the attaching map, extensions over a disc up to homotopy rel
+    boundary form a pi_k-torsor, and homotopies glue cell by cell. Not checked: no sharper bound, and
+    nothing about infinite X.
 ---
 
 ::: {.problem}
@@ -43,28 +75,85 @@ Show that $[X, Y]$ is finite if $X$ is a finite connected CW complex and $\pi_i(
 :::
 
 ::: {.solution}
-Let $d=\dim X$. Replace $Y$ by its $d$-th Postnikov stage $Y^d$. The map
-$$
-Y\to Y^d
-$$
-induces isomorphisms on $\pi_i$ for $i\le d$, so obstruction theory (or cellular induction) gives a bijection
-$$
-[X,Y]\cong[X,Y^d]
-$$
-for the $d$-dimensional CW complex $X$.
+The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.1 Exercise 20. It is checked against Hatcher, Algebraic Topology, §4.1 Exercise 20, and against the obstruction theory of §4.3, in particular the compression of maps of a $d$-dimensional complex into the $d$-th Postnikov stage.
 
-We now construct maps $X\to Y^d$ cell by cell. Since $X$ is connected, each map lands in one path component of $Y$. There are finitely many such choices by the hypothesis on $\pi_0(Y)$; fix one component at a time. Suppose a map has been constructed on $X^{k-1}$. For each $k$-cell, extension across the cell is obstructed by an element of
-$$
-\pi_{k-1}(Y),
-$$
-and, when extensions exist, the set of choices up to homotopy rel boundary is a torsor under
-$$
-\pi_k(Y).
-$$
-Both groups are finite for $k\le d$ by hypothesis.
+::: pf
 
-Since $X$ has only finitely many cells, at each stage there are only finitely many possible obstruction values and finitely many choices of extensions. Inducting over the finitely many skeleta, only finitely many homotopy classes of maps can occur. Thus
+::: {.pf-step #postnikov}
+With $d=\dim X$ and $Y^{d}$ the $d$-th Postnikov stage of $Y$, the map $Y\to Y^{d}$ induces a bijection $[X,Y]\to[X,Y^{d}]$.
+
+::: pf-proof
+$Y\to Y^{d}$ is by construction an isomorphism on $\pi_i$ for $i\le d$ and $\pi_i(Y^{d})=0$ for $i>d$. Since $X$ is $d$-dimensional, obstruction theory gives that every map $X\to Y^{d}$ lifts to $Y$ up to homotopy, that every homotopy between such maps does as well, and that the resulting map on homotopy classes is a bijection — with $F$ the homotopy fibre of $Y\to Y^{d}$, the obstructions are classes in $H^{i+1}(X;\pi_i(F))$, and these vanish in the two ranges for two different reasons: $\pi_i(F)=0$ for $i\le d$, because $Y\to Y^{d}$ is an isomorphism on $\pi_i$ there, and $H^{i+1}(X;\cdot)=0$ for $i\ge d+1$, because $X$ has no cohomology above its dimension. Nothing is assumed about $\pi_i(F)$ for $i\ge d+1$, where it equals $\pi_i(Y)$.
+:::
+
+:::
+
+::: {.pf-step #components}
+A map $X\to Y^{d}$ has image in a single path component of $Y^{d}$, and there are only finitely many components.
+
+::: pf-proof
+$X$ is connected, so its image is connected and lies in one component. The components of $Y^{d}$ are those of $Y$, and $\pi_0(Y)$, hence $\pi_0(Y^{d})$, is finite by hypothesis. So the set of maps is the finite union, over the finitely many components $C$, of the maps into $C$.
+:::
+
+:::
+
+::: {.pf-step #percell}
+Fix a component $C$ of $Y^{d}$, a $k\ge1$, a map $\varphi:X^{k-1}\to C$ and a $k$-cell $e$ of $X$. The extensions of $\varphi$ over $e$, up to homotopy relative to $\partial e$, are either none, or in bijection with a quotient of the finite group $\pi_k(C)$ by the action of $\pi_1$ in the case $k=1$; in either case there are at most $\cardinality{\pi_k(C)}$ of them.
+
+:::: pf-proof
+
+::: {.pf-step #obstruction}
+For a $k$-cell $e$ with attaching map $\alpha:S^{k-1}\to X^{k-1}$, the composite $\varphi\circ\alpha$ is a map $S^{k-1}\to C$ whose class in $\pi_{k-1}(C)$ is the obstruction to extending over $e$.
+
+::: pf-proof
+An extension of $\varphi$ over $e$ is precisely a nullhomotopy of $\varphi\circ\alpha$, since $e$ is a $k$-disc attached along $\alpha$; a nullhomotopy of that composite exists exactly when its class in $\pi_{k-1}(C)$ vanishes, and then the extension is the cone on the nullhomotopy.
+:::
+
+:::
+
+::: {.pf-step #choices}
+If $\varphi\circ\alpha$ is null, the extensions over $e$ up to homotopy rel $\partial e$ form a set in bijection with $\pi_k(C)$ for $k\ge2$, and with the set of elements of $\pi_1(C)$ for $k=1$.
+
+::: pf-proof
+Two extensions are maps $D^{k}\to C$ agreeing on $\partial D^{k}=S^{k-1}$; gluing one with the reverse of the other along the boundary gives a map $S^{k}\to C$, i.e. an element of $\pi_k(C)$, and this assignment is a bijection once one extension is fixed. For $k=1$ this is the description of $\pi_1(C)$ as the set of homotopy classes of paths between two fixed points, basepoint-free, and the set carries a free transitive action of $\pi_1(C)$ on either side, so its cardinality is that of $\pi_1(C)$.
+:::
+
+:::
+
+::: {.pf-step #independent}
+The choices over the finitely many $k$-cells are independent, so the number of extensions over $X^{k}$ is at most the product of $\cardinality{\pi_k(C)}$ over the $k$-cells.
+
+::: pf-proof
+A homotopy rel $X^{k-1}$ between two extensions restricts to a homotopy rel $\partial e$ on each closed $k$-cell, and conversely a family of such homotopies, one for each $k$-cell, glues to a homotopy rel $X^{k-1}$ because the cells meet $X^{k-1}$ exactly in their boundaries and have disjoint interiors. Since $X$ is a finite CW complex there are finitely many $k$-cells.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #induction}
+For each $k\le d$ the set of homotopy classes of maps $X^{k}\to C$ extending a fixed map on $X^{k-1}$ is finite, and consequently $[X,C]$ is finite.
+
+::: pf-proof
+Induction on $k$ from $k=0$, where there is exactly one map of the one-point space $X^{0}$ into the path-connected $C$. At the step, step [](#percell){.pf-ref} gives at most $\cardinality{\pi_k(C)}$ extensions over each $k$-cell and step [](#independent){.pf-ref} bounds their number by a finite product, with $\pi_k(C)$ finite for $k\le d$ by hypothesis. Since $X$ is $d$-dimensional, $X^{d}=X$, and the induction terminates at $[X,C]$.
+:::
+
+:::
+
+::: {.pf-step}
+$[X,Y]$ is finite.
+
+::: pf-proof
+Step [](#postnikov){.pf-ref} identifies $[X,Y]$ with $[X,Y^{d}]$, step [](#components){.pf-ref} writes the latter as a finite union over the finitely many path components, and step [](#induction){.pf-ref} makes each of those finite. A finite union of finite sets is finite, so
 $$
 \boxed{[X,Y]\text{ is finite}.}
 $$
+The finiteness of $\pi_i(Y)$ for $i\le d$ is used at every stage of the induction, and $\pi_0(Y)$ in step [](#components){.pf-ref}; nothing is assumed about $\pi_i(Y)$ for $i>d$, where the Postnikov stage already has trivial homotopy groups.
+:::
+
+:::
+
+:::
 :::

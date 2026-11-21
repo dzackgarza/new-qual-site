@@ -16,6 +16,15 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. X = (0,1) with the restricted metric and E = X: E is closed in X
+    because its complement is empty, bounded because its diameter is 1, and not compact because the
+    sequence 1/n has no convergent subsequence in X. Checked that closedness is taken in X and not in
+    R, which is where a reader would otherwise object, and that non-compactness is exhibited rather
+    than asserted. Not checked: the workshop sheet, which was not re-read in this pass.
 ---
 ::: {.problem}
 Find an example of a metric space $X$ and a subset $E \subseteq X$ such that $E$ is closed and bounded but not compact.

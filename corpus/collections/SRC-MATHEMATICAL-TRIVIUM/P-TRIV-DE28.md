@@ -19,6 +19,17 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Stated Laguerre's ODE from problem 27, against Differential Equations Problems 27-28 on pages 24-25 of the source PDF.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked by substituting the series. For
+    y = sum c_n x^n in x y'' + (1-x) y' + a y, the coefficient of x^n is (n+1)^2 c_{n+1} + (a-n) c_n,
+    so the recursion is c_{n+1} = (n-a)/(n+1)^2 c_n, which is the card's displayed recurrence; I
+    recomputed it symbolically for n = 0,1,2,3 and got c_1 = -a c_0, c_2 = (1-a) c_1/4,
+    c_3 = (2-a) c_2/9, c_4 = (3-a) c_3/16. When a is a non-negative integer the recursion terminates
+    at n = a and gives the Laguerre polynomial up to normalisation, which the card records. Not
+    claimed: the radius of convergence proof beyond the ratio test the card applies.
 ---
 
 ::: {.problem}

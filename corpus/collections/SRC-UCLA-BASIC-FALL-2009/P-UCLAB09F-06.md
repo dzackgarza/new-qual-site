@@ -6,7 +6,9 @@ title: Uniform continuity on a compact superellipse
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Uniform Continuity
+  - Compactness
 relations: []
 review: draft
 audit:

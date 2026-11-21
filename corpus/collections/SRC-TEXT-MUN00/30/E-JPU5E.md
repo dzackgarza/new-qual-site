@@ -36,9 +36,35 @@ Show that if $X$ is Lindelöf, or if $X$ has a countable dense subset, then $f(X
 :::
 
 ::: {.solution}
-Write $Z=f(X)$ with the subspace topology.
 
-If $X$ is Lindelöf and $\{U_i\}_{i\in I}$ is an open cover of $Z$, then $\{f^{-1}(U_i)\}_{i\in I}$ is an open cover of $X$. Choose a countable subcover $f^{-1}(U_{i_1}),f^{-1}(U_{i_2}),\dots$. Surjectivity of $f:X\to Z$ implies $U_{i_1},U_{i_2},\dots$ cover $Z$. Hence $Z$ is Lindelöf.
+No retained solution set covers this exercise: the card's own argument follows, with the two conditions treated as the two independent steps they are.
 
-If $D\subset X$ is countable and dense, then $f(D)$ is countable. It is dense in $Z$: if $W\subset Z$ is nonempty open, then $f^{-1}(W)$ is nonempty open in $X$, so it meets $D$; hence $W$ meets $f(D)$. Thus $Z$ is separable.
+Let $f:X\to Y$ be continuous and let $Z=f(X)$ carry the subspace topology; then $f$ is a continuous surjection onto $Z$.
+
+::: pf
+
+::: {.pf-step #lindelof}
+If $X$ is Lindelöf then $Z$ is Lindelöf.
+
+::: pf-proof
+Let $\theset{U_{i}}_{i\in I}$ be a cover of $Z$ by sets open in $Z$. Each $f^{-1}(U_{i})$ is open in $X$ by continuity, and the family $\theset{f^{-1}(U_{i})}$ covers $X$: for $x\in X$ the point $f(x)$ lies in some $U_{i}$, so $x\in f^{-1}(U_{i})$. Lindelöfness gives a countable subfamily $\theset{f^{-1}(U_{i_{k}})}_{k\ge1}$ covering $X$. Since $f$ maps $X$ onto $Z$, every $z\in Z$ equals $f(x)$ for some $x\in X$, and $x\in f^{-1}(U_{i_{k}})$ gives $z\in U_{i_{k}}$; so $\theset{U_{i_{k}}}$ covers $Z$. Hence every open cover of $Z$ has a countable subcover.
+:::
+
+:::
+
+::: {.pf-step #separable}
+If $X$ has a countable dense subset $D$, then $f(D)$ is a countable dense subset of $Z$.
+
+::: pf-proof
+$f(D)$ is countable, being the image of a countable set. For density let $W$ be a nonempty open subset of $Z$. Then $f^{-1}(W)$ is open in $X$ by continuity, and it is nonempty: $W$ contains some $z=f(x)$ with $x\in X$. As $D$ is dense there is $d\in D\cap f^{-1}(W)$, and then $f(d)\in W\cap f(D)$. So $f(D)$ meets every nonempty open set of $Z$.
+:::
+
+:::
+
+::: {.pf-qed}
+By steps [](#lindelof){.pf-ref} and [](#separable){.pf-ref} the continuous image $f(X)$ is Lindelöf when $X$ is, and has a countable dense subset when $X$ does.
+:::
+
+:::
+
 :::

@@ -9,18 +9,18 @@ The [UGA complex analysis prelim review topic list](attachments/Complex_Analysis
 
 ## Preliminaries
 
-- $\CC$, $\DD$, $\HH$, $\CP^1$
+- $\CC$, $\DD$, $\HH$, $\CP^1$: [[complex-analysis/basics/the-riemann-sphere|the Riemann sphere]]
 - [[complex-analysis/basics/complex-arithmetic|Complex arithmetic]]
 - [[complex-analysis/holomorphic-functions/complex-arithmetic-and-log|Arguments, branch cuts, and the complex logarithm]]
 - [[complex-analysis/basics/precalculus|Elementary geometry and conic sections]]
-- Uniform continuity, uniform differentiability, uniform convergence, and the Heine--Cantor theorem
+- [[complex-analysis/basics/uniform-convergence|Uniform continuity, uniform convergence, and the Heine--Cantor theorem]]
 - [[complex-analysis/basics/calculus-preliminaries|Calculus]] — the [[complex-analysis/basics/calculus-preliminaries#The implicit and inverse function theorems|implicit and inverse function theorems]], [[complex-analysis/basics/calculus-preliminaries#Green's theorem|Green's theorem]], and [[complex-analysis/basics/calculus-preliminaries#Stokes' theorem|Stokes' theorem]]
 
 ## Differentiation and integration
 
 - The Laplace equation and [[complex-analysis/holomorphic-functions/harmonic-functions|harmonic functions]]
 - [[complex-analysis/holomorphic-functions/the-cauchy-riemann-equations|The Cauchy--Riemann equations]]
-- Contours, parameterizations, and primitives
+- [[complex-analysis/cauchy-theory/contours-and-primitives|Contours, parameterizations, and primitives]]
 - [[complex-analysis/cauchy-theory/the-integral-formula|Cauchy's integral formula]]
 - [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy's inequality]]
 
@@ -67,13 +67,13 @@ The [UGA complex analysis prelim review topic list](attachments/Complex_Analysis
 
 - [[complex-analysis/cauchy-theory/the-identity-principle|The identity principle]]
 - [[complex-analysis/conformal-maps/normal-families-and-montel|Normal families and Montel's theorem]]
-- [[complex-analysis/conformal-maps/the-riemann-mapping-theorem|The Riemann mapping theorem]] and uniformization
+- [[complex-analysis/conformal-maps/the-riemann-mapping-theorem|The Riemann mapping theorem]] and [[complex-analysis/conformal-maps/riemann-surfaces-and-uniformization#Uniformization|uniformization]]
 
 ## Further topics
 
-- $\operatorname{SL}_2(\RR)$, modular forms, and elliptic curves
-- The hyperbolic metric
-- Riemann surfaces
+- $\SL_2(\RR)$, modular forms, and elliptic curves: [[complex-analysis/conformal-maps/sl2-and-modular-forms|modular forms]] and [[complex-analysis/appendices/special-functions#Elliptic functions|elliptic functions]]
+- [[complex-analysis/conformal-maps/the-hyperbolic-metric|The hyperbolic metric]]
+- [[complex-analysis/conformal-maps/riemann-surfaces-and-uniformization|Riemann surfaces]] and [[complex-analysis/conformal-maps/riemann-surfaces-and-uniformization#Uniformization|uniformization]]
 - [[complex-analysis/appendices/special-functions|Special functions]] — the [[complex-analysis/appendices/special-functions#The Gamma function|Gamma function]], the [[complex-analysis/appendices/special-functions#The Riemann zeta function|zeta function]], and [[complex-analysis/appendices/special-functions#Elliptic functions|elliptic functions]]
 - [[complex-analysis/appendices/special-functions#Infinite series and products|Canonical products]]
 - [[complex-analysis/appendices/pdes|The Dirichlet problem]]

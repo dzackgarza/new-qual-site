@@ -5,7 +5,8 @@ kind: problem
 title: 'Three equivalent characterizations of analyticity'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:

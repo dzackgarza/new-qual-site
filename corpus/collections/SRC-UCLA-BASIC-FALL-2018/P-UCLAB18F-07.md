@@ -6,7 +6,9 @@ title: Normal form of an idempotent linear transformation
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Projection
+  - Diagonalization
 relations: []
 review: draft
 audit:

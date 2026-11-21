@@ -30,6 +30,8 @@ These properties were originally the definition of quasi-coherent and coherent s
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.5.4. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §5, Exercise 2.5.4, proves it by the same two reductions: on an affine cover $\mathcal F$ is a cokernel of $\OO_U^{\oplus I}\to\OO_U^{\oplus J}$, and conversely a local cokernel presentation sheafifies to a quasi-coherent sheaf, with finite rank giving coherence over a noetherian $X$.
+
 For an open set $U\subseteq X$, put $\OO_U=\OO_X\restrict_U$.
 For an index set $I$, write $A^{(I)}=\bigoplus_{i\in I}A$ and $\OO_U^{(I)}=\bigoplus_{i\in I}\OO_U$.
 On $U=\Spec A$, the associated-sheaf functor is exact and commutes with direct sums, so

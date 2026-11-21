@@ -6,7 +6,9 @@ title: Strong monotonicity of the gradient implies convexity
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Convex Functions
+  - Gradient
 relations: []
 review: draft
 audit:

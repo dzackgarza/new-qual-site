@@ -29,6 +29,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.3.6, printed p. 88,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.3.6, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed $\binom{2+3}{3}=10$ against $\ell(\OO_X(2))=8$ at $g=1$, $\deg\OO_X(2)=8$, the degree $2\cdot2=4$ of an intersection of two quadrics in $\PP^3$, and the three alternatives at $d=4$.
+    Not checked: Yang's Solutions outside printed p. 88; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.3.6 at printed
+    p. 88 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -421,5 +441,7 @@ Step [](#s5){.pf-ref} proves (a), and step [](#s11){.pf-ref} proves (b).
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.6, printed pp. 221–222, text version `tmp/sources/hartshorne-solutions-egbert.md` (entry 4.3.13), runs the degree-4 alternatives from (2.2) and (2.3), and for $g=1$ observes that $\dim H^0(\PP^3,\mathcal I_X(2))\ge2$ so that $X$ lies on two linearly independent quadrics, whose intersection is the complete intersection containing it.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.6, text version `tmp/sources/hartshorne-solutions-egbert.md` (entry 4.3.13), runs the degree-4 alternatives from (2.2) and (2.3), and for $g=1$ observes that $\dim H^0(\PP^3,\mathcal I_X(2))\ge2$ so that $X$ lies on two linearly independent quadrics, whose intersection is the complete intersection containing it.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.3.6 sorts a degree-four curve by the least $n$ with $X\subset\PP^n$: for $n\geq4$ the pair $(d,n)=(4,n)$ satisfies the hypotheses of (4.3.4(b)) and gives $d=n=4$ with $g=0$, the rational normal quartic in $\PP^4$; for $n=2$ it is a plane quartic and $g=\frac12(4-1)(4-2)=3$; for $n=3$ part (4.3.5(b)) gives $g<3$, and $g=2$ is impossible because $\OO_X(1)$ would be very ample of degree $4$, which (4.3.1) forbids --- the entry prints 'any divisor of degree 3 is not very ample' there, where the divisor in question is the hyperplane divisor of degree $4$ --- leaving $g=0$, and then $\OO_X(1)$ has degree $4$ and $\ell=4$ with $g=0$, so $\OO_X(1)\cong\OO_{\PP^1}(4)$ and the embedding is the $4$-uple embedding up to an automorphism of $\PP^3$, which is the entry's 'clearly a rational quartic curve'. For (b) it takes $0\to\mathcal I_X(2)\to\OO_{\PP^3}(2)\to\OO_X(2)\to0$ and computes $h^0(\PP^3,\OO_{\PP^3}(2))=10$ against $h^0(X,\OO_X(2))=8+1-1=8$, so $h^0(\PP^3,\mathcal I_X(2))\geq2$ and $X$ lies on two linearly independent quadrics, whose intersection has degree $4$ by Bézout and, containing $X$ of degree $4$, is $X$. Three things are printed wrong in (b) and are recorded here rather than copied: the quadrics of $\PP^3$ are printed as $\dim H^0(\PP^3,\OO_{\PP^3}(2))=1$ where the count $\binom{2+3}{3}=10$ is what the difference against $8$ needs; $\OO_X(2)$ is written $\ell(2K)$, which for $g=1$ would be $\ell(\OO_X)=1$; and the conclusion reads 'a complete intersection of more than 2 irreducible surface' for two. The irreducibility the exercise asks of the two quadrics holds and the entry does not say why: a reducible quadric is a union of two planes, and $X$ in no plane cannot lie in one.
 :::

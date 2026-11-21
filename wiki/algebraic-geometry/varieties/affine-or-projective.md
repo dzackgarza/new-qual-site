@@ -31,7 +31,8 @@ A closed subvariety of an affine variety is affine, and a complete connected aff
 
 ## Examples
 
-$\PP^1 \times \PP^1$ is projective by the Segre embedding and not affine because it contains the complete curve $\PP^1\times\{p\}$.
-The complement of a curve in $\PP^2$ is a hypersurface complement, hence affine, and it is not projective, because it is a proper open subset of an irreducible projective surface.
+[[FE-VARSEGREPROD]]
 
-[[algebraic-geometry/cohomology/vanishing-and-duality|Serre's criterion]] characterizes affineness cohomologically: a noetherian scheme $X$ is affine exactly when $H^1(X,\mcf)=0$ for every quasicoherent $\mcf$.
+[[FE-VARAFFHYPER]]
+
+Serre's criterion characterizes affineness cohomologically: a noetherian scheme $X$ is affine exactly when $H^1(X,\mcf)=0$ for every quasicoherent $\mcf$ ([[T-5IOUR]]).

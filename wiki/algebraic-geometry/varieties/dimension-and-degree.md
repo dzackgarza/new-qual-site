@@ -27,7 +27,7 @@ topics:
 
 ## What depends on the embedding
 
-Dimension does not depend on the embedding. The [[D-L6ERW|Hilbert polynomial]] does: its leading coefficient, and so the [[D-VARDEG|degree]], changes with the embedding, while its constant term does not.
+Dimension does not depend on the embedding ([[D-5LJUX]]). The [[D-L6ERW|Hilbert polynomial]] does: its leading coefficient, and so the [[D-VARDEG|degree]], changes with the embedding, while its constant term does not ([[D-L6ERW]]).
 
 ## Families of varieties
 

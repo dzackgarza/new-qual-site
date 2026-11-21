@@ -6,7 +6,9 @@ title: Orders of representatives of the same coset
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Cosets and Lagrange
+  - Normal Subgroups
 relations: []
 review: draft
 audit:

@@ -39,6 +39,23 @@ audit:
     Murayama's selection stops at Chapter 4, dbFin has no chapter-7 page, and the Math StackExchange,
     GitHub and web searches of this pass found no other treatment of this example; they are recorded
     in the COMPLAINTS.md entry for §43--§50. The card keeps its own proof.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read. Both claims are right: a uniform limit of bounded functions is bounded,
+    $|f|\le|f_N|+1$, and the uniform topology is metric so sequential closedness is closedness;
+    and $f_n$ equal to $x$ on $[-n,n]$ and $0$ outside converges to $f(x)=x$ uniformly on every
+    compact set, because a compact subset of $\RR$ is bounded, while $f$ is unbounded. Citation by
+    number: §46 Exercise 2.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Correction to this card's event of the same date: the exercise is §46 Exercise 3, as the
+    collection index records (§46.3), not Exercise 2. The mathematics of that event is unaffected.
+
 ---
 
 ::: {.exercise}

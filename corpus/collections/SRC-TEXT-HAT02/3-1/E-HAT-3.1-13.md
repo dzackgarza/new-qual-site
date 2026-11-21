@@ -43,6 +43,20 @@ audit:
   date: 2026-11-07
   note: >-
     Statement matches Exercise 13 (p.206), with Proposition 1B.9 restated as context. Rechecked the composition: Proposition 1B.9 p.90 gives the bijection with Hom(pi_1 X,G); abelian G factors it through pi_1^ab = H_1(X) by Theorem 2A.1 p.166; Theorem 3.2 p.195 with H_0 free identifies Hom(H_1,G) with H^1(X;G); and the composite sends f to f_* on H_1. Citations added at each step, including the page of Proposition 1B.9 and of Theorem 2A.1. Not covered: X not connected, which the exercise excludes.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 13 of §3.1, printed p. 206, with Proposition 1B.9 on printed
+    p. 90, Theorem 2A.1 on printed p. 166 and Theorem 3.2 on printed p. 195. The composition is
+    correct: Proposition 1B.9 gives $\langle X,K(G,1)\rangle\cong\operatorname{Hom}(\pi_1(X),G)$
+    for connected CW $X$ and based maps, which needs no quotient by conjugation; $G$ abelian
+    factors every homomorphism through $\pi_1(X)^{\mathrm{ab}}\cong H_1(X)$; and
+    $\operatorname{Ext}(H_0(X),G)=\operatorname{Ext}(\ZZ,G)=0$ makes the universal coefficient
+    sequence collapse to $H^1(X;G)\cong\operatorname{Hom}(H_1(X),G)$. The composite sends $f$ to
+    the abelianization of $f_*$ on $\pi_1$, which is $f_*$ on $H_1$ because $G$ is abelian, so the
+    bijection is the one the exercise names. Not claimed: the case of disconnected $X$, which the
+    exercise excludes, and no certificate.
 ---
 
 ::: {.problem}
@@ -71,7 +85,7 @@ $$
 
 ::: pf-proof
 
-Proposition 1B.9 (p.90) states that for a connected CW complex $X$ and a $K(G,1)$, every homomorphism $\pi_1(X,x_0)\to\pi_1(Y,y_0)$ is induced by a based map, unique up to based homotopy; with $\pi_1(K(G,1))=G$ this is the displayed bijection. Because maps and homotopies are based, there is no quotient by conjugation.
+Proposition 1B.9 states that for a connected CW complex $X$ and a $K(G,1)$, every homomorphism $\pi_1(X,x_0)\to\pi_1(Y,y_0)$ is induced by a based map, unique up to based homotopy; with $\pi_1(K(G,1))=G$ this is the displayed bijection. Because maps and homotopies are based, there is no quotient by conjugation.
 
 :::
 
@@ -96,7 +110,7 @@ $$
 
 ::: pf-proof
 
-The commutator subgroup lies in the kernel of every homomorphism to an abelian group, and the universal property of abelianization gives the unique factorization. Theorem 2A.1 (p.166) identifies $\pi_1(X)^{\mathrm{ab}}$ with $H_1(X)$ for path-connected $X$, which a connected CW complex is.
+The commutator subgroup lies in the kernel of every homomorphism to an abelian group, and the universal property of abelianization gives the unique factorization. Theorem 2A.1 identifies $\pi_1(X)^{\mathrm{ab}}$ with $H_1(X)$ for path-connected $X$, which a connected CW complex is.
 
 :::
 
@@ -111,7 +125,7 @@ $$
 
 ::: pf-proof
 
-The cohomological universal coefficient sequence of Theorem 3.2 (p.195) is
+The cohomological universal coefficient sequence of Theorem 3.2 is
 $$
 0\to\operatorname{Ext}(H_0(X),G)
 \to H^1(X;G)

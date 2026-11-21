@@ -77,19 +77,6 @@ $$
 
 :::
 
-::: {.pf-step #s1-2}
-
-Thus a common eigenbasis is sufficient for the commutator to vanish.
-
-
-::: pf-proof
-
-This is step [](#s1-1){.pf-ref}.
-
-:::
-
-:::
-
 ::: {.pf-step #s1-3}
 
 A common eigenbasis is not necessary for two transformations to
@@ -140,7 +127,7 @@ $$
 
 ::: pf-proof
 
-Step [](#s1-2){.pf-ref} proves sufficiency, and step [](#s1-3){.pf-ref} gives a counterexample to
+Step [](#s1-1){.pf-ref} proves sufficiency, and step [](#s1-3){.pf-ref} gives a counterexample to
 necessity.
 
 :::

@@ -6,7 +6,9 @@ title: Sequential compactness in $C[0,1]$ implies uniform boundedness and equico
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Arzela-Ascoli Theorem
+  - Compactness
 relations: []
 review: draft
 audit:

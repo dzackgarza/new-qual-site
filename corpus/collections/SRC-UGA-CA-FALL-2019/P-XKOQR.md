@@ -13,6 +13,18 @@ classification:
   - Rouché
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. If f'(z_0) != 0 then f is injective on a small disc about z_0, by the
+    inverse function theorem for holomorphic maps (equivalently, f' continuous and nonzero near z_0
+    makes f locally one-to-one). Conversely, if f'(z_0) = 0 then f(z) - f(z_0) = (z - z_0)^k h(z) with
+    k >= 2 and h nonzero near z_0, and then f cannot be injective on any disc about z_0, since the
+    equation f(z) = f(z_0) + w has k distinct small solutions for suitable w. Checked that the
+    converse is where the k >= 2 multiplicity is used, and that 'local bijection' in the sense of the
+    statement (injective on some disc, onto its image) is exactly what both directions establish.
 ---
 
 ::: {.problem}

@@ -35,6 +35,19 @@ audit:
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 75 Exercise 1, printed p. 457. H_1 from the one-vertex cell structure of the 8-gon scheme, giving Z^2 + Z/2, then chi = -1 and non-orientability give 3P^2 by Theorem 77.5. What was corrected: the identification cited "Dyck's Theorem / classification invariants"; the invariants are those of Theorem 77.5 and the card now cites it. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The computation is correct. P^2 # T is the 6-gon with word c c a b a^{-1}
+    b^{-1}, that is, one 0-cell, three 1-cells and one 2-cell; abelianizing the
+    attaching word gives 2c, so the image of the boundary map is 2Z inside
+    Zc + Za + Zb and H_1 is Z/2 + Z^2, with H_0 = Z and H_2 = 0, which also
+    matches chi = 1 - 3 + 1 = -1. For the identification, P^2 # T is
+    non-orientable since it contains a Moebius band, and the connected sum
+    formula gives chi = 1 + 0 - 2 = -1; a closed connected non-orientable
+    surface kP^2 has chi = 2 - k, so k = 3, and Theorem 77.5 turns chi and
+    orientability into the homeomorphism type. Nothing was changed.
 ---
 
 ::: {.exercise}

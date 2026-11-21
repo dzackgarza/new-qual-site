@@ -7,8 +7,8 @@ topics:
 
 # Point-set topology
 
-- [[topology/point-set/definitions|Definitions]] and [[topology/point-set/notation-and-background|notation and background]].
+- [[topology/point-set/definitions|Point-set definitions]] and [[topology/point-set/notation-and-background|notation and background]].
 
-- [[topology/point-set/point-set|Connectedness, compactness, separation]].
+- [[topology/point-set/point-set|Continuity, compactness, and separation]].
 
 - [[topology/point-set/examples|Examples]], the spaces that separate the properties.

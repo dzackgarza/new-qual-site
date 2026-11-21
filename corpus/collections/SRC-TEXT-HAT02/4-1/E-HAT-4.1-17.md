@@ -33,6 +33,39 @@ audit:
     card's claim that the quotient CW structure has positive cells only in dimensions at least m+n+2 is
     what carries the conclusion, and it is correct since the 0-skeleton of X ^ Y is a point. Not checked:
     no independent verification of Corollary 4.12 beyond its statement.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Structured the argument into numbered steps and made the model replacement a lemma with its
+    source named: Hatcher's CW approximation theorem builds an approximation by attaching one cell
+    per generator of the homotopy groups of the target, so an m-connected space has an approximation
+    with a single 0-cell and no cells in dimensions 1 through m, and Whitehead makes it a homotopy
+    equivalence. Re-read in the retained text: the exercise statement (Section 4.1 Exercise 17) and
+    Corollary 4.12, whose printed statement is "A CW pair (X,A) is n-connected if all the cells in
+    X - A have dimension greater than n", exactly the form applied. Also made explicit why the
+    bound survives m = 0 or n = 0, where "no cells in dimensions 1,...,m" is vacuous and the only
+    requirement is a single 0-cell. Not checked this session: the printed page numbers of the
+    exercise and of the corollary, which the earlier reading recorded as 358 and the corollary
+    unnumbered in the text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 17,
+    Corollary 4.12 (statement "A CW pair (X,A) is n connected if all the cells in
+    X - A have dimension greater than n"), and the CW approximation construction of §4.1. Two
+    repairs. (1) Step `model` asserted that no (i+1)-cells are needed at stage i <= m without saying
+    why the kernel being killed is trivial; the step now runs the induction: a Z_i with no cells of
+    dimension <= i has one 0-cell and trivial pi_i by cellular approximation, so the kernel is trivial
+    and the (i+2)-cells of stage i realize pi_{i+1}(X) = 0 for i+1 <= m. (2) The proof silently
+    replaced X and Y by the models, and the conclusion is stated about the given X and Y; the step now
+    records that a homotopy equivalence of pairs preserves k-connectedness and that the pair and the
+    smash product computed with the models are homotopy equivalent to the originals, and fixes the
+    convention that later steps use X and Y for the models. Steps `product-cells`, `dimension`,
+    `pair`, `smash-cells` and `smash` are unchanged and correct, and `smash` is right that for a pair
+    with A a point pi_i(Z,*) = pi_i(Z). Not checked: neither assertion recomputed; no retained
+    solution set covers the exercise and none was searched for again.
 
 ---
 
@@ -41,47 +74,78 @@ Show that if $X$ and $Y$ are CW complexes with $X$ $m$-connected and $Y$ $n$-con
 :::
 
 ::: {.solution}
-By the CW version of the relative Hurewicz/cellular approximation argument, an $m$-connected CW complex is homotopy equivalent to a CW complex with one $0$-cell and no cells in dimensions $1,\dots,m$. Likewise, replace $Y$ by a CW model with no positive-dimensional cells below dimension $n+1$. This replacement does not change the connectivity assertion.
 
-Give $X\times Y$ the product CW structure. Relative to
-$$
-X\vee Y=(X\times\{y_0\})\cup(\{x_0\}\times Y),
-$$
-the cells are precisely products
-$$
-e^p\times e^q
-$$
-with $p,q>0$. By the chosen CW structures,
-$$
-p\ge m+1,
-\qquad q\ge n+1,
-$$
-so every relative cell has dimension at least
-$$
-(m+1)+(n+1)=m+n+2.
-$$
-Hence the relative CW pair
-$$
-(X\times Y,X\vee Y)
-$$
-has no relative cells in dimensions at most $m+n+1$. Cellular approximation therefore gives
-$$
-\pi_i(X\times Y,X\vee Y)=0
-\qquad(i\le m+n+1).
-$$
-Thus the pair is $(m+n+1)$-connected.
+The argument is the card's own; no retained solution set in `tmp/sources` covers Section 4.1 Exercise 17. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.1 Exercise 17, and Corollary 4.12 was read in the retained text in the form used below.
 
-Since $X\vee Y\hookrightarrow X\times Y$ is a cofibration, the quotient is the smash product
-$$
-(X\times Y)/(X\vee Y)=X\wedge Y.
-$$
-The quotient CW structure on $X\wedge Y$ has no positive-dimensional cells below dimension $m+n+2$. Therefore
-$$
-\pi_i(X\wedge Y)=0
-\qquad(i\le m+n+1),
-$$
-so
-$$
-\boxed{(X\times Y,X\vee Y)\text{ and }X\wedge Y\text{ are }(m+n+1)\text{-connected}.}
-$$
+Say that a CW complex $Z$ is $k$-connected if $\pi_{i}(Z)=0$ for $0\leq i\leq k$, and that a CW pair $(Z,A)$ is $k$-connected if $\pi_{i}(Z,A)=0$ for $i\leq k$.
+
+::: pf
+
+::: {.pf-step #model}
+If $X$ is $m$-connected and $Y$ is $n$-connected, then each is homotopy equivalent to a CW complex with a single $0$-cell and no cells in dimensions $1,\dots,m$ respectively $1,\dots,n$.
+
+::: pf-proof
+Hatcher's CW approximation theorem attaches, in its inductive construction, one cell for each generator of each homotopy group of the target: $Z_{i+1}$ is obtained from $Z_{i}$ by attaching $(i+1)$-cells killing the kernel of $\pi_{i}(Z_{i})\to\pi_{i}(X)$ and $(i+2)$-cells realizing generators of $\pi_{i+1}(X)$. If $X$ is path-connected, the construction begins with a single $0$-cell. Suppose $\pi_{j}(X)=0$ for $1\leq j\leq i$ and that $Z_{i}$ has no cells of dimensions $1,\dots,i$; then $Z_{i}$ has a single $0$-cell, so a map $S^{i}\to Z_{i}$ lands in the $i$-skeleton, a point, and $\pi_{i}(Z_{i})=0$; the kernel killed at stage $i$ is therefore trivial and no $(i+1)$-cells are attached, and the $(i+2)$-cells of stage $i$ realize generators of $\pi_{i+1}(X)$, of which there are none when $i+1\leq m$. Inducting from $i=0$, where the single $0$-cell is $Z_{0}$, gives that $Z$ has no cells in dimensions $1,\dots,m$. The approximation is a weak homotopy equivalence to $X$, hence a homotopy equivalence by Whitehead's theorem, both spaces being CW complexes. The same applies to $Y$. When $m=0$ the requirement is only a single $0$-cell, and when $m\geq1$ it is the absence of cells of dimensions $1$ through $m$.
+
+Because a homotopy equivalence of pairs preserves $k$-connectedness, it is enough to prove the two assertions for models $X',Y'$ obtained this way: a homotopy equivalence of pairs $(X'\times Y',X'\vee Y')\to(X\times Y,X\vee Y)$ and a homotopy equivalence $X'\wedge Y'\to X\wedge Y$ transfer each conclusion back. In the steps below $X$ and $Y$ denote these models.
+:::
+
+:::
+
+::: {.pf-step #product-cells}
+In the product CW structure on $X\times Y$, the cells are the products $e^{p}\times e^{q}$ of cells of $X$ and of $Y$, and those not contained in $X\vee Y$ are exactly those with $p\geq1$ and $q\geq1$.
+
+::: pf-proof
+The product of two CW complexes carries the CW structure whose open cells are the products of open cells, of dimension $p+q$; this is the standard product cell structure. A cell $e^{p}\times e^{q}$ lies in $X\times\{y_{0}\}$ when $q=0$, and in $\{x_{0}\}\times Y$ when $p=0$; with $x_{0},y_{0}$ the basepoints and the chosen models having a single $0$-cell, $e^{0}=\{x_{0}\}$ and $e^{0}=\{y_{0}\}$. So $X\vee Y$ contains exactly the cells with $p=0$ or $q=0$, and the remaining ones have $p,q\geq1$.
+:::
+
+:::
+
+::: {.pf-step #dimension}
+Every cell of $X\times Y$ outside $X\vee Y$ has dimension at least $m+n+2$.
+
+::: pf-proof
+By step [](#product-cells){.pf-ref} such a cell is $e^{p}\times e^{q}$ with $p\geq1$ and $q\geq1$, and by step [](#model){.pf-ref} there are no cells of $X$ of dimension $1,\dots,m$, so $p\geq m+1$ (for $m=0$ this reads $p\geq1$, which is what was assumed); likewise $q\geq n+1$. The dimension is $p+q\geq(m+1)+(n+1)=m+n+2$.
+:::
+
+:::
+
+::: {.pf-step #pair}
+$(X\times Y,\,X\vee Y)$ is $(m+n+1)$-connected.
+
+::: pf-proof
+Corollary 4.12 (Hatcher, §4.1) states that a CW pair $(Z,A)$ is $k$-connected if all cells of $Z-A$ have dimension greater than $k$. Here the cells outside $X\vee Y$ have dimension at least $m+n+2>m+n+1$ by step [](#dimension){.pf-ref}, and $(X\times Y,X\vee Y)$ is a CW pair. So the pair is $(m+n+1)$-connected.
+:::
+
+:::
+
+::: {.pf-step #smash-cells}
+$X\wedge Y=(X\times Y)/(X\vee Y)$ is a CW complex with a single $0$-cell, and its positive-dimensional cells have dimension at least $m+n+2$.
+
+::: pf-proof
+$X\vee Y$ is a subcomplex of $X\times Y$, so the pair has the homotopy extension property and the quotient is the CW complex obtained by collapsing that subcomplex, with one cell for each cell outside $X\vee Y$ together with the collapsed $0$-cell. By steps [](#product-cells){.pf-ref} and [](#dimension){.pf-ref} those cells have dimension at least $m+n+2$, hence are all positive-dimensional.
+:::
+
+:::
+
+::: {.pf-step #smash}
+$X\wedge Y$ is $(m+n+1)$-connected.
+
+::: pf-proof
+Apply Corollary 4.12 to the CW pair $\bigl(X\wedge Y,\{x_{0}\}\bigr)$: the cells outside the basepoint have dimension at least $m+n+2>m+n+1$ by step [](#smash-cells){.pf-ref}, so the pair is $(m+n+1)$-connected. For a pair with $A$ a point, $\pi_{i}(Z,\ast)=\pi_{i}(Z)$, so $\pi_{i}(X\wedge Y)=0$ for $i\leq m+n+1$.
+:::
+
+:::
+
+::: {.pf-step}
+$(X\times Y,\,X\vee Y)$ and $X\wedge Y$ are both $(m+n+1)$-connected.
+
+::: pf-proof
+Steps [](#pair){.pf-ref} and [](#smash){.pf-ref} give the two conclusions. For $i\leq m+n+1$ the pair's vanishing gives in particular that $\pi_{i}(X\vee Y)\to\pi_{i}(X\times Y)$ is surjective, with kernel the image of $\pi_{i+1}$ of the pair.
+:::
+
+:::
+
+:::
+
 :::

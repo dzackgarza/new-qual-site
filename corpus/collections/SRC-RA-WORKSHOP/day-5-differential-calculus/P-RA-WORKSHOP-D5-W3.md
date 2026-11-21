@@ -15,6 +15,16 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. f' is continuous and f'(x_0) != 0, so on a neighbourhood (c,d) of x_0
+    it keeps a constant strict sign (take the neighbourhood where |f' - f'(x_0)| < |f'(x_0)|/2); a
+    differentiable function with strictly positive (or negative) derivative on an interval is strictly
+    increasing (decreasing), hence injective there. Checked that the only hypotheses used are
+    continuity of f' and nonvanishing at the single point, and that injectivity is on an interval
+    around x_0, not on all of (a,b).
 ---
 ::: {.problem}
 ([KRD10, Exercise 6.2.B]) If $f:(a,b)\to\RR$ is continuously differentiable and $f'(x_0)\ne0$ for some $x_0\in(a,b)$, then $f$ is injective on some interval $(c,d)$ containing $x_0$.

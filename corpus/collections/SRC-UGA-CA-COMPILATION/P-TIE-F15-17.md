@@ -6,7 +6,9 @@ title: Area of the image of a disk under a univalent function
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Univalent Functions
+  - Conformal Maps
 relations: []
 review: draft
 audit:

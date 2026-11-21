@@ -34,6 +34,26 @@ audit:
     Rechecked the ordinary p-primary kernel, the Frobenius factorization in
     the cofinality argument, and the three inverse-limit computations after
     strengthening their proofs.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.4.8, printed p. 92,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.4.8, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the degree count $\deg f=\deg n_E/\deg n_E=1$ that pins $\Gal(n_E)$, the equivalence 'étale iff $p\nmid n$' for $n_E$ on an ordinary elliptic curve, and the three inverse limits against the exercise's three lines.
+    Not checked: Yang's Solutions outside printed p. 92; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's
+    Solution 4.4.8 at printed p. 92; it had none before. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -446,4 +466,8 @@ Hasse-invariant formula in characteristic $p$.
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.8, gets all three answers from one frame: an étale cover of an elliptic curve is unramified, hence again of genus one; the dual morphism of 4.4.7 turns a degree-$n$ étale $f:E'\to E$ into $g$ with $g\circ f=n_E$; so the multiplication maps are cofinal among the connected étale covers and $\pi_1(E)=\varprojlim_n\Gal(n_E)$, the case analysis being the case analysis of $n_E$. In characteristic $0$ every $n_E$ is étale and $\Gal(n_E)$ is pinned from both sides: each translation $\tau_P$ by $P\in\ker n_E$ satisfies $n_E\circ\tau_P=n_E$, and conversely $n_E\circ f=n_E$ forces $\deg f=\deg n_E/\deg n_E=1$, so $f$ is such a translation; hence $\Gal(n_E)=\ker n_E\cong(\ZZ/n\ZZ)^2$ and the limit is $\prod_{\ell}(\ZZ_\ell\times\ZZ_\ell)$. With $\characteristic k=p$ and Hasse invariant zero, $n_E$ is étale exactly when $p\nmid n$, so the limit runs over the indices prime to $p$ and gives $\prod_{\ell\ne p}(\ZZ_\ell\times\ZZ_\ell)$. With Hasse invariant nonzero, every étale $f$ factors as $g\circ\hat{\mathrm{Frob}}^r$ with $p\nmid\deg g$, and $\Gal(n_E\circ\hat{\mathrm{Frob}}^r)\cong(\ZZ/n\ZZ)^2\times(\ZZ/p^r\ZZ)$, cited to 4.4.15, so the limit is $\ZZ_p\times\prod_{\ell\ne p}(\ZZ_\ell\times\ZZ_\ell)$. What the entry does not spell out is that the dual of a finite étale morphism of elliptic curves is again one, which is what makes 4.4.7 applicable; and it prints $\characteristic(K)$ for $\characteristic(k)$ in cases 2 and 3, with 'the we can only take' for 'then'.
 :::

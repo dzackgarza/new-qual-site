@@ -5,7 +5,8 @@ kind: problem
 title: 'Analytic continuation and an example'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Analytic Continuation
 relations: []
 review: draft
 audit:

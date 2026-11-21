@@ -20,7 +20,7 @@ Then the inclusions $X_\alpha\injects\bigvee_\alpha X_\alpha$ induce an isomorph
 $$
 \bigoplus_\alpha \tilde H_n(X_\alpha) \xrightarrow{\ \sim\ } \tilde H_n\qty{\bigvee_\alpha X_\alpha}
 $$
-for every $n$ [@Hat02].
+for every $n$ [@Hat02, Corollary 2.25].
 :::
 
 ::: {.remark}

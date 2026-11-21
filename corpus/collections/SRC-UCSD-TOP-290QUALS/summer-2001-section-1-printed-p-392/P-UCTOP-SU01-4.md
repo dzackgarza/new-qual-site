@@ -19,6 +19,8 @@ Prove that $X$ is homotopy-equivalent to the "bouquet of two spheres" $S^2 \vee 
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination papers alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #hurewicz-iso}
@@ -83,7 +85,9 @@ X\simeq S^2\vee S^2.
 $$
 
 ::: pf-proof
-This is the conclusion of step [](#f-homotopy-equivalence){.pf-ref}.
+
+Step [](#f-homotopy-equivalence){.pf-ref} gives that the map $f:S^2\vee S^2\to X$ is a homotopy equivalence. Homotopy equivalence is symmetric, so $X\simeq S^2\vee S^2$.
+
 :::
 
 :::

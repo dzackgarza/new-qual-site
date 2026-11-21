@@ -5,7 +5,9 @@ kind: problem
 title: 'Almost-everywhere continuity versus equality almost everywhere to a continuous function'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Lebesgue Measure
+  - Continuous Functions
 relations: []
 review: draft
 audit:

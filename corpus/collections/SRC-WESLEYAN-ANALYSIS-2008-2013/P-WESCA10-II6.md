@@ -5,7 +5,8 @@ kind: problem
 title: 'Quadratic derivative-bound estimate and equality case'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Schwarz Lemma
 relations: []
 review: draft
 audit:

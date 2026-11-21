@@ -6,7 +6,9 @@ title: Riemann-integrable function with infinitely many discontinuities
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Riemann Integration
+  - Continuity
 relations: []
 review: draft
 audit:

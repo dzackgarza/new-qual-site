@@ -37,6 +37,16 @@ audit:
     No published solution set is retained for this examination. The statement is
     the answer; the proof block proves the uniqueness clause, which is part of
     the theorem and is what the word "the" density rests on.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The uniqueness step wrote 0 = integral over D_k of (h' - h) dnu, which subtracts two
+    integrals that may both be infinite. It now restricts to measurable subsets of D_k on
+    which both measures are finite, possible by sigma-finiteness, integrates h' >= h + 1/k
+    there without subtracting, and exhausts D_k by countably many such sets. The theorem
+    and its conclusion are unchanged.
+
 ---
 
 ::: {.problem}
@@ -65,12 +75,15 @@ $\nu$-almost everywhere.
 ::: pf-proof
 
 Let $D=\{h'>h\}=\bigcup_{k\ge1}D_k$ where $D_k=\{h'>h+1/k\}$, each measurable.
-On $D_k$ we have $h'-h>1/k$, so
+On $D_k$ we have $h<\infty$, so the difference $h'-h$ is defined there and exceeds
+$1/k$. Fix a measurable $E\subseteq D_k$ with $\mu(E)<\infty$ and $\nu(E)<\infty$;
+such sets exhaust $D_k$, because both measures are $\sigma$-finite. Integrating
+the inequality over $E$ subtracts no infinite quantities and gives
 $$
-0=\int_{D_k}(h'-h)\,d\nu\ \ge\ \tfrac1k\,\nu(D_k),
+\mu(E)=\int_Eh'\ \ge\ \int_Eh+\tfrac1k\,\nu(E)=\mu(E)+\tfrac1k\,\nu(E),
 $$
-the integral being over a set where the integrand is defined and nonnegative;
-hence $\nu(D_k)=0$ for each $k$, and $\nu(D)=\sum_k\nu(D_k)=0$. Exchanging $h$
+hence $\nu(E)=0$, and a countable exhaustion gives $\nu(D_k)=0$ for each $k$, so
+$\nu(D)=\sum_k\nu(D_k)=0$. Exchanging $h$
 and $h'$ gives $\nu(\{h>h'\})=0$, so $h=h'$ off the null set
 $\{h>h'\}\cup\{h'>h\}$.
 

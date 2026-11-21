@@ -5,7 +5,9 @@ kind: problem
 title: "Strictly increasing functions versus functions with $F'>0$ almost everywhere"
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Absolute Continuity
+  - Monotone Functions
 relations: []
 review: draft
 audit:

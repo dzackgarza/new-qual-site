@@ -6,7 +6,9 @@ title: Supremum of an equicontinuous family
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Equicontinuity
+  - Arzela-Ascoli Theorem
 relations: []
 review: draft
 audit:

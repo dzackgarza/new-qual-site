@@ -20,6 +20,8 @@ $$
 T(z)\coloneqq\frac{az+b}{cz+d},
 $$
 defined for $z\in\CC$ with $cz+d\neq0$, is a \dfn{linear fractional transformation}, or \dfn{Möbius transformation}.
+
+This is [@Ahl73, ch. 3, §3.1, The Linear Group], where a linear fractional transformation is written with coefficients of nonzero determinant.
 :::
 
 ::: {.proposition}

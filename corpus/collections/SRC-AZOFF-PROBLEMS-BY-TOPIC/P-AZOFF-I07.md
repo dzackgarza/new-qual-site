@@ -36,6 +36,17 @@ audit:
     imaginary part of f is harmonic, continuous on the closed disk, and zero
     on the boundary; the harmonic maximum principle makes it identically
     zero, and the open mapping theorem then forces f to be constant.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Part (a) was the one step of the proof asserting its claim with no justification; it now carries
+    one, the standard argument that the reflected formula is holomorphic across the axis (the two
+    pieces agree on $U \cap \RR$ because $F$ is real there, and Morera on triangles crossing the axis
+    finishes). Also removed: the closing pf-qed, which only said that steps 1 to 4 answer parts (a),
+    (b) and (c), which STYLE-08 does not admit; the last step now carries the level's QED label. No
+    mathematics changed elsewhere, and the statement is untouched. The set retains a MinerU extraction
+    of Azoff's problems only, with no solutions, so the argument is the card's own.
 ---
 
 ::: {.problem}
@@ -72,6 +83,11 @@ F(z),&\operatorname{Im}z\geq0,\\
 \end{cases}
 $$
 defines a holomorphic function on all of $U$.
+
+
+::: pf-proof
+The two pieces are holomorphic where they are defined: the first is $F$, and the second is $z \mapsto \overline{F(\bar z)}$, the conjugate of a holomorphic function composed with the anti-holomorphic reflection $z \mapsto \bar z$, which is holomorphic. On $U \cap \RR$ the second piece is $\overline{F(z)} = F(z)$ because $F$ is real there, so the two agree on the seam, and the hypothesis that $F$ is continuous up to that seam makes $\widetilde F$ continuous. Morera's theorem applied to triangles that cross the axis, split along it into a triangle in $U_+$ and one in the reflected half, then gives that $\widetilde F$ is holomorphic on all of $U$.
+:::
 
 :::
 
@@ -189,13 +205,6 @@ in $\CC$, which is impossible for a subset of $\RR$. Therefore $f$ is
 constant.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1){.pf-ref} answers part (a), steps [](#s2){.pf-ref} and [](#s3){.pf-ref} answer part (b), and step [](#s4){.pf-ref}
-proves part (c).
 
 :::
 

@@ -31,6 +31,32 @@ audit:
   date: 2026-11-07
   note: >-
     Statement matches Exercise 11 (p.229) with the hypotheses k > 0 and l > 0. Rechecked: a and b are the pullbacks of generators of H^k(S^k) and H^l(S^l) along the projections, a cup b generates the top group by Theorem 3.15 p.216; for 0 < k, l < k+l the source has no cohomology in degrees k and l, so f^*a = f^*b = 0 and f^*(a cup b) = 0; evaluating on the fundamental class gives the degree of f as 0. Citations added for Theorem 3.15 p.216 at both points and for the naturality of evaluation. Not covered: the case k = 0 or l = 0, excluded by the printed hypotheses.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Structured into Lamport steps, transcribed from the retained published solution: Steven V.
+    Sam, Solutions to Hatcher's Algebraic Topology (2008), section 3.2 Exercise 11
+    (tmp/sources/hatcher-solutions-sam-2008.md). Sam's route is now steps [classes],
+    [pullback-zero], [top-zero] and [dual]: the cohomology Kunneth theorem (Theorem 3.15, printed
+    p. 216, whose hypothesis that one factor has finitely generated free cohomology holds for
+    S^l) makes a cup b a generator; both f^*a and f^*b vanish because 0 < k, l < k + l; naturality
+    of the cup product makes f^* zero in the top degree; and the naturality of the universal
+    coefficient theorem (printed p. 196) turns that into vanishing of the dual of f_*, which for
+    homomorphisms Z -> Z forces f_* = 0. Checked the citation: Hatcher's Theorem 3.15 is the
+    cohomology cross product isomorphism (the card's earlier note already cited it at p. 216), and
+    the UCT is Theorem 3.2, p. 195. Sam's file has no reliable page markers, so the audit cites
+    the section and exercise rather than a page, and the earlier reference to "printed p. 14" is
+    replaced by that. The evaluation-pairing argument the card already carried is kept as a second
+    step and labelled as the card's own. Statement and bracketed hypotheses unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Notation repair after the corpus check reported raw TeX the page cannot show. One sentence
+    cites the retained solution by section as §3.2, a section sign written as a TeX command
+    outside a math span, which the HTML writer drops; it now reads the character `§3.2`, as the
+    corpus does elsewhere. Mathematics and wording unchanged.
 ---
 
 ::: {.problem}
@@ -38,18 +64,76 @@ Using cup products, show that every map $S^{k+\ell} \to S^k \times S^\ell$ induc
 :::
 
 ::: {.solution}
-Let $\alpha\in H^k(S^k;\ZZ)$ and $\beta\in H^\ell(S^\ell;\ZZ)$ be generators. Their pullbacks $a$ and $b$ under the two projections from $S^k\times S^\ell$ have product
-$$
-a\smile b\in H^{k+\ell}(S^k\times S^\ell;\ZZ)
-$$
-equal to a generator: Theorem 3.15 (p.216) identifies $H^*(S^k\times S^\ell;\ZZ)$ with the tensor product of the two rings, and $H^*(S^m;\ZZ)=\ZZ[\alpha_m]/(\alpha_m^2)$ has a free class in degree $m$. This remains true when $k=\ell$, when the two classes lie in the same cohomological degree.
+Both generators of the top cohomology of $S^k\times S^\ell$ are cup products of the two degree-$k$ and degree-$\ell$ classes, and each of those pulls back to $0$ under a map from $S^{k+\ell}$ because the intermediate cohomology of the sphere vanishes; so $f^*$ is zero in the top degree, and the top homology map is its linear-algebraic dual. The argument is the retained published solution: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §3.2 Exercise 11** (`tmp/sources/hatcher-solutions-sam-2008.md`), whose route runs through the naturality of the universal coefficient theorem; the evaluation pairing gives the same conclusion and is recorded as a second step, as the card already had it. Sam's text has no reliable page markers, so the set is cited by section and exercise.
 
-For any map $f:S^{k+\ell}\to S^k\times S^\ell$, both $H^k(S^{k+\ell};\ZZ)$ and $H^\ell(S^{k+\ell};\ZZ)$ vanish because $k,\ell>0$. Thus $f^*a=f^*b=0$, and naturality of the cup product gives $f^*(a\smile b)=0$. Evaluation on the fundamental class satisfies
-$$
-\langle a\smile b,f_*[S^{k+\ell}]\rangle
-=\langle f^*(a\smile b),[S^{k+\ell}]\rangle=0.
-$$
-The top homology of $S^k\times S^\ell$ is infinite cyclic, and the pairing of the generator $a\smile b$ with its generator is $\pm1$ by Theorem 3.15 (p.216), the top group being $H^k\otimes H^\ell$; the pairing is natural in the sense used above, since it is evaluation of a cohomology class on a homology class (the identification of Theorem 3.2, p.195, in the top degree). Hence $f_*[S^{k+\ell}]=0$, proving that the induced top-homology map is zero.The argument in Sam's §3.2 Exercise 11, printed p. 14, is the same: both $f^*a$ and $f^*b$ vanish since $H^k(S^{k+\ell})=H^\ell(S^{k+\ell})=0$, hence $f^*(a⌣b)=0$, and the evaluation pairing against the fundamental class identifies the source's zero homomorphism on top homology. The book's cross-product structure identifies $a⌣b$ with a generator (Theorem 3.15 p. 216), including the case $k=\ell$.
+::: pf
+
+::: {.pf-step #classes}
+Let $\alpha$ generate $H^k(S^k;\ZZ)$ and $\beta$ generate $H^\ell(S^\ell;\ZZ)$, and let $a=p_1^*\alpha$ and $b=p_2^*\beta$ be their pullbacks along the two projections. Then $H^k(S^k\times S^\ell)=\ZZ a$, $H^\ell(S^k\times S^\ell)=\ZZ b$, and $a\smile b$ generates $H^{k+\ell}(S^k\times S^\ell;\ZZ)$.
+
+::: pf-proof
+By the universal coefficient theorem (Theorem 3.2, printed p.~195) and $H_*(S^m;\ZZ)$ free, $H^m(S^m;\ZZ)=\ZZ$ generated by $\alpha$ (respectively $\beta$) and $H^i(S^m)=0$ for $0<i<m$. For the product, the cohomology Künneth theorem of Theorem 3.15 (printed p.~216) applies: the hypothesis is that $H^j$ of one factor is a finitely generated free $\ZZ$-module for all $j$, which holds for $S^\ell$ since its cohomology is $\ZZ$ in degrees $0$ and $\ell$ and $0$ otherwise. So the cross product $H^*(S^k)\otimes H^*(S^\ell)\to H^*(S^k\times S^\ell)$ is an isomorphism of rings, and $a\smile b$ is the image of $\alpha\otimes\beta$: the product of a pullback of $\alpha$ and a pullback of $\beta$ is the cross product $\alpha\times\beta$, by the definition of the cohomology cross product. Since $\alpha\otimes\beta$ generates the degree-$(k+\ell)$ group $\ZZ\otimes\ZZ$, its image generates $H^{k+\ell}(S^k\times S^\ell)$. The two factors' classes lie in different degrees unless $k=\ell$, and when $k=\ell$ the cross product is still an isomorphism and $\alpha\otimes\beta$ still generates.
+:::
+
+:::
 
 
+::: {.pf-step #pullback-zero}
+$f^*a=0$ and $f^*b=0$ for every map $f\colon S^{k+\ell}\to S^k\times S^\ell$, since $k>0$ and $\ell>0$.
+
+::: pf-proof
+$f^*a\in H^k(S^{k+\ell};\ZZ)$ and $f^*b\in H^\ell(S^{k+\ell};\ZZ)$. Since $0<k<k+\ell$ and $0<\ell<k+\ell$, both these groups vanish: $H^i(S^m;\ZZ)=0$ for $0<i<m$.
+:::
+
+:::
+
+
+::: {.pf-step #top-zero}
+$f^*\colon H^{k+\ell}(S^k\times S^\ell;\ZZ)\to H^{k+\ell}(S^{k+\ell};\ZZ)$ is zero.
+
+::: pf-proof
+The cup product is natural: $f^*(u\smile v)=f^*u\smile f^*v$ for all classes $u,v$. With $u=a$ and $v=b$ this gives $f^*(a\smile b)=f^*a\smile f^*b=0$ by step [](#pullback-zero){.pf-ref}. Since $a\smile b$ generates $H^{k+\ell}(S^k\times S^\ell)$ by step [](#classes){.pf-ref}, and $f^*$ is a homomorphism, $f^*$ annihilates every element of that group.
+:::
+
+:::
+
+
+::: {.pf-step #dual}
+Under the universal coefficient isomorphism the induced map on $\operatorname{Hom}(H_{k+\ell}(-),\ZZ)$ is $f^*$, so the dual of $f_*\colon H_{k+\ell}(S^{k+\ell})\to H_{k+\ell}(S^k\times S^\ell)$ is zero, and hence $f_*=0$.
+
+::: pf-proof
+By the naturality of the universal coefficient theorem (printed p.~196) the square
+$$
+\begin{array}{ccc}
+H^{k+\ell}(S^k\times S^\ell;\ZZ)&\xrightarrow{f^*}&H^{k+\ell}(S^{k+\ell};\ZZ)\\
+\downarrow&&\downarrow\\
+\operatorname{Hom}(H_{k+\ell}(S^k\times S^\ell),\ZZ)&\xrightarrow{(f_*)^*}&\operatorname{Hom}(H_{k+\ell}(S^{k+\ell}),\ZZ)
+\end{array}
+$$
+commutes, the vertical maps being the UCT isomorphisms; both vertical groups are the top cohomology modulo $\operatorname{Ext}$ of $H_{k+\ell-1}$, which vanishes since $H_{k+\ell-1}$ of either space is torsionfree, so the vertical maps are isomorphisms. The upper map is zero by step [](#top-zero){.pf-ref}, hence so is the lower one. Both top homology groups are infinite cyclic, so $f_*$ is multiplication by an integer $m$; the dual map is multiplication by the same $m$ on $\ZZ$, and $m=0$. Hence $f_*=0$.
+:::
+
+:::
+
+
+::: {.pf-step #evaluation}
+Equivalently, $f_*[S^{k+\ell}]=0$ by the evaluation pairing.
+
+::: pf-proof
+For $\omega\in H^{k+\ell}(S^k\times S^\ell)$ and $z\in H_{k+\ell}(S^k\times S^\ell)$ the Kronecker pairing satisfies $\langle f^*\omega,[S^{k+\ell}]\rangle=\langle\omega,f_*[S^{k+\ell}]\rangle$. Taking $\omega=a\smile b$, which generates, the left side is $0$ by step [](#top-zero){.pf-ref}; and the pairing $\ZZ\otimes\ZZ\to\ZZ$ is perfect, so $\langle\omega,f_*[S^{k+\ell}]\rangle=0$ for the generator $\omega$ forces $f_*[S^{k+\ell}]=0$, hence $f_*=0$ on the top homology.
+:::
+
+:::
+
+
+::: {.pf-step #conclusion}
+Every map $S^{k+\ell}\to S^k\times S^\ell$ with $k,\ell>0$ induces the zero homomorphism $H_{k+\ell}(S^{k+\ell})\to H_{k+\ell}(S^k\times S^\ell)$.
+
+::: pf-proof
+Steps [](#dual){.pf-ref} and [](#evaluation){.pf-ref} are two proofs of the same conclusion, the first following Sam's solution and the second the pairing route the card already carried; both use only that $f^*$ vanishes below the top degree, which is step [](#pullback-zero){.pf-ref}.
+:::
+
+:::
+
+:::
 :::

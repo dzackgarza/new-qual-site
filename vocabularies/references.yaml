@@ -452,6 +452,25 @@ references:
   source: Open WorldCat
   title: Differential Topology
   type: book
+- id: GP82
+  author:
+  - family: Gruson
+    given: Laurent
+  - family: Peskine
+    given: Christian
+  citation-key: GP82
+  container-title: Annales scientifiques de l'École Normale Supérieure
+  DOI: 10.24033/asens.1431
+  issue: '3'
+  issued:
+  - year: 1982
+  language: fr
+  page: 401–418
+  source: Numdam
+  title: Genre des courbes de l'espace projectif. II
+  type: article-journal
+  URL: https://www.numdam.org/item/ASENS_1982_4_15_3_401_0/
+  volume: '15'
 - id: Har07
   accessed:
   - year: 2026
@@ -491,6 +510,24 @@ references:
   type: book
   URL: http://link.springer.com/10.1007/978-1-4757-3849-0
   volume: '52'
+- id: Har82
+  author:
+  - family: Hartshorne
+    given: Robin
+  citation-key: Har82
+  collection-number: '592'
+  collection-title: Séminaire Bourbaki
+  container-title: Astérisque
+  issued:
+  - year: 1982
+  language: fr
+  note: Exposé no. 592
+  page: 301–313
+  source: Numdam
+  title: Genre des courbes algébriques dans l'espace projectif [d'après L. Gruson et C. Peskine]
+  type: article-journal
+  URL: https://www.numdam.org/item/SB_1981-1982__24__301_0/
+  volume: 92-93
 - id: Har92
   accessed:
   - year: 2026

@@ -11,6 +11,15 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 9A, printed p. 4 of the packet is the source of the argument, and the paragraph at the head
+    of the solution says what the card adds. Checked: the packet read in its text layer at the page
+    named and the card's steps compared with its sentences, `qualc.authoring check` on the card, and
+    `tmp/lam.sh` for the numbering and the QED. Not checked: no other card of the collection in this
+    pass.
+- event: source-checked
   by: chatgpt
   date: 2026-09-12
   note: Checked against Problem 9A of the retained Berkeley Fall 2010 preliminary-exam solution packet f10solutions.pdf.
@@ -33,6 +42,8 @@ $$
 :::
 
 ::: {.solution}
+
+The argument is Problem 9A of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed p. 4 of that file, transcribed: the general solution is $y=((x-C)/3)^3$, the condition $y(0)=1$ fixes $C=-3$, and a second solution is obtained by replacing its values on $x<-3$, where $y$ is negative, by $0$, the result still being differentiable at $x=-3$. The card adds the reading of $u^{2/3}$ as $(\sqrt[3]{u})^2$, which makes the piecewise function differentiable there, and the step structure.
 For a real number $u$, interpret $u^{2/3}$ as
 $$
 u^{2/3}=(\sqrt[3]{u})^2.

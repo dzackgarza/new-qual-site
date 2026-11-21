@@ -24,5 +24,5 @@ is an isomorphism.
 :::
 
 ::: {.remark}
-For an irreducible representation $M$ of $G$ over an arbitrary field $k$, every nonzero $G$-equivariant endomorphism of $M$ has $G$-stable kernel $0$ and image $M$, so $\Endo_G(M)$ is a division algebra over $k$.
+For an irreducible representation $M$ of $G$ over an arbitrary field $k$, every nonzero $G$-equivariant endomorphism of $M$ has $G$-stable kernel $0$ and image $M$, so $\Endo_G(M)$ is a division algebra over $k$ [@DF04, Exercise 13]. A finite-dimensional division algebra over an algebraically closed field is that field itself, so $\Endo_G(M)=k$.
 :::

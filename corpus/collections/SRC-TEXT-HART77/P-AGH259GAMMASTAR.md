@@ -70,6 +70,7 @@ For part (b), use the methods of the proof of [@Har77, Theorem II.5.19].
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.5.9, transcribed and checked against the exercise as printed: part (a), the affine covering by the $D_+(s_i)$ for a generating set $S_1$ and the degree-preserving morphism $\alpha:M\to\Gamma_*(\tilde M)$; part (b), $\tilde M=0$ forcing $M_d=0$ for $d\gg0$ by the filtration with $M_i/M_{i-1}\to(S/\mathfrak p_i)(l_i)$; and part (c), the quasi-finiteness of $\Gamma_*$ and its reduction to $S$-modules of finite length.
 Use the [[D-MODGRMOD|associated sheaf and graded section module]] conventions
 $$
 M(d)_n=M_{n+d},\qquad

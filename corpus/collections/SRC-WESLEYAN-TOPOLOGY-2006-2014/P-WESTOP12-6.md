@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP12-6
 kind: problem
 title: Relative homology of $S^2$ modulo a finite discrete subset
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Relative Homology, Spheres]}
 relations: []
 review: draft
 audit:

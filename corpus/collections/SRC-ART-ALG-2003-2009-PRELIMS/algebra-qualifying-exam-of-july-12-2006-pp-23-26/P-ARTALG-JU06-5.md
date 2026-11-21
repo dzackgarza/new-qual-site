@@ -23,6 +23,16 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Checked the hypotheses, inverse maps, degree formulas, and the distinction between K/E being Galois and E/F requiring a normal subgroup."
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof. The exercise asks for a definition and for the statement of a
+    theorem, so the justifications name the source clause each step reproduces rather than deriving
+    anything: the definition of a Galois extension and parts (1), (2) and (3) of the fundamental theorem
+    as given in Dummit and Foote. No statement was altered and no proof was added, because none is asked
+    for.
+
 ---
 ::: {.problem}
 Let $K$ and $F$ be fields, with $K$ a finite-dimensional algebraic extension of $F$.
@@ -52,6 +62,11 @@ $$
 \sigma(a)=a\text{ for all }a\in F\},
 $$
 with composition as the group operation.
+
+
+::: pf-proof
+This is the definition as stated in Dummit and Foote, and its three clauses are exactly the ones the theorem below uses: normality, separability, and the group of automorphisms fixing $F$ pointwise.
+:::
 
 :::
 
@@ -87,6 +102,11 @@ E_1\subseteq E_2
 \operatorname{Gal}(K/E_2)\subseteq\operatorname{Gal}(K/E_1).
 $$
 
+
+::: pf-proof
+This is part (1) of the fundamental theorem [@DF04], stated rather than proved, which is what the exercise asks for.
+:::
+
 :::
 
 ::: pf-step
@@ -96,6 +116,11 @@ Galois. With $H=\operatorname{Gal}(K/E)$, the degree formulas are
 $$
 [K:E]=\cardinality{H},\qquad [E:F]=[G:H],\qquad [K:F]=\cardinality{G}.
 $$
+
+
+::: pf-proof
+This is part (2) of the fundamental theorem [@DF04]; the degree formulas follow from the bijection together with multiplicativity of degrees in a tower.
+:::
 
 :::
 
@@ -112,6 +137,11 @@ with kernel $H$, and therefore induces an isomorphism
 $$
 G/H\cong\operatorname{Gal}(E/F).
 $$
+
+
+::: pf-proof
+This is part (3) of the fundamental theorem [@DF04], with the quotient identified with the Galois group of the base extension.
+:::
 
 :::
 

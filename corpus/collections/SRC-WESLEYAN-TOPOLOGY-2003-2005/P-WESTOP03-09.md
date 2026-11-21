@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP03-09
 kind: problem
 title: Point-set properties of the Sorgenfrey line and its square
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Sorgenfrey Line, Counterexamples]}
 relations: []
 review: draft
 audit:

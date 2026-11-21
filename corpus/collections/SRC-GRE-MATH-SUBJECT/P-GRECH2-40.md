@@ -14,6 +14,17 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Checked against Question 40 of the Chapter 2 review questions in assets/attachments/extracted/chapter-2.md (Mistral OCR), compared with the same page in the Cracking the GRE Mathematics Subject Test book extraction.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked with independent values. I: the integrand is at
+    most x^{-4} for |x| >= 1 and continuous on compact sets, so both tails converge; the value is
+    pi/2. II: x e^{-x} is dominated by e^{-x/2} for large x, so it converges; the value is 2/e.
+    III: the card's antiderivative 1/(2-x) is correct (its derivative is +1/(2-x)^2), and
+    1/(2-b) - 1/2 tends to +infinity as b -> 2^-, so III diverges. Hence exactly I and II converge,
+    which is choice (B). Values checked symbolically. Not claimed: any statement about convergence
+    of similar integrals with other exponents.
 ---
 
 ::: {.problem}

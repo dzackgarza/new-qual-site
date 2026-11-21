@@ -20,5 +20,11 @@ The group $\Aut_\CC(\DD)$ of [[D-TM4TE|biholomorphisms]] $\DD\to\DD$ is
 $$
 \Aut_\CC(\DD)=\{\lambda\psi_a : a\in\DD,\ \lambda\in S^1\},
 $$
-so every automorphism of $\DD$ is a Blaschke factor followed by a rotation [@SS03].
+so every automorphism of $\DD$ is a Blaschke factor followed by a rotation.
+
+Written out, the group is the set of maps
+$$
+z\mapsto e^{i\theta}\,{\alpha-z\over 1-\overline{\alpha}z}, \qquad \theta\in\RR,\ \alpha\in\DD,
+$$
+the rotations composed with the Blaschke factors; this is [@SS03, Theorem 2.2 of Chapter 8], where the proof runs the Schwarz lemma on $f\circ\psi_\alpha$ and on its inverse.
 :::

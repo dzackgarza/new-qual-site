@@ -5,7 +5,9 @@ kind: problem
 title: Annihilators, spans, and the dual of a quotient
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Annihilators
+  - Dual Spaces
 relations: []
 review: draft
 audit:

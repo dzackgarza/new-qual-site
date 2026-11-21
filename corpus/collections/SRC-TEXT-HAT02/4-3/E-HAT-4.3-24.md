@@ -11,6 +11,40 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Citation convention. Sources on this card are cited by chapter, section and numbered statement
+    only, and the statement and solution above cite every source by its numbered statement. The
+    events dated before today are left as their sessions wrote them, which QUAL-11 requires, so a
+    locator in one of them stands as a historical record and is superseded by the citation now on
+    the card. This event records the convention and claims no further reading: the
+    mathematics of the card is as those events describe it.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Citation corrected. Theorem 4.71 is now cited by number. The events of 2026-11-18 that carried
+    a locator for it are left as written under QUAL-11 and are superseded here. The argument is
+    unchanged.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.3 Exercise 24, printed p. 420,
+    the relative lifting problem on printed p. 418 and Theorem 4.71, printed p. 415. The
+    proof is right where it matters most: a homotopy rel A through lifts is the relative
+    lifting problem for (W x I, B), its obstructions are classes in
+    H^{n+1}(W x I, B; pi_n F), and the shift isomorphism H^{n+1}(W x I, B; M) = H^n(W, A; M)
+    puts them exactly where the printed H^n(W, A; pi_n F) says they are --- the card's two
+    index steps are correct and are the substance of the exercise. What was missing is
+    that "the situation of the relative lifting problem" carries a hypothesis the
+    exercise does not restate, the existence of a Moore--Postnikov tower of principal
+    fibrations, which p. 418 assumes and Theorem 4.71 characterizes; the proof used it in
+    #relative-obstructions while the preamble of the solution did not say so. A sentence
+    now says it. Independent reports from the swarm flagged the same suppression.
+    Statement unchanged, since it quotes the print.
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
@@ -28,6 +62,22 @@ audit:
   date: 2026-11-02
   note: >-
     Cards read. Verdict record is m6__proofs-4-3-1-12.md (1-12: 10 correct, 5 a dimension slip, 9 a wrong assertion; both repaired) and m2__proofs-4-3-13-24.md (13-24: 10 correct, 20 a display misalignment repaired by identifying the principal fibration, 22 the missing converse of an iff, later restated and proved, and 24, whose whole proof was then written). No card in this slice has an unmet piece.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher, §4.3 Exercise 24, the relative lifting problem of §4.3 and
+    Theorem 4.71. The reduction is correct: a homotopy rel
+    $A$ through lifts of $g$ is the relative lifting problem for the CW pair $(W\times I,B)$
+    with $B=W\times\{0\}\cup A\times I\cup W\times\{1\}$, the $(k+1)$-cells of that pair are
+    $e^{k}\times(0,1)$ for the $k$-cells of $(W,A)$, and the cochain isomorphism
+    $c\mapsto\tilde c$, $\tilde c(e^{k})=c(e^{k}\times(0,1))$, carries the cellular coboundary
+    to the coboundary because the product boundary formula's other two terms lie in $B$; hence
+    $H^{n+1}(W\times I,B;\pi_{n}F)\cong H^{n}(W,A;\pi_{n}F)$. The lead now says that no retained
+    solution set covers the exercise --- checked against Sam's set, whose §4.3 has 20 and 23 but
+    not 24, and against the other sets in `tmp/sources`, which have no §4.3 exercises --- so
+    the argument is the card's own. No step changed. Not checked: no certificate; the quote of
+    Hatcher's paragraph following Proposition 4.72 was read in the retained text version.
 
 ---
 
@@ -37,8 +87,8 @@ Show that the obstructions to finding a homotopy rel $A$ between these two lifts
 :::
 
 ::: {.solution}
-Let $p\colon X\to Y$ be a fibration with fibre $F$, let $(W,A)$ be a CW pair, let $g\colon W\to Y$ be a map, and let $f_0,f_1\colon W\to X$ be two lifts of $g$ with $f_0|_A=f_1|_A$.
-Set $I=[0,1]$, let $\mathrm{pr}_W\colon W\times I\to W$ be the projection, put $G=g\circ \mathrm{pr}_W$, and set
+Let $p\colon X\to Y$ be a fibration with fibre $F$, let $(W,A)$ be a CW pair, let $g\colon W\to Y$ be a map, and let $f_0,f_1\colon W\to X$ be two lifts of $g$ with $\restrictionof{f_0}{A}=\restrictionof{f_1}{A}$. "The situation of the relative lifting problem" is the one set up in §4.3, and it includes an assumption the exercise does not restate: that $p$ has a Moore–Postnikov tower of principal fibrations, which by Theorem 4.71 holds as soon as $\pi_1(X)$ acts trivially on $\pi_n(M_p,X)$ for all $n>1$. Without it there is no sequence of obstruction classes to speak of, so it is part of the hypothesis throughout.
+No retained solution set covers this exercise, so the argument is the card's own. Set $I=[0,1]$, let $\mathrm{pr}_W\colon W\times I\to W$ be the projection, put $G=g\circ \mathrm{pr}_W$, and set
 
 $$
 B=(W\times\{0\})\cup(A\times I)\cup(W\times\{1\})\subset W\times I .
@@ -49,12 +99,12 @@ For $n\ge 1$ the coefficient system written $\pi_nF$ in $H^k(W,A;\pi_nF)$ is the
 ::: pf
 
 ::: {.pf-step #cylinder}
-A homotopy rel $A$ from $f_0$ to $f_1$ all of whose levels are lifts of $g$ is the same thing as a solution of the relative lifting problem of Hatcher §4.3 for the CW pair $(W\times I,B)$, the fibration $p$, the map $G$, and the partial lift $h_0\colon B\to X$ of $G|_B$ given by $h_0(w,0)=f_0(w)$, $h_0(w,1)=f_1(w)$ and $h_0(a,t)=f_0(a)$ for $w\in W$, $a\in A$ and $t\in I$.
+A homotopy rel $A$ from $f_0$ to $f_1$ all of whose levels are lifts of $g$ is the same thing as a solution of the relative lifting problem of Hatcher §4.3 for the CW pair $(W\times I,B)$, the fibration $p$, the map $G$, and the partial lift $h_0\colon B\to X$ of $\restrictionof{G}{B}$ given by $h_0(w,0)=f_0(w)$, $h_0(w,1)=f_1(w)$ and $h_0(a,t)=f_0(a)$ for $w\in W$, $a\in A$ and $t\in I$.
 
 ::: pf-proof
-On $A\times\{0\}$ the first and the third formula both give $f_0(a)$, and on $A\times\{1\}$ the second gives $f_1(a)$ while the third gives $f_0(a)$, which is the same since $f_0|_A=f_1|_A$. The three closed sets $W\times\{0\}$, $A\times I$ and $W\times\{1\}$ cover $B$, so the pasting lemma makes $h_0$ a well-defined continuous map. It lifts $G|_B$: $p h_0(w,0)=p f_0(w)=g(w)=G(w,0)$ and $p h_0(w,1)=p f_1(w)=g(w)=G(w,1)$ because $f_0$ and $f_1$ lift $g$, and $p h_0(a,t)=p f_0(a)=g(a)=G(a,t)$.
+On $A\times\{0\}$ the first and the third formula both give $f_0(a)$, and on $A\times\{1\}$ the second gives $f_1(a)$ while the third gives $f_0(a)$, which is the same since $\restrictionof{f_0}{A}=\restrictionof{f_1}{A}$. The three closed sets $W\times\{0\}$, $A\times I$ and $W\times\{1\}$ cover $B$, so the pasting lemma makes $h_0$ a well-defined continuous map. It lifts $\restrictionof{G}{B}$: $p h_0(w,0)=p f_0(w)=g(w)=G(w,0)$ and $p h_0(w,1)=p f_1(w)=g(w)=G(w,1)$ because $f_0$ and $f_1$ lift $g$, and $p h_0(a,t)=p f_0(a)=g(a)=G(a,t)$.
 
-A continuous $H\colon W\times I\to X$ with $pH=G$ and $H|_B=h_0$ gives the homotopy $H_t(w)=H(w,t)$, which satisfies $H_0=f_0$, $H_1=f_1$, $H_t(a)=h_0(a,t)=f_0(a)$ for $a\in A$ and $pH_t=g$. Conversely a homotopy $H_t$ rel $A$ from $f_0$ to $f_1$ through lifts of $g$ gives the continuous map $H(w,t)=H_t(w)$, which satisfies $pH=G$ and restricts to $h_0$ on $B$. The two passages are inverse to each other, both being the correspondence between a map on $W\times I$ and the family of its restrictions to the slices $W\times\{t\}$.
+A continuous $H\colon W\times I\to X$ with $pH=G$ and $\restrictionof{H}{B}=h_0$ gives the homotopy $H_t(w)=H(w,t)$, which satisfies $H_0=f_0$, $H_1=f_1$, $H_t(a)=h_0(a,t)=f_0(a)$ for $a\in A$ and $pH_t=g$. Conversely a homotopy $H_t$ rel $A$ from $f_0$ to $f_1$ through lifts of $g$ gives the continuous map $H(w,t)=H_t(w)$, which satisfies $pH=G$ and restricts to $h_0$ on $B$. The two passages are inverse to each other, both being the correspondence between a map on $W\times I$ and the family of its restrictions to the slices $W\times\{t\}$.
 :::
 
 :::

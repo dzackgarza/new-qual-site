@@ -35,6 +35,8 @@ Determine the corresponding subfields.
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the preliminary-examination papers alone, so the argument is the card's own.
 Choose $a=\sqrt[3]{2}>0$, $b=\sqrt3>0$, and
 $\zeta=(-1+i\sqrt3)/2$, a primitive cube root of unity.
 Then $K=\QQ(a,\zeta,b)$ and $G\cong S_3\times C_2$.

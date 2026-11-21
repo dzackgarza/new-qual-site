@@ -6,7 +6,9 @@ title: Characterizations of nilpotent matrices
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Nilpotent Operators
+  - Characteristic Polynomial
 relations: []
 review: draft
 audit:

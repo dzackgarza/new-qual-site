@@ -11,6 +11,15 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 7A, printed p. 3 of the packet is the source of the argument, and the paragraph at the head
+    of the solution says what the card adds. Checked: the packet read in its text layer at the page
+    named and the card's steps compared with its sentences, `qualc.authoring check` on the card, and
+    `tmp/lam.sh` for the numbering and the QED. Not checked: no other card of the collection in this
+    pass.
+- event: source-checked
   by: chatgpt
   date: 2026-09-12
   note: Checked against Problem 7A of the retained Berkeley Fall 2010 preliminary-exam solution packet f10solutions.pdf.
@@ -33,6 +42,8 @@ $$
 :::
 
 ::: {.solution}
+
+The argument is Problem 7A of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed p. 3 of that file, transcribed: compute the imaginary part of $\int_\RR e^{ix}/(x^2+4x+5)\,dx$ by residues, the only pole in the upper half-plane being the simple one at $z=-2+i$, whose residue is $e^{-1-2i}/(2i)$, so the integral is $-\pi e^{-1}\sin 2$; the semicircle's contribution vanishes by Jordan's lemma. What the card adds is the step structure and the verification of the estimates, not the argument.
 Consider
 $$
 F(z)\coloneqq\frac{e^{iz}}{z^2+4z+5}

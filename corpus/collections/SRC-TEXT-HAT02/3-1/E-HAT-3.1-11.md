@@ -40,6 +40,21 @@ audit:
   date: 2026-11-07
   note: >-
     Statement matches Exercise 11 (p.205) with both parts. Rechecked (a): q_* vanishes in every reduced degree (H_n of the sphere is 0, H_{n+1} of X is 0) while q^* on degree n+1 is Z -> Z_m, the cokernel of multiplication by m on cellular cochains, nonzero for m>1; and the deduced failure of naturality, now written as q^* being the sum of the Hom and Ext maps induced by q_* by the naturality of p.196. (b): i^* vanishes in every reduced degree because the two nonvanishing degrees differ, while i_* : Z -> Z_m is again the quotient. Citations added: Theorem 2.35 p.139 with the Cellular Boundary Formula p.141 for the chain complex, Theorem 3.5 p.203 for cellular cohomology, Theorem 3.2 p.195 and the naturality on p.196. Not covered: m = 1, where both parts are vacuous.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 11 of §3.1, printed p. 205, with Theorem 2.35 on printed p. 139,
+    Theorem 3.5 on printed p. 203 and Theorem 3.2 with its naturality on printed pp. 195--196.
+    Both parts verified for $m>1$. (a) $q_*$ vanishes because $\widetilde H_i(X)$ is $\ZZ_m$ only
+    at $i=n$ where the sphere has nothing, and $\widetilde H_{n+1}$ of the sphere is $\ZZ$ where
+    $X$ has nothing; on cellular $(n+1)$-cochains $q$ is the identity $\ZZ\to\ZZ$, and the target
+    cohomology is the cokernel of $\times m$, so $q^*$ is reduction mod $m$, nonzero. A natural
+    splitting would make $q^*$ the sum of the Hom and Ext maps induced by $q_*$, hence zero. (b)
+    $i^*$ vanishes in every degree because the two nonvanishing degrees differ, while
+    $i_*:\ZZ\to\ZZ_m$ is the quotient. One citation repaired: the Cellular Boundary Formula is
+    printed on p. 140, not p. 141 as the card and the event of 2026-11-08 had it (book PDF page
+    149, folio 140). Not claimed: $m=1$, where the exercise is vacuous, and no certificate.
 ---
 
 ::: {.problem}
@@ -52,7 +67,7 @@ Deduce that the splitting in the universal coefficient theorem for cohomology ca
 :::
 
 ::: {.solution}
-Take $m>1$, without which both parts are void because $S^n\cup_1 e^{n+1}=S^{n+1}$. Theorem 2.35 (p.139) with the Cellular Boundary Formula (p.141) gives the cellular chain complex of
+Take $m>1$, without which both parts are void because $S^n\cup_1 e^{n+1}=S^{n+1}$. Theorem 2.35 with the Cellular Boundary Formula (p.140) gives the cellular chain complex of
 $$
 X=M(\ZZ_m,n)=S^n\cup_m e^{n+1}
 $$
@@ -102,7 +117,7 @@ is reduction modulo $m$, hence is nonzero.
 
 ::: pf-proof
 
-On cellular cochains, which compute cohomology by Theorem 3.5 (p.203), the quotient identifies the unique $(n+1)$-cell of $X$ with the top cell of $S^{n+1}$. Thus the cochain map in degree $n+1$ is the identity $\ZZ\to\ZZ$ before passing to cohomology. The target cohomology is the cokernel of multiplication by $m$, so the induced map is the quotient $\ZZ\to\ZZ_m$, which is nonzero because $m>1$.
+On cellular cochains, which compute cohomology by Theorem 3.5, the quotient identifies the unique $(n+1)$-cell of $X$ with the top cell of $S^{n+1}$. Thus the cochain map in degree $n+1$ is the identity $\ZZ\to\ZZ$ before passing to cohomology. The target cohomology is the cokernel of multiplication by $m$, so the induced map is the quotient $\ZZ\to\ZZ_m$, which is nonzero because $m>1$.
 
 :::
 
@@ -114,7 +129,7 @@ Therefore the splitting in the cohomological universal coefficient theorem canno
 
 ::: pf-proof
 
-A natural splitting would express $H^{n+1}$ functorially as the direct sum of the Hom and Ext terms of Theorem 3.2 (p.195), and by the naturality of that sequence (p.196) the map $q^*$ would be the sum of the maps induced by $q_*$ on $\operatorname{Hom}(H_{n+1},-)$ and $\operatorname{Ext}(H_n,-)$. Since $q_*$ is zero on all homology groups, both would vanish, so $q^*$ would vanish. This contradicts step [](#s2){.pf-ref}.
+A natural splitting would express $H^{n+1}$ functorially as the direct sum of the Hom and Ext terms of Theorem 3.2, and by the naturality of that sequence (p.196) the map $q^*$ would be the sum of the maps induced by $q_*$ on $\operatorname{Hom}(H_{n+1},-)$ and $\operatorname{Ext}(H_n,-)$. Since $q_*$ is zero on all homology groups, both would vanish, so $q^*$ would vanish. This contradicts step [](#s2){.pf-ref}.
 
 :::
 

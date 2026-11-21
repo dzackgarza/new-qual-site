@@ -9,6 +9,17 @@ classification:
   - Abstract Algebra
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found, and the count is right for the reason given: for n prime, every element
+    of K = F_{2^n} outside F_2 has degree n over F_2, since its degree divides n and is not 1, and each
+    irreducible of degree n is the minimal polynomial of exactly n elements of K, its n distinct
+    conjugates. The 2^n - 2 non-rational elements are therefore partitioned into groups of n, giving
+    (2^n - 2)/n. Checked that the n roots are distinct, which uses that F_2 is perfect so that f is
+    separable, and that primeness of n is used only to exclude intermediate degrees.
 ---
 
 ::: {.problem}

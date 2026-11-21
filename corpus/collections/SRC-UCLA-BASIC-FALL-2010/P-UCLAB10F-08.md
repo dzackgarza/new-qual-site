@@ -6,7 +6,9 @@ title: Orthogonal complement of an intersection
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Orthogonality
+  - Subspaces
 relations: []
 review: draft
 audit:

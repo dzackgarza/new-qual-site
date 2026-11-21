@@ -36,6 +36,38 @@ audit:
     book's "still broader class" in Example 4 is illustrated, not classified; the card proves the two
     claims Example 4 makes about Example 3, and Exercise 38.2's failure of cos(1/x) is left to its own
     card.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    A review finding corrected the page of the source citation. The 2026-11-10 note above records
+    "Example 4 of §38 (printed p. 238)", and that page is wrong: in the Egbert copy of Munkres, Topology
+    (2000), printed p. 238 is PDF p. 253 and carries Examples 1 and 2 of §38, while Example 4 -- "Let
+    X = (0,1). Consider the one-point compactification of X given in Example 1 ..." -- begins on printed
+    p. 239, PDF p. 254, which was read here on that page. Example 4 of §38 is therefore printed p. 239.
+    Nothing else changes: the exercise answered is Exercise 1 of §38 (printed p. 241), and the proof's
+    own citations -- Examples 1 to 3 of §38, Theorem 29.1, Theorem 21.3, Theorem 23.3 -- are unaffected.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against §38 Exercise 1 and the three statements of Example 4 of §38, and found
+    correct. Searched first for a published proof: Poulsen's §38 sheet covers Exercises 38.4 to
+    38.9 and stops there, dbFin's index stops at §67 with a gap before it, and no other retained
+    set reaches §38; so nothing is transcribed and the verification is the card's own. (1) The
+    one-point compactification: the card proves both directions, and the only-if direction turns on
+    the neighbourhoods of the point at infinity, a sequence converging to $0$ in $(0,1)$ leaving
+    every compact subset of $(0,1)$, each of which is closed and bounded in $\RR$ by Theorem 27.3
+    and hence bounded away from $0$. (2) The two-point compactification $[0,1]$: the same argument
+    with the two ends separated, the limits need not agree. (3) The compactification $Y$ of
+    Example 3, the closure of $e(X)$ for $e(x)=(x,\sin(1/x))$: a function whose two limits exist
+    extends by the values $a$ and $b$ prescribed on $\{0\}\times[-1,1]$ and at $(1,\sin 1)$, which
+    is continuous because $f(x)$ tends to those values as $x$ tends to the ends; and
+    $\sin(1/x)=\pi_2\circ e$ extends as the restriction of the second projection, although it has
+    no limit at $0^{+}$. That is Example 4's claim that the class of functions extending grows
+    from (1) to (2) to (3), and the card also records the step from (3) to the construction of
+    Theorem 38.2, where the coordinates of an imbedding are exactly the bounded continuous
+    functions that extend. Not checked: no published solution was located, and none is claimed.
 ---
 
 ::: {.exercise}
@@ -48,17 +80,92 @@ exist and are equal; it is extendable to the two-point compactification of Examp
 :::
 
 ::: {.solution}
-Write $X=(0,1)$ and let $f:X\to\RR$ be bounded and continuous. For $x_0\in\{0,1\}$ we say that $\lim_{x\to x_0}f(x)$ exists if $f(x_n)$ converges for every sequence $x_n\to x_0$ in $X$ and the limit does not depend on the sequence; this sequential form is the ordinary one because $X$ is first countable.
 
-(1) The one-point compactification (Example 1). Let $X^*=X\cup\{\infty\}$ and suppose that both limits exist and are equal to some $c$; define $F:X^*\to\RR$ by $F|X=f$ and $F(\infty)=c$. If $x_n\to\infty$ in $X^*$, then every compact subset of $X$ contains only finitely many of the $x_n$, and the compact subsets of $(0,1)$ are the closed bounded ones, so either $x_n\to0$ or $x_n\to1$ along a subsequence. Every subsequence of $(x_n)$ has a further subsequence converging to $0$ or to $1$, and along it $f\to c$; hence $f(x_n)\to c=F(\infty)$. As $X^*$ is first countable, this gives continuity of $F$ at $\infty$, and $F$ is continuous elsewhere because $f$ is. Conversely, if $F:X^*\to\RR$ extends $f$ continuously, then for any sequence $x_n\to0$ in $X$ one has $x_n\to\infty$ in $X^*$, so $f(x_n)=F(x_n)\to F(\infty)$ and $\lim_{x\to0^+}f=F(\infty)$; likewise $\lim_{x\to1^-}f=F(\infty)$. So the two limits exist and are equal.
+The verification is the card's own; no published solution of Munkres §38 Exercise 1 was located, and the sets searched are recorded in the audit trail.
 
-(2) The two-point compactification $[0,1]$ (Example 2). If both limits exist, say $a$ at $0$ and $b$ at $1$, define $F$ on $[0,1]$ by $F(0)=a$, $F(1)=b$ and $F|X=f$; it is continuous at $0$ and at $1$ by the sequential criterion and on $X$ by continuity of $f$. Conversely, a continuous extension $F$ to $[0,1]$ gives $\lim_{x\to0^+}f=F(0)$ and $\lim_{x\to1^-}f=F(1)$, which therefore exist and may differ.
+Write $X=(0,1)$ and let $f:X\to\RR$ be bounded and continuous. Since $X$ is first countable, $\lim_{x\to0^{+}}f$ exists with value $c$ exactly when $f(x_{n})\to c$ for every sequence $x_{n}\to0$ in $X$, and likewise at $1$ (§21).
 
-(3) The compactification of Example 3. Let $e(x)=(x,\sin(1/x))$ and $Y=\overline{e(X)}$ in $\RR^2$, so that
-$$
-Y=e(X)\cup(\{0\}\times[-1,1])\cup\{(1,\sin1)\}.
-$$
-Suppose both limits exist, $a=\lim_{x\to0^+}f$ and $b=\lim_{x\to1^-}f$, and define $F:Y\to\RR$ by $F(e(x))=f(x)$ for $x\in X$, $F(0,t)=a$ for $t\in[-1,1]$, and $F(1,\sin1)=b$. Let $y_n\to p$ in $Y$; we show $F(y_n)\to F(p)$. If $p=e(x)$ with $x\in X$, then $y_n\in e(X)$ for large $n$ and $F(y_n)=f(x_n)\to f(x)$ with $x_n\to x$. If $p=(0,t)$, then for each $n$ either $y_n=e(x_n)$, in which case $F(y_n)=f(x_n)$ and $x_n\to0$, or $y_n\in\{0\}\times[-1,1]$, where $F$ takes the value $a$; the two cases can be mixed, and replacing each term that lies in $\{0\}\times[-1,1]$ by $e(x'_n)$ with $x'_n\to0$ close enough to make $\abs{f(x'_n)-a}<1/n$ leaves $F(y_n)\to a=F(p)$. The case $p=(1,\sin1)$ is the same with $x_n\to1$ and $b$. Hence $F$ is sequentially continuous on the metric space $Y$, so continuous.
+::: pf
 
-The function $\sin(1/x)=\pi_2\circ e$ is the restriction to $e(X)$ of $\pi_2|Y$, which is continuous, so it extends to $Y$ even though $\lim_{x\to0^+}\sin(1/x)$ does not exist; this is the case Example 4 mentions. The function $\cos(1/x)$ does not extend to $Y$: that is Exercise 38.2, whose card (E-UB4PP) proves it.
+::: {.pf-step #one-point}
+(1) For the one-point compactification $X^{*}=X\cup\{\infty\}$ of Example 1, $f$ extends continuously to $X^{*}$ exactly when both limits exist and are equal.
+
+::: pf-proof
+
+::: {.pf-step #one-point-if}
+If both limits exist and equal $c$, then $f$ extends continuously with $F(\infty)=c$.
+
+::: pf-proof
+Define $F:X^{*}\to\RR$ by $\restrictionof{F}{X}=f$ and $F(\infty)=c$; it is continuous on the open subspace $X$. For continuity at $\infty$ let $\varepsilon>0$ and choose $\delta_{0},\delta_{1}>0$ with $\abs{f(x)-c}<\varepsilon$ for $0<x<\delta_{0}$ and for $1-\delta_{1}<x<1$. The set $K=X\cap[\delta_{0},1-\delta_{1}]$ is closed and bounded in $\RR$, hence compact, so $X^{*}\setminus K$ is a neighbourhood of $\infty$ (§29). Every $x\in X^{*}\setminus K$ lies in $X$ with $x<\delta_{0}$ or $x>1-\delta_{1}$, or else equals $\infty$; in each case $\abs{F(x)-c}<\varepsilon$, since $F(\infty)=c$. So $F$ is continuous at $\infty$.
+:::
+
+:::
+
+::: {.pf-step #one-point-only-if}
+If $F:X^{*}\to\RR$ extends $f$ continuously, then both limits exist and equal $F(\infty)$.
+
+::: pf-proof
+Let $x_{n}\to0$ in $X$. Every compact subset of $X$ is closed and bounded in $\RR$ (Theorem 27.3), so it omits all but finitely many of the $x_{n}$, and therefore $x_{n}\to\infty$ in $X^{*}$: the neighbourhoods of $\infty$ are the complements of compact sets. Continuity of $F$ gives $f(x_{n})=F(x_{n})\to F(\infty)$, so $\lim_{x\to0^{+}}f=F(\infty)$; the same argument with $x_{n}\to1$ gives $\lim_{x\to1^{-}}f=F(\infty)$.
+:::
+
+:::
+
+::: {.pf-qed}
+Steps [](#one-point-if){.pf-ref} and [](#one-point-only-if){.pf-ref} are the two directions of (1), in which the limits must be equal because both equal $F(\infty)$.
+:::
+
+:::
+
+:::
+
+::: {.pf-step #two-point}
+(2) For the two-point compactification $[0,1]$ of Example 2, $f$ extends continuously exactly when both limits exist.
+
+::: pf-proof
+If $\lim_{x\to0^{+}}f=a$ and $\lim_{x\to1^{-}}f=b$ exist, define $F:[0,1]\to\RR$ by $F(0)=a$, $F(1)=b$ and $\restrictionof{F}{X}=f$; continuity at $0$ and at $1$ is the sequential criterion just used, and on $X$ it is the continuity of $f$. Conversely a continuous $F:[0,1]\to\RR$ extending $f$ gives $f(x_{n})=F(x_{n})\to F(0)$ for $x_{n}\to0$ and $f(x_{n})\to F(1)$ for $x_{n}\to1$, so both limits exist, with values $F(0)$ and $F(1)$, which need not be equal.
+:::
+
+:::
+
+::: {.pf-step #example-3}
+(3) For the compactification $Y=\overline{e(X)}$ of Example 3, with $e(x)=\big(x,\sin(1/x)\big)$, every $f$ whose two limits exist extends, and so does $\sin(1/x)$.
+
+::: pf-proof
+
+::: {.pf-step #y-structure}
+$Y=e(X)\cup\big(\{0\}\times[-1,1]\big)\cup\{(1,\sin1)\}$.
+
+::: pf-proof
+$e$ is continuous on $X$, and as $x\to0^{+}$ the first coordinate tends to $0$ while $\sin(1/x)$ ranges over $[-1,1]$, all of whose points are limits of values of $\sin(1/x)$; so $\{0\}\times[-1,1]\subset\overline{e(X)}$. As $x\to1^{-}$, $e(x)\to(1,\sin1)$. Conversely a sequence in $e(X)$ converging in $\RR^{2}$ has first coordinates converging to some $t\in[0,1]$, and if $t\in(0,1)$ the limit is $e(t)$, while $t=0$ gives a point of $\{0\}\times[-1,1]$ and $t=1$ gives $(1,\sin1)$. So $Y$ is that union (Example 3 of §38).
+:::
+
+:::
+
+::: {.pf-step #extension}
+If $\lim_{x\to0^{+}}f=a$ and $\lim_{x\to1^{-}}f=b$ exist, then $f\circ e^{-1}$ extends continuously to $Y$.
+
+::: pf-proof
+Define $F:Y\to\RR$ by $F\big(e(x)\big)=f(x)$ for $x\in X$, $F(0,t)=a$ for $t\in[-1,1]$, and $F(1,\sin1)=b$; this is well defined by step [](#y-structure){.pf-ref}. Let $y_{n}\to p$ in $Y$. If $p=e(x)$ with $x\in X$, then for large $n$ the first coordinate of $y_{n}$ lies in $X$, so $y_{n}=e(x_{n})$ with $x_{n}\to x$, and $F(y_{n})=f(x_{n})\to f(x)=F(p)$. If $p=(0,t)$, write $c_{n}$ for the first coordinate of $y_{n}$, which tends to $0$; then $F(y_{n})=f(c_{n})$ when $c_{n}>0$ and $F(y_{n})=a$ when $c_{n}=0$, and in both cases $\abs{F(y_{n})-a}<\varepsilon$ for all large $n$ once $\varepsilon>0$ is given and $\delta$ is chosen with $\abs{f(x)-a}<\varepsilon$ for $0<x<\delta$. So $F(y_{n})\to a=F(p)$. The case $p=(1,\sin1)$ is the same with $c_{n}\to1$ and $b$ in place of $a$. Hence $F$ is continuous, $Y$ being metric.
+:::
+
+:::
+
+::: {.pf-step #sin}
+$\sin(1/x)$ extends to $Y$ although $\lim_{x\to0^{+}}\sin(1/x)$ does not exist.
+
+::: pf-proof
+$\sin(1/x)=\pi_{2}\big(e(x)\big)$ is the restriction to $e(X)$ of the continuous function $\restrictionof{\pi_{2}}{Y}$, which extends it. The limit at $0^{+}$ does not exist, since $\sin(1/x)=1$ at $x=1/(\pi/2+2\pi k)$ and $-1$ at $x=1/(3\pi/2+2\pi k)$ for every $k$, two sequences tending to $0$. So Example 3 extends a strictly larger class of functions than Example 2, as Example 4 states.
+:::
+
+:::
+
+::: {.pf-qed}
+Step [](#extension){.pf-ref} gives the extension whenever the two limits exist, as in (2) and unlike (1); step [](#sin){.pf-ref} extends a function for which no limit at $0^{+}$ exists, so the class of extendable functions for this compactification is strictly larger than the class of (2).
+:::
+
+:::
+
+:::
+
+:::
 :::

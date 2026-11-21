@@ -16,6 +16,25 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained exam assets/attachments/MATH-290A-Exam-Fall-2019.pdf,
+    problem 3: "Compute the integer homology H_*(RP^2 x RP^2; Z)." The card
+    agrees.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The computation is correct. The factor has H_0 = Z, H_1 = Z/2 and H_k = 0
+    above, and the Kunneth sequence over Z splits into the tensor summands in
+    degree n and the Tor summands in degree n-1. Degree 0 is Z; degree 1 is
+    (Z tensor Z/2) + (Z/2 tensor Z) = (Z/2)^2 with the Tor term trivial; degree
+    2 is Z/2 tensor Z/2 = Z/2 with both Tor terms trivial because one factor is
+    Z; degree 3 has no tensor term and Tor(Z/2, Z/2) = Z/2; above that
+    everything vanishes. The Euler characteristic checks: only H_0 has a free
+    part, giving 1, which is chi(RP^2)^2. Nothing was changed.
 ---
 
 ::: {.problem}

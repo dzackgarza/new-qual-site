@@ -30,6 +30,8 @@ Then $f(X) = P$ also.
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.9.2. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §9, Exercise 2.9.2, proves it by the same route through the completions: on an affine neighbourhood of the image point the map $B\to\Gamma(\hat X,\OO_{\hat X})$ has image $k$, so the closed point is the only image, and $f(X)=P$.
+
 Let $\mathcal I$ be the ideal sheaf of $Y$ in $X$ and let $\hat X$ be the [[D-SCHFORMAL|formal completion]] along $Y$.
 By [[P-AGH291FORMALREG]], the constants map identifies $\Gamma(\hat X,\OO_{\hat X})$ with $k$.
 

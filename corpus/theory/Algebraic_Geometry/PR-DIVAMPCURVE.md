@@ -29,11 +29,11 @@ prompts:
 ::: {.proposition}
 Let $D$ be a divisor on a smooth projective curve $X$ of genus $g$ over an algebraically closed field $k$.
 
-- $D$ is ample if and only if $\deg D > 0$.
+- $D$ is ample if and only if $\deg D > 0$ [@Har77, Corollary IV.3.3].
 
-- $\deg D \geq 2g$ implies $\abs{D}$ is base-point free.
+- $\deg D \geq 2g$ implies $\abs{D}$ is base-point free [@Har77, Corollary IV.3.2(a)].
 
-- $\deg D \geq 2g+1$ implies $D$ is very ample.
+- $\deg D \geq 2g+1$ implies $D$ is very ample [@Har77, Corollary IV.3.2(b)].
 :::
 
 ::: {.remark}

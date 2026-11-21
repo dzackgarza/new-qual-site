@@ -5,7 +5,9 @@ kind: problem
 title: Closed distance superlevel sets and their strict superlevel closures
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Metric Spaces
+  - Closure
 relations: []
 review: draft
 audit:

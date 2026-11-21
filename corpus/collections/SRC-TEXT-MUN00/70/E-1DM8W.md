@@ -50,6 +50,20 @@ audit:
     Part (a)'s printed hint "[Hint: Show j_1 is surjective.]" was missing from the statement, which carried
     part (b)'s hint only; it is restored. The proof was re-read and kept: it uses that j_1 is onto in step 1,
     and nothing in it depended on the hint's absence.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The proof is correct. Surjectivity of i_2 makes the image of j_2 lie inside
+    the image of j_1, and by the generation of the fundamental group by the two
+    images j_1 is onto. Any element of i_1 of the kernel of i_2 dies under j_1
+    because j_2 i_2 = j_1 i_1, so the least normal subgroup M lies in the kernel
+    of j_1 and h is induced. The homomorphism out of V is well defined precisely
+    because two preimages differ by an element of the kernel of i_2, whose image
+    under i_1 lies in M; the compatibility needed for Theorem 70.1 is then the
+    defining equation of that map, so a map out of the fundamental group of X
+    exists and inverts h on the left, since q is onto. Hence h is a bijection.
+    Nothing was changed.
 ---
 
 ::: {.exercise}

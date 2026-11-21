@@ -23,6 +23,20 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Checked the three exhaustive Sylow cases, all semidirect actions, the residual fiber-product reduction, and the exact matrix-action orbit enumeration without a small-group catalogue."
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the five steps of the case with no normal Sylow subgroup that
+    asserted their content without justification each carry a sentence deriving it, and the closing
+    pf-qed, whose only content was a reference back to step s5, was removed so that s5 is the QED step.
+    One structural defect was repaired: the step beginning "All four groups exist and are distinct" was
+    cut in half by a fence, with its continuation lying loose in the enclosing proof frame, so the fence
+    is gone and the step now runs whole with a justification of its own. What this pass did not do: it did
+    not re-derive the classification. The Sylow counts, the orbit tables and the fifty classes stand as
+    the 2026-09-10 review left them, and the executable orbit enumeration of step s2 was not re-run; the
+    added sentences were checked only for consistency with the argument already on the card.
+
 ---
 ::: {.problem}
 List all isomorphism classes of groups of size $72$.
@@ -390,6 +404,10 @@ Its conjugates in $A_4$ generate $V_4$. This proves
 both equalities. In particular the only nontrivial map $S_4\to C_2$
 is sign, and there is no nontrivial map $A_4\to C_2$.
 
+::: pf-proof
+The number of Sylow $3$-subgroups satisfies $n_3\equiv1\pmod 3$ and $n_3\mid 8$, so $n_3\in\{1,4\}$; the hypothesis excludes $1$, leaving four. Conjugation on them is a homomorphism $G\to S_4$ whose image is transitive, hence of order divisible by $4$, and that order is $72/\cardinality{K}$, a divisor of $24$, so it is $4,8,12$ or $24$. Were $\cardinality{K}$ equal to $18$ or $9$, the image would be a $2$-group and every Sylow $3$-subgroup of $G$ would lie in $K$; but a group of order $18$ or $9$ has a unique Sylow $3$-subgroup, characteristic and hence normal in $G$, contradicting $n_3=4$. So $\cardinality{K}=6$ or $3$ and the image is $A_4$ or $S_4$. The two displayed commutator computations give $[S_4,S_4]=A_4$ and $[A_4,A_4]=V_4$, so the only nontrivial homomorphism $S_4\to C_2$ has kernel $A_4$ and none exists from $A_4$.
+:::
+
 :::
 
 ::: {.pf-step #s4-2}
@@ -417,6 +435,10 @@ $G=K C_G(K)$. The intersection is $Z(K)=1$, and the two factors
 commute. Consequently
 $G\cong K\times C_G(K)\cong S_3\times A_4$.
 
+::: pf-proof
+A group of order $6$ has $n_3\equiv1\pmod 3$ dividing $2$, so $n_3=1$: its Sylow $3$-subgroup $C_3$ is normal, the quotient has order $2$, and a complement $\langle t\rangle$ with $t^2=1$ gives $K=C_3\rtimes\langle t\rangle$. The conjugation action of $t$ on $C_3$ is an automorphism of order dividing $2$, hence $+1$ or $-1$, producing $C_6$ or $S_3$. In the case $K=C_6$ the subgroup $N$ of order $3$ is characteristic in $K$, so it is central in $G$ once the action on it is trivial. In the case $K=S_3$ every automorphism is inner, because the centre is trivial and conjugation permutes the three transpositions, so an element $g$ and a suitable $k\in K$ induce the same automorphism of $K$, and $k^{-1}g$ centralizes $K$.
+:::
+
 :::
 
 ::: pf-step
@@ -437,6 +459,10 @@ $$
 is injective because $V\cap N=1$, and its image lies in the
 fiber product of $q_H$ and $\pi$. That fiber product has order
 $18\cdot24/6=72$, so the map is an isomorphism onto it.
+
+::: pf-proof
+Conjugation on $N$ is a homomorphism $S_4=G/N\to\operatorname{Aut}(C_3)=C_2$, and the only nontrivial one is the sign, whose kernel is $A_4$; so $A_4$ centralizes $N$. The inverse image $U$ of $V_4\triangleleft A_4$ therefore centralizes $N$, has order $3\cdot4=12$, and is $N\times V$ for a Sylow $2$-subgroup $V$ of $U$. That $V\cong V_4$ is the unique subgroup of order $4$ in $U$, hence characteristic there and normal in $G$, so the quotient written $V$ is well defined. Since $V\cap N=1$ the map $g\mapsto(gV,gN)$ is injective, and both coordinates land in the displayed fiber product; that product has order $18\cdot24/6=72$, equal to the order of $G$, so the injection is an isomorphism.
+:::
 
 :::
 
@@ -470,13 +496,15 @@ $C_3\times S_4$. In the last case split $C_3^2$ as the kernel
 line plus another line. Both are inverted by $t$, so the pullback
 is $C_3\rtimes_{\mathrm{sgn}}S_4$. This proves exhaustiveness.
 
+::: pf-proof
+A group of order $18$ has $n_3\equiv1\pmod 3$ dividing $2$, so its Sylow $3$-subgroup $P$ of order $9$ is normal, and a Sylow $2$-subgroup $\langle t\rangle$ complements it: $H=P\rtimes\langle t\rangle$. Since $H/\ker q_H\cong S_3$, the involution $t$ inverts the quotient $P/\ker q_H$. For $P=C_9$ the automorphisms of order dividing $2$ are $+1$ and $-1$, and inverting the quotient forces $-1$, so $H=D_{18}$ with its unique subgroup of order $3$ as kernel. For $P=C_3^2$ the involution is diagonalizable over $\FF_3$ because $2$ is invertible there, the maps $x\mapsto(x+tx)/2$ and $x\mapsto(x-tx)/2$ splitting each vector into eigenvectors of eigenvalue $+1$ and $-1$; the kernel line is one of those eigenspaces, giving $C_3\times S_3$ in the first case and $C_3^2\rtimes_{-I}C_2$ in the second, and all lines in the $-1$ eigenspace are carried to one another by $\operatorname{GL}_2(\FF_3)$. Two choices of quotient map differ by an automorphism of $S_3$, which is inner and is absorbed by conjugation in $S_4$, so no further classes arise.
+:::
+
 :::
 
 ::: pf-step
 
 All four groups exist and are distinct, and none belongs to
-
-:::
 
 steps [](#s1){.pf-ref} or step [](#s3){.pf-ref}. For each of the three groups projecting onto
 $S_4$ with kernel $C_3$, inverse images of its four Sylow
@@ -508,6 +536,12 @@ $C_9\to C_3$. In $C_3\rtimes_{\mathrm{sgn}}S_4$ the Sylow
 $3$-subgroup is $C_3\times C_3$, since a $3$-cycle acts trivially
 on the kernel. This distinguishes the last two groups.
 
+::: pf-proof
+Each of the four groups is exhibited: two as direct products and two as the semidirect products with the actions named in the claim, and the fiber product is a group because both maps are onto. The invariants computed in this step separate them: the kernel of the action on the four Sylow $3$-subgroups has order $6$ for $S_3\times A_4$ and $3$ for the other three, so the first stands alone; among the remaining three the one with a normal Sylow $2$-subgroup is separated from the others; and the last two are distinguished by their Sylow $3$-subgroups, cyclic of order $9$ in one and $C_3\times C_3$ in the other. None lies in step [](#s1){.pf-ref} or step [](#s3){.pf-ref}, whose groups all have a normal Sylow subgroup.
+:::
+
+:::
+
 :::
 
 :::
@@ -524,12 +558,6 @@ Steps [](#s1){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} classify these dis
 $42$, $4$, and $4$ distinct classes respectively. Their sum is $50$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s5){.pf-ref} gives the complete list and proves that it contains exactly $50$ isomorphism classes.
 
 :::
 

@@ -54,7 +54,7 @@ $\sqrt{2}$ is irrational.
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.11, printed pp. 65--66** (`tmp/sources/munkres-solutions-whitman.pdf`); the four parts below are his, (a) following the book's hint to take the integer between $m/2$ and $m/2+1$, and (c) the hint to take the least $n$ with $na$ a positive integer.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.11** (`tmp/sources/munkres-solutions-whitman.pdf`); the four parts below are his, (a) following the book's hint to take the integer between $m/2$ and $m/2+1$, and (c) the hint to take the least $n$ with $na$ a positive integer.
 
 ::: pf
 

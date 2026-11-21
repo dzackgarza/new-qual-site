@@ -5,7 +5,9 @@ order: 50
 
 # Applied algebra
 
-UCSD Math 202 covers five subjects.
+Five subjects, a page each: matrix analysis, the representation theory of
+finite groups and of symmetric groups, symmetric functions, Gröbner bases and
+their varieties, and invariant theory.
 
 - [[applied-algebra/matrix-analysis/index|Matrix analysis]] -- Hermitian, positive definite, unitary, and normal matrices, matrix factorizations, eigenvalue location, matrix norms.
 
@@ -17,6 +19,6 @@ UCSD Math 202 covers five subjects.
 
 - [[applied-algebra/invariant-theory/index|Invariant theory]] -- the finiteness theorems of Noether and Hilbert, Molien's formula, the Reynolds operator.
 
-Past exams are listed in the [Sources listing](sources.html); each exam page lists its problems in exam order.
+Past examinations are listed on [[archives/card-archives|the Sources listing]]; each exam page lists its problems in exam order.
 
 [[applied-algebra/resources/index|Resources]].

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-SQUAL2-01
 kind: problem
 title: Closure of an arbitrary union versus the union of the closures
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Closure, Counterexamples]}
 relations: []
 review: draft
 audit:

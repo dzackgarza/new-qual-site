@@ -6,7 +6,9 @@ title: No countable partition of the unit interval into nonempty closed interval
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Baire Category Theorem
+  - Connectedness
 relations: []
 review: draft
 audit:

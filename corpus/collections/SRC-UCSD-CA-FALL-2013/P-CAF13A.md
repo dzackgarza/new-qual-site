@@ -38,70 +38,88 @@ From among these, choose 2, and sketch their proofs.
 :::
 
 ::: {.solution}
-Here are four choices.
 
-**Open Mapping Theorem.** If $G\subset\CC$ is a domain and
-$f:G\to\CC$ is nonconstant and holomorphic, then $f(G)$ is open.
+The four statements are the standard ones and are quoted as the exercise asks; the two sketches are the card's own write-ups of the standard arguments, and the Rouché step used inside the first is stated among the four, so the sketch does not invoke anything unproved beyond it.
 
-**Rouché's Theorem.** Let $\gamma$ be a positively oriented simple closed
-contour whose interior and boundary lie in a domain on which $f$ and $g$ are
-holomorphic. If
-$$
-\abs{g(z)}<\abs{f(z)}\qquad(z\in\gamma),
-$$
-then $f$ and $f+g$ have the same number of zeros inside $\gamma$, counted with
-multiplicity.
+::: pf
 
-**Morera's Theorem.** Let $G$ be a domain and let $f:G\to\CC$ be
-continuous. If
-$$
-\int_{\partial T}f(z)\,dz=0
-$$
-for every triangle $T$ whose closure lies in $G$, then $f$ is holomorphic on
-$G$.
+::: {.pf-step #open-mapping}
+Statement, Open Mapping Theorem. If $G\subset\CC$ is a domain and $f:G\to\CC$ is holomorphic and nonconstant, then $f(G)$ is open.
 
-**Argument Principle.** Let $f$ be meromorphic on a neighborhood of the closure
-of a bounded domain bounded by a positively oriented contour $\gamma$, and
-assume $f$ has no zeros or poles on $\gamma$. Then
-$$
-\frac1{2\pi i}\int_\gamma\frac{f'(z)}{f(z)}\,dz=N-P,
-$$
-where $N$ and $P$ are the numbers of zeros and poles inside $\gamma$, counted
-with multiplicity.
+::: pf-proof
+Quoted, as asked. The hypotheses are exactly that $G$ is nonempty, open and connected and that $f$ is holomorphic there and not constant; the conclusion is that for each $z_{0}\in G$ some disc about $f(z_{0})$ lies in $f(G)$. Constancy is essential: a constant map has image a single point, which is not open.
+:::
 
-We sketch two proofs.
+:::
 
-For the **Open Mapping Theorem**, fix $z_0\in G$. Write
-$$
-f(z)-f(z_0)=(z-z_0)^m h(z),\qquad h(z_0)\ne0,
-$$
-where $m\ge1$. Choose $r>0$ so that the closed disk about $z_0$ of radius $r$
-lies in $G$ and $f(z)\ne f(z_0)$ on $\abs{z-z_0}=r$. Let
-$$
-\delta=\min_{\abs{z-z_0}=r}\abs{f(z)-f(z_0)}>0.
-$$
-If $\abs{w-f(z_0)}<\delta$, then on that circle
-$$
-\abs{(f(z)-w)-(f(z)-f(z_0))}=\abs{w-f(z_0)}<\abs{f(z)-f(z_0)}.
-$$
-Rouché's theorem shows that $f-w$ has the same number of zeros in the disk as
-$f-f(z_0)$, in particular at least one. Thus every sufficiently small
-neighborhood of $f(z_0)$ lies in $f(G)$.
+::: {.pf-step #rouche}
+Statement, Rouché's Theorem. Let $\gamma$ be a positively oriented simple closed contour whose interior and boundary lie in a domain on which $f$ and $g$ are holomorphic, and suppose $\abs{g(z)}<\abs{f(z)}$ for $z\in\gamma$. Then $f$ and $f+g$ have the same number of zeros inside $\gamma$, counted with multiplicity.
 
-For **Morera's Theorem**, work first in a disk $D\Subset G$ and fix $z_*\in D$.
-Define
+::: pf-proof
+Quoted, as asked. The point of the strict inequality on the contour is that $f$ has no zero there, so both zero counts are finite and defined; the conclusion counts multiplicities, and the interior is taken with the positive orientation.
+:::
+
+:::
+
+::: {.pf-step #morera}
+Statement, Morera's Theorem. Let $G$ be a domain and $f:G\to\CC$ continuous. If $\int_{\partial T}f(z)\,dz=0$ for every triangle $T$ whose closure lies in $G$, then $f$ is holomorphic on $G$.
+
+::: pf-proof
+Quoted, as asked. Continuity of $f$ is a hypothesis and not a consequence of the integral condition alone in the absence of local boundedness; the triangles range over all closed triangles contained in $G$, and $\partial T$ carries the positive orientation.
+:::
+
+:::
+
+::: {.pf-step #argument-principle}
+Statement, Argument Principle. Let $f$ be meromorphic on a neighbourhood of the closure of a bounded domain bounded by a positively oriented contour $\gamma$, with no zeros and no poles on $\gamma$. Then
 $$
-F(z)=\int_{[z_*,z]}f(\zeta)\,d\zeta.
+\frac{1}{2\pi i}\int_{\gamma}\frac{f'(z)}{f(z)}\,dz=N-P,
 $$
-The triangle-integral hypothesis implies that the integral is unchanged if the
-straight segment is replaced by a polygonal path in $D$. Hence, for small $h$,
+where $N$ and $P$ are the numbers of zeros and of poles inside $\gamma$, counted with multiplicity.
+
+::: pf-proof
+Quoted, as asked. The hypothesis that $\gamma$ is a contour bounding a bounded domain, that $f$ is meromorphic on a neighbourhood of its closure, and that no zero or pole lies on $\gamma$ is what makes $f'/f$ holomorphic on a neighbourhood of $\gamma$ and the integral finite; multiplicities are counted, a zero of order $m$ contributing $m$ and a pole of order $m$ contributing $-m$.
+:::
+
+:::
+
+::: {.pf-step #sketch-open-mapping}
+Sketch of the Open Mapping Theorem: every point of $G$ has an image containing a disc, by Rouché's theorem.
+
+::: pf-proof
+Fix $z_{0}\in G$. Since $f$ is nonconstant and holomorphic, $f(z)-f(z_{0})$ has a zero of finite order $m\ge1$ at $z_{0}$, so near $z_{0}$
 $$
-F(z+h)-F(z)=\int_{[z,z+h]}f(\zeta)\,d\zeta.
+f(z)-f(z_{0})=(z-z_{0})^{m}h(z),\qquad h(z_{0})\ne0 .
 $$
-By continuity of $f$,
+Choose $r>0$ with $\overline{B(z_{0},r)}\subset G$ and $f(z)\ne f(z_{0})$ for $\abs{z-z_{0}}=r$; such $r$ exists because the zeros of $f-f(z_{0})$ are isolated and $G$ is open. The continuous function $\abs{f(z)-f(z_{0})}$ attains a minimum $\delta>0$ on the compact circle $\abs{z-z_{0}}=r$. Let $\abs{w-f(z_{0})}<\delta$. On that circle,
 $$
-\frac{F(z+h)-F(z)}{h}\longrightarrow f(z).
+\abs{(f(z)-w)-\big(f(z)-f(z_{0})\big)}=\abs{w-f(z_{0})}<\delta\le\abs{f(z)-f(z_{0})},
 $$
-Thus $F'=f$ on $D$, so $f$ is holomorphic there. Since every point of $G$ lies
-in such a disk, $f$ is holomorphic on $G$.
+so the hypothesis of step [](#rouche){.pf-ref} holds on the circle with $f$ replaced by $f-f(z_{0})$ and $g$ replaced by $f(z_{0})-w$. Rouché's theorem therefore gives that $f-w$ has inside the circle as many zeros as $f-f(z_{0})$, namely $m\ge1$; so $w=f(z)$ for some $z$ with $\abs{z-z_{0}}<r$, and $B(f(z_{0}),\delta)\subset f(G)$. As $z_{0}$ was arbitrary, $f(G)$ is open.
+:::
+
+:::
+
+::: {.pf-step #sketch-morera}
+Sketch of Morera's Theorem: the triangle condition gives a primitive in a disc, and the primitive is holomorphic with derivative $f$.
+
+::: pf-proof
+Let $D\Subset G$ be an open disc and fix $z_{*}\in D$. Define
+$$
+F(z)=\int_{[z_{*},z]}f(\zeta)\,d\zeta
+$$
+on the segment $[z_{*},z]\subset D$, which lies in $G$. The hypothesis that the integral over the boundary of every triangle in $G$ vanishes implies, by induction on the number of pieces, that the integral of $f$ over the boundary of every closed polygon in $D$ vanishes; writing the difference of a polygonal path from $z_{*}$ to $z$ and the straight segment as a sum of such polygon boundaries, the integral defining $F(z)$ does not depend on the path. Hence for $z,z+h\in D$ with the segment between them in $D$,
+$$
+F(z+h)-F(z)=\int_{[z,z+h]}f(\zeta)\,d\zeta,
+$$
+and by continuity of $f$ at $z$, writing $f(\zeta)=f(z)+\big(f(\zeta)-f(z)\big)$,
+$$
+\frac{F(z+h)-F(z)}{h}=f(z)+\frac{1}{h}\int_{[z,z+h]}\big(f(\zeta)-f(z)\big)d\zeta=f(z)+o(1)
+$$
+as $h\to0$, because the integrand is bounded by $\sup_{\zeta\in[z,z+h]}\abs{f(\zeta)-f(z)}$, which tends to $0$. So $F'=f$ on $D$ and $F$ is holomorphic there; a holomorphic function has a holomorphic derivative, so $f=F'$ is holomorphic on $D$. Every point of $G$ lies in such a disc $D\Subset G$, so $f$ is holomorphic on $G$.
+:::
+
+:::
+
+:::
 :::

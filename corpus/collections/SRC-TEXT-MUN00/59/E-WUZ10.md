@@ -64,13 +64,13 @@ Prove that your answer is correct.
 :::
 
 ::: {.solution}
-The exercise is §59 Exercise 1, printed p. 370, with the warning in its bracket
+The exercise is §59 Exercise 1, with the warning in its bracket
 that a union of two simply connected spaces with a point in common need not be
 simply connected. The proof is transcribed from Pearse, *Topology (2nd ed.) —
-James R. Munkres*, solutions, Cornell 2005, §59 Exercise 1, his p. 24, read in
+James R. Munkres*, solutions, Cornell 2005, §59 Exercise 1, his, read in
 `tmp/sources/cornell-erin-munkres.md`: it exhibits $X$ as the union of two open
 subspaces with simply connected parts and path connected intersection, so that
-Corollary 59.2 (printed p. 369) applies. The bracket's warning is answered by the
+Corollary 59.2  applies. The bracket's warning is answered by the
 openness and by the intersection being contractible, not merely a point.
 
 Place the two spheres in $\RR^3$ as the spheres of radius $1$ about $(-1,0,0)$
@@ -120,7 +120,7 @@ to $\mathbf 0$ lies in the half space $x>-1$ and misses the centre
 $c_-=(-1,0,0)$ of $S^2_-$, so projecting that segment to $S^2_-$ from $c_-$
 gives a path in $H_+$ from $p$ to $\mathbf 0$, continuous in $(p,t)$ and equal to
 $\mathbf 0$ for $t=1$. So $\pi_1(U)\cong\pi_1(S^2_+)$, which is
-trivial by Theorem 59.3 (printed p. 369) with $n=2$. The same argument with the
+trivial by Theorem 59.3  with $n=2$. The same argument with the
 roles exchanged gives that $V$ deformation retracts onto $S^2_{-}$ and
 $\pi_1(V)$ is trivial.
 :::
@@ -133,7 +133,7 @@ $\boxed{\pi_1(X,x_0)\ \text{is trivial}}$.
 ::: pf-proof
 By steps [](#cover){.pf-ref} and [](#parts){.pf-ref} the space $X$ is the union
 of the open sets $U$ and $V$, which are simply connected, and $U\cap V$ is
-nonempty and path connected, so Corollary 59.2 (printed p. 369) says that $X$ is
+nonempty and path connected, so Corollary 59.2  says that $X$ is
 simply connected. Hence the fundamental group of $X$ is trivial, and since it is
 trivial it is the same at every base point.
 :::

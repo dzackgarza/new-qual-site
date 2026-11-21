@@ -22,6 +22,28 @@ audit:
     https://dbfin.com/topology/munkres/chapter-9/section-55-retractions-and-fixed-points/problem-2-solution/
     (read 2026-11-11; kept at tmp/sources/dbfin/section-55-retractions-and-fixed-points/problem-2-solution.txt), and against Munkres,
     Topology (2000), Section 55 Exercise 2, printed p. 353. dbFin uses Lemma 55.3 and Theorem 55.6: a nullhomotopic $h$ extends over $B^2$, the extension composed with the inclusion has a fixed point $x$ in $S^1$, which is a fixed point of $h$, and composing with the half-turn gives the antipodal point. The card instead argues with the winding number: if $h$ has no fixed point the straight-line homotopy makes $h$ homotopic to the antipodal map, and if it misses the antipodes it makes $h$ homotopic to the identity, either of which contradicts $\deg h=0$ for a nullhomotopic map, the degree being the class in $\pi_1(S^1)$ under Theorem 54.5. Both proofs are correct; the card's uses the degree, which is the class in $\pi_1(S^1)$ and so is available after Section 54.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Rewrote the solution on 2026-11-19. Its first step had no proof block at all,
+    its next two carried run-in titles and "Proof:" labels over unlabelled
+    substeps, and the solution ended with a paragraph outside the proof citing
+    "steps s2 and s3", two labels that did not exist — the gates could not see
+    that reference, since the paragraph sat outside the pf block. The proof is
+    now the published one, transcribed: a nullhomotopic map of S^1 extends over
+    B^2 (Lemma 55.3), and Brouwer applied to the extension, then to the map
+    followed by the half-turn, gives the fixed point and the antipodal point. The
+    card had been proved by the winding number instead, and its event of
+    2026-11-11 records that both routes are correct; the transcribed route is now
+    the one on the card. Read for this repair in
+    tmp/sources/dbfin/section-55-retractions-and-fixed-points/problem-2-solution.txt
+    (read 2026-11-11) and checked against
+    tmp/sources/munkres-2000-topology.md and the retained PDF: the exercise on
+    printed p. 353 (PDF p. 368, printed page = PDF page - 15), Lemma 55.3 with its
+    three equivalent conditions on printed p. 349 (PDF p. 364), and Theorem 55.6
+    on printed p. 351 (PDF p. 366). No statement changes.
+
 ---
 
 ::: {.exercise}
@@ -30,123 +52,39 @@ Show that if $h: S^1 \to S^1$ is nulhomotopic, then $h$ has a fixed point and $h
 :::
 
 ::: {.solution}
+The argument is that of the published solution of dbFin, "Section 55: Problem 2 Solution": a nullhomotopic map of the circle extends over the disc, Brouwer's theorem applied to that extension gives the fixed point, and the same theorem applied to the map followed by the half-turn gives the point sent to its antipode. The exercise is Munkres, *Topology* (2000), Section 55, Exercise 2; the extension lemma is Lemma 55.3, and Brouwer's fixed-point theorem for the disc is Theorem 55.6.
+
+Let $j\colon S^1\to B^2$ be the inclusion, and $\tau\colon S^1\to S^1$ the half-turn $\tau(x)=-x$.
 
 ::: pf
 
-::: {.pf-step #s1}
-
-Degree of nullhomotopic maps:
-    Since $h: S^1 \to S^1$ is nullhomotopic (homotopic to a constant map), the induced map on fundamental groups $h_*: \pi_1(S^1) \to \pi_1(S^1)$ is the zero homomorphism, so the winding number (topological degree) satisfies $\deg(h) = 0$.
-
-:::
-
-::: pf-step
-
-Existence of a fixed point:
-    There exists $x_0 \in S^1$ such that $h(x_0) = x_0$.
-    *Proof:*
+::: {.pf-step #extension}
+A nullhomotopic map $u\colon S^1\to S^1$ extends to a continuous map $B^2\to S^1$, and $\tau\circ u$ is nullhomotopic.
 
 ::: pf-proof
-
-::: pf-step
-
-Suppose for contradiction that $h(x) \neq x$ for all $x \in S^1$.
-
-:::
-
-::: pf-step
-
-Then for all $x \in S^1$ and $t \in [0, 1]$, the convex combination $(1-t)h(x) + t(-x) \neq 0$.
-        (If $(1-t)h(x) = tx$, taking norms gives $1-t = t \implies t = 1/2 \implies h(x) = x$, a contradiction).
-
-:::
-
-::: pf-step
-
-Define the straight-line homotopy $H: S^1 \times [0, 1] \to S^1$ by:
-        $$H(x, t) = \frac{(1-t)h(x) - tx}{\norm{(1-t)h(x) - tx}}.$$
-
-:::
-
-::: pf-step
-
-$H$ is a continuous homotopy between $h(x)$ and the antipodal map $a(x) = -x$.
-
-:::
-
-::: pf-step
-
-The antipodal map $a(x) = -x$ on $S^1$ is homotopic to the identity via the rotation homotopy $R_t(x) = e^{i\pi t} x$, so $\deg(a) = \deg(\operatorname{id}_{S^1}) = 1 \neq 0$.
-
-:::
-
-::: pf-step
-
-Since homotopy preserves degree, $\deg(h) = \deg(a) = 1$, strictly contradicting $\deg(h) = 0$ from step [](#s1){.pf-ref}.
-
-:::
-
-::: pf-step
-
-Thus there must exist $x_0 \in S^1$ such that $h(x_0) = x_0$.
-
+The first clause is the equivalence of (1) and (2) in Lemma 55.3: a continuous $u\colon S^1\to X$ is nullhomotopic exactly when it extends to a continuous $k\colon B^2\to X$. For the second, if $H\colon S^1\times I\to S^1$ is a homotopy from $u$ to a constant map, then $\tau\circ H$ is a homotopy from $\tau\circ u$ to a constant map.
 :::
 
 :::
 
-:::
-
-::: pf-step
-
-Existence of an antipodal point:
-    There exists $x_1 \in S^1$ such that $h(x_1) = -x_1$.
-    *Proof:*
+::: {.pf-step #fixed}
+Every nullhomotopic map $u\colon S^1\to S^1$ has a fixed point.
 
 ::: pf-proof
-
-::: pf-step
-
-Suppose for contradiction that $h(x) \neq -x$ for all $x \in S^1$.
+By step [](#extension){.pf-ref} let $k\colon B^2\to S^1$ extend $u$. The composite $j\circ k\colon B^2\to B^2$ is continuous, so by Theorem 55.6, there is $x\in B^2$ with $(j\circ k)(x)=x$. Then $x=j(k(x))$ lies in $j(S^1)=S^1$, and on $S^1$ the map $k$ agrees with $u$, so $x=u(x)$.
+:::
 
 :::
 
-::: pf-step
+::: {.pf-step #antipode}
+Some $x\in S^1$ satisfies $h(x)=-x$.
 
-Then for all $x \in S^1$ and $t \in [0, 1]$, $(1-t)h(x) + tx \neq 0$.
-        (If $(1-t)h(x) = -tx$, taking norms gives $1-t = t \implies t = 1/2 \implies h(x) = -x$, a contradiction).
-
-:::
-
-::: pf-step
-
-Define the straight-line homotopy $K: S^1 \times [0, 1] \to S^1$ by:
-        $$K(x, t) = \frac{(1-t)h(x) + tx}{\norm{(1-t)h(x) + tx}}.$$
-
-:::
-
-::: pf-step
-
-$K$ is a continuous homotopy between $h$ and the identity map $\operatorname{id}_{S^1}$.
-
-:::
-
-::: pf-step
-
-Thus $\deg(h) = \deg(\operatorname{id}_{S^1}) = 1$, again strictly contradicting $\deg(h) = 0$.
-
-:::
-
-::: pf-step
-
-Thus there must exist $x_1 \in S^1$ such that $h(x_1) = -x_1$.
-
+::: pf-proof
+By step [](#extension){.pf-ref} the composite $\tau\circ h$ is nullhomotopic, so by step [](#fixed){.pf-ref} there is $x\in S^1$ with $(\tau\circ h)(x)=x$, that is $-h(x)=x$.
 :::
 
 :::
 
 :::
 
-:::
-
-    Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give the fixed point and the point sent to its antipode.
 :::

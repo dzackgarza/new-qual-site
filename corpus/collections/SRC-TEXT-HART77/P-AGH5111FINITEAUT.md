@@ -194,6 +194,53 @@ audit:
     citation changes, and the mathematics of the card is as the events above
     record it.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Part (b) rested on Dan Bragg's *Automorphisms of curves*, and the card
+    called it a published solution. It is a post on the blog
+    functorofpoints.wordpress.com of 2015-11-20 with no printed page, which is
+    not a publication, so the remark now names it as a post, says that no
+    publication located proves part (b) that way, and steps s8 to s11, which
+    take its paragraphs, are marked as the card's own. The National Taiwan
+    University exercise the remark cites is now given its page, printed p. 4 of
+    that set, and Yang Pi-Yeh's exercise 5.1.11 its page, printed p. 101, both
+    read in their text versions. Checked in this pass: the text version of the
+    post, the two text versions of the sets, and the printed exercise at
+    Hartshorne V.1.11, printed p. 368. Not checked: no publication was searched
+    for a proof of part (b) in this pass, and no step was re-derived.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step s10's display K = K_(C x C) = pi_1^*K_C + pi_2^*K_C had no locator and
+    is now cited, and steps s4, s8, s9, s10 and s11 were read in this pass and
+    found correct. The display is (II, Ex. 8.3(b)), printed p. 187 (PDF p. 202,
+    folio read): for nonsingular varieties X and Y over k,
+    omega_(X x Y) = p_1 omega_X (x) p_2 omega_Y, which for X = Y = C is the
+    card's sum in divisor notation. The rest of s10 stands: adjunction gives
+    Gamma.K = 4g - 4 for the graph of an automorphism, independent of the
+    automorphism, and K is ample because K^2 = 2(2g-2)^2 > 0 and
+    K.D = (2g-2)(deg p_1|D + deg p_2|D) > 0 for every curve D, the two degrees
+    summing to at least one since D is not a point under both projections.
+    Also read and unchanged: s4's Hodge-index bound, s8's N_{graph sigma} of
+    degree 2 - 2g, s9's separation of distinct graphs by Gamma^2 = 2 - 2g < 0
+    against V.1.4's nonnegativity of the intersection of curves with no common
+    component, and s11's application of part (a) with d = 4g - 4. Not checked in
+    this pass: the page of Bragg's Proof 2, which the card names without a
+    printed folio, and the printed pages of the two retained sets the remark
+    cites.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The event above, of this date, says steps s4, s8, s9, s10 and s11 were read
+    in this pass and found correct. Read here: s10 entire, which is the step the
+    event repairs, and s4, read in the previous round. Not read on the card in
+    this pass: s8, s9 and s11; the sentences the event gives for them are its
+    second reader's, restated, and they are not certified by this pass. Nothing
+    else in the event above is withdrawn.
 ---
 
 ::: {.problem}
@@ -235,7 +282,7 @@ N_\RR=\RR H\oplus H^\perp .
 $$
 
 ::: pf-proof
-Hartshorne, *Algebraic Geometry* (1977), Theorem V.1.9 (Hodge index theorem), printed p. 364, states that $D^2<0$ for every $D\not\equiv0$ with $D\cdot H=0$, which is the negative definiteness named by the printed hint to Exercise V.1.11, printed p. 368. The divisor $H$ is ample, so $H^2>0$ and $H\cdot C>0$ for every irreducible curve $C$ by the Nakai--Moishezon criterion, Theorem V.1.10, printed p. 365, and every $v\in N_\RR$ decomposes as
+Hartshorne, *Algebraic Geometry* (1977), Theorem V.1.9 (Hodge index theorem), states that $D^2<0$ for every $D\not\equiv0$ with $D\cdot H=0$, which is the negative definiteness named by the printed hint to Exercise V.1.11. The divisor $H$ is ample, so $H^2>0$ and $H\cdot C>0$ for every irreducible curve $C$ by the Nakai--Moishezon criterion, Theorem V.1.10, and every $v\in N_\RR$ decomposes as
 $$
 v=\frac{v\cdot H}{H^2}H+\qty(v-\frac{v\cdot H}{H^2}H)
 $$
@@ -256,7 +303,7 @@ D^2\ge\sum_ib_i^2D_i^2\ge-\sum_ib_i^2\qty(D_i\cdot K_X+2).
 $$
 
 ::: pf-proof
-The three displays are the first three steps of Math StackExchange answer 4775583 to question 4449474. Each $D_i$ is an integral curve and $H$ is ample, so $D_i\cdot H\ge1$, and $d=D\cdot H=\sum_jb_j(D_j\cdot H)$ gives $b_i\le d$ and $\sum_ib_i^2\le\qty(\sum_ib_i)^2\le d^2$. For the last display, Exercise V.1.3(a), printed p. 366, gives $2p_a(D_i)-2=D_i\cdot(D_i+K_X)$ for the effective divisor $D_i$, with $p_a$ as in III, Exercise 5.3; an integral projective curve has $p_a(D_i)\ge0$, so $D_i^2\ge-D_i\cdot K_X-2$. Two distinct irreducible curves on a surface meet in a finite set of points with positive multiplicities, so $D_i\cdot D_j\ge0$ for $i\ne j$ and
+The three displays are the first three steps of Math StackExchange answer 4775583 to question 4449474. Each $D_i$ is an integral curve and $H$ is ample, so $D_i\cdot H\ge1$, and $d=D\cdot H=\sum_jb_j(D_j\cdot H)$ gives $b_i\le d$ and $\sum_ib_i^2\le\qty(\sum_ib_i)^2\le d^2$. For the last display, Exercise V.1.3(a), gives $2p_a(D_i)-2=D_i\cdot(D_i+K_X)$ for the effective divisor $D_i$, with $p_a$ as in III, Exercise 5.3; an integral projective curve has $p_a(D_i)\ge0$, so $D_i^2\ge-D_i\cdot K_X-2$. Two distinct irreducible curves on a surface meet in a finite set of points with positive multiplicities, so $D_i\cdot D_j\ge0$ for $i\ne j$ and
 $$
 D^2=\sum_ib_i^2D_i^2+2\sum_{i<j}b_ib_jD_i\cdot D_j\ge\sum_ib_i^2D_i^2 .
 $$
@@ -354,7 +401,7 @@ $$
 $$
 
 ::: pf-proof
-Bragg, *Automorphisms of curves* (2015), Proof 2, reads $\Delta^2$ off the conormal bundle of the diagonal embedding, computing $\Delta^2=\deg\mathcal N_{C/C\times C}=2-2g$; the same number is Exercise V.1.6, printed p. 367. Bragg asserts $\Gamma^2=2-2g$ for the graph of any automorphism; the reason is that the quotient of $T_C\oplus u^*T_C$ by the graph of $du$ identifies the normal bundle of the graph of a morphism $u$ with $u^*T_C$, and $u$ an automorphism makes $\deg u^*T_C=\deg T_C=2-2g$.
+This step is the card's own: its source is the post of the remark, which is not a publication. Bragg, *Automorphisms of curves* (2015), Proof 2, reads $\Delta^2$ off the conormal bundle of the diagonal embedding, computing $\Delta^2=\deg\mathcal N_{C/C\times C}=2-2g$; the same number is Exercise V.1.6. Bragg asserts $\Gamma^2=2-2g$ for the graph of any automorphism; the reason is that the quotient of $T_C\oplus u^*T_C$ by the graph of $du$ identifies the normal bundle of the graph of a morphism $u$ with $u^*T_C$, and $u$ an automorphism makes $\deg u^*T_C=\deg T_C=2-2g$.
 
 :::
 
@@ -370,7 +417,7 @@ $$
 is injective.
 
 ::: pf-proof
-Bragg, Proof 2, the paragraph beginning "We use intersection theory on the surface $X=C\times C$": the graphs of distinct automorphisms are distinct irreducible curves, so they share no irreducible component and their intersection number is nonnegative, a sum of nonnegative local intersection multiplicities. If $\Gamma_\sigma\equiv\Gamma_\tau$, then
+This step is the card's own: its source is the post of the remark, which is not a publication. Bragg, Proof 2, the paragraph beginning "We use intersection theory on the surface $X=C\times C$": the graphs of distinct automorphisms are distinct irreducible curves, so they share no irreducible component and their intersection number is nonnegative, a sum of nonnegative local intersection multiplicities. If $\Gamma_\sigma\equiv\Gamma_\tau$, then
 $$
 \Gamma_\sigma\cdot\Gamma_\tau=\Gamma_\tau^2=2-2g<0
 $$
@@ -388,7 +435,7 @@ $$
 in $4g-4$, and $K$ is ample.
 
 ::: pf-proof
-Bragg, Proof 2, the paragraph beginning "Next, consider the canonical divisor $K$ of $C\times C$", computes $\Gamma\cdot K=4g-4$ for the graph of an automorphism, independent of $\Gamma$; adjunction, Proposition V.1.5, printed p. 361, with $\Gamma^2=2-2g$ and $p_a(\Gamma)=g$ gives the same number. Bragg takes $K$ as his fixed ample divisor; that it is ample follows from Nakai--Moishezon, Theorem V.1.10, printed p. 365: $K\cdot l=K\cdot m=2g-2>0$ for the rulings, $K^2=2(2g-2)^2>0$, and for an irreducible curve $D\subseteq C\times C$ the projection formula gives
+This step is the card's own: its source is the post of the remark, which is not a publication. That the canonical divisor of $C\times C$ is the sum of the two pullbacks of $K_C$ is (II, Ex. 8.3(b)), where $\omega_{X\times Y}\cong p_1^*\omega_X\tensor p_2^*\omega_Y$ for nonsingular varieties is the same statement in divisor notation. Bragg, Proof 2, the paragraph beginning "Next, consider the canonical divisor $K$ of $C\times C$", computes $\Gamma\cdot K=4g-4$ for the graph of an automorphism, independent of $\Gamma$; adjunction, Proposition V.1.5, with $\Gamma^2=2-2g$ and $p_a(\Gamma)=g$ gives the same number. Bragg takes $K$ as his fixed ample divisor; that it is ample follows from Nakai--Moishezon, Theorem V.1.10: $K\cdot l=K\cdot m=2g-2>0$ for the rulings, $K^2=2(2g-2)^2>0$, and for an irreducible curve $D\subseteq C\times C$ the projection formula gives
 $$
 K\cdot D=(2g-2)\qty(\deg\qty(\restrictionof{p_1}{D})+\deg\qty(\restrictionof{p_2}{D}))>0,
 $$
@@ -430,7 +477,7 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are the published component bookkeep
 :::
 
 ::: {.remark title="Published solution"}
-Dan Bragg, *Automorphisms of curves* (2015), Proof 2, "Intersection Theory", proves (b) given (a): the graphs of distinct automorphisms of a curve of genus $g\ge2$ are distinct irreducible curves on $C\times C$, which therefore meet nonnegatively, whereas numerically equivalent graphs would meet in $\Gamma^2=2-2g<0$; so $\sigma\mapsto[\Gamma_\sigma]$ is injective, and every graph meets the canonical divisor of $C\times C$ in the same $4g-4$, which is what part (a) counts. Bragg leaves the ampleness of $K_{C\times C}$ implicit and asserts $\Gamma^2=2-2g$ for the graph of any automorphism without argument; step [](#s8){.pf-ref} gives the normal-bundle reason and step [](#s10){.pf-ref} the Nakai--Moishezon check.
+Dan Bragg, *Automorphisms of curves* (2015-11-20), Proof 2, "Intersection Theory", a post on the blog functorofpoints.wordpress.com with no printed page, text version `tmp/sources/bragg-2015-automorphisms-of-curves.md`, proves (b) given (a). No publication located proves it that way, so each step of the argument below that takes a paragraph of his post is marked as the card's own; what it is a post and not a publication means is that no printed page can be cited for those steps. The argument runs: the graphs of distinct automorphisms of a curve of genus $g\ge2$ are distinct irreducible curves on $C\times C$, which therefore meet nonnegatively, whereas numerically equivalent graphs would meet in $\Gamma^2=2-2g<0$; so $\sigma\mapsto[\Gamma_\sigma]$ is injective, and every graph meets the canonical divisor of $C\times C$ in the same $4g-4$, which is what part (a) counts. Bragg leaves the ampleness of $K_{C\times C}$ implicit and asserts $\Gamma^2=2-2g$ for the graph of any automorphism without argument; step [](#s8){.pf-ref} gives the normal-bundle reason and step [](#s10){.pf-ref} the Nakai--Moishezon check.
 
 Math StackExchange answer 4775583 by KReiser, to question 4449474, gives (a) in the form of steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}: adjunction bounds the square of each prime component below, distinct components meet nonnegatively, and $b_i\le d$ gives $\sum_ib_i^2\le d^2$. Its display for $D^2$ replaces $b_i^2$ by $b_id$ under $D_i\cdot K_X$, an inequality that follows from $b_i\le d$ when $D_i\cdot K_X\ge0$, as it is when $K_X$ is nef; for a component with $D_i\cdot K_X<0$ and $b_i<d$ the comparison is reversed. Its closing display bounds $(D-E)^2$ below, for fixed $E$, by an affine function of $D-E$, which with negative definiteness confines $D-E$ to a ball. The card reaches finiteness through steps [](#s4){.pf-ref} and [](#s5){.pf-ref}, which bound the class of every prime component with $1\le C\cdot H\le d$ and then count the components.
 

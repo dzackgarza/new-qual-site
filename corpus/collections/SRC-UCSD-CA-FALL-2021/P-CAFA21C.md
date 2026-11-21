@@ -14,6 +14,27 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained exam assets/attachments/FA21-Complex.pdf, PDF p. 4,
+    Problem 3: the equation f(z)^2 + a(z) f(z) + b(z) = 0 and the two parts,
+    finite order and polynomials, agree with the card.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Both parts are correct. The pointwise bound is obtained by splitting at
+    |f(z)| = 1: below it the constant 1 dominates, and above it dividing the
+    inequality |f(z)|^2 at most |a(z)||f(z)| + |b(z)| by |f(z)| gives |f(z)| at
+    most |a(z)| + |b(z)|. For (i), orders bounded by rho give |a| and |b| at
+    most exp(r^(rho+eps)) outside some radius, hence |f| at most
+    3 exp(r^(rho+eps)), so the order of f is at most rho + eps for every eps.
+    For (ii), polynomial growth |f(z)| at most (2C+1)|z|^d outside a radius,
+    and Cauchy's estimate on |z| = r for f^(k)(0) with k > d, tends to zero as r
+    grows, so all Taylor coefficients beyond degree d vanish. Nothing was
+    changed.
 ---
 
 ::: {.problem}

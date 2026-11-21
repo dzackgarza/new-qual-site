@@ -5,7 +5,9 @@ kind: problem
 title: Dimension of the annihilator of a subspace
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Annihilators
+  - Dual Spaces
 relations: []
 review: draft
 audit:

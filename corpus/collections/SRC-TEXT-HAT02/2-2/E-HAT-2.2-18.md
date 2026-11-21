@@ -68,7 +68,7 @@ $$
 
 ::: pf-proof
 
-The cellular chain group $H_n(X^n,X^{n-1})$ is free on the $n$-cells of $X$ by Lemma 2.34(a) (p. 137), and $H_n(A^n,A^{n-1})$ is free on the subset of $n$-cells in $A$. Their quotient is free on the $n$-cells of $X$ outside $A$. The characteristic maps of these remaining cells give the same basis for $H_n(X^n,X^{n-1}\cup A^n)$: collapsing the subcomplex $X^{n-1}\cup A^n$ gives a wedge of one $n$-sphere per $n$-cell of $X$ outside $A$, the pair is good, so Proposition 2.22 (p. 124) identifies the relative group with the reduced homology of that wedge, which is free on those spheres by Corollary 2.25 (p. 126). This includes degree zero: the group is free on the vertices of $X$ outside $A$.
+The cellular chain group $H_n(X^n,X^{n-1})$ is free on the $n$-cells of $X$ by Lemma 2.34(a), and $H_n(A^n,A^{n-1})$ is free on the subset of $n$-cells in $A$. Their quotient is free on the $n$-cells of $X$ outside $A$. The characteristic maps of these remaining cells give the same basis for $H_n(X^n,X^{n-1}\cup A^n)$: collapsing the subcomplex $X^{n-1}\cup A^n$ gives a wedge of one $n$-sphere per $n$-cell of $X$ outside $A$, the pair is good, so Proposition 2.22 identifies the relative group with the reduced homology of that wedge, which is free on those spheres by Corollary 2.25. This includes degree zero: the group is free on the vertices of $X$ outside $A$.
 
 :::
 
@@ -84,7 +84,7 @@ Because $A$ is a subcomplex, its cellular differential is the restriction of tha
 $$
 0\to C_*^{CW}(A)\to C_*^{CW}(X)\to C_*^{CW}(X,A)\to0
 $$
-gives a long exact sequence in homology by Theorem 2.16 (p. 117). Theorem 2.35 (p. 139) identifies $H_n(C_*^{CW}(A))$ and $H_n(C_*^{CW}(X))$ with $H_n(A)$ and $H_n(X)$, and the comparison of that sequence with the long exact sequence of the pair $(X,A)$ is natural in the sense of p. 127, so the connecting maps agree by their chain-level definitions (p. 115). The five lemma, stated without a number on p. 129, therefore identifies the remaining terms:
+gives a long exact sequence in homology by Theorem 2.16. Theorem 2.35 identifies $H_n(C_*^{CW}(A))$ and $H_n(C_*^{CW}(X))$ with $H_n(A)$ and $H_n(X)$, and the comparison of that sequence with the long exact sequence of the pair $(X,A)$ is natural in the sense of the subsection on naturality, so the connecting maps agree by their chain-level definitions in §2.2. The five lemma, which §2.2 states without a number, therefore identifies the remaining terms:
 $$
 \boxed{H_n(C_*^{CW}(X,A))\cong H_n(X,A).}
 $$

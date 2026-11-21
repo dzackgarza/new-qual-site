@@ -7,6 +7,12 @@ order: 80
 
 ## Problems
 
-- MIT representation theory: [problems for discussion](https://www.mit.edu/~fengt/RepTheory.pdf), [combined problem file](https://www.mit.edu/~fengt/RepTheoryProblems.pdf), and [hints and solutions](https://www.mit.edu/~fengt/RepTheorySolns.pdf).
+The representation-theory problems of the compiled preliminary examinations are listed, in source order with their exam locations, in
 
-- Additional MIT qual problems: Fall 2012 A9, Fall 2014 B3, Spring 2014 M1, Spring 2015 Q1, Spring 2015 A4, Fall 2015 Q9, Fall 2016 A7.
+- [[SRC-ART-ALG-2010-2015-PRELIMS]]
+
+- [[SRC-ART-ALG-2003-2009-PRELIMS]]
+
+## The statements of the chapter
+
+The statements used in this chapter are on [[algebra/representations/index|Representations]]: Maschke's theorem, Schur's lemma, the orthogonality relations, and the construction of a character table.

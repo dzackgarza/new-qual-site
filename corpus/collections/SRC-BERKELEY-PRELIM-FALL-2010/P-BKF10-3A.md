@@ -11,6 +11,19 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance repaired, the defect this date's COMPLAINTS screen recorded ("opens with the step
+    statement"). The solution now opens with the provenance paragraph the convention asks for, naming
+    the retained packet: Problem 3A of `assets/attachments/f10solutions.pdf`, printed p. 2 of that
+    file, read in its text layer in this pass. The card's four steps are that solution's three --- the
+    Laurent coefficient formula on the circle of radius $r$, the estimate $\abs{c_j}\le Mr^{-j}$ from
+    $\abs{f}\le M$, and the passage $r\to0^+$ --- with the hypotheses written out; the problem
+    statement is the packet's Problem 3A. Checked: the packet read at its pp. 1--2, both the statement
+    and the solution; `qualc.authoring check`; the Lamport filter, five numbered steps with QED
+    present. Not checked: no other card of this collection was read in this pass.
+- event: source-checked
   by: chatgpt
   date: 2026-09-12
   note: Checked against Problem 3A of the retained Berkeley Fall 2010 preliminary-exam solution packet f10solutions.pdf.
@@ -36,6 +49,8 @@ Show that if $j<0$, then $c_j=0$.
 :::
 
 ::: {.solution}
+
+The argument is Problem 3A of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed p. 2 of that file, transcribed: the Laurent coefficient formula on the circle $\abs{z}=r$, the maximum estimate $\abs{c_j}\le Mr^{-j}$ it draws from $\abs{f}\le M$, and the passage $r\to0^+$ that kills the coefficients with $j<0$ are that solution's three steps. What the card adds is the step structure and the hypotheses written out --- that $M$ exists by boundedness, and that the circle $\abs{z}=r$ lies in the annulus of analyticity for every $0<r<\varepsilon$ --- not the argument.
 
 ::: pf
 

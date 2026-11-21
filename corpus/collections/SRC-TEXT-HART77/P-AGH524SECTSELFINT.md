@@ -32,6 +32,28 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 5.2.4, printed p. 102,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.2.4, whose printed page the card's earlier events
+    record; this pass did not reopen it, and the comparison is against the
+    statement the card carries. Recomputed
+    K = -2C + (2g-2)f, the section D = C + r f with D^2 = 2r by
+    adjunction, and the correspondence between sections and morphisms
+    C -> P^1. Not checked: Yang's Solutions outside printed pp. 100-107; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.2.4 at printed
+    p. 102 beside Egbert's entry, with the slips its text carries.
+    No step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -405,5 +427,9 @@ part (b).
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.4, PDF pp. 262--263. For (a), on PDF p. 262 he computes $D^2$ for $D\sim C_0+(d-e)f$ by adjunction with $K\equiv-2C_0+(2g-2-e)f$, and specializes to $C\times\PP^1$ with $e=0$, getting $D^2=2d$; the intermediate line $-2C_0^2=-2e$ silently uses $C_0^2=e$, whereas (2.9) gives $C_0^2=-e$, so his displayed $D^2=2d+e$ is wrong for $e\neq0$; on $C\times\PP^1$, where $e=0$, the conclusion $D^2=2d$ is right. For (b), on PDF p. 263 he argues that a hyperelliptic curve has a $g^1_2$ and so a degree-two map, that the nonhyperelliptic genus-three curve has a $g^1_3$ obtained by projecting its degree-four plane model from a point, and that $r=1$ is impossible because a degree-one map to $\PP^1$ would be an isomorphism with different genera. Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} replace the adjunction count by $D^2=\deg u^*T_{\PP^1}=2\deg u$, which needs no sign convention; steps [](#s9){.pf-ref} and [](#s11){.pf-ref} prove the two nonexistence statements he asserts. Matches.
+The exercise is V.2.4 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is its text, the preliminary "show that $s$ is always an even integer" included.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.4. For (a), on PDF p. 262 he computes $D^2$ for $D\sim C_0+(d-e)f$ by adjunction with $K\equiv-2C_0+(2g-2-e)f$, and specializes to $C\times\PP^1$ with $e=0$, getting $D^2=2d$; the intermediate line $-2C_0^2=-2e$ silently uses $C_0^2=e$, whereas (2.9) gives $C_0^2=-e$, so his displayed $D^2=2d+e$ is wrong for $e\neq0$; on $C\times\PP^1$, where $e=0$, the conclusion $D^2=2d$ is right. For (b), on PDF p. 263 he argues that a hyperelliptic curve has a $g^1_2$ and so a degree-two map, that the nonhyperelliptic genus-three curve has a $g^1_3$ obtained by projecting its degree-four plane model from a point, and that $r=1$ is impossible because a degree-one map to $\PP^1$ would be an isomorphism with different genera. Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} replace the adjunction count by $D^2=\deg u^*T_{\PP^1}=2\deg u$, which needs no sign convention; steps [](#s9){.pf-ref} and [](#s11){.pf-ref} prove the two nonexistence statements he asserts. Matches.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.2.4, has (a) by adjunction: $e=0$ and $C_0=C$ by (2.11.1), so $K\sim_{\mathrm{num}}-2C+(2g-2)f$; a section is $D=C+rf$, and $D^2=2g-2-D\cdot K=2r$, which is the parity statement. $r=0$ is $D=C$, and for $d\ge g+1$ the base-point-free nonspecial divisor of (IV, Ex. 6.8) gives $D=C+Ef$ with $D^2=2r$. Its (b): a section $D\sim_{\mathrm{num}}C+bf$ composes $C\to D\to\PP^1$ to a morphism of degree $b$, and conversely the graph of a morphism $g:C\to\PP^1$ of degree $d$ is a section $C+df$, so the possible $r$ are the possible degrees of morphisms $C\to\PP^1$. Two slips in it: "Since $g(C)=1$" carries the wrong genus — the exclusion of $r=1$ is that a degree-one map to $\PP^1$ would make $C$ rational — and its parenthetical doubts whether both $r=2$ and $r=3$ can occur at $g=3$, whereas exactly one does, the hyperelliptic and the plane-quartic cases.
 :::

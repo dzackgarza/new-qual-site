@@ -6,7 +6,9 @@ title: Invertibility of a small perturbation of the identity
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Invertibility
+  - Matrix Norms
 relations: []
 review: draft
 audit:

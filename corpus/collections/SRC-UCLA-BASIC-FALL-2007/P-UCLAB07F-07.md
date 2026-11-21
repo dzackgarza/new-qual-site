@@ -5,7 +5,9 @@ kind: problem
 title: Derivative of a matrix inverse
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Matrix Inverses
+  - Differentiation
 relations: []
 review: draft
 audit:

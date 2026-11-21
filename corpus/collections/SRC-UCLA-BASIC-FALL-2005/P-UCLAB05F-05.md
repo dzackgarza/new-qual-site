@@ -5,7 +5,9 @@ kind: problem
 title: The plane is not a countable union of straight-line subsets
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Baire Category Theorem
+  - Uncountable Sets
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Existence and uniqueness for $f(x)=1-\bigl(\int_0^x tf(t)\,dt\bigr)^2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integral Equations
+  - Banach Fixed Point Theorem
 relations: []
 review: draft
 audit:

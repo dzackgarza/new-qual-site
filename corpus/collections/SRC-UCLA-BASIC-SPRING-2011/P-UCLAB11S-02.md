@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB11S-02
 kind: problem
 title: Powers of a diagonalizable invertible matrix
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Diagonalization]}
 relations: []
 review: draft
 audit:

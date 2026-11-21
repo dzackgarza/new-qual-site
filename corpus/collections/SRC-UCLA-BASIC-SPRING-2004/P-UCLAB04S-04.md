@@ -5,7 +5,9 @@ kind: problem
 title: Infinite compact subsets of the rational numbers
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Compactness
+  - Rational Numbers
 relations: []
 review: draft
 audit:

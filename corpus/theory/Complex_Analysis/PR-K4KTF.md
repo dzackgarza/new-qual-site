@@ -20,4 +20,6 @@ The extension satisfies the functional equation
 $$
 \zeta(s) = \pi^{s-1/2}\,\frac{\Gamma\qty{\frac{1-s}{2}}}{\Gamma\qty{\frac{s}{2}}}\,\zeta(1-s).
 $$
+
+The continuation is [@SS03, ch. 6, Theorem 2.4]. The functional equation is the symmetry $\xi(s)=\xi(1-s)$ of [@SS03, ch. 6, Theorem 2.3] read through $\xi(s)=\pi^{-s/2}\Gamma\qty{s/2}\zeta(s)$, which is the $\xi$ of that section: substituting $\xi(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s)$ and its value at $1-s$ and solving for $\zeta(s)$ gives the display above.
 :::

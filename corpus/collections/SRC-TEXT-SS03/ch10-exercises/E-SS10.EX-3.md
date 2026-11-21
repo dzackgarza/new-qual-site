@@ -15,6 +15,19 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed against the exercise as printed, and the proof covers the general statement rather than a
+    special case. I recomputed the generating function: from U - u_0 - u_1 x = a x (U - u_0) + b x^2 U
+    one gets U (1 - a x - b x^2) = u_0 + (u_1 - a u_0) x, and 1 - a x - b x^2 = (1 - alpha x)(1 - beta x)
+    exactly when alpha + beta = a and alpha beta = -b, that is when alpha, beta are the roots of
+    t^2 - a t - b. The card states both cases: distinct roots give u_n = A alpha^n + B beta^n, and the
+    repeated root gives u_n = (A + B(n+1)) alpha^n, which is right because 1/(1 - alpha x)^2 has
+    coefficients (n+1) alpha^n. Checked that the repeated-root case, which the book's displayed
+    decomposition into A/(1 - alpha x) + B/(1 - beta x) does not cover, is the one the card adds, and
+    that the initial values are not assumed special.
 ---
 
 ::: {.exercise}

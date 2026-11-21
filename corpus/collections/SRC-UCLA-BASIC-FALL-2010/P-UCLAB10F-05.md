@@ -6,7 +6,9 @@ title: Span of intersections and unions
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Span
+  - Subspaces
 relations: []
 review: draft
 audit:

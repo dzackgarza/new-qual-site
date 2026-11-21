@@ -6,7 +6,9 @@ title: Unique continuous solution of a scalar integral equation
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integral Equations
+  - Fixed Point Theorems
 relations: []
 review: draft
 audit:

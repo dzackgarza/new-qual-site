@@ -5,7 +5,9 @@ kind: problem
 title: Transpose, annihilator of the image, and equality of ranks
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Dual Spaces
+  - Rank and Nullity
 relations: []
 review: draft
 audit:

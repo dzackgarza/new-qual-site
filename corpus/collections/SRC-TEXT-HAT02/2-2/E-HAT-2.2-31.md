@@ -72,7 +72,7 @@ $$
 
 ::: pf-proof
 
-Retract $V$ to the wedge point while fixing $X$, and similarly retract $U$ while fixing $Y$. Since both $U$ and $V$ retract to the common basepoint, their union $U\cup V$ is contractible. Each of these inclusions is a homotopy equivalence, and so induces isomorphisms on homology in every degree by Corollary 2.11 (p. 111).
+Retract $V$ to the wedge point while fixing $X$, and similarly retract $U$ while fixing $Y$. Since both $U$ and $V$ retract to the common basepoint, their union $U\cup V$ is contractible. Each of these inclusions is a homotopy equivalence, and so induces isomorphisms on homology in every degree by Corollary 2.11.
 
 :::
 
@@ -88,7 +88,7 @@ for every $n$.
 
 ::: pf-proof
 
-The reduced Mayer--Vietoris sequence, the reduced form of the sequence in the subsection beginning on p. 149 and set out on p. 150, contains
+The reduced Mayer--Vietoris sequence, the reduced form of the sequence in the subsection on Mayer--Vietoris sequences in §2.2, contains
 $$
 \widetilde H_n(A\cap B)
 \longrightarrow

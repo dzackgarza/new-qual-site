@@ -6,7 +6,8 @@ title: Connectedness from a connected union and intersection
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Connectedness
 relations: []
 review: draft
 audit:

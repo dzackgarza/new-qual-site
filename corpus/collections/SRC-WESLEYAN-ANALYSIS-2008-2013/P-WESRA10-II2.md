@@ -5,7 +5,9 @@ kind: problem
 title: 'Rational translation invariance extends to all real translations'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Translation Invariance
+  - Lebesgue Measure
 relations: []
 review: draft
 audit:

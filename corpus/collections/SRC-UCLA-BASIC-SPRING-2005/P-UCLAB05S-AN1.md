@@ -5,7 +5,9 @@ kind: problem
 title: Algebraic subsets of the real line defined by rational polynomials
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Polynomials
+  - Countable and Uncountable Sets
 relations: []
 review: draft
 audit:

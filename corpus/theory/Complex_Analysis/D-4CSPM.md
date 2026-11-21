@@ -24,6 +24,8 @@ For $\alpha\in\CC$, the \dfn{principal branch of $z^\alpha$} is the function on 
 $$
 z^{\alpha}\coloneqq e^{\alpha\Log(z)}.
 $$
+
+This is [@SS03, ch. 3, §6, The complex logarithm], which on the same slit plane states that the principal branch is $\log z=\log r+i\theta$ with $z=re^{i\theta}$ and $\abs{\theta}<\pi$.
 :::
 
 ::: {.remark title="Variations"}

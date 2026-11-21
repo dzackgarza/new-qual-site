@@ -47,22 +47,42 @@ Under what conditions does a metrizable space have a metrizable compactification
 :::
 
 ::: {.solution}
-A metrizable space $X$ has a metrizable compactification if and only if it is second countable. For metrizable spaces this is equivalent to separability.
 
-Suppose first that $X$ is dense in a compact metrizable space $Y$. Every compact metrizable space is second countable, and every subspace of a second-countable space is second countable. Hence $X$ is second countable.
+No retained solution set covers this exercise: the card's own characterisation follows, with each direction a step.
 
-Conversely, suppose $X$ is metrizable and second countable. A metrizable space is regular, so by the Urysohn metrization/embedding theorem in its standard embedding form, a second-countable regular space admits a topological embedding
-$$
-e:X\hookrightarrow [0,1]^{\ZZ_+}.
-$$
-The Hilbert cube $[0,1]^{\ZZ_+}$ is compact metrizable. Therefore
-$$
-Y=\overline{e(X)}
-$$
-is a closed subspace of a compact metrizable space, hence is itself compact metrizable, and $e(X)$ is dense in $Y$. Thus $Y$ is a metrizable compactification of $X$.
+::: pf
 
-Hence
-$$
-\boxed{X\text{ metrizable has a metrizable compactification}\iff X\text{ is second countable}.}
-$$
+::: {.pf-step #necessity}
+If a metrizable space $X$ is dense in a compact metrizable space $Y$, then $X$ is second countable.
+
+::: pf-proof
+A compact metrizable space is second countable, and a subspace of a second-countable space is second countable (Theorem 30.2). So $Y$ is second countable and $X$, a subspace of $Y$, is too.
+:::
+
+:::
+
+::: {.pf-step #sufficiency}
+If $X$ is metrizable and second countable, then $X$ has a metrizable compactification.
+
+::: pf-proof
+A metrizable space is normal (Theorem 32.2), hence regular. By the Urysohn metrization theorem with its imbedding proof (Theorems 34.1 and 34.2) a second-countable regular space admits an imbedding $e:X\to[0,1]^{\ZZ_{+}}$ into the Hilbert cube. The Hilbert cube is a countable product of compact metrizable spaces, hence compact (Theorem 37.3, Tychonoff) and metrizable (Theorem 20.5, applied coordinatewise); put $Y=\overline{e(X)}$. A closed subspace of a compact space is compact (Theorem 26.2) and a subspace of a metrizable space is metrizable, so $Y$ is compact metrizable, and $e(X)$ is dense in $Y$ by construction. Then $e:X\to Y$ is an imbedding with dense image, so $Y$ is a metrizable compactification of $X$.
+:::
+
+:::
+
+::: {.pf-step #separable}
+For metrizable spaces, second countable is the same as separable.
+
+::: pf-proof
+A second-countable space has a countable dense subset (Theorem 30.3(a)), and a separable metrizable space has a countable basis (Exercise 30.5(a)).
+:::
+
+:::
+
+::: {.pf-qed}
+A metrizable space has a metrizable compactification exactly when it is second countable (steps [](#necessity){.pf-ref} and [](#sufficiency){.pf-ref}), and for metrizable spaces this is the same as being separable (step [](#separable){.pf-ref}).
+:::
+
+:::
+
 :::

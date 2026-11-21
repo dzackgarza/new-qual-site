@@ -20,6 +20,8 @@ $$
 f\colon\theset{z\st\abs{z}<1,\ \Im z>0}\to\theset{w\st\Re w>0,\ \Im w>0},\qquad f(z)=\frac{1+z}{1-z},
 $$
 is a [[D-TM4TE|biholomorphism]] from the upper half-disc onto the first quadrant, with inverse $f^{-1}(w)=\frac{w-1}{w+1}$.
+
+The map is that of [@Ahl73, ch. 3, §4.1, The Use of Level Curves], where $(\zeta-1)/(\zeta+1)$ carries $\Re\zeta>0$ onto $\abs w<1$; read in the other direction and with a rotation of $\DD$ by $\pi$, it is the correspondence $\DD\to\HH_R$ of [[PR-TWG7E]]. Restricted to the upper half-disc it has image the first quadrant: the upper half of $\DD$ has image in $\Im w>0$ because the map is real on the real axis, and the diameter maps onto the real axis.
 :::
 
 ::: {.remark}

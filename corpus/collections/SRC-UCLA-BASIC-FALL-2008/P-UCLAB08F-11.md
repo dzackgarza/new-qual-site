@@ -6,7 +6,9 @@ title: Periodic finite-difference Poisson matrix solvability
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Systems
+  - Matrix Decompositions
 relations: []
 review: draft
 audit:

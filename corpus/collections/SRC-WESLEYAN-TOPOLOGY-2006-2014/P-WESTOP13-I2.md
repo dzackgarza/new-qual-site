@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP13-I2
 kind: problem
 title: Compact finer topologies and a noncompact mixed product of $K$- and lower-limit intervals
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Compactness, Order Topology]}
 relations: []
 review: draft
 audit:

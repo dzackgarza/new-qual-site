@@ -5,7 +5,9 @@ kind: problem
 title: Completing the eigendata of a symmetric three-by-three matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Symmetric Matrices
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

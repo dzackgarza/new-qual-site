@@ -6,7 +6,9 @@ title: A nonconstant entire function has dense image
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Entire Functions
+  - Density
 relations: []
 review: draft
 audit:

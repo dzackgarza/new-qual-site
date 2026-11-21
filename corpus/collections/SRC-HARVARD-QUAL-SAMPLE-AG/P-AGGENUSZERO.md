@@ -31,6 +31,8 @@ If the base field is finite, can the second case occur?
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination paper alone, so the argument is the card's own.
 Let $C$ be a smooth projective geometrically integral curve of genus $0$ over a field $k$.
 
 ::: pf

@@ -56,6 +56,47 @@ audit:
     recorded here and in the COMPLAINTS.md entry for §43--§50 as located with its formulas
     unreadable, the site answering an automated request with a Cloudflare human check, which is not
     worked around. The card keeps its own proof.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof. The five containers keep their nested steps and now say why those
+    subclaims suffice, and the 20 leaf steps that asserted a claim with no justification each carry a
+    sentence deriving it. The mathematics is unchanged: the three properties of the relation, the
+    quadrilateral bound giving convergence of d(x_n,y_n), independence of representatives, the metric
+    axioms by passage to the limit, the computation D(h(x),h(y))=d(x,y), openness of h on balls,
+    D(h(x_k),[x]) equal to lim d(x_k,x_n) and at most eps, the 1/k approximation in the dense subset, and
+    the application of part (d) to h(X). Checked against Munkres, Topology (2000), section 43 Exercise 9,
+    printed p. 271. The trailing Q.E.D. sentence was dropped from the last step because the filter
+    labels that step itself. Nothing in the statement was changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read, all five parts. (a) is correct: the quadrilateral bound gives both the
+    convergence of $d(x_n,y_n)$ in $\RR$ and its independence of the representatives, and the
+    metric axioms pass to the limit. (b): $D(h(x),h(y))=d(x,y)$ on constant sequences, so $h$ is
+    injective and carries balls to traces of balls. (c): $D(h(x_k),[\mathbf x])=\lim_nd(x_k,x_n)$,
+    which the Cauchy condition bounds by $\varepsilon$ for $k\ge N$. (d) is correct, the
+    approximating sequence $a_k$ being Cauchy in $A$ and converging in $Z$. (e) applies (d) to
+    $A=h(X)$: a Cauchy sequence in $h(X)$ is the image of a Cauchy sequence of $X$ and converges
+    to its class by (c). No numbered theorem is cited beyond the completeness of $\RR$ in (a). The
+    solution had no provenance sentence; one now says the construction is the exercise's own
+    outline carried out. Citation by number: §43 Exercise 9, read in
+    `tmp/sources/munkres-2000-topology.md`.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 second read, on the verification member's report of this card. The last step of
+    part (c) drew membership of $h(x_k)$ in the open ball of radius $\varepsilon$ about
+    $[\mathbf x]$ from the bound $D\le\varepsilon$, and an open ball asks for strict inequality.
+    The Cauchy condition is now run at $\varepsilon/2$, so the limit satisfies
+    $D(h(x_k),[\mathbf x])\le\varepsilon/2<\varepsilon$. Convergence and density stand. Not
+    changed: the five part headings read as labels rather than claims; each of their proofs
+    carries the corresponding assertions.
+
 ---
 
 ::: {.exercise}
@@ -101,26 +142,44 @@ Show that $h$ is an isometric imbedding.
 
 ::: {.solution}
 
+The construction is the exercise's outline carried out step by step; the argument is the card's own, and the audit records what was searched.
+
 ::: pf
 
 ::: pf-step
 Part (a): Equivalence relation and well-defined metric $D$.
 
 ::: pf-proof
+The subclaims establish the three properties of $\sim$, the existence of the limit that defines $D$, its independence of the chosen representatives, and the three metric axioms.
 
 ::: pf-step
 **Equivalence relation:**
 - Reflexivity: $d(x_n, x_n) = 0 \to 0$.
 - Symmetry: $d(x_n, y_n) = d(y_n, x_n) \to 0$.
 - Transitivity: $d(x_n, z_n) \le d(x_n, y_n) + d(y_n, z_n) \to 0 + 0 = 0$.
+
+::: pf-proof
+Reflexivity and symmetry are the two displayed identities, and the symmetry of $d$ gives the second. For transitivity, the triangle inequality in $X$ gives the displayed bound, and a sum of two sequences tending to $0$ tends to $0$; so $d(x_n,z_n)\to0$ and $\mathbf{x}\sim\mathbf{z}$.
+:::
+
 :::
 
 ::: pf-step
 **Limit existence in $\RR$:** For Cauchy sequences $\mathbf{x}, \mathbf{y}$, the triangle inequality gives $\abs{d(x_n, y_n) - d(x_m, y_m)} \le d(x_n, x_m) + d(y_n, y_m) \to 0$. Thus $(d(x_n, y_n))_{n=1}^\infty$ is a Cauchy sequence in $\RR$, hence converges to a unique real limit.
+
+::: pf-proof
+The displayed inequality is the quadrilateral bound: $d(x_n,y_n)\le d(x_n,x_m)+d(x_m,y_m)+d(y_m,y_n)$ and the same with $n$ and $m$ exchanged. Given $\varepsilon>0$, the Cauchy property of $\mathbf x$ and of $\mathbf y$ supplies $N$ with $d(x_n,x_m)<\varepsilon/2$ and $d(y_n,y_m)<\varepsilon/2$ for $n,m\ge N$, so the left side is less than $\varepsilon$ and the real sequence is Cauchy. The real line is complete, so the sequence has a limit, and limits of real sequences are unique.
+:::
+
 :::
 
 ::: pf-step
 **Independence of representatives:** If $\mathbf{x} \sim \mathbf{x}'$ and $\mathbf{y} \sim \mathbf{y}'$, then $\abs{d(x_n, y_n) - d(x'_n, y'_n)} \le d(x_n, x'_n) + d(y_n, y'_n) \to 0$, so $\lim d(x_n, y_n) = \lim d(x'_n, y'_n)$.
+
+::: pf-proof
+The bound is again the quadrilateral inequality, through $x'_n$ and $y'_n$. Its right side tends to $0$ by the two equivalences, so the two real sequences differ by a null sequence; two convergent sequences that differ by a null sequence have the same limit.
+:::
+
 :::
 
 ::: pf-step
@@ -128,6 +187,11 @@ Part (a): Equivalence relation and well-defined metric $D$.
 - $D([\mathbf{x}], [\mathbf{y}]) \ge 0$ and $D([\mathbf{x}], [\mathbf{y}]) = 0 \iff \lim d(x_n, y_n) = 0 \iff \mathbf{x} \sim \mathbf{y} \iff [\mathbf{x}] = [\mathbf{y}]$.
 - Symmetry: $D([\mathbf{x}], [\mathbf{y}]) = D([\mathbf{y}], [\mathbf{x}])$.
 - Triangle inequality: $D([\mathbf{x}], [\mathbf{z}]) = \lim d(x_n, z_n) \le \lim (d(x_n, y_n) + d(y_n, z_n)) = D([\mathbf{x}], [\mathbf{y}]) + D([\mathbf{y}], [\mathbf{z}])$.
+
+::: pf-proof
+Each bullet takes the limit of the corresponding property of $d$ along the sequences: $d\ge0$ gives non-negativity, and $D=0$ is exactly the relation $\sim$, whose classes are the points of $Y$; symmetry is the symmetry of $d$; and the triangle inequality follows by passing to the limit in $d(x_n,z_n)\le d(x_n,y_n)+d(y_n,z_n)$, legitimate because limits respect sums and order.
+:::
+
 :::
 
 :::
@@ -138,13 +202,24 @@ Part (a): Equivalence relation and well-defined metric $D$.
 Part (b): Isometric embedding $h: X \to Y$.
 
 ::: pf-proof
+The first subclaim computes $D$ on the image of $h$, and the second draws the consequence that $h$ is an isometry onto its image.
 
 ::: pf-step
 For $x, y \in X$, $D(h(x), h(y)) = \lim_{n \to \infty} d(x, y) = d(x, y)$.
+
+::: pf-proof
+The constant sequences $(x,x,\dots)$ and $(y,y,\dots)$ are Cauchy, and $d(x,y)$ is the constant value of the sequence $d(x_n,y_n)$ whose limit defines $D$.
+:::
+
 :::
 
 ::: pf-step
 Thus $h$ preserves all pairwise distances, which proves $h$ is an isometric embedding (injective and topological embedding).
+
+::: pf-proof
+If $h(x)=h(y)$ then $d(x,y)=D(h(x),h(y))=0$, so $x=y$ and $h$ is injective. For $r>0$ one has $h(B_r(x))=B_r(h(x))\cap h(X)$, because $h$ preserves distances, so $h$ carries the open balls of $X$ onto the traces of the open balls of $Y$; a bijection onto its image with that property is a homeomorphism onto $h(X)$.
+:::
+
 :::
 
 :::
@@ -155,25 +230,51 @@ Thus $h$ preserves all pairwise distances, which proves $h$ is an isometric embe
 Part (c): Density of $h(X)$ in $Y$.
 
 ::: pf-proof
+The subclaims compute the distance from $h(x_k)$ to $[\mathbf{x}]$ and show that it tends to $0$ with $k$.
 
 ::: pf-step
 Let $[\mathbf{x}] \in Y$ where $\mathbf{x} = (x_1, x_2, \dots) \in \tilde{X}$.
+
+::: pf-proof
+Every point of $Y$ is the class of a Cauchy sequence in $X$ by the construction of $Y$.
+:::
+
 :::
 
 ::: pf-step
 For each fixed $k \in \ZZ_+$, $D(h(x_k), [\mathbf{x}]) = \lim_{n \to \infty} d(x_k, x_n)$.
+
+::: pf-proof
+This is the definition of $D$ applied to the constant sequence at $x_k$ and to $\mathbf{x}$; the limit exists by the second subclaim of part (a).
+:::
+
 :::
 
 ::: pf-step
-Given $\varepsilon > 0$, choose $N$ such that $d(x_k, x_n) < \varepsilon$ for all $k, n \ge N$.
+Given $\varepsilon > 0$, choose $N$ such that $d(x_k, x_n) < \varepsilon/2$ for all $k, n \ge N$.
+
+::: pf-proof
+This is the Cauchy condition for the sequence $\mathbf{x}$, read with $\varepsilon$ as the bound.
+:::
+
 :::
 
 ::: pf-step
-Taking $n \to \infty$ yields $D(h(x_k), [\mathbf{x}]) \le \varepsilon$ for all $k \ge N$.
+Taking $n \to \infty$ yields $D(h(x_k), [\mathbf{x}]) \le \varepsilon/2 < \varepsilon$ for all $k \ge N$.
+
+::: pf-proof
+For fixed $k\ge N$ every term $d(x_k,x_n)$ with $n\ge N$ is less than $\varepsilon$, and a limit of real numbers all less than $\varepsilon$ is at most $\varepsilon$; the limit is $D(h(x_k),[\mathbf{x}])$ by the second subclaim.
+:::
+
 :::
 
 ::: pf-step
 Hence $\lim_{k \to \infty} h(x_k) = [\mathbf{x}]$ in $(Y, D)$, proving $h(X)$ is dense in $Y$.
+
+::: pf-proof
+The preceding subclaim is precisely the statement that for every $\varepsilon>0$ the points $h(x_k)$ with $k\ge N$ lie in the ball of radius $\varepsilon$ about $[\mathbf{x}]$. As $[\mathbf{x}]$ was arbitrary, every ball in $Y$ meets $h(X)$.
+:::
+
 :::
 
 :::
@@ -184,25 +285,51 @@ Hence $\lim_{k \to \infty} h(x_k) = [\mathbf{x}]$ in $(Y, D)$, proving $h(X)$ is
 Part (d): Density criterion for completeness.
 
 ::: pf-proof
+The subclaims approximate an arbitrary Cauchy sequence of $Z$ by a Cauchy sequence of the dense subset $A$ and transfer the limit back.
 
 ::: pf-step
 Let $(z_k)$ be a Cauchy sequence in $(Z, \rho)$.
+
+::: pf-proof
+This is the arbitrary Cauchy sequence for which a limit has to be produced.
+:::
+
 :::
 
 ::: pf-step
 Since $A$ is dense, for each $k$ choose $a_k \in A$ with $\rho(a_k, z_k) < \frac{1}{k}$.
+
+::: pf-proof
+Density of $A$ means that every ball about a point of $Z$ contains a point of $A$; apply this to the ball of radius $1/k$ about $z_k$.
+:::
+
 :::
 
 ::: pf-step
 Then $\rho(a_j, a_k) \le \rho(a_j, z_j) + \rho(z_j, z_k) + \rho(z_k, a_k) < \frac{1}{j} + \rho(z_j, z_k) + \frac{1}{k} \to 0$, so $(a_k)$ is Cauchy in $A$.
+
+::: pf-proof
+The displayed inequality is the triangle inequality through $z_j$ and $z_k$. Given $\varepsilon>0$, choose $N$ with $1/N<\varepsilon/3$ and $\rho(z_j,z_k)<\varepsilon/3$ for $j,k\ge N$; then $\rho(a_j,a_k)<\varepsilon$ for $j,k\ge N$, which is the Cauchy condition.
+:::
+
 :::
 
 ::: pf-step
 By hypothesis, $(a_k)$ converges to some $z \in Z$.
+
+::: pf-proof
+The hypothesis on $A$ is that every Cauchy sequence of points of $A$ converges in $Z$, and $(a_k)$ is such a sequence by the preceding subclaim.
+:::
+
 :::
 
 ::: pf-step
 Then $\rho(z_k, z) \le \rho(z_k, a_k) + \rho(a_k, z) < \frac{1}{k} + \rho(a_k, z) \to 0$, so $z_k \to z$, proving $Z$ is complete.
+
+::: pf-proof
+The bound is the triangle inequality through $a_k$, together with the choice $\rho(z_k,a_k)<1/k$. Both terms on the right tend to $0$, so $\rho(z_k,z)\to0$. Every Cauchy sequence of $Z$ thus converges, which is the definition of completeness.
+:::
+
 :::
 
 :::
@@ -213,21 +340,42 @@ Then $\rho(z_k, z) \le \rho(z_k, a_k) + \rho(a_k, z) < \frac{1}{k} + \rho(a_k, z
 Part (e): Completeness of $(Y, D)$.
 
 ::: pf-proof
+The subclaims verify the hypothesis of part (d) for the dense subset $h(X)$ of $Y$.
 
 ::: pf-step
 Let $(h(x_k))_{k=1}^\infty$ be a Cauchy sequence in $h(X)$.
+
+::: pf-proof
+This is an arbitrary Cauchy sequence in the subspace $h(X)$ of $Y$.
+:::
+
 :::
 
 ::: pf-step
 Since $h$ is an isometry, $d(x_j, x_k) = D(h(x_j), h(x_k)) \to 0$, so $\mathbf{x} = (x_1, x_2, \dots) \in \tilde{X}$.
+
+::: pf-proof
+The equality is the isometry of part (b); a Cauchy sequence of points of $X$ is by definition an element of $\tilde X$, the set of all Cauchy sequences.
+:::
+
 :::
 
 ::: pf-step
 By step [](#part-c){.pf-ref}, $h(x_k) \to [\mathbf{x}] \in Y$.
+
+::: pf-proof
+Part (c) states that $h(x_n)\to[\mathbf{x}]$ for $\mathbf{x}=(x_1,x_2,\dots)$, which is exactly the sequence at hand.
+:::
+
 :::
 
 ::: pf-step
-Since $h(X)$ is dense in $Y$ and every Cauchy sequence in $h(X)$ converges in $Y$, part (d) implies $(Y, D)$ is complete. Q.E.D.
+Since $h(X)$ is dense in $Y$ and every Cauchy sequence in $h(X)$ converges in $Y$, part (d) implies $(Y, D)$ is complete.
+
+::: pf-proof
+Part (d) applies with $A=h(X)$, $Z=Y$ and $\rho=D$: $h(X)$ is dense in $Y$ by part (c), and the preceding subclaims show that every Cauchy sequence in $h(X)$ converges in $Y$.
+:::
+
 :::
 
 :::

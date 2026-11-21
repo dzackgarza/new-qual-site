@@ -11,6 +11,72 @@ classification:
   - Prime Number Theorem
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against the printed item, Chapter 7, Problem 3 on printed p. 204 (PDF p. 223): the
+    statement is the print's, both directions and the closing sentence that $\alpha=1/2$ is the
+    Riemann hypothesis, and the asterisk the print sets before "3." is recorded in the remark. The
+    argument was read and checked: the partial-summation identities between $\pi$, $\theta$ and
+    $\psi$; the Tauberian step from $\psi_1(x)=x^2/2-\sum_\rho x^{\rho+1}/(\rho(\rho+1))+O(x)$,
+    whose error terms are $O(x^\alpha\log^2T)$, $O(x^\alpha\log T)$, $O(x^\alpha)$ and
+    $O(x^{1-\alpha-\epsilon})$ with $h=x^{\alpha+\epsilon}$ and $T=x/h$, all $O(x^{\alpha+\epsilon})$
+    for $\alpha\ge1/2$; the variation bound $\sum_{x-h<n\le x+h}\Lambda(n)=O(h\log x)$; the Mellin
+    identity $\int_1^\infty(\psi(x)-x)x^{-s-1}dx=-\frac1s\frac{\zeta'}{\zeta}(s)-\frac1{s-1}$ and its
+    holomorphic extension; and the pole argument at a zero $\rho$ with $\Re\rho>\alpha$. Not checked:
+    the zero-counting estimate $N(T)=O(T\log T)$, which is cited as standard and not proved here.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Repair of step `tauberian` on the reader's report. The averaging estimate is
+    $\psi(x)-x=O(x^{\alpha+2\epsilon})$ with $h=x^{\alpha+\epsilon}$, not $O(x^{\alpha+\epsilon})$:
+    the passage from the average to $\psi(x)$ costs $O(h\log x)=O(x^{\alpha+2\epsilon})$, so the
+    displayed conclusion and the closing "renaming" sentence asserted the claim from a weaker bound.
+    The display now reads $O(x^{\alpha+2\epsilon})$, and the closing sentence states the substitution
+    that yields the claim: the argument is applied with $\epsilon/2$ in place of $\epsilon$, so that
+    $h=x^{\alpha+\epsilon/2}$ and the average is $x+O(x^{\alpha+\epsilon/2})$, whence
+    $\psi(x)-x=O(x^{\alpha+\epsilon})$. All other steps are unchanged; the constants were not
+    recomputed. Provenance: no published solution set covers this Problem (Rhoades, *Solutions/Hints
+    to the Exercises*, 2006, covers a selection of the Exercises), so the argument is the card's own.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Second component of the same step repaired, on a referee's report of this session: the step also
+    needed $\alpha+\epsilon<1$. As written, "for $x$ large, $h=x^{\alpha+\epsilon}<x/2$" is false for
+    $\epsilon\ge(1-\alpha)/2$ — with $\alpha=9/10$ and $\epsilon=1/2$ one gets $h=x^{7/5}>x$, so
+    $x-h<0$, $\psi_1$ is evaluated below $1$ and $T=x/h<1$. The step now opens by restricting to
+    $0<\epsilon<(1-\alpha)/2$, which loses nothing because a bound with a smaller exponent implies
+    one with a larger, and then $h\le x^{(1+\alpha)/2}<x/2$ and $x-h\ge1$. The closing substitution is
+    correspondingly legitimate. The body's estimates are unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Record of the search behind the solution's provenance sentence, which the reader asked for where
+    no published solution set covers the Problem. Read: the head of R. C. Rhoades,
+    *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), whose
+    abstract describes it as solutions or hints to "many of the exercises", with one part per
+    chapter. Searched the open web for a set answering the end-of-chapter Problems of this book: no
+    document answering Chapter 7, Problem 3 was found. This search located no published set answering
+    this Problem, and none is retained in this repository. Not checked: whether such a set exists
+    outside what a web search reaches. The mathematics of the card is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected: a published solution of this Problem was located, so the sentence saying
+    that none existed is replaced. The set is Wang Zirui, *Complete Solutions for Chapter 7*, in the
+    public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, read at its
+    Problem 3 and checked against Chapter 7, Problem 3: both implications, the Perron contour moved
+    to $\Re s=\alpha+\epsilon$ giving $\psi_1(x)=x^2/2+O_\epsilon(x^{\alpha+1+\epsilon})$, difference
+    quotients for the monotone $\psi$, partial summation to $\pi-\operatorname{Li}$, and the Mellin
+    identity for $-\zeta'/\zeta$ in the converse. Its text is an outline; the card's steps supply the
+    difference-quotient estimate and the bookkeeping of $\epsilon$ that the outline compresses. Not
+    checked: anything in the published document outside its Problem 3.
 ---
 
 ::: {.exercise}
@@ -21,7 +87,12 @@ $$
 for every $\epsilon > 0$, where $\alpha$ is fixed and $1/2 \leq \alpha < 1$ if and only if $\zeta(s)$ has no zeros in the strip $\alpha < \Re(s) < 1$. The case $\alpha = 1/2$ corresponds to the Riemann hypothesis.
 :::
 
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 7, Problem 3).
+:::
+
 ::: {.solution}
+A published solution of this Problem is Wang Zirui, *Complete Solutions for Chapter 7* (Problem 3), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`. Checked against Chapter 7, Problem 3, it carries both directions: shifting the Perron contour to $\Re s=\alpha+\epsilon$ gives $\psi_1(x)=x^2/2+O_\epsilon(x^{\alpha+1+\epsilon})$, difference quotients give $\psi(x)=x+O_\epsilon(x^{\alpha+\epsilon})$ and partial summation gives $\pi(x)-\operatorname{Li}(x)=O_\epsilon(x^{\alpha+\epsilon})$; conversely that estimate gives the same bound for $\psi(x)-x$, and the Mellin identity for $-\zeta'/\zeta$ then continues it holomorphically to $\Re s>\alpha$, so a zero there is impossible. The proof below follows that route and supplies the estimates it compresses, as the audit trail records.
 Let
 $$
 \psi(x)=\sum_{n\le x}\Lambda(n),\qquad
@@ -90,7 +161,7 @@ $$
 $$
 
 ::: pf-proof
-Fix $\epsilon>0$ and put $h=x^{\alpha+\epsilon}$. For $x$ large, $h<x/2$. By [[E-SS7.PR-2|the previous problem]],
+Fix $\epsilon>0$. Since a bound $O(x^{\alpha+\epsilon'})$ with $0<\epsilon'\le\epsilon$ implies $O(x^{\alpha+\epsilon})$, we may assume $\epsilon<(1-\alpha)/2$; put $h=x^{\alpha+\epsilon}$. Then $h\le x^{(1+\alpha)/2}<x/2$ for $x$ large, and $x-h\ge x/2\ge1$. By [[E-SS7.PR-2|the previous problem]],
 $$
 \psi_1(x)=\frac{x^2}{2}-\sum_\rho\frac{x^{\rho+1}}{\rho(\rho+1)}+O(x).
 $$
@@ -135,9 +206,9 @@ $$
 $$
 Hence the average differs from $\psi(x)$ by $O(h\log x)=O(x^{\alpha+2\epsilon})$, and
 $$
-\psi(x)-x=O(x^{\alpha+\epsilon}).
+\psi(x)-x=O(x^{\alpha+2\epsilon}).
 $$
-Renaming $\epsilon$ gives the claim.
+Since $\epsilon>0$ was arbitrary and $\epsilon/2<(1-\alpha)/2$ as well, applying the argument with $\epsilon/2$ in place of $\epsilon$ — so that $h=x^{\alpha+\epsilon/2}$ and the average is $x+O(x^{\alpha+\epsilon/2})$ — gives $\psi(x)-x=O(x^{\alpha+\epsilon})$, which is the claim.
 :::
 
 :::

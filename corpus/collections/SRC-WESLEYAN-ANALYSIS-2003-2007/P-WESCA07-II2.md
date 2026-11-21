@@ -5,7 +5,9 @@ kind: problem
 title: "Evaluate a twice-wound contour integral"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residue Theorem
+  - Winding Number
 relations: []
 review: draft
 audit:
@@ -13,6 +15,17 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis Section II, problem 2 (Summer 2007) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution ended with a pf-qed that only announced that the last step
+    answered the question, which STYLE-08 forbids; it is dropped, and the step
+    that carries the result is now the QED step. Read on 2026-11-19 against the
+    rendered page of the retained scan assets/attachments/analysis_2003-2007.pdf,
+    PDF p. 7 (printed p. 2 of the 2007 complex-analysis paper), the statement is
+    the paper's and is unchanged. No argument changes.
+
 ---
 
 ::: {.problem}
@@ -157,12 +170,6 @@ $$
 $$
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1-5){.pf-ref} is the required value of the contour integral.
 
 :::
 

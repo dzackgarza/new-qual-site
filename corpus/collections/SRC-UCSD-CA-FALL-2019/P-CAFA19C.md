@@ -14,6 +14,27 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained exam assets/attachments/MATH-220-EXAM-Fall-2019.pdf,
+    page 3, problem 3: the punctured disk 0 < |z| < 1 and the annulus
+    1 < |z| < 2, to be shown not conformally equivalent. The card agrees.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The argument is correct though written loosely at one point. A conformal
+    equivalence f onto the bounded annulus is bounded, so Riemann's removable
+    singularity theorem extends it to a holomorphic map of the disk. That
+    extension is injective, because a value taken at 0 is also taken at some
+    interior point of the punctured disk by surjectivity, so the extended value
+    cannot lie in the annulus; it lies on its boundary. The open mapping theorem
+    makes the image of the disk open, so the value at 0 is an interior point of
+    the image, which is contained in the annulus together with that one point;
+    but a boundary point of the annulus has every neighbourhood meeting its
+    complement. That contradiction is the conclusion. Nothing was changed.
 ---
 
 ::: {.problem}

@@ -13,6 +13,37 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The two arguments the previous event recorded as not re-derived are now steps with proofs. Step
+    #kummer proves Legendre's formula $v_p(n!)=(n-s_p(n))/(p-1)$ by counting the base-$p$ digits in
+    the sum $\sum_j\lfloor n/p^j\rfloor$, and derives the digit-sum form of $v_p\binom nk$ from
+    additivity; step #flags-polynomial then compares the polynomial forms of least degrees $1$ and
+    $2$ case by case in the three parities, using $s_2(2m)=s_2(m)$, the bound
+    $s_2(a+b+1)\le s_2(a)+s_2(b)+1$ for the both-odd case, and the degree count $B_1=\FF_2$ against
+    $B_1=0$ for the non-isomorphism. Step #recursion proves the converse of the classification of
+    forms by induction on $j$, the induction step being the cocycle relation with $k=1$. The
+    earlier event's "not checked" lines on those two points are superseded by this one; what is
+    still not re-checked is the machine verification an earlier event records and the case analysis
+    of Theorem 3 beyond its own step.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Converted from prose to numbered steps under #2, thirteen of them, without changing the
+    mathematics: the rational form and its coproduct coefficients, the integral lattices and their
+    divisor conditions, the axiom audit with the cocycle relation, the two worked forms, the
+    reduction to $\FF_p$ and the flag, Lemma 1 and Lemma 2 with their case analysis, Theorems 3 and 4,
+    Corollary 5, the three realised families, and the limits. Each step carries its own proof; the
+    run-in "Proof." labels and the boxed end-of-proof marks are gone with the prose. No retained
+    solution set covers §3.C Exercise 16 --- Sam's §3.C has Exercise 5, Kottke's set is 3.3.21,
+    Stanford 215C's sets carry no §3.C exercise --- so the card now says the argument is its own,
+    checked against Hatcher §3.C. Citation by numbered statement only: the card already named its
+    results and names them still. Not checked: the Kummer identity behind the $d=1$ versus $d=2$
+    comparison of flags, the cocycle recursion of the converse, and the machine verification the
+    earlier events record, were not re-derived in this pass.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -165,6 +196,27 @@ audit:
     and said so on the card: no realisation theorem for every flag pattern, and no decision
     procedure -- Corollary 5 is a criterion, and the underlying equation system is infinite.
     Not checked: no independent source beyond Hatcher p.292 (PDF page 301), which was read again.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read, without change, against Hatcher, Exercise 16 of §3.C, printed p. 292 (PDF p. 301), the
+    same page the consolidated development of 2026-11-01 used. Checked at the definitions and in
+    the proofs: the coproduct $\Delta(t)=t\otimes1+1\otimes t$ and the coefficient table
+    $b_{ij}=\binom{i+j}{i}$ for even $d$, $b_{ij}=0$ for $i,j$ both odd and
+    $\binom{\lfloor(i+j)/2\rfloor}{\lfloor i/2\rfloor}$ otherwise for odd $d$ (checked independently
+    at $n=2$, where the cross terms cancel, and $n=3$, where they do not); the passage to
+    $m_{ij}=q_iq_j/q_{i+j}$ and $c_{ij}=b_{ij}/m_{ij}$; the divisor and cocycle conditions with
+    $m_{i0}=m_{0i}=1$; the recursion $q_{n+1}=q_n/m_{n,1}$; the two examples $\ZZ[t]$ and
+    $\Gamma_\ZZ[t]$; the two-operation criterion of Lemma 1; the three cases of Lemma 2; the
+    algebra of Theorem 3 in cases (a) and (b), recomputed symbol by symbol, noting that neither
+    uses more than the case, which is what lets Corollary 5 conclude from the flags alone; and
+    Theorem 4. Not checked this session: the Kummer identity used to show that the polynomial forms
+    with $d=1$ and $d=2$ have equal flags, which is quoted from the development of 2026-11-01; the
+    finite search over forms with $m_{1j}\le24$, which was not re-run; and no independent source
+    beyond Hatcher's page was consulted. The card's own statement of what it does not claim —
+    no realisation theorem for every flag pattern, no decision procedure, nothing across different
+    $d$ — is accurate as far as this read goes.
 ---
 
 ::: {.problem}
@@ -173,8 +225,14 @@ In particular, determine which Hopf algebras $A \otimes \ZZ_p$ arise from such $
 :::
 
 ::: {.solution}
-We classify these Hopf algebras as integral Hopf lattices in a rational polynomial Hopf algebra.
+We classify these Hopf algebras as integral Hopf lattices in a rational polynomial Hopf algebra. No retained solution set covers §3.C Exercise 16 --- Sam's §3.C has Exercise 5 only, Kottke's set is 3.3.21, Stanford 215C's sets carry no §3.C exercise, and the other retained sets reach no §3.C --- so the argument is the card's own, checked against Hatcher §3.C.
 
+::: pf
+
+::: {.pf-step #rational}
+Over $\QQ$ the Hopf algebra is a polynomial algebra $\QQ[t]$ on a homogeneous generator $t$ of positive degree $d$, $\Delta(t)=t\otimes1+1\otimes t$, and $\Delta(t^n)=\sum_{i+j=n}b_{ij}t^i\otimes t^j$ with the coefficients displayed below.
+
+::: pf-proof
 Let $A$ satisfy the hypotheses and let $d>0$ be the least positive degree in which $A\otimes\QQ$ is nonzero. Since
 $$
 A\otimes\QQ\cong\QQ[t]
@@ -191,6 +249,14 @@ b_{ij}=\begin{cases}
 \end{cases}
 $$
 
+:::
+
+:::
+
+::: {.pf-step #lattices}
+An integral form is exactly a choice of one positive rational multiple $x_n=q_nt^n$ of $t^n$ in each degree, subject to the boxed conditions: $m_{ij}\coloneqq q_iq_j/q_{i+j}$ and $c_{ij}\coloneqq b_{ij}/m_{ij}$ are integers, with $m_{i0}=m_{0i}=1$.
+
+::: pf-proof
 Since each $A_{nd}$ is a free rank-one subgroup of $\QQ t^n$, choose generators
 $$
 x_n=q_nt^n,
@@ -218,6 +284,14 @@ $$
 with $m_{i0}=m_{0i}=1$ for all $i$.
 Equivalently, $m_{ij}$ divides $b_{ij}$ whenever $b_{ij}\ne0$; a zero $b_{ij}$ imposes no divisibility condition.
 
+:::
+
+:::
+
+::: {.pf-step #axioms}
+Of the Hopf axioms only associativity of the multiplication imposes a further condition on an integral form, namely the cocycle relation $m_{ij}m_{i+j,k}=m_{jk}m_{i,j+k}$ with $m_{i0}=m_{0i}=1$; conversely any positive integral system satisfying the divisor and cocycle conditions determines a Hopf-stable lattice.
+
+::: pf-proof
 Two of the Hopf axioms need no further condition, and it is worth saying why. Multiplicativity and coassociativity of $\Delta$ are identities between elements of $A\otimes A$ and of $A\otimes A\otimes A$; they hold for the corresponding rational map, and both targets are free, hence torsionfree, so they hold integrally. The counit is $\varepsilon(x_0)=1$, $\varepsilon(x_n)=0$. What the displayed conditions encode is closure under multiplication and the coproduct formula, together with associativity of the multiplication, which is the cocycle relation below.
 Associativity is exactly the cocycle relation
 $$
@@ -237,6 +311,25 @@ for all $i,j$. The formulas above define a Hopf-stable lattice
 $$
 A=\bigoplus_{n\ge0}\ZZ\,q_nt^n\subset\QQ[t].
 $$
+:::
+
+:::
+
+::: {.pf-step #recursion}
+Conversely, if $(m_{ij})$ are positive integers with $m_{i0}=m_{0i}=1$ satisfying the cocycle relation, then the recursion $q_0=q_1=1$, $q_{n+1}=q_n/m_{n,1}$ gives $m_{ij}=q_iq_j/q_{i+j}$ for all $i,j$, so the formulae of step [](#lattices){.pf-ref} define an integral form.
+
+::: pf-proof
+The recursion determines the positive rationals $q_n$ uniquely. The claim is proved by induction on $j$, the case $j=0$ being $q_iq_0=m_{i0}q_i=q_i$ and the case $j=1$ being $q_iq_1=q_i=m_{i1}q_{i+1}$, which is the recursion. For the step, use the induction hypothesis and the recursion in the form $q_{j+1}=q_j/m_{j,1}$ and $q_{i+j+1}=q_{i+j}/m_{i+j,1}$:
+$$q_iq_{j+1}=\frac{q_iq_j}{m_{j,1}}=\frac{m_{ij}q_{i+j}}{m_{j,1}},\qquad m_{i,j+1}q_{i+j+1}=\frac{m_{i,j+1}q_{i+j}}{m_{i+j,1}},$$
+and the two right sides are equal because the cocycle relation with $k=1$ reads $m_{ij}m_{i+j,1}=m_{j,1}m_{i,j+1}$. Hence $q_iq_{j+1}=m_{i,j+1}q_{i+j+1}$, which is the claim for $j+1$. Reading the identity as $m_{ij}=q_iq_j/q_{i+j}$, the divisibility and coproduct conditions of step [](#lattices){.pf-ref} are exactly the hypotheses, so the lattice $\bigoplus_n\ZZ q_nt^n$ is an integral form.
+:::
+
+:::
+
+::: {.pf-step #examples}
+The polynomial lattice $m_{ij}=1$ and, for even $d$, the divided-power lattice $m_{ij}=\binom{i+j}{i}$ are integral forms of $\QQ[t]$; for odd $d$ the polynomial form still occurs and the vanishing $b_{ij}$ allow further forms.
+
+::: pf-proof
 This proves the classification. When $d$ is even, two examples are
 $$
 m_{ij}=1,
@@ -247,6 +340,14 @@ m_{ij}=\binom{i+j}{i},
 $$
 which gives the divided-power Hopf algebra $\Gamma_{\ZZ}[t]$. For odd $d$, the polynomial form still has $m_{ij}=1$, while the vanishing $b_{ij}$ allow further integral forms.
 
+:::
+
+:::
+
+::: {.pf-step #reduction}
+For a prime $p$ put $B=A\otimes\FF_p$; the $\bar x_n$ are an $\FF_p$-basis of $B$, one vector in each degree $nd$, and the structure constants are the reductions of $m_{ij}$ and $c_{ij}$. Forms are compared only when they share their least degree $d$, and the hypothesis is not vacuous: the polynomial forms of least degrees $1$ and $2$ have identical flags but non-isomorphic reductions, as step [](#flags-polynomial){.pf-ref} proves.
+
+::: pf-proof
 Now fix a prime $p$, put $B=A\otimes\FF_p$, and write $\bar x_n$ for the image of $x_n$; the $\bar x_n$ are an $\FF_p$-basis of $B$, one vector in each degree $nd$. The structure constants of $B$ are
 $$
 \bar x_i\bar x_j=\bar m_{ij}\,\bar x_{i+j},
@@ -259,24 +360,61 @@ where $\bar m_{ij}=m_{ij}\bmod p$ and $\bar c_{ij}$ is the reduction of the inte
 
 Two forms are only compared when they share their least degree $d$, hence their $b_{ij}$ and their $f_{ij}$. Nothing is lost: a form whose least degree is $d$ has $B=0$ in every degree that is not a multiple of $d$, so reductions of forms with different $d$ are already non-isomorphic as graded vector spaces. The hypothesis is not vacuous bookkeeping. The two polynomial forms with $d=1$ and $d=2$ have *identical* flags, and their reductions are not isomorphic. Their flags agree: both have $\delta\equiv0$, and for $p=2$ the second bit is $[\,v_2(b_{ij})=0\,]$, where $b_{ij}=\binom{i+j}{i}$ for $d=2$ and $b_{ij}=0$ for $i,j$ both odd and $\binom{\lfloor (i+j)/2\rfloor}{\lfloor i/2\rfloor}$ otherwise for $d=1$; Kummer's formula gives $v_2\binom{n}{k}=s_2(k)+s_2(n-k)-s_2(n)$, and writing $i=2a+\epsilon$, $j=2b+\eta$ it gives the same value $s_2(a)+s_2(b)-s_2(a+b)$ for both families in each of the three parity cases, while for $i,j$ both odd the $d=1$ coefficient vanishes and $\binom{i+j}{i}$ is even. Yet $B_1=\ZZ/2$ for $d=1$ and $B_1=0$ for $d=2$.
 
-**Lemma 1 (the two-operation criterion).** *A graded linear map $\phi(\bar x_n)=u_n\bar y_n$ with $u_n\in\FF_p^\times$ between two such reductions is an isomorphism of Hopf algebras if and only if, for all $i,j$,*
+:::
+
+:::
+
+::: {.pf-step #kummer}
+For a prime $p$, $v_p(n!)=\dfrac{n-s_p(n)}{p-1}$ and $v_p\binom nk=\dfrac{s_p(k)+s_p(n-k)-s_p(n)}{p-1}$, where $s_p$ is the sum of the base-$p$ digits; for $p=2$ the second reads $v_2\binom nk=s_2(k)+s_2(n-k)-s_2(n)$.
+
+::: pf-proof
+Legendre's formula gives $v_p(n!)=\sum_{j\ge1}\lfloor n/p^j\rfloor$. Write $n=\sum_i a_ip^i$ in base $p$, so $s_p(n)=\sum_ia_i$ and $\lfloor n/p^j\rfloor=\sum_{i\ge j}a_ip^{i-j}$. Summing over $j\ge1$ counts each $a_i$ once for each $j\le i$, giving $\sum_ia_i(1+p+\cdots+p^{i-1})=\sum_ia_i\frac{p^i-1}{p-1}=\frac{n-s_p(n)}{p-1}$. For the binomial, $v_p$ is additive over products, so the formula follows from $\binom nk=n!/(k!(n-k)!)$; at $p=2$ the denominator $p-1$ is $1$.
+:::
+
+:::
+
+::: {.pf-step #flags-polynomial}
+For $p=2$ the polynomial forms of least degree $1$ and $2$ have identical flags, and their reductions are not isomorphic.
+
+::: pf-proof
+Both have $m_{ij}=1$, so $e_{ij}=0$, $\delta\equiv0$, and the second bit is $\varepsilon_{ij}=[\,0=f_{ij}\,]=[\,v_2(b_{ij})=0\,]$, with $\varepsilon_{ij}=0$ where $b_{ij}=0$. For $d=2$, $b_{ij}=\binom{i+j}{i}$; for $d=1$, $b_{ij}=0$ when $i,j$ are both odd and $b_{ij}=\binom{\lfloor(i+j)/2\rfloor}{\lfloor i/2\rfloor}$ otherwise. Three parity cases. If $i=2a$, $j=2b$, step [](#kummer){.pf-ref} gives $v_2\binom{2a+2b}{2a}=s_2(a)+s_2(b)-s_2(a+b)=v_2\binom{a+b}{a}$, using $s_2(2m)=s_2(m)$. If $i=2a$, $j=2b+1$, it gives $s_2(a)+(s_2(b)+1)-(s_2(a+b)+1)=v_2\binom{a+b}{a}$, and the case $i$ odd, $j$ even is symmetric. If $i=2a+1$ and $j=2b+1$, the $d=1$ coefficient vanishes while $v_2\binom{2a+2b+2}{2a+1}=(s_2(a)+1)+(s_2(b)+1)-s_2(a+b+1)\ge1$, because $s_2(a+b+1)\le s_2(a)+s_2(b)+1$; so $\varepsilon_{ij}=0$ in both families. The flags therefore agree. They do not determine the class across different least degrees: $B_1=\FF_2$ for $d=1$, degree $1$ being $1\cdot d$, while $B_1=0$ for $d=2$, whose degrees are all even.
+:::
+
+:::
+
+::: {.pf-step #criterion}
+**Lemma 1 (the two-operation criterion).** *A graded linear map $\phi(\bar x_n)=u_n\bar y_n$ with $u_n\in\FF_p^\times$ between two such reductions is an isomorphism of Hopf algebras if and only if, for all $i,j$ the two equations displayed below hold.*
 $$
 \bar m'_{ij}\,u_iu_j=\bar m_{ij}\,u_{i+j}
 \qquad\text{and}\qquad
 \bar c'_{ij}\,u_{i+j}=\bar c_{ij}\,u_iu_j .
 $$
-*Proof.* The first equation is $\phi(x_ix_j)=\phi(x_i)\phi(x_j)$ and the second is $(\phi\otimes\phi)\Delta=\Delta\phi$; a map of graded Hopf algebras preserves the unit, the counit, the product and the coproduct, and a graded linear map carrying basis vector to basis vector does this exactly when both families of structure constants agree after transport. Both equations are needed: where $\bar m_{ij}=0$ the first is vacuous while the second need not be. $\square$
 
-**Lemma 2 (which of the two equations bites).** *Assume $e_{ij}=e'_{ij}$ for all $i,j$, so that $\bar m_{ij}=0\iff\bar m'_{ij}=0$ and $\bar c_{ij}=0\iff\bar c'_{ij}=0$.*
+::: pf-proof
+The first equation is $\phi(x_ix_j)=\phi(x_i)\phi(x_j)$ and the second is $(\phi\otimes\phi)\Delta=\Delta\phi$; a map of graded Hopf algebras preserves the unit, the counit, the product and the coproduct, and a graded linear map carrying basis vector to basis vector does this exactly when both families of structure constants agree after transport. Both equations are needed: where $\bar m_{ij}=0$ the first is vacuous while the second need not be.
+
+:::
+
+:::
+
+::: {.pf-step #bites}
+**Lemma 2 (which of the two equations bites).** *Assume $e_{ij}=e'_{ij}$ for all $i,j$, so that $\bar m_{ij}=0\iff\bar m'_{ij}=0$ and $\bar c_{ij}=0\iff\bar c'_{ij}=0$; then in the three cases below exactly the equations named bite.*
 *(a) If $e_{ij}=0$ both equations are satisfied by $u_{i+j}=(\bar m'_{ij}/\bar m_{ij})u_iu_j$; where $\bar b_{ij}\ne0$ the second is equivalent to the first, and where $\bar b_{ij}=0$ the second is vacuous and only the first bites.*
 *(b) If $0<e_{ij}=f_{ij}$ then $\bar m_{ij}=\bar m'_{ij}=0$ and the second equation reduces to $u_{i+j}=(\bar c_{ij}/\bar c'_{ij})u_iu_j$, both coproduct constants being non-zero.*
 *(c) If $0<e_{ij}<f_{ij}$ then $\bar m_{ij}=\bar m'_{ij}=0$ and $\bar c_{ij}=\bar c'_{ij}=0$, so both equations are vacuous.*
 
-*Proof.* In (a), $m_{ij}$ and $m'_{ij}$ are $p$-units so the coproduct constants are $\bar b_{ij}/\bar m_{ij}$ and $\bar b_{ij}/\bar m'_{ij}$ with the same $\bar b_{ij}$ — both forms are forms of the same $\QQ[\alpha]$ with the same $b_{ij}$ — and the two equations are then equivalent when $\bar b_{ij}\ne0$ (dividing by $\bar b_{ij}$) and the second is vacuous when $\bar b_{ij}=0$. In (b), $c_{ij}=b_{ij}/m_{ij}$ has $v_p(c_{ij})=f_{ij}-e_{ij}=0$, so $\bar c_{ij}\ne0$ and likewise $\bar c'_{ij}\ne0$, while both product constants vanish. In (c), $f_{ij}>e_{ij}>0$ gives $v_p(c_{ij})>0$ and the same for $c'_{ij}$. Finally $e_{ij}\le f_{ij}$ always, so these are the only cases. $\square$
+::: pf-proof
+In (a), $m_{ij}$ and $m'_{ij}$ are $p$-units so the coproduct constants are $\bar b_{ij}/\bar m_{ij}$ and $\bar b_{ij}/\bar m'_{ij}$ with the same $\bar b_{ij}$ — both forms are forms of the same $\QQ[\alpha]$ with the same $b_{ij}$ — and the two equations are then equivalent when $\bar b_{ij}\ne0$ (dividing by $\bar b_{ij}$) and the second is vacuous when $\bar b_{ij}=0$. In (b), $c_{ij}=b_{ij}/m_{ij}$ has $v_p(c_{ij})=f_{ij}-e_{ij}=0$, so $\bar c_{ij}\ne0$ and likewise $\bar c'_{ij}\ne0$, while both product constants vanish. In (c), $f_{ij}>e_{ij}>0$ gives $v_p(c_{ij})>0$ and the same for $c'_{ij}$. Finally $e_{ij}\le f_{ij}$ always, so these are the only cases.
 
-**Theorem 3 (the valuation vector determines the reduction).** *Let $A,A'$ be forms with the same least degree $d$. If $v_p(m_{ij})=v_p(m'_{ij})$ for all $i,j$ then $B\cong B'$ as graded Hopf algebras.*
+:::
 
-*Proof.* Write $q_n=p^{\tau_n}\sigma_n$ and $q'_n=p^{\tau'_n}\sigma'_n$ with $\sigma_n,\sigma'_n\in\ZZ_p^\times$, the exponents possibly negative, and set
+:::
+
+::: {.pf-step #valuation}
+**Theorem 3 (the valuation vector determines the reduction).** *Let $A,A'$ be forms with the same least degree $d$; if $v_p(m_{ij})=v_p(m'_{ij})$ for all $i,j$ then $B\cong B'$ as graded Hopf algebras.*
+
+::: pf-proof
+Write $q_n=p^{\tau_n}\sigma_n$ and $q'_n=p^{\tau'_n}\sigma'_n$ with $\sigma_n,\sigma'_n\in\ZZ_p^\times$, the exponents possibly negative, and set
 $$
 \omega_n:=\frac{\sigma_n}{\sigma'_n}\bmod p\ \in\FF_p^\times,
 \qquad\text{so that}\qquad
@@ -295,30 +433,51 @@ $$
 \bar c'_{ij}\omega_{i+j}=\frac{\beta_{ij}\sigma'_{i+j}}{\sigma'_i\sigma'_j}\cdot\frac{\sigma_{i+j}}{\sigma'_{i+j}}=\frac{\beta_{ij}\sigma_{i+j}}{\sigma'_i\sigma'_j}
 =\frac{\beta_{ij}\sigma_{i+j}}{\sigma_i\sigma_j}\cdot\frac{\sigma_i\sigma_j}{\sigma'_i\sigma'_j}=\bar c_{ij}\omega_i\omega_j .
 $$
-*Case (c)* is vacuous on both sides. Hence the single choice $u_n=\omega_n$ satisfies every constraint, and $\phi$ preserves multiplication and comultiplication. $\square$
+*Case (c)* is vacuous on both sides. Hence the single choice $u_n=\omega_n$ satisfies every constraint, and $\phi$ preserves multiplication and comultiplication.
 
-**Theorem 4 (what the reduction sees).** *Let $A,A'$ be forms with the same least degree $d$. If $B\cong B'$ as graded Hopf algebras then for every pair $i,j$,*
+:::
+
+:::
+
+::: {.pf-step #sees}
+**Theorem 4 (what the reduction sees).** *Let $A,A'$ be forms with the same least degree $d$; if $B\cong B'$ as graded Hopf algebras then for every pair $i,j$ the two bits displayed below agree.*
 $$
 [\,v_p(m_{ij})>0\,]=[\,v_p(m'_{ij})>0\,]
 \qquad\text{and}\qquad
 [\,v_p(m_{ij})=v_p(b_{ij})\,]=[\,v_p(m'_{ij})=v_p(b_{ij})\,].
 $$
 
-*Proof.* In any isomorphism the $u_n$ are units, so in Lemma 1's first equation $\bar m_{ij}=0\iff\bar m'_{ij}=0$, giving the first equality; and in the second $\bar c_{ij}=0\iff\bar c'_{ij}=0$, which by $e_{ij}\le f_{ij}$ and $v_p(c_{ij})=f_{ij}-e_{ij}$ is the second. $\square$
+::: pf-proof
+In any isomorphism the $u_n$ are units, so in Lemma 1's first equation $\bar m_{ij}=0\iff\bar m'_{ij}=0$, giving the first equality; and in the second $\bar c_{ij}=0\iff\bar c'_{ij}=0$, which by $e_{ij}\le f_{ij}$ and $v_p(c_{ij})=f_{ij}-e_{ij}$ is the second.
 
-Define the **flag** of a form to be the pair of bits
-$$
-\delta_{ij}(A)=[\,e_{ij}>0\,],
-\qquad
-\varepsilon_{ij}(A)=[\,e_{ij}=f_{ij}\,],
-\qquad i,j\ge1 .
-$$
+:::
 
-**Corollary 5 (the classification).** *For forms $A,A'$ of $\QQ[\alpha]$ with least degrees $d,d'$: there is an isomorphism of graded Hopf algebras $A\otimes\FF_p\cong A'\otimes\FF_p$ if and only if $d=d'$, $\delta(A)=\delta(A')$ and $\varepsilon(A)=\varepsilon(A')$.*
+:::
 
-*Proof.* If the reductions are isomorphic as graded vector spaces then $d=d'$, since $d$ is the least positive degree in which $B$ is nonzero; and given that, the flags agree by Theorem 4. Conversely, if $d=d'$ and the flags agree, then at every pair the trichotomy of Lemma 2 falls in the same case for both forms, and the computation of Theorem 3 — which uses only the case, not the size of $e_{ij}$ — supplies an isomorphism. $\square$
+::: {.pf-step #flag}
+The **flag** of a form is the pair of bits $\delta_{ij}(A)=[\,e_{ij}>0\,]$ and $\varepsilon_{ij}(A)=[\,e_{ij}=f_{ij}\,]$ for $i,j\ge1$.
 
-**Which flag patterns are classified, and what realises them.** The corollary classifies reductions by flags, so the answer to the exercise's second question is: *the Hopf algebras $A\otimes\ZZ_p$ arising are one isomorphism class for each flag pattern that is realised by an integral form, and no claim is made that every pattern is realised.* Three families are realised explicitly.
+::: pf-proof
+This is a definition, and it is the only information the reduction retains by step [](#sees){.pf-ref}: the first bit says whether $\bar m_{ij}$ vanishes and the second whether $\bar c_{ij}$ vanishes. Both are read off the valuation $e_{ij}$ and the fixed $f_{ij}$, so the flag is a function of the form.
+:::
+
+:::
+
+::: {.pf-step #classification}
+**Corollary 5 (the classification).** *For forms $A,A'$ of $\QQ[\alpha]$ with least degrees $d,d'$, there is an isomorphism of graded Hopf algebras $A\otimes\FF_p\cong A'\otimes\FF_p$ if and only if $d=d'$, $\delta(A)=\delta(A')$ and $\varepsilon(A)=\varepsilon(A')$.*
+
+::: pf-proof
+If the reductions are isomorphic as graded vector spaces then $d=d'$, since $d$ is the least positive degree in which $B$ is nonzero; and given that, the flags agree by Theorem 4. Conversely, if $d=d'$ and the flags agree, then at every pair the trichotomy of Lemma 2 falls in the same case for both forms, and the computation of Theorem 3 — which uses only the case, not the size of $e_{ij}$ — supplies an isomorphism.
+
+:::
+
+:::
+
+::: {.pf-step #realised}
+The classifications above are realised by three families: the polynomial form, the divided-power form for even $d$, and the forms $m_{ij}=p^{e_{ij}}$ over valuation cocycles $e\le f$.
+
+::: pf-proof
+The corollary classifies reductions by flags, so the answer to the exercise's second question is: *the Hopf algebras $A\otimes\ZZ_p$ arising are one isomorphism class for each flag pattern that is realised by an integral form, and no claim is made that every pattern is realised.* Three families are realised explicitly.
 
 1. *The polynomial form*, $m_{ij}=1$ for all $i,j$: here $e_{ij}=0$, so $\delta_{ij}=0$ for every $i,j$, while $\varepsilon_{ij}=[\,0=f_{ij}\,]=[\,p\nmid b_{ij}\,]$ is **not** identically zero — for $d$ even and $p=2$ one has $b_{12}=3$, so $\varepsilon_{12}=1$. The reduction is $B=\FF_p[\bar x_1]$, a polynomial algebra on the generator $\bar x_1$, since $\bar x_i\bar x_j=\bar x_{i+j}$.
 
@@ -326,7 +485,21 @@ $$
 
 3. *The whole family $m_{ij}=p^{e_{ij}}$*, for any non-negative integers $e_{ij}$ with $e_{ij}\le f_{ij}$ satisfying the valuation cocycle $e_{ij}+e_{i+j,k}=e_{jk}+e_{i,j+k}$ and $e_{i0}=e_{0i}=0$: these are admissible integral data, by the divisor and cocycle conditions of the classification of forms, and they realise exactly the patterns $\delta_{ij}=[e_{ij}>0]$, $\varepsilon_{ij}=[e_{ij}=f_{ij}]$ that arise from such a valuation cocycle. Item 1 is the member $e\equiv0$ of this family; item 2 is *not* a member, since its $m_{ij}=\binom{i+j}{i}$ need not be a power of $p$.
 
-**What is not claimed.** Three things, stated so that no later reader takes them from this card. First, no claim that *every* flag pattern is realised: what is proved is that a realised pattern determines the class, and that the patterns in item 3 are realised; characterising the realisable patterns among all pairs of bits is left open. Some patterns are certainly not realisable — at a pair with $p\nmid b_{ij}$ one has $f_{ij}=0$, so $e_{ij}\le f_{ij}$ forces $e_{ij}=0$ and hence the flag $(0,1)$ at that pair, and at a pair with $b_{ij}=0$ one has $f_{ij}=\infty$ and hence $\varepsilon_{ij}=0$; but no full characterisation is given. Second, no decision procedure is claimed for comparing two reductions: Corollary 5 gives a *condition* — equality of flags — and the flags form an infinite family of bits, which is not an algorithm. Third, reductions are compared only between forms with the same least degree $d$; across different $d$ nothing is claimed beyond the observation recorded before Lemma 1, that the graded dimensions already differ. The parity hypothesis is kept as the book's: for $d$ even all $b_{ij}=\binom{i+j}{i}$ are non-zero, while for $d$ odd the pairs with $i,j$ both odd have $b_{ij}=0$, hence $f_{ij}=\infty$, hence $\varepsilon_{ij}=0$ there for every form, so those pairs contribute only $\delta_{ij}$ to the flag.
-
+:::
 
 :::
+
+::: {.pf-step #limits}
+Three things are not claimed: that every flag pattern is realised, a decision procedure for comparing two reductions, and any comparison between forms with different least degree.
+
+::: pf-proof
+Three things, stated so that no later reader takes them from this card. First, no claim that *every* flag pattern is realised: what is proved is that a realised pattern determines the class, and that the patterns in item 3 are realised; characterising the realisable patterns among all pairs of bits is left open. Some patterns are certainly not realisable — at a pair with $p\nmid b_{ij}$ one has $f_{ij}=0$, so $e_{ij}\le f_{ij}$ forces $e_{ij}=0$ and hence the flag $(0,1)$ at that pair, and at a pair with $b_{ij}=0$ one has $f_{ij}=\infty$ and hence $\varepsilon_{ij}=0$; but no full characterisation is given. Second, no decision procedure is claimed for comparing two reductions: Corollary 5 gives a *condition* — equality of flags — and the flags form an infinite family of bits, which is not an algorithm. Third, reductions are compared only between forms with the same least degree $d$; across different $d$ nothing is claimed beyond the observation recorded before Lemma 1, that the graded dimensions already differ. The parity hypothesis is kept as the book's: for $d$ even all $b_{ij}=\binom{i+j}{i}$ are non-zero, while for $d$ odd the pairs with $i,j$ both odd have $b_{ij}=0$, hence $f_{ij}=\infty$, hence $\varepsilon_{ij}=0$ there for every form, so those pairs contribute only $\delta_{ij}$ to the flag.
+
+:::
+
+:::
+
+:::
+
+:::
+

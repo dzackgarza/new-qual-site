@@ -9,7 +9,7 @@ title: "Algebra qual prep week 2: finite group theory"
 
 - Recognition of direct products and semidirect products
 
-- Product formula: $\size{HK} = \size H \size K / \size{H\intersect K}$ for subgroups $H,K\le G$
+- Product formula: $\size{HK} = \size H \size K / \size{H\intersect K}$ for subgroups $H,K\le G$ ([[E-AMD-BTVLG2S2]])
 
 - Group actions
 
@@ -25,7 +25,7 @@ title: "Algebra qual prep week 2: finite group theory"
 
       - The homomorphism $G\to\Sym(G)$, $g\mapsto \psi_g$ with $\psi_g(x) \coloneqq gx$, is the Cayley representation, a permutation representation of $G$; $\Sym(G) \cong S_n$ for $n\coloneqq \size G$
 
-      - [Strong Cayley theorem](https://math.la.asu.edu/~kawski/classes/mat444/handouts/strongCayley.pdf)
+      - The strong form records the kernel: the action of $G$ on the cosets of $H$ has kernel the [[D-QMVEB|core]] of $H$, so a simple group with a proper subgroup of index $n$ embeds in $S_n$ and its order divides $n!$ ([[PR-5FGA7]]).
 
     - Self-action by conjugation
 

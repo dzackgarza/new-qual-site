@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP11-9
 kind: problem
 title: Fundamental group of a sphere with a diameter adjoined via its simply connected cover
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Fundamental Group, Spheres]}
 relations: []
 review: draft
 audit:

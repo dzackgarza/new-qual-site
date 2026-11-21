@@ -15,6 +15,14 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Checked against Question 29 of the Chapter 2 review questions in assets/attachments/extracted/chapter-2.md (Mistral OCR), compared with the same page in the Cracking the GRE Mathematics Subject Test book extraction.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`: the statement is question 29 of the Chapter 2
+    Review Questions, and its printed words are the card's. The chapter, the question number and
+    the file are now named in the solution's opening sentence. Not checked in this pass: the
+    argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -28,6 +36,7 @@ What is the area of the region in the first quadrant bounded by the curve $y = x
 :::
 
 ::: {.solution}
+This is question 29 of the Chapter 2 Review Questions of *Cracking the GRE Mathematics Subject Test*, retained in this repository as `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`; the statement below is its wording.
 
 ::: pf
 

@@ -214,6 +214,27 @@ audit:
     named and of the compiled book, and the restored text against
     9a74181332^. Not checked: no tag was re-read against its statement in this
     pass, and no page was re-read.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.1.8, printed p. 84,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.1.8, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    the exact sequence of structure sheaves, the vanishing of
+    H^1 of the skyscraper quotient, and the two consequences in part (b). Not checked: Yang's Solutions outside printed pp. 84-85; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.1.8 at printed
+    p. 84 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -278,7 +299,7 @@ $$
 
 The normalization is an isomorphism over the regular locus of the
 one-dimensional scheme $X$. Hence $\mathcal Q$ is supported on the finite
-singular locus. This is Lemma 33.41.2 (tag 0C1R) of the Stacks Project, printed p. 2904, which also gives the exact sequence $0\to\mco_X\to\nu_*\mco_{X^\nu}\to\bigoplus_x Q_x\to0$ with $\length Q_x$ the $\delta$-invariant of $X$ at $x$; that is the sequence the exercise states.
+singular locus. This is Lemma 33.41.2 (tag 0C1R) of the Stacks Project, which also gives the exact sequence $0\to\mco_X\to\nu_*\mco_{X^\nu}\to\bigoplus_x Q_x\to0$ with $\length Q_x$ the $\delta$-invariant of $X$ at $x$; that is the sequence the exercise states.
 
 At a closed point $P$, the residue field is $k$ because $k$ is
 algebraically closed. A finite-length $\mco_P$-module therefore has
@@ -462,7 +483,7 @@ The number $\delta_P$ depends only on the analytic isomorphism class of the sing
 
 ::: pf-proof
 
-This is the Stacks Project's argument, Chapter 33, Section 33.39, printed pp. 2899--2901, transcribed: Definition 33.39.3 (tag 0C3T) sets $\delta$ to be a length, and Lemma 33.39.6 (tag 0C3W) proves that this length does not change under henselization, strict henselization or completion, so $\delta$ is unchanged by completion; Definition 33.39.7 (tag 0C1T) attaches $\delta$ to a point $x$ through $\mathcal O_{X,x}$, and the two together make $\delta_P$ depend only on the completed local ring $\widehat{\mathcal O}_{X,P}$. Read tag by tag in `tmp/sources/stacks-tags/0C3T.md`, `0C3S.md`, `0C3V.md`, `0C3W.md` and `0C1T.md`, the site's build from stacks-project commit a04446e57ec1fbc252a871afcec7752fb2807b14 (28 July 2026); the page numbers are those of the retained compiled book of version ed88ff78, compiled 14 July 2026. In detail, with the notation below:
+This is the Stacks Project's argument, Chapter 33, Section 33.39, transcribed: Definition 33.39.3 (tag 0C3T) sets $\delta$ to be a length, and Lemma 33.39.6 (tag 0C3W) proves that this length does not change under henselization, strict henselization or completion, so $\delta$ is unchanged by completion; Definition 33.39.7 (tag 0C1T) attaches $\delta$ to a point $x$ through $\mathcal O_{X,x}$, and the two together make $\delta_P$ depend only on the completed local ring $\widehat{\mathcal O}_{X,P}$. Read tag by tag in `tmp/sources/stacks-tags/0C3T.md`, `0C3S.md`, `0C3V.md`, `0C3W.md` and `0C1T.md`, the site's build from stacks-project commit a04446e57ec1fbc252a871afcec7752fb2807b14 (28 July 2026); the page numbers are those of the retained compiled book of version ed88ff78, compiled 14 July 2026. In detail, with the notation below:
 
 Put
 $$
@@ -484,7 +505,7 @@ $$
 (B\otimes_A\widehat A)/\widehat A
 \right),
 $$
-which is Lemma 33.39.6 (tag 0C3W) with $B\otimes_A\widehat A=(A')^{\wedge}$; the same lemma and Lemma 33.41.2(9) (tag 0C1R), printed p. 2904, give it directly as $A'/A\cong(A')^{\wedge}/A^{\wedge}$.
+which is Lemma 33.39.6 (tag 0C3W) with $B\otimes_A\widehat A=(A')^{\wedge}$; the same lemma and Lemma 33.41.2(9) (tag 0C1R) give it directly as $A'/A\cong(A')^{\wedge}/A^{\wedge}$.
 
 The local ring $A$ is essentially of finite type over a field, hence
 excellent. For such a one-dimensional reduced local ring, normalization
@@ -544,7 +565,7 @@ $\delta_P=1$ for this cusp in every characteristic, including
 characteristic $2$.
 
 For an arbitrary ordinary cusp take $\operatorname{char}k\ne2$. Then (I, Ex.
-5.14(d)), printed pp. 38--39, puts the completed local ring in the form
+5.14(d)) puts the completed local ring in the form
 $k[[x,y]]/(y^2-x^r)$ with $r=3$, which is the ring computed above, and
 $\delta_P$ is an analytic invariant by step [](#s6){.pf-ref}. So every ordinary
 cusp has $\delta_P=1$ when $\operatorname{char}k\ne2$. That exercise assumes
@@ -573,8 +594,8 @@ $$
 k[[x,y]]/(xy) :
 $$
 a node is a double point of a plane curve with two distinct tangent
-directions (I, Ex. 5.6(b), printed p. 37), and any two ordinary double points
-are analytically isomorphic, which is (I, Ex. 5.14(c)), printed p. 38, and
+directions (I, Ex. 5.6(b)), and any two ordinary double points
+are analytically isomorphic, which is (I, Ex. 5.14(c)), and
 carries no characteristic hypothesis, so this computation holds in every
 characteristic.
 Its normalization is
@@ -634,7 +655,9 @@ steps [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (c).
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.8, printed pp. 208–209, text version `tmp/sources/hartshorne-solutions-egbert.md`, proves (a) by the short exact sequence $0\to H^0(X,\sum_{P}\widetilde\OO_P/\OO_P)\to H^1(X,\OO_X)\to H^1(\tilde X,\OO_{\tilde X})\to0$ obtained from (III.4.1) and the flasqueness of the skyscraper summand, whence $h^1(X,\OO_X)=h^1(\tilde X,\OO_{\tilde X})+\sum_P\delta_P$ and so $p_a(X)=p_a(\tilde X)+\sum_P\delta_P$, and (b) by observing that $p_a=0$ forces $\delta_P=0$ for every $P$, making all local rings normal and hence regular in dimension one.
-For part (c), the invariance of $\delta_P$ under analytic isomorphism is the Stacks Project's, Chapter 33, Section 33.39, read in `tmp/sources/stacks-tags/0C3T.md` and `0C3W.md` (site built from stacks-project commit a04446e57ec1fbc252a871afcec7752fb2807b14, 28 July 2026): Definition 33.39.3 (tag 0C3T) with Lemma 33.39.6 (tag 0C3W), printed pp. 2899--2901 of the retained compiled book of version ed88ff78, shows that $\delta$ is unchanged by henselization, strict henselization and completion, hence depends only on the completed local ring, and Definition 33.39.7 (tag 0C1T) is the definition that attaches $\delta$ to the point $P$ through $\mathcal O_{X,P}$; step [](#s6){.pf-ref} transcribes it. The two values $\delta_P=1$ at an ordinary cusp and at a node (steps [](#s7){.pf-ref} and [](#s8){.pf-ref}) are computed here: $k[[t]]/k[[t^2,t^3]]\cong k\cdot t$ and $(k[[x]]\times k[[y]])/k[[x,y]]/(xy)\cong k$.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.8, text version `tmp/sources/hartshorne-solutions-egbert.md`, proves (a) by the short exact sequence $0\to H^0(X,\sum_{P}\widetilde\OO_P/\OO_P)\to H^1(X,\OO_X)\to H^1(\tilde X,\OO_{\tilde X})\to0$ obtained from (III.4.1) and the flasqueness of the skyscraper summand, whence $h^1(X,\OO_X)=h^1(\tilde X,\OO_{\tilde X})+\sum_P\delta_P$ and so $p_a(X)=p_a(\tilde X)+\sum_P\delta_P$, and (b) by observing that $p_a=0$ forces $\delta_P=0$ for every $P$, making all local rings normal and hence regular in dimension one.
+For part (c), the invariance of $\delta_P$ under analytic isomorphism is the Stacks Project's, Chapter 33, Section 33.39, read in `tmp/sources/stacks-tags/0C3T.md` and `0C3W.md` (site built from stacks-project commit a04446e57ec1fbc252a871afcec7752fb2807b14, 28 July 2026): Definition 33.39.3 (tag 0C3T) with Lemma 33.39.6 (tag 0C3W) of the retained compiled book of version ed88ff78 shows that $\delta$ is unchanged by henselization, strict henselization and completion, hence depends only on the completed local ring, and Definition 33.39.7 (tag 0C1T) is the definition that attaches $\delta$ to the point $P$ through $\mathcal O_{X,P}$; step [](#s6){.pf-ref} transcribes it. The two values $\delta_P=1$ at an ordinary cusp and at a node (steps [](#s7){.pf-ref} and [](#s8){.pf-ref}) are computed here: $k[[t]]/k[[t^2,t^3]]\cong k\cdot t$ and $(k[[x]]\times k[[y]])/k[[x,y]]/(xy)\cong k$.
 
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.1.8 takes (a) from the exact sequence $0\to\OO_X\to f_*\OO_{\widetilde X}\to\sum_P\widetilde\OO_P/\OO_P\to0$: both outer $H^0$ are $k$ for projective curves, the quotient is a sum of skyscrapers so its $H^1$ vanishes, and the long exact sequence gives $p_a(X)=p_a(\widetilde X)+\sum_P\delta_P$. Its (b): $p_a=0$ forces every $\delta_P=0$, so every local ring is normal and the curve nonsingular, and then $p_a=0$ means genus zero, so $X\cong\PP^1$ by (1.3.5). Its (c) reduces to a plane curve by projecting, and computes $\delta_P$ from the local equation at a node or cusp.
 :::

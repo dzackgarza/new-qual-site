@@ -5,7 +5,9 @@ kind: problem
 title: Unitary triangularization of a complex linear operator
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Schur Decomposition
+  - Unitary Matrices
 relations: []
 review: draft
 audit:

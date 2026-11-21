@@ -139,28 +139,6 @@ nonreal zeros occur in conjugate pairs. In each conjugate pair exactly one zero 
 
 :::
 
-::: {.pf-step #s1-5}
-
-The requested number is
-$$
-\boxed{2}.
-$$
-
-
-::: pf-proof
-
-This is the conclusion of step [](#s1-4){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s1-5){.pf-ref} gives the requested count.
-
-:::
-
 :::
 
 :::

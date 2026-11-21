@@ -15,6 +15,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Variational Principle, Problem 1, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md. Flash prefixes “Fubini instanton” with a garbled decorative glyph; that non-problem artifact is omitted from the card.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Big_List_of_Math_Problems.pdf`: the statement is Problem 1 of the Variational
+    Principle chapter, and its printed parts (a), (b) and (c) are the card's three. The chapter, the
+    problem number and the file are now named in the solution's opening sentence. Not checked in this
+    pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -28,12 +36,13 @@ audit:
 :::
 
 ::: {.solution}
+This is Problem 1 of the Variational Principle chapter of *Mathematical Trivium* (the "Fubini instanton"), retained in this repository as `assets/attachments/Big_List_of_Math_Problems.pdf`; the statement below is its wording, parts (a) to (c) all printed there.
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-The Euler--Lagrange equation for
+Part (a): the Euler--Lagrange equation for
 $$
 S[f]
 =
@@ -84,19 +93,6 @@ $$
 =0.
 $$
 Divide by $x^3$ for $x>0$.
-
-:::
-
-:::
-
-::: {.pf-step #s1-2}
-
-Part (a) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -309,7 +305,7 @@ Multiply by $\sqrt{2/\lambda}$.
 
 ::: {.pf-step #s1-9}
 
-Together with
+Part (b): together with
 $$
 \boxed{f\equiv0},
 $$
@@ -324,19 +320,6 @@ $$
 The functions in step [](#s1-8){.pf-ref} decay as $x^{-2}$, and their derivatives decay as $x^{-3}$, so they satisfy the boundary conditions.
 Step [](#s1-7){.pf-ref} exhausts the nonzero zero-energy trajectories compatible with regularity at $x=0$.
 The zero solution is immediate.
-
-:::
-
-:::
-
-::: {.pf-step #s1-10}
-
-Part (b) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -583,7 +566,7 @@ Steps [](#s1-16){.pf-ref} through [](#s1-17){.pf-ref} give the action on all sol
 
 ::: pf-qed
 
-Steps [](#s1-2){.pf-ref} and [](#s1-10){.pf-ref}, and [](#s1-18){.pf-ref} establish parts (a), (b), and (c), respectively.
+Steps [](#s1-1){.pf-ref} and [](#s1-9){.pf-ref}, and [](#s1-18){.pf-ref} establish parts (a), (b), and (c), respectively.
 
 :::
 

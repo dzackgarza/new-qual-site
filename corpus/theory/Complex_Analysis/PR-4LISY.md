@@ -20,4 +20,6 @@ Then $\sum_{n=1}^\infty f_n$ converges uniformly on $X$ if and only if
 $$
 \lim_{n\to \infty} \sup_{x\in X}\abs{ \sum_{k\geq n} f_k(x) } = 0.
 $$
+
+The criterion is [@Rud76, ch. 7, Theorem 7.8], the uniform Cauchy criterion, read for the partial sums $s_n=\sum_{k\le n}f_k$: the tails in the display are $s-s_n$ for the limit function $s$, and the hypothesis that the series converges at every point is what makes $s$ exist there.
 :::

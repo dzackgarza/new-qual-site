@@ -12,6 +12,22 @@ classification:
   - Zero Loci
 relations: []
 review: draft
+audit:
+  - event: solution-reviewed
+    by: claude
+    date: 2026-11-19
+    note: >-
+      Read against the Lamport standard and checked. The reduction is legitimate: an invertible
+      linear change of coordinates carries a zero locus of n polynomials to a zero locus of the n
+      composites, which are polynomials. The generic projection is the right one: for j != l the
+      hyperplane of lambda vanishing on p_j - p_l is proper, a finite union of proper subspaces of
+      k^n is not all of k^n because k is infinite, so some lambda separates all pairs, and extending
+      it to a basis gives an invertible phi whose first coordinate is lambda. The interpolation is
+      correct: the Lagrange polynomial has degree at most d-1 and takes p_l^k at p_l^1, because the
+      j != l products vanish there and the j = l product is 1. Both inclusions hold: f_1 vanishes at
+      every p_l through its own factor, f_k through the interpolation; and f_1(q) = 0 forces q^1 to be
+      some p_j^1, after which the other f_k force q = p_j. The degenerate case d = 0 is handled at the
+      start. Not claimed: any bound better than n polynomials, which is the exercise's point.
 ---
 
 ::: {.problem}

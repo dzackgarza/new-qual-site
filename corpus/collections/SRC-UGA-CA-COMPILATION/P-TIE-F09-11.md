@@ -6,7 +6,9 @@ title: Fixed points of analytic self-maps of the disk
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Schwarz Lemma
+  - Fixed Points
 relations: []
 review: draft
 audit:

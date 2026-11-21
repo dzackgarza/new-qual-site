@@ -10,6 +10,19 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 2 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p.
+    2 of the paper's own numbered pages, is the statement the card answers, and the head of the solution
+    names it; the file retained at assets/attachments/SP24_math_202_exam.pdf puts a cover page before
+    those pages, so paper p. 2 is its page 3. Checked: the statement against the paper's text layer at
+    the page named; the Gershgorin argument from an eigenvector and a coordinate of maximal modulus;
+    `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the QED. Not checked: no
+    retained solution set exists for this paper to compare the argument with, and no other card of the
+    collection in this pass.
 ---
 
 ::: {.problem}
@@ -25,32 +38,61 @@ $$
 :::
 
 ::: {.solution}
-Let $Ax=\lambda x$ with $x\ne0$. Choose an index $i$ such that
+
+The problem is Problem 2 of the Qualifier Exam in Applied Algebra of May 23, 2024, retained at `assets/attachments/SP24_math_202_exam.pdf`.
+
+No retained solution set covers this exercise: the collection's provenance is the exam paper `assets/attachments/SP24_math_202_exam.pdf` and no solutions sheet accompanies it, so the argument below is the card's own; it is the standard proof of the first half of the Gershgorin circle theorem. The earlier version of the card left two points unstated: that the maximum modulus coordinate exists and is nonzero, and that every $\abs{x_{j}}$ is at most $\abs{x_{i}}$ — which is the inequality the estimate turns on.
+
+Throughout, $A=(a_{ij})\in M_{n}(\CC)$, and for $1\leq i\leq n$
 $$
-\abs{x_i}=\max_{1\le k\le n}\abs{x_k}.
+D_{i}\coloneqq\Biggl\{\beta\in\CC\ \mid\ \abs{\beta-a_{ii}}\leq\sum_{j\neq i}\abs{a_{ij}}\Biggr\}.
 $$
-Then $x_i\ne0$. Looking at the $i$th coordinate of the eigenvalue equation gives
+
+::: pf
+
+::: {.pf-step #maximal-coordinate}
+Let $\lambda$ be an eigenvalue of $A$ with eigenvector $x\neq0$. There is an index $i$ with $\abs{x_{i}}=\max_{1\leq k\leq n}\abs{x_{k}}$, and for that $i$ one has $x_{i}\neq0$ and $\abs{x_{j}}\leq\abs{x_{i}}$ for every $j$.
+
+::: pf-proof
+The set $\theset{\abs{x_{1}},\dots,\abs{x_{n}}}$ is a nonempty finite set of real numbers, so it has a maximum, attained at some index $i$. Since $x\neq0$ some coordinate is nonzero, so the maximum is positive and $x_{i}\neq0$. Every $\abs{x_{j}}$ is at most the maximum by definition of maximum.
+:::
+
+:::
+
+::: {.pf-step #row-equation}
+$(\lambda-a_{ii})x_{i}=\sum_{j\neq i}a_{ij}x_{j}$.
+
+::: pf-proof
+The eigenvalue equation is $Ax=\lambda x$, whose $i$-th coordinate reads $\sum_{j=1}^{n}a_{ij}x_{j}=\lambda x_{i}$. Moving the $j=i$ term to the right, $\sum_{j\neq i}a_{ij}x_{j}=\lambda x_{i}-a_{ii}x_{i}=(\lambda-a_{ii})x_{i}$.
+:::
+
+:::
+
+::: {.pf-step #estimate}
+$\abs{\lambda-a_{ii}}\abs{x_{i}}\leq\abs{x_{i}}\sum_{j\neq i}\abs{a_{ij}}$.
+
+::: pf-proof
+Taking moduli in step [](#row-equation){.pf-ref} and applying the triangle inequality,
 $$
-\sum_{j=1}^n a_{ij}x_j=\lambda x_i,
+\abs{\lambda-a_{ii}}\abs{x_{i}}=\abs{\sum_{j\neq i}a_{ij}x_{j}}\leq\sum_{j\neq i}\abs{a_{ij}}\abs{x_{j}}\leq\sum_{j\neq i}\abs{a_{ij}}\abs{x_{i}}=\abs{x_{i}}\sum_{j\neq i}\abs{a_{ij}},
 $$
-so
-$$
-(\lambda-a_{ii})x_i=\sum_{j\ne i}a_{ij}x_j.
-$$
+where the middle inequality uses $\abs{x_{j}}\leq\abs{x_{i}}$ from step [](#maximal-coordinate){.pf-ref} and the fact that each $\abs{a_{ij}}$ is nonnegative.
+:::
+
+:::
+
+::: pf-step
 Therefore
 $$
-\abs{\lambda-a_{ii}}\,\abs{x_i}
-\le
-\sum_{j\ne i}\abs{a_{ij}}\,\abs{x_j}
-\le
-\abs{x_i}\sum_{j\ne i}\abs{a_{ij}}.
+\boxed{\lambda\in\bigcup_{i=1}^{n}D_{i}.}
 $$
-Dividing by $\abs{x_i}>0$ yields
-$$
-\abs{\lambda-a_{ii}}\le\sum_{j\ne i}\abs{a_{ij}}.
-$$
-Thus $\lambda\in D_i$, and hence
-$$
-\boxed{\lambda\in\bigcup_{i=1}^nD_i.}
-$$
+
+::: pf-proof
+Dividing the inequality of step [](#estimate){.pf-ref} by $\abs{x_{i}}>0$, which is legitimate by step [](#maximal-coordinate){.pf-ref}, gives $\abs{\lambda-a_{ii}}\leq\sum_{j\neq i}\abs{a_{ij}}$, which is exactly the defining condition for $\lambda\in D_{i}$; and $D_{i}$ is one of the sets in the union. Note that the index $i$ is chosen from the eigenvector, so it depends on $\lambda$.
+:::
+
+:::
+
+:::
+
 :::

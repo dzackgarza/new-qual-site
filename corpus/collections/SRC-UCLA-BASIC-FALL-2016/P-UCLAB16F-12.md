@@ -5,7 +5,9 @@ kind: problem
 title: First-order characterization of differentiable convex functions
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Convex Functions
+  - Differentiation
 relations: []
 review: draft
 audit:

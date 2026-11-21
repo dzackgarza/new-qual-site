@@ -36,7 +36,6 @@ audit:
     is the correct codomain; and for commutative R the two multiplications
     coincide. Complete; no defect.
 ---
----
 
 ::: {.problem}
 Let $R$ be a ring with identity. Show that there is a ring isomorphism $\Hom_R(R, R) \cong R^{\mathrm{op}}$ where $\Hom_R$ denotes left $R$-module homomorphisms.

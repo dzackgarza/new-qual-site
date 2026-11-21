@@ -5,7 +5,9 @@ kind: problem
 title: Equality of row rank and column rank
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Rank and Nullity
+  - Linear Independence
 relations: []
 review: draft
 audit:

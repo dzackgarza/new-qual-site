@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP06-A5
 kind: problem
 title: Clopen bases and the weight of zero-dimensional compact Hausdorff spaces
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Clopen Sets, Compactness]}
 relations: []
 review: draft
 audit:

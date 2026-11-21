@@ -27,6 +27,24 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.4.4, printed pp. 90--91,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF pages are the printed
+    pages. Checked against the book: Hartshorne IV.4.4, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the completed square, that $(a^2+b^2+c^2-ab-bc-ca)$ at $(a,b,c)=(\lambda,1,0)$ is $\lambda^2-\lambda+1$ and $(a-b)(b-c)(c-a)$ is $-\lambda(\lambda-1)$, hence the missing $2^8$; and the two candidate coefficients for case 7, $1728\frac{8k}{8k+27}$ against $1728\frac{k}{k+1}$ at $k=\frac{j}{1728-j}$.
+    Not checked: Yang's Solutions outside printed pp. 90--91; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's Solution 4.4.4 at printed pp. 90--91; it had none before. No step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -257,4 +275,8 @@ every prescribed $j$-invariant $\alpha\in k_0$.
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.4, completes the square by $y\mapsto y-\frac{a_1x+a_3}{2}$, which carries the equation to $y^2=x^3+\bigl(a_2+\frac{a_1^2}{4}\bigr)x^2+\bigl(a_4+\frac{a_1a_3}{2}\bigr)x+\bigl(a_6+\frac{a_3^2}{4}\bigr)$, writes the cubic as $(x-a)(x-b)(x-c)$, and reaches $j$ in the two forms $j=2^8\frac{(\lambda^2-\lambda+1)^3}{\lambda^2(\lambda-1)^2}$ with $\lambda=\frac{a-c}{a-b}$ and $j=\frac{(a^2+b^2+c^2-ab-bc-ca)^3}{((a-b)(b-c)(c-a))^2}$; on printed p. 91 it then gives $j$ in the $a_i$, by Vieta's theorem, as one quotient of degree-six expressions, and settles existence in seven cases by characteristic and $j$, from $y^2+y=x^3$ in characteristic $2$ to $y^2=x^3+2kx+2k$ with $k=\frac{j}{1728-j}$ in characteristic $\ne2,3$. Two printed statements do not survive checking. The symmetric expression is missing the factor $2^8$: at $(a,b,c)=(\lambda,1,0)$, which is the Legendre curve itself, its numerator is $(\lambda^2-\lambda+1)^3$ and its denominator $\lambda^2(\lambda-1)^2$, so it is $\frac{1}{256}$ of the entry's own preceding expression, and the correct symmetric form is $2^8\frac{(a^2+b^2+c^2-ab-bc-ca)^3}{((a-b)(b-c)(c-a))^2}$. And case 7's curve does not carry the $j$ it is offered for: $y^2=x^3+2kx+2k$ has $j=1728\frac{8k}{8k+27}$, which under $k=\frac{j}{1728-j}$ equals $j$ only at $j=1728$; with $3kx$ in place of $2kx$ the same $k$ gives $1728\frac{k}{k+1}=j$, so the coefficient is the slip and the value of $k$ is right. Worth naming as well: the derivation of the $j$-formula divides by $2$, so cases 1 and 2, which are characteristic $2$, are separate constructions rather than instances of it.
 :::

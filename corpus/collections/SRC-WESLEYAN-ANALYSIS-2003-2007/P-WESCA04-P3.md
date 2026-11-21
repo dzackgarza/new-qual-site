@@ -5,7 +5,8 @@ kind: problem
 title: "Evaluate a contour integral around a spiral closed by a segment"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Contour Integration
 relations: []
 review: draft
 audit:
@@ -13,6 +14,41 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis section 1.3, problem 3 (August 2, 2004) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 34, printed page 2: section 1.3 item 3 of
+    the Preliminary Examination in Analysis, Wesleyan University, August 2, 2004. The
+    page had cited only the extraction; it now names the examination, its item and the
+    page of the scan. The statement is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The proof ended with a pf-qed that only announced that an earlier step had answered
+    the question, which STYLE-08 forbids; it is dropped, and the step that carries the
+    result is now the QED step. No argument or statement changes.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The crossing step said that each downward crossing of the negative real axis adds a full
+    turn, i.e. an argument increase of 2 pi, which is not what a single crossing does. It now
+    argues the count: at N crossings the lifted argument passes 3 pi, 5 pi, ..., (2N-1) pi and
+    ends at a positive multiple of 2 pi lying between (2N-1) pi and (2N+1) pi, namely 2 pi N.
+    The winding numbers 2 and 1 and the integral are unchanged.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -28,6 +64,9 @@ $$
 :::
 
 ::: {.solution}
+The item is section 1.3 item 3 of the Preliminary Examination in Analysis, Wesleyan University,
+August 2, 2004 (the integral of $(z^2+1)/((z+1)(z+4))$ along the spiral $t e^{it}$ closed by the segment $[4\pi,0]$).
+
 
 Set
 $$
@@ -264,8 +303,11 @@ $$
 $$
 so the lifted argument continues increasing through $\pi$ rather than
 jumping to $-\pi$.
-Since the curve begins and ends on the positive real axis, each such crossing
-adds one full turn, i.e. an argument increase of $2\pi$.
+Since the curve begins and ends on the positive real axis and every crossing of
+the negative axis is downward, the lifted argument passes through
+$\pi,3\pi,\dots,(2N-1)\pi$ at $N$ crossings and ends at the multiple of $2\pi$ that
+lies above $(2N-1)\pi$ and below $(2N+1)\pi$, namely $2\pi N$; the winding number
+is therefore the number of such crossings.
 
 :::
 
@@ -431,11 +473,6 @@ $$
 
 :::
 
-::: pf-qed
-
-Step [](#s1-10){.pf-ref} is the requested contour integral.
-
-:::
 
 :::
 

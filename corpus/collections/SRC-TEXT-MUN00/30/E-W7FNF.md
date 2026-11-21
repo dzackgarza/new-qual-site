@@ -27,6 +27,18 @@ audit:
     unproved; the card exhibits the uncountably many pairwise disjoint open vertical intervals
     {x} x (0,1) that no countable set can meet. Note that the rational points of I_o^2 are not
     dense: an interval {x} x (0,1) with x irrational meets Q x Q in no point.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Structured both arguments into numbered steps. Converted two assertions into proofs: that the
+    vertical intervals of the ordered square are open (each is the interval (x x 0, x x 1) of the
+    dictionary order) and that uncountably many pairwise disjoint nonempty open sets prevent
+    separability; and, for the compact half, that a compact metric space is separable, proved here by
+    taking a finite (1/n)-net for each n and collecting the centres. Kept as citations the two book
+    facts the transcription used: Example 3 of Section 30 for the Lindelof property of R_l and
+    Example 5 for the compactness of I_o^2. Not re-read this session: the Orellana page and Munkres
+    printed pp. 192-194.
 ---
 
 ::: {.exercise}
@@ -35,15 +47,74 @@ Show that $\RR_\ell$ and $I_o^2$ are not metrizable.
 :::
 
 ::: {.solution}
-For the lower limit line $\RR_\ell$, the rationals are dense, so the space is separable. If it were metrizable, every separable metric space would be second countable. But $\RR_\ell$ is not second countable: if $\mathcal B$ were a basis, then for each $x\in\RR$ choose $B_x\in\mathcal B$ with
-$$
-x\in B_x\subset[x,x+1).
-$$
-If $x<y$, then $x\in B_x$ while $x\notin B_y\subset[y,y+1)$, so $B_x\ne B_y$. Thus $x\mapsto B_x$ injects the uncountable set $\RR$ into $\mathcal B$, contradicting countability. Hence $\RR_\ell$ is not metrizable.
 
-For the ordered square $I_o^2=[0,1]\times[0,1]$ in the dictionary order topology, the open vertical intervals
-$$
-\{x\}\times(0,1),\qquad x\in[0,1],
-$$
-form an uncountable family of pairwise disjoint nonempty open sets. Therefore $I_o^2$ is not separable. The ordered square is compact. If it were metrizable, compact metrizability would imply second countability, hence separability, contradiction. Thus $I_o^2$ is not metrizable.
+The route is that of **Ana Emilia de Orellana, "Solutions - Topology Munkres", Section 30 Exercise 6** (`tmp/sources/munkres-solutions-anadeore.pdf`), with the non-separability of the ordered square proved rather than asserted. The statement was checked against Munkres, *Topology* (2000), §30 Exercise 6.
+
+::: pf
+
+::: {.pf-step #rl-separable}
+$\RR_{\ell}$ is separable.
+
+::: pf-proof
+$\QQ$ is countable, and every basis element $[a,b)$ with $a<b$ contains the rational points of $(a,b)$, which is nonempty because $\QQ$ is dense in $\RR$. A set meeting every basis element meets every nonempty open set, so $\QQ$ is dense in $\RR_{\ell}$.
+:::
+
+:::
+
+::: {.pf-step #rl-not-second}
+$\RR_{\ell}$ is not second countable.
+
+::: pf-proof
+Let $\mathcal{B}$ be a basis. For $x\in\RR$ the set $[x,x+1)$ is a neighbourhood of $x$, so there is $B_{x}\in\mathcal{B}$ with $x\in B_{x}\subset[x,x+1)$. A basis element of $\RR_{\ell}$ is $[a,b)$; from $x\in[a,b)\subset[x,x+1)$ we get $x\geq a$, and since $a\in[a,b)\subset[x,x+1)$ also $a\geq x$, so $a=x$. Thus $B_{x}$ has left endpoint $x$, and distinct $x$ give distinct basis elements: $x\mapsto B_{x}$ injects $\RR$ into $\mathcal{B}$, so $\mathcal{B}$ is uncountable.
+:::
+
+:::
+
+::: {.pf-step #rl-not-metrizable}
+$\RR_{\ell}$ is not metrizable.
+
+::: pf-proof
+A metrizable separable space is second countable, which is Exercise 5 of §30. Steps [](#rl-separable){.pf-ref} and [](#rl-not-second){.pf-ref} contradict this, so $\RR_{\ell}$ is not metrizable.
+:::
+
+:::
+
+::: {.pf-step #square-not-separable}
+$I_{o}^{2}$ is not separable.
+
+::: pf-proof
+For $x\in[0,1]$ the set $V_{x}=\{x\}\times(0,1)$ is the open interval $\bigl(x\times0,\,x\times1\bigr)$ of the dictionary order, hence open and nonempty, and the family $\{V_{x}\}$ is uncountable and pairwise disjoint: $V_{x}$ consists of the points of first coordinate $x$. A dense set meets every $V_{x}$, and a point of $V_{x}$ lies in no $V_{y}$ with $y\neq x$, so a dense set has at least one point for each $x$ and is uncountable.
+:::
+
+:::
+
+::: {.pf-step #compact-separable}
+Every compact metric space is separable.
+
+::: pf-proof
+Let $(Z,d)$ be compact. For each $n$ the balls $B(z,1/n)$ with $z\in Z$ cover $Z$, so finitely many cover, say those with centres $z_{n,1},\dots,z_{n,k_{n}}$. Let $S$ be the set of all centres over all $n$, which is a countable union of finite sets and so countable. It is dense: for $z\in Z$ and $\varepsilon>0$ choose $n$ with $1/n<\varepsilon$; some centre $z_{n,j}$ satisfies $d(z,z_{n,j})<1/n<\varepsilon$, so $S$ meets $B(z,\varepsilon)$.
+:::
+
+:::
+
+::: {.pf-step #square-not-metrizable}
+$I_{o}^{2}$ is not metrizable.
+
+::: pf-proof
+$I_{o}^{2}$ is compact, this being Example 5 of §30. Were it metrizable, step [](#compact-separable){.pf-ref} would make it separable, contradicting step [](#square-not-separable){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step}
+Neither $\RR_{\ell}$ nor $I_{o}^{2}$ is metrizable.
+
+::: pf-proof
+Steps [](#rl-not-metrizable){.pf-ref} and [](#square-not-metrizable){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::

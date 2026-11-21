@@ -13,6 +13,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the two Green-theorem applications it turns on. The solution's statement of
+    Cauchy's theorem required only that the interior of $\gamma$ lie in $\Omega$, and that
+    hypothesis is not enough to make the theorem meaningful, because $\Omega$ is open:
+    $\Omega=\theset{\abs z<1}$ with $\gamma=\theset{\abs z=1}$ satisfies it while $\gamma$ misses
+    $\Omega$ entirely, so $f$ need not be defined on $\gamma$ and $u,v\in C^1(\overline{D})$, which
+    the Green step needs, does not follow. The hypothesis now reads
+    $\gamma\subseteq\Omega$ and $\operatorname{Int}(\gamma)\subseteq\Omega$, i.e.
+    $\overline{\operatorname{Int}(\gamma)}\subseteq\Omega$ for a Jordan curve, and the step that
+    applies Green's theorem says where the clause is used. The two applications and both
+    Cauchy--Riemann cancellations were re-derived and are unchanged. Not checked in this pass:
+    anything outside this solution.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
@@ -23,10 +38,12 @@ Use Green theorem or otherwise to prove the Cauchy theorem.
 :::
 
 ::: {.solution}
+
+The argument is the card's own: $f\,dz$ is split into its real and imaginary line integrals and Green's theorem is applied to each, with the Cauchy--Riemann equations making both double integrals vanish, and no source transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
 ### Statement of Cauchy's theorem for $C^1$ functions
 
 Let $\Omega \subset \CC$ be a simply connected domain.
-Let $f: \Omega \to \CC$ be a holomorphic function whose derivative $f'$ is continuous ($f \in C^1(\Omega)$). Let $\gamma$ be a piecewise smooth, positively oriented simple closed curve whose interior $\text{Int}(\gamma)$ is contained in $\Omega$.
+Let $f: \Omega \to \CC$ be a holomorphic function whose derivative $f'$ is continuous ($f \in C^1(\Omega)$). Let $\gamma$ be a piecewise smooth, positively oriented simple closed curve with $\gamma \subseteq \Omega$ and $\text{Int}(\gamma) \subseteq \Omega$, that is, with $\overline{\text{Int}(\gamma)} \subseteq \Omega$.
 Then: $$\oint_\gamma f(z) \, dz = 0.$$
 
 * * *
@@ -106,7 +123,7 @@ Since $f'$ is continuous, the partial derivatives $u_x, u_y, v_x, v_y$ exist and
 
 ::: pf-proof
 
-Continuity of $f'$ implies $u, v \in C^1(\overline{D})$.
+Continuity of $f'$ implies $u, v \in C^1(\overline{D})$. Here is where the hypothesis $\gamma \subseteq \Omega$ is used: $\overline{D} = \overline{\text{Int}(\gamma)} = \text{Int}(\gamma) \cup \gamma \subseteq \Omega$, so $f$ is defined and $C^1$ on a neighbourhood of $\overline{D}$. Under the weaker hypothesis $\text{Int}(\gamma) \subseteq \Omega$ alone the values of $f$ on $\gamma$, and with them the integral the theorem is about, need not exist.
 
 :::
 

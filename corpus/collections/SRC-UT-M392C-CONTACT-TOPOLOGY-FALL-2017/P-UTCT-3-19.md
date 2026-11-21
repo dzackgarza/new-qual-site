@@ -6,7 +6,9 @@ title: Half-elliptic and half-hyperbolic singularities on a piecewise graph surf
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Singularities
+  - Manifolds
 relations: []
 review: draft
 audit:

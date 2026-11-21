@@ -6,7 +6,9 @@ title: The center of a ring is a subring
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Center of a Ring
+  - Subrings
 relations: []
 review: draft
 audit:

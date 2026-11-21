@@ -20,10 +20,20 @@ The \dfn{logarithmic derivative} of $f$ is the meromorphic function on $\Omega$
 $$
 \partial_{\log}f\coloneqq\frac{f'}{f}.
 $$
+
+This is the quotient $f'/f$ of [@Ahl73, ch. 4, §5.2, The Argument Principle], where it is shown to have a simple pole with residue $h$ at a zero of order $h$ and residue $-h$ at a pole of order $h$ — the two clauses of the proposition below.
 :::
 
 ::: {.proposition}
 Let $f$ be as in the definition and let $z_0\in\Omega$ be a [[D-65VIK|zero of order $m$]] or a [[D-AUD6K|pole of order $m$]] of $f$.
 Then $f'/f$ has a simple pole at $z_0$ with residue $m$ in the first case and $-m$ in the second.
 At every other point of $\Omega$, $f'/f$ is holomorphic.
+:::
+
+::: {.proposition}
+Let $f\in\CC(x)$ be a nonzero rational function and $p\in\CC$.
+Then the residue at $p$ of the logarithmic derivative is the valuation of $f$ at the prime ideal $\generators{x-p}\subseteq\CC[x]$:
+$$
+\Res_{z=p}\qty(d\log f) = v_p(f).
+$$
 :::

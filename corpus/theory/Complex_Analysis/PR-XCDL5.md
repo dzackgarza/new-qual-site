@@ -21,6 +21,8 @@ $$
 F\colon\HH=\theset{z\st\Im z>0}\to\theset{w\st0<\Im w<\pi},\qquad F(z)=\Log z,
 $$
 is a [[D-TM4TE|biholomorphism]], with inverse $w\mapsto e^w$.
+
+This is the exponential correspondence of [@Ahl73, ch. 3, §4.1, The Use of Level Curves], read for the strip $0<\Im z<\pi$ and its inverse: the book states it for the strip $-\pi/2<y<\pi/2$ onto the right half plane, that the function $\zeta=e^z$ maps the strip onto $\xi>0$ and that the lines $x=x_0$ and $y=y_0$ go to circles about the origin and rays of constant argument. Rotating the two planes by $\pi/2$ carries the book's strip and half plane into the strip $0<\Im w<\pi$ and $\HH$, and the map into $\Log$.
 :::
 
 ::: {.remark}

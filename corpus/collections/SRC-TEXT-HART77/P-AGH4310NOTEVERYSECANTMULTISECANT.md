@@ -29,6 +29,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.3.10, printed p. 89,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.3.10, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed both bad loci: collinear $n$-tuples, of dimension $2(n-1)+n$ and codimension $(n-1)(n-2)$, and $n$-tuples in a $\PP^{n-2}$, of codimension $2$ --- properly contained in the $n^2$-dimensional product, so the incidence argument closes once the condition is the right one.
+    Not checked: Yang's Solutions outside printed p. 89; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.3.10 at printed
+    p. 89 beside the entries already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -411,5 +431,7 @@ their $(n-2)$-plane contains no further point of $X$.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.10, printed p. 223, text version `tmp/sources/hartshorne-solutions-egbert.md` (entry 4.3.19), uses the trisecant lemma together with a general hyperplane section: the $d$ points of the section span the hyperplane, so $n-1$ of them cannot lie in a smaller linear space for general choices.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.10, text version `tmp/sources/hartshorne-solutions-egbert.md` (entry 4.3.19), uses the trisecant lemma together with a general hyperplane section: the $d$ points of the section span the hyperplane, so $n-1$ of them cannot lie in a smaller linear space for general choices.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.3.10, argues by a closed bad locus inside a product: the tuples that lie on a line form a closed subvariety $H$ of $(\PP^n)^{\times n}$, and since $X$ is in no $\PP^{n-1}$ one has $X^{\times n}\not\subset H$, so $X^{\times n}\cap\bigl((\PP^n)^{\times n}-H\bigr)$ is a nonempty open subset of $X^{\times n}$ and almost every tuple consists of non-collinear points. Two things need attention as printed. $H$ is not a hyperplane: the collinear $n$-tuples have dimension $2(n-1)+n$ inside $(\PP^n)^{\times n}$, hence codimension $(n-1)(n-2)$, which is $2$ already at $n=3$; the argument uses only that $H$ is closed and proper, which it is. And collinearity is not the condition the exercise needs: the $(n-1)$-tuple spans a $\PP^{n-2}$, and a further point $P_n\in X$ inside that span means the $n$ points lie in a $\PP^{n-2}$, not on a line. With 'contained in a $\PP^{n-2}$' in place of 'collinear' the same incidence argument works --- those tuples form a closed subvariety of codimension $2$, and $X$ in no $\PP^{n-1}$ keeps $X^{\times n}$ out of it --- whereas as printed the entry proves only that a general $n$-tuple is not collinear.
 :::

@@ -13,6 +13,23 @@ classification:
   - Zorn's Lemma
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the one container states why its subclaims suffice, and the 22 leaf
+    steps that asserted their claim with no justification each carry a sentence deriving it. Two steps,
+    the nilradical being an ideal and the prime ideal P being prime, had their argument written as a
+    bullet list after the step closed, so the bullets sat in the enclosing proof rather than in the step;
+    each step now carries an independent one-line justification and the bullets are left where they were,
+    since moving them means rewiring fences and a first attempt at that produced a document the filter
+    refused. The mathematics is unchanged: the binomial argument for closure under differences, the
+    induction on n turning x^n in a prime ideal into x in it, the Zorn argument on ideals avoiding the
+    powers of a non-nilpotent element, and the final contradiction from the uniqueness of the prime ideal.
+    Checked against the statement on the card, from the UGA Fall 2019 algebra qualifying exam. Nothing in
+    the statement was changed.
+
 ---
 ::: {.problem}
 Let $R$ be a commutative ring with identity $1 \ne 0$. Assume Zorn's Lemma.
@@ -48,11 +65,21 @@ $N$ is an ideal:
         - For any $s \in R$ and $x \in N$ with $x^m = 0$: $(s x)^m = s^m x^m = s^m \cdot 0 = 0$, so $s x \in N$.
         - Thus $N$ is an ideal of $R$.
 
+
+::: pf-proof
+The three bullets verify the three closure conditions: $0$ is nilpotent, the difference of two nilpotent elements is nilpotent by the binomial expansion, and a multiple of a nilpotent element is nilpotent.
+:::
+
 :::
 
 ::: pf-step
 
 $N \subseteq \mathfrak{p}$ for every prime ideal $\mathfrak{p}$:
+
+
+::: pf-proof
+If $x^n=0\in\mathfrak{p}$ and $\mathfrak{p}$ is prime, then induction on $n$ using primality gives $x\in\mathfrak{p}$.
+:::
 
 :::
 
@@ -76,6 +103,11 @@ For every nonnilpotent $r\in R$, a prime ideal exists that contains no positive 
 
 Define the multiplicative set $\Sigma = \{r^k \mid k \in \NN_{\ge 1}\}$.
 
+
+::: pf-proof
+This is a definition, and $\Sigma$ is multiplicative because $r^j r^k=r^{j+k}$.
+:::
+
 :::
 
 ::: pf-step
@@ -83,11 +115,21 @@ Define the multiplicative set $\Sigma = \{r^k \mid k \in \NN_{\ge 1}\}$.
 Define the family of ideals:
     $$\mathcal{S} = \{I \trianglelefteq R \mid I \cap \Sigma = \emptyset\}.$$
 
+
+::: pf-proof
+This is a definition of the family of ideals to which Zorn's lemma will be applied.
+:::
+
 :::
 
 ::: pf-step
 
 $\mathcal{S}$ is non-empty: Since $r \notin N$, $r^k \ne 0$ for all $k \ge 1$, which means $\{0\} \cap \Sigma = \emptyset$. Thus the zero ideal $\{0\} \in \mathcal{S}$.
+
+
+::: pf-proof
+If $r^k=0$ for some $k\ge1$ then $r\in N$, contrary to hypothesis; so no power of $r$ is $0$ and the zero ideal misses $\Sigma$.
+:::
 
 :::
 
@@ -95,11 +137,21 @@ $\mathcal{S}$ is non-empty: Since $r \notin N$, $r^k \ne 0$ for all $k \ge 1$, w
 
 Partially order $\mathcal{S}$ by inclusion $\subseteq$.
 
+
+::: pf-proof
+Inclusion is a partial order on any family of sets.
+:::
+
 :::
 
 ::: pf-step
 
 Upper bounds for chains: Let $\mathcal{C} \subseteq \mathcal{S}$ be a totally ordered chain of ideals. The union $I_0 = \bigcup_{I \in \mathcal{C}} I$ is an ideal of $R$. If $I_0 \cap \Sigma \ne \emptyset$, then $r^k \in I_0$ for some $k$, so $r^k \in I'$ for some $I' \in \mathcal{C}$, contradicting $I' \in \mathcal{S}$. Thus $I_0 \in \mathcal{S}$, and $I_0$ is an upper bound for $\mathcal{C}$.
+
+
+::: pf-proof
+The union of a chain of ideals is an ideal, and it misses $\Sigma$: a member $r^k$ of the union already lies in one ideal of the chain, which would then meet $\Sigma$.
+:::
 
 :::
 
@@ -107,17 +159,32 @@ Upper bounds for chains: Let $\mathcal{C} \subseteq \mathcal{S}$ be a totally or
 
 By Zorn's Lemma, $\mathcal{S}$ has a maximal element, denoted $P \in \mathcal{S}$.
 
+
+::: pf-proof
+The family is non-empty and every chain in it has an upper bound, which is the hypothesis of Zorn's lemma.
+:::
+
 :::
 
 ::: pf-step
 
 $P$ is a proper ideal: if $1 \in P$, then $r = r \cdot 1 \in P$, contradicting $P \cap \Sigma = \emptyset$.
 
+
+::: pf-proof
+If $1\in P$ then $r=r\cdot1\in P$, and $r\in\Sigma$, contradicting $P\cap\Sigma=\varnothing$.
+:::
+
 :::
 
 ::: pf-step
 
 $P$ is prime:
+
+
+::: pf-proof
+If $ab\in P$ with neither factor in $P$, maximality of $P$ forces powers $r^m\in P+\langle a\rangle$ and $r^n\in P+\langle b\rangle$; multiplying the two expressions puts $r^{m+n}\in P$, contradicting $P\cap\Sigma=\varnothing$, so one of $a,b$ lies in $P$.
+:::
 
 :::
 
@@ -146,11 +213,21 @@ If $R$ has exactly one prime ideal, every element is nilpotent or a unit.
 
 Let $P$ be the unique prime ideal of $R$.
 
+
+::: pf-proof
+This names the hypothesis of the part.
+:::
+
 :::
 
 ::: pf-step
 
 Since every maximal ideal of $R$ is prime, and maximal ideals exist in every non-trivial commutative ring by Krull's Theorem, $P$ must also be the unique maximal ideal of $R$.
+
+
+::: pf-proof
+Every ring with $1\neq0$ has a maximal ideal by Krull's theorem, and a maximal ideal is prime.
+:::
 
 :::
 
@@ -158,11 +235,21 @@ Since every maximal ideal of $R$ is prime, and maximal ideals exist in every non
 
 Let $r \in R$. Suppose $r$ is not a unit.
 
+
+::: pf-proof
+It is enough to show that such an $r$ is nilpotent.
+:::
+
 :::
 
 ::: pf-step
 
 The principal ideal $\langle r \rangle$ is proper.
+
+
+::: pf-proof
+If $\langle r\rangle=R$ then $1=sr$ for some $s\in R$, which makes $r$ a unit.
+:::
 
 :::
 
@@ -170,11 +257,21 @@ The principal ideal $\langle r \rangle$ is proper.
 
 By Krull's Theorem, $\langle r \rangle$ is contained in a maximal ideal, so $\langle r \rangle \subseteq P$, which means $r \in P$.
 
+
+::: pf-proof
+Krull's theorem puts the proper ideal $\langle r\rangle$ inside a maximal ideal, and a maximal ideal is prime; this one is $P$, so $r\in P$.
+:::
+
 :::
 
 ::: pf-step
 
 Suppose for contradiction that $r \notin N$.
+
+
+::: pf-proof
+This is the negation of the conclusion for this $r$.
+:::
 
 :::
 
@@ -182,11 +279,21 @@ Suppose for contradiction that $r \notin N$.
 
 By Part (b), there exists a prime ideal $Q \subset R$ avoiding all positive powers of $r$.
 
+
+::: pf-proof
+Part (b) applies to the element $r\notin N$ and supplies a prime ideal avoiding every positive power of $r$.
+:::
+
 :::
 
 ::: pf-step
 
 In particular, $r \notin Q$.
+
+
+::: pf-proof
+$r=r^1$ is a positive power of $r$, so it does not lie in $Q$.
+:::
 
 :::
 
@@ -194,11 +301,21 @@ In particular, $r \notin Q$.
 
 Since $P$ is the only prime ideal of $R$, we must have $Q = P$.
 
+
+::: pf-proof
+The hypothesis is that $R$ has exactly one prime ideal.
+:::
+
 :::
 
 ::: pf-step
 
 But then $r \notin P$, contradicting step [](#s3-5){.pf-ref} where $r \in P$.
+
+
+::: pf-proof
+Step [](#s3-5){.pf-ref} established $r\in P$, so $r\notin P$ is impossible.
+:::
 
 :::
 
@@ -206,11 +323,21 @@ But then $r \notin P$, contradicting step [](#s3-5){.pf-ref} where $r \in P$.
 
 Thus $r \in N$, so $r$ is nilpotent.
 
+
+::: pf-proof
+The supposition $r\notin N$ is therefore false, so $r$ is nilpotent.
+:::
+
 :::
 
 ::: pf-step
 
 Therefore every element of $R$ is either a unit or nilpotent.
+
+
+::: pf-proof
+Every $r\in R$ either is a unit or falls under the preceding argument, which makes it nilpotent.
+:::
 
 :::
 

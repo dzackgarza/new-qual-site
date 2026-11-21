@@ -13,6 +13,24 @@ classification:
   - Uniform Convergence
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained exam assets/attachments/Complex_Analysis_Spring_2015_extracted.md,
+    problem 3: for 0 < r < 1, the polynomials 1 + 2z + ... + n z^{n-1} have no
+    zeros in |z| < r for all sufficiently large n. The card agrees.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The argument is correct. The partial sums converge to (1-z)^{-2} uniformly on
+    the closed disk of radius r, since that is a compact subset of the disk of
+    convergence; on that disk |1-z| is at most 1+r < 2, so the limit function is
+    bounded below by 1/4 in modulus; and once the partial sums are within 1/4 of
+    the limit uniformly, the reverse triangle inequality makes them nonzero
+    there. Nothing was changed.
 ---
 
 ::: {.problem}

@@ -11,6 +11,19 @@ classification:
   - Inner Product Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 1 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C),
+    printed p. 2, is the statement the card answers, and the head of the solution names it; the retained
+    file assets/attachments/SP26_202_Applied_Algebra_Qual.pdf numbers every page including the blank
+    versos, so Problem 1 stands on its page 2. Checked: the statement against the paper's text layer at
+    the page named; the parallelogram counterexample, the operator norm on Hom(V,W) being the largest
+    singular value; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the QED.
+    Not checked: no retained solution set exists for this paper to compare the argument with, and no
+    other card of the collection in this pass.
 ---
 
 ::: {.problem}
@@ -21,34 +34,46 @@ Note: On this exam, a Hilbert space is a finite-dimensional complex vector space
 :::
 
 ::: {.solution}
-Any norm induced by an inner product satisfies the parallelogram identity
-$$
-\norm{S+T}^2+\norm{S-T}^2=2\norm{S}^2+2\norm{T}^2.
-$$
-We exhibit two operators for which the operator norm violates this identity.
 
-Choose orthonormal vectors $e_1,e_2\in V$ and $f_1,f_2\in W$. Define $S,T\in\operatorname{Hom}(V,W)$ by
-$$
-S e_1=f_1,\qquad S\restrict_{e_1^\perp}=0,
-$$
-$$
-T e_2=f_2,\qquad T\restrict_{e_2^\perp}=0.
-$$
-Then
-$$
-\norm{S}_{\mathrm{op}}=\norm{T}_{\mathrm{op}}=1.
-$$
-Moreover, on $\operatorname{span}\{e_1,e_2\}$ the maps $S+T$ and $S-T$ send the orthonormal basis $e_1,e_2$ to the orthonormal sets $f_1,f_2$ and $f_1,-f_2$, respectively, and they vanish on the orthogonal complement. Hence
-$$
-\norm{S+T}_{\mathrm{op}}=\norm{S-T}_{\mathrm{op}}=1.
-$$
-Thus
-$$
-\norm{S+T}_{\mathrm{op}}^2+\norm{S-T}_{\mathrm{op}}^2=2,
-$$
-whereas
-$$
-2\norm{S}_{\mathrm{op}}^2+2\norm{T}_{\mathrm{op}}^2=4.
-$$
-The parallelogram identity fails, so the operator norm cannot be induced by any scalar product on $\operatorname{Hom}(V,W)$.
+The problem is Problem 1 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
+
+No retained solution set covers this exercise: the card's own parallelogram counterexample follows, with the choices, the four norms and the failure as separate steps.
+
+Let $V,W$ be finite-dimensional complex Hilbert spaces of dimension at least $2$, and $\operatorname{Hom}(V,W)$ carry the operator norm.
+
+::: pf
+
+::: {.pf-step #parallel}
+A norm induced by a scalar product satisfies the parallelogram identity $\norm{S+T}^{2}+\norm{S-T}^{2}=2\norm{S}^{2}+2\norm{T}^{2}$ for all $S,T$.
+
+::: pf-proof
+Expanding $\langle S+T,S+T\rangle$ and $\langle S-T,S-T\rangle$ in an inner product and adding gives $2\langle S,S\rangle+2\langle T,T\rangle$; if the norm comes from the scalar product, the left side is $\norm{S+T}^{2}+\norm{S-T}^{2}$ and the right side $2\norm{S}^{2}+2\norm{T}^{2}$.
+:::
+
+:::
+
+::: {.pf-step #operators}
+Choose orthonormal $e_{1},e_{2}\in V$ and $f_{1},f_{2}\in W$ and define $S,T$ by $Se_{1}=f_{1}$, $S=0$ on $e_{1}^{\perp}$, $Te_{2}=f_{2}$, $T=0$ on $e_{2}^{\perp}$. These are well defined linear maps.
+
+::: pf-proof
+$V=\CC e_{1}\oplus e_{1}^{\perp}$ and $V=\CC e_{2}\oplus e_{2}^{\perp}$, so prescribing a value on $e_{1}$ and on $e_{1}^{\perp}$ (resp. on $e_{2}$ and $e_{2}^{\perp}$) defines a linear map; the vectors exist because $\dim V,\dim W\ge2$.
+:::
+
+:::
+
+::: {.pf-step #norms}
+$\norm{S}=\norm{T}=\norm{S+T}=\norm{S-T}=1$.
+
+::: pf-proof
+$S$ carries the unit vector $e_{1}$ to the unit vector $f_{1}$ and annihilates $e_{1}^{\perp}$, so $\norm{Sv}\le\norm{v}$ with equality at $e_{1}$: $\norm{S}=1$; likewise $\norm{T}=1$. For $v=ae_{1}+be_{2}+w$ with $w\perp e_{1},e_{2}$, one has $Se_{1}=f_{1}$, $Te_{1}=0$ and $Se_{2}=0$, $Te_{2}=f_{2}$, so $(S+T)v=af_{1}+bf_{2}$ and $(S-T)v=af_{1}-bf_{2}$, both of norm $\sqrt{\abs{a}^{2}+\abs{b}^{2}}\le\norm{v}$ because $f_{1},f_{2}$ are orthonormal, with equality when $w=0$ and $\abs{a}^{2}+\abs{b}^{2}=1$.
+:::
+
+:::
+
+::: {.pf-qed}
+$\norm{S+T}^{2}+\norm{S-T}^{2}=1+1=2$ while $2\norm{S}^{2}+2\norm{T}^{2}=2+2=4$, so the parallelogram identity fails by steps [](#parallel){.pf-ref} and [](#norms){.pf-ref}. Hence the operator norm on $\operatorname{Hom}(V,W)$ is not induced by any scalar product.
+:::
+
+:::
+
 :::

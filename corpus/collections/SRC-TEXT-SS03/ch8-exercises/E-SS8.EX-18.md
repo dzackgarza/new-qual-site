@@ -12,6 +12,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Converted from prose to numbered steps under #2, four of them, each with its proof: the
+    local-arc property of a piecewise-smooth Jordan boundary with the two cases, smooth point and
+    corner; the oscillation estimate along a sequence r_n tending to 0, from the area bound; the
+    existence of the limit at each boundary point together with continuity of the extension; and the
+    inverse G with the two composite identities giving inverse homeomorphisms. The mathematics is the
+    proof of Theorem 4.2 of Stein--Shakarchi with the polygonal hypothesis replaced as the exercise
+    asks, cited by theorem number with no other locator written. Not checked: no certificate, and the
+    Cauchy--Schwarz estimate and the area identity are used as the book states them rather than
+    re-derived here.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-11
@@ -26,11 +39,15 @@ Suppose that $\Omega$ is a simply connected domain that is bounded by a piecewis
 :::
 
 ::: {.solution}
-The proof of Theorem 4.2 for polygonal regions uses only two geometric facts about the target boundary: the region is bounded, and for every boundary point $w_0$ there is $r_0>0$ such that for $0<r<r_0$ the intersection
-$$
-\Omega\cap \{w:\abs{w-w_0}=r\}
-$$
-is a single arc. We verify that a piecewise-smooth Jordan boundary has the same local property, and then the proof of Theorem 4.2 applies verbatim.
+The argument is that of Stein--Shakarchi, *Complex Analysis*, Chapter 8, the proof of Theorem 4.2 read with the polygonal hypothesis replaced by the local-arc property, and the exercise is that replacement checked for a piecewise-smooth Jordan boundary.
+
+::: pf
+
+::: {.pf-step #local-arc}
+A piecewise-smooth Jordan boundary $\partial\Omega$ has the local-arc property: for every $w_0\in\partial\Omega$ there is $r_0>0$ such that for $0<r<r_0$ the intersection $\Omega\cap\{w:\abs{w-w_0}=r\}$ is a single open arc. The proof of Theorem 4.2 for polygonal regions uses only this property together with boundedness of the region.
+
+::: pf-proof
+The proof of Theorem 4.2 for polygonal regions uses only two geometric facts about the target boundary: the region is bounded, and for every boundary point $w_0$ there is $r_0>0$ such that for $0<r<r_0$ the intersection $\Omega\cap \{w:\abs{w-w_0}=r\}$ is a single arc. We verify that a piecewise-smooth Jordan boundary has the same local property, and then the proof of Theorem 4.2 applies verbatim.
 
 Let $w_0=\gamma(t_0)$. At a smooth point, $\gamma'(t_0)\ne0$ and
 $$
@@ -38,6 +55,14 @@ $$
 $$
 After a rotation and translation, the curve is therefore locally the graph of a continuous function over its tangent line, with the two sides of the Jordan curve lying on opposite sides. Hence every sufficiently small circle centered at $w_0$ meets $\gamma$ in exactly two nearby points, and its intersection with $\Omega$ is the single open arc between them. At a corner the same conclusion follows from the two one-sided nonzero tangent vectors. Since the boundary is piecewise smooth and simple, this gives the required local-arc property at every boundary point.
 
+:::
+
+:::
+
+::: {.pf-step #oscillation}
+There is a sequence $r_n\downarrow0$ along which the oscillation of $F$ on the arc $C_{r_n}\cap\DD$ tends to $0$.
+
+::: pf-proof
 Now repeat the proof of Theorem 4.2. For $\zeta_0\in\partial\DD$, let $C_r$ be the circle centered at $\zeta_0$ of radius $r$. If $z_r,z_r'\in C_r\cap\DD$ are joined by the arc of $C_r\cap\DD$, then Cauchy--Schwarz gives
 $$
 \abs{F(z_r)-F(z_r')}^2
@@ -50,18 +75,27 @@ $$
 $$
 a contradiction. Thus there is a sequence $r_n\downarrow0$ along which the oscillation of $F$ on the relevant circular arc tends to zero.
 
+:::
+
+:::
+
+::: {.pf-step #limit}
+$F$ has a limit at every $\zeta_0\in\partial\DD$, and $\overline F(\zeta_0)\coloneqq\lim_{z\to\zeta_0}F(z)$ makes $\overline F\colon\overline\DD\to\overline\Omega$ continuous.
+
+::: pf-proof
 Suppose now that $F(z)$ had two different cluster values $w,w'\in\partial\Omega$ as $z\to\zeta_0$. Choose disjoint small discs around $w,w'$. By the local-arc property of $\Omega$, each disc meets $\Omega$ in a connected arc-like neighborhood, so one can join the corresponding subsequences of image points to $w$ and $w'$ by curves lying in those disjoint neighborhoods. Pulling these curves back by $F^{-1}$ produces two curves in $\DD$ approaching $\zeta_0$. Every sufficiently small $C_r$ meets both curves, at points $z_r,z_r'$, but their images stay a fixed positive distance apart. This contradicts the preceding oscillation estimate along the sequence $r_n$. Therefore
 $$
 \lim_{z\to\zeta_0,\,z\in\DD}F(z)
 $$
-exists for every $\zeta_0\in\partial\DD$.
+exists for every $\zeta_0\in\partial\DD$. Defining the boundary values by these limits, the same sequential argument used in Theorem 4.2 shows that the extension $\overline F\colon\overline\DD\to\overline\Omega$ is continuous, which is the assertion.
+:::
 
-Define the boundary values by these limits. The same sequential argument used in Theorem 4.2 shows that the extension
-$$
-\overline F:\overline{\DD}\to\overline\Omega
-$$
-is continuous.
+:::
 
+::: {.pf-step #inverse}
+The inverse $G=F^{-1}\colon\Omega\to\DD$ extends continuously to $\overline G\colon\overline\Omega\to\overline\DD$, and $\overline F$ and $\overline G$ are mutually inverse homeomorphisms.
+
+::: pf-proof
 Apply the identical argument to the conformal inverse $G=F^{-1}:\Omega\to\DD$. The local-arc property just verified for $\Omega$ replaces the polygonal boundary property used in Theorem 4.2, while the unit circle has the corresponding property automatically. Hence $G$ extends continuously to
 $$
 \overline G:\overline\Omega\to\overline{\DD}.
@@ -75,3 +109,10 @@ $$
 \boxed{\overline{\DD}\xrightarrow{\sim}\overline\Omega}.
 $$
 :::
+
+:::
+
+:::
+
+:::
+

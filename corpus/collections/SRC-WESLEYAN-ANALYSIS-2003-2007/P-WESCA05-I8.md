@@ -5,7 +5,8 @@ kind: problem
 title: "Evaluate a Cauchy-integral-formula contour integral"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy Integral Formula
 relations: []
 review: draft
 audit:
@@ -13,6 +14,26 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis section 1, item 8 (Summer 2005) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The evaluation is correct. The integrand is e^{pi z} over (z - 1)^2, the
+    numerator is entire, and 1 lies inside the circle of radius 2, so the
+    differentiated Cauchy formula applies with the derivative evaluated at 1;
+    the derivative of e^{pi z} is pi e^{pi z}, giving 2 pi i times pi e^pi, that
+    is 2 pi^2 i e^pi. The orientation assumed is the standard positive one, which
+    the card states. Nothing was changed.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 25: the Complex Analysis Section of
+    the Analysis Qualifier, Wesleyan University, Summer 2005, Section 1 item 8. The page had cited
+    only the extraction; it now names the examination, its item and the page of the
+    scan. The statement is unchanged, and the trailing pf-qed that only announced the last step is dropped.
+
 ---
 
 ::: {.problem}
@@ -23,6 +44,9 @@ $$
 :::
 
 ::: {.solution}
+The item is Section 1 item 8 of the Complex Analysis Section of the Analysis Qualifier, Wesleyan
+University, Summer 2005 (evaluate the integral of e^{pi z}/(z-1)^2 over |z| = 2), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
+
 
 Assume the circle $\abs{z}=2$ has its standard positive orientation.
 
@@ -119,11 +143,6 @@ $$
 
 :::
 
-::: pf-qed
-
-Step [](#s1-4){.pf-ref} gives the requested contour integral.
-
-:::
 
 :::
 

@@ -5,7 +5,9 @@ kind: problem
 title: Positive distance between disjoint compact and closed sets
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Compactness
+  - Metric Spaces
 relations: []
 review: draft
 audit:

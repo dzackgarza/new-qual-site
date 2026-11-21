@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP06-B2
 kind: problem
 title: Homotopy equivalences among three rank-two graphs
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Homotopy Equivalence, Graphs]}
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Differentiability and the multivariable chain rule from the definition
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Differentiation
+  - Chain Rule
 relations: []
 review: draft
 audit:

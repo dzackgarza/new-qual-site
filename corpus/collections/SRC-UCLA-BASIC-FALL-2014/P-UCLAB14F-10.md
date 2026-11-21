@@ -6,7 +6,9 @@ title: Maximum number of ones in an invertible zero-one matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Determinants
+  - Combinatorics
 relations: []
 review: draft
 audit:

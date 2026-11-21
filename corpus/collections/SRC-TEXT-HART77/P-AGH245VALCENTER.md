@@ -40,6 +40,7 @@ For (c), while (a) and (b) follow from (4.3) and (4.7), their converses require 
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.4.5, transcribed and checked against the exercise as printed: the commutative square from the centre of a valuation ring, uniqueness of $\Spec R\to X$ giving separatedness, and the converse for properness through the morphism $\Spec R\to X$ that the criterion provides.
 Let
 $$
 \eta\in X

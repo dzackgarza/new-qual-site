@@ -5,7 +5,9 @@ kind: problem
 title: Proper maps and a derivative criterion on the real line
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Compactness
+  - Continuity
 relations: []
 review: draft
 audit:

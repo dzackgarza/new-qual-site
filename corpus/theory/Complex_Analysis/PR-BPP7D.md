@@ -24,5 +24,7 @@ z &\mapsto {z^{\pi/\alpha} - i \over z^{\pi/\alpha} + i}
 $$
 is a [[D-TM4TE|biholomorphism]].
 
+The map is the composite of the two steps of [@Ahl73, ch. 3, §4.2, A Survey of Elementary Mappings]: the power $z^{\pi/\alpha}$ carries the sector onto $\HH$, which is the sector rule of §4.1 of that chapter for $\alpha(\varphi_2-\varphi_1)\le2\pi$, and $(w-i)/(w+i)$ carries $\HH$ onto $\DD$, which is [@SS03, ch. 8, Theorem 1.2]. The section's own advice is that "the general problem of conformal mapping can be reduced" to these two steps, first onto a circular region and then onto the target.
+
 ![](../../assets/figures/image_2020-07-22-13-22-46.png)
 :::

@@ -23,4 +23,6 @@ Then there is an integer $c\ge0$ such that for every $n\ge c$,
 $$
 I^nM\cap N=I^{n-c}\qty{I^cM\cap N}.
 $$
+
+See [@AM18, Proposition 10.9 and Corollary 10.10].
 :::

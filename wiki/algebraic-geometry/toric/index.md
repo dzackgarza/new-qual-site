@@ -9,7 +9,7 @@ topics:
 
 # Toric varieties
 
-This chapter covers fans, the orbit-cone correspondence, and toric resolution of singularities.
+A fan $\Sigma$ in $N_\RR$ determines a normal toric variety by gluing the affine charts of its cones ([[D-Q7Q2N]]), its cones record the torus orbits ([[PR-O8V3I]]), and subdividing a fan resolves its singularities ([[PR-D2F15]]).
 
 ## Syllabus
 

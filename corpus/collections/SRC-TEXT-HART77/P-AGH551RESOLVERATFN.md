@@ -72,6 +72,30 @@ audit:
     The duplication is gone and the step now names E and defines
     (f-tilde)_0, (f-tilde)_infty as the strict transforms of (f)_0,
     (f)_infty under pi. No mathematical claim is changed.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 5.5.1, printed p. 113, rendered as a page
+    image from tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is
+    the printed page. Checked against the book: Hartshorne V.5.1, printed
+    p. 420, asks for a finite sequence of blowups after which the zeros and
+    poles of f are disjoint. Recomputed: its two steps, Theorem 3.9's embedded
+    resolution making f^{-1}(sum C_i) normal crossing and the blowup of a point
+    of C_i cap C_j with n_i n_j < 0, and its conclusion, which asserts that
+    finitely many blowups suffice without proving termination. So it stands
+    with Egbert's entry: the first step and an unproved termination. Not
+    checked: Yang's Solutions outside printed pp. 113-114, and the printed book
+    itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.5.1 at printed p. 113 beside
+    Egbert's, with the same gap and a pointer to step zero-pole-disjoint for
+    the termination it lacks. No step, statement or hypothesis of the card
+    changes.
 ---
 
 ::: {.problem}
@@ -236,7 +260,7 @@ $$
 $$
 
 ::: pf-proof
-The published argument is a global count. This is *Algebraic Geometry II*, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 1 (Po-Sheng Wu), section 5, printed p. 19 (PDF p. 19 of `tmp/sources/ntu-ag2-chapter5.pdf`, where the set's own folios are its PDF pages), transcribed with the two estimates its display leaves to the reader. Write $(f)=(f)_0-(f)_\infty$ for the effective zero and pole divisors and let $P$ be a point where they meet on the current surface, of multiplicities $a=\mu_P((f)_0)$ and $b=\mu_P((f)_\infty)$. By symmetry in $f\leftrightarrow 1/f$ assume $a\ge b>0$. Blow $P$ up, $\pi:\widetilde X\to X$, and let $E$ be the exceptional curve and $(\tilde f)_0$, $(\tilde f)_\infty$ the strict transforms of $(f)_0$, $(f)_\infty$ under $\pi$. Then $\pi^*(f)_0=(\tilde f)_0+aE$ and $\pi^*(f)_\infty=(\tilde f)_\infty+bE$, so
+The published argument is a global count. This is *Algebraic Geometry II*, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 1 (Po-Sheng Wu), section 5 of `tmp/sources/ntu-ag2-chapter5.pdf`, transcribed with the two estimates its display leaves to the reader. Write $(f)=(f)_0-(f)_\infty$ for the effective zero and pole divisors and let $P$ be a point where they meet on the current surface, of multiplicities $a=\mu_P((f)_0)$ and $b=\mu_P((f)_\infty)$. By symmetry in $f\leftrightarrow 1/f$ assume $a\ge b>0$. Blow $P$ up, $\pi:\widetilde X\to X$, and let $E$ be the exceptional curve and $(\tilde f)_0$, $(\tilde f)_\infty$ the strict transforms of $(f)_0$, $(f)_\infty$ under $\pi$. Then $\pi^*(f)_0=(\tilde f)_0+aE$ and $\pi^*(f)_\infty=(\tilde f)_\infty+bE$, so
 $$
 (\pi^*f)_0=(\tilde f)_0+(a-b)E,
 \qquad
@@ -439,7 +463,9 @@ Step [](#g-birational-resolves-f){.pf-ref} verifies that the composite modificat
 :::
 
 ::: {.remark title="Published solution"}
-*Algebraic Geometry II*, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 1 (Po-Sheng Wu), section 5, printed p. 19 (`tmp/sources/ntu-ag2-chapter5.pdf`, whose folios are its PDF pages), is a complete published proof of the exercise: it blows up a zero--pole intersection, computes that the intersection number $(\pi^*f)_0\cdot(\pi^*f)_\infty$ has dropped by $\mu_P((f)_\infty)^2$, and concludes that finitely many blowups make the zeros and poles disjoint, after which the zeros give a base-point-free linear system and a morphism to $\PP^1$. Step [](#zero-pole-disjoint){.pf-ref} transcribes it, supplying the two estimates of its display, and then gives the card's own local-measure form of the same decrease.
+*Algebraic Geometry II*, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 1 (Po-Sheng Wu), section 5 (`tmp/sources/ntu-ag2-chapter5.pdf`), is a complete published proof of the exercise: it blows up a zero--pole intersection, computes that the intersection number $(\pi^*f)_0\cdot(\pi^*f)_\infty$ has dropped by $\mu_P((f)_\infty)^2$, and concludes that finitely many blowups make the zeros and poles disjoint, after which the zeros give a base-point-free linear system and a morphism to $\PP^1$. Step [](#zero-pole-disjoint){.pf-ref} transcribes it, supplying the two estimates of its display, and then gives the card's own local-measure form of the same decrease.
 
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, V.5.1, printed p. 297, has the first step, embedded resolution of the divisor of $f$, and then asserts that the further blowups separate the zeros from the poles without showing that they terminate; nothing there is used above.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, V.5.1 has the first step, embedded resolution of the divisor of $f$, and then asserts that the further blowups separate the zeros from the poles without showing that they terminate; nothing there is used above.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.5.1 takes the same two steps: with $(f)=\sum n_iC_i$ and $Y=\sum C_i$, Theorem 3.9 gives the embedded resolution $X'\to X$ making $f^{-1}(Y)$ normal crossing, and at a point $P_k$ of $C_i\cap C_j$ with $n_in_j<0$ on $X'$ it blows up $P_k$ to separate $C_i$ from $C_j$. It then says "since $(f)$ is a finite sum, we just need a finite sequence of blow-up on $X'$ to separate zeros and poles", which is the termination Egbert also leaves unproved; nothing there is used above either, and the termination is step [](#zero-pole-disjoint){.pf-ref}, where the intersection number $(\pi^*f)_0\cdot(\pi^*f)_\infty$ drops by $\mu_P((f)_\infty)^2$ at each blowup.
 :::

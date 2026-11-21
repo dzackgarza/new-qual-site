@@ -24,6 +24,10 @@ A bijective conformal map $f\colon U\to V$ is a \dfn{biholomorphism}, and $U$ an
 The biholomorphisms $\Omega\to\Omega$ form a group under composition, the \dfn{automorphism group} $\Aut_\CC(\Omega)$.
 :::
 
+::: {.remark}
+The book's definition is geometric: [@Ahl73, ch. 3, §2.3, Conformal Mapping] defines a map to be conformal where it preserves angles, shows that an analytic function with nonvanishing derivative preserves both angles and the scale of small segments there, and shows conversely that a map with continuous partial derivatives which preserves angles satisfies the Cauchy--Riemann equations there or their conjugates, the second case being what the book calls indirectly conformal. Among maps with continuous partial derivatives, the directly conformal ones are therefore exactly the analytic maps with nonvanishing derivative, which is the definition above.
+:::
+
 ::: {.proposition}
 Let $\Omega\subseteq\CC$ be open and let $f$ be conformal on $\Omega$.
 

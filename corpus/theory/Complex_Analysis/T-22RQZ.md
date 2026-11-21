@@ -19,12 +19,14 @@ review: draft
 ---
 
 ::: {.theorem ref="CauchyInequality"}
-Let $\Omega\subseteq\CC$ be open, let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$, and let $z_0\in\Omega$ and $R>0$ satisfy $\overline{D_R(z_0)}\subseteq\Omega$.
+Let $\Omega\subseteq\CC$ be open, let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$, and let $z_0\in\Omega$ and $R>0$ satisfy $\overline{\DD_R(z_0)}\subseteq\Omega$.
 Let $\gamma$ be the circle $\abs{z-z_0}=R$ and $M\coloneqq\max_{z\in\gamma}\abs{f(z)}$.
 Then for every $n\ge0$,
 $$
 \abs{f^{(n)}(z_0)}\le\frac{n!\,M}{R^n}.
 $$
+
+This is [@SS03, Corollary 4.3], where $M$ is written as the supremum of $\abs f$ on the boundary circle.
 :::
 
 ::: {.remark title="Variations"}

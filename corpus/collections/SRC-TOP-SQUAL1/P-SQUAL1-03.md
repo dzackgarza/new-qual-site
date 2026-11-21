@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-SQUAL1-03
 kind: problem
 title: A decreasing intersection of connected subspaces need not be connected
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Connectedness, Counterexamples]}
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Equality of mixed partial derivatives via vanishing integrals over square
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Mixed Partial Derivatives
+  - Integrals
 relations: []
 review: draft
 ---

@@ -163,6 +163,8 @@ Step [](#s1){.pf-ref} proves the affine-cover assertion, step [](#s2){.pf-ref} c
 :::
 
 ::: {.remark title="Positive degree"}
+The exercise is III.4.7 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is its text, the instruction not to assume $f$ irreducible and the assumption that $(1,0,0)\notin X$ included, with the degree written $d\ge1$ where the page writes degree $d$.
+
 The condition $d\ge1$ is the plane-curve range of this calculation.
 A nonzero constant equation instead defines the empty subscheme, which also avoids $[1:0:0]$ but has zero global-section group.
 Thus the stated $H^0$ formula requires the positive-degree hypothesis.

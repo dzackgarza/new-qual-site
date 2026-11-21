@@ -13,6 +13,40 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Part II, Problem 1 in the deterministic MinerU Flash extraction of analysis_2003-2007.pdf.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 38, printed page 2: Part II
+    item 1 of the Preliminary Exam in Analysis, Wesleyan University, August 4, 2003.
+    The page had cited only the extraction; it now names the examination, its item and
+    the page of the scan. The statement is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The proof ended with a pf-qed that only announced that an earlier step had answered
+    the question, which STYLE-08 forbids; it is dropped, and the step that carries the
+    result is now the QED step. No argument or statement changes.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The printed item names the Lebesgue measure space as (R, tau(R), m) with tau(R)
+    generic notation; the card writes the Borel sigma-algebra. The argument uses only
+    that the class is a sigma-algebra on which m is a measure, so it covers the Lebesgue
+    sigma-algebra as well, and the solution now says so. The statement is otherwise
+    unchanged.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -25,6 +59,14 @@ is a measure.
 :::
 
 ::: {.solution}
+The item is Part II item 1 of the Preliminary Exam in Analysis, Wesleyan University,
+August 4, 2003 (for a nonnegative $f$ the set function $A\mapsto\int_A f\,dm$ is a measure).
+
+The printed item writes the Lebesgue measure space as $(\RR,\tau(\RR),m)$, with
+$\tau(\RR)$ generic notation for its $\sigma$-algebra. The argument below uses only
+that the underlying class is a $\sigma$-algebra of subsets of $\RR$ on which $m$ is a
+measure, so it applies verbatim to the Lebesgue $\sigma$-algebra, the other reading of
+the printed phrase, as well as to the Borel one written here.
 
 Define
 $$
@@ -304,11 +346,6 @@ Borel sets. These are exactly the defining axioms of a measure.
 
 :::
 
-::: pf-qed
-
-Step [](#s1-10){.pf-ref} is the required conclusion.
-
-:::
 
 :::
 

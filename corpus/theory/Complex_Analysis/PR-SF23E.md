@@ -22,6 +22,8 @@ F\colon\CC\sm(-\infty,0]\to\theset{w\st-\pi<\Im w<\pi},\qquad F(z)=\Log z,
 $$
 is a [[D-TM4TE|biholomorphism]], with inverse $w\mapsto e^w$.
 It maps each circle $\theset{\abs{z}=R}$, with the point $-R$ removed, onto the vertical segment $\theset{\ln R+it\st-\pi<t<\pi}$, and each ray $\theset{re^{i\theta}\st r>0}$ with $-\pi<\theta<\pi$ onto the horizontal line $\theset{t+i\theta\st t\in\RR}$.
+
+The map and its image strip are [@SS03, ch. 3, §6, The complex logarithm]: on the slit plane the principal branch is there $\log z=\log r+i\theta$ with $z=re^{i\theta}$ and $\abs\theta<\pi$, which is the $\Log$ above, and the two curve computations are that formula read on a circle and on a ray.
 :::
 
 ::: {.example}

@@ -35,6 +35,3 @@ order: 10
 
 - [Utah Math 6220 assignments](http://www.math.utah.edu/~astephan/134.pdf)
 
-- [JHU analysis qualifying exams](https://math.jhu.edu/gradexam/analysisexams.pdf)
-
-- [TCU sample complex-analysis prelim questions](https://faculty.tcu.edu/richardson/Prelim/PrelimSampleQsCpx_2.pdf)

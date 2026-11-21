@@ -14,9 +14,30 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf` at its printed folio (the scan runs nineteen pages ahead of the
+    printed page): the statement is Problem 1 at the head of the Chapter 2 Problems, printed
+    p. 67, and its printed words are the card's. The chapter, the problem number and the page
+    are now named in the solution's opening sentence. Not checked in this pass: the argument, which
+    the edit does not touch.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The asterisk was read from the rendered page image of printed p. 68 (PDF p. 87 of the
+    retained scan): it stands before "(b)" and not before "(a)". Both parts were re-read against
+    the printed text, and both arguments checked: (a) is the divergence of the tail
+    $\sum_{n\ge k} r^{2^n}$ along a dyadic radius, (b) the same divergence for the $m$-th radial
+    derivative with $m>\alpha$, contradicting the boundedness of $f^{(m)}$ near a regular boundary
+    point. Not checked: the continuity claim of (b) beyond the uniform $M$-test.
 ---
 
 ::: {.exercise}
+This is Problem 1 of Chapter 2 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`; the statement below is its wording.
+
 Here are some examples of analytic functions on the unit disc that cannot be extended analytically past the unit circle. The following definition is needed. Let $f$ be a function defined in the unit disc $\DD$, with boundary circle $C$. A point $w$ on $C$ is said to be regular for $f$ if there is an open neighborhood $U$ of $w$ and an analytic function $g$ on $U$, so that $f = g$ on $\DD \cap U$. A function $f$ defined on $\DD$ cannot be continued analytically past the unit circle if no point of $C$ is regular for $f$.
 
 (a) Let
@@ -30,6 +51,10 @@ $$
 f(z) = \sum_{n=0}^{\infty} 2^{-n\alpha} z^{2^n} \quad \text{for } \abs{z} < 1
 $$
 extends continuously to the unit circle, but cannot be analytically continued past the unit circle. [Hint: There is a nowhere differentiable function lurking in the background. See Chapter 4 in Book I.]
+:::
+
+::: {.remark}
+The book marks part (b) of this problem with an asterisk (Chapter 2, Problem 1); part (a) is unstarred.
 :::
 
 ::: {.solution}

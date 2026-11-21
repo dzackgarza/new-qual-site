@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP03-02
 kind: problem
 title: Pointed homotopy classes of maps from $S^0$
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Fundamental Group, Homotopy]}
 relations: []
 review: draft
 audit:

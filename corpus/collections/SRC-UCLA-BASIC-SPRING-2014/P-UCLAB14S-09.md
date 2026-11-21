@@ -6,7 +6,9 @@ title: Minimizing Dirichlet energy with fixed endpoints
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus of Variations
+  - Integrals
 relations: []
 review: draft
 audit:

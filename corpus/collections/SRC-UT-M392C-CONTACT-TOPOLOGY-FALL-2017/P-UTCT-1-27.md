@@ -6,7 +6,9 @@ title: Poincaré--Hopf theorem for surfaces with boundary via the relative Euler
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Euler Class
+  - Surfaces
 relations: []
 review: draft
 audit:

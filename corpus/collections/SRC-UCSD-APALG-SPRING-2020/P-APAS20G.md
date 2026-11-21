@@ -11,6 +11,31 @@ classification:
   - Inner Product Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 7 of the Math 202 Qualifying Exam, Spring 2020 (June 3, 2020), printed
+    p. 2 of the paper's own numbered pages, is the statement the card answers, and the head of the
+    solution names it; the file retained at assets/attachments/Applied-Algebra-Qual-SP20.pdf puts a
+    cover page before those two numbered pages, so paper p. 1 and p. 2 are its second and third pages.
+    Checked: the statement against the paper's text layer at the page named; the projection argument for
+    $P=\int_G U(g)\,dg$; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the
+    QED. Not checked: no retained solution set exists for this paper to compare the argument with, and
+    no other card of the collection in this pass.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked that the Haar average defines a bounded
+    operator with norm at most one, that its image lies in the invariant subspace by left
+    invariance of Haar measure, that it fixes the invariants by normalisation so that the
+    image is exactly the invariants, that it is idempotent, that it is self-adjoint using
+    unitarity and invariance of Haar measure under inversion, and that a self-adjoint
+    idempotent is the orthogonal projection onto its image since its kernel is the
+    orthogonal complement of the image. The argument is the card's own; no retained set is
+    cited. No repair needed.
 ---
 
 ::: {.problem}
@@ -23,36 +48,87 @@ is the orthogonal projection of $H$ onto the space of $G$-invariants in $H$.
 :::
 
 ::: {.solution}
-Normalize Haar measure so that $\int_G dg=1$. For $v\in H$, set
-$$
-Pv=\int_G U(g)v\,dg.
-$$
-For any $h\in G$, left invariance of Haar measure gives
-$$
-U(h)Pv=\int_G U(hg)v\,dg=\int_G U(g)v\,dg=Pv.
-$$
-Thus $Pv$ is $G$-invariant, so
-$$
-\operatorname{im}P\subseteq H^G.
-$$
-Conversely, if $v\in H^G$, then $U(g)v=v$ for every $g$, and therefore
-$$
-Pv=\int_G v\,dg=v.
-$$
-Hence $\operatorname{im}P=H^G$, and $P$ acts as the identity on its image. In particular,
-$$
-P^2=P.
-$$
 
-It remains to prove orthogonality. Since $U$ is unitary,
+The problem is Problem 7 of the Math 202 Qualifying Exam, Spring 2020 (June 3, 2020), printed p. 2 of the paper's numbered pages — the retained file `assets/attachments/Applied-Algebra-Qual-SP20.pdf` puts a cover page before them.
+
+The argument is the card's own; no retained solution set is cited on it. Normalize Haar measure on $G$ so that $\int_{G}dg=1$, and write $H^{G}=\{v\in H: U(g)v=v\ \text{for all } g\in G\}$.
+
+::: pf
+
+::: {.pf-step #definition}
+For $v\in H$ the vector $Pv=\int_{G}U(g)v\,dg$ is defined, and $P$ is linear with $\norm{Pv}\le\norm{v}$.
+
+::: pf-proof
+$g\mapsto U(g)v$ is continuous into $H$ because a unitary representation is strongly continuous, and $G$ is compact with a finite Haar measure, so the Bochner integral exists. Then $\norm{Pv}\le\int_{G}\norm{U(g)v}\,dg=\int_{G}\norm{v}\,dg=\norm{v}$, since each $U(g)$ is unitary and the measure is normalized; linearity is linearity of the integral.
+:::
+
+:::
+
+::: {.pf-step #image-invariants}
+$Pv\in H^{G}$ for every $v\in H$.
+
+::: pf-proof
+For $h\in G$, continuity of $U(h)$ and the substitution $g\mapsto h^{-1}g$ give
 $$
-U(g)^*=U(g)^{-1}=U(g^{-1}).
+U(h)Pv=\int_{G}U(h)U(g)v\,dg=\int_{G}U(hg)v\,dg=\int_{G}U(g)v\,dg=Pv,
 $$
-Therefore, using invariance of Haar measure under inversion,
+where the last equality is left invariance of Haar measure; so $Pv$ is fixed by every $h$.
+:::
+
+:::
+
+::: {.pf-step #invariants-image}
+If $v\in H^{G}$ then $Pv=v$; hence $H^{G}\subset\operatorname{im}P$ and $\operatorname{im}P=H^{G}$.
+
+::: pf-proof
+$U(g)v=v$ for every $g$, so $Pv=\int_{G}v\,dg=v\int_{G}dg=v$ by normalization. With step [](#image-invariants){.pf-ref} this gives both inclusions.
+:::
+
+:::
+
+::: {.pf-step #idempotent}
+$P^{2}=P$.
+
+::: pf-proof
+For any $v$, the vector $Pv$ lies in $H^{G}$ by step [](#image-invariants){.pf-ref}, so $P(Pv)=Pv$ by step [](#invariants-image){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #self-adjoint}
+$P^{*}=P$.
+
+::: pf-proof
+For $v,w\in H$ one has $\langle Tv,w\rangle=\int_{G}\langle U(g)v,w\rangle\,dg$ for the operator $T=\int_{G}U(g)\,dg$, by continuity of the inner product and the definition of the vector integral; hence
 $$
-P^*=\int_G U(g)^*\,dg
-=\int_G U(g^{-1})\,dg
-=\int_G U(g)\,dg=P.
+\langle P^{*}v,w\rangle=\overline{\langle Pw,v\rangle}=\overline{\int_{G}\langle U(g)w,v\rangle\,dg}=\int_{G}\langle v,U(g)w\rangle\,dg=\int_{G}\langle U(g)^{*}v,w\rangle\,dg .
 $$
-Thus $P$ is a self-adjoint idempotent whose image is exactly $H^G$. Hence $P$ is the orthogonal projection of $H$ onto the subspace of $G$-invariant vectors.
+Since $U$ is unitary, $U(g)^{*}=U(g)^{-1}=U(g^{-1})$, so
+$$
+\langle P^{*}v,w\rangle=\int_{G}\langle U(g^{-1})v,w\rangle\,dg=\int_{G}\langle U(g)v,w\rangle\,dg=\langle Pv,w\rangle,
+$$
+the middle equality by invariance of Haar measure under inversion. As $w$ is arbitrary, $P^{*}v=Pv$, and as $v$ is arbitrary, $P^{*}=P$.
+:::
+
+:::
+
+::: {.pf-step #orthogonal}
+A self-adjoint idempotent is the orthogonal projection onto its image: if $P^{2}=P=P^{*}$, then $\ker P=(\operatorname{im}P)^{\perp}$.
+
+::: pf-proof
+If $v\in\ker P$ and $w\in\operatorname{im}P$, say $w=Pu$, then $\langle v,w\rangle=\langle v,Pu\rangle=\langle Pv,u\rangle=0$, so $\ker P\subset(\operatorname{im}P)^{\perp}$. Conversely if $v\perp\operatorname{im}P$ then $\langle Pv,Pv\rangle=\langle v,P^{2}v\rangle=\langle v,Pv\rangle=0$, so $Pv=0$ and $v\in\ker P$. Equal subspaces give the orthogonal decomposition $H=\operatorname{im}P\oplus\ker P$, and $P$ is the projection along $\ker P$, hence the orthogonal projection onto $\operatorname{im}P$.
+:::
+
+:::
+
+::: {.pf-step}
+$P$ is the orthogonal projection of $H$ onto $H^{G}$.
+
+::: pf-proof
+Steps [](#image-invariants){.pf-ref} and [](#invariants-image){.pf-ref} identify $\operatorname{im}P$ with $H^{G}$, step [](#self-adjoint){.pf-ref} gives $P^{*}=P$ and step [](#idempotent){.pf-ref} gives $P^{2}=P$; by step [](#orthogonal){.pf-ref} such an operator is the orthogonal projection onto its image.
+:::
+
+:::
+
+:::
 :::

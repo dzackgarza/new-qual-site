@@ -55,6 +55,21 @@ audit:
     unreadable, the site answering an automated request with a Cloudflare human check, which is not
     worked around.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read, with one false inequality repaired. The proof of the only-if direction chose
+    an $\varepsilon/3$-net $g_1,\ldots,g_k$ and neighbourhoods on which each $g_i$ moves by less
+    than $\varepsilon/3$, then bounded $d(g(x),g(y))$ by three terms and called the sum less than
+    $\varepsilon$. The middle term is only known to be below $2\varepsilon/3$ on $U$, so $4\varepsilon/3$
+    is what follows; the step now estimates $d(g(x),g(a))$ at the base point, where the middle term
+    is below $\varepsilon/3$, which is exactly equicontinuity at $a$. Added also: $\mathcal G$ is
+    bounded under $\rho$ because it is compact, and on a bounded family $\rho$ and
+    $\bar\rho=\min(\rho,1)$ have the same balls below radius $1$, so Lemma 45.2, stated for
+    $\bar\rho$, applies to the card's supremum metric. The rest was checked and stands. Citation by
+    number: §45 Exercise 6, Theorem 45.1, Lemma 45.2 and Lemma 45.3.
+
 ---
 
 ::: {.exercise}
@@ -63,24 +78,69 @@ Show that our proof of Ascoli's theorem goes through if $\RR^n$ is replaced by a
 :::
 
 ::: {.solution}
-Let $(Y, d)$ be a metric space in which every closed bounded subspace is compact, and let $X$ be compact. Two consequences of the hypothesis are used:
 
-- $Y$ is complete: a Cauchy sequence is bounded, so it lies in a closed ball $\overline{B}(a, r)$, which is closed and bounded, hence compact, and a compact metric space is complete (Theorem 45.1, or Lemma 43.1 with Theorem 28.2);
-- the closure of a bounded subset of $Y$ is compact, since it lies in some closed ball $\overline{B}(a, r)$.
+The argument is the card's own, following the four steps of the proof of Theorem 45.4 with $\RR^{n}$ replaced by a metric space $Y$ in which every closed bounded subspace is compact; no published solution of this exercise was located, and the sets searched are recorded in the audit trail.
 
-Now follow the four steps of the proof of Theorem 45.4.
+Let $(Y,d)$ be a metric space in which every closed bounded subspace is compact, let $X$ be compact, and let $\mathcal{C}(X,Y)$ carry the uniform metric $\rho(f,g)=\max_{x\in X}d\big(f(x),g(x)\big)$.
 
-**Step 1 (only if).** If $\mathcal{G} \subset \mathcal{C}(X, Y)$ is compact, then $\mathcal{G}$ is totally bounded under $\rho$ by Theorem 45.1, hence equicontinuous under $d$ by Lemma 45.2; the proof of Lemma 45.2 uses only metrizability of $Y$. Compactness of $\mathcal{G}$ also makes $\mathcal{G}$ bounded under $\rho$, hence pointwise bounded, since $d(f(a), g(a)) \le \rho(f, g)$ in any metric target. So a family with compact closure is equicontinuous and pointwise bounded.
+::: pf
 
-**Step 2 (the closure inherits both).** If $\mathcal{F}$ is equicontinuous and pointwise bounded, so is its closure $\mathcal{G}$: the equicontinuity is the $\varepsilon/3$ argument with an approximation $f \in \mathcal{F}$ of $g \in \mathcal{G}$, and the pointwise boundedness uses $\operatorname{diam} \mathcal{F}_a \le M$ and two approximations within $1$. Neither half uses anything about $Y$ beyond the triangle inequality.
+::: {.pf-step #preliminaries}
+$Y$ is complete, and the closure of a bounded subset of $Y$ is compact.
 
-**Step 3 (a compact target containing all the values).** Let $\mathcal{G}$ be equicontinuous and pointwise bounded. For each $a \in X$ choose a neighbourhood $U_a$ of $a$ with $d(g(x), g(a)) < 1$ for $x \in U_a$ and $g \in \mathcal{G}$; finitely many $U_{a_1}, \ldots, U_{a_k}$ cover $X$. Each set $\mathcal{G}_{a_i}$ is bounded, so lies in a closed ball about $a_i$; a finite union of bounded sets is bounded, so all the sets $\mathcal{G}_{a_i}$ lie in one closed ball $\overline{B}(y_0, N)$. Then for every $g \in \mathcal{G}$ and every $x \in X$, choosing $i$ with $x \in U_{a_i}$,
+::: pf-proof
+A Cauchy sequence in $Y$ is bounded, so it lies in a closed ball $\overline{B}(a,r)$, which is closed and bounded, hence compact; a compact metric space is complete (Theorem 45.1), so the sequence has a limit in $Y$ and $Y$ is complete. A bounded $B\subset Y$ lies in a closed ball $\overline{B}(a,r)$, whose closure $\overline{B}$ of $B$ is then a closed subset of that compact ball, hence compact by Theorem 26.2.
+:::
+
+:::
+
+::: {.pf-step #only-if}
+If $\mathcal{G}\subset\mathcal{C}(X,Y)$ is compact, then $\mathcal{G}$ is equicontinuous and pointwise bounded.
+
+::: pf-proof
+A compact subspace of a metric space is totally bounded (Theorem 45.1), so for $\varepsilon>0$ there are $g_{1},\ldots,g_{k}\in\mathcal{G}$ with $\mathcal{G}\subset\bigcup_{i}B_{\rho}(g_{i},\varepsilon/3)$; each $g_{i}$ is continuous, so each point $a\in X$ has a neighbourhood $U_{i}$ on which $d\big(g_{i}(x),g_{i}(a)\big)<\varepsilon/3$. On the intersection $U$ of the finitely many $U_{i}$, let $g\in\mathcal{G}$ and choose $i$ with $\rho(g,g_{i})<\varepsilon/3$; then for $x\in U$
 $$
-d(g(x), y_0) \le d(g(x), g(a_i)) + d(g(a_i), y_0) < N + 1 .
+d\big(g(x),g(a)\big)\le d\big(g(x),g_{i}(x)\big)+d\big(g_{i}(x),g_{i}(a)\big)+d\big(g_{i}(a),g(a)\big)<\frac{\varepsilon}{3}+\frac{\varepsilon}{3}+\frac{\varepsilon}{3}=\varepsilon,
 $$
-Here the hypothesis enters: the closed ball $Y_0 = \overline{B}(y_0, N+1)$ is closed and bounded, hence compact, and $\mathcal{G} \subset \mathcal{C}(X, Y_0)$. (For $Y = \RR^n$ one takes the same closed ball, compact by Heine-Borel, Theorem 27.3.)
+the first and third terms being below $\varepsilon/3$ because $\rho(g,g_{i})<\varepsilon/3$ and the second by the choice of $U_{i}$. So $\mathcal{G}$ is equicontinuous at $a$ (Lemma 45.2). Since $\mathcal{G}$ is compact it is bounded under $\rho$, and on a bounded family the supremum metric $\rho$ and the uniform metric $\bar\rho=\min(\rho,1)$ have the same balls of radius below $1$, so the lemma, stated for $\bar\rho$, applies. And $\mathcal{G}$ is bounded under $\rho$, so for a fixed $a\in X$ the set $\mathcal{G}_{a}=\{g(a)\}$ is bounded, since $d\big(f(a),g(a)\big)\le\rho(f,g)$; so $\mathcal{G}$ is pointwise bounded.
+:::
 
-**Step 4 (if).** Let $\mathcal{F}$ be equicontinuous and pointwise bounded. By Step 2 its closure $\mathcal{G}$ is equicontinuous and pointwise bounded, and by Step 3 $\mathcal{G} \subset \mathcal{C}(X, Y_0)$ with $Y_0$ compact. Lemma 45.3, whose proof uses only compactness of the target, gives total boundedness of $\mathcal{G}$ under $\rho$. Completeness of $\mathcal{C}(X, Y)$ under $\rho$ is Theorem 43.6, which needs only that $Y$ be complete, and $Y$ is complete by the first consequence above. A closed subspace of a complete metric space is complete, so $\mathcal{G}$ is complete and totally bounded, hence compact by Theorem 45.1.
+:::
 
-Therefore a subspace $\mathcal{F}$ of $\mathcal{C}(X, Y)$ has compact closure if and only if it is equicontinuous and pointwise bounded under $d$, which is Ascoli's theorem with $\RR^n$ replaced by $Y$. Nothing in the argument uses the vector-space structure of $\RR^n$, only the compactness of closed bounded subspaces: in Step 3 to produce the compact target $Y_0$ and in the completeness of $Y$.
+::: {.pf-step #closure}
+If $\mathcal{F}$ is equicontinuous and pointwise bounded, then so is its closure $\mathcal{G}=\overline{\mathcal{F}}$ in $\mathcal{C}(X,Y)$.
+
+::: pf-proof
+Let $\varepsilon>0$ and $a\in X$; choose a neighbourhood $U$ of $a$ with $d\big(f(x),f(a)\big)<\varepsilon/3$ for all $x\in U$ and $f\in\mathcal{F}$. For $g\in\mathcal{G}$ choose $f\in\mathcal{F}$ with $\rho(f,g)<\varepsilon/3$; then for $x\in U$,
+$$
+d\big(g(x),g(a)\big)\le d\big(g(x),f(x)\big)+d\big(f(x),f(a)\big)+d\big(f(a),g(a)\big)<\varepsilon ,
+$$
+so $\mathcal{G}$ is equicontinuous. For pointwise boundedness, let $\mathcal{F}_{a}$ have diameter at most $M$; then $d\big(g(a),g'(a)\big)\le d\big(g(a),f(a)\big)+d\big(f(a),f'(a)\big)+d\big(f'(a),g'(a)\big)<M+2$ for $g,g'\in\mathcal{G}$ and suitable $f,f'\in\mathcal{F}$, so $\mathcal{G}_{a}$ is bounded.
+:::
+
+:::
+
+::: {.pf-step #compact-target}
+If $\mathcal{G}\subset\mathcal{C}(X,Y)$ is equicontinuous and pointwise bounded, then $\mathcal{G}\subset\mathcal{C}(X,Y_{0})$ for a compact subspace $Y_{0}$ of $Y$.
+
+::: pf-proof
+For each $a\in X$ choose a neighbourhood $U_{a}$ of $a$ with $d\big(g(x),g(a)\big)<1$ for $x\in U_{a}$ and $g\in\mathcal{G}$; finitely many $U_{a_{1}},\ldots,U_{a_{k}}$ cover the compact $X$. Each $\mathcal{G}_{a_{i}}$ is bounded, so finitely many of them lie in one closed ball $\overline{B}(y_{0},N)$: choose $y_{0}\in Y$ and $N$ with $d\big(g(a_{i}),y_{0}\big)\le N$ for all $i$ and $g\in\mathcal{G}$, possible since a finite union of bounded sets is bounded. For $g\in\mathcal{G}$ and $x\in U_{a_{i}}$,
+$$
+d\big(g(x),y_{0}\big)\le d\big(g(x),g(a_{i})\big)+d\big(g(a_{i}),y_{0}\big)<N+1 ,
+$$
+so $\mathcal{G}\subset\mathcal{C}(X,Y_{0})$ with $Y_{0}=\overline{B}(y_{0},N+1)$, which is closed and bounded, hence compact by step [](#preliminaries){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #if}
+If $\mathcal{F}\subset\mathcal{C}(X,Y)$ is equicontinuous and pointwise bounded, then $\overline{\mathcal{F}}$ is compact; hence a subspace of $\mathcal{C}(X,Y)$ has compact closure exactly when it is equicontinuous and pointwise bounded.
+
+::: pf-proof
+Let $\mathcal{G}=\overline{\mathcal{F}}$, which is equicontinuous and pointwise bounded by step [](#closure){.pf-ref} and lies in $\mathcal{C}(X,Y_{0})$ with $Y_{0}$ compact by step [](#compact-target){.pf-ref}. Lemma 45.3 uses only the compactness of the target space and gives that $\mathcal{G}$ is totally bounded under $\rho$. The space $\mathcal{C}(X,Y)$ is complete because $Y$ is complete (Theorem 43.6), and $\mathcal{G}$ is closed in it, hence complete; a complete totally bounded metric space is compact (Theorem 45.1). So $\mathcal{F}$ has compact closure. Conversely a compact $\mathcal{G}$ gives the two properties by step [](#only-if){.pf-ref}, and steps [](#only-if){.pf-ref} and this one together are Ascoli's theorem with $\RR^{n}$ replaced by $Y$.
+:::
+
+:::
+
+:::
 :::

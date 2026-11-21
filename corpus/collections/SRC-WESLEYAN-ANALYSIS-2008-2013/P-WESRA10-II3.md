@@ -5,7 +5,9 @@ kind: problem
 title: 'Positive-measure nowhere-dense set and unavoidable discontinuities'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Nowhere Dense Sets
+  - Lebesgue Measure
 relations: []
 review: draft
 audit:

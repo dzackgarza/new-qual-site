@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP03-07
 kind: problem
 title: One-point compactification and metrizability from a countable basis
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Compactness, Hausdorff Spaces]}
 relations: []
 review: draft
 audit:

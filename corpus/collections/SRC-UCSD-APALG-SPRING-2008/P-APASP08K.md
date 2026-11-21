@@ -16,6 +16,11 @@ audit:
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Lamport structure. The system is solved explicitly (adding and subtracting the two equations), each generating function is obtained from the product formula for absolutely convergent series, and the two readings of the printed word "compositions" are separated into their own steps with the relation between the two answers (a factor x_1x_2x_3x_4, a unit in the formal power series ring) stated. The card does not use the named package as a black box, since the exercise's system is small enough to solve; it records that the rational function obtained is the one such a package returns. No retained solution set covers the exercise; the card says the argument is its own.
 ---
 
 ::: {.problem}
@@ -33,42 +38,55 @@ $$
 :::
 
 ::: {.solution}
-Add and subtract the two equations:
-$$
-\begin{aligned}
-(p_1+p_2-p_3-p_4)+(p_1-p_2+p_3-p_4)&=2p_1-2p_4=0,\\
-(p_1+p_2-p_3-p_4)-(p_1-p_2+p_3-p_4)&=2p_2-2p_3=0.
-\end{aligned}
-$$
-Thus every solution satisfies
-$$
-p_1=p_4,
-\qquad
-p_2=p_3.
-$$
-Conversely, every quadruple with these two equalities satisfies the original system. Hence, under the standard nonnegative-integer convention for partition-analysis generating functions,
-$$
-S_2=\{(a,b,b,a):a,b\ge0\}.
-$$
-Therefore
-$$
-\begin{aligned}
-F_{S_2}(x_1,x_2,x_3,x_4)
-&=\sum_{a,b\ge0}x_1^a x_2^b x_3^b x_4^a\\
-&=\left(\sum_{a\ge0}(x_1x_4)^a\right)
-  \left(\sum_{b\ge0}(x_2x_3)^b\right)\\
-&=\boxed{\frac{1}{(1-x_1x_4)(1-x_2x_3)}}.
-\end{aligned}
-$$
-This is the rational function that a partial-fraction/partition-analysis package returns.
+The collection's provenance is the examination paper alone, so no retained solution set covers this exercise; the argument is the card's own, and the partial-fraction package is not used as a black box: the Diophantine system is solved directly.
 
-The printed problem uses the word “compositions” without stating whether zero parts are allowed. If it is instead intended in the classical strictly-positive sense, then $a,b\ge1$, and the corresponding generating function is
+::: pf
+
+::: {.pf-step #system}
+The system $p_1+p_2-p_3-p_4=0$, $p_1-p_2+p_3-p_4=0$ is equivalent to $p_1=p_4$ and $p_2=p_3$.
+
+::: pf-proof
+Adding the two equations gives $2p_1-2p_4=0$, so $p_1=p_4$; subtracting them gives $2p_2-2p_3=0$, so $p_2=p_3$. Conversely, if $p_1=p_4$ and $p_2=p_3$ then $p_1+p_2-p_3-p_4=p_1+p_2-p_2-p_1=0$ and $p_1-p_2+p_3-p_4=p_1-p_2+p_2-p_1=0$.
+:::
+
+:::
+
+::: {.pf-step #nonnegative}
+If the parts are allowed to be $0$, the solution set is $S_2=\{(a,b,b,a):a,b\ge0\}$ and
 $$
-\sum_{a,b\ge1}(x_1x_4)^a(x_2x_3)^b
-=
-\boxed{
-\frac{x_1x_2x_3x_4}{(1-x_1x_4)(1-x_2x_3)}
-}.
+F_{S_2}=\sum_{a,b\ge0}x_1^ax_2^bx_3^bx_4^a=\frac{1}{(1-x_1x_4)(1-x_2x_3)} .
 $$
-Thus the only ambiguity is the lower bound on the two free parameters; the Diophantine solution set itself is exactly $p=(a,b,b,a)$.
+
+::: pf-proof
+By step [](#system){.pf-ref} a solution is exactly a quadruple $(a,b,b,a)$ with $a,b\ge0$. Then
+$$
+\sum_{a,b\ge0}x_1^ax_4^a\,x_2^bx_3^b=\Bigl(\sum_{a\ge0}(x_1x_4)^a\Bigr)\Bigl(\sum_{b\ge0}(x_2x_3)^b\Bigr)
+$$
+by the product formula for absolutely convergent series, and each factor is a geometric series summing to $1/(1-x_1x_4)$ and $1/(1-x_2x_3)$ respectively. This is the answer a partial-fraction/partition-analysis package returns for the nonnegative solution set.
+:::
+
+:::
+
+::: {.pf-step #positive}
+If the printed word "compositions" is read in its classical strictly positive sense, then $a,b\ge1$ and
+$$
+F_{S_2}=\frac{x_1x_2x_3x_4}{(1-x_1x_4)(1-x_2x_3)} .
+$$
+
+::: pf-proof
+With $a,b\ge1$ put $a'=a-1$, $b'=b-1$; then $(x_1x_4)^a(x_2x_3)^b=x_1x_2x_3x_4\cdot(x_1x_4)^{a'}(x_2x_3)^{b'}$ with $a',b'\ge0$, so the sum is $x_1x_2x_3x_4$ times the series of step [](#nonnegative){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step}
+The Diophantine solution set is exactly $p=(a,b,b,a)$; the only thing the printed statement leaves open is whether the two free parameters are allowed to be $0$, and the generating function differs by the factor $x_1x_2x_3x_4$.
+
+::: pf-proof
+Step [](#system){.pf-ref} is the solution set, and steps [](#nonnegative){.pf-ref} and [](#positive){.pf-ref} give the two cases; each formula follows from the other on dividing or multiplying by $x_1x_2x_3x_4$, which is a unit in the ring of formal power series.
+:::
+
+:::
+
+:::
 :::

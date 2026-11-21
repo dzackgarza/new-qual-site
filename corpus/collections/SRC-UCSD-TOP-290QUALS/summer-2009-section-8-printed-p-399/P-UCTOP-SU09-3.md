@@ -10,6 +10,18 @@ classification:
   - Homology
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. Recomputed the Kunneth sum: tensor terms give Z in degrees 0 and 6,
+    Z/p + Z/q in 1 and 4, Z/p tensor Z/q = Z/d in degree 2, and Z + Z in degree 3; the only nonzero
+    Tor term is Tor(Z/p, Z/q) = Z/d, landing in degree 3, so H_3 = Z^2 + Z/d and all other degrees
+    vanish. The card's table matches, including that degree 2 carries the tensor term and not a Tor
+    term, which is the easy slip in this computation. Checked Z/d = Z/gcd(p,q) for both the tensor and
+    the Tor term via the resolution 0 -> Z -p-> Z -> Z/p -> 0. Not checked: the printed exam, which
+    was not re-read in this pass.
 ---
 
 ::: {.problem}

@@ -11,6 +11,14 @@ classification:
   - Classification of Groups
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained document `assets/attachments/final2011-solns.pdf`: the statement is Problem 1 of the Math 553 Final Examination, 2011, and its printed words are
+    the card's. The item and the file are now named in the solution's opening sentence. Not
+    checked in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -26,6 +34,7 @@ Let $G$ be a group of order $105$.
 :::
 
 ::: {.solution}
+This is Problem 1 of the Math 553 Final Examination, 2011, retained in this repository as `assets/attachments/final2011-solns.pdf`; the statement below is its wording.
 
 ::: pf
 

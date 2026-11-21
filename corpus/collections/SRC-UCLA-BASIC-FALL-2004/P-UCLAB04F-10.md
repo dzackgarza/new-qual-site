@@ -5,7 +5,9 @@ kind: problem
 title: Stabilization and disjointness of generalized eigenspaces
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Eigenvalues and Eigenvectors
+  - Diagonalization
 relations: []
 review: draft
 audit:

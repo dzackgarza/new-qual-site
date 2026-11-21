@@ -6,7 +6,9 @@ title: Closure-neighborhood characterization of regularity
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Separation Axioms
+  - Regularity
 relations: []
 review: draft
 audit:

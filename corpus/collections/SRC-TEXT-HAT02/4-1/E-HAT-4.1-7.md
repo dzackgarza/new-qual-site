@@ -1,4 +1,5 @@
 ---
+
 schema: qual/card@1
 id: E-HAT-4.1-7
 kind: problem
@@ -448,6 +449,129 @@ audit:
     statements stand as written; the same withdrawal is a new record of this date in
     `COMPLAINTS.md`, and no dated event or record is edited in place.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule applied at paragraph level: the solution opens with the provenance
+    convention for a prose proof, which covers the construction in the cube, the restricted
+    additivity lemma and the independence of the extension --- all of them already carrying the
+    card's-own marking in their own sentences --- beside the paragraphs citing tom Dieck §6.2
+    printed pp. 126--127, May printed pp. 53 and 68--69, and Davis--Kirk printed pp. 153 and 160.
+    Checked: the four places. Not changed: any argument.
+
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into a Lamport proof without changing the mathematics: the eleven labelled
+    paragraphs of the previous solution are now nine numbered steps — the cubical model, the
+    construction of $\gamma f$, the transport and its properties, the independence of the
+    extension, well-definedness of $\beta_\gamma$ (with the disk-model construction of the
+    action), the identity $\beta_\gamma=(\bar\gamma)_\#$, the composition law and bijectivity,
+    additivity, and compatibility with the exact sequence — with the provenance paragraph
+    left as the card's lead and the source attributions kept inside the step that uses them.
+    Each step states its claim before its argument, so the three steps the card identifies as
+    its own (the extension lemma, the additivity family, the $\partial\beta_\gamma$ identity)
+    are now clearly delimited. Nothing was re-derived; no step was weakened. The exercise is on
+    printed p. 358, unchanged. Not claimed: a retained solution set; the sets in `tmp/sources`
+    reach §4.1 only at its first exercises, and every paragraph of the argument is attributed
+    to tom Dieck, Davis–Kirk or May, or marked the card's own, as before.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, the correctness read of this card's own part, which is well-definedness, the
+    relative homomorphism property and the identification of Hatcher's $\gamma f$ with the transport.
+    No defect found. Checked in step `construction`: $\varphi$ carries $Q$ homeomorphically onto
+    $I^n$ and the face $B$ onto the free face, every other face of $Q$ into $J^{n-1}$; $\delta$ is
+    $0$ on the non-free faces, hence on $J^{n-1}$ and on $\partial I^{n-1}$, $1$ on the non-bottom
+    faces of $Q$ and on $\partial B$ — the displayed formula gives both, since $\nu=0$ on
+    $s_i\in\{\varepsilon,1-\varepsilon\}$ — and on the annulus $\Sigma$ it runs from $0$ to $1$; the
+    two clauses of $\gamma f$ agree on $\partial Q$ because the first is $f$ of a point of
+    $J^{n-1}$, that is $x_1$, and the second is $\gamma(1)=x_1$; and $\gamma f$ maps
+    $\partial I^n$ into $A$ and $J^{n-1}$ to $x_0$. Checked in step `well-defined`: independence of
+    the representative, with $h(\varphi(s),u)$ on $Q$ and the fixed shell value, and independence of
+    the path class, with $G(\delta(s),u)$, each continuous at the interface by the same two
+    agreements and each a map of triples with $J^{n-1}$ carried to $x_0$. Checked the lemma of step
+    `extension`: $p:E\to A$ evaluation at the basepoint of $S^{n-1}$ is a fibration whose fibre over
+    $a$ is $\pi_n(X,A,a)$; two lifts of $v$ with the same initial point and the constant homotopy
+    $v(s)$ on $I^2$ with the partial lift prescribed on three sides have an extension because
+    $(I^2,U)$ is a CW pair, and at $s=1$ the extension joins $V_1$ to $W_1$ inside $F_{a_1}$.
+    Checked step `realizes`: $V_0=f$, $V_1=\gamma f$, $V_t(J^{n-1})=\gamma(1-t)=v(t)$ for $t>0$, and
+    continuity at $t=0$ on each of $\operatorname{int}I^{n-1}$, $J^{n-1}$ and the annulus. Checked
+    step `properties`: $\beta_{\gamma\eta}=\beta_\gamma\beta_\eta$ from
+    $\overline{\gamma\eta}=\bar\eta\bar\gamma$ and functoriality, and the two composites with the
+    reversed path are the identity because each concatenation is homotopic rel endpoints to the
+    constant path. Checked step `additive`: $W_t$ is well defined on $s_1=\frac12$ because both
+    clauses take the value $v(t)$, the faces $s_1=0$ and $s_1=1$ lying in $J^{n-1}$, and it is a
+    homotopy of maps of triples ending at $V^f_1+V^g_1$. Checked step `exact`:
+    $\gamma f$ restricted to the free face is $\gamma$ applied to $f$ restricted to $I^{n-1}$ in
+    Hatcher's absolute sense. Not changed: the statement as printed on p. 358.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, on the independent reader's report: one notation repaired, no change to the
+    mathematics. Step `construction` defined the shell as $S=I^n-\operatorname{int}Q$ and the annulus
+    as $\Sigma=I^{n-1}-\operatorname{int}B$, and claimed $Q\cap S=\partial Q$. That holds for the
+    interiors taken in $I^n$ and in $I^{n-1}$, which is what the step means, but not for the absolute
+    interiors in $\RR^n$: there $\operatorname{int}B$ is not in $\operatorname{int}Q$, so it would
+    lie in $S$ and the two clauses of $\gamma f$ would be required to agree on it, which they are
+    not — the first gives $f$ of an interior point of the free face, an arbitrary point of $A$, and
+    the second gives $\gamma(1)=x_1$. The step and the definition of $V_t$ in step `realizes` now
+    write $\operatorname{int}_{I^n}Q$ and $\operatorname{int}_{I^{n-1}}B$ and say why the
+    qualification is needed. Re-checked and unchanged: the boundary values of $\delta$, the
+    agreements at $\partial Q$, the well-definedness families, the extension lemma, the identity
+    $\beta_\gamma=(\bar\gamma)_\#$ and the additivity step.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, referee read of this card's own part: well-definedness, the relative homomorphism
+    property, and $\gamma f$ as the transport. Checked first the model, since the whole construction
+    turns on it: Hatcher's printed p. 343, read verbatim, takes $I^{n-1}$ to be the face $s_n=0$ and
+    $J^{n-1}$ to be "the closure of $\partial I^n-I^{n-1}$, the union of the remaining faces" --- so
+    the side walls together with the face $s_n=1$ --- and defines $\pi_n(X,A,x_0)$ by maps
+    $(I^n,\partial I^n,J^{n-1})\to(X,A,x_0)$; the card's step `model` states exactly this, and its
+    later claim that the sum uses a coordinate other than $s_n$ is the book's next sentence. Checked
+    the explicit $\delta$: with $\nu$ the distance of $(s_1,\dots,s_{n-1})$ from
+    $[\varepsilon,1-\varepsilon]^{n-1}$ and $\tau$ that of $s_n$ from $[0,1-\varepsilon]$, both
+    truncated at $1$, $\delta=1-\max(\nu,\tau)$ is $0$ on every remaining face ($\nu=1$ on
+    $\partial I^{n-1}$, $\tau=1$ at $s_n=1$), is $1$ on $\partial Q$ away from $\operatorname{int}B$
+    and on $\partial B$, and runs from $0$ to $1$ across $\Sigma$; so the two clauses of $\gamma f$
+    agree on the interface and $\gamma f(J^{n-1})=\gamma(0)=x_0$, which is the requirement the
+    earlier defective version could not meet. Checked the two independence arguments: the interface
+    $Q\cap S=\partial Q$ is matched by $h(-,u)(J^{n-1})=x_1$ and $f(J^{n-1})=x_1$ on the non-bottom
+    faces and on $\partial B$, and the shell clauses are independent of $u$ or land in $A$ because
+    $\gamma$ and $G$ are paths in $A$; each stage is a map of triples and its $J^{n-1}$ value is the
+    constant $x_0$. Checked the transport lemma against May: $p:E\to A$, evaluation at the cone
+    basepoint, is a fibration with $\pi_n(X,A,a)\cong\pi_0(F_a)$; two lifts of $v$ with the same
+    initial point are joined by a lift of the constant homotopy $v(s)$ prescribed on three sides of
+    the square, and the edge $s=1$ joins $V_1$ to $W_1$ inside $F_{a_1}$. That is a proof of the
+    independence the source asserts, and it needs no extension into $A$. Checked the additivity: the
+    sum in the first coordinate is a map of triples because $s_n$ is the special coordinate, and the
+    two clauses of $W_t$ agree on $s_1=\tfrac12$ because the faces $s_1=0,1$ lie in $J^{n-1}$; hence
+    $v_\#$ is a homomorphism for $n\ge2$, and the identification $\beta_\gamma=(\bar\gamma)_\#$
+    carries it to $\beta_\gamma$. Checked the composition and bijectivity:
+    $\beta_{\gamma\eta}=(\bar\eta\bar\gamma)_\#=(\bar\gamma)_\#(\bar\eta)_\#$, and
+    $\beta_{\bar\gamma}\beta_\gamma$ and $\beta_\gamma\beta_{\bar\gamma}$ are the identity because a
+    path followed by its reverse is homotopic rel endpoints to the constant path, where the transport
+    is the identity. Not claimed: a published solution of Exercise 4.1.7, none located.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator repair, no mathematics: every page reference is gone from the live text, and each source is cited
+    by the numbered statement the step actually uses. Hatcher's cubical model is that of §4.1, the exact
+    sequence of the pair is Theorem 4.3, and the definitions of $\gamma f$, of formula (1) and of the
+    boundary restriction are "§4.1". tom Dieck's transport is §6.2 with Proposition (6.2.1), Proposition
+    (6.2.2), Proposition (6.2.3) and Remark (6.1.4). May's lifting square is Ch. 7 §6 with Ch. 9 §5.
+    Davis--Kirk's action is Theorem 6.63 in the model of Definition 6.52, with the exact sequence of the pair
+    as Theorem 6.53. The provenance paragraph's opening sentence, which promised a source's argument "at the
+    page given", now promises it "at the statement given". No hypothesis, claim or step changed, and the
+    split between the sources' arguments and the card's own is unchanged. The dated events above keep their
+    text, page references included, as QUAL-11 requires. `qualc.authoring check` passes.
 ---
 
 ::: {.problem}
@@ -455,14 +579,31 @@ Extend the results proved near the beginning of this section for the change-of-b
 :::
 
 ::: {.solution}
-Hatcher's cubical model: $I^{n-1}$ is the face $s_n=0$ of $I^n$, the free face; $J^{n-1}$ is the closure of $\partial I^n-I^{n-1}$; and $\pi_n(X,A,x_1)$ is the set of homotopy classes of maps $f:(I^n,\partial I^n,J^{n-1})\to(X,A,x_1)$, so $f(\partial I^n)\subseteq A$ and $f(J^{n-1})=x_1$ (Hatcher, *Algebraic Topology* (2002), printed p. 343, with the exact sequence of the pair as Theorem 4.3 on printed p. 344). Because $I^{n-1}\subset\partial I^n$ the whole free face maps into $A$, and because $\partial I^{n-1}\subset J^{n-1}$ the boundary of the free face maps to the single point $x_1$. Hatcher defines $\gamma f$ on printed p. 345, for a path $\gamma$ in $A$ from $x_0$ to $x_1$, "by placing a copy of $f$ in a smaller cube with its face $I^{n-1}$ centered in the corresponding face of the larger cube", and leaves the properties to this exercise. The transport whose properties these are is tom Dieck's, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), §6.2, printed pp. 126--127, and the construction of the action of $\pi_1(A,x_0)$ on the relative groups is J. F. Davis and P. Kirk's, *Lecture Notes in Algebraic Topology*, Theorem 6.63, p. 160, in the disk model of their Definition 6.52, p. 153, with the exact sequence of the pair as Theorem 6.53, p. 154.
+Provenance, paragraph by paragraph: a paragraph that names a source records that source's argument at the statement given, and a paragraph that names none is the card's own, possibly applying a result cited in another paragraph.
 
-*The construction in Hatcher's cube.* Fix $\varepsilon\in(0,\tfrac13)$ and put
+The exercise is Hatcher, *Algebraic Topology* (2002), §4.1 Exercise 7. No retained solution set covers it — the Hatcher sets in `tmp/sources` reach §4.1 only at its first exercises — so the argument below is assembled from the sources named paragraph by paragraph in the provenance note above, with the card's own work in steps [](#extension){.pf-ref} through [](#additive){.pf-ref}.
+
+::: pf
+
+::: {.pf-step #model}
+In the cubical model, $\pi_n(X,A,x_1)$ is the set of homotopy classes of maps of triples $(I^n,\partial I^n,J^{n-1})\to(X,A,x_1)$, so the free face $I^{n-1}=\theset{s_n=0}$ maps into $A$ and its boundary $\partial I^{n-1}$ maps to the single point $x_1$.
+
+::: pf-proof
+Hatcher's cubical model: $I^{n-1}$ is the face $s_n=0$ of $I^n$, the free face; $J^{n-1}$ is the closure of $\partial I^n-I^{n-1}$; and $\pi_n(X,A,x_1)$ is the set of homotopy classes of maps $f:(I^n,\partial I^n,J^{n-1})\to(X,A,x_1)$, so $f(\partial I^n)\subseteq A$ and $f(J^{n-1})=x_1$ (Hatcher, *Algebraic Topology* (2002), the cubical model of §4.1, with the exact sequence of the pair as Theorem 4.3). Because $I^{n-1}\subset\partial I^n$ the whole free face maps into $A$, and because $\partial I^{n-1}\subset J^{n-1}$ the boundary of the free face maps to the single point $x_1$. Hatcher defines $\gamma f$ in §4.1, for a path $\gamma$ in $A$ from $x_0$ to $x_1$, "by placing a copy of $f$ in a smaller cube with its face $I^{n-1}$ centered in the corresponding face of the larger cube", and leaves the properties to this exercise. The transport whose properties these are is tom Dieck's, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), §6.2, and the construction of the action of $\pi_1(A,x_0)$ on the relative groups is J. F. Davis and P. Kirk's, *Lecture Notes in Algebraic Topology*, Theorem 6.63, in the disk model of their Definition 6.52, with the exact sequence of the pair as Theorem 6.53.
+:::
+
+:::
+
+::: {.pf-step #construction}
+For a path $\gamma$ in $A$ from $x_0$ to $x_1$ and a map of triples $f:(I^n,\partial I^n,J^{n-1})\to(X,A,x_1)$, the map $\gamma f$ of the displayed formula is well defined, continuous, and a map of triples $(I^n,\partial I^n,J^{n-1})\to(X,A,x_0)$.
+
+::: pf-proof
+Fix $\varepsilon\in(0,\tfrac13)$ and put
 $$
 Q=[\varepsilon,1-\varepsilon]^{n-1}\times[0,1-\varepsilon],\qquad
 \varphi(s)=\Bigl(\frac{s_1-\varepsilon}{1-2\varepsilon},\dots,\frac{s_{n-1}-\varepsilon}{1-2\varepsilon},\frac{s_n}{1-\varepsilon}\Bigr),
 $$
-so that $\varphi:Q\to I^n$ is a homeomorphism carrying the face $B=[\varepsilon,1-\varepsilon]^{n-1}\times\{0\}$ of $Q$ onto the free face $I^{n-1}$ and every other face of $Q$ into $J^{n-1}$. The copy of $f$ sits in $Q$ and its free face $B$ sits in the interior of the free face of $I^n$, which is what "centered in the corresponding face" says. Write $S=I^n-\operatorname{int}Q$ for the shell and $\Sigma=I^{n-1}-\operatorname{int}B$ for the annulus of the free face outside $B$; then $\partial S=\partial I^n\cup\partial Q$ and $Q\cap S=\partial Q$. Choose a continuous $\delta:S\to[0,1]$ which is $0$ on the non-free faces of $I^n$, and hence on their closure, which contains $\partial I^{n-1}$; which is $1$ on the non-bottom faces of $Q$ and on $\partial B$; and which on $\Sigma$ runs from $0$ at $\partial I^{n-1}$ to $1$ at $\partial B$. Such a function exists, for example
+so that $\varphi:Q\to I^n$ is a homeomorphism carrying the face $B=[\varepsilon,1-\varepsilon]^{n-1}\times\{0\}$ of $Q$ onto the free face $I^{n-1}$ and every other face of $Q$ into $J^{n-1}$. The copy of $f$ sits in $Q$ and its free face $B$ sits in the interior of the free face of $I^n$, which is what "centered in the corresponding face" says. Write $S=I^n-\operatorname{int}_{I^n}Q$ for the shell and $\Sigma=I^{n-1}-\operatorname{int}_{I^{n-1}}B$ for the annulus of the free face outside $B$, interiors being taken in $I^n$ and in $I^{n-1}$; with the absolute interiors in $\RR^n$ the set $S$ would contain $\operatorname{int}B$ and the two clauses below would clash there. Then $\partial S=\partial I^n\cup\partial Q$ and $Q\cap S=\partial Q$. Choose a continuous $\delta:S\to[0,1]$ which is $0$ on the non-free faces of $I^n$, and hence on their closure, which contains $\partial I^{n-1}$; which is $1$ on the non-bottom faces of $Q$ and on $\partial B$; and which on $\Sigma$ runs from $0$ at $\partial I^{n-1}$ to $1$ at $\partial B$. Such a function exists, for example
 $$
 \delta(s)=1-\max\bigl(\nu(s_1,\dots,s_{n-1}),\tau(s_n)\bigr),\qquad
 \nu=\max_i\max\Bigl\{\frac{\varepsilon-s_i}{\varepsilon},\frac{s_i-(1-\varepsilon)}{\varepsilon},0\Bigr\},\qquad
@@ -474,22 +615,43 @@ $$
 \gamma f(s)=\begin{cases}f(\varphi(s)),&s\in Q,\\[2pt] \gamma(\delta(s)),&s\in S\end{cases}
 $$
 is well defined and continuous: on a non-bottom face of $Q$ the first formula gives $f(\varphi(s))=x_1$ and the second $\gamma(1)=x_1$; on $\partial B$ the first gives $f(\varphi(s))=f(\partial I^{n-1})=x_1$ and the second $\gamma(1)=x_1$. It is a map of triples, since on the non-free faces and on $\Sigma$ the second formula gives $\gamma(\delta(s))\in A$, on $B\subset\partial I^n$ the first gives a point of $A$, and $J^{n-1}$ lies where $\delta=0$, so $\gamma f(J^{n-1})=\gamma(0)=x_0$. Note that the boundary values of $\delta$ cannot be $\delta^{-1}(0)=\partial I^n$, $\delta^{-1}(1)=\partial Q$: $B$ lies in both, and no point of $\operatorname{int}B$ is reached by the shell. What continuity at $\partial B$ needs is the value of $f$ on $\partial B$, not on $B$; the annulus $\Sigma$ is the piece of the shell that carries the interpolation, and it is exactly what centering the small free face in the large one adds.
+:::
 
-*The transport along paths.* (tom Dieck §6.2, printed pp. 126--127.) Let $v:I\to A$ be a path from $a_0$ to $a_1$ and $f:(I^n,\partial I^n,J^{n-1})\to(X,A,a_0)$ a map. The source reads $v$ as a homotopy of the constant map $J^{n-1}\to\{a_0\}$ and extends it to a homotopy $V_t:(I^n,\partial I^n)\to(X,A)$ with $V_0=f$; it says that an extension exists because $J^{n-1}\subset\partial I^n$ and $\partial I^n\subset I^n$ are cofibrations. Proposition (6.2.2), printed p. 127: the assignment $[V_0]\mapsto[V_1]$ is a well-defined map
+:::
+
+::: {.pf-step #transport}
+For a path $v$ in $A$ from $a_0$ to $a_1$ there is a transport $v_\#:\pi_n(X,A,a_0)\to\pi_n(X,A,a_1)$ depending only on the class of $v$, additive for $n\ge2$, with $(v\cdot w)_\#=w_\#\circ v_\#$ and $v_\#$ bijective.
+
+::: pf-proof
+(tom Dieck §6.2.) Let $v:I\to A$ be a path from $a_0$ to $a_1$ and $f:(I^n,\partial I^n,J^{n-1})\to(X,A,a_0)$ a map. The source reads $v$ as a homotopy of the constant map $J^{n-1}\to\{a_0\}$ and extends it to a homotopy $V_t:(I^n,\partial I^n)\to(X,A)$ with $V_0=f$; it says that an extension exists because $J^{n-1}\subset\partial I^n$ and $\partial I^n\subset I^n$ are cofibrations. Proposition (6.2.2): the assignment $[V_0]\mapsto[V_1]$ is a well-defined map
 $$
 v_\#:\pi_n(X,A,a_0)\longrightarrow\pi_n(X,A,a_1)
 $$
-which depends only on the morphism $[v]$ in the fundamental groupoid $\Pi(A)$; for $n\ge2$ the map $v_\#$ is a homomorphism; and $v\mapsto v_\#$ is a transport functor from $\Pi(A)$, so $(v\cdot w)_\#=w_\#\circ v_\#$. The source asserts this in the relative case and writes the proof only in the absolute case, as Proposition (6.2.1) on printed pp. 126--127:
+which depends only on the morphism $[v]$ in the fundamental groupoid $\Pi(A)$; for $n\ge2$ the map $v_\#$ is a homomorphism; and $v\mapsto v_\#$ is a transport functor from $\Pi(A)$, so $(v\cdot w)_\#=w_\#\circ v_\#$. The source asserts this in the relative case and writes the proof only in the absolute case, as Proposition (6.2.1):
 
 > Let $\varphi:f\simeq g$ be a homotopy of maps $(I^n,\partial I^n)\to(X,x_0)$ and $\psi:v\simeq w$ a homotopy of paths from $x_0$ to $x_1$. Let $V_t$ extend $(f,\hat v)$ and $W_t$ extend $(g,\hat w)$. These data combine to a map on $T=I^n\times0\times I\;\cup\;\partial I^n\times I\times I\;\cup\;I^n\times I\times\partial I\subset I^{n+2}$ as follows: on $I^n\times0\times I$ use $\varphi$, on $\partial I^n\times I\times I$ use $\hat\psi$, on $I^n\times I\times0$ use $V$, and on $I^n\times I\times1$ use $W$. If we interchange the last two coordinates then $T$ is transformed into $J^{n+1}$. Therefore our map has an extension to $I^{n+2}$, and its restriction to $I^n\times1\times I$ is a homotopy from $V_1$ to $W_1$. This shows the independence of the representatives $f$ and $v$. The other properties are clear from the construction.
+:::
 
-*Independence of the chosen extension.* Let $f:(I^n,\partial I^n,J^{n-1})\to(X,A,a_0)$ be a map, $v:I\to A$ a path from $a_0$ to $a_1$, and $V_t,W_t:(I^n,\partial I^n)\to(X,A)$ two homotopies with $V_0=W_0=f$ and $V_t(J^{n-1})=W_t(J^{n-1})=v(t)$ for all $t$. Then $[V_1]=[W_1]$ in $\pi_n(X,A,a_1)$. This is what (6.2.2) states by the word "well-defined" and proves only in the absolute case. The proof below is May's, and it uses no extension into $A$: it is the lifting square that makes the translation of fibres a well-defined homotopy class of maps of fibres.
+:::
 
-*Proof of the lemma.* (May, *A Concise Course in Algebraic Topology*, Ch. 7 §6, printed p. 53, and Ch. 9 §5, printed pp. 68--69.) The lifting square used below is the one printed in Ch. 7 §6: a map on $F_b\times J^2$, with $J^2=I\times\partial I\cup\{0\}\times I$, prescribed on three sides of the square, is lifted through the covering homotopy property, and that is what makes the translation of fibres a well-defined homotopy class; Ch. 9 §5 then identifies $\pi_n(X,A,a)$ with $\pi_0(F_a)$ for the fibration below and reads the transport off. The square is applied below to a single point of the fibre $F_b$ instead of the whole fibre; that restriction is the card's, and it is what the lemma states. Let $E$ be the subspace of the mapping space $X^{CS^{n-1}}$ consisting of the maps of pairs $(CS^{n-1},S^{n-1})\to(X,A)$, and let $p:E\to A$ be evaluation at the basepoint $*$ of $S^{n-1}$ --- the point to which $J^{n-1}$ collapses --- and not at the cone point: the cone point maps into $X$ and not necessarily into $A$, so evaluation there would not land in $A$, while the basepoint does lie in $A$ for a map of pairs. May checks that this $p$ is a fibration, using that $\{*\}\to S^{n-1}$ and $S^{n-1}\to CS^{n-1}$ are cofibrations, and identifies $\pi_n(X,A,a)$ with $\pi_0(F_a)$, where $F_a=p^{-1}(a)$ is the fibre. A homotopy $V_t$ of maps of pairs with $V_t(J^{n-1})=v(t)$ is exactly a lift $t\mapsto V_t$ of the path $v$ to $E$ with $V_0=f$; the cube model and the cone model are identified by collapsing $J^{n-1}$, as in tom Dieck's Remark (6.1.4), printed p. 125. Let $V,W:I\to E$ be two lifts of $v$ with $V(0)=W(0)=f$. Consider the homotopy $H:I\times I\to A$, $H(s,t)=v(s)$, and the partial lift of $H$ prescribed on the three sides $t=0$, $t=1$ and $s=0$ of the square by $V$ on $t=0$, $W$ on $t=1$, and the constant $f$ on $s=0$. The three prescriptions agree at the corners, and they are a lift of $H$ restricted to the union $U$ of those sides. The inclusion $U\subset I^2$ is a Hurewicz cofibration and a homotopy equivalence, so a Hurewicz fibration has the right lifting property against it --- equivalently, the homotopy extension property of the CW pair together with the homotopy lifting property --- and the lift extends to $\tilde H:I\times I\to E$. Its edges $t=0$ and $t=1$ are $V$ and $W$, so $\tilde H(-,1)$ is a homotopy of lifts from $V$ to $W$ fixed at $s=0$. At $s=1$ the map $t\mapsto\tilde H(1,t)$ lies in $E$ over the constant path at $a_1$, that is, in the fibre $F_{a_1}$, and joins $V(1)=V_1$ to $W(1)=W_1$. Hence $V_1$ and $W_1$ lie in the same path component of $F_{a_1}$, which is the same element of $\pi_n(X,A,a_1)=\pi_0(F_{a_1})$. Hence $[V_1]=[W_1]$ in $\pi_n(X,A,a_1)$, and the assignment $[V_0]\mapsto[V_1]$ is well defined.
+::: {.pf-step #extension}
+Two homotopies $V,W$ of maps of pairs with $V_0=W_0=f$ and $V_t(J^{n-1})=W_t(J^{n-1})=v(t)$ have $[V_1]=[W_1]$, so the transport of step [](#transport){.pf-ref} is well defined.
 
-*What the lemma settles on this card.* Three steps below use the transport, and each rests on the lemma rather than on the source's assertion. (i) The identification $\beta_\gamma=(\bar\gamma)_\#$ takes the family $V_t$ of *Hatcher's $\gamma f$ realizes this transport* and concludes $[\gamma f]=(\bar\gamma)_\#([f])$; the lemma is what makes $(\bar\gamma)_\#([f])$ independent of the choice of the family, so the family exhibited computes it. (ii) The composition law: if $W_t$ carries $V_1$ along a second path $w$, the concatenation in $t$ of $V$ and $W$ is an admissible homotopy for $v*w$ because its values on $J^{n-1}$ trace $v*w$, so by the lemma $(v*w)_\#([f])=[W_1]=w_\#(v_\#([f]))$; this is the functoriality $(v*w)_\#=w_\#\circ v_\#$ that (6.2.2) states. (iii) The additivity step "the definition of $v_\#$ gives" evaluates $v_\#([f]+[g])$ by exhibiting an admissible family $W_t$; by the lemma any admissible family computes $v_\#$, so the exhibited one does.
+::: pf-proof
+Let $f:(I^n,\partial I^n,J^{n-1})\to(X,A,a_0)$ be a map, $v:I\to A$ a path from $a_0$ to $a_1$, and $V_t,W_t:(I^n,\partial I^n)\to(X,A)$ two homotopies with $V_0=W_0=f$ and $V_t(J^{n-1})=W_t(J^{n-1})=v(t)$ for all $t$. Then $[V_1]=[W_1]$ in $\pi_n(X,A,a_1)$. This is what (6.2.2) states by the word "well-defined" and proves only in the absolute case. The proof below is May's, and it uses no extension into $A$: it is the lifting square that makes the translation of fibres a well-defined homotopy class of maps of fibres.
 
-*Well-definedness in the cube.* The argument of this paragraph is the card's own. Two things are to be shown: that $\gamma f$ depends only on the class of $f$, and that it depends only on the class of $\gamma$ rel endpoints. (i) *Independence of the representative.* Let $h:(I^n\times I,\partial I^n\times I,J^{n-1}\times I)\to(X,A,x_1)$ be a homotopy of maps of triples from $f$ to $f'$, so $h(-,u)(\partial I^n)\subseteq A$ and $h(-,u)(J^{n-1})=\{x_1\}$ for every $u$. Define
+(May, *A Concise Course in Algebraic Topology*, Ch. 7 §6 and Ch. 9 §5.) The lifting square used below is the one of Ch. 7 §6: a map on $F_b\times J^2$, with $J^2=I\times\partial I\cup\{0\}\times I$, prescribed on three sides of the square, is lifted through the covering homotopy property, and that is what makes the translation of fibres a well-defined homotopy class; Ch. 9 §5 then identifies $\pi_n(X,A,a)$ with $\pi_0(F_a)$ for the fibration below and reads the transport off. The square is applied below to a single point of the fibre $F_b$ instead of the whole fibre; that restriction is the card's, and it is what the lemma states. Let $E$ be the subspace of the mapping space $X^{CS^{n-1}}$ consisting of the maps of pairs $(CS^{n-1},S^{n-1})\to(X,A)$, and let $p:E\to A$ be evaluation at the basepoint $*$ of $S^{n-1}$ --- the point to which $J^{n-1}$ collapses --- and not at the cone point: the cone point maps into $X$ and not necessarily into $A$, so evaluation there would not land in $A$, while the basepoint does lie in $A$ for a map of pairs. May checks that this $p$ is a fibration, using that $\{*\}\to S^{n-1}$ and $S^{n-1}\to CS^{n-1}$ are cofibrations, and identifies $\pi_n(X,A,a)$ with $\pi_0(F_a)$, where $F_a=p^{-1}(a)$ is the fibre. A homotopy $V_t$ of maps of pairs with $V_t(J^{n-1})=v(t)$ is exactly a lift $t\mapsto V_t$ of the path $v$ to $E$ with $V_0=f$; the cube model and the cone model are identified by collapsing $J^{n-1}$, as in tom Dieck's Remark (6.1.4). Let $V,W:I\to E$ be two lifts of $v$ with $V(0)=W(0)=f$. Consider the homotopy $H:I\times I\to A$, $H(s,t)=v(s)$, and the partial lift of $H$ prescribed on the three sides $t=0$, $t=1$ and $s=0$ of the square by $V$ on $t=0$, $W$ on $t=1$, and the constant $f$ on $s=0$. The three prescriptions agree at the corners, and they are a lift of $H$ restricted to the union $U$ of those sides. The inclusion $U\subset I^2$ is a Hurewicz cofibration and a homotopy equivalence, so a Hurewicz fibration has the right lifting property against it --- equivalently, the homotopy extension property of the CW pair together with the homotopy lifting property --- and the lift extends to $\tilde H:I\times I\to E$. Its edges $t=0$ and $t=1$ are $V$ and $W$, so $\tilde H(-,1)$ is a homotopy of lifts from $V$ to $W$ fixed at $s=0$. At $s=1$ the map $t\mapsto\tilde H(1,t)$ lies in $E$ over the constant path at $a_1$, that is, in the fibre $F_{a_1}$, and joins $V(1)=V_1$ to $W(1)=W_1$. Hence $V_1$ and $W_1$ lie in the same path component of $F_{a_1}$, which is the same element of $\pi_n(X,A,a_1)=\pi_0(F_{a_1})$. Hence $[V_1]=[W_1]$ in $\pi_n(X,A,a_1)$, and the assignment $[V_0]\mapsto[V_1]$ is well defined.
+
+Three steps below use the transport, and each rests on the lemma rather than on the source's assertion. (i) The identification $\beta_\gamma=(\bar\gamma)_\#$ takes the family $V_t$ of *Hatcher's $\gamma f$ realizes this transport* and concludes $[\gamma f]=(\bar\gamma)_\#([f])$; the lemma is what makes $(\bar\gamma)_\#([f])$ independent of the choice of the family, so the family exhibited computes it. (ii) The composition law: if $W_t$ carries $V_1$ along a second path $w$, the concatenation in $t$ of $V$ and $W$ is an admissible homotopy for $v*w$ because its values on $J^{n-1}$ trace $v*w$, so by the lemma $(v*w)_\#([f])=[W_1]=w_\#(v_\#([f]))$; this is the functoriality $(v*w)_\#=w_\#\circ v_\#$ that (6.2.2) states. (iii) The additivity step "the definition of $v_\#$ gives" evaluates $v_\#([f]+[g])$ by exhibiting an admissible family $W_t$; by the lemma any admissible family computes $v_\#$, so the exhibited one does.
+:::
+
+:::
+
+::: {.pf-step #well-defined}
+$\beta_\gamma[f]\coloneqq[\gamma f]$ is well defined — independent of the representative of $[f]$ and of the class of $\gamma$ rel endpoints — giving a map $\beta_\gamma:\pi_n(X,A,x_1)\to\pi_n(X,A,x_0)$.
+
+::: pf-proof
+The argument of this paragraph is the card's own. Two things are to be shown: that $\gamma f$ depends only on the class of $f$, and that it depends only on the class of $\gamma$ rel endpoints. (i) *Independence of the representative.* Let $h:(I^n\times I,\partial I^n\times I,J^{n-1}\times I)\to(X,A,x_1)$ be a homotopy of maps of triples from $f$ to $f'$, so $h(-,u)(\partial I^n)\subseteq A$ and $h(-,u)(J^{n-1})=\{x_1\}$ for every $u$. Define
 $$
 H(s,u)=\begin{cases}h(\varphi(s),u),&s\in Q,\\[2pt]\gamma(\delta(s)),&s\in S.\end{cases}
 $$
@@ -497,28 +659,49 @@ This is continuous by the same agreement as before: on a non-bottom face of $Q$ 
 $$
 H(s,u)=\begin{cases}f(\varphi(s)),&s\in Q,\\[2pt]G(\delta(s),u),&s\in S.\end{cases}
 $$
-On a non-bottom face of $Q$ the first clause is $f(J^{n-1})=x_1$ and the second is $G(1,u)=x_1$; on $\partial B$ the first is $f(\partial I^{n-1})=x_1$ and the second is $G(1,u)=x_1$. Each stage is a map of triples, the shell values lying in $A$ because $G(-,u)$ is a path in $A$; $H(-,0)=\gamma f$, $H(-,1)=\gamma'f$; and $H(J^{n-1}\times\{u\})=\{G(0,u)\}=\{x_0\}$. So $\gamma f$ represents a well-defined element $\beta_\gamma[f]\in\pi_n(X,A,x_0)$ for each class $[f]\in\pi_n(X,A,x_1)$ and each class $[\gamma]$ rel endpoints in $A$ from $x_0$ to $x_1$. Returning to the source: adjoining (6.2.2), it records that $v_\#$ is always bijective, and Proposition (6.2.3), printed p. 127, states that the morphisms in the exact homotopy sequence of the pair $(X,A)$ are natural transformations of transport functors on $\Pi(A)$, hence $\pi_1(A,\cdot)$-equivariant.
+On a non-bottom face of $Q$ the first clause is $f(J^{n-1})=x_1$ and the second is $G(1,u)=x_1$; on $\partial B$ the first is $f(\partial I^{n-1})=x_1$ and the second is $G(1,u)=x_1$. Each stage is a map of triples, the shell values lying in $A$ because $G(-,u)$ is a path in $A$; $H(-,0)=\gamma f$, $H(-,1)=\gamma'f$; and $H(J^{n-1}\times\{u\})=\{G(0,u)\}=\{x_0\}$. So $\gamma f$ represents a well-defined element $\beta_\gamma[f]\in\pi_n(X,A,x_0)$ for each class $[f]\in\pi_n(X,A,x_1)$ and each class $[\gamma]$ rel endpoints in $A$ from $x_0$ to $x_1$. Returning to the source: adjoining (6.2.2), it records that $v_\#$ is always bijective, and Proposition (6.2.3) states that the morphisms in the exact homotopy sequence of the pair $(X,A)$ are natural transformations of transport functors on $\Pi(A)$, hence $\pi_1(A,\cdot)$-equivariant.
 
-*The construction of the action, in the disk model.* (Davis--Kirk, Theorem 6.63, p. 160, in the model of their Definition 6.52, p. 153.) There $\pi_n(X,A,x_0)$ is the set of basepoint-preserving homotopy classes of maps $f:(D^n,S^{n-1},p)\to(X,A,x_0)$ with $p=(1,0,\dots,0)\in S^{n-1}$, two such being equivalent when a homotopy $F:D^n\times I\to X$ carries each $F(-,t)$ into maps of triples. The construction: let $h:(I,0,1)\to(A,x_0,x_0)$ represent $u\in\pi_1(A,x_0)$ and let $f$ represent a class in $\pi_n(X,A,x_0)$. Since $(S^{n-1},p)$ is an NDR-pair, the map $S^{n-1}\times\{0\}\cup\{p\}\times I\to A$ which is $\restrictionof{f}{S^{n-1}}$ on the first piece and $h$ on the second is well defined, both clauses being $x_0$ at $(p,0)$, and it extends to a homotopy $\tilde h:S^{n-1}\times I\to A$; thus $\tilde h(-,0)=\restrictionof{f}{S^{n-1}}$ and $\tilde h(p,t)=h(t)$, so $\tilde h(p,1)=x_0$ since $h$ is a loop. Since $(D^n,S^{n-1})$ is a cofibration, the map $D^n\times\{0\}\cup S^{n-1}\times I\to X$ which is $f$ on the first piece and $\tilde h$ on the second extends to a homotopy $F:D^n\times I\to X$, with $F(-,0)=f$ and $\restrictionof{F}{S^{n-1}\times I}=\tilde h$. Then $F(-,1)$ carries $S^{n-1}$ into $A$ and $p$ to $x_0$, so it represents a class in $\pi_n(X,A,x_0)$, and $u\cdot[f]=[F(-,1)]$. This is the action of $\pi_1(A,x_0)$ on $\pi_n(X,A,x_0)$, and $\pi_1(A,x_0)$ acts likewise on $\pi_n(X,x_0)$ and on $\pi_n(A,x_0)$, the maps in the long exact sequence of the pair being $\pi_1(A,x_0)$-equivariant, as in the source's Theorem 6.63; that exact sequence is its Theorem 6.53, p. 154. The construction is the relative case of the transport of the preceding paragraphs, with the disk in place of the cube — the two models are the ones tom Dieck identifies in Remark (6.1.4), printed p. 125, and Hatcher in the passage on printed p. 341 that reads maps of $(I^n,\partial I^n)$ as maps of $(S^n,s_0)$ — and the same two extension problems with $(p,t)\mapsto v(t)$ for a path $v$ in $A$ from $a_0$ to $a_1$ in place of the loop $h$ give the transport carried by a path that is not a loop, which is what Hatcher's $\beta_\gamma$ is with $a_0=x_1$, $a_1=x_0$ and $v=\bar\gamma$.
+(Davis--Kirk, Theorem 6.63, in the model of their Definition 6.52.) There $\pi_n(X,A,x_0)$ is the set of basepoint-preserving homotopy classes of maps $f:(D^n,S^{n-1},p)\to(X,A,x_0)$ with $p=(1,0,\dots,0)\in S^{n-1}$, two such being equivalent when a homotopy $F:D^n\times I\to X$ carries each $F(-,t)$ into maps of triples. The construction: let $h:(I,0,1)\to(A,x_0,x_0)$ represent $u\in\pi_1(A,x_0)$ and let $f$ represent a class in $\pi_n(X,A,x_0)$. Since $(S^{n-1},p)$ is an NDR-pair, the map $S^{n-1}\times\{0\}\cup\{p\}\times I\to A$ which is $\restrictionof{f}{S^{n-1}}$ on the first piece and $h$ on the second is well defined, both clauses being $x_0$ at $(p,0)$, and it extends to a homotopy $\tilde h:S^{n-1}\times I\to A$; thus $\tilde h(-,0)=\restrictionof{f}{S^{n-1}}$ and $\tilde h(p,t)=h(t)$, so $\tilde h(p,1)=x_0$ since $h$ is a loop. Since $(D^n,S^{n-1})$ is a cofibration, the map $D^n\times\{0\}\cup S^{n-1}\times I\to X$ which is $f$ on the first piece and $\tilde h$ on the second extends to a homotopy $F:D^n\times I\to X$, with $F(-,0)=f$ and $\restrictionof{F}{S^{n-1}\times I}=\tilde h$. Then $F(-,1)$ carries $S^{n-1}$ into $A$ and $p$ to $x_0$, so it represents a class in $\pi_n(X,A,x_0)$, and $u\cdot[f]=[F(-,1)]$. This is the action of $\pi_1(A,x_0)$ on $\pi_n(X,A,x_0)$, and $\pi_1(A,x_0)$ acts likewise on $\pi_n(X,x_0)$ and on $\pi_n(A,x_0)$, the maps in the long exact sequence of the pair being $\pi_1(A,x_0)$-equivariant, as in the source's Theorem 6.63; that exact sequence is its Theorem 6.53. The construction is the relative case of the transport of the preceding paragraphs, with the disk in place of the cube — the two models are the ones tom Dieck identifies in Remark (6.1.4), and Hatcher in §4.1, which reads maps of $(I^n,\partial I^n)$ as maps of $(S^n,s_0)$ — and the same two extension problems with $(p,t)\mapsto v(t)$ for a path $v$ in $A$ from $a_0$ to $a_1$ in place of the loop $h$ give the transport carried by a path that is not a loop, which is what Hatcher's $\beta_\gamma$ is with $a_0=x_1$, $a_1=x_0$ and $v=\bar\gamma$.
+:::
 
-*Hatcher's $\gamma f$ realizes this transport.* The family $V_t$ below is the card's own. Put $v=\bar\gamma$, the path from $x_1$ to $x_0$ given by $\bar\gamma(t)=\gamma(1-t)$, and for $t\in[0,1]$ let
+:::
+
+::: {.pf-step #realizes}
+$[\gamma f]=(\bar\gamma)_\#([f])$, that is $\beta_\gamma=(\bar\gamma)_\#$, where $\bar\gamma$ is $\gamma$ run backwards.
+
+::: pf-proof
+The family $V_t$ below is the card's own. Put $v=\bar\gamma$, the path from $x_1$ to $x_0$ given by $\bar\gamma(t)=\gamma(1-t)$, and for $t\in[0,1]$ let
 $$
 Q_t=[t\varepsilon,1-t\varepsilon]^{n-1}\times[0,1-t\varepsilon],\qquad
-V_t(s)=\begin{cases}f(\varphi_t(s)),&s\in Q_t,\\ \gamma\bigl(1-t+t\rho_t(s)\bigr),&s\notin\operatorname{int}Q_t,\end{cases}
+V_t(s)=\begin{cases}f(\varphi_t(s)),&s\in Q_t,\\ \gamma\bigl(1-t+t\rho_t(s)\bigr),&s\notin\operatorname{int}_{I^n}Q_t,\end{cases}
 $$
 where $\varphi_t:Q_t\to I^n$ is the rescaling of the construction above and $\rho_t$ is the corresponding $\delta$. Then $Q_0=I^n$ and $V_0=f$; $Q_1=Q$ and $V_1=\gamma f$. For $t>0$ the cube $Q_t$ meets the non-free faces $J^{n-1}$ in nothing, its coordinates lying in $[t\varepsilon,1-t\varepsilon]$ with $s_n\le 1-t\varepsilon<1$, so $J^{n-1}$ lies in the shell, where $\rho_t=0$; hence $V_t(J^{n-1})=\gamma(1-t)=v(t)$, which is the homotopy of the constant map $J^{n-1}\to\{x_1\}$ that the source prescribes. Each $V_t$ is a map of pairs, but not because $\partial I^n$ lies in the shell: $Q_t$ meets $\partial I^n$ exactly in its bottom face $B_t=Q_t\cap I^{n-1}$, which the first formula carries into $A$ because $f$ maps the free face into $A$, while the rest of $\partial I^n$, the annulus $\Sigma_t=I^{n-1}-\operatorname{int}B_t$ together with $J^{n-1}$, lies in the shell and is carried by the second formula into $A$ because $\gamma$ is a path in $A$. Nor does $\rho_t$ vanish on $\partial I^n$: on $\Sigma_t$ it runs from $0$ at $\partial I^{n-1}$ to $1$ at $\partial B_t$, and it is exactly that rise which carries the values of $f$ on $B_t$ to $x_1=\gamma(1)$ across the edge $\partial B_t$. The family is continuous at $t=0$: for $s\in\operatorname{int}I^{n-1}$ one has $s\in\operatorname{int}B_t$ once $t$ is small, so $V_t(s)=f(\varphi_t(s))\to f(s)$; for $s\in J^{n-1}$ one has $V_t(s)=\gamma(1-t)\to x_1=f(s)$; and for $s\in\Sigma_t$ the value $\gamma(1-t+t\rho_t(s))$ tends to $x_1$ as $t\to0$, which is $f$ on the edge $\partial I^{n-1}$. So $V_t$ is the homotopy the source constructs for the path $\bar\gamma$, and therefore
 $$
 [\gamma f]=(\bar\gamma)_\#([f]),\qquad\text{that is}\qquad \beta_\gamma=(\bar\gamma)_\# ,
 $$
 the directions agreeing because $\bar\gamma$ runs from $x_1$ to $x_0$.
+:::
 
-*The properties.* Well-definedness and the dependence of $\beta_\gamma$ on the class of $\gamma$ rel endpoints are proved above; the composition law is (6.2.2)'s functoriality of $v\mapsto v_\#$, applied to $v=\bar\gamma$ and to $\overline{\gamma\eta}=\bar\eta\,\bar\gamma$:
+:::
+
+::: {.pf-step #properties}
+$\beta_{\gamma\eta}=\beta_\gamma\beta_\eta$ and every $\beta_\gamma$ is a bijection.
+
+::: pf-proof
+Well-definedness and the dependence of $\beta_\gamma$ on the class of $\gamma$ rel endpoints are proved above; the composition law is (6.2.2)'s functoriality of $v\mapsto v_\#$, applied to $v=\bar\gamma$ and to $\overline{\gamma\eta}=\bar\eta\,\bar\gamma$:
 $$
 \beta_{\gamma\eta}=(\overline{\gamma\eta})_\#=(\bar\eta\bar\gamma)_\#=(\bar\gamma)_\#(\bar\eta)_\#=\beta_\gamma\beta_\eta .
 $$
 Bijectivity: $\beta_{\bar\gamma}\beta_\gamma=\beta_{\bar\gamma\gamma}=\mathrm{id}$ on $\pi_n(X,A,x_1)$ and $\beta_\gamma\beta_{\bar\gamma}=\beta_{\gamma\bar\gamma}=\mathrm{id}$ on $\pi_n(X,A,x_0)$, since each of $\bar\gamma\gamma$ and $\gamma\bar\gamma$ is homotopic rel endpoints to the constant path at its basepoint, where the transport is the identity. The two composites are endomorphisms of groups at different basepoints, which is why the concatenations are written in that order: by the rule $\beta_{\gamma\eta}=\beta_\gamma\beta_\eta$ the path $\gamma$ is traversed first.
+:::
 
-*Additivity.* The argument of this paragraph is the card's own. Hatcher's formula (1) on p. 341 is proved there by deforming the two summands until their images are slabs of the cube, and in the relative case the free face has to stay inside $A$ throughout, which the construction below does directly. For $n\ge2$ the group structure on $\pi_n(X,A,a_0)$ comes from the first coordinate, which is not the special coordinate $s_n$ (printed p. 343), so that
+:::
+
+::: {.pf-step #additive}
+For $n\ge2$, $\beta_\gamma$ is a homomorphism of groups.
+
+::: pf-proof
+The argument of this paragraph is the card's own. Hatcher's formula (1) of §4.1 is proved there by deforming the two summands until their images are slabs of the cube, and in the relative case the free face has to stay inside $A$ throughout, which the construction below does directly. For $n\ge2$ the group structure on $\pi_n(X,A,a_0)$ comes from the first coordinate, which is not the special coordinate $s_n$, so that
 $$
 (f+g)(s_1,\dots,s_n)=\begin{cases}f(2s_1,s_2,\dots,s_n),&s_1\le\tfrac12,\\ g(2s_1-1,s_2,\dots,s_n),&s_1\ge\tfrac12,\end{cases}
 $$
@@ -531,9 +714,18 @@ $$
 v_\#\bigl([f]+[g]\bigr)=[W_1]=[V^f_1]+[V^g_1]=v_\#\bigl([f]\bigr)+v_\#\bigl([g]\bigr),
 $$
 which is the assertion of (6.2.2) for $n\ge2$. Taking $v=\bar\gamma$ and using $\beta_\gamma=(\bar\gamma)_\#$ from the previous paragraph, $\beta_\gamma(f+g)=\beta_\gamma f+\beta_\gamma g$, and $\beta_\gamma$ is a homomorphism for $n\ge2$.
+:::
 
-*Compatibility with the exact sequence.* The statement is Proposition (6.2.3); the argument in the cube below is the card's own. In the cubical model the boundary map $\partial:\pi_n(X,A,x_1)\to\pi_{n-1}(A,x_1)$ restricts a representative to the face $s_n=0$, and the restriction of $\gamma f$ to that face is the copy $f\circ\varphi$ on $B$, which is the restriction of $f$ to the free face, together with $\gamma(\delta)$ on the annulus $\Sigma$; that is exactly the absolute $\gamma\restrictionof{f}{I^{n-1}}$ of p. 341, whose shell is $\Sigma$ and whose inner cube is $B$. So $\partial\beta_\gamma=\beta_\gamma\partial$ for the absolute change-of-basepoint maps on $\pi_{n-1}(A,x_1)$, and with naturality this says that the action of $\pi_1(A,x_0)$ on the relative groups by $[\gamma]\mapsto\beta_\gamma$ commutes with every map of the long exact sequence of the pair, as Hatcher states on p. 345, and that $\pi_n(X,A,x_0)$ is independent of the basepoint in $A$ when $A$ is path-connected.
+:::
 
-The exercise is Hatcher, *Algebraic Topology* (2002), §4.1 Exercise 7, printed p. 358.
+::: {.pf-step #exact}
+$\partial\beta_\gamma=\beta_\gamma\partial$ for the boundary map of the pair, so $[\gamma]\mapsto\beta_\gamma$ commutes with every map of the long exact sequence, and $\pi_n(X,A,x_0)$ is independent of the basepoint when $A$ is path-connected.
 
+::: pf-proof
+The statement is Proposition (6.2.3); the argument in the cube below is the card's own. In the cubical model the boundary map $\partial:\pi_n(X,A,x_1)\to\pi_{n-1}(A,x_1)$ restricts a representative to the face $s_n=0$, and the restriction of $\gamma f$ to that face is the copy $f\circ\varphi$ on $B$, which is the restriction of $f$ to the free face, together with $\gamma(\delta)$ on the annulus $\Sigma$; that is exactly the absolute $\gamma\restrictionof{f}{I^{n-1}}$ of §4.1, whose shell is $\Sigma$ and whose inner cube is $B$. So $\partial\beta_\gamma=\beta_\gamma\partial$ for the absolute change-of-basepoint maps on $\pi_{n-1}(A,x_1)$, and with naturality this says that the action of $\pi_1(A,x_0)$ on the relative groups by $[\gamma]\mapsto\beta_\gamma$ commutes with every map of the long exact sequence of the pair, as Hatcher states in §4.1, and that $\pi_n(X,A,x_0)$ is independent of the basepoint in $A$ when $A$ is path-connected.
+:::
+
+:::
+
+:::
 :::

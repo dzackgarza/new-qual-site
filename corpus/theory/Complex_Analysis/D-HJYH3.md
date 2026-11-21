@@ -19,6 +19,8 @@ $$
 $$
 where $n^{s}\coloneqq e^{s\log n}$ with the real logarithm.
 The series converges absolutely because $\abs{n^{-s}}=n^{-\operatorname{Re}s}$.
+
+This is [@SS03, ch. 6, §2, The zeta function], whose Proposition 2.1 states that the series defining $\zeta$ converges for $\Re(s)>1$.
 :::
 
 ::: {.proposition title="Euler product"}

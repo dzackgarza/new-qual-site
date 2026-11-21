@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-HM21B18-FIN-03
 kind: problem
 title: Diagonalizability, linearity, and Fourier-coefficient diagnostics
-classification: {areas: [applied-algebra], topics: []}
+classification: {areas: [applied-algebra], topics: [Diagonalization, Linear Transformations, Fourier Series]}
 relations: []
 review: draft
 audit:

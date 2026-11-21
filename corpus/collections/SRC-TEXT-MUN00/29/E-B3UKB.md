@@ -35,9 +35,74 @@ Show that if $X$ is a Hausdorff space that is locally compact at the point $x$, 
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.10, PDF p. 23** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the construction of $V$ is theirs.
 
-Let $X$ be Hausdorff and locally compact at $x$, and let $U$ be a neighbourhood of $x$. Choose a compact $C\subset X$ containing a neighbourhood $W$ of $x$. Then $U\cap W$ is open in $X$, hence in $C$, so $C-(U\cap W)$ is closed in the compact $C$, hence compact (Theorem 26.2).
+The construction is that of **"positron0802"**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.10, PDF p. 23 (`tmp/sources/munkres-solutions-positron-ch3.pdf`), with one step of it repaired: that solution says "$U\cap W$ is open in $X$, hence in $C$", which is false in general, since $W$ is only a neighbourhood of $x$ and need not be open. The proof below chooses an open set inside $U$ and an open set inside $W$, so that the subset of $C$ whose compactness is used really is closed in $C$. The statement was checked against Munkres, *Topology* (2000), §29 Exercise 10, printed p. 186, with the definition of local compactness on printed p. 182, Theorem 26.2 and Theorem 26.3 on printed p. 165, and Lemma 26.4 on printed p. 166.
 
-Since $X$ is Hausdorff and $x\notin C-(U\cap W)$, Lemma 26.4 gives disjoint open sets $V_{1}\ni x$ and $V_{2}\supset C-(U\cap W)$. Put $V=V_{1}\cap U\cap W$. Then $\overline V\subset C$ (as $V\subset W\subset C$ with $C$ closed), so $\overline V$ is compact; and $\overline V$ misses $C-(U\cap W)\supset C-U$, so $\overline V\subset U$. Thus $V$ is a neighbourhood of $x$ with compact closure inside $U$.
+::: pf
+
+::: {.pf-step #open-neighbourhoods}
+There are open sets $O$ and $W$ with $x\in O\subset U$ and $x\in W\subset C$ for a compact subspace $C$ of $X$.
+
+::: pf-proof
+$U$ is a neighbourhood of $x$, so some open $O$ satisfies $x\in O\subset U$. Local compactness at $x$ (printed p. 182) gives a compact subspace $C$ of $X$ containing a neighbourhood of $x$, so some open $W$ satisfies $x\in W\subset C$.
+:::
+
+:::
+
+::: {.pf-step #C-closed}
+$C$ is closed in the Hausdorff space $X$.
+
+::: pf-proof
+$C$ is a compact subspace of the Hausdorff space $X$, so it is closed by Theorem 26.3 (printed p. 165).
+:::
+
+:::
+
+::: {.pf-step #complement-compact}
+$C-O$ is a compact subspace of $X$ and $x\notin C-O$.
+
+::: pf-proof
+$O$ is open in $X$, so $X-O$ is closed and $C-O=C\cap(X-O)$ is closed in the subspace $C$; a closed subspace of a compact space is compact by Theorem 26.2 (printed p. 165). Since $x\in O$, the point $x$ is not in $C-O$.
+:::
+
+:::
+
+::: {.pf-step #separation}
+There are disjoint sets $V_{1}$ and $V_{2}$, open in $X$, with $x\in V_{1}$ and $C-O\subset V_{2}$.
+
+::: pf-proof
+$C-O$ is a compact subspace of the Hausdorff space $X$ and $x$ is a point outside it by step [](#complement-compact){.pf-ref}; Lemma 26.4 (printed p. 166) supplies disjoint open sets containing $x$ and $C-O$ respectively.
+:::
+
+:::
+
+::: {.pf-step #the-neighbourhood}
+$V\coloneqq V_{1}\cap O\cap W$ is an open neighbourhood of $x$ with $V\subset C$, so $\overline{V}\subset C$.
+
+::: pf-proof
+$V$ is an intersection of sets open in $X$ and contains $x$, since $x$ lies in all three. A point of $V$ lies in $W\subset C$, so $V\subset C$; since $C$ is closed by step [](#C-closed){.pf-ref}, the closure of $V$ lies in the closure of $C$, which is $C$.
+:::
+
+:::
+
+::: {.pf-step #closure-misses}
+$\overline{V}\cap(C-O)=\varnothing$.
+
+::: pf-proof
+$V\subset V_{1}$ and $X-V_{2}$ is closed, so $\overline{V}\subset X-V_{2}$, using $V_{1}\subset X-V_{2}$ from the disjointness in step [](#separation){.pf-ref}. As $C-O\subset V_{2}$, a point of $\overline{V}$ cannot lie in $C-O$.
+:::
+
+:::
+
+::: pf-step
+Therefore $\overline{V}\subset U$ and $\overline{V}$ is compact, so $V$ is the required neighbourhood of $x$.
+
+::: pf-proof
+By steps [](#the-neighbourhood){.pf-ref} and [](#closure-misses){.pf-ref} the set $\overline{V}$ is contained in $C$ and meets neither $C-O$; since a point of $C$ outside $C-O$ lies in $O$, this gives $\overline{V}\subset O\subset U$. And $\overline{V}$ is a closed subset of the compact space $C$ by step [](#the-neighbourhood){.pf-ref}, hence compact by Theorem 26.2 (printed p. 165); $\overline{V}$ is closed in $X$ as a closure, so closed in $C$.
+:::
+
+:::
+
+:::
+
 :::

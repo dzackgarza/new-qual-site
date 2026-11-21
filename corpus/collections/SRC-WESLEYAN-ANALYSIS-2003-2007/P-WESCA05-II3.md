@@ -5,7 +5,8 @@ kind: problem
 title: "Maximum modulus of $e^{z^2}$ on a square"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:
@@ -13,6 +14,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis section 2, problem 3 (Summer 2005) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 27: the Complex Analysis Section of
+    the Analysis Qualifier, Wesleyan University, Summer 2005, Section 2 item 3. The page had cited
+    only the extraction; it now names the examination, its item and the page of the
+    scan. The statement is unchanged, and the trailing pf-qed that only announced the last step is dropped.
+
 ---
 
 ::: {.problem}
@@ -27,6 +38,9 @@ $$
 :::
 
 ::: {.solution}
+The item is Section 2 item 3 of the Complex Analysis Section of the Analysis Qualifier, Wesleyan
+University, Summer 2005 (the maximum of |e^{z^2}| on the square [0,2] x [0,2]), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
+
 
 ::: pf
 
@@ -139,11 +153,6 @@ with equality exactly when $z=2$.
 
 :::
 
-::: pf-qed
-
-Step [](#s1-4){.pf-ref} gives both the requested maximum value and the complete set of maximizers.
-
-:::
 
 :::
 

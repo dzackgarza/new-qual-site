@@ -29,6 +29,8 @@ Suppose $R$ is a domain and $I$ and $J$ are ideals of $R$ such that $IJ$ is a no
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination paper alone, so the argument is the card's own.
+
 Assume
 $$
 IJ=(a)

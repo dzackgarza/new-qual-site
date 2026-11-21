@@ -38,6 +38,19 @@ audit:
     SS3.C Exercise 5, printed p.16 — the same two-orderings argument, written with the pointwise
     product and concatenation in the opposite notation. The card's steps s2 and s3 are that
     argument, so the card now cites it; no step of the proof was changed.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 5 of §3.C, printed p. 291, and Sam, *Solutions to Algebraic
+    Topology* (2008), §3.C Exercise 5, printed p. 16. The Eckmann--Hilton argument on the card was
+    right and is kept: $f\odot g\simeq(f*c_e)\odot(c_e*g)\simeq f*g$ by the two unit homotopies
+    read on the two halves of the interval, and $f\odot g\simeq(c_e*f)\odot(g*c_e)\simeq g*f$
+    with the roles exchanged, so $[f][g]=[g][f]$. Rewritten: the card was a nest of `pf` blocks
+    reopened inside one another with proofs that were noun phrases ('definition of an H-space',
+    'setup', 'homotopy invariance') and it closed with a 'Conclusion' step proved by naming two
+    labels, which STYLE-08 forbids. Three steps now, the first two carrying the half-interval
+    computations and the third the conclusion. Not claimed: a certificate.
 ---
 
 ::: {.problem}
@@ -46,174 +59,55 @@ Show that if $(X, e)$ is an H-space then $\pi_1(X, e)$ is abelian.
 :::
 
 ::: {.solution}
+Let $(X,e,\mu)$ be an H-space, so $\mu\colon X\times X\to X$ and the maps $x\mapsto\mu(x,e)$, $x\mapsto\mu(e,x)$ are homotopic to the identity through homotopies fixing $e$ (printed p.~281). For based loops $f,g$ at $e$ put
+$$
+(f*g)(t)=\begin{cases}f(2t),&0\le t\le\tfrac12,\\ g(2t-1),&\tfrac12\le t\le1,\end{cases}
+\qquad
+(f\odot g)(t)=\mu\bigl(f(t),g(t)\bigr),
+$$
+so that $[f][g]=[f*g]$ in $\pi_1(X,e)$ and $f\odot g$ is the pointwise product the exercise names. This is the argument of Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.C Exercise 5, printed p.~16, written out on the two halves of the interval.
+
 ::: pf
 
-::: pf-step
-Setup the two binary operations on the space of based loops $\Omega(X, e)$:
+::: {.pf-step #s1}
+
+$[f\odot g]=[f*g]$.
 
 ::: pf-proof
 
-::: pf-step
-Let $(X, e, \mu)$ be an H-space with multiplication $\mu: X \times X \to X$, so $\mu(x, e) \simeq x$ and $\mu(e, x) \simeq x$ via homotopies fixing the basepoint $e$.
-
-::: pf-proof
-definition of an H-space.
-:::
-
-:::
-
-::: pf-step
-Let $f, g: [0, 1] \to X$ be based loops ($f(0) = f(1) = g(0) = g(1) = e$).
-
-::: pf-proof
-setup.
-:::
-
-:::
-
-::: pf-step
-Define standard loop concatenation $*$ and pointwise H-space product $\odot$:
-$$
-(f * g)(t) = \begin{cases} f(2t) & 0 \le t \le 1/2 \\ g(2t - 1) & 1/2 \le t \le 1, \end{cases} \qquad (f \odot g)(t) = \mu(f(t), g(t)).
-$$
-
-::: pf-proof
-definitions of concatenation and induced pointwise multiplication.
-:::
-
-:::
-
-::: pf-step
-Let $c_e$ denote the constant loop at $e$.
-Then $f \simeq f * c_e \simeq c_e * f$ and $g \simeq c_e * g \simeq g * c_e$ relative to endpoints.
-
-::: pf-proof
-identity element properties in the fundamental group.
-:::
-
-:::
+Replacing $f$ by the homotopic loop $f*c_e$ and $g$ by $c_e*g$, where $c_e$ is the constant loop, gives $f\odot g\simeq(f*c_e)\odot(c_e*g)$ because $\mu$ is continuous. On $[0,\tfrac12]$ one has $(f*c_e)(t)=f(2t)$ and $(c_e*g)(t)=e$, so $(f*c_e)\odot(c_e*g)(t)=\mu(f(2t),e)\simeq f(2t)=(f*g)(t)$; on $[\tfrac12,1]$ one has $(f*c_e)(t)=e$ and $(c_e*g)(t)=g(2t-1)$, so the value is $\mu(e,g(2t-1))\simeq g(2t-1)=(f*g)(t)$. The homotopies are the unit homotopies of the H-space structure, applied in each half and glued at $t=\tfrac12$, so $f\odot g\simeq f*g$ relative to endpoints.
 
 :::
 
 :::
 
 ::: {.pf-step #s2}
-Show that $[f * g] = [f \odot g]$ in $\pi_1(X, e)$:
+
+$[f\odot g]=[g*f]$.
 
 ::: pf-proof
 
-::: pf-step
-Using the homotopies $f \simeq f * c_e$ and $g \simeq c_e * g$, we have $f \odot g \simeq (f * c_e) \odot (c_e * g)$.
-
-::: pf-proof
-homotopy invariance of the induced map $\mu_*$.
-:::
-
-:::
-
-::: {.pf-step #s2-2}
-For $t \in [0, 1/2]$:
-$$
-((f * c_e) \odot (c_e * g))(t) = \mu((f * c_e)(t), (c_e * g)(t)) = \mu(f(2t), e) \simeq f(2t) = (f * g)(t).
-$$
-
-::: pf-proof
-definition of $*$ and unit axiom $\mu(x, e) \simeq x$.
-:::
-
-:::
-
-::: {.pf-step #s2-3}
-For $t \in [1/2, 1]$:
-$$
-((f * c_e) \odot (c_e * g))(t) = \mu((f * c_e)(t), (c_e * g)(t)) = \mu(e, g(2t - 1)) \simeq g(2t - 1) = (f * g)(t).
-$$
-
-::: pf-proof
-definition of $*$ and unit axiom $\mu(e, y) \simeq y$.
-:::
-
-:::
-
-::: pf-step
-Gluing the two halves gives $[f \odot g] = [f * g]$.
-
-::: pf-proof
-Steps [](#s2-2){.pf-ref} and [](#s2-3){.pf-ref}.
-:::
-
-:::
+This time replace $f$ by $c_e*f$ and $g$ by $g*c_e$. On $[0,\tfrac12]$ the value of $(c_e*f)\odot(g*c_e)$ is $\mu\bigl(e,g(2t)\bigr)\simeq g(2t)=(g*f)(t)$; on $[\tfrac12,1]$ it is $\mu\bigl(f(2t-1),e\bigr)\simeq f(2t-1)=(g*f)(t)$. Gluing the two halves gives $f\odot g\simeq g*f$ relative to endpoints.
 
 :::
 
 :::
 
 ::: {.pf-step #s3}
-Show that $[g * f] = [f \odot g]$ in $\pi_1(X, e)$:
+
+$\pi_1(X,e)$ is abelian.
 
 ::: pf-proof
 
-::: pf-step
-Using the homotopies $f \simeq c_e * f$ and $g \simeq g * c_e$, we have $f \odot g \simeq (c_e * f) \odot (g * c_e)$.
-
-::: pf-proof
-homotopy invariance.
-:::
-
-:::
-
-::: {.pf-step #s3-2}
-For $t \in [0, 1/2]$:
+For classes $[f],[g]$ the two steps give
 $$
-((c_e * f) \odot (g * c_e))(t) = \mu(e, g(2t)) \simeq g(2t) = (g * f)(t).
+[f][g]=[f*g]=[f\odot g]=[g*f]=[g][f],
 $$
-
-::: pf-proof
-unit axiom $\mu(e, y) \simeq y$.
-:::
-
-:::
-
-::: {.pf-step #s3-3}
-For $t \in [1/2, 1]$:
-$$
-((c_e * f) \odot (g * c_e))(t) = \mu(f(2t - 1), e) \simeq f(2t - 1) = (g * f)(t).
-$$
-
-::: pf-proof
-unit axiom $\mu(x, e) \simeq x$.
-:::
-
-:::
-
-::: pf-step
-Gluing the two halves gives $[f \odot g] = [g * f]$.
-
-::: pf-proof
-Steps [](#s3-2){.pf-ref} and [](#s3-3){.pf-ref}.
-:::
+using that $[f][g]=[f*g]$ by definition of the group structure on $\pi_1$ and that $\odot$ depends only on the homotopy classes of $f$ and $g$ because $\mu$ is continuous. Hence every pair of elements of $\pi_1(X,e)$ commutes.
 
 :::
 
 :::
 
 :::
-
-::: pf-step
-Conclusion: Combining steps [](#s2){.pf-ref} and [](#s3){.pf-ref} yields:
-$$
-[f][g] = [f * g] = [f \odot g] = [g * f] = [g][f].
-$$
-Thus $\pi_1(X, e)$ is an abelian group.
-
-This is the published solution of Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.C Exercise 5, printed p.16: he writes $\cdot$ for the pointwise product and $*$ for concatenation, shows $h*h' \simeq (h\cdot 1)*(1\cdot h') \simeq h\cdot h'$ and, with the two factors exchanged, $h\cdot h' \simeq (1\cdot h')*(h\cdot 1) \simeq h'*h$, and concludes $h*h' \simeq h'*h$. The card's steps #s2 and #s3 are those two chains of homotopies, one written out on each half of the interval.
-
-::: pf-proof
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
-:::
-
-:::
-
-:::
-
 :::

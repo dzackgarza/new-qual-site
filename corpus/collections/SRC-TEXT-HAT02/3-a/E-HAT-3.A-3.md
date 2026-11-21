@@ -50,6 +50,35 @@ audit:
     card; every step of the card corresponds to a printed sentence, and the two steps the card
     derives that the print compresses ($A_n[p]=0$ from the degree-$(n+1)$ sequence, and the $F$-dual
     form of the coefficient-field isomorphism) are expansions, not substitutions.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card's four numbered paragraphs are turned into Lamport steps without change of substance,
+    since the argument is Hatcher's printed proof of Corollary 3A.7(a) and the card says so. Each
+    step now separates the claim from its justification: the exactness of vector-space duality giving
+    H^n(X;F) = Hom_F(H_n(X;F),F), the two universal coefficient sequences over Z_p that show
+    multiplication by p is both surjective and injective, the identification of A_n with A_n tensor Q
+    over a Q-vector space, and the final Ext-Hom sequence whose outer terms vanish. Checked the one
+    implication the prose compresses: that A_n tensor Z_p = A_n / pA_n and Tor(A_n, Z_p) = A_n[p] are
+    the two facts that make divisibility and torsionfreeness come out. The page numbers were then checked
+    against the retained PDF at tmp/sources/hatcher-2002-algebraic-topology.pdf, printed page = PDF
+    page - 9: Theorem 3A.3 on p. 264 (PDF 273), Proposition 3A.5 on p. 265 (PDF 274) and Corollary
+    3A.6 on p. 266 (PDF 275), each as cited. The universal coefficient theorem's own page was
+    then located: the card cited p. 197, but the page search puts the algebraic form of the theorem,
+    with its sequence 0 -> Ext(H_{n-1}(C),G) -> H^n(C;G) -> Hom(H_n(C),G) -> 0, on printed p. 195
+    (PDF 204) and the topological form for a space X on printed p. 198 (PDF 207), while printed
+    p. 197 (PDF 206) is the section's title page and states nothing. The citation is corrected to
+    those two pages.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the page locators in the card's text are removed; Corollary 3A.7(a), Theorem 3A.3, Proposition 3A.5(3) and Corollary 3A.6(a) are cited
+    by number (or, where Hatcher prints none, by the section that carries them), each read in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`. The earlier events keep their text
+    (QUAL-11); these citations supersede their page locators. No step changes.
+
 ---
 
 ::: {.problem}
@@ -57,37 +86,45 @@ Show that if $\tilde{H}^n(X; \QQ)$ and $\tilde{H}^n(X; \ZZ_p)$ are zero for all 
 :::
 
 ::: {.solution}
-The exercise is Hatcher's Corollary 3A.7(a) verbatim, and the book prints a complete proof of that corollary on pp. 266--267; the argument below is that proof, with each step's reference supplied. This is the complete published argument the card relies on, not an independently assembled proof.
+The exercise is Hatcher's Corollary 3A.7(a) verbatim, and the book prints a complete proof of that corollary; the four steps below are that proof, with each step's reference supplied. This is the complete published argument the card relies on, not an independently assembled proof.
 
-*Step 1: field coefficients simplify.* For a field $F$,
-$$
-C^n(X;F)=\operatorname{Hom}_\ZZ(C_n(X),F)\cong\operatorname{Hom}_F(C_n(X)\otimes_\ZZ F,F)=\operatorname{Hom}_F(C_n(X;F),F),
-$$
-so the cochain complex of $X$ over $F$ is the $F$-dual of the chain complex $C_*(X;F)$ of $F$-vector spaces. Dualizing vector spaces is exact, so taking homology commutes with the duality and
-$$
-H^n(X;F)\cong\operatorname{Hom}_F(H_n(X;F),F).
-$$
-A vector space with trivial dual is trivial, so the hypothesis of the exercise implies
-$$
-\widetilde H_n(X;\QQ)=0,
-\qquad
-\widetilde H_n(X;\ZZ_p)=0
-$$
-for every $n$ and every prime $p$. (This is the $R=F$ case of the module-coefficient form of the universal coefficient theorem, Hatcher p. 197: over a field the $\operatorname{Ext}$ term vanishes.)
+::: pf
 
-*Step 2: the integral groups carry a $\QQ$-vector-space structure.* Put $A_n=\widetilde H_n(X;\ZZ)$. The universal coefficient theorem, Theorem 3A.3 (p. 264), applied to the augmented singular chain complex, which is again a complex of free abelian groups, gives for each prime $p$ the exact sequence
-$$
-0\to A_n\otimes\ZZ_p\to \widetilde H_n(X;\ZZ_p)\to \operatorname{Tor}(A_{n-1},\ZZ_p)\to0 .
-$$
-Since $A_n\otimes\ZZ_p=A_n/pA_n$, the sequence in degree $n$ has middle term $\widetilde H_n(X;\ZZ_p)=0$ and hence shows $A_n/pA_n=0$; the sequence in degree $n+1$ shows $\operatorname{Tor}(A_n,\ZZ_p)=A_n[p]=0$, using Proposition 3A.5(5) (p. 265). Thus multiplication by $p$ is surjective and injective on $A_n$, hence bijective; as this holds for every prime, multiplication by every nonzero integer is bijective. A torsionfree divisible abelian group is a vector space over $\QQ$, so each $A_n$ is one.
+::: {.pf-step #fields}
+For a field $F$ one has $H^{n}(X;F)\cong\Hom_{F}(H_{n}(X;F),F)$; hence the hypothesis of the exercise implies $\widetilde H_{n}(X;\QQ)=0$ and $\widetilde H_{n}(X;\ZZ_{p})=0$ for every $n$ and every prime $p$.
 
-*Step 3: $A_n$ vanishes.* By the universal coefficient theorem with $\QQ$ coefficients, whose Tor term vanishes by Proposition 3A.5(3), $\widetilde H_n(X;\QQ)\cong A_n\otimes\QQ$; this is Corollary 3A.6(a) (p. 266) in the unreduced form. For a $\QQ$-vector space $A_n$ the map $A_n\to A_n\otimes\QQ$ is an isomorphism, and Step 1 gives $\widetilde H_n(X;\QQ)=0$, so $A_n=0$ for every $n$.
+::: pf-proof
+For a field $F$, $C^{n}(X;F)=\Hom_{\ZZ}(C_{n}(X),F)\cong\Hom_{F}(C_{n}(X)\otimes_{\ZZ}F,F)=\Hom_{F}(C_{n}(X;F),F)$, so the cochain complex over $F$ is the $F$-dual of the chain complex of $F$-vector spaces. Dualizing vector spaces is exact, so taking homology commutes with the duality and $H^{n}(X;F)\cong\Hom_{F}(H_{n}(X;F),F)$; this is the module-coefficient universal coefficient theorem over a field, where the $\Ext$ term vanishes (printed p. 195 for the algebraic form, printed p. 198 for the topological one). A vector space with trivial dual is trivial, so vanishing of the cohomology over $F=\QQ$ and over $F=\ZZ_{p}$ forces the corresponding homology to vanish.
+:::
+:::
 
-*Step 4: every coefficient group.* The cohomology universal coefficient theorem with arbitrary coefficients $G$,
-$$
-0\to\operatorname{Ext}(A_{n-1},G)
-\to \widetilde H^n(X;G)
-\to \operatorname{Hom}(A_n,G)\to0,
-$$
-then has both outer groups zero, so $\widetilde H^n(X;G)=0$ for all $G$ and $n$.
+::: {.pf-step #divisible}
+For $A_{n}=\widetilde H_{n}(X;\ZZ)$, multiplication by every nonzero integer is bijective; hence $A_{n}$ is a vector space over $\QQ$.
+
+::: pf-proof
+The universal coefficient theorem, Theorem 3A.3, applied to the augmented singular chain complex, which is a complex of free abelian groups, gives for each prime $p$ the exact sequence
+$$0\to A_{n}\otimes\ZZ_{p}\to\widetilde H_{n}(X;\ZZ_{p})\to\Tor(A_{n-1},\ZZ_{p})\to0 .$$
+Since $A_{n}\otimes\ZZ_{p}=A_{n}/pA_{n}$ and the middle term vanishes by step [](#fields){.pf-ref}, the sequence in degree $n$ gives $A_{n}/pA_{n}=0$, so multiplication by $p$ is surjective; the sequence in degree $n+1$ gives $\Tor(A_{n},\ZZ_{p})=A_{n}[p]=0$ by Proposition 3A.5(5) (p. 265), so multiplication by $p$ is injective. Hence multiplication by $p$ is bijective for every prime, and therefore by every nonzero integer. A torsionfree divisible abelian group is a vector space over $\QQ$: divisibility supplies the rational scalars and torsionfreeness makes them well defined.
+:::
+:::
+
+::: {.pf-step #vanish}
+$A_{n}=0$ for every $n$.
+
+::: pf-proof
+By the universal coefficient theorem with $\QQ$ coefficients, whose $\Tor$ term vanishes by Proposition 3A.5(3), $\widetilde H_{n}(X;\QQ)\cong A_{n}\otimes\QQ$, which is Corollary 3A.6(a) in unreduced form. For a $\QQ$-vector space $A_{n}$ the map $a\mapsto a\otimes1$ is an isomorphism $A_{n}\to A_{n}\otimes\QQ$, and $\widetilde H_{n}(X;\QQ)=0$ by step [](#fields){.pf-ref}; so $A_{n}=0$.
+:::
+:::
+
+::: {.pf-step #coefficients}
+$\widetilde H^{n}(X;G)=0$ for every abelian group $G$ and every $n$.
+
+::: pf-proof
+The universal coefficient theorem for cohomology with arbitrary coefficients gives the exact sequence
+$$0\to\Ext(A_{n-1},G)\to\widetilde H^{n}(X;G)\to\Hom(A_{n},G)\to0 .$$
+Both outer groups vanish by step [](#vanish){.pf-ref}, so the middle one does too.
+:::
+:::
+:::
+
 :::

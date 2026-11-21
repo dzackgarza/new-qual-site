@@ -5,7 +5,9 @@ kind: problem
 title: Hessian determinant at a minimum
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Multivariable Calculus
+  - Positive Definite Matrices
 relations: []
 review: draft
 audit:

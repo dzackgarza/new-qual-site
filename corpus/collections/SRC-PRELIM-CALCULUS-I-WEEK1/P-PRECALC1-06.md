@@ -240,17 +240,7 @@ x^{-2}-\sin(x)^{-2}
 $$
 
 
-::: pf-proof
-
-Use steps [](#s1-1){.pf-ref}, [](#s1-3){.pf-ref}, [](#s1-4){.pf-ref}, and [](#s1-5){.pf-ref}, and [](#s1-8){.pf-ref}.
-
-:::
-
-:::
-
-::: {.pf-step #s1-10}
-
-Therefore
+Hence
 $$
 \boxed{
 \lim_{x\to0}
@@ -261,10 +251,9 @@ x^{-2}-\sin(x)^{-2}
 -\frac13}.
 $$
 
-
 ::: pf-proof
 
-This is step [](#s1-9){.pf-ref}.
+Use steps [](#s1-1){.pf-ref}, [](#s1-3){.pf-ref}, [](#s1-4){.pf-ref}, and [](#s1-5){.pf-ref}, and [](#s1-8){.pf-ref}.
 
 :::
 
@@ -272,7 +261,7 @@ This is step [](#s1-9){.pf-ref}.
 
 ::: pf-qed
 
-Step [](#s1-10){.pf-ref} is the requested limit.
+Step [](#s1-9){.pf-ref} is the requested limit.
 
 :::
 

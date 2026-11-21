@@ -5,7 +5,9 @@ kind: problem
 title: "Define the multiplicity of an analytic function at a point"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Multiplicity
+  - Zeros
 relations: []
 review: draft
 audit:
@@ -13,6 +15,32 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis Theorems and Definitions, item 2 (August 9, 2006) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf, PDF p. 15: the Complex Analysis
+    Preliminary Examination of August 9, 2006, Section 1 item 2. The page had cited
+    only the extraction; it now names the examination, its item and the page of
+    the scan. The statement is unchanged.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The proof ended with a pf-qed that only announced that earlier steps had answered
+    the question, which STYLE-08 forbids; it is dropped, and the last step that carries
+    content is now the QED step. No argument or statement changes.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -20,6 +48,9 @@ Define the multiplicity of an analytic function $f$ at a point $z_0$ in the doma
 :::
 
 ::: {.solution}
+The item is Section 1 item 2 of the Complex Analysis Preliminary Examination of August 9, 2006
+(Define the multiplicity of an analytic function at a point).
+
 
 Let
 $$
@@ -143,12 +174,6 @@ so step [](#s1-2){.pf-ref} becomes the usual zero-order definition.
 
 :::
 
-::: pf-qed
-
-Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the requested definition and its standard equivalent
-formulations.
-
-:::
 
 :::
 

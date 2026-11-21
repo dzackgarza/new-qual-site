@@ -38,9 +38,19 @@ audit:
     pairwise disjoint and open in $\widetilde A$; and each $V_\lambda\cap\widetilde A\to U_A$ is the
     restriction of the homeomorphism $V_\lambda\to U$ to the inverse image of the subspace $U\cap A$,
     hence a homeomorphism. No gap found; nothing deferred.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 88 carries the running head 79.
+    The durable part of the locator is that printed page; the file path names this machine's copy and
+    `tmp/sources` does not survive a VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 1.3 of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
+
 For a covering space $p: \tilde{X} \to X$ and a subspace $A \subset X$, let $\tilde{A} = p^{-1}(A)$.
 Show that the restriction $p: \tilde{A} \to A$ is a covering space.
 :::

@@ -31,7 +31,15 @@ audit:
     commutators to commutators, so G' is characteristic and hence normal; G/G' is
     abelian; and a homomorphism to an abelian group kills every commutator, so G'
     lies in its kernel. No defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 9, problem 9, with the sheet's
+    definition of characteristic subgroup. An automorphism carries $[x,y]$ to
+    $[\varphi(x),\varphi(y)]$, so $\varphi(G')=G'$; $xyx^{-1}y^{-1}\in G'$ gives
+    $xyG'=yxG'$; and a homomorphism to an abelian group kills each commutator, so $G'\le\ker f$.
+    No defect.
 ---
 
 ::: {.exercise}

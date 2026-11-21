@@ -6,7 +6,9 @@ title: Dini's theorem
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Monotone Functions
 relations: []
 review: draft
 ---

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-SQUAL1-02
 kind: problem
 title: Disjoint compact subsets of a Hausdorff space have disjoint open neighborhoods
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Compactness, Hausdorff Spaces, Separation Axioms]}
 relations: []
 review: draft
 audit:

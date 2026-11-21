@@ -1,4 +1,5 @@
 ---
+
 schema: qual/card@1
 id: E-HAT-3.3-21
 kind: problem
@@ -329,6 +330,195 @@ audit:
     text of question 4390308 and not at the site; `COMPLAINTS.md` carries the correction in a new
     record of this date, and no dated record is edited in place.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule applied to step #cone-case, whose proof said "those two pages"
+    without naming them: it is now cited to Stanford Math 215C, Spring 2009, Solution Set 4,
+    Hatcher 3.3.21, printed p. 1, and C. Kottke, Math 2420 Problem Set 3 solutions, Problem 2,
+    printed p. 2. Checked: both places, and that they are the pages the two arguments are on.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #165: the two events of 2026-11-07 that disagree about Hatcher's
+    bracketed question are reconciled here, in a new event; neither is
+    rewritten. The first, whose note reads "DEFERRED, recorded not dropped: the
+    printed bracketed question for X = ZZ x RR is not answered ... whether the
+    isomorphism still holds is open on this card", states the status before the
+    degree-two counterexample and is superseded by the events of the same day
+    that give it. The card now answers the question, negatively, and no
+    rendered sentence says it is open. The second, whose note reads "The
+    bracketed question is now answered from Stanford Math 215C Solution Set 4",
+    is the withdrawn one: the next event of that day ("Withdraws the incorrect
+    counterexample and its audit claim") says why, a surjection
+    H_1(X^+) -> prod_N Z dualising to an injection and Hom(prod_N Z, Z) being
+    the countable direct sum by Specker's theorem, so the Stanford paragraph
+    establishes nothing about the question and is not used. What the card
+    proves, and all that it claims, is the negative answer in degree two with
+    G = Z: H_c^2(Z x R; Z) = 0 from the cofinal rectangles in step
+    compact-degree-two, against H^2((Z x R)^+, infinity; Z) != 0 in step
+    earring-degree-two through Ext_Z(Q, Z) = R and the Q direct summand of the
+    H_1 of the earring, the two values assembled in the closing step. The
+    bracketed question has no published solution in anything read, which is
+    what the last paragraphs of the card say. Checked in this pass: Hatcher,
+    section 3.3 Exercise 21 on printed p. 259 (PDF p. 268), with its cone
+    hypothesis; the first part's transcription against Stanford Math 215C,
+    Spring 2009, Solution Set 4, printed p. 1, and C. Kottke, Math 2420 Problem
+    Set 3 solutions, Problem 2, printed p. 2; and the two computations above
+    with the pair sequence at (E, infinity). Not checked in this pass: the
+    Eda--Kawamura and Wiegold papers were not re-read, and no source outside
+    those already named on the card was searched for the bracketed question.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, the correctness read of this card's own part, which is the answer to the bracketed
+    question. No defect found. Checked in the first part: $H_c^n(X;G)$ is the direct limit of
+    $H^n(X,X\setminus K;G)$ over compact $K$; excision of the point $\infty$, whose closure lies in
+    the interior of $U_K=X^+\setminus K$, gives $H^n(X^+,U_K)\cong H^n(X,X\setminus K)$; the sets
+    $U_K$ are cofinal among the neighbourhoods of $\infty$; inside a cone neighbourhood, the
+    subcones are cofinal and radial scaling contracts each to the cone point, so the restriction
+    $H^n(X^+,U)\cong H^n(X^+,\infty)$ for those $U$, and the isomorphisms are compatible with
+    shrinking. Checked in step `compact-degree-two`: on $K_N$ the pair $(X,X\setminus K_N)$ splits
+    over the lines, the $2N+1$ lines meeting $K_N$ contribute $H^q(\RR,\RR\setminus J_N)$, which is
+    $\ZZ$ for $q=1$ and zero otherwise, and every other line contributes a pair of equal spaces; so
+    $H^q=\ZZ^{2N+1}$ for $q=1$ and $0$ for $q\neq1$, and the direct limit vanishes in degree two.
+    Checked in step `earring-degree-two`: the one-point compactification of $\ZZ\times\RR$ is the
+    Hawaiian earring, since a neighbourhood of $\infty$ contains all but finitely many whole lines
+    and each line closes up to a circle through $\infty$; the pair sequence gives
+    $H^2(E,\infty)\cong H^2(E)$ because $H^1(\{\infty\})=H^2(\{\infty\})=0$; universal coefficients
+    gives an injection $\operatorname{Ext}(H_1(E),\ZZ)\hookrightarrow H^2(E)$; and with
+    $H_1(E)\cong\prod^\sigma_I\ZZ\oplus\prod_pA_p\oplus\bigoplus_\kappa\QQ$, read at
+    Eda--Kawamura's Theorem 3.1 statement with $\kappa=\abs{I^{\NN}}$ the continuum, together with
+    $\operatorname{Ext}(\QQ,\ZZ)\cong\RR$ from Wiegold, the target is nonzero. Checked in step
+    `degree-one`: both sides are the free abelian group on countably many generators, the left from
+    the same rectangle family, the right from Frankland's Theorem 1.3, so degree one does not decide
+    the question — the point the rejected Stanford paragraph missed. Not claimed: a published
+    solution of the bracketed question; the reading here is of the card's own assembly from those
+    three theorems.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, referee read of this card's own part, the answer to the bracketed question. Checked
+    that the two sides really separate in degree two. Left: $H_c^2(\ZZ\times\RR;\ZZ)$ is the direct
+    limit of $H^2(X,X\setminus K)$ over compact $K$; the rectangles $K_N$ are cofinal and
+    $X\setminus K_N$ meets every line, so the pair splits over the lines and only the $2N+1$ lines
+    meeting $K_N$ contribute, each by $H^q(\RR,\RR\setminus J_N)$, which is $\ZZ$ at $q=1$ and $0$
+    at $q=0,2$ because $\RR$ is connected and contractible; every stage of the degree-two limit is
+    therefore $0$, not merely eventually $0$. Right: $X^+$ is the Hawaiian earring, since a
+    neighbourhood of $\infty$ contains all but finitely many whole lines and each line closes up to a
+    circle through $\infty$; in the pair sequence of $(E,\infty)$ the terms $H^q(\{\infty\})$
+    vanish for $q\ge1$, so $H^2(E,\infty)\to H^2(E)$ is injective and, the next term being
+    $H^2(\{\infty\})=0$, also surjective; universal coefficients injects
+    $\operatorname{Ext}(H_1(E;\ZZ),\ZZ)$ into $H^2(E;\ZZ)$; and if $H_1(E)\cong\QQ\oplus K$, which is
+    what Eda--Kawamura's Theorem 3.1, printed p. 307, gives with the $\kappa=\abs{I^{\NN}}$ terms
+    $\QQ$, then $\operatorname{Ext}(H_1(E),\ZZ)\cong\operatorname{Ext}(\QQ,\ZZ)\oplus
+    \operatorname{Ext}(K,\ZZ)$, and $\operatorname{Ext}(\QQ,\ZZ)\cong\RR\ne0$ by Wiegold, printed
+    pp. 341--342. So the two groups differ and the evident map is not an isomorphism: the answer to
+    the bracketed question is no. Checked that this is the degree in which the card claims it and
+    that nothing is claimed in degree one, where both sides are free on countably many generators
+    (Frankland, Theorem 1.3, printed p. 2, for the right-hand side) and the card says only that the
+    question cannot be decided there. Not claimed: a published solution of the bracketed question.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #165, reader's report on the card: four rendered sentences are corrected and the earlier
+    notes this supersedes are named. (1) Step cone-case's proof said the Stanford set "reads
+    H~^m(U_K;G)=0 from the exact sequence of the pair (X^+,U_K)"; the vanishing is that U_K is a
+    cone and hence contractible, and the exact sequence is what converts it into the isomorphism.
+    (2) The same proof said a smaller cone-shaped neighbourhood contracts to the cone point "by
+    radial scaling", which is false: a neighbourhood of the cone point need not contain the image of
+    any uniform scaling, the cone on a countable discrete set with shrinking radii being a
+    counterexample; the sentence now reparametrizes each ray by an interval chosen inside the
+    neighbourhood, which gives a subspace homeomorphic to the cone and contracting along the rays.
+    The event of this date added under issue #170, whose note reads "the subcones are cofinal and
+    radial scaling contracts each to the cone point", endorses the sentence corrected here. (3) The
+    closing paragraph's "as step degree-one computes directly" is replaced by the citation the claim
+    needs, Frankland, Theorem 1.2 (Specker's theorem), printed p. 2; step degree-one computes
+    H^1(E), not Hom(prod_N Z, Z). (4) Step degree-one's claim said the two groups "are both free
+    abelian on countably many generators, so degree one does not separate the two sides", which
+    overclaims: abstract isomorphism is not an isomorphism of the evident map. It and the closing
+    step now say that no invariant of the two groups as abstract groups can decide the question in
+    degree one, and that nothing asserts the degree-one map fails. (5) Earlier notes the card no
+    longer holds, named with their text: the 2026-11-07 event whose note says "The definite answer
+    to Hatcher's bracketed question ... remains deferred" states a status the card left behind when
+    it answered the question in degree two, and is superseded as the first deferral was; the
+    2026-11-14 event saying "The card's closing paragraph now also says which part of the exercise
+    is published ... and which is not" describes a paragraph removed on 2026-11-16; the 2026-11-16
+    event saying answer 4224683 "shows only that infinity has no cone neighbourhood ... which is not
+    the question" is false of the answer, which also identifies the compactification with the
+    Hawaiian earring, as the rendered step uses it; the event saying Eda--Kawamura, Wiegold,
+    Stanford Solution Set 4 and Kottke "have no text version in tmp/sources" is false, all four
+    having a .md beside the PDF; the event saying the Stanford and Kottke transcriptions "are
+    unchanged" was overtaken by the 2026-11-18 change to cone-case and by this one; and the event
+    saying "every step now names its source with the numbered statement and the printed page" is
+    inexact, three of the six steps citing a paragraph of a set that has no numbered statements.
+    (6) The event of this date above whose note says "The bracketed question has no published
+    solution in anything read, which is what the last paragraphs of the card say" attributes to the
+    rendered text something it does not carry: the card's last paragraphs record what the Stanford
+    paragraph gets wrong and that the question is settled, and the statement that no published
+    solution exists is this audit trail's and COMPLAINTS', not the page's. Checked in this pass:
+    Hatcher, section 3.3 Exercise 21 on printed p. 259 (PDF 268); the cone on a countable discrete
+    set as the counterexample to uniform radial scaling; Stanford, printed p. 1, and Kottke,
+    Problem 2, printed p. 2; Frankland's Theorems 1.2 and 1.3, printed p. 2. Not checked: the
+    Eda--Kawamura and Wiegold papers were not re-read.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #165, the item the last report left unverified: the two papers the
+    degree-two counterexample rests on were read at the pages the card cites.
+    Eda--Kawamura, Theorem 3.1, printed p. 307, states that for an index set I
+    of infinite cardinality and kappa = |I^N|, H_1(H_I) is isomorphic to
+    prod^sigma_I Z + prod_{p prime} A_p + direct-sum_kappa Q, where A_p is the
+    p-adic completion of direct-sum_kappa J_p; for I = N, kappa is the
+    continuum, so the direct-sum_kappa Q is the Q direct summand the step uses.
+    The proof is on printed p. 310 ("Proof of Theorem 3.1"), where Ker(sigma) is
+    a direct summand isomorphic to p-part plus direct-sum_kappa Q by Lemma 3.4
+    ("The maximal divisible subgroup of Ker(sigma) is isomorphic to
+    direct-sum_kappa Q"). Wiegold, printed pp. 341--342: the title is the
+    result, and the last paragraph concludes that Ext(Q,Z) is torsion-free and
+    divisible of the cardinal of the continuum, hence isomorphic to the
+    additive group of R; the conclusion stands on printed p. 342. Both are as
+    the card says, so the degree-two step's two citations are confirmed at their
+    printed pages and nothing on the card changes. Not checked: the rest of
+    either paper, and no other source bearing on the bracketed question was
+    searched this pass.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #165, the second item the last report left open: a further search for
+    a published solution of Hatcher's bracketed question, the answer to which
+    the card gives in degree two. Searched were Ceramic for the exercise's own
+    wording and Linkup for the exercise and its Z x R question; the hits were
+    Stanford Math 215C, Spring 2009, Solution Set 4 (printed p. 1, already
+    transcribed at steps excision-limit and cone-case and rejected in its
+    Z x R paragraph), Math Stack Exchange 4224576 (the cone failure, already
+    recorded) and 4812778 (the exercise, no answers), and Hatcher's errata
+    page. No new source and no published solution of the bracketed question was
+    located, so nothing on the card changes and the statement that no published
+    solution exists stands. Not done: the Scribd compilations returned by the
+    same search were not readable, and no print or library source was
+    consulted.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator repair, no mathematics: the live text cites each source by its numbered statement alone. The
+    cofinal rectangles are those of Stanford *Solution Set 4*; the rational summand of $H_1(E;\ZZ)$ is K. Eda
+    and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Theorem 3.1; $\Ext_\ZZ(\QQ,\ZZ)\cong\RR$
+    is James Wiegold, *Ext(Q,Z) is the additive group of real numbers*; and the degree-one value and the same
+    summand are Martin Frankland, *Cohomology of the Hawaiian Earring* (2017), Theorem 2.1 and Theorem 1.3
+    with the sentence after it. Every page reference is gone from the problem, the steps and the remarks —
+    including the two inside the bolded attributions, which now end at the theorem number. The split the card
+    draws between published theorems and its own assembly is unchanged, and no step changed. The dated events
+    above keep their text, page references included, as QUAL-11 requires. `qualc.authoring check` passes.
 ---
 
 ::: {.problem}
@@ -346,7 +536,7 @@ Assume that $X$ is locally compact Hausdorff, so that $X^+$ is a compact Hausdor
 Excision identifies $H_c^n(X;G)$ with the direct limit of $H^n(X^+,U;G)$ over all neighborhoods $U$ of $\infty$.
 
 ::: pf-proof
-This step is the first paragraph of Stanford Math 215C, Spring 2009, *Solution Set 4*, Hatcher 3.3.21, printed p. 1; C. Kottke, *Math 2420 Problem Set 3 solutions*, Spring 2012, Problem 2, printed p. 2, reaches the same limit over a cofinal family built the other way round. For a compact $K\subset X$, let $U_K=X^+\setminus K$, an open neighborhood of $\infty$. Excision of the point $\infty$, whose closure lies in the interior of $U_K$, gives
+This step is the first paragraph of Stanford Math 215C, Spring 2009, *Solution Set 4*, Hatcher 3.3.21; C. Kottke, *Math 2420 Problem Set 3 solutions*, Spring 2012, Problem 2, reaches the same limit over a cofinal family built the other way round. For a compact $K\subset X$, let $U_K=X^+\setminus K$, an open neighborhood of $\infty$. Excision of the point $\infty$, whose closure lies in the interior of $U_K$, gives
 $$
 H^n(X^+,U_K;G)\cong H^n(X,X\setminus K;G).
 $$
@@ -362,7 +552,7 @@ $$
 If $\infty$ has a cone neighborhood in $X^+$, then the evident map $H_c^n(X;G)\to H^n(X^+,\infty;G)$ is an isomorphism for all $n$.
 
 ::: pf-proof
-This is the remainder of the first paragraph of those two pages: the Stanford set restricts to those compact sets whose complement is cone-shaped, notes that they are cofinal among the compact subsets, and reads $\widetilde H^m(U_K;G)=0$ from the exact sequence of the pair $(X^+,U_K)$; Kottke absorbs each compact $K$ into a compact $L=X\setminus V$ with $V$ a cone neighbourhood of $\infty$ that deformation retracts to $\infty$, which is the cofinality assertion read backwards. Inside the cone neighborhood from the hypothesis, every neighborhood of the cone point contains a smaller cone-shaped neighborhood that contracts to the cone point by radial scaling. These contractible neighborhoods are cofinal among the neighborhoods of $\infty$. For each such $U$, the inclusion $\{\infty\}\hookrightarrow U$ is a homotopy equivalence. The map of long exact sequences for the pairs $(X^+,U)$ and $(X^+,\{\infty\})$ therefore shows that restriction is an isomorphism
+This is the remainder of the first paragraph of Stanford Math 215C, Spring 2009, *Solution Set 4*, Hatcher 3.3.21, and of C. Kottke, *Math 2420 Problem Set 3 solutions*, Problem 2: the Stanford set restricts to those compact sets whose complement is cone-shaped, notes that they are cofinal among the compact subsets, uses that each $U_K$ is a cone and therefore contractible, so that $\widetilde H^m(U_K;G)=0$ for all $m$, and then reads the isomorphism off the exact sequence of the pair $(X^+,U_K)$; Kottke absorbs each compact $K$ into a compact $L=X\setminus V$ with $V$ a cone neighbourhood of $\infty$ that deformation retracts to $\infty$, which is the cofinality assertion read backwards. Inside the cone neighborhood from the hypothesis, every neighborhood $W$ of the cone point contains a smaller cone-shaped neighborhood: choose on each ray of the cone an interval ending at the cone point and lying in $W$, and reparametrize the ray by that interval, which turns their union with the cone point into a subspace homeomorphic to the cone, contained in $W$, and contracting to the cone point along the rays. These contractible neighborhoods are cofinal among the neighborhoods of $\infty$. For each such $U$, the inclusion $\{\infty\}\hookrightarrow U$ is a homotopy equivalence. The map of long exact sequences for the pairs $(X^+,U)$ and $(X^+,\{\infty\})$ therefore shows that restriction is an isomorphism
 $$
 H^n(X^+,U;G)\xrightarrow{\cong}H^n(X^+,\infty;G).
 $$
@@ -375,7 +565,7 @@ These isomorphisms commute with restriction to smaller cone neighborhoods. Takin
 For $X=\ZZ\times\RR$ and integer coefficients, $H_c^2(X;\ZZ)=0$.
 
 ::: pf-proof
-The argument of this step is the card's own, on the family of rectangles that Stanford *Solution Set 4*, printed p. 1, uses as its cofinal compact sets. Let $J_N=[-N-1/2,N+1/2]$ and $K_N=([-N-1/2,N+1/2]^2)\cap X$ for $N\ge1$. These compact rectangles are cofinal among compact subsets of $X$. On each of the $2N+1$ lines meeting $K_N$, the relative cohomology is $H^q(\RR,\RR-J_N;\ZZ)$, which is $\ZZ$ for $q=1$ and zero otherwise. Hence
+The argument of this step is the card's own, on the family of rectangles that Stanford *Solution Set 4* uses as its cofinal compact sets. Let $J_N=[-N-1/2,N+1/2]$ and $K_N=([-N-1/2,N+1/2]^2)\cap X$ for $N\ge1$. These compact rectangles are cofinal among compact subsets of $X$. On each of the $2N+1$ lines meeting $K_N$, the relative cohomology is $H^q(\RR,\RR-J_N;\ZZ)$, which is $\ZZ$ for $q=1$ and zero otherwise. Hence
 $$
 H^q(X,X-K_N;\ZZ)\cong
 \begin{cases}
@@ -396,18 +586,18 @@ That the one-point compactification of $\ZZ\times\RR$ is the Hawaiian earring is
 $$
 \operatorname{Ext}_{\ZZ}(H_1(E;\ZZ),\ZZ)\hookrightarrow H^2(E;\ZZ).
 $$
-By **K. Eda and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Theorem 3.1, printed p. 307 with the proof on printed p. 310**, $H_1(E;\ZZ)$ has a direct summand isomorphic to $\QQ$, the index $\kappa$ of the statement being $\abs{I^{\NN}}$ and so the continuum; the same summand is stated as Theorem 2.1 of **Martin Frankland, *Cohomology of the Hawaiian Earring*, printed p. 3**. Consequently $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)$ is a direct summand of the left-hand group above. By **James Wiegold, *Ext(Q,Z) is the additive group of real numbers*, printed pp. 341--342**, $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)\cong\RR\ne0$. The target group is therefore nonzero.
+By **K. Eda and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Theorem 3.1**, $H_1(E;\ZZ)$ has a direct summand isomorphic to $\QQ$, the index $\kappa$ of the statement being $\abs{I^{\NN}}$ and so the continuum; the same summand is stated as Theorem 2.1 of **Martin Frankland, *Cohomology of the Hawaiian Earring***. Consequently $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)$ is a direct summand of the left-hand group above. By **James Wiegold, *Ext(Q,Z) is the additive group of real numbers*, $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)\cong\RR\ne0$. The target group is therefore nonzero.
 :::
 
 :::
 
 ::: {.pf-step #degree-one}
 
-For $X=\ZZ\times\RR$ and integer coefficients, $H_c^1(X;\ZZ)$ and $H^1(X^+,\infty;\ZZ)$ are both free abelian on countably many generators, so degree one does not separate the two sides.
+For $X=\ZZ\times\RR$ and integer coefficients, $H_c^1(X;\ZZ)$ and $H^1(X^+,\infty;\ZZ)$ are both free abelian on countably many generators, so no invariant of the two groups as abstract groups, and in particular no countability argument, can separate the two sides in degree one.
 
 ::: pf-proof
 
-The comparison of the two values is the card's own. Step [](#compact-degree-two){.pf-ref} computes $H^q(X,X\setminus K_N;\ZZ)=\ZZ^{2N+1}$ for $q=1$ and $0$ otherwise, and the family $\{K_N\}$ is cofinal, so the direct limit of step [](#excision-limit){.pf-ref} in degree one is the free abelian group on countably many generators. For the right-hand side, step [](#earring-degree-two){.pf-ref} identifies $X^+$ with the Hawaiian earring $E$, and **Martin Frankland, *Cohomology of the Hawaiian Earring* (2017), Theorem 1.3 with the sentence following it, printed p. 2**, gives
+The comparison of the two values is the card's own. Step [](#compact-degree-two){.pf-ref} computes $H^q(X,X\setminus K_N;\ZZ)=\ZZ^{2N+1}$ for $q=1$ and $0$ otherwise, and the family $\{K_N\}$ is cofinal, so the direct limit of step [](#excision-limit){.pf-ref} in degree one is the free abelian group on countably many generators. For the right-hand side, step [](#earring-degree-two){.pf-ref} identifies $X^+$ with the Hawaiian earring $E$, and **Martin Frankland, *Cohomology of the Hawaiian Earring* (2017), Theorem 1.3 with the sentence following it**, gives
 
 $$
 H^1(E;\ZZ)\cong\bigoplus_{n\in\NN}\ZZ,
@@ -423,23 +613,23 @@ $$
 The answer to the bracketed question is no, already for $G=\ZZ$ and $n=2$.
 
 ::: pf-proof
-The argument of this step is the card's own, on three published theorems: **K. Eda and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Theorem 3.1, printed p. 307 with its proof on printed p. 310**, for the $\QQ$ direct summand of $H_1(E;\ZZ)$; **James Wiegold, *Ext(Q,Z) is the additive group of real numbers*, printed pp. 341--342**, for $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)\cong\RR$; and **Martin Frankland, *Cohomology of the Hawaiian Earring* (2017), Theorem 2.1 on printed p. 3 and Theorem 1.3 with the sentence after it on printed p. 2**, for the same summand and for the degree-one value. Steps [](#compact-degree-two){.pf-ref} and [](#earring-degree-two){.pf-ref} give
+The argument of this step is the card's own, on three published theorems: **K. Eda and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Theorem 3.1**, for the $\QQ$ direct summand of $H_1(E;\ZZ)$; **James Wiegold, *Ext(Q,Z) is the additive group of real numbers***, for $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)\cong\RR$; and **Martin Frankland, *Cohomology of the Hawaiian Earring* (2017), Theorem 2.1 and Theorem 1.3 with the sentence after it**, for the same summand and for the degree-one value. Steps [](#compact-degree-two){.pf-ref} and [](#earring-degree-two){.pf-ref} give
 $$
 \boxed{H_c^2(\ZZ\times\RR;\ZZ)=0,\qquad H^2((\ZZ\times\RR)^+,\infty;\ZZ)\ne0,}
 $$
-so the evident map cannot be an isomorphism, and the cone-neighborhood hypothesis of step [](#cone-case){.pf-ref} cannot hold for $\ZZ\times\RR$. The separation is in degree two; by step [](#degree-one){.pf-ref} degree one does not separate the two sides, and nothing here asserts that the degree-one map fails.
+so the evident map cannot be an isomorphism, and the cone-neighborhood hypothesis of step [](#cone-case){.pf-ref} cannot hold for $\ZZ\times\RR$. The separation is in degree two; step [](#degree-one){.pf-ref} shows only that the two groups in degree one are abstractly isomorphic, and nothing here asserts that the degree-one map fails.
 :::
 
 :::
 
 :::
 
-A second route to the first part, which absorbs each compact set into a larger one instead of using the vanishing of $\widetilde H^m(U_K;G)$, is Kottke's, Problem 2, printed p. 2. Let $K\subset X$ be compact. Since $X^+$ is Hausdorff there are disjoint open sets $U\supset K$ and $V\ni\infty$; shrinking $V$ inside the cone-shaped neighbourhood of the hypothesis, one may assume that $V$ deformation retracts to $\infty$. Put $L=X\setminus V$. Then $L$ is compact and $K\subset L$, and since $X\setminus L=V\setminus\{\infty\}$,
+A second route to the first part, which absorbs each compact set into a larger one instead of using the vanishing of $\widetilde H^m(U_K;G)$, is Kottke's, Problem 2. Let $K\subset X$ be compact. Since $X^+$ is Hausdorff there are disjoint open sets $U\supset K$ and $V\ni\infty$; shrinking $V$ inside the cone-shaped neighbourhood of the hypothesis, one may assume that $V$ deformation retracts to $\infty$. Put $L=X\setminus V$. Then $L$ is compact and $K\subset L$, and since $X\setminus L=V\setminus\{\infty\}$,
 $$
 H^n(X,X\setminus L)=H^n(X,V\setminus\{\infty\})\cong H^n(X^+,V)\cong H^n(X^+,\infty),
 $$
 the first group by the identity just written, the middle isomorphism by excision of the point $\infty$ — closed in $X^+$ and contained in the open set $V$, so that its closure lies in the interior of $V$ — and the last by the deformation retraction of $V$ onto $\infty$. The $L$ so obtained are cofinal among the compact subsets of $X$, so the direct limit over them is $H_c^n(X;G)$, and the isomorphisms are compatible with inclusions, which is the theorem. Kottke writes the middle group as $H^n(X,V)$, where $V$ is an open set of $X^+$ containing $\infty$ and so is not a subspace of $X$; the excision removes $\infty$ from it, and the group meant is the one written above.
 
-Stanford's closing paragraph on $X=\ZZ\times\RR$ concludes that $H^1$ of the compactification is uncountable from a surjection $H_1\twoheadrightarrow\prod_\NN\ZZ$. That inference does not hold: dualizing a surjection gives an injection, and $\operatorname{Hom}(\prod_\NN\ZZ,\ZZ)\cong\bigoplus_\NN\ZZ$ is countable by Specker's theorem, as step [](#degree-one){.pf-ref} computes directly. The bracketed question is settled above, in degree two with $G=\ZZ$.
+Stanford's closing paragraph on $X=\ZZ\times\RR$ concludes that $H^1$ of the compactification is uncountable from a surjection $H_1\twoheadrightarrow\prod_\NN\ZZ$. That inference does not hold: dualizing a surjection gives an injection, and $\operatorname{Hom}(\prod_\NN\ZZ,\ZZ)\cong\bigoplus_\NN\ZZ$ is countable by Specker's theorem, stated as Theorem 1.2 of Frankland, *Cohomology of the Hawaiian Earring*. The bracketed question is settled above, in degree two with $G=\ZZ$.
 
 :::

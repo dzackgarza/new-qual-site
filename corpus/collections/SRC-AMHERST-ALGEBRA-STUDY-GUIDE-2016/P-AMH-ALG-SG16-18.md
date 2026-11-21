@@ -6,7 +6,9 @@ title: An ideal in the ring of upper triangular $2\times 2$ real matrices
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Ideals
+  - Matrix Rings
 relations: []
 review: draft
 audit:

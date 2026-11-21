@@ -10,6 +10,16 @@ classification:
   - Hausdorff Spaces
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. If x = q(1/4) lies in an open U then q^{-1}(U) is open in I and
+    contains 1/4, so it meets the identified interval (1/4,3/4) and hence * = q(1/4,3/4) lies in U;
+    the same holds at y = q(3/4), so no neighbourhoods of x and y are disjoint. Checked that 1/4 and
+    3/4 are interior points of I, which is what makes q^{-1}(U) contain an interval around them. Not
+    checked: the printed midterm, which was not re-read in this pass.
 ---
 
 ::: {.problem}

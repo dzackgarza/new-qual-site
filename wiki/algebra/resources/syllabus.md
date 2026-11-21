@@ -5,11 +5,7 @@ order: 0
 
 # Topics and remarks
 
-::: {.remark}
-Adapted from a remark written by Roy Smith, August 2006:
-
-"As a general rule, students are responsible for knowing both the theory (proofs) and practical applications (e.g. how to find the Jordan or rational canonical form of a given matrix, or the Galois group of a given polynomial) of the topics mentioned."
-:::
+The topics each chapter of this guide covers, with the sections of the standard texts in which each is treated and the page counts of the course notes that carry them.
 
 ## General references
 
@@ -189,13 +185,13 @@ Adapted from a remark written by Roy Smith, August 2006:
 
     - Results about PIDs [@DF04, sec. 8.2]
 
-      - A PID that is not a Euclidean domain [@DF04, p. 277]
+      - A PID that is not a Euclidean domain [@DF04]
 
       - Proof that a Euclidean domain is a PID and hence a UFD
 
-      - Proof that $\ZZ$ and $k[x]$ are UFDs [@Smi96, p. 289; @DF04, p. 300]
+      - Proof that $\ZZ$ and $k[x]$ are UFDs [@Smi96; @DF04]
 
-      - A polynomial ring in infinitely many variables over a UFD is a UFD [@DF04, p. 305]
+      - A polynomial ring in infinitely many variables over a UFD is a UFD [@DF04]
 
 - Gauss's theorem on unique factorization of polynomials:
 
@@ -211,9 +207,9 @@ Adapted from a remark written by Roy Smith, August 2006:
 
   - The remainder and factor theorems
 
-  - Eisenstein's criterion [@DF04, p. 309]
+  - Eisenstein's criterion [@DF04]
 
-  > [@DF04, p. 309] states Eisenstein's criterion for monic polynomials; the proof of the general case is the same, and [@Smi96] states the general case.
+  > Dummit and Foote [@DF04] states Eisenstein's criterion for monic polynomials; the proof of the general case is the same, and [@Smi96] states the general case.
 
   - Reducibility
 

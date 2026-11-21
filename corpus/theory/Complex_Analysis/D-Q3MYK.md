@@ -19,4 +19,6 @@ $$
 \Gamma(z)\coloneqq\int_0^\infty t^{z-1}e^{-t}\dt,
 $$
 where $t^{z-1}\coloneqq e^{(z-1)\log t}$ for $t>0$, with $\log$ the real natural logarithm.
+
+This is [@SS03, ch. 6, §1, The gamma function], whose opening display defines $\Gamma$ by the same integral.
 :::

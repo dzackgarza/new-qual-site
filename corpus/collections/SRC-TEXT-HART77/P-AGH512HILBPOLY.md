@@ -29,6 +29,27 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 5.1.2, printed p. 100,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.1.2, printed p. 366, which the card's earlier events record as
+    read at a 110 dpi render of the text-layerless page; this pass did not reopen
+    it, and the comparison is against the statement the card carries. Recomputed
+    the Hilbert polynomial P(n) = (1/2)n^2 H^2 - (1/2)n H.K + 1 + p_a and the two
+    coefficient identities that follow from it. Not checked: Yang's Solutions outside printed pp. 100-107; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.1.2 at printed
+    p. 100 beside Egbert's entry, with the slips its text carries.
+    No step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -255,5 +276,9 @@ formula for every curve $C\subseteq X$.
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.2, PDF p. 254: by surface Riemann--Roch, $\chi(nH)=\frac12(nH)\cdot(nH-K_X)+1+p_a$, so $a=H^2$ and $c=1+p_a$; adjunction on a nonsingular member of $\abs{H}$ gives $H\cdot K_X=2\pi-2-H^2$, which is the linear coefficient; "by I.7, the degree is $\dim(X)!$ times the first coefficient, so it's $H^2$". For the degree of a curve he plugs the two exact sequences $0\to\OO_X(-C)\to\OO_X\to\OO_C\to0$ and $0\to\OO_X(-C-H)\to\OO_X(-H)\to\OO_C(-H\restrict_C)\to0$ back into exercise V.1.2 itself, so that paragraph argues in a circle. Step [](#s6){.pf-ref} obtains $\deg C=C\cdot H$ from $\OO_C(1)\cong\OO_X(H)\restrict_C$. Matches on the two coefficients and the degree of $X$; the degree formula is supplied here.
+The exercise is V.1.2 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is its text, which prints the polynomial as $F(z)$ and the embedding as $X\subseteq\PP^n$, both rendered here with the card's letters.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.2: by surface Riemann--Roch, $\chi(nH)=\frac12(nH)\cdot(nH-K_X)+1+p_a$, so $a=H^2$ and $c=1+p_a$; adjunction on a nonsingular member of $\abs{H}$ gives $H\cdot K_X=2\pi-2-H^2$, which is the linear coefficient; "by I.7, the degree is $\dim(X)!$ times the first coefficient, so it's $H^2$". For the degree of a curve he plugs the two exact sequences $0\to\OO_X(-C)\to\OO_X\to\OO_C\to0$ and $0\to\OO_X(-C-H)\to\OO_X(-H)\to\OO_C(-H\restrict_C)\to0$ back into exercise V.1.2 itself, so that paragraph argues in a circle. Step [](#s6){.pf-ref} obtains $\deg C=C\cdot H$ from $\OO_C(1)\cong\OO_X(H)\restrict_C$. Matches on the two coefficients and the degree of $X$; the degree formula is supplied here.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.1.2, is the same computation: $\chi(nH)=\frac12(nH)\cdot(nH-K)+1+p_a$ makes $P(n)=\frac12n^2H^2-\frac12n\,H\cdot K+1+p_a$ for $n\gg0$, so $a=H^2$ and $c=1+p_a$; adjunction $H\cdot(H+K)=2\pi-2$ gives $H\cdot K=2\pi-2-H^2$ and $b=\frac12H^2+1-\pi$; and for a curve $C$ on $X$, a hyperplane meeting both $C$ and $X$ transversally gives $C\cdot H=\#(C\cap X\cap S)=\deg C$ by Bézout, which is the degree statement.
 :::

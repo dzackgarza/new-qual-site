@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP09-I3
 kind: problem
 title: Characterize spaces embeddable in products of unit intervals
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Product Topology, Embeddings]}
 relations: []
 review: draft
 audit:

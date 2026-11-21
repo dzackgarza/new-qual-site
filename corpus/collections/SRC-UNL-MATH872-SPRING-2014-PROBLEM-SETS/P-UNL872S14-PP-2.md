@@ -5,7 +5,9 @@ kind: problem
 title: CW structure and $\pi_1$ of the cube with opposite faces glued by a quarter twist
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - CW Complexes
+  - Fundamental Group
 relations: []
 review: draft
 audit:

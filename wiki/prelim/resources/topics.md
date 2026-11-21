@@ -7,10 +7,10 @@ order: 2
 
 ## UCLA Basic Examination
 
-[[attachments/UCLA_Basic_Exam_Topics.pdf|UCLA Basic Examination syllabus]]
+[[attachments/UCLA_Basic_Exam_Topics.pdf|UCLA Basic Examination syllabus]] (January 2019)
 
-The UCLA Basic Examination syllabus (January 2019) covers one-variable and multivariable analysis, metric space topology, and linear algebra.
-It lists preparation texts including Tao, Gamelin--Greene, Edwards, Apostol, Rosenlicht, Rudin, Petersen, Lang, Hoffman--Kunze, Serre, and references in numerical analysis.
+The syllabus examines three areas: the fundamentals of analysis, namely one-variable calculus, metric-space topology in $\RR^n$, and multivariable calculus; linear algebra; and the numerical linear algebra of its applied-mathematics list.
+Its suggested references, in the order it gives them: for analysis and multivariable calculus, Tao's *Analysis I* and *II*, Gamelin and Greene's *Introduction to Topology* Chapter 1, Edwards' *Advanced Calculus of Several Variables* Chapters I--III, [@Apo74], Rosenlicht's *Introduction to Analysis*, and [@Rud64]; for linear algebra, Petersen's *Linear Algebra and Lecture Notes*, Lang's *Linear Algebra*, [@HK71], Marcus and Minc's *Introduction to Linear Algebra*, and *Schaum's Outline of 3000 Solved Problems of Linear Algebra*; and, for readers with an interest in applied mathematics, D. Serre's *Matrices: Theory and Applications*, Ralston and Rabinowitz's *A First Course in Numerical Analysis*, 2nd edition, Chapters 9 and 10, and Atkinson's *An Introduction to Numerical Analysis*, 2nd edition, Chapters 7, 8 and 9.
 
 ## Linear algebra
 

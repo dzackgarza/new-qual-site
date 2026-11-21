@@ -31,7 +31,14 @@ audit:
     unique Sylow p-subgroup of N; for g normalizing N, gPg^{-1} is a Sylow
     p-subgroup of N, so it equals P and g ∈ N; the reverse inclusion is trivial.
     No defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 7, Sylow problem 4. With
+    $N=N_G(P)$, the Sylow $P$ is normal in $N$ and hence the unique Sylow $p$-subgroup of $N$;
+    for $g\in N_G(N)$, $gPg^{-1}\le N$ is a Sylow $p$-subgroup of $N$, so it equals $P$ and
+    $g\in N$. The reverse inclusion is trivial. No defect.
 ---
 
 ::: {.exercise}

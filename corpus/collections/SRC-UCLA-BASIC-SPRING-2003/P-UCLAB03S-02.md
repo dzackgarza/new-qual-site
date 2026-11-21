@@ -5,7 +5,9 @@ kind: problem
 title: Absolute convergence implies convergence for a real series
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Series of Numbers
+  - Convergence Tests
 relations: []
 review: draft
 audit:

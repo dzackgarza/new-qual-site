@@ -5,7 +5,10 @@ kind: problem
 title: No map from the torus to $S^1\vee S^1$ has a left inverse
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Fundamental Group
+  - Homology
+  - Wedge Sums
 relations: []
 review: draft
 audit:

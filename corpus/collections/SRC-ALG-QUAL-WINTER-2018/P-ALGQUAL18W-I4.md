@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-ALGQUAL18W-I4
 kind: problem
 title: Semisimplicity over $\CC[x,y]$ versus the coordinate subalgebras
-classification: {areas: [algebra], topics: []}
+classification: {areas: [algebra], topics: [Semisimplicity, Modules]}
 relations: []
 review: draft
 audit:

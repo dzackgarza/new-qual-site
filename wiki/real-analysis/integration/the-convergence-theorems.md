@@ -26,12 +26,7 @@ topics:
 
 [[T-LDJNS]]
 
-::: {.remark title="Relations among the three theorems"}
-The monotone convergence theorem and Fatou's lemma can each be proved from the other.
-The dominated convergence theorem follows from Fatou's lemma applied to $2g - \abs{f_n - f}\geq0$, which converges to $2g$ and gives $\limsup_n\int\abs{f_n-f}\leq 0$.
-For measurable $f_n\geq0$, the inequality $\int\liminf_n f_n\leq\liminf_n\int f_n$ of Fatou's lemma can be strict: $f_n\coloneqq n\chi_{(0,1/n)}$ on $\RR$ gives $0<1$.
-
-:::
+Fatou's inequality can be strict, and [[real-analysis/counterexamples#Convergence and integration|Counterexamples]] gives three sequences that witness it.
 
 ## Egorov and Lusin
 
@@ -41,8 +36,8 @@ For measurable $f_n\geq0$, the inequality $\int\liminf_n f_n\leq\liminf_n\int f_
 
 ## Interchanging limits, sums, and integrals
 
-The equality $\lim_n\int f_n=\int\lim_n f_n$ holds when $f_n\to f$ uniformly and all $f_n$ vanish outside one set of finite measure.
-It fails for the pointwise convergent sequences $n\chi_{(0,1/n)}$, $\chi_{[n,n+1]}$, and $\frac1n\chi_{[0,n]}$ on $\RR$, all in [[real-analysis/integration/l1|$L^1$]], each with limit $0$ and integral $1$.
+On a measure space with $\mu(X)<\infty$, uniform convergence of integrable functions carries the integrals with it, by the estimate $\abs{\int f_n-\int f}\leq\mu(X)\sup_x\abs{f_n(x)-f(x)}$ ([[PR-L7LNZ]]).
+The hypothesis $\mu(X)<\infty$ cannot be dropped: [[real-analysis/counterexamples#Convergence and integration|Counterexamples]] carries the uniformly convergent witness.
 
 [[T-MN6WQ]]
 

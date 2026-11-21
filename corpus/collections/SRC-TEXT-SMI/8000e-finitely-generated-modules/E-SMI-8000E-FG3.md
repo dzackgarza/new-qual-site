@@ -35,7 +35,16 @@ audit:
     the kernel dimensions at 2 and 3 force block sizes (2,1) and (2,2); exponent
     648 forces Z/648; and minimal polynomial (t-2)^3(t-3)^4 with only 7
     dimensions forces J_3(2) ⊕ J_4(3). No defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 3, #3(a)--(d). For a cyclic
+    summand $\ZZ/2^e$, $\ker(2)$ contributes $1$ to the dimension and $\ker(2^2)/\ker(2)$
+    contributes $1$ exactly when $e\ge2$; the conditions give $2+1$ at $2$ and $2+2$ at $3$.
+    The same kernel-growth count on Jordan blocks gives $(2,1)$ at $2$ and $(2,2)$ at $3$.
+    Exponent $648$ forces $\ZZ/8\oplus\ZZ/81\cong\ZZ/648$; minimal polynomial
+    $(t-2)^3(t-3)^4$ on seven dimensions forces $J_3(2)\oplus J_4(3)$. No defect.
 ---
 
 ::: {.exercise}

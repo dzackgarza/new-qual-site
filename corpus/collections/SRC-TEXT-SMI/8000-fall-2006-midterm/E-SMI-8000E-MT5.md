@@ -32,7 +32,14 @@ audit:
     are compared, the recurrence is solved for B_0, and -AB_0 = c_0 I telescopes to
     chi_A(A) = 0. Correct, and it avoids substituting A into a matrix with non-scalar
     coefficients. No defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 11, midterm 5. With
+    $\chi_A(x)=a_0+\cdots+a_nx^n$ and $\operatorname{adj}(xI-A)=C_0+\cdots+C_{n-1}x^{n-1}$,
+    comparing coefficients gives $-AC_0=a_0I$, $C_{k-1}-AC_k=a_kI$, $C_{n-1}=I$; multiplying
+    by $I,A,\ldots,A^n$ on the left and adding telescopes to $\chi_A(A)=0$. No defect.
 ---
 
 ::: {.exercise}

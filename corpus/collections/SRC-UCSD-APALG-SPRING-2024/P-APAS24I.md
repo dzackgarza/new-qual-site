@@ -12,6 +12,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 9 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p.
+    9 of the paper's own numbered pages, is the statement the card answers, and the head of the solution
+    names it; the file retained at assets/attachments/SP24_math_202_exam.pdf puts a cover page before
+    those pages, so paper p. 9 is its page 10. Checked: the statement against the paper's text layer at
+    the page named; the Nullstellensatz argument over $\CC$, and the counterexample $((x-1)^2+(y-3)^2)$
+    over $\RR$; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the QED. Not
+    checked: no retained solution set exists for this paper to compare the argument with, and no other
+    card of the collection in this pass.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
@@ -24,6 +36,9 @@ Is this true if $\CC[x,y]$ is replaced by $\RR[x,y]$?
 :::
 
 ::: {.solution}
+
+The problem is Problem 9 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p. 9 of the paper's numbered pages — the retained file `assets/attachments/SP24_math_202_exam.pdf` puts a cover page before them. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own.
+
 **Goal.** For $I \subseteq \CC[x,y]$ with $V(I) = \theset{(1,3)}$, show $\CC[x,y]/I$ is finite-dimensional, and decide the $\RR[x,y]$ analogue.
 
 ::: pf

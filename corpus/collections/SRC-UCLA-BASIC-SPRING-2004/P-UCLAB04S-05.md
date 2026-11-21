@@ -5,7 +5,9 @@ kind: problem
 title: Differentiability and a mean-value bound for vector-valued maps
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Mean Value Theorem
+  - Differentiation
 relations: []
 review: draft
 audit:

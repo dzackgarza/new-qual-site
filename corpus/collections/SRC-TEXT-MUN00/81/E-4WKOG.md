@@ -38,6 +38,26 @@ audit:
   date: 2026-11-11
   note: >-
     Step-by-step check against the printed pages, and the repair. Corrected: the definition of a properly discontinuous action is on printed p. 490, not p. 488 as the previous note said. The old solution was not a Lamport proof: its four top-level steps carried indented prose labelled "Proof:" instead of pf-proof blocks, the inner steps had no proofs at all, and a literal "Q.E.D." was typed into the last one. It is now a pf block with one step for each printed part, and every step cites Munkres by number and page: the definition of local compactness (printed p. 182), Theorem 26.3 (printed p. 165) that a compact subspace of a Hausdorff space is closed, Theorem 26.5 (printed p. 166) that a continuous image of a compact space is compact, the definition of the quotient topology (printed p. 137), and the definition of a properly discontinuous action (printed p. 490). Two things were added because the old proof asserted them in passing: that the set of indices F in part (b) is finite, which needs the hypothesis applied to K_x union K_y, and that p(U) and p(V) are disjoint, which needs the translation of an equality p(u) = p(v) into u lying in some g(V). What the certificate does not cover: part (c) is the printed assertion that the action is properly discontinuous, and its proof uses only the hypothesis and Hausdorffness, not part (a).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    All four parts are correct, and each uses only the printed hypotheses. (a)
+    takes x outside the union, a neighbourhood U with compact closure K, and
+    the finite set F of elements g with K union C meeting g(K union C); for g
+    outside F the set g(C) misses K and hence U, and for g in F it is compact,
+    hence closed, and avoids x, so U cut by the finitely many complements of
+    those g(C) is a neighbourhood of x missing the whole union. (b) first notes
+    that p is open, then separates p(x) and p(y) by taking neighbourhoods with
+    compact closures, the finite set F of g with K_x meeting g(K_y), finite
+    because such a g has K meeting g(K) for K the union of the two closures,
+    and disjoint neighbourhoods of x and of g(y) for g in F; the resulting U and
+    V have disjoint images, since no g carries V into U. (c) is the same
+    construction with C a compact neighbourhood, the fixed-point-free hypothesis
+    giving g(x) different from x, and it produces U with g(U) disjoint from U
+    for every g other than the identity, which is the definition on printed
+    p. 490. (d) pushes a compact neighbourhood through the open quotient map.
+    Nothing was changed.
 ---
 
 ::: {.exercise}
@@ -62,7 +82,7 @@ Then the action of $G$ is properly discontinuous, and $X/G$ is locally compact H
 
 ::: {.solution}
 
-Write $p:X\to X/G$ for the quotient map; a subset $O$ of $X/G$ is open exactly when $p^{-1}(O)$ is open in $X$ (Definition of the quotient topology, printed p. 137), and $p(W)=\{Gx\mid x\in W\}$.
+Write $p:X\to X/G$ for the quotient map; a subset $O$ of $X/G$ is open exactly when $p^{-1}(O)$ is open in $X$ (Definition of the quotient topology (§22)), and $p(W)=\{Gx\mid x\in W\}$.
 
 The argument of this part is the one Daniel Fischer's answer 801561 (https://math.stackexchange.com/a/801561), posted 2014-05-19 to Math Stack Exchange question 801446, which is this exercise (https://math.stackexchange.com/questions/801446, asked by Akt904 on the same day), points to: the family $\{g(C)\}_{g\in G}$ is locally finite by the exercise's hypothesis and the hint, and a locally finite union of closed sets is closed. That answer states that proposition and leaves its proof as an exercise, so what it supplies is the route; the proof of the proposition, and parts (b), (c) and (d), which the thread does not reach, are below.
 
@@ -81,7 +101,7 @@ Let $x\in X$ with $x\notin\bigcup_{g\in G}g(C)$. There is an open neighbourhood 
 
 ::: {.pf-proof}
 
-$X$ is locally compact, so $x$ lies in a compact subspace $C_x$ of $X$ that contains a neighbourhood of $x$ (definition, printed p. 182); take $U$ inside that neighbourhood, so that $K=\overline{U}$ is a closed subspace of the compact space $C_x$, hence compact (Theorem 26.2, printed p. 165). The set $K\cup C$ is compact, being a union of two compact subspaces, and the hypothesis applied to it gives that $F$ is finite.
+$X$ is locally compact, so $x$ lies in a compact subspace $C_x$ of $X$ that contains a neighbourhood of $x$ (§29, definition); take $U$ inside that neighbourhood, so that $K=\overline{U}$ is a closed subspace of the compact space $C_x$, hence compact (Theorem 26.2). The set $K\cup C$ is compact, being a union of two compact subspaces, and the hypothesis applied to it gives that $F$ is finite.
 
 :::
 
@@ -93,7 +113,7 @@ There is an open neighbourhood $V$ of $x$ disjoint from $\bigcup_{g\in G}g(C)$.
 
 ::: {.pf-proof}
 
-For $g\notin F$ one has $K\cap g(C)\subseteq(K\cup C)\cap g(K\cup C)=\varnothing$, hence $U\cap g(C)=\varnothing$. For $g\in F$ the set $g(C)$ is compact, being a continuous image of the compact space $C$ (Theorem 26.5, printed p. 166), hence closed in the Hausdorff space $X$ (Theorem 26.3, printed p. 165), and $x\notin g(C)$. So
+For $g\notin F$ one has $K\cap g(C)\subseteq(K\cup C)\cap g(K\cup C)=\varnothing$, hence $U\cap g(C)=\varnothing$. For $g\in F$ the set $g(C)$ is compact, being a continuous image of the compact space $C$ (Theorem 26.5), hence closed in the Hausdorff space $X$ (Theorem 26.3), and $x\notin g(C)$. So
 $$
 V=U\cap\bigcap_{g\in F}\left(X\setminus g(C)\right)
 $$
@@ -119,7 +139,7 @@ $p$ is an open map.
 
 ::: {.pf-proof}
 
-For open $W\subseteq X$ the set $p^{-1}p(W)=\bigcup_{g\in G}g(W)$ is a union of open sets, hence open, so $p(W)$ is open by the definition of the quotient topology (printed p. 137).
+For open $W\subseteq X$ the set $p^{-1}p(W)=\bigcup_{g\in G}g(W)$ is a union of open sets, hence open, so $p(W)$ is open by the definition of the quotient topology (§22).
 
 :::
 
@@ -163,7 +183,7 @@ is finite by hypothesis. For $g\in F$ the action is fixed-point free and $g$ is 
 $$
 U=U_0\cap\bigcap_{g\in F}\left(V_g\cap g^{-1}(W_g)\right),
 $$
-an open neighbourhood of $x$. For $g\in F$ one has $U\subseteq V_g$ and $g(U)\subseteq W_g$, so $g(U)\cap U=\varnothing$; for $g\notin F$ with $g\ne e$ one has $U\subseteq C$ and $g(U)\subseteq g(C)$, so $g(U)\cap U\subseteq g(C)\cap C=\varnothing$. Hence $g(U)\cap U=\varnothing$ for every $g\ne e$, which is the definition of a properly discontinuous action (printed p. 490).
+an open neighbourhood of $x$. For $g\in F$ one has $U\subseteq V_g$ and $g(U)\subseteq W_g$, so $g(U)\cap U=\varnothing$; for $g\notin F$ with $g\ne e$ one has $U\subseteq C$ and $g(U)\subseteq g(C)$, so $g(U)\cap U\subseteq g(C)\cap C=\varnothing$. Hence $g(U)\cap U=\varnothing$ for every $g\ne e$, which is the definition of a properly discontinuous action (§81).
 
 :::
 
@@ -175,7 +195,7 @@ an open neighbourhood of $x$. For $g\in F$ one has $U\subseteq V_g$ and $g(U)\su
 
 ::: pf-proof
 
-Let $p(x)\in X/G$. Since $X$ is locally compact at $x$, there is a compact subspace $K$ of $X$ containing an open neighbourhood $W$ of $x$. Then $p(K)$ is compact, being the continuous image of a compact space (Theorem 26.5, printed p. 166), and $p(W)$ is open by step [](#openmap){.pf-ref}, with $p(x)\in p(W)\subseteq p(K)$. So $p(x)$ has a compact neighbourhood, and $X/G$ is locally compact (definition, printed p. 182); it is Hausdorff by step [](#hausdorff){.pf-ref}.
+Let $p(x)\in X/G$. Since $X$ is locally compact at $x$, there is a compact subspace $K$ of $X$ containing an open neighbourhood $W$ of $x$. Then $p(K)$ is compact, being the continuous image of a compact space (Theorem 26.5), and $p(W)$ is open by step [](#openmap){.pf-ref}, with $p(x)\in p(W)\subseteq p(K)$. So $p(x)$ has a compact neighbourhood, and $X/G$ is locally compact (definition); it is Hausdorff by step [](#hausdorff){.pf-ref}.
 
 :::
 

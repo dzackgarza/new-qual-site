@@ -40,6 +40,11 @@ audit:
     propositional equivalence distributing "and" over "or" and from the definition of
     set difference, and the universe-relative form is stated at the end. Nothing was
     weakened; no defect found.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured the prose solution into Lamport steps. The statement was already checked against Munkres, *Topology* (2000), §1 Exercise 1, printed p. 14, and the four laws are transcribed from the retained set's chains of equivalences: Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 1.1, printed pp. 1--2. Each step is one of his equivalences, with the propositional law it uses named. Not proved here: any form of the laws for an arbitrary index set, which the exercise does not ask for.
 ---
 
 ::: {.exercise}
@@ -48,47 +53,49 @@ Check the distributive laws for $\cup$ and $\cap$ and DeMorgan's laws.
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 1.1, printed pp. 1--2** (`tmp/sources/munkres-solutions-whitman.pdf`), which derives all four laws as chains of logical equivalences between membership statements. The argument below is his, expanded so that each step names the equivalence it uses.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 1.1** (`tmp/sources/munkres-solutions-whitman.pdf`), which derives all four laws as chains of logical equivalences between membership statements; the statement is Munkres, *Topology* (2000), §1 Exercise 1. The steps transcribe his argument, naming the propositional law each equivalence uses.
 
-For any element $x$, membership in a union corresponds to logical "or" and membership in an intersection corresponds to logical "and". Hence
-$$
-\begin{aligned}
-x\in A\cap(B\cup C)
-&\iff x\in A\ \text{and}\ (x\in B\ \text{or}\ x\in C)\\
-&\iff (x\in A\cap B)\ \text{or}\ (x\in A\cap C)\\
-&\iff x\in (A\cap B)\cup(A\cap C),
-\end{aligned}
-$$
-so
-$$
-A\cap(B\cup C)=(A\cap B)\cup(A\cap C).
-$$
-Similarly,
-$$
-A\cup(B\cap C)=(A\cup B)\cap(A\cup C).
-$$
-These are the two distributive laws.
+::: pf
 
-For DeMorgan's laws,
-$$
-\begin{aligned}
-x\in A-(B\cup C)
-&\iff x\in A,\ x\notin B,\ x\notin C\\
-&\iff x\in(A-B)\cap(A-C),
-\end{aligned}
-$$
-so
-$$
-A-(B\cup C)=(A-B)\cap(A-C).
-$$
-Likewise,
-$$
-A-(B\cap C)=(A-B)\cup(A-C).
-$$
-Equivalently, relative to a fixed universe $U$,
-$$
-(B\cup C)^c=B^c\cap C^c,
-\qquad
-(B\cap C)^c=B^c\cup C^c.
-$$
+::: {.pf-step #distributive-one}
+$A\cap(B\cup C)=(A\cap B)\cup(A\cap C)$.
+
+::: pf-proof
+For any $x$: $x\in A\cap(B\cup C)$ means $x\in A$ and ($x\in B$ or $x\in C$), which distributes to ($x\in A$ and $x\in B$) or ($x\in A$ and $x\in C$), that is $x\in(A\cap B)\cup(A\cap C)$. Membership in a union is "or" and in an intersection "and", so the two sets have the same elements.
+:::
+:::
+
+::: {.pf-step #distributive-two}
+$A\cup(B\cap C)=(A\cup B)\cap(A\cup C)$.
+
+::: pf-proof
+For any $x$: $x\in A\cup(B\cap C)$ means $x\in A$ or ($x\in B$ and $x\in C$), which distributes to ($x\in A$ or $x\in B$) and ($x\in A$ or $x\in C$), that is $x\in(A\cup B)\cap(A\cup C)$.
+:::
+:::
+
+::: {.pf-step #demorgan-one}
+$A-(B\cup C)=(A-B)\cap(A-C)$.
+
+::: pf-proof
+For any $x$: $x\in A-(B\cup C)$ means $x\in A$ and not ($x\in B$ or $x\in C$); by DeMorgan's law for propositions this is $x\in A$ and $x\notin B$ and $x\notin C$, equivalently ($x\in A$ and $x\notin B$) and ($x\in A$ and $x\notin C$), which is $x\in(A-B)\cap(A-C)$.
+:::
+:::
+
+::: {.pf-step #demorgan-two}
+$A-(B\cap C)=(A-B)\cup(A-C)$.
+
+::: pf-proof
+For any $x$: $x\in A-(B\cap C)$ means $x\in A$ and not ($x\in B$ and $x\in C$), equivalently $x\in A$ and ($x\notin B$ or $x\notin C$), which distributes to ($x\in A$ and $x\notin B$) or ($x\in A$ and $x\notin C$), that is $x\in(A-B)\cup(A-C)$.
+:::
+:::
+
+::: {.pf-step}
+The distributive laws for $\cup$ and $\cap$ are steps [](#distributive-one){.pf-ref} and [](#distributive-two){.pf-ref}, and DeMorgan's laws are steps [](#demorgan-one){.pf-ref} and [](#demorgan-two){.pf-ref}.
+
+::: pf-proof
+The four identities proved are the two distributive laws and the two DeMorgan laws for a pair of sets, which is what the exercise asks to check.
+:::
+:::
+
+:::
 :::

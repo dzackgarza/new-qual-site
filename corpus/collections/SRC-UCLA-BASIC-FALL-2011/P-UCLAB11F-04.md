@@ -6,7 +6,9 @@ title: Limits obtainable by rearranging two alternating series
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Series of Numbers
+  - Convergence Tests
 relations: []
 review: draft
 audit:

@@ -25,7 +25,7 @@ Show that
 $$
 \Tr(\inverseof{A}) =\conjugate{\Tr(A) }
 ,$$
-where $\conjugate{(\wait)}$ denotes taking the complex conjugate and $\Tr(\wait)$ is the trace.
+where $\conjugate{(\cdot)}$ denotes taking the complex conjugate and $\Tr(\cdot)$ is the trace.
 :::
 
 ::: {.solution}

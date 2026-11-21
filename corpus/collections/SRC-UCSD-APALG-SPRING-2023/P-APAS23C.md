@@ -11,6 +11,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Part A, Question 3 of the Spring 2023 Applied Algebra Qualifying Exam, printed
+    p. 2 of the Part A paper retained at assets/attachments/Applied_Algebra_Part_A_SP23.pdf, is the
+    statement the card answers, and the head of the solution names it. Checked: the statement against
+    the paper's text layer at the page named; consistency of subordinate norms, the duality identity for
+    $\norm{xy^H}$, $\norm{Ax}_2\le\norm{A}_F\norm{x}_2$, and the Frobenius case; `qualc.authoring check`
+    on the card, and `tmp/lam.sh` for the numbering and the QED. Not checked: no retained solution set
+    exists for this paper to compare the argument with, and no other card of the collection in this
+    pass.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
@@ -31,6 +43,9 @@ Prove that $\norm{xy^H} = \norm{x} \norm{y}_D$ for all $x, y \in \CC^n$, where $
 :::
 
 ::: {.solution}
+
+The problem is Part A, Question 3 of the Spring 2023 Applied Algebra Qualifying Exam, printed p. 2 of the Part A paper retained at `assets/attachments/Applied_Algebra_Part_A_SP23.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own.
+
 **Goal.** Prove the four facts about subordinate and Frobenius matrix norms.
 
 ::: pf

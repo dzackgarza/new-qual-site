@@ -34,7 +34,14 @@ audit:
     rational-root argument and it is correct: a/b in lowest terms satisfying a
     monic equation gives b | a^n, and a prime divisor of b would then divide a. No
     defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 6, "Further properties of
+    ufd's" Exercise 1. Write $x=a/b$ with no common irreducible factor; clearing
+    denominators in a monic equation gives $b\mid a^n$, and a prime divisor of $b$ would
+    divide $a$, so $b$ is a unit and $x\in R$. No defect.
 ---
 
 ::: {.exercise}

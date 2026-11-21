@@ -17,6 +17,6 @@ review: draft
 Let $G$ be a group and $h\in G$.
 The \dfn{conjugacy class} of $h$ is
 $$
-C(h) \coloneqq \theset{ ghg^{-1} \st g\in G }.
+\Cl_G(h) \coloneqq \theset{ ghg^{-1} \st g\in G }.
 $$
 :::

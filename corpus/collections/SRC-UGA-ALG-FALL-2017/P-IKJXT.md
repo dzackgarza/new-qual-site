@@ -13,6 +13,16 @@ classification:
   - Permutations
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained examination `assets/attachments/Algebra_Fall_2017.docx`, converted with Pandoc: the item is the item beginning "Let f(x) be an irreducible polynomial of degree 4 in Q[x]", and its
+    printed words are the card's. The document numbers its problems automatically and those
+    numbers do not survive the conversion where a list restarts, so the opening words are the
+    locator there. The file and the locator are now named in the solution's opening sentence.
+    Not checked: the argument, which the edit does not touch.
 ---
 ::: {.problem}
 (a) Let $f(x)$ be an irreducible polynomial of degree 4 in $\QQ[x]$ whose splitting field $K$ over $\QQ$ has Galois group $G = \operatorname{Gal}(K/\QQ) \cong S_4$. Let $\theta$ be a root of $f(x)$. Prove that $\QQ(\theta)$ is an extension of $\QQ$ of degree 4 and that there are no intermediate fields strictly between $\QQ$ and $\QQ(\theta)$.
@@ -21,6 +31,7 @@ review: draft
 :::
 
 ::: {.solution}
+This is the item beginning "Let f(x) be an irreducible polynomial of degree 4 in Q[x]" of the Fall 2017 algebra examination, retained in this repository as `assets/attachments/Algebra_Fall_2017.docx`; the exam restarts its numbering, so the opening words locate it.
 
 ::: pf
 

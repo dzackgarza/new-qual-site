@@ -21,6 +21,8 @@ audit:
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the workshop problem sheets alone, so the argument is the card's own.
 Suppose for contradiction that a continuous $f:\RR\to\RR$ takes every real value exactly twice. Choose $a<b$ with $f(a)=f(b)=c$.
 
 ::: pf

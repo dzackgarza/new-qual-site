@@ -31,6 +31,7 @@ Show that $f(Z)$ is closed in $Y$, and that $f(Z)$ with its image subscheme stru
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.4.4, printed p. 35 of the held scan, transcribed and checked against the exercise as printed at printed p. 106: the graph morphism $\Gamma_f$ as a closed immersion because $Y$ is separated, the projection from the graph, and properness of $f(Z)\to S$ through the base change and composition of proper morphisms.
 Let
 $$
 h=f\restrict_Z:Z\longrightarrow Y.

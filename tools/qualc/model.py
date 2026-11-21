@@ -303,11 +303,15 @@ SourceSpec = Annotated[
 # Who did what to a problem, and when. Keep source comparison distinct from a
 # source-facing correction: checking can confirm an unchanged transcription,
 # while correcting records that the authored statement itself had to change.
+# `solution-corrected` records that the mathematics of the card's solution changed: it
+# is the machine-readable marker issue #111's second acceptance criterion needs, and the
+# commit gate refuses it on a card no certificate row covers for the whole statement.
 AuditEventKind = Literal[
     "solution-written",
     "source-checked",
     "source-corrected",
     "solution-reviewed",
+    "solution-corrected",
 ]
 
 
@@ -1017,6 +1021,12 @@ def split_front_matter(text: str, path: Path) -> tuple[dict, str]:
     body = match["body"]
     if not isinstance(meta, dict):
         raise TypeError(f"{path}: front matter must be a mapping")
+    first_body_line = next((line for line in body.splitlines() if line.strip()), "")
+    if first_body_line.strip() == "---":
+        raise ValueError(
+            f"{path}: doubled front-matter terminator: the second --- line heads the body "
+            "and renders as a horizontal rule above the card"
+        )
     return meta, body
 
 

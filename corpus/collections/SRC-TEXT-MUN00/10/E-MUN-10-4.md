@@ -29,6 +29,11 @@ audit:
     too. (b) is his reduction of an ill-ordered A to a countable subset of type Z_-, which
     the hypothesis forbids. The recursion in (a) is written out as an application of the
     principle of recursive definition rather than left implicit.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Lamport structure for the two parts, which is what Queue D asks for on this card. Part (a) is split into the recursion that produces the strictly decreasing sequence (with the choice function and the recursive-definition principle made explicit) and the identification of its image as a subset of order type Z_-, plus the converse; part (b) is the countable-subset argument, which now says why order type transfers well-ordering. Statement re-read against Munkres, Topology (2000), §10 Exercise 4, printed p. 67, and the argument against Dan Whitman's set, Exercise 10.4, printed pp. 109-110. No statement repair.
 ---
 
 ::: {.exercise}
@@ -40,19 +45,60 @@ Show that a simply ordered set $A$ fails to be well-ordered if and only if it co
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 10.4, printed pp. 109--110** (`tmp/sources/munkres-solutions-whitman.pdf`); both parts are his, with the recursion used in (a) spelled out as an application of the principle of recursive definition.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 10.4, printed pp. 109--110** (`tmp/sources/munkres-solutions-whitman.pdf`); both parts are his, with the recursion used in (a) spelled out as an application of the principle of recursive definition. The statement is Munkres, *Topology*, 2nd ed. (2000), §10 Exercise 4, printed p. 67.
 
-(a) Let $A$ be a simply ordered set.
+::: pf
 
-*If $A$ is not well ordered.* Then some nonempty $B\subset A$ has no smallest element. For $b\in B$ put $X_b=\{x\in B\mid x<b\}$; the set $X_b$ is nonempty, since otherwise $b$ would be the smallest element of $B$. By the axiom of choice there is a choice function $c$ on the collection $\{X_b\mid b\in B\}$ of nonempty subsets of $B$, and we may apply the principle of recursive definition to the formula
+::: {.pf-step #part-a}
+(a) A simply ordered set $A$ fails to be well ordered if and only if it has a subset of the same order type as $\ZZ_-$.
+
+::: pf-proof
+
+::: {.pf-step #descending}
+If $A$ is not well ordered, there is $f:\ZZ_+\to A$ with $f(n)<f(m)$ whenever $m<n$.
+
+::: pf-proof
+Some nonempty $B\subset A$ has no smallest element. For $b\in B$ the set $X_b=\{x\in B\mid x<b\}$ is nonempty, since otherwise $b$ would be the smallest element of $B$. By the axiom of choice there is a choice function $c$ on the family $\{X_b\}_{b\in B}$ of nonempty subsets of $B$. Fix $b_0\in B$ and put
 $$
-f(1)=b_0,\qquad f(n)=c\big(X_{f(n-1)}\big)\ \ (n>1),
+\rho(g)=b_0\ \ (m=1),\qquad \rho(g)=c\big(X_{g(m)}\big)\ \ (m>1),
+\qquad g:\{1,\dots,m\}\to B ,
 $$
-where $b_0\in B$ is fixed; the formula is defined on every function from a nonempty section of $\ZZ_{+}$ into $B$, since $X_{b}\ne\varnothing$ for every $b\in B$. This gives $f:\ZZ_{+}\to B$ with $f(n)\in X_{f(n-1)}$, that is $f(n)<f(n-1)$ for every $n>1$. Hence $f$ is strictly decreasing, and by induction $f(n)<f(m)$ whenever $m<n$; in particular $f$ is injective.
+which is defined for every function on a nonempty section and takes values in $B$, because $X_b\subseteq B$. The principle of recursive definition (Theorem 8.4) gives $f:\ZZ_+\to B$ with $f(1)=b_0$ and $f(n)=c(X_{f(n-1)})\in X_{f(n-1)}$ for $n>1$, that is $f(n)<f(n-1)$. By induction on $n-m$, $f(n)<f(m)$ for all $m<n$: the case $n=m+1$ is the inequality just proved, and $f(n)<f(n-1)<f(m)$ otherwise by transitivity.
+:::
 
-Define $h:\ZZ_{-}\to B$ by $h(-n)=f(n)$. If $-n<-m$ then $n>m$, so $h(-n)=f(n)<f(m)=h(-m)$: the map $h$ is an order-preserving injection, and its image $C=h(\ZZ_{-})$ is a subset of $B$, hence of $A$, having the same order type as $\ZZ_{-}$.
+:::
 
-*If $A$ contains a subset $C$ of the same order type as $\ZZ_{-}$.* Then $C\ne\varnothing$, and $C$ has no smallest element: an order isomorphism $C\to\ZZ_{-}$ would carry a smallest element of $C$ to a smallest element of $\ZZ_{-}$, which does not exist. So $A$ has a nonempty subset with no smallest element and is not well ordered.
+::: {.pf-step #order-type}
+The image of $h(-n)=f(n)$ is a subset of $A$ of the order type of $\ZZ_-$.
 
-(b) Let $A$ be simply ordered and suppose that every countable subset of $A$ is well ordered. Let $B\subset A$ be nonempty. If $B$ were not well ordered, part (a) would give a subset $C\subset B$ of the same order type as $\ZZ_{-}$. Then $C\subset A$ and $C$ is countable, being in bijection with the countable set $\ZZ_{-}$, so by hypothesis $C$ is well ordered; but $C$ has the order type of $\ZZ_{-}$, which is not well ordered, and this is impossible. Hence every nonempty subset $B$ of $A$ has a smallest element, that is, $A$ is well ordered.
+::: pf-proof
+The map $h:\ZZ_-\to A$, $h(-n)=f(n)$, is injective because $f$ is strictly decreasing: if $h(-n)=h(-m)$ with $n\ne m$, say $m<n$, then $f(n)<f(m)$, a contradiction. It preserves order: $-n<-m$ means $n>m$, and then $h(-n)=f(n)<f(m)=h(-m)$. So $h$ is an order-preserving bijection of $\ZZ_-$ with its image $C=h(\ZZ_-)\subset A$, which is the definition of $C$ having the order type of $\ZZ_-$.
+:::
+
+:::
+
+The steps [](#descending){.pf-ref} and [](#order-type){.pf-ref} give the forward implication.
+:::
+
+:::
+
+::: {.pf-step #converse}
+If $A$ has a subset $C$ of the order type of $\ZZ_-$, then $A$ is not well ordered.
+
+::: pf-proof
+$C$ is nonempty and has no smallest element: an order isomorphism of $C$ with $\ZZ_-$ would carry a smallest element of $C$ to a smallest element of $\ZZ_-$, and $\ZZ_-$ has none, since $-n-1<-n$ for every $n$. So $A$ has a nonempty subset without a smallest element and therefore fails to be well ordered. With the forward implication this is part (a).
+:::
+
+:::
+
+::: {.pf-step #part-b}
+(b) If $A$ is simply ordered and every countable subset of $A$ is well ordered, then $A$ is well ordered.
+
+::: pf-proof
+Suppose $A$ is not well ordered. By part [](#part-a){.pf-ref} it has a subset $C$ of the order type of $\ZZ_-$. Then $C$ is countable, being in bijection with the countable set $\ZZ_-$, and it is a subset of $A$, so by hypothesis it is well ordered. But $C$ has the order type of $\ZZ_-$, which is not well ordered by step [](#converse){.pf-ref}; a set and a set of the same order type are well ordered or not together, since an order isomorphism carries subsets without smallest elements to subsets without smallest elements. This contradiction shows that $A$ is well ordered, which is part (b).
+:::
+
+:::
+
+:::
 :::

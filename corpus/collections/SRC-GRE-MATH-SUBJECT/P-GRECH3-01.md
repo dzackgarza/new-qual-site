@@ -16,6 +16,14 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: "Checked against Chapter 3 review Question 1 in both assets/attachments/extracted/chapter-3.md and the Mistral OCR extraction of the whole book, assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md, with the book's Chapter 8 solution where they disagree."
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`: the statement is question 1 of the Chapter 3
+    Review Questions, printed on PDF p. 170, and its printed words are the card's. The chapter,
+    the question number and the page are now named in the solution's opening sentence. Not checked
+    in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -31,6 +39,7 @@ Find the angle between the diagonals of the back and left faces of the cube show
 :::
 
 ::: {.solution}
+This is question 1 of the Chapter 3 Review Questions of *Cracking the GRE Mathematics Subject Test*, retained in this repository as `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`, on PDF p. 170; the statement below is its wording.
 
 ::: pf
 

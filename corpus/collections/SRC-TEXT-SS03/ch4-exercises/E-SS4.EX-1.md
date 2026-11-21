@@ -15,6 +15,22 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, at its printed folio (the scan runs nineteen pages ahead of
+    the printed page): the statement is Exercise 1 at the head of the Chapter 4 Exercises,
+    printed p. 127, and its printed words are the card's. The chapter, the exercise number and
+    the page are now named in the solution's opening sentence. Not checked in this pass: the
+    argument, which the edit does not touch.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The solution's opening sentence carried the printed page. It now cites the numbered statement
+    alone, Chapter 4, Exercise 1, and the page is gone from the rendered text. Statement unchanged;
+    the argument was not re-read in this pass.
 ---
 
 ::: {.exercise}
@@ -36,6 +52,7 @@ for all $t$, and conclude that $f = 0$.
 :::
 
 ::: {.solution}
+This is Exercise 1 of Chapter 4 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf` [@SS03, ch. 4, Exercise 1]; the statement below is its wording.
 **Goal.** Show $\hat f = 0$ forces $f = 0$ for continuous $f$ of moderate decrease.
 
 ::: pf

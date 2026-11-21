@@ -11,6 +11,20 @@ classification:
   - Surfaces
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The computation is correct. In the cellular chain complex the two new
+    two-cells contribute the columns (1,4) and (4,1) and the torus two-cell
+    contributes zero; the 2 by 2 matrix has determinant -15 and coprime entries,
+    so its Smith normal form is diag(1,15), its cokernel is Z/15 and it is
+    injective, which makes the kernel of the second boundary the single Z spanned
+    by the torus cell. Hence Z, Z/15 and Z in degrees 0, 1, 2 and nothing higher,
+    and the Euler characteristic agrees: 1 - 2 + 3 cells gives 2, while the
+    homology gives 1 - 0 + 1. Nothing was changed. The statement was not re-read
+    against a scan in this pass.
 ---
 
 ::: {.problem}

@@ -6,7 +6,9 @@ title: Linear independence of exponentials with distinct exponents
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Independence
+  - Exponential and Logarithmic Functions
 relations: []
 review: draft
 audit:

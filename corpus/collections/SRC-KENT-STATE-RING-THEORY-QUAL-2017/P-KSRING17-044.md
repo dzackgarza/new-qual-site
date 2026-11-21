@@ -24,6 +24,8 @@ Let R be a non-zero commutative ring with 1. Show that if I is an ideal of R suc
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination paper alone, so the argument is the card's own.
+
 Let
 $$
 M

@@ -6,7 +6,9 @@ title: Abelian groups of order 16 with exponent dividing 4
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Abelian Groups
+  - Structure Theorem
 relations: []
 review: draft
 audit:

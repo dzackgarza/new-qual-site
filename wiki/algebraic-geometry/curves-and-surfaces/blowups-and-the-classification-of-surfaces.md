@@ -26,7 +26,7 @@ A quantity unchanged by one blowup at a point is therefore a birational invarian
 
 [[FE-SRFCUBIC]]
 
-The $27$ lines contain exactly $72$ sets of six pairwise disjoint lines, so a smooth cubic surface is a blowup of $\PP^2$ in $72$ ways.
+A smooth cubic surface contains exactly $27$ lines, each of self-intersection $-1$, and they are its only irreducible curves of negative self-intersection [@Har77, Theorem V.4.9].
 
 [[T-SRFKOD]]
 

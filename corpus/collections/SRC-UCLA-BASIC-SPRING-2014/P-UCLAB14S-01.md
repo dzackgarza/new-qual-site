@@ -6,7 +6,9 @@ title: Minimal polynomial $t^4+1$ and invariant subspaces
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Minimal and Characteristic Polynomials
+  - Invariant Subspaces
 relations: []
 review: draft
 audit:

@@ -41,6 +41,11 @@ audit:
     that the cells of X are partitioned into those of A only, of B only, and of A cap B.
     What is not covered: the added remark on the open-cover Mayer-Vietoris version is a
     variation and is not part of the exercise; it is left as stated.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured the prose solution into Lamport steps and checked the statement against Hatcher, *Algebraic Topology* (2002), §2.2 Exercise 21, printed p. 157. The collection's provenance is the book, and no retained solution set covers the exercise; the argument is the card's own. Checked: that $A\cap B$ is a subcomplex, that the cells of $X$ split into the three classes, and that $\chi$ is the alternating sum of cell counts for a finite CW complex.
 ---
 
 ::: {.problem}
@@ -48,38 +53,33 @@ If a finite CW complex $X$ is the union of subcomplexes $A$ and $B$, show that $
 :::
 
 ::: {.solution}
-Because $A$ and $B$ are subcomplexes of $X$, every open cell of $X=A\cup B$ lies in $A$ or in $B$, and it lies in both exactly when it is a cell of $A\cap B$. Here a subcomplex is a closed union of cells (p. 7), $A\cap B$ is again one, and the cells of a cell complex are disjoint (p. 5), so the cells of $X$ are partitioned into those of $A$ only, of $B$ only, and of $A\cap B$.
+No retained solution set covers this exercise; the argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §2.2 Exercise 21. The proof is inclusion--exclusion on the sets of $i$-cells, which is legitimate because the cells of a CW complex are disjoint and each lies in $A$ or in $B$.
 
-Let $c_i(Z)$ denote the number of $i$-cells of a finite CW complex $Z$. For each $i$, ordinary inclusion--exclusion for the finite sets of $i$-cells gives
-$$
-c_i(X)=c_i(A)+c_i(B)-c_i(A\cap B).
-$$
-Taking alternating sums, using the definition of $\chi$ for a finite CW complex as the alternating sum of the numbers of its cells (p. 146),
-$$
-\begin{aligned}
-\chi(X)
-&=\sum_i(-1)^i c_i(X)\\
-&=\sum_i(-1)^i c_i(A)
- +\sum_i(-1)^i c_i(B)
- -\sum_i(-1)^i c_i(A\cap B)\\
-&=\boxed{\chi(A)+\chi(B)-\chi(A\cap B)}.
-\end{aligned}
-$$
-The sums are finite because the three complexes have finitely many cells.
+::: pf
+
+::: {.pf-step #cells}
+For every $i$ the $i$-cells of $X$ are partitioned into those of $A$ only, those of $B$ only, and those of $A\cap B$.
+
+::: pf-proof
+$X=A\cup B$, so each cell of $X$ lies in $A$ or in $B$. A subcomplex is a closed union of cells, so the cells of $A$ and of $B$ are cells of $X$, and a cell lying in both $A$ and $B$ lies in $A\cap B$, which is again a subcomplex; conversely each cell of $A\cap B$ is a cell of $X$. Distinct cells are disjoint, so the three classes are disjoint and cover the $i$-cells.
+:::
 :::
 
-::: {.remark title="Variation"}
-If $Z=U\cup V$ with $U,V$ open, the same formula
-holds when the rational homology of
-$Z,U,V,U\cap V$ has finite rank and vanishes
-outside a bounded range. The Mayer--Vietoris
-sequence is then a bounded long exact sequence
-of finite-dimensional $\QQ$-vector spaces.
-Its alternating sum of dimensions is zero,
-which rearranges to
-$$
-\chi(Z)=\chi(U)+\chi(V)-\chi(U\cap V).
-$$The inclusion--exclusion count agrees with Sam's §2.2 Exercise 21, printed p. 12. The cells in the union are those counted only by $c_i(A)$, only by $c_i(B)$, or those of $A\cap B$, since subcomplexes are closed unions of cells which are pairwise disjoint (Hatcher pp. 5, 7).
+::: {.pf-step #count}
+$c_i(X)=c_i(A)+c_i(B)-c_i(A\cap B)$ for every $i$, where $c_i(Z)$ is the number of $i$-cells of $Z$.
 
+::: pf-proof
+The three sets of step [](#cells){.pf-ref} partition the $i$-cells of $X$, and a cell counted in both $c_i(A)$ and $c_i(B)$ is exactly a cell of $A\cap B$; this is ordinary inclusion--exclusion for finite sets.
+:::
+:::
 
+::: {.pf-step #sum}
+$\chi(X)=\chi(A)+\chi(B)-\chi(A\cap B)$.
+
+::: pf-proof
+For a finite CW complex the Euler characteristic is the alternating sum of the numbers of cells, so $\chi(X)=\sum_i(-1)^ic_i(X)$. Substituting step [](#count){.pf-ref} and splitting the finite sum gives $\sum_i(-1)^ic_i(A)+\sum_i(-1)^ic_i(B)-\sum_i(-1)^ic_i(A\cap B)$, that is $\chi(A)+\chi(B)-\chi(A\cap B)$.
+:::
+:::
+
+:::
 :::

@@ -29,7 +29,7 @@ The same definition applies to a sequence indexed by $\ZZ$ or by an infinite int
 $$
 \cdots\to A_{n+1}\mapsvia{d_{n+1}}A_n\mapsvia{d_n}A_{n-1}\to\cdots:
 $$
-it is exact at $A_n$ if $\im d_{n+1}=\ker d_n$, and exact if it is exact at every term that has both an incoming and an outgoing map [@Hat02].
+it is exact at $A_n$ if $\im d_{n+1}=\ker d_n$, and exact if it is exact at every term that has both an incoming and an outgoing map [@Hat02, §2.1].
 :::
 
 ::: {.remark}
@@ -37,7 +37,7 @@ The sequence is a chain complex when $\im d_{n+1}\subseteq\ker d_n$ for all $n$.
 A chain complex is exact at $A_n$ if and only if its homology $\ker d_n/\im d_{n+1}$ at $A_n$ is zero.
 :::
 
-::: {.example}
+::: {.remark title="What short exactness unpacks to"}
 A sequence of $R$-module maps
 $$
 0 \mapsvia{d_1} A \mapsvia{d_2} B \mapsvia{d_3} C \mapsvia{d_4} 0

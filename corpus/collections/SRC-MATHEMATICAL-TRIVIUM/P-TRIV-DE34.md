@@ -15,6 +15,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Differential Equations, Problem 34, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked by direct computation: pairing delta''(x-2) with
+    the test function f(x) = 1/(1+x^2) gives f''(2) by the two integrations by parts that the delta
+    derivative performs, and f''(x) = 2(3x^2-1)/(x^2+1)^3, so f''(2) = 2*11/125 = 22/125. That is
+    the card's answer, and I confirmed the derivative and the value with a computer algebra system.
+    The smoothness and decay hypotheses the pairing needs hold for this test function. Not claimed:
+    any interpretation of delta'' beyond pairing with a smooth compactly supported function.
 ---
 
 ::: {.problem}

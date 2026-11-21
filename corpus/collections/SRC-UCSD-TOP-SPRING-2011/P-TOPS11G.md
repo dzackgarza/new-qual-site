@@ -23,6 +23,19 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the two containers state why their subclaims suffice, and the 5
+    leaf steps that asserted their claim with no justification each carry a sentence deriving it. The
+    computation was re-checked: the suspension shifts $\tilde H_1=\ZZ_p$ and $\tilde H_3=\ZZ$ of $L(p)$ to
+    degrees $2$ and $4$, coprimality of $p$ and $q$ kills both the tensor and the Tor term of the two
+    torsion groups, Künneth gives $\ZZ$ in degrees $0,8$, $\ZZ^2$ in degree $4$ and $\ZZ_{pq}$ in degrees
+    $2,6$, and universal coefficients moves each $\ZZ_{pq}$ from degree $2$ and $6$ up to $3$ and $7$
+    while leaving the free parts in place. Checked against the statement on the card, from the UCSD Spring
+    2011 topology qualifying exam. Nothing in the statement was changed.
+
 ---
 
 ::: {.problem}
@@ -48,6 +61,11 @@ H_i(A;\ZZ)\cong
 $$
 and the analogous formula for $B$ with $p$ replaced by $q$.
 
+
+::: pf-proof
+Suspension shifts reduced homology up one degree, and $L(p)$ has $\tilde H_1=\ZZ_p$ and $\tilde H_3=\ZZ$ with all other reduced groups zero.
+:::
+
 :::
 
 ::: pf-step
@@ -64,6 +82,11 @@ $$
 $$
 and both vanish because $\gcd(p,q)=1$.
 
+
+::: pf-proof
+Since $p$ and $q$ are coprime, multiplication by $p$ is an automorphism of $\ZZ_q$, so $\ZZ_p\otimes\ZZ_q=0$ and $\operatorname{Tor}_1(\ZZ_p,\ZZ_q)=0$.
+:::
+
 :::
 
 ::: pf-step
@@ -78,6 +101,11 @@ H_i(A\times B;\ZZ)\cong
 \end{cases}
 $$
 Since $p$ and $q$ are coprime, $\ZZ_p\oplus\ZZ_q\cong\ZZ_{pq}$.
+
+
+::: pf-proof
+Collecting the Künneth terms: the free classes contribute $\ZZ$ in degrees $0$ and $8$ and $\ZZ^2$ in degree $4$, the torsion classes contribute $\ZZ_p\oplus\ZZ_q$ in degrees $2$ and $6$, and every Tor term vanishes by the preceding subclaim.
+:::
 
 :::
 
@@ -101,6 +129,11 @@ $$
 ::: pf-step
 The free summands in homology contribute to cohomology in the same degree, while each $\ZZ_{pq}$ in degrees $2$ and $6$ contributes an $\operatorname{Ext}$ term $\ZZ_{pq}$ in degrees $3$ and $7$.
 
+
+::: pf-proof
+Universal coefficients: $H^k=\operatorname{Hom}(H_k,\ZZ)\oplus\operatorname{Ext}(H_{k-1},\ZZ)$, where $\operatorname{Hom}$ of a free group is itself and of a torsion group is $0$, while $\operatorname{Ext}(\ZZ,-)=0$ and $\operatorname{Ext}(\ZZ_{pq},\ZZ)=\ZZ_{pq}$.
+:::
+
 :::
 
 ::: pf-step
@@ -114,6 +147,11 @@ H^k(\Sigma L(p)\times\Sigma L(q);\ZZ)\cong
 0,&\text{otherwise}.
 \end{cases}
 $$
+
+
+::: pf-proof
+Substituting the homology computed above into the universal coefficient formula degree by degree.
+:::
 
 :::
 

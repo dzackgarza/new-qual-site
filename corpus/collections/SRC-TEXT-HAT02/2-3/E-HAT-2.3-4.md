@@ -46,6 +46,25 @@ audit:
     map so that map is onto and the connecting homomorphism vanishes; the sequence splits by the
     two retractions. The step now names both reasons instead of only the first, and the exactness
     axiom is cited to p. 160. What is not covered: no certificate.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 4 of §2.3, printed p. 165, and axioms (1) and (2) of printed
+    p. 160; the solution is DeMason's, Hatcher 2.3.4, printed pp. 83--84 of
+    `tmp/sources/demason-m382c-hatcher-20210404.pdf`. Checked in the binary case: the pair
+    $(X\vee Y,X)$ has $(X\vee Y)/X\cong Y$, so the reduced sequence runs
+    $\widetilde h_n(X)\to\widetilde h_n(X\vee Y)\to\widetilde h_n(Y)\to\widetilde h_{n-1}(X)$; the
+    retraction onto $X$ makes the first map split injective, the retraction onto $Y$ is a left
+    inverse of the inclusion $Y\subset X\vee Y$ and so makes the third map surjective, and
+    exactness in the middle is the exactness axiom itself, so the two retractions cut the sequence
+    into short exact sequences. The splitting lemma then gives the direct sum, and the induction is
+    DeMason's, run on $(X_1\vee\cdots\vee X_n,X_{n+1})$ with the same two retractions. The card's
+    sentence that the connecting map out of $\widetilde h_n(Y)$ is zero records the same fact as
+    the surjectivity of $j_*$ once exactness at $\widetilde h_n(Y)$ is granted. The sentence and
+    citation that closed the card were merged into the head of the solution, where the printed
+    pages now stand. Not claimed: a certificate, and the infinite wedge, which is exactly where
+    the axiom fails (Exercise 2 of the same page, and Hatcher's remark on printed p. 161).
 ---
 
 ::: {.problem}
@@ -53,7 +72,9 @@ Show that the wedge axiom for homology theories follows from the other axioms in
 :::
 
 ::: {.solution}
-It suffices to prove the binary case and then induct. This is the deduction Hatcher points out on p. 160, where the third axiom is said to follow from the first two for finite wedge sums.
+It suffices to prove the binary case and then induct. This is the deduction Hatcher points out in §2.3, where the third axiom is said to follow from the first two for finite wedge sums, and not in general for infinite ones.
+
+The binary case and the induction are transcribed from **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.3.4. The exercise is Exercise 4 of §2.3; the axioms used are (1) and (2) of §2.3.
 
 Let $X\vee Y$ be the wedge at the common basepoint $*$. Regard $X$ as a subcomplex of $X\vee Y$. Then
 $$
@@ -73,7 +94,7 @@ $$
 
 ::: pf-proof
 
-The exactness axiom, axiom (2) of p. 160, uses the quotient $(X\vee Y)/X\cong Y$ directly.
+The exactness axiom, axiom (2) of §2.3, uses the quotient $(X\vee Y)/X\cong Y$ directly.
 The retraction $r:X\vee Y\to X$ collapsing $Y$ to the wedge point satisfies $r\circ i=\mathrm{id}_X$. Hence $i_*:\widetilde h_n(X)\to\widetilde h_n(X\vee Y)$ is split injective. Also the inclusion $Y\subset X\vee Y$ is a section of the quotient-induced map $j_*$, so $j_*$ is surjective and the connecting map out of $\widetilde h_n(Y)$ is zero. These two facts cut the long exact sequence into the displayed short exact sequences.
 
 :::
@@ -98,7 +119,7 @@ The retraction $X\vee Y\to Y$ collapsing $X$ supplies a section of the quotient-
 
 :::
 
-Iterating the binary isomorphism gives the wedge axiom for every finite wedge.The retraction splitting and induction are in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.3.4, printed pp. 83--84. The collapsing map is a retraction of the wedge onto a summand, which splits the pair sequence, and the other collapsing retraction supplies an inverse. Thus a binary wedge splits, and induction gives the axiom for every finite wedge.
+Iterating the binary isomorphism gives the wedge axiom for every finite wedge sum.
 
 
 :::

@@ -6,7 +6,8 @@ title: Local divergence identity from flux over all balls
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Divergence Theorem
 relations: []
 review: draft
 audit:

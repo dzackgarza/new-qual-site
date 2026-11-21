@@ -23,13 +23,8 @@ order: 20
 
 ## Notes
 
-[Kari Eifler, *Algebra Qual: Math 653/654 -- Definitions, Theorems and Propositions*](attachments/Algebra_Notes.pdf)
+- [[SRC-AMHERST-ALGEBRA-STUDY-GUIDE-2016|Amherst algebra qualifying-exam study guide]]
 
-[[attachments/Study_Guide_for_Algebra.pdf|Amherst algebra qualifying-exam study guide]]
+- [[SRC-ALGEBRA-TEST-REVIEW-1|Abstract algebra test review: direct products and quotient groups]]
 
-[[attachments/Review1.pdf|Abstract algebra test review: direct products and quotient groups]]
-
-[[attachments/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf|Tevelev, Graduate Algebra: Numbers, Equations, Symmetries]] -- graduate algebra notes covering field extensions and Galois theory, radicals and cyclotomic fields, quadratic extensions and reciprocity, affine algebraic geometry and the Nullstellensatz, localization and Nakayama's lemma, and representations and characters of finite groups.
-The notes include exercise sections and sample midterms.
-
-[MIT algebra qual preparation page](https://www.mit.edu/~fengt/AlgebraPrep.html)
+- [MIT algebra qual preparation page](https://www.mit.edu/~fengt/AlgebraPrep.html) -- a problem bank organised by subject.

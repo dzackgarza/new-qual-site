@@ -5,7 +5,9 @@ kind: problem
 title: Gregory's series for $\pi$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Power Series
+  - Integration
 relations: []
 review: draft
 audit:

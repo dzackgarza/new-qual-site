@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP13-I3
 kind: problem
 title: Connected, path-connected, and quasi-components of unions of concentric circles
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Connectedness, Path Connectedness]}
 relations: []
 review: draft
 audit:

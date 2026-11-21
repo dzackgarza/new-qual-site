@@ -23,6 +23,8 @@ Evaluate the following by the method of residues: $\int_0^{\pi /2} \frac{1}{3+\s
 :::
 
 ::: {.solution}
+
+The argument is the card's own: it writes $\sin^2x$ in terms of $\cos 2x$, turns the integral into one over the unit circle and takes the residue at the single pole inside it, with no source transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
 Let $I\coloneqq\int_0^{\pi/2}\frac{dx}{3+\sin^2x}$, and let $C$ be the unit circle, oriented counterclockwise.
 
 ::: pf
@@ -63,7 +65,7 @@ $\displaystyle\oint_C\frac{dz}{z^2-14z+1}=-\frac{\pi i}{4\sqrt3}$.
 ::: pf-proof
 
 The roots of $z^2-14z+1$ are $z_\pm=7\pm4\sqrt3$, and $z_+z_-=1$ with $z_+>1$, so only $z_-$ lies inside $C$.
-It is a simple pole with residue $\frac{1}{z_--z_+}=-\frac{1}{8\sqrt3}$, and the residue theorem gives $2\pi i\cdot\qty(-\frac1{8\sqrt3})$.
+It is a simple pole with residue $\frac{1}{z_--z_+}=-\frac{1}{8\sqrt3}$, and the [[T-HRPNO|residue theorem]] gives $2\pi i\cdot\qty(-\frac1{8\sqrt3})$.
 
 :::
 

@@ -6,7 +6,9 @@ title: A matrix commuting with simple spectrum is diagonalizable
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Diagonalization
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

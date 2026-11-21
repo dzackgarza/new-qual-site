@@ -271,14 +271,13 @@ existence criterion, and step [](#nonsingular-irreducible-member){.pf-ref} suppl
 :::
 
 ::: {.remark title="Published solutions"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.14, printed p. 294, read in
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.14, read in
 `tmp/sources/hartshorne-solutions-egbert.pdf` and in its MinerU text version
 `tmp/sources/hartshorne-solutions-egbert.md`, records which pairs remain after (4.7), sets up the $d=8$, $g=6$
 adjunction equation and does not solve it, deferring the other cases to his V.4.9.
 
 **The exercise is closed by a complete published solution**: Algebraic Geometry II, National Taiwan University,
-2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework, Exercise 14 of §4 (by Ping-Hsun Chuang),
-printed p. 18 of `tmp/sources/ntu-ag2-chapter5.pdf`, whose printed folio is the PDF page number, read also in its
+2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework, Exercise 14 of §4 (by Ping-Hsun Chuang), in `tmp/sources/ntu-ag2-chapter5.pdf`, whose printed folio is the PDF page number, read also in its
 MinerU text version `tmp/sources/ntu-ag2-chapter5.md`. It states the very-ampleness criterion of Corollary 4.13
 --- a class $D\sim a\ell-\sum_ib_ie_i$ is very ample if and only if $b_i>0$ for all $i$, $a>b_i+b_j$ for all
 $i,j$ and $2a>\sum_{j\ne i}b_j$ for all $i$ --- and then writes "we only need to find such $a$ and $b_i$": the
@@ -303,8 +302,7 @@ Every row was checked here against the criterion: $\deg D$ and $p_a(D)$ reproduc
 $a>b_i+b_j$ for every pair and $2a>\sum_{j\ne i}b_j$ for every $i$; so each of the nine classes is very ample
 on the cubic surface and contains a nonsingular curve of the requested degree and genus. Its two slips are
 typographical: the third condition is printed with $b_i$ where the summand runs over $j$, and Corollary 4.13 is
-called "the theorem V.4.13". Yang Pi-Yeh, *Hartshorne Solutions*, printed p. 112 of
-`tmp/sources/lfwin-hartshorne-solutions.pdf`, read also in its MinerU text version
+called "the theorem V.4.13". Yang Pi-Yeh, *Hartshorne Solutions*, in `tmp/sources/lfwin-hartshorne-solutions.pdf`, read also in its MinerU text version
 `tmp/sources/lfwin-hartshorne-solutions.md`, gives the same nine pairs as a table of classes, and
 that entry does not close the exercise, since it shows no member of any class to be nonsingular; the
 National Taiwan University argument does, through 4.13(b).

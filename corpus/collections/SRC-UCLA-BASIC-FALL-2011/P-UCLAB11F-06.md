@@ -6,7 +6,9 @@ title: Monotone pointwise convergence to zero is uniform
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Pointwise Convergence
 relations: []
 review: draft
 audit:

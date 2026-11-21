@@ -5,7 +5,9 @@ kind: problem
 title: Uniform convergence and convergence of Riemann integrals
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Riemann Integration
 relations: []
 review: draft
 audit:

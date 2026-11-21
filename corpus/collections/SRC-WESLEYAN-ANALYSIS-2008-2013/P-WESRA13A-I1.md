@@ -5,7 +5,8 @@ kind: problem
 title: 'State Fatou’s lemma'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Fatou
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Definition of an ideal of a ring
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Ideals
 relations: []
 review: draft
 audit:

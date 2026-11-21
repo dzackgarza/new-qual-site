@@ -18,6 +18,34 @@ audit:
   date: 2026-10-31
   note: The exam prints a^2=b^2=1, which contradicts order 8 and the class C_3={b,b^3}; the
     statement keeps a^2=b^2, the quaternion presentation.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained exam assets/attachments/SP04_202_Applied_Algebra_Qual.pdf,
+    PDF p. 2, item (4): the printed relations are "a^4 = 1 and a^2 = b^2 = 1
+    and b^{-1}ab = a^3", together with the conjugacy classes C1 to C5 and the
+    three questions. The extra "= 1" is the exam's slip, as the earlier event
+    records: with a^2 = b^2 = 1 the presentation cannot describe a group of
+    order 8, and the listed classes C3 = {b, b^3} have order 4. The card keeps
+    a^2 = b^2, the quaternion presentation, which is what the classes printed
+    belong to.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The whole table is correct. (a) b^{-1}ab = a^3 gives ab = b a^3, and
+    b^{-1}a^2b = a^6 = a^2 makes a^2 = b^2 central, so b a^3 = b b^2 a = b^3 a;
+    the normal forms b^k and b^k a with k less than 4 follow, and b^4 = 1
+    because b^4 = (a^2)^2 = a^4. (b)(i) H is central hence normal, the quotient
+    has order 4, and aH, bH and baH all square to the identity, so it is not
+    cyclic and is C2 x C2. (ii) the four linear characters are read off the two
+    generators bH and aH, and the rows displayed are exactly the four sign
+    choices on the classes C3, C4, C5. (iii) the two-dimensional representation
+    satisfies a^2 = b^2 = -I, a^4 = I and b^{-1}ab = a^{-1}, and its traces on
+    the five classes are 2, -2, 0, 0, 0; the norm of that character against
+    itself is (4+4)/8 = 1, so it is irreducible, and 1+1+1+1+4 = 8 is the group
+    order, so the five rows are the complete table. Nothing was changed.
 ---
 
 ::: {.problem}

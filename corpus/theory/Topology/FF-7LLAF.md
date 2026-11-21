@@ -25,5 +25,5 @@ H_k(\RP^4;\ZZ) \cong \begin{cases}
 0 & \text{otherwise}
 \end{cases}
 $$
-[@Hat02].
+[@Hat02, Example 2.42].
 :::

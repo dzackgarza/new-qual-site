@@ -10,7 +10,7 @@ classification:
   - Cubic Surfaces
   - Intersection Theory
 relations: []
-review: draft
+review: reviewed
 audit:
 - event: source-checked
   by: chatgpt
@@ -210,6 +210,198 @@ audit:
     displayed with them, and that the printed left and right sides of NTU's
     comparison line are the two computed above. Not verified: nothing beyond
     those two sources, and no third reading of the NTU page as an image.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The three reductions the sources state in one clause each are now proved
+    on the card, so its proof of V.4.10 is complete and stands on its own
+    where the sources stop. Read for this pass: Hartshorne V.4.10, printed
+    p. 408, with (4.13)(a) on printed p. 406; answer 2476483 in
+    tmp/sources/mse-2475661-hart-v410-freshman-calculus.md; and NTU Chapter V
+    §4 Exercise 10, printed p. 17. The reductions, now marked on their steps
+    as the card's own: (i) at a maximiser with b_5+b_6=a and b_4<=a/3, one
+    has b_2=b_3=b_4, since with t=b_1=b_2, u=b_3, v=b_4=b_5 the constraint
+    t+u+v<=a is automatic for t,u<=v<=a/3 and 2t^2+u^2 is increasing in each
+    variable on that range, so t=u=v; (ii) at one with b_5+b_6=a and
+    b_4>=a/3, one has b_2+b_3+b_4=a, since if t+u+v<a then either u<v and
+    increasing u raises 2t^2+u^2, or u=v and t<v, so increasing t does;
+    (iii) in the case b_5+b_6<a, write t=b_1=b_2, x=b_3-t, y=b_4-b_3; then
+    u=t+x, v=t+x+y, w=2a-5t-3x-2y, the constraints w>=v and v+w<=a become
+    6t+4x+3y<=2a and 4t+2x+y>=a, and the sum of squares is a convex
+    quadratic on that polygon, whose vertices (0,a/2,0), (a/3,0,0),
+    (a/4,0,0) and (a/6,0,a/3) give a^2, 2a^2/3, 7a^2/8 and 5a^2/6. Checked:
+    the endpoint quadratics of steps case-small and case-large have maximum
+    1 on their intervals, and the four vertex values above. The
+    transcriptions of the rest of the two arguments are unchanged. Not
+    checked: no source outside these two and the book was read, and the
+    card's other steps were not re-derived in this pass.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #165: the two events of 2026-11-16 that record what was then not
+    supplied are corrected here, in a new event; neither earlier text is
+    rewritten. The event whose note reads "Not reviewed and not supplied: a
+    proof of the three reduction assertions ... and no such proof was added"
+    records the card before c820143f0f; that commit proves all three on the
+    card, at steps case-small (b_2 = b_3 = b_4 when b_5+b_6 = a and
+    b_4 <= a/3), case-large (b_2+b_3+b_4 = a when b_5+b_6 = a and
+    b_4 >= a/3) and case-open (the vertex check on the polygon in t, x, y),
+    each marked there as the card's own and each naming the answer's
+    one-clause reason that it replaces. The event whose note reads "Left open
+    and recorded in COMPLAINTS: the two reductions the answer states without
+    proof, and the range of NTU's first case" is corrected the same way: the
+    two reductions are proved above, and the range b_1 <= 2b_2 is not open but
+    is the exact range of NTU's first case, carried in the claim of step
+    second-argument, with (10,1,1,1,1,1) outside it where the increase of
+    b_3, b_4, b_5 to b_1+b_2 = b_3+b_4+b_5 is unavailable. The constant that
+    the rendered step left as an asterisk is now written out: with
+    a = (b_1+...+b_5)/2 it is
+    (b_2+b_3+b_4+b_5)^2/4 - (b_2^2+b_3^2+b_4^2+b_5^2) - b_6^2, the value of
+    a^2 - sum b_i^2 at b_1 = 0; the argument does not use it, the minimum on
+    the range being read at the right endpoint, and the card now says so.
+    Checked in this pass: the three reductions recomputed; the four
+    properties of a maximiser; the endpoint values a^2 and a^2 of
+    5v^2+(a-v)^2, a^2 and 15a^2/16 of 7(a-b_4)^2/4+2b_4^2, and a^2 and a^2
+    of 2(a-2b_4)^2+3b_4^2+(a-b_4)^2; the endpoint values 2b_4b_5-2b_5^2 and
+    2b_4b_5-b_5^2 of the quadratic in b_2; the four vertex values a^2,
+    2a^2/3, 7a^2/8 and 5a^2/6; the identity for the constant at b_1 = 0 and
+    its coefficients -3/4 and (1/2)(b_2+b_3+b_4+b_5); and the printed line of
+    NTU, printed p. 17, whose fraction is the vertex
+    b_1^* = (1/3)(b_2+b_3+b_4+b_5) and whose denominator -3/4.2 should read
+    -3/4. Not checked: no source outside answer 2476483, NTU Exercise 10 and
+    Hartshorne V.4.10 with (4.13)(a) was read, and the card's other steps were
+    not re-derived.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #165, reader's report on the card: two proof steps are corrected, and
+    the earlier events that certified them are named. (1) Step case-open
+    carried the maximiser constraint of the wrong set of indices. With
+    t=b_1=b_2, u=b_3, v=b_4=b_5 and w=b_6, the constraint b_2+...+b_6=2a is
+    t+u+2v+w=2a, not the 2t+u+2v+w=2a printed, which is b_1+...+b_6=2a. The
+    equation, the formula w=2a-4t-3x-2y, the two inequalities
+    5t+4x+3y<=2a and 3t+2x+y>=a, the four vertices (0,a/2,0), (a/3,0,0),
+    (2a/5,0,0), (a/4,0,a/4) and their values a^2, a^2, 24a^2/25, 15a^2/16 are
+    now correct, and the answer's remaining case b_1=b_6=2a/5 is the vertex
+    (2a/5,0,0), so the sentence claiming that the vertex check covers that
+    form is now true. This corrects the vertex values a^2, 2a^2/3, 7a^2/8 and
+    5a^2/6 asserted by the event of this date whose note reads "The three
+    reductions the sources state in one clause each are now proved ...", and
+    repeated by the event of this date whose note reads "the constant that the
+    rendered step left as an asterisk is now written out"; the COMPLAINTS
+    record of this date carries the same computation and is corrected in a
+    record of this date there. (2) Step maximiser's proof of b_5=b_4 said that
+    b_5=a/2 "gives a smaller value than either endpoint does", which is not
+    the comparison that decides the claim and fails at b_4=a/2. The proof now
+    compares the two endpoints b_5=S/2 and b_5=b_4 of the convex function
+    b_5^2+(S-b_5)^2, whose values are S^2/2 and S^2/2+2(b_4-S/2)^2, so the
+    endpoint b_5=S/2 is dominated unless b_4=S/2 and a maximiser has b_5=b_4.
+    (3) The event of 2026-11-16 whose note says "the only slip is a factor 2
+    on the right-hand side" of NTU's comparison line is false of the printed
+    line and is corrected here: the printed fraction is the vertex and the
+    slip is the doubled denominator -(3/4).2, which halves the vertex term, as
+    the rendered step says. (4) The event of this date above whose note reads
+    "the argument does not use it, the minimum on the range being read at the
+    right endpoint, and the card now says so" said so of the rendered step
+    before the step said it; the step now says that only the two coefficients
+    and the sign of the leading one are used. Checked in this pass: the
+    corrected constraint, polygon, four vertices and their values, with the
+    b-vectors they give, all in M with b_2+...+b_6=2a and sums a^2, a^2,
+    24a^2/25, 15a^2/16; the two endpoint values of b_5^2+(S-b_5)^2; the
+    constant (b_2+b_3+b_4+b_5)^2/4-(b_2^2+b_3^2+b_4^2+b_5^2)-b_6^2 with its
+    two coefficients -3/4 and (1/2)(b_2+b_3+b_4+b_5); and the printed NTU line
+    at printed p. 17. Not checked: no source outside answer 2476483, NTU
+    Exercise 10 and Hartshorne V.4.10 with (4.13)(a) was read.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #165: one rendered sentence identified the exercise's hypotheses with
+    (4.13)(a) "with the pair condition read for i not equal to j" without
+    saying that this is not what the book prints. Hartshorne prints the pair
+    condition for each i,j, in (4.13)(a) on printed p. 406 and in V.4.10 on
+    printed p. 408, so the i not equal to j reading is weaker than the printed
+    hypothesis and the argument proves slightly more than the exercise asks;
+    the head now says so. Read for this event: the two printed statements in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, and the answer's own
+    parenthetical interpreting the condition for i not equal to j. No other
+    sentence changes.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A third retained solution read, and the one defect among the three. Read
+    Yang Pi-Yeh, Hartshorne Solutions (9 June 2019), Solution 5.4.10, printed
+    p. 111, rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.4.10, printed p. 408, read
+    again on PDF p. 423, prints a - b_i - b_j > 0 for each i,j and
+    2a - sum_{i != j} b_i > 0 for each j, and asks for the argument over the
+    reals. Recomputed: the reduction to a > b_1 + b_2 and 2a > b_1 + ... + b_5
+    in the order b_1 >= ... >= b_6, which is what the printed hypotheses give;
+    that its Case I, 2b_1b_2 >= 2b_2^2 + 2b_2b_5 >= b_3^2+b_4^2+b_5^2+b_6^2,
+    is a proof; and that its Case II prints a > b_1 + ... + b_5, which is not
+    a consequence of 2a > b_1 + ... + b_5. The instance
+    b_1 = ... = b_6 = 2/5, a = 101/100 satisfies the printed hypotheses, has
+    a^2 = 1.0201 > 6/25 * 6 = 0.96, and has a = 1.01 < 8/5 = 2b_1+b_3+b_4, so
+    the printed line is false there; the integer instance b = (3,3,2,2,2,2),
+    a = 7 behaves the same way, with a < 10 = 2b_1+b_3+b_4 and
+    a^2 = 49 > 34 = sum b_i^2. Not checked: Yang's Solutions outside printed
+    pp. 109-111, and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.4.10 at printed p. 111,
+    records its Case I as a proof and its Case II as one that does not follow
+    from the printed hypotheses, with the two instances above. The statement,
+    the steps and the card's own argument are unchanged; nothing moves from
+    proved to open or the reverse.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The two reductions that the sources state in one clause each and that the
+    2026-11-19 event of this card describes as proved, but that the steps
+    themselves still asserted, are now proved in the steps. In case-small,
+    b_2=b_3=b_4 at a maximiser with b_5+b_6=a and b_4<=a/3: if b_4<a/3 the
+    constraint b_2+...+b_6<=2a is slack because b_2+b_3+b_4<=3b_4<a and
+    b_5+b_6=a, so any of b_2,b_3 smaller than b_4 can be increased (raising
+    b_1 with b_2 when b_2<b_3), while at b_4=a/3 the bound b_2+b_3+b_4<=a is
+    tight only when the three are equal. In case-large, b_2+b_3+b_4=a at a
+    maximiser with b_5+b_6=a and b_4>=a/3: if t+u+v<a with t=b_2, u=b_3,
+    v=b_4, then either u<v and increasing u raises 2t^2+u^2, or u=v and t<v,
+    so increasing t does; the ordering and the constraints are preserved and
+    the sum of squares rises. These are the card's own; the sources give the
+    one-clause reasons. No statement, hypothesis or conclusion changes.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read the whole proof against Hartshorne V.4.10, printed p. 408, with
+    (4.13)(a) on printed p. 406, and against the two published arguments it
+    transcribes: answer 2476483 to Math StackExchange 2475661 (the maximiser
+    analysis of steps ordered-hypotheses to case-open) and NTU Algebraic
+    Geometry II, Chapter V Section 4 Exercise 10, printed p. 17 (the second
+    argument). Checked: the reordering and the two weak inequalities; the
+    strict-to-weak reduction; the four properties of a maximiser; the
+    case-small reduction b_2=b_3=b_4 and the endpoint values a^2, a^2 of
+    5v^2+(a-v)^2; the case-large reduction b_2+b_3+b_4=a, the interval
+    [a-2b_4,(a-b_4)/2], the two endpoint sums 7/4(a-b_4)^2+2b_4^2 and
+    2(a-2b_4)^2+3b_4^2+(a-b_4)^2, both at most a^2 on [a/3,a/2]; the case-open
+    substitution x=b_3-b_2, y=b_4-b_3, its polygon, four vertices and values
+    a^2, a^2, 24a^2/25, 15a^2/16; and the second argument's identity, its
+    replacement step, its endpoint values 2b_4b_5-2b_5^2 and 2b_4b_5-b_5^2,
+    and its downward quadratic in b_1 with the vertex at or left of the
+    midpoint. Found no error and changed no other step. The printed defects
+    named in the remark stand: answer 2476483 writes 4b_4^2 for 5b_4^2, NTU's
+    vertex term carries one factor of 2 too few, and Yang's Case II does not
+    follow; the card does not rest on any of them. Not checked: no source
+    outside these three and the book was read, and no Sage or Lean
+    computation was run for this event.
 ---
 
 ::: {.problem}
@@ -219,15 +411,18 @@ Prove this directly (for $a, b_1, \ldots, b_6 \in \RR$) using methods of freshma
 
 ::: {.solution}
 
-The exercise's hypotheses are the conditions of (4.13)(a) of the book for the class
-$D=a\ell-\sum_ib_ie_i$ on the cubic surface, with the pair condition read for $i\ne j$, and its
-conclusion $a^2-\sum_ib_i^2>0$ is $D^2>0$; the exercise asks for integers and then for real
-$a,b_1,\ldots,b_6$.
+The exercise's hypotheses are those of (4.13)(a) of the book for the class
+$D=a\ell-\sum_ib_ie_i$ on the cubic surface, read with the pair condition for $i\ne j$, which is
+weaker than the printed condition for each $i,j$ and so makes the argument prove slightly more than
+the exercise asks; its conclusion $a^2-\sum_ib_i^2>0$ is $D^2>0$; the exercise asks for integers and
+then for real $a,b_1,\ldots,b_6$.
 
 Math StackExchange question 2475661, answer 2476483 (Dap, 2017-10-17), orders the variables
-increasingly and supplies steps [](#ordered-hypotheses){.pf-ref} to [](#case-open){.pf-ref}.
+increasingly and supplies the maximiser analysis of steps [](#ordered-hypotheses){.pf-ref} to
+[](#case-open){.pf-ref}; the three reductions in that analysis are its own one-clause reasons, and
+each is proved on the card.
 Chapter V §4 Exercise 10 of the National Taiwan University *Algebraic Geometry II* homework (2020
-Spring), by Shuang-Yen Lee, printed p. 17, orders them decreasingly and supplies step
+Spring), by Shuang-Yen Lee, orders them decreasingly and supplies the argument of step
 [](#second-argument){.pf-ref}, which is transcribed in that order.
 
 ::: pf
@@ -297,8 +492,10 @@ $M$ is closed and bounded, so a maximum is attained. If both $b_2+\cdots+b_6<2a$
 $b_5+b_6<a$, then $b_6$ can be increased, which keeps $b$ in $M$ and raises $\sum_ib_i^2$. If
 $b_1<b_2$ then $b_1$ can be increased, which keeps $b$ in $M$ and raises the sum, since $b_1$ occurs
 in neither constraint. If $b_5>a/2$ then $b_6\ge b_5$ gives $b_5+b_6>a$. Last, for fixed
-$b_5+b_6=S$ the function $b_5^2+(S-b_5)^2$ on $b_4\le b_5\le S/2$ attains its maximum at an
-endpoint, and $b_5=a/2$ gives a smaller value than either endpoint does.
+$b_5+b_6=S$ the function $b_5^2+(S-b_5)^2$ on $b_4\le b_5\le S/2$ is convex, so it attains its
+maximum at an endpoint. At $b_5=S/2$ its value is $S^2/2$; at $b_5=b_4$ it is
+$b_4^2+(S-b_4)^2=S^2/2+2(b_4-S/2)^2$, which is strictly larger unless $b_4=S/2$. Hence a maximiser
+has $b_5=b_4$.
 :::
 
 :::
@@ -310,17 +507,24 @@ $$
 $$
 
 ::: pf-proof
-At such a maximiser $b_2=b_3=b_4$, which answer 2476483 states with the reason that otherwise
-$b_3$ or $b_2$ could be increased. Together with $b_1=b_2$ and $b_5=b_4$ from step
-[](#maximiser){.pf-ref} this
-makes $b_1,\ldots,b_5$ equal to $b_4$, and $b_6=a-b_4$, so
+At such a maximiser $b_2=b_3=b_4$: if $b_4<a/3$, then $b_2+b_3+b_4\le3b_4<a$ and
+$b_5+b_6=a$, so the constraint $b_2+\cdots+b_6\le2a$ is slack, and any of
+$b_2,b_3$ smaller than $b_4$ can be increased (raising $b_1$ with $b_2$ when
+$b_2<b_3$), while at $b_4=a/3$ the bound $b_2+b_3+b_4\le3b_4=a$ is tight only
+when $b_2=b_3=b_4$. Write $t=b_1=b_2$, $u=b_3$ and $v=b_4=b_5$, so that
+$b_6=a-v$ and $0\le t\le u\le v\le a/3$. The second constraint is $t+u+v\le a$, and it is
+automatic on this range because $t+u\le2v\le a-v$; for fixed $v$ the function $2t^2+u^2$ is
+increasing in $t$ and in $u$ on $0\le t\le u\le v$, so its maximum there is at $t=u=v$. Hence
+$b_1=\cdots=b_5=v$ and $b_6=a-v$, so
 $$
-\sum_ib_i^2=5b_4^2+(a-b_4)^2=6b_4^2-2ab_4+a^2 .
+\sum_ib_i^2=5v^2+(a-v)^2=6v^2-2av+a^2 .
 $$
-This is a quadratic in $b_4$ with positive leading coefficient, so on $0\le b_4\le a/3$ it is at most
-the larger endpoint value; at $b_4=0$ the value is $a^2$ and at $b_4=a/3$ it is
-$5a^2/9+4a^2/9=a^2$. The answer writes $4b_4^2$ in place of the five equal terms $5b_4^2$ and reports
-$a^2$ at both endpoints, which are the endpoint values of $5b_4^2+(a-b_4)^2$.
+This is a quadratic in $v$ with positive leading coefficient, so on $0\le v\le a/3$ it is at most
+the larger endpoint value; at $v=0$ the value is $a^2$ and at $v=a/3$ it is
+$5a^2/9+4a^2/9=a^2$. The reduction to $b_1=\cdots=b_5=v$ is the card's own; answer 2476483 states it
+with the reason that otherwise $b_3$ or $b_2$ could be increased. The answer writes $4b_4^2$ in
+place of the five equal terms $5b_4^2$ and reports $a^2$ at both endpoints, which are the endpoint
+values of $5b_4^2+(a-b_4)^2$.
 :::
 
 :::
@@ -332,8 +536,15 @@ $$
 $$
 
 ::: pf-proof
-At such a maximiser $b_2+b_3+b_4=a$, which the answer states with the same reason that otherwise $b_3$
-or $b_2$ could be increased; with $b_1=b_2$, $b_5=b_4$ and $b_6=a-b_4$ from step
+At such a maximiser $b_2+b_3+b_4=a$: if $t+u+v<a$ with $t=b_2$, $u=b_3$ and
+$v=b_4$, then either $u<v$ and increasing $u$ raises $2t^2+u^2$, or $u=v$ and
+$t<v$, so increasing $t$ does; in either case the ordering and the constraints
+are preserved and the sum of squares rises. If $t=b_2$, $u=b_3$ and $v=b_4=b_5$, then $b_6=a-v$, and the
+constraints are $0\le t\le u\le v$, $v\in[a/3,a/2]$ and $t+u+v\le a$. If $t+u+v<a$, then either
+$u<v$, and increasing $u$ preserves the ordering and raises $2t^2+u^2$, or $u=v$, and then $t<v$
+because $t+2v<a$, so increasing $t$ raises the sum; in neither case is the point a maximiser. Hence
+$t+u+v=a$. This reduction is the card's own; the answer states it with the reason that otherwise
+$b_3$ or $b_2$ could be increased. With $b_1=b_2$, $b_5=b_4$ and $b_6=a-b_4$ from step
 [](#maximiser){.pf-ref} this gives
 $$
 b=(b_2,b_2,a-b_4-b_2,b_4,b_4,a-b_4).
@@ -370,21 +581,25 @@ $$
 $$
 
 ::: pf-proof
-By step [](#maximiser){.pf-ref} such a maximiser has $b_2+\cdots+b_6=2a$. The answer reduces it to the
-form
+By step [](#maximiser){.pf-ref} such a maximiser has $b_2+\cdots+b_6=2a$. Write $t=b_1=b_2$,
+$u=b_3$, $v=b_4=b_5$ and $w=b_6$, so that $0\le t\le u\le v\le w$, $v+w<a$ and
+$t+u+2v+w=2a$. Put $x=u-t\ge0$ and $y=v-u\ge0$; then $u=t+x$, $v=t+x+y$,
+$w=2a-4t-3x-2y$, and the inequalities $w\ge v$ and $v+w\le a$ become
 $$
-b=(b_1,b_1,b_1,b_5,b_5,b_6),
+5t+4x+3y\le2a,
+\qquad
+3t+2x+y\ge a .
 $$
-as follows: with $b_1=b_2$ and $b_4=b_5$ held fixed the sum $b_3+b_6$ is fixed, so the maximum of
-$b_3^2+b_6^2$ is attained by decreasing $b_3$ as far as the constraints allow, which either makes
-$b_1=b_2=b_3$ or brings the maximiser to $b_5+b_6=a$, the two cases of steps
-[](#case-small){.pf-ref} and [](#case-large){.pf-ref}; and with $b_1$ held fixed the maximum of
-$2b_5^2+b_6^2$ is likewise attained on the boundary, at $b_5=b_1$, at $b_5=b_6$, or at
-$b_5+b_6=a$. Of the maximisers of that form, those with $b_5+b_6=a$ are the two steps above, and the
-remaining one is $b_1=b_6=\frac{2a}{5}$, all six entries equal to $\frac{2a}{5}$, with
+On this polygon the sum
 $$
-\sum_ib_i^2=6\cdot\frac{4a^2}{25}=\frac{24}{25}a^2<a^2 .
+\sum_ib_i^2=2t^2+(t+x)^2+2(t+x+y)^2+(2a-4t-3x-2y)^2
 $$
+is a convex quadratic, so its maximum is attained at a vertex, and the vertices are
+$(t,x,y)=(0,a/2,0)$, $(a/3,0,0)$, $(2a/5,0,0)$ and $(a/4,0,a/4)$, where the sum is $a^2$,
+$a^2$, $24a^2/25$ and $15a^2/16$. Hence $\sum_ib_i^2\le a^2$. This reduction is the card's own
+completion of the answer's boundary sketch: the answer states it in the form
+$b=(b_1,b_1,b_1,b_5,b_5,b_6)$ with a remaining case $b_1=b_6=\frac{2a}{5}$, which is the vertex
+$(2a/5,0,0)$ and one of the four vertices checked.
 :::
 
 :::
@@ -434,7 +649,8 @@ If $b_1+b_2\le b_3+b_4+b_5$ then $a=\frac12(b_1+\cdots+b_5)$ and
 $$
 a^2-\sum_ib_i^2=-\tfrac34b_1^2+\tfrac12(b_2+b_3+b_4+b_5)b_1+\ast
 $$
-for a constant $\ast$ in $b_1$. This is a quadratic in $b_1$ opening downwards, with vertex
+for the constant $\tfrac14(b_2+b_3+b_4+b_5)^2-(b_2^2+b_3^2+b_4^2+b_5^2)-b_6^2$ in $b_1$; only the two
+coefficients and the sign of the leading one are used below. This is a quadratic in $b_1$ opening downwards, with vertex
 $b_1^{*}=\frac13(b_2+b_3+b_4+b_5)$; its argument range is $b_2\le b_1\le b_3+b_4+b_5-b_2$, whose
 midpoint is $\frac12(b_3+b_4+b_5)$. Since $b_1+b_2\le b_3+b_4+b_5$ and $b_1\ge b_2$ give
 $2b_2\le b_3+b_4+b_5$, one has
@@ -443,7 +659,7 @@ b_1^{*}-\tfrac12(b_3+b_4+b_5)=\tfrac16\left(2b_2-(b_3+b_4+b_5)\right)\le0,
 $$
 so the vertex lies at or to the left of the midpoint, the right endpoint is the farther one, and the
 minimum on the range is at $b_1=b_3+b_4+b_5-b_2$, that is, at $b_1+b_2=b_3+b_4+b_5$, which is the
-preceding case. The printed line makes this comparison and leaves the constant $\ast$ unwritten, but
+preceding case. The printed line makes this comparison and leaves the constant term unwritten, but
 its vertex term carries one factor of $2$ too few: its fraction
 $\frac{-\frac12(b_2+b_3+b_4+b_5)}{-\frac34\cdot2}$ is the vertex
 $b_1^{*}=\frac13(b_2+b_3+b_4+b_5)$, so the left side as printed is
@@ -491,10 +707,21 @@ writes $4b_4^2$ in place of $5b_4^2$ in its first case, and its equalities $b_2=
 $b_2+b_3+b_4=a$ are stated with the reason that otherwise $b_3$ or $b_2$ could be increased.
 
 National Taiwan University, *Algebraic Geometry II* (2020 Spring, Chin-Lung Wang), Chapter V §4,
-Exercise 10, by Shuang-Yen Lee, printed p. 17: the observation on $x+y=z+w$ and $\abs{x-y}>\abs{z-w}$, the
+Exercise 10, by Shuang-Yen Lee: the observation on $x+y=z+w$ and $\abs{x-y}>\abs{z-w}$, the
 reduction to $a=\max\{b_1+b_2,\frac12(b_1+\cdots+b_5)\}$ in the decreasing order, and the two cases;
 the first is carried out at the two endpoint values of the quadratic in $b_2$, and its initial
 increase of $b_3,b_4,b_5$ to $b_1+b_2=b_3+b_4+b_5$ needs $b_1\le2b_2$; the second compares the vertex
 of a downward quadratic with the midpoint of its range, the printed line carrying one factor of $2$
 too few in that vertex term.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.10, reduces the
+printed hypotheses to $a-b_1-b_2>0$ and $2a-b_1-\cdots-b_5>0$ in the order $b_1\ge\cdots\ge b_6$, as
+step [](#ordered-hypotheses){.pf-ref} does, and splits into two cases. Its Case I, $b_1\ge b_2+b_5$,
+is a proof: $2b_1b_2\ge2b_2^2+2b_2b_5\ge b_3^2+b_4^2+b_5^2+b_6^2$ together with $a>b_1+b_2$ gives
+$a^2>\sum b_i^2$. Its Case II, $b_1<b_2+b_5$, prints
+$a>b_1+b_2+b_3+b_4+b_5>2b_1+b_3+b_4$, but the printed hypotheses give $2a>b_1+\cdots+b_5$ and not
+$a>b_1+\cdots+b_5$; the printed line is false at $b_1=\cdots=b_6=\frac25$, $a=\frac{101}{100}$, where
+the hypotheses hold, the conclusion $a^2>\sum b_i^2$ still holds, and $a<2b_1+b_3+b_4=\frac85$, and
+at $b=(3,3,2,2,2,2)$, $a=7$ likewise. So its Case II is not proved, and the card's argument does not
+rest on it.
 :::

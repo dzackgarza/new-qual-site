@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP06-B6
 kind: problem
 title: Fundamental groups of two quotient spaces built from cylinders and a disk
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Fundamental Group, Quotient Spaces]}
 relations: []
 review: draft
 audit:

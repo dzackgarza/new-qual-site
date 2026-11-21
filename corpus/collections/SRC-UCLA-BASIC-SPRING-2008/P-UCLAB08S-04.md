@@ -6,7 +6,9 @@ title: Dini theorem for decreasing nonnegative functions
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Monotone Functions
 relations: []
 review: draft
 audit:

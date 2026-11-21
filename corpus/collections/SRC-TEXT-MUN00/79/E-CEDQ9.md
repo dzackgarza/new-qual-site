@@ -44,6 +44,18 @@ audit:
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 79 Exercise 1, printed p. 483. The lifting criterion for S^n simply connected, then the contraction of R. Checked against Theorem 79.1 (the lifting criterion) and Theorem 59.3. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Restructured into a structured proof under #2. Re-checked: the lift exists by Lemma 79.1 with
+    the base points made to correspond, $S^n$ being simply connected for $n>1$ and $\RR$
+    contractible; the contraction is exhibited as the explicit homotopy $H(t,y)=(1-t)y$; and
+    composing with $p$ gives the nullhomotopy. Added: the explicit contraction of $\RR$ and the
+    statement that the composed homotopy is constant in the space variable at time $1$, which the
+    prose left to the reader. The source is a Stack Exchange answer, a user post and not a
+    publication, and the card says so; the earlier events already record that no published solution
+    of §79 Exercise 1 was located. No defect found in the statement, printed p. 483.
 ---
 
 ::: {.exercise}
@@ -53,18 +65,36 @@ Show that if $n > 1$, every continuous map $f: S^n \to S^1$ is nullhomotopic.
 :::
 
 ::: {.solution}
+The argument is that of Math StackExchange answer 2813771, posted 2018-06-09 to question 2813729, and it is the argument the printed hint asks for. The same argument for $n=2$ alone is answer 783783, posted 2014-05-06 to question 783766, with nothing added. Take the universal covering $p\colon\RR\to S^1$, $p(t)=e^{2\pi it}$, of Theorem 53.1.
 
-The proof below is that of Math StackExchange answer 2813771 (https://math.stackexchange.com/a/2813771), posted 2018-06-09 by the account posting as user113529 to question 2813729, "Show that a continuous map $f: S^n \to S^1$ is nullhomotopic" (https://math.stackexchange.com/questions/2813729), asked by Greywhite on the same day, and it is the argument the printed hint asks for. The same argument for $n = 2$ alone is answer 783783 by Giorgio Mossa (https://math.stackexchange.com/a/783783), posted 2014-05-06 to question 783766, with nothing added.
+::: pf
 
-Let $n>1$ and let $f:S^n\to S^1$ be continuous. Choose $x_0\in S^n$ and let
-$$
-p:\RR\longrightarrow S^1,\qquad p(t)=e^{2\pi i t},
-$$
-be the universal covering map of Theorem 53.1 (printed p. 337). Put $b_0=f(x_0)$ and choose $e_0\in p^{-1}(b_0)$, which exists because $p$ is onto; then $p(e_0)=b_0=f(x_0)$, which is the hypothesis Lemma 79.1 puts on the base points. The sphere $S^n$ is path connected and locally path connected, and simply connected for $n>1$, so
-$$
-f_*\pi_1(S^n,x_0)=0\subseteq p_*\pi_1(\RR,e_0)=0,
-$$
-and Lemma 79.1, the general lifting lemma (printed p. 478), applied with $Y=S^n$ and $y_0=x_0$, gives a lift $\tilde f:S^n\to\RR$ with $p\circ\tilde f=f$ and $\tilde f(x_0)=e_0$.
+::: {.pf-step #lift}
+For $n>1$ and continuous $f\colon S^n\to S^1$, there is a continuous $\tilde f\colon S^n\to\RR$ with $p\circ\tilde f=f$.
 
-The real line is contractible, so $\tilde f$ is homotopic to a constant map $c:S^n\to\RR$; composing that homotopy with $p$ gives a homotopy from $f=p\circ\tilde f$ to the constant map $p\circ c$. Hence $f$ is nullhomotopic.
+::: pf-proof
+Choose $x_0\in S^n$ and put $b_0=f(x_0)$; since $p$ is onto, choose $e_0\in p^{-1}(b_0)$, so that $p(e_0)=f(x_0)$, which is the base-point condition of Lemma 79.1. The sphere $S^n$ is path connected, locally path connected and, for $n>1$, simply connected, so $f_*\pi_1(S^n,x_0)=0$; and $\RR$ is contractible, so $p_*\pi_1(\RR,e_0)=0$. Hence $f_*\pi_1(S^n,x_0)\subseteq p_*\pi_1(\RR,e_0)$, and Lemma 79.1, the general lifting lemma, applied with $Y=S^n$ and $y_0=x_0$, produces the lift with $\tilde f(x_0)=e_0$.
+:::
+
+:::
+
+::: {.pf-step #contract}
+$\tilde f$ is homotopic to a constant map $c\colon S^n\to\RR$.
+
+::: pf-proof
+$\RR$ is contractible: the map $H(t,y)=(1-t)y$ is a homotopy from the identity of $\RR$ to the constant map at $0$, so $H\circ(\operatorname{id}\times\tilde f)$ is a homotopy from $\tilde f$ to the constant map at $0$.
+:::
+
+:::
+
+::: {.pf-step}
+$\boxed{\text{Every continuous }f\colon S^n\to S^1\text{ with }n>1\text{ is nullhomotopic}}$.
+
+::: pf-proof
+Let $G\colon S^n\times[0,1]\to\RR$ be the homotopy of step [](#contract){.pf-ref} from $\tilde f$ to a constant map. Then $p\circ G\colon S^n\times[0,1]\to S^1$ is continuous, agrees with $p\circ\tilde f=f$ at time $0$ by step [](#lift){.pf-ref}, and is constant in the space variable at time $1$; so $f$ is homotopic to the constant map $p\circ c$, that is, $f$ is nullhomotopic.
+:::
+
+:::
+
+:::
 :::

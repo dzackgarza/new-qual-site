@@ -39,6 +39,20 @@ audit:
   date: 2026-11-07
   note: >-
     Statement matches Exercise 2 (p.204). Both halves recomputed: [n]_G acts on Hom(F_i,G) as phi -> n phi, and [n]_H lifts to the chain endomorphism n on each F_i because the differentials are homomorphisms; in both cases Ext picks up multiplication by n. Citations added: Ext = H^1(Hom(F,G)) p.195 with Lemma 3.1(b) p.194, contravariance from Exercise 1 (p.204) with Lemma 3.1(a) p.194 for the lift.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 2 of §3.1, printed p. 204, and checked against the published
+    solution in Guanyu Li, *Hatcher solutions*, Exercise 3.1.2, printed p. 48, whose computation
+    agrees. Both halves verified. For $G$: post-composition with $[n]_G$ acts on
+    $\operatorname{Hom}(F_i,G)$ by $\varphi\mapsto n\varphi$, so the induced cochain map is
+    multiplication by $n$ in every degree and its map on $H^1$ is multiplication by $n$. For $H$:
+    $[n]_H$ lifts to multiplication by $n$ on each $F_i$, which commutes with $d_i$ because $d_i$
+    is a homomorphism, and the contravariant map is precomposition with that lift, again
+    $\varphi\mapsto n\varphi$; independence of the lift by Lemma 3.1(a) (printed p. 194) makes this
+    well defined. Nothing depends on the sign or size of $n$, and the argument works for $n=0$.
+    The exercise's printed page is p. 204. Not claimed: a certificate.
 ---
 
 ::: {.problem}
@@ -72,7 +86,7 @@ $$
 \operatorname{Hom}(F_i,G)\to\operatorname{Hom}(F_i,G),
 \qquad \varphi\mapsto [n]_G\circ\varphi=n\varphi.
 $$
-Thus the induced cochain map is literally multiplication by $n$ in every degree, using only the functoriality of $\operatorname{Hom}(F_i,-)$. Its map on cohomology, in particular on $H^1=\operatorname{Ext}(H,G)$, is therefore multiplication by $n$; that $\operatorname{Ext}(H,G)$ is this $H^1$, independently of the resolution, is Hatcher p.195 with Lemma 3.1(b) (p.194).
+Thus the induced cochain map is literally multiplication by $n$ in every degree, using only the functoriality of $\operatorname{Hom}(F_i,-)$. Its map on cohomology, in particular on $H^1=\operatorname{Ext}(H,G)$, is therefore multiplication by $n$; that $\operatorname{Ext}(H,G)$ is this $H^1$, independently of the resolution, is Hatcher p.195 with Lemma 3.1(b).
 
 :::
 
@@ -84,7 +98,7 @@ Multiplication by $n$ on $H$ also induces multiplication by $n$ on $\operatornam
 
 ::: pf-proof
 
-The endomorphism $[n]_H:H\to H$ lifts to the chain endomorphism $[n]_{F_i}:F_i\to F_i$ given by multiplication by $n$ in each degree, since all differentials are homomorphisms and hence commute with multiplication by $n$. Because $\operatorname{Ext}$ is contravariant in its first variable (Exercise 1, p.204), the resulting cochain map is precomposition, well defined because a lift exists by Lemma 3.1(a) (p.194) and is unique up to chain homotopy, which induces the same map on cohomology:
+The endomorphism $[n]_H:H\to H$ lifts to the chain endomorphism $[n]_{F_i}:F_i\to F_i$ given by multiplication by $n$ in each degree, since all differentials are homomorphisms and hence commute with multiplication by $n$. Because $\operatorname{Ext}$ is contravariant in its first variable (Exercise 1), the resulting cochain map is precomposition, well defined because a lift exists by Lemma 3.1(a) and is unique up to chain homotopy, which induces the same map on cohomology:
 $$
 \varphi\longmapsto \varphi\circ[n]_{F_i}=n\varphi.
 $$

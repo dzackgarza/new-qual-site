@@ -309,6 +309,8 @@ For each fixed $z<0$, the infinite product converges to a strictly
 positive finite number.
 
 
+Since $z<0$ was arbitrary, part (a) holds for every $z\in(-\infty,0)$.
+
 ::: pf-proof
 
 Step [](#s1-2){.pf-ref}, applied to the compact singleton $\{z\}$, gives
@@ -344,19 +346,6 @@ converges to a positive finite number.
 
 :::
 
-::: {.pf-step #s1-8}
-
-Part (a) holds for every $z\in(-\infty,0)$.
-
-
-::: pf-proof
-
-This is exactly step [](#s1-7){.pf-ref}.
-
-:::
-
-:::
-
 ::: {.pf-step #s1-9}
 
 The function obtained in part (a) extends to the entire function $P$
@@ -379,7 +368,7 @@ convergent product from part (a).
 
 ::: pf-qed
 
-Step [](#s1-8){.pf-ref} proves part (a), and steps [](#s1-5){.pf-ref} and [](#s1-9){.pf-ref} prove part (b).
+Step [](#s1-7){.pf-ref} proves part (a), and steps [](#s1-5){.pf-ref} and [](#s1-9){.pf-ref} prove part (b).
 
 :::
 

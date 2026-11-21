@@ -17,6 +17,26 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained exam assets/attachments/Algebra_Fall_2021_extracted.md,
+    problem 6: the definition of the annihilator, the three parts, that it is an
+    ideal, that every ideal is some module's annihilator, and an example of a
+    module all of whose elements are annihilated by something while the module's
+    own annihilator vanishes. The card agrees.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    All three parts are correct. The annihilator contains 0, is closed under
+    differences, and is stable under multiplication by elements of the ring, so
+    it is an ideal. Every ideal I is the annihilator of R/I: the classes killed
+    by r are those with r in I, and testing on the class of 1 suffices. For (c),
+    Q/Z over Z has every element killed by its denominator, while an integer
+    annihilating the whole module would have to be divisible by every positive
+    integer, which forces it to be zero. Nothing was changed.
 ---
 ::: {.problem}
 Let $R$ be a commutative ring with unit and let $M$ be an $R$-module.

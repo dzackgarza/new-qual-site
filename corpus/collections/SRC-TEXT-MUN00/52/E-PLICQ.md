@@ -37,26 +37,43 @@ Show that $\pi_1(X, x_0)$ is abelian if and only if for every pair $\alpha$ and 
 :::
 
 ::: {.solution}
-For two paths $\alpha,\beta:x_0\to x_1$, set
-$$
-\lambda=\alpha*\bar\beta,
-$$
-a loop at $x_0$. For any loop $f$ at $x_0$, a direct path calculation gives
-$$
-\widehat\beta^{-1}\widehat\alpha([f])
-=[\lambda^{-1}*f*\lambda],
-$$
-so $\widehat\beta^{-1}\widehat\alpha$ is the inner automorphism determined by $[\lambda]\in\pi_1(X,x_0)$.
 
-If $\pi_1(X,x_0)$ is abelian, every inner automorphism is the identity. Hence
-$$
-\widehat\beta^{-1}\widehat\alpha=\operatorname{id},
-$$
-so $\widehat\alpha=\widehat\beta$ for every $\alpha,\beta$.
+No retained solution set covers this exercise: the card's own argument follows. For a path $\alpha$ from $x_{0}$ to $x_{1}$ the induced isomorphism $\hat\alpha:\pi_{1}(X,x_{1})\to\pi_{1}(X,x_{0})$ is $\hat\alpha([f])=[\alpha*f*\bar\alpha]$, and $\bar\alpha$ denotes the reverse path.
 
-Conversely, suppose $\widehat\alpha=\widehat\beta$ for every pair of paths from $x_0$ to $x_1$. Fix one path $\beta:x_0\to x_1$. For an arbitrary loop $\lambda$ at $x_0$, put
-$$
-\alpha=\lambda*\beta.
-$$
-Then the displayed calculation shows that the inner automorphism induced by $[\lambda]$ is the identity. Since $[\lambda]$ was arbitrary, every element of $\pi_1(X,x_0)$ is central. Thus $\pi_1(X,x_0)$ is abelian.
+::: pf
+
+::: {.pf-step #conjugation}
+For paths $\alpha,\beta$ from $x_{0}$ to $x_{1}$ and a loop $f$ at $x_{0}$, with $\lambda=\alpha*\bar\beta$ one has
+$$\hat\beta^{-1}\hat\alpha([f])=[\lambda^{-1}*f*\lambda].$$
+
+::: pf-proof
+$\hat\alpha([f])=[\alpha*f*\bar\alpha]$, so $\hat\beta^{-1}\hat\alpha([f])=\big[\bar\beta*(\alpha*f*\bar\alpha)*\beta\big]=[\bar\beta\alpha*f*\bar\alpha\beta]$ by associativity of path products up to homotopy. The loop $\lambda=\alpha*\bar\beta$ has reverse $\lambda^{-1}=\beta*\bar\alpha$, so $\lambda^{-1}*f*\lambda=\beta\bar\alpha*f*\alpha\bar\beta$, which is the same class. Hence $\hat\beta^{-1}\hat\alpha([f])=[\lambda^{-1}*f*\lambda]$, the automorphism of $\pi_{1}(X,x_{0})$ given by conjugation by $[\lambda^{-1}]$.
+:::
+
+:::
+
+::: {.pf-step #forward}
+If $\pi_{1}(X,x_{0})$ is abelian, then $\hat\alpha=\hat\beta$ for all paths $\alpha,\beta$ from $x_{0}$ to $x_{1}$.
+
+::: pf-proof
+In an abelian group every inner automorphism is the identity, so $[\lambda^{-1}*f*\lambda]=[f]$ for every $f$, and step [](#conjugation){.pf-ref} gives $\hat\beta^{-1}\hat\alpha=\mathrm{id}$, that is $\hat\alpha=\hat\beta$.
+:::
+
+:::
+
+::: {.pf-step #backward}
+If $\hat\alpha=\hat\beta$ for all such $\alpha,\beta$, then $\pi_{1}(X,x_{0})$ is abelian.
+
+::: pf-proof
+Fix a path $\beta$ from $x_{0}$ to $x_{1}$; such a path exists because $X$ is path connected. Given a loop $\mu$ at $x_{0}$, put $\alpha=\mu*\beta$, a path from $x_{0}$ to $x_{1}$. By hypothesis $\hat\alpha=\hat\beta$, so $\hat\beta^{-1}\hat\alpha=\mathrm{id}$, and with $\lambda=\alpha*\bar\beta$ step [](#conjugation){.pf-ref} says that conjugation by $[\lambda^{-1}]$ is the identity on $\pi_{1}(X,x_{0})$; note $[\lambda]=[\mu]$ since $\lambda=\mu*\beta*\bar\beta$ is homotopic to $\mu$. So every $[\mu]\in\pi_{1}(X,x_{0})$ is central, which is exactly that the group is abelian.
+:::
+
+:::
+
+::: {.pf-qed}
+The two implications are steps [](#forward){.pf-ref} and [](#backward){.pf-ref}, so $\pi_{1}(X,x_{0})$ is abelian exactly when $\hat\alpha=\hat\beta$ for every pair of paths from $x_{0}$ to $x_{1}$.
+:::
+
+:::
+
 :::

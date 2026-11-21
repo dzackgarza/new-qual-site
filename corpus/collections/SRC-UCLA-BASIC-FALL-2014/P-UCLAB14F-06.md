@@ -6,7 +6,9 @@ title: Total variation of a $C^1$ function from uniform partitions
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Total Variation
+  - Differentiation
 relations: []
 review: draft
 audit:

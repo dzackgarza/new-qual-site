@@ -5,7 +5,9 @@ kind: problem
 title: Bolzano--Weierstrass in the plane from the one-dimensional theorem
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Bolzano-Weierstrass Theorem
+  - Compactness
 relations: []
 review: draft
 audit:

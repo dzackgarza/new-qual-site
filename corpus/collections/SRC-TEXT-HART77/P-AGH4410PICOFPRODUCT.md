@@ -24,6 +24,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.4.10, printed p. 92,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.4.10, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed that $\mathscr F$ is trivial on both rulings by construction, that flatness makes $\deg\restrictionof{\mathscr F}{X\times\{P\}}$ constant so that it is $0$ at every $P$ by its value at $P_0$, and that the resulting element of $R$ fixes $P_0$ because $\restrictionof{\mathscr F}{X\times\{P_0\}}$ is trivial.
+    Not checked: Yang's Solutions outside printed p. 92; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's
+    Solution 4.4.10 at printed p. 92; it had none before. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -254,4 +274,8 @@ Thus the pullback subgroup is proper, which is the stated final consequence.
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.10, builds the map: for $\mathscr M\in\Pic(X\times X)$ it takes $\mathscr L_1=\restrictionof{\mathscr M}{X\times\{P_0\}}$, $\mathscr L_2=\restrictionof{\mathscr M}{\{P_0\}\times X}$ and $\mathscr F=\mathscr M\otimes(p_1^*\mathscr L_1\otimes p_2^*\mathscr L_2)^{-1}$, so that $\mathscr F$ is trivial on both rulings; flatness of $X\times X\to X$ makes $\deg\restrictionof{\mathscr F}{X\times\{P\}}$ independent of $P$, hence $0$ everywhere; and $\psi:\Pic^0X\cong X$ turns $P\mapsto\psi(\restrictionof{\mathscr F}{X\times\{P\}})$ into a morphism $X\to X$ fixing $P_0$, i.e. an element of $R$. It asserts that $\Phi$ is surjective, and computes $\ker\Phi$ by a see-saw: $\mathscr F$ trivial on every fibre $X\times\{P\}$ forces $\mathscr F=p_2^*\mathscr L$, whence $\mathscr M=p_1^*\mathscr L_1\otimes p_2^*(\mathscr L_2\otimes\mathscr L)$, so $\ker\Phi=p_1^*\Pic X\oplus p_2^*\Pic X$ and the exercise's exact sequence follows. Three steps are named rather than proved and are worth naming here: that $\Phi$ is a homomorphism --- which is the theorem of the cube --- that it is surjective, which the graph of a given endomorphism supplies, and that a line bundle trivial on every fibre of the flat proper morphism $X\times X\to X$ is pulled back from the base, which is the see-saw over a connected base. None of the three is wrong; the entry's 'clearly' covers all three.
 :::

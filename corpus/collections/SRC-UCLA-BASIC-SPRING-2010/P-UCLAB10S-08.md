@@ -6,7 +6,9 @@ title: Closed and totally bounded subsets of complete metric spaces are compact
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Compactness
+  - Completeness
 relations: []
 review: draft
 audit:

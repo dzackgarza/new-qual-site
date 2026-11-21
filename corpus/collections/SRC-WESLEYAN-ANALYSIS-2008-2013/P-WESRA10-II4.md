@@ -5,7 +5,9 @@ kind: problem
 title: 'Continuity of translations in $L^1$'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - L¹
+  - Continuity
 relations: []
 review: draft
 audit:

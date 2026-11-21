@@ -22,17 +22,14 @@ To prove $x=y$ in a metric space it suffices to show $\rho(x,y)<\varepsilon$ for
 ::: {.example}
 Uniform convergence implies pointwise convergence, and $x^n$ on $[0,1]$ converges pointwise but not uniformly.
 
+Pointwise convergence is [@Rud76, ch. 7, Definition 7.1]; for $x^n$ the limit is $0$ on $[0,1)$ and $1$ at $1$, so the limit is discontinuous while every $x^n$ is continuous, and uniform convergence would preserve continuity by [@Rud76, ch. 7, Theorem 7.12].
 :::
 
 [[T-ERNLN]]
 
 [[FF-IAUQG]]
 
-::: {.fact}
-If $\sum_{n\geq 1} a_n$ converges, then $\lim_{N\to\infty}\sum_{n\geq N} a_n = 0$, so bounding $\norm{f_n-f}_\infty$ by a tail of a convergent series proves uniform convergence.
-For $\varepsilon>0$, $\sum_{n\geq1}\varepsilon2^{-n} = \varepsilon$, which distributes an error $\varepsilon$ over countably many terms.
-
-:::
+[[PR-IGVTV]]
 
 ## Measure theory
 
@@ -42,7 +39,7 @@ For $\varepsilon>0$, $\sum_{n\geq1}\varepsilon2^{-n} = \varepsilon$, which distr
 
 [[D-QYLPH]]
 
-Countable additivity implies finite additivity.
+[[D-ALMOSTEVERY]]
 
 [[T-7LQ7X]]
 
@@ -58,26 +55,22 @@ For $A\subseteq X$ let
 $$
 \mu^*(A)\coloneqq\inf\theset{\sum_{j\geq1}\rho(E_j) \st E_j\in\mathcal E,\ A\subseteq\bigcup_{j\geq1}E_j}.
 $$
-Then $\mu^*$ is an [[D-79EWM|outer measure]].
+Then $\mu^*$ is an [[D-79EWM|outer measure]] [@Fol99, §1.4].
+:::
 
+::: {.remark}
+The three defining properties are checked directly: $\mu^*(\varnothing)=0$ from the empty cover, monotonicity because a cover of a larger set covers a subset, and countable subadditivity by choosing for each $A_j$ a cover whose total $\rho$-sum is within $2^{-j}\varepsilon$ of the infimum and summing over $j$.
 :::
 
 [[D-3XE77]]
 
-A property holds almost everywhere if the set where it fails has measure zero.
-
 [[D-PAEDW]]
-
-De Morgan's laws state $\qty{\bigcup_\alpha E_\alpha}^c = \bigcap_\alpha E_\alpha^c$ and $\qty{\bigcap_\alpha E_\alpha}^c = \bigcup_\alpha E_\alpha^c$.
 
 [[T-7X52J]]
 
 ## Fubini--Tonelli
 
-::: {.definition}
-For $f$ on $\RR^{d_1}\times\RR^{d_2}$, $x\in\RR^{d_1}$, and $y\in\RR^{d_2}$, the \dfn{slices} of $f$ are $f^y(x)\coloneqq f(x,y)$ and $f_x(y)\coloneqq f(x,y)$; for $E\subseteq\RR^{d_1}\times\RR^{d_2}$, the slices are $E^y\coloneqq\theset{x \st (x,y)\in E}$ and $E_x\coloneqq\theset{y \st (x,y)\in E}$.
-
-:::
+[[D-SLICES]]
 
 [[T-4GPEF]]
 
@@ -87,17 +80,22 @@ For $f$ on $\RR^{d_1}\times\RR^{d_2}$, $x\in\RR^{d_1}$, and $y\in\RR^{d_2}$, the
 
 [[PR-6NDTF]]
 
-::: {.remark}
+::: {.example title="A set with measurable slices that is not measurable"}
 The converse fails: a set whose slices are all measurable need not be measurable.
 For a non-measurable $\mathcal N\subseteq[0,1]$, let $E\coloneqq\mathcal N\times[0,1]$.
-Every slice $E_x$ is $[0,1]$ or $\varnothing$, hence measurable, but $E$ is not measurable: Tonelli's theorem applied to $\chi_E$ would make $E^y$ measurable for almost every $y$, whereas $E^y = \mathcal N$ for every $y\in[0,1]$.
+Every slice $E_x$ is $[0,1]$ or $\varnothing$, hence measurable, but $E$ is not measurable: if it were, [[PR-6NDTF]] would make $x\mapsto m(E_x)=\chi_{\mathcal N}(x)$ measurable.
 
 :::
 
 ::: {.corollary}
 Let $f\geq0$ on $\RR^d$ and $\mathcal A\coloneqq\theset{(x,y)\in\RR^d\times\RR \st 0\leq y\leq f(x)}$.
-Then $f$ is measurable if and only if $\mathcal A$ is measurable in $\RR^{d+1}$, and in that case $\int_{\RR^d}f(x)\dx = m(\mathcal A)$.
+Then $f$ is measurable if and only if $\mathcal A$ is measurable in $\RR^{d+1}$, and in that case $\int_{\RR^d}f(x)\dx = m(\mathcal A)$ [@Fol99, Exercise 2.50].
 
+The direction from $f$ to $\mathcal A$ and the identity of the two integrals are Folland's Exercise 2.50; the converse is the section direction of the [[PR-6NDTF|measurable-slice theorem]].
+:::
+
+::: {.remark}
+The slices $\mathcal A_x=[0,f(x)]$ being intervals does not by itself make $\mathcal A$ measurable: the non-measurable $E$ above has every slice measurable.
 :::
 
 ## Qual problems

@@ -30,4 +30,6 @@ Each of the following maps is a [[D-TM4TE|biholomorphism]] from the stated domai
 | $\theset{0<\Re z<\pi,\ \Im z>0}$ | $\DD^+$ | $z\mapsto e^{iz}$ |
 | $\DD^+$ | $\HH$ | $z\mapsto-\frac12\big(z+\frac1z\big)$ ([[PR-OTMIR]]) |
 | $\theset{-\frac\pi2<\Re z<\frac\pi2,\ \Im z>0}$ | $\HH$ | $z\mapsto\sin z$ ([[PR-3LBLV]]) |
+
+The maps of the table are the elementary ones surveyed in [@Ahl73, ch. 3, §4.2, A Survey of Elementary Mappings]: linear transformations, powers, the exponential and the logarithm, applied as there to wedges, strips and their complements. The book's own worked correspondences in that section are the wedge onto a half plane by a power and the complement of a segment onto a disc through (15); the remaining rows are the same three tools in other combinations.
 :::

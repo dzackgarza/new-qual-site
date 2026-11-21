@@ -5,7 +5,8 @@ kind: problem
 title: 'Radius of convergence of the coefficientwise product'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Power Series
 relations: []
 review: draft
 audit:
@@ -30,6 +31,8 @@ is at least $AB$.
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the preliminary-examination papers alone, so the argument is the card's own.
 
 Let $R$ denote the radius of convergence of
 $$

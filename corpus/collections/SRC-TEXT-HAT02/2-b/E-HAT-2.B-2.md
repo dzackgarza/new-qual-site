@@ -66,6 +66,24 @@ audit:
     disk. The full applicable sequence has left term H_{n-1}(S^{n-1})=Z, not homology of a point,
     and splits to give Z^r. Both statements match pp.70-71 of DeMason.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 2 of §2.B, printed p. 176, in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`, with its printed hint, and checked against
+    DeMason, Hatcher 2.B.2, printed pp. 70--71. One page corrected: Theorem 3.44 is on printed
+    p. 254, not p. 253 as the event of 2026-11-06 records. Checked in the card: the induction on
+    vertices removes a leaf edge $e$ with leaf $u$ and attachment vertex $v$, so that
+    $A=S^n-e$ and $B=S^n-T'$ have $A\cup B=S^n-v\simeq\RR^n$ and $A\cap B=S^n-X$; and the added-edge
+    step, after one barycentric subdivision when the edge is a loop, has
+    $A\cup B=S^n-\{w_0,w_1\}\simeq S^{n-1}$ and gives
+    $0\to\widetilde H_{n-1}(S^{n-1})=\ZZ\to\widetilde H_{n-2}(S^n-X)\to\widetilde H_{n-2}(S^n-Y)=\ZZ^{r-1}\to0$,
+    which splits because the right-hand group is free, so the rank is $r$. The universal
+    coefficient step is right for the same reason: the homology of a finite graph is free, so
+    $\operatorname{Ext}$ vanishes and $\widetilde H^j(X)\cong\operatorname{Hom}(\widetilde H_j(X),\ZZ)$.
+    Not claimed: a published solution other than the one transcribed.
+
 ---
 
 ::: {.problem}

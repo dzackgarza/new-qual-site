@@ -27,6 +27,8 @@ The electric field $\vec{E}$ created by a point charge $q$ at a certain distance
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 Assume the observation point lies a distance $d>0$ from the center along the
 positive symmetry axis.
 
@@ -116,7 +118,7 @@ The circumference is $2\pi R$ and the linear charge density is $\rho$.
 
 ::: {.pf-step #s1-5}
 
-Hence the electric-field magnitude on the axis is
+Part (a): hence the electric-field magnitude on the axis is
 $$
 \boxed{
 E_{\mathrm{ring}}(d)
@@ -137,19 +139,6 @@ k_e\frac d{(R^2+d^2)^{3/2}}
 \int dq.
 $$
 Use step [](#s1-4){.pf-ref} and step [](#s1-3){.pf-ref}.
-
-:::
-
-:::
-
-::: {.pf-step #s1-6}
-
-Part (a) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -317,7 +306,7 @@ Steps [](#s1-11){.pf-ref} through [](#s1-12){.pf-ref} give the disk field and it
 
 ::: pf-qed
 
-Steps [](#s1-6){.pf-ref} and [](#s1-13){.pf-ref} establish parts (a) and (b), respectively.
+Steps [](#s1-5){.pf-ref} and [](#s1-13){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 

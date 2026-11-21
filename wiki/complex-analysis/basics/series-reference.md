@@ -7,18 +7,7 @@ title: Series reference
 
 ## Factorial notation
 
-::: {.definition title="Rising and falling factorials"}
-For $n\in\CC$ and $k\in\ZZ_{\geq 0}$, the \dfn{rising factorial} is
-$$
-\rising{n}{k} \coloneqq n(n+1)(n+2) \cdots (n+k-1),
-$$
-and the \dfn{falling factorial} is
-$$
-\falling{n}{k} \coloneqq n(n-1)(n-2)\cdots(n-k+1);
-$$
-each is a product of $k$ factors, and the empty product for $k=0$ is $1$.
-
-:::
+[[D-5NQWE]]
 
 ::: {.fact}
 For $n\in\ZZ_{>0}$,
@@ -46,6 +35,7 @@ $$
 $$
 When $\alpha\in\ZZ_{\geq 0}$ the series terminates and is the binomial theorem.
 
+This is the binomial series of [@Ahl73, ch. 5, §1.2, The Taylor Series], where ${\mu\choose n}=\frac{\mu(\mu-1)\cdots(\mu-n+1)}{1\cdot2\cdots n}$ is defined and $(1+z)^\mu=1+\mu z+{\mu\choose2}z^2+\cdots+{\mu\choose n}z^n+\cdots$ is listed with its radius of convergence.
 :::
 
 ::: {.fact title="Power series"}
@@ -67,6 +57,7 @@ $$
 \qty{\frac{d}{dz}}^k \sum_{n\geq 0} c_n z^n = \sum_{n\geq k} \falling{n}{k} \, c_n z^{n-k}.
 $$
 
+The developments are those listed in [@Ahl73, ch. 5, §1.2, The Taylor Series] — $e^z$, $\cos z$ and $\sin z$ there as the definitions of the functions, $(1+z)^\mu$ with the binomial coefficients defined in the same section, and $\log(1+z)$, which is the series above at $-z$ — and the geometric series with its termwise derivative is [@Ahl73, ch. 2, §2.2, Theorem 2], whose third part gives the derivative by termwise differentiation with the same radius of convergence.
 :::
 
 [[FF-LF5ND]] [[FF-XKATS]]
@@ -96,28 +87,28 @@ $$
 $$
 The last identity cuts an $n\times n$ square of dots into $L$-shaped layers of $1, 3, 5, \ldots, 2n-1$ dots:
 
-![](figures/2021-12-11_22-09-24.png)
+![](/assets/figures/2021-12-11_22-09-24.png)
 
 :::
 
 ::: {.fact title="Sums of rising factorials"}
-For $p\geq 1$, with $k^{(p)}\coloneqq k(k+1) \cdots (k+p-1)$,
+For $p\geq 1$, in the rising-factorial notation $\rising{k}{p}$,
 $$
 \begin{aligned}
-\sum_{k=1}^{n} k^{(p)} &= \frac{n^{(p+1)}}{p+1}, \\
-\sum_{k=1}^{n} \frac{p}{k^{(p+1)}} &= \frac{1}{1^{(p)}}-\frac{1}{(n+1)^{(p)}}, \qquad 1^{(p)} = p!.
+\sum_{k=1}^{n} \rising{k}{p} &= {\rising{n}{p+1}\over p+1}, \\
+\sum_{k=1}^{n} \frac{p}{\rising{k}{p+1}} &= \frac{1}{\rising{1}{p}}-\frac{1}{\rising{n+1}{p}}, \qquad \rising{1}{p} = p!.
 \end{aligned}
 $$
-For $p=2,3$ the first identity reads $\sum_{k=1}^{n} k(k+1) = \frac{n(n+1)(n+2)}{3}$ and $\sum_{k=1}^{n} k(k+1)(k+2) = \frac{n(n+1)(n+2)(n+3)}{4}$; for $p=1,2$ the second reads $\sum_{k=1}^{n} \frac{1}{k(k+1)}=1-\frac{1}{n+1}$ and $\sum_{k=1}^{n} \frac{2}{k(k+1)(k+2)}=\frac{1}{2}-\frac{1}{(n+1)(n+2)}$.
+For $p=2,3$ the first identity reads $\sum_{k=1}^{n} \rising{k}{2} = \frac{n(n+1)(n+2)}{3}$ and $\sum_{k=1}^{n} \rising{k}{3} = \frac{n(n+1)(n+2)(n+3)}{4}$; for $p=1,2$ the second reads $\sum_{k=1}^{n} \frac{1}{k(k+1)}=1-\frac{1}{n+1}$ and $\sum_{k=1}^{n} \frac{2}{k(k+1)(k+2)}=\frac{1}{2}-\frac{1}{(n+1)(n+2)}$.
 
 :::
 
 ::: {.remark}
 The rising-factorial sums are discrete analogues of $\int_0^n x^p \dx = { n^{p+1} \over p+1}$ and $\int_1^{n+1}{p\over x^{p+1}}\dx = 1 - {1\over (n+1)^p}$.
-Writing $k^2 = k(k+1) - k$ gives $\sum_{k=1}^n k^2 = \frac{n(n+1)(n+2)}{3} - \frac{n(n+1)}{2} = {n(n+1)(2n+1) \over 6}$.
+Writing $k^2 = \rising{k}{2} - k$ gives $\sum_{k=1}^n k^2 = \frac{n(n+1)(n+2)}{3} - \frac{n(n+1)}{2} = {n(n+1)(2n+1) \over 6}$.
 The identity $\sum_{k=1}^n k = n(n+1)/2$ counts a staircase of $n$ columns as half of an $n\times(n+1)$ rectangle:
 
-![](figures/2021-12-11_22-15-41.png)
+![](/assets/figures/2021-12-11_22-15-41.png)
 
 :::
 

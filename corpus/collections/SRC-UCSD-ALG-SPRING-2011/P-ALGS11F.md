@@ -14,6 +14,19 @@ review: draft
 
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 6 of the UCSD Algebra Qualifying Exam, Spring 2011, p. 2 of the
+    two-page paper retained at assets/attachments/SP11_200_Algebra_Qual.pdf, is the statement the
+    card answers, and the paragraph at the head of the solution records that the paper prints the
+    questions and no solutions, so the argument is the card's own. Checked: both parts and the
+    printed hint against the paper's text layer at the page named, including the assignment of m
+    and n to the dimensions of V and W and the resulting exponents in det(phi tensor psi) =
+    det(phi)^n det(psi)^m; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering
+    and the QED. Not checked: no retained solution exists to compare the argument with, and no
+    other card of the collection in this pass.
+- event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-08
   note: Compared with Problem 6 of the official UCSD Spring 2011 algebra qualifying exam.
@@ -49,6 +62,8 @@ Hint: Choose $\CC$-bases for $V$ and $W$ such that the matrices representing $\p
 :::
 
 ::: {.solution}
+
+The problem is Problem 6 of the UCSD Algebra Qualifying Exam, Spring 2011, printed on p. 2 of the two-page paper retained at `assets/attachments/SP11_200_Algebra_Qual.pdf`, with its hint. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and it supplies (i) through the universal property of the tensor product and (ii) through bases in which both matrices are upper triangular, the matrix of $\phi\otimes\psi$ then being upper triangular with diagonal entries $\lambda_i\mu_j$ in the lexicographically ordered tensor basis.
 
 ::: pf
 

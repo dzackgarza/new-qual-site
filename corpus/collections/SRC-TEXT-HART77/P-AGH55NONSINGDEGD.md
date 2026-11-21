@@ -179,6 +179,22 @@ audit:
     correction; its text at its date is at 96b162602a, and the second event of
     2026-11-15 above records what it had said, so nothing is lost and both
     events stand as written.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The step's first sentence said that both equations and both computations are
+    published, and cited as the second a Mathematics Stack Exchange answer. An
+    answer on that site is a user post and not a publication, so the sentence
+    was false of the source and is corrected: the Stacks Project is kept as the
+    published treatment of the first equation and of the computation, the four-
+    term equation is named as a user answer with no printed page cited for it,
+    and the step is marked as the card's own checked transcription. Checked in
+    this pass: the tag file `tmp/sources/stacks-tags/0BYA.md` for the Stacks
+    text, the text version of the answer, and the exercise as printed at
+    Hartshorne I.5.5, printed p. 37 (PDF p. 52 of the checked-in extraction).
+    Not checked in this pass: no other publication was searched for the
+    characteristic-3 case; COMPLAINTS.md records that state.
 ---
 
 ::: {.problem}
@@ -233,7 +249,7 @@ $$
 is nonsingular when $p=3$.
 
 ::: pf-proof
-Both equations and both computations are published: the first is the Stacks Project, *Algebraic Curves*, Section 53.9, tag 0BYA (text version `tmp/sources/stacks-tags/0BYA.md`), and the second is Nils Matthes, answer 705947 to Mathematics Stack Exchange question 705657 (text version `tmp/sources/mse-705657-nonsingular-projective-variety-of-degree-d.md`).
+The first equation and both computations are published: the Stacks Project, *Algebraic Curves*, Section 53.9, tag 0BYA (text version `tmp/sources/stacks-tags/0BYA.md`). The second is not: it is Nils Matthes's answer 705947 to Mathematics Stack Exchange question 705657 (text version `tmp/sources/mse-705657-nonsingular-projective-variety-of-degree-d.md`), which is a user post and not a publication, so no printed page is cited for it. This step is the card's own checked transcription of that answer.
 Since $p\mid d$ one has $d=0$ and $d-1=-1\ne0$ in $k$, and both hold equally in every extension field of $k$; the computations below use nothing else about the field, so a curve nonsingular over $k$ is nonsingular over the algebraic closure.
 
 *The first equation.*
@@ -317,7 +333,7 @@ Step [](#geometrically-irreducible){.pf-ref} verifies that the resulting smooth 
 :::
 
 ::: {.remark title="Published solution"}
-A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.5, printed pp. 3--4, read in `tmp/sources/shitijyou-ch1-section5.md`, the MinerU extraction of `tmp/sources/shitijyou-ch1-section5.pdf`, takes the equation $x_0x_1^{d-1}+x_1x_2^{d-1}+x_2x_0^{d-1}$ and eliminates the two chart coordinates to reach $(d-1)^2/(d-2)=1$, that is $d^2-3d+3=0$, which it then solves over $\ZZ$: no integer satisfies it, and it concludes that the curve is nonsingular. The identity is one in $k$, so that step has to be replaced; when it is, the source's argument settles the case $p\mid d$, $p\ne3$. Indeed a singular point gives $(d-1)^2=(d-2)$ in $k$, and for $p\mid d$ the identity $d^2-3d+3=0$ reads $3=0$, so $p=3$. Two cases are left: $p=3$, which the replaced step does not reach, and $p\nmid d$, where the identity can hold and the source's conclusion can fail --- for $p=7$, $d=4$ it does, the point $(4:2:1)$ being a singular point of that curve over $\FF_7$, as the three reduced equations $a^3+ab^3+b=98$, $3a^2+b^3=56$ and $3ab^2+1=49$ at $(a,b)=(4,2)$ show.
+A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.5, read in `tmp/sources/shitijyou-ch1-section5.md`, the MinerU extraction of `tmp/sources/shitijyou-ch1-section5.pdf`, takes the equation $x_0x_1^{d-1}+x_1x_2^{d-1}+x_2x_0^{d-1}$ and eliminates the two chart coordinates to reach $(d-1)^2/(d-2)=1$, that is $d^2-3d+3=0$, which it then solves over $\ZZ$: no integer satisfies it, and it concludes that the curve is nonsingular. The identity is one in $k$, so that step has to be replaced; when it is, the source's argument settles the case $p\mid d$, $p\ne3$. Indeed a singular point gives $(d-1)^2=(d-2)$ in $k$, and for $p\mid d$ the identity $d^2-3d+3=0$ reads $3=0$, so $p=3$. Two cases are left: $p=3$, which the replaced step does not reach, and $p\nmid d$, where the identity can hold and the source's conclusion can fail --- for $p=7$, $d=4$ it does, the point $(4:2:1)$ being a singular point of that curve over $\FF_7$, as the three reduced equations $a^3+ab^3+b=98$, $3a^2+b^3=56$ and $3ab^2+1=49$ at $(a,b)=(4,2)$ show.
 
 The Stacks Project, *Algebraic Curves*, Section 53.9 (Plane curves), tag 0BYA (text version `tmp/sources/stacks-tags/0BYA.md`), is the only published treatment found that writes out the case $p \mid d$ with its derivative check. It gives $F=T_0^d+T_1^d+T_2^d$ when $p\nmid d$, and $F=T_0^{d-1}T_1+T_1^{d-1}T_2+T_2^{d-1}T_0$ when $p\mid d$ and $p\neq3$, with the two partial derivatives $1-x^{d-2}y$ and $x^{d-1}-y^{d-2}$ on the affine piece $D_+(T_2)$, and it states that their common zero set together with the equation is empty; it then writes "We leave it to the reader to make examples in characteristic $3$".
 
@@ -327,9 +343,9 @@ and $x\ne0$ because $x=y^{d-1}$ while $1=x^{d-2}y$ forces $y\ne0$; so a singular
 
 The case $p=3$ with $3\mid d$ is supplied in Nils Matthes, answer 705947 to Mathematics Stack Exchange question 705657, *Nonsingular projective variety of degree $d$*, text version `tmp/sources/mse-705657-nonsingular-projective-variety-of-degree-d.md`, asked precisely for this residual case: the curve $V(X^d+ZX^{d-1}+XY^{d-1}+YZ^{d-1})$, and his argument, quoted: "if $[x:y:z]\in C$ is a singular point, then, by considering the partial derivatives of the equation defining $C$, we obtain $zx^{d-2}=y^{d-1}$, $xy^{d-2}=z^{d-1}$ and $yz^{d-2}=x^{d-1}$. Multiplying these equalities by $x,y,z$ respectively, we obtain $zx^{d-1}=xy^{d-1}=yz^{d-1}$ and substituting this into the above equation yields $0=x^d+zx^{d-1}+xy^{d-1}+yz^{d-1}=x^d+3zx^{d-1}=x^d$ as we are in characteristic $3$. Hence $x=0$, but then by the above equalities, $y,z$ have to be equal to zero as well, which is impossible." He also records why the three-term equation cannot be repaired by rescaling its coefficients, and that the fourth term is available because $3\mid d$ makes the partials of $x^d$ vanish. Step [](#characteristic-p-nonsingular){.pf-ref} transcribes this, and his own sentence supplies the zero-coordinate step: "Hence $x=0$, but then by the above equalities, $y,z$ have to be equal to zero as well, which is impossible."
 
-Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), text version `tmp/sources/hartshorne-solutions-borcherds.md`, Exercise 5.5, PDF p. 7: "If the characteristic $p$ does not divide $d$ we can use $x^d+y^d+z^d=0$. Otherwise we can use $xy^{d-1}+yz^{d-1}+zx^{d-1}=0$."
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), text version `tmp/sources/hartshorne-solutions-borcherds.md`, Exercise 5.5: "If the characteristic $p$ does not divide $d$ we can use $x^d+y^d+z^d=0$. Otherwise we can use $xy^{d-1}+yz^{d-1}+zx^{d-1}=0$."
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), text version `tmp/sources/hartshorne-solutions-troiani.md`, gives no solution to 5.5.
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.5, PDF p. 45, text version `tmp/sources/hartshorne-solutions-egbert.md`: the same two equations as Borcherds.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.5, text version `tmp/sources/hartshorne-solutions-egbert.md`: the same two equations as Borcherds.
 The second equation of the published answers is singular whenever $3=0$ in $k$: at $(1:1:1)$ its value is $3$ and each of its three partial derivatives is $d$, so for $p=3$ and $3\mid d$ the point $(1:1:1)$ lies on the curve and is singular. That is why the case needs a different equation, and Matthes's four-term curve is one.
 Agree with Borcherds, the Stacks Project and Matthes where they reach: Borcherds's Fermat curve for $p\nmid d$, the Stacks Project and Shichijo for $p\mid d$ with $p\ne3$ (the latter once its integer step is read in $k$), and Matthes for $p=3$ with $3\mid d$. What this card adds is the homogeneous computation of the first equation, which Stacks leaves at two affine derivatives, and the check of the third example, which is in no source found.
 :::

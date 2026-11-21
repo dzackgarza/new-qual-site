@@ -13,6 +13,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Mechanical LaTeX repair, reported by the whole-corpus gate: the remark describing the printed
+    pp. 68--69 statement used `\shsheaf_Y` twice and `\shsheaf` once, and `\shsheaf` is defined
+    nowhere. The token has no single referent to restore --- the printed statement writes `\mci_Y`
+    for the sheaf of ideals and `\OO_X`, `\OO_Y` for the structure sheaves, and the note's two uses
+    do not agree --- so the sentence now names the objects in words ("the sheaf of ideals of $Y$, the
+    quotient of part (b)") instead of guessing a symbol. No mathematics changes: the note describes
+    the statement, which itself is untouched. Checked: `qualc.authoring check` on the card, and the
+    statement read to see which symbols it uses. Not checked: the printed pages were not re-read in
+    this pass.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-17
@@ -38,7 +51,7 @@ $$
 0 \to \mci_Y \to \OO_X \to \mcf \to 0.
 $$
 Show however that the induced map on global sections $\Gamma(X, \OO_X) \to \Gamma(X, \mcf)$ is not surjective.
-This shows that the global section functor $\Gamma(X, \wait)$ is not exact.
+This shows that the global section functor $\Gamma(X, -)$ is not exact.
 
 (d) Again let $X = \PP^1$ and let $\OO$ be the sheaf of regular functions.
 Let $\mck$ be the constant sheaf on $X$ associated to the function field $K$ of $X$.
@@ -663,11 +676,13 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a), steps [](#s3){.pf-ref}, [
 :::
 
 ::: {.remark}
+The exercise is Hartshorne, II.1, exercise 1.21, "Some Examples of Sheaves on Varieties", read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`.  The statement above is that text, parts (a)--(e) including the sheaf of ideals of $Y$, the quotient of part (b), and the exact sequences of (c), (d) and (e).
+
 Part (e) is an analogue of the first Cousin problem in several complex variables; see Gunning and Rossi.
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.21, PDF pp. 10--11, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: (a) the sheaf axiom for $\mci_Y$ inside $\OO_X$; (b) exactness of $0\to\mci_Y(U)\to\OO_X(U)\to\OO_Y(Y\cap U)\to0$ on the affine opens, which form a base, hence exactness on stalks; (c) $\Gamma(\PP^1,\OO_X)=k$ against $\Gamma(\PP^1,\mcf)=k\oplus k$; (d) $\mck/\OO_X$ as principal parts with the quotient stalk computed; (e) for each point $P$ a rational function regular away from $P$ with the prescribed principal part there, obtained from the division $f/g=q+r/g$ with $\deg r<\deg g$.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.21, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: (a) the sheaf axiom for $\mci_Y$ inside $\OO_X$; (b) exactness of $0\to\mci_Y(U)\to\OO_X(U)\to\OO_Y(Y\cap U)\to0$ on the affine opens, which form a base, hence exactness on stalks; (c) $\Gamma(\PP^1,\OO_X)=k$ against $\Gamma(\PP^1,\mcf)=k\oplus k$; (d) $\mck/\OO_X$ as principal parts with the quotient stalk computed; (e) for each point $P$ a rational function regular away from $P$ with the prescribed principal part there, obtained from the division $f/g=q+r/g$ with $\deg r<\deg g$.
 The proof above agrees on (a)--(d); in (e) it builds a single rational function carrying all prescribed polar parts at once, the sum of the local polar parts together with the polynomial part at infinity, which is the same content without the passage through the one-point case.
 Agree.
 :::

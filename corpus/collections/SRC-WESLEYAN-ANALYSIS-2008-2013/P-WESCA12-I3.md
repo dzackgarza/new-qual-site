@@ -5,7 +5,9 @@ kind: problem
 title: 'Define poles, pole order, and essential singularities'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Poles
+  - Singularities
 relations: []
 review: draft
 audit:

@@ -38,6 +38,15 @@ audit:
     named on the card and the proof block verifies continuity, bounded variation,
     and the failure of absolute continuity, citing the standard Lusin condition
     that absolutely continuous functions carry null sets to null sets.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The step proving that the Cantor function maps the Cantor set onto [0,1] said that every
+    y in [0,1] has a ternary expansion in the digits 0 and 2. What every y has is a binary
+    expansion; the point of C is the one whose ternary digits are twice those binary
+    digits. The sentence is corrected and the conclusion is unchanged.
+
 ---
 
 ::: {.problem}
@@ -62,10 +71,10 @@ functions that are constant on the complementary intervals of the $n$-th stage
 of the construction of $C$ and increase linearly across the remaining $2^n$
 intervals, so it is continuous; each approximant is nondecreasing and so is
 the limit; and the values at the endpoints are $0$ and $1$. On the Cantor set
-$F$ is onto $[0,1]$ because every $y\in[0,1]$ has a ternary expansion in
-digits $0$ and $2$, whose corresponding point of $C$ is mapped to $y$; and $F$
-is constant on each complementary interval, so the image of $C$ is the whole
-interval.
+$F$ is onto $[0,1]$: every $y\in[0,1]$ has a binary expansion, and the point of
+$C$ whose ternary digits are twice those binary digits is mapped by $F$ to $y$;
+and $F$ is constant on each complementary interval, so the image of $C$ is the
+whole interval.
 
 :::
 

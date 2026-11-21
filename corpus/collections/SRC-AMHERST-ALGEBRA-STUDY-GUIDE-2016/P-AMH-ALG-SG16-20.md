@@ -6,7 +6,9 @@ title: The ideal $(6,x+1)$ in $\ZZ[x]$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Ideals
+  - Polynomial Rings
 relations: []
 review: draft
 audit:

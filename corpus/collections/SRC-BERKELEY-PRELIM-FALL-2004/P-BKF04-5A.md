@@ -22,33 +22,62 @@ as an element of $[-\infty,\infty)$.
 :::
 
 ::: {.solution}
-If $n=\ell m+r$ for integers $m,\ell\geq1$ and $r\in[0,m)$, then $a_n=a_{\ell m+r}\leq a_{\ell m}+a_r\leq\ell a_m+a_r$, where $a_0\coloneqq0$ so that the case $r=0$ is included, and dividing by $n$ yields
 
+The argument is the card's own: Fekete's subadditivity estimate bounds the limsup of $a_{n}/n$ by each $a_{m}/m$, and the liminf is bounded below by the infimum.
+
+::: pf
+
+::: {.pf-step #estimate}
+
+With $a_{0}=0$ and $n=\ell m+r$, $0\le r<m$, $\ell\ge1$: $\displaystyle\frac{a_{n}}{n}\le\frac{\ell m}{n}\cdot\frac{a_{m}}{m}+\frac{a_{r}}{n}$.
+
+::: pf-proof
+
+Subadditivity iterated $\ell$ times gives $a_{\ell m}\le\ell a_{m}$, and then $a_{n}=a_{\ell m+r}\le a_{\ell m}+a_{r}\le\ell a_{m}+a_{r}$, with $a_{r}$ present only when $r\ge1$ — the convention $a_{0}=0$ covers $r=0$. Dividing by the positive $n$ and writing $\ell a_{m}/n=\frac{\ell m}{n}\cdot\frac{a_{m}}{m}$ gives the estimate.
+
+:::
+
+:::
+
+::: {.pf-step #limsup}
+
+$\displaystyle\limsup_{n\to\infty}\frac{a_{n}}{n}\le\frac{a_{m}}{m}$ for every $m\ge1$.
+
+::: pf-proof
+
+Fix $m$. For $n=\ell m+r$ we have $\ell=\frac{n-r}{m}$, hence $\frac{\ell m}{n}=1-\frac{r}{n}\to1$ as $n\to\infty$, since $0\le r<m$ is bounded. Also $\abs{a_{r}}\le M_{m}=\max\{\abs{a_{0}},\dots,\abs{a_{m-1}}\}$ for all $n$, so $a_{r}/n\to0$. Letting $n\to\infty$ along the full sequence in the inequality of step [](#estimate){.pf-ref} — the right side is a sum of a convergent family plus a null family — gives the claim.
+
+:::
+
+:::
+
+::: {.pf-step #inf}
+
+$\displaystyle\limsup_{n\to\infty}\frac{a_{n}}{n}\le\inf_{m}\frac{a_{m}}{m}\le\liminf_{n\to\infty}\frac{a_{n}}{n}$.
+
+::: pf-proof
+
+The first inequality holds because step [](#limsup){.pf-ref} bounds the limsup by every $a_{m}/m$, hence by their infimum. The second holds because $\inf_{m}a_{m}/m$ is a lower bound for every term $a_{n}/n$ (the index $n$ is one of the $m$), so it is at most every term, hence at most the liminf.
+
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+
+$\displaystyle\lim_{n\to\infty}\frac{a_{n}}{n}=\inf_{n}\frac{a_{n}}{n}$ in $[-\infty,\infty)$.
+
+::: pf-proof
+
+Always $\liminf\le\limsup$. Step [](#inf){.pf-ref} gives $\limsup\le\inf\le\liminf$, so all three quantities coincide; in particular the limit exists in $[-\infty,\infty)$. Note $\inf_{n}a_{n}/n<+\infty$ since some term is finite, while the value $-\infty$ is allowed:
 $$
-\frac{a_n}{n}\leq\frac{\ell m}{n}\frac{a_m}{m}+\frac{a_r}{n}.
+\boxed{\lim_{n\to\infty}\frac{a_{n}}{n}=\inf_{n\ge1}\frac{a_{n}}{n}\in[-\infty,\infty).}
 $$
 
-Fix $m$ and let $n\to\infty$, so that $\ell$ and $r$ vary with $n$. Then $\ell m/n\to1$, and $a_r/n\to0$ because $r$ takes only the values $0,\ldots,m-1$. We obtain
+:::
 
-$$
-\limsup_{n\to\infty}\frac{a_n}{n}\leq\frac{a_m}{m}.
-$$
+:::
 
-This holds for each $m$, so
+:::
 
-$$
-\limsup_{n\to\infty}\frac{a_n}{n}\leq\inf_m\frac{a_m}{m}.
-$$
-
-On the other hand,
-
-$$
-\liminf_{n\to\infty}\frac{a_n}{n}\geq\inf_m\frac{a_m}{m}
-$$
-
-holds by definition. Thus
-
-$$
-\lim_{n\to\infty}\frac{a_n}{n}=\inf_m\frac{a_m}{m}.
-$$
 :::

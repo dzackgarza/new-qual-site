@@ -6,7 +6,9 @@ title: Density claims for determinant-one and simple-spectrum matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Density
+  - Determinants
 relations: []
 review: draft
 audit:

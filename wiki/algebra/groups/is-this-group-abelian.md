@@ -12,13 +12,15 @@ Throughout, $G$ is a finite group and $p<q$ are primes.
 
 ## From the order alone
 
-| $\size G$ | Conclusion |
+::: {.fact title="Which orders force an abelian group"}
+| $\size{G}$ | Conclusion |
 | --- | --- |
 | $p$ | cyclic, hence abelian |
 | $p^2$ | abelian |
 | $pq$ with $p \notdivides q-1$ | cyclic, hence abelian |
-| $pq$ with $p \divides q-1$ | there is exactly one nonabelian group of this order up to isomorphism, $\ZZ/q\semidirect\ZZ/p$ |
+| $pq$ with $p \divides q-1$ | abelian, or the unique nonabelian group of this order, $\ZZ/q\semidirect\ZZ/p$ |
 | $p^3$ | not necessarily abelian: $D_4$ and $Q_8$ have order $8$ |
+:::
 
 [[PR-LFGHA]]
 
@@ -26,27 +28,33 @@ Throughout, $G$ is a finite group and $p<q$ are primes.
 
 [[PR-SLWTB]]
 
+[[P-BL7XW]]
+
+[[FF-TDXQT]]
+
 ## From a quotient
+
+::: {.fact title="A nonabelian group of order $p^3$ has center of order $p$"}
+The center cannot have order $p^2$: the quotient by a center of order $p^2$ would be cyclic of order $p$, and a group whose quotient by its center is cyclic is abelian.
+:::
 
 [[E-O73XQ]]
 
-::: {.remark}
-If $G$ is nonabelian, then $G/Z(G)$ is not cyclic, so $[G:Z(G)]$ is not prime.
-In particular $\size{Z(G)} \neq \size G/p$ for every prime $p$.
-:::
+[[T-4CDTT]]
 
 ## From the structure theorem
 
-A finite abelian group is a direct product of cyclic groups of prime-power order, and the isomorphism classes of abelian groups of order $\prod_i p_i^{e_i}$ correspond to tuples of partitions of the exponents $e_i$.
-For example, there are $2\cdot 1 = 2$ abelian groups of order $p^2 q$, namely $\ZZ/p^2\times\ZZ/q$ and $\ZZ/p\times\ZZ/p\times\ZZ/q$.
+For $p^2q$ the count is $P(2)P(1)=2$, namely $\ZZ/p^2\times\ZZ/q$ and $\ZZ/p\times\ZZ/p\times\ZZ/q$.
+
 This is the classification of finitely generated modules over the principal ideal domain $\ZZ$; see [[algebra/modules/classify-this-module|Classify this module]].
 
 [[PR-2JG3F]]
 
+[[PR-434DX]]
+
 ## Distinguishing nonabelian groups
 
-A semidirect product decomposition and the following isomorphism invariants separate nonabelian groups of the same order:
-
+::: {.fact title="Invariants that separate nonabelian groups of one order"}
 - A normal Sylow subgroup $N$ with a complement $H$ exhibits $G \cong N \semidirect H$; see [[algebra/group-actions/show-g-is-not-simple|Show $G$ is not simple]] and [[algebra/groups/quotients-and-products|Quotients, products, and automorphisms]].
 
 - The number of elements of each order: $D_4$ has five elements of order $2$ and $Q_8$ has one.
@@ -54,3 +62,8 @@ A semidirect product decomposition and the following isomorphism invariants sepa
 - The abelianization $G/[G,G]$, computable from a presentation by adjoining the relations $[x,y]=1$ for all generators $x,y$.
 
 - The center, the sizes of the conjugacy classes, and the automorphism group.
+:::
+
+[[P-7VKFN]]
+
+[[D-BQ4BQ]]

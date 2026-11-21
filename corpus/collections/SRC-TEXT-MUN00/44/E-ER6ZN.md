@@ -81,6 +81,44 @@ audit:
     onto [-m,m]^m; the note now gives 2mx - m. Nothing in the proof changed, and the rest of the card
     was not re-read in this pass.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Structured into Lamport steps from the card's own prose; no statement changed and no citation
+    changed. Re-checked in the proof: sigma-compactness of R and the choice of a point outside each
+    pi_n(K_n); that the cubes K_m exhaust R^infty; that the affine map sends 0 to (-m,...,-m) and 1
+    to (m,...,m), so onto [-m,m]^m; that [m-1,m] for m >= 1 is a locally finite closed cover of
+    [0,infinity), so the pasted map is continuous by Exercise 18.9(c) and onto the union of the
+    K_m; that distinct points of {0,1}^omega have uniform distance exactly 1, so the radius-1/3
+    balls are pairwise disjoint and box-open, and that a separable space has no uncountable family
+    of pairwise disjoint nonempty open sets. Added where the card asserted it in a clause: the
+    continuity of each piece q_m into R^infty carrying the box topology follows because q_m has
+    only finitely many nonzero coordinates, so the preimage of a box-open set is a finite
+    intersection of open sets together with all of I or the empty set. What was not re-read: the
+    search record for published solutions, which the audit events above carry.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read of (a), (b) and (c), with one repair. (a): $\RR$ is a countable union of the
+    compact intervals $[-n,n]$, so a continuous image of it is a countable union of compact
+    subspaces; and $\RR^\omega$ is not, since for a countable closed cover by compact sets the
+    $n$-th projection of the $n$-th set misses some $x_n$, and the point $(x_n)$ lies in none of
+    them. (b): the cubes $K_m$ exhaust $\RR^\infty$, each receives a surjection from $I$ ending
+    and beginning at $\mathbf 0$, and the pasting over the locally finite closed cover
+    $\{[m-1,m]\}$ gives a surjection from $[0,\infty)$, composed with $t\mapsto\abs t$. (c): the
+    repair is to the separability step. It read "a separable space has a countable dense subset
+    and hence, being metrizable here, a countable basis", a route available for the uniform
+    topology only, while the conclusion is claimed for the box topology as well; a separable
+    space has countably many pairwise disjoint nonempty open sets outright, each containing a
+    point of the dense set and no point lying in two of them. With that, $\RR$ separable rules out
+    a continuous surjection in either topology, and the $q_m$ are continuous into the box
+    topology because a box-open set's trace on $\RR^\infty$ constrains only finitely many
+    coordinates of $K_m$. Citation by number: §44 Exercise 3, Theorem 26.5, Theorem 27.3,
+    Exercise 18.9 and §44 Exercise 1 (card E-SADP0), read in
+    `tmp/sources/munkres-2000-topology.md`.
+
 ---
 
 ::: {.exercise}
@@ -94,37 +132,81 @@ audit:
 :::
 
 ::: {.solution}
-(a) The real line is $\sigma$-compact:
-$$
-\RR=\bigcup_{n\ge1}[-n,n].
-$$
-Hence every continuous image of $\RR$ is a countable union of compact subspaces.
+Part (a) is the argument of Math StackExchange 74766's answer 74779 (2011), recorded in the audit above, and it is the exercise's own hint; parts (b) and (c) have no published treatment that was located and are the card's own, as the audit records. The book's numbering is §44 Exercise 3.
 
-But $\RR^\omega$ in the product topology is not $\sigma$-compact. Indeed, suppose
-$$
-\RR^\omega=\bigcup_{n\ge1}K_n
-$$
-with each $K_n$ compact. The coordinate projection $\pi_n(K_n)\subset\RR$ is compact, hence bounded. Choose $x_n\in\RR-\pi_n(K_n)$, and let $x=(x_1,x_2,\ldots)$. Then $x\notin K_n$ for every $n$, contradiction. Therefore no continuous surjection $\RR\to\RR^\omega$ exists in the product topology.
+::: pf
 
-(b) There is a continuous surjection onto $\RR^\infty$. Let
-$$
-K_m=[-m,m]^m\times\{0\}\times\{0\}\times\cdots.
-$$
-The $K_m$'s exhaust $\RR^\infty$. By [[E-SADP0]] there is, for each $m$, a continuous surjection $h_m:I\to I^m$. The affine map $x\mapsto(2mx_i-m)_i$ carries $I^m$ homeomorphically onto $[-m,m]^m$, and the inclusion $y\mapsto(y,0,0,\dots)$ of $[-m,m]^m$ into $\RR^\omega$ is continuous, each of its coordinate functions being a coordinate of $y$ or the constant $0$; so $q_m:I\to K_m$, the composite of $h_m$ with these two maps, is a continuous surjection onto $K_m$. Reparametrize $q_m$ so that it starts and ends at the origin, using the first third of $I$ for a straight path from $0$ to $q_m(0)$, the middle third for $q_m$, and the last third for a straight path from $q_m(1)$ back to $0$. The result, still written $q_m:I\to K_m$, is a continuous surjection with $q_m(0)=q_m(1)=0$. Map the interval $[m-1,m]$ onto $K_m$ via $q_m$. Adjacent pieces agree at the origin, and the cover of $[0,\infty)$ by the intervals $[m-1,m]$ is a locally finite closed cover, so the pasted map $F:[0,\infty)\to\RR^\infty$ is continuous (Exercise 18.9(c)) and surjective; compose with $t\mapsto\abs{t}$ to obtain a continuous surjection from $\RR$.
+::: {.pf-step #sigmacompact}
+$\RR$ is $\sigma$-compact, so every continuous image of $\RR$ is a countable union of compact subspaces.
 
-(c) In both the uniform and box topologies, $\RR^\omega$ is nonseparable. The subset
-$$
-D=\{0,1\}^\omega
-$$
-is uncountable, and distinct points of $D$ have uniform distance $1$. Thus the uniform balls of radius $1/3$ about points of $D$ are pairwise disjoint. The box topology is finer than the uniform topology, so these balls are also box-open. A separable space cannot contain an uncountable family of pairwise disjoint nonempty open sets. Hence neither version of $\RR^\omega$ is separable. Since a continuous image of the separable space $\RR$ is separable, there is no continuous surjection from $\RR$ onto $\RR^\omega$ in either topology.
+::: pf-proof
+$\RR=\bigcup_{n\geq1}[-n,n]$, a countable union of compact subspaces. If $g\colon\RR\to Y$ is continuous then $Y=\bigcup_{n\geq1}g([-n,n])$, and each $g([-n,n])$ is compact as the continuous image of a compact space (Theorem 26.5).
+:::
+:::
 
-For $\RR^\infty$, however, the construction in (b) works in both the uniform and box subspace topologies. Each finite-stage inclusion
-$$
-\RR^m\times\{0\}^{\{i>m\}}\hookrightarrow\RR^\infty
-$$
-is continuous for both topologies, and the piecewise construction is locally finite on the domain $[0,\infty)$. Thus continuous surjections
-$$
-\RR\twoheadrightarrow\RR^\infty
-$$
-exist for the product, uniform, and box topologies.
+::: {.pf-step #notsigmacompact}
+$\RR^{\omega}$ with the product topology is not a countable union of compact subspaces.
+
+::: pf-proof
+Suppose $\RR^{\omega}=\bigcup_{n\geq1}K_{n}$ with each $K_{n}$ compact. The coordinate projection $\pi_{n}(K_{n})$ is compact as the continuous image of a compact space, hence closed and bounded in $\RR$ (Theorem 27.3), so there is $x_{n}\in\RR-\pi_{n}(K_{n})$. For the point $x=(x_{1},x_{2},\ldots)$ one has $\pi_{n}(x)=x_{n}\notin\pi_{n}(K_{n})$, so $x\notin K_{n}$ for every $n$, contradicting $\RR^{\omega}=\bigcup_{n}K_{n}$.
+:::
+:::
+
+::: {.pf-step #parta}
+There is no continuous surjection $f\colon\RR\to\RR^{\omega}$ in the product topology.
+
+::: pf-proof
+Such a surjection would make $\RR^{\omega}=f(\RR)$ a countable union of compact subspaces by step [](#sigmacompact){.pf-ref}, contradicting step [](#notsigmacompact){.pf-ref}.
+:::
+:::
+
+::: {.pf-step #cube}
+For each $m\geq1$ there is a continuous surjection $q_{m}\colon I\to K_{m}=[-m,m]^{m}\times\{(0,0,\ldots)\}$ with $q_{m}(0)=q_{m}(1)=\mathbf{0}$.
+
+::: pf-proof
+By [[E-SADP0]] there is a continuous surjection $h_{m}\colon I\to I^{m}$. The map $x\mapsto(2mx_{i}-m)_{i}$ carries $I^{m}$ homeomorphically onto $[-m,m]^{m}$, sending $(0,\ldots,0)$ to $(-m,\ldots,-m)$ and $(1,\ldots,1)$ to $(m,\ldots,m)$; the inclusion $y\mapsto(y,0,0,\ldots)$ of $[-m,m]^{m}$ into $\RR^{\omega}$ is continuous, each of its coordinate functions being a coordinate of $y$ or the constant $0$. So the composite $q_{m}\colon I\to K_{m}$ is a continuous surjection. Reparametrize it: use the first third of $I$ for a straight path from $\mathbf{0}$ to $q_{m}(0)$, the middle third for $q_{m}$ composed with the affine map of $[1/3,2/3]$ onto $I$, and the last third for a straight path from $q_{m}(1)$ to $\mathbf{0}$; the three pieces agree at the two junction points, and the pasting lemma (Theorem 18.3) makes the result continuous. The added paths end at $\mathbf{0}$, so the reparametrized map is still onto $K_{m}$ and it begins and ends at $\mathbf{0}$.
+:::
+:::
+
+::: {.pf-step #paste}
+There is a continuous surjection $F\colon[0,\infty)\to\RR^{\infty}$.
+
+::: pf-proof
+The cubes $K_{m}$ exhaust $\RR^{\infty}$: a point of $\RR^{\infty}$ has all but finitely many coordinates $0$, and if $m\geq1$ bounds their absolute values and exceeds its last nonzero index, the point lies in $K_{m}$. Let $F$ restrict to $q_{m}$ on $[m-1,m]$, with $q_{m}$ as in step [](#cube){.pf-ref}. Adjacent pieces agree at $\mathbf{0}$, and $\theset{[m-1,m]\mid m\geq1}$ is a locally finite closed cover of $[0,\infty)$, so $F$ is continuous by Exercise 18.9(c), and it is onto $\bigcup_{m}K_{m}=\RR^{\infty}$.
+:::
+:::
+
+::: {.pf-step #partb}
+There is a continuous surjection $\RR\to\RR^{\infty}$ in the product topology.
+
+::: pf-proof
+Compose the surjection $F$ of step [](#paste){.pf-ref} with $t\mapsto\abs{t}$, which is continuous and onto $[0,\infty)$.
+:::
+:::
+
+::: {.pf-step #nonseparable}
+$\RR^{\omega}$ with the uniform topology, and hence also with the box topology, is not separable.
+
+::: pf-proof
+The set $D=\theset{0,1}^{\omega}$ is uncountable, and distinct points of $D$ differ in some coordinate, so their uniform distance is $1$. Hence the balls $B_{\bar\rho}(d,1/3)$ for $d\in D$ are pairwise disjoint and nonempty, and they are open in the uniform topology. That topology is coarser than the box topology, so these sets are box-open as well. In a separable space every family of pairwise disjoint nonempty open sets is countable: each member contains a point of the countable dense set, and a point lies in at most one member of such a family. So neither topology on $\RR^\omega$ is separable. So neither the uniform nor the box topology on $\RR^{\omega}$ is separable.
+:::
+:::
+
+::: {.pf-step #partc1}
+There is no continuous surjection $\RR\to\RR^{\omega}$ in the uniform topology or in the box topology.
+
+::: pf-proof
+$\RR$ is separable, since $\QQ$ is countable and dense, and a continuous image of a separable space is separable: the images of a countable dense set are dense in the image. A continuous surjection onto $\RR^{\omega}$ would therefore make it separable, contradicting step [](#nonseparable){.pf-ref}.
+:::
+:::
+
+::: {.pf-step #partc2}
+There is a continuous surjection $\RR\to\RR^{\infty}$ in the uniform topology and in the box topology.
+
+::: pf-proof
+The construction of steps [](#cube){.pf-ref} and [](#paste){.pf-ref} is available in both finer topologies on the subspace $\RR^{\infty}$. Each $q_{m}$ takes values in $K_{m}$, whose points have coordinate $0$ beyond the $m$-th, so for a box-open $U=\RR^{\infty}\cap\prod_{i}U_{i}$ the preimage $q_{m}^{-1}(U)$ is the intersection of the open sets $\theset{x\in I\mid(q_{m}(x))_{i}\in U_{i}}$ over the finitely many $i\leq m$, together with all of $I$ if $0\in U_{i}$ for every $i>m$ and with the empty set otherwise; so it is open, and $q_{m}$ is continuous into $\RR^{\infty}$ with the box topology, hence also with the uniform topology, which the box topology refines. The cover $\theset{[m-1,m]}$ is locally finite, closed, and its pieces agree at $\mathbf{0}$, so the pasted map is continuous and onto. Composing with $t\mapsto\abs{t}$ gives the surjection from $\RR$.
+:::
+:::
+:::
+
 :::

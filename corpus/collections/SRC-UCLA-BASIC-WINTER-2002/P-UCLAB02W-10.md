@@ -5,7 +5,9 @@ kind: problem
 title: Finite-dimensional Riesz representation for a complex linear functional
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Riesz Representation
+  - Inner Product Spaces
 relations: []
 review: draft
 audit:

@@ -268,6 +268,245 @@ audit:
     this pass: Deligne, Théorie de Hodge II, 4.4.3, and Strauch's rigidity
     result, neither of which is in tmp/sources, as before; no step was
     re-derived, and the printed exercise on printed p. 340 was not reopened.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The step now cites what the book proves for it and says why that is not the
+    relative form it needs. Read for this: Hartshorne IV.4 in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, Theorem 4.11 at printed
+    p. 325 (its hypothesis "Let X be an elliptic curve, and fix a point P0 in
+    X", its last clause identifying the group structure of 4.10.6 with that of
+    4.7), Remarks 4.10.5 and 4.10.6 at printed pp. 323--324 (the definition of a
+    group scheme over a base, and "the Jacobian variety J of a curve X is
+    automatically a group scheme over k"), and the definition "an abelian
+    variety is a complete group variety over k" at printed p. 140. Those give
+    the fibre-level statement and not the relative one: the theorem fixes the
+    curve over k and varies the test scheme T, so it does not say that a family
+    E to S with a section is a group scheme over S, which is what the step
+    states and what the printed hint asserts. The step therefore stays the
+    card's own, and the conclusion stays relative to it. Not checked: no other
+    source was searched for this step in this pass, and no step of the exercise
+    was re-derived.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step abelian-scheme now carries a published proof of the relative statement,
+    which is what issue #155 asks for, and the card no longer says that the step
+    is unproved. Read for it: Katz and Mazur, *Arithmetic Moduli of Elliptic
+    Curves* (1985), (2.1.1) and Theorem 2.1.2 (Abel) with its proof, printed
+    pp. 63--66, in the text version
+    tmp/sources/katz-mazur-arithmetic-moduli-of-elliptic-curves.md and on the
+    rendered pages of
+    tmp/sources/katz-mazur-arithmetic-moduli-of-elliptic-curves.pdf, where
+    printed p. N is PDF p. N+12, so that printed p. 63 is PDF p. 75 and the
+    proof's last page, printed p. 66, is PDF p. 78. Their (2.1.1) defines an
+    elliptic curve over an arbitrary scheme as a proper smooth curve with
+    geometrically connected fibres of genus one and a section, which is the
+    exercise's data, and Theorem 2.1.2 supplies the commutative group-scheme
+    structure by transporting that of the relative Picard functor along Abel's
+    map, so the step's statement is a published theorem and not the card's own.
+    Two of that proof's citations were read in the same text: Mumford,
+    *Abelian Varieties* (1970), p. 53, for the invertibility and base-change
+    compatibility of the pushforward of a fibrewise-degree-one sheaf, and their
+    (1.2.7), that an effective Cartier divisor of degree one in E/S is a
+    section, which the proof quotes on printed p. 66. Checked against the book
+    for the comparison with Hartshorne's language: the definition of a group
+    scheme before Remark 4.10.5, printed p. 324, Theorem 4.11 with its last
+    clause identifying the group structure of Remark 4.10.6, printed p. 325,
+    and the printed exercise, IV Ex. 4.22 on printed p. 340, whose statement is
+    unchanged. The conclusion of the solution and the remark on the published
+    solution now read the step as proved. Not checked: Mumford's p. 53 itself,
+    which is in no retained set and is cited as Katz and Mazur cite it;
+    Deligne, *Theorie de Hodge II*, 4.4.3, and the results of Peters and
+    Steenbrink and of Strauch that Youcis cites, as before; and the card's other
+    steps were not re-derived in this pass.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The fibre input of step abelian-scheme is now cited, and the first of the
+    two citations the step rests on is a source on this machine. Altman and
+    Kleiman, *Introduction to Grothendieck Duality Theory*, Lecture Notes in
+    Mathematics 146 (1970), read in
+    tmp/sources/altman-kleiman-introduction-to-grothendieck-duality.md and on
+    the rendered pages of
+    tmp/sources/altman-kleiman-introduction-to-grothendieck-duality.pdf, where
+    printed p. N is PDF p. N+2 (printed p. 164 is PDF p. 166, printed p. 167 is
+    PDF p. 169): Theorem (1.4) (Riemann), printed p. 164, gives
+    chi(D) = deg(D) + chi(O_X) for X proper over an artinian ring, and Theorem
+    (1.15) (Roch), printed p. 167, gives H^0(X, Hom(F, omega_X)) isomorphic to
+    H^1(X, F)^* for X a reduced proper curve over a field and F a coherent
+    subsheaf of K_X. Applied to an invertible sheaf of degree one on a curve of
+    genus one they give h^1 = 0 and h^0 = 1, which is the rank the pushforward
+    is asserted to have fibrewise. The base-change half is left as Katz and
+    Mazur give it, cited to Mumford, Abelian Varieties (1970), p. 53, and the
+    step now also names the book's own form of that theorem, III.12.11
+    (Cohomology and Base Change) at printed p. 290 with Corollary 12.9
+    (Grauert) at printed p. 288, read in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md between the page markers
+    of PDF pages 305 and 306, and before that of 304. No step of this card
+    needs Mumford, Fogarty and Kirwan, Geometric Invariant Theory: the earlier
+    records named its Theorem 6.14 as a candidate relative source, the step is
+    now carried by Katz and Mazur's Theorem 2.1.2, and that book is not
+    available in full on this machine. Not checked: Mumford's Abelian Varieties,
+    p. 53, which is cited as Katz and Mazur cite it; and Altman and Kleiman's
+    Chapter VIII beyond the theorems named, in particular the residue theory of
+    its sections 2 to 4, which this step does not use.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Mumford's page was obtained and read, so the base-change citation of step
+    abelian-scheme is now verified rather than transcribed. Source: D. Mumford,
+    *Abelian Varieties*, Tata Institute of Fundamental Research Studies in
+    Mathematics 5, Oxford University Press, 1970, Chapter II section 5,
+    "Cohomology and base change", read on a scan fetched for this check from
+    wstein.org and kept for the reading only; that scan puts two book pages on a
+    PDF page, printed pp. 46--47 being PDF p. 28, printed pp. 50--51 PDF p. 30
+    and printed pp. 52--53 PDF p. 31, each folio read off the page. What stands
+    there: the section's main theorem, printed p. 46, "Let f: X to Y be a proper
+    morphism of noetherian schemes with Y = Spec A affine, and F a coherent
+    sheaf on X, flat over Y", gives a finite complex of finitely generated
+    projective A-modules computing H^p(X x_Y Spec B, F x_A B); Corollary 2,
+    printed pp. 50--51, states that for Y reduced and connected and F as in the
+    theorem, the constancy of y to dim H^p(X_y, F_y) is equivalent to R^pf_*(F)
+    being locally free with the natural map R^pf_*(F) x k(y) to H^p(X_y, F_y) an
+    isomorphism for all y; Corollary 3, printed p. 53, states that if
+    H^p(X_y, F_y) vanishes for all y, then R^{p-1}f_*(F) x k(y) to
+    H^p-1(X_y, F_y) is an isomorphism for all y. Corollary 3 at p = 1 and
+    Corollary 2 at p = 0 are exactly the two facts the step attributes to
+    Mumford's p. 53, and the step now names both with their pages. The previous
+    event's caveat that Hartshorne III.12.11 asks for a projective morphism is
+    discharged: Mumford's theorem is stated for a proper morphism, so nothing in
+    the step needs projectivity, and the rendered step no longer points to
+    Hartshorne for this statement, the page numbers standing in the event above.
+    Not checked: Mumford's printed pp. 48--49, 52 and 54 onwards, that is the
+    proof of the section's theorem and the rest of Chapter II; the scan is not in
+    a retained set and was removed after the reading, so a later session must
+    fetch it again before re-reading these pages.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The first of the two analytic inputs of Youcis's proof is now read, so the
+    step that transcribes him cites it by page and by its statement. Source:
+    P. Deligne, "Théorie de Hodge : II", Publications mathématiques de
+    l'I.H.É.S. 40 (1971), pp. 5--57, read in the numdam copy, where the first
+    PDF page is numdam's notice, PDF p. 2 is printed p. 5 and PDF p. 3 carries
+    the folio 6, so printed p. N is PDF p. N-3; the pages cited were read in the
+    text layer at those positions and their folios checked. Rappel (4.4.3),
+    printed p. 51, reads: "Soit S un schéma lisse de type fini sur C. La
+    construction (4.4.2) établit une équivalence de catégorie entre: a) la
+    catégorie des schémas abéliens sur S; b) la catégorie des familles continues
+    polarisables de structures de Hodge H de type (-1,0)+(0,-1) sur S, telles
+    que H_Z soit sans torsion et que la filtration de Hodge varie
+    holomorphiquement sur S." The construction is (4.4.2), printed p. 50, under
+    section 4.4, "Homomorphismes de schémas abéliens": for an abelian scheme
+    f: X to S the exponential gives the exact sequence 0 to R_1f_*Z to Lie(X) to
+    X to 0 and the Hodge filtration is 0 to Ker(a) to R_1f_*Z (x) O_S to Lie(X)
+    to 0, with (4.4.1) on the same page giving R_1f_*Z for a proper smooth f as
+    the local system of homology of the fibres, of weight -1. So Youcis's
+    sentence is Deligne's (4.4.3) and his map is Deligne's construction. Two
+    qualifications now on the card: Deligne states it as a rappel, not as a
+    theorem proved there, and he gives its essential surjectivity to Borel [13],
+    full faithfulness resting on the Hom-scheme of two abelian schemes being
+    unramified over the base. Not checked: Deligne's section 4.4 beyond printed
+    pp. 50--51, Borel's paper as he cites it, and the manuscript's other
+    sections; the second analytic input, the constancy of the Q-variation over a
+    compactification, still rests on the cited Peters and Steenbrink and on
+    Strauch's rigidity result, neither of which is on this machine, and the
+    numdam copy was removed after the reading.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Correction of the pagination and of the rendered derivation of Katz and
+    Mazur's proof of Theorem 2.1.2, in the event of this date above that gives
+    them as printed pp. 63--66, and in the rendered solution and remark. (i) The statement of Theorem 2.1.2 ends on
+    printed p. 63, which is PDF p. 75; the proof begins on printed p. 64, PDF
+    p. 76; and its last line, "are inverse isomorphisms. Q.E.D.", and the
+    invocation of (1.2.7) stand on printed p. 67, PDF p. 79, where (2.2) begins
+    below them. Printed p. 66, PDF p. 78, stops in the middle of the
+    effective-Cartier-divisor argument. (ii) The rendered derivation is now
+    Katz and Mazur's argument in their order: the bijection
+    E(T) -> Pic^(1)(E_T/T) (printed p. 64); the reduction to T = S and the
+    Zariski-local patching using f_*O_E = O_S (printed p. 65); the reduction to
+    S affine noetherian (printed p. 66); R^1f_*L = 0 because R^1f_* is of
+    formation compatible with arbitrary base change for f proper and flat of
+    relative dimension one (Katz and Mazur's assertion, with the fibre-wise
+    form in Mumford's Corollary 3 at p = 2), and over
+    an algebraically closed field H^1 of an invertible sheaf of degree one on a
+    genus-one curve vanishes, so the coherent sheaf R^1f_*L has zero fibres and
+    is zero by Nakayama; f_*L
+    locally free of rank one from Mumford, *Abelian Varieties*, printed pp. 46
+    and 53, Corollary 3 at p = 1 with the finite projective complex of the main
+    theorem at p. 46 carrying the base change, the fibres H^0 being
+    one-dimensional by Altman and
+    Kleiman (1.4) at printed p. 164 and (1.15) at printed p. 167; and a local
+    basis of f_*L giving an effective Cartier divisor of degree one, hence a
+    section by (1.2.7) on printed p. 67. The earlier rendering, which used
+    Mumford's Corollary 3 at p = 1 for "constancy of h^0" and Corollary 2 at
+    p = 0 for the invertibility, with S = A^1_C reduced and connected, is
+    withdrawn: Corollary 3 at p = 1 is the base-change isomorphism for
+    R^0f_*, the constancy of h^0 is the fibre computation, the vanishing of
+    R^1f_* is the relative-dimension-one and Nakayama argument, and no
+    reducedness or connectedness of S or of T is used. Checked in this pass:
+    the pages of the scan named in (i), at 160 dpi; Mumford's printed
+    pp. 50--53 on the wstein.org scan, whose folios were read; and Altman and
+    Kleiman's printed pp. 164 and 167, whose folios were read. Not checked:
+    Mumford's printed pp. 54 onwards, and the card's other steps were not
+    re-derived.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Correction of the notation of Deligne (4.4.1) and (4.4.2) in the event of
+    this date above and in the rendered step deligne-argument: the sheaf there
+    is the homology sheaf R_1f_*Z, not the cohomology sheaf R^1f_*Z. Read for
+    this correction in P. Deligne, "Théorie de Hodge : II", Publications
+    mathématiques de l'I.H.É.S. 40 (1971), pp. 5--57, the copy of the numdam
+    PDF at publications.ias.edu (Number15.pdf), where the first PDF page is
+    numdam's notice, so printed p. N is PDF p. N-3, and printed p. 50, PDF
+    p. 47, was read with its folio: (4.4.1) reads "Pour f: X to S un morphisme
+    propre et lisse, on désignera par R_1f_*Z le système local sur S^an de
+    l'homologie des fibres de f. En chaque point s in S, (R_1f_*Z)_s isomorphe
+    à H_1(X_s,Z) est muni d'une structure de Hodge de poids -1, duale de la
+    structure de Hodge de H^1(X_s,Z). Cette structure varie continûment avec
+    s in S." and (4.4.2) reads "l'exponentielle définit une suite exacte de
+    faisceaux sur S^an 0 to R_1f_*Z to Lie(X) to X to 0, et la filtration de
+    Hodge est la suite exacte courte 0 to Ker(alpha) to R_1f_*Z (x) O to
+    Lie(X) to 0." The dual of R_1f_*Z is R^1f_*Z, so Youcis's quoted
+    (R^1f^an_*Z)^vee and the event's phrase "the local system of homology of
+    the fibres, of weight -1" stand. Not checked: Deligne's section 4.4 beyond
+    printed pp. 50--51, and the rest of the manuscript.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Correction of the base-change citations of step abelian-scheme, in the
+    rendered derivation and in the event of this date above that records the
+    fifth pass. Two clauses were overstated. (i) The arbitrary-base-change
+    compatibility of R^1f_*L is Katz and Mazur's assertion on printed p. 66,
+    "being an R^1f_* for f proper and flat of relative dimension one"; it is
+    not a case of Mumford's Corollary 3, which at printed p. 53 states only
+    the residue-fibre isomorphism
+    R^{p-1}f_*(F) x k(y) -> H^{p-1}(X_y, F_y), and at p = 2, H^2 of a curve
+    vanishing, gives R^1f_*L x k(y) -> H^1(E_y, L_y). (ii) Corollary 3 at
+    p = 1 gives the isomorphism f_*L x k(y) -> H^0(E_y, L_y) but not local
+    freeness over a base that need not be reduced: Mumford's Lemma 1 and
+    Corollary 2, printed pp. 50--51, need Y reduced, and over an arbitrary
+    base the finite complex of the main theorem, printed p. 46, carries the
+    argument, as in the proof of Corollary 3 on printed p. 53. Read for this
+    correction: D. Mumford, *Abelian Varieties* (1970), printed pp. 46, 50--51
+    and 53, on the wstein.org scan, where printed pp. 46--47 are PDF p. 28,
+    printed pp. 50--51 are PDF p. 30 and printed pp. 52--53 are PDF p. 31,
+    with the folios read off the pages; and Katz and Mazur, printed p. 66,
+    PDF p. 78, whose sentence is quoted in the rendered step. Nothing else in
+    the step changes: Theorem 2.1.2, printed p. 63 with its proof on printed
+    pp. 64--67, stands. Not checked: Mumford's printed pp. 48--49, 52 and 54
+    onwards; and the card's other steps were not re-derived.
 ---
 
 ::: {.problem}
@@ -288,21 +527,40 @@ $$
 S=\AA^1_{\CC}=\Spec\CC[t],
 $$
 let $\pi:E\to S$ be the family, and let $O:S\to E$ be the given section.
-The proof is A. Youcis, *Abelian schemes over the integers* (2016), section "The case over the complex line".
+The proof is A. Youcis, *Abelian schemes over the integers* (2016), section "The case over the complex line", once the family is one of abelian varieties over $S$, which is step [](#abelian-scheme){.pf-ref} and is Katz and Mazur's Theorem 2.1.2.
 His Theorem 8 is stronger than the exercise and is applied to $V=S$ in step [](#conclusion){.pf-ref}.
 
 ::: pf
 
 ::: {.pf-step #abelian-scheme}
 
-The section $O$ makes each fibre $E_t$ an elliptic curve with origin $O(t)$, so $E\to S$ is a family of elliptic curves pointed by $O$; that it is consequently a family of abelian varieties over $S$ in the sense of Youcis, a smooth proper group scheme with connected fibres, is the card's own step.
+$E\to S$ is a smooth proper group scheme over $S$ with geometrically connected fibres, with identity $O$: a family of abelian varieties over $S$ in the sense of Youcis.
 
 ::: pf-proof
 
-This step is the card's own.
+The data are an elliptic curve over $S$ in the sense of Katz and Mazur, *Arithmetic Moduli of Elliptic Curves* (1985), (2.1.1): "Let $S$ be an arbitrary scheme. An elliptic curve $E/S$ is a proper smooth curve" --- their display carries the morphisms $E\to S$ and the section "$0$" --- "with geometrically connected fibers all of genus one, given with a section '$0$'." The exercise gives exactly that: $\pi\colon E\to S$ proper and smooth with fibres of genus $1$, and the section $O$.
 
-The printed hint of the exercise begins "Use the section to fix the group structure on the fibres", and each fibre $E_t$ is a smooth curve of genus $1$ with the point $O(t)$: a genus-one curve with a chosen point is an elliptic curve, and its group law has that point as identity.
-Youcis's definition, in his section "Two statements of the main result", is "an abelian scheme $\mathscr A/S$ is a smooth proper group scheme with connected fibers", and the passage from the pointed family to a smooth proper group scheme over $S$ needs two things that are not proved here: that the fibrewise group laws are the restrictions of morphisms $E\times_SE\to E$ and $E\to E$ over $S$, and the representability of the relative Picard functor $\Pic^0_{E/S}$ together with the identification $E\cong\Pic^0_{E/S}$ that would supply them. The printed hint asserts the first of the two.
+Katz and Mazur, Theorem 2.1.2 (Abel), proved on printed pp. 64--67: "There exists a unique structure of commutative group-scheme on $E/S$ such that for any $S$-scheme $T$, and any three points $P,Q,R$ in $E(T)=E_T(T)$, we have
+$$
+P+Q=R
+$$
+if and only if there exists an invertible sheaf $\mathcal L_0$ on $T$ and an isomorphism of invertible sheaves on $E_T$
+$$
+I^{-1}(P)\otimes I^{-1}(Q)\otimes I(0)\cong I^{-1}(R)\otimes f_T^*(\mathcal L_0)."
+$$
+There $I(P)$ is the ideal sheaf of a section $P$ viewed as an effective Cartier divisor of degree one in $E$, and $f_T\colon E_T\to T$ is the projection.
+
+Their proof is Abel's theorem in the relative setting, and it runs on printed pp. 64--67. The map $E(T)\to\Pic^{(1)}(E_T/T)$, $P\mapsto$ the class of $I^{-1}(P)$, where $\Pic^{(1)}(E_T/T)$ is the set of isomorphism classes of invertible sheaves on $E_T$ that are fibrewise of degree one modulo those of the form $f_T^*(\mathcal L_0)$ with $\mathcal L_0$ on $T$, is what they prove bijective (printed pp. 64--67). Given the bijection, $I^{-1}(P)\otimes I^{-1}(Q)\otimes I(0)$ is fibrewise of degree one, hence is isomorphic to $I^{-1}(R)\otimes f_T^*(\mathcal L_0)$ for a unique $R\in E(T)$; composing with $\Pic^{(1)}(E_T/T)\to\Pic^{(0)}(E_T/T)$, $\mathcal L\mapsto\mathcal L\otimes I(0)$, transports the group law of the abelian group $\Pic^{(0)}(E_T/T)$ to $E(T)$, functorially in $T$, and the bijection is what makes that law unique.
+
+For the bijection they reduce to $T=S$ (printed p. 65) and then show that the question is Zariski local on $S$: if $\{U_i\}$ is an affine open cover and $\phi_i\colon\mathcal L\cong\mathcal L'\otimes f^*(\mathcal L_{0,i})$ on $f^{-1}(U_i)$, then $f_*\OO_E=\OO_S$ and $f_*f^*(\mathcal L_{0,i})=\mathcal L_{0,i}$ show that $f_*(\mathcal L^{-1}\otimes\mathcal L')$ and $f_*(\mathcal L\otimes(\mathcal L')^{-1})$ are inverse invertible sheaves, so there are $\mathcal L_0$ on $S$, namely $f_*(\mathcal L\otimes(\mathcal L')^{-1})$, and an isomorphism $\mathcal L\cong\mathcal L'\otimes f^*(\mathcal L_0)$ (printed p. 65). Since $E/S$ is of finite presentation, this leaves $S$ affine noetherian (printed p. 66).
+
+Let $\mathcal L$ be invertible on $E$, fibrewise of degree one. Their claim (printed p. 66) is that $f_*\mathcal L$ is invertible of formation compatible with arbitrary base change and that $R^1f_*\mathcal L=0$, and they prove the vanishing first: $R^1f_*\mathcal L$ is of formation compatible with arbitrary base change --- "being an $R^1f_*$ for $f$ proper and flat of relative dimension one", which is Katz and Mazur's assertion; what Mumford's Corollary 3 at printed p. 53 states is the residue-fibre isomorphism, and at $p=2$, $H^2$ of a curve vanishing, it gives $R^1f_*\mathcal L\otimes k(y)\cong H^1(E_y,\mathcal L_y)$ --- and over an algebraically closed field $H^1(E,\mathcal L)=0$ because $\deg\mathcal L=1>2g-2=0$, so the coherent sheaf $R^1f_*\mathcal L$ has all fibres zero and vanishes by Nakayama's lemma. Then Mumford, *Abelian Varieties* (1970), p. 53, cited by Katz and Mazur as [Mum 4], gives that $f_*\mathcal L$ is locally free and of formation compatible with arbitrary base change: Corollary 3 there, at $p=1$, is the isomorphism $f_*\mathcal L\otimes k(y)\cong H^0(E_y,\mathcal L_y)$ for every $y$, and the right side is one-dimensional for every $y$, being so over an algebraic closure of $k(y)$. The one-dimensional fibres alone give local freeness only over a reduced base, by Mumford's Lemma 1 on printed p. 51; over the arbitrary, possibly nonreduced base the finite complex of his main theorem on printed p. 46 carries it: over an affine open $\Spec A\subseteq S$ there is a finite complex $K^\bullet$ of finitely generated projective $A$-modules with $H^p(K^\bullet\otimes_A B)\cong H^p(E\times_S\Spec B,\mathcal L_B)$ for every $A$-algebra $B$, where $\mathcal L_B$ is the pullback of $\mathcal L$, every $H^p(K^\bullet\otimes_A k(y))$ with $p\ne0$ vanishes because it is $H^p(E_y,\mathcal L_y)$ on a curve with $H^1(E_y,\mathcal L_y)=0$, and the splitting argument in Mumford's proof of Corollary 3, makes $H^0(K^\bullet)=f_*\mathcal L$ a direct summand of the projective $K^0$, of rank one, with $f_*\mathcal L\otimes_A B\cong H^0(E\times_S\Spec B,\mathcal L_B)$ for every $A$-algebra $B$. Over an algebraically closed field $h^0(\mathcal L)=\chi(\mathcal L)=\deg\mathcal L+\chi(\OO)=1+0=1$ by Altman and Kleiman, *Introduction to Grothendieck Duality Theory* (1970), Theorem (1.4) (Riemann), and $H^1(\mathcal L)\cong H^0(\omega\otimes\mathcal L^{-1})^*=0$ by their Theorem (1.15) (Roch), the sheaf $\omega\otimes\mathcal L^{-1}$ having degree $2g-2-1=-1$.
+
+With $f_*\mathcal L$ invertible they choose a local $\OO_S$-basis $\ell$ and show that $\OO_E\to\mathcal L$, $1\mapsto\ell$, is injective and remains so after any base change, reducing to $S$ the spectrum of a field, where $\ell$ is a nonzero $k$-basis (printed p. 67); hence $(\mathcal L,\ell)$ is an effective Cartier divisor in $E/S$, of degree one fibrewise, and by (1.2.7), printed pp. 10--11 and invoked on printed p. 67, an effective Cartier divisor of degree one is a section $P\in E(S)$. The two constructions are inverse to each other, so the map $E(S)\to\Pic^{(1)}(E/S)$ is bijective (printed p. 67).
+
+That is a group scheme over $S$ with identity $O$ in the sense of the definition before Remark 4.10.5: the identity is the section $O$, the inverse and the operation are morphisms over $S$, and the two axioms asserted there are the group-scheme axioms of Katz and Mazur. Since $\pi$ is smooth and proper with geometrically connected fibres, $E$ is an abelian scheme over $S$ in the sense of Youcis, "a smooth proper group scheme with connected fibers", from his section "Two statements of the main result".
+
+On a fibre the law is the classical one. At $T=\Spec\CC$ over a closed point $t\in S$ the condition reads $I^{-1}(P)\otimes I^{-1}(Q)\otimes I(O)\cong I^{-1}(R)$ in $\Pic E_t$ for $P+Q=R$, which is the identification of the genus-one curve $E_t$ with its own Picard group of degree zero, Hartshorne Theorem 4.11, whose last clause identifies the group structure of Remark 4.10.6, with the classical one.
 
 :::
 
@@ -342,7 +600,7 @@ Proof of Theorem 8, as published: the local system of the family is constant bec
 
 Youcis's proof has four moves, each quoted or cited as he gives it.
 
-First, "By 4.4.3 of Deligne's *Théorie de Hodge II* there is an equivalence of categories between abelian schemes and polarizable $\ZZ$-variations of Hodge structure. The map is given by $\mathscr A\mapsto(R^1f^{\text{an}}_*\underline{\ZZ})^\vee$." The cited statement is Deligne, *Théorie de Hodge II*, 4.4.3.
+First, "By 4.4.3 of Deligne's *Théorie de Hodge II* there is an equivalence of categories between abelian schemes and polarizable $\ZZ$-variations of Hodge structure. The map is given by $\mathscr A\mapsto(R^1f^{\text{an}}_*\underline{\ZZ})^\vee$." The cited statement is Deligne, *Théorie de Hodge II*, (4.4.3): "Soit $S$ un schéma lisse de type fini sur $\CC$. La construction (4.4.2) établit une équivalence de catégorie entre: a) la catégorie des schémas abéliens sur $S$; b) la catégorie des familles continues polarisables de structures de Hodge $H$ de type $(-1,0)+(0,-1)$ sur $S$, telles que $H_\ZZ$ soit sans torsion et que la filtration de Hodge varie holomorphiquement sur $S$." The construction it names is (4.4.2): for an abelian scheme $f\colon X\to S$ the exponential gives the exact sequence $0\to R_1f_*\ZZ\to\operatorname{Lie}(X)\to X\to 0$, and the Hodge filtration is the exact sequence $0\to\ker(a)\to R_1f_*\ZZ\otimes\OO_S\to\operatorname{Lie}(X)\to 0$. Deligne states the equivalence as a *rappel* and gives its essential surjectivity to Borel [13], the full faithfulness resting on the scheme of homomorphisms of two abelian schemes over $S$ being unramified over $S$.
 
 Second, "since $V^\text{an}$ is simply connected then the $\ZZ$-local system $(R^1f^{\text{an}}_*\underline{\ZZ})^\vee$ is a constant local system but, a priori, one might be worried that the Hodge filtration is not constant."
 
@@ -368,7 +626,7 @@ $$
 
 Take $V=S=\AA^1_\CC$ in step [](#theorem-eight){.pf-ref}.
 $S$ is a smooth connected algebraic variety over $\CC$, and $S^\text{an}=\CC$ is simply connected, being contractible: the homotopy $x\mapsto(1-s)x$, $0\le s\le1$, contracts $\CC$ to the origin.
-Step [](#abelian-scheme){.pf-ref} is what makes $E\to S$ a family of abelian varieties over $V=S$; that step is the card's own and unproved, so what follows is relative to it.
+Step [](#abelian-scheme){.pf-ref} makes $E\to S$ a family of abelian varieties over $V=S$.
 With it, Theorem 8 applies through its proof in step [](#deligne-argument){.pf-ref} and $E\to S$ is isotrivial, that is, by step [](#constant-family){.pf-ref}, a product $E_0\times_\CC\AA^1_\CC$ over $\AA^1_\CC$.
 That is the triviality the exercise asks for.
 
@@ -383,12 +641,12 @@ That is the triviality the exercise asks for.
 ::: {.remark title="Published solution"}
 
 Youcis's Theorem 8, section "The case over the complex line", proves the exercise once the family is one of abelian varieties in his sense, and more: the base may be any smooth connected complex algebraic variety with simply connected analytification, and the fibres may be abelian varieties of any dimension.
-The passage from the exercise's family, which carries a section, to a family of abelian varieties is step [](#abelian-scheme){.pf-ref}, which is the card's own and unproved.
-Its two analytic inputs are cited rather than proved there: the equivalence of Deligne, *Théorie de Hodge II*, 4.4.3, and the constancy of the $\QQ$-variation of Hodge structure over a compactification, for which his remark after the proof invokes the cited result of Peters and Steenbrink together with the rigidity result of Strauch that he takes from a MathOverflow post.
+The passage from the exercise's family, which carries a section, to a family of abelian varieties is step [](#abelian-scheme){.pf-ref}: Katz and Mazur's Theorem 2.1.2, with its proof on printed pp. 64--67. The printed hint's first clause, "Use the section to fix the group structure on the fibres", asks for exactly that theorem.
+Its two analytic inputs are cited rather than proved there: the equivalence of Deligne, *Théorie de Hodge II*, (4.4.3), stated there as a *rappel* with its essential surjectivity given to Borel, and the constancy of the $\QQ$-variation of Hodge structure over a compactification, for which his remark after the proof invokes the cited result of Peters and Steenbrink together with the rigidity result of Strauch that he takes from a MathOverflow post.
 The section closes with his remark that the theorem "becomes wildly false" outside the algebraic category, the family of elliptic curves over the upper half-plane $\halfplane$ with $g_4$ and $g_6$ the level-one modular forms being non-isotrivial although $\halfplane$ is simply connected, and that $\halfplane$ is not algebraic is what saves the theorem.
 
 The printed hint follows a different route: the points of order $2$ form an étale cover of $\AA^1_\CC$, hence are four disjoint sections, and the Legendre parameter $\lambda$ they define is a morphism $\AA^1_\CC\to\AA^1_\CC\setminus\{0,1\}$, hence constant.
-Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.22, printed p. 95, carries that hint out: the four $2$-torsion sections, four copies of $\AA^1_\CC$ because $\AA^1_\CC$ is simply connected, the coordinates $\infty,0,1,\lambda$ on each fibre, and $\lambda$ constant.
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.22, carries that hint out: the four $2$-torsion sections, four copies of $\AA^1_\CC$ because $\AA^1_\CC$ is simply connected, the coordinates $\infty,0,1,\lambda$ on each fibre, and $\lambda$ constant.
 That route ends at the constancy of $\lambda$, which is equality of the fibres, and does not by itself give the triviality of the family.
 
 :::

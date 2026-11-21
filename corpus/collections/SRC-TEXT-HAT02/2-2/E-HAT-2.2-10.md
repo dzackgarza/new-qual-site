@@ -82,14 +82,14 @@ and the other integral homology groups vanish.
 
 ::: pf-proof
 
-This is DeMason's computation for Hatcher 2.2.10, printed p. 76 of `tmp/sources/demason-m382c-hatcher-20210404.pdf`. Hatcher's CW boundary map (Theorem 2.35, p. 139) is the one used above; no assertion is made that $\ZZ\to\ZZ_2\oplus\ZZ_2$ is injective.
+This is DeMason's computation for Hatcher, §2.2 Exercise 10. Hatcher's CW boundary map (Theorem 2.35) is the one used above; no assertion is made that $\ZZ\to\ZZ_2\oplus\ZZ_2$ is injective.
 :::
 
 :::
 
 ::: {.pf-step #s2}
 
-For $n=3$, the quotient has the corresponding standard cellular structure, whose top attaching maps are those of $\RP^3$: two opposite orientation components cancel, with degree $1+(-1)^3=0$ by the cellular boundary computation of Theorem 2.35 (p. 139). Thus $\partial_3=0$. The chain complex simplifies to
+For $n=3$, the quotient has the corresponding standard cellular structure, whose top attaching maps are those of $\RP^3$: two opposite orientation components cancel, with degree $1+(-1)^3=0$ by the cellular boundary computation of Theorem 2.35. Thus $\partial_3=0$. The chain complex simplifies to
 $$
 \ZZ^2\xrightarrow{\partial_3=0}\ZZ\xrightarrow{\ \partial_2=2\ }\ZZ\xrightarrow{\ \partial_1=0\ }\ZZ
 $$
@@ -100,7 +100,7 @@ $$
 
 ::: pf-proof
 
-The attaching maps and opposite orientations are shown by DeMason on printed p. 77 of `tmp/sources/demason-m382c-hatcher-20210404.pdf`. The relation $\partial_2[e]=2[e]$ and $\partial_3=0$ then give the displayed homology directly. These answers also agree with the repaired Mayer--Vietoris computation using two $\RP^3$ hemispheres with intersection $\RP^2$: $H_2(\RP^3)=0$, while $H_3(\RP^3)=\ZZ$ accounts for the two free summands in degree $3$.
+The attaching maps and opposite orientations are shown by DeMason in his solution to §2.2 Exercise 10. The relation $\partial_2[e]=2[e]$ and $\partial_3=0$ then give the displayed homology directly. These answers also agree with the repaired Mayer--Vietoris computation using two $\RP^3$ hemispheres with intersection $\RP^2$: $H_2(\RP^3)=0$, while $H_3(\RP^3)=\ZZ$ accounts for the two free summands in degree $3$.
 :::
 
 :::
@@ -108,6 +108,6 @@ The attaching maps and opposite orientations are shown by DeMason on printed p. 
 :::
 
 
-The cited source is **Kenneth DeMason, *M382C Full Credit HW Problems* (4 April 2021)**, Hatcher 2.2.10, printed pp. 76--77, obtained from [the author's resources page](https://math.mcmaster.ca/~demasonk/resources.html), which links [`DeMason, Kenneth M382C HW Full Credit 20210404.pdf`](https://math.mcmaster.ca/~demasonk/files/exercises/DeMason%2C%20Kenneth%20M382C%20HW%20Full%20Credit%2020210404.pdf), and held locally as `tmp/sources/demason-m382c-hatcher-20210404.pdf`.
+The cited source is **Kenneth DeMason, *M382C Full Credit HW Problems* (4 April 2021)**, Hatcher 2.2.10, obtained from [the author's resources page](https://math.mcmaster.ca/~demasonk/resources.html), which links [`DeMason, Kenneth M382C HW Full Credit 20210404.pdf`](https://math.mcmaster.ca/~demasonk/files/exercises/DeMason%2C%20Kenneth%20M382C%20HW%20Full%20Credit%2020210404.pdf), and held locally as `tmp/sources/demason-m382c-hatcher-20210404.pdf`.
 :::
 

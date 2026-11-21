@@ -5,7 +5,9 @@ kind: problem
 title: Compactness of a set of Lipschitz functions with unit $L^2$ norm in $C[0,1]$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Arzela-Ascoli Theorem
+  - Function Spaces
 relations: []
 review: draft
 audit:

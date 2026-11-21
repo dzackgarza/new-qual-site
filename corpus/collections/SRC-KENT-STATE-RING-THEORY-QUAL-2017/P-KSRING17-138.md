@@ -23,6 +23,8 @@ Show that if R is a commutative Noetherian ring with identity, then the polynomi
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination paper alone, so the argument is the card's own.
+
 Let
 $$
 I\trianglelefteq R[x].

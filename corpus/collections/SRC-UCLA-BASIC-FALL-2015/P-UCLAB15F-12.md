@@ -6,7 +6,8 @@ title: Positive definiteness of a structured dense matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Positive Definite Matrices
 relations: []
 review: draft
 audit:

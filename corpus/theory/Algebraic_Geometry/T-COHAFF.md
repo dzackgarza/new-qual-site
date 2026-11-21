@@ -28,10 +28,16 @@ Let $X = \Spec A$ with $A$ Noetherian and $\mcf \in \QCoh(X)$.
 Then $H^0(X, \mcf) = \globsec{X;\mcf}$ and $H^i(X, \mcf) = 0$ for all $i > 0$.
 :::
 
-::: {.remark title="Proof sketch"}
-Put $M = \globsec{X;\mcf}$, so $\mcf \cong \tilde M$.
-Take an injective resolution $M \injects I^\bullet$ in $\amod$ and sheafify: each $\tilde{I^j}$ is flasque, hence acyclic, so $\tilde{I^\bullet}$ computes the cohomology.
-Applying $\globsec{X;\wait}$ returns the original exact complex $M \injects I^\bullet$, and its higher cohomology is zero.
+::: {.proof}
+Put $M \coloneqq \globsec{X;\mcf}$; then $\mcf\cong\tilde M$ [@Har77, II.5.5].
+Take an injective resolution $0\to M\to I^\bullet$ in $\amod$, which exists because every $A$-module embeds in an injective one [@Har77, Proposition III.2.1A].
+Sheafifying gives an exact sequence of sheaves $0\to\tilde M\to\tilde I^\bullet$ on $X$, because $M\mapsto\tilde M$ is an exact functor [@Har77, II.5.5].
+Each $\tilde I^j$ is flasque, $I$ being injective over the Noetherian ring $A$ [@Har77, Proposition III.3.4], hence $\globsec{X;-}$-acyclic ([[D-COHFLQ]]); so $\tilde I^\bullet$ is a $\globsec{X;-}$-acyclic resolution of $\mcf$ and computes its cohomology [@Har77, Proposition III.1.2A]:
+$$
+H^i(X,\mcf)\cong h^i\big(\globsec{X;\tilde I^\bullet}\big).
+$$
+On $X=\Spec A$ the global sections of $\tilde N$ are $N$ [@Har77, II.5.5], so the complex on the right is $I^\bullet$ again; it is exact in positive degrees and has cohomology $M$ in degree $0$ because $I^\bullet$ resolves $M$.
+Hence $H^0(X,\mcf)=M=\globsec{X;\mcf}$ and $H^i(X,\mcf)=0$ for $i>0$.
 :::
 
 ::: {.proposition title="Čech computation"}

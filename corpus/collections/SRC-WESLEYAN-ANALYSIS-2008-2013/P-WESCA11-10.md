@@ -5,7 +5,8 @@ kind: problem
 title: 'Evaluate a real integral by residues'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residue Theorem
 relations: []
 review: draft
 audit:
@@ -24,6 +25,8 @@ using the residue theorem.
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the preliminary-examination papers alone, so the argument is the card's own.
 
 Set
 $$

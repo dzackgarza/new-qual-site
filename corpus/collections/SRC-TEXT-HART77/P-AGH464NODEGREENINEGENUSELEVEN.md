@@ -30,6 +30,58 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Printed exercise read: Hartshorne IV.6.4, printed p. 355 -- "There is no curve of degree 9 and
+    genus 11 in P^3. [Hint: Show that it would have to lie on a quadric surface, then use
+    (6.4.1).]" The card states it verbatim and carries the printed hint.
+
+    The proof read step by step; every step is correct. s1: deg 2H = 18 and deg K = 20. If 2H is
+    nonspecial, Riemann--Roch gives h^0 = 8; if it is special, Clifford gives h^0 at most 10, and
+    equality is excluded because it would make 2H a multiple of the hyperelliptic g^1_2, and then
+    the complete system |2H| would factor through the degree-two map and could not be an embedding,
+    although H very ample makes 2H very ample. So h^0 is at most 9, which is less than
+    h^0(P^3, O(2)) = 10, and a quadric contains X. s2: a plane curve of degree 9 has genus 28, so X
+    is not planar, and a reducible or doubled containing quadric would put X in a plane. s3: on a
+    nonsingular quadric a class (a,b) gives a + b = 9 and (a-1)(b-1) = 11, hence ab = 19 and
+    t^2 - 9t + 19 = 0, whose discriminant 5 is not a square. s4: on a quadric cone 9 = 2*4 + 1
+    gives genus 4*3 = 12, not 11.
+
+    Compared with the published solution. Lomont's 6.4, retained at
+    tmp/sources/hartshorne-solutions-lomont.md and beginning at line 266 of that file, runs the
+    same four cases but closes the special case with dim|D| at most (1/2) deg D = 9, that is
+    h^0(O_X(2)) at most 10, which does not contradict h^0(P^3, O(2)) = 10 and so does not produce
+    the quadric. The card's s1 excludes the equality case of Clifford and is sound where the
+    published solution is not; that difference is the substance of this read.
+
+    Changed in this pass: s4 now cites the printed cone genus, Hartshorne's Remark 6.4.1(d) at
+    printed p. 353, beside FE-CRVQUAD. No claim changed. (The first version of this event gave
+    the page as 368, which is the PDF page; corrected here.)
+
+    Not checked: the proof on FE-CRVQUAD (read, not re-derived), and Hartshorne V. Ex. 2.9, to
+    which Remark 6.4.1(d) is deferred and which is not read here.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    One clause added to s1, no claim changed. Clifford's theorem applies to an effective divisor,
+    and the step went straight from "suppose 2H is special" to Clifford's bound. The step now says
+    why 2H is effective: H is very ample, so 2H is very ample, so h^0(X, 2H) > 0 and 2H is linearly
+    equivalent to an effective divisor. A review of this card noted the gap as implicit; it is now
+    stated.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Citation form (#184). Every reference in this card's text is now carried by its numbered
+    statement: Exercise IV.6.4 with its printed hint; Theorem IV.6.4 (Castelnuovo); Theorem IV.5.4
+    (Clifford); Remark IV.6.4.1 with Exercise V.2.9 for the quadric-cone genus; Exercise II.8.4(g)
+    and Example II.8.20.3 for the genus formulas; and Yang Pi-Yeh's Solution 4.6.4 of the Hartshorne
+    exercises, cited by its exercise number. No page, PDF page or page offset appears in the card's
+    text; the locators inside the events of 2026-09-18 and 2026-11-19 are records of those passes and
+    are left as written (QUAL-11). The mathematics is unchanged in this pass.
 ---
 
 ::: {.problem}
@@ -39,6 +91,8 @@ Hint: Show that it would have to lie on a quadric surface, then use (6.4.1).
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise IV.6.4. Yang Pi-Yeh, *Hartshorne Solutions*, Solution 4.6.4, argues by the same Riemann--Roch and Clifford count on $\linearsystem{2D}$ that forces the quadric, and then applies (6.4.1) as the printed hint directs.
+
 Suppose for contradiction that
 $$
 X\subseteq\PP^3
@@ -68,8 +122,9 @@ $$
 h^0(X,2H)=18+1-11=8.
 $$
 
-Suppose instead that $2H$ is special.  By [[T-CRVCLIFF|Clifford's
-theorem]],
+Suppose instead that $2H$ is special.  The divisor $2H$ is effective: $H$ is
+very ample, so $2H$ is very ample, so $h^0(X,2H)>0$ and $2H$ is linearly
+equivalent to an effective divisor.  By [[T-CRVCLIFF|Clifford's theorem]],
 $$
 h^0(X,2H)\le\frac{18}{2}+1=10.
 $$
@@ -199,12 +254,13 @@ The quadric $Q$ cannot be an irreducible quadric cone.
 ::: pf-proof
 
 By step [](#s2){.pf-ref}, a singular containing quadric that remains is an irreducible
-quadric cone.  The cone calculation in [[FE-CRVQUAD]] says that an integral
-curve of odd degree
+quadric cone.  For a curve of odd degree
 $$
 d=2a+1
 $$
-on such a cone has arithmetic genus
+on a quadric cone the genus is $a^2-a$: Hartshorne's Remark IV.6.4.1(d),
+deferred there to Exercise V.2.9 and proved on [[FE-CRVQUAD]].
+Thus such a curve has arithmetic genus
 $$
 p_a=a(a-1).
 $$

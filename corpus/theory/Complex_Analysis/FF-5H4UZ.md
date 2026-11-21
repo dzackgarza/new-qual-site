@@ -31,5 +31,7 @@ Hence $\abs{f(z)}\le\abs{z}$ for $z\in\DD$, and $\abs{f'(0)}=\abs{g(0)}\le1$.
 
 If $\abs{f(z_0)}=\abs{z_0}$ for some $z_0\neq0$, then $\abs{g(z_0)}=1$; if $\abs{f'(0)}=1$, then $\abs{g(0)}=1$.
 In either case $\abs{g}\le1$ on $\DD$ attains the value $1$ at a point of $\DD$, so $\abs{g}$ has a local maximum there and $g$ is constant on a neighborhood of that point by the maximum modulus principle.
-By the [[C-F2ZZQ|identity theorem]], $g\equiv\lambda$ on $\DD$ for a constant $\lambda$ with $\abs{\lambda}=1$, so $f(z)=\lambda z$.
+By the [[T-SVF2W|identity principle]], $g\equiv\lambda$ on $\DD$ for a constant $\lambda$ with $\abs{\lambda}=1$, so $f(z)=\lambda z$.
+
+The argument is that of [@Ahl73, ch. 4, §3.4, Theorem 13]: the book applies the maximum principle to the function equal to $f(z)/z$ for $z\neq0$ and to $f'(0)$ at $0$, on the circle $\abs z=r$, and lets $r$ tend to $1$, and the equality statement $f(z)=cz$ with $\abs c=1$ is the theorem's own.
 :::

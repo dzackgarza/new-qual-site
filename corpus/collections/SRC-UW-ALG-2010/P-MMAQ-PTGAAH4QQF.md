@@ -17,6 +17,17 @@ audit:
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    One step asserted without justification that the minimal polynomial of $\alpha$ over $F$ exists and
+    has a root in $K$; it now derives both halves, that $\alpha$ is algebraic over $F$ because $N/F$ is
+    finite, and that the hypothesis on $K$ applies to $m_\alpha$ because that polynomial has
+    coefficients in $F$. The rest of the argument, including the primitive element step, the use of
+    normality to split $m_\alpha$ over $N$, and the degree count forcing $F(\beta) = N$, was already
+    justified step by step and is unchanged. The collection is a UW algebra qualifying exam paper with
+    no retained solutions, so the argument is the card's own. The statement is unchanged.
 ---
 
 ::: {.problem}
@@ -63,6 +74,11 @@ By the primitive element theorem, every finite separable extension is simple. Ap
 
 ::: {.pf-step #s4}
 Let $m_\alpha(x)\in F[x]$ be the minimal polynomial of $\alpha$ over $F$. By hypothesis, $m_\alpha$ has a root $\beta\in K$.
+
+
+::: pf-proof
+Since $N/F$ is finite by step [](#s2){.pf-ref} and $\alpha \in N$, the element $\alpha$ is algebraic over $F$, so its minimal polynomial $m_\alpha \in F[x]$ exists and is nonconstant; the hypothesis on $K$ then supplies a root $\beta \in K$ of $m_\alpha$.
+:::
 
 :::
 

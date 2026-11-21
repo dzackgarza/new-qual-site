@@ -23,6 +23,8 @@ audit:
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 Let $X$ be the distance from the needle's center to the nearest parallel line, and let $\Theta$ be the acute angle between the needle and the lines. Under the usual uniform random-throw model,
 $$
 X\sim\operatorname{Unif}[0,d/2],

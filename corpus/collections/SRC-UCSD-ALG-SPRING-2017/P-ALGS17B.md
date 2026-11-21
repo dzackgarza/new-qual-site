@@ -120,24 +120,14 @@ Therefore $n_7=8$.
 
 If $P$ is a Sylow $7$-subgroup, then its normalizer $N_G(P)$ has index $8$.
 
+Thus $H=N_G(P)$ is a subgroup of $G$ with $[G:H]=8$.
+
 ::: pf-proof
 
 The conjugation action of $G$ on its Sylow $7$-subgroups is transitive, and the stabilizer of $P$ is exactly $N_G(P)$. By orbit-stabilizer,
 $$
 [G:N_G(P)]=n_7=8.
 $$
-
-:::
-
-:::
-
-::: pf-step
-
-Thus $H=N_G(P)$ is a subgroup of $G$ with $[G:H]=8$.
-
-::: pf-proof
-
-This is step [](#s7){.pf-ref}.
 
 :::
 

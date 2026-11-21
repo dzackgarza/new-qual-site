@@ -45,6 +45,8 @@ $$
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem sheets alone, so the argument is the card's own.
+
 Let $X$ be path-connected with basepoint $x_0$, write $G=\pi_1(X,x_0)$, and
 let $h\colon G\to H_1(X;\ZZ)$ send the class of a based loop $\alpha$ to the
 homology class of $\alpha$ regarded as a singular $1$-cycle.

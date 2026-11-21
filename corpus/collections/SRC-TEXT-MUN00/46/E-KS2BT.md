@@ -78,6 +78,37 @@ audit:
     Y = X = R. The sentence now says that a ball of radius greater than 1 is the whole space, and that
     the balls of radius at most 1 determine the neighbourhoods, which is what the two inclusions are
     used for. Nothing else on the card was changed.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card stood in queue D: its solution was prose with no numbered step. It is now a `pf` with
+    nine steps covering (a) and (b), each carrying a `pf-proof`. Cited by numbered statement only:
+    Munkres, Topology, §46 Exercise 9, §26 Exercise 3 (a finite union of compact subspaces is
+    compact), §21 (the bounded uniform metric), §46 (the basis $B_C(f,\varepsilon)$ of the topology
+    of compact convergence) and Exercise 17.13 (a space is Hausdorff exactly when its diagonal is
+    closed); the two facts the book gives no numbered statement for are proved in the steps that use
+    them, that a closed subspace of a complete metric space is complete and that a $\rho_i$-Cauchy
+    sequence is uniformly Cauchy on $A_i$. The proof remains the card's
+    own: the self-study notes that reach Chapter 7 state this exercise without answering it.
+    Checked: that the countable family of basis elements chosen in (a) has compact supersets whose
+    interiors cover, that $C\subseteq A_N$ for some $N$ because the interiors increase and cover the
+    compact $C$, the two inclusions between $\rho$-balls and $B_C(f,\varepsilon)$-balls with the
+    truncation at $1$ accounted for, and that the compatibility set is an intersection of preimages
+    of diagonals.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Reread step by step on the owner's instruction, since the card carries the fallback proof rather
+    than a transcription. All nine steps stand, and three citations written in the event above were
+    wrong and are corrected here: the finite union of compact subspaces is Munkres §26 Exercise 3,
+    not a numbered theorem of §26; the closed diagonal is Exercise 17.13, not Theorem 17.8, whose
+    statement is that finite point sets in a Hausdorff space are closed; and the closedness of a
+    subspace of a complete metric space carries no numbered statement in the book, so step
+    `complete` now proves it instead of citing one. One reason inside a step was also wrong and is
+    replaced: a $\rho_i$-Cauchy sequence is uniformly Cauchy on $A_i$ because an inequality below
+    $1$ in $\rho_i$ is the same inequality for $\sup_{A_i}d$, not because $\rho_i$ is bounded by $1$.
 ---
 
 ::: {.exercise}
@@ -93,35 +124,100 @@ Show that if $X$ is $\sigma$-compact, there is a metric for the topology of comp
 :::
 
 ::: {.solution}
-(a) Let $\mathcal B$ be a countable basis for the locally compact space $X$. For each $x$, choose an open $U_x$ and compact $K_x$ with $x\in U_x\subset K_x$. Choose a basis element $B_x$ with $x\in B_x\subset U_x$. Only countably many distinct $B_x$ occur; choosing one compact $K_x$ for each such basis element gives countably many compact sets whose interiors cover $X$. Thus $X$ is $\sigma$-compact.
 
-(b) Choose compact $A_1,A_2,\dots$ whose interiors cover $X$, and replace them by finite unions so that $A_i\subset A_{i+1}$. Put on $Y_i=Y^{A_i}$ the bounded uniform metric
-$$
-\rho_i(u,v)=\min\{1,\sup_{A_i}d(u,v)\}.
-$$
-Define
+No retained published solution of Munkres, *Topology*, §46 Exercise 9 was located: the sets searched are listed in the `COMPLAINTS.md` entry for §43--§50 of `SRC-TEXT-MUN00`, and the self-study notes that reach Chapter 7 state this exercise without answering it. The proof is the card's own, checked against the numbered statements of §20, §21 and §46 it cites, and it follows the printed hint.
+
+::: pf
+
+::: {.pf-step #sigma-compact}
+(a) A locally compact second-countable space $X$ is $\sigma$-compact.
+
+::: pf-proof
+Let $\mathcal B$ be a countable basis. For $x\in X$ local compactness gives an open $U_x\ni x$ and a compact $K_x$ with $U_x\subseteq K_x$, and then a basis element $B_x$ with $x\in B_x\subseteq U_x$. The set of distinct $B_x$ is a subset of $\mathcal B$, hence countable; picking one compact $K$ for each $B$ occurring gives a countable family of compact subspaces, and each $x$ lies in $B_x\subseteq K_{B_x}\subseteq\operatorname{Int}K_{B_x}$, so their interiors cover $X$.
+:::
+
+:::
+
+::: {.pf-step #setup}
+(b) There are compact subspaces $A_1\subseteq A_2\subseteq\cdots$ of $X$ whose interiors cover $X$.
+
+::: pf-proof
+$\sigma$-compactness gives compact subspaces $C_1,C_2,\dots$ whose interiors cover $X$. Put $A_i=C_1\cup\cdots\cup C_i$; a finite union of compact subspaces is compact (Munkres, §26 Exercise 3), the family increases, and $\operatorname{Int}C_j\subseteq\operatorname{Int}A_i$ for $j\le i$, so the interiors of the $A_i$ cover $X$.
+:::
+
+:::
+
+::: {.pf-step #metric}
+(b) For $u,v\in Y^{A_i}$ put $\rho_i(u,v)=\min\{1,\sup_{a\in A_i}d(u(a),v(a))\}$, and for $f,g\in Y^X$ put
 $$
 \rho(f,g)=\sum_{i=1}^\infty2^{-i}\rho_i(f\restrict_{A_i},g\restrict_{A_i}).
 $$
-This induces exactly compact convergence, in both directions. Let $f\in Y^X$, let $C\subset X$ be compact and let $0<\epsilon\le1$. The interiors $\operatorname{Int}A_i$ cover $C$, so finitely many of them cover it, and since the $A_i$ increase, $C\subset A_N$ for some $N$. If $\rho(f,g)<2^{-N}\min\{\epsilon,1\}$ then $2^{-N}\rho_N(f,g)<2^{-N}\min\{\epsilon,1\}$, so $\rho_N(f,g)<\min\{\epsilon,1\}\le1$, and a minimum of $1$ and a number below $1$ being that number, $\sup_{A_N}d(f,g)=\rho_N(f,g)<\epsilon$; then $\sup_Cd(f,g)\le\sup_{A_N}d(f,g)<\epsilon$ because $C\subset A_N$. So
-$$
-B_\rho\bigl(f,2^{-N}\min\{\epsilon,1\}\bigr)\subset B_C(f,\epsilon).
-$$
-Conversely, choose $N$ with $2^{-N}<\epsilon/2$ and suppose $\sup_{A_N}d(f,g)<\epsilon/2$. For $i\le N$ the inclusion $A_i\subset A_N$ gives $\rho_i(f\restrict_{A_i},g\restrict_{A_i})\le\sup_{A_N}d(f,g)<\epsilon/2$, a bound that is below $1$, and for $i>N$ one has $\rho_i\le1$; hence
-$$
-\rho(f,g)\le\sum_{i=1}^{N}2^{-i}\frac{\epsilon}{2}+\sum_{i>N}2^{-i}<\frac{\epsilon}{2}+2^{-N}<\epsilon,
-$$
-that is $B_{A_N}(f,\epsilon/2)\subset B_\rho(f,\epsilon)$. Since $\rho(f,g)\le\sum_{i=1}^\infty2^{-i}=1$ for all $f$ and $g$, a ball of radius greater than $1$ is the whole space; the balls of radius at most $1$ thus determine the neighbourhoods of each point, and by the two inclusions above a ball of either family of radius at most $1$ contains a ball of the other, so the two topologies have the same neighbourhoods of each point.
+Then $\rho$ is a metric on $Y^X$.
 
-The restriction map
-$$
-R:Y^X\to\prod_iY_i,\qquad f\mapsto(f\restrict_{A_i})
-$$
-is injective, and its image is the set of points $u$ with $u_{i+1}\restrict_{A_i}=u_i$ for every $i$. That image is closed. For fixed $i$ the restriction $\varphi_i:Y_{i+1}\to Y_i$ is $1$-Lipschitz, since $\sup_{A_i}d\le\sup_{A_{i+1}}d$, hence continuous, so $u\mapsto(u_i,\varphi_i(u_{i+1}))$ is a continuous map $\prod_jY_j\to Y_i\times Y_i$; the diagonal of $Y_i\times Y_i$ is closed there, $Y_i$ being a metric space; so the $i$-th compatibility condition is a closed subset of the product, and their intersection, the image of $R$, is closed. Moreover $R$ is an isometry onto its image, since $\rho$ was defined as a series of the coordinate metrics.
+::: pf-proof
+Each $\rho_i$ is the bounded uniform metric of Munkres, §21, hence a metric on $Y^{A_i}$, and it takes values in $[0,1]$. The series converges because its terms are bounded by $2^{-i}$, it vanishes only when every $\rho_i$ vanishes, that is, when $f$ and $g$ agree on every $A_i$ and hence on $\bigcup_iA_i$; symmetry is clear; and the triangle inequality holds termwise and passes to the sum, absolute convergence permitting.
+:::
 
-If $Y$ is complete then each uniform function space $Y_i$ is complete: a $\rho_i$-Cauchy sequence is uniformly Cauchy on $A_i$ because $\rho_i$ is $1$-bounded, it converges pointwise by completeness of $Y$, and the pointwise limit is the uniform limit, a uniform Cauchy sequence converging uniformly to its pointwise limit. The metric $\sum_i2^{-i}\rho_i$ on $\prod_iY_i$ is then complete: a Cauchy sequence in it is Cauchy in each coordinate, since $2^{-i}\rho_i\le\rho$, so it converges coordinatewise, to $f$ say, and it converges in $\rho$ as well, because for a given $\epsilon$ one takes $N$ with $2^{-N}<\epsilon/2$, and then for every $k$ beyond an index at which the first $N$ coordinates are within $\epsilon/2$ of their limits,
+:::
+
+::: {.pf-step #rho-fine}
+(b) For $f\in Y^X$, compact $C\subseteq X$ and $0<\varepsilon\le1$ there is $\delta>0$ with $B_\rho(f,\delta)\subseteq B_C(f,\varepsilon)$.
+
+::: pf-proof
+The interiors of the $A_i$ cover $C$, and $C$ is compact, so finitely many of them cover $C$; the $A_i$ increase, so $C\subseteq A_N$ for some $N$. Take $\delta=2^{-N}\varepsilon\le2^{-N}$. If $\rho(f,g)<\delta$ then $2^{-N}\rho_N(f,g)\le\rho(f,g)<\delta$, so $\rho_N(f,g)<\varepsilon\le1$; a minimum of $1$ and a number below $1$ equals that number, so $\sup_{A_N}d(f,g)=\rho_N(f,g)<\varepsilon$. Since $C\subseteq A_N$, $\sup_Cd(f,g)<\varepsilon$, that is, $g\in B_C(f,\varepsilon)$.
+:::
+
+:::
+
+::: {.pf-step #compact-fine}
+(b) For $f\in Y^X$, $N$ and $0<\varepsilon\le1$ there is a compact $B$ with $B_B(f,\varepsilon/2)\subseteq B_\rho(f,\varepsilon)$; in particular every $\rho$-ball about $f$ with radius at most $1$ contains a ball of the compact-convergence basis.
+
+::: pf-proof
+Fix $N$ with $2^{-N}<\varepsilon/2$ and take $B=A_N$; the choice of $N$ depends on $\varepsilon$ alone. Let $g$ satisfy $\sup_{A_N}d(f,g)<\varepsilon/2$. For $i\le N$ the inclusion $A_i\subseteq A_N$ bounds $\sup_{A_i}d(f,g)$ by $\varepsilon/2$, which is below $1$, so $\rho_i(f\restrict_{A_i},g\restrict_{A_i})=\sup_{A_i}d(f,g)<\varepsilon/2$; for $i>N$ one has $\rho_i\le1$. Hence
 $$
-\rho(f_k,f)\le\sum_{i\le N}2^{-i}\frac{\epsilon}{2}+\sum_{i>N}2^{-i}<\frac{\epsilon}{2}+\frac{\epsilon}{2}=\epsilon.
+\rho(f,g)\le\sum_{i=1}^{N}2^{-i}\frac{\varepsilon}{2}+\sum_{i>N}2^{-i}<\frac{\varepsilon}{2}+2^{-N}<\varepsilon .
 $$
-A closed subspace of a complete metric space is complete, so the compatibility subspace is complete, and $R^{-1}$ carries $\rho$ back, $(Y^X,\rho)$ being isometric to it. Hence $(Y^X,\rho)$ is complete.
+So $B_{A_N}(f,\varepsilon/2)\subseteq B_\rho(f,\varepsilon)$. Since $\rho\le1$, a ball of radius above $1$ is all of $Y^X$, so the balls of radius at most $1$ determine the topology, and the two families refine each other by this step and step [](#rho-fine){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #induces}
+(b) $\rho$ induces the topology of compact convergence on $Y^X$.
+
+::: pf-proof
+By Munkres, §46, the topology of compact convergence has as a basis the sets $B_C(f,\varepsilon)$ with $C$ compact and $\varepsilon>0$. Steps [](#rho-fine){.pf-ref} and [](#compact-fine){.pf-ref} show that each $\rho$-ball about $f$ of radius at most $1$ contains a basis element about $f$ and is contained in one, so the two topologies have the same neighbourhoods at every point.
+:::
+
+:::
+
+::: {.pf-step #closed-image}
+(b) The restriction map $R:Y^X\to\prod_iY^{A_i}$, $R(f)=(f\restrict_{A_i})_i$, is injective with closed image, and it is an isometry onto that image when the product carries the metric $\sum_i2^{-i}\rho_i$.
+
+::: pf-proof
+Injectivity: functions agreeing on every $A_i$ agree on their union, which is $X$. The image consists of the points $u$ with $u_{i+1}\restrict_{A_i}=u_i$ for every $i$. For fixed $i$ the restriction $\varphi_i:Y^{A_{i+1}}\to Y^{A_i}$ is $1$-Lipschitz because $\sup_{A_i}d\le\sup_{A_{i+1}}d$ after truncation at $1$, hence continuous; so $u\mapsto(u_i,\varphi_i(u_{i+1}))$ is continuous into $Y^{A_i}\times Y^{A_i}$, whose diagonal is closed because $Y^{A_i}$ is metric and every metric space is Hausdorff, a Hausdorff space having closed diagonal (Munkres, Exercise 17.13); the $i$-th compatibility set is the preimage of that diagonal, hence closed, and the image of $R$ is the intersection of countably many closed sets. The isometry statement is the definition of $\rho$ as the sum of the coordinate metrics.
+:::
+
+:::
+
+::: {.pf-step #coordinate-complete}
+(b) If $(Y,d)$ is complete, then $Y^{A_i}$ is complete in $\rho_i$, and $\prod_iY^{A_i}$ is complete in $\sum_i2^{-i}\rho_i$.
+
+::: pf-proof
+A $\rho_i$-Cauchy sequence is uniformly Cauchy on $A_i$, because for $\varepsilon<1$ the inequality $\rho_i(u_m,u_n)<\varepsilon$ says $\sup_{A_i}d(u_m,u_n)<\varepsilon$; it is hence pointwise Cauchy, hence pointwise convergent by completeness of $Y$; the pointwise limit is the uniform limit of a uniformly Cauchy sequence, so the sequence $\rho_i$-converges and $Y^{A_i}$ is complete. For the product, a Cauchy sequence in the sum metric is Cauchy in each coordinate because $2^{-i}\rho_i\le\rho$, so it converges coordinatewise to some $u$; given $\varepsilon>0$ choose $N$ with $2^{-N}<\varepsilon/2$ and then $k$ large enough that the first $N$ coordinates are within $\varepsilon/2$ of their limits, giving $\rho(u_k,u)\le\sum_{i\le N}2^{-i}\varepsilon/2+\sum_{i>N}2^{-i}<\varepsilon$.
+:::
+
+:::
+
+::: {.pf-step #complete}
+(b) If $(Y,d)$ is complete, then $Y^X$ is complete in $\rho$.
+
+::: pf-proof
+By step [](#closed-image){.pf-ref} $Y^X$ is isometric to a closed subspace of the complete space $\prod_iY^{A_i}$, and a closed subspace $S$ of a complete metric space $(M,\rho)$ is complete in $\rho$: a $\rho$-Cauchy sequence in $S$ is $\rho$-Cauchy in $M$, hence converges to some $m$ whose distance to $S$ is $0$, that is, $m\in\overline S=S$; so $Y^X$ is complete. With step [](#induces){.pf-ref} this gives a metric for the compact-convergence topology in which $Y^X$ is complete, which is (b).
+:::
+
+:::
+
+:::
+
 :::

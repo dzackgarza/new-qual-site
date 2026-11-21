@@ -5,7 +5,9 @@ kind: problem
 title: Cayley complex of $\ZZ/2*\ZZ/3$ and its quotients by two subgroups
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Covering Spaces
+  - Free Products
 relations: []
 review: draft
 audit:

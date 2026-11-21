@@ -115,6 +115,12 @@ Choose the four students for the $4$-person team and then one of the remaining t
 Hence among the listed numbers, exactly I and II are possible.
 
 
+Therefore the answer is
+$$
+\boxed{\text{I and II only}},
+$$
+which is choice (B).
+
 ::: pf-proof
 
 Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} show that the possible counts are $90$, $60$, and $30$. Thus I and II occur, while III, which is $45$, does not.
@@ -123,26 +129,9 @@ Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} show that the possible count
 
 :::
 
-::: {.pf-step #s1-6}
-
-Therefore the answer is
-$$
-\boxed{\text{I and II only}},
-$$
-which is choice (B).
-
-
-::: pf-proof
-
-This is the conclusion of step [](#s1-5){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-6){.pf-ref} gives the required choice.
+Step [](#s1-5){.pf-ref} gives the required choice.
 
 :::
 

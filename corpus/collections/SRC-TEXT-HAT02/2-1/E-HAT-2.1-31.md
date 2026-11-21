@@ -29,6 +29,18 @@ audit:
   date: 2026-10-31
   note: >-
     Read the example: upper sequence $0\to0\to\ZZ\to\ZZ\to0$ and lower $0\to\ZZ\to\ZZ\to0\to0$ with $\alpha=\beta=\delta=\varepsilon=0$ and $\gamma=\mathrm{id}$; commutation holds because every composite passes through a zero group or a zero map, so the five-lemma hypothesis fails on the middle map only.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 31 of §2.1, printed p. 133. Correct: the upper row
+    $0\to0\to\ZZ\xrightarrow{\mathrm{id}}\ZZ\to0$ has $(A,B,C,D,E)=(0,0,\ZZ,\ZZ,0)$ and the lower
+    row $0\to\ZZ\xrightarrow{\mathrm{id}}\ZZ\to0\to0$ has $(A',B',C',D',E')=(0,\ZZ,\ZZ,0,0)$, both
+    exact; with $\alpha,\beta,\delta,\varepsilon=0$ and $\gamma=\mathrm{id}$ every square
+    commutes, the two involving $\gamma$ because one of the two horizontal maps in each is zero;
+    and $\gamma\ne0$ while the four outer maps vanish, which is exactly the failure of the
+    five-lemma hypothesis. All groups are $\ZZ$ or $0$ as the exercise asks. Nothing changed.
+    Not claimed: a published solution, and no certificate.
 ---
 
 ::: {.problem}

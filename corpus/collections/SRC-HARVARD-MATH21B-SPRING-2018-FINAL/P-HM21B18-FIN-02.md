@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-HM21B18-FIN-02
 kind: problem
 title: Matrix properties and differential-equation graph matching
-classification: {areas: [applied-algebra], topics: []}
+classification: {areas: [applied-algebra], topics: [Orthogonal Matrices, Orthogonal Projection]}
 relations: []
 review: draft
 audit:

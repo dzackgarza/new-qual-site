@@ -16,6 +16,6 @@ review: draft
 ::: {.definition}
 A \dfn{division ring}, or \dfn{skew field}, is a [[D-GURUB|ring]] $R$, not necessarily commutative, with $1\neq 0$ in which every nonzero element is a [[D-QQIQZ|unit]], that is,
 $$
-R\setminus\theset{0}=R\units.
+R\setminus\theset{0}=\units{R}.
 $$
 :::

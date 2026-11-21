@@ -6,7 +6,9 @@ title: A fixed point from summable iterate Lipschitz constants
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Banach Fixed Point Theorem
+  - Fixed Points
 relations: []
 review: draft
 audit:

@@ -15,6 +15,16 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. Two valid examples: (0) in Z is prime because Z is a domain and is not
+    maximal because Z is not a field; (x) in k[x,y] is prime because the quotient is k[y], a domain,
+    and not maximal because k[y] is not a field, with (x) contained properly in (x,y). Checked that
+    both rings carry an identity, which the question requires, and that each non-maximality is
+    exhibited by a strictly intermediate ideal and not only by the failure of a field quotient. Not
+    checked: the oral examination itself, which is not a printed source in the checkout.
 ---
 
 ::: {.problem}

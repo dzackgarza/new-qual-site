@@ -5,7 +5,9 @@ kind: problem
 title: $\Delta$-complex structure and homology of the cube with opposite faces glued by a quarter twist
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Delta Complexes
+  - Simplicial Homology
 relations: []
 review: draft
 audit:
@@ -20,6 +22,8 @@ Let $X$ be the topological space built in problem PP.2. Describe a $\Delta$-comp
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the problem sets alone, so the argument is the card's own.
 
 Use the same quarter-turn face identifications and the same oriented CW cells
 $$
@@ -508,7 +512,9 @@ $$
 
 ::: pf-proof
 
-This is step [](#s1-11){.pf-ref}.
+Step [](#s1-11){.pf-ref} computes $\partial_1(x_p,x_q,x_r,x_s)=(x_p+x_q-x_r-x_s)(B-A)$.
+The $0$-cells $A$ and $B$ are distinct basis elements of $C_0(X)$, so this vanishes
+exactly when $x_p+x_q-x_r-x_s=0$.
 
 :::
 

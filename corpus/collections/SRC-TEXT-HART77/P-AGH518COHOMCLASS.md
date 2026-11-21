@@ -31,6 +31,27 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 5.1.8, printed p. 101, rendered as a page
+    image from tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is
+    the printed page. Checked against the book: Hartshorne V.1.8, printed
+    p. 367, which the card's earlier events record as
+    read at 110 dpi renders of the text-layerless pages; this pass did not
+    reopen them, and the comparison is against the statement the card carries.
+    Recomputed the entry's displays, which are the book's hint carried out and
+    agree with the steps the card already has. Not checked: Yang's Solutions
+    outside printed pp. 100-107; Hartshorne's printed pp. 367 in this pass;
+    and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.1.8 at printed p. 101 beside
+    Egbert's entry. No step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -295,5 +316,9 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.8, PDF pp. 258--259: (a) the commutative square from $\Pic X\to H^1(X,\Omega_X)$ to $\Pic D\to H^1(D,\Omega_D)\cong k$, whose bottom map is the degree, so that going one way gives $\OO(E)\mapsto\OO(E)\otimes\OO_D\mapsto\deg_D\OO(E)\otimes\OO_D=D\cdot E$ and the other gives $f(c(D))=D\cdot E$; that is step [](#s1){.pf-ref} and step [](#s2){.pf-ref}, and his "by Bertini, write $D$ as a difference of very ample divisors" is step [](#s3){.pf-ref}. (b) "via the exponential sequence, $D$ determines $c_1(\OO_X(D))\in H^2(X,\ZZ)$, which is finitely generated since it sits between $H^1(X,\OO_X)$ and $H^2(X,\OO_X)$". Step [](#s7){.pf-ref} instead embeds $\Num X$ in $\ZZ^r$ through the nondegenerate trace pairing, which is the argument the exercise asks for and does not pass through the exponential sequence. Matches.
+The exercise is Hartshorne, Exercise V.1.8, headed "Cohomology Class of a Divisor", read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is that exercise's text, the definition of $c(D)$ and the hint of (a) included.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.8: (a) the commutative square from $\Pic X\to H^1(X,\Omega_X)$ to $\Pic D\to H^1(D,\Omega_D)\cong k$, whose bottom map is the degree, so that going one way gives $\OO(E)\mapsto\OO(E)\otimes\OO_D\mapsto\deg_D\OO(E)\otimes\OO_D=D\cdot E$ and the other gives $f(c(D))=D\cdot E$; that is step [](#s1){.pf-ref} and step [](#s2){.pf-ref}, and his "by Bertini, write $D$ as a difference of very ample divisors" is step [](#s3){.pf-ref}. (b) "via the exponential sequence, $D$ determines $c_1(\OO_X(D))\in H^2(X,\ZZ)$, which is finitely generated since it sits between $H^1(X,\OO_X)$ and $H^2(X,\OO_X)$". Step [](#s7){.pf-ref} instead embeds $\Num X$ in $\ZZ^r$ through the nondegenerate trace pairing, which is the argument the exercise asks for and does not pass through the exponential sequence. Matches.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.1.8, takes both parts by the same two devices. Part (a) is the commutative square with the trace map on $D$: $c_D(F)=(\deg F)\cdot1$ by (III, 3.7.4), so $\langle c(D),c(E)\rangle=\deg_D\bigl(\OO(E)\otimes\OO_D\bigr)=D\cdot E$, the reductions to $D$ and $E$ transverse and to $D$ very ample being the ones the card's step [](#s3){.pf-ref} supplies. Part (b) is the linear-independence argument: a relation $\sum_ki_kc(D_k)=0$ tested against $c(E)$, for every divisor $E$, gives $\bigl(\sum_ki_kD_k\bigr)\cdot E=0$, so numeric independence forces every $i_k=0$, and $\Num X$ sits inside the dual of the finite-dimensional $H^1(X,\Omega_X)$.
 :::

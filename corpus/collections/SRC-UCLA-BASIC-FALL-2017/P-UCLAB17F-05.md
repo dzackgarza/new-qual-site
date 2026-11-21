@@ -6,7 +6,9 @@ title: Finite rank and finite-dimensional kernel operators
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Rank
+  - Linear Transformations
 relations: []
 review: draft
 audit:

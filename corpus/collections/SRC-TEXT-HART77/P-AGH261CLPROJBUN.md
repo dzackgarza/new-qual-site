@@ -30,6 +30,8 @@ $$
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.6.1, read from the page markers of `tmp/sources/hartshorne-1977-algebraic-geometry.md`. Two retained sets prove the same statement: Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §6, Exercise 2.6.1, checks the three properties of $(\ast)$ by base change and the affine cover $\Spec A[x_1,\dots,x_n]$, and Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.6.1, printed p. 45, gets the class group from the exact sequence $\ZZ\to\Cl(X\times\PP^n)\to\Cl X$ together with the hyperplane section.
+
 Put $P=\PP_X^n$, let $p:P\to X$ be the projection, and let $H\subseteq P$ be the relative hyperplane defined by $x_0=0$.
 Its complement is $U=D_+(x_0)\cong\AA_X^n$.
 The [[D-5PQ5W|class groups]] are Weil-divisor class groups.

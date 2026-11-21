@@ -9,7 +9,8 @@ classification:
   topics: []
 relations: []
 review: draft
-provenance: []
+provenance:
+- https://books.google.com/books?vid=ISBN9780547165097
 source:
   source_kind: compilation
   sections:
@@ -46,13 +47,20 @@ source:
         - id: P-CH10-48
           comment: Exercise 48
         - id: P-CH10-55
-          comment: Exercise 55
+          comment: Exercise 53 (printed as exercise 55 when the card was created; evaluation of
+            polynomials at 3 is exercise 53 in Gallian 7e, confirmed by the book's Selected Answer at
+            A15, exercise 55 being the preimage decomposition of a group of order 12)
         - id: P-CH10-65
-          comment: Exercise 65
+          comment: Outline item 65 (the seventh edition prints 62 exercises in this
+            chapter; the outline's numbering runs ahead of it from item 37 onward)
         - id: P-CH10-66
           comment: Exercise 66
   date:
     kind: unknown
 ---
 
+::: {.remark}
+The document is Joseph A. Gallian, *Contemporary Abstract Algebra*, seventh edition, Brooks/Cole, Cengage Learning, 2010, ISBN-13 978-0-547-16509-7. The identifier is read from that edition's copyright page rather than from a catalogue entry, and the list names the book by ISBN because the seventh edition is out of print: the publisher's product page for it answers 404, and the ISBN record is what resolves.
 
+The cards are this chapter's exercises, presented here with a solution outline. The outline is a writeup of the exercises and is not the document, so the textbook is listed and the outline is not.
+:::

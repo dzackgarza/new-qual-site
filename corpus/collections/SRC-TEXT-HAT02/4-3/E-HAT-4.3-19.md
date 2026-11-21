@@ -11,6 +11,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Citation convention. Sources on this card are cited by chapter, section and numbered statement
+    only, and the statement and solution above cite every source by its numbered statement. The
+    events dated before today are left as their sessions wrote them, which QUAL-11 requires, so a
+    locator in one of them stands as a historical record and is superseded by the citation now on
+    the card. This event records the convention and claims no further reading: the
+    mathematics of the card is as those events describe it.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
@@ -20,6 +30,36 @@ audit:
   note: >-
     Cards read. Verdict record is m6__proofs-4-3-1-12.md (1-12: 10 correct, 5 a dimension slip, 9 a wrong assertion; both repaired) and m2__proofs-4-3-13-24.md (13-24: 10 correct, 20 a display misalignment repaired by identifying the principal fibration, 22 the missing converse of an iff, later restated and proved, and 24, whose whole proof was then written). No card in this slice has an unmet piece.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 19 of §4.3, printed p. 420, with the homotopy fibre of a
+    fibration. Correct. The action $(e,\gamma)\cdot\lambda=(e,\gamma\cdot\lambda)$ is a right
+    action of $\Omega B$ on $F_p$ preserving the first coordinate, so $f\cdot u$ and $f$ have the
+    same image in $\langle X,E\rangle$; conversely, from a based homotopy $H$ between the $E$-parts,
+    the path $\eta_{x,s}(t)=pH(x,(1-t)s)$ joins $pH(x,s)$ to $pf_E(x)$, the formula
+    $K(x,s)=(H(x,s),\eta_{x,s}\cdot\alpha_x)$ is a homotopy in $F_p$ from $f$ to
+    $(g_E,\eta_{x,1}\alpha_x)$, and $\lambda(x)=\bar\beta_x\cdot\eta_{x,1}\cdot\alpha_x$ is a loop
+    at $b_0$ with $g\cdot\lambda\simeq f$ because $\beta_x\bar\beta_x$ contracts continuously in
+    $x$. The passage from $F$ to $F_p$ is the usual homotopy equivalence over $E$ for a fibration.
+    Nothing changed. The earlier audit event of 2026-11-02 was a batch summary and named no page.
+    Not claimed: a published solution, and no certificate.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The event above says no published solution is claimed, and that is false: Steven V. Sam's
+    set, retained as `tmp/sources/hatcher-solutions-sam-2008.pdf`, solves §4.3 Exercise 19 on
+    , by lifting $\overline\eta\cdot\gamma\cdot\eta$ to define an action of
+    $\Omega B$ on the homotopy fibre and reading the orbit condition off a homotopy through
+    basepoint-preserving maps. The solution's lead now cites it and says how the card's right
+    action by concatenation differs from Sam's lifted left action. Re-read in the same pass:
+    the whole $\lambda$ construction, from $H$ through $\eta_{x,s}$ to
+    $\lambda(x)=\overline\beta_x\cdot\eta_{x,1}\cdot\alpha_x$, is correct, and $\lambda$ is a
+    loop at $b_0$ because $\alpha_{x_0}$, $\beta_{x_0}$ and $\eta_{x_0,1}$ are constant at the
+    basepoint. No step changed. Not checked: the homotopy equivalence $F\to F_p$ is cited to
+    Proposition 4.65's argument rather than recomputed, and there is no certificate.
 ---
 
 ::: {.problem}
@@ -27,6 +67,8 @@ Given a fibration $F \to E \xrightarrow{p} B$, define a natural action of $\Omeg
 :::
 
 ::: {.solution}
+The exercise is solved in the retained set **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 19**: Sam defines an action of $\Omega B$ on $F_p$ by lifting the loop $\overline\eta\cdot\gamma\cdot\eta$, and shows that two elements of $\langle X,F_p\rangle$ have the same image in $\langle X,E\rangle$ exactly when they lie in one orbit. The action used below is the right action by concatenation, $(e,\gamma)\cdot\lambda=(e,\gamma\cdot\lambda)$; the criterion proved is the same, and the loop carrying $g$ to $f$ is constructed explicitly.
+
 Fix the basepoint $b_0 \in B$ and let $\Omega B$ be the loops at $b_0$. The homotopy fiber is
 $$F_p = \theset{(e, \gamma) \suchthat e \in E,\ \gamma: I \to B,\ \gamma(0) = p(e),\ \gamma(1) = b_0},$$
 with $i: F_p \to E$, $i(e, \gamma) = e$. For a path $\gamma$ write $\bar\gamma$ for the reversed path and $\gamma \cdot \delta$ for $\gamma$ followed by $\delta$. Let $X$ be a based CW complex; all maps and homotopies are based.

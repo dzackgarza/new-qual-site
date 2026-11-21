@@ -7,10 +7,12 @@ topics:
 
 # Sample syllabi
 
-Topic lists from algebraic geometry qualifying and oral examination syllabi.
+Topic lists for algebraic geometry qualifying and oral examinations. A section names the document whose list it transcribes, and where the list is a topic outline it names the reading that covers the topics instead.
 Past examinations with transcribed questions are linked from [[algebraic-geometry/resources|Resources]].
 
 ## Harvard qualifying examination
+
+Source: [The Qualifying Exam Syllabus](https://www.math.harvard.edu/graduate/study-the-qualifying-exam/the-qualifying-exam-syllabus/), Harvard Mathematics Department.
 
 - Affine and projective varieties; regular functions and maps; cones and projections.
 
@@ -28,11 +30,11 @@ Past examinations with transcribed questions are linked from [[algebraic-geometr
 
 - Algebraic curves: genus; the genus formula for plane curves; the Riemann–Hurwitz formula; the Riemann–Roch theorem.
 
-References: [@Sha94; @Har92].
+Reading pointers: [@Sha94; @Har92].
 
 ## Scheme theory, cohomology and curves
 
-This syllabus accompanies a [qualifying exam transcript](https://math.berkeley.edu/~ritvik/Qualifying_Exam_Syllabus_and_Transcript.pdf#page=1).
+Source: the [qualifying exam syllabus and transcript](https://math.berkeley.edu/~ritvik/Qualifying_Exam_Syllabus_and_Transcript.pdf).
 
 Scheme theory:
 
@@ -60,9 +62,11 @@ Curves:
 
 - Clifford's theorem, Castelnuovo's theorem (statement), classification of low-degree curves in $\PP^3$.
 
-References: [@Har77, Chapters I.1–I.7, II.1–II.8, III.1–III.10, IV.1–IV.6].
+Reading pointers: [@Har77, Chapters I.1–I.7, II.1–II.8, III.1–III.10, IV.1–IV.6].
 
 ## Schemes and cohomology, by Hartshorne section
+
+Source: [@Har77, Chapters II.1--II.8 and III.1--III.7]; the numbered items are the sections of those chapters.
 
 Schemes:
 
@@ -99,6 +103,8 @@ Cohomology:
 7. Serre duality: the dualizing sheaf and duality for a projective scheme, invertibility of the dualizing sheaf for a local complete intersection, the isomorphism between the dualizing sheaf and the canonical sheaf for a nonsingular projective variety.
 
 ## Schemes, cohomology and formal schemes
+
+Source: [@Har77, Chapters II.1--II.9 and III.1--III.9]; the numbered items are the sections of those chapters.
 
 Schemes:
 
@@ -142,6 +148,10 @@ Cohomology of sheaves:
 
 ## Varieties, schemes, cohomology and curves
 
+The numbered items group the topics by subject.
+
+Reading pointers: [@Har77, Chapters I--IV] and [@Mir95, Chapters I--VIII].
+
 1. Varieties: quasiprojective varieties, regular and rational maps, the definition of singularities and analytic isomorphism, abstract nonsingular curves, intersections in projective space.
 
 2. Schemes: sheaves, schemes, basic definitions and properties, separated and proper morphisms and relative geometry, sheaves of modules, divisors and vector bundles (the Picard group in each of its forms), projective morphisms, differentials.
@@ -151,6 +161,10 @@ Cohomology of sheaves:
 4. Curves: Riemann surfaces, Hurwitz's theorem, local complete intersections, resolution of curve singularities, elliptic and hyperelliptic curves, group actions, Riemann–Roch with applications, degree of projective curves, the Abel–Jacobi map and Abel's theorem.
 
 ## Complex algebraic surfaces
+
+The numbered items group the topics by subject.
+
+Reading pointers: [@GH94, Chapters 0--4] and [@Mir95, Chapters XI--XII]; for the surface topics, Miles Reid, *Chapters on Algebraic Surfaces* (Park City lecture notes, 1993): Riemann--Roch in Chapter B, §B.9 (item ix), Noether's formula in Chapter C, §C.1.4, the genus formula in Chapter A, §A.12, del Pezzo surfaces in Chapter 1, §1.12 (item 4), K3 surfaces in Chapter 3, §3.3 and §3.7, Enriques surfaces in §C.5.6 (item 3), Du Val singularities in Chapter 4, §4.1--§4.2, and the Enriques--Kodaira classification in Chapters C and E.
 
 1. Cohomology: the Riemann–Roch theorem, Noether's formula, the genus formula.
 
@@ -168,6 +182,10 @@ Cohomology of sheaves:
 
 ## Toric varieties
 
+The numbered items group the topics by subject.
+
+Reading pointers: [@Ful93, Sections 1.1--1.5, 2.1--2.6, 3.1--3.5 and 5.1--5.2].
+
 1. Definitions: convex polyhedral cones, geometry of convex sets, affine toric varieties, fans and toric varieties, toric varieties from polytopes.
 
 2. Singularities and compactness: local properties of toric varieties, surfaces, quotient singularities, one-parameter subgroups, limit points, compactness and properness, nonsingular surfaces, resolution of singularities.
@@ -177,6 +195,8 @@ Cohomology of sheaves:
 4. Cohomology of smooth toric varieties: the Stanley–Reisner relation, self-intersection of invariant divisors.
 
 ## Complex algebraic geometry (minor topic)
+
+The chapter ranges under each heading locate its topics.
 
 Complex geometry [@GH94, Ch. 0.1–0.2, 0.4–0.7, 1.1–1.4]:
 
@@ -202,4 +222,4 @@ Cohomology [@GH94, Ch. 0.3, 1.1; @Mir95, Ch. IX]:
 
 - Chern classes.
 
-Texts: [@GH94; @Mir95].
+Reading pointers: [@GH94; @Mir95].

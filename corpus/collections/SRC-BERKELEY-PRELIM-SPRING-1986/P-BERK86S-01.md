@@ -23,6 +23,13 @@ audit:
     Decomposed each vector into its component along the unit axis e and its
     orthogonal component. A half-turn fixes the former and negates the
     latter, giving T(v)=2< v,e >e-v and matrix 2ee^T-I.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Spring86.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -30,6 +37,8 @@ Let $e=(a,b,c)$ be a unit vector in $\RR^3$. Let $T$ be rotation by $180^\circ$ 
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Spring 1986, retained in this repository as `assets/attachments/Spring86.pdf`; the statement below is its wording.
+
 ::: pf
 
 ::: {.pf-step #orthogonal-decomposition}

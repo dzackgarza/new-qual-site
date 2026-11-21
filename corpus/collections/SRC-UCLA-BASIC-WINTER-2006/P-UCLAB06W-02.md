@@ -5,7 +5,9 @@ kind: problem
 title: Left continuity of an alternating power series at its endpoint
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Series of Functions
+  - Convergence Tests
 relations: []
 review: draft
 audit:

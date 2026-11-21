@@ -7,59 +7,27 @@ title: "Real analysis qual prep week 1: preliminaries"
 
 ## Topics
 
-- Continuity and uniform continuity
+- Continuity and uniform continuity, and pathological functions: [[real-analysis/undergraduate/continuity|Continuity]] and [[real-analysis/counterexamples-undergraduate|Undergraduate counterexamples]].
 
-  - Pathological functions and sequences of functions
+- Convergence, the Cauchy criterion, uniform convergence, and the Weierstrass $M$-test: [[real-analysis/undergraduate/sequences-and-series|Sequences and series]].
 
-- Convergence
+- The Heine--Borel theorem, compactness, and completeness: [[real-analysis/undergraduate/sets-and-compactness|Sets and compactness]].
 
-  - The Cauchy criterion
+- Normed spaces: [[real-analysis/functional-analysis/banach-and-hilbert|Banach and Hilbert spaces]].
 
-  - Uniform convergence
+- Series, small tails, $\limsup$ and $\liminf$: [[real-analysis/undergraduate/sequences-and-series|Sequences and series]].
 
-  - The Weierstrass $M$-test
+- Variation and bounded variation: [[T-SM8EW|differentiation of functions of bounded variation]].
 
-- The Heine--Borel theorem
+- The Baire category theorem and nowhere dense sets: [[real-analysis/appendices/undergrad-appendix|Undergraduate review]].
 
-- Normed spaces
+- The triangle and Cauchy--Schwarz inequalities: [[real-analysis/inequalities|Inequalities]].
 
-- Series and sequences
+- The mean value theorem and Taylor's theorem with remainder: [[real-analysis/undergraduate/differentiability|Differentiability]].
 
-  - Convergence
+- Riemann integrability: [[real-analysis/undergraduate/riemann-integrability|Riemann integrability]].
 
-  - Small tails
-
-  - $\limsup$ and $\liminf$
-
-  - Cauchy criteria for sums and integrals
-
-- Variation and bounded variation
-
-Background topics:
-
-- The Baire category theorem
-
-- Nowhere dense sets
-
-- The triangle and Cauchy--Schwarz inequalities
-
-- Calculus
-
-  - Mean value theorem
-
-  - Taylor expansion
-
-  - Taylor's theorem with remainder
-
-  - Intermediate value theorem
-
-  - Extreme value theorem
-
-  - Rolle's theorem
-
-  - Riemann integrability
-
-- The Weierstrass approximation theorem
+- The Weierstrass approximation theorem: [[T-3QNBQ]].
 
 ## Review problems
 

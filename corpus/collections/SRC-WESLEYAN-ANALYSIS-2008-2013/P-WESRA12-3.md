@@ -5,7 +5,9 @@ kind: problem
 title: 'Norms, Banach spaces, uniform boundedness, and inverse continuity'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Norms
+  - Banach-Steinhaus Theorem
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: 'A large closed set containing no rationals'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Lebesgue Measure
+  - Rational Numbers
 relations: []
 review: draft
 audit:

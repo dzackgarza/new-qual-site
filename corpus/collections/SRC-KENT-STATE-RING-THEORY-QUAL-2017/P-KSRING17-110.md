@@ -24,6 +24,8 @@ Prove that the polynomial ring $F [ x ]$ is a PID and that $F [ x , y ]$ is not 
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination paper alone, so the argument is the card's own.
+
 ::: pf
 
 ::: pf-step

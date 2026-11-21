@@ -118,8 +118,10 @@ Substitute $\chi(W,M)=(-1)^n\chi(W)$ from step [](#s1-2){.pf-ref} into step [](#
 
 ::: {.pf-step #s1-5}
 
-Hence $\chi(M)$ is even.
-
+Hence
+$$
+\boxed{\chi(M)\text{ is even}.}
+$$
 
 ::: pf-proof
 
@@ -133,25 +135,9 @@ In either case $\chi(M)\in2\ZZ$.
 
 :::
 
-::: {.pf-step #s1-6}
-
-Therefore
-$$
-\boxed{\chi(M)\text{ is even}.}
-$$
-
-
-::: pf-proof
-
-This is exactly step [](#s1-5){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-6){.pf-ref} proves the claim.
+Step [](#s1-5){.pf-ref} proves the claim.
 
 :::
 

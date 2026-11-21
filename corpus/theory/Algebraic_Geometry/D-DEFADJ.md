@@ -33,5 +33,5 @@ Naturality means that for $f: A' \to A$ in $\mca$ the square formed by $\tau_{AB
 ::: {.remark}
 A left adjoint of $G$, if it exists, is unique up to unique natural isomorphism, and likewise for right adjoints.
 Right adjoints preserve limits and left adjoints preserve colimits; so an additive left adjoint between abelian categories is right exact, and an additive right adjoint is left exact.
-Since $\wait \tensor_A N$ is left adjoint to $\Hom_A(N,\wait)$, the first is right exact and the second left exact.
+Since $- \tensor_A N$ is left adjoint to $\Hom_A(N,-)$, the first is right exact and the second left exact.
 :::

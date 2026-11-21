@@ -15,6 +15,14 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Checked against Question 1 of the Chapter 7 review questions in assets/attachments/extracted/Chapter-7.md (Mistral OCR), compared with the same page in the Cracking the GRE Mathematics Subject Test book extraction.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`: the statement is question 1 of the Chapter 7
+    Review Questions, printed on PDF p. 329, and its printed words are the card's. The chapter,
+    the question number and the page are now named in the solution's opening sentence. Not checked
+    in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -28,6 +36,7 @@ For which of the following intervals does $P(x) = 4x^3 - 4x^2 - 33x + 45$ have a
 :::
 
 ::: {.solution}
+This is question 1 of the Chapter 7 Review Questions of *Cracking the GRE Mathematics Subject Test*, retained in this repository as `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`, on PDF p. 329; the statement below is its wording.
 
 ::: pf
 

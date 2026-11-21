@@ -14,6 +14,35 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 2 of §4.H, printed p. 458, with the homotopy extension property
+    of §0.4 on printed p. 14. The argument was right and is kept: from $u\colon P\to Y$ and
+    $H\colon B\times I\to Y$ with $H(b,0)=u(j(b))$ one forms $u\circ q$ and
+    $H\circ(f\times\mathrm{id})$, whose initial condition on $A$ holds because $jf=qi$; the
+    homotopy extension property of $i$ extends it to $H_X$ on $X\times I$; and $P\times I$ is the
+    pushout of $B\times I$ and $X\times I$ along $A\times I$ because $I$ is compact Hausdorff, so
+    $H$ and $H_X$ paste. Rewritten from a nest of `pf` blocks whose proofs were noun phrases
+    ('test data for the Homotopy Extension Property', 'composition of continuous maps',
+    'definition of cofibration', 'universal property of pushouts', 'Gluing Lemma for pushouts',
+    'evaluation at $t=0$') and which ended in a 'Conclusion ... Q.E.D.' step proved by naming
+    three labels. Four steps now, each carrying its argument. Not claimed: a certificate.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher §4.H Exercise 2, the homotopy extension property of Chapter 0, Proposition
+    4H.1 and Proposition A.17. The argument is correct and is kept: the initial condition on $A$
+    holds by $jf=qi$, the homotopy extension property of $i$ extends the data to $X\times I$, the
+    product with $I$ preserves the pushout, and the two maps paste. Repairs are in the citations and
+    in one omitted check: the product-with-$I$ step now cites Proposition A.17, which is the
+    statement that $f\times\id$ is a quotient map for locally compact $Z$, instead of
+    asserting it; the reference to §0.4 is replaced by §4.H with Proposition 4H.1, which is where
+    Hatcher defines a cofibration as an inclusion with the homotopy extension property; and the
+    injectivity of $j\colon B\to P$, which the conclusion needs and the card had taken for granted,
+    is now proved from the pushout description. No statement changed. Not checked: no certificate.
 ---
 
 ::: {.problem}
@@ -22,39 +51,17 @@ Show that if $A \hookrightarrow X$ is a cofibration, so is $B \hookrightarrow B\
 :::
 
 ::: {.solution}
+Write $P=B\sqcup_fX$ for the pushout, with inclusions $j\colon B\to P$ and $q\colon X\to P$, so that $j f=q i$ for $i\colon A\hookrightarrow X$. By §4.H and Proposition 4H.1 a cofibration may be taken to be an inclusion with the homotopy extension property, so it is enough to produce, for every space $Y$, every $u\colon P\to Y$ and every homotopy $H\colon B\times I\to Y$ with $H(b,0)=u(j(b))$, a homotopy $\widetilde H\colon P\times I\to Y$ with $\widetilde H(p,0)=u(p)$ that extends $H$ on $B\times I$. The exercise is Exercise 2 of §4.H.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-Homotopy Extension Property (HEP) setup for the pushout:
+The pair $\bigl(u\circ q,\; H\circ(f\times\mathrm{id}_I)\bigr)$ is admissible data for the homotopy extension property of $i\colon A\hookrightarrow X$.
 
 ::: pf-proof
 
-::: pf-step
-
-Let $i: A \hookrightarrow X$ be a closed cofibration and let $f: A \to B$ be the attaching map.
-Let $P = B \sqcup_f X$ be the pushout space, with canonical inclusions $j: B \hookrightarrow P$ and $q: X \to P$.
-
-::: pf-proof
-
-Definition of the adjunction space $B\sqcup_f X$ as the pushout of $A\to B$ and $A\to X$ (§0.1, p. 8); cofibrations are tested by the homotopy extension property (§0.4, p. 14), which is what the rest of the argument verifies.
-
-:::
-
-:::
-
-::: pf-step
-
-To show $j: B \hookrightarrow P$ is a cofibration, let $Y$ be an arbitrary topological space, $u: P \to Y$ a continuous map, and $H: B \times I \to Y$ a continuous homotopy such that $H(b, 0) = u(j(b))$ for all $b \in B$.
-
-::: pf-proof
-
-test data for the Homotopy Extension Property.
-
-:::
-
-:::
+For $a\in A$ one has $(H\circ(f\times\mathrm{id}_I))(a,0)=H(f(a),0)=u(j(f(a)))=u(q(i(a)))=(u\circ q)(i(a))$, using the pushout relation $jf=qi$; this is exactly the initial condition required of a homotopy on $A\times I$ extending the map $u\circ q$ on $X$.
 
 :::
 
@@ -62,50 +69,11 @@ test data for the Homotopy Extension Property.
 
 ::: {.pf-step #s2}
 
-Lifting to $X$ via the cofibration $A \hookrightarrow X$:
+There is a homotopy $H_X\colon X\times I\to Y$ with $H_X(x,0)=u(q(x))$ for all $x$ and $H_X(i(a),t)=H(f(a),t)$ for all $a$, $t$.
 
 ::: pf-proof
 
-::: pf-step
-
-Define the initial map on $X$: $u_X = u \circ q: X \to Y$.
-
-::: pf-proof
-
-composition of continuous maps.
-
-:::
-
-:::
-
-::: pf-step
-
-Define the homotopy on $A$: $h_A = H \circ (f \times \operatorname{id}_I): A \times I \to Y$.
-For $t = 0$: $h_A(a, 0) = H(f(a), 0) = u(j(f(a))) = u(q(i(a))) = u_X(i(a))$.
-
-::: pf-proof
-
-pushout identification $j(f(a)) = q(i(a))$ in $P$.
-
-:::
-
-:::
-
-::: pf-step
-
-Since $i: A \hookrightarrow X$ is a cofibration, the pair $(u_X, h_A)$ satisfies the HEP for $(X, A)$.
-Thus there exists a continuous homotopy $H_X: X \times I \to Y$ such that:
-$$
-H_X(x, 0) = u_X(x) \quad \text{for all } x \in X, \qquad H_X(i(a), t) = h_A(a, t) = H(f(a), t) \quad \text{for all } (a, t) \in A \times I.
-$$
-
-::: pf-proof
-
-definition of cofibration for $A \hookrightarrow X$.
-
-:::
-
-:::
+This is the homotopy extension property of the cofibration $i\colon A\hookrightarrow X$, applied to the data of the previous step.
 
 :::
 
@@ -113,79 +81,23 @@ definition of cofibration for $A \hookrightarrow X$.
 
 ::: {.pf-step #s3}
 
-Pasting homotopies on the pushout $P \times I$:
+$H$ and $H_X$ paste to a continuous map $\widetilde H\colon P\times I\to Y$.
 
 ::: pf-proof
 
-::: pf-step
+Proposition A.17 states that $f\times\id\colon Y\times Z\to Z'\times Z$ is a quotient map whenever $f\colon Y\to Y'$ is a quotient map and $Z$ is locally compact; with $Z=I$ this says that taking the product with $I$ preserves the pushout, so $P\times I$ is the pushout of $B\times I$ and $X\times I$ along $A\times I$ under $f\times\mathrm{id}_I$ and $i\times\mathrm{id}_I$. The two maps $H\colon B\times I\to Y$ and $H_X\colon X\times I\to Y$ agree on $A\times I$ by the previous step, so the universal property of the pushout yields the map $\widetilde H$.
 
-Since $P \times I \cong (B \times I) \sqcup_{f \times \operatorname{id}_I} (X \times I)$ is the pushout of $B \times I$ and $X \times I$ along $A \times I$, define $\widetilde{H}: P \times I \to Y$ by:
-$$
-\widetilde{H}(p', t) = \begin{cases}
-H(b, t) & \text{if } p' = j(b) \in j(B), \\
-H_X(x, t) & \text{if } p' = q(x) \in q(X).
-\end{cases}
-$$
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+$\widetilde H$ extends $H$ and satisfies $\widetilde H(p,0)=u(p)$ for all $p\in P$, so $j\colon B\to P$ has the homotopy extension property and is a cofibration.
 
 ::: pf-proof
 
-universal property of pushouts.
-
-:::
-
-:::
-
-::: pf-step
-
-On the overlap $A \times I$, $H(f(a), t) = H_X(i(a), t)$ by step [](#s2){.pf-ref} step [](#s3-3){.pf-ref}, so $\widetilde{H}$ is well-defined and continuous on $P \times I$.
-
-::: pf-proof
-
-Gluing Lemma for pushouts.
-
-:::
-
-:::
-
-::: {.pf-step #s3-3}
-
-Verify the initial condition:
-For $b \in B$, $\widetilde{H}(j(b), 0) = H(b, 0) = u(j(b))$.
-For $x \in X$, $\widetilde{H}(q(x), 0) = H_X(x, 0) = u_X(x) = u(q(x))$.
-Thus $\widetilde{H}(\cdot, 0) = u$.
-
-::: pf-proof
-
-evaluation at $t = 0$.
-
-:::
-
-:::
-
-::: pf-step
-
-Furthermore, $\widetilde{H}(j(b), t) = H(b, t)$, so $\widetilde{H}$ extends $H$.
-
-::: pf-proof
-
-definition of $\widetilde{H}$.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-
-Conclusion:
-$j: B \hookrightarrow B \sqcup_f X$ satisfies the Homotopy Extension Property, so cofibrations are preserved under pushouts. Q.E.D.
-
-::: pf-proof
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+On $B\times I$ the map $\widetilde H$ is $H$ by construction. At $t=0$ it equals $u$ on each of the two pieces: $\widetilde H(j(b),0)=H(b,0)=u(j(b))$, and $\widetilde H(q(x),0)=H_X(x,0)=u(q(x))$; since $P$ is the union of $j(B)$ and $q(X)$, this is $\widetilde H(\cdot,0)=u$. The homotopy extension property is therefore verified for $j$, and $j$ is an inclusion: a point of $B$ is identified in the pushout only with the points of $X$ that map to it under $f$, and those are identified with each other, so distinct points of $B$ stay distinct. By §4.H that makes $j$ a cofibration.
 
 :::
 

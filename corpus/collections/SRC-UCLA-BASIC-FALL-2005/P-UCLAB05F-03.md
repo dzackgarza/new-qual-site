@@ -5,7 +5,9 @@ kind: problem
 title: Uniform convergence and convergence of square integrals
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Riemann Integration
 relations: []
 review: draft
 audit:

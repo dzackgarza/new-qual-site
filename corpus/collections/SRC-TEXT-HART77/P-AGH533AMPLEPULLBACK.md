@@ -30,6 +30,27 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-19
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 5.3.3, printed p. 107,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.3.3, whose printed page the card's earlier events
+    record; this pass did not reopen it, and the comparison is against the
+    statement the card carries. Recomputed
+    (2 pi^*D - E)^2 = 4D^2 - 1, the intersection with a strict
+    transform C-tilde = pi^*C - rE giving 2 deg C - r, and r <= deg C. Not checked: Yang's Solutions outside printed pp. 100-107; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.3.3 at printed
+    p. 107 beside Egbert's entry, with the slips its text carries.
+    No step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -249,9 +270,11 @@ step [](#nakai-moishezon-ample){.pf-ref} gives the required ampleness.
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.3.3, PDF p. 274: he recalls I Ex. 7.5, that an irreducible plane curve of degree $d>1$ has no point of multiplicity $\ge d$, and generalizes it to $\PP^n$; then, since $D$ is very ample, $D\cdot C$ is $\deg C$, any class on $\widetilde X$ is $\pi^*C-rE$, and
+The exercise is Hartshorne, Exercise V.3.3, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; then, since $D$ is very ample, $D\cdot C$ is $\deg C$, any class on $\widetilde X$ is $\pi^*C-rE$, and
 $$
 (2\pi^*D-E)\cdot(\pi^*C-rE)=2\deg C-r>0,\qquad (2\pi^*D-E)^2=4D^2+E^2>0 .
 $$
 Step [](#multiplicity-degree-bound){.pf-ref} is his generalization of I Ex. 7.5, obtained by intersecting the embedded curve with a general hyperplane through the image of $P$; steps [](#ample-meets-exceptional){.pf-ref}, [](#positive-on-other-curves){.pf-ref} and [](#positive-self-intersection){.pf-ref} are his two positivity computations, and they are applied through Nakai--Moishezon rather than to the single curve he checks. Matches.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.3.3, printed p. 107, verifies the Nakai--Moishezon hypotheses for $2\pi^*D-E$: its square is $4D^2-1\ge3>0$, and for a curve $\widetilde C=\pi^*C-rE$ whose image is a curve, with $r=\mu_P(C)\le\deg C$, one gets $(2\pi^*D-E)\cdot\widetilde C=2\deg C-r\ge\deg C>0$. Two things it leaves: the exceptional curve $E$ itself, on which $(2\pi^*D-E)\cdot E=1>0$, is not among the curves it checks, and its closing sentence names $D$ where the class proved ample is $2\pi^*D-E$. The card's own steps cover both.
 :::

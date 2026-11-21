@@ -15,6 +15,15 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Checked against Question 40 of the Chapter 7 review questions in assets/attachments/extracted/Chapter-7.md (Mistral OCR), compared with the same page in the Cracking the GRE Mathematics Subject Test book extraction.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked by decomposing the permutation. As a map,
+    sigma sends 1->5->1 and 2->6->4->3->2, so sigma = (1 5)(2 6 4 3), the order of a product of
+    disjoint cycles being the least common multiple of the cycle lengths, here lcm(2,4) = 4. That is
+    choice (D), which is the card's conclusion. Checked independently by computing the cycles from
+    the two-row notation. Nothing outside this question checked.
 ---
 
 ::: {.problem}

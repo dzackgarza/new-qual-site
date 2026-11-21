@@ -18,6 +18,15 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Structured the card's prose proof into numbered steps and re-checked each: that m_{alpha,F}
+    lies in L[x] and makes alpha algebraic over L, the division with remainder in L[x], the
+    evaluation at alpha, and the appeal to minimality. Nothing was changed mathematically. Not
+    checked against a printed source: no AmD solution set is retained in tmp/sources and the card
+    records no page. The argument remains the card's own.
 ---
 
 ::: {.exercise}
@@ -25,24 +34,71 @@ Let $F\subseteq L\subseteq\Omega$ be fields and let $\alpha\in\Omega$ be algebra
 :::
 
 ::: {.solution}
-Assume $F\subseteq L\subseteq\Omega$ are fields and $\alpha\in\Omega$ is algebraic over $F$. Then $\alpha$ is also algebraic over $L$, since its minimal polynomial over $F$ lies in $L[x]$ and annihilates $\alpha$.
 
-Let
-$$
-m_F=m_{\alpha,F},\qquad m_L=m_{\alpha,L}.
-$$
-Divide $m_F$ by $m_L$ in $L[x]$:
-$$
-m_F=q\,m_L+r,\qquad \deg r<\deg m_L.
-$$
-Evaluating at $\alpha$ gives
-$$
-0=m_F(\alpha)=r(\alpha),
-$$
-because $m_L(\alpha)=0$. By minimality of $m_L$, the only polynomial in $L[x]$ of degree smaller than $\deg m_L$ that annihilates $\alpha$ is the zero polynomial. Hence $r=0$.
+The argument is the card's own: no solution set for this source is retained in `tmp/sources`, so nothing below is transcribed, and the card's existing solution is restructured into numbered steps. Here $F\subseteq L\subseteq\Omega$ are fields, $\alpha\in\Omega$ is algebraic over $F$, and $m_{\alpha,K}$ is the monic minimal polynomial of $\alpha$ over a field $K$; $L[x]$ is a principal ideal domain, so division with remainder is available.
 
-Therefore
-$$
-\boxed{m_{\alpha,L}\mid m_{\alpha,F}\quad\text{in }L[x].}
-$$
+::: pf
+
+::: {.pf-step #alg}
+
+$\alpha$ is algebraic over $L$.
+
+::: pf-proof
+
+$m_{\alpha,F}\in F[x]\subseteq L[x]$ is monic, nonzero and annihilates $\alpha$, so $\alpha$ is a root of a nonzero polynomial over $L$.
+
+:::
+
+:::
+
+::: {.pf-step #div}
+
+Divide: $m_{\alpha,F}=q\,m_{\alpha,L}+r$ in $L[x]$ with $\deg r<\deg m_{\alpha,L}$.
+
+::: pf-proof
+
+Division with remainder by the monic polynomial $m_{\alpha,L}$ in the polynomial ring over the field $L$.
+
+:::
+
+:::
+
+::: {.pf-step #eval}
+
+$r(\alpha)=0$.
+
+::: pf-proof
+
+$m_{\alpha,F}(\alpha)=0$ and $m_{\alpha,L}(\alpha)=0$, so $r(\alpha)=m_{\alpha,F}(\alpha)-q(\alpha)m_{\alpha,L}(\alpha)=0$.
+
+:::
+
+:::
+
+::: {.pf-step #zero}
+
+$r=0$.
+
+::: pf-proof
+
+By minimality of $m_{\alpha,L}$ over $L$ no nonzero polynomial over $L$ of degree below $\deg m_{\alpha,L}$ vanishes at $\alpha$; $r$ has smaller degree and vanishes at $\alpha$ by step [](#eval){.pf-ref}, so $r$ is the zero polynomial.
+
+:::
+
+:::
+
+::: {.pf-step #done}
+
+$m_{\alpha,L}$ divides $m_{\alpha,F}$ in $L[x]$.
+
+::: pf-proof
+
+Step [](#div){.pf-ref} with $r=0$ by step [](#zero){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

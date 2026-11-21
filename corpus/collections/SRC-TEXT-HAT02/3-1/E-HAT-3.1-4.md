@@ -39,6 +39,20 @@ audit:
   date: 2026-11-07
   note: >-
     Statement matches Exercise 4 (p.205). Rechecked the three answers: Hom(Z,C_n) = C_n with differential partial; Hom(Z_m,C_n) = 0 and Hom(Q,C_n) = 0 because C_n is free on the singular n-simplices (p.108), hence torsion-free and reduced; so h_n(X;Z) = H_n(X;Z) while h_n(X;Z_m) = h_n(X;Q) = 0. Added the p.108 and p.191 citations. Not covered: nothing beyond the three coefficient groups the exercise names.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 4 of §3.1, printed p. 205. All three cases verified:
+    $\operatorname{Hom}(\ZZ,C_n(X))\cong C_n(X)$ by evaluation at $1$, with the dual differential
+    equal to $\partial$; $\operatorname{Hom}(\ZZ_m,C_n(X))=0$ because a homomorphism sends $1$ to
+    an element killed by $m$ and $C_n(X)$ is free, hence torsion-free (printed p. 108);
+    $\operatorname{Hom}(\QQ,C_n(X))=0$ because $c=\varphi(1)$ is divisible by every positive
+    integer and a free abelian group has no such nonzero element, after which $b\varphi(a/b)=0$
+    and torsion-freeness finish. The card's conclusion that $h_n(X;\ZZ)=H_n(X;\ZZ)$ while the
+    torsion and divisible coefficient groups give zero is therefore right, and it is exactly what
+    the exercise asks. Not claimed: anything outside the three coefficient groups named, and no
+    certificate.
 ---
 
 ::: {.problem}
@@ -47,7 +61,7 @@ More specifically, what are the groups $h_n(X; G)$ when $G = \ZZ$, $\ZZ_m$, and 
 :::
 
 ::: {.solution}
-Hatcher p.108: $C_n(X)$ is the free abelian group with basis the singular $n$-simplices of $X$, so it is torsion-free and has no nonzero element divisible by every integer, the two facts the last two cases use. We compute
+Hatcher, §2.1: $C_n(X)$ is the free abelian group with basis the singular $n$-simplices of $X$, so it is torsion-free and has no nonzero element divisible by every integer, the two facts the last two cases use. We compute
 $$
 h_n(X;G)=H_n\bigl(\operatorname{Hom}(G,C_\bullet(X))\bigr)
 $$
@@ -68,7 +82,7 @@ Evaluation at $1$ gives a natural isomorphism
 $$
 \operatorname{Hom}(\ZZ,C_n(X))\cong C_n(X)
 $$
-for every $n$, and under this identification the differential $\varphi \mapsto \partial \circ \varphi$, which is the dual of p.191 with the two entries interchanged, becomes $\partial$ itself applied to $\varphi(1)$. Thus the two chain complexes are naturally isomorphic and $h_n(X;\ZZ) = H_n(X;\ZZ)$, the singular homology of p.108.
+for every $n$, and under this identification the differential $\varphi \mapsto \partial \circ \varphi$, which is the dual of the cochain complex constructed in §3.1 with the two entries interchanged, becomes $\partial$ itself applied to $\varphi(1)$. Thus the two chain complexes are naturally isomorphic and $h_n(X;\ZZ) = H_n(X;\ZZ)$, the singular homology of §2.1.
 
 :::
 

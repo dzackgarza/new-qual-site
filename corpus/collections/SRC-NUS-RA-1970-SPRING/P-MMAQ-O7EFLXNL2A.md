@@ -22,6 +22,8 @@ If $f$ is a nonnegative measurable function on $\RR$ and $p > 0$, show that $$\i
 :::
 
 ::: {.solution}
+
+The argument is the card's own: the identity $f(x)^p=\int_0^{f(x)}p t^{p-1}\,dt$ is written at each $x$ as an integral against an indicator, and Tonelli's theorem exchanges the two integrations, with no source transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
 Both sides may equal $+\infty$. Write $\abs{\cdot}$ for Lebesgue measure and $\chi_{\{t < f(x)\}}$ for the indicator of $\{(x,t) \in \RR \times (0,\infty) : t < f(x)\}$.
 
 ::: pf
@@ -54,7 +56,7 @@ For fixed $t$ the indicator is $1$ exactly on $\{x : f(x) > t\}$.
 :::
 
 ::: pf-qed
-By step [](#pointwise-layer-cake-identity){.pf-ref}, $\int f^p ~dx = \int_\RR \int_0^\infty p t^{p-1} \chi_{\{t < f(x)\}} ~dt ~dx$. By step [](#integrand-nonneg-measurable){.pf-ref}, Tonelli's theorem allows the order of integration to be exchanged, with both sides possibly $+\infty$. By step [](#x-integral-gives-measure){.pf-ref} the inner $x$-integral is $\abs{\{f > t\}}$, so
+By step [](#pointwise-layer-cake-identity){.pf-ref}, $\int f^p ~dx = \int_\RR \int_0^\infty p t^{p-1} \chi_{\{t < f(x)\}} ~dt ~dx$. By step [](#integrand-nonneg-measurable){.pf-ref}, [[T-X7XZX|Tonelli's theorem]] allows the order of integration to be exchanged, with both sides possibly $+\infty$. By step [](#x-integral-gives-measure){.pf-ref} the inner $x$-integral is $\abs{\{f > t\}}$, so
 $$\int f^p ~dx = \int_0^\infty p t^{p-1} \abs{\{x : f(x) > t\}} ~dt.$$
 :::
 

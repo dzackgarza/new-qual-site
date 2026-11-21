@@ -14,6 +14,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Probability, Problem 29, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md. Flash contains one or more nonprinting control bytes at this source position; they were removed from the authored card as nonsemantic extraction artifacts.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Big_List_of_Math_Problems.pdf`: the statement is Problem 29 of the Probability chapter, and
+    its printed words are the card's. The chapter, the problem number and the file are now named in
+    the solution's opening sentence. Not checked in this pass: the argument, which the edit does not
+    touch.
 ---
 
 ::: {.problem}
@@ -21,6 +29,7 @@ A dice is turned randomly from one face to one of four adjoined faces. Suppose i
 :::
 
 ::: {.solution}
+This is Problem 29 of the Probability chapter of *Mathematical Trivium*, retained in this repository as `assets/attachments/Big_List_of_Math_Problems.pdf`; the statement below is its wording.
 
 Track only whether the upper face is $6$, opposite to $6$, or one of the four side faces. Let the corresponding probabilities after $n$ turns be $a_n,b_n,c_n$, with
 $$

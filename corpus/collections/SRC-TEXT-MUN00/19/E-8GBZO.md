@@ -29,6 +29,17 @@ audit:
     whole space elsewhere. The failure of the converse is Munkres's Example 19.2, written
     out on the card with the box-open set whose preimage is the single point 0.
     (tmp/sources/munkres-solutions-whitman.pdf).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked the surviving implication for the box topology
+    (the product of V at beta with the other factors gives a box basis element, so f_beta is
+    continuous) and the failure of its converse with Example 2 of §19: f(t)=(t,t,t,...) and
+    the box-open set prod_n (-1/n,1/n), whose preimage is {0}. Source line repaired: an
+    earlier version identified the counterexample as the map (t,2t,3t,...), which is not the
+    book's Example 2 and does not occur in Munkres. Whitman, Exercise 19.5, printed p. 192,
+    citing Example 19.2.
 ---
 
 ::: {.exercise}
@@ -38,24 +49,69 @@ Which one?
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.5, printed p. 192** (`tmp/sources/munkres-solutions-whitman.pdf`); the answer and the proof are his.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.5** (`tmp/sources/munkres-solutions-whitman.pdf`); the answer and the proof of the surviving implication are his. One source line is repaired: the counterexample is Example 2 of §19 as the book prints it, the map $f(t)=(t,t,t,\dots)$, and not the map $f(t)=(t,2t,3t,\dots)$ with which an earlier version of this card identified it.
 
-**Continuity of $f$ implies continuity of each $f_{\alpha}$; the converse fails for the box topology.**
+Throughout, $f:A\to\prod_{\alpha\in J}X_{\alpha}$ is given by $f(a)=(f_{\alpha}(a))_{\alpha\in J}$ and the product carries the box topology; $\pi_{\beta}$ is the projection.
 
-Let $f:A\to\prod_{\alpha\in J}X_{\alpha}$, $f(a)=(f_{\alpha}(a))_{\alpha\in J}$, where the product carries the box topology, and suppose $f$ is continuous. Fix $\beta\in J$ and let $V$ be open in $X_{\beta}$. Set
-$$
-B_{\alpha}=\begin{cases}V,&\alpha=\beta,\\ X_{\alpha},&\alpha\ne\beta,\end{cases}
-\qquad B=\prod_{\alpha\in J}B_{\alpha}.
-$$
-Every $B_{\alpha}$ is open, so $B$ is a basis element of the box topology, hence open, and $U=f^{-1}(B)$ is open in $A$ because $f$ is continuous. For $a\in A$,
+::: pf
+
+::: {.pf-step #continuous-implies}
+If $f$ is continuous, then every coordinate function $f_{\beta}=\pi_{\beta}\circ f$ is continuous.
+
+::: pf-proof
+Fix $\beta\in J$ and let $V$ be open in $X_{\beta}$. Put $B_{\alpha}=V$ for $\alpha=\beta$ and $B_{\alpha}=X_{\alpha}$ otherwise, and $B=\prod_{\alpha\in J}B_{\alpha}$. Each $B_{\alpha}$ is open in $X_{\alpha}$, so $B$ is a basis element of the box topology, hence open in the product, and $U=f^{-1}(B)$ is open in $A$ because $f$ is continuous. For $a\in A$,
 $$
 a\in U\iff f(a)\in B\iff f_{\alpha}(a)\in B_{\alpha}\ \text{for all }\alpha\iff f_{\beta}(a)\in V,
 $$
-so $U=f_{\beta}^{-1}(V)$. As $V$ was arbitrary, $f_{\beta}$ is continuous; as $\beta$ was arbitrary, every coordinate function is.
+so $U=f_{\beta}^{-1}(V)$. As $V$ was arbitrary, $f_{\beta}$ is continuous, and $\beta$ was arbitrary.
+:::
 
-The converse fails: Munkres's Example 2 of §19, the map $f:\RR\to\RR^{\omega}$, $f(t)=(t,2t,3t,\dots)$, has every coordinate function $t\mapsto nt$ continuous, but $f$ is not continuous for the box topology on $\RR^{\omega}$. Indeed
-$$
-B=(-1,1)\times\big(-\tfrac1{2^{2}},\tfrac1{2^{2}}\big)\times\cdots\times\big(-\tfrac1{n^{2}},\tfrac1{n^{2}}\big)\times\cdots
-$$
-is a box-open set containing $f(0)=\mathbf{0}$, while $f(t)\in B$ forces $\abs{nt}<1/n^{2}$, that is $\abs{t}<1/n^{3}$, for every $n$, which holds only for $t=0$; so $f^{-1}(B)=\{0\}$ is not open in $\RR$.
+:::
+
+::: {.pf-step #converse-fails}
+The converse fails for the box topology: in Example 2 of §19 the map $f:\RR\to\RR^{\omega}$, $f(t)=(t,t,t,\dots)$, has every coordinate function continuous, and $f$ is not continuous for the box topology on $\RR^{\omega}$.
+
+:::: pf-proof
+
+::: {.pf-step #coordinates-continuous}
+Every coordinate function $f_{n}(t)=t$ of the example is continuous.
+
+::: pf-proof
+Each $f_{n}$ is the identity map of $\RR$, which is continuous.
+:::
+
+:::
+
+::: {.pf-step #not-continuous}
+$f$ is not continuous for the box topology.
+
+::: pf-proof
+The set $B=\prod_{n\in\ZZ_{+}}\big(-\tfrac1n,\tfrac1n\big)$ is a box-open set containing $f(0)=\mathbf{0}$, because each factor is an open interval containing $0$. A real $t$ satisfies $f(t)\in B$ exactly when $\abs{t}<1/n$ for every $n\in\ZZ_{+}$, which forces $t=0$: if $t\ne0$ then the positive integers are unbounded, so some $n$ has $n>1/\abs{t}$, that is $1/n<\abs{t}$. Hence $f^{-1}(B)=\{0\}$. That set is not open in $\RR$, since an interval $(-\delta,\delta)$ about $0$ contains $\delta/2$, which is nonzero and so lies outside $f^{-1}(B)$.
+:::
+
+:::
+
+::: {.pf-step}
+The converse fails.
+
+::: pf-proof
+Steps [](#coordinates-continuous){.pf-ref} and [](#not-continuous){.pf-ref} give a map all of whose coordinate functions are continuous and which is not continuous.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step}
+The implication that holds for the box topology is that a continuous $f$ has every $f_{\alpha}$ continuous; its converse does not hold.
+
+::: pf-proof
+Steps [](#continuous-implies){.pf-ref} and [](#converse-fails){.pf-ref} are the two assertions; Theorem 19.6 states that in the product topology both implications hold, and step [](#converse-fails){.pf-ref} shows the second of them does not survive the passage to the box topology.
+:::
+
+:::
+
+:::
 :::

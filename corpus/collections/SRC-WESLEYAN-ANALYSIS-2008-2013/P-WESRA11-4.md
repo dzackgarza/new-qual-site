@@ -5,7 +5,9 @@ kind: problem
 title: 'Only countably many centered spheres can have positive mass'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Borel Measures
+  - Countability
 relations: []
 review: draft
 audit:
@@ -29,6 +31,8 @@ is at most countable.
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the preliminary-examination papers alone, so the argument is the card's own.
 
 Let
 $$

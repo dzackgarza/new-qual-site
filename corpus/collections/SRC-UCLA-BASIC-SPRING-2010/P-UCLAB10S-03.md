@@ -6,7 +6,9 @@ title: Joint eigenbasis for commuting normal operators
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Simultaneous Diagonalization
+  - Normal Operators
 relations: []
 review: draft
 audit:

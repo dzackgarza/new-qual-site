@@ -5,7 +5,9 @@ kind: problem
 title: Existence and uniqueness of the adjoint of a linear map
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Adjoint Operators
+  - Inner Product Spaces
 relations: []
 review: draft
 audit:

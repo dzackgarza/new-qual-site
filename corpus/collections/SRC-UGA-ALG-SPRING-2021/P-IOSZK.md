@@ -13,6 +13,30 @@ classification:
   - Minimal and Characteristic Polynomials
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained exam assets/attachments/Algebra_Spring_2021_extracted.md,
+    problem 1: the matrix A as displayed and the three parts, Jordan form,
+    conjugating matrix P with the remark that P inverse need not be computed,
+    and the minimal polynomial. The card agrees.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    All three parts are correct. The trace 4, the sum 2 + 6 - 3 = 5 of the
+    principal 2x2 minors and the determinant 2 give the characteristic
+    polynomial t^3 - 4t^2 + 5t - 2 = (t - 2)(t - 1)^2. The vectors (1,-2,0) and
+    (1,-2,1) are eigenvectors for 2 and 1, and A - I has rank 2, so the
+    eigenspace for 1 is one-dimensional and the eigenvalue 1 has a single block
+    of size 2, giving J = diag(2, J_2(1)). With v_3 = (0,1,0) one has
+    (A - I)v_3 = v_2, so A v_3 = v_2 + v_3, and the columns of P satisfy
+    A P = P J; the determinant is -1, so P is invertible. The minimal
+    polynomial has exponents equal to the largest block size for each
+    eigenvalue, namely (t - 2)(t - 1)^2, which is not the characteristic
+    polynomial, so A is not diagonalisable. Nothing was changed.
 ---
 
 ::: {.problem}

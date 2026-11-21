@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB12W-07
 kind: problem
 title: Number of invertible linear maps over a finite field
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Finite Fields, Matrix Groups]}
 relations: []
 review: draft
 audit:

@@ -29,6 +29,11 @@ audit:
     induction on n, and the least-index argument of (b). Whitman's case analysis for the
     section is replaced by the equivalent single comparison at the largest differing
     coordinate, and the order axioms are checked explicitly.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured the prose solution into Lamport steps and checked the statement against Munkres, *Topology* (2000), §10 Exercise 9, printed p. 67, the order relation and both parts matching the printed text. The argument is transcribed from the retained set: Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 10.9, printed pp. 113--114. Checked: that two elements of $A$ differ in only finitely many coordinates; that $A_n$ is exactly the section below the element with $a_{n+1}=2$; that the reversal map is an order isomorphism; and the two-stage minimal-index argument in (b).
 ---
 
 ::: {.exercise}
@@ -41,31 +46,57 @@ Consider the subset $A$ of $(\ZZ_{+})^{\omega}$ consisting of all infinite seque
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 10.9, printed pp. 113--114** (`tmp/sources/munkres-solutions-whitman.pdf`); the section identification and the order isomorphism of (a), and the minimal-index argument of (b), are his.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 10.9** (`tmp/sources/munkres-solutions-whitman.pdf`); the identification of the section in (a) with an order isomorphism onto $(\ZZ_+)^{n}$, and the minimal-index argument of (b), are his. The statement is Munkres, *Topology* (2000), §10 Exercise 9.
 
-Write $\mathbf{1}=(1,1,1,\dots)$. Two elements of $A$ differ in only finitely many coordinates, since both end in a string of $1$'s, so the set of coordinates in which $x\ne y$ has a largest element; the relation of the exercise reads $x<y$ iff $x_{n}<y_{n}$ at that largest differing index $n$. It is a simple order on $A$: it is irreflexive, and for $x\ne y$ exactly one of $x<y$, $y<x$ holds according to the comparison of the entries at the largest differing index; transitivity holds because for $x<y<z$ the largest index at which $x$ and $z$ differ is the largest of the two largest indices at which $x,y$ and $y,z$ differ, and at that index $x<z$.
+::: pf
 
-(a) Fix $n\ge1$ and let $a\in A$ have $a_{n+1}=2$ and $a_{i}=1$ for $i\ne n+1$. Put
-$$
-A_{n}=\{x\in A\mid x_{i}=1 \text{ for all } i>n\}.
-$$
-*Claim: the section $S_{a}=\{x\in A\mid x<a\}$ equals $A_{n}$.* If $x\in A_{n}$ then $x_{i}=a_{i}=1$ for $i>n+1$ and $x_{n+1}=1<2=a_{n+1}$, so the largest index at which $x$ and $a$ differ is $n+1$ (even if some coordinate $i\le n$ also differs, it is smaller than $n+1$), and $x_{n+1}<a_{n+1}$; hence $x<a$. Conversely, if $x_{i}\ne1$ for some $i>n$, let $m$ be the largest such index; then $x_{m}>1=a_{m}$ and $x_{i}=a_{i}=1$ for $i>m$, so $x>a$ and $x\notin S_{a}$. And if $x_{n+1}\ne1$ then $x_{n+1}\ge2=a_{n+1}$, and either $x_{n+1}>2$ and the largest differing index is $n+1$ with $x_{n+1}>a_{n+1}$, or $x_{n+1}=2$ and the largest differing index is some $m\le n$ where $x_{m}\ge1=a_{m}$, so $x\ge a$ (with $x=a$ when no such $m$ exists). So $x\in S_{a}$ exactly when $x\in A_{n}$, as claimed.
+::: {.pf-step #order}
+The antidictionary relation is a simple order on $A$.
 
-Now define
-$$
-f:A_{n}\longrightarrow(\ZZ_{+})^{n},\qquad f(x)=(x_{n},x_{n-1},\dots,x_{1}).
-$$
-This is a bijection onto $(\ZZ_{+})^{n}$: an inverse is $y\mapsto(y_{n},\dots,y_{1},1,1,\dots)$, which lies in $A_{n}$. For $x\ne x'$ in $A_{n}$ let $m\le n$ be the largest index at which they differ. In the antidictionary order $x<x'$ exactly when $x_{m}<x'_{m}$, and in the dictionary order on $(\ZZ_{+})^{n}$ the tuples $f(x),f(x')$ first differ in position $n-m+1$, where $f(x)$ has the entry $x_{m}$ and $f(x')$ the entry $x'_{m}$; the entries of positions $1,\dots,n-m$ are the common coordinates $x_{n},\dots,x_{m+1}$. Hence $x<x'$ iff $f(x)<_{\mathrm{dict}}f(x')$, and $f$ is an order isomorphism of $S_{a}=A_{n}$ onto $(\ZZ_{+})^{n}$ in the dictionary order.
+::: pf-proof
+Two elements of $A$ differ in only finitely many coordinates, because both end in a string of $1$'s, so the set of indices at which $x\neq y$ has a largest element, and $x<y$ is decided by comparing the entries at that index. This gives irreflexivity, trichotomy for distinct elements, and transitivity: for $x<y<z$ the largest index at which $x$ and $z$ differ is the largest of the corresponding indices for the pairs $(x,y)$ and $(y,z)$, and the comparison there is the two-step comparison of integers.
+:::
+:::
 
-(b) First, $(\ZZ_{+})^{k}$ in the dictionary order is well ordered for every $k$. For $k=1$ this is the usual well-ordering of $\ZZ_{+}$. If it holds for $k$ and $B\subset(\ZZ_{+})^{k+1}$ is nonempty, let $A'$ be the nonempty set of first coordinates of elements of $B$; it has a smallest element $a_{0}$, and the set of $b\in\ZZ_{+}$ with $(a_{0},b,\dots)\in B$ is nonempty and has a smallest element $b_{0}$ by the induction hypothesis, and $(a_{0},b_{0},\dots)$ is the smallest element of $B$.
+::: {.pf-step #section}
+(a) For $n\geq1$ the set $A_n=\{x\in A\st x_i=1\text{ for all }i>n\}$ is a section of $A$.
 
-Now let $B\subset A$ be nonempty. If $\mathbf{1}\in B$ then $\mathbf{1}$ is the smallest element of $A$, hence of $B$. Otherwise every $x\in B$ satisfies $x\ne\mathbf{1}$, and since $x$ ends in a string of $1$'s there is a largest index $n_{x}$ with $x_{n_{x}}>1$; put
-$$
-I=\{n_{x}\mid x\in B\},\qquad B_{n}=\{x\in B\mid n_{x}=n\}.
-$$
-$I$ is a nonempty subset of $\ZZ_{+}$ and has a smallest element $n$; $B_{n}$ is nonempty. Every $x\in B_{n}$ has $x_{i}=1$ for $i>n$, so $B_{n}\subset A_{n}=S_{a}$, and $S_{a}$ is well ordered by (a); let $b$ be the smallest element of the nonempty set $B_{n}$.
+::: pf-proof
+Let $a\in A$ have $a_{n+1}=2$ and $a_i=1$ for $i\neq n+1$. If $x\in A_n$ then $x_i=a_i=1$ for $i>n+1$ and $x_{n+1}=1<2=a_{n+1}$, so the largest differing index is $n+1$ and $x<a$. Conversely if $x\notin A_n$ there is $i>n$ with $x_i\neq1$; taking the largest such $i$, we have $x_i>1=a_i$ and $x_j=a_j=1$ for $j>i$, so $x>a$. Hence $A_n=\{x\st x<a\}$ is the section determined by $a$.
+:::
+:::
 
-Then $b$ is the smallest element of $B$. For $x\in B$: if $n_{x}=n$ then $x\in B_{n}$ and $b\le x$. If $n_{x}>n$, then $b_{n_{x}}=1<x_{n_{x}}$ because $b\in A_{n}$ and $n_{x}>n$, and $b_{i}=1=x_{i}$ for all $i>n_{x}$; so the largest index at which $b$ and $x$ differ is $n_{x}$, where $b<x$, giving $b<x$. Hence $B$ has a smallest element and $A$ is well ordered.
+::: {.pf-step #iso}
+(a) $A_n$ with the antidictionary order is isomorphic to $(\ZZ_+)^{n}$ with the dictionary order.
 
-Whitman notes that $(\ZZ_{+})^{n}$ has order type $\omega^{n}$, so the section $A_{n}$ of $A$ does too, and $A$ has order type $\omega^{\omega}$.
+::: pf-proof
+The map $f(x)=(x_n,\dots,x_1)$ is a bijection of $A_n$ onto $(\ZZ_+)^n$, with inverse $y\mapsto(y_n,\dots,y_1,1,1,\dots)$. If $x,x'\in A_n$ differ and $m\le n$ is the largest index at which they differ, then $x<x'$ exactly when $x_m<x'_m$; in the tuples $f(x),f(x')$ this is position $n-m+1$, and the earlier positions hold the common coordinates $x_n,\dots,x_{m+1}$. So $x<x'$ exactly when $f(x)<f(x')$ in the dictionary order.
+:::
+:::
+
+::: {.pf-step #powers}
+$(\ZZ_+)^{k}$ in the dictionary order is well ordered for every $k$.
+
+::: pf-proof
+For $k=1$ this is the well-ordering of $\ZZ_+$. If it holds for $k$ and $B\subset(\ZZ_+)^{k+1}$ is nonempty, the set of first coordinates of elements of $B$ is a nonempty subset of $\ZZ_+$ with a smallest element $a_0$; the set of tails $(b_1,\dots,b_k)$ with $(a_0,b_1,\dots,b_k)\in B$ is nonempty and, by the induction hypothesis, has a smallest element; the corresponding element of $B$ is its smallest.
+:::
+:::
+
+::: {.pf-step #b}
+(b) $A$ is well ordered.
+
+::: pf-proof
+Let $B\subset A$ be nonempty. If $\mathbf{1}=(1,1,\dots)\in B$ it is the smallest element of $A$. Otherwise each $x\in B$ has a largest index $n_x$ with $x_{n_x}>1$; the set $I=\{n_x\st x\in B\}$ is a nonempty subset of $\ZZ_+$ with smallest element $n$, and $B_n=\{x\in B\st n_x=n\}$ is nonempty and contained in $A_n$, which is well ordered by steps [](#section){.pf-ref} and [](#iso){.pf-ref}. Let $b$ be the smallest element of $B_n$. For $x\in B$: if $n_x=n$ then $b\le x$; if $n_x>n$ then $b_i=1=x_i$ for $i>n_x$ and $b_{n_x}=1<x_{n_x}$, so $b<x$, again using $b\in A_n$. Hence $b$ is the smallest element of $B$.
+:::
+:::
+
+::: {.pf-step}
+Both parts of the exercise hold: every section $A_n$ has the order type of $(\ZZ_+)^{n}$, and $A$ is well ordered.
+
+::: pf-proof
+Steps [](#section){.pf-ref} and [](#iso){.pf-ref} give (a) and steps [](#powers){.pf-ref} and [](#b){.pf-ref} give (b).
+:::
+:::
+
+:::
 :::

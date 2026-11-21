@@ -6,7 +6,9 @@ title: Reduced quotient rings and radical ideals
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Radical of an Ideal
+  - Nilpotent Elements
 relations: []
 review: draft
 audit:

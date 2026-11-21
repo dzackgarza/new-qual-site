@@ -12,6 +12,19 @@ classification:
   - Manifolds
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. pi_1(P v S^3) = pi_1(P) has order 120, so the universal cover is
+    120-sheeted; over P it is the given S^3, and the sphere summand is simply connected so it lifts as
+    a copy at each of the 120 points of the fibre. The cover is therefore homotopy equivalent to a
+    wedge of 121 three-spheres, which is 2-connected with pi_3 = H_3 = Z^121 by Hurewicz, and a
+    covering map is an isomorphism on pi_3. Checked the count (120 + 1, not 120), that Hurewicz needs
+    the 2-connectedness which the wedge supplies, and that the wedge-of-spheres model is reached up to
+    homotopy by joining the attachment points along a tree. Not checked: the printed exam, which was
+    not re-read in this pass.
 ---
 
 ::: {.problem}

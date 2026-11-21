@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP12-8
 kind: problem
 title: Mod-$2$ simplicial cohomology of the Klein bottle from a $\Delta$-complex
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Delta Complexes, Cohomology]}
 relations: []
 review: draft
 audit:

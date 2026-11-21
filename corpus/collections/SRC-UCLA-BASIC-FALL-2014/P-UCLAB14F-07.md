@@ -6,7 +6,9 @@ title: Minimum-norm solution of an underdetermined linear system
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Orthogonal Projection
+  - Linear Systems
 relations: []
 review: draft
 audit:

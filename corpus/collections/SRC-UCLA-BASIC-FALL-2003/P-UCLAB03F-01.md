@@ -5,7 +5,9 @@ kind: problem
 title: Uncountability of the real numbers
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Uncountable Sets
+  - Baire Category Theorem
 relations: []
 review: draft
 audit:

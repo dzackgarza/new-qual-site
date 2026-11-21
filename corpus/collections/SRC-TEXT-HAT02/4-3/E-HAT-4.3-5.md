@@ -11,6 +11,36 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Citation convention. Sources on this card are cited by chapter, section and numbered statement
+    only, and the statement and solution above cite every source by its numbered statement. The
+    events dated before today are left as their sessions wrote them, which QUAL-11 requires, so a
+    locator in one of them stands as a historical record and is superseded by the citation now on
+    the card. This event records the convention and claims no further reading: the
+    mathematics of the card is as those events describe it.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Citation corrected. Example 4.11, "Cellular Approximation for Pairs", is now cited by name,
+    and Theorem 4.8 with it. The event of 2026-11-19 is left as written under QUAL-11.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.3 Exercise 5, printed p. 419,
+    Theorem 4.57, printed p. 393, and Example 4.11, printed p. 349. The proof is correct:
+    K(Z,n) is built from S^n with cells of dimension at least n+2, so its (n+1)-skeleton
+    is S^n; surjectivity of [X,S^n] -> [X,K(Z,n)] is cellular approximation for the
+    n-dimensional X, and injectivity is cellular approximation for the pair
+    (X x I, X x dI), whose total space is (n+1)-dimensional, landing in
+    K(Z,n)^{n+1} = S^n. What the card did not say is the identification it was using:
+    Theorem 4.57 is stated for based classes, the exercise writes unbased [X,S^n], and
+    those agree here because pi_1(S^n) acts trivially (0 for n >= 2, and conjugation in
+    the abelian pi_1(S^1) = Z for n = 1). A sentence now says so. Statement unchanged.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -43,7 +73,36 @@ audit:
     X x dI and X x I has dimension n+1, so relative cellular approximation (Example 4.11) makes it
     land in S^n. Verified as correct and left unchanged: pi_i(S^n) = pi_i(K(Z,n)) for i <= n, and the
     final appeal to representability. Not checked: nothing outside this exercise.
-
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Structured into Lamport steps from the card's own prose. The construction of K(Z,n) from S^n
+    by attaching cells of dimension at least n+2 is now a step, with the reason the (n+1)-skeleton
+    stays S^n and pi_n stays Z (cells of dimension above n+1 do not change pi_n, by cellular
+    approximation of spheres and homotopies of dimension at most n). Surjectivity uses cellular
+    approximation of maps out of the n-dimensional X; injectivity uses cellular approximation for
+    the pair (X x I, X x dI), which is legitimate because X x I is (n+1)-dimensional and the
+    homotopy is already cellular on the subcomplex; representability of H^n(-;Z) by K(Z,n) is
+    cited from section 4.3. Statement and printed hint unchanged; the card says the argument is
+    its own.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Notation repair after the corpus check reported raw TeX the page cannot show. One sentence
+    cites the representability theorem by section as `\S4.3`, a section sign written as a TeX
+    command outside a math span, which the HTML writer drops; it now reads the character `§4.3`,
+    as the corpus does elsewhere. Mathematics and wording unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card said no retained solution set covers this exercise, and that is false: Sam's set,
+    retained as `tmp/sources/hatcher-solutions-sam-2008.pdf`, solves it at §4.3 Exercise 5 on
+    printed p. 25. The rendered sentence now cites it and says what the card adds. Found by
+    screening the residue's absence claims against the solution sets inventoried in
+    `wiki/topology/resources/solutions.md`; no step of the proof changed.
 ---
 
 ::: {.problem}
@@ -51,23 +110,68 @@ Show that $[X, S^n] \approx H^n(X; \ZZ)$ if $X$ is an $n$-dimensional CW complex
 :::
 
 ::: {.solution}
-Choose a map
-$$
-j:S^n\to K(\ZZ,n)
-$$
-representing the generator of $\pi_nK(\ZZ,n)$. It induces an isomorphism on $\pi_i$ for $i\le n$: both spaces have zero homotopy groups below $n$, and $j_*:\pi_n(S^n)\to\ZZ$ is an isomorphism.
+Take $j\colon S^n\to K(\ZZ,n)$ the inclusion of the $n$-skeleton in a $K(\ZZ,n)$ built as the hint prescribes, so that $K(\ZZ,n)^k=S^n$ for $n\le k\le n+1$. Cellular approximation makes every map out of the $n$-dimensional $X$ land in $S^n$, which gives surjectivity, and makes every homotopy out of $X\times I$ land in $K(\ZZ,n)^{n+1}=S^n$, which gives injectivity; representability of $H^n(-;\ZZ)$ finishes. The argument is that of the retained solution set: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 5** of `tmp/sources/hatcher-solutions-sam-2008.pdf`, which builds $K(\ZZ,n)$ from $S^n$ by attaching cells of dimension $\ge n+2$, obtains injectivity and surjectivity from cellular approximation, and concludes through $[X,K(\ZZ,n)]\cong H^n(X;\ZZ)$. The card states the identification of the unbased and based class sets that the argument uses.
 
-Take $K(\ZZ,n)$ as the hint prescribes, built from $S^n$ by attaching only cells of dimension $\ge n+2$; then $K(\ZZ,n)^k=S^n$ for $n\le k\le n+1$. Give $X$ its CW structure. By cellular approximation (Theorem 4.8) every map $X\to K(\ZZ,n)$ is homotopic to a cellular one, and a cellular map from the $n$-dimensional $X$ lands in $K(\ZZ,n)^n=S^n$; so $j_*$ is surjective. For injectivity, let $c_0,c_1:X\to S^n$ be cellular maps that become homotopic in $K(\ZZ,n)$, and let $G:X\times I\to K(\ZZ,n)$ be a homotopy between them. It is cellular on the subcomplex $X\times\partial I$, and $X\times I$ has dimension $n+1$, so by cellular approximation for pairs (Example 4.11) $G$ is homotopic relative to $X\times\partial I$ to a cellular map, which lands in $K(\ZZ,n)^{n+1}=S^n$. Hence $c_0\simeq c_1$ in $S^n$ and $j_*$ is injective. Therefore
-$$
-j_*:[X,S^n]\xrightarrow{\cong}[X,K(\ZZ,n)].
-$$
+::: pf
 
-Finally representability gives
-$$
-[X,K(\ZZ,n)]\cong H^n(X;\ZZ).
-$$
-Therefore
-$$
-\boxed{[X,S^n]\cong H^n(X;\ZZ).}
-$$
+::: {.pf-step #build}
+There is a CW complex $K(\ZZ,n)$ with a map $j\colon S^n\to K(\ZZ,n)$, an isomorphism on $\pi_n$, such that $K(\ZZ,n)^k=S^n$ for $n\le k\le n+1$.
+
+::: pf-proof
+Begin with $S^n$, whose only nonzero homotopy group is $\pi_n=\ZZ$. Inductively, if $\pi_{m}(-)\ne0$ for some $m\ge n+2$, choose maps $S^m\to K$ generating it and attach $(m+1)$-cells along them; each attachment kills the corresponding class, and because the attached cells have dimension $m+1>m$, the groups $\pi_i$ for $i\le m$ are unchanged (cellular approximation of maps of $S^i$ and of homotopies of them, for $i\le m<m+1$). Starting the induction at $m=n+2$ and continuing, no cells of dimension $n+1$ are ever attached, so the $(n+1)$-skeleton of the result is $S^n$ itself, and the result has $\pi_n=\ZZ$ and no other homotopy. So it is a $K(\ZZ,n)$ and $j$ is the inclusion of its $n$-skeleton.
+:::
+
+:::
+
+
+::: {.pf-step #surj}
+$j_*\colon[X,S^n]\to[X,K(\ZZ,n)]$ is surjective.
+
+::: pf-proof
+Let $f\colon X\to K(\ZZ,n)$ be any map, with $X$ $n$-dimensional. By cellular approximation (Theorem 4.8) $f$ is homotopic to a cellular map $f'$, and a cellular map out of an $n$-dimensional complex lands in the $n$-skeleton of the target, which is $S^n$ by step [](#build){.pf-ref}. So $f'$ is a map $X\to S^n$ with $j\,f'\simeq f$, i.e. $j_*[f']=[f]$.
+:::
+
+:::
+
+
+::: {.pf-step #inj}
+$j_*$ is injective.
+
+::: pf-proof
+Let $c_0,c_1\colon X\to S^n$ be cellular with $j\,c_0\simeq j\,c_1$, and let $G\colon X\times I\to K(\ZZ,n)$ be a homotopy. On the subcomplex $X\times\partial I$ the map $G$ is $j\,c_0$ and $j\,c_1$, hence cellular. Since $X\times I$ is $(n+1)$-dimensional, cellular approximation for the pair (Example 4.11) gives a cellular $G'$ homotopic to $G$ relative to $X\times\partial I$, and a cellular map out of an $(n+1)$-dimensional complex lands in $K(\ZZ,n)^{n+1}=S^n$ by step [](#build){.pf-ref}. So $G'$ is a homotopy in $S^n$ from $c_0$ to $c_1$, and the two classes agree.
+:::
+
+:::
+
+
+::: {.pf-step #bij}
+$j_*\colon[X,S^n]\to[X,K(\ZZ,n)]$ is a bijection of pointed sets.
+
+::: pf-proof
+Surjective by step [](#surj){.pf-ref} and injective by step [](#inj){.pf-ref}; a map of pointed sets that is both is a bijection, and it carries the basepoint to the basepoint because $j$ does.
+:::
+
+:::
+
+
+::: {.pf-step #represent}
+$[X,K(\ZZ,n)]\cong H^n(X;\ZZ)$ for a CW complex $X$ and $n\ge1$.
+
+::: pf-proof
+Eilenberg--MacLane spaces represent cohomology: $[f]\mapsto f^*\iota$ is a natural bijection $[X,K(\ZZ,n)]\to H^n(X;\ZZ)$, where $\iota\in H^n(K(\ZZ,n);\ZZ)$ is the fundamental class; this is the representability theorem of §4.3.
+:::
+
+:::
+
+
+::: {.pf-step #conclusion}
+$[X,S^n]\cong H^n(X;\ZZ)$ for every $n$-dimensional CW complex $X$ and every $n\ge1$.
+
+::: pf-proof
+Composing the bijection of step [](#bij){.pf-ref} with step [](#represent){.pf-ref} gives $[X,S^n]\cong[X,K(\ZZ,n)]\cong H^n(X;\ZZ)$, which is the assertion of the exercise. Two brackets are in play and coincide here: Theorem 4.57 is stated for based homotopy classes $\langle X,K(\ZZ,n)\rangle$, while the exercise writes $[X,S^n]$ for unbased ones. For a CW complex $X$ and a path-connected $Y$ the unbased classes are the orbits of $\langle X,Y\rangle$ under the action of $\pi_1(Y)$, and here that action is trivial: $\pi_1(S^n)=0$ for $n\ge2$, and for $n=1$ the action is conjugation in the abelian group $\pi_1(S^1)=\ZZ$. So $[X,S^n]=\langle X,S^n\rangle$, and the bijections above identify all three. The hypothesis $n\ge1$ is the one under which the hint's construction starts from $S^n$ and under which representability is stated; the exercise is posed for $n$-dimensional complexes with $n\ge1$.
+:::
+
+:::
+
+:::
 :::

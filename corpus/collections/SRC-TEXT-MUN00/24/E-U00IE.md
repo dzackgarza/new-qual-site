@@ -35,13 +35,44 @@ Show that if $X$ is a well-ordered set, then $X \times [0, 1)$ in the dictionary
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.6, PDF p. 5** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs, with the greatest lower bound property used as they use it.
 
-Let $X$ be well ordered and consider $X\times[0,1)$ in the dictionary order.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.6** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs, with the greatest-lower-bound verification written out in its two cases.
 
-*Density.* If $x\times y<z\times w$: when $x=z$ take $x\times(y+w)/2$; when $x<z$ take $x\times(y+1)/2$, which satisfies $x\times y<x\times(y+1)/2<z\times w$ because its first coordinate is $x<z$.
+Let $X$ be well ordered and let $L=X\times[0,1)$ carry the dictionary order; write $x\times t$ for an element, and let $\pi_{1}$ be the first projection.
 
-*Least upper bound property.* It is equivalent, in a simply ordered set, to the greatest lower bound property, which we verify: let $S\ne\varnothing$ be bounded below and put $\pi_{1},\pi_{2}$ the projections. Since $X$ is well ordered, $\pi_{1}(S)$ has a least element $x_{0}$; then the set of second coordinates $\{t\mid x_{0}\times t\in S\}$ is a nonempty subset of $[0,1)$, bounded below by $0$, so it has a greatest lower bound $y_{0}$, and $x_{0}\times y_{0}$ is a greatest lower bound of $S$: it is a lower bound because every element of $S$ has first coordinate $\ge x_{0}$ with equality only in the fibre over $x_{0}$, and it is the greatest such because any smaller element either has a smaller first coordinate, which is then below some element of $S$ in the fibre, or lies below $x_{0}\times y_{0}$ in the same fibre.
+::: pf
 
-So $X\times[0,1)$ is a linear continuum.
+::: {.pf-step #dense}
+$L$ has no gaps: between any two elements there is a third.
+
+::: pf-proof
+Let $x\times y<z\times w$. If $x=z$ then $y<w$ and $x\times\frac{y+w}{2}$ satisfies $x\times y<x\times\frac{y+w}{2}<x\times w$, with $\frac{y+w}{2}\in[0,1)$ because $y<\frac{y+w}{2}<w<1$. If $x<z$ then $\frac{y+1}{2}\in(y,1)\subseteq[0,1)$ and $x\times y<x\times\frac{y+1}{2}<z\times w$, the outer inequalities holding because the first coordinates satisfy $x=x<z$.
+:::
+
+:::
+
+::: {.pf-step #glb}
+Every nonempty subset $S\subseteq L$ that is bounded below has a greatest lower bound.
+
+::: pf-proof
+$\pi_{1}(S)$ is a nonempty subset of the well-ordered set $X$, so it has a least element $x_{0}$; by definition of $\pi_{1}(S)$ the set $T=\theset{t\in[0,1)\mid x_{0}\times t\in S}$ is nonempty, and it is bounded below by $0$, so it has a greatest lower bound $y_{0}$ in $\RR$, which lies in $[0,1)$. Put $b=x_{0}\times y_{0}$. For $z\times w\in S$ one has $z\ge x_{0}$; if $z=x_{0}$ then $w\in T$ so $w\ge y_{0}$ and $z\times w\ge b$, while if $z>x_{0}$ then $z\times w>b$ by the dictionary order. So $b$ is a lower bound of $S$. If $u\times v<b$ were a lower bound of $S$, then either $u<x_{0}$, which makes $u$ a lower bound of $\pi_{1}(S)$ and contradicts the minimality of $x_{0}$, or $u=x_{0}$ and $v<y_{0}$, which makes $v$ a lower bound of $T$ and contradicts the definition of $y_{0}$. So $b$ is the greatest lower bound.
+:::
+
+:::
+
+::: {.pf-step #lub}
+Every nonempty subset $S\subseteq L$ that is bounded above has a least upper bound.
+
+::: pf-proof
+Reversing the order of a simply ordered set exchanges least upper bounds with greatest lower bounds, so the greatest-lower-bound property of step [](#glb){.pf-ref} is equivalent to the least-upper-bound property.
+:::
+
+:::
+
+::: {.pf-qed}
+$L$ is a simply ordered set with the least upper bound property and with more than one point, and it is dense by step [](#dense){.pf-ref}; those are the two conditions defining a linear continuum (§24). So $X\times[0,1)$ in the dictionary order is a linear continuum.
+:::
+
+:::
+
 :::

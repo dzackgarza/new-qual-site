@@ -24,6 +24,13 @@ audit:
     625, so none is zero and an even number are negative. The trace is zero,
     which rules out all four eigenvalues having the same sign; hence exactly
     two are positive and two are negative.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Summer79.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -40,6 +47,7 @@ has two positive and two negative eigenvalues, counted with multiplicity.
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Summer 1979, retained in this repository as `assets/attachments/Summer79.pdf`; the statement below is its wording.
 Let
 $$
 A=

@@ -6,7 +6,9 @@ title: Positive orthogonal symmetric matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Orthogonal Matrices
+  - Positive Definite Matrices
 relations: []
 review: draft
 audit:

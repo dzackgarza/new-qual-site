@@ -6,7 +6,9 @@ title: Uniform continuity and extension to a closed interval
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Uniform Continuity
+  - Extensions
 relations: []
 review: draft
 audit:

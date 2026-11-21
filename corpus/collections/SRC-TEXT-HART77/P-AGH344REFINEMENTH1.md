@@ -225,6 +225,8 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a), step [](#s3){.pf-ref} pro
 :::
 
 ::: {.remark title="Refinement is initially a preorder"}
+The exercise is III.4.4 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is its text, the preceding sentence that Cech cohomology need not agree with derived-functor cohomology and the limit over all coverings included.
+
 For a nonempty space, the indexed covers $(X)$ and $(X,X)$ are distinct and refine each other.
 Thus refinement is not literally antisymmetric on indexed covers.
 Step [](#s2){.pf-ref} proves the independence and composition properties that allow the directed-limit notation, either on the preorder or on its mutual-refinement classes.

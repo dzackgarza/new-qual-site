@@ -38,6 +38,67 @@ audit:
     characterization [X,X]_* = M_n(Z), its multiplicativity, and the based/free identification at the
     end. Not checked: re-verification of the printed hint's parenthetical beyond its restatement here.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 4 of §4.A, printed p. 426, with Theorem 4.8 (p. 349), the
+    Hurewicz theorem (p. 366), Theorem 2.35 (p. 139) and Corollary 4.33 (p. 367). Correct:
+    $X=\bigvee_nS^k$ is $(k-1)$-connected for $k>1$ by cellular approximation, so
+    $\pi_k(X)\cong H_k(X)=\ZZ^n$ with basis the summand inclusions, and a based map out of the
+    wedge is a family of maps from the summands, so $[X,X]_*\cong\prod_j\pi_k(X)=M_n(\ZZ)$ with
+    $M(g\circ f)=M(g)M(f)$. The 2026-11-04 repair is confirmed: an isomorphism on $\pi_k$ alone
+    does not detect a homotopy equivalence in general, and the card no longer claims it does — the
+    argument runs through naturality of Hurewicz to an isomorphism on $H_k$, all other reduced
+    homology of $X$ vanishing because its cells sit in dimensions $0$ and $k$, and then the
+    homology form of Whitehead. Invertibility over $\ZZ$ is $\det=\pm1$, i.e. $\operatorname{GL}_n(\ZZ)$.
+    Nothing changed. Not claimed: a published solution, and no certificate.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher, §4.A Exercise 4, with the cellular approximation theorem, van Kampen's
+    theorem, Hurewicz's theorem, cellular homology, Corollary 4.33 and Proposition 4A.2. The
+    argument is correct: $X=\bigvee_n S^k$ is $(k-1)$-connected and $\pi_k(X)=H_k(X)=\ZZ^n$;
+    a based self-map is determined by its restrictions to the summands, so $[X,X]_*$ is the monoid
+    $M_n(\ZZ)$ of matrices acting on $\ZZ^n$; $f$ is a homotopy equivalence exactly when that
+    matrix is invertible, by Hurewicz naturality and the homology Whitehead theorem, since $X$ has
+    reduced homology only in degree $k$; and based and free classes agree because $X$ is simply
+    connected for $k>1$. No mathematics changed. Citation repaired under the owner's correction of
+    this date: the text named printed pages for the exercise and for Theorems 4.8, 1.20, 4.32 and
+    2.35, and now cites the numbered statements only. Not checked: no certificate; the two
+    phrases 'functoriality of induced maps' and 'cellular structure of a wedge of spheres' remain
+    sentence fragments in their proofs, which is a wording defect and not a gap.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The provenance sentence at the head of the solution now states the search result with its date: no
+    published solution set covering §4.A was located, and the searches run on 2026-11-20 are recorded
+    with their queries and negative results in the entry of that date in COMPLAINTS.md. Read again
+    against the exercise: the space X = the wedge of n copies of S^k with k > 1 is (k-1)-connected,
+    since a map S^i -> X with i < k is homotopic to a cellular one, whose image lies in the single
+    0-cell when i < k, with the case i = 1 also following from van Kampen; Hurewicz (Theorem 4.32)
+    then gives pi_k(X) = H_k(X) = Z^n, cellular homology computing the latter by the chain complex of
+    Theorem 2.35; and the inclusion classes of the n spheres form a basis of pi_k(X) by naturality of
+    the Hurewicz isomorphism. Steps s2 onward were then read as well: the wedge's universal property
+    gives [X,X]_* = product over j of pi_k(X), and pi_k(X) = Z^n for k > 1, so [X,X]_* = M_n(Z) with
+    composition matrix multiplication, whose group of units is GL_n(Z); k > 1 is what makes pi_k
+    abelian and free, and that is why the argument does not extend to k = 1. Correct as written.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read correct, and recorded as standing under the decision the orchestrator posted on issue #163 for
+    this exercise: no published solution was found, so the card's own proof stands once a reader reads it
+    correct. The reading: the wedge of n copies of S^k with k > 1 is (k-1)-connected, by cellular
+    approximation with Theorem 4.8 and by van Kampen in degree one; Hurewicz, Theorem 4.32, gives
+    pi_k(X) = H_k(X) = Z^n, cellular homology computing the latter by Theorem 2.35; the inclusion classes
+    form a basis by naturality; the wedge's universal property gives [X,X]_* = product of n copies of
+    pi_k(X) = M_n(Z) with composition matrix multiplication; and the group of units of M_n(Z) is GL_n(Z).
+    The hypothesis k > 1 is exactly what makes pi_k abelian and free. The source obligation is closed by
+    the decision, not by a citation.
 ---
 
 ::: {.problem}
@@ -46,6 +107,8 @@ With the notation of the preceding problem, show that $\operatorname{Aut}(\bigve
 :::
 
 ::: {.solution}
+The statement is Hatcher, *Algebraic Topology* (2002), §4.A Exercise 4. No published solution set covering §4.A was located: the retained solution sets stop before it, and the searches run on 2026-11-20, recorded with their queries and their negative results in the entry of that date in `COMPLAINTS.md`, found nothing that states or proves it. The argument below is therefore the card's own, checked against Hatcher's statement and the results it uses.
+
 ::: pf
 
 ::: pf-step
@@ -57,7 +120,7 @@ Compute $\pi_k(X)$ for $X = \bigvee_{j=1}^n S^k$ ($k > 1$):
 Since $k > 1$, the space $X$ is $(k-1)$-connected: $\pi_1(X) = \cdots = \pi_{k-1}(X) = 0$.
 
 ::: pf-proof
-Every map $S^i\to X$ with $i<k$ is homotopic to a cellular map by the cellular approximation theorem (Theorem 4.8, p. 349), and a cellular map $S^i\to X$ has image in the $i$-skeleton of $X$, which is the single $0$-cell when $i<k$; so $\pi_i(X)=0$ for $0<i<k$. (For $i=1$ the same conclusion follows from van Kampen's theorem, Theorem 1.20, p. 43, since $k>1$ makes each summand $S^k$ simply connected and a wedge of simply connected spaces is simply connected.)
+Every map $S^i\to X$ with $i<k$ is homotopic to a cellular map by the cellular approximation theorem (Theorem 4.8), and a cellular map $S^i\to X$ has image in the $i$-skeleton of $X$, which is the single $0$-cell when $i<k$; so $\pi_i(X)=0$ for $0<i<k$. (For $i=1$ the same conclusion follows from van Kampen's theorem, Theorem 1.20, since $k>1$ makes each summand $S^k$ simply connected and a wedge of simply connected spaces is simply connected.)
 :::
 
 :::
@@ -69,7 +132,7 @@ $$
 $$
 
 ::: pf-proof
-Theorem 4.32 (p. 366), the Hurewicz theorem, applies because $X$ is $(k-1)$-connected with $k\ge2$ and gives $\pi_k(X)\cong H_k(X;\ZZ)$; and $H_k(\bigvee_j S^k)\cong\bigoplus_j H_k(S^k)\cong\ZZ^n$ since the $k$-spheres are the $k$-cells of $X$ and cellular homology is computed by the cellular chain complex (Theorem 2.35, p. 139).
+Theorem 4.32, the Hurewicz theorem, applies because $X$ is $(k-1)$-connected with $k\ge2$ and gives $\pi_k(X)\cong H_k(X;\ZZ)$; and $H_k(\bigvee_j S^k)\cong\bigoplus_j H_k(S^k)\cong\ZZ^n$ since the $k$-spheres are the $k$-cells of $X$ and cellular homology is computed by the cellular chain complex (Theorem 2.35).
 :::
 
 :::
@@ -78,7 +141,7 @@ Theorem 4.32 (p. 366), the Hurewicz theorem, applies because $X$ is $(k-1)$-conn
 Let $\iota_j: S^k \hookrightarrow X$ denote the inclusion of the $j$-th sphere summand; their homotopy classes $\{[\iota_1], \dots, [\iota_n]\}$ form a standard $\ZZ$-basis for $\pi_k(X)$.
 
 ::: pf-proof
-Each $\iota_j$ is a cellular cycle generating the $j$-th summand $H_k(S^k)\cong\ZZ$ of $H_k(X)$, and the Hurewicz isomorphism of Theorem 4.32 (p. 366) is natural, so their classes form a $\ZZ$-basis of $\pi_k(X)$.
+Each $\iota_j$ is a cellular cycle generating the $j$-th summand $H_k(S^k)\cong\ZZ$ of $H_k(X)$, and the Hurewicz isomorphism of Theorem 4.32 is natural, so their classes form a $\ZZ$-basis of $\pi_k(X)$.
 :::
 
 :::

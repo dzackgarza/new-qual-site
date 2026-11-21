@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP03-10
 kind: problem
 title: A minimal compact subspace surjecting onto a Hausdorff image
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Compactness, Hausdorff Spaces]}
 relations: []
 review: draft
 audit:
@@ -22,6 +22,8 @@ $$
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the examination papers alone, so the argument is the card's own.
 
 Let
 $$

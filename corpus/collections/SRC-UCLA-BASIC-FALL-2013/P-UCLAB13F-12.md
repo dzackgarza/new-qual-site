@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB13F-12
 kind: problem
 title: Similarity classes with a prescribed characteristic polynomial
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Similarity, Jordan Canonical Form]}
 relations: []
 review: draft
 audit:

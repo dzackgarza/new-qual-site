@@ -21,6 +21,17 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: "JHU Spring 2015 poses the same problem; merged its duplicate card P-8XT37, whose solution is the same Liouville argument, and that sitting now lists this card."
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured the prose solution into a Lamport proof and checked it: density fails only
+    with a ball disjoint from the image, which gives |f - a| >= r; the reciprocal is then
+    entire with |g| <= 1/r because f - a is zero-free; Liouville makes g constant, hence f
+    constant; so nonconstant f has dense image. The statement is true as printed, and the
+    equivalence "not dense <-> some ball is missed" that the prose used in one sentence is now
+    a step. The collection's provenance is the examination paper only, so no retained solution
+    set covers the exercise and the argument is the card's own.
 ---
 
 ::: {.problem}
@@ -28,22 +39,45 @@ If $f$ is a non-constant entire function, then $f(\CC)$ is dense in the plane.
 :::
 
 ::: {.solution}
-Suppose that $f(\CC)$ were not dense in $\CC$. Then there would be
-a point $a\in\CC$ and an $r>0$ such that
-$$
-B(a,r)\cap f(\CC)=\varnothing.
-$$
-Thus
-$$
-\abs{f(z)-a}\ge r\qquad\text{for every }z\in\CC.
-$$
-The function
-$$
-g(z)=\frac1{f(z)-a}
-$$
-is therefore entire and bounded by $1/r$. By Liouville's theorem, $g$ is
-constant. Hence $f$ is constant, contradicting the hypothesis.
+The collection's provenance is the examination paper alone, so no retained solution set covers this exercise; the argument is the card's own.
 
-Therefore every nonempty open disk meets $f(\CC)$, so $f(\CC)$ is
-dense in the plane.
+::: pf
+
+::: {.pf-step #not-dense}
+If $f(\CC)$ is not dense in $\CC$, there are $a\in\CC$ and $r>0$ with $\abs{f(z)-a}\ge r$ for every $z\in\CC$.
+
+::: pf-proof
+A set is dense in $\CC$ exactly when it meets every ball $B(a,r)$ with $r>0$. If $f(\CC)$ is not dense, some ball satisfies $B(a,r)\cap f(\CC)=\emptyset$, which says precisely that no value $f(z)$ lies within distance $r$ of $a$.
+:::
+
+:::
+
+::: {.pf-step #reciprocal}
+$g(z)\coloneqq\frac{1}{f(z)-a}$ is entire and $\abs{g(z)}\le\frac1r$ for every $z$.
+
+::: pf-proof
+$f$ is entire, so $f-a$ is; the bound $\abs{f(z)-a}\ge r>0$ shows $f-a$ has no zeros, so the reciprocal is entire, and $\abs{g(z)}=\frac{1}{\abs{f(z)-a}}\le\frac1r$.
+:::
+
+:::
+
+::: {.pf-step}
+$f$ is constant.
+
+::: pf-proof
+$g$ is entire and bounded, so Liouville's theorem makes $g$ constant, with value $c\ne0$. Then $f(z)=a+\frac1c$ for every $z$, so $f$ is constant.
+:::
+
+:::
+
+::: {.pf-step}
+$f(\CC)$ is dense in the plane.
+
+::: pf-proof
+If $f$ is not constant, step [](#not-dense){.pf-ref} and step [](#reciprocal){.pf-ref} would produce a bounded entire function $g$, which the third step shows forces $f$ to be constant — a contradiction. Hence $f(\CC)$ meets every ball, that is, it is dense.
+:::
+
+:::
+
+:::
 :::

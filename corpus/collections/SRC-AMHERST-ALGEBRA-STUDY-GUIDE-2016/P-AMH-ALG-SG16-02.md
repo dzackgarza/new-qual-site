@@ -6,7 +6,9 @@ title: Proper subgroups of a group of order $pq$ are cyclic
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Cyclic Groups
+  - Cosets and Lagrange
 relations: []
 review: draft
 audit:

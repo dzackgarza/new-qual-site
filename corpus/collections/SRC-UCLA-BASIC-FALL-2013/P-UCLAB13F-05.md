@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB13F-05
 kind: problem
 title: Monotonicity of the gradient implies convexity
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Convex Functions, Gradient]}
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: 'A triple zero forces at least three nearby preimages'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Zeros
+  - Argument Principle
 relations: []
 review: draft
 audit:

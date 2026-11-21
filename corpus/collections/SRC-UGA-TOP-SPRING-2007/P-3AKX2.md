@@ -29,6 +29,14 @@ audit:
     universal cover identifies points lying in the same component of p^{-1}(U)
     with im(i_*); surjectivity then connects every lifted point back to the
     chosen fiber point. Compare Hatcher, Algebraic Topology, Section 1.3.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the final step now records that it assembles the two implications
+    proved in the two preceding steps, rather than naming the boxed equivalence. Nothing mathematical was
+    changed.
+
 ---
 
 ::: {.problem}
@@ -165,6 +173,11 @@ Combining step [](#s4){.pf-ref} and step [](#s5){.pf-ref} proves
 $$
 \boxed{p^{-1}(U)\text{ is connected}\iff i_*:\pi_1(U,x_0)\to\pi_1(S,x_0)\text{ is surjective}.}
 $$
+
+
+::: pf-proof
+Step [](#s4){.pf-ref} gives one implication and step [](#s5){.pf-ref} the other, so the two together give the equivalence.
+:::
 
 :::
 

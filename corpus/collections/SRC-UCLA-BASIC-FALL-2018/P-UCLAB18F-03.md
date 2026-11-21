@@ -6,7 +6,8 @@ title: Riemann integrability under an expanding change of variable
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Riemann Integration
 relations: []
 review: draft
 audit:

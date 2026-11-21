@@ -19,6 +19,8 @@ The map $F$ is \dfn{real-differentiable} at $\vector p$ if there exists a linear
 $$
 \lim_{\vector h\to0}\frac{\norm{F(\vector p+\vector h)-F(\vector p)-A(\vector h)}}{\norm{\vector h}}=0.
 $$
+
+This is [@Rud76, ch. 9, Definition 9.11], which calls $F$ differentiable at $\vector p$ when such a linear $A$ exists and writes $F'(\vector p)=A$.
 :::
 
 ::: {.remark}

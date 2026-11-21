@@ -6,7 +6,9 @@ title: Similarity classes of six unipotent matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Similarity
+  - Jordan Canonical Form
 relations: []
 review: draft
 audit:

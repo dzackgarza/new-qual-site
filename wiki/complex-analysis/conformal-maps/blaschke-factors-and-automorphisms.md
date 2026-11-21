@@ -13,34 +13,29 @@ topics:
 
 # Blaschke factors and automorphisms
 
-Every biholomorphic self-map of $\DD$ has the form $e^{i\theta}\psi_a$ for some $a\in\DD$ and $\theta\in\RR$, where $\psi_a(z) \coloneqq (a-z)/(1-\bar a z)$ is the Blaschke factor.
+A finite product of [[D-MFPYG|Blaschke factors]] is a self-map of $\DD$ with prescribed zeros, and every biholomorphic self-map of $\DD$ is a Blaschke factor followed by a rotation ([[T-W26VL]]).
 
 ## Blaschke factors
 
 [[D-MFPYG]]
 
 ::: {.remark}
-For $a\neq 0$, $\psi_a(z) = (a-z)/(1-\bar a z)$ has a simple zero at $z=a$ and a simple pole at $z = 1/\bar a$, the reflection of $a$ in the unit circle.
+For $a\neq 0$ the Blaschke factor $\psi_a$ has a simple zero at $a$ and a simple pole at $1/\bar a$, the reflection of $a$ in the unit circle.
 
+:::
+
+::: {.example title="The Blaschke factor at $1/2$, in numbers"}
+$\psi_{1/2}(z) = \dfrac{1/2-z}{1-z/2}$ exchanges $0$ and $1/2$: $\psi_{1/2}(0) = 1/2$ and $\psi_{1/2}(1/2) = 0$.
+It is its own inverse — $\psi_{1/2}\!\left(\psi_{1/2}(z)\right) = z$, checked at $z = 0.3+0.4i$, which returns $0.3+0.4i$ — and it is unimodular on the boundary: at $z = i$ it takes the value $4/5-3i/5$, of modulus $1$.
+So $\abs{\psi_{1/2}}\leq 1$ on $\DD$ with equality only on $S^1$, which is [[T-BYNL5|the maximum modulus principle]] for a function that is not constant.
+The automorphism of $\DD$ carrying $i/2$ to $0$ is $\psi_{i/2}(z) = \dfrac{i/2-z}{1+iz/2}$; at $z = 0.3+0.1i$ it takes the value $-0.2432\ldots+0.4595\ldots i$, of modulus $0.5199\ldots$
+Composing the two, $\psi_{i/2}\circ\psi_{1/2}$ carries $1/2$ to $i/2$, since $\psi_{1/2}(1/2) = 0$ and $\psi_{i/2}(0) = i/2$.
+That every automorphism of $\DD$ is such a factor followed by a rotation is [@SS03, Theorem 2.2 of Chapter 8].
 :::
 
 ## The automorphism group of the disc
 
 [[T-W26VL]]
-
-::: {.proof title="Sketch"}
-\envlist
-
-- The maps $\lambda\psi_a$ are automorphisms, being compositions of the rotation $z\mapsto \lambda z$ with $\psi_a$.
-
-- Let $f \in \Aut(\DD)$ and let $a\coloneqq \inverseof{f}(0)$.
-
-- Then $g\coloneqq f\circ \psi_a \in \Aut(\DD)$ fixes $0$.
-  The Schwarz lemma applied to $g$ and to $\inverseof{g}$ gives $\abs{g(z)}\leq\abs z$ and $\abs z = \abs{\inverseof{g}(g(z))}\leq\abs{g(z)}$, so $g(z) = \lambda z$ with $\abs\lambda = 1$.
-
-- Hence $f = g\circ\psi_a = \lambda\psi_a$.
-
-:::
 
 [[T-VGDFW]]
 

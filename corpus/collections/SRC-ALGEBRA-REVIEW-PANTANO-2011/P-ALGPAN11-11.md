@@ -6,7 +6,8 @@ title: When x maps to a x a^2 is a homomorphism
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Homomorphisms
 relations: []
 review: draft
 audit:

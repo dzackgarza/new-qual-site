@@ -20,4 +20,6 @@ If $u_x=v_y$ and $u_y=-v_x$ on $\Omega$, then $f$ is [[D-E7A5W|holomorphic]] on 
 $$
 f'(z) = \del f(z) = u_x(z) + iv_x(z).
 $$
+
+This is [@SS03, ch. 1, Theorem 2.4], with $f'=\partial f/\partial z$ there written as $\del f$; the two agree because $\partial f/\partial z=\frac12\qty{f_x+\frac1i f_y}$ and the Cauchy--Riemann equations make the second term $f_x$.
 :::

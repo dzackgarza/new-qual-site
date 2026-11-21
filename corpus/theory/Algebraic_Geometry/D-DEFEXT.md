@@ -23,9 +23,9 @@ prompts:
 ::: {.definition title="Ext"}
 Let $A$ be a ring.
 There are two definitions of the $\Ext$ functors, which are seen to agree by a spectral sequence argument.
-Fixing an $A$-module $M$, define $\Ext^i_A(M, N)$ to be the right derived functors of the left exact functor $\Hom_A(M, \wait)$; this gives the usual long exact sequence in the second variable.
+Fixing an $A$-module $M$, define $\Ext^i_A(M, N)$ to be the right derived functors of the left exact functor $\Hom_A(M, -)$; this gives the usual long exact sequence in the second variable.
 
-Alternatively, fixing $N$, take the right derived functors of the contravariant left exact functor $\Hom_A(\wait, N)$ to be $\Ext^i_A(\wait, N)$; this gives a long exact sequence in the first variable.
+Alternatively, fixing $N$, take the right derived functors of the contravariant left exact functor $\Hom_A(-, N)$ to be $\Ext^i_A(-, N)$; this gives a long exact sequence in the first variable.
 :::
 
 ::: {.remark}

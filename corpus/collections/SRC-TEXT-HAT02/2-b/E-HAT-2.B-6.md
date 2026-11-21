@@ -73,7 +73,41 @@ audit:
     stereographic projection from an interior point, its two complement components are U minus
     that point and V, and pi_1(U minus a point) is isomorphic to pi_1(U) by van Kampen. Thus both
     are non-simply-connected by Bing's explicit assertion for the inward-tube construction.
----
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 6 of §2.B, printed p. 176, in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`, and against the two papers the proof cites,
+    read this pass in their text layers. The statement matches the print. Checked in Alexander,
+    printed pp. 9--10: the limiting surface has genus zero, "the interior of the limiting surface is
+    simply connected", and "its exterior is not a simply connected region" — so the non-simple
+    connectedness Alexander supplies is on the exterior side only, which is why the card does not
+    use his sphere for both sides. Checked in Bing, printed pp. 315--316: the tubes "instead of being
+    pushed out, were pushed in. The interiors of the horned spheres are not simply connected", and the
+    note then asks to what the sewing of the two reflected solid horned spheres is equivalent, and
+    says that "when it was discovered in 1951 that the sum was topologically equivalent to $S^3$"
+    this "exploded a conjecture concerning periodic transformation". That is a report of the result,
+    not its proof, and the card had called it "Bing's gluing theorem"; the attribution is corrected in
+    step `#double` and the theorem is now cited to Bing's paper of the following year, Ann. of Math.
+    56 (1952), which this machine does not hold and which is not claimed to have been read. Checked
+    and unchanged: the puncture argument, $X\setminus\{p\}\cong\RR^3$, the two complementary domains
+    $U\setminus\{p\}$ and $V$, and $\pi_1(U\setminus\{p\})\cong\pi_1(U)$ by van Kampen with
+    $B$ and $B\setminus\{p\}$ simply connected.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A narrowing of the check note above, about what was and was not read. That note gives Alexander's
+    pages as printed pp. 9--10, which is the card's pre-existing page claim; the offprint held at
+    `tmp/sources/alexander-horned-sphere-1924.pdf` is three pages and its text layer carries no
+    printed folios, so the page numbers were not confirmed this pass, only the words quoted: the
+    surface has genus zero, "the interior of the limiting surface is simply connected", and "its
+    exterior is not a simply connected region". Bing's pages were confirmed at their running heads,
+    "1953  EXAMPLES AND COUNTEREXAMPLES  315" and "316  PI MU EPSILON JOURNAL  April". Nothing on the
+    card changes; the pages of the two papers stand as the card had them, with Alexander's now marked
+    as unconfirmed here.
+
 ---
 
 ::: {.problem}
@@ -81,7 +115,7 @@ Modify the construction of the Alexander horned sphere to produce an embedding $
 :::
 
 ::: {.solution}
-Use **J. W. Alexander, *An Example of a Simply Connected Surface Bounding a Region which is not Simply Connected*, pp. 9--10** (`tmp/sources/alexander-horned-sphere-1924.pdf`) and **R. H. Bing, *Examples and Counterexamples*, Pi Mu Epsilon Journal 1 (1953), p. 316** (`tmp/sources/bing-examples-counterexamples-1953.pdf`).
+Use **J. W. Alexander, *An Example of a Simply Connected Surface Bounding a Region which is not Simply Connected*** (`tmp/sources/alexander-horned-sphere-1924.pdf`) and **R. H. Bing, *Examples and Counterexamples*, Pi Mu Epsilon Journal 1 (1953)** (`tmp/sources/bing-examples-counterexamples-1953.pdf`).
 
 ::: pf
 
@@ -98,7 +132,7 @@ Alexander builds a sequence of approximating surfaces by attaching successively 
 Glue Bing's two reflected solid horned spheres along their common boundary. The result is $S^3$, and neither complementary domain of the boundary sphere is simply connected.
 
 ::: pf-proof
-For this gluing Bing uses the modified construction in which the tubes are pushed **inward**, rather than Alexander's original outward-tube construction. He defines a solid horned sphere to be such a modified sphere together with its interior, and states explicitly that the interiors of both reflected solids are not simply connected. When the two solids are sewn together along corresponding boundary points, Bing's gluing theorem says that their union $X$ is homeomorphic to $S^3$. If $K$ is their common boundary and $U,V$ are the two interiors, then $K\cong S^2$ and $X\setminus K=U\sqcup V$, with both $U$ and $V$ non-simply-connected.
+For this gluing Bing uses the modified construction in which the tubes are pushed **inward**, rather than Alexander's original outward-tube construction. He defines a solid horned sphere to be such a modified sphere together with its interior, and states explicitly that the interiors of both reflected solids are not simply connected. That the sum of the two, sewn along corresponding boundary points, is $S^3$ is not proved in this note: Bing records there that "when it was discovered in 1951 that the sum was topologically equivalent to $S^3$", a discovery he dates to 1951 and uses without proof. The homeomorphism is Bing's theorem of the following year, *A homeomorphism between the $3$-sphere and the sum of two solid horned spheres*, Ann. of Math. **56** (1952), which this machine does not hold and which is not claimed to have been read here; the step uses it as a cited theorem, on the note's authority for its truth and its date. Assuming it, if $K$ is the common boundary and $U,V$ are the two interiors, then $K\cong S^2$ and $X\setminus K=U\sqcup V$, with both $U$ and $V$ non-simply-connected.
 :::
 
 :::

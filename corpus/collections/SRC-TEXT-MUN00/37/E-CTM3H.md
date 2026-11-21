@@ -35,6 +35,31 @@ audit:
     card now names the antidiagonal. No other correction was needed; the Zorn step's failure is the
     sheet-free argument on the card, namely that a countable intersection in the union of a chain may use
     one element from each member of the chain.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 and rewritten: what stood here was a skeleton whose proof fields said "setup.",
+    "assume for contradiction.", "(i)." and "(ii).", so the card carried no argument for any of
+    the three parts. Searched for a published solution first: Ana Emilia de Orellana's Section 37
+    Exercise 3 is a corrupted fragment that breaks off inside part (a), answers part (b) with the
+    sentence about the maximum element that does not address statement (ii), and leaves (c)
+    unwritten; Poulsen's §38 sheet runs 38.4 to 38.9; dbFin's index stops at §67; no other
+    retained set reaches §37. So the proof is the card's own, and each step was checked against
+    Lemma 37.1, Lemma 37.2 and Exercise 37.2. Part (a): the complements of a cover with no
+    countable subcover have the countable intersection property, (i) extends them to a maximal
+    family, (ii) makes that family closed under finite intersections and makes a set meeting every
+    member a member, each projection's closures have the countable intersection property because
+    the projection is onto and the family is closed under countable intersections, Exercise 37.2
+    in the Lindelöf factor picks a point in all of them, and the point of the product so built lies
+    in the closure of every member, which contradicts the cover for the member indexed by the open
+    set containing it. Part (b): adjoining a countable intersection, or a set meeting every member,
+    preserves the property, so maximality puts both in the family. Part (c): the Sorgenfrey line
+    and its square, Examples 3 and 4 of §30, kill (iii) and hence (i); and the step of Lemma 37.1
+    that fails is the union of a chain, which for the countable property can lose it -- on the
+    positive integers the chain of collections of cofinite tails, each with the property, has a
+    union whose countable intersection is empty. Not checked: nothing in this card is transcribed,
+    there being no usable published proof.
 ---
 
 ::: {.exercise}
@@ -58,170 +83,110 @@ If one attempts to generalize the proof of Lemma 37.1 to the countable intersect
 :::
 
 ::: {.solution}
-**(a).**
+No usable published solution of this exercise was located in the retained sets. The one that reaches it, Ana Emilia de Orellana's *Munkres solutions* (`tmp/sources/munkres-solutions-anadeore.md`), Section 37 Exercise 3, is a corrupted fragment: part (a) breaks off inside its first display, part (b) is the single sentence "The existance of the maximum element in the sequence is what fails in the countable space", which does not bear on statement (ii) at all, and part (c) is not written. Poulsen's §38 sheet covers Exercises 38.4 to 38.9, dbFin's index stops at §67 with a gap before it, and no other retained set covers §37. The argument is therefore the card's own; every step is checked against Lemma 37.1 and Lemma 37.2 of §37 and against Exercise 37.2.
+
+A collection has the *countable intersection property*, CIP, when the intersection of any countable subcollection is nonempty. A single set is a countable subcollection of itself, so every member of such a collection is nonempty.
 
 ::: pf
 
-::: pf-step
-Let $\{X_\alpha\}$ be a family of Lindelöf spaces, and let $\mathcal{U}$ be an open cover of $X = \prod_\alpha X_\alpha$.
+::: {.pf-step #a1}
+(a) Assume (i) and (ii). Let $\{X_\alpha\}_{\alpha\in J}$ be Lindelöf and let $\mathcal U$ be an open cover of $X=\prod_\alpha X_\alpha$ with no countable subcover. Then $\mathcal A=\{X\setminus U\mid U\in\mathcal U\}$ has the countable intersection property.
 
 ::: pf-proof
-setup.
+Were $\bigcap_n(X\setminus U_n)=\varnothing$ for countably many members, then $X=\bigcup_nU_n$ would be a countable subcover, contrary to the choice of $\mathcal U$.
 :::
 
 :::
 
-::: {.pf-step #not-lindelof-assumption}
-Suppose $X$ is not Lindelöf, so $\mathcal{U}$ has no countable subcover.
+::: {.pf-step #a2}
+There is a collection $\mathcal D\supseteq\mathcal A$, maximal with respect to the countable intersection property, and it has the two properties of (ii).
 
 ::: pf-proof
-assume for contradiction.
+The first is (i) applied to $\mathcal A$, which has the property by step [](#a1){.pf-ref}; the second is (ii).
 :::
 
 :::
 
-::: pf-step
-The collection $\mathcal{A} = \{X - U : U \in \mathcal{U}\}$ has the countable intersection property.
+::: {.pf-step #a3}
+Finite intersections of members of $\mathcal D$ are members of $\mathcal D$, the set $X$ is a member, and any $B\subseteq X$ meeting every member of $\mathcal D$ is a member.
 
 ::: pf-proof
-if $\bigcap_{i=1}^{\infty} (X - U_i) = \varnothing$, then $\{U_i\}$ would be a countable subcover, contradicting step [](#not-lindelof-assumption){.pf-ref}.
+A finite intersection is a countable one, so the first clause of (ii) gives the first assertion, and $X$ is the intersection of one member with itself. For the last, $X$ meets every member of $\mathcal D$ because members are nonempty, so $X\in\mathcal D$; and $B$ meets every member, so the second clause of (ii) gives $B\in\mathcal D$.
 :::
 
 :::
 
-::: pf-step
-By (i), extend $\mathcal{A}$ to a maximal collection $\mathcal{D}$ with the countable intersection property.
+::: {.pf-step #a4}
+For each $\alpha$ there is a point $x_\alpha$ of $X_\alpha$ lying in $\overline{\pi_\alpha(D)}$ for every $D\in\mathcal D$.
 
 ::: pf-proof
-(i).
+The family $\{\overline{\pi_\alpha(D)}\mid D\in\mathcal D\}$ has the countable intersection property: for countably many members, $\bigcap_n\overline{\pi_\alpha(D_n)}\supseteq\bigcap_n\pi_\alpha(D_n)\supseteq\pi_\alpha\bigl(\bigcap_nD_n\bigr)$, which is nonempty because $\mathcal D$ has the property and $\pi_\alpha$ is onto. The space $X_\alpha$ is Lindelöf, so Exercise 37.2 puts a point in the total intersection of the closures.
 :::
 
 :::
 
-::: pf-step
-By (ii), $\mathcal{D}$ is closed under countable intersections, and any set meeting every element of $\mathcal{D}$ is in $\mathcal{D}$.
+::: {.pf-step #a5}
+The point $x=(x_\alpha)$ lies in $\overline D$ for every $D\in\mathcal D$.
 
 ::: pf-proof
-(ii).
+Let $B=\bigcap_{\alpha\in F}\pi_\alpha^{-1}(U_\alpha)$ be a basis element containing $x$, with $F$ finite and $U_\alpha$ a neighbourhood of $x_\alpha$. For $\alpha\in F$ one has $x_\alpha\in\overline{\pi_\alpha(D)}$, so $U_\alpha$ meets $\pi_\alpha(D)$, that is, $\pi_\alpha^{-1}(U_\alpha)$ meets $D$; by step [](#a3){.pf-ref} then $\pi_\alpha^{-1}(U_\alpha)\in\mathcal D$, and by the same step $B\in\mathcal D$, being a finite intersection. Since $D\in\mathcal D$ as well and $\mathcal D$ has the property, $B\cap D\ne\varnothing$. Every basis element about $x$ therefore meets $D$.
 :::
 
 :::
 
-::: {.pf-step #projections-cip}
-For each $\alpha$, the projections $\pi_\alpha(D)$ for $D \in \mathcal{D}$ have the countable intersection property in $X_\alpha$, so (by Lindelöfness of $X_\alpha$) there is a point $x_\alpha$ in the closure of every $\pi_\alpha(D)$.
+::: {.pf-step #a6}
+$X$ is Lindelöf, and so (a) holds.
 
 ::: pf-proof
-Lindelöfness implies the countable intersection property of closed sets has nonempty intersection.
+Since $\mathcal U$ covers $X$, choose $U\in\mathcal U$ with $x\in U$. Its complement $X\setminus U$ belongs to $\mathcal A\subseteq\mathcal D$, and it is closed, so by step [](#a5){.pf-ref} $x\in\overline{X\setminus U}=X\setminus U$, which contradicts $x\in U$. Hence no open cover of $X$ lacks a countable subcover.
 :::
 
 :::
 
-::: {.pf-step #x-in-closure-of-every-d}
-Let $x=(x_\alpha)$. For every coordinate $\alpha$ and every neighborhood $W_\alpha$ of $x_\alpha$, the cylinder $\pi_\alpha^{-1}(W_\alpha)$ meets every $D\in\mathcal D$. By (ii), this cylinder belongs to $\mathcal D$. A basic neighborhood of $x$ is a finite intersection of such cylinders, so its intersection with any $D\in\mathcal D$ is nonempty by the countable intersection property. Hence $x\in\overline D$ for every $D\in\mathcal D$.
+::: {.pf-step #b1}
+(b) Let $\mathcal D$ be maximal with respect to the countable intersection property. Then a countable intersection of members of $\mathcal D$ is a member of $\mathcal D$.
 
 ::: pf-proof
-Step [](#projections-cip){.pf-ref} and the second assertion of (ii).
+Let $E=\bigcap_nD_n$ with each $D_n\in\mathcal D$. The collection $\mathcal D\cup\{E\}$ has the property: a countable subcollection either omits $E$ and is a countable subcollection of $\mathcal D$, or contains $E$, and then its intersection is $E\cap\bigcap_mD'_m=\bigcap_nD_n\cap\bigcap_mD'_m$, an intersection of countably many members of $\mathcal D$, hence nonempty. So $\mathcal D\cup\{E\}$ contains $\mathcal D$ and has the property, and maximality forces $E\in\mathcal D$.
 :::
 
 :::
 
-::: {.pf-step #contradiction-x-in-every-neighborhood}
-By (ii), every neighborhood of $x$ is in $\mathcal{D}$, so $x \in \bigcap_{D \in \mathcal{D}} \overline{D}$, contradicting that $\mathcal{D}$ contains $X - U$ for each $U \in \mathcal{U}$ (so $\bigcap_{D \in \mathcal{D}} \overline{D} = \varnothing$ since $\mathcal{U}$ covers $X$).
+::: {.pf-step #b2}
+If $A\subseteq X$ meets every member of $\mathcal D$, then $A\in\mathcal D$, and this completes (b).
 
 ::: pf-proof
-Step [](#x-in-closure-of-every-d){.pf-ref} and the fact that $\mathcal{U}$ covers $X$.
+The collection $\mathcal D\cup\{A\}$ has the property: a countable subcollection omitting $A$ is one of $\mathcal D$, and one containing $A$ has intersection $A\cap D_1\cap\cdots\cap D_m$, where $D_1\cap\cdots\cap D_m\in\mathcal D$ by step [](#b1){.pf-ref} and a finite intersection is countable, so that intersection is nonempty because $A$ meets every member of $\mathcal D$. Maximality gives $A\in\mathcal D$. With step [](#b1){.pf-ref} this is statement (ii).
 :::
 
 :::
 
-::: {.pf-step #x-lindelof-conclusion}
-Contradiction, so $X$ is Lindelöf.
+::: {.pf-step #c1}
+(c) Products of Lindelöf spaces need not be Lindelöf, so statement (i) fails.
 
 ::: pf-proof
-Step [](#contradiction-x-in-every-neighborhood){.pf-ref}.
+The Sorgenfrey line is Lindelöf and its square is not: both are Example 3 and Example 4 of §30. If (i) held, (a) and (b) would make every product of Lindelöf spaces Lindelöf, since (b) is a theorem; so (i) fails.
 :::
 
 :::
 
-:::
-
-**(b).**
-
-::: pf
-
-::: pf-step
-Let $\mathcal{D}$ be maximal with the countable intersection property.
+::: {.pf-step #c2}
+The step of Lemma 37.1 that breaks down for the countable intersection property is the passage from a chain to its union.
 
 ::: pf-proof
-setup.
+Lemma 37.1 orders the collections with the finite intersection property by inclusion and applies Zorn's lemma; the union of a chain of such collections has the finite intersection property because a finite subfamily of the union lies in one member of the chain, a chain being directed for finite subfamilies. For the countable intersection property this fails. On $X=\ZZ_+$ let $\mathcal D_n=\{\ZZ_+\setminus\{1\},\ldots,\ZZ_+\setminus\{n\}\}$; each $\mathcal D_n$ has the property, its members being finitely many and their intersections nonempty, and $\mathcal D_1\subseteq\mathcal D_2\subseteq\cdots$, while the union contains every $\ZZ_+\setminus\{k\}$ and their countable intersection is empty. So the union of the chain lacks the property, Zorn's lemma does not apply, and (i) is not available — as it must not be, by step [](#c1){.pf-ref}.
 :::
 
 :::
 
-::: {.pf-step #countable-intersections-in-d}
-If $D_1, D_2, \ldots \in \mathcal{D}$, then $\bigcap_i D_i \in \mathcal{D}$.
+::: {.pf-step}
+Parts (a), (b) and (c) answer the exercise.
 
 ::: pf-proof
-if $\bigcap_i D_i \notin \mathcal{D}$, then by maximality $\mathcal{D} \cup \{\bigcap_i D_i\}$ fails the countable intersection property, so there are $E_1, E_2, \ldots \in \mathcal{D}$ with $(\bigcap_i D_i) \cap \bigcap_j E_j = \varnothing$; but then $D_1, D_2, \ldots, E_1, E_2, \ldots$ is a countable subcollection of $\mathcal{D}$ with empty intersection, contradicting the countable intersection property of $\mathcal{D}$.
-:::
-
-:::
-
-::: {.pf-step #meets-every-element-in-d}
-If $A$ meets every element of $\mathcal{D}$, then $A \in \mathcal{D}$.
-
-::: pf-proof
-if $A \notin \mathcal{D}$, then by maximality $\mathcal{D} \cup \{A\}$ fails the countable intersection property, so there are $D_1, D_2, \ldots \in \mathcal{D}$ with $A \cap \bigcap_i D_i = \varnothing$; but $\bigcap_i D_i \in \mathcal{D}$ by step [](#countable-intersections-in-d){.pf-ref}, contradicting that $A$ meets every element of $\mathcal{D}$.
-:::
-
-:::
-
-::: {.pf-step #ii-holds}
-Hence (ii) holds.
-
-::: pf-proof
-Steps [](#countable-intersections-in-d){.pf-ref} and [](#meets-every-element-in-d){.pf-ref}.
+Step [](#a6){.pf-ref} proves (a) from (i) and (ii), steps [](#b1){.pf-ref} and [](#b2){.pf-ref} prove (ii) outright, and steps [](#c1){.pf-ref} and [](#c2){.pf-ref} give the failure of (i) and name the broken step.
 :::
 
 :::
 
 :::
-
-**(c).**
-
-::: pf
-
-::: pf-step
-The proof of Lemma 37.1 (for the finite intersection property) uses Zorn's lemma to extend $\mathcal{A}$ to a maximal collection with the finite intersection property.
-
-::: pf-proof
-recall the structure of the proof.
-:::
-
-:::
-
-::: {.pf-step #breakdown-in-zorn-step}
-The breakdown occurs in the Zorn's-lemma step: the union of a chain of collections with the finite intersection property again has the finite intersection property, but the union of a chain of collections with the *countable* intersection property need not have the countable intersection property.
-
-::: pf-proof
-a countable intersection of elements of the union may involve one element from each of countably many different collections in the chain, and there is no single collection in the chain containing all of them.
-:::
-
-:::
-
-::: {.pf-step #i-fails}
-Hence this Zorn argument cannot establish (i). Now (iii) fails: the Sorgenfrey line is Lindelöf, while its square is not, because its antidiagonal is an uncountable closed discrete subspace and a closed subspace of a Lindelöf space is Lindelöf (Exercise 30.9) whereas an uncountable discrete space is not. Since (ii) holds, part (a) then proves that (i) itself is false.
-
-::: pf-proof
-Step [](#breakdown-in-zorn-step){.pf-ref}, together with parts (a) and (b) and the non-Lindelöf Sorgenfrey plane.
-:::
-
-:::
-
-::: pf-qed
-Steps [](#x-lindelof-conclusion){.pf-ref} (a), [](#ii-holds){.pf-ref} (b), [](#i-fails){.pf-ref} (c).
-:::
-
-:::
-
 :::

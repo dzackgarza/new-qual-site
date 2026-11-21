@@ -74,6 +74,19 @@ audit:
     and the card's proof rests on the sources recorded above. The post is recorded here and in the
     COMPLAINTS.md entry for §43--§50 as located with its formulas unreadable, the site answering an
     automated request with a Cloudflare human check, which is not worked around.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. Cantor's intersection criterion, both directions. If X is complete and
+    the A_n are nested nonempty closed with diam A_n -> 0, choose x_n in A_n; nesting and vanishing
+    diameter make (x_n) Cauchy, and its limit lies in every A_n because the A_n are closed and the
+    tail from n on sits inside A_n. Conversely, given a Cauchy sequence, pass to a subsequence whose
+    tails have diameter below 1/k and take the closures of those tails: nested, nonempty, closed,
+    diameters tending to 0, so their intersection has a point x, which is the limit of the subsequence
+    and hence of the original sequence. Checked that vanishing diameter is used in the first direction
+    only to get Cauchyness (any choice of x_n in A_n works) and in the second only through the
+    subsequence, and that closedness is used exactly once in each direction.
 ---
 
 ::: {.exercise}

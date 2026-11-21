@@ -15,6 +15,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Linear Algebra, Problem 28, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked numerically. e_1 = a_1/|a_1|, so a_1 = 2e_1 and its
+    components are (2,0); e_2 is the unit vector perpendicular to e_1 chosen so that a_2 has positive
+    second component, and a_2 = 6(cos(pi/6) e_1 + sin(pi/6) e_2) = (6 cos 30, 6 sin 30) = (3 sqrt 3, 3).
+    Checked: 3 sqrt 3 = 5.196 and 3^2 + 27 = 36 = 6^2, so the length is right, and the angle is
+    arctan(3/(3 sqrt3)) = arctan(1/sqrt 3) = pi/6. Both boxes are correct.
 ---
 
 ::: {.problem}

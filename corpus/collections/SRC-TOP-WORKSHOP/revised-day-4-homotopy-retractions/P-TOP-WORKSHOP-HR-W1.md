@@ -5,7 +5,9 @@ kind: problem
 title: A retraction induces a surjection on fundamental groups
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Fundamental Group
+  - Retracts
 relations: []
 review: draft
 audit:

@@ -44,6 +44,7 @@ Show that $\alpha$ is integral over $R$ if and only if $g,h\in R$.
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.6.4, transcribed and checked against the exercise as printed: the description of $K=\Frac A$ over $L=\Frac B$ with $A=B[z]/(z^2-f)$, the extension of degree $2$ and hence Galois, the minimal polynomial $X^2-2gX+(g^2-fh^2)$ of $\alpha=g+zh$, and the conclusion that $A$ is the integral closure of $B$ in $K$, hence integrally closed.
 For an irreducible polynomial $q\in R$ and $u\in F^\times$, let $v_q(u)$ be the exponent of $q$ in the numerator of a reduced fraction for $u$, minus its exponent in the denominator.
 The ring $R$ is a [[D-INULL|unique factorization domain]] by [[T-JEZZY|Gauss's lemma]], and is therefore integrally closed [@Har77, proof of Proposition II.6.2].
 

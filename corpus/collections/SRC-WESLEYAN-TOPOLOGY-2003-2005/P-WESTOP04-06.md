@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP04-06
 kind: problem
 title: Cardinal invariants under closed subspaces
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Cardinality, Subspaces]}
 relations: []
 review: draft
 audit:

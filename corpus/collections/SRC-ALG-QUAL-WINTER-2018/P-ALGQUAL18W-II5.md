@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-ALGQUAL18W-II5
 kind: problem
 title: Trace of the induced endomorphism on the symmetric square
-classification: {areas: [algebra], topics: []}
+classification: {areas: [algebra], topics: [Trace, Symmetric Products]}
 relations: []
 review: draft
 audit:

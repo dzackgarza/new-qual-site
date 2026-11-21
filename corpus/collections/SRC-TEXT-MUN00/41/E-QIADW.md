@@ -42,6 +42,33 @@ audit:
     proof is unchanged: $K=\overline U$ compact, $K^n$ compact by Theorem 26.5 and Theorem 26.7, $H=\bigcup
     K^n$ an open subgroup and therefore closed, connectedness forcing $H=G$, and Exercise 41.6(a) giving
     paracompactness from $\sigma$-compactness.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps along the book's hint; checked the symmetric
+    neighbourhood with compact closure (Theorem 29.2 and continuity of inversion), that the
+    union of the K^n is an open subgroup containing U, that it is also closed and hence all
+    of G by connectedness, that G is then sigma-compact, and that a regular sigma-compact
+    space is paracompact (E-KVFCT(a)). The argument is the card's own; no retained set is
+    cited. Munkres §41 Exercise 7, printed p. 257. The printed statement needed no repair.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read, with the #184 citation repair, and a wrong exercise number corrected. The
+    solution cited "§41 Exercise 7" for this card's exercise, and the 2026-11-18 event repeated
+    the number: the exercise proved here is §41 Exercise 9, the locally compact connected
+    topological group, as the collection index records it, while §41 Exercise 7 is the one about
+    finite or countable unions of closed paracompact subspaces. The number in the solution is
+    corrected; the 2026-11-18 event keeps its text (QUAL-11) and its number is superseded here.
+    The proof itself was read and is correct: by Theorem 29.2 there is an open $U'$ with compact
+    closure, and intersecting with its inverse keeps this and makes $K=K^{-1}$; the union of the
+    $K^n$ is a subgroup, open as a union of translates of the open $U$ it contains and closed as
+    the complement of the other cosets, hence all of $G$ by connectedness; $G$ is then
+    $\sigma$-compact and paracompact by part (a) of Exercise 41.6, for which the regularity
+    supplied by the topological-group exercises of §22 is enough.
+
 ---
 
 ::: {.exercise}
@@ -54,21 +81,54 @@ This result holds without assuming $G$ is connected, but the proof requires more
 :::
 
 ::: {.solution}
-Because $G$ is locally compact Hausdorff, choose a symmetric open neighborhood $U$ of the identity $e$ whose closure
-$$
-K=\overline U
-$$
-is compact. Replacing $U$ by $U\cap U^{-1}$ if necessary preserves compact closure and makes $K=K^{-1}$.
+The argument is the card's own, following the book's hint; no retained solution set is cited on the card. It is checked against Munkres §41 Exercise 9, with [[E-KVFCT]](a) (a regular $\sigma$-compact space is paracompact).
 
-Set
-$$
-H=\bigcup_{n\ge1}K^n.
-$$
-Each $K^n$ is compact, since multiplication $G^n\to G$ is continuous. Also $H$ is a subgroup: $e\in K$, products send $K^mK^n$ into $K^{m+n}$, and symmetry of $K$ gives closure under inverses. Since $U\subset K\subset H$, the subgroup $H$ contains an open neighborhood of the identity, hence $H$ is open. Every open subgroup of a topological group is also closed, since its other cosets are open. Connectedness of $G$ therefore forces $H=G$.
+::: pf
 
-Thus
-$$
-G=\bigcup_{n\ge1}K^n
-$$
-is $\sigma$-compact. A topological group satisfies the regularity axiom (Exercise 7(c) of the supplementary exercises on topological groups in §22; Exercises 7(a) and 7(b) there give the symmetric neighbourhood and the Hausdorff property), and every regular $\sigma$-compact space is paracompact by [[E-KVFCT]](a). Hence $G$ is paracompact.
+::: {.pf-step #compact-neighbourhood}
+There is a symmetric open neighbourhood $U$ of $e$ whose closure $K=\overline{U}$ is compact and satisfies $K=K^{-1}$.
+
+::: pf-proof
+$G$ is locally compact Hausdorff, so by Theorem 29.2 applied to the point $e$ and the neighbourhood $G$ there is an open set $U'$ with $e\in U'$ and $\overline{U'}$ compact. Replacing $U'$ by $U'\cap U'^{-1}$, which is open by continuity of inversion, contains $e$ and is symmetric, keeps the closure inside $\overline{U'}$ and so compact; set $U=U'\cap U'^{-1}$ and $K=\overline{U}$. Since inversion is a homeomorphism fixing $U$, it fixes $K$, so $K=K^{-1}$.
+:::
+
+:::
+
+::: {.pf-step #subgroup}
+$H=\bigcup_{n\in\ZZ_{+}}K^{n}$, where $K^{n}$ is the set of products of $n$ elements of $K$, is an open subgroup of $G$ containing $U$.
+
+::: pf-proof
+$K^{n}$ is compact, being the image of the compact space $K^{n}$ under the continuous multiplication map $G^{n}\to G$. Since $e\in K$ one has $K^{m}K^{n}\subset K^{m+n}$, so $H$ is closed under multiplication, and $K=K^{-1}$ gives $H^{-1}=\bigcup_{n}(K^{n})^{-1}=\bigcup_{n}K^{n}=H$; also $e\in K\subset H$. So $H$ is a subgroup. It contains the open set $U$, hence it is open, being the union of the open sets $hU$ for $h\in H$.
+:::
+
+:::
+
+::: {.pf-step #all-of-G}
+$H=G$.
+
+::: pf-proof
+An open subgroup $H$ is also closed, because its complement is the union of the other cosets $gH$, each of which is open as a translate of $H$. So $H$ is a nonempty set both open and closed in the connected space $G$, hence $H=G$.
+:::
+
+:::
+
+::: {.pf-step #sigma-compact}
+$G$ is $\sigma$-compact.
+
+::: pf-proof
+$G=H=\bigcup_{n}K^{n}$ by step [](#all-of-G){.pf-ref}, and each $K^{n}$ is compact by step [](#subgroup){.pf-ref}; so $G$ is a countable union of compact sets.
+:::
+
+:::
+
+::: {.pf-step #paracompact}
+$G$ is paracompact.
+
+::: pf-proof
+A topological group is regular: it is Hausdorff by Supplementary Exercise TG.7(b) of §22, and every neighbourhood of a point contains a closed neighbourhood by TG.7(a) and the continuity of multiplication. A regular $\sigma$-compact space is paracompact by [[E-KVFCT]](a). So $G$ is paracompact.
+:::
+
+:::
+
+:::
 :::

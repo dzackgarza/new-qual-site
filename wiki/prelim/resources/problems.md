@@ -5,21 +5,41 @@ order: 3
 
 # Problems
 
-- [[SRC-MATHEMATICAL-TRIVIUM|Mathematical Trivium problem collection]]
+Problem collections held here, and problem banks at other institutions.
 
-- [Duke analysis and linear algebra quals](https://services.math.duke.edu/graduate/wqual/oldquals.html)
+- [[SRC-MATHEMATICAL-TRIVIUM|Mathematical Trivium problem collection]] -- a
+  compilation of problems for the qualifying examinations.
 
-- [UCLA practice GRE problems, without solutions](https://www.math.ucla.edu/~bonsoon/summer2020/files/problems.pdf)
+- [[SRC-CALCULUS-PRACTICE-TEST3|Multiple-choice calculus questions from a practice test]] --
+  one practice test's calculus questions, with the answer key.
 
-- [UCLA basic exam problems: linear algebra](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_LinAlg.pdf)
+- [[SRC-LINEAR-ALGEBRA-TEST2-REVIEW|Multiple-choice linear algebra questions from a practice test]] --
+  one practice test's linear algebra questions.
 
-- [UCLA basic exam problems: analysis](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_Analysis.pdf)
+- [[SRC-SEQUENCES-SERIES-ASSIGNMENT-2|Sequence and series problems with solutions]] --
+  an assignment on sequences and series, with its solutions.
 
-- [[SRC-CALCULUS-PRACTICE-TEST3|Multiple-choice calculus questions from a practice test]]
+- [Duke, analysis and linear algebra qualifying examinations](https://services.math.duke.edu/graduate/wqual/oldquals.html) --
+  the department's archive of past qualifying examinations in analysis and in
+  linear algebra.
 
-- [[SRC-LINEAR-ALGEBRA-TEST2-REVIEW|Multiple-choice linear algebra questions from a practice test]]
+- [UCLA, practice problems for the GRE Mathematics Subject Test](https://www.math.ucla.edu/~bonsoon/summer2020/files/problems.pdf) --
+  a practice set for the GRE Mathematics Subject Test, without solutions.
 
-- [[SRC-SEQUENCES-SERIES-ASSIGNMENT-2|Sequence and series problems with solutions]]
+- [UCLA, basic examination problems in linear algebra](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_LinAlg.pdf) --
+  problems of past Basic Examinations, sorted by topic, in linear algebra.
+
+- [UCLA, basic examination problems in analysis](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_Analysis.pdf) --
+  problems of past Basic Examinations, sorted by topic, in analysis.
+
+- [Berkeley, preliminary examinations](https://math.berkeley.edu/programs/graduate/prelim-exams/archive) --
+  the department's archive of past preliminary examinations.
+
+- [Harvard, qualifying examinations](http://www.math.harvard.edu/graduate/index.html#past) --
+  the department's archive of past qualifying examinations.
+
+- [UCLA, basic and qualifying examinations](https://secure.math.ucla.edu/gradquals/hbquals.php) --
+  the department's archive of past Basic and qualifying examinations.
 
 ## Multiple-choice review questions by chapter
 
@@ -39,6 +59,8 @@ order: 3
 
 - Chapter 7: logic, sets, combinatorics, graph theory, probability, Lebesgue measure, complex variables, and algorithms
 
-## Exams
+## Examinations held here
 
-- [[SRC-UCLA-BASIC-SPRING-2018|UCLA Basic Examination, Spring 2018]]
+The examination collections, one per sitting, are listed by institution,
+subject, and date on [[archives/card-archives|the Sources listing]]; one example
+is [[SRC-UCLA-BASIC-SPRING-2018|the UCLA Basic Examination of Spring 2018]].

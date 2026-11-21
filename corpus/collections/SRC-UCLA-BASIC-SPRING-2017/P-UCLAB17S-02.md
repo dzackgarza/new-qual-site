@@ -6,7 +6,8 @@ title: Jordan blocks in a four-parameter family of $4\times4$ matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Jordan Canonical Form
 relations: []
 review: draft
 audit:

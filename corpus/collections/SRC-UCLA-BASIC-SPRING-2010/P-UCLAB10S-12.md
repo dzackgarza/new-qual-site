@@ -6,7 +6,9 @@ title: Uniform bounds and pointwise convergence for nonnegative functions with $
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Pointwise Convergence
+  - Integrals
 relations: []
 review: draft
 audit:

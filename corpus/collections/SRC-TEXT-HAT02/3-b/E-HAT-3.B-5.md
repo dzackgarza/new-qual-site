@@ -37,6 +37,22 @@ audit:
     is unchanged and checked against the two printed formulas of p.280 — for the first product the
     slant product of a boundary is φ(e^j) times the boundary of e^i, so it is a chain map, and the
     four invariance checks run through the swap sign (-1)^{n-j+1}.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, outside the sections already closed. Read against Hatcher, Exercise 5
+    of §3.B, printed p. 280 — the §3.B exercises 1--5 are on that page, checked at PDF page 289 of
+    the held book — with its two displayed formulas and its bracketed remark. Checked: the
+    chain-level formula and the computation
+    $\partial(e^i\times e^j)=\partial e^i\times e^j+(-1)^ie^i\times\partial e^j$ giving
+    $\varphi(e^j)\partial e^i$ for a cocycle $\varphi$; the cohomological formula and the cocycle
+    condition $\varphi(\partial c\times d)=\varphi(\partial(c\times d))=0$ for a cycle $d$; and the
+    closing paragraph on changes of representatives, including the sign $(-1)^{n-j+1}$ displayed in
+    it. One structural repair: two steps whose entire proof was a reference to another step, and a
+    `pf-qed` whose entire argument was "Steps s2 and s4", are removed and their content folded into
+    the steps that carry it — the chain-map computation into the well-definedness step, the cocycle
+    condition into the cohomological one. The mathematics is unchanged.
 ---
 
 ::: {.problem}
@@ -51,104 +67,45 @@ can be defined via the indicated cellular formulas.
 :::
 
 ::: {.solution}
+The exercise is §3.B Exercise 5, printed p. 280.
 
 ::: pf
 
-::: pf-step
-
-First slant product: define $H_n(X \times Y) \times H^j(Y) \to H_{n-j}(X)$ on cellular chains by $(e^i \times e^j, \varphi) \mapsto \varphi(e^j) e^i$, where $e^i$ is an $i$-cell of $X$ and $e^j$ a $j$-cell of $Y$.
+::: {.pf-step #s1}
+The first slant product is defined on cellular chains by
+$$H_n(X\times Y)\times H^j(Y)\to H_{n-j}(X),\qquad (e^i\times e^j,\ \varphi)\mapsto \varphi(e^j)\,e^i .$$
 
 ::: pf-proof
-
-definition on the cellular level.
-
+This is the definition on cellular chains, extended bilinearly; $e^i$ is an $i$-cell of $X$ and $e^j$ a $j$-cell of $Y$.
 :::
 
 :::
 
 ::: {.pf-step #s2}
-
-This is well-defined on homology.
-
-::: pf-proof
-
-::: {.pf-step #s2-1}
-
-The formula is bilinear and compatible with the boundary maps.
+For a cocycle $\varphi$ the formula is a chain map, so it is well defined on homology.
 
 ::: pf-proof
-
-$\partial(e^i \times e^j) = \partial e^i \times e^j + (-1)^i e^i \times \partial e^j$, and applying the slant product (with $\varphi$ a cocycle, so $\varphi(\partial e^j) = 0$) gives $\varphi(e^j)\partial e^i$, which is the boundary of $\varphi(e^j) e^i$; hence the slant product is a chain map.
-
+The boundary of a product cell is $\partial(e^i\times e^j)=\partial e^i\times e^j+(-1)^i e^i\times\partial e^j$, and applying the slant product gives $\varphi(e^j)\,\partial e^i$ because $\varphi(\partial e^j)=0$; that is the boundary of $\varphi(e^j)e^i$. Hence the slant product of a cycle is a cycle and the slant product of a boundary is a boundary, which is exactly the assertion.
 :::
 
 :::
 
-::: pf-step
-
-Hence it induces a well-defined map on homology.
+::: {.pf-step #s3}
+The second slant product is defined on cellular chains by
+$$H^n(X\times Y)\times H_j(Y)\to H^{n-j}(X),\qquad (\varphi,\ e^j)\mapsto\bigl(e^i\mapsto \varphi(e^i\times e^j)\bigr).$$
 
 ::: pf-proof
-
-Step [](#s2-1){.pf-ref}.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-
-Second slant product: define $H^n(X \times Y) \times H_j(Y) \to H^{n-j}(X)$ by $(\varphi, e^j) \mapsto (e^i \mapsto \varphi(e^i \times e^j))$.
-
-::: pf-proof
-
-definition on the cellular level.
-
+This is the definition on cellular chains, extended bilinearly.
 :::
 
 :::
 
 ::: {.pf-step #s4}
-
-This is well-defined on cohomology.
-
-::: pf-proof
-
-::: {.pf-step #s4-1}
-
-The formula is bilinear and compatible with the coboundary maps.
+For a cocycle $\varphi$ and a cycle $d$ the cochain $c\mapsto\varphi(c\times d)$ is a cocycle, so the formula is well defined on cohomology.
 
 ::: pf-proof
-
-Extend the displayed formula linearly to a cellular cycle $d$ in $Y$. If $\varphi$ is a cocycle, then the resulting cochain $c\mapsto\varphi(c\times d)$ is a cocycle: the product boundary formula and $\partial d=0$ give $\varphi(\partial c\times d)=\varphi(\partial(c\times d))=0$.
-
+The product boundary formula and $\partial d=0$ give $\varphi(\partial c\times d)=\varphi(\partial(c\times d))=0$, which says that the cochain is a cocycle.
 :::
-
-:::
-
-::: pf-step
-
-Hence it induces a well-defined map on cohomology.
-
-::: pf-proof
-
-Step [](#s4-1){.pf-ref}.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s2){.pf-ref} and [](#s4){.pf-ref}.
 
 :::
 

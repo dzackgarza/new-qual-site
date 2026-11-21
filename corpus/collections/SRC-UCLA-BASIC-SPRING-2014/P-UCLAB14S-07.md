@@ -6,7 +6,9 @@ title: Absolutely convergent rows and columns without absolute double summabilit
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Series of Numbers
+  - Double Integrals
 relations: []
 review: draft
 audit:

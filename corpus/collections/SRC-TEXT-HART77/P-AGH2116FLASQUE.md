@@ -366,7 +366,8 @@ Step [](#s1){.pf-ref} proves part (a), step [](#s3){.pf-ref} proves part (b), st
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.16, PDF pp. 6--7, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: (a) an irreducible space has $\underline A(U)=A$ on nonempty opens; (b) two local lifts of one section of $\mcf''$ differ on an overlap by a section of the flasque $\mcf'$, which can be extended and subtracted, so the lifts are adjusted one at a time along a well-ordered cover; (c) lift to $\mcf(V)$ and extend in the flasque $\mcf$; (d) $(f_*\mcf)(U)=\mcf(f^{-1}U)$; (e) discontinuous sections extend by zero.
+The exercise is II.1.16 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is its text, the definition of flasque and parts (a)--(e) included, part (e) introducing the sheaf of discontinuous sections.
+
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.16, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: (a) an irreducible space has $\underline A(U)=A$ on nonempty opens; (b) two local lifts of one section of $\mcf''$ differ on an overlap by a section of the flasque $\mcf'$, which can be extended and subtracted, so the lifts are adjusted one at a time along a well-ordered cover; (c) lift to $\mcf(V)$ and extend in the flasque $\mcf$; (d) $(f_*\mcf)(U)=\mcf(f^{-1}U)$; (e) discontinuous sections extend by zero.
 The proof above has the same five parts, with (b) organized as a maximality argument over the pairs $(V,s)$ in place of the well-ordered induction and the same extension step.
-Agree.
 :::

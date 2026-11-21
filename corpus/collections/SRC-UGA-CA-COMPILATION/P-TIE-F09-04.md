@@ -6,7 +6,9 @@ title: $\int_0^\infty\frac{x\sin x}{x^2+a^2}\,dx$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Contour Integration
+  - Improper Integrals
 relations: []
 review: draft
 audit:

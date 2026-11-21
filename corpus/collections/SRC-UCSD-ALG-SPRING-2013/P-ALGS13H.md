@@ -12,6 +12,18 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 8 of the Spring 2013 UCSD Algebra Qualifying Examination, printed p. 1
+    of the single-page paper retained at assets/attachments/SP13_200_Algebra_Qual.pdf, is the statement
+    the card answers, and the paragraph at the head of the solution records that the paper prints no
+    solutions, so the argument is the card's own. Checked: the statement against the paper's text layer
+    at the page named; both parts, including the two factorizations of 6 in $\ZZ[\sqrt{-5}]$ and the
+    quotient $\ZZ[x]/(x^2+5)$; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering
+    and the QED. Not checked: no retained solution set exists for this paper to compare the argument
+    with, and no other card of the collection in this pass.
+- event: source-checked
   by: OpenAI
   date: 2026-09-08
 - event: solution-written
@@ -29,6 +41,9 @@ audit:
 :::
 
 ::: {.solution}
+
+The problem is Problem 8 of the Spring 2013 UCSD Algebra Qualifying Examination, printed p. 1 of the single-page paper retained at `assets/attachments/SP13_200_Algebra_Qual.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is (a) $\ZZ[\sqrt{-5}]$ with the two factorizations of $6$, and the norm argument that $2$, $3$, $1\pm\sqrt{-5}$ are irreducible and no element has norm $2$ or $3$; (b) the UFD $\ZZ[x]$ with the prime ideal $(x^2+5)$, whose quotient is $\ZZ[\sqrt{-5}]$
+
 
 ::: pf
 

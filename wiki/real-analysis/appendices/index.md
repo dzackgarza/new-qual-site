@@ -5,7 +5,7 @@ order: 13
 
 # Appendices
 
-- [[real-analysis/appendices/appendix-inequalities|Common inequalities]] -- Cauchy--Schwarz, Hölder, Minkowski, Young, Chebyshev, and elementary inequalities, with proofs.
+- [[real-analysis/appendices/appendix-inequalities|Common inequalities]] -- Cauchy--Schwarz, Hölder, Minkowski, Young, Chebyshev, and elementary inequalities, stated on their cards.
 
 - [[real-analysis/appendices/undergrad-appendix|Undergraduate review]] -- limits superior, Fatou's lemma and monotone convergence, differentiation of monotone and absolutely continuous functions, and Baire category.
 

@@ -29,7 +29,7 @@ There is a map $p: \bB^{n+1} \to S^n$ with $p\circ \iota = \id_{S^n}$.
 
 ::: pf-proof
 
-A strong deformation retraction $H: \bB^{n+1}\times[0,1]\to\bB^{n+1}$ ends at a map $p = H(\wait, 1)$ with image in $S^n$ that fixes $S^n$ pointwise.
+A strong deformation retraction $H: \bB^{n+1}\times[0,1]\to\bB^{n+1}$ ends at a map $p = H(-, 1)$ with image in $S^n$ that fixes $S^n$ pointwise.
 
 :::
 

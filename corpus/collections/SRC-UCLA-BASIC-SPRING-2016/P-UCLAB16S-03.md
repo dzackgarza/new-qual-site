@@ -6,7 +6,9 @@ title: First-order error of a Riemann sum
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Riemann Sums
+  - Differentiation
 relations: []
 review: draft
 audit:

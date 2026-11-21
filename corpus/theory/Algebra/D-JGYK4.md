@@ -22,7 +22,8 @@ A proper [[D-GOFWL|ideal]] $I\subsetneq R$ is \dfn{primary} if for all $p,q\in R
 
 ::: {.proposition}
 In a commutative ring, every maximal ideal is prime, and every prime ideal is both radical and primary.
-[@AM18]
+The first implication is [@Hun74, chapter III, §2, Theorem 2.19]: a maximal ideal of a commutative ring with identity is prime.
+For the second, a prime ideal $P$ equals its radical, since $x^n\in P$ forces $x\in P$ by induction on $n$, and $P$ is primary by [@Hun74, chapter VIII, §2, Definition 2.8], since $pq\in P$ with $p\notin P$ forces $q\in P$, which is $q^1\in P$.
 :::
 
 ::: {.example}

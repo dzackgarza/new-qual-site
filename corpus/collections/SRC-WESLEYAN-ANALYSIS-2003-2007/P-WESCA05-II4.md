@@ -5,7 +5,9 @@ kind: problem
 title: "Polynomial growth forces an entire function to be a polynomial"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - 'Liouville''s Theorem'
+  - Entire Functions
 relations: []
 review: draft
 audit:
@@ -13,6 +15,32 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis section 2, problem 4 (Summer 2005) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 29: the Complex Analysis Section of
+    the Analysis Qualifier, Wesleyan University, Summer 2005, Section 2 item 4. The page had cited
+    only the extraction; it now names the examination, its item and the page of the
+    scan. The statement is unchanged.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The proof ended with a pf-qed that only announced that an earlier step had
+    answered the question, which STYLE-08 forbids; it is dropped, and the step that
+    carries the result is now the QED step. No argument or statement changes.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -26,6 +54,9 @@ Prove that $f$ is a polynomial of degree at most $n$.
 :::
 
 ::: {.solution}
+The item is Section 2 item 4 of the Complex Analysis Section of the Analysis Qualifier, Wesleyan
+University, Summer 2005 (entire f with |f(z)| <= M|z|^n is a polynomial of degree at most n).
+
 
 ::: pf
 
@@ -143,11 +174,6 @@ The expression in step [](#s1-4){.pf-ref} is a polynomial with no term of degree
 
 :::
 
-::: pf-qed
-
-Step [](#s1-5){.pf-ref} is the required conclusion.
-
-:::
 
 :::
 

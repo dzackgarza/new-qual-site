@@ -6,7 +6,9 @@ title: Equal powers with distinct exponents in an integral domain
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Integral Domains
+  - Unique Factorization
 relations: []
 review: draft
 audit:

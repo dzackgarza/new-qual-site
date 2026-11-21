@@ -40,7 +40,15 @@ audit:
     multiplication and the chain 2Z ⊃ 4Z ⊃ 8Z ⊃ ..., whose union is all of R.
     The ideal axioms and the symmetric two-sided argument were checked and are
     correct under the identity hypothesis.
----
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The counterexample in the 2026-11-06 event and in the remark was wrong: the union of the
+    descending chain $2\ZZ \supsetneq 4\ZZ \supsetneq 8\ZZ \supsetneq \cdots$ is $2\ZZ$, not
+    $\ZZ$. The remark now uses $k[x]$ with zero multiplication and the ascending chain of
+    polynomials of degree at most $n$, whose union is the whole ring; each is a proper ideal.
+    The ideal axioms and the properness step are correct and unchanged.
 ---
 
 ::: {.exercise}
@@ -123,5 +131,5 @@ $$
 :::
 
 ::: remark
-The identity is what makes the union proper. Without it the statement fails: let $R$ be the additive group $\ZZ$ with all products defined to be $0$, a ring without identity in which every additive subgroup is an ideal, and take the chain $2\ZZ \supsetneq 4\ZZ \supsetneq 8\ZZ \supsetneq \cdots$ of proper ideals. Its union is $\ZZ = R$, which is not a proper ideal. Smith's remaining problems in this section are stated for rings with identity, and step 2 above uses $1_R \in J \Rightarrow J = R$ exactly as the identity hypothesis allows.
+The identity is what makes the union proper. Without it the statement fails: let $R=k[x]$ be the additive group of the polynomial ring with all products defined to be $0$, a ring without identity in which every additive subgroup is an ideal, and take the chain $I_n=\{f:\deg f\le n\}$ for $n\ge0$. Each $I_n$ is a proper ideal, the family is linearly ordered by inclusion, and its union is $k[x]=R$. Smith's remaining problems in this section are stated for rings with identity, and step 2 above uses $1_R \in J \Rightarrow J = R$ exactly as the identity hypothesis allows.
 :::

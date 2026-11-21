@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-SQUAL2-08
 kind: problem
 title: Invariance of dimension for Euclidean spaces
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Invariance of Dimension, Euclidean Spaces]}
 relations: []
 review: draft
 audit:

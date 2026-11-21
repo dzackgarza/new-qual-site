@@ -10,6 +10,18 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. theta is onto Z/4, so K has index 4 and, by Nielsen-Schreier, rank
+    4(2-1)+1 = 5; five elements of a free group of rank 5 that generate it are minimal. I recomputed
+    the five Schreier generators against the transversal {1, a, a^2, a^3} rather than reading them off:
+    a^4 = t a (ta-bar)^{-1} for t = a^3; b a^{-2}, since theta(b) = 2 has representative a^2; a^2 b,
+    since theta(a^2 b) = 4 is 0; a b a^{-3}, since theta(a b) = 3 has representative a^3; and
+    a^3 b a^{-1}, since theta(a^3 b) = 5 has representative a. Each of the five has theta-value 0, as
+    it must.
 ---
 
 ::: {.problem}

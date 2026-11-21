@@ -14,6 +14,18 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-11
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. If p had only real zeros r_1 < ... < r_s with multiplicities summing to
+    n, Rolle gives at least one zero of p' in each of the s-1 intervals between consecutive distinct
+    zeros, so p' has at least s-1 real zeros; at a zero of p of multiplicity k, p' has one of
+    multiplicity k-1, giving n-s more, so p' has at least n-1 real zeros counted with multiplicity,
+    which is all of them since deg p' = n-1: every zero of p' is simple. But p'(a) = p''(a) = 0 makes
+    a a multiple zero of p', and a is not a zero of p, so the contradiction stands. Checked the
+    multiplicity count, which is the step that makes the argument work rather than only the distinct
+    zeros.
 ---
 
 ::: {.problem}

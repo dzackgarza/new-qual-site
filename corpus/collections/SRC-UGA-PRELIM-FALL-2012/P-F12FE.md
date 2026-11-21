@@ -23,25 +23,51 @@ Prove that $f(1) = 0$ and that $f(u^n) = n u^{n-1} f(u)$ for all $n \in \NN$ and
 :::
 
 ::: {.solution}
-Putting $x=y=1$ gives
-$$
-f(1)=f(1)+f(1),
-$$
-so $f(1)=0$.
 
-We prove by induction on $n\ge1$ that
-$$
-f(u^n)=nu^{n-1}f(u).
-$$
-For $n=1$ this is immediate. If it holds for $n$, then
-$$
-\begin{aligned}
-f(u^{n+1})
-&=f(u^n u)\\
-&=u^n f(u)+u f(u^n)\\
-&=u^n f(u)+u\bigl(nu^{n-1}f(u)\bigr)\\
-&=(n+1)u^n f(u).
-\end{aligned}
-$$
-Thus the formula holds for every positive integer $n$.
+No retained solution set covers this exercise: the card's own argument follows, with the value at $1$ and the induction as separate steps and the identity's two terms named.
+
+::: pf
+
+::: {.pf-step #at-one}
+$f(1)=0$.
+
+::: pf-proof
+Putting $x=y=1$ in $f(xy)=xf(y)+yf(x)$ gives $f(1)=1\cdot f(1)+1\cdot f(1)=2f(1)$, so $f(1)=0$ in $\RR$.
+:::
+
+:::
+
+::: {.pf-step #induction}
+$f(u^{n})=nu^{n-1}f(u)$ for every $n\ge1$ and every $u\in\RR$.
+
+:::: {.pf-proof}
+
+::: {.pf-step #base}
+The formula holds for $n=1$.
+
+::: pf-proof
+$1\cdot u^{0}f(u)=f(u)=f(u^{1})$.
+:::
+
+:::
+
+::: {.pf-step #step}
+If it holds for $n$, it holds for $n+1$.
+
+::: pf-proof
+Apply $f(xy)=xf(y)+yf(x)$ with $x=u^{n}$ and $y=u$: $f(u^{n+1})=u^{n}f(u)+uf(u^{n})$. By the induction hypothesis $uf(u^{n})=u\cdot nu^{n-1}f(u)=nu^{n}f(u)$, so $f(u^{n+1})=(n+1)u^{n}f(u)$.
+:::
+
+:::
+
+::::
+
+:::
+
+::: {.pf-qed}
+$f(1)=0$ by step [](#at-one){.pf-ref}, and $f(u^{n})=nu^{n-1}f(u)$ for all $n\in\NN$ and $u\in\RR$ by the induction of step [](#induction){.pf-ref}.
+:::
+
+:::
+
 :::

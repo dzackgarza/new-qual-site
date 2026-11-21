@@ -6,7 +6,9 @@ title: Adjoint of a normal matrix as a polynomial
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Normal Operators
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 audit:
@@ -113,9 +115,13 @@ If the $j$th diagonal entry of $D$ is $\lambda_i$, then the $j$th diagonal entry
 
 Therefore
 $$
-P(A)=UD^*U^*=A^*.
+P(A)=UD^*U^*=A^*,
 $$
-
+that is,
+$$
+\boxed{A^*=P(A)}
+$$
+for the polynomial $P$ constructed in step [](#s1-2){.pf-ref}.
 
 ::: pf-proof
 
@@ -129,26 +135,9 @@ because $U$ is unitary.
 
 :::
 
-::: {.pf-step #s1-6}
-
-Hence
-$$
-\boxed{A^*=P(A)}
-$$
-for the polynomial $P$ constructed in step [](#s1-2){.pf-ref}.
-
-
-::: pf-proof
-
-This is exactly step [](#s1-5){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-6){.pf-ref} proves the assertion.
+Step [](#s1-5){.pf-ref} proves the assertion.
 
 :::
 

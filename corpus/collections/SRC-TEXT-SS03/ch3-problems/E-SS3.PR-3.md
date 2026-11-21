@@ -31,6 +31,96 @@ audit:
     collected into one Laurent series, absolute convergence on compact subsets of the open annulus
     follows from the two geometric bounds, and the series is unique. The pole case then follows by
     taking $a_n=0$ for $n<-k$. Nothing is left in outline.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator correction to the event above: Chapter 3, Problem 3 is on PDF p. 128 of the retained scan,
+    printed p. 109; PDF p. 127 is printed p. 108 and carries Problem 1 and the start of Problem 2.
+    The item was not otherwise re-read in this pass, and this card carries no asterisk -- the print's
+    Chapter 3 marks are before Problems 1, 4 and 5 only.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Repair of step s4 on the reader's report. Its claim read $b_n=-a_{-n}$, while its own computation
+    — integrating the geometric expansion of $1/(\zeta-z)$ on $C_{r_1}$ and moving the integral from
+    $C_{r_1}$ to $C_{r_2}$ by Cauchy's theorem — gives $b_n=+a_{-n}$, and the Laurent sum of step s5
+    needs the plus sign. The claim now reads $b_n=a_{-n}$; nothing else changed. The four other steps
+    were read and are untouched. Provenance: no published solution set covers the end-of-chapter
+    Problems of Stein--Shakarchi (R. C. Rhoades, *Solutions/Hints to the Exercises from Complex
+    Analysis by Stein and Shakarchi*, 2006, covers a selection of the Exercises only), so the
+    argument is the card's own.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Second half of the step s4 sign repaired, on a referee's report of this session. The claim
+    sentence also read "the second integral equals $\sum b_n(z-z_0)^{-n}$", while the proof of the
+    same step displays $-\frac{1}{2\pi i}\int_{C_{r_1}}f/(\zeta-z)d\zeta=\sum b_n(z-z_0)^{-n}$ and
+    step s5 adds that display to the first integral. The sentence now reads "minus the second
+    integral equals", which is what is proved and what s5 uses; the coefficient $b_n=a_{-n}$ and
+    everything else are unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Asterisk status read from the book: Chapter 3 sets its asterisks before Problems 1, 4 and 5
+    only, so none stands before Problem 3. The remark records that. The locator by numbered
+    statement is Chapter 3, Problem 3; the page readings recorded in the earlier events are
+    superseded by it, the events themselves standing as written. Not checked in this pass: the
+    wording of the statement and the argument.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Record of the search behind the solution's provenance sentence, which the reader asked for where
+    no published solution set covers the Problem. Read: the head of R. C. Rhoades,
+    *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), whose
+    abstract describes it as solutions or hints to "many of the exercises", with one part per
+    chapter. Searched the open web for a set answering the end-of-chapter Problems of this book: no
+    document answering Chapter 3, Problem 3 was found. This search located no published set answering
+    this Problem, and none is retained in this repository. Not checked: whether such a set exists
+    outside what a web search reaches. The mathematics of the card is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Correction to one clause of the source-checked event above, which says the page it names first
+    "carries Problem 1 and the start of Problem 2". Read on the pages themselves: that page carries
+    the end of Exercise 22 and Problem 1(a)--(f), the last of which ends with the bound
+    $\abs{z_1-z_2}\le4$, and nothing of Problem 2; Problem 1(g) and the opening of Problem 2 stand
+    on the next page, which is the page the same event records for Chapter 3, Problem 3. That
+    locator is right, and the card's statement and argument are unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected: a published solution of this Problem was located, so the sentence saying
+    that none existed is replaced. The set is Wang Zirui, *Complete Solutions for Chapter 3*, in the
+    public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, read at its
+    Problem 3 and checked against Chapter 3, Problem 3: the two boundary integrals from Cauchy's
+    theorem on the annulus, the two geometric expansions, $f(z)=\sum_{n\in\ZZ}a_n(z-z_0)^n$ with
+    $a_n$ the integral over any circle between the two radii, and absolute and locally uniform
+    convergence. Its text is an outline; the card's steps supply the uniform convergence on compact
+    subannuli that licenses termwise integration and the estimate that gives the coefficients'
+    integral formula. Not checked: anything in the published document outside its Problem 3.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    A complete published solution of this Problem was located and now heads the solution's opening
+    paragraph: the solution set of Math 440/508, Complex Analysis, Fall 2017, University of British
+    Columbia (instructor Malabika Pramanik), *Homework 4 Solutions*,
+    `https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_4_Solutions.pdf`,
+    at its Chapter 3, Problem 3. Read there and checked against Chapter 3, Problem 3: the annulus is
+    cut along a narrow segment, the Cauchy formula is applied on the resulting contour and the cut is
+    let shrink, $(\zeta-z)^{-1}$ is expanded on the outer circle and $(\zeta-z_0)^k/(z-z_0)^{k+1}$ on
+    the inner one, the interchange of sum and integral is justified by dominated convergence, and the
+    two series and the coefficient formula follow. The card's steps s1--s5 are that argument; the set
+    also notes that the book's printed coefficient display drops the factor $f(\zeta)$, which the card
+    carries. The Wang Zirui outline, cited in the previous event, remains as the secondary source. Not
+    checked: anything in the UBC set outside its Chapter 3, Problem 3.
 ---
 
 ::: {.exercise}
@@ -51,7 +141,12 @@ $$
 when $r_1<\abs{z-z_0}<r_2$, and argue as in the proof of Theorem 4.4, Chapter 2. Here $C_{r_1}$ and $C_{r_2}$ are the circles bounding the annulus.
 :::
 
+::: {.remark}
+The book sets no asterisk before this problem (Chapter 3, Problem 3).
+:::
+
 ::: {.solution}
+The published solution of this Problem is the solution set of Math 440/508, Complex Analysis, Fall 2017, University of British Columbia (instructor Malabika Pramanik), *Homework 4 Solutions*, at its Chapter 3, Problem 3: it cuts the annulus along a narrow radial segment, applies the Cauchy formula on the contour that results, lets the cut shrink, expands $(\zeta-z)^{-1}$ on the outer circle and on the inner one, interchanges sum and integral by dominated convergence, and reads off the two series and the coefficient formula. The proof below is that argument, step for step. The set is not retained in this checkout and was read at its source; Wang Zirui's *Complete Solutions for Chapter 3* covers the same Problem in outline only.
 
 Let $0<r_1<r_2$, let $A=\{z:r_1<\abs{z-z_0}<r_2\}$ be the open annulus and $\bar A=\{z:r_1\le\abs{z-z_0}\le r_2\}$, on which $f$ is holomorphic. Fix $z\in A$.
 
@@ -81,11 +176,11 @@ On $C_{r_2}$ one has $\abs{(z-z_0)/(\zeta-z_0)}\le\varrho<1$, and on $C_{r_1}$ o
 
 For $\zeta\in C_{r_2}$, $\abs{\zeta-z_0}=r_2$ and $\abs{z-z_0}<r_2$, so
 $$
-\Bigl|\frac{z-z_0}{\zeta-z_0}\Bigr|=\frac{\abs{z-z_0}}{r_2}=:\varrho<1 .
+\abs{\frac{z-z_0}{\zeta-z_0}}=\frac{\abs{z-z_0}}{r_2}=:\varrho<1 .
 $$
 For $\zeta\in C_{r_1}$, $\abs{\zeta-z_0}=r_1$ and $\abs{z-z_0}>r_1$, so
 $$
-\Bigl|\frac{\zeta-z_0}{z-z_0}\Bigr|=\frac{r_1}{\abs{z-z_0}}=:\varrho'<1 .
+\abs{\frac{\zeta-z_0}{z-z_0}}=\frac{r_1}{\abs{z-z_0}}=:\varrho'<1 .
 $$
 
 :::
@@ -110,7 +205,7 @@ the geometric series converging uniformly in $\zeta\in C_{r_2}$ by step [](#s2){
 
 ::: {.pf-step #s4}
 
-The second integral equals $\sum_{n\ge1}b_n(z-z_0)^{-n}$ with $b_n=\frac{1}{2\pi i}\int_{C_{r_1}}f(\zeta)(\zeta-z_0)^{n-1}d\zeta$, and $b_n=-a_{-n}$ with $a_{-n}$ given by the same formula with $C_{r_2}$.
+Minus the second integral equals $\sum_{n\ge1}b_n(z-z_0)^{-n}$ with $b_n=\frac{1}{2\pi i}\int_{C_{r_1}}f(\zeta)(\zeta-z_0)^{n-1}d\zeta$, and $b_n=a_{-n}$ with $a_{-n}$ given by the same formula with $C_{r_2}$.
 
 ::: pf-proof
 

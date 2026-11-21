@@ -652,3 +652,7 @@ $f^*\mcl\tensor g^*\mcl$ has degree $2$. Likewise,
 $p_2^*\mcl$ has degree zero on each $p_1$-fibre only when
 $\deg\mcl=0$.
 :::
+
+::: {.remark}
+The exercise is Hartshorne, Exercise IV.4.7, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is that exercise's text, parts (a)--(c) and the instruction to do the separable and purely inseparable cases separately.  The card proves the three parts itself; no published solution was located for it.
+:::

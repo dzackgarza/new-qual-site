@@ -19,6 +19,14 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the five steps that stated a definition or cited a theorem now say
+    which definition or theorem they are, rather than leaving the reader to infer it. Nothing
+    mathematical was changed.
+
 ---
 
 ::: {.problem}
@@ -39,6 +47,11 @@ audit:
 ::: pf-step
 The commutator of vector fields $X,Y$ on a manifold is the vector field $[X,Y]$ acting on smooth functions by $[X,Y](f)=X(Yf)-Y(Xf)$.
 
+
+::: pf-proof
+This is the definition of the Lie bracket of vector fields.
+:::
+
 :::
 
 ::: pf-step
@@ -46,6 +59,11 @@ The Lie algebra of $G$ is $\mathfrak g=T_eG$, identified with the left-invariant
 $$
 [X,[Y,Z]]+[Y,[Z,X]]+[Z,[X,Y]]=0.
 $$
+
+
+::: pf-proof
+This is the definition of the Lie algebra of a Lie group: the tangent space at the identity, identified with the left-invariant vector fields.
+:::
 
 :::
 
@@ -55,15 +73,30 @@ $$
 \operatorname{ad}:\mathfrak g\to\mathfrak{gl}(\mathfrak g),\qquad \operatorname{ad}_X(Y)=[X,Y].
 $$
 
+
+::: pf-proof
+This is the definition of the adjoint representation.
+:::
+
 :::
 
 ::: pf-step
 A unitary representation of a topological group $G$ is a homomorphism $\pi:G\to U(V)$ into the unitary group of a complex Hilbert space $V$ that is strongly continuous: $g\mapsto\pi(g)v$ is continuous for each $v\in V$.
 
+
+::: pf-proof
+This is the definition of a unitary representation.
+:::
+
 :::
 
 ::: pf-step
 The Peter--Weyl theorem: for a compact group $G$, the matrix coefficients of finite-dimensional irreducible unitary representations are dense in $C(G)$; equivalently, the left regular representation on $L^2(G)$ is the Hilbert direct sum of the finite-dimensional irreducible representations, each occurring with multiplicity equal to its dimension.
+
+
+::: pf-proof
+This is the statement of the Peter--Weyl theorem, cited here rather than proved.
+:::
 
 :::
 

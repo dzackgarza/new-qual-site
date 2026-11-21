@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. The diagonal element y with y_n = 1 - x^(n)_n lies in {0,1}^N and
+    differs from f(n) in coordinate n, so no map N -> {0,1}^N is onto, and a nonempty set is
+    countable exactly when it is the image of such a map. Not checked: nothing beyond the step; there
+    is no source to check the statement against, the card being a workshop question.
 ---
 ::: {.problem}
 Is the set of all sequences $x_1,x_2,\ldots$ with $x_i\in\{0,1\}$ for $i=1,2,\ldots$ countable?

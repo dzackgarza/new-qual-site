@@ -16,6 +16,15 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/MGSA_Commutative_Algebra_Oral_Questions.pdf`: the statement is the item "An example of a domain which is integrally closed, one-dimensional, and not noetherian",
+    and its printed words are the card's. The sheet numbers nothing and prints no folios, so the
+    item is identified by its position and its opening words rather than by a number. Both are now
+    named in the solution's opening sentence. Not checked in this pass: the argument, which the
+    edit does not touch.
 ---
 
 ::: {.problem}
@@ -23,6 +32,7 @@ Give an example of a one-dimensional integrally closed domain which is not Noeth
 :::
 
 ::: {.solution}
+This is the sheet `assets/attachments/MGSA_Commutative_Algebra_Oral_Questions.pdf`, Commutative Algebra section, item "An example of a domain which is integrally closed, one-dimensional, and not noetherian"; the statement below is its wording.
 Let $R=\overline{\ZZ}$ be the ring of algebraic integers, the integral closure
 of $\ZZ$ in $\overline{\QQ}$.
 

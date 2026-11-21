@@ -6,7 +6,9 @@ title: Sylow subgroups in orders 21, 39, and 56
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Sylow Theory
+  - Simple Groups
 relations: []
 review: draft
 audit:

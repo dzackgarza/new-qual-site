@@ -50,7 +50,7 @@ The circle $S_n$ has equation $x^2+y^2=2nx$; all the circles pass through $p=(0,
 
 ::: pf-proof
 
-$Y$ is a subspace of the second-countable space $\RR^2$ (Example 1, printed p. 190), hence second-countable (Theorem 30.2, printed p. 191) and therefore first countable (printed p. 190, where the second axiom is shown to imply the first). The countably infinite wedge of circles is not first countable at its wedge point (Exercise 4 of this section, printed p. 438). The space of Example 1 is the union of the circles of radius $1/n$, a closed bounded subspace of $\RR^2$, hence compact (Theorem 27.3, printed p. 173); $Y$ is unbounded, since $(2n,0)\in Y$ for every $n$, so $Y$ is not compact. Neither space is homeomorphic to $Y$.
+$Y$ is a subspace of the second-countable space $\RR^2$ (Example 1), hence second-countable (Theorem 30.2) and therefore first countable (§30, where the second axiom is shown to imply the first). The countably infinite wedge of circles is not first countable at its wedge point (Exercise 4 of this section). The space of Example 1 is the union of the circles of radius $1/n$, a closed bounded subspace of $\RR^2$, hence compact (Theorem 27.3); $Y$ is unbounded, since $(2n,0)\in Y$ for every $n$, so $Y$ is not compact. Neither space is homeomorphic to $Y$.
 
 :::
 
@@ -80,7 +80,7 @@ The map $\pi_1(Y_N,p)\to\pi_1(Y,p)$ induced by inclusion is one-to-one.
 
 ::: pf-proof
 
-$r_N$ restricts to the identity on $Y_N$, so $(r_N)_*\circ(i_N)_*=\mathrm{id}$ on $\pi_1(Y_N,p)$; a homomorphism with a left inverse is injective. By Theorem 71.1 (printed p. 434), $\pi_1(Y_N,p)$ is free on $[f_1],\dots,[f_N]$.
+$r_N$ restricts to the identity on $Y_N$, so $(r_N)_*\circ(i_N)_*=\mathrm{id}$ on $\pi_1(Y_N,p)$; a homomorphism with a left inverse is injective. By Theorem 71.1 , $\pi_1(Y_N,p)$ is free on $[f_1],\dots,[f_N]$.
 
 :::
 

@@ -5,7 +5,9 @@ kind: problem
 title: Two-sided ideals of a full matrix algebra
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Ideals
+  - Matrix Rings
 relations: []
 review: draft
 audit:

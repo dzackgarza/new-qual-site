@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP10-I3
 kind: problem
 title: Urysohn metrization and metrizable compact images
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Metrizability, Urysohn's Lemma]}
 relations: []
 review: draft
 audit:

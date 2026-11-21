@@ -21,4 +21,6 @@ For every $z\in\CC$,
 $$
 \sin(z) = {1\over i} \sinh(iz).
 $$
+
+This is the other expression asked for in [@Ahl73, ch. 2, §3.2, The Trigonometric Functions]: with $\sinh w=(e^{w}-e^{-w})/2$ and $w=iz$, the right side is $\frac1i\cdot\frac{e^{iz}-e^{-iz}}{2}=\sin z$.
 :::

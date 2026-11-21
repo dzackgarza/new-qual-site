@@ -6,7 +6,9 @@ title: Real matrices satisfying the cube identity
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Similarity
+  - Jordan Canonical Form
 relations: []
 review: draft
 audit:

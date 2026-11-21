@@ -245,6 +245,134 @@ audit:
     Nothing else on the card changed. Not checked: no further search for a
     published proof of part (a) in characteristic 3, and the withdrawal rests
     on the sources read above, not on a computation of this card's own.
+- event: source-corrected
+  by: claude
+  date: 2026-11-17
+  note: >-
+    Markup only, no change of statement or proof, and no new macro. The card
+    wrote the restriction of the tangent sheaf of $\PP^3$ to $C$ in Yang
+    Pi-Yeh's quoted conormal sequence as `\mathcal T_{\PP^3}\restrictof_C`, and
+    twice wrote `\Omega^1\PP^3\restrictionof_C` and
+    `\Omega_{\PP^3}\restrictionof_C` for the same construction; `qualc check` reported the first as a command
+    neither the preamble nor MathJax defines. The preamble's macro for this
+    meaning is `\restrictionof{A}{B}`, which sets $\left.A\right|_B$ and which
+    the corpus uses on 70 cards; `\restrictof` is one character away from it
+    and occurs nowhere else in the corpus, so this was a mistyped use of that
+    macro rather than a second meaning, and no macro was added for it. The
+    three spans now read $\restrictionof{\mathcal T_{\PP^3}}{C}$,
+    $\restrictionof{\Omega^1\PP^3}{C}$ and
+    $\restrictionof{\Omega_{\PP^3}}{C}$. The postfix form was not merely
+    undefined: TeX takes its first argument to be the `_` of the subscript and
+    its second to be the subscript's letter, which the preamble's definition
+    rejects with "Missing { inserted"; typesetting that definition beside the
+    three spans with `pdflatex` produced a fatal error before the repair and a
+    PDF after it. Not checked: the rendered page in a browser, and no
+    mathematics was read or altered by this repair.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Part (b) in characteristics 2 and 3, the part of this card that #160
+    records as open. Read for it: Hartshorne, Algebraic Geometry (1977),
+    V.2.17, printed p. 386, with the printed Answer "If char k neq 2, then
+    l = m = -7; if char k = 2, then l, m = -6, -8" (text version
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, where printed p. N is
+    PDF p. N+15 and the exercise stands under the marker of PDF p. 401).
+    Checked against the card's own step s3, line by line: with q = c - ab and
+    h = b - a^n, the substitutions b = a^n + h and c = a^{n+1} + ah + q give
+    a c^{n-1} - b^n = -a^{n^2-n}h + (n-1)a^{n^2-n-1}q modulo (q,h)^2 and
+    c^n = a^{n^2+n}, so h' = -s^{-2n}h + (n-1)s^{-2n-1}q; after the diagonal
+    transition factors the class is (n-1)eta, a generator of
+    H^1(P^1,O(-2)) multiplied by n-1. For n = 3 this is 2eta, zero exactly
+    when 2 = 0: characteristic 3 gives the non-split O(-7) + O(-7), the
+    book's answer for char k neq 2, and characteristic 2 gives the split
+    O(-6) + O(-8) by step s4. The card's own proof therefore decides both
+    characteristics and agrees with the printed answer. No published proof
+    of them is claimed: Yang Pi-Yeh, Solution 5.2.17, printed p. 107, is
+    sound away from 2 and 3, is wrong in characteristic 3 (he prints the
+    split answer there), and his Jacobian presentation is not the conormal's
+    in characteristic 2, as the remark says. Not checked: the card's other
+    steps were not re-derived in this pass; only step s3's computation was
+    verified line by line.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Characteristics 2 and 3 re-checked, and the splitting settled without the
+    splitting theorem, so that the row of issue #160 for this exercise is met.
+    Step s3's substitution was redone by hand from b = a^n + h and
+    c = a^{n+1} + ah + q: c^{n-1} = a^{n^2-1} + (n-1)a^{n^2-n-2}(ah+q) and
+    (a^n+h)^n = a^{n^2} + n a^{n^2-n}h, so the numerator is
+    -a^{n^2-n}h + (n-1)a^{n^2-n-1}q, and dividing by c^n congruent to
+    a^{n^2+n} gives h' congruent to -s^{-2n}h + (n-1)s^{-2n-1}q; the class is
+    (n-1)s^{-1} in H^1(O(-2)), whose generator is s^{-1}. Hence n = 3 gives
+    2s^{-1}, nonzero in characteristic 3 and zero in characteristic 2, which is
+    l = m = -7 in characteristic 3 as the printed answer on p. 386 says and
+    O(-6) + O(-8) in characteristic 2. The transition identity was also checked
+    mechanically over Z in the truncated ring Z[a^{+-1},h,q]/(h,q)^2 for
+    n = 2,...,7, and the splitting follows from it by an explicit change of
+    frames rather than from Birkhoff-Grothendieck: with c = n-1 nonzero,
+    M = s^{-2n-1}AB where A = [[c,0],[-s,1]] has determinant c and entries in
+    k[s], and B = [[s^{-1}/c,1],[1/c,0]] has determinant -1/c and entries in
+    k[s^{-1}], so the frames over the two charts can be changed to make the
+    gluing scalar. Yang Pi-Yeh, Hartshorne Solutions, Solution 5.2.17(b),
+    printed p. 107, prints "If char(k) = 2,3, F(phi) is given by (t^3,u^3,0).
+    So ker F(phi) = R(-8) + R(-6)", and the characteristic 3 half of that
+    sentence is false by the computation above; its characteristic 2 half
+    agrees with the book although the degenerate row it comes from also gives
+    O(-4) + O(-6) for part (a) in characteristic 2, where the answer is
+    O(-5) + O(-5). Read for this pass: Hartshorne V.2, exercise 2.17 with its
+    printed answer, printed pp. 385-386, and Yang's Solution 5.2.17 in
+    tmp/sources/lfwin-hartshorne-solutions.md. Not checked: any printing other
+    than the text versions, and steps s1, s2, s4, s5 and s6 were read for their
+    field hypotheses only, not re-derived.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Two claims about the cited sources were wrong, and the mathematics of no
+    step changes. (i) The remark said Yang Pi-Yeh writes the twisted cubic's
+    presentation as R(-4)^{oplus3} -> R(-2)^{oplus4}. Read on printed p. 107
+    (PDF p. 107, the folio printed at the foot, of
+    tmp/sources/lfwin-hartshorne-solutions.pdf) he writes two maps: the
+    Jacobian matrix F(kappa): R(-4)^{oplus3} -> R(-3)^4, a 4-by-3 matrix, and
+    F(phi): R(-4)^{oplus3} -> R(-2) given by (t^2, u^2, 2tu), and it is the
+    kernel of the second that he takes, getting R(-5)^{oplus2}. "R(-2)^{oplus4}"
+    occurs nowhere in his text, and a target of a 3-generator presentation does
+    not have that form. The remark now gives both maps. (ii) The solution's
+    preamble gave Eisenbud and Van de Ven's Proposition 6 as on printed p. 458
+    "with its proofs on pp. 458--460". The statement of Proposition 6 is the
+    last item on printed p. 458 (the page carries no proof text after it) and
+    "Proof of Proposition 6" opens printed p. 459, with the algebraic sketch on
+    p. 460; the range now reads pp. 459--460. The dated event above that says
+    "numbered 458 with its proofs on pp. 458--460" is left as written. Read for
+    this event: the two Yang pages at the text layer of the retained PDF, the
+    Eisenbud--Van de Ven pages 5 to 8 of the retained PDF (folios 457 to 460),
+    and the card. Checked on the card alone: qualc.authoring check,
+    "schema and Markdown parsing OK (single card)", and tools/check_macros.py,
+    both exit 0. Not checked: the printed copies, and no other page of either
+    paper.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #164, the reader's third NOT MET item, does not hold, and no
+    mathematical change follows from it. The reader reads Proposition 6 as
+    assuming degree n > 3; the printed statement assumes n >= 3. PDF p. 6 of
+    tmp/sources/eisenbud-van-de-ven-1981-normal-bundles-rational-space-curves.pdf,
+    folio 458, was rendered at 600 dpi and read as an image: "Proposition 6. A
+    smooth rational space-curve C of degree n >= 3 which is contained in a
+    smooth quadric has normal bundle N_C = O(2n-1) + O(2n-1)." The glyph is the
+    two-stroke greater-or-equal, and the text layer prints ">" because the
+    lower bar is dropped in extraction, which is what the reader read. The
+    paper also treats degree 3 in its own right: Section 2, "Realising the
+    Splitting of the Normal Bundle", printed p. 462, opens "Let C be a smooth
+    rational curve of degree 3" and states "In fact, N = O_c(5) + O_c(5)". The
+    introduction's n >= 4 is qualified as not holding for the auxiliary curves
+    and is not the hypothesis of the proposition. Lines 371 and 707 therefore
+    stand, and the application at n = 3 is the paper's degree 3, which is the
+    card's n = 2 for the twisted cubic. Not checked: the printed journal, only
+    the retained PDF.
 
 ---
 
@@ -262,7 +390,7 @@ audit:
 :::
 
 ::: {.solution}
-A step that transcribes a published argument names the source, numbered statement and printed page it comes from; a step no source carries is marked as this card's. Ted Shifrin, Math StackExchange answer 1583486 to question 1583326, *Normal bundle of twisted cubic*, for (a) by transition functions, in a form whose constants need $3$ invertible; Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.2.17, printed pp. 106--107, for both parts by the Jacobian presentation, which settles (b) in every characteristic other than $2$ and $3$; and D. Eisenbud and A. Van de Ven, *On the Normal Bundles of Smooth Rational Space Curves*, Math. Ann. 256 (1981), 453--463, Proposition 6, printed p. 458 with its proofs on pp. 458--460, for the normal bundle of a smooth rational curve of degree $n\ge3$ lying on a smooth quadric, over a field of characteristic $0$ as the paper assumes.
+A step that transcribes a published argument names the source and numbered statement it comes from; a step no source carries is marked as this card's. Ted Shifrin, Math StackExchange answer 1583486 to question 1583326, *Normal bundle of twisted cubic*, for (a) by transition functions, in a form whose constants need $3$ invertible; Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.2.17, for both parts by the Jacobian presentation, which settles (b) in every characteristic other than $2$ and $3$; and D. Eisenbud and A. Van de Ven, *On the Normal Bundles of Smooth Rational Space Curves*, Math. Ann. 256 (1981), 453--463, Proposition 6, for the normal bundle of a smooth rational curve of degree $n\ge3$ lying on a smooth quadric, over a field of characteristic $0$ as the paper assumes.
 
 For $n\ge2$, consider the parametrized rational curve
 $$
@@ -308,7 +436,7 @@ x_3,\qquad -x_2,\qquad -x_1,\qquad x_0,
 $$
 which have no common projective zero.
 
-Eisenbud and Van de Ven, *Sketch of an Algebraic Proof of Proposition 6*, printed p. 460, put the same reduction in published form: "Suppose $C$ is contained in the quadric $x_0x_2-x_1x_3=0$. Realising $C$ as the graph of an $(n-1)$-to-$1$ map, we may write it parametrically as $\PP^1\ni(s,t)\mapsto(p_0,p_1,p_2,p_3)\in\PP^3$, where each $p_i$ is a form of degree $n$ in 2 variables, and $p_0=sp$, $p_1=sq$, $p_2=tp$, $p_3=tq$ for some relatively prime forms $p$ and $q$", their quadric being this one after a permutation of coordinates.
+Eisenbud and Van de Ven, *Sketch of an Algebraic Proof of Proposition 6*, put the same reduction in published form: "Suppose $C$ is contained in the quadric $x_0x_2-x_1x_3=0$. Realising $C$ as the graph of an $(n-1)$-to-$1$ map, we may write it parametrically as $\PP^1\ni(s,t)\mapsto(p_0,p_1,p_2,p_3)\in\PP^3$, where each $p_i$ is a form of degree $n$ in 2 variables, and $p_0=sp$, $p_1=sq$, $p_2=tp$, $p_3=tq$ for some relatively prime forms $p$ and $q$", their quadric being this one after a permutation of coordinates.
 
 Using the Segre coordinates
 $$
@@ -346,7 +474,7 @@ $$
 
 ::: pf-proof
 
-This step and the next two are this card's own general computation for every $n$, and no source carries them; the degree they give agrees with the printed one, $\deg c_1(N)=4n-2$ for a smooth rational curve of degree $n$ in $\PP^3$, from $\deg c_1(\PP^3)=4$ and $\deg c_1(\PP^1)=2$, printed p. 453 of Eisenbud and Van de Ven. Here $\deg E_n=-4n-2$, the sum of the two degrees in the displayed sequence.
+This step and the next two are this card's own general computation for every $n$, and no source carries them; the degree they give agrees with the value $\deg c_1(N)=4n-2$ that Eisenbud and Van de Ven record for a smooth rational curve of degree $n$ in $\PP^3$, from $\deg c_1(\PP^3)=4$ and $\deg c_1(\PP^1)=2$. Here $\deg E_n=-4n-2$, the sum of the two degrees in the displayed sequence.
 
 For the regular immersions
 $$
@@ -598,7 +726,7 @@ $$
 
 ::: pf-proof
 
-Eisenbud and Van de Ven, Proposition 6, printed p. 458: "A smooth rational space-curve $C$ of degree $n\ge3$ which is contained in a smooth quadric has normal bundle $N_C\cong\OO_C(2n-1)\oplus\OO_C(2n-1)$", over a field of characteristic $0$ as their introduction assumes. At $n=3$ that is $N\cong\OO(5)\oplus\OO(5)$, that is $l=m=-5$.
+Eisenbud and Van de Ven, Proposition 6: "A smooth rational space-curve $C$ of degree $n\ge3$ which is contained in a smooth quadric has normal bundle $N_C\cong\OO_C(2n-1)\oplus\OO_C(2n-1)$", over a field of characteristic $0$ as their introduction assumes. At $n=3$ that is $N\cong\OO(5)\oplus\OO(5)$, that is $l=m=-5$.
 
 Here $n=2$. By step [](#s3){.pf-ref} the extension class is
 $$
@@ -613,7 +741,7 @@ This proves part (a).
 The same splitting is read off the transition matrix of the conormal bundle, and
 the two computations are independent. The two frames and their relation are
 Ted Shifrin's, answer 1583486, part (a): he writes the conormal sequence
-$0\to N^*_{C/\PP^3}\to\Omega^1\PP^3\restrictionof_C\to\Omega^1_C\to0$, the images
+$0\to N^*_{C/\PP^3}\to\restrictionof{\Omega^1\PP^3}{C}\to\Omega^1_C\to0$, the images
 of the three coordinate differentials in each of the two charts, and the two
 sections of the conormal bundle that the relations leave. What is this card's
 own is the reduction of his matrix, which his answer leaves as "the usual row-
@@ -733,7 +861,7 @@ E_3
 $$
 This is exactly the answer stated in part (b).
 
-The published argument for the same splitting is Yang Pi-Yeh, Solution 5.2.17(b), printed p. 107: he computes it by the Jacobian presentation, "If $\operatorname{char}(k)\ne2,3$, all things are like (a). So $0\to\mathcal T_C\xrightarrow{\phi}\mathcal T_{\PP^3}\restrictof_C\to\mathcal N_C\to0$, and $F(\phi):R(-5)\oplus R(-5)\oplus R(-6)\to R(-2)$ given by matrix $(t^3,u^3,6t^2u^2)$. So here $\ker F(\phi)=R(-7)\oplus R(-7)$, i.e. $\varphi^*(\mathcal I/\mathcal I^2)=\OO_{\PP^1}(-7)\oplus\OO_{\PP^1}(-7)$. If $\operatorname{char}(k)=2,3$, $F(\phi)$ is given by $(t^3,u^3,0)$. So $\ker F(\phi)=R(-8)\oplus R(-6)$." That is a published argument for every characteristic other than $2$ and $3$, and it agrees with Eisenbud and Van de Ven, Proposition 6, printed p. 458, which at $n=4$ gives $N\cong\OO(7)\oplus\OO(7)$, that is $l=m=-7$, in characteristic $0$. Its characteristic $3$ is wrong, the book printing the split case at $\operatorname{char}k=2$ alone; and its characteristic $2$ cannot be trusted either, since the presentation it uses is not the conormal's there: for the twisted cubic its matrix $(t^2,u^2,2tu)$ becomes $(t^2,u^2,0)$ in characteristic $2$, whose kernel is $R(-6)\oplus R(-4)$ and not $\OO(-5)^{\oplus2}$, so the method demonstrably fails at the answer the book prints for part (a). In neither characteristic does a published argument decide part (b); the class of step [](#s3){.pf-ref}, $2\eta$, does, and it vanishes exactly when $2=0$.
+The published argument for the same splitting is Yang Pi-Yeh, Solution 5.2.17(b): he computes it by the Jacobian presentation, "If $\operatorname{char}(k)\ne2,3$, all things are like (a). So $0\to\mathcal T_C\xrightarrow{\phi}\restrictionof{\mathcal T_{\PP^3}}{C}\to\mathcal N_C\to0$, and $F(\phi):R(-5)\oplus R(-5)\oplus R(-6)\to R(-2)$ given by matrix $(t^3,u^3,6t^2u^2)$. So here $\ker F(\phi)=R(-7)\oplus R(-7)$, i.e. $\varphi^*(\mathcal I/\mathcal I^2)=\OO_{\PP^1}(-7)\oplus\OO_{\PP^1}(-7)$. If $\operatorname{char}(k)=2,3$, $F(\phi)$ is given by $(t^3,u^3,0)$. So $\ker F(\phi)=R(-8)\oplus R(-6)$." That is a published argument for every characteristic other than $2$ and $3$, and it agrees with Eisenbud and Van de Ven, Proposition 6, which at $n=4$ gives $N\cong\OO(7)\oplus\OO(7)$, that is $l=m=-7$, in characteristic $0$. Its characteristic $3$ is wrong, the book printing the split case at $\operatorname{char}k=2$ alone; and its characteristic $2$ cannot be trusted either, since the presentation it uses is not the conormal's there: for the twisted cubic its matrix $(t^2,u^2,2tu)$ becomes $(t^2,u^2,0)$ in characteristic $2$, whose kernel is $R(-6)\oplus R(-4)$ and not $\OO(-5)^{\oplus2}$, so the method demonstrably fails at the answer the book prints for part (a). In neither characteristic does a published argument decide part (b); the class of step [](#s3){.pf-ref}, $2\eta$, does, and it vanishes exactly when $2=0$.
 
 So part (b) is published in characteristic $0$ and in every characteristic other than $2$ and $3$; characteristics $2$ and $3$, and with them the printed answer's "$\operatorname{char}k\ne2$", rest on this card's step [](#s3){.pf-ref}, which is its own.
 
@@ -752,10 +880,10 @@ Step [](#s5){.pf-ref} proves part (a), and step [](#s6){.pf-ref} proves part (b)
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.17, PDF p. 273: the starred exercise is entered and the entry reads only "starred", so there is no argument to check. Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.17, printed pp. 106--107, computes the conormal sheaf as the kernel of the map of graded modules given by the Jacobian of the parametrization: for the twisted cubic he writes the presentation $R(-4)^{\oplus3}\to R(-2)^{\oplus4}$ and takes its kernel $R(-5)^{\oplus2}$; for the quartic the kernel is $R(-7)^{\oplus2}$ when $6\ne0$, and it writes "if $\operatorname{char}(k)=2,3$, $F(\varphi)$ is given by $(t^3,u^3,0)$, so $\ker F(\varphi)=R(-8)\oplus R(-6)$". That is a sound argument for part (b) in every characteristic other than $2$ and $3$. The extra characteristic is wrong: in step [](#s3){.pf-ref} the extension class is $(n-1)\eta=2\eta$ for $n=3$, which vanishes exactly when $2=0$, and the printed answer for part (b) accordingly says $\operatorname{char}k=2$ and not $2$ or $3$; in characteristic $3$ the binomial coefficient $3$ vanishes in $(a^3+h)^3$, but the class $2\eta$ does not, so the splitting type is $\OO(-7)^{\oplus2}$ there as well. Nor does his characteristic-$2$ line stand: his presentation is not the conormal's in characteristic $2$, where his matrix for the twisted cubic becomes $(t^2,u^2,0)$ with kernel $R(-6)\oplus R(-4)$ instead of the printed $\OO(-5)^{\oplus2}$, so the method fails at a case whose answer is known.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.17: the starred exercise is entered and the entry reads only "starred", so there is no argument to check. Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.17, computes the conormal sheaf as the kernel of the map of graded modules given by the Jacobian of the parametrization: for the twisted cubic he writes the Jacobian matrix as $F(\kappa)\colon R(-4)^{\oplus3}\to R(-3)^{\oplus4}$ and the map $F(\varphi)\colon R(-4)^{\oplus3}\to R(-2)$ given by $(t^2,u^2,2tu)$, and takes $\ker F(\varphi)=R(-5)^{\oplus2}$; for the quartic the kernel is $R(-7)^{\oplus2}$ when $6\ne0$, and it writes "if $\operatorname{char}(k)=2,3$, $F(\varphi)$ is given by $(t^3,u^3,0)$, so $\ker F(\varphi)=R(-8)\oplus R(-6)$". That is a sound argument for part (b) in every characteristic other than $2$ and $3$. The extra characteristic is wrong: in step [](#s3){.pf-ref} the extension class is $(n-1)\eta=2\eta$ for $n=3$, which vanishes exactly when $2=0$, and the printed answer for part (b) accordingly says $\operatorname{char}k=2$ and not $2$ or $3$; in characteristic $3$ the binomial coefficient $3$ vanishes in $(a^3+h)^3$, but the class $2\eta$ does not, so the splitting type is $\OO(-7)^{\oplus2}$ there as well. Nor does his characteristic-$2$ line stand: his presentation is not the conormal's in characteristic $2$, where his matrix for the twisted cubic becomes $(t^2,u^2,0)$ with kernel $R(-6)\oplus R(-4)$ instead of the printed $\OO(-5)^{\oplus2}$, so the method fails at a case whose answer is known.
 
 The card's computation is checked against the book's own bracket: $E_n=\varphi_n^*(\mathcal I/\mathcal I^2)$ sits in $0\to\OO(-2n-2)\to E_n\to\OO(-2n)\to0$ with class $(n-1)\eta$, which is nonzero for $n=2$ and gives $l=m=-5$ for the twisted cubic, and for $n=3$ gives $l=m=-7$ when $\operatorname{char}k\ne2$ and $\OO(-6)\oplus\OO(-8)$ when $\operatorname{char}k=2$, exactly the answer printed for part (b).
 
-Math StackExchange answer 1583486 by Ted Shifrin, to question 1583326 ("Normal bundle of twisted cubic"), gives an argument for part (a) by another route, in a form whose constants need $3$ invertible: from the conormal sequence $0\to N^\vee_{C/\PP^3}\to\Omega_{\PP^3}\restrictionof_C\to\Omega_C\to0$ it writes the two frames of $N^\vee_{C/\PP^3}$ on the overlap of the charts $[1,x,y,z]$ and $[X,Y,Z,1]$ and reads the splitting off the transition matrix, ending at the diagonal $(-3t^{-5},-\frac13t^{-5})$. Step [](#s5){.pf-ref} carries his frames, the change of coordinates $X=1/z$, $Y=x/z$, $Z=y/z$ and the transition matrix, and adds one row operation over $k[t]$ and one column operation over $k[t^{-1}]$ that reduce it to exactly $t^{-5}$ times the identity, an identity over $\ZZ[t,t^{-1}]$ and so one that holds over every field. Georges Elencwajg's answer 569653 to question 569237 records the equivalent statement for the normal bundle, $N=\OO(5)\oplus\OO(5)$, as Proposition 6 of Eisenbud and Van de Ven, *On the normal bundles of smooth rational space curves*. Neither covers part (b).
+Math StackExchange answer 1583486 by Ted Shifrin, to question 1583326 ("Normal bundle of twisted cubic"), gives an argument for part (a) by another route, in a form whose constants need $3$ invertible: from the conormal sequence $0\to N^\vee_{C/\PP^3}\to\restrictionof{\Omega_{\PP^3}}{C}\to\Omega_C\to0$ it writes the two frames of $N^\vee_{C/\PP^3}$ on the overlap of the charts $[1,x,y,z]$ and $[X,Y,Z,1]$ and reads the splitting off the transition matrix, ending at the diagonal $(-3t^{-5},-\frac13t^{-5})$. Step [](#s5){.pf-ref} carries his frames, the change of coordinates $X=1/z$, $Y=x/z$, $Z=y/z$ and the transition matrix, and adds one row operation over $k[t]$ and one column operation over $k[t^{-1}]$ that reduce it to exactly $t^{-5}$ times the identity, an identity over $\ZZ[t,t^{-1}]$ and so one that holds over every field. Georges Elencwajg's answer 569653 to question 569237 records the equivalent statement for the normal bundle, $N=\OO(5)\oplus\OO(5)$, as Proposition 6 of Eisenbud and Van de Ven, *On the normal bundles of smooth rational space curves*. Neither covers part (b).
 
 :::

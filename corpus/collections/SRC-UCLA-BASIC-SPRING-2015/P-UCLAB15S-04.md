@@ -6,7 +6,9 @@ title: Intermediate value property plus closed fibers implies continuity
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Intermediate Value Theorem
+  - Continuity
 relations: []
 review: draft
 audit:

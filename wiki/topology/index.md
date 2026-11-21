@@ -14,7 +14,6 @@ order: 40
 | What is this space, and what are its invariants | [[topology/the-standard-spaces\|The standard spaces]] |
 | Is this true for all spaces | [[topology/counterexamples\|Counterexamples]] |
 
-The standard-spaces table lists $\pi_1$ and $H_*$ of the spaces from which wedges, products, and punctured surfaces are built.
 
 ## Chapters
 
@@ -34,7 +33,7 @@ The standard-spaces table lists $\pi_1$ and $H_*$ of the spaces from which wedge
 
 Pages collecting material from several chapters:
 
-- [[topology/review|Review sheet]] -- the statements of the chapters' theorems, on one page.
+- [[topology/review|Theorems of the topology chapters]] -- the statements of the chapters' theorems, on one page.
 
 - [[topology/the-standard-spaces|The standard spaces]] -- the table, with $\pi_1$ and $H_*$.
 
@@ -76,11 +75,11 @@ The University of Georgia [study guide for the topology exam](https://math.uga.e
 
 - Simplicial, singular, cellular; computations and applications [@Hat02, chap. 2]; [@Mun84, chap. 4]
 
-- Degree of a map $S^n\to S^n$ [@Hat02, p. 134]; [@Mun84, sec. 21]
+- Degree of a map $S^n\to S^n$ [@Hat02, §2.2]; [@Mun84, sec. 21]
 
-- Euler characteristic [@Hat02, p. 146]
+- Euler characteristic [@Hat02, §2.2, Theorem 2.44]
 
-- Lefschetz fixed point theorem [@Hat02, p. 179]; [@Mun84, sec. 22]
+- Lefschetz fixed point theorem [@Hat02, Theorem 2C.3]; [@Mun84, sec. 22]
 
 ### References
 

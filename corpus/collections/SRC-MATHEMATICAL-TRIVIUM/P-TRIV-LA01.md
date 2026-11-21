@@ -15,6 +15,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Linear Algebra, Problem 1, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Big_List_of_Math_Problems.pdf`: the statement is Problem 1 of the Linear Algebra chapter, and
+    its printed words are the card's. The chapter, the problem number and the file are now named in
+    the solution's opening sentence. Not checked in this pass: the argument, which the edit does not
+    touch.
 ---
 
 ::: {.problem}
@@ -22,6 +30,7 @@ Describe the figures that can be obtained as intersection of the cone $z^2 = x^2
 :::
 
 ::: {.solution}
+This is Problem 1 of the Linear Algebra chapter of *Mathematical Trivium*, retained in this repository as `assets/attachments/Big_List_of_Math_Problems.pdf`; the statement below is its wording.
 
 ::: pf
 

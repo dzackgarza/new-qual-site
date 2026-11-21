@@ -11,6 +11,15 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 1B, printed p. 4 of the packet. The paragraph at the head of the solution now says what is
+    the packet's and what is the card's, and the packet was read in its text layer at the page named.
+    Checked: the card's steps compared with the packet's sentences, `qualc.authoring check`, and
+    `tmp/lam.sh` for the numbering and the QED. Not checked: no other card of the collection in this
+    pass.
+- event: source-checked
   by: chatgpt
   date: 2026-09-12
   note: Checked against Problem 1B of the retained Berkeley Fall 2010 preliminary-exam solution packet f10solutions.pdf.
@@ -31,6 +40,8 @@ Show that $f$ achieves either a minimum value or a maximum value.
 :::
 
 ::: {.solution}
+
+The argument is Problem 1B of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, transcribed: some $f^{-1}([-n,n])$ is nonempty and compact, hence lies in a closed ball $D_R$; $\RR^2\setminus D_R$ is connected and maps into $\RR\setminus[-n,n]$, so it maps into $(-\infty,-n)$ or into $(n,\infty)$; and then the supremum or the infimum of $f$ is attained on the compact $D_R$. What the card adds is the step structure and the Heine--Borel verification that $K$ is compact, not the argument.
 
 ::: pf
 

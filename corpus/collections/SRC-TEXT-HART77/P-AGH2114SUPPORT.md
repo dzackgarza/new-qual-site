@@ -43,6 +43,11 @@ U\setminus\supp s
 =\{P\in U \st s_P=0\}.
 $$
 
+Hence
+$$
+\boxed{\supp s\text{ is closed in }U.}
+$$
+
 ::: pf-proof
 
 Let $P\in U$ satisfy
@@ -66,21 +71,6 @@ $$
 V\subseteq U\setminus\supp s.
 $$
 Every point of the complement has an open neighborhood contained in the complement, so the complement is open.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Hence
-$$
-\boxed{\supp s\text{ is closed in }U.}
-$$
-
-::: pf-proof
-
-This is exactly the conclusion of step [](#s1){.pf-ref}.
 
 :::
 
@@ -155,7 +145,7 @@ $$
 
 ::: pf-proof
 
-The first assertion is step [](#s2){.pf-ref} and the second is the example in step [](#s3){.pf-ref}.
+The first assertion is step [](#s1){.pf-ref} and the second is the example in step [](#s3){.pf-ref}.
 
 :::
 
@@ -172,7 +162,9 @@ Step [](#s4){.pf-ref} is exactly the pair of assertions requested.
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.14, PDF p. 6, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: a vanishing germ vanishes on a neighbourhood, so the complement of the support of a section is open; for the second assertion he takes a direct sum of skyscraper sheaves over a set of points which is not closed.
+The exercise is II.1.14 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is its text, the definitions of $\operatorname{Supp}s$ and $\operatorname{Supp}\mcf$ included.
+
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.14, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: a vanishing germ vanishes on a neighbourhood, so the complement of the support of a section is open; for the second assertion he takes a direct sum of skyscraper sheaves over a set of points which is not closed.
 The proof above is the same, with the example written out on $\AA^1_\CC$ over the closed points $n\ge1$ and the reason its support fails to be closed made explicit.
 Agree.
 :::

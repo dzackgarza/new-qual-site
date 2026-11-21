@@ -6,7 +6,9 @@ title: A periodic entire function with exponential radial bound is constant
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - 'Liouville''s Theorem'
+  - Entire Functions
 relations: []
 review: draft
 audit:

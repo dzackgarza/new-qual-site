@@ -26,6 +26,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.4.9, printed p. 92,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.4.9, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed that a finite subgroup of order $m$ is contained in $X[m]$ hence that the finite subgroups form a countable union, and that the kernel of a finite morphism is finite because it lies in the fibre over the image of the origin.
+    Not checked: Yang's Solutions outside printed p. 92; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's
+    Solution 4.4.9 at printed p. 92; it had none before. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -219,4 +239,8 @@ isomorphism classes of elliptic curves.
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.9, does (a) in three lines --- reflexivity and transitivity are immediate for finite morphisms, and symmetry is the dual isogeny, since a finite $f:X\to X'$ has a finite dual $\hat f:X'\to X$ --- and (b) by the hint's count: $\ker f$ is a finite subgroup of $X$, and if $g:X\to X''$ has the same kernel $G$ then $K(X')=K(X)^G=K(X'')$, so $X'\cong X''$ because both are smooth. The isogeny class therefore sits inside the set of finite subgroups of $X$. Two things the entry leaves implicit are worth naming. In (a), $\hat f$ is a morphism of elliptic curves only after choosing it to fix the origin, which the entry does not say; and in (b) the countability of the set of finite subgroups is what finishes the argument, and it holds because a finite subgroup of order $m$ lies in the finite group $X[m]$, so the set is the union of the finite $X[n]$. With those two said, the argument is the exercise's. No mathematical defect.
 :::

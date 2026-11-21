@@ -176,6 +176,8 @@ The zero cocycle glues the split extension by identity maps and therefore corres
 :::
 
 ::: {.remark title="Forgetting the kernel identification changes the classification"}
+The exercise is Hartshorne, Exercise III.4.10, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is that exercise's text, with the one sentence added after it saying what an infinitesimal extension carries, namely its identification of the quotient with $X$; the printed hint to (II, Ex. 8.6) and (4.5) is the route the proof takes.
+
 For an automorphism $v$ of $\mcf$, the map $(a,m)\mapsto(a,v(m))$ conjugates $u_D$ to $u_{v\circ D}$.
 Thus forgetting the identification of the kernel with $\mcf$, while fixing $X$, identifies classes under the induced action of $\Aut_{\OO_X}(\mcf)$.
 For example, on $X=\PP_k^1$ with $\mcf=\OO(-4)$, one has $\mathcal T\cong\OO(2)$ and $H^1(X,\mcf\otimes\mathcal T)\cong H^1(\PP_k^1,\OO(-2))\cong k$ [@Har77, Example II.8.20.1 and Theorem III.5.1].

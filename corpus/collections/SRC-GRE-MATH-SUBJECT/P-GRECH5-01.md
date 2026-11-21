@@ -15,6 +15,14 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Re-transcribed from Chapter 5 review Question 1 in assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md (Mistral OCR) and checked against the source scans in assets/attachments/gre-math-ch5-review/, replacing the earlier chapter-5.pdf transcription.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`: the statement is question 1 of the Chapter 5
+    Review Questions, printed on PDF p. 224, and its printed words are the card's. The chapter,
+    the question number and the page are now named in the solution's opening sentence. Not checked
+    in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -28,6 +36,7 @@ Two distinct solutions, $\mathbf{x}_1$ and $\mathbf{x}_2$, can be found to the l
 :::
 
 ::: {.solution}
+This is question 1 of the Chapter 5 Review Questions of *Cracking the GRE Mathematics Subject Test*, retained in this repository as `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`, on PDF p. 224; the statement below is its wording.
 
 ::: pf
 

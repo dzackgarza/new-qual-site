@@ -281,14 +281,14 @@ $$
 
 Therefore
 $$
+\boxed{
 \lim_{x\to0}
 \frac1x
 \int_0^x
 (1+\sin(2t))^{1/t}\,dt
 =
-e^2.
+e^2}.
 $$
-
 
 ::: pf-proof
 
@@ -305,31 +305,9 @@ $$
 
 :::
 
-::: {.pf-step #s1-13}
-
-Hence
-$$
-\boxed{
-\lim_{x\to0}
-\frac1x
-\int_0^x
-(1+\sin(2t))^{1/t}\,dt
-=
-e^2}.
-$$
-
-
-::: pf-proof
-
-This is step [](#s1-12){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-13){.pf-ref} is the requested limit.
+Step [](#s1-12){.pf-ref} is the requested limit.
 
 :::
 

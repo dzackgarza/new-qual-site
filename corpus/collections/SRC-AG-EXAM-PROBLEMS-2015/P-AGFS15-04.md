@@ -5,7 +5,10 @@ kind: problem
 title: Laurent-polynomial maps on the punctured affine line
 classification:
   areas: [algebraic-geometry]
-  topics: []
+  topics:
+  - Projective Line
+  - Differentials
+  - Morphisms of Varieties
 relations: []
 review: draft
 audit:

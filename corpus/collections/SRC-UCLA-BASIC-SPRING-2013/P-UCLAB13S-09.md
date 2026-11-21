@@ -5,7 +5,9 @@ kind: problem
 title: Canonical real form of an orthogonal matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Orthogonal Matrices
+  - Jordan Canonical Form
 relations: []
 review: draft
 audit:

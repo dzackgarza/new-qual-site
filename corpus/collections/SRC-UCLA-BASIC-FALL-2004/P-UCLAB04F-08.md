@@ -5,7 +5,9 @@ kind: problem
 title: A symmetric quadratic form and its minimum eigenvalue
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Quadratic Forms
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

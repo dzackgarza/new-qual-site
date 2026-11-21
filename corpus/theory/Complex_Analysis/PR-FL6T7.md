@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-FL6T7
 kind: proposition
-title: Cayley transform $\frac{i-z}{i+z}$ from the upper half-plane to the disc
+title: Möbius map $\frac{i-z}{i+z}$ from the upper half-plane onto the disc
 slogan: 'The Möbius map $(i-z)/(i+z)$ sends the upper half-plane biholomorphically onto the unit disc.'
 classification:
   areas:
@@ -23,6 +23,8 @@ z &\mapsto {i-z \over i+z}
 \end{aligned}
 $$
 is a [[D-TM4TE|biholomorphism]] with inverse $w\mapsto i \qty{1-w \over 1+w}$.
+
+This is [@SS03, ch. 8, Theorem 1.2], which states that $F(z)=(i-z)/(i+z)$ maps $\HH$ conformally onto $\DD$ with inverse $G(w)=i(1-w)/(1+w)$.
 :::
 
 ::: {.remark}

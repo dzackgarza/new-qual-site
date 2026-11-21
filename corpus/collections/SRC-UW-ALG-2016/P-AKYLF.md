@@ -14,6 +14,20 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 3 of the Algebra Preliminary Examination, Autumn 2016
+    (University of Washington), printed p. 1 of the two-page paper retained at
+    assets/attachments/UW-Algebra-Qual-2016.pdf, is the statement the card answers, and the
+    paragraph at the head of the solution records that the paper prints no solutions, so the
+    argument is the card's own. Checked: the statement against the paper's text layer at the page
+    named; the solution read for its use of Zariski's lemma and its exclusion of characteristic 0
+    through the integral elements and the prime p not dividing D; `qualc.authoring check` on the
+    card, and `tmp/lam.sh` for the numbering and the QED. Not checked: no retained solution set
+    exists for this paper to compare the argument with, and no other card of the collection in this
+    pass.
+- event: source-checked
+  by: claude
   date: 2026-11-01
   note: >-
     Statement read from the card in `corpus/collections/SRC-UW-ALG-2016`; it is the standard statement
@@ -35,6 +49,8 @@ Show that $\ZZ[x_1,\ldots,x_n]/\mathfrak m$ is a finite field.
 :::
 
 ::: {.solution}
+
+The problem is Problem 3 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is Zariski's lemma applied to $F=\ZZ[a_1,\dots,a_n]$ together with the exclusion of characteristic $0$, where a finite extension of $\QQ$ whose generators become integral after clearing one denominator $D$ cannot contain $1/p$ for a prime $p\nmid D$.
 
 Let $R=\ZZ[x_1,\dots,x_n]$, let $\mathfrak m$ be a maximal ideal, and put $F=R/\mathfrak m$, a field. Write $a_i$ for the image of $x_i$ in $F$, so that $F=\ZZ[a_1,\dots,a_n]$.
 

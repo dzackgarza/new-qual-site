@@ -27,6 +27,29 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Lamport structure for the classification, which is what Queue D asks for on this card. The fibers, the shape of a subspace of R homeomorphic to R, the family h_t and the local trivialization are separate steps; the necessity is argued from the connectedness of the base rather than asserted, and the sufficiency now produces one family of homeomorphisms covering all four admissible shapes instead of the two representative cases the published solution works out. The exercise is covered by Proudfoot's Homework #7, §4.2 Exercise 30, printed p. 1, which lists the same four shapes; the uniform construction is the card's own and the card says so. Locators checked against the book: the exercise on printed p. 392. No statement repair.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.2 Exercise 30, and against the
+    published solution, Proudfoot, Solutions to Homework #7, §4.2 Exercise 30, transcribed in the step
+    `proudfoot`. The card's own argument is correct: the fiber over a nonzero x is R and the fiber over
+    0 is R - A, so a fiber bundle forces R - A to be homeomorphic to R, hence an open interval with
+    possibly infinite endpoints; conversely for R - A = I the map H(x,y) = (x, h_{|x|}(y)) with the
+    family h_t compressing the ends of R onto I is a fiber-preserving bijection, continuous at the
+    central fiber because h_t(y) -> y as t -> 0. That gives exactly the four shapes of A: empty, a
+    closed half-line, or the union of two closed half-lines. The published solution lists the same four
+    and handles two of them. Its first computation is defective as printed: with
+    phi(x,y) = (x, y^2 - (x/2y)^2) and psi(x,z) = (x, (z + sqrt(x^2+z^2))/2) one gets
+    psi(phi(x,y)) = (x, y^2), not (x, y), because sqrt(x^2+z^2) = y^2 + (x/2y)^2 for that z; the
+    inverse needs one more radical, psi_corr(x,z) = (x, sqrt((z + sqrt(x^2+z^2))/2)), which is stated
+    and checked on the card. That defect is in the retained set, not in the card, and no step of the
+    card's proof changed for it; the transcription step and its correction are new.
 ---
 
 ::: {.problem}
@@ -35,68 +58,67 @@ For which such spaces $E$ is the projection $E \to \RR$, $(x, y) \mapsto x$, a f
 :::
 
 ::: {.solution}
-Write
+The published solution covering this exercise is **Nicholas Proudfoot, *Math 634: Algebraic Topology I* (University of Oregon, Fall 2015), Solutions to Homework #7, §4.2 Exercise 30** (`tmp/sources/uoregon-proudfoot-634-hw7.pdf`, text version `tmp/sources/uoregon-proudfoot-634-hw7.md`); its coverage line reads "Exercises from Hatcher: Chapter 4.2, Problems 1, 2, 30, 31, 32, 39". It lists the four admissible shapes of the deleted set and exhibits explicit fiber-preserving homeomorphisms for two representative cases, with the rest "easily derived"; the first of the two is misprinted by one radical and is corrected in step [](#proudfoot){.pf-ref} below. The uniform construction below — one family $h_t$ of homeomorphisms of the interval covering all four shapes at once — is the card's own. The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 30.
+
+Write $E=\RR^2-\bigl(\{0\}\times A\bigr)$ and $p(x,y)=x$.
+
+::: pf
+
+::: {.pf-step #fibers}
+For $x\ne0$ the fiber of $p$ is $\RR$, and $p^{-1}(0)=\RR-A$; hence a necessary condition for $p$ to be a fiber bundle is $\RR-A\cong\RR$.
+
+::: pf-proof
+Over $x\ne0$ no point of $\{0\}\times A$ lies in the fiber, so $p^{-1}(x)=\{x\}\times\RR\cong\RR$. Over $0$ the fiber is $\{(0,y):y\notin A\}=\{0\}\times(\RR-A)$. A fiber bundle over a connected base has fibers homeomorphic to one another — over a trivializing neighbourhood each fiber is carried homeomorphically to the model fiber — and $\RR$ is connected, so $\RR-A\cong\RR$ is necessary.
+:::
+
+:::
+
+::: {.pf-step #interval}
+A subspace of $\RR$ homeomorphic to $\RR$ is an open interval $(a,b)$ with $-\infty\le a<b\le\infty$.
+
+::: pf-proof
+A subspace of $\RR$ homeomorphic to $\RR$ is connected, hence an interval; it is a one-manifold without boundary, so no point of it is an endpoint of the interval in the relative topology, and an interval with no endpoint in the space is of the form $(a,b)$ or all of $\RR$, with possibly infinite endpoints. Conversely every such interval is homeomorphic to $\RR$.
+:::
+
+:::
+
+::: {.pf-step #transition}
+For $I=(a,b)$ and small $t>0$ there is an increasing homeomorphism $h_t:\RR\to I$ equal to the identity off the $t$-neighbourhoods of the finite ends of $I$, continuous jointly in $(t,y)$, with $h_t(y)\to y$ as $t\to0$ for each $y\in I$.
+
+::: pf-proof
+At a finite left endpoint $a$ put $h_t(y)=a+t\exp\bigl((y-a-t)/t\bigr)$ for $y\le a+t$ and $h_t(y)=y$ for $y\ge a+t$: the two formulas agree at $y=a+t$, the first is strictly increasing with image $(a,a+t]$, and it sends the left tail onto the tail of $I$. At a finite right endpoint $b$ put $h_t(y)=b-t\exp\bigl(-(y-b+t)/t\bigr)$ for $y\ge b-t$ and $h_t(y)=y$ for $y\le b-t$, symmetrically. For $t$ so small that $a+t<b-t$ the two regions are disjoint and the identity holds in between; if an endpoint is infinite no compression is needed there. The result is a strictly increasing surjection $\RR\to I$, hence a homeomorphism, and the formulas are jointly continuous in $(t,y)$ with the stated limit.
+:::
+
+:::
+
+::: {.pf-step #proudfoot}
+For $A=(-\infty,0]$, so that $I=(0,\infty)$, the published solution writes the trivialization out explicitly; transcribed here with the defect it carries.
+
+::: pf-proof
+**Nicholas Proudfoot, *Math 634: Algebraic Topology I* (University of Oregon, Fall 2015), Solutions to Homework #7, §4.2 Exercise 30**, whose coverage line reads "Exercises from Hatcher: Chapter 4.2, Problems 1, 2, 30, 31, 32, 39", takes $A=(-\infty,0]$ and exhibits
+$$\varphi:\RR\times\RR_{>0}\to\RR^2-\bigl(\{0\}\times(-\infty,0]\bigr),\qquad \varphi(x,y)=\Bigl(x,\ y^{2}-\Bigl(\tfrac{x}{2y}\Bigr)^{2}\Bigr),$$
+$$\psi:\RR^2-\bigl(\{0\}\times(-\infty,0]\bigr)\to\RR\times\RR_{>0},\qquad \psi(x,z)=\Bigl(x,\ \tfrac{z+\sqrt{x^{2}+z^{2}}}{2}\Bigr),$$
+with the sentence that they are inverse to each other. They are not, as printed: substituting $z=y^{2}-(x/2y)^{2}$ into $\psi$ gives $\sqrt{x^{2}+z^{2}}=y^{2}+(x/2y)^{2}$, since the difference of the squares of those two quantities is $4y^{2}(x/2y)^{2}=x^{2}$, so $\psi(\varphi(x,y))=(x,y^{2})$. The omission is one radical: writing $w=(z+\sqrt{x^{2}+z^{2}})/2$ one has $4w^{2}-4zw-x^{2}=0$, so $w=y^{2}$ exactly when $z=y^{2}-(x/2y)^{2}$, and the inverse of $\varphi$ is
+$$\psi_{\mathrm{corr}}(x,z)=\Bigl(x,\ \sqrt{\tfrac{z+\sqrt{x^{2}+z^{2}}}{2}}\Bigr),$$
+which is continuous, fiber preserving, and inverse to $\varphi$ on both sides, the outer root being legitimate because $z+\sqrt{x^{2}+z^{2}}>0$ for every $(x,z)$. With that correction the published computation is a fiber-preserving homeomorphism $\RR\times\RR_{>0}\to\RR^{2}-(\{0\}\times(-\infty,0])$, which is what the case $A=(-\infty,0]$ needs. The solution proves the two-sided case $A=(-\infty,-\pi/2]\cup[\pi/2,\infty)$ by a second explicit formula and leaves the remaining shapes to be derived from these two. The uniform family $h_{t}$ of step [](#transition){.pf-ref} covers all four shapes at once and is the card's own.
+:::
+
+:::
+
+::: {.pf-step #trivialization}
+If $\RR-A=I$ is an open interval then $p$ is a fiber bundle.
+
+::: pf-proof
+Away from $x=0$ the projection is already a product: $p^{-1}\bigl((0,\infty)\bigr)=(0,\infty)\times\RR$ and $p^{-1}\bigl((-\infty,0)\bigr)=(-\infty,0)\times\RR$. It remains to trivialize over $(-\varepsilon,\varepsilon)$. Define
 $$
-E=\RR^2-\bigl(\{0\}\times A\bigr),
+H:p^{-1}\bigl((-\varepsilon,\varepsilon)\bigr)\longrightarrow(-\varepsilon,\varepsilon)\times I,
 \qquad
-p(x,y)=x.
+H(x,y)=\begin{cases}(x,h_{\abs{x}}(y)),&x\ne0,\\ (0,y),&x=0,\end{cases}
 $$
-For $x\ne0$, the fiber is $\RR$, while
-$$
-p^{-1}(0)=\RR-A.
-$$
-If $p$ is a fiber bundle over the connected base $\RR$, all fibers are homeomorphic. Hence a necessary condition is
-$$
-\RR-A\cong\RR.
-$$
-As a subspace of $\RR$, a space homeomorphic to $\RR$ is a connected one-manifold without boundary, hence is an open interval, allowing infinite endpoints. Thus necessarily
-$$
-\RR-A=(a,b)
-$$
-for some
-$$
--\infty\le a<b\le\infty.
-$$
+with $h_t$ from step [](#transition){.pf-ref}. It is fiber preserving, and it is a bijection because each $h_t$ is one. Continuity at the central fiber follows from $h_t(y)\to y$ as $t\to0$, uniformly on compact subsets of $I$ by the explicit formulas; the inverse is given by $h_t^{-1}$ in the first factor, and the same limiting behaviour of $h_t^{-1}$ gives its continuity. So $H$ is a fiber-preserving homeomorphism, and with the two product regions this trivializes $p$ over all of $\RR$. Together with steps [](#fibers){.pf-ref} and [](#interval){.pf-ref} this gives: $p$ is a fiber bundle exactly when $\RR-A$ is an open interval, possibly unbounded — that is, exactly when $A$ is $\varnothing$, a closed half-line, or the union of two closed half-lines, which are the four shapes the published solution lists.
+:::
 
-This condition is also sufficient. Put $I=(a,b)$. Away from $0$ the projection is already the trivial product. It remains to trivialize over a small interval $(-\varepsilon,\varepsilon)$.
+:::
 
-For $t>0$, choose an increasing homeomorphism
-$$
-h_t:\RR\to I
-$$
-which equals the identity on the portion of $I$ at distance at least $t$ from each finite endpoint, compresses the left tail into $(a,a+t]$ when $a$ is finite, and compresses the right tail into $[b-t,b)$ when $b$ is finite. For example, at a finite left endpoint use
-$$
-h_t(y)=a+t\exp\!\left(\frac{y-a-t}{t}\right)
-\qquad(y\le a+t),
-$$
-and use the identity for $y\ge a+t$ until the analogous right-end interpolation begins; at a finite right endpoint use
-$$
-h_t(y)=b-t\exp\!\left(-\frac{y-b+t}{t}\right)
-\qquad(y\ge b-t).
-$$
-For sufficiently small $t$ the two transition regions are disjoint. If an endpoint is infinite no compression is needed there. These formulas give a jointly continuous family in $(t,y)$, with
-$$
-h_t(y)\longrightarrow y
-$$
-for every $y\in I$ as $t\to0$, and points outside $I$ are sent toward the corresponding missing endpoint.
-
-Define
-$$
-H:p^{-1}(({-}\varepsilon,\varepsilon))\longrightarrow
-(-\varepsilon,\varepsilon)\times I
-$$
-by
-$$
-H(x,y)=
-\begin{cases}
-(x,h_{\abs{x}}(y)),&x\ne0,\\
-(0,y),&x=0.
-\end{cases}
-$$
-The displayed limiting behavior gives continuity at the central fiber; the same argument for $h_t^{-1}$ gives continuity of the inverse. Thus $H$ is a fiber-preserving homeomorphism.
-
-Therefore
-$$
-\boxed{p:E\to\RR\text{ is a fiber bundle exactly when }\RR-A\text{ is an open interval (possibly unbounded).}}
-$$
+:::
 :::

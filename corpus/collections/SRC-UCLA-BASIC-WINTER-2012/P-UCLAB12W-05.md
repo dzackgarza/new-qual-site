@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB12W-05
 kind: problem
 title: Unique continuous solution of $y(x)=e^x+y(x^2)/2$ on $[0,1]$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Banach Fixed Point Theorem, Continuous Functions]}
 relations: []
 review: draft
 audit:

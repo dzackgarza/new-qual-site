@@ -5,7 +5,9 @@ kind: problem
 title: Factorization of a positive semidefinite Hermitian matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Positive Definite Matrices
+  - Hermitian Matrices
 relations: []
 review: draft
 audit:

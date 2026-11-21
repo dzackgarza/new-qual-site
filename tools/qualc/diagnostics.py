@@ -34,6 +34,11 @@ class DiagnosticCode(Enum):
     CERTIFICATE_CARD_UNKNOWN = "certificate-card-unknown"
     CERTIFICATE_FILE_MISSING = "certificate-file-missing"
     CERTIFICATE_COVERAGE_MISSING = "certificate-coverage-missing"
+    CERTIFICATE_SECTION_UNREAD = "certificate-section-unread"
+    # the proof-artifact entry point, checked against the tree it names
+    PROOF_RECIPE_TARGET_MISSING = "proof-recipe-target-missing"
+    PROOF_RECIPE_LEAN_TARGET = "proof-recipe-lean-target"
+    PROOF_RECIPE_ARTIFACT_UNCHECKED = "proof-recipe-artifact-unchecked"
     PAGE_REFERENCE_AMBIGUOUS = "page-reference-ambiguous"
     PAGE_MISSING_ORDER = "page-missing-order"
     PAGE_TOPICS_INVALID = "page-topics-invalid"

@@ -34,6 +34,8 @@ Find a conformal map from $D\coloneqq\{z\in\CC:\abs{z-i}>1,\ \Re(z)>0\}$ onto th
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the problem compilation alone, so the argument is the card's own.
 Let
 $$
 D=\{z\in\CC:\abs{z-i}>1,\ \operatorname{Re}z>0\}

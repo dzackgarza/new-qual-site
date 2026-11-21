@@ -1,4 +1,5 @@
 ---
+title: Point-set examples
 order: 1
 topics:
 - Metric Spaces
@@ -11,7 +12,7 @@ topics:
 - Topological Groups
 ---
 
-# Examples
+# Point-set examples
 
 ## Point-set
 
@@ -76,17 +77,17 @@ where $\mobiusband$ is the Möbius band, $\KK$ the Klein bottle, and $\Sigma_g$ 
 ::: {.example title="Constructions of spaces"}
 \envlist
 
-- Knot complements in $S^3$
-- Covering spaces
-- Lens spaces
-- Matrix groups
-- Prism manifolds
-- The pair of pants
-- Seifert surfaces
-- Surgery on manifolds
-- Simplicial complexes, such as the following:
+- Knot complements $S^3\sm K$ of a knot $K\subseteq S^3$, whose homotopy type is [[PR-6HORN|computed here]]
+- [[D-ANO2D|Covering spaces]]
+- [[D-UI3FE|Lens spaces]]
+- Matrix groups, the subgroups of [[D-J5AAX|$\GL_n(\RR)$]]
+- Prism manifolds, a family of spherical 3-manifolds $S^3/G$ with $G$ finite and acting [[D-2PNEG|freely]]
+- The pair of pants, the sphere [[D-SPHER|$S^2$]] with three open discs removed
+- Seifert surfaces, the compact orientable surfaces in $S^3$ whose boundary is a knot [[PR-6HORN|knot complements]]
+- Surgery on manifolds, removing $S^k\cross D^{n-k}$ and gluing in $D^{k+1}\cross S^{n-k-1}$ along the boundary [[D-JKH35|products]]
+- [[D-NJ2Y6|Simplicial complexes]], such as the following:
 
-  ![A simplicial complex X on vertices 1, 2, 3, 4: the shaded triangle 234 and the edges 12 and 13](../../../../assets/assets/figures/image_2020-05-22-18-58-03.png)
+  ![A simplicial complex X on vertices 1, 2, 3, 4: the shaded triangle 234 and the edges 12 and 13](/assets/figures/image_2020-05-22-18-58-03.png)
 
   As a list of simplices,
   $$
@@ -98,17 +99,17 @@ where $\mobiusband$ is the Möbius band, $\KK$ the Klein bottle, and $\Sigma_g$ 
 ::: {.example title="Operations on spaces"}
 \envlist
 
-- Cartesian product $A\cross B$
-- Wedge sum $A \vee B$
-- Connected sum $A \# B$
-- Quotient $A/B$ by a subspace
-- Puncturing, $A\sm \theset{a_{1},\ldots,a_k}$
-- Smash product $A\wedge B$
-- Join $A\ast B$
-- Cone $CA$
-- Suspension $\Sigma A$
-- Loop space $\Omega A$
-- Identifying finitely many points
+- [[D-JKH35|Cartesian product]] $A\cross B$
+- [[D-IGUUS|Wedge sum]] $A \vee B$
+- [[D-CSUMM|Connected sum]] $A\# B$
+- [[D-ITBUT|Quotient]] $A/B$ by a subspace
+- Puncturing, the [[D-LB2LS|subspace]] $A\sm \theset{a_{1},\ldots,a_k}$
+- [[D-R4ZCL|Smash product]] $A\wedge B$
+- [[D-JOINX|Join]] $A\ast B$
+- [[D-II4M4|Cone]] $CA$
+- [[D-RZKQD|Suspension]] $\Sigma A$
+- [[D-T5Q3V|Loop space]] $\Omega A$
+- Identifying finitely many points, the [[D-ITBUT|quotient]] by an equivalence relation with finite classes
 
 :::
 
@@ -121,12 +122,6 @@ Then $X$ is compact, and if $X$ is infinite, then $X$ is not Hausdorff, since an
 :::
 
 [[PR-NJTN5]]
-
-::: {.proof}
-If the topology is discrete, every singleton is open.
-Conversely, if $\theset x$ is open for each $x \in X$, then every $U\subseteq X$ is the union $\bigcup_{x\in U}\theset x$ of open sets, so $U$ is open.
-
-:::
 
 ::: {.example title="The discrete topology"}
 In the discrete topology on $X$, every subset is open.

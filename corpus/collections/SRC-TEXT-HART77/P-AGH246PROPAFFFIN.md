@@ -32,6 +32,7 @@ Use (4.11A).
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.4.6, p. 36 of the held scan, transcribed step by step and checked against the exercise: the reduction to affine $X=\Spec A$ and $Y=\Spec B$ with a $k$-algebra map $\phi:B\to A$, the valuation ring $R\subseteq K=\Frac A$ containing $\phi(B)$ whose existence is what the printed hint (4.11A) provides, the lift that properness gives through the valuative criterion, and the integrality of $\phi$, which is what finiteness of $f$ means.
 Write
 $$
 X=\Spec A,

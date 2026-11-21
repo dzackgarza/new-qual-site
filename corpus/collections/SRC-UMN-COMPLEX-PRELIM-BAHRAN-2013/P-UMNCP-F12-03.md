@@ -6,7 +6,9 @@ title: The integral $\int_0^\infty \frac{\log x}{x^2+\alpha^2}\,dx$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 audit:

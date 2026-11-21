@@ -45,6 +45,11 @@ audit:
     consistency. Checked against Hatcher p.72 for the covering space action and p.233 for the local
     homology notation. The sheet names the course and host only, so no author is attributed.
 
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Lamport structure for the orientability of the quotient, which is what Queue D asks for on this card. The quotient-map step, the orientation classes upstairs, the well-definedness of the descended class and the inherited local consistency are separate steps; the well-definedness step is the one the prose asserted in a clause, and it now records that q o g = q is what makes two representatives of the orbit give the same class. A trailing paragraph that repeated the citation after the proof, outside any block, is folded into the lead sentence. No statement repair; the exercise is Hatcher §3.3 Exercise 4, printed p. 257, and the covering-space-action definition cited is on printed p. 72, both checked against the book. The argument is the Math 538 sheet's (HMW 3, handwritten p. 2 = PDF p. 14).
 ---
 
 ::: {.problem}
@@ -52,17 +57,49 @@ Given a covering space action of a group $G$ on an orientable manifold $M$ by or
 :::
 
 ::: {.solution}
-Let $q:M\to M/G$ be the quotient map; since the action is a covering space action, $q$ is a covering map and $M/G$ is an $n$-manifold.
+The published solution is **Math 538 homework solutions, HMW 3, handwritten page 2 = PDF p. 14** (`tmp/sources/hatcher-math538-homework4-solutions.pdf`), Hatcher §3.3 Exercise 4: the same disjointness of translates, the observation that an orientation-preserving $g$ carries $\mu_x$ to $\mu_{gx}$, both excisions, and the conclusion that local consistency holds in $B_{(x)}$ because it holds in $B_x$. The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 4.
 
-Fix $x\in M$ and let $B_x$ be a ball around $x$ small enough that the translates $gB_x$, $g\in G$, are pairwise disjoint — this is what a covering space action gives (Hatcher, p. 72). Let $\mu_x\in H_n(M,M-\{x\})$ be the given orientation class. Since every $g$ is orientation preserving, the induced isomorphism $g_*:H_n(M,M-\{x\})\to H_n(M,M-\{gx\})$ carries $\mu_x$ to $\mu_{gx}$; and by the local consistency of $\mu$, the class $\mu_{B_x}\in H_n(M\,|\,B_x)$ restricts to $\mu_y$ for every $y\in B_x$.
+::: pf
 
-Now $q$ restricts to a homeomorphism $B_x\to B_{(x)}$ onto the image of the ball, so excision (in the form $H_n(X\,|\,A)$ of p. 233) gives
+::: {.pf-step #covering}
+$q:M\to M/G$ is a covering map, so $M/G$ is an $n$-manifold and $q$ restricts to a homeomorphism of a small ball $B_x$ onto its image.
+
+::: pf-proof
+A covering space action is one in which every point has a neighbourhood $U$ whose translates $gU$, $g\in G$, are pairwise disjoint (Hatcher, printed p. 72); for such an action the quotient map $q$ is a covering map, and $q$ is an open map, so $M/G$ inherits from $M$ the property of being locally Euclidean of dimension $n$. Taking $B_x\subset U$ a ball inside such a neighbourhood, the translates $gB_x$ are pairwise disjoint and $q$ is injective on $B_x$, hence a homeomorphism onto its image.
+:::
+
+:::
+
+::: {.pf-step #upstairs-classes}
+Let $x\in M$ and let $\mu_x\in H_n(M,M-\{x\})$ be the orientation class at $x$. Every $g\in G$ is orientation preserving, so $g_*\mu_x=\mu_{gx}$; and if $\mu_{B_x}\in H_n(M\mid B_x)$ is the local orientation class over the ball $B_x$, its restriction to $y\in B_x$ is $\mu_y$.
+
+::: pf-proof
+An orientation of $M$ is a function $y\mapsto\mu_y$ with $\mu_y$ a generator of $H_n(M,M-\{y\})\cong\ZZ$ and with the local consistency that near each $y$ a single class $\mu_{U}\in H_n(M\mid U)$ restricts to $\mu_z$ for all $z\in U$. A homeomorphism $g$ that preserves orientation carries the local orientation at $x$ to the local orientation at $gx$, which is exactly $g_*\mu_x=\mu_{gx}$; and the local class over the ball restricts to $\mu_y$ for every $y$ in it by the definition of local consistency.
+:::
+
+:::
+
+::: {.pf-step #downstairs-class}
+The class $\mu_{(x)}\in H_n(M/G,M/G-\{(x)\})$ defined as the image of $\mu_x$ does not depend on which point of the orbit of $x$ is used.
+
+::: pf-proof
+The homeomorphism $B_x\to B_{(x)}$ and excision give isomorphisms
 $$
-H_n(M,M-\{x\})\cong H_n(B_x,B_x-\{x\})\cong H_n(B_{(x)},B_{(x)}-\{(x)\})\cong H_n(M/G,M/G-\{(x)\}),
+H_n(M,M-\{x\})\cong H_n(B_x,B_x-\{x\})\cong H_n\bigl(B_{(x)},B_{(x)}-\{(x)\}\bigr)\cong H_n(M/G,M/G-\{(x)\}),
 $$
-and the class $\mu_{(x)}$ defined as the image of $\mu_x$ is well defined: any other preimage of $(x)$ in the orbit is $gx$ with $g\in G$, and $\mu_{gx}$ is the image of $\mu_x$ under the orientation-preserving $g_*$, so it maps to the same class downstairs.
+so the image of $\mu_x$ is a well-defined element. Another preimage of $(x)$ in the orbit is $gx$ with $g\in G$, and $q\circ g=q$, so the image of $\mu_{gx}=g_*\mu_x$ under the same composite equals the image of $\mu_x$: the two agree.
+:::
 
-Local consistency downstairs is inherited: for $y\in B_x$ the class $\mu_{B_x}$ restricts to $\mu_y$ upstairs, so its image restricts to $\mu_{(y)}$ in $B_{(x)}$. Hence $y\mapsto\mu_{(y)}$ is an orientation of $M/G$, and $M/G$ is orientable.
+:::
 
-This is the solution printed in the Math 538 homework solutions, HMW 3, handwritten page 2 (PDF page 14 of `tmp/sources/hatcher-math538-homework4-solutions.pdf`), Hatcher 3.3 #4: the same disjointness of translates, the observation that an orientation-preserving $g$ sends $\mu_x$ to $\mu_{gx}$, both excisions, and the conclusion "local consistency holds in $B_{(x)}$ since it holds in $B_x$".
+::: {.pf-step #orientation}
+$y\mapsto\mu_{(y)}$ is an orientation of $M/G$, so $M/G$ is orientable.
+
+::: pf-proof
+Each $\mu_{(y)}$ is a generator of $H_n(M/G,M/G-\{(y)\})\cong\ZZ$, being the image of a generator under an isomorphism. For local consistency, take $y\in B_x$; the local class $\mu_{B_x}$ restricts to $\mu_y$ by step [](#upstairs-classes){.pf-ref}, so its image under the isomorphism of step [](#downstairs-class){.pf-ref} is a class in $H_n(M/G\mid B_{(x)})$ that restricts to $\mu_{(z)}$ for every $z\in B_x$, since the restrictions are compatible with the homeomorphism $B_x\to B_{(x)}$. So every point of $M/G$ has a neighbourhood carrying a single class restricting to the local classes, which is an orientation.
+:::
+
+:::
+
+:::
 :::

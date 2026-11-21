@@ -23,6 +23,15 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Checked the full Sylow statement, both unique-subgroup deductions, commutation via the intersection, and the exact order of the cyclic generator."
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The step stating the Sylow theorems carried a bibliographic citation and no justification, and now
+    records that the three theorems are cited rather than proved, names their statement's source, and
+    derives the equivalence of normality with $n_\ell = 1$ from the conjugacy statement. Sources are cited
+    by numbered statement. No page reference is written in the body of this card or in the event above.
+    The statement is unchanged.
 ---
 ::: {.problem}
 (a) State all parts of Sylow's Theorem.
@@ -49,6 +58,11 @@ n_\ell=[H:N_H(S)],\qquad n_\ell\mid m,
 \qquad n_\ell\equiv1\pmod\ell.
 $$
 In particular, $S$ is normal exactly when $n_\ell=1$ [@DF04].
+
+
+::: pf-proof
+The three Sylow theorems, as stated in Dummit and Foote's *Abstract Algebra* and cited here rather than proved: existence of a subgroup of order $\ell^a$ with $\abs{H} = \ell^am$ and $\ell \nmid m$; containment of every $\ell$-subgroup in one of them and conjugacy of any two; and the count $n_\ell = [H:N_H(S)]$ dividing $m$ and congruent to $1$ modulo $\ell$. Normality of $S$ is equivalent to $n_\ell = 1$ because a subgroup is normal exactly when it has a single conjugate, and the conjugates of a Sylow $\ell$-subgroup are all the Sylow $\ell$-subgroups.
+:::
 
 :::
 

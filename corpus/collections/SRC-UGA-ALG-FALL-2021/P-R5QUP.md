@@ -12,6 +12,16 @@ classification:
   - Trace
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained examination `assets/attachments/Algebra_Fall_2021.docx`, converted with Pandoc: the item is the Jordan-normal-form item, and its
+    printed words are the card's. The document numbers its problems automatically and those
+    numbers do not survive the conversion where a list restarts, so the opening words are the
+    locator there. The file and the locator are now named in the solution's opening sentence.
+    Not checked: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -26,6 +36,7 @@ f. $\operatorname{tr} A=1$?
 :::
 
 ::: {.solution}
+This is the Jordan-normal-form item of the Fall 2021 algebra examination, retained in this repository as `assets/attachments/Algebra_Fall_2021.docx`; the exam restarts its numbering, so the opening words locate it.
 
 Write $\zeta=e^{2\pi i/3}$ and $J_k(\lambda)$ for the Jordan block of size $k$ with eigenvalue $\lambda$. Rank-nullity gives $\dim\ker M=7-\operatorname{rk}M$.
 

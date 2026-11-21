@@ -5,7 +5,9 @@ kind: problem
 title: Best approximation by a finite-dimensional subspace of an inner-product space
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Orthogonal Projection
+  - Inner Product Spaces
 relations: []
 review: draft
 audit:

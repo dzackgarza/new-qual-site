@@ -14,6 +14,23 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The collection index records this card as Hoffman and Kunze 1.4.6, and the
+    system it carries is the one the card states. The printed book was not
+    re-read in this pass; the check is of the card against its indexed exercise
+    number.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The certificate is correct. Taking the third equation minus three times the
+    second plus twice the first kills all four unknowns on the left, since
+    1 - 3 + 2, 7 - 3 - 4, -5 + 3 + 2 and -1 - 3 + 4 all vanish, while the right
+    side becomes 3 - 6 + 2 = -1; a solution would therefore force 0 = -1. Nothing
+    was changed.
 ---
 
 ::: {.exercise}

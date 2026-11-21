@@ -35,7 +35,16 @@ audit:
     (4,2) and the partitions with largest part 2 give 2 + 1 + 2 = 5 forms; and the
     given invariant factors have elementary divisors giving blocks 1,3,3 at 1;
     1,1,2 at 2; 3 at 5. All lists are complete and distinct. No defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 4, Jordan forms Exercise
+    1(i)--(iv). On five dimensions $(X-5)^2$ gives the partitions $2+2+1$ and $2+1+1+1$;
+    three distinct linear factors give six positive multiplicity triples; on six dimensions
+    $(X-1)^2(X-2)^2$ gives $(d_1,d_2)=(2,4),(3,3),(4,2)$ and $2+1+2=5$ forms; and the
+    invariant factors give block sizes $1,3,3$ at $1$, $1,1,2$ at $2$, and $3$ at $5$. No
+    defect.
 ---
 
 ::: {.exercise}

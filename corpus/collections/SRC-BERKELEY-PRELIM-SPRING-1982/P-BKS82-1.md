@@ -21,6 +21,13 @@ audit:
   by: chatgpt
   date: 2026-09-24
   note: Checked the polynomial growth estimate, boundedness of the reciprocal, and the Liouville-theorem contradiction.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Spring82.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -28,6 +35,7 @@ Prove the Fundamental Theorem of Algebra: every nonconstant polynomial with comp
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Spring 1982, retained in this repository as `assets/attachments/Spring82.pdf`; the statement below is its wording.
 Let
 $$
 p(z)=a_nz^n+a_{n-1}z^{n-1}+\cdots+a_0,

@@ -35,21 +35,53 @@ Show that if $Y$ is a subspace of $X$, and $A$ is a subset of $Y$, then the topo
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 16.1, printed p. 149** (`tmp/sources/munkres-solutions-whitman.pdf`); the proof is his.
 
-Let $\mathcal{T}$ be the topology of $X$, let $\mathcal{T}_{Y}=\{Y\cap U\mid U\in\mathcal{T}\}$ be the subspace topology of $Y$, and let
-$$
-\mathcal{T}_{A}=\{A\cap V\mid V\in\mathcal{T}_{Y}\},\qquad \mathcal{T}_{A}'=\{A\cap U\mid U\in\mathcal{T}\}
-$$
-be the topologies that $A$ inherits from $Y$ and from $X$ respectively. We show $\mathcal{T}_{A}=\mathcal{T}_{A}'$.
+The argument is **Dan Whitman**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 16.1 (`tmp/sources/munkres-solutions-whitman.pdf`); both inclusions below are his, and the statement and the definition of the subspace topology were checked against Munkres, *Topology* (2000), §16 Exercise 1, and §16.
 
-If $W\in\mathcal{T}_{A}$ then $W=A\cap V$ with $V=Y\cap U$, $U\in\mathcal{T}$, so
+Throughout, $\mathcal{T}$ is the topology of $X$, $\mathcal{T}_{Y}\coloneqq\theset{Y\cap U\mid U\in\mathcal{T}}$ is the subspace topology of $Y$, and
 $$
-W=A\cap(Y\cap U)=(A\cap Y)\cap U=A\cap U
+\mathcal{T}_{A}\coloneqq\theset{A\cap V\mid V\in\mathcal{T}_{Y}},\qquad
+\mathcal{T}_{A}'\coloneqq\theset{A\cap U\mid U\in\mathcal{T}}
 $$
-because $A\subset Y$; hence $W\in\mathcal{T}_{A}'$. Conversely, if $W\in\mathcal{T}_{A}'$ then $W=A\cap U$ with $U\in\mathcal{T}$, and $V=Y\cap U\in\mathcal{T}_{Y}$ satisfies
+are the topologies that $A$ inherits from $Y$ and from $X$.
+
+::: pf
+
+::: {.pf-step #first-inclusion}
+$\mathcal{T}_{A}\subset\mathcal{T}_{A}'$.
+
+::: pf-proof
+Let $W\in\mathcal{T}_{A}$, so $W=A\cap V$ for some $V\in\mathcal{T}_{Y}$, and $V=Y\cap U$ for some $U\in\mathcal{T}$. Then
 $$
-W=A\cap U=(A\cap Y)\cap U=A\cap(Y\cap U)=A\cap V\in\mathcal{T}_{A}.
+W=A\cap(Y\cap U)=(A\cap Y)\cap U=A\cap U,
 $$
-So each of the two topologies contains the other, and they are equal.
+the last equality because $A\subset Y$. Since $U\in\mathcal{T}$, this exhibits $W$ as a member of $\mathcal{T}_{A}'$, and $W$ was arbitrary.
+:::
+
+:::
+
+::: {.pf-step #second-inclusion}
+$\mathcal{T}_{A}'\subset\mathcal{T}_{A}$.
+
+::: pf-proof
+Let $W\in\mathcal{T}_{A}'$, so $W=A\cap U$ with $U\in\mathcal{T}$. Put $V\coloneqq Y\cap U$, which lies in $\mathcal{T}_{Y}$ by definition of the subspace topology. Then
+$$
+W=A\cap U=(A\cap Y)\cap U=A\cap(Y\cap U)=A\cap V,
+$$
+using $A\subset Y$ again, so $W\in\mathcal{T}_{A}$.
+:::
+
+:::
+
+::: pf-step
+The two subspace topologies on $A$ coincide.
+
+::: pf-proof
+Steps [](#first-inclusion){.pf-ref} and [](#second-inclusion){.pf-ref} give $\mathcal{T}_{A}\subset\mathcal{T}_{A}'$ and $\mathcal{T}_{A}'\subset\mathcal{T}_{A}$, that is $\mathcal{T}_{A}=\mathcal{T}_{A}'$; so $A$ inherits the same topology whether it is regarded as a subspace of $Y$ or of $X$.
+:::
+
+:::
+
+:::
+
 :::

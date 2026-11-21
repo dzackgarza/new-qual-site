@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB11S-09
 kind: problem
 title: A nonnegative continuous function with zero integral vanishes
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Integrals, Continuous Functions]}
 relations: []
 review: draft
 audit:

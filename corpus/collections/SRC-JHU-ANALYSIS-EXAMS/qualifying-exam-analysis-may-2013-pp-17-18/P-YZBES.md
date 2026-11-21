@@ -29,6 +29,8 @@ Prove that there is only one solution in the unit disc $\{z : \abs{z} < 1\}$ and
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the collection of past analysis examinations alone, so the argument is the card's own.
 Put $p(z)=z^4-6z+3$.
 
 ::: pf

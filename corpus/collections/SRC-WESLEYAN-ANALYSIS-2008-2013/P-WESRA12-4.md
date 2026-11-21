@@ -5,7 +5,8 @@ kind: problem
 title: 'The most interesting theorems of the course'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Measure Theory
 relations: []
 review: draft
 audit:
@@ -20,6 +21,8 @@ Which theorem or theorems from the course seem most interesting, and why?
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the preliminary-examination papers alone, so the argument is the card's own.
 
 One reasonable answer is that the **Dominated Convergence Theorem** and the
 **Uniform Boundedness Theorem** are especially interesting because they

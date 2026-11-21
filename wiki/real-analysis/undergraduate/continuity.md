@@ -12,9 +12,10 @@ topics:
 ::: {.proposition}
 For $f\colon I\to\RR$ on an interval $I$:
 $$
-f \text{ differentiable with bounded } f' \implies f \text{ Lipschitz} \implies f \text{ absolutely continuous} \implies f \text{ uniformly continuous} \implies f \text{ continuous}.
+f \text{ differentiable with bounded } f' \iff f \text{ Lipschitz} \implies f \text{ uniformly continuous} \implies f \text{ continuous}.
 $$
 
+The equivalence is [[PR-LTRLV]], the middle implication [[PR-SX6NO]], and the last the definition of [[D-WGYSB|uniform continuity]].
 :::
 
 ## Discontinuity sets
@@ -26,11 +27,6 @@ $$
 [[FF-AVBFU]]
 
 ## Uniform continuity
-
-::: {.remark}
-A function $f\colon\RR\to\RR$ is uniformly continuous if and only if $\norm{f(\cdot+y)-f}_u \to 0$ as $y \to 0$.
-
-:::
 
 [[PR-SX6NO]]
 

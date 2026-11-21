@@ -35,6 +35,20 @@ audit:
     three-term triangle inequalities explicitly in both X and Y. The card's earlier dangling step
     references, to labels that no step carried, are replaced by the prose sentence that closes the
     solution.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Repaired and restructured. The card was the usual skeleton: a label-step ('Definition and
+    well-definedness of the extension g') with a '*Proof:*' marker left inside it and an empty
+    pf-proof, followed by seventeen nested one-sentence claims with no justification. It is now
+    five proved steps: uniform continuity gives Cauchy-continuity with the modulus written down;
+    the limit is independent of the approximating sequence, by the three-epsilon comparison of
+    the two images; the extension is defined and extends f; g is uniformly continuous with the
+    same modulus (up to thirds); and uniqueness follows from continuity on a dense set. Nothing
+    mathematical was changed, and no theorem beyond completeness of Y and the definition of
+    uniform continuity is used. Not claimed: a retained solution set; the collection's
+    provenance is the Munkres textbook, whose text is not retained here.
 ---
 
 ::: {.exercise}
@@ -45,147 +59,59 @@ Show that if $f: A \to Y$ is uniformly continuous, then $f$ can be uniquely exte
 :::
 
 ::: {.solution}
+Throughout $(X,d_{X})$ and $(Y,d_{Y})$ are metric spaces with $Y$ complete, $A \subseteq X$, $f\colon A \to Y$ is uniformly continuous, and $\overline{A}$ is the closure of $A$ in $X$. The exercise is Munkres, *Topology* (2000), §43.
 
 ::: pf
 
-::: pf-step
-
-Definition and well-definedness of the extension $g$:
-    *Proof:*
+::: {.pf-step #cauchy}
+$f$ carries Cauchy sequences of $A$ to Cauchy sequences of $Y$.
 
 ::: pf-proof
-
-::: pf-step
-
-Let $x \in \overline{A}$. There exists a sequence $(x_n)_{n=1}^\infty$ in $A$ such that $\lim_{n \to \infty} x_n = x$.
-
-:::
-
-::: pf-step
-
-Since $(x_n)$ converges in $X$, it is a Cauchy sequence in $X$.
-
-:::
-
-::: pf-step
-
-Because $f$ is uniformly continuous, it preserves Cauchy sequences: for any $\varepsilon > 0$, there exists $\delta > 0$ such that $d_X(a, b) < \delta \implies d_Y(f(a), f(b)) < \varepsilon$.
-
-:::
-
-::: pf-step
-
-For large $n, m$, $d_X(x_n, x_m) < \delta$, so $d_Y(f(x_n), f(x_m)) < \varepsilon$. Thus $(f(x_n))_{n=1}^\infty$ is Cauchy in $Y$.
-
-:::
-
-::: pf-step
-
-Completeness of $(Y, d_Y)$ ensures that $(f(x_n))$ converges to a unique limit $L \in Y$. Define $g(x) = \lim_{n \to \infty} f(x_n)$.
-
-:::
-
-::: pf-step
-
-If $(x_n')$ is another sequence in $A$ converging to $x$, then $d_X(x_n, x_n') \to 0$, so $d_Y(f(x_n), f(x_n')) \to 0$ by uniform continuity. Hence $\lim f(x_n) = \lim f(x_n')$, making $g(x)$ well-defined.
-
-:::
-
-::: pf-step
-
-For $x \in A$, taking $x_n = x$ gives $g(x) = f(x)$, so $g\restrict_A = f$.
+Let $\varepsilon > 0$ and let $\delta > 0$ be the modulus of uniform continuity of $f$ for $\varepsilon$: $d_{X}(a,a') < \delta$ implies $d_{Y}\bigl(f(a),f(a')\bigr) < \varepsilon$ for all $a, a' \in A$. If $(a_{n})$ is Cauchy there is $N$ with $d_{X}(a_{n},a_{m}) < \delta$ for $n, m \ge N$, and then $d_{Y}\bigl(f(a_{n}),f(a_{m})\bigr) < \varepsilon$ for those indices; so $\bigl(f(a_{n})\bigr)$ is Cauchy.
 
 :::
 
 :::
 
-:::
-
-::: pf-step
-
-Uniform continuity of the extension $g$:
-    *Proof:*
+::: {.pf-step #well-defined}
+For $x \in \overline{A}$ and sequences $(a_{n})$, $(b_{n})$ in $A$ converging to $x$, the sequences $\bigl(f(a_{n})\bigr)$ and $\bigl(f(b_{n})\bigr)$ converge to a common limit in $Y$.
 
 ::: pf-proof
-
-::: pf-step
-
-Given $\varepsilon > 0$, choose $\delta > 0$ such that for all $a, b \in A$, $d_X(a, b) < \delta \implies d_Y(f(a), f(b)) < \varepsilon/3$.
-
-:::
-
-::: pf-step
-
-Let $x, y \in \overline{A}$ satisfy $d_X(x, y) < \delta/3$.
-
-:::
-
-::: pf-step
-
-Choose sequences $(x_n), (y_n)$ in $A$ converging to $x, y$ respectively.
-
-:::
-
-::: pf-step
-
-For all sufficiently large $n$, we have $d_X(x_n, x) < \delta/3$, $d_X(y_n, y) < \delta/3$, $d_Y(f(x_n), g(x)) < \varepsilon/3$, and $d_Y(f(y_n), g(y)) < \varepsilon/3$.
-
-:::
-
-::: pf-step
-
-By the triangle inequality:
-        $$d_X(x_n, y_n) \le d_X(x_n, x) + d_X(x, y) + d_X(y, y_n) < \frac{\delta}{3} + \frac{\delta}{3} + \frac{\delta}{3} = \delta.$$
-
-:::
-
-::: pf-step
-
-Therefore $d_Y(f(x_n), f(y_n)) < \varepsilon/3$.
-
-:::
-
-::: pf-step
-
-Applying the triangle inequality in $Y$:
-        $$d_Y(g(x), g(y)) \le d_Y(g(x), f(x_n)) + d_Y(f(x_n), f(y_n)) + d_Y(f(y_n), g(y)) < \frac{\varepsilon}{3} + \frac{\varepsilon}{3} + \frac{\varepsilon}{3} = \varepsilon.$$
-
-:::
-
-::: pf-step
-
-Thus $g$ is uniformly continuous on $\overline{A}$ (which also implies $g$ is continuous).
+Both are Cauchy by step [](#cauchy){.pf-ref}, and $Y$ is complete, so each converges; let $\alpha$, $\beta$ be the limits. Given $\varepsilon > 0$ take $\delta$ from uniform continuity for $\varepsilon/3$; since $a_{n} \to x$ and $b_{n} \to x$ there is $N$ with $d_{X}(a_{n},x) < \delta/2$ and $d_{X}(b_{n},x) < \delta/2$ for $n \ge N$, whence $d_{X}(a_{n},b_{n}) < \delta$ and $d_{Y}\bigl(f(a_{n}),f(b_{n})\bigr) < \varepsilon/3$. For $n$ large the two images are within $\varepsilon/3$ of $\alpha$ and $\beta$, so $d_{Y}(\alpha,\beta) < \varepsilon$; as $\varepsilon$ was arbitrary, $\alpha = \beta$.
 
 :::
 
 :::
 
-:::
-
-::: pf-step
-
-Uniqueness of the continuous extension:
-    *Proof:*
+::: {.pf-step #define}
+$g(x) \coloneqq \lim_{n}f(a_{n})$ for any sequence $a_{n} \to x$ in $A$ defines a function $g\colon\overline{A} \to Y$ extending $f$.
 
 ::: pf-proof
+Step [](#well-defined){.pf-ref} makes the value independent of the sequence, and for $x \in \overline{A}$ such a sequence exists because $x$ is a limit point of $A$ or a point of $A$ (where the constant sequence serves). For $x \in A$ the constant sequence gives $g(x) = f(x)$, so $g$ extends $f$.
+
+:::
+
+:::
+
+::: {.pf-step #uniform}
+$g$ is uniformly continuous on $\overline{A}$.
+
+::: pf-proof
+Let $\varepsilon > 0$ and take $\delta$ from the uniform continuity of $f$ for $\varepsilon/3$. Let $x, x' \in \overline{A}$ with $d_{X}(x,x') < \delta/3$. Choose sequences $a_{n} \to x$, $a_{n}' \to x'$ in $A$; for $n$ large, $d_{X}(a_{n},x) < \delta/3$ and $d_{X}(a_{n}',x') < \delta/3$, so $d_{X}(a_{n},a_{n}') < \delta$ and $d_{Y}\bigl(f(a_{n}),f(a_{n}')\bigr) < \varepsilon/3$, while the two images are within $\varepsilon/3$ of $g(x)$ and $g(x')$ for $n$ large. Hence $d_{Y}\bigl(g(x),g(x')\bigr) < \varepsilon$ whenever $d_{X}(x,x') < \delta/3$, which is uniform continuity of $g$.
+
+:::
+
+:::
 
 ::: pf-step
+The extension is unique: if $h\colon\overline{A} \to Y$ is continuous and agrees with $f$ on $A$, then $h = g$.
 
-$A$ is dense in $\overline{A}$, and the metric codomain $Y$ is Hausdorff.
-
-:::
-
-::: pf-step
-
-Any two continuous functions on $\overline{A}$ that agree on the dense subset $A$ are identically equal on all of $\overline{A}$.
+::: pf-proof
+Let $x \in \overline{A}$ and take $a_{n} \to x$ in $A$. Continuity of $h$ gives $h(x) = \lim_{n}h(a_{n}) = \lim_{n}f(a_{n}) = g(x)$, using $h = f$ on $A$ and the definition of $g$; so $h$ and $g$ agree at every point of $\overline{A}$. Together with steps [](#define){.pf-ref} and [](#uniform){.pf-ref} this is the assertion.
 
 :::
 
 :::
 
 :::
-
-:::
-
-Steps above give existence of the extension $g$, its uniform continuity, and its uniqueness among continuous extensions. For uniqueness: $Y$ is a metric space, hence Hausdorff, so the diagonal $\Delta$ is closed in $Y \times Y$ (Exercise 17.13); the set on which two continuous maps $g, h: \overline{A} \to Y$ agree is $(g \times h)^{-1}(\Delta)$, closed by the closed-set formulation of continuity (Theorem 18.1), and it contains the dense subset $A$, so it is all of $\overline{A}$.
 :::

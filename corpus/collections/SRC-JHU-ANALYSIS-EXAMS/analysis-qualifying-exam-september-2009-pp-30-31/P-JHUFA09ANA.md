@@ -28,22 +28,49 @@ Suppose $(f_n)$ is a sequence of continuous functions on $[0,1]$ converging poin
 :::
 
 ::: {.solution}
-No. Define
-$$
-f_n(x)=\max\{1-n\abs{x-1/n},0\}.
-$$
-Each $f_n$ is continuous on $[0,1]$, and
-$$
-\norm{f_n}_\infty=f_n(1/n)=1.
-$$
-Hence $(f_n)$ cannot converge uniformly to $0$.
 
-On the other hand, $f_n\to0$ pointwise. Indeed, $f_n(0)=0$ for every $n$. If $x>0$ is fixed, then for all sufficiently large $n$ one has $2/n<x$, while $f_n$ is supported in $[0,2/n]$. Thus $f_n(x)=0$ eventually. Therefore
-$$
-f_n(x)\longrightarrow0
-\qquad(x\in[0,1]),
-$$
-and the pointwise limit $f\equiv0$ is continuous.
+The counterexample and its verification are the card's own; no retained set solves this exercise, and the sets searched are recorded in the audit trail.
 
-So pointwise convergence of continuous functions to a continuous limit does not imply uniform convergence.
+::: pf
+
+::: {.pf-step #no}
+There is a sequence of continuous $f_{n}:[0,1]\to\RR$ converging pointwise to a continuous $f$ and not converging uniformly to it.
+
+::: pf-proof
+
+::: {.pf-step #definition}
+Put $f_{n}(x)=\max\{1-n\abs{x-1/n},\,0\}$ for $x\in[0,1]$ and $f\equiv0$.
+
+::: pf-proof
+Each $f_{n}$ is continuous, being the maximum of the continuous functions $x\mapsto1-n\abs{x-1/n}$ and the constant $0$. And $f_{n}(x)>0$ exactly when $\abs{x-1/n}<1/n$, that is exactly when $0<x<2/n$; so $f_{n}$ is supported in $[0,2/n]$ and $f_{n}(0)=0$.
+:::
+
+:::
+
+::: {.pf-step #pointwise}
+$f_{n}(x)\to0$ for every $x\in[0,1]$.
+
+::: pf-proof
+$f_{n}(0)=0$ for every $n$. If $x\in(0,1]$, choose $N$ with $2/N<x$; then for $n\ge N$ one has $x>2/n$, so $x$ lies outside the support of $f_{n}$ and $f_{n}(x)=0$. Hence $f_{n}(x)=0$ for all $n\ge N$.
+:::
+
+:::
+
+::: {.pf-step #not-uniform}
+$\norm{f_{n}}_{\infty}=1$ for every $n$, so $\sup_{x}\abs{f_{n}(x)-f(x)}=1$ does not tend to $0$.
+
+::: pf-proof
+$f_{n}(1/n)=1$ and $0\le f_{n}\le1$ everywhere, so the supremum norm is $1$; and $f\equiv0$, so $\sup_{x\in[0,1]}\abs{f_{n}(x)-f(x)}=1$ for every $n$. Uniform convergence would require this supremum to tend to $0$.
+:::
+
+:::
+
+::: {.pf-qed}
+Steps [](#pointwise){.pf-ref} and [](#not-uniform){.pf-ref} exhibit the sequence, so the answer to the question is no: pointwise convergence of continuous functions to a continuous limit does not force uniform convergence.
+:::
+
+:::
+
+:::
+:::
 :::

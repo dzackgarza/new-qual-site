@@ -49,7 +49,7 @@ $$
 0 \to J/J^2 \to \Omega_{P/k} \tensor A \to \Omega_{A/k} \to 0
 .
 $$
-   Show furthermore that applying $\Hom_A(\wait, I)$ gives an exact sequence
+   Show furthermore that applying $\Hom_A(-, I)$ gives an exact sequence
 $$
 0 \to \Hom_A(\Omega_{A/k}, I) \to \Hom_P(\Omega_{P/k}, I) \to \Hom_A(J/J^2, I) \to 0
 .

@@ -3,11 +3,39 @@ schema: qual/card@1
 id: P-WESTOP06-A8
 kind: problem
 title: A zero-dimensional compactification with the clopen extension property
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Clopen Sets, Compactness]}
 relations: []
 review: draft
 audit:
 - {event: source-checked, by: gpt-5.6-sol, date: 2026-09-14}
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained compilation assets/attachments/topology_2006-2014_extracted.md,
+    the "Qualifying Exam in Topology, June 2006" section, Part A Problem 8 (the
+    entry on line 629 of the extraction): the exam asks, after recalling beta X
+    and the definition of zd from Problem 5, for a sketch that a zd Hausdorff X
+    has a compact zd Hausdorff zX containing X densely such that every
+    continuous f: X to {0,1} has a unique continuous extension. The card's
+    statement agrees, and it gives the proof rather than the sketch.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The construction and all five steps are correct. The evaluation map into
+    2^(clop X) is continuous because each coordinate is the characteristic
+    function of a clopen set, and injective because clopens form a basis of a
+    zero-dimensional Hausdorff space, so they separate a point from a
+    neighbourhood of another; the clopen sets are exactly the inverse images of
+    the corresponding cylinders, so the map is an embedding. Its closure is
+    compact Hausdorff by Tychonoff, contains a dense copy of X by construction,
+    and is zero-dimensional because the cylinder basis of the product restricts
+    to a clopen basis of the closure. A continuous map to the discrete two-point
+    space has clopen preimage of 1, hence is a coordinate, and the coordinate
+    projection restricts to an extension; uniqueness follows because the
+    equalizer of two continuous maps into a Hausdorff space is closed and
+    contains the dense copy of X. Nothing was changed.
 ---
 
 ::: {.problem}

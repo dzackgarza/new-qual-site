@@ -150,7 +150,10 @@ $$
 
 ::: {.pf-step #s1-5}
 
-By Sylvester's criterion, the quadratic form is positive definite.
+By Sylvester's criterion,
+$$
+\boxed{f\text{ is positive definite}.}
+$$
 
 
 ::: pf-proof
@@ -163,25 +166,9 @@ are positive. Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} verify this co
 
 :::
 
-::: {.pf-step #s1-6}
-
-Therefore
-$$
-\boxed{f\text{ is positive definite}.}
-$$
-
-
-::: pf-proof
-
-This is step [](#s1-5){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-6){.pf-ref} is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

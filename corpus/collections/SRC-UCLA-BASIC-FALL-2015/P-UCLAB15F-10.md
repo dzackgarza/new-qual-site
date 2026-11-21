@@ -6,7 +6,9 @@ title: Exponential of commuting linear operators
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Matrix Exponential
+  - Linear Transformations
 relations: []
 review: draft
 audit:

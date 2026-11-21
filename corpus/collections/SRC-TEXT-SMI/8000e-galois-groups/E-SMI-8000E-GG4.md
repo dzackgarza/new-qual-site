@@ -39,7 +39,16 @@ audit:
     The DF numbering itself cannot be checked in this repository, which retains no
     copy of Dummit and Foote; the statements the card proves are the ones that
     argument needs. No defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 9, prelim items 4)--8).
+    The $F(N+aQt)/a$ trick gives infinitely many prime divisors; $p\mid\Phi_m(a)$ with
+    $p\nmid m$ forces order $m$, hence $m\mid p-1$; so primes $\equiv1\pmod m$ are
+    infinite; distinct $p_i\equiv1\pmod{n_i}$ with the order-$(p_i-1)/n_i$ subgroups give
+    $(\ZZ/N\ZZ)^\times/H\cong A$, and the fixed field has group $A$. The DF numbering
+    itself is not checkable here, as the card records. No defect.
 ---
 
 ::: {.exercise}

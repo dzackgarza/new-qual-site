@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP07-02
 kind: problem
 title: Fundamental group of three triangular loops joined by two segments
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Fundamental Group, Graphs]}
 relations: []
 review: draft
 audit:

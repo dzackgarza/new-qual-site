@@ -223,7 +223,9 @@ Step [](#global-isomorphism){.pf-ref} proves the stated equality up to the canon
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.23, PDF pp. 35--36, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim reduces to affine $V$ and $W$ and uses $A(V\times W)=A(V)\otimes_kA(W)$, noting that both sides glue so that the affine case suffices.
+The exercise is II.3.23, Hartshorne, *Algebraic Geometry* (1977), read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$.
+
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.23, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim reduces to affine $V$ and $W$ and uses $A(V\times W)=A(V)\otimes_kA(W)$, noting that both sides glue so that the affine case suffices.
 The proof above carries the gluing out: the charts $U_i\times T_j$ are affine with coordinate ring $A(U_i)\otimes_kA(T_j)$, two of them meet in $U_{ii'}\times T_{jj'}$, and the resulting identifications are compatible with both projections.
 Agree.
 :::

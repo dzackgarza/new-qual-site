@@ -6,7 +6,9 @@ title: 'Diagonalizability of symmetric $2\times2$ matrices over $\RR$, $\CC$ and
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Symmetric Matrices
+  - Diagonalization
 relations: []
 review: draft
 audit:

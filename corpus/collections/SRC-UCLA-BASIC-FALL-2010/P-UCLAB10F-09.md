@@ -6,7 +6,9 @@ title: Convergence of a linear stationary iteration
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Systems
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

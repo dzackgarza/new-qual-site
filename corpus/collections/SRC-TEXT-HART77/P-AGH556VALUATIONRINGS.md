@@ -240,6 +240,123 @@ audit:
     tmp/sources/abhyankar-1956-valuations-centered-local-domain.md, printed
     page = PDF page plus 320. Not checked: nothing new; the card's steps were
     not re-derived in this pass.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Closed under #132's alternative: no published proof of R contained in
+    R_0 was located, and the card's own proof of kind (3) is checked here
+    against the book. Read: Hartshorne V.5.6, printed p. 420, and Exercise
+    II.4.12 with its Note, printed p. 108. Checked step by step:
+    unique-center-exists is the valuative criterion for the proper X;
+    center-not-generic-point, because a centre at the generic point would
+    make R dominate K and hence equal it, against R proper; the codim-one
+    case, because a valuation ring dominating the discrete valuation ring
+    O_{X,x} with the same fraction field is that ring; the divisorial case,
+    because the local ring of the exceptional divisor is the discrete
+    valuation ring of its generic point; and element-eventually-regular,
+    which is the hint: resolve [f:1] by point blowups (Exercise V.5.1),
+    compare the centres y_j of R on the resolution with the centres x_i
+    defining R_0 to get O_{Y_m,y_m} = A_N, and use that f in R gives a
+    morphism Spec R -> A^1 which must agree with the morphism through Y_m
+    because P^1 is separated, so f lies in A_N. Then R_0 contained in R is
+    union-contained-in-r and R contained in R_0 is the previous step, so
+    R = R_0. The argument uses no characteristic. No published proof of
+    R contained in R_0 is claimed: COMPLAINTS lists the sources searched
+    (Egbert printed p. 299, Yang printed p. 114, MathOverflow 12717 and MSE
+    1125594), each of which asserts the step or omits it. Not checked: no
+    source outside those named was read; the five steps were checked as
+    named and not re-derived beyond that.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The three numbered statements this card rests on are read off the pages of
+    Abhyankar, On the valuations centered in a local domain, Amer. J. Math. 78
+    (1956), pp. 321--348, of which the retained file is the whole paper.
+    Definition 3, printed p. 335: the sequence R_0 = R, R_i the first
+    quadratic transform of R_{i-1} along v, defined while dim R_{i-1} > 1.
+    Lemma 10, printed p. 334: for a regular local domain of dimension s with a
+    minimal basis ordered so that v(x_1) is least, A = R[x_2/x_1,...,x_s/x_1],
+    P = A cap M_v, S = A_P, N = PS, then (S,N) is regular of dimension
+    t <= s with v centred in it and s - t = d - d*. Lemma 12, printed
+    pp. 337--338, is stated for a strictly ascending sequence of TWO
+    dimensional regular local domains. That hypothesis is what stops it from
+    closing this exercise: by Lemma 10 the dimensions of the quadratic
+    transforms along v fall with the R-dimension of v, so in the infinite
+    closed-center case the chain is not in general a chain of two-dimensional
+    rings, and no dimension hypothesis may be added to the exercise to make it
+    one. Lemma 12 is therefore cited on this card only for the two-dimensional
+    sub-case, and nowhere is it offered as the proof of kind (3). The card's
+    own proof of R contained in R_0 stands as the card's, together with the
+    earlier record that no published proof of that inclusion was located. Not
+    read in this pass: Lemma 12's proof entire, whose opening was read only as
+    far as the insertion of intermediate quadratic transforms, and
+    Proposition 3, printed pp. 336--337, was not re-opened.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for issue #168, all nine steps of the pf block, including the five that
+    no event above re-derived: successive-centers-on-blowups,
+    union-contained-in-r, element-eventually-regular,
+    r-equals-union-type-three and trichotomy-established.
+
+    successive-centers-on-blowups: the blowup of a nonsingular projective
+    surface at a closed point is one, so the centre x_{i+1} exists and is
+    unique; the two maps Spec R to X_i agree on the generic point, so x_{i+1}
+    maps to x_i; and the fibre of the blowup over x_i is the exceptional curve,
+    so x_{i+1} lies on it. union-contained-in-r: A_i is contained in R because R
+    dominates it, and A_i is contained in A_{i+1} because x_{i+1} lies above x_i
+    and the two are local rings of one function field.
+    element-eventually-regular: read line by line against the printed hint. A
+    blowup of the resolution of [f:1] that misses the centre y_{j-1} leaves the
+    local ring at the centre unchanged, and one at y_{j-1} is the blowup of A_i
+    at its maximal ideal along v, so it advances A_i to A_{i+1}; hence
+    O_{Y_m,y_m} is A_N for some N. The two morphisms Spec R to P^1, one from f
+    in R and one from the resolved map, agree on Spec K and hence everywhere,
+    P^1 being separated, so the closed point maps into A^1 and f is regular at
+    y_m. r-equals-union-type-three: the two inclusions, and the consequence that
+    R_0 is itself a valuation ring. trichotomy-established: on the exceptional
+    curve of a nonsingular surface every point is either a closed point or the
+    generic point of that curve, so the two cases are exhaustive, and the other
+    steps give the three kinds. The remaining four steps,
+    unique-center-exists, center-not-generic-point, codim-one-center-type-one and
+    divisorial-center-type-two, were re-read as well.
+
+    Correction to the two events of 2026-11-19 above, stated on Abhyankar's
+    numbered statements. Lemma 12 is indeed stated for a strictly ascending
+    sequence of two-dimensional regular local domains, and the sequence this card
+    uses for the third kind is such a sequence: each x_i is a closed point of the
+    nonsingular surface X_i, so O_{X_i,x_i} is two-dimensional, and that is
+    unaffected by the chain being infinite. The sentence of those events saying
+    that in the infinite closed-centre case the chain is not in general a chain
+    of two-dimensional rings is therefore withdrawn, and with it the reason there
+    given for Lemma 12 not closing the third kind. What Lemma 12 gives, once the
+    quadratic transform of Definition 3 is identified with the local ring of the
+    centre on the blowup, is that the union of the A_i is the valuation ring of a
+    valuation centred at every x_i and that every valuation centred at every x_i
+    equals it, which is R = R_0: a published proof of the third kind, resting on
+    Definition 3, Lemma 10 and Lemma 12. That identification is a two-chart
+    computation for a nonsingular surface and is no numbered statement of the
+    paper, and the card's own proof above does not use Lemma 12 and is unchanged
+    by this. Not checked: no source outside those named in the earlier events was
+    read, and the identification just mentioned was not written out in full.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Two repairs in this pass, both inside steps, neither changing a statement.
+    The closing sentence of center-not-generic-point cited itself as the source
+    of the dichotomy it states; it now states the dichotomy directly, the centre
+    being neither the generic point of X nor a point of dimension greater than
+    one, hence either the generic point of an irreducible curve or a closed
+    point. In element-eventually-regular the finite sequence of point blowups
+    was attributed to Exercise V.5.1, whose printed statement asks only for a
+    birational morphism making [f:1] a morphism; the step now says that the
+    printed hint constructs that morphism as embedded resolution of the union of
+    the curves of zeros and poles followed by blowups wherever a zero curve
+    meets a pole curve, which is the sequence used.
 ---
 
 ::: {.problem}
@@ -305,8 +422,8 @@ R=K,
 $$
 contrary to the nontriviality assumption.
 
-Because $\dim X=2$, step [](#center-not-generic-point){.pf-ref} leaves two possibilities: $x_0$ is the
-generic point of an irreducible curve, or $x_0$ is a closed point.
+Because $\dim X=2$, the centre $x_0$, which is neither the generic point of $X$ nor a point of
+dimension greater than one, is the generic point of an irreducible curve or a closed point.
 :::
 
 :::
@@ -334,8 +451,7 @@ R=\OO_{X,x_0}.
 $$
 This is the first surface construction in Exercise II.4.12.
 
-Yang Pi-Yeh, solution 5.5.6, printed p. 114, and Egbert, V.5.6, printed
-p. 299, argue this case the same way: $X$ is projective and hence proper, the
+Yang Pi-Yeh, solution 5.5.6, and Egbert, V.5.6, argue this case the same way: $X$ is projective and hence proper, the
 valuation criterion gives $\Spec R\to X$ whose closed-point image is the
 centre $P$ of $\nu$, and $R$ dominates $\OO_P$; a centre of dimension one
 leaves two discrete valuation rings, so $R=\OO_P$.
@@ -416,8 +532,7 @@ Thus $R$ is exactly the local ring at the generic point of a curve on a
 birational model which is contracted to a closed point of $X$, the second
 construction of Exercise II.4.12.
 
-Yang Pi-Yeh, solution 5.5.6, printed p. 114, and Egbert, V.5.6, printed
-p. 299, reach this case the same way: the closed centre is blown up, and the
+Yang Pi-Yeh, solution 5.5.6, and Egbert, V.5.6, reach this case the same way: the closed centre is blown up, and the
 centre of $\nu$ on the blowup is either the exceptional curve, which is what
 this step computes, or a point of it, where one repeats.
 :::
@@ -491,8 +606,11 @@ $$
 \qquad
 x\longmapsto[f(x):1].
 $$
-Exercise V.5.1 [[P-AGH551RESOLVERATFN]] gives a finite sequence of point
-blowups
+Exercise V.5.1 [[P-AGH551RESOLVERATFN]] gives a birational morphism
+$Y_m\to X$ making $[f:1]$ a morphism, and its hint constructs that morphism as
+a finite sequence of point blowups, embedded resolution of the union of the
+curves of zeros and poles followed by blowups wherever a curve of zeros still
+meets a curve of poles; that sequence is what is used here:
 $$
 Y_m
 \xrightarrow{g_m}
@@ -652,9 +770,9 @@ excluded exactly as in Exercise II.4.12.
 :::
 
 ::: {.remark title="Published solutions"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.6, printed p. 420. Exercise II.4.12, printed p. 108, builds the ring $R_0=\bigcup_i\OO_{x_i,X_i}$ of the third kind, shows that it is a local ring dominated by some valuation ring of $K/k$, and its Note after the exercise defers to the present one both that $R_0$ is itself a valuation ring and that every valuation ring of $K/k$ is one of the three kinds.
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.6. Exercise II.4.12, builds the ring $R_0=\bigcup_i\OO_{x_i,X_i}$ of the third kind, shows that it is a local ring dominated by some valuation ring of $K/k$, and its Note after the exercise defers to the present one both that $R_0$ is itself a valuation ring and that every valuation ring of $K/k$ is one of the three kinds.
 
-Kinds (1) and (2) are published twice. Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.5.6, printed p. 114, and A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.6, printed p. 299, argue from the centre: $X$ is projective and therefore proper, so the valuation criterion gives $\varphi:\Spec R\to X$ whose closed-point image is the centre $P$ of $\nu$, and $R$ dominates $\OO_P$; a centre of dimension one leaves two discrete valuation rings, so $R=\OO_P$, which is kind (1); a closed centre is blown up, and the centre on the blowup is either the exceptional curve, which is kind (2), or a point of it, where one repeats. Steps [](#codim-one-center-type-one){.pf-ref} and [](#divisorial-center-type-two){.pf-ref} transcribe that argument.
+Kinds (1) and (2) are published twice. Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.5.6, and A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.6, argue from the centre: $X$ is projective and therefore proper, so the valuation criterion gives $\varphi:\Spec R\to X$ whose closed-point image is the centre $P$ of $\nu$, and $R$ dominates $\OO_P$; a centre of dimension one leaves two discrete valuation rings, so $R=\OO_P$, which is kind (1); a closed centre is blown up, and the centre on the blowup is either the exceptional curve, which is kind (2), or a point of it, where one repeats. Steps [](#codim-one-center-type-one){.pf-ref} and [](#divisorial-center-type-two){.pf-ref} transcribe that argument.
 
 Kind (3) is proved above by the route the printed hint names, with Exercise V.5.1: for $f\in R$ the rational map $[f:1]$ is resolved by point blowups, and comparing the centres of $\nu$ along that resolution with the rings $\OO_{X_i,x_i}$ places $f$ in some $A_i$ (step [](#element-eventually-regular){.pf-ref}); with $R_0\subseteq R$ (step [](#union-contained-in-r){.pf-ref}) this gives $R=R_0$ (step [](#r-equals-union-type-three){.pf-ref}).
 :::

@@ -5,7 +5,10 @@ kind: problem
 title: Rank-one 2-by-3 matrices as an affine variety
 classification:
   areas: [algebraic-geometry]
-  topics: []
+  topics:
+  - Affine Varieties
+  - Determinantal Varieties
+  - Dimension
 relations: []
 review: draft
 audit:
@@ -20,6 +23,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Verified the determinantal equations, irreducibility via the Segre cone, and the dimension by an explicit dense affine chart.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained document `assets/attachments/AG Exam Problems.pdf`: the statement is Problem 1 of the Fall 2015 algebraic geometry examination, and its printed words are
+    the card's. The item and the file are now named in the solution's opening sentence. Not
+    checked in this pass: the argument, which the edit does not touch.
 ---
 ::: {.problem}
 Let $X$ be the set of all $2\times3$ matrices over an algebraically closed field $k$ having rank at most one, viewed as a subset of $\operatorname{Mat}_{2,3}(k)=\AA^6$.
@@ -31,6 +41,7 @@ You may use the Segre embedding.
 :::
 
 ::: {.solution}
+This is Problem 1 of the Fall 2015 algebraic geometry examination, retained in this repository as `assets/attachments/AG Exam Problems.pdf`; the statement below is its wording.
 Write a matrix in coordinates as
 $$
 M=\begin{pmatrix}

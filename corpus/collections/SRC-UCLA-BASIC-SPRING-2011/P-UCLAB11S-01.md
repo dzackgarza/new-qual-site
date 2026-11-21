@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB11S-01
 kind: problem
 title: Jordan forms from three power traces
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Jordan Canonical Form, Trace]}
 relations: []
 review: draft
 audit:

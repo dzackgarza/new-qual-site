@@ -23,25 +23,42 @@ $$
 :::
 
 ::: {.solution}
-By evenness and the substitution $x=\tan\theta$,
-$$
-I_n:=\int_{-\infty}^{\infty}\frac{dx}{(1+x^2)^{n+1}}
-=2\int_0^{\pi/2}\cos^{2n}\theta\,d\theta.
-$$
-Integration by parts gives the Wallis recursion
-$$
-\int_0^{\pi/2}\cos^{2n}\theta\,d\theta
-=\frac{2n-1}{2n}
-\int_0^{\pi/2}\cos^{2n-2}\theta\,d\theta.
-$$
-Since $\int_0^{\pi/2}1\,d\theta=\pi/2$, induction yields
-$$
-\int_0^{\pi/2}\cos^{2n}\theta\,d\theta
-=\frac{1\cdot3\cdot5\cdots(2n-1)}{2\cdot4\cdot6\cdots(2n)}\frac\pi2.
-$$
-Therefore
-$$
-\boxed{I_n=
-\frac{1\cdot3\cdot5\cdots(2n-1)}{2\cdot4\cdot6\cdots(2n)}\pi.}
-$$
+
+No retained solution set covers this exercise: the card's own argument follows, with the substitution, the Wallis recursion (proved by parts) and the induction separated.
+
+::: pf
+
+::: {.pf-step #trig}
+$\displaystyle I_{n}=\int_{-\infty}^{\infty}\frac{dx}{(1+x^{2})^{n+1}}=2\int_{0}^{\pi/2}\cos^{2n}\theta\,d\theta$.
+
+::: pf-proof
+The integrand is even, so $I_{n}=2\int_{0}^{\infty}(1+x^{2})^{-(n+1)}dx$. Substitute $x=\tan\theta$, $dx=\sec^{2}\theta\,d\theta$: then $1+x^{2}=\sec^{2}\theta$ and $(1+x^{2})^{-(n+1)}dx=\sec^{-2n-2}\theta\sec^{2}\theta\,d\theta=\cos^{2n}\theta\,d\theta$, while $x$ runs from $0$ to $\infty$ as $\theta$ runs from $0$ to $\pi/2$.
+:::
+
+:::
+
+::: {.pf-step #recursion}
+With $W_{n}=\int_{0}^{\pi/2}\cos^{2n}\theta\,d\theta$ one has $W_{n}=\dfrac{2n-1}{2n}W_{n-1}$ for $n\ge1$.
+
+::: pf-proof
+Integration by parts with $u=\cos^{2n-1}\theta$, $dv=\cos\theta\,d\theta$ gives $W_{n}=\big[\cos^{2n-1}\theta\sin\theta\big]_{0}^{\pi/2}+(2n-1)\int_{0}^{\pi/2}\cos^{2n-2}\theta\sin^{2}\theta\,d\theta$; the boundary term vanishes at both ends. With $\sin^{2}=1-\cos^{2}$ the integral becomes $W_{n-1}-W_{n}$, so $W_{n}=(2n-1)(W_{n-1}-W_{n})$, that is $2nW_{n}=(2n-1)W_{n-1}$.
+:::
+
+:::
+
+::: {.pf-step #wallis}
+$W_{n}=\dfrac{1\cdot3\cdots(2n-1)}{2\cdot4\cdots(2n)}\,\dfrac{\pi}{2}$ for every $n\ge0$.
+
+::: pf-proof
+$W_{0}=\int_{0}^{\pi/2}d\theta=\pi/2$, and if the formula holds for $n-1$ then step [](#recursion){.pf-ref} multiplies it by $\dfrac{2n-1}{2n}$, giving the formula for $n$; induction on $n$ completes it.
+:::
+
+:::
+
+::: {.pf-qed}
+$I_{n}=2W_{n}=\dfrac{1\cdot3\cdots(2n-1)}{2\cdot4\cdots(2n)}\pi$ by steps [](#trig){.pf-ref} and [](#wallis){.pf-ref}.
+:::
+
+:::
+
 :::

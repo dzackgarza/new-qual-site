@@ -12,6 +12,30 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained exam assets/attachments/UGA_Complex_Analysis_Fall_2021.pdf,
+    problem 3: for n at least 2, to use a wedge of angle 2 pi/n to evaluate the
+    integral of 1/(1+x^n). The card agrees, and its closing remark records that
+    the paper prints the integral over the whole line, which for odd n is
+    improper at x = -1 and for even n is twice the half-line value.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The computation is correct. The poles of 1/(1+z^n) are the n-th roots of -1,
+    of argument (2k+1)pi/n, so exactly one, omega = e^{i pi/n}, lies in the open
+    sector, and none on the boundary for R > 1; the residue there is
+    1/(n omega^{n-1}) = -omega/n because omega^n = -1. Along the return ray,
+    z = zeta t with zeta = omega^2, the integrand is 1/(1+t^n) because
+    zeta^n = 1, and the reversed orientation produces the factor -zeta. On the
+    arc the bound |1+z^n| >= R^n - 1 and the length 2 pi R/n give O(R^{1-n}),
+    which vanishes for n at least 2. The residue theorem then gives
+    (1 - zeta) I = -2 pi i omega/n, and (1 - zeta)/omega = omega^{-1} - omega =
+    -2i sin(pi/n), so I = pi/(n sin(pi/n)). Nothing was changed.
 ---
 
 ::: {.problem}

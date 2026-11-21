@@ -5,7 +5,9 @@ kind: problem
 title: 'Increasing simple approximation and countable indicator expansion'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Lebesgue Integration
+  - Measurable Functions
 relations: []
 review: draft
 audit:

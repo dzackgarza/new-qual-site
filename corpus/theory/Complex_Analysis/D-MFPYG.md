@@ -23,6 +23,8 @@ For $n\ge1$, points $a_1,\ldots,a_n\in\DD$, and $\lambda\in\CC$ with $\abs{\lamb
 $$
 B(z)\coloneqq\lambda\prod_{k=1}^{n}\psi_{a_k}(z)=\lambda\prod_{k=1}^{n}\frac{a_k-z}{1-\bar a_k z}.
 $$
+
+The factor is [@SS03, ch. 1, §4, Exercise 7], which introduces $\psi_\alpha(z)=(\alpha-z)/(1-\overline\alpha z)$ for $\abs\alpha<1$ and notes that these mappings are sometimes called Blaschke factors; that they are automorphisms of the disc is [@SS03, ch. 8, §2.1, Automorphisms of the disc].
 :::
 
 ::: {.remark}

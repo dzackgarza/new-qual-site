@@ -22,6 +22,13 @@ audit:
     unless every element has order at most two; in that remaining
     case the group is an F_2-vector space of dimension at least two
     and a basis transposition gives a nontrivial automorphism.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Fall91.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -29,6 +36,7 @@ Prove that every finite group of order at least $3$ has a nontrivial automorphis
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Fall 1991, retained in this repository as `assets/attachments/Fall91.pdf`; the statement below is its wording.
 Let $G$ be a finite group with $\abs{G}\geq3$.
 
 ::: pf

@@ -6,7 +6,9 @@ title: Pointwise convergence of a subsequence of primitives
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Arzela-Ascoli Theorem
+  - Integrals
 relations: []
 review: draft
 audit:

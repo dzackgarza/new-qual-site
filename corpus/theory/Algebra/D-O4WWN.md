@@ -19,7 +19,7 @@ The form $b$ is \dfn{nondegenerate} if its adjoint map
 $$
 \begin{aligned}
 V &\to V^{\vee} \\
-x &\mapsto b(x, \wait)
+x &\mapsto b(x, -)
 \end{aligned}
 $$
 is injective.

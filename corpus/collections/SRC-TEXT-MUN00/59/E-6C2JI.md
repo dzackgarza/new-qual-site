@@ -87,6 +87,16 @@ audit:
     on printed p. 345, and the segment argument of the same kind as the one on this
     corpus's E-E79BA. Not claimed: that the source proves the path connectedness it
     uses -- it takes it for granted, as the note of 2026-11-14 on this card records.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the page locators in the card's text are removed; the exercise and every theorem
+    it uses are cited by number --- §59 Exercise 4, Theorem 59.1, Theorem 59.3, Theorem 58.3,
+    Theorem 58.7 and Theorem 54.5 --- each read in `tmp/sources/munkres-2000-topology.md`, and
+    Pearse's §59 Exercise 4 is named by its exercise number. The earlier events keep their text
+    (QUAL-11); these numbered citations supersede their page locators. No step changes.
+
 ---
 
 ::: {.exercise}
@@ -100,12 +110,11 @@ If both $i_*$ and $j_*$ are trivial?
 :::
 
 ::: {.solution}
-The exercise is §59 Exercise 4, printed p. 370, under the hypotheses of Theorem
-59.1 (printed p. 368): $X=U\cup V$ with $U$ and $V$ open in $X$, $U\cap V$ path
+The exercise is §59 Exercise 4, under the hypotheses of Theorem 59.1: $X=U\cup V$ with $U$ and $V$ open in $X$, $U\cap V$ path
 connected and containing $x_0$, and $i:U\to X$, $j:V\to X$ the inclusions.
 
 Part (b) is transcribed from Pearse, *Topology (2nd ed.) — James R. Munkres*,
-solutions, Cornell 2005, §59 Exercise 4, his p. 25, read in
+solutions, Cornell 2005, §59 Exercise 4, read in
 `tmp/sources/cornell-erin-munkres.md`, and so is the first half of (a), that both
 homomorphisms trivial forces $\pi_1(X)$ trivial. The source's second half of (a)
 is defective, and the card does not follow it there: for the case that only $j_*$
@@ -149,8 +158,7 @@ $x_0$, hence path connected; so the hypotheses of Theorem 59.1 hold.
 The space $V$ is homeomorphic to an open interval, hence contractible, so
 $\pi_1(V,x_0)$ is trivial and $j_*:\pi_1(V,x_0)\to\pi_1(X,x_0)$ is the trivial
 homomorphism. Since $U=X$, the homomorphism $i_*$ is induced by the identity map
-of $S^1$ and is an isomorphism, and $\pi_1(X,x_0)\cong\ZZ$ by Theorem 54.5
-(printed p. 345). So a trivial $j_*$ does not force $\pi_1(X,x_0)$ to be trivial:
+of $S^1$ and is an isomorphism, and $\pi_1(X,x_0)\cong\ZZ$ by Theorem 54.5. So a trivial $j_*$ does not force $\pi_1(X,x_0)$ to be trivial:
 what Theorem 59.1 gives here is the surjectivity of $i_*$, and $\pi_1(X,x_0)$ can
 be all of $\pi_1(U,x_0)$.
 :::
@@ -194,10 +202,9 @@ projection from one of its two deleted points is a homeomorphism of the puncture
 sphere onto $\RR^2$ carrying the other deleted point to a point $q$, and
 $\RR^2-\theset q$ has the circle of radius $1$ about $q$ as a deformation retract
 by $x\mapsto q+(x-q)/\norm{x-q}$, so
-$\pi_1(U)\cong\pi_1(V)\cong\pi_1(S^1)\cong\ZZ$ by Theorem 58.3 (printed p. 361),
-Theorem 58.7 (printed p. 364) and Theorem 54.5. Neither is trivial.
+$\pi_1(U)\cong\pi_1(V)\cong\pi_1(S^1)\cong\ZZ$ by Theorem 58.3, Theorem 58.7 and Theorem 54.5. Neither is trivial.
 
-Finally $X=S^2$ is simply connected by Theorem 59.3 (printed p. 369), so
+Finally $X=S^2$ is simply connected by Theorem 59.3, so
 $\pi_1(X,x_0)$ is trivial; a homomorphism into a one-element group is trivial, so
 $i_*$ and $j_*$ are both trivial. That is the example required.
 :::

@@ -9,7 +9,8 @@ classification:
   topics: []
 relations: []
 review: draft
-provenance: []
+provenance:
+- assets/attachments/Week5_solns.pdf
 source:
   source_kind: compilation
   sections:
@@ -89,3 +90,9 @@ source:
     kind: year
     year: 2020
 ---
+
+::: {.remark}
+The problems are from a six-week GRE subject-test preparation course that Christian Parkinson taught and for which he prepared the notes and practice problems. The list names the retained booklet for this week, `assets/attachments/Week5_solns.pdf`, which prints each problem together with its worked solution and is where the printed statements were taken from.
+
+The practice sheet that the booklet answers is not retained and was not found: a search for the course and for its weekly sheets turned up the course's existence and these retained booklets, and no copy of the sheets themselves. A sheet, if one is later produced, belongs in this list ahead of the booklet.
+:::

@@ -116,7 +116,7 @@ the first computation by $\pi_1\pi_2=(0\,1\,2)$ and $(0\,1\,2)(0\,1)=(0\,2)$, th
 
 ::: pf-qed
 
-Steps 1--3 check the three assertions of Example 1 of §68 (printed p. 414), read as the exercise asks.
+Steps 1--3 check the three assertions of Example 1 of §68, read as the exercise asks.
 
 :::
 

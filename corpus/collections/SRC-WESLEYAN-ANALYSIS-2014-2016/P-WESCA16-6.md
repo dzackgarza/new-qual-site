@@ -5,7 +5,9 @@ kind: problem
 title: 'Automorphisms of the punctured disk'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Automorphisms of the Disc
+  - Conformal Maps
 relations: []
 review: draft
 audit:

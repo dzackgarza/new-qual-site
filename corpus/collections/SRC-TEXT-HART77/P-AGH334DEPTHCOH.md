@@ -183,6 +183,8 @@ Thus the equivalence in (b) holds for every finite module in the statement.
 :::
 
 ::: {.remark title="The exceptional depth convention"}
+The exercise is III.3.4 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is its text with one convention made explicit: the page defines $\depth_\mfa M$ as the maximum length of an $M$-regular sequence in $\mfa$ and says nothing about the case $\mfa M=M$, which the statement fixes as $\depth_\mfa M=\infty$ so that the equivalence of (a) covers $M$ of finite length.
+
 The maximum-length definition without the exceptional convention is insufficient for arbitrary ideals.
 For $A=k$, $\mfa=A$ and $M=k$, the functor $\Gamma_{\mfa}$ is zero on every module and all its derived functors vanish.
 But no nonzero scalar is an $M$-regular element with nonzero quotient, and zero does not act injectively on $M$.

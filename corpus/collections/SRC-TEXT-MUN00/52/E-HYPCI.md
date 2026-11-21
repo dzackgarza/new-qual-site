@@ -40,23 +40,60 @@ A subset $A$ of $\RR^n$ is said to be star convex if for some point $a_0$ of $A$
 :::
 
 ::: {.solution}
-(a) For example,
-$$
-A=\{(x,y)\in\RR^2:0\le x\le1,\ \abs{y}\le x\}\cup\{(x,0):1\le x\le2\}
-$$
-is star convex with respect to $(0,0)$: every radial segment from the origin to a point of $A$ stays in $A$. It is not convex, since $(1,1),(2,0)\in A$ but their midpoint $(3/2,1/2)\notin A$.
 
-(b) Let $a_0$ be a star center. Define
-$$
-H:A\times I\to A,\qquad H(x,t)=(1-t)x+t a_0.
-$$
-By star convexity the whole segment from $x$ to $a_0$ lies in $A$, so $H$ is well defined and continuous. Moreover
-$$
-H(x,0)=x,\qquad H(x,1)=a_0.
-$$
-Thus $A$ is contractible. A contractible space is path connected, and every loop $f:I\to A$ contracts by
-$$
-F(s,t)=H(f(s),t).
-$$
-Hence $\pi_1(A,a_0)=0$, so $A$ is simply connected.
+No retained solution set covers this exercise: the card's own argument follows, with the contractibility of a star convex set made into explicit homotopies.
+
+::: pf
+
+::: {.pf-step #example}
+(a) The set $A=\theset{(x,y)\mid 0\le x\le1,\ \abs{y}\le x}\cup\theset{(x,0)\mid 1\le x\le2}\subseteq\RR^{2}$ is star convex but not convex.
+
+:::: {.pf-proof}
+
+::: {.pf-step #star}
+$A$ is star convex with respect to $a_{0}=(0,0)$.
+
+::: pf-proof
+Let $(x,y)\in A$; a point of the segment from $a_{0}$ to $(x,y)$ is $t(x,y)=(tx,ty)$ with $0\le t\le1$. If $x\le1$ then $\abs{ty}=t\abs{y}\le tx$ and $0\le tx\le x\le1$, so $t(x,y)$ lies in the first piece. If $x>1$, then $y=0$ (second piece) and $t(x,y)=(tx,0)$; this lies in the first piece when $tx\le1$ and in the second when $1\le tx\le2$. So the whole segment lies in $A$.
+:::
+
+:::
+
+::: {.pf-step #not-convex}
+$A$ is not convex.
+
+::: pf-proof
+$(1,1)$ lies in $A$ ($\abs{1}\le1$) and $(2,0)$ lies in $A$ (second piece with $x=2$). The midpoint of the segment joining them is $(3/2,1/2)$, which is in $A$ only if $3/2\le1$ with $\abs{1/2}\le3/2$, or if its second coordinate is $0$ with $1\le3/2\le2$; neither holds. So $A$ is not convex.
+:::
+
+:::
+
+::::
+
+:::
+
+::: {.pf-step #contractible}
+(b) If $A$ is star convex with centre $a_{0}$, then $A$ is contractible.
+
+::: pf-proof
+Define $H:A\times I\to A$ by $H(x,t)=(1-t)x+t\,a_{0}$, the affine combination in $\RR^{n}$. It is continuous, taking values in $A$ because by star convexity the segment from $x$ to $a_{0}$ lies in $A$; and $H(x,0)=x$, $H(x,1)=a_{0}$ for every $x\in A$. So $H$ is a homotopy from the identity of $A$ to the constant map at $a_{0}$.
+:::
+
+:::
+
+::: {.pf-step #simply}
+$A$ is simply connected.
+
+::: pf-proof
+By step [](#contractible){.pf-ref} the space $A$ is contractible, hence path connected, so it has a fundamental group at $a_{0}$. A loop $f:I\to A$ with $f(0)=f(1)=a_{0}$ is homotopic to the constant loop by $F(s,t)=H\big(f(s),t\big)$, which satisfies $F(s,0)=f(s)$, $F(s,1)=a_{0}$, and $F(0,t)=F(1,t)=a_{0}$ since $f(0)=f(1)=a_{0}$. So every loop at $a_{0}$ is nullhomotopic and $\pi_{1}(A,a_{0})$ is trivial.
+:::
+
+:::
+
+::: {.pf-qed}
+Part (a) is step [](#example){.pf-ref} and part (b) is steps [](#contractible){.pf-ref} and [](#simply){.pf-ref}.
+:::
+
+:::
+
 :::

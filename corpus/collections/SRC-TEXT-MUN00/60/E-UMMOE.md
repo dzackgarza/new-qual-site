@@ -85,17 +85,17 @@ Use this covering space to show that the fundamental group of the figure eight i
 :::
 
 ::: {.solution}
-The exercise is §60 Exercise 5, printed p. 375, and the answer is that the
+The exercise is §60 Exercise 5, and the answer is that the
 fundamental group of the figure eight is not abelian. The proof is transcribed
 from Pearse, *Topology (2nd ed.) — James R. Munkres*, solutions, Cornell 2005,
-§60 Exercise 5, his pp. 27--28, read in
+§60 Exercise 5, his, read in
 `tmp/sources/cornell-erin-munkres.md`: take two loops, lift them from one point of
 the covering space the exercise names, and find that the two lifts of the two
-products end at different points, so by Theorem 54.3 (printed p. 344) the products
+products end at different points, so by Theorem 54.3  the products
 are not path homotopic.
 
 *The covering space.* Let $X=A\cup B$ be the figure eight, two circles meeting in
-the single point $x_0$. The covering space of Figure 60.3 (printed p. 375) has
+the single point $x_0$. The covering space of Figure 60.3 has
 three points over $x_0$, written $e_0,e_1,e_2$, and four circles: the circle $A_1$
 passes through $e_0$ and $e_2$, the circle $B_1$ passes through $e_0$ and $e_1$,
 the circle $A_0$ is attached to $B_1$ at $e_1$, and the circle $B_0$ is attached
@@ -133,8 +133,7 @@ interior of the circle $A_0$. The ends at $e_0$ that lie over $A$ are therefore
 the two arcs of $A_1$, the circle $A_0$ being attached at $e_1$. So a lift of $f$
 from $e_0$ starts along one of those arcs and, $p$ being injective on the arc,
 runs along it until $f$ returns to $x_0$, that is, to its other endpoint $e_2$.
-Such a lift exists and is unique from the given point (Lemma 54.1, printed
-p. 342), so the lift of $f$ from $e_0$ ends at $e_2$.
+Such a lift exists and is unique from the given point (Lemma 54.1), so the lift of $f$ from $e_0$ ends at $e_2$.
 
 For the product $f*g$ the lift continues from $e_2$ with the lift of $g$. At
 $e_2$ the ends over $B$ are the two ends of the circle $B_0$, since $B_1$ does
@@ -155,10 +154,10 @@ $\boxed{\pi_1(X,x_0)\ \text{is not abelian}}$.
 ::: pf-proof
 The points $e_1$ and $e_2$ are distinct. If $f*g$ and $g*f$ were path homotopic,
 their lifts from the same point $e_0$ would end at the same point of the cover
-(Theorem 54.3, printed p. 344); by step [](#lifts){.pf-ref} those endpoints are
+(Theorem 54.3); by step [](#lifts){.pf-ref} those endpoints are
 $e_1$ and $e_2$. Hence $[f]*[g]\ne[g]*[f]$ in $\pi_1(X,x_0)$, that is, the
 fundamental group of the figure eight is not abelian. The covering gives another
-proof of Lemma 60.5 (printed p. 373), whose own covering the book describes in
+proof of Lemma 60.5 , whose own covering the book describes in
 words on printed pp. 373--374 and leaves to the reader to check.
 :::
 

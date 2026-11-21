@@ -26,25 +26,65 @@ $$
 :::
 
 ::: {.solution}
-Choose $r>0$ so small that the closed square
-$$
-Q_r=\{w+x+iy:\abs{x}\le r,\ \abs{y}\le r\}
-$$
-lies in the interior of $T$ and in a neighborhood on which $\abs{f}\le M$ for some $M$.
 
-The compact polygonal region $T\setminus\operatorname{int}(Q_r)$ can be triangulated into finitely many triangles whose closures avoid $w$. On each such triangle $f$ is holomorphic in a neighborhood of the triangle and its interior, so Goursat's theorem gives zero integral around its boundary. Summing over the triangulation cancels all interior edges and yields
-$$
-\int_T f(z)\,dz=\int_{\partial Q_r}f(z)\,dz,
-$$
-where $\partial Q_r$ is positively oriented.
+The argument is the card's own: excise a small square around the exceptional point, apply Goursat off it, and let the square shrink.
 
-The perimeter of $Q_r$ is $8r$, so
+::: pf
+
+::: {.pf-step #excision}
+
+There is $r>0$ and $M$ with the closed square $Q_{r}$ around $w$ inside $T$ and $\abs{f}\le M$ on it.
+
+::: pf-proof
+
+$f$ is holomorphic on $\Omega$ except possibly at $w$, and is bounded near $w$: there are $\eta>0$ and $M$ with $\abs{f}\le M$ on $D(w,\eta)\cap(\Omega-\{w\})$. Since $w$ lies in the interior of $T$ and $T$ with its interior lies in the open set $\Omega$, a small square centred at $w$ is contained in the interior of $T$ and in $D(w,\eta)$; choose $r>0$ that small and increase $M$ to cover the finitely many points if necessary.
+
+:::
+
+:::
+
+::: {.pf-step #goursat}
+
+$\displaystyle\int_{T}f\,dz=\int_{\partial Q_{r}}f\,dz$.
+
+::: pf-proof
+
+The compact polygonal region $T-\operatorname{int}(Q_{r})$ can be triangulated into finitely many closed triangles each lying in $T$ and meeting the boundary of $Q_{r}$ along an edge, and each avoiding $w$ in its closure by the choice of $Q_{r}\subset\operatorname{int}T$. On each such triangle $f$ is holomorphic in a neighbourhood of the closed triangle, since that neighbourhood avoids $w$; Goursat's theorem then gives zero integral of $f$ around its boundary. Summing these vanishing integrals cancels every interior edge, which appears twice with opposite orientations, leaving the boundary of $T$ together with the boundary of $Q_{r}$ traversed negatively:
 $$
-\abs{\int_{\partial Q_r}f(z)\,dz}
-\le 8Mr.
+\int_{\partial T}f\,dz-\int_{\partial Q_{r}}f\,dz=0.
 $$
-Letting $r\downarrow0$ gives
+
+:::
+
+:::
+
+::: {.pf-step #bound}
+
+$\abs{\int_{\partial Q_{r}}f\,dz}\le 8Mr$.
+
+::: pf-proof
+
+The boundary of $Q_{r}$ consists of four segments each of length $2r$, so its total length is $8r$. On it, $\abs{f}\le M$ by step [](#excision){.pf-ref}. The standard estimate for a contour integral bounds the modulus of the integral by the maximum of the integrand times the length of the contour.
+
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+
+$\displaystyle\int_{T}f\,dz=0$.
+
+::: pf-proof
+
+Steps [](#goursat){.pf-ref} and [](#bound){.pf-ref} give $\abs{\int_{T}f\,dz}=\abs{\int_{\partial Q_{r}}f\,dz}\le 8Mr$ for every sufficiently small $r>0$, and $8Mr\to0$ as $r\downarrow0$; the left side does not depend on $r$. A nonnegative real number bounded by arbitrarily small positive numbers is $0$, so
 $$
-\int_T f(z)\,dz=0.
+\boxed{\int_{T}f(z)\,dz=0.}
 $$
+
+:::
+
+:::
+
+:::
+
 :::

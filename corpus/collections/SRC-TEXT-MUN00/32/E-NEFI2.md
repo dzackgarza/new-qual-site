@@ -43,6 +43,23 @@ audit:
     countable basis", the same position as Doug's World, printed p. 6; the card's proof is that
     sentence carried out, with the A <= U and B <= V checks. This exercise stays in the
     COMPLAINTS.md entry.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against Munkres, Topology (2000), Section 32 Exercise 4, printed p. 205, and
+    found correct. The countable families $U_n\supseteq A$ and $V_n\supseteq B$ exist because a
+    closed subspace of a Lindelöf space is Lindelöf (Exercise 30.9) and regularity separates
+    each point of $A$ from the closed set $B$ by an open set whose closure misses $B$; the sets
+    $U$ and $V$ are open and contain $A$ and $B$ because $a\notin\overline{V_i}$ for every $i$;
+    and they are disjoint, a point of $U_m\setminus\bigcup_{i\le m}\overline{V_i}$ that also lay
+    in $V_n\setminus\bigcup_{i\le n}\overline{U_i}$ contradicting $m\le n$ through
+    $\overline{U_m}$ and $n\le m$ through $\overline{V_n}$. The two inclusions and the
+    disjointness are those of the construction in Theorem 32.1, with a countable subcover in place
+    of a countable basis. Not checked: the printed folio, the checkout holding only the extraction
+    `tmp/sources/munkres-2000-topology.md`, which records page ranges and not folios; and no
+    published solution was located in this pass, the two retained sets that reach the exercise
+    giving the one-sentence reduction recorded in the earlier events.
 ---
 
 ::: {.exercise}
@@ -51,31 +68,55 @@ Show that every regular Lindelöf space is normal.
 :::
 
 ::: {.solution}
-Let $A,B\subset X$ be disjoint closed sets. If either is empty, $X$ and $\varnothing$ separate them. Assume both are nonempty. Since $X$ is regular, for each $a\in A$ choose an open $U_a\ni a$ with
-$$
-\overline{U_a}\cap B=\varnothing.
-$$
-Because closed subspaces of Lindelöf spaces are Lindelöf, $A$ is Lindelöf. Hence choose a countable family $U_1,U_2,\dots$ covering $A$. Similarly choose open sets $V_1,V_2,\dots$ covering $B$ with
-$$
-\overline{V_n}\cap A=\varnothing.
-$$
 
-Define
-$$
-U=\bigcup_{n\ge1}\left(U_n\setminus\bigcup_{i=1}^n\overline{V_i}\right),
-$$
-$$
-V=\bigcup_{n\ge1}\left(V_n\setminus\bigcup_{i=1}^n\overline{U_i}\right).
-$$
-Each is open. Every $a\in A$ belongs to some $U_n$, and $a\notin\overline{V_i}$ for all $i$, so $A\subset U$. Similarly $B\subset V$.
+No retained solution set covers this exercise: the card's own argument follows, with the countable covers, the two inclusions and the disjointness as separate steps.
 
-They are disjoint. If $x$ belonged to both, choose $m,n$ such that
-$$
-x\in U_m\setminus\bigcup_{i\le m}\overline{V_i}
-$$
-and
-$$
-x\in V_n\setminus\bigcup_{i\le n}\overline{U_i}.
-$$
-If $m\le n$, then $x\in U_m\subset\overline{U_m}$, contradicting the second membership; if $n\le m$, then $x\in V_n\subset\overline{V_n}$, contradicting the first. Thus $X$ is normal.
+Let $X$ be regular and Lindelöf, and let $A,B\subseteq X$ be disjoint closed sets.
+
+::: pf
+
+::: {.pf-step #trivial}
+If $A=\varnothing$ or $B=\varnothing$ the sets $X$ and $\varnothing$ are disjoint open sets containing $A$ and $B$.
+
+::: pf-proof
+$X$ and $\varnothing$ are open and disjoint, and they contain $A$ and $B$ whatever those sets are; so assume from now on that both are nonempty.
+:::
+
+:::
+
+::: {.pf-step #covers}
+There are countable families of open sets $U_{n}\supseteq A$, $V_{n}\supseteq B$ with $\overline{U_{n}}\cap B=\varnothing$ and $\overline{V_{n}}\cap A=\varnothing$.
+
+::: pf-proof
+Regularity applied to $a\in A$ and the closed set $B$ not containing $a$ gives an open $W_{a}\ni a$ with $\overline{W_{a}}\cap B=\varnothing$. The traces $W_{a}\cap A$ form an open cover of the subspace $A$, and $A$ is Lindelöf: a closed subspace of a Lindelöf space is Lindelöf (Exercise 30.9). So countably many of them, indexed $U_{n}$, cover $A$, and each satisfies $\overline{U_{n}}\cap B=\varnothing$. The same construction with the roles of $A$ and $B$ exchanged gives the $V_{n}$, using that $B$ is closed hence Lindelöf.
+:::
+
+:::
+
+::: {.pf-step #open-sets}
+The sets
+$$U=\bigcup_{n\ge1}\Big(U_{n}\setminus\bigcup_{i\le n}\overline{V_{i}}\Big),\qquad V=\bigcup_{n\ge1}\Big(V_{n}\setminus\bigcup_{i\le n}\overline{U_{i}}\Big)$$
+are open, with $A\subseteq U$ and $B\subseteq V$.
+
+::: pf-proof
+Each $\bigcup_{i\le n}\overline{V_{i}}$ is closed, being a finite union of closed sets, so $U_{n}\setminus\bigcup_{i\le n}\overline{V_{i}}$ is open and $U$ is a union of open sets; symmetrically for $V$. If $a\in A$ then $a\in U_{n}$ for some $n$, and $a\notin\overline{V_{i}}$ for every $i$ by step [](#covers){.pf-ref}, so $a\in U$. Symmetrically $B\subseteq V$.
+:::
+
+:::
+
+::: {.pf-step #disjoint}
+$U\cap V=\varnothing$.
+
+::: pf-proof
+Suppose $x\in U\cap V$. Then for some $m$ one has $x\in U_{m}$ and $x\notin\bigcup_{i\le m}\overline{V_{i}}$, and for some $n$ one has $x\in V_{n}$ and $x\notin\bigcup_{i\le n}\overline{U_{i}}$. If $m\le n$, then $x\in U_{m}\subseteq\overline{U_{m}}\subseteq\bigcup_{i\le n}\overline{U_{i}}$, contradicting the second statement; if $n\le m$, then $x\in V_{n}\subseteq\overline{V_{n}}\subseteq\bigcup_{i\le m}\overline{V_{i}}$, contradicting the first. One of the two cases always holds.
+:::
+
+:::
+
+::: {.pf-qed}
+Disjoint closed sets are separated by the disjoint open sets $U\supseteq A$ and $V\supseteq B$ of steps [](#open-sets){.pf-ref} and [](#disjoint){.pf-ref}, and the empty case is step [](#trivial){.pf-ref}; so $X$ is normal.
+:::
+
+:::
+
 :::

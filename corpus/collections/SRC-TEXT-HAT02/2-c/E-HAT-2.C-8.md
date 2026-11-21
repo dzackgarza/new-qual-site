@@ -67,7 +67,22 @@ audit:
     where $L$ is required, and the countable bound's factor $V_L^{V_{\mathrm{sd}^nK}}$ is left
     unexplained although it must be read as the set of vertex functions. Every remaining step of the
     card is Poulsen's, expanded.
----
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 8 of §2.C, printed p. 184, in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`, and against the complete published solution,
+    Poulsen, Exercise 2.C.8, printed p. 30 of `tmp/sources/poulsen-at-ex.pdf`, whose folio closes that
+    page. Checked: $\operatorname{sd}^rK$ has finitely many vertices and $L$ at most countably many,
+    a simplicial map is determined by its vertex values and every vertex function extends linearly, so
+    there are at most $\abs{V_L}^{\abs{V_{\operatorname{sd}^rK}}}$ simplicial maps, countable; the
+    union over $r$ is a countable union of countable sets; Theorem 2C.1 gives a simplicial
+    representative after finitely many subdivisions of the finite domain; and $[X,Y]\cong[K,L]$
+    through the homotopy equivalences. The two slips of the printed source that the card records were
+    confirmed: $\psi_Y$ is printed with codomain $K$, and the bound's factor is the set of vertex
+    functions. No defect.
+
 ---
 
 ::: {.problem}
@@ -76,7 +91,7 @@ Using the simplicial approximation theorem, show that there are at most countabl
 :::
 
 ::: {.solution}
-The complete published argument is **Morten Poulsen, *Allen Hatcher: Algebraic Topology* (3 November 2006), Exercise 2.C.8, printed p. 30** — `tmp/sources/poulsen-at-ex.pdf`, 33 pages, 441,762 bytes, whose page 30 is the PDF page of the same number here (the printed folio $30$ closes the page carrying Exercises 2.C.8 and 2.C.9). It transports $[X,Y]$ to $[K,L]$, applies simplicial approximation over all iterated subdivisions, and counts the vertex maps. The theorem used for the simplicial-representative step is **Hatcher's Theorem 2C.1, printed pp. 178--179**: after finitely many barycentric subdivisions of the finite domain, every continuous map is homotopic to a simplicial map. Poulsen's text has two slips, neither of which the proof below reproduces. First, his homotopy inverse is printed as $\psi_Y:K\to Y$ although $\psi_Y$ must run $L\to Y$ for the composites $\varphi_Yf\psi_X$ and $\psi_Yf\varphi_X$ to be defined; the proof below uses the mathematically required codomain. Second, his displayed bound writes the union $\bigcup_{n\in\NN}V_L^{V_{\mathrm{sd}^nK}}$ without saying what $V_L^{V_{\mathrm{sd}^nK}}$ denotes: it is the set of vertex maps, that is, of functions from the vertices of $\mathrm{sd}^nK$ to the vertices of $L$. The proof below states this, since it is what makes each factor countable.
+The complete published argument is **Morten Poulsen, *Allen Hatcher: Algebraic Topology* (3 November 2006), Exercise 2.C.8** — `tmp/sources/poulsen-at-ex.pdf`, 33 pages, 441,762 bytes, whose page 30 is the PDF page of the same number here (the printed folio $30$ closes the page carrying Exercises 2.C.8 and 2.C.9). It transports $[X,Y]$ to $[K,L]$, applies simplicial approximation over all iterated subdivisions, and counts the vertex maps. The theorem used for the simplicial-representative step is **Hatcher's Theorem 2C.1**: after finitely many barycentric subdivisions of the finite domain, every continuous map is homotopic to a simplicial map. Poulsen's text has two slips, neither of which the proof below reproduces. First, his homotopy inverse is printed as $\psi_Y:K\to Y$ although $\psi_Y$ must run $L\to Y$ for the composites $\varphi_Yf\psi_X$ and $\psi_Yf\varphi_X$ to be defined; the proof below uses the mathematically required codomain. Second, his displayed bound writes the union $\bigcup_{n\in\NN}V_L^{V_{\mathrm{sd}^nK}}$ without saying what $V_L^{V_{\mathrm{sd}^nK}}$ denotes: it is the set of vertex maps, that is, of functions from the vertices of $\mathrm{sd}^nK$ to the vertices of $L$. The proof below states this, since it is what makes each factor countable.
 
 Choose homotopy equivalences
 $$
@@ -97,7 +112,7 @@ $$
 
 ::: pf-proof
 
-The complex $\operatorname{sd}^rK$ has finitely many vertices, while $L$ has at most countably many vertices. A simplicial map is determined by its map on vertices, and every function from the vertex set of $\operatorname{sd}^rK$ to the vertex set of $L$ determines a simplicial map, namely its linear extension. So the simplicial maps $\operatorname{sd}^rK\to L$ correspond exactly to the vertex functions $V_{\operatorname{sd}^rK}\to V_L$, a set of cardinality $|V_L|^{|V_{\operatorname{sd}^rK}|}$, which is countable because $V_{\operatorname{sd}^rK}$ is finite and $V_L$ is at most countable.
+The complex $\operatorname{sd}^rK$ has finitely many vertices, while $L$ has at most countably many vertices. A simplicial map is determined by its map on vertices, and every function from the vertex set of $\operatorname{sd}^rK$ to the vertex set of $L$ determines a simplicial map, namely its linear extension. So the simplicial maps $\operatorname{sd}^rK\to L$ correspond exactly to the vertex functions $V_{\operatorname{sd}^rK}\to V_L$, a set of cardinality $\abs{V_L}^{\abs{V_{\operatorname{sd}^rK}}}$, which is countable because $V_{\operatorname{sd}^rK}$ is finite and $V_L$ is at most countable.
 
 :::
 

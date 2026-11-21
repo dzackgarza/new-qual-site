@@ -42,6 +42,22 @@ audit:
     $\deg\widehat P=n$; the closing step now says why a proper map missing a point has degree
     zero, namely that it lands in a contractible $S^4\setminus\{0\}$. Cited and not re-proved:
     the degree formula for radial extensions and Hatcher Theorem 1.8.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 10 of §3.C, printed pp. 291--292. All three parts check out.
+    (a) For primitive $\alpha$, $\mu^*\alpha=\alpha\times1+1\times\alpha$ and $(fg)^*=\delta_{f,g}^*\mu^*$,
+    so $(fg)^*\alpha=f^*\alpha+g^*\alpha$; the Künneth identification used in the middle step is
+    exactly where freeness and finite generation of $H^*(X;R)$ enter. (b) The induction
+    $P_{k+1}=P_k\cdot\mathrm{id}$ gives $P_k^*\alpha=k\alpha$; on $S^3$ the degree-three generator is
+    primitive because there is no bidegree $(i,j)$ with $i,j>0$ summing to $3$ and $H^1=H^2=0$, so
+    the quaternionic $k$-th power map has degree $k$. (c) The quaternionic polynomial is proper,
+    its compactification has the degree of its leading term, left and right multiplication by a
+    nonzero quaternion have degree $+1$, the $n$-th power has degree $n$ by (b), so the degree is
+    $n\ne0$; a rootless $P$ would give a map into the contractible $S^4\setminus\{0\}$ and degree
+    $0$. Nothing changed. Cited and not re-proved: the degree formula for radial extensions and
+    Theorem 1.8. Not claimed: a certificate.
 ---
 
 ::: {.problem}

@@ -6,7 +6,8 @@ title: Adjoining a separated complementary component preserves connectedness
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Connectedness
 relations: []
 review: draft
 audit:

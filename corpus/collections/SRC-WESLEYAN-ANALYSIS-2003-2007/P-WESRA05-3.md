@@ -19,6 +19,31 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 32: item 3 of the Real Analysis
+    Preliminary Examination, 2005, parts (a)-(d), printed there under the heading of the
+    exam. The page had cited only the extraction; it now names the examination, its item
+    and the page of the scan. The statement is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The Baire-category step bounded Th for norm h strictly below r and then scaled to the
+    constant 2m/r, which that hypothesis does not give: h of norm exactly r was needed.
+    The bound is taken over the closed ball, which lies in the closed set E_m, and the
+    scaling is written out. The constant 2m/r and the statement are unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -34,6 +59,9 @@ Let $B$ be a real vector space.
 :::
 
 ::: {.solution}
+The item is item 3 of the Real Analysis Preliminary Examination, 2005 (norms, the metric
+they induce, Banach spaces, and the uniform boundedness theorem with the idea of its
+proof).
 
 ::: pf
 
@@ -138,13 +166,13 @@ Since $B$ is complete, Baire's theorem implies that some $E_m$ contains a ball
 $$
 B(x_0,r)\subseteq E_m.
 $$
-If $\norm{h}<r$, then $x_0$ and $x_0+h$ lie in $E_m$, so for every $T\in\mathcal T$,
+If $\norm{h}\le r$, then $x_0$ and $x_0+h$ lie in $E_m$ (the closed ball lies in $E_m$ because $E_m$ is closed), so for every $T\in\mathcal T$,
 $$
 \norm{Th}
 \le\norm{T(x_0+h)}+\norm{Tx_0}
 \le2m.
 $$
-By scaling, for arbitrary $x\ne0$,
+By scaling — writing $x\ne0$ as $x=(\norm{x}/r)h$ with $h=rx/\norm{x}$, so that $\norm{h}=r$ —
 $$
 \norm{Tx}\le \frac{2m}{r}\norm{x}.
 $$

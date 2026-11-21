@@ -5,7 +5,9 @@ kind: problem
 title: "Differentiate a tenth power involving an exponential"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Differentiation
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:
@@ -13,6 +15,24 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis section 1, item 5 (Summer 2005) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 25: the Complex Analysis Section of
+    the Analysis Qualifier, Wesleyan University, Summer 2005, Section 1 item 5. The page had cited
+    only the extraction; it now names the examination, its item and the page of the
+    scan. The statement is unchanged, and the trailing pf-qed that only announced the last step is dropped.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -23,6 +43,9 @@ $$
 :::
 
 ::: {.solution}
+The item is Section 1 item 5 of the Complex Analysis Section of the Analysis Qualifier, Wesleyan
+University, Summer 2005 (calculate h'(z) for h(z) = ((z^2-1)/e^z)^10).
+
 
 ::: pf
 
@@ -107,11 +130,6 @@ $$
 
 :::
 
-::: pf-qed
-
-Step [](#s1-3){.pf-ref} gives the requested derivative.
-
-:::
 
 :::
 

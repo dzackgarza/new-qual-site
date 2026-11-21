@@ -36,70 +36,53 @@ $$
 
 
 ::: {.solution}
-Let
-$$
-u(x)=\sqrt3\,x,
-\qquad
-v(x)=\sqrt5\,x^2.
-$$
-Then
-$$
-\norm{u}_2^2=3\int_{-1}^1x^2\,dx=2,
-\qquad
-\norm{v}_2^2=5\int_{-1}^1x^4\,dx=2,
-$$
-and
-$$
-\langle u,v\rangle
-=\sqrt{15}\int_{-1}^1x^3\,dx=0.
-$$
-Hence
-$$
-\norm{u-v}_2^2=\norm{u}_2^2+\norm{v}_2^2=4,
-\qquad
-\norm{u-v}_2=2.
-$$
 
-The two conditions on $f$ are
-$$
-\norm{f-u}_2\le\frac12,
-\qquad
-\norm{f-v}_2\le\frac32.
-$$
-By the triangle inequality,
-$$
-2=\norm{u-v}_2
-\le \norm{u-f}_2+\norm{f-v}_2
-\le \frac12+\frac32=2.
-$$
-Thus equality holds everywhere. In particular,
-$$
-\norm{u-f}_2=\frac12,
-\qquad
-\norm{f-v}_2=\frac32,
-$$
-and equality holds in the triangle inequality for
-$$
-u-v=(u-f)+(f-v).
-$$
-In a Hilbert space, equality in the triangle inequality implies that $u-f$ and $f-v$ are nonnegative scalar multiples of one another. Hence $f$ lies on the line segment from $u$ to $v$.
+No retained solution set covers this exercise: the card's own Hilbert-space argument follows, with the orthogonality and norms, the equality case of the triangle inequality, and the identification of $f$ as separate steps.
 
-Since $\norm{u-v}_2=2$ and $\norm{f-u}_2=1/2$, the point is one quarter of the way from $u$ to $v$:
-$$
-f=u+\frac14(v-u)=\frac34u+\frac14v.
-$$
-Therefore the unique solution is
-$$
-\boxed{
-f(x)=\frac{3\sqrt3}{4}x+\frac{\sqrt5}{4}x^2
-\quad\text{a.e. on }[-1,1].
-}
-$$
-Indeed,
-$$
-\norm{f-u}_2=\frac14\norm{v-u}_2=\frac12,
-\qquad
-\norm{f-v}_2=\frac34\norm{u-v}_2=\frac32,
-$$
-so this function satisfies both inequalities with equality.
+Let $u(x)=\sqrt3 x$ and $v(x)=\sqrt5 x^{2}$ in $L^{2}([-1,1])$.
+
+::: pf
+
+::: {.pf-step #norms}
+$\norm{u}=\norm{v}=\sqrt2$ and $\langle u,v\rangle=0$, so $\norm{u-v}=2$.
+
+::: pf-proof
+$\int_{-1}^{1}x^{2}dx=\tfrac23$ gives $\norm{u}^{2}=3\cdot\tfrac23=2$, and $\int_{-1}^{1}x^{4}dx=\tfrac25$ gives $\norm{v}^{2}=5\cdot\tfrac25=2$; $\langle u,v\rangle=\sqrt{15}\int_{-1}^{1}x^{3}dx=\sqrt{15}\cdot0=0$ because $x^{3}$ is odd. Hence $\norm{u-v}^{2}=\norm{u}^{2}+\norm{v}^{2}=4$.
+:::
+
+:::
+
+::: {.pf-step #conditions}
+The hypotheses are $\norm{f-u}\le\tfrac12$ and $\norm{f-v}\le\tfrac32$.
+
+::: pf-proof
+$\int\abs{f-\sqrt3 x}^{2}=\norm{f-u}^{2}\le\tfrac14$ if and only if $\norm{f-u}\le\tfrac12$; and $\int\abs{f-\sqrt5x^{2}}^{2}\le\tfrac94$ if and only if $\norm{f-v}\le\tfrac32$.
+:::
+
+:::
+
+::: {.pf-step #equality}
+Both inequalities are equalities: $\norm{f-u}=\tfrac12$ and $\norm{f-v}=\tfrac32$.
+
+::: pf-proof
+The triangle inequality and the bounds of step [](#conditions){.pf-ref} give $2=\norm{u-v}\le\norm{u-f}+\norm{f-v}\le\tfrac12+\tfrac32=2$, so every term is forced to be its extreme value.
+:::
+
+:::
+
+::: {.pf-step #identify}
+$f=\tfrac34 u+\tfrac14 v$, and this $f$ satisfies the two conditions.
+
+::: pf-proof
+Equality in the triangle inequality for a strictly convex normed space means $u-f$ and $f-v$ are nonnegative multiples of one another: $u-f=t(f-v)$ with $t\ge0$. Taking norms and using step [](#equality){.pf-ref}, $t=\tfrac12\big/\tfrac32=\tfrac13$, so $\tfrac13(f-v)=u-f$, that is $\tfrac43 f=u+\tfrac13v$ and $f=\tfrac34 u+\tfrac14 v$. Then $u-f=\tfrac14(u-v)$ has norm $\tfrac14\cdot2=\tfrac12$ and $f-v=\tfrac34(v-u)$ has norm $\tfrac34\cdot2=\tfrac32$, so both conditions hold.
+:::
+
+:::
+
+::: {.pf-qed}
+The unique solution is $f(x)=\tfrac{3\sqrt3}{4}x+\tfrac{\sqrt5}{4}x^{2}$, by steps [](#identify){.pf-ref} and [](#equality){.pf-ref}. Equivalently, the closed balls of radii $\tfrac12$ about $u$ and $\tfrac32$ about $v$ meet in exactly one point, the one dividing the segment $[u,v]$ in the ratio $1:3$.
+:::
+
+:::
+
 :::

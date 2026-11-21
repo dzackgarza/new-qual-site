@@ -5,7 +5,9 @@ kind: problem
 title: The annihilator of a sum of two subspaces
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Annihilators
+  - Dual Spaces
 relations: []
 review: draft
 audit:

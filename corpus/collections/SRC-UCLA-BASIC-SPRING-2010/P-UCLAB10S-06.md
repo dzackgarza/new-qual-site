@@ -6,7 +6,9 @@ title: Jordan powers and a second-order recurrence
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Jordan Canonical Form
+  - Recurrences
 relations: []
 review: draft
 audit:

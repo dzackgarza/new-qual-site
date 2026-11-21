@@ -5,7 +5,8 @@ kind: problem
 title: "Cauchy–Riemann equations everywhere do not imply analyticity"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy-Riemann
 relations: []
 review: draft
 audit:
@@ -13,6 +14,31 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis section 1.2, item 2 (August 2, 2004) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 33, printed page 1: section 1.2 item 2 of
+    the Preliminary Examination in Analysis, Wesleyan University, August 2, 2004. The
+    page had cited only the extraction; it now names the examination, its item and the
+    page of the scan. The statement is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The proof ended with a pf-qed that only announced that an earlier step had answered
+    the question, which STYLE-08 forbids; it is dropped, and the step that carries the
+    result is now the QED step. No argument or statement changes.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -29,6 +55,9 @@ Explain how this is possible.
 :::
 
 ::: {.solution}
+The item is section 1.2 item 2 of the Preliminary Examination in Analysis, Wesleyan University,
+August 2, 2004 ($e^{-1/z^4}$ satisfies the Cauchy--Riemann equations everywhere without being analytic).
+
 
 Write
 $$
@@ -305,11 +334,6 @@ continuous at the origin.
 
 :::
 
-::: pf-qed
-
-Step [](#s1-8){.pf-ref} explains exactly why there is no contradiction.
-
-:::
 
 :::
 

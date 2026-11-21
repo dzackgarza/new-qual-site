@@ -137,8 +137,10 @@ Combine steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
 
 ::: {.pf-step #s1-6}
 
-Therefore $f$ is constant on $\RR$.
-
+Therefore $f$ is constant on $\RR$, so the necessarily true statement is
+$$
+\boxed{\text{(a) }f\text{ is constant}.}
+$$
 
 ::: pf-proof
 
@@ -149,25 +151,9 @@ is constant there. The real line is an interval.
 
 :::
 
-::: {.pf-step #s1-7}
-
-Thus the necessarily true statement is
-$$
-\boxed{\text{(a) }f\text{ is constant}.}
-$$
-
-
-::: pf-proof
-
-This is step [](#s1-6){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-7){.pf-ref} gives the required choice.
+Step [](#s1-6){.pf-ref} gives the required choice.
 
 :::
 

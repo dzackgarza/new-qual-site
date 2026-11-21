@@ -6,7 +6,9 @@ title: Analytic functions with equal modulus differ by a unimodular constant
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Identity Theorem
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:

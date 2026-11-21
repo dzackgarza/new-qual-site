@@ -32,7 +32,16 @@ audit:
     equivalently every irreducible with a root in E is separable, gcd(f,f') = 1) and
     normal (every irreducible with a root in E splits; equivalently sigma(E) = E for
     every k-embedding into an algebraic closure). No defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 11, final part B(i)--(vi).
+    Algebraic element, minimal polynomial (monic least degree, irreducible, divides every
+    vanishing polynomial), separable (distinct roots; every irreducible with a root in $E$
+    separable; $\gcd(f,f')=1$), normal (every irreducible with a root in $E$ splits;
+    $\sigma(E)=E$ for every $k$-embedding), algebraic closure (algebraic and algebraically
+    closed), and $\operatorname{Gal}_k(E)=\operatorname{Aut}_k(E)$. No defect.
 ---
 
 ::: {.exercise}

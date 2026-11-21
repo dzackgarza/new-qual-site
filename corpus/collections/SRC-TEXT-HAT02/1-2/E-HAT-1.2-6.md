@@ -126,7 +126,7 @@ Topology: $Z$ is closed, each $B_d$ is closed, the interiors of the balls are pa
 $$
 \{Z\}\cup\{B_d:d\in D\}
 $$
-is a locally finite closed cover of $\RR^n$, so $\RR^n$ carries the weak topology with respect to it. That is precisely the topology of the space obtained from $Z$ by attaching the $n$-cells $B_d$ along the attaching maps $\partial B_d\to Z$ of the construction on p. 49.
+is a locally finite closed cover of $\RR^n$, so $\RR^n$ carries the weak topology with respect to it. That is precisely the topology of the space obtained from $Z$ by attaching the $n$-cells $B_d$ along the attaching maps $\partial B_d\to Z$ of the construction preceding Proposition 1.26.
 
 :::
 
@@ -142,7 +142,7 @@ induces an isomorphism on fundamental groups.
 
 ::: pf-proof
 
-By step [](#s3){.pf-ref} and the preceding step, $\RR^n$ is obtained from the path connected space $Z$ by attaching a collection of $n$-cells with $n>2$. Proposition 1.26(b) (p. 50) applies to the whole collection at once and gives
+By step [](#s3){.pf-ref} and the preceding step, $\RR^n$ is obtained from the path connected space $Z$ by attaching a collection of $n$-cells with $n>2$. Proposition 1.26(b) applies to the whole collection at once and gives
 $$
 \pi_1(Z)\cong\pi_1(\RR^n).
 $$

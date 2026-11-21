@@ -6,7 +6,9 @@ title: Recovering a lost permutation in $A_{10}$ and its order
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Alternating Groups
+  - Permutations
 relations: []
 review: draft
 audit:

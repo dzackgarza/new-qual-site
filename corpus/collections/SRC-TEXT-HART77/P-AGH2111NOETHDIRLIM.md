@@ -265,7 +265,9 @@ Step [](#s5){.pf-ref} proves that the sectionwise direct limit is already a shea
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), text version `tmp/sources/hartshorne-solutions-kim.md`, Chapter II §1, Exercise 1.11, PDF p. 5, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he replaces the cover by a finite subcover, using the noetherian hypothesis, and uses that filtered colimits commute with the finite limit which expresses the sheaf axiom, checking existence for the finite subfamily and deducing the remaining sections from uniqueness.
+The exercise is Hartshorne, Exercise II.1.11, at the head of §II.1, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`.  The statement above is that exercise's text, both sentences including $\Gamma(X,\varinjlim\mcf_i)=\varinjlim\Gamma(X,\mcf_i)$.
+
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), text version `tmp/sources/hartshorne-solutions-kim.md`, Chapter II §1, Exercise 1.11, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he replaces the cover by a finite subcover, using the noetherian hypothesis, and uses that filtered colimits commute with the finite limit which expresses the sheaf axiom, checking existence for the finite subfamily and deducing the remaining sections from uniqueness.
 The proof above is the same, with the quasi-compactness of open subsets proved in step [](#s1){.pf-ref} and uniqueness and gluing separated.
 Kim raises in a footnote the question whether the index set must be directed. The proof above states that hypothesis, and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} are where it is spent: finitely many conditions, each of which holds at some stage of the system, hold together at one later stage.
 The hypothesis is the one Hartshorne II.1.10 uses, where the direct limit of a system of sheaves is defined as the sheafification of the sectionwise presheaf; what the exercise adds is that on a noetherian space that sheafification is the identity (step [](#s5){.pf-ref}).

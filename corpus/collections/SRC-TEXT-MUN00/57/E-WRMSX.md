@@ -91,13 +91,13 @@ Show that if $g: S^2 \to S^2$ is continuous and $g(x) \neq g(-x)$ for all $x$, t
 :::
 
 ::: {.solution}
-The exercise is §57 Exercise 2, printed p. 359, whose hint is that $S^2-p$ is
+The exercise is §57 Exercise 2, whose hint is that $S^2-p$ is
 homeomorphic to $\RR^2$. The proof is transcribed from a forum answer: Math
 StackExchange question 1250275, answer 1250354 by Michael Albanese (2015), held
 at `tmp/sources/mse-1250275.md`, and cited as a forum answer. It is a proof by
 contraposition, so it opens by supposing that $g$ is not surjective; every step
 below runs under that supposition, and the last one draws the contrapositive. It
-uses only the Borsuk--Ulam theorem (Theorem 57.3, printed p. 358) together with
+uses only the Borsuk--Ulam theorem (Theorem 57.3) together with
 the injectivity of the homeomorphism the hint supplies. The answer also records a point about the theorem that a first
 reading gets wrong: $\varphi\circ g$ need not be surjective, and the
 Borsuk--Ulam theorem applies to every continuous map of $S^2$ into $\RR^2$,
@@ -145,7 +145,7 @@ there is $x\in S^2$ with $(\varphi\circ g)(x)=(\varphi\circ g)(-x)$.
 By step [](#not-surjective){.pf-ref} the image of $g$ is contained in
 $S^2-\theset{p}$, so the composite is defined; it is continuous, $g$ being
 continuous and $\varphi$ continuous by step [](#stereographic){.pf-ref}. The
-Borsuk--Ulam theorem for $S^2$ (Theorem 57.3, printed p. 358) applies to every
+Borsuk--Ulam theorem for $S^2$ (Theorem 57.3) applies to every
 continuous map of $S^2$ into $\RR^2$ and gives such a point $x$.
 :::
 

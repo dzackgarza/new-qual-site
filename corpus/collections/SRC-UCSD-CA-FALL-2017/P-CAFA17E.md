@@ -17,24 +17,33 @@ Prove that the Riemann surface of the complete analytic function associated to a
 :::
 
 ::: {.solution}
-The complete analytic continuation of a local branch of $\log z$ may be modeled by
-$$
-\mathcal R=\{(z,w)\in\CC^*\times\CC:e^w=z\}.
-$$
-The projection to the first coordinate is the covering map underlying the multivalued logarithm, while the logarithm itself is the single-valued holomorphic function
-$$
-L(z,w)=w.
-$$
 
-Define
-$$
-\Phi:\CC\longrightarrow\mathcal R,
-\qquad
-\Phi(w)=(e^w,w).
-$$
-This is a holomorphic bijection, and its inverse is simply the second-coordinate projection
-$$
-(z,w)\longmapsto w.
-$$
-Hence $\mathcal R$ is biholomorphic to $\CC$. Since $\CC$ is simply connected, so is the Riemann surface of the complete logarithm.
+No retained solution set covers this exercise: the card's own model of the Riemann surface follows, with the model, the biholomorphism and the simple connectivity as separate steps.
+
+::: pf
+
+::: {.pf-step #model}
+The complete analytic function of a branch of $\log z$ has Riemann surface $\mathcal R=\theset{(z,w)\in\CC^{*}\times\CC\mid e^{w}=z}$, on which $L(z,w)=w$ is single valued and holomorphic.
+
+::: pf-proof
+The analytic continuation of a local branch of $\log$ along curves in $\CC^{*}$ produces exactly the pairs (value, endpoint): every branch at $z$ has the form $w$ with $e^{w}=z$, and conversely each such $w$ is reached by continuing along a curve from the base point, by the monodromy theorem applied to $\CC$ (simply connected) after lifting. The second projection of $\CC^{*}\times\CC$ restricts to a holomorphic function $L$ on $\mathcal R$, whose value at $(z,w)$ is the chosen logarithm $w$; and $\mathcal R$ is a one-dimensional complex manifold, being a closed submanifold of $\CC^{*}\times\CC$ cut out by the holomorphic equation $e^{w}-z=0$ with nonzero gradient.
+:::
+
+:::
+
+::: {.pf-step #biholomorphic}
+$\Phi:\CC\to\mathcal R$, $\Phi(w)=(e^{w},w)$, is a biholomorphism with inverse the second projection.
+
+::: pf-proof
+$\Phi$ is holomorphic, since both coordinates are. Its image lies in $\mathcal R$ because $e^{w}=z$ holds by definition, and it is injective because $w$ is recovered from $(e^{w},w)$. It is surjective onto $\mathcal R$: a point of $\mathcal R$ is $(z,w)$ with $e^{w}=z$, which is $\Phi(w)$. The second projection $\mathcal R\to\CC$ is holomorphic as a restriction of the projection, and it is the two-sided inverse of $\Phi$; so $\Phi$ is a biholomorphism.
+:::
+
+:::
+
+::: {.pf-qed}
+$\mathcal R$ is biholomorphic to $\CC$ by step [](#biholomorphic){.pf-ref}, and $\CC$ is simply connected; simple connectivity is a homeomorphism invariant, so the Riemann surface of the complete logarithm is simply connected.
+:::
+
+:::
+
 :::

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP08-II1
 kind: problem
 title: Examples and impossibilities relating homotopy, retracts, and low homology groups
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Retracts, Homology]}
 relations: []
 review: draft
 audit:

@@ -29,6 +29,8 @@ y^2 z + a_1 xyz + a_3 y z^2 = x^3 + a_2 x^2 z + a_4 x z^2 + a_6 z^3
 $$
 with discriminant $\Delta \in A^\times$, and $e$ is the point $[0:1:0]$.
 The fibres are elliptic curves over the residue fields, and the group laws on the fibres come from a morphism $E \times_S E \to E$ making $E$ a commutative group scheme over $S$.
+
+The local Weierstrass form is derived in Katz--Mazur, *Arithmetic Moduli of Elliptic Curves*, §2.2, where the equation appears as (2.2.5.1) with the coefficients $a_i$ pulled back from the universal curve over $\Spec\ZZ[a_1,a_2,a_3,a_4,a_6][\Delta^{-1}]$, and the group structure is §2.1 of the same work. Katz--Mazur has no key in `vocabularies/references.yaml`, so it is attributed by author, title and statement number.
 :::
 
 ::: {.example}

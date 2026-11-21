@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-HM21B18-FIN-04
 kind: problem
 title: Row reduction for a four-variable affine system and the orthogonal complement of its kernel
-classification: {areas: [applied-algebra], topics: []}
+classification: {areas: [applied-algebra], topics: [Row Reduction, Orthogonality]}
 relations: []
 review: draft
 audit:

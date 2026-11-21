@@ -92,7 +92,7 @@ $V-E+F=2$.
 
 ::: pf-proof
 
-By the definition of the Euler characteristic of a finite CW complex as the alternating sum of the numbers of its cells (p. 146), $\chi(S^2)=V-E+F$. By Theorem 2.44 (p. 146), $\chi(S^2)$ is the alternating sum of the ranks of the homology groups, and $H_0(S^2)=\ZZ$, $H_1(S^2)=0$, $H_2(S^2)=\ZZ$ by Corollary 2.14 (p. 114), so
+By the definition of the Euler characteristic of a finite CW complex as the alternating sum of the numbers of its cells, $\chi(S^2)=V-E+F$. By Theorem 2.44, $\chi(S^2)$ is the alternating sum of the ranks of the homology groups, and $H_0(S^2)=\ZZ$, $H_1(S^2)=0$, $H_2(S^2)=\ZZ$ by Corollary 2.14, so
 $$
 \chi(S^2)=1-0+1=2.
 $$
@@ -112,14 +112,14 @@ $$
 
 Each side borders exactly one face, its own, so the number of sides is the number of pairs (face, side). The sides are identified in pairs, and each pair becomes one edge of the $1$-skeleton, so the number of sides is exactly $2E$.
 
-Following Li's published treatment (Exercise 2.2.15 / Hatcher 2.2.24, printed p. 41), each side has already been identified in pairs with one other side, and a polygon has at least three sides. Hence $3F\le2E$. The printed treatment also allows each edge at most two incidences with $2$-cells, so the side count is exactly $2E$ rather than an unbounded repetition count. For $K_{3,3}$, every closed walk is even; a face therefore has at least $4$ sides after the simple-cell requirement just described, giving $4F\le2E$.
+Following Li's published treatment (Exercise 2.2.15 / Hatcher §2.2 Exercise 24), each side has already been identified in pairs with one other side, and a polygon has at least three sides. Hence $3F\le2E$. The printed treatment also allows each edge at most two incidences with $2$-cells, so the side count is exactly $2E$ rather than an unbounded repetition count. For $K_{3,3}$, every closed walk is even; a face therefore has at least $4$ sides after the simple-cell requirement just described, giving $4F\le2E$.
 :::
 
 :::
 
 ::: {.pf-step #s3}
 
-The two graphs in the figure on p. 157 are $K_5$ and $K_{3,3}$.
+The two graphs in the figure accompanying §2.2 Exercise 24 are $K_5$ and $K_{3,3}$.
 
 ::: pf-proof
 
@@ -179,6 +179,6 @@ Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} exclude $K_5$ and $K_{3,3}$, and by 
 
 :::
 
-The $K_5$ computation and its $3$-side bound are in **Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf)**, Exercise 2.2.15 (Hatcher §2.2 #24), printed p. 41 (`tmp/sources/hatcher-solutions-guanyu-li.pdf`). Li states that the $K_{3,3}$ argument is similar; the explicit distinction above is that closed walks in a bipartite graph have even length, so this card should read $4F$, not $3F$. The numerical conclusions $3\cdot7=21>20$ and $4\cdot5=20>18$ are thereby checked against both the published text and Hatcher's printed figures.
+The $K_5$ computation and its $3$-side bound are in **Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf)**, Exercise 2.2.15 (Hatcher §2.2 Exercise 24) (`tmp/sources/hatcher-solutions-guanyu-li.pdf`). Li states that the $K_{3,3}$ argument is similar; the explicit distinction above is that closed walks in a bipartite graph have even length, so this card should read $4F$, not $3F$. The numerical conclusions $3\cdot7=21>20$ and $4\cdot5=20>18$ are thereby checked against both the published text and Hatcher's printed figures.
 
 :::

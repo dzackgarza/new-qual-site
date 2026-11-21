@@ -6,7 +6,9 @@ title: Path connectedness of connected subsets of the plane
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Path Connectedness
+  - Connectedness
 relations: []
 review: draft
 audit:

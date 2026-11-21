@@ -5,7 +5,9 @@ kind: problem
 title: 'Classify three singularities and find their residues'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residues
+  - Singularities
 relations: []
 review: draft
 audit:

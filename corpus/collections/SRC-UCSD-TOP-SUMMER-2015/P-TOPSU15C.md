@@ -12,6 +12,18 @@ classification:
   - Surfaces
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The argument is correct. The fundamental group of the projective plane has
+    order two and that of the torus is free abelian of rank two, so the induced
+    homomorphism is trivial, since a torsion-free group has no element of order
+    two. The lifting criterion for the universal covering of the torus then gives
+    a lift to the plane, which is contractible, so the lift is null-homotopic and
+    composing with the covering projection makes the original map null-homotopic.
+    Nothing was changed.
 ---
 
 ::: {.problem}

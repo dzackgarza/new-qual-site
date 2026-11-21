@@ -30,6 +30,35 @@ audit:
     comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
     applying the repair. The restored text is the printed wording and the mathematics of the
     statement is otherwise unchanged.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Structured the argument into numbered steps, isolating the lemma it turns on and applying it
+    twice. Supplied what the prose left to the reader: that the homotopy lifting property applied to
+    the homotopy p_1 g = p_2 starting at g produces g' with p_1 g' = p_2; that the lifted homotopy
+    k_t of the lemma exists because p h_t starts at p = p k_0 with k_0 the identity; and that l,
+    being a g with a a fiber homotopy equivalence and g an ordinary one, is an ordinary homotopy
+    equivalence, so the construction may be repeated with l in place of f. The two-parameter lifting
+    inside the lemma is the one step kept as a citation of the standard argument, and the card says
+    so at that step. Not re-read this session: printed pp. 16 and 375, cited by the statement and the
+    argument.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher §4.H Exercise 3, Proposition 0.19, the homotopy lifting property of §4.2 and
+    the relative form of it stated immediately before Theorem 4.41. The argument is right where it is
+    written: the lift of $p_1g\simeq p_2$ producing a fiber-preserving $g'$, the lemma's lift of
+    $ph_t$ producing a fiber-preserving $k_1$, and the final cancellation that turns $m\ell$ and
+    $\ell f$ into $f\ell\simeq_B\mathrm{id}$. One step is still not written out and is now named
+    exactly instead of described: the lifting of the two-parameter homotopy $pJ$ over the square,
+    which is the relative form of the homotopy lifting property — stated in §4.2 for CW pairs and
+    available to a fibration for every CW pair by the paragraph following Theorem 4.41, but not
+    thereby for total spaces that are not CW complexes. The card does not claim to close that
+    passage. Changes are otherwise in citations: the sentence naming a retained file is replaced by
+    the statement that no retained set covers the exercise. No statement changed. Not checked: no
+    certificate.
 ---
 
 ::: {.problem}
@@ -38,107 +67,121 @@ For fibrations $E_1 \to B$ and $E_2 \to B$, show that a fiber-preserving map $E_
 :::
 
 ::: {.solution}
-This is the Eckmann--Hilton dual of Proposition 0.19 (p. 16), which gives the corresponding statement for cofibrations; a fibration is a map with the homotopy lifting property for all spaces (p. 375), which is what the argument uses throughout. Let
-$$
-p_1:E_1\to B,
-\qquad
-p_2:E_2\to B
-$$
-be fibrations, and let
-$$
-f:E_1\to E_2,
-\qquad p_2f=p_1,
-$$
-be a homotopy equivalence. We write $\simeq_B$ for a homotopy through fiber-preserving maps.
 
-Choose an ordinary homotopy inverse
-$$
-g:E_2\to E_1
-$$
-with
-$$
-fg\simeq\operatorname{id}_{E_2},
-\qquad
-gf\simeq\operatorname{id}_{E_1}.
-$$
-Since
-$$
-p_1g=p_2fg\simeq p_2,
-$$
-the homotopy lifting property for $p_1$ deforms $g$ to a map
-$$
-g':E_2\to E_1
-$$
-with
-$$
-p_1g'=p_2.
-$$
-Thus we may replace $g$ by $g'$ and assume from now on that $g$ itself is fiber-preserving. It remains to improve the two ordinary homotopies to fiber homotopies.
+No retained solution set covers this exercise: Sam's set stops at §4.3, and the retained sets that reach further record no solution for §4.H. The argument is the card's own, following the remark printed with the exercise that the statement is Eckmann--Hilton dual to Proposition 0.19. A fibration is a map with the homotopy lifting property for all spaces, and $\simeq_{B}$ denotes a homotopy through fiber-preserving maps.
 
-We use the following lemma.
+Let $p_{1}\colon E_{1}\to B$ and $p_{2}\colon E_{2}\to B$ be fibrations and let $f\colon E_{1}\to E_{2}$ satisfy $p_{2}f=p_{1}$.
 
-**Lemma.** If $p:E\to B$ is a fibration and $u:E\to E$ is fiber-preserving and ordinarily homotopic to $\operatorname{id}_E$, then $u$ has a left homotopy inverse over $B$.
+::: pf
 
-Choose an ordinary homotopy
-$$
-h_t:u\simeq\operatorname{id}_E.
-$$
-Since $ph_0=p$, lift the base homotopy $ph_t$, starting at $\operatorname{id}_E$, to a homotopy
-$$
-k_t:\operatorname{id}_E\simeq k_1
-$$
-with
-$$
-p k_t=p h_t.
-$$
-In particular $k_1$ is fiber-preserving because $ph_1=p$.
+::: {.pf-step #homotopy-inverse}
+There is $g\colon E_{2}\to E_{1}$ with $fg\simeq\mathrm{id}_{E_{2}}$ and $gf\simeq\mathrm{id}_{E_{1}}$.
 
-Now concatenate the homotopies
-$$
-k_1u\simeq u=h_0\simeq h_1=\operatorname{id}_E
-$$
-to obtain a homotopy $J$ from $k_1u$ to $\operatorname{id}_E$. Its projection $pJ$ is a loop of maps $E\to B$ based at $p$. The square of homotopies obtained from $h_t$ and the lifted homotopy $k_t$ gives a homotopy of $pJ$, rel endpoints, to the constant homotopy at $p$. Lift this two-parameter homotopy using the fibration property of $p$. Reading along the opposite boundary gives a homotopy over $B$
-$$
-k_1u\simeq_B\operatorname{id}_E.
-$$
-This proves the lemma.
+::: pf-proof
+A homotopy equivalence has a homotopy inverse by definition.
+:::
 
-Apply the lemma to
-$$
-u=gf:E_1\to E_1.
-$$
-Then there is a fiber-preserving $a:E_1\to E_1$ with
-$$
-a\,gf\simeq_B\operatorname{id}_{E_1}.
-$$
-Set
-$$
-\ell=ag:E_2\to E_1.
-$$
-Then
-$$
-\ell f\simeq_B\operatorname{id}_{E_1}.
-\tag{1}
-$$
-Since $a\simeq\operatorname{id}_{E_1}$ ordinarily and $g$ is an ordinary homotopy equivalence, $\ell$ is also an ordinary homotopy equivalence. Repeating the preceding construction with $\ell$ in place of $f$, we obtain a fiber-preserving map
-$$
-m:E_1\to E_2
-$$
-with
-$$
-m\ell\simeq_B\operatorname{id}_{E_2}.
-\tag{2}
-$$
-Compose (1) on the left with $m$. Using (2),
-$$
-m\simeq_Bm\ell f\simeq_B f.
-$$
-Therefore
-$$
-f\ell\simeq_Bm\ell\simeq_B\operatorname{id}_{E_2}.
-$$
-Together with (1), this shows that $\ell$ is a fiber-preserving homotopy inverse to $f$. Hence
-$$
-\boxed{f\text{ is a fiber homotopy equivalence}.}
-$$
+:::
+
+::: {.pf-step #over-B}
+$p_{1}g\simeq p_{2}$.
+
+::: pf-proof
+$p_{2}fg=p_{1}g$ since $p_{2}f=p_{1}$, and applying $p_{2}$ to $fg\simeq\mathrm{id}_{E_{2}}$ gives $p_{2}fg\simeq p_{2}$.
+:::
+
+:::
+
+::: {.pf-step #deform}
+There is a fiber-preserving $g'\colon E_{2}\to E_{1}$ with $p_{1}g'=p_{2}$, $g'f\simeq\mathrm{id}_{E_{1}}$ and $fg'\simeq\mathrm{id}_{E_{2}}$.
+
+::: pf-proof
+Apply the homotopy lifting property of $p_{1}$ to the homotopy $p_{1}g\simeq p_{2}$ of step [](#over-B){.pf-ref}, whose value at time $0$ lifts as $g$ on $E_{2}\times\{0\}$; get $G_{t}$ with $G_{0}=g$, $p_{1}G_{t}$ the given homotopy, hence $p_{1}G_{1}=p_{2}$. Put $g'=G_{1}$, which is fiber-preserving. Since $g'\simeq g$ and $f$ is fixed, $g'f\simeq gf\simeq\mathrm{id}_{E_{1}}$ and $fg'\simeq fg\simeq\mathrm{id}_{E_{2}}$.
+:::
+
+:::
+
+::: {.pf-step #lemma}
+Lemma. If $p\colon E\to B$ is a fibration and $u\colon E\to E$ is fiber-preserving with $u\simeq\mathrm{id}_{E}$, then there is a fiber-preserving $a$ with $au\simeq_{B}\mathrm{id}_{E}$.
+
+:::: pf-proof
+
+::: {.pf-step #lemma-lift}
+Let $h_{t}\colon u\simeq\mathrm{id}_{E}$. There is a homotopy $k_{t}$ with $k_{0}=\mathrm{id}_{E}$, $pk_{t}=ph_{t}$ and $k_{1}$ fiber-preserving.
+
+::: pf-proof
+Lift the homotopy $ph_{t}$ of maps $E\to B$, which starts at $ph_{0}=p=p\,\mathrm{id}_{E}$, to a homotopy starting at $\mathrm{id}_{E}$; this is the homotopy lifting property of $p$. Then $pk_{1}=ph_{1}=p$, so $k_{1}$ preserves fibres.
+:::
+
+:::
+
+::: {.pf-step #lemma-square}
+The homotopy $J$ from $k_{1}u$ to $\mathrm{id}_{E}$ obtained by concatenating $k_{1}u\simeq u$, $h_{0}=u$, $h_{1}=\mathrm{id}_{E}$ has $pJ$ homotopic rel endpoints to the constant homotopy at $p$.
+
+::: pf-proof
+$k_{1}u\simeq k_{0}u=u$ and $h$ runs from $u$ to $\mathrm{id}_{E}$, so concatenation gives $J$. The two-parameter family made of $h_{t}$ and the lifted $k_{t}$ has both boundary homotopies equal to $ph_{t}$, so it provides a homotopy from $pJ$ to the constant homotopy at $p$ fixing the end maps. Concretely, the homotopy of maps $E\to B$ that has to be lifted is $(x,r)\mapsto pJ(x,r(1-s))$ read on the square $E\times I\times I$, with the lift prescribed on $E\times\{0\}\times I$ and $E\times I\times\{0\}$; this is the relative form of the homotopy lifting property, which §4.2 states for a CW pair by the lift extension property of $(X\times I,X\times\{0\}\cup A\times I)$ and which a fibration has for every CW pair by the paragraph following Theorem 4.41. When the total spaces are not CW complexes that paragraph does not apply directly, because the relative form of the homotopy lifting property in §4.2 is stated for a CW pair $(X,A)$ in which $X$ is the space carrying the homotopy, which here is the total space $E_1$ and not the square; the square is only the two-parameter index. The statement needed is Strom's theorem: if $p:E\to B$ is a Hurewicz fibration and $(X,A)$ is a closed cofibration, then every homotopy $F:X\times I\to B$ together with a lift $\widetilde F:X\times\{0\}\cup A\times I\to E$ of its restriction to that subspace extends to a lift $X\times I\to E$. Its proof runs from the closed-cofibration characterization — a continuous $u:X\to I$ with $A=u^{-1}(0)$ together with a homotopy of $X$ into $A$ supported where $u<1$, equivalently a retraction $X\times I\to X\times\{0\}\cup A\times I$ — and an induction on the filtration of $X$ by the closed sets $\{u\ge 1/n\}$, each stage being the ordinary homotopy lifting property. The statement is (5.5.3) Corollary in tom Dieck, *Algebraic Topology*: if $p:E\to B$ has the homotopy lifting property for $X\times I$ and $i:A\subset X$ is a closed cofibration, then each homotopy $X\times I\to B$ whose initial condition is given on $A\times I\cup X\times\{0\}$ has a lifting with that initial condition. A fibration has the homotopy lifting property for every space, in particular for $X\times I$, so (5.5.3) supplies exactly the lift this card needs. The same result is stated as a Proposition in May, *A Concise Course in Algebraic Topology*, Chapter 7, §5, whose proof is left there as the exercise dual to the cofibration statement proved in Chapter 6, §5, and that dual proof is where this lifting problem is settled. The passage from the ordinary homotopy lifting property to the lifting problem on a square is therefore the one step of this card not written out.
+:::
+
+:::
+
+::: {.pf-step #lemma-end}
+$k_{1}u\simeq_{B}\mathrm{id}_{E}$.
+
+::: pf-proof
+Lift the two-parameter homotopy of step [](#lemma-square){.pf-ref} using the fibration property of $p$, starting from $J$; reading along the opposite boundary gives a homotopy from $k_{1}u$ to $\mathrm{id}_{E}$ over $B$. With $a=k_{1}$, fiber-preserving by step [](#lemma-lift){.pf-ref}, this is $au\simeq_{B}\mathrm{id}_{E}$.
+:::
+
+:::
+
+::::
+
+:::
+
+::: {.pf-step #left-inverse}
+There is a fiber-preserving $\ell\colon E_{2}\to E_{1}$ with $\ell f\simeq_{B}\mathrm{id}_{E_{1}}$.
+
+::: pf-proof
+Apply step [](#lemma){.pf-ref} to $p_{1}$ and $u=gf\colon E_{1}\to E_{1}$, which is fiber-preserving and ordinarily homotopic to $\mathrm{id}_{E_{1}}$; get a fiber-preserving $a$ with $agf\simeq_{B}\mathrm{id}_{E_{1}}$. Put $\ell=ag$, fiber-preserving as a composite of such maps; then $\ell f=agf\simeq_{B}\mathrm{id}_{E_{1}}$.
+:::
+
+:::
+
+::: {.pf-step #ell-equiv}
+$\ell$ is an ordinary homotopy equivalence.
+
+::: pf-proof
+$\ell=ag\simeq g$, and $g$ is a homotopy equivalence; a map homotopic to a homotopy equivalence is one.
+:::
+
+:::
+
+::: {.pf-step #right-inverse}
+There is a fiber-preserving $m\colon E_{1}\to E_{2}$ with $m\ell\simeq_{B}\mathrm{id}_{E_{2}}$.
+
+::: pf-proof
+Repeat the construction of steps [](#deform){.pf-ref}, [](#lemma){.pf-ref} and [](#left-inverse){.pf-ref} with $\ell$ in place of $f$: $\ell$ is fiber-preserving and an ordinary homotopy equivalence, so it has an ordinary homotopy inverse whose composite with $\ell$ can be deformed to a fiber-preserving map and then corrected by the lemma, giving $m$ with $m\ell\simeq_{B}\mathrm{id}_{E_{2}}$.
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+$f\ell\simeq_{B}\mathrm{id}_{E_{2}}$ and $\ell f\simeq_{B}\mathrm{id}_{E_{1}}$.
+
+::: pf-proof
+$\ell f\simeq_{B}\mathrm{id}_{E_{1}}$ is step [](#left-inverse){.pf-ref}. For the other: $m\ell\simeq_{B}\mathrm{id}_{E_{2}}$ by step [](#right-inverse){.pf-ref}, so composing on the right with $f\ell$ gives $m\ell f\ell\simeq_{B}f\ell$, while $m\ell f\ell=m(\ell f)\ell\simeq_{B}m\ell\simeq_{B}\mathrm{id}_{E_{2}}$ using $\ell f\simeq_{B}\mathrm{id}_{E_{1}}$ and then step [](#right-inverse){.pf-ref} again. Hence $f\ell\simeq_{B}\mathrm{id}_{E_{2}}$.
+:::
+
+:::
+
+::: {.pf-step}
+$f$ is a fiber homotopy equivalence.
+
+::: pf-proof
+Step [](#conclusion){.pf-ref} exhibits the fiber-preserving $\ell$ with $\ell f\simeq_{B}\mathrm{id}_{E_{1}}$ and $f\ell\simeq_{B}\mathrm{id}_{E_{2}}$, which is the definition.
+:::
+
+:::
+
+:::
+
 :::

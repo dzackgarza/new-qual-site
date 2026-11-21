@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP07-04
 kind: problem
 title: Classify a surface assembled from six labeled polygons
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Classification of Surfaces]}
 relations: []
 review: draft
 audit:
@@ -26,6 +26,8 @@ $$
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination papers alone, so the argument is the card's own.
 
 ::: pf
 

@@ -29,6 +29,18 @@ audit:
     and the intersection gives the largest, uniqueness following from mutual containment;
     (c) the finite intersections of T_1 union T_2 and the resulting smallest topology, and
     the intersection of the two. (tmp/sources/munkres-solutions-whitman.pdf).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps and checked each step: (a) the three topology axioms for
+    the intersection and the two three-point topologies refuting the union; (b) the subbasis
+    $\mathcal{S}=\bigcup_\alpha\mathcal{T}_\alpha$ with $X\in\mathcal{S}$, containment of
+    each $\mathcal{T}_\beta$, minimality, and the largest topology as the intersection given
+    by (a); (c) the finite intersections of $\mathcal{T}_1\cup\mathcal{T}_2$ and their
+    closure under unions. Verified against Munkres §13 Exercise 4, printed p. 83, and
+    Whitman's Exercise 13.4, printed pp. 143-144. No step of the printed exercise needed
+    repair.
 ---
 
 ::: {.exercise}
@@ -49,34 +61,169 @@ Find the smallest topology containing $\mathcal{T}_1$ and $\mathcal{T}_2$, and t
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 13.4, printed pp. 143--144** (`tmp/sources/munkres-solutions-whitman.pdf`); all three parts are his.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 13.4** (`tmp/sources/munkres-solutions-whitman.pdf`); all three parts below are his, checked step by step against Munkres §13 (definition of subbasis and the proof following it). Throughout, $(\mathcal{T}_\alpha)_\alpha$ is a family of topologies on a set $X$.
 
-(a) Put $\mathcal{T}=\bigcap_{\alpha}\mathcal{T}_{\alpha}$. Since $\varnothing$ and $X$ lie in every $\mathcal{T}_{\alpha}$, they lie in $\mathcal{T}$. Let $\mathcal{A}\subset\mathcal{T}$ and let $U=\bigcup_{A\in\mathcal{A}}A$. For a fixed $\beta$, every $A\in\mathcal{A}$ lies in $\mathcal{T}_{\beta}$, so $U\in\mathcal{T}_{\beta}$ because $\mathcal{T}_{\beta}$ is a topology; as $\beta$ was arbitrary, $U\in\mathcal{T}$. Finally, if $U_{1},\dots,U_{n}\in\mathcal{T}$ then for every $\beta$ each $U_{i}\in\mathcal{T}_{\beta}$, so $U_{1}\cap\dots\cap U_{n}\in\mathcal{T}_{\beta}$, hence in $\mathcal{T}$. Thus $\mathcal{T}$ is a topology on $X$.
+::: pf
 
-The union $\bigcup_{\alpha}\mathcal{T}_{\alpha}$ need not be a topology. On $X=\{a,b,c\}$ let
-$$
-\mathcal{T}_{1}=\{\varnothing,X,\{a\}\},\qquad \mathcal{T}_{2}=\{\varnothing,X,\{b\}\}.
-$$
-Both are topologies, but $\mathcal{T}_{1}\cup\mathcal{T}_{2}=\{\varnothing,X,\{a\},\{b\}\}$ is not: it contains $\{a\}$ and $\{b\}$ but not their union $\{a,b\}$.
+::: {.pf-step #part-a}
+(a) $\mathcal{T}=\bigcap_\alpha\mathcal{T}_\alpha$ is a topology on $X$. The union $\bigcup_\alpha\mathcal{T}_\alpha$ of a family of topologies on $X$ need not be a topology on $X$.
 
-(b) *Smallest.* The collection $\mathcal{S}=\bigcup_{\alpha}\mathcal{T}_{\alpha}$ contains $X$, since $X$ lies in each $\mathcal{T}_{\alpha}$, so $\mathcal{S}$ is a subbasis for a topology $\mathcal{T}_{s}$ on $X$ (definition of subbasis, §13). Let $\mathcal{B}$ be the collection of all finite intersections of elements of $\mathcal{S}$, a basis for $\mathcal{T}_{s}$; the elements of $\mathcal{T}_{s}$ are the unions of subcollections of $\mathcal{B}$.
+:::: pf-proof
 
-Each $\mathcal{T}_{\beta}\subset\mathcal{T}_{s}$: if $U\in\mathcal{T}_{\beta}$ then $U\in\mathcal{S}$, and $U$ as the intersection of the one-element family $\{U\}$ lies in $\mathcal{B}$, so $U$ is a union of basis elements and lies in $\mathcal{T}_{s}$.
+::: {.pf-step #a-basic}
+$\varnothing\in\mathcal{T}$ and $X\in\mathcal{T}$.
 
-And $\mathcal{T}_{s}$ is the smallest such topology: if $\mathcal{T}$ is a topology on $X$ with $\mathcal{T}_{\alpha}\subset\mathcal{T}$ for every $\alpha$, then $\mathcal{S}\subset\mathcal{T}$; if $B\in\mathcal{B}$ then $B$ is a finite intersection of elements of $\mathcal{S}$, each of which lies in $\mathcal{T}$, so $B\in\mathcal{T}$; and if $U\in\mathcal{T}_{s}$ then $U=\bigcup\mathcal{C}$ for some $\mathcal{C}\subset\mathcal{B}$, so $U\in\mathcal{T}$. Hence $\mathcal{T}_{s}\subset\mathcal{T}$. A smallest element of the family of topologies containing all $\mathcal{T}_{\alpha}$ is therefore $\mathcal{T}_{s}$, and it is unique: if $\mathcal{T}_{s},\mathcal{T}'$ are both smallest, each is contained in the other.
+::: pf-proof
+Each $\mathcal{T}_\alpha$ is a topology, hence contains $\varnothing$ and $X$; so both sets belong to every $\mathcal{T}_\alpha$, that is, to their intersection.
+:::
 
-*Largest.* By (a), $\mathcal{T}_{l}=\bigcap_{\alpha}\mathcal{T}_{\alpha}$ is a topology on $X$, and it is contained in every $\mathcal{T}_{\alpha}$ because an intersection is contained in each of its factors. If $\mathcal{T}$ is a topology with $\mathcal{T}\subset\mathcal{T}_{\alpha}$ for every $\alpha$ and $U\in\mathcal{T}$, then $U\in\mathcal{T}_{\alpha}$ for every $\alpha$, so $U\in\mathcal{T}_{l}$; hence $\mathcal{T}\subset\mathcal{T}_{l}$. So $\mathcal{T}_{l}$ is the largest topology contained in all the $\mathcal{T}_{\alpha}$, and it is unique for the same reason.
+:::
 
-(c) Here $\mathcal{S}=\mathcal{T}_{1}\cup\mathcal{T}_{2}=\{\varnothing,X,\{a\},\{a,b\},\{b,c\}\}$. Its finite intersections are
+::: {.pf-step #a-unions}
+If $\mathcal{A}\subset\mathcal{T}$, then $\bigcup_{A\in\mathcal{A}}A\in\mathcal{T}$.
+
+::: pf-proof
+Fix an index $\beta$. Every $A\in\mathcal{A}$ satisfies $A\in\mathcal{T}\subset\mathcal{T}_\beta$, so $\bigcup_{A\in\mathcal{A}}A\in\mathcal{T}_\beta$ because the topology $\mathcal{T}_\beta$ is closed under arbitrary unions. Since $\beta$ was arbitrary, the union lies in every $\mathcal{T}_\beta$, hence in $\mathcal{T}$.
+:::
+
+:::
+
+::: {.pf-step #a-finite}
+If $U_1,\dots,U_n\in\mathcal{T}$, then $U_1\cap\dots\cap U_n\in\mathcal{T}$.
+
+::: pf-proof
+Fix an index $\beta$. Each $U_i$ lies in $\mathcal{T}\subset\mathcal{T}_\beta$, so $U_1\cap\dots\cap U_n\in\mathcal{T}_\beta$ because $\mathcal{T}_\beta$ is closed under finite intersections. As $\beta$ was arbitrary, the intersection lies in $\mathcal{T}$.
+:::
+
+:::
+
+::: {.pf-step #a-fail}
+The union of a family of topologies on $X$ need not be a topology on $X$: for $X=\{a,b,c\}$ the sets $\mathcal{T}_1=\{\varnothing,X,\{a\}\}$ and $\mathcal{T}_2=\{\varnothing,X,\{b\}\}$ are topologies, and $\mathcal{T}_1\cup\mathcal{T}_2$ is not.
+
+::: pf-proof
+$\mathcal{T}_1$ contains $\varnothing$ and $X$, and its only other member $\{a\}$ is not the union or the finite intersection of a subfamily of $\mathcal{T}_1$ that could fail the axioms; more explicitly, the subcollections of $\mathcal{T}_1$ have unions among $\varnothing,X,\{a\}$ and finite intersections among $\varnothing,X,\{a\}$, so $\mathcal{T}_1$ is a topology, and likewise $\mathcal{T}_2$. Their union $\mathcal{T}_1\cup\mathcal{T}_2=\{\varnothing,X,\{a\},\{b\}\}$ contains $\{a\}$ and $\{b\}$ but not $\{a\}\cup\{b\}=\{a,b\}$, so it is not closed under unions and is not a topology.
+:::
+
+:::
+
+::: {.pf-step}
+(a) therefore holds: steps [](#a-basic){.pf-ref}, [](#a-unions){.pf-ref} and [](#a-finite){.pf-ref} verify the three defining properties of a topology for $\mathcal{T}$, and step [](#a-fail){.pf-ref} answers the second question of (a) in the negative.
+
+::: pf-proof
+A topology on $X$ is a collection of subsets containing $\varnothing$ and $X$ and closed under arbitrary unions and finite intersections (§12). The three cited steps establish exactly these properties for $\bigcap_\alpha\mathcal{T}_\alpha$, and step [](#a-fail){.pf-ref} exhibits a family whose union has none of them.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #part-b}
+(b) There is a unique smallest topology on $X$ containing every $\mathcal{T}_\alpha$, and a unique largest topology on $X$ contained in every $\mathcal{T}_\alpha$.
+
+:::: pf-proof
+
+::: {.pf-step #b-subbasis}
+$\mathcal{S}=\bigcup_\alpha\mathcal{T}_\alpha$ is a subbasis for a topology $\mathcal{T}_s$ on $X$: it is a collection of subsets of $X$ whose union is $X$.
+
+::: pf-proof
+Every $\mathcal{T}_\alpha$ is a topology, so $X\in\mathcal{T}_\alpha$ for every $\alpha$; hence $X\in\mathcal{S}$ and $\bigcup\mathcal{S}=X$. By the definition of subbasis (§13), $\mathcal{S}$ is then a subbasis for a topology $\mathcal{T}_s$ on $X$, and the collection $\mathcal{B}$ of all finite intersections of elements of $\mathcal{S}$ is a basis for $\mathcal{T}_s$, whose elements are the unions of subcollections of $\mathcal{B}$.
+:::
+
+:::
+
+::: {.pf-step #b-contained}
+$\mathcal{T}_\beta\subset\mathcal{T}_s$ for every index $\beta$.
+
+::: pf-proof
+Let $U\in\mathcal{T}_\beta$. Then $U\in\mathcal{S}$. The one-element family $\{U\}$ is a finite subfamily of $\mathcal{S}$ and its intersection is $U$, so $U\in\mathcal{B}$ by step [](#b-subbasis){.pf-ref}; and $U$ is the union of the subcollection $\{U\}$ of $\mathcal{B}$, so $U\in\mathcal{T}_s$. Hence every element of $\mathcal{T}_\beta$ lies in $\mathcal{T}_s$.
+:::
+
+:::
+
+::: {.pf-step #b-smallest}
+If $\mathcal{T}$ is a topology on $X$ with $\mathcal{T}_\alpha\subset\mathcal{T}$ for every $\alpha$, then $\mathcal{T}_s\subset\mathcal{T}$.
+
+::: pf-proof
+First $\mathcal{S}=\bigcup_\alpha\mathcal{T}_\alpha\subset\mathcal{T}$ by hypothesis. If $B\in\mathcal{B}$ then $B$ is a finite intersection of elements of $\mathcal{S}$, each of which lies in $\mathcal{T}$, so $B\in\mathcal{T}$ because a topology is closed under finite intersections. If $U\in\mathcal{T}_s$ then $U$ is a union of elements of $\mathcal{B}$ by step [](#b-subbasis){.pf-ref}, each of which lies in $\mathcal{T}$, so $U\in\mathcal{T}$ because a topology is closed under arbitrary unions.
+:::
+
+:::
+
+::: {.pf-step #b-unique-small}
+$\mathcal{T}_s$ is the unique smallest topology on $X$ containing every $\mathcal{T}_\alpha$.
+
+::: pf-proof
+It contains every $\mathcal{T}_\alpha$ by step [](#b-contained){.pf-ref} and is contained in every topology that contains all of them by step [](#b-smallest){.pf-ref}. If $\mathcal{T}_s'$ is another smallest such topology, then $\mathcal{T}_s\subset\mathcal{T}_s'$ and $\mathcal{T}_s'\subset\mathcal{T}_s$, so the two are equal.
+:::
+
+:::
+
+::: {.pf-step #b-largest}
+$\mathcal{T}_l=\bigcap_\alpha\mathcal{T}_\alpha$ is the unique largest topology on $X$ contained in every $\mathcal{T}_\alpha$.
+
+::: pf-proof
+$\mathcal{T}_l$ is a topology by step [](#part-a){.pf-ref}, and $\mathcal{T}_l\subset\mathcal{T}_\alpha$ for every $\alpha$ because an intersection is contained in each of its factors. If $\mathcal{T}$ is a topology on $X$ with $\mathcal{T}\subset\mathcal{T}_\alpha$ for every $\alpha$ and $U\in\mathcal{T}$, then $U\in\mathcal{T}_\alpha$ for every $\alpha$, so $U\in\mathcal{T}_l$; hence $\mathcal{T}\subset\mathcal{T}_l$. If $\mathcal{T}_l'$ is another largest such topology, then $\mathcal{T}_l\subset\mathcal{T}_l'$ and $\mathcal{T}_l'\subset\mathcal{T}_l$, so the two are equal.
+:::
+
+:::
+
+::: {.pf-step}
+(b) therefore holds.
+
+::: pf-proof
+Steps [](#b-unique-small){.pf-ref} and [](#b-largest){.pf-ref} exhibit the required smallest and largest topologies and their uniqueness.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #part-c}
+(c) For $X=\{a,b,c\}$, $\mathcal{T}_1=\{\varnothing,X,\{a\},\{a,b\}\}$ and $\mathcal{T}_2=\{\varnothing,X,\{a\},\{b,c\}\}$: the smallest topology containing both is
 $$
-\varnothing,\ X,\ \{a\},\ \{a,b\},\ \{b,c\},\ \{a\}\cap\{a,b\}=\{a\},\ \{a\}\cap\{b,c\}=\varnothing,\ \{a,b\}\cap\{b,c\}=\{b\},
+\mathcal{T}_s=\{\varnothing,X,\{a\},\{b\},\{a,b\},\{b,c\}\},
 $$
-so $\mathcal{B}=\{\varnothing,X,\{a\},\{b\},\{a,b\},\{b,c\}\}$. This collection is already closed under unions ($\{a\}\cup\{b\}=\{a,b\}$, $\{b\}\cup\{b,c\}=\{b,c\}$, $\{a\}\cup\{b,c\}=X$, $\{a,b\}\cup\{b,c\}=X$), so the topology it generates is itself:
+and the largest topology contained in both is
 $$
-\mathcal{T}_{s}=\{\varnothing,X,\{a\},\{b\},\{a,b\},\{b,c\}\}.
+\boxed{\mathcal{T}_l=\mathcal{T}_1\cap\mathcal{T}_2=\{\varnothing,X,\{a\}\}}.
 $$
-The largest topology contained in $\mathcal{T}_{1}$ and in $\mathcal{T}_{2}$ is
-$$
-\mathcal{T}_{l}=\mathcal{T}_{1}\cap\mathcal{T}_{2}=\{\varnothing,X,\{a\}\}.
-$$
+
+:::: pf-proof
+
+::: {.pf-step #c-basis}
+With $\mathcal{S}=\mathcal{T}_1\cup\mathcal{T}_2=\{\varnothing,X,\{a\},\{a,b\},\{b,c\}\}$, the collection of finite intersections of elements of $\mathcal{S}$ is $\mathcal{B}=\{\varnothing,X,\{a\},\{b\},\{a,b\},\{b,c\}\}$.
+
+::: pf-proof
+The intersections of pairs of distinct nonempty proper members are $\{a\}\cap\{a,b\}=\{a\}$, $\{a\}\cap\{b,c\}=\varnothing$, $\{a,b\}\cap\{b,c\}=\{b\}$, and $\{a\}\cap\{a,b\}\cap\{b,c\}=\varnothing$ for the triples; the one-element intersections are the members of $\mathcal{S}$ themselves. Together with the intersection of the empty subfamily, which is $X$, these give exactly the six sets displayed.
+:::
+
+:::
+
+::: {.pf-step #c-closed}
+$\mathcal{B}$ is closed under finite unions, so $\mathcal{T}_s=\mathcal{B}$.
+
+::: pf-proof
+The unions of two members that are not already nested are $\{a\}\cup\{b\}=\{a,b\}$, $\{a\}\cup\{b,c\}=\{a,b,c\}=X$, $\{b\}\cup\{a,b\}=\{a,b\}$ and $\{a,b\}\cup\{b,c\}=X$; every other pair is nested, and $\varnothing$ is neutral. All these lie in $\mathcal{B}$. By step [](#b-subbasis){.pf-ref}, $\mathcal{T}_s$ is the collection of unions of subcollections of $\mathcal{B}$, so $\mathcal{T}_s\subset\mathcal{B}$; and $\mathcal{B}\subset\mathcal{T}_s$ because each member of $\mathcal{B}$ is a union of the one-element subcollection. Hence $\mathcal{T}_s=\mathcal{B}$.
+:::
+
+:::
+
+::: {.pf-step}
+(c) therefore holds.
+
+::: pf-proof
+Step [](#c-closed){.pf-ref} identifies the smallest topology containing $\mathcal{T}_1$ and $\mathcal{T}_2$; step [](#b-largest){.pf-ref} identifies the largest one contained in both as their intersection, which is $\{\varnothing,X,\{a\}\}$ since the only common members of $\mathcal{T}_1$ and $\mathcal{T}_2$ are $\varnothing$, $X$ and $\{a\}$.
+:::
+
+:::
+
+:::
+
+:::
+
+:::
 :::

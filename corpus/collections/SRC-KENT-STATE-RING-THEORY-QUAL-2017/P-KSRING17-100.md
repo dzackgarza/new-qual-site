@@ -16,6 +16,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 100 of the retained Kent State Algebra Qualifying Exam Problems — Ring Theory compilation, version August 29, 2017.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked, including the Euclidean algorithm. Euclidean
+    division in Z[i] with N(a+bi) = a^2+b^2: dividing alpha by beta, round the real and imaginary
+    parts of alpha/beta to the nearest integers to get q, and the remainder has norm at most
+    (1/2)N(beta) < N(beta), which is the step the card states. For the computation: 13 = (2-i)(5+i) +
+    (2+3i), checked by expanding (2-i)(5+i) = 11-3i; N(2+3i) = 13 < 26 = N(5+i), so the remainder is
+    admissible; and 5+i = (1-i)(2+3i) exactly, so the algorithm terminates and the gcd is 2+3i, up to
+    a unit. That 13 = (2+3i)(2-3i) and 5+i = (1-i)(2+3i) confirms the answer independently, and I
+    checked it with a computer algebra system, which returns 2+3i as the gcd.
 ---
 
 ::: {.problem}

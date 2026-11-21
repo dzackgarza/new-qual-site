@@ -5,7 +5,9 @@ kind: problem
 title: Rank-nullity, adjoints, and equality of row and column rank
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Rank and Nullity
+  - Dual Spaces
 relations: []
 review: draft
 audit:

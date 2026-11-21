@@ -6,7 +6,9 @@ title: Fixed points and contraction iteration
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Banach Fixed Point Theorem
+  - Fixed Points
 relations: []
 review: draft
 audit:

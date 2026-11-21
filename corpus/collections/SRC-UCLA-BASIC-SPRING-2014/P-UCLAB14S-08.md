@@ -6,7 +6,9 @@ title: A smooth cutoff function on Euclidean space
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Smooth Functions
+  - Bump Functions
 relations: []
 review: draft
 audit:

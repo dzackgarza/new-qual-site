@@ -6,7 +6,9 @@ title: Cubic polynomials over a field are irreducible exactly when rootless
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Irreducible Polynomials
+  - Polynomials
 relations: []
 review: draft
 audit:
@@ -14,6 +16,17 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the vendored Amherst College Study Guide for Algebra (September 2016).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked mathematically. Step s1-1: a nontrivial
+    factorisation of a cubic has degrees summing to 3 with both positive, so one factor is linear,
+    ax+b with a != 0, and its root -b/a lies in k because k is a field. Step s1-2: a root r gives
+    the factor x - r and the quotient of degree 2, so f is reducible. Step s1-3 collects the
+    equivalence, and the last step negates both sides. The remark's quadratic case is checked: the
+    same argument runs with degrees 1+1 and a linear quotient. Nothing outside this exercise
+    checked; no retained solution set is cited and the statement needs none.
 ---
 
 ::: {.problem}

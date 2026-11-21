@@ -6,7 +6,8 @@ title: Lagrange multiplier condition for a constrained global minimum
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Lagrange Multipliers
 relations: []
 review: draft
 audit:

@@ -31,6 +31,8 @@ then $\mu$ coincides with the outer measure of $E$.
 
 ::: {.solution}
 
+The argument is the card's own: for (f) it exhibits $E=\QQ\cap[0,1]$, every finite cover of which by intervals has total length at least $1$ because the closures of the intervals cover $[0,1]$, while $m^*(E)=0$; for (g) it shows that the sets whose preimages under $f$ are Lebesgue measurable form a $\sigma$-algebra containing the open sets, hence containing the Borel sets. No source is transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
+
 ::: pf
 
 ::: {.pf-step #statement-f-false}

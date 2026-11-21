@@ -20,45 +20,51 @@ Hint: Integrate the function $\frac{e^{iz}}{z}$ on an appropriate closed curve.
 :::
 
 ::: {.solution}
-For $0<\varepsilon<R$, integrate
-$$
-F(z)=\frac{e^{iz}}z
-$$
-over the boundary of the upper half-disk of radius $R$ with the small upper
-half-disk of radius $\varepsilon$ about the origin removed. The contour consists
-of the real intervals $[-R,-\varepsilon]$ and $[\varepsilon,R]$, the large
-upper semicircle, and the small upper semicircle traversed clockwise. Since the
-origin is excluded, $F$ is holomorphic inside the contour, so the total
-integral is $0$.
 
-On the large semicircle $z=Re^{i\theta}$,
-$$
-\abs{\int \frac{e^{iz}}z\,dz}
-\le \int_0^\pi e^{-R\sin\theta}\,d\theta.
-$$
-Using $\sin\theta\ge 2\theta/\pi$ on $[0,\pi/2]$ and symmetry, the right-hand
-side is at most $\pi/R$, hence tends to $0$.
+No retained solution set covers this exercise: the card's own indented-contour computation follows, with the two circular estimates and the two real intervals as separate steps.
 
-On the small clockwise semicircle $z=\varepsilon e^{i\theta}$,
-$\theta$ decreases from $\pi$ to $0$, and
-$$
-\int \frac{e^{iz}}z\,dz
-=i\int_\pi^0 e^{i\varepsilon e^{i\theta}}\,d\theta
-\longrightarrow -i\pi.
-$$
-Consequently,
-$$
-\operatorname{PV}\int_{-\infty}^{\infty}\frac{e^{ix}}x\,dx=i\pi.
-$$
-The real part vanishes by oddness of $\cos x/x$, while
-$\sin x/x$ is even. Hence
-$$
-2i\int_0^\infty\frac{\sin x}{x}\,dx=i\pi,
-$$
-so
-$$
-\boxed{\displaystyle
-\int_0^\infty\frac{\sin x}{x}\,dx=\frac\pi2.}
-$$
-The improper integral converges, for example by Dirichlet's test.
+::: pf
+
+::: {.pf-step #contour}
+For $0<\varepsilon<R$ let $\Gamma$ be the positively oriented boundary of the upper half-disc of radius $R$ with the upper half-disc of radius $\varepsilon$ about $0$ removed. Then $\oint_{\Gamma}\frac{e^{iz}}{z}dz=0$.
+
+::: pf-proof
+$F(z)=e^{iz}/z$ is holomorphic on the region enclosed by $\Gamma$, which does not contain $z=0$; by Cauchy's theorem the integral over its boundary vanishes.
+:::
+
+:::
+
+::: {.pf-step #real-axis}
+The two real intervals contribute $2i\displaystyle\int_{\varepsilon}^{R}\frac{\sin t}{t}dt$.
+
+::: pf-proof
+$\int_{\varepsilon}^{R}\frac{e^{ix}}{x}dx+\int_{-R}^{-\varepsilon}\frac{e^{ix}}{x}dx$; substituting $x=-t$ in the second gives $-\int_{\varepsilon}^{R}\frac{e^{-it}}{t}dt$, so the sum is $\int_{\varepsilon}^{R}\frac{e^{it}-e^{-it}}{t}dt=2i\int_{\varepsilon}^{R}\frac{\sin t}{t}dt$.
+:::
+
+:::
+
+::: {.pf-step #large-arc}
+The integral over the large semicircle tends to $0$ as $R\to\infty$.
+
+::: pf-proof
+On $\abs{z}=R$ the modulus of the integrand is $e^{-R\sin\theta}/R\le1/R$ away from the axis, and Jordan's lemma or the direct estimate $\abs{\int}\le\int_{0}^{\pi}e^{-R\sin\theta}d\theta\le\int_{0}^{\pi}e^{-2R\theta/\pi}d\theta=\frac{\pi}{2R}(1-e^{-2R})$ gives the result.
+:::
+
+:::
+
+::: {.pf-step #small-arc}
+The integral over the small semicircle, traversed clockwise, tends to $-i\pi$ as $\varepsilon\to0$.
+
+::: pf-proof
+Parametrise $z=\varepsilon e^{i\theta}$ with $\theta$ decreasing from $\pi$ to $0$. Then $\int=i\int_{\pi}^{0}e^{i\varepsilon e^{i\theta}}d\theta$, and $e^{i\varepsilon e^{i\theta}}\to1$ uniformly in $\theta$, so the integral tends to $i(0-\pi)=-i\pi$ — half the residue $2\pi i\cdot1$, with the sign from the clockwise orientation.
+:::
+
+:::
+
+::: {.pf-qed}
+Taking $R\to\infty$ and $\varepsilon\to0$ in step [](#contour){.pf-ref}: $0=2i\int_{0}^{\infty}\frac{\sin t}{t}dt-i\pi$, so $\int_{0}^{\infty}\frac{\sin x}{x}dx=\frac{\pi}{2}$, using steps [](#real-axis){.pf-ref}, [](#large-arc){.pf-ref} and [](#small-arc){.pf-ref}.
+:::
+
+:::
+
 :::

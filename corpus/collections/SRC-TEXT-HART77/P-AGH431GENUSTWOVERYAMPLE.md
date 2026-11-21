@@ -28,6 +28,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.3.1, printed pp. 87,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF pages are the printed
+    pages. Checked against the book: Hartshorne IV.3.1, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the four excluded degrees at $g=2$ --- $\ell\le2$ for $\deg D\le1$ and $\deg D=2$, $\ell=2$ for $\deg D=3$, and $\ell=3$ with a plane quartic of genus $3$ for $\deg D=4$.
+    Not checked: Yang's Solutions outside printed pp. 87; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.3.1 at printed
+    pp. 87 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -254,5 +274,7 @@ Step [](#s8){.pf-ref} is exactly the required equivalence.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.1, printed p. 218, text version `tmp/sources/hartshorne-solutions-egbert.md`, uses (3.1) with $\deg D\ge2g+1$ for very ampleness and then rules out $\deg D\le4$ on a genus-2 curve by the dimension of $\linearsystem{D}$ and by the $g^1_2$ it would produce.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.1, text version `tmp/sources/hartshorne-solutions-egbert.md`, uses (3.1) with $\deg D\ge2g+1$ for very ampleness and then rules out $\deg D\le4$ on a genus-2 curve by the dimension of $\linearsystem{D}$ and by the $g^1_2$ it would produce.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.3.1, gives both directions in one page. The easy one is Corollary IV.3.2(b) at $\deg D\geq 2g+1=5$. For the other it fixes a very ample $D$ and walks the degrees below $5$. If $\deg D\leq1$ then $\ell(D)\leq\deg D+1\leq2$ by (4.1.5). If $\deg D=2$ then Riemann--Roch gives $\ell(D)=\ell(K-D)+1$ with $\deg(K-D)=0$, so $\ell(K-D)\leq1$ and $\ell(D)\leq2$. If $\deg D=3$ then $\ell(K-D)=0$ and $\ell(D)=3+1-2=2$. If $\deg D=4$ then $\ell(D)=4+1-2=3$ and, by Corollary IV.3.2, $\abs D$ has no base point, so with $D$ very ample the morphism is an embedding of $X$ in $\PP^2$ as a plane quartic, of genus $\frac12(4-1)(4-2)=3\ne2$. Each case contradicts $\ell(D)\geq3$, which is what very ampleness forces. One sentence to read past: the (⇒) direction opens with $\ell(D)=\ell(D-P-Q)\geq2$ for all $P,Q$, an equality that cannot hold, since very ampleness gives $\ell(D-P-Q)=\ell(D)-2$; the value the argument uses from it is only $\ell(D)>2$.
 :::

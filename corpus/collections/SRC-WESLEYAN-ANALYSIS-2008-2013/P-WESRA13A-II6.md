@@ -5,7 +5,9 @@ kind: problem
 title: 'Absolute continuity implies bounded variation'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Absolute Continuity
+  - Bounded Variation
 relations: []
 review: draft
 audit:

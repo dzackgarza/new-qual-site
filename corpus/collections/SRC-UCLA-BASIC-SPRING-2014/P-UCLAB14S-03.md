@@ -6,7 +6,9 @@ title: A commutator relation forces singularity
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Commutators
+  - Invertibility
 relations: []
 review: draft
 audit:

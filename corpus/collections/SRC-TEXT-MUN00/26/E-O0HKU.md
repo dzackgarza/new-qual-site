@@ -34,7 +34,44 @@ Show that if $f: X \to Y$ is continuous, where $X$ is compact and $Y$ is Hausdor
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.6, PDF p. 13** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs.
 
-Let $f:X\to Y$ be continuous with $X$ compact and $Y$ Hausdorff, and let $C\subset X$ be closed. Then $C$ is compact (Theorem 26.2), so $f(C)$ is compact (Theorem 26.5), and a compact subspace of a Hausdorff space is closed (Theorem 26.3). So $f(C)$ is closed for every closed $C$: $f$ is a closed map.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.6** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs.
+
+Let $f:X\to Y$ be continuous with $X$ compact and $Y$ Hausdorff, and let $C\subseteq X$ be closed.
+
+::: pf
+
+::: {.pf-step #compact}
+$C$ is compact.
+
+::: pf-proof
+$C$ is a closed subspace of the compact space $X$, and every closed subspace of a compact space is compact (Theorem 26.2).
+:::
+
+:::
+
+::: {.pf-step #image}
+$f(C)$ is compact.
+
+::: pf-proof
+$f(C)$ is the image of the compact space $C$ under the continuous map $f\restriction_C$, and the image of a compact space under a continuous map is compact (Theorem 26.5).
+:::
+
+:::
+
+::: {.pf-step #closed}
+$f(C)$ is closed in $Y$.
+
+::: pf-proof
+Every compact subspace of a Hausdorff space is closed (Theorem 26.3), and $Y$ is Hausdorff.
+:::
+
+:::
+
+::: {.pf-qed}
+Every closed $C\subseteq X$ has closed image by steps [](#compact){.pf-ref}--[](#closed){.pf-ref}, so $f$ carries closed sets to closed sets: $f$ is a closed map.
+:::
+
+:::
+
 :::

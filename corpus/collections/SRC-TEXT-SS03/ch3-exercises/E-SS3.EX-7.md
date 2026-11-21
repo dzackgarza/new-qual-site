@@ -23,6 +23,7 @@ $$
 :::
 
 ::: {.solution}
+The statement is Exercise 7 of [@SS03, ch. 3], printed as $\int_0^{2\pi}\frac{d\theta}{(a+\cos\theta)^2}=\frac{2\pi a}{(a^2-1)^{3/2}}$ for $a>1$.
 Put $z = e^{i\theta}$, so $\cos\theta = \frac{z+z^{-1}}{2}$ and $d\theta = \frac{dz}{iz}$, and let $z_0 = -a+\sqrt{a^2-1}$, $z_1 = -a-\sqrt{a^2-1}$ be the roots of $z^2+2az+1$.
 
 ::: pf

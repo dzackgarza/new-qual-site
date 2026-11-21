@@ -12,6 +12,21 @@ classification:
   - Abelian Groups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the two containers state why their subsections suffice, and the 23
+    leaf steps that asserted their claim with no justification each carry a sentence deriving it. The
+    mathematics is unchanged: the four abelian groups come from the partitions of the two exponents, the
+    Sylow count $n_3=4$ follows because $n_3=1$ would make $G$ abelian, the action on the four Sylow
+    $3$-subgroups has image $A_4$, part (c) uses trivial intersection from the absence of a normal
+    subgroup of order $3$ in $A_4$ together with a trivial conjugation map into $\operatorname{Aut}(C_3)$,
+    and in $D_{18}$ the subgroup $\{e,r^9,s,sr^9\}$ is moved by conjugation by $r$. Checked against the
+    statement on the card, from the UGA Fall 2017 algebra qualifying exam. Nothing in the statement was
+    changed.
+
 ---
 ::: {.problem}
 (a) Classify all abelian groups of order 36 up to isomorphism.
@@ -39,11 +54,21 @@ There are four abelian groups of order $36$, up to isomorphism, represented by $
 
 The prime factorization of 36 is $36 = 2^2 \cdot 3^2$.
 
+
+::: pf-proof
+This is the prime factorization of $36$.
+:::
+
 :::
 
 ::: pf-step
 
 By the Fundamental Theorem of Finitely Generated Abelian Groups, any finite abelian group is isomorphic to a direct product of cyclic groups of prime power orders.
+
+
+::: pf-proof
+This is the structure theorem for finitely generated abelian groups, applied to a finite group: it is a direct sum of cyclic groups of prime power order.
+:::
 
 :::
 
@@ -53,11 +78,21 @@ Partitions of the prime exponents:
         - For $p = 2$: the partitions of 2 are $2$ and $1 + 1$, corresponding to $\ZZ/4\ZZ$ and $\ZZ/2\ZZ \times \ZZ/2\ZZ$.
         - For $p = 3$: the partitions of 2 are $2$ and $1 + 1$, corresponding to $\ZZ/9\ZZ$ and $\ZZ/3\ZZ \times \ZZ/3\ZZ$.
 
+
+::: pf-proof
+The partitions of the exponent $2$ are $2$ and $1+1$, for each of the two primes.
+:::
+
 :::
 
 ::: pf-step
 
 There are $2 \times 2 = 4$ non-isomorphic abelian groups of order 36:
+
+
+::: pf-proof
+The choices multiply, giving $2\times2=4$, and the structure theorem makes distinct choices non-isomorphic.
+:::
 
 :::
 
@@ -80,11 +115,21 @@ If $G$ is nonabelian with a normal Sylow $2$-subgroup, there exists a normal sub
 
 Let $P \in \operatorname{Syl}_2(G)$ with $\cardinality{P} = 4$ and $P \trianglelefteq G$.
 
+
+::: pf-proof
+This is the hypothesis of part (b): a Sylow $2$-subgroup of order $4$ that is normal.
+:::
+
 :::
 
 ::: pf-step
 
 Number of Sylow 3-subgroups: By Sylow's Theorems, $n_3 \equiv 1 \pmod 3$ and $n_3 \mid 4$, so $n_3 \in \{1, 4\}$.
+
+
+::: pf-proof
+Sylow's theorem gives that $n_3$ divides $36/9=4$ and is congruent to $1$ modulo $3$.
+:::
 
 :::
 
@@ -95,11 +140,21 @@ If $n_3 = 1$, let $Q \in \operatorname{Syl}_3(G)$ ($\cardinality{Q} = 9$). Then 
         - Any group of order $p^2$ is abelian, so both $P$ and $Q$ are abelian.
         - The direct product of abelian groups is abelian, so $G$ is abelian, contradicting the hypothesis that $G$ is non-abelian.
 
+
+::: pf-proof
+If $n_3=1$ then $G\cong P\times Q$ with both factors abelian, so $G$ would be abelian, contradicting the hypothesis.
+:::
+
 :::
 
 ::: pf-step
 
 Thus $n_3 = 4$.
+
+
+::: pf-proof
+The divisors of $4$ congruent to $1$ modulo $3$ are $1$ and $4$, and $1$ has been excluded.
+:::
 
 :::
 
@@ -108,6 +163,11 @@ Thus $n_3 = 4$.
 Conjugation action on $\operatorname{Syl}_3(G)$:
         - $G$ acts transitively on the set $X = \operatorname{Syl}_3(G)$ of size 4 by conjugation.
         - This defines a permutation homomorphism $\rho: G \to \operatorname{Sym}(X) \cong S_4$.
+
+
+::: pf-proof
+Sylow's theorem: the Sylow $3$-subgroups of a finite group are all conjugate, so the action by conjugation is transitive.
+:::
 
 :::
 
@@ -121,11 +181,21 @@ Kernel and image of $\rho$:
         - If $\cardinality{N} = 9$, then $N = Q \trianglelefteq G$, which would mean $n_3 = 1$, a contradiction.
         - Hence $\cardinality{N} = 3$.
 
+
+::: pf-proof
+The stabilizer of $Q$ under conjugation is its normalizer, and the kernel of the action is the intersection of the normalizers.
+:::
+
 :::
 
 ::: pf-step
 
 Identification of the quotient:
+
+
+::: pf-proof
+The image is a subgroup of $S_4$ of order $12$, and the only such subgroup is $A_4$.
+:::
 
 :::
 
@@ -147,6 +217,11 @@ If $N\trianglelefteq G$, $G/N\cong A_4$, and $H\leq G$ with $H\cong A_4$, then $
 
 We are given $N \trianglelefteq G$ with $G/N \cong A_4$ ($\cardinality{N} = 3$) and $H \le G$ with $H \cong A_4$ ($\cardinality{H} = 12$).
 
+
+::: pf-proof
+This is the hypothesis of part (c).
+:::
+
 :::
 
 ::: pf-step
@@ -156,6 +231,11 @@ Trivial intersection $N \cap H = \{e\}$:
         - The normal subgroups of $A_4$ are $\{e\}$, $V_4$ (order 4), and $A_4$ (order 12); $A_4$ has no normal subgroup of order 3.
         - Thus $N \cap H = \{e\}$.
 
+
+::: pf-proof
+The intersection is normal in $H\cong A_4$ and has order dividing $3$; a normal subgroup of order $3$ would be a normal Sylow $3$-subgroup, but $A_4$ has four Sylow $3$-subgroups, so the intersection is trivial.
+:::
+
 :::
 
 ::: pf-step
@@ -163,6 +243,11 @@ Trivial intersection $N \cap H = \{e\}$:
 Full group product:
         - $\cardinality{N H} = \frac{\cardinality{N} \cardinality{H}}{\cardinality{N \cap H}} = \frac{3 \cdot 12}{1} = 36 = \cardinality{G}$.
         - Therefore $G = N H$.
+
+
+::: pf-proof
+The product formula $\cardinality{NH}=\cardinality{N}\cardinality{H}/\cardinality{N\cap H}$ with trivial intersection gives $3\cdot12=36$.
+:::
 
 :::
 
@@ -175,11 +260,21 @@ Commutativity of elements:
         - Since $\gcd(3, 2) = 1$, there are no non-trivial homomorphisms from $A_4$ to $\ZZ/2\ZZ$, so $\psi$ is trivial.
         - Thus $h n h^{-1} = n$, i.e., $n h = h n$ for all $n \in N$ and $h \in H$.
 
+
+::: pf-proof
+Conjugation gives a homomorphism $H\to\operatorname{Aut}(N)$, whose target has order $2$ since $N$ is cyclic of order $3$; and $A_4$ has no subgroup of index $2$, so the homomorphism is trivial.
+:::
+
 :::
 
 ::: pf-step
 
 Hence $G$ is the internal direct product $G \cong N \times H \cong \ZZ/3\ZZ \times A_4$.
+
+
+::: pf-proof
+Two normal subgroups with trivial intersection whose elements commute generate their direct product, so $G\cong N\times H\cong\ZZ/3\ZZ\times A_4$.
+:::
 
 :::
 
@@ -198,11 +293,21 @@ The dihedral group $D_{18}$ has order $36$, is nonabelian, and has a nonnormal S
 The dihedral group of order 36 has presentation:
     $$D_{18} = \langle r, s \mid r^{18} = 1, s^2 = 1, s r s = r^{-1} \rangle.$$
 
+
+::: pf-proof
+This is the standard presentation of the dihedral group of order $36$.
+:::
+
 :::
 
 ::: pf-step
 
 $\cardinality{D_{18}} = 36$. Since $s r = r^{17} s \ne r s$, $D_{18}$ is non-abelian.
+
+
+::: pf-proof
+The presentation gives $2\cdot18=36$ elements, and the relation $srs^{-1}=r^{-1}$ makes the group non-abelian.
+:::
 
 :::
 
@@ -210,11 +315,21 @@ $\cardinality{D_{18}} = 36$. Since $s r = r^{17} s \ne r s$, $D_{18}$ is non-abe
 
 A Sylow 2-subgroup has order 4.
 
+
+::: pf-proof
+Since $36=4\cdot9$, a Sylow $2$-subgroup has order $4$.
+:::
+
 :::
 
 ::: pf-step
 
 Consider the subgroup $P = \{e, r^9, s, s r^9\} \le D_{18}$, which has order 4.
+
+
+::: pf-proof
+The four displayed elements are distinct, $r^9$ and $s$ have order $2$, and $s$ conjugates $r^9$ to itself, so they form a subgroup of order $4$.
+:::
 
 :::
 
@@ -223,17 +338,32 @@ Consider the subgroup $P = \{e, r^9, s, s r^9\} \le D_{18}$, which has order 4.
 Conjugate $P$ by $r$:
     $$r s r^{-1} = s r^{-2} = s r^{16}.$$
 
+
+::: pf-proof
+From $srs^{-1}=r^{-1}$ one gets $rs=sr^{-1}$, and $r^{-2}=r^{16}$ because $r$ has order $18$.
+:::
+
 :::
 
 ::: pf-step
 
 Since $s r^{16} \notin P$ ($16 \not\equiv 0, 9 \pmod{18}$), $r P r^{-1} \ne P$.
 
+
+::: pf-proof
+Since $16$ is congruent to neither $0$ nor $9$ modulo $18$, the element $sr^{16}$ is none of the four elements of $P$.
+:::
+
 :::
 
 ::: pf-step
 
 Thus the Sylow 2-subgroup $P$ is not normal in $D_{18}$.
+
+
+::: pf-proof
+A normal subgroup is invariant under conjugation by every element of the group.
+:::
 
 :::
 

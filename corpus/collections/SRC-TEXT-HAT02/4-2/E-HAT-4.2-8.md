@@ -26,6 +26,33 @@ audit:
     otherwise Sigma X = S^0 has H~_0 = Z, contradicting the vanishing just proved. The repaired sentence
     now says that. Not checked: nothing outside this exercise.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, outside the sections already closed. Read against Hatcher, Exercise 8
+    of §4.2, printed p. 389. Checked: the suspension isomorphism gives
+    $\widetilde H_n(\Sigma X)=\widetilde H_{n-1}(X)=0$ for $n\ge1$, and $\Sigma X$ is
+    path-connected because $X$ is nonempty, acyclicity forcing that — for $X$ empty $\Sigma X=S^0$
+    has $\widetilde H_0=\ZZ$; the two open cones cover $\Sigma X$, are contractible, and meet in
+    $X\times(1/3,2/3)\simeq X$, which is path-connected; van Kampen makes $\pi_1$ trivial; and
+    Hurewicz plus Whitehead, both applicable to CW complexes, make the map to a point a homotopy
+    equivalence. No defect; the printed page is added.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.2 Exercise 8, the suspension
+    isomorphism for reduced homology, the Hurewicz theorem, Proposition 4.1, and the van Kampen
+    theorem. One defect repaired. The step proving $\widetilde H_0(\Sigma X)=0$ asserted that
+    "acyclicity does force $X\neq\emptyset$", and justified it by the vanishing it was being used
+    to establish; acyclicity does not force $X$ nonempty, since the empty CW complex has vanishing
+    reduced homology. The empty case is a genuine exception to the exercise as printed:
+    $\Sigma\emptyset=S^0$ is not contractible. The card now states the exercise as printed, records
+    in its opening sentence that it is read with $X$ nonempty, gives that counterexample, and the
+    step proves path-connectedness under the stated hypothesis. Nothing else changed: the
+    suspension isomorphism, the two open cones and van Kampen giving $\pi_1(\Sigma X)=1$ from
+    $\widetilde H_0(X)=0$, and Hurewicz followed by Whitehead are correct as written.
 ---
 
 ::: {.problem}
@@ -33,6 +60,8 @@ Show the suspension of an acyclic CW complex is contractible.
 :::
 
 ::: {.solution}
+The exercise is §4.2 Exercise 8, and it is read with $X$ nonempty. That hypothesis is needed: for $X=\emptyset$ the reduced homology of $X$ vanishes, so $X$ is acyclic, while $\Sigma X=S^0$ is not contractible. The card states the exercise as printed and records the hypothesis in the first step.
+
 Let $X$ be an acyclic CW complex, so $\widetilde H_n(X) = 0$ for all $n$. Write $\Sigma X = X \times I / {\sim}$, with $X \times \{0\}$ and $X \times \{1\}$ each collapsed to a point.
 
 ::: pf
@@ -55,7 +84,7 @@ This is the suspension isomorphism for reduced homology, which holds for all $n 
 $\widetilde H_0(\Sigma X) = 0$.
 
 ::: pf-proof
-Every point of $\Sigma X$ is joined by a path to a cone point, and when $X$ is nonempty the two cone points are joined through any point of $X$; so $\Sigma X$ is path-connected. Acyclicity does force $X\neq\emptyset$: for $X=\emptyset$ one has $\Sigma X=S^0$, whose $\widetilde H_0$ is $\ZZ$, contradicting the vanishing of step [](#homology){.pf-ref}.
+When $X\neq\emptyset$, every point of $\Sigma X$ is joined by a path to a cone point, and the two cone points are joined through any point of $X$, so $\Sigma X$ is path-connected and $\widetilde H_0(\Sigma X)=0$.
 :::
 
 :::

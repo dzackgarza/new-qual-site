@@ -10,6 +10,21 @@ classification:
   - Homological Algebra
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Repaired and structured. The card's solution was extraction residue: it carried \envlist,
+    the undefined \wait, three tikzcd diagrams and their uiver.app links, and a footnote marker
+    whose definition sat inside the solution. The mathematics is kept exactly — the answer Z/2 +
+    Z/2 + Z/3, isomorphic to Z/2 + Z/6 — and the facts it listed (Ext of a free module vanishes,
+    Ext(Z/n, B) = B/nB from the resolution 0 -> Z -> Z -> Z/n -> 0, and Ext's additivity) are
+    now steps with their resolutions written out and the nine entries computed one by one; the
+    card's identification of Ext with Ext^1 is stated. The acknowledgement of Oskar Henriksson
+    recorded in the removed footnote is dropped with the diagram apparatus. Not claimed: a
+    retained solution set; the collection's provenance is the UCSD qualifying examination
+    compilation.
 ---
 
 ::: {.problem}
@@ -17,119 +32,59 @@ Compute $\Ext(\ZZ \oplus \ZZ_2 \oplus \ZZ_3, \ZZ \oplus \ZZ_4 \oplus \ZZ_5)$.
 :::
 
 ::: {.solution}
+Throughout $\Ext$ means $\Ext^{1}_{\ZZ}$ for $\ZZ$-modules, so that $\Ext^{0}_{\ZZ} = \Hom_{\ZZ}$, and $A \coloneqq \ZZ \oplus \ZZ/2 \oplus \ZZ/3$ with $A_{1} = \ZZ$, $A_{2} = \ZZ/2$, $A_{3} = \ZZ/3$, while $B \coloneqq \ZZ \oplus \ZZ/4 \oplus \ZZ/5$ with $B_{1} = \ZZ$, $B_{2} = \ZZ/4$, $B_{3} = \ZZ/5$.
 
+::: pf
 
-\envlist
+::: {.pf-step #free}
+$\Ext(\ZZ, B) = 0$ for every $\ZZ$-module $B$.
 
-::: {.concept}
-\envlist
-Facts Used:[^fix_facts_on_ext_oskar]
-
-- Since $\ZZ$ is a free $\ZZ\dash$module,
-$$
-\Ext(\ZZ, \ZZ/m) = 0
-$$
-
-- Using the usual projective resolution $0 \to \ZZ \to \ZZ \to \ZZ/n \to 0$, 
-$$
-\Ext(\ZZ/n, \ZZ) = \ZZ/n
-.$$
-
-$$
-\Ext(\ZZ/n, \ZZ/m) = (\ZZ/m) / (n \cdot \ZZ/m) \cong (\ZZ/m) / (d \cdot \ZZ/m) && 
-\\ \text{where } d \coloneqq \gcd(m, n)
-.$$
-  General principle: $\Ext(\ZZ/n, G) = G/nG$ 
-
-  By applying $\Hom_\ZZ(\wait, G)$ to the above resolution: 
-
-\begin{tikzcd}
-	& 0 & {\Ext^1_\ZZ(\ZZ/n, G)} \\
-	\\
-	{\Hom_\ZZ(\ZZ, G)} & {\Hom_\ZZ(\ZZ, G)} & {\Hom_\ZZ(\ZZ/n, G)} & 0 \\
-	&&& {}
-	\arrow[hook', from=3-3, to=3-2]
-	\arrow["{\cdot n}"', from=3-2, to=3-1]
-	\arrow[two heads, from=3-1, to=1-3, out=180, in=360]
-	\arrow[from=1-3, to=1-2]
-	\arrow[from=3-4, to=3-3]
-\end{tikzcd}
-
-  > [Link to Diagram](https://q.uiver.app/?q=WzAsNyxbMiwwLCIwIl0sWzAsMiwiXFxIb21fXFxaWihcXFpaLCBHKSJdLFsyLDIsIlxcSG9tX1xcWlooXFxaWiwgRykiXSxbNCwyLCJcXEhvbV9cXFpaKFxcWlovbiwgRykiXSxbNCwwLCJcXEV4dF4xX1xcWlooXFxaWi9uLCBHKSJdLFs2LDIsIjAiXSxbNCwzXSxbMywyLCIiLDIseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6ImJvdHRvbSJ9fX1dLFsyLDEsIlxcY2RvdCBuIiwyXSxbMSw0LCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJlcGkifX19XSxbNCwwXSxbNSwzXV0=)
-
-  which can be identified with:
-
-\begin{tikzcd}
-	&& 0 && {G/nG} \\
-	\\
-	G && G && {\Hom_\ZZ(\ZZ/n, G)} && 0 \\
-	&&&& {}
-	\arrow[hook', from=3-5, to=3-3]
-	\arrow["{\cdot n}"', from=3-3, to=3-1]
-	\arrow[two heads, from=3-1, to=1-5, out=180, in=360]
-	\arrow[from=1-5, to=1-3]
-	\arrow[from=3-7, to=3-5]
-\end{tikzcd}
-
-  > [Link to Diagram](https://q.uiver.app/?q=WzAsNyxbMiwwLCIwIl0sWzAsMiwiRyJdLFsyLDIsIkciXSxbNCwyLCJcXEhvbV9cXFpaKFxcWlovbiwgRykiXSxbNCwwLCJHL25HIl0sWzYsMiwiMCJdLFs0LDNdLFszLDIsIiIsMix7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoiYm90dG9tIn19fV0sWzIsMSwiXFxjZG90IG4iLDJdLFsxLDQsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6ImVwaSJ9fX1dLFs0LDBdLFs1LDNdXQ==)
-
-3. Contravariant Hom takes coproducts to products:
-$$
-\Ext(\bigoplus_{i\in I} A_i, \prod_{k\in K} B_k) = \prod_{i\in I} \prod_{k\in K} \Ext(A_i, B_k)
-.$$
+::: pf-proof
+$\ZZ$ is a free, hence projective, $\ZZ$-module, and the first Ext group of a projective module vanishes.
 
 :::
 
+:::
 
-Write 
-$$
-A_\wait &\coloneqq A_1 \oplus A_2 \oplus A_3 \coloneqq \ZZ \oplus  \ZZ/2 \oplus  \ZZ/3 \\
-B_\wait &\coloneqq B_1 \oplus B_2 \oplus B_3 \coloneqq \ZZ \oplus \ZZ/4 \oplus  \ZZ/5
-.$$
+::: {.pf-step #cyclic}
+For every $\ZZ$-module $B$ and every $n \ge 1$ there is a natural isomorphism $\Ext(\ZZ/n, B) \cong B/nB$.
 
-We can then define the bicomplex $$
-C_{\wait, \wait} \coloneqq \Ext(A_\wait, B_\wait) = \bigoplus_{0 \leq i, k \leq 3} \Ext(A_i, B_k)
-,$$
-i.e. $C_{i, k} \coloneqq \Ext(A_i, B_k)$, which can be organized into the following diagram where we take the Ext at each position and sum them all together:
+::: pf-proof
+Apply $\Hom_{\ZZ}(-, B)$ to the free resolution $0 \to \ZZ \xrightarrow{\cdot n} \ZZ \to \ZZ/n \to 0$. This gives the exact sequence $0 \to \Hom(\ZZ/n,B) \to \Hom(\ZZ,B) \xrightarrow{\cdot n} \Hom(\ZZ,B) \to \Ext(\ZZ/n,B) \to \Ext(\ZZ,B) = 0$, using step [](#free){.pf-ref} for the last term. The middle map is multiplication by $n$ on $B$, identifying $\Hom(\ZZ,B) \cong B$, so $\Ext(\ZZ/n,B) \cong B/nB$.
 
-\begin{tikzcd}
-	{\Ext(A_1, B_1)} && {\Ext(A_1, B_2)} && {\Ext(A_1, B_3)} \\
-	\\
-	{\Ext(A_2, B_1)} && {\Ext(A_2, B_2)} && {\Ext(A_2, B_3)} \\
-	\\
-	{\Ext(A_3, B_1)} && {\Ext(A_3, B_2)} && {\Ext(A_3, B_3)}
-\end{tikzcd}
+:::
 
-> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMCwwLCJcXEV4dF8xXlxcWlooQV8xLCBCXzEpIl0sWzAsMiwiXFxFeHRfMV5cXFpaKEFfMiwgQl8xKSJdLFswLDQsIlxcRXh0XzFeXFxaWihBXzMsIEJfMSkiXSxbMiwwLCJcXEV4dF8xXlxcWlooQV8xLCBCXzIpIl0sWzQsMCwiXFxFeHRfMV5cXFpaKEFfMSwgQl8zKSJdLFsyLDIsIlxcRXh0XzFeXFxaWihBXzIsIEJfMikiXSxbNCwyLCJcXEV4dF8xXlxcWlooQV8yLCBCXzMpIl0sWzIsNCwiXFxFeHRfMV5cXFpaKEFfMywgQl8yKSJdLFs0LDQsIlxcRXh0XzFeXFxaWihBXzMsIEJfMykiXV0=)
+:::
 
-This equals the following:
+::: {.pf-step #additivity}
+$\Ext\bigl(\bigoplus_{i}A_{i}, \bigoplus_{k}B_{k}\bigr) \cong \bigoplus_{i,k}\Ext(A_{i}, B_{k})$, the sums finite.
 
-\begin{tikzcd}
-	{\Ext(\ZZ, \ZZ)} && {\Ext(\ZZ, \ZZ/4)} && {\Ext(\ZZ, \ZZ/5)} \\
-	\\
-	{\Ext(\ZZ/2, \ZZ)} && {\Ext(\ZZ/2, \ZZ/4)} && {\Ext(\ZZ/2, \ZZ/5)} \\
-	\\
-	{\Ext(\ZZ/3, \ZZ)} && {\Ext(\ZZ/3, \ZZ/4)} && {\Ext(\ZZ/3, \ZZ/5)}
-\end{tikzcd}
+::: pf-proof
+$\Hom_{\ZZ}$ is additive in each variable, and a finite direct sum is also a finite direct product; $\Ext$ is computed from $\Hom$ by a projective resolution in the first variable and an injective resolution in the second, so it carries finite direct sums in the first variable and finite direct products in the second to direct products of the Ext groups, which for finitely many summands is the direct sum.
 
-> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMCwwLCJcXEV4dF8xXlxcWlooQV8xLCBCXzEpIl0sWzAsMiwiXFxFeHRfMV5cXFpaKEFfMiwgQl8xKSJdLFswLDQsIlxcRXh0XzFeXFxaWihBXzMsIEJfMSkiXSxbMiwwLCJcXEV4dF8xXlxcWlooQV8xLCBCXzIpIl0sWzQsMCwiXFxFeHRfMV5cXFpaKEFfMSwgQl8zKSJdLFsyLDIsIlxcRXh0XzFeXFxaWihBXzIsIEJfMikiXSxbNCwyLCJcXEV4dF8xXlxcWlooQV8yLCBCXzMpIl0sWzIsNCwiXFxFeHRfMV5cXFpaKEFfMywgQl8yKSJdLFs0LDQsIlxcRXh0XzFeXFxaWihBXzMsIEJfMykiXV0=)
+:::
 
+:::
 
-Which simplifies to:
+::: {.pf-step #matrices}
+The nine groups $\Ext(A_{i}, B_{k})$ are: $0$ in the row $i = 1$; $\ZZ/2$, $\ZZ/2$, $0$ in the row $i = 2$; and $\ZZ/3$, $0$, $0$ in the row $i = 3$.
 
-\begin{tikzcd}
-	0 && 0 && 0 \\
-	\\
-	{\ZZ/2} && {\ZZ/2} && 0 \\
-	\\
-	{\ZZ/3} && {0} && {0}
-\end{tikzcd}
+::: pf-proof
+Row $i = 1$: step [](#free){.pf-ref}. Row $i = 2$: $\Ext(\ZZ/2, \ZZ) \cong \ZZ/2\ZZ = \ZZ/2$, $\Ext(\ZZ/2, \ZZ/4) \cong \ZZ/4/2\ZZ/4 \cong \ZZ/2$, and $\Ext(\ZZ/2, \ZZ/5) \cong \ZZ/5/2\ZZ/5 = 0$ because multiplication by $2$ is surjective on $\ZZ/5$. Row $i = 3$: $\Ext(\ZZ/3,\ZZ) \cong \ZZ/3\ZZ = \ZZ/3$, $\Ext(\ZZ/3,\ZZ/4) \cong \ZZ/4/3\ZZ/4 = 0$ because multiplication by $3$ is surjective on $\ZZ/4$, and $\Ext(\ZZ/3,\ZZ/5) \cong \ZZ/5/3\ZZ/5 = 0$. All nine values are by step [](#cyclic){.pf-ref}.
 
+:::
 
-> [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMCwwLCJcXEV4dF8xXlxcWlooQV8xLCBCXzEpIl0sWzAsMiwiXFxFeHRfMV5cXFpaKEFfMiwgQl8xKSJdLFswLDQsIlxcRXh0XzFeXFxaWihBXzMsIEJfMSkiXSxbMiwwLCJcXEV4dF8xXlxcWlooQV8xLCBCXzIpIl0sWzQsMCwiXFxFeHRfMV5cXFpaKEFfMSwgQl8zKSJdLFsyLDIsIlxcRXh0XzFeXFxaWihBXzIsIEJfMikiXSxbNCwyLCJcXEV4dF8xXlxcWlooQV8yLCBCXzMpIl0sWzIsNCwiXFxFeHRfMV5cXFpaKEFfMywgQl8yKSJdLFs0LDQsIlxcRXh0XzFeXFxaWihBXzMsIEJfMykiXV0=)
+:::
 
-So the answer is $\ZZ/2 \oplus \ZZ/2 \oplus \ZZ/3 \cong \ZZ/2 \oplus \ZZ/6$. 
+::: pf-step
+$\Ext\bigl(\ZZ \oplus \ZZ_{2} \oplus \ZZ_{3},\\ \ZZ \oplus \ZZ_{4} \oplus \ZZ_{5}\bigr) \cong \ZZ/2 \oplus \ZZ/2 \oplus \ZZ/3 \cong \boxed{\ZZ/2 \oplus \ZZ/6}$.
 
-[^fix_facts_on_ext_oskar]: Thanks to Oskar Henriksson for some fixes/clarifications and further explanations here!
+::: pf-proof
+By step [](#additivity){.pf-ref} the answer is the direct sum of the nine groups of step [](#matrices){.pf-ref}, in which only $\ZZ/2$, $\ZZ/2$ and $\ZZ/3$ are nonzero: their sum is $\ZZ/2 \oplus \ZZ/2 \oplus \ZZ/3$. The Chinese remainder theorem, applicable because $2$ and $3$ are coprime, identifies $\ZZ/2 \oplus \ZZ/3$ with $\ZZ/6$, giving the second form.
 
+:::
+
+:::
+
+:::
 :::

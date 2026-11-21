@@ -65,9 +65,24 @@ and none of the implications reverses.
 A Cohen--Macaulay projective scheme $X$ of pure dimension over a field has a dualizing sheaf $\omega_X^\circ$ with Serre duality in every degree, and $X$ is Gorenstein exactly when $\omega_X^\circ$ is invertible.
 :::
 
+::: {.proposition}
+Let $k$ be a field and $R$ a finite-dimensional local $k$-algebra that is Gorenstein, with maximal ideal $\mfm$.
+Then the socle $\theset{r \st \mfm r = 0} = \Hom_R(k, R)$ is one-dimensional over $k$.
+:::
+
+::: {.proof}
+Write $D = \Hom_k(R,k)$ with the $R$-action $(r\varphi)(s) = \varphi(rs)$.
+For every $R$-module $M$ there is a natural isomorphism $\Hom_R(M,D)\cong\Hom_k(M,k)$, and for a finite-dimensional Gorenstein $R$ the module $D$ is isomorphic to $R$; both are proved on [[P-HCAO21]].
+Since $R/\mfm = k$,
+$$
+\Hom_R(k,R)\cong\Hom_R(k,D)\cong\Hom_k(k,k)=k,
+$$
+so the socle is one-dimensional.
+:::
+
 ::: {.example}
 In dimension $0$ every Noetherian local ring is Cohen--Macaulay.
 $k[x,y]/(x^2, y^2)$ is a complete intersection.
-$k[x,y]/(x^2, xy, y^2)$ is Cohen--Macaulay but not Gorenstein: its socle $\{r \st \mfm r = 0\} = (x, y)$ is $2$-dimensional, while a zero-dimensional Gorenstein local ring has $1$-dimensional socle.
+$k[x,y]/(x^2, xy, y^2)$ is Cohen--Macaulay but not Gorenstein: its socle $\{r \st \mfm r = 0\} = (x, y)$ is $2$-dimensional.
 The union of two planes in $\AA^4$ meeting in a point, $V((x,y) \cap (z,w))$, is not Cohen--Macaulay: removing the point disconnects it, while the punctured spectrum $\Spec R\sm\theset{\mfm}$ of a Cohen--Macaulay local ring $R$ of dimension at least $2$ is connected.
 :::

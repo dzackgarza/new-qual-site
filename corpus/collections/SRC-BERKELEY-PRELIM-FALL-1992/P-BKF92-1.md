@@ -18,6 +18,13 @@ audit:
   date: 2026-09-25
   note: >-
     Compared the similarity-invariant rank of M-I: it is 1 for A and 2 for B.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Fall92.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -39,6 +46,7 @@ similar?
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Fall 1992, retained in this repository as `assets/attachments/Fall92.pdf`; the statement below is its wording.
 
 ::: pf
 

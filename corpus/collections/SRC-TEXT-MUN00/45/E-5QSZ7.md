@@ -57,6 +57,19 @@ audit:
     unreadable, the site answering an automated request with a Cloudflare human check, which is not
     worked around.
 
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the three containers state why their subclaims suffice, and the 19
+    leaf steps that asserted a claim with no justification each carry a sentence deriving it. The leftover
+    asterisked Proof: lines inside the three part headings were removed, and the trailing Q.E.D. sentence
+    of part (c), because the filter labels the last step itself. The mathematics is unchanged: the finite
+    intersection of the neighbourhoods in (a), the epsilon/3 splitting at an index N in (b), and the mean
+    value theorem on an interval inside a neighbourhood where the derivatives are bounded by M in (c),
+    with M replaced by max{M,1} as the 2026-11-11 event records. Checked against Munkres, Topology (2000),
+    section 45 Exercise 2, printed p. 280, and the definition of equicontinuity in section 45; Theorem 21.6
+    is cited for the continuity of the uniform limit. Nothing in the statement was changed.
 ---
 
 ::: {.exercise}
@@ -78,13 +91,18 @@ Let $(Y, d)$ be a metric space; let $\mathcal{F}$ be a subset of $\mathcal{C}(X,
 ::: pf-step
 
 Part (a): Finite collections are equicontinuous.
-    *Proof:*
 
 ::: pf-proof
+
+The subclaims take the finitely many neighbourhoods supplied by the continuity of the members and intersect them.
 
 ::: pf-step
 
 Let $\mathcal{F} = \{f_1, \dots, f_k\}$ be finite, and let $x_0 \in X, \varepsilon > 0$.
+
+::: pf-proof
+This names an arbitrary finite family and the two data that the definition of equicontinuity at $x_0$ quantifies over.
+:::
 
 :::
 
@@ -92,17 +110,29 @@ Let $\mathcal{F} = \{f_1, \dots, f_k\}$ be finite, and let $x_0 \in X, \varepsil
 
 For each $i \in \{1, \dots, k\}$, continuity of $f_i$ at $x_0$ guarantees an open neighborhood $U_i \subseteq X$ of $x_0$ such that $d(f_i(x), f_i(x_0)) < \varepsilon$ for all $x \in U_i$.
 
+::: pf-proof
+Continuity of $f_i$ at $x_0$ is exactly this statement, with $\varepsilon$ as the tolerance; the neighbourhood may be taken open.
+:::
+
 :::
 
 ::: pf-step
 
 Define $U = \bigcap_{i=1}^k U_i$. As a finite intersection of open neighborhoods of $x_0$, $U$ is an open neighborhood of $x_0$.
 
+::: pf-proof
+A finite intersection of open sets is open, and $x_0$ belongs to every $U_i$, so it belongs to $U$.
+:::
+
 :::
 
 ::: pf-step
 
 For all $x \in U$ and all $f \in \mathcal{F}$, $d(f(x), f(x_0)) < \varepsilon$. Thus $\mathcal{F}$ is equicontinuous.
+
+::: pf-proof
+Every $f\in\mathcal{F}$ is one of the $f_i$, and $U\subseteq U_i$, so the inequality of the second subclaim applies; as $x_0$ and $\varepsilon$ were arbitrary, $\mathcal{F}$ is equicontinuous at every point.
+:::
 
 :::
 
@@ -113,13 +143,18 @@ For all $x \in U$ and all $f \in \mathcal{F}$, $d(f(x), f(x_0)) < \varepsilon$. 
 ::: pf-step
 
 Part (b): Uniformly convergent sequences $\{f_n\}$ are equicontinuous.
-    *Proof:*
 
 ::: pf-proof
+
+The subclaims split the sequence at an index beyond which it is uniformly close to its limit, and treat the finitely many remaining functions and the tail by different estimates.
 
 ::: pf-step
 
 Let $f_n \to f$ uniformly on $X$, with $x_0 \in X$ and $\varepsilon > 0$. By the uniform limit theorem, $f: X \to Y$ is continuous.
+
+::: pf-proof
+The uniform limit of a sequence of continuous maps into a metric space is continuous (Theorem 21.6).
+:::
 
 :::
 
@@ -127,11 +162,19 @@ Let $f_n \to f$ uniformly on $X$, with $x_0 \in X$ and $\varepsilon > 0$. By the
 
 Choose an integer $N \ge 1$ such that $d(f_n(x), f(x)) < \frac{\varepsilon}{3}$ for all $n \ge N$ and all $x \in X$.
 
+::: pf-proof
+This is the definition of uniform convergence applied to the tolerance $\varepsilon/3$.
+:::
+
 :::
 
 ::: pf-step
 
 By continuity of $f$ at $x_0$, choose an open neighborhood $U_0 \subseteq X$ of $x_0$ such that $d(f(x), f(x_0)) < \frac{\varepsilon}{3}$ for all $x \in U_0$.
+
+::: pf-proof
+Continuity of $f$ at $x_0$ applied with the tolerance $\varepsilon/3$.
+:::
 
 :::
 
@@ -139,17 +182,29 @@ By continuity of $f$ at $x_0$, choose an open neighborhood $U_0 \subseteq X$ of 
 
 For each $n \in \{1, \dots, N-1\}$, choose an open neighborhood $U_n$ of $x_0$ such that $d(f_n(x), f_n(x_0)) < \varepsilon$ for all $x \in U_n$.
 
+::: pf-proof
+Finitely many applications of the continuity of $f_n$ at $x_0$, with the tolerance $\varepsilon$.
+:::
+
 :::
 
 ::: pf-step
 
 Set $U = \bigcap_{n=0}^{N-1} U_n$, which is an open neighborhood of $x_0$.
 
+::: pf-proof
+A finite intersection of open sets containing $x_0$ is open and contains $x_0$.
+:::
+
 :::
 
 ::: pf-step
 
 For any $n < N$ and $x \in U$, $d(f_n(x), f_n(x_0)) < \varepsilon$ since $x \in U_n$.
+
+::: pf-proof
+$U$ is contained in each $U_n$, and the bound is the one that defines $U_n$.
+:::
 
 :::
 
@@ -158,11 +213,19 @@ For any $n < N$ and $x \in U$, $d(f_n(x), f_n(x_0)) < \varepsilon$ since $x \in 
 For any $n \ge N$ and $x \in U$, the triangle inequality gives:
         $$d(f_n(x), f_n(x_0)) \le d(f_n(x), f(x)) + d(f(x), f(x_0)) + d(f(x_0), f_n(x_0)) < \frac{\varepsilon}{3} + \frac{\varepsilon}{3} + \frac{\varepsilon}{3} = \varepsilon.$$
 
+::: pf-proof
+The inequality is the triangle inequality through $f(x)$ and $f(x_0)$; each of the three terms is less than $\varepsilon/3$ by the choice of $N$ and of $U_0$, the third because the uniform bound applies at $x_0$ as well.
+:::
+
 :::
 
 ::: pf-step
 
 Thus $\{f_n\}_{n=1}^\infty$ is equicontinuous at $x_0$, hence equicontinuous on $X$.
+
+::: pf-proof
+The two preceding subclaims cover every index $n$, so the defining condition holds at $x_0$ with the neighbourhood $U$; $x_0$ and $\varepsilon$ were arbitrary.
+:::
 
 :::
 
@@ -173,13 +236,18 @@ Thus $\{f_n\}_{n=1}^\infty$ is equicontinuous at $x_0$, hence equicontinuous on 
 ::: pf-step
 
 Part (c): Locally uniformly bounded derivatives imply equicontinuity.
-    *Proof:*
 
 ::: pf-proof
+
+The subclaims select a neighbourhood on which the derivatives are bounded and apply the mean value theorem on an interval inside it.
 
 ::: pf-step
 
 Let $x_0 \in \RR$ and $\varepsilon > 0$.
+
+::: pf-proof
+These are the arbitrary data of the definition of equicontinuity at $x_0$.
+:::
 
 :::
 
@@ -187,11 +255,19 @@ Let $x_0 \in \RR$ and $\varepsilon > 0$.
 
 By hypothesis, there exists an open neighborhood $U_0 \ni x_0$ and a constant $M > 0$ such that $\abs{f'(t)} \le M$ for all $f \in \mathcal{F}$ and all $t \in U_0$.
 
+::: pf-proof
+The hypothesis gives a neighbourhood $U_0$ and a constant $M_0$ with $\abs{f'}\le M_0$ on $U_0$; replacing $M_0$ by $\max\{M_0,1\}$ gives a positive bound, since $\abs{f'}\ge0$ and an enlarged bound is still a bound.
+:::
+
 :::
 
 ::: pf-step
 
 Replacing $M$ by $\max\{M,1\}$, which is still a bound for the derivatives on $U_0$ and is positive, choose $\delta > 0$ such that the interval $U = (x_0 - \delta, x_0 + \delta) \subseteq U_0$ and $\delta < \frac{\varepsilon}{M}$.
+
+::: pf-proof
+$U_0$ is open and contains $x_0$, so some interval $(x_0-\delta_0,x_0+\delta_0)$ lies in $U_0$; take $\delta=\min\{\delta_0,\varepsilon/(2M)\}$, which is positive and satisfies both requirements.
+:::
 
 :::
 
@@ -200,11 +276,19 @@ Replacing $M$ by $\max\{M,1\}$, which is still a bound for the derivatives on $U
 For any $x \in U$ and any $f \in \mathcal{F}$, by the Mean Value Theorem, there exists a point $c$ strictly between $x$ and $x_0$ such that:
         $$\abs{f(x) - f(x_0)} = \abs{f'(c)} \abs{x - x_0}.$$
 
+::: pf-proof
+$f$ is differentiable and the closed interval with endpoints $x$ and $x_0$ lies in $U\subseteq U_0$, so the mean value theorem applies on it and supplies such a $c$.
+:::
+
 :::
 
 ::: pf-step
 
 Since $c \in U \subseteq U_0$, $\abs{f'(c)} \le M$.
+
+::: pf-proof
+$c$ lies between $x$ and $x_0$, hence in $U$, and the bound holds on all of $U_0$.
+:::
 
 :::
 
@@ -212,11 +296,19 @@ Since $c \in U \subseteq U_0$, $\abs{f'(c)} \le M$.
 
 Consequently, $\abs{f(x) - f(x_0)} \le M \abs{x - x_0} < M \delta < \varepsilon$.
 
+::: pf-proof
+The first inequality substitutes the bound of the preceding subclaim into the identity of the mean value theorem; the middle inequality uses $\abs{x-x_0}<\delta$, and the last the choice $\delta<\varepsilon/M$.
+:::
+
 :::
 
 ::: pf-step
 
-Thus $\mathcal{F}$ is equicontinuous at $x_0$, and therefore on $\RR$. Q.E.D.
+Thus $\mathcal{F}$ is equicontinuous at $x_0$, and therefore on $\RR$.
+
+::: pf-proof
+The preceding subclaim is the defining condition at $x_0$ with the neighbourhood $U$, uniformly in $f\in\mathcal F$; $x_0$ was arbitrary.
+:::
 
 :::
 

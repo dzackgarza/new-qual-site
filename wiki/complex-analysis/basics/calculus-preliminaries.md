@@ -26,22 +26,6 @@ topics:
 
 [[PR-5ZSSQ]]
 
-::: {.proof}
-Let $f\colon X\to X$ be a contraction with constant $c<1$ on a complete metric space $X$.
-
-Uniqueness: if $x, y$ are fixed points, then $d(x, y) = d(f(x), f(y))\leq c d(x, y)$, and $c<1$ forces $d(x, y) = 0$.
-
-Existence: choose $x_0\in X$ and set $x_k \coloneqq f(x_{k-1})$.
-Then $d(x_{k+1}, x_k) = d(f(x_k), f(x_{k-1})) \leq c\,d(x_k, x_{k-1})$, so by induction $d(x_{k+1}, x_k)\leq c^k d(x_1, x_0)$.
-For $n < m$,
-$$
-d(x_m, x_n) \leq \sum_{k=n}^{m-1} d(x_{k+1}, x_{k}) \leq \sum_{k=n}^{m-1} c^k d(x_1, x_0) \leq \frac{c^n}{1-c} d(x_1, x_0),
-$$
-which tends to $0$ as $n\to\infty$, so $(x_k)$ is Cauchy and converges to some $x\in X$.
-Since $f$ is continuous, $f(x) = \lim_k f(x_k) = \lim_k x_{k+1} = x$.
-
-:::
-
 ## The implicit and inverse function theorems
 
 
@@ -57,6 +41,16 @@ Near a point where the derivative in the dependent variables is nonsingular, the
 ::: {.slogan}
 A $C^1$ map is invertible, with $C^1$ inverse, on some neighborhood of each point at which its derivative is invertible.
 
+:::
+
+::: {.example title="Polar coordinates, by the inverse function theorem"}
+The map $\Phi(r,\theta) = (r\cos\theta,\ r\sin\theta)$ has derivative
+$$
+\begin{pmatrix}\cos\theta & -r\sin\theta\\ \sin\theta & r\cos\theta\end{pmatrix},
+$$
+of determinant $r$, so [[T-XECJ3|the inverse function theorem]] gives a $C^1$ inverse on a neighbourhood of every point with $r\neq0$: the polar coordinates of a point off the origin.
+The local statement is all that can hold, since $\theta$ is determined only modulo $2\pi$.
+At $r = 0$ the determinant vanishes and the map is not injective near the origin: every neighbourhood of it contains $(r,\theta)$ and $(r,\theta+\pi)$ with the same image.
 :::
 
 ## Convergence of series
@@ -81,6 +75,7 @@ The even and odd partial sums are monotone and bounded, so they converge, and $S
 
 - For $\gamma\colon[a,b]\to\RR^2$ piecewise $C^1$, $\int_\gamma F\cdot \dr = \int_a^b F(\gamma(t))\cdot \gamma'(t) \dt$.
 
+The line integral and its independence of a piecewise $C^1$ parametrization are [@Ahl73, ch. 4, §1.1, Line Integrals], which defines $\int_\gamma p\,\dx+q\,\dy$ by this integral along the parameter; the chain rule in the second item is [@Rud76, ch. 9, Theorem 9.15], and the gradient, curl and divergence are the coordinate expressions of that derivative.
 :::
 
 ### Green's theorem
@@ -101,6 +96,7 @@ Then $p/q$ is a sum of the following terms:
 
 - for each irreducible quadratic factor $h$ of multiplicity $k$, terms $\frac{B_1x+C_1}{h(x)}, \ldots, \frac{B_kx+C_k}{h(x)^k}$.
 
+The decomposition is [@Ahl73, ch. 5, §2.1, Partial Fractions], which attaches to each pole of a meromorphic function its singular part and, for a rational function, assembles the sum of those parts as the polynomial part plus the proper fraction; over $\RR$ the irreducible quadratic factors are the conjugate pairs of nonreal roots.
 :::
 
 [[PR-4LISY]]
@@ -110,7 +106,7 @@ Then $p/q$ is a sum of the following terms:
 ::: {.remark}
 Inside its radius of convergence, a power series may be integrated and differentiated term by term, and the resulting series have the same radius of convergence.
 A uniformly convergent series of continuous functions on a compact interval may be integrated term by term.
-A uniformly convergent series of differentiable functions need not be differentiable term by term: $\sum_{n\geq1} \frac{\sin(n^2x)}{n^2}$ converges uniformly on $\RR$ while the series of derivatives $\sum_{n\geq 1} \cos(n^2x)$ diverges at $x=0$.
+A uniformly convergent series of differentiable functions need not be differentiable term by term ([[complex-analysis/basics/uniform-convergence|Uniform convergence]]).
 
 :::
 
@@ -126,27 +122,12 @@ The Cauchy product of power series and the standard power series are on [[comple
 ::: {.fact title="Polynomial division"}
 For polynomials $f, g$ over a field with $g\neq 0$, there are unique polynomials $q, r$ with $f = qg + r$ and $\deg r < \deg g$ or $r = 0$.
 
+This is division with remainder in the [[D-NKRGN|Euclidean domain]] $k[x]$, whose Euclidean function is the degree: subtracting a suitable multiple of $g$ lowers the degree of $f$ until it falls below $\deg g$, and the remainder is unique because a difference of two remainders of degree below $\deg g$ that is a multiple of $g$ must vanish.
 :::
 
 [[FT-3ZL25]]
 
-## Convergence of functions
-
-[[D-AIQG3]]
-
-[[D-2CCDB]]
-
-[[FF-XZGIY]]
-
-[[D-QTJ7T]]
-
-[[D-OHFRH]]
-
-::: {.remark}
-If $f\colon \Omega \to \Omega'$ is a holomorphic bijection, then $\inverseof{f}$ is holomorphic ([[P-Z776N]]).
-For real functions the analogue fails: $f(x) = x^3$ is a smooth bijection $\RR\to\RR$ with $f'(0) = 0$, and $\inverseof{f}(x) = x^{1/3}$ is not differentiable at $0$.
-
-:::
+Uniform continuity, uniform convergence, and the compactness theorem for families of functions are on [[complex-analysis/basics/uniform-convergence|Uniform convergence]]; normal families are on [[complex-analysis/conformal-maps/normal-families-and-montel|Normal families and Montel]].
 
 ## Problems
 

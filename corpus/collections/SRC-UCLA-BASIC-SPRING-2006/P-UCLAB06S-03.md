@@ -5,7 +5,9 @@ kind: problem
 title: Continuous differentiability of $\sum\frac{\sin nx}{n^{5/2}}$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Series of Functions
+  - Differentiation
 relations: []
 review: draft
 audit:

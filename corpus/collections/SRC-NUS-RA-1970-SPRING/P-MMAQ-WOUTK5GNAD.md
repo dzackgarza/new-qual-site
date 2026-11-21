@@ -26,6 +26,8 @@ $$
 :::
 
 ::: {.solution}
+
+The argument is the card's own: the pointwise bound $f^2\le f^3/\alpha$ on the set where $f>\alpha$, integrated and then dominated by $\alpha^{-1}\int f^3$. No source is transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
 Let $\alpha > 0$.
 
 ::: pf

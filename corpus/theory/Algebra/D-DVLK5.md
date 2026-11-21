@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-DVLK5
 kind: definition
-title: Adjoint, symmetric, Hermitian, orthogonal, and unitary matrices
+title: Adjoint, symmetric, Hermitian, orthogonal, unitary, positive definite, and normal matrices
 classification:
   areas:
   - algebra
@@ -22,4 +22,8 @@ For a matrix $A$, let $A^t$ be its transpose and $A^{\dagger}\coloneqq \bar A^t$
 - A matrix $A\in\Mat_{n\times n}(\RR)$ is \dfn{symmetric} if $A = A^t$, and \dfn{orthogonal} if $A^tA = AA^t = I_n$.
 
 - A matrix $A\in\Mat_{n\times n}(\CC)$ is \dfn{Hermitian} if $A^{\dagger} = A$, and \dfn{unitary} if $A^{\dagger}A = AA^{\dagger} = I_n$.
+
+- A Hermitian matrix $A\in\Mat_{n\times n}(\CC)$ is \dfn{positive definite} if $\inner{A\vector x}{\vector x} > 0$ for every nonzero $\vector x\in\CC^n$, and a symmetric matrix $A\in\Mat_{n\times n}(\RR)$ is positive definite if $\vector x^tA\vector x > 0$ for every nonzero $\vector x\in\RR^n$.
+
+- A matrix $A\in\Mat_{n\times n}(\CC)$ is \dfn{normal} if $A^{\dagger}A = AA^{\dagger}$; a real matrix is normal if $A^tA = AA^t$.
 :::

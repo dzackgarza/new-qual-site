@@ -5,7 +5,9 @@ kind: problem
 title: Openness of invertibility and continuity of matrix inversion
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Matrix Inverses
+  - Continuity
 relations: []
 review: draft
 audit:

@@ -18,4 +18,6 @@ review: draft
 ::: {.theorem}
 Let $z_0\in\CC$, let $\delta>0$, and let $f$ be [[D-7DFVJ|meromorphic]] on the punctured disc $\{z : 0<\abs{z-z_0}<\delta\}$.
 If there are three distinct points of $\CC\cup\{\infty\}$ that $f$ does not take on this punctured disc, then $f$ extends to a meromorphic function on the disc $\{z : \abs{z-z_0}<\delta\}$.
+
+This is Picard's great theorem in its value-omission form; [@SS03] (statement number not read: no copy of SS03 in `tmp/sources`) records the value-distribution form — near an essential singularity $f$ takes every complex value infinitely often with at most one exception — and states that no proof is given there.
 :::

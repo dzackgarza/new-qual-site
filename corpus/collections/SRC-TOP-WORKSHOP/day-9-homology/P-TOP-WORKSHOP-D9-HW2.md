@@ -25,7 +25,6 @@ audit:
     $H_0=\ZZ$, $H_1=\ZZ^2$, $H_2=\ZZ$, everything else $0$; the vanishing of $H_2\to H_1$ is
     proved, not assumed. Nothing is left in outline.
 ---
----
 
 ::: {.problem}
 Compute the homology of the torus $T^2=S^1\times S^1$.

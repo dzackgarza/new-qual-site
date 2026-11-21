@@ -21,14 +21,43 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Exercise III.2.3 as printed in the text version, all six
+    parts including the excision statement; the card agrees. The proof is
+    correct and needs no hypothesis on the space. (a) is left exactness: a
+    section of B killed in C comes from a unique section of A, which is zero
+    outside Y because its image under the injective stalk map is. (b) picks a
+    global lift of the section of F'', which exists since H^1(X,F') = 0 for
+    flasque F'; the lift's restriction to U comes from F' over U by exactness
+    of the restricted sequence, and subtracting the extension of that section
+    corrects the lift to have support in Y. (c) first proves the quotient
+    lemma for flasque sheaves, then uses that injective sheaves are flasque and
+    that (b) applies to each stage of an injective resolution, so the supported
+    complex is exact and the higher derived functors vanish. (d) is the kernel
+    description plus surjectivity of restriction for flasque sheaves. (e)
+    applies (d) degreewise to an injective resolution; restriction is exact and
+    the restricted resolution stays flasque and acyclic, so the third complex
+    computes H^i(U, F|U). (f) glues a section supported in Y on V with the zero
+    section on X minus Y, which is inverse to restriction and natural, and
+    applies it to the resolution of (e). One citation remark: Lemma III.2.4 is
+    stated for modules over a ringed space, and the card uses the same argument
+    for abelian sheaves, where Proposition III.2.5 already covers the acyclicity
+    it needs. Added a published-solution remark citing Kim, PDF pp. 119-120
+    (pages checked in the PDF), with Saglam-Chris at p. 114 and
+    Cutrone-Marshburn at p. 101; Kim proves (b) by the snake lemma and takes the
+    quotient lemma of (c) from an earlier exercise, where the card gives both
+    arguments. Nothing in the statement or the proof was changed.
 ---
 
 ::: {.problem}
 Let $X$ be a topological space, let $Y$ be a closed subset, and let $\mcf$ be a sheaf of abelian groups.
 Let $\Gamma_Y(X, \mcf)$ denote the group of sections of $\mcf$ with support in $Y$ (II, Ex. 1.20).
 
-(a) Show that $\Gamma_Y(X, \wait)$ is a left exact functor from $\Ab(X)$ to $\Ab$.
-We denote the right derived functors of $\Gamma_Y(X, \wait)$ by $H_Y^i(X, \wait)$.
+(a) Show that $\Gamma_Y(X, \mcf)$ is a left exact functor from $\Ab(X)$ to $\Ab$.
+We denote the right derived functors of $\Gamma_Y(X, \mcf)$ by $H_Y^i(X, \mcf)$.
 They are the cohomology groups of $X$ with supports in $Y$, and coefficients in a given sheaf.
 
 (b) If $0 \to \mcf' \to \mcf \to \mcf'' \to 0$ is an exact sequence of sheaves, with $\mcf'$ flasque, show that
@@ -216,4 +245,13 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, []
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+The exercise is Hartshorne, Exercise III.2.3, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is that exercise's text, parts (a)--(d) included.
+
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §2, Exercise 3.2.3, text version `tmp/sources/hartshorne-solutions-kim.md`: (a) is the kernel description of $\Gamma_Y$; (b) is the snake lemma applied to the square of sections on $X$ and on $X-Y$, whose rows are exact on the right because $\mcf'$ is flasque; (c) repeats the induction of Proposition 3.2.5, with quotients of injectives flasque; (d) is referred back to (b); (e) is the short exact sequence of complexes that (d) supplies; (f) uses that an injective resolution restricts to a flasque resolution of $\mcf\restrict_V$ and that $\Gamma_Y(V,\mci^\bullet\restrict_V)=\Gamma_Y(X,\mci^\bullet)$. Saglam--Chris and Cutrone--Marshburn both treat the exercise.
+
+The proof above replaces Kim's snake lemma in (b) by an explicit correction of a chosen lift: the restriction of the lift to $U$ comes from a section of $\mcf'$ over $U$, which flasqueness extends, and subtracting its image makes the lift supported in $Y$. It also isolates in (c) the lemma that a quotient of flasque sheaves by a flasque subsheaf is flasque, which Kim takes from an earlier exercise.
+Agree.
 :::

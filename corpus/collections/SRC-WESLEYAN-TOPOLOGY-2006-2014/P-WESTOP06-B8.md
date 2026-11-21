@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP06-B8
 kind: problem
 title: Lebesgue numbers and unique path lifting for covering spaces
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Covering Spaces, Compactness]}
 relations: []
 review: draft
 audit:
@@ -21,6 +21,8 @@ audit:
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination papers alone, so the argument is the card's own.
 
 ::: pf
 

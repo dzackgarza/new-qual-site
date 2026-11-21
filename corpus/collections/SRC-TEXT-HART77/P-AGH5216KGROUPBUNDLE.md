@@ -29,6 +29,28 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-19
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 5.2.16, printed p. 106,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.2.16, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    the identification of locally free sheaves with finitely generated
+    projective R-modules and the consequence the entry draws from R being a
+    PID, which is the step that fails. Not checked: Yang's Solutions outside printed pp. 100-107; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.2.16 at printed
+    p. 106 beside Egbert's entry, with what the entry proves and where
+    it fails. No step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -272,5 +294,9 @@ step [](#s6){.pf-ref} proves that it fails for projective curves.
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.16, PDF p. 273: he identifies the sheaves with finitely generated projective modules over the affine ring, uses that a Dedekind domain is a "$?$-category" so that equal Grothendieck classes give $A\oplus D\cong B\oplus D$ (his Rotman 7.77), and then that stably isomorphic projective modules over a Dedekind domain are isomorphic (Rotman 11.118). Step [](#s3){.pf-ref} recovers the determinant from the Grothendieck class as he does, and step [](#s4){.pf-ref} is Steinitz's theorem $P\cong A^{r-1}\oplus\det P$, which replaces his two citations by the classical statement; step [](#s6){.pf-ref} is the projective counterexample, which he does not give. Matches.
+The exercise is Exercise 2.16 of §V.2 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, and the statement above is its text, the closing sentence "This is false for a projective curve" including.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.16: he identifies the sheaves with finitely generated projective modules over the affine ring, uses that a Dedekind domain is a "$?$-category" so that equal Grothendieck classes give $A\oplus D\cong B\oplus D$ (his Rotman 7.77), and then that stably isomorphic projective modules over a Dedekind domain are isomorphic (Rotman 11.118). Step [](#s3){.pf-ref} recovers the determinant from the Grothendieck class as he does, and step [](#s4){.pf-ref} is Steinitz's theorem $P\cong A^{r-1}\oplus\det P$, which replaces his two citations by the classical statement; step [](#s6){.pf-ref} is the projective counterexample, which he does not give. Matches.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.2.16 argues that the coordinate ring $R=\OO_C(C)$ of the affine curve is a PID, so every finitely generated projective $R$-module is free, so every locally free sheaf is a sum of copies of $\OO_C$ and two of the same rank are isomorphic. Its first step is false: $\OO_C(C)$ is a Dedekind domain, and a PID only when its class group vanishes, which it does not for an affine curve of genus $\ge1$. The exercise's statement survives on the right ground — for a regular affine curve $K_0(R)\cong\ZZ\oplus\Pic(R)$, so equal classes force equal rank and equal determinant class, and on a curve the determinant class is the isomorphism class — and the card's own steps take that route from $A$ a Dedekind domain rather than a PID.
 :::

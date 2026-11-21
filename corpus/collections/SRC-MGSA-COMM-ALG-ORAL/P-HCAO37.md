@@ -16,6 +16,15 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found: the answer is no. If phi: R -> S is surjective then every s in S is
+    phi(r) for some r, and s = r . 1_S, so S is generated as an R-module by the single element 1_S;
+    that is, phi is module-finite (hence integral), of degree one. Checked that the argument uses only
+    surjectivity and the unit of S, and that it does not need any hypothesis of finite generation on R,
+    which is where a reader might expect a counterexample to live.
 ---
 
 ::: {.problem}

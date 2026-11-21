@@ -41,4 +41,4 @@ order: 30
 
 ## Qualifying exam workshop
 
-The [[SRC-RA-WORKSHOP|UNL real analysis workshop packet]] is organized by day, with links to the source PDFs; Days 1, 9, and 10 are the corresponding qualifying exam collections.
+[[SRC-RA-WORKSHOP]]

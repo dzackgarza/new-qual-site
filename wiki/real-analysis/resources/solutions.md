@@ -31,7 +31,7 @@ order: 20
 
 - [Berkeley Math 104 (Summer 2018) assignment 6 solutions](https://math.berkeley.edu/~vvdatar/m104su18/Assignments/Solutions_A6.pdf) -- problems on uniform convergence.
 
-- [D. Zack Garza, solutions to UGA Math 8100 Assignments 1–8 (Fall 2019)](attachments/Fall_2019_Assignment_Solutions.pdf)
+- [D. Zack Garza, solutions to UGA Math 8100 Assignments 1--8 (Fall 2019)](attachments/Fall_2019_Assignment_Solutions.pdf)
 
 - [Real-analysis practice solutions](attachments/midpracsol.pdf)
 

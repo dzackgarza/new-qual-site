@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP05-08
 kind: problem
 title: A finite chain through an open cover of a connected space
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Connectedness, Open Covers]}
 relations: []
 review: draft
 audit:

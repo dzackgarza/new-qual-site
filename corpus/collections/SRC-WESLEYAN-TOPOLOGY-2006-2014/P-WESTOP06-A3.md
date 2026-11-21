@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP06-A3
 kind: problem
 title: Preservation of six topological properties by products and sums
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Product Topology, Connectedness]}
 relations: []
 review: draft
 audit:

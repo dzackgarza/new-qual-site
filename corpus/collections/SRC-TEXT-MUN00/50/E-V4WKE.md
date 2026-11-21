@@ -87,9 +87,97 @@ Show that the long line ([[E-PQHZN]]) is locally 1-euclidean and satisfies (iv) 
 :::
 
 ::: {.solution}
-Let $L$ be the long line of [[E-PQHZN]], that is, the ordered set $S_\Omega\times[0,1)$ in the dictionary order with its smallest element $a_0\times 0$ deleted. By [[E-PQHZN]], every point of $L$ has a neighborhood homeomorphic to an open interval in $\RR$, so $L$ is locally $1$-euclidean.
 
-$L$ is a linear continuum, as a linearly ordered set in its order topology. The set $S_\Omega\times[0,1)$ is one, because $S_\Omega$ is well-ordered (Example 2 of §24, printed p. 155, and Exercise 6 of §24, printed p. 158). The set $L$ is the ray $(a_0\times0,\to)$ of $S_\Omega\times[0,1)$, hence convex in it, and a convex subset of a linear continuum having more than one point is again a linear continuum: a nonempty subset of $L$ bounded above by $b\in L$ has the least upper bound it has in $S_\Omega\times[0,1)$, which lies between a point of the subset and $b$ and so in $L$; and between two points of $L$ there is a point of $S_\Omega\times[0,1)$ lying in the interval they span, hence one of $L$. By Theorem 16.4 (printed p. 91) the order topology of $L$ is the topology $L$ inherits as a subspace, so $L$ is a linear continuum in its own order topology, and by Theorem 24.1 (printed p. 153) it is connected. Exercise 8 of §32 (printed p. 206) proves that every linear continuum is normal; hence $L$ satisfies condition (iv) of [[E-OYPV7]].
+No complete published solution was located for Munkres §50 supplementary Exercise 5, printed p. 317; the argument below is the card's own, and the sets searched are recorded in its audit trail. The two conditions of [[E-OYPV7]] at issue are (iii) metrizable and (iv) normal, for a locally $m$-euclidean space.
 
-It is not metrizable. If it were metrizable, then because it is connected and locally $1$-euclidean, [[E-LI4O5]] would make its unique component a $1$-manifold with a countable basis. But by [[E-PQHZN]] the long line has no countable basis. Therefore condition (iii) fails. Thus $L$ satisfies (iv) but not (iii).
+Let $L$ be the long line of [[E-PQHZN]]: the ordered set $S_{\Omega}\times[0,1)$ in the dictionary order with its least element $a_{0}\times0$ deleted, in the order topology. Thus $L$ is the ray $(a_{0}\times0,\to)$ of $S_{\Omega}\times[0,1)$.
+
+::: pf
+
+::: {.pf-step #locally-euclidean}
+$L$ is locally $1$-euclidean.
+
+::: pf-proof
+By [[E-PQHZN]] (e), every point of $L$ has a neighbourhood homeomorphic to an open interval in $\RR$, which is the definition of locally $1$-euclidean.
+:::
+
+:::
+
+::: {.pf-step #continuum}
+$L$ is a linear continuum in its order topology.
+
+::: pf-proof
+
+::: {.pf-step #product-continuum}
+$S_{\Omega}\times[0,1)$ is a linear continuum.
+
+::: pf-proof
+$S_{\Omega}$ is well-ordered, hence has the least upper bound property, and $[0,1)$ has it too; on the dictionary order of the product this gives the least upper bound property for $S_{\Omega}\times[0,1)$, and between two of its points there is a third (Example 2 of §24, printed p. 155, and Exercise 6 of §24, printed p. 158).
+:::
+
+:::
+
+::: {.pf-step #convex}
+$L$ is a convex subset of that linear continuum with more than one point, and a convex subset with more than one point of a linear continuum is a linear continuum.
+
+::: pf-proof
+$L$ is the ray above $a_{0}\times0$, so it is convex, and it has more than one point. Let $Y$ be a convex subset of a linear continuum $X$ with more than one point. If $A\subset Y$ is nonempty and bounded above by $b\in Y$, then $A$ has a least upper bound $c$ in $X$, and $a\le c\le b$ for any $a\in A$, so $c\in[a,b]\subset Y$ by convexity; hence $Y$ has the least upper bound property. If $x<y$ in $Y$ then $X$ has a point $z$ with $x<z<y$, and $z\in[x,y]\subset Y$; hence $Y$ is densely ordered.
+:::
+
+:::
+
+::: {.pf-qed}
+By steps [](#product-continuum){.pf-ref} and [](#convex){.pf-ref}, $L$ is a linear continuum for the order it inherits; the order topology of $L$ is the topology $L$ inherits as a subspace of $S_{\Omega}\times[0,1)$ (Theorem 16.4, printed p. 91), so $L$ is a linear continuum in its own order topology.
+:::
+
+:::
+
+:::
+
+::: {.pf-step #normal}
+$L$ is normal, so it satisfies (iv).
+
+::: pf-proof
+A linear continuum in its order topology is normal (Exercise 8 of §32, printed p. 206), and $L$ is one by step [](#continuum){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #connected}
+$L$ is connected.
+
+::: pf-proof
+A linear continuum is connected in its order topology, and so is each of its rays (Theorem 24.1, printed p. 153); $L$ is a linear continuum by step [](#continuum){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #no-basis}
+$L$ has no countable basis.
+
+::: pf-proof
+Suppose that $\mathcal{B}$ is a countable basis. For each $a\in S_{\Omega}$ with $a>a_{0}$ the set $(a\times0,\,a\times1)$ is open in $L$ and contains $p_{a}=a\times\tfrac12$, so there is $B_{a}\in\mathcal{B}$ with $p_{a}\in B_{a}\subset(a\times0,a\times1)$. If $a<b$ in $S_{\Omega}$ then $p_{a}\notin(b\times0,b\times1)$, because $a\times\tfrac12<b\times0$ in the dictionary order, so $p_{a}\notin B_{b}$ while $p_{a}\in B_{a}$; hence $a\mapsto B_{a}$ is injective on the uncountable set $\{a\in S_{\Omega}:a>a_{0}\}$ into the countable $\mathcal{B}$, which is impossible.
+:::
+
+:::
+
+::: {.pf-step #not-metrizable}
+$L$ does not satisfy (iii).
+
+::: pf-proof
+If $L$ were metrizable, then by step [](#locally-euclidean){.pf-ref} and [[E-LI4O5]] each of its components would be a $1$-manifold, hence have a countable basis, and by step [](#connected){.pf-ref} $L$ is its own component; that contradicts step [](#no-basis){.pf-ref}. So $L$ is not metrizable.
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+$L$ is locally $1$-euclidean and satisfies (iv) but not (iii).
+
+::: pf-proof
+Local euclideanness is step [](#locally-euclidean){.pf-ref}, condition (iv) is step [](#normal){.pf-ref}, and the failure of (iii) is step [](#not-metrizable){.pf-ref}. Condition (iii) would follow from (ii), and (iv) from (iii), by [[E-OYPV7]], so this space shows the implication (iii)$\Rightarrow$(iv) does not reverse.
+:::
+
+:::
+
+:::
 :::

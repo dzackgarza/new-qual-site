@@ -41,7 +41,7 @@ $$
 ,$$
 and
 $$
-\del \exp\qty{-\abs z^2} = \del \exp\qty{-z\bar z} = e^{-\abs z^2}\cdot\del(z\bar z) = \bar z e^{-\abs z^2}
+\del \exp\qty{-\abs z^2} = \del \exp\qty{-z\bar z} = e^{-\abs z^2}\cdot\del(-z\bar z) = -\bar z e^{-\abs z^2}
 .$$
 
 :::
@@ -49,21 +49,24 @@ $$
 ## Derivatives in coordinates
 
 ::: {.fact}
-For a holomorphic $f$,
+For a holomorphic $f = u+iv$,
 $$
-f' = \dd{f}{z} = {1\over i}\dd{f}{y} = \dd{f}{x} = \dd u x + i \dd v x
-.$$
+f' = \dd{f}{z} = {1\over i}\dd{f}{y} = \dd{f}{x} = \dd{u}{x}+i\dd{v}{x}.
+$$
 
+The first two equalities are [@Ahl73, ch. 2, §1.2, Analytic Functions], which computes the limit of the difference quotient first along real $h$ and then along purely imaginary $ik$, obtaining $f'=\partial f/\partial x$ and $f'=\frac1i\partial f/\partial y$, and then the Cauchy--Riemann equations give $\partial f/\partial x=\partial u/\partial x+i\partial v/\partial x$; that $f'$ is also $\partial f/\partial z$ is [@SS03, ch. 1, Proposition 2.3].
 :::
 
 ::: {.fact title="Differentials"}
 $$
 \begin{aligned}
-dz &= dx + i~dy \\
-d\bar z &= dx - i~dy \\
-f_z &= f_x = f_y / i
-\end{aligned}.$$
+\dz &= \dx + i\,\dy, \\
+\dzbar &= \dx - i\,\dy, \\
+f_z &= f_x = f_y/i \quad\text{for } f \text{ holomorphic}.
+\end{aligned}
+$$
 
+The first two lines are the notation for the complex-valued $1$-forms whose integrals are the contour integrals of [[D-6DAXB]]: a $1$-form $p\,\dx+q\,\dy$ with complex coefficients is written $\frac12\qty{p-iq}\dz+\frac12\qty{p+iq}\dzbar$, which is the decomposition [@Ahl73, ch. 4, §1.1, Line Integrals] carries out when it separates $\int_\gamma f\,\dz$ and $\int_\gamma f\,\dy$ into $\dz$ and $\overline{\dz}$. The third line repeats the block above.
 :::
 
 ::: {.remark title="The Jacobian is $\abs{f'}^2$"}

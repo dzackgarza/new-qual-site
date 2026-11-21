@@ -14,44 +14,16 @@ topics:
 
 ## Basic properties
 
-::: {.fact}
-$H_0(X)$ is a free abelian group on the set of path components of $X$.
-In particular, $H_0(X) \cong \ZZ$ if $X$ is path connected, and $H_0(X) \cong \ZZ^{\abs{\pi_0(X)}}$ if $X$ has finitely many path components.
-
-:::
+[[FF-2Q7RD]]
 
 [[PR-B6BB2]]
 
 ::: {.example title="Wedges of spheres"}
 For $n\geq 1$ and $k\geq 1$,
 $$
-H_{n}\qty{\bigvee^{k} S^n} \cong \ZZ^k.
+H_{n}\qty{\bigvee^{k} S^n} \cong \ZZ^k
 $$
-
-:::
-
-::: {.proof}
-Give the finite wedge one $0$-cell and $k$ cells in dimension $n$.
-Its cellular chain group in degree $n$ is therefore $\ZZ^k$, with zero incoming and outgoing cellular differential in that degree, so
-$$
-H_n\qty{\bigvee_{j=1}^k S^n}\cong \ZZ^k.
-$$
-
-:::
-
-::: {.remark}
-In general $H_{n} \qty{ \prod_ \alpha X_ \alpha}\not\cong\prod_ \alpha H_{n} (X_ \alpha)$; for a finite product, the Künneth theorem computes $H_n$.
-If the integral homology groups of $A$ are free, then
-$$
-H_{n} (A\cross B) \cong \bigoplus_{i+j=n} H_{i}(A) \tensor_\ZZ H_{j}(B)
-$$
-and if the integral homology groups of $X_1,\ldots,X_{k-1}$ are free, iterating gives
-$$
-H_{n}\qty{\prod_{j=1}^k X_{j}} \cong
-\bigoplus_{\mathbf{x} \in \mathcal{P}(n,k)}
-H_{x_1}(X_1) \tensor_\ZZ \cdots \tensor_\ZZ H_{x_k}(X_k),
-$$
-where $\mathcal P(n,k)$ is the set of $k$-tuples $\mathbf x=(x_1,\ldots,x_k)$ of nonnegative integers with $x_1+\cdots+x_k=n$.
+by additivity of reduced homology over a wedge [[PR-B6BB2]], with $\tilde H_n(S^n)\cong\ZZ$.
 
 :::
 
@@ -59,17 +31,10 @@ where $\mathcal P(n,k)$ is the set of $k$-tuples $\mathbf x=(x_1,\ldots,x_k)$ of
 
 [[T-FBMYQ]]
 
-::: {.fact title="Cellular-chain quick checks"}
-\envlist
-
-- If a CW complex has no $n\dash$cells, then its cellular chain group $C_n(X)$ is zero, hence $H_n(X)=0$.
-- If a CW complex has a single $0\dash$cell, then its cellular differential $d_1:C_1(X)\to C_0(X)$ is zero.
-
-:::
-
 ## Computed homology groups
 
 ::: {.example title="Spheres"}
+For $n\geq 1$,
 $$
 H_{i}(S^n) = 
 \begin{cases}
@@ -78,6 +43,7 @@ H_{i}(S^n) =
 0 & \text{else}.
 \end{cases}
 $$
+The reduced groups are [@Hat02, Corollary 2.14], and $S^n$ is path connected.
 
 :::
 
@@ -100,8 +66,7 @@ $$
 ## Mayer--Vietoris
 
 ::: {.fact title="Splitting over a free quotient"}
-Since $\ZZ^m$ is free, every exact sequence of abelian groups $0 \to \ZZ^n \to A \to \ZZ^m \to 0$ splits, so $A\cong \ZZ^{n}\oplus \ZZ^m$.
-
+Since $\ZZ^m$ is free, every exact sequence of abelian groups $0\to\ZZ^n\to B\to\ZZ^m\to 0$ splits by the [[D-SIUWU|splitting lemma]], so $B\cong \ZZ^{n}\oplus \ZZ^m$ [@Hat02, §2.2].
 :::
 
 [[D-FAIJX]]
@@ -122,30 +87,11 @@ The Mayer--Vietoris sequence for open neighborhoods of the two pieces, which def
 
 ## Relative homology
 
-::: {.fact title="Relative and cellular homology"}
-\envlist
+[[D-UEWPN]]
 
-- If $(X,A)$ is a good pair, then the quotient map induces
-  $$
-  H_n(X,A)\cong \widetilde H_n(X/A).
-  $$
+[[PR-P222G]]
 
-- The long exact sequence of a pair is
-  $$
-  \cdots\to H_n(A)\to H_n(X)\to H_n(X,A)\to H_{n-1}(A)\to\cdots.
-  $$
-
-- For a CW complex $X$, the cellular filtration satisfies
-  $$
-  H_j(X^{(k)},X^{(k-1)}) \cong
-  \begin{cases}
-  \ZZ[\theset{\text{$k$-cells of $X$}}] & j=k,\\
-  0 & j\neq k,
-  \end{cases}
-  $$
-  since $X^{(k)}/X^{(k-1)}$ is a wedge of $k$-spheres, one for each $k$-cell.
-
-:::
+For the cellular filtration of a CW complex, the [[D-CELLHM|cellular chain group]] $H_j(X^{(k)},X^{(k-1)})$ is free abelian on the $k$-cells for $j=k$ and $0$ otherwise, since $X^{(k)}/X^{(k-1)}$ is a wedge of $k$-spheres.
 
 ## Exercises
 

@@ -102,6 +102,37 @@ audit:
     exam text; the hypothesis analysis is elementary and was verified by hand against the
     locally-constant and alternating-sum arguments on this card, not by a machine check.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Statement read in the retained exam extraction
+    assets/attachments/Topology_Spring_2009_extracted.md, Problem 6: the three
+    numbered parts agree with the card, including the hypothesis that X is a CW
+    complex with no connectedness or finiteness assumed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    All three parts are proved correctly. (a) the fibre over a point of a CW
+    complex is closed and discrete, so compactness of Y makes it finite, and the
+    finite-subcover argument really does force every point of the fibre to be
+    used; conversely a compact CW complex has finitely many components, the
+    fibre cardinality is constant and finite on each, and the even-covering
+    neighbourhoods shrink to a W over which exactly d sheets lie inside
+    prescribed members of a given cover, finitely many of which cover each
+    component. (b) the lifted cell structure has d times as many cells in each
+    dimension when the sheet number is a single d, so the alternating sums
+    differ by d, and the card states the componentwise form the same proof
+    gives. (c) X is connected as the image of the connected RP^N and compact by
+    (a), hence a finite CW complex, so chi(X) is an integer and d chi(X) = 1
+    forces d = 1, after which a bijective local homeomorphism is a
+    homeomorphism. Repaired one argument: the proof that a compact CW complex
+    has finitely many cells ran through a strictly increasing sequence of finite
+    subcomplexes, which need not exist when the complex has uncountably many
+    cells; it now applies the finite-subcomplex property of compact subsets
+    directly to X. Nothing else was changed.
+
 ---
 
 ::: {.problem}
@@ -221,7 +252,7 @@ The standard CW structure on $\RP^N$ has exactly one cell in each dimension $0,\
 Let $\pi\colon\RP^N\to X$ be a covering with $X$ a CW complex and $N$ even. Then $X$ is connected, compact, and a finite CW complex, so $\chi(X)$ is an integer.
 
 ::: pf-proof
-$\RP^N$ is connected, so its continuous image $X$ is connected, which is what makes the degree of $\pi$ a single number. It is compact, so $X$ is compact by step [](#base-compact){.pf-ref}. A compact CW complex has finitely many cells: if $X$ had infinitely many, it would be the union of a strictly increasing sequence of finite subcomplexes, each closed and proper, and a compact subset of a CW complex lies in a finite subcomplex, so no strictly increasing sequence can exhaust it. Hence $X$ is a finite CW complex and $\chi(X)$ is an integer.
+$\RP^N$ is connected, so its continuous image $X$ is connected, which is what makes the degree of $\pi$ a single number. It is compact, so $X$ is compact by step [](#base-compact){.pf-ref}. A compact CW complex has finitely many cells: a compact subset of a CW complex lies in a finite subcomplex, and $X$ itself is such a subset, so $X$ is that finite subcomplex and has finitely many cells. Hence $X$ is a finite CW complex and $\chi(X)$ is an integer.
 
 :::
 

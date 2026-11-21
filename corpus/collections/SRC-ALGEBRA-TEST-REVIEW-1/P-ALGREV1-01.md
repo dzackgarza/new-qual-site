@@ -6,7 +6,9 @@ title: Multiplicative groups of rationals and reals
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Abelian Groups
+  - Group Isomorphisms
 relations: []
 review: draft
 audit:
@@ -21,12 +23,20 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Distinguished the groups by cardinality: Q* is countable while R* is uncountable."
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained document `assets/attachments/Review1.pdf`: the statement is item 1 of the review sheet, and its printed words are
+    the card's. The item and the file are now named in the solution's opening sentence. Not
+    checked in this pass: the argument, which the edit does not touch.
 ---
 ::: {.problem}
 Prove or disprove that $\QQ^*$ under multiplication is isomorphic to $\RR^*$ under multiplication.
 :::
 
 ::: {.solution}
+This is item 1 of the review sheet, retained in this repository as `assets/attachments/Review1.pdf`; the statement below is its wording.
 The two groups are not isomorphic.
 
 ::: pf

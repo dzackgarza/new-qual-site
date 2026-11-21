@@ -23,6 +23,13 @@ audit:
     Used the integrating factor to put the differential equation in
     self-adjoint form, then integrated its product with y and used the
     two boundary values to obtain a sum of nonnegative integrals.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Spring90.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -38,6 +45,8 @@ Prove that $y\equiv0$ on $[0,L]$.
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Spring 1990, retained in this repository as `assets/attachments/Spring90.pdf`; the statement below is its wording.
+
 ::: pf
 
 ::: {.pf-step #self-adjoint-form}

@@ -6,7 +6,8 @@ title: Frobenius inner product on real matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Inner Product Spaces
 relations: []
 review: draft
 audit:

@@ -16,6 +16,14 @@ audit:
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the final step now says what makes a torsion-free finitely
+    generated abelian group free of a rank read off from $K\otimes_{\ZZ}\QQ$. Nothing mathematical was
+    changed.
+
 ---
 
 ::: {.problem}
@@ -77,6 +85,11 @@ Hence
 $$
 K\cong\ZZ^m.
 $$
+
+
+::: pf-proof
+A finitely generated torsion-free abelian group is free, and its rank is the dimension of $K\otimes_{\ZZ}\QQ$ over $\QQ$; the preceding computation showed that dimension is $m$.
+:::
 
 :::
 

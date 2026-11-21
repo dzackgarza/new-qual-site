@@ -27,6 +27,15 @@ audit:
     surjectivity, if x_0 is outside the compact image f(X), its positive
     distance from f(X) makes the forward orbit x_0,f(x_0),f^2(x_0),... a
     uniformly separated sequence, contradicting sequential compactness.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The closing step, which only pointed back at steps 1 and 4, now carries a proof stating what
+    the two steps give and why that is a bijection. Nothing else on the card is changed: the
+    injectivity argument, the positive distance $\delta$ of $x_0$ from the compact image, the
+    uniform separation of the orbit and its contradiction with sequential compactness all stand,
+    and the statement of the exercise is untouched.
 ---
 
 ::: {.problem}
@@ -148,6 +157,10 @@ Combining step [](#s1){.pf-ref} and step [](#s4){.pf-ref},
 $$
 \boxed{f\text{ is bijective}.}
 $$
+
+::: pf-proof
+Step [](#s1){.pf-ref} gives injectivity, and step [](#s4){.pf-ref} gives surjectivity, having derived a contradiction from its negation; a map that is both injective and surjective is a bijection.
+:::
 
 :::
 

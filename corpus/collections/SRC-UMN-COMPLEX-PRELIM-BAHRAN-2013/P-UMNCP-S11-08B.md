@@ -6,7 +6,9 @@ title: Fundamental theorem of algebra from Rouche theorem
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Rouché
+  - Fundamental Theorem of Algebra
 relations: []
 review: draft
 audit:

@@ -28,6 +28,27 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 5.1.9, printed p. 101, rendered as a page
+    image from tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is
+    the printed page. Checked against the book: Hartshorne V.1.9, printed
+    p. 368, which the card's earlier events record as
+    read at 110 dpi renders of the text-layerless pages; this pass did not
+    reopen them, and the comparison is against the statement the card carries.
+    Recomputed the entry's displays, which are the book's hint carried out and
+    agree with the steps the card already has. Not checked: Yang's Solutions
+    outside printed pp. 100-107; Hartshorne's printed pp. 368 in this pass;
+    and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.1.9 at printed p. 101 beside
+    Egbert's entry. No step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -257,5 +278,9 @@ the equality criterion.
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.9, PDF p. 259: (a) $D'=H^2D-(H\cdot D)H$ has $D'\cdot H=0$, so the Hodge index theorem gives $D'^2\le0$, and expanding $H^4D^2-2H^2(H\cdot D)^2+(H\cdot D)^2H^2\le0$ gives $D^2H^2\le(H\cdot D)^2$; (b) the printed hint's $H=l+m$, $E=l-m$ with $E^2=-2$, $H^2=2$, $E\cdot H=0$, and $D'=-4D+2(a+b)H-2(a-b)E$, so that $0>D'^2=16(D^2-2ab)$ unless $D'\equiv0$, in which case $D\equiv bl+am$. Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} are (a), and steps [](#s4){.pf-ref} to [](#s7){.pf-ref} are (b) with $F=D-bl-am$ in place of his $D'$, which avoids the rescaling. Matches.
+The exercise is Hartshorne, Exercise V.1.9, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the pages of §V.1 carry no text layer and were read as a 110 dpi render, folio 368 in the footer), and the statement above is that exercise's text, the hint to (1.9) and the attribution to Castelnuovo and Severi included.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.9: (a) $D'=H^2D-(H\cdot D)H$ has $D'\cdot H=0$, so the Hodge index theorem gives $D'^2\le0$, and expanding $H^4D^2-2H^2(H\cdot D)^2+(H\cdot D)^2H^2\le0$ gives $D^2H^2\le(H\cdot D)^2$; (b) the printed hint's $H=l+m$, $E=l-m$ with $E^2=-2$, $H^2=2$, $E\cdot H=0$, and $D'=-4D+2(a+b)H-2(a-b)E$, so that $0>D'^2=16(D^2-2ab)$ unless $D'\equiv0$, in which case $D\equiv bl+am$. Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} are (a), and steps [](#s4){.pf-ref} to [](#s7){.pf-ref} are (b) with $F=D-bl-am$ in place of his $D'$, which avoids the rescaling. Matches.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.1.9, printed p. 101, gives both parts in the hint's form, and its (a) is Egbert's in one line: $E=(H^2)D-(H\cdot D)H$ has $E\cdot H=0$, so Hodge index gives $E^2\le0$, and $E^2=(H^2)^2D^2-(H^2)(H\cdot D)^2$ divided by $H^2>0$ is $H^2D^2\le(H\cdot D)^2$, with equality only for $D\equiv0$ numerically. Its (b) is the same $D'=-4D+2(a+b)H-2(a-b)E$ with $D'^2=16D^2-32ab$, so $D^2\le2ab$ and equality only for $D\equiv bl+am$.
 :::

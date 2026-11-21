@@ -31,6 +31,7 @@ $$
 ,$$
 so $f^{(n+1)} \equiv 0$ and $f$ is a polynomial of degree at most $n$.
 Liouville's theorem is the case $n=0$.
+The statement is Exercise 15(a) of [@SS03, ch. 3, §8].
 See [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estimates and Liouville]].
 
 ## $\abs f$ has a local maximum in $\Omega$
@@ -66,14 +67,14 @@ See [[complex-analysis/cauchy-theory/the-identity-principle|The identity princip
 
 ## $f'\equiv 0$ on $\Omega$
 
-If $f' \equiv 0$ on the connected open set $\Omega$, then $f$ is constant: $f$ is constant along every segment in $\Omega$, and $\Omega$ is polygonally connected.
+If $f' \equiv 0$ on the connected open set $\Omega$, then $f$ is constant: $f$ is constant along every segment in $\Omega$, and $\Omega$ is polygonally connected [@SS03, ch. 1, Corollary 3.4].
 The proofs of Liouville's theorem and of the polynomial-growth bound end with this step.
 
 ## $f$ omits values
 
 By the [[T-HWBWI|little Picard theorem]], a nonconstant entire function omits at most one value of $\CC$.
 
-If an entire function $f$ omits every value in a disc $D_r(a)$, then $g\coloneqq 1/(f-a)$ is entire with $\abs g\leq 1/r$, so $g$, and hence $f$, is constant by Liouville's theorem.
+If an entire function $f$ omits every value in a disc $\DD_r(a)$, then $g\coloneqq 1/(f-a)$ is entire with $\abs g\leq 1/r$, so $g$, and hence $f$, is constant by Liouville's theorem.
 [[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati--Weierstrass and Picard]] gives the corresponding statements near an essential singularity.
 
 ## Hypotheses

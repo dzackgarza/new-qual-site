@@ -45,6 +45,20 @@ audit:
     and is what the converse uses. Not checked: nothing beyond the written argument; no counterexample
     search for the converse, which is the book's claim.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 19 of §4.1, printed p. 359 — confirmed at PDF page 368 of the held
+    book, whose folio is 359, and where the claim is printed with "iff", which is what the card states
+    after the correction of 2026-11-01. Checked both directions in the card. Forward: a common CW
+    approximation $K$ gives the zigzag $X\leftarrow K\to Y$, one of those generating $\simeq_w$.
+    Backward: for a zigzag $W_1,\dots,W_m$ with CW approximations $K_i\to W_i$, consecutive $K_i$,
+    $K_{i+1}$ are both CW approximations of $W_{i+1}$ — $K_i\to W_i\to W_{i+1}$ being a weak
+    homotopy equivalence in the one case — hence homotopy equivalent by Whitehead (Theorem 4.5)
+    applied to the zigzag through $W_{i+1}$, and transitivity gives $K_1\simeq K_m$; then
+    $K_1\to X$ and $K_1\to K_m\to Y$ are weak homotopy equivalences, so $K_1$ is a common CW
+    approximation. No defect. The printed page is added, the card having had none.
 ---
 
 ::: {.problem}
@@ -53,6 +67,7 @@ Show that $X \simeq_w Y$ if and only if $X$ and $Y$ have a common CW approximati
 :::
 
 ::: {.solution}
+The exercise is §4.1 Exercise 19, where the claim is printed as "iff" and not only as one implication.
 
 Recall that a **CW approximation** of a space $X$ is a CW complex $K$ together with a weak homotopy equivalence $K\to X$, and that every space has one.
 

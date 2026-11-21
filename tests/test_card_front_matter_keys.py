@@ -52,3 +52,26 @@ def test_a_closing_delimiter_that_does_not_stand_alone_makes_the_card_unreadable
     work = fixture_repo(tmp_path, {"P-TWOTITLES.md": GLUED_CLOSE})
 
     assert DiagnosticCode.CARD_UNREADABLE in diagnostic_codes(work)
+
+
+DOUBLED_TERMINATOR = REPEATED_TITLE.replace(
+    "title: The first title\ntitle: The second title\n", "title: A prime-order group\n"
+).replace(
+    "review: draft\n---\n\n::: problem",
+    "review: draft\n---\n---\n\n::: problem",
+)
+
+
+def test_a_doubled_front_matter_terminator_makes_the_card_unreadable(tmp_path: Path) -> None:
+    work = fixture_repo(tmp_path, {"P-TWOTITLES.md": DOUBLED_TERMINATOR})
+
+    assert DiagnosticCode.CARD_UNREADABLE in diagnostic_codes(work)
+
+
+def test_a_horizontal_rule_later_in_the_body_is_not_a_doubled_terminator(tmp_path: Path) -> None:
+    card = REPEATED_TITLE.replace(
+        "title: The first title\ntitle: The second title\n", "title: A prime-order group\n"
+    ).replace("Show that a group of prime order is cyclic.", "Show that a group of prime order is cyclic.\n\n---\n\nThen it is cyclic.")
+    work = fixture_repo(tmp_path, {"P-TWOTITLES.md": card})
+
+    assert DiagnosticCode.CARD_UNREADABLE not in diagnostic_codes(work)

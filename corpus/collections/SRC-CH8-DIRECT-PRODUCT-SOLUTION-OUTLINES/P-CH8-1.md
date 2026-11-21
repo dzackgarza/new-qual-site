@@ -25,6 +25,24 @@ audit:
   date: 2026-11-06
   note: >-
     The retained outline on the card is a run-on paragraph of extraction residue; its argument, the componentwise verification of closure, associativity, identity and inverse, is kept and written as four steps, with the coordinates indexed by the factors.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained scan `tmp/sources/Gallian-Contemporary-Abstract-Algebra-7e.pdf`: the statement is
+    Chapter 8 Exercise 1 on printed p. 167 (page 181 of the file, whose running head is p. 167), where the
+    printed words are the card's statement. The page is now named in the solution's opening sentence. Not
+    checked in this pass: the group axioms, which the edit does not touch.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The note of 2026-11-19 above gives the file page of printed p. 167 as page 181; that is
+    wrong. Re-extracted on 2026-11-19: file page 181 carries the running head 166, and file
+    page 182 carries 8 | External Direct Products 167, which is where Exercise 1 stands. The
+    printed page number 167, which is what the solution cites, is unaffected, and the other
+    Chapter 8 cards already give file page 182 for it.
+
 ---
 
 ::: {.problem}
@@ -32,6 +50,7 @@ Prove that the external direct product of any finite number of groups is a group
 :::
 
 ::: {.solution}
+In the seventh edition this is Chapter 8 Exercise 1, where the printed words are the statement below.
 
 Let $G_1,\dots,G_n$ be groups with identities $e_1,\dots,e_n$, and let
 $G=G_1\oplus\cdots\oplus G_n$ be their external direct product: the set of

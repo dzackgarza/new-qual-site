@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-HM21B18-FIN-08
 kind: problem
 title: Rank, nullity, bases, and inversion for Game-of-Life matrices
-classification: {areas: [applied-algebra], topics: []}
+classification: {areas: [applied-algebra], topics: [Rank-Nullity Theorem, Row Reduction, Matrix Inverses]}
 relations: []
 review: draft
 audit:

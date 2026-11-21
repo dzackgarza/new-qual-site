@@ -5,7 +5,8 @@ kind: problem
 title: 'Coefficientwise products of power series and strictness'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Power Series
 relations: []
 review: draft
 audit:

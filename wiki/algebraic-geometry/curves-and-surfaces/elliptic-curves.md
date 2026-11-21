@@ -15,7 +15,7 @@ topics:
 
 [[T-CRVJINV]]
 
-The coarse moduli space $\AA^1_j$ is not a fine moduli space.
+The coarse moduli space $\AA^1_j$ is not a fine moduli space ([[T-CRVJINV]], [[D-CRVMOD]]).
 For $\operatorname{char}k\neq2$, the family $ty^2=x^3-x$ over $\Spec k[t,t^{-1}]$ has every geometric fibre isomorphic to $y^2=x^3-x$, but it is not isomorphic to the constant family, since the isomorphism $y\mapsto\sqrt t\,y$ is defined only after adjoining $\sqrt t$.
 The automorphism $-1$ of every elliptic curve permits this twist.
 

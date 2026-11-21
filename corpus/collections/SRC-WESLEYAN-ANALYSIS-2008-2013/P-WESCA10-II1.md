@@ -5,7 +5,8 @@ kind: problem
 title: 'Limit of a semicircular contour integral'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Contour Integration
 relations: []
 review: draft
 audit:

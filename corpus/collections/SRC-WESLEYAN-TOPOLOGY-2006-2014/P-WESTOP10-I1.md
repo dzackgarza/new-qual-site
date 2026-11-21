@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP10-I1
 kind: problem
 title: Compare three topologies on the square $[0,1]^2$
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Product Topology, Order Topology]}
 relations: []
 review: draft
 audit:

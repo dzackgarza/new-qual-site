@@ -14,6 +14,20 @@ review: draft
 
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 5 of the UCSD Algebra Qualifying Exam, Spring 2011, p. 1 of the
+    two-page paper retained at assets/attachments/SP11_200_Algebra_Qual.pdf, is the statement the
+    card answers, and the paragraph at the head of the solution records that the paper prints the
+    questions and no solutions, so the argument is the card's own. Checked: both parts, including
+    the printed suggestion to write n = p^i m and the demand in (ii) that [F : K] be calculated,
+    against the paper's text layer at the page named; the solution read for its claim that L =
+    K(alpha) and its identification of the fixed field with K(alpha^m) and [F : K] = p^i;
+    `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the QED. Not
+    checked: no retained solution exists to compare the argument with, and no other card of the
+    collection in this pass.
+- event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-08
   note: Compared with Problem 5 of the official UCSD Spring 2011 algebra qualifying exam.
@@ -38,6 +52,9 @@ Calculate $[F : K]$.
 :::
 
 ::: {.solution}
+
+The problem is Problem 5 of the UCSD Algebra Qualifying Exam, Spring 2011, printed on p. 1 of the two-page paper retained at `assets/attachments/SP11_200_Algebra_Qual.pdf`, both parts. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and it answers the two parts asked for — $L=K(\alpha)$ for any root $\alpha$, from the irreducibility of $x^n-t$ and the description of the remaining roots, and $[F:K]=p^i$ from Artin's theorem applied to the $m$ automorphisms $\alpha\mapsto\zeta\alpha$, with the fixed field identified as $K(\alpha^m)$.
+
 Write
 $$
 n=p^i m,\qquad (m,p)=1,

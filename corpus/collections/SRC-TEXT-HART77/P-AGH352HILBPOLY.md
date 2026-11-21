@@ -201,6 +201,8 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, and [](#s4){.pf-ref}
 :::
 
 ::: {.remark title="The full graded section module need not be finite"}
+The exercise is III.5.2 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is its text, both parts and the printed hints included.
+
 For the structure sheaf of a $k$-rational point in $\PP_k^1$, every twist has a one-dimensional space of global sections.
 Thus $\Gamma_*(\mcf)$ has nonzero graded pieces in arbitrarily negative degrees.
 A finitely generated graded module over $k[x_0,x_1]$ is bounded below, since finitely many homogeneous generators have a least degree and ring multiplication cannot decrease degrees.

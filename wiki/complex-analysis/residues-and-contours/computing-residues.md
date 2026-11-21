@@ -27,7 +27,15 @@ $$
 
 ## A pole of higher order
 
-[[FF-VOO4Q]]
+[[T-ESKLY]]
+
+::: {.example title="A pole of order two"}
+The function $f(z) = 1/\bigl(z^2(1-z)\bigr)$ has a pole of order $2$ at $0$, and the formula with $n=2$ asks for one derivative of $z^2f(z) = 1/(1-z)$:
+$$
+\Res_{z=0}{1\over z^2(1-z)} = \lim_{z\to0}{d\over dz}\qty{1\over 1-z} = \lim_{z\to0}{1\over(1-z)^2} = 1.
+$$
+The same number is the coefficient of $z$ in the Taylor series $1/(1-z) = 1+z+z^2+\cdots$, read through $1/(z^2(1-z)) = z^{-2}+z^{-1}+1+\cdots$.
+:::
 
 ## By the Laurent series
 
@@ -40,14 +48,15 @@ Since $e^{1/z} = \sum_{k\geq 0} z^{-k}/k!$ for $z\neq 0$, the coefficient of $\i
 
 ## The residue at infinity
 
-[[PR-D3CDJ]]
+[[T-WFXQP]]
 
-::: {.remark title="Sum of residues"}
-If $f$ is holomorphic on $\CC$ except for finitely many isolated singularities $z_1,\ldots,z_N$, then
+::: {.example title="The residues of $z/(1+z^2)$ add to zero"}
+For $f(z) = z/(1+z^2)$ the simple poles are at $\pm i$, with $\Res_{z=i}f = i/(2i) = 1/2$ and $\Res_{z=-i}f = -i/(-2i) = 1/2$.
+With $w = 1/z$,
 $$
-\sum_{j=1}^N \Res_{z=z_j} f + \Res_{z=\infty} f = 0
-.$$
-
+{1\over w^2}f\qty{1\over w} = {1\over w^2}\cdot{1/w\over 1+1/w^2} = {1\over w(w^2+1)},
+$$
+whose residue at the origin is $1$, so $\Res_{z=\infty}f = -1$, and $1/2+1/2-1 = 0$: the residues of $f$ on the sphere sum to zero.
 :::
 
 ## Exercises

@@ -34,7 +34,6 @@ audit:
     onto generators; and for the converse, N ∩ A together with lifts of generators
     of q(N) generate N. No defect.
 ---
----
 
 ::: {.exercise}
 If $R$ is a ring and

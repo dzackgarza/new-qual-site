@@ -50,14 +50,29 @@ audit:
     Reorganized the same verified computation into STYLE-08 steps: the collapse maps give
     ab = cd = nu, cross-summand products and the squares a^2 and c^2 vanish, and all remaining
     positive-degree products are excluded by the summands or by degree count.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §3.3. Read against Hatcher, Exercise 26 of §3.3, printed p. 259, and
+    the printed page is added, the card having had none. Checked: the generators in degrees 2, 4, 6,
+    8 and the orientation class in degree 10; the two collapse maps preserve the top class, so the
+    two products across a summand are units times it and the generators are chosen to make them
+    equal to it; the squares vanish because each class collapses to zero in both summands, and the
+    vanishing is exact rather than up to a multiple because $H^4(M)$ injects into the sum of the two
+    summands' $H^4$ (the cohomology form of Exercise 6(a)); the cross-summand products vanish for the
+    same reason; and the rest vanish for degree reasons. Hence the only nonzero products are the two
+    Poincare-dual pairings, and all degrees being even there are no signs.
 ---
 
 ::: {.problem}
-Compute the cup product structure in $H^*(S^2 \times S^8 \sharp S^4 \times S^6; \ZZ)$, and in particular show that the only nontrivial cup products are those dictated by Poincaré duality.
+Compute the cup product structure in $H^*(S^2 \times S^8 \sharp S^4 \times S^6; \\ZZ)$, and in particular show that the only nontrivial cup products are those dictated by Poincaré duality.
 [See Exercise 6. The result has an evident generalization to connected sums of $S^i \times S^{n-i}$'s for fixed $n$ and varying $i$.]
 :::
 
 ::: {.solution}
+The exercise is §3.3 Exercise 26.
+
 Let
 $$
 M=(S^2\times S^8)\#(S^4\times S^6)
@@ -69,7 +84,7 @@ c\in H^4(M),\quad d\in H^6(M),
 $$
 coming respectively from the $S^2,S^8,S^4,S^6$ factors, and let
 $$
-u\in H^{10}(M)\cong\ZZ
+u\in H^{10}(M)\cong\\ZZ
 $$
 be the orientation class.
 

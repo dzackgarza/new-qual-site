@@ -6,7 +6,9 @@ title: Blaschke factors are involutive automorphisms of the disk
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Blaschke Factors
+  - Automorphisms of the Disc
 relations: []
 review: draft
 audit:

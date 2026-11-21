@@ -16,6 +16,19 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the three containers state why their subclaims suffice, and the 8
+    leaf steps that asserted their claim with no justification each carry a sentence deriving it. The
+    mathematics is unchanged: a finite fundamental group gives a compact simply connected orientable
+    cover, every non-trivial deck transformation is fixed-point free and hence has Lefschetz number zero,
+    that number computes to $1-\deg(g)$, so every deck transformation has degree $+1$ and preserves the
+    orientation, which descends to the quotient and contradicts non-orientability. Checked against the
+    statement on the card, from the UCSD Fall 2022 topology qualifying exam. Nothing in the statement was
+    changed.
+
 ---
 
 ::: {.problem}
@@ -35,6 +48,11 @@ Universal cover of a manifold with finite fundamental group:
 Suppose for contradiction that $\pi_1(M)$ is finite.
 Let $p: \widehat{M} \to M$ be the universal covering space of $M$.
 Because $\pi_1(M)$ is finite and $M$ is compact, $\widehat{M}$ is a compact, connected, simply-connected 3-manifold without boundary.
+
+::: pf-proof
+A covering of a compact space with finite fibre is compact, the universal cover is connected and simply connected, and it inherits the structure of a $3$-manifold without boundary.
+:::
+
 :::
 
 ::: pf-step
@@ -48,6 +66,11 @@ By Poincaré Duality and the Hurewicz Theorem:
 - $H_2(\widehat{M}; \ZZ) \cong H^1(\widehat{M}; \ZZ) \cong \operatorname{Hom}(H_1(\widehat{M}), \ZZ) \oplus \operatorname{Ext}(H_0(\widehat{M}), \ZZ) = \{0\}$,
 
 - $H_3(\widehat{M}; \ZZ) \cong \ZZ$.
+
+::: pf-proof
+A simply connected manifold is orientable, so $H_3\cong\ZZ$ by Poincaré duality; $H_1$ vanishes because the space is simply connected, and universal coefficients together with $\operatorname{Hom}(H_1,\ZZ)=0$ gives $H_2=0$.
+:::
+
 :::
 
 :::
@@ -61,6 +84,11 @@ Lefschetz Fixed Point Theorem on deck transformations:
 
 ::: pf-step
 The fundamental group $G = \pi_1(M)$ acts freely on $\widehat{M}$ as the group of deck transformations, with quotient $M \cong \widehat{M} / G$.
+
+::: pf-proof
+This is the definition of the group of deck transformations of the universal cover.
+:::
+
 :::
 
 ::: pf-step
@@ -70,6 +98,11 @@ By the Lefschetz Fixed Point Theorem, the Lefschetz number of $g$ must vanish:
 $$
 \Lambda(g) = 0.
 $$
+
+::: pf-proof
+The Lefschetz fixed point theorem says that a map with non-zero Lefschetz number has a fixed point, and $g$ has none because the action is free.
+:::
+
 :::
 
 ::: pf-step
@@ -83,6 +116,11 @@ Thus:
 $$
 \Lambda(g) = 1 - 0 + 0 - \deg(g) = 1 - \deg(g).
 $$
+
+::: pf-proof
+The Lefschetz number is the alternating sum of the traces on homology; $g$ acts as the identity on $H_0$, trivially on the vanishing $H_1$ and $H_2$, and as multiplication by the degree on $H_3$.
+:::
+
 :::
 
 ::: pf-step
@@ -90,6 +128,11 @@ Setting $\Lambda(g) = 0$ gives $1 - \deg(g) = 0$, so:
 $$
 \deg(g) = +1 \quad \text{for every } g \in G.
 $$
+
+::: pf-proof
+Substituting $\Lambda(g)=0$ into the computed value $1-\deg(g)$.
+:::
+
 :::
 
 :::
@@ -103,11 +146,21 @@ Contradiction to non-orientability:
 
 ::: pf-step
 Since $\deg(g) = +1$ for every $g \in G$, every deck transformation preserves the orientation of $\widehat{M}$.
+
+::: pf-proof
+On a closed orientable manifold, a homeomorphism preserving the orientation is exactly one of degree $+1$.
+:::
+
 :::
 
 ::: pf-step
 The quotient of an orientable manifold by a group of orientation-preserving free homeomorphisms is orientable, so $M = \widehat{M}/G$ must be orientable.
 This contradicts the hypothesis that $M$ is non-orientable.
+
+::: pf-proof
+A group-invariant orientation descends to the quotient, so $M$ would be orientable, contradicting the hypothesis.
+:::
+
 :::
 
 :::

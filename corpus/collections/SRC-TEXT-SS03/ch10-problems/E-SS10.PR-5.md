@@ -11,10 +11,23 @@ classification:
   - Modular Forms
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against the printed item, Chapter 10, Problem 5 on printed p. 316 (PDF p. 335): the
+    statement is the print's, the cubic equation with $g_2=60E_4$ and $g_3=140E_6$, the discriminant
+    $\Delta=g_2^3-27g_3^2$ and the identity $\Delta=(2\pi)^{12}\eta^{24}$; the opening clause "In
+    Chapter 9 we proved that" was missing from the card's block and is now restored, and the asterisk
+    the print sets before "5." is recorded in the remark. The printed bracketed hint is on the card
+    as its hint block, so a report that this card drops the hint does not hold. Not checked: the
+    argument, which this pass did not re-derive.
+
 ---
 
 ::: {.exercise}
-The Weierstrass function satisfies
+In Chapter 9 we proved that the Weierstrass $\wp$ function satisfies the cubic equation
 $$
 (\wp')^2=4\wp^3-g_2\wp-g_3,
 \qquad g_2=60E_4,\quad g_3=140E_6,
@@ -24,6 +37,10 @@ $$
 \Delta(\tau)=(2\pi)^{12}\eta(\tau)^{24}
 \qquad(\tau\in\halfplane).
 $$
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 10, Problem 5).
 :::
 
 ::: {.hint}
@@ -39,7 +56,7 @@ Put $q=e^{2\pi i\tau}$, so $q\to0$ as $\operatorname{Im}\tau\to\infty$.
 Both $\Delta$ and $\eta^{24}$ are holomorphic on $\halfplane$ and transform with weight $12$ under $\tau\mapsto\tau+1$ and $\tau\mapsto-1/\tau$.
 
 ::: pf-proof
-[[SRC-TEXT-SS03|Stein and Shakarchi, Complex Analysis]], §9.2.1, Theorem 2.1 (p. 274), gives $E_j(\tau+1)=E_j(\tau)$ and $E_j(-1/\tau)=\tau^jE_j(\tau)$ for $j=4,6$. Thus $g_2^3$ and $g_3^2$, and hence $\Delta$, are periodic and acquire the factor $\tau^{12}$ under inversion. The product definition gives $\eta(\tau+1)=e^{\pi i/12}\eta(\tau)$; the same book's §10.1, Proposition 1.9 (p. 292), gives $\eta(-1/\tau)=\sqrt{\tau/i}\,\eta(\tau)$. Taking twenty-fourth powers gives the same two laws for $\eta^{24}$, since $e^{2\pi i}=1$ and $i^{-12}=1$.
+[[SRC-TEXT-SS03|Stein and Shakarchi, Complex Analysis]], §9.2.1, Theorem 2.1, gives $E_j(\tau+1)=E_j(\tau)$ and $E_j(-1/\tau)=\tau^jE_j(\tau)$ for $j=4,6$. Thus $g_2^3$ and $g_3^2$, and hence $\Delta$, are periodic and acquire the factor $\tau^{12}$ under inversion. The product definition gives $\eta(\tau+1)=e^{\pi i/12}\eta(\tau)$; the same book's §10.1, Proposition 1.9, gives $\eta(-1/\tau)=\sqrt{\tau/i}\,\eta(\tau)$. Taking twenty-fourth powers gives the same two laws for $\eta^{24}$, since $e^{2\pi i}=1$ and $i^{-12}=1$.
 :::
 
 :::
@@ -48,7 +65,7 @@ Both $\Delta$ and $\eta^{24}$ are holomorphic on $\halfplane$ and transform with
 $\Delta(\tau)=(2\pi)^{12}q+O(q^2)$ and $\eta(\tau)^{24}=q+O(q^2)$ as $q\to0$.
 
 ::: pf-proof
-[[SRC-TEXT-SS03|Stein and Shakarchi, Complex Analysis]], §9.2.2, Theorem 2.5 (p. 277), and $\zeta(4)=\pi^4/90$, $\zeta(6)=\pi^6/945$ give
+[[SRC-TEXT-SS03|Stein and Shakarchi, Complex Analysis]], §9.2.2, Theorem 2.5, and $\zeta(4)=\pi^4/90$, $\zeta(6)=\pi^6/945$ give
 $$
 g_2=\frac{4\pi^4}{3}(1+240q+O(q^2)),\qquad
 g_3=\frac{8\pi^6}{27}(1-504q+O(q^2)).

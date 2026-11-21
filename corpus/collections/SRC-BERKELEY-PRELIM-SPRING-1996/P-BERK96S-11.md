@@ -62,10 +62,7 @@ Apply the mean value theorem to $\varphi$ on the interval $[x,x+1]$.
 
 ::: {.pf-step #s2}
 
-One has
-$$
-b=0.
-$$
+One has $b=0$, so the answer is yes.
 
 ::: pf-proof
 
@@ -84,27 +81,6 @@ $$
 Taking limits in the identity from step [](#s1){.pf-ref} yields $0=b$.
 
 :::
-
-:::
-
-::: {.pf-step #s3}
-
-Thus the answer is
-$$
-\boxed{\text{yes: }b=0}.
-$$
-
-::: pf-proof
-
-This is exactly step [](#s2){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s3){.pf-ref} answers the question.
 
 :::
 

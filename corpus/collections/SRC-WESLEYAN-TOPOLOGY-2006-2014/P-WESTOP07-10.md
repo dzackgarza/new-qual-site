@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP07-10
 kind: problem
 title: Closed orientable surfaces of distinct genus are not homeomorphic
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Genus, Surfaces]}
 relations: []
 review: draft
 audit:
@@ -15,6 +15,8 @@ Let $T_n$ denote the closed orientable surface of genus $n$, for $n\ge1$. Prove 
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination papers alone, so the argument is the card's own.
 
 ::: pf
 

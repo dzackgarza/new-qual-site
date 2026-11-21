@@ -6,7 +6,9 @@ title: Coprime subgroup indices and conjugates of a proper subgroup
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Cosets and Lagrange
+  - Conjugacy
 relations: []
 review: draft
 audit:
@@ -17,6 +19,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Verified the finite-index divisibility argument in part (a) and the strict conjugate-union counting bound in part (b).
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained document `assets/attachments/Sample_Comp_Fa03Alg.pdf`: the statement is item 1(a) of the Fall 2003 sample comprehensive examination, and its printed words are
+    the card's. The item and the file are now named in the solution's opening sentence. Not
+    checked in this pass: the argument, which the edit does not touch.
 ---
 ::: {.problem}
 (a) If $A$ and $B$ are subgroups of finite index in a group $G$, and $[G:A]$ and $[G:B]$ are relatively prime, prove that $G=AB$.
@@ -28,6 +37,7 @@ $$
 :::
 
 ::: {.solution}
+This is item 1(a) of the Fall 2003 sample comprehensive examination, retained in this repository as `assets/attachments/Sample_Comp_Fa03Alg.pdf`; the statement below is its wording.
 
 ::: pf
 

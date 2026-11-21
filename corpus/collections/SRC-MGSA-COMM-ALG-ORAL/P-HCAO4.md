@@ -29,6 +29,8 @@ Give two examples of unique factorization domains which are not principal ideal 
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the oral examination questions alone, so the argument is the card's own.
 Two examples are
 $$
 \ZZ[x]

@@ -6,7 +6,8 @@ title: Separating the spectra of $B$ and $A+B$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

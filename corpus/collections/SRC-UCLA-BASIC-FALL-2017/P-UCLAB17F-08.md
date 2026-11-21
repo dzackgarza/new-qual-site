@@ -6,7 +6,9 @@ title: Functions with limits at every point
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Limits of Functions
+  - Continuity
 relations: []
 review: draft
 audit:

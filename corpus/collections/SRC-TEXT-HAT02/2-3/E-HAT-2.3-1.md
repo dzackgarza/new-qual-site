@@ -72,15 +72,45 @@ audit:
     term. Results now cited: the axioms of p. 160, Theorem 2.35 p. 139 with the Cellular Boundary
     Formula p. 141, Proposition 2.22 p. 124 and Corollary 2.14 p. 114. What is not covered: no
     certificate.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 1 of §2.3, printed p. 165, and the axioms of printed p. 160.
+    The Moore-space pair is computed correctly: for $X=S^1\cup_m e^2$ with $m>1$ the cellular chain
+    complex is $\ZZ\xrightarrow{m}\ZZ\to\ZZ$, so $H_2(X)=0$ and $H_1(X)\cong\ZZ_m$ by Theorem 2.35
+    (printed p. 139), while $H_2(X,A)\cong\widetilde H_2(S^2)\cong\ZZ$ and $H_1(X,A)=0$ by
+    Proposition 2.22 (printed p. 124) with Corollary 2.14 (printed p. 114); the connecting map
+    $\ZZ\to\ZZ$ is then injective with cokernel $\ZZ_m$, hence multiplication by $\pm m$. One
+    citation repaired: the Cellular Boundary Formula is printed on p. 140, not p. 141 as the card
+    and the event of 2026-11-08 had it (book PDF page 149, whose folio is 140), and both places in
+    the solution now read p. 140. Checked the two failures, each a failure of axiom (2): for $T_*$
+    the segment $0=T_2(X)\to T_2(X,A)=0\to T_1(A)=0\to T_1(X)=\ZZ_m\to T_1(X,A)=0$ cannot be exact
+    at $\ZZ_m$, and for $MT_*$ the segment $0\to MT_2(X,A)=\ZZ\xrightarrow{m}MT_1(A)=\ZZ\to MT_1(X)=0$
+    cannot be exact at $\ZZ$ since $m\ZZ\ne\ZZ$. The functoriality that the exercise attributes to
+    the two constructions is not needed for either failure. Not claimed: a published solution of
+    this exercise, which the retained sets do not contain (DeMason's set answers 2.3.3 and 2.3.4
+    only), and no certificate.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 174 carries the running head 165,
+    so the printed page is the one the card's earlier event claimed. The durable part of the locator
+    is that printed page; the file path names this machine's copy and `tmp/sources` does not survive a
+    VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Hatcher, *Algebraic Topology* (2002), §2.3 Exercise 1; the statement below is its wording.
+
 If $T_n(X, A)$ denotes the torsion subgroup of $H_n(X, A; \ZZ)$, show that the functors $(X, A) \mapsto T_n(X, A)$, with the obvious induced homomorphisms $T_n(X, A) \to T_n(Y, B)$ and boundary maps $T_n(X, A) \to T_{n-1}(A)$, do not define a homology theory.
 Do the same for the 'mod torsion' functor $MT_n(X, A) = H_n(X, A; \ZZ) / T_n(X, A)$.
 :::
 
 ::: {.solution}
-The exactness axiom fails for both constructions, already on the Moore-space pair $(X,A)$ in which $X$ is obtained from $A=S^1$ by attaching a $2$-cell by a degree-$m$ map, $m>1$. The axioms are those of p. 160, and the exactness axiom is the one requiring a long exact sequence for a CW pair.
+The exactness axiom fails for both constructions, already on the Moore-space pair $(X,A)$ in which $X$ is obtained from $A=S^1$ by attaching a $2$-cell by a degree-$m$ map, $m>1$. The axioms are those stated at the start of §2.3, and the exactness axiom is the one requiring a long exact sequence for a CW pair.
 
 ::: pf
 
@@ -94,7 +124,7 @@ $$
 
 ::: pf-proof
 
-The cellular chain complex of $X$ is $\ZZ\xrightarrow{m}\ZZ\to\ZZ$, so $H_2(X)=0$ and $H_1(X)\cong\ZZ_m$; the chain complex of a cell complex and the Cellular Boundary Formula are those of Theorem 2.35 (p. 139) and p. 141. Because $(X,A)$ is a good pair with $X/A\cong S^2$, the relative group is $H_2(X,A)\cong H_2(S^2)\cong\ZZ$ by Proposition 2.22 (p. 124) with Corollary 2.14 (p. 114), and the connecting map is multiplication by the attaching degree $m$, which is the cellular boundary $d_2$ of p. 141 read through that identification. Finally $H_1(A)\to H_1(X)$ is onto, so $H_1(X,A)=0$.
+The cellular chain complex of $X$ is $\ZZ\xrightarrow{m}\ZZ\to\ZZ$, so $H_2(X)=0$ and $H_1(X)\cong\ZZ_m$; the chain complex of a cell complex and the Cellular Boundary Formula are those of Theorem 2.35. Because $(X,A)$ is a good pair with $X/A\cong S^2$, the relative group is $H_2(X,A)\cong H_2(S^2)\cong\ZZ$ by Proposition 2.22 with Corollary 2.14, and the connecting map is multiplication by the attaching degree $m$, which is the cellular boundary $d_2$ of the Cellular Boundary Formula read through that identification. Finally $H_1(A)\to H_1(X)$ is onto, so $H_1(X,A)=0$.
 
 :::
 

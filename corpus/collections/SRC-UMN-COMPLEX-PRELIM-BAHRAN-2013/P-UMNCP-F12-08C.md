@@ -6,7 +6,9 @@ title: Count zeros using Schwarz and Rouche
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Schwarz Lemma
+  - Rouché
 relations: []
 review: draft
 audit:

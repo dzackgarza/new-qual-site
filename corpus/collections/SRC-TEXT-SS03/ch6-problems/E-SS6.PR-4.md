@@ -11,6 +11,22 @@ classification:
   - Bernoulli Numbers
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against the printed item, Chapter 6, Problem 4 on printed p. 180 (PDF p. 199): the
+    statement is the print's, both displays and the closing reference to Chapter 3 of Book I, and
+    the asterisk the print sets before "4." is recorded in the remark. Both arguments were checked
+    and hold: the induction $Q_{k+1}(x)=Q_{k+1}(0)+(B_{k+2}(x)-B_{k+2}(0))/(k+2)!$ with the
+    constant fixed by $\int_0^1Q_{k+1}=0$, which is the printed identity together with the printed
+    endpoint exception at $k=0$ ($Q_0(1)=-\frac12$ against $B_1(1)=\frac12$); and the Fourier route
+    $\widehat B_m(n)=\frac{m!}{(2\pi in)^{m-1}}\frac{i}{2\pi n}$, giving
+    $\widehat B_{2k}(n)=(-1)^{k+1}(2k)!/(2\pi n)^{2k}$ since $i^{2k-2}=(-1)^{k-1}$, the absolute and
+    uniform convergence of the cosine series, and $x=0$ for the Euler formula. Not checked: the
+    definition of the Bernoulli polynomials, which is cited to Chapter 3 of Book I and was not
+    reread.
 ---
 
 ::: {.exercise}
@@ -23,6 +39,10 @@ $$
 2\zeta(2k) = (-1)^{k+1} \frac{(2\pi)^{2k}}{(2k)!} B_{2k},
 $$
 where $B_k = B_k(0)$ are the Bernoulli numbers. For the definition of $B_k(x)$ and $B_k$ see Chapter 3 in Book I.
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 6, Problem 4).
 :::
 
 ::: {.solution}

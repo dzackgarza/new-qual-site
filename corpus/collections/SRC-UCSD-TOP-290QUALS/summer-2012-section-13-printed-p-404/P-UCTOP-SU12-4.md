@@ -46,6 +46,8 @@ Compute the integer homology $H_*(\RP^2 \times X;\ZZ)$.
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination papers alone, so the argument is the card's own.
 Throughout, $X$ is taken to be a CW complex, or replaced by a CW approximation, since only its integral homology enters; the Künneth sequence used below is the one for CW complexes.
 
 ::: pf

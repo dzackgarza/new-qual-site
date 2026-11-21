@@ -6,7 +6,9 @@ title: The field $\FF_3[x]/(x^2+1)$ and the inverse of $x$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Finite Fields
+  - Irreducible Polynomials
 relations: []
 review: draft
 audit:
@@ -48,21 +50,12 @@ Thus $f(a)\neq0$ for every $a\in\FF_3$.
 :::
 
 ::: {.pf-step #s1-2}
-The polynomial $f$ is irreducible in $\FF_3[x]$.
+Part (a): the polynomial $f$ is irreducible in $\FF_3[x]$.
 
 ::: pf-proof
 A polynomial of degree $2$ over a field is reducible if and only if it has a
 root in that field.  Step [](#s1-1){.pf-ref} shows that $f$ has no root in $\FF_3$.
 Therefore $f$ is irreducible.
-:::
-
-:::
-
-::: pf-step
-Part (a) follows.
-
-::: pf-proof
-This is step [](#s1-2){.pf-ref}.
 :::
 
 :::
@@ -83,7 +76,7 @@ Apply this to the irreducible polynomial from step [](#s1-2){.pf-ref}.
 :::
 
 ::: {.pf-step #s1-5}
-The quotient ring
+Part (b): the quotient ring
 $$
 \boxed{\FF_3[x]/I\text{ is a field}.}
 $$
@@ -91,15 +84,6 @@ $$
 ::: pf-proof
 A quotient $R/M$ of a commutative ring with identity is a field exactly when
 $M$ is a maximal ideal.  Apply this criterion to step [](#s1-4){.pf-ref}.
-:::
-
-:::
-
-::: pf-step
-Part (b) follows.
-
-::: pf-proof
-This is step [](#s1-5){.pf-ref}.
 :::
 
 :::
@@ -125,7 +109,7 @@ Thus the relation $x^2=2$ holds in the quotient.
 :::
 
 ::: {.pf-step #s1-8}
-The multiplicative inverse of $I+x$ is
+Part (c): the multiplicative inverse of $I+x$ is
 $$
 \boxed{I+2x}.
 $$
@@ -142,15 +126,6 @@ $$
 \end{aligned}
 $$
 Thus $I+2x$ is a multiplicative inverse of $I+x$.
-:::
-
-:::
-
-::: pf-step
-Part (c) follows.
-
-::: pf-proof
-Step [](#s1-8){.pf-ref} gives the requested inverse.
 :::
 
 :::

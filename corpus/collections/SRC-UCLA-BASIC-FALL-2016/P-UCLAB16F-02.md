@@ -5,7 +5,9 @@ kind: problem
 title: Operator norm of $e^A$ for a $2\times2$ Jordan block
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Matrix Exponential
+  - Norms
 relations: []
 review: draft
 audit:

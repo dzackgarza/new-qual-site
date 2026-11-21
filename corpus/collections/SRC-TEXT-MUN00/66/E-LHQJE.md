@@ -159,7 +159,7 @@ $$
 
 ::: pf-proof
 
-Exercise 9 of §58 defines the degree as the integer $d$ with $h_*(\gamma(x_0))=d\cdot\gamma(x_1)$, where $\gamma(x)$ is the preferred generator at $x$. Take $x_0=b_0=p(0)$, so that $\gamma(x_0)=\gamma$ and $h_*(\gamma(x_0))=[h\circ\gamma]=[g]$, and put $x_1=h(b_0)$, so that $[g]=d\cdot\gamma(x_1)$. By Theorem 54.5 (printed p. 345) and change of basepoint, $[\delta]\mapsto\tilde\delta(1)-\tilde\delta(0)$ is an isomorphism $\pi_1(S^1,x)\to\ZZ$ for every $x$, and it carries the preferred generator $\gamma(x)$ to $1$, because $\gamma(x)$ is $\gamma$ transported along a path from $b_0$ to $x$ and the lift difference of $\gamma$ is $1$. Applying it at $x_1$ to $[g]=d\cdot\gamma(x_1)$ gives $\tilde{g}(1)-\tilde{g}(0)=d$. The difference $\tilde{g}(1)-\tilde{g}(0)$ is the same for every lift of $g$.
+Exercise 9 of §58 defines the degree as the integer $d$ with $h_*(\gamma(x_0))=d\cdot\gamma(x_1)$, where $\gamma(x)$ is the preferred generator at $x$. Take $x_0=b_0=p(0)$, so that $\gamma(x_0)=\gamma$ and $h_*(\gamma(x_0))=[h\circ\gamma]=[g]$, and put $x_1=h(b_0)$, so that $[g]=d\cdot\gamma(x_1)$. By Theorem 54.5 and change of basepoint, $[\delta]\mapsto\tilde\delta(1)-\tilde\delta(0)$ is an isomorphism $\pi_1(S^1,x)\to\ZZ$ for every $x$, and it carries the preferred generator $\gamma(x)$ to $1$, because $\gamma(x)$ is $\gamma$ transported along a path from $b_0$ to $x$ and the lift difference of $\gamma$ is $1$. Applying it at $x_1$ to $[g]=d\cdot\gamma(x_1)$ gives $\tilde{g}(1)-\tilde{g}(0)=d$. The difference $\tilde{g}(1)-\tilde{g}(0)$ is the same for every lift of $g$.
 
 
 :::

@@ -6,7 +6,8 @@ title: Determinant of a $5\times5$ circulant matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Determinants
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Maximum modulus principle inside a closed contour
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:

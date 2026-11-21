@@ -6,7 +6,9 @@ title: Harnack-type bounds for $\abs{f(z)}$ for self-maps of the disk
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Schwarz Lemma
+  - Harmonic Functions
 relations: []
 review: draft
 audit:

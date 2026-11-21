@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP10-I2
 kind: problem
 title: Point-set properties of $\RR^n$ and the closed long ray
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Separation Axioms, Euclidean Spaces]}
 relations: []
 review: draft
 audit:

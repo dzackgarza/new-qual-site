@@ -44,9 +44,19 @@ audit:
     `H_2(Y~) = direct sum over F_2 of Z`, which is nonzero. Homology is a homotopy invariant, so the
     two universal covers are neither homeomorphic nor homotopy equivalent, even though the two spaces
     have isomorphic homology in every degree. No correction was needed.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 142 carries the running head 133.
+    The durable part of the locator is that printed page; the file path names this machine's copy and
+    `tmp/sources` does not survive a VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Hatcher, *Algebraic Topology* (2002), §2.1 Exercise 29; the statement below is its wording.
+
 Show that $S^1 \times S^1$ and $S^1 \lor S^1 \lor S^2$ have isomorphic homology groups in all dimensions, but their universal covering spaces do not.
 :::
 

@@ -6,7 +6,9 @@ title: A derivative cannot have a simple pole on a punctured disk
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Singularities
+  - Poles
 relations: []
 review: draft
 audit:

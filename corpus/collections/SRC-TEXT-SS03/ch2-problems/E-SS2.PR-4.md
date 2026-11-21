@@ -32,12 +32,23 @@ audit:
     Theorem 4.5) and compactness of the closure of a bounded component. The proof does not claim
     that $K^c$ connected is necessary for approximation of *every* function, only that one explicit
     holomorphic function fails when $K^c$ is disconnected.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Asterisk status read from the book: Chapter 2 sets its asterisks before Problems 1(b), 2 and 5
+    only, so none stands before Problem 4. The remark records that. Not checked in this pass: the
+    wording of the statement and the argument.
 ---
 
 ::: {.exercise}
 Prove the converse to Runge's theorem: if $K$ is a compact set whose complement is not connected, then there exists a function $f$ holomorphic in a neighborhood of $K$ which cannot be approximated uniformly by polynomials on $K$.
 
 [Hint: Pick a point $z_0$ in a bounded component of $K^c$, and let $f(z) = 1/(z - z_0)$. If $f$ can be approximated uniformly by polynomials on $K$, show that there exists a polynomial $p$ such that $\abs{(z - z_0)p(z) - 1} < 1$ on $K$. Use the maximum modulus principle (Chapter 3) to show that this inequality continues to hold for all $z$ in the component of $K^c$ that contains $z_0$.]
+:::
+
+::: {.remark}
+The book sets no asterisk before this problem (Chapter 2, Problem 4).
 :::
 
 ::: {.solution}

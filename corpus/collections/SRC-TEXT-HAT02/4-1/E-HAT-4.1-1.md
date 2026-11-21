@@ -161,58 +161,159 @@ audit:
     Stack Exchange question 161507, its four clauses are one displayed map, and its last sentence
     invokes the Eckmann--Hilton argument. The same restoration and correction are recorded in a new
     `COMPLAINTS.md` record of this date. Nothing in the statement or the proof changes.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Restructured into a structured proof under #2, tom Dieck (4.3.1) as its own step and the
+    four-quarter computation as another. Re-checked: the $+_i$ formula gives maps of pairs because on
+    the boundary some coordinate is 0 or 1; the stretching homotopy is continuous in $(s,t)$ and
+    stationary on the boundary; the commutation rule holds on the nose, each of the four quarters
+    agreeing; and the proposition's chain of equalities gives coincidence of the laws, the
+    commutativity and the associativity, from which the two deductions follow. Added: the
+    well-definedness on homotopy classes, the verification that the unit homotopy stays inside maps
+    of pairs, and the observation that the same computation with coordinates $(i,j)$ gives
+    $+_i=+_j$. No defect found in the statement, §4.1 Exercise 1 on printed p. 358; the card's remark
+    on Hatcher's different commutativity homotopy stands.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, the correctness read of this card's own part, which is the four-quarter interchange.
+    No defect found. Checked: each $+_i$ lands in maps of pairs, a boundary point having some
+    coordinate $0$ or $1$, which the substitution $s_i\mapsto2s_i$ or $2s_i-1$ either keeps or maps
+    to $0$ or $1$; the stretching homotopy $H_t$ is continuous because at $s_i=(1+t)/2$ its argument
+    is $1$, and it is stationary on $\partial I^n$; and the interchange identity, evaluated on the
+    four quarters, is $f(2s_1,2s_2)$, $h(2s_1,2s_2-1)$, $g(2s_1-1,2s_2)$, $k(2s_1-1,2s_2-1)$ on
+    both sides, so it holds as an identity of maps. Checked tom Dieck's (4.3.1) chain of equalities
+    one step at a time, each step being a unit law or the interchange rule with $(a,e_1,e_1,e_2)$,
+    which gives $e_1$ as a right unit for $+_2$ and then $e_1=e_2$, $+_1=+_2$ and the commutativity
+    and associativity of the common law. Checked the deduction: with $+_1=+$ and $+_2=+'$ on
+    $\pi_n(X,x_0)$ the proposition gives $[f+'k]=[f]+_2[k]=[f]+[k]=[f+k]$ and
+    $[g+'h]=[g]+[h]=[h]+[g]$. The dimension restriction $n\geq2$ is exactly what a second coordinate
+    costs, and the same verification at $(i,j)$ gives $+_i=+_j$. Not changed: the statement as
+    printed on p. 358.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, on the independent reader's report: one citation corrected, no change to the
+    mathematics. Step `#laws` cited "loc. cit., p. 87" for the identification of the cube model
+    $\pi_n(X,x_0)=[I^n/\partial I^n,X]_0=[\Sigma^nS^0,X]_0$ with tom Dieck's. Printed p. 87 carries
+    only the suspension $\Sigma^kX$ and the laws $+_i$ with their formula; the homeomorphism
+    $I^n/\partial I^n\cong\Sigma^nS^0$ and $\pi_n(X,x_0)=[I^n/\partial I^n,X]^0=[(I^n,\partial I^n),(X,x_0)]$
+    are on printed p. 88. The step now cites pp. 87--88 and says which half is on which page, checked
+    against `tmp/sources/tomdieck-algebraic-topology-ranicki.pdf`, whose page 100 carries the head
+    "4.3. Suspension. Homotopy Groups 87" and whose page 101 carries the folio 88 with the
+    identification. Unchanged: the four-quarter identity, the unit homotopy and the proposition.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 367 carries the running head 358, so
+    the printed page is the one the card's earlier event claimed. The durable part of the locator is
+    that printed page; the file path names this machine's copy and `tmp/sources` does not survive a VM
+    reset. No mathematics changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, referee read of this card's own part, the four-quarter interchange. Recomputed from
+    the two formulas with $+_1$ on coordinate $1$ and $+_2$ on coordinate $2$: in the quadrant
+    $s_1\le\tfrac12$, $s_2\le\tfrac12$ both sides are $f(2s_1,2s_2,\ldots)$; in
+    $s_1\le\tfrac12$, $s_2\ge\tfrac12$ both are $h(2s_1,2s_2-1,\ldots)$; in $s_1\ge\tfrac12$,
+    $s_2\le\tfrac12$ both are $g(2s_1-1,2s_2,\ldots)$; and in $s_1\ge\tfrac12$, $s_2\ge\tfrac12$
+    both are $k(2s_1-1,2s_2-1,\ldots)$ --- the two maps agree at every point of $I^n$, not only up to
+    homotopy, and on $\partial I^n$ every quadrant lands in $x_0$ because each argument pair has a
+    coordinate in $\{0,1\}$ where the corresponding map is based. Checked the unit homotopy
+    $H_t(s)=f(\ldots,2s_i/(1+t),\ldots)$: at $t=0$ it is $f+_i0$, at $t=1$ it is $f$, it is
+    continuous at $s_i=(1+t)/2$ because there $2s_i/(1+t)=1$ and $f$ is based, and it is stationary on
+    $\partial I^n$. Checked the deductions: substituting constants and the unit laws into the
+    interchange gives $f+'k\simeq f+k$ and $g+'h\simeq h+g$, and the proposition's Eckmann--Hilton
+    argument is sound, the two units coinciding because $e_1=e_1+_2e_2=e_2$, after which
+    $a+_2b=(a+_1e)+_2(e+_1b)=(a+_2e)+_1(e+_2b)=a+_1b$ gives $+_1=+_2$ and the same interchange gives
+    commutativity and associativity. Checked the statement against the book: printed p. 358 = PDF page
+    367 of the author's copy, whose Exercise 1 is the card's wording verbatim. The PDF path named in
+    the statement is no longer in `tmp/sources` this session, so the page was re-read from the
+    author's posted file; the page arithmetic is unchanged. Not claimed: a complete published
+    solution of the exercise; tom Dieck prints the laws and the identity, not the four-quarter
+    verification.
 review: draft
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 4.1 of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.md`; the statement below is its wording.
+
 Suppose a sum $f +' g$ of maps $f, g: (I^n, \partial I^n) \to (X, x_0)$ is defined using a coordinate of $I^n$ other than the first coordinate as in the usual sum $f + g$.
 Verify the formula $(f + g) +' (h + k) = (f +' h) + (g +' k)$, and deduce that $f +' k \simeq f + k$ so the two sums agree on $\pi_n(X, x_0)$, and also that $g +' h \simeq h + g$ so the addition is abelian.
 :::
 
 ::: {.solution}
-Throughout $n\ge2$: for $n=1$ there is no coordinate other than the first. For $1\le i\le n$ define, on maps of pairs $(I^n,\partial I^n)\to(X,x_0)$,
-$$
-(f+_i g)(s)=\begin{cases}f(s_1,\dots,s_{i-1},2s_i,s_{i+1},\dots,s_n),&s_i\le\tfrac12,\\[2pt] g(s_1,\dots,s_{i-1},2s_i-1,s_{i+1},\dots,s_n),&s_i\ge\tfrac12.\end{cases}
-$$
-These are the group laws of tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), §4.3, printed p. 87, on $[\Sigma^kX,Y]_0$ in the cube model $\pi_n(X,x_0)=[I^n/\partial I^n,X]_0=[\Sigma^nS^0,X]_0$. The law $+_1$ is Hatcher's $+$ (printed pp. 340--341) and the exercise's $+'$ is $+_2$. A homotopy of representatives through maps of pairs induces a homotopy of $+_i$-sums, so each $+_i$ is well defined on the set $\pi_n(X,x_0)$, and the class of the constant map at $x_0$ is a two-sided unit: $f+_i0\simeq f$ by the stretching homotopy
-$$
-H_t(s)=f\Bigl(s_1,\dots,\frac{2s_i}{1+t},\dots,s_n\Bigr)\ \text{for } s_i\le\frac{1+t}{2},\qquad H_t(s)=x_0\ \text{otherwise},
-$$
-which is stationary on $\partial I^n$. The argument of this sentence is the card's own.
+The group laws and the proposition are those of tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), §4.3; the four-quarter computation is also the accepted answer 161511 (2012-06-22) to Math Stack Exchange question 161507. The stretching homotopy and the presentation as numbered steps are the card's own. Throughout $n\ge2$, since for $n=1$ there is no coordinate other than the first.
 
-*The commutation rule.* Split $I^n$ into the four quarters according to $s_1\lessgtr\tfrac12$ and $s_2\lessgtr\tfrac12$. On the quarter $s_1\le\tfrac12,s_2\le\tfrac12$ the left side $(f+g)+'(h+k)$ takes the value $(f+g)(s_1,2s_2,\dots)=f(2s_1,2s_2,\dots)$, and the right side $(f+'h)+(g+'k)$ takes the value $(f+'h)(2s_1,s_2,\dots)=f(2s_1,2s_2,\dots)$. On $s_1\le\tfrac12,s_2\ge\tfrac12$ the left side is $(h+k)(s_1,2s_2-1,\dots)=h(2s_1,2s_2-1,\dots)$ and the right side is $(f+'h)(2s_1,s_2,\dots)=h(2s_1,2s_2-1,\dots)$. On $s_1\ge\tfrac12,s_2\le\tfrac12$ both sides are $g(2s_1-1,2s_2,\dots)$, and on $s_1\ge\tfrac12,s_2\ge\tfrac12$ both are $k(2s_1-1,2s_2-1,\dots)$. The two maps of $I^n$ into $X$ therefore agree everywhere, on the boundary included, so
-$$
-(f+g)+'(h+k)=(f+'h)+(g+'k)
-$$
-on the nose, not merely up to homotopy. tom Dieck states exactly this on printed p. 88, as $(a+_1b)+_2(c+_1d)=(a+_2c)+_1(b+_2d)$ for the two laws attached to two coordinates. The four-quarter computation is that of the accepted answer 161511 (KReiser, 2012-06-22) to Math Stack Exchange question 161507: with $f\cdot g$ the sum in the first coordinate and $f\star g$ the sum in the second, both $(f\cdot g)\star(h\cdot i)$ and $(f\star h)\cdot(g\star i)$ are the single map that is $f(2x,2y,\ldots)$ on $[0,\tfrac12]\times[0,\tfrac12]$, $g(2x-1,2y,\ldots)$ on $[\tfrac12,1]\times[0,\tfrac12]$, $h(2x,2y-1,\ldots)$ on $[0,\tfrac12]\times[\tfrac12,1]$ and $i(2x-1,2y-1,\ldots)$ on $[\tfrac12,1]\times[\tfrac12,1]$, which is the verification written out above clause by clause, and the answer concludes from it and the Eckmann--Hilton argument that the two compositions agree and are commutative.
+::: pf
 
-*The source's proposition.* (tom Dieck (4.3.1), printed p. 88.) Suppose the set $M$ carries two composition laws $+_1$ and $+_2$ with neutral elements $e_i$, and suppose the commutation rule $(a+_1b)+_2(c+_1d)=(a+_2c)+_1(b+_2d)$ holds. Then $+_1=+_2=+$, $e_1=e_2=:e$, and $+$ is associative and commutative. The proof is the book's chain of equalities:
+::: {.pf-step #laws}
+For $1\le i\le n$ the formula
+$$
+(f+_ig)(s)=\begin{cases}f(\ldots,2s_i,\ldots),&s_i\le\tfrac12,\\ g(\ldots,2s_i-1,\ldots),&s_i\ge\tfrac12\end{cases}
+$$
+defines a sum on maps of pairs $(I^n,\partial I^n)\to(X,x_0)$, with $+_1$ Hatcher's $+$ and $+_2$ the exercise's $+'$.
+
+::: pf-proof
+Both halves are maps of $I^n$ into $X$, they agree on $s_i=\tfrac12$, and each is continuous; on the boundary $\partial I^n$ at least one coordinate is $0$ or $1$, so the corresponding input of $f$ or of $g$ lies on $\partial I^n$ and the value is $x_0$. Hence the sum is again a map of pairs. The identification of the cube model $\pi_n(X,x_0)=[I^n/\partial I^n,X]_0=[\Sigma^nS^0,X]_0$ with tom Dieck's is [loc. cit.], where $+_1$ and $+_2$ are the laws attached to the first and second coordinates; the homeomorphism $I^n/\partial I^n\cong\Sigma^nS^0$ and the identification of $\pi_n(X,x_0)$ with $[I^n/\partial I^n,X]_0$ are in the same section.
+:::
+
+:::
+
+::: {.pf-step #unit}
+Each $+_i$ is well defined on $\pi_n(X,x_0)$, and the class of the constant map is a two-sided unit for it.
+
+::: pf-proof
+A homotopy of representatives through maps of pairs induces a homotopy of $+_i$-sums, since the formula is built from the representatives by continuous reparametrisation of coordinates, so $+_i$ passes to homotopy classes. For the unit, if $0$ denotes the constant map at $x_0$ then $f+_i0$ is homotopic to $f$ through maps of pairs by the stretching homotopy
+$$
+H_t(s)=f\Bigl(s_1,\ldots,\frac{2s_i}{1+t},\ldots,s_n\Bigr)\text{ for } s_i\le\frac{1+t}{2},\qquad H_t(s)=x_0\text{ otherwise},
+$$
+which is continuous in $(s,t)$, starts at $f+_i0$, ends at $f$, and is stationary on $\partial I^n$ because $f$ is a map of pairs; the same formula with $0+_if$ gives the other side.
+:::
+
+:::
+
+::: {.pf-step #commutation}
+$(f+g)+'(h+k)=(f+'h)+(g+'k)$ holds as an identity of maps, not merely up to homotopy.
+
+::: pf-proof
+Split $I^n$ according to $s_1\lessgtr\tfrac12$ and $s_2\lessgtr\tfrac12$. On $s_1\le\tfrac12,s_2\le\tfrac12$ the left side equals $(f+g)(s_1,2s_2,\ldots)=f(2s_1,2s_2,\ldots)$ and the right side equals $(f+'h)(2s_1,s_2,\ldots)=f(2s_1,2s_2,\ldots)$. On $s_1\le\tfrac12,s_2\ge\tfrac12$ the left side is $(h+k)(s_1,2s_2-1,\ldots)=h(2s_1,2s_2-1,\ldots)$ and the right side is again $(f+'h)(2s_1,s_2,\ldots)=h(2s_1,2s_2-1,\ldots)$. On $s_1\ge\tfrac12,s_2\le\tfrac12$ both sides are $g(2s_1-1,2s_2,\ldots)$, and on $s_1\ge\tfrac12,s_2\ge\tfrac12$ both are $k(2s_1-1,2s_2-1,\ldots)$. The two maps agree at every point of $I^n$, boundary included. This is tom Dieck's identity $(a+_1b)+_2(c+_1d)=(a+_2c)+_1(b+_2d)$ in §4.3, and the clause-by-clause computation is the one in the accepted answer 161511.
+:::
+
+:::
+
+::: {.pf-step #proposition}
+If a set $M$ carries two composition laws $+_1,+_2$ with neutral elements $e_1,e_2$ satisfying the commutation rule, then $+_1=+_2=+$, $e_1=e_2$, and $+$ is associative and commutative.
+
+::: pf-proof
+tom Dieck's (4.3.1) by the chain
 $$
 a=a+_2e_2=(a+_1e_1)+_2(e_1+_1e_2)=(a+_2e_1)+_1(e_1+_2e_2)=(a+_2e_1)+_1e_1=a+_2e_1,
 $$
-so $e_1$ is a right unit for $+_2$; in the same way $e_1$ is a left unit for $+_2$ and $e_2$ is a left and right unit for $+_1$. Hence $e_1=e_1+_2e_2=e_2$. Then
-$$
-a+_2b=(a+_1e)+_2(e+_1b)=(a+_2e)+_1(e+_2b)=a+_1b
-$$
-shows $+_1=+_2=+$; then
-$$
-b+c=(e+b)+(c+e)=(e+c)+(b+e)=c+b
-$$
-is commutativity, and
-$$
-a+(b+c)=(a+e)+(b+c)=(a+b)+(e+c)=(a+b)+c
-$$
-is associativity.
+so $e_1$ is a right unit for $+_2$, and symmetrically $e_1$ is a left unit for $+_2$ and $e_2$ both a left and a right unit for $+_1$; then $e_1=e_1+_2e_2=e_2$. Next $a+_2b=(a+_1e)+_2(e+_1b)=(a+_2e)+_1(e+_2b)=a+_1b$ gives $+_1=+_2=+$, then $b+c=(e+b)+(c+e)=(e+c)+(b+e)=c+b$ gives commutativity, and $a+(b+c)=(a+e)+(b+c)=(a+b)+(e+c)=(a+b)+c$ associativity.
+:::
 
-*The exercise's two deductions.* The commutation rule holds in $M=\pi_n(X,x_0)$ with $+_1=+$ and $+_2=+'$, because it holds for representatives. So (4.3.1) applies and gives $+_1=+_2=+$, $e_1=e_2$, and commutativity. Therefore
-$$
-[f+'k]=[f]+_2[k]=[f]+_1[k]=[f+k],
-$$
-that is $f+'k\simeq f+k$ through maps of pairs, so the two sums agree on $\pi_n(X,x_0)$; and
-$$
-[g+'h]=[g]+_2[h]=[g]+[h]=[h]+[g]=[h]+_1[g]=[h+g],
-$$
-that is $g+'h\simeq h+g$, so the addition is abelian. The proposition also gives the associativity of the sum, which the exercise does not ask for. The same verification with the pair of coordinates $(i,j)$ in place of $(1,2)$ gives $+_i=+_j$ for all $i,j$, which is the book's conclusion on p. 88 that all the laws coincide and that they are abelian for $n\ge2$.
+:::
 
-The exercise is Hatcher, *Algebraic Topology* (2002), §4.1 Exercise 1, printed p. 358. His $+$ is the first-coordinate sum of printed p. 340, and his commutativity homotopy on printed p. 341 is a different argument for the last deduction than the route taken here.
+::: {.pf-step}
+$\boxed{f+'k\simeq f+k\text{ and }g+'h\simeq h+g}$, so the two sums agree on $\pi_n(X,x_0)$ and the addition is abelian.
+
+::: pf-proof
+Take $M=\pi_n(X,x_0)$ with $+_1=+$ and $+_2=+'$; the commutation rule of step [](#commutation){.pf-ref} holds for representatives and hence on classes, and step [](#unit){.pf-ref} supplies the neutral elements, so step [](#proposition){.pf-ref} applies and gives $+_1=+_2=+$ with $+$ commutative. Then
+$$
+[f+'k]=[f]+_2[k]=[f]+_1[k]=[f+k]\quad\text{and}\quad [g+'h]=[g]+_2[h]=[g]+[h]=[h]+[g]=[h+'g]=[h+g],
+$$
+which is the two assertions; the proposition also yields associativity, which the exercise does not ask for. Writing $+_i,+_j$ for the laws attached to coordinates $i,j$ and repeating the same verification with the pair $(i,j)$ in place of $(1,2)$ gives $+_i=+_j$ for all $i,j$, the book's conclusion after (4.3.1).
+:::
+
+:::
+
+:::
 :::

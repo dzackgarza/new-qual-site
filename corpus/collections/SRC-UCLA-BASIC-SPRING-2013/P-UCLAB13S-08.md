@@ -5,7 +5,9 @@ kind: problem
 title: Adjoints and equality of row rank and column rank
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Rank and Nullity
+  - Adjoint Operators
 relations: []
 review: draft
 audit:

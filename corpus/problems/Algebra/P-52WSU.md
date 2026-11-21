@@ -43,58 +43,69 @@ What is a Toeplitz operator? Define the Hardy space $H^2(\circlegroup)$, the Toe
 :::
 
 ::: {.solution}
-Let $\circlegroup=\{z\in\CC:\abs{z}=1\}$ with normalized Lebesgue measure. The Hardy space is
-$$
-H^2(\circlegroup)
-=
-\left\{f\in L^2(\circlegroup):\widehat f(n)=0\text{ for }n<0\right\}
-=
-\overline{\operatorname{span}}\{1,z,z^2,\ldots\}.
-$$
-Let
-$$
-P_+:L^2(\circlegroup)\to H^2(\circlegroup)
-$$
-be the orthogonal (Szegő) projection.
 
-For $\varphi\in L^\infty(\circlegroup)$, multiplication by $\varphi$ is bounded on $L^2$, and the Toeplitz operator with symbol $\varphi$ is
-$$
-T_\varphi=P_+M_\varphi\restrict_{H^2},
-\qquad
-T_\varphi f=P_+(\varphi f).
-$$
-In particular,
-$$
-\norm{T_\varphi}\le \norm{\varphi}_\infty.
-$$
+The definitions and the matrix computation are the card's own, with the Brown--Halmos theorem quoted and its easy direction proved; no retained set supplies them, and the sets searched are recorded in the audit trail.
 
-Write the Fourier coefficients of $\varphi$ as
+Let $\circlegroup=\{z\in\CC:\abs{z}=1\}$ carry normalized Lebesgue measure $m$, so that $\langle f,g\rangle=\int_{\circlegroup}f\bar g\,dm$ and $\widehat\varphi(k)=\int_{\circlegroup}\varphi(z)z^{-k}\,dm(z)$. The Hardy space is
 $$
-a_k=\widehat\varphi(k).
+H^{2}(\circlegroup)=\{f\in L^{2}(\circlegroup):\widehat f(n)=0\ \text{for}\ n<0\}=\overline{\operatorname{span}}\{z^{j}:j\ge0\},
 $$
-For the orthonormal basis $e_j(z)=z^j$, $j\ge0$,
-$$
-\inner{T_\varphi e_j}{e_i}
-=
-\inner{\varphi z^j}{z^i}
-=a_{i-j}.
-$$
-Thus the matrix is the semi-infinite Toeplitz matrix
-$$
-[T_\varphi]=(a_{i-j})_{i,j\ge0}
-=
-\begin{pmatrix}
-a_0&a_{-1}&a_{-2}&\cdots\\
-a_1&a_0&a_{-1}&\cdots\\
-a_2&a_1&a_0&\cdots\\
-\vdots&\vdots&\vdots&\ddots
-\end{pmatrix},
-$$
-so its entries are constant along diagonals.
+$P_{+}$ is the orthogonal projection of $L^{2}$ onto it, and for $\varphi\in L^{\infty}$ the Toeplitz operator is $T_{\varphi}=P_{+}M_{\varphi}$ on $H^{2}$, that is $T_{\varphi}f=P_{+}(\varphi f)$.
 
-Also $T_\varphi^*=T_{\overline\varphi}$, and for $\varphi(z)=z$, $T_z$ is the unilateral shift. The Brown--Halmos characterization says that a bounded operator $T$ on $H^2$ is Toeplitz exactly when
+::: pf
+
+::: {.pf-step #closed}
+$H^{2}(\circlegroup)$ is a closed subspace of $L^{2}(\circlegroup)$, so $P_{+}$ is defined.
+
+::: pf-proof
+The functions $z\mapsto z^{n}$ are orthonormal in $L^{2}$, since $\int z^{n}\bar z^{m}\,dm=\int z^{n-m}\,dm$ is $1$ for $n=m$ and $0$ otherwise. Hence $\overline{\operatorname{span}}\{z^{j}:j\ge0\}$ is a closed subspace, and it consists exactly of the functions whose negative Fourier coefficients vanish, by the Riesz--Fischer theorem and the completeness of the trigonometric system: an $L^{2}$ function is the sum of its Fourier series, and with the convention $\widehat f(k)=\int_{\circlegroup}f(z)z^{-k}\,dm(z)$ its scalar product with $z^{j}$ is $\int f\bar z^{j}=\int f z^{-j}=\widehat f(j)$.
+:::
+
+:::
+
+::: {.pf-step #bounded}
+$T_{\varphi}$ is bounded with $\norm{T_{\varphi}}\le\norm{\varphi}_{\infty}$.
+
+::: pf-proof
+For $f\in H^{2}$, $\norm{T_{\varphi}f}=\norm{P_{+}(\varphi f)}\le\norm{\varphi f}_{2}\le\norm{\varphi}_{\infty}\norm{f}_{2}$, the first inequality because an orthogonal projection does not increase the norm and the second by the definition of the essential supremum. So $T_{\varphi}$ is bounded and its norm is at most $\norm{\varphi}_{\infty}$.
+:::
+
+:::
+
+::: {.pf-step #matrix}
+With $e_{j}(z)=z^{j}$ and $a_{k}=\widehat\varphi(k)$, the matrix of $T_{\varphi}$ in the orthonormal basis $(e_{j})_{j\ge0}$ is $(a_{i-j})_{i,j\ge0}$.
+
+::: pf-proof
+$\langle T_{\varphi}e_{j},e_{i}\rangle=\langle P_{+}(\varphi z^{j}),z^{i}\rangle=\langle \varphi z^{j},z^{i}\rangle$ because $z^{i}\in H^{2}$ and $P_{+}$ is self-adjoint and idempotent. Then
 $$
-S^*TS=T,
+\langle \varphi z^{j},z^{i}\rangle=\int_{\circlegroup}\varphi(z)z^{j}\bar z^{i}\,dm(z)=\int_{\circlegroup}\varphi(z)z^{-(i-j)}\,dm(z)=a_{i-j},
 $$
-where $S=T_z$.
+using $\bar z^{i}=z^{-i}$ on the circle. So the $(i,j)$ entry depends only on $i-j$, which is the assertion that the matrix is constant along diagonals.
+:::
+
+:::
+
+::: {.pf-step #adjoint}
+$T_{\varphi}^{*}=T_{\bar\varphi}$, and for $\varphi(z)=z$ the operator $T_{z}$ is the unilateral shift.
+
+::: pf-proof
+For $f,g\in H^{2}$, $\langle T_{\varphi}f,g\rangle=\langle \varphi f,g\rangle_{L^{2}}=\langle f,\bar\varphi g\rangle_{L^{2}}=\langle f,P_{+}(\bar\varphi g)\rangle$, since $f\in H^{2}$ and $P_{+}$ is the projection onto $H^{2}$; so the adjoint is $T_{\bar\varphi}$. For $\varphi(z)=z$ and $f\in H^{2}$ one has $zf\in H^{2}$ — its Fourier coefficients are those of $f$ shifted, and none of them is negative — so $P_{+}(zf)=zf$ and $T_{z}$ sends $e_{j}$ to $e_{j+1}$: the unilateral shift.
+:::
+
+:::
+
+::: {.pf-step #brown-halmos}
+$S^{*}T_{\varphi}S=T_{\varphi}$ for the shift $S=T_{z}$; and a bounded operator $T$ on $H^{2}$ is a Toeplitz operator if and only if $S^{*}TS=T$.
+
+::: pf-proof
+$S^{*}=T_{\bar z}$ by step [](#adjoint){.pf-ref}, so for $f\in H^{2}$,
+$$
+S^{*}T_{\varphi}Sf=P_{+}\big(\bar z\,\varphi\,zf\big)=P_{+}(\varphi f)=T_{\varphi}f,
+$$
+because $\abs{z}=1$ and $P_{+}$ is idempotent. That is the easy direction of the Brown--Halmos characterization; the converse, that $S^{*}TS=T$ forces $T=T_{\varphi}$ with $\varphi\in L^{\infty}$, is the theorem of Brown and Halmos and is quoted here rather than reproduced.
+:::
+
+:::
+
+:::
 :::

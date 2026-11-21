@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB11S-07
 kind: problem
 title: Existence of a real root of $x^5-3x+1$
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Intermediate Value Theorem, Continuity]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP11-8
 kind: problem
 title: Boundary inclusion for a punctured genus-$2$ surface and obstruction to a retraction
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Retracts, Genus]}
 relations: []
 review: draft
 audit:

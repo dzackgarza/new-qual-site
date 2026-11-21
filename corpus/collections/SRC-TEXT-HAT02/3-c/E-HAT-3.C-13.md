@@ -34,6 +34,20 @@ audit:
     the binomial expansion of $\Delta(\alpha^k)$ needs Koszul signs. Both points are now in the
     solution. Also repaired: "$\beta_1^p=p!\beta_p=0$" named a basis element that does not exist,
     and now reads $\beta_1^p=(p-1)!\,\beta_1\beta_{p-1}=(p-1)!\,p\,\beta_p=0$. No statement changed.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 13 of §3.C, printed p. 292. Both self-dualities are correct and
+    the two degree hypotheses are essential, as the card says: $\Delta(\alpha)^2$ has middle terms
+    $2\,\alpha\otimes\alpha$ when $|\alpha|$ is even, so the exterior algebra is a Hopf algebra only
+    in odd degree, and the binomial formula for $\Delta(\alpha^k)$ in the truncated polynomial
+    algebra needs $|\alpha|$ even. Restructured: ten steps, of which eight had no proof child at
+    all and two carried the whole computation, are now four steps with proofs, one per claim —
+    the exterior case with both dual structures, the coproduct formula in the truncated case, the
+    dual product with $\beta_i\beta_j=\binom{i+j}{i}\beta_{i+j}$ and $\beta_1^p=(p-1)!\,p\,\beta_p=0$,
+    and the dual coproduct with $\beta_1$ primitive. The mathematics is unchanged. Not claimed:
+    a published solution, and no certificate.
 ---
 
 ::: {.problem}
@@ -41,99 +55,65 @@ Verify that the Hopf algebras $\Lambda_R[\alpha]$ and $\ZZ_p[\alpha]/(\alpha^p)$
 :::
 
 ::: {.solution}
+Both Hopf algebras are self-dual as graded Hopf algebras over their coefficient rings; the degrees of the generators matter in both cases and are stated where they are used. The exercise is Exercise 13 of §3.C, printed p.~292.
+
 ::: pf
 
-::: pf-step
-Duality for the exterior Hopf algebra $\Lambda_R[\alpha]$:
+::: {.pf-step #s1}
+
+$\Lambda_R[\alpha]$ with $\alpha$ of odd degree is self-dual.
 
 ::: pf-proof
 
-::: pf-step
-As an $R$-module, $A = \Lambda_R[\alpha]$ has basis $\{1, \alpha\}$ with $\alpha^2 = 0$.
-The comultiplication is determined by the primitive generator:
-$$
-\Delta(1) = 1 \otimes 1, \qquad \Delta(\alpha) = \alpha \otimes 1 + 1 \otimes \alpha.
-$$
-Here $\alpha$ must be taken in **odd** degree, and that is not cosmetic: were $|\alpha|$ even, $\Delta$ would fail to be an algebra homomorphism, because then the two middle terms of
+As an $R$-module the algebra has basis $\{1,\alpha\}$ with $\alpha^2=0$, and $\alpha$ primitive, $\Delta(\alpha)=\alpha\otimes1+1\otimes\alpha$. Oddness is required: were $\abs{\alpha}$ even, the two middle terms of
 $$
 \Delta(\alpha)^2=\alpha^2\otimes1+(\alpha\otimes1)(1\otimes\alpha)+(1\otimes\alpha)(\alpha\otimes1)+1\otimes\alpha^2
 $$
-would *add* to $2\,\alpha\otimes\alpha$ instead of cancelling, while $\Delta(\alpha^2)=0$. In odd degree they cancel by the Koszul rule, which is exactly why the exterior algebra on an odd class is a Hopf algebra.
-:::
-
-::: pf-step
-Let $\{1^*, \alpha^*\}$ be the dual basis in $A^* = \operatorname{Hom}_R(A, R)$.
-The product in $A^*$ is given by the dual of the coproduct $m^* = \Delta^*$:
+would add to $2\,\alpha\otimes\alpha$ instead of cancelling, while $\Delta(\alpha^2)=\Delta(0)=0$, so $\Delta$ would not be an algebra map; in odd degree the Koszul rule cancels them. In the dual $A^*=\operatorname{Hom}_R(A,R)$ with dual basis $\{1^*,\alpha^*\}$, the product is dual to $\Delta$, so
 $$
-\langle \alpha^* \cdot \alpha^*, \alpha \rangle = \langle \alpha^* \otimes \alpha^*, \Delta(\alpha) \rangle = \langle \alpha^* \otimes \alpha^*, \alpha \otimes 1 + 1 \otimes \alpha \rangle = 0.
+\langle\alpha^*\alpha^*,\alpha\rangle=\langle\alpha^*\otimes\alpha^*,\alpha\otimes1+1\otimes\alpha\rangle=0,
 $$
-Since $A^*$ is trivial in degrees $> \deg(\alpha)$, $(\alpha^*)^2 = 0$, so $A^* \cong \Lambda_R[\alpha^*]$ as algebras.
-:::
-
-::: pf-step
-The coproduct on $A^*$ is given by the dual of multiplication $\Delta^* = m^*$:
-$$
-\langle \Delta^*(\alpha^*), x \otimes y \rangle = \langle \alpha^*, x y \rangle \implies \Delta^*(\alpha^*) = \alpha^* \otimes 1^* + 1^* \otimes \alpha^*.
-$$
-Thus $\alpha \mapsto \alpha^*$ defines an isomorphism of graded Hopf algebras $\Lambda_R[\alpha] \cong (\Lambda_R[\alpha])^*$.
-:::
+and $A^*$ vanishes above degree $\abs{\alpha}$, so $(\alpha^*)^2=0$ as well; hence $A^*\cong\Lambda_R[\alpha^*]$ as an algebra. The coproduct of $A^*$ is dual to the multiplication, and $\langle\Delta^*(\alpha^*),x\otimes y\rangle=\langle\alpha^*,xy\rangle$ is $1$ exactly for $(x,y)=(1,\alpha)$ and $(\alpha,1)$, so $\alpha^*$ is primitive. The correspondence $\alpha\mapsto\alpha^*$ is therefore an isomorphism of graded Hopf algebras.
 
 :::
 
 :::
 
-::: pf-step
-Duality for the truncated polynomial Hopf algebra $A = \ZZ_p[\alpha]/(\alpha^p)$:
+::: {.pf-step #s2}
+
+For $A=\FF_p[\alpha]/(\alpha^p)$ with $\alpha$ of even degree, $\Delta(\alpha^k)=\sum_j\binom{k}{j}\alpha^j\otimes\alpha^{k-j}$.
 
 ::: pf-proof
 
-::: pf-step
-As an $\FF_p$-vector space, $A$ has basis $\{1, \alpha, \alpha^2, \dots, \alpha^{p-1}\}$ with $\alpha^p = 0$. Here $\alpha$ is taken in **even** degree, so no Koszul sign appears in the binomial formula below; the same remark as in the exterior case applies, in the other direction.
-Since $\alpha$ is primitive ($\Delta(\alpha) = \alpha \otimes 1 + 1 \otimes \alpha$), the coproduct on basis elements is:
-$$
-\Delta(\alpha^k) = (\alpha \otimes 1 + 1 \otimes \alpha)^k = \sum_{j=0}^k \binom{k}{j} \alpha^j \otimes \alpha^{k-j}.
-$$
-:::
-
-::: pf-step
-Let $\{\beta_0, \beta_1, \dots, \beta_{p-1}\}$ be the dual basis of $A^*$ with $\langle \beta_i, \alpha^j \rangle = \delta_{ij}$.
-The product in $A^*$ satisfies:
-$$
-\langle \beta_i \beta_j, \alpha^k \rangle = \langle \beta_i \otimes \beta_j, \Delta(\alpha^k) \rangle = \binom{k}{i} \delta_{i+j, k} \implies \beta_i \beta_j = \binom{i+j}{i} \beta_{i+j} \quad (i+j < p),
-$$
-and $\beta_i \beta_j = 0$ for $i+j \ge p$.
-:::
-
-::: pf-step
-In particular, $\beta_1^k = k! \beta_k$ for all $0 \le k < p$.
-Since $k < p$, $k! \in \FF_p^\times$, so $\beta_k = \frac{\beta_1^k}{k!}$.
-Furthermore $\beta_1^p=0$, which is the same computation read at the edge of the basis:
-$$
-\beta_1^p=(p-1)!\,\beta_1\beta_{p-1}=(p-1)!\,p\,\beta_p=0,
-$$
-with $p=0$ in $\FF_p$ — the intermediate symbol $\beta_p$ is not a basis element, so this is the only way to read it.
-Thus $A^* \cong \FF_p[\beta_1]/(\beta_1^p)$ as an algebra generated by $\beta_1$.
-:::
-
-::: pf-step
-The dual coproduct on $\beta_1$ satisfies:
-$$
-\langle \Delta^*(\beta_1), \alpha^i \otimes \alpha^j \rangle = \langle \beta_1, \alpha^i \alpha^j \rangle = \begin{cases} 1 & (i, j) \in \{(1, 0), (0, 1)\}, \\ 0 & \text{otherwise,} \end{cases}
-$$
-which gives $\Delta^*(\beta_1) = \beta_1 \otimes 1^* + 1^* \otimes \beta_1$.
-Thus $\beta_1$ is primitive.
-The map $\alpha \mapsto \beta_1$ defines an isomorphism of graded Hopf algebras $A \cong A^*$.
-:::
+$\alpha$ is primitive, so $\Delta(\alpha^k)=(\alpha\otimes1+1\otimes\alpha)^k$, and expanding gives the stated sum with no signs because $\abs{\alpha}$ is even: in odd degree each mixed term would carry the Koszul sign $(-1)^{\abs{\alpha}j(k-j)}$ and the formula would fail. The basis is $\{1,\alpha,\dots,\alpha^{p-1}\}$ with $\alpha^p=0$.
 
 :::
 
 :::
 
-::: pf-step
-Conclusion:
-Both $\Lambda_R[\alpha]$ and $\ZZ_p[\alpha]/(\alpha^p)$ are self-dual Hopf algebras.
-:::
+::: {.pf-step #s3}
+
+The dual $A^*$ with basis $\beta_0,\dots,\beta_{p-1}$ dual to $1,\alpha,\dots,\alpha^{p-1}$ satisfies $\beta_i\beta_j=\binom{i+j}{i}\beta_{i+j}$ for $i+j<p$ and $\beta_i\beta_j=0$ for $i+j\ge p$; hence $A^*\cong\FF_p[\beta_1]/(\beta_1^p)$.
+
+::: pf-proof
+
+$\langle\beta_i\beta_j,\alpha^k\rangle=\langle\beta_i\otimes\beta_j,\Delta(\alpha^k)\rangle=\binom{k}{i}\delta_{i+j,k}$, which gives the product formula and shows that $\beta_i\beta_j$ vanishes when $i+j\ge p$ because $\alpha^{i+j}=0$ in $A$. Inductively $\beta_1^k=k!\,\beta_k$, and $k!$ is a unit in $\FF_p$ for $k<p$, so $\beta_k=\beta_1^k/k!$ and $\beta_1$ generates $A^*$ as an algebra. At the edge, $\beta_1^p=(p-1)!\,\beta_1\beta_{p-1}=(p-1)!\,p\,\beta_p=0$, the last product already being zero in $A^*$ since $1+(p-1)=p$; so $A^*\cong\FF_p[\beta_1]/(\beta_1^p)$.
 
 :::
 
+:::
+
+::: {.pf-step #s4}
+
+$\beta_1$ is primitive and $\alpha\mapsto\beta_1$ is an isomorphism of graded Hopf algebras $A\to A^*$.
+
+::: pf-proof
+
+$\langle\Delta^*(\beta_1),\alpha^i\otimes\alpha^j\rangle=\langle\beta_1,\alpha^{i+j}\rangle$ is $1$ exactly when $i+j=1$, so $\Delta^*(\beta_1)=\beta_1\otimes1^*+1^*\otimes\beta_1$. The algebra isomorphism of the previous step sends the generator $\alpha$ to $\beta_1$ and preserves the coproduct because $\alpha$ and $\beta_1$ are both primitive and both generate, so the two Hopf algebras are isomorphic. Together with the exterior case, both Hopf algebras named in the exercise are self-dual.
+
+:::
+
+:::
+
+:::
 :::

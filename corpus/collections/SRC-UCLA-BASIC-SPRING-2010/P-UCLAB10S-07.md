@@ -6,7 +6,9 @@ title: A bounded sequence of functions converges on the rationals along a subseq
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Sequences of Functions
+  - Compactness
 relations: []
 review: draft
 audit:

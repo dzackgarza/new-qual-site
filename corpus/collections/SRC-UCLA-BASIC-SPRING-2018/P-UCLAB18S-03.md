@@ -6,7 +6,8 @@ title: Complex matrices with $e^A=I+A+A^2$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Matrix Exponential
 relations: []
 review: draft
 audit:

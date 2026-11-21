@@ -281,6 +281,40 @@ audit:
     batch. Not read in this pass: Kleiman-Altman's own Theorem 7, not in
     tmp/sources, as before; Serre vanishing was cited, not re-read; and no
     other step was re-derived.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Printed exercise re-read for this pass at printed p. 355 -- the folio was read at the foot of
+    PDF p. 370 of tmp/sources/hartshorne-1977-algebraic-geometry.pdf, which carries the whole of
+    6.1--6.9, so 6.8 and 6.9 are on p. 355 and not on p. 356; a review report put them on 355 and
+    was right, and a brief that placed them on 356 was one page late. The card's statement is the
+    printed exercise with its star and its printed hint, and "for each m >> 0" is kept.
+
+    The import is named in the step transcribed-theorem: Dan--Kaur, Theorem 3.3, printed p. 3, who
+    attribute it to Kleiman--Altman's Theorem 7, and the card records that no ground-field
+    hypothesis appears in that restatement while the paper's own section 2 works over an
+    algebraically closed field. Added in this pass: the same step now says that Kleiman--Altman's
+    own Theorem 7 is not in this checkout and that the reading of it recorded on this card reports a
+    requirement that the ground field be infinite, which an algebraically closed field satisfies, so
+    the debt is visible rather than closed. The card's own step, the regularity computation that
+    makes X (m-1)-regular so that Serre vanishing III.5.2(b), printed p. 228, applies, was read and
+    is correct.
+
+    Not checked: Kleiman--Altman's own Theorem 7, which is not retained here; the card says so too.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Citation form (#184). Every reference in this card's steps and remarks is now carried by its
+    numbered statement: Exercise IV.6.9 with its hint; Theorem II.8.24; Exercise II.7.14;
+    Proposition II.7.13; Example II.8.18; Theorem III.5.2(b) (Serre vanishing); Corollary III.11.5;
+    and Dan--Kaur, Notation 3.2, Theorem 3.3, Theorem 1.1 and Proposition 3.4, with
+    Kleiman--Altman's Theorem 7 named as the theorem Dan--Kaur restate. No page, PDF page or page
+    offset appears in the card's text. The locators inside the events of 2026-09-18, 2026-11-11,
+    2026-11-16 and 2026-11-19 are records of those passes and are left as written (QUAL-11). The
+    mathematics is unchanged in this pass.
 ---
 
 ::: {.problem}
@@ -308,7 +342,7 @@ $$
 
 ::: pf-proof
 
-Dan--Kaur, Notation 3.2, printed p. 3, sets
+Dan--Kaur, Notation 3.2, sets
 $$
 Z_e\coloneqq\{z\in Z:\dim\Omega^1_{Z,z}=e\}
 $$
@@ -325,12 +359,13 @@ as required. Step [](#transcribed-theorem){.pf-ref} states the theorem this hypo
 :::
 
 ::: {.pf-step #transcribed-theorem}
-Dan--Kaur, Theorem 3.3, printed p. 3, quoted: if for any $e>0$ such that $Z_e\ne\emptyset$ the number $\dim Z_e+e$ is less than $2n+1$, then there exists a smooth hypersurface in $\PP^{2n+1}$ containing $Z$; moreover, if $Z$ is $d-1$-regular in the sense of Castelnuovo--Mumford, then there exists a smooth hypersurface of degree $d$ in $\PP^{2n+1}$ containing $Z$.
+Dan--Kaur, Theorem 3.3, quoted: if for any $e>0$ such that $Z_e\ne\emptyset$ the number $\dim Z_e+e$ is less than $2n+1$, then there exists a smooth hypersurface in $\PP^{2n+1}$ containing $Z$; moreover, if $Z$ is $d-1$-regular in the sense of Castelnuovo--Mumford, then there exists a smooth hypersurface of degree $d$ in $\PP^{2n+1}$ containing $Z$.
 
 ::: pf-proof
 
-This is the statement of Dan--Kaur, Theorem 3.3, printed p. 3, with the attribution there, "$[KA79,\text{ Theorem }7]$", to Kleiman--Altman.
+This is the statement of Dan--Kaur, Theorem 3.3, with the attribution there, "$[KA79,\text{ Theorem }7]$", to Kleiman--Altman.
 No hypothesis on the ground field is stated there, and the paper's own context in its §2 is a smooth projective variety over an algebraically closed field.
+Kleiman--Altman's own Theorem 7 is not in this checkout, and the reading of it recorded on this card reports that it requires the ground field to be infinite. That hypothesis is therefore not verified here; it holds anyway, since an algebraically closed field is infinite, and it is named here so that the debt is visible.
 
 :::
 
@@ -347,7 +382,7 @@ $$
 H^i\bigl(\PP^3,\mci_X(m-1-i)\bigr)=0
 \qquad\text{for every }i\ge1 .
 $$
-The ideal sheaf $\mci_X$ is coherent on the projective space $\PP^3$, so Serre's vanishing theorem, [[T-COHSVAN|Serre vanishing]] [@Har77, Theorem III.5.2], printed p. 228, gives for each $i\ge1$ an integer $k_i$ with
+The ideal sheaf $\mci_X$ is coherent on the projective space $\PP^3$, so Serre's vanishing theorem, [[T-COHSVAN|Serre vanishing]] [@Har77, Theorem III.5.2] gives for each $i\ge1$ an integer $k_i$ with
 $$
 H^i\bigl(\PP^3,\mci_X(k)\bigr)=0
 \qquad\text{for every }k\ge k_i .
@@ -373,7 +408,7 @@ $$
 
 Fix $m\ge m_0$ of step [](#regularity){.pf-ref}.
 Step [](#hypothesis){.pf-ref} verifies the hypothesis of the first clause of Dan--Kaur's Theorem 3.3 for $Z=X$, and step [](#regularity){.pf-ref} supplies the hypothesis of its second clause, $X$ being $m-1$-regular.
-Applying the second clause of Theorem 3.3, printed p. 3, to $Z=X$, $d=m$ and $n=1$ gives a smooth hypersurface $F\subseteq\PP^3$ of degree $m$ containing $X$; Dan--Kaur draw the same conclusion in the first sentence of their proof of Theorem 1.1, printed p. 4: "The existence of a smooth hypersurface in $\PP^{2n+1}$ containing $Z$ for $d\gg0$ follows from Theorem 3.3."
+Applying the second clause of Theorem 3.3 to $Z=X$, $d=m$ and $n=1$ gives a smooth hypersurface $F\subseteq\PP^3$ of degree $m$ containing $X$; Dan--Kaur draw the same conclusion in the first sentence of their proof of Theorem 1.1: "The existence of a smooth hypersurface in $\PP^{2n+1}$ containing $Z$ for $d\gg0$ follows from Theorem 3.3."
 A hypersurface of $\PP^3$ is a surface, and Dan--Kaur's "smooth" is nonsingularity, so $F$ is a nonsingular surface of degree $m$ containing $X$, for every $m\ge m_0$, which is the assertion of the exercise.
 
 :::
@@ -386,9 +421,9 @@ A hypersurface of $\PP^3$ is a surface, and Dan--Kaur's "smooth" is nonsingulari
 
 ::: {.remark title="Published solution"}
 A. Dan and I. Kaur, *Semi-regular varieties and variational Hodge conjecture*, prove the assertion of this exercise twice over, and the stronger statement beside it.
-Theorem 3.3, printed p. 3, is the existence statement the argument uses, restating Kleiman--Altman's Theorem 7.
-Theorem 1.1, printed p. 2, adds that the containing hypersurface can be chosen so that $Z$ is semi-regular in it, and its first sentence, printed p. 4, draws this exercise from Theorem 3.3.
-The rest of that proof, printed pp. 4--5, proves the surjectivity that semi-regularity asks for, through Proposition 3.4, printed p. 3, and Serre vanishing.
+Theorem 3.3 is the existence statement the argument uses, restating Kleiman--Altman's Theorem 7.
+Theorem 1.1 adds that the containing hypersurface can be chosen so that $Z$ is semi-regular in it, and its first sentence draws this exercise from Theorem 3.3.
+The rest of that proof proves the surjectivity that semi-regularity asks for, through Proposition 3.4 and Serre vanishing.
 
 The exercise's own hint asks for the blowup $\pi:\widetilde{\PP}\to\PP^3$ of $X$ and Bertini applied to the embedding given by $\mci_Y\tensor\pi^*\OO_{\PP^3}(m)$.
 Dan--Kaur's route is the other classical one, a Bertini theorem for hypersurfaces containing a fixed subscheme, and it does not pass through the blowup.

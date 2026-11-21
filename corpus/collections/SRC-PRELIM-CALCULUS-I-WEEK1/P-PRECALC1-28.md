@@ -15,6 +15,17 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Restored the lost arrow in the limit of Problem 28 on page 6 of Week1_solns.pdf.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked symbolically. The sum is the right Riemann sum for
+    int_0^3 (x^2 - x) dx with Delta x = 3/n and x_i = 3i/n, so the limit is [x^3/3 - x^2/2]_0^3 =
+    9 - 9/2 = 9/2; the card computes the two sums separately (sum i^2 and sum i) and subtracts,
+    which gives the same value, and I confirmed the limit 9/2 by symbolic summation. Both the
+    Riemann-sum identification and the arithmetic are right, including the 18/2 - 9/2 step. Not
+    claimed: any statement about left or midpoint sums, which differ in the intermediate formula
+    but not in the limit.
 ---
 
 ::: {.problem}

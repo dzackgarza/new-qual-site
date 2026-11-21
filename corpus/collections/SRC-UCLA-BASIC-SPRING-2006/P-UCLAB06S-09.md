@@ -5,7 +5,9 @@ kind: problem
 title: Spectral theorem for real symmetric matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Spectral Theorem
+  - Symmetric Matrices
 relations: []
 review: draft
 audit:

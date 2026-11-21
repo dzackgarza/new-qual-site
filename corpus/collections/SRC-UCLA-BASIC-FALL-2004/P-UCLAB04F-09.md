@@ -5,7 +5,9 @@ kind: problem
 title: Eigenvalues of an operator annihilated by a polynomial
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Characteristic Polynomial
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 audit:

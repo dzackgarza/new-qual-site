@@ -5,7 +5,9 @@ kind: problem
 title: Operator norm and completeness of the matrix space
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Norms
+  - Completeness
 relations: []
 review: draft
 audit:

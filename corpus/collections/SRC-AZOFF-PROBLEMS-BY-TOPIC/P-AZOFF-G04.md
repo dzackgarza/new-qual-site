@@ -35,6 +35,8 @@ Evaluate $\displaystyle\int_0^\infty \frac{\cos x - \cos 4x}{x^2}\,dx$.
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the problem compilation alone, so the argument is the card's own.
 Set
 $$
 F(z)=\frac{e^{iz}-e^{4iz}}{z^2}.

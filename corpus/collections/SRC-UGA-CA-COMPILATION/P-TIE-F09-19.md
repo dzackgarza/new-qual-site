@@ -6,7 +6,9 @@ title: 'Hadamard''s example: ill-posedness of the Cauchy problem for Laplace''s 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Partial Differential Equations
+  - Harmonic Functions
 relations: []
 review: draft
 audit:

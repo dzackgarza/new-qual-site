@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-SQUAL1-04
 kind: problem
 title: Continuous open maps and restrictions to open subspaces
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Continuity, Closed Maps, Subspaces]}
 relations: []
 review: draft
 audit:

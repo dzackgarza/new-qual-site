@@ -90,7 +90,7 @@ $A$ is a deformation retract of the open set $U=X-h(\mathbf{0})$.
 
 ::: pf-proof
 
-This is step 1 of the proof of Theorem 72.1 (printed pp. 439--440), which uses only that $\pi:B^n\to h(B^n)$, the restriction of $h$ to its image, is a quotient map, that $(B^n-\mathbf{0})\times I$ is saturated and open in $B^n\times I$, and that $B^n-\mathbf{0}$ deformation retracts onto $S^{n-1}$; the last holds for every $n\ge2$. Hence the deformation retraction descends to $h(B^n)-h(\mathbf{0})$, and is extended by the identity on $A$.
+This is step 1 of the proof of Theorem 72.1, which uses only that $\pi:B^n\to h(B^n)$, the restriction of $h$ to its image, is a quotient map, that $(B^n-\mathbf{0})\times I$ is saturated and open in $B^n\times I$, and that $B^n-\mathbf{0}$ deformation retracts onto $S^{n-1}$; the last holds for every $n\ge2$. Hence the deformation retraction descends to $h(B^n)-h(\mathbf{0})$, and is extended by the identity on $A$.
 
 :::
 
@@ -102,7 +102,7 @@ $V=X-A$ is simply connected and $U\cap V$ is simply connected, since $n>2$.
 
 ::: pf-proof
 
-By the book's step 2 (printed p. 440), $\pi$ restricts to a homeomorphism of $\operatorname{Int}B^n$ onto $V=X-A$, so $V$ is homeomorphic to an open ball, which is convex and hence contractible. Similarly $U\cap V=V-h(\mathbf{0})$ is homeomorphic to $\operatorname{Int}B^n-\mathbf{0}$, which deformation retracts onto $S^{n-1}$; and $S^{n-1}$ is simply connected for $n-1\ge2$ by Theorem 59.3 (printed p. 369). So $\pi_1(U\cap V)=0$.
+By step 2 of the proof of Theorem 72.1, $\pi$ restricts to a homeomorphism of $\operatorname{Int}B^n$ onto $V=X-A$, so $V$ is homeomorphic to an open ball, which is convex and hence contractible. Similarly $U\cap V=V-h(\mathbf{0})$ is homeomorphic to $\operatorname{Int}B^n-\mathbf{0}$, which deformation retracts onto $S^{n-1}$; and $S^{n-1}$ is simply connected for $n-1\ge2$ by Theorem 59.3. So $\pi_1(U\cap V)=0$.
 
 :::
 
@@ -114,7 +114,7 @@ For $b$ a point of $U\cap V$, the inclusion $U\hookrightarrow X$ induces an epim
 
 ::: pf-proof
 
-$U$ and $V$ are open in $X$ and $X=U\cup V$; $U$ is path connected because $A$ is a deformation retract of it, $V$ is contractible, and $U\cap V$ is path connected, being homeomorphic to $\operatorname{Int}B^n-\mathbf{0}$ for $n\ge2$; in particular $U\cap V$ is not empty, and its points are the base points at which Corollary 70.4 can be applied. Corollary 70.4 (printed p. 432) applies at a point $b\in U\cap V$, $V$ being simply connected.
+$U$ and $V$ are open in $X$ and $X=U\cup V$; $U$ is path connected because $A$ is a deformation retract of it, $V$ is contractible, and $U\cap V$ is path connected, being homeomorphic to $\operatorname{Int}B^n-\mathbf{0}$ for $n\ge2$; in particular $U\cap V$ is not empty, and its points are the base points at which Corollary 70.4 can be applied. Corollary 70.4 applies at a point $b\in U\cap V$, $V$ being simply connected.
 
 :::
 
@@ -126,7 +126,7 @@ $\pi_1(A,a)\to\pi_1(X,a)$ is an isomorphism.
 
 ::: pf-proof
 
-By step 2 the group $\pi_1(U\cap V,b)$ is trivial, so by step 3 the kernel of $\pi_1(U,b)\to\pi_1(X,b)$ is trivial and that homomorphism is an isomorphism. Let $\delta$ be a path in $U$ from $b$ to $a$, which exists because $U$ is path connected and contains the point $a$ of $A$. The isomorphisms $\hat\delta:\pi_1(U,b)\to\pi_1(U,a)$ and $\hat\delta:\pi_1(X,b)\to\pi_1(X,a)$ induced by $\delta$ commute with the homomorphisms induced by inclusion, as in the diagram of Step 3 of the proof of Theorem 72.1 (printed p. 440), so $\pi_1(U,a)\to\pi_1(X,a)$ is an isomorphism, being the conjugate of an isomorphism by $\hat\delta$. By step 1 the inclusion $A\hookrightarrow U$ induces an isomorphism $\pi_1(A,a)\to\pi_1(U,a)$. The composite of the two is induced by inclusion $A\hookrightarrow X$, so it is an isomorphism.
+By step 2 the group $\pi_1(U\cap V,b)$ is trivial, so by step 3 the kernel of $\pi_1(U,b)\to\pi_1(X,b)$ is trivial and that homomorphism is an isomorphism. Let $\delta$ be a path in $U$ from $b$ to $a$, which exists because $U$ is path connected and contains the point $a$ of $A$. The isomorphisms $\hat\delta:\pi_1(U,b)\to\pi_1(U,a)$ and $\hat\delta:\pi_1(X,b)\to\pi_1(X,a)$ induced by $\delta$ commute with the homomorphisms induced by inclusion, as in the diagram of Step 3 of the proof of Theorem 72.1, so $\pi_1(U,a)\to\pi_1(X,a)$ is an isomorphism, being the conjugate of an isomorphism by $\hat\delta$. By step 1 the inclusion $A\hookrightarrow U$ induces an isomorphism $\pi_1(A,a)\to\pi_1(U,a)$. The composite of the two is induced by inclusion $A\hookrightarrow X$, so it is an isomorphism.
 
 :::
 

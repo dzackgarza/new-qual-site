@@ -196,6 +196,178 @@ audit:
     section is connected, hence irreducible and nonsingular, when dim X >= 2.
     The event that carried the wrong page is left as written, and the
     correction is the record of this date in COMPLAINTS.md.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The attainment at d = 4 in characteristic p, recorded as open in the
+    third and fourth passes of 2026-11-16 and in COMPLAINTS.md, is now
+    proved, and the card claims attainment at every d > 0 over an
+    algebraically closed field of any characteristic. The two steps that
+    excluded it, nonsingular-members and conclusion, are rewritten, and
+    the degree 4 paragraph no longer routes through Corollary III.10.9,
+    printed p. 274, whose Bertini hypothesis is characteristic 0: it
+    cites condition (c) of Exercise V.4.8, whose sufficiency
+    P-AGH548IRREDCLASSES proves in every characteristic in 7d548c5699 by
+    Dolgachev's Theorem 8.2.19, printed p. 265, Harbourne's Corollary
+    II.3, Theorem III.1(a) and Lemma II.6(b), preprint pp. 3, 4 and 7,
+    and the incidence count of Vakil's Bertini theorem, printed p. 375.
+    Checked in this pass by recomputation from Proposition 4.8 of the
+    book, printed pp. 401-402: H + F_56 is 4l - (e_1+e_2+e_3+e_4) -
+    2(e_5+e_6), so a = 4, sum_i b_i = 8, d = 3a - sum_i b_i = 4,
+    D^2 = 16 - 12 = 4 and p_a = 1; D.E_i = b_i and D.G_i = 2a -
+    (sum_k b_k - b_i) = b_i are positive, and D.F_ij = 4 - b_i - b_j is
+    2, 1 or 0, vanishing at F_56 alone, so D meets all 27 lines
+    nonnegatively and has D^2 > 0, which is condition (c). Also checked:
+    that condition (c) is what P-AGH548IRREDCLASSES assumes, D.L >= 0
+    for every line with D^2 > 0, and that D.H = 4 >= 2 is the input its
+    Hodge-index step needs. The two events of 2026-11-16 saying that no
+    characteristic p attainment is claimed are superseded here and left
+    as written, as the corrections of that date are. Not read in this
+    pass: Dolgachev's Theorem 8.2.19 and Harbourne's Lemma II.6 beyond
+    the statements and pages P-AGH548IRREDCLASSES records, and no source
+    outside those named on the two cards. No statement of the exercise
+    changed, and no part of it passes from open to proved other than the
+    d = 4 case.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark of the preceding event of this date, on the rendered card:
+    its closing sentence still read that the sufficiency of condition (c) of
+    Exercise V.4.8 "is proved on P-AGH548IRREDCLASSES and needs
+    characteristic 0 there", which the same repair falsified, that card
+    being characteristic-free since 7d548c5699. The sentence now ends "in
+    every characteristic". Nothing else on the card changed: the problem
+    statement, both step statements, every proof and the rest of the remark
+    are as they were, and this event changes no mathematics. Checked after
+    the edit: ./.venv/bin/python -m qualc.authoring check
+    P-AGH547GENUSBOUND reports "schema and Markdown parsing OK (single
+    card)", tmp/lam.sh numbers the steps 1 to 9 with QED labels present,
+    tools/check_macros.py reports OK, and a search of the rendered text for
+    "characteristic" finds four sentences, each saying either that a cited
+    theorem carries no characteristic hypothesis or that the attainment
+    holds in every characteristic; no rendered sentence restricts anything
+    to characteristic 0.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Independent verification of the intersection numbers the preceding
+    events of this date quote, run as a script rather than by hand, since
+    they are what places the d = 4 class in condition (c) of Exercise V.4.8.
+    With a class a*l - sum_i b_i*e_i stored as (a, -b_1, ..., -b_6) and the
+    form u.v = u_0 v_0 - sum_{i>=1} u_i v_i (l^2 = 1, e_i^2 = -1, l.e_i =
+    0), the 27 lines were built as E_i = e_i, F_ij = l - e_i - e_j and
+    G_j = 2l - sum_{i != j} e_i, and the script reported: every one of the
+    27 has self-intersection -1; D = (4,-1,-1,-1,-1,-2,-2) = H + F_56
+    pairs nonnegatively with all of them, with a single zero at F_56 and
+    values 1, 1, 1, 1, 2, 2 on the E_i, 1, 1, 1, 1, 2, 2 on the G_j and
+    0, 1, 2 on the F_ij; D^2 = 4; deg D = 3*4 - 8 = 4; p_a = 1. This
+    agrees with the hand computation recorded above, including the identity
+    D.G_j = b_j, which follows from 2a = sum_i b_i = 8. No text of the card
+    changed, and no claim is weakened or added.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Two repairs to the siting of the attainment for degrees other than 4, and
+    no change of statement. Step nonsingular-members said that the proof of
+    Corollary 4.13(b) rests on Bertini's theorem II.8.18 alone; it rests on
+    II.8.18 and III.7.9.1, as the book's own proof of the corollary says, and
+    the step now names both, with what each supplies: II.8.18 the regularity of
+    the section, by the count of the bad hyperplanes B_x at each closed point,
+    and III.7.9.1 the connectedness, which is Corollary III.7.9 with its
+    vanishing III.7.8. Page correction: the event of 2026-11-16 above places
+    III.7.9.1 at printed p. 273; it stands on printed p. 245, and Corollary
+    III.7.9 on printed p. 244, the retained PDF carrying Corollary 7.9's proof
+    on PDF p. 260, whose printed folio is 245, so that printed page = PDF page
+    - 15 holds there as it does at the folios 179 and 270 checked for the other
+    citations. Read for this pass: Hartshorne, Algebraic Geometry (1977),
+    Corollary V.4.13 with its proof, printed p. 406, Theorem II.8.18 with its
+    proof, printed pp. 179-180, and Corollary III.7.9 with Remark 7.9.1,
+    printed pp. 244-245, in tmp/sources/hartshorne-1977-algebraic-geometry.md,
+    with the folio of PDF p. 260 checked in the retained PDF. Not checked: the
+    rendered page, and no printing other than the text version beside the
+    retained PDF. The degree 4 case is unchanged and still rests on condition
+    (c) of Exercise V.4.8 as P-AGH548IRREDCLASSES now proves it.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The degree 4 attainment is replaced by a shorter proof that does not leave
+    this card: H + E_6 = pi^*(3L) - E_1 - ... - E_5 is the pullback of the
+    class of Corollary 4.7 of the book with r = 5, printed p. 405, which that
+    corollary proves very ample on the blowup of the plane at five points;
+    H + E_6 meets E_6 in 0, so its sections are the pullbacks of the sections
+    of that class, and a general member of |H + E_6| is isomorphic to a general
+    member of the very ample system, hence irreducible and nonsingular by
+    II.8.18, printed p. 179, with III.7.9.1, printed p. 245. The numbers were
+    checked from Proposition 4.8 of the book: (H+E_6)^2 = 9-5 = 4,
+    (H+E_6).K = -9+5 = -4, so p_a = 1, which is the bound at d = 4. The class
+    H + F_56 of the earlier numbering, its nonnegativity on the 27 lines and
+    the route through condition (c) of Exercise V.4.8 are kept as an
+    alternative attaining the same bound, so nothing proved is withdrawn. Read
+    for this pass: Hartshorne, Corollary V.4.7 with its proof, printed pp.
+    405-406, Proposition 4.8, printed pp. 401-402, and II.8.18 with III.7.9.1
+    at the pages recorded in the event above. Not checked: the rendered page,
+    and no printing other than the text version beside the retained PDF.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Second published proof of the bound, located in a retained set the earlier
+    passes did not name. Read Yang Pi-Yeh, Hartshorne Solutions (9 June 2019),
+    Solution 5.4.7, printed pp. 109-110, rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page (the folios 109 and 110 stand at the foot of those pages). Checked
+    against the book: the exercise of Hartshorne, V.4.7, printed p. 407, read
+    again on the PDF page 422, which carries folio 407, asks for the two bounds
+    by the residue of d modulo 3 and for achievement by an irreducible
+    nonsingular curve for every d > 0, and the source proves the first of these
+    in both residues. Recomputed: the identity substituting a = (d + sum b_i)/3
+    into p_a = (1/2)(a-1)(a-2) - (1/2)sum b_i^2 + (1/2)sum b_i; the step
+    -(1/2)sum b_i^2 <= -(1/12)(sum b_i)^2 from 6 sum b_i^2 >= (sum b_i)^2; the
+    two completed-square bounds; the integrality of (1/6)(d-1)(d-2) in the
+    residues 1 and 2 modulo 3; and, in each of the three classes the source
+    lists, the degree 3a - sum b_i and the genus, which equal d and the bound
+    of that residue. At d = 4 the d = 3k + 1 class with k = 1 is
+    4l - (e_1+...+e_4) - 2(e_5+e_6) = H + F_56, the class of step
+    nonsingular-members. Not checked: Yang's Solutions outside printed pp.
+    109-111, and the printed book itself, only the retained copy.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now carries Yang Pi-Yeh's Solution 5.4.7 at printed pp. 109-110
+    as a second proof of the bound, with its two completed-square inequalities,
+    its three attaining classes and its one gap: the source says of those
+    classes only that they achieve the bound, so the exercise's request for an
+    irreducible nonsingular member is not proved there, and the remark says the
+    card's own step is what supplies it. The statement, the steps and the
+    attainment argument are unchanged, and no part of the proof was moved from
+    proved to open or the reverse.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Page correction to the degree 4 proof, and no change of mathematics.
+    Corollary 4.7 of Hartshorne, V.4, is stated on printed p. 400, with its
+    proof running from there to printed p. 401; the source-corrected event of
+    2026-11-19 above, in both of its page references, and the rendered degree
+    4 paragraph cited printed p. 405, which is where the proof of Theorem 4.11
+    and Corollary 4.13 stand, not Corollary 4.7. The event itself is left as
+    written, per QUAL-11; this one carries the correction. Checked in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, whose
+    markers for PDF pages 415 and 416 give printed pages 400 and 401 by the
+    offset printed = PDF - 15 that the folios 179, 245 and 270 also satisfy
+    there: the statement of Corollary 4.7, with Theorem 4.6 and its proof,
+    lies after the marker of PDF p. 415 and before that of PDF p. 416, and
+    the proof of the corollary crosses that second marker. The mathematics
+    is unchanged: Corollary 4.7 proves that for each r = 0,...,6 the linear
+    system d' = |pi^*3L - E_1 - ... - E_r| embeds the blowup of P^2 at r
+    points in P^{9-r}, and r = 5 is the case used. Not checked: any printing
+    of the book, only the text version retained in tmp/sources.
 ---
 
 ::: {.problem}
@@ -230,11 +402,10 @@ p_a(D)=\tfrac12(D^2-d)+1 .
 $$
 
 ::: pf-proof
-The line bundle computations are items (c), (d), (e), (f) and (g) of Proposition 4.8 of the book,
-printed pp. 401--402: the degree is $D\cdot h=d$, the self-intersection is $a^2-\sum_ib_i^2$ because
+The line bundle computations are items (c), (d), (e), (f) and (g) of Proposition 4.8 of the book: the degree is $D\cdot h=d$, the self-intersection is $a^2-\sum_ib_i^2$ because
 $\ell^2=1$ and $e_i^2=-1$ with all other pairings zero, $D\cdot K_X=-D\cdot h=-d$, and (g) is
 $2p_a(D)-2=D\cdot(D+K_X)$. Chapter V §4 Exercise 7 of the National Taiwan University *Algebraic
-Geometry II* homework (2020 Spring), by Yi-Tsung Wang, printed pp. 16--17, writes $D=D_1-D_2$ with
+Geometry II* homework (2020 Spring), by Yi-Tsung Wang writes $D=D_1-D_2$ with
 $D_1,D_2$ effective and reads $\deg D=3a-\sum_ib_i$ and $D^2=a^2-\sum_ib_i^2$ off (4.8)(b) and (e),
 which the book states for effective divisors; it then writes "$2p_a(D)=D^2+D\cdot K=a^2-\sum
 b_i^2-\deg D$", whose left side omits the $-2$ of the adjunction formula.
@@ -363,13 +534,12 @@ $d\equiv1\pmod3$. The source excludes $d=4$ from that family and writes "For $d=
 :::
 
 ::: {.pf-step #nonsingular-members}
-For every $d\ne4$ the class of step [](#extremal-classes){.pf-ref} or [](#small-degrees){.pf-ref} of
-degree $d$ contains an irreducible nonsingular curve over every algebraically closed field $k$, and at
-$d=4$ the same holds when $k$ has characteristic $0$.
+For every $d$ the class of step [](#extremal-classes){.pf-ref} or [](#small-degrees){.pf-ref} of
+degree $d$ contains an irreducible nonsingular curve over every algebraically closed field $k$.
 
 ::: pf-proof
 For the classes of the first three families of step [](#extremal-classes){.pf-ref} and for the class of
-degree $5$, Corollary 4.13 of the book, printed p. 406, applies. Its part (a) says that $D$ is ample
+degree $5$, Corollary 4.13 of the book, applies. Its part (a) says that $D$ is ample
 exactly when $b_i>0$ for each $i$, $a>b_i+b_j$ for each $i,j$, and $2a>\sum_{i\ne j}b_i$ for each $j$;
 for those classes $a=d$ and $\sum_ib_i=2d$, so the last condition reads $2d>2d-b_j$, the middle one
 $d>b_i+b_j$, which for the largest pair is $d>\frac{2(d+2)}{3}$, that is $d>4$, in the second family,
@@ -377,33 +547,39 @@ $d>\frac{2(d+1)}{3}$, that is $d>2$, in the third, and $d>\frac{2d}{3}$ in the f
 because $d>0$ in the first family, $d>1$ in the second and $d>2$ in the third. The class of degree $5$
 has $a=4$, $b_1=2$ and the remaining $b_i$ equal to $1$, so $a=4>b_i+b_j$ and
 $2a=8>6=\sum_ib_i-1\ge\sum_{i\ne j}b_i$. By Corollary 4.13(b) each of these classes contains an
-irreducible nonsingular curve; its proof rests on Bertini's theorem for hyperplane sections, II.8.18 of
-the book, printed p. 179, whose statement carries no hypothesis on the characteristic, so these
+irreducible nonsingular curve; the corollary's proof uses Bertini's theorem for hyperplane sections, II.8.18 of the book, together with III.7.9.1, and neither carries a hypothesis on
+the characteristic: II.8.18 is stated for a nonsingular closed subvariety of $\PP^n_k$ over an
+algebraically closed field $k$ and proves regularity by counting the dimension of the bad hyperplanes
+$B_x$, and the connectedness III.7.9.1 adds is Corollary III.7.9, for an integral
+normal projective variety of dimension at least $2$ over an algebraically closed field, proved from
+the vanishing of III.7.8 and the exact sequence of $qD$ with $q$ large. So these
 degrees are attained over every algebraically closed field $k$.
 
 The classes of degrees $1$ and $2$ are the line and the conic of step
-[](#small-degrees){.pf-ref}. The class of degree $4$ is $H+F_{56}$, and
+[](#small-degrees){.pf-ref}. The class of degree $4$ is $H+E_6=\pi^*(3L)-E_1-\cdots-E_5$, the pullback of
+the class $\mathfrak d'$ of Corollary 4.7 of the book, with $r=5$, which that corollary
+proves very ample and which embeds the blowup of $\PP^2$ at five points in $\PP^4$; since
+$H+E_6$ meets $E_6$ in $0$, its sections are the pullbacks of the sections of $\mathfrak d'$, so a
+general member of $\linearsystem{H+E_6}$ is the pullback of a general member of $\linearsystem{\mathfrak d'}$ and is isomorphic to
+it. And
 $$
-(H+F_{56})\cdot E_i=b_i>0,
-\qquad
-(H+F_{56})\cdot F_{ij}=4-b_i-b_j,
-\qquad
-(H+F_{56})\cdot G_i=b_i>0
+(H+E_6)^2=9-5=4,\qquad (H+E_6)\cdot K_X=-9+5=-4,\qquad p_a(H+E_6)=\tfrac12(4-4)+1=1,
 $$
-for the $27$ lines, so it meets every line nonnegatively, with $0$ at $F_{56}$ alone, and its
-self-intersection is $4>0$: it satisfies condition (c) of [[P-AGH548IRREDCLASSES|Exercise V.4.8]], and
-the sufficiency of that condition is proved on that card from Dolgachev's Theorem 8.2.19, Harbourne's
-Corollary II.3, Theorem III.1(a) and Lemma II.6(b), with Bertini's theorem in the form of Corollary
-III.10.9 of the book, printed p. 274, whose hypothesis is that $k$ have characteristic $0$. Under that
-hypothesis $H+F_{56}$ contains an irreducible nonsingular member.
+which is the bound at $d=4$. Bertini's theorem II.8.18 of the book, and the
+connectedness of III.7.9.1 give that a general member of $\linearsystem{\mathfrak d'}$, hence of
+$\linearsystem{H+E_6}$, is an irreducible nonsingular curve, in every characteristic.
+The class $H+F_{56}$ of the
+earlier numbering also has degree $4$, square $4$ and $p_a=1$, and meets every one of the $27$ lines
+nonnegatively; it attains the same bound, and the sufficiency of condition (c) of
+[[P-AGH548IRREDCLASSES|Exercise V.4.8]] gives an irreducible nonsingular member in it too.
 :::
 
 :::
 
 ::: {.pf-step #conclusion}
 The bound of the exercise holds for every divisor of degree $d$, and its maximum is achieved by an
-irreducible nonsingular curve for every $d\ne4$ over an algebraically closed field $k$ of any
-characteristic, and for $d=4$ when $k$ has characteristic $0$.
+irreducible nonsingular curve for every $d$, over an algebraically closed field $k$ of any
+characteristic.
 
 ::: pf-proof
 The bound is step [](#genus-bound){.pf-ref} and the attainment is step
@@ -424,14 +600,37 @@ Steps [](#intersection-data){.pf-ref}, [](#reduction-to-self-intersection){.pf-r
 
 ::: {.remark title="Published solution"}
 National Taiwan University, *Algebraic Geometry II* (2020 Spring, Chin-Lung Wang), Chapter V §4,
-Exercise 7, by Yi-Tsung Wang, printed pp. 16--17: the reduction of $2p_a(D)-2$ to
+Exercise 7, by Yi-Tsung Wang: the reduction of $2p_a(D)-2$ to
 $a^2-\sum b_i^2-d$, the bound $a^2-\sum b_i^2\le d^2/3$ by Cauchy--Schwarz and one square, its
 sharpening in the residues $1,2$ modulo $3$ by integrality, and the classes attaining it. The source
 writes $2p_a(D)=D^2+D\cdot K$ for $2p_a(D)-2=D\cdot(D+K)$; it interchanges the two multiplicities in
 its $d\equiv2$ family, so that family as printed has degree $d+2$; and it leaves $d=4$ open, stating
 its conclusion for every $d>0$ "possibly except $d=4$".
 
-For the curves in those classes: Corollary 4.13(a),(b) of Hartshorne, printed p. 406, for the ample
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.7, proves the
+same bound in a second arrangement of the same two inputs, for arbitrary real $b_i$. With
+$a=\frac{1}{3}(d+\sum b_i)$ it writes
+$$
+p_a(D)=\frac{1}{2}(a-1)(a-2)-\frac{1}{2}\sum b_i^2+\frac{1}{2}\sum b_i
+=\frac{1}{18}(d-3+\sum b_i)(d-6+\sum b_i)-\frac{1}{2}\sum b_i^2+\frac{1}{2}\sum b_i,
+$$
+then $-\frac{1}{2}\sum b_i^2\le-\frac{1}{12}\bigl(\sum b_i\bigr)^2$, which is Cauchy--Schwarz
+$6\sum b_i^2\ge\bigl(\sum b_i\bigr)^2$, and
+$$
+p_a(D)\le\frac{1}{6}d^2-\frac{1}{2}d+1-\Bigl(\frac{1}{6}\sum b_i-\frac{1}{3}d\Bigr)^2
+\le\frac{1}{6}(d-1)(d-2)+\frac{2}{3},
+$$
+sharpened to $\frac{1}{6}(d-1)(d-2)$ in the residues $1,2$ modulo $3$, where $\frac{1}{6}(d-1)(d-2)$
+is an integer and so is $p_a(D)$. Its attaining classes are $d\ell-\frac{d}{3}(e_1+\cdots+e_6)$ for
+$d\equiv0$, $d\ell-k(e_1+\cdots+e_4)-(k+1)(e_5+e_6)$ for $d=3k+1$ and
+$d\ell-k(e_1+e_2)-(k+1)(e_3+\cdots+e_6)$ for $d=3k+2$; at $d=4$ the second is $H+F_{56}$, the class
+of step [](#nonsingular-members){.pf-ref}, and its $d\equiv2$ class has degree $d$ where the NTU
+solution's printed one has degree $d+2$, so the correction recorded above is confirmed by a second
+source. Of those classes the source says only that they "achieve the bound", computing $p_a$; it says
+nothing of an irreducible nonsingular member of one, so the exercise's second request is not proved
+there and remains the card's own step.
+
+For the curves in those classes: Corollary 4.13(a),(b) of Hartshorne for the ample
 ones, and, at $d=4$, condition (c) of Exercise V.4.8, whose sufficiency is proved on
-[[P-AGH548IRREDCLASSES]] and needs characteristic $0$ there.
+[[P-AGH548IRREDCLASSES]] in every characteristic.
 :::

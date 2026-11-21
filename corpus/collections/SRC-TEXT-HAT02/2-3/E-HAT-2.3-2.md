@@ -96,6 +96,27 @@ audit:
     reduced homology vanishes in negative degrees. Homotopy invariance, the $A_i\cong B_i$ suspension
     step, exactness via Proposition 2.1.2 and the $\bigvee_jS^j$ failure of the wedge axiom are all
     printed there, so the exercise's statement and proof are both published.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Re-read against Casassas, *Acyclic Classes of Nonrepresentable Homologies*, §2.1, printed
+    pp. 7--9, and Hatcher, Exercise 2 of §2.3, printed p. 165, with the axioms of printed p. 160.
+    The transcription is faithful: Casassas's $JW_k$ is Hatcher's candidate with the index set
+    $i\ge0$, his homotopy-invariance and suspension paragraphs and his $\bigvee_jS^j$
+    counterexample are all on printed p. 7, and Proposition 2.1.2(1), stated on printed p. 8 and
+    proved on printed p. 9, is exactly the exactness of the three sequences including
+    $\prod/\bigoplus$, so the exactness step and the $Q(S^j)=0$ step are his. Repaired: the
+    exercise's assertion that $\widetilde h_n(X)=0$ for finite-dimensional $X$ was verified only
+    for a point and for $S^0$, and the step is now carried out for every finite-dimensional CW
+    complex, using $\widetilde H_i(X)=0$ outside $0\le i\le\dim X$ (Theorem 2.35, printed p. 139)
+    and the finite-support isomorphism that FamilyQuotient.lean certifies. The step's old heading,
+    'the dimension axiom', named an axiom Hatcher does not include among his three (printed
+    p. 161); it is now named for what it proves, and the difference is stated on the card:
+    ordinary homology has $\widetilde H_0(S^0)=\ZZ$ where $Q(S^0)=0$. Also added is the printed
+    p. 161 remark that negative subscripts are permitted, which is what makes Casassas's product
+    over $i\ge0$ equal Hatcher's over $i\in\ZZ$. Not claimed: the identification of the $f_i$ with
+    reduced homology groups in that certificate, and no certificate for the rest.
 ---
 
 ::: {.problem}
@@ -105,14 +126,14 @@ Show that the axioms for a homology theory are satisfied except that the wedge a
 :::
 
 ::: {.solution}
-The complete published argument is **Pau Casassas Massana, *Acyclic Classes of Nonrepresentable Homologies*, §2.1, printed pp. 7--9** (`tmp/sources/casassas-acyclic-classes-2014.pdf`, Universitat de Barcelona, 30 June 2014, director Carles Casacuberta, [repository record](https://hdl.handle.net/2445/65313)). Casassas defines exactly Hatcher's candidate, which he writes $JW_k(X)$, proves exactness using his Proposition 2.1.2, and gives the same counterexample of an infinite wedge of spheres. This is the published proof, not an independently assembled product/difference construction. The finite-support dimension calculation is made explicit below.
+The complete published argument is **Pau Casassas Massana, *Acyclic Classes of Nonrepresentable Homologies*, §2.1** (`tmp/sources/casassas-acyclic-classes-2014.pdf`, Universitat de Barcelona, 30 June 2014, director Carles Casacuberta, [repository record](https://hdl.handle.net/2445/65313)). Casassas defines exactly Hatcher's candidate, which he writes $JW_k(X)$, proves exactness using his Proposition 2.1.2, and gives the same counterexample of an infinite wedge of spheres. This is the published proof, not an independently assembled product/difference construction. The finite-support dimension calculation is made explicit below.
 
 Put
 $$
 Q(X)=JW_k(X)=\prod_{i\in\ZZ}\widetilde H_i(X)\big/\bigoplus_{i\in\ZZ}\widetilde H_i(X),
 \qquad \widetilde h_n(X)=Q(X).
 $$
-Casassas indexes his product over $i\ge0$ and Hatcher over $i\in\ZZ$; the two agree because reduced homology vanishes in negative degrees, $\widetilde H_i(X)=0$ for $i<0$, so the extra factors of Hatcher's product are trivial. The factor in degree zero is the same in both, both authors using reduced groups.
+Casassas indexes his product over $i\ge0$ and Hatcher over $i\in\ZZ$; the two agree because reduced homology vanishes in negative degrees, $\widetilde H_i(X)=0$ for $i<0$, so the extra factors of Hatcher's product are trivial. (Hatcher allows negative subscripts but ordinary singular homology is zero there by definition, §2.3.) The factor in degree zero is the same in both, both authors using reduced groups.
 
 ::: pf
 
@@ -122,7 +143,7 @@ Homotopy invariance holds.
 
 ::: pf-proof
 
-If $f\simeq g$ as maps on a space or on a pair, then $\widetilde H_i(f)=\widetilde H_i(g)$ for each index $i$ by ordinary homotopy invariance. The induced maps on the product and on its direct-sum subgroup are therefore equal, and their induced maps on the quotient are equal. Thus $f_*=g_*$ on $Q(X)$. This is Casassas's homotopy-invariance step on p. 7, not merely preservation of homotopy equivalences.
+If $f\simeq g$ as maps on a space or on a pair, then $\widetilde H_i(f)=\widetilde H_i(g)$ for each index $i$ by ordinary homotopy invariance. The induced maps on the product and on its direct-sum subgroup are therefore equal, and their induced maps on the quotient are equal. Thus $f_*=g_*$ on $Q(X)$. This is Casassas's homotopy-invariance step in §2.1, not merely preservation of homotopy equivalences.
 
 :::
 
@@ -141,7 +162,7 @@ Q(\Sigma X)
 \cong\frac{\prod_j\widetilde H_j(X)}{\bigoplus_j\widetilde H_j(X)}
 =Q(X).
 $$
-This is the published $A_i\cong B_i$ step on p. 7. Consequently $\widetilde h_{n+1}(\Sigma X)\cong\widetilde h_n(X)$ for every $n$, independently of $n$ by construction.
+This is the published $A_i\cong B_i$ step in §2.1. Consequently $\widetilde h_{n+1}(\Sigma X)\cong\widetilde h_n(X)$ for every $n$, independently of $n$ by construction.
 
 :::
 
@@ -153,7 +174,7 @@ Exactness holds, with all connecting maps induced coordinatewise from ordinary h
 
 ::: pf-proof
 
-For a cofibration sequence $A\to X\to X/A$, ordinary reduced homology gives a long exact sequence, which is axiom (2) of p. 160. Reindexing turns the connecting map into a degree-preserving map between the products defining $Q$. As in Casassas p. 7, consider the family of sequences
+For a cofibration sequence $A\to X\to X/A$, ordinary reduced homology gives a long exact sequence, which is axiom (2) of §2.3. Reindexing turns the connecting map into a degree-preserving map between the products defining $Q$. As in Casassas §2.1, consider the family of sequences
 $$
 B_*^j=\cdots\longrightarrow \widetilde H_{n+1+j}(X,A)
 \longrightarrow\widetilde H_{n+j}(A)
@@ -166,7 +187,7 @@ $$
 \longrightarrow\prod_iB_i\big/\bigoplus_iB_i
 \longrightarrow\prod_iC_i\big/\bigoplus_iC_i\longrightarrow0.
 $$
-This is **Casassas's Proposition 2.1.2(1), printed pp. 8--9**. Applying it to the displayed family of $B_*^j$ yields exactness for $Q$.
+This is **Casassas's Proposition 2.1.2(1)**. Applying it to the displayed family of $B_*^j$ yields exactness for $Q$.
 
 :::
 
@@ -174,11 +195,11 @@ This is **Casassas's Proposition 2.1.2(1), printed pp. 8--9**. Applying it to th
 
 ::: pf-step
 
-The dimension axiom holds.
+The candidate vanishes on finite-dimensional complexes, in particular at a point.
 
 ::: pf-proof
 
-A point has every reduced homology group zero, so $Q(\mathrm{pt})=0$ and $\widetilde h_n(\mathrm{pt})=0$ for all $n$. The reduced homology of $S^0$ is zero in every degree except $0$, where it is $\ZZ$. There the family has finite support, so the direct sum already fills the product and the quotient $Q(S^0)$ is trivial; this finite-support implication, that the canonical map $\bigoplus_i f_i\to\prod_i f_i$ is surjective when all but finitely many $f_i$ vanish, is what <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/FamilyQuotient.lean> certifies, and it is exactly what the vanishing of the quotient needs. That file does not assert that the sum and the product are isomorphic for a family with infinite support, and there the quotient need not vanish — which is the failure exhibited in the next step.
+If $X$ is a finite-dimensional CW complex, then $\widetilde H_i(X)=0$ for $i<0$ and for $i>\dim X$ (this is Theorem 2.35, whose cellular chain groups vanish above the dimension), so all but finitely many of the groups $\widetilde H_i(X)$ are zero. For such a family the direct sum already fills the product, so the quotient $Q(X)$ is trivial. This finite-support implication, that the canonical map $\bigoplus_i f_i\to\prod_i f_i$ is an isomorphism when all but finitely many $f_i$ vanish, is what <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/FamilyQuotient.lean> certifies, and it is exactly what the vanishing of the quotient needs; that file does not assert an isomorphism between the sum and the product for a family with infinite support, and there the quotient need not vanish, which is the failure exhibited in the next step. The point is the case of dimension $0$ with every $\widetilde H_i$ zero, and $S^0$ is the case in which only $\widetilde H_0(S^0)=\ZZ$ is nonzero. This is the vanishing the exercise asserts for finite-dimensional $X$; it is not the Eilenberg--Steenrod dimension axiom, which Hatcher omits from his axioms (§2.3) and which ordinary homology would supply with $\widetilde H_0(S^0)=\ZZ\ne Q(S^0)$.
 
 :::
 

@@ -5,7 +5,9 @@ kind: problem
 title: 'Possible contour integrals of $1/(1+z^2)$'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Contour Integration
+  - Winding Number
 relations: []
 review: draft
 audit:

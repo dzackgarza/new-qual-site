@@ -6,7 +6,9 @@ title: Consequence of the identity (ab)^2 = a^2 b^2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Abelian Groups
+  - Groups
 relations: []
 review: draft
 audit:

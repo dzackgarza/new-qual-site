@@ -35,6 +35,11 @@ audit:
     a section of $M_R$; Lemma 3.27(a) provides a unique class with prescribed local classes on a
     compact set, which gives surjectivity and injectivity. The proof is read at the level of that
     lemma, which is where the content sits.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured the prose solution into Lamport steps and checked the statement against Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 15, printed p. 259. The collection's provenance is the book, and no retained solution set covers the exercise; the argument is the card's own, using Hatcher's Lemma 3.27(a) for the compact set $A$ as the exercise intends. Checked: the local maps and their additivity, the section condition, and the two clauses of the lemma giving surjectivity and injectivity.
 ---
 
 ::: {.problem}
@@ -42,36 +47,49 @@ For an $n$-manifold $M$ and a compact subspace $A \subset M$, show that $H_n(M, 
 :::
 
 ::: {.solution}
-Write
-$$
-H_n(M\mid A;R)=H_n(M,M-A;R).
-$$
-For each $x\in A$, inclusion of pairs gives a homomorphism
-$$
-H_n(M\mid A;R)\longrightarrow H_n(M\mid x;R).
-$$
-Thus every class $\alpha\in H_n(M\mid A;R)$ determines a function
-$$
-x\longmapsto \alpha_x,
-$$
-where $\alpha_x$ is its image in the local homology group at $x$.
+No retained solution set covers this exercise; the argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 15. The two maps between $H_n(M,M-A;R)$ and the sections over $A$ are the local-homology map and Hatcher's Lemma 3.27(a) applied to a compact $A$.
 
-By the local constancy statement built into the orientation covering $M_R\to M$, this function is a section of $M_R$ over $A$. Hence there is a homomorphism
-$$
-\Phi:H_n(M,M-A;R)\longrightarrow\Gamma_R(A),
-\qquad
-\Phi(\alpha)(x)=\alpha_x.
-$$
+::: pf
 
-Hatcher's Lemma 3.27(a) says precisely that if $A$ is compact and $x\mapsto\alpha_x$ is a section of $M_R\to M$ over $A$, then there exists a unique class
-$$
-\alpha_A\in H_n(M\mid A;R)
-$$
-whose image in every $H_n(M\mid x;R)$ is $\alpha_x$. Therefore every section lies in the image of $\Phi$, and uniqueness says that $\Phi$ is injective.
+::: {.pf-step #local}
+For $\alpha\in H_n(M\mid A;R)=H_n(M,M-A;R)$ and $x\in A$, inclusion of pairs gives an element $\alpha_x\in H_n(M\mid x;R)$, and $x\mapsto\alpha_x$ is a function $A\to M_R$.
 
-Consequently
-$$
-\boxed{H_n(M,M-A;R)\cong\Gamma_R(A).}
-$$
-The isomorphism is the natural one sending a relative homology class to its family of local orientation classes along $A$.
+::: pf-proof
+The inclusion $(M,M-A)\subset(M,M-\{x\})$ induces a homomorphism $H_n(M\mid A;R)\to H_n(M\mid x;R)$; the local homology group $H_n(M\mid x;R)$ is the fibre of the orientation covering $M_R\to M$ over $x$, so the assignment sends $x$ to a point of the fibre over $x$.
+:::
+:::
+
+::: {.pf-step #section}
+$x\mapsto\alpha_x$ is a section of $M_R\to M$ over $A$, and $\Phi(\alpha)(x)\coloneqq\alpha_x$ defines a homomorphism $\Phi:H_n(M,M-A;R)\to\Gamma_R(A)$.
+
+::: pf-proof
+Composing the assignment with the projection $M_R\to M$ returns $x$, so the map lies over the identity, which is the definition of a section. Each $\alpha_x$ depends homomorphically on $\alpha$, since the maps $H_n(M\mid A;R)\to H_n(M\mid x;R)$ are homomorphisms, so $\Phi$ is additive; and local constancy of the local homology classes in a homology class is part of the structure of the orientation covering.
+:::
+:::
+
+::: {.pf-step #surjective}
+For compact $A$, every section of $M_R$ over $A$ is $\Phi(\alpha)$ for some $\alpha\in H_n(M,M-A;R)$.
+
+::: pf-proof
+Hatcher's Lemma 3.27(a) states that for a compact subspace $A$ of an $n$-manifold and a section $x\mapsto\alpha_x$ of $M_R$ over $A$, there is a class $\alpha_A\in H_n(M\mid A;R)$ whose image in $H_n(M\mid x;R)$ is $\alpha_x$ for every $x\in A$; that class maps to the given section under $\Phi$.
+:::
+:::
+
+::: {.pf-step #injective}
+$\Phi$ is injective.
+
+::: pf-proof
+The uniqueness clause of the same lemma says that a class in $H_n(M\mid A;R)$ is determined by its images in all the fibres $H_n(M\mid x;R)$, $x\in A$; so $\Phi(\alpha)=0$ forces $\alpha=0$.
+:::
+:::
+
+::: {.pf-step}
+$H_n(M,M-A;R)\cong\Gamma_R(A)$ for every compact $A\subset M$.
+
+::: pf-proof
+Steps [](#surjective){.pf-ref} and [](#injective){.pf-ref} make $\Phi$ a bijection, and step [](#section){.pf-ref} makes it a homomorphism.
+:::
+:::
+
+:::
 :::

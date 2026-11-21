@@ -6,7 +6,9 @@ title: $x^{42}\in N$ for a normal subgroup $N$ of index 42
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Cosets and Lagrange
+  - Quotient Groups
 relations: []
 review: draft
 audit:

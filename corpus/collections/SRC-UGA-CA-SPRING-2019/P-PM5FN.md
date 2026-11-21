@@ -12,6 +12,18 @@ classification:
   - Cauchy Integral Formula
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. (b) is Cauchy's estimate applied to f' on the circle of radius R about
+    an arbitrary z_0 with |z_0| <= R: that circle lies in |xi| <= 2R, which lies in the domain
+    |xi| < 3R, and ML gives |f'(z_0)| <= (1/2pi)(2pi R)(M_2R/R^2) = M_2R/R, so N_R <= M_2R/R after
+    taking the supremum. (a) follows from f(z) = f(0) + integral of f' along the radial segment, which
+    gives M_R <= |f(0)| + R N_R, and no bound by N_R alone can hold since constant functions have
+    N_R = 0 and arbitrarily large M_R. Checked that the radius 3R is what makes the circle of radius R
+    about any z_0 of modulus at most R stay inside the domain.
 ---
 
 ::: {.problem}

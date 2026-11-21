@@ -6,7 +6,9 @@ title: Rank-nullity from first principles
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Rank and Nullity
+  - Dimension
 relations: []
 review: draft
 audit:

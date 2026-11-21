@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP14-6
 kind: problem
 title: Fundamental groups, homology, and manifold status of three hexagon identification spaces
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Fundamental Group, Homology, Manifolds]}
 relations: []
 review: draft
 audit:

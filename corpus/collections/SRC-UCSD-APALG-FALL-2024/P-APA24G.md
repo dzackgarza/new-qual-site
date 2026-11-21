@@ -11,6 +11,42 @@ classification:
   - Inner Product Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 7 of the Qualifier Exam in Applied Algebra of September 10, 2024,
+    printed p. 7 of the paper retained at assets/attachments/FA24_202_Applied_Algebra_Qual.pdf, is the
+    statement the card answers; the same question is Problem 7 of the May 23, 2024 paper, printed p. 7
+    of assets/attachments/SP24_math_202_exam.pdf, and the head of the solution names both. Checked: the
+    statement against both papers' text layers at the page named (the two wordings agree); the averaging
+    projection onto the invariants and its identification with the orthogonal projection;
+    `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the QED. Not checked: no
+    retained solution set exists for either paper to compare the argument with, and no other card of
+    either collection in this pass.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained exam assets/attachments/FA24_202_Applied_Algebra_Qual.pdf,
+    problem 7: for a finite-dimensional unitary representation (V, phi) of a
+    finite group G, to state the definition of V^G and prove that the average of
+    the images of g over G is the orthogonal projection onto V^G. The card
+    agrees.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step is correct. Reindexing the sum along multiplication by h shows
+    that the image of P is pointwise fixed, so it lies in V^G; P fixes V^G
+    because the average of |G| copies of an invariant vector is that vector;
+    hence P is idempotent with image exactly V^G, since invariants are their own
+    images. Unitarity gives phi(g)^* = phi(g)^{-1}, and inversion permutes G, so
+    P is self-adjoint. A self-adjoint idempotent is the orthogonal projection
+    onto its image: the image is closed, and pairing an image vector with a
+    kernel vector gives zero after moving P across the inner product. Nothing
+    was changed.
 ---
 
 ::: {.problem}
@@ -23,6 +59,8 @@ is the orthogonal projection of $V$ onto $V^G$.
 :::
 
 ::: {.solution}
+
+The problem is Problem 7 of the Qualifier Exam in Applied Algebra of September 10, 2024, retained at `assets/attachments/FA24_202_Applied_Algebra_Qual.pdf`; the same question is Problem 7 of the May 23, 2024 paper. Neither paper prints solutions, so nothing below is transcribed: the argument is the card's own.
 
 The invariant subspace is
 $$

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB12W-06
 kind: problem
 title: Integral around a loop winding once clockwise around the origin
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Winding Number, Integrals]}
 relations: []
 review: draft
 audit:

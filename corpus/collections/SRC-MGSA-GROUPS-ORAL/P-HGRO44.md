@@ -33,6 +33,8 @@ $K$ is a normal subgroup, the Frobenius kernel of the action.
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the oral examination questions alone, so the argument is the card's own.
 Sharp double transitivity means that for any two ordered
 pairs of distinct points there is exactly one group element
 mapping the first pair to the second. In particular, only

@@ -20,5 +20,5 @@ Then the inclusions induce an isomorphism
 $$
 \pi_1(X)\ast\pi_1(Y)\xrightarrow{\ \sim\ }\pi_1(X \vee Y)
 $$
-[@Hat02].
+[@Hat02, Example 1.21].
 :::

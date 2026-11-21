@@ -32,6 +32,28 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 5.1.1, printed p. 100,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.1.1, printed p. 366,
+    which the card's earlier events record as read at a 110 dpi render of the
+    text-layerless page; this pass did not reopen it, and the comparison is
+    against the statement the card carries. Recomputed the Riemann-Roch expression chi(L^-1) = (1/2) C.(C-K) + chi(O_X) and
+    the alternating sum collapsing to C.D. Not
+    checked: Yang's Solutions outside printed pp. 100-107; Hartshorne's printed
+    p. 366 in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.1.1 at printed
+    p. 100 beside Egbert's entry. No step, statement or hypothesis of
+    the card changes.
 ---
 
 ::: {.problem}
@@ -286,5 +308,13 @@ which is exactly the desired formula.
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.1, PDF p. 254: two proofs, both for curves meeting transversally — the first from $0\to\OO_X(-C)\to\OO_X\to\OO_C\to0$ and $0\to\OO_C(-D)\to\OO_C\to\OO_{C\cap D}\to0$ with additivity of $\chi$, concluding $\chi(\OO_X)-\chi(\OO_X(-D))-\chi(\OO_X(-C))+\chi(\OO_X(-C-D))=h^0(C\cap D)$; the second from the four-term sequence $0\to\OO_X(-C-D)\to\OO_X(-C)\oplus\OO_X(-D)\to\OO_X\to\OO_{C\cap D}\to0$, exactness being checked at the stalks, where "$\OO_x$ is a UFD, since $c,d$ are relatively prime" states the regularity of the pair. Neither proof covers divisors that are not differences of transverse nonsingular curves. Step [](#s1){.pf-ref} supplies the additivity in an effective divisor and step [](#s2){.pf-ref} the reduction $C\sim P-Q$ with $P,Q$ nonsingular very ample members, so the formula holds for arbitrary divisors. Matches on the transverse case; the general case is supplied here.
+The exercise is Hartshorne, Exercise V.1.1, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the pages of §V.1 carry no text layer and were read as a 110 dpi render, folio 366 in the footer); the statement above is that exercise's text.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.1: two proofs, both for curves meeting transversally — the first from $0\to\OO_X(-C)\to\OO_X\to\OO_C\to0$ and $0\to\OO_C(-D)\to\OO_C\to\OO_{C\cap D}\to0$ with additivity of $\chi$, concluding $\chi(\OO_X)-\chi(\OO_X(-D))-\chi(\OO_X(-C))+\chi(\OO_X(-C-D))=h^0(C\cap D)$; the second from the four-term sequence $0\to\OO_X(-C-D)\to\OO_X(-C)\oplus\OO_X(-D)\to\OO_X\to\OO_{C\cap D}\to0$, exactness being checked at the stalks, where "$\OO_x$ is a UFD, since $c,d$ are relatively prime" states the regularity of the pair. Neither proof covers divisors that are not differences of transverse nonsingular curves. Step [](#s1){.pf-ref} supplies the additivity in an effective divisor and step [](#s2){.pf-ref} the reduction $C\sim P-Q$ with $P,Q$ nonsingular very ample members, so the formula holds for arbitrary divisors. Matches on the transverse case; the general case is supplied here.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.1.1, printed p. 100, is the same computation in one display: Riemann--Roch gives $\chi(\mathcal L^{-1})=\frac12C\cdot(C-K)+\chi(\OO_X)$, and the same with $D$ and with $C+D$, so the alternating sum is
+$$
+\tfrac12\bigl((C+D)\cdot(C+D-K)-C\cdot(C-K)-D\cdot(D-K)\bigr)=C\cdot D .
+$$
+It assumes nothing about transversality, which is what the card's own step supplies for the general case.
 :::

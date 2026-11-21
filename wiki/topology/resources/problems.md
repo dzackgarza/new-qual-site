@@ -1,8 +1,9 @@
 ---
+title: Problem sources
 order: 20
 ---
 
-# Problems (Topology)
+# Problem sources
 
 Problem bank: [LSU topology problem bank](https://www.math.lsu.edu/gradfiles/topobank.pdf)
 
@@ -22,7 +23,7 @@ Math 871 problem sets, Fall 2013: [[SRC-UNL-MATH871-FALL-2013-PROBLEM-SETS]].
 
 ## Qualifying-exam collections
 
-The UNL topology qualifying exams from 2002--2020 are source collections on the [Sources listing](sources.html).
+Each qualifying examination is an exam page with its problems in order.
 
 Compiled scans of earlier exams:
 

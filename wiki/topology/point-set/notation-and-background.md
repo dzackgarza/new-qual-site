@@ -1,17 +1,11 @@
 ---
+title: Notation and background
 order: 0
 ---
 
-# Preface
+# Notation and background
 
-References:
-
-- [@Mun00]
-- [@Hat02]
-
-Further reading:
-
-- [The line with two origins](https://blogs.scientificamerican.com/roots-of-unity/a-few-of-my-favorite-spaces-the-line-with-2-origins/)
+References: [@Mun00], [@Hat02].
 
 ## Notation
 
@@ -41,69 +35,23 @@ The identity element of a group $G$ is written $e_G$, $1_G$, or $0_G$.
 
 :::
 
-::: {.remark title="Direct sums and direct products"}
-For a ring $R$ and a family of $R$-modules $(M_j)_{j\in J}$, the direct product $\prod_{j\in J} M_j$ is the set of all tuples $(m_j)_{j\in J}$ with coordinatewise operations, and the direct sum $\bigoplus_{j\in J} M_j$ is the submodule of tuples with only finitely many nonzero entries.
-The inclusion $\bigoplus_{j\in J} M_j \injects \prod_{j\in J} M_j$ is an isomorphism when $J$ is finite, and it is not surjective when infinitely many $M_j$ are nonzero.
+[[D-XSBR2]]
 
-:::
+[[D-TZSG2]]
 
-::: {.remark title="Free groups and free products"}
-The free group on $n$ generators is the free product of $n$ copies of $\ZZ$, and it is nonabelian for $n\geq 2$.
-It is written multiplicatively: elements of
-$$
-\ZZ^{\ast n} = \generators{a_1, \ldots, a_n}
-$$
-are reduced finite words in the symbols $a_i^k$ for $k\in \ZZ$, such as
-$$
-x = a_1^2 a_2^4 a_1 a_2^{-2}.
-$$
-
-:::
-
-::: {.remark title="Free abelian groups"}
-The free abelian group $\ZZ^n$ of rank $n$ is the abelianization of $\ZZ^{\ast n}$, written additively.
-For a basis $a_1,\ldots,a_n$, each $x\in\ZZ^n$ is uniquely $x = \sum_{i=1}^n c_i a_i$ with $c_i \in \ZZ$; for example,
-$$
-2a_1 + 4a_2 + a_1 - a_2 = 3a_1 + 3a_2.
-$$
-
-:::
+[[D-JDDCP]]
 
 ::: {.remark title="Indexing conventions and list notation"}
-For path-connected $X$, $\pi_0(X)$ is a point and $H_0(X) \cong \ZZ$. Homology and cohomology written as a list start in degree $0$, and homotopy groups written as a list start in degree $1$:
+For path-connected $X$, $\pi_0(X)$ is a point and $H_0(X) \cong \ZZ$ [[FF-2Q7RD|the zeroth homology is free on the path components]]. Homology and cohomology written as a list start in degree $0$, and homotopy groups written as a list start in degree $1$:
 $$
 \begin{aligned}
 H_*(X) &= [H_0(X), H_1(X), H_2(X), \ldots], \\
 \pi_*(X) &= [\pi_1(X), \pi_2(X), \pi_3(X), \ldots].
 \end{aligned}
 $$
-For example, $H_*(\Sigma_g) = [\ZZ, \ZZ^{2g}, \ZZ]$ for the closed orientable surface of genus $g$.
 
 :::
 
 ## Background algebra
 
-::: {.fact}
-If $f\colon X\injects Y$ is an injective group homomorphism and $Y$ is trivial, then $X$ is trivial.
-
-:::
-
 [[PR-WB7MM]]
-
-::: {.proof}
-Let $f\colon G\to H$ be a homomorphism from a finite group to a free group, so $f(1_G) = 1_H$.
-Each $g\in G$ has finite order $n$, and
-$$
-1_H = f(1_G) = f(g^n) = f(g)^n,
-$$
-so $f(g)$ has finite order dividing $n$.
-Free groups are torsion-free, so $f(g) = 1_H$.
-
-:::
-
-::: {.remark}
-The same argument shows that every homomorphism from a finite group to a torsion-free group is trivial.
-For a continuous map $f\colon A\to B$ with $\pi_1(A)$ finite and $\pi_1(B)$ torsion-free, such as $\pi_1(B)\cong\ZZ^n$ or a free group, the induced homomorphism $f_*\colon \pi_1(A) \to \pi_1(B)$ is trivial.
-Likewise, if $H_k(A)$ is finite and $H_k(B)$ is torsion-free, then $f_*\colon H_k(A)\to H_k(B)$ is zero, and if $H^k(B)$ is finite and $H^k(A)$ is torsion-free, then $f^*\colon H^k(B)\to H^k(A)$ is zero.
-
-:::

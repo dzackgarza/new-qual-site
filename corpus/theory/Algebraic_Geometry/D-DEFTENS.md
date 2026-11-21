@@ -22,7 +22,7 @@ prompts:
 
 ::: {.definition title="tensor product"}
 Let $B \to A$ be a map of rings and $M$ a $B$-module.
-Any $A$-module is naturally a $B$-module; to endow $M$ with an $A$-module structure one forms $M \tensor_B A$, \dfn{extension of scalars}, and $\wait \tensor_B A$ is a covariant functor from $B$-modules to $A$-modules.
+Any $A$-module is naturally a $B$-module; to endow $M$ with an $A$-module structure one forms $M \tensor_B A$, \dfn{extension of scalars}, and $- \tensor_B A$ is a covariant functor from $B$-modules to $A$-modules.
 
 For $A$-modules $M$ and $N$, the \dfn{tensor product} $M \tensor_A N$ satisfies a universal property: for any $A$-bilinear map $M \times N \to T$ there is a unique map of $A$-modules $M \tensor_A N \to T$ through which it factors.
 
@@ -38,7 +38,7 @@ with the bilinear map $(m,n)\mapsto m \tensor n$.
 :::
 
 ::: {.remark}
-The functor $\wait\tensor_AN$ is left adjoint to $\Hom_A(N,\wait)$, so it preserves colimits, in particular cokernels, and is right exact ([[D-DEFADJ]]).
+The functor $-\tensor_AN$ is left adjoint to $\Hom_A(N,-)$, so it preserves colimits, in particular cokernels, and is right exact ([[D-DEFADJ]]).
 For a short exact sequence $0\to M'\to M\to M''\to0$, the sequence
 $$
 \Tor_1^A(M'',N)\to M'\tensor_AN\to M\tensor_AN\to M''\tensor_AN\to0

@@ -34,6 +34,14 @@ audit:
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 74 Exercise 6, printed p. 454. The homomorphism of the printed hint sends the relator to [gamma,gamma][delta,delta]^{n-1} = 1 and is onto the nonabelian free group F(gamma,delta); checked with Theorem 74.3 and the free-group results of Section 68. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into numbered steps for issue #2: the presentation of the fundamental group, the map that
+    kills the relator, the induced surjection, and the non-abelianness of the free group of rank two. The
+    argument is the cited Math StackExchange answer 1527539 (not the printed hint's map), re-read for this
+    pass; the relator computation was checked here.
 ---
 
 ::: {.exercise}
@@ -43,17 +51,49 @@ If $n > 1$, show that the fundamental group of the $n$-fold torus is not abelian
 :::
 
 ::: {.solution}
+The proof is that of Math StackExchange answer 1527539 (https://math.stackexchange.com/a/1527539), posted 2015-11-13 by the account posting as user98602 to question 1527500, "Fundamental group of the $n$-fold torus is nonabelian for $n>1$"; its homomorphism is not the one the printed hint proposes, since the hint sends $\alpha_{1},\beta_{1}\mapsto\gamma$ and all other generators to $\delta$, while the answer sends $\alpha_{1}\mapsto x_{1}$, $\beta_{1}\mapsto x_{2}$, $\alpha_{2}\mapsto x_{2}$, $\beta_{2}\mapsto x_{1}$ and every other generator to $1$. Both maps kill the relator and both are onto a free group of rank two; the answer's needs $n\ge2$, which is the hypothesis.
 
-The proof below is that of Math StackExchange answer 1527539 (https://math.stackexchange.com/a/1527539), posted 2015-11-13 by the account posting as user98602 to question 1527500, "Fundamental group of the $n$-fold torus is nonabelian for $n>1$" (https://math.stackexchange.com/questions/1527500), asked by Empiromancer on 2015-11-13. Its homomorphism is not the one the printed hint proposes: the hint sends $\alpha_1$ and $\beta_1$ to $\gamma$ and every other generator to $\delta$, while the answer sends $\alpha_1\mapsto x_1$, $\beta_1\mapsto x_2$, $\alpha_2\mapsto x_2$, $\beta_2\mapsto x_1$ and every other generator to $1$. Both images kill the relator and both are onto a free group of rank two; the answer's map needs $n\ge2$, which is the exercise's hypothesis, and its author notes that this is where $n=1$ fails.
+::: pf
 
-By Theorem 74.3 (printed p. 452), $\pi_1(T^{\#n})$ is the quotient of the free group $F$ on $\alpha_1,\beta_1,\dots,\alpha_n,\beta_n$ by the least normal subgroup $N$ containing $[\alpha_1,\beta_1][\alpha_2,\beta_2]\cdots[\alpha_n,\beta_n]$. Let $F_2=F(x_1,x_2)$ and let $\varphi:F\to F_2$ be the homomorphism determined by those images. Then
+::: {.pf-step #presentation}
+$\pi_{1}(T^{\#n})$ is $F/N$, where $F$ is free on $\alpha_{1},\beta_{1},\dots,\alpha_{n},\beta_{n}$ and $N$ is the least normal subgroup containing $[\alpha_{1},\beta_{1}][\alpha_{2},\beta_{2}]\cdots[\alpha_{n},\beta_{n}]$.
+
+::: pf-proof
+This is Theorem 74.3: the $n$-fold torus is a cell complex whose two-cells are attached along the commutator product, and van Kampen computes its fundamental group as the quotient of the free group on the four $n$ generators by the normal closure of that product.
+:::
+
+:::
+
+::: {.pf-step #phi}
+The homomorphism $\varphi:F\to F_{2}=F(x_{1},x_{2})$ with $\alpha_{1}\mapsto x_{1}$, $\beta_{1}\mapsto x_{2}$, $\alpha_{2}\mapsto x_{2}$, $\beta_{2}\mapsto x_{1}$ and all other generators to $1$ sends the relator to $1$.
+
+::: pf-proof
+For $i\ge3$ both $\alpha_{i}$ and $\beta_{i}$ map to $1$, so $[\alpha_{i},\beta_{i}]\mapsto[1,1]=1$. The first two commutators map to $[x_{1},x_{2}]$ and $[x_{2},x_{1}]=[x_{1},x_{2}]^{-1}$, so the product maps to
 $$
-\varphi\bigl([\alpha_1,\beta_1][\alpha_2,\beta_2]\cdots[\alpha_n,\beta_n]\bigr)
-=[x_1,x_2][x_2,x_1]
-=x_1x_2x_1^{-1}x_2^{-1}\,x_2x_1x_2^{-1}x_1^{-1}
-=1,
+[x_{1},x_{2}]\,[x_{2},x_{1}]=x_{1}x_{2}x_{1}^{-1}x_{2}^{-1}\,x_{2}x_{1}x_{2}^{-1}x_{1}^{-1}=1 .
 $$
-so $\varphi(N)=1$ and $\varphi$ induces a homomorphism $h:\pi_1(T^{\#n})\to F_2$ carrying $[\alpha_i]$ and $[\beta_i]$ to the images of $\alpha_i$ and $\beta_i$.
+Hence $\varphi$ vanishes on the relator and so on the normal subgroup it generates: $\varphi(N)=1$.
+:::
 
-The homomorphism $h$ is onto, because $x_1=h([\alpha_1])$ and $x_2=h([\beta_1])$. The group $F_2$ is not abelian: in the free product $\ZZ*\ZZ$ the reduced words $(x_1,x_2)$ and $(x_2,x_1)$ are distinct, by the definition of the free product in §68, so $x_1x_2\ne x_2x_1$. A homomorphic image of an abelian group is abelian, and $F_2$ is not, so $\pi_1(T^{\#n})$ is not abelian.
+:::
+
+::: {.pf-step #induced}
+$\varphi$ induces a surjective homomorphism $h:\pi_{1}(T^{\#n})\to F_{2}$.
+
+::: pf-proof
+Since $\varphi$ kills $N$, it factors through $F/N=\pi_{1}(T^{\#n})$, giving $h$ with $h([\alpha_{i}])=\varphi(\alpha_{i})$ and $h([\beta_{i}])=\varphi(\beta_{i})$. It is onto because $x_{1}=h([\alpha_{1}])$ and $x_{2}=h([\beta_{1}])$ lie in the image, and these two generate $F_{2}$.
+:::
+
+:::
+
+::: {.pf-step}
+$\pi_{1}(T^{\#n})$ is not abelian.
+
+::: pf-proof
+The group $F_{2}=\ZZ*\ZZ$ is not abelian: the words $x_{1}x_{2}$ and $x_{2}x_{1}$ are distinct reduced words, by the normal form for free products (§68). The image of an abelian group under a homomorphism is abelian, so a group admitting a surjection onto the non-abelian $F_{2}$ cannot be abelian; by step [](#induced){.pf-ref} there is such a surjection from $\pi_{1}(T^{\#n})$. Hence for $n>1$ the fundamental group of the $n$-fold torus is not abelian, as claimed.
+:::
+
+:::
+
+:::
 :::

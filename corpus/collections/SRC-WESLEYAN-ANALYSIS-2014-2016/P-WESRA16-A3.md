@@ -5,7 +5,9 @@ kind: problem
 title: 'Integration against a nonnegative measurable density and continuity from below'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Lebesgue Integration
+  - Measure Theory
 relations: []
 review: draft
 audit:

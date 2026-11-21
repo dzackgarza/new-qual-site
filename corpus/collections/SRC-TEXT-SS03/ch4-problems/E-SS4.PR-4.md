@@ -49,6 +49,57 @@ audit:
     $\rho>M$. (b) uses Paley--Wiener (Theorem 3.3) for $\operatorname{supp}\hat f\subseteq[-M,M]$, the
     Cauchy-type integral $\Phi$, and the geometric series to identify $\Phi=g$ on $\abs{w}>M$, which
     extends $g$ across $\CC\setminus[-M,M]$. No part is left in outline.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator correction to the first event: this is Chapter 4, Problem 4, on printed p. 133 (PDF
+    p. 152), not an "exercise" of "§5.5". Re-read there today: the asterisk the print sets before
+    "4." is recorded in the remark, and the two parts of the card's statement are the printed ones,
+    including the printed form of (b) with the sign that the card's remark repairs. The two
+    displayed formulas of the print do differ in sign, as the second event above states. Not checked
+    today: that sign defect was neither re-derived nor re-evaluated in this pass and the earlier
+    note's numerical check was not re-run; step s1's estimate (Cauchy's estimates at
+    $R=n/(2\pi\tau)$ and Stirling) was read and is correct.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Repair of step s6 on the reader's report. The two boundary limits were displayed with the signs
+    interchanged: for $\Phi(z)=\frac{1}{2\pi i}\int_{-M}^{M}\hat f(\xi)/(z-\xi)\,d\xi$ the
+    distributional identity $1/(u+i\varepsilon)\to P.V.(1/u)-i\pi\delta$ gives
+    $\Phi(x+i\varepsilon)\to\frac{1}{2\pi i}P.V.\int\hat f(\xi)/(x-\xi)d\xi-\hat f(x)/2$ and
+    $\Phi(x-i\varepsilon)\to\frac{1}{2\pi i}P.V.\int+\hat f(x)/2$, so that the difference in the
+    displayed orientation is $+\hat f(x)$, which is what the step concludes. The limits are corrected
+    and the sign convention stated in the step; the conclusion, step s5 and the rest of the card are
+    unchanged. Not checked in this pass: the numerical counterexample recorded in the second event.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Record of the search behind the solution's provenance sentence, which the reader asked for where
+    no published solution set covers the Problem. Read: the head of R. C. Rhoades,
+    *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), whose
+    abstract describes it as solutions or hints to "many of the exercises", with one part per
+    chapter. Searched the open web for a set answering the end-of-chapter Problems of this book: no
+    document answering Chapter 4, Problem 4 was found. This search located no published set answering
+    this Problem, and none is retained in this repository. Not checked: whether such a set exists
+    outside what a web search reaches. The mathematics of the card is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected: a published solution of this Problem was located, so the sentence saying
+    that none existed is replaced. The set is Wang Zirui, *Complete Solutions for Chapter 4*, in the
+    public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, read at its
+    Problem 4 and checked against Chapter 4, Problem 4: part (a) with $A_n=a_n(2\pi i)^{-n-1}/n!$,
+    $g(w)=\sum_nA_nw^{-n-1}$ holomorphic outside the circle of radius $M$ and vanishing at infinity,
+    the circle integral reproducing $f$ and conversely obeying the type estimate; part (b) by Fourier
+    inversion, the deformation of the circle onto the two sides of the slit, the identification of
+    $g$ with $\frac1{2\pi i}\int_{-M}^{M}\hat f(\xi)/(\xi-z)\,d\xi$, and the jump $g_+-g_-=\hat f$
+    from the Poisson kernel. Its text is an outline; the card's steps supply the estimates, the
+    orientation of the slit boundary, and the sign check the earlier repair recorded. Not checked:
+    anything in the published document outside its Problem 4.
 ---
 
 ::: {.exercise}
@@ -72,6 +123,7 @@ See Problem 5 in Chapter 3.
 :::
 
 ::: {.solution}
+A published solution of this Problem is Wang Zirui, *Complete Solutions for Chapter 4* (Problem 4), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`. Checked against Chapter 4, Problem 4, it carries both parts: the coefficients $A_n=a_n(2\pi i)^{-n-1}/n!$ give $g(w)=\sum_nA_nw^{-n-1}$ holomorphic outside the circle of radius $M$ and vanishing at infinity, the integral over a circle of radius larger than $M$ reproduces $f$, and conversely that integral obeys the stated type estimate; under the Paley--Wiener hypotheses, Fourier inversion and the deformation of the circle to the two sides of the slit identify $g$ with $\frac1{2\pi i}\int_{-M}^{M}\hat f(\xi)/(\xi-z)\,d\xi$ and give the jump $g_+-g_-=\hat f$. The proof below follows that route and supplies the estimates it compresses, as the audit trail records.
 
 Write $f(z)=\sum_{n\ge0}a_nz^n$ and $A_n=\dfrac{a_n\,n!}{(2\pi i)^{n+1}}$, so that the series proposed for $g$ is $g(w)=\sum_{n\ge0}A_nw^{-n-1}$.
 
@@ -198,11 +250,11 @@ $$
 $$
 As $\varepsilon\to0+$, $\frac{1}{u\mp i\varepsilon}=P.V.\frac1u\pm\pi i\delta$, so
 $$
-\Phi(x+i\varepsilon)\longrightarrow\frac{1}{2\pi i}P.V.\!\int_{-M}^{M}\frac{\hat f(\xi)}{x-\xi}d\xi+\frac{\hat f(x)}{2},
+\Phi(x+i\varepsilon)\longrightarrow\frac{1}{2\pi i}P.V.\!\int_{-M}^{M}\frac{\hat f(\xi)}{x-\xi}d\xi-\frac{\hat f(x)}{2},
 \qquad
-\Phi(x-i\varepsilon)\longrightarrow\frac{1}{2\pi i}P.V.\!\int_{-M}^{M}\frac{\hat f(\xi)}{x-\xi}d\xi-\frac{\hat f(x)}{2},
+\Phi(x-i\varepsilon)\longrightarrow\frac{1}{2\pi i}P.V.\!\int_{-M}^{M}\frac{\hat f(\xi)}{x-\xi}d\xi+\frac{\hat f(x)}{2},
 $$
-and subtracting gives $\hat f(x)$. That is, $\hat f$ is the jump of the extension in the displayed orientation.
+and subtracting gives $\hat f(x)$. That is, $\hat f$ is the jump of the extension in the displayed orientation. The lower sign of the distributional identity is the one that applies to $1/(u+i\varepsilon)$, hence to $z=x+i\varepsilon$, and the upper sign to $z=x-i\varepsilon$.
 
 :::
 
@@ -213,5 +265,5 @@ and subtracting gives $\hat f(x)$. That is, $\hat f$ is the jump of the extensio
 :::
 
 ::: {.remark}
-The printed exercise writes $\Phi(z)=\frac{1}{2\pi i}\int_{-M}^{M}\frac{\hat f(\xi)}{\xi-z}d\xi$ together with $\hat f(x)=\lim(g(x+i\varepsilon)-g(x-i\varepsilon))$. Those two displays differ in sign from part (a): with the normalization $A_n=a_nn!/(2\pi i)^{n+1}$ of part (a) and the book's convention $\hat f(\xi)=\int f(x)e^{-2\pi ix\xi}dx$, the identity that holds is $g(w)=\frac{1}{2\pi i}\int\frac{\hat f(\xi)}{w-\xi}d\xi$, whose jump is $-\hat f$. The correction is recorded in this card's audit events; the mathematics above is self-consistent and is the version proved.
+The book marks this problem with an asterisk (Chapter 4, Problem 4). The printed exercise writes $\Phi(z)=\frac{1}{2\pi i}\int_{-M}^{M}\frac{\hat f(\xi)}{\xi-z}d\xi$ together with $\hat f(x)=\lim(g(x+i\varepsilon)-g(x-i\varepsilon))$. Those two displays differ in sign from part (a): with the normalization $A_n=a_nn!/(2\pi i)^{n+1}$ of part (a) and the book's convention $\hat f(\xi)=\int f(x)e^{-2\pi ix\xi}dx$, the identity that holds is $g(w)=\frac{1}{2\pi i}\int\frac{\hat f(\xi)}{w-\xi}d\xi$, whose jump is $-\hat f$. The correction is recorded in this card's audit events; the mathematics above is self-consistent and is the version proved.
 :::

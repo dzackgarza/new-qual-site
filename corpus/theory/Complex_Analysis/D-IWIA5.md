@@ -16,9 +16,11 @@ review: draft
 ---
 
 ::: {.definition}
-Let $z_0\in\CC$ and $r>0$, and let $f$ be [[D-E7A5W|holomorphic]] on the punctured disc $D_r(z_0)\setminus\{z_0\}$.
+Let $z_0\in\CC$ and $r>0$, and let $f$ be [[D-E7A5W|holomorphic]] on the punctured disc $\DD_r(z_0)\setminus\{z_0\}$.
 Then $z_0$ is an \dfn{isolated singularity} of $f$.
-If $f(z)=\sum_{k\in\ZZ}c_k(z-z_0)^k$ is the Laurent expansion of $f$ on $D_r(z_0)\setminus\{z_0\}$, the \dfn{order} of $f$ at $z_0$ is
+
+[@Ahl73, ch. 4, §3.2, Zeros and Poles] introduces the same notion: a point at which $f$ is analytic in a region $0<\abs{z-a}<\delta$ is called an isolated singularity of $f$.
+If $f(z)=\sum_{k\in\ZZ}c_k(z-z_0)^k$ is the Laurent expansion of $f$ on $\DD_r(z_0)\setminus\{z_0\}$, the \dfn{order} of $f$ at $z_0$ is
 $$
 v_{z_0}(f)\coloneqq\inf\{k\in\ZZ:c_k\neq0\}\in\ZZ\cup\{-\infty,+\infty\},
 $$

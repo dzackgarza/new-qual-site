@@ -29,6 +29,18 @@ audit:
     inside every Y-basis element for C and D are his; the computation E = ((-1,0) union
     (0,1)) - K and the interval (1/(n+1), 1/n) at a point of E are his too.
     (tmp/sources/munkres-solutions-whitman.pdf).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps and checked each of the five sets against Munkres §16
+    Exercise 3, printed p. 92: the four decompositions of sets defined by $\abs{x}$, the
+    witness sets $(-2,-1/2)$ and $(1/2,2)$ for $B$, the point $(a-1)/2$ for its failure in
+    $\RR$, the point below $1/2$ inside every $Y$-basis element for $C$ and $D$, and
+    $E=\big((-1,0)\cup(0,1)\big)-K$. One source line is corrected: the integer $n$ bounding
+    $1/x$ follows from §4 Exercise 9(a) (a nonempty subset of $\ZZ$ bounded above has a
+    largest element), not from Exercise 4.9(b) as the earlier note said. Whitman, Exercise
+    16.3, printed pp. 150-151.
 ---
 
 ::: {.exercise}
@@ -59,34 +71,109 @@ $$
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 16.3, printed pp. 150--151** (`tmp/sources/munkres-solutions-whitman.pdf`); the answer, the four decompositions and every argument for the five sets are his.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 16.3** (`tmp/sources/munkres-solutions-whitman.pdf`); the answer, the four decompositions and the arguments for the five sets are his. One source line is corrected: the integer $n$ used for $E$ comes from the well-ordering of the integers, §4 Exercise 9(a), not from a statement about intervals.
 
-**Answer.** $A$ is open in both $\RR$ and $Y$; $B$ is open in $Y$ but not in $\RR$; $C$ and $D$ are open in neither; $E$ is open in both.
+Write $Y=[-1,1]$ and $K=\{1/n\mid n\in\ZZ_+\}$.
 
-Two facts are used. First, for $0\le a<b$,
+::: pf
+
+::: {.pf-step #splits}
+For $0\le a<b$,
 $$
-\{x\mid a<\abs{x}<b\}=(-b,-a)\cup(a,b),\quad
+\{x\mid a<\abs{x}<b\}=(-b,-a)\cup(a,b),\qquad
 \{x\mid a<\abs{x}\le b\}=[-b,-a)\cup(a,b],
 $$
 $$
-\{x\mid a\le\abs{x}<b\}=(-b,-a]\cup[a,b),\quad
-\{x\mid a\le\abs{x}\le b\}=[-b,-a]\cup[a,b],
+\{x\mid a\le\abs{x}<b\}=(-b,-a]\cup[a,b),\qquad
+\{x\mid a\le\abs{x}\le b\}=[-b,-a]\cup[a,b].
 $$
-each proved by splitting into $x\ge0$, where $\abs{x}=x$, and $x<0$, where $\abs{x}=-x$. Second, if $U\subset Y$ is open in $\RR$ then $U=Y\cap U$ is open in the subspace $Y$.
 
-*$A$.* By the first decomposition, $A=(-1,-\tfrac12)\cup(\tfrac12,1)$, a union of open intervals, so $A$ is open in $\RR$; and $A\subset Y$, so $A$ is open in $Y$.
+::: pf-proof
+Split on the sign of $x$. For $x\ge 0$ one has $\abs{x}=x$, so the condition on $\abs{x}$ becomes $a<x<b$, $a<x\le b$, $a\le x<b$ or $a\le x\le b$, giving respectively $(a,b)$, $(a,b]$, $[a,b)$ or $[a,b]$ as the nonnegative part. For $x<0$ one has $\abs{x}=-x>0$, so each condition on $-x$ is equivalent to the same condition with the inequality reversed on $x$: $a<\abs{x}<b$ means $a<-x<b$, that is $-b<x<-a$, and carrying the non-strict inequality to the corresponding endpoint gives $[-b,-a)$ for $a<\abs{x}\le b$, $(-b,-a]$ for $a\le\abs{x}<b$ and $[-b,-a]$ for $a\le\abs{x}\le b$. The displayed identities are the unions of these two parts. The point $0$ lies in a part only when $a=0$ and the left-hand inequality is non-strict, and the displays hold in that case as well, since $(-b,0]\cup[0,b)=(-b,b)$ and $[-b,0]\cup[0,b]=[-b,b]$.
+:::
 
-*$B$.* By the second decomposition, $B=[-1,-\tfrac12)\cup(\tfrac12,1]$. The sets $(-2,-\tfrac12)$ and $(\tfrac12,2)$ are open in $\RR$, so
-$$
-B=\big((-2,-\tfrac12)\cap Y\big)\cup\big((\tfrac12,2)\cap Y\big)
-$$
-is open in $Y$. It is not open in $\RR$: $-1\in B$, and for any basis element $(a,b)$ of $\RR$ with $-1\in(a,b)$ we have $a<-1<b$, so $a<(a-1)/2<-1<b$ gives $(a-1)/2\in(a,b)$ while $(a-1)/2<-1$, hence $(a-1)/2\notin B$ and $(a,b)\not\subset B$.
+:::
 
-*$C$ and $D$.* By the third and fourth decompositions, $C=(-1,-\tfrac12]\cup[\tfrac12,1)$ and $D=[-1,-\tfrac12]\cup[\tfrac12,1]$. Let $B_{Y}$ be a basis element of the subspace $Y$ containing $\tfrac12$, so $B_{Y}=Y\cap(a,b)$ with $a<\tfrac12<b$. Put $a_{0}=\max(a,-\tfrac12)$ and $y=(a_{0}+\tfrac12)/2$. Then $a\le a_{0}<y<\tfrac12<b$, so $y\in(a,b)$, and $-1<-\tfrac12\le a_{0}<y<\tfrac12<1$, so $y\in Y$; hence $y\in B_{Y}$. But $\abs{y}<\tfrac12$, so $y\notin C$ and $y\notin D$. Thus no basis element of $Y$ containing $\tfrac12$ lies inside $C$ or inside $D$, and neither set is open in $Y$. Since each is a subset of $Y$, neither is open in $\RR$ either: a set open in $\RR$ and contained in $Y$ would be open in $Y$.
+::: {.pf-step #subspace}
+If $U\subset Y$ is open in $\RR$, then $U$ is open in $Y$.
 
-*$E$.* For $x<0$ we have $1/x<0$, so $1/x\notin\ZZ_{+}$; for $x>0$ we have $1/x\in\ZZ_{+}$ exactly when $x=1/n$ for some $n$. Hence
-$$
-E=\big((-1,0)\cup(0,1)\big)-K,\qquad K=\{1/n\mid n\in\ZZ_{+}\}.
-$$
-The interval $(-1,0)$ is open in $\RR$. If $x\in(0,1)-K$, then $1/x>1$ and $1/x\notin\ZZ_{+}$, so by Exercise 4.9(b) there is a unique $n\in\ZZ_{+}$ with $n<1/x<n+1$, which gives $\tfrac1{n+1}<x<\tfrac1n$; and for any $y\in(\tfrac1{n+1},\tfrac1n)$ we have $n<1/y<n+1$, so $1/y\notin\ZZ_{+}$ and $y\in E$. So each point of $E$ lies in an open interval contained in $E$, and $E$ is open in $\RR$ (Exercise 13.1); as $E\subset Y$, $E$ is open in $Y$ as well.
+::: pf-proof
+$U=Y\cap U$, and $Y\cap U$ is open in the subspace $Y$ for every set $U$ open in $\RR$ by the definition of the subspace topology. This is the direction used below; the converse is false in general, as $B$ shows.
+:::
+
+:::
+
+::: {.pf-step #A}
+$A$ is open in $\RR$ and in $Y$.
+
+::: pf-proof
+By step [](#splits){.pf-ref} with $a=\tfrac12$ and $b=1$, $A=(-1,-\tfrac12)\cup(\tfrac12,1)$. Each of these two intervals is open in $\RR$, so their union is open in $\RR$. And $A\subset[-1,1]=Y$, so $A$ is open in $Y$ by step [](#subspace){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #B}
+$B$ is open in $Y$ and is not open in $\RR$.
+
+::: pf-proof
+By step [](#splits){.pf-ref}, $B=[-1,-\tfrac12)\cup(\tfrac12,1]$. The sets $(-2,-\tfrac12)$ and $(\tfrac12,2)$ are open in $\RR$ and their traces on $Y$ are $[-1,-\tfrac12)$ and $(\tfrac12,1]$, so $B$ is a union of open subsets of the subspace $Y$ and is open in $Y$. It is not open in $\RR$: the point $-1$ lies in $B$, and if $(a,b)$ is a basis element of $\RR$ with $-1\in(a,b)$ then $a<-1<b$, so $a<(a-1)/2<-1<b$ shows $(a-1)/2\in(a,b)$ while $(a-1)/2<-1$ gives $(a-1)/2\notin[-1,1]\supset B$; hence $(a,b)\not\subset B$ and no neighbourhood of $-1$ lies in $B$.
+:::
+
+:::
+
+::: {.pf-step #CD}
+$C$ and $D$ are open in neither $Y$ nor $\RR$.
+
+::: pf-proof
+By step [](#splits){.pf-ref}, $C=(-1,-\tfrac12]\cup[\tfrac12,1)$ and $D=[-1,-\tfrac12]\cup[\tfrac12,1]$. Let $B_{Y}$ be a basis element of the subspace $Y$ containing $\tfrac12$; then $B_{Y}=Y\cap(a,b)$ with $a<\tfrac12<b$. Put $a_{0}=\max\{a,-\tfrac12\}$ and $y=(a_{0}+\tfrac12)/2$. Then $-\tfrac12\le a_{0}<y<\tfrac12$, so $a\le a_{0}<y<b$ and $y\in(a,b)$, while $-1<-\tfrac12\le y<\tfrac12<1$ gives $y\in Y$; hence $y\in B_{Y}$. But $\abs{y}<\tfrac12$, so $y\notin C$ and $y\notin D$. Thus no basis element of $Y$ containing $\tfrac12$ lies in $C$ or in $D$, and neither set is open in $Y$. Each is contained in $Y$, so neither is open in $\RR$ either, since a subset of $Y$ open in $\RR$ would be open in $Y$ by step [](#subspace){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #E}
+$E$ is open in $\RR$ and in $Y$.
+
+:::: pf-proof
+
+::: {.pf-step #E-form}
+$E=\big((-1,0)\cup(0,1)\big)-K$.
+
+::: pf-proof
+If $x<0$ then $1/x<0$ and so $1/x\notin\ZZ_+$. If $x>0$ then $1/x\in\ZZ_+$ exactly when $1/x=n$ for some $n\in\ZZ_+$, that is exactly when $x=1/n\in K$. Hence, for $0<\abs{x}<1$, the condition $1/x\notin\ZZ_+$ holds exactly when $x\notin K$, and $x\notin K$ is automatic for $x<0$.
+:::
+
+:::
+
+::: {.pf-step #E-nbhd}
+Every point of $(0,1)-K$ has a neighbourhood in $\RR$ contained in $E$.
+
+::: pf-proof
+Let $x\in(0,1)-K$, so $1/x>1$ and $1/x\notin\ZZ_+$. The set $\{m\in\ZZ\mid m\le 1/x\}$ is nonempty, as it contains $1$, and is bounded above, so by §4 Exercise 9(a) it has a largest element $n$. Then $n\le 1/x<n+1$, since $n+1$ is an integer not in the set. Also $n\ge 1$ because $1\le 1/x$. If $n=1/x$ then $x=1/n\in K$, contrary to the choice of $x$; so $n<1/x$ and therefore $1/(n+1)<x<1/n$. For any $y\in\big(1/(n+1),1/n\big)$ we have $n<1/y<n+1$, so $1/y\notin\ZZ_+$ and $y\in E$ by step [](#E-form){.pf-ref}. Hence the open interval $\big(1/(n+1),1/n\big)$ is a neighbourhood of $x$ contained in $E$.
+:::
+
+:::
+
+::: {.pf-step}
+$E$ is open in $\RR$ and in $Y$.
+
+::: pf-proof
+$(-1,0)$ is open in $\RR$ and lies in $E$, so each of its points has a neighbourhood in $E$. Each point of $(0,1)-K$ has one by step [](#E-nbhd){.pf-ref}. By step [](#E-form){.pf-ref} these two pieces exhaust $E$, so every point of $E$ has a neighbourhood contained in $E$, and $E$ is open in $\RR$ by Munkres §13 Exercise 1. Since $E\subset Y$, step [](#subspace){.pf-ref} makes $E$ open in $Y$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step}
+The answer: $A$ and $E$ are open in both $Y$ and $\RR$; $B$ is open in $Y$ but not in $\RR$; $C$ and $D$ are open in neither.
+
+::: pf-proof
+Steps [](#A){.pf-ref}, [](#B){.pf-ref}, [](#CD){.pf-ref} and [](#E){.pf-ref} settle the five sets, and they are the only sets asked about.
+:::
+
+:::
+
+:::
 :::

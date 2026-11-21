@@ -149,7 +149,8 @@ def validate(
     file that is not there prints a link that goes nowhere, and a row that does
     not say whether it proves the card's whole statement or a part of it tells
     the reader nothing about what the card's proof status is. All three are
-    reported here rather than at emit time.
+    reported by `certificate.registry_errors` before emit time, and so is a row
+    in a section no reader of the registry reads.
     """
     errors: list[Diagnostic] = []
     by_id: dict[str, ParsedCard] = {}
@@ -164,33 +165,10 @@ def validate(
             )
         by_id[p.card.id] = p
 
-    for card_id, entries in sorted((certificates or {}).items()):
-        if card_id not in by_id:
-            errors.append(
-                Diagnostic(
-                    DiagnosticCode.CERTIFICATE_CARD_UNKNOWN,
-                    "proofs/README.md",
-                    f"lists a certificate for {card_id}, which no card carries",
-                )
-            )
-        for entry in entries:
-            if root is not None and not certificate.exists(root, entry.file):
-                errors.append(
-                    Diagnostic(
-                        DiagnosticCode.CERTIFICATE_FILE_MISSING,
-                        "proofs/README.md",
-                        f"links {entry.file} for {card_id}, and its target does not exist",
-                    )
-                )
-            if entry.covers not in certificate.COVERS:
-                errors.append(
-                    Diagnostic(
-                        DiagnosticCode.CERTIFICATE_COVERAGE_MISSING,
-                        "proofs/README.md",
-                        f"lists {entry.file} for {card_id} without saying what it proves: the row's "
-                        f"last cell must be `{certificate.THE_STATEMENT}` or `{certificate.PART}`",
-                    )
-                )
+    # The registry's own checks — unknown cards, dead links, unnamed coverage and
+    # rows in a section that certifies nothing — live with the registry, so the
+    # proof-artifact entry point runs the same rules without the pandoc build.
+    errors.extend(certificate.registry_errors(root, certificates or {}, set(by_id)))
 
     for p in parsed:
         where = f"{p.source_path} ({p.card.id})"

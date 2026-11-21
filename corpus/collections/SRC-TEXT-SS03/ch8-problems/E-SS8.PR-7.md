@@ -36,6 +36,81 @@ audit:
     the Schwarz lemma applied to the extension $\Phi=\psi_\alpha\circ(\cdot)^2\circ\psi_\beta$ of
     $f^{-1}$ to $\DD$, with the derivative computed. (e) the iteration with $r_{K_n}\to1$. Nothing is
     left in outline.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against the printed item, Chapter 8, Problem 7, which begins on printed p. 258 (PDF p. 277)
+    and ends on p. 259 (PDF p. 278): parts (a)--(e), the paragraph defining $F_n=f_n\circ\cdots\circ f_0$,
+    the paragraph introducing $\psi_\alpha=(\alpha-z)/(1-\overline\alpha z)$, and the printed data
+    $\abs{f'(0)}=(1+r_K)/(2\sqrt{r_K})$. The asterisk the print sets before "7." is recorded in the
+    remark. The defect the remark records was re-read in the print: part (d) does ask for a square
+    root $S$ of $\psi_\alpha$ with $S(0)=0$, and $\psi_\alpha(0)=\alpha\ne0$. Not checked: the
+    argument, which this pass did not re-derive.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Repair of step s5 on the reader's report. The step proved $F(K_0)\supseteq\DD$ through the
+    identity $\operatorname{int}(\overline{K_0})=K_0$, which is false for a general Koebe domain:
+    $K_0=\DD\setminus[1/2,1)$ is simply connected, proper, contains $0$, and has closure the closed
+    disc, whose interior is $\DD$. The step now argues by Hurwitz's theorem instead: for every
+    $\rho<1$ and all large $n$ the set $D(0,\rho)$ lies in $F_n(K_0)$, so $F_n-w$ has a zero in
+    $K_0$ for each $w\in D(0,\rho)$; since $F_n\to F$ locally uniformly and $F-w$ is not identically
+    zero, $F-w$ must have a zero as well, whence $\DD\subseteq F(K_0)$. The inverse family, Montel's
+    theorem and the appeal to $\operatorname{int}(\overline{K_0})$ are removed, and no other step
+    depends on them. Not checked in this pass: steps s1--s4 and s6--s7 beyond step s4's
+    $F'(0)=L>0$, which the new argument uses.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The Hurwitz repair of this step, recorded above, did not close the gap, and is replaced on a
+    referee's report of this session. Hurwitz's theorem gives zero-freeness on compact subsets of
+    $K_0$, not on $K_0$ itself, and the zeros $F_n^{-1}(w)$ are confined only to
+    $K_0\cap\overline{D(0,\abs w)}$, whose closure meets $\partial K_0$; they can escape to the
+    boundary, as the disc automorphisms $(z-p_n)/(1-\overline{p_n}z)$ with $p_n\to\partial\DD$ show.
+    The step now works on the decreasing domains $U_n=F_n^{-1}(D(0,\rho'))$, whose closures lie in
+    the fixed compact $\overline{U_N}\subseteq K_0$ by the expansion property, and transfers the zero
+    of $F_{n_j}-w$ to $F-w$ by Rouché's theorem on $\partial U_{n_j}$, where
+    $\abs{F_{n_j}-w}\ge\rho'-\rho>\abs{F-F_{n_j}}$. This is the printed hint's route, $r_{F(K_0)}\ge1$,
+    and it uses neither simple connectivity of $K_0$ nor $\operatorname{int}(\overline{K_0})$.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Record of the search behind the solution's provenance sentence, which the reader asked for where
+    no published solution set covers the Problem. Read: the head of R. C. Rhoades,
+    *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), whose
+    abstract describes it as solutions or hints to "many of the exercises", with one part per
+    chapter. Searched the open web for a set answering the end-of-chapter Problems of this book: the
+    one document whose text quoted Chapter 8, Problem 7 is a course assignment solution sheet
+    (MATH 246A, assignment 8) uploaded to a document-sharing site, and that site answered with a
+    human check, so its solution could not be read, checked or transcribed. This search located no
+    published set answering this Problem that could be read, and none is retained in this
+    repository. Not checked: whether such a set exists outside what a web search reaches. The
+    mathematics of the card is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected: a published solution of this Problem was located, so the sentence saying
+    that none existed is replaced. The set is Wang Zirui, *Complete Solutions for Chapter 8* (SJTU),
+    in the public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, file
+    `book-2-complex/tex/stein-shakarchi-book2-chapter08-solutions.tex`, whose abstract claims all 24
+    Exercises and 9 Problems of the chapter. Read at its Problem 7 and checked against Chapter 8,
+    Problem 7: part (a) by Rouché on a circle of radius $r<r_K$, which gives $D(0,r)\subseteq f(K)$
+    and so $r_{f(K)}\ge r_K$, together with the minimum principle for $g=f/z$, which gives
+    $\abs{f'(0)}=\abs{g(0)}>1$; part (b) from $F_n'(0)=\prod_k f_k'(0)$, monotone and bounded by
+    Cauchy's estimate on a disc inside $K_0$, so that $\abs{f_n'(0)}\to1$; part (c) by normal-family
+    compactness and inverse maps; part (d) by $f=\psi_\beta\circ S\circ\psi_\alpha$ with the Schwarz
+    lemma on the inverse and $\abs{f'(0)}=(1+r_K)/(2\sqrt{r_K})$, which equals
+    $1+(\sqrt{r_K}-1)^2/(2\sqrt{r_K})$ and therefore forces $r_{K_n}\to1$ in part (e). The card's
+    steps s1--s8 take those four routes and supply the detail the published text compresses: the
+    Rouché comparison that carries a zero of $F_{n_j}-w$ to $F-w$ in step s5, and the passage from
+    the convergent subsequence of step s4 to the whole sequence in step s6. Not checked: nothing in
+    the published document beyond its Problem 7, and no claim about its other chapters.
+
 ---
 
 ::: {.exercise}
@@ -61,10 +136,11 @@ For (a), write $f(z)=zg(z)$ and use the maximum principle. For (b), use the Schw
 :::
 
 ::: {.remark}
-Part (d) is inconsistent as printed: $\psi_\alpha(0)=\alpha\neq0$, so a square root of $\psi_\alpha$ cannot satisfy $S(0)=0$. The composition also requires $S$ to be defined on $\psi_\alpha(K)$. A coherent choice is a square root on $\psi_\alpha(K)$ with $S(\alpha)=\beta$.
+The book marks this problem with an asterisk (Chapter 8, Problem 7). Part (d) is inconsistent as printed: $\psi_\alpha(0)=\alpha\neq0$, so a square root of $\psi_\alpha$ cannot satisfy $S(0)=0$. The composition also requires $S$ to be defined on $\psi_\alpha(K)$. A coherent choice is a square root on $\psi_\alpha(K)$ with $S(\alpha)=\beta$.
 :::
 
 ::: {.solution}
+The published solution of this Problem is Wang Zirui, *Complete Solutions for Chapter 8* (Problem 7), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`: it carries parts (a)--(d) in outline, part (a) by Rouché's theorem on a circle of radius $r<r_K$ together with the minimum principle for $g=f/z$, part (b) by the product formula for $F_n'(0)$ and Cauchy's estimate, part (c) by normal-family compactness with inverse maps, and part (d) by $f=\psi_\beta\circ S\circ\psi_\alpha$ with the Schwarz lemma on its inverse. The steps below follow that route and supply what it compresses, namely the Rouché transfer of a zero of $F_{n_j}-w$ to $F-w$ in part (c) and the passage from a subsequence to the whole sequence; the audit trail records which step is which.
 
 Throughout $K$ is a Koebe domain, $r_K=\sup\{\rho:D(0,\rho)\subseteq K\}$, and $f:K\to\DD$ is an expansion: $f(0)=0$ and $\abs{f(z)}>\abs z$ for $z\in K\setminus\{0\}$.
 
@@ -142,23 +218,37 @@ by Weierstrass's theorem on derivatives, using step [](#s3){.pf-ref}. In particu
 
 ::: {.pf-step #s5}
 
-Part (c), second part: $F(K_0)\supseteq\DD$, hence $F(K_0)=\DD$.
+Part (c), second part: every subsequential limit $F$ of step [](#s4){.pf-ref} satisfies $r_{F(K_0)}\ge1$, hence $F(K_0)=\DD$.
 
 ::: pf-proof
 
-Fix $\rho<1$. Since $r_{K_{n+1}}\to1$ by hypothesis, $D(0,\rho)\subseteq K_{n+1}=F_n(K_0)$ for all $n\ge N$. For such $n$ the inverse $h_n:=F_n^{-1}$ is defined on $D(0,\rho)$ and maps it into $K_0\subseteq\DD$; it is holomorphic and injective, with $h_n(0)=0$ and
+Let $F_{n_j}\to F$ be the subsequence of step [](#s4){.pf-ref}. Fix $\rho$ with $0<\rho<1$ and choose $\rho',\rho''$ with $\rho<\rho'<\rho''<1$. Since $r_{K_{n+1}}\to1$, there is $N$ such that $D(0,\rho'')\subseteq K_{n+1}$ for every $n\ge N$; for such $n$ put
 $$
-h_n'(0)=\frac{1}{P_n}\longrightarrow\frac1L .
+U_n:=F_n^{-1}\bigl(D(0,\rho')\bigr).
 $$
-The family $(h_n)_{n\ge N}$ is uniformly bounded by $1$, so by Montel a subsequence $h_{n_j}$ converges uniformly on compact subsets of $D(0,\rho)$ to a holomorphic $h$ with $h(0)=0$ and $h'(0)=1/L\ne0$; in particular $h$ is not constant, so $h(D(0,\rho))$ is open. Each $h_{n_j}$ takes values in $K_0$, so $h(D(0,\rho))\subseteq\overline{K_0}$.
+Because $F_n:K_0\to K_{n+1}$ is a biholomorphism, $U_n$ is a domain and $F_n$ restricts to a biholomorphism of $U_n$ onto $D(0,\rho')$; hence $\partial U_n=F_n^{-1}(\{\abs\zeta=\rho'\})$ is an analytic Jordan curve on which $\abs{F_n}=\rho'$, and
+$$
+\overline{U_n}=F_n^{-1}\bigl(\overline{D(0,\rho')}\bigr)\subseteq F_n^{-1}\bigl(D(0,\rho'')\bigr)\subseteq K_0,
+$$
+so $\overline{U_n}$ is compact and lies in the open subset $F_n^{-1}(D(0,\rho''))$ of $K_0$.
 
-Now $\operatorname{int}(\overline{K_0})=K_0$: the inclusion $\supseteq$ is clear, and if $z\in\operatorname{int}(\overline{K_0})$ then $z\in\overline{K_0}$ while some ball about $z$ is contained in $\overline{K_0}$, so $z$ is not a boundary point of $K_0$ and hence $z\in K_0$. Since $h(D(0,\rho))$ is open and contained in $\overline{K_0}$, it is contained in $\operatorname{int}(\overline{K_0})=K_0$.
+The domains $U_n$ decrease in $n$. For $m<n$ the composite $f_n\circ\cdots\circ f_{m+1}:K_{m+1}\to K_{n+1}$ is an expansion, like any composite of expansions in step [](#s3){.pf-ref}, and $F_n=(f_n\circ\cdots\circ f_{m+1})\circ F_m$; since $F_m$ is injective with $F_m(0)=0$, so that $F_m(z)\ne0$ for $z\in K_0\setminus\{0\}$,
+$$
+\abs{F_n(z)}>\abs{F_m(z)},\qquad z\in K_0\setminus\{0\},
+$$
+which gives $U_n\subseteq U_m$. In particular $\overline{U_{n_j}}\subseteq\overline{U_N}$ for every $j$ with $n_j\ge N$, and $\overline{U_N}$ is a fixed compact subset of $K_0$.
 
-Finally, for $w\in D(0,\rho)$, the points $h_{n_j}(w)$ lie in $K_0$ and converge to $h(w)\in K_0$; as $F_{n_j}\to F$ uniformly on a compact neighbourhood of $h(w)$ inside $K_0$,
+Fix $w$ with $\abs w<\rho$. By step [](#s4){.pf-ref} the subsequence converges to $F$ uniformly on the compact set $\overline{U_N}\subseteq K_0$, so $j$ can be chosen with $n_j\ge N$ and
 $$
-F(h(w))=\lim_jF_{n_j}\bigl(h_{n_j}(w)\bigr)=w .
+\sup_{z\in\overline{U_N}}\abs{F(z)-F_{n_j}(z)}<\rho'-\rho .
 $$
-Hence $w\in F(K_0)$. As $\rho<1$ was arbitrary, $\DD\subseteq F(K_0)$, and the reverse inclusion holds by step [](#s4){.pf-ref}.
+For $z\in\partial U_{n_j}$ this gives, with $\abs{F_{n_j}(z)}=\rho'$,
+$$
+\abs{F_{n_j}(z)-w}\ge\abs{F_{n_j}(z)}-\abs w\ge\rho'-\rho>\abs{F(z)-F_{n_j}(z)} .
+$$
+The functions $F-w$ and $F_{n_j}-w$ are holomorphic on the open set $K_0$, which contains $\overline{U_{n_j}}$, so Rouché's theorem on the bounded domain $U_{n_j}$ — in the form that holomorphic $g,h$ on a neighbourhood of $\overline U$ with $\abs{g-h}<\abs h$ on $\partial U$ have equally many zeros in $U$ — gives that $F-w$ and $F_{n_j}-w$ have equally many zeros in $U_{n_j}$. The function $F_{n_j}-w$ has exactly one, at $F_{n_j}^{-1}(w)$, which lies in $U_{n_j}$ because $w\in D(0,\rho)\subseteq D(0,\rho')=F_{n_j}(U_{n_j})$ and $F_{n_j}$ is injective. Hence $F-w$ has a zero in $U_{n_j}\subseteq K_0$, that is, $w\in F(K_0)$.
+
+Since $\rho<1$ was arbitrary, $D(0,\rho)\subseteq F(K_0)$ for every $\rho<1$, which is $r_{F(K_0)}\ge1$. The reverse inclusion $F(K_0)\subseteq\DD$ holds because $F$ takes its values in $\DD$, so $F(K_0)=\DD$.
 
 :::
 

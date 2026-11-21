@@ -20,6 +20,13 @@ audit:
     Used a basis of the image extended to a basis of V. In that basis the
     matrix of f has upper-left block equal to the matrix of the restriction
     to the image and zero lower block, so the two traces agree.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Fall00.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -31,6 +38,7 @@ Prove that the restriction $f\restrict_W:W\to W$ has the same trace as $f:V\to V
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Fall 2000, retained in this repository as `assets/attachments/Fall00.pdf`; the statement below is its wording.
 
 Let
 $$

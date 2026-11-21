@@ -15,6 +15,17 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 74 of the retained Kent State Algebra Qualifying Exam Problems — Ring Theory compilation, version August 29, 2017.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. (a) Zorn's lemma on the poset of non-principal
+    ideals: a chain of them has a non-principal union, because if the union were (a) then a would lie
+    in some member I of the chain, forcing (a) <= I <= (a) and so I = (a), contrary to I being
+    non-principal. (b) ideals of R/I correspond to ideals of R containing I; the zero ideal is
+    principal, and any strictly larger one is principal by the maximality of I, so every ideal of
+    R/I is principal. Both parts are right as written. Not claimed: that R/I is a domain, or anything
+    about the number of generators of the non-principal ideals.
 ---
 
 ::: {.problem}

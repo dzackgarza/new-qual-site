@@ -12,6 +12,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 5 of the Spring 2013 UCSD Algebra Qualifying Examination, printed p. 1
+    of the single-page paper retained at assets/attachments/SP13_200_Algebra_Qual.pdf, is the statement
+    the card answers, and the paragraph at the head of the solution records that the paper prints no
+    solutions, so the argument is the card's own. Checked: the statement against the paper's text layer
+    at the page named; both parts, including the minimal polynomial of $g$ dividing $x^m-1$ for (a) and
+    the bound $\varphi(d)\le n$ on the order of an eigenvalue for (b); `qualc.authoring check` on the
+    card, and `tmp/lam.sh` for the numbering and the QED. Not checked: no retained solution set exists
+    for this paper to compare the argument with, and no other card of the collection in this pass.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
@@ -35,6 +47,9 @@ Let us assume $m$ is the order of $g$, i.e. $g^{m'} \neq 1$ for $0 < m' < m$.
 :::
 
 ::: {.solution}
+
+The problem is Problem 5 of the Spring 2013 UCSD Algebra Qualifying Examination, retained at `assets/attachments/SP13_200_Algebra_Qual.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is (a) the minimal polynomial divides $x^m-1$, which has distinct roots over $\CC$, so $g$ is diagonalizable, and (b) the eigenvalues are roots of unity algebraic of degree at most $n$ over $\QQ$, so their orders satisfy $\varphi(d)\le n$ and the order of $g$ is bounded in terms of $n$ alone
+
 **Part (a).**
 
 ::: pf

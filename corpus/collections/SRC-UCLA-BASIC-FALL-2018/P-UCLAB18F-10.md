@@ -6,7 +6,9 @@ title: Limit of powers of a triangular stochastic matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Markov Chains
+  - Limits
 relations: []
 review: draft
 audit:

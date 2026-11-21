@@ -49,6 +49,7 @@ For part (e), construct a quasi-coherent $\OO_X$-module $\widetilde{\mcm}$ from 
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.5.17 (Affine Morphisms), printed p. 44 of the held scan, transcribed and checked against the exercise as printed at printed p. 128, read from the page markers of `tmp/sources/hartshorne-1977-algebraic-geometry.md`: part (a), the reduction to $Y=\Spec B$ and $U_i=f^{-1}(V_i)=\Spec A_i$ with the images $a_i(\mathcal O_Y(V_i))$ generating $\mathcal O_X(U_i)$, and the affinity of $U$ by (2.2.17); part (b), the diagonal $X\to X\times_YX$ a closed immersion, hence separatedness, and affinity of $f$ by definition; and part (c), the affine case.
 For an affine open $V=\Spec A$, write $D_V(a)$ for the distinguished open defined by $a\in A$.
 For a global function $b$ on a scheme $Z$, let $Z_b$ be its nonvanishing locus.
 

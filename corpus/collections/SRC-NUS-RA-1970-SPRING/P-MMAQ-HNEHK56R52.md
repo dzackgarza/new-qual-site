@@ -16,6 +16,17 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Parts (f), (g) and (h) read and checked; no step of the argument was changed. What was
+    recorded is the reading of (f)'s hypothesis: the proof uses that the limit
+    $\lim_{\eps\to0^+}\int_\eps^1 f$ is finite, and that is the standard reading of "the limit
+    exists", but it is not stated in the printed sentence. The remark added at the end names it
+    and gives the one-line counterexample $f(x)=1/x$ that shows the conclusion fails once the
+    limit may be $+\infty$. Not checked in this pass: a published solution of the problem, none
+    being located.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
@@ -32,6 +43,8 @@ Prove or disprove each of the following statements.
 :::
 
 ::: {.solution}
+
+The argument is the card's own: for (f) monotone convergence applied to $f\chi_{[\eps_k,1]}$; for (g) the Riemann--Lebesgue lemma, by density of step functions together with the exact integral of an indicator; for (h) the function $x\sin(1/x)$, whose increments at $2/((2k+1)\pi)$ are at least $2/((2k+1)\pi)$. No source is transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
 
 ::: pf
 
@@ -59,7 +72,7 @@ As $\eps_k$ decreases, the sets $[\eps_k, 1]$ increase and exhaust $(0,1]$.
 :::
 
 ::: {.pf-step #monotone-convergence-integral}
-Monotone convergence: $\int_{(0,1]} f = \lim_k \int_{\eps_k}^1 f = \lim_{\eps \to 0^+} \int_\eps^1 f < \infty$.
+[[T-5K3IO|Monotone convergence]]: $\int_{(0,1]} f = \lim_k \int_{\eps_k}^1 f = \lim_{\eps \to 0^+} \int_\eps^1 f < \infty$.
 
 ::: pf-proof
 Monotone convergence applied to step [](#decreasing-sets-exhaust){.pf-ref}, using that the limit in the hypothesis exists and is finite; the point $\theset{0}$ has measure zero.
@@ -181,4 +194,8 @@ By steps [](#f-is-true){.pf-ref}, [](#g-is-true){.pf-ref}, and [](#h-is-false){.
 
 :::
 
+:::
+
+::: {.remark}
+The limit in the hypothesis of (f) has to be a finite one, and the finiteness is what the conclusion needs: the function $f(x)\coloneqq 1/x$ on $(0,1]$, $f(0)\coloneqq 0$, is nonnegative and Riemann integrable on $[\eps,1]$ for every $\eps>0$, while $\int_\eps^1 f\,dx=\log(1/\eps)\to+\infty$ and $\int_0^1 f\,dx=+\infty$, so $f$ is not Lebesgue integrable on $[0,1]$. If the limit is allowed to be $+\infty$, (f) is false; read as printed, with the limit existing in $\RR$, it is true, and the monotone convergence argument above proves it.
 :::

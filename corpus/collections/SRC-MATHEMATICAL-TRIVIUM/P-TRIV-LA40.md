@@ -19,6 +19,18 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Labeled part (b) and cleaned both systems against Linear Algebra Problem 40 on page 6 of the source PDF.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked by solving both systems independently. (a) the
+    matrix has rank 2 (the third row is the sum of the first two) and nullspace spanned by
+    (1,-2,1), which is the card's answer. (b) the coefficient matrix has rank 2 in five unknowns, so
+    the solution space is 3-dimensional, and each of the card's three vectors satisfies both
+    equations: (1,-2,1,0,0), (-2,3,0,1,0) and (1,-1,0,0,1) give 1-2+1-0 = 0 and 3-4+1-0 = 0;
+    -2+3+0-1 = 0 and -6+6+0-0 = 0; 1-1+0-0 = 0 and 3-2+0-1 = 0. They are independent (successive
+    pivots in coordinates 3, 4, 5), so they span the whole solution set. Confirmed with a computer
+    algebra system, which returns the same nullspaces.
 ---
 
 ::: {.problem}

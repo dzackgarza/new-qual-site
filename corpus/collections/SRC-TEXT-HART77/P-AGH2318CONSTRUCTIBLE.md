@@ -39,6 +39,7 @@ Similarly, a subset $T$ of $X$ is open if and only if it is constructible and st
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.18, transcribed and checked against the exercise as printed: the four parts: that the family $\mathfrak C$ of finite disjoint unions of locally closed subsets is closed under the operations defining constructibility, that a closed subset is constructible exactly when it is the set of specialisations of a finite set of points, the description of the open sets, the invariance under specialisation and generalisation, and part (d)'s statement about inverse images.
 
 ::: pf
 
@@ -312,7 +313,7 @@ Step [](#constructible-iff-finite-disjoint-union){.pf-ref} proves part (a), step
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.18, PDF p. 29, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim's (a) closes the family of finite disjoint unions of locally closed sets under finite intersection and complement; (b) reduces to pieces $A_i$ open in an irreducible closed $C_i$ and uses density to find $C_i=X$; (c) has $S_i$ contain the generic point of $C_i$, so that the closure of $S$ is the union of the $C_i$; (d) is locality of locally closed subsets.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.18, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim's (a) closes the family of finite disjoint unions of locally closed sets under finite intersection and complement; (b) reduces to pieces $A_i$ open in an irreducible closed $C_i$ and uses density to find $C_i=X$; (c) has $S_i$ contain the generic point of $C_i$, so that the closure of $S$ is the union of the $C_i$; (d) is locality of locally closed subsets.
 The proof above gives the atom decomposition explicitly, and in (c) restricts to $O_i=Z_i\setminus\bigcup_{j\neq i}Z_j$ to obtain an irreducible Zariski space to which (b) applies.
 Agree.
 :::

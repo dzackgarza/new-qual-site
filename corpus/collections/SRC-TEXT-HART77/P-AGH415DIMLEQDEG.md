@@ -82,6 +82,27 @@ audit:
     equality proof passes to a large even power "since L is ample", which O_X is
     not; 53.10.2 assumes deg L = d > 0. Nothing else on the card rested on the
     truncated text.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.1.5, printed p. 84,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.1.5, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    dim|D| = l(D) - 1 = deg D - g + l(K-D), the bound l(K-D) <= l(K),
+    and the value l(K) = g that the conclusion needs. Not checked: Yang's Solutions outside printed pp. 84-85; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.1.5 at printed
+    p. 84 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -90,7 +111,7 @@ Furthermore, equality holds if and only if $D=0$ or $g=0$.
 :::
 
 ::: {.solution}
-The Stacks Project, Chapter 53 (Curves), Lemma 53.3.5 (tag 0CCS), printed pp. 4436--4437 of the retained compiled book of version ed88ff78 compiled 14 July 2026 and read in `tmp/sources/stacks-tags/0CCS.md` (the site's build from stacks-project commit a04446e57ec1fbc252a871afcec7752fb2807b14, 28 July 2026), is the inequality together with the equality case for $D\ne0$: if a proper curve $X$ with $H^0(X,\OO_X)=k$ has a $g^r_d$, then $r\le d$, and if equality holds with $d>0$ then $H^1(X,\OO_X)=0$, that is $g=0$. A $g^r_d$ is exactly a linear system $\abs{D}$ of degree $d$ and dimension $r$. The hypothesis $d>0$ is not in the printed statement and is needed for its equality clause: at $d=0$ the pair $(\OO_X,H^0(X,\OO_X))$ is a $g^0_0$ on every curve, and on a curve of genus $g>0$ it has $r=d=0$ without $g=0$; the proof's step to a large power with vanishing $H^1$ uses that $\mathcal L$ is ample, and $\OO_X$ is not. So the lemma is cited here for $D\ne0$, and the case $D=0$ is proved on this card in step [](#s3){.pf-ref}. The converse, $g=0$ giving equality for every effective $D$, is Lemma 53.10.2(1) of the same chapter (tag 0C6T), printed p. 4450 and read in `tmp/sources/stacks-tags/0C6T.md`: for $X$ of genus $0$ and $\deg L=d>0$, $\dim_k H^0(X,L)=d+1$, whose $D=0$ case is again step [](#s3){.pf-ref}. Steps [](#s2){.pf-ref} and [](#s5){.pf-ref}--[](#s7){.pf-ref} prove the two halves of 0CCS from the divisor sequence and Riemann--Roch rather than by its route through a large power with vanishing $H^1$; step [](#s4){.pf-ref} is 0C6T(1) in Riemann--Roch form.
+The Stacks Project, Chapter 53 (Curves), Lemma 53.3.5 (tag 0CCS) of version ed88ff78 compiled 14 July 2026 and read in `tmp/sources/stacks-tags/0CCS.md` (the site's build from stacks-project commit a04446e57ec1fbc252a871afcec7752fb2807b14, 28 July 2026), is the inequality together with the equality case for $D\ne0$: if a proper curve $X$ with $H^0(X,\OO_X)=k$ has a $g^r_d$, then $r\le d$, and if equality holds with $d>0$ then $H^1(X,\OO_X)=0$, that is $g=0$. A $g^r_d$ is exactly a linear system $\abs{D}$ of degree $d$ and dimension $r$. The hypothesis $d>0$ is not in the printed statement and is needed for its equality clause: at $d=0$ the pair $(\OO_X,H^0(X,\OO_X))$ is a $g^0_0$ on every curve, and on a curve of genus $g>0$ it has $r=d=0$ without $g=0$; the proof's step to a large power with vanishing $H^1$ uses that $\mathcal L$ is ample, and $\OO_X$ is not. So the lemma is cited here for $D\ne0$, and the case $D=0$ is proved on this card in step [](#s3){.pf-ref}. The converse, $g=0$ giving equality for every effective $D$, is Lemma 53.10.2(1) of the same chapter (tag 0C6T), printed p. 4450 and read in `tmp/sources/stacks-tags/0C6T.md`: for $X$ of genus $0$ and $\deg L=d>0$, $\dim_k H^0(X,L)=d+1$, whose $D=0$ case is again step [](#s3){.pf-ref}. Steps [](#s2){.pf-ref} and [](#s5){.pf-ref}--[](#s7){.pf-ref} prove the two halves of 0CCS from the divisor sequence and Riemann--Roch rather than by its route through a large power with vanishing $H^1$; step [](#s4){.pf-ref} is 0C6T(1) in Riemann--Roch form.
 Write
 $$
 d=\deg D,
@@ -260,5 +281,7 @@ Step [](#s2){.pf-ref} proves the inequality and step [](#s8){.pf-ref} characteri
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.5, printed p. 207, text version `tmp/sources/hartshorne-solutions-egbert.md`, computes $\dim\abs{D}=h^0(D)-1=\deg D-g+h^0(K-D)\le\deg D-g+h^0(K)=\deg D$ using $h^0(K)=g$, and reads off equality exactly when $h^0(K-D)=h^0(K)$, that is $D=0$ or $g=0$. Lomont, Chapter IV §1, Exercise 1.5, PDF p. 4, text version `tmp/sources/hartshorne-solutions-lomont.md`, has the same argument.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.5, printed p. 207, text version `tmp/sources/hartshorne-solutions-egbert.md`, computes $\dim\abs{D}=h^0(D)-1=\deg D-g+h^0(K-D)\le\deg D-g+h^0(K)=\deg D$ using $h^0(K)=g$, and reads off equality exactly when $h^0(K-D)=h^0(K)$, that is $D=0$ or $g=0$. Lomont, Chapter IV §1, Exercise 1.5, text version `tmp/sources/hartshorne-solutions-lomont.md`, has the same argument.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.1.5, printed p. 84, runs Riemann--Roch: $\dim\linearsystem{D}=\ell(D)-1=\deg D-g+\ell(K-D)$, and $\ell(K-D)\le\ell(K)=g$ for $D$ effective, so $\dim\linearsystem{D}\le\deg D$ with equality only for $D=0$ or $g=0$. Its display of the last input is wrong as printed: it writes $\ell(K)-\ell(K-K)=2g-2+1-g=g$, where $2g-2+1-g=g-1$ and the value $g$ comes from $\ell(K)-\ell(0)=g-1$ with $\ell(0)=1$. The conclusion uses $\ell(K)=g$, which is right.
 :::

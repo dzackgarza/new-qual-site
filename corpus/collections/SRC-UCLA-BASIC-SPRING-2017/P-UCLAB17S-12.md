@@ -6,7 +6,9 @@ title: Uniqueness of the global minimizer of a quartic family
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Multivariable Calculus
+  - Differentiation
 relations: []
 review: draft
 audit:

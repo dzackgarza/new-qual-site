@@ -5,7 +5,9 @@ kind: problem
 title: "Evaluate an integral involving $\\Log(z+e)$"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy Integral Formula
+  - Contour Integration
 relations: []
 review: draft
 audit:
@@ -13,6 +15,21 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis Problems, problem 5 (August 9, 2006) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Two structural corrections on 2026-11-19, no argument changed. The
+    branch-independence argument stood as the last step of the proof, while the step
+    that boxes the value of the integral stood before it and a pf-qed closed by
+    announcing that earlier step, which STYLE-08 does not allow: the branch
+    observation is now a remark after the solution, and the step that boxes
+    2 pi i / e is the QED step. The item was read on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf, PDF p. 15, the Complex Analysis
+    Preliminary Examination of August 9, 2006, Section 2 item 5, which reads
+    "Find the value of the integral \int_{|z|=1} Log(z+e)/z^2 dz"; the statement on
+    the card is the printed one and is unchanged.
+
 ---
 
 ::: {.problem}
@@ -172,52 +189,15 @@ from step [](#s1-2){.pf-ref} into step [](#s1-3){.pf-ref}.
 
 :::
 
-::: pf-step
-
-The value is unchanged if one uses any other analytic branch of
-the logarithm on the relevant right-half-plane neighborhood.
-
-
-::: pf-proof
-
-Any two analytic logarithm branches on a connected domain differ by a
-constant
-$$
-2\pi i k,
-\qquad
-k\in\ZZ.
-$$
-The corresponding change in the integral is
-$$
-2\pi i k
-\int_{\abs{z}=1}
-\frac{dz}{z^2}.
-$$
-But
-$$
-\int_{\abs{z}=1}
-\frac{dz}{z^2}
-=
-0,
-$$
-since the residue of
-$$
-z^{-2}
-$$
-at $0$ is zero.
-Thus the answer is branch-independent whenever the branch is analytic on
-the needed neighborhood.
 
 :::
 
 :::
 
-::: pf-qed
 
-Step [](#s1-4){.pf-ref} gives the required value.
-
-:::
-
-:::
-
+::: {.remark title="Branch independence"}
+The value is unchanged if one uses any other analytic branch of the logarithm on the
+right-half-plane neighbourhood of $\overline{\DD}$: two such branches differ by a constant
+$2\pi i k$ with $k\in\ZZ$, and the corresponding change in the integral is
+$2\pi i k\int_{\abs z=1}dz/z^2=0$, since $z^{-2}$ has zero residue at $0$.
 :::

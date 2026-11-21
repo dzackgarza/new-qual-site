@@ -5,7 +5,9 @@ kind: problem
 title: A $3\times3$ rotation matrix has eigenvalue $1$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Orthogonal Matrices
+  - Rotations
 relations: []
 review: draft
 audit:

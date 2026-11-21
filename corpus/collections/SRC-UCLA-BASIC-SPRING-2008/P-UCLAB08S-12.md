@@ -6,7 +6,9 @@ title: Spectral theorem from the maximum Rayleigh quotient
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Spectral Theorem
+  - Quadratic Forms
 relations: []
 review: draft
 audit:

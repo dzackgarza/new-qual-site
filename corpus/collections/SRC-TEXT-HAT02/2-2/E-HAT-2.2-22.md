@@ -61,7 +61,7 @@ Every open $k$-cell of $X$ has exactly $n$ lifts, each an open $k$-cell of $\wid
 
 ::: pf-proof
 
-An open cell is contractible and hence simply connected. The restriction of the covering over the cell is therefore a disjoint union of homeomorphic copies of the cell: by the covering homotopy property, Proposition 1.30 (p. 60), the identity map of the open cell lifts to each sheet, starting from any chosen point of that sheet, and by Proposition 1.33 (p. 61) applied to the identity, whose image lies in the image subgroup, such a lift exists over the simply connected cell. Each lift is a homeomorphism from the cell onto a sheet, and the sheets meet no cell in more than one copy. Since each point has exactly $n$ preimages, there are exactly $n$ such copies. The characteristic maps of $X$ lift to $\widetilde X$ by Proposition 1.30 (p. 60), applied to the contractible disk $D^k$ mapping to the $k$-skeleton, and the lifted characteristic maps provide a CW structure on $\widetilde X$.
+An open cell is contractible and hence simply connected. The restriction of the covering over the cell is therefore a disjoint union of homeomorphic copies of the cell: by the covering homotopy property, Proposition 1.30, the identity map of the open cell lifts to each sheet, starting from any chosen point of that sheet, and by Proposition 1.33 applied to the identity, whose image lies in the image subgroup, such a lift exists over the simply connected cell. Each lift is a homeomorphism from the cell onto a sheet, and the sheets meet no cell in more than one copy. Since each point has exactly $n$ preimages, there are exactly $n$ such copies. The characteristic maps of $X$ lift to $\widetilde X$ by Proposition 1.30, applied to the contractible disk $D^k$ mapping to the $k$-skeleton, and the lifted characteristic maps provide a CW structure on $\widetilde X$.
 
 :::
 
@@ -82,7 +82,7 @@ $$
 &=\boxed{n\chi(X)}.
 \end{aligned}
 $$
-The sums are finite because $X$ has finitely many cells.The covering-space Euler count agrees with Sam's §2.2 Exercise 22, printed p. 12: each open cell has exactly $n$ distinct lifted open cells; hence each $c_k(\widetilde X)=n c_k(X)$ and $\chi(\widetilde X)=n\chi(X)$. The present card also justifies existence of the lifted CW structure by Propositions 1.30 and 1.33 of Hatcher, pp. 60--61.
+The sums are finite because $X$ has finitely many cells.The covering-space Euler count agrees with Sam's §2.2 Exercise 22: each open cell has exactly $n$ distinct lifted open cells; hence each $c_k(\widetilde X)=n c_k(X)$ and $\chi(\widetilde X)=n\chi(X)$. The present card also justifies existence of the lifted CW structure by Propositions 1.30 and 1.33 of Hatcher, pp. 60--61.
 
 
 :::

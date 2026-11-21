@@ -23,6 +23,8 @@ Assume that $f_{n}$ is holomorphic in $\abs{z} < 1$ and $\abs{f_{n}} \leq 10$. A
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the collection of past analysis examinations alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #s1}

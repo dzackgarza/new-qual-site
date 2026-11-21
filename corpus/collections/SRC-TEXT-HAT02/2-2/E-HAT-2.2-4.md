@@ -72,12 +72,12 @@ For each $n\ge1$, there is a surjective degree-zero map $S^n\to S^n$.
 
 ::: pf-proof
 
-For $n=1$, use $f_0$ itself. Suppose $f:X\to Y$ is surjective and $Sf:SX\to SY$ denotes its suspension. Given $[y,t]\in SY$, choose $x\in X$ with $f(x)=y$; then $[f(x),t]=[y,t]$, so $Sf$ is surjective (DeMason p. 64). Its degree is the same as that of $f$ by Proposition 2.33. Repeatedly suspending therefore preserves both surjectivity and zero degree: for $n\ge2$, the $(n-1)$-fold suspension of $f_0$ supplies the map. This is exactly DeMason's construction for Hatcher 2.2.4 on printed p. 64, with the out-and-back loop above.
+For $n=1$, use $f_0$ itself. Suppose $f:X\to Y$ is surjective and $Sf:SX\to SY$ denotes its suspension. Given $[y,t]\in SY$, choose $x\in X$ with $f(x)=y$; then $[f(x),t]=[y,t]$, so $Sf$ is surjective (DeMason's write-up of Hatcher 2.2.4). Its degree is the same as that of $f$ by Proposition 2.33. Repeatedly suspending therefore preserves both surjectivity and zero degree: for $n\ge2$, the $(n-1)$-fold suspension of $f_0$ supplies the map. This is exactly DeMason's construction for Hatcher 2.2.4, with the out-and-back loop above.
 :::
 
 :::
 
 :::
 
-The source is **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.2.4, printed pp. 64--65, held at `tmp/sources/demason-m382c-hatcher-20210404.pdf`.
+The source is **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.2.4, held at `tmp/sources/demason-m382c-hatcher-20210404.pdf`.
 :::

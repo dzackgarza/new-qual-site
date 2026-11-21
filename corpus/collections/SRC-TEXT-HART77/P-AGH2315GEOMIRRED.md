@@ -262,6 +262,7 @@ Give examples of integral schemes which are neither geometrically irreducible no
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.15, transcribed and checked against the exercise as printed: that (i) and (ii) are equivalent and (iii) is trivial, the implication (ii) to (iii) by reducing to the purely inseparable case, the series of simple extensions, and the homeomorphism $X_k\cong X_{k'}$ for finite $k'/k$ which carries the general case.
 The proof is the Stacks Project's, transcribed step by step below. The
 statements and proofs were read in the tag files
 `tmp/sources/stacks-tags/<TAG>.md`, which are the site's build from
@@ -271,23 +272,23 @@ stacks-project commit `a04446e57ec1fbc252a871afcec7752fb2807b14` (28 July
 printed page), which is a different and older build, version `ed88ff78`
 compiled 14 July 2026, and only the pages are taken from it. The two lemmas
 that carry the two parts are
-Lemma 33.8.9 (tag 038I, printed pp. 2832--2833,
+Lemma 33.8.9 (tag 038I,
 `tmp/sources/stacks-tags/038I.md`), whose item (1) is irreducibility after
-every field extension, and Lemma 33.6.4 (tag 035X, printed pp. 2821--2822,
+every field extension, and Lemma 33.6.4 (tag 035X,
 `tmp/sources/stacks-tags/035X.md`, in Section 33.6, tag 035U). They rest on
-Algebra, Lemma 10.47.3 (tag 037K, printed pp. 544--545,
+Algebra, Lemma 10.47.3 (tag 037K,
 `tmp/sources/stacks-tags/037K.md`) and Algebra, Lemma 10.44.4 (tag 030V,
 printed p. 537, `tmp/sources/stacks-tags/030V.md`) for the affine charts.
 
 The nine further lemmas and sections that the transcription cites are cited
 by tag and were read in their tag files as well: Algebra 10.39.19 (tag
-00HS, `tmp/sources/stacks-tags/00HS.md`, printed p. 525), 10.30.5 (tag
-00FK, `tmp/sources/stacks-tags/00FK.md`, printed p. 495), 10.43.4 (tag
-00I3, `tmp/sources/stacks-tags/00I3.md`, printed p. 534), 10.42.4 (tag
-04KM, `tmp/sources/stacks-tags/04KM.md`, printed p. 532), 10.43.7 (tag
-07K2, `tmp/sources/stacks-tags/07K2.md`, printed p. 535), 10.44.2 (tag
-030W, `tmp/sources/stacks-tags/030W.md`, printed p. 536) and 10.25.1 (tag
-00EU, `tmp/sources/stacks-tags/00EU.md`, printed p. 481), and the two
+00HS, `tmp/sources/stacks-tags/00HS.md`), 10.30.5 (tag
+00FK, `tmp/sources/stacks-tags/00FK.md`), 10.43.4 (tag
+00I3, `tmp/sources/stacks-tags/00I3.md`), 10.42.4 (tag
+04KM, `tmp/sources/stacks-tags/04KM.md`), 10.43.7 (tag
+07K2, `tmp/sources/stacks-tags/07K2.md`), 10.44.2 (tag
+030W, `tmp/sources/stacks-tags/030W.md`) and 10.25.1 (tag
+00EU, `tmp/sources/stacks-tags/00EU.md`), and the two
 sections Properties 28.3 (tag 01OJ, `tmp/sources/stacks-tags/01OJ.md`) and
 Schemes 26.17 (tag 01JO, `tmp/sources/stacks-tags/01JO.md`), each cited for
 the one point it is used for: that a scheme affine over a field is reduced
@@ -301,7 +302,7 @@ uses them.
    the nilradical is then the unique minimal prime, hence prime, and its
    vanishing locus is the whole spectrum.
 
-2. Algebra, Lemma 10.46.7 (tag 0BRA, printed p. 541,
+2. Algebra, Lemma 10.46.7 (tag 0BRA,
    `tmp/sources/stacks-tags/0BRA.md`): if $\varphi:R\to S$ is
    a ring map with locally nilpotent kernel, generated as an $R$-algebra by
    elements $x$ with $x^{p^n}\in\varphi(R)$ and $p^nx\in\varphi(R)$ for some
@@ -310,7 +311,7 @@ uses them.
    hypotheses. In particular $R\to k'\otimes_kR$ induces a homeomorphism of
    spectra for an algebraic purely inseparable field extension $k'/k$.
 
-3. Lemma 33.8.8 (tag 038H, printed p. 2832,
+3. Lemma 33.8.8 (tag 038H,
    `tmp/sources/stacks-tags/038H.md`): for a separably algebraically
    closed field $k$, a field extension $k'/k$ and a $k$-scheme $X$, the
    morphism $X_{k'}\to X$ induces a bijection of irreducible components.
@@ -326,7 +327,7 @@ Let $R$ be a $k$-algebra. The following are equivalent:
 4. $\Spec(R\otimes_k\bar k)$ is irreducible.
 
 ::: pf-proof
-This is Algebra, Lemma 10.47.3 (tag 037K), printed pp. 544--545, and the
+This is Algebra, Lemma 10.47.3 (tag 037K), and the
 proof below is its proof.
 
 $(1)\Rightarrow(2)$ is clear.
@@ -335,7 +336,7 @@ $(2)\Rightarrow(3)$: let $\mathfrak q_1,\mathfrak q_2\subseteq R\otimes_kk_s$
 be minimal prime ideals, and write $k_s=\bigcup k'$ over the finite
 subextensions $k'/k$, each of which is separable. For such $k'$ the ring map
 $R\otimes_kk'\to R\otimes_kk_s$ is flat, so by going down for flat ring maps
-(Algebra, Lemma 10.39.19, tag 00HS, printed p. 525, `tmp/sources/stacks-tags/00HS.md`) the contractions
+(Algebra, Lemma 10.39.19, tag 00HS, `tmp/sources/stacks-tags/00HS.md`) the contractions
 $\mathfrak p_i=(R\otimes_kk')\cap\mathfrak q_i$ are minimal primes of
 $R\otimes_kk'$, and $(2)$ gives $\mathfrak p_1=\mathfrak p_2$. Since $k_s$ is
 the union of the $k'$, it follows that $\mathfrak q_1=\mathfrak q_2$, so
@@ -357,7 +358,7 @@ minimal prime has a unique minimal prime; by $(4)$ the ring $R\otimes_kF$ has
 one minimal prime, hence irreducible spectrum. Finally
 $R\otimes_kK\to R\otimes_kF$ is flat and injective, so every minimal prime of
 $R\otimes_kK$ is the image of a minimal prime of $R\otimes_kF$ (Algebra,
-Lemma 10.30.5, tag 00FK, printed p. 495, `tmp/sources/stacks-tags/00FK.md`, with
+Lemma 10.30.5, tag 00FK, `tmp/sources/stacks-tags/00FK.md`, with
 going down), and $R\otimes_kK$ has one minimal prime too.
 :::
 
@@ -437,7 +438,7 @@ is geometrically reduced over $k$.
 
 ::: pf-proof
 This is the second and third paragraphs of the proof of Lemma 33.6.4
-(tag 035X, `tmp/sources/stacks-tags/035X.md`), printed p. 2822.
+(tag 035X, `tmp/sources/stacks-tags/035X.md`).
 
 Assume $X_K$ is reduced for every $K$; the source states this as its
 condition (1), that $X$ is geometrically reduced, which for it means that
@@ -472,11 +473,11 @@ $k$. The following are equivalent:
 5. $S$ is geometrically reduced over $k$, that is $K\otimes_kS$ is reduced for every field extension $K/k$.
 
 ::: pf-proof
-This is Algebra, Lemma 10.44.4 (tag 030V), printed p. 537,
+This is Algebra, Lemma 10.44.4 (tag 030V),
 `tmp/sources/stacks-tags/030V.md`, and the
 proof below is its proof. When $k$ has characteristic zero every field
 extension of $k$ is separable and the assertion is Algebra, Lemma 10.43.6
-(tag 030U, printed p. 534, `tmp/sources/stacks-tags/030U.md`).
+(tag 030U, `tmp/sources/stacks-tags/030U.md`).
 
 Every finite purely inseparable extension $k'/k$ embeds in $k_p$, and
 $k^{1/p}\subseteq k_p\subseteq\bar k$. For $k\subseteq L\subseteq K$ among
@@ -491,7 +492,7 @@ false: over $k=\FF_p(u)$ the field $S=k[x]/(x^p-u)$ is reduced, while
 $k^{1/p}\otimes_kS\cong k^{1/p}[x]/((x-u^{1/p})^p)$ is not.
 
 $(1)\Rightarrow(5)$: let $K/k$ be a field extension; $K\otimes_kS$ is to be
-reduced. By Algebra, Lemma 10.43.4 (tag 00I3, printed p. 534,
+reduced. By Algebra, Lemma 10.43.4 (tag 00I3,
 `tmp/sources/stacks-tags/00I3.md`) it suffices to treat
 finitely generated $K$, and then Algebra, Lemma 10.42.4 (tag 04KM, printed
 p. 532, `tmp/sources/stacks-tags/04KM.md`)
@@ -509,12 +510,12 @@ $(2)\Rightarrow(5)$: assume $k^{1/p}\otimes_kS$ is reduced. Then $S$ is
 reduced, since $S$ embeds in $k^{1/p}\otimes_kS$. For a minimal prime
 $\mathfrak p$ of $S$ the ring $k^{1/p}\otimes_kS_{\mathfrak p}$ is a
 localization of $k^{1/p}\otimes_kS$, hence reduced, and
-$S_{\mathfrak p}$ is a field (Algebra, Lemma 10.25.1, tag 00EU, printed p. 481,
+$S_{\mathfrak p}$ is a field (Algebra, Lemma 10.25.1, tag 00EU,
 `tmp/sources/stacks-tags/00EU.md`), hence geometrically
-reduced by Algebra, Lemma 10.44.2 (tag 030W, printed p. 536,
+reduced by Algebra, Lemma 10.44.2 (tag 030W,
 `tmp/sources/stacks-tags/030W.md`), which identifies
 geometric reducedness of a field extension with separability. Then $S$ is
-geometrically reduced by Algebra, Lemma 10.43.7 (tag 07K2, printed p. 535,
+geometrically reduced by Algebra, Lemma 10.43.7 (tag 07K2,
 `tmp/sources/stacks-tags/07K2.md`), since a
 reduced algebra all of whose localizations at minimal primes are
 geometrically reduced is geometrically reduced.
@@ -669,7 +670,7 @@ Step [](#irreducibility-tfae){.pf-ref} proves part (a), step [](#reducedness-tfa
 :::
 
 ::: {.remark}
-Irreducibility of $X_K$ is weaker than reducedness, or domain-ness, of the corresponding ring, but over an algebraically closed base field the failure cannot come from a domain. Let $A$ be a domain of finite type over $k$ and let $K=\Frac(A)$. If $k$ is algebraically closed then $\bar k=k$, so $\Spec(A\otimes_kK)$ is irreducible by step [](#irreducibility-tfae){.pf-ref}, and $A\otimes_kK$ is reduced because $K/k$ is separable, $k$ being perfect, by Algebra, Lemma 10.43.6 (tag 030U, printed p. 534, `tmp/sources/stacks-tags/030U.md`); a reduced ring whose spectrum is irreducible is a domain. So a domain of finite type over an algebraically closed field stays a domain after extending scalars to its fraction field. A perfect base field is not enough: over $k=\RR$ the field $A=\CC$ is a domain, while $A\otimes_k\Frac(A)=\CC\otimes_\RR\CC\cong\CC\times\CC$ has two minimal primes, which is step [](#integral-not-geom-irreducible){.pf-ref}.
+Irreducibility of $X_K$ is weaker than reducedness, or domain-ness, of the corresponding ring, but over an algebraically closed base field the failure cannot come from a domain. Let $A$ be a domain of finite type over $k$ and let $K=\Frac(A)$. If $k$ is algebraically closed then $\bar k=k$, so $\Spec(A\otimes_kK)$ is irreducible by step [](#irreducibility-tfae){.pf-ref}, and $A\otimes_kK$ is reduced because $K/k$ is separable, $k$ being perfect, by Algebra, Lemma 10.43.6 (tag 030U, `tmp/sources/stacks-tags/030U.md`); a reduced ring whose spectrum is irreducible is a domain. So a domain of finite type over an algebraically closed field stays a domain after extending scalars to its fraction field. A perfect base field is not enough: over $k=\RR$ the field $A=\CC$ is a domain, while $A\otimes_k\Frac(A)=\CC\otimes_\RR\CC\cong\CC\times\CC$ has two minimal primes, which is step [](#integral-not-geom-irreducible){.pf-ref}.
 
 The phenomenon needs a non-perfect base: over $k=\FF_p(u)$ the ring $A=k[x]/(x^p-u)$ is a field, so it is reduced and its spectrum is irreducible, while for $K=A$ and $\alpha$ the image of $x$ in $K$,
 $$
@@ -679,11 +680,11 @@ has a nonzero nilpotent; that is step [](#integral-not-geom-reduced){.pf-ref}. S
 :::
 
 ::: {.remark title="Published solution"}
-Both parts are proved in full in the Stacks Project, with the same closures that Hartshorne's list uses, and the two parts of the solution above are that proof transcribed. Part (a) is Lemma 33.8.9 (tag 038I, printed pp. 2832--2833, `tmp/sources/stacks-tags/038I.md`), whose three items are "$X$ is geometrically irreducible over $k$", where geometric irreducibility is irreducibility after every field extension by definition, "$X_{k'}$ is irreducible for every finite separable field extension $k'/k$" and "$X_{\bar k}$ is irreducible, where $k\subset\bar k$ is a separable algebraic closure of $k$"; these are Hartshorne's three conditions. Step `xbark-irred-implies-xk-irred` is that proof's first paragraph; step `xks-irred-implies-xbark-irred` is not the second, which runs the other way, from finite separable subextensions to the separable closure, and rests on Algebra, Lemma 10.47.3 (tag 037K) applied on affine opens. What the card's second step uses is item $(3)\Rightarrow(4)$ of the same lemma, the purely inseparable passage from $k_s$ to $\bar k$, and that is the item carried out, with the lemma's other items, in step `affine-irreducibility-tfae` (tag 037K, printed pp. 544--545, `tmp/sources/stacks-tags/037K.md`). Part (b) is Lemma 33.6.4 (tag 035X, in Section 33.6, which is tag 035U, printed pp. 2821--2822, `tmp/sources/stacks-tags/035X.md`), which lists as equivalent: $X$ geometrically reduced; $X_{k'}$ reduced for every field extension $k'/k$; $X_{k'}$ reduced for every finite purely inseparable $k'/k$; $X_{k^{1/p}}$ reduced; $X_{k^{perf}}$ reduced; $X_{\bar k}$ reduced; and, as its item (7), geometric reducedness of the rings $\OO_X(U)$ on the affine opens $U$. The $k_p$ of the exercise is $k^{perf}$, so items (2), (5) and (6) are exactly the three conditions of part (b). The equivalence of those conditions is Algebra, Lemma 10.44.4 (tag 030V, printed p. 537, `tmp/sources/stacks-tags/030V.md`), transcribed in step `purely-inseparable-reducedness-tests`, and the passage from the rings on affine opens to the scheme is step `affine-reducedness-tfae`, whose two paragraphs are the second and third of the proof of 035X, printed p. 2822.
+Both parts are proved in full in the Stacks Project, with the same closures that Hartshorne's list uses, and the two parts of the solution above are that proof transcribed. Part (a) is Lemma 33.8.9 (tag 038I, `tmp/sources/stacks-tags/038I.md`), whose three items are "$X$ is geometrically irreducible over $k$", where geometric irreducibility is irreducibility after every field extension by definition, "$X_{k'}$ is irreducible for every finite separable field extension $k'/k$" and "$X_{\bar k}$ is irreducible, where $k\subset\bar k$ is a separable algebraic closure of $k$"; these are Hartshorne's three conditions. Step `xbark-irred-implies-xk-irred` is that proof's first paragraph; step `xks-irred-implies-xbark-irred` is not the second, which runs the other way, from finite separable subextensions to the separable closure, and rests on Algebra, Lemma 10.47.3 (tag 037K) applied on affine opens. What the card's second step uses is item $(3)\Rightarrow(4)$ of the same lemma, the purely inseparable passage from $k_s$ to $\bar k$, and that is the item carried out, with the lemma's other items, in step `affine-irreducibility-tfae` (tag 037K, printed pp. 544--545, `tmp/sources/stacks-tags/037K.md`). Part (b) is Lemma 33.6.4 (tag 035X, in Section 33.6, which is tag 035U, `tmp/sources/stacks-tags/035X.md`), which lists as equivalent: $X$ geometrically reduced; $X_{k'}$ reduced for every field extension $k'/k$; $X_{k'}$ reduced for every finite purely inseparable $k'/k$; $X_{k^{1/p}}$ reduced; $X_{k^{perf}}$ reduced; $X_{\bar k}$ reduced; and, as its item (7), geometric reducedness of the rings $\OO_X(U)$ on the affine opens $U$. The $k_p$ of the exercise is $k^{perf}$, so items (2), (5) and (6) are exactly the three conditions of part (b). The equivalence of those conditions is Algebra, Lemma 10.44.4 (tag 030V, `tmp/sources/stacks-tags/030V.md`), transcribed in step `purely-inseparable-reducedness-tests`, and the passage from the rings on affine opens to the scheme is step `affine-reducedness-tfae`, whose two paragraphs are the second and third of the proof of 035X, printed p. 2822.
 
 What the two steps do not get from the source is part (c). The three examples are the card's own: $\Spec\CC$ over $\RR$, $\Spec\FF_p(u)[x]/(x^p-u)$ over $\FF_p(u)$, and $\Spec E$ with $E=L(u^{1/p})$ over $\FF_p(u,v)$ for an Artin--Schreier extension $L=k(w)$, none of which the Stacks Project states.
 
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.15, PDF pp. 26--27, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: for (a) Kim reduces a reducible $X_K$ to an affine chart with $A\otimes_kK$ reducible, extracts non-nilpotent $f_1,f_2$ with $f_1f_2=0$, and then asserts that the resulting finitely many polynomial conditions, which have a solution over the algebraically closed field $K$, have one over a finite extension of $k$; a finite purely inseparable base change of a separably closed $k$ is a homeomorphism, which would finish the argument.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.15, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: for (a) Kim reduces a reducible $X_K$ to an affine chart with $A\otimes_kK$ reducible, extracts non-nilpotent $f_1,f_2$ with $f_1f_2=0$, and then asserts that the resulting finitely many polynomial conditions, which have a solution over the algebraically closed field $K$, have one over a finite extension of $k$; a finite purely inseparable base change of a separably closed $k$ is a homeomorphism, which would finish the argument.
 That descent is asserted rather than proved, and it fails on the natural reading: a purely inseparable extension of a separably closed but non-perfect $k$ need not have a $k$-point, so a solution over $K$ does not specialize to one over $k$.
 The proof above replaces it by the cited Lemma 10.47.3 and keeps Kim's two reductions, that purely inseparable base change is a homeomorphism and that extension of scalars over an algebraically closed field preserves the set of minimal primes.
 Agree on the reduction, not on the descent step.  For (b) Kim uses the trace form of a Galois extension; the proof above uses the cited Lemma 10.43.6 over the perfect closure.

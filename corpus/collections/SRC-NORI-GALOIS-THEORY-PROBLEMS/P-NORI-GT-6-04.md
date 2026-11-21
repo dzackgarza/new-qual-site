@@ -23,6 +23,8 @@ Let $f \in F[X]$. Prove that $f(X + Y) = f(X) + f(Y)$ if and only if $f = a_{0}X
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem sheet alone, so the argument is the card's own.
+
 Write
 $$
 f(X)=\sum_{m=0}^d c_mX^m.

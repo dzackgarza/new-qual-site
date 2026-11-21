@@ -209,7 +209,7 @@ For finite CW complexes,
 $$
 \chi(X)=\sum_i(-1)^i\dim_{\QQ}H_i(X;\QQ),
 $$
-by Theorem 2.44 (p. 146), whose ranks equal these dimensions, so Euler characteristic is preserved by homotopy equivalence, whose induced maps on homology are isomorphisms by Corollary 2.11 (p. 111). Therefore the reduced Euler characteristic, and hence $\varphi=n\widetilde\chi$, is also preserved. Thus
+by Theorem 2.44, whose ranks equal these dimensions, so Euler characteristic is preserved by homotopy equivalence, whose induced maps on homology are isomorphisms by Corollary 2.11. Therefore the reduced Euler characteristic, and hence $\varphi=n\widetilde\chi$, is also preserved. Thus
 $$
 X\simeq Y\quad\Longrightarrow\quad\varphi(X)=\varphi(Y).
 $$

@@ -33,7 +33,14 @@ audit:
     x^n. Proved rather than asserted: S'' = zS from (n+2)(n+3)a_{n+3} = a_n, Ai satisfies the same
     equation (Appendix A, (15) and (17)), and a_0 = 3^{-2/3}/Gamma(2/3) = Ai(0),
     a_1 = -3^{-1/3}Gamma(1/3) = Ai'(0), so S = Ai by uniqueness for y'' = zy.
----
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator correction to the events above: Appendix A's Problems occupy PDF pp. 360--362 of the
+    retained scan, printed pp. 341--343, not PDF pp. 359--363; PDF p. 359 is printed p. 340 and
+    PDF p. 363 is the Appendix B title page. This item was not otherwise re-read in this pass, and it
+    carries no asterisk -- the print's Appendix A mark is before Problem 5 only.
 ---
 
 ::: {.exercise}
@@ -55,9 +62,21 @@ $$
 [Hint: For (b), use (a), or alternatively, apply Problem 4 in Chapter 5 to the power series for $\operatorname{Ai}$. Compare also with Problem 1, Chapter 4.]
 :::
 
+::: {.remark}
+Appendix A sets its asterisk before Problem 5 only, so none stands before this problem (Appendix A, Problem 3).
+:::
+
 ::: {.solution}
+No retained solution set covers this problem: the argument below is the card's own, with the printed sources it uses named at each step, and the defect in the printed display is dealt with first. The statement was checked against Stein--Shakarchi, *Complex Analysis*, Appendix A, §5, Problem 3.
+
 **The defect in the printed display, and the statement that replaces it.** Everything below is proved; nothing is asserted by editing a formula.
 
+::: pf
+
+::: {.pf-step #printed}
+The printed display cannot hold as printed: attaching the series $S$ to $\operatorname{Ai}(-x)$ with $x$ as its variable gives the wrong value at $x=1$.
+
+::: pf-proof
 *(a) The printed series, read at positive arguments, is $\operatorname{Ai}(x)$.* Evaluating
 $$
 S(x)=\frac{1}{\pi}\sum_{n=0}^{\infty}\frac{x^n}{n!}\,\sin\Bigl(\frac{2\pi(n+1)}{3}\Bigr)3^{n/3-2/3}\Gamma\Bigl(\frac n3+\frac13\Bigr)
@@ -74,7 +93,14 @@ $$
 \operatorname{Ai}(-x)=\frac1\pi\sum_{n=0}^{\infty}\frac{(-x)^n}{n!}\sin\Bigl(\frac{2\pi(n+1)}{3}\Bigr)3^{n/3-2/3}\Gamma\Bigl(\frac n3+\frac13\Bigr)\quad(x>0). \qquad(\star)
 $$
 Statement $(\star)$ is proved in Theorem A; with it, part (a) becomes the identity "the Bessel expression of (a) equals $S(-x)$", verified in Step 2 by comparing coefficients. No step below uses an unproved normalisation.
+:::
 
+:::
+
+::: {.pf-step #theorema}
+The series $S$ defines an entire function equal to $\operatorname{Ai}$, so the corrected display $(\star)$ is $\operatorname{Ai}(z)=S(z)$ and the mislabelling is in the argument of the printed statement, not in a coefficient.
+
+::: pf-proof
 **Theorem A.** The series $S$ defines an entire function, and $S(z)=\operatorname{Ai}(z)$ for all $z\in\CC$.
 
 *Proof.* (A1) *$S$ is entire.* All summands with $n\equiv2\ (3)$ vanish. For $m\ge0$ (empty products being $1$) the identities $\prod_{k=0}^{m-1}(k+c)=\Gamma(m+c)/\Gamma(c)$ and $\Gamma(m+\tfrac43)=(m+\tfrac13)\Gamma(m+\tfrac13)$ give
@@ -91,13 +117,13 @@ $$
 $$
 i.e. $(n+2)(n+3)a_{n+3}=a_n$ for all $n\ge0$; this is the coefficient form of $S''=zS$.
 
-(A3) *$\operatorname{Ai}$ is entire and $\operatorname{Ai}''=s\operatorname{Ai}$.* This is Appendix A, §3: with $\operatorname{Ai}(s)=\frac{1}{2\pi}\int_{-\infty}^{\infty}e^{i(x^{3}/3+sx)}dx$ (display (15), printed p. 328), the contour deformation to $L_\delta=\{x+i\delta\}$ shows that $\operatorname{Ai}$ extends to an entire function, and equation (17), printed p. 329, states and proves $\operatorname{Ai}''(s)=s\operatorname{Ai}(s)$.
+(A3) *$\operatorname{Ai}$ is entire and $\operatorname{Ai}''=s\operatorname{Ai}$.* This is Appendix A, §3: with $\operatorname{Ai}(s)=\frac{1}{2\pi}\int_{-\infty}^{\infty}e^{i(x^{3}/3+sx)}dx$ (display (15) of Appendix A, §3), the contour deformation to $L_\delta=\{x+i\delta\}$ shows that $\operatorname{Ai}$ extends to an entire function, and equation (17) of Appendix A, §3 states and proves $\operatorname{Ai}''(s)=s\operatorname{Ai}(s)$.
 
 (A4) *The initial values.* Let $K=\int_0^\infty e^{-r^3/3}dr=3^{-2/3}\Gamma(\tfrac13)$ and $I=\int_0^\infty re^{-r^3/3}dr=3^{-1/3}\Gamma(\tfrac23)$ (substitute $t=r^3/3$). In (15) with $s=0$, rotate the contour to the ray $\arg z=\pi/6$: there $z^3=ir^3$, so $\abs{e^{iz^3/3}}=e^{-r^3/3}$; on the arc $z=Re^{i\theta}$, $0\le\theta\le\pi/6$, one has $\abs{e^{iz^3/3}}=e^{-R^3\sin(3\theta)/3}\le e^{-(2/\pi)R^3\theta}$ because $\sin t\ge2t/\pi$ on $[0,\pi/2]$ (with $t=3\theta$), so the arc integral is $O(R^{-2})\to0$. Cauchy's theorem on the sector gives $\int_0^\infty e^{ix^3/3}dx=e^{i\pi/6}K$, and conjugating gives $\int_{-\infty}^0e^{ix^3/3}dx=e^{-i\pi/6}K$. Hence
 $$
 \operatorname{Ai}(0)=\frac1{2\pi}\int_{-\infty}^{\infty}e^{ix^3/3}dx=\frac{2\cos(\pi/6)K}{2\pi}=\frac{\sqrt3\,3^{-2/3}\Gamma(\frac13)}{2\pi}=\frac{3^{-1/6}\Gamma(\frac13)}{2\pi}.
 $$
-Differentiating (15) in $s$ is legitimate: in the rotated representation $\operatorname{Ai}(s)=\frac1{2\pi}\int_{L_\delta}e^{i(z^3/3+sz)}dz$ (Appendix A §3, p. 329) one has, for $\abs s\le S$ and $z=x+i\delta$, $\abs{e^{i(z^3/3+sz)}}=e^{-\delta x^2+\delta^3/3+x\operatorname{Im}s+\delta\operatorname{Re}s}\le Ce^{-\delta x^2/2}$, so $\operatorname{Ai}'(s)=\frac1{2\pi}\int_{L_\delta}iz\,e^{i(z^3/3+sz)}dz$, and Cauchy's theorem lets this be computed on the rotated sectors. The same two sectors applied to $ze^{iz^3/3}$ (the extra factor $R$ on the arc gives $O(R^{-1})\to0$) give $\int_0^\infty xe^{ix^3/3}dx=e^{i\pi/3}I$ and $\int_{-\infty}^0xe^{ix^3/3}dx=-e^{-i\pi/3}I$, so
+Differentiating (15) in $s$ is legitimate: in the rotated representation $\operatorname{Ai}(s)=\frac1{2\pi}\int_{L_\delta}e^{i(z^3/3+sz)}dz$ (Appendix A, §3) one has, for $\abs s\le S$ and $z=x+i\delta$, $\abs{e^{i(z^3/3+sz)}}=e^{-\delta x^2+\delta^3/3+x\operatorname{Im}s+\delta\operatorname{Re}s}\le Ce^{-\delta x^2/2}$, so $\operatorname{Ai}'(s)=\frac1{2\pi}\int_{L_\delta}iz\,e^{i(z^3/3+sz)}dz$, and Cauchy's theorem lets this be computed on the rotated sectors. The same two sectors applied to $ze^{iz^3/3}$ (the extra factor $R$ on the arc gives $O(R^{-1})\to0$) give $\int_0^\infty xe^{ix^3/3}dx=e^{i\pi/3}I$ and $\int_{-\infty}^0xe^{ix^3/3}dx=-e^{-i\pi/3}I$, so
 $$
 \operatorname{Ai}'(0)=\frac{i}{2\pi}\int_{-\infty}^{\infty}xe^{ix^3/3}dx=\frac{i\cdot2i\sin(\pi/3)I}{2\pi}=-\frac{\sqrt3\,3^{-1/3}\Gamma(\frac23)}{2\pi}=-\frac{3^{1/6}\Gamma(\frac23)}{2\pi}.
 $$
@@ -112,7 +138,14 @@ $$
 By (A1)–(A5), $S$ and $\operatorname{Ai}$ are entire solutions of $y''=zy$ with the same initial values, hence $S=\operatorname{Ai}$. $\square$
 
 *Consequence.* For $x>0$, $\operatorname{Ai}(-x)=S(-x)$, which is the series in $(\star)$; and the numerical witnesses of the first paragraph are upgraded to a proof.
+:::
 
+:::
+
+::: {.pf-step #parta}
+Part (a): for $x>0$, $\operatorname{Ai}(-x)=\frac{x^{1/2}}{3}\bigl[J_{1/3}(\tfrac23x^{3/2})+J_{-1/3}(\tfrac23x^{3/2})\bigr]$.
+
+::: pf-proof
 **(a) Verification of the identity.**
 
 *Step 1: the two Bessel series at $y=\frac23x^{3/2}$.* Fix $x>0$ and $y=\frac23x^{3/2}$, so $\frac y2=\frac{x^{3/2}}{3}$ and $\frac{y^2}{4}=\frac{x^3}{9}$. For $\nu=\pm\frac13$ and $m\ge0$, $\Gamma(\nu+m+1)=(\nu+m)(\nu+m-1)\cdots(\nu+1)\Gamma(\nu+1)\neq0$, so the ratio of the moduli of consecutive summands of the Bessel series is $\frac{y^2/4}{(m+1)(\nu+m+1)}\to0$: absolute convergence for every $y$, termwise rearrangement allowed. Hence
@@ -152,7 +185,14 @@ $$
 \frac{x^{1/2}}{3}\Bigl[J_{1/3}\Bigl(\frac23x^{3/2}\Bigr)+J_{-1/3}\Bigl(\frac23x^{3/2}\Bigr)\Bigr]=S(-x)=\operatorname{Ai}(-x)\qquad(x>0),
 $$
 which is (a).
+:::
 
+:::
+
+::: {.pf-step #partb}
+Part (b): $\operatorname{Ai}$ extends to an entire function of order exactly $3/2$.
+
+::: pf-proof
 **(b) $\operatorname{Ai}$ extends to an entire function of order $3/2$.** By Theorem A, $\operatorname{Ai}=S$ is entire; it remains to compute the order of growth in the sense of Chapter 5, §2 ($\abs{f(z)}\le Ae^{B\abs z^\rho}$ for all $z$, the order being the infimum of such $\rho$).
 
 *Step 3: the size of the coefficients.* The only input is the comparison of sums with integrals: for a nondecreasing $f\ge0$ on $[0,\infty)$ and integers $0\le M_1<M_2$,
@@ -204,6 +244,21 @@ $$
 \qquad\text{since } \tfrac1\rho-\tfrac23>0,
 $$
 a contradiction. Hence the order of growth of $\operatorname{Ai}$ is exactly $3/2$.
+:::
+
+:::
+
+::: {.pf-step}
+Both parts hold, with the printed display corrected as $(\star)$.
+
+::: pf-proof
+Part (a) is step [](#parta){.pf-ref} and part (b) is step [](#partb){.pf-ref}; the correction of the display is steps [](#printed){.pf-ref} and [](#theorema){.pf-ref}.
+:::
+
+:::
+
+:::
 
 *Remark.* The numerical values of the first paragraph and the identity of part (a) were rechecked independently to $40$--$50$ digits (mpmath): $S(x)=\operatorname{Ai}(x)$ at $x=0.5,1,2,3$; $S(-x)=\operatorname{Ai}(-x)$ at $x=0.5,1,2,3,5,12$; the relation $(n+2)(n+3)a_{n+3}=a_n$ for $n\le40$; and the asymptotic (5) for $m\le2\cdot10^4$. These checks are not part of the proof.
+
 :::

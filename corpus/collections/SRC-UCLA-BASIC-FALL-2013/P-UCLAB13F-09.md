@@ -6,7 +6,9 @@ title: An annihilating polynomial of degree at most the dimension
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Minimal and Characteristic Polynomials
+  - Cayley-Hamilton
 relations: []
 review: draft
 audit:

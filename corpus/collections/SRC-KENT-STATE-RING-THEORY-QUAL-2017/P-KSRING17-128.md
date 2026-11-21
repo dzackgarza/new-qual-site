@@ -15,6 +15,17 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 128 of the retained Kent State Algebra Qualifying Exam Problems — Ring Theory compilation, version August 29, 2017.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. I is nonempty because 0 lies in it (0/d = 0 in J).
+    For a, a' in I with witnesses d, d', the sum a+a' has witness dd': (a+a')/(dd') = a/(dd') +
+    a'/(dd') = (a/d)/d' + (a'/d')/d, and each is in J because J is an ideal of D^{-1}R closed under
+    division by elements coming from D. For r in R, ra has witness d: (ra)/d = r(a/d) in J. Hence I
+    is an ideal. The card's steps follow this computation with the fraction identities written out,
+    which is where this exercise is usually got wrong. Not claimed: the induced map on localisations,
+    which is a different section.
 ---
 
 ::: {.problem}

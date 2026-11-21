@@ -16,9 +16,11 @@ review: draft
 
 ::: {.theorem ref="Casorati"}
 Let $\Omega\subseteq\CC$ be open, $z_0\in\Omega$, and let $f$ be [[D-E7A5W|holomorphic]] on $\Omega\sm\theset{z_0}$ with an [[D-VKP6N|essential singularity]] at $z_0$.
-Then for every punctured neighborhood $V=D_\varepsilon(z_0)\sm\theset{z_0}\subseteq\Omega$ of $z_0$, the image $f(V)$ is dense in $\CC$.
+Then for every punctured neighborhood $V=\DD_\varepsilon(z_0)\sm\theset{z_0}\subseteq\Omega$ of $z_0$, the image $f(V)$ is dense in $\CC$.
 
 Equivalently, for every $w_0\in\CC$ there is a sequence $z_n\to z_0$, $z_n\neq z_0$, with $f(z_n)\to w_0$.
+
+The statement is [@SS03, Theorem 3.3 (p. 86)], which is the same theorem with $\Omega$ a disc about $z_0$; the form above only replaces that disc by an arbitrary punctured neighbourhood.
 :::
 
 ::: {.remark title="Variations"}

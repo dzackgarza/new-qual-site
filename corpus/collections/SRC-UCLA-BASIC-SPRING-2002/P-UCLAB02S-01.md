@@ -5,7 +5,8 @@ kind: problem
 title: Connectedness of the closed unit interval
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Connectedness
 relations: []
 review: draft
 audit:

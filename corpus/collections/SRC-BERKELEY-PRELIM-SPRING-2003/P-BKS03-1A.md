@@ -26,5 +26,62 @@ Prove that the following are equivalent:
 :::
 
 ::: {.solution}
-Obviously (a) implies (b). If (b) holds, then in particular, the standard basis vectors $e_j$ are eigenvectors of $A$, so $A$ is diagonal, say with entries $A_{ii}=\lambda_i$. If $\lambda_i\neq\lambda_j$, then $A(e_i+e_j)=\lambda_ie_i+\lambda_je_j$ is not a scalar multiple of $e_i+e_j$. This contradicts the hypothesis that $e_i+e_j$ is an eigenvector of $A$. Hence the diagonal entries $\lambda_i$ are all equal and we have (a).
+
+The argument is the card's own: (a) is immediate, and in (b) the standard basis and then the vectors $e_{i}+e_{j}$ force all diagonal entries to agree.
+
+::: pf
+
+::: {.pf-step #forward}
+
+(a) $\Rightarrow$ (b).
+
+::: pf-proof
+
+If $A=\lambda I$ then $Av=\lambda v$ for every $v\in k^{n}$, so every nonzero vector is an eigenvector with eigenvalue $\lambda$.
+
+:::
+
+:::
+
+::: {.pf-step #diagonal}
+
+Under (b), $A$ is diagonal with respect to the standard basis $e_{1},\dots,e_{n}$.
+
+::: pf-proof
+
+By (b) each $e_{j}\ne0$ is an eigenvector, say $Ae_{j}=\lambda_{j}e_{j}$. The $j$-th column of $A$ is the coordinate vector of $Ae_{j}$, namely $\lambda_{j}e_{j}$, which has $\lambda_{j}$ in position $j$ and $0$ elsewhere. So $A_{jj}=\lambda_{j}$ and $A_{ij}=0$ for $i\ne j$.
+
+:::
+
+:::
+
+::: {.pf-step #equal}
+
+$\lambda_{i}=\lambda_{j}$ for all $i,j$.
+
+::: pf-proof
+
+Suppose $\lambda_{i}\ne\lambda_{j}$ with $i\ne j$. The vector $w=e_{i}+e_{j}$ is nonzero, so by (b) it is an eigenvector, say $Aw=\mu w$. On the other hand step [](#diagonal){.pf-ref} gives $Aw=\lambda_{i}e_{i}+\lambda_{j}e_{j}$, and this equals $\mu e_{i}+\mu e_{j}$ only if $\lambda_{i}=\mu=\lambda_{j}$, since the $e_{k}$ form a basis. That contradicts $\lambda_{i}\ne\lambda_{j}$.
+
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+
+(a) and (b) are equivalent.
+
+::: pf-proof
+
+Steps [](#forward){.pf-ref} and [](#equal){.pf-ref} together with the diagonal shape of step [](#diagonal){.pf-ref} show that (b) forces $A=\lambda I$ for the common value $\lambda$, and (a) forces (b):
+$$
+\boxed{A=\lambda I\iff\text{every nonzero vector is an eigenvector of } A.}
+$$
+
+:::
+
+:::
+
+:::
+
 :::

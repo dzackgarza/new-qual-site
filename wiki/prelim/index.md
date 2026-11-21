@@ -26,4 +26,4 @@ Undergraduate calculus, analysis, linear algebra, and abstract algebra.
 
 - [[prelim/problems/index|Problems]] -- the Berkeley and UCLA exam archives and an integral practice sheet.
 
-- [[prelim/resources/index|Resources]].
+- [[prelim/resources/index|Resources]] -- references and notes, the topic lists by subject, the problem banks, and the solution sets.

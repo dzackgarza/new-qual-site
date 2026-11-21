@@ -11,6 +11,15 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 6A, printed pp. 2--3 of the packet is the source of the argument, and the paragraph at the head
+    of the solution says what the card adds. Checked: the packet read in its text layer at the page
+    named and the card's steps compared with its sentences, `qualc.authoring check` on the card, and
+    `tmp/lam.sh` for the numbering and the QED. Not checked: no other card of the collection in this
+    pass.
+- event: source-checked
   by: chatgpt
   date: 2026-09-12
   note: Checked against Problem 6A of the retained Berkeley Fall 2010 preliminary-exam solution packet f10solutions.pdf.
@@ -35,6 +44,8 @@ $$
 :::
 
 ::: {.solution}
+
+The argument is Problem 6A of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, transcribed: write $a$, $b$, $c$ as products of prime powers, so that the $\gcd$ takes the smaller exponent and the $\lcm$ the larger at each prime, and the identity follows from $\min(x,\max(y,z))=\max(\min(x,y),\min(x,z))$, whose two sides agree unless $x$ is largest. The card writes the exponents as valuations $v_p$ and adds the case check; the packet's sentence prints "max" where the $\gcd$ needs "min", an evident slip that the card's $\min$ corrects.
 
 ::: pf
 

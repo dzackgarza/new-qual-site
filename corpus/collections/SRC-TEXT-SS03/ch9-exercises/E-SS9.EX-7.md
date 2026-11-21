@@ -15,6 +15,16 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Structured the card's prose argument into numbered steps without changing the mathematics, and
+    re-checked each step against the definitions and theorems it invokes. What was not checked: no
+    copy of Stein and Shakarchi and no solution set for it is retained in tmp/sources (the
+    collection provenance is the Google Books ISBN link), so the printed statement and page were
+    not re-read; the exercise number is the one the collection index records. No published
+    solution is transcribed; the argument remains the card's own, as its solution section says.
 ---
 
 ::: {.exercise}
@@ -34,53 +44,83 @@ These results were already obtained using Fourier series in the exercises at the
 :::
 
 ::: {.solution}
-At $\tau=1/2$,
-$$
-\sum_{m\in\ZZ}\frac1{(m+1/2)^2}=\pi^2.
-$$
-Since $(m+1/2)^{-2}=4(2m+1)^{-2}$ and the positive and negative odd integers contribute equally,
-$$
-\pi^2=8\sum_{\substack{r\ge1\\r\text{ odd}}}\frac1{r^2},
-$$
-so
-$$
-\sum_{r\ge1,\ r\text{ odd}}r^{-2}=\frac{\pi^2}{8}.
-$$
-Now
-$$
-\zeta(2)=\sum_{r\text{ odd}}r^{-2}+\sum_{r\ge1}(2r)^{-2}
-=\frac{\pi^2}{8}+\frac14\zeta(2),
-$$
-whence $\zeta(2)=\pi^2/6$.
 
-Differentiate the identity
-$$
-\sum_{m\in\ZZ}(m+\tau)^{-2}=\pi^2\csc^2(\pi\tau)
-$$
-twice. Since
-$$
-\frac{d^2}{d\tau^2}(m+\tau)^{-2}=6(m+\tau)^{-4},
-$$
-and, writing $u=\pi\tau$,
-$$
-\frac{d^2}{d\tau^2}\bigl(\pi^2\csc^2u\bigr)
-=\pi^4\bigl(4\csc^2u\cot^2u+2\csc^4u\bigr),
-$$
-at $\tau=1/2$ we get
-$$
-6\sum_{m\in\ZZ}(m+1/2)^{-4}=2\pi^4.
-$$
-Therefore
-$$
-\sum_{m\in\ZZ}(m+1/2)^{-4}=\frac{\pi^4}{3}.
-$$
-Since this equals $32\sum_{r\ge1,\ r\text{ odd}}r^{-4}$,
-$$
-\sum_{r\ge1,\ r\text{ odd}}r^{-4}=\frac{\pi^4}{96}.
-$$
-Finally
-$$
-\zeta(4)=\frac{\pi^4}{96}+\frac1{16}\zeta(4),
-$$
-so $\zeta(4)=\pi^4/90$.
+The argument is the card's own: the book is retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, and no published solution set of this exercise is retained, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 9, Exercise 7. Here the identity used is $\sum_{m\in\ZZ}(m+\tau)^{-2}=\pi^{2}/\sin^{2}(\pi\tau)$ for $\Im\tau>0$, and $\zeta(s)=\sum_{r\geq1}r^{-s}$.
+
+::: pf
+
+::: {.pf-step #tauhalf}
+
+At $\tau=1/2$, $\sum_{m\in\ZZ}(m+\tfrac12)^{-2}=\pi^{2}$.
+
+::: pf-proof
+
+Substitute $\tau=1/2$ in the identity: $\sin^{2}(\pi/2)=1$.
+
+:::
+
+:::
+
+::: {.pf-step #odd2}
+
+$\sum_{r\geq1,\ r\ \text{odd}}r^{-2}=\pi^{2}/8$.
+
+::: pf-proof
+
+For each $m\in\ZZ$, $(m+\tfrac12)^{-2}=4(2m+1)^{-2}$, and $2m+1$ ranges over the odd integers as $m$ does; the odd integers pair as $r$ and $-r$, both contributing $r^{-2}$, so the sum equals $8\sum_{r\ \text{odd}\geq1}r^{-2}$. With step [](#tauhalf){.pf-ref}, $\pi^{2}=8\sum_{r\ \text{odd}\geq1}r^{-2}$.
+
+:::
+
+:::
+
+::: {.pf-step #zeta2}
+
+$\zeta(2)=\pi^{2}/6$.
+
+::: pf-proof
+
+Every positive integer is odd or twice an integer: $\zeta(2)=\sum_{r\ \text{odd}}r^{-2}+\sum_{r\geq1}(2r)^{-2}=\frac{\pi^{2}}{8}+\frac{1}{4}\zeta(2)$ by step [](#odd2){.pf-ref}, whence $\frac34\zeta(2)=\frac{\pi^{2}}{8}$.
+
+:::
+
+:::
+
+::: {.pf-step #fourth}
+
+$\sum_{m\in\ZZ}(m+\tfrac12)^{-4}=\pi^{4}/3$.
+
+::: pf-proof
+
+Differentiate the identity twice in $\tau$: the left side has second derivative $6\sum_{m}(m+\tau)^{-4}$, and the right side is $\pi^{2}\csc^{2}u$ with $u=\pi\tau$, whose second derivative is $\pi^{4}(4\csc^{2}u\cot^{2}u+2\csc^{4}u)$, equal to $2\pi^{4}$ at $u=\pi/2$. So $6\sum_{m}(m+\tfrac12)^{-4}=2\pi^{4}$.
+
+:::
+
+:::
+
+::: {.pf-step #odd4}
+
+$\sum_{r\ \text{odd}\geq1}r^{-4}=\pi^{4}/96$.
+
+::: pf-proof
+
+As in step [](#odd2){.pf-ref}, $(m+\tfrac12)^{-4}=16(2m+1)^{-4}$ and the odd integers pair, so the sum of step [](#fourth){.pf-ref} equals $32\sum_{r\ \text{odd}\geq1}r^{-4}$; hence that sum is $\frac{\pi^{4}}{3\cdot32}=\frac{\pi^{4}}{96}$.
+
+:::
+
+:::
+
+::: {.pf-step #zeta4}
+
+$\zeta(4)=\pi^{4}/90$.
+
+::: pf-proof
+
+$\zeta(4)=\sum_{r\ \text{odd}}r^{-4}+\frac{1}{16}\zeta(4)=\frac{\pi^{4}}{96}+\frac{1}{16}\zeta(4)$ by step [](#odd4){.pf-ref}, whence $\frac{15}{16}\zeta(4)=\frac{\pi^{4}}{96}$.
+
+:::
+
+:::
+
+:::
+
 :::

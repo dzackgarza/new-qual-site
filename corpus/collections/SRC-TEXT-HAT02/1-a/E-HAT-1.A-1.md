@@ -28,9 +28,19 @@ audit:
   date: 2026-10-31
   note: >-
     Read the proof: the truncated path metric is a metric, the metric topology sits inside the weak topology, and local finiteness of the vertex degrees makes the identity continuous the other way.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 95 carries the running head 86.
+    The durable part of the locator is that printed page; the file path names this machine's copy and
+    `tmp/sources` does not survive a VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 1.A of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
+
 Let $X$ be a graph in which each vertex is an endpoint of only finitely many edges.
 Show that the weak topology on $X$ is a metric topology.
 :::

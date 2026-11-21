@@ -5,7 +5,8 @@ kind: problem
 title: Matrix and eigenvalues of a three-dimensional rotation
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Rotations
 relations: []
 review: draft
 audit:

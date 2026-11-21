@@ -11,6 +11,15 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 2B, printed p. 5 of the packet. The paragraph at the head of the solution now says what is
+    the packet's and what is the card's, and the packet was read in its text layer at the page named.
+    Checked: the card's steps compared with the packet's sentences, `qualc.authoring check`, and
+    `tmp/lam.sh` for the numbering and the QED. Not checked: no other card of the collection in this
+    pass.
+- event: source-checked
   by: chatgpt
   date: 2026-09-12
   note: Checked against Problem 2B of the retained Berkeley Fall 2010 preliminary-exam solution packet f10solutions.pdf.
@@ -37,6 +46,8 @@ You may assume that any subgroup of $S_5$ containing a $5$-cycle and a $2$-cycle
 :::
 
 ::: {.solution}
+
+The argument is Problem 2B of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed p. 5 of that file, transcribed: $p=x^5-10x+5$ is Eisenstein at $5$, so its Galois group has order divisible by $5$ and contains a $5$-cycle; $p$ has exactly three real roots, the derivative having two, so complex conjugation acts as a transposition; and a subgroup of $\mathfrak S_5$ containing a $5$-cycle and a transposition is all of $\mathfrak S_5$, which the problem allows to be assumed. What the card adds is the step structure and the sign checks locating the three real roots, not the argument.
 Put
 $$
 p(x)\coloneqq x^5-10x+5,

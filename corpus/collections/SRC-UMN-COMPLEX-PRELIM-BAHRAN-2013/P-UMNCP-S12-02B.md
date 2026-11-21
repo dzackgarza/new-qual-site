@@ -6,7 +6,9 @@ title: Count zeros of a quartic in an annulus by Rouche
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 audit:

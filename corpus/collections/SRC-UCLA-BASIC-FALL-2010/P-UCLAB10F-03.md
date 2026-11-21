@@ -6,7 +6,9 @@ title: Derive the two-variable Taylor theorem from the one-variable theorem
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Taylor Series
+  - Multivariable Calculus
 relations: []
 review: draft
 audit:

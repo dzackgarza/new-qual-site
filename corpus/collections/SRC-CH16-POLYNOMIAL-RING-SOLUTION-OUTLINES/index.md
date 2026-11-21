@@ -9,7 +9,8 @@ classification:
   topics: []
 relations: []
 review: draft
-provenance: []
+provenance:
+- https://books.google.com/books?vid=ISBN9780547165097
 source:
   source_kind: compilation
   sections:
@@ -37,7 +38,8 @@ source:
         - id: P-CH16-19
           comment: Exercise 19
         - id: P-CH16-20
-          comment: Exercise 20
+          comment: Exercise 18 (printed; the card's id is item 20 of the retained
+            Chapter 16 outline, whose numbering runs two ahead of Gallian 7e from its item 12 on)
         - id: P-CH16-28
           comment: Exercise 28
         - id: P-CH16-50
@@ -48,4 +50,8 @@ source:
     kind: unknown
 ---
 
+::: {.remark}
+The document is Joseph A. Gallian, *Contemporary Abstract Algebra*, seventh edition, Brooks/Cole, Cengage Learning, 2010, ISBN-13 978-0-547-16509-7. The identifier is read from that edition's copyright page rather than from a catalogue entry, and the list names the book by ISBN because the seventh edition is out of print: the publisher's product page for it answers 404, and the ISBN record is what resolves.
 
+The cards are this chapter's exercises, presented here with a solution outline. The outline is a writeup of the exercises and is not the document, so the textbook is listed and the outline is not.
+:::

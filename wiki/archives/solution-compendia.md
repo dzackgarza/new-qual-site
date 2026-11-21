@@ -5,40 +5,61 @@ title: Solution collections
 
 # Solution collections
 
+Solutions to qualifying examinations, to course finals, and to the exercises of
+texts the corpus draws on. Each entry names the examination or the book, the
+author of the solutions where the document names one, and the material the
+document covers.
+
 ## Algebra
 
-- [Jay Pantone's first-year algebra notes](http://jaypantone.com/courses/gradnotes/FirstYearAlgebra.pdf)
+- [[attachments/qf13sol.pdf|Algebra qualifying-exam solutions, Fall 2013]] --
+  solutions to one sitting's qualifying examination in algebra.
 
-- [Kureh's algebra qualifying-exam solutions (UCLA)](https://www.math.ucla.edu/~ykureh/Algebra_Qualifying__Quals__Exams_Solutions.pdf)
+- [[attachments/qual18wintersol.pdf|Algebra qualifying-exam solutions, Winter 2018]] --
+  solutions to one sitting's qualifying examination in algebra.
 
-- [UCLA basic exam problems: linear algebra](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_LinAlg.pdf)
+- [[attachments/AlgebraSept2019solutions.pdf|Algebra qualifying-exam solutions, Fall 2019]] --
+  solutions to one sitting's qualifying examination in algebra.
 
-- [[attachments/Algebra_Solutions.pdf|James Wilson, *Kleshchev Algebra Student Solution Manual*, Chapters 1--5 (2003)]] — groups, fields and Galois theory, modules and semisimplicity, categories, and commutative algebra.
+- [[attachments/final2011-solns.pdf|Algebra final solutions, 2011]] -- solutions
+  to a one-quarter graduate algebra course's final examination.
 
-- [[attachments/Ch6Sltns.pdf|Gallian, *Contemporary Abstract Algebra*, Chapter 6 selected solution outlines]]
+- [[attachments/Algebra_Final_Solns.pdf|Mathematics 504 final solutions, Autumn 2003]] --
+  solutions to a graduate algebra final examination.
 
-- [[attachments/qf13sol.pdf|Algebra qualifying-exam solutions, Fall 2013]]
+- [[attachments/Sample_Comp_Fa03Alg.pdf|Sample algebra comprehensive-exam solutions, Fall 2003]] --
+  solutions to a sample comprehensive examination in algebra.
 
-- [[attachments/qual18wintersol.pdf|Algebra qualifying-exam solutions, Winter 2018]]
+- [Kureh, *Algebra qualifying-exam solutions* (UCLA)](https://web.archive.org/web/20200928132026/https://www.math.ucla.edu/~ykureh/Algebra_Qualifying__Quals__Exams_Solutions.pdf) --
+  solutions to the algebra qualifying examinations of one mathematics
+  department, collected in one document.
 
-- [[attachments/Algebra_Final_Solns.pdf|Mathematics 504 final solutions, Autumn 2003]]
+- [Maryland Math 600 algebra examination solutions, Summer 2001](https://www.math.umd.edu/old/graduate/exams/Math600/alg-summer01-sol.pdf) --
+  solutions to one sitting of a graduate algebra qualifying examination.
 
-- [[attachments/AlgebraSept2019solutions.pdf|Algebra qualifying-exam solutions, Fall 2019]]
+- [Vermont algebra qualifying-exam solutions, September 2008](https://web.archive.org/web/20221202124052/https://www.uvm.edu/sites/default/files/2008.09_algebra_solutions_0.pdf) --
+  solutions to one sitting of a graduate algebra qualifying examination.
 
-- [[attachments/final2011-solns.pdf|Algebra final solutions, 2011]]
+- [[attachments/Algebra_Solutions.pdf|James Wilson, *Kleshchev Algebra Student Solution Manual*, Chapters 1--5 (2003)]] --
+  solutions to the exercises of a graduate algebra course: groups, fields and
+  Galois theory, modules and semisimplicity, categories, and commutative algebra.
 
-- [[attachments/Sample_Comp_Fa03Alg.pdf|Sample algebra comprehensive-exam solutions, Fall 2003]]
-
-- [Maryland Math 600 algebra exam solutions, Summer 2001](https://www.math.umd.edu/old/graduate/exams/Math600/alg-summer01-sol.pdf)
-
-- [Maryland Math 600 algebra exam solutions, Summer 2001 (MA)](https://www.math.umd.edu/old/graduate/exams/Math600/alg-summer01MA-sol.pdf)
-
-- [Vermont algebra qualifying-exam solutions, September 2008](https://www.uvm.edu/sites/default/files/2008.09_algebra_solutions_0.pdf)
-
-## Mixed subjects
-
-- [Henry, 1996--2011 (Google Drive folder)](https://drive.google.com/drive/folders/0B1RIs0n1fB8SZFAwVVVOSDdpQ2s)
+- [[attachments/Ch6Sltns.pdf|Gallian, *Contemporary Abstract Algebra*, Chapter 6 selected solution outlines]] --
+  solution outlines for selected exercises of one chapter of the text.
 
 ## Algebraic geometry
 
-- [[attachments/AG Solutions (1).pdf|Algebraic geometry solution notes]]
+- [[attachments/Richard Borcherds.pdf|Borcherds, *Hartshorne, Chapter 1: answers to exercises* (1994)]] --
+  answers to the exercises of Chapter I of [@Har77], keyed by exercise number.
+
+- [[attachments/Bryden R Cais.pdf|Cais, *Solutions to Hartshorne, Chapter 2*]] --
+  solutions to the exercises of Chapter II of [@Har77] from II.1 onwards, keyed by section and
+  exercise number.
+
+- [[attachments/Andrew Egbert.pdf|Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013)]] --
+  solutions to the exercises of [@Har77], with the starred exercises and those on formal schemes
+  omitted, as the note at the head of the document states.
+
+The examination and course collections that these documents solve are listed on
+[[archives/card-archives|the Sources listing]]; problem banks with no solution
+set are on [[prelim/resources/problems|the prelim problem banks]].

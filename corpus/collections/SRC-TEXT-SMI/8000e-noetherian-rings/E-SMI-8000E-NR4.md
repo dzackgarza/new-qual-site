@@ -31,7 +31,6 @@ audit:
     noetherian by induction on m using problem 3 on
     0 → R^{m-1} → R^m → R → 0, and M ≅ R^m/ker π is a quotient of it. No defect.
 ---
----
 
 ::: {.exercise}
 If $R$ is a noetherian ring, prove any finitely generated $R$ module $M$ is noetherian.

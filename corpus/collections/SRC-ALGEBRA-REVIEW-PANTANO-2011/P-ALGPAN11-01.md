@@ -6,7 +6,9 @@ title: Inverse of a product in a group with torsion relations
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Groups
+  - Inverses
 relations: []
 review: draft
 audit:

@@ -451,6 +451,12 @@ $$
 $$
 
 
+that is,
+$$
+\boxed{\prod_{n=3}^{\infty}\left(1-\frac1{\log n}\right)=0}
+$$
+in the sense that its partial products diverge to zero.
+
 ::: pf-proof
 
 Since
@@ -464,29 +470,9 @@ step [](#s1-16){.pf-ref} gives the result.
 
 :::
 
-::: {.pf-step #s1-18}
-
-Thus
-$$
-\boxed{
-\prod_{n=3}^{\infty}
-\left(1-\frac1{\log n}\right)
-=0}
-$$
-in the sense that its partial products diverge to zero.
-
-
-::: pf-proof
-
-This is step [](#s1-17){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-6){.pf-ref} proves (a), step [](#s1-10){.pf-ref} proves (b), and step [](#s1-18){.pf-ref} proves (c).
+Step [](#s1-6){.pf-ref} proves (a), step [](#s1-10){.pf-ref} proves (b), and step [](#s1-17){.pf-ref} proves (c).
 
 :::
 

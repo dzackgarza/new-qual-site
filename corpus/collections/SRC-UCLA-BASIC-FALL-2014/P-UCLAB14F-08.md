@@ -6,7 +6,9 @@ title: Spectrum and determinant of a constant-off-diagonal matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Eigenvalues and Eigenvectors
+  - Determinants
 relations: []
 review: draft
 audit:

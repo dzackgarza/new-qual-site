@@ -25,6 +25,8 @@ Prove that $$\int_0^1 \cos x \frac{x\phi'(x)-\phi(x)+\phi(0)}{x^2}\,dx<\frac{3}{
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the workshop problem sheets alone, so the argument is the card's own.
+
 Write $N(x)\coloneqq x\phi'(x)-\phi(x)+\phi(0)$ and $M\coloneqq\norm{\phi''}_\infty$. The strict inequality needs $M>0$: if $\phi''\equiv0$, then $\phi$ is affine, $N\equiv0$, and both sides are $0$. We prove the inequality with $\le$ in general, and with $<$ when $M>0$.
 
 ::: pf

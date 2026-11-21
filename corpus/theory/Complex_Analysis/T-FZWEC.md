@@ -20,4 +20,6 @@ Let $\Omega\subseteq\CC$ be open and let $(f_k)_{k\geq1}$ be a sequence of [[D-E
 Suppose $f$ has a [[D-65VIK|zero]] of order $n$ at $z_0\in\Omega$.
 Then there is $\delta>0$ such that for all sufficiently large $k$, $f_k$ has exactly $n$ zeros in the disc $\{z : \abs{z-z_0}<\delta\}$, counted with multiplicity.
 Moreover, for every $\varepsilon\in(0,\delta)$ there is $K$ such that for all $k\geq K$ these $n$ zeros lie in $\{z : \abs{z-z_0}<\varepsilon\}$.
+
+This is Hurwitz's theorem. It follows from Rouché's theorem [@SS03, Theorem 4.3]: on a circle $\abs{z-z_0}=\delta$ with no other zero of $f$ inside, $\abs{f}\geq m>0$, and $\abs{f_k-f}<m\leq\abs f$ for large $k$, so $f_k$ and $f$ have the same number of zeros in the disc, counted with multiplicity.
 :::

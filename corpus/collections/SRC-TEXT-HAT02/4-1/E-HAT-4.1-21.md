@@ -63,6 +63,34 @@ audit:
     Not checked: nothing beyond the cited spans; no independent verification of the Whitehead-tower
     construction.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 21 of §4.1, printed p. 359, checked at PDF page 368 of the held
+    book. Checked the comparison: $\pi_i(X^n)=\pi_i(X)$ for $i\le n$ and $0$ above, and
+    $\pi_i(X_m)=0$ for $i\le m-1$ with $\pi_i(X_m)\cong\pi_i(X)$ for $i\ge m$, the latter from the
+    long exact sequence of the homotopy fibration $X_m\to X\to X^{m-1}$, not from any vanishing
+    hypothesis; $(X^n)^{m-1}\simeq X^{m-1}$ for $n\ge m-1$, so
+    $(X^n)_m\simeq\operatorname{hofib}(X^n\to X^{m-1})$; the comparison map
+    $X_m\to(X^n)_m$ is an isomorphism on $\pi_i$ for $i\le n$ and the target has no homotopy above
+    $n$, so the target is an $n$-th Postnikov stage of $X_m$, as is $(X_m)^n$, and uniqueness gives the
+    equivalence. The degenerate cases were checked: for $n<m-1$ both sides have all homotopy groups
+    zero, and for $n=m-1$ both are contractible. No defect. The printed page is added, the card having
+    had none.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card stood in queue D: its solution was prose with no numbered step. It is now a `pf` with
+    seven steps, each carrying a `pf-proof`, and the two claims are unchanged. Cited by number
+    only: Example 4.20 and §4.3 of the book for the identification of the $(m-1)$-connected cover
+    with the homotopy fibre of $X\to X^{m-1}$, the long exact homotopy sequence of that
+    fibration, and Whitehead's theorem with the uniqueness of $n$th Postnikov stages from §4.3.
+    Checked: that $(X^n)^{m-1}\simeq X^{m-1}$ for $n\ge m-1$, which is what makes the two
+    homotopy fibres comparable over one base; that the comparison map is an isomorphism on
+    $\pi_i$ for $i\le n$; and that both iterands are CW complexes with no homotopy groups when
+    $n<m-1$, hence contractible. No vanishing hypothesis on $\pi_i(X)$ is used or needed.
 ---
 
 ::: {.problem}
@@ -72,29 +100,79 @@ Thus $\pi_i(X_m^n) \approx \pi_i(X)$ for $m \leq i \leq n$ and all other homotop
 :::
 
 ::: {.solution}
-Let $X^n$ be the $n$-th Postnikov stage of $X$, and $X_m$ an $(m-1)$-connected covering of $X$. The two constructions affect disjoint ranges of homotopy groups:
 
-- passing to $X^n$ preserves $\pi_i$ for $i\le n$ and kills $\pi_i$ for $i>n$;
-- passing to $X_m$ kills $\pi_i$ for $i<m$ and preserves $\pi_i$ for $i\ge m$.
+The exercise is §4.1 Exercise 21. Throughout $X$ is a connected CW complex, $X^n$ is the $n$th stage of a Postnikov tower for $X$, and $X_m$ is the $(m-1)$-connected cover of $X$.
 
-Therefore both iterated constructions $(X^n)_m$ and $(X_m)^n$ have homotopy groups
+::: pf
+
+::: pf-step
+The word "covering" names the $(m-1)$-connected cover in the Whitehead tower, not an ordinary covering space: for every connected CW complex $X$ it is the homotopy fibre of $X\to X^{m-1}$.
+
+::: pf-proof
+Hatcher's Example 4.20 constructs the $n$-connected cover of a space as the homotopy fibre of the map to its $n$th Postnikov stage, and §4.3 identifies the $n$-connected covering of $Y$ with the homotopy fibre of $Y\to Y^n$. So $X_m\simeq\operatorname{hofib}(X\to X^{m-1})$ exists for every connected CW complex. For $m=2$ this is the universal cover; for $m>1$ it need not be a covering map at all, the Hopf map $S^3\to S^2$ being the $2$-connected cover of $S^2$. No vanishing hypothesis on the homotopy groups of $X$ is needed for its existence.
+:::
+
+:::
+
+::: pf-step
+$\pi_i(X^n)\cong\pi_i(X)$ for $i\le n$, and $\pi_i(X^n)=0$ for $i>n$.
+
+::: pf-proof
+An $n$th Postnikov stage of $X$ is a space under $X$ whose structure map $X\to X^n$ is an isomorphism on $\pi_i$ for $i\le n$ and whose homotopy groups vanish above $n$ (Hatcher, §4.3, where the stages are built by attaching cells killing the higher homotopy groups); those two properties are exactly the two clauses.
+:::
+
+:::
+
+::: pf-step
+$\pi_i(X_m)=0$ for $i\le m-1$, and $\pi_i(X_m)\cong\pi_i(X)$ for $i\ge m$.
+
+::: pf-proof
+By step 1 and step 2, the map $X\to X^{m-1}$ is an isomorphism on $\pi_i$ for $i\le m-1$ and its target has no homotopy in degrees $\ge m$. The long exact homotopy sequence of the fibration $X_m\to X\to X^{m-1}$ then gives $\pi_i(X_m)=0$ for $i\le m-1$ and $\pi_i(X_m)\cong\pi_i(X)$ for $i\ge m$, since the two neighbouring groups in the sequence are respectively equal, in the range where the connecting map does not intervene. In particular no vanishing of $\pi_i(X)$ enters.
+:::
+
+:::
+
+::: pf-step
+Both iterated constructions have
 $$
-\pi_i\cong
-\begin{cases}
-\pi_i(X),&m\le i\le n,\\
-0,&i<m\text{ or }i>n.
-\end{cases}
+\pi_i\cong\begin{cases}\pi_i(X),&m\le i\le n,\\0,&i<m\text{ or }i>n.\end{cases}
 $$
-To compare the spaces, use the homotopy-fiber models
+
+::: pf-proof
+Apply step 2 to $X_m$ and step 3 to $X^n$: $(X_m)^n$ has the homotopy groups of $X_m$ up to degree $n$ and none above, and those are $\pi_i(X)$ for $m\le i$ and $0$ below; $(X^n)_m$ has the homotopy groups of $X^n$ from degree $m$ up and $0$ below $m$, and those are $\pi_i(X)$ for $i\le n$ and $0$ above. Both descriptions give the displayed groups.
+:::
+
+:::
+
+::: pf-step
+For $n\ge m-1$ one has $(X^n)_m\simeq\operatorname{hofib}(X^n\to X^{m-1})$, and this is the same model as $X_m\simeq\operatorname{hofib}(X\to X^{m-1})$, so the map $X\to X^n$ induces a comparison map $X_m\to(X^n)_m$.
+
+::: pf-proof
+The $(m-1)$th stage of a Postnikov tower for $X^n$ is $X^{m-1}$ when $n\ge m-1$, since the two towers agree through degree $m-1$ and the stages below are unchanged; so by step 1 applied to $X^n$ the object $(X^n)_m$ is the homotopy fibre of $X^n\to X^{m-1}$. A map of homotopy fibrations over the same base, here $X\to X^n$ over $X^{m-1}$, induces a map of the fibres, which is the comparison map. For $n<m-1$ this step is not used; step 7 treats that range.
+:::
+
+:::
+
+::: pf-step
+The comparison map $X_m\to(X^n)_m$ is an isomorphism on $\pi_i$ for $i\le n$, and the target has no homotopy above $n$; hence $(X^n)_m$ is an $n$th Postnikov stage of $X_m$, as is $(X_m)^n$, and by uniqueness
 $$
-X_m\simeq\operatorname{hofib}(X\to X^{m-1}),
-\qquad
-(X^n)_m\simeq\operatorname{hofib}(X^n\to X^{m-1})
+(X^n)_m\simeq(X_m)^n.
 $$
-when $n\ge m-1$. The word "covering" in the exercise is Hatcher's name for the $(m-1)$-connected cover in the Whitehead tower, not an ordinary covering space: it is defined, for every connected CW complex $X$, as the homotopy fibre of $X\to X^{m-1}$ (Example 4.20, and §4.3 where the $n$ connected covering of $Y$ is identified with the homotopy fibre of $Y\to Y_n$). The long exact sequence of that homotopy fibration gives $\pi_i(X_m)=0$ for $i\le m-1$ and $\pi_i(X_m)\cong\pi_i(X)$ for $i\ge m$, because $X^{m-1}$ carries the homotopy groups of $X$ up to degree $m-1$ and none above; no vanishing hypothesis on $\pi_i(X)$ is needed. For $m=2$ the cover is the universal cover, and for $m>1$ it need not be a covering map at all: the Hopf map $S^3\to S^2$ is the 2 connected cover of $S^2$. That identification is what makes the two iterands comparable, and it is the same object on both sides, $\operatorname{hofib}(X^n\to X^{m-1})$. The map $X\to X^n$ induces a map between these fibers. Its long exact homotopy sequence shows that $X_m\to(X^n)_m$ is an isomorphism on $\pi_i$ for $i\le n$. The target has no homotopy above $n$, so this map exhibits $(X^n)_m$ as an $n$th Postnikov stage of $X_m$. Hence
-$$
-\boxed{(X^n)_m\simeq (X_m)^n.}
-$$
-The last step is uniqueness of Postnikov stages. An $n$th Postnikov stage of $X_m$ is a space under $X_m$ whose structure map is an isomorphism on $\pi_i$ for $i\le n$ and whose homotopy groups vanish above $n$; two such are homotopy equivalent under $X_m$, by Whitehead's theorem applied to the resulting map of towers (Hatcher, §4.3). Both $(X^n)_m$ and $(X_m)^n$ have this property, each being obtained from a CW complex by taking homotopy fibres and by attaching cells that kill homotopy groups, so they are homotopy equivalent.
-If $n<m-1$, both iterated constructions are contractible; the case $n=m-1$ follows from the same fiber model. Thus the notation $X_m^n$ is unambiguous up to homotopy, and it has exactly the stated nonzero homotopy groups.
+
+::: pf-proof
+Both sides are homotopy fibres of maps out of $X$ and $X^n$ over the common base $X^{m-1}$, whose homotopy groups vanish above $m-1$; the long exact sequences of the two fibrations, compared through the map $X\to X^n$ which is an isomorphism on $\pi_i$ for $i\le n$, give that the comparison map is an isomorphism on $\pi_i$ for $i\le n$. The target has no homotopy above $n$ by step 4. A space under $X_m$ whose structure map is an isomorphism on $\pi_i$ for $i\le n$ and whose higher homotopy vanishes is an $n$th Postnikov stage of $X_m$; $(X_m)^n$ is one by definition, and $(X^n)_m$ is one by what was just shown. Two $n$th Postnikov stages of the same space are homotopy equivalent under it, by Whitehead's theorem applied to the map of towers (Hatcher, §4.3).
+:::
+
+:::
+
+::: pf-step
+For $n<m-1$ both iterands are contractible, and for $n=m-1$ the fibre model of step 5 applies; so the notation $X_m^n$ is unambiguous up to homotopy, with the homotopy groups of step 4.
+
+::: pf-proof
+If $n<m-1$ then both $(X^n)_m$ and $(X_m)^n$ have all homotopy groups zero by step 4, and both are CW complexes, being built from CW complexes by homotopy fibres and by attaching cells that kill homotopy groups; a CW complex with no homotopy groups is contractible by Whitehead's theorem. If $n=m-1$ then $n\ge m-1$, so steps 5 and 6 apply and give the equivalence. The homotopy groups are those of step 4 in every case, which is the second assertion of the exercise.
+:::
+
+:::
+
+:::
 :::

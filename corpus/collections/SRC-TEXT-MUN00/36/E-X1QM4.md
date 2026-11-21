@@ -28,6 +28,15 @@ audit:
     -- dbFin through Exercise 2 and second countability of a subspace of a Euclidean space, Doug's
     World by showing X is a finite union of closed metrizable subspaces, hence metrizable, and then
     citing Exercise 30.4; no correction to the mathematics was needed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked that an open neighbourhood of a point is an
+    open subspace homeomorphic to an open subset of R^m and is second countable, that
+    finitely many of them cover the compact space, and that the union of their countable
+    bases is a basis for X by Lemma 13.2. The argument is the card's own; no retained set is
+    cited. Munkres §36 Exercise 1, printed p. 228. The printed statement needed no repair.
 ---
 
 ::: {.exercise}
@@ -37,19 +46,45 @@ Show that if $X$ is compact, then $X$ is an $m$-manifold.
 :::
 
 ::: {.solution}
-By hypothesis, for each $x\in X$ there is a neighborhood $U_x$ homeomorphic to an open subset of $\RR^m$. Choose an open set $V_x$ with
-$$
-x\in V_x\subset U_x.
-$$
-Each $V_x$ is an open subspace of a Euclidean open set, hence is second countable.
+The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §36 Exercise 1, printed p. 228, with the definitions of an $m$-manifold and of second countability.
 
-Compactness gives finitely many points $x_1,\dots,x_r$ such that
-$$
-X=V_{x_1}\cup\cdots\cup V_{x_r}.
-$$
-For each $i$, choose a countable basis $\mathcal B_i$ for the open subspace $V_{x_i}$. Since each $V_{x_i}$ is open in $X$,
-$$
-\mathcal B=\bigcup_{i=1}^r\mathcal B_i
-$$
-is a countable basis for $X$. The space is Hausdorff by assumption and locally homeomorphic to $\RR^m$ by hypothesis. Thus it satisfies the standard definition of an $m$-manifold.
+::: pf
+
+::: {.pf-step #local}
+For each $x\in X$ there is an open set $V_{x}$ with $x\in V_{x}\subset X$ second countable and homeomorphic to an open subset of $\RR^{m}$.
+
+::: pf-proof
+By hypothesis there is a neighbourhood $U_{x}$ of $x$ homeomorphic to an open subset of $\RR^{m}$; a neighbourhood of $x$ contains an open set $V_{x}$ with $x\in V_{x}\subset U_{x}$, and $V_{x}$ is then an open subspace of $U_{x}$, hence homeomorphic to an open subset of an open subset of $\RR^{m}$, that is to an open subset of $\RR^{m}$. An open subset of $\RR^{m}$ is second countable, since the balls with rational centres and rational radii form a countable basis for $\RR^{m}$ (§20) and their intersections with an open set form a countable basis for it.
+:::
+
+:::
+
+::: {.pf-step #finite}
+Finitely many of the sets $V_{x}$ cover $X$.
+
+::: pf-proof
+The family $\{V_{x}\mid x\in X\}$ is an open cover of $X$, which is compact, so it has a finite subcover $V_{x_{1}},\dots,V_{x_{r}}$.
+:::
+
+:::
+
+::: {.pf-step #basis}
+The union of countable bases of the finitely many $V_{x_{i}}$ is a countable basis for $X$.
+
+::: pf-proof
+Choose a countable basis $\mathcal{B}_{i}$ for the open subspace $V_{x_{i}}$ and put $\mathcal{B}=\bigcup_{i=1}^{r}\mathcal{B}_{i}$, a countable union of countable sets and hence countable. Each member of $\mathcal{B}$ is open in $V_{x_{i}}$, hence open in $X$ because $V_{x_{i}}$ is open in $X$. If $x\in W$ with $W$ open in $X$, choose $i$ with $x\in V_{x_{i}}$; then $W\cap V_{x_{i}}$ is a neighbourhood of $x$ in the subspace $V_{x_{i}}$, so it contains a member $B\in\mathcal{B}_{i}$ with $x\in B$, and $x\in B\subset W$. So $\mathcal{B}$ is a basis for $X$ (Lemma 13.2) and $X$ is second countable.
+:::
+
+:::
+
+::: {.pf-step}
+$X$ is an $m$-manifold.
+
+::: pf-proof
+An $m$-manifold is a second countable Hausdorff space each of whose points has a neighbourhood homeomorphic to an open subset of $\RR^{m}$. Hausdorffness is the hypothesis, the local condition is the hypothesis through step [](#local){.pf-ref}, and second countability is step [](#basis){.pf-ref}.
+:::
+
+:::
+
+:::
 :::

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-ALGQUAL18W-I5
 kind: problem
 title: Irreducibility modulo $2$ of $\Phi_{255}$
-classification: {areas: [algebra], topics: []}
+classification: {areas: [algebra], topics: [Cyclotomic Polynomials, Finite Fields]}
 relations: []
 review: draft
 audit:

@@ -14,6 +14,28 @@ classification:
   - Limits
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card carried no audit list; this one records the change. Thirteen steps asserted their claim with no
+    justification and the card is now four steps each deriving its claim. Part (a): one step constructs the
+    tents $f_n(x) = \max\{0, 1 - n^2\abs{x-n}\}$ and shows $f = \sum f_n$ is continuous, the point being
+    that distinct supports are disjoint because $\abs{n-m} \ge 1 > 1/n^2 + 1/m^2$, so at most one term is
+    nonzero at a point and only finitely many supports meet a bounded interval; one step computes
+    $\int f_n = 1/n^2$ as a triangle's area and sums it by monotone convergence, so $f \in L^1$; one step
+    observes $f(n) = 1$, which refutes the limit. Part (b): a single step gives the whole contradiction —
+    the negation of the limit produces $\varepsilon_0$ and a sequence going to infinity, uniform continuity
+    produces $\delta$, the bound $\abs{f} \ge \varepsilon_0/2$ holds on each $\delta$-interval, a subsequence
+    makes those intervals pairwise disjoint, and the sum of their integrals is $\varepsilon_0\delta$ per term,
+    hence infinite, contradicting $f \in L^1$. The "Goal" paragraph restating the problem is gone, the
+    label-claims ("Continuity", "Integrability", "Failure to converge to 0", "Conclusion", and the "Part (a)"
+    and "Part (b)" labels) are replaced by the assertions their proofs establish, and the closing step that
+    only summarised the two parts is gone. Sources are cited by numbered statement: the monotone convergence
+    theorem, and the definition of uniform continuity. No page reference is written in the body of this card
+    or in the event above. The statement is unchanged. The collection retains the UGA real analysis
+    qualifying exam of Spring 2014 and no solution sheet, so the argument is the card's own.
 ---
 
 ::: {.problem}
@@ -30,118 +52,49 @@ $$
 
 ::: pf
 
-::: pf-step
-Part (a): Explicit counterexample for continuous $L^1$ functions.
+::: {.pf-step #construction}
+The series $f = \sum_{n \ge 2} f_n$ of triangular spikes converges pointwise to a continuous function.
 
 ::: pf-proof
-
-::: pf-step
-For each integer $n \ge 2$, define the symmetric triangle function supported on $\left[n - \frac{1}{n^2}, n + \frac{1}{n^2}\right]$:
-$$f_n(x) = \begin{cases} 1 - n^2 \abs{x - n} & \text{if } \abs{x - n} \le \frac{1}{n^2}, \\ 0 & \text{otherwise}. \end{cases}$$
-
-:::
-
-::: pf-step
-Define $f: \RR \to \RR$ by $f(x) = \sum_{n=2}^\infty f_n(x)$.
-
-:::
-
-::: pf-step
-Continuity:
-
-- For distinct $n, m \ge 2$, the supports $\left[n - \frac{1}{n^2}, n + \frac{1}{n^2}\right]$ and $\left[m - \frac{1}{m^2}, m + \frac{1}{m^2}\right]$ are disjoint since $\frac{1}{n^2} \le \frac{1}{4} < \frac{1}{2}$.
-- On any bounded open neighborhood, at most one $f_n$ is non-zero, so $f$ is continuous on $\RR$.
-
-:::
-
-::: pf-step
-Integrability ($f \in L^1(\RR)$):
-
-- The integral of each triangular spike is the area of a triangle of base $\frac{2}{n^2}$ and height $1$:
-$$\int_{\RR} f_n(x) \, dx = \frac{1}{2} \cdot \frac{2}{n^2} \cdot 1 = \frac{1}{n^2}.$$
-- By the Monotone Convergence Theorem:
-$$\int_{\RR} \abs{f(x)} \, dx = \sum_{n=2}^\infty \int_{\RR} f_n(x) \, dx = \sum_{n=2}^\infty \frac{1}{n^2} < \infty.$$
-- Thus $f \in L^1(\RR)$.
-
-:::
-
-::: pf-step
-Failure to converge to 0:
-
-- For each $n \ge 2$, $f(n) = f_n(n) = 1$.
-- Along the sequence $x_n = n \to \infty$, $\lim_{n \to \infty} f(x_n) = 1 \ne 0$.
-- Therefore $f(x) \not\to 0$ as $\abs{x} \to \infty$.
-
+For $n \ge 2$ let $f_n$ be the tent of height $1$ with support $[n - 1/n^2, n + 1/n^2]$, given by $f_n(x) = \max\{0, 1 - n^2\abs{x-n}\}$. Distinct indices $n \ne m$ give disjoint supports, because a point of both supports would satisfy $\abs{n - m} \le 1/n^2 + 1/m^2 \le 1/4 + 1/4 < 1$ while $\abs{n-m} \ge 1$. A point $x$ therefore lies in at most one support, so the series has at most one nonzero term at each $x$, and it converges to $f(x)$; and $f$ agrees with one continuous $f_n$ on a neighbourhood of $x$, since the supports are closed and locally finite in the bounded sense that only finitely many meet a bounded interval. Hence $f$ is continuous at every $x$.
 :::
 
 :::
 
-:::
-
-::: pf-step
-Part (b): Uniform continuity forces $\lim_{\abs{x} \to \infty} f(x) = 0$.
+::: {.pf-step #integrable}
+$f \in L^1(\RR)$.
 
 ::: pf-proof
-
-::: pf-step
-Suppose for contradiction that $\lim_{\abs{x} \to \infty} f(x) \ne 0$.
-
-:::
-
-::: pf-step
-Then there exists $\varepsilon_0 > 0$ and a sequence $(x_n)_{n=1}^\infty$ with $\abs{x_n} \to \infty$ such that
-$$\abs{f(x_n)} \ge \varepsilon_0 \quad \text{for all } n \ge 1.$$
-
-:::
-
-::: pf-step
-Since $f$ is uniformly continuous on $\RR$, there exists $\delta > 0$ such that
-$$\abs{x - y} < \delta \implies \abs{f(x) - f(y)} < \frac{\varepsilon_0}{2}.$$
-
-:::
-
-::: pf-step
-For each $n \ge 1$ and all $x \in (x_n - \delta, x_n + \delta)$:
-$$\abs{f(x)} \ge \abs{f(x_n)} - \abs{f(x) - f(x_n)} \ge \varepsilon_0 - \frac{\varepsilon_0}{2} = \frac{\varepsilon_0}{2}.$$
-
-:::
-
-::: pf-step
-Since $\abs{x_n} \to \infty$, we can choose a subsequence $(x_{n_k})_{k=1}^\infty$ such that the open intervals $I_k = (x_{n_k} - \delta, x_{n_k} + \delta)$ are pairwise disjoint (for instance, ensuring $\abs{x_{n_{k+1}} - x_{n_k}} \ge 2\delta$).
-
-:::
-
-::: pf-step
-Integrate $\abs{f}$ over the union of disjoint intervals:
-$$\int_{\RR} \abs{f(x)} \, dx \ge \sum_{k=1}^\infty \int_{I_k} \abs{f(x)} \, dx \ge \sum_{k=1}^\infty \left( \frac{\varepsilon_0}{2} \cdot 2\delta \right) = \sum_{k=1}^\infty (\varepsilon_0 \delta) = \infty.$$
-
-:::
-
-::: pf-step
-This contradicts $f \in L^1(\RR)$ ($\int_{\RR} \abs{f} < \infty$).
-
-:::
-
-::: pf-step
-Therefore $\lim_{\abs{x} \to \infty} f(x) = 0$.
-
+Each tent has integral $\tfrac12 \cdot \tfrac{2}{n^2}\cdot 1 = 1/n^2$, being a triangle of base $2/n^2$ and height $1$. The terms are nonnegative and measurable, so the monotone convergence theorem applies to the partial sums and gives $\int_\RR \abs{f} = \sum_{n\ge2} 1/n^2$, which is finite because that series converges. Hence $f \in L^1(\RR)$.
 :::
 
 :::
 
-:::
-
-::: pf-step
-Conclusion:
+::: {.pf-step #no-limit}
+$f(x)$ does not tend to $0$ as $\abs{x} \to \infty$.
 
 ::: pf-proof
-A continuous $L^1$ function may produce narrow spikes of height 1 with summable areas, but uniform continuity prevents spike narrowing and forces $\lim_{\abs{x} \to \infty} f(x) = 0$.
+At the integer $n \ge 2$ the only nonzero term is $f_n$, whose value there is $1$, so $f(n) = 1$ for every $n \ge 2$. The sequence $n \to \infty$ therefore has $f(n) = 1$, and a function tending to $0$ at infinity would have $\abs{f}$ eventually below $1/2$ along it. So the limit is not $0$.
+:::
+
+:::
+
+::: {.pf-step #uniform-implies-limit}
+If $f \in L^1(\RR)$ is uniformly continuous then $f(x) \to 0$ as $\abs{x} \to \infty$.
+
+::: pf-proof
+Suppose $f(x)$ does not tend to $0$ at infinity. Then there are $\varepsilon_0 > 0$ and a sequence with $\abs{x_n} \to \infty$ and $\abs{f(x_n)} \ge \varepsilon_0$ for every $n$: a function tending to $0$ would have $\abs{f} < \varepsilon_0$ outside some bounded set, and the negation of that gives the sequence.
+
+Uniform continuity supplies $\delta > 0$ with $\abs{f(x) - f(y)} < \varepsilon_0/2$ whenever $\abs{x - y} < \delta$. For every $n$ and every $x \in (x_n - \delta, x_n + \delta)$ one then has
+$$\abs{f(x)} \ge \abs{f(x_n)} - \abs{f(x) - f(x_n)} \ge \varepsilon_0 - \varepsilon_0/2 = \varepsilon_0/2.$$
+Since $\abs{x_n} \to \infty$, a subsequence can be chosen with $\abs{x_{n_{k+1}} - x_{n_k}} \ge 2\delta$, so the intervals $I_k = (x_{n_k} - \delta, x_{n_k} + \delta)$ are pairwise disjoint. Summing over them,
+$$\int_\RR \abs{f} \ge \sum_{k=1}^\infty \int_{I_k} \abs{f} \ge \sum_{k=1}^\infty \frac{\varepsilon_0}{2}\cdot 2\delta = \infty,$$
+so $f \notin L^1(\RR)$, contradicting the hypothesis. Hence the limit is $0$.
 :::
 
 :::
 
 :::
 
+
 :::
-
-

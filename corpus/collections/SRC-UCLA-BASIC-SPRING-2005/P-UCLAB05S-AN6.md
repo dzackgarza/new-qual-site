@@ -5,7 +5,9 @@ kind: problem
 title: Compactness of a normalized family of Lipschitz functions
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Arzela-Ascoli Theorem
+  - Lipschitz Continuity
 relations: []
 review: draft
 audit:

@@ -30,6 +30,18 @@ audit:
     countable subcover as the family indexed by those x alone, "U_{x_i n} x V_{x_i n}", which is
     one set per x; the card takes the union of the finitely many members chosen for each x, which
     is what the tube-lemma step produces. The card also settles the empty case X = empty.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Repaired and restructured. The card was a label-step with an empty proof over nine nested
+    one-sentence claims, and it stated the tube lemma's conclusion without its hypothesis being
+    used at the right place. It is now three proved steps: the slice is compact so finitely many
+    cover members cover it, and the tube lemma applied to their union gives the tube;
+    Lindelöfness of X extracts countably many tubes; and the countable union of the finite
+    subcollections is a countable subcover. The empty-space case the card mentions at the start
+    is subsumed, an empty space being Lindelöf. Not claimed: a retained solution set; the
+    collection's provenance is the Munkres textbook, whose text is not retained here.
 ---
 
 ::: {.exercise}
@@ -38,79 +50,39 @@ Show that if $X$ is Lindelöf and $Y$ is compact, then $X \times Y$ is Lindelöf
 :::
 
 ::: {.solution}
+Throughout $X$ is Lindelöf, $Y$ is compact, and $\mathcal{A}$ is an open cover of $X \times Y$; a space is Lindelöf when every open cover has a countable subcover. The exercise is Munkres, *Topology* (2000), §30.
 
 ::: pf
 
-::: {.pf-step #slices-finite-subcovers}
-Slices $\{x\} \times Y$ and finite subcovers:
-Let $\mathcal{A}$ be any open cover of $X \times Y$.
-If $X=\varnothing$, then $X\times Y=\varnothing$ is Lindelöf. Assume $X\neq\varnothing$ below.
-For each $x \in X$, there exists a finite subcollection $\mathcal{A}_x \subset \mathcal{A}$ and an open neighborhood $U_x \subseteq X$ of $x$ such that:
-$$U_x \times Y \subseteq \bigcup_{A \in \mathcal{A}_x} A.$$
+::: {.pf-step #tubes}
+For each $x \in X$ there are an open neighbourhood $U_{x}$ of $x$ and a finite subcollection $\mathcal{A}_{x} \subseteq \mathcal{A}$ with $U_{x} \times Y \subseteq \bigcup_{A \in \mathcal{A}_{x}}A$.
 
 ::: pf-proof
-
-::: pf-step
-The slice $\{x\} \times Y$ is homeomorphic to $Y$, hence compact.
-:::
-
-::: pf-step
-Since $\mathcal{A}$ is an open cover of $X \times Y$, it covers $\{x\} \times Y$. By compactness of $\{x\} \times Y$, there exists a finite subcollection $\mathcal{A}_x = \{A_1, \dots, A_k\} \subset \mathcal{A}$ such that $\{x\} \times Y \subseteq \bigcup_{i=1}^k A_i =: W_x$.
-:::
-
-::: pf-step
-The set $W_x$ is open in $X \times Y$ and contains the slice $\{x\} \times Y$.
-:::
-
-::: pf-step
-Since $Y$ is compact, the Tube Lemma applies: there exists an open neighborhood $U_x$ of $x$ in $X$ such that $U_x \times Y \subseteq W_x$.
-:::
+The slice $\theset{x} \times Y$ is homeomorphic to $Y$ under $y \mapsto (x,y)$, hence compact, and $\mathcal{A}$ covers it; so finitely many $A_{1},\ldots,A_{k} \in \mathcal{A}$ cover $\theset{x}\times Y$. Their union $W_{x}$ is open and contains the slice, so the tube lemma — for a compact factor $Y$ every open set containing $\theset{x}\times Y$ contains a tube $U_{x}\times Y$ — gives an open neighbourhood $U_{x}$ of $x$ with $U_{x}\times Y \subseteq W_{x}$.
 
 :::
 
 :::
 
-::: {.pf-step #countable-subcover-of-x}
-Countable subcover of $X$:
-There exists a countable sequence of points $(x_n)_{n=1}^\infty$ in $X$ such that $X = \bigcup_{n=1}^\infty U_{x_n}$.
+::: {.pf-step #countable}
+There are $x_{1}, x_{2}, \ldots \in X$ with $X = \bigcup_{n}U_{x_{n}}$.
 
 ::: pf-proof
-The collection $\{U_x : x \in X\}$ is an open cover of $X$. Since $X$ is Lindelöf, there exists a countable subcover $\{U_{x_n} : n \in \ZZ_+\}$.
+By step [](#tubes){.pf-ref} the sets $U_{x}$, $x \in X$, form an open cover of $X$, and $X$ is Lindelöf, so countably many of them cover $X$.
+
 :::
 
 :::
 
 ::: pf-step
-Construction of the countable subcover of $X \times Y$:
-The subcollection $\mathcal{A}^* = \bigcup_{n=1}^\infty \mathcal{A}_{x_n} \subset \mathcal{A}$ is a countable open cover of $X \times Y$.
+$X \times Y$ is Lindelöf.
 
 ::: pf-proof
-
-::: pf-step
-Countability: Each $\mathcal{A}_{x_n}$ is finite by step [](#slices-finite-subcovers){.pf-ref}. A countable union of finite sets is countable, so $\mathcal{A}^*$ is countable.
-:::
-
-::: pf-step
-Covering property: For any $(x, y) \in X \times Y$, step [](#countable-subcover-of-x){.pf-ref} guarantees $x \in U_{x_m}$ for some $m \in \ZZ_+$.
-:::
-
-::: pf-step
-Then $(x, y) \in U_{x_m} \times Y \subseteq \bigcup_{A \in \mathcal{A}_{x_m}} A \subseteq \bigcup_{A \in \mathcal{A}^*} A$.
-:::
-
-::: pf-step
-Thus $\mathcal{A}^*$ covers $X \times Y$.
-:::
+$X \times Y = \bigcup_{n}\bigl(U_{x_{n}} \times Y\bigr)$, and each $U_{x_{n}}\times Y$ is contained in $\bigcup_{A \in \mathcal{A}_{x_{n}}}A$, a union of finitely many members of $\mathcal{A}$ by step [](#tubes){.pf-ref}. Hence the countable subcollection $\bigcup_{n}\mathcal{A}_{x_{n}} \subseteq \mathcal{A}$ covers $X\times Y$; being a countable union of finite sets, it is countable. Every open cover $\mathcal{A}$ therefore has a countable subcover, which is the definition of $X\times Y$ being Lindelöf.
 
 :::
 
 :::
 
-::: pf-step
-Conclusion:
-Every open cover $\mathcal{A}$ of $X \times Y$ admits a countable subcover $\mathcal{A}^*$, so $X \times Y$ is Lindelöf. Q.E.D.
 :::
-
-:::
-
 :::

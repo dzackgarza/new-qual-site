@@ -5,7 +5,7 @@ order: 13
 
 # Appendices
 
-- [[appendix-fta-proofs|Proofs of the fundamental theorem of algebra]], by the argument principle, Rouché's theorem, Liouville's theorem, and the open mapping theorem.
+- [[appendix-fta-proofs|Routes to the fundamental theorem of algebra]], through [[T-JXDQT|the argument principle]], [[T-CJCKL|Rouché's theorem]], [[T-QHIHJ|Liouville's theorem]], and [[C-FRF33|the open mapping theorem]].
 
 - [[appendix-unsorted|The Gamma function and conic sections]], the $\Gamma$-function identities and the standard conics.
 

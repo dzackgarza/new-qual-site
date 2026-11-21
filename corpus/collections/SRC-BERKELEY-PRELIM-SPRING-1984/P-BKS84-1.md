@@ -25,6 +25,13 @@ audit:
     J=integral_0^infinity log(t)/(1+t^2) dt. Splitting J at 1 and
     substituting t=1/u in its second half shows the two halves cancel,
     so the value is pi log(a)/(2a).
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Spring84.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -35,6 +42,8 @@ $$
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Spring 1984, retained in this repository as `assets/attachments/Spring84.pdf`; the statement below is its wording.
+
 ::: pf
 
 ::: {.pf-step #integral-converges-absolutely}

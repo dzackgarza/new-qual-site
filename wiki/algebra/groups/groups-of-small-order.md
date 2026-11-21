@@ -8,11 +8,13 @@ topics:
 
 # Groups of small order
 
-## Groups of special orders
+Classifications of groups of small order reduce to three arguments: the order is a prime power, so the group is abelian or has a normal Sylow subgroup to build products from; the order is a product of two primes, so Sylow forces the larger Sylow subgroup normal and the group is a semidirect product read off from the twisting map; or the order has three prime factors, so [[T-4XKGD|Frattini's argument]] and the solvability of $p$-groups and of groups of order $pq$ finish it.
 
-Every group of prime order $p$ is cyclic, and every group of order $p^2$ is abelian, hence isomorphic to $\ZZ/p^2$ or $\ZZ/p\times\ZZ/p$.
-For primes $p<q$, a group of order $pq$ has a normal Sylow $q$-subgroup $Q\cong\ZZ/q$, and is isomorphic to $\ZZ/q\semidirect_\psi\ZZ/p$ for a homomorphism $\psi\colon\ZZ/p\to\Aut(\ZZ/q)\cong(\ZZ/q)^\times$; a nontrivial $\psi$ exists if and only if $p\divides q-1$.
-For orders with more prime factors, [[T-4XKGD|Frattini's argument]] factors $G$ as $N_G(P)\,N$ for a normal subgroup $N$ and a Sylow subgroup $P$ of $N$, every finite [[D-FIB7S|$p$-group]] is [[D-DFIDP|solvable]], and a group of order $pqr$ for distinct primes $p<q<r$ is solvable.
+## Counting Sylow subgroups first
+
+[[ST-DKYXZ]]
+
+## Orders with one, two, and three prime factors
 
 [[PR-LFGHA]]
 
@@ -20,17 +22,19 @@ For orders with more prime factors, [[T-4XKGD|Frattini's argument]] factors $G$ 
 
 [[PR-SLWTB]]
 
+[[L-WROBY]]
+
 [[T-4XKGD]]
 
 [[L-Q44MT]]
-
-[[L-WROBY]]
 
 [[PR-2ZOAV]]
 
 ## The small orders
 
-The abelian groups of each order are given by the structure theorem for finite abelian groups ([[PR-2JG3F]]).
+The nonabelian groups of a given order are separated by the invariants on [[algebra/groups/is-this-group-abelian|Is this group abelian?]].
+
+[[PR-2JG3F]]
 
 [[FF-VAKLJ]]
 

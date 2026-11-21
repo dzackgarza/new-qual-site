@@ -1,47 +1,23 @@
 ---
 order: 52
-title: Summation by parts and Abel's theorem
+title: Summation by parts
 ---
 
-# Summation by parts and Abel's theorem
+# Summation by parts
 
 [[PR-2MTPE]]
 
-::: {.proof}
-Let $A_n \coloneqq \sum_{k\leq n} a_k$, so that $a_k = A_k - A_{k-1}$.
-Reindexing the second sum and separating its boundary terms,
-$$
-\begin{aligned}
-\sum_{m\leq k \leq n} a_k b_k
-&= \sum_{m\leq k \leq n} (A_k - A_{k-1}) b_k \\
-&= \sum_{m\leq k \leq n} A_kb_k - \sum_{m-1\leq k \leq n-1} A_{k} b_{k+1} \\
-&= A_nb_n - A_{m-1} b_{m} + \sum_{m\leq k \leq n-1} A_kb_k - \sum_{m\leq k \leq n-1} A_{k} b_{k+1} \\
-&= A_nb_n - A_{m-1} b_{m} - \sum_{m\leq k \leq n-1} A_k(b_{k+1} - b_{k}).
-\end{aligned}
-$$
+The identity writes a finite sum as a boundary term plus a sum of differences, so a series converges when its partial sums are bounded and the difference of the other factor is summable.
+Both convergence tests below are consequences of it, with $b_k$ the factor whose partial sums are bounded.
 
-:::
+## Consequences for series
 
 [[FT-3ZL25]]
 
-[[T-B7YTE]]
-
 [[L-MYZOX]]
 
-::: {.example title="The alternating harmonic series"}
-Integrating the geometric series $\sum_{k\geq 0}(-z)^k = 1/(1+z)$ term by term gives
-$$
-\sum_{k\geq 1} {(-1)^{k+1} z^k \over k} = \log(1+z), \qquad \abs{z} < 1.
-$$
-The series converges at $z=1$ by the alternating series test, so [[T-B7YTE|Abel's theorem]] gives $\sum_{k\geq 1}(-1)^{k+1}/k = \lim_{x\to 1^-}\log(1+x) = \log 2$.
-
-:::
-
-::: {.example title="The converse of Abel's theorem fails"}
-Let $f(z) \coloneqq \sum_{n\geq 0} (-z)^n = 1/(1+z)$ for $\abs z<1$.
-Then $\lim_{x\to 1^-} f(x) = 1/2$, but the series $\sum_{n\geq 0}(-1)^n = 1-1+1-\cdots$ diverges.
-
-:::
+Abel's test is Dirichlet's test with $b_k = z^k$: for $\abs z = 1$ and $z\neq1$ the partial sums of $z^k$ are bounded by $2/\abs{1-z}$, and the coefficients $c_k$ decrease to $0$.
+The boundary behaviour of a power series at $z=1$ is [[T-B7YTE|Abel's theorem]], treated on [[complex-analysis/holomorphic-functions/power-series#Abel's theorem|Power series]].
 
 ## Problems
 

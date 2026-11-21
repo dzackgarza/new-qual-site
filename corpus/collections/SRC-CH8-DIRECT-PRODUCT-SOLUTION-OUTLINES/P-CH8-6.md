@@ -10,6 +10,17 @@ classification:
     - Direct Products
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Gallian, Contemporary Abstract Algebra, seventh edition, Chapter 8
+    Exercise 6, printed p. 167 (file p. 182 of the retained copy, whose running head on that
+    page is 167). The printed exercise is the card's statement word for word, so no repair
+    was needed; the solution's opening sentence now names the exercise and the page. Not
+    checked in this pass: the argument, which the edit does not touch.
+
 ---
 
 ::: {.problem}
@@ -17,7 +28,55 @@ Prove, by comparing orders of elements, that $\ZZ_{8} \oplus \ZZ_{2}$ is not iso
 :::
 
 ::: {.solution}
-Notice that $\ZZ _ { 8 } \oplus \ZZ _ { 2 }$ has an element of order 8, namely (1, 1), but $\ZZ _ { 4 } \oplus \ZZ _ { 4 }$ can not have an element of order 8 since the orders in $\ZZ _ { 4 }$ are 1, 2, and 4. (There is no way to get a least common multiple of 8 from 1, 2, and 4.)
+
+In the seventh edition this is Chapter 8 Exercise 6, where the printed
+words are the statement below.
+
+The argument is the card's own: the two groups have different sets of element orders.
+
+::: pf
+
+::: {.pf-step #order8}
+
+$\ZZ_{8}\oplus\ZZ_{2}$ has an element of order $8$.
+
+::: pf-proof
+
+The element $(1,1)$ has order $\operatorname{lcm}(o(1),o(1))=\operatorname{lcm}(8,2)=8$, since in a direct product the order of a pair is the least common multiple of the orders of its entries, and $1$ has order $8$ in $\ZZ_{8}$ and order $2$ in $\ZZ_{2}$.
+
+:::
+
+:::
+
+::: {.pf-step #noorder8}
+
+$\ZZ_{4}\oplus\ZZ_{4}$ has no element of order $8$.
+
+::: pf-proof
+
+An element $(a,b)\in\ZZ_{4}\oplus\ZZ_{4}$ has order $\operatorname{lcm}(o(a),o(b))$, and each of $o(a),o(b)$ divides $4$, so each lies in $\{1,2,4\}$. A least common multiple of two numbers from $\{1,2,4\}$ divides $4$, hence is $1$, $2$ or $4$, never $8$.
+
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+
+$\ZZ_{8}\oplus\ZZ_{2}\not\cong\ZZ_{4}\oplus\ZZ_{4}$.
+
+::: pf-proof
+
+An isomorphism preserves the order of every element, so it carries the set of element orders of one group onto that of the other. Steps [](#order8){.pf-ref} and [](#noorder8){.pf-ref} show the two sets differ:
+$$
+\boxed{8\in\{\text{element orders of }\ZZ_{8}\oplus\ZZ_{2}\}\quad\text{but}\quad 8\notin\{\text{element orders of }\ZZ_{4}\oplus\ZZ_{4}\}.}
+$$
+
+:::
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

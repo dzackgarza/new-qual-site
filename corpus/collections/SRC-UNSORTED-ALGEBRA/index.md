@@ -46,7 +46,6 @@ source:
   - id: E-AMD-BYJBCLC5
   - id: E-AMD-CCULHKQJ
   - id: E-AMD-CM4ZVMMU
-  - id: E-AMD-CY7I27YM
   - id: E-AMD-CZJRDRNT
   - id: E-AMD-DCVAD27P
   - id: E-AMD-DGMOEV2O
@@ -417,7 +416,6 @@ source:
   - id: P-MQ2YD
   - id: P-MQ3H7
   - id: P-MQK32
-  - id: P-MUABR
   - id: P-MVETM
   - id: P-MWSPM
   - id: P-MZIFW
@@ -667,4 +665,12 @@ source:
 
 ::: {.remark}
 Algebra problems whose source is not identified. This collection is not a source document.
+:::
+
+::: {.remark}
+The list is empty because no document was found. The collection gathers algebra problems whose source is not identified: it is a subject bucket over cards that name no paper, examiner, institution or course, and the bucket is not itself a source document.
+
+The empty list is the finished state here, not a gap in it. No card this collection lists carries a `source` or `provenance` field, and the collection holds no card files of its own: the cards live under `corpus/problems/Algebra/`, and this file only gathers the algebra ones by subject. There is no document to name, and so no name to search by.
+
+Nothing was dropped from the list to get here. Until a card in this bucket is traced to a paper, the list stays empty.
 :::

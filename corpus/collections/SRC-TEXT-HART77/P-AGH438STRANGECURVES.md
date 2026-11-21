@@ -28,6 +28,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.3.8, printed p. 88,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.3.8, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the derivative $(1,pt^{p-1},2pt^{2p-1})=(1,0,0)$ in characteristic $p$ and the common point $(1:0:0:0)$, and checked that the characteristic-zero step only uses that the differential of the projection dies at every nonsingular point.
+    Not checked: Yang's Solutions outside printed p. 88; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.3.8 at printed
+    p. 88 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -354,5 +374,7 @@ curve is a line, proving (b).
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.8, printed p. 222, text version `tmp/sources/hartshorne-solutions-egbert.md` (entry 4.3.16 for the characteristic-$p$ example and 4.3.17 for the characteristic-zero conclusion), computes the parametrized curve $(t,t^p,t^{2p})$ with its unique point at infinity through which every tangent passes, and in characteristic zero argues that a strange point gives an inseparable projection, impossible for separable maps.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.8, text version `tmp/sources/hartshorne-solutions-egbert.md` (entry 4.3.16 for the characteristic-$p$ example and 4.3.17 for the characteristic-zero conclusion), computes the parametrized curve $(t,t^p,t^{2p})$ with its unique point at infinity through which every tangent passes, and in characteristic zero argues that a strange point gives an inseparable projection, impossible for separable maps.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.3.8, gives (a) in one line: in characteristic $p$ the derivative of $(t,t^p,t^{2p})$ is $(1,0,0)$, so every tangent line is a translate of the single direction $(1,0,0)$ and all of them pass through the point at infinity $(1:0:0:0)$ of the $x$-axis, which is the strange point. Part (b) first projects away the ambient dimension --- from $O\notin X$ the image of $P$ is a strange point of $\varphi(X)$, so it suffices to treat $X\subseteq\PP^3$ --- and then attributes the conclusion $X\cong\PP^1$ to a theorem the entry cites only as 3.9. The argument that supplies it is the one the card carries: in characteristic zero the projection of $X$ from $P$ is ramified at every nonsingular point, because each tangent line passes through $P$ and the differential of the projection kills exactly the tangent directions through $P$, so the differential vanishes identically; a nonconstant morphism of curves in characteristic zero is separable, with ramification supported on a finite set, so this projection is constant and $X$ lies in a line through $P$. The reduction to $\PP^3$ is not needed for that step, which runs in any $\PP^n$.
 :::

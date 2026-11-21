@@ -11,7 +11,7 @@ No installation is required.
 
 - [Browse, filter, sample, and print problems](https://dzackgarza.github.io/new-qual-site/problems.html).
 
-- [Browse sources](https://dzackgarza.github.io/new-qual-site/exams.html): past exams, textbooks, homework sets, and compilations.
+- [Browse sources](https://dzackgarza.github.io/new-qual-site/sources.html): past exams, textbooks, homework sets, and compilations.
 
 - Press `/` on any page to search titles, statements, proofs, and topics.
 

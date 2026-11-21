@@ -15,6 +15,15 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked numerically. sqrt(1+cos 2x) = sqrt(2 cos^2 x) =
+    sqrt2 |cos x|, and the absolute value cannot be dropped on [0,pi] because cos changes sign at
+    pi/2, which is exactly the point the exercise is testing. Then int_0^pi |cos x| dx =
+    2 int_0^{pi/2} cos x dx = 2, so the value is 2 sqrt 2 = 2.8284..., which a numerical
+    quadrature reproduces. Both steps and the final value are right.
 ---
 
 ::: {.problem}

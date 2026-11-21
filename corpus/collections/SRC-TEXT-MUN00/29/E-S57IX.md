@@ -31,6 +31,18 @@ audit:
     q with Z = B, the hypotheses being exactly that B and C are locally compact Hausdorff; a
     composite of quotient maps is a quotient map. (tmp/sources/munkres-solutions-positron-
     ch3.pdf).
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card stood in queue D: its solution was prose with no numbered step. It is now a `pf`
+    with seven steps, three for the lemma and three for the theorem, each carrying a
+    `pf-proof`; the arguments and the attribution are unchanged. Cited by number only:
+    Exercise 29.10 (a point of a locally compact Hausdorff space has a compact neighbourhood),
+    Lemma 26.8 (the tube lemma), and the definitions of quotient map, saturation and
+    product map. Checked: that $B$ contains $x$ and is saturated, that $p(B)\times C\subseteq A$
+    pointwise, and that the second factor of part (b) is the first factor of (a) after the swap
+    homeomorphisms.
 ---
 
 ::: {.exercise}
@@ -54,35 +66,105 @@ If $B$ and $C$ are locally compact Hausdorff spaces, then $p \times q: A \times 
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.11, PDF p. 23** (`tmp/sources/munkres-solutions-positron-ch3.pdf`) for part (a) — its numbering runs past the ten exercises of §29 into the supplementary exercises on nets, where this is the last of them — with the saturation argument written out, as their paragraph only asserts the last step. Part (b) is not in that set and is proved below from part (a).
 
-(a) **Lemma.** If $p:X\to Y$ is a quotient map and $Z$ is locally compact Hausdorff, then $\pi=p\times i_{Z}:X\times Z\to Y\times Z$ is a quotient map.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.11** (`tmp/sources/munkres-solutions-positron-ch3.pdf`) for part (a) — its numbering runs past the ten exercises of §29 into the supplementary exercises on nets, where this is the last of them — with the saturation argument written out, as their paragraph only asserts the last step. Part (b) is not in that set and is proved below from part (a).
 
-*Proof.* $\pi$ is continuous and surjective. Let $A\subset Y\times Z$ with $\pi^{-1}(A)$ open in $X\times Z$; we show $A$ open.
+::: pf
 
-Let $y\times z\in A$ and $x\in p^{-1}(y)$; since $Z$ is locally compact Hausdorff there is a compact neighbourhood $C$ of $z$ (Exercise 29.10). Put
+::: pf-step
+
+(a) $\pi=p\times i_{Z}:X\times Z\to Y\times Z$ is continuous and surjective.
+
+::: pf-proof
+
+$\pi$ is the product of the continuous maps $p$ and $i_Z$, hence continuous. It is surjective because $p$ is: a point $(y,z)$ is $\pi(x,z)$ for any $x\in p^{-1}(y)$, and $p^{-1}(y)\ne\varnothing$ for every $y\in Y$.
+
+:::
+
+:::
+
+::: pf-step
+
+(a) Let $A\subset Y\times Z$ with $\pi^{-1}(A)$ open, let $y\times z\in A$ and $x\in p^{-1}(y)$, and let $C$ be a compact neighbourhood of $z$. Then
 $$
-B=\big\{x'\in X\ \mid\ \{x'\}\times C\subset\pi^{-1}(A)\big\},
+B=\{x'\in X\mid \{x'\}\times C\subset\pi^{-1}(A)\}
 $$
-so $x\in B$ because $\pi(x,c)=y\times c\in A$ for every $c\in C$.
+contains $x$, and it is open.
 
-$B$ is open: if $x'\in B$ then $\{x'\}\times C\subset\pi^{-1}(A)$, and by the tube lemma applied in $X\times C$ (with $C$ compact) there is a neighbourhood $U$ of $x'$ with $U\times C\subset\pi^{-1}(A)$, i.e. $U\subset B$.
+::: pf-proof
 
-$B$ is saturated: if $x'\in B$ and $p(x'')=p(x')$, then for $c\in C$ one has $\pi(x'',c)=p(x'')\times c=p(x')\times c=\pi(x',c)\in A$, so $x''\in B$.
+$Z$ is locally compact Hausdorff, so $z$ has a compact neighbourhood $C$ (Exercise 29.10). For $c\in C$ we have $\pi(x,c)=p(x)\times c=y\times c\in A$, so $\{x\}\times C\subseteq\pi^{-1}(A)$ and $x\in B$. For openness, let $x'\in B$; then $\{x'\}\times C$ is a compact slice inside the open set $\pi^{-1}(A)\cap(X\times C)$ of $X\times C$, so the tube lemma (Munkres, Lemma 26.8) gives a neighbourhood $U$ of $x'$ with $U\times C\subseteq\pi^{-1}(A)$, that is $U\subseteq B$.
 
-So $p(B)$ is open in $Y$, $p$ being a quotient map and $B$ open and saturated. And
+:::
+
+:::
+
+::: pf-step
+
+(a) $B$ is saturated, so $p(B)$ is open in $Y$, and
 $$
-(y,z)\in p(B)\times\operatorname{int}C\subset A,
+(y,z)\in p(B)\times\operatorname{int}C\subset A;
 $$
-since $y'=p(x')\in p(B)$ and $z'\in C$ give $y'\times z'=\pi(x',z')\in A$. So every point of $A$ has an open neighbourhood inside $A$, and $A$ is open. $\square$
+hence $A$ is open and $\pi$ is a quotient map.
 
-(b) **Theorem.** If $p:A\to B$ and $q:C\to D$ are quotient maps with $B$ and $C$ locally compact Hausdorff, then $p\times q:A\times C\to B\times D$ is a quotient map.
+::: pf-proof
 
-*Proof.* Factor $p\times q$ as the composite
+If $x'\in B$ and $p(x'')=p(x')$, then for every $c\in C$ one has $\pi(x'',c)=p(x'')\times c=p(x')\times c=\pi(x',c)\in A$, so $x''\in B$ and $B=p^{-1}(p(B))$ is saturated. $p$ is a quotient map and $B$ is open and saturated, so $p(B)$ is open in $Y$. For $y'=p(x')\in p(B)$ and $z'\in C$ we have $y'\times z'=\pi(x',z')\in A$, so $p(B)\times C\subseteq A$; and $\operatorname{int}C$ is an open neighbourhood of $z$ contained in $C$. Thus $p(B)\times\operatorname{int}C$ is an open neighbourhood of $y\times z$ inside $A$, and every point of $A$ is interior to it. Since $\pi$ is continuous and surjective (step 1) and pulls open sets of $A$ back to open sets, $\pi$ is a quotient map.
+
+:::
+
+:::
+
+::: pf-step
+
+(b) $p\times q:A\times C\to B\times D$ factors as
 $$
-A\times C\ \xrightarrow{\ p\times i_{C}\ }\ B\times C\ \xrightarrow{\ i_{B}\times q\ }\ B\times D,
+A\times C\ \xrightarrow{\ p\times i_{C}\ }\ B\times C\ \xrightarrow{\ i_{B}\times q\ }\ B\times D.
 $$
-which is legitimate since $(i_{B}\times q)\big((p\times i_{C})(a,c)\big)=(i_{B}\times q)(p(a),c)=(p(a),q(c))$.
 
-The first factor is a quotient map by (a) applied to $p$ with $Z=C$, which is locally compact Hausdorff by hypothesis. The second factor is $i_{B}\times q$; up to the homeomorphisms that interchange the two factors it is $q\times i_{B}:C\times B\to D\times B$, which is a quotient map by (a) applied to $q$ with $Z=B$, locally compact Hausdorff by hypothesis — and composing a quotient map with a homeomorphism on either side leaves a quotient map. A composite of two quotient maps is a quotient map, so $p\times q$ is one. $\square$
+::: pf-proof
+
+For $(a,c)\in A\times C$ the composite sends it to $(p(a),c)$ and then to $(p(a),q(c))$, which is $(p\times q)(a,c)$; the two maps agree pointwise, so the displayed factorisation is legitimate.
+
+:::
+
+:::
+
+::: pf-step
+
+(b) Both factors are quotient maps.
+
+::: pf-proof
+
+The first factor is $p\times i_C$ with $C$ locally compact Hausdorff, so it is a quotient map by part (a). The second is $i_B\times q:B\times C\to B\times D$; composing with the swap homeomorphisms $C\times B\to B\times C$ and $D\times B\to B\times D$ it becomes $q\times i_B:C\times B\to D\times B$, which is a quotient map by part (a) with $Z=B$, locally compact Hausdorff by hypothesis. Composing a quotient map with homeomorphisms on both sides gives a quotient map, so $i_B\times q$ is one.
+
+:::
+
+:::
+
+::: pf-step
+
+(b) Hence $p\times q$ is a quotient map.
+
+::: pf-proof
+
+A composite of two quotient maps is a quotient map: if $\pi_1$ and $\pi_2$ are quotient and $\pi_2\circ\pi_1$ is continuous, then a set in the target is open exactly when its preimage under $\pi_2\circ\pi_1$ is open, because each factor has that property. By steps 4 and 5 this applies to the factorisation of $p\times q$.
+
+:::
+
+:::
+
+::: pf-step
+
+Both parts are proved: the lemma for a single quotient map times a locally compact Hausdorff factor, and the theorem for a product of two quotient maps with locally compact Hausdorff middle spaces.
+
+::: pf-proof
+
+Part (a) is steps 1--3 and part (b) steps 4--6.
+
+:::
+
+:::
+
+:::
 :::

@@ -38,6 +38,20 @@ audit:
     d=(-1)^{n+1}, equal to the antipodal degree. The two-point case n=0 is covered by its only
     fixed-point-free map, the antipodal transposition, rather than by applying that formula.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 2 of §2.C, printed p. 184, in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`, and against the transcription's source,
+    DeMason, Hatcher 2.C.2, printed p. 84 — the exercise and its solution both fall on that page,
+    whose next heading is 2.C.3. Checked: $\deg a=(-1)^{n+1}$ as the composite of $n+1$ coordinate
+    reflections, each of degree $-1$; for $n\geq1$ the Lefschetz number is $\Lambda(f)=1+(-1)^nd$,
+    the trace on $H_0$ being $1$ and that on $H_n$ being $d$, all other reduced groups vanishing; and
+    $1+(-1)^nd=0$ exactly when $d=(-1)^{n+1}$. The case $n=0$ is handled separately and correctly: on
+    two points the only fixed-point-free self-map is the transposition, which is the antipodal map.
+    No defect.
+
 ---
 
 ::: {.problem}
@@ -66,7 +80,7 @@ After applying simplicial approximation, the Lefschetz number of $f$ is $\Lambda
 
 ::: pf-proof
 
-Triangulate $S^n$ as a finite simplicial complex. The simplicial approximation theorem asserts that after further barycentric subdivision $f$ is homotopic to a simplicial map; homotopy preserves both degree and Lefschetz number, so I compute for that approximation. As DeMason argues on p. 84, for a path-connected simplicial complex every vertex lies in the same $H_0$ class: a $1$-simplex joining them has boundary their difference. So a simplicial map induces the identity on $H_0$ and has trace $1$ there. In the remaining dimension the homology of a sphere is zero unless $k=n$, and there the induced map is multiplication by $d$. Therefore
+Triangulate $S^n$ as a finite simplicial complex. The simplicial approximation theorem asserts that after further barycentric subdivision $f$ is homotopic to a simplicial map; homotopy preserves both degree and Lefschetz number, so I compute for that approximation. As DeMason argues, for a path-connected simplicial complex every vertex lies in the same $H_0$ class: a $1$-simplex joining them has boundary their difference. So a simplicial map induces the identity on $H_0$ and has trace $1$ there. In the remaining dimension the homology of a sphere is zero unless $k=n$, and there the induced map is multiplication by $d$. Therefore
 $$
 \Lambda(f)=1+(-1)^n d.
 $$
@@ -90,6 +104,6 @@ which exactly means $d=(-1)^{n+1}$. For $n=0$ no such formula in $H_0$ is needed
 :::
 
 
-This is **Kenneth DeMason's argument in *M382C Full Credit HW Problems* (2021)**, Hatcher 2.C.2, printed p. 84 of the local file `tmp/sources/demason-m382c-hatcher-20210404.pdf` ([author's PDF](https://math.mcmaster.ca/~demasonk/files/exercises/DeMason%2C%20Kenneth%20M382C%20HW%20Full%20Credit%2020210404.pdf)). The central facts are that $H_0$ contributes trace $1$, $H_n$ contributes $(-1)^n d$ because $f_*$ is multiplication by $d$, and the antipodal degree comes from composition of reflections.
+This is **Kenneth DeMason's argument in *M382C Full Credit HW Problems* (2021)**, Hatcher §2.C Exercise 2, in the local file `tmp/sources/demason-m382c-hatcher-20210404.pdf` ([author's PDF](https://math.mcmaster.ca/~demasonk/files/exercises/DeMason%2C%20Kenneth%20M382C%20HW%20Full%20Credit%2020210404.pdf)). The central facts are that $H_0$ contributes trace $1$, $H_n$ contributes $(-1)^n d$ because $f_*$ is multiplication by $d$, and the antipodal degree comes from composition of reflections.
 :::
 

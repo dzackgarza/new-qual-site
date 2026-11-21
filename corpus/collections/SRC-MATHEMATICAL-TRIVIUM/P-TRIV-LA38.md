@@ -31,6 +31,8 @@ Consider the matrix $A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$, $a, b, c
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 Write
 $$
 g_1=
@@ -449,7 +451,7 @@ $$
 
 ::: {.pf-step #s1-15}
 
-Therefore the decomposition
+Part (d): therefore the decomposition
 $$
 \boxed{A=RPT}
 $$
@@ -465,22 +467,9 @@ Steps [](#s1-12){.pf-ref} through [](#s1-14){.pf-ref} show uniqueness of the thr
 
 :::
 
-::: {.pf-step #s1-16}
-
-Part (d) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-15){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Steps [](#s1-4){.pf-ref}, [](#s1-7){.pf-ref}, and [](#s1-11){.pf-ref}, and [](#s1-16){.pf-ref} establish parts (a)--(d).
+Steps [](#s1-4){.pf-ref}, [](#s1-7){.pf-ref}, and [](#s1-11){.pf-ref}, and [](#s1-15){.pf-ref} establish parts (a)--(d).
 
 :::
 

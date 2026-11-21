@@ -36,7 +36,7 @@ If $0\to A\to L^\bullet$ is a resolution of $A$ by $F$-acyclic objects, then $R^
 Injective objects are $F$-acyclic for every left exact $F$, and projective objects are acyclic for the left derived functors of every right exact functor.
 An acyclic object need not be injective: on a one-point space every sheaf is $\Gamma$-acyclic, and the constant sheaf $\ZZ$ is not an injective abelian group.
 
-Flasque sheaves are $\Gamma$-acyclic, so a flasque resolution computes $H^i(X;\mcf)$.
-Free and projective modules are acyclic for $\wait \tensor_A N$, so a free resolution computes $\Tor$.
-Quasicoherent sheaves on an affine scheme are $\Gamma$-acyclic by Serre's theorem; hence for a Noetherian separated scheme $X$, an open affine cover $\mathfrak U$, and a quasicoherent sheaf $\mcf$, the Čech complex of $\mathfrak U$ computes $H^i(X,\mcf)$ [@Har77, Theorem III.4.5].
+Flasque sheaves are $\Gamma$-acyclic ([[D-COHFLQ]]), so a flasque resolution computes $H^i(X;\mcf)$, as does the Godement resolution ([[D-COHGODEMENT]]).
+Free and projective modules are acyclic for $-\tensor_A N$, so a free resolution computes $\Tor$.
+Quasicoherent sheaves on an affine scheme are $\Gamma$-acyclic by Serre's theorem on the vanishing of higher cohomology on affine schemes [@Har77, Theorem III.3.5]; hence for a Noetherian separated scheme $X$, an open affine cover $\mathfrak U$, and a quasicoherent sheaf $\mcf$, the Čech complex of $\mathfrak U$ computes $H^i(X,\mcf)$ [@Har77, Theorem III.4.5].
 :::

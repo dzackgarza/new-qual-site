@@ -9,7 +9,7 @@ topics:
 
 # Sheaves
 
-On $X=\CC\setminus\{0\}$, $\exp\colon\OO_X\to\OO_X^\times$ is a surjection of sheaves, since $\exp$ is surjective on every stalk, and it is not surjective on global sections: $z\in\OO^\times(X)$ has no logarithm on $X$.
+On $X=\CC\setminus\{0\}$, $\exp\colon\OO_X\to\OO_X^\times$ is a surjection of sheaves, since $\exp$ is surjective on every stalk, and it is not surjective on global sections: $z\in\OO^\times(X)$ has no logarithm on $X$ ([[FE-DNTT6]]).
 
 ## Syllabus
 

@@ -18,6 +18,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Restructured into a structured proof under #2. Re-checked both directions of the equivalence
+    against the definition of $\overline A$ as the intersection of the closed sets containing $A$: an
+    open neighbourhood $U$ of $x$ missing $A$ gives the closed set $X\setminus U\supseteq A$ missing
+    $x$, and conversely a closed $F\supseteq A$ missing $x$ gives the open set $X\setminus F$ meeting
+    $A$ in nothing. Added: that $\overline A$ is contained in each such $F$, which is what the
+    definition of the intersection supplies, and the identification of the second direction as the
+    contrapositive. No defect found in the statement. The collection's provenance is the worksheet,
+    so no retained solution set covers the item.
 ---
 
 ::: {.problem}
@@ -26,7 +38,27 @@ Using this definition, show: $x\in\overline A$ if and only if every open set $U$
 :::
 
 ::: {.solution}
-Suppose first that $x\in\overline A$. If some open set $U\ni x$ were disjoint from $A$, then $X\setminus U$ would be a closed set containing $A$ but not $x$. This contradicts the definition of $\overline A$ as the intersection of all closed sets containing $A$. Hence every open neighborhood of $x$ meets $A$.
+No retained solution set covers this item, the collection's provenance being the worksheet, so the argument is the card's own; it unpacks the definition of $\overline A$ as the intersection of the closed sets containing $A$.
 
-Conversely, suppose every open neighborhood of $x$ meets $A$. If $x\notin\overline A$, then by the defining intersection there is a closed set $F\supseteq A$ with $x\notin F$. Its complement $X\setminus F$ is an open neighborhood of $x$ disjoint from $A$, contradiction. Therefore $x\in\overline A$.
+::: pf
+
+::: {.pf-step #inside}
+If $x\in\overline A$ then every open set containing $x$ meets $A$.
+
+::: pf-proof
+Suppose $U$ is open, contains $x$, and satisfies $U\cap A=\varnothing$. Then $X\setminus U$ is closed and contains $A$, since $A\subseteq X\setminus U$. As $\overline A$ is the intersection of all closed sets containing $A$, it is contained in $X\setminus U$, so $x\in X\setminus U$, contradicting $x\in U$.
+:::
+
+:::
+
+::: {.pf-step}
+If every open set containing $x$ meets $A$, then $x\in\overline A$.
+
+::: pf-proof
+Suppose $x\notin\overline A$. Since $\overline A$ is an intersection of closed sets containing $A$, there is a closed $F\supseteq A$ with $x\notin F$. Then $X\setminus F$ is open, contains $x$, and is disjoint from $A$ because $A\subseteq F$. So a neighbourhood of $x$ misses $A$, which is the negation of the hypothesis. Hence $x\in\overline A$, and the two directions are steps [](#inside){.pf-ref} and this one.
+:::
+
+:::
+
+:::
 :::

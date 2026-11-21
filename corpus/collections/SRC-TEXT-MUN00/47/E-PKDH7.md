@@ -36,6 +36,28 @@ audit:
     Murayama's selection stops at Chapter 4, dbFin has no chapter-7 page, and the Math StackExchange
     searches of this pass for these four families, recorded in the COMPLAINTS.md entry for §43--§50,
     returned nothing on them. The card keeps its own proof.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured as a Lamport proof of the four determinations already on the card, all of which
+    are correct. Added: the choice n > pi/(2 delta) that makes the witness x = pi/(2n) lie
+    within delta in (a); the two-sided bound max{1, |x|} for h_n in (c) with the case
+    distinction on |x|; the mean value theorem as the reason |sin y - sin x| <= |y - x| in (b)
+    and (d); and the convergence x^{1/n} -> 1 that produces the failure in (c). Not claimed: a
+    retained solution set; the collection's provenance is the Munkres textbook, whose text is
+    not retained here.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read. All four answers are right: $f_n=x+\sin nx$ is pointwise bounded by
+    $|x|+1$ and fails equicontinuity at $0$, since $x=\pi/(2n)$ gives $f_n(x)-f_n(0)=\pi/(2n)+1>1$;
+    $g_n=n+\sin x$ is unbounded at each point and equicontinuous with $\delta=\varepsilon$;
+    $h_n=|x|^{1/n}$ is bounded by $\max\{1,|x|\}$ and fails equicontinuity at $0$; and
+    $k_n=n\sin(x/n)$ satisfies $|k_n(x)|\le|x|$ and $|k_n(y)-k_n(x)|\le|y-x|$. The failure in (c)
+    now names its $\varepsilon=1/2$. Citation by number: §47 Exercise 1.
+
 ---
 
 ::: {.exercise}
@@ -53,21 +75,59 @@ Which are equicontinuous?
 :::
 
 ::: {.solution}
-(a) For fixed $x$, $\abs{x+\sin nx}\le \abs{x}+1$, so the family is pointwise bounded. It is not equicontinuous: at $0$, for any $\delta>0$ choose $n$ large and $x=\pi/(2n)<\delta$; then $\abs{f_n(x)-f_n(0)}=x+1>1$.
+Throughout a family $\mathcal{G} \subseteq \mathcal{C}(\RR,\RR)$ is pointwise bounded when for each $x$ the set $\theset{g(x) \mid g \in \mathcal{G}}$ is bounded, and equicontinuous when for each $x$ and each $\varepsilon > 0$ there is $\delta > 0$ with $\abs{g(y) - g(x)} < \varepsilon$ for all $\abs{y - x} < \delta$ and all $g \in \mathcal{G}$. The exercise is Munkres, *Topology* (2000), §47.
 
-(b) $g_n(x)=n+\sin x$ is not pointwise bounded at any $x$. It is equicontinuous since
-$$
-\abs{g_n(x)-g_n(y)}=\abs{\sin x-\sin y}\le\abs{x-y}
-$$
-for all $n$.
+::: pf
 
-(c) The family $h_n(x)=\abs{x}^{1/n}$ is pointwise bounded: for fixed $x$, it lies between $0$ and $\max\{1,\abs{x}\}$. It is not equicontinuous at $0$: given $\delta>0$, choose $0<x<\min\{\delta,1\}$ and then $n$ so large that $x^{1/n}>1/2$, whereas $h_n(0)=0$.
+::: {.pf-step #a-bounded}
+(a) The family $f_{n}(x) = x + \sin nx$ is pointwise bounded and not equicontinuous.
 
-(d) Since $\abs{n\sin(x/n)}\le \abs{x}$, the family is pointwise bounded. Also
-$$
-\abs{k_n(x)-k_n(y)}\le n\abs{x/n-y/n}=\abs{x-y},
-$$
-so it is equicontinuous.
+::: pf-proof
+Boundedness: $\abs{f_{n}(x)} \le \abs{x} + \abs{\sin nx} \le \abs{x} + 1$ for every $n$. Failure of equicontinuity at $0$: take $\varepsilon = 1$ and any $\delta > 0$; choose $n > \pi/(2\delta)$ and $x = \pi/(2n) < \delta$. Then $f_{n}(x) - f_{n}(0) = \frac{\pi}{2n} + \sin\frac{\pi}{2} = \frac{\pi}{2n} + 1 > 1 = \varepsilon$.
 
-Thus (a): bounded, not equicontinuous; (b): equicontinuous, not bounded; (c): bounded, not equicontinuous; (d): both.
+:::
+
+:::
+
+::: {.pf-step #b-bounded}
+(b) The family $g_{n}(x) = n + \sin x$ is not pointwise bounded and is equicontinuous.
+
+::: pf-proof
+At a fixed $x$ one has $g_{n}(x) \ge n - 1$, which is unbounded above, so the family is not pointwise bounded. Equicontinuity: $\abs{g_{n}(y) - g_{n}(x)} = \abs{\sin y - \sin x} \le \abs{y - x}$ by the mean value theorem applied to $\sin$, and the bound does not involve $n$, so $\delta = \varepsilon$ serves at every point.
+
+:::
+
+:::
+
+::: {.pf-step #c-bounded}
+(c) The family $h_{n}(x) = \abs{x}^{1/n}$ is pointwise bounded and not equicontinuous.
+
+::: pf-proof
+At a fixed $x$: if $\abs{x} \ge 1$ then $\abs{x}^{1/n} \le \abs{x}$ because $t^{1/n} \le t$ for $t \ge 1$ and $n \ge 1$; if $\abs{x} \le 1$ then $\abs{x}^{1/n} \le 1$. So $0 \le h_{n}(x) \le \max\theset{1,\abs{x}}$ for every $n$. Failure of equicontinuity at $0$, with $\varepsilon = 1/2$: given $\delta > 0$ take $0 < x < \min\theset{\delta,1}$; since $x^{1/n} \to 1$ as $n \to \infty$ there is $n$ with $h_{n}(x) > 1/2$, while $h_{n}(0) = 0$, so $\abs{h_{n}(x) - h_{n}(0)} > 1/2$.
+
+:::
+
+:::
+
+::: {.pf-step #d}
+(d) The family $k_{n}(x) = n\sin(x/n)$ is pointwise bounded and equicontinuous.
+
+::: pf-proof
+Bounded: $\abs{k_{n}(x)} = n\abs{\sin(x/n)} \le n\abs{x/n} = \abs{x}$ using $\abs{\sin t} \le \abs{t}$. Equicontinuous: $\abs{k_{n}(y) - k_{n}(x)} = n\abs{\sin(y/n) - \sin(x/n)} \le n\abs{y/n - x/n} = \abs{y - x}$, again by the mean value theorem, with the factor $n$ cancelling.
+
+:::
+
+:::
+
+::: pf-step
+The four answers are: (a) pointwise bounded, not equicontinuous; (b) not pointwise bounded, equicontinuous; (c) pointwise bounded, not equicontinuous; (d) both.
+
+::: pf-proof
+Steps [](#a-bounded){.pf-ref}, [](#b-bounded){.pf-ref}, [](#c-bounded){.pf-ref} and [](#d){.pf-ref} settle the four families, each with an explicit bound or an explicit pair witnessing the failure.
+
+:::
+
+:::
+
+:::
 :::

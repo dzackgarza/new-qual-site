@@ -309,7 +309,8 @@ Steps [](#s1){.pf-ref} and [](#s8){.pf-ref} are exactly the two assertions of th
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.15, PDF p. 6, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he uses the gluing axioms, that a local morphism which vanishes on each member of a cover is zero and that morphisms given locally have their images glued section by section.
+The exercise is Hartshorne, Exercise II.1.15, headed "Sheaf Hom", read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is that exercise's text, the abelian-group structure on $\Hom(\restrictionof{\mcf}{U},\restrictionof{\mcg}{U})$ and the sheaf axiom for the presheaf $U\mapsto\Hom(\restrictionof{\mcf}{U},\restrictionof{\mcg}{U})$ included.
+
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.15, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he uses the gluing axioms, that a local morphism which vanishes on each member of a cover is zero and that morphisms given locally have their images glued section by section.
 The proof above is the same, with the abelian group structure, the compatibility of the local images, their additivity and the restriction identity written as separate steps.
-Agree.
 :::

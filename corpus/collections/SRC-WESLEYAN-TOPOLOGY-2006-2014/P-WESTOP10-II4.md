@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP10-II4
 kind: problem
 title: Four questions about three disk-identification spaces
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Classification of Surfaces, Fundamental Group]}
 relations: []
 review: draft
 audit:

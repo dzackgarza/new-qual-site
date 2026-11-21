@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-SQUAL1-08
 kind: problem
 title: Universal cover and homology of $\RP^2\vee S^2$
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Universal Cover, Homology, Wedge Sums]}
 relations: []
 review: draft
 audit:

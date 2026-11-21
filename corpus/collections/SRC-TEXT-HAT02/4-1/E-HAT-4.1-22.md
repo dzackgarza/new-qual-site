@@ -53,6 +53,39 @@ audit:
     introduced when the hint was restored, not two printed hints; one copy is removed. No other statement
     text is touched, and the "if and only if" reading of the exercise is unchanged.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 22 of §4.1, printed p. 359, with the bracketed hint printed once,
+    checked at PDF page 368 of the held book. Checked both directions. Forward: the inductive
+    construction adds countably many cells at each stage, the kernels being countable because
+    $\pi_n$ of a countable CW complex is countable — every map $S^n\to K$ has compact image, hence
+    lies in one of countably many finite subcomplexes, each with countable homotopy groups by
+    simplicial approximation against a finite simplicial model. Converse: a countable CW approximation
+    $K\to X$ transfers the homotopy groups, every class lies in the image from a finite subcomplex,
+    and there are countably many of those. No defect in the mathematics. The printed page is added,
+    the card having had none.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 22, Proposition A.1 and the simplicial approximation results of §2.C. One repair:
+    step `s2` justified "a compact subset of a CW complex lies in a finite subcomplex" by saying the
+    cells it does not meet have an open complement, which is false — the complement of a single open
+    cell is not open, and the cells a compact set misses are in any case not what bounds their number.
+    The step now carries Hatcher's own argument from Proposition A.1: a compact set meets only
+    finitely many cells, since one point in each of infinitely many would form an infinite closed
+    discrete subset of a compact space; the closures of the cells met are then finitely many cells by
+    closure-finiteness, and their union is the finite subcomplex. Steps `s1`, `s3` and `s4` are
+    unchanged and correct: a CW approximation transfers the homotopy groups; there are countably many
+    finite subcomplexes and countability of each one's pi_n goes through a finite simplicial model,
+    simplicial approximation over countably many triangulations, and a countable union of finite sets.
+    The forward direction, which is the card's first solution block, was re-read and left unchanged:
+    countably many cells at each stage because pi_1(X) and each kernel and each pi_{n+1}(X) are
+    countable, and pi_n of a countable CW complex is countable by the same compactness argument. The
+    card carries its two directions in two solution blocks, as delivered; merging them is a
+    formatting change and none was made. Not checked: no recomputation of any cardinality.
 ---
 
 ::: {.problem}
@@ -61,6 +94,8 @@ Show that a path-connected space $X$ has a CW approximation with countably many 
 :::
 
 ::: {.solution}
+The exercise is §4.1 Exercise 22, where the hint is printed in brackets.
+
 We use the standard inductive construction of a CW approximation, keeping track of cardinalities.
 
 Start with one $0$-cell and attach $1$-cells representing a generating set for $\pi_1(X)$. Since $\pi_1(X)$ is countable, only countably many $1$-cells are needed. Attach countably many $2$-cells to kill the kernel of the resulting map on $\pi_1$: the kernel is countable because the fundamental group of a countable CW complex is countable.
@@ -109,7 +144,7 @@ $\pi_n(K)$ is the union of the images of the $\pi_n(L)$ over the finite subcompl
 
 ::: pf-proof
 
-Every map $\sigma:S^n\to K$ has compact image. A compact subset of a CW complex meets only finitely many open cells, hence is contained in a finite subcomplex: the cells it does not meet have, by definition of the CW topology, an open complement, and the images of the attaching maps of the remaining cells together with the cells themselves form a finite subcomplex containing the image.
+Every map $\sigma:S^n\to K$ has compact image, and Hatcher's Proposition A.1 says that a compact subspace of a CW complex is contained in a finite subcomplex. The reason is that a compact $C$ can meet only finitely many cells: if it met infinitely many, choosing one point in each of them would give an infinite set meeting each closed cell in a finite, hence closed, subset, so closed in $K$ by the weak topology, and discrete, so an infinite closed discrete subspace of the compact space $C$. The cells met are therefore finitely many, their closures are finitely many cells in all by closure-finiteness, and the union of those closures is a finite subcomplex containing $C$.
 
 Hence every element $[\sigma]\in\pi_n(K)$ lies in the image of $\pi_n(L)\to\pi_n(K)$ for some finite subcomplex $L$.
 

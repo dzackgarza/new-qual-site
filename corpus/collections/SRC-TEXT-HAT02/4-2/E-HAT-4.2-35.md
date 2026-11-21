@@ -27,40 +27,83 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Restructured into a structured proof under #2. Re-checked: right multiplication by unit
+    quaternions preserves the norm and its orbits are the quaternionic lines, giving the Hopf bundle
+    with fibre $S^3$; complex numbers are central in $\quaternions$, so right multiplication by
+    $e^{i\theta}$ is coordinatewise complex scalar multiplication under
+    $\quaternions^{n+1}\cong\CC^{2n+2}$, whose orbit space on the unit sphere is $\CP^{2n+1}$; the
+    $S^1$-orbits in $S^3$ are the Hopf fibres, giving $S^2$; and the trivializations are
+    $S^3$-equivariant hence descend. Added: the centrality of $\CC$ in $\quaternions$ as the reason
+    the right action is the complex one, the freeness of the $S^1$-action, and the equivariance
+    clause that makes the descent work. No defect found in the statement, §4.2 Exercise 35; no
+    retained solution set covers it.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 401 carries the running head 392.
+    The durable part of the locator is that printed page; the file path names this machine's copy and
+    `tmp/sources` does not survive a VM reset. No mathematics changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The statement block carried the locator "printed page = PDF page - 9" and the name of the file the
+    exercise was read in. Both are removed: the exercise is cited as §4.2 Exercise 35, and the wording
+    is otherwise untouched. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 35; the statement below is its wording.
+
 Show that the fiber bundle $S^3 \to S^{4n+3} \to \quatprojective^n$ gives rise to a quotient fiber bundle $S^2 \to \CP^{2n+1} \to \quatprojective^n$ by factoring out the action of $S^1$ on $S^{4n+3}$ by complex scalar multiplication.
 :::
 
 ::: {.solution}
-View
-$$
-S^{4n+3}\subset\quaternions^{n+1}.
-$$
-The quaternionic Hopf bundle is the quotient by right multiplication of unit quaternions:
-$$
-S^3\longrightarrow S^{4n+3}\longrightarrow\quatprojective^n.
-$$
-Inside $S^3$ is the subgroup
-$$
-S^1=\{e^{i\theta}\}\subset\CC\subset\quaternions.
-$$
-Its action on $S^{4n+3}$ is precisely complex scalar multiplication after identifying
-$$
-\quaternions^{n+1}\cong\CC^{2n+2}.
-$$
-Therefore
-$$
-S^{4n+3}/S^1\cong\CP^{2n+1}.
-$$
+No retained solution set covers this exercise, so the argument is the card's own; write $\quatprojective^n$ for the quaternionic projective space of quaternionic lines in $\quaternions^{n+1}$.
 
-Although $S^1\subset S^3$ is not a normal subgroup, the quotient is taken fiberwise by the right $S^1$-action: over a quaternionic line $L$, the Hopf fiber is $S^3$, and dividing that fiber by the right $S^1$-action gives
-$$
-S^3/S^1\cong S^2.
-$$
-The original local trivializations of the quaternionic Hopf bundle are $S^3$-equivariant, hence descend after quotienting by $S^1$. Thus we obtain a locally trivial bundle
-$$
-\boxed{S^2\longrightarrow\CP^{2n+1}\longrightarrow\quatprojective^n.}
-$$
+::: pf
+
+::: {.pf-step #hopf}
+$S^{4n+3}\subseteq\quaternions^{n+1}$ is the unit sphere, and the quaternionic Hopf bundle is the orbit map of right multiplication by $S^3$.
+
+::: pf-proof
+The unit sphere in $\quaternions^{n+1}\cong\RR^{4n+4}$ is a manifold of dimension $4n+3$. Right multiplication by unit quaternions preserves the norm, so $S^3$ acts on $S^{4n+3}$ on the right, and its orbits are the sets of unit vectors spanning a fixed quaternionic line, so the orbit space is $\quatprojective^n$ and the orbit map $S^{4n+3}\to\quatprojective^n$ has fibre $S^3$. It is a fibre bundle with local trivializations obtained from quaternionic linear charts.
+:::
+
+:::
+
+::: {.pf-step #complex-action}
+The subgroup $S^1=\{e^{i\theta}\}\subseteq\CC\subseteq\quaternions$ of $S^3$ acts on $S^{4n+3}$ by complex scalar multiplication under the identification $\quaternions^{n+1}\cong\CC^{2n+2}$, and the orbit space is $\CP^{2n+1}$.
+
+::: pf-proof
+For $z\in\CC$ and $q\in\quaternions$ one has $qz=zq$, the complex numbers being central in $\quaternions$; so right multiplication by $e^{i\theta}\in S^1$ acts on each coordinate by multiplication by $e^{i\theta}$, which under $\quaternions\cong\CC^2$ coordinatewise is complex scalar multiplication on $\CC^{2n+2}$. The orbits of that action on the unit sphere of $\CC^{2n+2}$ are the complex lines, so the orbit space is $\CP^{2n+1}$.
+:::
+
+:::
+
+::: {.pf-step #fibre}
+Dividing each fibre $S^3$ by the right $S^1$-action gives $S^2$, and the local trivializations descend.
+
+::: pf-proof
+The right action of $S^1$ on $S^3$ is free, its orbits being the cosets $qS^1$, and the orbit map $S^3\to S^3/S^1$ is the Hopf bundle $S^3\to S^2$; so each fibre of the quaternionic bundle becomes an $S^2$. A local trivialization $\restrictionof{S^{4n+3}}{U}\cong U\times S^3$ of the quaternionic bundle is $S^3$-equivariant, hence $S^1$-equivariant for the right action, so it descends to a homeomorphism of $S^{4n+3}/S^1$ over $U$ with $U\times(S^3/S^1)$.
+:::
+
+:::
+
+::: {.pf-step}
+$\boxed{S^2\longrightarrow\CP^{2n+1}\longrightarrow\quatprojective^n}$ is a fibre bundle.
+
+::: pf-proof
+By step [](#complex-action){.pf-ref} the total space is $S^{4n+3}/S^1=\CP^{2n+1}$ and the base remains $\quatprojective^n$, the $S^1$-action preserving the quaternionic line of a vector because it is right multiplication by scalars. Steps [](#fibre){.pf-ref} give the fibre $S^2$ and local triviality, so this is a fibre bundle, obtained from the quaternionic Hopf bundle by factoring out the action of $S^1$ by complex scalar multiplication.
+:::
+
+:::
+
+:::
 :::

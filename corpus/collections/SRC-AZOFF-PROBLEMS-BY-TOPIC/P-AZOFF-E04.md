@@ -43,6 +43,8 @@ Determine, with proof, which of the following are possible.
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem compilation alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #s1}

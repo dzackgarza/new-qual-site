@@ -38,7 +38,7 @@ Then use (3.7), (Ex. 4.1), consider $\operatorname{ker}\beta$ and $\coker\beta$,
 :::
 
 ::: {.hint}
-For (b), apply $\sheafhom(\wait,\mcf)$ to $\alpha$ and use (II, Ex. 5.17e).
+For (b), apply $\sheafhom(-,\mcf)$ to $\alpha$ and use (II, Ex. 5.17e).
 :::
 
 ::: {.solution}

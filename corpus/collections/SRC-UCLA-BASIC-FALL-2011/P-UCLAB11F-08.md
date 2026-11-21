@@ -6,7 +6,9 @@ title: Kernel stabilization criterion for diagonalizability
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Diagonalization
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 audit:

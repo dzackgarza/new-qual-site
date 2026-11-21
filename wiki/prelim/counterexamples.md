@@ -3,54 +3,115 @@ title: Counterexamples
 order: 3
 topics:
 - Counterexamples
-- Logic and Quantifiers
 ---
 
 # Counterexamples
 
+Each item refutes one implication, and states the example that refutes it.
+
 ## Limits and continuity
 
-**Continuity does not imply differentiability.** $\abs x$ is continuous and not differentiable at $0$, and Weierstrass's function is continuous on $\RR$ and differentiable nowhere.
+::: {.example title="Continuity does not imply differentiability"}
+$\abs x$ is continuous on $\RR$ and has no derivative at $0$, the difference quotient being $1$ to the right and $-1$ to the left.
+The Weierstrass function $\sum_{k\geq0} a^k\cos(b^k\pi x)$, for $0<a<1$ and $b$ an odd integer with $ab>1+3\pi/2$, is continuous on $\RR$ and differentiable at no point.
 
-**Differentiability does not imply continuous differentiability.** $f(x)=x^2\sin(1/x)$ for $x\neq0$, $f(0)=0$, is differentiable on $\RR$, and $f'$ is not continuous at $0$.
+:::
 
-**Continuity on a bounded interval does not imply uniform continuity.** $1/x$ is continuous on $(0,1)$ and not uniformly continuous; a continuous function on a closed bounded interval is uniformly continuous.
+::: {.example title="Differentiability does not imply continuous differentiability"}
+The function $f(x) = x^2\sin(1/x)$ for $x\neq0$ and $f(0) = 0$ is differentiable on $\RR$, with $f'(0) = 0$ and $f'(x) = 2x\sin(1/x) - \cos(1/x)$ for $x\neq0$, and $f'$ has no limit at $0$.
 
-**A continuous function on a bounded interval need not attain its bounds.** $x$ on $(0,1)$ attains neither its supremum nor its infimum; a continuous function on a compact set attains both.
+:::
 
-**Sequential criterion for continuity.** If $\lim_n f(x_n)$ exists for every sequence $x_n\to a$, then $f$ is continuous at $a$: interleaving two sequences shows that all these limits are equal, and the constant sequence $x_n=a$ shows that the common limit is $f(a)$.
-Hence two sequences $x_n\to a$ and $y_n\to a$ with $\lim f(x_n)\neq\lim f(y_n)$ show that $f$ is not continuous at $a$.
+::: {.example title="Continuity on a bounded interval does not imply uniform continuity"}
+$1/x$ is continuous on $(0,1)$, and on the sequence $x_n = 1/n$ the difference $\abs{1/x_n - 1/x_{2n}} = n$ is unbounded, so the function is not uniformly continuous there.
+A continuous function on a closed bounded interval is uniformly continuous.
+
+:::
+
+::: {.example title="A continuous function on a bounded interval need not attain its bounds"}
+$x$ on $(0,1)$ has supremum $1$ and infimum $0$, and attains neither.
+A continuous function on a compact set attains both.
+
+:::
 
 ## Sequences and series
 
-**Terms tending to zero do not imply convergence.** $\sum 1/n$ diverges.
+::: {.example title="Terms tending to zero do not imply convergence"}
+The harmonic series $\sum_n 1/n$ diverges, though $1/n\to0$: its partial sums satisfy $\sum_{n=2^k}^{2^{k+1}-1}1/n \geq 2^k/2^{k+1} = 1/2$, so they are unbounded.
 
-**Convergence does not imply absolute convergence.** $\sum (-1)^{n+1}/n$ converges and $\sum 1/n$ diverges; by the Riemann rearrangement theorem, the terms of a conditionally convergent series can be rearranged to converge to any real number.
+:::
 
-**A convergent sequence need not be eventually monotone.** $(-1)^n/n$ converges to $0$ and is not eventually monotone.
+::: {.example title="Convergence does not imply absolute convergence"}
+$\sum_n (-1)^{n+1}/n$ converges by the alternating series test, and $\sum_n 1/n$ diverges.
+By [[T-REARR|Riemann's rearrangement theorem]] the terms of a series that converges but not absolutely can be rearranged to any prescribed pair of limit points, so the sum of this one is a property of the order of its terms and not of the set of them.
 
-**Pointwise convergence does not preserve continuity.** $x^n$ on $[0,1]$ converges pointwise to the function equal to $0$ on $[0,1)$ and $1$ at $1$.
+:::
 
-**Uniform convergence does not preserve differentiability.** $f_n(x)=\sqrt{x^2+1/n}$ is differentiable and converges uniformly on $\RR$ to $\abs x$.
-Uniform convergence preserves continuity and Riemann integrability; if $f_n\to f$ pointwise, each $f_n$ is continuously differentiable, and $f_n'$ converges uniformly, then $f$ is differentiable and $f'=\lim f_n'$.
+::: {.example title="A convergent sequence need not be eventually monotone"}
+$(-1)^n/n$ converges to $0$ and alternates in sign for every $n$, so it is monotone on no tail.
+
+:::
+
+::: {.example title="Pointwise convergence does not preserve continuity"}
+$x^n$ on $[0,1]$ converges pointwise to the function that is $0$ on $[0,1)$ and $1$ at $1$, and each $x^n$ is continuous.
+
+:::
+
+::: {.example title="Uniform convergence does not preserve differentiability"}
+$f_n(x) = \sqrt{x^2 + 1/n}$ is differentiable, and $f_n\to\abs x$ uniformly on $\RR$, since $0\leq f_n(x)-\abs x\leq 1/\sqrt n$.
+The limit $\abs x$ is not differentiable at $0$.
+Uniform convergence does preserve continuity and Riemann integrability, and if each $f_n$ is continuously differentiable and $f_n'$ converges uniformly, then $f = \lim f_n$ is differentiable with $f' = \lim f_n'$.
+
+:::
 
 ## Derivatives and integrals
 
-**A derivative need not be continuous.** The derivative of $x^2\sin(1/x)$, extended by $0$, is discontinuous at $0$.
-Every derivative has the intermediate value property (Darboux's theorem), so a function without it, such as a step function, is not a derivative.
+::: {.example title="A derivative need not be continuous"}
+The derivative of $x^2\sin(1/x)$, extended by $0$ at $0$, is $2x\sin(1/x) - \cos(1/x)$ away from $0$ and $0$ at $0$, so it is discontinuous at $0$.
 
-**A bounded function need not be Riemann integrable.** The indicator function of $\QQ\intersect[0,1]$ is bounded and not Riemann integrable.
+:::
 
-**Lebesgue's criterion.** A function on $[a,b]$ is Riemann integrable if and only if it is bounded and its set of discontinuities has measure zero; in particular its points of continuity are dense in $[a,b]$.
+::: {.example title="A function with the intermediate value property need not be continuous"}
+The function $f\colon\RR\to\RR$ with $f(x)=\sin(1/x)$ for $x\neq0$ and $f(0)=0$ has the intermediate value property and is discontinuous at $0$.
 
-**$f' = 0$ implies $f$ constant only on an interval.** On $(0,1)\union(2,3)$, the function equal to $0$ on $(0,1)$ and $1$ on $(2,3)$ has derivative $0$ and is not constant.
+For the intermediate value property, let $a<b$ and let $y$ lie strictly between $f(a)$ and $f(b)$. If $0\notin[a,b]$ then $f$ is continuous on $[a,b]$ and $y$ is attained there. If $0\in[a,b]$, then $f(a),f(b)\in[-1,1]$, so $y\in(-1,1)$; one of the intervals $(a,0)$ and $(0,b)$ is nonempty, and on it $1/x$ ranges over a half-line, hence over an interval of length exceeding $2\pi$, so $\sin(1/x)$ attains $y$ there.
+
+For the discontinuity, $f\bigl(1/(\pi/2+2\pi n)\bigr)=1$ and $f\bigl(1/(3\pi/2+2\pi n)\bigr)=-1$ for every $n\geq0$, and both arguments tend to $0$, so $f$ has no limit at $0$ while $f(0)=0$.
+
+Every derivative has the intermediate value property ([[P-BKF15-3A|Darboux's theorem]]), so the property is necessary for a derivative; this example shows that it does not imply continuity.
+
+:::
+
+::: {.example title="A bounded function need not be Riemann integrable"}
+The indicator function of $\QQ\intersect[0,1]$ is bounded by $1$, and on every subinterval of a partition it has supremum $1$ and infimum $0$, so every upper sum is $1$ and every lower sum is $0$.
+Its set of discontinuities is all of $[0,1]$, of measure $1$, which is also what excludes it from the Riemann integrable functions under [[PR-TDH2A|Lebesgue's criterion for Riemann integrability]].
+
+:::
+
+::: {.example title="$f' = 0$ implies that $f$ is constant only on an interval"}
+On the open set $(0,1)\union(2,3)$, the function equal to $0$ on $(0,1)$ and to $1$ on $(2,3)$ has derivative $0$ everywhere and is not constant.
+
+:::
 
 ## Algebra and linear algebra
 
-**Repeated eigenvalues do not prevent diagonalizability.** The identity matrix $I_2$ has the repeated eigenvalue $1$ and is diagonal.
+::: {.example title="Repeated eigenvalues do not prevent diagonalizability"}
+The identity matrix $I_2$ has the single eigenvalue $1$, repeated, and is diagonal.
 
-**A real square matrix need not have a real eigenvector.** The rotation $\matt{0}{-1}{1}{0}$ has characteristic polynomial $x^2+1$ and no real eigenvalue.
+:::
 
-**Equal characteristic polynomials do not imply similarity.** $\matt{0}{0}{0}{0}$ and $\matt{0}{1}{0}{0}$ both have characteristic polynomial $x^2$ and are not similar; the $4\times4$ matrices $J_2(0)\oplus J_2(0)$ and $J_2(0)\oplus J_1(0)\oplus J_1(0)$ also have the same minimal polynomial $x^2$ and are not similar.
+::: {.example title="A real square matrix need not have a real eigenvector"}
+The rotation $\matt{0}{-1}{1}{0}$ has characteristic polynomial $x^2 + 1$, so its eigenvalues are $\pm i$ and it has no real eigenvector.
 
-**A group of prime power order need not be abelian.** Groups of order $p$ and $p^2$ are abelian, and the dihedral group $D_4$ of order $8$ is not.
+:::
+
+::: {.example title="Equal characteristic polynomials do not imply similarity"}
+The matrices $\matt{0}{0}{0}{0}$ and $\matt{0}{1}{0}{0}$ both have characteristic polynomial $x^2$, and the second has rank $1$ while the first has rank $0$, so they are not similar.
+The matrices $J_2(0)\oplus J_2(0)$ and $J_2(0)\oplus J_1(0)\oplus J_1(0)$ have the same characteristic polynomial $x^4$ and the same minimal polynomial $x^2$, and their kernels have dimensions $2$ and $3$.
+
+:::
+
+::: {.example title="A group of prime power order need not be abelian"}
+Groups of order $p$ and of order $p^2$ are abelian, and the dihedral group $D_4$ of order $8 = 2^3$ is not: its rotation $r$ and reflection $s$ satisfy $rs = sr^{-1}\neq sr$.
+
+:::

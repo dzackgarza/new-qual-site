@@ -27,6 +27,72 @@ audit:
   date: 2026-11-01
   note: >-
     Solution installed following the book's own strategy: the cutoff lemma by n integrations by parts with vanishing boundary terms, uniform for Re s >= 0, giving (a); and (b) by reducing to the case m-k in (-1,0] and then k integrations by parts whose boundary terms vanish because m-k+1 > 0, with the Gamma factors identified through Gamma(m+1) = (m-k)! Gamma(m-k+1).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again while the corpus style rules were swept over this residue: the absolute value in the
+    closing step named its own delimiters with explicit sizing commands instead of `\abs{...}`, which
+    STYLE-04 asks for, and it is now `\abs{...}`. Nothing inside the absolute value, and nothing in
+    the bound beside it, changed. Checked in this pass: that the closing step's formula is the one
+    the two claims above it give, and that `\abs` is already the card's notation for a modulus in
+    the same display. Not checked in this pass: the argument of either claim, which this edit does
+    not touch.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the appendix section, the problem number, the file and
+    the printed pages. The card's 2026-11-01 event had already recorded the reading (Appendix A, §5,
+    problem 1, PDF pp. 359-363, printed pp. 341-343); this event only moves that locator into the
+    rendered text, where a reader sees it, and the page range was re-confirmed at PDF p. 360, whose
+    running head is printed p. 341 under the heading "5. Problems". No mathematics changed.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator correction to the events above: Appendix A's Problems occupy PDF pp. 360--362 of the
+    retained scan, printed pp. 341--343, not PDF pp. 359--363; PDF p. 359 is printed p. 340 and
+    PDF p. 363 is the Appendix B title page. This item was not otherwise re-read in this pass, and it
+    carries no asterisk -- the print's Appendix A mark is before Problem 5 only.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Citation corrected on the reader's report. The solution's opening sentence cited Chapter 6,
+    Lemma 1.2 for $\Gamma(m+1)=\int_0^\infty e^{-t}t^m\,dt$; that lemma states the recursion
+    $\Gamma(s+1)=s\Gamma(s)$ and its consequence $\Gamma(n+1)=n!$, and carries no integral. Read
+    again in the retained book, the integral formula is Chapter 6, equation (1),
+    $\Gamma(s)=\int_0^\infty e^{-t}t^{s-1}\,dt$ for $s>0$, at $s=m+1$, together with Chapter 6,
+    Proposition 1.1, which states that $\Gamma$ extends analytically to $\Re(s)>0$ and is still given
+    there by the integral formula (1). The citation now names those two. The citation of Lemma 1.2
+    inside the final step stands: that step applies the recursion, which is what the lemma states.
+    The mathematics of the argument is unchanged and was not re-read in this pass.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Chapter named in a second citation of the same solution: the sentence that identifies the
+    substitution of the step with "the computation (5) of Proposition 1.2" named no chapter, and
+    Chapter 6 has no Proposition 1.2 -- its numbered statements are Proposition 1.1, Lemma 1.2,
+    Theorem 1.3, Theorem 1.4, Lemma 1.5, Theorem 1.6 and Theorem 1.7. Read in the retained book, the
+    statement meant is Appendix A, Proposition 1.2, whose equation (5) is the truncated integral
+    $\int_0^a e^{-sx}x^m\,dx=s^{-m-1}\Gamma(m+1)+O(e^{-cs})$; the sentence now names Appendix A.
+    Nothing else changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance sentence added to the solution's opening paragraph, which the card lacked: the
+    published solution of this Problem is Wang Zirui, *Complete Solutions for Appendix A* (Problem 1),
+    in the public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`. Read
+    at its Problem 1 and checked against Appendix A, Problem 1: the case $-1<m\le0$ from the identity
+    $\int_0^\infty e^{-sx}x^m\,dx=s^{-m-1}\Gamma(m+1)$ plus repeated integration by parts on the cutoff
+    remainder with vanishing boundary terms, and the general case by differentiating $x^m$ $k$ times,
+    the constant relation $c_{k,m}\Gamma(m-k+1)=\Gamma(m+1)$, and a further $k$ integrations by parts,
+    the terms in which a derivative hits $\eta$ being supported away from zero and $O(s^{-N})$. The
+    card's steps are that argument with the estimates written out. Not checked: anything in the
+    published document outside its Problem 1.
 ---
 
 ::: {.exercise}
@@ -49,8 +115,15 @@ $$
 and integrate by parts $k$ times.
 :::
 
+::: {.remark}
+Appendix A sets its asterisk before Problem 5 only, so none stands before this problem (Appendix A, Problem 1).
+:::
+
 ::: {.solution}
-Throughout, $\eta\in C^\infty(\RR)$ is supported in a finite interval $[-b,b]$ with $b>0$, and $\eta=1$ on $(-a,a)$ for some $0<a\le b$; put $\chi=1-\eta$, so that $\chi\equiv 0$ on $(-a,a)$ and $\chi\equiv 1$ on $(b,\infty)$. We write $s^{-m-1}$ for the branch of the power on $\CC\setminus(-\infty,0]$ that is positive on $(0,\infty)$, and $\Gamma$ for Euler's gamma function, so that $\Gamma(m+1)=\int_0^\infty e^{-t}t^m\,dt$ for $m>-1$ (Chapter 6, printed p. 160). Since $N>0$ is arbitrary, it suffices to prove, for each integer $n\ge 1$, the estimate $O(\abs{s}^{-n})$ with a constant depending only on $m$, $n$ and $\eta$; the assertion for a given $N$ then follows with $n=\max(1,\lceil N\rceil)$. All estimates below are uniform for $\Re(s)\ge 0$ and $\abs{s}\ge 1$, and $s\ne 0$.
+This is Problem 1 of Section 5 of Appendix A of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`; the statement below is its wording.
+
+The published solution of this Problem is Wang Zirui, *Complete Solutions for Appendix A* (Problem 1), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`: it treats $-1<m\le0$ by the identity $\int_0^\infty e^{-sx}x^m\,dx=s^{-m-1}\Gamma(m+1)$ and repeated integration by parts on the cutoff remainder with all endpoint terms zero, uniform in the closed half-plane, and passes to general $m>-1$ by choosing $k$ with $k-1<m\le k$, differentiating $x^m$ $k$ times, using $c_{k,m}\Gamma(m-k+1)=\Gamma(m+1)$, and integrating by parts $k$ times, the derivatives that hit $\eta$ being $O(s^{-N})$ to every order. The proof below is that argument; the audit trail records where it is checked against the printed statement.
+Throughout, $\eta\in C^\infty(\RR)$ is supported in a finite interval $[-b,b]$ with $b>0$, and $\eta=1$ on $(-a,a)$ for some $0<a\le b$; put $\chi=1-\eta$, so that $\chi\equiv 0$ on $(-a,a)$ and $\chi\equiv 1$ on $(b,\infty)$. We write $s^{-m-1}$ for the branch of the power on $\CC\setminus(-\infty,0]$ that is positive on $(0,\infty)$, and $\Gamma$ for Euler's gamma function, so that $\Gamma(m+1)=\int_0^\infty e^{-t}t^m\,dt$ for $m>-1$ (Chapter 6, equation (1) and Proposition 1.1). Since $N>0$ is arbitrary, it suffices to prove, for each integer $n\ge 1$, the estimate $O(\abs{s}^{-n})$ with a constant depending only on $m$, $n$ and $\eta$; the assertion for a given $N$ then follows with $n=\max(1,\lceil N\rceil)$. All estimates below are uniform for $\Re(s)\ge 0$ and $\abs{s}\ge 1$, and $s\ne 0$.
 
 ::: pf
 
@@ -83,7 +156,7 @@ $$
 \int_0^\infty e^{-sx}x^m\,dx=s^{-m-1}\int_0^\infty e^{-t}t^m\,dt=s^{-m-1}\Gamma(m+1),
 \tag{1}
 $$
-which is also the computation (5) of Proposition 1.2, printed p. 321.
+which is also the computation (5) of Proposition 1.2 of Appendix A.
 Define
 $$
 D(s)=\int_0^\infty e^{-sx}x^m\eta(x)\,dx-s^{-m-1}\Gamma(m+1),\qquad T(s)=\int_0^\infty e^{-sx}x^m\chi(x)\,dx .
@@ -168,7 +241,7 @@ $$
 F_0=s^{-k}\bigl(c\,\Gamma(m-k+1)s^{-m+k-1}+O(\abs{s}^{-n})\bigr)+O\bigl(\abs{s}^{-n-1}\bigr)
 =c\,\Gamma(m-k+1)s^{-m-1}+O\bigl(\abs{s}^{-n}\bigr).
 $$
-By Lemma 1.2 of Chapter 6 (printed p. 161), $\Gamma(w+1)=w\Gamma(w)$; applied $k$ times, with all arguments $m-k+1,\dots,m$ lying in $\{\Re(w)>0\}$ because $m-k+1>0$, it gives $\Gamma(m+1)=m(m-1)\cdots(m-k+1)\Gamma(m-k+1)=c\,\Gamma(m-k+1)$. This proves the claim.
+By Lemma 1.2 of Chapter 6, $\Gamma(w+1)=w\Gamma(w)$; applied $k$ times, with all arguments $m-k+1,\dots,m$ lying in $\{\Re(w)>0\}$ because $m-k+1>0$, it gives $\Gamma(m+1)=m(m-1)\cdots(m-k+1)\Gamma(m-k+1)=c\,\Gamma(m-k+1)$. This proves the claim.
 
 :::
 
@@ -177,7 +250,7 @@ By Lemma 1.2 of Chapter 6 (printed p. 161), $\Gamma(w+1)=w\Gamma(w)$; applied $k
 ::: pf-qed
 Step [](#parta){.pf-ref} proves assertion (a) of the problem, and step [](#partb){.pf-ref} proves assertion (b). Together they give, for every $m>-1$, every integer $n\ge1$ and all $s$ with $\Re(s)\ge0$, $\abs{s}\ge1$,
 $$
-\Bigl|\int_0^\infty e^{-sx}x^m\eta(x)\,dx-s^{-m-1}\Gamma(m+1)\Bigr|\le C_{m,n,\eta}\abs{s}^{-n},
+\abs{\int_0^\infty e^{-sx}x^m\eta(x)\,dx-s^{-m-1}\Gamma(m+1)}\le C_{m,n,\eta}\abs{s}^{-n},
 $$
 and choosing $n=\max(1,\lceil N\rceil)$ for the given $N>0$ yields $\int_0^\infty e^{-sx}x^m\eta(x)\,dx=s^{-m-1}\Gamma(m+1)+O(s^{-N})$ as $\abs{s}\to\infty$ in the closed half-plane $\Re(s)\ge0$, as required.
 

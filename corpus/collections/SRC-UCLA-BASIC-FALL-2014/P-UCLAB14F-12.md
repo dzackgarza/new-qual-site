@@ -6,7 +6,9 @@ title: Positive definiteness of the Hilbert matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Positive Definite Matrices
+  - Determinants
 relations: []
 review: draft
 audit:

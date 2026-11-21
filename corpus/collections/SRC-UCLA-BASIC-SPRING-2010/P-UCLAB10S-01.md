@@ -6,7 +6,9 @@ title: A small perturbation of an orthonormal basis remains independent
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Independence
+  - Orthonormal Bases
 relations: []
 review: draft
 audit:

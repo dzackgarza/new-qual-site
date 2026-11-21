@@ -19,4 +19,6 @@ topics:
 
 - [[algebra/rings-and-ideals/commutative-algebra|Commutative algebra]] -- Zorn's lemma, Nakayama's lemma, Noetherian rings, integral extensions, localization.
 
-- [[algebra/rings-and-ideals/number-theory|Number theory]] -- norms in number fields, Euler's totient function, and the theorems of Euler and Fermat.
+- [[algebra/rings-and-ideals/number-theory|Number theory]] -- the unit group modulo $n$, Euler's totient function, the theorems of Euler and Fermat, and norms in number fields.
+
+- [[algebra/rings-and-ideals/solutions|Solutions (rings)]] -- the exercises of Gallian's ring chapters 12--17, each with a solution outline.

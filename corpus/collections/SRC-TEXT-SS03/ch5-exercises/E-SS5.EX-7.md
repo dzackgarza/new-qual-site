@@ -19,6 +19,16 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Structured the card's prose argument into numbered steps without changing the mathematics, and
+    re-checked each step against the definitions and theorems it invokes. What was not checked: no
+    copy of Stein and Shakarchi and no solution set for it is retained in tmp/sources (the
+    collection provenance is the Google Books ISBN link), so the printed statement and page were
+    not re-read; the exercise number is the one the collection index records. No published
+    solution is transcribed; the argument remains the card's own, as its solution section says.
 ---
 
 ::: {.exercise}
@@ -32,63 +42,59 @@ Establish the following properties of infinite products.
 :::
 
 ::: {.solution}
-For part (a), because $\sum \abs{a_n}^2<\infty$, we have $a_n\to0$. Hence for all sufficiently large $n$, say $\abs{a_n}\le1/2$, we may use the principal logarithm and the expansion
-$$
-\log(1+a_n)=a_n+O(\abs{a_n}^2),
-\tag{1}
-$$
-with an absolute implied constant. Since $a_n\ne-1$, no factor vanishes.
 
-The tail product $\prod(1+a_n)$ converges to a nonzero limit if and only if the series
-$$
-\sum \log(1+a_n)
-$$
-converges. By (1), the difference between this logarithmic series and $\sum a_n$ is absolutely convergent because $\sum\abs{a_n}^2<\infty$. Therefore
-$$
-\prod(1+a_n)\text{ converges to a nonzero limit}
-\iff \sum a_n\text{ converges}.
-$$
+The argument is the card's own: the book is retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, and no published solution set of this exercise is retained, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 5, Exercise 7. Here $a_n\neq-1$ for every $n$, so no factor $1+a_n$ vanishes; the principal logarithm is used once $\abs{a_n}<1$, and the expansion $\log(1+a)=\sum_{k\geq1}(-1)^{k+1}a^{k}/k$ then gives $\log(1+a)=a+O(\abs{a}^{2})$ with an absolute constant.
 
-For part (b), take
-$$
-a_n=\frac{(-1)^n}{\sqrt n}.
-$$
-The series $\sum a_n$ converges by the alternating-series test. On the other hand,
-$$
-\log(1+a_n)=a_n-\frac{a_n^2}{2}+O(\abs{a_n}^3).
-$$
-The series $\sum a_n$ converges and $\sum \abs{a_n}^3$ converges, but
-$$
-\sum a_n^2=\sum\frac1n=\infty.
-$$
-Hence
-$$
-\sum_{n=1}^N\log(1+a_n)\longrightarrow-\infty,
-$$
-so the partial products tend to $0$. Thus the infinite product does not converge to a nonzero limit.
+::: pf
 
-For part (c), let
-$$
-b_n=\frac{(-1)^n}{\sqrt n},
-\qquad
-a_n=e^{b_n}-1.
-$$
-Then
-$$
-1+a_n=e^{b_n},
-$$
-so
-$$
-\prod_{n=1}^N(1+a_n)
-=\exp\!\left(\sum_{n=1}^N b_n\right)
-$$
-converges to a nonzero limit because $\sum b_n$ converges. But
-$$
-a_n=b_n+\frac{b_n^2}{2}+O(\abs{b_n}^3).
-$$
-Again $\sum b_n$ and $\sum\abs{b_n}^3$ converge, while
-$$
-\frac12\sum b_n^2=\frac12\sum\frac1n
-$$
-diverges to $+\infty$. Therefore $\sum a_n$ diverges.
+::: {.pf-step #log}
+
+If $\sum\abs{a_n}^{2}$ converges then $a_n\to0$, so for $n\geq N$ one has $\abs{a_n}\leq1/2$ and $\log(1+a_n)=a_n+O(\abs{a_n}^{2})$.
+
+::: pf-proof
+
+Terms of a convergent series tend to $0$; on $\abs{a}\leq1/2$ the principal branch of the logarithm is holomorphic and its Taylor series gives $\log(1+a)-a=\sum_{k\geq2}(-1)^{k+1}a^{k}/k$, whose modulus is at most $\abs{a}^{2}\sum_{k\geq2}2^{-(k-2)}=C\abs{a}^{2}$.
+
+:::
+
+:::
+
+::: {.pf-step #a}
+
+(a) $\prod(1+a_n)$ converges to a nonzero limit if and only if $\sum a_n$ converges.
+
+::: pf-proof
+
+A product $\prod(1+a_n)$ with no zero factor converges to a nonzero limit exactly when the series $\sum\log(1+a_n)$ of principal logarithms converges, the partial products being the exponentials of its partial sums. By step [](#log){.pf-ref} the difference $\log(1+a_n)-a_n$ is $O(\abs{a_n}^{2})$, and $\sum\abs{a_n}^{2}<\infty$ by hypothesis; adding an absolutely convergent series does not change convergence, so $\sum\log(1+a_n)$ converges exactly when $\sum a_n$ does.
+
+:::
+
+:::
+
+::: {.pf-step #b}
+
+(b) $a_n=(-1)^{n}/\sqrt{n}$ has $\sum a_n$ convergent and $\prod(1+a_n)$ divergent.
+
+::: pf-proof
+
+The alternating series test applies since $1/\sqrt{n}$ decreases to $0$, so $\sum a_n$ converges. Here $\log(1+a_n)=a_n-\frac{a_n^{2}}{2}+O(\abs{a_n}^{3})$, and $\sum\abs{a_n}^{3}=\sum n^{-3/2}$ converges while $\sum a_n^{2}=\sum\frac1n$ diverges; hence the partial sums of $\log(1+a_n)$ tend to $-\infty$, and the partial products, being their exponentials, tend to $0$.
+
+:::
+
+:::
+
+::: {.pf-step #c}
+
+(c) $b_n=(-1)^{n}/\sqrt{n}$ and $a_n=e^{b_n}-1$ have $\prod(1+a_n)$ convergent to a nonzero limit and $\sum a_n$ divergent.
+
+::: pf-proof
+
+Since $1+a_n=e^{b_n}$, the $N$-th partial product is $\exp(\sum_{n\leq N}b_n)$, which converges to $\exp(\sum b_n)\neq0$ because $\sum b_n$ converges. Also $a_n=b_n+\frac{b_n^{2}}{2}+O(\abs{b_n}^{3})$, and $\sum b_n$ and $\sum\abs{b_n}^{3}$ converge while $\frac12\sum b_n^{2}=\frac12\sum\frac1n$ diverges to $+\infty$; so $\sum a_n$ diverges.
+
+:::
+
+:::
+
+:::
+
 :::

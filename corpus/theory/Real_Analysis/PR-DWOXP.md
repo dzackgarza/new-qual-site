@@ -42,7 +42,7 @@ Then $\sup_x\abs{f_n(x)}\le n^{-1/2}$, so $f_n\to f=0$ uniformly, but $f_n'(0)=n
 :::
 
 ::: {.remark}
-If $f_n\colon[a,b]\to\RR$ are differentiable, $(f_n(x_0))$ converges for some $x_0\in[a,b]$, and $(f_n')$ converges uniformly on $[a,b]$, then $(f_n)$ converges uniformly on $[a,b]$ to a differentiable function $f$ with $f'=\lim_n f_n'$.
+The positive result is [[T-RA-WORKSHOP-D7-6-4|uniform convergence of derivatives]]: it needs $(f_n')$ to converge uniformly, which both examples above fail.
 A uniform limit of differentiable functions can be differentiable at no point: by the [[T-3QNBQ|Weierstrass approximation theorem]], every continuous function on $[a,b]$, including a nowhere differentiable one, is a uniform limit of polynomials.
 :::
 

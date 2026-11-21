@@ -6,7 +6,9 @@ title: Cayley-Hamilton from the dense diagonalizable locus
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Cayley-Hamilton
+  - Diagonalization
 relations: []
 review: draft
 audit:

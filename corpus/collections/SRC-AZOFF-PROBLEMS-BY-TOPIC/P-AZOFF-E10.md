@@ -65,6 +65,8 @@ The same series is also asked about as follows: decide whether it converges unif
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the problem compilation alone, so the argument is the card's own.
 Fix $c$ with
 $$
 0\leq c<\ln2

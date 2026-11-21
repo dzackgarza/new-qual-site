@@ -22,10 +22,10 @@ Then $\{f_n\}$ converges uniformly on $[a,b]$ to a function $f\colon[a,b]\to\RR$
 $$
 f'(x)=\lim_{n\to\infty}f_n'(x)\qquad\text{for all }x\in[a,b].
 $$
-[@Rud76].
+[@Rud76, ch. 7, Theorem 7.17].
 :::
 
 ::: {.remark title="Variations"}
-Term-by-term differentiation of a series: if $f_n\colon[a,b]\to\RR$ are differentiable, $\sum_{n=1}^\infty f_n'$ converges uniformly on $[a,b]$ to $g$, and $\sum_{n=1}^\infty f_n(x_0)$ converges for some $x_0\in[a,b]$, then $\sum_{n=1}^\infty f_n$ converges uniformly on $[a,b]$ to a differentiable $f$ with $f'=g$ [@Abb16].
-The theorem applies unchanged to the partial sums $S_N\coloneqq\sum_{n=1}^N f_n$, whose derivatives are $S_N'=\sum_{n=1}^N f_n'$.
+Term-by-term differentiation of a series: if $f_n\colon[a,b]\to\RR$ are differentiable, $\sum_{n=1}^\infty f_n'$ converges uniformly on $[a,b]$ to $g$, and $\sum_{n=1}^\infty f_n(x_0)$ converges for some $x_0\in[a,b]$, then $\sum_{n=1}^\infty f_n$ converges uniformly on $[a,b]$ to a differentiable $f$ with $f'=g$.
+This is [@Rud76, ch. 7, Theorem 7.17] applied to the partial sums $S_N\coloneqq\sum_{n=1}^N f_n$, whose derivatives are $S_N'=\sum_{n=1}^N f_n'$: the hypotheses on $S_N(x_0)$ and on $S_N'$ are the two convergences assumed above.
 :::

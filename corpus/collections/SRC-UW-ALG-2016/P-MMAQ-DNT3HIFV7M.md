@@ -12,6 +12,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 7 of the Algebra Preliminary Examination, Autumn 2016
+    (University of Washington), printed p. 2 of the two-page paper retained at
+    assets/attachments/UW-Algebra-Qual-2016.pdf, is the statement the card answers, and the
+    paragraph at the head of the solution records that the paper prints no solutions, so the
+    argument is the card's own. Checked: both parts, including the displayed maps phi and psi
+    against the paper's text layer at the page named; the solution read for the term-by-term
+    exactness and for the Tor computation that shows I is not flat; `qualc.authoring check` on the
+    card. The card carries no `pf` block, so `tmp/lam.sh` does not apply to it and was not run. Not
+    checked: no retained solution set exists for this paper to compare the argument with, and no
+    other card of the collection in this pass.
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
@@ -31,6 +45,9 @@ where $\phi(a) = (-ya,xa)$, $\psi((a,b)) = xa+yb$ for $a,b \in R$, is a projecti
 
 
 ::: {.solution}
+
+The problem is Problem 7 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is exactness of the displayed sequence checked term by term, and the truncated resolution that computes $\Tor_1^R(I,k)\cong k$, which rules out flatness.
+
 Write $\varepsilon:R\to k=R/(x,y)$ for the quotient map.
 
 First consider

@@ -31,7 +31,14 @@ audit:
     fixed point count is ≡ |X| mod p by orbit decomposition; P' acts on G/P by left
     multiplication, whose size [G : P] is prime to p, so a fixed coset gP exists
     and g^{-1}P'g ≤ P, hence equal by equal orders. No defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 7, Sylow problem 7. The
+    fixed-point count is congruent to the size modulo $p$ by orbit decomposition; $P'$ acts on
+    $G/P$ of size prime to $p$, so a fixed coset $gP$ exists and $g^{-1}P'g\le P$, hence equality
+    by equal orders. No defect.
 ---
 
 ::: {.exercise}

@@ -6,7 +6,8 @@ title: Riemann integrability directly from the definition
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Riemann Integration
 relations: []
 review: draft
 audit:

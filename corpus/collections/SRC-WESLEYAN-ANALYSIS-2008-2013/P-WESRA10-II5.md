@@ -5,7 +5,8 @@ kind: problem
 title: '$L^4$ versus $L^3$ on finite and infinite measure spaces'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Lp Spaces
 relations: []
 review: draft
 audit:

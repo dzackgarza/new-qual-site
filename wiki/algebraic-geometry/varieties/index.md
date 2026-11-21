@@ -9,10 +9,10 @@ topics:
 
 # Varieties
 
-Over an algebraically closed field, radical ideals of $k[x_1,\ldots,x_n]$ correspond to closed subsets of $\AA^n$.
-$\PP^1\times\PP^1$ is projective by the Segre embedding, the complement of a curve in $\PP^2$ is affine, and two plane curves meeting in infinitely many points share a common component.
+Over an algebraically closed field, radical ideals of $k[x_1,\ldots,x_n]$ correspond to closed subsets of $\AA^n$ ([[T-JRTS2]]).
+$\PP^1\times\PP^1$ is projective by the Segre embedding ([[PR-VA4S3]]), the complement of a curve in $\PP^2$ is affine ([[FE-VARAFFHYPER]]), and two plane curves meeting in infinitely many points share a common component ([[PR-JR7TS]]).
 
-For a projective variety $X$ of dimension $n$ and degree $d$, the Hilbert polynomial is $P_X(r)=\tfrac{d}{n!}r^n+\cdots$, and for a curve $P_X(0)=1-p_a$.
+For a projective variety $X$ of dimension $n$ and degree $d$, the Hilbert polynomial is $P_X(r)=\tfrac{d}{n!}r^n+\cdots$ ([[D-L6ERW]]), and for a curve $P_X(0)=1-p_a$ ([[D-G1AEH]]).
 
 ## Syllabus
 

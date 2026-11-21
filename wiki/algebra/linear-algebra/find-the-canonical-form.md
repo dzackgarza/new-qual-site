@@ -25,26 +25,50 @@ Both come from the structure theorem for the finitely generated $F[t]$-module $F
 
 ## Computation from a matrix
 
-1. **Characteristic polynomial.** The roots of $\chi_A(t) = \det(tI - A)$ are the eigenvalues, with algebraic multiplicities.
-   Also $\tr A = \sum\lambda_i$ and $\det A = \prod \lambda_i$, and the eigenvalues of a triangular matrix are its diagonal entries.
+### Characteristic polynomial
 
-2. **Minimal polynomial.** $\min_A$ divides $\chi_A$ and has the same irreducible factors, so it is determined by the exponents of those factors; it is the monic divisor $p$ of $\chi_A$ of least degree, among those with every irreducible factor of $\chi_A$, such that $p(A) = 0$.
+The roots of $\chi_A(t) = \det(tI - A)$ are the eigenvalues, with algebraic multiplicities.
 
-3. **Diagonalizability.** $A$ is diagonalizable over $F$ if and only if $\min_A$ is a product of distinct linear factors over $F$.
-   In that case $A$ is similar to $\diag(\lambda_1,\ldots,\lambda_n)$, with each eigenvalue repeated according to its multiplicity in $\chi_A$.
+[[D-QFYAC]]
+Also $\trace A = \sum\lambda_i$ and $\det A = \prod \lambda_i$, and the eigenvalues of a triangular matrix are its diagonal entries; both are on [[algebra/linear-algebra/determinants-and-eigenvalues|Determinants and eigenvalues]].
 
-4. **Jordan block sizes.** For each eigenvalue $\lambda$:
+### Minimal polynomial
 
-   - the exponent of $(t-\lambda)$ in $\min_A$ is the size of the largest Jordan block for $\lambda$;
+$\min_A$ divides $\chi_A$ and has the same irreducible factors, so it is determined by the exponents of those factors; it is the monic divisor $p$ of $\chi_A$ of least degree, among those with every irreducible factor of $\chi_A$, such that $p(A) = 0$.
 
-   - the exponent of $(t-\lambda)$ in $\chi_A$ is the sum of the sizes of the Jordan blocks for $\lambda$;
+[[D-GK5SF]]
 
-   - $\dim\ker(A-\lambda I)$ is the number of Jordan blocks for $\lambda$.
+### Diagonalizability
 
-   These three numbers determine the Jordan blocks for $\lambda$ when its algebraic multiplicity is at most $6$; for multiplicity $7$, the block sizes $3+3+1$ and $3+2+2$ share all three.
-   In general, $\dim\ker(A-\lambda I)^k-\dim\ker(A-\lambda I)^{k-1}$ is the number of Jordan blocks for $\lambda$ of size at least $k$.
+$A$ is diagonalizable over $F$ if and only if $\min_A$ is a product of distinct linear factors over $F$.
+In that case $A$ is similar to $\diag(\lambda_1,\ldots,\lambda_n)$, with each eigenvalue repeated according to its multiplicity in $\chi_A$.
 
-5. **Rational canonical form.** If $\chi_A$ does not split, the rational canonical form is the block diagonal matrix of the companion matrices of the invariant factors $p_1\divides\cdots\divides p_m$ of $tI-A$, and $p_m = \min_A$.
+[[FT-BC6S2]]
+
+[[FD-K6FVX]]
+
+### Jordan block sizes
+
+For each eigenvalue $\lambda$:
+
+- the exponent of $(t-\lambda)$ in $\min_A$ is the size of the largest Jordan block for $\lambda$;
+
+- the exponent of $(t-\lambda)$ in $\chi_A$ is the sum of the sizes of the Jordan blocks for $\lambda$;
+
+- $\dim\ker(A-\lambda I)$ is the number of Jordan blocks for $\lambda$.
+
+These three numbers determine the Jordan blocks for $\lambda$ when its algebraic multiplicity is at most $6$; for multiplicity $7$, the block sizes $3+3+1$ and $3+2+2$ share all three.
+In general, $\dim\ker(A-\lambda I)^k-\dim\ker(A-\lambda I)^{k-1}$ is the number of Jordan blocks for $\lambda$ of size at least $k$.
+
+[[L-CD6QT]]
+
+### Rational canonical form
+
+If $\chi_A$ does not split, the rational canonical form is the block diagonal matrix of the companion matrices of the invariant factors $p_1\divides\cdots\divides p_m$ of $tI-A$, and $p_m = \min_A$.
+
+[[FD-XT6HD]]
+
+[[L-Y5KNM]]
 
 ## Similarity classes from the two polynomials
 
@@ -67,7 +91,7 @@ If $f(A) = 0$ for a polynomial $f$, then $\min_A$ divides $f$.
 
 In each diagonalizable case, the divisor $\min_A$ of a polynomial with distinct roots in $F$ is a product of distinct linear factors.
 
-## Consistency conditions
+## Conditions the minimal and characteristic polynomials satisfy
 
 - $\min_A$ and $\chi_A$ have the same irreducible factors.
 

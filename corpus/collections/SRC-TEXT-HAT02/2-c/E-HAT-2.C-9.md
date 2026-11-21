@@ -33,7 +33,18 @@ audit:
     {1,...,N}, since such a complex is a subset of the finite power set closed under
     taking nonempty subsets; so there are countably many isomorphism classes, and
     passing to homotopy types only identifies them. No defect.
----
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 9 of §2.C, printed p. 184, in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`, and against DeMason, Hatcher 2.C.9, printed
+    p. 88. Checked: Theorem 2C.5, printed p. 182, gives every finite CW complex the homotopy type of a
+    finite simplicial complex; a complex on the vertex set $\{1,\dots,N\}$ is a subset of the power set
+    closed under nonempty subsets, so there are finitely many for each $N$ and countably many
+    isomorphism classes in all; and passing to homotopy types identifies some of them and creates none.
+    No defect.
+
 ---
 
 ::: {.problem}
@@ -91,7 +102,7 @@ $$
 \boxed{\text{the set of homotopy types of finite CW complexes is countable}.}
 $$
 
-The count is in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.C.9, printed p. 88. A finite CW complex has the homotopy type of a finite simplicial complex by Theorem 2C.5. Once the finite vertex set is fixed, only finitely many closed-under-subsets collections are possible; taking the union over all finite vertex sets counts the homotopy types.
+The count is in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher §2.C Exercise 9. A finite CW complex has the homotopy type of a finite simplicial complex by Theorem 2C.5. Once the finite vertex set is fixed, only finitely many closed-under-subsets collections are possible; taking the union over all finite vertex sets counts the homotopy types.
 
 
 :::

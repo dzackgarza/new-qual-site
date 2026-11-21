@@ -36,6 +36,23 @@ audit:
   date: 2026-11-11
   note: >-
     Step-by-step check against the printed pages, and the repair. The previous note cited "Corollary 58.6", a statement about the fundamental group of a wedge used nowhere here; the citation is withdrawn and replaced by the ones used. Citations added: Example 1 of §80 (printed p. 487) for the earring and the retractions onto its circles, Theorem 27.3 (printed p. 173) for closed and bounded implying compact in the plane, Theorem 31.2 (printed p. 196) for a subspace of a Hausdorff space being Hausdorff, Theorem 30.2 (printed p. 191) for a subspace of a second-countable space being second countable, Theorem 54.5 (printed p. 345) for the fundamental group of a circle, and Theorem 18.3 (printed p. 108) for continuity of a map glued from two closed pieces. Corrected: continuity of the loop $f_a$ was attributed to the diameters of the circles tending to 0 alone, which is a statement about the values near $t=1$ only; the proof now also covers the junction points $t=1-2^{-k}$, where the two adjacent arcs meet at $p$, by the pasting lemma. Corrected: closedness of the earring in the plane was argued as "the only possible accumulation point of the family is $p$", which does not exhibit a neighbourhood of an arbitrary point outside $X$; the proof now does, separating $y\notin X$, $y\ne p$, from all but finitely many circles by radius and from the rest by closedness. What the certificate does not cover: the uncountability of $\{0,1\}^{\NN}$ is taken as known.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps. Pages verified: Example 1 of §80 on printed p. 487,
+    which defines the circles and also the retraction r_n, so the card's attribution of the
+    retraction to that example is right; Theorem 27.3 on printed p. 173; Theorem 31.2(a) on
+    printed p. 196; Theorem 30.2 on printed p. 191; Theorem 54.5 on printed p. 345; Theorem
+    18.3 on printed p. 108; and Theorem 7.8 on printed p. 50, which now replaces the earlier
+    note's "the uncountability of {0,1}^N is taken as known". Written out that the prose left
+    implicit: the continuity of r_n at each of the three kinds of point, in particular on C_n
+    where it is the identity, and r_n(U) contained in U at p; the well-definedness of f_a at
+    the junction points, both prescriptions giving p; and the closedness argument's
+    separation of a point y outside X from all but finitely many circles by radius and from
+    the rest by closedness. The union of the intervals I_n is [0,1] and consecutive ones meet
+    only at the junctions, which is what lets the pasting lemma apply. No repair to the
+    statement.
 ---
 
 ::: {.exercise}
@@ -46,50 +63,74 @@ Let $X$ be the infinite earring (see Example 1 of §80). Show that $X$ is a comp
 :::
 
 ::: {.solution}
+The injection argument is Paul Frost's, in his answer 3928674 (https://math.stackexchange.com/a/3928674, 2020-11-30) to question 3925195, "Fundamental group of Hawaiian earring is uncountable" (https://math.stackexchange.com/questions/3925195), and in his answer 4917615 (https://math.stackexchange.com/a/4917615, 2024-05-16) to question 4917558, which supplies the continuity check the first leaves to the reader; he writes the loop with prescribed winding numbers, and recovers the $n$-th one from the retraction $r_n$, so that $\ZZ^{\NN}$ embeds in $\pi_1$. The card's proof is that injection with the zeros and ones of the printed hint in place of the winding numbers, and it also proves the first half of the exercise, that $X$ is compact Hausdorff with a countable basis, which neither answer addresses.
 
-The injection argument is Paul Frost's, in his answer 3928674 (https://math.stackexchange.com/a/3928674), posted 2020-11-30 to Math Stack Exchange question 3925195, "Fundamental group of Hawaiian earring is uncountable" (https://math.stackexchange.com/questions/3925195, asked by Ken.Wong on 2020-11-27), and in his answer 4917615 (https://math.stackexchange.com/a/4917615), posted 2024-05-16 to question 4917558, which supplies the continuity check the first leaves to the reader. He writes the loop with winding numbers $(m_n)$ as
-$$
-\psi((m_n))(t)=l_n^{m_n}\bigl(n(n+1)t-n\bigr)\quad\text{for } t\in\Bigl[\tfrac{1}{n+1},\tfrac{1}{n}\Bigr],\qquad \psi((m_n))(0)=p,
-$$
-which is continuous at $p$ because every neighbourhood of $p$ contains all but finitely many of the circles, and he shows that $(r_n)_*[f]$ recovers $m_n$, so that $\psi$ induces an injection $\ZZ^{\NN}\hookrightarrow\pi_1(X,p)$; the second answer's homotopy $(r_n\circ\gamma)\simeq\gamma_n$ is the standard one through the constant path. The card's own proof is that injection with the two winding numbers replaced by the sequence of zeros and ones of the printed hint. Neither answer shows that $X$ is compact Hausdorff with a countable basis, which the exercise also asks for; that is part of the argument below.
+Throughout, $X=\bigcup_{n\ge1}C_n$ is the infinite earring of Example 1 of §80: $C_n$ is the circle of radius $1/n$ with centre $(1/n,0)$, so that every $C_n$ passes through the origin $p$ --- the book's $b_0$ --- and $C_n$ has diameter $2/n$. The exercise is §82 Supplementary Exercise 5.
 
+::: pf
 
-Let the infinite earring be
-$$
-X=\bigcup_{n\ge1}C_n,
-$$
-the union of the circles of Example 1 of §80 (printed p. 487), where $C_n$ has radius $1/n$, passes through the common point $p$, and has diameter $2/n$.
+::: {.pf-step #compact}
+$X$ is a compact Hausdorff space with a countable basis.
 
-$X$ is compact. It is bounded, lying in the disk of radius $2$ about $p$. It is closed in $\RR^2$: given $y\in\RR^2\setminus X$ with $y\ne p$, put $d=\abs{y-p}>0$; the circles with $2/n<d/2$ lie in the disk of radius $d/2$ about $p$, which is disjoint from the ball of radius $d/2$ about $y$, and the finitely many remaining circles are closed and do not contain $y$, so a small enough ball about $y$ meets no circle. Since $p\in X$, this proves $X$ closed. A closed and bounded subspace of $\RR^2$ is compact (Theorem 27.3, printed p. 173). As a subspace of $\RR^2$ it is Hausdorff (Theorem 31.2, printed p. 196) and second countable (Theorem 30.2, printed p. 191).
+::: pf-proof
 
-For each $n$, let
-$$
-r_n:X\to C_n
-$$
-be the retraction equal to the identity on $C_n$ and sending every other circle to $p$, as in Example 1 of §80. It is continuous: continuity is immediate away from $p$, and near $p$ all sufficiently small circles lie in any prescribed neighbourhood of $p$.
+::: {.pf-step #closed}
+$X$ is closed and bounded in $\RR^2$.
 
-Now let $a=(a_1,a_2,\ldots)\in\{0,1\}^{\NN}$. Divide $[0,1]$ into the intervals
-$$
-I_n=[1-2^{-(n-1)},\,1-2^{-n}]
-$$
-accumulating at $1$. On $I_n$, let $f_a$ traverse $C_n$ once if $a_n=1$, and stay at $p$ if $a_n=0$; at the junction points $1-2^{-k}$ and at $0$ the two adjacent definitions both give $p$; set $f_a(1)=p$. The map $f_a$ is continuous: at a point interior to $I_n$ it agrees with a path in $C_n$; at a junction point $1-2^{-k}$ its two one-sided restrictions are continuous maps on the closed intervals $I_k$ and $I_{k+1}$ agreeing at the common point, so it is continuous there by the pasting lemma (Theorem 18.3, printed p. 108); and at $t=1$ continuity follows from $\operatorname{diam}(C_n)\to0$, the values being $p$ at $t=1$. So $f_a$ is a loop in $X$ based at $p$.
+::: pf-proof
+$X$ lies in the disk of radius $2$ about $p$, so it is bounded. For closedness let $y\in\RR^2-X$; if $y=p$ there is nothing to prove, so let $d=\abs{y-p}>0$. Every circle with $2/n<d/2$ lies in the disk of radius $d/2$ about $p$, which is disjoint from the ball of radius $d/2$ about $y$; the finitely many remaining circles are closed and do not contain $y$, so their union is closed and misses $y$, and a ball about $y$ small enough to avoid that union and the disk of radius $d/2$ about $p$ meets no $C_n$. Hence $\RR^2-X$ is open and $X$ is closed.
+:::
 
-For each $n$,
-$$
-(r_n)_*[f_a]=
-\begin{cases}
-0,&a_n=0,\\
-1\in\pi_1(C_n,p)\cong\ZZ,&a_n=1,
-\end{cases}
-$$
-because $r_n$ collapses every circle but $C_n$ to $p$ (Theorem 54.5, printed p. 345 for the fundamental group of a circle). Therefore if $a\ne b$, choose $n$ with $a_n\ne b_n$; then
-$$
-(r_n)_*[f_a]\ne(r_n)_*[f_b],
-$$
-so $[f_a]\ne[f_b]$ in $\pi_1(X,p)$. Thus
-$$
-\{0,1\}^{\NN}\hookrightarrow\pi_1(X,p).
-$$
-The left side is uncountable, hence $\pi_1(X,p)$ is uncountable.
+:::
 
+::: {.pf-step #compact-hausdorff}
+$X$ is compact, Hausdorff and second countable.
+
+::: pf-proof
+A closed and bounded subspace of $\RR^2$ is compact (Theorem 27.3). As a subspace of the Hausdorff space $\RR^2$ it is Hausdorff (Theorem 31.2(a)), and as a subspace of the second-countable space $\RR^2$ it is second countable (Theorem 30.2).
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #retraction}
+For each $n$ the map $r_n:X\to C_n$ that is the identity on $C_n$ and sends every other circle to $p$ is a continuous retraction.
+
+::: pf-proof
+It is a retraction by construction, and Example 1 of §80 introduces it. For continuity: at a point of $C_n$ other than $p$ it agrees with the identity on $C_n$, which is continuous; at a point $x\in C_i$ with $i\ne n$ and $x\ne p$, a neighbourhood of $x$ in $X$ can be taken inside $C_i$ and away from $C_n$, and there $r_n$ is constant with value $p$; at $p$, a neighbourhood $U$ of $p$ in $X$ satisfies $r_n(U)\subset U\cup\{p\}=U$, because points of $U\cap C_n$ map to themselves and all other points of $U$ map to $p$. So $r_n$ is continuous.
+:::
+
+:::
+
+::: {.pf-step #loop}
+For each $a=(a_1,a_2,\ldots)\in\{0,1\}^{\NN}$ the map $f_a$ defined below is a continuous loop in $X$ based at $p$.
+
+::: pf-proof
+Let $I_n=[1-2^{-(n-1)},1-2^{-n}]$ for $n\ge1$, closed intervals whose union is $[0,1]$ and which meet only in the points $1-2^{-k}$, and on $I_n$ let $f_a$ traverse $C_n$ once from $p$ back to $p$ if $a_n=1$ and let $f_a$ be constant at $p$ if $a_n=0$; set $f_a(1)=p$. This is well defined, since on $I_n\cap I_{n+1}=\{1-2^{-n}\}$ both prescriptions give $p$. It is continuous: on the interior of each $I_n$ it is a path in the closed set $C_n$, hence continuous; at a junction point $1-2^{-k}$ the restrictions to the two closed intervals $I_k$ and $I_{k+1}$ are continuous and agree there, so the pasting lemma (Theorem 18.3) applies to their union; and at $t=1$, where $f_a(1)=p$, every value of $f_a$ on $I_n$ lies in $C_n$, of diameter $2/n$, so $f_a(t)\to p$ as $t\to1$. Hence $f_a$ is continuous with $f_a(0)=f_a(1)=p$, a loop based at $p$.
+:::
+
+:::
+
+::: {.pf-step #winding}
+For every $n$, $(r_n)_*[f_a]$ is trivial if $a_n=0$ and is the generator of $\pi_1(C_n,p)\cong\ZZ$ if $a_n=1$.
+
+::: pf-proof
+The composite $r_n\circ f_a$ is constant at $p$ on each $I_i$ with $i\ne n$, because $f_a$ takes values in $C_i$ there and $r_n$ collapses $C_i$ to $p$, and on $I_n$ it is the loop that traverses $C_n$ once, or is constant when $a_n=0$. So $[r_n\circ f_a]$ is respectively the class of a generator or the trivial class in $\pi_1(C_n,p)$, which is isomorphic to $\ZZ$ (Theorem 54.5). Since $(r_n)_*[f_a]=[r_n\circ f_a]$, the claim follows.
+:::
+
+:::
+
+::: {.pf-step}
+$\pi_1(X,p)$ is uncountable.
+
+::: pf-proof
+Let $a\ne b$ in $\{0,1\}^{\NN}$ and choose $n$ with $a_n\ne b_n$. By step [](#winding){.pf-ref} the classes $(r_n)_*[f_a]$ and $(r_n)_*[f_b]$ differ, one being trivial and the other the generator; if $[f_a]=[f_b]$ in $\pi_1(X,p)$, applying the homomorphism $(r_n)_*$ would give equal images. Hence $[f_a]\ne[f_b]$, and $a\mapsto[f_a]$ is an injection of $\{0,1\}^{\NN}$ into $\pi_1(X,p)$. The set of binary sequences is in bijection with the power set of $\NN$, which is uncountable (Theorem 7.8), so $\pi_1(X,p)$ is uncountable. Together with step [](#compact){.pf-ref} this proves the exercise.
+:::
+
+:::
+
+:::
 :::

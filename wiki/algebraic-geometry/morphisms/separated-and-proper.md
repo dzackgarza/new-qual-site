@@ -22,4 +22,4 @@ Separatedness is encoded by the diagonal morphism and by uniqueness in the valua
 [[D-8XX95]]
 
 A projective morphism is proper.
-For a connected reduced scheme $X$ proper over an algebraically closed field $k$, every regular function $f\colon X\to\AA^1_k$ is constant: composed with $\AA^1_k\subset\PP^1_k$, its image is closed, connected, and misses $\infty$, so it is a point.
+A projective variety $Y$ over an algebraically closed field has $\OO(Y)=k$: every regular function on $Y$ is constant [@Har77, Theorem I.3.4].

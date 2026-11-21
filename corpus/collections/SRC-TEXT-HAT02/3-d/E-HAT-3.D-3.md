@@ -48,6 +48,27 @@ audit:
     paragraph states that the products involving the torsion classes are not
     computed on this card. The title is narrowed from "Pontryagin ring of SO(5)" to
     what is now proved.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Structured into Lamport steps from the card's own prose, which was already honest about its own
+    limits and is unchanged in substance. Added the Leibniz computation making E_i = e^{2i}e^{2i-1}
+    a cycle, the reason the Kunneth terms land in the listed degrees, the identification of b and d
+    with the primitives of Proposition 3D.4 and hence of bd with a generator of the top group, and the
+    verification that t is a cycle, that 2t is a boundary via d(e^4 e^2), and that t is nonzero
+    because its mod-two reduction is. The card's two citations were then located in the
+    retained PDF at tmp/sources/hatcher-2002-algebraic-topology.pdf, printed page = PDF page - 9:
+    Theorem 3D.2 is printed on p. 297 (PDF 306) and Proposition 3D.4 on p. 300 (PDF 309), both as
+    the card cites them. The additive computation was then recomputed. The cell
+    structure was taken from the proof of Proposition 3D.3 in the retained text, not from the card:
+    C^{2i} has basis e^0, e^{2i}, e^{2i-1}, e^{2i}e^{2i-1} with d e^{2i} = 2 e^{2i-1}, and
+    C_*(SO(2k+1)) = C^2 tensor ... tensor C^{2k}, so C_*(SO(5)) = C^2 tensor C^4. The tensor complex
+    was built with d(x tensor y) = dx tensor y + (-1)^{|x|} x tensor dy and its homology computed
+    from Smith normal forms over Z: the result is Z in degrees 0, 3, 7, 10 and Z_2 in degrees
+    1, 3, 4, 5, 6, 8, with 0 in degrees 2 and 9, which is exactly the card's list. That check also
+    corrected the card's description of the factors, which had omitted the unit cell e^0; it is now
+    named.
 ---
 
 ::: {.problem}
@@ -55,28 +76,57 @@ Compute the Pontryagin ring structure in $H_*(SO(5); \ZZ)$.
 :::
 
 ::: {.solution}
-Use Hatcher's cellular chains. The subcomplexes $C^2$ and $C^4$ have generators $e^{2i-1}$, $e^{2i}$, and $E_i=e^{2i}e^{2i-1}$, with
-$$
-\partial e^{2i}=2e^{2i-1},\qquad
-\partial e^{2i-1}=\partial E_i=0.
-$$
-The cellular complex of $SO(5)$ is $C^2\otimes C^4$. The integral Künneth theorem therefore gives free groups in degrees $0,3,7,10$ and one $\ZZ_2$ in each of degrees $1,3,4,5,6,8$; all other groups vanish.
+This is Hatcher Exercise 3.D.3. No published solution set is transcribed: the argument is the card's own, and the numbered results are Hatcher's Theorem 3D.2(b) (p. 297), Proposition 3D.4 (p. 300) and the graded commutativity of §3.C (p. 291). What the card proves is the additive structure and the products among the free generators; the products involving the torsion classes are not computed, and the last step says so.
 
-Set $a=[e^1]$ and $c=[e^3]$, both of order $2$, and let $b=[E_1]\in H_3$ and $d=[E_2]\in H_7$ be free generators. There is one further torsion generator $t\in H_5$, represented by
-$$
-e^4e^1+e^3e^2.
-$$
-Indeed, its boundary is $2e^3e^1-2e^3e^1=0$, while it has order $2$ because $\partial(e^4e^2)=2(e^4e^1+e^3e^2)$. Its mod-two reduction is nonzero.
+::: pf
 
-Hatcher's mod-two Pontryagin ring is the exterior algebra on $e^1,e^2,e^3,e^4$ (Theorem 3D.2(b), p. 297), and the free part of the integral homology is the exterior algebra $\Lambda_{\ZZ}[a_3,a_7]$ on primitives in degrees $3$ and $7$ (Proposition 3D.4, p. 300). The classes $b=[E_1]$ of degree $3$ and $d=[E_2]$ of degree $7$ are those free generators, so
-$$
-bd\text{ generates }H_{10}(SO(5);\ZZ)\cong\ZZ .
-$$
-The Pontryagin ring of an H-space is graded commutative (Hatcher, §3.C, p. 291), so
-$$
-db=-bd
-$$
-on the free part.
+::: {.pf-step #complex}
+The cellular chain complex of $SO(5)$ is $C^{2}\otimes C^{4}$, where $C^{2i}$ has basis $e^{0}$, $e^{2i}$, $e^{2i-1}$ and $E_{i}=e^{2i}e^{2i-1}$, with $\partial e^{2i}=2e^{2i-1}$ and $\partial e^{0}=\partial e^{2i-1}=\partial E_{i}=0$; here $i=1,2$, and $C^{0}$ is spanned by the unit $e^{0}$ in each factor.
 
-That is the part of the multiplicative structure the book's results determine directly, and it is all this card proves. The products involving the torsion classes $a$, $c$, $t$ — for instance $ac\in H_4$ or $at\in H_5$ — are not computed here: determining them needs the chain-level Pontryagin product in the cellular complex of $SO(5)$ together with the Bockstein and the universal coefficient theorem, and this card does not carry that computation out.
+::: pf-proof
+Hatcher's cell structure on $SO(5)$ gives one cell in each dimension $0,\dots,10$, and the boundary formula $\partial e^{2i}=2e^{2i-1}$, $\partial e^{2i-1}=0$ is the one computed there. The product cell decomposition is the tensor product of the complexes $C^{2}$ spanned by $e^{1},e^{2}$ and $C^{4}$ spanned by $e^{3},e^{4}$, with the cells $E_{i}=e^{2i}e^{2i-1}$ of the product; Leibniz's rule and $\partial e^{2i-1}=0$ make $E_{i}$ a cycle.
+:::
+:::
+
+::: {.pf-step #additive}
+The integral homology of $SO(5)$ is $\ZZ$ in degrees $0,3,7,10$ and $\ZZ_{2}$ in degrees $1,3,4,5,6,8$, all other groups vanishing.
+
+::: pf-proof
+The chain complex is a tensor product, so the integral Künneth theorem computes its homology from that of the two factors, whose homology is $\ZZ$ in degrees $0$, $2$ and $\ZZ_{2}$ in degree $1$ for $C^{2}$, with the analogous description for $C^{4}$. The Künneth formula contributes the free groups to the tensor terms and the $\ZZ_{2}$'s to the Tor terms, in the degrees listed; all other degrees receive nothing.
+:::
+:::
+
+::: {.pf-step #free}
+With $a=[e^{1}]$, $c=[e^{3}]$ of order $2$ and $b=[E_{1}]\in H_{3}$, $d=[E_{2}]\in H_{7}$ free, the class $bd$ generates $H_{10}(SO(5);\ZZ)\cong\ZZ$.
+
+::: pf-proof
+The free part of the integral homology is the exterior algebra $\Lambda_{\ZZ}[a_{3},a_{7}]$ on primitives in degrees $3$ and $7$ (Proposition 3D.4, p. 300), and $b$ and $d$ are those primitives, being the classes of the cycles $E_{1}$ and $E_{2}$ in degrees $3$ and $7$. The product $bd$ lies in degree $10$, which is the top degree, where the homology is $\ZZ$ generated by the fundamental class; so $bd$ is a generator up to sign.
+:::
+:::
+
+::: {.pf-step #torsion}
+The class $t\in H_{5}$ represented by $e^{4}e^{1}+e^{3}e^{2}$ has order $2$ and is nonzero.
+
+::: pf-proof
+Its boundary is $\partial(e^{4}e^{1})+\partial(e^{3}e^{2})=2e^{3}e^{1}+e^{3}\cdot2e^{1}$ up to the Koszul sign, and the two terms cancel, so it is a cycle. It is a boundary after doubling: $\partial(e^{4}e^{2})=2e^{4}e^{1}+2e^{3}e^{2}$ up to sign, which is twice the class in question. Hence $t$ has order at most $2$, and its mod-two reduction is nonzero because $e^{4}e^{1}+e^{3}e^{2}$ is a nonzero class in the exterior algebra on $e^{1},e^{2},e^{3},e^{4}$, so $t\neq0$.
+:::
+:::
+
+::: {.pf-step #commutative}
+$db=-bd$ on the free part, and $H_{*}(SO(5);\ZZ_{2})$ is the exterior algebra on $e^{1},e^{2},e^{3},e^{4}$.
+
+::: pf-proof
+The Pontryagin ring of an H-space is graded commutative (§3.C, p. 291), so for classes of odd degree $b$ and $d$ one has $db=(-1)^{3\cdot7}bd=-bd$. Over $\ZZ_{2}$ the Pontryagin ring is the exterior algebra on the four classes (Theorem 3D.2(b), p. 297).
+:::
+:::
+
+::: {.pf-step #limit}
+The products involving the torsion classes $a$, $c$, $t$ are not computed on this card.
+
+::: pf-proof
+The book's results cited above determine the additive structure and the products among the free generators, and nothing more. Products such as $ac\in H_{4}$ or $at\in H_{5}$ require the chain-level Pontryagin product in the cellular complex of $SO(5)$ together with the Bockstein and the universal coefficient theorem, a computation this card does not carry out; the Pontryagin ring of $SO(5)$ is therefore described here only on its free part.
+:::
+:::
+:::
+
 :::

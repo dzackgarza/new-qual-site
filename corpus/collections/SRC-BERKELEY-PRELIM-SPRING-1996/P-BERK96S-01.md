@@ -17,6 +17,13 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-23
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Spring96.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -27,6 +34,7 @@ $$
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Spring 1996, retained in this repository as `assets/attachments/Spring96.pdf`; the statement below is its wording.
 For $n\ge1$, set
 $$
 a_n\coloneqq\left(\frac{n^n}{n!}\right)^{1/n}.

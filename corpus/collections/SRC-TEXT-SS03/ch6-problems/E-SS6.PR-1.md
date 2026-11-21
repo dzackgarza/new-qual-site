@@ -14,9 +14,42 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf` at its printed folio (the scan runs nineteen pages ahead of the
+    printed page): the statement is Problem 1 at the head of the Chapter 6 Problems, printed
+    p. 179, and its printed words are the card's. The chapter, the problem number and the page
+    are now named in the solution's opening sentence. Not checked in this pass: the argument, which
+    the edit does not touch.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Chapter 6, Problem 1 on printed p. 179 (PDF p. 198), running to p. 180 for parts (c) and (d).
+    Part (c) as printed is the one sentence "The second conclusion of Proposition 2.7 can be
+    similarly refined."; the card's block now carries that sentence and then the refinement it asks
+    for, since a bare cross-reference is not a problem statement. The refinement is the right one:
+    Proposition 2.7(ii) is $\abs{\zeta'(s)}\le c_\epsilon\abs{t}^\epsilon$ for $1\le\sigma$, and
+    "(c) refined" in the same way as the printed (b) means $O((\log\abs{t})^2)$ at $\sigma=1$.
+    This item carries no asterisk, and the remark that the card already had records the same history.
+    Not checked: the printed (e) locus of part (d) beyond the text quoted, and the argument itself.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The body now states the print's difficulty marking where a reader sees it: a remark after the
+    statement reads "The book sets no asterisk before this problem (Chapter 6, Problem 1)." Read
+    again in the retained book at the head of the Chapter 6 Problems: item 1 carries no mark, while
+    items 2 and 3 carry one before the number. The sentence uses the same wording as the twenty
+    unstarred Problem cards that already carried it. No mathematics changed and the argument was
+    not re-read in this pass.
 ---
 
 ::: {.exercise}
+This is Problem 1 of Chapter 6 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`; the statement below is its wording.
+
 This problem provides further estimates for $\zeta$ and $\zeta'$ near $\operatorname{Re}(s) = 1$.
 
 (a) Use Proposition 2.5 and its corollary to prove
@@ -27,13 +60,17 @@ for every integer $N \geq 2$, whenever $\operatorname{Re}(s) > 0$, where $\delta
 
 (b) Show that $\abs{\zeta(1+it)} = O(\log \abs{t})$ as $\abs{t} \to \infty$ by using the previous result with $N = \lfloor \abs{t} \rfloor$.
 
-(c) Show that $\abs{\zeta'(1+it)} = O((\log \abs{t})^2)$ as $\abs{t} \to \infty$.
+(c) The second conclusion of Proposition 2.7 can be similarly refined: show that $\abs{\zeta'(1+it)} = O((\log \abs{t})^2)$ as $\abs{t} \to \infty$.
 
 (d) Show that if $t \neq 0$ and $t$ is fixed, then the partial sums of the series $\sum_{n=1}^\infty n^{-1-it}$ are bounded, but the series does not converge.
 :::
 
 ::: {.remark}
 The source prints the middle term as $-\frac{N^{s-1}}{s-1}$; summing $\int_n^{n+1} x^{-s}\,dx$ over $n \ge N$ gives $+\frac{N^{1-s}}{s-1}$. Part (c) in the source says only that the second conclusion of Proposition 2.7, the bound for $\zeta'$, can be refined in the same way; the statement gives that refinement.
+:::
+
+::: {.remark}
+The book sets no asterisk before this problem (Chapter 6, Problem 1).
 :::
 
 ::: {.solution}

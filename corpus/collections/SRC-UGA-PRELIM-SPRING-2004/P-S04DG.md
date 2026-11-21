@@ -14,6 +14,17 @@ audit:
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof. The last step was broken structurally: the display computing
+    $A^2$ lay after the step and after the proof root had both been closed, so the filter never saw it and
+    the page showed the claim "Using the diagonal form," followed by an orphaned formula; the display is
+    now inside the step and the step carries its own justification. The mathematics is unchanged:
+    substituting $A=PDP^{-1}$ gives $A^2=PD^2P^{-1}$ and $D^2=9I_2$. Nothing in the statement was
+    changed.
+
 ---
 
 ::: {.problem}
@@ -85,13 +96,16 @@ The columns of $P$ are the two eigenvectors from step [](#s2){.pf-ref}. Since th
 ::: pf-step
 
 Using the diagonal form,
-
-:::
-
-:::
-
 $$
 A^2=PD^2P^{-1}=P(9I_2)P^{-1}=9I_2
 =\begin{bmatrix}9&0\\0&9\end{bmatrix}.
 $$
+
+::: pf-proof
+Substituting $A=PDP^{-1}$ into $A^2$ gives $A^2=PD^2P^{-1}$, and $D^2=9I_2$ because the eigenvalues of $A$ are $3$ and $-3$, so $A^2=9I_2$.
+:::
+
+:::
+
+:::
 :::

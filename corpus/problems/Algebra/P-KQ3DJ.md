@@ -18,6 +18,15 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The step that states the definition was the one step without a justification; it now carries one, the
+    check that the lifting property is a property of $P$ and that a free module satisfies it by lifting a
+    basis. The three standard characterisations and their implications were already proved on the card
+    and are unchanged. The card stands alone, with no collection provenance and no retained published
+    solution behind it, so what is written is the card's own. The statement is unchanged.
 ---
 
 ::: {.problem}
@@ -30,6 +39,11 @@ What is a projective module? Give standard equivalent characterizations.
 
 ::: pf-step
 An $R$-module $P$ is projective if for every surjective $R$-linear map $\pi:M\twoheadrightarrow N$ and every $R$-linear map $f:P\to N$ there is an $R$-linear map $\widetilde f:P\to M$ with $\pi\circ\widetilde f=f$.
+
+
+::: pf-proof
+The lifting property is a property of $P$ alone, because it quantifies over every surjection $\pi$ and every map $f$ out of $P$. A free module has it: choose for each element $e_i$ of a basis of $P$ an element $m_i \in M$ with $\pi(m_i) = f(e_i)$, which exists because $\pi$ is surjective, and let $\widetilde f$ be the unique linear map sending $e_i$ to $m_i$; then $\pi \widetilde f = f$ on the basis, hence everywhere.
+:::
 
 :::
 

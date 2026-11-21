@@ -6,7 +6,9 @@ title: Sup norm on a smaller disk bounded by the $L^1$ norm for holomorphic func
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Cauchy Estimates
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Every orthogonal matrix is a product of at most $n-1$ elementary orthogon
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Orthogonal Matrices
+  - Matrix Decompositions
 relations: []
 review: draft
 audit:

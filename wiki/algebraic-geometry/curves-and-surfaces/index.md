@@ -9,7 +9,7 @@ topics:
 
 # Curves and surfaces
 
-For a smooth curve $C$ on a smooth projective surface $X$, adjunction gives $2g(C)-2=C\cdot(C+K_X)$, which computes the genus of a curve from the intersection pairing on $X$.
+For a smooth curve $C$ on a smooth projective surface $X$, adjunction gives $2g(C)-2=C\cdot(C+K_X)$, which computes the genus of a curve from the intersection pairing on $X$ ([[T-SRFADJ]]).
 
 ## Syllabus
 

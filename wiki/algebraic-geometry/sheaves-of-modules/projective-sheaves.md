@@ -32,8 +32,6 @@ Ampleness is preserved by positive tensor powers.
 
 [[T-MODSERRE]]
 
-Both parts say that a coherent sheaf on projective space acquires affine-like properties after sufficiently positive twisting.
-
 [[T-MODRES]]
 
 Finite resolutions by twists reduce additive invariants of coherent sheaves to the corresponding invariants of $\OO(d)$, including the computation of cohomology in [[algebraic-geometry/cohomology/index|cohomology]].

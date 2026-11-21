@@ -10,6 +10,18 @@ classification:
   - Homological Algebra
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Both computations are correct. Q is a localization of Z, hence flat, so its
+    Tor in positive degree vanishes for every A. Applying the functor to the
+    short exact sequence Z to Q to Q/Z and using that vanishing shows Tor of Q/Z
+    with A is the kernel of A mapping into Q tensor A, and under the
+    identification with the localization that kernel is exactly the torsion
+    subgroup. Nothing was changed. The statement was not re-read against a scan
+    in this pass.
 ---
 
 ::: {.problem}

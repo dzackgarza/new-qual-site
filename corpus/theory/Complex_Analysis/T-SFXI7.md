@@ -22,4 +22,6 @@ Then, with $M\coloneqq\sup_{\xi\in\gamma}\abs{f(\xi)}$,
 $$
 \abs{\int_\gamma f(z)\dz}\leq ML.
 $$
+
+For a curve of length $L$ and a continuous $f$ on it, this is [@SS03, ch. 1, sec. 3].
 :::

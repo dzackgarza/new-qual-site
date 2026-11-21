@@ -66,7 +66,7 @@ It is, in fact, true that $\RR^m$ and $\RR^n$ are not homeomorphic if $n \neq m$
 :::
 
 ::: {.solution}
-The exercise is §59 Exercise 3, printed p. 370. The proof is transcribed from
+The exercise is §59 Exercise 3. The proof is transcribed from
 Pearse, *Topology (2nd ed.) — James R. Munkres*, solutions, Cornell 2005, §59
 Exercise 3, his pp. 24--25, read in `tmp/sources/cornell-erin-munkres.md`: part
 (a) uses connectedness and part (b) the fundamental group, in each case applied
@@ -109,7 +109,7 @@ homeomorphism of $\RR^n$ carrying $\RR^n_0$ onto $\RR^n-\theset q$, and
 $\RR^n_0$ is connected by step
 [](#punctured-connected){.pf-ref}. A homeomorphism carries a separation of one
 space to a separation of the other, so $\RR^n-\theset q$ is connected; equally, by
-Theorem 23.5 (printed p. 150) a continuous image of a connected space is
+Theorem 23.5 a continuous image of a connected space is
 connected. A connected space cannot be homeomorphic to a disconnected one, so no
 such $h$ exists.
 :::
@@ -123,18 +123,18 @@ such $h$ exists.
 For every $n\ge2$ the map $H(x,t)=(1-t)x+t\,x/\norm x$ on $\RR^n_0$ is continuous,
 satisfies $H(x,0)=x$, and carries $\RR^n_0$ onto $S^{n-1}$ at $t=1$, fixing
 $S^{n-1}$ pointwise; so $S^{n-1}$ is a deformation retract of $\RR^n_0$ and
-$\pi_1(\RR^n_0)\cong\pi_1(S^{n-1})$ by Theorem 58.3 (printed p. 361).
+$\pi_1(\RR^n_0)\cong\pi_1(S^{n-1})$ by Theorem 58.3.
 
 For $n=2$ this gives $\pi_1(\RR^2_0)\cong\pi_1(S^1)\cong\ZZ$ by Theorem 54.5.
 For $n\ge3$ the sphere $S^{n-1}$ has dimension at least $2$, so it is simply
-connected by Theorem 59.3 (printed p. 369), and $\pi_1(\RR^n_0)$ is trivial.
+connected by Theorem 59.3, and $\pi_1(\RR^n_0)$ is trivial.
 
 Suppose $n>2$ and $h:\RR^2\to\RR^n$ were a homeomorphism, and let $q=h(0)$. The
 restriction of $h$ is a homeomorphism of $\RR^2-\theset 0$ onto
 $\RR^n-\theset q$, and $u\mapsto u-q$ is a homeomorphism of $\RR^n-\theset q$
 onto $\RR^n_0$; their composite is a homeomorphism $g:\RR^2_0\to\RR^n_0$, which
 therefore induces an isomorphism $g_*:\pi_1(\RR^2_0, x_0)\to
-\pi_1(\RR^n_0,g(x_0))$ by Theorem 58.7 (printed p. 364). But
+\pi_1(\RR^n_0,g(x_0))$ by Theorem 58.7. But
 $\pi_1(\RR^2_0)\cong\ZZ$ and $\pi_1(\RR^n_0)$ is trivial, and no group isomorphism
 carries an infinite cyclic group onto a one-element group. So no such
 homeomorphism exists.

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP03-03
 kind: problem
 title: Characterize several classes of spaces as subspaces of familiar spaces
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Separation Axioms, Subspaces]}
 relations: []
 review: draft
 audit:

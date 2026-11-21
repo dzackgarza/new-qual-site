@@ -12,6 +12,19 @@ classification:
   - Projective Spaces
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The computation is correct. The single four-cell is attached by a degree six
+    map, so the cellular boundary is multiplication by six from degree four to
+    degree three, which is injective and leaves Z/6 in degree three and nothing in
+    degree four. Kunneth with the projective plane then gives Z in degree 0, Z/2 in
+    degree 1 from the degree-one class, Z/6 in degree 3, Z/2 in degree 4 from the
+    tensor product of Z/6 with Z/2, and Z/2 in degree 5 from the Tor group, which
+    for these cyclic groups is the cyclic group of the gcd, and nothing else.
+    Nothing was changed.
 ---
 
 ::: {.problem}

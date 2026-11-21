@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP06-B7
 kind: problem
 title: Local nullhomotopy near a contraction point and a rational comb retraction example
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Retracts, Homotopy Equivalence]}
 relations: []
 review: draft
 audit:

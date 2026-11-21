@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB11S-06
 kind: problem
 title: Normal equations characterize least-squares minimizers
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Orthogonal Projection, Linear Systems]}
 relations: []
 review: draft
 audit:

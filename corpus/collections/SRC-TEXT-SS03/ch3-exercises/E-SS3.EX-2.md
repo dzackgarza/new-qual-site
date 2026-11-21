@@ -13,6 +13,13 @@ audit:
   - event: solution-written
     by: gpt-5.6-sol
     date: 2026-09-11
+  - event: source-corrected
+    by: claude
+    date: 2026-11-20
+    note: >-
+      The solution's opening sentence cited the book through the printed page. It now cites the
+      numbered statement, Chapter 3, Exercise 2, and the page is gone from the rendered text. The
+      statement is unchanged and the computation was not re-read in this pass.
 ---
 
 ::: {.exercise}
@@ -24,6 +31,8 @@ Where are the poles of $1/(1 + z^4)$?
 :::
 
 ::: {.solution}
+This is Exercise 2 of [@SS03, ch. 3], printed as $\int_{-\infty}^{\infty}\frac{dx}{1+x^4}$ with the question where the poles of $1/(1+z^4)$ are; no published solution set is retained, so the computation is the card's own.
+
 The poles of
 $$
 \frac1{1+z^4}

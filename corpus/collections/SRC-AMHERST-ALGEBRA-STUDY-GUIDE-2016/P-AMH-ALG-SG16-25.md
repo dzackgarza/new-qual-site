@@ -6,7 +6,9 @@ title: Ideals properly containing an ideal with field quotient contain 1
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Maximal Ideals
+  - Ideals
 relations: []
 review: draft
 audit:

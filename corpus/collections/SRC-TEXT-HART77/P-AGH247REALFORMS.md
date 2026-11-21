@@ -44,6 +44,7 @@ For the following statements, $X_0$ denotes a separated scheme of finite type ov
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.4.7, transcribed and checked against the exercise : $\sigma$ as the base change of conjugation along $\Spec\CC\to\Spec\RR$ and the semilinearity of the square, the $\sigma$-stable affine cover of a point, the gluing of the pieces, and the fixed-point analysis of the last part.
 We write
 $$
 c:\Spec\CC\longrightarrow\Spec\CC

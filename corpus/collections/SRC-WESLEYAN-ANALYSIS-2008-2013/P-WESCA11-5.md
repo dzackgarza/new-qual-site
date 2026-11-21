@@ -5,7 +5,8 @@ kind: problem
 title: 'Define a contour integral along a differentiable curve'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Contour Integration
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Elements of order 21 and 11 in $S_{10}$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Permutations
+  - Symmetric Groups
 relations: []
 review: draft
 audit:

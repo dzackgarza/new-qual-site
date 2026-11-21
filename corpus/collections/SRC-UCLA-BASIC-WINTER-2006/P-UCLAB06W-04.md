@@ -5,7 +5,9 @@ kind: problem
 title: Uniform convergence of a decreasing sequence of continuous functions
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Monotone Functions
 relations: []
 review: draft
 audit:

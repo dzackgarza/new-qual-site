@@ -27,6 +27,8 @@ Consider the quadratic form $f(\vec{x}) = 2x_1^2 + 4x_1x_2 + 3x_2^2 + 4x_2x_3 + 
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #s1-1}

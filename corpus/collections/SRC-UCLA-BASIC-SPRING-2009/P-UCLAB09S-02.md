@@ -6,7 +6,9 @@ title: Operator norm of a two-by-two matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Matrix Norms
+  - Norms
 relations: []
 review: draft
 audit:

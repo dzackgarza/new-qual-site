@@ -48,35 +48,53 @@ State definitions of the following:
 :::
 
 ::: {.solution}
-Let $G$ be a group and $X$ a set.
 
-A group action of $G$ on $X$ is a map
-$$
-G\times X\to X,\qquad (g,x)\mapsto g\cdot x,
-$$
-such that
-$$
-e\cdot x=x,
-\qquad
-(gh)\cdot x=g\cdot(h\cdot x).
-$$
+The definitions are the card's own statements, and the three elementary facts they are used for are proved below; no retained set supplies them, and the sets searched are recorded in the audit trail.
 
-The orbit of $x\in X$ is
-$$
-Gx=\{g\cdot x:g\in G\}.
-$$
+Let $G$ be a group with identity $e$ and $X$ a set.
 
-The stabilizer of $x$ is
-$$
-G_x=\{g\in G:g\cdot x=x\}.
-$$
+- An **action** of $G$ on $X$ is a map $G\times X\to X$, $(g,x)\mapsto g\cdot x$, with $e\cdot x=x$ and $(gh)\cdot x=g\cdot(h\cdot x)$ for all $g,h\in G$, $x\in X$.
+- The **orbit** of $x\in X$ is $Gx=\{g\cdot x:g\in G\}$.
+- The **stabilizer** of $x$ is $G_{x}=\{g\in G:g\cdot x=x\}$.
+- The **fixed points** of $g\in G$ are $X^{g}=\{x\in X:g\cdot x=x\}$, and the fixed points of the action are $X^{G}=\{x\in X:g\cdot x=x\ \text{for every } g\in G\}$.
 
-For $g\in G$, its fixed-point set is
-$$
-X^g=\{x\in X:g\cdot x=x\}.
-$$
-The fixed points of the whole action are
-$$
-X^G=\{x\in X:g\cdot x=x\text{ for every }g\in G\}.
-$$
+::: pf
+
+::: {.pf-step #subgroup}
+$G_{x}$ is a subgroup of $G$ for every $x\in X$.
+
+::: pf-proof
+$e\in G_{x}$ by the first axiom. If $g,h\in G_{x}$ then $(gh)\cdot x=g\cdot(h\cdot x)=g\cdot x=x$, so $gh\in G_{x}$; and if $g\in G_{x}$ then $x=e\cdot x=(g^{-1}g)\cdot x=g^{-1}\cdot(g\cdot x)=g^{-1}\cdot x$, so $g^{-1}\in G_{x}$. A nonempty subset of a group closed under products and inverses is a subgroup.
+:::
+
+:::
+
+::: {.pf-step #partition}
+The orbits are the equivalence classes of the relation $x\sim y$ iff $y=g\cdot x$ for some $g\in G$; in particular they partition $X$, and the stabilizers of two points of one orbit are conjugate: if $y=g\cdot x$ then $G_{y}=gG_{x}g^{-1}$.
+
+::: pf-proof
+The relation is reflexive ($x=e\cdot x$), symmetric (if $y=g\cdot x$ then $x=g^{-1}\cdot y$) and transitive (if $y=g\cdot x$ and $z=h\cdot y$ then $z=(hg)\cdot x$), so its classes partition $X$, and the class of $x$ is exactly $Gx$. If $y=g\cdot x$ and $h\in G_{y}$ then $h\cdot y=y$, so $(g^{-1}hg)\cdot x=g^{-1}\cdot\big(h\cdot(g\cdot x)\big)=g^{-1}\cdot y=x$ and $g^{-1}hg\in G_{x}$; hence $G_{y}\subseteq gG_{x}g^{-1}$. Since $x=g^{-1}\cdot y$, the same computation with the pair $(y,g^{-1})$ gives $G_{x}\subseteq g^{-1}G_{y}g$, that is $gG_{x}g^{-1}\subseteq G_{y}$. So $G_{y}=gG_{x}g^{-1}$: the stabilizers are conjugate, and in particular have the same order, but they need not be equal — for $S_{3}$ acting on $\{1,2,3\}$ the stabilizers of $1$ and of $2$ are distinct subgroups of order $2$.
+:::
+
+:::
+
+::: {.pf-step #orbit-stabilizer}
+The map $gG_{x}\mapsto g\cdot x$ is a bijection $G/G_{x}\to Gx$; hence $\abs{Gx}=[G:G_{x}]$, and if $G$ is finite then $\abs{G}=\abs{Gx}\cdot\abs{G_{x}}$.
+
+::: pf-proof
+The map is well defined, since $gG_{x}=hG_{x}$ means $h^{-1}g\in G_{x}$, whence $h^{-1}g\cdot x=x$ and $g\cdot x=h\cdot x$; it is surjective by the definition of the orbit; and it is injective, since $g\cdot x=h\cdot x$ gives $h^{-1}g\cdot x=x$, that is $h^{-1}g\in G_{x}$ and $gG_{x}=hG_{x}$. A bijection between $G/G_{x}$ and $Gx$ gives $\abs{Gx}=[G:G_{x}]$, and for finite $G$ Lagrange's theorem turns this into $\abs{G}=\abs{Gx}\abs{G_{x}}$.
+:::
+
+:::
+
+::: {.pf-step #fixed}
+$X^{G}=\bigcap_{g\in G}X^{g}$.
+
+::: pf-proof
+$x\in X^{G}$ means $g\cdot x=x$ for every $g\in G$, which is exactly $x\in X^{g}$ for every $g\in G$, that is $x$ lies in the intersection. A point of $X^{G}$ is a fixed point of every element of $G$, so in particular of $e$, and $X^{e}=X$.
+:::
+
+:::
+
+:::
 :::

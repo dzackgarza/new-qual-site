@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP07-09
 kind: problem
 title: The Moore plane is separable and Hausdorff but not normal
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Separation Axioms, Counterexamples]}
 relations: []
 review: draft
 audit:

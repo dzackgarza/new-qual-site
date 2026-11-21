@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://search.worldcat.org/isbn/9780691113852
+- https://books.google.com/books?vid=ISBN9780691113852
 source:
   source_kind: textbook
   textbook: stein-shakarchi-complex
@@ -491,4 +491,10 @@ source:
       comment: Appendix A, Problem 5
 ---
 
-
+::: {.remark}
+The document is Elias M. Stein and Rami Shakarchi, *Complex Analysis*,
+Princeton Lectures in Analysis II, Princeton University Press, 2003. The href
+is the Google Books record for the edition's ISBN-13 978-0-691-11385-2. The
+WorldCat ISBN route listed before redirected into a search query and answered
+HTTP 429.
+:::

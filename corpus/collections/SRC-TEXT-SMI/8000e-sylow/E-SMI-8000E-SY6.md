@@ -37,7 +37,15 @@ audit:
     nonabelian simple group has no abelian normal tower with a repeated term, so it
     is not solvable; subgroups of solvable groups are solvable by intersecting a
     tower; and A_5 embeds in S_n for n ≥ 5 fixing the rest. No defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 7, Sylow problem 6, read as
+    $A(5)\cong Icos$ (the sheet's $S(5)$ is its slip). A nonabelian simple group has no abelian
+    normal tower with unequal consecutive terms; subgroups of solvable groups are solvable by
+    intersecting the tower; and $A_5$ embeds in $S_n$ for $n\ge5$ by fixing the remaining
+    letters. No defect.
 ---
 
 ::: {.exercise}

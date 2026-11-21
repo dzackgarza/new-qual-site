@@ -19,4 +19,6 @@ The family $\mathcal F$ is \dfn{uniformly bounded on compact subsets} of $\Omega
 $$
 \abs{f(z)}\le M\qquad\text{for all } z\in K \text{ and all } f\in\mathcal F.
 $$
+
+This is the condition of [@Ahl73, ch. 5, §4.4, Families of Analytic Functions], whose Theorem 12 states that a family of analytic functions is normal with respect to $\CC$ exactly when its members are uniformly bounded on every compact set.
 :::

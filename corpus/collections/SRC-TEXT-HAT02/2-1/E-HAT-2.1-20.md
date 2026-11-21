@@ -28,6 +28,17 @@ audit:
   date: 2026-10-31
   note: >-
     Read the suspension argument: $SX$ is the union of two contractible cones meeting in $X$, so the reduced Mayer--Vietoris sequence gives $\widetilde H_{n+1}(SX)\cong\widetilde H_n(X)$; the iterated-cone case follows by induction.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 20 of §2.1, printed p. 131. Correct: $SX$ is the union of the
+    two cones with intersection $X$, and the reduced Mayer--Vietoris sequence with both cones
+    contractible gives $\widetilde H_{n+1}(SX)\cong\widetilde H_n(X)$; for the union $Y_r$ of $r$
+    cones with identified bases, collapsing one contractible cone is a homotopy equivalence and the
+    quotient is a wedge of $r-1$ copies of $SX$, so reduced homology of the finite wedge gives
+    $\widetilde H_k(Y_r)\cong\bigoplus^{r-1}\widetilde H_{k-1}(X)$. Nothing changed. Not claimed:
+    a published solution, and no certificate.
 ---
 
 ::: {.problem}

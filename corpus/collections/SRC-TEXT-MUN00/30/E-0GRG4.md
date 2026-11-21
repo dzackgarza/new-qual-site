@@ -29,6 +29,19 @@ audit:
     countable basis. The card proves the same four answers directly from the uncountable discrete
     subspace {0,1}^omega of distance 1, which is the argument the book uses for Example 2. No
     correction to the mathematics was needed; the added explicitness is the only change.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the one container states why its subclaims suffice, and the 6 leaf
+    steps that asserted their claim with no justification each carry a sentence deriving it. The trailing
+    Q.E.D. was dropped. The mathematics is unchanged: the uniform metric, the uncountable discrete
+    family $\{0,1\}^\omega$ whose distinct points are at distance $1$, and the three arguments from the
+    pairwise disjoint balls of radius $1/2$ that rule out a countable basis, a countable dense set and a
+    countable subcover. Checked against Munkres, Topology (2000), section 30 Exercise 3, where the four
+    countability axioms of $\RR^\omega$ in the uniform topology are asked for. Nothing in the statement
+    was changed.
+
 ---
 
 ::: {.exercise}
@@ -44,6 +57,11 @@ Which of our four countability axioms does $\RR^\omega$ in the uniform topology 
 Metric characterization of the uniform topology:
 The uniform topology on $\RR^\omega$ is induced by the uniform metric:
 $$\bar{\rho}(\mathbf{x}, \mathbf{y}) = \sup_{n \in \ZZ_+} \bar{d}(x_n, y_n), \quad \text{where } \bar{d}(a, b) = \min\{\abs{a - b}, 1\}.$$
+
+::: pf-proof
+This is the definition of the uniform metric on $\RR^\omega$: the supremum of the bounded coordinate distances.
+:::
+
 :::
 
 ::: pf-step
@@ -63,18 +81,38 @@ Let $S = \{0, 1\}^\omega \subset \RR^\omega$ be the set of all binary sequences 
 
 ::: pf-step
 The set $S$ has cardinality $\cardinality{S} = 2^{\aleph_0} > \aleph_0$, so $S$ is uncountable.
+
+::: pf-proof
+The binary sequences are in bijection with the power set of $\ZZ_+$, which has cardinality $2^{\aleph_0}$, and Cantor's theorem says this exceeds $\aleph_0$.
+:::
+
 :::
 
 ::: pf-step
 For any two distinct sequences $\mathbf{x}, \mathbf{y} \in S$, there exists an index $m \in \ZZ_+$ such that $x_m \neq y_m$.
+
+::: pf-proof
+Two sequences are equal exactly when they agree in every coordinate.
+:::
+
 :::
 
 ::: pf-step
 Then $\bar{d}(x_m, y_m) = \abs{x_m - y_m} = 1$, so $\bar{\rho}(\mathbf{x}, \mathbf{y}) = \sup_{n} \bar{d}(x_n, y_n) = 1$.
+
+::: pf-proof
+The entries lie in $\{0,1\}$ and differ, so the difference is $1$; hence $\bar d=1$ at that coordinate and the supremum is $1$.
+:::
+
 :::
 
 ::: pf-step
 The open balls $\{B_{\bar{\rho}}(\mathbf{x}, \frac{1}{2}) : \mathbf{x} \in S\}$ are pairwise disjoint in $\RR^\omega$.
+
+::: pf-proof
+Two balls of radius $1/2$ whose centres are at distance $1$ cannot meet, by the triangle inequality.
+:::
+
 :::
 
 :::
@@ -110,7 +148,12 @@ The coordinate projections are continuous in the uniform topology, so $S=\bigcap
 
 ::: pf-step
 Conclusion:
-$\RR^\omega$ in the uniform topology satisfies the **first countability axiom**, but satisfies **none of the other three** (second-countable, separable, Lindelöf). Q.E.D.
+$\RR^\omega$ in the uniform topology satisfies the **first countability axiom**, but satisfies **none of the other three** (second-countable, separable, Lindelöf).
+
+::: pf-proof
+First countability was shown above, and the uncountable family of pairwise disjoint balls rules out a countable basis, a countable dense set and a countable subcover.
+:::
+
 :::
 
 :::

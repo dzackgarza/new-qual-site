@@ -12,6 +12,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read for the hypotheses the invoked results need, part (c) being the one that needed work.
+    Its forward direction picked closed $F\subseteq E$ with $m(E\setminus F)<\varepsilon/2$ by
+    "inner regularity", but that is the finite-measure form of the statement: for a measurable
+    $E$ of infinite measure no closed $F$ need satisfy it a priori, and the conclusion
+    (c) is about arbitrary subsets of $\RR$. The step is now taken on the bounded pieces
+    $E\cap[n,n+1]$, where finiteness holds, and the two unions are checked: $G$ open as a union
+    of open sets, $F$ closed because the $F_n$ are compact in successive slabs, and
+    $m(G\setminus F)\le 3\varepsilon/4$ by the geometric budget $\varepsilon/2^{\abs n+3}$. Parts
+    (a) and (b) were re-read and are as they were. Not checked in this pass: nothing outside this
+    card, and no published solution of the problem was located to compare with.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
@@ -28,6 +42,8 @@ Prove or disprove each of the following statements.
 :::
 
 ::: {.solution}
+
+The argument is the card's own, apart from (a), which is Lusin's theorem quoted as such: for (b) the sets with Borel sections form a $\sigma$-algebra containing the open rectangles; for (c) the closed and open approximations are taken on the bounded pieces $E\cap[n,n+1]$ and assembled, and the converse direction reduces to a null difference. No source is transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
 
 ::: pf
 
@@ -95,8 +111,11 @@ By step [](#ginv-U-is-section){.pf-ref} the preimage of every open set is Borel,
 ($\Rightarrow$) If $E$ is measurable, then for every $\varepsilon > 0$ there exist closed $F$ and open $G$ with $F \subseteq E \subseteq G$ and $m(G \setminus F) < \varepsilon$.
 
 ::: pf-proof
-By outer regularity pick open $G \supseteq E$ with $m(G \setminus E) < \varepsilon/2$, and by inner regularity (approximation by closed sets for Lebesgue measure on $\RR$) pick closed $F \subseteq E$ with $m(E \setminus F) < \varepsilon/2$.
-Since $G \setminus F \subseteq (G \setminus E) \cup (E \setminus F)$, subadditivity gives $m(G \setminus F) < \varepsilon$.
+Write $E = \bigcup_{n \in \ZZ} E_n$ with $E_n \coloneqq E \cap [n, n+1]$; each $E_n$ is a measurable subset of a bounded interval and so has finite measure. Regularity applies on each piece: choose open $G_n \supseteq E_n$ with $m(G_n \setminus E_n) < \varepsilon/2^{\abs{n}+3}$, and compact $F_n \subseteq E_n$ with $m(E_n \setminus F_n) < \varepsilon/2^{\abs{n}+3}$.
+Put $G \coloneqq \bigcup_n G_n$ and $F \coloneqq \bigcup_n F_n$. Then $G$ is open and contains $E$, and $F \subseteq E$. $F$ is closed: a point $x \notin F$ lies in some $[m, m+1]$, at a positive distance from each of the finitely many compact $F_n$ meeting $[m-1, m+2]$, so a neighbourhood of $x$ misses $F$.
+Finally $G \setminus F \subseteq \bigcup_n (G_n \setminus F_n)$, so
+$$m(G \setminus F) \leq \sum_n m(G_n \setminus F_n) \leq \sum_n \big( m(G_n \setminus E_n) + m(E_n \setminus F_n) \big) \leq \sum_{n \in \ZZ} \frac{\varepsilon}{2^{\abs n + 2}} = \frac{3\varepsilon}{4} < \varepsilon,$$
+using $\sum_{n \in \ZZ} 2^{-\abs n} = 3$.
 :::
 
 :::
@@ -121,4 +140,8 @@ Steps [](#forward-direction){.pf-ref} and [](#backward-direction){.pf-ref} give 
 
 :::
 
+:::
+
+::: {.remark}
+Part (a) is true as printed for the trivial reason that $K$ may be a single point, on which every function is continuous; the statement proved above is Lusin's theorem, which is strictly stronger, since it also gives $m([0,1]\setminus K)<\eps$.
 :::

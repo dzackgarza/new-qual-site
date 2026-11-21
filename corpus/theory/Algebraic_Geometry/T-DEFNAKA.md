@@ -36,7 +36,7 @@ Let $A$ be a ring, $I$ an ideal, and $M$ an $A$-module.
 ::: {.remark}
 Part (i) is the determinant trick: writing $m_i = \sum_j a_{ij}m_j$ with $a_{ij}\in I$ says $\id - (a_{ij})$ kills $M$, and multiplying by the adjugate shows $\det(\id - (a_{ij}))$ does too, an element congruent to $1$ modulo $I$.
 Part (ii) follows because such an $a$ lies in no maximal ideal, hence is a unit.
-Part (iii) applies (ii) to the cokernel $L$ of $N \injects M$, using right exactness of $\wait\tensor A/I$ to get $L = IL$.
+Part (iii) applies (ii) to the cokernel $L$ of $N \injects M$, using right exactness of $-\tensor A/I$ to get $L = IL$.
 Part (iv) is (iii) with $N = \generators{f_1,\ldots,f_n}$ and $I = \mm$.
 
 For a finite module $M$ over a local ring $(A,\mm)$, the images of a minimal generating set form a basis of the vector space $M/\mm M$.

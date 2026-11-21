@@ -17,23 +17,28 @@ topics:
 
 [[PR-OODAV]]
 
-::: {.remark title="Splitting off the free part"}
-Over a PID, a finitely generated module $M$ has $M/M_t$ free, and free modules are projective, so $0\to M_t\to M\to M/M_t\to 0$ splits by [[PR-OODAV]] and $M\cong M_t\oplus M/M_t$.
-:::
+Over a principal ideal domain the torsion sequence $0\to M_t\to M\to M/M_t\to0$ splits by the splitting criterion, since its quotient is free.
+
+[[P-J5GIE]]
 
 ## Tensor products
 
-::: {.proposition}
-For positive integers $m$ and $n$, $\ZZ/m \tensor_\ZZ \ZZ/n \cong \ZZ/\gcd(m,n)$.
-In particular $\ZZ/2 \tensor_\ZZ \ZZ/3 = 0$.
+[[T-TENSR]]
+
+[[P-I2MBC]]
+
+[[D-B5X33]]
+
+## Exactness of the tensor functor
+
+Right exactness needs no hypothesis on $M$; the other half of exactness is the flatness criterion.
+
+[[D-FS52P]]
+
+[[PR-KX7L7]]
+
+::: {.example title="Failure of injectivity after tensoring with $\ZZ/2$"}
+Multiplication by $2$ on $\ZZ$ is injective, and tensored with $\ZZ/2$ it is the zero map on $\ZZ/2$, which is not injective; the kernel of that zero map is the first Tor group, $\Tor_1^{\ZZ}(\ZZ/2,\ZZ/2)$.
 :::
 
-::: {.proof}
-Tensoring the exact sequence $\ZZ \xrightarrow{n} \ZZ \to \ZZ/n \to 0$ with $\ZZ/m$ gives, by right exactness, the exact sequence $\ZZ/m \xrightarrow{n} \ZZ/m \to \ZZ/n\tensor_\ZZ \ZZ/m \to 0$.
-Hence $\ZZ/n\tensor_\ZZ\ZZ/m \cong (\ZZ/m)/n(\ZZ/m) \cong \ZZ/\gcd(m,n)$.
-:::
-
-::: {.remark title="Right exactness"}
-For every $R$-module $M$, the functor $-\tensor_R M$ is right exact, and it is exact if and only if $M$ is flat.
-Multiplication by $2$ on $\ZZ$ is injective, and tensored with $\ZZ/2$ it is the zero map on $\ZZ/2$, which is not injective; the kernel is $\Tor_1^\ZZ(\ZZ/2,\ZZ/2)\cong\ZZ/2$.
-:::
+[[T-TORCY]]

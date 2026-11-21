@@ -39,6 +39,8 @@ If $f$ is continuous on $(-1, 1)$, show that $f$ is indeed differentiable at $0$
 
 ::: {.solution}
 
+The argument is the card's own: for (a) Darboux's theorem applied to $g=f-2x$, proved here by the minimum argument; for (b) the mean value theorem on $[0,x]$ and on $[x,0]$, with the intermediate point tending to $0$. No source is transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
+
 ::: pf
 
 ::: pf-step
@@ -96,7 +98,7 @@ Proof of (b).
 ::: pf-proof
 
 ::: {.pf-step #mvt-positive-side}
-Fix $x > 0$ (with $x$ small, $x \in (0, 1)$); the mean value theorem applies to $f$ on $[0, x]$: $f(x) - f(0) = f'(c_x) x$ for some $c_x \in (0, x)$.
+Fix $x > 0$ (with $x$ small, $x \in (0, 1)$); the [[T-OXNTU|mean value theorem]] applies to $f$ on $[0, x]$: $f(x) - f(0) = f'(c_x) x$ for some $c_x \in (0, x)$.
 
 ::: pf-proof
 $f$ is continuous on $[0, x]$ (hypothesis) and differentiable on $(0, x)$ (since $(0, x) \subseteq (0, 1)$); MVT applies.

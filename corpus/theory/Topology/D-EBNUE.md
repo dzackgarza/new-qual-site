@@ -19,7 +19,7 @@ The \dfn{fundamental group} $\pi_1(X, x_0)$ is the set of classes of [[D-J6XOC|l
 $$
 [\gamma][\eta]\coloneqq[\gamma\cdot\eta],
 $$
-where $\gamma\cdot\eta$ is the [[D-J6XOC|concatenation]] of $\gamma$ and $\eta$ [@Hat02].
+where $\gamma\cdot\eta$ is the [[D-J6XOC|concatenation]] of $\gamma$ and $\eta$ [@Hat02, §1.1].
 :::
 
 ::: {.proposition}

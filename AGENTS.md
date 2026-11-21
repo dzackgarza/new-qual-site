@@ -144,8 +144,10 @@ finding triggers an edit, and a run with no candidates is not evidence that the 
 is clean.
 
 `just backlog` (and `uv run python tools/backlog.py`) regenerates `BACKLOG.md`;
-CI runs it and `just unsolved`, and publishes both reports as the
-`corpus-reports` workflow artifact.
+CI runs it with `--with-queues`, which also writes the generated queues `just
+unsolved` (`queues/C-unsolved-cards.md`) and `just prose-only`
+(`queues/D-prose-only-solutions.md`) write standalone, and publishes all three
+as the `corpus-reports` workflow artifact.
 
 ## This corpus is authored content
 
@@ -740,7 +742,9 @@ concerns, not data integrity problems.
 # Finding work
 
 The [issue tree](https://github.com/dzackgarza/new-qual-site/issues/83) holds the open work units in execution order. Unsolved problems are the problem cards with no `solution`
-section; `just unsolved` lists them. Before taking a card, read it: a sibling may have solved it
+section; `just unsolved` lists them. A solve that is prose is a solution by that list and
+still not what issue #2 asks for, so a problem card whose solution holds no numbered step
+is listed separately by `just prose-only`. Before taking a card, read it: a sibling may have solved it
 since the list was produced. Never author the same card as a sibling.
 
 # One checkout, one branch
@@ -856,7 +860,7 @@ The same changed-card validation obligation holds at each supported content rout
 The push path compiles nothing and writes no queue. `build`, `site`, `crawl` and `preview` all reach the
 whole-corpus compile, so none of them is on the push path: `.github/workflows/development.yml` builds,
 crawls and deploys on a push to `main`, and its `corpus-reports` job runs `just _reports-ci` for
-`BACKLOG.md` and `queues/C-unsolved-cards.md`. `tests/test_push_gate_dependencies.py` holds that shape —
+`BACKLOG.md`, `queues/C-unsolved-cards.md` and `queues/D-prose-only-solutions.md`. `tests/test_push_gate_dependencies.py` holds that shape —
 it reads the `justfile` and fails if a recipe a commit or push reaches compiles the corpus, renders the
 site, or writes the queue, which is the defect issue #100 recorded when a push ran a full build with
 eight Pandoc servers and the queue refusal made it run a second time.
@@ -881,8 +885,8 @@ on the exact Git blob identities. `just test-push` additionally runs the extract
 mirror check, and focused parser and Git-boundary tests. It is the explicit project diagnostic command;
 the shared Git hooks own the automatic syntax and card-data checks.
 The full test suite and report generation run in CI. Download the
-`corpus-reports` workflow artifact for current `BACKLOG.md` and
-`queues/C-unsolved-cards.md` measurements. Select the run for the revision under review:
+`corpus-reports` workflow artifact for current `BACKLOG.md`,
+`queues/C-unsolved-cards.md` and `queues/D-prose-only-solutions.md` measurements. Select the run for the revision under review:
 `gh run view <run-id> --json headSha,status,conclusion`, then download its reports with
 `gh run download <run-id> -n corpus-reports -D /tmp/qual-reports-<run-id>`.
 Check `corpus-reports-revision.txt` against that run's `headSha` before reading the reports.
@@ -1013,6 +1017,10 @@ dates, at the foot, under `Audit trail`. An event dated before the commit that
 carries it is a record, not a draft: the local gate refuses a commit that
 changes or deletes one, so a correction is a new event dated the commit's date
 (`QUAL-11`, issue #147). Events dated the commit's own day are still in flight.
+A correction of a card's *mathematics* is recorded with the event kind
+`solution-corrected`, which is what makes issue #111's "every correction arrives with its
+certificate" checkable: the commit gate refuses that event on a card no row of
+`proofs/README.md` covers for the whole statement.
 The rule also runs the other way: an event a later commit rewrote in place is
 restored to the text it carried on its day, and the gate accepts that
 restoration when the replacement text stands in an earlier revision of the same

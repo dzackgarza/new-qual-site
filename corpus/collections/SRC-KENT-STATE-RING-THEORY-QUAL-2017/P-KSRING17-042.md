@@ -31,7 +31,6 @@ audit:
     1_R in the union would put 1_R in a member, and Zorn gives a maximal element,
     which is maximal in R. No defect.
 ---
----
 
 ::: {.problem}
 Let $R$ be a nonzero ring with identity.

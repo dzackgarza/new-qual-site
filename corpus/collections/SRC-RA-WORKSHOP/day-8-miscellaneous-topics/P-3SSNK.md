@@ -16,6 +16,18 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. The integrator alpha is constant on [-1,0] and
+    on (0,1], with a single jump at 0 of size alpha(0+) - alpha(0-) = 1 - (-1) = 2, so a
+    Riemann-Stieltjes sum for a partition refining around 0 collapses to f(t)(alpha(0+) -
+    alpha(0-)) = 2f(t) with t the tag in whichever interval contains 0; continuity of f at 0 makes
+    these sums converge to 2f(0), and boundedness plus continuity at the single jump gives the
+    Darboux criterion, since the discontinuities of f away from 0 are multiplied by zero increments
+    of alpha. The card argues exactly through the Darboux sums and gets 2f(0). Not claimed: any
+    statement when f fails to be continuous at 0, where the integral need not exist.
 ---
 ::: {.problem}
 Define $\alpha \colon [-1,1] \to \RR$ by $$\alpha(x) \coloneqq \begin{cases} -1 & x \in [-1,0] \\ 1 & x \in (0,1]. \end{cases}$$ Let $f \colon [-1,1] \to \RR$ be a function that is uniformly bounded on $[-1,1]$ and continuous at $x=0$, but not necessarily continuous for $x \neq 0$.

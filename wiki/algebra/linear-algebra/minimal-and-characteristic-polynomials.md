@@ -8,7 +8,7 @@ topics:
 # Minimal and characteristic polynomials
 
 Let $A$ be an $n\times n$ matrix over a field $F$, and make $V=F^n$ an $F[t]$-module by $p(t)\actson v \coloneqq p(A)v$.
-The [[D-GK5SF|minimal polynomial]] $\min_A$ is the monic generator of the annihilator of this module, and the [[D-QFYAC|characteristic polynomial]] $\chi_A(t)=\det(tI-A)$ is the product of its invariant factors, the largest of which is $\min_A$.
+The [[D-GK5SF|minimal polynomial]] $\min_A$ is the monic generator of the annihilator of this module, so a divisibility between minimal polynomials is a containment of annihilators, and the [[D-QFYAC|characteristic polynomial]] $\chi_A(t)=\det(tI-A)$ is the product of the module's invariant factors.
 
 [[PR-EDD7U]]
 
@@ -27,9 +27,8 @@ The [[D-GK5SF|minimal polynomial]] $\min_A$ is the monic generator of the annihi
 
 [[T-SJCF7]]
 
-::: {.remark title="The exponents"}
-By [[PR-UFVPY]], $\min_A$ divides $\chi_A$ and has the same irreducible factors, so $\min_A$ is determined by the exponents of the irreducible factors of $\chi_A$ in it.
-When $\chi_A$ splits, the exponent of $(t-\lambda)$ in $\min_A$ is the size of the largest Jordan block for $\lambda$, and in $\chi_A$ it is the sum of the sizes of those blocks; these do not determine the Jordan form in general, as for $J_2(0)\oplus J_2(0)$ and $J_2(0)\oplus J_1(0)\oplus J_1(0)$.
+::: {.remark title="The two polynomials do not determine the operator"}
+The pair $(\min_A,\chi_A)$ does not determine the Jordan form: $J_2(0)\oplus J_2(0)$ and $J_2(0)\oplus J_1(0)\oplus J_1(0)$ share the characteristic polynomial $x^4$ and the minimal polynomial $x^2$, as the block-counting data on [[algebra/linear-algebra/jordan-canonical-form|Jordan canonical form]] show.
 :::
 
 ## Computing the minimal polynomial

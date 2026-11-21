@@ -21,6 +21,13 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Used the strictly monotone antiderivative of 1/f to construct and uniquely characterize local solutions, then identified global existence with divergence of the reciprocal-speed integrals at both infinities."
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Fall82.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -32,6 +39,7 @@ Let $f:\RR\to\RR$ be continuous and nowhere zero, and consider $y'=f(y)$.
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Fall 1982, retained in this repository as `assets/attachments/Fall82.pdf`; the statement below is its wording.
 Because $f$ is continuous and nowhere zero on the connected set $\RR$,
 it has constant sign.
 

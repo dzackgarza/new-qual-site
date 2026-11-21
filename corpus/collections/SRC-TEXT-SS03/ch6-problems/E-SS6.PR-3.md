@@ -14,6 +14,22 @@ audit:
 - event: solution-written
   by: Claude Opus 5.5
   date: 2026-09-28
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against the printed item, Chapter 6, Problem 3 on printed p. 180 (PDF p. 199): the
+    statement is the print's, including the four defining properties of the $Q_k$ and the printed
+    display with $d^k/dx^kQ_k$. The asterisk the print sets before "3." is recorded in the remark.
+    The argument was checked and holds: $Q_{j+1}(x)=Q_{j+1}(0)+\int_0^xQ_j$ is periodic because
+    $\int_x^{x+1}Q_j=0$, the bound $\abs{Q_jx^{-s-1-j}}\le Cx^{-\sigma-1-j}$ gives local uniform
+    convergence on $\Re s>-j$, the recursion $I_j=-Q_{j+1}(1)+(s+j+1)I_{j+1}$ is the integration by
+    parts with the boundary term at $\infty$ vanishing, and the iterated form
+    $I_0=P_k+(s+1)\cdots(s+k)I_k$ leaves a meromorphic expression on $\Re s>-k$ whose only pole is
+    $s=1$; the vanishing of $\prod_{i=1}^k(s+i)$ at $s=-1,\dots,-k$ removes any apparent pole
+    there. Not checked: the printed display's $d^k/dx^kQ_k$, which equals $Q_0$ by the recursion
+    and is therefore a tautology in the print; the card's $I_j$ form is the version that carries
+    the content.
 ---
 
 ::: {.exercise}
@@ -30,6 +46,10 @@ $$
 \zeta(s) = \frac{s}{s - 1} - \frac{1}{2} - s\int_1^{\infty} \left( \frac{d^k}{dx^k} Q_k(x) \right) x^{-s-1}\, dx,
 $$
 and a $k$-fold integration by parts gives the analytic continuation for $\zeta(s)$ when $\Re(s) > -k$.
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 6, Problem 3).
 :::
 
 ::: {.solution}

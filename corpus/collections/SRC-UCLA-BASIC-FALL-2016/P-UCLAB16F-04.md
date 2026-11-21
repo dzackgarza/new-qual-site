@@ -5,7 +5,9 @@ kind: problem
 title: Lower semicontinuity of matrix rank
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Rank
+  - Lower Semicontinuity
 relations: []
 review: draft
 audit:

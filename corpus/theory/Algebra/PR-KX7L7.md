@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $R$ be a commutative ring and $X$ an $R$-module, and let $F \coloneqq (\wait) \tensor_R X$ on $R$-modules.
+Let $R$ be a commutative ring and $X$ an $R$-module, and let $F \coloneqq (-) \tensor_R X$ on $R$-modules.
 
 - $F$ is right exact.
 

@@ -37,13 +37,49 @@ Let $X$ be a locally compact paracompact Hausdorff space and $\mathcal{F}$ a she
 :::
 
 ::: {.proposition}
-On a paracompact Hausdorff space, flasque sheaves and fine sheaves are soft, and soft sheaves are acyclic: $H^i(X, \mathcal{F}) = 0$ for $i > 0$.
-So a resolution of a sheaf by fine sheaves computes its cohomology.
-On a locally compact Hausdorff space, c-soft sheaves are acyclic for compactly supported sections:
+1. A flasque sheaf is soft.
+
+2. On a paracompact Hausdorff space, a fine sheaf is soft.
+
+3. On a paracompact Hausdorff space, a soft sheaf is acyclic: $H^i(X, \mathcal{F}) = 0$ for $i > 0$, so a resolution of a sheaf by fine sheaves computes its cohomology.
+
+4. On a locally compact Hausdorff space, a c-soft sheaf is acyclic for compactly supported sections:
 $$
 R^i\Gamma_c(X,\mathcal F)=0
 \qquad(i>0).
 $$
+:::
+
+::: {.proof}
+**(1)**
+Let $\mathcal{F}$ be flasque and $Z\subseteq X$ closed; no hypothesis on $X$ is used.
+Because $Z$ is closed and sections of a sheaf agree on overlaps, a section of $\restrictionof{\mathcal{F}}{Z}$ is a section over an open neighbourhood:
+$$
+\Gamma(Z,\restrictionof{\mathcal{F}}{Z})=\colim_{U\supseteq Z}\mathcal{F}(U),
+$$
+the colimit over the open neighbourhoods of $Z$.
+So $s\in\Gamma(Z,\restrictionof{\mathcal{F}}{Z})$ is represented by $s_U\in\mathcal{F}(U)$ for some open $U\supseteq Z$, and flasqueness of $\mathcal{F}$ gives $t\in\mathcal{F}(X)$ restricting to $s_U$, hence to $s$.
+
+**(2)**
+Let $\mathcal{F}$ be fine, $Z\subseteq X$ closed, and $s\in\Gamma(Z,\restrictionof{\mathcal{F}}{Z})$.
+Each point of $Z$ has an open neighbourhood over which $s$ is the restriction of a section of $\mathcal{F}$, so some open cover $\mathfrak{U}$ of $X$ has $s$ extend over $Z\cap U$ for every $U\in\mathfrak{U}$; adjoin $X\sm Z$ to that cover.
+By paracompactness $\mathfrak{U}$ has a locally finite open refinement $\{U_i\}_{i\in I}$, and fineness of $\mathcal{F}$ gives endomorphisms $\eta_i\colon\mathcal{F}\to\mathcal{F}$ with $\supp\eta_i\subseteq U_i$ and $\sum_i\eta_i=\id$.
+
+For each $i$ choose $t_i\in\mathcal{F}(U_i)$ restricting to $s$ on $Z\cap U_i$.
+The section $\eta_i(t_i)$ of $\mathcal{F}$ over $U_i$ vanishes off $\supp\eta_i$, so it and the zero section agree on the overlap of $\{U_i, X\sm\supp\eta_i\}$, and the sheaf axiom glues them to a global section; the resulting family is locally finite, so
+$$
+t\coloneqq\sum_i\eta_i(t_i)
+$$
+is a well-defined global section.
+For $x\in Z$ the sum has finitely many nonzero terms, and for each of them $x\in U_i$, so $(t_i)_x=s_x$ and
+$$
+t_x=\sum_i(\eta_i)_x(s_x)=(\textstyle\sum_i\eta_i)_x(s_x)=s_x .
+$$
+Hence $t$ restricts to $s$, and $\mathcal{F}$ is soft.
+
+**(3) and (4) are stated here without proof.**
+Neither is proved on any card in the corpus, and the standard treatments are not retained: `vocabularies/references.yaml` has no key for Godement, Bredon or Warner, and `tmp/sources` holds no text of theirs, so no numbered statement could be read and none is cited.
+No converse is claimed: a soft sheaf need not be flasque, the sheaf of smooth functions on a manifold being soft and not flasque, and (3) uses paracompactness of the space rather than any property of the sheaf beyond softness.
 :::
 
 ::: {.example}

@@ -5,7 +5,9 @@ kind: problem
 title: Eigenvalues of $B$ with $ABA^{-1}=B^3$ are roots of unity
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Eigenvalues and Eigenvectors
+  - Roots of Unity
 relations: []
 review: draft
 audit:

@@ -87,7 +87,7 @@ splits.
 
 ::: pf-proof
 
-The subgroup $\operatorname{im}\partial_n$ of the free abelian group $C_{n-1}$ is free abelian, as a subgroup of a free abelian group. A short exact sequence with free quotient splits, by the remark following the Splitting Lemma on p. 148, so choose a complement $L_n\subset C_n$ such that
+The subgroup $\operatorname{im}\partial_n$ of the free abelian group $C_{n-1}$ is free abelian, as a subgroup of a free abelian group. A short exact sequence with free quotient splits, by the remark following the Splitting Lemma, so choose a complement $L_n\subset C_n$ such that
 $$
 C_n=K_n\oplus L_n.
 $$
@@ -146,7 +146,7 @@ $$
 $$
 while the basis vectors of $K_n$ not hit by the map yield one-term summands $\ZZ$ in degree $n$.
 
-Now let $X$ be a CW complex with finitely many cells in each dimension, so that each cellular chain group is a finitely generated free abelian group, and tensor its cellular chain complex with an abelian group $G$. The complex $C_*^{CW}(X)\otimes G$ computes $H_*(X;G)$, which is the coefficient form of Theorem 2.35 (p. 139) used in Example 2.50 (p. 154). Since the tensor product distributes over direct sums, this complex is the direct sum of the tensor products of the two-term pieces found above, and the homology of a direct sum of chain complexes is the direct sum of their homologies.
+Now let $X$ be a CW complex with finitely many cells in each dimension, so that each cellular chain group is a finitely generated free abelian group, and tensor its cellular chain complex with an abelian group $G$. The complex $C_*^{CW}(X)\otimes G$ computes $H_*(X;G)$, which is the coefficient form of Theorem 2.35 used in Example 2.50. Since the tensor product distributes over direct sums, this complex is the direct sum of the tensor products of the two-term pieces found above, and the homology of a direct sum of chain complexes is the direct sum of their homologies.
 
 :::
 

@@ -18,6 +18,8 @@ The \dfn{Weierstrass $\wp$ function} of $\Lambda$ is
 $$
 \wp(z)\coloneqq\frac{1}{z^2}+\sum_{\omega\in\Lambda\setminus\{0\}}\qty{\frac{1}{(z-\omega)^2}-\frac{1}{\omega^2}},\qquad z\in\CC\setminus\Lambda.
 $$
+
+This is the function introduced in [@Ahl73, ch. 7, §3.1, The Weierstrass $\wp$-function], with the same normalisation by the lattice $\Lambda$.
 :::
 
 ::: {.proposition}

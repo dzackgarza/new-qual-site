@@ -58,6 +58,23 @@ audit:
     circle through Alexander duality without proving it; that is a source searched, not a proof of part (b), and
     nothing is transcribed. The card's proof is its own, checked on 2026-11-11 against Theorem 63.2, Theorem 63.5,
     Theorem 63.1 and Theorem 26.9 as the note above records; it was not re-read in this pass.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card stood in queue D: its solution was prose in two headed parts with no `pf` structure. It is
+    now a `pf` with nine steps covering (a) and (b), each carrying a `pf-proof`, and the hints the
+    exercise prints are followed. Cited by numbered statement only: Munkres, Topology, §63 Exercise 3,
+    Theorem 63.1 (the two-open-sets criterion), Theorem 63.2 (an arc does not separate $S^2$), Theorem
+    63.4 (the local disk argument), Theorem 63.5 (two non-separating closed connected sets meeting in
+    two points separate $S^2$ into two components), Theorem 25.5, Theorem 26.3, Theorem 26.5 and
+    Theorem 26.9, with §59 for the identification $S^2-\{p\}\cong\RR^2$. No retained published set
+    reaches §63, and the card's preamble says so and names the search record. Checked: that $h$
+    carries the nested compact family to a nested closed family with intersection $C_0$, that the
+    finite intersection property applies to $\sigma(I)\cap D_c$, that $D_c\cap A_c$ is the single
+    point $p$, that the loop $\alpha*\beta^{-1}$ lies in $X=S^2-\{p\}$ and is null-homotopic there,
+    and that $U$ and $V$ are open because components of an open set in a locally connected space are
+    open.
 ---
 
 ::: {.exercise}
@@ -73,66 +90,92 @@ Show first, using the argument of Theorem 63.4, that each point of $C - C_0$ lie
 :::
 
 ::: {.solution}
-Write
-$$
-\overline S=\bigl\{(x,\sin(1/x)):0<x\le1\bigr\}\cup(\{0\}\times[-1,1]).
-$$
 
-**(a)** Let $h:\overline S\to D$ be the given homeomorphism, and put
-$$
-C_0=h(\{0\}\times[-1,1]),\qquad
-D_c=h\bigl(\overline S\cap\{(x,y):x\le c\}\bigr)
-\quad(0<c<1).
-$$
-The set $C_0$ is an arc, being $h$ applied to the interval $\{0\}\times[-1,1]$, so by Theorem 63.2 (printed p. 389) it does not separate $S^2$; the set $S^2-C_0$ is open in $S^2$ and hence locally path connected, so by Theorem 25.5 (printed p. 161) its components and path components coincide, and $S^2-C_0$ is path connected. Given $a,b\in S^2-D$, choose a path $\sigma:I\to S^2-C_0$ from $a$ to $b$.
+No retained published solution of Munkres, *Topology*, §63 Exercise 3 was located: the sets searched are listed in the `COMPLAINTS.md` entry for §51--§63 of `SRC-TEXT-MUN00`, and no retained set reaches §63. The proof is the card's own, checked against the numbered statements it cites, and it follows the two hints the exercise prints.
 
-For some $c_0>0$ the path also misses $D_{c_0}$. Each $D_c$ is the image under the continuous map $h$ of the compact set $\overline S\cap\{x\le c\}$, hence compact (Theorem 26.5, printed p. 166) and closed in the Hausdorff space $S^2$ (Theorem 26.3, printed p. 165). The family is nested, $D_c\subseteq D_{c'}$ whenever $c\le c'$, and
+::: pf
 
-$$
-\bigcap_{c>0}D_c=h\Bigl(\bigcap_{c>0}\bigl(\overline S\cap\{x\le c\}\bigr)\Bigr)=h(\{0\}\times[-1,1])=C_0,
-$$
+::: {.pf-step #setup}
+Write $\bar S=\{(x,\sin(1/x)):0<x\le1\}\cup(\{0\}\times[-1,1])$, let $h:\bar S\to D$ be a homeomorphism onto $D\subseteq S^2$, and put $C_0=h(\{0\}\times[-1,1])$ and, for $0<c<1$, $D_c=h(\bar S\cap\{x\le c\})$ and $A_c=h(\{(x,\sin(1/x)):c\le x\le1\})$.
 
-the middle equality because $h$ is injective. Suppose that $\sigma(I)\cap D_c\ne\emptyset$ for every $c>0$; then the family of closed subsets $\sigma(I)\cap D_c$ of the compact space $\sigma(I)$ has the finite intersection property, since any finite subcollection has intersection $\sigma(I)\cap D_{c_{\min}}$, nonempty by assumption. Theorem 26.9 (printed p. 169) then gives a point of $\bigcap_{c>0}(\sigma(I)\cap D_c)=\sigma(I)\cap C_0$, contradicting $\sigma(I)\subseteq S^2-C_0$. So $\sigma(I)\cap D_{c_0}=\emptyset$ for some $c_0>0$.
+::: pf-proof
+These are definitions. $\{0\}\times[-1,1]$ and $\{(x,\sin(1/x)):c\le x\le1\}$ are intervals, hence arcs, and $\bar S$ is the union of the interval and the graph, as in Example 7 of §24.
+:::
 
-The tail
-$$
-A_c=h\bigl(\{(x,\sin(1/x)):c\le x\le1\}\bigr)
-$$
-is an arc, being the image under $h$ of the interval $[c,1]$, and $D=D_c\cup A_c$ with $D_c\cap A_c=\theset{p}$ for the single point $p=h(c,\sin(1/c))$.
+:::
 
-It remains to pass from the path $\sigma$ in $S^2-D_c$ to a path in $S^2-D$. This is the argument of the second proof of Theorem 63.2 (printed pp. 389--390), whose remark on printed p. 390 identifies the only properties of the two sets that the argument uses: that they are closed subsets of $S^2$, and that $S^2$ minus their intersection is simply connected. Both hold here, with $D_1=D_c$ and $D_2=A_c$. Suppose that $a$ and $b$ cannot be joined by a path in $S^2-D$; put $X=S^2-\theset{p}$, $U=S^2-D_c$, $V=S^2-A_c$. These are open in $S^2$, and $X=U\cup V$ while $U\cap V=S^2-D$. The space $X$ is homeomorphic to $\RR^2$ by a rotation followed by stereographic projection (printed p. 377), and $\RR^2$ is contractible — the straight-line homotopy $H(x,t)=(1-t)x+tx_0$ stays in $\RR^2$ — so $\pi_1(X,a)$ is trivial. The set $U\cap V$ is open in $S^2$, hence locally path connected, so by Theorem 25.4 (printed p. 161) its path components are open in $U\cap V$ and therefore in $X$; let $A$ be the path component of $a$ and $B$ the union of the remaining path components, so that $U\cap V=A\cup B$ is the union of two disjoint open sets with $a\in A$ and $b\in B$. Now $a$ and $b$ are joined by a path in $U$, namely $\sigma$, and by a path in $V$: since $A_c$ is an arc, Theorem 63.2 (printed p. 389) says it does not separate $S^2$, so $S^2-A_c$ is connected, open and locally path connected, hence path connected by Theorem 25.5 (printed p. 161). Theorem 63.1 (printed p. 385) then gives that the path-homotopy class of the loop $\alpha*\beta$ generates an infinite cyclic subgroup of $\pi_1(X,a)$, which is impossible in a trivial group. So $a$ and $b$ are joined by a path in $S^2-D$. As $a$ and $b$ were arbitrary points of $S^2-D$ and that set is open in $S^2$, hence locally path connected, $S^2-D$ is path connected (Theorem 25.5, printed p. 161). Hence $D$ does not separate $S^2$.
+::: {.pf-step #arcs-do-not-separate}
+$C_0$ and each $A_c$ are arcs in $S^2$, so neither separates $S^2$; $S^2-C_0$ is path connected.
 
-**(b)** Let $A$ denote the standard closed topologist's sine curve. It is obtained from $\overline S$ by adjoining the broken-line arc $P$ from $(0,-1)$ to $(1,\sin1)$, chosen so that
-$$
-P\cap\overline S=\{(0,-1),(1,\sin1)\}.
-$$
-Let $h:A\to C$ be the given homeomorphism and put
-$$
-D=h(\overline S),\qquad Q=h(P).
-$$
-The set $D=h(\overline S)$ is closed and connected and, by part (a), does not separate $S^2$; the set $Q=h(P)$ is an arc in $S^2$, hence closed and connected, and by Theorem 63.2 (printed p. 389) it does not separate $S^2$. Their intersection is $D\cap Q=h(\overline S\cap P)=h(\{(0,-1),(1,\sin 1)\})$, two points. Theorem 63.5 (printed p. 392) then says that $D\cup Q=C$ separates $S^2$ into precisely two components; call them $U$ and $V$.
+::: pf-proof
+An arc in $S^2$ does not separate it: Munkres, Theorem 63.2. The complement of an arc is open in $S^2$, and $S^2$ is locally path connected, so that complement is locally path connected and its components are path components (Munkres, Theorem 25.5); it is connected, so it is path connected.
+:::
 
-It remains to prove that $C$ is the boundary of both. Let
-$$
-C_0=h(\{0\}\times[-1,1]).
-$$
-Every point of $C-C_0$ is locally an ordinary point of an embedded arc. The local argument in the proof of Theorem 63.4 applies there: a sufficiently small disk meets $C$ in a single crosscut, and its two sides lie in the two distinct components $U$ and $V$. Consequently
-$$
-C-C_0\subset \partial U\cap\partial V.
-$$
-Every point of $C_0$ is a limit of points of the oscillating graph, hence a limit of points of $C-C_0$. Since boundaries are closed,
-$$
-C_0\subset\partial U\cap\partial V.
-$$
-Thus $C\subset\partial U\cap\partial V$.
+:::
 
-Conversely, $U$ and $V$ are components of the open set $S^2-C$. Since open subsets of the locally connected sphere have open components, both $U$ and $V$ are open in $S^2$. Hence no point of $S^2-C$ can lie in the boundary of either component, so
-$$
-\partial U\cup\partial V\subset C.
-$$
-Therefore
-$$
-\boxed{\partial U=\partial V=C},
-$$
-and $C$ separates $S^2$ into precisely two components with common boundary $C$.
+::: {.pf-step #path-to-sigma}
+Given $a,b\in S^2-D$ there is a path $\sigma:I\to S^2-C_0$ from $a$ to $b$.
+
+::: pf-proof
+$a$ and $b$ lie in $S^2-D\subseteq S^2-C_0$, and $S^2-C_0$ is path connected by step [#arcs-do-not-separate]{.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #misses-small}
+The path $\sigma$ misses $D_{c_0}$ for some $c_0>0$.
+
+::: pf-proof
+Each $D_c$ is the image under the continuous injection $h$ of the compact set $\bar S\cap\{x\le c\}$, hence compact (Munkres, Theorem 26.5) and closed in the Hausdorff space $S^2$ (Theorem 26.3). The family is nested, and $\bigcap_{c>0}D_c=h\bigl(\bigcap_{c>0}(\bar S\cap\{x\le c\})\bigr)=h(\{0\}\times[-1,1])=C_0$ because $h$ is injective. If $\sigma(I)\cap D_c\ne\varnothing$ for every $c$, the closed subsets $\sigma(I)\cap D_c$ of the compact space $\sigma(I)$ meet in every finite subfamily, since the family is nested, so by the finite intersection property (Munkres, Theorem 26.9) some point of $\sigma(I)$ lies in $\bigcap_cD_c=C_0$, contradicting $\sigma(I)\subseteq S^2-C_0$. So some $c_0>0$ has $\sigma(I)\cap D_{c_0}=\varnothing$.
+:::
+
+:::
+
+::: {.pf-step #decomposition}
+$D=D_c\cup A_c$ and $D_c\cap A_c$ is the single point $p=h(c,\sin(1/c))$.
+
+::: pf-proof
+$\bar S$ is the union of $\bar S\cap\{x\le c\}$ and the graph over $[c,1]$, and these meet exactly in $(c,\sin(1/c))$; applying the injective $h$ gives the claim.
+:::
+
+:::
+
+::: {.pf-step #two-closed-sets}
+Let $D_1,D_2$ be closed subsets of $S^2$ with $D_1\cap D_2=\{p\}$ and $S^2-\{p\}$ simply connected. If $a,b\notin D_1\cup D_2$ are joined by paths in $S^2-D_1$ and in $S^2-D_2$, then they are joined by a path in $S^2-(D_1\cup D_2)$.
+
+::: pf-proof
+Suppose not. Put $X=S^2-\{p\}$, $U=S^2-D_1$, $V=S^2-D_2$; these are open in $S^2$, $X=U\cup V$ and $U\cap V=S^2-(D_1\cup D_2)$. Choose paths $\alpha$ in $U$ and $\beta$ in $V$ from $a$ to $b$ and let $\beta^{-1}$ be $\beta$ reversed; the loop $\alpha*\beta^{-1}$ lies in $X$ and is not null-homotopic, since a null-homotopy would produce a path in $U\cap V$ (Munkres, Theorem 63.1), contradicting the assumption. $X$ is homeomorphic to $\RR^2$ by a rotation followed by stereographic projection (Munkres, §59), and $\RR^2$ is contractible through straight-line homotopies, so $\pi_1(X,a)$ is trivial and every loop in $X$ is null-homotopic. Contradiction.
+:::
+
+:::
+
+::: {.pf-step #part-a}
+(a) $D$ does not separate $S^2$.
+
+::: pf-proof
+By step [#misses-small]{.pf-ref} and step [#decomposition]{.pf-ref}, $a$ and $b$ are joined by $\sigma$ in $S^2-D_{c_0}$ and by a path in $S^2-A_{c_0}$, which is path connected by step [#arcs-do-not-separate]{.pf-ref}. With $D_1=D_{c_0}$ and $D_2=A_{c_0}$, both closed subsets of $S^2$ meeting in the single point $p$, and $S^2-\{p\}\cong\RR^2$ simply connected, step [#two-closed-sets]{.pf-ref} joins $a$ to $b$ in $S^2-D$. As $a,b$ were arbitrary and $S^2-D$ is open and locally path connected, $S^2-D$ is path connected (Munkres, Theorem 25.5), so $D$ does not separate $S^2$.
+:::
+
+:::
+
+::: {.pf-step #part-b-separates}
+(b) $C$ separates $S^2$ into precisely two components.
+
+::: pf-proof
+The closed topologist's sine curve is $\bar S$ together with a broken-line arc $P$ from $(0,-1)$ to $(1,\sin1)$ meeting $\bar S$ exactly in its two endpoints. Let $h$ be the homeomorphism onto $C$ and put $D=h(\bar S)$, $Q=h(P)$. Then $D$ is closed and connected and does not separate $S^2$ by part (a); $Q$ is an arc, closed and connected, and does not separate $S^2$ by Munkres, Theorem 63.2; and $D\cap Q=h(\bar S\cap P)$ consists of two points. Munkres, Theorem 63.5 then says that $D\cup Q=C$ separates $S^2$ into precisely two components, $U$ and $V$.
+:::
+
+:::
+
+::: {.pf-step #part-b-boundary}
+(b) $\partial U=\partial V=C$.
+
+::: pf-proof
+Each point of $C-C_0=h(\bar S)\setminus h(\{0\}\times[-1,1])$ is locally an ordinary point of an embedded arc, and the local argument of the proof of Munkres, Theorem 63.4 applies: a small disk meets $C$ in a single crosscut whose two sides lie in the two distinct components, so $C-C_0\subseteq\partial U\cap\partial V$. Each point of $C_0$ is a limit of points of the oscillating graph and hence of $C-C_0$, and boundaries are closed, so $C_0\subseteq\partial U\cap\partial V$; hence $C\subseteq\partial U\cap\partial V$. Conversely $U$ and $V$ are components of the open set $S^2-C$, which is open and locally connected, so both are open in $S^2$; a point of the open set $S^2-C$ therefore lies in neither boundary, giving $\partial U\cup\partial V\subseteq C$. Hence $\partial U=\partial V=C$.
+:::
+
+:::
+
+:::
+
 :::

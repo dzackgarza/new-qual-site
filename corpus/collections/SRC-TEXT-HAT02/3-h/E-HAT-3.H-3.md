@@ -21,6 +21,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Structured into Lamport steps from the card's own prose, which is complete. Split the two
+    directions of the bundle-of-groups dictionary into a step for the correspondence with
+    homomorphisms and a step identifying the ambiguity as conjugation in Aut(G), since the prose ran
+    them together; recorded explicitly that pulling back composes monodromy with f_*, which is what
+    makes the classifying map and f^*(E_0) correspond; and made the disconnected case a step, both
+    sides splitting as products over the path components. The page numbers were then checked against the retained
+    PDF at tmp/sources/hatcher-2002-algebraic-topology.pdf, printed page = PDF page - 9: Theorem 1B.8
+    and Proposition 1B.9 are both printed on p. 90 (PDF 99) and Theorem 1.38 on p. 67 (PDF 76), each
+    as cited.
 ---
 
 ::: {.problem}
@@ -29,40 +42,58 @@ Show that the map $[X, B\operatorname{Aut}(G)] \to \mathcal{B}(X; G)$, $[f] \map
 :::
 
 ::: {.solution}
-Regard $\Gamma:=\operatorname{Aut}(G)$ as a discrete group and take $B\Gamma$ to be a $K(\Gamma,1)$; by Theorem 1B.8 (p. 90) its homotopy type is determined by $\Gamma$. Then
-$$
-B\operatorname{Aut}(G)=K(\operatorname{Aut}(G),1),
-$$
-and the bundle $E_0\to B\operatorname{Aut}(G)$ associated to the identity action is the universal bundle of groups with fiber $G$.
+This is Hatcher Exercise 3.H.3. No published solution set is transcribed: the argument is the card's own. The numbered results are Hatcher's Theorem 1B.8 (p. 90), Proposition 1B.9 (p. 90), the classification of covering spaces (Theorem 1.38, p. 67), and the dictionary of §3.H (p. 331).
 
-Assume first that $X$ is connected and choose a basepoint. A bundle of groups $E\to X$ with fiber $G$ has monodromy
-$$
-\rho_E:\pi_1(X)\longrightarrow\operatorname{Aut}(G),
-$$
-well-defined up to conjugation by an automorphism of the chosen fiber. Conversely, a homomorphism
-$$
-\rho:\pi_1(X)\to\operatorname{Aut}(G)
-$$
-defines the bundle
-$$
-\widetilde X\times_{\pi_1(X)}G\longrightarrow X,
-$$
-where the deck group acts on $G$ through $\rho$. These two constructions are inverse. Indeed, the dictionary is stated in §3.H (p. 331): covering spaces that are bundles of groups with fiber $G$ are equivalent to actions of $\pi_1(X)$ on $G$ by automorphisms of $G$, that is, to homomorphisms $\pi_1(X)\to\operatorname{Aut}(G)$; it rests on the classification of covering spaces of §1.3 (Theorem 1.38, p. 67; the permutation description, pp. 68-70). An isomorphism of bundles of groups over $X$ between $\widetilde X\times_\rho G$ and $\widetilde X\times_{\rho'}G$ is a $\pi_1(X)$-equivariant family of group automorphisms of the fiber, i.e. an element $c\in\operatorname{Aut}(G)$ with $c\,\rho(\gamma)=\rho'(\gamma)\,c$ for all $\gamma$, so $\rho'=c\rho c^{-1}$: the ambiguity is conjugation *in the group $\operatorname{Aut}(G)$*, by its own elements. Thus
-$$
-\mathcal B(X;G)
-\cong
-\operatorname{Hom}(\pi_1X,\operatorname{Aut}(G))/\text{conjugacy in }\operatorname{Aut}(G).
-$$
+::: pf
 
-Since $B\operatorname{Aut}(G)$ is a $K(\Gamma,1)$ with $\Gamma=\operatorname{Aut}(G)$ and $X$ is a connected CW complex, Proposition 1B.9 (p. 90) gives the classification of maps into such a space: every homomorphism $\pi_1(X)\to\Gamma$ is induced by a map $X\to B\Gamma$, uniquely up to homotopy relative to the basepoint. Dropping the basepoint replaces "unique up to based homotopy" by "unique up to homotopy and conjugation in $\Gamma$", because transporting the image of the basepoint along a path in $B\Gamma$ conjugates $f_*$ by the class of that path (Proposition 1B.9, p. 90; $\Gamma$ is not assumed abelian). Hence
-$$
-[X,B\operatorname{Aut}(G)]
-\cong
-\operatorname{Hom}(\pi_1X,\operatorname{Aut}(G))/\text{conjugacy in }\operatorname{Aut}(G).
-$$
-Under this correspondence, a map $f:X\to B\operatorname{Aut}(G)$ corresponds to the monodromy homomorphism $f_*$: pulling back commutes with monodromy, so the bundle $f^*E_0$ has monodromy $\mathrm{id}_\Gamma\circ f_*=f_*$ and these are the same quotient set on the two sides. Since the displayed identification is precisely the map
-$$
-[f]\longmapsto f^*(E_0),
-$$
-it is a bijection. For disconnected $X$, apply the same argument independently on each component: both $\mathcal B(X;G)$ and $[X,B\operatorname{Aut}(G)]$ split as products over the components of $X$.
+::: {.pf-step #model}
+$B\Aut(G)$ may be taken to be $K(\Aut(G),1)$ with $\Aut(G)$ discrete, and the bundle $E_{0}\to B\Aut(G)$ corresponding to the identity action is the universal bundle of groups with fibre $G$.
+
+::: pf-proof
+By Theorem 1B.8 (p. 90) the space $B\Gamma$ of a discrete group $\Gamma$ is a $K(\Gamma,1)$, whose homotopy type depends only on $\Gamma$. With $\Gamma=\Aut(G)$ acting on $G$ by the identity homomorphism, the associated bundle over $B\Gamma$ has fibre $G$ and total space $E\Gamma\times_{\Gamma}G$; running over the classifying map of any bundle of groups recovers it, which is what makes $E_{0}$ universal.
+:::
+:::
+
+::: {.pf-step #dictionary}
+For connected $X$ with a basepoint, isomorphism classes of bundles of groups $E\to X$ with fibre $G$ correspond to homomorphisms $\rho\colon\pi_{1}(X)\to\Aut(G)$ modulo conjugation in $\Aut(G)$; the correspondence sends $E$ to its monodromy $\rho_{E}$.
+
+::: pf-proof
+Such a bundle is in particular a covering space with fibre $G$, so the classification of covering spaces (§1.3, Theorem 1.38, p. 67 and the permutation description, pp. 68--70) applies: it is classified by the action of $\pi_{1}(X)$ on the fibre, which for a bundle of groups is an action by group automorphisms, that is a homomorphism $\rho\colon\pi_{1}(X)\to\Aut(G)$. Inverting this dictionary, the bundle with monodromy $\rho$ is $\widetilde{X}\times_{\pi_{1}(X)}G\to X$ with the deck group acting through $\rho$. The monodromy depends on the identification of the fibre with $G$: changing the identification by $c\in\Aut(G)$ replaces $\rho$ by $c\rho c^{-1}$, so the invariant of the bundle is the conjugacy class.
+:::
+:::
+
+::: {.pf-step #isomorphisms}
+An isomorphism between $\widetilde{X}\times_{\rho}G$ and $\widetilde{X}\times_{\rho'}G$ over $X$ exists exactly when $\rho'=c\rho c^{-1}$ for some $c\in\Aut(G)$.
+
+::: pf-proof
+An isomorphism over $X$ of bundles with fibre $G$ is a $\pi_{1}(X)$-equivariant family of group automorphisms of the fibre, hence a single element $c\in\Aut(G)$ satisfying $c\rho(\gamma)=\rho'(\gamma)c$ for every $\gamma\in\pi_{1}(X)$; that is $\rho'=c\rho c^{-1}$. Combined with step [](#dictionary){.pf-ref},
+$$\mathcal{B}(X;G)\cong\Hom(\pi_{1}X,\Aut(G))/\text{conjugacy in }\Aut(G).$$
+:::
+:::
+
+::: {.pf-step #maps}
+For a connected CW complex $X$ there is a bijection $[X,B\Aut(G)]\cong\Hom(\pi_{1}X,\Aut(G))$ modulo conjugation.
+
+::: pf-proof
+$B\Aut(G)$ is a $K(\Gamma,1)$ with $\Gamma=\Aut(G)$ by step [](#model){.pf-ref}, so Proposition 1B.9 (p. 90) applies: every homomorphism $\pi_{1}(X)\to\Gamma$ is realised by a map $X\to B\Gamma$, and based maps inducing it are unique up to based homotopy. Dropping the basepoint allows translation of the image of the basepoint along a path in $B\Gamma$, which conjugates the induced homomorphism by the class of that path; since $\Gamma$ need not be abelian this is a genuine ambiguity, and it is the only one. So the unbased homotopy classes correspond to homomorphisms modulo conjugation.
+:::
+:::
+
+::: {.pf-step #pullback}
+Under the identifications of steps [](#isomorphisms){.pf-ref} and [](#maps){.pf-ref} the map $[f]\mapsto f^{*}(E_{0})$ is the identity on the quotient set, hence a bijection.
+
+::: pf-proof
+Pulling back a bundle of groups along $f$ composes the classifying monodromy with $f_{*}$: the bundle $f^{*}E_{0}$ has monodromy $\operatorname{id}_{\Gamma}\circ f_{*}=f_{*}$. Since the two sides of the required bijection are, by the two preceding steps, the same quotient set and the map between them acts as the identity there, it is a bijection.
+:::
+:::
+
+::: {.pf-step #disconnected}
+For a general CW complex $X$ the same map is a bijection.
+
+::: pf-proof
+Both $\mathcal{B}(X;G)$ and $[X,B\Aut(G)]$ split as products over the path components of $X$, and the map acts componentwise; each component is a connected CW complex, where steps [](#dictionary){.pf-ref} to [](#pullback){.pf-ref} apply. A product of bijections is a bijection.
+:::
+:::
+:::
+
 :::

@@ -19,6 +19,14 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the final step now says that it is applying the definition of a
+    covering map, rather than naming the conclusion without the definition. Nothing mathematical was
+    changed.
+
 ---
 
 ::: {.exercise}
@@ -101,6 +109,11 @@ a union of pairwise disjoint open sets. Since $V\subseteq p(U_i)$ and $p\restric
 ::: pf-step
 
 Thus every $b\in B$ has an evenly covered neighborhood, so $p$ is a covering map.
+
+
+::: pf-proof
+This is the definition of a covering map: every point of the base has an evenly covered neighbourhood.
+:::
 
 :::
 

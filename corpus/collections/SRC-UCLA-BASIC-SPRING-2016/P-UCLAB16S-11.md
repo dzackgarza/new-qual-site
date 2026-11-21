@@ -6,7 +6,8 @@ title: Determinants of a skew-tridiagonal Toeplitz family
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Determinants
 relations: []
 review: draft
 audit:

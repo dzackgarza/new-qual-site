@@ -5,8 +5,8 @@ order: 5
 
 # Problems
 
-- [[prelim/problems/berkeley-prelims|Berkeley prelims]] -- the Berkeley preliminary exam syllabus, and the exams from 1977 onward.
+- [[prelim/problems/berkeley-prelims|Berkeley prelims]] -- the preliminary examination, its syllabus, and the span of sittings held here, with their problems in exam order.
 
-- [[prelim/problems/ucla-prelims|UCLA prelims]] -- UCLA Basic Examinations, 2001--2018.
+- [[prelim/problems/ucla-prelims|UCLA prelims]] -- the Basic Examination, its syllabus, and the sittings from Fall 2001 to Fall 2018, with their problems in exam order.
 
 - [[prelim/problems/integral-practice|Integral practice]] -- integrals to evaluate, grouped by technique.

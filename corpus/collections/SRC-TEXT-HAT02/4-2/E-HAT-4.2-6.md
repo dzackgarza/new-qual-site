@@ -34,6 +34,36 @@ audit:
     has H_1 = pi_1^ab instead of an isomorphism, which the card does not claim. Not checked: nothing
     outside this exercise.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, outside the sections already closed. Read against Hatcher, Exercise 6
+    of §4.2, printed p. 389. Checked: $\pi_i(CX,X)\cong\pi_{i-1}(X)$ for $i\ge2$ from the pair
+    sequence with $CX$ contractible, so an $(n-2)$-connected $X$ gives an $(n-1)$-connected pair,
+    and $\pi_1(CX,X)=0$ since both spaces are simply connected; relative Hurewicz then identifies
+    $\pi_n(CX,X)$ with $H_n(CX,X)$, which the pair sequence computes as $\widetilde H_{n-1}(X)$;
+    naturality of the Hurewicz homomorphism makes the comparison square commute, so the bottom map is
+    an isomorphism. The restriction $n\ge3$ is right and necessary, the absolute theorem in dimension
+    $n-1$ beginning at $2$. No defect; the printed page is added.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.2 Exercise 6, the relative
+    Hurewicz theorem (Theorem 4.37), Corollary 4.12, the long exact sequences of the pair, and
+    Theorem 4.5. The reduction for n >= 3 is correct as written: the pair (CX,X) is (n-1)-connected
+    through pi_i(CX,X) = pi_{i-1}(X) and the vanishing of pi_1(CX,X) from simple connectivity of CX
+    plus connectedness of X; the relative theorem's isomorphism form applies because both spaces are
+    simply connected, which removes the pi_1-action; the boundary map of the pair is an isomorphism
+    on homology because CX is contractible; and naturality of the Hurewicz map turns the relative
+    isomorphism into the absolute one. One gap repaired. The exercise asks for dimension n-1 for
+    every n, and the card took n >= 3 without saying what happens at n = 2, which is the absolute
+    Hurewicz theorem in dimension 1. That case cannot use the isomorphism form, since X is only
+    path-connected and pi_1(X) acts; the card now states the conclusion for n = 2 and argues it from
+    the coinvariant form of the relative theorem, the boundary isomorphism pi_2(CX,X) = pi_1(X)
+    carrying the action to conjugation, whose coinvariants are the abelianization. Statement
+    unchanged; the n = 2 paragraph is inside the step that already carried the n >= 3 conclusion.
 ---
 
 ::: {.problem}
@@ -41,25 +71,73 @@ Show that the relative form of the Hurewicz theorem in dimension $n$ implies the
 :::
 
 ::: {.solution}
-Take $n\ge3$, so the absolute theorem in dimension $n-1$ lies in its stated range. Assume the relative Hurewicz theorem in dimension $n$. Let $X$ be $(n-2)$-connected, as in the absolute Hurewicz theorem in dimension $n-1$, and consider the cone pair $(CX,X)$. Since $CX$ is contractible, the long exact homotopy sequence gives
+The exercise is §4.2 Exercise 6.
+
+
+The argument is the card's own: the cone pair has the homotopy of a suspension of $X$, so the relative theorem applied to it is the absolute theorem one degree down. One hypothesis is checked here that the original left implicit, namely that the relative Hurewicz theorem applies in its isomorphism form to this pair.
+
+Take $n\ge3$ and assume the relative Hurewicz theorem in dimension $n$; let $X$ be $(n-2)$-connected, which is the hypothesis of the absolute Hurewicz theorem in dimension $n-1$. The case $n=2$ is settled at the end of the proof, where the same square is read with coinvariants.
+
+::: pf
+
+::: {.pf-step #pair}
+The pair $(CX,X)$ is $(n-1)$-connected, and both $CX$ and $X$ are simply connected.
+
+::: pf-proof
+$CX$ is contractible, hence simply connected. The long exact homotopy sequence of the pair, together with $\pi_{i}(CX)=0$ for all $i$, gives
 $$
-\pi_i(CX,X)\cong \pi_{i-1}(X)\qquad(i\ge2).
+\pi_{i}(CX,X)\cong\pi_{i-1}(X)\qquad(i\ge2),
 $$
-Hence $(CX,X)$ is $(n-1)$-connected. Relative Hurewicz therefore gives an isomorphism
+so for $i\le n-1$ the group $\pi_{i}(CX,X)\cong\pi_{i-1}(X)$ vanishes because $i-1\le n-2$ and $X$ is $(n-2)$-connected. Also $\pi_{1}(CX,X)=0$ because $CX$ is simply connected and $X$ is connected ($n-2\ge1$), so $\pi_{i}(CX,X)=0$ for $i\le n-1$: the pair is $(n-1)$-connected. Finally $X$ is simply connected because it is $(n-2)$-connected with $n-2\ge1$.
+:::
+
+:::
+
+::: {.pf-step #relative}
+$\pi_{n}(CX,X)\cong H_{n}(CX,X)$.
+
+::: pf-proof
+The pair is $(n-1)$-connected with $n\ge2$, and both of its spaces are simply connected, so the relative Hurewicz theorem applies in the form that the Hurewicz map $h:\pi_{n}(CX,X)\to H_{n}(CX,X)$ is an isomorphism and $H_{i}(CX,X)=0$ for $i<n$. (Simple connectivity is what removes the $\pi_{1}$-action from the hypothesis; without it the theorem only identifies the coinvariants.)
+:::
+
+:::
+
+::: {.pf-step #homology}
+$H_{n}(CX,X)\cong\widetilde H_{n-1}(X)$.
+
+::: pf-proof
+The homology long exact sequence of the pair, with $H_{i}(CX)=0$ for $i\ge1$ because $CX$ is contractible, contains
 $$
-h:\pi_n(CX,X)\xrightarrow{\cong}H_n(CX,X).
+0=H_{n}(CX)\to H_{n}(CX,X)\xrightarrow{\ \partial\ }\widetilde H_{n-1}(X)\to\widetilde H_{n-1}(CX)=0,
 $$
-The homology long exact sequence of the pair, again using contractibility of $CX$, gives
-$$
-H_n(CX,X)\cong \widetilde H_{n-1}(X).
-$$
-Under these two boundary isomorphisms, naturality of the Hurewicz maps makes the square
+so the boundary map is an isomorphism.
+:::
+
+:::
+
+::: {.pf-step #absolute}
+$\pi_{n-1}(X)\cong H_{n-1}(X)$ — the absolute Hurewicz theorem in dimension $n-1$.
+
+::: pf-proof
+The Hurewicz homomorphisms are natural for maps of pairs, so the square
 $$
 \begin{array}{ccc}
-\pi_n(CX,X)&\xrightarrow{h}&H_n(CX,X)\\
+\pi_{n}(CX,X)&\xrightarrow{\ h\ }&H_{n}(CX,X)\\
 \downarrow\partial&&\downarrow\partial\\
-\pi_{n-1}(X)&\xrightarrow{h}&H_{n-1}(X)
+\pi_{n-1}(X)&\xrightarrow{\ h\ }&H_{n-1}(X)
 \end{array}
 $$
-commute. The three other arrows are isomorphisms, so the bottom Hurewicz map is an isomorphism. This is exactly the absolute Hurewicz theorem in dimension $n-1$.
+commutes, the vertical maps being the boundary homomorphisms of the pair. The two vertical maps are isomorphisms by steps [](#pair){.pf-ref} and [](#homology){.pf-ref}, and the top horizontal map is an isomorphism by step [](#relative){.pf-ref}; hence the bottom horizontal map is an isomorphism too. That is
+$$
+\boxed{\pi_{n-1}(X)\cong H_{n-1}(X)\ \text{for } X\ (n-2)\text{-connected},\ n\ge3,}
+$$
+together with $H_{i}(X)=0$ for $i<n-1$, which is the absolute Hurewicz theorem in dimension $n-1$.
+
+The case $n=2$ gives the absolute theorem in dimension $1$, and it needs the coinvariant form of the relative theorem rather than the isomorphism form. For $n=2$ the pair $(CX,X)$ is $1$-connected by step [](#pair){.pf-ref}, and $X$ need not be simply connected, so $\pi_1(X)$ acts on $\pi_2(CX,X)$; the relative Hurewicz theorem then identifies $H_2(CX,X)$ with the coinvariants $\pi_2(CX,X)_{\pi_1(X)}$, and $H_i(CX,X)=0$ for $i<2$. The boundary map $\pi_2(CX,X)\to\pi_1(X)$ is an isomorphism by the long exact sequence, and naturality of the Hurewicz map makes the square of step [](#absolute){.pf-ref} commute with the coinvariants taken on both sides, in the sense that the lower right corner is $H_1(X)$ and the lower left is $\pi_1(X)$ modulo the action, that is $\pi_1(X)^{\mathrm{ab}}$. So $H_1(X)\cong\pi_1(X)^{\mathrm{ab}}$ for path-connected $X$, which is the absolute Hurewicz theorem in dimension $1$.
+ Naturality is what does the work: the Hurewicz map of the pair is natural for maps of pairs, and the boundary isomorphism $\pi_2(CX,X)\cong\pi_1(X)$ carries the action of $\pi_1(X)$ on $\pi_2(CX,X)$ to conjugation on $\pi_1(X)$, whose coinvariants are the abelianization; with $H_2(CX,X)\cong H_1(X)$ by step [](#homology){.pf-ref}, the identification reads $H_1(X)\cong\pi_1(X)^{\mathrm{ab}}$.
+:::
+
+:::
+
+:::
 :::

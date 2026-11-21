@@ -9,10 +9,9 @@ Books, problem lists, and solutions for the topology qual.
 
 - [[topology/resources/books-notes|Topology references]], books and lecture notes.
 
-- [[topology/resources/topics|Topics]], a workshop schedule and topic list.
+- [[topology/resources/topics|Qualifying-exam topics]], the topic list in the order the chapters develop it.
 
-- [[topology/resources/problems|Problems (Topology)]], the problem index.
+- [[topology/resources/problems|Problem sources]], the problem index.
 
-- [[topology/resources/solutions|Solutions (Topology)]], the solution index.
+- [[topology/resources/solutions|Solution sources]], the solution index.
 
-- The [Sources listing](sources.html) lists exams by subject, institution, and year.

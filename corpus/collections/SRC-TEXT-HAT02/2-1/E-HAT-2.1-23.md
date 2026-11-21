@@ -121,6 +121,12 @@ Properties step [](#s3){.pf-ref} and step [](#s4){.pf-ref} are the defining comb
 $$
 \boxed{X''\text{ is a simplicial complex}.}
 $$
+
+::: pf-proof
+
+A simplicial complex is a set of finite nonempty vertex sets, closed under passing to subsets, in which at most one simplex has a given vertex set. Step [](#s3){.pf-ref} supplies the uniqueness of the simplex with a prescribed vertex set, and step [](#s4){.pf-ref} supplies both the closure under faces and the description of the intersection of two simplices as the simplex on their common vertices, which are exactly the two combinatorial conditions. The object $X''$ has as vertices the simplices of $X'$ and as simplices the chains in the face poset of a simplex of $X'$; applying step [](#s1){.pf-ref} to $X'$ and then steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} with $Y = X'$ verifies both conditions for those chains, so $X''$ is a simplicial complex.
+
+:::
 :::
 
 :::

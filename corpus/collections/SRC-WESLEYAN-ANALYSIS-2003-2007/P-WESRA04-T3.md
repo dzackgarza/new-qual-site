@@ -40,6 +40,16 @@ audit:
     Lusin's theorem by Tietze extension, and derives the density of the
     continuous functions in L^1, which is the quantitative form of the same
     approximation.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The step made f finite and bounded on the compact set K by discarding a further null
+    subset, but deleting a null subset of a compact set need not leave it compact. No
+    discarding is needed: Lusin's theorem gives the restriction of f to K continuous, hence
+    finite, and a continuous function on a compact set is bounded. The sentence now says
+    that, and the conclusion f = g off a set of measure below epsilon is unchanged.
+
 ---
 
 ::: {.problem}
@@ -62,14 +72,13 @@ g(x)\}<\varepsilon$.
 
 ::: pf-proof
 
-Given $\varepsilon$, Lusin's theorem gives compact $K$ with $m([0,1]\setminus
-K)<\varepsilon$ and $f|_K$ continuous; discarding a further null subset we may
-suppose $f$ is finite and bounded on $K$, since $f$ is finite a.e. and a
-continuous function on a compact set is bounded. By the Tietze extension
-theorem $f|_K$, a continuous real function on the closed subset $K$ of the
-normal space $[0,1]$, extends to $g\in C([0,1])$ with $\sup_{[0,1]}\abs
-g=\sup_K\abs{f}$. Then $\{x:f(x)\ne g(x)\}\subseteq[0,1]\setminus K$, which
-has measure $<\varepsilon$.
+Given $\varepsilon$, Lusin's theorem gives a compact $K$ with
+$m([0,1]\setminus K)<\varepsilon$ such that the restriction of $f$ to $K$ is
+continuous and finite there; being continuous on a compact set, that restriction is
+bounded. By the Tietze extension theorem the restriction of $f$ to $K$, a continuous
+real function on the closed subset $K$ of the normal space $[0,1]$, extends to
+$g\in C([0,1])$ with $\sup_{[0,1]}\abs g=\sup_K\abs f$. Then
+$\{x:f(x)\ne g(x)\}\subseteq[0,1]\setminus K$, which has measure $<\varepsilon$.
 
 :::
 

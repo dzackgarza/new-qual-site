@@ -5,7 +5,9 @@ kind: problem
 title: 'Closed support subspaces and an orthogonal projection in $L^2$'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Orthogonal Projection
+  - L²
 relations: []
 review: draft
 audit:

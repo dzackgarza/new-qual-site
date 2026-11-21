@@ -35,6 +35,22 @@ $$
 $$
 :::
 
+::: {.proof}
+Apply [@Har77, II.8.20] to the Cartier divisor $C$ on $X$: it identifies the canonical sheaf of $C$ with the restriction of the adjunction sheaf,
+$$
+\omega_C\cong(\omega_X\otimes\OO_X(C))\restrict_C .
+$$
+The degree of $\omega_C$ is $2g(C)-2$ [@Har77, Example IV.1.3.3], and for every divisor $D$ on $X$ the degree of $\OO_X(D)\restrict_C$ is the intersection number $C\cdot D$: the identification is Lemma V.1.3 for $D$ meeting $C$ transversally, and the general case follows by linearity from the very ample case, which is how the pairing is defined in the proof of [@Har77, Proposition V.1.1]. Taking $D=C+K_X$ gives
+$$
+2g(C)-2=\deg_C\bigl((\omega_X\otimes\OO_X(C))\restrict_C\bigr)=C\cdot(C+K_X).
+$$
+For a general effective divisor $C$ the display is not a definition but the content of [@Har77, Exercise V.1.3(a)]: the arithmetic genus is defined as $p_a(C)=1-\chi(\OO_C)$, and the identity $2p_a(C)-2=C\cdot(C+K_X)$ is proved there from Riemann--Roch and the sequence just used. In full: from $0\to\OO_X(-C)\to\OO_X\to\OO_C\to0$ additivity of the Euler characteristic gives $\chi(\OO_C)=\chi(\OO_X)-\chi(\OO_X(-C))$, and Riemann--Roch [@Har77, Theorem V.1.6] applied to $-C$ gives
+$$
+\chi(\OO_X(-C))=\tfrac12(-C)\cdot(-C-K_X)+1+p_a=\tfrac12\,C\cdot(C+K_X)+1+p_a ,
+$$
+while $\chi(\OO_X)=1+p_a$; hence $\chi(\OO_C)=-\tfrac12\,C\cdot(C+K_X)$ and $2p_a(C)-2=C\cdot(C+K_X)$, which is [@Har77, Exercise V.1.3(a)]; part (c) of that exercise extends the formula to an arbitrary divisor as the definition of the virtual arithmetic genus.
+:::
+
 ::: {.remark}
 Adjunction converts genus calculations on surfaces into intersection-number calculations.
 

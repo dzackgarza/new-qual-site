@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP07-05
 kind: problem
 title: Intrinsic characterizations of subspaces of compact Hausdorff and simply connected spaces
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Separation Axioms, Simply Connected]}
 relations: []
 review: draft
 audit:

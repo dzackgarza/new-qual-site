@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP09-II3
 kind: problem
 title: Covering spaces of $S^1\vee S^1$, including regularity and universal covers
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Covering Spaces, Free Groups]}
 relations: []
 review: draft
 audit:

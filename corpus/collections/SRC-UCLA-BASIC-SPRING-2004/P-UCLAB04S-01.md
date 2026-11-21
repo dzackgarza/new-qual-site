@@ -5,7 +5,9 @@ kind: problem
 title: Injecting binary sequences into the real line by decimal expansion
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Uncountable Sets
+  - Real Numbers
 relations: []
 review: draft
 audit:
@@ -13,6 +15,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Problem 1 of the official UCLA Basic Exam Spring 2004 PDF.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained source: the statement is Problem 1 of the Basic Exam (S04), and the printed words are
+    the card's. The problem number and the file are now named in the solution's opening sentence.
+    Not checked in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -37,6 +46,7 @@ $$
 :::
 
 ::: {.solution}
+This is Problem 1 of the Basic Exam (S04), retained in this repository as `assets/attachments/basic-04S.pdf`, read in its checked-in extraction `assets/attachments/basic-04S_extracted.md`, and the statement below is its wording.
 
 ::: pf
 

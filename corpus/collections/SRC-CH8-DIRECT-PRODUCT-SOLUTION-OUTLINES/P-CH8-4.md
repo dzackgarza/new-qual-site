@@ -25,6 +25,16 @@ audit:
   date: 2026-11-06
   note: >-
     The retained outline's pairwise comparison of coordinates is kept, split into the two directions, and the general case is stated as the coordinatewise argument over n factors.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Gallian, Contemporary Abstract Algebra, seventh edition, Chapter 8
+    Exercise 4, printed p. 167 (file p. 182 of the retained copy, whose running head on that
+    page is 167). The printed exercise is the card's statement word for word, so no repair
+    was needed; the solution's opening sentence now names the exercise and the page. Not
+    checked in this pass: the argument, which the edit does not touch.
+
 ---
 
 ::: {.problem}
@@ -33,6 +43,9 @@ State the general case.
 :::
 
 ::: {.solution}
+
+In the seventh edition this is Chapter 8 Exercise 4, where the printed
+words are the statement below.
 
 Let $G,H$ be groups and $G\oplus H$ their external direct product with the
 componentwise operation.

@@ -34,6 +34,15 @@ audit:
     No published solution set is retained for this examination. The proof is
     derived here, by testing the supremum over partitions against one partition
     at a time.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark illustrating strictness of the inequality spoke of a sequence of bounded
+    variation whose variation tends to infinity, which is contradictory. It now names the
+    example f_n(x) = n^{-1} sin(n^2 x), whose total variation on [0,2 pi] is 4n while the
+    limit is identically zero. The proof and the statement are unchanged.
+
 ---
 
 ::: {.problem}
@@ -96,8 +105,8 @@ Step [](#bound){.pf-ref} says the number $L=\liminf_nT_a^b(f_n)\in[0,\infty]$
 dominates $V_P(f)$ for every partition $P$; hence it dominates the supremum
 over $P$, which is $T_a^b(f)$ by definition. So the total variation is lower
 semicontinuous with respect to pointwise convergence, which is the assertion;
-the inequality can be strict, as when $f_n$ alternates rapidly with bounded
-variation tending to infinity while $f\equiv0$.
+the inequality can be strict, as with $f_n(x)=n^{-1}\sin(n^2x)$, whose total
+variation on $[0,2\pi]$ is $4n$ while $f\equiv0$.
 
 :::
 

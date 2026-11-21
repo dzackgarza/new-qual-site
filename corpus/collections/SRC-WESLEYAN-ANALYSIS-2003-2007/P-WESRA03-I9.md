@@ -36,6 +36,18 @@ audit:
     No published solution set is retained for this examination. The
     counterexample is derived here, a uniformly small tall-enough bump whose
     integral does not go to zero because the domain has infinite measure.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Re-read the item at 200 dpi on 2026-11-19 at PDF p. 37 of
+    assets/attachments/analysis_2003-2007.pdf, printed page 1. The printed question
+    names only real-valued functions and does not assume them integrable, so the
+    displayed integral is not defined for every signed competitor; the card's
+    hypothesis that the $f_n$ are integrable is what makes the question well posed,
+    and the counterexample it gives, $(1/n)\mathbf 1_{[0,n]}$, is integrable, so it
+    answers the printed question as well. The statement is left as it stands for that
+    reason, recorded here rather than repaired.
 ---
 
 ::: {.problem}

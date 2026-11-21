@@ -23,12 +23,30 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-30
   note: 'The source prints the norm as \|f\| := \int_0^1 f\,dm, without absolute values, which is not a norm (it takes the value -1 at f = -1 and vanishes at f(x) = x - 1/2). The statement now uses \int_0^1 |f|\,dm, the intended L^1 norm.'
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The event of 2026-10-30 said the statement "now uses" the norm
+    \int_0^1 |f| dm, and the statement did not: the problem block still printed
+    \norm{f} = \int_{[0,1]} f dm without absolute values, while the remark called
+    that non-norm "as printed" and the solution proved the norm axioms for
+    \int |f| dm. Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf, rendered at 400 dpi: PDF p. 3,
+    whose folio is 2, Part II item 6, prints "For each f in C([0,1]) we set
+    ||f|| = \int_{[0,1]} f dm" with no absolute-value bars, and then asks
+    "(a) Explain why this defines a norm on C([0,1])". So the examination itself is
+    defective at (a) and not only the extraction; no bars appear at 400 dpi. The
+    statement now carries \int |f| dm, the intended norm, which QUAL-01 asks of a
+    false statement, and the remark records the printed text and why it fails. The
+    solution is unchanged, and its two parts are the examination's (a) and (b).
+
 ---
 
 ::: {.problem}
 For $f\in C([0,1],\RR)$ define
 $$
-\norm{f}\coloneqq\int_{[0,1]} f\,dm.
+\norm{f}\coloneqq\int_{[0,1]}\abs{f}\,dm.
 $$
 
 1. Explain why this defines a norm on $C([0,1])$.
@@ -37,8 +55,11 @@ $$
 :::
 
 ::: {.remark}
-As printed, $\int_{[0,1]} f\,dm$ is not a norm: it is negative at $f=-1$ and vanishes at $f(x)=x-\tfrac12$.
-The intended norm is $\int_{[0,1]}\abs{f}\,dm$, and the solution treats that norm.
+The examination prints $\norm{f}=\int_{[0,1]}f\,dm$ without absolute values, and that
+functional is not a norm: it is negative at $f=-1$ and vanishes at $f(x)=x-\tfrac12$, so
+part (a) is not true of it as it stands. The norm proved below is the intended one,
+$\int_{[0,1]}\abs{f}\,dm$. The item is Part II, item 6, of the Real Analysis section of the
+Wesleyan analysis qualifier, Summer 2007, in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
 :::
 
 ::: {.solution}

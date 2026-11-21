@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP04-09
 kind: problem
 title: Compactness and countable compactness of ordinal spaces $W(\xi)$
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Order Topology, Compactness]}
 relations: []
 review: draft
 audit:

@@ -17,12 +17,12 @@ two authored sources decide it:
 
 A certificate that proves one claim of a card whose statement has several does
 not make the card certified. `E-HAT-3.A-6` asks that `Tor(A,B)` be a torsion
-group and that it have an element of order `n` when both arguments do; its rows
-compute `Tor` of a presented stage, of a cyclic stage and of a two-term free
-resolution, and they say in their own text that the passage to an arbitrary
-abelian group is not proved. `E-HAT-3.A-2` has the same shape. Which of the two
-things a row proves is authored on the row, not guessed here: see `COVERS`
-below.
+group and that it have an element of order `n` when both arguments do, and its
+early rows computed `Tor` of a presented stage, of a cyclic stage and of a
+two-term free resolution, saying in their own text that the passage to an
+arbitrary abelian group was not proved; `E-HAT-3.A-2` had the same shape, and
+both stayed drafts on those rows alone. Which of the two things a row proves is
+authored on the row, not guessed here: see `COVERS` below.
 
 `proofs/README.md` is the registry because it is where the certificates are
 described and where an author already writes the certificate-to-card mapping
@@ -61,6 +61,8 @@ import urllib.request
 from dataclasses import dataclass
 from pathlib import Path
 from urllib.parse import urlsplit
+
+from .diagnostics import Diagnostic, DiagnosticCode
 
 # The three states a reader is told about, in the order they are reported.
 STATUSES = ("certified", "reviewed", "draft")
@@ -197,6 +199,125 @@ def _reachable(url: str) -> bool:
         return False
     except (urllib.error.URLError, TimeoutError):
         return False
+
+
+# Where a registry error is reported: the page that carries the row, not the
+# card and not the certificate, because the row is what the author edits.
+REGISTRY = "proofs/README.md"
+
+
+def registry_errors(
+    root: Path | None,
+    registry: dict[str, tuple[Certificate, ...]],
+    card_ids: set[str],
+) -> list[Diagnostic]:
+    """Every error the certificate tables carry: its rows, links, coverage and scope.
+
+    Three of these were reported only by `qualc check`, which parses the whole
+    corpus through pandoc first, so the check a reader can run on the artifacts
+    alone reported none of them. The rules are the same rules, in one place:
+    `qualc check` and `python -m qualc.proofs` both read them here.
+
+    `root` is the repository root; `None` keeps the rows' own claims and skips
+    what can only be read against the tree, which is the shape the parser tests
+    use. `card_ids` is every card the corpus carries, so this function does not
+    parse the corpus itself.
+    """
+    errors: list[Diagnostic] = []
+    for card_id, entries in sorted(registry.items()):
+        if card_id not in card_ids:
+            errors.append(
+                Diagnostic(
+                    DiagnosticCode.CERTIFICATE_CARD_UNKNOWN,
+                    REGISTRY,
+                    f"lists a certificate for {card_id}, which no card carries",
+                )
+            )
+        for entry in entries:
+            if root is not None and not exists(root, entry.file):
+                # A lean-categories row is confirmed over HTTPS, so a machine
+                # with no network reports every one of them; the message says so
+                # rather than sending the reader to look for a moved file.
+                remote = entry.file.startswith(LEAN_CATEGORIES)
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.CERTIFICATE_FILE_MISSING,
+                        REGISTRY,
+                        f"links {entry.file} for {card_id}, and its target does not exist"
+                        + (
+                            " (asked over HTTPS; without a network every lean-categories row "
+                            "is reported here)"
+                            if remote
+                            else ""
+                        ),
+                    )
+                )
+            if entry.covers not in COVERS:
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.CERTIFICATE_COVERAGE_MISSING,
+                        REGISTRY,
+                        f"lists {entry.file} for {card_id} without saying what it proves: the row's "
+                        f"last cell must be `{THE_STATEMENT}` or `{PART}`",
+                    )
+                )
+    if root is not None:
+        errors.extend(unread_section_errors(root / "proofs" / "README.md"))
+    return errors
+
+
+def unread_section_errors(readme: Path) -> list[Diagnostic]:
+    """A row that says what it covers, in a table no reader of the registry reads.
+
+    Only sections 1 and 2 certify (`CERTIFICATE_SECTIONS`), and the later tables
+    say so in prose: section 6 lists repairs with no machine certificate while
+    naming certificate files in passing. A `Covers` cell anywhere else is an
+    author recording a certification that the page will never state, so it is
+    an error rather than a silently unread row.
+    """
+    if not readme.is_file():
+        return []
+    errors: list[Diagnostic] = []
+    section: int | None = None
+    for number, line in enumerate(readme.read_text().splitlines(), 1):
+        heading = _SECTION.match(line)
+        if heading:
+            section = int(heading.group(1))
+            continue
+        if _SUBSECTION.match(line):
+            section = None
+            continue
+        if section in CERTIFICATE_SECTIONS or not _table_row(line) or _is_separator(line):
+            continue
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        covers = _covers(cells)
+        if not covers:
+            continue
+        where = f"section {section}" if section is not None else "no numbered section"
+        errors.append(
+            Diagnostic(
+                DiagnosticCode.CERTIFICATE_SECTION_UNREAD,
+                REGISTRY,
+                f"line {number}: a row in {where} says it covers `{covers}`, and only sections "
+                + " and ".join(str(s) for s in CERTIFICATE_SECTIONS)
+                + " are read as certificates",
+            )
+        )
+    return errors
+
+
+def certified_statements(lines: list[str]) -> set[str]:
+    """The cards one registry text certifies for their whole statement.
+
+    The same rows `load` reads, from text rather than from a working tree, so a caller
+    that holds a revision's copy of the file — the commit gate, which reads the index —
+    asks the same question of the same table as the tree-reading entry point does.
+    """
+    return {
+        card_id
+        for card_id, file, covers in _rows(lines)
+        if covers == THE_STATEMENT and tool_of(file) is not None
+    }
 
 
 def _rows(lines: list[str]) -> list[tuple[str, str, str]]:

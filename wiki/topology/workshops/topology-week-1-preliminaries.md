@@ -31,47 +31,15 @@ Point-set topology used in algebraic topology: definitions, theorems, and counte
 
 ## Warmups
 
-- State the axioms of a topology.
+[[E-YUGKU]] [[E-OIS5D]] [[E-EE4EE]] [[E-KJQUD]] [[E-FLVZU]] [[E-6W4WA]] [[E-XSXAZ]] [[E-ARJT3]] [[E-45N4G]]
 
-- What does it mean for a set to be open?
-  Closed?
-  [[E-YUGKU]] [[E-OIS5D]] [[E-EE4EE]] [[E-KJQUD]] [[E-FLVZU]] [[E-6W4WA]] [[E-XSXAZ]] [[E-ARJT3]] [[E-45N4G]]
+## Subsets of the real line
 
-## Exercises
-
-- Prove Cantor's intersection theorem.
-
-- Determine if the following subsets of $\RR$ are open, closed, both, or neither: [[P-MFWBK]] [[P-HPN6K]] [[P-N7RR5]] [[P-2V6GL]] [[P-3GOJI]] [[P-HVKUA]] [[P-FNJCM]] [[P-TOP-WORKSHOP-D2-W1]] [[P-TOPOLOGY-PHD-F08-05]] [[P-OTXNQ]] [[P-NJNNL]] [[P-SG462]] [[P-GAA3C]] [[P-YBQ3V]] [[P-T16A2]] [[P-WHXWM]] [[E-4TG52]]
+[[P-MFWBK]] [[P-HPN6K]] [[P-N7RR5]] [[P-2V6GL]] [[P-3GOJI]] [[P-HVKUA]] [[P-FNJCM]] [[P-TOP-WORKSHOP-D2-W1]] [[P-TOPOLOGY-PHD-F08-05]] [[P-OTXNQ]] [[P-NJNNL]] [[P-SG462]] [[P-GAA3C]] [[P-YBQ3V]] [[P-T16A2]] [[P-WHXWM]] [[E-4TG52]]
 
 ## The tube lemma
 
-::: {.theorem title="Tube lemma"}
-Let $X$ and $Y$ be spaces with $Y$ compact, let $x_0\in X$, and let $N\subseteq X \times Y$ be open with $\theset{x_0} \times Y\subseteq N$.
-Then there is an open neighborhood $U$ of $x_0$ in $X$ with $U \times Y \subseteq N$.
-
-:::
-
-::: {.proof}
-For each $y \in Y$, choose open sets $U_y \ni x_0$ and $V_y \ni y$ with $U_y \times V_y \subseteq N$.
-The $V_y$ cover $Y$, so finitely many $V_{y_1}, \ldots, V_{y_k}$ cover $Y$ by compactness.
-Set $U \coloneqq \bigcap_{i=1}^k U_{y_i}$, an open neighborhood of $x_0$.
-For $(x,y)\in U\times Y$, choose $i$ with $y\in V_{y_i}$; then $(x,y)\in U_{y_i}\times V_{y_i}\subseteq N$.
-
-:::
-
-::: {.example title="Applications of the tube lemma"}
-\envlist
-
-1. **Products of compact spaces are compact.** Let $X$ and $Y$ be compact and $\mathcal U$ an open cover of $X\times Y$. For each $x \in X$, the compact slice $\theset{x} \times Y$ is covered by finitely many members of $\mathcal U$, whose union $N_x$ contains a tube $W_x\times Y$ by the tube lemma. Finitely many $W_{x_1},\ldots,W_{x_m}$ cover $X$, and the finitely many members of $\mathcal U$ used for $N_{x_1},\ldots,N_{x_m}$ cover $X\times Y$.
-
-2. **Projections along compact factors are closed maps.** If $Y$ is compact, the projection $p\colon X \times Y \to X$ is closed.
-   Given a closed $A \subseteq X \times Y$ and $x \notin p(A)$, the complement of $A$ is open and contains $\theset{x} \times Y$.
-   The tube lemma gives a neighborhood $U$ of $x$ with $U \times Y$ disjoint from $A$, so $U \cap p(A) = \emptyset$.
-
-3. **Products of quotient maps with a locally compact factor.** For the quotient map $p\colon\RR\to\RR/\ZZ_{+}$ collapsing the positive integers to a point, $p\times\id_\QQ\colon\RR\times\QQ\to(\RR/\ZZ_{+})\times\QQ$ is not a quotient map [@Mun00, sec. 22, Example 7].
-   If $f\colon X \to Y$ is a quotient map and $Z$ is locally compact Hausdorff, then $f \times \id_Z\colon X \times Z \to Y \times Z$ is a quotient map; the proof uses compact neighborhoods in $Z$ and the tube lemma to show that the image of a saturated open subset of $X \times Z$ is open in $Y \times Z$.
-
-:::
+[[T-G4GO4]]
 
 ## Worksheet problems
 

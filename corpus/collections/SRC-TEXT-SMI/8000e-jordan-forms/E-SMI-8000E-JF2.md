@@ -39,7 +39,17 @@ audit:
     characteristic polynomial; and the determinants give X^2+1 for A,
     (X-1)(X-3)^2 for B, (X-3)(X-1)(X+2) for C and (X+2)(X-2)^3 for D, each
     re-derived here. No defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 4, Jordan forms Exercise
+    2(i)--(iii), with the notation $f,T,t$ separated as the card states. $(X-4)^3$ gives
+    $J_3(4)$, $J_2(4)\oplus J_1(4)$, $4I_3$ with minimal polynomials $(X-4)^3,(X-4)^2,X-4$;
+    a characteristic root is an eigenvalue, so $m(c)=0$; and the primary decomposition gives
+    $\operatorname{ch}_T=\prod(X-c)^{d_c}$, so $d_c=m_c$. Exact computation of the four
+    determinants gives $X^2+1$, $(X-1)(X-3)^2$, $(X-3)(X-1)(X+2)$ and $(X+2)(X-2)^3$,
+    matching the card. No defect.
 ---
 
 ::: {.exercise}

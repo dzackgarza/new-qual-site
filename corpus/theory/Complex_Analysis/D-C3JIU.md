@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.definition}
-Let $f$ be [[D-E7A5W|holomorphic]] on a punctured disc $D_r(z_0)\setminus\{z_0\}$, so that $z_0$ is an [[D-IWIA5|isolated singularity]] of $f$, and let
+Let $f$ be [[D-E7A5W|holomorphic]] on a punctured disc $\DD_r(z_0)\setminus\{z_0\}$, so that $z_0$ is an [[D-IWIA5|isolated singularity]] of $f$, and let
 $$
 f(z)=\sum_{k=-\infty}^{\infty}a_k(z-z_0)^k \qquad (0<\abs{z-z_0}<r)
 $$
@@ -30,5 +30,5 @@ If $z_0$ is a [[D-AUD6K|pole of order $n\ge1$]], then $a_k = 0$ for $k<-n$ and t
 $$
 P(z)=\frac{a_{-n}}{(z-z_0)^n}+\cdots+\frac{a_{-1}}{z-z_0};
 $$
-the function $f-P$ equals $\sum_{k\ge0}a_k(z-z_0)^k$ on $D_r(z_0)\setminus\{z_0\}$, so it extends to a holomorphic function on $D_r(z_0)$, and $P$ is the unique polynomial in $(z-z_0)^{-1}$ without constant term with this property.
+the function $f-P$ equals $\sum_{k\ge0}a_k(z-z_0)^k$ on $\DD_r(z_0)\setminus\{z_0\}$, so it extends to a holomorphic function on $\DD_r(z_0)$, and $P$ is the unique polynomial in $(z-z_0)^{-1}$ without constant term with this property.
 :::

@@ -6,7 +6,9 @@ title: Convergence of $\sum_n \sin(\pi n/p)/n$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Series of Numbers
+  - Convergence Tests
 relations: []
 review: draft
 audit:

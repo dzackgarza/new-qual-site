@@ -184,7 +184,7 @@ $$
 The last group is zero by Grothendieck vanishing: the underlying space has dimension one [@Har77, Theorem III.2.7].
 That vanishing is also the book form of the sheaf statement used by the published proof: for $f:X_{j+1}\to\Spec k$ the sheaf $R^2f_*(N^j/N^{j+1})$ is the $k$-vector space $H^2(X_{j+1},N^j/N^{j+1})$, so it vanishes for exactly this reason.
 
-The source is Bosch–Lutkebohmert–Raynaud, *Néron Models*, §9.2, Proposition 5, printed p. 245, text version `tmp/sources/bosch-lutkebohmert-raynaud-neron-models-part4.md`: for $X$ a proper curve over a field $K$, the canonical map $\Pic_{X/K}\to\Pic_{X_{\mathrm{red}}/K}$ is an epimorphism of sheaves for the étale topology.
+The source is Bosch–Lutkebohmert–Raynaud, *Néron Models*, §9.2, Proposition 5, text version `tmp/sources/bosch-lutkebohmert-raynaud-neron-models-part4.md`: for $X$ a proper curve over a field $K$, the canonical map $\Pic_{X/K}\to\Pic_{X_{\mathrm{red}}/K}$ is an epimorphism of sheaves for the étale topology.
 Its proof reduces to a closed subscheme $X'\subseteq X$ defined by a sheaf of ideals $\mathcal N$ with $\mathcal N^2=0$, forms the exponential sequence $0\to\mathcal N\to\OO_X^*\to\OO_{X'}^*\to0$ with $n\mapsto1+n$, reads the induced sequence
 $$
 R^1f_*\mathcal N\to R^1f_*\OO_X^*\to R^1f_*\OO_{X'}^*\to R^2f_*\mathcal N

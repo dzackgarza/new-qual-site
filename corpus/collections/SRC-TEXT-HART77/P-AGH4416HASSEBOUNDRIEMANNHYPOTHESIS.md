@@ -34,6 +34,26 @@ audit:
     Rechecked the completed trace identity, Frobenius degree quadratic form,
     Hasse bound, and the q=p separability criterion after finishing parts
     (c)--(e).
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.4.16, printed pp. 93--94,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF pages are the printed
+    pages. Checked against the book: Hartshorne IV.4.16, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed $F'^*\omega=0$ from $d(x^q)=qx^{q-1}dx=0$, the identity $(1-F')(1-\hat F')=1-F'-\hat F'+[q]$, the degree formula $m^2+n^2q+amn$ and the AM-GM bound $\abs a\le2\sqrt q$, and the implication $p\mid a$, $\abs a\le2\sqrt q<p$ $\Rightarrow$ $a=0$ for $p\ge5$.
+    Not checked: Yang's Solutions outside printed pp. 93--94; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's
+    Solution 4.4.16 at printed pp. 93--94; it had none before. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -350,4 +370,8 @@ Step [](#s1){.pf-ref} proves part (a), steps [](#s2){.pf-ref} and [](#s3){.pf-re
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.16, does (a) by base change: Frobenius on $\Spec\FF_q$ is an isomorphism because $x\mapsto x^q$ is one on $\FF_q$, so $X_q\cong X$, and for $X=\Proj k[x,y,z]/(f)$ the twist is $\Proj k[x,y,z]/(f_p)$ with the coefficients raised, giving the $q$-th power map on coordinates. In (b) it computes $F'^*\omega=0$ for $\omega=\frac{dx}{2y+a_1x+a_3}$, because raising $x$ to the $q$-th power kills the differential, so $(1-F')^*\omega=\omega$ and $1-F'$ is separable, with kernel the points fixed by the $q$-th power map, i.e. $X(\FF_q)$. In (c) it sets $a=1+\deg F'-\deg(1-F')$ and recovers $[a]=F'+\hat F'$ from $(1-F')(1-\hat F')=1-F'-\hat F'+[q]$, and then $N=\deg_s(1-F')=\deg(1-F')=q-a+1$. In (d) it evaluates the degree of $(m+nF')(m+n\hat F')=m^2+n^2q+amn$ and minimises in $m,n$ to get $\abs a\le2\sqrt q$. In (e) it observes that $m+nF'$ is separable iff $p\nmid m$, so the Hasse invariant vanishes iff $\hat F'$ is inseparable iff $p\mid a$, and with $\abs a\le2\sqrt q<p$ for $p\ge5$ that forces $a=0$ and $N=p+1$. Three printed slips are recorded rather than copied: the intermediate expansion in (c) writes $+F'\hat F'$ twice where the middle is $-1_X+F'+\hat F'-[q]$; the closing line of (e) reads $N=a+1$ for $N=q-a+1$; and the same line prints '$p\nmid a$' where the two preceding sentences have established $p\mid a$ --- and '$p>5$' where $\abs a\le2\sqrt q<p$ already holds at $p\ge5$.
 :::

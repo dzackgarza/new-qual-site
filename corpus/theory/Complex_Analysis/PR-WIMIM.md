@@ -24,4 +24,6 @@ Let $(a_k)_{k\ge0}$ be nonzero complex numbers such that $L\coloneqq\lim_{k\to\i
 - If $L=1$, the test gives no information: $\sum_k 1/k$ diverges and $\sum_k 1/k^2$ converges, and both have $L=1$.
 
 In particular, if $c_k\neq0$ and $\lim_k\abs{c_{k+1}/c_k}=\ell\in[0,\infty]$, applying the test to $a_k=c_kz^k$ shows that $\sum_kc_kz^k$ has radius of convergence $1/\ell$, with $1/0=\infty$ and $1/\infty=0$.
+
+The first two clauses are [@Rud76, ch. 3, Theorem 3.34], which states convergence when $\limsup\abs{a_{k+1}/a_k}<1$ and divergence when $\abs{a_{k+1}/a_k}\ge1$ from some index on; the hypothesis above that the limit exists puts both cases inside those, and a convergent sequence with limit greater than $1$ is eventually at least $1$. The book states the test in the $\limsup$ form, and the third clause is its own remark, not a claim of the theorem.
 :::

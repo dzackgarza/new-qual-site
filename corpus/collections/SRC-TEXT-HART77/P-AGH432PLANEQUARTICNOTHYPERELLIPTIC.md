@@ -30,6 +30,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.3.2, printed pp. 87--88,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF pages are the printed
+    pages. Checked against the book: Hartshorne IV.3.2, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed $\ell(K-D)=1$ from Riemann--Roch at $g=3$, $\deg D=\deg K=4$, and the two independent conditions that $P+Q$ imposes on $\abs K$.
+    Not checked: Yang's Solutions outside printed pp. 87--88; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.3.2 at printed
+    pp. 87--88 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -264,5 +284,7 @@ part (c).
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.2, printed p. 218, text version `tmp/sources/hartshorne-solutions-egbert.md`, uses $\omega_X=\OO_X(1)$ for the plane quartic, so that effective canonical divisors are exactly the hyperplane sections, and concludes that no $g^1_2$ exists: a degree-two divisor lies in at most one such section.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.2, text version `tmp/sources/hartshorne-solutions-egbert.md`, uses $\omega_X=\OO_X(1)$ for the plane quartic, so that effective canonical divisors are exactly the hyperplane sections, and concludes that no $g^1_2$ exists: a degree-two divisor lies in at most one such section.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.3.2, does (a) by intersecting with a line: for $D=X.L$ one has $\deg D=4=\deg K$ by Bézout and $\ell(D)=3$ because the lines cut a $\PP^2$ inside $\abs D$, so Riemann--Roch gives $\ell(K-D)=\ell(D)+g-1-\deg D=3+3-1-4=1$; a class of degree $0$ with a nonzero section is the trivial class, so $K=D$. Since every line gives a canonical divisor and the lines as well as $\abs K$ form a $\PP^2$, the line sections are exactly the effective canonical divisors. In (b) it takes the line $L=PQ$ through two points, so that $K=X.L=P+Q+R+S$ for two further points $R,S$, and then $\dim\abs{P+Q}=\dim\abs{K}-2=0$, the last step being that very ampleness of $K$ makes $P+Q$ impose two independent conditions. Its (c) is on printed p. 88: a degree-$2$ divisor with $\dim\abs D=1$ would give a closed morphism $X\to\PP^1$ of degree $2$, and (b) forbids that, so $X$ carries no $g^1_2$ and is not hyperelliptic.
 :::

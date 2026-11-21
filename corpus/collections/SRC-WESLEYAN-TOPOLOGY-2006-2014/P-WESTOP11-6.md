@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP11-6
 kind: problem
 title: The simply connected case of van Kampen and the full theorem
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [van Kampen, Simply Connected]}
 relations: []
 review: draft
 audit:

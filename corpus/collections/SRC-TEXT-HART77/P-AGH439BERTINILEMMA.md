@@ -29,6 +29,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.3.9, printed p. 88,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.3.9, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed both dimensions: $1+1=2$ for tangent lines together with the pencil of planes through each, and $1+1=2$ for multisecant lines by the trisecant bound, against $\dim\check{\PP}^3=3$; and checked that transversality and the absence of a multisecant line give the two conclusions for $H\in U$.
+    Not checked: Yang's Solutions outside printed p. 88; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.3.9 at printed
+    p. 88 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -354,5 +374,7 @@ asserted Bertini lemma.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.9, printed p. 222, text version `tmp/sources/hartshorne-solutions-egbert.md` (entry 4.3.18), records that the tangent variety has dimension at most two as a subvariety of $(\PP^{3})^\vee\times X$ and that the trisecant locus has dimension at most one by the trisecant lemma, so their union is a proper closed subset of the dual space; a hyperplane outside it meets $X$ in distinct points, no three collinear and none on a tangent.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.9, text version `tmp/sources/hartshorne-solutions-egbert.md` (entry 4.3.18), records that the tangent variety has dimension at most two as a subvariety of $(\PP^{3})^\vee\times X$ and that the trisecant locus has dimension at most one by the trisecant lemma, so their union is a proper closed subset of the dual space; a hyperplane outside it meets $X$ in distinct points, no three collinear and none on a tangent.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.3.9, counts the bad planes in the dual space: the planes containing a tangent line of $X$, and those containing a line meeting $X$ in three or more points, each form a family of dimension at most $2$ inside the three-dimensional $\check{\PP}^3$, so there is a Zariski-open $U$ of planes containing neither, and for $H\in U$ the section $X\cap H$ is $d$ distinct points with no three collinear --- distinctness because a plane through no tangent line meets $X$ transversally, and no three collinear because three collinear points of $X\cap H$ would give a multisecant line contained in $H$. The conclusion matches the card's closed loci, but the printed reason for the first family does not give the bound it states: it dimensions the tangent variety, a surface in $\PP^3$, and the planes through a surface fill the whole dual space, so that count yields $3$ and proves nothing. The bound is the card's step [](#s1){.pf-ref} --- the incidence variety $\{(P,H):T_PX\subseteq H\}$ is a $\PP^1$-bundle over the curve $X$, hence two-dimensional, and the set of bad planes is its image --- and the second family needs the trisecant bound of step [](#s3){.pf-ref}.
 :::

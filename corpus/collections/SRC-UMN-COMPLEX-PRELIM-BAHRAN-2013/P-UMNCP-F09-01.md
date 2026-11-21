@@ -6,7 +6,9 @@ title: Zeros of $6z^3+e^z+1$ in the unit disk
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 audit:

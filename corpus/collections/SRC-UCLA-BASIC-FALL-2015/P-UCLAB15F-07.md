@@ -6,7 +6,9 @@ title: Possible ranks of a product of two rank-three rectangular matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Rank and Nullity
+  - Rank
 relations: []
 review: draft
 audit:

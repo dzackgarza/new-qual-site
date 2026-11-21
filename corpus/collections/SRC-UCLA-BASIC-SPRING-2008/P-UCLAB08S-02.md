@@ -6,7 +6,9 @@ title: Pointwise convergence need not imply convergence of integrals
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Pointwise Convergence
+  - Integrals
 relations: []
 review: draft
 audit:

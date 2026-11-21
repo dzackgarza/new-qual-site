@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP03-06
 kind: problem
 title: Describe the universal cover of the Klein bottle
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Universal Cover, Surfaces]}
 relations: []
 review: draft
 audit:

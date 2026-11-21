@@ -26,6 +26,13 @@ audit:
     2/(1+a)=2-2a+2a^2/(1+a), together with
     ||sin u|-|u||<=|sin u-u|<=|u|^3/6, gives the linear
     -4 sqrt(2) pi |h| term and an explicitly O(h^2) remainder.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Summer81.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -44,6 +51,7 @@ with a remainder bounded in absolute value by a constant multiple of $h^2$ near 
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Summer 1981, retained in this repository as `assets/attachments/Summer81.pdf`; the statement below is its wording.
 Set
 $$
 u=2\pi h

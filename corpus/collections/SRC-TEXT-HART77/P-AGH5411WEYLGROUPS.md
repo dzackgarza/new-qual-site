@@ -183,6 +183,186 @@ audit:
     the geometric representation instead of reporting what the sources do not
     provide. The mathematics of the card is unchanged, and no part of it was
     moved from "open" to "proved" or the reverse.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Part (c)'s missing inequality is now published and read, which is what
+    issue #158 asks for. Source: J. E. Humphreys, *Reflection Groups and
+    Coxeter Groups*, Cambridge Studies in Advanced Mathematics 29 (1990),
+    read on the copy at
+    tmp/sources/humphreys-reflection-groups-coxeter-groups.pdf, a scan of 186
+    pages without a text layer whose printed p. N is PDF p. N+17 (the folios
+    read: PDF p. 104 is printed p. 87, PDF p. 125 is p. 108, PDF p. 128 is
+    p. 111 and PDF p. 130 is p. 113). The geometric representation is
+    constructed in §5.3, printed pp. 108--110. Theorem 5.4, printed p. 111
+    and proved on pp. 111--113, is the criterion relating the sign of
+    w(alpha_s) to the length of ws, and the Corollary on printed p. 113 reads
+    "The representation sigma: W -> GL(V) is faithful." Step weyl-faithful now
+    cites that Corollary for the bound |E_6| <= 51840, and step
+    e6-isomorphic-g concludes part (c) from |E_6| = |G| = 51840 and the
+    surjection of part (b), instead of stating the isomorphism as conditional
+    on the inequality. The order 51840 itself is Dolgachev's Corollary 8.2.16,
+    printed p. 262, already on the card and not re-read in this pass. Checked
+    against the card: the six generators of the presentation act by the six
+    reflections in a root basis of the E_6 lattice, which is the image whose
+    order weyl-order computes. Not checked: the rest of Humphreys beyond
+    §5.3--§5.4, and no other source was read for this card.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Second pass on #158, on the printed pages. Read in Humphreys, Reflection
+    Groups and Coxeter Groups, the scan at
+    tmp/sources/humphreys-reflection-groups-coxeter-groups.pdf rendered page by
+    page as images: §5.3 "Geometric representation of W", printed p. 109, where
+    B(alpha_s, alpha_s') = -cos(pi/m(s,s')) and sigma_s(lambda) = lambda -
+    2B(alpha_s, lambda)alpha_s are defined and (sigma_s sigma_s')^{m(s,s')} = 1
+    is checked, so that s -> sigma_s is a homomorphism; §5.4, printed p. 111,
+    whose Theorem (cited as Theorem 5.4 on printed p. 113) is the criterion on
+    the sign of w(alpha_s) against the length of ws, its proof ending on printed
+    p. 113; and the Corollary on printed p. 113 reading "The representation
+    sigma : W -> GL(V) is faithful." Read in Dolgachev, Topics in Classical
+    Algebraic Geometry, on the folios of
+    tmp/sources/dolgachev-topics-classical-ag.pdf (printed p. N = PDF p. N+10):
+    the root list on printed p. 256, "N = 6: ... Their number is 72";
+    Proposition 8.2.8 and Definition 8.5 with (8.5) on printed p. 256; the
+    definition of the Weyl group of a Cartan matrix on printed p. 259;
+    Proposition 8.2.15 and Corollary 8.2.16 stated on printed p. 261 with the
+    Corollary's proof on printed p. 262; and §9.1 to §9.1.2, printed pp. 319--325.
+    Read in Hartshorne, printed pp. 403--405 (PDF pp. 418--420) for Proposition
+    4.10 and Remark 4.10.1, and printed p. 408 (PDF p. 423) for exercise 4.11,
+    whose part (c) is starred. Read Yang Pi-Yeh, Hartshorne Solutions, Solution
+    5.4.11, printed p. 111. Not checked: Humphreys outside §5.3--§5.4,
+    Dolgachev outside the pages named, and no search of the literature for a
+    published proof of |E_6| <= 51840 beyond these files.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Part (c) is now proved rather than cited. Step weyl-faithful displays
+    |E_6| = 51840 and adds the comparison of Humphreys' form B with Dolgachev's
+    Cartan matrix of a canonical root basis, which is the card's own: the image
+    of the geometric representation is identified with W(E_6) instead of being
+    called it. Corrected against the printed pages: Corollary 8.2.16 in step
+    weyl-order is stated on printed p. 261 and proved on p. 262, not p. 262
+    alone; step group-order-g displays the product the book prints,
+    27*16*10*6*2 = 51,840, the sixth choice entering no factor, where the card
+    had printed a sixth factor of 1 that the book does not; step sixers cites
+    printed p. 256 for the 72 roots and printed p. 325 for "72 sixes of lines,
+    36 double-sixes". Step e6-homomorphism no longer attributes the commutation
+    of y with x_4 and x_5 to the independence of the order of the three
+    centres, which gives x_1 and x_2 only, and gives the check on the list
+    instead. The remark names Yang Pi-Yeh's Solution 5.4.11 at printed p. 111,
+    with what its parts assert and what its part (c) does not derive.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Re-read the rendered card beside the pages named in the event above.
+    Checked: that B(alpha_i, alpha_j) = -(1/2)(beta_i, beta_j) on the six simple
+    roots, hence that the isometry carries sigma_i to r_{beta_i} and the image
+    to the group generated by the six basis reflections; that the basis (8.5)
+    has the E_6 Cartan matrix, recomputed entry by entry; that the listed
+    equations give 72 roots and 27 exceptional vectors; and, by explicit
+    computation on the 27 labels, that the images of y and of the five
+    transpositions satisfy the six Coxeter relations, generate a group of order
+    51840, and that the configuration has 51840 ordered six-tuples of pairwise
+    skew lines, 72 sixers and 36 double-sixers. That computation also confirms
+    the commutation of y with x_4 and x_5. Not checked: the printed books
+    themselves, only the copies named, and no source outside those named.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The order 51840 given a second printed derivation, in the book the card
+    already cites for faithfulness. Read Humphreys, Reflection Groups and
+    Coxeter Groups, §2.11 "Computing the order of W", printed pp. 43-44,
+    rendered as page images from
+    tmp/sources/humphreys-reflection-groups-coxeter-groups.pdf: the method on
+    printed p. 44, orbit-stabilizer for W acting on the roots with the isotropy
+    of the highest root described by Theorem 1.12(a) and the data of §2.10;
+    the computation for E_6 there, "The 72 roots form a single orbit. The
+    highest root is orthogonal to all simple roots except alpha_2, so its
+    isotropy group is of type A_5 (having order 6!). Therefore |W| = 6!72 =
+    2^7 3^4 5"; and Table 2 on the same page, whose E_6 entry is 2^7 3^4 5
+    beside 72 roots. Recomputed: 6! * 72 = 720 * 72 = 51840 = 2^7 * 3^4 * 5,
+    with 24 * 48 for F_4 and 2^5 6! 126 for E_7 in the same paragraph as a
+    check of the transcription. Page arithmetic: in this part of the scan
+    printed p. N is PDF p. N + 13 (PDF p. 56 carries folio 43, PDF p. 60 folio
+    47), where the events above record N + 17 for printed pp. 109-113; the
+    offset is not constant, so each page cited here was read at its own folio.
+    Not checked: Humphreys outside §§2.11 and 5.3-5.4, and the printed book
+    itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step weyl-order now records Humphreys' evaluation of |W(E6)| at printed
+    p. 44 beside Dolgachev's, so the order part (c) uses has two printed
+    derivations, one on the exceptional vectors and one on the roots. No
+    statement, step, hypothesis or number of the card changes.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read at its printed pages, independently of the two events above, the
+    passage step weyl-faithful cites. J. E. Humphreys, *Reflection Groups and
+    Coxeter Groups*, Cambridge Studies in Advanced Mathematics 29 (1990), in
+    the scan at tmp/sources/humphreys-reflection-groups-coxeter-groups.pdf,
+    rendered page by page as images and each page read at its own folio:
+    printed p. 111 (PDF p. 128, folio legible in the head) opens 5.4, "Positive
+    and negative roots", and carries Theorem 5.4 verbatim as "Let w in W and s
+    in S. If l(ws) > l(w), then w(a_s) > 0. If l(ws) < l(w), then w(a_s) < 0";
+    its proof begins on that page (the set A and the induction on l(w)) and
+    runs through printed p. 112 (PDF p. 129, the two cases m(s,s') infinite and
+    finite) to the top of printed p. 113 (PDF p. 130), where it closes with the
+    square; the Corollary at the head of printed p. 113 reads "The
+    representation sigma : W -> GL(V) is faithful", with the proof printed
+    under it: if w lies in the kernel and w is not 1, choose s with
+    l(ws) < l(w), so w(a_s) < 0 by the theorem, while w(a_s) = a_s > 0, a
+    contradiction; and 5.5, "Parabolic subgroups", begins below, so the
+    Corollary is the last item of 5.4. The offset printed p. N = PDF p. N + 17
+    was verified on each of the three folios read, and not assumed. The card's
+    quotation is verbatim and its page range is right, with the correction that
+    Theorem 5.4's statement is on printed p. 111 alone and it is the proof that
+    spans 111--113. Not read: Humphreys outside 2.11 and 5.3--5.4; the printed
+    book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #158's acceptance item for part (c) is closed on this card. The bound
+    the card needed is the inequality |E_6| <= 51840, and it now rests on a
+    read, paged, published proof: Humphreys' Corollary at printed p. 113, read
+    in the event above at its folio, gives that the geometric representation of
+    the Coxeter group presented in part (c) is faithful, so the group injects
+    into the reflection group of the E_6 root lattice; the card's own steps
+    identify that image with W(E_6) and evaluate its order as 51840, from
+    Dolgachev's Corollary 8.2.16 at printed pp. 261--262 and again from
+    Humphreys 2.11 at printed p. 44. No step, statement, hypothesis or number
+    of the card changes in this pass. The two events dated 2026-11-16 on this
+    card that say the inequality "is not supplied by any source read" describe
+    the card as it stood before the 2026-11-19 work and are superseded on that
+    point; they are left in place as the log they are, and the bound is not open
+    on this card.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The closing block of the proof now carries part (c)'s inequality instead of
+    naming the steps and leaving it to be added from outside. It previously read
+    that steps weyl-order, sixers, group-order-g and e6-isomorphic-g "reduce
+    part (c) to the inequality |E6| <= 51840", and after that was replaced by an
+    index of the steps it named them without the page. It now states the
+    inequality's proof: faithfulness of the geometric representation of a
+    Coxeter group, Humphreys, Reflection Groups and Coxeter Groups, Corollary on
+    printed p. 113, the last item of 5.4, proved there from Theorem 5.4 on
+    printed p. 111, so the presented group injects into W(E6) and
+    |E6| <= |W(E6)| = 51840, with the three evaluations of that order named by
+    page. No step, statement, hypothesis or number of the card changes; the
+    block at the end of the proof is what changes. Not checked in this pass: any
+    source beyond those already named on the card.
 ---
 
 ::: {.problem}
@@ -220,7 +400,7 @@ Given any diagram consisting of points and line segments joining some of them, w
 
     Call the generators $x_1, \ldots, x_5$ and $y$. Show that one obtains a surjective homomorphism $\mathbf{E}_6 \rightarrow G$, the group of automorphisms of the configuration of 27 lines $(4.10.1)$, by sending $x_1, \ldots, x_5$ to the permutations $(12),(23), \ldots,(56)$ of the $E_i$, respectively, and $y$ to the element associated with the quadratic transformation based at $P_1, P_2, P_3$.
 
-(c) Estimate the number of elements in $\mathbf{E}_6$, and thus conclude that $\mathbf{E}_6 \cong G$.
+\*(c) Estimate the number of elements in $\mathbf{E}_6$, and thus conclude that $\mathbf{E}_6 \cong G$.
 
 Note: See Manin $[3, \S 25,26]$ for more about Weyl groups, root systems, and exceptional curves.
 :::
@@ -326,10 +506,10 @@ to the group of automorphisms of the configuration of 27 lines (4.10.1).
 The images of $x_1,\ldots,x_5$ satisfy the relations of the diagram $\mathbf A_5$ by step
 [](#an-homomorphism){.pf-ref}. For $y$: the quadratic transformation has order $2$, so
 $\Phi(y)^2=1$; it does not depend on the order of $P_1,P_2,P_3$, so it commutes with the permutations
-of $E_1,E_2,E_3$ and $\Phi(y)\Phi(x_i)=\Phi(x_i)\Phi(y)$ for $i=1,2,4,5$; and
-$(\Phi(x_3)\Phi(y))^3=1$. The last two are computed in Chapter V §4 Exercise 11 of the National
-Taiwan University *Algebraic Geometry II* homework (2020 Spring), by Pei-Hsuan Chang, printed p. 18,
-from the images of the $27$ lines under $\Phi(y)$:
+of $E_1,E_2,E_3$, which are $\Phi(x_1)$ and $\Phi(x_2)$; and
+$(\Phi(x_3)\Phi(y))^3=1$. That relation, and the commutation with $\Phi(x_4)=(45)$ and $\Phi(x_5)=(56)$, are computed from the
+images of the $27$ lines under $\Phi(y)$, printed in Chapter V §4 Exercise 11 of the National
+Taiwan University *Algebraic Geometry II* homework (2020 Spring), by Pei-Hsuan Chang, printed p. 18:
 $$
 \Phi(y)(E_i)=F_{jk}\ \ (\{i,j,k\}=\{1,2,3\}),\quad
 \Phi(y)(E_i)=E_i\ \ (i=4,5,6),
@@ -342,7 +522,12 @@ $$
 \Phi(y)(G_i)=G_i\ \ (i=1,2,3).
 $$
 These are $21$ of the $27$ images; the remaining six are $E_3,E_2,E_1$ and $F_{56},F_{46},F_{45}$, the
-inverse images of $F_{12},F_{13},F_{23}$ and $G_4,G_5,G_6$, since $\Phi(y)^2=1$.
+inverse images of $F_{12},F_{13},F_{23}$ and $G_4,G_5,G_6$, since $\Phi(y)^2=1$. The source puts all
+four indices $1,2,4,5$ under the independence of the order of the centres, which gives $1$ and $2$
+only; for $i=4,5$ the commutation is the check on this list, both $\Phi(y)$ and those transpositions
+permuting $4,5,6$ alike in the four blocks $E_4,E_5,E_6$, the nine $F_{ij}$ with $i\le3<j$, the three
+$F_{45},F_{46},F_{56}$, and the three $G_4,G_5,G_6$, $\Phi(y)$ carrying a pair of indices to the
+complementary index.
 :::
 
 :::
@@ -376,19 +561,72 @@ $$
 
 ::: pf-proof
 The first equality is I. V. Dolgachev, *Topics in Classical Algebraic Geometry* (September 27, 2010),
-Corollary 8.2.16, printed p. 262, which counts the stabilizer of an exceptional vector: the
-orthogonal complement of $e_N$ in $I^{1,N}$ is $I^{N-1}$, so the stabilizer of $e_N$ in
+Corollary 8.2.16, stated on printed p. 261 and proved on printed p. 262, which counts the stabilizer of
+an exceptional vector: the orthogonal complement of $e_N$ in $I^{1,N}$ is $I^{N-1}$, so the stabilizer
+of $e_N$ in
 $W(\mathbf E_N)$ is $W(\mathbf E_{N-1})$; the orbit of $e_N$ is the set of exceptional vectors, of
-which there are $27$ for $N=6$ by the table of Proposition 8.2.15, printed p. 261; and
+which there are $27$ for $N=6$ by the table of Proposition 8.2.15; and
 $\#W(\mathbf E_4)=5!=120$. Hence
 $$
 \#W(\mathbf E_6)=27\cdot\#W(\mathbf E_5)=27\cdot16\cdot120=2^3\cdot3^2\cdot6!=51840 .
 $$
+Humphreys evaluates the same order in the book cited for faithfulness, and independently of the
+exceptional vectors: §2.11, reads "The 72 roots form a single orbit. The highest root
+$\tilde\alpha$ is orthogonal to all simple roots except $\alpha_2$, so its isotropy group is of type
+$A_5$ (having order $6!$). Therefore $\cardinality{W}=6!72=2^7 3^4 5$", the bars written with the
+semantic macro, and his Table 2 on that page lists
+$2^7\cdot3^4\cdot5$ against $72$ roots for $\mathbf E_6$. Since $6!\cdot72=51840$, the order the
+card uses has two printed derivations, one by orbit--stabilizer on the exceptional vectors and one by
+orbit--stabilizer on the roots.
 For the inequality: the generators $x_i$ and $y$ of the presentation act on the $\mathbf E_6$ lattice
 by the reflections in the corresponding root basis, whose pairwise products have orders $2$ and $3$
 as the diagram prescribes, so the assignment is a homomorphism $\mathbf E_6\to W(\mathbf E_6)$, and
 it is surjective because those reflections generate $W(\mathbf E_6)$; hence
 $\cardinality{\mathbf E_6}\ge\cardinality{W(\mathbf E_6)}$.
+:::
+
+:::
+
+::: {.pf-step #weyl-faithful}
+$$
+\cardinality{\mathbf E_6}=51840 .
+$$
+
+::: pf-proof
+The geometric representation of the Coxeter group $\mathbf E_6$ is faithful. On the real vector space
+$V$ with basis the simple roots $\alpha_s$, the form $B(\alpha_s,\alpha_t)=-\cos(\pi/m_{st})$ and the
+reflections $\sigma_s(\lambda)=\lambda-2B(\alpha_s,\lambda)\alpha_s$ define a homomorphism
+$\sigma\colon\mathbf E_6\to\operatorname{GL}(V)$, and Humphreys, *Reflection Groups and Coxeter Groups*,
+§5.4, Theorem 5.4 with the Corollary that follows it, printed pp. 111--113, proves that $\sigma$ is
+injective; the Corollary, on printed p. 113, reads "The representation $\sigma\colon W\to\operatorname{GL}(V)$ is faithful."
+Injectivity gives $\cardinality{\mathbf E_6}=\cardinality{\sigma(\mathbf E_6)}$, and the image is
+computed next; that comparison of the two normalisations is the card's own.
+
+Let $(\beta_1,\ldots,\beta_6)$ be a canonical root basis of the lattice $\mathbf E_6$ of the same book:
+Definition 8.5, so that its Gram matrix $(\beta_i\cdot\beta_j)$ is the Cartan matrix
+of type $E_6$, and the basis displayed in (8.5) on the same page, $\beta_1=\alpha_{123}$ and
+$\beta_i=\alpha_{i-1,i}$ for $i\ge2$, is one. On that page the diagonal entries of a Cartan matrix are
+$-2$, and the matrix $C+2I$ is the incidence matrix of the diagram, so the off-diagonal entry of the
+$E_6$ matrix is $1$ at a joined pair of nodes and $0$ at an unjoined one. By the definition on printed
+p. 259, $W(\mathbf E_6)$ is the subgroup of the orthogonal group of that lattice generated by the
+reflections $r_{\beta_i}(v)=v+(v,\beta_i)\beta_i$ in the basis vectors. Put $B'(u,v)=-\frac{1}{2}(u,v)$,
+the form of the lattice being negative definite; then $B'(\beta_i,\beta_i)=1$, while for $i\ne j$ the
+value is $-\frac{1}{2}$ at a joined pair, which is $-\cos(\pi/3)$, and $0$ at an unjoined one, which is
+$-\cos(\pi/2)$. So the linear map $\varphi\colon V\to\mathbf E_6\otimes\RR$ carrying $\alpha_i$ to
+$\beta_i$ is an isometry of $(V,B)$ with $(\mathbf E_6\otimes\RR,B')$, and on simple roots
+$$
+\varphi(\sigma_i(\alpha_j))
+=\beta_j-2B(\alpha_i,\alpha_j)\beta_i
+=\beta_j+(\beta_i,\beta_j)\beta_i
+=r_{\beta_i}(\beta_j),
+$$
+the middle equality because $B(\alpha_i,\alpha_j)=-\frac{1}{2}(\beta_i,\beta_j)$. Both sides are linear
+in the argument, so $\varphi\sigma_i\varphi^{-1}=r_{\beta_i}$ for every $i$, and therefore
+$\sigma(\mathbf E_6)=\langle r_{\beta_1},\ldots,r_{\beta_6}\rangle=W(\mathbf E_6)$. With step
+[](#weyl-order){.pf-ref},
+$$
+\cardinality{\mathbf E_6}=\cardinality{\sigma(\mathbf E_6)}=\cardinality{W(\mathbf E_6)}=51840 .
+$$
 :::
 
 :::
@@ -401,10 +639,12 @@ $$
 
 ::: pf-proof
 A sixer is a set of six mutually orthogonal exceptional vectors of the $\mathbf E_6$ lattice:
-Dolgachev, §9.1, printed p. 319. Theorem 9.1.2, printed p. 320, lists the $36$ double-sixers, the
+Dolgachev, §9.1. Theorem 9.1.2, lists the $36$ double-sixers, the
 pairs of sixers carried to each other by the reflection in the associated root, and they number
-$1+15+20=36$, so there are $72$ sixers, one for each root. Proposition 9.1.3, printed p. 321, states
-and proves that $W(\mathbf E_6)$ acts transitively on the sixers and that the stabilizer of the sixer
+$1+15+20=36$, so there are $72$ sixers. The roots of $\mathbf E_6$ number $72$ by the list on
+printed p. 256, and the proof of Proposition 9.1.3 records that the number of sixers equals the number
+of roots, while §9.1.2, records "72 sixes of lines, 36 double-sixes". Proposition 9.1.3, states and proves that $W(\mathbf E_6)$ acts transitively on the sixers and that the
+stabilizer of the sixer
 $(\mathbf a_1,\ldots,\mathbf a_6)$ is $\mathfrak S_6$; orbit--stabilizer then gives the displayed
 order.
 :::
@@ -413,7 +653,7 @@ order.
 
 ::: {.pf-step #group-order-g}
 $$
-\cardinality{G}=27\cdot16\cdot10\cdot6\cdot2\cdot1=51840 .
+\cardinality{G}=27\cdot16\cdot10\cdot6\cdot2=51840 .
 $$
 
 ::: pf-proof
@@ -421,26 +661,20 @@ This is Remark 4.10.1 of the book, printed pp. 404--405. By Proposition 4.10 eve
 mutually skew lines among the $27$ is the image of $E_1,\ldots,E_6$ under a unique automorphism of
 the configuration, and every automorphism sends skew lines to skew lines and so arises this way; from
 the incidence relations of the same remark the numbers of choices are $27$ for $E_1$, $16$ for $E_2$,
-$10$ for $E_3$, $6$ for $E_4$, $2$ for $E_5$ and $1$ for $E_6$, which the book multiplies out as
-$51{,}840$.
+$10$ for $E_3$, $6$ for $E_4$, $2$ for $E_5$ and $1$ for $E_6$, and the book multiplies out the first
+five as $27\cdot16\cdot10\cdot6\cdot2=51{,}840$, the sixth choice entering no factor.
 :::
 
 :::
 
 ::: {.pf-step #e6-isomorphic-g}
-$\Phi$ is a surjection of $\mathbf E_6$ onto $G$ and
-$$
-\cardinality{\mathbf E_6}\ge\cardinality{G}=51840 ,
-$$
-so $\mathbf E_6\cong G$ holds exactly when $\cardinality{\mathbf E_6}\le51840$.
+$\mathbf E_6\cong G$, which is part (c).
 
 ::: pf-proof
-Steps [](#e6-surjective){.pf-ref} and [](#group-order-g){.pf-ref} give the surjection and
-$\cardinality{G}=51840$. Since a surjection has source of order at least that of its image,
-$\cardinality{\mathbf E_6}\ge51840$, and this is the inequality steps
-[](#weyl-order){.pf-ref} and [](#sixers){.pf-ref} also give. The opposite inequality
-$\cardinality{\mathbf E_6}\le51840$ is what makes the two orders equal, and with it part (c)'s
-conclusion follows, a surjection between finite groups of equal order being an isomorphism.
+Steps [](#e6-surjective){.pf-ref} and [](#group-order-g){.pf-ref} give a surjection
+$\mathbf E_6\to G$ and $\cardinality{G}=51840$; step [](#weyl-faithful){.pf-ref} gives
+$\cardinality{\mathbf E_6}=51840$. A surjection between finite groups of equal order is an
+isomorphism.
 :::
 
 :::
@@ -448,9 +682,21 @@ conclusion follows, a surjection between finite groups of equal order being an i
 ::: pf-qed
 Steps [](#an-homomorphism){.pf-ref}, [](#an-cosets){.pf-ref} and [](#an-isomorphism){.pf-ref} are
 part (a); steps [](#e6-homomorphism){.pf-ref} and [](#e6-surjective){.pf-ref} are part (b); steps
-[](#weyl-order){.pf-ref}, [](#sixers){.pf-ref}, [](#group-order-g){.pf-ref} and
-[](#e6-isomorphic-g){.pf-ref} reduce part (c) to the inequality
-$\cardinality{\mathbf E_6}\le51840$.
+[](#weyl-faithful){.pf-ref}, [](#weyl-order){.pf-ref}, [](#sixers){.pf-ref},
+[](#group-order-g){.pf-ref} and [](#e6-isomorphic-g){.pf-ref} are part (c).
+
+For part (c) the inequality $\cardinality{\mathbf E_6}\le51840$ is proved and not assumed.
+Step [](#weyl-faithful){.pf-ref} disposes of it: the geometric representation of a Coxeter group
+is faithful, which is J. E. Humphreys, *Reflection Groups and Coxeter Groups*, Cambridge Studies in
+Advanced Mathematics 29 (1990), Corollary on printed p. 113 --- the last item of §5.4, stated there
+as "The representation $\sigma:W\to\operatorname{GL}(V)$ is faithful" and proved from Theorem 5.4, whose statement is the criterion on the sign of $w(\alpha_s)$ against the length of
+$ws$ --- so the group presented in part (c) injects into the reflection group of the $\mathbf E_6$
+root lattice, and its order is at most that of $W(\mathbf E_6)$. Steps
+[](#weyl-order){.pf-ref}, [](#sixers){.pf-ref} and [](#group-order-g){.pf-ref} evaluate that order
+as $51840$, from Dolgachev's Corollary 8.2.16, from the sixers of §9.1, and from Remark 4.10.1 respectively. Part (b) gives
+the surjection onto $G$, so part (c) concludes with
+$\cardinality{\mathbf E_6}=\cardinality{W(\mathbf E_6)}=51840=\cardinality{G}$, and $\mathbf E_6$ is
+the Weyl group.
 :::
 
 :::
@@ -469,10 +715,25 @@ Parts (b) and (c): Proposition 4.10 and Remark 4.10.1 of the book, printed pp. 4
 generation of $G$ and its order $51{,}840$.
 
 Part (c): I. V. Dolgachev, *Topics in Classical Algebraic Geometry* (September 27, 2010), Proposition
-8.2.15 and Corollary 8.2.16, printed pp. 261--262, for $\#W(\mathbf E_6)=2^3\cdot3^2\cdot6!$ from
-the count of exceptional vectors, and Theorem 9.1.2 and Proposition 9.1.3, printed pp. 320--321, for
+8.2.15 and Corollary 8.2.16, for $\#W(\mathbf E_6)=2^3\cdot3^2\cdot6!$ from
+the count of exceptional vectors, and Theorem 9.1.2 and Proposition 9.1.3, for
 the same order as $72\cdot6!$ from the sixers. Both are orders of the reflection group of the
 $\mathbf E_6$ lattice, which the presentation maps onto, so they give
-$\cardinality{\mathbf E_6}\ge51840$; the equality of the two orders is the injectivity of the
-geometric representation of a Coxeter group.
+$\cardinality{\mathbf E_6}\ge51840$; the reverse inequality is the faithfulness of the geometric
+representation of the Coxeter group $\mathbf E_6$: Humphreys, *Reflection Groups and Coxeter Groups*,
+§5.4, Theorem 5.4 with its Corollary, printed pp. 111--113. The identification of the image of that
+representation with $W(\mathbf E_6)$ is step [](#weyl-faithful){.pf-ref}'s comparison of the two
+normalisations, which neither source states.
+
+Parts (a), (b) and (c): Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.11, printed
+p. 111, covers the exercise in all three parts. Part (a) is the same partition into $n$ cosets of
+$\mathbf A_{n-1}$ as answer 247553's. Part (b) lists the same $27$ images of $\varphi(y)$ and checks
+$(\varphi(x_3)\varphi(y))^3=1$; its sentence that $(\varphi(x_i)\varphi(y))^2=1$ for every $i$ is the
+relation of $i\ne3$ and is false at $i=3$, where the printed diagram gives an exponent $3$, and its
+next sentence supplies the correct relation. Part (c) takes the chain
+$\langle x_1,x_2,x_3,x_4,y\rangle\supset\langle x_1,x_2,x_3,y\rangle$ with
+$\cardinality{\langle x_1,x_2,x_3,y\rangle}=5!=120$ and gives the two indices $16$ and $27$ as a
+computation, "by definition and calculate by Mathematica", rather than deriving them; they are the
+$16$ and $27$ of Dolgachev's Corollary 8.2.16. The card proves those two numbers by the geometric
+representation instead of transcribing that computation.
 :::

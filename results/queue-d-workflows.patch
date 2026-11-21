@@ -1,0 +1,13 @@
+diff --git a/.github/workflows/development.yml b/.github/workflows/development.yml
+index ad043ea8c1..6affe7bc14 100644
+--- a/.github/workflows/development.yml
++++ b/.github/workflows/development.yml
+@@ -105,6 +105,8 @@ jobs:
+ 
+             queues/C-unsolved-cards.md
+ 
++            queues/D-prose-only-solutions.md
++
+             corpus-reports-revision.txt'
+           if-no-files-found: error
+   run-records:

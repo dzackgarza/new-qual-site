@@ -16,7 +16,8 @@ not a test dependency -- and holds the property still.
 It measures two facts about that graph, with exact answers:
 
 * no gate recipe reaches a recipe that builds or renders the site, and
-* no gate recipe reaches a recipe that regenerates `queues/C-unsolved-cards.md`.
+* no gate recipe reaches a recipe that regenerates a generated queue
+  (`queues/C-unsolved-cards.md`, `queues/D-prose-only-solutions.md`).
 
 Both are facts about the `justfile`; neither says anything about the mathematics.
 
@@ -36,10 +37,15 @@ JUSTFILE = ROOT / "justfile"
 #: catalog, so it is a build consumer like the rest.
 BUILD_RECIPES = frozenset({"build", "site", "crawl", "preview", "query"})
 
-#: A recipe whose body writes the unsolved queue. `_no-bare-disposition` names
-#: `^queues/` in a grep pattern and commits nothing, so only these two spellings
-#: count: running the queue generator, and committing the queue file.
-QUEUE_WRITE_PATTERNS = ("unsolved_queue.py", "-- queues/C-unsolved-cards.md")
+#: A recipe whose body writes a generated queue. `_no-bare-disposition` names
+#: `^queues/` in a grep pattern and commits nothing, so only these spellings count:
+#: running a queue generator, and committing a queue file.
+QUEUE_WRITE_PATTERNS = (
+    "unsolved_queue.py",
+    "prose_queue.py",
+    "-- queues/C-unsolved-cards.md",
+    "-- queues/D-prose-only-solutions.md",
+)
 
 #: The recipes a push runs. `test-push` calls the two `*-push` recipes by name in its
 #: body rather than as declared dependencies, so all three are roots here.
@@ -108,7 +114,7 @@ def test_no_gate_recipe_reaches_a_site_build() -> None:
         print(f"{root}: {' -> '.join(names)}")
 
 
-def test_no_gate_recipe_regenerates_the_unsolved_queue() -> None:
+def test_no_gate_recipe_regenerates_a_generated_queue() -> None:
     dependencies, bodies = read_justfile()
     for root in GATE_ROOTS:
         for name in closure(dependencies, root):
@@ -119,8 +125,8 @@ def test_no_gate_recipe_regenerates_the_unsolved_queue() -> None:
             ]
             assert not writes, (
                 f"issue #100: {name}, reached from the push gate recipe {root}, regenerates "
-                f"queues/C-unsolved-cards.md: {writes}. A push that writes the queue refuses itself and the retry "
-                f"repeats the push's work; the queue is regenerated in CI by `_reports-ci`."
+                f"a generated queue: {writes}. A push that writes a queue refuses itself and the retry "
+                f"repeats the push's work; the queues are regenerated in CI by `_reports-ci`."
             )
 
 

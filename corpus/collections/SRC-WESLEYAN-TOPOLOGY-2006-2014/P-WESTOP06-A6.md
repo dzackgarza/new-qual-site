@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP06-A6
 kind: problem
 title: Maximal ideals and zero sets in rings of continuous functions
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Maximal Ideals, Rings of Continuous Functions]}
 relations: []
 review: draft
 audit:

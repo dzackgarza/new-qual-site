@@ -41,6 +41,24 @@ audit:
   date: 2026-11-07
   note: >-
     Statement matches Exercise 6 (p.205). All six answers recomputed from the dual complexes: torus H^0=G, H^1=G^2, H^2=G; RP^2 integral Z, 0, Z/2 and mod 2 all Z/2; Klein bottle integral Z, Z, Z/2 and mod 2 Z/2, Z/2^2, Z/2. Cross-checked each against Theorem 3.2 (p.195). Boundary formulas are now cited: Example 2.3 p.106 for the torus, Example 2.4 p.106 for RP^2, the figure on p.102 for the Klein bottle (which the book does not compute). Not covered: nothing about the higher-dimensional surfaces.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 6 of §3.1, printed p. 205, and recomputed all six answers from
+    the dualized $\Delta$-complexes, whose boundary formulas were checked on their printed pages:
+    Example 2.3 on printed p. 106 prints $\partial_2U=a+b-c=\partial_2L$ for the torus, Example 2.4
+    on the same page prints $\partial_2U=-a+b+c$ and $\partial_2L=a-b+c$ with $\partial a=\partial
+    b=w-v$, $\partial c=0$ for $\mathbb{RP}^2$, and the three squares of printed p. 102 give the
+    Klein bottle complex, which the book does not compute and whose orientations the card states.
+    Checked: torus $G,G^2,G$ from $\ker\delta^1=\{x+y=z\}$ and $\operatorname{im}\delta^1$ the
+    diagonal; $\mathbb{RP}^2$ integral $\ZZ,0,\ZZ_2$ with $\ker\delta^1=\ZZ(1,1,0)$ and the gcd of
+    the $2\times2$ minors of $\delta^1$ equal to $2$, and mod $2$ one-dimensional in each degree;
+    Klein bottle integral $\ZZ,\ZZ,\ZZ_2$ with $\ker\delta^1=\{(0,q,q)\}$ and the same minor
+    computation, and mod $2$ equal to $(\ZZ_2)^2$ in degree one. The Klein bottle's answer
+    $\ZZ\oplus\ZZ_2$ in degree one agrees with its homology, which is the check that the stated
+    orientations are a valid $\Delta$-complex structure. Not claimed: a published solution of this
+    exercise.
 ---
 
 ::: {.problem}
@@ -73,7 +91,7 @@ $$
 
 ::: pf-proof
 
-The $\Delta$-complex structure is the one obtained from a square as on Hatcher p.102, and Example 2.3 (p.106) prints $\partial_2 U = a+b-c = \partial_2 L$ for it. The displayed $\delta^1$ is its dual in the sense of p.191.
+The $\Delta$-complex structure is the one obtained from a square as on Hatcher p.102, and Example 2.3 prints $\partial_2 U = a+b-c = \partial_2 L$ for it. The displayed $\delta^1$ is its dual in the sense of p.191.
 
 :::
 
@@ -119,7 +137,7 @@ $$
 
 ::: pf-proof
 
-These are obtained by evaluating cochains on the boundaries of Example 2.4 (p.106), which prints $\partial_2 U = -a+b+c$, $\partial_2 L = a-b+c$ and $\operatorname{im}\partial_1 = \ZZ(w-v)$, so that $\partial a = \partial b = w-v$ and $\partial c = 0$ (the same example notes that $a-b$ and $c$ form a basis of $\ker\partial_1$).
+These are obtained by evaluating cochains on the boundaries of Example 2.4, which prints $\partial_2 U = -a+b+c$, $\partial_2 L = a-b+c$ and $\operatorname{im}\partial_1 = \ZZ(w-v)$, so that $\partial a = \partial b = w-v$ and $\partial c = 0$ (the same example notes that $a-b$ and $c$ form a basis of $\ker\partial_1$).
 
 :::
 
@@ -212,7 +230,7 @@ $$
 
 ::: pf-proof
 
-Modulo $2$, both components of $\delta^1$ are $p+q+r$, so $\delta^1$ has rank one. Since $\delta^0=0$, the kernel has dimension two and the cokernel dimension one. Every answer on this card agrees with Theorem 3.2 (p.195), which computes $H^n$ of a complex of free abelian groups from $\operatorname{Hom}(H_n,\ZZ)$ and $\operatorname{Ext}(H_{n-1},\ZZ)$: for $\RP^2$ one gets $H^1=0$ and $H^2=\Ext(\ZZ_2,\ZZ)=\ZZ_2$ with $\ZZ$ coefficients, $H^1=\Hom(\ZZ_2,\ZZ_2)=\ZZ_2$ and $H^2=\Ext(\ZZ_2,\ZZ_2)=\ZZ_2$ with $\ZZ_2$ coefficients, and likewise for the Klein bottle with $H_1=\ZZ\oplus\ZZ_2$.
+Modulo $2$, both components of $\delta^1$ are $p+q+r$, so $\delta^1$ has rank one. Since $\delta^0=0$, the kernel has dimension two and the cokernel dimension one. Every answer on this card agrees with Theorem 3.2, which computes $H^n$ of a complex of free abelian groups from $\operatorname{Hom}(H_n,\ZZ)$ and $\operatorname{Ext}(H_{n-1},\ZZ)$: for $\RP^2$ one gets $H^1=0$ and $H^2=\Ext(\ZZ_2,\ZZ)=\ZZ_2$ with $\ZZ$ coefficients, $H^1=\Hom(\ZZ_2,\ZZ_2)=\ZZ_2$ and $H^2=\Ext(\ZZ_2,\ZZ_2)=\ZZ_2$ with $\ZZ_2$ coefficients, and likewise for the Klein bottle with $H_1=\ZZ\oplus\ZZ_2$.
 
 :::
 

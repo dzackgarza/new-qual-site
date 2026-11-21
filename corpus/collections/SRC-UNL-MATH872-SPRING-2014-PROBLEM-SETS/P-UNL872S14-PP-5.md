@@ -5,7 +5,9 @@ kind: problem
 title: Simplicial homology of a finite connected graph in terms of its Euler characteristic
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Simplicial Homology
+  - Euler Characteristic
 relations: []
 review: draft
 audit:
@@ -87,6 +89,11 @@ $$
 has total coefficient sum $0$ in $C_0(Y)$.
 
 
+that is,
+$$
+\boxed{\operatorname{im}\partial_1\subseteq\ker\varepsilon}.
+$$
+
 ::: pf-proof
 
 Each generator boundary
@@ -123,25 +130,6 @@ $$
 ::: pf-proof
 
 This is a homomorphism of free abelian groups.
-
-:::
-
-:::
-
-::: {.pf-step #s1-5}
-
-One has
-$$
-\boxed{
-\operatorname{im}\partial_1
-\subseteq
-\ker\varepsilon}.
-$$
-
-
-::: pf-proof
-
-This is exactly step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -265,7 +253,7 @@ $$
 
 ::: pf-proof
 
-Step [](#s1-5){.pf-ref} gives one inclusion. Steps [](#s1-7){.pf-ref} and [](#s1-8){.pf-ref} show that every generator
+Step [](#s1-3){.pf-ref} gives one inclusion. Steps [](#s1-7){.pf-ref} and [](#s1-8){.pf-ref} show that every generator
 of $\ker\varepsilon$ lies in $\operatorname{im}\partial_1$.
 
 :::

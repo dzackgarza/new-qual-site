@@ -37,6 +37,8 @@ Explain how you would construct a sequence of quadratic extensions when $k = 1$ 
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem sheet alone, so the argument is the card's own.
+
 Here $k=1$ means
 $$
 p\equiv3\pmod4.

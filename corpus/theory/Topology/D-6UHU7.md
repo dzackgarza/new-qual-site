@@ -18,12 +18,12 @@ review: draft
 
 ::: {.definition}
 Let $X$ be a topological space, $A\subseteq X$ a subspace, and $\iota\colon A\injects X$ the inclusion.
-A \dfn{deformation retraction} of $X$ onto $A$ is a [[D-Z7I7F|homotopy]] $F\colon X\cross I\to X$, written $F_t \coloneqq F(\wait, t)$, such that for all $t\in I$:
+A \dfn{deformation retraction} of $X$ onto $A$ is a [[D-Z7I7F|homotopy]] $F\colon X\cross I\to X$, written $F_t \coloneqq F(-, t)$, such that for all $t\in I$:
 $$
 F_0 = \id_X, \qquad F_1(X) \subseteq A, \qquad F_t(a) = a \text{ for all } a\in A
 .$$
 A homotopy $F$ with $F_0 = \id_X$ alone is a \dfn{deformation} of $X$.
-The subspace $A$ is a \dfn{deformation retract} of $X$ if there exists a deformation retraction of $X$ onto $A$ [@Hat02].
+The subspace $A$ is a \dfn{deformation retract} of $X$ if there exists a deformation retraction of $X$ onto $A$ [@Hat02, Chapter 0].
 :::
 
 ::: {.remark}

@@ -5,7 +5,8 @@ kind: problem
 title: Riemann integrability of a bounded function versus its cube
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Riemann Integrability
 relations: []
 review: draft
 audit:

@@ -9,8 +9,6 @@ topics:
 
 # Fibres and images
 
-The theorems below bound the dimensions of fibres, give a criterion for flatness from fibre dimension, and describe the connectedness of fibres.
-
 ## Dimension
 
 [[T-MORFIBDIM]]

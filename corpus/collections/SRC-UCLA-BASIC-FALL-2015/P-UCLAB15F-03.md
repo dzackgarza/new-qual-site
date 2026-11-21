@@ -6,7 +6,9 @@ title: Continuity of the pointwise limit of an alternating monotone series
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Continuous Functions
 relations: []
 review: draft
 audit:

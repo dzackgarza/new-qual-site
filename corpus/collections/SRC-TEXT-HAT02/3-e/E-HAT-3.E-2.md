@@ -48,6 +48,45 @@ audit:
     $L_m(1,\dots,1)$ and of $k_j\equiv\ell_j^{-1}$ to get $\tau(L)=(\prod\ell_j)^{-1}\tau(L_0)$; the
     cancellation is legitimate because $\tau$ takes values in a group. Nothing is left uncited
     except the standard facts on lens spaces quoted from the section.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 2 of §3.E, printed p. 310, with the Bockstein of p. 303 and the
+    lens-space cohomology of Theorem 3.5. All four parts check out. (a) For a homotopy equivalence
+    $h\colon L\to L'$, naturality of the Bockstein gives $h^*x'=ax$, $h^*y'=ay$ with
+    $a\in\ZZ_m^*$, and $h^*z'=\varepsilon z$ with $\varepsilon=\pm1$ because $h$ has degree $\pm1$
+    on integral top cohomology; pulling back $x'(y')^{n-1}=t'z'$ gives $a^nt=\varepsilon t'$, so
+    $t$ and $t'$ differ by a sign and an $n$th power, exactly the ambiguity in
+    $\ZZ_m^*/\pm(\ZZ_m^*)^n$. The card also records why $\tau$ is independent of the generator $x$.
+    (b) The local-degree count is correct for the *angular* map $(r,\theta)\mapsto(r,k_j\theta)$,
+    whose derivative in the frame $(\partial_r,r^{-1}\partial_\theta)$ is $\operatorname{diag}(1,k_j)$,
+    giving local degree $\operatorname{sgn}(k_j)$ at each of $\abs{k_j}$ preimages and hence
+    $\deg\widetilde f=\prod_jk_j$; the card's warning that the holomorphic power is a different map
+    is right. Equivariance under $k_j\ell_j\equiv\ell_j'$ gives the quotient, the action on
+    $\pi_1=\ZZ_m$ is the identity, and $\deg f=\deg\widetilde f$ follows from
+    $m\deg\widetilde f=m\deg f$ in the covering square. (c) With $f^*x'=x$, $f^*y'=y$ one gets
+    $f^*z'=(\prod_jk_j)z$, hence $t=(\prod_jk_j)t'$. (d) Comparing both spaces with
+    $L_m(1,\dots,1)$ through $k_j\ell_j\equiv1$ cancels $\tau(L_0)$ and inverts to the stated
+    congruence. Also repaired in the rendered text: two raw bars $\abs{k_j}$ in the local-degree
+    paragraph, which STYLE-04 rejects and which no earlier pass had flagged because the card had
+    not been touched since the rule was added. Not claimed: the classification theorem itself
+    (Exercise 29 of §4.2), and nothing geometric beyond the arithmetic LensDegree.lean certifies.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology, Section 3.E, Exercise 2, printed p. 310 (pinned by the
+    running heads: PDF 319 carries 310 with the Exercises heading, PDF 320 carries 311 where Section
+    3.F begins). The card's statement is the printed one, parts (a) to (d) included.
+    Checked in this pass: part (a). The argument is right -- h*(y') = a y by naturality of the
+    Bockstein, h*(z') = eps z with eps = plus or minus one because a homotopy equivalence has degree
+    plus or minus one on integral top cohomology, and pulling back x'(y')^(n-1) = t'z' gives
+    a^n t = eps t', so [t'] = [t] in Z_m^* modulo the nth powers up to sign. The preliminary remark
+    that replacing x by ax multiplies t by a^n is also right.
+    NOT checked in this pass: parts (b), (c) and (d), which are the degree computation, the induced
+    quotient map and its effect on tau. No claim is made about them here.
+
 ---
 
 ::: {.problem}
@@ -132,7 +171,7 @@ For a regular value with every coordinate nonzero, the $j$th angular coordinate 
 $$
 \deg\widetilde f=k_1\cdots k_n.
 $$
-The bookkeeping deserves one clause, and it is about the *angular* extension $(r,\theta)\mapsto(r,k_j\theta)$, not about the holomorphic power $z\mapsto z^{k_j}$: in the oriented frame $(\partial_r,r^{-1}\partial_\theta)$ of the punctured plane the derivative is $\operatorname{diag}(1,k_j)$, with determinant $k_j$, so the $j$th coordinate map has local degree $\operatorname{sgn}(k_j)$ at each of its preimages, and there are $|k_j|$ of them, giving $|k_j|\operatorname{sgn}(k_j)=k_j$. The holomorphic power is a *different* map when $k_j<0$ — it also changes the radius, and its local degree is $+1$ everywhere, because $z\mapsto z^{k_j}$ is conformal on $\CC^\times$ — so it cannot be used here; only the product of the $n$ signs and the $n$ preimage counts gives $k_1\cdots k_n$. The determinant computation behind the sign, $\det\operatorname{diag}(1,k)=k$ together with $|k|\operatorname{sgn}(k)=k$, is certified in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/LensDegree.lean>.
+The bookkeeping deserves one clause, and it is about the *angular* extension $(r,\theta)\mapsto(r,k_j\theta)$, not about the holomorphic power $z\mapsto z^{k_j}$: in the oriented frame $(\partial_r,r^{-1}\partial_\theta)$ of the punctured plane the derivative is $\operatorname{diag}(1,k_j)$, with determinant $k_j$, so the $j$th coordinate map has local degree $\operatorname{sgn}(k_j)$ at each of its preimages, and there are $\abs{k_j}$ of them, giving $\abs{k_j}\operatorname{sgn}(k_j)=k_j$. The holomorphic power is a *different* map when $k_j<0$ — it also changes the radius, and its local degree is $+1$ everywhere, because $z\mapsto z^{k_j}$ is conformal on $\CC^\times$ — so it cannot be used here; only the product of the $n$ signs and the $n$ preimage counts gives $k_1\cdots k_n$. The determinant computation behind the sign, $\det\operatorname{diag}(1,k)=k$ together with $\abs{k}\operatorname{sgn}(k)=k$, is certified in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/LensDegree.lean>.
 
 Let the generator of the $\ZZ_m$ action defining $L$ multiply the $j$th coordinate by
 $$

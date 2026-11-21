@@ -24,6 +24,16 @@ audit:
   date: 2026-10-31
   note: >-
     Read the three properties: the zero homotopy, the negated homotopy for symmetry, and the sum of two homotopies for transitivity, each verified against the defining equation.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 12 of §2.1, printed p. 131. Correct: with the defining identity
+    $f_n-g_n=d_DP_n+P_{n-1}d_C$, the zero family is a homotopy from a map to itself, $-P$ reverses
+    one, and $P+Q$ composes two. Removed one thing only: a closing step that restated the
+    conclusion and was proved by naming the three steps above it, which STYLE-08 forbids; the three
+    substantive steps remain and the statement is unchanged. Not claimed: a published solution,
+    and no certificate.
 ---
 
 ::: {.problem}
@@ -78,18 +88,6 @@ $$
 f_n-h_n=d_D(P_n+Q_n)+(P_{n-1}+Q_{n-1})d_C.
 $$
 Thus $P+Q$ is a chain homotopy from $f$ to $h$.
-
-:::
-
-:::
-
-::: pf-step
-
-Hence chain homotopy is an equivalence relation on the chain maps $C_*\to D_*$.
-
-::: pf-proof
-
-This follows from steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref}.
 
 :::
 

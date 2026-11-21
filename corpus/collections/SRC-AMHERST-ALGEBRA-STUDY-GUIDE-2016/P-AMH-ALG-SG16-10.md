@@ -6,7 +6,9 @@ title: Cosets of the preimage of a subgroup under a homomorphism
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Homomorphisms
+  - Cosets and Lagrange
 relations: []
 review: draft
 audit:

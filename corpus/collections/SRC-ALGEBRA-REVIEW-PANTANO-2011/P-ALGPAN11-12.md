@@ -6,7 +6,9 @@ title: Which listed subsets of the reals are subrings
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Subrings
+  - Rings
 relations: []
 review: draft
 audit:

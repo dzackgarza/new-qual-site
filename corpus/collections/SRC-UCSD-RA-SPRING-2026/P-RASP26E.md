@@ -28,52 +28,48 @@ Construct a meager (i.e. first category) subset $E$ of $\RR$ that is conull in $
 :::
 
 ::: {.solution}
-Enumerate the rationals as
+
+The construction is the card's own, a countable intersection of dense open sets of small measure; no retained set solves this exercise, and the sets searched are recorded in the audit trail.
+
+Enumerate the rationals as $\QQ=\{q_{1},q_{2},\ldots\}$ and for $n\ge1$ put
 $$
-\QQ=\{q_1,q_2,\ldots\}.
-$$
-For each $n\ge1$, define
-$$
-U_n:=\bigcup_{k=1}^\infty
-\left(q_k-2^{-n-k-2},\ q_k+2^{-n-k-2}\right).
+U_{n}=\bigcup_{k=1}^{\infty}\big(q_{k}-2^{-n-k-2},\,q_{k}+2^{-n-k-2}\big).
 $$
 
-Each $U_n$ is open and dense because it contains every rational number. Also
-$$
-m(U_n)
-\le\sum_{k=1}^\infty 2^{-n-k-1}
-=2^{-n-1}.
-$$
+::: pf
 
-Set
-$$
-N:=\bigcap_{n=1}^\infty U_n.
-$$
-Since every $U_n$ is open and dense, the Baire Category Theorem implies that $N$ is dense. Moreover,
-$$
-m(N)\le m(U_n)\le2^{-n-1}
-$$
-for every $n$, hence
-$$
-m(N)=0.
-$$
+::: {.pf-step #measure}
+Each $U_{n}$ is open and dense, and $m(U_{n})\le2^{-n-1}$.
 
-Now put
+::: pf-proof
+$U_{n}$ is a union of open intervals, hence open; it contains every rational, hence is dense in $\RR$. The $k$-th interval has length $2\cdot2^{-n-k-2}=2^{-n-k-1}$, so by countable subadditivity of Lebesgue measure
 $$
-E:=\RR\setminus N.
+m(U_{n})\le\sum_{k=1}^{\infty}2^{-n-k-1}=2^{-n-1}\sum_{k=1}^{\infty}2^{-k}=2^{-n-1}.
 $$
-Then
-$$
-m(\RR\setminus E)=m(N)=0,
-$$
-so $E$ is conull.
+:::
 
-On the other hand,
+:::
+
+::: {.pf-step #null-dense}
+$N=\bigcap_{n}U_{n}$ is dense and $m(N)=0$.
+
+::: pf-proof
+$\RR$ is a complete metric space and each $U_{n}$ is open and dense, so the Baire category theorem gives that $N$ is dense. For every $n$ one has $N\subset U_{n}$, hence $m(N)\le m(U_{n})\le2^{-n-1}$ by step [](#measure){.pf-ref}; letting $n\to\infty$ gives $m(N)=0$.
+:::
+
+:::
+
+::: {.pf-step #meager}
+$E=\RR\setminus N$ is meager and conull.
+
+::: pf-proof
+$E=\bigcup_{n}(\RR\setminus U_{n})$. Each $\RR\setminus U_{n}$ is closed, and it has empty interior because $U_{n}$ is dense; so each is nowhere dense, and $E$ is a countable union of nowhere dense sets, that is meager. And $m(\RR\setminus E)=m(N)=0$ by step [](#null-dense){.pf-ref}, so $E$ is conull. Hence
 $$
-E=\bigcup_{n=1}^\infty(\RR\setminus U_n).
+\boxed{E=\RR\setminus\bigcap_{n}U_{n}\ \text{is meager and conull}.}
 $$
-Each $\RR\setminus U_n$ is closed and has empty interior because $U_n$ is dense. Hence each is nowhere dense. Therefore $E$ is a countable union of nowhere dense sets, i.e.
-$$
-\boxed{E\text{ is meager and conull}.}
-$$
+:::
+
+:::
+
+:::
 :::

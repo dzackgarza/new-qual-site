@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB13F-02
 kind: problem
 title: Discontinuity sets of monotone functions
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Monotone Functions, Continuity]}
 relations: []
 review: draft
 audit:

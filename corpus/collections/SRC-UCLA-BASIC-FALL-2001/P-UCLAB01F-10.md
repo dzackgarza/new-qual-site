@@ -5,7 +5,9 @@ kind: problem
 title: Eigenvectors for distinct eigenvalues are linearly independent
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Eigenvalues and Eigenvectors
+  - Linear Independence
 relations: []
 review: draft
 audit:

@@ -28,6 +28,14 @@ audit:
   date: 2026-10-31
   note: >-
     Read the functoriality argument: $r_*i_*=(ri)_*=\mathrm{id}$, so $i_*$ has a left inverse and is injective.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 11 of §2.1, printed p. 131. Correct and complete: from a
+    retraction $r\circ i=\mathrm{id}_A$ functoriality gives $r_*i_*=(ri)_*=\mathrm{id}_{H_n(A)}$, so
+    $i_*$ has a left inverse; if $i_*(x)=0$ then $x=r_*i_*(x)=0$, hence $i_*$ is injective. Nothing
+    changed. Not claimed: a published solution, and no certificate.
 ---
 
 ::: {.problem}

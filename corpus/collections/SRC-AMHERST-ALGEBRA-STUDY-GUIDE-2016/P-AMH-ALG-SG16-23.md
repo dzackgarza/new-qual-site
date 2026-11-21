@@ -6,7 +6,9 @@ title: The kernel of a ring homomorphism restricted to an ideal is an ideal
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Ideals
+  - Ring Homomorphisms
 relations: []
 review: draft
 audit:

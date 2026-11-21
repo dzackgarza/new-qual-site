@@ -83,6 +83,57 @@ audit:
     What the certificate does not cover: the passage from the chain model to the homology
     of the space (Δ^n)^k, which is the card's citation of Theorem 2.27 p. 128 and stays a
     citation.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-17
+  note: >-
+    The certificate is published on lean-categories main, where the Lean declarations live, and
+    the card links it there:
+    <https://github.com/dzackgarza/lean-categories/blob/5848f0f2f881ba032eb8bb69baa051300498ba6b/LeanCategories/Homological/DeltaSimplexChains.lean>.
+    That file proves the card's own Δ-complex chain model and its boxed claim: `finrank_chains`
+    (rank C_i = C(n+1,i+1)); `aug_comp_boundary`, `boundary_comp_boundary` (the augmented complex
+    is a complex); the cone contraction `homotopy_succ`, `homotopy_zero`, `aug_h_minus` with
+    `exact_zero`, `exact_succ`, `cycles_aug_eq_boundaries` (the augmented complex is exact); the
+    rank induction `finrank_boundaries`, `finrank_cycles_aug` (rank Z_i = rank B_i = C(n,i+1));
+    and the skeleton section `skCycles_eq`, `skBoundaries_eq`, `sk_cycles_aug_eq_sk_boundaries`,
+    `subsingleton_sk_homology` (H̃_i((Δ^n)^k) = 0 for i < k) and `sk_homology_top_basis`
+    (H̃_k((Δ^n)^k) free of rank C(n,k+1)). At that commit the declarations carry exactly those
+    statements, and no `sorry` occurs in the file. The same homological statements in Mathlib's
+    alternating-face-map model are `LeanCategories/Homological/SimplexChains.lean`
+    (`isZero_homology`, `homologyZeroIso`, and `isZero_normalizedHomology` in the normalized
+    Moore model), `LeanCategories/Homological/ChainLevelSteps.lean` (`choose_rank_step`,
+    `ker_ne_top_of_surjective_to_int`, `skChains_exact`) and
+    `LeanCategories/Homological/SkeletonHomology.lean` (`isZero_skHomology`), at the same commit,
+    whose four modules elaborate at the Mathlib master head
+    `6d97e8ad9c32c778e7000ffda543a29488155467`, the pin that commit moves, with exit 0, and
+    `#print axioms` on `finrank_chains`, `boundary_comp_boundary`, `exact_succ`,
+    `finrank_boundaries`, `subsingleton_sk_homology`, `sk_homology_top_basis`, `isZero_skHomology`
+    and `isZero_homology` prints propext, Classical.choice and Quot.sound, with `choose_rank_step`
+    printing propext. Not covered, and not claimed: nothing was re-elaborated for this event, and
+    the passage from the chain model to the homology of the space (Δ^n)^k stays the card's
+    citation of Theorem 2.27 p. 128. The 2026-11-11 event above links
+    `proofs/cards/DeltaSimplexChains.lean` at `16c09abaa4`, where the file was before
+    lean-categories#141 moved this repository's Lean declarations out of `proofs/`; it is kept as
+    the record of that commit, not as the certificate's location.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The barycentric chain claim is certified without routing through `SSet.B`, in
+    `LeanCategories/Homological/BarycentricChains.lean` on `lean-categories` main at
+    <https://github.com/dzackgarza/lean-categories/blob/f345a8b266e4275d951ab1510cdd6de5b072da6b/LeanCategories/Homological/BarycentricChains.lean>:
+    `bchains` with its `boundary` is the chain group on the `(i+1)`-element vertex subsets,
+    `aug_comp_boundary` and `boundary_comp_boundary` make the augmented complex a complex,
+    `homotopy_succ`, `homotopy_zero` and `aug_h_minus` give the cone contraction, `exact_zero`
+    and `exact_succ` its exactness, and `exists_faceFlag_top` states that the card's chains are
+    the barycentric ones. The file's own module note gives the argument for why no
+    subdivision functor is needed: `SSet.stdSimplex.sdIso` identifies the subdivision of `Δ^n`
+    with `SimplexCategory.sd.obj ⦋n⦌`, the nerve of the poset of nonempty vertex subsets, which
+    is the poset of nondegenerate simplices of `Δ^n`. No `sorry` occurs in the file; the turn
+    that produced it reports `#print axioms` exactly `propext`, `Classical.choice`, `Quot.sound`
+    for those declarations at that commit. Not claimed here: the passage from the chain model to
+    the homology of `(Δ^n)^k`, which stays this card's citation of Theorem 2.27 p. 128.
+
 ---
 
 ::: {.problem}
@@ -114,7 +165,7 @@ Here $\binom{n}{n+1}=0$.
 
 ::: pf-proof
 
-The simplex is contractible, so its reduced singular homology vanishes: $H_n(\Delta^n)=0$ for $n>0$ and $\widetilde H_0(\Delta^n)=0$, by Proposition 2.8 (p. 110) for the one-point space together with Corollary 2.11 (p. 111), homotopy invariance. The simplicial chain complex computes the singular homology by Theorem 2.27 (p. 128), so the reduced simplicial chain complex is exact. Thus
+The simplex is contractible, so its reduced singular homology vanishes: $H_n(\Delta^n)=0$ for $n>0$ and $\widetilde H_0(\Delta^n)=0$, by Proposition 2.8 for the one-point space together with Corollary 2.11, homotopy invariance. The simplicial chain complex computes the singular homology by Theorem 2.27, so the reduced simplicial chain complex is exact. Thus
 $$
 Z_i=B_i
 $$
@@ -132,7 +183,7 @@ Starting with
 $$
 \operatorname{rank}B_{-1}=1
 $$
-in the augmented complex, where $\partial_0=\varepsilon:C_0\to\ZZ$ is the augmentation of p. 110 and $B_{-1}=\operatorname{im}\varepsilon=\ZZ$, and using Pascal's identity gives inductively
+in the augmented complex, where $\partial_0=\varepsilon:C_0\to\ZZ$ is the augmentation defined in §2.2 and $B_{-1}=\operatorname{im}\varepsilon=\ZZ$, and using Pascal's identity gives inductively
 $$
 \operatorname{rank}Z_i
 =

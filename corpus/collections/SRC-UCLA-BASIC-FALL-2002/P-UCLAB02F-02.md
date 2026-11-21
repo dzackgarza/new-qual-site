@@ -5,7 +5,9 @@ kind: problem
 title: Least-upper-bound completeness implies Cauchy completeness of $\RR$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Completeness of the Reals
+  - Real Numbers
 relations: []
 review: draft
 audit:

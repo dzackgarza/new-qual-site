@@ -5,7 +5,8 @@ kind: problem
 title: 'Define a primitive of a complex-valued function'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Primitives
 relations: []
 review: draft
 audit:

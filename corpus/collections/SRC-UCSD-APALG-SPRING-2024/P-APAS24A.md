@@ -11,6 +11,19 @@ classification:
   - Inner Product Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 1 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p.
+    1 of the paper's own numbered pages, is the statement the card answers, and the head of the solution
+    names it; the file retained at assets/attachments/SP24_math_202_exam.pdf puts a cover page before
+    those pages, so paper p. 1 is its page 2. Checked: the statement against the paper's text layer at
+    the page named; the orthogonality from invariance: $x\perp S$ with $AS\subseteq S$ gives $\langle
+    Ax,y\rangle=0$ for all $y\in S$; `qualc.authoring check` on the card, and `tmp/lam.sh` for the
+    numbering and the QED. Not checked: no retained solution set exists for this paper to compare the
+    argument with, and no other card of the collection in this pass.
 ---
 
 ::: {.problem}
@@ -25,25 +38,37 @@ Note: $A^H=\overline{A^T}$.
 :::
 
 ::: {.solution}
-Let $S=(\operatorname{span}\{x\})^\perp$. For every $s\in S$, the invariance hypothesis gives $As\in S$. Hence
-$$
-\langle As,x\rangle=0.
-$$
-Using the adjoint,
-$$
-\langle s,A^Hx\rangle=\langle As,x\rangle=0
-$$
-for every $s\in S$. Therefore $A^Hx$ is orthogonal to $S$, i.e.
-$$
-A^Hx\in S^\perp.
-$$
-Since
-$$
-S^\perp=\operatorname{span}\{x\},
-$$
-there is a scalar $\lambda\in\CC$ such that
-$$
-A^Hx=\lambda x.
-$$
-Because $x\ne0$, this shows that $x$ is an eigenvector of $A^H$.
+
+The problem is Problem 1 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p. 1 of the paper's numbered pages — the retained file `assets/attachments/SP24_math_202_exam.pdf` puts a cover page before them.
+
+No retained solution set covers this exercise: the card's own argument follows, with the orthogonality from invariance and the identification of $S^{\perp}$ as separate steps.
+
+Let $A\in M_{n}(\CC)$, $x\ne0$, and $S=(\operatorname{span}\theset{x})^{\perp}$ with $AS\subseteq S$; the inner product is the standard one, linear in the first slot.
+
+::: pf
+
+::: {.pf-step #orthogonal}
+$\langle s,A^{H}x\rangle=0$ for every $s\in S$.
+
+::: pf-proof
+For $s\in S$ the invariance hypothesis gives $As\in S$, and $S$ is the orthogonal complement of $\operatorname{span}\theset{x}$, so $\langle As,x\rangle=0$. By the defining property of the adjoint, $\langle s,A^{H}x\rangle=\langle As,x\rangle$, which is $0$.
+:::
+
+:::
+
+::: {.pf-step #perp}
+$S^{\perp}=\operatorname{span}\theset{x}$.
+
+::: pf-proof
+In finite dimensions $(\operatorname{span}\theset{x})^{\perp\perp}=\operatorname{span}\theset{x}$, since $\operatorname{span}\theset{x}$ is a finite-dimensional, hence closed, subspace.
+:::
+
+:::
+
+::: {.pf-qed}
+Step [](#orthogonal){.pf-ref} says $A^{H}x\in S^{\perp}$, so $A^{H}x\in\operatorname{span}\theset{x}$ by step [](#perp){.pf-ref}: there is $\lambda\in\CC$ with $A^{H}x=\lambda x$. Since $x\ne0$, this says $x$ is an eigenvector of $A^{H}$.
+:::
+
+:::
+
 :::

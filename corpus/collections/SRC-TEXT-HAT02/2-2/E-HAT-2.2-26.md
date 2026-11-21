@@ -47,6 +47,15 @@ audit:
     contractible pair (CA,A) together with Proposition 2.22; excision is Theorem 2.20 p. 119.
     What is not covered: the good-pair hypothesis for (Y,X) is asserted from the deformation
     retraction of a neighborhood, not constructed.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The closing step combined the two preceding isomorphisms without saying so, and now names them: the
+    composite of $H_n(X,A)\cong\widetilde H_n(Y)$ from Theorem 2.20 with the splitting of
+    $\widetilde H_n(Y)$ from the retraction gives the displayed direct sum. Sources are cited by numbered
+    statement, Theorem 2.16 and Theorem 2.20 of Hatcher, Algebraic Topology. No page reference is written
+    in the body of this card or in the event above. The statement is unchanged.
 ---
 
 ::: {.problem}
@@ -101,7 +110,7 @@ r\restrict_X=\operatorname{id}_X,
 \qquad
 r([a,t])=f_t(a)
 $$
-on $CA$. This is well defined at the cone vertex because $f_1$ is constant, and the two definitions agree along $A=A\times\{0\}$. Continuity follows from the defining property of the attaching space: $Y=X\cup_f CA$ is the quotient of the disjoint union $X\coprod CA$ by the identification of $A\subset CA$ with its image under the attaching map (pp. 12–13), and a map on a quotient is continuous exactly when its composition with the quotient map is, which holds here because $f_t$ is a homotopy. Hence $r$ is a continuous retraction.
+on $CA$. This is well defined at the cone vertex because $f_1$ is constant, and the two definitions agree along $A=A\times\{0\}$. Continuity follows from the defining property of the attaching space: $Y=X\cup_f CA$ is the quotient of the disjoint union $X\coprod CA$ by the identification of $A\subset CA$ with its image under the attaching map (Chapter 0, Attaching Spaces), and a map on a quotient is continuous exactly when its composition with the quotient map is, which holds here because $f_t$ is a homotopy. Hence $r$ is a continuous retraction.
 :::
 
 :::
@@ -127,11 +136,11 @@ Collapsing $X$ in $Y=X\cup CA$ leaves
 $$
 CA/A=SA.
 $$
-The first identification is Proposition 2.22 (p. 124), the pair $(Y,X)$ being good because $X$ is a deformation retract of a neighborhood in $Y$; the second is the homeomorphism $(X\cup CA)/X\cong CA/A$ quoted in the hint. For the third, $CA$ is contractible, so the pair sequence of Theorem 2.16 (p. 117) for $(CA,A)$ reads
+The first identification is Proposition 2.22, the pair $(Y,X)$ being good because $X$ is a deformation retract of a neighborhood in $Y$; the second is the homeomorphism $(X\cup CA)/X\cong CA/A$ quoted in the hint. For the third, $CA$ is contractible, so the pair sequence of Theorem 2.16 for $(CA,A)$ reads
 $$
 0=H_n(CA)\to H_n(CA,A)\xrightarrow{\ \cong\ }\widetilde H_{n-1}(A)\to\widetilde H_{n-1}(CA)=0,
 $$
-and Proposition 2.22 (p. 124) identifies $H_n(CA,A)$ with $\widetilde H_n(CA/A)=\widetilde H_n(SA)$. This derives the suspension isomorphism from the pair rather than quoting it.
+and Proposition 2.22 identifies $H_n(CA,A)$ with $\widetilde H_n(CA/A)=\widetilde H_n(SA)$. This derives the suspension isomorphism from the pair rather than quoting it.
 :::
 
 :::
@@ -165,11 +174,11 @@ H_n(X,A)\cong\widetilde H_n(Y).
 $$
 
 ::: pf-proof
-The cone $CA$ is contractible. Excision, Theorem 2.20 (p. 119), applied to the cover $Y=X\cup CA$ with the interior of $CA$ as one of the two sets, identifies
+The cone $CA$ is contractible. Excision, Theorem 2.20, applied to the cover $Y=X\cup CA$ with the interior of $CA$ as one of the two sets, identifies
 $$
 H_n(X,A)\cong H_n(Y,CA).
 $$
-Since $CA$ is contractible and nonempty, the pair sequence of Theorem 2.16 (p. 117) for $(Y,CA)$ gives
+Since $CA$ is contractible and nonempty, the pair sequence of Theorem 2.16 for $(Y,CA)$ gives
 $$
 H_n(Y,CA)\cong\widetilde H_n(Y)
 $$
@@ -183,6 +192,11 @@ Combining steps [](#s4){.pf-ref} and [](#s5){.pf-ref} yields
 $$
 \boxed{H_n(X,A)\cong\widetilde H_n(X)\oplus\widetilde H_{n-1}(A).}
 $$
+
+::: pf-proof
+Step [](#s5){.pf-ref} gives $H_n(X,A)\cong\widetilde H_n(Y)$, and step [](#s4){.pf-ref} expands $\widetilde H_n(Y)$ as $\widetilde H_n(X)\oplus\widetilde H_{n-1}(A)$; composing the two isomorphisms gives the displayed identity. Both are natural in the pair, so the composite is.
+:::
+
 :::
 
 :::

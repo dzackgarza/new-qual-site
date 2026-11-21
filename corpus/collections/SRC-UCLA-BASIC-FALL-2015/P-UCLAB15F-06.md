@@ -6,7 +6,9 @@ title: A complete metric compatible with the punctured-line topology
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Completeness
+  - Metric Spaces
 relations: []
 review: draft
 audit:

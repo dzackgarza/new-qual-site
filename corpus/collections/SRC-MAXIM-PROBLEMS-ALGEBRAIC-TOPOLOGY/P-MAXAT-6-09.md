@@ -134,8 +134,10 @@ Since $[N]=\partial[W,N]$, the Kronecker pairing with a restricted absolute coho
 
 ::: {.pf-step #s1-5}
 
-Therefore $\CP^{2n}$ cannot be an oriented boundary.
-
+Therefore
+$$
+\boxed{\CP^{2n}\text{ is not an oriented boundary}.}
+$$
 
 ::: pf-proof
 
@@ -149,25 +151,9 @@ Step [](#s1-3){.pf-ref} computes the same integer as the nonzero value $\binom{2
 
 :::
 
-::: {.pf-step #s1-6}
-
-Thus
-$$
-\boxed{\CP^{2n}\text{ is not an oriented boundary}.}
-$$
-
-
-::: pf-proof
-
-This is the conclusion of step [](#s1-5){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-6){.pf-ref} proves the required oriented non-bordism statement.
+Step [](#s1-5){.pf-ref} proves the required oriented non-bordism statement.
 
 :::
 

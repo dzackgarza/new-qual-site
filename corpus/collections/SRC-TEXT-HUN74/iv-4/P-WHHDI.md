@@ -41,7 +41,6 @@ audit:
     composites send a ∈ A to the functional g ↦ g(f(a)) on B*, so the square
     commutes. Complete; no defect.
 ---
----
 
 ::: {.problem}
 Show that for any homomorphism $f: A \to B$ of left $R$-modules the following diagram is commutative:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP10-II3
 kind: problem
 title: Homology of thickened-knot and slice-disk complements
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Knots, Homology]}
 relations: []
 review: draft
 audit:

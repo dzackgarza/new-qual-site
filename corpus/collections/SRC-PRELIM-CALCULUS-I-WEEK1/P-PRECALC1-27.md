@@ -176,6 +176,11 @@ I_n\to0}.
 $$
 
 
+Equivalently,
+$$
+\boxed{\lim_{n\to\infty}\int_1^n\frac{dx}{x^n}=0}.
+$$
+
 ::: pf-proof
 
 Apply the squeeze theorem to step [](#s1-6){.pf-ref}.
@@ -184,29 +189,9 @@ Apply the squeeze theorem to step [](#s1-6){.pf-ref}.
 
 :::
 
-::: {.pf-step #s1-8}
-
-Therefore
-$$
-\boxed{
-\lim_{n\to\infty}
-\int_1^n\frac{dx}{x^n}
-=
-0}.
-$$
-
-
-::: pf-proof
-
-This is step [](#s1-7){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-8){.pf-ref} is the requested limit.
+Step [](#s1-7){.pf-ref} is the requested limit.
 
 :::
 

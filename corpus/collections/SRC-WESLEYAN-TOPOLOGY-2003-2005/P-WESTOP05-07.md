@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP05-07
 kind: problem
 title: Fundamental group, first homology, and classification of an octagon quotient
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Fundamental Group, Classification of Surfaces]}
 relations: []
 review: draft
 audit:

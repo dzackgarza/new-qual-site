@@ -6,7 +6,10 @@ title: Compactness, completeness, connectedness, and total boundedness
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Compactness
+  - Completeness
+  - Connectedness
 relations: []
 review: draft
 audit:

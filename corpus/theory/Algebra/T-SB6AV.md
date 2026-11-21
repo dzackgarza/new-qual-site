@@ -17,7 +17,7 @@ review: draft
 
 ::: {.theorem}
 Let $G$ be a group with subgroups $N \normal G$ and $H\leq G$ such that $G = NH$ and $N\intersect H=\theset{e}$.
-Let $\psi\colon H \to \Aut(N)$ be the conjugation action, $\psi(h)=h(\wait)h^{-1}$.
+Let $\psi\colon H \to \Aut(N)$ be the conjugation action, $\psi(h)=h(-)h^{-1}$.
 Then $G \cong N \semidirect_\psi H$.
 :::
 

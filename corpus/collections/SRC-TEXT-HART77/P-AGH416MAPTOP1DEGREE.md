@@ -23,6 +23,27 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.1.6, printed p. 84,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.1.6, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    l(gP) >= 1 and l((g+1)P) >= 2 by Riemann-Roch, the elliptic case
+    l(P) = 1, and the degree bound the exercise asks for. Not checked: Yang's Solutions outside printed pp. 84-85; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.1.6 at printed
+    p. 84 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -140,5 +161,7 @@ Step [](#s3){.pf-ref} gives the required finite morphism.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.6, printed p. 207, text version `tmp/sources/hartshorne-solutions-egbert.md`, produces the finite morphism to $\PP^1$ from the linear system $\linearsystem{K}$; the degree count and finiteness use (II, 6.8).
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.6, text version `tmp/sources/hartshorne-solutions-egbert.md`, produces the finite morphism to $\PP^1$ from the linear system $\linearsystem{K}$; the degree count and finiteness use (II, 6.8).
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.1.6, takes the divisor $gP$ and applies Riemann--Roch. Two things in it need care. With $D=gP$ the bound is only $\ell(D)\ge\deg D+1-g=1$, which does not produce a nonconstant function: for $g=1$ one has $\ell(P)=1+\ell(K-P)=1$, so the only sections are constants, and a degree-one map would make $X$ rational. With $D=(g+1)P$ instead, $\ell(D)\ge(g+1)+1-g=2$, so there is a nonconstant $f$ whose only pole is at $P$, of order at most $g+1$, and the morphism $X\to\PP^1$ it defines has degree at most $g+1$ — the exercise's bound. The entry's closing "$\deg f=\deg D=g$" therefore states an equality where only the inequality holds, and its divisor is one short.
 :::

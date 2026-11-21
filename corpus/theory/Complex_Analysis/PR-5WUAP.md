@@ -16,4 +16,6 @@ review: draft
 
 ::: {.proposition}
 For $p\in\RR$, the series $\sum_{n\ge1} n^{-p}$ converges if and only if $p>1$.
+
+This is [@Rud76, ch. 3, Theorem 3.28].
 :::

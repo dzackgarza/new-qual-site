@@ -40,6 +40,34 @@ audit:
     two generators, so the stated finite 16-point base locus forces the
     thirteen prescribed points to impose 13 independent conditions. Also
     checked the line/conic/cubic fixed-component failure examples by Bézout.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A third retained solution read at this exercise. Read Yang Pi-Yeh,
+    Hartshorne Solutions (9 June 2019), Solution 5.4.6, printed p. 109,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.4.6, printed p. 407, asks for
+    the three additional determined points through which every quartic through
+    thirteen given points passes, and for the hypotheses on the thirteen. The
+    entry's fifteen monomials x^4, y^4, z^4, x^3y, xy^3, y^3z, yz^3, z^3x,
+    zx^3, x^2y^2, y^2z^2, z^2x^2, x^2yz, y^2zx, z^2xy are a basis of the
+    degree-four forms in three variables, so h^0 = 15 and rank 13 gives
+    h^0 = 2; the Bezout count 4*4 = 16 and the pencil argument that a third
+    member is a linear combination of two are both as stated. Not checked:
+    Yang's Solutions outside printed pp. 109-111, the printed book itself, and
+    whether his rank condition is equivalent to the geometric hypotheses the
+    card states.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.4.6 at printed p. 109 as the
+    rank-13 case of the card's argument, with what it does not do: it states no
+    geometric hypothesis on the thirteen points and counts the sixteen
+    intersection points without multiplicities. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -316,4 +344,6 @@ failure modes excluded by them.
 
 ::: {.remark title="Published solution"}
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, V.4.6, printed p. 288 (the base locus of the quartic system).
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.6, states the hypothesis in linear-algebra form: the fifteen degree-four monomials evaluated at $P_i$ give the vector $v_i$, and if the matrix $(v_1,\ldots,v_{13})$ has rank $13$ then the quartics through the thirteen points have $h^0=15-13=2$, a pencil. Two of its members meet in $16=4\cdot4$ points by Bézout, the thirteen prescribed ones and three further points $P_{14},P_{15},P_{16}$, and every third member is a linear combination $\lambda C+\mu C'$ of those two, hence passes through the three. That is the rank-$13$ case of steps [](#quartic-space-dimension-15){.pf-ref} to [](#residual-points-intrinsic){.pf-ref}. The entry does not say which geometric hypotheses on the points make the rank $13$ — the exercise's second question, which is steps [](#hypotheses-hold-generally){.pf-ref}, [](#hypotheses-necessary){.pf-ref} and [](#failure-examples){.pf-ref} here — and it counts the sixteen intersection points without multiplicities, which step [](#base-scheme-length-16){.pf-ref} carries.
 :::

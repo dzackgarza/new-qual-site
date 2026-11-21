@@ -51,6 +51,25 @@ audit:
   date: 2026-11-11
   note: >-
     Step-by-step check against the printed pages, and the repair. Corrected: the proof cited "Theorem 84.1" for the statement that the projection onto the quotient by a contractible subcomplex is a homotopy equivalence, which is false, and it used CW pairs and homology, neither of which the book develops in these chapters. The invariance is now proved from the book's own results: Theorem 84.4 (printed p. 509) and Theorem 84.7 (printed p. 511) give that the fundamental group of a connected finite graph with V vertices and E edges is free of rank E - V + 1, Corollary 52.5 (printed p. 334) gives that a homeomorphism induces an isomorphism of fundamental groups, and Corollary 69.5 (printed p. 423), with Theorem 67.8 (printed p. 411) behind it, gives that any system of free generators of a finitely generated free group has as many elements as any other. So the rank, hence 1 - chi, is an invariant of the space. Corrected: the disconnected case summed "the ranks of the components" as if the rank of a free group on several components were defined; it now sums the Euler numbers of the components, which add because vertices and edges do, and uses that a homeomorphism carries components to components. Corrected: the structure was not a Lamport proof -- steps had claims without proofs and a "Q.E.D." was typed. What the certificate does not cover: subdivision invariance of V - E is used only through Theorem 84.7's count, so no separate argument about subdivisions is needed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The printed exercise, section 85 Exercise 1 with its hint to treat the
+    connected case first, is on printed p. 515, and the card proves it. All
+    steps are correct. For connected X, a maximal tree has all V vertices and
+    V - 1 edges, and Lemma 85.2 gives free generators of the fundamental group
+    of cardinality 1 - chi(X) = E - V + 1; the tree case is covered, and the
+    citation is the lemma rather than Theorem 84.7, which excludes trees, as the
+    earlier correction records. The rank of a free group on finitely many
+    generators is intrinsic by Corollary 69.5 through the abelianization and
+    Theorem 67.8. A homeomorphism induces an isomorphism of fundamental groups
+    by Corollary 52.5, and a homeomorphic image of a connected space is
+    connected, which closes the connected case. For the general case, each
+    component of a finite linear graph is a subgraph, because the closure of an
+    edge meeting it stays inside it, so vertices and edges add over components
+    and a homeomorphism pairs components with equal Euler number. Nothing was
+    changed.
 ---
 
 ::: {.exercise}

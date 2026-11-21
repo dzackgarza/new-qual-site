@@ -23,6 +23,8 @@ Show that $\frac{d}{dx}\log x = \frac{1}{x} - i\pi\delta(x)$.
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 Interpret $\log x$ as the boundary value $\log(x+i0)$ of the principal complex logarithm. Then
 $$
 \log(x+i0)=\log\abs{x}+i\pi H(-x),

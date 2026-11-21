@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP06-A7
 kind: problem
 title: A locally compact dense subspace of a Hausdorff space is open
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Compactness, Hausdorff Spaces]}
 relations: []
 review: draft
 audit:

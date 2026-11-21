@@ -22,6 +22,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Verified the invariant line and perpendicular plane explicitly and computed the minimal polynomial from the two invariant restrictions.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Summer80.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -29,6 +36,7 @@ Exhibit a real $3\times3$ matrix having minimal polynomial $(t^2+1)(t-10)$ which
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Summer 1980, retained in this repository as `assets/attachments/Summer80.pdf`; the statement below is its wording.
 Let
 $$
 e=(1,1,1),\qquad u=(1,-1,0),\qquad v=(1,1,-2).

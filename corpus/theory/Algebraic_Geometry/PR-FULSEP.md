@@ -26,7 +26,7 @@ Then there is a linear functional $u\in\dualof{\sigma}\subseteq M_\RR$ such that
 $$
 \inner{u}{v} < 0 .
 $$
-Equivalently, the hyperplane $u^\perp$ places $\sigma$ in the closed half-space $\inner{u}{\wait}\geq0$ and $v$ in the opposite open half-space.
+Equivalently, the hyperplane $u^\perp$ places $\sigma$ in the closed half-space $\inner{u}{-}\geq0$ and $v$ in the opposite open half-space.
 :::
 
 ::: {.proof}
@@ -44,7 +44,7 @@ while
 $$
 \inner{p-v}{v}=-\norm{v-p}^2<0.
 $$
-The functional $u=\inner{p-v}{\wait}\in M_\RR$ therefore has the required properties.
+The functional $u=\inner{p-v}{-}\in M_\RR$ therefore has the required properties.
 :::
 
 ::: {.proposition title="Double duality"}

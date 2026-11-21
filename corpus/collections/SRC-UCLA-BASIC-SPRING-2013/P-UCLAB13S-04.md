@@ -5,7 +5,9 @@ kind: problem
 title: Existence of the Euler–Mascheroni limit
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Harmonic Series
+  - Limits
 relations: []
 review: draft
 audit:

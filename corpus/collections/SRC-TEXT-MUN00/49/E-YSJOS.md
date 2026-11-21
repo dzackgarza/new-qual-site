@@ -68,6 +68,11 @@ audit:
     interval which has no vertex in its interior lies in I, which is what the passage to "lies in one
     linear piece" needs; it also corrects "distinct vertices are at distance exactly 1/4" to "at least
     1/4", the vertices 0 and 1/2 being half an interval apart. Nothing else on the card changed.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Lamport structure for Munkres, Topology (2000), Section 49 Exercise 1, printed p. 304, checked against Example 1 and the definitions on printed p. 301. No retained set covers the exercise, so the argument is the card's own and the card now says so. What the restructuring repaired: the prose concluded "g in U_n" and "k in U_n" without ever stating the definition it was concluding against. The definition on p. 301 is Delta_h f = inf over x of Delta f(x,h) and f in U_n iff Delta_h f > n for some h <= 1/n, so membership needs the bound at EVERY x and the step to be at most 1/n; the card now states the definition and proves the criterion once (step 1) and applies it. The two endpoint cases of g and of k, the quotient computations for f at h = 1/4, and the passage from "no vertex in the interior" to "contained in one closed linear piece" are each separate steps. The numerical thresholds are unchanged from the checked version: h = 1/4 for f, h <= 1/4 for g, h <= 1/8 for k. No statement repair.
 ---
 
 ::: {.exercise}
@@ -76,53 +81,182 @@ Check the stated properties of the functions $f$, $g$, and $k$ of Example 1 of �
 :::
 
 ::: {.solution}
-Write $I=[0,1]$.  For $0<h\le 1/2$, let $\Delta f(x,h)$ be the larger, in absolute value, of the two secant quotients of step $h$ that are defined at $x$.
+No retained solution set covers this exercise: the collection's provenance is the textbook, and the searches for this exercise are recorded on the card and in the `COMPLAINTS.md` entry for §43--§50 of `SRC-TEXT-MUN00`. The argument below is the card's own, following Example 1 of §49, and the definitions on the same page.
 
-For
+Write $I=[0,1]$ and let $\alpha>0$. For $f:I\to\RR$ continuous, $x\in I$ and $0<h\le1/2$, let
 $$
-f(x)=4\alpha x(1-x)
+\Delta f(x,h)=\max\Big\{\frac{\abs{f(x+h)-f(x)}}{h},\ \frac{\abs{f(x-h)-f(x)}}{h}\Big\},
 $$
-and $h=1/4$, the forward quotient is
-$$
-\frac{f(x+h)-f(x)}h=4\alpha(1-2x-h)
-=\alpha(3-8x),
-$$
-while the backward quotient is
-$$
-\frac{f(x-h)-f(x)}{-h}=4\alpha(1-2x+h)
-=\alpha(5-8x).
-$$
-Whenever both are defined, their difference is $2\alpha$, so at least one has absolute value at least $\alpha$.  Near an endpoint only one quotient may be defined; if $0\le x<1/4$, then $\abs{3-8x}\ge1$, and if $3/4<x\le1$, then $\abs{5-8x}\ge1$.  Hence
-$$
-\Delta f(x,1/4)\ge\alpha\qquad(x\in I).
-$$
-In particular, if $\alpha>4$, then $f\in U_4$.
+each term taken only when defined, and let $\Delta_h f=\inf\{\Delta f(x,h)\mid x\in I\}$. For $n\ge2$, $f\in U_n$ means that $\Delta_h f>n$ for some $0<h\le1/n$ (Definition and Example 1).
 
-The function $g$ in Figure 49.1 is the tent function
-$$
-g(x)=
-\begin{cases}
-\alpha x,&0\le x\le1/2,\\
-\alpha(1-x),&1/2\le x\le1.
-\end{cases}
-$$
-Every linear piece has slope of absolute value $\alpha$.  Fix $0<h\le1/4$ and $x\in I$.  If $x\le1/2$, then either $x+h\le1/2$, so the forward quotient has absolute value $\alpha$, or else $x\ge1/2-h$, in which case $x-h\ge0$ and the backward interval $[x-h,x]$ lies in the left linear piece, so the backward quotient has absolute value $\alpha$.  The case $x\ge1/2$ is symmetric.  Therefore
-$$
-\Delta g(x,h)\ge\alpha
-$$
-for every $x$ and every $0<h\le1/4$.  So for $\alpha>n$ and any $n$, the step $h=\min\{1/n,1/4\}$ satisfies $h\le1/n$ and $h\le1/4$, hence $\Delta_h g\ge\alpha>n$ and $g\in U_n$.
+::: pf
 
-The function $k$ is the two-tooth sawtooth obtained by joining successively
-$$
-(0,0),\quad (1/4,\alpha/4),\quad(1/2,0),\quad
-(3/4,\alpha/4),\quad(1,0).
-$$
-Again every linear piece has slope $\pm\alpha$.  Let $0<h\le1/8$ and $x\in I$.  At $x=0$ the forward interval $[0,h]$ is contained in $[0,1/4]$, and at $x=1$ the backward interval $[1-h,1]$ is contained in $[3/4,1]$, one linear piece in each case, so the corresponding quotient has absolute value $\alpha$.  For $0<x<1$: the backward interval can leave $I$ only when $x<h$, and then $0$ lies in its interior; the forward one only when $x>1-h$, and then $1$ lies in its interior. Both $0$ and $1$ are vertices, so an interval with no vertex in its interior lies in $I$. If both intervals had a vertex in the interior, say $t<x<t'$, then $t'-t<2h\le1/4$, which is impossible because distinct vertices are at distance at least $1/4$. So one of the two intervals has no vertex in its interior; that interval lies in $I$, its interior lies in one of the four open subintervals cut out by the vertices, and it therefore lies in the closure of that piece, which is one of the four linear pieces.  Along it the corresponding secant quotient has absolute value $\alpha$.  Hence
-$$
-\Delta k(x,h)\ge\alpha
-\qquad(0<h\le1/8).
-$$
-Consequently, for $\alpha>n$ and any $n$, the step $h=\min\{1/n,1/8\}$ gives $\Delta_h k\ge\alpha>n$, so $k\in U_n$.
+::: {.pf-step #criterion}
+For $n\ge2$ and continuous $f:I\to\RR$: if $\Delta f(x,h)\ge\alpha$ for all $x\in I$ and some $0<h\le1/n$, and $\alpha>n$, then $f\in U_n$.
 
-These are exactly the properties asserted for $f,g,k$ in Example 1.
+::: pf-proof
+$\Delta_h f=\inf_x\Delta f(x,h)\ge\alpha>n$ because $\alpha\le\Delta f(x,h)$ for every $x$, and $h\le1/n$; this is exactly the condition in the definition of $U_n$ (§49).
+:::
+
+:::
+
+::: {.pf-step #parabola}
+Let $f(x)=4\alpha x(1-x)$ and $h=1/4$. For every $x\in I$, $\Delta f(x,1/4)\ge\alpha$.
+
+::: pf-proof
+This is proved in the three steps below: the two secant quotients for the interior case, and the two endpoint cases.
+
+::: {.pf-step #quotients}
+For $0\le x\le1$ with both quotients defined,
+$$
+\frac{f(x+h)-f(x)}{h}=\alpha(3-8x),\qquad
+\frac{f(x-h)-f(x)}{-h}=\alpha(5-8x).
+$$
+
+::: pf-proof
+With $h=1/4$ and $f=4\alpha x(1-x)$,
+$$
+f(x+h)-f(x)=4\alpha\big[(x+h)(1-x-h)-x(1-x)\big]=4\alpha\,h\,(1-2x-h)=h\,\alpha(3-8x),
+$$
+and
+$$
+f(x-h)-f(x)=4\alpha\big[(x-h)(1-x+h)-x(1-x)\big]=-4\alpha\,h\,(1-2x+h)=h\,\alpha(5-8x)\cdot(-1),
+$$
+so dividing the first by $h=1/4$ and the second by $-h=-1/4$ gives the two displayed quotient formulas. (Numerically: $4(1-2x-1/4)=3-8x$ and $-4(1-2x+1/4)=-(3-8x)-2=5-8x$.)
+:::
+
+:::
+
+::: {.pf-step #interior}
+For $1/4\le x\le3/4$ both quotients are defined and one has absolute value at least $\alpha$.
+
+::: pf-proof
+$x+1/4\le1$ and $x-1/4\ge0$ here, so both quotients are defined. Their difference is $\alpha(5-8x)-\alpha(3-8x)=2\alpha$, and for two real numbers differing by $2\alpha$ at least one has absolute value at least $\alpha$.
+:::
+
+:::
+
+::: {.pf-step #endpoints}
+For $0\le x<1/4$ the forward quotient is defined and has absolute value at least $\alpha$; for $3/4<x\le1$ the backward quotient is defined and has absolute value at least $\alpha$.
+
+::: pf-proof
+If $0\le x<1/4$ then $x+1/4\le1/2\le1$, so the forward quotient is defined, and $\abs{3-8x}\ge\abs{3-2}=1$ because $8x<2$, so it has absolute value $\alpha\abs{3-8x}\ge\alpha$. If $3/4<x\le1$ then $x-1/4\ge1/2\ge0$, so the backward quotient is defined, and $\abs{5-8x}\ge\abs{5-8}=3\ge1$ because $8x\le8$, so it has absolute value at least $\alpha$.
+:::
+
+:::
+
+:::
+
+:::
+::: {.pf-step #parabolamember}
+If $\alpha>4$ then $f\in U_4$.
+
+::: pf-proof
+By step [](#parabola){.pf-ref}, $\Delta f(x,1/4)\ge\alpha>4$ for all $x\in I$, and $1/4\le1/4$; step [](#criterion){.pf-ref} with $n=4$ and $h=1/4$ gives $f\in U_4$.
+:::
+
+:::
+
+::: {.pf-step #tent}
+Let $g(x)=\alpha x$ for $0\le x\le1/2$ and $g(x)=\alpha(1-x)$ for $1/2\le x\le1$. For every $x\in I$ and every $0<h\le1/4$, $\Delta g(x,h)\ge\alpha$.
+
+::: pf-proof
+$g$ is linear of slope $\alpha$ on $[0,1/2]$ and of slope $-\alpha$ on $[1/2,1]$, so on each of the two closed pieces $g$ is linear with slope of absolute value $\alpha$, and a secant quotient over an interval contained in one piece equals that slope.
+
+::: {.pf-step #tentleft}
+If $x\le1/2$ then one of the two quotients is defined and has absolute value $\alpha$.
+
+::: pf-proof
+If $x+h\le1/2$, the forward interval $[x,x+h]$ lies in $[0,1/2]$ and the forward quotient has absolute value $\alpha$. Otherwise $x>1/2-h\ge1/4$, and $x-h\ge1/2-2h\ge0$ because $h\le1/4$, while $x\le1/2$; so the backward interval $[x-h,x]$ lies in $[0,1/2]$ and the backward quotient has absolute value $\alpha$. (At $x=0$ the first case applies, since $h\le1/4\le1/2$.)
+:::
+
+:::
+
+::: {.pf-step #tentright}
+If $x\ge1/2$ then one of the two quotients is defined and has absolute value $\alpha$.
+
+::: pf-proof
+If $x-h\ge1/2$, the backward interval $[x-h,x]$ lies in $[1/2,1]$ because $x\le1$, and the backward quotient has absolute value $\alpha$. Otherwise $x<1/2+h$, and $x+h\le1/2+2h\le1$ because $h\le1/4$, while $x\ge1/2$; so the forward interval $[x,x+h]$ lies in $[1/2,1]$ and the forward quotient has absolute value $\alpha$. (At $x=1$ the first case applies.)
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #tentmember}
+If $\alpha>n$ with $n\ge2$ then $g\in U_n$.
+
+::: pf-proof
+Put $h=\min\{1/n,1/4\}$, a positive number with $h\le1/n$ and $h\le1/4$. By step [](#tent){.pf-ref}, $\Delta g(x,h)\ge\alpha>n$ for every $x$, so step [](#criterion){.pf-ref} gives $g\in U_n$.
+:::
+
+:::
+
+::: {.pf-step #sawtooth}
+Let $k$ be the piecewise linear function with values $0,\alpha/4,0,\alpha/4,0$ at $0,1/4,1/2,3/4,1$. Its vertices are $0,1/4,1/2,3/4,1$, distinct vertices are at distance at least $1/4$, and on each of the four closed pieces $k$ is linear with slope of absolute value $\alpha$.
+
+::: pf-proof
+Successive vertices are at distance exactly $1/4$, so any two distinct vertices are at distance at least $1/4$. On $[0,1/4]$ the slope is $(\alpha/4-0)/(1/4)=\alpha$; on $[1/4,1/2]$ it is $(0-\alpha/4)/(1/4)=-\alpha$; on $[1/2,3/4]$ it is $\alpha$; on $[3/4,1]$ it is $-\alpha$. A function linear on a closed interval has every secant quotient over a subinterval equal to its slope.
+:::
+
+:::
+
+::: {.pf-step #sawtoothbound}
+For every $x\in I$ and every $0<h\le1/8$, $\Delta k(x,h)\ge\alpha$.
+
+::: pf-proof
+The endpoint cases and the two-interval argument follow in the three steps below.
+
+::: {.pf-step #sawends}
+At $x=0$ the forward interval $[0,h]$ lies in $[0,1/4]$, and at $x=1$ the backward interval $[1-h,1]$ lies in $[3/4,1]$.
+
+::: pf-proof
+$h\le1/8<1/4$ gives $[0,h]\subseteq[0,1/4]$ and $[1-h,1]\subseteq[3/4,1]$. So the corresponding quotient, a secant quotient over an interval inside one linear piece, has absolute value $\alpha$ by step [](#sawtooth){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #onevertex}
+For $0<x<1$ at least one of the intervals $[x-h,x]$ and $[x,x+h]$ has no vertex in its interior.
+
+::: pf-proof
+Suppose both have one, say $t\in(x-h,x)$ and $t'\in(x,x+h)$ with $t,t'$ vertices. Then $t'-t<(x+h)-(x-h)=2h\le1/4$, contradicting step [](#sawtooth){.pf-ref}, which separates distinct vertices by at least $1/4$.
+:::
+
+:::
+
+::: {.pf-step #onepiece}
+For $0<x<1$ an interval among $[x-h,x]$ and $[x,x+h]$ with no vertex in its interior is contained in $I$ and in one of the four closed linear pieces.
+
+::: pf-proof
+If $[x-h,x]$ left $I$ then $x-h<0$ with $x>0$, so $0\in(x-h,x)$ is a vertex in the interior; if $[x,x+h]$ left $I$ then $x+h>1$ with $x<1$, so $1\in(x,x+h)$ is a vertex in the interior. So such an interval lies in $I$. Its interior is an interval in $I$ avoiding the four vertices, hence lies in one component of $I$ minus the vertices, one of the four open pieces; the interval is the closure in $I$ of its interior, so it lies in the closure of that piece, which is one of the four closed linear pieces. Hence the secant quotient over it has absolute value $\alpha$ by step [](#sawtooth){.pf-ref}.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #sawtoothmember}
+If $\alpha>n$ with $n\ge2$ then $k\in U_n$.
+
+::: pf-proof
+Put $h=\min\{1/n,1/8\}$, so that $0<h\le1/n$ and $h\le1/8$. By step [](#sawtoothbound){.pf-ref}, $\Delta k(x,h)\ge\alpha>n$ for every $x$, and step [](#criterion){.pf-ref} gives $k\in U_n$.
+:::
+
+:::
+
+::: {.pf-step}
+The three functions satisfy exactly the properties that Example 1 of §49 states for them: $\Delta f(x,1/4)\ge\alpha$ with $f\in U_4$ when $\alpha>4$; $\Delta g(x,h)\ge\alpha$ for $h\le1/4$ with $g\in U_n$ when $\alpha>n$; and $\Delta k(x,h)\ge\alpha$ for $h\le1/8$ with $k\in U_n$ when $\alpha>n$.
+
+::: pf-proof
+Steps [](#parabola){.pf-ref}, [](#parabolamember){.pf-ref}, [](#tent){.pf-ref}, [](#tentmember){.pf-ref}, [](#sawtoothbound){.pf-ref} and [](#sawtoothmember){.pf-ref} prove the six assertions, which are those of Example 1 word for word: "$\Delta f(x,h)\ge\alpha$ for $h=1/4$ and all $x$", "if $\alpha>4$ the function $f$ belongs to $U_4$", "$\Delta g(x,h)\ge\alpha$ for any $h\le1/4$", "hence $g$ belongs to $U_n$ provided $\alpha>n$", and the same two statements for $k$ with $1/8$ in place of $1/4$.
+:::
+
+:::
+
+:::
 :::

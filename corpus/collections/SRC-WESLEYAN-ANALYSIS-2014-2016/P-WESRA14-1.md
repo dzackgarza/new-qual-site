@@ -5,7 +5,9 @@ kind: problem
 title: 'Littlewood’s three principles'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Measure Theory
+  - Lebesgue Measure
 relations: []
 review: draft
 audit:

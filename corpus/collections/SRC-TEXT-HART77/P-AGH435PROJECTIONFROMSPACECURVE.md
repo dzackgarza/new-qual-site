@@ -28,6 +28,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.3.5, printed p. 88,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.3.5, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the two counts ($\geq4$ against $\leq3$), the strict genus drop $\frac12(d-1)(d-2)$ for a singular plane curve, and the constant arithmetic genus a flat family forces on $X_0$.
+    Not checked: Yang's Solutions outside printed p. 88; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.3.5 at printed
+    p. 88 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -318,4 +338,6 @@ the assertion about $X_0$.
 
 ::: {.remark title="Published solution"}
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.5, printed p. 220, text version `tmp/sources/hartshorne-solutions-egbert.md` (entry 4.3.10), shows that for $O\notin X$ a nondegenerate $X\subseteq\PP^3$ whose projection is birational onto its plane image has a singular image, by comparing $h^0(X,\OO_X(1))\ge4$ with $h^0$ of a plane curve of degree $\ge2$; the genus drop through (Ex. 1.8) gives part (b), and the flat limit of the projection family is then a nonreduced special fibre.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.3.5, printed p. 88, does (a) as the hint says, by counting $H^0(X,\OO_X(1))$ two ways: a curve in $\PP^2$ has $\dim H^0(\phi(X),\OO_{\phi(X)}(1))\leq\dim H^0(\PP^2,\OO_{\PP^2}(1))=3$, while $X$ in no plane means $H^0(\PP^3,\mathcal I_X(1))=0$, so the restriction $H^0(\PP^3,\OO_{\PP^3}(1))\to H^0(X,\OO_X(1))$ is injective and $\dim H^0(X,\OO_X(1))\geq4$; since $\varphi$ is birational, $\varphi^*\OO_{\phi(X)}(1)=\OO_X(1)$ and $\varphi^*$ is injective on sections, so the second number is at most the first --- and a nonsingular plane image is impossible. Its (b) runs the genus drop: $X$ smooth and birational to $\phi(X)$ makes $X$ the normalization of $\phi(X)$, so $g(X)\leq g(\phi(X))=\frac12(d-1)(d-2)$, with strict inequality because (a) says $\phi(X)$ is singular. Its (c) is where the entry is loose: it calls $X_0$ 'a nodal plane curve', and nodality is neither used nor implied --- what the argument needs is only that a reduced $X_0$ with support $\phi(X)$ and the family's constant degree $d$ is $\phi(X)$ itself, whose arithmetic genus $\frac12(d-1)(d-2)$ exceeds $g(X_t)=g(X)$ by (b), contradicting flatness; the printed 'more bigger genus than $X_t$ with $t\ne0$' is that comparison.
 :::

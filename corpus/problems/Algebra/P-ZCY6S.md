@@ -11,6 +11,17 @@ classification:
   - Representation Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof. Two steps that stated the row and column orthogonality relations of
+    the character table with no justification now derive them, the second from the first by the standard
+    argument that a square matrix with $YY^*=I$ also satisfies $Y^*Y=I$. The mathematics is unchanged;
+    the relations are standard consequences of Schur's lemma, which is named where it is used rather than
+    proved. Nothing in the statement was changed.
+
 ---
 
 ::: {.problem}
@@ -30,6 +41,11 @@ and let $\chi_1,\ldots,\chi_r$ be the irreducible characters of $G$, the charact
 
 (Row orthogonality) $\inner{\chi_i}{\chi_j}=\delta_{ij}$, and $\chi_1,\ldots,\chi_r$ form an orthonormal basis of the space of complex class functions on $G$.
 
+
+::: pf-proof
+This is the orthogonality of irreducible characters: $\langle\chi_i,\chi_j\rangle=\delta_{ij}$ follows from Schur's lemma applied to the spaces of intertwining operators, and the irreducible characters span the class functions because their number equals the number of conjugacy classes.
+:::
+
 :::
 
 ::: pf-step
@@ -43,6 +59,11 @@ $$
 0,&\text{otherwise}.
 \end{cases}
 $$
+
+
+::: pf-proof
+Row orthogonality says that the normalized character table $Y$, with entries $\chi_i(g)\sqrt{\abs{C(g)}/\abs{G}}$ indexed by conjugacy classes, satisfies $YY^*=I$; a square matrix with that property also satisfies $Y^*Y=I$, which is the displayed relation, and $\abs{G}/\abs{C(g)}=\abs{C_G(g)}$.
+:::
 
 :::
 

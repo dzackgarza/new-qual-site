@@ -28,6 +28,18 @@ audit:
     the kernel is $\pm I$; and surjectivity uses the book's normal form of a disc automorphism with
     the hint's matrix, which is checked to lie in $\mathrm{SU}(1,1)$ and to induce it. Nothing is left
     in outline.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator correction to the first event: this is Chapter 8, Problem 4, on printed p. 257 (PDF
+    p. 276), in the chapter's Problems section, not a "§3" problem. Re-read there today: the
+    statement is the print's, the three defining conditions, the form $(a\ b;\ \overline b\ \overline a)$
+    with $\abs a^2-\abs b^2=1$, the matrix $J$ and $\inner{Z}{W}={}^t\overline WJZ$, and the hint's
+    association of $e^{2i\theta}(z-\alpha)/(1-\overline\alpha z)$ with its matrix, whose lower-left
+    entry is $\overline b$ for $b=-\alpha e^{i\theta}/\sqrt{1-\abs\alpha^2}$, as the card has it. The
+    asterisk the print sets before "4." is recorded in the remark. Not checked: the argument, which
+    the second event above reviews and this pass did not re-derive.
 ---
 
 ::: {.exercise}
@@ -46,6 +58,10 @@ $$
 Use $J=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$ and $\inner{Z}{W}={}^t\overline{W}JZ$, where ${}^t\overline{W}$ denotes the conjugate transpose of $W$.
 
 (b) Associate to $M$ the fractional linear map $z\mapsto(az+b)/(cz+d)$. Prove that $\mathrm{SU}(1,1)/\{\pm I\}$ is isomorphic to the group of automorphisms of the unit disc.
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 8, Problem 4).
 :::
 
 ::: {.hint}

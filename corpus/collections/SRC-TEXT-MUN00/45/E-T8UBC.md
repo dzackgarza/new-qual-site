@@ -62,6 +62,21 @@ audit:
     unreadable, the site answering an automated request with a Cloudflare human check, which is not
     worked around.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; re-checked the repair and all four parts. The repair
+    stands: the graph of a continuous f: R -> R need not be bounded, so gr does not map into
+    the set of closed bounded subsets, and (a)-(c) are for bounded continuous functions with
+    X nonempty, while (d) is unaffected because a compact X has bounded continuous image.
+    Checked (a) injectivity and the 1-Lipschitz bound d_H <= sup norm; (b) the epsilon/3
+    argument through the definition of Hausdorff distance; (c) that the functions on the
+    discrete set {1/k} are continuous and bounded, that the two graphs are within
+    1/((n+1)(n+2)) in the Hausdorff metric while sup norm is 2 at the point 1/(n+1), and
+    that this f is not uniformly continuous, consistent with (b); (d) compactness of the
+    graph and uniform continuity on a compact metric space (Theorem 27.6). No further repair
+    needed.
 ---
 
 ::: {.exercise}
@@ -83,39 +98,107 @@ $$
 :::
 
 ::: {.solution}
-Write $d_\square((x,y),(x',y'))=\max\{d_X(x,x'),d_Y(y,y')\}$ and $d_H$ for the Hausdorff metric.
+The argument is the card's own; no retained solution set is cited on it. Write $d_{\square}\big((x,y),(x',y')\big)=\max\{d_{X}(x,x'),d_{Y}(y,y')\}$ for the square metric and $d_{H}$ for the Hausdorff metric on $\mathcal{H}$.
 
-**A defect in the printed statement, and the corrected statement.** As printed, $\operatorname{gr}$ is not a function into $\mathcal{H}$: boundedness of the graph does not follow from continuity. Take $X=Y=\RR$ with the usual metric and $f=\operatorname{id}$. Then $G_f=\{x\times x\mid x\in\RR\}$ is closed in $\RR^2$, being the preimage of $\{0\}$ under the continuous map $(x,y)\mapsto x-y$ (Theorem 18.1), and it is unbounded: a ball of radius $r$ about $u\times u$ meets $G_f$ only in points $x\times x$ with $\abs{x}\le\abs{u}+r$, so no ball about any point contains $G_f$. Hence $G_f\notin\mathcal{H}$ although $f$ is continuous, and the same holds for every unbounded continuous $f:\RR\to\RR$.
+::: pf
 
-So parts (a)--(c) are proved for the bounded continuous functions, that is for
-$$
-\mathcal{C}_b(X,Y)=\{f\in\mathcal{C}(X,Y) \mid f(X) \text{ is bounded in } Y\},
-$$
-whose graphs are bounded, and for nonempty $X$, so that graphs are nonempty; the graph of a continuous map into a metric space is closed, so $\operatorname{gr}$ does map $\mathcal{C}_b(X,Y)$ into $\mathcal{H}$. Part (d) needs no repair: if $X$ is compact then $f(X)$ is compact (Theorem 26.5), hence bounded in $Y$, so $\mathcal{C}(X,Y)=\mathcal{C}_b(X,Y)$ and each $G_f$ is compact, hence closed and bounded, in $X\times Y$. Below, $\operatorname{gr}$ is the map on $\mathcal{C}_b(X,Y)$ in (a)--(c) and on $\mathcal{C}(X,Y)$ in (d).
+::: {.pf-step #defect}
+As printed, $\operatorname{gr}$ is not a map into $\mathcal{H}$, and the corrected statement restricts it to the bounded continuous functions.
 
-(a) Distinct functions have distinct graphs, so $\operatorname{gr}$ is injective. If $\norm{f-h}_\infty<\varepsilon$, then for every $x$, $(x,f(x))$ lies within $\varepsilon$ of $(x,h(x))$, and conversely. Thus
+::: pf-proof
+Take $X=Y=\RR$ with the usual metric and $f=\operatorname{id}$. Its graph $G_{f}=\{x\times x\}$ is closed, being the preimage of $\{0\}$ under the continuous map $(x,y)\mapsto x-y$ (Theorem 18.1), but it is not bounded: a ball of square radius $r$ about $u\times u$ meets $G_{f}$ only in points $x\times x$ with $\abs{x}\le\abs{u}+r$, so no ball contains $G_{f}$. Hence $G_{f}\notin\mathcal{H}$ although $f$ is continuous. So parts (a)--(c) are proved for
 $$
-d_H(G_f,G_h)\le \norm{f-h}_\infty,
+\mathcal{C}_{b}(X,Y)=\{f\in\mathcal{C}(X,Y)\mid f(X)\text{ is bounded in }Y\}
 $$
-so the graph map is $1$-Lipschitz, hence uniformly continuous.
+with $X$ nonempty: the graph of a continuous map into a metric space is closed, and boundedness of $f(X)$ is boundedness of the graph, so $\operatorname{gr}$ does land in $\mathcal{H}$. Part (d) needs no repair, because a continuous image of a compact space is compact (Theorem 26.5) and hence bounded, so $\mathcal{C}(X,Y)=\mathcal{C}_{b}(X,Y)$ there.
+:::
 
-(b) Fix uniformly continuous $f$ and $\varepsilon>0$. Choose $\delta<\varepsilon/3$ so that $d_X(x,x')<\delta$ implies $d_Y(f(x),f(x'))<\varepsilon/3$. If $d_H(G_f,G_h)<\delta$, then for each $x$ there is $x'$ with
-$$
-d_X(x,x')<\delta,\qquad d_Y(h(x),f(x'))<\delta.
-$$
-Hence
-$$
-d_Y(h(x),f(x))<\delta+\varepsilon/3<2\varepsilon/3.
-$$
-Taking the supremum over $x$ gives $\norm{h-f}_\infty\le 2\varepsilon/3<\varepsilon$, both functions being bounded. Thus $g^{-1}$ is continuous at $G_f$.
+:::
 
-(c) Take $X=\{1/k:k\in\ZZ_+\}\subset\RR$ and $Y=\RR$, with the usual metrics. The space $X$ is discrete, so every function on it is continuous; it is nonempty and bounded. Let $f(1/k)=(-1)^k$, and for $n\ge1$ let $h_n(1/k)=(-1)^k$ for $k\le n$ and $h_n(1/k)=(-1)^{k+1}$ for $k>n$. Both take values in $\{-1,1\}$, so they are bounded, and their graphs are closed because the functions are continuous.
+::: {.pf-step #part-a}
+(a) $\operatorname{gr}:\mathcal{C}_{b}(X,Y)\to\mathcal{H}$ is injective and $1$-Lipschitz, hence uniformly continuous.
 
-Since $h_n(1/j)=f(1/(j+1))$ for $j>n$, for $k>n$ the point $(1/k,h_n(1/k))=(1/k,f(1/(k+1)))$ of $G_{h_n}$ lies at square distance $1/k-1/(k+1)=1/(k(k+1))$ from the point $(1/(k+1),f(1/(k+1)))$ of $G_f$; and the point $(1/k,f(1/k))=(1/k,h_n(1/(k+1)))$ of $G_f$ lies at that same distance from the point $(1/(k+1),h_n(1/(k+1)))$ of $G_{h_n}$. The points with $k\le n$ are common to both graphs. Hence
-$$
-d_H(G_f,G_{h_n})\le\frac{1}{(n+1)(n+2)}\longrightarrow0.
-$$
-But $\abs{h_n(1/(n+1))-f(1/(n+1))}=2$, so $\norm{h_n-f}_\infty=2$ for every $n$. Thus $g^{-1}$ is not continuous at $G_f$. Here $f$ is not uniformly continuous, since $\abs{f(1/k)-f(1/(k+1))}=2$ while $1/k-1/(k+1)\to0$.
+::: pf-proof
+If $G_{f}=G_{h}$ then for every $x$ the point $x\times f(x)$ equals $x\times h(x)$, so $f=h$; that is injectivity. For the estimate, each point $x\times f(x)$ of $G_{f}$ lies at square distance $d_{Y}\big(f(x),h(x)\big)\le\norm{f-h}_{\infty}$ from the point $x\times h(x)$ of $G_{h}$, and symmetrically; so every point of either graph is within $\norm{f-h}_{\infty}$ of the other graph, that is $d_{H}(G_{f},G_{h})\le\norm{f-h}_{\infty}$. A Lipschitz map is uniformly continuous.
+:::
 
-(d) Let $X$ be compact. Then $\mathcal{C}(X,Y)=\mathcal{C}_b(X,Y)$, as noted above, and each graph $G_f$ is the image of the compact space $X$ under the continuous map $x\mapsto x\times f(x)$ (Theorem 18.4), hence compact (Theorem 26.5) and so an element of $\mathcal{H}$. A continuous map on a compact metric space is uniformly continuous (Theorem 27.6), so (b) applies to every $f$: the inverse from the image $\mathcal{H}_0$ to $\mathcal{C}(X,Y)$ is continuous at every graph. Together with (a), $\operatorname{gr}$ is a homeomorphism onto its image, hence an imbedding.
+:::
+
+::: {.pf-step #part-b}
+(b) If $f$ is uniformly continuous, then $g^{-1}$ is continuous at $G_{f}$.
+
+::: pf-proof
+Let $\varepsilon>0$ and choose $\delta>0$ with $\delta<\varepsilon/3$ such that $d_{X}(x,x')<\delta$ implies $d_{Y}\big(f(x),f(x')\big)<\varepsilon/3$. Suppose $d_{H}(G_{f},G_{h})<\delta$. For each $x\in X$ the point $x\times f(x)\in G_{f}$ is within $\delta$ of some point $x'\times h(x')\in G_{h}$, so $d_{X}(x,x')<\delta$ and $d_{Y}\big(f(x),h(x')\big)<\delta$. Then
+$$
+d_{Y}\big(h(x),f(x)\big)\le d_{Y}\big(h(x),f(x')\big)+d_{Y}\big(f(x'),f(x)\big)<\delta+\varepsilon/3<2\varepsilon/3,
+$$
+so $\norm{h-f}_{\infty}\le2\varepsilon/3<\varepsilon$, the supremum being finite because both functions are bounded. Hence $d_{H}(G_{f},G_{h})<\delta$ forces $d_{\infty}(f,h)<\varepsilon$, which is continuity of $g^{-1}$ at $G_{f}$.
+:::
+
+:::
+
+::: {.pf-step #part-c}
+(c) There is a case in which $g^{-1}$ is not continuous at $G_{f}$.
+
+:::: pf-proof
+
+::: {.pf-step #c-setup}
+Let $X=\{1/k\mid k\in\ZZ_{+}\}$ and $Y=\RR$ with the usual metrics, let $f(1/k)=(-1)^{k}$, and let $h_{n}(1/k)=(-1)^{k}$ for $k\le n$ and $(-1)^{k+1}$ for $k>n$. All these functions are continuous, bounded, and have graphs in $\mathcal{H}$.
+
+::: pf-proof
+$X$ is a discrete subspace of $\RR$ (its points are isolated), so every function on it is continuous; $X$ is nonempty and bounded, and all the functions take values in $\{-1,1\}$, so all are bounded. The graph of a continuous map into the metric space $\RR$ is closed (Theorem 18.1), and bounded because $X$ and the values are bounded.
+:::
+
+:::
+
+::: {.pf-step #c-distance}
+$d_{H}(G_{f},G_{h_{n}})\le1/((n+1)(n+2))$.
+
+::: pf-proof
+For $k\le n$ the two functions agree at $1/k$. For $k>n$ one has $h_{n}(1/j)=(-1)^{j+1}=f\big(1/(j+1)\big)$ whenever $j>n$, so the point $1/k\times h_{n}(1/k)$ of $G_{h_{n}}$ equals $1/k\times f\big(1/(k+1)\big)$, which lies at square distance $1/k-1/(k+1)=1/(k(k+1))$ from the point $1/(k+1)\times f\big(1/(k+1)\big)$ of $G_{f}$; symmetrically each point $1/k\times f(1/k)$ of $G_{f}$ with $k>n$ lies at that distance from the point $1/(k+1)\times h_{n}\big(1/(k+1)\big)$ of $G_{h_{n}}$. The values $1/(k(k+1))$ decrease in $k$, so the Hausdorff distance is at most $1/((n+1)(n+2))$.
+:::
+
+:::
+
+::: {.pf-step #c-norm}
+$\norm{h_{n}-f}_{\infty}=2$ for every $n$, so $g^{-1}$ is not continuous at $G_{f}$.
+
+::: pf-proof
+At the point $1/(n+1)$, which lies beyond the first $n$ points, $h_{n}\big(1/(n+1)\big)=(-1)^{n+2}$ and $f\big(1/(n+1)\big)=(-1)^{n+1}$, so $\abs{h_{n}-f}=2$ there and the supremum is $2$. Together with step [](#c-distance){.pf-ref}, graphs arbitrarily close to $G_{f}$ correspond to functions at distance $2$ from $f$, so $g^{-1}$ is not continuous at $G_{f}$. Note also that this $f$ is not uniformly continuous, since $\abs{f(1/k)-f(1/(k+1))}=2$ while $1/k-1/(k+1)\to0$, which is consistent with (b).
+:::
+
+:::
+
+::: {.pf-step}
+(c) holds.
+
+::: pf-proof
+Steps [](#c-setup){.pf-ref}, [](#c-distance){.pf-ref} and [](#c-norm){.pf-ref} give the example.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #part-d}
+(d) If $X$ is compact, then $\operatorname{gr}:\mathcal{C}(X,Y)\to\mathcal{H}$ is an imbedding.
+
+::: pf-proof
+For compact $X$ one has $\mathcal{C}(X,Y)=\mathcal{C}_{b}(X,Y)$ by step [](#defect){.pf-ref}, and each $G_{f}$ is the image of the compact space $X$ under the continuous map $x\mapsto x\times f(x)$ (Theorem 18.4), hence compact (Theorem 26.5) and so an element of $\mathcal{H}$. A continuous map on a compact metric space is uniformly continuous (Theorem 27.6), so step [](#part-b){.pf-ref} applies at every $f$: $g^{-1}$ is continuous on all of $\mathcal{H}_{0}$. With the continuity of $\operatorname{gr}$ from step [](#part-a){.pf-ref}, $\operatorname{gr}$ is a homeomorphism onto its image, that is an imbedding.
+:::
+
+:::
+
+::: {.pf-step}
+Parts (a)--(d) hold, with (a)--(c) for bounded continuous functions.
+
+::: pf-proof
+Steps [](#part-a){.pf-ref}, [](#part-b){.pf-ref}, [](#part-c){.pf-ref} and [](#part-d){.pf-ref} are the four assertions, under the correction recorded in step [](#defect){.pf-ref}.
+:::
+
+:::
+
+:::
 :::

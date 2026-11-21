@@ -5,7 +5,9 @@ kind: problem
 title: 'Borel measurability for product Lebesgue measure'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Borel Sets
+  - Borel Measures
 relations: []
 review: draft
 audit:

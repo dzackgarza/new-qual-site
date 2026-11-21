@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP09-II5
 kind: problem
 title: A diagram chase proving injectivity of the middle vertical map
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Exact Sequences, Homological Algebra]}
 relations: []
 review: draft
 audit:

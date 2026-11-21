@@ -199,6 +199,8 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref} prove (a)--(c), s
 :::
 
 ::: {.remark title="The empty scheme"}
+The exercise stands on printed p. 224 of Hartshorne, under its printed italic heading "Cohomological Dimension (Hartshorne [3])", read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, with the convention $\operatorname{cd}(\varnothing)=-\infty$ added where the page defines $\operatorname{cd}$ only for nonempty $X$.
+
 Every sheaf on the empty scheme is zero, so all of its cohomology groups vanish.
 Consequently the least-integer definition alone has no value there; the convention $\operatorname{cd}(\varnothing)=-\infty$ covers the empty complement in (e).
 With this convention the equivalence $\operatorname{cd}(X)=0$ and affineness is stated for nonempty schemes.

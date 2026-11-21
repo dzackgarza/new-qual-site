@@ -52,6 +52,23 @@ audit:
     `0`, `1`, `2`. All the hypotheses used are checked: nonemptiness of `A` for surjectivity of `H_0(A) -> H_0(X)`,
     with the empty case now stated separately as the absolute groups, goodness of the pairs for the `X/A` and `X/B` identifications, and freeness of `Z^{m-1}` for the
     splitting. No correction was needed.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 17 of §2.1, in the exercise block printed on pp. 131--133.
+    Correct in every case. (a) For $A$ a set of $m\ge1$ points: $H_k(S^2,A)=H_k(S^2)$ for $k\ge2$
+    gives $\ZZ$ in degree $2$; the segment $0\to H_1(S^2,A)\to\ZZ^m\xrightarrow{\epsilon}\ZZ\to H_0(S^2,A)\to0$
+    with $\epsilon$ the sum gives $H_1=\ker\epsilon=\ZZ^{m-1}$ and $H_0=0$. For $T^2$ the same
+    segment is $0\to\ZZ^2\to H_1(T^2,A)\to\ZZ^{m-1}\to0$, which splits since the quotient is free,
+    so $H_1=\ZZ^{m+1}$, with $H_0=0$. (b) The separating circle $A$ gives $X/A=T^2\vee T^2$ by
+    cutting and capping, so $H_*(X,A)=\widetilde H_*(T^2\vee T^2)$ is $\ZZ^4$ in degree one and
+    $\ZZ^2$ in degree two; the nonseparating circle $B$ gives a torus with two points identified,
+    which is homotopy equivalent to $T^2\vee S^1$, so $H_*(X,B)$ is $\ZZ^3$ and $\ZZ$. The empty-$A$
+    case is stated separately as the absolute groups, and it is right that $H_0=\ZZ$ there and that
+    the formula $\ZZ^{m-1}$ does not extend to $m=0$. The good-pair hypotheses for the two collapses
+    and the freeness used for the splitting are both stated. Nothing changed. Not claimed: a
+    published solution, and no certificate.
 ---
 
 ::: {.problem}

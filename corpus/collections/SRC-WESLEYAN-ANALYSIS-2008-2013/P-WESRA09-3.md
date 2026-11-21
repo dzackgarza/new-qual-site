@@ -5,7 +5,9 @@ kind: problem
 title: 'Four measure and Banach-space problems'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Measure Theory
+  - Banach Spaces
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP12-4
 kind: problem
 title: CW structures on $\RP^2$ and $\CP^4$ and the homology of $\CP^4$
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [CW Complexes, Homology]}
 relations: []
 review: draft
 audit:
@@ -17,6 +17,8 @@ audit:
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination papers alone, so the argument is the card's own.
 
 ::: pf
 

@@ -5,7 +5,9 @@ kind: problem
 title: Nilpotency bounds for square and upper triangular matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Nilpotent Operators
+  - Jordan Canonical Form
 relations: []
 review: draft
 audit:

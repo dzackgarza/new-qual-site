@@ -51,6 +51,22 @@ audit:
     2-cell homeomorphically onto $S^2$ minus the basepoint, so the degree is $\pm1$ and the
     hypothesis the argument needs is only nonvanishing, which is what the previous exercise's
     converse supplies. No other change; the attaching-word construction is unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §3.3. Read against Hatcher, Exercise 12 of §3.3, printed p. 258 with
+    its bracketed hint (the exercises of §3.3 are 1--6 on p. 257, 7--14 on p. 258, 15--26 on p. 259
+    and 27--35 on p. 260, checked at PDF pages 266--269 of the held book), and the printed page is
+    added, the card having had none. Checked: the standard one-vertex cell structure of $M_g$ with
+    attaching word the commutator product; the map on $1$-skeleta sending $a_i,b_i$ to loops for
+    $v_i,w_i$, whose effect on the attaching loop is exactly $r_k$, the attaching word of $M_k$'s
+    $2$-cell, so it extends over the $2$-cell by that cell's characteristic map; and the degree,
+    computed after the collapse $M_k\to M_k/M_k^1=S^2$, where the open $2$-cell maps homeomorphically
+    onto $S^2$ minus a point and the boundary to the basepoint, giving $\pm1$. The contradiction then
+    uses the converse of Exercise 11 (card `E-HAT-3.3-11`, step `#s1`), whose own proof of
+    injectivity of $f^*$ the card records. No defect. Not claimed: a published solution of this
+    exercise, none having been located; the printed hint's construction is followed.
 ---
 
 ::: {.problem}
@@ -59,35 +75,50 @@ As an algebraic application of the preceding problem, show that in a free group 
 :::
 
 ::: {.solution}
-Let
-$$
-r_k=[x_1,x_2]\cdots[x_{2k-1},x_{2k}]\in F(x_1,\ldots,x_{2k}).
-$$
-Suppose, toward a contradiction, that
-$$
-r_k=[v_1,w_1]\cdots[v_j,w_j]
-$$
-with $j<k$.
+The exercise is §3.3 Exercise 12.
 
-Use the standard CW structure on the genus-$j$ surface $M_j$: its $1$-skeleton is a wedge of $2j$ circles with generators $a_i,b_i$, and its $2$-cell is attached by
-$$
-[a_1,b_1]\cdots[a_j,b_j].
-$$
-Likewise $M_k$ has $1$-skeleton a wedge of $2k$ circles with generators $x_1,\ldots,x_{2k}$ and $2$-cell attaching word $r_k$.
 
-Define a map of $1$-skeleta
-$$
-g:(M_j)^1\to(M_k)^1
-$$
-by sending the loop $a_i$ to a loop representing $v_i$ and $b_i$ to a loop representing $w_i$. The boundary of the $2$-cell of $M_j$ then maps to
-$$
-[v_1,w_1]\cdots[v_j,w_j]=r_k,
-$$
-which is exactly the attaching loop of the $2$-cell of $M_k$. Hence $g$ extends over the $2$-cell to a map
-$$
-f:M_j\to M_k
-$$
-that carries the interior of the source $2$-cell homeomorphically onto the interior of the target $2$-cell. The composite $M_j\to M_k\to M_k/M_k^1=S^2$ is then a homeomorphism from that open $2$-cell onto the complement of the basepoint, so $f$ has degree $\pm1$, the sign depending on the two chosen fundamental classes; only the nonvanishing of the degree is used below.
+The argument is the card's own, built on the converse of the preceding exercise: a relation of $r_{k}$ as $j$ commutators produces a map $M_{j}\to M_{k}$ of nonzero degree, which is impossible for $j<k$.
 
-By the converse direction proved with Exercise 11, a map $M_j\to M_k$ of nonzero degree can exist only if $j\ge k$. This contradicts $j<k$. Thus $r_k$ cannot be expressed as a product of fewer than $k$ commutators.
+Let $F$ be free on $x_{1},\ldots,x_{2k}$, and $r_{k}=[x_{1},x_{2}]\cdots[x_{2k-1},x_{2k}]\in F$.
+
+::: pf
+
+::: {.pf-step #setup}
+For each $g\ge1$ the surface $M_{g}$ has a CW structure with $1$-skeleton a wedge of $2g$ circles and a single $2$-cell attached along the commutator product $[a_{1},b_{1}]\cdots[a_{g},b_{g}]$; $M_{k}$ has the same structure with generators $x_{1},\ldots,x_{2k}$ and attaching word $r_{k}$.
+
+::: pf-proof
+The standard cell decomposition of a closed orientable surface of genus $g$ is a $2g$-gon with its boundary edges identified in pairs; the quotient of the boundary is a wedge of $2g$ circles generating the fundamental group freely, and the single $2$-cell is attached by the word reading the polygon's boundary, which in the standard identification is the commutator product. In particular $\pi_{1}(M_{k}^{1})=F$ with the $x_{i}$ a free basis.
+:::
+
+:::
+
+::: {.pf-step #skeleta}
+If $r_{k}=[v_{1},w_{1}]\cdots[v_{j},w_{j}]$ in $F$ with $j\ge1$, there is a map $g:(M_{j})^{1}\to(M_{k})^{1}$ carrying the $i$-th pair of loops to loops representing $v_{i},w_{i}$, and $g$ extends over the $2$-cell to a map $f:M_{j}\to M_{k}$.
+
+::: pf-proof
+The $1$-skeleton of $M_{j}$ is a wedge of $2j$ circles with free generators $a_{i},b_{i}$, so assigning loops representing $v_{i}$ and $w_{i}$ in $(M_{k})^{1}$ defines a map of the wedges. The boundary of the $2$-cell of $M_{j}$ is the loop $[a_{1},b_{1}]\cdots[a_{j},b_{j}]$, whose image under $g$ is the loop $[v_{1},w_{1}]\cdots[v_{j},w_{j}]=r_{k}$ — precisely, the attaching loop of the $2$-cell of $M_{k}$. Since $M_{k}$'s $2$-cell is attached along $r_{k}$, that loop is null-homotopic in $M_{k}$, so the composite $\partial D^{2}\to(M_{k})^{1}\subset M_{k}$ extends to a map of the $2$-cell $D^{2}\to M_{k}$, which may be taken to carry the interior of $D^{2}$ homeomorphically onto the interior of the $2$-cell of $M_{k}$. Together with $g$ on the $1$-skeleton this gives $f$.
+:::
+
+:::
+
+::: {.pf-step #degree}
+$f$ has degree $\pm1$.
+
+::: pf-proof
+Both surfaces are closed and orientable, so it suffices to compute the induced map on $H_{2}\cong\ZZ$. Compose $f$ with the collapse $c:M_{k}\to M_{k}/M_{k}^{1}\cong S^{2}$: the open $2$-cell of $M_{j}$ maps homeomorphically onto the open $2$-cell of $M_{k}$, which the collapse carries homeomorphically onto $S^{2}$ minus the basepoint, and the boundary of the $2$-cell of $M_{j}$ maps into the $1$-skeleton, hence to the basepoint. So $c\circ f$ is a map of $S^{2}$ that is a homeomorphism off a point, which has degree $\pm1$; and $c$ is an isomorphism on $H_{2}$, so $f_{*}$ is multiplication by $\pm1$.
+:::
+
+:::
+
+::: {.pf-step #contradiction}
+No such relation exists with $j<k$, so $r_{k}$ is not a product of fewer than $k$ commutators.
+
+::: pf-proof
+The converse of the preceding exercise gives that a map $M_{j}\to M_{k}$ of nonzero degree exists only if $j\ge k$. The reason, recorded here because it is what the argument uses: for a map of nonzero degree between closed oriented $n$-manifolds the induced map $f^{*}$ is injective in every degree, since if $f^{*}\alpha=0$ for $\alpha\in H^{m}(M_{k})$ then for the Poincaré dual class $\beta\in H^{n-m}(M_{k})$ one has $f^{*}(\alpha\smile\beta)=f^{*}\alpha\smile f^{*}\beta=0$, while $\alpha\smile\beta$ is a nonzero multiple of the fundamental class and $f^{*}$ of it is that multiple times $\deg f\cdot[M_{j}]\ne0$. So $f^{*}:H^{1}(M_{k})\to H^{1}(M_{j})$ is injective, whence $2k=\dim H^{1}(M_{k})\le\dim H^{1}(M_{j})=2j$, that is $j\ge k$. By step [](#degree){.pf-ref} the map constructed in step [](#skeleta){.pf-ref} has degree $\pm1\ne0$, so $j\ge k$. Hence an expression of $r_{k}$ as a product of $j$ commutators is possible only for $j\ge k$, which is the assertion.
+:::
+
+:::
+
+:::
 :::

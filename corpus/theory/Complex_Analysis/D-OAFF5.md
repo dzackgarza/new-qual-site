@@ -21,6 +21,8 @@ $$
 \frac{\partial F}{\partial\bar z}\coloneqq\frac12\qty{\frac{\partial F}{\partial x}+i\frac{\partial F}{\partial y}},
 $$
 and the operators $\del\coloneqq\del_z\coloneqq\frac12(\del_x-i\del_y)$ and $\delbar\coloneqq\del_{\bar z}\coloneqq\frac12(\del_x+i\del_y)$ are the \dfn{del} and \dfn{del-bar} operators.
+
+The two operators are defined in [@SS03, ch. 1, §2, Functions on the complex plane], as $\partial/\partial z=\frac12(\partial/\partial x+\frac1i\partial/\partial y)$ and $\partial/\partial\overline z=\frac12(\partial/\partial x-\frac1i\partial/\partial y)$, which are the two displayed above; the book attaches no name to them.
 :::
 
 ::: {.remark}

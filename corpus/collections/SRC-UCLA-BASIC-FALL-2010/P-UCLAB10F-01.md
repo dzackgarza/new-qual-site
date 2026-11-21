@@ -6,7 +6,9 @@ title: Positive distance between a compact set and a disjoint closed set
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Compactness
+  - Metric Spaces
 relations: []
 review: draft
 audit:

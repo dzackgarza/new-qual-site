@@ -6,7 +6,9 @@ title: $\int_{\abs{z}=r}\frac{dz}{(z-a)(z-b)}$ for $\abs{a}<r<\abs{b}$ without C
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 audit:

@@ -12,6 +12,20 @@ classification:
   - Cyclic Groups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Repaired and restructured. The card was label-steps with no proofs over twenty nested one-
+    sentence claims, ending in a pf-qed that only listed which step proves which part. Each part
+    now has an argument: the cyclic structure of E^× and Lagrange for (a); the division
+    algorithm on the exponent for (b), which is the step that converts 'q^k ≡ 1 mod n' into 'm |
+    k'; and for (c) the separability of x^n - 1 (whose derivative is checked to have no common
+    root with it, using gcd(n,q) = 1), the identification of its n roots with the elements of
+    order dividing n in the cyclic group F_{q^m}^×, and the tower law. The answer m = k is
+    unchanged. Not claimed: a retained solution set; the collection's provenance is the
+    examination paper only.
 ---
 ::: {.problem}
 Let $F = \FF_q$ be a finite field with $q$ elements. Let $n$ be a positive integer relatively prime to $q$ ($\gcd(n, q) = 1$), and let $\omega$ be a primitive $n$-th root of unity in an algebraic closure $\overline{F}$. Let $E = F(\omega) = F[\omega]$ and $k = [E : F]$.
@@ -24,167 +38,49 @@ Let $F = \FF_q$ be a finite field with $q$ elements. Let $n$ be a positive integ
 :::
 
 ::: {.solution}
+Throughout $F = \FF_{q}$, $n$ is a positive integer with $\gcd(n,q) = 1$, $\omega$ is a primitive $n$-th root of unity in an algebraic closure $\overline{F}$ of $F$, $E \coloneqq F(\omega)$, $k \coloneqq [E:F]$, and $m \coloneqq \operatorname{ord}_{n}(q)$ is the order of $q$ in $(\ZZ/n\ZZ)^{\times}$, so that $m$ is the least positive integer with $n \mid q^{m}-1$. The collection's `provenance` is the Fall 2019 examination paper, and no solutions sheet accompanies it, so the argument below is the card's own.
 
 ::: pf
 
-::: {.pf-step #s1}
-
-The integer $n$ divides $q^k-1$.
-
-::: pf-proof
-
-::: pf-step
-
-The field $E = F(\omega)$ is a finite field extension of $F = \FF_q$ of degree $[E : F] = k$.
-
-:::
-
-::: pf-step
-
-The cardinality of $E$ is $\cardinality{E} = \cardinality{F}^k = q^k$.
-
-:::
-
-::: pf-step
-
-The multiplicative group of units $E^\times = E \setminus \{0\}$ has order $\cardinality{E^\times} = q^k - 1$.
-
-:::
-
-::: pf-step
-
-Since $\omega$ is a primitive $n$-th root of unity, $\omega \in E^\times$ and the order of $\omega$ in the group $E^\times$ is $\operatorname{ord}(\omega) = n$.
-
-:::
-
-::: pf-step
-
-By Lagrange's Theorem for finite groups, the order of any element divides the order of the group.
-
-:::
-
-::: pf-step
-
-Thus $n$ divides $q^k - 1$.
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-The multiplicative order $m=\operatorname{ord}_n(q)$ divides $k$.
+::: {.pf-step #a}
+(a) $n \mid q^{k} - 1$.
 
 ::: pf-proof
-
-::: pf-step
-
-By Part (a), $n \mid (q^k - 1)$, which means $q^k \equiv 1 \pmod n$.
-
-:::
-
-::: pf-step
-
-Since $\gcd(n, q) = 1$, the residue class $[q]_n \in (\ZZ/n\ZZ)^\times$ has finite order $m = \operatorname{ord}_n(q)$.
-
-:::
-
-::: pf-step
-
-In any group, $g^k = e$ if and only if the order $\operatorname{ord}(g)$ divides $k$.
-
-:::
-
-::: pf-step
-
-Applying this to $[q]_n \in (\ZZ/n\ZZ)^\times$ yields $m \mid k$.
+$E$ is a finite extension of the finite field $F$, so $\cardinality{E} = q^{k}$; its multiplicative group $E^{\times}$ is cyclic of order $q^{k}-1$. Since $\omega \in E^{\times}$ has order exactly $n$ — it is a primitive $n$-th root of unity — Lagrange's theorem gives $n \mid q^{k}-1$.
 
 :::
 
 :::
 
-:::
-
-::: {.pf-step #s3}
-
-The extension degree is $k=m$.
+::: {.pf-step #b}
+(b) $m \mid k$.
 
 ::: pf-proof
-
-::: pf-step
-
-Since $m = \operatorname{ord}_n(q)$, $q^m \equiv 1 \pmod n$, so $n$ divides $q^m - 1$.
+By step [](#a){.pf-ref} $n$ divides $q^{k}-1$, that is $q^{k} \equiv 1 \pmod n$, so $k$ is a positive integer with $n \mid q^{k}-1$. The order $m$ of $q$ modulo $n$ is the least such positive integer, and the set of positive integers $j$ with $q^{j} \equiv 1 \pmod n$ is exactly the set of multiples of $m$: writing $j = am + r$ with $0 \le r < m$ gives $q^{j} \equiv q^{r}$, so $q^{j} \equiv 1$ forces $r = 0$ by minimality of $m$. Hence $m \mid k$.
 
 :::
 
-::: pf-step
-
-Let $K = \FF_{q^m}$ be the unique subfield of $\overline{F}$ with $q^m$ elements, which is an extension of $F = \FF_q$ of degree $[K : F] = m$.
-
 :::
 
-::: pf-step
+::: {.pf-step #c}
+(c) $m = k$.
 
-The multiplicative group $K^\times$ is cyclic of order $q^m - 1$.
+::: pf-proof
+By definition of $m$ one has $n \mid q^{m}-1$, so the multiplicative group $\FF_{q^{m}}^{\times}$, which is cyclic of order $q^{m}-1$, has an element of order $n$. The polynomial $x^{n}-1$ is separable — its derivative $nx^{n-1}$ has no root in common with it, since $n \ne 0$ in $\FF_{q}$ by $\gcd(n,q) = 1$ and $x \ne 0$ at any root — so it has exactly $n$ distinct roots in $\FF_{q^{m}}$, and they are precisely the elements of order dividing $n$. The primitive $n$-th roots are the generators of that cyclic subgroup of order $n$, and they are the powers $\omega^{i}$ with $i$ coprime to $n$; since the roots of $x^{n}-1$ in $\FF_{q^{m}}$ already number $n$ and include one primitive root, all the powers $\omega^{i}$ lie in $\FF_{q^{m}}$, in particular $\omega$ itself. Hence $E = F(\omega) \subseteq \FF_{q^{m}}$, and by the tower law $k = [E:F]$ divides $[\FF_{q^{m}}:F] = m$. With step [](#b){.pf-ref} this gives $m = k$.
+
+:::
 
 :::
 
 ::: pf-step
+The three assertions hold: $n \mid q^{k}-1$, $m \mid k$, and $m = k$, so $k$ is the multiplicative order of $q$ modulo $n$.
 
-Because $n$ divides $q^m - 1$, the cyclic group $K^\times$ contains a cyclic subgroup of order $n$.
-
-:::
-
-::: pf-step
-
-The elements of this subgroup are the $n$ distinct roots of $x^n - 1$ in $K$ (which are distinct because $\gcd(n, q) = 1$ ensures $\frac{d}{dx}(x^n - 1) = n x^{n-1} \ne 0$).
-
-:::
-
-::: pf-step
-
-Since $\omega$ is a primitive $n$-th root of unity, $\omega$ is a root of $x^n - 1$, and therefore $\omega \in K$.
-
-:::
-
-::: pf-step
-
-Since $F \subseteq K$ and $\omega \in K$, the subfield generated by $F$ and $\omega$ satisfies
-    $$E = F(\omega) \subseteq K.$$
-
-:::
-
-::: pf-step
-
-By the Tower Law for field extensions:
-    $$m = [K : F] = [K : E] \cdot [E : F] = [K : E] \cdot k.$$
-
-:::
-
-::: pf-step
-
-This implies $k \le m$ (and $k \mid m$).
-
-:::
-
-::: pf-step
-
-Combining $m \mid k$ (from Part (b)) and $k \le m$ with $k, m \ge 1$ forces $m = k$.
+::: pf-proof
+Parts (a) and (b) are steps [](#a){.pf-ref} and [](#b){.pf-ref}; part (c) is step [](#c){.pf-ref}, which closes the two divisibilities in the single equality $m = k$.
 
 :::
 
 :::
 
 :::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} establish parts (a), (b), and (c), respectively.
-
-:::
-
-:::
-
 :::

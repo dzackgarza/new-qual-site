@@ -27,6 +27,8 @@ find $u(x, y, t)$ knowing that it satisfies the wave equation with a velocity $v
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 The wave equation is
 $$
 u_{tt}=v^2(u_{xx}+u_{yy})

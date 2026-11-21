@@ -39,6 +39,24 @@ audit:
     containing y are meant. Its index variables are j, k and gamma and are not confused with
     neighborhoods, so the slip is one of naming and not the one recorded here before. This
     supersedes the 2026-11-10 note above.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Munkres, Topology, 2nd ed. (2000), §29 Supplementary Exercises: Nets,
+    Exercise 5 on printed p. 187: "Show that if $X$ is Hausdorff, a net in $X$ converges to
+    at most one point." The card states it verbatim and uses the convergence definition of
+    Exercise 3 on the same page. The proof is sound: distinct limits $x \ne y$ give disjoint
+    neighbourhoods $U$ of $x$ and $V$ of $y$; convergence to each gives $\alpha_0$ and
+    $\beta_0$ beyond which the net lies in $U$ and in $V$; directedness of the index set
+    gives $\gamma$ above both, and $x_\gamma \in U \cap V$ is impossible. Checked against
+    Antonio Maria Di Mauro's answer 3743595 to Math StackExchange 3743525, from which the
+    card is transcribed, and against the accepted answer 3743601 by Mittens, whose Hausdorff
+    half is the same argument. dbFin's page for this exercise makes the same argument with
+    its separation printed as "two non-intersecting neighborhoods $x\in X$ and $y\in Y$",
+    where the neighbourhoods $U$ of $x$ and $V$ of $y$ are meant and the space $Y$ is
+    undefined; the card does not carry the slip. No defect found; nothing was changed. Not
+    checked: no published set outside those three was read in this pass.
 ---
 
 ::: {.exercise}

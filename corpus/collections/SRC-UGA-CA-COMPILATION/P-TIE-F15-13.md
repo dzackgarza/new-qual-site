@@ -6,7 +6,9 @@ title: Roots of $z^4-6z+3$ in $\abs{z}<1$, $1<\abs{z}<2$ and $\abs{z}>2$
 classification:
   areas:
     - complex-analysis
-  topics: []
+  topics:
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 audit:

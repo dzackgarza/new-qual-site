@@ -5,7 +5,9 @@ kind: problem
 title: "Uniform convergence on the boundary controls a holomorphic sequence inside"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:
@@ -13,15 +15,53 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis section 1.3, problem 5 (August 2, 2004) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md. Flash drops the closure bar from the continuity domain, while the same sentence requires boundary values on $\partial D$; the card normalizes that concrete extraction defect to $\overline D$.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 34, printed page 2: section 1.3 item 5 of
+    the Preliminary Examination in Analysis, Wesleyan University, August 2, 2004. The
+    page had cited only the extraction; it now names the examination, its item and the
+    page of the scan. The statement is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The proof ended with a pf-qed that only announced that an earlier step had answered
+    the question, which STYLE-08 forbids; it is dropped, and the step that carries the
+    result is now the QED step. No argument or statement changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read at 200 dpi on 2026-11-19, the printed item 5 concludes uniform convergence on D, not on
+    the closure, while its continuity hypothesis is on the closure. The card had carried the
+    stronger conclusion on the closure as if it were the printed one; the statement now reads as
+    printed, and the solution records that its maximum-modulus step yields the stronger
+    conclusion on the closure.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
 Let $D\subset\CC$ be a bounded domain.
 Suppose each $f_n$ is continuous on $\overline D$ and analytic on $D$.
-If $(f_n)$ converges uniformly on $\partial D$, prove that it converges uniformly on $\overline D$.
+If $(f_n)$ converges uniformly on $\partial D$, prove that it converges uniformly on $D$.
 :::
 
 ::: {.solution}
+The item is section 1.3 item 5 of the Preliminary Examination in Analysis, Wesleyan University,
+August 2, 2004 (uniform convergence on the boundary of a bounded domain gives uniform convergence on the domain).
+The printed conclusion is uniform convergence on $D$; the maximum-modulus step below gives it on
+$\overline D$, which is the stronger statement, so the printed conclusion follows.
 
 ::: pf
 
@@ -212,25 +252,6 @@ $$
 
 :::
 
-::: {.pf-step #s1-6}
-
-In particular,
-$$
-\boxed{
-f_n\to f
-\text{ uniformly on }\overline D.
-}
-$$
-
-
-::: pf-proof
-
-This is exactly the conclusion of step [](#s1-5){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-step
 
 Moreover, the limit $f$ is holomorphic on $D$.
@@ -255,11 +276,6 @@ This extra conclusion is not required for the uniform-convergence claim.
 
 :::
 
-::: pf-qed
-
-Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} prove the required uniform convergence on the closure.
-
-:::
 
 :::
 

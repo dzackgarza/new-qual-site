@@ -10,7 +10,7 @@ relations: []
 review: draft
 completion: incomplete
 provenance:
-- https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2019/alggeom-2019-c1.pdf
+- https://web.archive.org/web/20210507030827/https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2019/alggeom-2019.pdf
 source:
   source_kind: compilation
   sections:
@@ -81,3 +81,9 @@ source:
 ---
 
 Exercises from Andreas Gathmann's *Algebraic Geometry* lecture notes, in five problem sheets running from affine varieties and the Nullstellensatz through the Zariski topology and dimension, sheaves and stalks, and morphisms of affine varieties and of projective space.
+
+::: {.remark}
+The problems are numbered against the 2019 edition of the notes, which RPTU no longer serves: the class-notes host `www.mathematik.uni-kl.de` answers every request under `~gathmann/` with a placeholder page, and the notes page that replaced it, `https://agag-gathmann.math.rptu.de/alggeom`, offers only the 2002, 2014 and 2021 editions. The list names the archived PDF of the edition transcribed — the whole book, not the chapter file `alggeom-2019-c1.pdf` it named before, because the cards cite exercises in chapters 1 through 5. The hostname-mismatch error that `just provenance` reported for the old href was not the only failure: under the mismatched certificate the server answered 404.
+
+The live 2021 edition carries the same exercise numbers at all twenty-four exercises these cards cite, and the differences in text extraction there are symbol rendering, so a reader with the current site can check a card against it; it is not the edition the cards were transcribed from and is deliberately not listed.
+:::

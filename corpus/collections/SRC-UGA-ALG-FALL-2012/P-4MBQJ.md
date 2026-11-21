@@ -56,11 +56,6 @@ Both $N_i$ are proper, since $N_1=M$ would imply $N=N_2$, and similarly for $N_2
 
 :::
 
-::: pf-qed
-
-Step [](#s1-1){.pf-ref} is the assertion.
-
-:::
 
 :::
 

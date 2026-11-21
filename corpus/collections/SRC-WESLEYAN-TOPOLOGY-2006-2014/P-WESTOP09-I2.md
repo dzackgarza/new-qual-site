@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP09-I2
 kind: problem
 title: The slotted plane is Hausdorff, separable, nonregular, and not first countable
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Separation Axioms, Counterexamples]}
 relations: []
 review: draft
 audit:

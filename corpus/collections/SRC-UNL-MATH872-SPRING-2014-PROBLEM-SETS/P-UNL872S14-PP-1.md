@@ -5,7 +5,8 @@ kind: problem
 title: Ham sandwich theorem for three blocks in $\RR^3$ via Borsuk–Ulam
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Borsuk-Ulam Theorem
 relations: []
 review: draft
 audit:
@@ -13,6 +14,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against assignment PP.1 on the retained UNL Math 872 Section 001 Spring 2014 problem-sets page PDF.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained problem-set page `assets/attachments/Math_872_-_Section_1_-_Spring_2014_-_Problem_sets_page.pdf`: the item is (PP.1), self-contained on that page,
+    and its printed words are the card's. The label and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -54,6 +62,7 @@ Discuss why these functions are continuous.
 :::
 
 ::: {.solution}
+This is item (PP.1) of the problem-set page retained as `assets/attachments/Math_872_-_Section_1_-_Spring_2014_-_Problem_sets_page.pdf`, and the statement below is its wording.
 
 Write
 $$

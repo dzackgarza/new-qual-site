@@ -18,6 +18,19 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: "Compared with Complex Analysis (5) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMCA5, whose solution repeats this Möbius-composition argument."
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked, including the two differentiation steps the card
+    computes. Part (a) states Schwarz's lemma with both inequalities and the equality case. Part
+    (b): the disc automorphisms phi_w(z) = (w-z)/(1-conj(w)z) are used with the derivatives
+    phi_w'(0) = -(1-|w|^2) and phi_w'(w) = -1/(1-|w|^2), which are correct (differentiate the
+    quotient, or check at z = w where the numerator vanishes); g = phi_b o f o phi_a maps the disc
+    into itself and fixes 0, so Schwarz gives |g'(0)| <= 1; the chain rule gives
+    g'(0) = f'(a)(1-|a|^2)/(1-|f(a)|^2), and dividing by 1-|a|^2 > 0 gives the Schwarz-Pick
+    inequality. The constant is sharp, attained by automorphisms, which the card does not claim and
+    does not need. Nothing outside the exercise checked.
 ---
 
 ::: {.problem}

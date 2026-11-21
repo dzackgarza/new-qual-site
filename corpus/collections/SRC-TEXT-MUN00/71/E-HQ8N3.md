@@ -53,7 +53,7 @@ $\pi_1(X\vee Y,q)\cong\pi_1(X,q)*\pi_1(Y,q)$.
 
 ::: pf-proof
 
-Exercise 1 of this section, printed p. 438.
+Exercise 1 of this section.
 
 :::
 
@@ -65,7 +65,7 @@ $\pi_1(X,q)\cong\ZZ$ and $\pi_1(Y,q)$ is trivial.
 
 ::: pf-proof
 
-$\pi_1(S^1)\cong\ZZ$ (Theorem 54.5, printed p. 345). $S^2$ is simply connected by Theorem 59.3 (printed p. 369), since $2\ge2$, so $\pi_1(S^2)$ is the trivial group.
+$\pi_1(S^1)\cong\ZZ$ (Theorem 54.5). $S^2$ is simply connected by Theorem 59.3, since $2\ge2$, so $\pi_1(S^2)$ is the trivial group.
 
 :::
 
@@ -77,7 +77,7 @@ $\pi_1(X\vee Y,q)\cong\ZZ$.
 
 ::: pf-proof
 
-By steps 2 and 3, $\pi_1(X\vee Y,q)\cong\ZZ*\{1\}$, the free product of $\ZZ$ with the trivial group. A reduced word in this free product is a sequence of nontrivial elements of $\ZZ$ with the letters from the trivial factor omitted, and the multiplication is that of $\ZZ$; so $\ZZ*\{1\}\cong\ZZ$, also by the extension condition of Lemma 68.3 (printed p. 418) applied twice.
+By steps 2 and 3, $\pi_1(X\vee Y,q)\cong\ZZ*\{1\}$, the free product of $\ZZ$ with the trivial group. A reduced word in this free product is a sequence of nontrivial elements of $\ZZ$ with the letters from the trivial factor omitted, and the multiplication is that of $\ZZ$; so $\ZZ*\{1\}\cong\ZZ$, also by the extension condition of Lemma 68.3 applied twice.
 
 :::
 

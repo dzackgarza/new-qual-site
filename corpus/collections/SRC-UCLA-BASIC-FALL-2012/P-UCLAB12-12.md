@@ -6,7 +6,9 @@ title: Row rank equals column rank
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Rank and Nullity
+  - Linear Independence
 relations: []
 review: draft
 ---

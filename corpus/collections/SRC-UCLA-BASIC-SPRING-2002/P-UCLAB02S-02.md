@@ -5,7 +5,9 @@ kind: problem
 title: The rationals are not a G-delta subset of the real line
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - G-delta Sets
+  - Baire Category Theorem
 relations: []
 review: draft
 audit:

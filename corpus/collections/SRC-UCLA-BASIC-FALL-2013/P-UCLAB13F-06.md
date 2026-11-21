@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB13F-06
 kind: problem
 title: A subsequence criterion for convergence in a compact metric space
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Compactness, Sequences of Numbers]}
 relations: []
 review: draft
 audit:

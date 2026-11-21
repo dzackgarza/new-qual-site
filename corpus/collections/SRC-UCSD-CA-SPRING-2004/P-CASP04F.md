@@ -10,6 +10,19 @@ classification:
   - Complex Analysis
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-18
+  note: Read against the UCSD Complex Analysis Qualifying Exam, Spring 2004; statement and hint match.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    No retained solution set covers this examination. Structured the card's own proof:
+    the Weierstrass zero divisor, the invertible jet map determining each rational
+    principal part, Mittag--Leffler for the global meromorphic sum, and cancellation
+    against the zero divisor. Checked that the triangular jet map has nonzero diagonal.
 ---
 
 ::: {.problem}
@@ -21,38 +34,46 @@ Hint: First show that, given an integer $m$, complex numbers $w_k$ for $k = 1, \
 :::
 
 ::: {.solution}
-By the Weierstrass theorem on prescribed zeros in a plane domain, choose
-$g\in H(G)$ whose zero at each $z_n$ has exact order $m_n+1$ and which has no
-other zeros forced by the construction.
 
-Fix $n$. Write locally
-$$
-g(z)=(z-z_n)^{m_n+1}u_n(z),
-\qquad u_n(z_n)\ne0.
-$$
-We claim that there are coefficients $b_{n,1},\dots,b_{n,m_n+1}$ such that
+No retained solution set covers this examination; the argument below is the card's own.
+
+::: pf
+
+::: {.pf-step #zero-divisor}
+There is $g\in H(G)$ whose only zeros are at the points $z_n$, with $\operatorname{ord}_{z_n}g=m_n+1$.
+
+::: pf-proof
+The sequence has no limit point in $G$, so the prescribed multiplicity function is a divisor on the plane domain $G$. The Weierstrass theorem on prescribed zeros gives a holomorphic $g$ with exactly these zeros and orders.
+:::
+:::
+
+::: {.pf-step #local-jet-map}
+At each $z_n$, write $g(z)=(z-z_n)^{m_n+1}u_n(z)$ with $u_n(z_n)\ne0$. For arbitrary prescribed $w_{n,0},\ldots,w_{n,m_n}$, there are unique $b_{n,1},\ldots,b_{n,m_n+1}$ such that
 $$
 S_n(z)=\sum_{j=1}^{m_n+1}\frac{b_{n,j}}{(z-z_n)^j}
 $$
-has the property that $S_ng$ extends holomorphically across $z_n$ with the
-prescribed jet $w_{n,0},\dots,w_{n,m_n}$ there. Indeed, multiplication by the
-unit $u_n$ is an invertible triangular linear operation on $m_n$-jets, while
-the coefficients $b_{n,j}$ independently prescribe the coefficients of
-powers $(z-z_n)^0,\dots,(z-z_n)^{m_n}$. Thus the required coefficients exist
-uniquely.
+has $S_ng$ removable at $z_n$ with the prescribed jet.
 
-Now apply the Mittag--Leffler theorem on $G$ to obtain a meromorphic function
-$S$ whose principal part at each $z_n$ is $S_n$ and which has no other poles.
-Set
-$$
-f=gS.
-$$
-At each $z_n$, the zero of $g$ cancels the pole of $S$, so $f$ has a
-removable singularity there; away from the $z_n$ it is holomorphic. By the
-choice of the principal part $S_n$, its removable extension satisfies
-$$
-f^{(k)}(z_n)=w_{n,k},
-\qquad 0\le k\le m_n.
-$$
-Thus the extended function belongs to $H(G)$ and has all the required jets.
+::: pf-proof
+Multiplying the principal part by $g$ gives $(z-z_n)^{-j}(z-z_n)^{m_n+1}u_n(z)=(z-z_n)^{m_n+1-j}u_n(z)$. The coefficient of $(z-z_n)^r$, for $0\le r\le m_n$, depends on $b_{n,m_n+1-r}$ and, when $r>0$, on earlier coefficients. The diagonal coefficient is $u_n(z_n)\ne0$, so the triangular linear system has a unique solution for every jet.
+:::
+:::
+
+::: {.pf-step #global-principal-parts}
+There is a meromorphic $S$ on $G$ whose principal part at $z_n$ is $S_n$ and which has no other poles.
+
+::: pf-proof
+The prescribed principal parts have no accumulation point in $G$, so the Mittag--Leffler theorem produces such an $S$.
+:::
+:::
+
+::: {.pf-step #product}
+The product $f=gS$ has removable singularities at every $z_n$, and its holomorphic extension satisfies $f^{(k)}(z_n)=w_{n,k}$ for $0\le k\le m_n$.
+
+::: pf-proof
+Near $z_n$, $f=g(S-S_n)+gS_n$. The first term is holomorphic because $g$ vanishes to order $m_n+1$ and $S-S_n$ is holomorphic; the second has a removable singularity with the prescribed jet by step [](#local-jet-map){.pf-ref}. Away from the $z_n$, both $g$ and $S$ are holomorphic. Extending across the removable points therefore gives the required $f\in H(G)$.
+:::
+:::
+
+:::
 :::

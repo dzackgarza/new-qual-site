@@ -30,6 +30,46 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-19
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A third retained solution read at this exercise. Read Yang Pi-Yeh,
+    Hartshorne Solutions (9 June 2019), Solution 5.4.1, printed p. 109,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.4.1, printed p. 406, asks for
+    the morphism of the blowup of P^2 at two points to a nonsingular quadric in
+    P^3 and for the identification of that blowup with the quadric blown up at
+    one point. Recomputed: the four conics x_0x_1, x_1x_2, x_2x_0, x_2^2 span
+    the conics through (1,0,0) and (0,1,0); the image of the map they define
+    satisfies y_0 y_1 = y_2 y_3; and the saturation of the ideal they generate
+    is the ideal of the two points. Found: the entry asserts the same two
+    compositions as Egbert's, pi o psi = id and psi o pi = id, which the card's
+    remark already corrects for Egbert; pi o psi is the blowup map on the
+    blown-up plane. Not checked: Yang's Solutions outside printed pp. 109-111,
+    and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.4.1 at printed p. 109 and
+    says that the correction of the two false composition claims, recorded
+    there for Egbert, applies to it word for word. No step, statement or
+    hypothesis of the card changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The body of the card is checked against the citation rule and carries no printed or PDF page
+    locator: the solution and the remark name the numbered statements they use, and no sentence of
+    either quotes a page or an offset. The page locators inside the dated events above are left as
+    written under QUAL-11, where they remain the record of what was read and of which rendering of
+    each source was consulted, and they are not citations of the body; the rule that a body cites
+    numbered statements only is met by the solution and the remark as they stand. Checked: the
+    whole body, by search for page references and by reading it; no statement, step or hypothesis
+    changes. Not checked: no source was re-read for this event, and nothing in the mathematics of
+    the card is touched.
 ---
 
 ::: {.problem}
@@ -349,5 +389,9 @@ Steps [](#conics-through-two-points-basis){.pf-ref}, [](#rational-map-base-locus
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.4.1, PDF pp. 285--286: he takes the conics through $P_1=(0,0,1)$ and $P_2=(0,1,0)$ with basis $x_0^2,x_0x_1,x_0x_2,x_1x_2$, notes that the map $[x_0^2:x_0x_1:x_0x_2:x_1x_2]$ has image in $y_0y_3=y_1y_2$, identifies the graph $\Gamma$ with the blowup of $\PP^2$ at the two points and with the blowup of the quadric at $p=(0,0,0,1)$, and concludes $X'=\Gamma$. His intermediate composition claims are wrong as written, $\pi\circ\psi=\mathrm{id}_{\PP^2}$ and $\psi\circ\pi=\mathrm{id}_Q$, since $\pi\circ\psi$ is the blowup map on $X'$ and $\psi\circ\pi$ is undefined at $p$; what is true is that the graph of the projection $\rho$ from $p$ is $X'$, which is steps [](#graph-is-blowup-both-ways){.pf-ref} and [](#projection-inverse){.pf-ref} here, with the quadric's nonsingularity in step [](#quadric-nonsingular){.pf-ref} and the contracted curve $L\sim H-E_1-E_2$ in step [](#exceptional-line-contracted){.pf-ref}. Matches in substance.
+The exercise is Hartshorne, Exercise V.4.1, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is that exercise's text, the reference to (4.1) included.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.4.1: he takes the conics through $P_1=(0,0,1)$ and $P_2=(0,1,0)$ with basis $x_0^2,x_0x_1,x_0x_2,x_1x_2$, notes that the map $[x_0^2:x_0x_1:x_0x_2:x_1x_2]$ has image in $y_0y_3=y_1y_2$, identifies the graph $\Gamma$ with the blowup of $\PP^2$ at the two points and with the blowup of the quadric at $p=(0,0,0,1)$, and concludes $X'=\Gamma$. His intermediate composition claims are wrong as written, $\pi\circ\psi=\mathrm{id}_{\PP^2}$ and $\psi\circ\pi=\mathrm{id}_Q$, since $\pi\circ\psi$ is the blowup map on $X'$ and $\psi\circ\pi$ is undefined at $p$; what is true is that the graph of the projection $\rho$ from $p$ is $X'$, which is steps [](#graph-is-blowup-both-ways){.pf-ref} and [](#projection-inverse){.pf-ref} here, with the quadric's nonsingularity in step [](#quadric-nonsingular){.pf-ref} and the contracted curve $L\sim H-E_1-E_2$ in step [](#exceptional-line-contracted){.pf-ref}. Matches in substance.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.1, is the same argument in the other coordinates: the conics through $P_1=(1,0,0)$ and $P_2=(0,1,0)$ have the basis $x_0x_1,x_1x_2,x_2x_0,x_2^2$, the map $\psi$ sends these to $y_1,y_2,y_3,y_0$, the image satisfies $y_0y_1=y_2y_3$, and the graph of $\pi\colon Y\to\PP^2$, $(x,y,z,w)\mapsto(x,z,w)$, is identified with the blowup of $\PP^2$ at $P_1,P_2$ through the saturation of the ideal $(x_0x_1,x_1x_2,x_2x_0,x_2^2)$. It repeats Egbert's two false claims, "$\pi\circ\psi=\mathrm{id}_{\PP^2}$, and $\psi\circ\pi=\mathrm{id}_Y$", for the same reason, so the correction above applies to it word for word.
 :::

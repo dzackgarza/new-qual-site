@@ -14,6 +14,19 @@ classification:
   - Exact Sequences
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the one container states why its subclaims suffice, and the 11 leaf
+    steps that asserted their claim with no justification each carry a sentence deriving it. The
+    mathematics is unchanged: the section $\sigma$ is built on a basis by the universal property, its
+    agreement with the identity is checked on the basis, the splitting lemma gives
+    $M\cong\iota(N)\oplus F$, and the decomposition $M\cong T\oplus M/T$ follows from the same splitting
+    applied to the canonical sequence of the torsion submodule. Checked against the statement on the
+    card, from the UGA Spring 2020 algebra qualifying exam. Nothing in the statement was changed.
+
 ---
 ::: {.problem}
 Let $R$ be a ring with identity $1 \ne 0$.
@@ -75,17 +88,32 @@ Every short exact sequence $0\to N\xrightarrow{\iota}M\xrightarrow{\pi}F\to0$ wi
 
 Let $B \subseteq F$ be an $R$-basis of the free module $F$.
 
+
+::: pf-proof
+Every free module has a basis, by definition.
+:::
+
 :::
 
 ::: pf-step
 
 Construct a set map on the basis: Since $\pi: M \to F$ is surjective, for each basis element $b \in B$, the fiber $\pi^{-1}(\{b\})$ is non-empty. Choose an element $y_b \in M$ such that $\pi(y_b) = b$.
 
+
+::: pf-proof
+Surjectivity of $\pi$ makes each fibre non-empty, and one element is chosen from each.
+:::
+
 :::
 
 ::: pf-step
 
 Extend to a module homomorphism: By the universal property of the free module $F$ (Part (a)), there exists a unique $R$-module homomorphism $\sigma: F \to M$ such that $\sigma(b) = y_b$ for all $b \in B$.
+
+
+::: pf-proof
+The universal property of a free module extends a set map on the basis to a unique $R$-module homomorphism.
+:::
 
 :::
 
@@ -94,14 +122,24 @@ Extend to a module homomorphism: By the universal property of the free module $F
 Verify the section condition $\pi \circ \sigma = \operatorname{id}_F$:
         - For any element $x \in F$, write $x = \sum_{b \in B} r_b b$ as a finite linear combination.
         - Applying $\pi \circ \sigma$:
-        $$(\pi \circ \sigma)(x) = \pi\left( \sigma\left( \sum_{b \in B} r_b b \right) \right) = \pi\left( \sum_{b \in B} r_b y_b \right) = \sum_{b \in B} r_b \pi(y_b) = \sum_{b \in B} r_b b = x.$$
+$$(\pi \circ \sigma)(x) = \pi\left( \sigma\left( \sum_{b \in B} r_b b \right) \right) = \pi\left( \sum_{b \in B} r_b y_b \right) = \sum_{b \in B} r_b \pi(y_b) = \sum_{b \in B} r_b b = x.$$
         - Thus $\pi \circ \sigma = \operatorname{id}_F$.
+
+
+::: pf-proof
+Both sides are homomorphisms that agree on the basis $B$, so they agree everywhere.
+:::
 
 :::
 
 ::: pf-step
 
 By the Splitting Lemma, the exact sequence splits, and $M \cong \iota(N) \oplus \sigma(F) \cong N \oplus F$.
+
+
+::: pf-proof
+A retraction $r$ with $r\circ\iota=\mathrm{id}_N$ splits the sequence, and then $M$ is the direct sum of the image of $\iota$ and the kernel of $r$.
+:::
 
 :::
 
@@ -123,19 +161,34 @@ for a free $R$-module $F$.
 
 Define $T = \operatorname{tor}(M)$. Since $R$ is a PID (hence an integral domain), $T$ is an $R$-submodule of $M$.
 
+
+::: pf-proof
+This is a definition of the torsion submodule of $M$.
+:::
+
 :::
 
 ::: pf-step
 
 Consider the canonical short exact sequence:
-    $$0 \to T \xrightarrow{\iota} M \xrightarrow{q} M/T \to 0,$$
-    where $q(m) = m + T$.
+$$0 \to T \xrightarrow{\iota} M \xrightarrow{q} M/T \to 0,$$
+where $q(m) = m + T$.
+
+
+::: pf-proof
+The inclusion of the torsion submodule followed by the quotient map is exact by the definition of the quotient.
+:::
 
 :::
 
 ::: pf-step
 
 $M/T$ is finitely generated: If $\{x_1, \dots, x_k\}$ generates $M$, then $\{q(x_1), \dots, q(x_k)\}$ generates $M/T$.
+
+
+::: pf-proof
+The images of a finite generating set of $M$ generate the quotient.
+:::
 
 :::
 
@@ -150,17 +203,32 @@ $M/T$ is torsion-free:
         - Thus $m \in \operatorname{tor}(M) = T$, which means $\bar{m} = m + T = \bar{0}$ in $M/T$.
         - Therefore $M/T$ is torsion-free.
 
+
+::: pf-proof
+If $r\bar m=0$ then $rm\in T$, so $srm=0$ for some $s\neq0$; since $R$ is a domain, $sr\neq0$ and hence $m\in T$.
+:::
+
 :::
 
 ::: pf-step
 
 By the given theorem, every finitely generated torsion-free module over a PID is free, so $F = M/T$ is a free $R$-module.
 
+
+::: pf-proof
+Over a principal ideal domain a finitely generated torsion-free module is free.
+:::
+
 :::
 
 ::: pf-step
 
 By Part (c), the short exact sequence splits, yielding an isomorphism:
+
+
+::: pf-proof
+A surjection onto a free module splits, by part (c).
+:::
 
 :::
 

@@ -40,6 +40,7 @@ Use a Segre embedding.
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.5.12, transcribed and checked against the exercise as printed: part (a), the two closed immersions $i_\alpha$, $i_\beta$ and the Segre embedding, giving $\mathscr L\otimes\mathscr M=i_*(\mathcal O_{\PP^N}(1))$; and part (b), the same comparison in $\PP^a\times\PP^b\times\PP^c$ with three closed immersions.
 Use [[D-MODAMPLE|very ampleness]] and the [[D-MORIMM|immersion]] convention in which the source is an open subscheme of a closed subscheme of the target.
 
 ::: pf

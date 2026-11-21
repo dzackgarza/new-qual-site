@@ -6,7 +6,9 @@ title: $\QQ$ is not a $G_\delta$ subset of $\RR$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - G-delta Sets
+  - Baire Category Theorem
 relations: []
 review: draft
 ---

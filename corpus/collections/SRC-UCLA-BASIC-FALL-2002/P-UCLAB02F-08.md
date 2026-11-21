@@ -5,7 +5,8 @@ kind: problem
 title: Rotation by $60^\circ$ about the axis $(1,1,2)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Rotations
 relations: []
 review: draft
 audit:

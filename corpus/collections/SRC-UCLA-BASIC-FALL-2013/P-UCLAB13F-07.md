@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB13F-07
 kind: problem
 title: Hermite interpolation with prescribed derivatives
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Interpolation]}
 relations: []
 review: draft
 audit:

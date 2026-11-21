@@ -5,16 +5,16 @@ order: 90
 
 # Solutions (rings)
 
-## Ring homomorphisms and polynomial rings
+Joseph A. Gallian, *Contemporary Abstract Algebra*, seventh edition: solution outlines for a selection of the exercises of chapters 12--17.
 
-[Solution outlines for chapter 15 (ring homomorphisms) of Gallian, *Contemporary Abstract Algebra*](attachments/Ch15Sltns.pdf)
+- [[SRC-CH12-RING-SOLUTION-OUTLINES|Chapter 12, introduction to rings]]: the definition and examples of rings, properties of rings, subrings.
 
-[Solution outlines for chapter 16 (polynomial rings) of Gallian, *Contemporary Abstract Algebra*](attachments/Ch16Sltns.pdf)
+- [[SRC-CH13-RING-SOLUTION-OUTLINES|Chapter 13, integral domains]]: integral domains, fields, the characteristic of a ring.
 
-[Solution outlines for chapter 17 (factorization of polynomials) of Gallian, *Contemporary Abstract Algebra*](attachments/Ch17Sltns.pdf)
+- [[SRC-CH14-IDEAL-SOLUTION-OUTLINES|Chapter 14, ideals and factor rings]]: ideals, factor rings, prime and maximal ideals.
 
-## Commutative algebra
+- [[SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES|Chapter 15, ring homomorphisms]]: homomorphisms and their properties, the field of quotients.
 
-- [Problems for discussion](https://www.mit.edu/~fengt/CommutativeAlg.pdf), also collected in [one file](https://www.mit.edu/~fengt/CAlgProblems.pdf).
+- [[SRC-CH16-POLYNOMIAL-RING-SOLUTION-OUTLINES|Chapter 16, polynomial rings]]: notation and terminology, the division algorithm and its consequences.
 
-- [Hints and solutions](https://www.mit.edu/~fengt/CAlgSolns.pdf) to those problems.
+- [[SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES|Chapter 17, factorization of polynomials]]: reducibility tests, irreducibility tests, unique factorization in $\ZZ[x]$.

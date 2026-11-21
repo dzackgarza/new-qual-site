@@ -6,7 +6,9 @@ title: Continuous pointwise limits without convergence of integrals
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Pointwise Convergence
+  - Integrals
 relations: []
 review: draft
 audit:

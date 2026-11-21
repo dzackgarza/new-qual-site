@@ -31,6 +31,36 @@ audit:
     "positron0802", "shenapse", "9beach", "kyp44", the seven further GitHub manuals, dbfin and Gardner's
     ETSU notes --- none of which solves this exercise.
     Checked against Munkres, Topology (2000), Section 40 Exercise 2, printed p. 251, with the definitions of $F_\sigma$ and $G_\delta$ and De Morgan's laws (§1). No correction was needed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked both De Morgan identities and the openness or
+    closedness of the complementary sets. The argument is the card's own; no retained set is
+    cited. Munkres §40, printed p. 246. The printed statement needed no repair.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 correctness read, with the #184 citation repair. Both directions are the two
+    De Morgan identities, stated correctly: $\bigcup_n F_n$ has complement $\bigcap_n(X-F_n)$
+    with each $X-F_n$ open, and $\bigcap_n U_n$ has complement $\bigcup_n(X-U_n)$ with each
+    $X-U_n$ closed. The closing step applies the second implication with $X-W$ in place of $W$,
+    which is legitimate because $X-W$ is an arbitrary subset. Nothing else is used. Citation by
+    number: §40 Exercise 2; the phrase "printed p. 246" is removed from the solution, and the
+    earlier events' page locators are superseded, their text kept as written (QUAL-11).
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 second read, on the verification member's report of this card. The closing step
+    said the two implications were #f-sigma and #g-delta "the second applied to the set X-W in
+    place of W", which is the wrong direction: with $X-W$ substituted for $W$, #g-delta concludes
+    that $X-W$ is an $F_\sigma$ from $W$ a $G_\delta$, not that $W$ is an $F_\sigma$ from $X-W$ a
+    $G_\delta$. The two implications are #f-sigma and #g-delta as they stand, and the step now
+    states both. The mathematics of the two steps was already right; only this sentence changed.
+
 ---
 
 ::: {.exercise}
@@ -42,32 +72,36 @@ Show that $W$ is an $F_\sigma$ set in $X$ if and only if $X - W$ is a $G_\delta$
 :::
 
 ::: {.solution}
-Suppose first that
-$$
-W=\bigcup_{n=1}^{\infty}F_n
-$$
-with each $F_n$ closed. By De Morgan's law,
-$$
-X-W
- =X-\bigcup_nF_n
- =\bigcap_n(X-F_n).
-$$
-Each $X-F_n$ is open, so $X-W$ is a $G_\delta$ set.
+The argument is the card's own; no retained solution set is cited on the card. It is the two De Morgan identities behind the definitions of $F_\sigma$ and $G_\delta$ sets in Munkres §40.
 
-Conversely, suppose
-$$
-X-W=\bigcap_{n=1}^{\infty}U_n
-$$
-with each $U_n$ open. Again by De Morgan's law,
-$$
-W
-=X-\bigcap_nU_n
-=\bigcup_n(X-U_n).
-$$
-Each $X-U_n$ is closed, so $W$ is $F_\sigma$.
+::: pf
 
-Therefore
-$$
-\boxed{W\text{ is }F_\sigma\iff X-W\text{ is }G_\delta.}
-$$
+::: {.pf-step #f-sigma}
+If $W=\bigcup_{n}F_{n}$ with each $F_{n}$ closed in $X$, then $X-W$ is a $G_{\delta}$ set in $X$.
+
+::: pf-proof
+By De Morgan's law, $X-W=X-\bigcup_{n}F_{n}=\bigcap_{n}(X-F_{n})$. Each complement $X-F_{n}$ is open in $X$, because $F_{n}$ is closed, so $X-W$ is a countable intersection of open sets, that is a $G_{\delta}$ set.
+:::
+
+:::
+
+::: {.pf-step #g-delta}
+If $X-W=\bigcap_{n}U_{n}$ with each $U_{n}$ open in $X$, then $W$ is an $F_{\sigma}$ set in $X$.
+
+::: pf-proof
+By De Morgan's law, $W=X-\bigcap_{n}U_{n}=\bigcup_{n}(X-U_{n})$. Each complement $X-U_{n}$ is closed in $X$, because $U_{n}$ is open, so $W$ is a countable union of closed sets, that is an $F_{\sigma}$ set.
+:::
+
+:::
+
+::: {.pf-step}
+$W$ is $F_{\sigma}$ in $X$ if and only if $X-W$ is $G_{\delta}$ in $X$.
+
+::: pf-proof
+Assume $W=\bigcup_nF_n$ with every $F_n$ closed; step [](#f-sigma){.pf-ref} makes $X-W$ a $G_\delta$. Conversely, if $X-W=\bigcap_nU_n$ with every $U_n$ open, that is the hypothesis of step [](#g-delta){.pf-ref}, which makes $W$ an $F_\sigma$.
+:::
+
+:::
+
+:::
 :::

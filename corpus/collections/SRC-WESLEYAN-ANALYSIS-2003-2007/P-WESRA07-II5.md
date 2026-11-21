@@ -19,6 +19,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 3 (printed p. 2 of the 2007 real-analysis paper). The card had cited neither the
+    examination nor a page; it now names both, and the statement was compared with the
+    printed item and left unchanged.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -29,6 +46,8 @@ $$
 :::
 
 ::: {.solution}
+The item is Part II item 5 of the Real Analysis section of the Analysis Qualifier, Wesleyan University, Summer 2007 (the limit of $\int_0^1(1+nx^2)/(1+x^2)^n\,dx$).
+
 
 Let $f_n(x) \coloneqq \frac{1+n x^2}{(1+x^2)^n}$ on $[0,1]$.
 

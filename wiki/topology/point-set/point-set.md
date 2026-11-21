@@ -1,4 +1,5 @@
 ---
+title: Continuity, compactness, and separation
 order: 100
 topics:
 - Compactness
@@ -27,13 +28,6 @@ topics:
 
 [[T-O4UD3]]
 
-::: {.proof}
-Let $f\colon X\to Y$ be continuous with $X$ a compact metric space and $Y$ a metric space, and let $\varepsilon>0$.
-The sets $\inverseof{f}\qty{B_{\varepsilon/2}(y)}$ for $y\in Y$ form an open cover of $X$; let $\delta>0$ be a Lebesgue number for it.
-If $d(x,x')<\delta$, then $\theset{x,x'}$ has diameter less than $\delta$, so it lies in some $\inverseof{f}\qty{B_{\varepsilon/2}(y)}$, and $d(f(x),f(x'))<\varepsilon$.
-
-:::
-
 [[C-EBAGE]]
 
 ::: {.example title="A uniformly continuous function that is not Lipschitz"}
@@ -55,22 +49,7 @@ $f(x) = \sqrt x$ on $[0, 1]$ is uniformly continuous, being continuous on a comp
 
 [[T-UEXBK]]
 
-::: {.proof}
-Let $B$ be compact and $A\subseteq B$ closed, and let $\theset{A_i}_{i\in I}$ be a cover of $A$ by sets open in $A$.
-By definition of the subspace topology, $A_i = B_i \intersect A$ for some $B_i$ open in $B$.
-Since $A$ is closed, $W\coloneqq B\sm A$ is open, and $\theset{B_i}_{i\in I}\union\theset{W}$ is an open cover of $B$.
-A finite subcover $\theset{B_{i_1},\ldots,B_{i_k},W}$ exists by compactness, and $\theset{A_{i_1},\ldots,A_{i_k}}$ covers $A$.
-
-:::
-
 [[T-TJBYR]]
-
-::: {.proof}
-Let $f\colon X\to Y$ be continuous with $X$ compact, and let $\mathcal{U}$ be a cover of $f(X)$ by open subsets of $Y$.
-Since $f$ is continuous, $\theset{\inverseof{f}(U) \suchthat U\in\mathcal U}$ is an open cover of $X$, with a finite subcover $\inverseof{f}(U_1),\ldots,\inverseof{f}(U_k)$.
-Then $U_1,\ldots,U_k$ cover $f(X)$.
-
-:::
 
 [[T-JFADP]]
 
@@ -92,7 +71,7 @@ Recall that a [[D-ZFRV4|Hausdorff space]] is one in which distinct points have d
 ## Maps and homeomorphisms
 
 ::: {.example title="Retractions onto points"}
-For every $x_0 \in X$, the constant map $r\colon X \to \theset{x_0}$ is a [[D-NCLVD|retraction]] onto $\theset{x_0}$.
+For every $x_0 \in X$, the constant map $r\colon X \to \theset{x_0}$ is a [[D-NCLVD|retraction]] onto $\theset{x_0}$ [@Hat02, Chapter 0].
 
 :::
 
@@ -110,7 +89,7 @@ For every $x_0 \in X$, the constant map $r\colon X \to \theset{x_0}$ is a [[D-NC
 In $\RR\cross\RR$, the open set $N\coloneqq\theset{(x,y) \suchthat \abs y < e^{-x^2}}$ contains the slice $\RR\cross\theset{0}$, and it contains no tube $\RR\cross(-\delta,\delta)$ with $\delta>0$, since $e^{-x^2}<\delta$ for large $\abs x$.
 Here the slice is taken in the noncompact factor $\RR$.
 
-![The region between a Gaussian and its reflection](../../../../assets/assets/figures/image_2021-05-21-01-39-26.png)
+![The region between a Gaussian and its reflection](/assets/figures/image_2021-05-21-01-39-26.png)
 
 :::
 

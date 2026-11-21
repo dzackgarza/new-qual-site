@@ -12,8 +12,11 @@ topics:
 
 # The spaces
 
-Let $(X,\mu)$ be a measure space and $1\leq p\leq\infty$.
-By the Riesz--Fischer theorem, $L^p$ is complete for $1\leq p\leq\infty$.
+Let $(X,\mu)$ be a measure space and $1\leq p\leq\infty$, with conjugate exponent $q\in[1,\infty]$, $\frac1p+\frac1q=1$.
+
+[[PR-L35O7]]
+
+[[T-J3AN3]]
 
 [[PR-NFB7Q]]
 
@@ -49,14 +52,10 @@ By the Riesz--Fischer theorem, $L^p$ is complete for $1\leq p\leq\infty$.
 
 ## Density and duality arguments
 
-If $\Phi,\Psi\colon L^p\to Y$ are continuous maps into a metric space $Y$ and $\Phi=\Psi$ on a dense subset of $L^p$, such as $C_c(\RR^d)$ for $1\leq p<\infty$, then $\Phi=\Psi$ on $L^p$.
-For $1\leq p<\infty$ and $f\in L^p$, if $\int fg=0$ for every $g$ in a dense subset of $L^q$, then $f=0$ almost everywhere.
+The identification of $\dualof{L^p}$ with $L^q$ for $1\leq p<\infty$ ([[T-5BFVS]]) turns two approximation statements into conclusions used below.
+Two continuous maps on $L^p$ that agree on a dense subset agree on $L^p$.
+A function $f\in L^p$ with $\int fg=0$ for every $g$ in a dense subset of $L^q$ vanishes almost everywhere.
 
 [[E-IAQ6D]]
 
 [[PR-C626A]]
-
-::: {.remark title="Consequences of the Riesz--Fischer proof"}
-The proof of the Riesz--Fischer theorem shows that every sequence converging in $L^p$, $1\leq p<\infty$, has a subsequence converging almost everywhere to the same limit.
-
-:::

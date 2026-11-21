@@ -31,6 +31,28 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 5.2.9, printed p. 104,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.2.9, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    deg Y = 2a and g = (a-1)^2 for the complete intersection, the
+    ruled model with e = -2, the degree 2a+1, and the adjunction count giving
+    g = a^2 - a. Not checked: Yang's Solutions outside printed pp. 100-107; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.2.9 at printed
+    p. 104 beside Egbert's entry. No step, statement or hypothesis of
+    the card changes.
 ---
 
 ::: {.problem}
@@ -427,5 +449,9 @@ Step [](#s7){.pf-ref} proves the required classification.
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.9, PDF pp. 266--267: the complete-intersection case from II Ex. 8.4, giving $\deg=2a$ and $g=\frac12 2a(a+2-4)+1=(a-1)^2$, and the odd case by blowing up the vertex, so that the cone becomes a ruled surface with $K=-2C_0-4f$, the hyperplane section lifts to $C_1=C_0+2f$ with $C_1^2=2$, and adjunction on $aC_1+f$ gives $a^2-a$. Steps [](#s1){.pf-ref} to [](#s5){.pf-ref} are the same two computations written out, with $H=C_0+2f$ derived from $H\cdot f=1$ and $H\cdot C_0=0$ rather than asserted; step [](#s6){.pf-ref} adds the scheme-theoretic complete-intersection statement, which his argument leaves at "it's going through the vertex". Matches.
+The exercise is Hartshorne, V.2, exercise 2.9, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is its text, the reference to (IV, 6.4.1) and the hint (2.11.4) including.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.9: the complete-intersection case from II Ex. 8.4, giving $\deg=2a$ and $g=\frac12 2a(a+2-4)+1=(a-1)^2$, and the odd case by blowing up the vertex, so that the cone becomes a ruled surface with $K=-2C_0-4f$, the hyperplane section lifts to $C_1=C_0+2f$ with $C_1^2=2$, and adjunction on $aC_1+f$ gives $a^2-a$. Steps [](#s1){.pf-ref} to [](#s5){.pf-ref} are the same two computations written out, with $H=C_0+2f$ derived from $H\cdot f=1$ and $H\cdot C_0=0$ rather than asserted; step [](#s6){.pf-ref} adds the scheme-theoretic complete-intersection statement, which his argument leaves at "it's going through the vertex". Matches.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.2.9, takes the complete-intersection case first: for $Y=X_0\cap S$ with $\deg S=a\ge1$, (2.8.4) gives $\deg Y=2a$ and $g(Y)=\frac12\cdot2\cdot a(a+2-4)+1=(a-1)^2$. For a curve that is not a complete intersection it blows up the vertex, getting the ruled surface $X\to X_0$ with invariant $e=-2$ by (2.11.4), writes $Y\sim aC_0+bf$, notes $b=2a+1$ because $Y$ is not a complete intersection, and computes $\deg Y_0=\widetilde H\cdot Y_0=2a+b$ with $\widetilde H\sim_{\mathrm{num}}C_0+2f$, and then $2g-2=(aC_0+bf)\cdot(aC_0+bf+K)$ with $K\sim_{\mathrm{num}}-2C_0-4f$ and $C_0^2=-2$. The card's steps carry the same two cases, and its displayed adjunction expands the second to $g=a^2-a$.
 :::

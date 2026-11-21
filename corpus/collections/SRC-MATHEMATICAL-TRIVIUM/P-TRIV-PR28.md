@@ -19,6 +19,20 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Restored the garbled spectrum table, including the 80-90 MeV bin, against Probability Problem 28 on page 31 of the source PDF.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and recomputed from the table. Binning the nine 10-MeV cells
+    as Poisson counts 0 to 8 with observed frequencies (15,71,75,68,39,17,10,4,1) and N = 300, the
+    maximum-likelihood estimate is the sample mean sum k O_k / 300 = 2.54, which is the card's first
+    box. With lam = 2.54 the fitted expectations for k = 0..5 are (23.660, 60.096, 76.322, 64.619,
+    41.033, 20.845), and pooling k >= 6 gives observed 15 against expected 13.424. Pearson's
+    statistic over the seven cells is 6.343, with 7 - 1 - 1 = 5 degrees of freedom, against the 0.05
+    critical value 11.07: the hypothesis is not rejected. I reproduced every number independently,
+    including the chi-squared value, which depends on the pooling and is easy to get wrong when the
+    tail is left unpooled (that gives 6.626 on 7 degrees of freedom, still not rejected, so the
+    conclusion is robust either way).
 ---
 
 ::: {.problem}

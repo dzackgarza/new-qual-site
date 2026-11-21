@@ -5,7 +5,9 @@ kind: problem
 title: Non-diagonalizable $3\times3$ upper triangular matrix with a repeated eigenvalue
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Diagonalization
+  - Jordan Canonical Form
 relations: []
 review: draft
 audit:

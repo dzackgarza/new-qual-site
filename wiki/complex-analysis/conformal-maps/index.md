@@ -20,3 +20,9 @@ Conformal maps between plane regions, the automorphism group of the disc, normal
 - [[complex-analysis/conformal-maps/normal-families-and-montel|Normal families and Montel]], compactness for families of holomorphic functions.
 
 - [[complex-analysis/conformal-maps/the-riemann-mapping-theorem|The Riemann mapping theorem]], existence of a biholomorphism from a simply connected proper open subset of $\CC$ onto $\DD$.
+
+- [[complex-analysis/conformal-maps/the-hyperbolic-metric|The hyperbolic metric]], the invariant distance on $\DD$ and $\HH$ that every holomorphic self-map contracts.
+
+- [[complex-analysis/conformal-maps/riemann-surfaces-and-uniformization|Riemann surfaces and uniformization]], the three simply connected models and the surfaces they cover.
+
+- [[complex-analysis/conformal-maps/sl2-and-modular-forms|Modular forms]], the action of $\SL_2(\RR)$ on $\HH$, Eisenstein series, and the fundamental domain.

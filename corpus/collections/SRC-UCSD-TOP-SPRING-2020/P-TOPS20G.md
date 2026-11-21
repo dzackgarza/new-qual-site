@@ -13,6 +13,18 @@ classification:
   - Spheres
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The computation is correct. The fundamental group is that of the torus, and
+    the universal cover is the plane with a 3-sphere attached at each lift of the
+    wedge point, which is homotopy equivalent to the wedge of one 3-sphere per
+    lattice point; that space is 2-connected and its third homology is the direct
+    sum of one copy of Z per summand, so Hurewicz identifies its third homotopy
+    group with that sum, and covering maps are isomorphisms on homotopy in degree
+    at least two. Nothing was changed.
 ---
 
 ::: {.problem}

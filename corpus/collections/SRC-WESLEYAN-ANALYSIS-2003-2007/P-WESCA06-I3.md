@@ -5,7 +5,8 @@ kind: problem
 title: "State the Maximum Principle"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:
@@ -13,6 +14,24 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis Theorems and Definitions, item 3 (August 9, 2006) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf, PDF p. 15: the Complex Analysis
+    Preliminary Examination of August 9, 2006, Section 1 item 3. The page had cited
+    only the extraction; it now names the examination, its item and the page of
+    the scan. The statement is unchanged.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The proof ended with a pf-qed that only announced that earlier steps had answered
+    the question, which STYLE-08 forbids; it is dropped, and the last step that carries
+    content is now the QED step. No argument or statement changes.
+
 ---
 
 ::: {.problem}
@@ -20,6 +39,9 @@ State the Maximum Principle.
 :::
 
 ::: {.solution}
+The item is Section 1 item 3 of the Complex Analysis Preliminary Examination of August 9, 2006
+(State the Maximum Principle), in the retained scan `assets/attachments/analysis_2003-2007.pdf`.
+
 
 ::: pf
 
@@ -73,11 +95,6 @@ Continuity on the compact set $\overline\Omega$ guarantees existence of a maximu
 
 :::
 
-::: pf-qed
-
-Step [](#s1-1){.pf-ref} is the requested theorem statement; steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} record its standard equivalent and boundary forms.
-
-:::
 
 :::
 

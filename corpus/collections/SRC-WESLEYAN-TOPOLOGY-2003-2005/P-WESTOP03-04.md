@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP03-04
 kind: problem
 title: Classification of compact connected surfaces and a torus-projective-plane connected sum
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Classification of Surfaces]}
 relations: []
 review: draft
 audit:
@@ -17,6 +17,8 @@ audit:
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the examination papers alone, so the argument is the card's own.
 
 All surfaces below are understood to be compact, connected, and without boundary.
 

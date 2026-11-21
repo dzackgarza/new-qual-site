@@ -6,7 +6,9 @@ title: 'An odd-dimensional real orthogonal matrix has eigenvalue $1$ or $-1$'
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Orthogonal Matrices
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

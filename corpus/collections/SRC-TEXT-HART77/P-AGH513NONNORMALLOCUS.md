@@ -110,10 +110,49 @@ audit:
     citation was checked and is false of this file, which names
     tmp/sources/hartshorne-solutions-egbert.md at that line.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The step called a Mathematics Stack Exchange answer "the published proof".
+    An answer on that site is a user post and not a publication, so the words
+    were false of the source and are corrected: the answer is named as a user
+    post with no printed page cited for it, and the step is marked as the card's
+    own, which is what it is, the closedness being proved there by the
+    annihilator of the finite module $\overline A/A$. Checked in this pass: the
+    text version of the answer named on the card, the Shichijo page the step
+    also cites, and the exercise as printed at Hartshorne I.5.13, printed p. 38
+    (PDF p. 53 of the checked-in extraction). Not checked in this pass: no
+    further publication was searched for the closedness of the nonnormal locus;
+    COMPLAINTS.md records the state.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Steps s1 to s5 read for correctness in this pass and all five found correct:
+    s1 is Theorem I.3.9A at the finite extension K/K; s2 identifies the
+    integral closure of A_p with (A-bar)_p in both directions, the second by
+    clearing a monic equation with one common denominator s and passing to
+    v = su; s3 proves M_m = 0 exactly when Ann_A M is not inside m, both
+    directions, which gives the nonnormal locus as Z(Ann_A M); s4 gets a nonzero
+    annihilator from M_(0) = 0 and so makes Z(Ann_A M) proper, in a domain; s5
+    transfers both to a variety, normality being a property of the local ring.
+    One citation is corrected: step s5 cited Proposition I.4.3 for a finite
+    affine cover U_1,...,U_N, and that proposition, printed p. 25, is that the
+    open affine subsets are a base of the topology, not that finitely many
+    suffice. The step now writes the cover as the family U_i it uses, since
+    closedness is local on any open cover and the finiteness was never used.
+    Also read and unchanged in this pass: the exercise as printed at printed
+    p. 38, read on the PDF's own folio (PDF p. 53), and the card's statement of
+    it, which differs only in rendering (5.3) as Theorem I.5.3, (3.9A) as
+    Theorem I.3.9A and (Ex. 3.17) as the card P-AGH317NORMAL, and the proof uses
+    no part of I.5.3. Not checked in this pass: the Shichijo manuscript and
+    KReiser's answer were not re-read; the statements about them are the earlier
+    events', and no published proof of the closedness was searched for again.
 ---
 
 ::: {.problem}
-It is a fact that any regular local ring is an integrally closed domain (Matsumura [2, Th. 36, p. 121]).
+It is a fact that any regular local ring is an integrally closed domain (Matsumura [2, Theorem 36]).
 Thus we see from Theorem I.5.3 that any variety has a nonempty open subset of normal points ([[P-AGH317NORMAL]]).
 In this exercise, show directly (without using Theorem I.5.3) that the set of nonnormal points of a variety is a proper closed subset (you will need the finiteness of integral closure: see Theorem I.3.9A).
 :::
@@ -196,13 +235,13 @@ Indeed, if generators $m_1,\ldots,m_s$ of $M$ all vanish after localization at $
 The converse is immediate.
 So $P$ is nonnormal exactly when $\Ann_A M\subseteq\mfm_P$, that is, when $P\in Z(\Ann_A M)$.
 
-The normal locus is described in A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.13, printed pp. 11--12, read in `tmp/sources/shitijyou-ch1-section5.md`, the MinerU extraction of `tmp/sources/shitijyou-ch1-section5.pdf`, as the locus $W=\theset{P\in U \st \overline A\subseteq\mco_{P}}$, which is the normal locus by step [](#s2){.pf-ref}: the local ring $\mco_P$ is integrally closed exactly when $(\overline A)_{\mathfrak m_P}=\mco_P$, that is exactly when $\overline A\subseteq\mco_P$, and his two inclusions there prove the same identification by localizing. His openness of $W$ is asserted rather than proved: he writes it as $\bigcap_i Z_a(s_i)^c$ with one chosen denominator $s_i$ of each generator $g_i$ of $\overline A$, and that intersection is in general only an open subset of $W$, because $s_i$ may vanish at a point at which $g_i$ is regular. The description that does make $W$ open is
+The normal locus is described in A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.13, read in `tmp/sources/shitijyou-ch1-section5.md`, the MinerU extraction of `tmp/sources/shitijyou-ch1-section5.pdf`, as the locus $W=\theset{P\in U \st \overline A\subseteq\mco_{P}}$, which is the normal locus by step [](#s2){.pf-ref}: the local ring $\mco_P$ is integrally closed exactly when $(\overline A)_{\mathfrak m_P}=\mco_P$, that is exactly when $\overline A\subseteq\mco_P$, and his two inclusions there prove the same identification by localizing. His openness of $W$ is asserted rather than proved: he writes it as $\bigcap_i Z_a(s_i)^c$ with one chosen denominator $s_i$ of each generator $g_i$ of $\overline A$, and that intersection is in general only an open subset of $W$, because $s_i$ may vanish at a point at which $g_i$ is regular. The description that does make $W$ open is
 $$
 W=\bigcap_i\bigl(U\sm V(A:_Ag_i)\bigr)=\bigcap_i\bigcup_{s\in(A:_Ag_i)}D(s),
 $$
 the union being over all denominators of $g_i$: an element $g\in K$ lies in $\mco_P=A_{\mfm_P}$ exactly when some $s\in A\sm\mfm_P$ has $sg\in A$, that is, exactly when $(A:_Ag)\not\subseteq\mfm_P$. The annihilator argument above is a different and shorter route to the openness of $W$, that is to the closedness of its complement $Z(\Ann_A M)$, which is what the exercise asks for; the ideal $(A:_Ag_i)$ is the route the source's third display was reaching for.
 
-For a single rational function $h\in K$ the set $\theset{P\in U \st h\notin\mco_P}$ is the closed set $V(I(h))$ with $I(h)=\theset{a\in A \st ah\in A}$, by that same equivalence, and the nonnormal locus is the finite union of these over the finitely many generators of $\overline A$. This is the published proof: KReiser, accepted answer 4224763 to Mathematics Stack Exchange question 4224382, *Hartshorne Exercise I.5.13: subset of nonnormal points is proper and closed*, text version `tmp/sources/mse-4224382-hartshorne-i-5-13-nonnormal-locus-closed.md`, argues "$y$ is a normal point exactly when $A(Y)_{\mathfrak m}=\overline{A(Y)}_{\mathfrak m}$", then "it suffices to show that for a rational function $h\in K$ the set of $y\in Y$ so that $h\notin\mathcal{O}_{Y,y}$ is closed. Let $I(h)$ be the ideal of $A$ given by $\{a\in A(Y) \mid ah\in A(Y)\}$: this is known as the ideal of denominators of $h$. I claim that the vanishing locus of $I(h)$ is exactly the set of points where $h\notin\mathcal{O}_{Y,y}$", and closes with "$I(h)\subset\mathfrak m$ iff $h\notin\mathcal{O}_{Y,y}$". His properness is not in his answer at all: the nonempty open normal set, read off the finiteness of integral closure, is the preliminary of the asker (user940160) in the question body, $D(g_1\cdots g_n)\cap Y$ being normal because $\overline{A(Y)}_{g_1\cdots g_n}=A(Y)_{g_1\cdots g_n}$, and it is what makes the nonnormal locus a proper subset. KReiser's answer proves the closedness. Step [](#s4){.pf-ref} proves properness from the annihilator of the same finite module, so the finiteness of integral closure enters this proof once, in step [](#s1){.pf-ref}.
+For a single rational function $h\in K$ the set $\theset{P\in U \st h\notin\mco_P}$ is the closed set $V(I(h))$ with $I(h)=\theset{a\in A \st ah\in A}$, by that same equivalence, and the nonnormal locus is the finite union of these over the finitely many generators of $\overline A$. The same argument is KReiser's, accepted answer 4224763 to Mathematics Stack Exchange question 4224382, *Hartshorne Exercise I.5.13: subset of nonnormal points is proper and closed*, text version `tmp/sources/mse-4224382-hartshorne-i-5-13-nonnormal-locus-closed.md`; that answer is a user post and not a publication, so no printed page is cited for it, and this step is the card's own, in the annihilator form above. He argues "$y$ is a normal point exactly when $A(Y)_{\mathfrak m}=\overline{A(Y)}_{\mathfrak m}$", then "it suffices to show that for a rational function $h\in K$ the set of $y\in Y$ so that $h\notin\mathcal{O}_{Y,y}$ is closed. Let $I(h)$ be the ideal of $A$ given by $\{a\in A(Y) \mid ah\in A(Y)\}$: this is known as the ideal of denominators of $h$. I claim that the vanishing locus of $I(h)$ is exactly the set of points where $h\notin\mathcal{O}_{Y,y}$", and closes with "$I(h)\subset\mathfrak m$ iff $h\notin\mathcal{O}_{Y,y}$". His properness is not in his answer at all: the nonempty open normal set, read off the finiteness of integral closure, is the preliminary of the asker (user940160) in the question body, $D(g_1\cdots g_n)\cap Y$ being normal because $\overline{A(Y)}_{g_1\cdots g_n}=A(Y)_{g_1\cdots g_n}$, and it is what makes the nonnormal locus a proper subset. KReiser's answer proves the closedness. Step [](#s4){.pf-ref} proves properness from the annihilator of the same finite module, so the finiteness of integral closure enters this proof once, in step [](#s1){.pf-ref}.
 
 :::
 
@@ -228,7 +267,7 @@ The nonnormal locus of $X$ is a proper closed subset of $X$.
 
 ::: pf-proof
 
-Cover $X$ by affine opens $U_1,\ldots,U_N$ [@Har77, Proposition I.4.3].
+Cover $X$ by affine opens $U_i$ [@Har77, Proposition I.4.3].
 Normality of a point is a property of its local ring, which does not change when it is computed in an open neighborhood.
 So the nonnormal locus $N$ of $X$ satisfies $N\intersect U_i=Z(\Ann_{A_i} M_i)$ in the notation of step [](#s3){.pf-ref} for $U_i$.
 Each intersection is closed in $U_i$, so $N$ is closed in $X$.
@@ -250,10 +289,10 @@ Steps [](#s1){.pf-ref} to [](#s4){.pf-ref} prove that the nonnormal locus of an 
 ::: {.remark title="Published solution"}
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), text version `tmp/sources/hartshorne-solutions-borcherds.md`, gives no solution to 5.13.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), text version `tmp/sources/hartshorne-solutions-troiani.md`, gives no solution to 5.13.
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise I.5.13, PDF p. 50: assume $X$ affine; the integral closure is finitely generated by $f_1,\ldots,f_n$; "$\mco_x$ is integrally closed iff the image of $f_i$ is in $\mco_x$ for all $i$"; "a finite intersection of nonempty opens is nonempty open, and rational functions are defined on such", so the normal locus is nonempty open.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise I.5.13: assume $X$ affine; the integral closure is finitely generated by $f_1,\ldots,f_n$; "$\mco_x$ is integrally closed iff the image of $f_i$ is in $\mco_x$ for all $i$"; "a finite intersection of nonempty opens is nonempty open, and rational functions are defined on such", so the normal locus is nonempty open.
 Egbert's sketch asserts what the exercise asks for: that the condition "$f_i\in\mco_x$ for all $i$" cuts out an open set, and that the intersection over $i$ is nonempty, are both steps. The proof above supplies them: on an affine chart the nonnormal locus is the support $Z(\operatorname{Ann}_AM)$ of the finite module $M=\overline A/A$, which is closed because $M_{\mathfrak m}=0$ exactly when $\operatorname{Ann}_AM\not\subseteq\mathfrak m$, and proper because $M_{(0)}=0$ makes $\operatorname{Ann}_AM$ nonzero.
 
-A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.13, printed pp. 11--12, read in `tmp/sources/shitijyou-ch1-section5.md`, the MinerU extraction of `tmp/sources/shitijyou-ch1-section5.pdf`, proves that the normal locus is $\theset{P \st \overline A\subseteq\mco_{P}}$, by the two inclusions step [](#s3){.pf-ref} names, and then treats its openness as obvious, writing it as $\bigcap_i Z_a(s_i)^c$ for one chosen denominator $s_i$ of each generator $g_i$ of $\overline A$. That is the step at issue, and its defect is not that a denominator is ambiguous: one chosen denominator can vanish where its $g_i$ is regular, so the intersection he displays is an open subset of the normal locus rather than the locus itself, and the openness of the locus is the closedness of the nonnormal one. The display that works is $\bigcap_i\bigl(U\sm V(A:_Ag_i)\bigr)$, the union of $D(s)$ over all denominators $s$ of $g_i$, which step [](#s3){.pf-ref} gives; and denominators are not unique up to units --- in $k[x,y,z]/(xy-z^2)$ the element $z/x=y/z$ has the two non-associate denominators $x$ and $z$. The source is therefore cited here for the identification of the normal locus and not for its openness.
+A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.13, read in `tmp/sources/shitijyou-ch1-section5.md`, the MinerU extraction of `tmp/sources/shitijyou-ch1-section5.pdf`, proves that the normal locus is $\theset{P \st \overline A\subseteq\mco_{P}}$, by the two inclusions step [](#s3){.pf-ref} names, and then treats its openness as obvious, writing it as $\bigcap_i Z_a(s_i)^c$ for one chosen denominator $s_i$ of each generator $g_i$ of $\overline A$. That is the step at issue, and its defect is not that a denominator is ambiguous: one chosen denominator can vanish where its $g_i$ is regular, so the intersection he displays is an open subset of the normal locus rather than the locus itself, and the openness of the locus is the closedness of the nonnormal one. The display that works is $\bigcap_i\bigl(U\sm V(A:_Ag_i)\bigr)$, the union of $D(s)$ over all denominators $s$ of $g_i$, which step [](#s3){.pf-ref} gives; and denominators are not unique up to units --- in $k[x,y,z]/(xy-z^2)$ the element $z/x=y/z$ has the two non-associate denominators $x$ and $z$. The source is therefore cited here for the identification of the normal locus and not for its openness.
 
 The closedness itself is proved in full in KReiser, accepted answer 4224763 to Mathematics Stack Exchange question 4224382, *Hartshorne Exercise I.5.13: subset of nonnormal points is proper and closed*, text version `tmp/sources/mse-4224382-hartshorne-i-5-13-nonnormal-locus-closed.md`, by the ideal of denominators: a point is normal exactly when $A(Y)_{\mathfrak m}=\overline{A(Y)}_{\mathfrak m}$, hence exactly when every generator $f_i/g_i$ of $\overline{A(Y)}$ lies in $\mco_{Y,y}$, and for one rational function $h$ the locus where $h\notin\mco_{Y,y}$ is $V(I(h))$ for $I(h)=\{a\in A(Y)\mid ah\in A(Y)\}$; a finite union of closed sets is closed. That is the display of step [](#s3){.pf-ref}, and the exercise is closed on it. The card's annihilator $M=\overline A/A$ is a second and shorter route to the same closed set, and its step [](#s4){.pf-ref} proves properness from $\Ann_A M\ne0$ rather than from the nonempty normal open set that the asker's preliminary supplies; the finiteness that makes that annihilator nonzero is step [](#s1){.pf-ref}, that is Theorem I.3.9A, which both routes use.
 :::

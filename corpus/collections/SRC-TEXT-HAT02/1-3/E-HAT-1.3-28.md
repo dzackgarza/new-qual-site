@@ -28,6 +28,19 @@ audit:
   date: 2026-10-31
   note: >-
     Read the whole proof: $q$ is a covering, the fiber is identified with $G$, lifting loops gives a homomorphism, and surjectivity and injectivity come from path connectedness and simple connectivity of $Y$.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution section carried no citation at all: neither a retained set nor a statement that
+    the argument is the card's own. Checked against the retained book and the retained sets. The
+    exercise is §1.3 Exercise 28, printed p. 82 (PDF p. 91 in
+    tmp/sources/hatcher-2002-algebraic-topology.pdf), where item 28 reads "Show that for a covering
+    space action of a group G on a simply-connected space Y, pi_1(Y/G) is isomorphic to G." The
+    retained Hatcher sets do not cover it: Guanyu Li's §1.3 block stops at Exercise 25, Sam's set
+    carries only Exercises 1, 2, 14 and 26 of §1.3, and Koukpari and the Math 538 homework contain no
+    §1.3 Exercise 28. The solution section now carries
+    the page and says the argument is the card's own.
 ---
 
 ::: {.problem}
@@ -36,6 +49,7 @@ Show that for a covering space action of a group $G$ on a simply-connected space
 :::
 
 ::: {.solution}
+This is Hatcher, Algebraic Topology, §1.3 Exercise 28, where it reads "Show that for a covering space action of a group $G$ on a simply-connected space $Y$, $\pi_1(Y/G)$ is isomorphic to $G$." No retained solution set covers this exercise: Guanyu Li's §1.3 block stops at Exercise 25, Sam's set carries only Exercises 1, 2, 14 and 26 of §1.3, and Koukpari and the Math 538 homework have nothing for it — so the argument is the card's own.
 Let
 $$
 q:Y\to Y/G

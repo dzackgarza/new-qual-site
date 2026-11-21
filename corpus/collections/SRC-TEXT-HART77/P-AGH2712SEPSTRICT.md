@@ -29,6 +29,8 @@ Show that the strict transforms $\tilde Y$ and $\tilde Z$ of $Y$ and $Z$ in $\ti
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.7.12. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §7, Exercise 2.7.12, computes the same thing through the blowup $\tilde X=\Proj\bigoplus_{d\ge0}I^d$ with $I=\mathcal I_Y+\mathcal I_Z$, reading off the inverse images in $\tilde Y$ and $\tilde Z$; the steps below write the same computation geometrically, through the strict transforms as closures.
+
 Put $W=Y\cap Z$ and let $b:\tilde X\to X$ be its [[D-SCHBLOWUP|blowup]], with exceptional divisor $E=b^{-1}(W)$.
 The strict transform of a closed subscheme is the scheme-theoretic closure of its inverse image outside $W$; equivalently, remove from its total inverse image the sections supported on $E$.
 

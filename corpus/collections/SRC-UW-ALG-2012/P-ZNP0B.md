@@ -26,7 +26,6 @@ audit:
     $0\to\ZZ\xrightarrow{n}\ZZ\to\ZZ/n\to0$ as $\ZZ/n\ZZ$; additivity in the first variable for
     $\Hom$ and in the second for $\Ext$ then gives $A$ for both. Nothing is left in outline.
 ---
----
 
 ::: {.problem}
 Prove that if $A$ is a finite abelian group, then $\Hom_\ZZ(A,\QQ/\ZZ)\cong\Ext^1_\ZZ(A,\ZZ)\cong A$.

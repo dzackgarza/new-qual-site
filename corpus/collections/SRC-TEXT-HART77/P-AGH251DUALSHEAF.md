@@ -63,6 +63,8 @@ $$
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.5.1. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §5, Exercise 2.5.1, stated on printed p. 48 with its solution on p. 49, proves it through the evaluation map $\mathcal E\times\mathcal E^\vee\to\OO_X$ and the trivializing open sets on which $\mathcal E\cong\OO_X^{\oplus n}$.
+
 For sheaves of modules $\mathcal A,\mathcal B$ on $X$, the sections of $\sheafhom_{\OO_X}(\mathcal A,\mathcal B)$ on an open set $U$ are the $\OO_U$-linear sheaf morphisms $\mathcal A\restrict_U\to\mathcal B\restrict_U$.
 Here $\OO_U=\OO_X\restrict_U$; in particular $\Hom_{\OO_X}(\mathcal A,\mathcal B)$ is the module of global sections of this sheaf [@Har77, Chapter II, §5].
 Tensor products in parts (a)-(c) are over $\OO_X$.

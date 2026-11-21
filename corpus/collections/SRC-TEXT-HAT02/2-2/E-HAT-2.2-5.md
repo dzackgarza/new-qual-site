@@ -54,7 +54,7 @@ A reflection of $S^n\subset\RR^{n+1}$ across the hyperplane perpendicular to a u
 $$
 R_u(x)=x-2\langle x,u\rangle u.
 $$
-Note that $R_u=R_{-u}$; each $R_u$ is an orthogonal transformation, fixing $u^\perp$ pointwise and sending $u$ to $-u$, so it fixes the subsphere $u^\perp\cap S^n$ and interchanges the two closed hemispheres, which is a reflection of $S^n$ in the sense of property (e) of degree (Hatcher p. 134), of degree $-1$.
+Note that $R_u=R_{-u}$; each $R_u$ is an orthogonal transformation, fixing $u^\perp$ pointwise and sending $u$ to $-u$, so it fixes the subsphere $u^\perp\cap S^n$ and interchanges the two closed hemispheres, which is a reflection of $S^n$ in the sense of property (e) of degree in §2.2, of degree $-1$.
 
 ::: pf
 

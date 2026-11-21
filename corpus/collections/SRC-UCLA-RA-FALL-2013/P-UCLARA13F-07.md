@@ -6,7 +6,9 @@ title: Density under a weighted mean-zero constraint
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Lp Spaces
+  - Density
 relations: []
 review: draft
 audit:

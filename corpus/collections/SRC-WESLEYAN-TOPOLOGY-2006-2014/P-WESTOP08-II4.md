@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP08-II4
 kind: problem
 title: Uniqueness of lifts from a connected space
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Covering Spaces, Homotopy]}
 relations: []
 review: draft
 audit:

@@ -170,6 +170,46 @@ audit:
     The remark's sentence "which neither source states" is removed in favour of
     the two vanishings and their reason: whether a source states a step is not
     content for a rendered remark, and the absence is recorded here.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step s7 read for its mathematics; its one unsupported sentence is given its
+    source, and the rest is unchanged. The step ended "a hyperelliptic curve of
+    genus at least 2 has canonical map of degree 2 onto a rational normal curve"
+    with no citation and no proof, and it is the sentence that turns the
+    embedding of step s5 into nonhyperellipticity. Hartshorne IV.5.3, printed
+    pp. 342--343, states it: a hyperelliptic curve of genus at least 2 has a
+    unique g^1_2, with morphism f_0 : X -> P^1, and its canonical morphism is
+    f_0 followed by the (g-1)-uple embedding, so its degree is 2 and its image
+    is a rational normal curve. The step now cites it there, and also names the
+    uniqueness of the g^1_2 and the (g-1)-uple embedding, which are what make
+    the degree exactly 2. Step s5's restriction isomorphism H^0(O_X(H)) =
+    H^0(Y, K_Y) was read again and stands as the card's own, as its event of
+    2026-11-16 says. Checked in this pass: Hartshorne IV.5.2 and IV.5.3 at
+    printed p. 341 and pp. 342--343, the folio of PDF p. 356 read as 341. Not
+    checked in this pass: the rest of V.2.10's steps were not re-read, and no
+    publication other than the book was opened for the hyperelliptic
+    canonical-map statement.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step s3 cites the sheaf form of adjunction and gave only the numerical
+    statement for it. It read "Adjunction, Proposition V.1.5, printed p. 361,
+    applied to the nonsingular curve Y", and V.1.5 is the numerical identity
+    2g - 2 = C.(C + K) for a nonsingular curve C of genus g on a surface, whose
+    proof is what quotes the sheaf form: "According to (II, 8.20) we have
+    omega_C = omega_X (x) L(C) (x) O_C", printed p. 361. The sheaf isomorphism
+    K_Y = (K_X + Y)|_Y that the step uses is Proposition II.8.20, printed
+    p. 182, whose codimension-one case reads omega_Y = omega_X (x) L (x) O_Y
+    for Y a divisor with associated invertible sheaf L. The step now cites
+    II.8.20 and says that V.1.5's proof quotes it. Read and unchanged in this
+    pass: step s3's computation K_Y = (K_X + D)|_Y = O_Y(H) and its Reid
+    cross-check alpha = a + a_2 + 2 from step s1, and the pages of both
+    statements on the PDF's folios (PDF p. 197 carrying printed 182 for
+    II.8.20). Not checked in this pass: V.1.5's printed p. 361 was read in the
+    text version only, not on the folio.
 ---
 
 ::: {.problem}
@@ -196,14 +236,14 @@ f^2=0,
 \qquad
 K_X\sim-2C_0-(e+2)f
 $$
-[[FE-TORHIRZ]], the last line being Lemma 2.10, printed p. 373. In the embedding of (2.19), which Corollary 2.19, printed p. 381, produces from the very ample divisor $C_0+nf$, the hyperplane class is
+[[FE-TORHIRZ]], the last line being Lemma 2.10. In the embedding of (2.19), which Corollary 2.19, produces from the very ample divisor $C_0+nf$, the hyperplane class is
 $$
 H\sim C_0+nf,
 \qquad
 H^2=2n-e=d.
 $$
 
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are transcribed from Hartshorne's Corollary 2.18(b), printed p. 380, and Corollary 2.19, printed p. 381, with the identification of the divisor $H-K_X$ with the class of a canonical curve on the scroll taken from Reid, *Chapters on Algebraic surfaces*, §2.8 Theorem, §2.9 and §2.10, printed pp. 19--21; steps [](#s3){.pf-ref} to [](#s7){.pf-ref} finish the exercise.
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are transcribed from Hartshorne's Corollary 2.18(b), and Corollary 2.19, with the identification of the divisor $H-K_X$ with the class of a canonical curve on the scroll taken from Reid, *Chapters on Algebraic surfaces*, §2.8 Theorem, §2.9 and §2.10; steps [](#s3){.pf-ref} to [](#s7){.pf-ref} finish the exercise.
 
 ::: pf
 
@@ -223,7 +263,7 @@ $$
 where $a=e$ is the Maroni invariant of the scroll and $a_1=n-e$, $a_2=n$ are its two scroll parameters.
 
 ::: pf-proof
-Substituting $H\sim C_0+nf$ and $K_X\sim-2C_0-(e+2)f$ gives $D\sim3C_0+(n+e+2)f$. Reid §2.9, printed p. 20, writes the surface scroll $\FF_a=\FF(0,a)$ with $A=L$ the class of a fibre and $B=B_0$ the negative section, and $\Pic\FF_a=\ZZ A\oplus\ZZ B$ with $A^2=0$, $A\cdot B=1$, $B^2=-a$; there $f=A$ and $C_0=B$, and so $D=3B+\alpha A$ with $\alpha=n+e+2$. Reid §2.10, printed p. 20, writes the scroll of the exercise as $\FF(a_1,a_2)$ with $a_1=n-e$, $a_2=n$, embedded in $\PP^{g-1}$ by $a_2A+B=nA+B=C_0+nf=H$, and its genus as $g=a_1+a_2+2=2n-e+2=d+2$; the canonical curve of that scroll is linearly equivalent to $\alpha A+3B$ with $\alpha=a+a_2+2$, and $a=a_2-a_1=e$. The two expressions for $\alpha$ agree.
+Substituting $H\sim C_0+nf$ and $K_X\sim-2C_0-(e+2)f$ gives $D\sim3C_0+(n+e+2)f$. Reid §2.9, writes the surface scroll $\FF_a=\FF(0,a)$ with $A=L$ the class of a fibre and $B=B_0$ the negative section, and $\Pic\FF_a=\ZZ A\oplus\ZZ B$ with $A^2=0$, $A\cdot B=1$, $B^2=-a$; there $f=A$ and $C_0=B$, and so $D=3B+\alpha A$ with $\alpha=n+e+2$. Reid §2.10, writes the scroll of the exercise as $\FF(a_1,a_2)$ with $a_1=n-e$, $a_2=n$, embedded in $\PP^{g-1}$ by $a_2A+B=nA+B=C_0+nf=H$, and its genus as $g=a_1+a_2+2=2n-e+2=d+2$; the canonical curve of that scroll is linearly equivalent to $\alpha A+3B$ with $\alpha=a+a_2+2$, and $a=a_2-a_1=e$. The two expressions for $\alpha$ agree.
 
 :::
 
@@ -233,7 +273,7 @@ Substituting $H\sim C_0+nf$ and $K_X\sim-2C_0-(e+2)f$ gives $D\sim3C_0+(n+e+2)f$
 The linear system $\linearsystem{D}$ contains an irreducible nonsingular curve $Y$.
 
 ::: pf-proof
-This is Hartshorne, Corollary 2.18(b), printed p. 380: for a divisor $D=aC_0+bf$ on the rational ruled surface $X_e$ with $e\ge0$, the system $\linearsystem{D}$ contains an irreducible nonsingular curve exactly when one of $a=0,b=1$; $a=1,b=0$; $a>0,b>ae$; or $e>0,a>0,b=ae$ holds. Here $a=3$ and $b=n+e+2$, so $b>ae=3e$ is the inequality $n>2e-2$, and $b=ae$ is $n=2e-2$ with $e>0$; the hypothesis $n\ge2e-2$ therefore gives one of the two. Reid gives the same criterion in his coordinates: by Theorem 2.8, $\FF_a$ contains a nonsingular curve linearly equivalent to $\alpha A+3B$ if and only if $\alpha-3a=B\cdot(\alpha A+3B)\ge0$, printed p. 21, and $\alpha-3a=n-2e+2$. The two branches of Hartshorne's proof are its two cases: for $b>ae$ the corollary writes $D$ as a sum of base-point-free and very ample classes and applies Bertini's theorem, and for $b=ae$ it realizes $X_e$ as the blow-up of the vertex of a cone and applies Bertini's theorem there, off the vertex.
+This is Hartshorne, Corollary 2.18(b): for a divisor $D=aC_0+bf$ on the rational ruled surface $X_e$ with $e\ge0$, the system $\linearsystem{D}$ contains an irreducible nonsingular curve exactly when one of $a=0,b=1$; $a=1,b=0$; $a>0,b>ae$; or $e>0,a>0,b=ae$ holds. Here $a=3$ and $b=n+e+2$, so $b>ae=3e$ is the inequality $n>2e-2$, and $b=ae$ is $n=2e-2$ with $e>0$; the hypothesis $n\ge2e-2$ therefore gives one of the two. Reid gives the same criterion in his coordinates: by Theorem 2.8, $\FF_a$ contains a nonsingular curve linearly equivalent to $\alpha A+3B$ if and only if $\alpha-3a=B\cdot(\alpha A+3B)\ge0$, and $\alpha-3a=n-2e+2$. The two branches of Hartshorne's proof are its two cases: for $b>ae$ the corollary writes $D$ as a sum of base-point-free and very ample classes and applies Bertini's theorem, and for $b=ae$ it realizes $X_e$ as the blow-up of the vertex of a cone and applies Bertini's theorem there, off the vertex.
 
 :::
 
@@ -246,7 +286,7 @@ $$
 $$
 
 ::: pf-proof
-Adjunction, Proposition V.1.5, printed p. 361, applied to the nonsingular curve $Y$, and the definition $D=H-K_X$ give
+Adjunction in its sheaf form, Proposition II.8.20, which the proof of Proposition V.1.5, quotes, applied to the nonsingular curve $Y$, and the definition $D=H-K_X$ give
 $$
 K_Y\cong\restrictionof{(K_X+Y)}{Y}\cong\restrictionof{(K_X+D)}{Y}\cong\OO_Y(H).
 $$
@@ -287,7 +327,7 @@ Because $Y\sim D=H-K_X$, restriction gives
 $$
 0\longrightarrow\OO_X(K_X)\longrightarrow\OO_X(H)\longrightarrow\OO_Y(H)\longrightarrow0 .
 $$
-The first cohomology group vanishes, $H^0(X,\OO_X(K_X))=0$, since an effective canonical divisor would meet a general fibre nonnegatively whereas $K_X\cdot f=-2$; and $H^1(X,\OO_X(K_X))\cong H^1(X,\OO_X)^\vee=0$ by Serre duality, with $H^1(X,\OO_X)=0$ because $X$ is ruled over $\PP^1$ and $q(X)$ is the genus of the base, Corollary 2.5, printed p. 371. Hence $h^0(\OO_Y(H))=h^0(\OO_X(H))$, and the proof of Corollary 2.19, printed p. 381, computes
+The first cohomology group vanishes, $H^0(X,\OO_X(K_X))=0$, since an effective canonical divisor would meet a general fibre nonnegatively whereas $K_X\cdot f=-2$; and $H^1(X,\OO_X(K_X))\cong H^1(X,\OO_X)^\vee=0$ by Serre duality, with $H^1(X,\OO_X)=0$ because $X$ is ruled over $\PP^1$ and $q(X)$ is the genus of the base, Corollary 2.5. Hence $h^0(\OO_Y(H))=h^0(\OO_X(H))$, and the proof of Corollary 2.19, computes
 $$
 h^0(X,\OO_X(H))=h^0(\PP^1,\OO(n))+h^0(\PP^1,\OO(n-e))=2n-e+2=d+2,
 $$
@@ -306,7 +346,7 @@ n\ge2e-2 .
 $$
 
 ::: pf-proof
-Put $d=g-2\ge2$. If $d$ is even, take $e=0$ and $n=d/2$; then $n>e$, $2n-e=d$ and $n\ge2e-2$. If $d$ is odd, so $d\ge3$, take $e=1$ and $n=(d+1)/2$; then $n>1=e$, $2n-e=d$, and $n\ge0=2e-2$. These are the pairs exhibiting the inequality $3a\le g+2$ of Reid §2.10, printed p. 21, as an existence condition rather than a constraint: with $a=e$ and $2n-e=d=g-2$ it reads $3e\le d+4$, that is $n\ge2e-2$.
+Put $d=g-2\ge2$. If $d$ is even, take $e=0$ and $n=d/2$; then $n>e$, $2n-e=d$ and $n\ge2e-2$. If $d$ is odd, so $d\ge3$, take $e=1$ and $n=(d+1)/2$; then $n>1=e$, $2n-e=d$, and $n\ge0=2e-2$. These are the pairs exhibiting the inequality $3a\le g+2$ of Reid §2.10, as an existence condition rather than a constraint: with $a=e$ and $2n-e=d=g-2$ it reads $3e\le d+4$, that is $n\ge2e-2$.
 
 :::
 
@@ -324,7 +364,7 @@ of degree
 $$
 Y\cdot f=D\cdot f=3,
 $$
-so the pullback of $\linearsystem{\OO_{\PP^1}(1)}$ is a base-point-free $g^1_3$ on $Y$; Reid §2.10, printed p. 20, records this as the statement that the pencil $A$ of the scroll cuts out the $g^1_3$ on its canonical curve. By step [](#s5){.pf-ref} the complete canonical map of $Y$ is an embedding, whereas a hyperelliptic curve of genus at least $2$ has canonical map of degree $2$ onto a rational normal curve; so $Y$ is not hyperelliptic.
+so the pullback of $\linearsystem{\OO_{\PP^1}(1)}$ is a base-point-free $g^1_3$ on $Y$; Reid §2.10, records this as the statement that the pencil $A$ of the scroll cuts out the $g^1_3$ on its canonical curve. By step [](#s5){.pf-ref} the complete canonical map of $Y$ is an embedding, whereas a hyperelliptic curve of genus at least $2$ has canonical map of degree $2$ onto a rational normal curve: its unique $g^1_2$ is $f_0:X\to\PP^1$ and the canonical morphism is $f_0$ followed by the $(g-1)$-uple embedding [@Har77, Proposition IV.5.3]. So $Y$ is not hyperelliptic.
 
 :::
 
@@ -340,10 +380,10 @@ Steps [](#s1){.pf-ref} to [](#s5){.pf-ref} produce the nonsingular curve $Y$ of 
 :::
 
 ::: {.remark title="Published solution"}
-Hartshorne's own Corollary 2.18(b), printed p. 380, is a complete published proof that $\linearsystem{H-K_X}$ contains an irreducible nonsingular curve for $n\ge2e-2$, and the proof of Corollary 2.19, printed p. 381, is the count $h^0(\OO_X(H))=2n-e+2$; Reid, *Chapters on Algebraic surfaces*, §2.8 Theorem with (2.8.1), printed p. 19, §2.9, printed p. 20, and §2.10, printed pp. 20--21, identifies the class $3C_0+(n+e+2)f$ with $\alpha A+3B$, $\alpha=a+a_2+2$, of the canonical curve of the scroll, states the nonsingularity criterion as $\alpha-3a\ge0$, and reads the inequality $3a\le g+2$ as the Maroni constraint. Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are those two statements specialized to $a_1=n-e$, $a_2=n$, $a=e$; steps [](#s3){.pf-ref} to [](#s7){.pf-ref} assemble them; step [](#s5){.pf-ref} adds the vanishing of $H^0(X,\OO_X(K_X))$ and of $H^1(X,\OO_X(K_X))$, which follow from $K_X\cdot f=-2$ and from $q(X)=0$.
-Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 10 of §2 (solution by Chi-Kang), printed p. 8 of that set, runs the same construction: with $D=C_0+nf$ the very ample class of the embedding, it takes $Y\in\abs{D-K_X}=\abs{3C_0+(n+e+2)f}$, which by Corollary 2.18 (printed page 380) has a nonsingular member under $e\ge0$ and $n+e+2\ge3e$, the hypothesis $n\ge2e-2$; adjunction gives $K_Y=D\restriction_Y$, then $\deg K_Y=D\cdot Y=4n-2e+2=2d+2$, so $g(Y)=d+2$, and $f\cdot Y=3$ gives a $g^1_3$. That is steps [](#s1){.pf-ref} to [](#s5){.pf-ref} and step [](#s7){.pf-ref}. It does not check that the embedding of $Y$ is the complete canonical one, which needs $H^0(\OO_X(H))\cong H^0(Y,K_Y)$; step [](#s5){.pf-ref} supplies that, and it is what makes the conclusion a canonical curve rather than a curve whose canonical class happens to be the restriction.
+Hartshorne's own Corollary 2.18(b), is a complete published proof that $\linearsystem{H-K_X}$ contains an irreducible nonsingular curve for $n\ge2e-2$, and the proof of Corollary 2.19, is the count $h^0(\OO_X(H))=2n-e+2$; Reid, *Chapters on Algebraic surfaces*, §2.8 Theorem with (2.8.1), §2.9, and §2.10, identifies the class $3C_0+(n+e+2)f$ with $\alpha A+3B$, $\alpha=a+a_2+2$, of the canonical curve of the scroll, states the nonsingularity criterion as $\alpha-3a\ge0$, and reads the inequality $3a\le g+2$ as the Maroni constraint. Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are those two statements specialized to $a_1=n-e$, $a_2=n$, $a=e$; steps [](#s3){.pf-ref} to [](#s7){.pf-ref} assemble them; step [](#s5){.pf-ref} adds the vanishing of $H^0(X,\OO_X(K_X))$ and of $H^1(X,\OO_X(K_X))$, which follow from $K_X\cdot f=-2$ and from $q(X)=0$.
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 10 of §2 (solution by Chi-Kang), runs the same construction: with $D=C_0+nf$ the very ample class of the embedding, it takes $Y\in\abs{D-K_X}=\abs{3C_0+(n+e+2)f}$, which by Corollary 2.18  has a nonsingular member under $e\ge0$ and $n+e+2\ge3e$, the hypothesis $n\ge2e-2$; adjunction gives $K_Y=D\restriction_Y$, then $\deg K_Y=D\cdot Y=4n-2e+2=2d+2$, so $g(Y)=d+2$, and $f\cdot Y=3$ gives a $g^1_3$. That is steps [](#s1){.pf-ref} to [](#s5){.pf-ref} and step [](#s7){.pf-ref}. It does not check that the embedding of $Y$ is the complete canonical one, which needs $H^0(\OO_X(H))\cong H^0(Y,K_Y)$; step [](#s5){.pf-ref} supplies that, and it is what makes the conclusion a canonical curve rather than a curve whose canonical class happens to be the restriction.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.10, printed p. 104, argues that "$3C_0+af$ can be written as a curve iff $C\cdot C_0\ge0$, i.e. $a\ge3e$", computes $2g-2=C\cdot(C+K)=4n-2e+2$ and reads off $g=2n-e+2$ and $C\cdot f=3$; it does not show the member nonsingular, and it never identifies $K_Y$ with the restricted hyperplane class.
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.10, argues that "$3C_0+af$ can be written as a curve iff $C\cdot C_0\ge0$, i.e. $a\ge3e$", computes $2g-2=C\cdot(C+K)=4n-2e+2$ and reads off $g=2n-e+2$ and $C\cdot f=3$; it does not show the member nonsingular, and it never identifies $K_Y$ with the restricted hyperplane class.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.10: the whole of his entry is "See example 2.10 in Kollar's Complex Algebraic Geometry", which is a reference to Kollár's Example 2.10 and gives no argument.
 

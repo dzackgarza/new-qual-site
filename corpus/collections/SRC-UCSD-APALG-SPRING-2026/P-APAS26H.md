@@ -12,6 +12,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 8 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C),
+    printed p. 16, is the statement the card answers, and the head of the solution names it; the
+    retained file assets/attachments/SP26_202_Applied_Algebra_Qual.pdf numbers every page including the
+    blank versos, so Problem 8 stands on its page 16. Checked: the statement against the paper's text
+    layer at the page named; the subalgebra $\operatorname{span}\{p,\ \delta_e-p\}\cong\CC\oplus\CC$ of
+    dimension 2 against the odd dimension of $\mathcal{C}(H)$; `qualc.authoring check` on the card, and
+    `tmp/lam.sh` for the numbering and the QED. Not checked: no retained solution set exists for this
+    paper to compare the argument with, and no other card of the collection in this pass.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
@@ -30,6 +42,9 @@ Note: On this exam, an algebra is a finite-dimensional complex vector space equi
 :::
 
 ::: {.solution}
+
+The problem is Problem 8 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
+
 Write $\delta_g$ for the indicator function of $g\in G$, so that $\delta_g*\delta_h=\delta_{gh}$, the unit is $\delta_e$, and $\delta_g^*=\delta_{g^{-1}}$.
 
 ::: pf

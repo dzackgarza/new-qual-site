@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP03-01
 kind: problem
 title: "Cantor's theorem: no set surjects onto its power set"
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Cantor's Theorem, Uncountable Sets]}
 relations: []
 review: draft
 audit:

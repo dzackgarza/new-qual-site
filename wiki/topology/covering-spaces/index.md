@@ -7,6 +7,8 @@ topics:
 
 # Covering spaces
 
-The classification of covers by subgroups of $\pi_1$, lifting criteria for maps and homotopies, deck transformation groups, and universal covers.
+The lifting criteria, deck transformation groups, universal covers, and the classification of connected covers by subgroups of the fundamental group.
 
-The statements and examples are on [[topology/covering-spaces/covering-spaces|Covering spaces (detailed)]].
+- [[topology/covering-spaces/universal-covers|Universal covers and the classification of covers]], the lifting criteria, deck transformations, and the classification theorem.
+
+- [[topology/covering-spaces/covering-spaces|Examples of covering spaces]], the standard covering maps and the universal covers of wedges.

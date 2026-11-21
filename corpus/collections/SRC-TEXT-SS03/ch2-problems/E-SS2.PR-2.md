@@ -15,6 +15,70 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against the printed item (Chapter 2, Problem 2, printed p. 68, PDF p. 88 of the retained
+    scan): the statement is the print's, and the asterisk the print sets before "2." is recorded in
+    the remark. The four steps were read. One repair was made in step s3: the terms with $q\nmid n$
+    were bounded in modulus and then subtracted from a lower bound for $|F|$, which is only valid
+    through $|F|\ge\operatorname{Re}F$; the step now says so and fixes
+    $\delta_q=\min_{m\not\equiv0}\abs{1-e^{2\pi im/q}}$, so that the estimate is uniform in $n$ and
+    not merely pointwise for each $n$. Not checked: nothing in the item beyond these four claims.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Repair of step s3 on the reader's report. The bound $\abs{1-z^n}\ge\delta_q$ recorded there held
+    only in the limit $r\to1^-$: for $r<1$ the infimum of $\abs{1-re^{i\theta_n}}$ is $\sin\theta_n$,
+    which is below $\abs{1-e^{i\theta_n}}$, and the minimum defining $\delta_q$ was taken over the
+    empty set when $q=1$. The step now derives $\abs{1-z^n}\ge\delta_q-(1-r)$, gives $\delta_q/2$ for
+    $r\ge1-\delta_q/2$ when $q\ge2$, states the case $q=1$ to be vacuous, and bounds the real part of
+    the corresponding terms by $-2r^n/\delta_q$. The other three steps are unchanged. Not checked in
+    this pass: the identity of step 1 and the convergence argument of step 4 beyond reading them.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Record of the search behind the solution's provenance sentence, which the reader asked for where
+    no published solution set covers the Problem. Read: the head of R. C. Rhoades,
+    *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), whose
+    abstract describes it as solutions or hints to "many of the exercises", with one part per
+    chapter. Searched the open web for a set answering the end-of-chapter Problems of this book: no
+    document answering Chapter 2, Problem 2 was found; the documents returned were the book itself,
+    the Rhoades set, and course pages. This search located no published set answering this Problem,
+    and none is retained in this repository. Not checked: whether such a set exists outside what a
+    web search reaches. The mathematics of the card is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator correction to the source-checked event of 2026-11-20 above, whose pair of page numbers is
+    off by one on the second number: the printed folio it names is the right one for this Problem,
+    and the PDF page it names is the page after that folio. Read on the pages themselves: the page
+    carrying the folio the event names holds "2. Let F(z) = sum_{n>=1} d(n) z^n ... where d(n)
+    denotes the number of divisors of n", which is this Problem, while the page it names as the PDF
+    page holds Problem 3(a) with its displayed (16) and nothing of Problem 2. The card cites
+    Chapter 2, Problem 2, and its statement and argument are unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected: a published solution of this Problem was located, so the sentence saying
+    that none existed is replaced. The set is Wang Zirui, *Complete Solutions for Chapter 2* (SJTU),
+    in the public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, file
+    `book-2-complex/tex/stein-shakarchi-book2-chapter02-solutions.tex`, read at its Problem 2 and
+    checked against Chapter 2, Problem 2: it proves the Lambert identity by rearrangement of
+    $\sum_{n,m\ge1}z^{nm}$, bounds $F(r)$ below by $c\,h^{-1}\log(1/h)$ from the terms with
+    $n\le h^{-1}$ at $r=1-h$, splits the Lambert series at multiples of $q$ for $\zeta=e^{2\pi
+    ip/q}$, and gets $\abs{F(r\zeta)}\ge c_{p/q}h^{-1}\log(1/h)$ there, which is the divergence the
+    card's third step states. Its last step is the card's fourth: a regular boundary point would make
+    a whole arc regular, and roots of unity are dense. The card supplies the detail the published
+    text compresses: the uniform bound $\abs{1-r^n\zeta^n}\ge\delta_q/2$ for $q\nmid n$ once
+    $r\ge1-\delta_q/2$, the real-part estimate, and the vacuous case $q=1$. Checked against the book:
+    all four claims are the printed Problem's, and the identity is the printed one. Not checked:
+    anything in the published document outside its Problem 2.
 ---
 
 ::: {.exercise}
@@ -37,7 +101,12 @@ $$
 as $r \to 1$. Conclude that $F$ cannot be continued analytically past the unit disc.
 :::
 
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 2, Problem 2).
+:::
+
 ::: {.solution}
+The published solution of this Problem is Wang Zirui, *Complete Solutions for Chapter 2* (Problem 2), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, and its four claims are the four steps below: the Lambert-series identity $\sum_{n\ge1}z^n/(1-z^n)=\sum_{k\ge1}d(k)z^k$ by rearrangement of an absolutely convergent double series, the lower bound $F(r)\ge c(1-r)^{-1}\log\frac1{1-r}$, the same bound at a root of unity with a constant depending on its order $q$, and the conclusion that no continuation crosses the circle. The steps below supply the detail that text compresses, which the audit trail records.
 
 ::: pf
 
@@ -71,7 +140,7 @@ For $\theta = 2\pi p/q$, $\abs{F(re^{i\theta})} \ge c_{p/q}\frac{1}{1-r}\log\fra
 
 ::: pf-proof
 
-Assume $p/q$ is in lowest terms and put $z=re^{i\theta}$. For $q\mid n$, $z^n = r^n$, and the terms with $n=qj$ contribute $\sum_j\frac{r^{qj}}{1-r^{qj}}=F(r^q)$, which by step [](#s2){.pf-ref} is at least $c\frac{1}{1-r^q}\log\frac{1}{1-r^q}\ge \frac cq\frac{1}{1-r}\log\frac{1}{q(1-r)}$ since $1-r^q\le q(1-r)$. For $q\nmid n$, $e^{in\theta}$ is a $q$th root of unity different from $1$, so $\abs{1-z^n}\ge\delta_q>0$ for $r$ near $1$, and these terms contribute at most $\sum_n r^n/\delta_q=O\bigl(\frac1{1-r}\bigr)$. The logarithmic factor dominates, which gives the bound with a smaller constant $c_{p/q}$.
+Assume $p/q$ is in lowest terms and put $z=re^{i\theta}$. For $q\mid n$, $z^n = r^n$, and the terms with $n=qj$ contribute $\sum_j\frac{r^{qj}}{1-r^{qj}}=F(r^q)$, which by step [](#s2){.pf-ref} is at least $c\frac{1}{1-r^q}\log\frac{1}{1-r^q}\ge \frac cq\frac{1}{1-r}\log\frac{1}{q(1-r)}$ since $1-r^q\le q(1-r)$. For $q\nmid n$ put $\theta_n=2\pi np/q$. Then $e^{i\theta_n}$ is a $q$th root of unity different from $1$ and $\abs{1-z^n}=\abs{1-r^ne^{i\theta_n}}\ge\abs{1-e^{i\theta_n}}-(1-r^n)\ge\delta_q-(1-r)$, where $\delta_q=\min_{1\le m\le q-1}\abs{1-e^{2\pi im/q}}>0$ depends only on $n$ modulo $q$, so one $\delta_q$ serves every such $n$; for $q\ge2$ and $r\ge1-\delta_q/2$ this is at least $\delta_q/2$, and for $q=1$ there is no such $n$ and the estimate is vacuous. These terms have real part at least $-2r^n/\delta_q$ and so contribute at least $-2\sum_n r^n/\delta_q=-O\bigl(\frac1{1-r}\bigr)$ to $\operatorname{Re}F(re^{i\theta})$, and $\abs{F}\ge\operatorname{Re}F$. The logarithmic factor dominates, which gives the bound with a smaller constant $c_{p/q}$.
 
 :::
 

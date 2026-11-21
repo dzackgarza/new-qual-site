@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP12-5
 kind: problem
 title: Closed subsets of compact spaces and compact subsets of Hausdorff spaces
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Compactness, Hausdorff Spaces]}
 relations: []
 review: draft
 audit:

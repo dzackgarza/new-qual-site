@@ -32,6 +32,26 @@ audit:
     Rechecked the Frobenius-twist direction, both degree-p factorization
     implications, the associates criterion, the p^2 field-of-definition
     argument, and the semilinear cohomology calculation in part (d).
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.4.20, printed pp. 94--95,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF pages are the printed
+    pages. Checked against the book: Hartshorne IV.4.20, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed (a) at the level of the Legendre formula, in particular that $j(X_p)=j(X)^{1/p}$ and that $j=j^{1/p}$ is exactly $j\in\FF_p$; (c) from $\deg[p]_X=p^2$ and pure inseparability; and (d) as the $p$-semilinearity of $F^*$ together with $F^*f^*=f^*F^*$, which forces $\lambda_f^p=\lambda_f$.
+    Not checked: Yang's Solutions outside printed pp. 94--95; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's
+    Solution 4.4.20 at printed pp. 94--95; it had none before. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -478,4 +498,8 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (a), steps [](#s3){.pf-re
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.20, runs (a) off the Legendre form: writing $X$ as $y^2=x(x-1)(x-\lambda)$, the twist $X_p$ is $y^2=x^3-(\lambda+1)^{1/p}x^2+\lambda^{1/p}x$, and the same formula for $j$ in the two variables gives $j_{X_p}^p=j_X$ modulo $p$, i.e. $j(X_p)=j(X)^{1/p}$; then $X\cong X_p$ exactly when $j=j^{1/p}$, i.e. $j\in\FF_p$. Part (b) factors $[p]=\pi\hat\pi$ of degree $p$ from $X\cong X_p$ and the Hasse criterion by (2.5), with Hasse zero exactly when the two factors are associates. Part (c) is on printed p. 94: Hasse zero makes $\hat F'$ purely inseparable, so $[p]_X=F'\hat F'$ is purely inseparable of degree $p^2$, giving $X_{p^2}\cong X$ and $j_X=j_X^{p^2}$, i.e. $j_X\in\FF_{p^2}$. Part (d), on printed p. 95, defines $\lambda_f$ by $f^*=\lambda_f$ on the one-dimensional $H^1(\OO_X)$ and concludes $\lambda_f\in\FF_p$ and $R/\mathfrak p\cong\FF_p$ for $\mathfrak p=\ker(f\mapsto\lambda_f)$. The conclusion is right and one displayed line and one reason are not. The commutation $f\circ F=F\circ f$ is stated to follow from $(f_i)^p=f_i(x^p,y^p,z^p)$ 'since they are all in $k$', and that identity needs the coefficients in $\FF_p$; what is true is that $f^*$ and $F^*$ agree as $p$-th-power maps on the structure sheaf, so they commute for every $f$ over $k$. And the inequality between $\lambda_fF^*(x)$ and '$F^*(\lambda_f)F^*(x)=F^*(\lambda x)$' has $F^*$ applied to a scalar; the step that works is $F^*(\lambda_f v)=\lambda_f^pF^*(v)\ne\lambda_fF^*(v)$ when $\lambda_f\notin\FF_p$, against $F^*f^*=f^*F^*$.
 :::

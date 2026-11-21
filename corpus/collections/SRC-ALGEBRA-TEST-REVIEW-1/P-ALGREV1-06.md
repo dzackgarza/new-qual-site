@@ -6,7 +6,9 @@ title: The additive quotient by the center is not cyclic
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Center of a Ring
+  - Cyclic Groups
 relations: []
 review: draft
 audit:

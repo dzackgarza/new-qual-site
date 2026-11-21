@@ -38,6 +38,17 @@ audit:
     No published solution set is retained for this examination. The two examples
     are given with the power computations that verify their integrability and
     non-integrability, which is more than the printed instruction requires.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The closing remark claimed that L^2 and L^3 on a space of finite measure are not
+    comparable, and spoke of finite measure concentrated near infinity. Both are false:
+    on a space of finite total measure Holder gives L^3 contained in L^2, and [1,infinity)
+    has infinite measure. The remark now gives the correct reason, that on R the
+    convergence of the integral of x^{-p alpha} at 0 and at infinity pull in opposite
+    directions. The two examples and the problem statement are unchanged.
+
 ---
 
 ::: {.problem}
@@ -99,10 +110,13 @@ The two examples answer (a) and (b) respectively.
 
 $f$ is real-valued and measurable, lies in $L^2(\RR)$ and not in $L^3(\RR)$,
 which is (a); $g$ is real-valued and measurable, lies in $L^3(\RR)$ and not in
-$L^2(\RR)$, which is (b). No single function can serve for both, since $L^2$
-and $L^3$ on a space of finite measure are not comparable in general; here the
-finite measure is concentrated near $0$ for $f$ and near infinity for $g$,
-which is exactly why the two examples differ in their supports.
+$L^2(\RR)$, which is (b). No single function can serve for both: on $\RR$, a space
+of infinite measure, neither $L^2$ nor $L^3$ contains the other, since
+$\int_0^1x^{-p\alpha}\,dx$ converges exactly when $p\alpha<1$ and
+$\int_1^\infty x^{-p\alpha}\,dx$ exactly when $p\alpha>1$; with $\alpha=2/5$ one has
+$p\alpha=4/5$ for $p=2$ and $p\alpha=6/5$ for $p=3$, so the singularity at $0$
+defeats $L^3$ while the tail at infinity defeats $L^2$. On a space of finite total
+measure Hölder gives $L^3\subseteq L^2$, so no such pair exists there.
 
 :::
 

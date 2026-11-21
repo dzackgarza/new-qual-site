@@ -6,7 +6,9 @@ title: Homomorphisms from a group of order 144 to a group of order 25 are trivia
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Homomorphisms
+  - Cosets and Lagrange
 relations: []
 review: draft
 audit:

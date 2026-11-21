@@ -90,6 +90,78 @@ audit:
     I.3.19(a) and I.3.20 had the same table off by one at the other end ---
     "PDF p. 5 carries 3.13--3.14" --- where 3.13 is on p. 4 with 3.1--3.13 and
     p. 5 carries 3.14; corrected there too.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The remark and the claim in the body described a Mathematics Stack Exchange
+    answer as a "published proof". An answer on that site is a user post and not
+    a publication, and issue #121's acceptance asks for a published source with
+    its printed page, so the words were false of the source and are corrected:
+    the reduction is marked as the card's own, the answer is named as a user
+    post with no printed page cited for it, and the remark records that no
+    publication located prints the equality $I(\bar Y)=Q$. Checked in this pass:
+    the text version of the answer at answer 161648, and the exercise as printed
+    at Hartshorne I.2.9, printed p. 12 (PDF p. 27 of the checked-in extraction).
+    Not checked in this pass: no publication was opened or re-read, and the
+    searches of the three Chapter I sets were not repeated; COMPLAINTS.md
+    carries them and records this card as owing a published argument for part
+    (b).
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark's closing sentence was false in its first clause and is
+    corrected. It read "the sets of this corpus that reach I.2.9 are Borcherds
+    and Troiani and neither proves it", and four retained sets reach the
+    exercise: Yang Pi-Yeh's Solution 1.2.9, which writes the projective closure
+    and proves both inclusions of part (a) and then exhibits the cubic
+    wz^2 - y^3 in I(Ybar) outside (yw - x^2, zw^2 - x^3); Egbert's entry headed
+    "1.2.15 I.2.9", which proves part (a) and leaves part (b) as the printed
+    statement; and Borcherds and Troiani, as the remark already said. None of
+    the four proves the equality I(Ybar) = Q, so the remark's conclusion stands
+    and only its census was wrong. Read in this pass:
+    tmp/sources/lfwin-hartshorne-solutions.md at Solution 1.2.9 and
+    tmp/sources/hartshorne-solutions-egbert.md at the entry for Exercise I.2.9,
+    both in the text versions; and the printed exercise at Hartshorne I.2.9,
+    printed p. 12 (PDF p. 27, folio read), whose part (a) asks for the identity
+    I(Ybar) = (beta(I(Y))) and whose part (b) asks for generators of I(Y) and
+    I(Ybar) and for the failure of the homogenized ones. The proof on the card
+    was read again in this pass and is unchanged: part (a) through F = x_0^e F'
+    with x_0 not dividing F', and part (b) through the normal form A + xB + yC
+    modulo Q, the substitution, the three residue classes modulo 3 and the
+    degree-two count that separates J from Q. Not checked in this pass: no
+    search was made for a publication printing the equality, and the printed
+    pages of Yang's and Egbert's sets were not read, so the remark cites neither.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The census in the remark was still short and is corrected again: six
+    retained sets reach I.2.9, not four, and the remark now names them. Read in
+    this pass, in the text versions: Cutrone--Marshburn's item 9, whose (a) is
+    the card's argument and whose (b) shows the homogenized pair fails; and
+    Sam's Exercise 9, whose (b) lists the three quadrics as generators and
+    argues only that wz^2 - y^3 is not in the ideal of the other two. Those
+    two, with Borcherds, Troiani, Yang's Solution 1.2.9 and Egbert's entry
+    headed "1.2.15 I.2.9", are every retained set of this corpus that reaches
+    the exercise: Cais, Kim, Dongryul Kim, Lomont, Okamoto, Park,
+    Saglam--Chris, Stein and Shichijo's Chapter 1 section 1 do not treat it,
+    and the Kims' "2.9" and Park's are Chapter II sections. Two defects of the
+    sources are recorded here and not on the card. Sam's list is garbled by the
+    extraction: it prints {wz^2 - x^3, wy - x^2, wz^2 - y^3}, and the first
+    and third cannot both hold on the curve; read with the parametrisation
+    (u^3, u^2v, uv^2, v^3) the three are wy - x^2, w^2z - x^3 and wz^2 - y^3.
+    Cutrone--Marshburn's separation is made at (0,1,1,0), which does not lie on
+    wy - x^2, since x = 1 and w = 0 there; the point (0,0,1,0) does lie on both
+    and is not of the form (u^3,u^2v,uv^2,v^3), so their conclusion is right
+    and their point is a slip. Manifestly the equality is asserted in two of
+    the six and proved in none, so the card's own proof of it stands and the
+    remark's conclusion is unchanged. Checked in this pass: the whole file list
+    of tmp/sources for the exercise, and the printed exercise at printed p. 12
+    (PDF p. 27, folio read) again. Not checked in this pass: the printed pages
+    of Cutrone--Marshburn's and Sam's sets, so the card cites none of them.
 ---
 
 ::: {.problem}
@@ -137,7 +209,7 @@ Put $J = \generators{wy - x^2,\ w^2 z - x^3}$ and $Q = \generators{wy - x^2,\ wz
 *Claim: $I(\bar Y) = Q$.* Each generator of $Q$ vanishes at $\thevector{1 : t : t^2 : t^3}$, so vanishes on $Y$, hence on $\bar Y$; so $Q \subseteq I(\bar Y)$.
 Conversely, let $F \in I(\bar Y)$ be homogeneous of degree $d$.
 Modulo $Q$ one may replace $x^2$ by $wy$, $y^2$ by $xz$ and $xy$ by $wz$; each replacement lowers the total degree in $x, y$, so $F \equiv A + xB + yC \pmod Q$ with $A, B, C \in k[w,z]$.
-This reduction is the lemma of the published proof quoted in the remark below, Mathematics Stack Exchange question 160924, answer 161648, where it is stated as $P=R(a,d)+S(a,d)b+T(a,d)c+i$ with $i\in Q$.
+This reduction is the card's own, and it is the lemma of the answer quoted in the remark below, Mathematics Stack Exchange question 160924, answer 161648, where it is stated as $P=R(a,d)+S(a,d)b+T(a,d)c+i$ with $i\in Q$. That answer is a user post and not a publication, so no printed page is cited for it.
 Since $F$ vanishes on $Y$, the polynomial $F(s^3, s^2 t, s t^2, t^3) = s^{3d} F(1, t/s, (t/s)^2, (t/s)^3)$ vanishes for all $s \neq 0$ and all $t$, so it is zero; the same holds for $A + xB + yC$, as the generators of $Q$ vanish under this substitution.
 This gives
 $$
@@ -151,11 +223,11 @@ The degree-two part of $Q = I(\bar Y)$ contains the three linearly independent q
 So $J \neq I(\bar Y)$: the generators $y - x^2$, $z - x^3$ of $I(Y)$ have homogenizations that do not generate $I(\bar Y)$.
 :::
 
-::: {.remark title="Published solution"}
-Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.9, PDF p. 2, text version `tmp/sources/hartshorne-solutions-borcherds.md`: for (a) he takes $h$ homogeneous in $I(\bar Y)$ and writes $h=\beta g$ where $g=h(1,x_1,\ldots,x_n)$, and gets both inclusions; for (b) he homogenizes the two generators of $I(Y)$ to $x_0x_2-x_1^2$ and $x_0^2x_3-x_1^3$ and shows $I(\bar Y)$ contains $x_1x_3-x_2^2$, which is not in the ideal they generate.
-William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.9, PDF p. 5, text version `tmp/sources/hartshorne-solutions-troiani.md`: for (a) the same construction, again writing $f=\beta(f(1,x_1,\ldots,x_n))$ for a homogeneous $f$; for (b) he constructs $xy-wz$ in the ideal generated by the homogenized pair, shows it is outside the pair, and writes "It remains to find generators for $I(\bar Y)$ but I think $I(\bar Y)=(wy-x^2,xz-y^2,xy-zw)$ works". That quotation is the page's: the text version loses the display in that sentence, reading "It remains to find generators for $I \bar Y$ but I think $-$ works" at its line 214, while PDF p. 5 carries the three quadrics.
-The complete published proof of the equality $I(\bar Y)=Q$, and so of part (b), is the accepted answer of Georges Elencwajg to Mathematics Stack Exchange question 160924, *Ideal of the twisted cubic*, text version `tmp/sources/mse-160924-ideal-of-the-twisted-cubic.md`, answer 161648, score 19. His argument, quoted: "Any homogeneous polynomial $P(a,b,c,d)\in k[a,b,c,d]$ can be written $P(a,b,c,d)=R(a,d)+S(a,d)b+T(a,d)c+i(a,b,c,d)$ for some polynomials $R,S,T\in k[a,d]$ and a polynomial $i\in I$"; then, for $P\in I(X)$, "$0=P(x^3,x^2y,xy^2,y^3)=R(x^3,y^3)+S(x^3,y^3)x^2y+T(x^3,y^3)xy^2+0$. By considering exponents modulo $3$ for $x$ and $y$, we see that no cancellation occurs, hence that $R=S=T=0$ and thus $P=i\in I$." His $I$ is the card's $Q$ in the variables $(a,b,c,d)=(w,x,y,z)$. The lemma's "easy proof is by induction on the degree of $P$", which he leaves to the reader and which the card's body carries out with the substitutions $x^2\mapsto wy$, $y^2\mapsto xz$, $xy\mapsto wz$; and the passage from $R(x^3,y^3)=S(x^3,y^3)=T(x^3,y^3)=0$ as polynomials in his two variables to $R=S=T=0$ uses that the monomials $s^{3i}t^{3j}$ are linearly independent, that is that $s^3$ and $t^3$ are algebraically independent, which the card states.
+::: {.remark title="Published sources, and the located proof of part (b)"}
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.9, text version `tmp/sources/hartshorne-solutions-borcherds.md`: for (a) he takes $h$ homogeneous in $I(\bar Y)$ and writes $h=\beta g$ where $g=h(1,x_1,\ldots,x_n)$, and gets both inclusions; for (b) he homogenizes the two generators of $I(Y)$ to $x_0x_2-x_1^2$ and $x_0^2x_3-x_1^3$ and shows $I(\bar Y)$ contains $x_1x_3-x_2^2$, which is not in the ideal they generate.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.9, text version `tmp/sources/hartshorne-solutions-troiani.md`: for (a) the same construction, again writing $f=\beta(f(1,x_1,\ldots,x_n))$ for a homogeneous $f$; for (b) he constructs $xy-wz$ in the ideal generated by the homogenized pair, shows it is outside the pair, and writes "It remains to find generators for $I(\bar Y)$ but I think $I(\bar Y)=(wy-x^2,xz-y^2,xy-zw)$ works". That quotation is Troiani's: the retained text version loses the display in that sentence, reading "It remains to find generators for $I \bar Y$ but I think $-$ works", while the PDF of that set carries the three quadrics.
+The only complete argument located for the equality $I(\bar Y)=Q$, and so for part (b), is the accepted answer of Georges Elencwajg to Mathematics Stack Exchange question 160924, *Ideal of the twisted cubic*, text version `tmp/sources/mse-160924-ideal-of-the-twisted-cubic.md`, answer 161648, score 19; that answer is a user post and not a publication, so no printed page is cited for it. His argument, quoted: "Any homogeneous polynomial $P(a,b,c,d)\in k[a,b,c,d]$ can be written $P(a,b,c,d)=R(a,d)+S(a,d)b+T(a,d)c+i(a,b,c,d)$ for some polynomials $R,S,T\in k[a,d]$ and a polynomial $i\in I$"; then, for $P\in I(X)$, "$0=P(x^3,x^2y,xy^2,y^3)=R(x^3,y^3)+S(x^3,y^3)x^2y+T(x^3,y^3)xy^2+0$. By considering exponents modulo $3$ for $x$ and $y$, we see that no cancellation occurs, hence that $R=S=T=0$ and thus $P=i\in I$." His $I$ is the card's $Q$ in the variables $(a,b,c,d)=(w,x,y,z)$. The lemma's "easy proof is by induction on the degree of $P$", which he leaves to the reader and which the card's body carries out with the substitutions $x^2\mapsto wy$, $y^2\mapsto xz$, $xy\mapsto wz$; and the passage from $R(x^3,y^3)=S(x^3,y^3)=T(x^3,y^3)=0$ as polynomials in his two variables to $R=S=T=0$ uses that the monomials $s^{3i}t^{3j}$ are linearly independent, that is that $s^3$ and $t^3$ are algebraically independent, which the card states.
 
 The proof above separates the content $x_0^e$ that both published arguments divide out without saying so, and for (b) it proves the equality $I(\bar Y)=Q$ with the three quadrics rather than exhibiting one element outside the homogenized ideal.
-Agree on (a) with Borcherds and Troiani; for (b) neither of those two sets proves that the three quadrics generate, and Elencwajg's answer does.
+Agree on (a) with Borcherds and Troiani; for (b) neither of those two sets proves that the three quadrics generate, and Elencwajg's answer does. No publication located prints a proof of the equality $I(\bar Y)=Q$. Six retained sets of this corpus reach I.2.9 --- Borcherds, Troiani, Yang (Solution 1.2.9), Egbert, Cutrone--Marshburn and Sam --- and none of them proves it. Borcherds, Troiani, Yang and Cutrone--Marshburn exhibit one element of $I(\bar Y)$ outside the ideal generated by the homogenized pair; Sam lists the three quadrics as generators but argues only that $wz^2-y^3$ is not in the ideal generated by the other two, and Troiani writes the same three as a guess; Egbert's part (b) is the printed statement alone. The searches outside these six sets are recorded in `COMPLAINTS.md`.
 :::

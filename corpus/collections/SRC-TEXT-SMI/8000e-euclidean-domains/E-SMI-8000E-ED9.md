@@ -33,7 +33,6 @@ audit:
     q_j have strictly increasing positive integer sizes bounded by |a|, so the
     number r of irreducible factors satisfies r ≤ |a|. No defect.
 ---
----
 
 ::: {.exercise}
 Prove that if $a$ is a nonzero, nonunit element of a strongly Euclidean domain, then $a$ can be factored into at most $\abs{a}$ irreducible elements.

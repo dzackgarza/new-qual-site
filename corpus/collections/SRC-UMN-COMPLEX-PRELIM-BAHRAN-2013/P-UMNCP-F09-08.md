@@ -6,7 +6,9 @@ title: Two interior fixed points force the identity
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Identity Theorem
+  - Fixed Points
 relations: []
 review: draft
 audit:

@@ -12,6 +12,31 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained exam assets/attachments/SP10_290_Topology_Qual.pdf,
+    problem 7: to show that a closed orientable surface of genus g at least 1
+    has vanishing pi_2 and to deduce that its fundamental group is not free. The
+    card agrees. The previous problem on the same sheet, that a path-connected
+    space with vanishing pi_2 and free fundamental group on S is homotopy
+    equivalent to the bouquet of S circles, is the tool the card re-proves.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The argument is correct. Covering maps induce isomorphisms on homotopy
+    groups in degree at least two, and the universal covers are the plane for
+    every genus at least one (the torus by construction, and the higher genus
+    surfaces by uniformization), so pi_2 vanishes and the surfaces are
+    aspherical. If the fundamental group were free on a set S, a map from the
+    bouquet of S circles inducing the corresponding isomorphism on pi_1 would be
+    a homotopy equivalence by Whitehead, since graphs are aspherical and the
+    surface is too; but the surface has a nonzero second homology group, being
+    closed and orientable, while a graph has no homology above degree one. That
+    contradiction finishes the deduction. Nothing was changed.
 ---
 
 ::: {.problem}

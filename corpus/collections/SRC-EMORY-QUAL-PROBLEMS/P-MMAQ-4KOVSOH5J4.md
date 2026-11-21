@@ -20,6 +20,18 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: "Compared with Groups (6) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAG6, whose solution repeats this counting argument."
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. (a) The conjugates of H number [G:N_G(H)], which
+    is at most [G:H] because N_G(H) contains H; each has |H| elements and all contain the identity,
+    so the union has at most 1 + [G:N_G(H)](|H|-1) elements, and that is at most
+    1 + [G:H](|H|-1) = |G| - ([G:H]-1) < |G| since H is proper. The union is therefore proper. (b)
+    If every element fixed a point then G would be the union of the stabilizers, which are all
+    conjugate to G_x by transitivity, and G_x is proper because |X| > 1 and the action is
+    transitive; that contradicts (a). The bound in (a) is the classical one and the counting of the
+    identity once is what makes the strict inequality work. Nothing outside the exercise checked.
 ---
 
 ::: {.problem}

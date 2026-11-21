@@ -6,7 +6,9 @@ title: Limit of integrals over large circular arcs when $zf(z)\to k$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Topology of the metric measuring where continuous functions last disagree
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Metric Spaces
+  - Completeness
 relations: []
 review: draft
 audit:

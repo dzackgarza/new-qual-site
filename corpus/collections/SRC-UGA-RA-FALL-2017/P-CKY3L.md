@@ -11,6 +11,16 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained examination `assets/attachments/Real_Analysis_Fall_2017.docx`, converted with
+    Pandoc: the item is the third problem, beginning "Let S be the vector space", and its printed words
+    are the card's. The document numbers its problems automatically and that numbering does not survive
+    the conversion, so the position and the opening words are the locator. Both are now named in the
+    solution's opening sentence. Not checked: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -23,6 +33,7 @@ $$
 :::
 
 ::: {.solution}
+This is the third problem of the Fall 2017 real analysis examination, retained in this repository as `assets/attachments/Real_Analysis_Fall_2017.docx`; the conversion loses the document's automatic numbering, so the position and the opening words locate it.
 **Goal:** Prove that the span of interval indicator functions $S$ is dense in $L^1(\RR)$ using simple function density and Lebesgue regularity.
 
 ::: pf

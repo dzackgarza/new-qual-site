@@ -35,19 +35,47 @@ Show that the subspace $(a, b)$ of $\RR$ is homeomorphic with $(0, 1)$ and the s
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 18.5, printed p. 181** (`tmp/sources/munkres-solutions-whitman.pdf`); the maps and the argument are his, including the observation about the degenerate case.
 
-Suppose $a<b$ and put $X=(a,b)$, $Y=(0,1)$ and
-$$
-f:X\longrightarrow Y,\qquad f(x)=\frac{x-a}{b-a},
-$$
-which is defined because $b-a>0$. This is a bijection (its inverse, computed below, is defined on all of $Y$), and it is the restriction to $X$ of the linear map $\RR\to\RR$, $x\mapsto(x-a)/(b-a)$, which is continuous by elementary calculus; by Theorem 18.2(d) its restriction to the subspace $X$ is continuous. Its inverse is
-$$
-f^{-1}:Y\longrightarrow X,\qquad f^{-1}(y)=a+y(b-a),
-$$
-again linear, hence continuous. So $f$ is a homeomorphism.
+The maps and the argument are those of **Dan Whitman**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 18.5 (`tmp/sources/munkres-solutions-whitman.pdf`), including his observation on the degenerate case; the statement was checked against Munkres, *Topology* (2000), §18 Exercise 5. Both parts presuppose $a<b$: for $a=b$ the interval $(a,a)$ is empty and $[a,a]$ is a one-point space, so the statement as printed is understood with $a<b$, and the degenerate case is recorded in the last step below.
 
-The same formula with $X=[a,b]$ and $Y=[0,1]$ shows that $[a,b]$ is homeomorphic with $[0,1]$: the same two maps are mutually inverse bijections, and continuity is again that of a restriction of a linear map.
+::: pf
 
-If $a=b$ then $[a,b]=\{a\}$ is a one-point space, which is not homeomorphic with $[0,1]$: a homeomorphism is a bijection, and $[0,1]$ is infinite.
+::: {.pf-step #interval-bijection}
+Let $a<b$ and let $f\colon(a,b)\to(0,1)$ be given by $f(x)\coloneqq\frac{x-a}{b-a}$. Then $f$ is a bijection.
+
+::: pf-proof
+Since $b-a>0$, if $a<x<b$ then $0<\frac{x-a}{b-a}<\frac{b-a}{b-a}=1$, so $f$ takes its values in $(0,1)$. If $f(x)=f(x')$ then $x-a=x'-a$ and $x=x'$, so $f$ is injective. For $t\in(0,1)$ the point $x\coloneqq a+t(b-a)$ satisfies $x-a=t(b-a)$ with $0<t<1$, hence $a<x<b$, and $f(x)=t$; so $f$ is surjective.
+:::
+
+:::
+
+::: {.pf-step #open-interval}
+$f$ is a homeomorphism of $(a,b)$ onto $(0,1)$.
+
+::: pf-proof
+By step [](#interval-bijection){.pf-ref} it is a bijection, with inverse $g(t)\coloneqq a+t(b-a)$. The map $x\mapsto(x-a)/(b-a)$ is linear on $\RR$, hence continuous, and $f$ is its restriction to the subspace $(a,b)$, so $f$ is continuous by Theorem 18.2(d); likewise $g$ is linear and $g=f^{-1}$ is continuous. A continuous bijection with continuous inverse is a homeomorphism.
+:::
+
+:::
+
+::: {.pf-step #closed-interval}
+For $a<b$, the subspace $[a,b]$ is homeomorphic with $[0,1]$.
+
+::: pf-proof
+The same formula $f(x)=\frac{x-a}{b-a}$ maps $[a,b]$ into $[0,1]$ bijectively: if $a\leq x\leq b$ then $0\leq f(x)\leq 1$, and for $t\in[0,1]$ the point $a+t(b-a)$ lies in $[a,b]$ and maps to $t$. Continuity of $f$ and of its inverse $t\mapsto a+t(b-a)$ is again that of the restrictions of the two linear maps, by Theorem 18.2(d).
+:::
+
+:::
+
+::: pf-step
+Both assertions hold under the stated hypothesis $a<b$, and the degenerate case $a=b$ is excluded.
+
+::: pf-proof
+Steps [](#open-interval){.pf-ref} and [](#closed-interval){.pf-ref} give the two homeomorphisms. If $a=b$, then $[a,b]=\theset{a}$ is a one-point space and $(a,a)=\varnothing$; a homeomorphism is a bijection, and neither the empty set nor a one-point set is in bijection with $[0,1]$ or with $(0,1)$, which are infinite, so nothing is lost by reading the exercise with $a<b$.
+:::
+
+:::
+
+:::
+
 :::

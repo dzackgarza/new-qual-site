@@ -5,7 +5,9 @@ kind: problem
 title: Volume of a region cut from a ball by a sphere and a plane
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Volume
+  - Multivariable Calculus
 relations: []
 review: draft
 audit:

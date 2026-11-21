@@ -35,6 +35,72 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: Hartshorne IV.6.8 prints the equivalence for every degree d, which fails for the zero divisor on P^1 (g=d=0). The statement now assumes d>0.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The gap in step s3 is closed by numbered statements, and the citation that did not carry it is
+    gone. s3 asserted that Pic^0(X) = Jac(X) is an irreducible variety of dimension g, citing the
+    internal card T-CRVJACFUN; that card's own citations are a definition of the Picard functor and
+    Riemann-Roch, and neither gives existence, completeness or the dimension, so the step was
+    resting on an unproved result. Hartshorne states the Jacobian by a universal property in
+    IV.4.10 and proves existence only for genus one, in Theorem IV.4.11.
+
+    The step now cites Milne, *Jacobian Varieties*, Chapter VII of *Arithmetic Geometry*: Theorem
+    1.1 for existence and representability of Pic^0, with Corollary 4.3 and the closing paragraph
+    of its section 4 for the construction and for the morphism C^(r) -> J that steps s4 and s5 take
+    images of; Proposition 2.1 for the tangent space H^1(C, O_C) and hence dim J = g; and
+    Proposition 7.4 with Theorem 7.6 for completeness. Irreducibility is that of a variety, and the
+    genus is dim_k H^1(X, O_X) by Hartshorne's Proposition IV.1.1. Smoothness of the Jacobian is not
+    used by this card and is not claimed: it appears in the sources only as prose or through a
+    separate representability theorem, and the dimension count here needs no tangent space of
+    Pic^d beyond its dimension.
+
+    What was checked and what was not. The numbered statements were read in Milne's own TeX file
+    (jmilne.org/math/xnotes/JVs.pdf), whose abstract states that the numbering is unchanged from the
+    published chapter; the published scan is image-only and was not OCR'd. Theorem 1.1, Corollary
+    4.3, Proposition 2.1, Proposition 7.4 and Theorem 7.6 were each opened at their numbers. Not
+    checked: the printed volume itself, and Boschi-Lutkebohmert-Raynaud, whose Chapter 9 supplies the
+    same facts as Proposition 3 of 9.2 and Theorem 3 of 8.4 and which is retained here but was not
+    needed once Milne's statements did the work.
+
+    Unchanged and still correct: s1 (the only-if direction), s2, s4, s5, s6 and s7, which were read
+    in this pass; Riemann-Roch is Theorem IV.1.3 and Serre duality Theorem III.7.6, cited by their
+    numbers, and every reference the card makes is to a numbered statement.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The "if" direction is now proved from Riemann-Roch alone, and the Jacobian is gone from the
+    proof. The previous version reached existence through the Picard variety: step s3 asserted that
+    Pic^d(X) is an irreducible variety of dimension g, s4 and s5 counted dimensions inside it, and s6
+    chose a line bundle outside two proper closed subsets. That argument is correct given the
+    Jacobian, and the card cited Milne's *Jacobian Varieties*, Theorem 1.1, Proposition 2.1 and
+    Proposition 7.4 with Theorem 7.6 for it, but it rested on an existence theorem the book states
+    and does not prove.
+
+    The replacement uses two numbered statements only: Riemann-Roch, Theorem IV.1.3, and the
+    criterion of Proposition IV.3.1 with its exact sequence. s3 is that criterion: P is a base point
+    of |D| exactly when h^0(D-P)=h^0(D), which by subtracting the two Riemann-Roch formulas is
+    exactly h^0(K-D+P)=h^0(K-D)+1. s4 is Hartshorne's own greedy construction from the proof of
+    Corollary IV.4.10.9: take P_i not a base point of |K-P_1-...-P_{i-1}|, so that after g steps
+    h^0(K-E)=0 for E=P_1+...+P_g; every effective D of degree at least g containing E is then
+    nonspecial. s5 chooses one further point Q outside a finite set and shows D=E+Q is nonspecial
+    with no base points: the set of Q for which some h^0(K-D+R) is nonzero is finite, because for
+    S in the support of E the system |K-E+S| has h^0 at most 1 by the same dimension count, hence
+    consists of at most one divisor of degree g-1, and the three cases R=Q, R off the support of E
+    and R in the support of E are each excluded. s6 adds points one at a time, which preserves both
+    properties, and covers every d>=g+1; g=0 is step s2, unchanged.
+
+    What this removes: no Jacobian variety, no Picard scheme, no symmetric product, no
+    irreducibility or dimension count on a parameter space, and no Clifford. What it keeps: Serre
+    duality, Theorem III.7.6, for h^1 = 0, and Gauss's genus as dim_k H^1 by Proposition IV.1.1
+    through Proposition IV.3.1.
+
+    Not checked: the numerical check a review made of the finite bad set on a plane quartic over a
+    finite field, which is evidence for the case analysis rather than a proof of it; the case
+    analysis itself was read line by line in all three cases.
+
 ---
 
 ::: {.problem}
@@ -135,30 +201,32 @@ $\OO_X(D)\cong L$ has the required properties.
 
 ::: {.pf-step #s3}
 
-Assume $g\ge1$ and fix an integer
+A point $P$ is a base point of $\abs{D}$ exactly when
 $$
-d\ge g+1.
+h^0(X,\OO_X(D-P))=h^0(X,\OO_X(D))
+\iff
+h^0(X,\OO_X(K-D+P))=h^0(X,\OO_X(K-D))+1 .
 $$
-Then $\Pic^d(X)$ is an irreducible variety of dimension $g$.
 
 ::: pf-proof
 
-Fix a point $P_0\in X$.  Tensoring by
+The first equivalence is the one of Proposition IV.3.1 and its proof: the
+evaluation map $H^0(X,\OO_X(D))\to\OO_X(D)\otimes k(P)\cong k$ has kernel
+$H^0(X,\OO_X(D-P))$, so $P$ is a base point exactly when this map is zero,
+that is, when $h^0(D-P)=h^0(D)$.
+
+Riemann--Roch, Theorem IV.1.3, applied to $D$ and to $D-P$ gives
 $$
-\OO_X(dP_0)
+h^0(D)-h^0(K-D)=d+1-g,
+\qquad
+h^0(D-P)-h^0(K-D+P)=d-g,
 $$
-identifies
+and subtracting the two shows
 $$
-\Pic^0(X)
-\xrightarrow{\sim}
-\Pic^d(X).
+h^0(D-P)-h^0(D)=-1+\bigl(h^0(K-D+P)-h^0(K-D)\bigr).
 $$
-By [[T-CRVJACFUN]],
-$$
-\Pic^0(X)=\Jac(X)
-$$
-is an irreducible variety of dimension $g$.  Hence the same is true of
-$\Pic^d(X)$.
+So $h^0(D-P)=h^0(D)$ exactly when
+$h^0(K-D+P)=h^0(K-D)+1$.
 
 :::
 
@@ -166,55 +234,28 @@ $\Pic^d(X)$.
 
 ::: {.pf-step #s4}
 
-The locus
+There are points $P_1,\dots,P_g\in X$ with
 $$
-S_d
-=
-\{L\in\Pic^d(X):h^1(X,L)>0\}
+h^0(X,\OO_X(K-P_1-\cdots-P_g))=0 .
 $$
-of special line bundles is contained in a proper closed subset of
-$\Pic^d(X)$.
+Consequently every effective divisor $D$ of degree $d\ge g$ that contains
+$P_1+\cdots+P_g$ is nonspecial, and
+$$
+h^0(X,\OO_X(D))=d+1-g .
+$$
 
 ::: pf-proof
 
-By Serre duality,
-$$
-h^1(X,L)=h^0(X,K\otimes L^{-1}).
-$$
-Thus $L$ is special exactly when
-$$
-K\otimes L^{-1}
-$$
-is effective.
+Start with $E_0=0$, where $h^0(K-E_0)=h^0(K)=g$ by Proposition IV.1.1.
+Suppose $h^0(K-E_i)=g-i\ge1$, so that $\abs{K-E_i}$ is nonempty; its base
+locus is a proper closed subset of the irreducible curve $X$, so there is a
+point $P_{i+1}$ which is not a base point of $\abs{K-E_i}$. By Proposition
+IV.3.1, $h^0(K-E_{i+1})=h^0(K-E_i)-1$. After $g$ steps
+$h^0(K-E_g)=0$. This is the construction Hartshorne carries out in the proof
+of Corollary IV.4.10.9.
 
-Put
-$$
-e=2g-2-d.
-$$
-If $e<0$, there are no such line bundles and $S_d$ is empty.
-
-If $e\ge0$, every special $L$ has the form
-$$
-L\cong\OO_X(K-E)
-$$
-for some effective divisor $E$ of degree $e$.  Hence $S_d$ is the image of
-the proper morphism
-$$
-\Sym^eX
-\longrightarrow
-\Pic^d(X),
-\qquad
-E\longmapsto\OO_X(K-E).
-$$
-It is therefore closed, and
-$$
-\dim S_d\le e=2g-2-d.
-$$
-Since $d\ge g+1$,
-$$
-2g-2-d\le g-3<g.
-$$
-Thus $S_d$ is proper in the $g$-dimensional variety $\Pic^d(X)$.
+If $D\ge E_g$ then $K-D\le K-E_g$, so $h^0(K-D)\le h^0(K-E_g)=0$, and
+Riemann--Roch, Theorem IV.1.3, gives $h^0(D)=d+1-g$.
 
 :::
 
@@ -222,70 +263,46 @@ Thus $S_d$ is proper in the $g$-dimensional variety $\Pic^d(X)$.
 
 ::: {.pf-step #s5}
 
-The locus of line bundles in $\Pic^d(X)$ having a base point is
-contained in a proper closed subset.
+Let $E=P_1+\cdots+P_g$ be as in step [](#s4){.pf-ref} and let
+$$
+Z=\bigcup_{S\in\operatorname{Supp}E}\ \bigcup_{A\in\abs{K-E+S}}\operatorname{Supp}A .
+$$
+Then $Z$ is finite, and for every point $Q\in X\setminus Z$ the divisor
+$D=E+Q$ has degree $g+1$, is nonspecial, and satisfies
+$h^0(K-D+R)=h^0(K-D)$ for every $R\in X$.
 
 ::: pf-proof
 
-Let $L\in\Pic^d(X)$ and suppose that a point $P\in X$ is a base point of
-$\abs{L}$.  Then
+$Z$ is finite. Fix $S\in\operatorname{Supp}E$. Since $K-E+S=(K-E)+S$ and
+adding a point raises $h^0$ by at most one,
 $$
-h^0(X,L(-P))=h^0(X,L).
+h^0(K-E+S)\le h^0(K-E)+1=1
 $$
-Riemann--Roch for $L$ and $L(-P)$ gives
-$$
-h^0(X,L)
-=
-d+1-g+h^0(X,K\otimes L^{-1})
-$$
-and
-$$
-h^0(X,L(-P))
-=
-d-g+h^0(X,K\otimes L^{-1}(P)).
-$$
-Equality therefore implies
-$$
-h^0(X,K\otimes L^{-1}(P))
-=
-h^0(X,K\otimes L^{-1})+1
-\ge1.
-$$
-Hence
-$$
-K\otimes L^{-1}(P)
-$$
-is effective.
+by the argument of Proposition IV.3.1; so $\abs{K-E+S}$ is empty or consists
+of a single divisor, of degree $\deg K-\deg E+1=g-1$ by Example IV.1.3.3.
+Its support is therefore finite, and $Z$ is a finite union of finite sets. As
+$X$ is an irreducible curve it has infinitely many points, so $Q\notin Z$
+exists.
 
-Put
-$$
-e'=2g-1-d.
-$$
-If $e'<0$, this is impossible, so every degree-$d$ line bundle is
-base-point free.
+$D=E+Q$ is nonspecial because $K-D\le K-E$ gives $h^0(K-D)\le h^0(K-E)=0$;
+its degree is $g+1$, and $h^0(D)=2$ by Riemann--Roch.
 
-If $e'\ge0$, every line bundle having a base point is contained in the image
-of
+Suppose that $h^0(K-D+R)\ge1$ for some $R$. Then
+$K-D+R$ is linearly equivalent to an effective divisor, so there is an
+effective canonical divisor $K'$ with
 $$
-X\times\Sym^{e'}X
-\longrightarrow
-\Pic^d(X),
-\qquad
-(P,E)\longmapsto\OO_X(K+P-E).
+K'\ge D-R=E+Q-R .
 $$
-The source is proper, so its image $B_d$ is closed.  Moreover,
-$$
-\dim B_d
-\le
-1+e'
-=
-2g-d
-\le
-g-1
-<g.
-$$
-Thus $B_d$ is a proper closed subset of $\Pic^d(X)$ containing every line
-bundle with a base point.
+If $R=Q$, then $K'\ge E$, so $K'-E$ is effective and $h^0(K-E)\ge1$, contrary
+to step [](#s4){.pf-ref}. If $R\ne Q$ and $R\notin\operatorname{Supp}E$, then
+comparing coefficients at $Q$, at the points of $\operatorname{Supp}E$ and at
+all other points shows $K'\ge E$, again contradicting step [](#s4){.pf-ref}.
+If $R\in\operatorname{Supp}E$ with $R\ne Q$, then $K'-E+R\ge Q$ is an effective
+divisor in $\abs{K-E+R}$, so $Q$ lies in the support of its unique member,
+contrary to $Q\notin Z$.
+
+Hence $h^0(K-D+R)=0=h^0(K-D)$ for every $R$, and step [](#s3){.pf-ref} gives
+that $\abs{D}$ has no base points.
 
 :::
 
@@ -298,29 +315,17 @@ $L$ of degree $d$ whose complete linear system has no base points.
 
 ::: pf-proof
 
-By step [](#s3){.pf-ref}, $\Pic^d(X)$ is irreducible of dimension $g$.  Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give two proper closed subsets
-$$
-S_d,
-\qquad
-B_d.
-$$
-Their union is still a proper closed subset of the irreducible variety
-$\Pic^d(X)$.  Choose
-$$
-L\in\Pic^d(X)\setminus(S_d\cup B_d).
-$$
-Then $L\notin S_d$ makes $L$ nonspecial, and $L\notin B_d$ implies that
-$\abs{L}$ has no base points.
+Take $D_0=E+Q$ as in step [](#s5){.pf-ref}: it has degree $g+1$, it is
+nonspecial, and $\abs{D_0}$ has no base points.
 
-Choose a divisor $D$ with
-$$
-\OO_X(D)\cong L.
-$$
-Then
-$$
-\deg D=d,
-$$
-and $D$ has the required properties.
+If $d>g+1$, add $d-g-1$ further points one at a time. Adding a point
+preserves both properties: if $h^0(K-D)=0$ and $h^0(K-D+P)=0$ for every $P$,
+then $K-D-R\le K-D$ gives $h^0(K-D-R)=0$ and $K-D-R+P\le K-D+P$ gives
+$h^0(K-D-R+P)=0$, so step [](#s3){.pf-ref} applies to $D+R$.
+
+Let $D$ be the resulting divisor. Then $\deg D=d$,
+$h^1(X,\OO_X(D))=0$ by Serre duality, Theorem III.7.6, and $\abs{D}$ has no
+base points. Taking $L=\OO_X(D)$ gives the claim.
 
 :::
 

@@ -5,7 +5,8 @@ kind: problem
 title: 'A Cauchy derivative estimate at the center of a disk'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy Estimates
 relations: []
 review: draft
 audit:

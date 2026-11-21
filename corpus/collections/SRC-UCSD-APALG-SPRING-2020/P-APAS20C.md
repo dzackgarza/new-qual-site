@@ -12,6 +12,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 3 of the Math 202 Qualifying Exam, Spring 2020 (June 3, 2020), printed
+    p. 1 of the paper's own numbered pages, is the statement the card answers, and the head of the
+    solution names it; the file retained at assets/attachments/Applied-Algebra-Qual-SP20.pdf puts a
+    cover page before those two numbered pages, so paper p. 1 and p. 2 are its second and third pages.
+    Checked: the statement against the paper's text layer at the page named; the congruence by the
+    positive definite square root and the eigenvalue comparison; `qualc.authoring check` on the card,
+    and `tmp/lam.sh` for the numbering and the QED. Not checked: no retained solution set exists for
+    this paper to compare the argument with, and no other card of the collection in this pass.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
@@ -26,6 +38,8 @@ Prove that $\phi-t\psi$ is positive definite if and only if $t<\lambda_n(\theta)
 :::
 
 ::: {.solution}
+
+The problem is Problem 3 of the Math 202 Qualifying Exam, Spring 2020 (June 3, 2020), printed p. 1 of the paper's numbered pages — the retained file `assets/attachments/Applied-Algebra-Qual-SP20.pdf` puts a cover page before them. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the congruence by $\psi^{-1/2}$, which turns $\phi-t\psi>0$ into $\theta-tI>0$ and hence into $t<\lambda_n(\theta)$
 
 ::: pf
 

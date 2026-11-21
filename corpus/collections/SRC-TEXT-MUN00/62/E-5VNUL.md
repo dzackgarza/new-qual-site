@@ -49,6 +49,26 @@ audit:
     round a round circle and back and needed Theorem 61.3 to see that the circle separates; that
     theorem is no longer used, and the example is the same one. Checked against Lemma 62.2 (printed
     p. 382) and Theorem 18.3 (printed p. 108).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps, and the retained set now cited in the solution
+    section rather than only here: Problem (6) of the Cornell MATH 4530 Fall 2010
+    practice-final solutions, printed p. 2, whose construction this is (that text states
+    it for Lawson's Borsuk Lemma 13.15(3), so it is used as the argument, not as a
+    solution of the Munkres exercise), together with Math StackExchange answer 1840946.
+    Checked step by step: [0,2] is compact; the two clauses of g agree at t = 1 so g is
+    well defined; g is continuous by the pasting lemma on the two closed halves (Theorem
+    18.3, p. 108); g(0) = g(1) exhibits the failure of injectivity; H(t,s) = g((1-s)t)
+    takes its values in the equator, hence in S^2 - {a,b}, and contracts g to g(0); and
+    S^2 - E is the disjoint union of the open hemispheres, which are connected because
+    vertical projection carries them homeomorphically onto the open disc, itself
+    homeomorphic to R^2, a finite product of connected spaces (Theorem 23.6, p. 151). One
+    citation repaired: the earlier prose justified the connectedness of the hemispheres by
+    Corollary 24.2, which is about intervals and rays in R and does not apply to them.
+    Lemma 62.2 confirmed as printed (p. 382) and the exercise as printed (p. 384). No
+    repair to the statement.
 ---
 
 ::: {.exercise}
@@ -57,18 +77,56 @@ Give an example to show that the conclusion of the Borsuk lemma need not hold if
 :::
 
 ::: {.solution}
+The construction is the one in the retained set, **Problem (6) of "MATH 4530 -- Topology. Practice Problems For Final solutions", Cornell MATH 4530 (Fall 2010), printed p. 2** (`tmp/sources/munkres-cornell-math4530-2010-practice-final-solutions.txt`), which states it for Lawson's book; the same construction is given by the Math StackExchange answer 1840946 to question 1840940 (`tmp/sources/mse-1840940-munkres-62-1.md`). Each step below is checked against Munkres' own statement of the lemma, Lemma 62.2, whose hypotheses are that $a,b\in S^2$, that $A$ is compact, that $f:A\to S^2-\{a,b\}$ is continuous and injective, and that $f$ is nullhomotopic, and whose conclusion is that $a$ and $b$ lie in the same component of $S^2-f(A)$. The example keeps every hypothesis except injectivity.
 
-The Borsuk lemma is Lemma 62.2 (printed p. 382): if $a$ and $b$ are points of $S^2$, $A$ is a compact space, and $f:A\to S^2-\theset{a,b}$ is continuous, injective and nullhomotopic, then $a$ and $b$ lie in the same component of $S^2-f(A)$. The example keeps every hypothesis but injectivity.
+Throughout, $S^2$ is the unit sphere in $\RR^3$ with centre the origin, $a=(0,0,1)$ is the north pole, $b=(0,0,-1)$ is the south pole, $E=\{(x,y,0) \mid x^2+y^2=1\}$ is the equator, and $A=[0,2]$.
 
-Take $a$ and $b$ to be the north and south poles of $S^2$, its centre at the origin, and take $A=[0,2]$, which is compact. Define $g:[0,2]\to S^2$ by
-$$
-g(t)=\begin{cases}(\cos 2\pi t,\ \sin 2\pi t,\ 0), & 0\le t\le 1,\\ (\cos 2\pi(2-t),\ \sin 2\pi(2-t),\ 0), & 1\le t\le 2,\end{cases}
-$$
-so that $g(0)=g(1)=g(2)=(1,0,0)$ and $g$ runs once round the equator in one direction on $[0,1]$ and once round it in the other direction on $[1,2]$.
+::: pf
 
-The image of $g$ is the equator, which lies in $S^2-\theset{a,b}$. The two halves of the formula agree at $t=1$, so $g$ is continuous by the pasting lemma (Theorem 18.3, printed p. 108). And $g(0)=g(1)$ with $0\ne1$, so $g$ is not injective. And $g$ is nullhomotopic: $[0,2]$ is contractible, and $H(t,s)=g\bigl((1-s)t\bigr)$ is a homotopy from $g$ to the constant map at $g(0)$, whose values all lie in the image of $g$.
+::: {.pf-step #data}
+$A$ is compact, $g:A\to E$ is given by the displayed formula, and $E\subset S^2-\{a,b\}$.
 
-Finally $S^2-g([0,2])$ is the complement of the equator, which is the union of the open northern and southern hemispheres; those are connected, disjoint and open, so they are its two components, and $a$ and $b$ lie in different ones.
+::: pf-proof
+$A=[0,2]$ is a closed bounded subset of $\RR$, hence compact (Theorem 27.3). Both clauses of the formula for $g$ are continuous on their intervals because the trigonometric functions are, and at $t=1$ they both take the value $(\cos 2\pi,\sin 2\pi,0)=(1,0,0)$, so $g$ is well defined. Its two clauses trace $E$ and $E$ backwards respectively, so $g(A)=E$. Finally $E\subset\RR^2\times\{0\}$ while $a$ and $b$ have third coordinate $\pm1$, so $E\subset S^2-\{a,b\}$, and $g$ takes values in $S^2$.
+:::
 
-So $g$ has compact domain, is continuous, has image in $S^2-\theset{a,b}$, and is nullhomotopic, while $a$ and $b$ lie in different components of $S^2-g(A)$: the conclusion of the Borsuk lemma fails when $f$ is not injective.
+:::
+
+::: {.pf-step #continuous}
+$g$ is continuous.
+
+::: pf-proof
+The closed intervals $[0,1]$ and $[1,2]$ are closed subsets of $A$ with union $A$, and the two clauses of the formula are continuous functions on them agreeing at the single common point $t=1$; by the pasting lemma (Theorem 18.3) their union is a continuous map $A\to\RR^3$, which is $g$.
+:::
+
+:::
+
+::: {.pf-step #not-injective}
+$g$ is not injective.
+
+::: pf-proof
+The points $0$ and $1$ of $A$ are distinct and both are carried to $(\cos 0,\sin 0,0)=(1,0,0)$, since at $t=0$ the first clause gives $(\cos 0,\sin 0,0)$ and at $t=1$ both clauses do. So $g(0)=g(1)$ with $0\ne1$.
+:::
+
+:::
+
+::: {.pf-step #null}
+$g$ is nullhomotopic as a map into $S^2-\{a,b\}$.
+
+::: pf-proof
+Define $H:A\times I\to S^2-\{a,b\}$ by $H(t,s)=g\big((1-s)t\big)$. For $(t,s)\in A\times I$ the number $(1-s)t$ lies in $[0,2]=A$, so $H$ is defined and takes its values in $g(A)=E\subset S^2-\{a,b\}$; it is continuous as a composite of the continuous map $(t,s)\mapsto(1-s)t$ and $g$, using step [](#continuous){.pf-ref}. Moreover $H(t,0)=g(t)$ and $H(t,1)=g(0)$ for every $t$, so $H$ is a homotopy from $g$ to the constant map at $g(0)$ and $g$ is nullhomotopic.
+:::
+
+:::
+
+::: {.pf-step}
+The points $a$ and $b$ lie in different components of $S^2-g(A)$.
+
+::: pf-proof
+By step [](#data){.pf-ref} $g(A)=E$, and $S^2-E$ is the union of the open upper hemisphere $U=\{(x,y,z)\in S^2 \mid z>0\}$ and the open lower hemisphere $L=\{(x,y,z)\in S^2 \mid z<0\}$. These two sets are disjoint, open in $S^2$, and each is connected: vertical projection is a homeomorphism of $U$ onto the open unit disc $D$ of $\RR^2$, the map $x\mapsto x/\sqrt{1+\norm{x}^2}$ is a homeomorphism of $\RR^2$ onto $D$, and $\RR^2=\RR\times\RR$ is connected as a finite product of connected spaces (Theorem 23.6). A separation of $S^2-E$ is thus a pair of disjoint nonempty open sets covering it, so $U$ and $L$ are its two components. Since $a=(0,0,1)\in U$ and $b=(0,0,-1)\in L$, the points $a$ and $b$ lie in different components of $S^2-g(A)$, while the remaining hypotheses of Lemma 62.2 hold by steps [](#data){.pf-ref}, [](#continuous){.pf-ref} and [](#null){.pf-ref} and injectivity fails by step [](#not-injective){.pf-ref}. So the conclusion of the Borsuk lemma does not hold for this $g$, which is the required example.
+:::
+
+:::
+
+:::
 :::

@@ -197,6 +197,639 @@ audit:
     correction is stated in a record of this date rather than in that one.
     Nothing else on the card was changed, and no mathematics was altered by
     this repair.
+- event: source-corrected
+  by: claude
+  date: 2026-11-17
+  note: >-
+    Markup only, no change of statement or proof. Six spans wrote the
+    restriction of a morphism to a curve in the postfix form
+    `\pi\restrictionof_Y` and `f\restrictionof_R`. That is a misuse of the
+    preamble's two-argument macro `\restrictionof{A}{B}`: TeX takes its first
+    argument to be the `_` of the subscript and its second to be the
+    subscript's letter, and the preamble's definition rejects the result with
+    "Missing { inserted", checked by typesetting that definition beside the
+    spans with `pdflatex`. The six now read $\restrictionof{\pi}{Y}$ and
+    $\restrictionof{f}{R}$; no new macro was added, since this is the existing
+    semantic macro for the restriction of the first argument to the second.
+    `qualc check` did not report these, because its undefined-command check
+    tests the command's name and not how many arguments it is given. Not
+    checked: the rendered page in a browser, and no mathematics was read or
+    altered by this repair.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Two corrections, read for issue #164; no conclusion of the card moves.
+    (i) Step s4 justified the surjectivity of H^1(C,O_C(-3P)) -> H^1(C,O_C)
+    by saying that the H^0 part of 0 -> O_C(-3P) -> O_C -> O_{3P} -> 0 is an
+    isomorphism h^0(O_C) = h^0(O_{3P}) = 1. That is false: O_{3P} is the
+    structure sheaf of the length-3 subscheme 3P, so h^0(O_{3P}) = 3, and
+    H^0(O_C) -> H^0(O_{3P}) is injective and not surjective. The conclusion is
+    right, for a reason the step now gives: H^1(C,O_{3P}) = 0 because 3P is
+    zero-dimensional, so the map on H^1 is surjective and its kernel has
+    dimension 5 - 3 = 2. (ii) Step s10 cited Remark 2.21.1 as printed p. 382.
+    Proposition 2.21 and its hypotheses are on printed p. 382, the folio at the
+    foot of PDF p. 397 of tmp/sources/hartshorne-1977-algebraic-geometry.pdf;
+    Remark 2.21.1, "In the remaining case e < 0, char k = p > 0, g >= 2, we
+    cannot get necessary and sufficient conditions", is on printed p. 383, the
+    folio at the foot of PDF p. 398. The step now says p. 383; the dated event
+    above that gives "Proposition 2.21(b) with Remark 2.21.1, both printed
+    p. 382" is left as written. Everything else on the card was checked in this
+    pass and stands: the printed statement on p. 385 with the correction of
+    "nonsingular" recorded in the remark; s1 to s3, including the monomials of
+    F^2 and their vanishing exponents; the Riemann-Roch dimensions 3 and 5;
+    s5's dimension count; s6's e = -1 and the normalized-bundle argument; s7
+    and s8, Y^2 = -9 and Y.f = 3; s9's adjunction p_a = 1 + (-9+15)/2 = 4
+    against genus 3; and s10's non-ampleness of D = 2C_0 from C_0.Y = 0.
+    Checks: qualc.authoring check P-AGH5215FROBENIUSRULED, "schema and Markdown
+    parsing OK (single card)"; tools/check_macros.py on the card, OK; tmp/lam.sh
+    numbering the steps 1 to 10 with QED labels present and no unknown step
+    label. Not checked: the printed copies of Hartshorne, Xie or Hartshorne
+    1971; the text layers of the retained PDFs only.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The irreducibility of Xie's curve, read for issue #164 and recorded rather
+    than repaired. Example 3.1, printed p. 5, writes "The section t determines
+    an irreducible curve C' on X" and gives no argument for it, and this card's
+    steps s7 to s10 use the integrality of Y: s9 computes one singular point
+    and the normalization from it, and s10 meets D with Y as an irreducible
+    curve. The assertion is not a consequence of the data the construction
+    supplies. Y.f = 3 and Y.C_0 = 0, so a decomposition Y = Y_1 + Y_2 would
+    give a component with Y_1.f = 1, that is a section, of class C_0 + bf, and
+    Y_1.C_0 = 0 reads 1 + b = 0, so b = -1 and Y_1^2 = 1 + 2b = -1; nothing in
+    the construction excludes a section of that class, and Xie does not argue
+    that none occurs. What stands as computed: the zero locus Y of his t has
+    class 3C_0 - 3f and is disjoint from C_0, and pi: Y -> C has degree
+    Y.f = 3. The remark now says that the irreducibility is his assertion; the
+    statement of (c) keeps "integral", which is the form the corrected statement
+    can have if his assertion holds. Not checked: whether Y is irreducible for
+    this X, for which no proof was found in the paper and no other source was
+    searched; the printed Xie was not read, only the retained PDF's text layer
+    at pp. 5-6.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Xie's Lemma 4.4(iii), printed pp. 10-11, whose last step the paper leaves
+    unargued, read in full. After showing that the components R_1, ..., R_n of
+    psi^{-1}(R) have equal negative self-intersection, it concludes "Since rho(X_B)
+    = 2, we have deg h(x) = n = 1". The step is correct, and the argument is
+    this. X_B is a P^1-bundle over B by Lemma 4.4(i), so Num(X_B) has rank two,
+    with a fibre f_B and a section sigma as basis, f_B^2 = 0 and f_B.sigma = 1;
+    the classes orthogonal to f_B are the multiples of f_B. Each R_i maps
+    finitely onto B, so a_i := R_i.f_B > 0. If R_1 and R_2 are distinct
+    irreducible curves with R_1^2 = R_2^2 < 0, the class alpha = a_2R_1 - a_1R_2
+    has alpha.f_B = 0, hence alpha = m f_B for some rational m; pairing with R_1
+    gives alpha.R_1 = a_2R_1^2 - a_1(R_1.R_2) < 0 and pairing with R_2 gives
+    alpha.R_2 = a_2(R_1.R_2) - a_1R_2^2 > 0, since distinct irreducible curves on
+    a surface meet nonnegatively. But alpha.R_i = m a_i with a_i > 0, so the
+    first inequality forces m < 0 and the second m > 0, a contradiction. So no
+    two components exist and n = 1. The earlier half of (iii) was checked too:
+    the R_i meet pairwise nonnegatively, so (sum R_i)^2 >= 0 if their
+    self-intersections are nonnegative, while sum R_i = psi^*R has square
+    deg(psi) R^2 < 0. Not checked: that the multiplicities on psi^{-1}(R) are 1,
+    which the argument needs, and Xie's citation of [Sc01, Proposition 3.3] for
+    (iii) itself; the printed paper was not read, only the retained PDF's text
+    layer at pp. 10-11.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A shape for Y that the card does not consider, and that every number it
+    computes is consistent with. Xie's section t is the image of 1 under
+    H^0(C,O_C) -> H^0(C,F^*E \otimes L^{-3}) -> H^0(C,S^3(E) \otimes L^{-3}), and the
+    second map is the adjoint of the p-th power map M -> F_*M^p, so the image of
+    the pulled-back section is its cube. Concretely: E \otimes L^{-1} is the
+    nonsplit extension 0 -> L^{-1} -> E \otimes L^{-1} -> O_C -> 0, so
+    H^0(E \otimes L^{-1}) = k, spanned by the section s mapping to 1 in H^0(O_C);
+    F^*s maps to s^3 under the second arrow, and the kernel L^{-3} of the
+    sequence 0 -> L^{-3} -> F^*E \otimes L^{-3} -> O_C -> 0 has no global section,
+    so t = s^3 up to a scalar. Then Y = div(t) = 3D with D = div(s) the zero
+    locus of a section of O_X(1) \otimes f^*L^{-1}: a section of the ruled surface,
+    isomorphic to C, of self-intersection D^2 = 1 + 2(-1) = -1, disjoint from
+    C_0. That reproduces every number on the card -- Y^2 = 9D^2 = -9,
+    Y.f = 3 deg(D -> C) = 3, Y.K_X = 3(2g-2-D^2) = 15 and p_a = 4 -- and it
+    makes Y non-reduced: the normalization is D = C, but the divisor is a
+    triple section, not an integral curve with one singular point. If that
+    reading is right, the "integral" of the corrected statement and the "one
+    singular point of delta = 1" of step s9 are both wrong, and the truth is
+    that 3C_0 - 3f is 3 times the section D, which is also why the printed
+    "nonsingular" cannot hold. Not established here: that Xie's second arrow is
+    the adjoint p-th power map -- his paper does not say which map it is, and
+    the printed paper was not read; and no example was computed. Recorded rather
+    than repaired: the card's step s9 keeps its claim, and this event is the
+    reason it should be re-read against the printed paper before it is relied
+    on.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Part (c) corrected: Xie's C' is the triple of a section, not an integral
+    curve, and the statement and steps s7 to s10 now say so. The printed p. 5
+    was read as an image -- pdftoppm at 150 dpi of PDF p. 5 of the retained Xie
+    PDF -- and it writes only "through the maps ..." with an inclusion into
+    S^p, naming no map; the second arrow is the adjoint of the cube map, the
+    only natural inclusion, so t is the cube of a section of a line bundle. The
+    section s of E \otimes L^{-1} mapping to 1 in H^0(O_C) is unique up to scale,
+    and it must vanish, since otherwise it would split the extension and
+    contradict step s5; its zero locus Sigma is a curve of class C_0 - f with
+    Sigma.f = 1 over C, hence irreducible and a section, isomorphic to C, with
+    Sigma^2 = -1 and Sigma disjoint from C_0; and Y = div(t) = 3Sigma. What
+    changed: the statement of (c) is the book's words again, since "integral" is
+    not what the construction gives; s7 now proves the section and the triple;
+    s8 no longer cites Lemma 4.4(iii), whose hypothesis is an irreducible R,
+    and instead observes that 3Sigma -> C is an isomorphism followed by the
+    triple thickening; s9 keeps the adjunction count and the argument that no
+    nonsingular curve has the class -- IV.2.5 for the purely inseparable case,
+    Riemann-Hurwitz for the separable one, both with printed pages -- and states
+    that Xie's divisor is not reduced; s10 meets 2C_0 with the irreducible
+    Sigma instead of with Y. Not checked: whether some other, reduced curve in
+    the class 3C_0 - 3f exists, since the argument here decides Xie's divisor
+    only; and no example was computed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The question the event above left open is settled: the class 3C_0 - 3f has
+    exactly one effective divisor, 3Sigma, so there is no other curve in it and
+    none that is reduced. The computation is in step s9: a divisor of
+    O_X(3) ot f^*L^{-3} is a section of it, whose space is
+    H^0(C, S^3E ot L^{-3}); the subbundle O_C of E gives S^3E a filtration with
+    successive quotients L^3, L^2, L and O_C, so the twisted bundle is filtered
+    with quotients O_C, L^{-1}, L^{-2} and L^{-3}, and h^0 is at most
+    1 + 0 + 0 + 0 = 1 because deg L = 1; it is at least 1 because t = s^3 is
+    nonzero. Hence the section is unique up to scale and 3Sigma is the only
+    effective divisor in the class. The adjunction and IV.2.5 / Riemann-Hurwitz
+    argument stays as an independent proof that no nonsingular curve has the
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Reading step s9 for its mathematics found a notation collision, and the
+    step is repaired. The solution's preamble fixes L(A) = O_C(A) for a divisor
+    A, under which the bare symbol L is O_C, of degree 0. Step s7 then writes
+    "L = O_C(P)", of degree 1, for the bundle of Xie's quotation, and the bound
+    of step s9, "deg L = 1 makes each of the last three negative", holds only of
+    that second reading: read with the preamble's convention the four summands
+    are all h^0(O_C) = 1 and the count is 4, which does not give the uniqueness
+    the step concludes, while the second reading gives 1 + 0 + 0 + 0. The step
+    now names the line bundles O_C(-P), O_C(-2P) and O_C(-3P) and the sheaf of
+    the class, O_X(3) ot f^*O_C(-3P), so that the filtration's quotients
+    O_C(3P), O_C(2P), O_C(P) and O_C are exactly those of the extension
+    0 -> O_C -> E -> O_C(P) -> 0 of step s6, and the bound stands on its own
+    terms. No number changes: p_a(Y) = 4 by adjunction, 3Sigma is the unique
+    effective divisor of the class, and the separable and purely inseparable
+    cases of the last paragraph are as they were. Checked in this pass:
+    Hartshorne V.2.15(b)-(c) as printed on printed p. 385, read on the PDF's
+    own folio (PDF p. 400), whose extension is 0 -> O_C -> E -> L(P) -> 0 with
+    his L the trivial bundle, so that his L(P) is O_C(P) and his L(-P) is
+    O_C(-P); and Hartshorne 1971, Example 3.2, printed p. 85, "The degree of E
+    is 1", which fixes deg E = 1 and hence C_0^2 = -e = 1. Not checked in this
+    pass: Xie's Example 3.1 was not re-read, and the statement repair the printed
+    "nonsingular" needed is the one the earlier events of this card record and
+    is not re-decided here.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #164, the reader's second NOT MET item, which has two halves. The
+    numbered-source half is a version difference, and the citation is right
+    against the file the card owns. The reader read
+    arxiv.org/pdf/math/0702554v3, where the construction is Theorem 3.1 and
+    begins on printed p. 4; the retained file is v5, whose first page carries
+    the arXiv stamp "math/0702554v5 [math.AG] 8 Oct 2008", and there the same
+    statement, word for word, is Example 3.1 on printed p. 5. Both were read
+    for this event: the v3 PDF was downloaded and its printed p. 4 reads
+    "Theorem 3.1. If C is a Tango curve, then there are a P1-bundle f: X -> C,
+    ...", and the v5 text of Example 3.1 is at the place in the proof the card
+    cites. The provenance paragraph now names the version and records the v3
+    numbering, so the two are not confused again. The second half stands: the
+    card's identification of Xie's divisor with 3 Sigma is not a transcription,
+    because Xie's claim that C' is irreducible and smooth fails here -- his
+    divisor is three times a section, so irreducibility can only name the
+    support and smoothness is false -- and no published solution covers the
+    case. That part of step s7 is now marked as the card's own, as step s9 and
+    the last paragraph of s10 already were. Not checked: the printed paper,
+    only the two arXiv PDFs.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #164, the demand that the proof of V.2.15 be transcribed from a
+    published solution set. No such set exists, and none can prove the printed
+    statement. The retained Hartshorne sets were swept: Egbert, Exercise
+    V.2.15, writes for (c) only "To see the curve
+    Y = 3C_0-3f is inseparable is Miyanishi, Open Algebraic Surfaces, lemma
+    2.5.2.2" and then calls Y "some section of C", which is a pointer and not a
+    proof; Yang Pi-Yeh, Exercise 5.2.15, begins (c) with
+    "Clearly deg pi = Y.f = 3" and concludes that pi is not separable, which
+    assumes the curve and does not follow; Park has only V.5; Reiser's Chapter
+    V is "Coming soon"; the remaining retained sets stop before Chapter V
+    (Borcherds and Troiani at I, Cais, Cutrone-Marshburn, Lomont and Sam at IV,
+    Kim at III, Stein and Saglam-Chris at III, Okamoto at II.9); NTU AG II 2020
+    has no entry for Exercise 15 of section 2. Searched online beyond them, with
+    no solution set containing a proof of (c) found: the GitHub repositories of
+    Hartshorne solutions checked (mikeleew, corn-muffin, nilaykumar,
+    jmoellermath, maths644311798, reiserb) stop before Chapter V or omit
+    V.2.15, as do the web-compiled manuals checked. The only other treatment of
+    (c) is Xie's own Example 3.1, which asserts that C' is
+    irreducible and smooth and proves neither, and Math StackExchange 4553266,
+    which has no answer. That no correct proof can exist is step s9: the class
+    3C_0-3f has p_a = 4 by adjunction, while a purely inseparable degree-3 map
+    to C forces g(Y) = g(C) = 3 by IV.2.5 and a separable one is excluded by
+    Riemann-Hurwitz, so the printed "nonsingular" cannot hold. What this pass
+    changed: step s7's own argument named "the section of E \otimes L^{-1}
+    mapping to 1 in H^0(O_C)", and no such section exists, because the
+    connecting map of 0 -> L^{-1} -> E \otimes L^{-1} -> O_C -> 0 sends 1 to the
+    nonzero extension class xi, so H^0(E \otimes L^{-1}) = 0. The step now
+    computes t locally as the cube of the local section f_2 + a f_1 of
+    E \otimes L^{-1} and reads off its zero locus as the section Sigma
+    directly; the conclusion Y = 3 Sigma and all the numbers after it are
+    unchanged. A correction to that paragraph, made in the commit after this
+    one: the cube must be taken in S^3(E \otimes L^{-1}), since F^*L^{-1} =
+    L^{-3} identifies F^*E \otimes L^{-3} with F^*(E \otimes L^{-1}); cubing a
+    section of E \otimes L^{-1} directly would land in L^{-9} and is wrong. The
+    rendered remark no longer says that part (c) is published in
+    the form the steps correct. Citations on the rendered page are by numbered
+    statement --- the exercise number in Hartshorne's book, Example 3.1 and
+    Lemma 2.5.2.2 of Xie, Lemma 3.1 and Example 3.2 of Hartshorne 1971, and
+    IV.2.4, IV.2.5, V.1.5, Corollary V.2.11, Proposition 2.21(b) of the book ---
+    and this event's own locators were replaced by the statements in the commit
+    that follows it; the earlier dated events of this card keep the printed
+    pages they were read in and are left as they were written. Not checked: the
+    printed copies of Xie, Egbert or Yang, only the retained text layers and,
+    for Xie, the arXiv v5, v6 and v7 PDF text.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #164, the two items left open by the pass recorded above: the
+    falsity of the printed (c) now stands as a theorem with its proof, and the
+    genus defect of the unique member is computed rather than inferred. Step
+    s9 was rewritten. It derives, for a ruled surface over a curve of genus g
+    with invariant e and a divisor Y = 3C_0-3f, the two pairings Y^2 =
+    -9e-18 and Y.K_X = 3e+6g in the basis (C_0, f) of Num(X) with C_0^2 =
+    -e, C_0.f = 1, f^2 = 0 and K_X = -2C_0+(2g-2-e)f of Corollary 2.11, hence
+    2p_a-2 = -6e+6g-18 and p_a = 3g-8-3e, which is p_a = 1-3e at g = 3. Since
+    2p_a-2 = -6e is divisible by 3 for every integer e, while a purely
+    inseparable finite morphism of degree 3 onto C keeps the genus
+    (Proposition IV.2.5), giving 2g(Y)-2 = 4, no nonsingular curve in the class
+    has a purely inseparable projection on any such surface; the separable case
+    is excluded by Riemann-Hurwitz (Corollary IV.2.4) at e = -1, where
+    2p_a-2 = 6 < 12+deg R. The member 3 Sigma is then computed from O_D
+    itself: I_Σ^3 gives O_D = O_X/I_Σ^3 a filtration with quotients O_Σ,
+    N^vee and (N^vee)^2, of degrees 0, 1 and 2 because Sigma^2 = -1, so
+    chi(O_D) = -2-1+0 = -3 and p_a(D) = 4 by Riemann-Roch on Sigma alone,
+    independently of adjunction. The map O_D -> O_Σ is surjective with
+    nilpotent kernel, so Sigma is the normalization and
+    delta = chi(O_Σ)-chi(O_D) = 1. That delta is the genus defect of the whole
+    divisor and not a point invariant, and the step now says so: at P in Sigma
+    the local ring is k[[s,t]]/(t^3), of embedding dimension 2 in dimension 1,
+    so every point of Sigma is singular and the singular locus is not finite.
+    This corrects the phrasing of the event of 2026-11-11 above, which left
+    open "whether Y as constructed is singular with delta = 1": 3 Sigma is not
+    a curve with one singular point of delta 1, and the card no longer suggests
+    it. The qed summary and the closing remark were brought into line with the
+    new step; nothing else on the card changed, and the rendered statement of
+    (c) keeps the book's words. Citations in this event and in the new text are by
+    numbered statement; the earlier dated events keep the pages they were read
+    in and are not edited (QUAL-11). Not checked: the printed book, only the
+    retained text layer; and no example was computed for a surface with
+    e <= -2, where the separable case of the exclusion is not decided here.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The member of the class 3C_0-3f is not a triple of a section, and the two
+    passes that said so are withdrawn: that of 2026-11-19, which named Xie's
+    C' the triple of a section, and the s9 paragraph added above, which
+    computed the genus defect of O_X/I_Sigma^3. The reason is step s6 of this
+    card. A section Sigma of class C_0-f would have O_X(Sigma) =
+    O_X(1) tensor f^*O_C(-P), so H^0(O_X(Sigma)) = H^0(C, E(-P)) by the
+    projection formula, and that group is zero because E is normalized: the
+    connecting map of 0 -> O_C(-P) -> E(-P) -> O_C -> 0 sends 1 to the nonzero
+    class xi. No such Sigma is effective, and Y = 3 Sigma is not a member of
+    the linear system. The count that produced 3 Sigma was taken over the
+    split bundle O_C + O_C(P), where the section does exist and the unique
+    member is 3 Sigma. What holds instead, and is now what the card proves:
+    the class has one effective member Y = div(t); the cube map
+    F^*(E tensor O_C(-P)) -> S^3(E tensor O_C(-P)) is O_C-linear and sends a
+    section written f_2^F + a f_1^F to f_2^3 + a f_1^3, so over an open set
+    the member reads beta^3 + a alpha^3 in the fibre coordinate, a single
+    point of multiplicity 3 per fibre and not a cube of a section; hence
+    Y is integral, Y.f = 3, and pi restricted to Y is radicial of degree 3, so
+    purely inseparable; p_a(Y) = 1-3e = 4 by adjunction; the purely
+    inseparable degree-3 projection gives k(Y) = k(C)^{1/3}, so the
+    normalization of Y is the Frobenius twist of C, of genus 3; and
+    delta = p_a(Y) - p_a(C) = 1. Since delta is the sum of the local
+    invariants over the singular points and each is at least 1, Y is singular
+    in exactly one point, of invariant 1. So Xie's irreducibility is right and
+    his smoothness assertion is false, and the printed "nonsingular" fails for
+    the reason s9 gives. What changed on the page: steps s7, s8 and s9 were
+    rewritten, the qed summary and the two remarks follow them, and step s10
+    now takes its witness from Y, D.Y = 2 C_0.Y = 0 for D = 2C_0, rather than
+    from a section disjoint from C_0. The two earlier events of this date above
+    are left as written; their withdrawn conclusions are corrected here, not
+    edited there. Not checked: the printed book, only the retained text layer;
+    and no example was computed. This correction came from a check of the
+    card's own step s6 against step s7.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The statement of part (c) is the repaired one again, which the event of
+    2026-11-16 made and the event of 2026-11-19 reverted. The book's printed
+    sentence is "X contains a nonsingular curve Y = 3C_0-3f, such that
+    pi: Y -> C is purely inseparable", and the word that fails is
+    "nonsingular": by steps s7 to s9 the class has one effective member, it is
+    integral, its normalization is C, and its arithmetic genus is 4, so no
+    nonsingular curve lies in the class at all. The reason the 2026-11-19 event
+    gave for reverting, that "integral" is not what the construction gives
+    because the member is three times a section, is withdrawn: the member is
+    not three times a section, since a section of class C_0-f would give a
+    nonzero section of E tensor O_C(-P), which step s6 shows does not exist.
+    The statement now reads "an integral curve Y = 3C_0-3f such that
+    pi: Y -> C is purely inseparable", which steps s7, s8 and s9 prove, and
+    the printed sentence is recorded here as the source's text so that the
+    change can be checked against the book. QUAL-01 asked for this repair and
+    for this record; nothing else on the card changed in this commit.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Every published solution set read for Exercise 15 of §2 of chapter V, and
+    none answers it. Two carry an entry at the exercise and neither proves it:
+    Andrew Egbert, Solutions to Hartshorne's Algebraic Geometry, Exercise
+    V.2.15, whose part (c) is the sentence "To see the curve Y = 3C_0-3f is
+    inseparable is Miyanishi, Open Algebraic Surfaces, lemma 2.5.2.2" followed
+    by the remark that Y is some section of C, a citation and a remark rather
+    than a proof; and Yang Pi-Yeh, Hartshorne Solutions, Solution 5.2.15, whose
+    part (c) begins "Clearly deg pi = Y.f = 3" and concludes that pi is not
+    separable, which assumes the curve it is meant to construct. The rest have
+    no entry at the exercise and none treats §2 of chapter V: Reiser, Solutions
+    to Hartshorne's Algebraic Geometry, reaches chapter IV and marks chapter V
+    as not yet written; Jinhyun Park covers §5 of chapter V only; Richard
+    Borcherds covers chapters I and IV; Bryden Cais, Joe Cutrone and Nick
+    Marshburn, Chris Lomont, and Steven Sam cover chapters II to IV; W. Stein
+    and Ismail Saglam and Chris cover chapters II and III; Dongryul Kim covers
+    chapters II and III; Andrea Troiani covers chapter I; Okamoto covers §9 of
+    chapter II; and the Algebraic Geometry II notes of the National Taiwan
+    University, 2020, treat the elliptic ruled surface of Theorem 2.15 without
+    giving Exercise 15 of §2. Citations of "Theorem 2.15" in several of these
+    sets are to that theorem, the elliptic ruled surface, and not to the
+    exercise. Searched beyond the retained sets and found no solution set with a
+    proof of the exercise either: the repositories of Hartshorne solutions
+    examined (mikeleew, corn-muffin, nilaykumar, jmoellermath,
+    maths644311798, reiserb) stop before §2 of chapter V or omit the exercise,
+    and the two places where it is discussed, Math StackExchange question
+    4553266 and Math Overflow question 442391, carry no answer. So the published
+    record establishes parts (a) and (b) and the numbered statement of (c), and
+    supplies no proof of (c) in either the printed or the repaired form. Not
+    checked: the printed copies of any of these sets, only the retained text
+    layers; and the search outside the retained sets is bounded by the
+    repositories and threads named here.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #164, the reader's verdict at 507bd75c88: the two NOT MET items on the
+    card's mathematics, repaired. (i) Step s8 inferred that t is not the cube of
+    a section over U from step s6, which is the vanishing of H^0 of one line
+    bundle on C. That is a non sequitur: a line bundle with no nonzero global
+    section can have one over an open set, so s6 says nothing about sections
+    over U. The step now proves the non-cube statement over U. If the
+    coefficient a were b^3 in k(C), then over an open set on which b is regular,
+    t = (f_2+bf_1)^3, so Y would be 3Sigma for the section Sigma through that
+    graph, and Sigma would be numerically C_0-f. By Proposition 2.9 a section
+    Sigma equiv C_0-f corresponds to a quotient L of degree 0, and by
+    Proposition 2.6 its sheaf is O_X(1) tensor pi^*M with M = L tensor
+    O_C(-e) of degree -1, e being the divisor with O_C(e) = wedge^2 E of
+    degree -e; then H^0(O_X(Sigma)) = H^0(C, E tensor M) = 0 for
+    every M of degree -1, because 0 -> M(-P) -> E tensor M -> M -> 0 is exact
+    and the two outer terms have degrees -1 and -2. So no section lies in the
+    class C_0-f and Y is not a triple. Step s7's own paragraph, which had
+    identified O_X(Sigma) with O_X(1) tensor f^*O_C(-P), made the same
+    conflation; it now carries the corrected argument, and the claim of s7 is
+    restated as the absence of a section of pi in the class C_0-f. (ii) The
+    arithmetic-genus count applied Proposition 1.5 to every effective divisor,
+    and that proposition assumes a nonsingular curve. The count now cites
+    Exercise 1.3(a), the effective-divisor form 2p_a-2 = D.(D+K) with
+    p_a = 1-chi(O_D), and says that Proposition 1.5 is used only on the
+    hypothetical nonsingular Y of the exclusion argument. Re-checked as
+    consequences of (i): the integrality and pure inseparability of s8, since
+    the cubic form beta^3+a alpha^3 is reducible over k(C) exactly when -a is a
+    cube, that is exactly when a is a cube, so the form is irreducible and
+    k(Y) = k(C)[x]/(x^3+a) is a field of degree 3, purely inseparable; the
+    normalization of s9, the Frobenius twist C^(1) of Example IV.2.4.3, of
+    degree p over C and isomorphic to C as an abstract scheme by Proposition
+    IV.2.5, hence of genus 3; and the genus defect, delta = 1 at one point,
+    from Exercise IV.1.8(a), which is the identity the text had called
+    definitional. Also corrected: the map psi of s7 is now written with its
+    value on a decomposable 1 tensor v, since it is O_C-linear and sends
+    1 tensor v to v^3, so the coefficient of f_1^3 in t is a and not a^3.
+    (iii) The transcription item. The two published treatments of (c) were read
+    again: Egbert, Exercise V.2.15, which cites Miyanishi, Open Algebraic
+    Surfaces, lemma 2.5.2.2 and calls Y some section of C, and Yang,
+    Solution 5.2.15(c), which infers inseparability from deg pi = 3 alone and
+    then calls Y a set-theoretic section, which is impossible since a curve in
+    the class isomorphic to C would have p_a = 3 against p_a = 4. The rendered
+    remark now says that its record is bounded to the sources it names and that
+    no retained set proves (c), and it keeps the printed "nonsingular" recorded
+    as false with the argument of s9. No published solution set was found that
+    proves (c), so steps s7, s8 and s9 remain marked as this card's own. Not
+    checked: the printed book, only the retained text layer; Miyanishi's book,
+    which is not retained and was not read; and no example was computed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    A second check of this card's repaired proof, run as eight independent
+    directions, found two further defects; both are repaired here, and neither
+    moves a conclusion of the card. (i) The vanishing at a twist of degree -1 was
+    argued by twisting 0 -> O_C(-P) -> E' -> O_C -> 0, with E' = E tensor
+    O_C(-P), which computes H^0(C, E' tensor M) and not the group
+    H^0(C, E tensor M) that the projection formula produces from
+    O_X(1) tensor pi^*M; the twisting needed is that of
+    0 -> O_C -> E -> O_C(P) -> 0 by M, giving 0 -> M -> E tensor M -> M(P) -> 0,
+    with H^0(M) = 0 at degree -1 and H^0(M(P)) = 0 except for M = O_C(-P), where
+    the connecting map sends 1 to xi and xi is nonzero. That correction was made
+    by the commit e37ba753ce on this card and is not this pass's. (ii) The
+    non-cube paragraph inferred Y = 3 Sigma, for Sigma the section through the
+    graph of f_2 + bf_1, from the agreement of Y and 3 Sigma on the dense open
+    set pi^{-1}(V) and the absence of fibre components; that inference is not
+    valid, since the difference of two divisors can be supported in the fibres
+    over the complement, and the argument also needs Sigma to exist, which is
+    what it is meant to contradict. The paragraph is replaced by an argument
+    that names no curve on X: with a = b^3 and sigma = f_2 + bf_1, a rational
+    section of E tensor O_C(-P) whose image in k(C) is 1, one has
+    t = sigma^3 in S^3(E tensor O_C(-P)) tensor k(C), because the two agree over
+    the open set where b is regular; at a point p the order of sigma^3 is
+    3 ord_p(sigma), and t is regular there, so ord_p(sigma) >= 0 at every p and
+    sigma is a global section, nonzero because its image is 1, against step s6.
+    (iii) The genus defect delta is now written p_a(Y) - p_a(Y~) with Y~ the
+    normalization, which is the form Exercise IV.1.8(a) gives, and p_a(C) = 3 is
+    its value at Y~ = C^(1). (iv) The map psi now also cites Hartshorne 1971,
+    Example 3.2, where the same inclusion F^*E in S^3(E) is recorded and used
+    only for the semistability of S^3(E). What the check confirmed and did not
+    change: the equivalence between "a is a cube" and "t is the cube of a
+    rational section", which is frame independent because x^3 + y^3 = (x+y)^3;
+    the irreducibility of beta^3 + a alpha^3 over k(C) and the integrality of Y;
+    the pure inseparability and degree 3 of pi restricted to Y; the normalization
+    as the Frobenius twist of Example IV.2.4.3, isomorphic to C by Proposition
+    IV.2.5; p_a(Y) = 1-3e = 4 and delta = 1 at one point; and the falsity of the
+    printed "nonsingular", which step s9 proves with Corollary IV.2.4 and
+    Proposition IV.2.5. One arithmetic claim made against this card in the check,
+    that Y.K_X = 3e+6g and p_a = 3g-8-3e hold only at e = -1, is false and the
+    card keeps both: expanding (3C_0-3f).(-2C_0+(2g-2-e)f) with C_0^2 = -e,
+    C_0.f = 1 and f^2 = 0 gives 6e+6g-6-3e+6 = 3e+6g, and
+    p_a = 1+(Y^2+Y.K_X)/2 = 3g-8-3e. Not checked: the printed book, Xie and
+    Miyanishi, only the retained text layers, and no example was computed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #168, the reader's report of 2026-11-20: step s10 used one letter for
+    two divisors. The step's display defines $D=2C_0$, and the paragraph
+    proving non-ampleness called the curve of step s7, which lies in the class
+    $3C_0-3f$, by the same letter; its display
+    $D\cdot C_0=(3C_0-3f)\cdot C_0$ then named the divisor on the left and the
+    curve on the right. The curve is now $Y$ throughout: the step proves
+    $Y\cdot C_0=(3C_0-3f)\cdot C_0=3C_0^2-3=0$, with $C_0^2=1$ from step s6,
+    hence $D\cdot Y=2C_0\cdot Y=0$ for $D=2C_0$, and concludes that $D$ is not
+    ample because an ample divisor meets every irreducible curve positively,
+    the easy direction of the Nakai--Moishezon criterion, Theorem 1.10 of
+    chapter V. No number changes.
+    The step also said that $e=-1$, char $k=3$ and $g=3$ all fail the hypotheses
+    of Proposition 2.21(b). That is false for $e=-1$: the hypotheses are $e<0$
+    together with char $k=0$ or $g\le1$, and $e=-1$ satisfies the first while
+    char $k=3$ and $g=3>1$ fail the second. The step now says so, and it quotes
+    Remark 2.21.1 through the clause that names Exercise 2.15, which the earlier
+    truncated quotation had dropped. The event of 2026-11-16 that lists $e=-1$
+    among the failed hypotheses is left as written; the reading of this event is
+    the corrected one.
+    The report's other item, step s8's inference of $Y=3\Sigma$ from agreement
+    on a dense open set, is not changed here: the paragraph carrying it is the
+    one of e37ba753ce, and bd31ce799d, an ancestor of this commit, replaced it
+    by the order-of-a-rational-section argument the card now carries.
+    Citations in this event and in the step are by numbered statement, and no
+    page locator is added. Not checked: the printed book, only the retained
+    text layer, and no example was computed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #164, the transcription item of the reader's verdict, and two
+    provenance claims on this card that were false. (i) Step s6 said that the
+    normalization of $\mathcal E$ is this card's own argument and that no source
+    read carries it. Hartshorne, Example 2.11.6, carries it: for an extension
+    0 -> O_C -> E -> L(P) -> 0 of the same shape, over an elliptic curve and
+    with deg L = 0, he writes "I claim this E is normalized", runs the case
+    analysis on deg M, separates the exceptional case M = L(-P), and identifies
+    the image of 1 under the connecting map with xi; nothing in that argument
+    uses the genus of the curve, so it applies here, and the step now transcribes
+    it and marks the case the printed sentence passes over, M of degree -1
+    different from O_C(-P), where M(P) has degree 0 and is nontrivial. (ii) The
+    pure inseparability of pi restricted to Y was derived by the card from the
+    local form of t. Xie, Lemma 4.4(iii), proves it for every irreducible curve R
+    with R^2 < 0 on a P^1-bundle, and the step now transcribes that proof,
+    marking the two points it leaves to the reader: that the components of the
+    pullback of Y to X times_C B appear with multiplicity one, and that rho = 2
+    forces one component, the second being the one the earlier event of
+    2026-11-19 checked in full. The normalization paragraph now applies
+    Proposition IV.2.5 to the normalization of Y rather than to k(Y). (iii) The
+    Miyanishi pointer in Egbert's Exercise V.2.15 does not carry this statement.
+    Egbert writes "Miyanishi, Open Algebraic Surfaces, lemma 2.5.2.2"; section
+    2.5 of that book is "Log del Pezzo Surfaces of Rank 1", as its contents page
+    and the review Zbl 0964.14030, which lists the six sections of chapter 2,
+    both give, so the number falls in a section that treats neither ruled
+    surfaces nor Frobenius. The book is not retained and the lemma was not read,
+    so the pointer is recorded as not a proof rather than as one; the bibliographic
+    facts are CRM Monograph Series 12 (AMS, 2001), not volume 4. The rendered
+    remark now says which published numbered statement carries which step, and
+    that no retained solution set proves (c) in either its printed or its
+    corrected form. What remains this card's own is the uniqueness of the
+    effective member of 3C_0-3f and the exclusion of a section in the class
+    C_0-f in s7, the integrality argument of s8, and the arithmetic-genus
+    computation of s9. Not checked: the printed copies of Hartshorne or Xie, only
+    the retained text layers; Miyanishi's book, which is not retained; and no
+    example was computed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #168, the reader's follow-up to the repair of step s10: three defects
+    in the proof, one relation, one inference and one cross-reference, none of
+    which moves a conclusion.
+    (i) Step s7 stated the relation in the Frobenius pullback in the wrong
+    direction. The balanced tensor gives $1\tensor gv=g^3(1\tensor v)$ in
+    $F^*(\mathcal E\tensor\OO_C(-P))$, not $g\tensor v=1\tensor g^3v$; with the
+    printed relation, $\psi(g\tensor v)=g\,v^3$ would have to equal
+    $\psi(1\tensor g^3v)=g^9v^3$. The step now states the relation in the
+    direction the tensor gives, derives
+    $\psi(1\tensor gv)=g^3v^3=g^3\psi(1\tensor v)$ and
+    $\psi(g\tensor v)=g\,v^3$ from the $\OO_C$-linearity of $\psi$, and this is
+    the inclusion $F^*\mathcal E\subseteq S^3(\mathcal E)$ recorded by
+    Hartshorne 1971, Example 3.2.
+    (ii) Step s8 concluded that $\restrictionof{\pi}{Y}$ is finite of degree $3$
+    from a count phrased with $\deg(\restrictionof{\pi}{Y})$, before finiteness
+    was known. The sentence now derives finite fibres from the $0$-cycle
+    $Y\cap f$ of degree $Y\cdot f=3$, observes that $\restrictionof{\pi}{Y}$ is
+    projective, $Y$ being a closed subscheme of the projective surface $X$, and
+    concludes finiteness by Exercise III.11.2, of degree the length of a fibre.
+    (iii) Step s10 cited step s7 for the integrality of $Y$ and did not name
+    irreducibility where Theorem V.1.10 is applied. It now cites step s8 for
+    both, and keeps Proposition V.2.21(b) and Remark V.2.21.1 as the statements
+    of the numerical criterion and of the remaining case.
+    Citations are by numbered statement and no page locator is added. Not
+    checked: the printed book and the printed Hartshorne 1971, only the retained
+    text layers, and no example was computed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The pure inseparability of step s8 now transcribes Schröer, Proposition 3.3,
+    in place of Xie, Lemma 4.4(iii), which the event of today above had named.
+    The reason is provenance and completeness: Xie introduces Lemma 4.4 with
+    "the following useful lemma, whose third part was proved in [Sc01,
+    Proposition 3.3]", and Schröer's proof is complete in three sentences, where
+    Xie's leaves the multiplicity of the components of the pullback and the
+    passage from rho = 2 to one component to the reader. Stefan Schröer, Normal
+    del Pezzo surfaces containing a nonrational singularity, Manuscripta Math.
+    104 (2001), 257-274, Proposition 3.3: for a P1-bundle q: X' -> B over a
+    smooth curve B of genus > 0 and an integral curve R with R^2 < 0, the
+    projection R -> B is purely inseparable. The hypotheses are met with B = C,
+    X' = X and R = Y: C has genus 3, Y is integral by the irreducibility
+    argument of s8, and Y^2 = 9 - 18 = -9 < 0. His proof, transcribed on the
+    card: the separable closure of k(B) in k(R) gives a proper normal curve A
+    with R -> A purely inseparable and A -> B separable; for n = deg(A/B) the
+    pullback of R to the induced P1-bundle over A splits into n components
+    permuted by the Galois action, so they share one negative self-intersection,
+    and the pseudoeffective cone of a P1-bundle has at most one extremal ray of
+    negative self-intersection, so n = 1. The rendered remark now names Schröer
+    for this step and records Xie's attribution. Read in the author's revised
+    version of 28 October 2000, the file del_pezzo.pdf on his Düsseldorf
+    publications page; the printed journal version was not read. Nothing else on
+    the card changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The extraction filed as tmp/sources/miyanishi-2001-open-algebraic-surfaces.md
+    is not the book that Egbert cites, and no statement number is taken from it.
+    It is Miyanishi's survey "Recent Topics on Open Algebraic Surfaces", the
+    article reprinted in Selected Papers on Number Theory and Algebraic
+    Geometry, AMS Translations Series 2, volume 172 (1996): four sections, the
+    complex field as ground field, eighty references, and no lemma in it, with
+    no mention of ruled surfaces, Frobenius or purely inseparable morphisms.
+    Egbert's Exercise V.2.15 cites the monograph Open Algebraic Surfaces, CRM
+    Monograph Series 12, American Mathematical Society (2001), ISBN
+    0-8218-0504-5, DOI 10.1090/crmm/012, whose section 2.5 is "Log del Pezzo
+    Surfaces of Rank 1" by its contents page and by the review Zbl 0964.14030.
+    That monograph is still not retained, and the pointer remains recorded as
+    not a proof. Nothing mathematical on the card changes; the rendered remark
+    and step s8 are unaffected.
 
 ---
 
@@ -211,13 +844,13 @@ Let $C$ be the plane curve $x^3 y+y^3 z+z^3 x=0$ over a field $k$ of characteris
 $$
 0 \rightarrow \OO_C \rightarrow \mathcal{E} \rightarrow \mathcal{L}(P) \rightarrow 0,
 $$
-and let $X$ be the corresponding ruled surface over $C$. Show that $X$ contains an integral curve $Y \equiv 3 C_0-3 f$ whose normalization is $C$, such that $\pi: Y \rightarrow C$ is purely inseparable.
+and let $X$ be the corresponding ruled surface over $C$. Show that $X$ contains an integral curve $Y \equiv 3 C_0-3 f$, such that $\pi: Y \rightarrow C$ is purely inseparable.
 
     Show that the divisor $D=2 C_0$ satisfies the hypotheses of (2.21.b), but is not ample.
 :::
 
 ::: {.solution}
-A step that transcribes a published argument names the source, numbered statement and printed page; a step no source carries is marked as this card's. Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89, Lemma 3.1, printed pp. 84--85, and Example 3.2, printed pp. 85--86, for parts (a) and (b); and Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*, Example 3.1, printed pp. 5--6, and Lemma 4.4, printed pp. 10--11, for the curve of part (c). Hartshorne 1971 runs this example over a field of characteristic $3$ and its curve is the plane quartic of the exercise.
+A step that transcribes a published argument names the source and the numbered statement; a step no source carries is marked as this card's. Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89, Lemma 3.1, and Example 3.2, for parts (a) and (b); and Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*, arXiv:math/0702554v5 (8 October 2008), Example 3.1, and Lemma 4.4, for the curve of part (c). Every citation of Xie below is to that version, in which the construction is Example 3.1; in v3 (7 May 2007) the same statement is Theorem 3.1, so the number depends on the version. Hartshorne 1971 runs this example over a field of characteristic $3$ and its curve is the plane quartic of the exercise.
 
 As in Hartshorne's notation, write
 $$
@@ -243,7 +876,7 @@ $$
 and the latter has a basis of the three negative monomials $\frac{1}{x^2yz}$, $\frac{1}{xy^2z}$, $\frac{1}{xyz^2}$.
 
 ::: pf-proof
-Hartshorne 1971, Lemma 3.1, printed p. 84: "Let $g=x^3y+y^3z+z^3x$. Then we have an exact sequence
+Hartshorne 1971, Lemma 3.1: "Let $g=x^3y+y^3z+z^3x$. Then we have an exact sequence
 $$
 0\to\OO_P(-4)\xrightarrow{g}\OO_P\to\OO_X\to0,
 $$
@@ -264,7 +897,7 @@ $$
 of Frobenius on $\PP^2$ with multiplication by $g^2$.
 
 ::: pf-proof
-Hartshorne 1971, Lemma 3.1, printed p. 85: "Under the isomorphism (1), the action of frobenius on $H^1(X,\OO_X)$ becomes the composition ... of frobenius on $\PP^2$ with multiplication by $g^2$." Then "frobenius takes our three monomials into their cubes", listed as $1/x^6y^3z^3$, $1/x^3y^6z^3$, $1/x^3y^3z^6$.
+Hartshorne 1971, Lemma 3.1: "Under the isomorphism (1), the action of frobenius on $H^1(X,\OO_X)$ becomes the composition ... of frobenius on $\PP^2$ with multiplication by $g^2$." Then "frobenius takes our three monomials into their cubes", listed as $1/x^6y^3z^3$, $1/x^3y^6z^3$, $1/x^3y^3z^6$.
 
 The thickening behind the map: pulling the displayed exact sequence back by the characteristic-$3$ Frobenius changes $\OO(-4)$ to $\OO(-12)$ and sends a class to its cube, and the restriction from the thickening cut out by $F^3$ to $C$ is multiplication by $F^{3-1}=F^2$ on the first term.
 :::
@@ -275,7 +908,7 @@ The thickening behind the map: pulling the displayed exact sequence back by the 
 The action of the $k$-linear Frobenius morphism on $H^1(C,\OO_C)$ is identically zero.
 
 ::: pf-proof
-Hartshorne 1971, Lemma 3.1, printed p. 85: "Every monomial of $g^2$ contains either $x^6$ or $y^3$ or $z^3$. Hence $g^2/x^6y^3z^3=0$ in $H^2(P,\OO_P(-4))$. By symmetry, $g^2$ also kills the other two monomials, so we find that frobenius on $H^1(X,\OO_X)$ is 0."
+Hartshorne 1971, Lemma 3.1: "Every monomial of $g^2$ contains either $x^6$ or $y^3$ or $z^3$. Hence $g^2/x^6y^3z^3=0$ in $H^2(P,\OO_P(-4))$. By symmetry, $g^2$ also kills the other two monomials, so we find that frobenius on $H^1(X,\OO_X)$ is 0."
 
 Carried out term by term, as the sentence says: the six monomial types of $F^2=(x^3y+y^3z+z^3x)^2$ are $x^6y^2$, $y^6z^2$, $z^6x^2$, $x^3y^4z$, $x^4yz^3$ and $xy^3z^4$, and after multiplication by $(x^6y^3z^3)^{-1}$ they leave respectively the $x$-, $y$-, $z$-, $y$-, $z$- and $y$-exponent at least zero, so each is zero in the top cohomology; the other two basis monomials are the cyclic permutations of the first, and $F$ is cyclically symmetric. This proves part (a).
 :::
@@ -292,13 +925,13 @@ $$
 and the kernel of $H^1(C,\OO_C(-3P))\to H^1(C,\OO_C)$ has dimension $2$.
 
 ::: pf-proof
-Hartshorne 1971, Example 3.2, printed p. 85, gives the first as "By Riemann--Roch, $H^1(X,\OO(-P))$ has dimension 3", and the second is his "By Riemann--Roch, $\dim H^1(X,\OO_X(-3P))=5$", printed p. 85. Both are Riemann--Roch on a curve of genus $3$,
+Hartshorne 1971, Example 3.2, gives the first as "By Riemann--Roch, $H^1(X,\OO(-P))$ has dimension 3", and the second is his "By Riemann--Roch, $\dim H^1(X,\OO_X(-3P))=5$". Both are Riemann--Roch on a curve of genus $3$,
 $$
 h^1-h^0=g-1-\deg,
 $$
 with $h^0=0$ at negative degree: $h^1(\OO_C(-P))=2+1=3$ and $h^1(\OO_C(-3P))=2+3=5$.
 
-The kernel is counted from the restriction sequence $0\to\OO_C(-3P)\to\OO_C\to\OO_{3P}\to0$, whose $H^0$ part is an isomorphism $h^0(\OO_C)=h^0(\OO_{3P})=1$, so that $H^1(C,\OO_C(-3P))\to H^1(C,\OO_C)$ is surjective and its kernel has dimension $5-3=2$. For $P$ the same sequence shows that $H^1(C,\OO_C(-P))\to H^1(C,\OO_C)$ is an isomorphism, which is the equality of dimensions the count below uses.
+The kernel is counted from the restriction sequence $0\to\OO_C(-3P)\to\OO_C\to\OO_{3P}\to0$: the quotient $\OO_{3P}$ is supported on the zero-dimensional scheme $3P$, so $H^1(C,\OO_{3P})=0$ and $H^1(C,\OO_C(-3P))\to H^1(C,\OO_C)$ is surjective, with kernel of dimension $5-3=2$. For $P$ the same sequence shows that $H^1(C,\OO_C(-P))\to H^1(C,\OO_C)$ is an isomorphism, which is the equality of dimensions the count below uses.
 :::
 
 :::
@@ -311,7 +944,7 @@ $$
 with $f^*\xi=0$ in $H^1(C,\OO_C(-3P))$.
 
 ::: pf-proof
-Hartshorne 1971, Example 3.2, printed p. 86: "Now frobenius is 0 on $H^1(X,\OO_X)$. So by counting dimensions, there is a $\hat\xi\ne0$ in $H^1(X,\OO_X(-P))$ with $f^*(\xi)=0$." The diagram he prints between those two sentences is the naturality square of $f^*$ over the two restriction maps to $H^1(X,\OO_X)$; the count it names is the one step [](#s4){.pf-ref} carries out, with the two printed numbers: $f^*$ maps a three-dimensional space into the two-dimensional kernel of $H^1(\OO_C(-3P))\to H^1(\OO_C)$, since the composite $H^1(\OO_C(-P))\to H^1(\OO_C)$ is an isomorphism and Frobenius vanishes on $H^1(\OO_C)$ by step [](#s3){.pf-ref}, so the map has a nonzero kernel. This proves part (b).
+Hartshorne 1971, Example 3.2: "Now frobenius is 0 on $H^1(X,\OO_X)$. So by counting dimensions, there is a $\hat\xi\ne0$ in $H^1(X,\OO_X(-P))$ with $f^*(\xi)=0$." The diagram he prints between those two sentences is the naturality square of $f^*$ over the two restriction maps to $H^1(X,\OO_X)$; the count it names is the one step [](#s4){.pf-ref} carries out, with the two printed numbers: $f^*$ maps a three-dimensional space into the two-dimensional kernel of $H^1(\OO_C(-3P))\to H^1(\OO_C)$, since the composite $H^1(\OO_C(-P))\to H^1(\OO_C)$ is an isomorphism and Frobenius vanishes on $H^1(\OO_C)$ by step [](#s3){.pf-ref}, so the map has a nonzero kernel. This proves part (b).
 :::
 
 :::
@@ -327,9 +960,9 @@ $$
 $$
 
 ::: pf-proof
-Hartshorne 1971, Example 3.2, printed p. 85, gives the extension and "The degree of $E$ is 1". Xie, Example 3.1, printed p. 5, writes for the same construction, with $\mathcal L=\OO_C(L)$ of degree $1$ and $X=\PP(\mathcal E)$: "The sequence (3) determines a section $E$ of $f$ through the map $H^0(C,\OO_C)\hookrightarrow H^0(C,\mathcal E)=H^0(X,\OO_X(1))$, hence $\OO_X(E)\cong\OO_X(1)$", and "$E^2=\deg\mathcal E=\deg\mathcal L>0$". Xie writes $E$ for the section and $\mathcal E$ for the bundle; the section is $C_0$, with $C_0^2=1$ and $C_0^2=-e$.
+Hartshorne 1971, Example 3.2, gives the extension and "The degree of $E$ is 1". Xie, Example 3.1, writes for the same construction, with $\mathcal L=\OO_C(L)$ of degree $1$ and $X=\PP(\mathcal E)$: "The sequence (3) determines a section $E$ of $f$ through the map $H^0(C,\OO_C)\hookrightarrow H^0(C,\mathcal E)=H^0(X,\OO_X(1))$, hence $\OO_X(E)\cong\OO_X(1)$", and "$E^2=\deg\mathcal E=\deg\mathcal L>0$". Xie writes $E$ for the section and $\mathcal E$ for the bundle; the section is $C_0$, with $C_0^2=1$ and $C_0^2=-e$.
 
-That the bundle is normalized is this card's own argument, and no source read carries it. Let $M$ be a line bundle of negative degree on $C$. If $\deg M\le-2$, then $M$ and $M(P)$ both have negative degree, so $\mathcal E\tensor M$ has no global section. If $\deg M=-1$ and $M\not\cong\OO_C(-P)$, then $M(P)$ is a nontrivial line bundle of degree $0$ and again has no section, while $M$ has none. Finally for $M=\OO_C(-P)$, the twisted sequence is $0\to\OO_C(-P)\to\mathcal E(-P)\to\OO_C\to0$, whose connecting map
+That the bundle is normalized is Hartshorne, Example 2.11.6, which proves it for an extension $0\to\OO_C\to\mathcal E\to L(P)\to0$ of the same shape over an elliptic curve, with $L$ of degree $0$; his argument uses only that $\xi\ne0$ and that $\deg L(P)=1$, so it applies to this $C$ of genus $3$ unchanged, and the paragraph below transcribes it, supplying one case that the printed sentence passes over. Let $M$ be a line bundle of negative degree on $C$. If $\deg M\le-2$, then $M$ and $M(P)$ both have negative degree, so $\mathcal E\tensor M$ has no global section. If $\deg M=-1$ and $M\not\cong\OO_C(-P)$, then $M(P)$ is a nontrivial line bundle of degree $0$ and again has no section, while $M$ has none; this is the case the printed argument leaves implicit, where $\deg(M(P))=0$ and the vanishing is that of a nontrivial bundle of degree $0$ rather than of a bundle of negative degree. Finally for $M=\OO_C(-P)$, the twisted sequence is $0\to\OO_C(-P)\to\mathcal E(-P)\to\OO_C\to0$, whose connecting map
 $$
 H^0(C,\OO_C)\to H^1(C,\OO_C(-P))
 $$
@@ -343,60 +976,111 @@ by (2.8.1).
 :::
 
 ::: {.pf-step #s7}
-$X$ contains an integral curve
+The class $3C_0-3f$ has a unique effective member, the divisor
 $$
-Y\equiv3C_0-3f,
+Y=\operatorname{div}(t)\equiv3C_0-3f,\qquad
+\OO_X(Y)\cong\OO_X(3)\tensor f^*\OO_C(-3P),\qquad
+Y\cdot f=3 ,
 $$
-with $\OO_X(Y)\cong\OO_X(3)\tensor f^*\OO_C(-3P)$ and $C_0\cap Y=\emptyset$.
+and no section of $X\to C$ lies in the class $C_0-f$, so $Y$ is not three times a section.
 
 ::: pf-proof
-Xie, Example 3.1, printed pp. 5--6. Pulling the extension back by Frobenius gives the split sequence
+Xie, Example 3.1: pulling the extension back by Frobenius gives the split sequence
 $$
 0\to\OO_C\to F^*\mathcal E\to\mathcal L^3\to0
 $$
-"since the extension class of (4) is just $F^*\eta(\alpha)=0$", which here is the choice of $\xi$ in step [](#s5){.pf-ref}. From it he obtains the exact sequence $0\to\OO_C\to F^*\mathcal E\otimes\mathcal L^{-3}\to\mathcal L^{-3}\to0$, "which determines a section $t\in H^0(X,\OO_X(3)\otimes f^*\mathcal L^{-3})$ through the maps $H^0(C,\OO_C)\hookrightarrow H^0(C,F^*\mathcal E\otimes\mathcal L^{-p})\hookrightarrow H^0(C,S^p(\mathcal E)\otimes\mathcal L^{-p})=H^0(X,\OO_X(p)\otimes f^*\mathcal L^{-p})$", and "The section $t$ determines an irreducible curve $C'\subset X$ such that $\OO_X(C')\cong\OO_X(p)\otimes f^{*}\mathcal L^{-p}$". He adds "It is easy to verify that both $E$ and $C'$ are smooth over $k$, and $E\cap C'=\emptyset$", printed p. 5; the smoothness of $C'$ is step [](#s9){.pf-ref}, where it fails.
+"since the extension class of (4) is just $F^*\eta(\alpha)=0$", which here is the choice of $\xi$ in step [](#s5){.pf-ref}. From it he obtains the exact sequence $0\to\OO_C\to F^*\mathcal E\otimes\mathcal L^{-3}\to\mathcal L^{-3}\to0$, "which determines a section $t\in H^0(X,\OO_X(3)\otimes f^*\mathcal L^{-3})$ through the maps $H^0(C,\OO_C)\hookrightarrow H^0(C,F^*\mathcal E\otimes\mathcal L^{-p})\hookrightarrow H^0(C,S^p(\mathcal E)\otimes\mathcal L^{-p})=H^0(X,\OO_X(p)\otimes f^*\mathcal L^{-p})$", and "The section $t$ determines an irreducible curve $C'\subset X$ such that $\OO_X(C')\cong\OO_X(p)\otimes f^{*}\mathcal L^{-p}$". He adds "It is easy to verify that both $E$ and $C'$ are smooth over $k$, and $E\cap C'=\emptyset$"; the smoothness of $C'$ is false, by step [](#s9){.pf-ref}, while its irreducibility is right.
 
-Here $p=3$ and $\mathcal L=\OO_C(P)$ has degree $1$, so
+Here $p=3$ and $\mathcal L=\OO_C(P)$ has degree $1$. That $t\ne0$, that nothing else lies in the class, and the shape of $Y$ are this card's own, and no source read carries them.
+
+The bundle $F^*\mathcal E\otimes\OO_C(-3P)$ is $F^*(\mathcal E\otimes\OO_C(-P))$, since $F^*\OO_C(-P)=\OO_C(-3P)$, and the second arrow of the chain is the $\OO_C$-linear map $\psi:F^*(\mathcal E\otimes\OO_C(-P))\to S^3(\mathcal E\otimes\OO_C(-P))=\OO_X(3)\otimes f^*\OO_C(-3P)$ which sends $1\tensor v$ to $v^3$; the twist by $g\mapsto g^3$ appears in the comparison with sections of $\mathcal E\tensor\OO_C(-P)$, where $1\tensor gv=g^3(1\tensor v)$, so that $\psi(1\tensor gv)=g^3v^3=g^3\psi(1\tensor v)$ and $\psi(g\tensor v)=g\,v^3$, so a section $u$ expressed in a frame goes to the same expression with each $f_i^F$ replaced by $f_i^3$ and each coefficient kept as it stands. Hartshorne 1971, Example 3.2, records the same map as an inclusion $F^*\mathcal E\subseteq S^3(\mathcal E)$ and uses it only to conclude that $S^3(\mathcal E)$ is not semistable; he draws no consequence for a curve on $X$. Over an open $U\subseteq C$ choose a frame $f_1,f_2$ of $\mathcal E\otimes\OO_C(-P)$ in which $f_1$ spans the subbundle $\OO_C(-P)$ and $f_2$ maps to a generator of the quotient $\OO_C$, and let $f_1^F,f_2^F$ be the induced frame of $F^*(\mathcal E\otimes\OO_C(-P))$. The sequence $0\to\OO_C(-3P)\to F^*(\mathcal E\otimes\OO_C(-P))\to\OO_C\to0$ splits, and a splitting carries $1\in H^0(\OO_C)$ to a section $u$ whose expression in this frame is
 $$
-\OO_X(Y)\cong\OO_X(3)\tensor f^*\OO_C(-3P),
+\restrictionof{u}{U}=f_2^F+a\,f_1^F,\qquad a\in\OO_C(U),
 $$
-which in the basis $C_0$, $f$ of $\operatorname{Num}(X)$ is the class $3C_0-3f$; and $C_0\cap Y=\emptyset$ is Xie's $E\cap C'=\emptyset$, with his $E$ the section $C_0$ of step [](#s6){.pf-ref}.
+the coefficient of $f_2^F$ being $1$ because $f_2$ maps to $1$ and $f_1^F$ maps to $0$ in the quotient; $u$ is unique because $H^0(\OO_C(-3P))=0$. Then
+$$
+t=u^3=f_2^3+a\,f_1^3 ,
+$$
+the cross terms vanishing in characteristic $3$.
+
+In the fibre coordinate $[\alpha:\beta]$ for $\alpha f_1+\beta f_2$ over $U$, the form $t$ reads
+$$
+\beta^3+a\,\alpha^3 ,
+$$
+which over the algebraic closure of $k(C)$ is $(\beta+a^{1/3}\alpha)^3$: one point of the fibre, of multiplicity $3$. So $Y=\operatorname{div}(t)$ meets each fibre in one point and $Y\cdot f=3$.
+
+That $Y$ is not a multiple of a section is this card's own, and it does not follow from step [](#s6){.pf-ref} alone: $H^0(C,\mathcal E\tensor\OO_C(-P))=0$ is a statement about one line bundle, while a section of $\pi$ with class $C_0-f$ carries a different twisting. Let $\Sigma$ be a section of $\pi$ with $\Sigma\equiv C_0-f$. By Proposition 2.9, $\Sigma$ corresponds to a surjection $\mathcal E\to L\to0$ with $\deg L=C_0\cdot\Sigma=0$, and by Proposition 2.6,
+$$
+\OO_X(\Sigma)\cong\OO_X(1)\tensor\pi^*M,\qquad M=L\tensor\OO_C(-\mathfrak e),
+$$
+where $\OO_C(\mathfrak e)=\wedge^2\mathcal E$ has degree $-e=1$; so $\deg M=\deg L+\deg(\OO_C(-\mathfrak e))=0-1=-1$. Every line bundle $M$ of degree $-1$ on $C$ has
+$$
+H^0(X,\OO_X(1)\tensor\pi^*M)=H^0(C,\mathcal E\tensor M)=0,
+$$
+by the vanishing of step [](#s6){.pf-ref} for every line bundle of negative degree: twisting $0\to\OO_C\to\mathcal E\to\OO_C(P)\to0$ by $M$ gives $0\to M\to\mathcal E\tensor M\to M(P)\to0$, in which $H^0(M)=0$ because $\deg M=-1$, and $H^0(M(P))=0$ unless $M\cong\OO_C(-P)$, the one case step [](#s6){.pf-ref} settles by the nonzero extension class. So no section of $\pi$ lies in the class $C_0-f$, no such $\Sigma$ exists, and $Y$ is not a triple: the class $3C_0-3f$ holds $Y$ and not $3\Sigma$. The distinction is exactly the hypothesis $\xi\ne0$. For the split bundle $\OO_C\oplus\OO_C(P)$ the class $C_0-f$ does hold a section and the unique member of $3C_0-3f$ is three times it, which is why a count taken over the split bundle does not compute this member.
+
+Finally $h^0(\OO_X(3C_0-3f))=1$, so $Y$ is the only effective member. A divisor of $\OO_X(3)\otimes f^*\OO_C(-3P)$ is a section of that line bundle, and $H^0(X,\OO_X(3)\otimes f^*\OO_C(-3P))=H^0(C,S^3\mathcal E\otimes\OO_C(-3P))$; the subbundle $\OO_C\subset\mathcal E$ of step [](#s6){.pf-ref}, whose quotient is $\OO_C(P)$, gives $S^3\mathcal E$ a filtration whose successive quotients are $\OO_C(3P)$, $\OO_C(2P)$, $\OO_C(P)$ and $\OO_C$, so the twisted bundle has quotients $\OO_C$, $\OO_C(-P)$, $\OO_C(-2P)$ and $\OO_C(-3P)$, and
+$$
+h^0(C,S^3\mathcal E\otimes\OO_C(-3P))\le h^0(\OO_C)+h^0(\OO_C(-P))+h^0(\OO_C(-2P))+h^0(\OO_C(-3P))=1+0+0+0=1,
+$$
+because $\deg\OO_C(-P)=-1$ makes each of the last three negative. The space is not zero, since $t\ne0$; so it is one-dimensional and $Y=\operatorname{div}(t)$ is its only effective divisor.
 :::
 
 :::
 
 ::: {.pf-step #s8}
-The morphism $\pi\restrictionof_Y:Y\to C$ is purely inseparable of degree $3$.
+The curve $Y$ is integral, and $\restrictionof{\pi}{Y}:Y\to C$ is purely inseparable of degree $3$.
 
 ::: pf-proof
-Xie, Lemma 4.4(iii), printed pp. 10--11: "If $R^2<0$, then $f\restrictionof_R:R\to C$ is purely inseparable", for an irreducible curve $R\subset X$ different from a fibre. Here
+Degree: $Y\cdot f=3$ by step [](#s7){.pf-ref}. Since $Y$ is effective, a fibre meets $Y$ in a $0$-cycle of degree $Y\cdot f=3$, so $\restrictionof{\pi}{Y}$ has finite fibres; it is a projective morphism, $Y$ being a closed subscheme of the projective surface $X$, hence finite by Exercise III.11.2, of degree the length of a fibre, $3$.
+
+The local shape. By step [](#s7){.pf-ref}, over an open $U\subseteq C$ the equation of $Y$ in the fibre coordinate $[\alpha:\beta]$ is the cubic form $\beta^3+a\alpha^3$ with $a\in\OO_C(U)$, and over the algebraic closure of $k(C)$ that form is $(\beta+a^{1/3}\alpha)^3$: $Y$ meets each fibre over $U$ in one point, of multiplicity $3$.
+
+The coefficient $a$ is not a cube in $k(C)$, in the frame of step [](#s7){.pf-ref}; equivalently, $t$ is not the cube of a rational section of $\mathcal E\tensor\OO_C(-P)$, since a rational section $v=pf_1+qf_2$ has $v^3=q^3f_2^3+p^3f_1^3$ in characteristic $3$, so that $v^3=f_2^3+a\,f_1^3$ forces $q^3=1$, which forces $q=1$ because $x^3-1=(x-1)^3$ there, and $p^3=a$. This is a statement about the open set $U$ and not about global sections: step [](#s6){.pf-ref} vanishes $H^0$ of line bundles on $C$, and a line bundle on $X$ with no nonzero global section can still have a nonzero section over an open subset. Suppose then that $a=b^3$ with $b\in k(C)$, and put $\sigma=f_2+b\,f_1$, a rational section of $\mathcal E\tensor\OO_C(-P)$ whose image in $k(C)$ is $1$. Over the open set on which $b$ is regular one has $t=(f_2+bf_1)^3=\sigma^3$, the cross terms vanishing in characteristic $3$; two rational sections of $S^3(\mathcal E\tensor\OO_C(-P))$ that agree on a nonempty open set are equal, so $t=\sigma^3$ in $S^3(\mathcal E\tensor\OO_C(-P))\tensor k(C)$. At a point $p$ of $C$ choose a local frame $g_1,g_2$ of $\mathcal E\tensor\OO_C(-P)$ and write $\sigma=z^m u$ there, with $u$ a regular section generating the bundle at $p$ and $m=\operatorname{ord}_p\sigma\in\ZZ$; then $\sigma^3=z^{3m}u^3$ has order $3m$ at $p$. The section $t$ is regular at every $p$, being a global section of $S^3(\mathcal E\tensor\OO_C(-P))$, so $3m\ge0$ and $m\ge0$ at every $p$: $\sigma$ extends to a global section of $\mathcal E\tensor\OO_C(-P)$. Its image in $H^0(\OO_C)$ is $1\ne0$, so $H^0(C,\mathcal E\tensor\OO_C(-P))\ne0$, against step [](#s6){.pf-ref}. So $a$ is not a cube in $k(C)$.
+
+Irreducibility. A reducible cubic form in two variables over a field $K$ has a linear factor, hence a $K$-rational zero, and if $[1:x]$ is one then $x^3=-a$ and $\beta^3+a\alpha^3=(\beta-x\alpha)^3$, because $(\beta-x\alpha)^3=\beta^3-x^3\alpha^3$ in characteristic $3$; conversely a cube root of $-a$ makes the form a cube. So the form is reducible exactly when $-a$ is a cube in $k(C)$, that is exactly when $a$ is a cube, since $-1=(-1)^3$. Neither holds, so $\beta^3+a\alpha^3$ is irreducible over $k(C)$, and $k(Y)=k(C)[x]/(x^3+a)$ is a field of degree $3$ over $k(C)$: $Y$ is integral, hence reduced.
+
+Pure inseparability. The curve $Y$ is integral, and it is not a fibre of $\pi$, because $Y\cdot f=3$ while $f\cdot f=0$; and
 $$
-Y^2=(3C_0-3f)^2=9C_0^2-18\,C_0\cdot f=-9<0,
+Y^2=9C_0^2-18\,C_0\cdot f+9f^2=9-18=-9<0
 $$
-using $C_0^2=1$, $C_0\cdot f=1$ and $f^2=0$; so $f\restrictionof_Y$ is purely inseparable. Its degree is $Y\cdot f=3$, the coefficient of $C_0$ in the class of $Y$, since a fibre meets $Y$ in $\deg(\pi\restrictionof_Y)$ points. This is what the exercise asks of $\pi:Y\to C$ in the corrected statement.
+by $C_0^2=1$, $C_0\cdot f=1$ and $f^2=0$ from step [](#s6){.pf-ref}. Schröer, Proposition 3.3, states that for a $\PP^1$-bundle $X'\to B$ over a smooth curve $B$ of genus $>0$ and an integral curve $R\subset X'$ with $R^2<0$, the projection $R\to B$ is purely inseparable, and the argument transcribed here is his. The separable closure of $\kappa(B)\subset\kappa(R)$ defines a proper normal curve $A$, with $R\to A$ purely inseparable and $A\to B$ separable. Set $n=\deg(A/B)$. On the induced $\PP^1$-bundle $X'_A$, the preimage of $R$ splits into $n$ irreducible components $R_1,\ldots,R_n$, which are permuted by the Galois action; hence $R_1^2=\cdots=R_n^2$, so every $R_i$ has negative self-intersection. Since the pseudoeffective cone $\overline{NE}(X'_A)$ has at most one extremal ray of negative self-intersection, $n=1$. Thus $A=B$, and $R\to B$ is purely inseparable. In the frame of step [](#s7){.pf-ref} the extension is visible: the class of $\beta/\alpha$ has cube $-a\in k(C)$.
+
+The normalization. The composition $\widetilde Y\to Y\to C$ of the normalization with $\pi$ is finite of degree $3$ and purely inseparable, so Proposition IV.2.5 identifies $\widetilde Y$ with the iterated $k$-linear Frobenius twist $C^{(1)}$ of $C$ of Example IV.2.4.3, whose function field is $k(C)^{1/p}$; that proposition also makes $C^{(1)}$ isomorphic to $C$ as an abstract scheme, hence of genus $3$.
+
+Its arithmetic genus is $4$ by step [](#s9){.pf-ref}.
 :::
 
 :::
 
 ::: {.pf-step #s9}
-No nonsingular curve on $X$ has class $3C_0-3f$; the curve $Y$ of step [](#s7){.pf-ref} is integral with normalization $C$ and has one singular point, of $\delta=1$.
+Every effective divisor $Y\equiv3C_0-3f$ on a ruled surface over a curve of genus $3$ has $p_a(Y)=1-3e$, and on the exercise's surface, where $e=-1$ and so $p_a=4$, no nonsingular curve lies in the class. The unique member $Y$ of step [](#s7){.pf-ref} is therefore singular: it is an integral curve whose normalization is the Frobenius twist $C^{(1)}$, isomorphic to $C$ as an abstract scheme, and its genus defect is $1$, at one singular point.
 
 ::: pf-proof
-This step is this card's own, and no source read carries it: it is the adjunction count that decides the printed adjective. For an integral curve $Y$ on the nonsingular surface $X$, adjunction gives
-$$
-p_a(Y)=1+\frac12\qty(Y^2+Y\cdot K_X),
-$$
-and with $C_0^2=1$ and $K_X\equiv-2C_0+(2g-2-e)f=-2C_0+5f$ this is
-$$
-1+\frac12\qty(-9+15)=4.
-$$
-On the other hand $Y\cdot f=3$, so $\pi\restrictionof_Y$ has degree $3$, and it is purely inseparable by step [](#s8){.pf-ref}: the function fields embed as
-$$
-K(C)\subset K(Y)\subset K(C)^{1/3}
-$$
-with $[K(C)^{1/3}:K(C)]=3=[K(Y):K(C)]$, so $K(Y)=K(C)^{1/3}$ and $Y$ is birational to the Frobenius twist $C^{(3)}$ of $C$. That twist is the plane quartic $V(x^3y+y^3z+z^3x)$ again, $C$ being defined over the prime field, and it has genus $3$. So the normalization of $Y$ has genus $3$ while $p_a(Y)=4$, and $Y$ is singular with $\delta=p_a-p_a(\tilde Y)=1$. A nonsingular $Y$ in this class would have genus $4$ and, being a curve of degree $3$ over $C$, the function field $K(C)^{1/3}$ of genus $3$; the printed \"nonsingular\" cannot hold. Xie's sentence that $C'$ is smooth over $k$, printed p. 5, is false for this $p$ and this $L$, by the same count: his $C'$ is this $Y$.
+This step is this card's own, and no source read carries it.
 
-This $Y$ is the integral curve of the corrected statement, whose normalization is $C$.
+The arithmetic genus of every divisor in the class, for any invariant $e$. In the basis $C_0,f$ of $\operatorname{Num}(X)$ one has $C_0^2=-e$, $C_0\cdot f=1$ and $f^2=0$, and $K_X\equiv-2C_0+(2g-2-e)f$ by Corollary 2.11. Expanding,
+$$
+Y^2=9C_0^2-18\,C_0\cdot f+9f^2=-9e-18,
+$$
+$$
+Y\cdot K_X=(3C_0-3f)\cdot\qty(-2C_0+(2g-2-e)f)=-6C_0^2+3(2g-2-e)(C_0\cdot f)+6(f\cdot C_0)=3e+6g,
+$$
+the terms in $f^2$ vanishing. The arithmetic genus of an effective divisor on a nonsingular surface is $2p_a(D)-2=D\cdot(D+K_X)$, with $p_a(D)=1-\chi(\OO_D)$; that is Exercise 1.3(a), and it is the statement used here, because $Y$ need not be nonsingular. Proposition 1.5 states the same formula for a nonsingular curve only, and is used below on the hypothetical nonsingular $Y$. Exercise 1.3(a) gives
+$$
+2p_a(Y)-2=Y^2+Y\cdot K_X=-6e+6g-18,\qquad p_a(Y)=3g-8-3e,
+$$
+which for $g=3$ is $p_a(Y)=1-3e$. In particular $2p_a(Y)-2=-6e$ is divisible by $3$ for every integer $e$.
+
+A nonsingular curve in the class can be excluded in both cases of the projection. Purely inseparably: if $\restrictionof{\pi}{Y}$ is purely inseparable, then $g(Y)=g(C)=3$ by Proposition IV.2.5, which makes a purely inseparable finite morphism of curves an isomorphism of abstract schemes; then $2g(Y)-2=4$, which is not divisible by $3$, while $-6e$ is. So on no ruled surface of this kind, for any $e$, does the class hold a nonsingular curve whose projection to $C$ is purely inseparable. Separably: if $\restrictionof{\pi}{Y}$ is separable, Riemann--Hurwitz, Corollary IV.2.4, gives $2g(Y)-2=3(2g(C)-2)+\deg R=12+\deg R\ge12$; on the exercise's surface $e=-1$, so $2p_a(Y)-2=6$, which is below $12$. Since $Y\cdot f=3$, the projection is finite of degree $3$ and one of the two cases holds, so no nonsingular curve has the class at all. This is the failure of the printed statement of (c).
+
+The genus defect of the member. By step [](#s8){.pf-ref} the curve $Y$ is integral and $\restrictionof{\pi}{Y}$ is purely inseparable of degree $3=p$, so $k(Y)/k(C)$ is purely inseparable of degree $3$. The curve with function field $k(C)^{1/p}$ is the Frobenius twist $C^{(1)}$ of Example IV.2.4.3, of degree $p$ over $C$, and by Proposition IV.2.5 it is isomorphic to $C$ as an abstract scheme, hence of genus $3$; step [](#s8){.pf-ref} identifies it with the normalization of $Y$. So the normalization of $Y$ is $C$, and with $p_a(Y)=4$ from the count above,
+$$
+\delta:=p_a(Y)-p_a(\widetilde Y)=4-3=1 ,
+$$
+This is the genus defect of an integral curve, and the content lies in its two inputs, both computed here: $p_a(Y)=4$ by the arithmetic-genus form of adjunction on the surface, and $p_a(\widetilde Y)=p_a(C)=3$ as the genus of the normalization $\widetilde Y=C^{(1)}$, which the purely inseparable projection supplies. By Exercise IV.1.8(a) the arithmetic genus of an integral projective curve splits as $p_a(Y)=p_a(\widetilde Y)+\sum_P\delta_P$, the sum over the points of $Y$, with $\delta_P=\operatorname{length}(\widetilde{\OO}_{Y,P}/\OO_{Y,P})$ and $\delta_P=0$ at a nonsingular point; so $\delta=\sum_P\delta_P$ is the sum of the local invariants at the singular points, each at least $1$, and since the sum is $1$, the singular locus of $Y$ is exactly one point, of $\delta$-invariant $1$.
+
+So the class holds an integral curve, singular in one point, with purely inseparable degree-$3$ projection to $C$: the curve the exercise asks for, except that it is not nonsingular, which is why the printed adjective fails.
 :::
 
 :::
@@ -409,23 +1093,27 @@ $$
 satisfies the numerical hypotheses of (2.21.b), namely $a>0$ and $b>\frac12ae$, but is not ample.
 
 ::: pf-proof
-Proposition 2.21(b), printed p. 382, reads: a divisor $D\equiv aC_0+bf$ is ample if and only if $a>0$ and $b>\frac12ae$; the proposition's own hypotheses are $e<0$ together with char $k=0$ or $g\le1$, printed p. 382. The numerics are the book's, and the passage from the disjoint curve to non-ampleness is this card's own. For $D=2C_0$ one has $a=2$, $b=0$ and $e=-1$, so $a>0$ and $b=0>-1=\frac12\cdot2\cdot(-1)$: the two numerical conditions hold, and the proposition cannot be applied to $X$, whose $e=-1$, char $k=3$ and $g=3$ fail its hypotheses. That is the case its Remark 2.21.1, printed p. 382, sets aside: "In the remaining case $e<0$, char $k=p>0$, $g\ge2$, we cannot get necessary and sufficient conditions for $D$ to be ample".
+Proposition 2.21(b) reads: a divisor $D\equiv aC_0+bf$ is ample if and only if $a>0$ and $b>\frac12ae$; the proposition's own hypotheses are $e<0$ together with char $k=0$ or $g\le1$. The numerics are the book's, and the passage from the disjoint curve to non-ampleness is this card's own. For $D=2C_0$ one has $a=2$, $b=0$ and $e=-1$, so $a>0$ and $b=0>-1=\frac12\cdot2\cdot(-1)$: the two numerical conditions hold. The proposition itself cannot be applied to $X$: its hypothesis $e<0$ holds, since $e=-1$, while char $k=3\ne0$ and $g=3>1$ fail the alternative char $k=0$ or $g\le1$. That is the case Remark 2.21.1 sets aside: "In the remaining case $e<0$, char $k=p>0$, $g\ge2$, we cannot get necessary and sufficient conditions for $D$ to be ample, but it is possible to get some partial results (Ex. 2.14) and (Ex. 2.15)".
 
-For non-ampleness, step [](#s7){.pf-ref} gives $C_0\cap Y=\emptyset$, Xie's $E\cap C'=\emptyset$ in his Example 3.1, printed p. 5; in intersection numbers that is $C_0\cdot Y=0$, consistently with $(3C_0-3f)\cdot C_0=3-3=0$. Since $Y$ is an integral curve on $X$,
+For non-ampleness, step [](#s7){.pf-ref} gives the curve $Y$ in the class $3C_0-3f$, integral by step [](#s8){.pf-ref}, and
 $$
-D\cdot Y=2\,C_0\cdot Y=0,
+Y\cdot C_0=(3C_0-3f)\cdot C_0=3C_0^2-3=0,
 $$
-and an ample divisor meets every irreducible curve positively, by Nakai--Moishezon [[T-SRFNAKAI]]. Therefore
+with $C_0^2=1$ by step [](#s6){.pf-ref}; this is Xie's $E\cap C'=\emptyset$ in intersection numbers. Hence
+$$
+D\cdot Y=2\,C_0\cdot Y=0
+$$
+for the divisor $D=2C_0$ of the statement. The curve $Y$ is irreducible by step [](#s8){.pf-ref}, and an ample divisor meets every irreducible curve positively, by Nakai--Moishezon (1.10) [[T-SRFNAKAI]]. Therefore
 $$
 \boxed{D\text{ is not ample}.}
 $$
-Hartshorne 1971 announces the same failure for the bundle: its Example 3.2, printed pp. 85--86, is "A bundle $E$ of rank 2 on $X$, such that every quotient bundle of $E$ has positive degree, but $E$ is not ample", the bundle whose projectivization is $X$.
+Hartshorne 1971 announces the same failure for the bundle: its Example 3.2 is "A bundle $E$ of rank 2 on $X$, such that every quotient bundle of $E$ has positive degree, but $E$ is not ample", the bundle whose projectivization is $X$.
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), steps [](#s4){.pf-ref} and [](#s5){.pf-ref} part (b), steps [](#s6){.pf-ref} to [](#s8){.pf-ref} the curve of part (c) with its purely inseparable projection, step [](#s9){.pf-ref} the correction of the printed \"nonsingular\", and step [](#s10){.pf-ref} the divisor $D=2C_0$.
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), steps [](#s4){.pf-ref} and [](#s5){.pf-ref} part (b), steps [](#s6){.pf-ref} to [](#s8){.pf-ref} the unique member of the class $3C_0-3f$ and its purely inseparable projection, step [](#s9){.pf-ref} the theorem that $p_a=1-3e$ on the class, that no nonsingular curve lies in it and that the member has genus defect $1$, and step [](#s10){.pf-ref} the divisor $D=2C_0$.
 :::
 
 :::
@@ -433,11 +1121,17 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), st
 :::
 
 ::: {.remark title="Published solution"}
-Parts (a) and (b) have complete published arguments, and the curve of part (c) does too, apart from the printed adjective.
+Parts (a) and (b) have complete published arguments, and so does every step of part (c) that the published record reaches: the normalization of $\mathcal E$ is Hartshorne, Example 2.11.6, transcribed in step [](#s6){.pf-ref}; the construction of $Y$ is Xie, Example 3.1, transcribed in step [](#s7){.pf-ref}; and the pure inseparability of $\restrictionof{\pi}{Y}$ is Schröer, Proposition 3.3, transcribed in step [](#s8){.pf-ref}. What the published record does not prove is the integrality of Xie's divisor, which he asserts, and the arithmetic genus of the class, which step [](#s9){.pf-ref} computes; Xie asserts in addition that his $C'$ is smooth, and that is false, since the curve is integral and singular in one point.
 
-Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89: Lemma 3.1, printed pp. 84--85, is part (a), the vanishing of Frobenius on $H^1(C,\OO_C)$ through the identification with $H^2(\PP^2,\OO(-4))$ and the multiplication by $g^2$; Example 3.2, printed pp. 85--86, is part (b), the bundle, the two Riemann--Roch dimensions and the dimension count, together with the reason $E$ is not ample. He does not construct the curve $Y$ of part (c) and says nothing about $D=2C_0$.
+Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89: Lemma 3.1, is part (a), the vanishing of Frobenius on $H^1(C,\OO_C)$ through the identification with $H^2(\PP^2,\OO(-4))$ and the multiplication by $g^2$; Example 3.2, is part (b), the bundle, the two Riemann--Roch dimensions and the dimension count, together with the reason $E$ is not ample. He does not construct the curve $Y$ of part (c) and says nothing about $D=2C_0$.
 
-Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*: Example 3.1, printed pp. 5--6, is the construction of part (c), the section with $\OO_X(E)\cong\OO_X(1)$ and $E^2=\deg\mathcal E$, the split Frobenius pullback, and the irreducible curve $C'$ with $\OO_X(C')\cong\OO_X(p)\otimes f^*\mathcal L^{-p}$ disjoint from the section; Lemma 4.4(iii), printed pp. 10--11, is the pure inseparability of $f\restrictionof_R$ for an irreducible $R$ with $R^2<0$. His Example 3.1 is stated for a base curve satisfying the Tango condition, which is how he produces the extension class; here the class is $\xi$ of part (b), so the construction applies as it stands with $p=3$ and $\mathcal L=\OO_C(P)$. His assertion that $C'$ is smooth over $k$ is false in this case, by the adjunction count of step [](#s9){.pf-ref}; for $p=3$, $\deg\mathcal L=1$ and $g(C)=3$ his curve has arithmetic genus $4$ and normalization $C$ of genus $3$.
+Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*, arXiv:math/0702554v5 (8 October 2008): Example 3.1, is the construction of part (c), the section with $\OO_X(E)\cong\OO_X(1)$ and $E^2=\deg\mathcal E$, the split Frobenius pullback, and the curve $C'$ with $\OO_X(C')\cong\OO_X(p)\otimes f^*\mathcal L^{-p}$ disjoint from the section, which he calls irreducible and smooth; step [](#s7){.pf-ref} identifies it as the unique member $Y$ of the class, integral and singular in one point by steps [](#s8){.pf-ref} and [](#s9){.pf-ref}, so his irreducibility is right and his smoothness claim is false; Lemma 4.4(iii) is the pure inseparability of $\restrictionof{f}{R}$ for an irreducible $R$ with $R^2<0$, which he attributes to Schröer, Proposition 3.3. His Example 3.1 is stated for a base curve satisfying the Tango condition, which is how he produces the extension class; here the class is $\xi$ of part (b), so the construction applies as it stands with $p=3$ and $\mathcal L=\OO_C(P)$. His assertion that $C'$ is smooth over $k$ is false in this case, by the adjunction count of step [](#s9){.pf-ref}; for $p=3$, $\deg\mathcal L=1$ and $g(C)=3$ his curve has arithmetic genus $4$ and normalization $C$ of genus $3$.
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.15, PDF pp. 271--273, computes (a) as Hartshorne 1971 does, and for (c) writes only "To see the curve $Y\equiv3C_0-3f$ is inseparable is Miyanishi, *Open Algebraic Surfaces*, lemma 2.5.2.2". Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.15, printed pp. 105--106, reproduces (a) and has garbled (b) and (c). Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 15 of §2.
+Stefan Schröer, *Normal del Pezzo surfaces containing a nonrational singularity*, Manuscripta Math. 104 (2001), 257--274: Proposition 3.3, is the pure inseparability of the projection of an integral curve $R$ with $R^2<0$ on a $\PP^1$-bundle over a curve of positive genus, proved from the separable closure of the function field extension and the pseudoeffective cone; with $B=C$, $X'=X$ and $R=Y$ it is the pure inseparability of step [](#s8){.pf-ref}. He makes no smoothness claim for $R$.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.15, computes (a) as Hartshorne 1971 does, and for (c) writes only "To see the curve $Y\equiv3C_0-3f$ is inseparable is Miyanishi, *Open Algebraic Surfaces*, lemma 2.5.2.2", adding that $Y$ is "some section of $C$"; that lemma lies in the book's section on log del Pezzo surfaces of rank one, so it is a pointer rather than a proof of an exercise about a ruled surface, and the remark that $Y$ is a section of $C$ is false, a curve in the class $3C_0-3f$ having $p_a=4$ by step [](#s9){.pf-ref} while a curve isomorphic to $C$ has $p_a=3$. Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.15 reproduces (a) and draws the two-dimensional count of (b); its (c) reads "Clearly $\deg\pi=Y.f=3$. So $\pi$ is not separable with inseparable degree $3$", which infers inseparability from the degree alone, and then concludes that $Y$ is a set-theoretic section of $C$. A curve in the class $3C_0-3f$ that is isomorphic to $C$ would have $p_a=3$, against $p_a=4$ of step [](#s9){.pf-ref}, so that conclusion cannot hold either. Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 15 of §2. The record here is bounded to the sources named: no retained solution set proves (c), in its printed form or in the corrected one, and the steps that no published source reaches are marked as this card's.
+:::
+
+::: {.remark}
+The book's (c), Exercise V.2.15(c), reads "Show that $X$ contains a nonsingular curve $Y\equiv3C_0-3f$, such that $\pi:Y\to C$ is purely inseparable", and the word that is false is "nonsingular". The counterexample is the curve of Xie's Example 3.1. Pulling his extension back by Frobenius, he obtains a section $t$ of $\OO_X(p)\otimes f^*\mathcal L^{-p}$ and a curve $C'$ with $\OO_X(C')\cong\OO_X(p)\otimes f^*\mathcal L^{-p}$, which for $p=3$ and $\mathcal L=\OO_C(P)$ is the class $3C_0-3f$; step [](#s7){.pf-ref} shows that this curve is the class's only effective member, and steps [](#s8){.pf-ref} and [](#s9){.pf-ref} that it is integral, that $\pi$ restricts to it as a purely inseparable morphism of degree $3$, and that its arithmetic genus is $4$ while its normalization is the Frobenius twist $C^{(1)}$, of genus $3$. An integral curve whose normalization has genus $3$ and whose arithmetic genus is $4$ is singular, with $\delta=1$ at one point, so Xie's $C'$ is the curve the exercise asks for except in the one respect the exercise names. Independently, no nonsingular curve can lie in the class: $2p_a(Y)-2=-6e$ is divisible by $3$ for every invariant $e$, while a purely inseparable degree-$3$ projection would give $g(Y)=g(C)=3$ and $2g(Y)-2=4$, and at $e=-1$ a separable projection would need $2g(Y)-2=6$ to be at least $12$. The statement above therefore asks for an integral curve, and the printed "nonsingular" is recorded here as false. Xie's Example 3.1 asserts the smoothness of his $C'$ as well, and it fails by the same computation.
 :::

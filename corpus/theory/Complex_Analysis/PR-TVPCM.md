@@ -20,4 +20,6 @@ Then $f$ is complex differentiable at $z_0$ if and only if
 $$
 \delbar f(z_0)=\frac12(\del_x+i\del_y)f(z_0)=0.
 $$
+
+The implication from complex differentiability is [@SS03, ch. 1, Proposition 2.3], where the condition is written $\partial f/\partial\overline z(z_0)=0$ with $f'(z_0)=\partial f/\partial z(z_0)$; the converse is [@SS03, ch. 1, Theorem 2.4], which obtains holomorphy from the Cauchy--Riemann equations for a function with continuously differentiable parts. The $\bar\partial$ operator is $\partial/\partial\overline z$ of the first of those.
 :::

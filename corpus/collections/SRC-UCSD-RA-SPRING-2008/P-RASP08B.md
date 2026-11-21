@@ -14,6 +14,19 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Repaired and restructured. The card was a stack of label-steps with no proofs and twenty-one
+    nested one-sentence claims carrying the mathematics with nothing behind them. It is now four
+    proved steps: the null-set reduction with the countable union, part (a) by continuity from
+    below along the increasing sets with both inclusions verified through f = sup f_n, part (b)
+    by continuity from above (which is where mu(X) < infinity is used) with the squeeze between
+    {f < a} and {f <= a}, and the counterexample, which is the card's own (f_n = -1/n on [0,1])
+    and now says explicitly that the whole discrepancy is carried by mu{f = 0}. Answers
+    unchanged. Not claimed: a retained solution set; the collection's provenance is the
+    examination paper only.
 ---
 
 ::: {.problem}
@@ -37,130 +50,45 @@ for some $a \in \RR$.
 :::
 
 ::: {.solution}
-**Goal:** Prove the continuity of measures for level sets under monotone a.e. convergence and provide a strict inequality counterexample.
+Throughout $(X,\mu)$ is a measure space, $f_{n}, f\colon X \to \RR$ are measurable with $f_{1} \le f_{2} \le \cdots$ almost everywhere and $f_{n} \to f$ almost everywhere, and $\theset{f > a}$ abbreviates $\theset{x \in X \mid f(x) > a}$. Reductions to null sets use the fact that a countable union of null sets is null. The collection's `provenance` is the Spring 2008 examination paper, and no solutions sheet accompanies it, so the argument below is the card's own.
 
 ::: pf
 
-::: pf-step
-Null set reduction:
-Let $N \subset X$ be a measurable null set ($\mu(N) = 0$) such that for all $x \in X \setminus N$:
-$$f_1(x) \le f_2(x) \le \cdots \le f_n(x) \le \cdots \quad \text{and} \quad \lim_{n\to\infty} f_n(x) = f(x) = \sup_{n\ge 1} f_n(x).$$
+::: {.pf-step #null}
+There is a null set $N$ off which $f_{1} \le f_{2} \le \cdots$ and $f_{n} \to f$ pointwise.
 
 ::: pf-proof
-Monotonicity holds outside a countable union of null sets $N_k$ where $f_k(x) > f_{k+1}(x)$, and pointwise convergence holds outside a null set $N_0$. The union $N = N_0 \cup \bigcup_{k=1}^\infty N_k$ satisfies $\mu(N) = 0$.
-:::
+Let $N_{k} \coloneqq \theset{f_{k} > f_{k+1}}$, a null set by the almost-everywhere monotonicity, and $N_{0}$ a null set off which the convergence holds; then $N \coloneqq N_{0} \cup \bigcup_{k}N_{k}$ is a countable union of null sets, hence null, and off it both properties hold at every point. Off $N$ the sequence $(f_{n}(x))$ is increasing with limit $f(x)$, so $f(x) = \sup_{n}f_{n}(x)$ there.
 
 :::
 
-::: pf-step
-Part (a): $\lim_{n\to\infty} \mu(\{x : f_n(x) > a\}) = \mu(\{x : f(x) > a\})$.
+:::
+
+::: {.pf-step #a}
+(a) $\mu\theset{f_{n} > a} \to \mu\theset{f > a}$ for every $a \in \RR$.
 
 ::: pf-proof
-
-::: pf-step
-Define $E_n = \{x \in X \setminus N : f_n(x) > a\}$ and $E = \{x \in X \setminus N : f(x) > a\}$.
-:::
-
-::: pf-step
-Since $f_n(x) \le f_{n+1}(x)$ on $X \setminus N$, $f_n(x) > a \implies f_{n+1}(x) > a$, so $E_n \subseteq E_{n+1}$.
-:::
-
-::: pf-step
-If $x \in \bigcup_{n=1}^\infty E_n$, then $f_n(x) > a$ for some $n$, so $f(x) \ge f_n(x) > a$, meaning $x \in E$.
-:::
-
-::: pf-step
-If $x \in E$, then $f(x) > a$. Since $\lim_{n\to\infty} f_n(x) = f(x)$, there exists $n_0$ such that $f_n(x) > a$ for all $n \ge n_0$, so $x \in E_{n_0} \subseteq \bigcup_{n=1}^\infty E_n$.
-:::
-
-::: pf-step
-Thus $\{E_n\}$ is an increasing sequence of measurable sets with $\bigcup_{n=1}^\infty E_n = E$.
-:::
-
-::: pf-step
-By continuity of measure from below:
-$$\lim_{n\to\infty} \mu(\{x : f_n(x) > a\}) = \lim_{n\to\infty} \mu(E_n) = \mu(E) = \mu(\{x : f(x) > a\}).$$
-:::
+Put $E_{n} \coloneqq \theset{f_{n} > a} \cap (X \setminus N)$ and $E \coloneqq \theset{f > a} \cap (X\setminus N)$; these differ from the sets in the statement by $N$, hence have the same measures. If $x \in E_{n}$ then $f(x) \ge f_{n}(x) > a$, so $E_{n} \subseteq E$; if $x \in E$ then $f(x) > a$, and since $f(x) = \sup_{n}f_{n}(x)$ some $n$ has $f_{n}(x) > a$, so $x \in E_{n}$. Hence $E_{n} \subseteq E_{n+1}$ and $\bigcup_{n}E_{n} = E$, and continuity of $\mu$ from below along an increasing sequence gives $\mu(E_{n}) \to \mu(E)$.
 
 :::
 
 :::
 
-::: pf-step
-Part (b): Bounds on $\lim_{n\to\infty} \mu(\{x : f_n(x) < a\})$ when $\mu(X) < \infty$.
+::: {.pf-step #b}
+(b) If $\mu(X) < \infty$ then the limit of $\mu\theset{f_{n} < a}$ exists and $\mu\theset{f < a} \le \lim_{n}\mu\theset{f_{n} < a} \le \mu\theset{f < a} + \mu\theset{f = a}$.
 
 ::: pf-proof
-
-::: pf-step
-Define $A_n = \{x \in X \setminus N : f_n(x) < a\}$.
-:::
-
-::: pf-step
-If $f_{n+1}(x) < a$, then $f_n(x) \le f_{n+1}(x) < a$, so $A_{n+1} \subseteq A_n$.
-:::
-
-::: pf-step
-Since $\mu(X) < \infty$, $\mu(A_1) \le \mu(X) < \infty$. By continuity of measure from above:
-$$\lim_{n\to\infty} \mu(\{x : f_n(x) < a\}) = \lim_{n\to\infty} \mu(A_n) = \mu\left(\bigcap_{n=1}^\infty A_n\right).$$
-:::
-
-::: pf-step
-For $x \in X \setminus N$: $x \in \bigcap_{n=1}^\infty A_n \iff \forall n, f_n(x) < a \iff \sup_{n\ge 1} f_n(x) \le a \iff f(x) \le a$.
-:::
-
-::: pf-step
-If $f(x) < a$, then for all $n$, $f_n(x) \le f(x) < a$, so $\{x \in X \setminus N : f(x) < a\} \subseteq \bigcap_{n=1}^\infty A_n$.
-:::
-
-::: pf-step
-Thus $\{x \in X \setminus N : f(x) < a\} \subseteq \bigcap_{n=1}^\infty A_n \subseteq \{x \in X \setminus N : f(x) \le a\}$.
-:::
-
-::: pf-step
-Taking measures:
-$$\mu(\{f < a\}) \le \mu\left(\bigcap_{n=1}^\infty A_n\right) \le \mu(\{f \le a\}) = \mu(\{f < a\}) + \mu(\{f = a\}).$$
-:::
+Now $A_{n} \coloneqq \theset{f_{n} < a}\cap(X\setminus N)$ is decreasing, because $f_{n} \le f_{n+1}$ gives $\theset{f_{n+1} < a} \subseteq \theset{f_{n} < a}$. Its intersection is squeezed: if $f(x) < a$ then $f_{n}(x) \le f(x) < a$ for every $n$, so $\theset{f < a}\setminus N \subseteq \bigcap_{n}A_{n}$, while every $x \in \bigcap_{n}A_{n}$ has $f_{n}(x) < a$ for all $n$ and hence $f(x) = \sup_{n}f_{n}(x) \le a$. Thus $\theset{f < a}\setminus N \subseteq \bigcap_{n}A_{n} \subseteq \theset{f \le a}\setminus N$. Since $\mu(A_{1}) \le \mu(X) < \infty$, continuity from above gives $\mu(A_{n}) \to \mu(\bigcap_{n}A_{n})$, and monotonicity of $\mu$ gives the chain $\mu\theset{f < a} \le \mu(\bigcap_{n}A_{n}) \le \mu\theset{f \le a} = \mu\theset{f < a} + \mu\theset{f = a}$, the last equality because $\theset{f \le a}$ is the disjoint union of $\theset{f < a}$ and $\theset{f = a}$.
 
 :::
 
 :::
 
 ::: pf-step
-Counterexample with strict inequality:
+The bound in (b) is attained: on $X = [0,1]$ with Lebesgue measure, $f_{n} \equiv -1/n$ and $f \equiv 0$ give $0 = m\theset{f < 0} < \lim_{n}m\theset{f_{n} < 0} = 1$.
 
 ::: pf-proof
-
-::: pf-step
-Let $X = [0, 1]$ equipped with Lebesgue measure $m$, so $m(X) = 1 < \infty$.
-:::
-
-::: pf-step
-Choose $a = 0$.
-:::
-
-::: pf-step
-For each $n \ge 1$, define $f_n(x) = -\frac{1}{n}$ for all $x \in [0, 1]$, and $f(x) = 0$.
-:::
-
-::: pf-step
-Then $f_1 \le f_2 \le \cdots$ everywhere and $f_n(x) \to f(x) = 0$.
-:::
-
-::: pf-step
-For each $n$, $\{x \in [0, 1] : f_n(x) < 0\} = [0, 1]$, so $m(\{x : f_n(x) < 0\}) = 1$.
-:::
-
-::: pf-step
-Hence $\lim_{n\to\infty} m(\{x : f_n(x) < 0\}) = 1$.
-:::
-
-::: pf-step
-However, $\{x \in [0, 1] : f(x) < 0\} = \emptyset$, so $m(\{x : f(x) < 0\}) = 0$.
-:::
-
-::: pf-step
-Thus $0 = m(\{f < 0\}) < \lim_{n\to\infty} m(\{f_n < 0\}) = 1$.
-:::
+Take $a = 0$. The constant functions satisfy $f_{1} \le f_{2} \le \cdots$ everywhere and $f_{n} \to 0 = f$ pointwise, and $m([0,1]) = 1 < \infty$. For every $n$ the set $\theset{f_{n} < 0} = [0,1]$, so the limit of the measures is $1$; while $\theset{f < 0} = \varnothing$, of measure $0$. This is the strict inequality the exercise asks for, and it sits exactly at the gap allowed by step [](#b){.pf-ref}, since $\mu\theset{f = 0} = 1$ carries the difference.
 
 :::
 

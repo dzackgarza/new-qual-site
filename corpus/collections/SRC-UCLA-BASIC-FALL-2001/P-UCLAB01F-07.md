@@ -5,7 +5,9 @@ kind: problem
 title: Annihilator of an image and rank of the transpose
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Dual Spaces
+  - Annihilators
 relations: []
 review: draft
 audit:

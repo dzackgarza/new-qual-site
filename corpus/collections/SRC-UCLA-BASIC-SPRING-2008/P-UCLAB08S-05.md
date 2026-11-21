@@ -6,7 +6,9 @@ title: Vanishing square integrals and equality of mixed partials
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Mixed Partial Derivatives
+  - Integrals
 relations: []
 review: draft
 audit:

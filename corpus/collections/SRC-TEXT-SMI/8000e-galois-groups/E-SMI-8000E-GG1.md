@@ -37,7 +37,16 @@ audit:
     about radicalness is right: alpha^3 = 1 in characteristic 2, so F_4 = F_2(alpha)
     is a one-step radical extension and the printed expectation is wrong. No
     defect in the card.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 9, Galois problem 1.
+    $X^2+X+1$ has no root in $\mathbf F_2$, so the quotient is a field of four elements;
+    the other root is $\alpha+1$, so the splitting field is $K$ of degree $2$ with group
+    $C_2$ (Frobenius). The printed expectation that the root field is not radical is wrong:
+    $\alpha^3=1$ in characteristic $2$, so $K=\mathbf F_2(\alpha)$ is a one-step radical
+    extension. The card's correction is right; no defect.
 ---
 
 ::: {.exercise}

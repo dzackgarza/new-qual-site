@@ -6,7 +6,9 @@ title: Inner automorphisms form a normal subgroup
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Inner Automorphisms
+  - Normal Subgroups
 relations: []
 review: draft
 audit:

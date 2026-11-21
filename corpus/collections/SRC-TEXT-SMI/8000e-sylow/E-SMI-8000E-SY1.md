@@ -31,7 +31,14 @@ audit:
     by conjugation, orbit sizes are powers of p and the total is ≡ 1 mod p, so
     there is a fixed P; then PQ is a p-subgroup and PQ = P by maximality, so
     Q ≤ P. No defect.
----
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 7, Sylow problem 1. A
+    $p$-group acting on the Sylow $p$-subgroups has orbits of $p$-power size and
+    $\cardinality{\mathcal S}\equiv1\pmod p$, so a fixed $P$ exists; then $Q$ normalizes $P$,
+    $PQ$ is a $p$-subgroup containing the Sylow $P$, so $PQ=P$ and $Q\le P$. No defect.
 ---
 
 ::: {.exercise}

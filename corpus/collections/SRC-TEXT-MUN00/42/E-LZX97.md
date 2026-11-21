@@ -31,6 +31,31 @@ audit:
     "positron0802", "shenapse", "9beach", "kyp44", the seven further GitHub manuals, dbfin and Gardner's
     ETSU notes --- none of which solves this exercise.
     Checked against Munkres, Topology (2000), Section 42 Exercise 1, printed p. 262, with Theorem 42.1, Theorem 41.4 and Theorem 41.5 (which supply the paracompactness that Exercises 34.7 and 34.8 do not state), and the two exercises themselves. What was corrected: the card now names Theorem 41.5 for the paracompactness of a regular Lindelof space, where it previously referred only to the construction on the card of E-KVFCT.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the page locators in the card's text are removed and the citation is made by
+    number --- §42 Exercise 1, Theorem 42.1 (Smirnov), Theorems 41.4 and 41.5, the remark on
+    compact spaces in the introduction to §41, and the definition of regularity in §31 --- each
+    read in `tmp/sources/munkres-2000-topology.md`. The earlier events keep their text (QUAL-11);
+    these numbered citations supersede their page locators. No step changes.
+
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 correctness read. The comparison is right. Smirnov's theorem (Theorem 42.1) is
+    stated as metrizable iff paracompact Hausdorff and locally metrizable; the compact criterion,
+    §34 Exercise 7, is derived from it because a compact space is paracompact, as the
+    introduction to §41 records; the Lindelöf criterion, §34 Exercise 8, is derived through
+    Theorem 41.5 and the fact that regularity in the sense of §31 includes closed one-point sets,
+    so a regular space is Hausdorff. Strictness is right: an uncountable discrete space is
+    metrizable, hence satisfies Smirnov's hypothesis, and is neither compact nor Lindelöf, since
+    the cover by singletons has no countable subcover. Checked against §42 Exercise 1, Theorem
+    42.1, Theorems 41.4 and 41.5, and §34 Exercises 7 and 8, all read in
+    `tmp/sources/munkres-2000-topology.md`. No defect found; no step changed.
+
 ---
 
 ::: {.exercise}
@@ -39,17 +64,94 @@ Compare Theorem 42.1 (the Smirnov metrization theorem) with Exercises 7 and 8 of
 :::
 
 ::: {.solution}
-The Smirnov metrization theorem says
-$$
-X\text{ metrizable}
-\quad\Longleftrightarrow\quad
-X\text{ paracompact Hausdorff and locally metrizable}.
-$$
-Both criteria of §34 follow from it, because each hypothesis implies paracompactness.
 
-In [[E-MQTBP]], $X$ is compact Hausdorff and locally metrizable. Every compact space is paracompact (§41, the remark following the definition), so the Smirnov theorem gives metrizability.
+No retained solution set covers this exercise: it is a comparison the book asks for and no sheet in `tmp/sources` treats §42 Exercise 1, so the comparison below is the card's own. The statements compared were checked against Munkres, *Topology* (2000), §42 Exercise 1, the Smirnov metrization theorem, Theorem 42.1, Theorem 41.5, the remark that every compact space is paracompact in the introduction to §41, and the definition of regularity in §31.
 
-In [[E-KK77N]], $X$ is regular, Lindelöf, and locally metrizable. Every regular Lindelöf space is paracompact (Theorem 41.5; the construction on the card of [[E-KVFCT]](a) gives a locally finite open refinement of every open cover), so the Smirnov theorem gives metrizability.
+Throughout, the two criteria of §34 are those of [[E-MQTBP]] (compact Hausdorff and locally metrizable) and [[E-KK77N]] (regular, Lindelöf and locally metrizable).
 
-Conversely, compactness with the Hausdorff property and regularity with the Lindelöf property are two sufficient conditions for the paracompactness hypothesis of the Smirnov theorem.
+::: pf
+
+::: {.pf-step #smirnov}
+Smirnov's theorem reads: $X$ is metrizable if and only if $X$ is paracompact Hausdorff and locally metrizable.
+
+::: pf-proof
+This is Theorem 42.1. Its forward implication uses that a metrizable space is paracompact, Theorem 41.4, and locally metrizable; its converse is the substance of the theorem.
+:::
+
+:::
+
+::: {.pf-step #compact-case}
+A compact Hausdorff space that is locally metrizable is metrizable.
+
+:::: pf-proof
+
+::: {.pf-step #compact-paracompact}
+Every compact space is paracompact.
+
+::: pf-proof
+Given an open cover of a compact space, it contains a finite subcover, and a finite family of open sets is a locally finite open refinement of any cover it refines: each point has the neighbourhood $X$ itself, which meets only the finitely many members of the family. Munkres records this fact in the introduction to §41 as an immediate consequence of the definition.
+:::
+
+:::
+
+::: {.pf-step}
+The hypotheses of step [](#smirnov){.pf-ref} are met, so the space is metrizable.
+
+::: pf-proof
+It is compact by hypothesis, hence paracompact by step [](#compact-paracompact){.pf-ref}; it is Hausdorff and locally metrizable by hypothesis. Step [](#smirnov){.pf-ref} then gives metrizability.
+:::
+
+:::
+
+::::
+
+:::
+
+::: {.pf-step #lindelof-case}
+A regular Lindelöf space that is locally metrizable is metrizable.
+
+:::: pf-proof
+
+::: {.pf-step #lindelof-paracompact}
+A regular Lindelöf space is paracompact.
+
+::: pf-proof
+This is Theorem 41.5.
+:::
+
+:::
+
+::: {.pf-step #regular-hausdorff}
+A regular space is Hausdorff.
+
+::: pf-proof
+In Munkres's sense regularity presupposes that one-point sets are closed (§31). Given distinct points $x\neq y$, the set $\theset{y}$ is closed and does not contain $x$, so regularity gives disjoint open sets containing $x$ and $\theset{y}$ respectively, which separates the two points.
+:::
+
+:::
+
+::: {.pf-step}
+The hypotheses of step [](#smirnov){.pf-ref} are met, so the space is metrizable.
+
+::: pf-proof
+It is regular and Lindelöf by hypothesis, hence paracompact by step [](#lindelof-paracompact){.pf-ref} and Hausdorff by step [](#regular-hausdorff){.pf-ref}, and it is locally metrizable by hypothesis; step [](#smirnov){.pf-ref} gives metrizability.
+:::
+
+:::
+
+::::
+
+:::
+
+::: pf-step
+Therefore both §34 criteria are special cases of the Smirnov theorem, and the theorem's hypothesis is strictly broader than either.
+
+::: pf-proof
+Steps [](#compact-case){.pf-ref} and [](#lindelof-case){.pf-ref} derive the two criteria from step [](#smirnov){.pf-ref}: in each case the only thing supplied by the §34 hypothesis beyond local metrizability is paracompactness, obtained from compactness in the first case and from regularity together with the Lindelöf property in the second, and the Hausdorff condition is either assumed or is a consequence of regularity. The inclusion is strict: an uncountable set with the discrete topology is metrizable, hence paracompact Hausdorff and locally metrizable, and it is neither compact nor Lindelöf, since the cover by its one-point sets has no countable subcover. So the Smirnov theorem covers spaces that neither §34 criterion reaches.
+:::
+
+:::
+
+:::
+
 :::

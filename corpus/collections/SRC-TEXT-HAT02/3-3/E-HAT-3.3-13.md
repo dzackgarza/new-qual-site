@@ -44,6 +44,21 @@ audit:
     symplectic basis, where the matrix is a sum of hyperbolic blocks, which holds in every
     characteristic. And the printed hint's route through Exercise 12 is recorded at the end, since
     the solution takes a different one; that route is not written out in full.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Rewritten as a Lamport structured proof of the argument already on the card, and one
+    citation repaired: the symplectic-basis computation the prose attributed to "Exercise 1
+    p. 228" is now attributed to the symplectic basis of §3.3 on printed p. 249, with
+    nondegeneracy traced to Poincaré duality, Theorem 3.30 on printed p. 250, and the
+    alternating property proved integrally ($u\smile u=0$ in the torsion-free
+    $H^2(M_g;\ZZ)=\ZZ$) so that it does not depend on the characteristic. Added: the
+    deformation retraction of the one-boundary surface onto a wedge of $2h$ circles, and the
+    block-by-block bound on an isotropic subspace. The exercise's printed hint (Exercise 12)
+    is recorded as an alternative and not used. Statement re-read at §3.3 Exercise 13,
+    printed p. 258. Not claimed: a retained solution set — Li stops at Exercise 11 and Sam has
+    Exercises 8, 17, 32 — so the argument is the card's own.
 ---
 
 ::: {.problem}
@@ -53,52 +68,71 @@ Show there is no retraction $M_g \to M_h'$ if $h > g/2$.
 :::
 
 ::: {.solution}
-Suppose
-$$
-r:M_g\longrightarrow M_h'
-$$
-is a retraction, and let
-$$
-i:M_h'\hookrightarrow M_g
-$$
-be the inclusion. Since $r\circ i=\operatorname{id}$, on cohomology over a field $F$ one has
-$$
-i^*r^*=\operatorname{id}_{H^1(M_h';F)}.
-$$
-Hence
-$$
-r^*:H^1(M_h';F)\hookrightarrow H^1(M_g;F)
-$$
-is injective.
+The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 13, with the exercise's own hint. No retained solution set covers it — Guanyu Li's set stops at §3.3 Exercise 11 and Steven V. Sam's contains Exercise 8, 17 and 32 of that section — and the argument below is the card's own: it replaces the printed hint by the cup-product bound and records that the hint also works.
 
-Now $M_h'$ is a compact genus-$h$ surface with one boundary component, so
-$$
-\dim_F H^1(M_h';F)=2h,
-\qquad
-H^2(M_h';F)=0.
-$$
-Therefore for all $u,v\in H^1(M_h';F)$,
-$$
-r^*u\smile r^*v=r^*(u\smile v)=0.
-$$
-Thus the $2h$-dimensional subspace
-$$
-V=r^*H^1(M_h';F)\subset H^1(M_g;F)
-$$
-is isotropic for the cup-product pairing
-$$
-H^1(M_g;F)\times H^1(M_g;F)\longrightarrow H^2(M_g;F)\cong F.
-$$
-This pairing is nondegenerate and alternating — over a field of characteristic $2$ "skew-symmetric" has to be read as alternating, which for a closed orientable surface it is: in the symplectic basis of Exercise 1 p.228 one has $\alpha_i\smile\beta_i=1$ and $\alpha_i\smile\alpha_i=0$, so the form vanishes on the diagonal and its matrix is a direct sum of $\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$ blocks. Hence an isotropic subspace has dimension at most half of
-$$
-\dim_F H^1(M_g;F)=2g.
-$$
-Consequently
-$$
-2h\le g.
-$$
-In particular, if $h>g/2$, no retraction $M_g\to M_h'$ can exist.
+Throughout $F$ is a field, $M_g$ is the closed orientable surface of genus $g$, and $M_h'\subset M_g$ is a compact genus-$h$ subsurface with one boundary circle, so that $M_h'$ is $M_h$ with an open disk removed.
 
-The printed hint suggests instead applying Exercise 12 to $\pi_1(M_g)\cong\pi_1(M_h')*_{\ZZ}\pi_1(M_g-M_h')$: a retraction would express $\prod_{i\le h}[a_i,b_i]$ as a product of at most $g-h$ commutators in the free group on $2h$ generators, which Exercise 12 forbids once $g-h<h$. The argument above is shorter and does not use it.
+::: pf
 
+::: {.pf-step #injective}
+If $r:M_g\to M_h'$ is a retraction and $i:M_h'\hookrightarrow M_g$ the inclusion, then $r^*:H^1(M_h';F)\to H^1(M_g;F)$ is injective.
+
+::: pf-proof
+$r\circ i=\operatorname{id}$ gives $i^*\circ r^*=\operatorname{id}$ on $H^1(M_h';F)$, since cohomology is a functor. A map with a left inverse is injective.
+
+:::
+
+:::
+
+::: {.pf-step #boundary-surface}
+$\dim_F H^1(M_h';F)=2h$ and $H^2(M_h';F)=0$.
+
+::: pf-proof
+$M_h'$ is a compact surface with one boundary circle, so it is homotopy equivalent to a wedge of $2h$ circles: collapsing the complement of $2h$ arcs cutting $M_h$ into a disk gives a deformation retraction onto such a wedge (§1.1, or Exercise 1.2.4's picture). Hence $H_1(M_h';\ZZ)\cong\ZZ^{2h}$ and $H_i(M_h';\ZZ)=0$ for $i\ge2$; over the field $F$, $H^1(M_h';F)\cong\operatorname{Hom}(H_1,F)$ has dimension $2h$ by the universal coefficient theorem, and $H^2(M_h';F)=0$.
+
+:::
+
+:::
+
+::: {.pf-step #isotropic}
+$V=r^*H^1(M_h';F)$ is a $2h$-dimensional subspace of $H^1(M_g;F)$ on which the cup product vanishes identically.
+
+::: pf-proof
+$\dim V=2h$ since $r^*$ is injective by step [](#injective){.pf-ref}. For $u,v\in H^1(M_h';F)$, naturality of the cup product gives $r^*u\smile r^*v=r^*(u\smile v)$, and $u\smile v\in H^2(M_h';F)=0$ by step [](#boundary-surface){.pf-ref}. So every product of two elements of $V$ is zero, which is isotropy for the cup-product pairing.
+
+:::
+
+:::
+
+::: {.pf-step #form}
+The cup product pairing $H^1(M_g;F)\times H^1(M_g;F)\to H^2(M_g;F)\cong F$ is a nondegenerate alternating bilinear form.
+
+::: pf-proof
+Bilinearity is the bilinearity of $\smile$; nondegeneracy is Poincaré duality: for $0\ne u\in H^1(M_g;F)$ there is $v$ with $u\smile v\ne0$, because cap product with the fundamental class is an isomorphism $H^1(M_g;F)\cong H_{2-1}(M_g;F)=H_1(M_g;F)$ and the Kronecker pairing is nondegenerate (Theorem 3.30). Alternating: $u\smile u=0$ for every $u\in H^1$, since $u\smile u=-u\smile u$ by graded commutativity in odd degree, so $2(u\smile u)=0$ in the torsion-free group $H^2(M_g;\ZZ)\cong\ZZ$; this holds integrally and hence after tensoring with any field, and in particular in characteristic $2$, where a symmetric form with zero diagonal is alternating.
+
+:::
+
+:::
+
+::: {.pf-step #bound}
+An isotropic subspace of a nondegenerate alternating form on a space of dimension $2g$ has dimension at most $g$.
+
+::: pf-proof
+The form has a symplectic basis $e_1,f_1,\dots,e_g,f_g$, obtained by choosing $e_1\ne0$, finding $f_1$ with $e_1\cdot f_1\ne0$ by nondegeneracy, and restricting to the orthogonal complement of the span, which has dimension $2g-2$ and again carries a nondegenerate alternating form; this is the usual induction, and the resulting basis is the symplectic basis of §3.3. In such a basis the form is a direct sum of $\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$ blocks, and an isotropic subspace $W$ meets the span of each block in at most one dimension: if $W$ contained two independent elements of $\langle e_i,f_i\rangle$ it would contain a vector pairing nontrivially with an element of $W$. Hence $\dim W\le g$.
+
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+There is no retraction $M_g\to M_h'$ when $h>g/2$.
+
+::: pf-proof
+By step [](#isotropic){.pf-ref} the subspace $V$ is isotropic of dimension $2h$ in $H^1(M_g;F)$, which has dimension $2g$ by the same computation as step [](#boundary-surface){.pf-ref} applied to the closed surface. Step [](#bound) then gives $2h\le g$. Consequently $h>g/2$ is incompatible with the existence of a retraction.
+
+:::
+
+:::
+
+:::
 :::

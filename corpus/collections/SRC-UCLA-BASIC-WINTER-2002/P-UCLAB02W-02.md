@@ -5,7 +5,9 @@ kind: problem
 title: Direct proof of sequential compactness of the unit interval
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Compactness
+  - Bolzano-Weierstrass Theorem
 relations: []
 review: draft
 audit:
