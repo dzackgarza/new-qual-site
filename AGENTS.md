@@ -1039,4 +1039,8 @@ date-first format: the day each restored heading carries mid-title dates its rec
 keeps it append-only. A push replays each published commit against its own parent and
 its own committer day, and replays
 the pushed tip even when the payload names no path, so a sanctioned `--no-verify`
-content commit is still judged by the day it was written.
+content commit is still judged by the day it was written. A merge commit (`git pull
+--no-rebase` of the published `main`) is judged only on the paths it authored — those
+whose merged blob differs from every parent and from Git's automatic merge of the two —
+against each parent in turn; every other change it carries belongs to the commit that
+made it, which was judged when it was published or earlier in the same replay.

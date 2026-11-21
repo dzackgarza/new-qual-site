@@ -165,6 +165,8 @@ class GitChange(Strict):
 AUDIT_FIELDS = ("event", "by", "date", "note")
 # Dated records outside the corpus: the root complaints file's sections and paragraphs.
 COMPLAINTS = Path("COMPLAINTS.md")
+# The paths whose blobs the card gate validates and whose deletions it reads.
+CHECKED_PATHS = ("corpus/", "wiki/", COMPLAINTS.as_posix())
 DAY = re.compile(r"\b(\d{4}-\d{2}-\d{2})\b")
 HEADING = re.compile(r"^(?P<marks>#{1,6})\s")
 # A section record begins with its own day; a paragraph or numbered item states it
@@ -592,10 +594,39 @@ def head_commit() -> str:
     raise ValueError("HEAD names no commit and is not an unborn branch")
 
 
-def parent_commit(commit: str) -> str:
-    """A commit's first parent, or the empty tree for a root commit."""
-    fields = subprocess.run(["git", "rev-list", "--parents", "--max-count=1", commit], check=True, stdout=subprocess.PIPE, text=True).stdout.split()
-    return fields[1] if len(fields) > 1 else empty_tree()
+def commit_parents(commit: str) -> list[str]:
+    """A commit's parents in order; a root commit has none."""
+    return subprocess.run(["git", "rev-list", "--parents", "--max-count=1", commit], check=True, stdout=subprocess.PIPE, text=True).stdout.split()[1:]
+
+
+def merge_authored_paths(commit: str, parents: list[str]) -> list[str]:
+    """The checked paths a merge commit authored, rather than carried from a parent.
+
+    A path whose merged blob equals one parent's is that parent's change, judged by that
+    parent's own commit: upstream when it was published, or earlier in the same replay.
+    `git diff-tree -c` lists the paths that differ from every parent (git-diff-tree,
+    "combined diff format"). Of those, a path that Git's own automatic merge of the two
+    parents (`git merge-tree --write-tree`, git-merge-tree) resolves to the same blob was
+    merged textually, each hunk taken from one side, so it is carried too. What is left
+    is a conflict resolution or an edit made in the merge, and that is the merge's own.
+    """
+    combined = subprocess.run(["git", "diff-tree", "-c", "-r", "--no-commit-id", "--name-only", "-z", commit, "--", *CHECKED_PATHS], check=True, stdout=subprocess.PIPE, text=True).stdout
+    paths = [name for name in combined.split("\0") if name]
+    if len(parents) != 2 or not paths:
+        return paths
+    # Exit status 1 is a conflicted automatic merge; its tree, with markers, is still written.
+    automatic = subprocess.run(["git", "merge-tree", "--write-tree", *parents], stdout=subprocess.PIPE, text=True)
+    if automatic.returncode not in (0, 1):
+        raise ValueError(f"git merge-tree could not merge the parents of {commit}")
+    merged = tree_blobs(commit, paths)
+    resolved = tree_blobs(automatic.stdout.split("\n", 1)[0], paths)
+    return [path for path in paths if merged.get(path) != resolved.get(path)]
+
+
+def tree_blobs(revision: str, paths: list[str]) -> dict[str, str]:
+    """The blob id at each of `paths` that `revision`'s tree holds."""
+    listing = subprocess.run(["git", "ls-tree", "-r", "-z", revision, "--", *paths], check=True, stdout=subprocess.PIPE, text=True).stdout
+    return {name: fields.split()[2] for fields, name in (record.split("\t", 1) for record in listing.split("\0") if record)}
 
 
 def upstream_commit() -> str:
@@ -660,7 +691,7 @@ def surviving_card_ids(version: str, base: str) -> set[str]:
     return ids
 
 
-def removal_errors(version: str, base: str) -> list[str]:
+def removal_errors(version: str, base: str, scope: tuple[str, ...]) -> list[str]:
     """Dated records a commit deletes, with the path that held them (QUAL-11).
 
     A deletion is read from Git's own diff and not from the caller's path list: the
@@ -671,12 +702,13 @@ def removal_errors(version: str, base: str) -> list[str]:
     most of its text rewritten is found through the id of the path that carries it on,
     which `changed_audit_events` compares against the retired path. Only a path whose
     card no surviving path carries is a card deleted, and only then are its events gone.
+    `scope` is the pathspec the deletions are read under.
     """
     # Select every retired path before rename pairing. A move to Markdown is excused by
     # the surviving card id below; a rename to a non-Markdown blob is still a card deletion.
     command = ["git", "diff", "--no-renames", "--name-only", "--diff-filter=D", "-z"]
     command.extend(["--cached", base] if version == "index" else [base, version])
-    listing = subprocess.run([*command, "--", "corpus/", "wiki/", COMPLAINTS.as_posix()], check=True, stdout=subprocess.PIPE, text=True).stdout
+    listing = subprocess.run([*command, "--", *scope], check=True, stdout=subprocess.PIPE, text=True).stdout
     if not listing:
         return []
     day = commit_day(version)
@@ -810,7 +842,7 @@ def corrections_without_certificates(selected: list[tuple[GitChange, str]], base
     return errors
 
 
-def check_git_changes(changes: list[GitChange], base: str, versions: tuple[str, ...]) -> int:
+def check_git_changes(changes: list[GitChange], base: str, versions: tuple[str, ...], scope: tuple[str, ...] = CHECKED_PATHS) -> int:
     """Validate card, wiki and complaint blobs selected by the shared hook or a range check.
 
     Diagrams are compiled here because the site build is the only other place
@@ -821,12 +853,13 @@ def check_git_changes(changes: list[GitChange], base: str, versions: tuple[str, 
     selections have different ancestors. `versions` names the trees whose deletions are
     compared with `base`; every caller names them, because the paths such a caller hands
     over are the ones that survive the change, so a commit that only deletes has none.
+    `scope` limits where those deletions are read: a merge names only the paths it authored.
     """
     cards = [change for change in changes if change.path.parts[0] in ("corpus", "wiki") and change.path.suffix == ".md"]
     complaints = [change for change in changes if change.path == COMPLAINTS]
     errors: list[str] = []
     for version in versions:
-        errors.extend(removal_errors(version, base))
+        errors.extend(removal_errors(version, base, scope))
     bodies: list[tuple[Path, str]] = []
     selected: list[tuple[GitChange, str]] = []
     for change in cards:
@@ -944,7 +977,7 @@ def check_git_cards(version: str, diff_args: tuple[str, ...], base: str) -> int:
     selection and blob transport (git-diff and gitrevisions manuals).
     """
     names = subprocess.run(
-        ["git", "diff", "--name-only", "--no-renames", "--diff-filter=ACM", "-z", *diff_args, "--", "corpus/", "wiki/", COMPLAINTS.as_posix()],
+        ["git", "diff", "--name-only", "--no-renames", "--diff-filter=ACM", "-z", *diff_args, "--", *CHECKED_PATHS],
         check=True,
         stdout=subprocess.PIPE,
         text=True,
@@ -959,17 +992,31 @@ def check_pushed_commits(tip: str) -> int:
     upstream and the tip are replayed one at a time: a rewrite made by an earlier commit
     is refused even when a later commit restores the text, and an edit is judged by the
     day of the commit that made it.
+
+    A merge is judged only on the paths it authored (`merge_authored_paths`), against
+    each parent in turn: replayed against its first parent alone, a merge of the
+    upstream presents every published change as its own, on the merge's day.
     """
     failed = 0
     for commit in pushed_commits(tip):
-        base = parent_commit(commit)
-        names = subprocess.run(
-            ["git", "diff", "--name-only", "--no-renames", "--diff-filter=ACM", "-z", base, commit, "--", "corpus/", "wiki/", COMPLAINTS.as_posix()],
-            check=True,
-            stdout=subprocess.PIPE,
-            text=True,
-        ).stdout
-        failed |= check_git_changes([GitChange(path=Path(name), version=commit) for name in names.split("\0") if name], base, (commit,))
+        parents = commit_parents(commit)
+        if len(parents) < 2:
+            base = parents[0] if parents else empty_tree()
+            names = subprocess.run(
+                ["git", "diff", "--name-only", "--no-renames", "--diff-filter=ACM", "-z", base, commit, "--", *CHECKED_PATHS],
+                check=True,
+                stdout=subprocess.PIPE,
+                text=True,
+            ).stdout
+            failed |= check_git_changes([GitChange(path=Path(name), version=commit) for name in names.split("\0") if name], base, (commit,))
+            continue
+        authored = merge_authored_paths(commit, parents)
+        if not authored:
+            continue
+        present = subprocess.run(["git", "ls-tree", "-r", "-z", "--name-only", commit, "--", *authored], check=True, stdout=subprocess.PIPE, text=True).stdout
+        changes = [GitChange(path=Path(name), version=commit) for name in present.split("\0") if name]
+        for parent in parents:
+            failed |= check_git_changes(changes, parent, (commit,), tuple(authored))
     return failed
 
 
