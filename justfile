@@ -185,6 +185,7 @@ _no-bare-disposition:
 # Run immediate commit-tier quality checks
 test-commit: _no-worktrees _no-bare-disposition
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-commit
+    @uv run --no-sync python -m qualc.authoring check-staged
 
 # Explicit files keep site builds and corpus scans in CI. One worker avoids
 # starting a process per CPU for this small test selection.
