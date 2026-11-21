@@ -1242,6 +1242,64 @@ def test_the_push_gate_judges_an_earlier_commit_that_a_later_one_restores(repo: 
     assert "QUAL-11" in result.stderr
 
 
+def merge_published_edit(repo: Path, monkeypatch: pytest.MonkeyPatch) -> str:
+    """Publish a same-day edit of a dated event, commit locally beside it, and start a later day's merge.
+
+    The published side edits the event on its own day, which the gate accepts there. The
+    merge, made the next day, carries that edit unchanged. Returns the published commit;
+    the merge is left uncommitted so a test can commit it as it stands or edit it first.
+    """
+    card = repo / "corpus/one card.md"
+    card.write_text(recorded("2026-11-15"))
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-15T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record the day's event")
+    branch = git(repo, "symbolic-ref", "--short", "HEAD").strip()
+    git(repo, "switch", "-qc", "published")
+    card.write_text(recorded("2026-11-15").replace("matches the printed exercise", "matches the printed statement"))
+    git(repo, "add", "corpus/one card.md")
+    git(repo, "commit", "-qm", "repair the note on its own day")
+    published = git(repo, "rev-parse", "HEAD").strip()
+    git(repo, "switch", "-q", branch)
+    (repo / "notes.txt").write_text("A local change beside the card.\n")
+    git(repo, "add", "notes.txt")
+    git(repo, "commit", "-qm", "local work")
+    track(repo, published)
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+    git(repo, "merge", "-q", "--no-commit", "--no-ff", published)
+    return published
+
+
+def test_the_push_gate_does_not_rejudge_published_changes_a_merge_carries(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """A merge of the upstream into local work publishes only what the merge itself authored.
+
+    Replayed against its first parent, the merge would present every published change as
+    its own, judged on the merge's day: the same-day edit becomes a rewrite of an event
+    dated before it. The published commit was judged on its own day when it was pushed.
+    """
+    merge_published_edit(repo, monkeypatch)
+    git(repo, "commit", "-qm", "merge the upstream")
+
+    result = run_push(repo, git(repo, "rev-parse", "HEAD").strip())
+
+    assert result.returncode == 0, result.stderr
+
+
+def test_the_push_gate_judges_what_a_merge_itself_rewrites(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """A merge result that rewrites a dated event, beyond what either side carried, is refused."""
+    merge_published_edit(repo, monkeypatch)
+    card = repo / "corpus/one card.md"
+    card.write_text(recorded("2026-11-15").replace("matches the printed exercise", "agrees with the printed exercise"))
+    git(repo, "add", "corpus/one card.md")
+    git(repo, "commit", "-qm", "merge the upstream and rewrite the event")
+
+    result = run_push(repo, git(repo, "rev-parse", "HEAD").strip())
+
+    assert result.returncode == 1
+    assert "corpus/one card.md: the source-checked event by claude dated 2026-11-15" in result.stderr
+    assert "QUAL-11" in result.stderr
+
+
 def test_the_push_gate_needs_the_branch_upstream(repo: Path) -> None:
     """With no upstream there is no base for the published range, so the check fails loudly."""
     tip = git(repo, "rev-parse", "HEAD").strip()
