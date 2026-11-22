@@ -20,7 +20,7 @@ To prove $x=y$ in a metric space it suffices to show $\rho(x,y)<\varepsilon$ for
 [[D-YZC3C]] [[D-IYDZU]]
 
 ::: {.example}
-Uniform convergence implies pointwise convergence, and $x^n$ on $[0,1]$ converges pointwise but not uniformly.
+Uniform convergence implies pointwise convergence, and $x^n$ on $[0,1]$ converges pointwise but not uniformly ([[PR-SCTER]]).
 
 Pointwise convergence is [@Rud76, ch. 7, Definition 7.1]; for $x^n$ the limit is $0$ on $[0,1)$ and $1$ at $1$, so the limit is discontinuous while every $x^n$ is continuous, and uniform convergence would preserve continuity by [@Rud76, ch. 7, Theorem 7.12].
 :::
