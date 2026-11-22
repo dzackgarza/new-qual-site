@@ -25,13 +25,13 @@ A morphism $X\to Y$ of schemes is an isomorphism exactly when the induced natura
 
 [[D-ETFPPF]]
 
-A Grothendieck topology on a category specifies, for each object, the families of morphisms that count as covers, subject to the axioms that isomorphisms are covers and that covers pull back and compose; the fppf topology is the one whose covers are jointly surjective flat families of finite presentation ([[D-GROTHTOP]], [[D-ETFPPF]]).
+On $\Sch_{/S}$ the étale and fppf pretopologies generate the topologies of [[D-ETFPPF]], and a cover of either is a family $\{U_i\to U\}_{i\in I}$ that is jointly surjective and whose members are étale, respectively flat and locally of finite presentation ([[D-ETFPPF]], [[D-GROTHTOP]]).
 
 ## Descent
 
 [[T-FFDESCENT]]
 
-A sheaf for a Grothendieck topology is a functor whose sections satisfy the gluing axiom for every cover of that topology, so descent is the statement that a quasicoherent sheaf on a scheme is the same data on any fppf cover, together with the gluing isomorphism on the fibre products of the cover ([[T-FFDESCENT]], [[D-GROTHTOP]]).
+Descent for a cover is the statement that a quasicoherent sheaf on a scheme is the same data on an fppf cover: a descent datum is an isomorphism $\theta\colon C\tensor_{B,p_1}N\to C\tensor_{B,p_2}N$ of $C$-modules satisfying the cocycle identity $p_{23}^*\theta\circ p_{12}^*\theta=p_{13}^*\theta$ after pullback to $B\tensor_AB\tensor_AB$, and for faithfully flat $A\to B$ the descent data on $B$-modules are equivalent to the $A$-modules ([[T-FFDESCENT]], [[D-GROTHTOP]]).
 
 ## Torsors
 
