@@ -55,6 +55,16 @@ audit:
     solution said that no retained set covers the exercise, and the retained sets' actual coverage is
     now recorded — Sam's §4.2 numbering is Hatcher's and Proudfoot's homework 7 covers 1, 2, 30, 31
     and 32, announcing 39 without a solution of it.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 9. One false sentence repaired: the example took $f\colon
+    A\to\ast$ the constant map and wrote $C_f\cong\Sigma A$. For Hatcher's $C_f=Y\cup_f CX$ the cone
+    of the constant map $A\to\ast$ is the cone $CA$, not the suspension; $\Sigma A$ is the cone of
+    the inclusion $A\hookrightarrow CA$. The example's conclusion is unaffected, $CA$ being
+    contractible while $A$ is not, and the step now says which cone is which and notes that
+    $\Sigma A$ is contractible too for acyclic $A$ (§4.2 Exercise 8).
 ---
 
 ::: {.problem}
@@ -84,7 +94,7 @@ $X$ and $Y$ are simply connected CW complexes, so Corollary 4.33 applies: a map 
 :::
 
 ::: {.pf-step #counterexample}
-Let $A$ be the acyclic noncontractible CW complex of Example 2.38 and $f:A\to *$ the constant map. Then $C_f\cong\Sigma A$ is contractible while $f$ is not a homotopy equivalence.
+Let $A$ be the acyclic noncontractible CW complex of Example 2.38 and $f:A\to *$ the constant map. Then $C_f=CA$, the cone on $A$, is contractible, while $f$ is not a homotopy equivalence because $A$ is not contractible. (For the constant map $A\to\ast$ the mapping cone is the cone $CA$, not the suspension: the suspension $\Sigma A$ is the mapping cone of the inclusion $A\hookrightarrow CA$, and it too is contractible when $A$ is acyclic, by §4.2 Exercise 8.)
 
 ::: pf-proof
 In Example 2.38 $A$ is obtained from $S^1\vee S^1$ by attaching two $2$-cells along the words $a^5b^{-3}$ and $b^3(ab)^{-2}$; the boundary matrix has determinant $-1$, so $\widetilde H_i(A)=0$ for all $i$, and $\pi_1(A)$ has the nontrivial presentation $\langle a,b\mid a^5b^{-3},\,b^3(ab)^{-2}\rangle$, so $A$ is not contractible. The mapping cone of $A\to *$ is the cone on $A$ with its base collapsed, which is the suspension $\Sigma A$, and $\Sigma A$ is contractible by §4.2 Exercise 8 because $A$ is acyclic. So the mapping cone is contractible and $f$ is not a homotopy equivalence.
