@@ -19,11 +19,6 @@ The proof glues two holomorphic functions along a segment and applies [[T-LHSMY|
 
 [[T-Q3GGF]]
 
-::: {.remark}
-Composing with Möbius transformations in the domain and the target, the [[T-Q3GGF|reflection principle]] extends a function holomorphic on one side of a line segment or circular arc and continuous up to it, with boundary values on a line or circle, by reflection in the arc and in the target line or circle.
-
-:::
-
 ::: {.example title="The real-valued hypothesis is used"}
 The constant function $f(z) = i$ on $\Omega^+$ is continuous up to $I$ but not real valued there.
 Its reflection is $\overline{f(\bar z)} = -i$ on $\Omega^-$, and the glued function is discontinuous on $I$.
