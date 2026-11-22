@@ -33,7 +33,7 @@ On $\PP^n$ the determinant of the Euler sequence is $\OO_{\PP^n}(-n-1)$, so $K_{
 
 ## Curves
 
-On a smooth projective curve the canonical class has degree $2g-2$, so a curve is Fano exactly when $g=0$, Calabi--Yau in the weak sense exactly when $g=1$, and of general type exactly when $g\ge2$ ([[D-VARFANO]], [[T-LKT0U]]).
+On a smooth projective curve the canonical class has degree $2g-2$ ([[T-MWDVL]]), so a curve is Fano exactly when $g=0$, Calabi--Yau in the weak sense exactly when $g=1$, and of general type exactly when $g\ge2$ ([[D-VARFANO]]).
 Riemann--Roch turns this degree into the dimensions of the spaces $H^0(C,\OO_C(mK_C))$, the plurigenera, which are birational invariants of the curve ([[T-BIRINV]]).
 
 ## Completeness and the classification
