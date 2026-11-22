@@ -16,7 +16,7 @@ Three criteria decide which: a bound on $\abs f$ near $z_0$, the behaviour of $f
 [[D-IWIA5]]
 
 ::: {.example title="Branch points"}
-The function $f(z)\coloneqq z^{1\over 2}$ has no holomorphic branch on any punctured disc about $0$, so $f$ has no Laurent expansion there and $z=0$ is not an isolated singularity of a single-valued holomorphic function; it is a branch point.
+The function $z\mapsto z^{1/2}$ has no holomorphic branch on any punctured disc about $0$, so it has no Laurent expansion there and $0$ is not an isolated singularity of a single-valued holomorphic function; it is a [[D-9KMTV|branch point]].
 The same holds at $z=0$ and $z=1$ for $\qty{z(z-1)}^{1\over 2}$, and at $z=0$ for $\Log(z)$.
 :::
 
