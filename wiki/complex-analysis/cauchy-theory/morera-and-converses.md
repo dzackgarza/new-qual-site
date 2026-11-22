@@ -20,8 +20,6 @@ A continuous function whose integral over every triangle vanishes is holomorphic
 
 :::
 
-[[T-LHSMY]]
-
 ## Locally uniform limits
 
 [[C-TODSQ]]
