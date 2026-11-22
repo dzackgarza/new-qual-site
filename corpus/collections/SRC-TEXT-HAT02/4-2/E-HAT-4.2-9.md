@@ -76,6 +76,14 @@ audit:
     card originally had it, $C_f=\Sigma A$, with the identification now written out; the argument is
     that $\Sigma A$ is contractible for acyclic $A$ (Exercise 8) while $f$ is not a homotopy
     equivalence.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    The preamble now records the defect in Sam's retained solution, as a referee asked: Sam uses the
+    contractibility of $SX$, that is of the mapping cylinder $M_f$, whereas the exercise requires the
+    mapping cone $C_f$ to be contractible, and those are different spaces. The card's own argument,
+    which shows $C_f=\Sigma X$ contractible, is unchanged and stands.
 ---
 
 ::: {.problem}
@@ -84,7 +92,7 @@ Use the preceding exercise to give an example where this fails in the nonsimply-
 :::
 
 ::: {.solution}
-A retained solution covers this exercise: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.2 Exercise 9** (`tmp/sources/hatcher-solutions-sam-2008.md`). Guanyu Li's set ends with §3.3, DeMason's M382C problem set covers §4.2 Exercises 1, 2, 14 and 27 only, and the Stanford 215C sets cover §3.B and §3.3 exercises. So the argument is the card own, from the cofiber sequence of a map (§4.2), Corollary 4.33, Example 2.38 and §4.2 Exercise 8.
+A retained solution covers this exercise: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.2 Exercise 9** (`tmp/sources/hatcher-solutions-sam-2008.md`). Guanyu Li's set ends with §3.3, DeMason's M382C problem set covers §4.2 Exercises 1, 2, 14 and 27 only, and the Stanford 215C sets cover §3.B and §3.3 exercises. Sam's argument is defective and is not transcribed: he uses the contractibility of the suspension $SX$, that is of the mapping *cylinder* $M_f$, whereas the exercise requires the mapping *cone* $C_f$ to be contractible, and the two are different spaces. The argument below is the card's own, from the cofiber sequence of a map (§4.2), Corollary 4.33, Example 2.38 and §4.2 Exercise 8, and it is $C_f=\Sigma X$ that is shown contractible.
 
 ::: pf
 
