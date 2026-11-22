@@ -9,7 +9,7 @@ title: "Complex analysis workshop week 2: Cauchy's integral formula and residues
 
 - [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors]]
 
-- Integrals over circles and other simple contours
+- [[complex-analysis/cauchy-theory/contours-and-primitives|Integrals over circles and other simple contours]]
 
 - [[complex-analysis/cauchy-theory/the-integral-formula|Cauchy's integral formula]]
 
@@ -29,7 +29,7 @@ $$
 
 ### Integrals and residues
 
-The function $f(z)=1/z$ has no primitive on $\CC\sm\theset{0}$: for the unit circle $C$ parametrized by $z(t)=e^{it}$, $0\le t\le2\pi$,
+The function $f(z)=1/z$ has no [[D-6RZQN|primitive]] on $\CC\sm\theset{0}$: for the unit circle $C$ parametrized by $z(t)=e^{it}$, $0\le t\le2\pi$,
 $$
 \int_C f(z)\dz=\int_0^{2\pi}\frac{ie^{it}}{e^{it}}\,dt=2\pi i\neq0.
 $$
@@ -39,7 +39,7 @@ $$
 
 ### Residues
 
-The contours used with the residue theorem include the keyhole, the multiple keyhole, the rectangular keyhole, the semicircle, the indented semicircle, the sector and the parallelogram [@SS03, ch. 2, Figure 7].
+The contours used with the residue theorem include the multiple keyhole, the rectangular keyhole, the semicircle, the indented semicircle, the sector and the parallelogram [@SS03, ch. 2, Figure 7].
 
 [[T-HRPNO]]
 
