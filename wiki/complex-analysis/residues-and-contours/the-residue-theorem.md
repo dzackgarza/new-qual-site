@@ -53,8 +53,7 @@ The circle $\abs z = 2$ would not do: it passes through the pole at $z = -2$.
 :::
 
 ::: {.remark title="Residues of $1$-forms"}
-The residue is an invariant of the $1$-form $f\dz$ rather than of the function $f$: if $z = \varphi(w)$ with $\varphi$ biholomorphic near $w_0$ and $\varphi(w_0)=p$, then $\Res_{w=w_0} f(\varphi(w))\varphi'(w) = \Res_{z=p} f(z)$, while $\Res_{w=w_0} f(\varphi(w))$ is in general different.
-
+The residue is an invariant of the $1$-form $f\dz$ rather than of the function $f$, including under a change of coordinate: [[T-WFXQP]].
 :::
 
 Real integrals are evaluated by writing them as limits of closed contour integrals; the contours are on [[complex-analysis/residues-and-contours/which-contour-do-i-close|Which contour do I close?]].
