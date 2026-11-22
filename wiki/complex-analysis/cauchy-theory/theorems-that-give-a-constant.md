@@ -70,7 +70,7 @@ If $f'\equiv0$ on a connected open set $\Omega$, then $f$ is constant [@SS03, ch
 
 By the [[T-HWBWI|little Picard theorem]], a nonconstant entire function omits at most one value of $\CC$.
 
-If an entire function $f$ omits every value in a disc $\DD_r(a)$, then $g\coloneqq 1/(f-a)$ is entire with $\abs g\leq 1/r$, so $g$, and hence $f$, is constant by Liouville's theorem.
+An entire function that omits every value in a disc $\DD_r(a)$ omits at least two values, so it is constant by [[T-HWBWI|the little Picard theorem]].
 [[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati--Weierstrass and Picard]] gives the corresponding statements near an essential singularity.
 
 ## Hypotheses
