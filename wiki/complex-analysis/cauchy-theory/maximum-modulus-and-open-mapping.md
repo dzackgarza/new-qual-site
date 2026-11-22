@@ -31,7 +31,7 @@ A nonconstant holomorphic function on a connected open set is an open map, and i
 
 [[T-YLI6Y]]
 
-The hypothesis that $f$ is nonvanishing is necessary, and $f(z) = z$ on $\DD$ is the witness: it is nonconstant, and $\abs f$ attains its minimum at the interior point $0$ ([[complex-analysis/counterexamples#The maximum and minimum modulus principles|Counterexamples]]).
+The hypothesis that $f$ is nonvanishing is necessary; the witness is on [[complex-analysis/counterexamples#The maximum and minimum modulus principles|Counterexamples]].
 
 ::: {.example title="$1/(2-z)$ on the disc, bounded from the boundary"}
 Let $f(z) = 1/(2-z)$ on $\DD$.
