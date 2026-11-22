@@ -39,8 +39,6 @@ The one-sided Laplace transform $\mcl(f)(p)=\int_0^\infty e^{-pt}f(t)\,dt$ of st
 
 [[PR-YQZI3]]
 
-The integral defines $\Gamma$ on the right half-plane $\Re z>0$, and the functional equation $\Gamma(z+1) = z\Gamma(z)$, written as $\Gamma(z) = \Gamma(z+n)/\qty{z(z+1)\cdots(z+n-1)}$, continues $\Gamma$ meromorphically to $\Re z > -n$ for each $n$ and locates its poles.
-
 ::: {.proposition title="Properties of the Gamma function"}
 The function $\Gamma$ has simple poles at $z=0,-1,-2,\ldots$ with residues $\Res_{z=-m}\Gamma(z) = (-1)^m/m!$, and no other poles.
 It has the product expansion
@@ -53,7 +51,7 @@ and satisfies the reflection formula
 $$
 \Gamma(z)\Gamma(1-z) = {\pi\over\sin(\pi z)},
 $$
-which together with the product expansion gives a product expansion of $\sin(\pi z)$ [@SS03, ch. 6, sec. 1].
+so $\sin(\pi z) = \pi/\bigl(\Gamma(z)\Gamma(1-z)\bigr)$ has the product expansion stated in [@SS03, ch. 5, §3.2].
 In terms of the Laplace transform $\mcl$, $\mcl(t^{z-1})(1) = \Gamma(z)$ for $\Re z>0$, and $\mcl(t^n)(1) = \Gamma(n+1) = n!$.
 
 By the reflection formula, $1/\Gamma(z) = \Gamma(1-z)\sin(\pi z)/\pi$ is entire, and its zeros are exactly the simple zeros at $z=0,-1,-2,\ldots$.
@@ -112,7 +110,7 @@ Let $z_j\in\CC$ with $z_j\neq -1$ for every $j$, and let $\Log$ be the principal
 
 - $\prod_{j=1}^\infty(1+z_j)$ converges absolutely, meaning that $\sum_{j=1}^\infty\abs{\Log(1+z_j)}$ converges, if and only if $\sum_{j=1}^\infty\abs{z_j}$ converges.
 
-The first is [@Ahl73, ch. 5, §2.2, Theorem 5], that $\prod(1+a_n)$ converges simultaneously with the series $\sum\log(1+a_n)$ whose terms are the principal values of the logarithm, which is the $\Log$ above. The second is the observation following that theorem in the same section, that the logarithmic series converges absolutely at the same time as the simpler series $\sum\abs{a_n}$.
+The first is [@Ahl73, ch. 5, §2.2, Theorem 5], that $\prod(1+a_n)$ converges simultaneously with the series $\sum\log(1+a_n)$ whose terms are the principal values of the logarithm, which is the $\Log$ above. The second is [@Ahl73, ch. 5, §2.2, Theorem 6], that the product converges absolutely if and only if $\sum\abs{a_n}$ converges.
 :::
 
 [[T-IEJFA]]
