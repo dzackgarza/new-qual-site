@@ -15,7 +15,7 @@ A scheme is reduced, or locally noetherian, exactly when the rings of one affine
 
 A scheme is integral exactly when it is reduced and irreducible [@Har77, Proposition II.3.1].
 A scheme is noetherian when it has a finite cover by spectra of noetherian rings.
-This is strictly stronger than the topological noetherian condition: $\sp(\Spec A)$ is a noetherian topological space when $A$ is noetherian, and can be noetherian when $A$ is not [@Har77, Exercise II.2.13] ([[PR-6TCSJ]]).
+This is strictly stronger than the topological noetherian condition: $\underlyingspace{\Spec A}$ is a noetherian topological space when $A$ is noetherian, and can be noetherian when $A$ is not [@Har77, Exercise II.2.13] ([[PR-6TCSJ]]).
 
 ## Generic points
 
