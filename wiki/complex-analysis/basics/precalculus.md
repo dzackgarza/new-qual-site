@@ -71,7 +71,7 @@ $$
 
 - For $a\in\CC\setminus\theset{0}$ and $c\in\RR$, the set $\theset{z \st \bar{a}z + a\bar{z} + c = 0}$ is a line, and every line has this form.
 
-The complex form of the ellipse is (16) of [@Ahl73, ch. 3, §4.2, A Survey of Elementary Mappings]: the section writes the image of $\abs w=\rho$ as $x=\frac12\qty{\rho+\rho^{-1}}\cos\theta$, $y=\frac12\qty{\rho-\rho^{-1}}\sin\theta$, which is this display with $t=\theta$, $p=\frac12\qty{\rho+\rho^{-1}}$ and $q=\frac12\qty{\rho-\rho^{-1}}$. The half-angle formulas in $u=\tan(t/2)$ are those of [[FF-2OHYV]], applied coordinatewise to the ellipse. The general line $\bar az+a\bar z+c=0$ with $a=\alpha+i\beta\neq0$ and $z=x+iy$ is the real linear equation $2(\alpha x-\beta y)+c=0$, whose solution set is a line because $(\alpha,\beta)\neq(0,0)$; conversely a line $\alpha x+\beta y+c/2=0$ is this equation with $a=\alpha+i\beta$.
+The complex form of the ellipse is (16) of [@Ahl73, ch. 3, §4.2, A Survey of Elementary Mappings]: the section writes the image of $\abs w=\rho$ as $x=\frac12\qty{\rho+\rho^{-1}}\cos\theta$, $y=\frac12\qty{\rho-\rho^{-1}}\sin\theta$, which is this display with $t=\theta$, $p=\frac{\rho}{2}$ and $q=\frac{1}{2\rho}$. The half-angle formulas in $u=\tan(t/2)$ are those of [[FF-2OHYV]], applied coordinatewise to the ellipse. The general line $\bar az+a\bar z+c=0$ with $a=\alpha+i\beta\neq0$ and $z=x+iy$ is the real linear equation $2(\alpha x+\beta y)+c=0$, whose solution set is a line because $(\alpha,\beta)\neq(0,0)$; conversely a line $\alpha x+\beta y+c/2=0$ is this equation with $a=\alpha+i\beta$.
 
 :::
 
@@ -80,7 +80,6 @@ The complex form of the ellipse is (16) of [@Ahl73, ch. 3, §4.2, A Survey of El
 ::: {.fact title="Numerical values"}
 $\sqrt{2} \approx 1.4142$, $1/\sqrt{2} \approx 0.7071$, $\sqrt{3} \approx 1.7321$, $1/\sqrt{3} \approx 0.5774$, $e\approx 2.7183$, $\pi \approx 3.14159$.
 
-These are decimal approximations of the named constants, recorded for arithmetic in worked problems; they carry no statement of a source, and no retained text prints them in this form.
 :::
 
 ::: {.fact title="Completing the square"}
