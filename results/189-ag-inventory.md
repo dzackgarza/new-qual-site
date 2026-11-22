@@ -480,8 +480,16 @@ on such a page is a verdict on its prose and its internal consistency.
 3. **Godement, Chapitre II, Théorème 4.4.3 and 4.6.2** — `cohomology/derived-functors-and-vanishing.md:47,49`. No text.
 4. **`divisors/weil-and-cartier.md:34`** — the Picard sequence is right, the cited number (Ex IV.1.8) is wrong, and the
    right number is not located in the retained Hartshorne text. Recorded as owed, not replaced.
-5. **The ~310 transcluded cards not read** (§1). The pages leaning on them are marked in §8; what this record decides
-   about those pages is their prose, not their transclusions.
+5. **The transcluded cards this session did not open.** Named, because a count is not a list: `T-5IOUR` (the qcqs
+   variant of Serre's criterion; the noetherian form, Theorem III.3.7, was read), `T-SRFZMT`, `T-SRFCAST`,
+   `FE-SRFFERMATQUARTIC`, `T-TORDIV`, `PR-TORMOR`, `T-FULBETTI`, `T-TORCOHOM`, `D-TORMOMENT`, `D-FULSTAR`, `PR-O8V3I`,
+   `PR-FULCRIT`, `PR-FULKSQ`, `D-CRVBRILLNOETHER`, `D-8XX95`, `D-L6ERW`, `D-VARBIRAT`, `T-BIRINV`, `T-CRVMINMOD`,
+   `D-SHFSIX`, `D-SCHCMGOR`, `T-EFRAPL`/`T-DEFRAPL`, `D-MODAMPLE`, `D-2049GP`, and the remaining ~285. The third
+   version's §5 records ten of these as read in *that* session (`D-SHFSIX`, `D-SCHCMGOR`, `D-VARBIRAT`, `T-CRVMINMOD`,
+   `T-BIRINV`, `FE-TORCD`, `T-TORSURF`, `D-FULSAT`, `PR-TORMOR`, `T-FULBETTI`, `D-TORMOMENT`, `T-TORCOHOM`,
+   `D-FULSTAR`, `PR-O8V3I`, `D-TORREFL`, `PR-FULCRIT`, `PR-FULKSQ`); those readings are **carried here, not re-verified**,
+   and the verdicts in §2 that rest on them inherit that status. What this session re-read in full is the ten cards of
+   §1.
 6. **`syllabus.md:37`'s Berkeley document** — not fetched.
 7. **Mori's existence theorem** for crepant resolutions of terminal Gorenstein threefolds — no retained text, and the
    verdicts here do not use it: §0 item 1 rests on CLS Proposition 11.4.12 and Examples 11.4.13 with `FE-207WC`.
