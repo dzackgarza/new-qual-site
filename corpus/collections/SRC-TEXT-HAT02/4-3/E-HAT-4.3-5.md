@@ -125,6 +125,12 @@ audit:
     killed by attaching $(n+2)$-cells, so the induction must start at $m=n+1$. The step now starts
     there, records the counterexample, and keeps the conclusion: no cells of dimension $\le n+1$ are
     ever attached, so the $(n+1)$-skeleton stays $S^n$ and the result is a $K(\ZZ,n)$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    The representability citation is made precise: the step now names Theorem 4.57 rather than "the
+    representability theorem of §4.3".
 ---
 
 ::: {.problem}
@@ -180,7 +186,7 @@ Surjective by step [](#surj){.pf-ref} and injective by step [](#inj){.pf-ref}; a
 $[X,K(\ZZ,n)]\cong H^n(X;\ZZ)$ for a CW complex $X$ and $n\ge1$.
 
 ::: pf-proof
-Eilenberg--MacLane spaces represent cohomology: $[f]\mapsto f^*\iota$ is a natural bijection $[X,K(\ZZ,n)]\to H^n(X;\ZZ)$, where $\iota\in H^n(K(\ZZ,n);\ZZ)$ is the fundamental class; this is the representability theorem of §4.3.
+Eilenberg--MacLane spaces represent cohomology: $[f]\mapsto f^*\iota$ is a natural bijection $[X,K(\ZZ,n)]\to H^n(X;\ZZ)$, where $\iota\in H^n(K(\ZZ,n);\ZZ)$ is the fundamental class; this is Theorem 4.57.
 :::
 
 :::
