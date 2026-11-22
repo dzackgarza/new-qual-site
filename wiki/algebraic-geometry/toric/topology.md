@@ -33,7 +33,7 @@ Completeness is the other lattice condition on the fan, with the valuative readi
 
 ## Euler characteristic
 
-Over $\CC$ the Euler characteristic is the number of maximal cones, because every orbit of positive dimension is a torus and contributes zero, while a fixed point contributes one.
+For an $n$-dimensional toric variety over $\CC$ the topological Euler characteristic is the number of $n$-dimensional cones, because an orbit of positive dimension is a torus and contributes zero, while a fixed point contributes one ([[T-FULBETTI]], [[PR-TORMOR]]).
 For $\PP^n$ that is $n+1$, for $\PP^1\times\PP^1$ it is $4$, and for the Hirzebruch surface $\FF_a$ it is $4$ for every $a$, so the Euler characteristic does not separate the surfaces $\FF_a$ ([[FE-TORHIRZ]]).
 
 ## Betti numbers
