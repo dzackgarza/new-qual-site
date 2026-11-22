@@ -36,3 +36,7 @@ Now let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces and let $\mcf$ be a family of
 For a metric space $X$ and $Y=\CC$, the two definitions of equicontinuity at $x_0$ agree, since the balls about $x_0$ form a neighborhood base.
 In equicontinuity at $x_0$ the number $\delta$ depends on $\varepsilon$ and $x_0$ but not on $f\in\mcf$; in uniform equicontinuity one $\delta$ depending only on $\varepsilon$ serves every $f\in\mcf$ and every pair of points of $X$.
 :::
+
+::: {.remark title="Negation of uniform equicontinuity"}
+A family $\mathcal F$ of functions on a metric space $X$ is not uniformly equicontinuous if and only if there exist $\varepsilon>0$, points $x_k, y_k\in X$ and functions $f_k\in\mathcal F$ with $d_X(x_k,y_k)\to0$ and $d_Y(f_k(x_k),f_k(y_k))\geq\varepsilon$ for all $k$: negating the definition gives such a pair of sequences at $\delta=1/k$, and conversely a pair of sequences with $d_X(x_k,y_k)<1/k$ refutes every $\delta$.
+:::
