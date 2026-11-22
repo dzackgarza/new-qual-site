@@ -86,6 +86,18 @@ audit:
     $x_1^{a_1}\cdots x_n^{a_n}$ with $0\le a_i\le n-i$, $n!$ of them — cites it rather than
     reproving it, and records the counterexample to the reduction argument it replaces. The Poincaré
     polynomial and the rank $n!$ follow from the basis as before.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    The ring-theoretic inputs are stated for what they are, from a referee report. The step now names
+    the two standard facts it uses — the integral fundamental theorem of symmetric polynomials, that
+    $\ZZ[x_1,\dots,x_n]$ is free over $\ZZ[\sigma_1,\dots,\sigma_n]$ of rank $n!$, with the
+    algebraic-independence, integrality and Galois-rank ingredients; and the identification of the
+    quotient with the coinvariant ring and its standard monomial basis — and records that no retained
+    source gives a numbered statement of either. The projective-space computation used for the fibre
+    is cited in §3.2 and the H*(U(n)) statement Corollary 4D.3 is no longer cited anywhere in the live
+    text.
 ---
 
 ::: {.problem}
@@ -130,7 +142,7 @@ Taking the first line of a flag gives a fiber bundle $F_{n-1}(\C^{n-1})\to F_n(\
 $\ZZ[x_1,\dots,x_n]/(\sigma_1,\dots,\sigma_n)$ is free abelian with basis $x_1^{a_1}\cdots x_n^{a_n}$, $0\le a_i\le n-i$, hence with the same Poincaré polynomial and total rank $n!$.
 
 ::: pf-proof
-The quotient is the coinvariant ring of the symmetric group acting on $\ZZ[x_1,\dots,x_n]$ by permuting the variables, and its standard monomial basis is the set of $x_1^{a_1}\cdots x_n^{a_n}$ with $0\le a_i\le n-i$, of which there are $n!$; that is the Artin basis theorem for coinvariant rings, and it is cited here rather than reproved — no source for it is retained on this machine, so it is named by author and result and not by a numbered statement. A triangular reduction by the $\sigma$'s is not available: for $n=2$ one has $\sigma_2\equiv -x_2^2$ modulo $\sigma_1$, so the elementary symmetric functions are not a Gröbner basis in any variable order, and the basis statement is genuinely a theorem about the quotient. Given it, the monomials in degree $2d$ give the polynomial $\prod_{j=1}^n(1+t^2+\cdots+t^{2(j-1)})$, and its value at $t=1$ is $\prod_{j=1}^n j=n!$.
+Two standard facts are used, and neither is proved here because no retained source gives a numbered statement of them. The first is the integral fundamental theorem of symmetric polynomials: $\ZZ[x_1,\dots,x_n]$ is free over $\ZZ[\sigma_1,\dots,\sigma_n]$ of rank $n!$. It follows from algebraic independence of the $\sigma_k$, from integrality — each $x_i$ satisfies the monic equation $\prod_j(t-x_j)=\sum_k(-1)^k\sigma_kt^{n-k}$ — and from the rank being $n!$ over $\QQ$, where the extension is Galois with group $S_n$. The second is the identification of the quotient by $(\sigma_1,\dots,\sigma_n)$ with the coinvariant ring of $S_n$, whose standard monomial basis is the set of $x_1^{a_1}\cdots x_n^{a_n}$ with $0\le a_i\le n-i$, again $n!$ in number; this is the statement sometimes named for Artin, and it is what the Poincaré-polynomial comparison below uses. A triangular reduction by the $\sigma$'s is not available: for $n=2$ one has $\sigma_2\equiv -x_2^2$ modulo $\sigma_1$, so the elementary symmetric functions are not a Gröbner basis in any variable order, and the basis statement is genuinely a theorem about the quotient. Given it, the monomials in degree $2d$ give the polynomial $\prod_{j=1}^n(1+t^2+\cdots+t^{2(j-1)})$, and its value at $t=1$ is $\prod_{j=1}^n j=n!$.
 :::
 
 :::
