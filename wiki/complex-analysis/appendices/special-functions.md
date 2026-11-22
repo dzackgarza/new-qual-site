@@ -80,22 +80,11 @@ The continuation extends $\zeta$ meromorphically to $\CC$, and the functional eq
 
 [[D-LGP2Q]]
 
-::: {.remark}
-The series defining $\wp$ converges uniformly on compact subsets of $\CC\setminus\Lambda$, so it can be differentiated term by term:
-$$
-\wp'(z) = -2\sum_{\omega\in\Lambda}{1\over (z-\omega)^3}.
-$$
-This series is invariant under $z\mapsto z+\omega$ for $\omega\in\Lambda$, since it permutes the terms.
-So $z\mapsto \wp(z+\omega)-\wp(z)$ has vanishing derivative and is a constant $c(\omega)$, and $c$ is additive on $\Lambda$: $c(\omega+\omega') = c(\omega)+c(\omega')$.
-$\wp$ is even — the sum defining it pairs the term of $\omega$ with the term of $-\omega$ — so for $\omega\in\Lambda$ with $\omega/2\notin\Lambda$, evaluating at $z = -\omega/2$ gives $c(\omega) = \wp(\omega/2)-\wp(-\omega/2) = 0$.
-Each element of a lattice basis has $\omega_i/2\notin\Lambda$, so additivity gives $c\equiv0$ on $\Lambda$.
-Hence $\wp$ is doubly periodic, and so are all its derivatives.
-:::
+[[T-WPELL]]
 
 ## Elliptic functions
 
 Recall that for a lattice $\Lambda=\omega_1\ZZ+\omega_2\ZZ$ with $\omega_1/\omega_2\notin\RR$, an [[D-CRVWEIER|elliptic function]] is a meromorphic function $f$ on $\CC$ with $f(z+\omega)=f(z)$ for every $\omega\in\Lambda$.
-The Weierstrass $\wp$-function is elliptic, with a double pole at each lattice point and no other poles.
 
 [[E-4NGIV]]
 
