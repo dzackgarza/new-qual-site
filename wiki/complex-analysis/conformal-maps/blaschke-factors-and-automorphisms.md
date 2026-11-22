@@ -30,7 +30,6 @@ It is its own inverse — $\psi_{1/2}\!\left(\psi_{1/2}(z)\right) = z$, checked 
 So $\abs{\psi_{1/2}}\leq 1$ on $\DD$ with equality only on $S^1$, which is [[T-BYNL5|the maximum modulus principle]] for a function that is not constant.
 The automorphism of $\DD$ carrying $i/2$ to $0$ is $\psi_{i/2}(z) = \dfrac{i/2-z}{1+iz/2}$; at $z = 0.3+0.1i$ it takes the value $-0.2432\ldots+0.4595\ldots i$, of modulus $0.5199\ldots$
 Composing the two, $\psi_{i/2}\circ\psi_{1/2}$ carries $1/2$ to $i/2$, since $\psi_{1/2}(1/2) = 0$ and $\psi_{i/2}(0) = i/2$.
-That every automorphism of $\DD$ is such a factor followed by a rotation is [@SS03, Theorem 2.2 of Chapter 8].
 :::
 
 ## The automorphism group of the disc
