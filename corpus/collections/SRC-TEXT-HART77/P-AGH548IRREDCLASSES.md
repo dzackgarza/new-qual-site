@@ -578,6 +578,37 @@ audit:
     1.9.1, which is about the signature and states no inequality, and no
     printing of the book. The card's own parts and the characteristic-free
     claim are unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    The open item recorded for this card is closed, and its being open is
+    recorded here first. As the card stood at 081eb8789f, line 774 read
+    "writing D ~ a l - sum_ib_ie_i as in Proposition 4.8", and that notation is
+    used from step negative-square-is-a-line on: the proof presupposed that X,
+    a smooth cubic surface over an algebraically closed field of
+    characteristic p, is the blowup of P^2 at six points, which is what
+    Notation V.4.7.3 and Proposition V.4.8 assume and what their numbers do
+    not supply for an arbitrary smooth cubic surface. The characteristic claim
+    of the card therefore rested on an unproved identification, and that is now
+    a step of the proof, geometric-marking, placed first. It cites Dolgachev
+    and Duncan, Automorphisms of cubic surfaces in positive characteristic
+    (2017), §2, over an algebraically closed field of arbitrary characteristic:
+    27 lines, each an exceptional curve of the first kind; a smooth cubic
+    surface obtained by blowing up six points of P^2 in general position;
+    conversely six mutually skew lines blown down to six points, a geometric
+    marking; the remaining 21 lines as the strict transforms of the 15 lines
+    and 6 conics. Each blowdown is the contraction of a curve isomorphic to P^1
+    of self-intersection -1, which exists by Castelnuovo's criterion, Theorem
+    V.5.7. Read for this: Dolgachev--Duncan §2 in
+    tmp/sources/dolgachev-duncan-2017-automorphisms-cubic-surfaces-char-p.md,
+    and Theorem V.5.7 with its preamble in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md. No other step changed
+    and no claim was weakened: the proof now applies to a smooth cubic surface
+    in every characteristic, which before this step it did only under an
+    assumption. Not read: any printing of either work, only the text versions
+    in tmp/sources; and Dolgachev--Duncan's own proof of the 27-line count,
+    which §2 states without proof.
 - event: source-checked
   by: claude
   date: 2026-11-22
@@ -630,6 +661,15 @@ Write $X$ for the cubic surface, so that $-K_X=H$ is the hyperplane class, and l
 algebraically closed.
 
 ::: pf
+
+::: {.pf-step #geometric-marking}
+$X$ admits a geometric marking: six mutually skew lines whose blowdown is a morphism $\pi\colon X\to\PP^2$ making $X$ the blowup of $\PP^2$ at six points, no three collinear and not all six on a conic. With it, every divisor class is written $D\sim a\ell-\sum_ib_ie_i$, and the intersection numbers used below are those of Proposition 4.8.
+
+::: pf-proof
+This is the one place the description of $X$ as a blowup is used, and it holds in every characteristic, $k$ being algebraically closed. D. I. Dolgachev and A. Duncan, *Automorphisms of cubic surfaces in positive characteristic* (2017), §2, state over an algebraically closed field of arbitrary characteristic that a nonsingular cubic surface contains exactly 27 lines and that each is an exceptional curve of the first kind, that a smooth cubic surface is obtained by blowing up six points of $\PP^2$ in general position, no three collinear and not all six on a conic, and conversely that six mutually skew lines on $X$ may be blown down to six points of $\PP^2$, which they call a geometric marking of $X$; the remaining 21 lines are then the strict transforms of the 15 lines through pairs of the six points and of the 6 conics through five of them, which is the list of Theorem V.4.9 in the blowup model. Each of the six blowdowns is the contraction of a curve isomorphic to $\PP^1$ of self-intersection $-1$, and exists by Castelnuovo's criterion, Theorem V.5.7. After the marking $\Pic X$ is free on $\ell,e_1,\ldots,e_6$ with the intersection numbers of Proposition V.4.8(a) and (b): that proposition and Notation V.4.7.3 phrase these for the surface obtained by blowing up the six points, and the marking is an isomorphism from $X$ to that surface, so the classes and their pairings carry over.
+:::
+
+:::
 
 ::: {.pf-step #negative-square-is-a-line}
 If $D$ contains an irreducible curve $C$ with $C^2<0$, then $C$ is one of the $27$ lines, so $D$ is
