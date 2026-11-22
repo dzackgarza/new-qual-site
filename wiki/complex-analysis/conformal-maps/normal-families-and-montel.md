@@ -19,10 +19,6 @@ In the proof of the [[complex-analysis/conformal-maps/the-riemann-mapping-theore
 
 [[FF-XZGIY]]
 
-::: {.remark title="Negation of uniform equicontinuity"}
-A family $\mathcal F$ of functions on a metric space $X$ is not uniformly equicontinuous if and only if there exist $\varepsilon>0$, points $x_k, y_k\in X$, and $f_k\in \mathcal F$ with $\abs{x_k-y_k}\to 0$ and $\abs{f_k(x_k) - f_k(y_k)} \geq \varepsilon$ for all $k$.
-:::
-
 ## Normal families
 
 [[D-QTJ7T]]
