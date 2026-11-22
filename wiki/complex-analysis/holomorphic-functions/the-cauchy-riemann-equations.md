@@ -20,8 +20,6 @@ The [[PR-37QA5|Cauchy--Riemann equations]] are the real form of complex differen
 
 ## Polar form
 
-[[E-SS1.EX-9]]
-
 ::: {.proposition}
 Let $f=u+iv$ be real differentiable on an open set and write $z=re^{i\theta}$ with $r>0$.
 Then $f$ satisfies the Cauchy--Riemann equations at $z$ if and only if
@@ -32,6 +30,8 @@ $$
 $$
 This is the computation of [@SS03, ch. 1, Exercise 9].
 :::
+
+[[E-SS1.EX-9]]
 
 ## Wirtinger derivatives
 
