@@ -9,8 +9,6 @@ topics:
 
 # The Schwarz lemma
 
-A holomorphic self-map of the disc that fixes the origin is a contraction in the Euclidean metric, and the maps for which the contraction is an isometry are exactly the rotations.
-
 [[T-DAETF]]
 
 [[FF-5H4UZ]]
@@ -22,10 +20,10 @@ For holomorphic $f\colon\DD\to\DD$ and $z\in\DD$,
 $$
 \frac{\abs{f'(z)}}{1-\abs{f(z)}^2}\leq\frac{1}{1-\abs z^2},
 $$
-by the Schwarz lemma applied to $\psi_{f(z)}\circ f\circ\psi_z^{-1}$, which fixes $0$; equivalently $f$ does not increase [[D-2HXLN|hyperbolic distance]].
+equivalently $f$ does not increase [[D-2HXLN|hyperbolic distance]].
 Equality for one $z$ forces $f$ to be an automorphism of $\DD$, and then $f$ is a [[D-MFPYG|Blaschke factor]] followed by a rotation ([[T-W26VL]]).
 
-This is [@SS03, ch. 8, Exercise 13(b)], where the inequality is proved by the hint of part (a): apply the Schwarz lemma to $\psi_{f(w)}\circ f\circ\psi_w^{-1}$, which maps the disc to itself and fixes $0$. The pseudo-hyperbolic form $\rho(f(z),f(w))\le\rho(z,w)$ is part (a) of the same exercise.
+This is [@SS03, ch. 8, Exercise 13(b)], and the pseudo-hyperbolic form $\rho(f(z),f(w))\le\rho(z,w)$ is part (a) of the same exercise.
 :::
 
 ::: {.example title="The hypothesis $f(0)=0$ cannot be dropped"}
