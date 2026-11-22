@@ -21,4 +21,4 @@ Egorov's theorem needs its finite-measure hypothesis: [[real-analysis/measure/li
 
 [[T-CGFCU]]
 
-Both theorems express one of [[real-analysis/measure/littlewoods-principles|Littlewood's three principles]]: a measurable set is nearly a finite union of intervals (of boxes, when $d>1$), a measurable function is nearly continuous ([[T-CGFCU]]), and an almost everywhere convergent sequence on a set of finite measure is nearly uniformly convergent ([[FT-OGS76]]).
+Both theorems express one of [[real-analysis/measure/littlewoods-principles|Littlewood's three principles]]: a measurable set of finite measure is nearly a finite union of intervals (of boxes, when $d>1$), a measurable function is nearly continuous ([[T-CGFCU]]), and an almost everywhere convergent sequence on a set of finite measure is nearly uniformly convergent ([[FT-OGS76]]).
