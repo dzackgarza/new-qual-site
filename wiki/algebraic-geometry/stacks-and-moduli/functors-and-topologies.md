@@ -17,7 +17,7 @@ A scheme is studied through the functor it represents on test schemes, and once 
 
 [[D-OPENSUBFUNCTOR]]
 
-A morphism $X\to Y$ of schemes is an isomorphism exactly when the induced natural transformation of functors $\mathrm{Hom}(-,X)\to\mathrm{Hom}(-,Y)$ is an isomorphism on every test scheme, by the Yoneda lemma applied to the restricted functor of points on affine schemes ([[PR-SCHFOP]], [[FE-SCHREPFUNCTORS]]).
+A morphism $X\to Y$ of schemes is an isomorphism exactly when the induced natural transformation of functors $\Hom(-,X)\to\Hom(-,Y)$ is an isomorphism on every test scheme, by the Yoneda lemma applied to the restricted functor of points on affine schemes ([[PR-SCHFOP]], [[FE-SCHREPFUNCTORS]]).
 
 ## Grothendieck topologies
 
