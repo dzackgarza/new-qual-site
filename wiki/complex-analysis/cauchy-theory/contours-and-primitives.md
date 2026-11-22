@@ -33,12 +33,7 @@ For a curve that bounds a positively oriented region, Green's theorem converts t
 
 [[D-PJ7JM]]
 
-The winding number measures this failure.
-On $\CC\sm\theset{a}$ the function $\inverseof{(z-a)}$ has no primitive, since
-$$
-\int_\gamma{\dz\over z-a} = 2\pi i\,n(\gamma,a)
-$$
-for a closed curve $\gamma$ avoiding $a$, and the right-hand side is not always zero.
+The winding number measures this failure: on $\CC\sm\theset{a}$ the function $\inverseof{(z-a)}$ has no primitive, and its integral over a closed curve is $2\pi i$ times the [[D-PJ7JM|winding number]] of the curve about $a$ ([[D-6RZQN]]).
 
 ## Problems
 
