@@ -124,10 +124,10 @@ If $f$ and $g$ are holomorphic on a domain $U$ and $f-g$ has a zero set with a l
 ::: {.fact title="Classifying an isolated singularity"}
 Let $f$ be holomorphic on a punctured disc about $z_0$.
 
-- $z_0$ is removable if and only if $f$ is bounded near $z_0$.
-- $z_0$ is a pole if and only if $\abs{f(z)}\to\infty$ as $z\to z_0$.
-- $z_0$ is a pole of order $m$ if and only if $f(z) = (z-z_0)^{-m}g(z)$ with $g$ holomorphic near $z_0$ and $g(z_0)\neq 0$, equivalently if $1/f$ has a zero of order $m$ at $z_0$, equivalently if the Laurent expansion at $z_0$ has lowest term of degree $-m$.
-- $z_0$ is essential if and only if $\lim_{z\to z_0} f(z)$ exists neither in $\CC$ nor as $\infty$, equivalently if the Laurent expansion at $z_0$ has infinitely many terms of negative degree.
+- $z_0$ is [[D-BQLJV|removable]] if and only if $f$ is bounded near $z_0$.
+- $z_0$ is a [[D-AUD6K|pole]] if and only if $\abs{f(z)}\to\infty$ as $z\to z_0$.
+- $z_0$ is a [[D-AUD6K|pole of order $m$]] if and only if $f(z) = (z-z_0)^{-m}g(z)$ with $g$ holomorphic near $z_0$ and $g(z_0)\neq 0$, equivalently if $1/f$ has a zero of order $m$ at $z_0$, equivalently if the Laurent expansion at $z_0$ has lowest term of degree $-m$.
+- $z_0$ is [[D-VKP6N|essential]] if and only if $\lim_{z\to z_0} f(z)$ exists neither in $\CC$ nor as $\infty$, equivalently if the Laurent expansion at $z_0$ has infinitely many terms of negative degree.
   Two sequences $z_k\to z_0$ along which $f$ has different limits show this.
 
 A meromorphic function $f$ and its derivative $f'$ have the same poles, and at such a pole the order of $f'$ is one more than the order of $f$.
@@ -137,7 +137,6 @@ The three classifications are [@Ahl73, ch. 4, §3.1, Removable Singularities. Ta
 
 ::: {.fact}
 If $h$ has an essential singularity at $z_0$, then by the [[T-DDOWW|great Picard theorem]], in every punctured neighborhood of $z_0$, $h$ takes every value of $\CC$ infinitely often with at most one exception.
-With $h \coloneqq f/g$, this shows $f(z) = cg(z)$ for infinitely many $z$ near $z_0$, for all but at most one $c\in\CC$.
 
 :::
 
@@ -166,7 +165,7 @@ $$
 - [[T-LA2UI|The Cauchy integral formula]] bounds derivatives of $f$ by the maximum of $\abs f$ on a circle, and bounds $\abs{f}$ at interior points by an integral of $\abs f$ over a curve.
 - If $u_n$ are harmonic on a bounded domain $U$, continuous on $\bar U$, and $u_n$ converges uniformly on $\bd U$, then $u_n$ converges uniformly on $\bar U$, by the maximum principle applied to $u_n - u_m$.
 - For $f\colon[a,b]\to\RR$ differentiable with $\abs{f'} \leq M$, the mean value theorem gives $\abs{f(x) - f(y)} \leq M\abs{x-y}$.
-- If $h$ is holomorphic on $\DD$ with $\abs h\leq 1$ and $h(0) = 0$, then $\abs{h(z)}\leq\abs z$ by the [[complex-analysis/conformal-maps/the-schwarz-lemma|Schwarz lemma]]; applied to $h \coloneqq f/g$ this gives $\abs{f(z)}\leq\abs{z}\abs{g(z)}$.
+- If $h$ is holomorphic on $\DD$ with $\abs h\leq 1$ and $h(0) = 0$, then $\abs{h(z)}\leq\abs z$ by the [[complex-analysis/conformal-maps/the-schwarz-lemma|Schwarz lemma]].
 
 The first inequality is the reverse triangle inequality of [@Ahl73, ch. 1, §1.5, Inequalities]; the third is the maximum principle applied to the harmonic difference, [@Ahl73, ch. 4, §6, Theorem 23]; the fourth is the mean value theorem, [@Rud76, ch. 5, Theorem 5.10], applied to each coordinate of $f$.
 :::
