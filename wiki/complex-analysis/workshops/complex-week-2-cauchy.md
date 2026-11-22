@@ -53,6 +53,8 @@ with $G$ holomorphic near $z_0$ [@SS03, Theorem 1.3 of Chapter 3], the sum of th
 
 [[C-Q6BSL]]
 
+[[D-Q8XRV]]
+
 [[T-WFXQP]]
 
 ### Bounds

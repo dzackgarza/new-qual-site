@@ -47,6 +47,8 @@ Since $e^{1/z} = \sum_{k\geq 0} z^{-k}/k!$ for $z\neq 0$, the coefficient of $\i
 
 ## The residue at infinity
 
+[[D-Q8XRV]]
+
 [[T-WFXQP]]
 
 ::: {.example title="The residues of $z/(1+z^2)$ add to zero"}

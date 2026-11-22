@@ -103,6 +103,8 @@ See [[complex-analysis/singularities/index|Singularities]].
 
 [[T-SSNLT]]
 
+[[D-Q8XRV]]
+
 [[T-WFXQP]]
 
 See [[complex-analysis/residues-and-contours/index|Residues and contours]]. Evaluated integrals are on [[complex-analysis/standard-integrals|Standard integrals]].
