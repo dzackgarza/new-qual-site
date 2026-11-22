@@ -56,11 +56,16 @@ audit:
     The statement block carried the locator "printed page = PDF page - 9" and the name of the file the
     exercise was read in. Both are removed: the exercise is cited as §4.2 Exercise 35, and the wording
     is otherwise untouched. No mathematics changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 35. The problem block carried a non-printed preamble ("This is
+    Hatcher, ... the statement below is its wording"), which is removed, so the block is the printed
+    statement alone. The proof reads correct and no retained set covers the exercise.
 ---
 
 ::: {.problem}
-This is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 35; the statement below is its wording.
-
 Show that the fiber bundle $S^3 \to S^{4n+3} \to \quatprojective^n$ gives rise to a quotient fiber bundle $S^2 \to \CP^{2n+1} \to \quatprojective^n$ by factoring out the action of $S^1$ on $S^{4n+3}$ by complex scalar multiplication.
 :::
 
