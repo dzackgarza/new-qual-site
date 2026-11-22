@@ -9,7 +9,7 @@ topics:
 
 # What is a scheme
 
-A scheme is a locally ringed space covered by open subspaces isomorphic to spectra of rings, so a scheme is assembled from affine pieces and carries both a topological space and a sheaf of rings on it ([[D-AN662]]).
+Recall that a [[D-AN662|scheme]] is a locally ringed space covered by open subspaces isomorphic to spectra of rings, so a scheme is assembled from affine pieces and carries both a topological space and a sheaf of rings on it.
 Three clauses of that sentence carry the weight, and each answers a question that the cheaper alternative gets wrong.
 The points of the affine model are the prime ideals rather than the maximal ones, because the points that are not maximal are where a rational function has a value.
 The sheaf is a sheaf of rings rather than a sheaf of functions to a fixed field, because the field a function takes values in depends on the point it is evaluated at.
@@ -33,14 +33,15 @@ For $A=k[\varepsilon]/(\varepsilon^2)$ the class of $\varepsilon$ is a nonzero e
 The cover clause is where relative notions enter.
 An affine scheme is the case of a one-element cover, and every property a morphism is asked to have — of finite type, finite, reduced, of dimension $n$ — is asserted on the members of an affine open cover and has to be independent of which cover was chosen.
 
-A morphism of schemes consists of a continuous map $f$ and a map of sheaves of rings $f^\sharp\colon\OO_Y\to f_*\OO_X$ whose induced maps on stalks $f^\sharp_p\colon\OO_{Y,f(p)}\to\OO_{X,p}$ are local: the preimage of the maximal ideal $\mfm_p$ of the target is the maximal ideal $\mfm_{f(p)}$ of the source ([[D-AN662]]).
+Recall that a [[D-AN662|morphism of schemes]] is a morphism of locally ringed spaces: a continuous $f$ with $f^\sharp\colon\OO_Y\to f_*\OO_X$ whose induced maps on stalks $f^\sharp_p\colon\OO_{Y,f(p)}\to\OO_{X,p}$ are local.
 Locality is exactly what makes the two directions agree on affine schemes: for rings $A$ and $B$, every morphism of locally ringed spaces $\Spec B\to\Spec A$ is induced by a unique ring homomorphism $A\to B$, so that $\Spec$ is an anti-equivalence [@Har77, Proposition II.2.3].
 
-Dropping the condition breaks that correspondence.
+::: {.example title="Dropping locality breaks the affine correspondence"}
 Let $R$ be a discrete valuation ring with fraction field $K$, closed point $\mfm$, and generic point $\eta$.
 Send the single point of $\Spec K$ to $\mfm$ and take $f^\sharp$ to be the inclusion $R\injects K$ on the open set $\Spec R$, and the zero map on the open set $\theset{\eta}$, whose preimage is empty.
 This is a morphism of ringed spaces, and its map on stalks is the inclusion $R\injects K$, which sends a uniformizer to a unit and so is not local.
-No morphism of schemes does this, because the only candidate ring map $R\to K$ is the inclusion and $\Spec$ of the inclusion sends the closed point of $\Spec K$ to the generic point $\eta$ [@Har77, Example II.3.2].
+No morphism of schemes does this, because the only candidate ring map $R\to K$ is the inclusion and $\Spec$ of the inclusion sends the closed point of $\Spec K$ to the generic point $\eta$ [@Har77, Example II.2.3.2].
+:::
 
 ## The affine dictionary
 
