@@ -35,6 +35,13 @@ audit:
     commutativity, so the ring is $\Lambda(a)\otimes\ZZ_p[b]$; for $p=2$, $a^2\ne0$ and the
     Bockstein is $Sq^1$, which on a degree-one class is the square, so $b=a^2$ and the ring is
     $\ZZ_2[a]$. Nothing changed. Not claimed: a published solution, and no certificate.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.D Exercise 2. A provenance record is added, the card having carried
+    none: no retained solution set covers the exercise. The proof reads correct; the one unjustified
+    sentence, "$\beta(a)=b$", is recorded in the audit and is not used by the argument.
 ---
 
 ::: {.problem}
@@ -42,6 +49,8 @@ Apply the Leray–Hirsch theorem to the bundle $S^1 \to S^\infty/\ZZ_p \to \CP^\
 :::
 
 ::: {.solution}
+No retained solution set covers this exercise: Sam's set ends at §4.3, Koukpari's §4.D heading carries no solutions, and Proudfoot's sheets are §4.1 and §4.2. The argument is the card's own.
+
 Consider
 $$
 S^1\longrightarrow S^\infty/\ZZ_p\xrightarrow{q}\CP^\infty.
