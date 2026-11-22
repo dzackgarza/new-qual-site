@@ -9,7 +9,7 @@ topics:
 
 # SL2(R) and modular forms
 
-The group $\SL_2(\RR)$ acts on the upper half plane by Möbius transformations, and the functions that transform under the subgroup $\SL_2(\ZZ)$ by the factor $\SL_2$ prescribes are the modular forms; the quotient $\SL_2(\ZZ)\backslash\HH$ is the moduli space of lattices up to scale.
+The group $\SL_2(\RR)$ acts on the upper half plane by Möbius transformations, and the functions on $\HH$ that transform under the subgroup $\SL_2(\ZZ)$ by the factor of automorphy $(cz+d)^k$ are the [[D-7PTGC|modular forms]]; the quotient $\SL_2(\ZZ)\backslash\HH$ is the moduli space of lattices up to scale.
 
 [[T-VGDFW]]
 
