@@ -24,7 +24,7 @@ The following are equivalent.
 
 (iii) There is $z_0\in\Omega$ with $f^{(n)}(z_0)=0$ for all $n\geq0$.
 
-Condition (ii) is the form usually called the identity theorem [@SS03, Theorem 4.8 (p. 52)].
+Condition (ii) is the form usually called the identity theorem [@SS03, ch. 2, Theorem 4.8].
 :::
 
 ::: {.corollary}
