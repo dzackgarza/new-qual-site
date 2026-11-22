@@ -373,6 +373,31 @@ audit:
     stand, and the application at n = 3 is the paper's degree 3, which is the
     card's n = 2 for the twisted cubic. Not checked: the printed journal, only
     the retained PDF.
+- event: source-checked
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Published-solution pass for issue #160, on the transcription rule. Part (b)
+    in characteristics 2 and 3 is proved by no retained solution set, and the
+    "Published solution" remark now says so and names the sets searched. Read
+    in this pass, at their own numbering: the printed Exercise V.2.17, both
+    parts, with the printed answer "if char k != 2, then l = m = -7; if
+    char k = 2, then l, m = -6, -8"; Yang Pi-Yeh, Solution 5.2.17, whose
+    Jacobian presentation gives kernel R(-7) + R(-7) when 6 != 0 and
+    R(-8) + R(-6) when char k = 2, 3, so it settles every characteristic but 2
+    and 3; Egbert's entry for Exercise V.2.17, which reads only "starred"; the
+    exercise list of the National Taiwan University Chapter V §2 homework,
+    whose entries are exercises 1, 2, 3, 4 and 6, so that it has none for
+    Exercise 17; and, for absence, Borcherds (through IV.1), Cais (through
+    Chapter 4), Cutrone--Marshburn (Chapters 1 and 2), Ionita--Kumar
+    (Chapter I), Kim (§2.4), Lomont, Park (Chapter 4 and §V.5), Saglam--Chris
+    (Chapter III), Sam (through IV.6), Stein (III.7), Troiani (Chapter II) and
+    Reiser (IV.2.5). The remark now states that the argument in characteristics
+    2 and 3 is step s3, the card's own. No statement and no proof step changed
+    in this pass. Not read in this pass: Shifrin's and Elencwajg's answers
+    beyond the sentences the card quotes, Eisenbud and Van de Ven's
+    Proposition 6 other than as the remark records it, and any printing of
+    Hartshorne, only the text version in tmp/sources.
 
 ---
 
@@ -886,4 +911,11 @@ The card's computation is checked against the book's own bracket: $E_n=\varphi_n
 
 Math StackExchange answer 1583486 by Ted Shifrin, to question 1583326 ("Normal bundle of twisted cubic"), gives an argument for part (a) by another route, in a form whose constants need $3$ invertible: from the conormal sequence $0\to N^\vee_{C/\PP^3}\to\restrictionof{\Omega_{\PP^3}}{C}\to\Omega_C\to0$ it writes the two frames of $N^\vee_{C/\PP^3}$ on the overlap of the charts $[1,x,y,z]$ and $[X,Y,Z,1]$ and reads the splitting off the transition matrix, ending at the diagonal $(-3t^{-5},-\frac13t^{-5})$. Step [](#s5){.pf-ref} carries his frames, the change of coordinates $X=1/z$, $Y=x/z$, $Z=y/z$ and the transition matrix, and adds one row operation over $k[t]$ and one column operation over $k[t^{-1}]$ that reduce it to exactly $t^{-5}$ times the identity, an identity over $\ZZ[t,t^{-1}]$ and so one that holds over every field. Georges Elencwajg's answer 569653 to question 569237 records the equivalent statement for the normal bundle, $N=\OO(5)\oplus\OO(5)$, as Proposition 6 of Eisenbud and Van de Ven, *On the normal bundles of smooth rational space curves*. Neither covers part (b).
 
+The remaining retained sets carry no Chapter V §2 exercise: Borcherds, Cais, Cutrone--Marshburn,
+Ionita--Kumar, Kim, Lomont, Park, Saglam--Chris, Sam, Stein, Troiani and Reiser. No retained solution
+set therefore proves part (b) in characteristics $2$ or $3$: Egbert's entry carries no argument and
+Yang Pi-Yeh's treatment is sound only away from those two, as the paragraph above records. The
+argument for those characteristics is step [](#s3){.pf-ref}, the card's own, together with the
+consequence step [](#s4){.pf-ref} draws from it, and the answer it gives agrees with the printed one
+at $\operatorname{char}k=2$ and with Eisenbud and Van de Ven's Proposition 6 at characteristic $0$.
 :::
