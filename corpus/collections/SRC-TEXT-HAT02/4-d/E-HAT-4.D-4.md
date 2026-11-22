@@ -64,6 +64,16 @@ audit:
     over whose base $H^*(\CP^{n-1})=\ZZ[x_1]/(x_1^n)$ Leray--Hirsch applies, and concludes that
     $H^*(F_n)$ is free over $\ZZ[x_1]/(x_1^n)$ on the monomials $x_2^{a_2}\cdots x_n^{a_n}$ with
     $0\le a_i\le n-i$ — the correct statement, and the one that yields the Poincaré polynomial.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Two further corrections in step `algebra`, from independent readings. The sentence justifying
+    regularity said $\sigma_k$ "involves the variable $x_{n-k+1}$ to the first power"; that is not what
+    makes the sequence regular. It now runs the triangular argument: as a polynomial in $x_n$,
+    $\sigma_n=x_n\sigma_{n-1}(x_1,\dots,x_{n-1})$ is linear with leading coefficient
+    $\sigma_{n-1}(x_1,\dots,x_{n-1})$, and the same holds one variable at a time for
+    $\sigma_{n-1},\dots,\sigma_1$ after quotienting by the later ones.
 ---
 
 ::: {.problem}
@@ -108,7 +118,7 @@ Taking the first line of a flag gives a fiber bundle $F_{n-1}(\C^{n-1})\to F_n(\
 $\ZZ[x_1,\dots,x_n]/(\sigma_1,\dots,\sigma_n)$ is free abelian with basis $x_1^{a_1}\cdots x_n^{a_n}$, $0\le a_i\le n-i$, hence with the same Poincaré polynomial and total rank $n!$.
 
 ::: pf-proof
-The $\sigma_k$ form a regular sequence: $\sigma_k$ involves the variable $x_{n-k+1}$ to the first power and no other variable of lower index does in $\sigma_k$ once the earlier relations have been used, which is the usual triangular form of the elementary symmetric functions. Reducing successively by the monic relations $\sigma_1,\dots,\sigma_n$ therefore leaves a free abelian group on the monomials whose exponents satisfy $0\le a_i\le n-i$: the $i$-th reduction caps the exponent of $x_{n-i+1}$ at $i-1$. The number of such monomials in degree $2d$ gives the polynomial $\prod_{j=1}^n(1+t^2+\cdots+t^{2(j-1)})$, and its value at $t=1$ is $\prod_{j=1}^n j=n!$.
+The $\sigma_k$ form a regular sequence: read as polynomials in $x_n$, $\sigma_n=x_n\,\sigma_{n-1}(x_1,\dots,x_{n-1})$ is linear with leading coefficient $\sigma_{n-1}(x_1,\dots,x_{n-1})$, and the same holds one variable at a time for $\sigma_{n-1},\dots,\sigma_1$ after passing to the quotient by the later ones, which is the triangular form of the elementary symmetric functions. Reducing successively by the monic relations $\sigma_1,\dots,\sigma_n$ therefore leaves a free abelian group on the monomials whose exponents satisfy $0\le a_i\le n-i$: the $i$-th reduction caps the exponent of $x_{n-i+1}$ at $i-1$. The number of such monomials in degree $2d$ gives the polynomial $\prod_{j=1}^n(1+t^2+\cdots+t^{2(j-1)})$, and its value at $t=1$ is $\prod_{j=1}^n j=n!$.
 :::
 
 :::
