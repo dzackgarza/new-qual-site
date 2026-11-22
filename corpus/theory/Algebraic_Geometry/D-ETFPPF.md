@@ -46,8 +46,8 @@ So every fppf sheaf is an étale sheaf, and every étale sheaf restricts to a Za
 :::
 
 ::: {.theorem title="Representable functors are sheaves"}
-For every $S$-scheme $X$, the functor $h_X = \Hom_S(-, X)$ is a sheaf on $(\Sch_{/S})_{\mathrm{fppf}}$, hence on $(\Sch_{/S})_{\mathrm{et}}$.
-For every quasicoherent $\OO_S$-module $\mathcal{M}$, the functor $(f \colon U \to S) \mapsto \Gamma(U, f^* \mathcal{M})$ is an fppf sheaf.
+For every $S$-scheme $X$, the functor $h_X = \Hom_S(-, X)$ is a sheaf on $(\Sch_{/S})_{\mathrm{fppf}}$, hence on $(\Sch_{/S})_{\mathrm{et}}$ (Stacks Project, Lemma 59.15.8, tag 03O3).
+For every quasicoherent $\OO_S$-module $\mathcal{M}$, the functor $(f \colon U \to S) \mapsto \Gamma(U, f^* \mathcal{M})$ is an fppf sheaf (Stacks Project, Proposition 35.5.2, tag 023T).
 :::
 
 ::: {.example}
