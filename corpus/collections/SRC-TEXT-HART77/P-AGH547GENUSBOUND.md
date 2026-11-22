@@ -377,10 +377,12 @@ audit:
     nonsingular curve, is proved by no retained solution set, and the
     "Published solution" remark now says so and names the sets searched.
     Read for that, each at its own numbering: Egbert, entry 5.4.8, which
-    states the bound, cites Harris--Eisenbud, Curves in Projective Space,
-    Theorem 3.13, for the cubic surfaces not on a quadric, and then assumes
-    the existence of a smooth connected curve of each degree and genus as a
-    claim; Yang Pi-Yeh, Solution 5.4.7, and the National Taiwan University
+    states the bound and then the existence of a smooth connected curve of
+    each degree and genus as a claim whose numerical conditions it verifies,
+    taking the curves from Harris--Eisenbud, Curves in Projective Space,
+    Theorem 3.13, for the cubic surfaces not on a quadric, and whose genus
+    range at d=4, g > 8/sqrt(3) - 3 and g <= 5/3, contains no integer; Yang
+    Pi-Yeh, Solution 5.4.7, and the National Taiwan University
     Algebraic Geometry II (2020 Spring), Chapter V §4 Exercise 7, by Yi-Tsung
     Wang, which prove the bound and say only that the listed classes achieve
     it; and, for absence, the retained sets that carry no Chapter V §4
@@ -393,9 +395,17 @@ audit:
     II.8.18, stated for a nonsingular closed subvariety of PP^n_k with no
     hypothesis on the characteristic; and Remark III.7.9.1, that the section
     is connected, hence irreducible, and regular, hence nonsingular, when
-    dim X >= 2. No proof step changed, and the transcription of the bound
-    from the two sources named is unchanged. Not read: any printing of the
-    book, only the text version in tmp/sources.
+    dim X >= 2. Two citations are corrected in the same pass, on the proof of
+    step intersection-data: its p_a line now cites the virtual arithmetic
+    genus of Chapter V §1 Exercise 3(c), 2p_a(D)-2 = D.(D+K_X), for a class
+    that need not be effective, with items (e) and (g) of Proposition 4.8
+    kept as the effective case, and its degree line cites (c) with the
+    pairing of (b) rather than (e), whose hypothesis is effectiveness. Read
+    for that: Exercise V.1.3(a), (b) and (c) in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, and the proof of
+    Proposition 4.8, which reads (g) off the adjunction formula of Ex. 1.3.
+    No statement changed and no proof step's mathematics changed. Not read:
+    any printing of the book, only the text version in tmp/sources.
 ---
 
 ::: {.problem}
@@ -430,9 +440,12 @@ p_a(D)=\tfrac12(D^2-d)+1 .
 $$
 
 ::: pf-proof
-The line bundle computations are items (c), (d), (e), (f) and (g) of Proposition 4.8 of the book: the degree is $D\cdot h=d$, the self-intersection is $a^2-\sum_ib_i^2$ because
-$\ell^2=1$ and $e_i^2=-1$ with all other pairings zero, $D\cdot K_X=-D\cdot h=-d$, and (g) is
-$2p_a(D)-2=D\cdot(D+K_X)$. Chapter V §4 Exercise 7 of the National Taiwan University *Algebraic
+The line bundle computations are items (b), (c), (d) and (f) of Proposition 4.8 of the book: the degree is $D\cdot h=3a-\sum_ib_i$ by (c) and the pairing of (b), the self-intersection is $a^2-\sum_ib_i^2$ because
+$\ell^2=1$ and $e_i^2=-1$ with all other pairings zero, and $D\cdot K_X=-D\cdot h=-d$ by (d). A class
+need not be effective, so the genus is the virtual arithmetic genus of Chapter V §1 Exercise 3(c),
+$2p_a(D)-2=D\cdot(D+K_X)$, which is the ordinary arithmetic genus when $D$ is effective; items (e) and
+(g) of Proposition 4.8 are that case, and the book's proof of (g) reads it off the same adjunction
+formula of Exercise 1.3. Chapter V §4 Exercise 7 of the National Taiwan University *Algebraic
 Geometry II* homework (2020 Spring), by Yi-Tsung Wang writes $D=D_1-D_2$ with
 $D_1,D_2$ effective and reads $\deg D=3a-\sum_ib_i$ and $D^2=a^2-\sum_ib_i^2$ off (4.8)(b) and (e),
 which the book states for effective divisors; it then writes "$2p_a(D)=D^2+D\cdot K=a^2-\sum
@@ -659,11 +672,13 @@ nothing of an irreducible nonsingular member of one, so the exercise's second re
 there and remains the card's own step.
 
 The retained solution sets were searched for this exercise, and none proves the second request. Three
-of them contain an exercise of Chapter V §4: Egbert's entry 5.4.8, which states the bound, cites
-Harris--Eisenbud, *Curves in Projective Space*, Theorem 3.13, for the cubic surfaces not lying on a
-quadric, and then assumes as a claim that a smooth connected curve of each degree and genus exists;
-and Yang Pi-Yeh's Solution 5.4.7 and the National Taiwan University Chapter V §4 Exercise 7, which
-prove the bound alone. The other retained sets carry no Chapter V §4 exercise: Borcherds, Cais,
+of them contain an exercise of Chapter V §4: Egbert's entry 5.4.8, which states the bound, states the
+existence of a smooth connected curve of each degree and genus as a claim whose numerical conditions
+it then verifies, and takes the curves themselves from Harris--Eisenbud, *Curves in Projective
+Space*, Theorem 3.13, for the cubic surfaces not lying on a quadric; its genus range at $d=4$, which
+is $g>\frac{8}{\sqrt3}-3$ and $g\le\frac53$, contains no integer, so it establishes nothing at that
+degree; and Yang Pi-Yeh's Solution 5.4.7 and the National Taiwan University Chapter V §4 Exercise 7,
+which prove the bound alone. The other retained sets carry no Chapter V §4 exercise: Borcherds, Cais,
 Cutrone--Marshburn, Ionita--Kumar, Kim, Lomont, Okamoto, Park, Saglam--Chris, Sam, Stein, Troiani, Reiser and
 the Chapter 1 notes of btg. The argument of step
 [](#nonsingular-members){.pf-ref} is therefore the card's own: Corollary 4.13(b) of the book for the
