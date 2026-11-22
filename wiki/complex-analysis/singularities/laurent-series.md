@@ -61,7 +61,7 @@ with principal part $-1/(z-1)$ and residue $-1$ at $z_0 = 1$.
 
 [[D-C3JIU]]
 
-The singularity is [[D-BQLJV|removable]], a [[D-AUD6K|pole]], or [[D-VKP6N|essential]] according as no, finitely many, or infinitely many coefficients $c_k$ with $k<0$ are nonzero, and the coefficient $c_{-1}$ is the residue that enters [[T-HRPNO|the residue theorem]].
+The number of nonzero coefficients $c_k$ with $k<0$ decides which of the three types the singularity is ([[T-4XPWL|Laurent expansion on an annulus]]), and the coefficient $c_{-1}$ is the residue that enters [[T-HRPNO|the residue theorem]].
 
 ## Exercises
 
