@@ -31,7 +31,7 @@ A family of $S$-morphisms $\{U_i \to U\}_i$ in $\Sch_{/S}$ is an
 
 - \dfn{étale covering} if each $U_i \to U$ is étale and $\bigsqcup_i U_i \to U$ is surjective;
 
-- \dfn{fppf covering} if each $U_i \to U$ is flat and locally of finite presentation and $\bigsqcup_i U_i \to U$ is surjective.
+- \dfn{fppf covering} if each $U_i \to U$ is flat and locally of finite presentation and $\bigsqcup_i U_i \to U$ is surjective (Stacks Project, Definition 34.7.1, tag 021M).
 
 With these coverings $\Sch_{/S}$ is the \dfn{big étale site} $(\Sch_{/S})_{\mathrm{et}}$, respectively the \dfn{big fppf site} $(\Sch_{/S})_{\mathrm{fppf}}$.
 :::
@@ -41,7 +41,7 @@ The \dfn{small étale site} $S_{\mathrm{et}}$ of $S$ is the full subcategory of 
 :::
 
 ::: {.remark}
-Every Zariski open covering is an étale covering, and every étale covering is an fppf covering, because étale morphisms are flat and locally of finite presentation.
+Every Zariski open covering is an étale covering, and every étale covering is an fppf covering, because étale morphisms are flat and locally of finite presentation (Stacks Project, Lemma 34.7.2, tag 021N).
 So every fppf sheaf is an étale sheaf, and every étale sheaf restricts to a Zariski sheaf on each $S$-scheme.
 :::
 
