@@ -7,7 +7,7 @@ topics:
 
 # Counterexamples
 
-Each section group is a theorem the examples below refute, by dropping one of its hypotheses.
+Each section names a theorem or a topic; the blocks under it show a theorem failing when one of its hypotheses is dropped, or gather the examples that separate the cases.
 
 ## Liouville's theorem
 
