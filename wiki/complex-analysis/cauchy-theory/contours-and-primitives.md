@@ -29,7 +29,7 @@ For a curve that bounds a positively oriented region, Green's theorem converts t
 
 [[T-PRIM]]
 
-[[T-NRSFZ]] constructs the logarithm and its powers from such a primitive.
+[[T-NRSFZ|The logarithm and roots of a nonvanishing function]] are constructed from such a primitive.
 
 [[D-PJ7JM]]
 
