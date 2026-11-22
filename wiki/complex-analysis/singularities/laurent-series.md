@@ -61,7 +61,7 @@ with principal part $-1/(z-1)$ and residue $-1$ at $z_0 = 1$.
 
 [[D-C3JIU]]
 
-On a punctured disc about $z_0$ the singularity is removable, a pole, or essential according as no, finitely many, or infinitely many coefficients $c_k$ with $k<0$ are nonzero ([[complex-analysis/singularities/classifying-a-singularity|Classifying a singularity]]), and the coefficient $c_{-1}$ is the residue that enters [[complex-analysis/residues-and-contours/the-residue-theorem|the residue theorem]].
+The singularity is [[D-BQLJV|removable]], a [[D-AUD6K|pole]], or [[D-VKP6N|essential]] according as no, finitely many, or infinitely many coefficients $c_k$ with $k<0$ are nonzero, and the coefficient $c_{-1}$ is the residue that enters [[T-HRPNO|the residue theorem]].
 
 ## Exercises
 
