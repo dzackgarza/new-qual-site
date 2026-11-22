@@ -8,7 +8,7 @@ topics:
 
 # Littlewood's three principles
 
-For Lebesgue measure $m$ on $\RR^d$ and $\varepsilon>0$, the three principles say that a measurable set is nearly a finite union of intervals, a measurable function is nearly continuous, and an almost everywhere convergent sequence is nearly uniformly convergent.
+For Lebesgue measure $m$ on $\RR^d$ and $\varepsilon>0$, the three principles say that a measurable set is nearly a finite union of intervals, a measurable function is nearly continuous, and an almost everywhere convergent sequence on a set of finite measure is nearly uniformly convergent.
 
 ## Measurable sets
 
