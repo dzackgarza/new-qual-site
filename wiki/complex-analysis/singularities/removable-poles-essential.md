@@ -38,7 +38,7 @@ The three types, and the criteria that decide which applies — the limit, the b
 [[T-YKVFQ]]
 
 ::: {.remark}
-By [[T-YKVFQ]], an infinite subset of a compact set $K\subseteq\Omega$ has a limit point in $K$, so a holomorphic $f$ on a connected open set $\Omega$ with infinitely many zeros in $K$ vanishes identically by the identity principle.
+By [[T-YKVFQ]], an infinite subset of a compact set $K\subseteq\Omega$ has a limit point in $K$, so a holomorphic $f$ on a connected open set $\Omega$ with infinitely many zeros in $K$ vanishes identically by [[T-SVF2W|the identity principle]].
 Compactness of $K$ inside $\Omega$ is needed: $\sin\bigl(\pi/(1-z)\bigr)$ is holomorphic on $\DD$, not identically zero, and vanishes at the points $1-1/k$, $k\geq 1$, which accumulate at $1\notin\DD$.
 
 :::
