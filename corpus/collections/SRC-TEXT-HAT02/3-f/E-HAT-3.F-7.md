@@ -75,6 +75,15 @@ audit:
     the cases: for $n=1$ the map $H^0(M(B,1))\to H^0(M(A,1))$ is an isomorphism of copies of $\ZZ$
     because both spaces are connected, so the connecting map is zero. The provenance sentence is
     corrected to say what the retained sets hold.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Correction to the preceding event's repair. The coefficients were dropped there: the long exact
+    sequence of the pair is taken with coefficients $G$, so the exceptional term at $n=1$ is
+    $H^{0}(M(A,1);G)=G$, and $H^{0}(M(B,1);G)\to H^{0}(M(A,1);G)$ is the identity map of $G$, not of
+    $\ZZ$. Step `sequence` now writes the coefficients in every term of that sentence. The
+    mathematics of the repair is unchanged; this fixes its statement.
 ---
 
 ::: {.problem}
@@ -156,7 +165,7 @@ The long exact sequence of the pair $(M(B,n),M(A,n))$ reads
 $$
 \cdots\to H^k(\text{pair})\to H^k(M(B,n))\to H^k(M(A,n))\to H^{k+1}(\text{pair})\to H^{k+1}(M(B,n))\to H^{k+1}(M(A,n))\to\cdots .
 $$
-Putting $k=n$ and using steps [](#cohomology-of-moore){.pf-ref} and [](#pair){.pf-ref} gives the displayed middle stretch. The sequence begins with an injection: the term mapping into $H^{n}(\text{pair})$ is $H^{n-1}(M(A,n))$, which is $\widetilde H^{n-1}(M(A,n))=0$ for $n\ge2$ and is $\ZZ$ for $n=1$, where $H^{0}(M(B,1))\to H^{0}(M(A,1))$ is the identity of $\ZZ$ because both spaces are connected and the pair is that of a subcomplex; so in both cases the connecting map into $H^{n}(\text{pair})$ is zero. It ends at $\operatorname{Ext}(A,G)$ because $H^{n+2}$ of the pair is $\widetilde H^{n+2}(M(C,n))=0$. So the sequence begins and ends with a zero as displayed, which is the claimed exact sequence.
+Putting $k=n$ and using steps [](#cohomology-of-moore){.pf-ref} and [](#pair){.pf-ref} gives the displayed middle stretch. The sequence begins with an injection: the term mapping into $H^{n}(\text{pair};G)$ is $H^{n-1}(M(A,n);G)$, which is $\widetilde H^{n-1}(M(A,n);G)=0$ for $n\ge2$ and is $H^{0}(M(A,1);G)=G$ for $n=1$, where $H^{0}(M(B,1);G)\to H^{0}(M(A,1);G)$ is the identity map of $G$, because both spaces are connected and the pair is that of a subcomplex; so in both cases the connecting map into $H^{n}(\text{pair};G)$ is zero. It ends at $\operatorname{Ext}(A,G)$ because $H^{n+2}$ of the pair is $\widetilde H^{n+2}(M(C,n);G)=0$. So the sequence begins and ends with a zero as displayed, which is the claimed exact sequence.
 
 :::
 
