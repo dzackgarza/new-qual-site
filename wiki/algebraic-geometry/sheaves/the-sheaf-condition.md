@@ -27,4 +27,4 @@ topics:
 
 [[PR-IP6ZG]]
 
-The noetherian hypothesis is needed ([[FE-SHFCOLIMGAMMA]]).
+For a directed system $\theset{\mcf_i}_{i\in I}$ of sheaves on a noetherian topological space, the presheaf $U\mapsto\colim_i\mcf_i(U)$ is already a sheaf, so $\Gamma(X,\colim_i\mcf_i)\cong\colim_i\Gamma(X,\mcf_i)$ ([[PR-IP6ZG]]); on the discrete space $\NN$ the corresponding map $\bigoplus_n\ZZ\to\prod_n\ZZ$ is injective and not surjective ([[FE-SHFCOLIMGAMMA]]).
