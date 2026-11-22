@@ -14,7 +14,6 @@ If $f\colon U\to W$ and $g\colon V\to W$ are [[D-TM4TE|conformal]] bijections on
 
 The regions named below are
 $\DD$ the unit disc and $\HH$ the upper half-plane, as in [[PR-OOHFS]];
-
 $Q_i$, the $i$th open quadrant, so $Q_1\coloneqq\theset{z\st\Re z>0,\ \Im z>0}$ and $Q_{ij}$ is the interior of $\overline{Q_i\union Q_j}$, so $\HH = Q_{12}$ and $Q_{14}$ is the right half plane;
 and $L\coloneqq\theset{x+iy\st 0<y<\pi}$, the horizontal strip.
 
