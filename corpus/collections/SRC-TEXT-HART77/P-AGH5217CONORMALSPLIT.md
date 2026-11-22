@@ -390,7 +390,7 @@ audit:
     whose entries are exercises 1, 2, 3, 4 and 6, so that it has none for
     Exercise 17; and, for absence, Borcherds (through IV.1), Cais (through
     Chapter 4), Cutrone--Marshburn (Chapters 1 and 2), Ionita--Kumar
-    (Chapter I), Kim (§2.4), Lomont, Park (Chapter 4 and §V.5), Saglam--Chris
+    (Chapter I), Kim (§2.4), Lomont, Okamoto (§II.9), Park (Chapter 4 and §V.5), Saglam--Chris
     (Chapter III), Sam (through IV.6), Stein (III.7), Troiani (Chapter II) and
     Reiser (IV.2.5). The remark now states that the argument in characteristics
     2 and 3 is step s3, the card's own. No statement and no proof step changed
@@ -912,7 +912,7 @@ The card's computation is checked against the book's own bracket: $E_n=\varphi_n
 Math StackExchange answer 1583486 by Ted Shifrin, to question 1583326 ("Normal bundle of twisted cubic"), gives an argument for part (a) by another route, in a form whose constants need $3$ invertible: from the conormal sequence $0\to N^\vee_{C/\PP^3}\to\restrictionof{\Omega_{\PP^3}}{C}\to\Omega_C\to0$ it writes the two frames of $N^\vee_{C/\PP^3}$ on the overlap of the charts $[1,x,y,z]$ and $[X,Y,Z,1]$ and reads the splitting off the transition matrix, ending at the diagonal $(-3t^{-5},-\frac13t^{-5})$. Step [](#s5){.pf-ref} carries his frames, the change of coordinates $X=1/z$, $Y=x/z$, $Z=y/z$ and the transition matrix, and adds one row operation over $k[t]$ and one column operation over $k[t^{-1}]$ that reduce it to exactly $t^{-5}$ times the identity, an identity over $\ZZ[t,t^{-1}]$ and so one that holds over every field. Georges Elencwajg's answer 569653 to question 569237 records the equivalent statement for the normal bundle, $N=\OO(5)\oplus\OO(5)$, as Proposition 6 of Eisenbud and Van de Ven, *On the normal bundles of smooth rational space curves*. Neither covers part (b).
 
 The remaining retained sets carry no Chapter V §2 exercise: Borcherds, Cais, Cutrone--Marshburn,
-Ionita--Kumar, Kim, Lomont, Park, Saglam--Chris, Sam, Stein, Troiani and Reiser. No retained solution
+Ionita--Kumar, Kim, Lomont, Okamoto, Park, Saglam--Chris, Sam, Stein, Troiani and Reiser. No retained solution
 set therefore proves part (b) in characteristics $2$ or $3$: Egbert's entry carries no argument and
 Yang Pi-Yeh's treatment is sound only away from those two, as the paragraph above records. The
 argument for those characteristics is step [](#s3){.pf-ref}, the card's own, together with the
