@@ -75,7 +75,9 @@ audit:
     argument it gestured at. Both directions read correct: `s1` the zigzag from a common
     approximation, `s2` each arrow of a zigzag of weak homotopy equivalences between CW complexes is
     a homotopy equivalence by Theorem 4.5, `s3` consecutive CW approximations homotopy equivalent,
-    then transitivity and composition.
+    then transitivity and composition. One refinement after a further reading: Theorem 4.5 is printed
+    for connected CW complexes, and step `s2` now restricts a weak homotopy equivalence to components,
+    on each of which the theorem applies, since such a map induces a bijection on $\pi_0$.
 
 ---
 
@@ -111,7 +113,7 @@ Weakly equivalent CW complexes are homotopy equivalent.
 
 ::: pf-proof
 
-Let $K$ and $L$ be CW complexes with a zigzag of weak homotopy equivalences $K=K_1\leftrightarrow K_2\leftrightarrow\cdots\leftrightarrow K_n=L$. Each arrow of that zigzag is a map of CW complexes inducing an isomorphism on $\pi_i$ for every $i$, hence a homotopy equivalence by Whitehead's theorem (Theorem 4.5, whose hypothesis is an isomorphism on $\pi_n$ for all $n$, which is exactly what a weak homotopy equivalence between CW complexes provides); a zigzag of homotopy equivalences composes to a homotopy equivalence.
+Let $K$ and $L$ be CW complexes with a zigzag of weak homotopy equivalences $K=K_1\leftrightarrow K_2\leftrightarrow\cdots\leftrightarrow K_n=L$. Each arrow of that zigzag is a map of CW complexes inducing an isomorphism on $\pi_i$ for every $i$, hence a homotopy equivalence by Whitehead's theorem (Theorem 4.5, whose hypothesis is an isomorphism on $\pi_n$ for all $n$, which is exactly what a weak homotopy equivalence between CW complexes provides); a zigzag of homotopy equivalences composes to a homotopy equivalence. Theorem 4.5 is printed for connected CW complexes, and a weak homotopy equivalence induces a bijection on $\pi_0$, so it carries components to components and is a weak homotopy equivalence on each, where the theorem applies.
 
 :::
 
