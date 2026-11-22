@@ -17,7 +17,7 @@ A nonconstant morphism of smooth projective curves is flat, since the target is 
 
 [[PR-RJ3P7]]
 
-Going up is what makes a finite morphism behave like a branched cover: for $B$ integral over $A$ the map $\Spec B \to \Spec A$ is closed and surjective, every prime of $A$ is the contraction of a prime of $B$, and every chain of primes of $A$ lifts to a chain of $B$ above it [@AM18, Theorems 5.10 and 5.11].
+Going up is what makes a finite morphism behave like a branched cover: for $A\subseteq B$ with $B$ integral over $A$ the map $\Spec B \to \Spec A$ is closed and surjective, every prime of $A$ is the contraction of a prime of $B$, and every chain of primes of $A$ lifts to a chain of $B$ above it [@AM18, Theorems 5.10 and 5.11].
 
 Going down is the same statement with the chains reversed: a chain of primes of $A$ extends downwards once a prime of $B$ above its top is fixed, when $A \subseteq B$ are domains with $A$ integrally closed and $B$ integral over $A$ [@AM18, Theorem 5.16], and for every flat ring map [Stacks, Lemma 10.39.19, tag 00HS].
 
