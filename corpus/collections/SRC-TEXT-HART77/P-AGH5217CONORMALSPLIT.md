@@ -373,6 +373,21 @@ audit:
     stand, and the application at n = 3 is the paper's degree 3, which is the
     card's n = 2 for the twisted cubic. Not checked: the printed journal, only
     the retained PDF.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    One arithmetic sentence repaired, with no change to the computation or the
+    answer. Step s1's closing paragraph compared its degree with "the value
+    deg c_1(N) = 4n-2 that Eisenbud and Van de Ven record for a smooth rational
+    curve of degree n", which mixes two meanings of n: the paper's n is the
+    degree of the curve, while in this card the curve C_n has degree n+1. With
+    deg E_n = -(2n+2) - 2n = -4n-2, the normal bundle has degree 4n+2, which is
+    4(n+1)-2, the paper's value at the card's degree. The sentence now says
+    that. Read for it: the extension 0 -> O(-2n-2) -> E_n -> O(-2n) -> 0 of
+    step s1 and the value 4d-2 from deg c_1(PP^3) = 4 and deg c_1(PP^1) = 2.
+    Not read in this pass: Eisenbud and Van de Ven's Proposition 6 in the
+    original, only as this card records it.
 - event: source-checked
   by: claude
   date: 2026-11-22
@@ -499,7 +514,7 @@ $$
 
 ::: pf-proof
 
-This step and the next two are this card's own general computation for every $n$, and no source carries them; the degree they give agrees with the value $\deg c_1(N)=4n-2$ that Eisenbud and Van de Ven record for a smooth rational curve of degree $n$ in $\PP^3$, from $\deg c_1(\PP^3)=4$ and $\deg c_1(\PP^1)=2$. Here $\deg E_n=-4n-2$, the sum of the two degrees in the displayed sequence.
+This step and the next two are this card's own general computation for every $n$, and no source carries them; the degree they give agrees with the value $\deg c_1(N)=4d-2$ that Eisenbud and Van de Ven record for a smooth rational curve of degree $d$ in $\PP^3$, from $\deg c_1(\PP^3)=4$ and $\deg c_1(\PP^1)=2$, at $d=n+1$: here $\deg E_n=-4n-2$, the sum of the two degrees in the displayed sequence, so $\deg N=4n+2=4(n+1)-2$.
 
 For the regular immersions
 $$
