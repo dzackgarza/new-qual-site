@@ -70,11 +70,6 @@ The function $1/\sin(\pi/z)$ has a non-isolated singularity at $0$.
 
 ## Convergence
 
-::: {.example title="Pointwise convergence without local uniformity"}
-On $\DD$ the monomials $z^k$ converge pointwise to $0$ and not uniformly, so pointwise convergence does not supply the hypothesis of [[C-TODSQ|the locally uniform limit theorem]].
-The limit here is holomorphic, and that is the point: what fails is the uniformity through which the theorem controls the limit function and its derivatives.
-:::
-
 ::: {.remark}
 [[T-4ALS2|Montel's theorem]] turns a family bounded on compact subsets into a locally uniformly convergent subsequence, so a sequence without such a bound is where a pointwise limit can differ from a locally uniform one.
 :::
