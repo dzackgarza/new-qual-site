@@ -9,7 +9,7 @@ topics:
 
 # Inseparable morphisms and Lüroth
 
-Over an algebraically closed field $k$ of characteristic $p>0$, a finite morphism $X\to Y$ of smooth projective curves factors as a purely inseparable morphism $X\to X'$ followed by a separable morphism $X'\to Y$, and every purely inseparable morphism of curves is a composite of $k$-linear Frobenius morphisms.
+Over an algebraically closed field $k$ of characteristic $p>0$, a finite morphism $X\to Y$ of curves whose function-field extension is purely inseparable is a composition of $k$-linear Frobenius morphisms, $X$ and $Y$ are isomorphic as abstract schemes, and $g(X)=g(Y)$ [@Har77, Proposition IV.2.5]; every finite morphism of curves factors into a separable morphism followed by such a purely inseparable one [@Har77, Example IV.2.5.4].
 
 ## Frobenius as a morphism over $k$
 
@@ -20,8 +20,8 @@ The $k$-linear Frobenius of a curve is finite of degree $p$ and induces $k(X)\su
 
 [[PR-IV2INSEP]]
 
-Over a perfect field a purely inseparable morphism of curves is a homeomorphism whose function-field extension is purely inseparable, so the genus is unchanged.
-For the $k$-linear Frobenius $F\colon X\to X'$, the map $F^*\Omega_{X'}\to\Omega_X$ is zero, so $\Omega_{X/X'}\cong\Omega_X$ is a line bundle, and the Riemann--Hurwitz formula $2g-2=p(2g-2)$ fails for $g\neq1$.
+Over a perfect field a purely inseparable morphism of curves is a homeomorphism whose function-field extension is purely inseparable, and the genus is unchanged [@Har77, Proposition IV.2.5].
+For the $k$-linear Frobenius $F\colon X\to X'$, the map $F^*\Omega_{X'}\to\Omega_X$ is zero, so $\Omega_{X/X'}\cong\Omega_X$ is a line bundle, and the Riemann--Hurwitz formula $2g-2=p(2g-2)$ fails for $g\neq1$ [@Har77, Example IV.2.5.1].
 
 ## Lüroth's theorem
 
