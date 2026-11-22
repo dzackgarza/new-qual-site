@@ -16,5 +16,5 @@ review: draft
 
 ::: {.theorem ref="Liouville"}
 Let $f$ be an [[D-E7A5W|entire]] function.
-If there is $M>0$ with $\abs{f(z)}\leq M$ for all $z\in\CC$, then $f$ is constant [@SS03, Corollary 4.5 (p. 50)].
+If there is $M>0$ with $\abs{f(z)}\leq M$ for all $z\in\CC$, then $f$ is constant [@SS03, ch. 2, Corollary 4.5].
 :::
