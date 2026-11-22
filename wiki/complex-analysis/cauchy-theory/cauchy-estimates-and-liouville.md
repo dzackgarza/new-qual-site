@@ -25,7 +25,7 @@ $$
 \abs{f^{(n)}(0)}\leq {n!\,e^R\over R^n}\qquad\text{for every } R>0.
 $$
 The right-hand side is smallest at $R = n$, where it is $n!(e/n)^n$: $e = 2.718\ldots$ for $n=1$ and $5.699\ldots$ for $n=5$, against the true value $\abs{f^{(n)}(0)} = 1$ taken from the series $e^z = \sum_k z^k/k!$.
-So the estimate is right in its dependence on $n$ up to a factor growing like $(e/n)^n$, and the exact coefficients come from the series, not from the estimate.
+So the bound at its best radius is $\sqrt{2\pi n}$ times the true value, by Stirling's formula: the estimate is right in its order in $n$, and the exact coefficients come from the series, not from the estimate.
 
 For $f(z) = 1/(1-z)$ on $\DD$, $z_0 = 0$, and $r<1$, the maximum on $\abs z = r$ is $1/(1-r)$, so
 $$
@@ -39,7 +39,7 @@ The estimate is therefore sharp in order and not in constant.
 
 [[T-QHIHJ]]
 
-Liouville's theorem is the case $n=0$ of the growth bound, and its standard consequence is that a bounded entire function is constant, so a nonconstant entire function is unbounded on every unbounded set.
+Liouville's theorem is the case $n=0$ of the growth bound, and its standard consequence is that a bounded entire function is constant, so a nonconstant entire function is unbounded.
 It is also what rules out $\CC$ in the uniformization of plane domains, which is stated with [[T-4MDS6|the Riemann mapping theorem]] ([[C-BKYF7]]).
 
 Other theorems whose conclusion is that a holomorphic function is constant are collected on [[complex-analysis/cauchy-theory/theorems-that-give-a-constant|Theorems that give a constant]], and the routes to the fundamental theorem of algebra that run through Liouville's theorem are on [[complex-analysis/appendices/appendix-fta-proofs|the fundamental theorem of algebra]].
