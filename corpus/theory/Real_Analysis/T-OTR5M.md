@@ -18,7 +18,7 @@ review: draft
 
 ::: {.theorem}
 (a) Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space and let $(E_k)_{k\geq1}$ be a sequence in $\mcm$.
-Then the [[D-PAEDW|limit superior]] $\limsup_k E_k$ lies in $\mcm$, and for every $k\geq1$
+Then the [[D-PAEDW|limit superior]] $\limsup_k E_k$ lies in $\mcm$ ([[PR-NULVE]]), and for every $k\geq1$
 $$
 \mu\qty{\limsup_{n\to\infty} E_n} \leq \sum_{n=k}^\infty \mu(E_n) ,
 $$
