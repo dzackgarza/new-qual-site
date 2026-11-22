@@ -386,7 +386,7 @@ audit:
     it; and, for absence, the retained sets that carry no Chapter V §4
     exercise, Borcherds (through IV.1), Cais (through Chapter 4),
     Cutrone--Marshburn (Chapters 1 and 2), Ionita--Kumar (Chapter I), Kim
-    (§2.4), Lomont, Park (Chapter 4 and §V.5), Saglam--Chris (Chapter III),
+    (§2.4), Lomont, Okamoto (§II.9), Park (Chapter 4 and §V.5), Saglam--Chris (Chapter III),
     Sam (through IV.6), Stein (III.7), Troiani (Chapter II), Reiser (IV.2.5)
     and the Chapter 1 notes of btg. Also read: Corollary V.4.13 with its
     proof, that part (b) is a consequence of II.8.18 and III.7.9.1; Theorem
@@ -664,7 +664,7 @@ Harris--Eisenbud, *Curves in Projective Space*, Theorem 3.13, for the cubic surf
 quadric, and then assumes as a claim that a smooth connected curve of each degree and genus exists;
 and Yang Pi-Yeh's Solution 5.4.7 and the National Taiwan University Chapter V §4 Exercise 7, which
 prove the bound alone. The other retained sets carry no Chapter V §4 exercise: Borcherds, Cais,
-Cutrone--Marshburn, Ionita--Kumar, Kim, Lomont, Park, Saglam--Chris, Sam, Stein, Troiani, Reiser and
+Cutrone--Marshburn, Ionita--Kumar, Kim, Lomont, Okamoto, Park, Saglam--Chris, Sam, Stein, Troiani, Reiser and
 the Chapter 1 notes of btg. The argument of step
 [](#nonsingular-members){.pf-ref} is therefore the card's own: Corollary 4.13(b) of the book for the
 ample classes, Corollary 4.7 with Theorem II.8.18 and Remark III.7.9.1 at $d=4$, and, for the second
