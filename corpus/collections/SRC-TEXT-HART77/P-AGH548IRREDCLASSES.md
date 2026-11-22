@@ -560,6 +560,38 @@ audit:
     E^2 = -1, the value (H + E_1)^2 = 4, the intersections of H + E_1 with the other 26 lines, and
     the corresponding values (H + F_56)^2 = 4 and (H + F_56).F_56 = 0. Not checked: no source was
     read for this event, and neither intersection table was recomputed from a printed copy.
+- event: source-checked
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Published-solution pass for issue #160, on the transcription rule: the
+    nonsingularity of the member of alternative (c) is proved by no retained
+    solution set, in any characteristic, and the "Published solution" remark
+    now says so and names the sets searched. Read for that, each at its own
+    numbering: Egbert's entry 5.4.8, which quotes the statement and gives no
+    solution; Yang Pi-Yeh's Solution 5.4.8, whose (*) supplies an irreducible
+    nonsingular member only for a class meeting every line strictly
+    positively, its (i) implies (iii) direction contracts to X_r without
+    excluding D^2 = 0 from the third alternative, and the hypothesis
+    D^2 > 0 of the exercise is never used; the National Taiwan University
+    Algebraic Geometry II (2020 Spring) Chapter V §4 homework, whose
+    exercises are 1, 2, 3, 4, 5, 7, 10, 11, 12, 14 and 16 and which therefore
+    does not treat this one; and, for absence, the sets that carry no
+    Chapter V §4 exercise, Borcherds (through IV.1), Cais (through Chapter 4),
+    Cutrone--Marshburn (Chapters 1 and 2), Ionita--Kumar (Chapter I), Kim
+    (§2.4), Lomont, Park (Chapter 4 and §V.5), Saglam--Chris (Chapter III),
+    Sam (through IV.6), Stein (III.7), Troiani (Chapter II) and Reiser
+    (IV.2.5). Read in this pass: the printed text of Exercise V.4.8 in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, which asks for the two
+    equivalences and the three alternatives; Yang's Solution 5.4.8 in
+    tmp/sources/lfwin-hartshorne-solutions.md; Egbert's entry 5.4.8; and the
+    exercise list of the NTU file. Not read in this pass: Hartshorne's
+    Theorem 4.9, Theorem 4.11, Theorem V.1.6, Theorem V.1.9, Corollary
+    III.7.7 and Theorem II.8.6A, whose statements the steps cite and whose
+    numbered statements earlier events record; Harbourne's and Vakil's
+    statements only as the card records them; and any printing of the book,
+    only the text version in tmp/sources. No proof step and no statement
+    changed on the card in this pass.
 ---
 
 ::: {.problem}
@@ -912,4 +944,19 @@ $27$ lines nonnegatively
 and has square $4$, so (c) gives it an irreducible nonsingular member while the strict criterion the
 entry invokes does not apply. The card's own proof, Harbourne's Lemma II.6 and Theorem III.1(a) with
 Hartshorne's Theorem 4.11 in place of any cone description, does not depend on the entry.
+
+The retained solution sets were searched for this exercise and none proves what the third
+alternative needs in characteristic $p$. Two of them contain it: Egbert's entry 5.4.8, which quotes
+the statement and gives no solution, and Yang Pi-Yeh's Solution 5.4.8, the entry whose gap the
+preceding paragraph records. The National Taiwan University Chapter V §4 homework treats exercises
+1, 2, 3, 4, 5, 7, 10, 11, 12, 14 and 16 and not this one, and Borcherds, Cais, Cutrone--Marshburn,
+Ionita--Kumar, Kim, Lomont, Park, Saglam--Chris, Sam, Stein, Troiani and Reiser carry no Chapter V §4
+exercise. The argument on this card is therefore the card's own. Its inputs, each cited by numbered
+statement, are: Harbourne's Lemma II.6(b) for a reduced irreducible general section and Theorem
+III.1(a) for base point freeness and the vanishing of $h^1$; Hartshorne's Theorem 4.9 for the $27$
+lines, Theorem 4.11 for the very ampleness of $D_n$, Theorem V.1.9 for the Hodge index inequality,
+Theorem V.1.6 and Corollary III.7.7 for the cohomology of $D$, Theorem I.5.1 and Theorem II.8.6A for
+the nonsingularity of a general member; Dolgachev's Lemma 8.1.3 for the computation at $C^2=0$; and
+the incidence count of Vakil's Theorem 13.4.2, carried out for the morphism $\varphi$ rather than for
+a closed subvariety of $\PP^N$.
 :::
