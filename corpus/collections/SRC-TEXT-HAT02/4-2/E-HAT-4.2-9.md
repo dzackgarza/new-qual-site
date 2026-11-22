@@ -47,6 +47,14 @@ audit:
     contractible by Exercise 8, while $f$ is not a homotopy equivalence. The example complex cited
     (Hatcher Example 2.38, printed p. 142) has the stated presentation. No defect; the printed page is
     added.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 9. The proof reads correct. One provenance correction: the
+    solution said that no retained set covers the exercise, and the retained sets' actual coverage is
+    now recorded — Sam's §4.2 numbering is Hatcher's and Proudfoot's homework 7 covers 1, 2, 30, 31
+    and 32, announcing 39 without a solution of it.
 ---
 
 ::: {.problem}
@@ -55,7 +63,7 @@ Use the preceding exercise to give an example where this fails in the nonsimply-
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: Guanyu Li's set ends with §3.3, DeMason's M382C problem set covers §4.2 Exercises 1, 2, 14 and 27 only, and the Stanford 215C sets cover §3.B and §3.3 exercises. So the argument is the card own, from the cofiber sequence of a map (§4.2), Corollary 4.33, Example 2.38 and §4.2 Exercise 8.
+A retained solution covers this exercise: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.2 Exercise 9** (`tmp/sources/hatcher-solutions-sam-2008.md`). Guanyu Li's set ends with §3.3, DeMason's M382C problem set covers §4.2 Exercises 1, 2, 14 and 27 only, and the Stanford 215C sets cover §3.B and §3.3 exercises. So the argument is the card own, from the cofiber sequence of a map (§4.2), Corollary 4.33, Example 2.38 and §4.2 Exercise 8.
 
 ::: pf
 
