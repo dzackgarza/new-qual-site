@@ -15,17 +15,14 @@ A constant sheaf records nothing of the space, a locally constant sheaf records 
 
 [[D-SHFLOCSYS]]
 
-A constant sheaf records nothing about $X$: its sections over an open set are the continuous maps to a discrete group, so on a connected open set there is exactly one section per element.
-A locally constant sheaf on a connected, locally path-connected and semilocally simply connected space corresponds to a finite-dimensional representation of the fundamental group, its monodromy ([[D-SHFLOCSYS]]).
-On an irreducible space, and in particular on the underlying space of an irreducible scheme, every constant sheaf is flabby, and this is the fact behind the vanishing of higher cohomology of a constant sheaf on an irreducible noetherian space.
+Recall that a [[D-SHFLOCSYS|constant sheaf]] has sections over an open set the continuous maps to a discrete group, so on a connected open set there is exactly one section per element.
+On an irreducible space, and in particular on the underlying space of an irreducible scheme, every constant sheaf is flabby, and a flabby sheaf is acyclic for global sections ([[D-COHFLQ]]); hence $H^i(X,\underline{A})=0$ for $i>0$ when $X$ is irreducible.
 
 ## Skyscraper sheaves
 
 [[D-SHFSKYSCRAPER]]
 
-The skyscraper sheaf at $p$ with group $A$ has stalk $A$ at $p$ and $0$ at every other point, which is the whole of its local information: a skyscraper is determined by one group at one point.
-Every open cover of $X$ splits into the sets containing $p$, on which the sections are all of $A$, so the sheaf is flabby, and a flabby sheaf is acyclic for global sections ([[D-COHFLQ]]); hence $H^i(X,A_p)=0$ for $i>0$.
-On an affine scheme the skyscraper at a closed point is the quasicoherent sheaf attached to $A/\mfm$, so it is also the standard example of a quasicoherent sheaf whose support is a single point ([[D-UDIVH]]).
+The support of the skyscraper $i_p(A)$ is $\closure{\theset{p}}$, and its stalk is $A$ at every point of that closure ([[D-SHFSKYSCRAPER]], [[D-UDIVH]]).
 
 [[FE-SHFPONE]]
 
@@ -41,14 +38,13 @@ The sheaf of holomorphic functions is a proper subsheaf of the sheaf of continuo
 
 [[FE-AM5Z8]]
 
-The example separates the two failures: the constant presheaf fails to glue on a disconnected open set, the presheaf of continuous functions modulo bounded ones is not determined by its local data, and the presheaf $U\mapsto\mcf(U)\tensor\mcg(U)$ has sections on the two standard charts of $\PP^1$ that agree on the overlap and glue nowhere.
-A presheaf is a sheaf exactly when both axioms hold, and sheafification repairs the gluing one ([[T-3VX80]]).
+A presheaf is a sheaf exactly when both axioms hold, and sheafification is the universal morphism from a presheaf to a sheaf ([[T-3VX80]]), so it repairs a failure of either axiom.
 
 ## Stalks do not determine a sheaf
 
 [[FE-SHFISOSTALKS]]
 
-A map of sheaves that is an isomorphism on every stalk is an isomorphism, but a family of sheaves with isomorphic stalks need not be isomorphic, and pushforward is where the difference is visible: the stalk of a pushforward is not the pushforward of the stalks.
+A morphism of sheaves $\varphi\colon\mcf\to\mcg$ is an isomorphism exactly when every stalk map $\varphi_x$ is an isomorphism, while sheaves with isomorphic stalks need not be isomorphic ([[FE-SHFISOSTALKS]]).
 
 ## Constructible sheaves
 
