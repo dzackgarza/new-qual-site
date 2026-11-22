@@ -10,9 +10,9 @@ topics:
 
 ## Closure properties
 
-[[PR-552IH]]
-
 [[PR-EWXRO]]
+
+[[PR-552IH]]
 
 ::: {.proposition}
 Let $(X,\mathcal M)$ be a measurable space.
