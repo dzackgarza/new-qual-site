@@ -12,19 +12,7 @@ topics:
 
 ## Roots
 
-::: {.fact title="Complex roots of a number"}
-The $n$th roots of $z \coloneqq r e^{i\theta}\neq 0$ are
-$$
-z = re^{i\theta} = re^{i\qty{\theta + 2k\pi}} \implies z^{1/n} =
-\qty{ re^{i\qty{\theta + 2k\pi}} }^{1\over n} = r^{1\over n} e^{i\qty{\theta + 2k\pi \over n}},
-\qquad
-\theset{ \omega_k \coloneqq r^{1/n} e^{i \qty{ \theta + 2k\pi \over n} } \st 0 \leq k \leq n-1 }.
-$$
-The roots have modulus $r^{1/n}$ and are spaced by angles of $2\pi/n$.
-Writing the argument as $\theta + 2k\pi$ before taking the root produces all $n$ of them.
-
-These are the $n$th roots of [@Ahl73, ch. 1, §2.2, The Binomial Equation], which solves $z^n=a$ by writing $a=r(\cos\varphi+i\sin\varphi)$ and obtains the $n$ roots $r^{1/n}\qty{\cos\qty{\frac{\varphi+2k\pi}{n}}+i\sin\qty{\frac{\varphi+2k\pi}{n}}}$, $0\le k\le n-1$; de Moivre's formula (20) of that section is the computation the display above performs.
-:::
+[[T-NRT7K]]
 
 [[T-6XDRA]]
 
