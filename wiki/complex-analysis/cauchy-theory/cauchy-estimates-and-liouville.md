@@ -39,7 +39,7 @@ The estimate is therefore sharp in order and not in constant.
 
 [[T-QHIHJ]]
 
-Liouville's theorem is the case $n=0$ of the growth bound, and its standard consequence is that a bounded entire function is constant, so a nonconstant entire function is unbounded.
+Liouville's theorem is the case $k=0$ of [[T-PG7ZK|the polynomial-growth criterion]].
 It is also what rules out $\CC$ in the uniformization of plane domains, which is stated with [[T-4MDS6|the Riemann mapping theorem]] ([[C-BKYF7]]).
 
 Other theorems whose conclusion is that a holomorphic function is constant are collected on [[complex-analysis/cauchy-theory/theorems-that-give-a-constant|Theorems that give a constant]], and the routes to the fundamental theorem of algebra that run through Liouville's theorem are on [[complex-analysis/appendices/appendix-fta-proofs|the fundamental theorem of algebra]].
