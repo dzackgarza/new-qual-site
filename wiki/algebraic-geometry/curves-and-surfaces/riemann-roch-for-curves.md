@@ -33,13 +33,13 @@ That number is the degree of the canonical class, the threshold beyond which a d
 
 Above degree $2g-2$ the correction term vanishes and $\ell(D)=\deg D+1-g$ ([[T-MWDVL]]).
 A divisor of degree at least $g$ therefore has a nonzero section, and a divisor of negative degree has none, an effective divisor having nonnegative degree.
-In genus $0$ every divisor of degree at least $0$ has $\ell(D)=\deg D+1$, matching the sections of $\OO_{\PP^1}(d)$, and a smooth projective curve of genus $0$ is isomorphic to $\PP^1$ ([[PR-VGA2L]]).
+In genus $0$ every divisor of degree at least $0$ has $\ell(D)=\deg D+1$, matching the sections of $\OO_{\PP^1}(d)$, and over an algebraically closed field a smooth projective curve of genus $0$ is isomorphic to $\PP^1$ ([[PR-VGA2L]]).
 
 ## Small degree and Clifford's theorem
 
 [[T-CRVCLIFF]]
 
-In the special range Clifford's theorem bounds $\ell(D)\le\deg D/2+1$, with equality only for the trivial divisors, the canonical divisor, and, on a hyperelliptic curve, a $g^1_2$ ([[T-CRVCLIFF]]).
+In the special range Clifford's theorem bounds $\ell(D)\le\deg D/2+1$, with equality only for $D=0$, for $D=K$, and, on a hyperelliptic curve, for $D$ a multiple of the unique $g^1_2$ ([[T-CRVCLIFF]]).
 The gonality is the smallest $d$ for which a $g^1_d$ exists, so a special divisor of small dimension forces a map of low degree to $\PP^1$ ([[D-CRVGON]]).
 
 [[PR-VGA2L]]
