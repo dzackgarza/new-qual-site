@@ -56,6 +56,21 @@ audit:
     therefore gives $r:X\to A$ extending the identity, the induction starting at the $0$-cells of
     $X-A$ where path-connectedness of $A$ is the hypothesis; and $r|_A=\mathrm{id}$ is a retraction.
     No defect. The printed page is added, the card having had none.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.1 Exercise 13, and against Lemma 4.7 at its printed statement. The
+    proof is Sam's, §4.1 Exercise 12 under his numbering, which is this exercise; the preamble now
+    names it and says what the card adds. One repair, in step `vanishes`: the composite
+    $h(\alpha(-),t)$ is a free nullhomotopy of a based map, and along it the basepoint travels the
+    path $t\mapsto h(a_0,t)$, so $[\alpha]$ is not shown trivial outright but only its image under
+    the change-of-basepoint isomorphism $\beta_\gamma$, which is the class of a constant map; the
+    step now runs that argument, as the same defect was repaired on the §4.1 Exercise 11 card. The
+    degree-zero case is now stated as producing the paths from every point of $A$ to $a_0$. Steps
+    `extends` and `retract` are unchanged and correct: Lemma 4.7 is applied with target $Y=A$ and
+    $f=\operatorname{id}_A$, its induction beginning at the $0$-cells, where the hypothesis needed
+    is that $A$ be nonempty and path-connected.
 ---
 
 ::: {.exercise}
@@ -64,7 +79,7 @@ Use the **extension lemma** (Lemma 4.7: for a CW pair $(X,A)$, a map $f\colon A\
 :::
 
 ::: {.solution}
-The exercise is §4.1 Exercise 13, and the extension lemma it names is Lemma 4.7: a map $f:A\to Y$ on a CW pair $(X,A)$, with $Y$ path-connected and $\pi_{n-1}(Y)=0$ for every $n$ such that $X-A$ has cells of dimension $n$, extends to $X$.
+The argument is that of retained solutions: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.1 Exercise 12 under his numbering**, which is this exercise and Hatcher's Exercise 13, and which applies Lemma 4.7 with $Y=A$ and $f=\operatorname{id}_A$. The verification of the lemma's hypotheses in degree $0$, where path-connectedness of $A$ replaces a vanishing homotopy group, and the basepoint step of step [](#vanishes){.pf-ref} are the card's.
 
 ::: pf
 
@@ -72,7 +87,7 @@ The exercise is §4.1 Exercise 13, and the extension lemma it names is Lemma 4.7
 Every homotopy group of $A$ vanishes, and $A$ is path-connected.
 
 ::: pf-proof
-Contractibility of $A$ gives a point $a_0\in A$ and a homotopy $h\colon A\times I\to A$ from $\operatorname{id}_A$ to the constant map at $a_0$. For a map $\alpha\colon S^k\to A$, the composite $h(\alpha(-),t)$ is a homotopy from $\alpha$ to the constant map at $a_0$, so every element of $\pi_k(A,a_0)$ is trivial, for every $k\ge0$. At $k=0$ this says that $A$ has one path component, that is, that $A$ is path-connected.
+Contractibility of $A$ gives a point $a_0\in A$ and a homotopy $h\colon A\times I\to A$ from $\operatorname{id}_A$ to the constant map at $a_0$. At $k=0$ this exhibits, for each $a\in A$, the path $t\mapsto h(a,t)$ from $a$ to $a_0$, so $A$ has one path component. For $k\ge1$ and a based map $\alpha\colon(S^k,s_0)\to(A,a_0)$, the composite $H=h\circ(\alpha\times\operatorname{id}_I)$ is a free nullhomotopy of $\alpha$, and along it the basepoint travels the path $\gamma(t)=H(s_0,t)$; the change-of-basepoint isomorphism $\beta_\gamma$ of §4.1 carries the class of $\alpha$ to the class of a constant map, so $[\alpha]=0$ in $\pi_k(A,a_0)$. Hence every homotopy group of $A$ vanishes, and $A$ is path-connected.
 
 :::
 
