@@ -59,7 +59,8 @@ If $f$ is flat, then
 $$
 \dim_x X_{f(x)}=\dim_x X-\dim_{f(x)}Y
 $$
-[@Har77, Proposition III.9.5], so the local dimension of the fibre is constant on $X$ when $X$ and $Y$ are equidimensional.
+[@Har77, Proposition III.9.5]: this is a pointwise formula, and $\dim_x X$ and $\dim_{f(x)}Y$ are local dimensions, so the left-hand side varies with $x$ and is not constant in general.
+What is constant under flatness is the component dimension: if $Y$ is irreducible and every irreducible component of $X$ has dimension $\dim Y+n$, then every irreducible component of every fibre has dimension $n$ [@Har77, Corollary III.9.6].
 
 If $f$ is closed, in particular if $f$ is proper, then the function $y\mapsto\dim X_y$ is upper semicontinuous on $Y$: the locus $\theset{y\st\dim X_y\geq r}$ is the image under the closed map $f$ of the corresponding closed locus in $X$ [@Vak25, Theorem 12.4.3(b)].
 :::
@@ -73,6 +74,6 @@ The two halves are used differently.
 The lower bound proves positive-dimensional fibres in dimension-comparison arguments.
 The generic equality gives the dimension formula $\dim X = \dim Y + \dim(\text{general fibre})$.
 
-For a flat finite-type morphism between equidimensional schemes, the local fibre dimension is constant, so this source-side jumping disappears.
-Equidimensionality is needed: for $X=\AA^1_k\sqcup\AA^2_k$ mapping to $\AA^1_k$ by the identity on the first component and the projection on the second, the morphism is flat, $X$ is not equidimensional, and the local fibre dimension is $0$ on the first component and $1$ on the second.
+For a flat finite-type morphism with $X$ equidimensional and $Y$ irreducible, the largest fibre-component dimension is constant, so this source-side jumping disappears; the local dimension can still vary from point to point of $X$, as the flat formula shows.
+Equidimensionality is needed: for $X=\AA^1_k\sqcup\AA^2_k$ mapping to $\AA^1_k$ by the identity on the first component and the projection on the second, the morphism is flat, $X$ is not equidimensional, and the fibre-component dimension is $0$ on the first component and $1$ on the second.
 :::
