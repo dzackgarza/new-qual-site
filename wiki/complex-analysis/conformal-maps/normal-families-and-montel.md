@@ -10,7 +10,7 @@ topics:
 
 # Normal families and Montel
 
-Montel's theorem gives compactness for families of holomorphic functions that are [[D-MBDTR|uniformly bounded on compact subsets]], with respect to [[D-AIQG3|locally uniform convergence]].
+[[T-4ALS2|Montel's theorem]] gives compactness for families of holomorphic functions that are [[D-MBDTR|uniformly bounded on compact subsets]], with respect to [[D-AIQG3|locally uniform convergence]].
 In the proof of the [[complex-analysis/conformal-maps/the-riemann-mapping-theorem|Riemann mapping theorem]] it produces a locally uniformly convergent subsequence of injective maps, and [[complex-analysis/counting-zeros/hurwitz|Hurwitz's theorem]] shows that the nonconstant limit is injective.
 
 ## Equicontinuity
@@ -36,12 +36,6 @@ A family $\mathcal F$ of functions on a metric space $X$ is not uniformly equico
 ## Montel's theorem
 
 [[T-4ALS2]]
-
-::: {.remark title="Pointwise convergence"}
-If a locally uniformly bounded sequence of holomorphic functions on $\Omega$ converges pointwise on $\Omega$, then it converges locally uniformly.
-By Montel's theorem every subsequence has a further subsequence converging locally uniformly, and pointwise convergence forces all of these limits to equal the pointwise limit.
-Consequently, if $f_n \to f$ pointwise on $\Omega$ and $f$ is discontinuous or fails to be holomorphic at some point, then $\theset{f_n}$ is not uniformly bounded on compact subsets of $\Omega$.
-:::
 
 ::: {.example}
 A sequence of holomorphic functions on $\Omega$ with values in a fixed disc is uniformly bounded, so it has a locally uniformly convergent subsequence, and the limit is holomorphic.
