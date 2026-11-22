@@ -104,10 +104,8 @@ The decomposition is [@Ahl73, ch. 5, §2.1, Partial Fractions], which attaches t
 [[FF-IAUQG]]
 
 ::: {.remark}
-Inside its radius of convergence, a power series may be integrated and differentiated term by term, and the resulting series have the same radius of convergence.
-A uniformly convergent series of continuous functions on a compact interval may be integrated term by term.
-A uniformly convergent series of differentiable functions need not be differentiable term by term ([[complex-analysis/basics/uniform-convergence|Uniform convergence]]).
-
+Term-by-term differentiation needs a hypothesis on the derivatives, not only on the series: a uniformly convergent series of differentiable functions need not be differentiable term by term ([[complex-analysis/basics/uniform-convergence|Uniform convergence]]).
+The power-series case is [[PR-QNDSD]], and the tail criterion for uniform convergence is [[PR-4LISY]].
 :::
 
 [[PR-WIMIM]]
