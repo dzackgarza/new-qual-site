@@ -60,6 +60,17 @@ audit:
     step repeating the n = 1 conclusion was written and then merged, so the card ends at a
     single QED step per the layout rule. Not claimed: a retained solution set; the collection's
     provenance is the Hatcher textbook, whose text is not retained here.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 23. Two repairs. (1) Step `vanishing` argued for
+    $H_{n+1}(K)=0$ through the Hurewicz theorem in degree $n+1$, but $K$ is only $(n-1)$-connected, so
+    the absolute theorem applies in degree $n$ and the argument was not licensed; the step now cites
+    §4.2 Exercise 22 directly, which is the statement that $H_{n+1}(K(G,n);\ZZ)=0$ for $n>1$, and
+    says why Hurewicz does not give it. (2) An earlier revision of this card had step `vanishing`
+    carrying step `connecting`'s proof text; the step now carries a proof of its own claim, and
+    `connecting` uses $H_{n+1}(K)=0$ to conclude that $\partial$ is onto, which is the correct reason.
 ---
 
 ::: {.problem}
@@ -87,7 +98,7 @@ Attaching an $(n+2)$-cell kills a chosen element of $\pi_{n+1}$ and leaves the g
 For $n > 1$, $H_{n+1}(K) = 0$.
 
 ::: pf-proof
-For $n > 1$ the space $K$ is $(n-1)$-connected with $n-1 \ge 1$, so it is simply connected and the Hurewicz theorem applies in degree $n+1 \ge 2$: $h\colon\pi_{n+1}(K) \to H_{n+1}(K)$ is an isomorphism. But $\pi_{n+1}(K) = 0$ because $K$ is a $K(\pi_{n}(X), n)$, so $H_{n+1}(K) = 0$; this is the statement of the previous exercise, [[E-HAT-4.2-22]], which the card cites as Exercise 22.
+$K$ is a $K(\pi_n(X),n)$ with $n>1$, so $H_{n+1}(K;\ZZ)=0$: that is §4.2 Exercise 22, [[E-HAT-4.2-22]]. The Hurewicz theorem would not give it — $K$ is only $(n-1)$-connected, so the absolute theorem applies in degree $n$, not in degree $n+1$ — and the earlier form of this step, which argued through $\pi_{n+1}(K)$ and Hurewicz, was not licensed.
 
 :::
 
