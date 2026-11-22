@@ -52,7 +52,7 @@ Let $(X,\mu)$ be a measure space and $1\leq p\leq\infty$, with conjugate exponen
 
 ## Density and duality arguments
 
-The identification of $\dualof{L^p}$ with $L^q$ for $1\leq p<\infty$ ([[T-5BFVS]]) turns two approximation statements into conclusions used below.
+The identification of $\dualof{L^p}$ with $L^q$ for $1\leq p<\infty$, with $\mu$ $\sigma$-finite in the case $p=1$ ([[T-5BFVS]]), turns two approximation statements into conclusions used below.
 Two continuous maps on $L^p$ that agree on a dense subset agree on $L^p$.
 A function $f\in L^p$ with $\int fg=0$ for every $g$ in a dense subset of $L^q$ vanishes almost everywhere.
 
