@@ -147,7 +147,7 @@ The integrands are functions whose values on a rotated ray or a translated line 
 If $f(\zeta z) = f(z)$ for $\zeta = e^{2\pi i/m}$, use the sector $\theset{0\leq\arg z\leq 2\pi/m,\ \abs z\leq R}$.
 If the arc integral tends to $0$, the ray $z = \zeta x$, traversed toward $0$, contributes $-\zeta\int_0^\infty f$, so, by [[T-HRPNO|the residue theorem]], $(1-\zeta)\int_0^\infty f$ is $2\pi i$ times the sum of the residues in the sector.
 For $f(x) = 1/(1+x^n)$ and $\zeta = e^{2\pi i/n}$ this gives $\int_0^\infty {\dx\over 1+x^n} = {\pi/n\over\sin(\pi/n)}$.
-For a rational $f$ on the keyhole the two edges are the same ray with the two arguments, and their integrals cancel: the sector relation at $\zeta = e^{2\pi i}$ reads $0 = 2\pi i\sum_{z_0}\Res_{z=z_0}f$. Inserting a factor $\log z$ breaks the cancellation, as in [[complex-analysis/residues-and-contours/which-contour-do-i-close#a-branch-cut-a-logarithm|the logarithm case]].
+For a rational $f$ on the keyhole the two edges are the same ray with the two arguments, and their integrals cancel: the sector relation at $\zeta = e^{2\pi i}$ reads $0 = 2\pi i\sum_{z_0}\Res_{z=z_0}f$. Inserting a factor $\log z$ breaks the cancellation, as in [[complex-analysis/residues-and-contours/which-contour-do-i-close#A branch cut: a logarithm|the logarithm case]].
 For $f$ even, $\int_0^\infty f = \frac12\int_\RR f$ and a contour for $\int_\RR f$ applies; for $f$ not even with $f(\zeta z) = f(z)$ for a root of unity $\zeta$, the sector with edge $\zeta[0,\infty)$ applies.
 :::
 
