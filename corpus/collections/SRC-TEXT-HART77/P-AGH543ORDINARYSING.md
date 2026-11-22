@@ -524,6 +524,35 @@ audit:
     edited, and the pages they name remain the record of what was read. Not checked:
     the rendered page, and no printing of Fulton other than the text version
     retained in tmp/sources.
+- event: source-checked
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Published-solution pass for issue #160, on the transcription rule. The
+    exercise's characteristic-p case is proved by Fulton's Appendix A together
+    with the neutrality of its preliminary transformation, and by no retained
+    Hartshorne solution set; the "Other published treatments" remark now says
+    so and names the sets searched. Read in this pass, at their own numbering:
+    the printed exercise in tmp/sources/hartshorne-1977-algebraic-geometry.md,
+    where the number is garbled to "4.." and the wording is the card's
+    statement; Yang Pi-Yeh, Solution 5.4.3, which chooses the two auxiliary
+    points, shows the image point is on neither fundamental line and has
+    smaller multiplicity, and stops, separating no characteristic; Egbert,
+    Exercise V.4.3, which is the sentence citing Hirschfeld's Theorem 3.27;
+    the National Taiwan University Chapter V §4 Exercise 3, by Shuang-Yen Lee,
+    whose local computation through the chart x = (t+mu)y ends "induction on
+    this then we are done" and asserts that the blown-down singularities are
+    ordinary without proving it; and, for absence, the retained sets carrying
+    no Chapter V §4 exercise, Borcherds (through IV.1), Cais (through Chapter
+    4), Cutrone--Marshburn (Chapters 1 and 2), Ionita--Kumar (Chapter I), Kim
+    (§2.4), Lomont, Park (Chapter 4 and §V.5), Saglam--Chris (Chapter III),
+    Sam (through IV.6), Stein (III.7), Troiani (Chapter II) and Reiser
+    (IV.2.5). The remark now states that only those three retained sets contain
+    the exercise, that each is incomplete, and that the two passages the card
+    supplies itself are the ordinariness at step excellent-position and the
+    neutrality for N and g*. No statement and no proof step changed in this
+    pass. Not read: Hirschfeld's tract, still not held; any printing of Fulton
+    or Hartshorne, only the text versions in tmp/sources.
 ---
 
 ::: {.problem}
@@ -756,4 +785,17 @@ Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-L
 Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.4.3, states the termination criterion: with $P_2,P_3$ chosen so that $P_1P_i$ meets $C$ transversally at $P_1$, the image point $R_i$ lies on neither fundamental line and $\mu(R_i)<\mu(P_1)$, so the process stops. It does not show that the images at the three contraction points are ordinary, and it separates no characteristic.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.4.3, is the single sentence "See Algebraic Curves over Finite Fields by Hirschfeld, Theorem 3.27".
+
+No retained solution set proves the exercise, in any characteristic, so the proof above is the
+card's own wherever it goes beyond Fulton and Rüd. Of the retained sets only the three named in this
+remark contain Exercise V.4.3 at all, and each of them is incomplete: the National Taiwan University
+set does not show that the three contracted points are ordinary, Yang Pi-Yeh's entry proves the
+termination criterion alone and separates no characteristic, and Egbert's entry is a citation of a
+book that is not held and was not read. The other retained sets carry no Chapter V §4 exercise:
+Borcherds, Cais, Cutrone--Marshburn, Ionita--Kumar, Kim, Lomont, Park, Saglam--Chris, Sam, Stein,
+Troiani and Reiser. The two passages the card supplies itself are the ordinariness of the three
+fundamental images in step [](#excellent-position){.pf-ref}, where Rüd's Proposition 21 states it and
+its proof reaches only the multiplicities, and the neutrality for $N$ and $g^*$ of the preliminary
+transformation of Fulton's Appendix A in step [](#positive-characteristic){.pf-ref}, where the
+appendix says only that one may then proceed as before.
 :::
