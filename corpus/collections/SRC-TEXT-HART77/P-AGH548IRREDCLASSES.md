@@ -670,6 +670,28 @@ audit:
   by: claude
   date: 2026-11-22
   note: >-
+    What the characteristic-3 caveat leaves open, and what closes part of it.
+    The 27 lines themselves are available in every characteristic by a proof
+    that uses no separability, no discriminant and no vanishing theorem: the
+    Fano scheme of lines of X is the zero scheme in the Grassmannian G(1,3) of
+    the section of Sym^3 S^* given by the cubic form; by adjunction N_{L/X} is
+    a line bundle of degree 2 - 3 = -1, hence O(-1), so h^0 = h^1 = 0 and every
+    point of the zero scheme is isolated and reduced; and c_4(Sym^3 S^*) = 27.
+    That last number, checked by hand in this pass: the Chern roots of
+    Sym^3 S^* are -3x, -2x-y, -x-2y, -3y, so
+    c_4 = 9xy(2x^2+5xy+2y^2) = 9(2c_1^2c_2+c_2^2), and on G(2,4) the Pieri
+    products give c_1^2 c_2 and c_2^2 both equal to the class of a point. The
+    zero scheme therefore has length 27 and consists of 27 reduced points,
+    which is the 27-lines theorem in every characteristic. This is not the
+    route the step uses and it is not written out on the card; it is recorded
+    because it is the characteristic-free substitute for the one part of
+    Theorem 27.0.2 that Vakil's printed proof leaves to characteristic != 3. It
+    does not by itself give the six mutually skew lines nor the identification
+    of the surface as a blowup, which remain where the step says they are.
+- event: source-checked
+  by: claude
+  date: 2026-11-22
+  note: >-
     Published-solution pass for issue #160, on the transcription rule: the
     nonsingularity of the member of alternative (c) is proved by no retained
     solution set, in any characteristic, and the "Published solution" remark
