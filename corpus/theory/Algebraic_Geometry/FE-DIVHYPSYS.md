@@ -29,7 +29,7 @@ Let $X \subseteq \PP^n$ be a projective variety over an algebraically closed fie
 2. A general hyperplane section is smooth at every point where $X$ is smooth, over a field of characteristic $0$ unless $X$ itself is smooth.
    So it is smooth if $X$ is smooth, in any characteristic, and also if the singular locus of $X$ is finite, since a general hyperplane misses finitely many points.
    The first sentence is [@Har77, Theorem II.8.18], whose hypotheses are exactly those of this proposition: $X$ a nonsingular closed subvariety of $\PP^n_k$ over an algebraically closed field, with no condition on the characteristic.
-   For a singular $X$ the corresponding statement over a field of characteristic $0$ is [@Har77, Corollary III.10.9], Bertini for a linear system without base points on a nonsingular projective variety, applied to the nonsingular open subset of $X$; that corollary requires characteristic $0$, and no retained source supplies the statement in positive characteristic.
+   For a singular $X$ the corresponding statement over a field of characteristic $0$ is [@Har77, Corollary III.10.9], Bertini for a linear system without base points on a nonsingular projective variety, applied to the nonsingular open subset of $X$; that corollary requires characteristic $0$.
 :::
 
 ::: {.example}
