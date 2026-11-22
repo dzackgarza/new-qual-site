@@ -31,7 +31,7 @@ For $A=k[\varepsilon]/(\varepsilon^2)$ the class of $\varepsilon$ is a nonzero e
 [[D-AN662]]
 
 The cover clause is where relative notions enter.
-An affine scheme is the case of a one-element cover, and every property a morphism is asked to have — of finite type, finite, reduced, of dimension $n$ — is asserted on the members of an affine open cover and has to be independent of which cover was chosen.
+An affine scheme is the case of a one-element cover, and an affine-local property of morphisms — of finite type, of finite presentation, flat, smooth, étale — is asserted on the members of an affine open cover, with the affine communication lemma below the statement that the answer does not depend on which cover was chosen; not every property is of this kind, and irreducibility and integrality are the standard exceptions.
 
 Recall that a [[D-AN662|morphism of schemes]] is a morphism of locally ringed spaces: a continuous $f$ with $f^\sharp\colon\OO_Y\to f_*\OO_X$ whose induced maps on stalks $f^\sharp_p\colon\OO_{Y,f(p)}\to\OO_{X,p}$ are local.
 Locality is exactly what makes the two directions agree on affine schemes: for rings $A$ and $B$, every morphism of locally ringed spaces $\Spec B\to\Spec A$ is induced by a unique ring homomorphism $A\to B$, so that $\Spec$ is an anti-equivalence [@Har77, Proposition II.2.3].
@@ -50,7 +50,7 @@ No morphism of schemes does this, because the only candidate ring map $R\to K$ i
 The adjunction in [[T-SK599]] is the computational form of the definition: a morphism $X\to\Spec A$ is a ring homomorphism $A\to\Gamma(X,\OO_X)$, so a scheme over $\Spec A$ is a scheme whose ring of global sections, and every ring of sections of an open subset, is an $A$-algebra [@Har77, Exercise II.2.4].
 Applied with $A=k[x_1,\ldots,x_n]$, this says that a morphism $X\to\AA^n_S$ over $S$ is an $n$-tuple of global sections of $\OO_X$, namely the pullbacks of the coordinates ([[D-AN662]]).
 
-The criterion for affineness is the assertion that the comparison morphism $X\to\Spec\Gamma(X,\OO_X)$ is an isomorphism, and the standard non-examples are the two one expects: $\Gamma(\PP^1_k,\OO)=k$, so the comparison morphism for $\PP^1_k$ lands in a point; and $\Gamma(\AA^2_k\sm\theset{0},\OO)=k[x,y]$, so the comparison morphism for the punctured plane is the open immersion into $\AA^2_k$ ([[T-SK599]]).
+The criterion for affineness is the assertion that the comparison morphism $X\to\Spec\Gamma(X,\OO_X)$ is an isomorphism, and it fails for $\PP^1_k$, where $\Gamma(\PP^1_k,\OO)=k$ so that the comparison morphism lands in a point, and for the punctured plane, where $\Gamma(\AA^2_k\sm\theset{0},\OO)=k[x,y]$ and the comparison morphism is the open immersion into $\AA^2_k$ ([[T-SK599]]).
 Over an algebraically closed field the classical theory embeds: there is a fully faithful functor from varieties over $k$ to schemes over $k$ whose image on a variety $V$ has the nonempty irreducible closed subsets of $V$ as its points and recovers the regular functions on the closed points [@Har77, Proposition II.2.6].
 
 ## What the classical picture cannot hold

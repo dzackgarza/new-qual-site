@@ -38,7 +38,7 @@ With $\OO_X(1)$ very ample the duality then holds in every degree: there are nat
 For locally free $\mcf$ that gives the familiar form of the statement, $H^i(X,\mcf)\cong H^{n-i}(X,\omega_X^\circ\tensor\dualof{\mcf})^\vee$ [@Har77, Corollary III.7.7] ([[T-COHSD]]).
 
 Two further theorems identify the dualizing sheaf in the cases that occur in practice.
-If $X\subseteq\PP^N$ is a local complete intersection of codimension $r$ with ideal sheaf $\mci$, then $\omega_X^\circ\cong\omega_{\PP^N}\tensor\wedge^r(\mci/\mci^2)^\vee$, which is invertible [@Har77, Theorem III.7.11].
+If $X\subseteq\PP^N$ is a local complete intersection of codimension $r$ with ideal sheaf $\mci$, then $\omega_X^\circ\cong\restrictionof{\omega_{\PP^N}}{X}\tensor\wedge^r(\mci/\mci^2)^\vee$, the first factor being the canonical sheaf of the ambient projective space restricted to $X$ and the second an invertible sheaf on $X$, so $\omega_X^\circ$ is invertible [@Har77, Theorem III.7.11].
 And if $X$ is a projective nonsingular variety over an algebraically closed field, then $\omega_X^\circ\cong\omega_X=\Omega^n_{X/k}$ [@Har77, Corollary III.7.12].
 So the dualizing sheaf is the right generalization of the canonical sheaf to singular or non-CM projective schemes: it exists always, it agrees with $\omega_X$ when $X$ is smooth, and it is invertible under the weaker hypothesis of being a local complete intersection.
 

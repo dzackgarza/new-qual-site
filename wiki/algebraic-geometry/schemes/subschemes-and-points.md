@@ -44,7 +44,7 @@ For a morphism $f\colon X\to Y$, to say that the image of $f$ lies in a closed s
 The scheme-theoretic image of $f$ is the unique smallest closed subscheme through which $f$ factors [@Har77, Exercise II.3.11], and its ideal sheaf is $\ker(\OO_Y\to f_*\OO_X)$ whenever that kernel is quasicoherent, which holds for $f$ quasicompact and quasiseparated ([[D-SCHIMG]], [@Vak25, §9.4]).
 
 Three properties follow from the definition and are what it is used for.
-For affine $f$, induced by $\varphi\colon A\to B$, the image is $\Spec(A/\ker\varphi)$, so the scheme-theoretic image is the image in the category of affine schemes as well as the set-theoretic one.
+For affine $f$, induced by $\varphi\colon A\to B$, the image is $\Spec(A/\ker\varphi)$, whose underlying space is the closure of the set-theoretic image rather than the image itself: for $k[t]\to k[t,t^{-1}]$ the kernel is zero, so the scheme-theoretic image is $\Spec k[t]$ while the set-theoretic image is the open set $D(t)$.
 For $X$ reduced, the scheme-theoretic image is the closure of the set-theoretic image with its reduced induced structure [@Har77, Exercise II.3.11], so the two constructions of this chapter agree exactly in the reduced case.
 And the image records multiplicity when the source is not reduced: the morphism $\Spec k[\varepsilon]/(\varepsilon^2)\to\AA^1$ sending $\varepsilon$ to $t$ has scheme-theoretic image $V(t^2)$, because the kernel of $k[t]\to k[\eps]/\eps^2$ is $(t^2)$, while the reduced structure on the set-theoretic image is the single point $V(t)$ ([[D-SCHIMG]]).
 

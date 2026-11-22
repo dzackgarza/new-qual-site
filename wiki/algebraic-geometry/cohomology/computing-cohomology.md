@@ -9,7 +9,7 @@ topics:
 
 # Computing cohomology
 
-Sheaf cohomology is the right derived functor of global sections, and the only general way to compute it is Čech cohomology: for a quasicoherent sheaf on a noetherian separated scheme the Čech complex of a finite affine open cover computes $H^*(X,\mcf)$ [@Har77, Theorem III.4.5].
+Sheaf cohomology is the right derived functor of global sections, and for a quasicoherent sheaf on a noetherian separated scheme it is computed by the Čech complex of a finite affine open cover [@Har77, Theorem III.4.5].
 The computation on the standard cover of $\PP^n$ then gives $H^i(\PP^n,\OO(d))$ for every $d$, and degree one carries the two interpretations used everywhere else: $H^1$ is the obstruction to lifting a section across a short exact sequence, and $H^1$ is the classification of line bundles and of extensions.
 
 ## The Čech complex
@@ -51,7 +51,13 @@ Two refinements are worth having in mind.
 Extensions $0\to\mcf\to\mce\to\mcg\to0$ of $\OO_X$-modules are classified by $\Ext^1_{\OO_X}(\mcg,\mcf)$ [@Har77, Exercise III.6.1], and when $\mcg$ is finite locally free this is $H^1(X,\mcf\tensor\mcg^\vee)$ [@Har77, Proposition III.6.7 with Proposition III.6.3], so extension classes and cohomology classes are the same thing ([[PR-ET5PQ]]).
 
 The two interpretations meet in the exponential sequence.
-On $X=\CC\sm\theset{0}$ the map $\exp\colon\OO_X\to\OO_X^\times$ is surjective on stalks and not on global sections, and the exact sequence $0\to\ZZ_X\to\OO_X\xrightarrow{\exp}\OO_X^\times\to0$ has connecting map $\delta\colon H^0(X,\OO_X^\times)\to H^1(X,\ZZ)$; the coordinate function $z$ has $\delta(z)\neq0$, so $z$ has no global logarithm, and $\delta(z)$ is a generator of $H^1(X,\ZZ)\cong\ZZ$ ([[algebraic-geometry/sheaves/morphisms-of-sheaves|morphisms of sheaves]]).
+On $X=\CC\sm\theset{0}$ the map $\exp\colon\OO_X\to\OO_X^\times$ is surjective on stalks and not on global sections, and its kernel is the constant sheaf $2\pi i\ZZ_X$, so after identifying that kernel with $\ZZ_X$ there is an exact sequence
+$$
+0\to\ZZ_X\to\OO_X\xrightarrow{\ \exp\ }\OO_X^\times\to0,
+$$
+whose connecting map is $\delta\colon H^0(X,\OO_X^\times)\to H^1(X,\ZZ_X)$.
+The class $\delta(z)$ of the coordinate function is computed on the cover by $U_1=\CC\sm(-\infty,0]$ and $U_2=\CC\sm[0,\infty)$, on each of which $z$ has a logarithm: taking on $U_1$ the branch with argument in $(-\pi,\pi)$ and on $U_2$ the branch with argument in $(0,2\pi)$, the two logarithms agree on the upper component of $U_1\intersect U_2$ and differ there by $2\pi i$ on the lower component, so $\delta(z)$ is the Čech cocycle equal to $0$ on the first component and to $-1$ on the second ([[D-PTIW0]]).
+Evaluated on the loop $t\mapsto e^{2\pi it}$, this class takes the value $(2\pi i)^{-1}\oint\mathrm{d}z/z=1$, so $\delta(z)$ is a generator of $H^1(X,\ZZ_X)\cong\ZZ$; in particular $\delta(z)\neq0$, which is the statement that $z$ has no global logarithm ([[algebraic-geometry/sheaves/morphisms-of-sheaves|morphisms of sheaves]]).
 
 ## Dévissage
 

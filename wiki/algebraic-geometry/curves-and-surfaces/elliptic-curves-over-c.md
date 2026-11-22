@@ -50,7 +50,11 @@ With the normalization of [[T-CRVJINV]] the modular function is $j(E_{\Lambda_\t
 $$
 J(\tau)=J(\tau')\iff \tau'=\frac{a\tau+b}{c\tau+d}\ \text{ for some } \begin{bmatrix}a&b\\c&d\end{bmatrix}\in\SL_2(\ZZ),
 $$
-with every orbit meeting the fundamental region $\mathcal F=\theset{\tau\in\HH\st-\tfrac12\le\Re\tau<\tfrac12,\ \abs\tau\ge1}$, uniquely ([[T-CRVMODJ]]).
+with every $\SL_2(\ZZ)$-orbit meeting the region
+$$
+\mathcal F=\theset{\tau\in\HH\st-\tfrac12\le\Re\tau<\tfrac12,\ \abs\tau\ge1\ \text{if}\ \Re\tau\le0,\ \abs\tau>1\ \text{if}\ \Re\tau>0}
+$$
+in exactly one point [@Har77, Theorem IV.4.15B] ([[T-CRVMODJ]]).
 So $J\colon\HH/\SL_2(\ZZ)\to\CC$ is a bijection, and combined with the classification by $j$ it says that elliptic curves over $\CC$ up to isomorphism are the points of $\HH/\SL_2(\ZZ)$: the analytic and the algebraic moduli agree ([[T-CRVJINV]], [[D-CRVMOD]]).
 
 ## Complex multiplication

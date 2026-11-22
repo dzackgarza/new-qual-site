@@ -50,12 +50,13 @@ Over $\CC$ the analytic description is explicit: $\Jac(X)(\CC)\cong H^0(X,\Omega
 Changing the paths changes the functional by a period, hence by an element of the lattice, so the class in the quotient is well defined.
 
 Abel's theorem is that a degree-zero divisor is principal exactly when its Abel--Jacobi image vanishes, and Jacobi inversion is that the map is surjective; together they give $\Pic^0(X)\cong\Jac(X)(\CC)$ ([[T-U5QSY]]).
-The two halves have different characters: Abel's theorem computes the kernel, identifying which divisors are principal, and Jacobi inversion says the map is onto, so the pair of statements identifies $\Pic^0(X)$ with $\Jac(X)(\CC)$ ([[T-U5QSY]]).
+Both halves are proved as one statement in Dolgachev, *Topics in Classical Algebraic Geometry*, §5.3.1: the map $\operatorname{aj}\colon\Pic^0(C)\to\Jac(C)$ of (5.19) is an isomorphism because the period map vanishes on principal divisors (Abel's part) and is surjective (Jacobi's inversion).
+The two halves have different characters: Abel's theorem computes the kernel, identifying which divisors are principal, and Jacobi inversion says the map is onto ([[T-U5QSY]]).
 
 ## The theta divisor
 
 [[D-DIVPOLAR]]
 
 A polarization of an abelian variety is the class of an ample line bundle, and for a principal polarization the associated isogeny $\lambda_{\mcl}\colon A\to\dualof A$, $x\mapsto t_x^*\mcl\tensor\mcl^{-1}$, is an isomorphism ([[D-DIVPOLAR]]).
-The Jacobian carries a canonical principal polarization: the theta divisor is the image of the effective divisors of degree $g-1$ under $\Pic^{g-1}(X)\cong\Jac(X)$, so it is defined up to the choice of that identification, that is up to translation, and since translations act trivially on $\NS$ its class is independent of the choice ([[D-DIVPOLAR]], [[T-U5QSY]]).
-So the Jacobian is a principally polarized abelian variety of dimension $g$, with the polarization supplied by the curve rather than chosen ([[D-DIVPOLAR]]).
+The Jacobian carries a canonical principal polarization: the image $\Theta$ of the effective divisors of degree $g-1$ under $\Pic^{g-1}(X)\cong\Jac(X)$ is a hypersurface with $h^0(\Theta)=1$ and $[-1]^*\Theta=\Theta$, a symmetric theta divisor, and an abelian variety carrying such a divisor is a principally polarized abelian variety (Dolgachev, *Topics in Classical Algebraic Geometry*, §5.3.1, (5.20)) ([[D-DIVPOLAR]], [[T-U5QSY]]).
+The divisor is defined up to the choice of the identification $\Pic^{g-1}(X)\cong\Jac(X)$, that is up to translation, and translations act trivially on $\NS$, so its class is independent of that choice; the polarization therefore comes from the curve rather than being chosen ([[D-DIVPOLAR]]).

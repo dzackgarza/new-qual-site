@@ -24,8 +24,9 @@ Lying over: if $A\injects B$, every prime $\mfp$ of $A$ is the contraction of a 
 Incomparability: two primes of $B$ lying over the same prime of $A$ are incomparable, so the fibres of $f$ carry no chain of length one.
 Going up: a chain $\mfp_1\subseteq\cdots\subseteq\mfp_n$ of primes of $A$, together with a chain $\mfq_1\subseteq\cdots\subseteq\mfq_m$ of primes of $B$ over its first $m$ terms, extends to a chain over the whole of it [@AM18, Theorem 5.11] ([[PR-RJ3P7]]).
 
-Geometrically these say that an integral morphism is closed and surjective with fibres that contain no nonconstant chains, hence finite fibres over a point when $A$ and $B$ are finitely generated over a field: an integral morphism is affine and universally closed (Stacks Project, Lemma 29.45.7, tag 01WM), so it is proper when it is of finite type, and it is finite exactly when each $B$ is a finite $A$-module (Stacks Project, Definition 29.45.1, tag 01WH).
-This is the precise sense in which a finite morphism is a branched cover: the fibre over a point is a finite scheme, the image is closed, and no point of the target is missed.
+Geometrically, an integral morphism is affine and universally closed (Stacks Project, Lemma 29.45.7, tag 01WM), hence closed, and it is of finite type and proper when the rings are finitely generated; it is finite exactly when each $B$ is a finite $A$-module (Stacks Project, Definition 29.45.1, tag 01WH).
+Surjectivity is a separate hypothesis and is what lying over supplies, since lying over needs $A\injects B$: the integral ring map $\ZZ\to\ZZ/2$ is not injective, and $\Spec\ZZ/2\to\Spec\ZZ$ has image the single closed point $(2)$.
+For a finite surjective morphism the fibre over a point is a finite nonempty scheme, which is the sense in which a finite morphism is a branched cover.
 
 Going down is the same chain condition with the order reversed, and it does not hold for a general integral extension.
 Let $A\subseteq B$ be domains with $A$ integrally closed and $B$ integral over $A$; then a chain $\mfp_1\supseteq\cdots\supseteq\mfp_n$ of primes of $A$, together with a chain of primes of $B$ over its first $m<n$ terms, extends downwards [@AM18, Theorem 5.16] ([[PR-RJ3P7]]).

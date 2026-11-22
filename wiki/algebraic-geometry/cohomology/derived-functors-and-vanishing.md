@@ -42,7 +42,11 @@ The functoriality is the point: a comparison of two constructions of a sheaf giv
 [[D-SHFFINE]]
 
 On a paracompact Hausdorff space the analytic argument replaces flasqueness by a partition of unity: a fine sheaf admits endomorphisms $\eta_i$ with supports in the members of a locally finite cover and $\sum_i\eta_i=\id$, and gluing $\eta_i(t_i)$ for local lifts $t_i$ produces a global section extending a given section of a closed subset, so a fine sheaf is soft ([[D-SHFFINE]]).
-Soft sheaves are acyclic for global sections, so any resolution by fine sheaves computes the cohomology; on a locally compact Hausdorff space the same holds for $c$-soft sheaves and compactly supported sections, $R^i\Gamma_c(X,\mcf)=0$ for $i>0$ ([[D-SHFFINE]]).
+
+The acyclicity of soft sheaves is one instance of a statement about a family of supports.
+For a paracompactifying family of supports $\Phi$ and a $\Phi$-soft sheaf $\mcf$ one has $H_\Phi^n(X,\mcf)=0$ for every $n\ge1$, and the same holds for every flasque sheaf (Godement, *Topologie algébrique et théorie des faisceaux*, Chapitre II, Théorème 4.4.3).
+The two families in use are the closed subsets, for which $\Phi$-soft means soft and $H_\Phi$ is ordinary cohomology, and the relatively compact subsets, for which $\Phi$-soft means $c$-soft and $H_\Phi$ is the cohomology of $\Gamma_c$; so on a locally compact Hausdorff space a $c$-soft sheaf satisfies $R^i\Gamma_c(X,\mcf)=0$ for $i>0$ ([[D-SHFFINE]]).
+A resolution by $\Phi$-soft sheaves likewise computes $H_\Phi$, so a fine resolution computes ordinary cohomology and a $c$-soft resolution computes compactly supported cohomology (Godement, Chapitre II, Théorème 4.6.2 and §4.7) ([[D-SHFFINE]]).
 This is the mechanism by which the de Rham and Dolbeault complexes of a manifold compute its cohomology, and it is where the difference between the algebraic and the analytic settings sits: Zariski opens are not paracompact in the relevant sense, so the algebraic theory has no partitions of unity and uses flasque sheaves instead.
 
 ## Vanishing on an affine scheme

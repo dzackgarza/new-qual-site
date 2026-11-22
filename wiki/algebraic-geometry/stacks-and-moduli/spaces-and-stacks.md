@@ -17,7 +17,7 @@ Two examples mark the endpoints: the Hilbert functor is represented by a scheme,
 
 [[D-HILBSCHEME]]
 
-For a projective morphism $X\to S$ with a relatively very ample $\OO_X(1)$ and a polynomial $P\in\QQ[m]$, the Hilbert functor sends a locally noetherian $S$-scheme $T$ to the closed subschemes $Z\subseteq X\times_ST$ flat over $T$ whose fibres have Hilbert polynomial $P$ ([[D-HILBSCHEME]]).
+For a noetherian scheme $S$, a projective morphism $X\to S$ with a relatively very ample $\OO_X(1)$, and a polynomial $P\in\QQ[m]$, the Hilbert functor sends a locally noetherian $S$-scheme $T$ to the closed subschemes $Z\subseteq X\times_ST$ flat over $T$ whose fibres have Hilbert polynomial $P$ ([[D-HILBSCHEME]]).
 Flatness is what makes the polynomial a condition rather than a hope: for an integral noetherian base, a coherent sheaf on $\PP^n_T$ is flat over $T$ exactly when the Hilbert polynomial of every fibre is the same [@Har77, Theorem III.9.9] ([[T-COHFLATCHI]]).
 And the Hilbert functor is represented: each $\operatorname{Hilb}^P_{X/S}$ is a projective $S$-scheme with a universal family, and $\operatorname{Hilb}_{X/S}$ is the disjoint union over $P$ ([[D-HILBSCHEME]]).
 
@@ -45,7 +45,7 @@ An algebraic space is an étale sheaf whose diagonal is representable by schemes
 
 Every scheme is an algebraic space with the identity as atlas, and if a finite group $G$ acts freely on a quasiprojective $S$-scheme $U$ then $U/G$ is an algebraic space with atlas $U$ ([[D-ALGSPACE]]).
 The point of the notion is that the quotient exists as a geometric object with étale-local properties even when it is not a scheme: properties are checked on the atlas, and the diagonal condition is what allows a morphism from a scheme to be base-changed.
-For a free action of a finite group on a quasiprojective $S$-scheme the quotient is a scheme, so an algebraic space that is not a scheme needs an atlas that is not quasiprojective; the completeness of the definition is what makes those quotients available at all ([[D-ALGSPACE]]).
+The definition is a genuine weakening of representability: the atlas is required only to be étale and surjective, and the quotient of a scheme by an étale equivalence relation exists as an algebraic space whether or not it is a scheme ([[D-ALGSPACE]]).
 
 ## Stacks
 

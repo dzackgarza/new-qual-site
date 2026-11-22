@@ -9,7 +9,7 @@ topics:
 
 # Functors and topologies
 
-A scheme is studied through the functor it represents on test schemes, and once the objects are functors the topology can be changed: a covering family need not consist of open immersions, and the sheaf condition is stated for a Grothendieck topology rather than for a topological space (Stacks Project, Chapter 7, *Sites and Sheaves*).
+A scheme is studied through the functor it represents on test schemes, and once the objects are functors the topology can be changed: a covering family need not consist of open immersions, and the sheaf condition is stated for a Grothendieck topology rather than for a topological space (Stacks Project, Definition 7.47.6, tag 00Z4).
 Changing the topology changes which functors are sheaves, and that is the whole content of the étale and fppf topologies: the Kummer sequence is exact on the étale site and not on the Zariski site, and a quasicoherent sheaf is recovered from its restriction to a faithfully flat cover by descent data.
 
 ## Functors of points
