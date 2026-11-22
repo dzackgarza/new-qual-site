@@ -19,7 +19,7 @@ review: draft
 ::: {.definition}
 The \dfn{Riemann sphere} is $\CP^1\coloneqq\CC\cup\theset{\infty}$, the one-point compactification of $\CC$: its open sets are the open subsets of $\CC$ together with the sets $\theset{\infty}\cup(\CC\sm K)$ for $K\subseteq\CC$ compact.
 The point $\infty$ is the image of $0$ under $z\mapsto1/z$, extended by $1/0\coloneqq\infty$ and $1/\infty\coloneqq0$.
-Stereographic projection identifies $\CP^1$ with the sphere of diameter $1$ resting on the origin of $\CC$ at its south pole, the north pole corresponding to $\infty$ [@SS03, ch. 3, §3].
+Stereographic projection identifies $\CP^1$ with the sphere of diameter $1$ resting on the origin of $\CC$ at its south pole, the north pole corresponding to $\infty$; it is conformal and carries circles to circles (C. McMullen, *Advanced Complex Analysis*, Theorem 2.12; [@SS03, ch. 3, §3]).
 :::
 
 ::: {.remark}
