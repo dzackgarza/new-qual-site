@@ -26,13 +26,8 @@ so $d_{\DD}(0,w) = \frac12\log\frac{1+\abs w}{1-\abs w} = \operatorname{artanh}\
 
 [[T-DAETF]]
 
-::: {.example title="Schwarz--Pick, in the metric"}
-For holomorphic $f\colon\DD\to\DD$ the Schwarz lemma applied to $\psi_{f(z)}\circ f\circ\psi_z^{-1}$ gives
-$$
-\frac{\abs{f'(z)}}{1-\abs{f(z)}^2}\leq\frac{1}{1-\abs z^2}\qquad\text{for all } z\in\DD,
-$$
-which says that $f$ does not increase hyperbolic length; integrating it along a curve gives $d_{\DD}(f(z),f(w))\leq d_{\DD}(z,w)$ [@SS03, ch. 8, Problem 3(a)--(b)].
-Equality at one point forces $f$ to be an automorphism of $\DD$.
+::: {.remark}
+The [[complex-analysis/conformal-maps/the-schwarz-lemma#Consequences|Schwarz--Pick inequality]] says that a holomorphic $f\colon\DD\to\DD$ does not increase hyperbolic length, and $d_{\DD}(f(z),f(w))\leq d_{\DD}(z,w)$ for all $z,w\in\DD$ [@SS03, ch. 8, Problem 3(a)--(b)].
 :::
 
 ## The upper half plane
