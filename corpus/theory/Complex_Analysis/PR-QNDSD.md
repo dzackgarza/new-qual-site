@@ -25,5 +25,5 @@ $$
 c_k=\frac{f^{(k)}(z_0)}{k!},\qquad k\ge0.
 $$
 
-Termwise differentiation of a power series in its disc is [@SS03, Corollary 2.7 of Chapter 1 (p. 18)].
+Termwise differentiation of a power series in its disc is [@SS03, ch. 1, Corollary 2.7].
 :::
