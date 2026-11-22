@@ -55,20 +55,33 @@ p_1,p_2\colon B\longrightarrow C,
 \qquad
 p_1(b)=b\otimes1,\quad p_2(b)=1\otimes b.
 $$
-A \dfn{descent datum} on a $B$-module $N$ is an isomorphism of $C$-modules
+A \dfn{descent datum} on a $B$-module $N$ is an isomorphism of $B\otimes_AB$-modules
 $$
-\theta\colon C\otimes_{B,p_1}N\xrightarrow{\sim}C\otimes_{B,p_2}N
+\theta\colon N\otimes_AB\xrightarrow{\sim}B\otimes_AN ,
 $$
-such that after pullback to $B\otimes_AB\otimes_AB$ one has the cocycle identity
+such that after pullback to $B\otimes_AB\otimes_AB$ the cocycle identity holds:
 $$
-p_{23}^*\theta\circ p_{12}^*\theta=p_{13}^*\theta.
+\theta_{02}=\theta_{12}\circ\theta_{01},
+\qquad
+\theta_{01}=\theta\otimes\id_B,\quad
+\theta_{12}=\id_B\otimes\theta,
 $$
-For an $A$-module $M$, the $B$-module $M\otimes_AB$ has the canonical descent datum induced by the tautological identification of its two pullbacks to $B\otimes_AB$.
+where $\theta_{02}(n\otimes1\otimes1)=\sum_ia_i\otimes1\otimes n_i$ if $\theta(n\otimes1)=\sum_ia_i\otimes n_i$ (Stacks Project, Definition 35.3.1, tag 023G).
+For an $A$-module $M$, the $B$-module $M\otimes_AB$ carries the canonical descent datum
+$$
+\operatorname{can}\colon (M\otimes_AB)\otimes_AB\longrightarrow B\otimes_A(M\otimes_AB),
+\qquad
+(m\otimes b)\otimes b'\longmapsto b\otimes(m\otimes b'),
+$$
+the identification of its two pullbacks to $C$ (Stacks Project, Section 35.3, tag 023F).
 :::
 
 ::: {.theorem title="Faithfully flat descent"}
-If $A \to B$ is faithfully flat, then $M \mapsto (M \otimes_A B, \text{canonical } \theta)$ is an equivalence from $A$-modules to $B$-modules with descent data.
-A quasi-inverse sends $(N,\theta)$ to the $A$-module $\theset{n\in N:\theta(1\otimes n)=n\otimes1}$, under the identifications $C\otimes_{B,p_1}N\cong B\otimes_AN$ and $C\otimes_{B,p_2}N\cong N\otimes_AB$ of $p_1(b)=b\otimes1$ and $p_2(b)=1\otimes b$ (Stacks Project, Proposition 35.3.9, tag 023N, and Remarks 59.16.8, tag 03OE).
+If $A \to B$ is faithfully flat, then $M \mapsto (M \otimes_A B, \operatorname{can})$ is an equivalence from $A$-modules to $B$-modules with descent data, and a quasi-inverse sends $(N,\theta)$ to the $A$-module
+$$
+\theset{n\in N:\theta(n\otimes1)=1\otimes n}\subseteq N ,
+$$
+both sides lying in $B\otimes_AN$ (Stacks Project, Proposition 35.3.9, tag 023N, and Lemma 35.3.7, tag 039W).
 :::
 
 ::: {.remark}
