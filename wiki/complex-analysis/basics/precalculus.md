@@ -35,15 +35,7 @@ The sum is the one-line count of turning angles: traversing the boundary once, t
 The Apollonius circle is [@Ahl73, ch. 3, §3.5, Families of Circles], which names the locus $\abs{z-a}=k\abs{z-b}$ the circles of Apollonius with limit points $a$ and $b$; the ellipse and the hyperbola in their focal forms are (16) and (17) of [@Ahl73, ch. 3, §4.2, A Survey of Elementary Mappings], obtained there as the images of the circles $\abs w=\rho$ and of the rays under $z=\frac12\qty{w+1/w}$.
 :::
 
-::: {.fact title="Classification by the discriminant"}
-For a nondegenerate real conic $Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$ with at least one real point and discriminant $\Delta \coloneqq B^2 - 4AC$:
-
-- $\Delta < 0$ if and only if the conic is an ellipse, and it is a circle if and only if moreover $A=C$ and $B=0$;
-- $\Delta = 0$ if and only if the conic is a parabola;
-- $\Delta > 0$ if and only if the conic is a hyperbola.
-
-The three cases come from the eigenvalues of the quadratic part: with $M\coloneqq\begin{pmatrix}A&B/2\\B/2&C\end{pmatrix}$ one has $\det M=AC-B^2/4=-\Delta/4$, and a rotation diagonalises $M$, leaving $\lambda_1X^2+\lambda_2Y^2$ with $\lambda_1\lambda_2=\det M$; a translation then completes the squares. So $\Delta<0$ is $\lambda_1\lambda_2>0$, the two curvatures of the same sign, an ellipse or nothing; $\Delta=0$ is a zero eigenvalue, a parabola; and $\Delta>0$ is opposite signs, a hyperbola. The circle is $\lambda_1=\lambda_2$, that is $A=C$ and $B=0$.
-:::
+[[D-CN7QC]]
 
 ::: {.fact title="Parameterizations"}
 \envlist
