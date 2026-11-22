@@ -44,7 +44,7 @@ Going down also holds for every flat ring map $A \to B$ (Stacks Project, Lemma 1
 ::: {.remark}
 Going up says that a chain of primes of $A$ ascending from a prime in the image of $f$ lifts to $B$; this is what makes $f(V(\mfq)) = V(\phi^{-1}(\mfq))$, so the image of a closed set is closed, and going up is the algebraic form of the closedness of an integral morphism (Stacks Project, Lemma 29.45.7, tag 01WM).
 
-Surjectivity is not part of that: it is lying over, and it needs $\phi$ injective. Without injectivity $f$ can miss points — the finite ring map $\ZZ\to\ZZ/2$ gives $\Spec\ZZ/2\to\Spec\ZZ$, which misses the generic point, although every finite morphism is closed and has finite fibres.
+Surjectivity is not part of that: it is lying over, whose hypothesis is that $\phi$ be injective. Injectivity is sufficient for the surjectivity of $f$ and not necessary: the finite ring map $k[t]/(t^2)\to k$, $t\mapsto0$, is not injective, and $\Spec k\to\Spec k[t]/(t^2)$ is a homeomorphism of one-point spaces, hence surjective. What injectivity excludes is the primes not containing the kernel, and without it $f$ can miss points: the finite ring map $\ZZ\to\ZZ/2$ has kernel $(2)$, and $\Spec\ZZ/2\to\Spec\ZZ$ misses the generic point, although every finite morphism is closed and has finite fibres.
 
 The dimension statement is separate again, and it is about an extension of rings rather than about an arbitrary finite map: going up together with incomparability makes $\dim B = \dim A$ for an integral extension $A\subseteq B$, so an integral morphism has the dimension of its image; a finite morphism need not preserve the dimension of its target, the same $\ZZ\to\ZZ/2$ having dimension $1$ below and $0$ above.
 
