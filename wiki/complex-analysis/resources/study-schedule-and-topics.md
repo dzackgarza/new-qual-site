@@ -58,7 +58,7 @@ The chapter's syllabus, section by section with its references, is on [[complex-
 - [[complex-analysis/conformal-maps/build-me-a-map|Conformal maps and the standard maps]]
 - [[complex-analysis/conformal-maps/mobius-transformations|Möbius transformations]]
 - [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors and automorphisms of the disc and the plane]]
-- [[complex-analysis/conformal-maps/the-schwarz-lemma#Consequences|The Schwarz lemma]]
+- [[complex-analysis/conformal-maps/the-schwarz-lemma|The Schwarz lemma]]
 - [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|The open mapping theorem]]
 
 ## Omitted values
