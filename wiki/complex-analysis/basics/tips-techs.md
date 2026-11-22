@@ -51,7 +51,7 @@ $$
 0 & \ell\neq 0,
 \end{cases}
 $$
-and the differentials $\dz = \dx+i\,\dy$ and $\dzbar = \dx-i\,\dy$, together with $f_z = f_x = f_y/i$ for holomorphic $f$, are on [[complex-analysis/holomorphic-functions/the-cauchy-riemann-equations#Derivatives in coordinates|the Cauchy--Riemann equations]].
+and the complex differentials $\dz = \dx+i\,\dy$ and $\dzbar = \dx-i\,\dy$ are the statement of [[D-OAFF5|the Wirtinger operators]].
 
 :::
 
