@@ -100,6 +100,16 @@ audit:
     approximation. Both are correct. One correction: the solution carried no statement of what the
     retained sets contain, and now records that none holds a solution — Sam's §4.1 has no entry for
     Exercise 22 and Proudfoot's Homework #6 covers Exercises 4, 11, 12, 14 and 15.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    One correction after an independent reading, in the forward direction: it passed from the countable
+    stages $K_n$ to their union and asserted that the map on homotopy groups is an isomorphism without
+    saying why $\pi_i(K)$ is the colimit of the $\pi_i(K_n)$. The step now runs the compactness
+    argument the converse already used: a map $S^i\to K$ has compact image, hence lies in a finite
+    subcomplex and so in some single $K_n$ (Proposition A.1), which identifies the colimit; and each
+    $K_n$ with $n\ge i$ maps to $X$ by an isomorphism on $\pi_i$, so the limit is $\pi_i(X)$.
 ---
 
 ::: {.problem}
@@ -128,7 +138,7 @@ At every stage only countably many cells are added. Taking the union
 $$
 K=\bigcup_n K_n
 $$
-produces a CW complex with countably many cells and a map $K\to X$ inducing isomorphisms on every homotopy group. Hence $K\to X$ is a CW approximation, and
+produces a CW complex with countably many cells and a map $K\to X$ inducing isomorphisms on every homotopy group. The passage to the union uses compactness: a map $S^i\to K$ has compact image and so lies in a finite subcomplex, hence in some single $K_n$ (Proposition A.1), which identifies $\pi_i(K)$ with the direct limit of the $\pi_i(K_n)$; each $K_n$ with $n\ge i$ maps to $X$ by an isomorphism on $\pi_i$, so the limit is $\pi_i(X)$ and the map is an isomorphism there. Hence $K\to X$ is a CW approximation, and
 $$
 \boxed{X\text{ has a CW approximation with countably many cells}.}
 $$
