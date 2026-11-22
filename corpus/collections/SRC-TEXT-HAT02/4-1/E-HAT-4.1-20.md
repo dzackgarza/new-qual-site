@@ -86,6 +86,18 @@ audit:
     between two fixed points form a torsor under $\pi_1(C)$, not a quotient. The count and every
     other step are unchanged; `postnikov`, `components`, `obstruction`, `choices`, `independent` and
     the conclusion were re-read and stand.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    One further repair, in step `induction`. Its conclusion passed from "finitely many extensions of a
+    fixed map on $X^{k-1}$" to "finitely many classes in $[X^k,C]$" without saying how the latter is
+    assembled from the former: $[X^k,C]$ is the union over the classes $[\varphi]\in[X^{k-1},C]$ of
+    the classes restricting to $[\varphi]$, and each fibre is a quotient of the extensions of
+    $\varphi$ up to homotopy relative to $X^{k-1}$, because two homotopic extensions can be replaced
+    by extensions agreeing on $X^{k-1}$ using the homotopy extension property of the CW pair
+    $(X^k,X^{k-1})$ (Proposition 0.16). The step now runs that passage; the induction is unchanged
+    otherwise.
 ---
 
 ::: {.problem}
@@ -155,7 +167,7 @@ A homotopy rel $X^{k-1}$ between two extensions restricts to a homotopy rel $\pa
 For each $k\le d$ the set of homotopy classes of maps $X^{k}\to C$ extending a fixed map on $X^{k-1}$ is finite, and consequently $[X,C]$ is finite.
 
 ::: pf-proof
-Induction on $k$ from $k=0$, where the set of homotopy classes of maps $X^{0}\to C$ is a single point: $X^{0}$ is a finite discrete set and $C$ is path-connected, so any two maps of $X^{0}$ into $C$ are homotopic, a homotopy moving each of the finitely many image points along a path in $C$. At the step, step [](#percell){.pf-ref} gives at most $\cardinality{\pi_k(C)}$ extensions over each $k$-cell and step [](#independent){.pf-ref} bounds their number by a finite product, with $\pi_k(C)$ finite for $k\le d$ by hypothesis. Since $X$ is $d$-dimensional, $X^{d}=X$, and the induction terminates at $[X,C]$.
+Induction on $k$ from $k=0$, where the set of homotopy classes of maps $X^{0}\to C$ is a single point: $X^{0}$ is a finite discrete set and $C$ is path-connected, so any two maps of $X^{0}$ into $C$ are homotopic, a homotopy moving each of the finitely many image points along a path in $C$. At the step, step [](#percell){.pf-ref} gives at most $\cardinality{\pi_k(C)}$ extensions over each $k$-cell and step [](#independent){.pf-ref} bounds their number by a finite product, with $\pi_k(C)$ finite for $k\le d$ by hypothesis. For the passage from a fixed map to all maps, $[X^{k},C]$ is the union over the classes $[\varphi]\in[X^{k-1},C]$, finitely many by the induction hypothesis, of the classes restricting to $[\varphi]$; each of those fibres is a quotient of the set of extensions of $\varphi$ over $X^{k}$ up to homotopy relative to $X^{k-1}$ used above, because two extensions homotopic relative to $X^{k-1}$ are homotopic, and two homotopic extensions of $\varphi$ can be replaced by extensions agreeing on $X^{k-1}$ using the homotopy extension property of the CW pair $(X^{k},X^{k-1})$ (Proposition 0.16). So $[X^{k},C]$ is finite for each $k$, and since $X$ is $d$-dimensional, $X^{d}=X$ and the induction terminates at $[X,C]$.
 :::
 
 :::
