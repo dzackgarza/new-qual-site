@@ -39,9 +39,12 @@ On a locally compact Hausdorff space the same holds for $c$-soft sheaves and com
 
 [[T-COHGROTH]]
 
-For $A$ noetherian and $\mcf$ quasicoherent on $\Spec A$, one has $H^0(\Spec A,\mcf)=\Gamma(\Spec A,\mcf)$ and $H^i(\Spec A,\mcf)=0$ for $i>0$ ([[T-COHAFF]]).
-Quasicoherence is the hypothesis that carries the theorem: on $X=\AA^1_k$ with distinct closed points $P,Q$, $U=X\setminus\{P,Q\}$, and $j\colon U\hookrightarrow X$, the sequence $0\to j_!\ZZ_U\to\ZZ_X\to\ZZ_P\oplus\ZZ_Q\to0$, with skyscraper sheaves $\ZZ_P,\ZZ_Q$, gives $H^1(X,j_!\ZZ_U)\cong\ZZ^2/\ZZ\neq0$, because $\ZZ_X$ is flasque on the irreducible space $X$ [@Har77, Exercise III.2.1].
-For a noetherian topological space of dimension $n$, $H^i(X,\mcf)=0$ for every sheaf of abelian groups $\mcf$ and every $i>n$ ([[T-COHGROTH]]); the bound is sharp, since $H^n(\PP^n,\OO(-n-1))\neq0$ ([[T-COHGROTH]]).
+The bound of [[T-COHGROTH]] is sharp: $H^n(\PP^n,\OO(-n-1))\neq0$.
+
+::: {.example title="Quasicoherence cannot be dropped"}
+On $X=\AA^1_k$ over an infinite field with distinct closed points $P,Q$, put $U=X\setminus\{P,Q\}$ and let $j\colon U\hookrightarrow X$ be the inclusion.
+The sequence $0\to j_!\ZZ_U\to\ZZ_X\to\ZZ_P\oplus\ZZ_Q\to0$, with skyscraper sheaves $\ZZ_P,\ZZ_Q$, has $H^0(\ZZ_X)=\ZZ$ and $H^0(\ZZ_P\oplus\ZZ_Q)=\ZZ^2$, and $H^1(X,\ZZ_X)=0$ because $\ZZ_X$ is flasque on the irreducible space $X$; hence $H^1(X,j_!\ZZ_U)\cong\ZZ^2/\ZZ\neq0$, so affine vanishing fails for a quasicoherent sheaf that is not coherent [@Har77, Exercise III.2.1].
+:::
 
 ## The long exact sequence
 
