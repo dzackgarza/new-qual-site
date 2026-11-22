@@ -17,18 +17,11 @@ The unit disc carries a distance in which its own automorphisms are isometries a
 
 [[D-MFPYG]]
 
-The Blaschke factors are isometries of the hyperbolic metric, and since they move any point to $0$, the hyperbolic distance between two points is computed by pushing one of them to the origin.
-For $w = s\in[0,1)$ the shortest curve from $0$ to $s$ is the segment, and its length in the metric $\abs{\dz}/(1-\abs z^2)$ is
-$$
-\int_0^s\frac{\dr}{1-r^2} = \operatorname{artanh}s = \frac12\log\frac{1+s}{1-s},
-$$
-so $d_{\DD}(0,w) = \frac12\log\frac{1+\abs w}{1-\abs w} = \operatorname{artanh}\abs w$ [@SS03, ch. 8, Problem 3(d)].
+The [[D-MFPYG|Blaschke factors]] are isometries of the hyperbolic metric, and since they move any point to $0$, the hyperbolic distance between two points is computed by pushing one of them to the origin and using the distance from $0$ that [[D-2HXLN]] records.
 
 [[T-DAETF]]
 
-::: {.remark}
-The [[complex-analysis/conformal-maps/the-schwarz-lemma#Consequences|Schwarz--Pick inequality]] says that a holomorphic $f\colon\DD\to\DD$ does not increase hyperbolic length, and $d_{\DD}(f(z),f(w))\leq d_{\DD}(z,w)$ for all $z,w\in\DD$ [@SS03, ch. 8, Problem 3(a)--(b)].
-:::
+The invariant form of the Schwarz lemma is the [[T-SCHPK|Schwarz--Pick lemma]]: a holomorphic self-map of the disc does not increase the hyperbolic distance.
 
 ## The upper half plane
 
