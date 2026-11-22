@@ -32,12 +32,9 @@ A polynomial of degree $n\geq1$ has a pole of order $n$ at $\infty$, since $p(1/
 
 ## Distance on the sphere
 
-::: {.fact title="Chordal distance"}
-The chordal distance between two points of $\CP^1$, measured in the stereographic model on the sphere of radius $1$, is
-$$
-d(z,w) = \frac{2\abs{z-w}}{\sqrt{1+\abs z^2}\sqrt{1+\abs w^2}}, \qquad d(z,\infty) = \frac{2}{\sqrt{1+\abs z^2}},
-$$
-so that $d(0,\infty) = 2$ is the diameter; on the sphere of diameter $1$ of [[D-3QTVR]] every distance is halved.
+[[D-CHRD2]]
+
+::: {.remark}
 Either way this makes $\CP^1$ a compact metric space, and the metric gives the topology above.
 It is the quantity that makes $\CP^1$ the natural target of the rational functions: a rational function extends to a continuous map $\CP^1\to\CP^1$, and because $\infty$ is at a finite distance from every point, a sequence of meromorphic functions that tends to $\infty$ uniformly is convergent in this metric like any other sequence of maps into a compact space.
 :::
