@@ -70,6 +70,15 @@ audit:
     events keep their text (QUAL-11); these citations supersede their page locators. No step
     changes.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.D Exercise 5. The proof is correct, but the sentence "no retained
+    solution set covers this exercise" is false: the half of the exercise that asks for the dimension
+    is word for word §4.2 Exercise 32, which Sam's §4.2 Exercise 32 and Proudfoot's homework 7,
+    Problem 32, both solve. The sentence now records that. The n=1 case is separated in the card and
+    the general argument starts at n>1.
 ---
 
 ::: {.problem}
@@ -79,7 +88,7 @@ Then use the Thom isomorphism to show that the Hopf invariant of $p$ must be $\p
 :::
 
 ::: {.solution}
-The Gysin sequence of the sphere bundle forces $k+1=n$: the flanking groups vanish, so cupping with the Euler class is an isomorphism $\ZZ\to H^{k+1}(S^n)$, which is possible only when $k+1=n$. Coning the fibers gives a disc bundle whose Thom class generates the middle cohomology of the mapping cone and whose square is the image of the Euler class, so the Hopf invariant is $\pm1$. The argument is this card's own: no retained solution set covers this exercise.
+The Gysin sequence of the sphere bundle forces $k+1=n$: the flanking groups vanish, so cupping with the Euler class is an isomorphism $\ZZ\to H^{k+1}(S^n)$, which is possible only when $k+1=n$. Coning the fibers gives a disc bundle whose Thom class generates the middle cohomology of the mapping cone and whose square is the image of the Euler class, so the Hopf invariant is $\pm1$. The argument is this card's own, and a retained solution covers the half of the exercise that asks for the dimension: that half is word for word §4.2 Exercise 32, solved in **Sam, §4.2 Exercise 32** (`tmp/sources/hatcher-solutions-sam-2008.md`) and in **Proudfoot, homework 7, Problem 32** (`tmp/sources/uoregon-proudfoot-634-hw7.md`); the sentence claiming that no retained set covers the exercise was false.
 
 ::: pf
 
