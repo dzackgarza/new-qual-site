@@ -31,7 +31,7 @@ Let $\phi: A \to B$ be a ring map with $B$ integral over $\phi(A)$, and $f: \Spe
 
 - (Going up) If $\mfp_1 \subseteq \cdots \subseteq \mfp_n$ is a chain of primes of $A$ and $\mfq_1 \subseteq \cdots \subseteq \mfq_m$, $m < n$, is a chain of primes of $B$ with $\phi^{-1}(\mfq_i) = \mfp_i$, then it extends to a chain $\mfq_1 \subseteq \cdots \subseteq \mfq_n$ with $\phi^{-1}(\mfq_i) = \mfp_i$ for all $i$.
 
-In particular $f$ is a closed map.
+An integral morphism is affine and universally closed, so $f$ is closed (Stacks Project, Lemma 29.45.7, tag 01WM); it is finite when each such $B$ is a finite $\phi(A)$-module (Stacks Project, Definition 29.45.1, tag 01WH).
 [@AM18, Theorems 5.10 and 5.11]
 :::
 
@@ -42,11 +42,11 @@ Going down also holds for every flat ring map $A \to B$ (Stacks Project, Lemma 1
 :::
 
 ::: {.remark}
-Going up says that a chain of primes of $A$ ascending from a prime in the image of $f$ lifts to $B$; this is what makes $f(V(\mfq)) = V(\phi^{-1}(\mfq))$, so the image of a closed set is closed.
-So going up is the algebraic form of "a finite morphism is closed", hence of "a finite morphism is proper".
+Going up says that a chain of primes of $A$ ascending from a prime in the image of $f$ lifts to $B$; this is what makes $f(V(\mfq)) = V(\phi^{-1}(\mfq))$, so the image of a closed set is closed, and going up is the algebraic form of the closedness of an integral morphism (Stacks Project, Lemma 29.45.7, tag 01WM).
 
-Going up together with incomparability makes $\dim B = \dim A$ for an integral extension, which is why a finite surjective morphism cannot drop dimension.
+Surjectivity is not part of that: it is lying over, and it needs $\phi$ injective. Without injectivity $f$ can miss points — the finite ring map $\ZZ\to\ZZ/2$ gives $\Spec\ZZ/2\to\Spec\ZZ$, which misses the generic point, although every finite morphism is closed and has finite fibres.
+
+The dimension statement is separate again, and it is about an extension of rings rather than about an arbitrary finite map: going up together with incomparability makes $\dim B = \dim A$ for an integral extension $A\subseteq B$, so an integral morphism has the dimension of its image; a finite morphism need not preserve the dimension of its target, the same $\ZZ\to\ZZ/2$ having dimension $1$ below and $0$ above.
+
 Going down is what makes heights match, $\operatorname{ht} \mfq = \operatorname{ht}(\mfq \cap A)$, under its hypotheses: geometrically, every generization of $f(\mfq)$ in $\Spec A$ lifts to a generization of $\mfq$.
-
-The two are the reason finite morphisms behave like branched covers: closed, surjective, with finite fibres, and preserving dimension.
 :::
