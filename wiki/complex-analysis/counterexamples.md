@@ -21,7 +21,7 @@ The function $f(z) = \sin z$ is entire and bounded on $\RR$, and $\abs{\sin(iy)}
 :::
 
 ::: {.remark}
-An entire function with $\abs{f(z)}\leq C\abs z^n$ for large $\abs z$ is a polynomial of degree at most $n$ ([[T-22RQZ|Cauchy's inequalities]]), and $f(z) = z^n$ satisfies this bound without being constant.
+The polynomial-growth criterion [[T-PG7ZK]] does not force constancy: $f(z)=z^n$ satisfies its bound with $k=n$ and is not constant.
 :::
 
 ## The identity principle
