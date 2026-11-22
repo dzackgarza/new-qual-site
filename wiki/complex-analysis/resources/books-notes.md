@@ -54,8 +54,6 @@ order: 1
 
 ## Course notes
 
-- [Curtis McMullen, Harvard Math 213a course notes](http://people.math.harvard.edu/~ctm/papers/home/text/class/harvard/213a/course/course.pdf)
-
 - [Ko Honda, complex-analysis course notes](https://www.math.ucla.edu/~honda/math520/notes.pdf)
 
 - [Cambridge Part IB complex analysis lecture notes](https://dec41.user.srcf.net/notes/IB_L/complex_analysis.pdf)
