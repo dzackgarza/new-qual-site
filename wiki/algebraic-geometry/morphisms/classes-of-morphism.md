@@ -35,14 +35,14 @@ The normalization $\AA^1_k\to V(y^2-x^3)$, $t\mapsto(t^2,t^3)$, is a homeomorphi
 
 [[D-MORPROJ]]
 
-The implications are
+Every closed immersion is finite and projective, every finite morphism is proper, every projective morphism is proper, and every proper morphism is universally closed, all by the definitions of [@Har77, §II.4]:
 $$
 \text{closed immersion} \implies \text{finite} \implies \text{proper} \implies \text{universally closed} ,
 \qquad
 \text{closed immersion} \implies \text{projective} \implies \text{proper} .
 $$
 A finite morphism to an affine scheme is projective [@Vak25, Exercise 8.3.I].
-Closed immersions, finite, projective, and proper morphisms are of finite type; a universally closed morphism need not be of finite type.
+Closed immersions, finite, projective, and proper morphisms are of finite type [@Har77, §II.4]; a universally closed morphism need not be of finite type ([[FE-MORNOTPROPER]]).
 [[FE-MORNOTPROPER]]
 
 ## Base change
