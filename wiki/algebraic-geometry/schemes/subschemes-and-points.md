@@ -24,7 +24,7 @@ A closed subscheme $Y\subseteq X$ is determined by its ideal sheaf $\mci_Y\subse
 
 [[PR-SCHINT]]
 
-The scheme-theoretic image of a morphism $f\colon X\to Y$ is cut out by the kernel of $\OO_Y\to f_*\OO_X$, so it records the equations that vanish on the image rather than the set of image points; it agrees with the set-theoretic closure exactly when the map's sections are reduced ([[D-SCHIMG]]).
+The scheme-theoretic image of a morphism $f\colon X\to Y$ is cut out by the kernel of $\OO_Y\to f_*\OO_X$, so it records the equations that vanish on the image rather than the set of image points; when $X$ is reduced it is the closure of the set-theoretic image with its reduced induced structure ([[D-SCHIMG]]).
 
 ## Points, and dimension
 
