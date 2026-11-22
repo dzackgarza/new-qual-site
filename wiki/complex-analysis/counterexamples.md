@@ -21,7 +21,7 @@ The function $f(z) = \sin z$ is entire and bounded on $\RR$, and $\abs{\sin(iy)}
 :::
 
 ::: {.remark}
-The polynomial-growth criterion [[T-PG7ZK]] does not force constancy: $f(z)=z^n$ satisfies its bound with $k=n$ and is not constant.
+The [[T-PG7ZK|polynomial-growth criterion]] does not force constancy: $f(z)=z^n$ satisfies its bound with $k=n$ and is not constant.
 :::
 
 ## The identity principle
