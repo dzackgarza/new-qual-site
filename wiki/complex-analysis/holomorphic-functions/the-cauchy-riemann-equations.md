@@ -8,7 +8,7 @@ topics:
 
 # The Cauchy--Riemann equations
 
-The [[PR-37QA5|Cauchy--Riemann equations]] are the real form of complex differentiability: they turn one complex derivative into a pair of real first-order equations on $u=\Re f$ and $v=\Im f$.
+The [[D-CREQS|Cauchy--Riemann equations]] are the real form of complex differentiability: they turn one complex derivative into a pair of real first-order equations on $u=\Re f$ and $v=\Im f$.
 
 [[D-V6UQJ]]
 
@@ -16,20 +16,11 @@ The [[PR-37QA5|Cauchy--Riemann equations]] are the real form of complex differen
 
 [[D-KLTBZ]]
 
+[[D-CREQS]]
+
 [[PR-37QA5]]
 
 ## Polar form
-
-::: {.proposition}
-Let $f=u+iv$ be real differentiable on an open set and write $z=re^{i\theta}$ with $r>0$.
-Then $f$ satisfies the Cauchy--Riemann equations at $z$ if and only if
-$$
-\frac{\partial u}{\partial r}=\frac1r\frac{\partial v}{\partial \theta},
-\qquad
-\frac1r\frac{\partial u}{\partial \theta}=-\frac{\partial v}{\partial r}.
-$$
-This is the computation of [@SS03, ch. 1, Exercise 9].
-:::
 
 [[E-SS1.EX-9]]
 
@@ -39,8 +30,9 @@ This is the computation of [@SS03, ch. 1, Exercise 9].
 
 [[PR-TVPCM]]
 
-::: {.remark title="Computing with Wirtinger derivatives"}
-For a constant $c$, $\overline{\delbar f(z)} = \del \overline f(z)$, and the basic differentials are $d(cz) = c\dz$ and $d(c\bar z) = c\dzbar$.
+Conjugation interchanges the two operators, $\bar{\delbar f}=\del\bar f$, and for a constant $c$ the basic differentials are $d(cz)=c\dz$ and $d(c\bar z)=c\dzbar$.
+
+::: {.example title="Wirtinger derivatives of $\abs z^2$ and of $e^{-\abs z^2}$"}
 For example,
 $$
 \del \abs z^2 = \del (z\bar z) = \bar z, \qquad \delbar \abs z^2 = z, \qquad d\qty{\abs z^2} = \bar z \dz + z\dzbar
@@ -52,9 +44,7 @@ $$
 
 :::
 
-::: {.remark title="The Jacobian is $\abs{f'}^2$"}
-A holomorphic $f=u+iv$ is real differentiable as a map $\RR^2\to\RR^2$, with Jacobian determinant $\det J_f(z)=\abs{f'(z)}^2$; so it scales area infinitesimally by $\abs{f'}^2$ and is orientation preserving wherever $f'\neq0$ [@SS03, ch. 1, Proposition 2.3].
-:::
+[[T-JACOB]]
 
 ## Solving real integrals with complex calculus
 
@@ -66,7 +56,8 @@ $$
 &= \Re \int e^{3x}e^{2ix}\dx \\
 &= \Re \int e^{(3+2i)x} \dx \\
 &= \Re {e^{(3+2i)x} \over 3+2i} + C
-\end{aligned}.$$
+\end{aligned}
+$$.
 
 :::
 
