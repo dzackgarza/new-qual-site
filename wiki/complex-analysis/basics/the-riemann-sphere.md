@@ -9,11 +9,11 @@ topics:
 
 # The Riemann sphere
 
-The plane plus one point at infinity is a compact surface on which every [[D-7DFVJ|meromorphic function]] becomes a [[D-E7A5W|holomorphic]] map to the sphere, and on which the [[D-FRVBV|Möbius transformations]] act as its biholomorphisms.
+This page writes $\CC$ for the plane, $\CP^1$ for the sphere and $\infty$ for the point at infinity, all as in the transcluded definition.
 
 [[D-3QTVR]]
 
-Stereographic projection from the north pole carries the plane onto the sphere of unit diameter minus that pole, sending the circle $\abs z = R$ to a circle of latitude and the disc $\abs z<R$ to the cap below it [@SS03, ch. 3, §3]; a sequence with $\abs{z_n}\to\infty$ is exactly a sequence leaving every such cap, which is what makes $\infty$ a limit point.
+Stereographic projection from the north pole carries the plane onto the sphere of unit diameter minus that pole, sending, for each $R>0$, the circle $\abs z = R$ to the circle of constant $Z = R^2/(R^2+1)$ and the disc $\abs z<R$ to the cap below it, as the projection formulas of [@SS03, ch. 3, §3] show; a sequence with $\abs{z_n}\to\infty$ is exactly a sequence leaving every such cap, which is what makes $\infty$ a limit point.
 
 ## Maps of the sphere
 
@@ -21,7 +21,7 @@ Stereographic projection from the north pole carries the plane onto the sphere o
 
 [[D-FRVBV]]
 
-A Möbius transformation permutes the generalized circles — the circles and the lines of $\CC$, a line being a circle through $\infty$ — and acts transitively on the triples of distinct points of $\CP^1$ ([[PR-74KHY|three points determine a Möbius transformation]]); the circle-preserving property is the one [[D-FRVBV]] records.
+[[T-QGL7C]]
 
 [[PR-74KHY]]
 
@@ -35,6 +35,5 @@ A polynomial of degree $n\geq1$ has a pole of order $n$ at $\infty$, since $p(1/
 [[D-CHRD2]]
 
 ::: {.remark}
-Either way this makes $\CP^1$ a compact metric space, and the metric gives the topology above.
-It is the quantity that makes $\CP^1$ the natural target of the rational functions: a rational function extends to a continuous map $\CP^1\to\CP^1$, and because $\infty$ is at a finite distance from every point, a sequence of meromorphic functions that tends to $\infty$ uniformly is convergent in this metric like any other sequence of maps into a compact space.
+The extension of a meromorphic function to $\CP^1$ that the sphere is used for is [[T-UBWL2]], and the distances are those of [[D-CHRD2]].
 :::
