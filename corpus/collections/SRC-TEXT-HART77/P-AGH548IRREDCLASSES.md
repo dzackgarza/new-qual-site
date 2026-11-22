@@ -609,6 +609,45 @@ audit:
     assumption. Not read: any printing of either work, only the text versions
     in tmp/sources; and Dolgachev--Duncan's own proof of the 27-line count,
     which §2 states without proof.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    The attribution in the preceding event of this date is withdrawn: it
+    described step geometric-marking as citing Dolgachev and Duncan,
+    Automorphisms of cubic surfaces in positive characteristic (2017), §2. That
+    section carries no numbered statement — its numbered results are Theorem
+    2.1, Theorem 2.4 and Remark 2.5, none of them about lines or blowups — and
+    its prose sentence that a smooth cubic surface "can be obtained by blowing
+    up six points in general position" states neither a field range as a
+    hypothesis nor the two general-position conditions as conclusions, so it
+    could not discharge the step. The step now cites numbered statements of R.
+    Vakil, The Rising Sea (21 October 2025): Theorem 27.0.2, "Every smooth
+    cubic surface over k is isomorphic to P^2 blown up at six points", whose
+    field convention §27.0.3 fixes as "X will be a smooth cubic surface over an
+    algebraically closed field k", with no hypothesis on the characteristic in
+    the statement; Exercise 27.1.B, that a curve on a smooth cubic surface is a
+    line if and only if it is an exceptional curve of the first kind; and
+    Exercise 27.3.E, whose conclusion is that blowing up six points gives a
+    smooth cubic surface only when the points are distinct, no three on a line
+    and not all on a conic. The card derives the second and the third itself as
+    well, from the adjunction formula (II, 8.20), H = -K_X, Proposition V.3.3
+    and the ampleness of H. What Vakil's own proof of Theorem 27.0.2 uses is
+    disclosed here: §27.3 reduces it to Exercise 27.2.J, two disjoint lines with
+    exactly five lines meeting both, and §27.2 proves 27.2.J under the
+    assumption char k = 0, "which carries through without change if char k != 3",
+    the one required check being Exercise 27.1.C, the 27 lines of the Fermat
+    cubic, which is smooth in every characteristic but 3; the case p = 3 is
+    Vakil's starred Exercise 27.2.K, stated and not worked out. So in
+    characteristic 3 the card rests on Theorem 27.0.2 as stated rather than on
+    its printed proof, and Dolgachev and Duncan's prose remains the only
+    assertion for that characteristic among the retained sources. Read in this
+    pass: Vakil's Theorem 27.0.1 and Theorem 27.0.2, §27.0.3, §27.1 Exercises
+    27.1.A to 27.1.C, §27.2 to Exercise 27.2.K, and §27.3 through the proof of
+    Theorem 27.0.2, in tmp/sources/vakil-rising-sea-2025-10-21.md;
+    Dolgachev--Duncan §2 and its numbering; and the adjunction formula (II,
+    8.20) with Proposition V.3.3 in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md. No other step changed.
 - event: source-checked
   by: claude
   date: 2026-11-22
@@ -663,10 +702,14 @@ algebraically closed.
 ::: pf
 
 ::: {.pf-step #geometric-marking}
-$X$ admits a geometric marking: six mutually skew lines whose blowdown is a morphism $\pi\colon X\to\PP^2$ making $X$ the blowup of $\PP^2$ at six points, no three collinear and not all six on a conic. With it, every divisor class is written $D\sim a\ell-\sum_ib_ie_i$, and the intersection numbers used below are those of Proposition 4.8.
+$X$ admits a geometric marking: six mutually skew lines whose blowdown is a morphism $\pi\colon X\to\PP^2$ making $X$ the blowup of $\PP^2$ at six distinct points, no three collinear and not all six on a conic. With it, every divisor class is written $D\sim a\ell-\sum_ib_ie_i$, and the intersection numbers used below are those of Proposition 4.8.
 
 ::: pf-proof
-This is the one place the description of $X$ as a blowup is used, and it holds in every characteristic, $k$ being algebraically closed. D. I. Dolgachev and A. Duncan, *Automorphisms of cubic surfaces in positive characteristic* (2017), §2, state over an algebraically closed field of arbitrary characteristic that a nonsingular cubic surface contains exactly 27 lines and that each is an exceptional curve of the first kind, that a smooth cubic surface is obtained by blowing up six points of $\PP^2$ in general position, no three collinear and not all six on a conic, and conversely that six mutually skew lines on $X$ may be blown down to six points of $\PP^2$, which they call a geometric marking of $X$; the remaining 21 lines are then the strict transforms of the 15 lines through pairs of the six points and of the 6 conics through five of them, which is the list of Theorem V.4.9 in the blowup model. Each of the six blowdowns is the contraction of a curve isomorphic to $\PP^1$ of self-intersection $-1$, and exists by Castelnuovo's criterion, Theorem V.5.7. After the marking $\Pic X$ is free on $\ell,e_1,\ldots,e_6$ with the intersection numbers of Proposition V.4.8(a) and (b): that proposition and Notation V.4.7.3 phrase these for the surface obtained by blowing up the six points, and the marking is an isomorphism from $X$ to that surface, so the classes and their pairings carry over.
+R. Vakil, *The Rising Sea* (21 October 2025), Theorem 27.0.2, states over an algebraically closed field $k$, with no hypothesis on the characteristic, that every smooth cubic surface over $k$ is isomorphic to $\PP^2$ blown up at six points; §27.0.3 of the same book fixes that convention for the chapter, and the surface is the smooth cubic surface of that chapter. Let $\pi\colon X\to\PP^2$ be the resulting morphism and $E_1,\ldots,E_6$ its exceptional curves, and let $H$ be the class of a hyperplane section. By the adjunction formula (II, 8.20), $K_X=(K_{\PP^3}\tensor\OO_{\PP^3}(X))\restriction_X=(-4H+3H)\restriction_X=-H$, so $H=-K_X$. Each $E_i$ is isomorphic to $\PP^1$ with $E_i^2=-1$ and $E_i\cdot K_X=-1$, so $E_i\cdot H=-E_i\cdot K_X=1$, and $E_i$ is a line of the cubic surface by Vakil's Exercise 27.1.B, a curve on a smooth cubic surface being a line exactly when it is an exceptional curve of the first kind. Distinct exceptional curves of a blowup are disjoint, so the six are mutually skew.
+
+The six points $\pi(E_1),\ldots,\pi(E_6)$ are in general position. By Proposition V.3.3 applied to the six blowups, $K_X=\pi^*K_{\PP^2}+\sum_iE_i=-3\ell+\sum_ie_i$, so $H=3\ell-\sum_ie_i$. If three of the points lay on a line $M$, the strict transform of $M$ would be an effective curve of class $\ell-e_1-e_2-e_3$ and of $H$-degree $3-3=0$; if all six lay on a conic $C$, the strict transform of $C$ would be an effective curve of class $2\ell-\sum_ie_i$ and of $H$-degree $6-6=0$. An effective curve on the surface $X$ has positive degree in the class $H$ of a hyperplane section, so neither curve exists: no three of the points are collinear, and not all six lie on a conic. This is the conclusion of Vakil's Exercise 27.3.E, drawn there from the existence of a curve of nonnegative degree.
+
+After the marking $\Pic X$ is free on $\ell,e_1,\ldots,e_6$ with the intersection numbers of Proposition V.4.8(a) and (b): that proposition and Notation V.4.7.3 phrase these for the surface obtained by blowing up the six points, and the marking is an isomorphism from $X$ to that surface, so the classes and their pairings carry over.
 :::
 
 :::
