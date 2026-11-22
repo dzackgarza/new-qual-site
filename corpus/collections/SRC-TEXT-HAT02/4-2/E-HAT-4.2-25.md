@@ -53,6 +53,16 @@ audit:
     class is by definition the Hurewicz image of the corresponding element of $\pi_n(X)$. The
     mathematics is unchanged; the solution is now a structured proof. No statement changed. Not
     checked: no certificate.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 25. One repair in step `relative-complex`: it claimed that
+    $H_{n+1}(K,X)$ is free on the classes of the $(n+1)$-cells. The relative chain group
+    $C_{n+1}(K,X)$ is free on those cells, but the homology is
+    $C_{n+1}(K,X)/\operatorname{im}\partial_{n+2}$, a quotient of it, since the $(n+2)$-cells
+    contribute relations; the step now says quotient, and notes that the argument below uses only the
+    vanishing in degrees $\le n$ and the identification with the quotient.
 ---
 
 ::: {.problem}
@@ -73,10 +83,10 @@ Attaching an $(n+1)$-cell along a map $\varphi:S^n\to X$ kills the class of $\va
 :::
 
 ::: {.pf-step #relative-complex}
-$H_i(K,X)=0$ for $i\le n$, and $H_{n+1}(K,X)$ is free on the classes of the $(n+1)$-cells attached.
+$H_i(K,X)=0$ for $i\le n$, and $H_{n+1}(K,X)$ is a quotient of the free abelian group on the classes of the $(n+1)$-cells attached.
 
 ::: pf-proof
-The cells of $K$ not in $X$ have dimension at least $n+1$, so the relative cellular chain complex $C_*(K,X)$ of the CW pair $(K,X)$ vanishes in degrees at most $n$ and is free on the attached $(n+1)$-cells in degree $n+1$. By Theorem 2.35 the cellular homology of the pair is the singular homology, so $H_i(K,X)=0$ for $i\le n$ and $H_{n+1}(K,X)\cong C_{n+1}(K,X)$.
+The cells of $K$ not in $X$ have dimension at least $n+1$, so the relative cellular chain complex $C_*(K,X)$ of the CW pair $(K,X)$ vanishes in degrees at most $n$ and is free on the attached $(n+1)$-cells in degree $n+1$. By Theorem 2.35 the cellular homology of the pair is the singular homology, so $H_i(K,X)=0$ for $i\le n$ and $H_{n+1}(K,X)=C_{n+1}(K,X)/\operatorname{im}\partial_{n+2}$, a quotient of that free group — not free in general, the $(n+2)$-cells contributing relations — which is all that the argument below uses.
 :::
 :::
 
