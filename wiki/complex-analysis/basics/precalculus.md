@@ -51,7 +51,7 @@ The Apollonius circle is [@Ahl73, ch. 3, §3.5, Families of Circles], which name
 
 - The circle $(x-h)^2 + (y-k)^2 = r^2$ is parameterized by $t\mapsto (r\cos(t) + h, r\sin(t) + k)$, in complex form $\gamma(t) = z_0 + re^{it}$ with $z_0\coloneqq h + ik$.
 
-- With $u\coloneqq \tan(t/2)$,
+- With $u\coloneqq \tan(t/2)$, defined for $t\not\equiv\pi \pmod{2\pi}$,
 $$
 \cos(t) = {1-u^2\over 1+u^2}, \qquad \sin(t) = {2u\over 1+u^2}.
 $$
@@ -59,7 +59,7 @@ $$
 $$
 u\mapsto a {1-u^2\over 1+u^2} +ib{2u\over 1+u^2},
 $$
-  and, for $a=b=R$, of the circle of radius $R$; each misses only the point $-a$.
+  and, for $a=b=R$, of the circle of radius $R$; the value $u=\infty$ is the point $-a$, so each misses only that point.
 
 - For $a\in\CC\setminus\theset{0}$ and $c\in\RR$, the set $\theset{z \st \bar{a}z + a\bar{z} + c = 0}$ is a line, and every line has this form.
 
