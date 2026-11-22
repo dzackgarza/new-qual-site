@@ -7,8 +7,8 @@ title: The Dirichlet problem
 
 [[D-XR64P]]
 
-::: {.remark}
-On a simply connected domain every real [[D-CFBSA|harmonic function]] is the real part of a [[D-E7A5W|holomorphic function]], so a solution of a [[D-XR64P|Dirichlet problem]] can be sought among the functions $\Re g$ and $\Im g$ with $g$ holomorphic.
+::: {.proposition}
+On a simply connected domain every real [[D-CFBSA|harmonic function]] is the real part of a [[D-E7A5W|holomorphic function]] [@Ahl73, ch. 4, §6.1], so a solution of a [[D-XR64P|Dirichlet problem]] on such a domain can be sought among the functions $\Re g$ and $\Im g$ with $g$ holomorphic.
 :::
 
 ::: {.example title="Dirichlet problem on a half-strip"}
