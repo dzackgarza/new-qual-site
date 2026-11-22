@@ -30,7 +30,7 @@ $$
 \int_\gamma \sum_{k \geq -M} c_k z^k = \sum_{k \geq -M} \int_\gamma c_k z^k = 2\pi i c_{-1}
 .$$
 
-The uniform convergence on the compact circle is [@Ahl73, ch. 5, §1.1, Weierstrass's Theorem], which states that a series of analytic functions converging uniformly on every compact subset of a region has an analytic sum and may be differentiated term by term; the same uniform convergence justifies integrating term by term, and each integral in the display is the computation of the block above.
+The uniform convergence on the compact circle is [@Ahl73, ch. 5, §1.1, Theorem 1], which states that a series of analytic functions converging uniformly on every compact subset of a region has an analytic sum and may be differentiated term by term; the same uniform convergence justifies integrating term by term, and each integral in the display is the computation of the block above.
 
 The coefficient $c_{-1}$ of the Laurent series at a singularity is the [[D-C3JIU|residue]], and the residue theorem sums these contributions over the singularities enclosed by a curve, weighted by [[D-PJ7JM|winding numbers]].
 Write $\Res_{z=p}f$ for $\Res_{z=p}(f\dz)$.
