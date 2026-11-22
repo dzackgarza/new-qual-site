@@ -22,7 +22,7 @@ Let $\Omega\subseteq\CC$ be open and let $\mcf$ be a family of [[D-E7A5W|holomor
 
 - $\mcf$ is a [[D-QTJ7T|normal family]].
 
-This is [@SS03, Theorem 3.3 of Chapter 8 (p. 225)], with the two conclusions in the same order.
+This is [@SS03, ch. 8, Theorem 3.3], with the two conclusions in the same order.
 :::
 
 ::: {.remark}
