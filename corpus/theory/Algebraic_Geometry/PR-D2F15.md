@@ -25,8 +25,8 @@ Let $N$ be a lattice, let $\Sigma$ be a fan in $N_\RR$, and let $\sigma\in\Sigma
 The affine toric variety $U_\sigma$ is smooth exactly when the vectors $\theset{v_\rho}_{\rho\in\sigma(1)}$ extend to a $\ZZ$-basis of $N$; such a cone is \dfn{smooth} [Cox--Little--Schenck, *Toric Varieties*, Theorem 1.3.12].
 Consequently, $X_\Sigma$ is smooth exactly when every cone of $\Sigma$ is smooth.
 
-The toric variety $X_\Sigma$ is $\QQ$-factorial exactly when every cone of $\Sigma$ is simplicial.
-Cox--Little--Schenck prove at Theorem 11.4.8 that for a normal toric variety the cone $\Sigma$ being simplicial is equivalent to finite abelian quotient singularities, to being an orbifold, and to rational smoothness, and record in the remark following that theorem the form used here, that a normal toric variety is simplicial exactly when it is $\QQ$-factorial. The extraction read here carries that sentence unnumbered, so the criterion is cited to the theorem it follows rather than to a number of its own.
+The toric variety $X_\Sigma$ is $\QQ$-factorial exactly when every cone of $\Sigma$ is simplicial [Cox--Little--Schenck, *Toric Varieties*, Proposition 4.2.7].
+Theorem 11.4.8 of the same book gives the equivalent forms: $\Sigma$ is simplicial exactly when $X_\Sigma$ has finite abelian quotient singularities, is an orbifold, and is rationally smooth.
 :::
 
 ::: {.proposition title="Toric resolution"}
