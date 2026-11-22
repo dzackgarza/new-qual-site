@@ -126,6 +126,20 @@ audit:
     and Theorem 4.5 makes $f$ a homotopy equivalence. The clause in the preceding event of
     this date that listed the low-dimensional case among the steps read and left unchanged is
     superseded by this one; the two repairs that event records stand.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Item 8 of the current #163 repair split. Read Hatcher's Theorem 4.37 at its actual
+    statement and Sam's §4.2 Exercise 13. Theorem 4.37, applied to the $n$-connected
+    mapping-cylinder pair with parameter $n+1$, gives an isomorphism from the quotient
+    $\pi'_{n+1}$; composing with the quotient surjection gives the required ordinary
+    relative Hurewicz surjection in degree $n+1$. The previous proof attributed that
+    surjection to the theorem without the quotient step. Sam's solution also leaves this
+    relative-Hurewicz argument implicit, and its last sentence writes $f$ where its
+    construction requires $\widetilde f$; the card now records both features rather than
+    certifying the compressed source verbatim. The rest of the proof and statement are
+    unchanged.
 ---
 
 ::: {.problem}
@@ -133,7 +147,7 @@ Show that a map between connected $n$-dimensional CW complexes is a homotopy equ
 :::
 
 ::: {.solution}
-The published solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), Exercise 4.2.13**: the passage to universal covers, the reduction to proving that $\widetilde f$ is a homology isomorphism, and the closing appeal to Exercise 4.2.12 are that solution's. What the card supplies is the step the set elides: the absolute Hurewicz theorem does not apply to $\widetilde X$, whose own homotopy groups need not vanish below $n$, so the argument runs through the relative Hurewicz theorem for the mapping-cylinder pair, Theorem 4.37, and needs its surjectivity in degree $n+1$. The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 13, and the hint followed is the exercise's own.
+The published solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 13**: the passage to universal covers, the reduction to proving that $\widetilde f$ is a homology isomorphism, and the closing appeal to Exercise 4.2.12 are that solution's. What the card supplies is the step the set elides: the absolute Hurewicz theorem does not apply to $\widetilde X$, whose own homotopy groups need not vanish below $n$, so the argument runs through the relative Hurewicz theorem for the mapping-cylinder pair, Theorem 4.37, and needs its surjectivity in degree $n+1$. Sam's last sentence writes $f$ where his construction requires $\widetilde f$; that slip is not reproduced. The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 13, and the hint followed is the exercise's own.
 
 Throughout $f:X\to Y$ is a map of connected $n$-dimensional CW complexes inducing isomorphisms $f_*:\pi_i(X)\to\pi_i(Y)$ for $i\le n$, and $p_X:\widetilde X\to X$, $p_Y:\widetilde Y\to Y$ are the universal covers.
 
@@ -187,7 +201,11 @@ The relative Hurewicz theorem (Theorem 4.37) applies to the $n$-connected pair o
 $H_{n+1}(M_{\widetilde f},\widetilde X;\ZZ)=0$.
 
 ::: pf-proof
-Theorem 4.37 also gives that the Hurewicz map $\pi_{n+1}(M_{\widetilde f},\widetilde X)\to H_{n+1}(M_{\widetilde f},\widetilde X)$ is surjective; it is enough to show that every element of the source dies. Every element of $\pi_{n+1}(M_{\widetilde f},\widetilde X)$ is the image of an element of $\pi_{n+1}(M_{\widetilde f})$ by exactness of the pair sequence, and naturality of the Hurewicz map makes the diagram
+Apply Theorem 4.37 with parameter $n+1$ to the pair of step [](#n-connected){.pf-ref}, which is $n$-connected. It gives an isomorphism $h':\pi'_{n+1}(M_{\widetilde f},\widetilde X)\to H_{n+1}(M_{\widetilde f},\widetilde X)$, where $\pi'_{n+1}$ is the quotient of $\pi_{n+1}$ defined immediately before the theorem; here the quotient is in fact $\pi_{n+1}$ itself because $\widetilde X$ is simply connected. In every case the quotient map $q:\pi_{n+1}\to\pi'_{n+1}$ is surjective and the ordinary relative Hurewicz map is $h=h'q$, so
+$$
+h:\pi_{n+1}(M_{\widetilde f},\widetilde X)\longrightarrow H_{n+1}(M_{\widetilde f},\widetilde X)
+$$
+is surjective. It is therefore enough to show that every element of the source dies. Exactness of the pair sequence, with $\pi_n(\widetilde X)\to\pi_n(M_{\widetilde f})$ an isomorphism by step [](#lift){.pf-ref}, shows that every element of $\pi_{n+1}(M_{\widetilde f},\widetilde X)$ is the image of an element of $\pi_{n+1}(M_{\widetilde f})$, and naturality of the Hurewicz map makes the diagram
 $$
 \begin{array}{ccc}
 \pi_{n+1}(M_{\widetilde f})&\longrightarrow&\pi_{n+1}(M_{\widetilde f},\widetilde X)\\
