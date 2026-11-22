@@ -40,6 +40,15 @@ audit:
     Recorded in the first step that the construction of the bracket itself is not re-derived here,
     only the dependence on the two nullhomotopies; the card does not claim a proof of the
     existence of the bracket. Statement unchanged; the card says the argument is its own.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    One degree corrected, from an independent review. The step wrote the composite $hg$ as
+    $hg\colon S^{i+j}\to\bullet$ while calling the torsor of nullhomotopies a $\pi_{j+k+1}$-torsor;
+    $hg$ has degree $j+k$, so its source is $S^{j+k}$, and the step now says so. The graded sign in
+    the stable ring, $\beta h=(-1)^{|\beta||h|}h\beta$, and the two indeterminacy subgroups,
+    $f\cdot\pi^s_{j+k+1}$ and $h\cdot\pi^s_{i+j+1}$, are unchanged and correct.
 ---
 
 ::: {.problem}
@@ -65,7 +74,7 @@ This is the standard construction of the Toda bracket: if $gf\simeq\ast$ and $hg
 Two choices of nullhomotopy of $hg$ differing by $\alpha\in\pi^s_{j+k+1}$ give representatives differing by $f\alpha\in f\cdot\pi^s_{j+k+1}$.
 
 ::: pf-proof
-The nullhomotopies of $hg\colon S^{i+j}\to\bullet$ — equivalently of a map to a point after suspension — form a torsor over $\pi_{j+k+1}$: the difference of two nullhomotopies of the same map is the class of a map on the cone, i.e. of $S^{j+k+1}$, and in the stable range that group is $\pi^s_{j+k+1}$ with no dependence on $i$. Replacing the nullhomotopy of $hg$ by another changes the gluing only in the part of the construction that extends over the cone on $f$, which is composing on the left with $f$; hence the representative changes by $f\alpha$.
+The nullhomotopies of $hg$ — a map of degree $j+k$, so of the sphere $S^{j+k}$ — form a torsor over $\pi_{j+k+1}$: the difference of two nullhomotopies of the same map is the class of a map on the cone, i.e. of $S^{j+k+1}$, and in the stable range that group is $\pi^s_{j+k+1}$ with no dependence on $i$. Replacing the nullhomotopy of $hg$ by another changes the gluing only in the part of the construction that extends over the cone on $f$, which is composing on the left with $f$; hence the representative changes by $f\alpha$.
 :::
 
 :::
