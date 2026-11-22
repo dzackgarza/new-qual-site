@@ -55,6 +55,17 @@ audit:
     numbered statement. (2) The path-connectedness of $P$ was justified by "$P$ is weakly equivalent
     to $S^1$", which does not give it; it is now the image of the path-connected $S^1$ under $f$.
     (3) The retained sets' state is recorded: no set holds a solution of this exercise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Two corrections after an independent reading. (1) The path-connectedness of $P$ was justified by
+    calling $P$ the image of $S^1$ under the weak homotopy equivalence $f$, but a weak homotopy
+    equivalence need not be onto; the step now says that this particular map is onto, every point of
+    $P$ being a vertex of its order complex, and gives the general reason as the bijection on $\pi_0$
+    induced by a weak homotopy equivalence. (2) The parenthetical fixing the specialization order as
+    "$a,b<c,d$" holds only under the opposite of the usual convention; the order complex is the same
+    either way, and the step now says so instead of choosing one.
 ---
 
 ::: {.problem}
@@ -114,7 +125,7 @@ Every continuous map $g: P \to S^1$ is null-homotopic.
 
 ::: pf-proof
 
-The image $g(P)$ is a finite subspace of the Hausdorff space $S^1$, so it is discrete. $P$ is path-connected, being the image of the path-connected space $S^1$ under the weak homotopy equivalence $f$, so $g(P)$ is connected, hence one point. So $g$ is constant.
+The image $g(P)$ is a finite subspace of the Hausdorff space $S^1$, so it is discrete. $P$ is path-connected: the McCord map $f$ is onto, every point of $P$ being a vertex of its order complex, and $S^1$ is path-connected; equivalently, a weak homotopy equivalence induces a bijection on $\pi_0$. So $g(P)$, a continuous image of $P$, is connected, hence one point. So $g$ is constant.
 
 :::
 
