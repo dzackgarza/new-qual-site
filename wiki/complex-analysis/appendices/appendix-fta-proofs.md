@@ -6,7 +6,7 @@ title: Routes to the fundamental theorem of algebra
 # Routes to the fundamental theorem of algebra
 
 The statement is the card below.
-Each section names the one step on which its route turns and the card that carries the tool; the arguments are not reproduced, the theorem and its tools being standard course material.
+Each section states the step on which its route turns and links the card that carries the tool; the routes are collected for comparison, the theorem and its tools being standard course material.
 
 [[T-6XDRA]]
 
@@ -20,7 +20,7 @@ On a circle $\abs z=R$ with $R>1$ and $R\abs{a_n}>\abs{a_{n-1}}+\cdots+\abs{a_0}
 
 ## By Liouville's theorem
 
-If $P$ had no zeros then $1/P$ would be entire, and $\abs{P(z)}\geq\frac12\abs{a_n}\abs z^n$ for large $\abs z$ makes it bounded, hence constant: [[T-QHIHJ|Liouville's theorem]].
+The step is the boundedness of $1/P$: for a polynomial $P$ without zeros, $\abs{P(z)}\geq\frac12\abs{a_n}\abs z^n$ for large $\abs z$ makes $1/P$ a bounded entire function: [[T-QHIHJ|Liouville's theorem]].
 
 ## By the open mapping theorem
 
