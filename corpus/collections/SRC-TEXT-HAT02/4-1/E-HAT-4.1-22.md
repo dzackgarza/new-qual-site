@@ -86,6 +86,20 @@ audit:
     countable, and pi_n of a countable CW complex is countable by the same compactness argument. The
     card carries its two directions in two solution blocks, as delivered; merging them is a
     formatting change and none was made. Not checked: no recomputation of any cardinality.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.1 Exercise 22, both directions. Forward: a countable CW complex is built
+    stage by stage, adding one 1-cell per generator of $\pi_1(X)$, countably many $(n+1)$-cells per
+    countable generating set of the kernel of $\pi_n(K_n)\to\pi_n(X)$, and countably many
+    $(n+1)$-spheres realizing the elements of $\pi_{n+1}(X)$, with $\pi_n(K_n)$ countable because
+    every class comes from a finite subcomplex and there are countably many of those. Converse: a
+    weak equivalence $K\to X$ identifies the homotopy groups, and $\pi_n(K)$ is a countable union of
+    the countable $\pi_n(L)$ over finite subcomplexes $L$, which are countable by simplicial
+    approximation. Both are correct. One correction: the solution carried no statement of what the
+    retained sets contain, and now records that none holds a solution — Sam's §4.1 has no entry for
+    Exercise 22 and Proudfoot's Homework #6 covers Exercises 4, 11, 12, 14 and 15.
 ---
 
 ::: {.problem}
@@ -94,7 +108,7 @@ Show that a path-connected space $X$ has a CW approximation with countably many 
 :::
 
 ::: {.solution}
-The exercise is §4.1 Exercise 22, where the hint is printed in brackets.
+The exercise is §4.1 Exercise 22, where the hint is printed in brackets. No retained solution set holds a solution: Sam's §4.1 has no entry for the exercise, and Proudfoot's Homework #6 covers Exercises 4, 11, 12, 14 and 15. Both directions below are the card's.
 
 We use the standard inductive construction of a CW approximation, keeping track of cardinalities.
 
