@@ -85,14 +85,6 @@ See [[complex-analysis/cauchy-theory/index|Cauchy theory]].
 
 [[T-DDOWW]]
 
-[[C-Q6BSL]]
-
-[[PR-L4Y5F]]
-
-[[T-SSNLT]]
-
-[[T-WFXQP]]
-
 See [[complex-analysis/singularities/index|Singularities]].
 
 ## Residues and contours
@@ -104,6 +96,14 @@ See [[complex-analysis/singularities/index|Singularities]].
 [[T-ZO5UU]]
 
 [[T-ESKLY]]
+
+[[PR-L4Y5F]]
+
+[[C-Q6BSL]]
+
+[[T-SSNLT]]
+
+[[T-WFXQP]]
 
 See [[complex-analysis/residues-and-contours/index|Residues and contours]]. Evaluated integrals are on [[complex-analysis/standard-integrals|Standard integrals]].
 
