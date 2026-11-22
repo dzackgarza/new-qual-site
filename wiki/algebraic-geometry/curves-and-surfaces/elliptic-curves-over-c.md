@@ -69,4 +69,4 @@ For $\tau=i$ the ring is $\ZZ[i]=\OO_K$ with unit group of order $4$, and the cu
 For $\tau=\rho=e^{2\pi i/3}$ the ring is $\ZZ[\rho]=\OO_K$ with unit group of order $6$, and the curve is $y^2=x^3-b$ with $j=0$.
 For $\tau=2i$ the ring is $\ZZ+2\ZZ[i]$, an order of index $2$ in $\ZZ[i]$, whose unit group is $\theset{\pm1}$, so this curve has only the two automorphisms every elliptic curve has and $j(2i)\neq0,1728$ ([[T-CRVCM]]).
 
-The general curve therefore has $\End(E,p_0)=\ZZ$: the set of imaginary quadratic $\tau$ is countable inside $\HH$, while the isomorphism classes over $\CC$ are the points of $\CC$ ([[T-CRVMODJ]], [[T-CRVCM]], [[D-CRVMOD]]).
+The general curve therefore has $\Endo(E,p_0)=\ZZ$: the set of imaginary quadratic $\tau$ is countable inside $\HH$, while the isomorphism classes over $\CC$ are the points of $\CC$ ([[T-CRVMODJ]], [[T-CRVCM]], [[D-CRVMOD]]).
