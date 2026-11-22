@@ -49,7 +49,7 @@ F(w) \coloneqq {1\over 2\pi i} \oint_{\bd \Omega} {f'(z) \over f(z) - w} \dz
 $$
 is $\frac{1}{2\pi i}\oint_{\bd\Omega} \logd g_w(z)\dz$ for $g_w(z) \coloneqq f(z) - w$, so for holomorphic $f$ it counts the solutions of $f(z) = w$ in $\Omega$ with multiplicity, by [[T-JXDQT|the argument principle]].
 It is a continuous function of $w$ on each connected component of $\CC\sm f(\bd\Omega)$ — the denominator is bounded away from $0$ there — and it takes values in $\ZZ$, hence it is constant on each component.
-A solution of $f(z) = a$ of multiplicity $m\geq2$ is a zero of $f'$, so where the count jumps, $f'$ vanishes.
+The count is constant on each component, so it changes only across $f(\bd\Omega)$; at an interior value $a$, a solution of $f(z)=a$ of multiplicity $m\geq2$ is a zero of $f'$, so $a$ is a critical value of $f$.
 :::
 
 ## Exercises
