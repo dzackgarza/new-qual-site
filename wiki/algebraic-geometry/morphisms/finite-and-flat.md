@@ -11,7 +11,7 @@ topics:
 
 # Finite and flat
 
-A nonconstant morphism of smooth projective curves is finite and flat.
+A nonconstant morphism of smooth projective curves is flat, since the target is integral and regular of dimension one and every irreducible component of the reduced source dominates it [@Har77, Proposition III.9.7].
 
 ## Going up and going down
 
