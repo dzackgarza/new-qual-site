@@ -10,8 +10,8 @@ topics:
 
 # Normal families and Montel
 
-[[T-4ALS2|Montel's theorem]] gives compactness for families of holomorphic functions that are [[D-MBDTR|uniformly bounded on compact subsets]], with respect to [[D-AIQG3|locally uniform convergence]].
-In the proof of the [[complex-analysis/conformal-maps/the-riemann-mapping-theorem|Riemann mapping theorem]] it produces a locally uniformly convergent subsequence of injective maps, and [[complex-analysis/counting-zeros/hurwitz|Hurwitz's theorem]] shows that the nonconstant limit is injective.
+[[T-4ALS2|Montel's theorem]] makes a family that is [[D-MBDTR|uniformly bounded on compact subsets]] [[D-QTJ7T|normal]]: every sequence has a subsequence converging [[D-AIQG3|locally uniformly]].
+In the proof of the [[complex-analysis/conformal-maps/the-riemann-mapping-theorem|Riemann mapping theorem]] it produces a locally uniformly convergent subsequence of injective maps, and [[T-FZWEC|Hurwitz's theorem]] shows that the nonconstant limit is injective.
 
 ## Equicontinuity
 
