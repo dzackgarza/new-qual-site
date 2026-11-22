@@ -23,7 +23,7 @@ prompts:
 ::: {.proposition}
 Let $C$ be a smooth projective geometrically integral curve of genus $0$ over a field $k$.
 
-- If $C$ has a $k$-rational point, then $C \cong \PP^1_k$.
+- If $C$ has a $k$-rational point, then $C \cong \PP^1_k$ [@Har77, Example IV.1.3.5].
 
 - The anticanonical line bundle $\omega_C^{-1}$ has degree $2$ and
 $$
