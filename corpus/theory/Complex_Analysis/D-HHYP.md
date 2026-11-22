@@ -21,7 +21,7 @@ $$
 \qquad
 d_{\HH}(z,w)=\operatorname{artanh}\frac{\abs{z-w}}{\abs{z-\bar w}} .
 $$
-The result does not depend on the biholomorphism chosen, because the disc metric is invariant under the automorphisms of $\DD$ ([[T-SCHPK]]).
+The result does not depend on the biholomorphism chosen, because the disc metric is invariant under the automorphisms of $\DD$ ([[T-SCHPK]]), and every automorphism of $\HH$ is an isometry of this metric (C. McMullen, *Advanced Complex Analysis*, Theorem 2.21).
 
 This is the noneuclidean length of [@Ahl73, ch. 4, §3.4, Exercise 8], which asks how it is to be defined in the upper half plane; the definition above is the transport of [[D-2HXLN]] by $\Psi$, and the two identities $\abs{\Psi'(z)}=2/\abs{z+i}^2$ and $1-\abs{\Psi(z)}^2=4\Im z/\abs{z+i}^2$ give the formula.
 :::

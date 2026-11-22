@@ -30,7 +30,7 @@ The \dfn{hyperbolic metric} is the family $\rho_{\DD}(z)\abs{\dz}$ with $\rho_{\
 :::
 
 ::: {.remark}
-The metric is complete and its geodesics are the circle arcs and diameters meeting $\bd\DD$ orthogonally; the hyperbolic distance is realised by exactly one such arc through two distinct points.
+The geodesics are the circle arcs and diameters meeting $\bd\DD$ orthogonally, and the hyperbolic distance is realised by exactly one such arc through two distinct points (C. McMullen, *Advanced Complex Analysis*, §2, the paragraph "Geodesics" following Theorem 2.21).
 It is invariant under the automorphisms of $\DD$: the [[D-MFPYG|Blaschke factors]] satisfy $\abs{\psi_a'(z)}/(1-\abs{\psi_a(z)}^2) = (1-\abs z^2)^{-1}$, and the invariance under every automorphism is [@SS03, ch. 8, Problem 3(b)], where this distance and the metric $\abs{\dz}^2/(1-\abs z^2)^2$ are defined.
-Parts (c) and (d) of that problem give $d_{\DD}(0,s) = \frac12\log\frac{1+s}{1-s}$ for $s\in[0,1)$, and part (e) the formula for two arbitrary points; completeness of the metric and the orthogonal circle arcs as its geodesics are standard properties of this metric and are not proved here.
+Parts (c) and (d) of that problem give $d_{\DD}(0,s) = \frac12\log\frac{1+s}{1-s}$ for $s\in[0,1)$, and part (e) the formula for two arbitrary points, which tends to $\infty$ as $s\to1$, so the metric is complete.
 :::
