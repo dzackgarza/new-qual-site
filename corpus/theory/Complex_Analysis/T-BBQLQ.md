@@ -18,11 +18,6 @@ review: draft
 ::: {.theorem}
 Let $X$ be a compact connected complex manifold.
 Then every holomorphic function $f\colon X\to\CC$ is constant.
-:::
 
-::: {.proof}
-Since $X$ is compact, $\abs f$ attains its maximum $M$ at some point.
-The set $S\coloneqq\theset{x\in X\st f(x)=c}$, for $c$ a value with $\abs c=M$ attained by $f$, is nonempty and closed.
-At a point of $S$, $f$ read in a holomorphic chart is holomorphic on a connected open subset of $\CC^n$ with an interior maximum of $\abs f$; by the maximum modulus principle, applied on complex lines through the point, $f$ is constant near that point, so $S$ is open.
-As $X$ is connected, $S=X$.
+This is the [[T-BYNL5|maximum modulus principle]] read in a chart: $\abs f$ attains a maximum on the compact $X$, and the set on which the maximum is attained is both open and closed in $X$.
 :::

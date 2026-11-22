@@ -20,8 +20,3 @@ Every nonempty simply connected open set $\Omega\subseteq\CC$ is [[D-TM4TE|confo
 
 The proper case is [@SS03, ch. 8, Theorem 3.1] with [@SS03, ch. 8, Corollary 3.2], which makes any two proper simply connected open subsets of $\CC$ conformally equivalent through the disc. That $\CC$ is the other model is Liouville: a conformal $\CC\to\DD$ would be a bounded entire function, hence constant.
 :::
-
-::: {.remark}
-By the uniformization theorem, every simply connected Riemann surface is conformally equivalent to exactly one of $\CP^1$, $\CC$, and $\DD$.
-For open subsets of $\CC$ the case $\CP^1$ does not occur because $\CP^1$ is compact, and $\CC$ is not conformally equivalent to $\DD$ by Liouville's theorem.
-:::
