@@ -77,11 +77,11 @@ The first two items are [@Ahl73, ch. 1, §1.4, Conjugation, Absolute Value], whi
 ::: {.fact title="Sufficient conditions for holomorphy"}
 A function $f$ on an open set $U$ is holomorphic if any of the following holds:
 
-- $f$ is continuous and $\int_{\bd T} f = 0$ for every closed triangle $T\subseteq U$ ([[complex-analysis/cauchy-theory/morera-and-converses|Morera's theorem]]);
+- $f$ is continuous and $\int_{\bd T} f = 0$ for every closed triangle $T\subseteq U$ ([[T-LHSMY|Morera's theorem]]);
 - $f$ has a holomorphic primitive on $U$;
 - $f$ is locally the sum of a convergent power series.
 
-The first is [[complex-analysis/cauchy-theory/morera-and-converses|Morera's theorem]]; the second holds because the derivative of a holomorphic function is holomorphic, which is [@Ahl73, ch. 4, §2.3, Higher Derivatives], so a primitive of $f$ is holomorphic and hence so is $f$; the third is part (iii) of [@Ahl73, ch. 2, §2.4, Theorem 2], that a power series is an analytic function on its disc of convergence.
+The first is [[T-LHSMY|Morera's theorem]]; the second holds because the derivative of a holomorphic function is holomorphic, which is [@Ahl73, ch. 4, §2.3, Higher Derivatives], so a primitive of $f$ is holomorphic and hence so is $f$; the third is part (iii) of [@Ahl73, ch. 2, §2.4, Theorem 2], that a power series is an analytic function on its disc of convergence.
 :::
 
 ::: {.fact}
@@ -104,18 +104,18 @@ Then $f$ is constant if any of the following holds:
 - $f' = 0$ on $U$; by the Cauchy--Riemann equations it suffices that $u_x = u_y = 0$ for $u = \Re f$.
 - One of $\Re f$, $\Im f$, $\abs{f}$, or $\arg f$ (for a continuous branch) is constant.
 - $\abs f$ attains a maximum in $U$, or $f$ is nonvanishing and $\abs f$ attains a minimum in $U$.
-- $f(U)$ is not open, for instance $f(U)\subseteq\RR$ or $f(U)\subseteq \bd\DD_r(0)$ ([[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|open mapping theorem]]).
+- $f(U)$ is not open, for instance $f(U)\subseteq\RR$ or $f(U)\subseteq \bd\DD_r(0)$ ([[C-FRF33|open mapping theorem]]).
 - $U$ is bounded, $f$ extends continuously to $\bar U$, $f$ has no zeros in $U$, and $\abs f$ is constant on $\bd U$: the maximum modulus principle applied to $f$ and to $1/f$ shows $\abs f$ is constant.
 
 If moreover $U = \CC$, then $f$ is constant if any of the following holds:
 
-- $f$ is bounded ([[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Liouville's theorem]]); if also $f(z)\to 0$ as $z\to\infty$, then $f\equiv 0$.
+- $f$ is bounded ([[T-QHIHJ|Liouville's theorem]]); if also $f(z)\to 0$ as $z\to\infty$, then $f\equiv 0$.
 - $\abs f\geq M$ for some $M>0$, by Liouville's theorem applied to $1/f$.
 - $e^f$ or $e^{-f}$ is bounded, since $\abs{e^{f}} = e^{\Re f}$.
 - $f$ is periodic with two $\RR$-linearly independent periods, since then $f$ is bounded by its bound on a closed fundamental parallelogram.
 - $f$ omits two values of $\CC$, for instance when $f(\CC)$ misses an open set ([[T-HWBWI|little Picard theorem]]).
 
-If $f$ and $g$ are holomorphic on a domain $U$ and $f-g$ has a zero set with a limit point in $U$, then $f = g$ ([[complex-analysis/cauchy-theory/the-identity-principle|identity principle]]).
+If $f$ and $g$ are holomorphic on a domain $U$ and $f-g$ has a zero set with a limit point in $U$, then $f = g$ ([[T-SVF2W|identity principle]]).
 
 :::
 
@@ -149,7 +149,7 @@ Let $f$ be holomorphic near $z_0$.
 - If $f(z_0)\neq 0$, then $f$ is nonzero on a neighborhood of $z_0$ by continuity.
 - If $f(z_0) = 0$ and $f$ is not identically zero near $z_0$, then $f$ is nonzero on a punctured neighborhood of $z_0$.
 - Dividing by a finite Blaschke product with the same zeros in $\DD$ gives a function without zeros in $\DD$ with the same modulus on $\bd\DD$.
-- Zeros in a region are counted by [[complex-analysis/counting-zeros/rouches-theorem|Rouché's theorem]] and [[complex-analysis/counting-zeros/the-argument-principle|the argument principle]].
+- Zeros in a region are counted by [[T-CJCKL|Rouché's theorem]] and [[T-JXDQT|the argument principle]].
 
 :::
 
