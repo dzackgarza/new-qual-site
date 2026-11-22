@@ -10,7 +10,6 @@ title: Techniques
 - $\DD_r(a) \coloneqq \theset{z\in \CC \st \abs{z-a}< r}$, the open disc of radius $r$ about $a$.
 - $\bar{\DD}_r(a) \coloneqq \theset{z\in \CC \st \abs{z-a} \leq r}$, the closed disc of radius $r$ about $a$.
 - $\DD_r^*(a) \coloneqq \theset{z\in \CC \st 0 < \abs{z-a} < r}$, the punctured disc of radius $r$ about $a$.
-- $\Delta \coloneqq \DD_1(0)$, the open unit disc; $\bar\Delta \coloneqq \bar{\DD}_1(0)$, the closed unit disc; $\Delta^* \coloneqq \DD_1^*(0)$, the punctured unit disc.
 - $\Omega$ denotes an open subset of $\CC$; it is a domain (connected) when the statement needs one, and simply connected when the statement needs primitives.
 - $\OO(\Omega) = \Hol(\Omega) = \Hol(\Omega, \CC)$ denotes the $\CC$-algebra of holomorphic functions $f\colon\Omega \to \CC$.
 
