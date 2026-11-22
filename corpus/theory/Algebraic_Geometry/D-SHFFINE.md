@@ -77,8 +77,7 @@ t_x=\sum_i(\eta_i)_x(s_x)=(\textstyle\sum_i\eta_i)_x(s_x)=s_x .
 $$
 Hence $t$ restricts to $s$, and $\mathcal{F}$ is soft.
 
-**(3) and (4) are stated here without proof.**
-Neither is proved on any card in the corpus, and the standard treatments are not retained: `vocabularies/references.yaml` has no key for Godement, Bredon or Warner, and `tmp/sources` holds no text of theirs, so no numbered statement could be read and none is cited.
+**(3) and (4) are stated without proof.**
 No converse is claimed: a soft sheaf need not be flasque, the sheaf of smooth functions on a manifold being soft and not flasque, and (3) uses paracompactness of the space rather than any property of the sheaf beyond softness.
 :::
 
