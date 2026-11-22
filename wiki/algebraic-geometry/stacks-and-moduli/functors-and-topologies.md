@@ -62,7 +62,7 @@ The difference between the topologies is visible on a group scheme: for $n$ inve
 [[T-FFDESCENT]]
 
 For a faithfully flat ring map $A\to B$ the Amitsur complex of every $A$-module is exact, so $M\mapsto M\tensor_AB$ loses nothing, and the extra structure needed to recover $M$ is exactly a descent datum: an isomorphism $\theta\colon C\tensor_{B,p_1}N\to C\tensor_{B,p_2}N$ of $C$-modules for $C=B\tensor_AB$ satisfying the cocycle identity after pullback to $B\tensor_AB\tensor_AB$ ([[T-FFDESCENT]]).
-The modules with descent data are equivalent to the $A$-modules, with quasi-inverse the equalizer $n\mapsto\theset{n\in N:\theta(n\tensor1)=1\tensorn}$ (Stacks Project, Proposition 35.3.9, tag 023N; Remark 59.16.8, tag 03OE) ([[T-FFDESCENT]]).
+The modules with descent data are equivalent to the $A$-modules, with quasi-inverse the equalizer $n\mapsto\theset{n\in N:\theta(n\tensor1)=1\tensor n}$ (Stacks Project, Proposition 35.3.9, tag 023N; Remark 59.16.8, tag 03OE) ([[T-FFDESCENT]]).
 Replacing modules by quasicoherent sheaves and $\Spec B\to\Spec A$ by a faithfully flat quasicompact morphism gives fpqc descent of quasicoherent sheaves, and representable functors are fpqc sheaves, hence in particular fppf sheaves ([[T-FFDESCENT]], [[D-ETFPPF]]).
 
 ## Torsors
