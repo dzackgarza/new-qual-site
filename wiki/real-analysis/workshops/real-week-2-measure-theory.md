@@ -76,8 +76,8 @@ Then $\mu^*$ is an [[D-79EWM|outer measure]] [@Fol99, Proposition 1.10].
 
 [[PR-6NDTF]]
 
-::: {.example title="A set with measurable slices that is not measurable"}
-The converse fails: a set whose slices are all measurable need not be measurable.
+::: {.example title="A set with measurable $x$-slices that is not measurable"}
+The converse fails: a set all of whose $x$-slices are measurable need not be measurable.
 For a non-measurable $\mathcal N\subseteq[0,1]$, let $E\coloneqq\mathcal N\times[0,1]$.
 Every slice $E_x$ is $[0,1]$ or $\varnothing$, hence measurable, but $E$ is not measurable: if it were, [[PR-6NDTF]] would make $x\mapsto m(E_x)=\chi_{\mathcal N}(x)$ measurable.
 
@@ -91,7 +91,7 @@ The direction from $f$ to $\mathcal A$ and the identity of the two integrals are
 :::
 
 ::: {.remark}
-The slices $\mathcal A_x=[0,f(x)]$ being intervals does not by itself make $\mathcal A$ measurable: the non-measurable $E$ above has every slice measurable.
+The slices $\mathcal A_x=[0,f(x)]$ being intervals does not by itself make $\mathcal A$ measurable: the non-measurable $E$ above has every $x$-slice measurable.
 :::
 
 ## Qual problems
