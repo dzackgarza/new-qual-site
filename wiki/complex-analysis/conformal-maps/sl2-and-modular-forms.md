@@ -9,7 +9,7 @@ topics:
 
 # SL2(R) and modular forms
 
-Recall that a [[D-7PTGC|modular form]] of weight $k$ is a holomorphic $f\colon\HH\to\CC$ with $f\big((az+b)/(cz+d)\big)=(cz+d)^kf(z)$ for every $\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\SL_2(\ZZ)$ and a $q$-expansion with no negative powers; the quotient $\SL_2(\ZZ)\backslash\HH$ is the set of lattices up to scale.
+Recall that a [[D-7PTGC|modular form]] of weight $k$, for an even $k$, is a holomorphic $f\colon\HH\to\CC$ with $f\big((az+b)/(cz+d)\big)=(cz+d)^kf(z)$ for every $\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\SL_2(\ZZ)$ and a $q$-expansion with no negative powers; the quotient $\SL_2(\ZZ)\backslash\HH$ is the set of lattices up to scale.
 
 [[T-VGDFW]]
 
@@ -24,9 +24,9 @@ For an even integer $k\geq4$ the series
 $$
 G_k(z)\coloneqq\sum_{(m,n)\neq(0,0)}\frac{1}{(mz+n)^k}
 $$
-converges absolutely and uniformly on compact subsets of $\HH$, and satisfies $G_k\qty{(az+b)/(cz+d)} = (cz+d)^kG_k(z)$ for every $\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\SL_2(\ZZ)$, because the substitution permutes the lattice $\ZZ z+\ZZ$.
-The book writes this same series as $E_k(\tau)=\sum_{(n,m)\neq(0,0)}(n+m\tau)^{-k}$, and its two generators satisfy the modular character $E_k(\tau+1) = E_k(\tau)$ and $E_k(\tau) = \tau^{-k}E_k(-1/\tau)$ [@SS03, ch. 9, §2.1, Theorem 2.1(iii)].
-$G_k$'s $q$-expansion begins with a constant term and no negative powers, so $G_k$ is a modular form of weight $k$ [@Ser73, ch. 7].
+converges absolutely and uniformly on compact subsets of $\HH$, and satisfies $G_k\qty{(az+b)/(cz+d)} = (cz+d)^kG_k(z)$ for every $\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\SL_2(\ZZ)$ [@SS03, ch. 9, §2.1, Theorem 2.1(i), (iii)].
+Stein--Shakarchi write this same series as $E_k(\tau)=\sum_{(n,m)\neq(0,0)}(n+m\tau)^{-k}$, and the modular character of that theorem reads $E_k(\tau+1) = E_k(\tau)$ and $E_k(\tau) = \tau^{-k}E_k(-1/\tau)$.
+$G_k$'s $q$-expansion begins with a constant term and no negative powers [@SS03, ch. 9, §2.2, Theorem 2.5], so $G_k$ is a modular form of weight $k$.
 :::
 
 [[T-ZFD2M]]
