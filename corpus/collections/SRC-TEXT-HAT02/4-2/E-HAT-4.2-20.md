@@ -70,6 +70,16 @@ audit:
     covering induces isomorphisms only from $\pi_2$ up, and is a homotopy equivalence only when its
     fibre is a point; here the fibre is $\pi_1(K)$. What the argument needs and gets is $\pi_n$ for
     $n\ge2$ (Proposition 4.1), and the conclusion is stated only in that range.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Two corrections, from a referee report. (1) The covering's fibre is the group $G=\pi_1(K)$, not
+    $\widetilde K$, and it may be trivial — the case $G=1$ is allowed by the exercise — so the
+    assertion that the fibre is a non-trivial group is removed and replaced by that description.
+    (2) The card claimed Sam's solution is the argument below; it is not: Sam's is the loop argument,
+    and the proof below passes to the universal cover and uses the deck action. The preamble now
+    states Sam's argument for what it is and marks the card's proof independent.
 ---
 
 ::: {.problem}
@@ -78,7 +88,7 @@ Show that for the product $K(G, 1) \times X$ the action of $\pi_1$ on $\pi_n$ is
 :::
 
 ::: {.solution}
-A published solution covers this exercise: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 20**, whose argument is the one below — an element of $\pi_n$ of the product is a pair of maps, a loop in the product is a pair of loops, and the action inserts the two loops into the two factors, where the first acts trivially because $\pi_n(K(G,1))=0$ for $n>1$ and the second because $\pi_1(X)=0$. The card's steps are that argument written out, checked against Hatcher, Algebraic Topology, Section 4.2, and against the description of the action of $\pi_1$ on higher homotopy groups by deck transformations (Section 4.1).
+A published solution covers this exercise: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 20**, by a different argument — an element of $\pi_n$ of the product is a pair of maps, a loop in the product is a pair of loops, and the action inserts the two loops into the two factors, where the first acts trivially because $\pi_n(K(G,1))=0$ for $n>1$ and the second because $\pi_1(X)=0$. The proof below is the card's own and is independent of that one: it passes to the universal cover, where the action of $\pi_1$ on $\pi_n$ is the deck action, and reduces the claim to the vanishing of that action. It is checked against Hatcher, Section 4.2, and against the description of the action by deck transformations in Section 4.1.
 
 ::: pf
 
@@ -95,7 +105,7 @@ $\widetilde K$ is contractible, hence simply connected, and $X$ is simply connec
 The projection $q:\widetilde K\times X\to X$ is a homotopy equivalence, and consequently $\pi_n(K\times X)\cong\pi_n(X)$ for $n>1$.
 
 ::: pf-proof
-$\widetilde K$ is contractible, so the projection $\widetilde K\times X\to X$ is a homotopy equivalence, with homotopy inverse $x\mapsto(u_0,x)$ for a chosen basepoint $u_0$. The covering $p$ induces isomorphisms on $\pi_n$ for $n\ge2$ (Proposition 4.1), which is all that is used here; it is not a homotopy equivalence in general, its fibre being the non-trivial group $\pi_1(K)$. Composing, $\pi_n(K\times X)\cong\pi_n(\widetilde K\times X)\cong\pi_n(X)$ for $n\ge2$, in particular for $n>1$.
+$\widetilde K$ is contractible, so the projection $\widetilde K\times X\to X$ is a homotopy equivalence, with homotopy inverse $x\mapsto(u_0,x)$ for a chosen basepoint $u_0$. The covering $p$ induces isomorphisms on $\pi_n$ for $n\ge2$ (Proposition 4.1), which is all that is used here; it is not a homotopy equivalence in general, its fibre being the group $G=\pi_1(K)$, which may be trivial — the case $G=1$, where the cover is the identity and the assertion is empty, is allowed by the exercise. Composing, $\pi_n(K\times X)\cong\pi_n(\widetilde K\times X)\cong\pi_n(X)$ for $n\ge2$, in particular for $n>1$.
 :::
 
 :::
