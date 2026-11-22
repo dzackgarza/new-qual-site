@@ -18,8 +18,6 @@ Adding to $M$ a function $m$ with $\abs{m} < \abs{M}$ on the boundary curve does
 
 ## Forms of the hypothesis
 
-[[T-CJCKL]]
-
 ::: {.example title="Zeros of a monic polynomial in a disc"}
 Let $p(z) = z^d + a_1z^{d-1} + \cdots + a_d$ with $\abs{a_i} < R^i/d$ for each $i$.
 Then $p$ has $d$ zeros in $\abs z < R$.
