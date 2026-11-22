@@ -36,7 +36,7 @@ The following are equivalent.
 
 The extension in (iv) is unique.
 
-The equivalence (i)$\iff$(ii) is [@SS03, Theorem 3.1 of Chapter 3 (p. 84)].
+The equivalence (i)$\iff$(ii) is [@SS03, ch. 3, Theorem 3.1].
 :::
 
 ::: {.remark title="Variations"}
