@@ -545,6 +545,18 @@ audit:
     bracketed question is the card's own assembly from Eda--Kawamura, Wiegold and
     Frankland, as the closing step says, and no published solution of it was
     located. Not checked in this pass: no source outside those sets was read.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Issue #165, one refinement of the step's claim: it read "no invariant of the two groups as
+    abstract groups, and in particular no countability argument, can separate the two sides in
+    degree one". What the two computations give is that both groups are free abelian on countably
+    many generators, so every invariant of them as abstract groups agrees, their cardinality
+    included; "no countability argument" was wider than that, since an argument that counts the
+    image of the map is not an invariant of the two groups. The claim now says "no comparison of
+    their cardinalities". The proof's closing sentence and the closing step are unchanged.
 ---
 
 ::: {.problem}
@@ -619,7 +631,7 @@ By **K. Eda and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Th
 
 ::: {.pf-step #degree-one}
 
-For $X=\ZZ\times\RR$ and integer coefficients, $H_c^1(X;\ZZ)$ and $H^1(X^+,\infty;\ZZ)$ are both free abelian on countably many generators, so no invariant of the two groups as abstract groups, and in particular no countability argument, can separate the two sides in degree one.
+For $X=\ZZ\times\RR$ and integer coefficients, $H_c^1(X;\ZZ)$ and $H^1(X^+,\infty;\ZZ)$ are both free abelian on countably many generators, so no invariant of the two groups as abstract groups, and in particular no comparison of their cardinalities, can separate the two sides in degree one.
 
 ::: pf-proof
 
