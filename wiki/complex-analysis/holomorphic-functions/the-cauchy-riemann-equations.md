@@ -9,7 +9,7 @@ topics:
 
 # The Cauchy--Riemann equations
 
-A map $f = u + iv$ that is real differentiable at $z_0$, regarded as a map $\RR^2\to\RR^2$, is complex differentiable at $z_0$ if and only if $u_x = v_y$ and $u_y = -v_x$ at $z_0$.
+The [[PR-37QA5|Cauchy--Riemann equations]] are the real form of complex differentiability: they turn one complex derivative into a pair of real first-order equations on $u=\Re f$ and $v=\Im f$.
 
 [[D-V6UQJ]]
 
@@ -26,8 +26,6 @@ A map $f = u + iv$ that is real differentiable at $z_0$, regarded as a map $\RR^
 The polar form applies directly to functions given in terms of $r$ and $\theta$.
 
 ## Wirtinger derivatives
-
-In terms of the Wirtinger derivatives $\del$ and $\delbar$, the Cauchy--Riemann equations are the single equation $\delbar f = 0$.
 
 [[D-OAFF5]]
 
@@ -66,7 +64,7 @@ f_z &= f_x = f_y/i \quad\text{for } f \text{ holomorphic}.
 \end{aligned}
 $$
 
-The first two lines are the notation for the complex-valued $1$-forms whose integrals are the contour integrals of [[D-6DAXB]]: a $1$-form $p\,\dx+q\,\dy$ with complex coefficients is written $\frac12\qty{p-iq}\dz+\frac12\qty{p+iq}\dzbar$, which is the decomposition [@Ahl73, ch. 4, §1.1, Line Integrals] carries out when it separates $\int_\gamma f\,\dz$ and $\int_\gamma f\,\dy$ into $\dz$ and $\overline{\dz}$. The third line repeats the block above.
+The first two lines are the notation for the complex-valued $1$-forms whose integrals are the contour integrals of [[D-6DAXB]]: a $1$-form $p\,\dx+q\,\dy$ with complex coefficients is written $\frac12\qty{p-iq}\dz+\frac12\qty{p+iq}\dzbar$, which is the decomposition [@Ahl73, ch. 4, §1.1, Line Integrals] carries out when it separates $\int_\gamma f\,\dz$ and $\int_\gamma f\,\dy$ into $\dz$ and $\overline{\dz}$.
 :::
 
 ::: {.remark title="The Jacobian is $\abs{f'}^2$"}
