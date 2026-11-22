@@ -404,8 +404,14 @@ audit:
     for that: Exercise V.1.3(a), (b) and (c) in
     tmp/sources/hartshorne-1977-algebraic-geometry.md, and the proof of
     Proposition 4.8, which reads (g) off the adjunction formula of Ex. 1.3.
-    No statement changed and no proof step's mathematics changed. Not read:
-    any printing of the book, only the text version in tmp/sources.
+    Third, the degree 4 paragraph now proves what it asserts about sections:
+    pi is the monoidal transformation of Chapter V §3 at the sixth point, so
+    pi_*O_X = O_{X'} by Proposition V.3.4, and the projection formula gives
+    H^0(X, H+E_6) = H^0(X', d'). Read for that: Proposition V.3.4, pi_*O = O
+    and R^i pi_* O = 0 for a monoidal transformation, and the intersection
+    (H+E_6).E_6 = 1 - 1 = 0. No statement changed and no proof step's
+    mathematics changed. Not read: any printing of the book, only the text
+    version in tmp/sources.
 ---
 
 ::: {.problem}
@@ -599,9 +605,11 @@ degrees are attained over every algebraically closed field $k$.
 The classes of degrees $1$ and $2$ are the line and the conic of step
 [](#small-degrees){.pf-ref}. The class of degree $4$ is $H+E_6=\pi^*(3L)-E_1-\cdots-E_5$, the pullback of
 the class $\mathfrak d'$ of Corollary 4.7 of the book, with $r=5$, which that corollary
-proves very ample and which embeds the blowup of $\PP^2$ at five points in $\PP^4$; since
-$H+E_6$ meets $E_6$ in $0$, its sections are the pullbacks of the sections of $\mathfrak d'$, so a
-general member of $\linearsystem{H+E_6}$ is the pullback of a general member of $\linearsystem{\mathfrak d'}$ and is isomorphic to
+proves very ample and which embeds the blowup of $\PP^2$ at five points in $\PP^4$. The morphism
+$\pi$ is the monoidal transformation of Chapter V §3 at the sixth point, so
+$\pi_*\OO_X=\OO_{X'}$ with $X'$ that blowup, by Proposition V.3.4, and the projection formula gives
+$H^0(X,H+E_6)=H^0(X',\mathfrak d')$; since $H+E_6$ meets $E_6$ in $0$, a general member of
+$\linearsystem{H+E_6}$ is the pullback of a general member of $\linearsystem{\mathfrak d'}$ and is isomorphic to
 it. And
 $$
 (H+E_6)^2=9-5=4,\qquad (H+E_6)\cdot K_X=-9+5=-4,\qquad p_a(H+E_6)=\tfrac12(4-4)+1=1,
