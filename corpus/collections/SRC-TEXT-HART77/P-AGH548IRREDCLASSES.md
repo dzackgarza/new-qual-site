@@ -652,6 +652,24 @@ audit:
   by: claude
   date: 2026-11-22
   note: >-
+    Corroboration of the numbered statement, and the unheld references it does
+    not use. Hartshorne asserts the same identification, in prose and without a
+    number, in Remark V.4.7.1: that every Del Pezzo surface is either one given
+    by (4.7) for a suitable choice of points or the 2-uple embedding of a
+    quadric, that "in particular, every nonsingular cubic surface in P^3 can be
+    obtained by blowing up 6 points in the plane", that for a cubic surface the
+    condition omega_X = O_X(-1) is automatic by Chapter II Exercise 8.4, and
+    that proofs are in Manin, Cubic Forms, §24, or Nagata, I, Theorem 8. Read
+    for this: Remark V.4.7.1 in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, and Chapter II Exercise
+    8.4, which is not read here. Neither Manin nor Nagata is held in
+    tmp/sources, so neither was read and neither is cited by number on the
+    card; the numbered statement the step uses remains Vakil's Theorem 27.0.2.
+    This event adds no claim to the mathematics.
+- event: source-checked
+  by: claude
+  date: 2026-11-22
+  note: >-
     Published-solution pass for issue #160, on the transcription rule: the
     nonsingularity of the member of alternative (c) is proved by no retained
     solution set, in any characteristic, and the "Published solution" remark
