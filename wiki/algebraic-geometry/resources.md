@@ -149,17 +149,17 @@ Solutions to exercises in Chapter I, §§1–7, and in Chapter IV, §§1 and 3, 
 
 ### Advanced topics
 
-- [MSRI summer school on toric varieties](https://www.msri.org/summer_schools/455): graduate summer school lectures on toric varieties.
+- [MSRI summer school on toric varieties (2009)](https://www.msri.org/summer_schools/455): graduate summer school lectures on toric varieties.
 
 - [Hartshorne, deformation theory notes (Berkeley Math 274)](https://math.berkeley.edu/~robin/math274root.pdf): lecture notes on deformation theory.
 
-- [MSRI summer school on derived categories](https://www.msri.org/summer_schools/821): graduate summer school lectures on derived categories.
+- [MSRI summer school on derived categories (2018)](https://www.msri.org/summer_schools/821): graduate summer school lectures on derived categories.
 
 - [Princeton learning seminar on the minimal model program](https://web.math.princeton.edu/~jmoraga/Learning-Seminar-MMP): seminar page on the minimal model programme.
 
 ### Stacks and moduli
 
-- [Edidin, "What is a stack?"](http://www.ams.org/notices/200304/what-is.pdf): an introduction to stacks written for the Notices of the AMS.
+- [Edidin, "What is a stack?"; Internet Archive copy](http://web.archive.org/web/20250320052835/https://www.ams.org/notices/200304/what-is.pdf): an introduction to stacks written for the Notices of the AMS.
 
 - [Edidin, "Equivariant geometry and the cohomology of the moduli space of curves"](https://arxiv.org/abs/1006.2364): the integral cohomology of a stack, its equivariant description for quotient stacks, and the rational comparison with the cohomology of the coarse moduli space, for smooth and stable curves.
 
@@ -167,7 +167,7 @@ Solutions to exercises in Chapter I, §§1–7, and in Chapter IV, §§1 and 3, 
 
 - [Fantechi, "Stacks for everybody"](http://www.mathematik.uni-bielefeld.de/~rehmann/ECM/cdrom/3ecm/pdfs/pant3/fantechi.pdf): a survey of algebraic stacks written for the third European Congress of Mathematics.
 
-- [Mumford, "Picard groups of moduli problems"](http://www.mathcs.emory.edu/~brussel/Scans/mumfordpicard.pdf), with Litt's exposition in two parts: [part I](https://www.daniellitt.com/s/picardI.pdf) constructs quotient stacks and computes the line bundles on a classifying stack, and [part II](https://www.daniellitt.com/s/picardII.pdf) computes the Picard group of the moduli stack of elliptic curves.
+- [Mumford, "Picard groups of moduli problems"; Internet Archive copy](http://web.archive.org/web/20211129230457/http://www.mathcs.emory.edu/~brussel/Scans/mumfordpicard.pdf), with Litt's exposition in two parts: [part I](https://www.daniellitt.com/s/picardI.pdf) constructs quotient stacks and computes the line bundles on a classifying stack, and [part II](https://www.daniellitt.com/s/picardII.pdf) computes the Picard group of the moduli stack of elliptic curves.
 
 - [Vistoli, "Notes on Grothendieck topologies, fibered categories and descent theory"](https://arxiv.org/abs/math/0412512): an introduction to descent theory, from Grothendieck topologies through fibered categories to stacks.
 
@@ -185,9 +185,9 @@ Solutions to exercises in Chapter I, §§1–7, and in Chapter IV, §§1 and 3, 
 
 - [MIT 18.721 (Fall 2021)](https://math.mit.edu/classes/18.721/Fall2021/index.html) problem sets 1 through 12, with their LaTeX sources.
 
-- [Wisconsin Math 764 homeworks](https://hilbert.math.wisc.edu/wiki/index.php/Math_764_--_Algebraic_Geometry_II_--_Homeworks)
+- [Wisconsin Math 764, Algebraic Geometry II (Spring 2017), homeworks; Internet Archive copy](http://web.archive.org/web/20210618200822/https://hilbert.math.wisc.edu/wiki/index.php/Math_764_--_Algebraic_Geometry_II_--_Homeworks)
 
-- [Christopher Siegel, oral exam problems](https://www2.math.upenn.edu/~siegelch/Orals/SiegelProblems.pdf): miscellaneous oral-examination problems.
+- [Christopher Siegel, oral exam problems; Internet Archive copy](http://web.archive.org/web/20240805170025/https://www2.math.upenn.edu/~siegelch/Orals/SiegelProblems.pdf): miscellaneous oral-examination problems.
 
 - [Stacks Project, Section 111.63 (tag 0G12): Algebraic Geometry, Final Exam, Spring 2020](https://stacks.math.columbia.edu/tag/0G12): exercises 111.63.1–111.63.7, the final examination of a Spring 2020 algebraic geometry course at Columbia University.
 
