@@ -21,5 +21,5 @@ Separatedness is encoded by the diagonal morphism and by uniqueness in the valua
 
 [[D-8XX95]]
 
-A projective morphism is proper.
+A projective morphism of noetherian schemes is proper [@Har77, Theorem II.4.9].
 A projective variety $Y$ over an algebraically closed field has $\OO(Y)=k$: every regular function on $Y$ is constant [@Har77, Theorem I.3.4].
