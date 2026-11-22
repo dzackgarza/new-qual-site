@@ -25,7 +25,7 @@ Let $(A,\mfm)\to(B,\mfn)$ be a local homomorphism of Noetherian local rings. Ass
 $$
 \dim B=\dim A+\dim(B/\mfm B).
 $$
-Then $B$ is flat over $A$.
+Then $B$ is flat over $A$ [@Vak25, Theorem 26.2.10].
 :::
 
 ::: {.corollary title="Geometric form"}
@@ -34,9 +34,9 @@ $$
 \dim\OO_{X,x}
 =\dim\OO_{Y,y}+\dim\OO_{X_y,x},
 $$
-then $f$ is flat.
+then $f$ is flat, the hypothesis being the theorem applied to the local homomorphism $\OO_{Y,y}\to\OO_{X,x}$ at each $x$ [@Vak25, Theorem 26.2.10].
 
-In particular, if $X$ and $Y$ are smooth irreducible varieties and every nonempty fibre is pure of dimension $\dim X-\dim Y$, then $f$ is flat.
+In particular, if $X$ and $Y$ are smooth irreducible varieties and every nonempty fibre is pure of dimension $\dim X-\dim Y$, then $f$ is flat [@Vak25, Theorem 26.2.11].
 :::
 
 ::: {.remark}
