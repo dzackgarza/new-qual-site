@@ -122,7 +122,7 @@ The Cauchy product of power series and the standard power series are on [[comple
 ::: {.fact title="Polynomial division"}
 For polynomials $f, g$ over a field with $g\neq 0$, there are unique polynomials $q, r$ with $f = qg + r$ and $\deg r < \deg g$ or $r = 0$.
 
-This is division with remainder in the [[D-NKRGN|Euclidean domain]] $k[x]$, whose Euclidean function is the degree: subtracting a suitable multiple of $g$ lowers the degree of $f$ until it falls below $\deg g$, and the remainder is unique because a difference of two remainders of degree below $\deg g$ that is a multiple of $g$ must vanish.
+This is division with remainder in the [[D-NKRGN|Euclidean domain]] $k[x]$, whose Euclidean function is the degree.
 :::
 
 [[FT-3ZL25]]
