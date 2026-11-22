@@ -51,6 +51,18 @@ audit:
     2-connected $M$, and a map $S^3\to M$ carrying a generator is an isomorphism on $H_3$ and hence
     on all homology groups, so homology Whitehead applies — both spaces having CW type, which is the
     hint's Corollary A.12. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 15. One repair in step `homology`: Poincaré duality was applied
+    as $H_i\cong H_{3-i}$ and then the universal coefficient theorem with $H^2$; but
+    $H^2\cong\operatorname{Hom}(H_2,\ZZ)\oplus\operatorname{Ext}(H_1,\ZZ)=0$ with $H_1=0$ gives
+    only that $H_2$ has no free part, not that it vanishes. The step now pairs the correct degrees:
+    $H_2\cong H^1$, $H^1\cong\operatorname{Hom}(H_1,\ZZ)\oplus\operatorname{Ext}(H_0,\ZZ)=0$
+    because $H_1=0$ and $H_0$ is free, so $H_2=0$. The rest of the proof reads correct. The provenance
+    sentence is corrected: Sam's §4.2 Exercise 15 is retained and covers the exercise, so the claim
+    that no retained set does is false; the card's own argument is kept.
 ---
 
 ::: {.problem}
@@ -58,7 +70,7 @@ Show that a closed simply-connected 3-manifold is homotopy equivalent to $S^3$. 
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: Guanyu Li's set ends with §3.3, DeMason's M382C problem set has §4.2 Exercises 1, 2, 14 and 27 only (recorded from an earlier reading of the retained PDF), and the Stanford 215C sets cover §3.B and §3.3. So the argument is the card own, from Poincaré duality (Theorem 3.30), Corollary A.12, the Hurewicz theorem (Theorem 4.32) and Corollary 4.33.
+A retained solution covers this exercise: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.2 Exercise 15** (`tmp/sources/hatcher-solutions-sam-2008.md`), whose §4.2 numbering is Hatcher's. Guanyu Li's set ends with §3.3, DeMason's M382C problem set has §4.2 Exercises 1, 2, 14 and 27 only (recorded from an earlier reading of the retained PDF), and the Stanford 215C sets cover §3.B and §3.3. The card's argument is its own, from Poincaré duality (Theorem 3.30), Corollary A.12, the Hurewicz theorem (Theorem 4.32) and Corollary 4.33, and it is kept because it is correct.
 
 ::: pf
 
@@ -66,7 +78,7 @@ No retained solution set covers this exercise: Guanyu Li's set ends with §3.3, 
 $H_0(M;\ZZ)\cong H_3(M;\ZZ)\cong\ZZ$ and $H_1(M;\ZZ)=H_2(M;\ZZ)=0$.
 
 ::: pf-proof
-$M$ is a closed connected orientable $3$-manifold, so Poincaré duality, Theorem 3.30, gives $H_i(M;\ZZ)\cong H_{3-i}(M;\ZZ)$; in particular $H_0\cong H_3$ and $H_1\cong H^2$. Since $M$ is simply connected, $H_1(M;\ZZ)=0$ by the Hurewicz theorem, so $H^2\cong\operatorname{Hom}(H_2,\ZZ)\oplus\operatorname{Ext}(H_1,\ZZ)$ vanishes by the universal coefficient theorem, Theorem 3.2, together with $H_1=0$.
+$M$ is a closed connected orientable $3$-manifold, so Poincaré duality, Theorem 3.30, gives $H_i(M;\ZZ)\cong H^{3-i}(M;\ZZ)$; in particular $H_0\cong H^3$, $H_1\cong H^2$ and $H_2\cong H^1$. Since $M$ is simply connected, $H_1(M;\ZZ)=0$ by the Hurewicz theorem, so $H^2=0$ and $H_1=0$; and the universal coefficient theorem, Theorem 3.2, gives $H^1\cong\operatorname{Hom}(H_1,\ZZ)\oplus\operatorname{Ext}(H_0,\ZZ)=0$ because $H_1=0$ and $H_0$ is free. Hence $H_2\cong H^1=0$. (The vanishing of $H^2$ alone would give only that $H_2$ has no free part.)
 :::
 :::
 
