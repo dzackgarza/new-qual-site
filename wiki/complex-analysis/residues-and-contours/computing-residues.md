@@ -7,7 +7,7 @@ topics:
 
 # Computing residues
 
-Recall that the [[D-C3JIU|residue]] of $f$ at $z_0$ is the coefficient $a_{-1}$ of the Laurent expansion at $z_0$; at a pole it is computed from the limit formulas ([[PR-L4Y5F]], [[T-ESKLY]]), and at an essential singularity it is read from the series.
+Recall that the [[D-C3JIU|residue]] of $f$ at $z_0$ is the coefficient $a_{-1}$ of the [[T-4XPWL|Laurent expansion]] at $z_0$; at a pole it is computed from the limit formulas ([[PR-L4Y5F]], [[T-ESKLY]]), and at an [[D-VKP6N|essential singularity]] it is read from the series.
 
 ## A simple pole
 
@@ -38,6 +38,8 @@ The same number is the coefficient of $z$ in the Taylor series $1/(1-z) = 1+z+z^
 
 ## By the Laurent series
 
+[[D-C3JIU]]
+
 ::: {.example title="Residue at an essential singularity"}
 Since $e^{1/z} = \sum_{k\geq 0} z^{-k}/k!$ for $z\neq 0$, the coefficient of $\inverseof{z}$ is $1$, so $\Res_{z=0} e^{1/z} = 1$.
 
@@ -49,11 +51,11 @@ Since $e^{1/z} = \sum_{k\geq 0} z^{-k}/k!$ for $z\neq 0$, the coefficient of $\i
 
 ::: {.example title="The residues of $z/(1+z^2)$ add to zero"}
 For $f(z) = z/(1+z^2)$ the simple poles are at $\pm i$, with $\Res_{z=i}f = i/(2i) = 1/2$ and $\Res_{z=-i}f = -i/(-2i) = 1/2$.
-With $w = 1/z$,
+With $w = 1/z$, the function whose residue at the origin gives the residue at infinity is
 $$
-{1\over w^2}f\qty{1\over w} = {1\over w^2}\cdot{1/w\over 1+1/w^2} = {1\over w(w^2+1)},
+-\frac{1}{w^2}f\qty{1\over w} = -{1\over w^2}\cdot{1/w\over 1+1/w^2} = -{1\over w(w^2+1)},
 $$
-whose residue at the origin is $1$, so $\Res_{z=\infty}f = -1$, and $1/2+1/2-1 = 0$: the residues of $f$ on the sphere sum to zero.
+whose residue at the origin is $-1$, so $\Res_{z=\infty}f = -1$, and $1/2+1/2-1 = 0$: the residues of $f$ on the sphere sum to zero.
 :::
 
 ## Exercises
@@ -64,4 +66,4 @@ Doing it without a formula:
 
 Applying the formulas:
 
-[[E-YNZYA]] [[E-ITVTT]] [[E-U2A4C]] [[E-SS3.EX-1]] [[E-SS3.EX-6]] [[P-3JE4U]] [[E-SS2.EX-2]] [[E-QF7KI]]
+[[E-YNZYA]] [[E-ITVTT]] [[E-U2A4C]] [[E-SS3.EX-1]] [[E-SS3.EX-6]] [[P-3JE4U]] [[E-QF7KI]]
