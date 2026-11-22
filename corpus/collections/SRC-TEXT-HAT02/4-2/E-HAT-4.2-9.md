@@ -65,6 +65,17 @@ audit:
     the inclusion $A\hookrightarrow CA$. The example's conclusion is unaffected, $CA$ being
     contractible while $A$ is not, and the step now says which cone is which and notes that
     $\Sigma A$ is contractible too for acyclic $A$ (§4.2 Exercise 8).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Correction of the preceding event, which was itself wrong. For Hatcher's mapping cone
+    $C_f=Y\cup_f CX$ with $Y=\ast$, the cone $CA=A\times I/(A\times\{0\})$ is glued to the one-point
+    space along $A\times\{1\}$, so both ends of $A\times I$ are collapsed and
+    $C_f=(A\times I)/(A\times\{0\}\cup A\times\{1\})=\Sigma A$. The example therefore reads as the
+    card originally had it, $C_f=\Sigma A$, with the identification now written out; the argument is
+    that $\Sigma A$ is contractible for acyclic $A$ (Exercise 8) while $f$ is not a homotopy
+    equivalence.
 ---
 
 ::: {.problem}
@@ -94,7 +105,7 @@ $X$ and $Y$ are simply connected CW complexes, so Corollary 4.33 applies: a map 
 :::
 
 ::: {.pf-step #counterexample}
-Let $A$ be the acyclic noncontractible CW complex of Example 2.38 and $f:A\to *$ the constant map. Then $C_f=CA$, the cone on $A$, is contractible, while $f$ is not a homotopy equivalence because $A$ is not contractible. (For the constant map $A\to\ast$ the mapping cone is the cone $CA$, not the suspension: the suspension $\Sigma A$ is the mapping cone of the inclusion $A\hookrightarrow CA$, and it too is contractible when $A$ is acyclic, by §4.2 Exercise 8.)
+Let $A$ be the acyclic noncontractible CW complex of Example 2.38 and $f:A\to *$ the constant map. Then $C_f=\Sigma A$, the suspension of $A$, which is contractible because $A$ is acyclic (Exercise 8), while $f$ is not a homotopy equivalence because $A$ is not contractible. The identification is the one Chapter 0's definition gives: the cone $CA=A\times I/(A\times\{0\})$ is glued to the one-point space $Y=\ast$ along $A\times\{1\}$, so both ends of $A\times I$ are collapsed, and what remains is $(A\times I)/(A\times\{0\}\cup A\times\{1\})=\Sigma A$.
 
 ::: pf-proof
 In Example 2.38 $A$ is obtained from $S^1\vee S^1$ by attaching two $2$-cells along the words $a^5b^{-3}$ and $b^3(ab)^{-2}$; the boundary matrix has determinant $-1$, so $\widetilde H_i(A)=0$ for all $i$, and $\pi_1(A)$ has the nontrivial presentation $\langle a,b\mid a^5b^{-3},\,b^3(ab)^{-2}\rangle$, so $A$ is not contractible. The mapping cone of $A\to *$ is the cone on $A$ with its base collapsed, which is the suspension $\Sigma A$, and $\Sigma A$ is contractible by §4.2 Exercise 8 because $A$ is acyclic. So the mapping cone is contractible and $f$ is not a homotopy equivalence.
