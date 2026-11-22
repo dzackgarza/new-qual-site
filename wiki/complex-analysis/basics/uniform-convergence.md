@@ -11,7 +11,7 @@ topics:
 # Uniform convergence
 
 Uniform continuity and uniform convergence each replace a bound that may depend on a point by one that does not: on a compact metric space for continuity, and on a fixed set for convergence of functions.
-Uniform convergence is what makes a limit commute with the operations of analysis: it keeps continuity, it keeps the values of the limit, and on a finite measure space it keeps the integral; differentiation needs a further hypothesis on the derivatives.
+Uniform convergence is what makes a limit commute with the operations of analysis: it preserves continuity, and on a finite measure space it permits the exchange of limit and integral; differentiation needs a further hypothesis on the derivatives.
 
 ## Uniform continuity
 

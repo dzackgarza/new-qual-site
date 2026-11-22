@@ -24,3 +24,8 @@ This is the convergence "uniformly on every compact subset of the region" of [@A
 Let $\Omega\subseteq\CC$ be open and let $f_k,f\colon\Omega\to\CC$, with the convention $\operatorname{dist}(A,\varnothing)=+\infty$ when $\Omega=\CC$.
 Then $f_k\to f$ locally uniformly on $\Omega$ if and only if $f_k\to f$ uniformly on every bounded set $A\subseteq\Omega$ with $\operatorname{dist}(A,\bd\Omega)>0$.
 :::
+
+::: {.proof}
+If $A\subseteq\Omega$ is bounded with $\operatorname{dist}(A,\bd\Omega)>0$, then the closure $\overline A$ is compact and lies in $\Omega$: it is closed and bounded, and no point of it lies on the boundary. Uniform convergence on the compact set $\overline A$ therefore gives uniform convergence on $A$.
+Conversely, let $K\subseteq\Omega$ be compact. It is bounded, and $\operatorname{dist}(K,\bd\Omega)>0$: otherwise there are $x_k\in K$ with $\operatorname{dist}(x_k,\bd\Omega)\to0$, and a subsequence converges to some $x\in K$, which would then lie on $\bd\Omega$, contrary to $K\subseteq\Omega$. So $K$ is one of the sets $A$, and $f_k\to f$ uniformly on it.
+:::
