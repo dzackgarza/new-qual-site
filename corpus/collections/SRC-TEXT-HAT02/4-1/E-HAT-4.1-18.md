@@ -76,7 +76,7 @@ There is a weak homotopy equivalence $f: S^1 \to P$.
 
 ::: pf-step
 
-The order complex of $P$ (with $a, b < c, d$) is a square, so its realization is $S^1$.
+The order complex of $P$ is a square, so its realization is $S^1$: its simplices are the chains of $P$, four vertices and the four edges $ac$, $ad$, $bc$, $bd$, which form one cycle. Which of the two points of a comparable pair is written below the other depends on the convention for the specialization order, and the chains, hence the order complex, are the same either way.
 
 ::: pf-proof
 
