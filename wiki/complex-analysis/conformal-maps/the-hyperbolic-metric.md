@@ -32,10 +32,7 @@ The [[complex-analysis/conformal-maps/the-schwarz-lemma#Consequences|Schwarz--Pi
 
 ## The upper half plane
 
-A [[D-FRVBV|Möbius transformation]] carrying $\HH$ onto $\DD$ carries the hyperbolic metric of $\DD$ to
-$$
-\frac{\abs{\dz}}{2\Im z}
-$$
-on $\HH$: for the Cayley transform $\Psi(z) = (z-i)/(z+i)$ one has $\abs{\Psi'(z)} = 2/\abs{z+i}^2$ and $1-\abs{\Psi(z)}^2 = 4\Im z/\abs{z+i}^2$, so $\abs{\Psi'\,dz}/(1-\abs{\Psi}^2) = \abs{\dz}/(2\Im z)$.
+[[D-HHYP]]
+
 The holomorphic isometries of that metric are exactly the real Möbius transformations [[T-VGDFW|Automorphisms of the upper half-plane]].
 The two models are the same metric in different coordinates, and the hyperbolic distance is invariant under every biholomorphism between domains that carries one model to the other.
