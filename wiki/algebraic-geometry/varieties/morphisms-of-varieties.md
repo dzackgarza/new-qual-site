@@ -10,7 +10,7 @@ topics:
 
 # Morphisms of varieties
 
-A morphism of varieties is a continuous map pulling regular functions back to regular functions ([[D-VARMORPH]]); for affine varieties these are the maps of coordinate rings in the opposite direction ([[T-SK599]]).
+Recall that a [[D-VARMORPH|morphism of varieties]] is a continuous map that pulls regular functions back to regular functions; for affine varieties these are the maps of coordinate rings in the opposite direction ([[T-SK599]]).
 
 ## Morphisms of varieties
 
