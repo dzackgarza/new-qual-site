@@ -26,11 +26,7 @@ Writing the argument as $\theta + 2k\pi$ before taking the root produces all $n$
 These are the $n$th roots of [@Ahl73, ch. 1, §2.2, The Binomial Equation], which solves $z^n=a$ by writing $a=r(\cos\varphi+i\sin\varphi)$ and obtains the $n$ roots $r^{1/n}\qty{\cos\qty{\frac{\varphi+2k\pi}{n}}+i\sin\qty{\frac{\varphi+2k\pi}{n}}}$, $0\le k\le n-1$; de Moivre's formula (20) of that section is the computation the display above performs.
 :::
 
-::: {.fact}
-Since $\CC$ is algebraically closed, every polynomial in $\CC[x]$ factors into linear factors.
-
-This is [[T-6XDRA|the fundamental theorem of algebra]], in the form [@Ahl73, ch. 2, §1.3, Polynomials] gives it: after one root $\alpha_1$ the division gives $P(z)=(z-\alpha_1)P_1(z)$ with $\deg P_1=n-1$, and repetition of the process leads to the complete factorisation $P(z)=a_n(z-\alpha_1)(z-\alpha_2)\cdots(z-\alpha_n)$.
-:::
+[[T-6XDRA]]
 
 ## The logarithm
 
@@ -46,9 +42,7 @@ Here $z^{1/n}$ is the branch of [[D-T6INB]] determined by $\Log$, which is the b
 
 [[PR-MWUJS]]
 
-For a nonvanishing holomorphic function $f$ on a domain $\Omega$, a holomorphic logarithm $g$ of $f$ satisfies $g'=f'/f$, so $\int_\gamma f'/f = 0$ for every closed curve $\gamma$ in $\Omega$.
-Conversely, if $\int_\gamma f'/f=0$ for every closed curve $\gamma$ in $\Omega$, then $f'/f$ has a primitive $g$, and adjusting $g$ by a constant gives $e^g = f$.
-On a simply connected domain these integrals vanish by Cauchy's theorem, which gives the existence theorem for logarithms and roots of nonvanishing functions:
+On a simply connected domain every holomorphic function without zeros has a holomorphic logarithm, and hence holomorphic $n$th roots, by [[T-2OVCI|Cauchy's theorem]] applied to $f'/f$:
 
 [[T-NRSFZ]]
 
