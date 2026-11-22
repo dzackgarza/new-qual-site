@@ -428,6 +428,17 @@ audit:
     step geometric-marking of P-AGH548IRREDCLASSES, which gives the argument in
     full. Read for this: the same two sources, at the places that card's event
     of this date records. No step changed and no claim was weakened.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    The event above of this date names Dolgachev and Duncan, §2, and
+    Castelnuovo's criterion, Theorem V.5.7, as what the opening sentence cites
+    for the geometric marking. That attribution is withdrawn on this card too:
+    P-AGH548IRREDCLASSES now proves its step geometric-marking from R. Vakil,
+    The Rising Sea (21 October 2025), Theorem 27.0.2, and this card's opening
+    sentence cites the same numbered statement and points at that step. Nothing
+    in the argument of this card changes and no claim is added or weakened.
 ---
 
 ::: {.problem}
