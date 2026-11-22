@@ -55,11 +55,7 @@ For $A\subseteq X$ let
 $$
 \mu^*(A)\coloneqq\inf\theset{\sum_{j\geq1}\rho(E_j) \st E_j\in\mathcal E,\ A\subseteq\bigcup_{j\geq1}E_j}.
 $$
-Then $\mu^*$ is an [[D-79EWM|outer measure]] [@Fol99, §1.4].
-:::
-
-::: {.remark}
-The three defining properties are checked directly: $\mu^*(\varnothing)=0$ from the empty cover, monotonicity because a cover of a larger set covers a subset, and countable subadditivity by choosing for each $A_j$ a cover whose total $\rho$-sum is within $2^{-j}\varepsilon$ of the infimum and summing over $j$.
+Then $\mu^*$ is an [[D-79EWM|outer measure]] [@Fol99, Proposition 1.10].
 :::
 
 [[D-3XE77]]
