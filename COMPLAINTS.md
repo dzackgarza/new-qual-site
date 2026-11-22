@@ -11698,3 +11698,27 @@ The same page's ST.1 opens "Use the SF package to compute the two scalar product
 **Uncertainty.** Exercise 13 and Problem 3 were read in full in the retained PDF; the printed numbering is as stated. No other property of the card was under review.
 
 **Repair.** The card now cites Problem 3(b) for the invariance and "parts (c) and (d) of that problem" for the formula, and the page no longer re-derives the distance.
+
+## 2026-11-22 (#176): `T-QHIHJ`'s slogan quoted the Cauchy estimate at the wrong order, and its conclusion did not follow from the inequality it quoted
+
+**Object and need.** `corpus/theory/Complex_Analysis/T-QHIHJ`, Liouville's theorem, whose `slogan` is the card's one-line recall statement, and `wiki/complex-analysis/cauchy-theory/cauchy-estimates-and-liouville`, which transcludes the card.
+
+**Observed evidence.** The slogan read "the Cauchy estimate on $\abs{z-z_0}=R$ gives $\abs{f''(z_0)}\le M/R$ for every $R>0$, so $f''=0$ and $f$ is constant." The estimate as `T-22RQZ` states it, and as [@SS03, ch. 2, Corollary 4.3] prints it, is $\abs{f^{(n)}(z_0)}\le n!M/R^n$; at $n=2$ the right-hand side is $2M/R^2$, which is not $M/R$ at any $R<2$. The conclusion was also a step short: $f''=0$ makes $f$ affine, and constancy needs the further observation that the constant $f'$ satisfies $\abs c\le M/R$ for every $R>0$.
+
+**Impact and owner.** The theorem's statement was and is correct, and no other card's proof used the slogan. The defect is in the recall line a reader sees, which asserted an inequality the cited estimate does not give.
+
+**Uncertainty.** The card, the estimate card and the printed Corollary 4.3 were read; the slogan's inequality was compared at $n=1$ and $n=2$. Nothing else on the card was under review.
+
+**Repair.** The slogan quotes $2M/R^2$ and carries both steps; the card passes `qualc.authoring check T-QHIHJ`.
+
+## 2026-11-22 (#176): Picard's great theorem has no numbered statement in a keyed retained text, and `T-DDOWW` states a form none of the retained texts prints
+
+**Object and need.** `corpus/theory/Complex_Analysis/T-DDOWW`, Picard's big theorem, and `wiki/complex-analysis/singularities/casorati-weierstrass-and-picard`, which has to distinguish it from Casorati--Weierstrass.
+
+**Observed evidence.** The card states the value-omission form: a function meromorphic on a punctured disc that omits three distinct points of $\CC\cup\{\infty\}$ extends meromorphically across the puncture. Of the retained texts, [@SS03, ch. 3, §3] records the value-distribution form in prose, in the paragraph following Theorem 3.3, with the sentence that no proof is given; Ahlfors states and proves only the little theorem, [@Ahl73, ch. 8, §3.1, Theorem 5], from the modular function and the monodromy theorem; and McMullen, *Advanced Complex Analysis*, Theorem 4.35, states the value-distribution form at a finite essential singularity, in Chapter 4 §4.3, for which `vocabularies/references.yaml` has no key. The card's own form therefore has no printed statement behind it in the retained material, and the one numbered printed statement of the great theorem cannot be written as a Pandoc citation (`CITE-1`).
+
+**Impact and owner.** Both forms are standard and equivalent, and the card's mathematics stands; the gap is a citation, not a statement. It also sets the form in which a page can distinguish the theorems: the page cites the section of SS that records the conclusion and names McMullen's numbered theorem in prose.
+
+**Uncertainty.** SS, Ahlfors and McMullen were searched by statement number for the great theorem, and SS and Ahlfors were read at the relevant sections. Whether McMullen's Theorem 4.35 is the citation the owner wants for `T-DDOWW` is not decided here, and no key was added, because the bibliography file is generated.
+
+**Repair needed.** A Zotero record and Better BibTeX key for McMullen's *Advanced Complex Analysis*, after which the prose reference on the card and on the page becomes a citation of Theorem 4.35.
