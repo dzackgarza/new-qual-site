@@ -57,6 +57,18 @@ audit:
     Not re-read this session: the theorem numbers are those the earlier reading recorded, and no
     printed page was checked.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.3 Exercise 3. The proof is correct: split $H_1(X)$ over the summand
+    $i_*H_1(S^1)$, use the universal coefficient theorem in degree one — where $\operatorname{Ext}$
+    of the free group $H_0(X)$ vanishes — to realize the projection as a class $u$, represent $u$ by
+    $r\colon X\to S^1$ through Theorem 4.57, observe $\deg(ri)=1$, and extend the homotopy from $ri$
+    to the identity over $X$ by the homotopy extension property of the CW pair to obtain an actual
+    retraction. One correction: Theorem 4.57 is printed for based classes $\langle X,S^1\rangle$,
+    and the step using it wrote unbased classes; the two coincide because $S^1$ is a topological
+    group, and the step now says so.
 ---
 
 ::: {.problem}
@@ -94,7 +106,7 @@ The universal coefficient theorem gives the short exact sequence $0\to\operatorn
 There is a map $r\colon X\to S^{1}$ with $r^{*}(\iota)=u$.
 
 ::: pf-proof
-$S^{1}$ is a $K(\ZZ,1)$, and for a CW complex $X$ the assignment $[f]\mapsto f^{*}(\iota)$ is a bijection $[X,S^{1}]\to H^{1}(X;\ZZ)$ — Hatcher's Theorem 4.57 with $n=1$ and $G=\ZZ$. Hence $u$ is represented by some map $r$.
+$S^{1}$ is a $K(\ZZ,1)$, and for a CW complex $X$ the assignment $[f]\mapsto f^{*}(\iota)$ is a bijection $[X,S^{1}]\to H^{1}(X;\ZZ)$ — Hatcher's Theorem 4.57 with $n=1$ and $G=\ZZ$, which is printed for based classes $\langle X,S^{1}\rangle$; unbased and based classes coincide here because $S^{1}$ is a topological group. Hence $u$ is represented by some map $r$.
 :::
 
 :::
