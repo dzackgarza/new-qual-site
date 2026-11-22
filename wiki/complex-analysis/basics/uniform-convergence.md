@@ -47,7 +47,7 @@ So the identity $(f') = (\sum_n f_n)'$ needs a hypothesis on the derivatives, no
 
 ## Compactness in function spaces
 
-A family of functions is [[D-2CCDB|uniformly equicontinuous]] when one $\delta$ serves every member of the family and every pair of points, and that is what turns a bound into a convergent subsequence.
+Recall that a family is [[D-2CCDB|uniformly equicontinuous]] when one $\delta$ serves every member of the family and every pair of points.
 
 [[FF-XZGIY]]
 
