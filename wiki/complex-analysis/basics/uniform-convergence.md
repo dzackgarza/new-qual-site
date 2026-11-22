@@ -35,8 +35,8 @@ is arbitrarily large.
 
 [[PR-4LISY]]
 
-The property that uniform convergence adds to pointwise convergence is the one that survives a limit: a uniform limit of continuous functions is continuous, and a uniform limit of integrable functions is integrable with the integral of the limit equal to the limit of the integrals.
-For series, the comparison test in the form of the Weierstrass $M$-test gives uniform convergence.
+The property that uniform convergence adds to pointwise convergence is the one that survives a limit: [[T-ERNLN|the uniform limit theorem]] keeps continuity, and on a finite measure space [[PR-L7LNZ|a uniform limit of integrable functions]] keeps integrability with the integral of the limit equal to the limit of the integrals (on an infinite measure space this fails: the functions equal to $1/n$ on $[0,n]$ and to $0$ elsewhere converge uniformly to $0$ while every integral is $1$).
+For series, the comparison test in the form of the Weierstrass $M$-test gives uniform convergence ([[FF-IAUQG]]).
 
 [[FF-IAUQG]]
 
@@ -47,7 +47,7 @@ So the identity $(f') = (\sum_n f_n)'$ needs a hypothesis on the derivatives, no
 
 ## Compactness in function spaces
 
-A family of functions is [[D-2CCDB|equicontinuous]] when one $\delta$ serves every member of the family at every point, and that is what turns a bound into a convergent subsequence.
+A family of functions is [[D-2CCDB|uniformly equicontinuous]] when one $\delta$ serves every member of the family and every pair of points, and that is what turns a bound into a convergent subsequence.
 
 [[FF-XZGIY]]
 
