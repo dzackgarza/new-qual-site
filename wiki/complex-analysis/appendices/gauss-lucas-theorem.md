@@ -9,7 +9,7 @@ title: Gauss--Lucas theorem
 
 ::: {.example}
 The zeros of $f'$ can lie on the boundary of the convex hull or in its interior.
-For $f(z) = z^n$ the hull is $\theset{0}$, and $f'(z) = nz^{n-1}$ vanishes only at $0$.
+For $f(z) = z^n$ with $n\geq2$ the hull is $\theset{0}$, and $f'(z) = nz^{n-1}$ vanishes only at $0$.
 For $f(z) = z^3 - 1$ the hull is the triangle whose vertices are the cube roots of unity, and $f'(z) = 3z^2$ vanishes only at the interior point $0$.
 
 Both are instances of [[T-C7GBB]]: the zeros of $f'$ lie in the hull of the zeros of $f$, in the first case at the single hull point and in the second at an interior one.
