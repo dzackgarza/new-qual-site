@@ -17,16 +17,15 @@ The cover of $\PP^n_A$ by the $n+1$ opens $D_+(x_i)$ gives $H^*(\PP^n_A,\OO(d))$
 
 [[T-IJW1K]]
 
-The shift $-n-1$ in the duality between $H^n(\PP^n,\OO(d))$ and $S_{-d-n-1}$, where $S=A[x_0,\ldots,x_n]$, is the degree of the canonical sheaf $\omega_{\PP^n}=\OO(-n-1)$ of [[algebraic-geometry/sheaves-of-modules/differentials|differentials]].
-The perfect pairing $H^0(\PP^n,\OO(d))\times H^n(\PP^n,\OO(-d-n-1))\to H^n(\PP^n,\OO(-n-1))\cong A$ is [[T-COHSD|Serre duality]] on $\PP^n$.
+The shift $-n-1$ in the duality between $H^n(\PP^n,\OO(d))$ and $S_{-d-n-1}$, where $S=A[x_0,\ldots,x_n]$, is the twist of the canonical sheaf $\omega_{\PP^n}=\OO(-n-1)$ of [[algebraic-geometry/sheaves-of-modules/differentials|differentials]] ([@Har77, Theorem III.5.1 and Example II.8.20.1], [[T-IJW1K]]).
+The perfect pairing $H^0(\PP^n,\OO(d))\times H^n(\PP^n,\OO(-d-n-1))\to H^n(\PP^n,\OO(-n-1))\cong A$ is the computation of [@Har77, Theorem III.5.1]; over a field it is the case of [[T-COHSD|Serre duality]] on $\PP^n$.
 
 ## $H^1$: lifting sections and line bundles
 
 [[PR-ET5PQ]]
 
 For an exact sequence $0\to\mcf'\to\mcf\to\mcf''\to0$ of sheaves of abelian groups, a section $s\in\Gamma(X,\mcf'')$ lifts to $\Gamma(X,\mcf)$ if and only if $\delta(s)=0$ in $H^1(X,\mcf')$.
-On a cover $\{U_i\}$ with local lifts $t_i\in\mcf(U_i)$ of $s$, the Čech cocycle $(t_j-t_i)\restrict_{U_i\cap U_j}$ with values in $\mcf'$ represents $\delta(s)$.
-Under $\Pic X\cong H^1(X,\OO_X^\times)$, the Čech cocycle of a line bundle is its family of transition functions $g_{ij}\in\OO_X^\times(U_i\cap U_j)$.
+On a cover $\{U_i\}$ with local lifts $t_i\in\mcf(U_i)$ of $s$, the Čech cocycle $(t_j-t_i)\restrict_{U_i\cap U_j}$ with values in $\mcf'$ represents $\delta(s)$ ([[PR-COHLES]]).
 
 ## Dévissage
 
