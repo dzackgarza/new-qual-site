@@ -11698,3 +11698,15 @@ The same page's ST.1 opens "Use the SF package to compute the two scalar product
 **Uncertainty.** Searched: the retained Hartshorne and Vakil extractions, the 124 saved Stacks tags, and the bibliography keys; found: no numbered statement of Chevalley--Warning; conclusion: the card's finite-field step cannot be cited here; confidence: high for the retained set; gaps: a source outside it was not searched for.
 
 **Repair.** Acquire a keyed text stating Chevalley--Warning with a number, then cite it at `PR-VGA2L`'s proof.
+
+## 2026-11-22 (#176): `D-2HXLN` cited the pseudo-hyperbolic exercise for the hyperbolic metric — the definition and the distance formula are Problem 3, not Exercise 13
+
+**Object and need.** `corpus/theory/Complex_Analysis/D-2HXLN`, the definition card for the hyperbolic metric on the disc, and `wiki/complex-analysis/conformal-maps/the-hyperbolic-metric`, which transcludes the card and repeated its distance formula.
+
+**Observed evidence.** In the retained `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`: Exercise 13 of Chapter 8 (book p. 251, PDF page 270) defines the *pseudo-hyperbolic* distance $\rho(z,w)=\abs{(z-w)/(1-\bar w z)}$ and has exactly two parts, (a) and (b); it has no parts (c)--(e), and it defines neither the hyperbolic length nor the hyperbolic metric. Problem 3 of the same chapter (book pp. 256--257, PDF pages 275--276) is the statement that defines the hyperbolic length $\|w\|_z=\abs w/(1-\abs z^2)$ and the metric $\abs{\dz}^2/(1-\abs z^2)^2$, with parts (a) distance-decreasing for a holomorphic self-map, (b) automorphisms preserve the distance, (c) an automorphism carrying one point to $[0,1)$, (d) $d(0,s)=\frac12\log\frac{1+s}{1-s}$, (e) the formula for two arbitrary points. The card said the invariance was "Exercise 13(b) ... where this distance and the metric are defined" and cited "parts (c) and (d) of the same exercise": the first sentence names a part that does not define the metric, and the second names parts that exercise does not have. Commit `d041bf6d2a` introduced the locator while naming page 256, which is Problem 3's page.
+
+**Impact and owner.** The card's statement is correct; only its locators were wrong, so the metric, the invariance and the two formulas stand. The page's repair depended on the card's locator being right, because the page's own citation to Problem 3(d) was the correct one and it left the page.
+
+**Uncertainty.** Exercise 13 and Problem 3 were read in full in the retained PDF; the printed numbering is as stated. No other property of the card was under review.
+
+**Repair.** The card now cites Problem 3(b) for the invariance and "parts (c) and (d) of that problem" for the formula, and the page no longer re-derives the distance.
