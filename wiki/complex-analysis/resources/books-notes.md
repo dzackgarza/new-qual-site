@@ -1,6 +1,6 @@
 ---
 title: Books and notes
-order: 0
+order: 1
 ---
 
 # Books and notes
