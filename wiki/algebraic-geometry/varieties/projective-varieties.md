@@ -40,7 +40,7 @@ For a curve, the constant term of the Hilbert polynomial is $1-p_a$, so the arit
 [[PR-VA4S3]]
 
 The product of projective spaces is projective through the Segre embedding, whose image is the closed subscheme cut out by the $2\times2$ minors ([[PR-VA4S3]]).
-For $m=n=1$ the single minor is $z_{00}z_{11}-z_{01}z_{10}=0$, so the image of $\PP^1\times\PP^1$ is the smooth quadric surface in $\PP^3$, and the product of two projective varieties is projective because the Segre image of the product of their ambient spaces is projective and $X\times_kY$ is closed in it ([[PR-VA4S3]]).
+For $m=n=1$ the single minor is $z_{00}z_{11}-z_{01}z_{10}=0$, so the image of $\PP^1\times\PP^1$ is the smooth quadric surface in $\PP^3$, and the product of two projective varieties is projective because the Segre image of the product of their ambient spaces is projective and $\sigma(X\times_kY)$ is closed in it ([[PR-VA4S3]]).
 The Veronese embedding $v_d\colon\PP^n\to\PP^N$, $N=\binom{n+d}{n}-1$, sends a point to the tuple of all degree-$d$ monomials in its coordinates; it is a closed immersion, and its image is the $d$-uple embedding whose coordinate ring is the $d$-th Veronese subring of $k[x_0,\ldots,x_n]$.
 A projective variety is a closed subset of some $\PP^N$, and the choice of $N$ and of the embedding is exactly the choice of a very ample line bundle on it ([[T-DIVMAPPN]]).
 
