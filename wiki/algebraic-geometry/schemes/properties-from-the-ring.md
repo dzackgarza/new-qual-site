@@ -13,7 +13,7 @@ A scheme is reduced, or locally noetherian, exactly when the rings of one affine
 
 [[PR-6TCSJ]]
 
-A scheme is integral exactly when it is reduced and irreducible [@Har77, §II.3].
+A scheme is integral exactly when it is reduced and irreducible [@Har77, Proposition II.3.1].
 A scheme is noetherian when it has a finite cover by spectra of noetherian rings.
 This is strictly stronger than the topological noetherian condition of [[algebraic-geometry/varieties/the-dictionary|the dictionary]]: a scheme with noetherian underlying space need not have noetherian rings of functions.
 
