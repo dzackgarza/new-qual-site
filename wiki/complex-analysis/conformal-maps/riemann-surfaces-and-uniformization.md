@@ -22,7 +22,7 @@ The proper simply connected case is the Riemann mapping theorem: a simply connec
 
 [[T-BBQLQ]]
 
-A holomorphic function on a compact connected Riemann surface is constant, because a continuous function on a compact space attains its maximum and [[T-BYNL5|the maximum modulus principle]] applies in a chart; a nonconstant holomorphic map to another surface is then surjective, and it is a covering map away from the ramification points.
+A holomorphic function on a compact connected Riemann surface is constant, since a nonconstant holomorphic map out of it is surjective onto its target ([[L-ZXBBI]]) and $\CC$ is not compact; a nonconstant holomorphic map to another surface is then surjective, with finite fibres and finite branching ([[L-ZXBBI]]).
 
 ## Uniformization
 
@@ -31,4 +31,4 @@ A holomorphic function on a compact connected Riemann surface is constant, becau
 [[D-4VGAW]]
 
 The three simply connected models carry the three geometries: the [[D-3QTVR|Riemann sphere]] carries the spherical metric, $\CC$ the Euclidean one, and $\DD$ [[D-2HXLN|the hyperbolic metric]], each invariant under the biholomorphisms of its model.
-So a Riemann surface inherits one of the three geometries from its universal cover, and the compact surfaces with $\CP^1$ as universal cover are exactly $\CP^1$ itself.
+So a Riemann surface inherits one of the three geometries from its universal cover.
