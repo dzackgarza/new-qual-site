@@ -55,6 +55,15 @@ audit:
     $\pi_1(A)\to\pi_1(X)$ is an isomorphism; and the actions are trivial on $\pi_2(A)$ (a product),
     nontrivial on $\pi_2(X)$ (the monodromy sends $\beta\mapsto\beta+\alpha$), and trivial on
     $\pi_2(X,A)=\ZZ\beta$ because the monodromy fixes $\beta$ modulo $\ZZ\alpha$. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 5. One repair in step `s1-2`: it took the homeomorphism
+    $h\colon S^2_\beta\to S^2_\alpha$ to have degree $+1$ without saying so. The sign is the degree,
+    which a homeomorphism has as $\pm1$, and it is absorbed by choosing the generator $\alpha$ to be
+    $h_*\beta$; the step now says that and notes that the other sign is the same statement with
+    $\alpha$ replaced by $-\alpha$. The rest of the computation reads correct.
 ---
 
 ::: {.problem}
@@ -88,7 +97,7 @@ the wedge of two $2$-spheres has $\pi_2$ the free abelian group on the two spher
 $f_*(\alpha) = \alpha$ and $f_*(\beta) = \beta + \alpha$.
 
 ::: pf-proof
-$f$ is the identity on $S^2_\alpha$, and on $S^2_\beta$ it is $\id_\beta + h$ where $h: S^2_\beta \to S^2_\alpha$ is a homeomorphism, so $f_*(\beta) = \beta + h_*(\beta) = \beta \pm \alpha$; taking $h$ of degree $+1$, $f_*(\beta) = \beta + \alpha$.
+$f$ is the identity on $S^2_\alpha$, and on $S^2_\beta$ it is $\id_\beta + h$ where $h: S^2_\beta \to S^2_\alpha$ is a homeomorphism, so $f_*(\beta) = \beta + h_*(\beta) = \beta \pm \alpha$, the sign being the degree of the homeomorphism. The sign is not part of the data: it is absorbed by choosing the generator $\alpha$ of $\pi_2(S^2_\alpha)$ to be $h_*(\beta)$, so the computation below may be made with $f_*(\beta) = \beta + \alpha$, and the case of the other sign is the same statement with $\alpha$ replaced by $-\alpha$.
 :::
 
 :::
