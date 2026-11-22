@@ -388,6 +388,34 @@ audit:
     step s1 and the value 4d-2 from deg c_1(PP^3) = 4 and deg c_1(PP^1) = 2.
     Not read in this pass: Eisenbud and Van de Ven's Proposition 6 in the
     original, only as this card records it.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Two open items recorded and closed. (i) As the card stood at 3c27927314,
+    line 520 drew the conormal sequence of C_n in Q in P^3 with no argument
+    for its exactness on the left, though step s2 subtracts the two degrees in
+    it. Step s2 now derives it: the two inclusions are regular immersions of
+    codimension 1 between nonsingular varieties, so Theorem II.8.17 gives
+    0 -> I_Q/I_Q^2 -> Omega_{P^3} tensor O_Q -> Omega_Q -> 0 and the same for
+    C_n exact with locally free left terms, and tensoring the first by O_{C_n}
+    and applying the theorem again to C_n in Q identifies I_Q/I_Q^2 restricted
+    to C_n with the kernel of I_{C_n}/I_{C_n}^2 -> I_{C_n/Q}/I_{C_n/Q}^2. (ii)
+    At line 683 the proof read the extension class (n-1)eta off the transition
+    matrix with no statement of why a matrix entry is the class. Step s3 now
+    gives the two inputs: Chapter III §6 Exercise 1, that extensions are
+    classified by Ext^1 and that on a two-chart cover the class is the Čech
+    class of the transition matrix with the diagonal entries removed; and
+    Theorem III.5.1(c) with its proof, that H^1(P^1, O(-2)) is one-dimensional
+    with basis the negative monomial x_0^{-1}x_1^{-1}, which is s^{-1} in the
+    frame of the diagonal factor s^{-2}; so the class is (n-1)eta with eta
+    nonzero and vanishes exactly when n-1 = 0 in k. Read for this: Theorem
+    II.8.17 and Proposition II.8.12, Chapter III §6 Exercise 1, and Theorem
+    III.5.1 with its proof, in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md. No step's computation
+    changed, and no claim was weakened; the answers O(-7)^2 away from
+    characteristic 2 and O(-6) + O(-8) in characteristic 2 stand. Not read:
+    any printing of the book, only the text version in tmp/sources.
 - event: source-checked
   by: claude
   date: 2026-11-22
@@ -531,6 +559,20 @@ $$
 \mathcal I_{C_n/Q}/\mathcal I_{C_n/Q}^2
 \longrightarrow0.
 $$
+
+The sequence is exact on the left as well, and its left term is locally free of rank $1$: $C_n$ and
+$Q$ are nonsingular and the two inclusions are regular immersions of codimension $1$, so Theorem
+II.8.17 gives
+$$
+0\to\mathcal I_Q/\mathcal I_Q^2\to\Omega_{\PP^3/k}\tensor\OO_Q\to\Omega_{Q/k}\to0,
+\qquad
+0\to\mathcal I_{C_n}/\mathcal I_{C_n}^2\to\Omega_{\PP^3/k}\tensor\OO_{C_n}\to\Omega_{C_n/k}\to0
+$$
+exact with locally free left terms; tensoring the first by $\OO_{C_n}$, and applying the theorem again
+to $C_n\subset Q$, whose conormal sheaf is $\mathcal I_{C_n/Q}/\mathcal I_{C_n/Q}^2$, identifies
+$\restrictionof{\mathcal I_Q/\mathcal I_Q^2}{C_n}$ with the kernel of
+$\mathcal I_{C_n}/\mathcal I_{C_n}^2\to\mathcal I_{C_n/Q}/\mathcal I_{C_n/Q}^2$, which is the
+displayed sequence.
 
 The quadric is a hypersurface of degree $2$, so
 $$
@@ -684,6 +726,18 @@ $$
 H^1(\PP^1,\OO(-2)).
 $$
 Hence the extension class is $(n-1)\eta$.
+
+The passage from the transition matrix to the class is what makes the computation above a
+computation of the class rather than of a matrix, and it has two parts. First, for an extension of one
+invertible sheaf by another over a two-element affine cover, the extension class in
+$\Ext^1(\OO(-2n),\OO(-2n-2))$ is the Čech class of the transition matrix written in frames of the two
+end terms, with the diagonal entries — the transition functions of those two sheaves — removed: this
+is Chapter III §6 Exercise 1, extensions of $\OO(-2n)$ by $\OO(-2n-2)$ being classified by that
+group, read in Čech cohomology for the cover. Second, that group is $H^1(\PP^1,\OO(-2))$, and in the
+frames of the diagonal factors $s^{-2n-2}$ and $s^{-2n}$ the entry $(n-1)s^{-1}$ is $(n-1)$ times the
+negative monomial $x_0^{-1}x_1^{-1}$, which generates $H^1(\PP^1,\OO(-2))\cong k$ by Theorem
+III.5.1(c) and its proof. So the class is $(n-1)\eta$ with $\eta\ne0$, and it vanishes exactly when
+$n-1=0$ in $k$.
 
 :::
 
