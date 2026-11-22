@@ -24,7 +24,7 @@ Taking $D=K_C$ in Riemann–Roch gives
 $$
 \ell(K_C)-\ell(0)=\deg K_C+1-g ,
 $$
-and $\ell(0)=1$ while $\ell(K_C)=h^1(\OO_C)=g$ by Serre duality, so $\deg K_C=2g-2$ [@Har77, Proposition IV.1.3].
+and $\ell(0)=1$ while $\ell(K_C)=h^1(\OO_C)=g$ by Serre duality, so $\deg K_C=2g-2$ [@Har77, Theorem IV.1.3].
 That number is the degree of the canonical class, the threshold beyond which a divisor is nonspecial, and the exponent in the adjunction formula $2g-2=C\cdot(C+K)$ for a curve on a surface ([[T-SRFADJ]]).
 
 ## Special and nonspecial divisors
