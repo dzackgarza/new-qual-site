@@ -98,6 +98,15 @@ audit:
     by extensions agreeing on $X^{k-1}$ using the homotopy extension property of the CW pair
     $(X^k,X^{k-1})$ (Proposition 0.16). The step now runs that passage; the induction is unchanged
     otherwise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    The preamble cited Sam's sketch without saying what it leaves out. It now records that the sketch
+    never uses the finiteness of $\pi_i(Y)$ — its sentences would make $[X,Y]$ finite for an arbitrary
+    target, so they prove nothing about this exercise — and that the count in which the hypothesis
+    enters is the card's. Step `induction` carries the same marking at the point where $\pi_k(C)$ is
+    counted. No mathematics changed.
 ---
 
 ::: {.problem}
@@ -105,7 +114,7 @@ Show that $[X, Y]$ is finite if $X$ is a finite connected CW complex and $\pi_i(
 :::
 
 ::: {.solution}
-The argument follows the retained sketch of **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.1 Exercise 20** (`tmp/sources/hatcher-solutions-sam-2008.pdf`), where a map is fixed on the $(k-1)$-skeleton and shown to have finitely many extensions over each cell, so that finitely many choices give a map of the whole complex; the induction performing that count, with the fibration $Y\to Y^{d}$ of the $d$-th Postnikov stage replacing Sam's implicit truncation, is the card's. It is checked against Hatcher, §4.1 Exercise 20, and against the obstruction theory of §4.3.
+The argument follows the retained sketch of **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.1 Exercise 20** (`tmp/sources/hatcher-solutions-sam-2008.pdf`), where a map is fixed on the $(k-1)$-skeleton and shown to have finitely many extensions over each cell. Sam's sketch never uses the finiteness of $\pi_i(Y)$: the same sentences would make $[X,Y]$ finite for an arbitrary target, so the count in which the hypothesis does its work is the card's, and the step carrying it is marked as the card's below. It is checked against Hatcher, §4.1 Exercise 20, and against the obstruction theory of §4.3.
 
 ::: pf
 
@@ -167,7 +176,7 @@ A homotopy rel $X^{k-1}$ between two extensions restricts to a homotopy rel $\pa
 For each $k\le d$ the set of homotopy classes of maps $X^{k}\to C$ extending a fixed map on $X^{k-1}$ is finite, and consequently $[X,C]$ is finite.
 
 ::: pf-proof
-Induction on $k$ from $k=0$, where the set of homotopy classes of maps $X^{0}\to C$ is a single point: $X^{0}$ is a finite discrete set and $C$ is path-connected, so any two maps of $X^{0}$ into $C$ are homotopic, a homotopy moving each of the finitely many image points along a path in $C$. At the step, step [](#percell){.pf-ref} gives at most $\cardinality{\pi_k(C)}$ extensions over each $k$-cell and step [](#independent){.pf-ref} bounds their number by a finite product, with $\pi_k(C)$ finite for $k\le d$ by hypothesis. For the passage from a fixed map to all maps, $[X^{k},C]$ is the union over the classes $[\varphi]\in[X^{k-1},C]$, finitely many by the induction hypothesis, of the classes restricting to $[\varphi]$; each of those fibres is a quotient of the set of extensions of $\varphi$ over $X^{k}$ up to homotopy relative to $X^{k-1}$ used above, because two extensions homotopic relative to $X^{k-1}$ are homotopic, and two homotopic extensions of $\varphi$ can be replaced by extensions agreeing on $X^{k-1}$ using the homotopy extension property of the CW pair $(X^{k},X^{k-1})$ (Proposition 0.16). So $[X^{k},C]$ is finite for each $k$, and since $X$ is $d$-dimensional, $X^{d}=X$ and the induction terminates at $[X,C]$.
+Induction on $k$ from $k=0$, where the set of homotopy classes of maps $X^{0}\to C$ is a single point: $X^{0}$ is a finite discrete set and $C$ is path-connected, so any two maps of $X^{0}$ into $C$ are homotopic, a homotopy moving each of the finitely many image points along a path in $C$. At the step, step [](#percell){.pf-ref} gives at most $\cardinality{\pi_k(C)}$ extensions over each $k$-cell and step [](#independent){.pf-ref} bounds their number by a finite product, with $\pi_k(C)$ finite for $k\le d$ by hypothesis. This count is the card's: it is where the finiteness of $\pi_k(Y)$ is used, and Sam's sketch, which never uses it, does not supply it. For the passage from a fixed map to all maps, $[X^{k},C]$ is the union over the classes $[\varphi]\in[X^{k-1},C]$, finitely many by the induction hypothesis, of the classes restricting to $[\varphi]$; each of those fibres is a quotient of the set of extensions of $\varphi$ over $X^{k}$ up to homotopy relative to $X^{k-1}$ used above, because two extensions homotopic relative to $X^{k-1}$ are homotopic, and two homotopic extensions of $\varphi$ can be replaced by extensions agreeing on $X^{k-1}$ using the homotopy extension property of the CW pair $(X^{k},X^{k-1})$ (Proposition 0.16). So $[X^{k},C]$ is finite for each $k$, and since $X$ is $d$-dimensional, $X^{d}=X$ and the induction terminates at $[X,C]$.
 :::
 
 :::
