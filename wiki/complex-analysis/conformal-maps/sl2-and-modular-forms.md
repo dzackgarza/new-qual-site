@@ -1,5 +1,5 @@
 ---
-title: SL2(R) and modular forms
+title: $\SL_2(\RR)$ and modular forms
 order: 65
 topics:
 - Modular Forms
@@ -7,9 +7,9 @@ topics:
 - Lattices
 ---
 
-# SL2(R) and modular forms
+# $\SL_2(\RR)$ and modular forms
 
-Recall that a [[D-7PTGC|modular form]] of weight $k$, for an even $k$, is a holomorphic $f\colon\HH\to\CC$ with $f\big((az+b)/(cz+d)\big)=(cz+d)^kf(z)$ for every $\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\SL_2(\ZZ)$ and a $q$-expansion with no negative powers; the quotient $\SL_2(\ZZ)\backslash\HH$ is the set of lattices up to scale.
+Recall that a [[D-7PTGC|modular form]] of weight $k$, for an even $k$, is a holomorphic $f\colon\HH\to\CC$ with $f\big((az+b)/(cz+d)\big)=(cz+d)^kf(z)$ for every $\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\SL_2(\ZZ)$ and a $q$-expansion with no negative powers; the quotient $\SL_2(\ZZ)\backslash\HH$ is the moduli space of lattices up to scale (C. McMullen, *Advanced Complex Analysis*, Theorem 5.26).
 
 [[T-VGDFW]]
 
