@@ -33,7 +33,7 @@ A \dfn{Grothendieck topology} $J$ on $\mathcal C$ assigns to every object $U$ a 
 
 3. if $R\in J(U)$ and $S$ is a sieve on $U$ such that $f^*S\in J(V)$ for every $f\colon V\to U$ in $R$, then $S\in J(U)$.
 
-A \dfn{site} is a category equipped with a Grothendieck topology.
+A \dfn{site} is a category equipped with a Grothendieck topology (Stacks Project, Chapter 7, Sites and Sheaves).
 :::
 
 ::: {.definition title="Pretopology"}
