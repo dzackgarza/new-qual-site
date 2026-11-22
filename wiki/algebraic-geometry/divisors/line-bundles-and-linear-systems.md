@@ -24,7 +24,7 @@ Linear equivalence of divisors corresponds to isomorphism of invertible sheaves,
 
 [[T-DIVMAPPN]]
 
-For a basis $s_0,\ldots,s_n$ of a linear system $V\subseteq H^0(X,\mcl)$, the morphism sends $x$ to $[s_0(x):\cdots:s_n(x)]$, with the values taken in a trivialization of $\mcl$ near $x$.
-It is defined exactly off the base locus of $V$; for $X$ projective over an algebraically closed field, it is a closed immersion exactly when $V$ separates points and tangent vectors.
+For a basis $s_0,\ldots,s_n$ of a linear system $V\subseteq H^0(X,\mcl)$, the morphism of [[T-DIVMAPPN]] sends $x$ to $[s_0(x):\cdots:s_n(x)]$, with the values taken in a trivialization of $\mcl$ near $x$.
+It is defined exactly off the base locus of $V$; for $X$ projective over an algebraically closed field, it is a closed immersion exactly when $V$ separates points and tangent vectors [@Har77, Proposition II.7.3].
 
-On a smooth projective curve $C$ of genus $g$, $\abs{D}$ is base-point free exactly when $\ell(D-p)=\ell(D)-1$ for every point $p$, and very ample exactly when $\ell(D-p-q)=\ell(D)-2$ for all points $p,q$ [@Har77, Proposition IV.3.1]; Riemann--Roch gives $\ell(D-E)=\deg(D-E)+1-g$ whenever $\deg(D-E)>2g-2$.
+On a smooth projective curve $C$ of genus $g$, $\abs{D}$ is base-point free exactly when $\ell(D-p)=\ell(D)-1$ for every point $p$, and very ample exactly when $\ell(D-p-q)=\ell(D)-2$ for all points $p,q$ [@Har77, Proposition IV.3.1]; Riemann--Roch gives $\ell(D-E)=\deg(D-E)+1-g$ whenever $\deg(D-E)>2g-2$ ([[T-MWDVL]]).
