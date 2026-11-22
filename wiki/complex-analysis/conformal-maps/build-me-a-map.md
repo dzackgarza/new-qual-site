@@ -26,7 +26,7 @@ and $L\coloneqq\theset{x+iy\st 0<y<\pi}$, the horizontal strip.
 | a sector $0<\Arg z<\pi/n$ | $\HH$ | $z\mapsto z^n$ |
 | a symmetric sector $\abs{\Arg z}<\theta_0$ | the right half plane | a branch of $z\mapsto z^a$ with $a = \pi/(2\theta_0)$ |
 | the strip $L$ | $\HH$ | $z\mapsto e^z$, which maps $\theset{-\pi<\Im z<\pi}$ onto $\CC\sm\RR_{\leq0}$ |
-| a rectangle $\Re z\in[a,b]$, $\Im z\in[c,d]$ | an annular sector | $z\mapsto e^z$, with $\theset{\Re z\in[a,b],\ \Im z\in[c,d]}$ going to $\theset{Re^{i\theta}\st R\in[e^a,e^b],\ \theta\in[c,d]}$ for $b-a>0$ and $0<d-c\leq2\pi$ |
+| a rectangle $a<\Re z<b$, $c<\Im z<d$ | an annular sector | $z\mapsto e^z$, with $\theset{a<\Re z<b,\ c<\Im z<d}$ going to $\theset{Re^{i\theta}\st e^a<R<e^b,\ c<\theta<d}$ for $b>a$ and $0<d-c\leq2\pi$ |
 | the half disc $\DD\intersect\HH$ | a quadrant | the Joukowski map $z\mapsto z+\inverseof z$, which maps $\abs z = 1$ onto $[-2,2]$, $\DD\intersect\HH$ onto $Q_{34}$, and $\overline{\DD}^c$ onto $\CC\sm[-2,2]$ |
 | a region bounded by two circular arcs | a sector, or a strip when the arcs are tangent | [[D-FRVBV|a Möbius transformation]] sending the two intersection points to $0$ and $\infty$, or the point of tangency to $\infty$ |
 | the slit plane $\CC\sm[0,\infty)$ | $\HH$ | the branch of $\sqrt z$ with argument in $(0,\pi)$ |
@@ -71,7 +71,7 @@ The inverse $\inverseof z=\bar z/\abs z^2$ is [@Ahl73, ch. 1, §1.4, Conjugation
 
 ## Standard maps
 
-The maps from and onto the half plane and the disc are stated on their cards; their composites give the map between any two regions of the table.
+Composing the maps of the table gives the map between any two of its regions.
 
 [[PR-OOHFS]]
 
