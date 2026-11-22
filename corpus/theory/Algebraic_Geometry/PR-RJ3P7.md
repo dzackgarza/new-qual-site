@@ -48,5 +48,5 @@ Surjectivity is not part of that: it is lying over, and it needs $\phi$ injectiv
 
 The dimension statement is separate again, and it is about an extension of rings rather than about an arbitrary finite map: going up together with incomparability makes $\dim B = \dim A$ for an integral extension $A\subseteq B$, so an integral morphism has the dimension of its image; a finite morphism need not preserve the dimension of its target, the same $\ZZ\to\ZZ/2$ having dimension $1$ below and $0$ above.
 
-Going down is what makes heights match, $\operatorname{ht} \mfq = \operatorname{ht}(\mfq \cap A)$, under its hypotheses: geometrically, every generization of $f(\mfq)$ in $\Spec A$ lifts to a generization of $\mfq$.
+In the integral case of the second theorem — $A \subseteq B$ domains with $A$ integrally closed and $B$ integral over $A$ — going down together with going up and incomparability is what makes heights match, $\operatorname{ht} \mfq = \operatorname{ht}(\mfq \cap A)$. Flat going down alone does not: $\ZZ[x] \to \ZZ[x,y]$ is flat, and the prime $(y)$ has height $1$ while its contraction $(0)$ has height $0$. Geometrically, every generization of $f(\mfq)$ in $\Spec A$ lifts to a generization of $\mfq$.
 :::
