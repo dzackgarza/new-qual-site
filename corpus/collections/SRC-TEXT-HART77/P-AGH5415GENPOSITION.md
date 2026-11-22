@@ -761,6 +761,23 @@ audit:
     both of degree $9$, and the count $3+(N-1)$ at $N\le7$. Not done: no determinant
     was computed and none is used, and no case of step part-c-open is touched.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Issue #165, third item on this card, found by reading the step claims against
+    their proofs: four claims said that part (c) holds for their range without the
+    hypothesis of part (c), that the ground field is uncountable. What those proofs
+    give in every characteristic is that the bad loci are contained in proper closed
+    subsets; the passage from that to (c) is step dense-general-position-extension,
+    whose statement assumes $k$ uncountable, and over a countable field its
+    countable-union lemma is false. The claims of steps properness-r-at-most-seven,
+    properness-r-at-most-eight, properness-r-nine and effective-root-for-every-point
+    now carry "when $k$ is uncountable", and the head says the same of the range it
+    lists. Read in this pass: the four claims, and the statements of steps
+    dense-general-position-extension and part-c-open; Hartshorne, Exercise V.4.15(c),
+    whose first sentence is that hypothesis. No proof changed.
+
 ---
 
 ::: {.problem}
@@ -803,7 +820,7 @@ The two conditions the exercise's parts (d) and (e) turn on are Nagata's:
 - a virtual linear system $L$ is exceptional exactly when it is irreducible with $I(L)=-1$ and $vg(L)=0$, by Proposition 2; for an irreducible curve $C$ on $X$ its class is exceptional exactly when $C\cong\PP^1$ and $C^2=-1$, which is the definition of an irreducible curve of the first kind;
 - a numerical type $(d,m_1,\ldots,m_r)$ is *pre-exceptional* when it is similar to $(1,1,1,0,\ldots,0)$ with $r-2$ zeros, which is the type of $r$ base points with $d=1$, $m_1=m_2=1$ and $m_3=\cdots=m_r=0$, the class of a line through two of the points, so that $I=-1$ and $vg=0$; and by Theorem 3a  a virtually connected system with $I=-1$ and $vg=0$ is of pre-exceptional type.
 
-The steps below transcribe (a) from Yang Pi-Yeh, Solution 5.4.15(a), for the "only if" direction, and from the proof of Proposition V.4.10, Case 2, for the "if" direction; (b) from Yang, Solution 5.4.15; and (d) and (e) from Nagata, Theorems 2a and 4a, with the count from Dolgachev, Proposition 8.2.15. The proof of (c) is the card's own, and no source listed for the card proves part (c) for any $r$: it establishes (c) for $r\le8$ in every characteristic in step [](#properness-r-at-most-eight){.pf-ref}, with a second proof for $r\le7$ in step [](#properness-r-at-most-seven){.pf-ref}, and for every $r\ge9$ in step [](#properness-on-a-cubic){.pf-ref} when the points lie on a cubic and either $k$ has characteristic $0$ or that cubic is not cuspidal. At $r=9$ the cubic hypothesis costs nothing, since nine points always lie on a cubic, and step [](#properness-r-nine){.pf-ref} is a second proof for that case. Part (c) is not proved here in two cases: $r\ge10$ points that lie on no cubic, and, in characteristic $p>0$, $r\ge9$ points that lie on exactly one cubic when that cubic is cuspidal. Step [](#effective-line-class-is-not-general){.pf-ref} turns part (c) into a statement about countably many divisor classes, and step [](#part-c-open){.pf-ref} states it for these two cases.
+The steps below transcribe (a) from Yang Pi-Yeh, Solution 5.4.15(a), for the "only if" direction, and from the proof of Proposition V.4.10, Case 2, for the "if" direction; (b) from Yang, Solution 5.4.15; and (d) and (e) from Nagata, Theorems 2a and 4a, with the count from Dolgachev, Proposition 8.2.15. The proof of (c) is the card's own, and no source listed for the card proves part (c) for any $r$: it establishes part (c) for $r\le8$ in every characteristic, under the hypothesis of (c) that $k$ is uncountable, in step [](#properness-r-at-most-eight){.pf-ref}, with a second proof for $r\le7$ in step [](#properness-r-at-most-seven){.pf-ref}, and for every $r\ge9$ in step [](#properness-on-a-cubic){.pf-ref} when the points lie on a cubic and either $k$ has characteristic $0$ or that cubic is not cuspidal. At $r=9$ the cubic hypothesis costs nothing, since nine points always lie on a cubic, and step [](#properness-r-nine){.pf-ref} is a second proof for that case. Part (c) is not proved here in two cases: $r\ge10$ points that lie on no cubic, and, in characteristic $p>0$, $r\ge9$ points that lie on exactly one cubic when that cubic is cuspidal. Step [](#effective-line-class-is-not-general){.pf-ref} turns part (c) into a statement about countably many divisor classes, and step [](#part-c-open){.pf-ref} states it for these two cases.
 
 For part (c), fix $P_1,\ldots,P_r$ in general position, let $X_r$ be their blow-up, and let $U\subseteq\PP^2$ be the complement of the points $P_i$ and of the lines $P_iP_j$; $U$ is open and dense, and it is also an open subset of $X_r$. For $P\in U$ let $Y_P=\Bl_PX_r$, with $\Pic Y_P$ free on $h,e_1,\ldots,e_r,e$, where $e$ is the class of the exceptional curve over $P$, so that $K_{Y_P}=-3h+\sum_ie_i+e$ (Hartshorne, Propositions V.3.2 and V.3.3). A root is a class $\alpha$ with $\alpha^2=-2$ and $K\cdot\alpha=0$, and for a root $\alpha$ we put $Z_\alpha=\{P\in U:\alpha\text{ is the class of an effective divisor on }Y_P\}$.
 
@@ -881,7 +898,7 @@ Whether $B(w,T)\ne W_w$ is a separate question, and one case of it is proved her
 :::
 
 ::: {.pf-step #properness-r-at-most-seven}
-If $r\le7$, every set of step [](#bad-locus-proper-closed){.pf-ref} is contained in a proper closed subset of $\PP^2$, and part (c) holds for those $r$.
+If $r\le7$, every set of step [](#bad-locus-proper-closed){.pf-ref} is contained in a proper closed subset of $\PP^2$, and, when $k$ is uncountable, part (c) holds for those $r$.
 
 ::: pf-proof
 Fix a word $w$ and a terminal triple $T=\{a,b,c\}$. The classes on $\operatorname{Bl}_{r+1}\PP^2$ can be followed through the moves of $w$: a quadratic transformation centred at three of the current points replaces $h$ by $2h-c_1-c_2-c_3$ and the three exceptional classes by $h-c_j-c_k$, an integral orthogonal transformation of $\operatorname{Pic}$ which fixes $K=-3h+\sum_ic_i$. So the classes $h_w$ and $c_1,\ldots,c_{r+1}$ attached to the terminal plane depend on $w$ alone and not on $P$, and
@@ -973,7 +990,7 @@ For $r=8$, $\abs{-K_{X_8}}$ is a pencil whose members meet at one point $x$, tra
 :::
 
 ::: {.pf-step #properness-r-at-most-eight}
-If $r\le8$, then $Z_\alpha\ne U$ for every root $\alpha$, and part (c) holds for those $r$ in every characteristic.
+If $r\le8$, then $Z_\alpha\ne U$ for every root $\alpha$ in every characteristic, and, when $k$ is uncountable, part (c) holds for those $r$.
 
 ::: pf-proof
 Take $E_0$ from step [](#smooth-cubic){.pf-ref}. Its strict transform on $X_r$ is irreducible of class $-K_{X_r}$ and square $9-r>0$, so step [](#no-effective-root){.pf-ref} applies to $X_r$. Let $P\in E_0\cap U$; all but finitely many points of $E_0$ qualify. On $Y_P$ the strict transform $E$ of $E_0$ is irreducible, $E\cong E_0$, of class $-K_{Y_P}$ with $E^2=8-r\ge0$. Suppose $D$ is effective of class $\alpha=dh-\sum_im_ie_i-me$ and write $D=aE+D'$ with $D'$ effective and not containing $E$; $0\le a\le d/3$ because $h$ is nef. Then $D'\cdot E=-K\cdot\alpha-aE^2=-a(8-r)$ is $\ge0$, so $D'\cdot E=0$ (and $a=0$ when $r<8$). By Proposition V.1.4, $D'\cap E=\emptyset$, so $\mathcal O_E(D')\cong\mathcal O_E$; restricting $h$, $e_i$, $e$ to $E\cong E_0$ gives $\mathcal O_{E_0}(1)$, $\mathcal O_{E_0}(P_i)$, $\mathcal O_{E_0}(P)$, hence
@@ -988,7 +1005,7 @@ By step [](#bad-locus-root-class){.pf-ref} every set of step [](#bad-locus-prope
 :::
 
 ::: {.pf-step #properness-r-nine}
-Let $r=9$, and suppose that $k$ has characteristic $0$ or that some cubic through $P_1,\ldots,P_9$ is not cuspidal. Then $Z_\alpha\ne U$ for every root $\alpha$, and part (c) holds.
+Let $r=9$, and suppose that $k$ has characteristic $0$ or that some cubic through $P_1,\ldots,P_9$ is not cuspidal. Then $Z_\alpha\ne U$ for every root $\alpha$, and, when $k$ is uncountable, part (c) holds.
 
 ::: pf-proof
 The plane cubics form a $\PP^9$, so some cubic $E_0$ passes through the nine points; in positive characteristic choose it not cuspidal. No three of the points are collinear, and no six lie on a conic: on an irreducible conic by step [](#subset-general-position){.pf-ref} and the "only if" argument of step [](#general-position-six-points){.pf-ref}, on a pair of lines because each line carries at most two. A cubic with a line as a component therefore carries at most $2+5$ of the points, so $E_0$ is irreducible and reduced. $E_0$ is nonsingular at each $P_i$: otherwise its strict transform on the blow-up of eight of the points, $P_i$ among them, is an irreducible curve of class $3h-2e_i-\sum_{j\ne i}e_j$, of square $-2$ and $K$-degree $0$, and the eight points are in general position by step [](#subset-general-position){.pf-ref}, against step [](#no-minus-two-curve){.pf-ref}. So the strict transform $E\subseteq X_9$ of $E_0$ has class $-K_{X_9}$ and $E\cong E_0$.
@@ -1064,7 +1081,7 @@ Let $D$ be an effective divisor of class $\gamma$. The proof of step [](#propern
 :::
 
 ::: {.pf-step #effective-root-for-every-point}
-For every $r\ge15$ there are points $P_1,\ldots,P_r$ in general position and a root $\alpha$ with $Z_\alpha=U$. For such $r$ the statement "$Z_\alpha\ne U$ for every root $\alpha$", which step [](#properness-r-at-most-eight){.pf-ref} proves for $r\le8$ and step [](#properness-r-nine){.pf-ref} for $r=9$ under its hypothesis, is false. The root $\alpha$ is none of the classes $\alpha_{w,T}$ of step [](#effective-line-class-is-not-general){.pf-ref}, and part (c) holds for these points.
+For every $r\ge15$ there are points $P_1,\ldots,P_r$ in general position and a root $\alpha$ with $Z_\alpha=U$. For such $r$ the statement "$Z_\alpha\ne U$ for every root $\alpha$", which step [](#properness-r-at-most-eight){.pf-ref} proves for $r\le8$ and step [](#properness-r-nine){.pf-ref} for $r=9$ under its hypothesis, is false. The root $\alpha$ is none of the classes $\alpha_{w,T}$ of step [](#effective-line-class-is-not-general){.pf-ref}, and, when $k$ is uncountable, part (c) holds for these points.
 
 ::: pf-proof
 Let $E_0$ be a nonsingular plane cubic. Call points $P_1,\ldots,P_r$ of $E_0$ *independent* when $\mathcal O_{E_0}(d)\otimes\mathcal O_{E_0}(-\sum_im_iP_i)$ is not trivial for any nonzero $(d;m_1,\ldots,m_r)\in\ZZ^{r+1}$ with $3d=\sum_im_i$. Since $k$ is uncountable, independent points exist for every $r$: choose them one at a time. If $P_1,\ldots,P_{j-1}$ are independent, a relation with $m_j\ne0$ fixes the class of $\mathcal O(m_jP_j)$, which leaves finitely many $P_j$ (Example IV.1.3.7 and Milne, *Abelian Varieties* v2.00, Theorem I.7.2); there are countably many relations, and one with $m_j=0$ is a relation among the earlier points.
