@@ -20,7 +20,7 @@ The poles, residues, product expansion, and reflection formula of $\Gamma$ are o
 
 ## Conic sections
 
-A conic is the zero set of a quadratic $Q(x,y) = ax^2+bxy+cy^2+dx+ey+f$; for a nondegenerate real conic with at least one real point, the discriminant $b^2-4ac$ decides its type — negative for an ellipse, zero for a parabola, positive for a hyperbola — and completing the square brings it to a standard form.
+[[D-CN7QC]]
 
 ::: {.fact title="Conics in polar form"}
 With the focus at the origin and the directrix the line $x = d$, the conic with eccentricity $e\geq0$ is
