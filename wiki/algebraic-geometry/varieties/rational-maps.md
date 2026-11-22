@@ -18,7 +18,7 @@ A rational map is a morphism defined on a dense open subset ([[D-VARBIRAT]]), so
 [[D-VARBIRAT]]
 
 For the rule $\thevector{x:y:z}\mapsto\thevector{x:y}$ on $\PP^2$, the indeterminacy locus is the single point $\thevector{0:0:1}$.
-The indeterminacy locus is small: a rational map from a normal variety to a projective variety is undefined only in codimension at least two [@Har77, Section I.4]: at a point of codimension one the local ring $\OO_{X,\eta}$ is a discrete valuation ring, so a tuple of rational functions can be cleared of denominators there. In particular a rational map from a nonsingular curve to a projective variety is a morphism ([[T-CRVMINMOD]]).
+The indeterminacy locus is small: a rational map from a normal variety to a projective variety is undefined only in codimension at least two [@Vak25, Exercise 15.3.B]: at a point of codimension one the local ring $\OO_{X,\eta}$ is a discrete valuation ring, so a tuple of rational functions can be cleared of denominators there. In particular a rational map from a nonsingular curve to a projective variety is a morphism ([[T-CRVMINMOD]]).
 A rational map is dominant when its image is dense; a dominant rational map $X\dashrightarrow Y$ pulls functions back along the inclusion $k(Y)\into k(X)$ of function fields.
 
 ## Rational maps to projective space
