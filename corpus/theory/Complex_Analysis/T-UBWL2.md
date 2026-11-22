@@ -15,5 +15,5 @@ review: draft
 
 ::: {.theorem}
 Let $f$ be [[D-7DFVJ|meromorphic]] on $\CC$ such that $\infty$ is either a removable singularity or a pole of $f$, in the sense of [[D-BPBSQ|singularities at infinity]].
-Then $f$ is a rational function: $f=P/Q$ for polynomials $P,Q\in\CC[z]$ with $Q\neq0$ [@SS03, Theorem 3.4 (p. 87)].
+Then $f$ is a rational function: $f=P/Q$ for polynomials $P,Q\in\CC[z]$ with $Q\neq0$ [@SS03, ch. 3, Theorem 3.4].
 :::
