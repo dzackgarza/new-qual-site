@@ -46,7 +46,7 @@ A morphism $U \to X$ as in condition 2 is an \dfn{étale atlas}.
 
 ::: {.proposition}
 If $U \to X$ is an étale atlas of an algebraic space, then $R = U \times_X U \to U \times_S U$ is an étale equivalence relation and $X \cong U/R$.
-Conversely, the quotient $U/R$ of any étale equivalence relation on a scheme $U$ is an algebraic space, with étale atlas $U \to U/R$.
+Conversely, the quotient $U/R$ of any étale equivalence relation on a scheme $U$ over a scheme $S$ is an algebraic space, and $U \to U/R$ is étale and surjective (Stacks Project, Theorem 65.10.5, tag 02WW).
 :::
 
 ::: {.example}

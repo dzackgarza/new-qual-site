@@ -19,8 +19,7 @@ It is base-point free for $g\ge2$, and for $g\ge3$ the map it defines embeds $C$
 [[D-CRVSPEC]]
 
 Riemann--Roch for a divisor $D$ on a curve of genus $g$ is $\ell(D)-\ell(K-D)=\deg D+1-g$ [@Har77, Theorem IV.1.3], so $\ell(D)\ge\deg D+1-g$ always, with equality exactly for the nonspecial divisors.
-Two consequences organise everything below.
-A divisor of negative degree has $\ell(D)=0$, since an effective divisor has nonnegative degree; and a divisor of degree at least $g$ has $\ell(D)\ge1$.
+Two consequences are used throughout: a divisor of negative degree has $\ell(D)=0$, since an effective divisor has nonnegative degree; and a divisor of degree at least $g$ has $\ell(D)\ge1$.
 The canonical divisor itself is special, because $\ell(K-K)=\ell(0)=1$, and $\deg K=2g-2$ [@Har77, Example IV.1.3.3].
 Speciality is a property of the divisor class, since $\ell$ depends only on $\OO_C(D)$.
 

@@ -56,8 +56,8 @@ $$
 0\to\ZZ_X\to\OO_X\xrightarrow{\ \exp\ }\OO_X^\times\to0,
 $$
 whose connecting map is $\delta\colon H^0(X,\OO_X^\times)\to H^1(X,\ZZ_X)$.
-The class $\delta(z)$ of the coordinate function is computed on the cover by $U_1=\CC\sm(-\infty,0]$ and $U_2=\CC\sm[0,\infty)$, on each of which $z$ has a logarithm: taking on $U_1$ the branch with argument in $(-\pi,\pi)$ and on $U_2$ the branch with argument in $(0,2\pi)$, the two logarithms agree on the upper component of $U_1\intersect U_2$ and differ by $2\pi i$ on the lower one, so $\delta(z)$ is the Čech cocycle equal to $0$ on the first component and to $-1$ on the second ([[D-PTIW0]]).
-Evaluated on the loop $t\mapsto e^{2\pi it}$, this class takes the value $(2\pi i)^{-1}\oint\mathrm{d}z/z=1$, so $\delta(z)$ is a generator of $H^1(X,\ZZ_X)\cong\ZZ$; in particular $\delta(z)\neq0$, which is the statement that $z$ has no global logarithm ([[algebraic-geometry/sheaves/morphisms-of-sheaves|morphisms of sheaves]]).
+The class $\delta(z)$ of the coordinate function is computed on the cover by $U_1=\CC\sm(-\infty,0]$ and $U_2=\CC\sm[0,\infty)$, on each of which $z$ has a logarithm: taking on $U_1$ the branch with argument in $(-\pi,\pi)$ and on $U_2$ the branch with argument in $(0,2\pi)$, the two logarithms agree on the upper component of $U_1\intersect U_2$ and differ by $2\pi i$ on the lower one, so with the connecting map represented by the cocycle $t_2-t_1$ on $U_1\intersect U_2$ and the kernel $2\pi i\ZZ_X$ identified with $\ZZ_X$, $\delta(z)$ is the Čech cocycle equal to $0$ on the upper component and to $+1$ on the lower one ([[D-PTIW0]]).
+Evaluated on the positively oriented loop $t\mapsto e^{2\pi it}$, the class takes the value $(2\pi i)^{-1}\oint\mathrm{d}z/z=+1$, so $\delta(z)$ is a generator of $H^1(X,\ZZ_X)\cong\ZZ$; in particular $\delta(z)\neq0$, which is the statement that $z$ has no global logarithm ([[algebraic-geometry/sheaves/morphisms-of-sheaves|morphisms of sheaves]]).
 
 ## Dévissage
 

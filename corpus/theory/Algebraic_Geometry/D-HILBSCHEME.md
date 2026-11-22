@@ -28,9 +28,16 @@ The \dfn{Hilbert functor} $\operatorname{Hilb}^P_{X/S}$ sends a locally Noetheri
 The Hilbert functor $\operatorname{Hilb}_{X/S}$ is the disjoint union of the $\operatorname{Hilb}^P_{X/S}$ over all $P$.
 :::
 
-::: {.theorem title="Grothendieck"}
-Each $\operatorname{Hilb}^P_{X/S}$ is represented by a projective $S$-scheme, the \dfn{Hilbert scheme} $\operatorname{Hilb}^P(X/S)$, and $\operatorname{Hilb}_{X/S}$ is represented by $\bigsqcup_P \operatorname{Hilb}^P(X/S)$.
-The universal family is a closed subscheme $\mathcal{Z} \subseteq X \times_S \operatorname{Hilb}^P(X/S)$, flat over $\operatorname{Hilb}^P(X/S)$, such that every family $Z \subseteq X \times_S T$ as above is the pullback of $\mathcal{Z}$ along a unique morphism $T \to \operatorname{Hilb}^P(X/S)$.
+::: {.theorem title="Representability"}
+Let $f\colon X\to B$ be a morphism of algebraic spaces over a scheme $S$, of finite presentation and separated.
+Then $\operatorname{Hilb}_{X/B}$ is an algebraic space, locally of finite presentation over $B$ (Stacks Project, Proposition 99.9.4, tag 0D01).
+A representing object carries a universal family: the identity morphism of the representing object corresponds under Yoneda to a closed subspace $\mathcal{Z}\subseteq X\times_B\operatorname{Hilb}_{X/B}$, flat over the base, whose pullback along $T\to\operatorname{Hilb}_{X/B}$ is the family classified by that morphism.
+:::
+
+::: {.theorem title="Grothendieck, in the projective case"}
+Let $S$ be a Noetherian scheme, $X\to S$ a projective morphism with a relatively very ample invertible sheaf $\OO_X(1)$, and $P\in\QQ[m]$.
+Then $\operatorname{Hilb}^P_{X/S}$ is represented by a projective $S$-scheme, the \dfn{Hilbert scheme} $\operatorname{Hilb}^P(X/S)$, and $\operatorname{Hilb}_{X/S}$ by the disjoint union over $P$; the universal family is a closed subscheme $\mathcal{Z}\subseteq X\times_S\operatorname{Hilb}^P(X/S)$, flat over $\operatorname{Hilb}^P(X/S)$, pulling back to $Z$ along the unique morphism $T\to\operatorname{Hilb}^P(X/S)$ classifying $Z$.
+This is Grothendieck's theorem; the proof goes by bounding the family and then applying the representability of quotients of a fixed sheaf, and it is not proved here.
 :::
 
 ::: {.example}

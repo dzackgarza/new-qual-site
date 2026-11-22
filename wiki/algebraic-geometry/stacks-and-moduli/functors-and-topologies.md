@@ -10,14 +10,14 @@ topics:
 # Functors and topologies
 
 A scheme is studied through the functor it represents on test schemes, and once the objects are functors the topology can be changed: a covering family need not consist of open immersions, and the sheaf condition is stated for a Grothendieck topology rather than for a topological space (Stacks Project, Definition 7.47.6, tag 00Z4).
-Changing the topology changes which functors are sheaves, and that is the whole content of the étale and fppf topologies: the Kummer sequence is exact on the étale site and not on the Zariski site, and a quasicoherent sheaf is recovered from its restriction to a faithfully flat cover by descent data.
+Changing the topology changes which functors are sheaves, and that is the whole content of the étale and fppf topologies: for $n$ invertible on $S$ the Kummer sequence is exact on the étale site and not on the Zariski site, and a quasicoherent sheaf is recovered from its restriction to a faithfully flat cover by descent data.
 
 ## Functors of points
 
 [[PR-SCHFOP]]
 
 The functor of points of $X$ over $S$ sends a test scheme $T$ to the set $X(T)=\Hom_S(T,X)$ of $T$-valued points, and Yoneda's lemma makes $X\mapsto X(-)$ a fully faithful embedding [@Vak25, §1.2; @Vak25, Definition 7.3.10] ([[PR-SCHFOP]]).
-Full faithfulness is what lets a scheme be proved isomorphic by producing a natural isomorphism of functors, and it is used in both directions below: to represent a functor is to exhibit a scheme whose functor is the given one, and to identify two constructions of a scheme it suffices to identify their points on every test scheme.
+Full faithfulness is what lets a scheme be proved isomorphic by producing a natural isomorphism of functors, and it is used in two ways: to represent a functor is to exhibit a scheme whose functor is the given one, and to identify two constructions of a scheme it suffices to identify their points on every test scheme.
 
 Two test schemes carry most of the information in practice.
 A morphism $\Spec L\to X$ for a field $L$ is a point $x\in X$ together with a field embedding $\kappa(x)\injects L$, so for $X$ a variety over an algebraically closed $k$ the $k$-points are the closed points.

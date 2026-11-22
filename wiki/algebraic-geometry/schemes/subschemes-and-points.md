@@ -9,7 +9,7 @@ topics:
 
 # Subschemes and points
 
-A subscheme is a locally closed subscheme, that is, a closed subscheme of an open subscheme, and the two halves behave differently: an open subset carries exactly one scheme structure, while a closed subset carries as many as there are quasicoherent ideal sheaves cutting it out ([[D-SCHSUB]]).
+Recall that a [[D-SCHSUB|closed subscheme]] of $X$ is a closed subset with a quasicoherent sheaf of ideals on it, and that a subscheme is a closed subscheme of an open subscheme ([[D-MORIMM]]); the two halves behave differently, since an open subset carries exactly one scheme structure while a closed subset carries as many as there are quasicoherent ideal sheaves cutting it out ([[D-SCHSUB]]).
 That asymmetry is the source of the two constructions this chapter is about.
 The reduced induced structure picks the smallest of the closed structures on a given closed set, and it is the one that ignores multiplicity.
 The scheme-theoretic image of a morphism picks the closed subscheme of the target that the morphism factors through universally, and it is the one that records multiplicity — it keeps tangency and loses it exactly when the source is reduced.

@@ -31,7 +31,7 @@ For $A=k[\varepsilon]/(\varepsilon^2)$ the class of $\varepsilon$ is a nonzero e
 [[D-AN662]]
 
 The cover clause is where relative notions enter.
-An affine scheme is the case of a one-element cover, and an affine-local property of morphisms — of finite type, of finite presentation, flat, smooth, étale — is asserted on the members of an affine open cover, with the affine communication lemma below the statement that the answer does not depend on which cover was chosen; not every property is of this kind, and irreducibility and integrality are the standard exceptions.
+An affine scheme is the case of a one-element cover, and an affine-local property of morphisms — of finite type, of finite presentation, flat, smooth, étale — is asserted on the members of an affine open cover, the affine communication lemma being the statement that the answer does not depend on which cover was chosen; not every property is of this kind, and irreducibility and integrality are the standard exceptions.
 
 Recall that a [[D-AN662|morphism of schemes]] is a morphism of locally ringed spaces: a continuous $f$ with $f^\sharp\colon\OO_Y\to f_*\OO_X$ whose induced maps on stalks $f^\sharp_p\colon\OO_{Y,f(p)}\to\OO_{X,p}$ are local.
 Locality is exactly what makes the two directions agree on affine schemes: for rings $A$ and $B$, every morphism of locally ringed spaces $\Spec B\to\Spec A$ is induced by a unique ring homomorphism $A\to B$, so that $\Spec$ is an anti-equivalence [@Har77, Proposition II.2.3].
@@ -77,7 +77,7 @@ Irreducibility and integrality are not: for nonzero domains $A$ and $B$ the elem
 
 ## Affineness from cohomology
 
-For noetherian $X$ the criterion above has a cohomological form: $X$ is affine exactly when $H^i(X,\mcf)=0$ for every quasicoherent $\mcf$ and every $i>0$, and exactly when $H^1(X,\mci)=0$ for every coherent sheaf of ideals $\mci$ [@Har77, Theorem III.3.7].
+For noetherian $X$ affineness has a cohomological form: $X$ is affine exactly when $H^i(X,\mcf)=0$ for every quasicoherent $\mcf$ and every $i>0$, and exactly when $H^1(X,\mci)=0$ for every coherent sheaf of ideals $\mci$ [@Har77, Theorem III.3.7].
 The single vanishing in degree one suffices; the higher vanishing follows from it by dimension shifting.
 That criterion, its quasicoherent variant, and the duality that computes the groups being tested are on [[algebraic-geometry/cohomology/vanishing-and-duality|vanishing and duality]] ([[T-5IOUR]]).
 

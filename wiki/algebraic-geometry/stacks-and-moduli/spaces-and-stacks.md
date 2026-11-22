@@ -19,7 +19,8 @@ Two examples mark the endpoints: the Hilbert functor is represented by a scheme,
 
 For a noetherian scheme $S$, a projective morphism $X\to S$ with a relatively very ample $\OO_X(1)$, and a polynomial $P\in\QQ[m]$, the Hilbert functor sends a locally noetherian $S$-scheme $T$ to the closed subschemes $Z\subseteq X\times_ST$ flat over $T$ whose fibres have Hilbert polynomial $P$ ([[D-HILBSCHEME]]).
 Flatness is what makes the polynomial a condition rather than a hope: for an integral noetherian base, a coherent sheaf on $\PP^n_T$ is flat over $T$ exactly when the Hilbert polynomial of every fibre is the same [@Har77, Theorem III.9.9] ([[T-COHFLATCHI]]).
-And the Hilbert functor is represented: each $\operatorname{Hilb}^P_{X/S}$ is a projective $S$-scheme with a universal family, and $\operatorname{Hilb}_{X/S}$ is the disjoint union over $P$ ([[D-HILBSCHEME]]).
+Representability is a theorem with hypotheses of its own, in the form the Stacks Project proves: for a morphism $f\colon X\to B$ of algebraic spaces which is of finite presentation and separated, $\operatorname{Hilb}_{X/B}$ is an algebraic space, locally of finite presentation over $B$ (Stacks Project, Proposition 99.9.4, tag 0D01), and a representing object carries a universal family, the image of the identity under the Yoneda bijection ([[D-HILBSCHEME]]).
+In the classical situation of the definition — $S$ noetherian, $X\to S$ projective with a relatively very ample $\OO_X(1)$ — the refinement is Grothendieck's theorem: each $\operatorname{Hilb}^P_{X/S}$ is represented by a projective $S$-scheme, the Hilbert scheme, and $\operatorname{Hilb}_{X/S}$ by the disjoint union over $P$ ([[D-HILBSCHEME]]).
 
 The two calculations to keep are the point case and the hypersurface case over $\PP^n_k$: the polynomial $P=1$ gives $\operatorname{Hilb}^1(\PP^n_k)\cong\PP^n_k$, and the Hilbert polynomial of a degree-$d$ hypersurface gives $\operatorname{Hilb}^P(\PP^n_k)\cong\PP(H^0(\PP^n_k,\OO(d)))$, so that the parameter space of hypersurfaces of degree $d$ is the projective space of degree-$d$ forms ([[D-HILBSCHEME]]).
 In both cases the universal family is the tautological subscheme, and representability is the statement that every flat family of such subschemes is its pullback along a unique morphism.
@@ -45,7 +46,7 @@ An algebraic space is an étale sheaf whose diagonal is representable by schemes
 
 Every scheme is an algebraic space with the identity as atlas, and if a finite group $G$ acts freely on a quasiprojective $S$-scheme $U$ then $U/G$ is an algebraic space with atlas $U$ ([[D-ALGSPACE]]).
 The point of the notion is that the quotient exists as a geometric object with étale-local properties even when it is not a scheme: properties are checked on the atlas, and the diagonal condition is what allows a morphism from a scheme to be base-changed.
-The definition is a genuine weakening of representability: the atlas is required only to be étale and surjective, and the quotient of a scheme by an étale equivalence relation exists as an algebraic space whether or not it is a scheme ([[D-ALGSPACE]]).
+The definition is a genuine weakening of representability: the atlas is required only to be étale and surjective, and the quotient of a scheme by an étale equivalence relation is an algebraic space, with $U\to U/R$ étale and surjective (Stacks Project, Theorem 65.10.5, tag 02WW) ([[D-ALGSPACE]]).
 
 ## Stacks
 
