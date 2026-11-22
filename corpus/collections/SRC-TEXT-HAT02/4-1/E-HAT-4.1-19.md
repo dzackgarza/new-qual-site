@@ -59,6 +59,24 @@ audit:
     applied to the zigzag through $W_{i+1}$, and transitivity gives $K_1\simeq K_m$; then
     $K_1\to X$ and $K_1\to K_m\to Y$ are weak homotopy equivalences, so $K_1$ is a common CW
     approximation. No defect. The printed page is added, the card having had none.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.1 Exercise 19, whose printed line carries the word "iff", checked on a
+    220 dpi render of the page holding Exercises 18-22; the statement, which asserts both
+    directions, is therefore the book's and is unchanged. A review claim that the book prints only
+    the forward implication is wrong. The rendered sentence answering that claim ("where the claim
+    is printed as iff and not only as one implication") is removed as process text. The proof is an
+    independent argument agreeing with Sam, §4.1 Exercise 19, which proves both directions; the
+    preamble now names Sam as the source, says the zigzag bookkeeping is the card's, and cites
+    Proposition 4.13 for existence of CW approximations. The hedging sentence in step `s2`
+    ("Passing to CW approximations of everything in sight, or more simply ...") is replaced by the
+    argument it gestured at. Both directions read correct: `s1` the zigzag from a common
+    approximation, `s2` each arrow of a zigzag of weak homotopy equivalences between CW complexes is
+    a homotopy equivalence by Theorem 4.5, `s3` consecutive CW approximations homotopy equivalent,
+    then transitivity and composition.
+
 ---
 
 ::: {.problem}
@@ -67,9 +85,7 @@ Show that $X \simeq_w Y$ if and only if $X$ and $Y$ have a common CW approximati
 :::
 
 ::: {.solution}
-The exercise is §4.1 Exercise 19, where the claim is printed as "iff" and not only as one implication.
-
-Recall that a **CW approximation** of a space $X$ is a CW complex $K$ together with a weak homotopy equivalence $K\to X$, and that every space has one.
+The argument is that of retained solutions: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.1 Exercise 19** (`tmp/sources/hatcher-solutions-sam-2008.pdf`). Sam takes the forward implication from the zigzag $X\leftarrow K\to Y$ that a common CW approximation gives, and proves the converse by reducing the zigzag to a single weak homotopy equivalence $X\to Y$, comparing the chosen CW approximations through Proposition 4.18, and applying Whitehead's theorem, Theorem 4.5, to the comparison map. The bookkeeping for a zigzag longer than two steps is the card's, as is the form of Whitehead's theorem recorded in step [](#s2){.pf-ref}, which handles every arrow of a zigzag between CW complexes at once. Existence of a CW approximation is Proposition 4.13.
 
 ::: pf
 
@@ -95,7 +111,7 @@ Weakly equivalent CW complexes are homotopy equivalent.
 
 ::: pf-proof
 
-Let $K$ and $L$ be CW complexes with a zigzag of weak homotopy equivalences $K=K_1\leftrightarrow K_2\leftrightarrow\cdots\leftrightarrow K_n=L$. Passing to CW approximations of everything in sight, or more simply noting that a weak homotopy equivalence between CW complexes is a homotopy equivalence by Whitehead's theorem (Hatcher, Theorem 4.5, whose hypothesis is that $f_*$ is an isomorphism on $\pi_n$ for **all** $n$, which is exactly what weak homotopy equivalence gives for a map between CW complexes), each arrow of the zigzag is a homotopy equivalence, and a zigzag of homotopy equivalences composes to a homotopy equivalence.
+Let $K$ and $L$ be CW complexes with a zigzag of weak homotopy equivalences $K=K_1\leftrightarrow K_2\leftrightarrow\cdots\leftrightarrow K_n=L$. Each arrow of that zigzag is a map of CW complexes inducing an isomorphism on $\pi_i$ for every $i$, hence a homotopy equivalence by Whitehead's theorem (Theorem 4.5, whose hypothesis is an isomorphism on $\pi_n$ for all $n$, which is exactly what a weak homotopy equivalence between CW complexes provides); a zigzag of homotopy equivalences composes to a homotopy equivalence.
 
 :::
 
