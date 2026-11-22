@@ -76,6 +76,20 @@ audit:
     union. This follows Hatcher's Example 4.16 and the Eilenberg--MacLane construction in
     §4.2. Step `image` now also notes why relations from $(n+2)$-cells die in $H_n(X)$.
     No retained solution set covers Exercise 25, so this repair remains the card's own.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Verification of the preceding two events against the body, and one closure repair in
+    step `conclusion`: it compared $H_n(K)$ with $H_n(K(G,1))$ from "$K$ is a $K(G,1)$"
+    alone, which is not an argument until uniqueness of the homotopy type is named. The
+    step now records $\pi_1(K)=G$ and $\pi_i(K)=0$ for $i>1$ from step `construction` and
+    cites Proposition 4.30, and the preamble lists that proposition among the inputs.
+    Re-read and unchanged: the cell attachment at each stage with no finiteness or
+    countability assumption, the compact-image passage to the union, the vanishing of
+    $C_*(K,X)$ in degrees at most $n$ with $H_{n+1}(K,X)$ a quotient of the free group on
+    the $(n+1)$-cells, the exact sequence of the pair, and the identification of
+    $\operatorname{im}\partial$ with the Hurewicz image.
 ---
 
 ::: {.problem}
@@ -83,7 +97,7 @@ For $X$ a connected CW complex with $\pi_i(X) = 0$ for $1 < i < n$ for some $n \
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: Guanyu Li's set ends with §3.3, DeMason's M382C problem set covers §4.2 Exercises 1, 2, 14 and 27 only, the Stanford 215C sets cover §3.B and §3.3 exercises, and the retained Casassas, Putman and Bredon material is not a set of Hatcher solutions. So the argument is the card's own, from Example 4.16 and the construction of Eilenberg--MacLane spaces in §4.2, the cellular chain complex of a CW pair (Theorem 2.35), the Hurewicz theorem (Theorem 4.32) and the long exact sequence of homology groups of a pair (§2.1).
+No retained solution set covers this exercise: Guanyu Li's set ends with §3.3, DeMason's M382C problem set covers §4.2 Exercises 1, 2, 14 and 27 only, the Stanford 215C sets cover §3.B and §3.3 exercises, and the retained Casassas, Putman and Bredon material is not a set of Hatcher solutions. So the argument is the card's own, from Example 4.16 and the construction of Eilenberg--MacLane spaces in §4.2, the cellular chain complex of a CW pair (Theorem 2.35), the Hurewicz theorem (Theorem 4.32), the long exact sequence of homology groups of a pair (§2.1) and the uniqueness of the homotopy type of a $K(G,1)$ (Proposition 4.30).
 
 ::: pf
 
@@ -125,7 +139,7 @@ The boundary $\partial$ sends the class of a relative $(n+1)$-cell to the homolo
 $H_n(X)/h\bigl(\pi_n(X)\bigr)\cong H_n\bigl(K(\pi_1(X),1)\bigr)$.
 
 ::: pf-proof
-By steps [](#les){.pf-ref} and [](#image){.pf-ref}, exactness gives $H_n(K)\cong H_n(X)/h(\pi_n(X))$, and $H_n(K)\cong H_n(K(G,1))$ because $K$ is a $K(G,1)$ and homotopy equivalent spaces have isomorphic homology.
+By steps [](#les){.pf-ref} and [](#image){.pf-ref}, exactness gives $H_n(K)\cong H_n(X)/h\bigl(\pi_n(X)\bigr)$. Step [](#construction){.pf-ref} gives $\pi_1(K)=G$ and $\pi_i(K)=0$ for $i>1$, so $K$ is a $K(G,1)$; Proposition 4.30 gives that any two such spaces are homotopy equivalent, hence $H_n(K)\cong H_n(K(G,1))$.
 :::
 :::
 
