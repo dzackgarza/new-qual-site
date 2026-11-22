@@ -74,6 +74,20 @@ audit:
     multiplication, which under $\quaternions=\CC\oplus\CC j$ is $\lambda(a+bj)=\lambda a+\lambda bj$,
     complex scalar multiplication on both coordinates; the step now says that, names the failure of
     centrality, and the fibre step uses the left action (giving $S^1\backslash S^3=S^2$).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Repair of the step's equivariance, from a referee report. The quaternionic bundle is principal for
+    the right $S^3$-action and its charts are right-equivariant, not left; what makes the quotient a
+    bundle is that left and right multiplication commute, so the left $S^1$-action descends and
+    $S^{4n+3}/S^1$ remains a principal $S^3$-bundle over $\HP^n$. The quotient
+    $\CP^{2n+1}\to\HP^n$ is the bundle associated to it with fibre $S^1\backslash S^3=S^2$ on which
+    $S^3$ acts by left multiplication, so a right-equivariant chart gives a chart only up to the
+    action of the transition functions on $S^2$ — the local coefficient transforms by conjugation,
+    which is now said. The sentence that the $S^1$-action preserves a quaternionic line "because it is
+    right multiplication by scalars" is removed: the right action preserves those lines and the left
+    action preserves them because it commutes with the right one.
 ---
 
 ::: {.problem}
@@ -104,10 +118,10 @@ The complex numbers are *not* central in the quaternions — $ij=k=-ji$ — so t
 :::
 
 ::: {.pf-step #fibre}
-Dividing each fibre $S^3$ by the left $S^1$-action gives $S^2$, and the local trivializations descend.
+Dividing each fibre $S^3$ by the left $S^1$-action gives $S^2$, and the quotient of the principal $S^3$-bundle by the commuting left $S^1$-action is a fibre bundle with fibre $S^2$.
 
 ::: pf-proof
-The left action of $S^1$ on $S^3$ is free, its orbits being the cosets $S^1q$, and the orbit map $S^3\to S^1\backslash S^3$ is the Hopf bundle $S^3\to S^2$; so each fibre of the quaternionic bundle becomes an $S^2$. A local trivialization $\restrictionof{S^{4n+3}}{U}\cong U\times S^3$ of the quaternionic bundle is $S^3$-equivariant for left multiplication, hence $S^1$-equivariant, so it descends to a homeomorphism of $S^{4n+3}/S^1$ over $U$ with $U\times(S^3/S^1)$.
+The left action of $S^1$ on $S^3$ is free, its orbits being the cosets $S^1q$, and the orbit map $S^3\to S^1\backslash S^3$ is the Hopf bundle $S^3\to S^2$, so each fibre becomes an $S^2$. The quaternionic bundle is principal for the *right* $S^3$-action, and its local trivializations are right-$S^3$-equivariant, not left-equivariant; what makes the quotient a bundle is that left and right multiplication in $\quaternions$ commute, so the left $S^1$-action commutes with the right $S^3$-action and descends to $S^{4n+3}/S^1$, which is therefore still a principal $S^3$-bundle over $\HP^n$. The quotient $\CP^{2n+1}\to\HP^n$ is the bundle associated to that principal bundle with fibre $S^1\backslash S^3=S^2$, on which $S^3$ acts by left multiplication (transitively, with stabilizer $S^1$); a right-equivariant chart $U\times S^3$ of the principal bundle therefore gives a chart of the associated bundle only up to the action of the transition functions on $S^2$, which is the sense in which the local coefficient transforms by conjugation. A fibre bundle with fibre $S^2$ results.
 :::
 
 :::
@@ -116,7 +130,7 @@ The left action of $S^1$ on $S^3$ is free, its orbits being the cosets $S^1q$, a
 $\boxed{S^2\longrightarrow\CP^{2n+1}\longrightarrow\quatprojective^n}$ is a fibre bundle.
 
 ::: pf-proof
-By step [](#complex-action){.pf-ref} the total space is $S^{4n+3}/S^1=\CP^{2n+1}$ and the base remains $\quatprojective^n$, the $S^1$-action preserving the quaternionic line of a vector because it is right multiplication by scalars. Steps [](#fibre){.pf-ref} give the fibre $S^2$ and local triviality, so this is a fibre bundle, obtained from the quaternionic Hopf bundle by factoring out the action of $S^1$ by complex scalar multiplication.
+By step [](#complex-action){.pf-ref} the total space is $S^{4n+3}/S^1=\CP^{2n+1}$ and the base remains $\quatprojective^n$: the right $S^3$-action preserves the quaternionic right-line through a vector, and the left $S^1$-action commutes with it and so preserves those lines too. Steps [](#fibre){.pf-ref} give the fibre $S^2$ and local triviality, so this is a fibre bundle, obtained from the quaternionic Hopf bundle by factoring out the action of $S^1$ by complex scalar multiplication.
 :::
 
 :::
