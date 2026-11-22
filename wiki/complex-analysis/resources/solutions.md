@@ -5,7 +5,7 @@ order: 20
 
 # Solutions
 
-- [UCSD complex analysis qualifying exam, Spring 2014, with solutions](http://www.math.ucsd.edu/~jagler/courses/220-S14/pdf/Qual%20(version%202)%20Solutions.pdf)
+- [UCSD complex analysis qualifying exam, Spring 2014, with solutions](http://www.math.ucsd.edu/~jagler/courses/220-S14/pdf/Qual%20%28version%202%29%20Solutions.pdf)
 
 - [NYU complex analysis midterm solutions](https://cims.nyu.edu/~yu3/files/teaching/complex/midterm_solutions.pdf)
 
