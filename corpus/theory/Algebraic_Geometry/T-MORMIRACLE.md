@@ -21,20 +21,17 @@ prompts:
 ---
 
 ::: {.theorem title="Miracle flatness"}
-Let $(A,\mfm)\to(B,\mfn)$ be a local homomorphism of Noetherian local rings. Assume that $A$ is regular, $B$ is Cohen--Macaulay, and
-$$
-\dim B=\dim A+\dim(B/\mfm B).
-$$
-Then $B$ is flat over $A$ [@Vak25, Theorem 26.2.10].
+Let $(A,\mfm)\to(B,\mfn)$ be a local homomorphism of Noetherian local rings. Assume that $A$ is regular, $B$ is Cohen--Macaulay, and the fibre ring $B/\mfm B$ has pure dimension $\dim B-\dim A$, that is, $\dim B=\dim A+\dim(B/\mfm B)$ with every minimal prime of $B/\mfm B$ of that dimension.
+Then $B$ is flat over $A$ [@Vak25, Theorem 26.2.10, whose hypothesis is purity of the fibre ring].
+The numerical equality alone is what a flat local map satisfies; it is the purity that the theorem assumes.
 :::
 
 ::: {.corollary title="Geometric form"}
-Let $f\colon X\to Y$ be a morphism locally of finite type between locally Noetherian schemes. Assume that $X$ is Cohen--Macaulay and $Y$ is regular. If for every $x\in X$, with $y=f(x)$,
+Let $f\colon X\to Y$ be a morphism locally of finite type between locally Noetherian schemes. Assume that $X$ is Cohen--Macaulay and $Y$ is regular. If for every $x\in X$, with $y=f(x)$, the local ring of the fibre at $x$,
 $$
-\dim\OO_{X,x}
-=\dim\OO_{Y,y}+\dim\OO_{X_y,x},
+\OO_{X_y,x}=\OO_{X,x}/\mfm_y\OO_{X,x},
 $$
-then $f$ is flat, the hypothesis being the theorem applied to the local homomorphism $\OO_{Y,y}\to\OO_{X,x}$ at each $x$ [@Vak25, Theorem 26.2.10].
+has pure dimension $\dim\OO_{X,x}-\dim\OO_{Y,y}$, in particular if $\dim\OO_{X,x}=\dim\OO_{Y,y}+\dim\OO_{X_y,x}$ at every $x$ and $\OO_{X_y,x}$ is equidimensional, then $f$ is flat: this is the theorem applied to the local homomorphism $\OO_{Y,y}\to\OO_{X,x}$ at each $x$ [@Vak25, Theorem 26.2.10].
 
 In particular, if $X$ and $Y$ are smooth irreducible varieties and every nonempty fibre is pure of dimension $\dim X-\dim Y$, then $f$ is flat [@Vak25, Theorem 26.2.11].
 :::
