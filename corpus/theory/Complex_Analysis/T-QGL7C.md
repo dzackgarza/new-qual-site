@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $T$ be a [[D-FRVBV|Möbius transformation]], and let $C\subseteq\CP^1$ be a generalized circle: a circle or a line in $\CC$, a line being a circle through $\infty$.
+Let $T$ be a [[D-FRVBV|Möbius transformation]], and let $C\subseteq\CP^1$ be a [[D-GCL7C|generalized circle]].
 Then $T(C)$ is a generalized circle, and since $T$ is invertible it permutes the generalized circles.
 A generalized circle bounds two regions, a disc and its exterior for a circle and two half-planes for a line, and $T$ carries each of them onto one of the two regions bounded by $T(C)$; so $T$ carries discs and half-planes onto discs and half-planes.
 

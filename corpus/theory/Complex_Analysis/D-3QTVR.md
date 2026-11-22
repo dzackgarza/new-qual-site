@@ -24,5 +24,5 @@ Stereographic projection identifies $\CP^1$ with the sphere of diameter $1$ rest
 
 ::: {.remark}
 A [[D-7DFVJ|meromorphic]] function on $\CC$ that is holomorphic or has a pole at $\infty$ extends to a holomorphic map $\CP^1\to\CP^1$, and those functions are exactly the rational ones ([[T-UBWL2]]).
-The [[D-FRVBV|Möbius transformations]] are exactly the biholomorphisms of $\CP^1$, acting on $\CP^1$ by $z\mapsto(az+b)/(cz+d)$ and sending $-d/c$ to $\infty$ and $\infty$ to $a/c$.
+The [[D-FRVBV|Möbius transformations]] are exactly the biholomorphisms of $\CP^1$, acting on $\CP^1$ by $z\mapsto(az+b)/(cz+d)$ and sending $-d/c$ to $\infty$ and $\infty$ to $a/c$: the automorphism group of $\CP^1$ is $\PSL_2(\CC)$ (C. McMullen, *Advanced Complex Analysis*, Theorem 2.8).
 :::
