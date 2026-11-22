@@ -37,6 +37,22 @@ audit:
   date: 2026-11-18
   note: >-
     Lamport structure for the two directions and the deduction, which is what Queue D asks for on this card. The converse is split into the construction of the maps Q -> G from the divisibility of G and the surjectivity of their direct sum; the additivity and well-definedness of phi, which the prose compressed into "inductively this defines a homomorphism", are now checked at a common denominator, and the vanishing of Ext for the direct sum is derived from Exercise 3 by the behaviour of Ext on direct sums in the second variable rather than being asserted. No retained set covers this exercise; the card now says so, and the exercise and its previous problem are both located on printed p. 320. No statement repair.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read again against Hatcher, §3.F Exercise 4, and its "if and only if": the text version of the
+    book drops the "f" and prints one direction, and the card states both, which is the printed
+    reading. The proof is correct as it stands — quotients of direct sums of $\QQ$ are divisible; the
+    elements $g_n$ with $n!g_n=g_{(n-1)!}$ satisfy $m!g_m=g$ by induction, which makes
+    $\phi(m/k!)=mg_k$ well defined and additive on a common denominator; a generating set and one
+    such $\phi$ per generator make $G$ a quotient of $\bigoplus_I\QQ$; and
+    $\operatorname{Ext}(A,\QQ)=0$ with $\operatorname{Ext}$ turning $\bigoplus$ in the second
+    variable into $\prod$ gives $\operatorname{Ext}(A,G)=0$ from the sequence ending
+    $\operatorname{Ext}(A,D)\to\operatorname{Ext}(A,G)\to0$. One correction to the provenance: the
+    paragraph said the retained sets stop inside §3.3, which is false — Sam's set reaches §4.3 and
+    Koukpari's carries a §3.F heading — so it now records what the retained sets contain and that
+    none of them has a solution of this exercise.
 ---
 
 ::: {.problem}
@@ -45,7 +61,7 @@ Show that a group is divisible if and only if it is a quotient of a direct sum o
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: the Hatcher sets in the checkout stop inside §3.3 (§3.C at the latest) and hold nothing from §3.F. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §3.F Exercise 4; the "previous problem" it appeals to is Exercise 3 of that section, "Show that $\operatorname{Ext}(A,\QQ)=0$ for all $A$".
+The argument is the card's own: no retained solution set contains a solution of any exercise of §3.F. Koukpari's set carries the §3.F heading *Limits and Ext* with nothing under it, Sam's begins at §4.1, and the other retained sets stop earlier; there is therefore no published proof of this exercise to transcribe. It is checked against Hatcher, §3.F Exercise 4, whose "previous problem" is §3.F Exercise 3, $\operatorname{Ext}(A,\QQ)=0$ for all $A$.
 
 ::: pf
 
