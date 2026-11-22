@@ -12,8 +12,6 @@ topics:
 
 [[D-Q3MYK]]
 
-The integral $\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}\dt$ converges for $\Re z>0$, and the integration by parts that gives $\Gamma(z+1) = z\Gamma(z)$ is what continues it: $\Gamma(n+1) = n!$ for $n\geq0$, and $\Gamma$ has simple poles at $0,-1,-2,\ldots$ with no others.
-
 [[PR-NLV6Q]]
 
 [[PR-FBQ6F]]
