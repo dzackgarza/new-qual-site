@@ -41,7 +41,7 @@ $$
 \qquad
 \text{closed immersion} \implies \text{projective} \implies \text{proper} .
 $$
-A finite morphism to a quasi-compact scheme $Y$ with an ample invertible sheaf is projective.
+A finite morphism to an affine scheme is projective [@Vak25, Exercise 8.3.I].
 Closed immersions, finite, projective, and proper morphisms are of finite type; a universally closed morphism need not be of finite type.
 [[FE-MORNOTPROPER]]
 
