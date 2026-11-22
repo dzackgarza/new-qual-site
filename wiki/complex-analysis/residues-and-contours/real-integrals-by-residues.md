@@ -50,7 +50,7 @@ Sectors and rectangles, determined by a rotation or translation symmetry of the 
 
 ## Singularities on the line: principal values
 
-Semicircles indented above each real simple pole, each of which contributes $i\pi$ times its residue.
+Semicircles indented above each real simple pole, each of which raises the principal value by $i\pi$ times its residue, the half-circle itself contributing $-i\pi$ times it.
 
 [[E-ZGZYQ]]
 [[E-DUK6M]]
@@ -108,7 +108,7 @@ $$
 ## Square roots and slits
 
 ::: {.concept}
-For $f(z) = \sqrt{(z-z_1)(z-z_2)\cdots(z-z_n)}$, a branch exists on the complement of slits that prevent closed curves from winding around an odd number of the branch points $z_k$; for $n$ odd, $z=\infty$ is also a branch point.
+For $f(z) = \sqrt{(z-z_1)(z-z_2)\cdots(z-z_n)}$, a branch exists on the complement of slits that prevent closed curves from winding around an odd number of the [[D-9KMTV|branch points]] $z_k$; for $n$ odd, $z=\infty$ is also a branch point.
 
 Continuation once around a branch point multiplies $\sqrt{\cdot}$ by $-1$: for $f(z) = \sqrt z$ and $\gamma(t) = e^{2\pi i t}$ on $[0,1]$, $f(\gamma(0)) = \sqrt z$ while $f(\gamma(1)) = \sqrt{e^{2\pi i}z} = e^{i\pi}\sqrt z = -\sqrt z$.
 
