@@ -63,7 +63,7 @@ Further pages: [[complex-analysis/resources/index|resources]], the [[complex-ana
 
 ### Preliminary topics in complex analysis
 
-> References: [@Ahl79, chaps. 1--2]; [@SS03, chap. 1].
+> References: [@Ahl79, chaps. 1--2, 4]; [@SS03, chap. 1].
 
 - Complex arithmetic: [[complex-analysis/basics/complex-arithmetic|complex arithmetic]].
 
@@ -101,7 +101,7 @@ Further pages: [[complex-analysis/resources/index|resources]], the [[complex-ana
 
 ### Conformal mapping
 
-> References: [@Ahl79, chaps. 3, 8]; [@SS03, chap. 8 (§1--2)].
+> References: [@Ahl79, chaps. 3, 7, 8]; [@SS03, chap. 8 (§1--2)].
 
 - General properties of conformal mappings: [[complex-analysis/conformal-maps/index|conformal maps]].
 
