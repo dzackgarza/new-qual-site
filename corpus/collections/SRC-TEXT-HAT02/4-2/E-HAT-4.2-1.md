@@ -44,6 +44,14 @@ audit:
     which a retraction does exist. The statement is §4.2 Exercise 1, and no retained solution set
     covers it.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 1. The proof is correct. Provenance correction: the earlier
+    event on this card says that no retained solution set covers the exercise, and that is false —
+    Sam's §4.2 Exercise 1 (`tmp/sources/hatcher-solutions-sam-2008.md`) solves it, his §4.2 numbering
+    being Hatcher's. The card's own argument is kept, being correct and independent.
 ---
 
 ::: {.problem}
