@@ -45,6 +45,14 @@ audit:
   date: 2026-11-18
   note: >-
     Lamport structure for the two non-finite-generation results, which is what Queue D asks for on this card. The computation of pi_3 of the cover is a step resting on Hatcher's Example 4.52, printed p. 380, which is exactly the Hilton-Milnor computation for a wedge of 2-spheres; the deck action, the invariance of b - a, the orbit argument and the general case are separate steps. The prose's central claim that "no finite set can generate all of them" was an assertion from the unboundedness of d; it is now the argument that a finite generating set involves finitely many differences b - a, so some d_0 is missed and the basis class [iota_0, iota_{d_0}] is outside the span. The general case names the summand structure explicitly instead of invoking "the Hilton-Milnor calculation" without a statement. No retained set covers this exercise; the card now says so. Locators checked: Example 4.52 on printed p. 380, the exercise on printed p. 392. No statement repair.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 38. The proof reads correct. One provenance correction: the
+    solution said that no retained set covers the exercise, and the retained sets' actual coverage is
+    now recorded — Sam's §4.2 numbering is Hatcher's and Proudfoot's homework 7 covers 1, 2, 30, 31
+    and 32, announcing 39 without a solution of it.
 ---
 
 ::: {.problem}
@@ -52,7 +60,7 @@ Show $\pi_3(S^1 \vee S^2)$ is not finitely generated as a module over $\ZZ[\pi_1
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: of the two §4.2 sets in the checkout, Sam's reaches exercise 32 and Proudfoot's Homework #7 covers 1, 2, 30, 31, 32 and 39, so neither reaches 38. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 38, and it rests on Example 4.52, which computes $\pi_3$ of a wedge of $2$-spheres.
+No retained solution set covers this exercise: Sam's §4.2 reaches exercise 34 and Proudfoot's homework 7 covers 1, 2, 30, 31 and 32 — announcing 39 without a solution of it — so neither reaches 38. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 38, and it rests on Example 4.52, which computes $\pi_3$ of a wedge of $2$-spheres.
 
 Let $X=S^1\vee S^2$. Its universal cover $\widetilde X$ is an infinite string of copies $S^2_k$ of $S^2$, one attached at each integer $k\in\ZZ$; write $\iota_k\in\pi_2(\widetilde X)$ for the class of the inclusion of the $k$-th sphere, and $t$ for the deck transformation generating the deck group.
 
