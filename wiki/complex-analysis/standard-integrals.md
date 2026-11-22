@@ -21,8 +21,9 @@ If $f = p/q$ is rational, $q$ is free of real zeros, and $\deg q\geq\deg p+2$, t
 $$
 \int_\RR f(x)\dx = 2\pi i\sum_{z_0\in\HH}\Res_{z=z_0}f,
 $$
-the sum over the [[D-AUD6K|poles]] in $\HH$, the arc integral being $\bigo(R^{-1})$ by the [[T-SFXI7|ML estimate]] [@Ahl73, ch. 4, §5.3].
+the sum over the [[D-AUD6K|poles]] in $\HH$, the arc integral being $\bigo(R^{-1})$ by the [[T-SFXI7|ML estimate]].
 
+This is item 2 of [@Ahl73, ch. 4, §5.3], which states the criterion and that the integral over the semicircle tends to $0$.
 :::
 
 ::: {.example title="$\displaystyle\int_\RR {\cos x\over 1+x^2}\dx = {\pi\over e}$"}
