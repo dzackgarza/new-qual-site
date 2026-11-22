@@ -368,6 +368,34 @@ audit:
     system d' = |pi^*3L - E_1 - ... - E_r| embeds the blowup of P^2 at r
     points in P^{9-r}, and r = 5 is the case used. Not checked: any printing
     of the book, only the text version retained in tmp/sources.
+- event: source-checked
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Published-solution pass for issue #160, on the transcription rule. The
+    exercise's second request, attainment of the bound by an irreducible
+    nonsingular curve, is proved by no retained solution set, and the
+    "Published solution" remark now says so and names the sets searched.
+    Read for that, each at its own numbering: Egbert, entry 5.4.8, which
+    states the bound, cites Harris--Eisenbud, Curves in Projective Space,
+    Theorem 3.13, for the cubic surfaces not on a quadric, and then assumes
+    the existence of a smooth connected curve of each degree and genus as a
+    claim; Yang Pi-Yeh, Solution 5.4.7, and the National Taiwan University
+    Algebraic Geometry II (2020 Spring), Chapter V §4 Exercise 7, by Yi-Tsung
+    Wang, which prove the bound and say only that the listed classes achieve
+    it; and, for absence, the retained sets that carry no Chapter V §4
+    exercise, Borcherds (through IV.1), Cais (through Chapter 4),
+    Cutrone--Marshburn (Chapters 1 and 2), Ionita--Kumar (Chapter I), Kim
+    (§2.4), Lomont, Park (Chapter 4 and §V.5), Saglam--Chris (Chapter III),
+    Sam (through IV.6), Stein (III.7), Troiani (Chapter II), Reiser (IV.2.5)
+    and the Chapter 1 notes of btg. Also read: Corollary V.4.13 with its
+    proof, that part (b) is a consequence of II.8.18 and III.7.9.1; Theorem
+    II.8.18, stated for a nonsingular closed subvariety of PP^n_k with no
+    hypothesis on the characteristic; and Remark III.7.9.1, that the section
+    is connected, hence irreducible, and regular, hence nonsingular, when
+    dim X >= 2. No proof step changed, and the transcription of the bound
+    from the two sources named is unchanged. Not read: any printing of the
+    book, only the text version in tmp/sources.
 ---
 
 ::: {.problem}
@@ -629,6 +657,18 @@ solution's printed one has degree $d+2$, so the correction recorded above is con
 source. Of those classes the source says only that they "achieve the bound", computing $p_a$; it says
 nothing of an irreducible nonsingular member of one, so the exercise's second request is not proved
 there and remains the card's own step.
+
+The retained solution sets were searched for this exercise, and none proves the second request. Three
+of them contain an exercise of Chapter V §4: Egbert's entry 5.4.8, which states the bound, cites
+Harris--Eisenbud, *Curves in Projective Space*, Theorem 3.13, for the cubic surfaces not lying on a
+quadric, and then assumes as a claim that a smooth connected curve of each degree and genus exists;
+and Yang Pi-Yeh's Solution 5.4.7 and the National Taiwan University Chapter V §4 Exercise 7, which
+prove the bound alone. The other retained sets carry no Chapter V §4 exercise: Borcherds, Cais,
+Cutrone--Marshburn, Ionita--Kumar, Kim, Lomont, Park, Saglam--Chris, Sam, Stein, Troiani, Reiser and
+the Chapter 1 notes of btg. The argument of step
+[](#nonsingular-members){.pf-ref} is therefore the card's own: Corollary 4.13(b) of the book for the
+ample classes, Corollary 4.7 with Theorem II.8.18 and Remark III.7.9.1 at $d=4$, and, for the second
+route at that degree, condition (c) of Exercise V.4.8 as [[P-AGH548IRREDCLASSES]] proves it.
 
 For the curves in those classes: Corollary 4.13(a),(b) of Hartshorne for the ample
 ones, and, at $d=4$, condition (c) of Exercise V.4.8, whose sufficiency is proved on
