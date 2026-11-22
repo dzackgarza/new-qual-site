@@ -12,7 +12,7 @@ topics:
 
 # Harmonic functions
 
-The real and imaginary parts of a holomorphic function are harmonic, and a harmonic function equals its average over every circle and disc in its domain.
+The real and imaginary parts of a holomorphic function are harmonic, and a harmonic function equals its average over every circle and disc whose closure lies in its domain.
 
 [[D-CFBSA]]
 
@@ -24,13 +24,9 @@ The real and imaginary parts of a holomorphic function are harmonic, and a harmo
 
 [[PR-UWGI6]]
 
-The circular form is the mean value property of the real part of a holomorphic function [@SS03, ch. 3, Corollary 7.3]; the disc form follows from it by integrating the circular average over $0\leq s\leq r$ in polar coordinates.
-
 [[T-HMVPC]]
 
-::: {.remark}
-The mean value property gives the [[PR-6WOTK|strict maximum principle]]: a real harmonic function on a connected open set that attains its maximum is constant, by the argument on [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|Maximum modulus and open mapping]].
-:::
+[[PR-6WOTK]]
 
 ::: {.example title="The mean value property for $u = x^2-y^2$"}
 $u(x,y) = x^2-y^2$ is the real part of $z^2$ and hence harmonic.
