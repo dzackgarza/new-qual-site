@@ -108,6 +108,15 @@ audit:
     state is recorded. Left as it stands: the steps are cited by hand-typed numbers ("step 1",
     "step 2"), which STYLE-08 forbids; replacing them by step references is a separate pass over this
     card and is not done here.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    One correction after an independent reading, in step `ranges`: it said that for $n<m-1$ both
+    iterands "are CW complexes, being built from CW complexes by homotopy fibres". A homotopy fibre of
+    CW complexes is only of CW homotopy type, not a CW complex, so the step now says that both have
+    the homotopy type of CW complexes, and applies Whitehead's theorem to a space of CW homotopy type
+    with vanishing homotopy groups.
 ---
 
 ::: {.problem}
@@ -186,7 +195,7 @@ Both sides are homotopy fibres of maps out of $X$ and $X^n$ over the common base
 For $n<m-1$ both iterands are contractible, and for $n=m-1$ the fibre model of step 5 applies; so the notation $X_m^n$ is unambiguous up to homotopy, with the homotopy groups of step 4.
 
 ::: pf-proof
-If $n<m-1$ then both $(X^n)_m$ and $(X_m)^n$ have all homotopy groups zero by step 4, and both are CW complexes, being built from CW complexes by homotopy fibres and by attaching cells that kill homotopy groups; a CW complex with no homotopy groups is contractible by Whitehead's theorem. If $n=m-1$ then $n\ge m-1$, so steps 5 and 6 apply and give the equivalence. The homotopy groups are those of step 4 in every case, which is the second assertion of the exercise.
+If $n<m-1$ then both $(X^n)_m$ and $(X_m)^n$ have all homotopy groups zero by step 4, and both have the homotopy type of CW complexes, a homotopy fibre of CW complexes having CW homotopy type and a Postnikov stage being a CW complex; a space of CW homotopy type with no homotopy groups is contractible by Whitehead's theorem. If $n=m-1$ then $n\ge m-1$, so steps 5 and 6 apply and give the equivalence. The homotopy groups are those of step 4 in every case, which is the second assertion of the exercise.
 :::
 
 :::
