@@ -437,6 +437,25 @@ audit:
     Solution 5.2.8; the National Taiwan University set, Exercise 8 of section 2;
     and Egbert, entries 5.2.13 to 5.2.15. Not checked: any printing of the book,
     only the text version retained in tmp/sources.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Two steps of part (c) are repaired on 2026-11-22 after eight independent
+    readings of the card's argument, none of which changed a claim. Step s7 said
+    that "dualizing the locally free quotient of a line subbundle" gives the
+    surjection E dual -> A dual; the phrase parses instead as the quotient
+    E -> A, which does not exist, and six of the eight readings took it so and
+    rejected the step. It now says that dualizing the inclusion A -> E gives the
+    surjection. Step s8 cited Lemma 15 of Gunning as its proof; Gunning's book is
+    about compact Riemann surfaces, so the step now proves its statement in rank
+    two: existence from step s7, the inequality from non-semistability at step
+    s1, and uniqueness from the wedge map A tensor B -> det E, with the case of a
+    common generic line closed because distinct line subbundles have distinct
+    generic lines. The rest of the argument was read again against steps s1 and
+    s7 to s13 and no gap was found: the normalized model, the class in H^1(C, L
+    dual) up to nonzero scalar, the bound 0 < e <= 2g-2, the bijection of step
+    s13 and its injectivity at step s12b stand as written.
 ---
 
 ::: {.problem}
@@ -569,7 +588,7 @@ Semistability is the exercise's definition, the weak inequalities of step [](#s1
 Let $\mathcal E$ be a rank-two bundle that is not semistable. Among all line subbundles of $\mathcal E$ there is one of maximal degree.
 
 ::: pf-proof
-The maximum is what Gunning's $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$ presupposes, and he proves the bound in the paragraph before his (9): for a line bundle $\varphi\subset\Psi$ he shows $c(\varphi)\le\max_jc(\Psi_j)$ over the diagonal line bundles of a fixed complete reduction of $\Psi$, "or in other words, the Chern classes $c(\varphi)$ of line bundles $\varphi$ which are subbundles of a fixed complex vector bundle $\Psi$, are bounded from above". The proof below is that bound in the form of a rank-two bundle on a curve, and is the card's own. Line subbundles exist, since a nonzero section of $\mathcal E(n)$ for $n\gg0$ saturates to an invertible subsheaf. Their degrees are bounded above: fix an ample $\OO_C(1)$ of degree $h>0$ and take $n\gg0$ so that $\mathcal E^\vee(n)$ is globally generated; dualizing the locally free quotient of a line subbundle $\mathcal A\subseteq\mathcal E$ gives a surjection $\mathcal E^\vee\twoheadrightarrow\mathcal A^\vee$, so $\mathcal A^\vee(n)$ is a quotient of a globally generated bundle and is globally generated, whence $-\deg\mathcal A+nh\ge0$ and $\deg\mathcal A\le nh$. The degrees are integers, so they have a maximum.
+The maximum is what Gunning's $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$ presupposes, and he proves the bound in the paragraph before his (9): for a line bundle $\varphi\subset\Psi$ he shows $c(\varphi)\le\max_jc(\Psi_j)$ over the diagonal line bundles of a fixed complete reduction of $\Psi$, "or in other words, the Chern classes $c(\varphi)$ of line bundles $\varphi$ which are subbundles of a fixed complex vector bundle $\Psi$, are bounded from above". The proof below is that bound in the form of a rank-two bundle on a curve, and is the card's own. Line subbundles exist, since a nonzero section of $\mathcal E(n)$ for $n\gg0$ saturates to an invertible subsheaf. Their degrees are bounded above: fix an ample $\OO_C(1)$ of degree $h>0$ and take $n\gg0$ so that $\mathcal E^\vee(n)$ is globally generated; dualizing the inclusion $\mathcal A\subseteq\mathcal E$ gives a surjection $\mathcal E^\vee\twoheadrightarrow\mathcal A^\vee$, so $\mathcal A^\vee(n)$ is a quotient of a globally generated bundle and is globally generated, whence $-\deg\mathcal A+nh\ge0$ and $\deg\mathcal A\le nh$. The degrees are integers, so they have a maximum.
 
 :::
 
@@ -582,7 +601,7 @@ $$
 $$
 
 ::: pf-proof
-This is Lemma 15 of Gunning. Non-semistability is $\operatorname{div}\mathcal E>\frac12c(\xi)$, that is $2\deg\mathcal A>\deg\mathcal E$ for a maximal subbundle, which is the case of the lemma's part (i). Its part (i) states and proves uniqueness: if $\varphi_1\subset\Phi$ realizes $\operatorname{div}\Phi$ and $\varphi\subset\Phi$ is another subbundle with $c(\varphi)=\operatorname{div}\Phi$, then $\varphi^{-1}\varphi_1$ has a nontrivial section while $\varphi^{-1}\varphi_2$ has none, $\varphi_2=\Phi/\varphi_1$, because $c(\varphi^{-1}\varphi_2)=-2c(\varphi_1)+c(\xi)<0$; so $\varphi=\varphi_1$. In rank-two terms, a second maximal subbundle $\mathcal B$ with $\deg\mathcal A=\deg\mathcal B=a$ and no common generic line gives a nonzero map $\mathcal A\tensor\mathcal B\to\det\mathcal E$ and hence $2a\le\deg\mathcal E$, contradicting $2a>\deg\mathcal E$.
+This is Lemma 15(i) of Gunning, and it is proved here without his setting. Existence is step [](#s7){.pf-ref}. For the inequality, non-semistability is the existence of a line subbundle of degree greater than $\frac12\deg\mathcal E$ by step [](#s1){.pf-ref}, and a subbundle of maximal degree has at least that degree, so $2\deg\mathcal A>\deg\mathcal E$. For uniqueness, let $\mathcal B$ be a line subbundle of degree $\deg\mathcal A=a$. Distinct line subbundles have distinct generic lines: if $\mathcal B$ had the generic line of $\mathcal A$, the composite $\mathcal B\to\mathcal E\to\mathcal E/\mathcal A$ would be zero at the generic point, hence zero because $\mathcal E/\mathcal A$ is torsion-free, so $\mathcal B\subseteq\mathcal A$ and $\mathcal B=\mathcal A$ because both are line bundles of the same degree. So $\mathcal A$ and $\mathcal B$ are independent at the generic point, the map $\mathcal A\tensor\mathcal B\to\det\mathcal E=\bigwedge^2\mathcal E$, $s\tensor t\mapsto s\wedge t$, is nonzero and hence injective, and $2a=\deg(\mathcal A\tensor\mathcal B)\le\deg\mathcal E$, contradicting $2a>\deg\mathcal E$. No step uses more than line bundles, degrees and sections, so the argument makes no hypothesis on the field.
 
 :::
 
