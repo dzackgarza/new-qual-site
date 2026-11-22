@@ -105,7 +105,7 @@ The decomposition is [@Ahl73, ch. 5, §2.1, Partial Fractions], which attaches t
 
 ::: {.remark}
 Term-by-term differentiation needs a hypothesis on the derivatives, not only on the series: a uniformly convergent series of differentiable functions need not be differentiable term by term ([[complex-analysis/basics/uniform-convergence|Uniform convergence]]).
-The power-series case is [[PR-QNDSD]], and the tail criterion for uniform convergence is [[PR-4LISY]].
+The power-series case is [[PR-QNDSD|smoothness on the disc of convergence]], and the tail criterion for uniform convergence is [[PR-4LISY]].
 :::
 
 [[PR-WIMIM]]
