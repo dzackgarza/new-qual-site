@@ -1,11 +1,11 @@
 ---
 order: 0
-title: "Topics"
+title: "Topic index"
 ---
 
 # Topics
 
-Each topic links the page that treats it; the [UGA complex analysis prelim review topic list (R. Varley, rev. 2007)](/assets/attachments/Complex_Analysis_Prelim_Review.pdf) is a separate resource.
+The chapter's syllabus, section by section with its references, is on [[complex-analysis/index#The syllabus|the chapter index]]; this page groups the same material by theme, and each topic links the page that treats it. The [UGA complex analysis prelim review topic list (R. Varley, rev. 2007)](/assets/attachments/Complex_Analysis_Prelim_Review.pdf) is a separate resource.
 
 ## Preliminaries
 
