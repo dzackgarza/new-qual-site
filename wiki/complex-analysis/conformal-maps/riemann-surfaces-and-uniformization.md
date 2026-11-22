@@ -10,7 +10,7 @@ topics:
 # Riemann surfaces and uniformization
 
 Recall that a [[D-8WMFK|Riemann surface]] is a connected one-dimensional complex manifold, and that every connected Riemann surface is a quotient of a simply connected one by its group of [[D-4VGAW|deck transformations]] ([[T-ZAEWG]]).
-The proper simply connected case is the Riemann mapping theorem: a simply connected $\Omega\subsetneq\CC$ is conformally the disc [@SS03, ch. 8, Theorem 3.1], while $\CC$ is not, since a holomorphic map $\CC\to\DD$ is a bounded entire function.
+The proper simply connected case is the Riemann mapping theorem: a simply connected $\Omega\subsetneq\CC$ is conformally the disc [@SS03, ch. 8, Theorem 3.1], while $\CC$ is not, since a holomorphic map $\CC\to\DD$ would be a bounded entire function ([[T-QHIHJ|Liouville's theorem]]).
 
 [[D-8WMFK]]
 
@@ -22,7 +22,7 @@ The proper simply connected case is the Riemann mapping theorem: a simply connec
 
 [[T-BBQLQ]]
 
-A holomorphic function on a compact connected Riemann surface is constant, since a nonconstant holomorphic map out of it is surjective onto its target ([[L-ZXBBI]]) and $\CC$ is not compact; a nonconstant holomorphic map to another surface is then surjective, with finite fibres and finite branching ([[L-ZXBBI]]).
+A holomorphic function on a compact connected Riemann surface is constant: [[L-ZXBBI]] makes a nonconstant holomorphic map out of a compact surface surjective onto its target, and $\CC$ is not compact.
 
 ## Uniformization
 
