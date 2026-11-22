@@ -14,7 +14,7 @@ $$
 \CaCl(X)\iso\Pic(X),\qquad [D]\longmapsto[\OO_X(D)]
 $$
 [@Har77, Proposition II.6.15].
-Let $X$ be noetherian, integral and separated. The Weil divisors modulo principal divisors form the group $\Cl(X)$, and a Cartier divisor is a locally principal Weil divisor, so $\CaCl(X)\into\Cl(X)$; the inclusion is an isomorphism, hence $\Cl(X)\cong\Pic(X)$, when every local ring $\OO_{X,x}$ is a unique factorization domain [@Har77, Proposition II.6.11 and Corollary II.6.16], and in particular for a regular $X$ [@Har77, Remark II.6.11.1A].
+Let $X$ be noetherian, integral and separated. If $X$ is regular in codimension one, the Weil divisors modulo principal divisors form the group $\Cl(X)$; if $X$ is in addition normal, a Cartier divisor is a locally principal Weil divisor, so $\CaCl(X)\into\Cl(X)$; the inclusion is an isomorphism, hence $\Cl(X)\cong\Pic(X)$, when every local ring $\OO_{X,x}$ is a unique factorization domain [@Har77, Proposition II.6.11 and Corollary II.6.16], and in particular for a regular $X$ [@Har77, Remark II.6.11.1A].
 On a scheme that is not locally factorial the inclusion is strict, and [[D-5PQ5W]] records both groups on the affine quadric cone.
 
 ## The Picard group
@@ -29,7 +29,7 @@ $\Pic$ is a contravariant functor to abelian groups: a morphism $f\colon X\to Y$
 
 ## The divisor of a rational section
 
-Let $D$ be a divisor on an integral scheme $X$ with rational-function sheaf $\mck$. The invertible sheaf $\OO_X(D)\subseteq\mck$ has global sections
+Let $D$ be a Cartier divisor on an integral scheme $X$ with rational-function sheaf $\mck$. The invertible sheaf $\OO_X(D)\subseteq\mck$ has global sections
 $$
 \Gamma(X,\OO_X(D))=\theset{f\in\mck(X)^\times:\operatorname{div}(f)+D\ge0}\cup\theset{0}
 $$
