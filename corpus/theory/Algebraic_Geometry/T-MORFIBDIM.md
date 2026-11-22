@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-MORFIBDIM
 kind: theorem
 title: Fibre dimension and upper semicontinuity
-slogan: 'Local fibre dimension is upper semicontinuous on the source; for a dominant map the general fibre has dimension $\dim X-\dim Y$.'
+slogan: 'The largest fibre component through a point is upper semicontinuous on the source; the local fibre dimension is not, and for a closed map the fibre dimension is upper semicontinuous on the target.'
 classification:
   areas:
   - algebraic-geometry
@@ -46,25 +46,26 @@ Then every irreducible component of every nonempty fibre $X_y$ has dimension at 
 Let $f\colon X\to Y$ be a morphism of finite type between schemes locally of finite type over a field.
 The function
 $$
-x\longmapsto \dim_x X_{f(x)}
+x\longmapsto \max\theset{\dim Z \st Z \text{ an irreducible component of } X_{f(x)} \text{ with } x\in Z}
 $$
 is upper semicontinuous on $X$: for every integer $r$, the locus
 $$
-\theset{x\in X\st \dim_xX_{f(x)}\geq r}
+\theset{x\in X\st \text{some irreducible component } Z \text{ of } X_{f(x)} \text{ has } x\in Z \text{ and } \dim Z\geq r}
 $$
-is closed.
+is closed [@Vak25, Theorem 12.4.3(a)] [@Har77, Exercise II.3.22(d)].
+The local dimension $\dim_x X_{f(x)}=\krulldim\OO_{X_{f(x)},x}$ is a different function, and it is not upper semicontinuous in general.
 
 If $f$ is flat, then
 $$
-\dim_x X_{f(x)}=\dim_xX-\dim_{f(x)}Y,
+\dim_x X_{f(x)}=\dim_x X-\dim_{f(x)}Y
 $$
-so the local fibre-dimension function is constant on $X$ when $X$ and $Y$ are equidimensional.
+[@Har77, Proposition III.9.5], so the local dimension of the fibre is constant on $X$ when $X$ and $Y$ are equidimensional.
 
-If $f$ is proper, then the function $y\mapsto\dim X_y$ is upper semicontinuous on $Y$: the locus $\theset{y\st\dim X_y\geq r}$ is the proper image of the corresponding closed locus in $X$.
+If $f$ is closed, in particular if $f$ is proper, then the function $y\mapsto\dim X_y$ is upper semicontinuous on $Y$: the locus $\theset{y\st\dim X_y\geq r}$ is the image under the closed map $f$ of the corresponding closed locus in $X$ [@Vak25, Theorem 12.4.3(b)].
 :::
 
 ::: {.remark}
-Upper semicontinuity on the source means local fibre dimension can jump up on closed special loci.
+Upper semicontinuity on the source means the largest fibre component through a point can jump up on closed special loci.
 The blowup is the model: fibre dimension $0$ generically, $1$ over the origin, and the jump locus $\theset{0}$ is closed.
 It cannot go the other way, because a component of a fibre is cut out by $\dim Y$ equations locally and Krull's height theorem bounds the drop.
 
@@ -73,5 +74,5 @@ The lower bound proves positive-dimensional fibres in dimension-comparison argum
 The generic equality gives the dimension formula $\dim X = \dim Y + \dim(\text{general fibre})$.
 
 For a flat finite-type morphism between equidimensional schemes, the local fibre dimension is constant, so this source-side jumping disappears.
-Equidimensionality is needed: $X=V(z)\cup V(x,y)\subseteq\AA^3$ is flat over $\AA^1$ by $x+z$, and the local fibre dimension is $1$ at the origin and $0$ at the other points of the line $V(x,y)$.
+Equidimensionality is needed: for $X=\AA^1_k\sqcup\AA^2_k$ mapping to $\AA^1_k$ by the identity on the first component and the projection on the second, the morphism is flat, $X$ is not equidimensional, and the local fibre dimension is $0$ on the first component and $1$ on the second.
 :::
