@@ -189,12 +189,14 @@ _no-bare-disposition:
 # Run immediate commit-tier quality checks
 test-commit: _no-worktrees _no-bare-disposition
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-commit
+    @uv run --no-sync python -m qualc.authoring check-staged
 
 # Explicit files keep site builds and corpus scans in CI. One worker avoids
 # starting a process per CPU for this small test selection.
 # Run immediate checks and small parser tests before pushing
 test-push:
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-push
+    @uv run --no-sync python -m qualc.authoring check-changes --mode push </dev/null
     @just _extraction-detector-push _macros-push
     @uv run --group dev pytest -q -n 0 tests/test_front_matter_keys.py tests/test_extraction_detector.py tests/test_card_git_validation.py tests/test_push_gate_dependencies.py
 

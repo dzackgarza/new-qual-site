@@ -129,13 +129,13 @@ def staged_records(root: Path) -> str:
 
 def run_staged(root: Path) -> subprocess.CompletedProcess[str]:
     """The project's staged validator, fed as the shared hook feeds it."""
-    return subprocess.run([sys.executable, str(ROOT / "scripts/local-validate.py"), "--mode", "staged"], cwd=root, input=staged_records(root), capture_output=True, text=True)
+    return subprocess.run([sys.executable, "-m", "qualc.authoring", "check-changes", "--mode", "staged"], cwd=root, input=staged_records(root), capture_output=True, text=True)
 
 
 def run_push(root: Path, tip: str, *paths: str) -> subprocess.CompletedProcess[str]:
     """The project's push validator, fed as the shared hook feeds it: the pushed tip."""
     payload = "".join(json.dumps({"path": path, "version": tip}) + "\n" for path in paths)
-    return subprocess.run([sys.executable, str(ROOT / "scripts/local-validate.py"), "--mode", "push"], cwd=root, input=payload, capture_output=True, text=True)
+    return subprocess.run([sys.executable, "-m", "qualc.authoring", "check-changes", "--mode", "push"], cwd=root, input=payload, capture_output=True, text=True)
 
 
 def validate_candidate(root: Path, mode: str, monkeypatch: pytest.MonkeyPatch, stamp: str, *paths: str) -> subprocess.CompletedProcess[str]:
@@ -162,13 +162,13 @@ def track(root: Path, commit: str) -> None:
 
 
 def install_gate(root: Path) -> None:
-    """The staged chain: the hook builds the shared payload and runs the project validator."""
+    """The staged chain: a hook builds the changed-file payload and runs qualc check-changes."""
     runner = root / ".git" / "hooks" / "staged-gate.py"
     runner.write_text(
         "import json, subprocess, sys\n"
         "names = subprocess.run(['git', 'diff', '--cached', '--name-only', '--diff-filter=ACMR', '-z'], check=True, stdout=subprocess.PIPE).stdout.decode()\n"
         "records = ''.join(json.dumps({'path': path, 'version': 'index'}) + '\\n' for path in names.split('\\0') if path)\n"
-        f"raise SystemExit(subprocess.run([sys.executable, {str(ROOT / 'scripts/local-validate.py')!r}, '--mode', 'staged'], input=records.encode()).returncode)\n"
+        f"raise SystemExit(subprocess.run([sys.executable, '-m', 'qualc.authoring', 'check-changes', '--mode', 'staged'], input=records.encode()).returncode)\n"
     )
     hook = root / ".git" / "hooks" / "pre-commit"
     hook.write_text(f"#!/bin/sh\nexec {shlex.quote(sys.executable)} {shlex.quote(str(runner))}\n")
@@ -1129,7 +1129,7 @@ def test_shared_push_payload_validates_each_exact_candidate_commit(repo: Path) -
     payload = "\n".join(json.dumps({"path": "corpus/one card.md", "version": commit}) for commit in (valid, invalid))
 
     result = subprocess.run(
-        [sys.executable, str(ROOT / "scripts/local-validate.py"), "--mode", "push"],
+        [sys.executable, "-m", "qualc.authoring", "check-changes", "--mode", "push"],
         cwd=repo,
         input=payload,
         capture_output=True,
@@ -1160,7 +1160,7 @@ def test_push_rejects_a_deleted_card_that_is_still_referenced(repo: Path) -> Non
 
     def push() -> subprocess.CompletedProcess[str]:
         # A deletion-only range gives the shared hook no changed card to send.
-        return subprocess.run([sys.executable, str(ROOT / "scripts/local-validate.py"), "--mode", "push"], cwd=repo, input="", capture_output=True, text=True)
+        return subprocess.run([sys.executable, "-m", "qualc.authoring", "check-changes", "--mode", "push"], cwd=repo, input="", capture_output=True, text=True)
 
     assert push().returncode == 0
     git(repo, "rm", "-q", "corpus/P-GONE.md")
@@ -1239,6 +1239,64 @@ def test_the_push_gate_judges_an_earlier_commit_that_a_later_one_restores(repo: 
 
     assert result.returncode == 1
     assert "corpus/one card.md: the source-checked event by claude dated 2026-11-11" in result.stderr
+    assert "QUAL-11" in result.stderr
+
+
+def merge_published_edit(repo: Path, monkeypatch: pytest.MonkeyPatch) -> str:
+    """Publish a same-day edit of a dated event, commit locally beside it, and start a later day's merge.
+
+    The published side edits the event on its own day, which the gate accepts there. The
+    merge, made the next day, carries that edit unchanged. Returns the published commit;
+    the merge is left uncommitted so a test can commit it as it stands or edit it first.
+    """
+    card = repo / "corpus/one card.md"
+    card.write_text(recorded("2026-11-15"))
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-15T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record the day's event")
+    branch = git(repo, "symbolic-ref", "--short", "HEAD").strip()
+    git(repo, "switch", "-qc", "published")
+    card.write_text(recorded("2026-11-15").replace("matches the printed exercise", "matches the printed statement"))
+    git(repo, "add", "corpus/one card.md")
+    git(repo, "commit", "-qm", "repair the note on its own day")
+    published = git(repo, "rev-parse", "HEAD").strip()
+    git(repo, "switch", "-q", branch)
+    (repo / "notes.txt").write_text("A local change beside the card.\n")
+    git(repo, "add", "notes.txt")
+    git(repo, "commit", "-qm", "local work")
+    track(repo, published)
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+    git(repo, "merge", "-q", "--no-commit", "--no-ff", published)
+    return published
+
+
+def test_the_push_gate_does_not_rejudge_published_changes_a_merge_carries(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """A merge of the upstream into local work publishes only what the merge itself authored.
+
+    Replayed against its first parent, the merge would present every published change as
+    its own, judged on the merge's day: the same-day edit becomes a rewrite of an event
+    dated before it. The published commit was judged on its own day when it was pushed.
+    """
+    merge_published_edit(repo, monkeypatch)
+    git(repo, "commit", "-qm", "merge the upstream")
+
+    result = run_push(repo, git(repo, "rev-parse", "HEAD").strip())
+
+    assert result.returncode == 0, result.stderr
+
+
+def test_the_push_gate_judges_what_a_merge_itself_rewrites(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """A merge result that rewrites a dated event, beyond what either side carried, is refused."""
+    merge_published_edit(repo, monkeypatch)
+    card = repo / "corpus/one card.md"
+    card.write_text(recorded("2026-11-15").replace("matches the printed exercise", "agrees with the printed exercise"))
+    git(repo, "add", "corpus/one card.md")
+    git(repo, "commit", "-qm", "merge the upstream and rewrite the event")
+
+    result = run_push(repo, git(repo, "rev-parse", "HEAD").strip())
+
+    assert result.returncode == 1
+    assert "corpus/one card.md: the source-checked event by claude dated 2026-11-15" in result.stderr
     assert "QUAL-11" in result.stderr
 
 
