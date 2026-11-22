@@ -18,7 +18,7 @@ Then $\length(\Gamma_{R,\theta}) = R\theta$ and
 $$
 \abs{\int_{\Gamma_{R,\theta}} f(z)\dz} \leq MR\theta.
 $$
-So the arc integral tends to $0$ as $R\to\infty$ when $MR\to 0$, in particular when $M = \bigo\qty{1 / R^{1+\varepsilon}}$ for some $\varepsilon>0$, while $M = \bigo(1/R)$ gives only a bounded integral.
+So the arc integral tends to $0$ as $R\to\infty$ when $MR\to 0$, in particular when $M = \bigo\qty{1 / R^{1+\delta}}$ for some $\delta>0$, while $M = \bigo(1/R)$ gives only a bounded integral.
 For a rational function $p/q$ with $\deg q\geq \deg p + 2$, $M = \bigo(1/R^2)$; for $\deg q = \deg p + 1$, $M = \bigo(1/R)$, and [[T-ZO5UU|Jordan's lemma]] applies when the integrand also has a factor $e^{i\alpha z}$ with $\alpha > 0$ on the upper semicircle [@Ahl73, ch. 4, §5.3].
 
 :::
@@ -42,7 +42,7 @@ On $C_R$, $\abs{e^{iz}} = e^{-\Im z} \leq 1$, while $\abs{\cos z}$ and $\abs{\si
 [[T-SSNLT]]
 
 ::: {.example title="Clockwise half-circle above a real pole"}
-A half-circle of radius $\varepsilon$ above a simple pole on $\RR$, traversed clockwise from $z_0-\varepsilon$ to $z_0+\varepsilon$, contributes $-i\pi \Res_{z=z_0} f$ in the limit; these terms give the half-residues in principal-value integrals.
+A half-circle of radius $\varepsilon$ above a simple pole on $\RR$, traversed clockwise from $z_0-\varepsilon$ to $z_0+\varepsilon$, contributes $-i\pi \Res_{z=z_0} f$ in the limit; these terms give the half-residues in [[D-PV4RQ|principal-value]] integrals.
 
 :::
 
