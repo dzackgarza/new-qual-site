@@ -13,7 +13,7 @@ topics:
 [[T-SVF2W]]
 
 ::: {.slogan}
-Two holomorphic functions on a connected open set that agree on a set with a limit point in the set are equal.
+Two holomorphic functions on a connected open set that agree on a set with a limit point in that open set are equal.
 
 :::
 
