@@ -1,491 +1,501 @@
-# #189: `wiki/algebraic-geometry/` — the reading record, second version
+# #189: `wiki/algebraic-geometry/` — the reading record, third version
 
-**Supersedes** `results/189-ag-inventory.md` as it stood at `078db711f834`. Reviewer gzg9 returned NOT MET on that
-version at that commit and named the failures; this version re-decides from the general statement, adds the omitted
-defects and the omitted policy findings, adjudicates four cards from their sources, and states its baseline correctly.
-Nothing in it was carried over on the earlier version's authority: every line number below was re-derived by reading
-the blob at the pinned commit.
+**Status: bounded adjudication, not a claim that #189's first acceptance clause is met.** Reviewer gzg9 returned NOT MET
+at `078db711f834`; reviewer Kimi max returned NOT MET on the second version and named seven failures. This version makes
+the repairs those two lists require — four of them are corrections to mathematics *I* wrote — and states in §9 what is
+still undecided. Two cards are repaired in the commits beside this file, not only relabelled.
 
-## 0. Acceptance clause by clause, as this file stands
+## 0. What changed in this version, item by item against the Kimi list
 
-| #189 acceptance clause | State here |
+| Item the review required | Where it is done |
 |---|---|
-| Every page of `wiki/algebraic-geometry/` read against the full parent policy set | All 82 enumerated files read (§8); the tree is listed so the claim is checkable. Pages rewritten by the concurrent #188/#187 lanes after the first pass were re-read at the pinned blob. |
-| Every statement flagged in #175 decided from its source | All fifteen flags decided, each from the **general** statement, not a special case (§2). Eight of them needed a new argument; six carry a cross-reference or nearby finding recorded beside them. |
-| Every violation has an actionable page/card location | §3 (five new mathematical defects), §4 (cards), §5 (policy: two undefined macros, four positional sentences, and the carried items). |
-| The two named card defects recorded, not duplicated | `PR-RJ3P7` and `T-FFDESCENT` recorded as already repaired at `2734e61c70` and `1287f30106`, with what I checked (§4.1). |
-| Baseline complaint on `PR-VGA2L` | Recorded and adjudicated as **not** closable: no retained numbered statement of Chevalley–Warning (§4.2). |
+| 1. `T-FFDESCENT:71` identifications reversed; commit `1287f30106` moved the wrong way | §4.1 and the card commit `96ef469b62`: `p_1(b)=b⊗1` gives `C⊗_{B,p_1}N ≅ B⊗_AN`, `p_2(b)=1⊗b` gives `C⊗_{B,p_2}N ≅ N⊗_AB`, and the recovered module is `{n : θ(1⊗n)=n⊗1}` |
+| 2. Four false general witnesses | §2 rows 1, 2, 7, 12 — each replaced, with the reason the earlier one failed |
+| 3. Row 5 adjudicated; every dependency the second version listed as unread decided | §2 row 5; §5 lists each source now read (twenty-two numbered statements, the four cards, both Stacks tags) and the one that is not on the machine |
+| 4. Rows 6 and 15 recovered as independent findings | §2 rows 6 and 15, each with its own mathematical content |
+| 5. `curves-in-projective-space.md:87` dual class | §3.5 |
+| 6. Toric semigroup terminology | §3.3 |
+| 7. `PR-RJ3P7:51` qualification | §4.2 and the card commit `13f9c3a8eb` |
 
-This file does not repair anything and runs no gate. It does not claim the corpus is clean: §9 says where it did not
-look.
+## 1. Baseline
 
-## 1. Baseline, and the correction to the earlier version
+- **Pinned blob: `078db711f834`**, the commit the first reviewer read. The 82 Markdown files under
+  `wiki/algebraic-geometry/` there total **3908 lines** (measured per blob). The second version's 3908 figure was right;
+  the *first* version's 3767 belonged to `698a059f47` and was misprinted.
+- The tree has moved twice since (`29a103fab4`, then `067cd0a3f3`), and #188 keeps rewriting pages. Every finding below
+  gives the baseline line **and**, where the text has moved or been repaired, the current state, naming the commit.
+  **No later commit counts as evidence that this reading read it.**
+- Policies: `CONTRIBUTING.md` (read in full) and the shared writing policy's `section-structure.md`, `citations.md`,
+  `prose.md`, `prose-tells.md`, `definitions.md`, `resource-descriptions.md`.
 
-- **Pinned blob: `078db711f834`** — the commit the reviewer read. The 82 Markdown files under `wiki/algebraic-geometry/`
-  at that commit total **3908 lines** (measured per blob with `git show`, not from the working tree). The earlier
-  version printed "3767 lines": that is the same tree at `698a059f47`, the tip when the first pass began, and it was
-  wrong to print it beside line numbers pinned later. Both numbers belong to different commits; this version uses
-  `078db711f834` throughout.
-- The working tree has moved: the current tip at the time of writing is `29a103fab4`, and #188/#187 keep rewriting
-  pages. Where a finding's location has changed since the baseline, §3/§5 give **both** the baseline line and the
-  current one, and say which. A later commit is never counted as evidence that this reading read it.
-- Policies used: `CONTRIBUTING.md` (read in full) and the shared writing policy's `section-structure.md`,
-  `citations.md`, `prose.md`, `prose-tells.md`, `definitions.md`, `resource-descriptions.md`.
-- Sources opened for this version, each read at the statement: `tmp/sources/hartshorne-1977-algebraic-geometry.md`,
-  `tmp/sources/vakil-rising-sea-2025-10-21.md`, `tmp/sources/cox-little-schenck-2011-toric-varieties.md`,
-  Stacks tags **021M** and **00VH** (fetched live), `vocabularies/macros.json`, `vocabularies/references.yaml`,
-  `sources/attachment-extraction-ledger.jsonl`, and the four cards of §4.
+## 2. The fifteen flags
 
-## 2. The fifteen flags, each decided from its general statement
+Row numbering is #175's bullet order. Rows 1, 2, 8, 9, 10, 11, 12, 14 are the ones the first reviewer found decided by
+example or not at all; rows 3, 4, 6, 7, 13, 15 carry a cross-reference or nearby finding; row 5 is decided here for the
+first time.
 
-The "page now" column is the text at `078db711f834`. Where I say a claim is true I give the general argument; where it
-is false I give the general witness, not an example of a special case.
+| # | Flag | Verdict | § |
+|---|---|---|---|
+| 1 | cokernel "not the naive one" in both categories | false for $A$-modules, true for $\OO_X$-modules | 2.1 |
+| 2 | $(-2)$-curve; Gorenstein canonical dim 3; terminal | false / false / true-but-vacuous, and the triple was inconsistent | 2.2 |
+| 3 | Riemann–Hurwitz $d_p$ | page now gives IV.2.2; over-cites IV.2.4 | 2.3 |
+| 4 | class group on an integral scheme | true for Cartier, false for Weil; Remark II.6.11.2 missing | 2.4 |
+| 5 | ampleness "stable under pullback" | false in general; each surviving clause true, with its hypothesis named | 2.5 |
+| 6 | fibre dimension upper semicontinuous on $Y$ | true only for closed $f$; row carries a finding | 2.6 |
+| 7 | the product of stalks | injectivity is not gluing | 2.7 |
+| 8 | "the only ones available" | false: $j_!$, $Rf_!$, $f^!$ | 2.8 |
+| 9 | CM/Gorenstein/lci order; `\inverseof{i}` | order regular ⇒ lci ⇒ Gorenstein ⇒ CM; adjunction restricts | 2.9 |
+| 10 | det-7 cone; "every toric surface from $\PP^2$"; "every toric variety is a fan" | false / true in general / false until normal | 2.10 |
+| 11 | cone $\pi_1$; torus bundle; faces generate $H^*$ | page's $\pi_1=0$ right; two repaired | 2.11 |
+| 12 | "lattice distance two"; "the table above" | both false; facets at distance one *by definition* | 2.12 |
+| 13 | "isomorphism in codimension one" | false; codim $\ge2$ for normal source; notation slip at `:21` | 2.13 |
+| 14 | the Segre claim | true in general, and the page states the general case | 2.14 |
+| 15 | dominance hypothesis on maps to $\PP^n$ | unnecessary; row carries its own finding | 2.15 |
 
-All fifteen flags from #175's list, with the verdict and where it is argued.
+### 2.1 Row 1 — the two cokernels
+**Decision.** For any ring and any $f\colon M\to N$, the cokernel in $A\text{-}\mathbf{Mod}$ is $N/\im f$: a quotient of a
+module by a submodule is a module. For any ringed space, the cokernel in $\OO_X\text{-}\Mod$ is the sheafification of
+$U\mapsto\coker(f(U))$ (Har77 **II.1.2**, now read: "Given a presheaf $\mathcal F$, there is a sheaf $\mathcal F^+$ and a
+morphism $\theta\colon\mathcal F\to\mathcal F^+$, with the property that for any sheaf $\mathcal G$ …"; this is what the
+page cites).
+**Witness, corrected.** My second version used multiplication by $x$ on $\AA^1\sm\{0\}$ and claimed a cokernel class there;
+that is wrong, because $x$ is a *unit* on $\AA^1\sm\{0\}$, so the map is an automorphism and the cokernel vanishes. The
+correct witness is the same map on $\AA^1$: for $P(U)=\OO(U)/x\,\OO(U)$, one has $P(\AA^1)=k[x]/(x)=k$ while
+$P(D(x))=P(D(x-1))=0$, and $D(x)\cup D(x-1)=\AA^1$; the map $P(\AA^1)\to P(D(x))\times P(D(x-1))=0$ therefore has the
+nonzero class of $1$ in its kernel, so $P$ is not a sheaf. (Its sheafification is the structure sheaf of the origin.)
+**Page now (`cohomology/homological-algebra.md:21-22`): true.** No repair.
 
-| Flag (as #175 states it) | Verdict | § |
-|---|---|---|
-| 1. `homological-algebra`: "in both a cokernel is not the naive one" | false for $A$-modules, true for $\OO_X$-modules; page now states both | 2 |
-| 2. `crepant-resolutions`: $(-2)$-curve; Gorenstein canonical in dim 3; terminal | false / false / true-but-vacuous, and the triple was inconsistent | 2 |
-| 3. `riemann-hurwitz`: $d_p=e_p-1+(	ext{correction divisible by }p)$ | not the book's statement; page now gives IV.2.2 | 2 (over-citation) |
-| 4. `class-group-and-picard-group`: isomorphism on an integral scheme | true for Cartier, false for Weil; page now separates them | 2 (Remark II.6.11.2 missing) |
-| 5. `projective-morphisms`: ampleness "stable under pullback" | false in general; page now gives the finite/pullback cases and the blowup counterexample | 2 |
-| 6. `schemes/dimension`: fibre dimension upper semicontinuous on $Y$ | true only for closed $f$; page now separates three functions | 2 (no finding) |
-| 7. `schemes/ringed-spaces`: the product of stalks | injectivity is not gluing; page now says so | 2 (§5.3 nearby) |
-| 8. `sheaves/pushforward-and-pullback`: "the only ones available" | false; $j_!$, $Rf_!$, $f^!$ | 2 |
-| 9. `tangent-normal-and-canonical-sheaves`: CM/Gorenstein/lci order; `\inverseof{i}` | order regular $\Rightarrow$ lci $\Rightarrow$ Gorenstein $\Rightarrow$ CM; adjunction needs the restriction | 2 |
-| 10. `toric/examples`: det-7 cone; "every toric surface from $\PP^2$"; "every toric variety is a fan" | false / true in general / false until normal | 2 |
-| 11. `toric/topology`: quadric cone $\pi_1$; torus bundle; faces generate $H^*$ | page's $\pi_1=0$ is right; the other two were false and are repaired | 2 |
-| 12. `toric/toric-del-pezzo-surfaces`: "lattice distance two"; "the table above" | both false; reflexive means distance one | 2 |
-| 13. `varieties/rational-maps`: "isomorphism in codimension one" | false; undefined only in codim $\ge2$ for normal source | 2; notation at `:21`, citation at §5.4 |
-| 14. `varieties/projective-varieties`: the Segre claim | true in general; page now states the general case | 2 |
-| 15. `varieties/rational-maps`: the dominance hypothesis on maps to $\PP^n$ | unnecessary; page now attaches dominance only to pullback | 2 |
+### 2.2 Row 2 — the three crepant assertions
+**Decision, three verdicts, and a withdrawal.**
+1. "A $(-2)$-curve cannot be contracted": **false.** The case the page needs is a single smooth rational curve $E$ with
+   $E^2=-2$ on a smooth surface — the $A_1$ du Val configuration — and its contraction exists; the page's own crepancy
+   computation ($E\cdot K_X=0$ by adjunction, $E\cdot f^*K_{X_0}=f_*E\cdot K_{X_0}=0$, hence the discrepancy coefficient
+   satisfies $aE^2=0$, so $a=0$) is the proof, and it is a proof about this curve, not about a class of curves.
+2. "Crepant resolutions exist for Gorenstein **canonical** singularities in dimension three": **false as stated.** The
+   existence theorem in dimension three is for **terminal** Gorenstein threefolds; terminal is strictly stronger than
+   canonical, so it cannot be restated with the weaker hypothesis.
+3. "Terminal singularities admit none": **true, vacuously.** Terminal means every discrepancy is $>0$; a crepant morphism
+   has discrepancy $0$ on each exceptional divisor; so a crepant resolution has no exceptional divisor and is an
+   isomorphism. With 2 and 3 together the original triple asserted existence for a class containing the ones it denied,
+   which is the inconsistency the repair had to remove by deleting 2.
+**Withdrawal.** My second version wrote "a curve with negative-definite intersection matrix on a smooth surface is
+contractible (Artin; Grauert)" as support for 1. That general statement is not what the page needs and is not safe as
+stated: negative definiteness is Grauert's criterion in the analytic category, and a negative-definite curve of positive
+genus need not be algebraically contractible. Nothing in the verdict above rests on it.
+**Page now (`curves-and-surfaces/crepant-resolutions.md:18,32-34`): the three sentences are gone and what remains is true.**
 
-### Row 1 — the cokernel in `A-Mod` and in `O_X-Mod`
-- **Flag:** "in both a cokernel is not the naive one."
-- **Decision: false in one of the two categories, true in the other.** General statement: for *any* ring $A$ and *any*
-  $A$-linear $f\colon M\to N$, the cokernel in $A\text{-}\mathbf{Mod}$ is the quotient $N/\im f$ — the naive one; the
-  quotient of a module by a submodule is already a module, so no completion is needed. For *any* ringed space and any
-  $\OO_X$-linear $f\colon\mcf\to\mcg$, the cokernel in $\OO_X\text{-}\Mod$ is the **sheafification** of
-  $U\mapsto\coker(f(U))$. General witness that the presheaf is not already a sheaf: on $X=\AA^1$ take
-  $f=\cdot x\colon\OO_X\to\OO_X$; then $(U\mapsto\coker)$ has a section over $\AA^1\sm\{0\}$ (the class of $1/x$)
-  that restricts to $0$ on every affine open and does not come from a section over $\AA^1$, so the presheaf cokernel
-  fails the gluing axiom. Source for the sheaf side: Har77 II.1.2 (the associated sheaf), which the page cites.
-- **Page now (`cohomology/homological-algebra.md:21-22`): true.** It states the $\OO_X$ cokernel as the cokernel sheaf
-  and the $A$-module cokernel as the quotient $N/\im f$, and cites II.1.2 for the first. **No repair.**
+### 2.3 Row 3 — Riemann–Hurwitz
+As before, and confirmed: Har77 **Prop IV.2.2** (items (a)–(c) read) gives $\length=e_P-1$ tame and $\length\ge e_P$ wild;
+there is no "$e_P-1$ plus a $p$-multiple" in the source. The page prints this correctly at
+`curves-and-surfaces/riemann-hurwitz.md:18`.
+**Cross-reference finding (kept):** `:18` cites "Proposition IV.2.2 **and Corollary IV.2.4**"; Cor IV.2.4 (read) is the
+Hurwitz degree formula already printed at `:15-17` and says nothing about tameness, so the second number is an
+over-citation (CITE-4).
 
-### Row 2 — the three crepant assertions
-- **Flag:** "a $(-2)$-curve cannot be contracted"; "crepant resolutions exist for Gorenstein canonical singularities
-  (dimension 3)"; "terminal singularities admit none".
-- **Decision, general, three separate verdicts:**
-  1. **False.** A curve with negative-definite intersection matrix on a smooth surface is contractible (Artin; the
-     surface case of Grauert), and a single $(-2)$-curve $E\cong\PP^1$ is that case: adjunction
-     $2g-2=E\cdot(E+K_X)$ gives $E\cdot K_X=0$, and the contraction to the du Val $A_1$ point is crepant because
-     $E\cdot K_X=0=E\cdot f^*K_{X_0}$ forces the discrepancy $a$ to satisfy $aE^2=0$, so $a=0$ (the general argument the
-     page now gives).
-  2. **False as stated, and by the wrong hypothesis.** The existence theorem in dimension three is for **terminal**
-     Gorenstein threefolds (Mori), not for canonical ones; terminal is strictly stronger than canonical, so a theorem
-     about terminal singularities cannot be restated for canonical ones. No retained text of Mori is on this machine;
-     the falsity I rely on is the incompatibility of 2 with 3 below, which uses only definitions.
-  3. **True, and vacuous.** A *terminal* singularity has every discrepancy $>0$ by definition, and a crepant morphism
-     has discrepancy $0$ on every exceptional divisor, so a crepant resolution with an exceptional divisor cannot exist;
-     the only crepant "resolution" is the identity. So 3 holds while 2 cannot, and the original triple was
-     self-contradictory: it asserted existence for canonical singularities and non-existence for the terminal ones
-     inside them.
-- **Page now (`curves-and-surfaces/crepant-resolutions.md:18,32-34`): the three sentences are gone; what remains is
-  true.** `:18` gives $K_{\tilde X}=\pi^*K_X+(n-1)E$ and "a blowup of a smooth point is never crepant"; `:32-34` give
-  Castelnuovo's criterion, contractibility of $(-1)$- and $(-2)$-curves, and the crepancy computation. **No repair on
-  this row.** The residual is §9.2: I did not read Mori.
+### 2.4 Row 4 — class group and Picard group
+**Decision.** $\CaCl(X)\to\Pic(X)$ is an isomorphism for every integral scheme (Har77 **Prop II.6.15**, read);
+$\CaCl(X)\into\Cl(X)$ is injective for normal $X$ (**Remark II.6.11.2**, read: the Cartier divisors are the locally
+principal Weil divisors) and an isomorphism when every local ring is a UFD (**Prop II.6.11**, read), in particular for
+regular $X$ (**Remark II.6.11.1A**, read); not an isomorphism in general: the affine quadric cone has $\CaCl=0$ and
+$\Cl=\ZZ/2$ (**Example II.6.11.3**, read).
+**Cross-reference findings (kept, two):** `divisors/class-group-and-picard-group.md:17` omits **Remark II.6.11.2**, which
+is the number behind its normal-case clause; and a *new* one on the page that transcludes the same material —
+`divisors/weil-and-cartier.md:34` cites **Exercise IV.1.8** for the exact sequence
+$0\to\oplus_p\tilde\OO_p^\times/\OO_{X,p}^\times\to\Pic(X)\to\Pic(\tilde X)\to0$. Exercise IV.1.8, now read, is
+"$p_a$ of a Singular Curve": its exact sequence is $0\to\OO_X\to f_*\OO_{\tilde X}\to\sum_P\tilde\OO_P/\OO_P\to0$ and its
+content is $p_a(X)=p_a(\tilde X)+\sum\delta_P$. It does **not** state the Picard sequence; that citation is wrong
+(CITE-8) and I did not locate the right number in the retained text, so it is recorded as owed, not replaced.
 
-### Row 3 — Riemann–Hurwitz and the tame/wild correction
-- **Flag:** "$d_p=e_p-1+(\text{a correction divisible by }p)$".
-- **Decision: the printed form is not the book's.** General statement (Har77 Prop IV.2.2, items read): for a finite
-  separable morphism of curves, $\length(\Omega_{X/Y})_P=e_P-1$ when $P$ is tame, and $\length\ge e_P$ when $P$ is wild;
-  the general formula for the degree of the ramification divisor is therefore
-  $\deg R=\sum_P\length(\Omega_{X/Y})_P\ge\sum_P(e_P-1)$, with equality exactly in the tame case. A "correction
-  divisible by $p$" is not what the proposition says: the wild case gives at least $e_P$, not $e_P-1$ plus a
-  $p$-multiple.
-- **Page now (`curves-and-surfaces/riemann-hurwitz.md:12-18`): true and general** — it defines $R$ by the lengths, gives
-  $K_X\sim f^*K_Y+R$ (IV.2.3), the degree formula (Cor IV.2.4), and the tame/wild split with "so
-  $\deg R=\sum(e_P-1)$ holds exactly when no point is wildly ramified".
-- **Cross-reference finding (this row): the last sentence over-cites.** The implication "$\deg R=\sum(e_P-1)$ exactly
-  when tame" uses **only** Proposition IV.2.2; Corollary IV.2.4 (Hurwitz) is the degree formula already printed at
-  `:15-17` and states nothing about tameness. CITE-4 asks for the citation at the claim it supports; drop IV.2.4 at
-  `:18`.
-- **Nearby defect: none found** in `:12-18` or `:32` (the genus computations at `:32` check out:
-  $2g_X-2=-2n+\deg R$ gives $g_X=0$ for $2n-2$ simple branch points and $g_X=g$ for a degree-two cover of $\PP^1$ with
-  $2g+2$ branch points).
+### 2.5 Row 5 — ampleness and pullback (decided here)
+The page (`morphisms/projective-morphisms.md:46-48`) makes four assertions. Each is true, with the hypothesis its source
+carries, and none is the flagged "stable under pullback":
+1. **Very ample ⇒ ample; ample ⟺ some power very ample** for $X$ of finite type over a noetherian ring. Har77 **Theorem
+   II.7.6** read: "Let $X$ be a scheme of finite type over a noetherian ring $A$, and let $\mathcal L$ be an invertible
+   sheaf on $X$. Then $\mathcal L$ is ample if and only if $\mathcal L^m$ is very ample over $\Spec A$ for some $m>0$."
+2. **Restriction to a closed subscheme.** Har77 **Ex III.5.7(a)** read: "If $\mathcal L$ is ample on $X$, and $Y$ is any
+   closed subscheme of $X$, then $i^*\mathcal L$ is ample on $Y$." The exercise's standing hypothesis, printed at its
+   head, is that $X$ and $Y$ are proper over a noetherian ring $A$ — the page omits it.
+3. **Pullback along a finite morphism.** Vakil **Ex 16.2.G** read: "Suppose $\pi\colon X\to Y$ is a finite morphism of
+   proper $A$-schemes, and $\mathcal L$ is an ample line bundle on $Y$. Show that $\pi^*\mathcal L$ is ample on $X$."
+   (Vakil's own remark extends it past "proper $A$-schemes"; the page states the unrestricted version, which is fine but
+   is not what the citation says.) The **iff** in the page's next clause is Har77 **Ex III.5.7(d)** read: "Let
+   $f\colon X\to Y$ be a finite surjective morphism, and let $\mathcal L$ be an invertible sheaf on $Y$. Then $\mathcal L$
+   is ample on $Y$ if and only if $f^*\mathcal L$ is ample on $X$."
+4. **Not preserved by arbitrary pullback.** For $\pi\colon\tilde X\to X$ the blowup at a point of a surface,
+   $\pi^*\mathcal L\cdot E=\mathcal L\cdot\pi_*E=0$, and an ample divisor meets every irreducible curve positively —
+   Har77 **Theorem V.1.10** (Nakai–Moishezon, read): "$D$ on the surface $X$ is ample if and only if $D^2>0$ and
+   $D\cdot C>0$ for all irreducible curves $C$."
+**Verdict: the flag is answered — ampleness is not stable under arbitrary pullback, and the three cases in which it is
+preserved are each a theorem with its own hypothesis.** The only page-side defect is the dropped standing hypothesis in
+clause 2 (CITE-6: the hypothesis belongs in the sentence, not in the exercise).
 
-### Row 4 — class group and Picard group on an integral scheme
-- **Flag:** "on an integral scheme the map between them is an isomorphism" (needs local factoriality).
-- **Decision: true for Cartier divisors, false for Weil divisors.** General statement: for *every* integral scheme,
-  $\CaCl(X)\to\Pic(X)$, $[D]\mapsto[\OO_X(D)]$, is an isomorphism (Har77 Prop II.6.15, read) — no factoriality.
-  $\CaCl(X)\into\Cl(X)$ is injective for normal $X$ (Remark II.6.11.2, read) and an isomorphism when every local ring
-  is a UFD (Prop II.6.11, read), in particular for regular $X$ (Remark II.6.11.1A, read); it is **not** an isomorphism
-  in general: on the affine quadric cone $\CaCl=0$ while $\Cl=\ZZ/2$ (Example II.6.11.3, read).
-- **Page now (`divisors/class-group-and-picard-group.md:12-18`): true, with the hypotheses exactly where they belong.**
-- **Cross-reference finding (this row): `:17` cites Proposition II.6.11 and Corollary II.6.16 and Remark II.6.11.1A,
-  but its normal-case clause — "a Cartier divisor is a locally principal Weil divisor, so $\CaCl\into\Cl$" — is
-  Remark II.6.11.2's statement, and that number is absent.** Add it. Second, `:36` locates the global-sections formula
-  only as "[@Har77, §II.6]"; the statements are the ones on $\OO_X(D)$ and effective divisors, and a section locator is
-  the weakest the policy allows (CITE-1 wants the statement reached).
+### 2.6 Row 6 — fibre dimension, and the finding on this page
+**Decision.** Vakil **Theorem 12.4.3** read verbatim: (a) the dimension of the largest component of $\pi^{-1}(\pi(x))$
+through $x$ is upper semicontinuous **on $X$**; (b) the dimension of the fibre over $y$ is upper semicontinuous **on $Y$**
+when $\pi$ is closed, e.g. proper. The third function $\krulldim\OO_{X_{f(x)},x}$ is not upper semicontinuous
+($\AA^1_k\to\Spec k$: $1$ at closed points, $0$ at $\eta$). The page separates all three (`schemes/dimension.md:43-52`).
+**Independent finding on this page (not "none"):** `:53` says "for $X$ Cohen–Macaulay and $Y$ regular the pointwise
+equality … forces $f$ to be flat ([[T-MORMIRACLE]])", and the card's own numbered source for that is Vakil **26.2.11**,
+which is the **pure-fibre** statement ("the fibers of $\pi$ have dimension $\dim X-\dim Y$"); the pointwise form is the
+card's corollary from **26.2.10** (the local theorem), applied at each $x$. A reader who follows the page's pointer to
+26.2.11 gets a hypothesis that the page's sentence does not carry (purity of every fibre, not a pointwise equality). The
+repair is to cite the local statement (26.2.10) for the pointwise form, as the card does. Both numbers read; see §5.
+Second, smaller: `:48` attaches `[[T-MORFIBDIM]]` to the elementary computation $\{x:\dim_x\ge1\}=$ closed points, which is
+not that card's statement — the link is to the wrong owner for the example, though harmless.
 
-### Row 6 — fibre dimension "upper semicontinuous in the point of $Y$"
-- **Flag:** fibre dimension "upper semicontinuous as a function of the point of $Y$".
-- **Decision: two different functions, and the flag conflated them.** General statement (Vakil Theorem 12.4.3, read
-  verbatim): (a) on the **source**, $x\mapsto\dim$ of the largest component of $\pi^{-1}(\pi(x))$ through $x$ is upper
-  semicontinuous; (b) on the **target**, $y\mapsto\dim X_y$ is upper semicontinuous *when $\pi$ is closed*, e.g. proper.
-  Without closedness it fails in general: the open immersion $\AA^1\sm\{0\}\into\AA^1$ has $\{y:\dim X_y\ge0\}$ open
-  and non-closed. The local function $\krulldim\OO_{X_{f(x)},x}$ is a third function and is not upper semicontinuous:
-  $\AA^1_k\to\Spec k$ has value $1$ at closed points and $0$ at $\eta$.
-- **Page now (`schemes/dimension.md:43-52`): true, all three functions separated, each with its hypothesis.**
-- **Cross-reference finding (this row): none.** `:43` and `:51` cite 12.4.3(a) and (b) correctly, `:48` links the card,
-  `:53` rests on `T-MORMIRACLE`, which §4.3 now verifies against Vakil 26.2.10/26.2.11. Nearby: `:52`'s witness for
-  the necessity of closedness is correct as printed.
+### 2.7 Row 7 — the product of the stalks
+**Decision.** $s\mapsto(s_p)$ is injective (axiom 3) and is not the gluing axiom; the product carries no compatibility.
+**Witness, corrected.** My second version used $\Spec k[\varepsilon]/(\varepsilon^2)$ and said the product of stalks over
+its one point is $k$: that is wrong, because localising a local ring at its maximal ideal leaves it unchanged, so the
+product of stalks over the single point is the whole ring and injectivity is an isomorphism there — no witness at all.
+The correct witness is $\AA^1$: the family $g_p=1/x$ for $p\ne0$ and $g_0=0$ is a point of $\prod_p\OO_{\AA^1,p}$ (each
+entry is a germ of a regular function near its point) but is not the family of germs of any section of $\OO_{\AA^1}$,
+since a section regular at $0$ cannot equal $1/x$ on $\AA^1\sm\{0\}$.
+**Page now (`schemes/ringed-spaces.md:26-28`): true.** The finding on this row is §5.3's definition-shaped prose at `:16`.
 
-### Row 7 — gluing and "the product of the stalks"
-- **Flag:** gluing as "the structure sheaf is a subsheaf of the product of its stalks".
-- **Decision: the injectivity is true and is not the sheaf axiom.** General statement: for any sheaf $\mcf$ on a space
-  and any open $U$, $s\mapsto(s_p)_{p\in U}$ is injective (axiom 3); the gluing axiom is the *existence* of a section
-  over $U$ from a compatible family, and the product of stalks carries no compatibility, so a section of the product
-  need not be a section of $\mcf$. Witness for the gap in the structure sheaf: on $\Spec k[\varepsilon]/(\varepsilon^2)$
-  every element of the product of stalks over the single point is a value $k$-element, while the ring is
-  two-dimensional.
-- **Page now (`schemes/ringed-spaces.md:26-28`): true** — injectivity, then "injectivity is not the gluing axiom …
-  the product of the stalks imposes no compatibility between its coordinates".
-- **Cross-reference finding (this row): `:16` locates the definition of a morphism of locally ringed spaces as
-  "[@Har77, Section II.2]".** The definition there is not a numbered statement, so the page cannot carry a number; that
-  is a source-side gap, not a page defect, and it should be recorded rather than "fixed" by inventing a number.
-  **Nearby defect: the sentence is definition-shaped prose** (DEF-29/DEF-1) — a local homomorphism is defined by a card
-  (`D-AN662`), and `:16` restates the condition without "Recall that". See §5.3.
+### 2.8 Row 8 — the functors on sheaves
+**Decision.** For a morphism of ringed spaces, $f^{-1}\dashv f_*$ and $f^*=\OO_X\otimes_{f^{-1}\OO_Y}f^{-1}(-)$ are three
+functors, and for sheaves of abelian groups there are $j_!$ (left adjoint to $j^{-1}$, for an open immersion), $Rf_!$
+(proper supports) with right adjoint $f^!$, plus $\otimes^L$ and $R\sheafhom$ — the six operations. All of this is the
+content of the card `D-SHFSIX`, now read, which states $j_!$, the three adjunctions, base change and $f^!$ with the
+hypothesis that $f_!$ has finite cohomological dimension. The general reason $f_*$ cannot be replaced: a right adjoint
+preserves limits and not colimits, with the coproduct witness $\left(f_*(\oplus_i\mcf_i)\right)(\mathrm{pt})=\prod_i\ZZ$
+against $\oplus_i\ZZ$ for $X=\coprod_{i\in I}\{i\}$, $I$ infinite.
+**Page now (`sheaves/pushforward-and-pullback.md:13,27-29`): true.** No repair.
 
-### Row 8 — "the two functors are the only ones available"
-- **Flag:** the claim that $f_*$ and $f^*$ exhaust the functors.
-- **Decision: false in general, and false as an implication, not merely in an example.** General statement: for a
-  morphism of ringed spaces the adjunction $f^{-1}\dashv f_*$ gives two functors; $f^*=-\otimes_{f^{-1}\OO_Y}\OO_X$ is a
-  third; for sheaves of abelian groups there are $j_!$ (left adjoint to restriction, for an open immersion $j$),
-  $Rf_!$ (proper supports, for $f$ a map of locally compact spaces), and $f^!$ (right adjoint of $Rf_!$, Verdier
-  duality) — the six operations with $\otimes$ and $\sheafhom$. General reason $f_*$ cannot be replaced by $f^{-1}$: a
-  right adjoint preserves limits and not colimits; the witness is unchanged: for $X=\coprod_{i\in I}\{i\}$, $I$
-  infinite, $f\colon X\to\{\mathrm{pt}\}$ and $\mcf_i=\ZZ$ on the $i$th point,
-  $\left(f_*(\oplus_i\mcf_i)\right)(\mathrm{pt})=\prod_i\ZZ$ while $\left(\oplus_if_*\mcf_i\right)(\mathrm{pt})=\oplus_i\ZZ$.
-- **Page now (`sheaves/pushforward-and-pullback.md:13,27-29`): true** — `:13` names $j_!$, $Rf_!$ and $f^!$ with the
-  hypotheses under which they exist; `:28` says which limits each side preserves; `:29` gives the counterexample.
-- **No repair on this row.**
+### 2.9 Row 9 — the order and the adjunction
+**Decision.** regular ⇒ local complete intersection ⇒ Gorenstein ⇒ Cohen–Macaulay, one-directionally: an lci ideal is
+generated by a regular sequence of the right length, so the Koszul complex is a finite free resolution and the dualizing
+sheaf is invertible, which is Gorenstein; CM is what makes "dualizing sheaf invertible" the right criterion. The card
+`D-SCHCMGOR`, now read, defines all three (CM by $\operatorname{depth}R=\dim R$, Gorenstein by finite injective
+dimension, complete intersection by the completed presentation $S/(f_1,\dots,f_c)$) and defines lci for a closed
+subscheme of a smooth variety as "ideal locally generated by a regular sequence; at a point of codimension $c$ the
+sequence has length $c$" — which is exactly what `tangent-normal-and-canonical-sheaves.md:46` uses for a divisor.
+Adjunction is about sheaves on $Y$: Har77 **Prop II.8.20** read: "$\omega_Y\cong\omega_X\otimes\wedge^r\mathcal N_{Y/X}$.
+In case $r=1$ … $\omega_Y\cong\omega_X\otimes\mathcal L\otimes\OO_Y$."
+**Page now (`:45-46,52-60`): true**, every adjunction written with `\restrictionof{·}{Y}`; no `\inverseof` remains in it
+or in `riemann-hurwitz.md`. No repair.
 
-### Row 9 — the CM / Gorenstein / lci order, and the adjunction restriction
-- **Flag:** the order reversed; $\inverseof{i}\Omega_X$ for $i^*\Omega_X$ (also in `riemann-hurwitz.md`).
-- **Decision: the order is regular $\Rightarrow$ local complete intersection $\Rightarrow$ Gorenstein $\Rightarrow$
-  Cohen–Macaulay, and it is one-directional.** General reason: the ideal sheaf of an lci is generated by a regular
-  sequence of the right length, so the Koszul complex is a finite free resolution and the dualizing sheaf is invertible
-  (Gorenstein); Cohen–Macaulayness is what makes "dualizing sheaf invertible" the right criterion at all. The converse
-  direction fails in general, which is why the order is not a convention. Separately, adjunction for
-  $i\colon Y\into X$ is a statement about sheaves **on $Y$**: $\omega_Y\cong\restrictionof{\omega_X}{Y}\otimes\wedge^r\mcn_{Y/X}$,
-  and for $r=1$ $\omega_Y\cong\restrictionof{(\omega_X\otimes\mcl)}{Y}$ (Har77 Prop II.8.20 read: "$\omega_Y\cong
-  \omega_X\otimes\mathcal L\otimes\OO_Y$"); writing $i^*$ or the restriction is required, and `\inverseof{i}` is not
-  the pullback.
-- **Page now (`sheaves-of-modules/tangent-normal-and-canonical-sheaves.md:45-46,52-60`): true.** lci $\Rightarrow$
-  Gorenstein $\Rightarrow$ invertible dualizing sheaf, and every adjunction written with `\restrictionof{·}{Y}`. No
-  `\inverseof` remains in it or in `riemann-hurwitz.md` (search at the pinned blob). **No repair.**
-- Residual: I did not read a source for "lci $\Rightarrow$ Gorenstein" outside the corpus card `D-SCHCMGOR` (§9.3).
+### 2.10 Row 10 — the three toric claims
+As before, with the sources read this time: the quadric cone is $\Spec k[x,y,z]/(xy-z^2)$ with $\Cl=\ZZ/2$ and a ruling
+that is Weil but not Cartier (Har77 **Example II.6.11.3**, read; the card `FE-TORCD`, read, carries the same cone as
+$\Cone(e_2,\,de_1-e_2)$, $d\ge2$, with $\Cl=\ZZ/d$); the classification of smooth complete toric surfaces is
+`T-TORSURF`, read (rays $v_i$ in cyclic order with each $\{v_i,v_{i+1}\}$ a basis and $v_{i-1}+v_{i+1}=a_iv_i$), and the
+page's "$\PP^2$, $\FF_a$, or a blowup" is its consequence; "every toric variety is a fan" is a category error, and the
+true statements are that a fan gives a normal toric variety and that $\Sigma\mapsto X_\Sigma$ loses nothing for normal
+toric varieties — the cuspidal cubic, being non-normal, is not $X_\Sigma$ (`D-FULSAT`, read: saturation and
+$\Spec k[S]$ normal, with the $(4,0),(3,1),(1,3),(0,4)$ example).
+**Page now (`toric/examples.md:36,40,45,61`): true.** No repair.
 
-### Row 10 — the three toric claims on `toric/examples.md`
-- **Flag:** a determinant-7 cone called the quadric cone; "every toric surface from $\PP^2$ by blowing up fixed
-  points"; "every toric variety is a fan".
-- **Decision, three general verdicts:**
-  1. The quadric cone is $V(xy-z^2)$, the toric variety of $\Cone((0,1),(2,-1))$, with $\Cl=\ZZ/2\ZZ$ and a ruling that
-     is a Weil divisor not locally principal (Har77 Example II.6.11.3 read). A cone of determinant $7$ is a different
-     surface, with $\Cl=\ZZ/7$.
-  2. **True in general:** every smooth complete toric surface is $\PP^2$, a Hirzebruch surface $\FF_a$ ($a\ge0$), or a
-     blowup of one of these at torus-fixed points; equivalently a fan with at least four rays and no "unnecessary"
-     subdivision. This is the general classification, not an example, and the page states it in that form.
-  3. **False as a category claim, true after normality.** A variety is not a fan; the correct general statements are
-     that a fan determines a **normal** toric variety $X_\Sigma$, that $\Sigma\mapsto X_\Sigma$ is injective on fans, and
-     that a normal toric variety is $X_\Sigma$ for a fan determined by its orbit stratification. The cuspidal cubic is not
-     normal, hence not of the form $X_\Sigma$ — the page's own remark.
-- **Page now (`toric/examples.md:36,40,45,61`): true.** Determinant seven computed at `:40`; the classification at
-  `:61`; `:45` says the cuspidal cubic is not of the form $X_\Sigma$. **No repair.**
+### 2.11 Row 11 — the three toric-topology claims
+1. $\pi_1(X_\Sigma(\CC))\cong N/N_\Sigma$ with $N_\Sigma$ generated by **all** lattice points of $|\Sigma|$; for the
+   affine quadric cone the cone contains $(1,0)$ (it is $\Cone((0,1),(2,-1))$, whose lattice points include
+   $\tfrac12(0,1)+\tfrac12(2,-1)=(1,0)$), so $N_\Sigma=N$ and $\pi_1=0$. The page's claim is right and the reader's
+   $\ZZ/2$ is wrong. The route to the formula is the card `PR-TORMOR` (read: compatibility, completeness iff
+   $|\Sigma|=N_\RR$) together with `D-FULSTAR` (read: $N_\tau=\ZZ\langle\tau\cap N\rangle$ — the sublattice generated by
+   the lattice points, which is precisely the distinction at issue).
+2. The moment map is not a torus bundle: over the relative interior of a $k$-face the fibre is $(S^1)^k$, the preimage is
+   the orbit of complex dimension $k$ (`D-TORMOMENT`, read: the compact torus $T_c\cong(S^1)^n$ and $\mu\colon X_P\to M_\RR$).
+3. $H^*$ is the Stanley–Reisner ring (`T-TORCOHOM`, read: the ideal $I_\Sigma$ and the presentation for a smooth complete
+   toric variety).
+**Page now (`toric/topology.md:31,55,47`): all three right.** No repair. The `[@Ful93, §3.2]` and `§4.2` locators remain
+unverified (§9).
 
-### Row 11 — the three toric-topology claims
-- **Flag:** the affine quadric cone not simply connected; "torus bundle over a polytope"; "$H^*$ has the faces of the
-  fan as generators".
-- **Decision, three general verdicts:**
-  1. **The page's trivial-$\pi_1$ claim is true and the reader's $\ZZ/2$ is false.** General statement:
-     $\pi_1(X_\Sigma(\CC))\cong N/N_\Sigma$ where $N_\Sigma$ is generated by **all lattice points in $|\Sigma|$**, not by
-     the ray generators. For a complete fan $N_\Sigma=N$, so every complete toric variety over $\CC$ is simply
-     connected — including the affine quadric cone, whose fan is not complete but whose cone contains the lattice points
-     $(1,0)=u_1/2+\ldots$: the cone $\Cone((0,1),(2,-1))$ contains $(1,0)$, so $N_\Sigma=N$ and $\pi_1=0$. This is the
-     owner's ruling at #175 and it is correct.
-  2. **False: the moment map is not a torus bundle over $P$.** General statement: over the relative interior of a
-     $k$-dimensional face $F$, $\mu^{-1}$ is the orbit of $F$, of complex dimension $k$, and the fibre of $\mu$ there is
-     the compact torus $(S^1)^k$ of real dimension $k$ — not the algebraic orbit, which is a torus bundle over that
-     compact torus.
-  3. **False as stated; the correct general statement is Stanley–Reisner.** $H^*(X_\Sigma)$ for a smooth complete fan is
-     the quotient of the polynomial ring on the rays by the Stanley–Reisner ideal of monomials spanning no cone, modulo
-     the linear relations — not generated by faces.
-- **Page now (`toric/topology.md:31,55,47`): all three are right at the pinned blob.** `:31` gives the trivial
-  $\pi_1$ with the lattice-point reason; `:55` gives the $(S^1)^k$ fibre and denies the bundle claim; `:47` gives the
-  Stanley–Reisner presentation. **No repair.**
-- Residual: the page's locators `[@Ful93, §3.2]`, `[@Ful93, §4.2]` are not checkable here (§9.1).
+### 2.12 Row 12 — the del Pezzo page, and a withdrawal
+**Decision.** Both flagged sentences were false, and the corrected reason is *definitional*, not a lattice-point count:
+for a smooth complete toric surface with $-K$ Cartier and ample, $P_{-K}=\{m:\langle m,u_\rho\rangle\ge-1\ \forall\rho\}$
+has its facets on the hyperplanes $\langle m,u_\rho\rangle=-1$ with $u_\rho$ a **primitive** lattice vector, so each facet
+is at lattice distance exactly one from the origin; "distance two" contradicts the displayed inequalities, and no facet can
+pass through the origin because $-K$ is not trivial. Reflexivity is a condition on the *polar*, stated in the card
+`D-TORREFL` (read: $P^\circ=\{u:\langle m,u\rangle\ge-1\ \forall m\in P\}$ and the facet description with $a_F>0$).
+**Withdrawal.** My second version argued "a facet at distance two would contain no lattice point in its relative
+interior". That reasoning is invalid, and the review supplies the counterexample: the triangle
+$\operatorname{Conv}((2,-2),(2,2),(-1,0))$ contains the origin in its interior and has facets at distances $1,1,2$, the
+distance-two facet being the segment from $(2,2)$ to $(-1,0)$, whose only lattice points are its endpoints. So a
+distance-two facet can exist and the correct ground is the definition, as stated above. The page's own display is right.
+**Page now (`toric/toric-del-pezzo-surfaces.md:55-59,66`): true**, with $K^2=12-d$ (`PR-FULKSQ`, read) and the five
+degrees $9,8,8,7,6$ recomputed from $3,4,4,5,6$ rays.
 
-### Row 12 — the toric del Pezzo page
-- **Flag:** "lattice distance two"; a reference to "the table above" the page lacks.
-- **Decision: both were wrong, and the general statement is distance one.** General statement: for a smooth complete
-  toric surface, $-K$ is Cartier and ample exactly when
-  $P_{-K}=\{m\in M_\RR:\langle m,u_\rho\rangle\ge-1\text{ for every ray }\rho\}$ is a reflexive lattice polytope with
-  normal fan $\Sigma$ — its facets are at lattice distance **one** from the origin (that is what "reflexive" means for a
-  polytope containing $0$ in its interior), and a facet at distance two would not contain a lattice point in its
-  relative interior. The page's displayed inequalities $\langle m,u_\rho\rangle\ge-1$ are therefore right and the
-  "distance $0$/$2$" sentence was inconsistent with them. "The table above" referred to nothing on the page.
-- **Page now (`toric/toric-del-pezzo-surfaces.md:55-59,66`): true.** $P_{-K}$ as displayed; $K^2=12-d$ with the five
-  degrees $9,8,8,7,6$ (checked: $3,4,4,5,6$ rays); the fourth-blowup obstruction $-K\cdot C=2+C^2=0$ on a $(-2)$-curve.
-  **No repair.**
+### 2.13 Row 13 — rational maps
+**Decision.** A birational map from a **normal** variety to a projective variety is undefined only in codimension $\ge2$
+(Har77 **Lemma V.5.1**, read: "if $T\colon X\to Y$ is a birational transformation of projective varieties, and if $X$ is
+normal, then the fundamental points of $T$ form a closed subset of codimension $\ge2$"), and Vakil **Ex 15.3.B** read
+gives the mechanism: for a Noetherian $X$ and an irreducible codim-one $Z$ whose generic point is regular,
+$\OO_{X,Z}$ is a DVR and the domain of definition contains a dense open of $Z$. A blowup is birational with normal
+source and target and changes a divisor, so "isomorphism in codimension one" is false. For maps to $\PP^n$: an
+$(n+1)$-tuple of rational functions modulo $k(X)^\times$ is a rational map with no dominance hypothesis (Har77
+**Theorem II.7.1**, read).
+**Cross-reference finding (kept):** `varieties/rational-maps.md:21` writes "at a point of codimension one the local ring
+$\OO_{X,\eta}$ is a discrete valuation ring". $\eta$ is this corpus's generic point; the ring meant is $\OO_{X,x}$ at the
+codimension-one point. The same slip is in the card `D-VARBIRAT`'s proof of its codimension-two proposition, so this is
+one defect with two locations, and the card's proof has a second problem: it cites "[@Har77, §I.4]" for a statement
+Hartshorne states in V.5.1.
+The citation defect at `:48` is §3.4 (II.8.19/Ex II.8.8 support the *other* claim; the extension step is II.6.3A).
 
-### Row 13 — rational maps: codimension one and the dominance hypothesis
-- **Flag:** "a birational map is an isomorphism in codimension one"; the dominance hypothesis on maps to $\PP^n$.
-- **Decision: the first is false and the second is unnecessary.** General statement: a birational map from a
-  **normal** variety to a projective variety is undefined only in codimension $\ge2$ (Har77 V.5.1, read: "if $T\colon
-  X\to Y$ is a birational transformation of projective varieties, and if $X$ is normal, then the fundamental points of
-  $T$ form a closed subset of codimension $\ge2$") — an isomorphism in codimension one is a strictly stronger and
-  generally false claim (a single blowup is birational, normal source and target, and changes a divisor). For maps to
-  $\PP^n$: general statement, an $(n+1)$-tuple of rational functions not all zero, modulo $k(X)^\times$, is a rational
-  map with no dominance condition (Har77 Theorem II.7.1, read: the morphism is built from $\mathcal L$ and sections, and
-  no dominance appears); dominance is needed only to pull back functions along a map to a general $Y$.
-- **Page now (`varieties/rational-maps.md:21,22,26`): true on both counts.**
-- **Cross-reference finding (this row): `:21` writes "at a point of codimension one the local ring $\OO_{X,\eta}$ is a
-  discrete valuation ring" — $\eta$ is the generic point by this corpus's convention, and the local ring meant is
-  $\OO_{X,x}$ at the codimension-one point.** Notation defect (SYM-1/NOT-3) at the same sentence. Nearby: `:48`'s
-  citation is the D-item of §3.6 (II.8.19 and Ex II.8.8 do not state the extension).
+### 2.14 Row 14 — the Segre claim, generally
+**Decision.** For all $r,s$: $\psi\colon\PP^r\times\PP^s\to\PP^N$ with $N=rs+r+s$, $(a,b)\mapsto(a_ib_j)$, is injective
+with image $Z(\mathfrak a)$ where $\mathfrak a=\ker(k[z_{ij}]\to k[x,y]$, $z_{ij}\mapsto x_iy_j)$ — Har77 **Exercise
+I.2.14**, read verbatim, which states exactly this. Since $\psi$ is a closed immersion, for closed $X\subseteq\PP^r$,
+$Y\subseteq\PP^s$ the product $X\times Y$ is closed in $\PP^r\times\PP^s$ and $\psi(X\times Y)$ is closed in
+$\PP^N$; projectivity of the product follows for every $r,s$. $m=n=1$ is the illustration (the single minor
+$z_{00}z_{11}-z_{01}z_{10}$), not the argument.
+**Page now (`varieties/projective-varieties.md:41-44`): the general statement.** No repair.
 
-### Row 14 — the Segre claim
-- **Flag:** the Segre/product claim on `varieties/projective-varieties.md`.
-- **Decision: the general statements are true, and the page now states them generally.** $m=n=1$ is only the printed
-  instance, not the argument. General statement: $\sigma\colon\PP^m\times\PP^n\to\PP^{(m+1)(n+1)-1}$,
-  $(x,y)\mapsto(x_iy_j)$, is a closed immersion onto the locus of rank-one matrices, cut out by all $2\times2$ minors;
-  for closed $X\subseteq\PP^m$, $Y\subseteq\PP^n$ the product $X\times Y$ is closed in $\PP^m\times\PP^n$, so
-  $\sigma(X\times Y)$ is closed in $\sigma(\PP^m\times\PP^n)$, hence in $\PP^N$ — projectivity of the product follows
-  for every $m,n$. (`m=n=1`: the single minor $z_{00}z_{11}-z_{01}z_{10}$ is the smooth quadric in $\PP^3$.)
-- **Page now (`varieties/projective-varieties.md:41-44`): the general statement, with `m=n=1` as the illustration.**
-  **No repair.**
-- Residual: Har77 Exercise I.2.14 (Segre) was not opened (§9.3); the general mechanism is decided, the citation is not.
+### 2.15 Row 15 — dominance, with the finding this row owns
+**Decision.** Dominance is needed exactly to pull functions back: a dominant rational map $\varphi\colon X\dashrightarrow Y$
+of varieties induces a $k$-algebra map $k(Y)\to k(X)$, $g\mapsto g\circ\varphi$, and the card `D-VARBIRAT` (read) states
+the contravariant correspondence with finitely generated field extensions, citing Har77 **Theorem I.4.4** and **Corollary
+I.4.5** (both read: Cor I.4.5 is the equivalence "birational ⟺ $k(X)\cong k(Y)$"). Maps to $\PP^n$ need no dominance, so
+the page is right to attach it only to the general target.
+**Finding on this row:** `varieties/rational-maps.md:22` says dominant maps "pull functions back **along the inclusion**
+$k(Y)\into k(X)$ of function fields". What exists is an induced map $\varphi^*\colon k(Y)\to k(X)$, which is injective
+because $\varphi$ is dominant; writing it as an inclusion presupposes the identification of $k(Y)$ with its image, and
+for a non-dominant map there is no such map at all. That is a precise-statement defect (PR-15): the object is
+$\varphi^*$, and its injectivity is the content of dominance.
 
-### Row 15 — dominance, carried from row 13
-- **Decision: as row 13.** `varieties/rational-maps.md:22` attaches dominance only to pullback of functions on a general
-  target, and `:26` has none for $\PP^n$. **No repair.** Nearby: `:28`'s "the morphisms are the base-point-free linear
-  systems" is the correct general statement for a base-point-free linear system on a variety (the pullback of
-  $\OO(1)$ and the assigned sections).
+## 3. Mathematical defects, with location, hypothesis and witness
 
-## 3. New mathematical defects, with location, source and witness
+### 3.1 Projection formula with no hypothesis — `sheaves/pushforward-and-pullback.md:42`
+"The projection formula is … $f_*(\mcf\tensor f^*\mcg)\cong f_*\mcf\tensor\mcg$." Har77 **II.5.1(d)** (read) requires
+"**$\mathcal E$ a locally free $\OO_Y$-module of finite rank**"; **Ex III.8.3** restates it with the same hypothesis.
+Without finite local freeness the two sides are not related by a theorem. Repair: carry the hypothesis and cite II.5.1(d)
+(the card `PR-SCHPROJFORM` owns it).
 
-These are the five the reviewer identified and this reading now confirms at the pinned blob.
+### 3.2 Generating sections ≠ embedding — `sheaves-of-modules/line-bundles.md:21`
+"For $X$ proper over a field, a line bundle $\mcl$ generated by sections $s_0,\dots,s_n$ defines a morphism $X\to\PP^n$, and
+this morphism is a closed embedding exactly when $\mcl$ is very ample." **False.** Har77 **II.7.3** (read in full) is
+about the **span**: "Let $V\subseteq\Gamma(X,\mathcal L)$ be the subspace spanned by the $s_i$. Then $\varphi$ is a closed
+immersion if and only if (1) elements of $V$ separate points … and (2) elements of $V$ separate tangent vectors".
+Counterexample: $X=\PP^1$, $\mcl=\OO(2)$ (very ample), $s_0=x^2$, $s_1=y^2$; these generate $\OO(2)$ (no common zero) and
+give $[x:y]\mapsto[x^2:y^2]$, of degree $2$, which is not injective. `morphisms/projective-morphisms.md:45` states the
+criterion correctly with $V$, so the two pages contradict each other at the baseline.
 
-### 3.1 Projection formula stated with no hypothesis — `sheaves/pushforward-and-pullback.md:42`
-    The projection formula is the compatibility of the two functors with tensor: $f_*(\mcf\tensor f^*\mcg)\cong f_*\mcf\tensor\mcg$.
+### 3.3 Toric very ampleness: shift by the Cartier datum, and the right semigroup — `toric/polytopes-and-divisors.md:52`
+"$D$ is very ample exactly when it is ample and the lattice points of $P_D$ generate the local semigroup $S_\sigma$ at
+every vertex". **Two errors, and my second version repeated the second one.**
+- The lattice points of $P_D$ need the **shift by the vertex**: the vertices of $P_D$ are the Cartier data $m_\sigma$, and
+  on $U_\sigma$ the map is $p\mapsto(\chi^{m_1-m_\sigma}(p),\dots)$ (CLS, proof of **Theorem 6.1.14**, read: "$m_\sigma\in
+  P_D$ … on $U_\sigma$, $\phi_D$ is given by $(\chi^{m_1-m_\sigma},\dots,\chi^{m_s-m_\sigma})$").
+- **The two semigroups are different objects.** $S_\sigma=\sigma^\vee\cap M$ is the *cone* semigroup of the affine chart;
+  $\mathsf S_{P_D,m_\sigma}=\mathbb N(P_D\cap M-m_\sigma)$ is the *translated polytope* semigroup (CLS **Definition
+  2.2.17**, read). Very ampleness says the second is **saturated** — i.e. it *equals* $\mathsf S_{P_D,m_\sigma}$, not that
+  the raw lattice points "generate $S_\sigma$"; CLS **Proposition 2.2.18** (read) is "a normal lattice polytope is very
+  ample", which is where saturation enters.
+Repair: "for every maximal cone $\sigma$ with Cartier datum $m_\sigma$, the semigroup $\mathbb N(P_D\cap M-m_\sigma)$ is
+saturated", citing CLS Definition 2.2.17 and Theorem 6.1.14.
 
-Hartshorne's statement carries a hypothesis: **II.5.1(d)**, read — "if $\mathcal F$ is an $\OO_X$-module, **and if
-$\mathcal E$ is a locally free $\OO_Y$-module of finite rank**, then there is a natural isomorphism
-$f_*(\mathcal F\otimes f^*\mathcal E)\cong f_*(\mathcal F)\otimes\mathcal E$", and III. Ex 8.3 repeats it in the same
-form. Without finite local freeness the displayed isomorphism is not a theorem: the two sides are not even both defined
-as the same kind of object of a finite-rank construction, and the natural map $f_*\mcf\otimes\mcg\to f_*(\mcf\otimes
-f^*\mcg)$ is not invertible in general. Repair: carry "for $\mcg$ locally free of finite rank" (and cite II.5.1(d)),
-which is what the corpus's own `PR-SCHPROJFORM` card is for.
+### 3.4 Gluing axiom missing — `sheaves/the-sheaf-condition.md:12`
+"A sheaf is a presheaf whose sections are determined by their restrictions to the members of any open cover" — the
+locality axiom alone. The page's own `:18-19` says the two axioms are independent, so the opening defines a sheaf by one
+of them and then separates them. Witness that existence is not automatic: the constant presheaf on a two-point discrete
+space has no section restricting to a prescribed pair of different values over the two points, although the family is
+compatible. (`D-RCCFY` owns both axioms.)
 
-### 3.2 Generating sections do not make the map an embedding — `sheaves-of-modules/line-bundles.md:21`
-    For $X$ proper over a field, a line bundle $\mcl$ generated by sections $s_0,\ldots,s_n$ defines a morphism
-    $X\to\PP^n$, and this morphism is a closed embedding exactly when $\mcl$ is very ample.
-
-**False, and not the criterion's statement.** Hartshorne **II.7.3** (read in full) is about the **chosen span**:
-"Let $V\subseteq\Gamma(X,\mathcal L)$ be the subspace spanned by the $s_i$. Then $\varphi$ is a closed immersion if and
-only if (1) elements of $V$ separate points … and (2) elements of $V$ separate tangent vectors". Very ampleness of
-$\mcl$ says that *some* choice of sections of some power separates; it does not certify the given $s_0,\ldots,s_n$.
-Counterexample: $X=\PP^1$, $\mcl=\OO(2)$ (very ample), $s_0=x^2$, $s_1=y^2$. These generate $\OO(2)$ — they have no
-common zero on $\PP^1$ — and the resulting map is $[x:y]\mapsto[x^2:y^2]$, of degree $2$, hence not injective and not a
-closed immersion. Repair: replace "exactly when $\mcl$ is very ample" by II.7.3's criterion on $V$. Note that
-`morphisms/projective-morphisms.md:45` already states it correctly with $V$, so the two pages contradict each other at
-the pinned blob.
-
-### 3.3 Very ampleness of a toric divisor: the semigroup must be shifted — `toric/polytopes-and-divisors.md:52`
-    $D$ is very ample exactly when it is ample and the lattice points of $P_D$ generate the local semigroup
-    $S_\sigma$ at every vertex
-
-The lattice points of $P_D$ lie in $P_D$; what generates the local semigroup at a vertex is their translate by the
-vertex. Cox–Little–Schenck **Definition 2.2.17** (read): "a lattice polytope $P\subseteq M_\RR$ is very ample if for
-every vertex $m\in P$, the semigroup $\mathsf S_{P,m}=\mathbb N(P\cap M-m)$ generated by the set
-$P\cap M-m=\{m'-m\mid m'\in P\cap M\}$ is saturated in $M$." Repair: "the lattice points $m-m_\sigma$, for
-$m\in P_D\cap M$, generate $S_\sigma$ at every maximal cone $\sigma$, with $m_\sigma$ the Cartier datum" — and the
-saturation clause, since CLS Proposition 2.2.18 (read) is the statement that a *normal* polytope is very ample, i.e.
-saturation is part of the criterion.
-
-### 3.4 The sheaf condition stated without the gluing axiom — `sheaves/the-sheaf-condition.md:12`
-    A presheaf is a contravariant functor … and a sheaf is a presheaf whose sections are determined by their
-    restrictions to the members of any open cover.
-
-That is the identity (locality) axiom only. The general definition has two parts: two sections agreeing on a cover are
-equal, **and** a compatible family of sections over a cover glues to a section. The page's own `:18-19` says "neither
-axiom follows from the other" — so the opening sentence defines a sheaf by one of the two axioms it then separates.
-Witness that the second is not automatic: the constant presheaf on a two-point discrete space has no section
-restricting to a prescribed pair of different values, though the family is compatible (its overlaps are empty).
-Repair: state both axioms at first use, leaving the card `D-RCCFY` as the defining occurrence and the page's sentence as
-the "Recall that …" reminder.
-
-### 3.5 The Gauss map's degree — `curves-and-surfaces/curves-in-projective-space.md:86`
-    For a smooth curve of degree $d\ge2$ the Gauss map $C\to C^\vee$ has degree $d(d-1)$, so a smooth conic is
-    self-dual …
-
-$d(d-1)$ is the degree of the **dual curve**, not of the Gauss map. For a smooth plane curve $C$ of degree $d$ the class
-of $C$ — the degree of $C^\vee$ — is $d(d-1)$ (the page itself says so two lines later, in Plücker's formula
-$\deg C^\vee=d(d-1)-2\delta-3\kappa$ with $\delta=\kappa=0$), while the Gauss map is **birational** onto $C^\vee$, of
-degree $1$; the corpus's own card `D-CRVDUAL:41` says "the Gauss map $C\to C^\vee$ is birational", so the page
-contradicts its own card. The attached conclusions survive when read correctly ("a smooth conic is self-dual" because
-$2\cdot1=2$ and the map is an isomorphism; "a smooth cubic has dual of degree $6$"). Repair: "the dual curve $C^\vee$ has
-degree $d(d-1)$, and the Gauss map is birational onto it".
-**Location note:** this sentence is on the current tree (`29a103fab4`), added by #188 after the pinned blob; at
-`078db711f834` the page is 43 lines and the "Dual curves" section contains only the transclusion. It is a live defect,
-not one the review could have read at the pinned commit, and it is recorded here as such.
+### 3.5 The dual class on the plane-curve page — `curves-and-surfaces/curves-in-projective-space.md:87`
+The page (rewritten by #188 at `edd7f51680`) now reads at `:87`: "the Gauss map $C\to C^\vee$ is birational onto the dual
+curve, and its composite with the projection of $(\PP^2)^\vee$ from the point corresponding to a general line $L$ has
+degree $d(d-1)$; **that number is the class of $C^\vee$**, the number of tangent lines through a general point of the
+plane". Two mislabels, both live:
+- $d(d-1)$ is the class of $C$, i.e. $\deg C^\vee$ — which the same section says correctly two lines earlier at `:86`
+  ("the degree of $C^\vee$ is the class of $C$"). The class of $C^\vee$ is $\deg (C^\vee)^\vee=\deg C=d$ by biduality,
+  which the page itself invokes at `:89` ("biduality says $(C^\vee)^\vee=C$").
+- "the number of tangent lines through a general point of the plane" is the definition of the class of $C$, so the
+  appositive names the wrong curve's class.
+Repair: "that number is the class of $C$, that is, $\deg C^\vee$".
+**Correction to my second version:** it recorded this page's defect as "the Gauss map has degree $d(d-1)$". That sentence
+was the *pre-rewrite* text and #188 has since fixed it; the surviving defect is the one above, at `:87`, which my second
+version missed. Neither reading may be carried forward as current without re-checking the blob.
 
 ## 4. The cards
 
-### 4.1 The two named in #189
-- `corpus/theory/Algebraic_Geometry/PR-RJ3P7.md` — repaired at `2734e61c70`, before both versions of this record.
-  Read at `078db711f834`: `:47` "surjectivity is not part of that: it is lying over, and it needs $\phi$ injective …
-  $\ZZ\to\ZZ/2$"; `:49` "a finite morphism need not preserve the dimension of its target"; `:51` "going down is what
-  makes heights match, $\operatorname{ht}\mfq=\operatorname{ht}(\mfq\cap A)$, under its hypotheses". Correct, and the
-  height statement follows from going up + going down + incomparability. **MET; nothing for #187.**
-- `corpus/theory/Algebraic_Geometry/T-FFDESCENT.md` — repaired at `1287f30106`. Read: the datum
-  $\theta\colon C\otimes_{B,p_1}N\to C\otimes_{B,p_2}N$ with cocycle, and the quasi-inverse
-  $\{n\in N:\theta(n\otimes1)=1\otimes n\}$ under $C\otimes_{B,p_1}N\cong N\otimes_AB$ and
-  $C\otimes_{B,p_2}N\cong B\otimes_AN$ — the standard Amitsur equalizer, citing Stacks 023N and 03OE. **MET; the only
-  residual is that the $\otimes_{B,p_i}$ convention is implicit.**
+### 4.1 `T-FFDESCENT` — corrected here, against my earlier verdict
+`corpus/theory/Algebraic_Geometry/T-FFDESCENT.md:71` said the quasi-inverse sends $(N,\theta)$ to
+$\{n:\theta(n\otimes1)=1\otimes n\}$ "under the identifications $C\otimes_{B,p_1}N\cong N\otimes_AB$ and
+$C\otimes_{B,p_2}N\cong B\otimes_AN$". With $p_1(b)=b\otimes1$ and $p_2(b)=1\otimes b$ those two identifications belong the
+other way round: tensoring over $B$ through $p_1$ leaves the second factor of $C=B\otimes_AB$, giving
+$C\otimes_{B,p_1}N\cong B\otimes_AN$, and through $p_2$ leaves the first, giving $C\otimes_{B,p_2}N\cong N\otimes_AB$.
+With that pairing the condition that is well typed and recovers $M$ is $\theta(1\otimes n)=n\otimes1$: for $N=M\otimes_AB$
+the canonical $\theta$ is the flip, $1\otimes n=1\otimes m\otimes b\mapsto b\otimes m\otimes 1=n\otimes 1$, and the
+invariant elements are exactly $m\otimes1\cong M$.
+**Repaired** at `96ef469b62` (identification order and condition together), cited to Stacks 023N and 03OE as before.
+**My earlier verdict was wrong**: I recorded the card as "repaired, MET", relying on commit `1287f30106`, which had
+changed the condition in the wrong direction. The card gate passes: `qualc.authoring check T-FFDESCENT` →
+"schema and Markdown parsing OK".
 
-### 4.2 Baseline complaint: `PR-VGA2L` and Chevalley–Warning — **still open, not closable here**
-`corpus/theory/Algebraic_Geometry/PR-VGA2L.md:64` (read): "If $k=\FF_q$, the anticanonical conic is defined by one
-homogeneous quadratic equation in three variables. **Chevalley–Warning** gives a nonzero solution over $\FF_q$, hence a
-$k$-rational point on $C$." The theorem is used, not stated: no numbered statement, no hypothesis transcribed, and no
-retained text of Chevalley–Warning exists on this machine (`tmp/sources` has none; `vocabularies/references.yaml` has no
-key). The card is transcluded by `curves-and-surfaces/genus.md:24` and by
-`curves-and-surfaces/riemann-roch-for-curves.md` in the edition of that page that carries `PR-VGA2L` (both were
-checked), so the gap is visible on two pages.
-Under CITE-8 this is a defect and under QUAL-01 it is not repairable here: the honest record is **waiting on a
-numbered statement of Chevalley–Warning** (its statement and proof are in every text on finite fields, but none is
-retained and I do not invent a number). The complaint entry is the sibling commit `b27109aeb5`.
+### 4.2 `PR-RJ3P7` — qualified here
+`:51` said "Going down is what makes heights match, $\operatorname{ht}\mfq=\operatorname{ht}(\mfq\cap A)$, **under its
+hypotheses**". The remark has just given two going-down statements, one for integral extensions with integrally closed
+base and one for **every flat** ring map, and height equality is a consequence only of the first together with going up and
+incomparability. Flat going down alone refutes it: $\ZZ[x]\to\ZZ[x,y]$ is flat (free), the prime $(y)$ has height $1$, and
+its contraction $(0)$ has height $0$.
+**Repaired** at `13f9c3a8eb`: the sentence now restricts the height statement to the integral case, states the
+counterexample, and keeps the geometric sentence on generizations, which is true for both going-down statements.
+Card gate passes.
 
-### 4.3 The four cards the review asked to adjudicate
-- **`D-CRVHYP`** (hyperelliptic; read at `078db711f834`). Definition cites **Har77 Exercise IV.1.7**, read: "A curve $X$
-  is called hyperelliptic if $g\ge2$ and there exists a finite morphism $f\colon X\to\PP^1$ of degree 2" — matches, and
-  "equivalently a $g^1_2$" is the standard equivalence for $g\ge2$. The proposition cites **Prop IV.5.3**, read
-  (unique $g^1_2$; the canonical morphism is $f_0$ followed by the $(g-1)$-uple embedding). The remark's
-  base-point-freeness argument uses $\ell(p)=1$ and Riemann–Roch, which reproduces the proof of **Lemma IV.5.1**, read.
-  **MET.** One thing the card leaves implicit: $|K|=(g-1)g^1_2$ is the last clause of Prop IV.5.3, so the citation
-  covers it.
-- **`T-MORMIRACLE`** (miracle flatness; read). Cites **Vakil 26.2.10** and **26.2.11**, both read verbatim:
-  26.2.10 — "Suppose $\Phi\colon(B,\mathfrak n)\to(A,\mathfrak m)$ is a (local) homomorphism of Noetherian local rings,
-  such that $A$ is Cohen–Macaulay, and $B$ is regular, and $A\otimes_B(B/\mathfrak n)$ has pure dimension $\dim A-\dim B$.
-  Then $\phi$ is flat"; 26.2.11 — "Suppose $\pi\colon X\to Y$ is a morphism of pure dimensional finite type $k$-schemes,
-  where $X$ is Cohen–Macaulay, $Y$ is regular, and the fibers of $\pi$ have dimension $\dim X-\dim Y$. Then $\pi$ is
-  flat." The card's theorem has the letters of the map in the opposite order from Vakil's — it writes
-  $(A,\mathfrak m)\to(B,\mathfrak n)$ and hypothesises "$A$ regular, $B$ Cohen–Macaulay" — which is the same statement,
-  and the card's corollary and its "in particular" sentence match 26.2.11. **MET, with the convention to state: the
-  card's source is Vakil, whose letters are reversed; a reader checking 26.2.10 against the card as printed will think
-  the hypotheses are swapped unless the card says so.**
-- **`D-ETFPPF`** (read). Cites **Stacks 021M** and **021N**. 021M was fetched and read: "Definition 34.7.1. Let $T$ be
-  a scheme. An *fppf covering of $T$* is a family of morphisms $\{f_i\colon T_i\to T\}_{i\in I}$ of schemes such that each
-  $f_i$ is flat, locally of finite presentation and such that $T=\bigcup f_i(T_i)$" — exactly the card's fppf clause.
-  021N was not opened; it is the "next lemma" of 021M's page (same section 34.7), and the card's use of it (étale
-  coverings are fppf) is the standard Lemma 34.7.2. **MET for 021M; the 021N number is consistent with the site's own
-  navigation and unread.**
-- **`D-GROTHTOP`** (read). Its definition of a site ends "(Stacks Project, Chapter 7, *Sites and Sheaves*)" — a chapter,
-  not a tag, which the house convention for Stacks does not allow. I fetched the chapter: Chapter 7 is tag **00UZ**
-  ("Sites and Sheaves") and the site definition is **Definition 7.6.2, tag 00VH** (read: "a site is given by a category
-  $\mathcal C$ and a set $\mathrm{Cov}(\mathcal C)$ of families of morphisms with fixed target $\{U_i\to U\}_{i\in I}$,
-  called coverings … satisfying the following axioms"). Two points for the repair: the number exists and is 00VH; and
-  00VH presents a site by **covering families**, while the card defines a Grothendieck topology by **covering sieves**, so
-  citing 00VH needs either the sieve formulation's own tag (not located here) or a sentence that the two presentations
-  agree. **NOT MET on citation form.** The wiki sentence at `stacks-and-moduli/functors-and-topologies.md:12` copies the
-  card's phrase, so it is repaired with the card.
+### 4.3 The four cards the earlier review asked to adjudicate
+- **`D-CRVHYP`** — definition cites Har77 **Ex IV.1.7** (read: "A curve $X$ is called hyperelliptic if $g\ge2$ and there
+  exists a finite morphism $f\colon X\to\PP^1$ of degree 2"); proposition cites **Prop IV.5.3** (read) and the
+  base-point-freeness reproduces **Lemma IV.5.1** (read). **MET.**
+- **`T-MORMIRACLE`** — Vakil **26.2.10** and **26.2.11** both read; the card is the same theorem with the letters of the
+  local map written in the opposite order from Vakil's ($B\to A$ there, $A\to B$ here), which a reader needs to be told.
+  **MET, with that convention to state.**
+- **`D-ETFPPF`** — Stacks **021M** read ("any fppf covering is a family of flat, locally of finite presentation morphisms
+  with $T=\bigcup f_i(T_i)$") and **021N** read ("Any syntomic covering is an fppf covering, and a fortiori, any smooth,
+  étale, or Zariski covering is an fppf covering"). **MET** — the second number, which my second version left unread, now
+  checks.
+- **`D-GROTHTOP`** — the site definition ends "(Stacks Project, Chapter 7, *Sites and Sheaves*)", a chapter, not a tag.
+  I fetched the chapter: Chapter 7 is tag **00UZ**, and the site definition is **Definition 7.6.2, tag 00VH** (read: "a
+  site is given by a category $\mathcal C$ and a set $\mathrm{Cov}(\mathcal C)$ of families of morphisms with fixed target
+  $\{U_i\to U\}_{i\in I}$, called coverings … satisfying the following axioms"). Note the mismatch of presentation:
+  00VH defines a site by **covering families**, the card by **covering sieves**, so citing 00VH needs either the sieve
+  formulation's own tag or a sentence that the two presentations agree. **NOT MET on citation form**; the wiki sentence at
+  `stacks-and-moduli/functors-and-topologies.md:12` copies the card, so it is fixed with the card.
 
-## 5. Policy findings
+### 4.4 `PR-VGA2L` and Chevalley–Warning — open, and not closable here
+`corpus/theory/Algebraic_Geometry/PR-VGA2L.md:64` (unchanged at the current tip): "Chevalley–Warning gives a nonzero
+solution over $\FF_q$, hence a $k$-rational point on $C$." No numbered statement, no hypothesis transcribed, and no
+retained text of the theorem on the machine (`tmp/sources` has none; no bibliography key). Transcluded by
+`curves-and-surfaces/genus.md:24` and by `curves-and-surfaces/riemann-roch-for-curves.md`, so the gap shows on two pages.
+Verdict: **waiting on a numbered statement**; the complaint is the sibling commit `b27109aeb5`. I do not invent a number.
 
-### 5.1 Two undefined control words (no gate catches either)
-Screening every `\word` token in the 82 blobs against the 346 macros of `vocabularies/macros.json` plus the standard
-LaTeX/AMS command set returns exactly two tokens that are neither:
-- **`\sp`** — `schemes/properties-from-the-ring.md:18`: "$\sp(\Spec A)$ is a noetherian topological space when $A$ is
-  noetherian". Hartshorne writes `sp(X)` in Exercise II.2.13 (read) for the underlying space; the corpus macro for it is
-  `\underlyingspace{…}`. Repair: `\underlyingspace{\Spec A}`.
-- **`\tensorn`** — `stacks-and-moduli/functors-and-topologies.md:65`: "the equalizer $n\mapsto\{n\in N:\theta(n\tensor1)=
-  1\tensorn\}$". A missing space in `1\tensor n`; `\tensorn` is undefined and renders as an error. Repair: `1\tensor n`.
-Both are visible to a reader and invisible to `qualc check`.
+## 5. Sources read for this version, and the one that could not be
 
-### 5.2 Surviving positional prose (PROSE-03, and SEC-10 for the heading)
-- `schemes/what-is-a-scheme.md:80` — "For noetherian $X$ **the criterion above** has a cohomological form". "Above" is
-  document layout; the criterion is Serre's, and the sentence should name it and link the card (`T-5IOUR`).
-- `curves-and-surfaces/special-divisors-and-the-canonical-map.md:22` — "Two consequences organise everything **below**."
-  A sentence about the page; delete it or state the two consequences as one sentence each.
-- `morphisms/projective-morphisms.md:50` — the heading "**## Consequences used later**". A title that names position
-  rather than mathematics (SEC-10): name the results (coherence of higher direct images, formal functions, the Hilbert
-  polynomial).
-- `stacks-and-moduli/functors-and-topologies.md:20` — "it is used in both directions **below**". Name the two uses.
-The earlier version reported no positional prose surviving; that was wrong for these four locations, which I had
-screened but not read.
+Read at the statement for this version, in `tmp/sources/hartshorne-1977-algebraic-geometry.md` unless noted:
+II.1.2, II.2.3, Ex II.2.4, Prop II.2.6, **Ex II.2.3.2**, II.5.1(d), II.5.11, II.5.15, II.6.4, II.6.5, II.6.11,
+Remarks II.6.11.1A and II.6.11.2, Example II.6.11.3, Prop II.6.15, Cor II.6.16, Cor II.6.17, II.7.1, II.7.3, II.7.6,
+II.7.7, II.8.15, II.8.17, II.8.19, II.8.20, II.8.22A, II.4.9, Cor II.4.8, II.2.5, Ex II.2.9, Ex II.2.13, Ex II.5.7,
+Thm III.3.7, Ex III.2.1, **III.4.5**, **III.5.1**, **Ex III.5.3**, Ex III.5.7, Caution III.6.5.2, **Ex III.6.2**,
+Ex III.8.3, Prop III.9.7, Prop IV.1.3, Ex IV.1.3.3, Ex IV.1.3.5, **Ex IV.1.7**, **Ex IV.1.8**, Prop IV.2.2, Prop IV.2.3,
+Cor IV.2.4, Prop IV.2.5, Ex IV.2.5.1–2.5.5, Ex IV.3.4, Cor IV.3.2, Prop IV.3.1, Prop IV.4.12B, Thm IV.4.15B, Thm IV.4.16,
+Thm IV.4.19, Lemma IV.5.1, Prop IV.5.2, Prop IV.5.3, Thm IV.5.4, Ex IV.5.2.1, Ex IV.5.2.2, Thm I.1.8A, Prop I.1.12A,
+Thm I.3.4, Thm I.3.9A, Cor I.4.5, **Ex I.2.14**, Ex I.2.1, Ex I.2.2, Ex I.2.4, **Ex I.3.6**, Ex I.7.1, Ex I.7.2, Thm I.7.7,
+Cor I.7.8, Prop I.3.1, Prop II.3.1, Prop I.6.8, Thm V.1.10, Prop V.3.4, Thm V.4.9, Cor V.5.4, Lemma V.5.1, Thm V.5.7,
+Remark V.5.7.2.
 
-### 5.3 Definition-shaped prose with no "Recall"
-- `schemes/ringed-spaces.md:16` — "A morphism $(f,f^\sharp)$ of ringed spaces is a morphism of locally ringed spaces
-  when … is a local homomorphism". The defining occurrence is `D-AN662`; the house form for a reminder is "Recall that
-  …" with a link (DEF-1, DEF-17, DEF-29).
-- `schemes/subschemes-and-points.md:12` — "A subscheme of $X$ is a locally closed subscheme, a closed subscheme of an
-  open subscheme …". Same form; `D-SCHSUB` owns it.
+**Vakil**, `tmp/sources/vakil-rising-sea-2025-10-21.md`: **Ex 8.3.I** (finite morphisms to $\Spec A$ are projective),
+**Def 7.3.10** (functor of points), **Lemma 5.3.2** (affine communication), **Ex 15.3.B** (extension over regular
+codimension-one sets), **Ex 16.2.G** (finite pullback of an ample bundle), **Thm 12.4.3**, **Thm 26.2.10**,
+**Thm 26.2.11**.
 
-### 5.4 Carried from the first version, still present at the baseline
-- **CITE-1 unkeyed inline reference** — `toric/affine-computations.md:14` `[Cox--Little--Schenck, *Toric Varieties*,
-  Proposition 1.1.9]`. The number is right (CLS Prop 1.1.9 read); the form is the one #175 rejected. Needs a Zotero key.
-- **CITE-8** — `varieties/rational-maps.md:48` cites Theorem II.8.19 (read: birational invariance of $p_g$) and
-  Exercise II.8.8 (read: plurigenera and Hodge numbers) for the codimension-two extension of differential forms. The
-  number for that step is **II.6.3A**, read, used inside 8.19's proof on an affine trivialising chart.
-- **CITE-8** — `curves-and-surfaces/curves-in-projective-space.md:19`: "Every irreducible curve of degree $d$ spanning
-  $\PP^d$ is rational normal" with no argument, link or number (true: Castelnuovo's bound with $r=d$ gives $g\le0$).
-- **CITE-8** — `varieties/projective-varieties.md:18`: the empty-set criterion is Exercise **I.2.2** (read); Exercise
-  I.2.4 (read) is the bijection clause.
-- **PROVENANCE-01** — `syllabus.md:10` claims every section names its document; `:149, :163, :183, :197` name none
-  (each opens "The numbered items group the topics by subject." at `:151, :165, :185, :199`). `:167` gives eight
-  section locators of Reid, *Chapters on Algebraic Surfaces*, unkeyed.
-- **PROSE-11 / RESOURCE-11** — `resources.md:58` ("the course page notes that there is no grader"), `:87` (a term's
-  assignment sequence), `:148` ("lectures [1] through [18]"), `:194` ("homework and solution sheets `hwk1`–`hwk7`").
-  Adjudicated as **not** defects: the nine vendored solution PDFs at `:94-110`, each with a ledger disposition
-  ("inventoried") in `sources/attachment-extraction-ledger.jsonl`; and `:192`, checked against the live tag page
-  (Section 111.63, tag 0G12, exercises 111.63.1–111.63.7).
-- **SEC-2** — `sheaves/the-sheaf-condition.md:19` carries three counterexamples in one unfenced sentence above the card
-  that states them; `sheaves/examples-of-sheaves.md:33` states a remark about four examples in prose (`FE-SHFFUNCS`).
-- **PR-18 / PROSE-05** — `schemes/what-is-a-scheme.md:53`: "the standard non-examples are the two one expects".
+**Stacks**, fetched live: **021M**, **021N**, **00VH**, **0G12**.
 
-## 6. Carried mathematical defects, re-verified at the baseline
+**CLS**, `tmp/sources/cox-little-schenck-2011-toric-varieties.md`: **Def 2.2.17**, **Prop 2.2.18**, **Lemma 6.1.13**,
+**Thm 6.1.14**, **Prop 1.1.9**.
 
-Both were reported in the first version and are present at `078db711f834` at the same lines.
-- **`cohomology/derived-functors-and-vanishing.md:46`** — "so affine vanishing fails for a **quasicoherent** sheaf that
-  is not coherent". The example is Har77 **Exercise III.2.1(a)** (read): $X=\AA^1_k$ over an infinite field,
-  $U=X-\{P,Q\}$, "show that $H^1(X,\ZZ_U)\ne0$". The sheaf is the extension by zero of the constant sheaf, which is not
-  quasicoherent; the block's own title is "Quasicoherence cannot be dropped", and
-  `sheaves/pushforward-and-pullback.md:49` says of the same construction "it is not quasicoherent". Repair: "so vanishing
-  for quasicoherent sheaves does not extend to arbitrary sheaves of abelian groups".
-- **`curves-and-surfaces/special-divisors-and-the-canonical-map.md:49`** — "one needs $\ell(K-p-q)=g-3$ … and
-  Riemann--Roch converts this into $\ell(p+q)=1$". Hartshorne's criterion (**Prop IV.3.1(b)**, read) is
-  $\dim|K-P-Q|=\dim|K|-2=g-3$, i.e. $\ell(K-p-q)=g-2$; with $g-3$ Riemann–Roch would give $\ell(p+q)=0$. The page's own
-  conclusion fixes the intended value. `divisors/line-bundles-and-linear-systems.md:30` states the same criterion
-  correctly in $\ell$-form, so this is a one-page slip.
+**Cards read**: `D-SHFSIX` (six operations, $j_!$, $Rf_!\dashv f^!$, base change), `D-SCHCMGOR` (CM, Gorenstein, lci,
+dualizing sheaf), `D-VARBIRAT` (rational/birational maps, function fields, the codimension-two proposition and its proof),
+`T-CRVMINMOD`, `T-BIRINV`, `FE-TORCD`, `T-TORSURF`, `D-FULSAT`, `PR-TORMOR`, `T-FULBETTI`, `D-TORMOMENT`, `T-TORCOHOM`,
+`D-FULSTAR`, `PR-O8V3I`, `D-TORREFL`, `PR-FULCRIT`, `PR-FULKSQ`, plus the four of §4.3 and the two of §4.1–4.2.
 
-## 7. What the earlier version got wrong, recorded so the next reader does not repeat it
+**Not read, and therefore supporting nothing here:** Atiyah–Macdonald, which is not on the machine — so the numbers
+5.10, 5.11 and 5.16 quoted by `morphisms/finite-and-flat.md:20-24` and by `PR-RJ3P7` are **unverified citations**, and
+the only mathematical claim in that material that this record decides is the height statement, decided by the
+$\ZZ[x]\to\ZZ[x,y]$ counterexample rather than by the book.
 
-1. It printed 3767 lines beside line numbers pinned to a later blob; the pinned tree is **3908**. (§1)
-2. Rows 1, 2, 8, 9, 10, 11, 12 and 14 were decided by an instance or not at all. Rows 2 and 14 decided a special case
-   (a surface contraction; $m=n=1$). (§2)
-3. It reported "no positional prose surviving" and "one undefined control word"; there are four positional sentences
-   and two undefined macros. (§5.1, §5.2)
-4. It omitted five mathematical defects that are at the baseline: §3.1–§3.4, and §3.5 on the current tree.
-5. It left the four cards' status implicit instead of reading them. (§4.3)
-6. It did not record the `PR-VGA2L`/Chevalley–Warning gap at all. (§4.2)
+## 6. Policy findings
 
-## 8. The 82 enumerated files (the coverage claim, made checkable)
+- **Two undefined control words**, both live at the baseline and one still live: **`\sp`**
+  (`schemes/properties-from-the-ring.md:18`, still live: the corpus macro is `\underlyingspace{…}`; Hartshorne writes
+  `sp(X)` in Ex II.2.13, which is presumably where it came from); **`\tensorn`**
+  (`stacks-and-moduli/functors-and-topologies.md:65` at the baseline, repaired by #188 at `c910f0e80f` — a missing space
+  in `1\tensor n`). Neither is a TeX command and neither is caught by `qualc check`.
+- **Surviving positional prose** (PROSE-03; the last is SEC-10): `schemes/what-is-a-scheme.md:80` "the criterion above";
+  `curves-and-surfaces/special-divisors-and-the-canonical-map.md:22` "Two consequences organise everything below";
+  `morphisms/projective-morphisms.md:50` heading "Consequences used later";
+  `stacks-and-moduli/functors-and-topologies.md:20` "in both directions below".
+- **Definition-shaped prose with no "Recall"** (DEF-1, DEF-17, DEF-29): `schemes/ringed-spaces.md:16`; and at the
+  baseline `schemes/subschemes-and-points.md:12`, repaired when that page was rewritten.
+- **CITE-1 unkeyed inline reference:** `toric/affine-computations.md:14`, `[Cox--Little--Schenck, *Toric Varieties*,
+  Proposition 1.1.9]` — the number is right (read), the form needs a Zotero key.
+- **CITE-8, citations that do not state the claim:**
+  `varieties/rational-maps.md:48` (II.8.19 and Ex II.8.8 are birational invariance of $p_g$ and of plurigenera/Hodge
+  numbers; the codimension-two extension is **II.6.3A**, which is how 8.19's own proof gets it — and the card `T-BIRINV`
+  uses those two numbers correctly, which is the contrast that settles it);
+  `divisors/weil-and-cartier.md:34` (**Ex IV.1.8** is $p_a$ of a singular curve, not the Picard sequence) — new here;
+  `varieties/projective-varieties.md:18` (the empty-set criterion is **Ex I.2.2**; I.2.4 is the bijection);
+  `curves-and-surfaces/curves-in-projective-space.md:19` at the baseline (an unsupported assertion, since removed by
+  #188's rewrite).
+- **PROVENANCE-01:** `syllabus.md:10` claims every section names its document, and `:149, :163, :183, :197` name none
+  (each opens "The numbered items group the topics by subject." at `:151, :165, :185, :199`); `:167`'s eight Reid
+  locators are unkeyed.
+- **PROSE-11 / RESOURCE-11:** `resources.md:58, :87, :148, :194`. Not defects: the nine vendored solution PDFs at
+  `:94-110` each carry a ledger disposition; `:192`'s Stacks entry was checked against tag 0G12 (Section 111.63,
+  exercises 111.63.1–111.63.7).
+- **SEC-2:** `sheaves/the-sheaf-condition.md:19` (three counterexamples in one unfenced sentence above the card that
+  states them); `sheaves/examples-of-sheaves.md:33`. **PR-18/PROSE-05:** `schemes/what-is-a-scheme.md:53` ("the two one
+  expects").
 
-The list is `git ls-tree -r --name-only 078db711f834 -- wiki/algebraic-geometry` filtered to `.md`; the per-page
-verdict is in §8b. Total 3908 lines.
+## 7. Carried mathematical defects, re-verified at the baseline
+
+- `cohomology/derived-functors-and-vanishing.md:46` — "affine vanishing fails for a **quasicoherent** sheaf that is not
+  coherent". Har77 **Ex III.2.1** (read) is about $j_!\ZZ_U$, which is not quasicoherent; the block's own title is
+  "Quasicoherence cannot be dropped". **Repaired by #188 at `34d031aac8`**, with the same reading.
+- `curves-and-surfaces/special-divisors-and-the-canonical-map.md:49` — "$\ell(K-p-q)=g-3$" should be $g-2$ (Hartshorne's
+  criterion is $\dim|K-P-Q|=g-3$, **Prop IV.3.1(b)** read, and the page's own $\ell(p+q)=1$ forces $g-2$).
+  `divisors/line-bundles-and-linear-systems.md:30` states it correctly. **Still open** at the current tip.
+
+## 8. Per-page ledger (baseline `078db711f834`)
+
+After each path, what was checked on it. A page not named as defective is one on which this reading found nothing — not a
+page certified clean. The 82 paths themselves are enumerated in §10.
+
+- `cohomology/`: `computing-cohomology.md` [III.4.5, III.5.1 read]; `derived-functors-and-vanishing.md` [§7; Grothendieck
+  bound sharp]; `families.md` [flatness example by hand]; `homological-algebra.md` [§2.1, Caution III.6.5.2 and Ex
+  III.6.2 read]; `index.md`; `projective-schemes.md` [`T-COHBC` not opened, §9]; `vanishing-and-duality.md` [III.3.7,
+  `T-5IOUR`'s qcqs variant not opened].
+- `curves-and-surfaces/`: `blowups-and-the-classification-of-surfaces.md` [Thm V.4.9 read]; `crepant-resolutions.md`
+  [§2.2]; `curves-in-projective-space.md` [§3.5, Ex IV.3.4 read]; `elliptic-curves-over-c.md` [Thm IV.4.12B, 4.15B,
+  4.16, 4.19 read]; `elliptic-curves.md` [twist by hand]; `embeddings-and-jacobians.md` [cards not re-read];
+  `genus.md` [`PR-VGA2L` transcluded, §4.4]; `index.md`; `intersection-theory-on-surfaces.md`; `moduli-of-curves.md`;
+  `riemann-hurwitz.md` [§2.3]; `riemann-roch-for-curves.md` [`PR-VGA2L` transcluded]; 
+  `special-divisors-and-the-canonical-map.md` [§7].
+- `divisors/`: `class-group-and-picard-group.md` [§2.4, all six numbers read]; `index.md`;
+  `line-bundles-and-linear-systems.md` [IV.3.1 read]; `positivity.md` [II.7.6 read]; `weil-and-cartier.md` [§2.4, Ex
+  IV.1.8 read and found not to state the sequence].
+- `morphisms/`: `classes-of-morphism.md` [Vakil Ex 8.3.I read]; `fibres-and-images.md`; `finite-and-flat.md` [AM not on
+  the machine, §5]; `index.md`; `inseparable-morphisms-and-luroth.md` [Prop IV.2.5 read verbatim];
+  `projective-morphisms.md` [§2.5, §6]; `separated-and-proper.md` [I.3.4 read]; `smooth-unramified-etale.md` [cards].
+- `schemes/`: `dimension.md` [§2.6]; `fibre-products-and-base-change.md` [$\FF_9$ fibre by hand]; `index.md`;
+  `normalization.md` [II.8.22A, II.6.3A, I.3.9A read]; `proj-and-gluing.md` [II.2.5, Ex II.3.12, Ex II.2.12, II.4.9,
+  Cor II.4.8 read]; `properties-from-the-ring.md` [§6, all four numbers read]; `ringed-spaces.md` [§2.7, §6, Ex II.2.3.2
+  read]; `subschemes-and-points.md`; `what-is-a-scheme.md` [Prop II.2.3, Ex II.2.4, Prop II.2.6, Thm III.3.7, Vakil
+  Lemma 5.3.2 read; §6].
+- `sheaves-of-modules/`: `differentials.md` [II.8.17 read]; `index.md`; `line-bundles.md` [§3.2, II.7.3 read];
+  `operations.md` [$\FF_p$ pullback by hand]; `projective-sheaves.md` [II.5.11, II.5.15 read]; `quasicoherence.md`;
+  `tangent-normal-and-canonical-sheaves.md` [§2.9, Prop II.8.20 read].
+- `sheaves/`: `examples-of-sheaves.md` [§6]; `index.md`; `morphisms-of-sheaves.md`; `pushforward-and-pullback.md`
+  [§2.8, §3.1]; `stalks-and-exactness.md`; `the-sheaf-condition.md` [§3.4, §6].
+- `stacks-and-moduli/`: `functors-and-topologies.md` [§4.3, §6; Stacks 021M/021N read]; `index.md`;
+  `spaces-and-stacks.md`.
+- `toric/`: `affine-computations.md` [§6, CLS Prop 1.1.9 read]; `criteria.md`; `examples.md` [§2.10, computations by
+  hand]; `index.md`; `polytopes-and-divisors.md` [§3.3, CLS Def 2.2.17/Prop 2.2.18/Thm 6.1.14 read];
+  `surfaces-and-morphisms.md` [`FE-207WC` not opened]; `the-dictionary.md`; `topology.md` [§2.11, Ful93 locators
+  unverified]; `toric-del-pezzo-surfaces.md` [§2.12, `PR-FULKSQ` read].
+- `varieties/`: `affine-or-projective.md`; `blowups.md` [Prop V.3.4 read]; `canonical-class.md` [II.8.20];
+  `dimension-and-degree.md` [I.7.7, Cor I.7.8, Ex I.7.1, Ex I.7.2, Ex III.5.3 read]; `index.md`;
+  `morphisms-of-varieties.md`; `nonsingular-curves.md` [Prop I.6.8, II.6.3A read]; `projective-varieties.md` [§2.14,
+  §6]; `rational-maps.md` [§2.13, §2.15, V.5.1 and Vakil 15.3.B read]; `regular-functions.md` [I.3.4, Ex I.3.6 read];
+  `smooth-and-singular.md`; `the-dictionary.md`.
+- root: `index.md`; `resources.md` [§6]; `syllabus.md` [§6].
+
+## 9. What is undecided, exactly
+
+1. **Atiyah–Macdonald 5.10, 5.11, 5.16** — no text on the machine. The pages that quote them
+   (`morphisms/finite-and-flat.md:20,22`, `schemes/normalization.md:28`, `PR-RJ3P7`'s two theorems) are therefore
+   **undecided at citation level**; the one mathematical claim in them that this record decides, the height equality, is
+   decided by counterexample (§4.2), not by the book.
+2. **Fulton's locators** — `toric/topology.md:29` (`§3.2`), `:55` (`§4.2`), `toric/index.md:16`, `syllabus.md:187`. No
+   text; the statements are decided from the corpus cards and CLS where CLS states the same theorem.
+3. **Mori's existence theorem** for crepant resolutions of terminal Gorenstein threefolds — no retained text. The verdict
+   on the page does not depend on it; the verdict on claim 2 of row 2 rests instead on claim 3 plus the definitions.
+4. **Cards not opened**: `T-5IOUR` (qcqs form of Serre's criterion — the noetherian/coherent form, Thm III.3.7, is read),
+   `T-COHBC` (semicontinuity), `FE-207WC`, `T-SRFZMT`, `T-SRFCAST`, `FE-SRFFERMATQUARTIC`, `D-TORQD`/`T-TORDIV`,
+   `PR-TORPOS`, `D-CRVBRILLNOETHER`, `D-8XX95`, `D-L6ERW`. Pages leaning on them are marked in §8.
+5. **`syllabus.md:37`'s Berkeley document** — not fetched.
+6. **The reviewers' own cross-reference lists** — neither report text was supplied. Rows 3, 4, 6, 7, 13, 15 now carry the
+   findings I can substantiate at their locations; where a reviewer's item is not among them it is unanswered, not denied.
+
+## 10. The 82 files at `078db711f834` (3908 lines), enumerated
 
 ```
 wiki/algebraic-geometry/cohomology/computing-cohomology.md
@@ -572,122 +582,10 @@ wiki/algebraic-geometry/varieties/smooth-and-singular.md
 wiki/algebraic-geometry/varieties/the-dictionary.md
 ```
 
-## 8b. Per-page ledger
+## 11. What this file does not do
 
-Compact form: after a path, `read` means read in full at the pinned blob; a bracketed item is what was checked, and a
-§ reference is a defect above. A page not named as defective is a page on which this reading found nothing at the
-baseline — not a page certified clean.
-
-- `cohomology/`: `computing-cohomology.md` read [duality shift and $\omega_{\PP^n}=\OO(-n-1)$ by hand];
-  `derived-functors-and-vanishing.md` read [§6, and the vanishing bound sharpness];
-  `families.md` read [flatness example by hand: $\chi$ $1\to2$, $X\subset\PP^1_{\AA^1}$ closed so $f$ projective];
-  `homological-algebra.md` read [§2 row 1; III.6.x not opened]; `index.md` read; `projective-schemes.md` read
-  [`T-COHBC` not opened, §9.3]; `vanishing-and-duality.md` read [III.3.7; `T-5IOUR`'s quasicoherent-ideal variant not
-  opened].
-- `curves-and-surfaces/`: `blowups-and-the-classification-of-surfaces.md` read [**Thm V.4.9 read**];
-  `crepant-resolutions.md` read [§2 row 2; V.5.7, Cor V.5.4 read]; `curves-in-projective-space.md` read
-  [§3.5 on the current tree, Ex IV.3.4 read, the $(a,b)$-genus by adjunction];
-  `elliptic-curves-over-c.md` read [Thm IV.4.15B, Thm IV.4.19 read; IV.4.12B, IV.4.16 not opened];
-  `elliptic-curves.md` read [the $ty^2=x^3-x$ twist by hand]; `embeddings-and-jacobians.md` read [$T_0\Jac=H^1(\OO_C)$;
-  cards not re-read]; `genus.md` read [Ex I.7.2 read; `PR-VGA2L` transcluded, §4.2]; `index.md` read;
-  `intersection-theory-on-surfaces.md` read; `moduli-of-curves.md` read; `riemann-hurwitz.md` read [§2 row 3; IV.2.2,
-  IV.2.3, Cor IV.2.4, **Prop IV.2.5**, Ex IV.2.5.1–2.5.5 read]; `riemann-roch-for-curves.md` read [`PR-VGA2L`
-  transcluded, §4.2]; `special-divisors-and-the-canonical-map.md` read [§6; IV.1.3, Ex IV.1.3.3, IV.5.1, IV.5.2,
-  IV.5.3, Thm IV.5.4, Cor IV.3.2, Ex IV.5.2.1/2.2 read].
-- `divisors/`: `class-group-and-picard-group.md` read [§2 row 4; II.6.4, II.6.5, II.6.11, Remarks II.6.11.1A and
-  II.6.11.2, Ex II.6.11.3, Prop II.6.15, Cor II.6.16, Cor II.6.17 read]; `index.md` read;
-  `line-bundles-and-linear-systems.md` read [**IV.3.1 read**]; `positivity.md` read [II.7.6 read];
-  `weil-and-cartier.md` read [Ex IV.1.8 not opened].
-- `morphisms/`: `classes-of-morphism.md` read [Vakil Ex 8.3.I not opened]; `fibres-and-images.md` read;
-  `finite-and-flat.md` read [A–M 5.10/5.11/5.16 **not** opened]; `index.md` read;
-  `inseparable-morphisms-and-luroth.md` read [Prop IV.2.5 read verbatim — its "isomorphic as abstract schemes" is
-  Hartshorne's, not the page's overstatement]; `projective-morphisms.md` read [§2 row 5, §5.2; II.4.9, II.7.3, II.7.6,
-  V.1.10 read]; `separated-and-proper.md` read [I.3.4 read]; `smooth-unramified-etale.md` read [substance on cards].
-- `schemes/`: `dimension.md` read [§2 row 6; Vakil 12.4.3 read verbatim]; `fibre-products-and-base-change.md` read
-  [$\FF_9$ fibre by hand]; `index.md` read; `normalization.md` read [II.8.22A, II.6.3A, **I.3.9A** read];
-  `proj-and-gluing.md` read [II.2.5, Ex II.3.12, Ex II.2.12, II.4.9, Cor II.4.8 read];
-  `properties-from-the-ring.md` read [§5.1; II.3.1, Ex II.2.9, Ex II.2.13, Ex II.5.7 read];
-  `ringed-spaces.md` read [§2 row 7, §5.3; Ex II.2.3.2 not opened]; `subschemes-and-points.md` read [§5.3];
-  `what-is-a-scheme.md` read [§5.2, §5.4; **Thm III.3.7 read**; II.2.3, Ex II.2.4, Prop II.2.6, Ex II.3.2 not opened].
-- `sheaves-of-modules/`: `differentials.md` read [II.8.17 read]; `index.md` read;
-  `line-bundles.md` read [§3.2; II.7.3 read]; `operations.md` read [the $\FF_p$ pullback by hand];
-  `projective-sheaves.md` read [II.5.11, II.5.15 read]; `quasicoherence.md` read;
-  `tangent-normal-and-canonical-sheaves.md` read [§2 row 9; Prop II.8.20 read].
-- `sheaves/`: `examples-of-sheaves.md` read [§5.4]; `index.md` read; `morphisms-of-sheaves.md` read;
-  `pushforward-and-pullback.md` read [§2 row 8, §3.1]; `stalks-and-exactness.md` read;
-  `the-sheaf-condition.md` read [§3.4, §5.4].
-- `stacks-and-moduli/`: `functors-and-topologies.md` read [§4.3 `D-ETFPPF`, §5.1, §5.2; Stacks 021M read];
-  `index.md` read; `spaces-and-stacks.md` read.
-- `toric/`: `affine-computations.md` read [§5.4; CLS Prop 1.1.9 read]; `criteria.md` read; `examples.md` read
-  [§2 row 10; determinant and continued-fraction computations by hand]; `index.md` read;
-  `polytopes-and-divisors.md` read [§3.3; CLS Def 2.2.17, Prop 2.2.18 read]; `surfaces-and-morphisms.md` read
-  [`FE-207WC` not opened]; `the-dictionary.md` read; `topology.md` read [§2 row 11; Ful93 locators not checkable];
-  `toric-del-pezzo-surfaces.md` read [§2 row 12; $K^2=12-d$ recomputed].
-- `varieties/`: `affine-or-projective.md` read; `blowups.md` read [**Prop V.3.4 read**]; `canonical-class.md` read
-  [II.8.20-based trichotomy by hand]; `dimension-and-degree.md` read [I.7.7, Cor I.7.8, Ex I.7.1, Ex I.7.2 read];
-  `index.md` read; `morphisms-of-varieties.md` read; `nonsingular-curves.md` read [**Prop I.6.8**, II.6.3A read];
-  `projective-varieties.md` read [§2 row 14, §5.4]; `rational-maps.md` read [§2 rows 13 and 15, §5.4; V.5.1 read];
-  `regular-functions.md` read [**Thm I.3.4** read; Ex I.3.6 not opened]; `smooth-and-singular.md` read [Euler relation];
-  `the-dictionary.md` read.
-- root: `index.md` read; `resources.md` read [§5.4; tag 0G12 fetched]; `syllabus.md` read [§5.4].
-
-## 9. Unresolved, exactly
-
-1. **Fulton's *Introduction to Toric Varieties*** — `toric/topology.md:29` (`[@Ful93, §3.2]`), `:55` (`§4.2`),
-   `toric/index.md:16` and `syllabus.md:187` (ranges). No text on the machine; the statements are decided from CLS's
-   chapters where CLS states the same theorem, and the locators are not verified.
-2. **Mori's existence theorem for crepant resolutions of terminal Gorenstein threefolds** (§2 row 2) — no retained text.
-   The verdict on the page does not depend on it; the verdict on claim 2 does, through the definitional incompatibility
-   with claim 3.
-3. **Statements carried on cards not opened here** — `T-5IOUR` (qcqs form of Serre's criterion),
-   `T-COHBC` (semicontinuity), `D-SCHCMGOR` (lci $\Rightarrow$ Gorenstein, dualising sheaves), `D-SHFSIX` (six
-   operations), `FE-207WC`, `T-SRFZMT`, `T-SRFCAST`, `T-BIRINV`, `D-8XX95`, `FE-SRFFERMATQUARTIC`,
-   `D-TORQD`/`T-TORDIV`, `PR-TORPOS`, `D-CRVBRILLNOETHER`.
-4. **Numbers cited but not opened**: Har77 II.1.2, II.2.3, Ex II.2.4, Prop II.2.6, Ex II.2.3.2, Ex I.2.14, Ex I.3.6,
-   IV.4.12B, IV.4.16, Ex IV.1.8, Prop III.9.7, Caution III.6.5.2, Ex III.6.2, III.4.5, III.5.1, Ex III.5.3;
-   Atiyah–Macdonald 5.10/5.11/5.16; Vakil Ex 8.3.I, 15.3.B, 16.2.G, Def 7.3.10, Lemma 5.3.2; Stacks 021N.
-5. **`syllabus.md:37`'s Berkeley document** (`https://math.berkeley.edu/~ritvik/…`) — not fetched; a document is named,
-   so `PROVENANCE-01` is met in form and its existence is unverified.
-6. **The reviewer's own cross-reference list for rows 3, 4, 6, 7, 13, 15** — I was not given that text. What §2 records
-   for those rows is what I could substantiate at the same locations; where I write "none found" it means my reading of
-   that page's links and neighbours found nothing, not that the reviewer's finding is answered.
-
-## 10. What this file does not do
-
-It edits no page and no card; every repair above names the owning file for #187 (a false sentence, a missing
-hypothesis, a citation) or for the orchestrator (bibliography keys for CLS and Reid, and the Chevalley–Warning
-statement). It runs no gate. It does not claim #189's first acceptance clause is met: §8 lists the 82 files read and
-§9 lists what this reading did not decide.
-
-## 11. Repair state at the current tip (`29a103fab4`), so #187 knows what is left
-
-Each row was re-checked against the tip blob for the exact string; "repaired after the baseline" names the commit and
-is not counted as anything this reading established.
-
-| Item | At `078db711f834` | At `29a103fab4` |
-|---|---|---|
-| §3.1 projection formula, `sheaves/pushforward-and-pullback.md:42` | present | **open**, same line |
-| §3.2 generating sections ≠ embedding, `sheaves-of-modules/line-bundles.md:21` | present | **open**, same line |
-| §3.3 very ampleness needs $m_\sigma$, `toric/polytopes-and-divisors.md:52` | present | **open**, same line |
-| §3.4 gluing axiom missing, `sheaves/the-sheaf-condition.md:12` | present | **open**, same line |
-| §3.5 Gauss map degree, `curves-and-surfaces/curves-in-projective-space.md` | not yet written | **open**, at `:86` |
-| §5.1 `\sp`, `schemes/properties-from-the-ring.md:18` | present | **open**, same line |
-| §5.1 `\tensorn`, `stacks-and-moduli/functors-and-topologies.md:65` | present | repaired at `c910f0e80f` |
-| §5.2 positional, `schemes/what-is-a-scheme.md:80` | present | **open** |
-| §5.2 positional, `curves-and-surfaces/special-divisors…:22` | present | **open** |
-| §5.2 positional heading, `morphisms/projective-morphisms.md:50` | present | **open** |
-| §5.2 positional, `stacks-and-moduli/functors-and-topologies.md:20` | present | **open** |
-| §5.3 `schemes/ringed-spaces.md:16` | present | **open** |
-| §5.3 `schemes/subschemes-and-points.md:12` | present | repaired (page rewritten) |
-| §5.4 `toric/affine-computations.md:14` unkeyed CLS | present | **open** (needs a key) |
-| §5.4 `varieties/rational-maps.md:48` citation | present | **open** |
-| §5.4 `varieties/rational-maps.md:21` `\OO_{X,\eta}` | present | **open** |
-| §5.4 `varieties/projective-varieties.md:18` I.2.2/I.2.4 | present | **open** |
-| §5.4 `curves-in-projective-space.md:19` unsupported assertion | present | repaired (sentence gone) |
-| §5.4 `syllabus.md` four sourceless sections, `:167` Reid | present | **open** |
-| §5.4 `resources.md:58,87,148,194` | present | **open** |
-| §5.4 `sheaves/the-sheaf-condition.md:19`, `examples-of-sheaves.md:33` SEC-2 | present | **open** |
-| §5.4 `what-is-a-scheme.md:53` "the two one expects" | present | **open** |
-| §6 `derived-functors-and-vanishing.md:46` quasicoherence | present | repaired at `34d031aac8` (the same reading: the exercise is the sharpness of the dimension bound) |
-| §6 `special-divisors-and-the-canonical-map.md:49` $g-3$ | present | **open**, same line |
-| §4.2 `PR-VGA2L.md:64` Chevalley–Warning | present | **open**, same line |
+It repairs two cards (§4.1, §4.2) and nothing else: the page-level defects of §3 and §6 name their owning file for #187
+(a false sentence, a missing hypothesis, a citation) or the orchestrator (a key for CLS and for Reid, and the
+Chevalley–Warning statement). It runs no gate beyond the two per-card checks it reports. **It does not claim #189's
+first acceptance clause is met**: §9 lists what is undecided, and §8 records where this reading found nothing rather than
+certifying it.

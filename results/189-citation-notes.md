@@ -1,10 +1,10 @@
 # #189: the numbered statements this reading opened
 
-Companion to `results/189-ag-inventory.md`, second version. Every entry is quoted from the text version on this
+Companion to `results/189-ag-inventory.md`, third version. Every entry is quoted from the text version on this
 machine or fetched from the site named, with its line in that file; nothing here is quoted from memory. Hartshorne is
 `tmp/sources/hartshorne-1977-algebraic-geometry.md`, Vakil is `tmp/sources/vakil-rising-sea-2025-10-21.md`, CLS is
 `tmp/sources/cox-little-schenck-2011-toric-varieties.md`.
-**Snapshot: `078db711f834`.** (The first version of this file said `b27109aeb5` and the inventory beside it printed a
+**Snapshot: `078db711f834` (line numbers of the statements in `tmp/sources` are those of the files on disk).** (The first version of this file said `b27109aeb5` and the inventory beside it printed a
 line count from `698a059f47`; the pinned tree is 82 files / 3908 lines at `078db711f834`.)
 
 The statements added in the second version are quoted in the sections marked **(new)**; every number the reviewer
@@ -248,3 +248,91 @@ degree 2." — the statement `D-CRVHYP`'s definition cites.
   $\{U_i\to U\}_{i\in I}$, called coverings of $\mathcal C$, satisfying the following axioms …". This is the
   covering-**family** presentation; `D-GROTHTOP` defines a Grothendieck topology by covering **sieves**, so citing 00VH
   needs a sentence relating the two presentations or the sieve formulation's own tag.
+
+
+## (third version) The numbered statements read to close the "unread" ledger
+
+Each is quoted from `tmp/sources/hartshorne-1977-algebraic-geometry.md` at the line given, or from the site named.
+
+- **II.2.3** (`:2313`) "(a) If $A$ is a ring, then $(\Spec A,\OO)$ is a locally ringed space. (b) If $\varphi\colon A\to B$ is a
+  homomorphism of rings, then $\varphi$ induces a natural morphism of locally ringed spaces … (c) If $A$ and $B$ are rings,
+  then **any morphism of locally ringed spaces from $\Spec B$ to $\Spec A$ is induced by a homomorphism of rings
+  $\varphi\colon A\to B$** as in (b)." — the anti-equivalence cited at `what-is-a-scheme.md:37`.
+- The definition of a morphism of locally ringed spaces (`:2302`) is Hartshorne's *unnumbered* "Definition": "A morphism of
+  locally ringed spaces is a morphism $(f,f^\sharp)$ of ringed spaces, such that for each point $P\in X$, the induced map
+  … $f^\sharp_P\colon\OO_{Y,f(P)}\to\OO_{X,P}$ is a local homomorphism of local rings." So row 7's "[@Har77, Section
+  II.2]" at `schemes/ringed-spaces.md:16` can carry no number: the source states it as unnumbered prose.
+- **Ex II.2.4** (`:2466`) "Let $A$ be a ring and let $(X,\OO_X)$ be a scheme. Given a morphism $f\colon X\to\Spec A$, we have
+  an associated map on sheaves $f^\sharp\colon\OO_{\Spec A}\to f_*\OO_X$. Taking global sections we obtain a homomorphism
+  $A\to\Gamma(X,\OO_X)$."
+- **Prop II.2.6** (`:2427`) "Let $k$ be an algebraically closed field. There is a natural fully faithful functor
+  $t\colon\mathfrak{Var}(k)\to\mathfrak{Sch}(k)$ … For any variety $V$, its topological space is homeomorphic to the set of
+  closed points of $\mathrm{sp}(t(V))$, and its sheaf of regular functions is obtained by restricting the structure sheaf
+  of $t(V)$."
+- **Example II.2.3.2** (`:2346`) "If $R$ is a discrete valuation ring … There is another morphism of ringed spaces
+  $\Spec K\to T$ which sends the unique point of $\Spec K$ to $t_0$, and uses the inclusion $R\to K$ to define the associated
+  map $f^\sharp$ … This morphism is not induced by any homomorphism $R\to K$ … since it is not a morphism of locally ringed
+  spaces."
+- **Ex I.2.14** (`:709`) "The Segre Embedding. Let $\psi\colon\PP^r\times\PP^s\to\PP^N$ be the map … $(a_0,\dots,a_r)\times
+  (b_0,\dots,b_s)\mapsto(\dots,a_ib_j,\dots)$ … where $N=rs+r+s$ … Show that the image of $\psi$ is a subvariety of
+  $\PP^N$ … show that $\operatorname{Im}\psi=Z(\mathfrak a)$."
+- **Ex I.3.6** (`:920`) "There are quasi-affine varieties which are not affine. For example, show that
+  $X=\AA^2-\{(0,0)\}$ is not affine. [Hint: Show that $\OO(X)\cong k[x,y]$ …]"
+- **Theorem III.4.5** (`:6306`) "Let $X$ be a noetherian separated scheme, let $\mathcal U$ be an open affine cover of $X$,
+  and let $\mathcal F$ be a quasi-coherent sheaf on $X$. Then for all $p\ge0$, the natural maps of (4.4) give isomorphisms"
+  (Čech = derived-functor cohomology).
+- **Theorem III.5.1** (`:6483`) "Let $A$ be a noetherian ring, and let $X=\PP^r_A$ with $r\ge1$. Then:" (the cohomology of
+  $\OO(d)$).
+- **Caution III.6.5.2** (`:6899`) "The results (6.4) and (6.5) do not imply that $\mathcal Ext$ can be construed as a derived
+  functor in its first variable. In fact, we cannot even define the right derived functors of $\mathcal Hom$ in the first
+  variable because the category $\mathfrak{Mod}(X)$ does not have enough projectives (Ex. 6.2)."
+- **Ex III.6.2** (`:7017`) "Let $X=\PP^1_k$, with $k$ an infinite field. (a) Show that there does not exist a projective
+  object $\mathcal P\in\mathfrak{Mod}(X)$, together with a surjective map $\mathcal P\to\OO_X\to0$."
+- **Ex III.5.3** (`:6704`) "Arithmetic Genus. Let $X$ be a projective scheme of dimension $r$ over a field $k$. We define
+  the arithmetic genus $p_a$ of $X$ by …"
+- **Ex III.5.7** (`:6788`), standing hypothesis "X (respectively, Y) proper schemes over a noetherian ring A"; (a) "If
+  $\mathcal L$ is ample on $X$, and $Y$ is any closed subscheme of $X$, then $i^*\mathcal L$ is ample on $Y$"; (d) "Let
+  $f\colon X\to Y$ be a finite surjective morphism, and let $\mathcal L$ be an invertible sheaf on $Y$. Then $\mathcal L$ is
+  ample on $Y$ if and only if $f^*\mathcal L$ is ample on $X$."
+- **Prop III.9.7** (`:7757`) "Let $f\colon X\to Y$ be a morphism of schemes, with $Y$ integral and regular of dimension 1.
+  Then $f$ is flat if and only if every associated point $x\in X$ maps to the generic point of $Y$."
+- **Ex IV.1.8** (`:9290`) "$p_a$ of a Singular Curve. Let $X$ be an integral projective scheme of dimension 1 over $k$, and
+  let $\tilde X$ be its normalization … there is an exact sequence of sheaves on $X$, $0\to\OO_X\to f_*\OO_{\tilde X}\to
+  \sum_{P\in X}\tilde\OO_P/\OO_P\to0$ … (a) Show that $p_a(X)=p_a(\tilde X)+\sum_P\delta_P$." — **not** the Picard
+  sequence that `divisors/weil-and-cartier.md:34` cites it for.
+- **Theorem IV.4.12B** (`:10205`) "The field of elliptic functions for given $\Lambda$ is generated over $\CC$ by the
+  Weierstrass $\wp$-function and its derivative $\wp'$. They satisfy the algebraic relation…"
+- **Theorem IV.4.16** (`:10272`) "Let $X$ be an elliptic curve over $\CC$. Then as an abstract group, $X$ is isomorphic to
+  $\mathbf R/\mathbf Z\times\mathbf R/\mathbf Z$."
+
+## (third version) Vakil numbers read
+
+- **Ex 8.3.I** (`:5922`) "FINITE MORPHISMS TO $\Spec A$ ARE PROJECTIVE … Show that if $R$ is a finite $A$-algebra …, then
+  $\Spec R$ is a projective $A$-scheme."
+- **Def 7.3.10** (`:5239`) "Definition: The functor of points, and scheme-valued points … If $Z$ is a scheme, then
+  $Z$-valued points of a scheme $X$, denoted $X(Z)$, are defined to be maps $Z\to X$."
+- **Lemma 5.3.2** (`:3890`) "5.3.2. Affine Communication Lemma. — Let $P$ be some property enjoyed by some affine open
+  subsets of a scheme $X$, such that for any affine open subset $\Spec A\hookrightarrow X$ …"
+- **Ex 15.3.B** (`:10678`) "Suppose $X$ is a Noetherian $k$-scheme, and $Z$ is an irreducible codimension 1 subvariety whose
+  generic point is a regular point of $X$ (so the local ring $\OO_{X,Z}$ is a discrete valuation ring). Suppose
+  $\pi\colon X\dashrightarrow Y$ is a rational map to a projective $k$-scheme. Show that the domain of definition of the
+  rational map includes a dense open subset of $Z$."
+- **Ex 16.2.G** (`:11294`) "Suppose $\pi\colon X\to Y$ is a finite morphism of proper $A$-schemes, and $\mathcal L$ is an
+  ample line bundle on $Y$. Show that $\pi^*\mathcal L$ is ample on $X$."
+
+## (third version) Stacks 021N and CLS 6.1.x
+
+- **Stacks 021N**, fetched: "Lemma 34.7.2. Any syntomic covering is an fppf covering, and a fortiori, any smooth, étale, or
+  Zariski covering is an fppf covering." (lies in Chapter 34, Section 34.7, "The fppf topology", directly after 021M).
+- **CLS Lemma 6.1.13** (`:11187`) "Let $D$ be a Cartier divisor on a toric variety whose fan $\Sigma$ has convex support of
+  full dimension. Then the following are equivalent:" (convexity/strict convexity of $\varphi_D$).
+- **CLS Theorem 6.1.14** (`:11199`), with its proof quoted in the inventory §3.3: "Assume that $\varphi_D$ is the support
+  function of a Cartier divisor $D=\sum_\rho a_\rho D_\rho$ on a complete toric variety $X_\Sigma$. Then …" and, in the
+  proof, "$m_\sigma\in P_D$ … on $U_\sigma$, $\phi_D$ is given by $(\chi^{m_1-m_\sigma},\dots,\chi^{m_s-m_\sigma})$" —
+  the shift by the Cartier datum that `toric/polytopes-and-divisors.md:52` omits.
+
+## (third version) Correction to this file's own first entry
+
+The second version's notes recorded `T-FFDESCENT` as "repaired, MET". That verdict was wrong and is withdrawn: the
+identification of $p_1$ with $N\otimes_AB$ and of $p_2$ with $B\otimes_AN$ was reversed, and commit `1287f30106` changed
+the recovered-module condition in the wrong direction. The card is repaired at `96ef469b62`; see the inventory §4.1.
