@@ -47,7 +47,7 @@ The criterion uses only a bound on $\abs f$, so it applies when $\abs f$ can be 
 
 [[D-C3JIU]]
 
-In terms of the order of [[D-IWIA5]], a zero of order $n$ has $v_{z_0}(f) = n$, a pole of order $n$ has $v_{z_0}(f) = -n$, a removable singularity has $v_{z_0}(f)\geq 0$, and an essential singularity has $v_{z_0}(f) = -\infty$.
+The [[D-IWIA5|order of $f$ at $z_0$]] reads the type off the expansion: the criterion is the proposition on that card.
 
 ## Summary
 
@@ -56,11 +56,14 @@ In terms of the order of [[D-IWIA5]], a zero of order $n$ has $v_{z_0}(f) = n$, 
 | an explicit elementary $f$ | the limit criterion |
 | a bound for $\abs f$ near $z_0$ | the boundedness criterion |
 | a Laurent series, or the order is needed | the Laurent series criterion |
-| $p/q$ with $p(z_0) = q(z_0) = 0$ and $q'(z_0)\neq 0$ | the limit criterion: removable, with value $p'(z_0)/q'(z_0)$ |
 | an essential singularity | the Laurent series criterion, or two paths with different limiting behavior |
+
+::: {.example title="A quotient with a common zero"}
+If $p(z_0) = q(z_0) = 0$ and $q'(z_0)\neq 0$, then $p'(z_0)$ is the limit of $p(z)/(z-z_0)$ and $q'(z_0)$ that of $q(z)/(z-z_0)$, so $p/q$ has the finite limit $p'(z_0)/q'(z_0)$ and $z_0$ is removable, the extension taking that value.
+:::
 
 ## Singularities at infinity
 
 [[D-BPBSQ]]
 
-The type of the singularity of $f$ at $\infty$ is the type of the singularity of $g(w)\coloneqq f(1/w)$ at $w=0$, so the limit, boundedness, and Laurent series criteria apply to $g$.
+So the limit, boundedness, and Laurent series criteria apply to $g$ at $w=0$, and the type at $\infty$ is read off there.
