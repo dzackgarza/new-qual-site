@@ -151,8 +151,6 @@ See [[complex-analysis/conformal-maps/index|Conformal maps]].
 
 ## Conformal geometry
 
-The statements of the chapter's newer topics, which carry the same weight on the exam.
-
 [[D-3QTVR]]
 
 [[T-UBWL2]]
