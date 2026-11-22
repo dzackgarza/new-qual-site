@@ -62,6 +62,13 @@ audit:
     by n in cohomology, and the homology analogue at the end is marked as the card's addition rather
     than as part of the printed exercise. Two page locators in the opening paragraph replaced by
     Corollary 4D.9; no mathematics changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.D Exercise 8. One slip repaired: the step called the map
+    $a\mapsto a\times u$ "cap product with the Thom class"; it is the cup (cross) product, which is
+    what the Thom isomorphism of Corollary 4D.9 is. The rest of the argument reads correct.
 ---
 
 ::: {.problem}
@@ -122,7 +129,7 @@ Apply steps [](#quotients){.pf-ref} and [](#disc){.pf-ref} with $X=B$, $Y=D^n$ a
 :::
 
 ::: {.pf-step #thomclass}
-The class $1\times u\in H^n(B\times D^n,B\times S^{n-1};R)$, where $u\in H^n(D^n,S^{n-1};R)\cong R$ is the fibre orientation class, is a Thom class for $E$, and cap product with it is the Thom isomorphism $H^i(B;R)\to H^{n+i}(E,E';R)$.
+The class $1\times u\in H^n(B\times D^n,B\times S^{n-1};R)$, where $u\in H^n(D^n,S^{n-1};R)\cong R$ is the fibre orientation class, is a Thom class for $E$, and cup product with it is the Thom isomorphism $H^i(B;R)\to H^{n+i}(E,E';R)$.
 
 ::: pf-proof
 The product bundle is orientable, with fibre orientation $u$; the Thom isomorphism theorem for a disk bundle with a Thom class (Corollary 4D.9) then gives that $a\mapsto a\times u$ is an isomorphism $H^i(B;R)\to H^{n+i}(E,E';R)$ for every $i$, the relative cross product being taken in the pair $(B\times D^n,B\times S^{n-1})$.
