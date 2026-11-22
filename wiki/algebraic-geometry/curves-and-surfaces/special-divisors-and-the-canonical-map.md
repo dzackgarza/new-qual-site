@@ -18,7 +18,7 @@ A divisor $D$ on a smooth projective curve $C$ of genus $g$ is special when $h^1
 ## The canonical map
 
 For a nonhyperelliptic curve $C$ of genus $g\ge3$ the canonical linear system $\linearsystem{K_C}$ embeds $C$ in $\PP^{g-1}$, and the image is the canonical model of $C$, of degree $2g-2$ [@Har77, Proposition IV.5.2].
-A hyperelliptic curve of genus $g\ge2$ has a unique $g^1_2$, which is what separates the pairs that the canonical system does not ([@Har77, Proposition IV.5.3], [[D-CRVHYP]]).
+A hyperelliptic curve of genus $g\ge2$ has a unique $g^1_2$, and its pairs are exactly the ones that the canonical system fails to separate: the canonical morphism is the degree-two map to $\PP^1$ followed by the $(g-1)$-uple embedding ([@Har77, Proposition IV.5.3], [[D-CRVHYP]]).
 
 ## Counting maps to $\PP^1$
 
