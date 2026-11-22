@@ -82,7 +82,7 @@ A function $f$ on an open set $U$ is holomorphic if any of the following holds:
 - $f$ has a holomorphic primitive on $U$;
 - $f$ is locally the sum of a convergent power series.
 
-The first is [[complex-analysis/cauchy-theory/morera-and-converses|Morera's theorem]]; the second holds because the derivative of a holomorphic function is holomorphic, which is [@Ahl73, ch. 4, §2.3, Higher Derivatives], so a primitive of $f$ is holomorphic and hence so is $f$; the third is part (iii) of [@Ahl73, ch. 2, §2.2, Theorem 2], that a power series is an analytic function on its disc of convergence.
+The first is [[complex-analysis/cauchy-theory/morera-and-converses|Morera's theorem]]; the second holds because the derivative of a holomorphic function is holomorphic, which is [@Ahl73, ch. 4, §2.3, Higher Derivatives], so a primitive of $f$ is holomorphic and hence so is $f$; the third is part (iii) of [@Ahl73, ch. 2, §2.4, Theorem 2], that a power series is an analytic function on its disc of convergence.
 :::
 
 ::: {.fact}
