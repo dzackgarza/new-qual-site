@@ -78,6 +78,17 @@ audit:
     then transitivity and composition. One refinement after a further reading: Theorem 4.5 is printed
     for connected CW complexes, and step `s2` now restricts a weak homotopy equivalence to components,
     on each of which the theorem applies, since such a map induces a bijection on $\pi_0$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    One further repair in step `s3`. It justified "any two CW approximations of one space are homotopy
+    equivalent" by step `s2` applied to the zigzag $K_i\to W_{i+1}\leftarrow K_{i+1}$, but `s2` is a
+    statement about CW complexes and $W_{i+1}$ is an arbitrary space, so the appeal does not reach the
+    case at hand. The step now gives the book's argument instead: the paragraph following Proposition
+    4.13 deforms the composite $K_i\to W_{i+1}$ into $K_{i+1}$ by the compression lemma, and the
+    comparison map is a weak homotopy equivalence between CW complexes, hence a homotopy equivalence by
+    Theorem 4.5, which is what `s2` records.
 
 ---
 
@@ -127,7 +138,7 @@ If $X\simeq_wY$ then $X$ and $Y$ have a common CW approximation.
 
 Suppose first that $X=W_1,W_2,\dots,W_m=Y$ is a zigzag with a weak homotopy equivalence $W_i\to W_{i+1}$ or $W_i\leftarrow W_{i+1}$ for each $i$. For each $i$ choose a CW approximation $K_i\to W_i$.
 
-*Claim: $K_i$ and $K_{i+1}$ are homotopy equivalent.* If $W_i\to W_{i+1}$ is a weak homotopy equivalence, then $K_i\to W_i\to W_{i+1}$ is a weak homotopy equivalence, so $K_i$ is also a CW approximation of $W_{i+1}$; and any two CW approximations of one space are homotopy equivalent, by step [](#s2){.pf-ref} applied to the zigzag $K_i\to W_{i+1}\leftarrow K_{i+1}$. The case of $W_i\leftarrow W_{i+1}$ is the same with the roles exchanged.
+*Claim: $K_i$ and $K_{i+1}$ are homotopy equivalent.* If $W_i\to W_{i+1}$ is a weak homotopy equivalence, then $K_i\to W_i\to W_{i+1}$ is a weak homotopy equivalence, so $K_i$ is also a CW approximation of $W_{i+1}$; and any two CW approximations of one space are homotopy equivalent: the paragraph following Proposition 4.13 deforms the composite $K_i\to W_{i+1}$ into $K_{i+1}$ by the compression lemma, and the comparison map so obtained is a weak homotopy equivalence between CW complexes, hence a homotopy equivalence by Theorem 4.5 as in step [](#s2){.pf-ref}. The case of $W_i\leftarrow W_{i+1}$ is the same with the roles exchanged.
 
 By transitivity of homotopy equivalence, $K_1\simeq K_m$, say through a homotopy equivalence $h:K_1\to K_m$. Now $K_1\to X$ is a weak homotopy equivalence, and $K_1\xrightarrow{h}K_m\to Y$ is a weak homotopy equivalence because $h$ is a homotopy equivalence and $K_m\to Y$ is a weak homotopy equivalence. So $K_1$ is a common CW approximation of $X$ and $Y$.
 
