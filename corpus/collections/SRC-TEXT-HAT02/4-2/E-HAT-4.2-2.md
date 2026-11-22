@@ -57,6 +57,15 @@ audit:
     $n=1$ case is conjugation in the abelian group $\ZZ$. The mathematics is unchanged from the
     previous reading; the solution is now a structured proof. No statement changed. Not checked: no
     certificate.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 2, and against the retained DeMason transcription the card
+    carries. One correction: the sentence that no retained set other than DeMason covers the exercise
+    is false — Proudfoot's homework 7, §4.2 Exercise 2, is retained as
+    `tmp/sources/uoregon-proudfoot-634-hw7.md` — and it now names that set. The transcription and the
+    numbered references were re-read and stand.
 ---
 
 ::: {.problem}
@@ -64,7 +73,7 @@ Show the action of $\pi_1(\RP^n)$ on $\pi_n(\RP^n) \approx \ZZ$ is trivial for $
 :::
 
 ::: {.solution}
-This solution is transcribed from DeMason, *M382C Full Credit HW Problems*, §4.2 Exercise 2, and each step is checked against Hatcher: the action is the deck action on $\pi_n(S^n)$ with deck group $\ZZ_2$ (Theorem 1.38, Proposition 4.1), the nontrivial deck transformation is the antipodal map, and $\pi_n(S^n)\cong\ZZ$ is the degree isomorphism of Corollary 4.25. The route and the split into the $n=1$ and $n\ge2$ cases are that solution's; the steps below add the numbered references and nothing else. No other retained set covers the exercise: Guanyu Li's set ends with §3.3 and the Stanford 215C sets cover §3.B and §3.3 exercises.
+This solution is transcribed from DeMason, *M382C Full Credit HW Problems*, §4.2 Exercise 2, and each step is checked against Hatcher: the action is the deck action on $\pi_n(S^n)$ with deck group $\ZZ_2$ (Theorem 1.38, Proposition 4.1), the nontrivial deck transformation is the antipodal map, and $\pi_n(S^n)\cong\ZZ$ is the degree isomorphism of Corollary 4.25. The route and the split into the $n=1$ and $n\ge2$ cases are that solution's; the steps below add the numbered references and nothing else. A second retained set covers it: **Nicholas Proudfoot, *Math 634: Algebraic Topology I*, homework 7, §4.2 Exercise 2** (`tmp/sources/uoregon-proudfoot-634-hw7.md`). Beyond those two, Guanyu Li's set ends with §3.3 and the Stanford 215C sets cover §3.B and §3.3 exercises.
 
 ::: pf
 
