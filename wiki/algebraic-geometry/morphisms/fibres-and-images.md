@@ -9,6 +9,8 @@ topics:
 
 # Fibres and images
 
+Two questions about a morphism are answered here: how the dimension of a fibre varies with the point of the target, and how much of the target the image fills ([[T-MORFIBDIM]], [[T-MORZMT]]).
+
 ## Dimension
 
 [[T-MORFIBDIM]]
@@ -21,7 +23,9 @@ topics:
 
 [[T-MORSTEIN]]
 
-The normalization of the nodal cubic is not flat: its fibre over the node has length $2$ and every other fibre has length $1$.
+::: {.example title="The normalisation of a node is not flat"}
+For the normalisation $f\colon\widetilde X\to X$ of a nodal cubic, the fibre over the node is two reduced points and every other fibre is a single point, so the fibre length jumps from $1$ to $2$ and the morphism is not flat ([[FE-MORNOTFLAT]]).
+:::
 
 ## Connected fibres and integral closure
 
