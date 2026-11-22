@@ -74,6 +74,18 @@ audit:
     $\sigma_n=x_n\sigma_{n-1}(x_1,\dots,x_{n-1})$ is linear with leading coefficient
     $\sigma_{n-1}(x_1,\dots,x_{n-1})$, and the same holds one variable at a time for
     $\sigma_{n-1},\dots,\sigma_1$ after quotienting by the later ones.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Third correction to this card, in step `algebra`. The triangular justification of the monomial
+    basis is false: for $n=2$ one has $\sigma_2\equiv -x_2^2$ modulo $\sigma_1$, so the elementary
+    symmetric functions are not a Gröbner basis and successive reduction by them does not produce the
+    stated exponents. The step now names the statement for what it is — the Artin basis theorem for
+    the coinvariant ring of the symmetric group, whose standard monomials are
+    $x_1^{a_1}\cdots x_n^{a_n}$ with $0\le a_i\le n-i$, $n!$ of them — cites it rather than
+    reproving it, and records the counterexample to the reduction argument it replaces. The Poincaré
+    polynomial and the rank $n!$ follow from the basis as before.
 ---
 
 ::: {.problem}
@@ -118,7 +130,7 @@ Taking the first line of a flag gives a fiber bundle $F_{n-1}(\C^{n-1})\to F_n(\
 $\ZZ[x_1,\dots,x_n]/(\sigma_1,\dots,\sigma_n)$ is free abelian with basis $x_1^{a_1}\cdots x_n^{a_n}$, $0\le a_i\le n-i$, hence with the same Poincaré polynomial and total rank $n!$.
 
 ::: pf-proof
-The $\sigma_k$ form a regular sequence: read as polynomials in $x_n$, $\sigma_n=x_n\,\sigma_{n-1}(x_1,\dots,x_{n-1})$ is linear with leading coefficient $\sigma_{n-1}(x_1,\dots,x_{n-1})$, and the same holds one variable at a time for $\sigma_{n-1},\dots,\sigma_1$ after passing to the quotient by the later ones, which is the triangular form of the elementary symmetric functions. Reducing successively by the monic relations $\sigma_1,\dots,\sigma_n$ therefore leaves a free abelian group on the monomials whose exponents satisfy $0\le a_i\le n-i$: the $i$-th reduction caps the exponent of $x_{n-i+1}$ at $i-1$. The number of such monomials in degree $2d$ gives the polynomial $\prod_{j=1}^n(1+t^2+\cdots+t^{2(j-1)})$, and its value at $t=1$ is $\prod_{j=1}^n j=n!$.
+The quotient is the coinvariant ring of the symmetric group acting on $\ZZ[x_1,\dots,x_n]$ by permuting the variables, and its standard monomial basis is the set of $x_1^{a_1}\cdots x_n^{a_n}$ with $0\le a_i\le n-i$, of which there are $n!$; that is the Artin basis theorem for coinvariant rings, and it is cited here rather than reproved. A triangular reduction by the $\sigma$'s is not available: for $n=2$ one has $\sigma_2\equiv -x_2^2$ modulo $\sigma_1$, so the elementary symmetric functions are not a Gröbner basis in any variable order, and the basis statement is genuinely a theorem about the quotient. Given it, the monomials in degree $2d$ give the polynomial $\prod_{j=1}^n(1+t^2+\cdots+t^{2(j-1)})$, and its value at $t=1$ is $\prod_{j=1}^n j=n!$.
 :::
 
 :::
