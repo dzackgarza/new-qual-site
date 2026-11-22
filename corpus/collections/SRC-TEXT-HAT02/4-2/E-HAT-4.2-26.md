@@ -40,6 +40,16 @@ audit:
     retract argument making H_*(K(C_p,1)) a direct summand of H_*(X_{C_p}), the vanishing above dim X,
     and the periodicity of H_odd(K(C_p,1);Z). Not checked: nothing outside this exercise.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 26, and against Sam's retained §4.2 Exercise 26. The prose
+    contradicted itself: it said the argument below was Sam's and then that it was the card's own. It
+    is the card's own, and the paragraph now says so, records that Sam's solution covers the exercise,
+    and keeps the comparison. The mathematical content — equal homotopy groups, and no homotopy
+    equivalence because a finite-dimensional CW complex has finitely many nonzero homology groups
+    while $K(\pi_1(X),1)$ with torsion in $\pi_1(X)$ has infinitely many — reads correct.
 ---
 
 ::: {.problem}
@@ -47,11 +57,11 @@ Generalizing the example of $\RP^2$ and $S^2 \times \RP^\infty$, show that if $X
 :::
 
 ::: {.solution}
-The published solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 26**, and the argument below is that one, checked against the book: the homotopy groups agree because the universal cover has the same $\pi_i$ for $i\ge2$ and $\pi_1(X)$ is recovered from $K(\pi_1(X),1)$; the two spaces cannot be homotopy equivalent because a connected finite-dimensional CW complex has only finitely many nonzero homology groups, while $K(\pi_1(X),1)$ for a group with an element of finite order is infinite dimensional (Proposition 2.45) and has infinitely many nonzero homology groups — its homology is the group homology of $\pi_1(X)$, whose torsion shows in infinitely many degrees.
+A retained solution covers this exercise: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 26**. The argument below is the card's own, not a transcription, and it agrees with that solution where the two overlap: the homotopy groups agree because the universal cover has the same $\pi_i$ for $i\ge2$ and $\pi_1(X)$ is recovered from $K(\pi_1(X),1)$; the two spaces cannot be homotopy equivalent because a connected finite-dimensional CW complex has only finitely many nonzero homology groups, while $K(\pi_1(X),1)$ for a group with an element of finite order is infinite dimensional (Proposition 2.45) and has infinitely many nonzero homology groups — its homology is the group homology of $\pi_1(X)$, whose torsion shows in infinitely many degrees.
 
 
 
-The argument is the card's own: the two spaces have the same homotopy groups, and a homotopy equivalence would make the homology of a finite-dimensional cover receive the periodic homology of $K(C_{p},1)$ as a direct summand.
+The two spaces have the same homotopy groups, and a homotopy equivalence would make the homology of a finite-dimensional cover receive the periodic homology of $K(C_{p},1)$ as a direct summand.
 
 Let $G=\pi_{1}(X)$, $p_{X}:\widetilde X\to X$ the universal cover, and $Y=\widetilde X\times K(G,1)$.
 
