@@ -20,7 +20,7 @@ Then for every punctured neighborhood $V=\DD_\varepsilon(z_0)\sm\theset{z_0}\sub
 
 Equivalently, for every $w_0\in\CC$ there is a sequence $z_n\to z_0$, $z_n\neq z_0$, with $f(z_n)\to w_0$.
 
-The statement is [@SS03, Theorem 3.3 (p. 86)], which is the same theorem with $\Omega$ a disc about $z_0$; the form above only replaces that disc by an arbitrary punctured neighbourhood.
+The statement is [@SS03, ch. 3, Theorem 3.3], which is the same theorem with $\Omega$ a disc about $z_0$; the form above only replaces that disc by an arbitrary punctured neighbourhood.
 :::
 
 ::: {.remark title="Variations"}
