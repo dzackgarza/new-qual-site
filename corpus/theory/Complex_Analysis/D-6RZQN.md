@@ -17,7 +17,7 @@ review: draft
 
 ::: {.definition}
 Let $\Omega\subseteq\CC$ be open and let $f\colon\Omega\to\CC$ be a function.
-A \dfn{primitive} of $f$ on $\Omega$ is a [[D-E7A5W|holomorphic]] function $F$ on $\Omega$ with $F'(z) = f(z)$ for all $z\in\Omega$ [@SS03] (statement number not read: no copy of SS03 in `tmp/sources`).
+A \dfn{primitive} of $f$ on $\Omega$ is a [[D-E7A5W|holomorphic]] function $F$ on $\Omega$ with $F'(z) = f(z)$ for all $z\in\Omega$ [@SS03, ch. 1, §3].
 :::
 
 ::: {.remark title="Integrals of functions with a primitive"}
