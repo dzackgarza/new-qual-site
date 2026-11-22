@@ -13,7 +13,7 @@ topics:
 
 [[T-DIVSERRE]]
 
-For $X$ of finite type over a noetherian ring $A$, an invertible sheaf $\mcl$ is ample exactly when $\mcl^{\otimes m}$ is very ample over $A$ for some $m>0$ ([[D-DIVAMPLE]]).
+For $X$ of finite type over a noetherian ring $A$, an invertible sheaf $\mcl$ is ample exactly when $\mcl^{\otimes m}$ is very ample over $A$ for some $m>0$ [@Har77, Theorem II.7.6]; over a field $k$ this is [[D-DIVAMPLE]].
 When $X$ is proper over $A$, this holds exactly when $H^i(X,\mcf\otimes\mcl^{\otimes n})=0$ for every coherent $\mcf$, every $i>0$, and every $n\ge n_0(\mcf)$ ([[T-DIVSERRE]]).
 
 [[PR-DIVAMPCURVE]]
