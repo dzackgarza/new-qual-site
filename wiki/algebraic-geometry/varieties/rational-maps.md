@@ -45,7 +45,7 @@ From dimension two onwards this fails: blowing up a point of a smooth projective
 [[T-BIRINV]]
 
 The plurigenera $\dim H^0(X,\omega_X^{\tensor m})$ and the irregularity $h^1(X,\OO_X)$ are birational invariants, so they may be computed on any smooth projective model ([[T-BIRINV]]).
-The indeterminacy locus of a birational map from a normal variety has codimension at least two, and a rational differential form whose domain of definition misses a closed subset of codimension two extends across it, because $\Omega_X$ is locally free on the smooth locus.
+The indeterminacy locus of a birational map from a normal variety to a projective variety has codimension at least two, and a rational differential form on a nonsingular variety whose domain of definition misses a closed subset of codimension two extends across it: on an affine open set $\Omega_X$ is free, so the form is a tuple of rational functions regular off a closed subset of codimension two, and such a function is regular because an integrally closed noetherian domain is the intersection of its localizations at height-one primes [@Har77, Proposition II.6.3A].
 Across a divisor the extension can fail, and the failure is measured by the discrepancy: a birational morphism changes $K$ only along its exceptional locus, and the maps that change it by nothing are the crepant ones ([[D-VARCREPANT]]).
 
 ## Factorising a birational map
