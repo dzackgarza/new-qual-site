@@ -841,6 +841,19 @@ audit:
     this pass: the residuation paragraph and Hartshorne, Example IV.1.3.7. Not done: nothing on
     the two ranges step part-c-open names.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Issue #165, the last record of the condition count: the 2026-11-22 event whose note reads
+    "Issue #165, the same day, closing what the event above left restricted" ends "Recomputed: ...
+    and the count 3+(N-1) at N<=7". That recomputation is withdrawn with the sentence it
+    supported: the rendered step contains no condition count and uses none, and the ranges it
+    covers rest on Hartshorne, Theorem V.4.6 with Corollary V.4.7, on the sentence after
+    Dolgachev, Proposition 6.3.5, and on Dolgachev, Proposition 8.1.9 with the fourth condition
+    supplied by the residuation argument. The dated event keeps its text as QUAL-11 requires, and
+    nothing on the card changes.
+
 ---
 
 ::: {.problem}
