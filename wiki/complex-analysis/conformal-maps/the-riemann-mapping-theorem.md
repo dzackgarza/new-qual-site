@@ -18,10 +18,7 @@ If $\Omega \subsetneq \CC$ is simply connected then $\Omega$ is biholomorphic to
 [[T-4MDS6]]
 
 ::: {.remark title="$\Omega\neq\CC$ and simple connectivity are necessary"}
-$\Omega\neq\CC$: a holomorphic map $F\colon\CC\to\DD$ is bounded and entire, hence constant by [[T-QHIHJ|Liouville's theorem]], so $\CC$ is not biholomorphic to $\DD$.
-
-$\Omega$ simply connected: a biholomorphism is a homeomorphism, and $\DD$ is simply connected.
-
+Both hypotheses are necessary: the classification of the simply connected models, with $\CC$ excluded because it is not biholomorphic to $\DD$, is [[C-BKYF7]].
 :::
 
 The proof maximizes $\abs{f'(z_0)}$ over the injective holomorphic maps $\Omega\to\DD$ carrying $z_0$ to $0$, and shows a maximizer is surjective [@SS03, ch. 8, Theorem 3.1].
