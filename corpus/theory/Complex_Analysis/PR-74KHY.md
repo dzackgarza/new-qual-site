@@ -18,9 +18,9 @@ review: draft
 Let $z_1, z_2, z_3\in\CC$ be distinct.
 The [[D-FRVBV|Möbius transformation]]
 $$
-T(z) \coloneqq { (z-z_1) (z_2-z_3) \over (z-z_3) (z_2 - z_1)}
+T(z) \coloneqq { (z-z_2) (z_1-z_3) \over (z-z_3) (z_1 - z_2)}
 $$
-satisfies $T(z_1)=0$, $T(z_2)=1$, and $T(z_3)=\infty$, and it is the unique Möbius transformation with these values.
+satisfies $T(z_1)=1$, $T(z_2)=0$, and $T(z_3)=\infty$, and it is the unique Möbius transformation with these values.
 It is denoted $(z; z_1, z_2, z_3)$.
 
 Consequently, for distinct $w_1,w_2,w_3\in\CC$, the map
