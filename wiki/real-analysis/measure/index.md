@@ -12,3 +12,5 @@ topics:
 - [[real-analysis/measure/outer-measure|Outer measure and the construction]] -- continuity of measure, Carathéodory's criterion, and Lebesgue measure on $\RR^d$.
 
 - [[real-analysis/measure/littlewoods-principles|Littlewood's three principles]] -- regularity, Lusin's theorem, and Egorov's theorem.
+
+- [[real-analysis/measure/littlewood-principles-notes|Egorov and Lusin]] -- the two theorems on their cards, with the finite-measure hypothesis and the convergence-in-measure companion.
