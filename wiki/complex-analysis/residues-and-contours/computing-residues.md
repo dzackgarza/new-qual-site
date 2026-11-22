@@ -7,8 +7,7 @@ topics:
 
 # Computing residues
 
-For $f$ holomorphic on a punctured disc about $z_0$ with Laurent series $\sum_{k\in\ZZ} a_k(z-z_0)^k$, the residue $\Res_{z=z_0} f$ is $a_{-1} = \frac{1}{2\pi i}\oint_{\abs{z-z_0}=r} f(z)\dz$ for small $r$; at a pole this is the [[D-C3JIU|residue]] of the principal part.
-At poles it is given by limit formulas, and at essential singularities it is read from the series.
+Recall that the [[D-C3JIU|residue]] of $f$ at $z_0$ is the coefficient $a_{-1}$ of the Laurent expansion at $z_0$; at a pole it is computed from the limit formulas ([[PR-L4Y5F]], [[T-ESKLY]]), and at an essential singularity it is read from the series.
 
 ## A simple pole
 
@@ -30,7 +29,7 @@ $$
 [[T-ESKLY]]
 
 ::: {.example title="A pole of order two"}
-The function $f(z) = 1/\bigl(z^2(1-z)\bigr)$ has a pole of order $2$ at $0$, and the formula with $n=2$ asks for one derivative of $z^2f(z) = 1/(1-z)$:
+The function $f(z) = 1/\bigl(z^2(1-z)\bigr)$ has a [[D-AUD6K|pole of order $2$]] at $0$, and the formula with $n=2$ asks for one derivative of $z^2f(z) = 1/(1-z)$:
 $$
 \Res_{z=0}{1\over z^2(1-z)} = \lim_{z\to0}{d\over dz}\qty{1\over 1-z} = \lim_{z\to0}{1\over(1-z)^2} = 1.
 $$
@@ -38,8 +37,6 @@ The same number is the coefficient of $z$ in the Taylor series $1/(1-z) = 1+z+z^
 :::
 
 ## By the Laurent series
-
-At an essential singularity the residue is the coefficient $a_{-1}$ of the Laurent series.
 
 ::: {.example title="Residue at an essential singularity"}
 Since $e^{1/z} = \sum_{k\geq 0} z^{-k}/k!$ for $z\neq 0$, the coefficient of $\inverseof{z}$ is $1$, so $\Res_{z=0} e^{1/z} = 1$.
