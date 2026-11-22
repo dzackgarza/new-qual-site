@@ -38,7 +38,7 @@ On $C_R$, $\abs{e^{iz}} = e^{-\Im z} \leq 1$, while $\abs{\cos z}$ and $\abs{\si
 
 ## Small arcs about a simple pole
 
-The integral over an arc of angle $\theta$ about a simple pole $z_0$, traversed counterclockwise, tends to $i\theta\Res_{z=z_0} f$ as the radius tends to $0$.
+An arc of angle $\theta$ about a simple pole collects the fraction $\theta/2\pi$ of the residue when it is traversed counterclockwise, so a half-circle collects half of it:
 
 [[T-SSNLT]]
 
