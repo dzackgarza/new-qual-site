@@ -11,7 +11,7 @@ topics:
 # Uniform convergence
 
 Uniform continuity and uniform convergence each replace a bound that may depend on a point by one that does not: on a compact metric space for continuity, and on a fixed set for convergence of functions.
-Both are what makes a limit commute with the operations of analysis — integration, differentiation, and the taking of values.
+Uniform convergence is what makes a limit commute with the operations of analysis: it keeps continuity, it keeps the values of the limit, and on a finite measure space it keeps the integral; differentiation needs a further hypothesis on the derivatives.
 
 ## Uniform continuity
 
@@ -36,13 +36,13 @@ is arbitrarily large.
 [[PR-4LISY]]
 
 The property that uniform convergence adds to pointwise convergence is the one that survives a limit: [[T-ERNLN|the uniform limit theorem]] keeps continuity, and on a finite measure space [[PR-L7LNZ|a uniform limit of integrable functions]] keeps integrability with the integral of the limit equal to the limit of the integrals (on an infinite measure space this fails: the functions equal to $1/n$ on $[0,n]$ and to $0$ elsewhere converge uniformly to $0$ while every integral is $1$).
-For series, the comparison test in the form of the Weierstrass $M$-test gives uniform convergence ([[FF-IAUQG]]).
+For series the corresponding criterion is the following.
 
 [[FF-IAUQG]]
 
-::: {.example title="Uniform convergence without term-by-term differentiation"}
-On $\RR$ the series $\sum_{n\geq1}\sin(n^2x)/n^2$ converges uniformly, since $\abs{\sin(n^2x)/n^2}\leq 1/n^2$ and $\sum_n 1/n^2<\infty$, while the series of derivatives $\sum_{n\geq1}\cos(n^2x)$ diverges at $x=0$.
-So the identity $(f') = (\sum_n f_n)'$ needs a hypothesis on the derivatives, not only on the series.
+::: {.example title="Uniform convergence with a divergent derived series"}
+On $\RR$ the series $\sum_{n\geq1}\sin(n^2x)/n^2$ converges uniformly, since $\abs{\sin(n^2x)/n^2}\leq 1/n^2$ and $\sum_{n\geq1} 1/n^2<\infty$, while the series of derivatives $\sum_{n\geq1}\cos(n^2x)$ diverges at $x=0$.
+So uniform convergence of the series does not give convergence of the series of derivatives; the identity $f' = \qty(\sum_{n\geq1} f_n)'$ for the sum $f = \sum_{n\geq1}f_n$ needs a hypothesis on the derivatives, not only on the series.
 :::
 
 ## Compactness in function spaces
