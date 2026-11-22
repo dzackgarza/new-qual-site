@@ -30,6 +30,8 @@ Now let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces and let $\mcf$ be a family of
 - The family $\mcf$ is \dfn{equicontinuous at $x_0\in X$} if for every $\varepsilon > 0$ there exists $\delta > 0$ such that $d_Y(f(x), f(x_0)) < \varepsilon$ for all $f\in\mcf$ and all $x\in X$ with $d_X(x, x_0) < \delta$.
 
 - The family $\mcf$ is \dfn{uniformly equicontinuous} if for every $\varepsilon > 0$ there exists $\delta > 0$ such that $d_Y(f(x_1), f(x_2)) < \varepsilon$ for all $f\in\mcf$ and all $x_1, x_2\in X$ with $d_X(x_1, x_2) < \delta$.
+
+The metric-space form is [@Rud76, ch. 7, Definition 7.22], which states equicontinuity on a set $E\subseteq X$ in these terms.
 :::
 
 ::: {.remark}
