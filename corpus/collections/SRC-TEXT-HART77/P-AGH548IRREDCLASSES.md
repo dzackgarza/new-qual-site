@@ -579,7 +579,7 @@ audit:
     does not treat this one; and, for absence, the sets that carry no
     Chapter V §4 exercise, Borcherds (through IV.1), Cais (through Chapter 4),
     Cutrone--Marshburn (Chapters 1 and 2), Ionita--Kumar (Chapter I), Kim
-    (§2.4), Lomont, Park (Chapter 4 and §V.5), Saglam--Chris (Chapter III),
+    (§2.4), Lomont, Okamoto (§II.9), Park (Chapter 4 and §V.5), Saglam--Chris (Chapter III),
     Sam (through IV.6), Stein (III.7), Troiani (Chapter II) and Reiser
     (IV.2.5). Read in this pass: the printed text of Exercise V.4.8 in
     tmp/sources/hartshorne-1977-algebraic-geometry.md, which asks for the two
@@ -950,7 +950,7 @@ alternative needs in characteristic $p$. Two of them contain it: Egbert's entry 
 the statement and gives no solution, and Yang Pi-Yeh's Solution 5.4.8, the entry whose gap the
 preceding paragraph records. The National Taiwan University Chapter V §4 homework treats exercises
 1, 2, 3, 4, 5, 7, 10, 11, 12, 14 and 16 and not this one, and Borcherds, Cais, Cutrone--Marshburn,
-Ionita--Kumar, Kim, Lomont, Park, Saglam--Chris, Sam, Stein, Troiani and Reiser carry no Chapter V §4
+Ionita--Kumar, Kim, Lomont, Okamoto, Park, Saglam--Chris, Sam, Stein, Troiani and Reiser carry no Chapter V §4
 exercise. The argument on this card is therefore the card's own. Its inputs, each cited by numbered
 statement, are: Harbourne's Lemma II.6(b) for a reduced irreducible general section and Theorem
 III.1(a) for base point freeness and the vanishing of $h^1$; Hartshorne's Theorem 4.9 for the $27$
