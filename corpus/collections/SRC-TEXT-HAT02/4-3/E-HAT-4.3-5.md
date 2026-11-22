@@ -103,6 +103,19 @@ audit:
     printed p. 25. The rendered sentence now cites it and says what the card adds. Found by
     screening the residue's absence claims against the solution sets inventoried in
     `wiki/topology/resources/solutions.md`; no step of the proof changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.3 Exercise 5, and against Sam's §4.3 Exercise 5, which is retained and
+    whose argument the card transcribes: build $K(\ZZ,n)$ from $S^n$ by attaching cells of dimension
+    $\ge n+2$ so that the $(n+1)$-skeleton stays $S^n$; cellular approximation puts every map of the
+    $n$-dimensional $X$, and every homotopy of such maps, into that skeleton, giving surjectivity and
+    injectivity of $[X,S^n]\to[X,K(\ZZ,n)]$; Theorem 4.57 identifies the latter with $H^n(X;\ZZ)$.
+    One correction: the construction step said the groups $\pi_i$ for $i\le m$ are unchanged by
+    attaching $(m+1)$-cells, but $\pi_m$ is exactly what those cells kill; it now says $\pi_i$ for
+    $i<m$ is unchanged and $\pi_m$ loses the classes killed. The remaining steps are unchanged and
+    correct, including the paragraph identifying unbased with based classes.
 ---
 
 ::: {.problem}
@@ -118,7 +131,7 @@ Take $j\colon S^n\to K(\ZZ,n)$ the inclusion of the $n$-skeleton in a $K(\ZZ,n)$
 There is a CW complex $K(\ZZ,n)$ with a map $j\colon S^n\to K(\ZZ,n)$, an isomorphism on $\pi_n$, such that $K(\ZZ,n)^k=S^n$ for $n\le k\le n+1$.
 
 ::: pf-proof
-Begin with $S^n$, whose only nonzero homotopy group is $\pi_n=\ZZ$. Inductively, if $\pi_{m}(-)\ne0$ for some $m\ge n+2$, choose maps $S^m\to K$ generating it and attach $(m+1)$-cells along them; each attachment kills the corresponding class, and because the attached cells have dimension $m+1>m$, the groups $\pi_i$ for $i\le m$ are unchanged (cellular approximation of maps of $S^i$ and of homotopies of them, for $i\le m<m+1$). Starting the induction at $m=n+2$ and continuing, no cells of dimension $n+1$ are ever attached, so the $(n+1)$-skeleton of the result is $S^n$ itself, and the result has $\pi_n=\ZZ$ and no other homotopy. So it is a $K(\ZZ,n)$ and $j$ is the inclusion of its $n$-skeleton.
+Begin with $S^n$, whose only nonzero homotopy group is $\pi_n=\ZZ$. Inductively, if $\pi_{m}(-)\ne0$ for some $m\ge n+2$, choose maps $S^m\to K$ generating it and attach $(m+1)$-cells along them; each attachment kills the corresponding class, and because the attached cells have dimension $m+1>m$, the groups $\pi_i$ for $i<m$ are unchanged and $\pi_m$ loses exactly the classes killed (cellular approximation of maps of $S^i$ and of homotopies of them, for $i<m<m+1$). Starting the induction at $m=n+2$ and continuing, no cells of dimension $n+1$ are ever attached, so the $(n+1)$-skeleton of the result is $S^n$ itself, and the result has $\pi_n=\ZZ$ and no other homotopy. So it is a $K(\ZZ,n)$ and $j$ is the inclusion of its $n$-skeleton.
 :::
 
 :::
