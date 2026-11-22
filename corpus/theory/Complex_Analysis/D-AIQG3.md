@@ -17,7 +17,7 @@ review: draft
 Let $\Omega\subseteq\CC$ be open and let $f_n,f\colon\Omega\to\CC$ for $n\ge1$.
 The sequence $(f_n)$ \dfn{converges locally uniformly} to $f$ on $\Omega$ if $f_n\to f$ [[D-YZC3C|uniformly]] on every [[D-EILKJ|compact]] subset $K\subseteq\Omega$.
 
-This is the convergence "uniformly on every compact subset of the region" of [@Ahl73, ch. 5, §1.1, Weierstrass's Theorem], which is the hypothesis of Theorems 1 and 2 of that section.
+This is the convergence "uniformly on every compact subset of the region" of [@Ahl73, ch. 5, §1.1, Theorem 1], which is the hypothesis of Theorems 1 and 2 of that section.
 :::
 
 ::: {.proposition}
