@@ -90,10 +90,10 @@ The first is [[complex-analysis/cauchy-theory/morera-and-converses|Morera's theo
 
 - If $f$ is holomorphic with no zeros, then $1/f$ is holomorphic; applying the maximum modulus principle or Liouville's theorem to $1/f$ gives the minimum modulus principle and constancy of entire functions bounded below by a positive constant.
 - If $f$ is holomorphic and nonvanishing on a simply connected domain $\Omega$, then $f = e^g$ for some holomorphic $g$ on $\Omega$, and $f^{1/n} \coloneqq \exp\qty{{1\over n}g}$ is a holomorphic $n$th root.
-- If $f$ is holomorphic on a neighborhood of $\bar\DD$ and $\abs{f} = 1$ on $\bd \DD$, then $f$ is a unimodular constant times a finite Blaschke product.
+- If $f$ is holomorphic on a neighborhood of $\bar\DD$ and $\abs{f} = 1$ on $\bd \DD$, then $f$ is a unimodular constant times a finite Blaschke product ([[P-OOVED]]).
 - The substitutions $z\mapsto 1/z$, $f\mapsto 1/f$, and $w = e^z$ transfer statements between $0$ and $\infty$, between zeros and poles, and between strips and annuli.
 
-The first item is [@Ahl73, ch. 4, §3.2, Zeros and Poles], which notes that $g=1/f$ is defined and analytic where $f\neq0$; the minimum principle is the maximum principle applied to that $1/f$, and the constancy follows as for Liouville. The second is [@Ahl73, ch. 4, §4.3, Exact Differentials in Simply Connected Regions], which constructs a single-valued logarithm of a nonvanishing function on a simply connected region; the $n$th root is $e^{g/n}$ as in [[D-T6INB]]. The third is [@Ahl73, ch. 6, §1.2, Boundary Behavior] for the unimodular-on-the-circle case, which is the finite Blaschke product [[T-W26VL]] describes.
+The first item is [@Ahl73, ch. 4, §3.2, Zeros and Poles], which notes that $g=1/f$ is defined and analytic where $f\neq0$; the minimum principle is the maximum principle applied to that $1/f$, and the constancy follows as for Liouville. The second is [@Ahl73, ch. 4, §4.3, Exact Differentials in Simply Connected Regions], which constructs a single-valued logarithm of a nonvanishing function on a simply connected region; the $n$th root is $e^{g/n}$ as in [[D-T6INB]]. The third is [[P-OOVED]], the factorisation of a function of modulus one on the circle into a unimodular constant and a finite product of [[D-MFPYG|Blaschke factors]].
 :::
 
 ## Constancy
