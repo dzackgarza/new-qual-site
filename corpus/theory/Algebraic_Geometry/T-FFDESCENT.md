@@ -79,9 +79,10 @@ the identification of its two pullbacks to $C$ (Stacks Project, Section 35.3, ta
 ::: {.theorem title="Faithfully flat descent"}
 If $A \to B$ is faithfully flat, then $M \mapsto (M \otimes_A B, \operatorname{can})$ is an equivalence from $A$-modules to $B$-modules with descent data, and a quasi-inverse sends $(N,\theta)$ to the $A$-module
 $$
-\theset{n\in N:\theta(n\otimes1)=1\otimes n}\subseteq N ,
+\theset{n\in N:\theta(n\otimes1)=1\otimes n}
+=\ker(n\mapsto 1\otimes n-\theta(n\otimes1))\subseteq N ,
 $$
-both sides lying in $B\otimes_AN$ (Stacks Project, Proposition 35.3.9, tag 023N, and Lemma 35.3.7, tag 039W).
+where $n\otimes1\in N\otimes_AB$ with the $1$ the second factor, in $B$, and where $\theta(n\otimes1)$ and $1\otimes n$ both lie in $B\otimes_AN$ with the $1$ the first factor, in $B$ (Stacks Project, Proposition 35.3.9, tag 023N, Lemma 35.3.7, tag 039W, and Remarks 59.16.8, tag 03OE).
 :::
 
 ::: {.remark}
