@@ -444,9 +444,10 @@ Write $X$ for the cubic surface over an algebraically closed field $k$, with $-K
 class and $H^2=3$, and let $D$ be a divisor of degree $d=D\cdot H$. The expression $D\sim a\ell-\sum_ib_ie_i$
 below is taken in a geometric marking of $X$: a set of six mutually skew lines, whose existence and
 whose blowdown to $\PP^2$ hold over an algebraically closed field of any characteristic, so that $X$ is
-the blowup of $\PP^2$ at six points with $\Pic X$ free on $\ell,e_1,\ldots,e_6$ (D. I. Dolgachev and
-A. Duncan, *Automorphisms of cubic surfaces in positive characteristic* (2017), §2, and Castelnuovo's
-criterion, Theorem V.5.7; step geometric-marking of [[P-AGH548IRREDCLASSES]] gives the argument).
+the blowup of $\PP^2$ at six points with $\Pic X$ free on $\ell,e_1,\ldots,e_6$ (R. Vakil, *The Rising Sea* (21 October 2025),
+Theorem 27.0.2, over an algebraically closed field with no hypothesis on the characteristic; step
+geometric-marking of [[P-AGH548IRREDCLASSES]] gives the argument, with the general position of the six
+points).
 The class $H$ of a hyperplane section is then $3\ell-\sum_ie_i$.
 
 ::: pf
