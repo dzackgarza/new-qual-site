@@ -11687,18 +11687,6 @@ The same page's ST.1 opens "Use the SF package to compute the two scalar product
 
 **Repair.** Acquire a keyed text of Godement, *Théorie des faisceaux* (or Bredon or Warner), and cite the numbered statements on `T-COHLERAY` and on the `D-SHFFINE` proposition.
 
-## 2026-11-22 (#187): `PR-VGA2L`'s finite-field case rests on Chevalley--Warning, which no retained text states
-
-**Object and need.** `corpus/theory/Algebraic_Geometry/PR-VGA2L.md`, the third clause of the proposition and the last paragraph of its proof: a smooth projective geometrically integral genus-$0$ curve over a finite field has a rational point, hence is $\PP^1$, because the anticanonical conic is one quadratic form in three variables and Chevalley--Warning supplies a nontrivial zero over $\FF_q$.
-
-**Observed evidence.** The two cases are cited separately now: the algebraically closed case is Hartshorne Example IV.1.3.5, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`. For the finite-field case there is no numbered statement: Hartshorne has no Chevalley--Warning, the retained Vakil text has none, no Stacks tag saved in `tmp/sources/stacks-tags/` states it, and `vocabularies/references.yaml` has no key for a book that would.
-
-**Impact and owner.** The claim is true and is what makes the genus-$0$ classification complete over finite fields; the card keeps it and the proof keeps the Chevalley--Warning step, which is an argument, not a citation. What is missing is the citation, and closing it needs a retained text (Serre, *A Course in Arithmetic*, or Chevalley's original paper) with a statement number.
-
-**Uncertainty.** Searched: the retained Hartshorne and Vakil extractions, the 124 saved Stacks tags, and the bibliography keys; found: no numbered statement of Chevalley--Warning; conclusion: the card's finite-field step cannot be cited here; confidence: high for the retained set; gaps: a source outside it was not searched for.
-
-**Repair.** Acquire a keyed text stating Chevalley--Warning with a number, then cite it at `PR-VGA2L`'s proof.
-
 ## 2026-11-22 (#176): `D-2HXLN` cited the pseudo-hyperbolic exercise for the hyperbolic metric — the definition and the distance formula are Problem 3, not Exercise 13
 
 **Object and need.** `corpus/theory/Complex_Analysis/D-2HXLN`, the definition card for the hyperbolic metric on the disc, and `wiki/complex-analysis/conformal-maps/the-hyperbolic-metric`, which transcludes the card and repeated its distance formula.
