@@ -66,6 +66,18 @@ audit:
     provenance is added: no retained set holds a proof — Sam's §4.1 has no entry for the exercise and
     Proudfoot's Homework #6 covers Exercises 4, 11, 12, 14 and 15 — so the construction is the
     card's. The card remains prose and is still listed by the prose-only queue.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Two corrections to the rewritten proof, both raised by an independent reading. (1) The sentence
+    "cells of dimension $k$ do not change $\pi_i$ for $i\le k-1$" is false for an arbitrary attaching
+    map — a 2-cell attached to $S^1$ by a degree-2 map changes $\pi_1$ — and it is now restricted to
+    the cells actually used, those attached along the constant map, which add no class in degree $k$
+    either. (2) "every later cell has dimension at least $i+2$" is false: stage $i+1$ attaches
+    $(i+1)$-cells as well as $(i+2)$-cells. The step now says that the cells added after stage $i$
+    have dimension at least $i+1$ and that those of dimension $i+1$ are attached along constant maps,
+    so no class in $\pi_i$ is killed.
 ---
 
 ::: {.problem}
@@ -75,9 +87,9 @@ Show that a map $f: X \to Y$ between connected CW complexes factors as a composi
 ::: {.solution}
 The exercise is §4.1 Exercise 16. No retained solution set holds a proof of it: Sam's §4.1 has no entry for the exercise, and Proudfoot's Homework #6 covers Exercises 4, 11, 12, 14 and 15. The construction below is the card's, and is the cell-attachment argument the book uses for its $n$-connected models, run in the direction that builds the factorisation.
 
-Put $Z_0=X$ and $f_0=f\colon Z_0\to Y$. Inductively, suppose $Z_k\supset Z_{k-1}$ with an extension $f_k\colon Z_k\to Y$ of $f_{k-1}$ inducing an isomorphism on $\pi_i$ for $n+1\le i<k$. At stage $k\ge n+1$, first make $f_k$ surjective on $\pi_k$: for each element of $\pi_k(Y)$ not in the image of $\pi_k(Z_k)$, attach a $k$-cell to $Z_k$ along the constant map and extend $f_k$ over it by a based map representing that element. Cells of dimension $k$ do not change $\pi_i$ for $i\le k-1$, so nothing already established is disturbed, and the map on $\pi_k$ becomes surjective. Then make it injective: for each element of the kernel of $\pi_k(Z_k)\to\pi_k(Y)$, attach a $(k+1)$-cell along a based map representing it, and extend $f$ over the cell by a nullhomotopy of the composite, which exists because the class lies in the kernel. Cells of dimension $k+1$ do not change $\pi_i$ for $i\le k-1$, and the classes so killed generate the kernel, so the map on $\pi_k$ becomes injective. Hence $f_k$ induces an isomorphism on $\pi_k$ and still does on $\pi_i$ for $n+1\le i<k$, which advances the induction.
+Put $Z_0=X$ and $f_0=f\colon Z_0\to Y$. Inductively, suppose $Z_k\supset Z_{k-1}$ with an extension $f_k\colon Z_k\to Y$ of $f_{k-1}$ inducing an isomorphism on $\pi_i$ for $n+1\le i<k$. At stage $k\ge n+1$, first make $f_k$ surjective on $\pi_k$: for each element of $\pi_k(Y)$ not in the image of $\pi_k(Z_k)$, attach a $k$-cell to $Z_k$ along the constant map and extend $f_k$ over it by a based map representing that element. A $k$-cell attached along the constant map changes no $\pi_i$ with $i\le k-1$ and adds no class to $\pi_k$, so nothing already established is disturbed and the map on $\pi_k$ becomes surjective. Then make it injective: for each element of the kernel of $\pi_k(Z_k)\to\pi_k(Y)$, attach a $(k+1)$-cell along a based map representing it, and extend $f$ over the cell by a nullhomotopy of the composite, which exists because the class lies in the kernel. Cells of dimension $k+1$ do not change $\pi_i$ for $i\le k-1$, and the classes so killed generate the kernel, so the map on $\pi_k$ becomes injective. Hence $f_k$ induces an isomorphism on $\pi_k$ and still does on $\pi_i$ for $n+1\le i<k$, which advances the induction.
 
-Let $Z_n=\bigcup_kZ_k$ with the induced CW structure and $g\colon Z_n\to Y$ the common extension of the $f_k$. For each $k$ the pair $(Z_k,Z_{k-1})$ is built by attaching cells of dimension at least $k$, so $\pi_i(Z_k,Z_{k-1})=0$ for $i\le k-1$, and the long exact sequence of the pair gives $\pi_i(X)\cong\pi_i(Z_n)$ for $i\le n$. For $i\ge n+1$ the map $f_i\colon Z_i\to Y$ is an isomorphism on $\pi_i$ by the construction, and the inclusion $Z_i\to Z_n$ induces an isomorphism on $\pi_i$ because every later cell has dimension at least $i+2$; passing to the union uses compactness, a map $S^i\to Z_n$ having compact image and so lying in a finite subcomplex, hence in some single stage $Z_k$ (Proposition A.1), which identifies $\pi_i(Z_n)$ with the direct limit of the $\pi_i(Z_k)$. The map $g$ therefore induces an isomorphism on $\pi_i$ for $i\ge n+1$, and the original map is the composite
+Let $Z_n=\bigcup_kZ_k$ with the induced CW structure and $g\colon Z_n\to Y$ the common extension of the $f_k$. For each $k$ the pair $(Z_k,Z_{k-1})$ is built by attaching cells of dimension at least $k$, so $\pi_i(Z_k,Z_{k-1})=0$ for $i\le k-1$, and the long exact sequence of the pair gives $\pi_i(X)\cong\pi_i(Z_n)$ for $i\le n$. For $i\ge n+1$ the map $f_i\colon Z_i\to Y$ is an isomorphism on $\pi_i$ by the construction, and the inclusion $Z_i\to Z_n$ induces an isomorphism on $\pi_i$ because the cells added after stage $i$ have dimension at least $i+1$, and those of dimension $i+1$ are attached along constant maps and so kill no class in $\pi_i$; passing to the union uses compactness, a map $S^i\to Z_n$ having compact image and so lying in a finite subcomplex, hence in some single stage $Z_k$ (Proposition A.1), which identifies $\pi_i(Z_n)$ with the direct limit of the $\pi_i(Z_k)$. The map $g$ therefore induces an isomorphism on $\pi_i$ for $i\ge n+1$, and the original map is the composite
 $$
 X\longrightarrow Z_n\xrightarrow{\ g\ }Y,
 $$
