@@ -181,7 +181,7 @@ See [[complex-analysis/basics/the-riemann-sphere|The Riemann sphere]], [[complex
 
 [[T-HWBWI]]
 
-Entire functions of finite order, the products that carry their zeros, the growth bound that kills a function in a sector, and the two theorems on values attained: the fundamental theorem of algebra, Gauss--Lucas, and Picard's little theorem.
+Entire functions of finite order, the products that carry their zeros, the growth bound that kills a function in a sector, and the theorems on values attained: the fundamental theorem of algebra, Gauss--Lucas, and Picard's little theorem.
 
 ## Hypotheses and counterexamples
 
