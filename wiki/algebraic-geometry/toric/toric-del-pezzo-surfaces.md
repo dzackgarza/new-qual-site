@@ -18,7 +18,7 @@ The failure of a fourth blowup is a single intersection number.
 
 [[D-TORREFL]]
 
-Reflexivity is a lattice condition — every facet at lattice distance one from the origin — and, together with the normal fan being $\Sigma$, it is exactly the condition that $-K$ is Cartier and ample, because the facets of the polar dual are the ray generators of the fan ([[PR-FULCRIT]]).
+Reflexivity is a lattice condition — every facet at lattice distance one from the origin — and, together with the normal fan being $\Sigma$, it is exactly the condition that $-K$ is Cartier and ample, because the vertices of the polar dual are the ray generators of the fan ([[PR-FULCRIT]]).
 In dimension two there are sixteen reflexive polygons up to equivalence, hence sixteen Gorenstein Fano toric surfaces; smoothness of the surface is smoothness of the polygon, meaning every vertex meets exactly two edges and the primitive vectors along them form a lattice basis.
 
 The five smooth ones are
@@ -63,7 +63,7 @@ Smoothness, completeness and projectivity are then conditions on the polygon, an
 
 The obstruction to a fourth blowup is one number.
 Blowing up a torus-fixed point of $\Bl_3\PP^2$ creates two $(-2)$-curves $C$, and adjunction gives $-K\cdot C=2+C^2=2-2=0$, so $-K$ is nef and big but not ample, and the surface is not del Pezzo [@Har77, Theorem V.1.10].
-In the fan the fourth blowup adds a ray $\rho$ with $-K\cdot D_\rho=0$: the inequality $\inner{m}{u_\rho}\ge-1$ is then redundant in the description of $P_{-K}$, so the normal fan of $P_{-K}$ is a proper coarsening of $\Sigma$ and $\Sigma$ is not the normal fan of a reflexive lattice polytope ([[PR-FULCRIT]]).
+In the fan the fourth blowup adds a ray $\rho$ with $-K\cdot D_\rho=1$, so the inequality $\inner{m}{u_\rho}\ge-1$ cuts a genuine facet of $P_{-K}$; the two $(-2)$-curves are the divisors with $-K\cdot D=0$, and their inequalities are the redundant ones, so the normal fan of $P_{-K}$ is the coarsening of $\Sigma$ obtained by deleting their two rays, a proper coarsening, and $\Sigma$ is not the normal fan of a reflexive lattice polytope ([[PR-FULCRIT]]).
 
-Among the ten deformation classes of del Pezzo surfaces — $\PP^1\times\PP^1$ and $\Bl_k\PP^2$ for $0\le k\le8$ — exactly these five carry a torus action, and the other five, $\Bl_k\PP^2$ for $4\le k\le8$, have no anticanonical polytope that is a lattice polygon.
+Among the ten deformation classes of del Pezzo surfaces — $\PP^1\times\PP^1$ and $\Bl_k\PP^2$ for $0\le k\le8$ — exactly these five carry a torus action, and the other five, $\Bl_k\PP^2$ for $4\le k\le8$, carry no torus action and are not toric.
 In higher dimension the same separation holds: the toric Fano varieties are a finite list, while the Fano deformation families are infinite ([[D-TORREFL]]).
