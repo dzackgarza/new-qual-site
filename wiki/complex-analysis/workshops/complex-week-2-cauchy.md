@@ -63,21 +63,7 @@ with $G$ holomorphic near $z_0$ [@SS03, Theorem 1.3 of Chapter 3], the sum of th
 
 ### Blaschke factors
 
-The following is [@SS03, ch. 1, Exercise 7].
-
-(a) Let $z,w\in\CC$ with $\bar zw\neq1$. Then
-$$
-\abs{\frac{w-z}{1-\bar wz}}<1\quad\text{if }\abs{z}<1\text{ and }\abs{w}<1,
-\qquad
-\abs{\frac{w-z}{1-\bar wz}}=1\quad\text{if }\abs{z}=1\text{ or }\abs{w}=1.
-$$
-Replacing $z,w$ by $e^{-i\theta}z,e^{-i\theta}w$ reduces both claims to real $z=r$, where
-$$
-(1-rw)(1-r\bar w)-(r-w)(r-\bar w)=(1-r^2)(1-\abs{w}^2).
-$$
-
-(b) Fix $w$ in the unit disc $\DD$ and let $F(z)\coloneqq\dfrac{w-z}{1-\bar wz}$.
-Then $F$ is holomorphic and maps $\DD$ to itself; $F$ interchanges $0$ and $w$, that is, $F(0)=w$ and $F(w)=0$; $\abs{F(z)}=1$ when $\abs z=1$; and $F$ is a bijection $\DD\to\DD$, since $F\circ F=\id$.
+[[E-SS1.EX-7]]
 
 ### Cauchy's integral formula
 
