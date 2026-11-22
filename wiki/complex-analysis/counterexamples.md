@@ -11,6 +11,8 @@ Each section names a theorem or a topic; the blocks under it show a theorem fail
 
 ## Liouville's theorem
 
+[[T-QHIHJ]]
+
 ::: {.example title="Holomorphy on a proper subset"}
 The function $f(z) = z$ is holomorphic and bounded on $\DD$ and not constant.
 Liouville's theorem requires $f$ to be entire.
@@ -26,6 +28,8 @@ The [[T-PG7ZK|polynomial-growth criterion]] does not force constancy: $f(z)=z^n$
 
 ## The identity principle
 
+[[T-SVF2W]]
+
 ::: {.example title="A limit point outside the domain"}
 The function $f(z) = \sin(\pi/z)$ is holomorphic on $\CC\smz$ and vanishes at the points $1/k$, which accumulate at $0\notin\CC\smz$, while $f\not\equiv 0$.
 :::
@@ -35,6 +39,10 @@ Two distinct polynomials of degree at most $n$ can agree at $n$ points, and a fi
 :::
 
 ## The maximum and minimum modulus principles
+
+[[T-BYNL5]]
+
+[[T-YLI6Y]]
 
 ::: {.example title="Zeros in the minimum modulus principle"}
 The function $f(z) = z$ is nonconstant on $\DD$, and $\abs f$ attains its minimum at the interior point $0$, a zero of $f$.
