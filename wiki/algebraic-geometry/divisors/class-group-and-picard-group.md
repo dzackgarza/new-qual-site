@@ -14,7 +14,7 @@ $$
 \CaCl(X)\iso\Pic(X),\qquad [D]\longmapsto[\OO_X(D)]
 $$
 [@Har77, Proposition II.6.15].
-Let $X$ be noetherian, integral and separated. If $X$ is regular in codimension one, the Weil divisors modulo principal divisors form the group $\Cl(X)$; if $X$ is in addition normal, a Cartier divisor is a locally principal Weil divisor, so $\CaCl(X)\into\Cl(X)$; the inclusion is an isomorphism, hence $\Cl(X)\cong\Pic(X)$, when every local ring $\OO_{X,x}$ is a unique factorization domain [@Har77, Proposition II.6.11 and Corollary II.6.16], and in particular for a regular $X$ [@Har77, Remark II.6.11.1A].
+Let $X$ be noetherian, integral and separated. If $X$ is regular in codimension one, the Weil divisors modulo principal divisors form the group $\Cl(X)$; if $X$ is in addition normal, a Cartier divisor is a locally principal Weil divisor, so $\CaCl(X)\into\Cl(X)$ [@Har77, Remark II.6.11.2]; the inclusion is an isomorphism, hence $\Cl(X)\cong\Pic(X)$, when every local ring $\OO_{X,x}$ is a unique factorization domain [@Har77, Proposition II.6.11 and Corollary II.6.16], and in particular for a regular $X$ [@Har77, Remark II.6.11.1A].
 On a scheme that is not locally factorial the inclusion is strict, and [[D-5PQ5W]] records both groups on the affine quadric cone.
 
 ## The Picard group

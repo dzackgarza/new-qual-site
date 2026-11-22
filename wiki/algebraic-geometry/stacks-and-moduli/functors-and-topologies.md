@@ -61,8 +61,8 @@ The difference between the topologies is visible on a group scheme: for $n$ inve
 
 [[T-FFDESCENT]]
 
-For a faithfully flat ring map $A\to B$ the Amitsur complex of every $A$-module is exact, so $M\mapsto M\tensor_AB$ loses nothing, and the extra structure needed to recover $M$ is exactly a descent datum: an isomorphism $\theta\colon C\tensor_{B,p_1}N\to C\tensor_{B,p_2}N$ of $C$-modules for $C=B\tensor_AB$ satisfying the cocycle identity after pullback to $B\tensor_AB\tensor_AB$ ([[T-FFDESCENT]]).
-The modules with descent data are equivalent to the $A$-modules, with quasi-inverse the equalizer $n\mapsto\theset{n\in N:\theta(n\tensor1)=1\tensor n}$ (Stacks Project, Proposition 35.3.9, tag 023N; Remark 59.16.8, tag 03OE) ([[T-FFDESCENT]]).
+For a faithfully flat ring map $A\to B$ the Amitsur complex of every $A$-module is exact, so $M\mapsto M\tensor_AB$ loses nothing, and the extra structure needed to recover $M$ is exactly a descent datum: an isomorphism $\theta\colon N\tensor_AB\to B\tensor_AN$ of $B\tensor_AB$-modules satisfying the cocycle identity after pullback to $B\tensor_AB\tensor_AB$, the canonical datum on $M\tensor_AB$ being $(m\tensor b)\tensor b'\mapsto b\tensor(m\tensor b')$ (Stacks Project, Definition 35.3.1, tag 023G) ([[T-FFDESCENT]]).
+The modules with descent data are equivalent to the $A$-modules, a quasi-inverse sending $(N,\theta)$ to the submodule $\theset{n\in N:\theta(n\tensor1)=1\tensor n}$ of $N$ (Stacks Project, Proposition 35.3.9, tag 023N, and Lemma 35.3.7, tag 039W) ([[T-FFDESCENT]]).
 Replacing modules by quasicoherent sheaves and $\Spec B\to\Spec A$ by a faithfully flat quasicompact morphism gives fpqc descent of quasicoherent sheaves, and representable functors are fpqc sheaves, hence in particular fppf sheaves ([[T-FFDESCENT]], [[D-ETFPPF]]).
 
 ## Torsors

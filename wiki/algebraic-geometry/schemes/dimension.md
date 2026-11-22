@@ -50,6 +50,6 @@ The locus $\theset{x:\dim_x X_{f(x)}\ge1}$ is the set of closed points, which is
 
 For $f$ closed, in particular for $f$ proper, the function $y\mapsto\dim X_y$ is upper semicontinuous on $Y$ [@Vak25, Theorem 12.4.3(b)].
 Properness is a hypothesis of that statement: the open immersion $f\colon\AA^1_k\sm\theset{0}\into\AA^1_k$ has empty fibre over $0$ and a zero-dimensional fibre over every other point, so $\theset{y\in\AA^1_k:\dim X_y\ge0}=\AA^1_k\sm\theset{0}$ is not closed.
-For flat $f$ the local dimension of the fibre is $\dim_x X-\dim_{f(x)}Y$ at each point ([[T-MORFIBDIM]]), and for $X$ Cohen--Macaulay and $Y$ regular the pointwise equality $\dim\OO_{X,x}=\dim\OO_{Y,f(x)}+\dim\OO_{X_{f(x)},x}$ at every point forces $f$ to be flat ([[T-MORMIRACLE]]).
+For flat $f$ the local dimension of the fibre is $\dim_x X-\dim_{f(x)}Y$ at each point ([[T-MORFIBDIM]]), and conversely, for $X$ Cohen--Macaulay and $Y$ regular, the pointwise equality $\dim\OO_{X,x}=\dim\OO_{Y,f(x)}+\dim\OO_{X_{f(x)},x}$, with the local ring of each fibre equidimensional, forces $f$ to be flat: the purity of the fibre ring is the hypothesis of the local theorem, and the numerical equality alone is what flatness guarantees ([[T-MORMIRACLE]]).
 
 [[algebraic-geometry/varieties/dimension-and-degree|Dimension and degree]] is the projective case, where the Hilbert polynomial refines the dimension by the degree.

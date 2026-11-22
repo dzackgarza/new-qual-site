@@ -9,7 +9,7 @@ topics:
 
 # The sheaf condition
 
-A presheaf is a contravariant functor from the open subsets of $X$ to abelian groups, and a sheaf is a presheaf whose sections are determined by their restrictions to the members of any open cover ([[D-RCCFY]]).
+A presheaf is a contravariant functor from the open subsets of $X$ to abelian groups, and it is a sheaf when both axioms hold: sections over an open set are determined by their restrictions to the members of any open cover (locality), and a family of sections over a cover that agrees on the overlaps comes from a section of the whole (gluing) ([[D-RCCFY]]).
 
 [[D-RCCFY]]
 

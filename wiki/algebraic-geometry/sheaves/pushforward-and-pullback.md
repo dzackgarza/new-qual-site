@@ -39,7 +39,7 @@ For a proper morphism $f\colon X\to Y$ of noetherian schemes and a coherent $\mc
 
 [[PR-SCHPROJFORM]]
 
-The projection formula is the compatibility of the two functors with tensor: $f_*(\mcf\tensor f^*\mcg)\cong f_*\mcf\tensor\mcg$.
+The projection formula is the compatibility of the two functors with tensor: for $\mcg$ locally free of finite rank on $Y$, $f_*(\mcf\tensor f^*\mcg)\cong f_*\mcf\tensor\mcg$ [@Har77, Exercise II.5.1(d)], the finite local freeness being a hypothesis of the statement and not a convenience.
 It is what makes pullback a map of $\OO_Y$-module categories rather than merely of abelian categories, and it is used whenever a twist is moved past a pushforward.
 
 ## Extension by zero
