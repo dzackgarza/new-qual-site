@@ -13,7 +13,7 @@ The estimates for the added pieces are on [[complex-analysis/residues-and-contou
 Before closing a contour, check whether the integral needs residues at all.
 If $f$ is holomorphic on a neighborhood of the closed region bounded by $\gamma$, then $\int_\gamma f = 0$ ([[T-2OVCI|Cauchy's theorem]]).
 If $f$ has a primitive $F$ on a neighborhood of $\gamma$, then $\int_\gamma f = F(\gamma(1)) - F(\gamma(0))$, which is $0$ for a closed curve.
-If $f(z) = g(z)/(z-a)^n$ with $g$ holomorphic inside and on a positively oriented simple closed curve $\gamma$ around $a$, [[T-LA2UI|the Cauchy integral formula]] gives $\int_\gamma {g(z)\over (z-a)^n}\dz = {2\pi i\over (n-1)!}g^{(n-1)}(a)$.
+If $f(z) = g(z)/(z-a)^n$ with $g$ holomorphic inside and on a positively oriented simple closed curve $\gamma$ around $a$, the integral is not obtained from a residue but from the derivative form of [[T-LA2UI|the Cauchy integral formula]].
 For a parameterized curve $z\colon[a,b]\to\CC$ one has $\int_\gamma f\dz = \int_a^b f(z(t))z'(t)\dt$, and a circle about $z_0$ is $z = z_0+re^{i\theta}$.
 
 The three contours the cases below use are the semicircle $\gamma_R$, the semicircle $\mu_R$ indented at $0$ by a half-circle of radius $1/R$, and the keyhole $\eta_R$ about the positive real axis with inner circle of radius $1/R$.
@@ -114,7 +114,7 @@ The relation is the residue sum of [[T-HRPNO|the residue theorem]] on the contou
 
 ## A pole on the real line
 
-The integrand $\int_\RR f$ has simple poles on $\RR$.
+The integrand of $\int_\RR f$ has simple poles on $\RR$.
 The integral diverges, and for a single pole $x_0$ the principal value is
 $$
 \operatorname{PV}\int_{-\infty}^{\infty}f(x)\dx = \lim_{R\to\infty}\lim_{\varepsilon\decreasesto0}\qty{\int_{-R}^{x_0-\varepsilon}f + \int_{x_0+\varepsilon}^{R}f},
