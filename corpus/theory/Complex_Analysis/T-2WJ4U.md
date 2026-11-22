@@ -32,5 +32,5 @@ f(z)=z^me^{g(z)}\prod_{k\ge1}E_p\Big(\frac{z}{z_k}\Big),
 $$
 where the product converges uniformly on compact subsets of $\CC$.
 
-This is [@SS03, Theorem 5.1 (p. 147)], with $p = \lfloor\rho\rfloor$.
+This is [@SS03, ch. 5, Theorem 5.1], with $p = \lfloor\rho\rfloor$.
 :::
