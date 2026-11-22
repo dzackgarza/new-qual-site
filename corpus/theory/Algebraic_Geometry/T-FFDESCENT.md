@@ -44,7 +44,7 @@ $$
 :::
 
 ::: {.theorem title="Exactness of the Amitsur complex"}
-If $\varphi$ is faithfully flat, the Amitsur complex of every $A$-module $M$ is exact.
+If $\varphi$ is faithfully flat, the Amitsur complex of every $A$-module $M$ is exact (Stacks Project, Lemma 35.3.6, tag 023M).
 In particular the sequence $0 \to M \to M \otimes_A B \rightrightarrows M \otimes_A B \otimes_A B$, with the two maps $m \otimes b \mapsto m \otimes b \otimes 1$ and $m \otimes b \mapsto m \otimes 1 \otimes b$, is an equalizer.
 :::
 
@@ -72,6 +72,6 @@ A quasi-inverse sends $(N,\theta)$ to the $A$-module $\theset{n\in N:\theta(n\ot
 :::
 
 ::: {.remark}
-Replacing modules by quasicoherent sheaves and $\Spec B\to\Spec A$ by a faithfully flat quasicompact morphism $S'\to S$ gives fpqc descent of quasicoherent sheaves.
-Representable functors are fpqc sheaves, hence in particular sheaves for the [[D-ETFPPF|fppf topology]].
+Replacing modules by quasicoherent sheaves and $\Spec B\to\Spec A$ by a faithfully flat quasicompact morphism $S'\to S$ gives fpqc descent of quasicoherent sheaves: any descent datum is effective (Stacks Project, Proposition 35.5.2, tag 023T).
+Representable functors are fpqc sheaves, hence in particular sheaves for the [[D-ETFPPF|fppf topology]] (Stacks Project, Lemma 59.15.8, tag 03O3).
 :::
