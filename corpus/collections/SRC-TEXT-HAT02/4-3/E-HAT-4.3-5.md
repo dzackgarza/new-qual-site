@@ -116,6 +116,15 @@ audit:
     attaching $(m+1)$-cells, but $\pi_m$ is exactly what those cells kill; it now says $\pi_i$ for
     $i<m$ is unchanged and $\pi_m$ loses the classes killed. The remaining steps are unchanged and
     correct, including the paragraph identifying unbased with based classes.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Repair of the construction, from an independent review. It began the killing induction at
+    $m=n+2$, which omits $\pi_{n+1}$: that group need not vanish — $\pi_3(S^2)\cong\ZZ$ — and it is
+    killed by attaching $(n+2)$-cells, so the induction must start at $m=n+1$. The step now starts
+    there, records the counterexample, and keeps the conclusion: no cells of dimension $\le n+1$ are
+    ever attached, so the $(n+1)$-skeleton stays $S^n$ and the result is a $K(\ZZ,n)$.
 ---
 
 ::: {.problem}
@@ -131,7 +140,7 @@ Take $j\colon S^n\to K(\ZZ,n)$ the inclusion of the $n$-skeleton in a $K(\ZZ,n)$
 There is a CW complex $K(\ZZ,n)$ with a map $j\colon S^n\to K(\ZZ,n)$, an isomorphism on $\pi_n$, such that $K(\ZZ,n)^k=S^n$ for $n\le k\le n+1$.
 
 ::: pf-proof
-Begin with $S^n$, whose only nonzero homotopy group is $\pi_n=\ZZ$. Inductively, if $\pi_{m}(-)\ne0$ for some $m\ge n+2$, choose maps $S^m\to K$ generating it and attach $(m+1)$-cells along them; each attachment kills the corresponding class, and because the attached cells have dimension $m+1>m$, the groups $\pi_i$ for $i<m$ are unchanged and $\pi_m$ loses exactly the classes killed (cellular approximation of maps of $S^i$ and of homotopies of them, for $i<m<m+1$). Starting the induction at $m=n+2$ and continuing, no cells of dimension $n+1$ are ever attached, so the $(n+1)$-skeleton of the result is $S^n$ itself, and the result has $\pi_n=\ZZ$ and no other homotopy. So it is a $K(\ZZ,n)$ and $j$ is the inclusion of its $n$-skeleton.
+Begin with $S^n$. Inductively, for $m\ge n+1$, if $\pi_{m}(-)\ne0$, choose maps $S^m\to K$ generating it and attach $(m+1)$-cells along them; each attachment kills the corresponding class, and because the attached cells have dimension $m+1>m$, the groups $\pi_i$ for $i<m$ are unchanged and $\pi_m$ loses exactly the classes killed (cellular approximation of maps of $S^i$ and of homotopies of them, for $i<m<m+1$). The induction must start at $m=n+1$, not at $n+2$: $\pi_{n+1}(S^n)$ need not vanish — for $n=2$ it is $\pi_3(S^2)\cong\ZZ$ — and it is killed by attaching $(n+2)$-cells, which is the first step. Since every cell attached from then on has dimension at least $n+2$, no cells of dimension $n+1$ or below are ever attached, so the $(n+1)$-skeleton of the result is $S^n$ itself, and the result has $\pi_n=\ZZ$ and no other homotopy. So it is a $K(\ZZ,n)$ and $j$ is the inclusion of its $n$-skeleton.
 :::
 
 :::
