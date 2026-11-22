@@ -1,6 +1,6 @@
 ---
 title: Elliptic curves over $\CC$
-order: 12
+order: 5
 topics:
 - Elliptic Curves
 - Weierstrass Functions
