@@ -13,8 +13,8 @@ topics:
 If $f\colon U\to W$ and $g\colon V\to W$ are [[D-TM4TE|conformal]] bijections onto a standard region $W$ such as $\HH$ or $\DD$, then $\inverseof g\circ f\colon U\to V$ is a conformal bijection.
 
 The regions named below are
-$\DD\coloneqq\theset{z\st\abs z<1}$, the open unit disc;
-$\HH\coloneqq\theset{z\st\Im z>0}$, the open upper half plane;
+$\DD$ the unit disc and $\HH$ the upper half-plane, as in [[PR-OOHFS]];
+
 $Q_i$, the $i$th open quadrant, so $Q_1\coloneqq\theset{z\st\Re z>0,\ \Im z>0}$ and $Q_{ij}$ is the interior of $\overline{Q_i\union Q_j}$, so $\HH = Q_{12}$ and $Q_{14}$ is the right half plane;
 and $L\coloneqq\theset{x+iy\st 0<y<\pi}$, the horizontal strip.
 
@@ -67,9 +67,7 @@ The feature of the boundary determines the factor to remove first.
 
 - The cross ratio $(z;a,b,c)$ sends $a\mapsto1$, $b\mapsto0$ and $c\mapsto\infty$ ([[PR-74KHY]]).
 
-- $t\mapsto\tan t$ is a bijection $(-\pi/2,\pi/2)\to\RR$, which parameterizes the real line by a bounded interval.
-
-The inverse $\inverseof z=\bar z/\abs z^2$ is [@Ahl73, ch. 1, §1.4, Conjugation, Absolute Value]; the conformality of an analytic map with nonvanishing derivative, and the preservation of angles that gives the orthogonal and tangent cases, are [@Ahl73, ch. 3, §2.3, Conformal Mapping]; the statement that a linear transformation carries circles into circles, lines counting as circles through $\infty$, is Theorem 14 of [@Ahl73, ch. 3, §3.2, The Cross Ratio]; and the cross ratio with its normalisation is [@Ahl73, ch. 3, §3.2, The Cross Ratio], which is also [[FF-W4FFF]]. The last item is the real tangent of [@Ahl73, ch. 2, §3.2, The Trigonometric Functions].
+The inverse $\inverseof z=\bar z/\abs z^2$ is [@Ahl73, ch. 1, §1.4, Conjugation, Absolute Value]; the conformality of an analytic map with nonvanishing derivative, and the preservation of angles that gives the orthogonal and tangent cases, are [@Ahl73, ch. 3, §2.3, Conformal Mapping]; the statement that a linear transformation carries circles into circles, lines counting as circles through $\infty$, is Theorem 14 of [@Ahl73, ch. 3, §3.2, The Cross Ratio]; and the cross ratio with its normalisation is [@Ahl73, ch. 3, §3.2, Definition 12], which is also [[FF-W4FFF]].
 :::
 
 ## Standard maps
