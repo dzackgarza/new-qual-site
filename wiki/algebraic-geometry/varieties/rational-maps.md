@@ -11,7 +11,7 @@ topics:
 
 [[D-VARBIRAT]]
 
-A rational map is a morphism defined on a dense open subset ([[D-VARBIRAT]]), so on an irreducible variety it is determined by its values on any nonempty open set and is given by rational functions.
+Recall that a [[D-VARBIRAT|rational map]] is an equivalence class of morphisms on nonempty open subsets, so on an irreducible variety it is determined by its values on any nonempty open set.
 
 ## Rational maps and dominance
 
@@ -19,11 +19,11 @@ A rational map is a morphism defined on a dense open subset ([[D-VARBIRAT]]), so
 
 For the rule $\thevector{x:y:z}\mapsto\thevector{x:y}$ on $\PP^2$, the indeterminacy locus is the single point $\thevector{0:0:1}$.
 The indeterminacy locus is small: a rational map from a normal variety to a projective variety is undefined only in codimension at least two [@Vak25, Exercise 15.3.B]: at a point of codimension one the local ring $\OO_{X,\eta}$ is a discrete valuation ring, so a tuple of rational functions can be cleared of denominators there. In particular a rational map from a nonsingular curve to a projective variety is a morphism ([[T-CRVMINMOD]]).
-A rational map is dominant when its image is dense; a dominant rational map $X\dashrightarrow Y$ pulls functions back along the inclusion $k(Y)\into k(X)$ of function fields.
+The [[D-VARBIRAT|dominant]] rational maps $X\dashrightarrow Y$ pull functions back along the inclusion $k(Y)\into k(X)$ of function fields.
 
 ## Rational maps to projective space
 
-For an irreducible variety $X$ over $k$, a rational map $X\dashrightarrow\PP^n_k$ is the same thing as an $(n+1)$-tuple $(f_0:\cdots:f_n)$ of rational functions on $X$, not all zero, modulo multiplication by a single element of $k(X)^\times$: on a dense open $U$ on which the $f_i$ are regular and not all zero they are global sections generating $\OO_U$, so they define a morphism $U\to\PP^n_k$ [@Har77, Theorem II.7.1], and two tuples define the same morphism on a dense open subset exactly when they differ by an element of $k(X)^\times$.
+For an irreducible variety $X$ over $k$, a rational map $X\dashrightarrow\PP^n_k$ is the same thing as an $(n+1)$-tuple $(f_0:\cdots:f_n)$ of rational functions on $X$, not all zero, modulo multiplication by a single element of $k(X)^\times$: on a dense open $U$ on which the $f_i$ are regular and have no common zero they are global sections generating $\OO_U$, so they define a morphism $U\to\PP^n_k$ [@Har77, Theorem II.7.1], and two tuples define the same morphism on a dense open subset exactly when they differ by an element of $k(X)^\times$.
 The tuple may be chosen with no common factor, and then the indeterminacy locus is the common zero locus of $f_0,\ldots,f_n$ in the largest open set on which all of them are regular.
 A rational map to $\PP^n$ is a linear system on $X$ with no requirement that it be base-point-free, and the morphisms are the base-point-free linear systems ([[algebraic-geometry/divisors/line-bundles-and-linear-systems|line bundles and linear systems]]).
 
@@ -45,7 +45,7 @@ From dimension two onwards this fails: blowing up a point of a smooth projective
 [[T-BIRINV]]
 
 The plurigenera $\dim H^0(X,\omega_X^{\tensor m})$ and the irregularity $h^1(X,\OO_X)$ are birational invariants, so they may be computed on any smooth projective model ([[T-BIRINV]]).
-The indeterminacy locus of a birational map from a normal variety to a projective variety has codimension at least two, and a rational differential form on a nonsingular variety whose domain of definition misses a closed subset of codimension two extends across it: on an affine open set $\Omega_X$ is free, so the form is a tuple of rational functions regular off a closed subset of codimension two, and such a function is regular because an integrally closed noetherian domain is the intersection of its localizations at height-one primes [@Har77, Proposition II.6.3A].
+The indeterminacy locus of a birational map from a normal variety to a projective variety has codimension at least two, and a rational differential form on a nonsingular variety whose domain of definition misses a closed subset of codimension two extends across it [@Har77, Theorem II.8.19 and Exercise II.8.8].
 Across a divisor the extension can fail, and the failure is measured by the discrepancy: a birational morphism changes $K$ only along its exceptional locus, and the maps that change it by nothing are the crepant ones ([[D-VARCREPANT]]).
 
 ## Factorising a birational map
