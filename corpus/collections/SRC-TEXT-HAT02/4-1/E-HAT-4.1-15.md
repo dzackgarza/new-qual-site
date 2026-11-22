@@ -98,7 +98,7 @@ audit:
     point, so the inside and outside prescriptions disagree there. The step now uses the
     one-point compactification $\widehat A$ of the linear map, which is what the local-degree map
     is once $p_1$ and $q$ are read as $0$ and $\infty$; $A\mapsto\widehat A$ is continuous because
-    $\|A_tx\|\ge c\|x\|$ with $c=\min_t\|A_t^{-1}\|^{-1}>0$ on the compact interval, so a matrix
+    $\norm{A_tx}\ge c\norm{x}$ with $c=\min_t\norm{A_t^{-1}}^{-1}>0$ on the compact interval, so a matrix
     path to $I$ or to the reflection gives a homotopy of $\widehat A$, and $\deg h_1$ is compared
     with $\deg\widehat A$ through the local degree at the single preimage of $q$
     (Proposition 2.30). (2) The collapse step asserted $gf_1$ constant off the local linearity
@@ -188,7 +188,7 @@ $GL_n(\RR)$ is an open subset of $M_n(\RR)$, and $\det$ is continuous and nonzer
 (c) Let $A$ be an invertible $n\times n$ matrix and $\widehat A:S^n\to S^n$ its one-point compactification, $\widehat A(x)=Ax$ for $x\in\RR^n$ and $\widehat A(\infty)=\infty$. If $A_t$, $t\in[0,1]$, is a path of invertible matrices, then $t\mapsto\widehat{A_t}$ is a continuous homotopy. Consequently $\widehat A\simeq\operatorname{id}_{S^n}$ when $\det A>0$ and $\widehat A\simeq\widehat R$ when $\det A<0$, where $R=\operatorname{diag}(-1,1,\dots,1)$; and $\deg\widehat A=\operatorname{sign}\det A$.
 
 ::: pf-proof
-Continuity in $(t,x)$ at a finite $x$ is continuity of matrix multiplication, and at $x=\infty$ it is the assertion that for every compact $K\subset\RR^n$ the set of $(t,x)$ with $A_tx\in K$ is bounded in $x$. Since $t\mapsto\|A_t^{-1}\|$ is continuous and never zero on the compact interval $[0,1]$, the number $c=\min_t\|A_t^{-1}\|^{-1}$ is positive, and $\|A_tx\|\ge c\|x\|$ for all $t$ and $x$; so $\|x\|>\max_{y\in K}\|y\|/c$ forces $A_tx\notin K$ for every $t$. Hence a path $A_t$ from $A$ to $I$ or to $R$, which exists by step [](#gl){.pf-ref}, gives a homotopy from $\widehat A$ to $\widehat I=\operatorname{id}_{S^n}$ or to $\widehat R$. The map $\widehat I$ is the identity, of degree $1$, and $\widehat R$ is the reflection of $S^n$ in the hyperplane $x_1=0$, of degree $-1$, so the degree of $\widehat A$ is $\operatorname{sign}\det A$ in the two cases.
+Continuity in $(t,x)$ at a finite $x$ is continuity of matrix multiplication, and at $x=\infty$ it is the assertion that for every compact $K\subset\RR^n$ the set of $(t,x)$ with $A_tx\in K$ is bounded in $x$. Since $t\mapsto\norm{A_t^{-1}}$ is continuous and never zero on the compact interval $[0,1]$, the number $c=\min_t\norm{A_t^{-1}}^{-1}$ is positive, and $\norm{A_tx}\ge c\norm{x}$ for all $t$ and $x$; so $\norm{x}>\max_{y\in K}\norm{y}/c$ forces $A_tx\notin K$ for every $t$. Hence a path $A_t$ from $A$ to $I$ or to $R$, which exists by step [](#gl){.pf-ref}, gives a homotopy from $\widehat A$ to $\widehat I=\operatorname{id}_{S^n}$ or to $\widehat R$. The map $\widehat I$ is the identity, of degree $1$, and $\widehat R$ is the reflection of $S^n$ in the hyperplane $x_1=0$, of degree $-1$, so the degree of $\widehat A$ is $\operatorname{sign}\det A$ in the two cases.
 :::
 
 :::
