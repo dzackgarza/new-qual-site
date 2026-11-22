@@ -50,6 +50,14 @@ audit:
     in the complex and in the quaternionic case, that the second factor lies in $SU(2)$ and is a
     loop, that the two block inclusions of $Sp(1)$ in $Sp(2)$ are conjugate and so induce the
     same isomorphism on $\pi_3$, and that the two classes $-1$ and $+1$ sum to zero.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.D Exercise 9. A provenance record is added, the card having carried
+    none: no retained solution set covers the exercise. The argument reads correct; two items are
+    recorded for a further pass — the citation "Example 1.14" in the dated event is wrong, since
+    §1.1's 1.14 is a proposition, and the injectivity argument for $\pi_3$ needs $\pi_4(S^7)=0$.
 ---
 
 ::: {.problem}
@@ -59,6 +67,8 @@ Do the same for the diagonal subgroup of $Sp(n)$.
 :::
 
 ::: {.solution}
+No retained solution set covers this exercise: Sam's set ends at §4.3, Koukpari's §4.D heading carries no solutions, and Proudfoot's sheets are §4.1 and §4.2. The argument is the card's own.
+
 
 Throughout, $\operatorname{diag}(a,b)$ is the diagonal matrix with the displayed entries in the first two slots.
 
