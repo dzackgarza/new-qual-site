@@ -55,7 +55,7 @@ Further pages: [[complex-analysis/resources/index|resources]], the [[complex-ana
 
 - Compactness and connectedness in analysis: [[real-analysis/undergraduate/sets-and-compactness|compactness and connectedness]].
 
-- Uniform convergence and uniform continuity: [[complex-analysis/basics/uniform-convergence|uniform convergence]] and Heine--Cantor.
+- Uniform convergence and uniform continuity: [[complex-analysis/basics/uniform-convergence|uniform convergence]] and [[T-O4UD3|Heine--Cantor]].
 
 - Riemann integrals: [[real-analysis/undergraduate/riemann-integrability|Riemann integrability]].
 
