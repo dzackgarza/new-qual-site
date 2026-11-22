@@ -560,6 +560,24 @@ audit:
     E^2 = -1, the value (H + E_1)^2 = 4, the intersections of H + E_1 with the other 26 lines, and
     the corresponding values (H + F_56)^2 = 4 and (H + F_56).F_56 = 0. Not checked: no source was
     read for this event, and neither intersection table was recomputed from a printed copy.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Citation repairs on the third condition's argument, and one sentence of
+    justification added, with no change of mathematics. (i) The Hodge index
+    inequality was cited as Theorem V.1.9 itself, which the book states only
+    for a divisor meeting the ample class in 0. The three places that use
+    (D.H)^2 >= 3D^2 now name the divisor (H^2)D - (D.H)H, which does meet H in
+    0, so the inequality is the theorem at its own number. (ii) The image of
+    the morphism defined by the complete system was called a surface without
+    argument; the sentence now adds that D^2 > 0 excludes an image of
+    dimension at most 1, whose pullback of an ample class has square 0. Read
+    for (i): Theorem V.1.9 and its proof in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md. Not read: Remark
+    1.9.1, which is about the signature and states no inequality, and no
+    printing of the book. The card's own parts and the characteristic-free
+    claim are unchanged.
 - event: source-checked
   by: claude
   date: 2026-11-22
@@ -703,8 +721,10 @@ the left side is negative for $n>H\cdot E$. So $D$ meets every effective class n
 Second, $D$ is effective: by B. Harbourne, *Anticanonical Rational Surfaces* (24 January 1996,
 arXiv:alg-geom/9509001v2), Corollary II.3, a numerically effective divisor meeting the
 anticanonical class nonnegatively lies in $\mathrm{Eff}$, and here $-K_X\cdot D=D\cdot H>0$, while
-$D\cdot H\ge2$: the Hodge index inequality, Theorem V.1.9 of the book, gives
-$3D^2\le(D\cdot H)^2$ with $D^2>0$, so $(D\cdot H)^2\ge4$ and $D\cdot H$ is a positive integer.
+$D\cdot H\ge2$: Theorem V.1.9, the Hodge index theorem, applied to the divisor
+$(H^2)D-(D\cdot H)H$, which meets the ample class $H$ in $0$, gives
+$3D^2\le(D\cdot H)^2$, and $D^2>0$ makes $(D\cdot H)^2\ge3$, so $D\cdot H$ is a positive integer of
+absolute value at least $2$.
 
 Third, the system is base point free and $h^1$ vanishes: since $-K_X\cdot D=D\cdot H\ge2$,
 Harbourne's Theorem III.1(a) gives $h^1(X,\OO_X(D))=0$ and that the sections of $D$
@@ -717,8 +737,9 @@ of $D$ is reduced and irreducible.
 Finally, it is nonsingular, in every characteristic. Put
 $H=\OO_X(1)=-K_X$, so $H^2=3$. Since $X$ is a cubic surface in $\PP^3$, the sequence
 $0\to\OO_{\PP^3}(-3)\to\OO_{\PP^3}\to\OO_X\to0$ gives $q(X)=h^1(\OO_X)=0$, and
-$p_g(X)=h^0(K_X)=h^0(\OO_X(-1))=0$. Also $D\cdot H\ge2$: the Hodge index theorem, Theorem V.1.9,
-gives $3D^2\le(D\cdot H)^2$ with $H^2=3$, and $D^2>0$ makes $(D\cdot H)^2\ge3$, so
+$p_g(X)=h^0(K_X)=h^0(\OO_X(-1))=0$. Also $D\cdot H\ge2$: Theorem V.1.9, applied to
+$(H^2)D-(D\cdot H)H$, which meets $H$ in $0$, gives $3D^2\le(D\cdot H)^2$ with $H^2=3$, and $D^2>0$
+makes $(D\cdot H)^2\ge3$, so
 the integer $D\cdot H$ has absolute value at least $2$ and is positive because $D$ is nef and $H$
 is ample. And $h^2(X,\OO_X(D))=0$: Serre duality, Corollary III.7.7, gives
 $h^2(D)=h^0(K_X-D)=h^0(-H-D)$, and $(-H-D)\cdot H=-3-D\cdot H<0$ with $H$ ample, so $-H-D$ is not
@@ -735,7 +756,8 @@ h^0(\OO_X(D))=\chi(\OO_X(D))=\frac{1}{2}D\cdot(D-K_X)+1=\frac{1}{2}(D^2+D\cdot H
 \qquad\text{so}\qquad
 N=\frac{1}{2}(D^2+D\cdot H).
 $$
-Let $Y=\varphi(X)$ be the image, a surface spanning $\PP^N$ because the system is complete, and let
+Let $Y=\varphi(X)$ be the image, a surface spanning $\PP^N$ because the system is complete and
+$D^2>0$, an image of dimension at most $1$ giving $D^2=0$; and let
 $q=[k(X):k(Y)]$ be the degree of $\varphi$; then $D^2=q\deg Y$ by the projection formula. A surface
 in $\PP^N$ that spans $\PP^N$ has degree at least $N-1$: a surface spanning $\PP^2$ is $\PP^2$
 itself, of degree $1$; a surface spanning $\PP^3$ is not a plane,
@@ -789,8 +811,8 @@ $H^0(\OO_X(D))$; $W_0$ defines the morphism $\psi=\restrictionof{\varphi}{X_0}$ 
 $d\psi_x=0$, every quotient $s/t$ of members of $W_0$ with $t(x)\ne0$ has zero derivative at $x$, so
 the image of $W_0$ in the two-dimensional space $L(x)\otimes\OO_{X_0}/\mathfrak m_x^2$ is
 one-dimensional; hence every $s\in W_0$ with $s(x)=0$ has $ds_x=0$, that is,
-$\ker(\operatorname{ev}_x)\subseteq H^0(L(-2x))$. Now $\delta\ge3$: the Hodge index theorem,
-Theorem V.1.9, gives $(D\cdot H)^2\ge3D^2$, so $D\cdot H\ge2$, and $D\cdot H=2$ would give $D^2=1$
+$\ker(\operatorname{ev}_x)\subseteq H^0(L(-2x))$. Now $\delta\ge3$: Theorem V.1.9, applied to
+$(H^2)D-(D\cdot H)H$, gives $(D\cdot H)^2\ge3D^2$, so $D\cdot H\ge2$, and $D\cdot H=2$ would give $D^2=1$
 and $2N=D^2+D\cdot H=3$, which is impossible. The curve $X_0$ is elliptic, so $h^0(L(-2x))=\delta-2$; with
 $\dim\ker(\operatorname{ev}_x)=\dim W_0-1$ this gives $\dim W_0\le\delta-1$.
 
