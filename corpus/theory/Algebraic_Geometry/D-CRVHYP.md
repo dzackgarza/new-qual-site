@@ -48,9 +48,5 @@ $$
 Thus the canonical system fails to separate some pair of points or tangent direction exactly when $\ell(p+q)=2$, equivalently when $p+q$ belongs to a $g^1_2$.
 
 Every curve of genus $2$ is hyperelliptic, since $\abs{K}$ is then a $g^1_2$ outright [@Har77, Exercise IV.1.7].
-If $\operatorname{char}k\ne2$, the degree-two map is tamely ramified at $2g+2$ points by Riemann--Hurwitz. Hence the hyperelliptic locus has dimension
-$$
-(2g+2)-\dim\PGL_2=2g-1;
-$$
-it is all of $\mathcal M_2$ and is a proper locus in $\mathcal M_g$ for $g\geq3$.
+If $\operatorname{char}k\ne2$, the degree-two map is tamely ramified at $2g+2$ points by Riemann--Hurwitz [@Har77, Corollary IV.2.4].
 :::
