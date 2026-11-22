@@ -8,7 +8,7 @@ topics:
 
 # Residues and contours
 
-The residue theorem, methods for computing residues, estimates for integrals over arcs, and their application to real integrals.
+[[T-HRPNO|The residue theorem]], methods for computing [[D-C3JIU|residues]], estimates for integrals over arcs, and their application to real integrals.
 
 - [[complex-analysis/residues-and-contours/which-contour-do-i-close|Which contour do I close?]], contours for real integrals, by the form of the integrand.
 
