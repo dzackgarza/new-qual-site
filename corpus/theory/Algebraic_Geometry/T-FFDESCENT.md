@@ -68,7 +68,7 @@ For an $A$-module $M$, the $B$-module $M\otimes_AB$ has the canonical descent da
 
 ::: {.theorem title="Faithfully flat descent"}
 If $A \to B$ is faithfully flat, then $M \mapsto (M \otimes_A B, \text{canonical } \theta)$ is an equivalence from $A$-modules to $B$-modules with descent data.
-A quasi-inverse sends $(N,\theta)$ to the $A$-module $\theset{n\in N:\theta(n\otimes1)=1\otimes n}$, under the identifications $C\otimes_{B,p_1}N\cong N\otimes_AB$ and $C\otimes_{B,p_2}N\cong B\otimes_AN$ (Stacks Project, Proposition 35.3.9, tag 023N, and Remarks 59.16.8, tag 03OE).
+A quasi-inverse sends $(N,\theta)$ to the $A$-module $\theset{n\in N:\theta(1\otimes n)=n\otimes1}$, under the identifications $C\otimes_{B,p_1}N\cong B\otimes_AN$ and $C\otimes_{B,p_2}N\cong N\otimes_AB$ of $p_1(b)=b\otimes1$ and $p_2(b)=1\otimes b$ (Stacks Project, Proposition 35.3.9, tag 023N, and Remarks 59.16.8, tag 03OE).
 :::
 
 ::: {.remark}
