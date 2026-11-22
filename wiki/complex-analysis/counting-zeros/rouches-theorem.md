@@ -44,12 +44,6 @@ On $\abs z = 1$, $\abs{m} = e^{-\Re(z)} \leq e < \abs\alpha = \abs{M}$.
 Since $M$ has exactly one zero in $\DD$, so does $M + m$.
 :::
 
-[[C-FRF33]]
-
-[[T-BYNL5]]
-
-[[T-YLI6Y]]
-
 ## Exercises
 
 [[P-FAGTL]] [[P-YSJO3]] [[P-WECI4]] [[P-GW3Y7]] [[P-ER23C]] [[P-5S2DR]] [[P-4PTIX]] [[P-4NBXB]]
