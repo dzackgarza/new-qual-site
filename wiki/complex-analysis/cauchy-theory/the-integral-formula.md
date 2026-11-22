@@ -26,7 +26,7 @@ while for $n=0,1$ the same circle gives $2\pi i\cos 0 = 2\pi i$ and $2\pi i\cos'
 
 ## The mean value property
 
-For a circle centered at the point, the integral formula expresses $f$ at the center as the average of $f$ over the circle.
+For a circle centered at the point, the integral formula gives the mean value property:
 
 [[T-5BLYU]]
 
