@@ -412,6 +412,22 @@ audit:
     (H+E_6).E_6 = 1 - 1 = 0. No statement changed and no proof step's
     mathematics changed. Not read: any printing of the book, only the text
     version in tmp/sources.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    The coordinates of step intersection-data are now sited. As the card stood,
+    D ~ a l - sum_ib_ie_i was written with no statement that a smooth cubic
+    surface over an algebraically closed field of characteristic p is the
+    blowup of P^2 at six points, which is what Proposition 4.8 and Notation
+    4.7.3 assume and what Theorem V.4.9 does not supply for an arbitrary cubic
+    surface. The solution's opening sentence now names a geometric marking,
+    cites Dolgachev and Duncan, Automorphisms of cubic surfaces in positive
+    characteristic (2017), §2, over an algebraically closed field of arbitrary
+    characteristic, and Castelnuovo's criterion, Theorem V.5.7, and points at
+    step geometric-marking of P-AGH548IRREDCLASSES, which gives the argument in
+    full. Read for this: the same two sources, at the places that card's event
+    of this date records. No step changed and no claim was weakened.
 ---
 
 ::: {.problem}
@@ -425,7 +441,13 @@ Show furthermore that for every $d>0$, this maximum is achieved by some irreduci
 ::: {.solution}
 
 Write $X$ for the cubic surface over an algebraically closed field $k$, with $-K_X=H$ its hyperplane
-class and $H^2=3$, and let $D$ be a divisor of degree $d=D\cdot H$.
+class and $H^2=3$, and let $D$ be a divisor of degree $d=D\cdot H$. The expression $D\sim a\ell-\sum_ib_ie_i$
+below is taken in a geometric marking of $X$: a set of six mutually skew lines, whose existence and
+whose blowdown to $\PP^2$ hold over an algebraically closed field of any characteristic, so that $X$ is
+the blowup of $\PP^2$ at six points with $\Pic X$ free on $\ell,e_1,\ldots,e_6$ (D. I. Dolgachev and
+A. Duncan, *Automorphisms of cubic surfaces in positive characteristic* (2017), §2, and Castelnuovo's
+criterion, Theorem V.5.7; step geometric-marking of [[P-AGH548IRREDCLASSES]] gives the argument).
+The class $H$ of a hyperplane section is then $3\ell-\sum_ie_i$.
 
 ::: pf
 
