@@ -11,30 +11,30 @@ title: Techniques
 - $\bar{\DD}_r(a) \coloneqq \theset{z\in \CC \st \abs{z-a} \leq r}$, the closed disc of radius $r$ about $a$.
 - $\DD_r^*(a) \coloneqq \theset{z\in \CC \st 0 < \abs{z-a} < r}$, the punctured disc of radius $r$ about $a$.
 - $\Omega$ denotes an open subset of $\CC$; it is a domain (connected) when the statement needs one, and simply connected when the statement needs primitives.
-- $\OO(\Omega) = \Hol(\Omega) = \Hol(\Omega, \CC)$ denotes the $\CC$-algebra of holomorphic functions $f\colon\Omega \to \CC$.
+- $\OO(\Omega)$ denotes the $\CC$-algebra of [[D-E7A5W|holomorphic]] functions $f\colon\Omega \to \CC$.
 
 ## Principal results
 
-- Estimates for derivatives: [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy's inequality]]
-- [[complex-analysis/cauchy-theory/cauchys-theorem|Cauchy's theorem]]
-- [[complex-analysis/cauchy-theory/the-integral-formula|Cauchy's integral formula and the mean value property]]
-- [[complex-analysis/cauchy-theory/morera-and-converses|Morera's theorem]]
-- [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Liouville's theorem]]
-- [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|The maximum modulus principle and the open mapping theorem]]
-- [[complex-analysis/counting-zeros/rouches-theorem|Rouché's theorem]]
-- [[complex-analysis/cauchy-theory/schwarz-reflection|The Schwarz reflection principle]]
-- [[complex-analysis/conformal-maps/the-schwarz-lemma|The Schwarz lemma]]
-- [[complex-analysis/singularities/casorati-weierstrass-and-picard|The Casorati--Weierstrass theorem and the Picard theorems]]
-- [[complex-analysis/conformal-maps/build-me-a-map|Conformal maps]]
-- [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Automorphisms of the disc and the plane]]
-- [[complex-analysis/cauchy-theory/the-identity-principle|The identity principle]]
+- Estimates for derivatives: [[T-22RQZ|Cauchy's inequality]]
+- [[T-2OVCI|Cauchy's theorem]]
+- [[T-LA2UI|The Cauchy integral formula]] and [[T-5BLYU|the mean value property]]
+- [[T-LHSMY|Morera's theorem]]
+- [[T-QHIHJ|Liouville's theorem]]
+- [[T-BYNL5|The maximum modulus principle]] and [[C-FRF33|the open mapping theorem]]
+- [[T-CJCKL|Rouché's theorem]]
+- [[T-Q3GGF|The Schwarz reflection principle]]
+- [[T-DAETF|The Schwarz lemma]]
+- [[T-C5VEI|The Casorati--Weierstrass theorem]] and the [[T-HWBWI|little]] and [[T-DDOWW|great]] Picard theorems
+- [[D-TM4TE|Conformal maps]]
+- [[T-W26VL|Automorphisms of the disc]] and [[T-VGDFW|of the upper half-plane]]
+- [[T-SVF2W|The identity principle]]
 - [[complex-analysis/residues-and-contours/computing-residues|Computing residues]]
 - [[T-ZO5UU|Jordan's lemma]]
-- [[complex-analysis/holomorphic-functions/the-cauchy-riemann-equations|The Cauchy--Riemann equations]]
-- [[complex-analysis/counting-zeros/the-argument-principle|The argument principle]]
-- [[complex-analysis/conformal-maps/the-riemann-mapping-theorem|The Riemann mapping theorem]]
-- [[complex-analysis/singularities/removable-poles-essential|Riemann's removable singularity theorem]]
-- [[complex-analysis/holomorphic-functions/harmonic-functions|Harmonic functions and the mean value property]]
+- [[D-CREQS|The Cauchy--Riemann equations]]
+- [[T-JXDQT|The argument principle]]
+- [[T-4MDS6|The Riemann mapping theorem]]
+- [[T-ZZJDP|Riemann's removable singularity theorem]]
+- [[D-CFBSA|Harmonic functions]] and [[T-5BLYU|the mean value property]]
 
 [[attachments/ComplexAnalysisNotes.pdf|Complex analysis theorem summary]] is a compact statement sheet.
 
@@ -51,7 +51,8 @@ $$
 0 & \ell\neq 0,
 \end{cases}
 $$
-and the complex differentials $\dz = \dx+i\,\dy$ and $\dzbar = \dx-i\,\dy$ are the statement of [[D-OAFF5|the Wirtinger operators]].
+and the complex differentials $\dz = \dx+i\,\dy$ and $\dzbar = \dx-i\,\dy$ give the differential of a $C^1$ function as
+$dF=\frac{\partial F}{\partial z}\dz+\frac{\partial F}{\partial\bar z}\dzbar$ ([[D-OAFF5|the Wirtinger operators]]).
 
 :::
 
@@ -162,12 +163,13 @@ Let $f$ be holomorphic near $z_0$.
 $$
 {1\over \abs{a\pm b}} \leq {1\over \abs{\abs{a} - \abs{b} } }.
 $$
-- [[T-LA2UI|The Cauchy integral formula]] bounds derivatives of $f$ by the maximum of $\abs f$ on a circle, and bounds $\abs{f}$ at interior points by an integral of $\abs f$ over a curve.
+- [[T-LA2UI|The Cauchy integral formula]] bounds $\abs{f}$ at an interior point by an integral of $\abs f$ over the curve.
+- [[T-22RQZ|Cauchy's inequalities]] bound the derivatives, $\abs{f^{(n)}(z_0)} \leq n!M/R^n$ for $M = \max_{\abs{z-z_0} = R}\abs f$.
 - If $u_n$ are harmonic on a bounded domain $U$, continuous on $\bar U$, and $u_n$ converges uniformly on $\bd U$, then $u_n$ converges uniformly on $\bar U$, by the maximum principle applied to $u_n - u_m$.
 - For $f\colon[a,b]\to\RR$ differentiable with $\abs{f'} \leq M$, the mean value theorem gives $\abs{f(x) - f(y)} \leq M\abs{x-y}$.
-- If $h$ is holomorphic on $\DD$ with $\abs h\leq 1$ and $h(0) = 0$, then $\abs{h(z)}\leq\abs z$ by the [[complex-analysis/conformal-maps/the-schwarz-lemma|Schwarz lemma]].
+- If $h$ is holomorphic on $\DD$ with $\abs h\leq 1$ and $h(0) = 0$, then $\abs{h(z)}\leq\abs z$ by the [[T-DAETF|Schwarz lemma]].
 
-The first inequality is the reverse triangle inequality of [@Ahl73, ch. 1, §1.5, Inequalities]; the third is the maximum principle applied to the harmonic difference, [@Ahl73, ch. 4, §6, Theorem 23]; the fourth is the mean value theorem, [@Rud76, ch. 5, Theorem 5.10], applied to each coordinate of $f$.
+The first inequality is the reverse triangle inequality of [@Ahl73, ch. 1, §1.5, Inequalities]; the fourth is the maximum principle applied to the harmonic difference, [@Ahl73, ch. 4, §6, Theorem 23]; the fifth is the mean value theorem, [@Rud76, ch. 5, Theorem 5.10], applied to each coordinate of $f$.
 :::
 
 ::: {.example}
