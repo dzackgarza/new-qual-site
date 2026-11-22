@@ -61,6 +61,15 @@ audit:
     Algebraic Topology (2002), checked against the retained PDF text at PDF p. 399, whose running
     folio reads 390. The solution section now states the corrected page; the mathematics is
     unchanged.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    One false sentence repaired, from an independent review. The step said the covering $p$ is a
+    homotopy equivalence because a covering map induces isomorphisms on all homotopy groups. A
+    covering induces isomorphisms only from $\pi_2$ up, and is a homotopy equivalence only when its
+    fibre is a point; here the fibre is $\pi_1(K)$. What the argument needs and gets is $\pi_n$ for
+    $n\ge2$ (Proposition 4.1), and the conclusion is stated only in that range.
 ---
 
 ::: {.problem}
@@ -86,7 +95,7 @@ $\widetilde K$ is contractible, hence simply connected, and $X$ is simply connec
 The projection $q:\widetilde K\times X\to X$ is a homotopy equivalence, and consequently $\pi_n(K\times X)\cong\pi_n(X)$ for $n>1$.
 
 ::: pf-proof
-$\widetilde K$ is contractible, so the projection $\widetilde K\times X\to X$ is a homotopy equivalence, with homotopy inverse $x\mapsto(u_0,x)$ for a chosen basepoint $u_0$. The covering $p$ is a homotopy equivalence as well, since a covering map induces isomorphisms on all homotopy groups and a map between CW complexes inducing isomorphisms on all homotopy groups is a homotopy equivalence (Whitehead). Composing, $\pi_n(K\times X)\cong\pi_n(\widetilde K\times X)\cong\pi_n(X)$ for $n\ge1$, in particular for $n>1$.
+$\widetilde K$ is contractible, so the projection $\widetilde K\times X\to X$ is a homotopy equivalence, with homotopy inverse $x\mapsto(u_0,x)$ for a chosen basepoint $u_0$. The covering $p$ induces isomorphisms on $\pi_n$ for $n\ge2$ (Proposition 4.1), which is all that is used here; it is not a homotopy equivalence in general, its fibre being the non-trivial group $\pi_1(K)$. Composing, $\pi_n(K\times X)\cong\pi_n(\widetilde K\times X)\cong\pi_n(X)$ for $n\ge2$, in particular for $n>1$.
 :::
 
 :::
