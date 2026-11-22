@@ -49,7 +49,8 @@ It is therefore not of the form $X_\Sigma$, whose coordinate rings are spectra o
 [[FE-TORWPS]]
 
 Weighted projective space $\PP(q_0,\ldots,q_n)$ is the quotient lattice construction: $N=\ZZ^{n+1}/\ZZ(q_0,\ldots,q_n)$, and the rays are the images of the standard basis vectors, so the weighted scaling relation is part of the lattice rather than part of the grading.
-Its singularities are cyclic quotient singularities at the points where a ray is not primitive ([[FE-FULQUOT]]), and $\PP(1,\ldots,1)$ is $\PP^n$.
+Its singular locus is the set of torus-fixed points whose cone is not smooth ([[PR-FULCRIT]]); a ray generator that is not primitive forces every cone through it to be non-smooth, but the converse fails, and $\PP(1,1,2)$ has three primitive ray generators and is singular at the fixed point of the cone on the images of the first two basis vectors.
+Each singular point is a cyclic quotient singularity ([[FE-FULQUOT]]), and $\PP(1,\ldots,1)$ is $\PP^n$.
 
 ## Products and blowups
 
