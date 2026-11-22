@@ -24,12 +24,12 @@ The limit of such a subsequence need not lie in $\mathcal F$: normality says tha
 
 ::: {.remark}
 In the proof of the Riemann mapping theorem for a simply connected open set $\Omega\subsetneq\CC$ and $z_0\in\Omega$, one maximizes $\abs{f'(z_0)}$ over the injective holomorphic maps $f\colon\Omega\to\DD$ with $f(z_0)=0$.
-This family is uniformly bounded, hence normal by [[T-4ALS2|Montel's theorem]] [@SS03, Theorem 3.3 of Chapter 8 (p. 225)], so a maximizing sequence has a locally uniformly convergent subsequence, whose limit is the candidate Riemann map.
+This family is uniformly bounded, hence normal by [[T-4ALS2|Montel's theorem]] [@SS03, ch. 8, Theorem 3.3], so a maximizing sequence has a locally uniformly convergent subsequence, whose limit is the candidate Riemann map.
 :::
 
 ::: {.remark}
 Two inequivalent definitions of normality are in use.
-The definition by locally uniformly convergent subsequences is that of [@SS03, sec. 3.2 of Chapter 8 (p. 225)].
+The definition by locally uniformly convergent subsequences is that of [@SS03, ch. 8, §3.2].
 In [@Ahl79], a family is normal if every sequence has a subsequence that either converges uniformly on compact sets or tends uniformly to $\infty$ on compact sets; this is locally uniform convergence in the spherical metric on the Riemann sphere, and the same definition applies to families of meromorphic functions.
 :::
 
