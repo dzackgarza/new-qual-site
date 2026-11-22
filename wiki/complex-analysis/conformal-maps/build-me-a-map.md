@@ -63,16 +63,13 @@ The feature of the boundary determines the factor to remove first.
 - Conformal maps preserve angles between curves, including at $\infty$ on $\CP^1$.
   Circles meeting orthogonally map to generalized circles meeting orthogonally, and tangent circles map to tangent circles or parallel lines.
 
-- Möbius transformations map generalized circles to generalized circles, where a line is a circle through $\infty$, and map an arc between two points onto an arc between their images.
+- Möbius transformations map generalized circles to generalized circles, where a line is a circle through $\infty$, and map an arc between two points onto an arc between their images ([[T-QGL7C]]).
 
-- The cross ratio sending $a\mapsto1$, $b\mapsto0$, $c\mapsto\infty$ is
-  $$
-  (z; a, b, c) = \frac{z-b}{z-c}\cdot\frac{a-c}{a-b}.
-  $$
+- The cross ratio $(z;a,b,c)$ sends $a\mapsto1$, $b\mapsto0$ and $c\mapsto\infty$ ([[PR-74KHY]]).
 
 - $t\mapsto\tan t$ is a bijection $(-\pi/2,\pi/2)\to\RR$, which parameterizes the real line by a bounded interval.
 
-The inverse $\inverseof z=\bar z/\abs z^2$ is [@Ahl73, ch. 1, §1.4, Conjugation, Absolute Value]; the conformality of an analytic map with nonvanishing derivative, and the preservation of angles that gives the orthogonal and tangent cases, are [@Ahl73, ch. 3, §2.3, Conformal Mapping]; the statement that a linear transformation carries circles into circles, lines counting as circles through $\infty$, is [@Ahl73, ch. 3, §3.3, Symmetry], Theorem 14 of the chapter; and the cross ratio with its normalisation is [@Ahl73, ch. 3, §3.2, The Cross Ratio], which is also [[FF-W4FFF]]. The last item is the real tangent of [@Ahl73, ch. 2, §3.2, The Trigonometric Functions].
+The inverse $\inverseof z=\bar z/\abs z^2$ is [@Ahl73, ch. 1, §1.4, Conjugation, Absolute Value]; the conformality of an analytic map with nonvanishing derivative, and the preservation of angles that gives the orthogonal and tangent cases, are [@Ahl73, ch. 3, §2.3, Conformal Mapping]; the statement that a linear transformation carries circles into circles, lines counting as circles through $\infty$, is Theorem 14 of [@Ahl73, ch. 3, §3.2, The Cross Ratio]; and the cross ratio with its normalisation is [@Ahl73, ch. 3, §3.2, The Cross Ratio], which is also [[FF-W4FFF]]. The last item is the real tangent of [@Ahl73, ch. 2, §3.2, The Trigonometric Functions].
 :::
 
 ## Standard maps
