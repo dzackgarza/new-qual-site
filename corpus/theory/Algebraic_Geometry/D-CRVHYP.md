@@ -24,17 +24,17 @@ prompts:
 
 ::: {.definition}
 Let $C$ be a smooth projective curve of genus $g\geq2$ over an algebraically closed field $k$.
-The curve $C$ is \dfn{hyperelliptic} if it admits a finite morphism $C \to \PP^1_k$ of degree $2$, equivalently a $g^1_2$.
+The curve $C$ is \dfn{hyperelliptic} if it admits a finite morphism $C \to \PP^1_k$ of degree $2$, equivalently a $g^1_2$ [@Har77, Exercise IV.1.7].
 :::
 
 ::: {.proposition}
-A hyperelliptic curve has exactly one $g^1_2$.
+A hyperelliptic curve has exactly one $g^1_2$ [@Har77, Proposition IV.5.3].
 The canonical system $\abs{K}$ is base-point free for every $g \geq 2$, so it always defines a morphism $C \to \PP^{g-1}$; on a hyperelliptic curve that morphism factors as
 $$
 C \to \PP^1 \to \PP^{g-1} ,
 $$
 the degree-two map followed by the $(g-1)$-uple embedding, whose image is a rational normal curve of degree $g-1$.
-Equivalently $\abs{K} = (g-1)\, g^1_2$.
+Equivalently $\abs{K} = (g-1)\, g^1_2$ [@Har77, Proposition IV.5.3].
 :::
 
 ::: {.remark}
@@ -47,7 +47,7 @@ $$
 $$
 Thus the canonical system fails to separate some pair of points or tangent direction exactly when $\ell(p+q)=2$, equivalently when $p+q$ belongs to a $g^1_2$.
 
-Every curve of genus $2$ is hyperelliptic, since $\abs{K}$ is then a $g^1_2$ outright.
+Every curve of genus $2$ is hyperelliptic, since $\abs{K}$ is then a $g^1_2$ outright [@Har77, Exercise IV.1.7].
 If $\operatorname{char}k\ne2$, the degree-two map is tamely ramified at $2g+2$ points by Riemann--Hurwitz. Hence the hyperelliptic locus has dimension
 $$
 (2g+2)-\dim\PGL_2=2g-1;
