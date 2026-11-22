@@ -394,7 +394,7 @@ audit:
     exercises 1, 2, 3, 4 and 6, so that it has none for Exercise 5; and, for
     absence, Borcherds (through IV.1), Cais (through Chapter 4),
     Cutrone--Marshburn (Chapters 1 and 2), Ionita--Kumar (Chapter I), Kim
-    (§2.4), Lomont, Park (Chapter 4 and §V.5), Saglam--Chris (Chapter III),
+    (§2.4), Lomont, Okamoto (§II.9), Park (Chapter 4 and §V.5), Saglam--Chris (Chapter III),
     Sam (through IV.6), Stein (III.7), Troiani (Chapter II) and Reiser
     (IV.2.5). No statement and no proof step changed in this pass, and the
     card's own parts remain steps s7 and s8 of (b) and the avoidance count of
@@ -664,7 +664,7 @@ Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.5, treats all four parts. For 
 Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, has no entry for Exercise 5 of §2.
 
 The remaining retained sets carry no Chapter V §2 exercise: Borcherds, Cais, Cutrone--Marshburn,
-Ionita--Kumar, Kim, Lomont, Park, Saglam--Chris, Sam, Stein, Troiani and Reiser. No retained solution
+Ionita--Kumar, Kim, Lomont, Okamoto, Park, Saglam--Chris, Sam, Stein, Troiani and Reiser. No retained solution
 set proves all four parts: Egbert's entry proves (b) and cites other sources for (a), (c) and (d),
 and Yang Pi-Yeh's treats all four, with the defects recorded above in (a) and (d). The proof on the
 card is therefore its own arrangement, and it rests on the numbered statements it names part by part:
