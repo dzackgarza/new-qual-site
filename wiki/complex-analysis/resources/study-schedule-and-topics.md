@@ -73,7 +73,7 @@ Each topic links the page that treats it; the [UGA complex analysis prelim revie
 
 ## Further topics
 
-- $\SL_2(\RR)$, modular forms, and elliptic curves: [[complex-analysis/conformal-maps/sl2-and-modular-forms|modular forms]] and [[complex-analysis/appendices/special-functions#Elliptic functions|elliptic functions]]
+- $\SL_2(\RR)$ and modular forms: [[complex-analysis/conformal-maps/sl2-and-modular-forms|modular forms]] and [[complex-analysis/appendices/special-functions#Elliptic functions|elliptic functions]]
 - [[complex-analysis/conformal-maps/the-hyperbolic-metric|The hyperbolic metric]]
 - [[complex-analysis/conformal-maps/riemann-surfaces-and-uniformization|Riemann surfaces]] and [[complex-analysis/conformal-maps/riemann-surfaces-and-uniformization#Uniformization|uniformization]]
 - [[complex-analysis/appendices/special-functions|Special functions]] — the [[complex-analysis/appendices/special-functions#The Gamma function|Gamma function]], the [[complex-analysis/appendices/special-functions#The Riemann zeta function|zeta function]], and [[complex-analysis/appendices/special-functions#Elliptic functions|elliptic functions]]
