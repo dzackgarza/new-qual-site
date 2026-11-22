@@ -41,10 +41,9 @@ The roots of unity as the vertices of a regular $n$-gon are [@Ahl73, ch. 1, §2.
 
 ## Polynomials over $\CC$
 
-::: {.fact title="Roots and factorization"}
-$\CC$ is an [[FD-3GZPO|algebraically closed]] field by [[T-6XDRA|the fundamental theorem of algebra]]: a polynomial of degree $n\geq1$ with complex coefficients has exactly $n$ roots counted with multiplicity, and factors as $c\prod_{k=1}^n(z-z_k)$ ([[complex-analysis/appendices/appendix-fta-proofs|the routes to the theorem]] are on the appendix page).
-The roots of $az^2+bz+c$ are $\frac{-b\pm w}{2a}$ for either square root $w$ of the discriminant $b^2-4ac$ ([[complex-analysis/holomorphic-functions/complex-arithmetic-and-log|roots and the logarithm]]).
-:::
+[[T-6XDRA]]
+
+[[T-QDRTC]]
 
 ## Problems on complex arithmetic
 
