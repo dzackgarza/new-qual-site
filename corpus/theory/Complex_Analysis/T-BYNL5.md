@@ -22,5 +22,5 @@ Let $\Omega\subseteq\CC$ be open and let $f$ be [[D-E7A5W|holomorphic]] on $\Ome
 
 (b) If $\Omega$ is bounded and connected and $f$ extends continuously to $\overline\Omega$, then either $f$ is constant or $\abs f$ attains its maximum $M\coloneqq\max_{z\in\overline\Omega}\abs{f(z)}$ only at points of $\bd\Omega$.
 
-The boundary form (b) is [@SS03, Corollary 4.6 of Chapter 3 (p. 92)], where it is stated as $\sup_{\Omega}\abs f\leq\sup_{\bd\Omega}\abs f$ for a bounded region.
+The boundary form (b) is [@SS03, ch. 3, Corollary 4.6], where it is stated as $\sup_{\Omega}\abs f\leq\sup_{\bd\Omega}\abs f$ for a bounded region.
 :::
