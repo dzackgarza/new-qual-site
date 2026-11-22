@@ -21,7 +21,7 @@ topics:
 [[T-2OVCI]]
 
 ::: {.slogan}
-Closed path integrals of holomorphic functions vanish.
+Closed path integrals of holomorphic functions on a simply connected region vanish.
 
 :::
 
