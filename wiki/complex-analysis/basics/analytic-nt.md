@@ -8,7 +8,7 @@ title: Summation by parts
 [[PR-2MTPE]]
 
 The identity writes a finite sum as a boundary term plus a sum of differences, so a series converges when the partial sums of one factor are bounded, the other factor tends to $0$, and its successive differences are absolutely summable.
-Both convergence tests below are consequences of it, with $b_k$ the factor whose partial sums are bounded.
+Both [[FT-3ZL25|Dirichlet's test]] and [[L-MYZOX|Abel's test]] are consequences of it, with $b_k$ the factor whose partial sums are bounded.
 
 ## Consequences for series
 
