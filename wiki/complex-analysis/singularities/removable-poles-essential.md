@@ -54,7 +54,7 @@ Compactness of $K$ inside $\Omega$ is needed: $\sin\bigl(\pi/(1-z)\bigr)$ is hol
 [[D-C3JIU]]
 
 ::: {.remark}
-A pole admits a neighborhood on which $f$ is nonvanishing, and in fact bounded below.
+Recall that a [[D-AUD6K|pole]] is characterised by $\abs{f(z)}\to\infty$ as $z\to z_0$, so $f$ is nonvanishing and bounded below on a punctured neighbourhood of $z_0$.
 
 :::
 
