@@ -43,7 +43,7 @@ For $f\in L^p$ and $g\in L^q$, equality holds in [[PR-7BGSE|Hölder's inequality
 ## Chebyshev's inequality
 
 A bound on $\norm f_p$ bounds the measure of $\theset{\abs f>t}$ ([[PR-YO7MV]]).
-With the Borel--Cantelli lemma ([[T-OTR5M]]): if $\sum_n\norm{f_n}_p^p<\infty$, then $f_n\to0$ almost everywhere.
+With the Borel--Cantelli lemma ([[T-OTR5M]], which cites Royden--Fitzpatrick, Chapter 17, §17.1 for it): if $\sum_n\norm{f_n}_p^p<\infty$, then $f_n\to0$ almost everywhere.
 
 ## Particular exponents
 
