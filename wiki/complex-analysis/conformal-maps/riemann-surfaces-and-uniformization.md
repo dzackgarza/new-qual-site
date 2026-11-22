@@ -9,7 +9,7 @@ topics:
 
 # Riemann surfaces and uniformization
 
-A [[D-8WMFK|Riemann surface]] is a one-dimensional complex manifold, and the [[T-ZAEWG|uniformization theorem]] classifies its simply connected models, of which every Riemann surface is a quotient by a group of biholomorphisms.
+Recall that a [[D-8WMFK|Riemann surface]] is a connected one-dimensional complex manifold, and that every connected Riemann surface is a quotient of a simply connected one by its group of [[D-4VGAW|deck transformations]] ([[T-ZAEWG]]).
 The proper simply connected case is the Riemann mapping theorem: a simply connected $\Omega\subsetneq\CC$ is conformally the disc [@SS03, ch. 8, Theorem 3.1], while $\CC$ is not, since a holomorphic map $\CC\to\DD$ is a bounded entire function.
 
 [[D-8WMFK]]
