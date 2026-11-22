@@ -15,7 +15,7 @@ Projective space is affine space with the points at infinity put back, and a pro
 
 [[D-CP2MH]]
 
-A homogeneous ideal need not cut out anything: $V(J)$ is empty exactly when $\sqrt J$ contains the irrelevant ideal $S_+$, so $V(S_+)=\emptyset$ although $S_+$ is a proper radical ideal, and the correspondence is between closed subsets and homogeneous radical ideals *other than* $S_+$ [@Har77, Exercise I.2.4].
+A homogeneous ideal need not cut out anything: $V(J)$ is empty exactly when $\sqrt J$ contains the irrelevant ideal $S_+$, so $V(S_+)=\emptyset$ although $S_+$ is a proper radical ideal [@Har77, Exercise I.2.2], and the correspondence is between closed subsets and homogeneous radical ideals *other than* $S_+$ [@Har77, Exercise I.2.4].
 The values of a form are not functions on $\PP^n$ — only its zero set is — so the ring of regular functions on projective space is the constants, and the homogeneous forms are sections of line bundles rather than functions ([[PR-EFW6B]]).
 
 ## The standard affine cover
