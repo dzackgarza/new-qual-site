@@ -545,7 +545,7 @@ audit:
     ordinary without proving it; and, for absence, the retained sets carrying
     no Chapter V §4 exercise, Borcherds (through IV.1), Cais (through Chapter
     4), Cutrone--Marshburn (Chapters 1 and 2), Ionita--Kumar (Chapter I), Kim
-    (§2.4), Lomont, Park (Chapter 4 and §V.5), Saglam--Chris (Chapter III),
+    (§2.4), Lomont, Okamoto (§II.9), Park (Chapter 4 and §V.5), Saglam--Chris (Chapter III),
     Sam (through IV.6), Stein (III.7), Troiani (Chapter II) and Reiser
     (IV.2.5). The remark now states that only those three retained sets contain
     the exercise, that each is incomplete, and that the two passages the card
@@ -792,7 +792,7 @@ remark contain Exercise V.4.3 at all, and each of them is incomplete: the Nation
 set does not show that the three contracted points are ordinary, Yang Pi-Yeh's entry proves the
 termination criterion alone and separates no characteristic, and Egbert's entry is a citation of a
 book that is not held and was not read. The other retained sets carry no Chapter V §4 exercise:
-Borcherds, Cais, Cutrone--Marshburn, Ionita--Kumar, Kim, Lomont, Park, Saglam--Chris, Sam, Stein,
+Borcherds, Cais, Cutrone--Marshburn, Ionita--Kumar, Kim, Lomont, Okamoto, Park, Saglam--Chris, Sam, Stein,
 Troiani and Reiser. The two passages the card supplies itself are the ordinariness of the three
 fundamental images in step [](#excellent-position){.pf-ref}, where Rüd's Proposition 21 states it and
 its proof reaches only the multiplicities, and the neutrality for $N$ and $g^*$ of the preliminary
