@@ -69,6 +69,18 @@ audit:
     Proposition 4.28 supplies simple connectivity of that quotient. The two conclusions
     still use Corollary 4.33, as in Sam's §4.2 Exercise 18, with these hypotheses made
     explicit.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Verification of the preceding event against the body, and one citation repair: the
+    cyclic formulas for tensor products are the elementary properties listed in §3.2,
+    while the Tor formula is property (5) of the Tor list in §3.A; the step now names both
+    sections instead of attributing both formulas to §3.A. Re-read and unchanged: the
+    relative Künneth formula following Theorem 3B.6 with its split short exact sequences,
+    Proposition 2.22 identifying $H_*(X\times Y,X\vee Y)$ with $\widetilde H_*(X\wedge Y)$,
+    the vanishing of every tensor and Tor summand from the coprime orders, Proposition
+    4.28 giving $\pi_1(X\wedge Y)=0$, and the two Corollary 4.33 applications.
 ---
 
 ::: {.problem}
@@ -93,7 +105,7 @@ Choose basepoints $x_0\in X$ and $y_0\in Y$. Since $X\wedge Y=(X\times Y)/(X\vee
 Both kinds of term vanish, so $\widetilde H_k(X\wedge Y;\ZZ)=0$ for every $k$.
 
 ::: pf-proof
-Decompose each finite abelian reduced homology group into prime-power cyclic summands. For arbitrary positive integers $m$ and $n$, the explicit formulas of §3.A give
+Decompose each finite abelian reduced homology group into prime-power cyclic summands. For arbitrary positive integers $m$ and $n$, the formulas for tensor products in §3.2 and for Tor in §3.A give
 $$
 \ZZ_m\otimes\ZZ_n\cong\ZZ_{\gcd(m,n)},\qquad
 \operatorname{Tor}(\ZZ_m,\ZZ_n)\cong\ZZ_{\gcd(m,n)}.
