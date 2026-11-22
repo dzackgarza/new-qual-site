@@ -21,7 +21,7 @@ Stereographic projection from the north pole carries the plane onto the sphere o
 
 [[D-FRVBV]]
 
-A Möbius transformation permutes the generalized circles — the circles and the lines of $\CC$, a line being a circle through $\infty$ — and acts transitively on the triples of distinct points of $\CP^1$.
+A Möbius transformation permutes the generalized circles — the circles and the lines of $\CC$, a line being a circle through $\infty$ — and acts transitively on the triples of distinct points of $\CP^1$ ([[PR-74KHY|three points determine a Möbius transformation]]); the circle-preserving property is the one [[D-FRVBV]] records.
 
 [[PR-74KHY]]
 
