@@ -29,7 +29,7 @@ A blowup of a smooth point of a smooth variety of dimension $n$ has $K_{\widetil
 
 [[T-SRFCAST]]
 
-Let $Y$ be a curve on a smooth projective surface $X$. If $Y\cong\PP^1$ and $Y^2=-1$, there is a morphism $f\colon X\to X_0$ to a smooth projective surface contracting $Y$ to a point, and a curve $Y\cong\PP^1$ that contracts to a smooth point has $Y^2=-1$ [@Har77, Theorem V.5.7 and Corollary V.5.4].
+Let $Y$ be a curve on a smooth projective surface $X$. If $Y\cong\PP^1$ and $Y^2=-1$, there is a morphism $f\colon X\to X_0$ to a smooth projective surface contracting $Y$ to a point, and a curve $Y\cong\PP^1$ that contracts to a smooth point has $Y^2=-1$ [@Har77, Theorem V.5.7 and Proposition V.3.1].
 If the image is allowed to be singular, $Y\cong\PP^1$ with $Y^2<0$ is contractible to a point of a projective variety [@Har77, Remark V.5.7.2 and Exercise V.5.2].
 A $(-2)$-curve is therefore contractible, and its image is not a smooth point: adjunction $2g(Y)-2=Y\cdot(Y+K_X)$ gives $Y\cdot K_X=0$ for $Y\cong\PP^1$ with $Y^2=-2$, and the image is a du Val point, so $K_{X_0}$ is Cartier there ([[D-SRFADE]]); hence $K_X-f^*K_{X_0}$ is supported on $Y$ and pairs to zero with it, and the contraction is crepant ([[D-VARCREPANT]], [[D-SRFADE]]).
 
