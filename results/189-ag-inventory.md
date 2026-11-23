@@ -8,6 +8,13 @@ defects they and this session's page read expose, and states in §9 exactly what
 The seven corrections are not relabellings: each is a different mathematical statement from the one the third version
 made, and four of them are corrections to arguments the third version itself wrote.
 
+**This is the fifth version.** It carries four corrections the fourth version left open — the Picard-sequence locator at
+`divisors/weil-and-cartier.md:34`, now **Exercise II.6.9(a)**, read at the statement; the canonical-descent locator at
+`stacks-and-moduli/functors-and-topologies.md:64`, which attaches the canonical-instance formula to **Section 35.3, tag
+023F**, not to Definition 35.3.1; the facet conclusion of §0 item 4, which was false in the fourth version too; and the
+miracle-flatness gloss of §0 item 6, which misdescribed Vakil **26.2.11** and made purity necessary — together with one
+batch of named transcluded cards actually read, §9.1.
+
 ## 0. The seven ra84 items, corrected
 
 | ra84 item | The third version said | What is true | Repaired in |
@@ -15,9 +22,9 @@ made, and four of them are corrections to arguments the third version itself wro
 | 1. Terminal singularities and crepant small resolutions | "Terminal singularities admit none: true, vacuously … a crepant resolution has no exceptional divisor and **is an isomorphism**" (§2.2 item 3) | A crepant resolution of a terminal singularity has no exceptional **divisor**, hence is **small**; it need not be an isomorphism, and it need not be unique. The ordinary double point $\{xy-zw=0\}\subseteq\CC^4$ is terminal and has **two non-isomorphic** crepant small resolutions, related by the Atiyah flop | card `D-VARCREPANT` at `5c8e30e20c` |
 | 2. Injectivity and finite surjectivity | "it **needs** $\phi$ injective" (`PR-RJ3P7:47`), i.e. injectivity necessary for $f$ surjective | Injectivity is **sufficient and not necessary**. $k[t]/(t^2)\to k$, $t\mapsto0$, is non-injective and $\Spec k\to\Spec k[t]/(t^2)$ is a homeomorphism of one-point spaces; what injectivity excludes is the primes outside the kernel, which is why $\ZZ\to\ZZ/2$ misses the generic point | card `PR-RJ3P7` at `afe86c9d92` |
 | 3. The canonical descent $\theta$ | "for $N=M\tensor_AB$ the canonical $\theta$ **is the flip**", with the recovery condition $\theta(1\tensor n)=n\tensor1$ between two differently identified modules (§4.1) | Written in Stacks' own convention the datum is $\theta\colon N\tensor_AB\to B\tensor_AN$ with $\theta(n\tensor1)$ and $1\tensor n$ **both** in $B\tensor_AN$; the canonical instance is $(m\tensor b)\tensor b'\mapsto b\tensor(m\tensor b')$. The third version's pairing made the condition an identity, so it recovered $N$, not $M$ | card `T-FFDESCENT` at `d9477e605a`, page `stacks-and-moduli/functors-and-topologies.md` at `0204ce05f4` |
-| 4. The "distance-two facet" counterexample | "the triangle $\operatorname{Conv}((2,-2),(2,2),(-1,0))$ … has facets at distances $1,1,2$" (§2.12) | That triangle has **all three** facet distances $2/\gcd(2,3)=2$: the edges are $x=2$, $-2x+3y=2$ and $-2x-3y=2$, each at lattice distance $2$. It therefore does not exhibit a mix of distances, and the third version's withdrawal rested on a false witness as well. Reflexivity is argued definitionally, from $\inner{m}{u_\rho}=-1$ with $u_\rho$ primitive | §2.12 here; no page carried the claim |
+| 4. The "distance-two facet" counterexample | "the triangle $\operatorname{Conv}((2,-2),(2,2),(-1,0))$ … has facets at distances $1,1,2$" (§2.12) | That triangle has **all three** facet distances $2/\gcd(2,3)=2$: the edges are $x=2$, $-2x+3y=2$ and $-2x-3y=2$, each at lattice distance $2$. It therefore does not exhibit a mix of distances, so the third version's $1,1,2$ is false; but the triangle remains a witness, because $(2,0)$ lies in the relative interior of the edge $x=2$, $-2<y<2$, so a facet at lattice distance two **can** carry a relative-interior lattice point, and this triangle refutes the universal claim that none does. Reflexivity is argued definitionally, from $\inner{m}{u_\rho}=-1$ with $u_\rho$ primitive | §2.12 here; no page carried the claim |
 | 5. The toric translation and saturation | "$\Cone(P_D-m_\sigma)=\sigma^\vee$, **whose lattice semigroup is $S_\sigma$**" — the second clause a self-equality, since $S_\sigma$ *is* $\sigma^\vee\cap M$ | The translation is $\Cone(P_D\cap M-m_\sigma)=\sigma^\vee$, which is CLS (6.1.6) together with **Exercise 6.1.10** (the proper faces of $\Cone((u_\rho,-a_\rho))$ project to the cones of $\Sigma$); very ampleness is the **saturation** of $\NN(P_D\cap M-m_\sigma)$ inside $S_\sigma$, which is **Proposition 6.1.10(c)** and its proof | card `PR-TORPOS` at `9837cb2c28`, page `toric/polytopes-and-divisors.md` at `0204ce05f4` |
-| 6. Miracle flatness and its citations | the pointwise equality "forces $f$ to be flat", the card's hypothesis being the **numerical** equality (§2.6, §4.3) | Vakil **26.2.10** assumes the fibre ring has **pure** dimension $\dim B-\dim A$; the numerical equality alone is what a flat local map satisfies. 26.2.11 remains the pure-fibre statement. The pointwise form now carries equidimensionality of $\OO_{X_y,x}$ | card `T-MORMIRACLE` at `1da5ab5aa3`, page `schemes/dimension.md` at `0204ce05f4` |
+| 6. Miracle flatness and its citations | the pointwise equality "forces $f$ to be flat", the card's hypothesis being the **numerical** equality (§2.6, §4.3) | Vakil **26.2.10** assumes the fibre ring has **pure** dimension $\dim B-\dim A$; the numerical equality alone is what a flat local map satisfies. **26.2.11** does not restate that purity: its printed hypotheses are pure-dimensional $X$ and $Y$, $X$ Cohen--Macaulay, $Y$ regular, and fibres of dimension $\dim X-\dim Y$. Purity is not necessary either: Stacks **Lemma 10.128.1, tag 00R4** derives flatness from $\dim S=\dim R+\dim(S/\mfm_RS)$ alone, with $R$ regular and $S$ Cohen--Macaulay. The pointwise form now carries equidimensionality of $\OO_{X_y,x}$ | card `T-MORMIRACLE` at `1da5ab5aa3`, page `schemes/dimension.md` at `0204ce05f4` |
 | 7. The alleged properness defect in Vakil 16.2.G | the page "states the unrestricted version, which is fine but **is not what the citation says**" (§2.5 item 3) | Vakil's own remark inside 16.2.G says the result "applies in that situation, i.e. with 'proper $A$-schemes' changed to 'schemes', without change". There is no defect to record: the unrestricted statement is the exercise's stated extension | §2.5 here; page unchanged |
 
 ## 1. Baseline and scope
@@ -122,10 +129,14 @@ upper semicontinuous **on $X$**; (b) the dimension of the fibre over $y$ is uppe
 is closed. The third function $\krulldim\OO_{X_{f(x)},x}$ is not upper semicontinuous ($\AA^1_k\to\Spec k$: $1$ at closed
 points, $0$ at $\eta$). The page separates all three (`schemes/dimension.md:43-52`).
 **Corrected here**: `:53` now says that the pointwise equality, **with the local ring of each fibre equidimensional**,
-forces flatness, because that is what the local theorem assumes. Vakil **26.2.10** (read) is the local statement and
-requires the fibre ring of **pure** dimension $\dim B-\dim A$; **26.2.11** (read) is the statement that the fibres of
-$\pi$ have dimension $\dim X-\dim Y$. The third version's "the pointwise form is the card's corollary from 26.2.10"
-dropped the purity and is withdrawn.
+forces flatness. Vakil **26.2.10** (read) is the local statement and
+requires the fibre ring of **pure** dimension $\dim B-\dim A$; **26.2.11** (read) is a global statement whose printed
+hypotheses are that $X$ and $Y$ are pure dimensional, $X$ is Cohen--Macaulay, $Y$ is regular, and the fibres of $\pi$ have
+dimension $\dim X-\dim Y$ — it does not assume pure fibre rings. **Neither theorem makes purity necessary**: Stacks
+**Lemma 10.128.1, tag 00R4** (fetched live this session) proves $R\to S$ flat from $R$ regular, $S$ Cohen--Macaulay and
+$\dim S=\dim R+\dim(S/\mfm_RS)$, the numerical equality alone, and `dimension.md:53` now cites that lemma for the
+pointwise form. What the third version got wrong was the **attribution** — it offered the numerical form as the card's
+corollary from 26.2.10, whose hypothesis is purity — not the numerical statement.
 Card `T-MORMIRACLE` at `1da5ab5aa3`, page `schemes/dimension.md` at `0204ce05f4`.
 Second, smaller: `:48` attaches `[[T-MORFIBDIM]]` to the elementary computation $\{x:\dim_x\ge1\}=$ closed points, which
 is not that card's statement. Not repaired; the link is harmless and the owner is the fibre-dimension material.
@@ -171,7 +182,11 @@ on the polar (`D-TORREFL`, read: $P^\circ=\{u:\inner{m}{u}\ge-1\ \forall m\in P\
 **ra84's fourth correction, and the third version's second false witness here.** It wrote that the review's triangle
 $\operatorname{Conv}((2,-2),(2,2),(-1,0))$ "has facets at distances $1,1,2$". It has **all three at distance $2$**: the
 three edges are $AB:\ x=2$, $BC:\ -2x+3y=2$ and $CA:\ -2x-3y=2$, at lattice distances $2$, $2/\gcd(2,3)=2$ and
-$2/\gcd(2,3)=2$. So the triangle exhibits no mixed distances and supports nothing. The page's own display is right.
+$2/\gcd(2,3)=2$. So the triangle exhibits no mixed distances — but it **is** a witness against the universal claim, which
+is what the fourth version missed here: the edge $AB$ is $x=2$ with $-2<y<2$, and $(2,0)$ is a lattice point in its
+relative interior. A facet at lattice distance two can therefore carry a relative-interior lattice point, and this
+triangle proves it. The page's own display is right, and the del Pezzo facets are at distance one for the separate
+reason above: $u_\rho$ is primitive and the constant is $-1$.
 **Page now (`toric/toric-del-pezzo-surfaces.md:55-59,66`): true**, with $K^2=12-d$ (`PR-FULKSQ`) and the five degrees
 $9,8,8,7,6$ recomputed from $3,4,4,5,6$ rays.
 
@@ -241,7 +256,8 @@ $[w:x]$ and $[w:y]$.
 Repaired (§0 item 2).
 
 ### 3.11 The triangle — no page carried it
-§0 item 4. No edit: the claim lived only in the third version of this record.
+§0 item 4. No page edit: the claim lived only in the third and fourth versions of this record, and the fourth version's
+own conclusion ("supports nothing") was false; $(2,0)$ is a relative-interior lattice point of the distance-two edge.
 
 ## 4. The cards on which this version's verdicts rest
 
@@ -261,8 +277,11 @@ $\ZZ[x]\to\ZZ[x,y]$ at $(y)$, repaired at `13f9c3a8eb`. `:47` now separates suff
 `qualc.authoring check PR-RJ3P7` passes.
 
 ### 4.3 `T-MORMIRACLE` and `PR-MIRACLEFLAT`
-Both read; Vakil **26.2.10** and **26.2.11** and Har77 **Ex III.10.9** read. The local theorem's hypothesis is purity of
-the fibre ring; the card now says so and the page's sentence carries equidimensionality (`1da5ab5aa3`). `PR-MIRACLEFLAT`
+Both read; Vakil **26.2.10** and **26.2.11** and Har77 **Ex III.10.9** and Stacks **00R4** read. 26.2.10's hypothesis is
+purity of the fibre ring, so the card's theorem is a valid specialization of it; the card's remark that "with regular base
+and Cohen--Macaulay source this necessary dimension condition is also sufficient" is the sharp statement, and it is
+Stacks **00R4**, which the card's remark now names. Purity is not necessary, and the fourth version's wording to that effect
+was wrong. `PR-MIRACLEFLAT`
 is the finite case and is correct as stated, with its citation to the exercise that states the fibre-dimension version.
 `qualc.authoring check T-MORMIRACLE` passes.
 
@@ -281,8 +300,9 @@ point of §0 item 5. `D-TORREFL`'s polar dual, facet description and 16/5 count 
 
 ## 5. Sources read for this version
 
-`tmp/sources/hartshorne-1977-algebraic-geometry.md`: **Ex II.5.1(d)**, **Prop II.7.3**, **Ex III.6.2**,
-**Ex III.10.9**, **Ex IV.1.8**, **Remark II.6.11.2**, plus the statements re-read for the rows above (II.1.2, II.6.11,
+`tmp/sources/hartshorne-1977-algebraic-geometry.md`: **Ex II.5.1(d)**, **Prop II.7.3**, **Ex II.6.9(a)** (`:4237`),
+**Ex III.6.2**, **Ex III.10.9**, **Ex IV.1.8** (`:9290`), **Remark II.6.11.2**, plus the statements re-read for the rows
+above (II.1.2, II.6.11,
 II.6.11.1A, II.6.15, II.6.16, II.7.6, II.8.20, II.8.22A, III.2.1, III.3.7, III.5.1, Ex III.5.7, V.1.10, V.5.1, IV.2.2,
 IV.2.4, IV.3.1, IV.5.1, IV.5.2, IV.5.4, I.2.14, I.3.4, I.4.4, I.4.5, I.6.8, I.7.2, I.7.7).
 
@@ -293,8 +313,10 @@ remark**, **Ex 8.3.I**, **Thm 12.4.3**, **Def 7.3.10**, **Lemma 5.3.2**, **Ex 15
 **Ex 6.1.10**, **Thm 6.1.14** and its proof, **Prop 11.4.12**, **Ex 11.4.13**, **Exercise 11.4.13**, **Ex 11.2.7**,
 **Prop 2.2.18**, **Def 2.2.17**.
 
-Stacks, fetched live this session: **Definition 35.3.1 (023G)**, **Section 35.3 (023F)**, **Proposition 35.3.9 (023N)**,
-**Lemma 35.3.7 (039W)**; in earlier versions **021M, 021N, 00VH, 00Z4, 0G12**.
+Stacks, fetched live this session: **Definition 35.3.1 (023G)**, **Section 35.3 (023F)** — whose running text carries the
+canonical datum $(m\otimes a)\otimes a'\mapsto a\otimes(m\otimes a')$ and Definition 35.3.1 does not —,
+**Proposition 35.3.9 (023N)**, **Lemma 35.3.7 (039W)**, **Lemma 10.128.1 (00R4)**; in earlier versions **021M, 021N,
+00VH, 00Z4, 0G12**.
 
 **Not on the machine and therefore not read**: Atiyah–Macdonald (**5.10, 5.11, 5.16**), Fulton, Mori's existence theorem,
 Godement, Serre's *Local Fields*, and the Godement and Fulton locators named in §9.
@@ -309,10 +331,13 @@ Godement, Serre's *Local Fields*, and the Godement and Fulton locators named in 
   `stacks-and-moduli/functors-and-topologies.md:20` "in both directions below".
 - **Definition-shaped prose with no "Recall"** (DEF-1, DEF-29): `schemes/ringed-spaces.md:16`.
 - **CITE-1 unkeyed inline reference**: `toric/affine-computations.md:14`, "[Cox–Little–Schenck, *Toric Varieties*,
-  Proposition 1.1.9]" — the number is right (read), the form needs a bibliography key; `divisors/weil-and-cartier.md:34`
-  likewise.
-- **CITE-8, citations that do not state the claim**: `divisors/weil-and-cartier.md:34` (Ex IV.1.8, §2.4) is the
-  surviving one. `varieties/rational-maps.md:48` was moved to II.6.3A at `60a0596190`; `varieties/projective-varieties.md:18`
+  Proposition 1.1.9]" — the number is right (read), the form needs a bibliography key. (`divisors/weil-and-cartier.md:34`
+  was named here in the fourth version; on the current blob and at the fourth version's own blob its citation is the keyed
+  `[@Har77, …]`, and its defect was the CITE-8 number below.)
+- **CITE-8, citations that do not state the claim**: none survives. `divisors/weil-and-cartier.md:34` carried Har77
+  **Ex IV.1.8** — the arithmetic-genus formula $p_a$ of a singular curve (`:9290`) — for the Picard sequence that is
+  **Ex II.6.9(a)**, "Singular Curves" (`:4237`), whose displayed sequence matches the page's term for term. Repaired in
+  this version. `varieties/rational-maps.md:48` was moved to II.6.3A at `60a0596190`; `varieties/projective-varieties.md:18`
   was moved to Ex I.2.2 at `77ed72a62b`.
 - **PROVENANCE-01**: `syllabus.md:191` and `:205` open "The numbered items group the topics by subject." and name no
   document; the sections at `:53-105`, `:107-143`, `:145-187` do name theirs. `:207`'s eight Reid locators are unkeyed.
@@ -478,21 +503,66 @@ on such a page is a verdict on its prose and its internal consistency.
    the book.
 2. **Fulton's locators** — `toric/topology.md:29` (§3.2), `:55` (§4.2), `toric/index.md:16`, `syllabus.md:187`. No text.
 3. **Godement, Chapitre II, Théorème 4.4.3 and 4.6.2** — `cohomology/derived-functors-and-vanishing.md:47,49`. No text.
-4. **`divisors/weil-and-cartier.md:34`** — the Picard sequence is right, the cited number (Ex IV.1.8) is wrong, and the
-   right number is not located in the retained Hartshorne text. Recorded as owed, not replaced.
-5. **The transcluded cards this session did not open.** Named, because a count is not a list: `T-5IOUR` (the qcqs
-   variant of Serre's criterion; the noetherian form, Theorem III.3.7, was read), `T-SRFZMT`, `T-SRFCAST`,
+4. **`divisors/weil-and-cartier.md:34` — closed.** The Picard sequence is right; its cited number (Ex IV.1.8) was wrong and
+   is now **Ex II.6.9(a)**, read at `:4237` in the retained text and quoted in §5. Nothing is owed on this item.
+5. **The transcluded cards this session did not open.** The fourth version's list stands except for the five cards of §9.1,
+   which are now read; a count is still not a list, so the remainder is named again here: `T-SRFZMT`, `T-SRFCAST`,
    `FE-SRFFERMATQUARTIC`, `T-TORDIV`, `PR-TORMOR`, `T-FULBETTI`, `T-TORCOHOM`, `D-TORMOMENT`, `D-FULSTAR`, `PR-O8V3I`,
-   `PR-FULCRIT`, `PR-FULKSQ`, `D-CRVBRILLNOETHER`, `D-8XX95`, `D-L6ERW`, `D-VARBIRAT`, `T-BIRINV`, `T-CRVMINMOD`,
-   `D-SHFSIX`, `D-SCHCMGOR`, `T-EFRAPL`/`T-DEFRAPL`, `D-MODAMPLE`, `D-2049GP`, and the remaining ~285. The third
-   version's §5 records ten of these as read in *that* session (`D-SHFSIX`, `D-SCHCMGOR`, `D-VARBIRAT`, `T-CRVMINMOD`,
+   `PR-FULCRIT`, `PR-FULKSQ`, `D-CRVBRILLNOETHER`, `D-8XX95`, `D-VARBIRAT`'s siblings in the toric and surface chapters,
+   `T-CRVMINMOD`, `D-SCHCMGOR`, `T-EFRAPL`/`T-DEFRAPL`, `D-MODAMPLE`, `D-2049GP`, and the remaining ~285. The third
+   version's §5 records sixteen of these as read in *that* session (`D-SHFSIX`, `D-SCHCMGOR`, `D-VARBIRAT`, `T-CRVMINMOD`,
    `T-BIRINV`, `FE-TORCD`, `T-TORSURF`, `D-FULSAT`, `PR-TORMOR`, `T-FULBETTI`, `D-TORMOMENT`, `T-TORCOHOM`,
    `D-FULSTAR`, `PR-O8V3I`, `D-TORREFL`, `PR-FULCRIT`, `PR-FULKSQ`); those readings are **carried here, not re-verified**,
    and the verdicts in §2 that rest on them inherit that status. What this session re-read in full is the ten cards of
-   §1.
+   §1 and the five of §9.1.
 6. **`syllabus.md:37`'s Berkeley document** — not fetched.
 7. **Mori's existence theorem** for crepant resolutions of terminal Gorenstein threefolds — no retained text, and the
    verdicts here do not use it: §0 item 1 rests on CLS Proposition 11.4.12 and Examples 11.4.13 with `FE-207WC`.
+
+### 9.1 The fifth version's read batch: five transclusions, decided
+
+Each card was opened whole and its numbered citations checked against the retained text or the fetched tag. "MET" here
+means the mathematics of the card was checked and corrects nothing; it is not a certification of every sentence, and the
+four cards not repaired carry no claim that they are free of defects this reading did not look for.
+
+- **`D-VARBIRAT` — corrected.** The rational-map and birational definitions were cited as `[@Har77, Definition I.4]`
+  twice. Hartshorne's I.4 has **two unnumbered definitions** (`:1023`, `:1027` of the retained text: "Definition. Let X,Y
+  be varieties. A rational map …" and "Definition. A birational map …"), so the number does not exist; both now read
+  `[@Har77, §I.4]`, the section form the card already used elsewhere. Theorem **I.4.4** (`:1046`) is exactly the displayed
+  bijection between dominant rational maps $X\dashrightarrow Y$ and $k$-algebra homomorphisms $k(Y)\to k(X)$, with the
+  arrow-reversing equivalence to finitely generated field extensions, and Corollary **I.4.5** (`:1059`) is
+  (i) birational $\Leftrightarrow$ (ii) isomorphic open subsets $\Leftrightarrow$ (iii) $K(X)\cong K(Y)$; the card's
+  theorem states (i)$\Leftrightarrow$(iii). **Second correction:** the codimension-two indeterminacy proposition's proof
+  cited §I.4, which contains no such statement; it now cites Vakil **Exercise 15.3.B** (`:10678`: "rational maps from
+  Noetherian $k$-schemes to projective $k$-schemes can be extended over regular codimension 1 sets"), the iteration over
+  codimension-one points being what gives codimension $\ge2$, and the same exercise is what `varieties/rational-maps.md:21`
+  already uses.
+- **`T-BIRINV` — MET.** The theorem's statement, $\mathrm H^0(X,(\Omega^p_{X/k})^{\otimes m})\cong
+  \mathrm H^0(X',(\Omega^p_{X'/k})^{\otimes m})$ for birational smooth projective $X,X'$ in any characteristic, is true:
+  $(\Omega^p)^{\otimes m}$ is locally free, hence reflexive, so sections extend over a complement of codimension $\ge2$
+  (algebraic Hartogs on the smooth, hence normal, variety). The citations are to the **method**, and the card says so:
+  Har77 **Theorem II.8.19** (`:5031`) is $p_g(X)=p_g(X')$ and its proof is that extension argument, and Har77 **Exercise
+  II.8.8** (`:5281`) is "Using the method of (8.19), show that $P_n$ and $h^{q,0}$ are birational invariants". Neither
+  numbered statement covers the mixed case $p<n$, $m>1$; the card's own sentence "following the method of" is therefore
+  the correct description and is not a false attribution. `P-AGH288PLURIGENUS` is named as where the inverse pullbacks are
+  constructed.
+- **`D-L6ERW` — MET.** Har77 **Proposition II.5.13** (`:3438`) is
+  $\Gamma_*(\OO_X)\cong S$ for $X=\PP^r_A$; since $S$ is concentrated in non-negative degrees, that is simultaneously
+  $h^0(\PP^1,\OO(m))=m+1$ for $m\ge0$ and $0$ for $m<0$, which is what the card's example uses it for. The
+  $\deg(X)/d!$ reading of the leading coefficient is [@Har77, §I.7], a section locator, correctly so, and the twisted
+  cubic's $P(r)=3r+1$ follows from $h^0(\PP^1,\OO(3r))=3r+1$.
+- **`T-5IOUR` — MET for the theorem; the remark's qcqs form is unverified.** Har77 **Theorem III.3.7** (`:6039`,
+  "Serre [5]") is the three-way equivalence for a **noetherian** scheme, verbatim as the card states it; **Theorem
+  III.3.5** (`:6029`) is $H^i(\Spec A,\mcf)=0$ for quasi-coherent $\mcf$ and $i>0$ over a noetherian $A$, which is
+  (i)$\Rightarrow$(ii); and **II.2.17** (`:2532`, "A Criterion for Affineness") is the affineness criterion the proof
+  invokes. The remark's quasicompact quasi-separated form was checked against **no** retained numbered statement this
+  session and is recorded as unverified, not as false.
+- **`D-SHFSIX` — statements MET, and it cites nothing.** The six operations, $Rf_!=Rf_*$ for proper $f$, $j^!=j^{-1}$
+  for an open inclusion, proper base change, the projection formula, $\omega_X=a^!\ZZ$ with $\omega_X\cong\mathrm{or}_X[n]$
+  on a topological $n$-manifold, and $i^!=i^{-1}R\Gamma_Z$ for a closed inclusion are all standard and correctly stated,
+  as is the Poincaré-duality consequence in the remark. The card carries **no citation at all**, which `QUAL-10` asks for
+  on a theory card; there is no Iversen or Kashiwara–Schapira text on this machine, so the gap is recorded and no number
+  is invented for it.
 
 ## 10. The 82 files (4273 lines at `c9e3611a3d`), enumerated
 
