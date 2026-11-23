@@ -45,7 +45,7 @@ $$
 
 ::: {.theorem title="Exactness of the Amitsur complex"}
 If $\varphi$ is faithfully flat, the Amitsur complex of every $A$-module $M$ is exact (Stacks Project, Lemma 35.3.6, tag 023M).
-In particular the sequence $0 \to M \to M \otimes_A B \rightrightarrows M \otimes_A B \otimes_A B$, with the two maps $m \otimes b \mapsto m \otimes b \otimes 1$ and $m \otimes b \mapsto m \otimes 1 \otimes b$, is an equalizer.
+In particular the sequence $0 \to M \to M \otimes_A B \rightrightarrows M \otimes_A B \otimes_A B$ is an equalizer, the two parallel maps being $e_0$ and $e_1$ of $d^1=e_0-e_1$, that is $m \otimes b \mapsto m \otimes 1 \otimes b$ and $m \otimes b \mapsto m \otimes b \otimes 1$; both have source $M\otimes_AB$ and target $M\otimes_AB\otimes_AB$.
 :::
 
 ::: {.definition title="Descent data"}
@@ -67,6 +67,8 @@ $$
 \theta_{12}=\id_B\otimes\theta\colon B\otimes_AN\otimes_AB\longrightarrow B\otimes_AB\otimes_AN,
 $$
 with $\theta_{02}=\theta_{12}\circ\theta_{01}$, where $\theta_{01}$ is the pullback along $b\otimes b'\mapsto b\otimes b'\otimes1$, $\theta_{12}$ the pullback along $b\otimes b'\mapsto1\otimes b\otimes b'$, and $\theta_{02}\colon N\otimes_AB\otimes_AB\to B\otimes_AB\otimes_AN$ the pullback along the middle insertion $b\otimes b'\mapsto b\otimes1\otimes b'$, determined by $\theta_{02}(n\otimes1\otimes1)=\sum_ia_i\otimes1\otimes n_i$ if $\theta(n\otimes1)=\sum_ia_i\otimes n_i$ (Stacks Project, Definition 35.3.1, tag 023G).
+A datum written in the opposite tensor order is $\psi=\theta^{-1}\colon p_2^*N=B\otimes_AN\to N\otimes_AB=p_1^*N$, and the two conventions are compared by the flip $\tau\colon B\otimes_AB\to B\otimes_AB$, $b\otimes b'\mapsto b'\otimes b$, together with the swap $s\colon N\otimes_AB\to B\otimes_AN$, $n\otimes b\mapsto b\otimes n$, which satisfies $s(c\cdot x)=\tau(c)\cdot s(x)$ and is therefore a map of $B\otimes_AB$-modules only after the twist by $\tau$.
+The pullbacks of $\psi$ are the inverses of those of $\theta$ along the same three insertions, $\psi_{01}=\theta_{01}^{-1}\colon B\otimes_AN\otimes_AB\to N\otimes_AB\otimes_AB$, $\psi_{12}=\theta_{12}^{-1}\colon B\otimes_AB\otimes_AN\to B\otimes_AN\otimes_AB$ and $\psi_{02}=\theta_{02}^{-1}\colon B\otimes_AB\otimes_AN\to N\otimes_AB\otimes_AB$, so inverting $\theta_{02}=\theta_{12}\circ\theta_{01}$ gives $\psi_{02}=\psi_{01}\circ\psi_{12}$, the order in which $\psi_{12}$ ends where $\psi_{01}$ begins.
 For an $A$-module $M$, the $B$-module $M\otimes_AB$ carries the canonical descent datum
 $$
 \operatorname{can}\colon (M\otimes_AB)\otimes_AB\longrightarrow B\otimes_A(M\otimes_AB),
