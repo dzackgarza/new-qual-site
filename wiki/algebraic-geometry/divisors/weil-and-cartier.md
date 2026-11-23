@@ -31,7 +31,7 @@ For an integral projective curve $X$ over an algebraically closed field with nor
 $$
 0\to\bigoplus_{p\in X}\tilde\OO_p^\times/\OO_{X,p}^\times\to\Pic(X)\to\Pic(\tilde X)\to0 ,
 $$
-where $\tilde\OO_p$ is the integral closure of $\OO_{X,p}$ ([[FE-ADOKK]], [@Har77, Exercise IV.1.8]).
+where $\tilde\OO_p$ is the integral closure of $\OO_{X,p}$ ([[FE-ADOKK]], [@Har77, Exercise II.6.9(a)]).
 For an open subset $U = X \sm Z$ of a smooth variety, the comparison is the excision sequence
 $$
 \ZZ^{\theset{\text{components of } Z \text{ of codimension } 1}} \to \Cl(X) \to \Cl(U) \to 0 ,
