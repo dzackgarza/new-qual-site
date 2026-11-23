@@ -526,7 +526,7 @@ means the mathematics of the card was checked and corrects nothing; it is not a 
 four cards not repaired carry no claim that they are free of defects this reading did not look for.
 
 - **`D-VARBIRAT` — corrected.** The rational-map and birational definitions were cited as `[@Har77, Definition I.4]`
-  twice. Hartshorne's I.4 has **two unnumbered definitions** (`:1023`, `:1027` of the retained text: "Definition. Let X,Y
+  twice. Hartshorne's I.4 has **two unnumbered definitions** (`:1025`, `:1029` of the retained text: "Definition. Let X,Y
   be varieties. A rational map …" and "Definition. A birational map …"), so the number does not exist; both now read
   `[@Har77, §I.4]`, the section form the card already used elsewhere. Theorem **I.4.4** (`:1046`) is exactly the displayed
   bijection between dominant rational maps $X\dashrightarrow Y$ and $k$-algebra homomorphisms $k(Y)\to k(X)$, with the
