@@ -12,7 +12,7 @@ topics:
 Recall that a [[D-SCHSUB|closed subscheme]] of $X$ is a closed subset with a quasicoherent sheaf of ideals on it, and that a subscheme is a closed subscheme of an open subscheme ([[D-MORIMM]]); the two halves behave differently, since an open subset carries exactly one scheme structure while a closed subset carries as many as there are quasicoherent ideal sheaves cutting it out ([[D-SCHSUB]]).
 That asymmetry is the source of the two constructions this chapter is about.
 The reduced induced structure picks the smallest of the closed structures on a given closed set, and it is the one that ignores multiplicity.
-The scheme-theoretic image of a morphism picks the closed subscheme of the target that the morphism factors through universally, and it is the one that records multiplicity — it keeps tangency and loses it exactly when the source is reduced.
+The scheme-theoretic image of a morphism picks the closed subscheme of the target that the morphism factors through universally, and it is the one that records multiplicity; whether that image is reduced is a separate question from whether the source is, and the two are separated below.
 
 ## Open and closed subschemes
 
@@ -45,8 +45,15 @@ The scheme-theoretic image of $f$ is the unique smallest closed subscheme throug
 
 Three properties follow from the definition and are what it is used for.
 For affine $f$, induced by $\varphi\colon A\to B$, the image is $\Spec(A/\ker\varphi)$, whose underlying space is the closure of the set-theoretic image rather than the image itself: for $k[t]\to k[t,t^{-1}]$ the kernel is zero, so the scheme-theoretic image is $\Spec k[t]$ while the set-theoretic image is the open set $D(t)$.
-For $X$ reduced, the scheme-theoretic image is the closure of the set-theoretic image with its reduced induced structure [@Har77, Exercise II.3.11], so the two constructions of this chapter agree exactly in the reduced case.
-And the image records multiplicity when the source is not reduced: the morphism $\Spec k[\varepsilon]/(\varepsilon^2)\to\AA^1$ sending $\varepsilon$ to $t$ has scheme-theoretic image $V(t^2)$, because the kernel of $k[t]\to k[\eps]/\eps^2$ is $(t^2)$, while the reduced structure on the set-theoretic image is the single point $V(t)$ ([[D-SCHIMG]]).
+For $X$ reduced, the scheme-theoretic image is the closure of the set-theoretic image with its reduced induced structure [@Har77, Exercise II.3.11]: a reduced source gives a reduced image, and in that case the two constructions of this chapter agree.
+
+Reducedness of the source is sufficient, not necessary, for reducedness of the image.
+The morphism $\Spec k[\varepsilon]/(\varepsilon^2)\to\Spec k$ has scheme-theoretic image $\Spec k$, which is reduced although the source is not, so the image can lose multiplicity that the source has.
+What a nonreduced source can supply is a nonreduced image, and then the image carries information the underlying set does not: the morphism $\Spec k[\varepsilon]/(\varepsilon^2)\to\AA^1$ sending $\varepsilon$ to $t$ has scheme-theoretic image $V(t^2)$, because the kernel of $k[t]\to k[\varepsilon]/\varepsilon^2$ is $(t^2)$, while the reduced structure on the set-theoretic image is the single point $V(t)$ ([[D-SCHIMG]]).
+
+Multiplicity in a fibre is a third assertion, with hypotheses of its own, and it is not decided by reducedness of the source either.
+For $X=\Spec k[s,t]/(s-t^2)\to Y=\Spec k[s]$ over an algebraically closed field $k$, the fibre over $s=a$ for $a\neq0$ is two reduced points with residue field $k$, while the fibre over $s=0$ is the nonreduced one-point scheme $\Spec k[\varepsilon]/(\varepsilon^2)$ [@Har77, Exercise II.3.10].
+The two fibres have the same length $2$, the degree of the finite flat morphism, so constancy of the fibre length does not force the fibres to be reduced; [[D-MORFLAT]] records the same failure of reducedness in the flat family $V(y^2-tx)\to\AA^1_t$, whose special fibre is the nonreduced double line $y^2=0$.
 
 The set-theoretic image is not the right object to work with in general, because it need not be locally closed: the morphism $\AA^2\to\AA^2$, $(x,y)\mapsto(x,xy)$, has image the complement of the $y$-axis together with the origin, which is neither open nor closed ([[D-SCHIMG]]).
 Chevalley's theorem repairs this as far as possible: for a morphism of finite type of noetherian schemes the image of a constructible set is constructible, so in particular $f(X)$ is constructible [@Har77, Exercise II.3.19].

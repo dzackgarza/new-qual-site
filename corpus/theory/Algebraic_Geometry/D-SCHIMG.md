@@ -47,6 +47,11 @@ For $f: \Spec B \to \Spec A$ induced by $\varphi: A \to B$, the image is $\Spec(
 The set-theoretic image of a morphism need not be closed, open, or locally closed: $\AA^2 \to \AA^2$, $(x,y) \mapsto (x, xy)$, has image the plane minus the $y$-axis, together with the origin.
 By Chevalley's theorem, the image of a constructible set under a finite-type morphism of Noetherian schemes is constructible.
 
-The scheme-theoretic image of the morphism $\Spec k[\eps]/\eps^2 \to \AA^1$ given by $t\mapsto\eps$ is the double point $V(t^2)$, because the kernel of $k[t] \to k[\eps]/\eps^2$ is $(t^2)$.
+The scheme-theoretic image of the morphism $\Spec k[\varepsilon]/\varepsilon^2 \to \AA^1$ given by $t\mapsto\varepsilon$ is the double point $V(t^2)$, because the kernel of $k[t] \to k[\varepsilon]/\varepsilon^2$ is $(t^2)$.
 The closure of its set-theoretic image, with the reduced induced structure, is the reduced point $V(t)$.
+The implication of the proposition is one-way: the morphism $\Spec k[\varepsilon]/\varepsilon^2 \to \Spec k$ has scheme-theoretic image $\Spec k$, which is reduced although the source is not, so a nonreduced source need not produce a nonreduced image.
+
+Multiplicity in a fibre is a separate assertion from multiplicity in the image, and it is not decided by reducedness of the source either.
+For $\Spec k[s,t]/(s-t^2) \to \Spec k[s]$ over an algebraically closed field $k$, the fibre over $s=a\neq0$ is two reduced points with residue field $k$, while the fibre over $s=0$ is the nonreduced one-point scheme $\Spec k[\varepsilon]/\varepsilon^2$ [@Har77, Exercise II.3.10].
+Both fibres have length $2$, the degree of the finite flat morphism, so constant fibre length does not force the fibres to be reduced.
 :::
