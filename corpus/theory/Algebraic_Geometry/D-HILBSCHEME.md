@@ -31,6 +31,7 @@ The Hilbert functor $\operatorname{Hilb}_{X/S}$ is the disjoint union of the $\o
 ::: {.theorem title="Grothendieck: representability in the projective case"}
 Let $S$ be a Noetherian scheme, $X\to S$ a projective morphism with a relatively very ample invertible sheaf $\OO_X(1)$, and $P\in\QQ[m]$.
 Then $\operatorname{Hilb}^P_{X/S}$ is represented by a projective $S$-scheme, the \dfn{Hilbert scheme} $\operatorname{Hilb}^P(X/S)$, and $\operatorname{Hilb}_{X/S}$ by the disjoint union over $P$; the universal family is a closed subscheme $\mathcal{Z}\subseteq X\times_S\operatorname{Hilb}^P(X/S)$, flat over $\operatorname{Hilb}^P(X/S)$, pulling back to $Z$ along the unique morphism $T\to\operatorname{Hilb}^P(X/S)$ classifying $Z$.
+The general Hilbert functor is defined by Stacks Project, Situation 99.9.1 (tag 0CZY), and Proposition 99.9.4 (tag 0D01) gives its algebraic-space representability when the morphism is separated and of finite presentation; the projective-scheme conclusion above is Grothendieck's refinement for the polynomial-graded subfunctor, not a conclusion of 0D01 alone.
 The functor represented is the functor of the definition, closed subschemes $Z\subseteq X\times_ST$ flat over $T$ whose fibres have Hilbert polynomial $P$, and $P$ is meaningful only because $\OO_X(1)$ is part of the data.
 This is Grothendieck's theorem; the proof goes by bounding the family and then applying the representability of quotients of a fixed sheaf, and it is not proved here.
 :::
