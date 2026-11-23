@@ -28,8 +28,8 @@ On affine pieces this is a semigroup map $S_2 \to S_1$ inducing $k[S_2] \to k[S_
 :::
 
 ::: {.proposition title="Completeness"}
-$X_\Sigma$ is complete iff $\abs{\Sigma} = N_\RR$.
-More generally $\phi$ is proper iff $\inverseof{\phi_\RR}(\abs{\Sigma_2}) = \abs{\Sigma_1}$.
+$X_\Sigma$ is complete iff $\abs{\Sigma} = N_\RR$ [Cox--Little--Schenck, *Toric Varieties*, Theorem 3.4.6, whose condition (d) is $\abs\Sigma=N_\RR$].
+More generally $\phi$ is proper iff $\inverseof{\phi_\RR}(\abs{\Sigma_2}) = \abs{\Sigma_1}$ [*ibid.*, Theorem 3.4.11, whose condition (d) is $\inverseof{\overline{\phi}_\RR}(\abs{\Sigma^\prime}) = \abs{\Sigma}$].
 :::
 
 ::: {.remark title="One-parameter subgroups"}
