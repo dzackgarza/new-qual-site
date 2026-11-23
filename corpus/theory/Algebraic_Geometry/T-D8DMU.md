@@ -36,6 +36,6 @@ $$
 :::
 
 ::: {.remark}
-The statement is the conjunction of the two cited propositions and is not proved here; what follows checks that they compose to it.
+The two propositions compose to give the statement: Proposition III.6.7 applied with the first variable $\OO_X$ reads $\Ext^i(\OO_X\tensor\mcl,\mcg)\cong\Ext^i(\OO_X,\dualof{\mcl}\tensor\mcg)$, and Proposition III.6.3 identifies $\Ext^i(\OO_X,-)$ with $H^i(X,-)$.
 The two propositions give the statement together: Proposition III.6.7 applied with the first variable $\OO_X$ reads $\Ext^i(\OO_X\tensor\mcl,\mcg)\cong\Ext^i(\OO_X,\dualof{\mcl}\tensor\mcg)$, and Proposition III.6.3 identifies $\Ext^i(\OO_X,-)$ with $H^i(X,-)$.
 :::
