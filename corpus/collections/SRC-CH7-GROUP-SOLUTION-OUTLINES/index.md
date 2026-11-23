@@ -31,7 +31,7 @@ source:
       comment: Exercise 13 (printed as exercise 15 when the card was created; the
         groups-of-order-60 exercise is 13 in Gallian 7e)
     - id: P-CH7-16
-      comment: Exercise 16
+      comment: Exercise 14 in Gallian 7e (the retained Ch7Sltns.pdf entry is item 16)
     - id: P-CH7-17
       comment: Exercise 17
     - id: P-CH7-20
@@ -48,7 +48,7 @@ source:
     - id: P-CH7-28
       comment: Exercise 28
     - id: P-CH7-30
-      comment: Exercise 30
+      comment: Exercise 28 in Gallian 7e (the retained Ch7Sltns.pdf entry is item 30)
     - id: P-CH7-33
       comment: Exercise 33
     - id: P-CH7-44
