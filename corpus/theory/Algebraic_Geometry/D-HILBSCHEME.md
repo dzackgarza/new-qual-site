@@ -31,9 +31,9 @@ The Hilbert functor $\operatorname{Hilb}_{X/S}$ is the disjoint union of the $\o
 ::: {.theorem title="Grothendieck: representability in the projective case"}
 Let $S$ be a Noetherian scheme, $X\to S$ a projective morphism with a relatively very ample invertible sheaf $\OO_X(1)$, and $P\in\QQ[m]$.
 Then $\operatorname{Hilb}^P_{X/S}$ is represented by a projective $S$-scheme, the \dfn{Hilbert scheme} $\operatorname{Hilb}^P(X/S)$, and $\operatorname{Hilb}_{X/S}$ by the disjoint union over $P$; the universal family is a closed subscheme $\mathcal{Z}\subseteq X\times_S\operatorname{Hilb}^P(X/S)$, flat over $\operatorname{Hilb}^P(X/S)$, pulling back to $Z$ along the unique morphism $T\to\operatorname{Hilb}^P(X/S)$ classifying $Z$.
-The general Hilbert functor is defined by Stacks Project, Situation 99.9.1 (tag 0CZY), and Proposition 99.9.4 (tag 0D01) gives its algebraic-space representability when the morphism is separated and of finite presentation; the projective-scheme conclusion above is Grothendieck's refinement for the polynomial-graded subfunctor, not a conclusion of 0D01 alone.
+The general Hilbert functor is defined by Stacks Project, Situation 99.9.1 (tag 0CZY), and Proposition 99.9.4 (tag 0D01) gives its algebraic-space representability when the morphism is separated and of finite presentation; these statements do not assert the projective-scheme conclusion of Grothendieck's theorem for the polynomial-graded subfunctor.
 The functor represented is the functor of the definition, closed subschemes $Z\subseteq X\times_ST$ flat over $T$ whose fibres have Hilbert polynomial $P$, and $P$ is meaningful only because $\OO_X(1)$ is part of the data.
-This is Grothendieck's theorem; the proof goes by bounding the family and then applying the representability of quotients of a fixed sheaf, and it is not proved here.
+The Hilbert scheme represents the polynomial-graded projective Hilbert functor by a projective scheme, while the Stacks statement represents the general Hilbert functor by an algebraic space.
 :::
 
 ::: {.theorem title="The Stacks Project's Hilbert functor"}
@@ -41,7 +41,7 @@ Let $S$ be a scheme and $f\colon X\to B$ a morphism of algebraic spaces over $S$
 The functor $\operatorname{Hilb}_{X/B}$ of Stacks Project Situation 99.9.1 (tag 0CZY) sends $T$ to the closed subspaces $Z\subseteq X\times_BT$ such that $Z\to T$ is flat, proper and of finite presentation; its data contain no Hilbert polynomial and no relatively ample sheaf.
 If $f$ is separated as well as of finite presentation, then this functor is an algebraic space locally of finite presentation over $B$ (Stacks Project, Proposition 99.9.4, tag 0D01).
 A representing object carries a universal family: the identity morphism corresponds under Yoneda to a closed subspace $\mathcal{Z}\subseteq X\times_B\operatorname{Hilb}_{X/B}$, flat over the base, whose pullback along $T\to\operatorname{Hilb}_{X/B}$ is the family classified by that morphism.
-For $X\to S$ projective with $\OO_X(1)$ fixed and $P\in\QQ[m]$, $\operatorname{Hilb}^P_{X/S}$ is the subfunctor of this one on which the fibres have polynomial $P$, and Grothendieck's theorem represents that subfunctor by a projective scheme; the algebraic-space statement above does not supply projectivity and is not a substitute for it.
+For $X\to S$ projective with $\OO_X(1)$ fixed and $P\in\QQ[m]$, $\operatorname{Hilb}^P_{X/S}$ is the subfunctor of this one on which the fibres have polynomial $P$, and Grothendieck's theorem represents that subfunctor by a projective scheme; Proposition 99.9.4 does not supply projectivity and is not a substitute for it.
 :::
 
 ::: {.example}
