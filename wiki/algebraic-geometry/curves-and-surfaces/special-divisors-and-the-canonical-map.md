@@ -11,7 +11,7 @@ topics:
 
 A divisor $D$ on a smooth projective curve $C$ of genus $g$ is special when $h^1(C,\OO_C(D))>0$, and Serre duality reads that condition as $\ell(D)>\deg D+1-g$, so a special divisor carries more sections than its degree forces ([[D-CRVSPEC]]).
 Above degree $2g-2$ no divisor is special, and below it the correction term $\ell(K_C-D)$ is what Riemann--Roch leaves undetermined; Clifford's theorem bounds it from above, and beyond the trivial and the canonical divisor the bound is attained only by multiples of a hyperelliptic pencil.
-The canonical system sits at the top of the special range: for a divisor of degree $2g-2$ Clifford gives $\ell(D)\le g$ with equality exactly when $D\sim K$, so $|K_C|$ is the unique linear system of that degree and dimension.
+The canonical system sits at the top of the special range: for a divisor of degree $2g-2$ Clifford gives $\ell(D)\le g$ with equality exactly when $D\sim K$, so $\linearsystem{K_C}$ is the unique linear system of that degree and dimension.
 It is base-point free for $g\ge2$, and for $g\ge3$ the map it defines embeds $C$ exactly when $C$ carries no degree-two map to $\PP^1$.
 
 ## The index of speciality
@@ -31,7 +31,7 @@ The theorem as printed in [@Har77, Theorem IV.5.4] is $\dim\linearsystem{D}\le\t
 The hypothesis that $D$ be special is not removable: a nonspecial divisor of degree $2g+2$ has $\ell(D)=g+3$, while $\tfrac12\deg D+1=g+2$, so the bound fails outside the special range.
 
 The equality case is attained and can be computed.
-On a hyperelliptic curve of genus $g\ge2$ with pencil $g^1_2$, the linear system $\linearsystem{m\,g^1_2}$ has degree $2m$ and $\ell=2m+1-g+\ell\bigl((g-1-m)g^1_2\bigr)=m+1$ for $1\le m\le g-1$, which is Clifford's bound exactly; at $m=g-1$ this is the identity $|K|=(g-1)g^1_2$ ([[D-CRVHYP]]).
+On a hyperelliptic curve of genus $g\ge2$ with pencil $g^1_2$, the linear system $\linearsystem{m\,g^1_2}$ has degree $2m$ and $\ell=2m+1-g+\ell\bigl((g-1-m)g^1_2\bigr)=m+1$ for $1\le m\le g-1$, which is Clifford's bound exactly; at $m=g-1$ this is the identity $\linearsystem{K}=(g-1)g^1_2$ ([[D-CRVHYP]]).
 
 The theorem is stated for effective divisors, and that is enough: a special divisor with $\ell(D)\ge1$ is linearly equivalent to an effective one, so the bound $\ell(D)\le\tfrac12\deg D+1$ holds for every special divisor whose linear system is nonempty ([[T-CRVCLIFF]]).
 Read as a bound on the degree it says that a special $g^r_d$ has $d\ge2r$, and that a $g^r_d$ with $d\le2r-1$ is nonspecial, its dimension being then computed by Riemann--Roch alone.
@@ -42,7 +42,7 @@ Read as a bound on the degree it says that a special $g^r_d$ has $d\ge2r$, and t
 
 For $g\ge2$ the canonical system has no base points [@Har77, Lemma IV.5.1], so it defines a morphism $\varphi_K\colon C\to\PP^{g-1}$, and $\ell(K)=g$ gives the dimension of the target.
 The morphism is very ample if and only if $C$ is not hyperelliptic [@Har77, Proposition IV.5.2], so for a nonhyperelliptic curve of genus $g\ge3$ it is a closed embedding whose image has degree $\deg K=2g-2$, the canonical model of $C$.
-In genus $0$ the system $|K|$ is empty and in genus $1$ it consists of the single divisor $K\sim0$, so the canonical map is defined and interesting only from genus $2$ on.
+In genus $0$ the system $\linearsystem{K}$ is empty and in genus $1$ it consists of the single divisor $K\sim0$, so the canonical map is defined and interesting only from genus $2$ on.
 
 The proof of very ampleness is a separation count, and it is the reason the hyperelliptic pencil is the only obstruction.
 For $K$ to be very ample one needs $\ell(K-p-q)=g-2$ for every pair of points, including $p=q$, equivalently $\dim\linearsystem{K-p-q}=g-3$; Riemann--Roch gives $\ell(K-p-q)=g-3+\ell(p+q)$, so the condition is $\ell(p+q)=1$, and a pair with $\ell(p+q)=2$ spans a $g^1_2$ [@Har77, Proposition IV.5.2], so the canonical map is an embedding exactly when no such pair exists ([[T-D8TUX]]).
@@ -54,7 +54,7 @@ The same criterion gives the general statement used on curves: a divisor $D$ of 
 
 A hyperelliptic curve of genus $g\ge2$ has exactly one $g^1_2$, and its canonical morphism factors as the degree-two map to $\PP^1$ followed by the $(g-1)$-uple embedding, with image a rational normal curve of degree $g-1$ [@Har77, Proposition IV.5.3].
 So the canonical image of a hyperelliptic curve is a rational normal curve of degree $g-1$ in $\PP^{g-1}$, and the canonical map is the degree-two map $C\to\PP^1$ followed by the $(g-1)$-uple embedding: it is two-to-one onto that rational normal curve and is not an embedding, so the image is not a model of $C$; what the canonical map records is the genus and the quotient by the hyperelliptic involution.
-Every curve of genus $2$ is hyperelliptic, since $|K|$ is then itself a $g^1_2$ [@Har77, §IV.5], so all genus-two curves have the same canonical image, a rational normal curve of degree $1$.
+Every curve of genus $2$ is hyperelliptic, since $\linearsystem{K}$ is then itself a $g^1_2$ [@Har77, §IV.5], so all genus-two curves have the same canonical image, a rational normal curve of degree $1$.
 
 The upshot for classification is that for $g\ge3$ a curve is determined by its canonical model unless it is hyperelliptic, and in the hyperelliptic case the canonical map sees only the quotient by the involution ([[D-CRVHYP]]).
 
@@ -92,4 +92,4 @@ The converse restricts sharply which canonical curves are complete intersections
 [[D-CRVBRILLNOETHER]]
 
 The Brill--Noether number $\rho(g,r,d)=g-(r+1)(g-d+r)$ is the expected dimension of the locus of $g^r_d$'s: over $\CC$ the theorem says that when $\rho\ge0$ every curve of genus $g$ has a $g^r_d$ and every component of $W^r_d(C)$ has dimension at least $\rho$, that a general curve has $\dim W^r_d=\rho$, and that on a general curve $W^r_d\setminus W^{r+1}_d$ is smooth of dimension $\rho$ ([[D-CRVBRILLNOETHER]]).
-Clifford's theorem is the reverse inequality in the case where $\rho$ is not the whole story: a special $g^r_d$ satisfies $d\ge2r$, with equality only for the trivial series, the canonical series, or a multiple of the hyperelliptic pencil, and $|K|$ itself is the case $r=g-1$, $d=2g-2$, $\rho=0$.
+Clifford's theorem is the reverse inequality in the case where $\rho$ is not the whole story: a special $g^r_d$ satisfies $d\ge2r$, with equality only for the trivial series, the canonical series, or a multiple of the hyperelliptic pencil, and $\linearsystem{K}$ itself is the case $r=g-1$, $d=2g-2$, $\rho=0$.
