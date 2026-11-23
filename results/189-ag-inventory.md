@@ -642,6 +642,131 @@ Definition **11.4.9(a)** together with the paragraph after it, and terminality o
 With these four, nineteen of the 327 transclusions are read and **308 remain**; §9 item 5's list is otherwise unchanged,
 and the reading owed is still one card at a time.
 
+### 9.4 The batch after the sixth version: ten transclusions, nine repaired and one MET
+
+The ten cards below were opened whole at `a6d7a2e75b` and each one read against the numbered statements it cites.
+"Repaired" means the defect was a citation or a hypothesis and the mathematics stands; it is not a certification that the
+rest of the card is free of defects this reading did not look for. `D-CRVBRILLNOETHER` is **MET** and unchanged.
+This is a reading batch of the record and **not** a completion claim for the 82 pages: their reading is the sixth
+version's (§1, §8), the page count and the transclusion count are re-measured below, and #189's 82-page condition stands
+as it did.
+
+| Card | Source statement read | What was read or repaired | SHA |
+|---|---|---|---|
+| `FE-SRFFERMATQUARTIC` | Har77 **Prop. II.8.20**, **Thm III.5.1(b)**, **Cor. III.7.7**, **Ex. A.4.1.2**, **Prop. V.1.5** | No numbered citation anywhere on the card; all five now cited. The count of 48 lines was asserted, now proved on the card. Rank-20 span verified by exact arithmetic | `ce0c91629c` |
+| `T-FULBETTI` | CLS **Thm 12.3.12**, **Thm 12.3.11**, **Thm 12.3.2**, **Thm 4.1.3** | Coefficients: the two source theorems are over $\QQ$, the card's $\beta_j$ are $\ZZ$-ranks; the integer degeneration at $E_2$ (Franz, recorded in the same section) is now named. The uncited special-cases theorem now cites 12.3.2 and 4.1.3 | `d06fa75ff6` |
+| `T-TORCOHOM` | CLS **Thm 12.4.4** (Jurkiewicz--Danilov), **Thm 12.5.3**, (12.4.2)--(12.4.3) | The theorem carried no number; it is 12.4.4, and the Chow comparison is 12.5.3 over $\QQ$. The $\FF_a$ non-cones are the diagonal pairs, not "the opposite pairs" when $a\neq0$ | `23146a24cb` |
+| `D-TORMOMENT` | CLS **Thm 12.2.5**, **Prop. 12.2.3**, **Ex. 12.2.8**, **Thm 5.1.11** | Fulton §4.2 unverifiable (no copy on the machine); the numbered backing is CLS §12.2, with 12.2.8 carrying Theorem 12.2.5 to the symplectic $\mu$ the card writes. The Kähler identification is recorded as uncited, not given a number | `ca351c6711` |
+| `D-FULSTAR` | CLS **Prop. 3.2.7**, **Ex. 3.2.7**, **Thm 3.2.6(b),(d)**, **Def. 3.3.13**, **Prop. 3.3.15**, §8.0 | The proposition and the remark carried no citation; the orbit closure is 3.2.7, the star a fan by Exercise 3.2.7, the subdivision 3.3.15, the intersections 3.2.6(d) | `15c00208d5` |
+| `PR-O8V3I` | CLS **Thm 3.2.6**, **Prop. 3.2.2**, **Thm 4.1.3** | No citation on either block; all three statements cited. The $\ZZ/d$ cokernel is now computed on the ray matrix $[\,0\ d;\ 1\ -1\,]$ | `f531736586` |
+| `PR-FULCRIT` | CLS **Thm 3.1.5**, **Def. 1.2.16**, **Thm 1.3.12**, **Thm 3.1.19**, **Prop. 4.2.7**, **Thm 3.4.6**, **Prop. 3.1.6**, **Thm 6.1.7**, **Thm 6.1.14**, **Def. 6.1.12**, **Prop. 6.1.10**, **Def. 2.2.17**, **Cor. 2.2.13**, **Prop. 2.2.18**, **Thm 6.1.15**, **Def. 8.3.1**, **Thm 8.3.4**; Har77 **Thm V.1.10** | Every row of both tables now carries its number. "Ample $\Rightarrow$ very ample on a smooth complete toric variety" is **6.1.15** exactly. $\FF_m$ is taken with $m\ge0$, where $D_2$ is the negative section | `7cc59e021f` |
+| `PR-FULKSQ` | CLS **Thm 8.2.3**, **Lemma 10.4.1**, **Thm 10.4.4**, **Thm 10.4.3**; Har77 **Ex. A.4.1.2** | The proof is the card's own and correct; it now cites $K_X=-\sum D_\rho$ (8.2.3), the self-intersections and adjacencies (10.4.4 with 10.4.1), and the classification (10.4.3). The `[@Ful93, §2.5]` hung on the sentence saying the sum rule needs no Noether formula is gone; Noether's formula is Har77 A.4.1.2 | `a8c88f3772` |
+| `D-CRVBRILLNOETHER` | no retained source states the theorem | **MET**, unchanged: $\rho=g-(r+1)(g-d+r)$, the hypothesis $g-d+r\ge0$, the degeneracy-locus description and the three attributions are correct, and the example's $2d-g-2$ and $\lceil(g+2)/2\rceil=\lfloor(g+3)/2\rfloor$ check. The remark's claim that neither ACGH nor Griffiths--Harris is retained was verified by absence | — |
+| `D-8XX95` | Stacks **Lemma 26.22.1** (01KZ), **Lemma 26.22.2** (01L0), **Lemma 29.43.1** (0BX5), **Lemma 32.15.2** (0207), **Lemma 32.15.3** (0208); Har77 **Ex. II.4.6.1**, **Ex. II.4.11**, §II.4 | **Hypothesis repaired**: the DVR criterion constrains the *base*, not the source. "Of finite type with $X$ Noetherian" is replaced by "$Y$ locally Noetherian and $f$ of finite type", the printed hypothesis of tags 0207 and 0208; Har77 II.4.11 is the Noetherian-schemes form | `a6d7a2e75b` |
+
+**The decisions of this batch, item by item.**
+
+1. **`FE-SRFFERMATQUARTIC`.** (i) The card carried no numbered citation at all — the `QUAL-10` defect for an example that
+   computes. $\omega_X=\OO_X$ now cites Har77 **Proposition II.8.20** (for a divisor $Y$: $\omega_Y\cong\omega_X\otimes
+   \mathcal L\otimes\OO_Y$) with $\omega_{\PP^3}=\OO(-4)$; $H^1(X,\OO_X)=0$ cites **Theorem III.5.1(b)**, which gives both
+   $H^1(\OO_{\PP^3})=0$ and $H^2(\OO_{\PP^3}(-4))=0$; $h^2=h^0(\omega_X)$ is **Corollary III.7.7**; Noether's formula is
+   **Example A.4.1.2**, $\chi(\OO_X)=\tfrac1{12}(K_X^2+c_2)$; $L^2=-2$ is **Proposition V.1.5**. (ii) "Exactly $48$" was an
+   assertion with no source on the machine, so the card now proves it: two of the four restrictions $\ell_i=
+   \restrictionof{x_i}{L}$ are independent, and after a permutation of coordinates — $X$ is $S_4$-invariant and a
+   permutation permutes the three families — one solves $s^4+t^4+(as+bt)^4+(cs+dt)^4\equiv0$, whose five coefficient
+   equations have exactly the solutions $(a,0,0,d)$ and $(0,b,c,0)$ with the two nonzero entries fourth roots of $-1$;
+   sixteen each, plus the displayed family, is the $48$. (iii) "The lines span a sublattice of rank $20$" was verified
+   here by exact arithmetic in $\QQ(\zeta)$, $\zeta^4=-1$: the $48\times48$ matrix with diagonal $-2$ and $1$ exactly at
+   the pairs that meet — fourteen partners per line — has rank $20$ over $\QQ$, and divisor classes lie in $H^{1,1}$ of
+   dimension $20$, so $\rho=20$. The check is `.scratch-189/fermat.py`, not committed; the first run of it was wrong
+   (the root list silently held two roots twice, and the reported rank was $48$), which is why the card's claim had been
+   worth checking rather than quoting.
+2. **`T-FULBETTI`.** The formula is CLS **Theorem 12.3.12** verbatim, including $b_{2k}=b_{2n-2k}$, and the odd vanishing
+   is **Theorem 12.3.11(a)**; both are stated with $\QQ$-coefficients, while the card's $\beta_j$ are $\ZZ$-ranks. The
+   card now says so and names what closes the gap: the spectral sequence (12.3.11) degenerates at $E_2$ with integer
+   coefficients for smooth $X_\Sigma$ (Franz, recorded in the same section immediately before Theorem 12.3.11), so
+   $H^\bullet(X_\Sigma(\CC),\ZZ)$ is torsion-free, even, and $\beta_{2k}=b_{2k}$. The uncited second theorem gained
+   **Theorem 12.3.2** for $\Pic\cong H^2$ — read at its statement, whose hypothesis is that every maximal cone be
+   $n$-dimensional — and **Theorem 4.1.3** for $\beta_2=\size\Sigma(1)-n$. The two worked cases were recomputed.
+3. **`T-TORCOHOM`.** The card's "Jurkiewicz--Danilov" theorem carried no number: it is CLS **Theorem 12.4.4**, for smooth
+   complete $X_\Sigma$ and over $\ZZ$, induced by $x_i\mapsto[D_{\rho_i}]$, with the two ideals displayed in (12.4.2) and
+   (12.4.3); the Chow comparison is **Theorem 12.5.3**, $\QQ$-coefficients complete simplicial. One mathematical error:
+   for $\FF_a$ the pairs $\{\rho_1,\rho_3\}$ and $\{\rho_2,\rho_4\}$ are **not** opposite when $a\ne0$ — $\rho_3$ is
+   $-e_1+ae_2$ — they are the non-adjacent pairs, which is what makes $x_1x_3=x_2x_4=0$. The ring
+   $\ZZ[f,s]/(f^2,s^2-asf)$ and $D_4^2=a$, $D_2^2=-a$ were recomputed and stand.
+4. **`D-TORMOMENT`.** The only locator was `[@Ful93, §4.2]`, a section of a text that is not on this machine (§9 item 2).
+   The numbered backing is CLS §12.2: **Theorem 12.2.5** (the restricted algebraic moment map is a homeomorphism onto $P$,
+   carrying each torus orbit bijectively to the relative interior of the corresponding face), **Proposition 12.2.3(a)**
+   for $X_\Sigma/S_N\cong(X_\Sigma)_{S^0}$ and **(b)** for the fibre $S_{N(\sigma)}$ of dimension $n-\dim\sigma=k$ over a
+   point of the interior of a $k$-face. Both are stated for the algebraic moment map; **Exercise 12.2.8** is what carries
+   Theorem 12.2.5 to the symplectic $\mu$ the card writes, and the card now says which is which. The symplectic-reduction
+   paragraph of the remark cites the algebraic Cox quotient **Theorem 5.1.11** and records that the Kähler identification
+   itself has no numbered statement in the retained texts.
+5. **`D-FULSTAR`.** Neither block carried a citation. $V(\tau)=X_{\Star(\tau)}$ is CLS **Proposition 3.2.7**; that
+   $\Star(\tau)$ is a fan is **Exercise 3.2.7**; $\dim V(\tau)=n-\dim\tau$ is **Theorem 3.2.6(b)**; the star subdivision is
+   **Definition 3.3.13** with **Proposition 3.3.15**; $D_{\rho_1}\cap\cdots\cap D_{\rho_k}=V(\tau)$ or empty is
+   **Theorem 3.2.6(d)**; and the simple-normal-crossing statement is CLS **§8.0**, which says in as many words that
+   $D=\sum_\rho D_\rho$ is a simple normal crossing divisor on any smooth toric variety.
+6. **`PR-O8V3I`.** No citation on either block. **Theorem 3.2.6** (a), (b), (d) for the correspondence,
+   **Proposition 3.2.2** for the limit of $\lambda^u$ at a lattice point of $\operatorname{relint}(\sigma)$,
+   **Theorem 4.1.3** for $M\to\ZZ^{\Sigma(1)}\to\Cl(X_\Sigma)\to0$. The $\ZZ/d\ZZ$ cokernel is now shown and not asserted:
+   the matrix of the map on the bases $e_1^*,e_2^*$ and $u_1,u_2$ is $\begin{pmatrix}0&d\\1&-1\end{pmatrix}$, determinant
+   $-d$.
+7. **`PR-FULCRIT`.** Both tables now carry a number per row, each read at its statement: normal **3.1.5**; smooth
+   **1.2.16** with **1.3.12** and **3.1.19(a)**; simplicial $\Leftrightarrow$ $\QQ$-factorial **4.2.7**; complete
+   **3.4.6**; projective **3.1.6** with **6.1.14**; base point free **6.1.7** (a)$\Leftrightarrow$(d); ample **6.1.14**
+   with **6.1.12**; very ample **6.1.10(c)** with **2.2.17**; $|\det(v_1,\dots,v_n)|=1$ **1.2.16**. The remark's claims are
+   exact as stated: **Theorem 6.1.15** is "on a smooth complete toric variety, a divisor is ample if and only if it is
+   very ample", and the surface case is **Corollary 2.2.13** (every lattice polygon is normal) with **Proposition 2.2.18**
+   and 6.1.10(c). Reflexivity versus the site's Fano convention is **Definition 8.3.1** with **Theorem 8.3.4**, and
+   `D-VARFANO` was re-read to confirm that its block's standing hypothesis is a smooth complete $X$. One precision
+   repair: $\FF_m$ is taken with $m\ge0$, which is where $D_2$ is the negative section and $D_4\sim S+mF$; for $m<0$ the
+   self-intersections exchange. The ampleness criterion on $\FF_m$ cites Har77 **Theorem V.1.10** with
+   $D^2=2ab+mb^2$.
+8. **`PR-FULKSQ`.** The proof is the card's own and its arithmetic checks. $K_X=-\sum_iD_i$ is CLS **Theorem 8.2.3**;
+   $D_i^2=-a_i$ and the adjacency pattern $1$/$0$ are **Theorem 10.4.4(a),(b)** with the wall relation
+   $u_{i-1}+u_{i+1}=b_iu_i$ of **Lemma 10.4.1**; the induction uses the classification, **Theorem 10.4.3**; and the
+   alternative argument's Noether formula is Har77 **Example A.4.1.2**. The misattached bracket — `[@Ful93, §2.5]` on the
+   sentence asserting that the sum rule does *not* need Noether's formula — is gone: Fulton §2.5 supported nothing here.
+   $K^2=12-d$ with $d=3,4$ giving $9,8$ and each blowup subtracting one were recomputed.
+9. **`D-CRVBRILLNOETHER`.** Read whole; **MET**, and unchanged, which is the `QUAL-03` outcome and not a commit. The
+   Brill--Noether number $\rho=g-(r+1)(g-d+r)$, the hypothesis $g-d+r\ge0$ (equivalently $\rho\le g$, which is what keeps
+   the definition away from the range $d\ge2g-1$ where $W^r_d=\Pic^d$ has dimension $g$), the statement that $W^r_d$ is a
+   closed subscheme cut out as a degeneracy locus, and the three theorems with their attributions in the statement are
+   all correct. So is the example: $\rho(g,1,d)=2d-g-2$, nonnegative exactly for $d\ge\lceil(g+2)/2\rceil=
+   \lfloor(g+3)/2\rfloor$. The remark's claim that no edition of Arbarello--Cornalba--Griffiths--Harris or
+   Griffiths--Harris is retained was checked against `tmp/sources`: neither is present, and the retained mentions of
+   Brill--Noether (Fulton, *Algebraic Curves*, the pp. 55--62 excerpt, Exercise 8.30 the reciprocity theorem; Reid's
+   chapters) state no Brill--Noether theorem. **That is a check cleared by absence of evidence, not a checked citation**,
+   and it is the reason the card's theorem has no locator.
+10. **`D-8XX95`.** The batch's one mathematical defect, and it is a hypothesis. The second theorem read "Let $f\colon X\to
+    Y$ be of finite type with $X$ Noetherian", and no printed statement gives the discrete-valuation-ring criterion under
+    that hypothesis: Stacks **Lemma 32.15.2** (tag 0207, for separatedness) and **Lemma 32.15.3** (tag 0208, for
+    properness) assume $S$ **locally Noetherian** and $f$ of finite type, and the Noetherian-source shape is
+    Hartshorne's **Exercise II.4.11**, which sits under §II.4's standing hypothesis that all schemes are noetherian.
+    The card now states "$Y$ locally Noetherian and $f$ of finite type" and records both. The first theorem is correct as
+    stated — $f$ quasi-separated throughout, finite type for the properness direction — and now cites **Lemma 26.22.1**
+    (tag 01KZ) with **Lemma 26.22.2** (tag 01L0, where quasi-separatedness enters) and **Lemma 29.43.1** (tag 0BX5,
+    fetched live, whose printed hypotheses are finite type and quasi-separated). The unnumbered definition of proper is
+    cited by section, and the closed-not-universally-closed example is Har77 **Example II.4.6.1**.
+
+**Scope of this batch.** `T-TORDIV` was not redone: its second displayed sequence is CLS **Theorem 4.2.1** in `58bdc94cc8`
+already on `main`, and the Fulton section stands beside it. `T-JLB44J` was not invented — §9.2's exhaustive check that no
+such card and no Exercise III.1.6/III.1.8 exists on `main` stands, and nothing here revisits it. `PR-RJ3P7` at `640a75d6`
+and `T-FFDESCENT` at `73e340990c` were not reopened.
+
+**The unread set, measured at `a6d7a2e75b`.** `wiki/algebraic-geometry/` is still **82** files and **4311** lines, and the
+pages transclude **327** distinct card ids (`rg -o '\[\[[A-Z][A-Z0-9-]{2,}(\|[^\]]*)?\]\]'` over the 82 files, pipe
+target stripped, `sort -u`). The record has now read **28 distinct** card ids in full — the ten of §1, the five of §9.1,
+the four of §9.3 and the ten of this batch, where `D-FULSAT` is a second reading of a card §1 already read — so **299
+remain**, and **300** if the batch is counted without collapsing that repeat. That is a count of cards and not a list, and
+the reading owed is still one card at a time; §9 item 5's list of named remainders stands, with
+`FE-SRFFERMATQUARTIC`, `T-FULBETTI`, `T-TORCOHOM`, `D-TORMOMENT`, `D-FULSTAR`, `PR-O8V3I`, `PR-FULCRIT`, `PR-FULKSQ`,
+`D-CRVBRILLNOETHER` and `D-8XX95` now struck from it. Nothing in this batch changes the page count, the transclusion
+count, or the 82-page condition: no page was edited, the ten cards are transclusions of pages already read in §8, and the
+chapter's completion still requires every page and every one of the 327 cards.
+
+
 
 
 ```
