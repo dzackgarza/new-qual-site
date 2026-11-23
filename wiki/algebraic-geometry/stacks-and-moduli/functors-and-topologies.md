@@ -72,7 +72,7 @@ $$
 \qquad
 \theta_{12}=\id_B\tensor\theta\colon B\tensor_AN\tensor_AB\longrightarrow B\tensor_AB\tensor_AN,
 $$
-and the cocycle identity is $\theta_{02}=\theta_{12}\circ\theta_{01}$, where $\theta_{02}\colon N\tensor_AB\tensor_AB\to B\tensor_AB\tensor_AN$ is the map of the two outer factors, determined by $\theta_{02}(n\tensor1\tensor1)=\sum_ia_i\tensor1\tensor n_i$ when $\theta(n\tensor1)=\sum_ia_i\tensor n_i$ (Stacks Project, Definition 35.3.1, tag 023G).
+and the cocycle identity is $\theta_{02}=\theta_{12}\circ\theta_{01}$, where $\theta_{02}\colon N\tensor_AB\tensor_AB\to B\tensor_AB\tensor_AN$ is the pullback along $B\tensor_AB\to B\tensor_AB\tensor_AB$, $b\tensor b'\mapsto b\tensor1\tensor b'$, determined by $\theta_{02}(n\tensor1\tensor1)=\sum_ia_i\tensor1\tensor n_i$ when $\theta(n\tensor1)=\sum_ia_i\tensor n_i$ (Stacks Project, Definition 35.3.1, tag 023G).
 The canonical datum on $M\tensor_AB$ is
 $$
 \operatorname{can}\colon (M\tensor_AB)\tensor_AB\longrightarrow B\tensor_A(M\tensor_AB),
