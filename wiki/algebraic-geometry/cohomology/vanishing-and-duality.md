@@ -9,9 +9,9 @@ topics:
 
 # Vanishing and duality
 
-Vanishing computes cohomology away from the interesting degree: on an affine scheme every quasicoherent sheaf has vanishing higher cohomology, on a projective variety the twists have vanishing cohomology above the dimension, and on a smooth projective variety the ample twists have vanishing cohomology in every positive degree below the top.
-Duality computes the remaining group, by pairing it with the cohomology of a complementary sheaf against the top cohomology of the canonical sheaf.
-The two fit together as one statement on a smooth projective $X$ of dimension $n$: Serre duality says $H^i(X,\mcl)$ is dual to $H^{n-i}(X,\omega_X\tensor\dualof{\mcl})$, so a vanishing theorem in one degree is a generation statement in the complementary degree.
+On an affine scheme a quasicoherent sheaf has vanishing higher cohomology, and on a projective variety coherent cohomology vanishes above the dimension.
+Kodaira vanishing has two complementary forms: for a smooth projective variety $X$ of dimension $n$ over a field of characteristic zero and an ample line bundle $L$, $H^i(X,\omega_X\tensor L)=0$ for $i>0$, equivalently $H^i(X,L^{-1})=0$ for $i<n$ ([[T-KODVAN]]).
+Serre duality on a smooth projective $X$ of dimension $n$ identifies the dual of $H^i(X,\mcl)$ with $H^{n-i}(X,\omega_X\tensor\dualof{\mcl})$, so the two forms of Kodaira vanishing are equivalent.
 
 ## Serre's criterion for affineness
 
