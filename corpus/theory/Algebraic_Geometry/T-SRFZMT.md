@@ -26,22 +26,12 @@ prompts:
 
 ::: {.theorem title="Connected fibres of a proper birational morphism"}
 Let $f \colon X \to Y$ be a proper birational morphism of Noetherian integral schemes with $Y$ normal.
-Then every fibre $f^{-1}(y)$ is connected [@Har77, Corollary III.11.4], which prints the statement for a birational projective morphism of noetherian integral schemes; the proper form is what Stein factorization gives, as the remark below records.
+Then every fibre $f^{-1}(y)$ is connected [@Har77, Corollary III.11.4], which prints the statement for a birational projective morphism of noetherian integral schemes; the proper case follows from the Stein-factorization argument on this card.
 :::
 
-::: {.theorem title="Elimination of indeterminacy (Hironaka)"}
-Let $X$ and $Y$ be smooth projective varieties over an algebraically closed field $k$, and $F \colon X \dashrightarrow Y$ a birational map.
-Assume that $k$ has characteristic $0$, or that $\dim X = 2$.
-Then there exist a smooth projective variety $W$ and birational morphisms $g \colon W \to X$ and $f \colon W \to Y$ fitting into
-
-\begin{tikzcd}
-& W \arrow[dl, "g"'] \arrow[dr, "f"] & \\
-X \arrow[rr, dashed, "F"] & & Y
-\end{tikzcd}
-
-with $F \circ g = f$ on the open subset of $W$ where $F \circ g$ is defined.
-For $\dim X = 2$ this is [@Har77, Theorem V.5.5], a birational transformation of surfaces being factored into a finite sequence of monoidal transformations and their inverses.
-In characteristic $0$ and arbitrary dimension it is Hironaka's theorem on the resolution of indeterminacies, of which no numbered statement is retained here.
+::: {.theorem title="Elimination of indeterminacy on a surface"}
+Let $X$ and $Y$ be smooth projective surfaces over an algebraically closed field, and let $F \colon X \dashrightarrow Y$ be a birational map.
+Then there exist a smooth projective surface $W$ and birational morphisms $g \colon W \to X$ and $f \colon W \to Y$ with $F \circ g = f$ on the open subset of $W$ where $F \circ g$ is defined [@Har77, Theorem V.5.5].
 :::
 
 ::: {.theorem title="Factorization"}
@@ -56,7 +46,7 @@ The connectedness theorem follows from [[T-MORSTEIN|Stein factorization]]: in th
 For a birational morphism of smooth projective surfaces, the exceptional locus is a finite union of curves and its image is a finite set of points. A fibre over such a point can contain several irreducible curves. Surface factorization proceeds one $(-1)$-curve at a time: [[T-SRFCAST|Castelnuovo's contractibility criterion]] contracts one such curve to a smooth point, and induction factors the whole morphism into point blowups.
 
 Fundamental points are the points where the inverse map fails to be defined: the map is a morphism on a largest open $U$, and $X \setminus U$ is that finite set.
-The total transform of a fundamental point is connected by the preceding theorem and is positive-dimensional whenever the inverse is undefined there.
+The total transform of a fundamental point is connected by the connected-fibres theorem and is positive-dimensional whenever the inverse is undefined there.
 
 The factorization statement is the reason surfaces are classified up to birational equivalence rather than isomorphism, and why the invariants that matter — $p_g$, $q$, the plurigenera, $\kappa$ — are exactly those unchanged by blowup.
 :::
