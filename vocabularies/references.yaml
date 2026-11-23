@@ -789,6 +789,16 @@ references:
   publisher-place: New York
   title: A Basic Course in Algebraic Topology
   type: book
+- id: McM17
+  author:
+  - family: McMullen
+    given: Curtis T.
+  citation-key: McM17
+  issued:
+  - year: 2017
+  note: Course notes, Harvard University, Math 213a
+  title: Advanced Complex Analysis
+  type: document
 - id: Mil08a
   accessed:
   - year: 2026

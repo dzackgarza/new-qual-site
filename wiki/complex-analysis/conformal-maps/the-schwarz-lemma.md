@@ -34,7 +34,11 @@ The classification of $\Aut_\CC(\DD)$ is what the lemma is for, and [@SS03, ch. 
 
 [[T-SCHPK]]
 
-The derivative form is the lemma applied to $\psi_{f(z)}\circ f\circ\psi_z$, which reintroduces the normalization at the origin at each point, and the equivalent form on the card is contractivity of the [[D-2HXLN|hyperbolic distance]], with equality at one point forcing an automorphism. The isometry group of that distance and the geometry it induces are on [[complex-analysis/conformal-maps/the-hyperbolic-metric|The hyperbolic metric]], and the automorphisms of the disc are treated as Möbius transformations on [[complex-analysis/conformal-maps/mobius-transformations|Möbius transformations]].
+The derivative form is the lemma applied to $\psi_{f(z)}\circ f\circ\psi_z$, which reintroduces the normalization at the origin at each point, and the equivalent form on the card is contractivity of the [[D-2HXLN|hyperbolic distance]] [@SS03, ch. 8, Problem 3(a)], the derivative form being [@SS03, ch. 8, Exercise 13(b)] and the pseudo-hyperbolic form part (a) of that exercise.
+
+The equality cases of the two forms are not the same assertion, and the difference is the pair $z=w$. Equality in the derivative form at a point, and equality of either distance at a pair of distinct points, each force $f$ to be an [[D-MFPYG|automorphism]] of the disc; at a single point both distances are $0$ on both sides, so the distance form holds there for every self-map, as it does for $z^2$, which is not an automorphism, and nothing about $f'$ follows from it. The [[T-DAETF|Schwarz lemma]]'s own equality clause is the case at the origin, where what equality forces is a rotation rather than an arbitrary automorphism.
+
+The isometry group of that distance and the geometry it induces are on [[complex-analysis/conformal-maps/the-hyperbolic-metric|The hyperbolic metric]], and the automorphisms of the disc are treated as Möbius transformations on [[complex-analysis/conformal-maps/mobius-transformations|Möbius transformations]].
 
 ## Problems
 

@@ -21,7 +21,7 @@ The [[D-MFPYG|Blaschke factors]] are isometries of the hyperbolic metric, and si
 
 [[T-DAETF]]
 
-The invariant form of the Schwarz lemma is the [[T-SCHPK|Schwarz--Pick lemma]]: a holomorphic self-map of the disc does not increase the hyperbolic distance.
+The invariant form of the Schwarz lemma is the [[T-SCHPK|Schwarz--Pick lemma]]: a holomorphic self-map of the disc does not increase the hyperbolic distance [@SS03, ch. 8, Problem 3(a)], and a holomorphic self-map that preserves it is an automorphism [@SS03, ch. 8, Problem 3(b)].
 
 ## The upper half plane
 

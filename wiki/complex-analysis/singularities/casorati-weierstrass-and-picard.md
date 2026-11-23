@@ -28,7 +28,7 @@ The proof in [@SS03, ch. 3, Theorem 3.3] is a reduction: a value $w_0$ and a rad
 
 The conclusion is of a different kind from density: away from at most one value, every value of $\CC$ is taken, and each of them in every neighbourhood of $z_0$, hence infinitely often. It implies Casorati--Weierstrass, since a set containing every value with at most one exception is dense; the converse fails, and the example below shows a function for which the exceptional value is real.
 
-The card states the value-omission form. The value-distribution form is recorded without proof in [@SS03, ch. 3, §3], in the paragraph following Theorem 3.3, and is the form McMullen states as Theorem 4.35: an analytic function takes every value in $\CC$, with at most one exception, in every neighbourhood of an essential singularity.
+The card states the value-omission form. The value-distribution form is recorded without proof in [@SS03, ch. 3, §3], in the paragraph following Theorem 3.3, and is [@McM17, Theorem 4.35]: an analytic function takes every value in $\CC$, with at most one exception, in every neighbourhood of an essential singularity.
 
 ## Picard's little theorem
 
@@ -50,8 +50,13 @@ Ahlfors proves the little theorem directly instead, from the modular function an
 Two substitutions are not available. Quoting Casorati--Weierstrass where a question asks that a value be attained: attainment near a finite essential singularity is the great theorem, and for an entire function it is the little one. Quoting the little theorem at a finite singularity: it carries no hypothesis about one, so it states nothing there.
 
 ::: {.example title="$e^{1/z}$ omits only $0$"}
-On $\DD\smz$ the function $e^{1/z}$ omits $0$, since the exponential never vanishes, and it takes every other value infinitely often: the equation $e^{1/z} = w$ reads $1/z = \Log w + 2\pi i k$, which has the solutions $z = 1/(\Log w + 2\pi i k)$ for every integer $k$, and these accumulate at $0$.
-So the image of every punctured disc about $0$ is $\CC\smz$, and the omitted value $0$ is the single exception Picard's theorem allows.
+On $\DD\smz$ the function $e^{1/z}$ omits $0$, since the exponential never vanishes.
+For $w\in\CC\smz$ the equation $e^{1/z}=w$ reads $1/z=\Log w+2\pi i k$ with $k\in\ZZ$, so its solutions are
+$$
+z=\frac{1}{\Log w+2\pi i k},
+$$
+taken over the integers $k$ with $\Log w+2\pi i k\neq0$: every $k$ when $w\neq1$, and $k\neq0$ when $w=1$, where $\Log 1=0$ and the term $k=0$ is the excluded zero denominator.
+For those $k$, $\abs z\leq1/\bigl(2\pi\abs k-\abs{\Log w}\bigr)$ once $2\pi\abs k>\abs{\Log w}$, and $z\neq0$; so the solutions tend to $0$ and therefore lie in every punctured disc about $0$: each $w\in\CC\smz$ is taken infinitely often, and the omitted value $0$ is the single exception Picard's theorem allows.
 :::
 
 ## Problems
