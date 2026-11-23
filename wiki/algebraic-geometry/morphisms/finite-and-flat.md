@@ -38,8 +38,8 @@ In geometric terms, going down says that a generization of a point of the image 
 [[D-MORFLAT]]
 
 Flatness is a stalkwise condition: $f\colon X\to Y$ is flat at $x$ when $\OO_{X,x}$ is a flat $\OO_{Y,f(x)}$-module, and $f$ is faithfully flat when it is flat and surjective ([[D-MORFLAT]]).
-For a finite flat morphism $f\colon X\to Y$ with $Y$ noetherian and connected, $f_*\OO_X$ is locally free of constant rank $d$ and every fibre has length $d$ ([[D-MORFLAT]]).
-That is the statement that a finite flat family has constant degree, and it is how flatness enters the theory of families: it is the hypothesis that prevents a fibre from jumping in length, dimension, or Hilbert polynomial.
+For a finite flat morphism $f\colon X\to Y$ with $Y$ locally noetherian and connected, $f_*\OO_X$ is locally free of constant rank $d$ and every fibre has length $d$ (Stacks Project, Definition 29.49.1, tag 02KA; Lemmas 29.49.2 and 29.49.4, tags 02KB and 02KD; [[D-MORFLAT]]).
+Thus a finite flat family over a connected locally noetherian base has constant degree; for a flat projective family over a connected noetherian base, the corresponding constant invariant is the fibres' Hilbert polynomial ([[T-COHFLATCHI]]).
 
 Flatness over a regular curve of dimension one has a criterion in terms of associated points: if $X$ is noetherian, $Y$ is integral, regular, and of dimension one, then $f$ is flat exactly when every associated point of $X$ maps to the generic point of $Y$ [@Har77, Proposition III.9.7] ([[D-MORFLAT]]).
 When $X$ is reduced the associated points are the generic points of its irreducible components, and the criterion becomes the statement that every component dominates $Y$.

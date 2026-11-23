@@ -54,6 +54,12 @@ In particular, if $X$ is reduced, $f$ is flat if and only if every irreducible c
 [@Har77, Proposition III.9.7]
 :::
 
+::: {.proposition title="Finite flat morphisms of constant degree"}
+Let $f \colon X \to Y$ be a finite flat morphism with $Y$ locally Noetherian.
+Then $f$ is finite locally free: it is affine and $f_*\OO_X$ is a finite locally free $\OO_Y$-module (Stacks Project, Definition 29.49.1, tag 02KA, and Lemma 29.49.2, tag 02KB).
+If $Y$ is connected, $f_*\OO_X$ has constant rank $d$; base change to $y \in Y$ makes $X_y \to \Spec \kappa(y)$ finite locally free of the same rank (Stacks Project, Lemma 29.49.4, tag 02KD), so $\Gamma(X_y,\OO_{X_y})$ is a $\kappa(y)$-algebra of dimension $d$ and the fibre $X_y$ has length $d$.
+:::
+
 ::: {.proposition title="Flat limits"}
 Let $Y$ be integral, regular and of dimension one, $P \in Y$ a closed point, and $X^\circ \subseteq \PP^n_{Y \sm P}$ a closed subscheme flat over $Y \sm P$.
 Then there is a unique closed subscheme $X \subseteq \PP^n_Y$, flat over $Y$, whose restriction to $\PP^n_{Y \sm P}$ is $X^\circ$: the scheme-theoretic closure of $X^\circ$.
