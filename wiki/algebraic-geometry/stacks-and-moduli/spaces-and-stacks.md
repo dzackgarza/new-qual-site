@@ -28,13 +28,15 @@ This functor has no Hilbert polynomial or relatively ample sheaf among its data.
 
 [[D-CRVMOD]]
 
-Let $\mathcal F_g(T)$ be the isomorphism classes of flat families of smooth projective curves of genus $g$ over $T$.
-A coarse moduli space is a variety $M_g$ with a natural transformation $\mathcal F_g\to h_{M_g}$ that is a bijection on geometric points and is universal among such transformations, while a fine moduli space is one that represents $\mathcal F_g$, equivalently one carrying a universal family ([[D-CRVMOD]]).
-The difference is exactly the automorphisms: an elliptic curve has the automorphism $-1$, and the family $ty^2=x^3-x$ over $\Spec k[t,t^{-1}]$ has every geometric fibre isomorphic to $y^2=x^3-x$ without being isomorphic to the constant family, since the isomorphism $y\mapsto\sqrt ty$ is defined only after adjoining $\sqrt t$ ([[D-CRVMOD]], [[T-CRVJINV]]).
-A fine moduli space would make that family the pullback of the universal one along a constant map, so no fine moduli space exists.
+::: {.example title="An isotrivial but nonconstant family of elliptic curves"}
+Let $k$ be an algebraically closed field with $\operatorname{char}k\ne2$, and put $T=\GG_{m,k}=\Spec k[t,t^{-1}]$.
+The family $ty^2=x^3-x$ over $T$ becomes isomorphic to the constant family $Y^2=x^3-x$ after the étale cover $s^2=t$ by the substitution $Y=sy$, so every geometric fibre has the same $j$-invariant.
+It is the quadratic twist by the class of $t$ in $H^1_{\mathrm{et}}(T,\mu_2)$, which is nontrivial because $t$ is not a square in $k(t)$, and therefore is not isomorphic over $T$ to the constant family ([[D-CRVMOD]], [[T-CRVJINV]]).
+Its classifying map to a coarse moduli space is constant, so if a universal family represented the moduli functor, this nonconstant family would be a pullback of the universal family along a constant map; hence no fine moduli space represents the functor of [[D-CRVMOD]].
+:::
 
-The coarse space nevertheless exists and is well behaved: for $g\ge2$ it is irreducible and quasiprojective of dimension $3g-3$, and the dimension is visible infinitesimally, since first-order deformations of a curve are $H^1(C,T_C)$ and Serre duality identifies that with the dual of $H^0(C,\omega_C^{\tensor2})$, of dimension $3g-3$ ([[T-CRVMG]], [[D-CRVMOD]]).
-So the moduli problem has a good answer at the level of spaces and a defective one at the level of representing objects, which is exactly the gap that algebraic spaces and stacks are designed to fill.
+For $g\ge2$ over an algebraically closed field, the coarse moduli space of smooth projective curves is irreducible and quasiprojective of dimension $3g-3$.
+Infinitesimally, first-order deformations of a curve are $H^1(C,T_C)$, and Serre duality identifies that with the dual of $H^0(C,\omega_C^{\tensor2})$, of dimension $3g-3$ ([[T-CRVMG]], [[D-CRVMOD]]).
 
 ## Algebraic spaces
 
