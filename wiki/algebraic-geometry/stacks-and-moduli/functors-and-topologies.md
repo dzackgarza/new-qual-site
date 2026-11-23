@@ -61,8 +61,26 @@ The difference between the topologies is visible on a group scheme: for $n$ inve
 
 [[T-FFDESCENT]]
 
-For a faithfully flat ring map $A\to B$ the Amitsur complex of every $A$-module is exact, so $M\mapsto M\tensor_AB$ loses nothing, and the extra structure needed to recover $M$ is exactly a descent datum: an isomorphism $\theta\colon N\tensor_AB\to B\tensor_AN$ of $B\tensor_AB$-modules satisfying the cocycle identity after pullback to $B\tensor_AB\tensor_AB$ (Stacks Project, Definition 35.3.1, tag 023G), the canonical datum on $M\tensor_AB$ being $(m\tensor b)\tensor b'\mapsto b\tensor(m\tensor b')$ (Stacks Project, Section 35.3, tag 023F) ([[T-FFDESCENT]]).
-The modules with descent data are equivalent to the $A$-modules, a quasi-inverse sending $(N,\theta)$ to the submodule $\theset{n\in N:\theta(n\tensor1)=1\tensor n}$ of $N$ (Stacks Project, Proposition 35.3.9, tag 023N, and Lemma 35.3.7, tag 039W) ([[T-FFDESCENT]]).
+For a faithfully flat ring map $A\to B$ the Amitsur complex of every $A$-module is exact, so $M\mapsto M\tensor_AB$ loses nothing, and the extra structure needed to recover $M$ is exactly a descent datum: an isomorphism of $B\tensor_AB$-modules
+$$
+\theta\colon N\tensor_AB\longrightarrow B\tensor_AN .
+$$
+The two tensor orders are the two pullbacks of the $B$-module $N$ to $B\tensor_AB$, under the two structure maps $p_1(b)=b\tensor1$ and $p_2(b)=1\tensor b$: $p_1^*N=N\tensor_AB$ is a $B\tensor_AB$-module with $(b_1\tensor b_2)(n\tensor b)=b_1n\tensor b_2b$, and $p_2^*N=B\tensor_AN$ with $(b_1\tensor b_2)(b\tensor n)=b_1b\tensor b_2n$, so $\theta$ goes from $p_1^*N$ to $p_2^*N$ and not the other way.
+Its pullbacks to $B\tensor_AB\tensor_AB$ are
+$$
+\theta_{01}=\theta\tensor\id_B\colon N\tensor_AB\tensor_AB\longrightarrow B\tensor_AN\tensor_AB,
+\qquad
+\theta_{12}=\id_B\tensor\theta\colon B\tensor_AN\tensor_AB\longrightarrow B\tensor_AB\tensor_AN,
+$$
+and the cocycle identity is $\theta_{02}=\theta_{12}\circ\theta_{01}$, where $\theta_{02}\colon N\tensor_AB\tensor_AB\to B\tensor_AB\tensor_AN$ is the map of the two outer factors, determined by $\theta_{02}(n\tensor1\tensor1)=\sum_ia_i\tensor1\tensor n_i$ when $\theta(n\tensor1)=\sum_ia_i\tensor n_i$ (Stacks Project, Definition 35.3.1, tag 023G).
+The canonical datum on $M\tensor_AB$ is
+$$
+\operatorname{can}\colon (M\tensor_AB)\tensor_AB\longrightarrow B\tensor_A(M\tensor_AB),
+\qquad
+(m\tensor b)\tensor b'\longmapsto b\tensor(m\tensor b'),
+$$
+which is $B\tensor_AB$-linear for those two actions: $(b_1\tensor b_2)$ sends $(m\tensor b)\tensor b'$ to $(m\tensor b_1b)\tensor(b_2b')$, and the right-hand side $b\tensor(m\tensor b')$ to $b_1b\tensor(m\tensor b_2b')$, the same as the image of $(m\tensor b_1b)\tensor(b_2b')$ (Stacks Project, Section 35.3, tag 023F).
+The modules with descent data are equivalent to the $A$-modules, a quasi-inverse sending $(N,\theta)$ to the submodule $\theset{n\in N:\theta(n\tensor1)=1\tensor n}=\ker(n\mapsto1\tensor n-\theta(n\tensor1))$ of $N$, both sides lying in $B\tensor_AN$ with the $1$ in the first factor (Stacks Project, Proposition 35.3.9, tag 023N, and Lemma 35.3.7, tag 039W).
 Replacing modules by quasicoherent sheaves and $\Spec B\to\Spec A$ by a faithfully flat quasicompact morphism gives fpqc descent of quasicoherent sheaves, and representable functors are fpqc sheaves, hence in particular fppf sheaves ([[T-FFDESCENT]], [[D-ETFPPF]]).
 
 ## Torsors

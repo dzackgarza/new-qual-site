@@ -55,10 +55,12 @@ p_1,p_2\colon B\longrightarrow C,
 \qquad
 p_1(b)=b\otimes1,\quad p_2(b)=1\otimes b.
 $$
+For a $B$-module $N$ the two pullbacks to $C$ are $p_1^*N=C\otimes_{B,p_1}N\cong N\otimes_AB$ and $p_2^*N=C\otimes_{B,p_2}N\cong B\otimes_AN$, with the $B\otimes_AB$-actions $(b_1\otimes b_2)(n\otimes b)=b_1n\otimes b_2b$ and $(b_1\otimes b_2)(b\otimes n)=b_1b\otimes b_2n$.
 A \dfn{descent datum} on a $B$-module $N$ is an isomorphism of $B\otimes_AB$-modules
 $$
-\theta\colon N\otimes_AB\xrightarrow{\sim}B\otimes_AN ,
+\theta\colon p_1^*N=N\otimes_AB\xrightarrow{\sim}B\otimes_AN=p_2^*N ,
 $$
+so the tensor order is fixed by the convention: $\theta$ goes from the first pullback to the second.
 such that after pullback to $B\otimes_AB\otimes_AB$ the cocycle identity holds:
 $$
 \theta_{02}=\theta_{12}\circ\theta_{01},
