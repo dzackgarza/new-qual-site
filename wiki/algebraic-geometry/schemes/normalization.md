@@ -25,7 +25,7 @@ In dimension one that collapse is total: a noetherian local domain of dimension 
 [[D-DEFINTEG]]
 
 The integral closure of $A$ in its fraction field is the largest integral extension inside that field, and it is a finite $A$-algebra when $A$ is a finitely generated algebra over a field [@Har77, Theorem I.3.9A] ([[D-DEFINTEG]]).
-That finiteness is what makes the geometric statement useful: for an integral extension $B\subseteq A$, lying over and going up hold, so $\Spec A\to\Spec B$ is surjective and closed with zero-dimensional fibres [@AM18, Theorems 5.10 and 5.11].
+For an integral extension $B\subseteq A$, lying over makes $\Spec A\to\Spec B$ surjective [@AM18, Theorem 5.10]; integrality makes it affine and universally closed (Stacks Project, Lemma 29.45.7, tag 01WM), and incomparability of distinct primes in a fibre makes the fibres zero-dimensional [@AM18, Corollary 5.9].
 
 ## Integrally closed domains
 
