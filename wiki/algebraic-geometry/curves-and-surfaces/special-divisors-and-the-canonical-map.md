@@ -66,10 +66,9 @@ The gonality of $C$ is the least $d$ for which $C$ carries a $g^1_d$, equivalent
 Gonality $1$ forces $C\cong\PP^1$; gonality $2$ is hyperellipticity for $g\ge2$, and a genus-one curve also has gonality $2$.
 A divisor with $\ell(D)=2$ produces a pencil: subtracting the base divisor from $\linearsystem{D}$ gives a base-point-free $g^1_{d'}$ with $d'\le\deg D$, so a special divisor of dimension one of degree $d$ forces gonality at most $d$.
 
-The same Brill--Noether number controls the gonality of every curve and of the general one.
-Every curve of genus $g$ carries a $g^1_d$ for $d=\lfloor (g+3)/2\rfloor$, since the Brill--Noether number $\rho(g,1,d)=2d-g-2$ is then nonnegative and existence holds for every curve ([[D-CRVBRILLNOETHER]]).
-And a general curve carries none below that degree, because $\rho(g,1,d)<0$ there and the general curve has no linear system of negative expected dimension ([[D-CRVBRILLNOETHER]]).
-So the gonality of every curve of genus $g$ is at most $\lfloor (g+3)/2\rfloor$, and equals it for the general curve; for $g=3$ and $g=4$ the bound is $3$, so every nonhyperelliptic curve of genus $3$ or $4$ is trigonal, a smooth plane quartic having a $g^1_3$ cut by the lines through any one of its points ([[D-CRVGON]]).
+That the set of such $d$ is nonempty needs no Brill--Noether theory: for a point $P$ the divisor $(g+1)P$ has $\ell\ge2$ by Riemann--Roch [@Har77, Theorem IV.1.3], so every smooth projective curve of genus $g$ has a $g^1_{g+1}$ and a nonconstant map to $\PP^1$ ([[D-CRVGON]]).
+The sharper bound is Brill--Noether theory, stated with its own hypotheses over $\CC$ on [[D-CRVBRILLNOETHER]]: the number $\rho(g,1,d)=2d-g-2$ is nonnegative at $d=\lfloor (g+3)/2\rfloor$, so every curve of genus $g$ has a $g^1_d$ there, while a general curve has none below it and its gonality is exactly $\lfloor (g+3)/2\rfloor$.
+For $g=3$ and $g=4$ the bound is $3$, so every nonhyperelliptic curve of genus $3$ or $4$ over $\CC$ is trigonal: on a smooth plane quartic the system $\abs{K-p}$ is a $g^1_3$ for each point $p$ [@Har77, Example IV.5.2.1], and a nonhyperelliptic curve of genus $4$ lies on a quadric whose rulings cut $g^1_3$'s, one of them when the quadric is a cone [@Har77, Example IV.5.2.2] ([[D-CRVGON]], [[FE-CRVLOWG]]).
 
 ## Low-genus canonical models
 
@@ -92,5 +91,5 @@ The converse restricts sharply which canonical curves are complete intersections
 
 [[D-CRVBRILLNOETHER]]
 
-The Brill--Noether number $\rho(g,r,d)=g-(r+1)(g-d+r)$ is the expected dimension of the locus of $g^r_d$'s: the theorem says that when $\rho\ge0$ every curve of genus $g$ has a $g^r_d$ and every component of $W^r_d(C)$ has dimension at least $\rho$, that a general curve has $\dim W^r_d=\rho$, and that on a general curve $W^r_d\setminus W^{r+1}_d$ is smooth of dimension $\rho$ ([[D-CRVBRILLNOETHER]]).
+The Brill--Noether number $\rho(g,r,d)=g-(r+1)(g-d+r)$ is the expected dimension of the locus of $g^r_d$'s: over $\CC$ the theorem says that when $\rho\ge0$ every curve of genus $g$ has a $g^r_d$ and every component of $W^r_d(C)$ has dimension at least $\rho$, that a general curve has $\dim W^r_d=\rho$, and that on a general curve $W^r_d\setminus W^{r+1}_d$ is smooth of dimension $\rho$ ([[D-CRVBRILLNOETHER]]).
 Clifford's theorem is the reverse inequality in the case where $\rho$ is not the whole story: a special $g^r_d$ satisfies $d\ge2r$, with equality only for the trivial series, the canonical series, or a multiple of the hyperelliptic pencil, and $|K|$ itself is the case $r=g-1$, $d=2g-2$, $\rho=0$.
