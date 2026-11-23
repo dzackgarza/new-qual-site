@@ -105,6 +105,20 @@ audit:
     `zero`, `cover` (with `manifold` and `pi`), `kgl1` (with `killn` and `killhigher`),
     `bound`, `product`, `contradiction` and the closing step were re-read and are
     unchanged.
+- event: solution-reviewed
+  by: kimi
+  date: 2026-11-23
+  note: >-
+    Residue repair for issue #163, for arbitrary closed compact $M$ with no smoothness
+    or CW-structure hypothesis. Step `kgl1` now uses Corollary A.12 only in its printed
+    form, choosing a homotopy equivalence $r:M\to N$ with $N$ a CW complex. The
+    attaching class is transported as $r_*[\alpha]$, and cellular approximation is used
+    only on the genuine CW complexes $N$, $Z=N\cup_\beta e^{n+1}$, and the later
+    complexes. Step `bound` transports $H^{n+1}(M;\FF_p)=0$ by the natural isomorphism
+    $r^*$, then computes both pair comparisons by relative cellular homology on
+    $(Z,N)$ and $(K,Z)$ and the field universal coefficient theorem. Step `product`
+    applies Proposition 4.30 only to the CW complex $K$ and the CW product. No claim
+    that $M$ itself has a CW structure remains, so the dimension-four case is covered.
 ---
 
 ::: {.problem}
@@ -112,7 +126,7 @@ Show that the group $\ZZ_p \times \ZZ_p$ with $p$ prime cannot act freely on any
 :::
 
 ::: {.solution}
-The retained published solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 28**. Its skeleton is retained: a free action gives a covering $S^n\to M$ with $\pi_1(M)=G$; one $(n+1)$-cell kills a generator of $\pi_n(M)$; and the Künneth computation for $K(\ZZ_p,1)\times K(\ZZ_p,1)$ contradicts the resulting upper bound on $H^{n+1}(K(G,1);\FF_p)$. Sam's quotient argument for $n=1$ is also used: the only connected closed $1$-manifold is $S^1$, whose fundamental group is $\ZZ$. His inclusion of $[0,1]$ among the alternatives is not applicable because $M$ is closed. Sam additionally calls the given action smooth, although Hatcher states no smoothness hypothesis, so his finite-triangulation version of the cohomology bound is not certified; the bound below uses singular pair cohomology instead. The book's inputs are §4.2 Exercise 28, Propositions 1.26, 1.39 and 4.1, Corollary 4.25, Theorems 3.15, 3.19, 3.26 and 4.37, and Examples 1B.5 and 3E.2.
+The retained published solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 28**. Its skeleton is retained: a free action gives a covering $S^n\to M$ with $\pi_1(M)=G$; one $(n+1)$-cell kills a generator of $\pi_n(M)$; and the Künneth computation for $K(\ZZ_p,1)\times K(\ZZ_p,1)$ contradicts the resulting upper bound on $H^{n+1}(K(G,1);\FF_p)$. Sam's quotient argument for $n=1$ is also used: the only connected closed $1$-manifold is $S^1$, whose fundamental group is $\ZZ$. His inclusion of $[0,1]$ among the alternatives is not applicable because $M$ is closed. Sam additionally calls the given action smooth, although Hatcher states no smoothness hypothesis, so his finite-triangulation version of the cohomology bound is not certified; the bound below transports $M$ to a CW model by Corollary A.12 and uses singular pair cohomology on genuine CW pairs, without assuming a smooth structure, triangulation, or CW structure on $M$. The book's inputs are §4.2 Exercise 28, Propositions 1.26, 1.39, 4.1 and 4.30, Corollaries 4.25 and A.12, Theorems 2.35, 3.15, 3.19 and 3.26, and Examples 1B.5, 3E.2 and 4.16.
 
 ::: pf
 
@@ -153,15 +167,24 @@ $S^n$ is simply connected for $n\ge2$, so it is the universal cover of $M$ and t
 :::
 
 ::: {.pf-step #kgl1}
-Attaching one $(n+1)$-cell along a map representing a generator of $\pi_n(M)$, then cells of dimension at least $n+2$, gives a $K(G,1)$.
+For a CW complex $N$ homotopy equivalent to $M$, attaching one $(n+1)$-cell along a map representing a generator of $\pi_n(N)$, then cells of dimension at least $n+2$, gives a CW complex $K$ that is a $K(G,1)$.
 
 :::: pf-proof
 
-::: {.pf-step #killn}
-After the single $(n+1)$-cell is attached, $\pi_1=G$ and $\pi_i=0$ for $2\le i\le n$.
+::: {.pf-step #cw-model}
+Corollary A.12 supplies a CW complex $N$ and a homotopy equivalence $r:M\to N$, with $\pi_1(N)\cong G$, $\pi_i(N)=0$ for $1<i<n$, and $\pi_n(N)\cong\ZZ$.
 
 ::: pf-proof
-Proposition 4.1 identifies $\pi_n(M)$ with $\pi_n(S^n)$, and Corollary 4.25 identifies the latter with $\ZZ$ by degree. Let $Z=M\cup_\alpha e^{n+1}$ with $\alpha:S^n\to M$ representing a generator under these identifications. The inclusion $M\to Z$ induces an isomorphism on $\pi_i$ for $i<n$ and an epimorphism on $\pi_n$ by cellular approximation. The class $[\alpha]$ becomes zero because $\alpha$ extends over the disc $e^{n+1}$. Since $[\alpha]$ generates the abelian group $\pi_n(M)$, it also generates it as a $\ZZ[G]$-module, so the whole of $\pi_n(Z)$ vanishes. Attaching a cell of dimension $n+1\ge3$ does not change $\pi_1$ by Proposition 1.26(b), so $\pi_1(Z)=G$.
+This uses only the homotopy type asserted by Corollary A.12, not a CW structure on $M$. Choose basepoints compatibly with $r$. A homotopy equivalence induces isomorphisms on all homotopy groups, so the stated groups follow from step [](#cover){.pf-ref}. If $\alpha:S^n\to M$ represents a generator of $\pi_n(M)$, then $\beta=r\circ\alpha:S^n\to N$ represents a generator of $\pi_n(N)$.
+:::
+
+:::
+
+::: {.pf-step #killn}
+After the single $(n+1)$-cell is attached to $N$ along $\beta$, the resulting CW complex $Z=N\cup_\beta e^{n+1}$ has $\pi_1(Z)\cong G$ and $\pi_i(Z)=0$ for $2\le i\le n$.
+
+::: pf-proof
+The inclusion $N\to Z$ induces an isomorphism on $\pi_i$ for $i<n$ and an epimorphism on $\pi_n$ by cellular approximation, which applies because $N$ and $Z$ are CW complexes. The class $[\beta]$ becomes zero because $\beta$ extends over the disc $e^{n+1}$. Since $[\beta]$ generates the infinite cyclic group $\pi_n(N)$, the whole of $\pi_n(Z)$ vanishes. Attaching a cell of dimension $n+1\ge3$ does not change $\pi_1$ by Proposition 1.26(b), so $\pi_1(Z)\cong G$.
 :::
 
 :::
@@ -170,7 +193,7 @@ Proposition 4.1 identifies $\pi_n(M)$ with $\pi_n(S^n)$, and Corollary 4.25 iden
 Cells of dimension at least $n+2$ kill the remaining homotopy groups one at a time.
 
 ::: pf-proof
-Inductively, suppose that at stage $k\ge n+1$ we have $\pi_1=G$ and $\pi_i=0$ for $2\le i<k$. Attach $(k+1)$-cells along based maps $S^k$ representing every element of $\pi_k$. Cellular approximation preserves $\pi_i$ for $i<k$, including $\pi_1=G$, and gives a surjection from the old $\pi_k$ to the new one. Because every old class has been killed, the new $\pi_k$ is zero. Iterating over $k=n+1,n+2,\ldots$ attaches cells only of dimensions at least $n+2$. A map of a sphere or a homotopy has compact image and therefore lies in a finite stage, so the union has $\pi_1=G$ and $\pi_i=0$ for $i\ge2$. This is the construction in Example 4.16; it requires neither finitely many cells nor a countability assertion about $\pi_k$.
+Inductively, suppose that at stage $k\ge n+1$ we have $\pi_1=G$ and $\pi_i=0$ for $2\le i<k$. Attach $(k+1)$-cells along based maps $S^k$ representing every element of $\pi_k$. Cellular approximation preserves $\pi_i$ for $i<k$, including $\pi_1=G$, and gives a surjection from the old $\pi_k$ to the new one. Because every old class has been killed, the new $\pi_k$ is zero. Iterating over $k=n+1,n+2,\ldots$ attaches cells only of dimensions at least $n+2$. A map of a sphere or a homotopy has compact image and therefore lies in a finite stage, so the union $K$ has $\pi_1(K)\cong G$ and $\pi_i(K)=0$ for $i\ge2$. This is the construction in Example 4.16; it requires neither finitely many cells nor a countability assertion about $\pi_k$. Since every stage is a CW complex, $K$ is a CW $K(G,1)$.
 :::
 
 :::
@@ -183,9 +206,11 @@ Inductively, suppose that at stage $k\ge n+1$ we have $\pi_1=G$ and $\pi_i=0$ fo
 $\dim_{\FF_p}H^{n+1}(K(G,1);\FF_p)\le1$.
 
 ::: pf-proof
-Write $Z=M\cup_\alpha e^{n+1}$. Theorem 3.26(c) gives $H_{n+1}(M;\FF_p)=0$, so the universal coefficient theorem over the field $\FF_p$ gives $H^{n+1}(M;\FF_p)=0$. Attaching the single cell gives $H^{n+1}(Z,M;\FF_p)\cong\FF_p$ by excision. The cohomology exact sequence of $(Z,M)$ therefore makes $H^{n+1}(Z;\FF_p)$ a quotient of $\FF_p$.
+Let $r:M\to N$ and $Z=N\cup_\beta e^{n+1}$ be as in step [](#kgl1){.pf-ref}. Theorem 3.26(c) gives $H_{n+1}(M;\FF_p)=0$, so the universal coefficient theorem over the field $\FF_p$ gives $H^{n+1}(M;\FF_p)=0$. Naturality of singular cohomology makes $r^*:H^{n+1}(N;\FF_p)\to H^{n+1}(M;\FF_p)$ an isomorphism, since $r$ is a homotopy equivalence; hence $H^{n+1}(N;\FF_p)=0$.
 
-The pair $(K,Z)$ obtained by the later attachments is $(n+1)$-connected by cellular approximation, since every attached cell has dimension at least $n+2$. Theorem 4.37 with parameter $n+2$ gives $H_i(K,Z)=0$ for $i<n+2$, and the universal coefficient theorem over $\FF_p$ gives $H^{n+1}(K,Z;\FF_p)=0$. Restriction $H^{n+1}(K;\FF_p)\to H^{n+1}(Z;\FF_p)$ is consequently injective, and the target has dimension at most $1$. This proves Sam's one-cell bound without assuming that $M$ is smooth or choosing a finite CW structure on it.
+The CW pair $(Z,N)$ has exactly one relative cell, of dimension $n+1$. Its relative cellular chain complex is therefore a single $\ZZ$ in degree $n+1$, and Theorem 2.35 together with the field universal coefficient theorem gives $H^{n+1}(Z,N;\FF_p)\cong\FF_p$. The cohomology exact sequence of $(Z,N)$ consequently makes $H^{n+1}(Z;\FF_p)$ a quotient of $\FF_p$.
+
+Every cell of $K$ not in $Z$ has dimension at least $n+2$, so the relative cellular chain complex $C_*(K,Z)$ vanishes in degrees at most $n+1$. By Theorem 2.35, $H_{n+1}(K,Z)=0$, and the field universal coefficient theorem gives $H^{n+1}(K,Z;\FF_p)=0$. Exactness of the cohomology sequence of the CW pair $(K,Z)$ therefore makes restriction $H^{n+1}(K;\FF_p)\to H^{n+1}(Z;\FF_p)$ injective, and the target has dimension at most $1$. Thus both relative cohomology computations use genuine CW pairs, while the only comparison with $M$ is the natural isomorphism $r^*$ above; no CW structure on $M$ is needed.
 :::
 
 :::
@@ -194,7 +219,7 @@ The pair $(K,Z)$ obtained by the later attachments is $(n+1)$-connected by cellu
 $K(G,1)\simeq K(\ZZ_p,1)\times K(\ZZ_p,1)$.
 
 ::: pf-proof
-Example 1B.5 shows that the product $K(\ZZ_p,1)\times K(\ZZ_p,1)$ is a $K(\ZZ_p\times\ZZ_p,1)$: its fundamental group is $G$ and its universal cover is the product of the two contractible universal covers. Proposition 4.30 then gives the stated homotopy equivalence with the complex $K$ constructed in step [](#kgl1){.pf-ref}.
+Example 1B.5 shows that the product $K(\ZZ_p,1)\times K(\ZZ_p,1)$ is a $K(\ZZ_p\times\ZZ_p,1)$: its fundamental group is $G$ and its universal cover is the product of the two contractible universal covers. The constructed $K$ and this product are both CW complexes, so Proposition 4.30 applies and gives the stated homotopy equivalence with $K$. Naturality of singular cohomology then identifies $H^{n+1}(K;\FF_p)$ with the product's degree-$(n+1)$ cohomology computed in step [](#cohomology){.pf-ref}.
 :::
 
 :::
