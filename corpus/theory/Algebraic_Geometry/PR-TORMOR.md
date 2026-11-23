@@ -56,7 +56,7 @@ $$
 \pi_1\bigl(X_\Sigma(\CC),1\bigr)\cong N/N_\Sigma
 $$
 (Cox--Little--Schenck, *Toric Varieties*, Theorem 12.1.10), with the isomorphism induced by $i_*$.
-The identification of $\pi_1(T_N,1)$ with $N$ used at that step is the group isomorphism $u\mapsto[t\mapsto\lambda^u(e^{2\pi it})]$ of Proposition 12.1.1(b) and Exercise 12.1.1, based at $\lambda^u(1)=1$; being an isomorphism, it makes every loop in $T_N$ homotopic to a product of the loops $\restrictionof{\lambda^u}{S^1}$, so $N_\Sigma$ is the kernel of $i_*$ itself and not only the kernel on the one-parameter subgroups.
+The identification of $\pi_1(T_N,1)$ with $N$ used at that step is the intrinsic form of Proposition 12.1.1, $\pi_1(T_N)\cong N$, whose map $u\mapsto[t\mapsto\lambda^u(e^{2\pi it})]$ is the isomorphism of Exercise 12.1.1, based at $\lambda^u(1)=1$; being an isomorphism, it makes every loop in $T_N$ homotopic to a product of the loops $\restrictionof{\lambda^u}{S^1}$, so $N_\Sigma$ is the kernel of $i_*$ itself and not only the kernel on the one-parameter subgroups.
 The arrow is $i_*$, from the torus to $X_\Sigma$, not the reverse.
 In particular, if $N_\Sigma=N$, then $X_\Sigma(\CC)$ is simply connected.
 
