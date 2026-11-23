@@ -57,4 +57,4 @@ The canonical model therefore determines the genus and whether $C$ is hyperellip
 ## Riemann--Roch as a vanishing theorem
 
 The equality $\chi(\OO_C(D))=\deg D+1-g$ holds for every divisor, and above degree $2g-2$ the vanishing of $h^1$ makes it a dimension ([[T-MWDVL]]).
-That vanishing is Serre vanishing in dimension one, the case $i>0$ with $d$ large of $H^i(\PP^n,\OO(d))=0$ ([[T-IJW1K]]).
+That vanishing is also the one-dimensional case of Serre vanishing for a sufficiently positive twist of a coherent sheaf [@Har77, Theorem III.5.2] ([[T-CARTSERRE]]).
