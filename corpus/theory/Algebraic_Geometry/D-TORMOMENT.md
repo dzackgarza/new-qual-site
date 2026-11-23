@@ -30,26 +30,6 @@ So $P$ is the quotient $X_P / T_c$ — the homeomorphism of [*ibid.*, Propositio
 :::
 
 ::: {.remark}
-For a smooth projective fan $\Sigma$ with $r=\size\Sigma(1)$ rays spanning $N_\RR$, the ray map gives an exact sequence of compact tori
-$$
-1\longrightarrow K
-\longrightarrow (S^1)^r
-\longrightarrow T_c
-\longrightarrow1,
-$$
-where $\dim K=r-n$.
-The standard Hamiltonian action of $K$ on $\CC^r$ has a moment map
-$$
-\mu_K\colon\CC^r\longrightarrow\mathfrak k^*.
-$$
-For the level $\xi$ determined by an ample class, the symplectic reduction
-$$
-\mu_K^{-1}(\xi)/K
-$$
-is the projective toric variety with its corresponding Kähler form.
-This is the symplectic counterpart of the algebraic Cox quotient, $X_\Sigma \simeq (\CC^{\Sigma(1)} \setminus Z(\Sigma))/\!/G$ [*ibid.*, Theorem 5.1.11], of which the retained texts state only the algebraic side: the coincidence of the two quotients is the standard symplectic form of the construction and carries no numbered statement here.
-The level and ampleness data are part of the construction.
-
 For $\PP^n$, using the standard simplex
 $$
 \Delta^n
