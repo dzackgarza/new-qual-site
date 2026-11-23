@@ -24,6 +24,7 @@ prompts:
 Let $(A,\mfm)\to(B,\mfn)$ be a local homomorphism of Noetherian local rings. Assume that $A$ is regular, $B$ is Cohen--Macaulay, and the fibre ring $B/\mfm B$ has pure dimension $\dim B-\dim A$, that is, $\dim B=\dim A+\dim(B/\mfm B)$ with every minimal prime of $B/\mfm B$ of that dimension.
 Then $B$ is flat over $A$ [@Vak25, Theorem 26.2.10, whose hypothesis is purity of the fibre ring].
 The numerical equality alone is what a flat local map satisfies; it is the purity that the theorem assumes.
+The printed statement writes the local map as $(B,\mathfrak n)\to(A,\mathfrak m)$ with $B$ regular, $A$ Cohen--Macaulay and the fibre $A\otimes_B(B/\mathfrak n)$ of pure dimension $\dim A-\dim B$, so the letters on the two rings are the other way round from the ones displayed here.
 :::
 
 ::: {.corollary title="Geometric form"}
@@ -41,5 +42,7 @@ Let $d=\dim A$ and choose a regular system of parameters $t_1,\ldots,t_d$ for $A
 
 For the blowup $\Bl_0\AA^2\to\AA^2$, the generic fibres are zero-dimensional while the exceptional fibre has dimension $1$. The local dimension equality therefore fails over the origin, consistently with nonflatness.
 
-For flat local maps of Noetherian local rings the displayed dimension formula is necessary. Miracle flatness says that, with regular base and Cohen--Macaulay source, this necessary dimension condition is also sufficient.
+For flat local maps of Noetherian local rings the displayed dimension formula is necessary. With a regular base and a
+Cohen--Macaulay source it is also sufficient, with no further hypothesis on the fibre ring: that is the Stacks Project,
+Lemma 10.128.1, tag 00R4, and the theorem above is its pure-fibre form [@Vak25, Theorem 26.2.10].
 :::
