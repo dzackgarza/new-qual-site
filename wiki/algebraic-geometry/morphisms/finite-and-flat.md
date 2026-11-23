@@ -22,7 +22,7 @@ A nonconstant morphism of smooth projective curves is flat whenever the source i
 Three theorems govern an integral extension $A\subseteq B$, and all three are statements about the map $f\colon\Spec B\to\Spec A$ on prime spectra.
 Lying over: if $A\injects B$, every prime $\mfp$ of $A$ is the contraction of a prime of $B$, so $f$ is surjective [@AM18, Theorem 5.10].
 Incomparability: two primes of $B$ lying over the same prime of $A$ are incomparable, so the fibres of $f$ carry no chain of length one [@AM18, Corollary 5.9].
-Going up: a chain $\mfp_1\subseteq\cdots\subseteq\mfp_n$ of primes of $A$, together with a chain $\mfq_1\subseteq\cdots\subseteq\mfq_m$ of primes of $B$ over its first $m$ terms, extends to a chain over the whole of it [@AM18, Theorem 5.11] ([[PR-RJ3P7]]).
+Going up: a chain $\mfp_1\subseteq\cdots\subseteq\mfp_n$ of primes of $A$, together with a chain $\mfq_1\subseteq\cdots\subseteq\mfq_m$ of primes of $B$ with $m<n$ over its first $m$ terms, extends to a chain over the whole of it [@AM18, Theorem 5.11] ([[PR-RJ3P7]]).
 
 Geometrically, an integral morphism is affine and universally closed (Stacks Project, Lemma 29.45.7, tag 01WM), hence closed, and it is of finite type and proper when the rings are finitely generated; it is finite exactly when each $B$ is a finite $A$-module (Stacks Project, Definition 29.45.1, tag 01WH).
 Surjectivity is a separate hypothesis and is what lying over supplies, since lying over needs $A\injects B$: the integral ring map $\ZZ\to\ZZ/2$ is not injective, and $\Spec\ZZ/2\to\Spec\ZZ$ has image the single closed point $(2)$.
