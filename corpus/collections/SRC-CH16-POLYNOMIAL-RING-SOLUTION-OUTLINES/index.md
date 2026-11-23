@@ -45,7 +45,7 @@ source:
         - id: P-CH16-50
           comment: Exercise 50
         - id: P-CH16-56
-          comment: Exercise 56
+          comment: Exercise 46 in Gallian 7e (the retained Ch16Sltns.pdf entry is item 56)
   date:
     kind: unknown
 ---
