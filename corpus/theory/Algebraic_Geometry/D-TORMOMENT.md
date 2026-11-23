@@ -25,8 +25,8 @@ A projective toric variety $X_P$ carries an action of the compact torus $T_c \co
 $$
 \mu : X_P \to M_\RR \cong \RR^n
 $$
-has image exactly $P$: the preimage of the relative interior of a $k$-dimensional face $F$ is the orbit attached to $F$, which has complex dimension $k$, and the fibre over a point of that interior is the compact torus $(S^1)^k$ [@Ful93, §4.2].
-So $P$ is the quotient $X_P / T_c$, and the orbit-cone correspondence is visible as the face structure of $P$.
+has image exactly $P$: the preimage of the relative interior of a $k$-dimensional face $F$ is the orbit attached to $F$, which has complex dimension $k$, and the fibre over a point of that interior is the compact torus $(S^1)^k$ [Cox--Little--Schenck, *Toric Varieties*, Theorem 12.2.5 and Proposition 12.2.3(b); both are stated for the algebraic moment map, and [*ibid.*, Exercise 12.2.8] carries Theorem 12.2.5 over to the symplectic $\mu$; @Ful93, §4.2].
+So $P$ is the quotient $X_P / T_c$ — the homeomorphism of [*ibid.*, Proposition 12.2.3(a)] — and the orbit-cone correspondence is visible as the face structure of $P$.
 :::
 
 ::: {.remark}
@@ -47,7 +47,8 @@ $$
 \mu_K^{-1}(\xi)/K
 $$
 is the projective toric variety with its corresponding Kähler form.
-This is the symplectic counterpart of the algebraic Cox quotient; the level and ampleness data are part of the construction.
+This is the symplectic counterpart of the algebraic Cox quotient, $X_\Sigma \simeq (\CC^{\Sigma(1)} \setminus Z(\Sigma))/\!/G$ [*ibid.*, Theorem 5.1.11], of which the retained texts state only the algebraic side: the coincidence of the two quotients is the standard symplectic form of the construction and carries no numbered statement here.
+The level and ampleness data are part of the construction.
 
 For $\PP^n$, using the standard simplex
 $$
