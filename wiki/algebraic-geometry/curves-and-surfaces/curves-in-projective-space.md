@@ -37,7 +37,7 @@ So among curves of degree $d$ spanning $\PP^d$ there is exactly one, and it is t
 Every smooth projective curve embeds in $\PP^3$: start from a very ample divisor of degree at least $2g+1$, then project from a point outside the curve, which is possible because secant lines sweep a subvariety of dimension at most $3$ and tangent lines one of dimension at most $2$, so successive projections preserve the embedding until the ambient space is $\PP^3$ ([[T-CRVEMBP3]]).
 Projection from a point $O\notin C\subseteq\PP^N$ is a closed immersion exactly when $O$ lies on no secant line through two distinct points of $C$ and on no embedded tangent line, which is the geometric reading of the very-ampleness criterion ([[T-CRVEMBP3]], [[T-D8TUX]]).
 
-One further projection, to $\PP^2$, cannot keep the curve smooth, and over a field of characteristic zero a general centre produces a plane model whose only singularities are ordinary nodes.
+A general projection to $\PP^2$ need not be a closed immersion; over a field of characteristic zero a general centre produces a plane model whose only singularities are ordinary nodes.
 The genus is then recoverable from the node count: a plane curve of degree $d$ with $r$ nodes and no worse singularity has normalization of genus $\binom{d-1}{2}-r$ ([[T-CRVEMBP3]], [[D-CRVPLSING]]).
 This is the classical trade of a space curve for a plane model with controlled singularities, and it is what makes the Severi varieties — the loci of plane curves of degree $d$ with a prescribed number of nodes — the standard parameter space for curves of a given degree and genus.
 
