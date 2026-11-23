@@ -51,7 +51,7 @@ For the inclusion $i\colon T_N\hookrightarrow X_\Sigma$ and the basepoint $1\in 
 $$
 i_*\colon \pi_1(T_N,1)\longrightarrow\pi_1\bigl(X_\Sigma(\CC),1\bigr)
 $$
-is surjective (Cox--Little--Schenck, *Toric Varieties*, Theorem 12.1.5), and under the identification $N\cong\pi_1(T_N,1)$, $u\mapsto[t\mapsto\lambda^u(e^{2\pi it})]$, its kernel is $N_\Sigma$; hence
+is surjective (Cox--Little--Schenck, *Toric Varieties*, Theorem 12.1.5, applied to the open subvariety $T_N$ of the normal variety $X_\Sigma$), and under the identification $N\cong\pi_1(T_N,1)$ of (12.1.1), $u\mapsto[t\mapsto\lambda^u(e^{2\pi it})]$, its kernel is $N_\Sigma$; hence
 $$
 \pi_1\bigl(X_\Sigma(\CC),1\bigr)\cong N/N_\Sigma
 $$
