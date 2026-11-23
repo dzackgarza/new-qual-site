@@ -32,24 +32,31 @@ Theorems whose conclusion is that a holomorphic function is constant are collect
 
 [[T-PG7ZK]]
 
-The bound is a supremum on a circle, about one centre and with one pair of constants for every radius; because $f$ is entire, every such closed disc lies in the domain, and no hypothesis about $f$ away from those circles is needed. The degree in the conclusion is attained: $f(z)=z^k$ satisfies the hypothesis with $A=1$ and $B=0$ and is a polynomial of degree exactly $k$.
+The bound is a supremum on a circle, about one centre and with one pair of constants for every radius; because $f$ is entire, every such closed disc lies in the domain, and no hypothesis about $f$ away from those circles is needed. The degree in the conclusion is attained: $f(z)=z^k$ satisfies the hypothesis with $A=B=1$, both positive as the statement requires, because $R^k\le R^k+1$ for every $R>0$, and it is a polynomial of degree exactly $k$.
 
-## Sharpness
+## The bound at the best radius
 
-::: {.example title="How sharp the estimate is"}
+::: {.example title="The optimized bound against the true value"}
 For $f(z) = e^z$, $z_0 = 0$, and $\DD_R(0)$, the maximum of $\abs f$ on the circle is $e^R$, so Cauchy's inequality reads
 $$
 \abs{f^{(n)}(0)}\leq {n!\,e^R\over R^n}\qquad\text{for every } R>0.
 $$
-The right-hand side is smallest at $R = n$, where it is $n!(e/n)^n$: $e = 2.718\ldots$ for $n=1$ and $5.699\ldots$ for $n=5$, against the true value $\abs{f^{(n)}(0)} = 1$ taken from the series $e^z = \sum_k z^k/k!$.
-So the bound at its best radius is $\sqrt{2\pi n}$ times the true value, by Stirling's formula: the estimate is right in its order in $n$, and the exact coefficients come from the series, not from the estimate.
+For $n\geq1$ the right-hand side is smallest at $R = n$, where it is $n!(e/n)^n$: $e = 2.718\ldots$ for $n=1$ and $5.699\ldots$ for $n=5$, against the true value $\abs{f^{(n)}(0)} = 1$ taken from the series $e^z = \sum_k z^k/k!$. (At $n=0$ there is no minimizing radius: the bound $e^R$ increases in $R$ on $R>0$.)
+So at the best admissible radius the bound is $n!(e/n)^n$ times the true value, and Stirling's formula gives only
+$$
+n!\left(\frac en\right)^n \sim \sqrt{2\pi n},
+$$
+so that ratio grows without bound in $n$. The estimate is therefore not sharp even up to a constant factor, and the exact coefficients come from the series, not from the estimate.
 
 For $f(z) = 1/(1-z)$ on $\DD$, $z_0 = 0$, and $r<1$, the maximum on $\abs z = r$ is $1/(1-r)$, so
 $$
 \abs{f^{(n)}(0)}\leq {n!\over (1-r)\,r^n},
 $$
-which is smallest at $r = n/(n+1)$ and there equals $n!(n+1)^{n+1}/n^n$: $4$ for $n=1$ and $1791.59\ldots$ for $n=5$, against the true value $n!$.
-The estimate is therefore sharp in order and not in constant.
+which for $n\geq1$ is smallest at $r = n/(n+1)$ and there equals $n!(n+1)^{n+1}/n^n$: $4$ for $n=1$ and $1791.59\ldots$ for $n=5$, against the true value $n!$. (At $n=0$ the bound $1/(1-r)$ increases in $r$ on $0<r<1$, so again there is no minimizing radius.) The ratio of the bound to the true value is then $(n+1)^{n+1}/n^n$, and
+$$
+\frac{(n+1)^{n+1}}{n^n} \sim e(n+1)
+$$
+is unbounded in $n$ as well.
 :::
 
 ## Problems
@@ -62,7 +69,9 @@ The estimate at order $n+1$ kills every coefficient past the $n$th when $\abs f$
 
 ### A lower bound on $\abs f$
 
-A lower bound on $\abs f$ at large $\abs z$ is an upper bound on $\abs{1/f}$, so the estimate is applied to $1/f$ and the conclusion is again that $f$ is constant.
+A lower bound $\abs f\ge c>0$ over all of $\CC$ makes $1/f$ entire and bounded by $1/c$, so [[T-QHIHJ|Liouville's theorem]] applies to $1/f$; [[E-U2X4C]], [[E-GQMTN]] and [[E-3ZHRE]] are of that shape. A bound only for large $\abs z$ does not have that effect: it says nothing about $\abs f$ near $0$, so $1/f$ need not be entire, and $f(z)=z$ has $\abs{f(z)}\ge R$ on $\abs z\ge R$ without being constant.
+
+[[E-27X7K]] bounds $\abs f$ below on every large circle rather than at a point, through a finite positive limit $\tilde m$ of $m(r)=\min_{\abs z=r}\abs{f(z)}$, and its route is the behaviour of $g(w)=f(1/w)$ at $0$ rather than Liouville applied to $1/f$. Positivity of $\tilde m$ gives $\abs{g(w)}\ge\tilde m/2$ on a punctured disc, and [[T-C5VEI|Casorati--Weierstrass]] then rules out an essential singularity of $g$ at $0$, because its conclusion puts values of $g$ arbitrarily close to $0$ in every punctured neighbourhood; finiteness of $\tilde m$ excludes a pole. The singularity at $0$ is then removable, $f$ is bounded, and Liouville's theorem makes it constant.
 
 [[E-U2X4C]] [[E-GQMTN]] [[E-3ZHRE]] [[E-27X7K]]
 
