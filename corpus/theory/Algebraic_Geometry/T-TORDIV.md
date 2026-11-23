@@ -47,7 +47,7 @@ m \mapsto \operatorname{div}(\chi^m) = \sum_{\rho \in \Sigma(1)} \inner{m}{u_\rh
 $$
 whose kernel is $M \cap \bigcap_\rho u_\rho^\perp$.
 It is injective, so both sequences are short exact, exactly when the $u_\rho$ span $N_\RR$, that is, when $X_\Sigma$ has no torus factor.
-The first sequence, with the left map $m\mapsto\operatorname{div}(\chi^m)$, is [Cox--Little--Schenck, *Toric Varieties*, Theorem 4.1.3]; the second restricts it to Cartier divisors, whose criterion is [*ibid.*, Theorem 4.2.8].
+The first displayed sequence, with the left map $m\mapsto\operatorname{div}(\chi^m)$, is [Cox--Little--Schenck, *Toric Varieties*, Theorem 4.1.3]; the second displayed sequence, restricting to Cartier divisors, is [*ibid.*, Theorem 4.2.1]; and the criterion for an invariant divisor to be Cartier is [*ibid.*, Theorem 4.2.8].
 [@Ful93]
 :::
 
