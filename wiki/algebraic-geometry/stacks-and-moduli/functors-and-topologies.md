@@ -72,7 +72,8 @@ $$
 \qquad
 \theta_{12}=\id_B\tensor\theta\colon B\tensor_AN\tensor_AB\longrightarrow B\tensor_AB\tensor_AN,
 $$
-and the cocycle identity is $\theta_{02}=\theta_{12}\circ\theta_{01}$, where $\theta_{02}\colon N\tensor_AB\tensor_AB\to B\tensor_AB\tensor_AN$ is the pullback along $B\tensor_AB\to B\tensor_AB\tensor_AB$, $b\tensor b'\mapsto b\tensor1\tensor b'$, determined by $\theta_{02}(n\tensor1\tensor1)=\sum_ia_i\tensor1\tensor n_i$ when $\theta(n\tensor1)=\sum_ia_i\tensor n_i$ (Stacks Project, Definition 35.3.1, tag 023G).
+the first along $b\tensor b'\mapsto b\tensor b'\tensor1$ and the second along $b\tensor b'\mapsto1\tensor b\tensor b'$, so that $\theta_{12}\circ\theta_{01}$ is defined and runs from $N\tensor_AB\tensor_AB$ to $B\tensor_AB\tensor_AN$; the cocycle identity is $\theta_{02}=\theta_{12}\circ\theta_{01}$, where $\theta_{02}$ is the third pullback, along the middle insertion $b\tensor b'\mapsto b\tensor1\tensor b'$, determined by $\theta_{02}(n\tensor1\tensor1)=\sum_ia_i\tensor1\tensor n_i$ when $\theta(n\tensor1)=\sum_ia_i\tensor n_i$ (Stacks Project, Definition 35.3.1, tag 023G).
+A datum written in the opposite tensor order is the inverse, $\varphi=\theta^{-1}\colon B\tensor_AN\to N\tensor_AB$, and its cocycle identity is $\varphi_{02}=\varphi_{01}\circ\varphi_{12}$, the same three pullbacks composed in the reverse order; the swap $n\tensor b\mapsto b\tensor n$ is $B$-linear but not $B\tensor_AB$-linear for the two actions above, so the two orders are compared by inverting $\theta$ rather than by moving a tensor factor across.
 The canonical datum on $M\tensor_AB$ is
 $$
 \operatorname{can}\colon (M\tensor_AB)\tensor_AB\longrightarrow B\tensor_A(M\tensor_AB),

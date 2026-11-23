@@ -60,15 +60,13 @@ A \dfn{descent datum} on a $B$-module $N$ is an isomorphism of $B\otimes_AB$-mod
 $$
 \theta\colon p_1^*N=N\otimes_AB\xrightarrow{\sim}B\otimes_AN=p_2^*N ,
 $$
-so the tensor order is fixed by the convention: $\theta$ goes from the first pullback to the second.
-such that after pullback to $B\otimes_AB\otimes_AB$ the cocycle identity holds:
+so the tensor order is fixed by the convention: $\theta$ goes from the first pullback to the second, and after pullback to $B\otimes_AB\otimes_AB$ it is required that the cocycle identity holds:
 $$
-\theta_{02}=\theta_{12}\circ\theta_{01},
+\theta_{01}=\theta\otimes\id_B\colon N\otimes_AB\otimes_AB\longrightarrow B\otimes_AN\otimes_AB,
 \qquad
-\theta_{01}=\theta\otimes\id_B,\quad
-\theta_{12}=\id_B\otimes\theta,
+\theta_{12}=\id_B\otimes\theta\colon B\otimes_AN\otimes_AB\longrightarrow B\otimes_AB\otimes_AN,
 $$
-where $\theta_{02}(n\otimes1\otimes1)=\sum_ia_i\otimes1\otimes n_i$ if $\theta(n\otimes1)=\sum_ia_i\otimes n_i$ (Stacks Project, Definition 35.3.1, tag 023G).
+with $\theta_{02}=\theta_{12}\circ\theta_{01}$, where $\theta_{01}$ is the pullback along $b\otimes b'\mapsto b\otimes b'\otimes1$, $\theta_{12}$ the pullback along $b\otimes b'\mapsto1\otimes b\otimes b'$, and $\theta_{02}\colon N\otimes_AB\otimes_AB\to B\otimes_AB\otimes_AN$ the pullback along the middle insertion $b\otimes b'\mapsto b\otimes1\otimes b'$, determined by $\theta_{02}(n\otimes1\otimes1)=\sum_ia_i\otimes1\otimes n_i$ if $\theta(n\otimes1)=\sum_ia_i\otimes n_i$ (Stacks Project, Definition 35.3.1, tag 023G).
 For an $A$-module $M$, the $B$-module $M\otimes_AB$ carries the canonical descent datum
 $$
 \operatorname{can}\colon (M\otimes_AB)\otimes_AB\longrightarrow B\otimes_A(M\otimes_AB),
