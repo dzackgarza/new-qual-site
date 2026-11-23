@@ -21,7 +21,8 @@ prompts:
 - What is the minimal model program for surfaces?
 ---
 
-A proper integral curve on a smooth surface contracts to a smooth point exactly when it is $\PP^1$ with self-intersection $-1$.
+A proper integral curve on a smooth surface is the exceptional curve of a blowup of a smooth surface at a point exactly when it is $\PP^1$ with self-intersection $-1$.
+Being the whole exceptional locus belongs to the hypothesis: a curve that some composite contraction merely sends to a smooth point need not be a $(-1)$-curve.
 
 ::: {.definition}
 Let $X$ be a smooth projective surface over a field.
