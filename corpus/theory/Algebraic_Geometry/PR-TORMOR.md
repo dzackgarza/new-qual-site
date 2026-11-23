@@ -51,12 +51,12 @@ For the inclusion $i\colon T_N\hookrightarrow X_\Sigma$ and the basepoint $1\in 
 $$
 i_*\colon \pi_1(T_N,1)\longrightarrow\pi_1\bigl(X_\Sigma(\CC),1\bigr)
 $$
-is surjective with kernel $N_\Sigma$ (Cox--Little--Schenck, *Toric Varieties*, Theorem 12.1.5 for the surjectivity and Propositions 12.1.8 and 12.1.9 for the kernel), and under the identification $N\cong\pi_1(T_N,1)$, $u\mapsto[t\mapsto\lambda^u(e^{2\pi it})]$, it gives
+is surjective (Cox--Little--Schenck, *Toric Varieties*, Theorem 12.1.5), and under the identification $N\cong\pi_1(T_N,1)$, $u\mapsto[t\mapsto\lambda^u(e^{2\pi it})]$, its kernel is $N_\Sigma$; hence
 $$
 \pi_1\bigl(X_\Sigma(\CC),1\bigr)\cong N/N_\Sigma
 $$
 (Cox--Little--Schenck, *Toric Varieties*, Theorem 12.1.10).
-The convention is that this is the map from the torus to $X_\Sigma$, not the reverse.
+The arrow is $i_*$, from the torus to $X_\Sigma$, not the reverse.
 In particular, if $N_\Sigma=N$, then $X_\Sigma(\CC)$ is simply connected.
 
 If $X_\Sigma$ is complete of dimension $n$, additivity of the topological Euler characteristic across the torus-orbit decomposition gives
