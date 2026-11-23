@@ -12,7 +12,7 @@ topics:
 
 A finite morphism is the algebraic model of a branched covering: it is affine, closed, of finite type with finite fibres, and it is proper, so its fibres are the fibres of a family rather than of a map with missing points.
 Flatness is the condition that makes a family vary continuously, and for a finite morphism over a connected noetherian base the two conditions together say that the fibre is a finite scheme of constant length.
-The two properties are independent, and the standard failures of each are worth keeping: a finite morphism need not be flat, and a flat morphism need not be finite.
+The two properties are independent: a finite morphism need not be flat, and a flat morphism need not be finite.
 A nonconstant morphism of smooth projective curves is flat whenever the source is reduced and every irreducible component dominates the target, since the target is integral and regular of dimension one [@Har77, Proposition III.9.7].
 
 ## Going up and going down
@@ -24,7 +24,7 @@ Lying over: if $A\injects B$, every prime $\mfp$ of $A$ is the contraction of a 
 Incomparability: two primes of $B$ lying over the same prime of $A$ are incomparable, so the fibres of $f$ carry no chain of length one [@AM18, Corollary 5.9].
 Going up: a chain $\mfp_1\subseteq\cdots\subseteq\mfp_n$ of primes of $A$, together with a chain $\mfq_1\subseteq\cdots\subseteq\mfq_m$ of primes of $B$ with $m<n$ over its first $m$ terms, extends to a chain over the whole of it [@AM18, Theorem 5.11] ([[PR-RJ3P7]]).
 
-Geometrically, an integral morphism is affine and universally closed (Stacks Project, Lemma 29.45.7, tag 01WM), hence closed, and it is of finite type and proper when the rings are finitely generated; it is finite exactly when each $B$ is a finite $A$-module (Stacks Project, Definition 29.45.1, tag 01WH).
+Geometrically, an integral morphism is affine and universally closed (Stacks Project, Lemma 29.45.7, tag 01WM), hence closed; on an affine chart with $B$ integral over $\phi(A)$, it is finite exactly when $B$ is a finite $A$-module, which holds when $B$ is finitely generated as an $A$-algebra (Stacks Project, Definition 29.45.1, tag 01WH), and a finite morphism is of finite type and proper.
 Surjectivity is a separate hypothesis and is what lying over supplies, since lying over needs $A\injects B$: the integral ring map $\ZZ\to\ZZ/2$ is not injective, and $\Spec\ZZ/2\to\Spec\ZZ$ has image the single closed point $(2)$.
 For a finite surjective morphism the fibre over a point is a finite nonempty scheme, which is the sense in which a finite morphism is a branched cover.
 
@@ -51,7 +51,7 @@ When $X$ is reduced the associated points are the generic points of its irreduci
 Two morphisms fail flatness for the same reason at different scales.
 The blowup $\Bl_0\AA^2\to\AA^2$ is projective and has every fibre over $p\neq0$ a single point, while the fibre over $0$ is a $\PP^1$; a flat projective morphism would have fibres with locally constant Hilbert polynomial, and here the fibre dimension jumps ([[FE-MORNOTFLAT]]).
 The normalisation of a nodal cubic has two points over the node and one elsewhere, so if it were flat then $f_*\OO_{\tilde X}$ would be a locally free sheaf of rank $1$ — invertible — while its stalk at the node needs two generators ([[FE-MORNOTFLAT]]).
-In both cases the obstruction is a fibre that is too large at one point, which is exactly what a flat family cannot do.
+In these projective and finite examples, the exceptional fibre has a larger Hilbert polynomial or length than the general fibre, against the constancy results above.
 
 ## Flatness in examples
 
@@ -70,7 +70,7 @@ For a local homomorphism of noetherian local rings this reduces to the residue f
 [[PR-MIRACLEFLAT]]
 
 Miracle flatness supplies the geometric counterpart: a finite morphism of locally noetherian schemes is flat if the local rings of the source are Cohen--Macaulay, those of the target are regular, and the dimensions match at every point [@Har77, Exercise III.10.9] ([[PR-MIRACLEFLAT]]).
-In particular a finite surjective morphism between smooth varieties of the same dimension over a field is flat, so the finite maps that a geometer writes down are flat unless a singularity is being resolved.
+In particular a finite surjective morphism between smooth varieties of the same dimension over a field is flat.
 
 [[T-COHFLATCHI]]
 
