@@ -91,5 +91,7 @@ The converse restricts sharply which canonical curves are complete intersections
 
 [[D-CRVBRILLNOETHER]]
 
-The Brill--Noether number $\rho(g,r,d)=g-(r+1)(g-d+r)$ is the expected dimension of the locus of $g^r_d$'s: over $\CC$ the theorem says that when $\rho\ge0$ every curve of genus $g$ has a $g^r_d$ and every component of $W^r_d(C)$ has dimension at least $\rho$, that a general curve has $\dim W^r_d=\rho$, and that on a general curve $W^r_d\setminus W^{r+1}_d$ is smooth of dimension $\rho$ ([[D-CRVBRILLNOETHER]]).
+The Brill--Noether number $\rho(g,r,d)=g-(r+1)(g-d+r)$ is the expected dimension of the locus of $g^r_d$'s. Work over $\CC$, with $d\ge1$ and $r\ge0$. When $\rho\ge0$, every smooth projective curve $C$ of genus $g$ has nonempty $G^r_d(C)$ and $W^r_d(C)$; every component of $G^r_d(C)$ has dimension at least $\rho$, and the same holds for $W^r_d(C)$ when $r\ge d-g$ (Arbarello--Cornalba--Griffiths--Harris, *Geometry of Algebraic Curves, Volume I*, Chapter V, Existence Theorem (1.1)).
+For a general $C$, $G^r_d(C)$ and $W^r_d(C)$ are empty when $\rho<0$; when $\rho\ge0$, $G^r_d(C)$ is reduced of pure dimension $\rho$, and $\dim W^r_d(C)=\rho$ (Arbarello--Cornalba--Griffiths--Harris, *Geometry of Algebraic Curves, Volume I*, Chapter V, Dimension Theorem (1.5)).
+On a general curve $W^r_d\setminus W^{r+1}_d$ is smooth of dimension $\rho$ when $\rho\ge0$ (Gieseker--Petri) ([[D-CRVBRILLNOETHER]]).
 Clifford's theorem is the reverse inequality in the case where $\rho$ is not the whole story: a special $g^r_d$ satisfies $d\ge2r$, with equality only for the trivial series, the canonical series, or a multiple of the hyperelliptic pencil, and $\linearsystem{K}$ itself is the case $r=g-1$, $d=2g-2$, $\rho=0$.

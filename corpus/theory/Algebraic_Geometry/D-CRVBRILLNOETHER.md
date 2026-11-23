@@ -22,7 +22,7 @@ prompts:
 ---
 
 ::: {.definition title="Brill--Noether number"}
-Let $C$ be a smooth projective curve of genus $g$ over an algebraically closed field, and let $r \geq 0$ and $d$ satisfy $g - d + r \geq 0$.
+Let $C$ be a smooth projective curve of genus $g$ over an algebraically closed field, and let $d \geq 1$ and $r \geq 0$ be integers.
 The locus $W^r_d(C) \subseteq \Pic^d(C)$ of line bundles $L$ with $h^0(C, L) \geq r + 1$ is a closed subscheme, cut out locally as a degeneracy locus of a map of vector bundles.
 Its expected dimension is the \dfn{Brill--Noether number}
 $$\rho(g, r, d) = g - (r+1)(g - d + r).$$
@@ -30,18 +30,17 @@ The curve $C$ is \dfn{Brill--Noether general} if for every such $r$ and $d$, $W^
 :::
 
 ::: {.theorem title="Brill--Noether"}
-Work over $\CC$. Let $g$, $r$, $d$ be as above.
+Work over $\CC$. Let $g$ be the genus of a smooth projective curve $C$, let $d \geq 1$ and $r \geq 0$ be integers, and put $\rho=\rho(g,r,d)$.
 
-1. If $\rho(g,r,d) \geq 0$, then every smooth projective curve of genus $g$ has a $g^r_d$, and every component of $W^r_d(C)$ has dimension at least $\rho(g,r,d)$ (Kempf, Kleiman--Laksov).
+1. If $\rho \geq 0$, then $G^r_d(C)$, and hence $W^r_d(C)$, is nonempty. Every component of $G^r_d(C)$ has dimension at least $\rho$; if $r \geq d-g$, every component of $W^r_d(C)$ also has dimension at least $\rho$ (Kempf and Kleiman--Laksov; Arbarello--Cornalba--Griffiths--Harris, *Geometry of Algebraic Curves, Volume I*, Chapter V, Existence Theorem (1.1)).
 
-2. A general curve of genus $g$ is Brill--Noether general, so $W^r_d(C)$ is empty when $\rho(g,r,d)<0$ (Griffiths--Harris).
+2. If $C$ is general and $\rho<0$, then $G^r_d(C)$, and hence $W^r_d(C)$, is empty. If $C$ is general and $\rho \geq 0$, then $G^r_d(C)$ is reduced of pure dimension $\rho$, and $C$ is Brill--Noether general, so $\dim W^r_d(C)=\rho$ (Griffiths--Harris; Arbarello--Cornalba--Griffiths--Harris, *Geometry of Algebraic Curves, Volume I*, Chapter V, Dimension Theorem (1.5)).
 
-3. For a general curve and $\rho(g,r,d) \geq 0$, $W^r_d(C) \setminus W^{r+1}_d(C)$ is smooth of dimension $\rho(g,r,d)$ (Gieseker--Petri).
+3. For a general curve and $\rho \geq 0$, $W^r_d(C) \setminus W^{r+1}_d(C)$ is smooth of dimension $\rho$ (Gieseker--Petri).
 :::
 
 ::: {.remark}
-The three theorems are classical Brill--Noether theory, attributed above by author; no edition of the standard references (Arbarello--Cornalba--Griffiths--Harris, or Griffiths--Harris) is retained in this repository's sources, so they carry no numbered citation here.
-The field is $\CC$ in all three, and no more general field is claimed.
+The field is $\CC$ in all three statements, and no more general field is claimed.
 :::
 
 ::: {.example}
