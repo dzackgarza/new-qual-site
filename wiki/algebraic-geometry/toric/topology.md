@@ -32,7 +32,7 @@ $$
 \pi_1\bigl(X_\Sigma(\CC),1\bigr)\cong N/N_\Sigma
 $$
 (Cox--Little--Schenck, *Toric Varieties*, Theorem 12.1.10), the isomorphism being the one induced by $i_*$, from the torus to $X_\Sigma$ and not the reverse.
-The identification of $\pi_1(T_N,1)$ with $N$ used at that step is the group isomorphism $u\mapsto[t\mapsto\lambda^u(e^{2\pi it})]$ of Proposition 12.1.1(b) and Exercise 12.1.1, based at $\lambda^u(1)=1$: it is an isomorphism, so every loop in $T_N$ is homotopic to a product of the loops $\lambda^u|_{S^1}$, and the one-parameter subgroups therefore account for all of $\pi_1(T_N,1)$, not only for loops around torus-invariant divisors.
+The identification of $\pi_1(T_N,1)$ with $N$ used at that step is the group isomorphism $u\mapsto[t\mapsto\lambda^u(e^{2\pi it})]$ of Proposition 12.1.1(b) and Exercise 12.1.1, based at $\lambda^u(1)=1$: it is an isomorphism, so every loop in $T_N$ is homotopic to a product of the loops $\restrictionof{\lambda^u}{S^1}$, and the one-parameter subgroups therefore account for all of $\pi_1(T_N,1)$, not only for loops around torus-invariant divisors.
 The fan is arbitrary here, and $X_\Sigma(\CC)$ is simply connected exactly when $N_\Sigma=N$ ([[PR-TORMOR]]).
 For a complete fan the support is $N_\RR$, so $N_\Sigma=N$ and $X_\Sigma(\CC)$ is simply connected; in particular $\PP^n$ is, while the torus $T$ itself is not.
 The rays alone do not decide this: the affine quadric cone $\CC^2/\{\pm1\}$ has two rays generating an index-two sublattice of $N$, and its fundamental group is trivial because the lattice points of its cone generate $N$.
