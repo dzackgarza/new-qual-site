@@ -24,7 +24,7 @@ A rational map $\varphi\colon X\dashrightarrow Y$ is dominant exactly when the i
 ## Rational maps to projective space
 
 For an irreducible variety $X$ over $k$, a rational map $X\dashrightarrow\PP^n_k$ is the same thing as an $(n+1)$-tuple $(f_0:\cdots:f_n)$ of rational functions on $X$, not all zero, modulo multiplication by a single element of $k(X)^\times$: on a dense open $U$ on which the $f_i$ are regular and have no common zero they are global sections generating $\OO_U$, so they define a morphism $U\to\PP^n_k$ [@Har77, Theorem II.7.1], and two tuples define the same morphism on a dense open subset exactly when they differ by an element of $k(X)^\times$.
-The tuple may be chosen with no common factor, and then the indeterminacy locus is the common zero locus of $f_0,\ldots,f_n$ in the largest open set on which all of them are regular.
+On any open set on which all the $f_i$ are regular, their common zero locus is the indeterminacy locus of the morphism represented there.
 A rational map to $\PP^n$ is a linear system on $X$ with no requirement that it be base-point-free, and the morphisms are the base-point-free linear systems ([[algebraic-geometry/divisors/line-bundles-and-linear-systems|line bundles and linear systems]]).
 
 ## Birational equivalence
