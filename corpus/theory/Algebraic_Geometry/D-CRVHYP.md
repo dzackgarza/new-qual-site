@@ -24,12 +24,13 @@ prompts:
 
 ::: {.definition}
 Let $C$ be a smooth projective curve of genus $g\geq2$ over an algebraically closed field $k$.
-The curve $C$ is \dfn{hyperelliptic} if it admits a finite morphism $C \to \PP^1_k$ of degree $2$, equivalently a $g^1_2$ [@Har77, Exercise IV.1.7].
+The curve $C$ is \dfn{hyperelliptic} if it admits a finite morphism $C \to \PP^1_k$ of degree $2$ [@Har77, Exercise IV.1.7].
+Equivalently it carries a $g^1_2$, a linear system of dimension $1$ and degree $2$: passing to the corresponding linear system turns the degree-two morphism into a pencil of degree two, and the notation $g^r_d$ for a linear system of dimension $r$ and degree $d$ is the one of [@Har77, §IV.5].
 :::
 
 ::: {.proposition}
 A hyperelliptic curve has exactly one $g^1_2$ [@Har77, Proposition IV.5.3].
-The canonical system $\abs{K}$ is base-point free for every $g \geq 2$, so it always defines a morphism $C \to \PP^{g-1}$; on a hyperelliptic curve that morphism factors as
+The canonical system $\abs{K}$ is base-point free for every $g \geq 2$ [@Har77, Lemma IV.5.1], so it always defines a morphism $C \to \PP^{g-1}$; on a hyperelliptic curve that morphism factors as
 $$
 C \to \PP^1 \to \PP^{g-1} ,
 $$
