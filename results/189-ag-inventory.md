@@ -564,6 +564,13 @@ four cards not repaired carry no claim that they are free of defects this readin
   on a theory card; there is no Iversen or Kashiwara–Schapira text on this machine, so the gap is recorded and no number
   is invented for it.
 
+**The remaining unread set, measured at `2136132338`.** The 82 pages of `wiki/algebraic-geometry/` transclude **327**
+distinct card ids (`rg -o '\[\[[A-Z][A-Z0-9-]{2,}(\|[^\]]*)?\]\]'` over the 82 files, the pipe target stripped, `sort -u`);
+the page count is still 82 files. All fifteen cards this record has read in full — the ten of §1 and the five of §9.1 — are
+among those 327, so **312 transclusions remain unread**. That is a count of cards, not of filesystem paths, and the
+reading still owed is one card at a time; the list of what is left is §9 item 5 plus the archive of card ids on disk, not
+a number that stands in for it.
+
 ## 10. The 82 files (4273 lines at `c9e3611a3d`), enumerated
 
 ```
