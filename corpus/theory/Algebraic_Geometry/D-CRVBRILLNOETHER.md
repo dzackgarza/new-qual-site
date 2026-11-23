@@ -34,9 +34,11 @@ Work over $\CC$. Let $g$ be the genus of a smooth projective curve $C$, let $d$ 
 
 1. If $\rho \geq 0$, then $G^r_d(C)$, and hence $W^r_d(C)$, is nonempty. Every component of $G^r_d(C)$ has dimension at least $\rho$; if $r \geq d-g$, every component of $W^r_d(C)$ also has dimension at least $\rho$ (Kempf and Kleiman--Laksov; Arbarello--Cornalba--Griffiths--Harris, *Geometry of Algebraic Curves, Volume I*, Chapter V, Existence Theorem (1.1)).
 
-2. If $C$ is general and $\rho<0$, then $G^r_d(C)$, and hence $W^r_d(C)$, is empty. If $C$ is general and $\rho \geq 0$, then $G^r_d(C)$ is reduced of pure dimension $\rho$, and $C$ is Brill--Noether general, so $\dim W^r_d(C)=\rho$ (Griffiths--Harris; Arbarello--Cornalba--Griffiths--Harris, *Geometry of Algebraic Curves, Volume I*, Chapter V, Dimension Theorem (1.5)).
+2. If $C$ is general and $\rho<0$, then $G^r_d(C)$, and hence $W^r_d(C)$, is empty; if $\rho \geq 0$, then $G^r_d(C)$ is reduced of pure dimension $\rho$ (Griffiths--Harris; Arbarello--Cornalba--Griffiths--Harris, *Geometry of Algebraic Curves, Volume I*, Chapter V, Dimension Theorem (1.5)).
 
-3. For a general curve and $\rho \geq 0$, $W^r_d(C) \setminus W^{r+1}_d(C)$ is smooth of dimension $\rho$ (Gieseker--Petri).
+3. For a general $C$ the locus $G^r_d(C)$ is smooth of dimension $\rho$ (Arbarello--Cornalba--Griffiths--Harris, *Geometry of Algebraic Curves, Volume I*, Chapter V, Smoothness Theorem (1.6)), which is the hypothesis of Proposition (4.4) of Chapter IV; that proposition and Lemma (3.5) of the same chapter then give that $W^r_d(C)$ is Cohen--Macaulay, reduced and normal of pure dimension $\rho$, that $W^r_d(C)\setminus W^{r+1}_d(C)$ is smooth of dimension $\rho$, and that for $d<g+r$ the singular locus of $W^r_d(C)$ is $W^{r+1}_d(C)$.
+
+4. So a general curve of genus $g$ is Brill--Noether general in the sense of the definition above: $W^r_d(C)$ is empty when $\rho<0$ and of dimension $\rho$ when $\rho \geq 0$, the second reading following from the dimension statement of item 3 and not from the Dimension Theorem alone, which concerns $G^r_d(C)$.
 :::
 
 ::: {.remark}
