@@ -10,8 +10,8 @@ topics:
 # Hilbert schemes, algebraic spaces and stacks
 
 A moduli problem is a functor of points, and the first question about it is whether a scheme represents it ([[PR-SCHFOP]]).
-When none does, representability is weakened in three steps — a scheme, then an algebraic space, then a stack — and each step keeps more of the functor's data: a scheme is a sheaf on the Zariski site represented by an object of the category, an algebraic space is an étale sheaf with an étale atlas from a scheme, and a stack is a category fibred in groupoids in which the automorphisms of the objects are part of the structure ([[D-ALGSPACE]], [[D-ALGSTACK]]).
-Two examples mark the endpoints: the Hilbert functor is represented by a scheme, and the moduli of curves of genus $g\ge2$ is represented only by a stack, whose coarse space $\mathcal M_g$ forgets the automorphisms ([[D-HILBSCHEME]], [[D-CRVMOD]]).
+Recall that [[D-ALGSPACE]] presents algebraic spaces by étale atlases from schemes, and [[D-ALGSTACK]] retains the automorphisms of the objects that a coarse moduli space forgets.
+The Hilbert functor is represented by a scheme, while the moduli of curves of genus $g\ge2$ is represented by a Deligne--Mumford stack whose geometric points record isomorphism classes of curves ([[D-HILBSCHEME]], [[D-CRVMOD]], [[D-ALGSTACK]]).
 
 ## The Hilbert functor
 
@@ -53,12 +53,11 @@ Every quotient of a scheme by an étale equivalence relation is an algebraic spa
 
 [[D-ALGSTACK]]
 
-A stack over $S$ is a category $\mathcal X$ fibred in groupoids over $\Sch_{/S}$ such that the isomorphism presheaves $\operatorname{Isom}(\xi,\eta)$ are étale sheaves and every étale descent datum is effective ([[D-ALGSTACK]]).
-An algebraic stack is a stack whose diagonal is representable by algebraic spaces and which admits a representable, smooth, surjective morphism $U\to\mathcal X$ from a scheme; it is Deligne--Mumford when some such atlas is étale ([[D-ALGSTACK]]).
-Smoothness of $\mathcal X$ over $S$ means the composite $U\to S$ is smooth for one — hence every — smooth atlas, and open, closed, and locally closed substacks are defined by requiring every base change $\mathcal Z\times_{\mathcal X}T\to T$ to be the corresponding kind of immersion ([[D-ALGSTACK]]).
+Recall from [[D-ALGSTACK]] that a stack over $S$ is a category $\mathcal X$ fibred in groupoids over $\Sch_{/S}$ whose isomorphism presheaves are étale sheaves and whose étale descent data are effective.
+An algebraic stack additionally has a representable diagonal and a representable, smooth, surjective atlas $U\to\mathcal X$ from a scheme; it is Deligne--Mumford when an atlas can be chosen étale ([[D-ALGSTACK]]).
+Smoothness of $\mathcal X$ over $S$ is smoothness of $U\to S$ for one, equivalently every, smooth atlas. Open, closed, and locally closed substacks are detected by the corresponding base changes $\mathcal Z\times_{\mathcal X}T\to T$ ([[D-ALGSTACK]]).
 
-The reason to pay the price of working with categories rather than functors is that the automorphisms are then part of the data.
-For each scheme $T$ and object $\xi$ over $T$, the base change $\theset{\xi}\times_{\mathcal X}T$ is an algebraic space whose points over $t$ record $\Aut(\xi_t)$, so a stack can distinguish the hyperelliptic curves, which have an involution, from the general curve, which has none, while the coarse space sees only the isomorphism class ([[D-ALGSTACK]], [[D-CRVMOD]]).
+The objects of a stack retain their automorphisms. For each scheme $T$ and object $\xi$ over $T$, the base change $\theset{\xi}\times_{\mathcal X}T$ is an algebraic space whose points over $t$ record $\Aut(\xi_t)$, so a stack can distinguish the hyperelliptic curves, which have an involution, from the general curve, which has none, while the coarse space sees only the isomorphism class ([[D-ALGSTACK]], [[D-CRVMOD]]).
 The moduli of curves of genus $g\ge2$ is therefore a Deligne--Mumford stack whose coarse space is $\mathcal M_g$, and the two agree only after passing to isomorphism classes ([[D-ALGSTACK]], [[T-CRVMG]]).
 
 ## The three levels
