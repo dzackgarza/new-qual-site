@@ -41,13 +41,13 @@ The \dfn{small étale site} $S_{\mathrm{et}}$ of $S$ is the full subcategory of 
 :::
 
 ::: {.remark}
-Every Zariski open covering is an étale covering, and every étale covering is an fppf covering, because étale morphisms are flat and locally of finite presentation (Stacks Project, Lemma 34.7.2, tag 021N).
+Every Zariski open covering is an étale covering, since an open immersion is étale, and every étale covering is an fppf covering, because étale morphisms are flat and locally of finite presentation: both inclusions are the content of Stacks Project, Lemma 34.7.2, tag 021N, that any smooth, étale or Zariski covering is an fppf covering.
 So every fppf sheaf is an étale sheaf, and every étale sheaf restricts to a Zariski sheaf on each $S$-scheme.
 :::
 
 ::: {.theorem title="Representable functors are sheaves"}
 For every $S$-scheme $X$, the functor $h_X = \Hom_S(-, X)$ is a sheaf on $(\Sch_{/S})_{\mathrm{fppf}}$, hence on $(\Sch_{/S})_{\mathrm{et}}$ (Stacks Project, Lemma 59.15.8, tag 03O3).
-For every quasicoherent $\OO_S$-module $\mathcal{M}$, the functor $(f \colon U \to S) \mapsto \Gamma(U, f^* \mathcal{M})$ is an fppf sheaf (Stacks Project, Proposition 35.5.2, tag 023T).
+For every quasicoherent $\OO_S$-module $\mathcal{M}$, the functor $(f \colon U \to S) \mapsto \Gamma(U, f^* \mathcal{M})$ is an fppf sheaf: this is fpqc descent for quasicoherent modules, where for a faithfully flat ring map $R \to A$ the extended Amitsur complex of every $R$-module is exact (Stacks Project, Lemma 35.3.6, tag 023M), and every descent datum on quasicoherent sheaves is effective with the functor from quasicoherent $\OO_S$-modules to descent data fully faithful (Stacks Project, Proposition 35.5.2, tag 023T).
 :::
 
 ::: {.example}
