@@ -571,6 +571,25 @@ among those 327, so **312 transclusions remain unread**. That is a count of card
 reading still owed is one card at a time; the list of what is left is §9 item 5 plus the archive of card ids on disk, not
 a number that stands in for it.
 
+### 9.2 The `T-JLB44J` / Exercise III.1.6-to-III.1.8 item does not exist on `main`
+
+The fifth version's brief asked for a repair "in the owning `T-JLB44J` material", correcting a Hartshorne locator from
+Exercise III.1.6 to Exercise III.1.8. Neither the card nor either number exists here, and the check below is exhaustive
+rather than a failed filename guess.
+
+- **No card id `T-JLB44J`.** `rg -n "JLB44J"` over `corpus/`, `wiki/`, `results/`, `sources/` and `tools/` returns
+  nothing, no file under `corpus/theory/Algebraic_Geometry/` carries the name, `git log --all -S"JLB44J"` returns no
+  commit on any ref, and the issue #189 body and its (empty) comment list name it nowhere.
+- **No locator `III.1.6` or `III.1.8` anywhere in the repository.** `rg -n "III\.1\.[0-9]+"` over the whole tree returns
+  only III.1.1A, III.1.2A, III.1.3A, III.1.17 and III.1.4, every one of them a real numbered result of Hartshorne §III.1
+  which the cards cite for what it says.
+- **Hartshorne Chapter III §1 prints no exercises.** `tmp/sources/hartshorne-1977-algebraic-geometry.md` runs §III.1 from
+  `:5632` to `:5776` ("## 2 Cohomology of Sheaves") with no exercise block; the chapter's exercises begin at `:5930` with
+  **2.1**. So "Exercise III.1.6" and "Exercise III.1.8" are not Hartshorne exercise numbers, and a swap between them
+  cannot be made. Two nearby numbers were checked and stand: **II.1.8** is the left exactness of $\Gamma(U,-)$, cited at
+  `corpus/theory/Algebraic_Geometry/PR-C9ZEK.md:40`, and **III.10.9** is the fibre-dimension criterion `PR-MIRACLEFLAT`
+  uses.
+
 ## 10. The 82 files (4273 lines at `c9e3611a3d`), enumerated
 
 ```
