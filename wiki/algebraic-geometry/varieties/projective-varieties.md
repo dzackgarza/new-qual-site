@@ -31,8 +31,8 @@ The passage back is the projective closure, and a generating set no longer suffi
 For a closed subset $X\subseteq\PP^n$ with homogeneous ideal $I(X)\subseteq S=k[x_0,\ldots,x_n]$, the homogeneous coordinate ring is $S(X)=S/I(X)$, graded by degree ([[D-L6ERW]]).
 
 $S(X)$ is the coordinate ring of the affine cone $C(X)\subseteq\AA^{n+1}$ over $X$ [@Har77, Exercise I.2.10], and it is not an invariant of the variety: the same $\PP^1$ embedded by $\OO(1)$ has $S=k[x,y]$, and embedded by $\OO(2)$ has the Veronese subring $k[x^2,xy,y^2]$.
-What is invariant is the Hilbert function of $S(X)$ in large degree, which is a polynomial — the Hilbert polynomial — whose degree and leading coefficient are the dimension and the degree of $X$ ([[D-L6ERW]]).
-For a curve, the constant term of the Hilbert polynomial is $1-p_a$, so the arithmetic genus is read off the coordinate ring rather than off the variety.
+In sufficiently large degree the Hilbert function of $S(X)$ agrees with a polynomial, the Hilbert polynomial, whose degree is the dimension of $X$ and whose leading coefficient is its degree divided by the factorial of the dimension ([[D-L6ERW]]).
+For a curve, the constant term of the Hilbert polynomial is $1-p_a$. More generally, the constant term determines the arithmetic genus through $\chi(\OO_X)$, so the resulting genus is intrinsic to $X$ even though the graded coordinate ring and Hilbert function depend on the embedding [@Har77, Exercise III.5.3].
 
 ## Embeddings: Segre and Veronese
 
