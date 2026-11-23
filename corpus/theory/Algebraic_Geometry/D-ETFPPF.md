@@ -41,7 +41,7 @@ The \dfn{small étale site} $S_{\mathrm{et}}$ of $S$ is the full subcategory of 
 :::
 
 ::: {.remark}
-Every Zariski open covering is an étale covering, since an open immersion is étale, and every étale covering is an fppf covering, because étale morphisms are flat and locally of finite presentation: both inclusions are the content of Stacks Project, Lemma 34.7.2, tag 021N, that any smooth, étale or Zariski covering is an fppf covering.
+Every Zariski open covering is an étale covering, since an open immersion is étale, and every étale covering is an fppf covering, because étale morphisms are flat and locally of finite presentation; the second of these is the étale case of Stacks Project, Lemma 34.7.2, tag 021N, which states that any smooth, étale or Zariski covering is an fppf covering.
 So every fppf sheaf is an étale sheaf, and every étale sheaf restricts to a Zariski sheaf on each $S$-scheme.
 :::
 

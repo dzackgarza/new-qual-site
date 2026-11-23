@@ -51,7 +51,7 @@ The open subsets of a topological space with the usual coverings form a site who
 [[D-ETFPPF]]
 
 On $\Sch_{/S}$ the étale coverings are the jointly surjective families of étale morphisms, and the fppf coverings are the jointly surjective families that are flat and locally of finite presentation (Stacks Project, Definition 34.7.1, tag 021M) ([[D-ETFPPF]]).
-Every Zariski covering is an étale covering, since an open immersion is étale, and every étale covering is an fppf covering, because étale morphisms are flat and locally of finite presentation; Stacks states both inclusions at once as the lemma that any smooth, étale or Zariski covering is an fppf covering (Stacks Project, Lemma 34.7.2, tag 021N).
+Every Zariski covering is an étale covering, since an open immersion is étale, and every étale covering is an fppf covering, because étale morphisms are flat and locally of finite presentation; the étale case is the one Stacks states, jointly with the smooth and Zariski cases, as the lemma that any smooth, étale or Zariski covering is an fppf covering (Stacks Project, Lemma 34.7.2, tag 021N).
 Hence the implications run one way only: an fppf sheaf is an étale sheaf, and an étale sheaf restricts to a Zariski sheaf on every $S$-scheme ([[D-ETFPPF]]).
 
 Every representable functor is an fppf sheaf, so every scheme defines sheaves on all three sites, and so does every quasicoherent module via $U\mapsto\Gamma(U,f^*\mcl)$ ([[D-ETFPPF]]).
