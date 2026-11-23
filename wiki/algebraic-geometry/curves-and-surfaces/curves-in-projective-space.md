@@ -78,7 +78,7 @@ Among smooth curves in $\PP^3$ the named models are these: in degree $3$ the pla
 The constraint between these cases is Halphen's theorem, that for $g\ge2$ a curve of genus $g$ has a nonspecial very ample divisor of degree $d$ exactly when $d\ge g+3$ [@Har77, Proposition IV.6.1]; Riemann--Roch gives $\dim\linearsystem{D}=d-g$ for such a divisor, so it embeds $C$ in $\PP^{d-g}$ and the minimal degree $g+3$ is the case of an embedding in $\PP^3$ ([[FE-CRVDEGS]]).
 The bound on the genus for fixed degree is Castelnuovo's, and equality in it is attained for every $d\ge3$ by a curve that lies on a quadric surface [@Har77, Theorem IV.6.4].
 On a smooth quadric the genera realized in degree $d$ are the values $(a-1)(d-a-1)$ for $1\le a\le d-1$ [@Har77, Exercise III.5.6], which is not every value below the bound: in degree $7$ they are $0$, $4$ and $6$, so genus $5$ is not realized on a smooth quadric ([[FE-CRVQUAD]]).
-Degree $7$ and genus $5$ is the first case the quadric computation leaves open: for a curve of genus $5$ with no $g^1_3$, Riemann--Roch gives $|K-P|$ of degree $7$ with $h^0=4$, and the very-ampleness criterion embeds it whenever $h^0(P+Q+R)=1$ for all $Q,R$ [@Har77, Proposition IV.3.1].
+Degree $7$ and genus $5$ is the first case the quadric computation leaves open: for a curve of genus $5$ with no $g^1_3$, Riemann--Roch gives $\abs{K-P}$ of degree $7$ with $h^0=4$, and the very-ampleness criterion embeds it whenever $h^0(P+Q+R)=1$ for all $Q,R$ [@Har77, Proposition IV.3.1].
 That such curves exist is a Brill--Noether statement beyond the two theorems used here, and it is stated on [[D-CRVBRILLNOETHER]] rather than proved in this chapter.
 
 ## Dual curves
