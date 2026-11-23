@@ -42,12 +42,12 @@ Infinitesimally, first-order deformations of a curve are $H^1(C,T_C)$, and Serre
 
 [[D-ALGSPACE]]
 
-An étale equivalence relation on an $S$-scheme $U$ is a subscheme $R\subseteq U\times_SU$ that is an equivalence relation on $T$-valued points with both projections étale, and its quotient is the étale sheafification of $T\mapsto U(T)/R(T)$ ([[D-ALGSPACE]]).
-An algebraic space is an étale sheaf whose diagonal is representable by schemes and which admits a scheme $U$ with $U\to X$ étale and surjective, an étale atlas; the two definitions agree, since $U\times_XU$ is then an étale equivalence relation with quotient $X$ ([[D-ALGSPACE]]).
+Recall that [[D-ALGSPACE]] defines an étale equivalence relation on $U$ by a monomorphism $(s,t)\colon R\to U\times_SU$ giving an equivalence relation on $T$-valued points with both projections étale, and defines $U/R$ as the étale sheafification of $T\mapsto U(T)/R(T)$.
+The defining conditions for an algebraic space are representability of its diagonal and the existence of an étale atlas $U\to X$ from a scheme. If $U\to X$ is an étale atlas, then $U\times_XU$ is an étale equivalence relation with quotient $X$ ([[D-ALGSPACE]]).
 
 Every scheme is an algebraic space with the identity as atlas, and if a finite group $G$ acts freely on a quasiprojective $S$-scheme $U$ then $U/G$ is an algebraic space with atlas $U$ ([[D-ALGSPACE]]).
-The point of the notion is that the quotient exists as a geometric object with étale-local properties even when it is not a scheme: properties are checked on the atlas, and the diagonal condition is what allows a morphism from a scheme to be base-changed.
-The definition is a genuine weakening of representability: the atlas is required only to be étale and surjective, and the quotient of a scheme by an étale equivalence relation is an algebraic space, with $U\to U/R$ étale and surjective (Stacks Project, Theorem 65.10.5, tag 02WW) ([[D-ALGSPACE]]).
+Properties that are étale-local are checked on an atlas, and the diagonal condition makes every base change of $U\to X$ along a morphism from a scheme again a scheme ([[D-ALGSPACE]]).
+Every quotient of a scheme by an étale equivalence relation is an algebraic space, with $U\to U/R$ étale and surjective (Stacks Project, Theorem 65.10.5, tag 02WW) ([[D-ALGSPACE]]).
 
 ## Stacks
 
