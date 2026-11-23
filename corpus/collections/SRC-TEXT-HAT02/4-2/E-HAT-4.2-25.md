@@ -90,6 +90,17 @@ audit:
     $C_*(K,X)$ in degrees at most $n$ with $H_{n+1}(K,X)$ a quotient of the free group on
     the $(n+1)$-cells, the exact sequence of the pair, and the identification of
     $\operatorname{im}\partial$ with the Hurewicz image.
+- event: solution-reviewed
+  by: kimi
+  date: 2026-11-23
+  note: >-
+    Residue repair for issue #163. Corrected the pair sequence in step `les` to end
+    $H_n(X)\to H_n(K)\to H_n(K,X)$. Rebuilt the relation argument in step `image`
+    from the short exact sequence of singular chain complexes of $(K,X)$: relative
+    boundaries die under the connecting homomorphism by $\partial^2=0$. This removes
+    the invalid triple $(K^{n+2},K^{n+1},X)$ and uses no containment of $X$ in a
+    skeleton, so cells of $X$ above dimension $n+1$ are allowed. The natural
+    cellular--singular comparison on the attached $(n+1)$-cells was also made explicit.
 ---
 
 ::: {.problem}
@@ -123,7 +134,7 @@ The cells of $K$ not in $X$ have dimension at least $n+1$, so the relative cellu
 There is an exact sequence $H_{n+1}(K,X)\xrightarrow{\partial}H_n(X)\to H_n(K)\to 0$.
 
 ::: pf-proof
-The long exact sequence of the pair $(K,X)$ reads $\cdots\to H_{n+1}(K,X)\xrightarrow{\partial}H_n(X)\to H_n(K)\to H_{n-1}(K,X)\to\cdots$, and $H_{n-1}(K,X)=0$ by step [](#relative-complex){.pf-ref}.
+The long exact sequence of the pair $(K,X)$ reads $\cdots\to H_{n+1}(K,X)\xrightarrow{\partial}H_n(X)\to H_n(K)\to H_n(K,X)\to\cdots$, and $H_n(K,X)=0$ by step [](#relative-complex){.pf-ref}.
 :::
 :::
 
@@ -131,7 +142,9 @@ The long exact sequence of the pair $(K,X)$ reads $\cdots\to H_{n+1}(K,X)\xright
 $\operatorname{im}\partial=h\bigl(\pi_n(X)\bigr)$, the Hurewicz image of $\pi_n(X)$ in $H_n(X)$.
 
 ::: pf-proof
-The boundary $\partial$ sends the class of a relative $(n+1)$-cell to the homology class in $X$ of its attaching map, which is the cellular boundary formula of §2.2 read in the relative complex. The attaching maps are exactly the maps $S^n\to X$ used in step [](#construction){.pf-ref} to represent all elements of $\pi_n(X)$, and the class in $H_n(X)$ of a map $S^n\to X$ is by definition its image under the Hurewicz map $h:\pi_n(X)\to H_n(X)$ of Theorem 4.32. The classes coming from $\operatorname{im}\partial_{n+2}$ in step [](#relative-complex){.pf-ref} impose no additional boundaries in $H_n(X)$: their image under $\partial$ is zero by exactness of the sequence of the triple $(K^{n+2},K^{n+1},X)$. Hence the image of $\partial$ is precisely $h(\pi_n(X))$.
+Under the natural cellular--singular comparison of Theorem 2.35, the boundary $\partial$ sends the class of a relative $(n+1)$-cell to the homology class in $X$ of its attaching map. The attaching maps are exactly the maps $S^n\to X$ used in step [](#construction){.pf-ref} to represent all elements of $\pi_n(X)$, and the class in $H_n(X)$ of a map $S^n\to X$ is by definition its image under the Hurewicz map $h:\pi_n(X)\to H_n(X)$ of Theorem 4.32.
+
+The relations coming from $\operatorname{im}\partial_{n+2}$ in step [](#relative-complex){.pf-ref} die under $\partial$ without any skeletal containment hypothesis on $X$. To see this, use the short exact sequence of singular chain complexes $0\to C_*(X)\to C_*(K)\to C_*(K,X)\to0$: the connecting homomorphism is computed by lifting a relative cycle $c$ to $\widetilde c\in C_{n+1}(K)$ and taking the boundary of $\widetilde c$ in $C_n(X)$. If the relative cycle is a boundary, a lift can be chosen of the form $\widetilde c=\partial\widetilde d$ for $\widetilde d\in C_{n+2}(K)$, and then $\partial\widetilde c=\partial^2\widetilde d=0$. Hence the image of $\partial$ is precisely $h(\pi_n(X))$, whether or not $X$ has cells above dimension $n+1$.
 :::
 :::
 
