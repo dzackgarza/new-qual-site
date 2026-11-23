@@ -22,7 +22,7 @@ prompts:
 ---
 
 ::: {.definition title="Brill--Noether number"}
-Let $C$ be a smooth projective curve of genus $g$ over an algebraically closed field, and let $d \geq 1$ and $r \geq 0$ be integers.
+Let $C$ be a smooth projective curve of genus $g$ over an algebraically closed field, and let $d \geq 1$ and $r \geq 0$ be integers with $g-d+r \geq 0$.
 The locus $W^r_d(C) \subseteq \Pic^d(C)$ of line bundles $L$ with $h^0(C, L) \geq r + 1$ is a closed subscheme, cut out locally as a degeneracy locus of a map of vector bundles.
 Its expected dimension is the \dfn{Brill--Noether number}
 $$\rho(g, r, d) = g - (r+1)(g - d + r).$$
@@ -30,7 +30,7 @@ The curve $C$ is \dfn{Brill--Noether general} if for every such $r$ and $d$, $W^
 :::
 
 ::: {.theorem title="Brill--Noether"}
-Work over $\CC$. Let $g$ be the genus of a smooth projective curve $C$, let $d \geq 1$ and $r \geq 0$ be integers, and put $\rho=\rho(g,r,d)$.
+Work over $\CC$. Let $g$ be the genus of a smooth projective curve $C$, let $d$ and $r$ be as in the definition (in particular $d \geq 1$, $r \geq 0$ and $r \geq d-g$), and put $\rho=\rho(g,r,d)$.
 
 1. If $\rho \geq 0$, then $G^r_d(C)$, and hence $W^r_d(C)$, is nonempty. Every component of $G^r_d(C)$ has dimension at least $\rho$; if $r \geq d-g$, every component of $W^r_d(C)$ also has dimension at least $\rho$ (Kempf and Kleiman--Laksov; Arbarello--Cornalba--Griffiths--Harris, *Geometry of Algebraic Curves, Volume I*, Chapter V, Existence Theorem (1.1)).
 
