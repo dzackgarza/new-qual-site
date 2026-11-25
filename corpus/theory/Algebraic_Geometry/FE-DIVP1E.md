@@ -26,7 +26,7 @@ Degree-zero divisors are sums of such differences, so $\Pic^0(\PP^1) = 0$ and $\
 :::
 
 ::: {.example}
-On an elliptic curve $E$, distinct points $p \neq q$ are never linearly equivalent: $p - q = \divisorof(f)$ would make $f \colon E \to \PP^1$ a degree-one map, hence an isomorphism, contradicting $g(E) = 1 \neq 0 = g(\PP^1)$.
+On an elliptic curve $E$ over an algebraically closed field, distinct points $p \neq q$ of $E(k)$ are never linearly equivalent: $p - q = \divisorof(f)$ would make $f \colon E \to \PP^1$ a degree-one map, hence an isomorphism, contradicting $g(E) = 1 \neq 0 = g(\PP^1)$.
 Instead $\Pic^0(E) \cong E$ by $p \mapsto [p - O]$, so $\Pic(E) \cong E \oplus \ZZ$.
 :::
 

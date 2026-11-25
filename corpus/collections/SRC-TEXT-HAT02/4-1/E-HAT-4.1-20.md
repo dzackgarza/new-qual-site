@@ -68,6 +68,45 @@ audit:
     the class of the composite with the attaching map, extensions over a disc up to homotopy rel
     boundary form a pi_k-torsor, and homotopies glue cell by cell. Not checked: no sharper bound, and
     nothing about infinite X.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.1 Exercise 20, and against Sam, §4.1 Exercise 20, which is retained and
+    does solve the exercise in sketch: finitely many homotopy classes on a cell, because a map of a
+    cell is its attaching map followed by a map of the skeleton, and finitely many maps in total
+    because the homotopies are relative to the cell boundaries. The card's sentence that no retained
+    set solves it is therefore false, and is replaced: the preamble now names Sam's sketch and says
+    that the induction through the Postnikov stage is the card's. Two repairs in the proofs. (1) Step
+    `induction` began the induction with "exactly one map of the one-point space $X^0$"; $X^0$ is a
+    finite discrete set with one point per $0$-cell, and a finite connected CW complex can have many
+    $0$-cells. What is true, and what the induction uses, is that there is exactly one homotopy class
+    of maps $X^0\to C$, since $C$ is path-connected and $X^0$ is finite. (2) Step `percell`
+    described the extensions for $k=1$ as a quotient of $\pi_1(C)$; the homotopy classes of paths
+    between two fixed points form a torsor under $\pi_1(C)$, not a quotient. The count and every
+    other step are unchanged; `postnikov`, `components`, `obstruction`, `choices`, `independent` and
+    the conclusion were re-read and stand.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    One further repair, in step `induction`. Its conclusion passed from "finitely many extensions of a
+    fixed map on $X^{k-1}$" to "finitely many classes in $[X^k,C]$" without saying how the latter is
+    assembled from the former: $[X^k,C]$ is the union over the classes $[\varphi]\in[X^{k-1},C]$ of
+    the classes restricting to $[\varphi]$, and each fibre is a quotient of the extensions of
+    $\varphi$ up to homotopy relative to $X^{k-1}$, because two homotopic extensions can be replaced
+    by extensions agreeing on $X^{k-1}$ using the homotopy extension property of the CW pair
+    $(X^k,X^{k-1})$ (Proposition 0.16). The step now runs that passage; the induction is unchanged
+    otherwise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    The preamble cited Sam's sketch without saying what it leaves out. It now records that the sketch
+    never uses the finiteness of $\pi_i(Y)$ — its sentences would make $[X,Y]$ finite for an arbitrary
+    target, so they prove nothing about this exercise — and that the count in which the hypothesis
+    enters is the card's. Step `induction` carries the same marking at the point where $\pi_k(C)$ is
+    counted. No mathematics changed.
 ---
 
 ::: {.problem}
@@ -75,7 +114,7 @@ Show that $[X, Y]$ is finite if $X$ is a finite connected CW complex and $\pi_i(
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.1 Exercise 20. It is checked against Hatcher, Algebraic Topology, §4.1 Exercise 20, and against the obstruction theory of §4.3, in particular the compression of maps of a $d$-dimensional complex into the $d$-th Postnikov stage.
+The argument follows the retained sketch of **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.1 Exercise 20** (`tmp/sources/hatcher-solutions-sam-2008.pdf`), where a map is fixed on the $(k-1)$-skeleton and shown to have finitely many extensions over each cell. Sam's sketch never uses the finiteness of $\pi_i(Y)$: the same sentences would make $[X,Y]$ finite for an arbitrary target, so the count in which the hypothesis does its work is the card's, and the step carrying it is marked as the card's below. It is checked against Hatcher, §4.1 Exercise 20, and against the obstruction theory of §4.3.
 
 ::: pf
 
@@ -98,7 +137,7 @@ $X$ is connected, so its image is connected and lies in one component. The compo
 :::
 
 ::: {.pf-step #percell}
-Fix a component $C$ of $Y^{d}$, a $k\ge1$, a map $\varphi:X^{k-1}\to C$ and a $k$-cell $e$ of $X$. The extensions of $\varphi$ over $e$, up to homotopy relative to $\partial e$, are either none, or in bijection with a quotient of the finite group $\pi_k(C)$ by the action of $\pi_1$ in the case $k=1$; in either case there are at most $\cardinality{\pi_k(C)}$ of them.
+Fix a component $C$ of $Y^{d}$, a $k\ge1$, a map $\varphi:X^{k-1}\to C$ and a $k$-cell $e$ of $X$. The extensions of $\varphi$ over $e$, up to homotopy relative to $\partial e$, are either none, or in bijection with $\pi_k(C)$ for $k\ge2$ and with the set of homotopy classes of paths in $C$ between two fixed points for $k=1$, a set on which $\pi_1(C)$ acts freely and transitively; in either case there are at most $\cardinality{\pi_k(C)}$ of them.
 
 :::: pf-proof
 
@@ -137,7 +176,7 @@ A homotopy rel $X^{k-1}$ between two extensions restricts to a homotopy rel $\pa
 For each $k\le d$ the set of homotopy classes of maps $X^{k}\to C$ extending a fixed map on $X^{k-1}$ is finite, and consequently $[X,C]$ is finite.
 
 ::: pf-proof
-Induction on $k$ from $k=0$, where there is exactly one map of the one-point space $X^{0}$ into the path-connected $C$. At the step, step [](#percell){.pf-ref} gives at most $\cardinality{\pi_k(C)}$ extensions over each $k$-cell and step [](#independent){.pf-ref} bounds their number by a finite product, with $\pi_k(C)$ finite for $k\le d$ by hypothesis. Since $X$ is $d$-dimensional, $X^{d}=X$, and the induction terminates at $[X,C]$.
+Induction on $k$ from $k=0$, where the set of homotopy classes of maps $X^{0}\to C$ is a single point: $X^{0}$ is a finite discrete set and $C$ is path-connected, so any two maps of $X^{0}$ into $C$ are homotopic, a homotopy moving each of the finitely many image points along a path in $C$. At the step, step [](#percell){.pf-ref} gives at most $\cardinality{\pi_k(C)}$ extensions over each $k$-cell and step [](#independent){.pf-ref} bounds their number by a finite product, with $\pi_k(C)$ finite for $k\le d$ by hypothesis. This count is the card's: it is where the finiteness of $\pi_k(Y)$ is used, and Sam's sketch, which never uses it, does not supply it. For the passage from a fixed map to all maps, $[X^{k},C]$ is the union over the classes $[\varphi]\in[X^{k-1},C]$, finitely many by the induction hypothesis, of the classes restricting to $[\varphi]$; each of those fibres is a quotient of the set of extensions of $\varphi$ over $X^{k}$ up to homotopy relative to $X^{k-1}$ used above, because two extensions homotopic relative to $X^{k-1}$ are homotopic, and two homotopic extensions of $\varphi$ can be replaced by extensions agreeing on $X^{k-1}$ using the homotopy extension property of the CW pair $(X^{k},X^{k-1})$ (Proposition 0.16). So $[X^{k},C]$ is finite for each $k$, and since $X$ is $d$-dimensional, $X^{d}=X$ and the induction terminates at $[X,C]$.
 :::
 
 :::

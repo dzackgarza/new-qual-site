@@ -9,7 +9,7 @@ topics:
 # Inequalities
 
 Let $(X,\mathcal M,\mu)$ be a measure space, and let $p,q\in[1,\infty]$ be conjugate exponents, $\frac1p+\frac1q=1$, unless stated otherwise.
-Each entry names the quantity its inequality bounds and links the statement; the statements are on [[real-analysis/appendices/appendix-inequalities|Common inequalities]].
+Each entry names the quantity its inequality bounds and links its statement; all but the Borel--Cantelli lemma are stated on [[real-analysis/appendices/appendix-inequalities|Common inequalities]].
 
 ## Between integrals
 

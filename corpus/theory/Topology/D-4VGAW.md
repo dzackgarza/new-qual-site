@@ -18,6 +18,8 @@ review: draft
 Let $p\colon \tilde X\to X$ be a [[D-ANO2D|covering space]].
 A \dfn{deck transformation} of $p$ is a [[D-9KQZT|homeomorphism]] $f\colon\tilde X\to\tilde X$ with $p\circ f = p$.
 The deck transformations of $p$ form a group $\Deck(p)$ under composition.
+
+This is the covering-space transformation of [@Hat02, §1.3].
 :::
 
 ::: {.remark}

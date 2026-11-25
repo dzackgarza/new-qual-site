@@ -21,5 +21,5 @@ The power series $\sum_{n=1}^\infty \frac{z^n}{n^2}$ has radius of convergence $
 Its radius is $1$ because $\limsup_n(1/n^2)^{1/n}=1$.
 For $\abs{z}=1$, $\abs{z^n/n^2}=1/n^2$ and $\sum_n 1/n^2<\infty$, so the series converges absolutely.
 
-The radius is that of [@Ahl73, ch. 2, §2.2, Theorem 2], and the book says of $\abs z=R$ that nothing is claimed about convergence on it. The boundary sentence is the card's own: absolute convergence on the circle, by comparison with the convergent series $\sum_n 1/n^2$.
+The radius is that of [@Ahl73, ch. 2, §2.4, Theorem 2], and the book says of $\abs z=R$ that nothing is claimed about convergence on it. The boundary sentence is the card's own: absolute convergence on the circle, by comparison with the convergent series $\sum_n 1/n^2$.
 :::

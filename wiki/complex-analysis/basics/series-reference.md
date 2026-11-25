@@ -10,15 +10,11 @@ title: Series reference
 [[D-5NQWE]]
 
 ::: {.fact}
-For $n\in\ZZ_{>0}$,
+In binomial coefficients, $\rising{n}{k} = k!{n+k-1 \choose k}$ for $n\in\ZZ_{>0}$, and $\falling{n}{k} = k!{n\choose k}$ for $0\leq k\leq n$.
+For $n\in\ZZ_{\geq 0}$,
 $$
-\rising{n}{k} = {(n+k-1)! \over (n-1)!} = {\Gamma(n+k) \over \Gamma(n)} = k!{n+k-1 \choose k}.
+\qty{\frac{d}{dz}}^k z^n = \falling{n}{k} \, z^{n-k}.
 $$
-For $n\in\ZZ_{\geq 0}$ and $0\leq k\leq n$,
-$$
-\falling{n}{k} = {n! \over (n-k)!} = {\Gamma(n+1) \over \Gamma(n-k+1)} = k!{n\choose k}.
-$$
-For $n\in\ZZ_{\geq 0}$, $\qty{\frac{d}{dz}}^k z^n = \falling{n}{k} \, z^{n-k}$.
 
 :::
 
@@ -57,7 +53,7 @@ $$
 \qty{\frac{d}{dz}}^k \sum_{n\geq 0} c_n z^n = \sum_{n\geq k} \falling{n}{k} \, c_n z^{n-k}.
 $$
 
-The developments are those listed in [@Ahl73, ch. 5, §1.2, The Taylor Series] — $e^z$, $\cos z$ and $\sin z$ there as the definitions of the functions, $(1+z)^\mu$ with the binomial coefficients defined in the same section, and $\log(1+z)$, which is the series above at $-z$ — and the geometric series with its termwise derivative is [@Ahl73, ch. 2, §2.2, Theorem 2], whose third part gives the derivative by termwise differentiation with the same radius of convergence.
+The developments are those listed in [@Ahl73, ch. 5, §1.2, The Taylor Series] — $e^z$, $\cos z$ and $\sin z$ there as the definitions of the functions, $(1+z)^\mu$ with the binomial coefficients defined in the same section, and $\log(1+z)$, which is the series above at $-z$ — and the geometric series is the example of [@Ahl73, ch. 2, §2.4], whose Theorem 2 (iii) gives the derivative by termwise differentiation with the same radius of convergence.
 :::
 
 [[FF-LF5ND]] [[FF-XKATS]]
@@ -124,11 +120,6 @@ $$
 
 [[FF-JKLWM]]
 
-::: {.remark}
-The same recursion holds for formal power series: for a commutative ring $R$, $A(z) \coloneqq \sum_{k\geq 0} a_k z^k \in R[[z]]$ is invertible if and only if $a_0$ is a unit in $R$.
-
-:::
-
 [[P-VFAXW]] [[P-IM6MH]] [[P-OCOSY]] [[P-VT4TV]]
 
 ::: {.fact title="Inverting with the geometric series"}
@@ -138,12 +129,19 @@ $$
 $$
 as formal power series.
 Since $(A(z)-1)^k$ has no terms of degree below $k$, the coefficient of $z^m$ in $1/A(z)$ is determined by the summands with $k\leq m$.
+For $A(z) = a_0 + a_1z + a_2z^2 + \cdots$ with $a_0\neq 0$, applying the same series to $a_0^{-1}A(z)$, whose constant term is $1$, gives $1/A(z)$.
 
 :::
 
-::: {.remark}
-If $A(z) = z^m \tilde A(z)$ with $\tilde A(0) \neq 0$, then $1/A(z) = z^{-m}/\tilde A(z)$, and $1/\tilde A(z)$ is computed by the coefficient recursion for $1/A(z)$ applied to $\tilde A$ or, after dividing by $\tilde A(0)$, by the geometric series.
+::: {.proposition}
+Let $A$ be holomorphic near $0$ with a [[D-65VIK|zero of order]] $m\geq1$ at $0$, so that $A(z) = z^m \tilde A(z)$ with $\tilde A$ holomorphic near $0$ and $\tilde A(0)\neq 0$.
+Then $1/\tilde A$ is holomorphic near $0$, and on a punctured disc
+$$
+{1\over A(z)} = z^{-m}{1\over \tilde A(z)},
+$$
+so $1/A$ has a [[D-AUD6K|pole of order $m$]] at $0$.
 
+This is [@Ahl73, ch. 4, §3.2, Zeros and Poles], which reads the order of a pole off the order of the zero of the reciprocal.
 :::
 
 [[FF-UQZNR]]
@@ -189,11 +187,9 @@ $$
 $$
 So
 $$
-\begin{aligned}
-{z\over \sin(z)} &= 1 + {z^2\over 3!} + {7 z^4 \over 360 } + \bigo(z^6), \\
-{1 \over \sin(z)} &= {1\over z}  + {z\over 3!} + {7 z^3 \over 360 } + \bigo(z^5).
-\end{aligned}
+{z\over \sin(z)} = 1 + {z^2\over 3!} + {7 z^4 \over 360 } + \bigo(z^6),
 $$
+and dividing by $z$ gives the Laurent series of $1/\sin(z)$ ([[FF-UQZNR]]).
 
 :::
 

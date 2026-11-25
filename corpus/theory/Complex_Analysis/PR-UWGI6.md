@@ -20,7 +20,7 @@ Then
 $$
 u(z_0)=\frac{1}{2\pi r}\oint_{\bd \DD_r(z_0)}u\,ds=\frac{1}{\pi r^2}\iint_{\DD_r(z_0)}u(x,y)\dx\dy,
 $$
-where $ds$ is arc length on the circle $\bd \DD_r(z_0)$ [@SS03, Corollary 7.3 (p. 103)].
+where $ds$ is arc length on the circle $\bd \DD_r(z_0)$ [@SS03, ch. 3, Corollary 7.3].
 
 The circular average is that corollary; the disc average is an addition here, obtained from the circular one by integrating over $0\leq s\leq r$ in polar coordinates.
 :::

@@ -24,17 +24,18 @@ prompts:
 
 ::: {.definition}
 Let $C$ be a smooth projective curve of genus $g\geq2$ over an algebraically closed field $k$.
-The curve $C$ is \dfn{hyperelliptic} if it admits a finite morphism $C \to \PP^1_k$ of degree $2$, equivalently a $g^1_2$.
+The curve $C$ is \dfn{hyperelliptic} if it admits a finite morphism $C \to \PP^1_k$ of degree $2$ [@Har77, Exercise IV.1.7].
+Equivalently it carries a $g^1_2$, a linear system of dimension $1$ and degree $2$: passing to the corresponding linear system turns the degree-two morphism into a pencil of degree two, and the notation $g^r_d$ for a linear system of dimension $r$ and degree $d$ is the one of [@Har77, §IV.5].
 :::
 
 ::: {.proposition}
-A hyperelliptic curve has exactly one $g^1_2$.
-The canonical system $\abs{K}$ is base-point free for every $g \geq 2$, so it always defines a morphism $C \to \PP^{g-1}$; on a hyperelliptic curve that morphism factors as
+A hyperelliptic curve has exactly one $g^1_2$ [@Har77, Proposition IV.5.3].
+The canonical system $\abs{K}$ is base-point free for every $g \geq 2$ [@Har77, Lemma IV.5.1], so it always defines a morphism $C \to \PP^{g-1}$; on a hyperelliptic curve that morphism factors as
 $$
 C \to \PP^1 \to \PP^{g-1} ,
 $$
 the degree-two map followed by the $(g-1)$-uple embedding, whose image is a rational normal curve of degree $g-1$.
-Equivalently $\abs{K} = (g-1)\, g^1_2$.
+Equivalently $\abs{K} = (g-1)\, g^1_2$ [@Har77, Proposition IV.5.3].
 :::
 
 ::: {.remark}
@@ -47,10 +48,6 @@ $$
 $$
 Thus the canonical system fails to separate some pair of points or tangent direction exactly when $\ell(p+q)=2$, equivalently when $p+q$ belongs to a $g^1_2$.
 
-Every curve of genus $2$ is hyperelliptic, since $\abs{K}$ is then a $g^1_2$ outright.
-If $\operatorname{char}k\ne2$, the degree-two map is tamely ramified at $2g+2$ points by Riemann--Hurwitz. Hence the hyperelliptic locus has dimension
-$$
-(2g+2)-\dim\PGL_2=2g-1;
-$$
-it is all of $\mathcal M_2$ and is a proper locus in $\mathcal M_g$ for $g\geq3$.
+Every curve of genus $2$ is hyperelliptic, since $\abs{K}$ is then a $g^1_2$ outright [@Har77, Exercise IV.1.7].
+If $\operatorname{char}k\ne2$, the degree-two map is tamely ramified at $2g+2$ points by Riemann--Hurwitz [@Har77, Corollary IV.2.4].
 :::

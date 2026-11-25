@@ -85,14 +85,6 @@ See [[complex-analysis/cauchy-theory/index|Cauchy theory]].
 
 [[T-DDOWW]]
 
-[[C-Q6BSL]]
-
-[[PR-L4Y5F]]
-
-[[T-SSNLT]]
-
-[[T-WFXQP]]
-
 See [[complex-analysis/singularities/index|Singularities]].
 
 ## Residues and contours
@@ -104,6 +96,16 @@ See [[complex-analysis/singularities/index|Singularities]].
 [[T-ZO5UU]]
 
 [[T-ESKLY]]
+
+[[PR-L4Y5F]]
+
+[[C-Q6BSL]]
+
+[[T-SSNLT]]
+
+[[D-Q8XRV]]
+
+[[T-WFXQP]]
 
 See [[complex-analysis/residues-and-contours/index|Residues and contours]]. Evaluated integrals are on [[complex-analysis/standard-integrals|Standard integrals]].
 
@@ -151,8 +153,6 @@ See [[complex-analysis/conformal-maps/index|Conformal maps]].
 
 ## Conformal geometry
 
-The statements of the chapter's newer topics, which carry the same weight on the exam.
-
 [[D-3QTVR]]
 
 [[T-UBWL2]]
@@ -181,7 +181,7 @@ See [[complex-analysis/basics/the-riemann-sphere|The Riemann sphere]], [[complex
 
 [[T-HWBWI]]
 
-Entire functions of finite order, the products that carry their zeros, the growth bound that kills a function in a sector, and the two theorems on values attained: the fundamental theorem of algebra, Gauss--Lucas, and Picard's little theorem.
+Entire functions of finite order, the products that carry their zeros, the growth bound that kills a function in a sector, and the theorems on values attained: the fundamental theorem of algebra, Gauss--Lucas, and Picard's little theorem.
 
 ## Hypotheses and counterexamples
 

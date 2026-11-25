@@ -25,5 +25,5 @@ $$
 \Res_{z=z_0}f=\lim_{z\to z_0}(z-z_0)f(z).
 $$
 
-For a pole of order exactly $n$ this is [@SS03, Theorem 1.4 of Chapter 3 (p. 76)]; the hypothesis above allows any bound on the order, which is how the formula is used when only the order is known to be at most $n$.
+For a pole of order exactly $n$ this is [@SS03, ch. 3, Theorem 1.4]; the hypothesis above allows any bound on the order, which is how the formula is used when only the order is known to be at most $n$.
 :::

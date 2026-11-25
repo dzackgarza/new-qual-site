@@ -104,10 +104,8 @@ The decomposition is [@Ahl73, ch. 5, §2.1, Partial Fractions], which attaches t
 [[FF-IAUQG]]
 
 ::: {.remark}
-Inside its radius of convergence, a power series may be integrated and differentiated term by term, and the resulting series have the same radius of convergence.
-A uniformly convergent series of continuous functions on a compact interval may be integrated term by term.
-A uniformly convergent series of differentiable functions need not be differentiable term by term ([[complex-analysis/basics/uniform-convergence|Uniform convergence]]).
-
+Term-by-term differentiation needs a hypothesis on the derivatives, not only on the series: a uniformly convergent series of differentiable functions need not be differentiable term by term ([[complex-analysis/basics/uniform-convergence|Uniform convergence]]).
+The power-series case is [[PR-QNDSD|smoothness on the disc of convergence]], and the tail criterion for uniform convergence is [[PR-4LISY]].
 :::
 
 [[PR-WIMIM]]
@@ -122,7 +120,7 @@ The Cauchy product of power series and the standard power series are on [[comple
 ::: {.fact title="Polynomial division"}
 For polynomials $f, g$ over a field with $g\neq 0$, there are unique polynomials $q, r$ with $f = qg + r$ and $\deg r < \deg g$ or $r = 0$.
 
-This is division with remainder in the [[D-NKRGN|Euclidean domain]] $k[x]$, whose Euclidean function is the degree: subtracting a suitable multiple of $g$ lowers the degree of $f$ until it falls below $\deg g$, and the remainder is unique because a difference of two remainders of degree below $\deg g$ that is a multiple of $g$ must vanish.
+This is division with remainder in the [[D-NKRGN|Euclidean domain]] $k[x]$, whose Euclidean function is the degree.
 :::
 
 [[FT-3ZL25]]

@@ -32,7 +32,7 @@ source:
           comment: Exercise 13 (printed as exercise 15 when the card was created;
             the 2x+1-in-Z4[x] exercise is 13 in Gallian 7e)
         - id: P-CH16-16
-          comment: Exercise 16
+          comment: Exercise 14 in Gallian 7e (the retained Ch16Sltns.pdf entry is item 16)
         - id: P-CH16-17
           comment: Exercise 17
         - id: P-CH16-19
@@ -45,7 +45,7 @@ source:
         - id: P-CH16-50
           comment: Exercise 50
         - id: P-CH16-56
-          comment: Exercise 56
+          comment: Exercise 46 in Gallian 7e (the retained Ch16Sltns.pdf entry is item 56)
   date:
     kind: unknown
 ---

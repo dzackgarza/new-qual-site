@@ -18,5 +18,5 @@ review: draft
 
 ::: {.corollary}
 Let $\Omega\subseteq\CC$ be open, and let $(f_n)_{n\in\NN}$ be [[D-E7A5W|holomorphic]] functions on $\Omega$ that converge to $f$ uniformly on every compact subset of $\Omega$.
-Then $f$ is holomorphic on $\Omega$, and $f_n'\to f'$ uniformly on every compact subset of $\Omega$ [@SS03, Theorems 5.2 and 5.3 (pp. 53--54)].
+Then $f$ is holomorphic on $\Omega$, and $f_n'\to f'$ uniformly on every compact subset of $\Omega$ [@SS03, ch. 2, Theorems 5.2 and 5.3].
 :::

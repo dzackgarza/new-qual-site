@@ -22,5 +22,5 @@ Its radius is $1$ because $\limsup_n(1/n)^{1/n}=1$.
 At $z=1$ it is the harmonic series, which diverges.
 For $\abs{z}=1$ with $z\neq1$, the partial sums satisfy $\abs{\sum_{n=1}^N z^n}=\abs{\frac{z(1-z^N)}{1-z}}\le\frac{2}{\abs{1-z}}$, and $1/n$ decreases to $0$, so the series converges by Dirichlet's test.
 
-The radius is that of [@Ahl73, ch. 2, §2.2, Theorem 2], and the book says of $\abs z=R$ that nothing is claimed about convergence on it. The boundary sentence is the card's own: the bound on the partial sums with Dirichlet's test, which is [@Rud76, ch. 3, Theorem 3.42].
+The radius is that of [@Ahl73, ch. 2, §2.4, Theorem 2], and the book says of $\abs z=R$ that nothing is claimed about convergence on it. The boundary sentence is the card's own: the bound on the partial sums with Dirichlet's test, which is [@Rud76, ch. 3, Theorem 3.42].
 :::

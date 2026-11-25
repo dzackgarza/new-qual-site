@@ -23,12 +23,3 @@ $$
 $$
 so $\int_X f_n\dmu\to\int_X f\dmu$.
 :::
-
-::: {.proof}
-$$
-\abs{\int_X(f_n-f)\dmu}
-\leq \int_X\abs{f_n-f}\dmu
-\leq \mu(X)\sup_{x\in X}\abs{f_n(x)-f(x)},
-$$
-and the right-hand side tends to $0$ by uniform convergence.
-:::

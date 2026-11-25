@@ -18,18 +18,9 @@ If $\Omega \subsetneq \CC$ is simply connected then $\Omega$ is biholomorphic to
 [[T-4MDS6]]
 
 ::: {.remark title="$\Omega\neq\CC$ and simple connectivity are necessary"}
-$\Omega\neq\CC$: a holomorphic map $F\colon\CC\to\DD$ is bounded and entire, hence constant by [[T-QHIHJ|Liouville's theorem]], so $\CC$ is not biholomorphic to $\DD$.
-
-$\Omega$ simply connected: a biholomorphism is a homeomorphism, and $\DD$ is simply connected.
-
+$\Omega\neq\CC$ is necessary because $\CC$ is not biholomorphic to $\DD$, and simple connectivity because a biholomorphism is a homeomorphism; the classification of the simply connected models is [[C-BKYF7]].
 :::
 
-The proof maximizes $\abs{f'(z_0)}$ over the injective holomorphic maps $\Omega\to\DD$ carrying $z_0$ to $0$, and shows a maximizer is surjective [@SS03, ch. 8, Theorem 3.1].
-
-::: {.remark title="Ingredients of the proof"}
-[[complex-analysis/conformal-maps/normal-families-and-montel|Montel's theorem]] gives a convergent maximizing subsequence, [[complex-analysis/counting-zeros/hurwitz|Hurwitz's theorem]] gives injectivity of the limit, [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|the Cauchy estimate]] gives $m<\infty$, and square roots on simply connected sets together with [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors]] give nonemptiness of $\mathcal F$ and the derivative increase.
-
-:::
 
 ::: {.example title="The map of a strip, written down"}
 For the strip $L = \theset{0<\Im z<\pi}$ the exponential carries $L$ onto $\HH$, and [[complex-analysis/conformal-maps/build-me-a-map|the Cayley map]] carries $\HH$ onto $\DD$, so

@@ -57,6 +57,20 @@ audit:
     instead. Not checked: Eda and Kawamura, whose Corollary 1.2 supplies the
     vanishing; the paper is not retained in this checkout and the citation rests on
     the reading recorded in the 2026-11-01 note above. No statement repair.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 4. One false citation removed. The step `higher` cited "Eda
+    and Kawamura, *Fundamenta Mathematicae* 165 (2000), Corollary 1.2" for the statement that the
+    $n$-dimensional Hawaiian earring has $\pi_n=\ZZ^\omega$ and $\pi_i=0$ for $1\le i\le n-1$. That
+    paper is about singular homology: its Theorem 2.1 and Corollary 2.2 give that a one-dimensional
+    normal space, in particular the Hawaiian earring, has torsion-free $H_1$ and $H_i=0$ for $i\ge2$;
+    it has no Corollary 1.2 and says nothing about homotopy groups of the $n$-dimensional earring. The
+    step now states what that paper does contain, drops the attribution, and records the exercise's
+    first assertion as an obligation of the card rather than as a consequence of a source that does
+    not contain it. The rest of the card — the collapse maps $r_k$, the homomorphism
+    $\Phi\colon\pi_n(X)\to\prod_k\pi_n(S^n_k)$, and its surjectivity — reads correct.
 ---
 
 ::: {.problem}
@@ -65,7 +79,7 @@ Show that $\pi_i(X) = 0$ for $i < n$ and construct a homomorphism from $\pi_n(X)
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology*, Section 4.2, Exercise 4. A retained set does cover it --- Sam (2008), section 4.2, Exercise 4 --- but its first step is false in this topology and its own construction contradicts that step, so nothing of it is transcribed here; the argument below is the card's own, except for the one appeal to Eda and Kawamura in step [](#higher){.pf-ref}.
+The statement is Hatcher, *Algebraic Topology*, Section 4.2, Exercise 4. A retained set does cover it --- Sam (2008), section 4.2, Exercise 4 --- but its first step is false in this topology and its own construction contradicts that step, so nothing of it is transcribed here; the argument below is the card's own, and step [](#higher){.pf-ref} records that the exercise's vanishing assertion is not proved on this card.
 
 Write $S_k^n$ for the sphere of radius $1/k$ about $c_k=(1/k,0,\dots,0)$, so that $X=\bigcup_k S_k^n\subset\RR^{n+1}$, and take $0$ as the basepoint of $X$. Assume $n\ge1$.
 
@@ -113,7 +127,7 @@ Each $S_k^n$ is path connected for $n\ge1$ and contains $0$ by step [](#meet){.p
 $\pi_i(X)=0$ for $1\le i<n$, when $n\ge2$.
 
 ::: pf-proof
-$X$ is the $n$-dimensional Hawaiian earring, the shrinking union of the spheres $S_k^n$. Eda and Kawamura, *Fundamenta Mathematicae* 165 (2000), Corollary 1.2, states for $n\ge2$ that $\pi_n$ of that space is $\ZZ^{\omega}$ and that $\pi_i$ is trivial for $1\le i\le n-1$; the vanishing asked for in the exercise is the second half of that corollary, so it is cited rather than reproved here. For $n=1$ there is no $i$ with $1\le i<n$, and nothing beyond step [](#connected){.pf-ref} is needed.
+The vanishing is the first assertion of the exercise, and this card does not prove it. The citation it carried was wrong: Eda and Kawamura, *Fundamenta Mathematicae* 165 (2000), is a paper on singular homology — its Theorem 2.1 and Corollary 2.2 say that a one-dimensional normal space, and in particular the Hawaiian earring, has torsion-free $H_1$ and vanishing $H_i$ for $i\ge2$ — it contains no Corollary 1.2, and it says nothing about the homotopy groups of the $n$-dimensional earring. So the vanishing of $\pi_i$ for $1\le i<n$ is left as an obligation here rather than attributed to a source that does not contain it. For $n=1$ there is no $i$ with $1\le i<n$, and nothing beyond step [](#connected){.pf-ref} is needed.
 :::
 
 :::

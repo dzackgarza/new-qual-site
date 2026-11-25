@@ -1,6 +1,6 @@
 ---
 title: Singularities
-order: 4
+order: 3
 topics:
 - Singularities
 ---
@@ -15,6 +15,6 @@ Isolated singularities of holomorphic functions: their classification, Laurent s
 
 - [[complex-analysis/singularities/removable-poles-essential|Removable singularities, poles, essential singularities]], the examples and consequences of each kind.
 
-- [[complex-analysis/singularities/meromorphic-functions|Meromorphic functions]], functions whose singularities are poles.
+- [[complex-analysis/singularities/meromorphic-functions|Meromorphic functions]], functions that are holomorphic except at poles ([[D-7DFVJ]]).
 
-- [[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati-Weierstrass and Picard]], the values taken near an essential singularity.
+- [[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati--Weierstrass and Picard]], the values taken near an essential singularity.

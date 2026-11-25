@@ -19,7 +19,7 @@ $\bar z = x-iy$, $\abs z^2 = z\bar z$, $z\bar w+\bar zw = 2\Re(z\bar w)$, $\abs{
 If $z\neq0$ then $z = re^{i\theta}$ with $r = \abs z$ and $\theta = \arg z$ defined modulo $2\pi$, and multiplication reads $r_1e^{i\theta_1}\cdot r_2e^{i\theta_2} = r_1r_2e^{i(\theta_1+\theta_2)}$.
 The triangle $\abs{z-w}\geq\abs{\abs z-\abs w}$ is the reverse triangle inequality, and $\abs{z+w}^2+\abs{z-w}^2 = 2\abs z^2+2\abs w^2$ is the parallelogram law.
 
-The conjugation and modulus identities, including $\abs{z+w}\le\abs z+\abs w$ with its equality case, are [@Ahl73, ch. 1, §1.5, Inequalities], whose (11) is the triangle inequality and which records that equality holds only when one of the two numbers is a nonnegative real multiple of the other; the form $z=re^{i\theta}$ with $\arg z$ modulo $2\pi$, and the addition of arguments under multiplication, are [@Ahl73, ch. 1, §1.4, Conjugation, Absolute Value].
+The conjugation and modulus identities, including $\abs{z+w}\le\abs z+\abs w$ with its equality case, are [@Ahl73, ch. 1, §1.5, Inequalities], whose (11) is the triangle inequality and which records that equality holds only when one of the two numbers is a nonnegative real multiple of the other; the form $z=re^{i\theta}$ with $\arg z$ modulo $2\pi$, and the addition of arguments under multiplication, are [@Ahl73, ch. 1, §2.1, Geometric Addition and Multiplication], (16)--(17), with the exponential notation itself in [@Ahl73, ch. 2, §3.4, The Logarithm].
 :::
 
 ## Multiplication as a map of the plane
@@ -41,10 +41,9 @@ The roots of unity as the vertices of a regular $n$-gon are [@Ahl73, ch. 1, §2.
 
 ## Polynomials over $\CC$
 
-::: {.fact title="Roots and factorization"}
-$\CC$ is algebraically closed ([[complex-analysis/appendices/appendix-fta-proofs|the fundamental theorem of algebra]]): a polynomial of degree $n\geq1$ with complex coefficients has exactly $n$ roots counted with multiplicity, and factors as $c\prod_{k=1}^n(z-z_k)$.
-The roots of $az^2+bz+c$ are $\frac{-b\pm w}{2a}$ for either square root $w$ of the discriminant $b^2-4ac$ ([[complex-analysis/holomorphic-functions/complex-arithmetic-and-log|roots and the logarithm]]).
-:::
+[[T-6XDRA]]
+
+[[T-QDRTC]]
 
 ## Problems on complex arithmetic
 

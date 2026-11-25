@@ -59,6 +59,31 @@ audit:
     reduced homology vanishes. Three page locators removed from the body: Example 2.40, Proposition
     2.22 and the exercise are cited by number, in the opening paragraph, in step `free-presentation`
     and in the cohomology step. No mathematics changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read again against Hatcher, §3.F Exercise 7. The construction is correct: a generating set of $A$
+    extended by lifts of generators of $C$ gives $F_A\subset F_B$ with $F_B/F_A$ free and
+    $K_B\cap F_A=K_A$, so $K_B/K_A$ is free; the Moore complexes built on $T_A\sqcup T'$ have
+    boundary $K_B\hookrightarrow F_B$, the quotient by the subcomplex $M(A,n)$ has boundary the
+    $S'$-coordinates, which is injective, and its $n$-th homology is
+    $F_B/(K_B+F_A)\cong C$. One repair, in step `sequence`: it began the displayed sequence with a
+    zero on the strength of $H^{n-1}(\text{pair})=0$, which does not make the map out of
+    $H^n(\text{pair})$ injective — the term mapping into it is $H^{n-1}(M(A,n))$, which is
+    $\widetilde H^{n-1}(M(A,n))=0$ only for $n\ge2$ and is $\ZZ$ for $n=1$. The step now separates
+    the cases: for $n=1$ the map $H^0(M(B,1))\to H^0(M(A,1))$ is an isomorphism of copies of $\ZZ$
+    because both spaces are connected, so the connecting map is zero. The provenance sentence is
+    corrected to say what the retained sets hold.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Correction to the preceding event's repair. The coefficients were dropped there: the long exact
+    sequence of the pair is taken with coefficients $G$, so the exceptional term at $n=1$ is
+    $H^{0}(M(A,1);G)=G$, and $H^{0}(M(B,1);G)\to H^{0}(M(A,1);G)$ is the identity map of $G$, not of
+    $\ZZ$. Step `sequence` now writes the coefficients in every term of that sentence. The
+    mathematics of the repair is unchanged; this fixes its statement.
 ---
 
 ::: {.problem}
@@ -69,7 +94,7 @@ $$0 \to \operatorname{Hom}(C,G) \to \operatorname{Hom}(B,G) \to \operatorname{Ho
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §3.F Exercise 7. No retained solution set covers it — the Hatcher sets in `tmp/sources` treat §3.1–§3.3 and §4.1–§4.3 only, and none reaches §3.F — so the construction and the exact sequence below are the card's own. The construction of Moore spaces used is Example 2.40.
+The statement is Hatcher, §3.F Exercise 7. No retained solution set holds a solution of any exercise of §3.F — Koukpari's set carries the §3.F heading *Limits and Ext* with nothing under it, Sam's begins at §4.1, and the others stop earlier — so the construction and the exact sequence below are the card's own. The construction of Moore spaces used is Example 2.40.
 
 Throughout $0\to A\xrightarrow{i}B\xrightarrow{q}C\to0$ is a short exact sequence of abelian groups, $n\ge1$, and $G$ is any coefficient group.
 
@@ -140,7 +165,7 @@ The long exact sequence of the pair $(M(B,n),M(A,n))$ reads
 $$
 \cdots\to H^k(\text{pair})\to H^k(M(B,n))\to H^k(M(A,n))\to H^{k+1}(\text{pair})\to H^{k+1}(M(B,n))\to H^{k+1}(M(A,n))\to\cdots .
 $$
-Putting $k=n$ and using steps [](#cohomology-of-moore){.pf-ref} and [](#pair){.pf-ref} gives the displayed middle stretch, and the terms on either side vanish: $H^{n-1}$ of the pair is $\widetilde H^{n-1}(M(C,n))=0$, and $H^{n+2}$ of the pair is $\widetilde H^{n+2}(M(C,n))=0$. So the sequence begins and ends with a zero as displayed, which is the claimed exact sequence.
+Putting $k=n$ and using steps [](#cohomology-of-moore){.pf-ref} and [](#pair){.pf-ref} gives the displayed middle stretch. The sequence begins with an injection: the term mapping into $H^{n}(\text{pair};G)$ is $H^{n-1}(M(A,n);G)$, which is $\widetilde H^{n-1}(M(A,n);G)=0$ for $n\ge2$ and is $H^{0}(M(A,1);G)=G$ for $n=1$, where $H^{0}(M(B,1);G)\to H^{0}(M(A,1);G)$ is the identity map of $G$, because both spaces are connected and the pair is that of a subcomplex; so in both cases the connecting map into $H^{n}(\text{pair};G)$ is zero. It ends at $\operatorname{Ext}(A,G)$ because $H^{n+2}$ of the pair is $\widetilde H^{n+2}(M(C,n);G)=0$. So the sequence begins and ends with a zero as displayed, which is the claimed exact sequence.
 
 :::
 

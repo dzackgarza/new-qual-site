@@ -27,11 +27,11 @@ prompts:
 ::: {.theorem title="Lying over and going up"}
 Let $\phi: A \to B$ be a ring map with $B$ integral over $\phi(A)$, and $f: \Spec B \to \Spec A$ the induced map, $f(\mfq) = \phi^{-1}(\mfq)$.
 
-- (Lying over) If $\phi$ is injective, then for every prime $\mfp \subseteq A$ there is a prime $\mfq \subseteq B$ with $\phi^{-1}(\mfq) = \mfp$; so $f$ is surjective.
+- (Lying over) If $\phi$ is injective, then for every prime $\mfp \subseteq A$ there is a prime $\mfq \subseteq B$ with $\phi^{-1}(\mfq) = \mfp$; so $f$ is surjective (Stacks Project, Lemma 10.36.17, tag 00GQ).
 
 - (Going up) If $\mfp_1 \subseteq \cdots \subseteq \mfp_n$ is a chain of primes of $A$ and $\mfq_1 \subseteq \cdots \subseteq \mfq_m$, $m < n$, is a chain of primes of $B$ with $\phi^{-1}(\mfq_i) = \mfp_i$, then it extends to a chain $\mfq_1 \subseteq \cdots \subseteq \mfq_n$ with $\phi^{-1}(\mfq_i) = \mfp_i$ for all $i$.
 
-In particular $f$ is a closed map.
+An integral morphism is affine and universally closed, so $f$ is closed (Stacks Project, Lemma 29.45.7, tag 01WM); in this affine chart $f$ is finite exactly when $B$ is a finite $A$-module (Stacks Project, Definition 29.45.1, tag 01WH).
 [@AM18, Theorems 5.10 and 5.11]
 :::
 
@@ -42,11 +42,11 @@ Going down also holds for every flat ring map $A \to B$ (Stacks Project, Lemma 1
 :::
 
 ::: {.remark}
-Going up says that a chain of primes of $A$ ascending from a prime in the image of $f$ lifts to $B$; this is what makes $f(V(\mfq)) = V(\phi^{-1}(\mfq))$, so the image of a closed set is closed.
-So going up is the algebraic form of "a finite morphism is closed", hence of "a finite morphism is proper".
+Going up says that a chain of primes of $A$ ascending from a prime in the image of $f$ lifts to $B$; this is what makes $f(V(\mfq)) = V(\phi^{-1}(\mfq))$, so the image of a closed set is closed, and going up is the algebraic form of the closedness of an integral morphism (Stacks Project, Lemma 29.45.7, tag 01WM).
 
-Going up together with incomparability makes $\dim B = \dim A$ for an integral extension, which is why a finite surjective morphism cannot drop dimension.
-Going down is what makes heights match, $\operatorname{ht} \mfq = \operatorname{ht}(\mfq \cap A)$, under its hypotheses: geometrically, every generization of $f(\mfq)$ in $\Spec A$ lifts to a generization of $\mfq$.
+Surjectivity is not part of that: it is lying over, whose hypothesis is that $\phi$ be injective. Injectivity is sufficient for the surjectivity of $f$ and not necessary: the finite ring map $k[t]/(t^2)\to k$, $t\mapsto0$, is not injective, and $\Spec k\to\Spec k[t]/(t^2)$ is a homeomorphism of one-point spaces, hence surjective. What a failure of injectivity costs is the points outside $V(\ker\phi) = f(\Spec B)$: the finite ring map $\ZZ\to\ZZ/2$ has kernel $(2)$, and $\Spec\ZZ/2\to\Spec\ZZ$ misses the generic point, although every finite morphism is closed and has finite fibres.
 
-The two are the reason finite morphisms behave like branched covers: closed, surjective, with finite fibres, and preserving dimension.
+The dimension statement is separate again, and it is about an extension of rings rather than about an arbitrary finite map: for an integral extension $A\subseteq B$, lying over [@AM18, Theorem 5.10] (Stacks Project, Lemma 10.36.17, tag 00GQ) starts a chain of primes of $A$ in $B$ and going up [@AM18, Theorem 5.11] (Lemma 10.36.22, tag 00GU) lifts it, while incomparability [@AM18, Corollary 5.9] (Lemma 10.36.20, tag 00GT) keeps a chain of primes of $B$ strict after contraction, so $\dim B = \dim A$. For an arbitrary integral $\phi$ this reads $\dim B = \dim(A/\ker\phi)$, which is the dimension of $f(\Spec B) = V(\ker\phi)$; a finite morphism need not preserve the dimension of its target, the same $\ZZ\to\ZZ/2$ having dimension $1$ below and $0$ above.
+
+In the integral case of the second theorem — $A \subseteq B$ domains with $A$ integrally closed and $B$ integral over $A$ — heights match, $\operatorname{ht} \mfq = \operatorname{ht}(\mfq \cap A)$: going down [@AM18, Theorem 5.16] extends a chain of primes of $A$ ending at $\mfq \cap A$ downwards from $\mfq$, which gives $\operatorname{ht} \mfq \ge \operatorname{ht}(\mfq \cap A)$, and incomparability [@AM18, Corollary 5.9] (Stacks Project, Lemma 10.36.20, tag 00GT) keeps the contracted chain of $B$ strict, which gives the reverse inequality; going up is not used for this. Flat going down alone does not: $\ZZ[x] \to \ZZ[x,y]$ is flat, and the prime $(y)$ has height $1$ while its contraction $(0)$ has height $0$. Geometrically, every generization of $f(\mfq)$ in $\Spec A$ lifts to a generization of $\mfq$.
 :::

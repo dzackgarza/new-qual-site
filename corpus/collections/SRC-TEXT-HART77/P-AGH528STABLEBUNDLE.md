@@ -400,10 +400,99 @@ audit:
     Taiwan University set's Exercise 8 of section 2. The numbered statements are kept
     in every case. Not checked: the rendered page, and no printing of Gunning or of
     Hartshorne other than the text versions retained in tmp/sources.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Repaired on 2026-11-22 for issue #159, after the reader's verdict of
+    2026-11-20 read part (c) as not met. Three changes, none of them to the
+    mathematics of the proof. First, the remark on the printed (c) said that a
+    twist by an invertible sheaf "carries different data", which contradicts the
+    data of part (c) themselves: the triple (e, L, [xi]) is the data of the
+    normalized representative and is exactly what the twist leaves fixed, while
+    the determinant changes from L to L tensor A squared, with A the maximal
+    line subbundle of the bundle. The remark now derives the determinant of the
+    normalized representative from Notation 2.8.1, whose integer e is minus the
+    degree of the divisor of the second exterior power, and states that the
+    classification is one of tensor-equivalence classes and not of isomorphism
+    classes. Second, step s10 cited Gunning's Theorem 13 and Theorem 14 for the
+    identification of extension classes with H^1(C, L dual) and for the
+    injectivity of the classification; Gunning's book is about compact Riemann
+    surfaces, and Theorem 14 is cited only as the argument over the complex
+    numbers, so the step now cites III Ex. 6.1, the book's own reference in the
+    proof of Theorem 2.12, and leaves the converse to step s12b, which decides
+    it without a hypothesis on the field. Third, the published-solution remark
+    now says that part (c) is not transcribed from a retained set, and names the
+    sets searched: Gunning, whose Theorem 14 is characteristic zero only; Yang
+    Pi-Yeh, Solution 5.2.8(c); the National Taiwan University set's Exercise 8
+    of section 2; Egbert's entry 5.2.15; and the eleven other retained
+    Hartshorne sets, which reach no exercise of section V.2. The statement now
+    names its characteristic hypothesis, an algebraically closed ground field of
+    arbitrary characteristic, which is the chapter's convention and what steps
+    s7 to s13 use. Read for this pass in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md: exercise V.2.8,
+    Proposition 2.8, Notation 2.8.1, Example 2.11.6, Theorem 2.12 with its
+    proof, III Ex. 6.1 and IV.1.3.4; and steps s7 to s13 and both remarks of
+    this card. Also read in tmp/sources for the sets named: Yang Pi-Yeh,
+    Solution 5.2.8; the National Taiwan University set, Exercise 8 of section 2;
+    and Egbert, entries 5.2.13 to 5.2.15. Not checked: any printing of the book,
+    only the text version retained in tmp/sources.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Two steps of part (c) are repaired on 2026-11-22 after eight independent
+    readings of the card's argument, none of which changed a claim. Step s7 said
+    that "dualizing the locally free quotient of a line subbundle" gives the
+    surjection E dual -> A dual; the phrase parses instead as the quotient
+    E -> A, which does not exist, and six of the eight readings took it so and
+    rejected the step. It now says that dualizing the inclusion A -> E gives the
+    surjection. Step s8 cited Lemma 15 of Gunning as its proof; Gunning's book is
+    about compact Riemann surfaces, so the step now proves its statement in rank
+    two: existence from step s7, the inequality from non-semistability at step
+    s1, and uniqueness from the wedge map A tensor B -> det E, with the case of a
+    common generic line closed because distinct line subbundles have distinct
+    generic lines. The rest of the argument was read again against steps s1 and
+    s7 to s13 and no gap was found: the normalized model, the class in H^1(C, L
+    dual) up to nonzero scalar, the bound 0 < e <= 2g-2, the bijection of step
+    s13 and its injectivity at step s12b stand as written.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Repaired on 2026-11-22 after the whole-card review of 456ea278cf read part
+    (c) as not met. Three defects, and the saturation of a line subbundle is now
+    carried through the forward construction. First, step s7 said that dualizing
+    the inclusion of a line subbundle A in E gives a surjection E dual -> A dual;
+    that holds only for a saturated A, and the card admits every invertible
+    subsheaf. Counterexample: E = O(1) + O on P^1 and A = O embedded by a section
+    vanishing at a point p; at p the dual map has image the maximal ideal, not the
+    whole stalk. The step now passes to the saturation: A is contained in its
+    saturation A tilde with A tilde/A torsion, so deg A tilde is at least deg A,
+    and E/A tilde is torsion-free of rank one, hence invertible on a curve;
+    dualizing the inclusion of the saturated subbundle gives
+    0 -> (E/A tilde) dual -> E dual -> A tilde dual -> 0, so A tilde dual(n) is a
+    quotient of the globally generated E dual(n). The solution now defines a line
+    subbundle as an invertible subsheaf and says when it is saturated. Second,
+    step s8's uniqueness argument used that E/A is torsion-free, which again needs
+    the saturation: the step now shows that a subbundle of maximal degree is
+    saturated, its saturation otherwise having strictly larger degree. Third, step
+    s12b asserted the projective class [xi] at the zero class, where [xi] is not
+    defined; the step now states the criterion for nonzero classes and names the
+    zero class as the split bundle outside the family. The sentence of step s13
+    that the determinant changes is qualified: a twist multiplies the determinant
+    by the square of the twist, so its degree changes by twice the twist's degree,
+    which is the twist of nonzero degree that refutes the printed sentence, while
+    a twist by a line bundle of order two leaves the determinant unchanged. Read
+    again for this pass: steps s1, s2, s3, s4, s7, s8, s9, s10, s12, s12b and s13
+    of this card, and Proposition 2.8, Notation 2.8.1, Example 2.11.6, Theorem 2.12
+    with its proof, III Ex. 6.1 and IV.1.3.4 in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md. Not checked: any printing of
+    the book, only the text version retained in tmp/sources.
 ---
 
 ::: {.problem}
-Throughout, $C$ is a complete nonsingular curve over an algebraically closed field $k$, as the convention of Chapter IV has it. A locally free sheaf $\mathcal{E}$ on a curve $C$ is said to be **stable** if for every quotient locally free sheaf
+Throughout, $C$ is a complete nonsingular curve over an algebraically closed field $k$ of arbitrary characteristic, as the convention of Chapter IV has it. A locally free sheaf $\mathcal{E}$ on a curve $C$ is said to be **stable** if for every quotient locally free sheaf
 $$
 \mathcal{E} \rightarrow \mathcal{F} \rightarrow 0, \qquad \mathcal{F} \neq \mathcal{E}, \mathcal{F} \neq 0
 ,$$
@@ -433,7 +522,9 @@ $$
 \mu(\mathcal F)=\frac{\deg\mathcal F}{\rank\mathcal F}.
 $$
 
-A rank-two bundle $\mathcal E$ is normalized when $H^0(C,\mathcal E)\ne0$ and $H^0(C,\mathcal E\tensor\mathcal M)=0$ for every invertible sheaf $\mathcal M$ of negative degree, the condition of Proposition 2.8, which the book names at Notation 2.8.1; its degree is then written $-e$, so $e=-\deg\mathcal E$.
+A line subbundle of $\mathcal E$ is an invertible subsheaf $\mathcal A\subseteq\mathcal E$, and it is saturated when the quotient $\mathcal E/\mathcal A$ is invertible. Every invertible subsheaf lies in a smallest saturated one, its saturation.
+
+A rank-two bundle $\mathcal E$ is normalized when $H^0(C,\mathcal E)\ne0$ and $H^0(C,\mathcal E\tensor\mathcal M)=0$ for every invertible sheaf $\mathcal M$ of negative degree, the condition of Proposition 2.8, which the book names at Notation 2.8.1; its degree is then written $-e$, so $e=-\deg\mathcal E=-\deg\det\mathcal E$, which is the integer of Notation 2.8.1.
 
 The data of part (c) are the data of the normalized model of a bundle, and tensoring by an invertible sheaf moves the bundle without moving them. Let $\mathcal E_0$ be normalized, not semistable, with data $(e,\mathcal L,\xi)$, and let $\mathcal A$ be a line bundle of degree $m\ne0$. Tensoring by $\mathcal A$ shifts every slope by $m$, so the maximal-degree line subbundle of $\mathcal E_0\tensor\mathcal A$ is $\OO_C\tensor\mathcal A$, and the data read off from it are
 $$
@@ -457,7 +548,7 @@ Gunning, *Lectures on vector bundles over Riemann surfaces*, §(c), defines $\Ph
 $$
 0\longrightarrow\mathcal A\longrightarrow\mathcal E\longrightarrow\mathcal F\longrightarrow0
 $$
-has $\rank\mathcal A=\rank\mathcal F=1$ and $\deg\mathcal F=\deg\mathcal E-\deg\mathcal A$, so $\deg\mathcal F>\frac12\deg\mathcal E$ is equivalent to $\deg\mathcal A<\frac12\deg\mathcal E$. A line subbundle that is not saturated lies in its saturation, whose quotient is torsion-free and hence invertible on a curve and whose degree is at least as large, so the inequalities for invertible quotients imply them for every line subbundle. The semistable statement is the same rearrangement with weak inequalities.
+has $\rank\mathcal A=\rank\mathcal F=1$ and $\deg\mathcal F=\deg\mathcal E-\deg\mathcal A$, so $\deg\mathcal F>\frac12\deg\mathcal E$ is equivalent to $\deg\mathcal A<\frac12\deg\mathcal E$. A line subbundle that is not saturated lies in its saturation $\widetilde{\mathcal A}$, with $\widetilde{\mathcal A}/\mathcal A$ torsion and $\mathcal E/\widetilde{\mathcal A}$ torsion-free, hence invertible on a curve; since $\deg\widetilde{\mathcal A}=\deg\mathcal A+\length(\widetilde{\mathcal A}/\mathcal A)\ge\deg\mathcal A$, the inequalities for invertible quotients imply them for every line subbundle. The semistable statement is the same rearrangement with weak inequalities.
 
 :::
 
@@ -532,7 +623,7 @@ Semistability is the exercise's definition, the weak inequalities of step [](#s1
 Let $\mathcal E$ be a rank-two bundle that is not semistable. Among all line subbundles of $\mathcal E$ there is one of maximal degree.
 
 ::: pf-proof
-The maximum is what Gunning's $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$ presupposes, and he proves the bound in the paragraph before his (9): for a line bundle $\varphi\subset\Psi$ he shows $c(\varphi)\le\max_jc(\Psi_j)$ over the diagonal line bundles of a fixed complete reduction of $\Psi$, "or in other words, the Chern classes $c(\varphi)$ of line bundles $\varphi$ which are subbundles of a fixed complex vector bundle $\Psi$, are bounded from above". The proof below is that bound in the form of a rank-two bundle on a curve, and is the card's own. Line subbundles exist, since a nonzero section of $\mathcal E(n)$ for $n\gg0$ saturates to an invertible subsheaf. Their degrees are bounded above: fix an ample $\OO_C(1)$ of degree $h>0$ and take $n\gg0$ so that $\mathcal E^\vee(n)$ is globally generated; dualizing the locally free quotient of a line subbundle $\mathcal A\subseteq\mathcal E$ gives a surjection $\mathcal E^\vee\twoheadrightarrow\mathcal A^\vee$, so $\mathcal A^\vee(n)$ is a quotient of a globally generated bundle and is globally generated, whence $-\deg\mathcal A+nh\ge0$ and $\deg\mathcal A\le nh$. The degrees are integers, so they have a maximum.
+The maximum is what Gunning's $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$ presupposes, and he proves the bound in the paragraph before his (9): for a line bundle $\varphi\subset\Psi$ he shows $c(\varphi)\le\max_jc(\Psi_j)$ over the diagonal line bundles of a fixed complete reduction of $\Psi$, "or in other words, the Chern classes $c(\varphi)$ of line bundles $\varphi$ which are subbundles of a fixed complex vector bundle $\Psi$, are bounded from above". The proof below is that bound in the form of a rank-two bundle on a curve, and is the card's own. Line subbundles exist, since a nonzero section of $\mathcal E(n)$ for $n\gg0$ saturates to an invertible subsheaf. Their degrees are bounded above: fix an ample $\OO_C(1)$ of degree $h>0$ and take $n\gg0$ so that $\mathcal E^\vee(n)$ is globally generated. Let $\mathcal A\subseteq\mathcal E$ be an invertible subsheaf and $\widetilde{\mathcal A}$ its saturation. The quotient $\widetilde{\mathcal A}/\mathcal A$ is torsion, so $\deg\widetilde{\mathcal A}=\deg\mathcal A+\length(\widetilde{\mathcal A}/\mathcal A)\ge\deg\mathcal A$, and $\mathcal E/\widetilde{\mathcal A}$ is torsion-free of rank one, hence invertible on a curve. Dualizing the inclusion of the saturated subbundle, whose cokernel is invertible, gives the exact sequence $0\to(\mathcal E/\widetilde{\mathcal A})^\vee\to\mathcal E^\vee\to\widetilde{\mathcal A}^\vee\to0$, so $\mathcal E^\vee\to\widetilde{\mathcal A}^\vee$ is surjective; hence $\widetilde{\mathcal A}^\vee(n)$ is a quotient of the globally generated $\mathcal E^\vee(n)$, so it is globally generated, and a globally generated invertible sheaf has a nonzero section, whence $-\deg\widetilde{\mathcal A}+nh\ge0$. Therefore $\deg\mathcal A\le\deg\widetilde{\mathcal A}\le nh$. The degrees are integers, so they have a maximum.
 
 :::
 
@@ -545,7 +636,7 @@ $$
 $$
 
 ::: pf-proof
-This is Lemma 15 of Gunning. Non-semistability is $\operatorname{div}\mathcal E>\frac12c(\xi)$, that is $2\deg\mathcal A>\deg\mathcal E$ for a maximal subbundle, which is the case of the lemma's part (i). Its part (i) states and proves uniqueness: if $\varphi_1\subset\Phi$ realizes $\operatorname{div}\Phi$ and $\varphi\subset\Phi$ is another subbundle with $c(\varphi)=\operatorname{div}\Phi$, then $\varphi^{-1}\varphi_1$ has a nontrivial section while $\varphi^{-1}\varphi_2$ has none, $\varphi_2=\Phi/\varphi_1$, because $c(\varphi^{-1}\varphi_2)=-2c(\varphi_1)+c(\xi)<0$; so $\varphi=\varphi_1$. In rank-two terms, a second maximal subbundle $\mathcal B$ with $\deg\mathcal A=\deg\mathcal B=a$ and no common generic line gives a nonzero map $\mathcal A\tensor\mathcal B\to\det\mathcal E$ and hence $2a\le\deg\mathcal E$, contradicting $2a>\deg\mathcal E$.
+This is Lemma 15(i) of Gunning, and it is proved here without his setting. Existence is step [](#s7){.pf-ref}. For the inequality, non-semistability is the existence of a line subbundle of degree greater than $\frac12\deg\mathcal E$ by step [](#s1){.pf-ref}, and a subbundle of maximal degree has at least that degree, so $2\deg\mathcal A>\deg\mathcal E$. Moreover a subbundle of maximal degree is saturated: otherwise its saturation would have strictly larger degree by step [](#s7){.pf-ref}, contradicting maximality. Hence $\mathcal E/\mathcal A$ is invertible, and for the same reason the quotient by any other maximal-degree subbundle is invertible. For uniqueness, let $\mathcal B$ be a line subbundle of degree $\deg\mathcal A=a$. If $\mathcal B$ had the generic line of $\mathcal A$, the composite $\mathcal B\to\mathcal E\to\mathcal E/\mathcal A$ would be zero at the generic point, hence zero because $\mathcal E/\mathcal A$ is torsion-free, so $\mathcal B\subseteq\mathcal A$ and $\mathcal B=\mathcal A$ because both are line bundles of the same degree. So $\mathcal A$ and $\mathcal B$ are independent at the generic point, the map $\mathcal A\tensor\mathcal B\to\det\mathcal E=\bigwedge^2\mathcal E$, $s\tensor t\mapsto s\wedge t$, is nonzero and hence injective, and $2a=\deg(\mathcal A\tensor\mathcal B)\le\deg\mathcal E$, contradicting $2a>\deg\mathcal E$. No step uses more than line bundles, degrees and sections, so the argument makes no hypothesis on the field.
 
 :::
 
@@ -573,7 +664,7 @@ This is the opening of the proof of Theorem 2.12: corresponding to a section of 
 The bundle $\mathcal E_0$ of step [](#s9){.pf-ref} is normalized, and its extension class is a nonzero $\xi\in H^1(C,\mathcal L^\vee)$ well defined up to nonzero scalar.
 
 ::: pf-proof
-Normalization is the argument of Example 2.11.6: the inclusion $\OO_C\subseteq\mathcal E_0$ gives a nonzero section; for $\mathcal M$ of negative degree both end terms of the twisted sequence have negative degree because $\deg\mathcal L=-e<0$, so $H^0(C,\mathcal E_0\tensor\mathcal M)=0$. The identification of extension classes with $H^1(C,\mathcal L^\vee)$ is Theorem 13 of Gunning, whose equivalence of extensions is his (2), whose statement also attaches the split extension to the zero class, so a nonsplit sequence has nonzero class. Rescaling the inclusion of $\OO_C$, or the quotient to $\mathcal L$, rescales the class without changing the middle bundle, so only its nonzero scalar class is intrinsic; Theorem 14 of Gunning proves that proportional classes give isomorphic bundles and non-proportional ones do not.
+Normalization is the argument of Example 2.11.6: the inclusion $\OO_C\subseteq\mathcal E_0$ gives a nonzero section; for $\mathcal M$ of negative degree both end terms of the twisted sequence have negative degree because $\deg\mathcal L=-e<0$, so $H^0(C,\mathcal E_0\tensor\mathcal M)=0$. The identification of extension classes with $H^1(C,\mathcal L^\vee)$ is III Ex. 6.1, which is the reference the proof of Theorem 2.12 makes, and the split extension is the zero class, so a nonsplit sequence has nonzero class. Rescaling the inclusion of $\OO_C$, or the quotient to $\mathcal L$, rescales the class without changing the middle bundle, so only its nonzero scalar class is intrinsic.
 
 :::
 
@@ -611,7 +702,7 @@ Normalization is step [](#s10){.pf-ref}. The determinant is $\mathcal L$ of nega
 :::
 
 ::: {.pf-step #s12b}
-Let $\mathcal L$ be invertible of degree $-e<0$, and let $\mathcal E$ and $\mathcal E'$ be middle terms of extensions $0\to\OO_C\to\mathcal E\to\mathcal L\to0$ and $0\to\OO_C\to\mathcal E'\to\mathcal L\to0$ with classes $\xi$ and $\xi'$. Then $\mathcal E\cong\mathcal E'$ if and only if $\xi'$ is a nonzero scalar multiple of $\xi$, so the isomorphism class of the middle term depends exactly on the point $[\xi]\in\PP H^1(C,\mathcal L^\vee)$.
+Let $\mathcal L$ be invertible of degree $-e<0$, and let $\mathcal E$ and $\mathcal E'$ be middle terms of extensions $0\to\OO_C\to\mathcal E\to\mathcal L\to0$ and $0\to\OO_C\to\mathcal E'\to\mathcal L\to0$ with nonzero classes $\xi$ and $\xi'$. Then $\mathcal E\cong\mathcal E'$ if and only if $\xi'$ is a nonzero scalar multiple of $\xi$, so for nonzero classes the isomorphism class of the middle term depends exactly on the point $[\xi]\in\PP H^1(C,\mathcal L^\vee)$. The zero class is the split extension, whose middle term $\OO_C\oplus\mathcal L$ is decomposable and outside the classified family.
 
 ::: pf-proof
 Two extensions with the same class are isomorphic as extensions, so their middle terms are isomorphic, and multiplying the inclusion $\OO_C\to\mathcal E$ by $\lambda\in k^*$ gives an extension of class $\lambda\xi$ whose middle term is $\mathcal E$; proportional classes therefore give isomorphic bundles. Conversely let $\varphi:\mathcal E\to\mathcal E'$ be an isomorphism. For a line subbundle $\mathcal M\subseteq\mathcal E$ the composite $\mathcal M\to\mathcal E\to\mathcal L$ is either zero or injective, so either $\deg\mathcal M\le\deg\mathcal L<0$, or $\mathcal M\subseteq\ker(\mathcal E\to\mathcal L)=\OO_C$ and the inclusion $\mathcal M\to\OO_C$, a nonzero map of invertible sheaves, gives $\deg\mathcal M\le0$ with equality exactly when $\mathcal M=\OO_C$. So $\OO_C$ is the unique line subbundle of $\mathcal E$ of degree $0$, and the same argument applies to $\mathcal E'$, whence $\varphi(\OO_C)=\OO_C$. The isomorphism $\varphi$ therefore carries the first extension to the second and induces an automorphism of $\OO_C$ and one of $\mathcal L$; an automorphism of an invertible sheaf on a complete curve is multiplication by a nonzero constant, since $H^0(C,\OO_C)=k$, so these are scalars, and the class of an extension changes by the scalar they contribute. Hence $\xi'$ is a nonzero multiple of $\xi$.
@@ -627,7 +718,7 @@ $$
 $$
 
 ::: pf-proof
-Starting from $\mathcal E$, step [](#s8){.pf-ref} gives its unique maximal-degree line subbundle $\mathcal A$, and tensoring by $\mathcal A^{-1}$ gives a normalized representative $\mathcal E_0$ of its tensor-equivalence class, whose maximal subbundle is $\OO_C$ and whose quotient is $\mathcal L=\det\mathcal E_0$. A normalized representative with maximal subbundle $\OO_C$ is unique in its tensor-equivalence class, because the maximal line subbundle of $\mathcal E_0\tensor\mathcal B$ is $\mathcal B$, the degrees of line subbundles shifting by $\deg\mathcal B$; so two bundles are tensor-equivalent exactly when their representatives with maximal subbundle $\OO_C$ are isomorphic. By steps [](#s9){.pf-ref}, [](#s10){.pf-ref} and [](#s11){.pf-ref} such a representative is the middle term of an extension of $\mathcal L$ by $\OO_C$ with $\deg\mathcal L=-e<0$, its data being $(e,\mathcal L,[\xi])$; step [](#s12){.pf-ref} shows that every displayed triple occurs, and step [](#s12b){.pf-ref} that two representatives are isomorphic exactly when their classes are proportional. That is the bijection. Tensoring by a line bundle preserves indecomposability and shifts every slope by the same degree, so it preserves non-semistability, while the determinant changes and the triple $(e,\mathcal L,[\xi])$ does not, so a bundle and its twist are not isomorphic; the classification is therefore of tensor-equivalence classes rather than of isomorphism classes.
+Starting from $\mathcal E$, step [](#s8){.pf-ref} gives its unique maximal-degree line subbundle $\mathcal A$, and tensoring by $\mathcal A^{-1}$ gives a normalized representative $\mathcal E_0$ of its tensor-equivalence class, whose maximal subbundle is $\OO_C$ and whose quotient is $\mathcal L=\det\mathcal E_0$. A normalized representative with maximal subbundle $\OO_C$ is unique in its tensor-equivalence class, because the maximal line subbundle of $\mathcal E_0\tensor\mathcal B$ is $\mathcal B$, the degrees of line subbundles shifting by $\deg\mathcal B$; so two bundles are tensor-equivalent exactly when their representatives with maximal subbundle $\OO_C$ are isomorphic. By steps [](#s9){.pf-ref}, [](#s10){.pf-ref} and [](#s11){.pf-ref} such a representative is the middle term of an extension of $\mathcal L$ by $\OO_C$ with $\deg\mathcal L=-e<0$, its data being $(e,\mathcal L,[\xi])$; step [](#s12){.pf-ref} shows that every displayed triple occurs, and step [](#s12b){.pf-ref} that two representatives are isomorphic exactly when their classes are proportional. That is the bijection. Tensoring by a line bundle preserves indecomposability and shifts every slope by the same degree, so it preserves non-semistability, while the triple $(e,\mathcal L,[\xi])$ does not change. The determinant is multiplied by the square of the twist, so its degree changes by twice the twist's degree: a twist of nonzero degree gives a non-isomorphic bundle with the same data, which is what refutes the printed "up to isomorphism". A twist by a line bundle whose square is trivial, in particular one of degree zero, leaves the determinant unchanged, and the non-isomorphism that refutes the printed sentence is not detected by the determinant there. The classification is therefore of tensor-equivalence classes rather than of isomorphism classes.
 
 :::
 
@@ -643,7 +734,10 @@ Step [](#s2){.pf-ref} proves part (a) in every rank, steps [](#s3){.pf-ref}, [](
 :::
 
 ::: {.remark title="Published solution"}
-Gunning, *Lectures on vector bundles over Riemann surfaces*, §(c), states the stability condition in the form $c(\varphi)<\frac12c(\det\Phi)$ for every line subbundle, defines $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$, and observes that $\Phi$ is stable exactly when $\operatorname{div}\Phi<\frac12c(\det\Phi)$; his Lemma 14, gives $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)$ for a decomposable $\Phi=\varphi_1\oplus\cdots\oplus\varphi_m$, a direct sum of line bundles, which with his rank-two stability definition is part (a) in rank two, and he records that "every decomposable bundle is unstable"; in general $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)-g$; his Lemma 15, is the uniqueness of the maximal-degree line subbundle; and his Theorem 14, parametrizes the indecomposable unstable bundles with a given subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$, which is the classification of part (c) with $\varphi=\OO_C$ and $\xi=\mathcal L$. Steps [](#s3){.pf-ref} to [](#s11){.pf-ref} follow that route, steps [](#s12){.pf-ref} and [](#s12b){.pf-ref} are the rank-two form of the same classification, and step [](#s2){.pf-ref} is the slope argument for part (a) in every rank, with the determinant bound $0<e\le2g-2$ of step [](#s11){.pf-ref} from the proof of Theorem 2.12, the normalization of step [](#s10){.pf-ref} from Example 2.11.6, and the existence of the maximum of step [](#s7){.pf-ref}, which Gunning establishes by bounding the Chern classes of subbundles from above, and which the card also proves by global generation. Gunning works over a compact Riemann surface, so his Theorem 14 is part (c) over $\CC$; the card proves it over an algebraically closed field of any characteristic, with step [](#s12){.pf-ref} constructing the middle term from the data and step [](#s12b){.pf-ref} deciding which classes give isomorphic bundles, and without the Riemann-surface theory.
+Gunning, *Lectures on vector bundles over Riemann surfaces*, §(c), states the stability condition in the form $c(\varphi)<\frac12c(\det\Phi)$ for every line subbundle, defines $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$, and observes that $\Phi$ is stable exactly when $\operatorname{div}\Phi<\frac12c(\det\Phi)$; his Lemma 14, gives $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)$ for a decomposable $\Phi=\varphi_1\oplus\cdots\oplus\varphi_m$, a direct sum of line bundles, which with his rank-two stability definition is part (a) in rank two, and he records that "every decomposable bundle is unstable"; in general $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)-g$; his Lemma 15, is the uniqueness of the maximal-degree line subbundle; and his Theorem 14, parametrizes the indecomposable unstable bundles with a given subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$, which is the classification of part (c) with $\varphi=\OO_C$ and $\xi=\mathcal L$. Steps [](#s3){.pf-ref} to [](#s11){.pf-ref} follow that route, steps [](#s12){.pf-ref} and [](#s12b){.pf-ref} give the rank-two form of the same classification without his setting, and step [](#s2){.pf-ref} is the slope argument for part (a) in every rank, with the determinant bound $0<e\le2g-2$ of step [](#s11){.pf-ref} from the proof of Theorem 2.12, the normalization of step [](#s10){.pf-ref} from Example 2.11.6, and the existence of the maximum of step [](#s7){.pf-ref}, which Gunning establishes by bounding the Chern classes of subbundles from above, and which the card also proves by global generation. Gunning works over a compact Riemann surface, so his Theorem 14 is part (c) over $\CC$; the card proves it over an algebraically closed field of any characteristic, with step [](#s12){.pf-ref} constructing the middle term from the data and step [](#s12b){.pf-ref} deciding which classes give isomorphic bundles, and without the Riemann-surface theory.
+
+Part (c) is not transcribed from a published solution: no retained set proves the classification in arbitrary characteristic. Gunning's Theorem 14 is a statement about a compact Riemann surface and is cited above only as the argument over $\CC$; Yang Pi-Yeh's Solution 5.2.8(c) repeats the printed clause and argues it for the normalized model; the National Taiwan University set's Exercise 8 of §2 gives (c) as the proof of Theorem 2.12 combined with (b); and Egbert's entry 5.2.15 runs a Harder--Narasimhan filtration, takes its first step $\mathcal F_1$ rather than the normalized model, and concludes "Since the filtration was unique we have this up to isomorphism". None of the three treats the twist that changes the bundle and leaves the data fixed. The other retained Hartshorne sets (Borcherds, Cais, Cutrone--Marshburn, Kim, Lomont, Okamoto, Park, Saglam--Chris, Sam, Stein and Troiani) reach no exercise of §V.2. The argument of part (c) is therefore not transcribed from a solution set: steps [](#s9){.pf-ref} and [](#s11){.pf-ref} are the proof of Theorem 2.12, step [](#s10){.pf-ref} is the normalization argument of Example 2.11.6 with III Ex. 6.1, step [](#s8){.pf-ref} states Lemma 15 of Gunning and proves it in rank two, and steps [](#s7){.pf-ref}, [](#s12){.pf-ref}, [](#s12b){.pf-ref} and [](#s13){.pf-ref} are the card's own.
+
 Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.8, proves (a) in every rank from the weighted mean of the two slopes, which is step [](#s2){.pf-ref}, and (b) by the rearrangements of steps [](#s1){.pf-ref} to [](#s6){.pf-ref}, and concludes (c) with "all indecomposable locally free sheaves $\mathcal E$ of rank 2 that are not semistable are classified, up to isomorphism, by these three conditions" — the printed clause; its argument assumes the bundle has $\OO_C$ as a subbundle with $\deg\mathcal L<0$, that is, takes the bundle to be the normalized model, so the twist that changes the bundle and leaves the data fixed is not accounted for there.
 
 Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, Exercise 8 of §2 (solution by Tzu-Yang Chou), proves (a) by exhibiting both summand quotients and (b) in both directions, "if $\mathcal E$ is unstable, say $\exists F\subseteq\mathcal E$ invertible with $\deg F\ge\frac12\deg\mathcal E>0$, then $0\to\OO\to\mathcal E\tensor F^{-1}$ but $H^0(\mathcal E\tensor F^{-1})=0$ by the normalized assumption". Its (c) is the single sentence "This is just the proof of Theorem 2.12, combined with (b)", so it gives no argument for (c) and does not treat the twist either.
@@ -653,5 +747,5 @@ Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
 :::
 
 ::: {.remark}
-The printed (c) reads "Show that the indecomposable locally free sheaves $\mathcal{E}$ of rank 2 that are not semistable are classified, **up to isomorphism**, by giving (1) an integer $0<e\leq 2g-2$, (2) an element $\mathcal{L}\in\Pic C$ of degree $-e$, and (3) a nonzero $\xi\in H^1\left(\dualof{\mathcal{L}}\right)$, determined up to a nonzero scalar multiple", and the phrase "up to isomorphism" is what the statement above replaces.  The three data carry $\det\mathcal{E}=\mathcal{L}$, of degree $-e$ lying in $[-2g+2,-1]$, so they classify the normalized representative of a twist class: for an invertible $\mathcal{M}$ of nonzero degree, $\mathcal{E}\otimes\mathcal{M}$ is indecomposable and, in rank two, semistable exactly when $\mathcal{E}$ is, while $\det(\mathcal{E}\otimes\mathcal{M})=\det\mathcal{E}\otimes\mathcal{M}^2$ has degree $-e+2\deg\mathcal{M}$, so it is not isomorphic to $\mathcal{E}$ and carries different data.  The classification is therefore up to tensoring with an invertible sheaf, and not up to isomorphism with $e$ ranging freely.  Yang Pi-Yeh states the printed clause and argues it for the normalized model, as the published-solution remark above records.
+The printed (c) reads "Show that the indecomposable locally free sheaves $\mathcal{E}$ of rank 2 that are not semistable are classified, **up to isomorphism**, by giving (1) an integer $0<e\leq 2g-2$, (2) an element $\mathcal{L}\in\Pic C$ of degree $-e$, and (3) a nonzero $\xi\in H^1\left(\dualof{\mathcal{L}}\right)$, determined up to a nonzero scalar multiple", and the phrase "up to isomorphism" is what the statement above replaces.  The data pin the determinant of the normalized representative, not that of the bundle. By Notation 2.8.1 the integer $e$ is minus the degree of the divisor of $\bigwedge^2\mathcal{E}$ for a normalized $\mathcal{E}$, so the normalized representative $\mathcal{E}_0$ of a class has $\det\mathcal{E}_0=\mathcal{L}$, of degree $-e$ lying in $[-2g+2,-1]$. A bundle $\mathcal{E}$ of that class is $\mathcal{E}_0\tensor\mathcal{A}$ for its maximal line subbundle $\mathcal{A}$, so $\det\mathcal{E}=\mathcal{L}\tensor\mathcal{A}^2$ has degree $-e+2\deg\mathcal{A}$. Twisting by an invertible $\mathcal{M}$ replaces $\mathcal{A}$ by $\mathcal{A}\tensor\mathcal{M}$ and leaves $\mathcal{E}_0$, hence the whole triple $(e,\mathcal{L},[\xi])$, unchanged, while the determinant becomes $\mathcal{L}\tensor\mathcal{A}^2\tensor\mathcal{M}^2$, of degree $-e+2\deg\mathcal{A}+2\deg\mathcal{M}$. So a twist of nonzero degree has a determinant of different degree and is not isomorphic to $\mathcal{E}$, while the two bundles carry the same data; a twist by a line bundle of order two leaves the determinant unchanged, and the refutation of the printed sentence uses twists of nonzero degree. The classification is therefore one of tensor-equivalence classes and not of isomorphism classes: each triple is realized by exactly one normalized bundle and by all of its twists by invertible sheaves.  Yang Pi-Yeh states the printed clause and argues it for the normalized model, as the published-solution remark above records.
 :::

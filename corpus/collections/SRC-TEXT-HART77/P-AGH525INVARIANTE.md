@@ -374,6 +374,34 @@ audit:
     the reduction in the rendered text, at step s11 and in the remark, both of which
     now say d >= 3, and the absence of a page locator from that text. Not checked:
     any printing of Lange's paper, only the PDF retained in tmp/sources.
+- event: source-checked
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Published-solution pass for issue #160, on the transcription rule. The
+    remark already recorded what each retained solution set does with
+    V.2.5; the paragraph added in this pass states that no retained set
+    proves all four parts, and names the sets that carry no Chapter V §2
+    exercise. Read in this pass, at their own numbering: Yang Pi-Yeh,
+    Solution 5.2.5, all four parts, whose (a) bounds h^0(omega_C tensor L) by
+    nonnegativity of the degree, which does not give a section for e >= g-1,
+    and whose (d) reads "all ker xi form the Grassmannian G^{d+1}_d ... so we
+    have d <= 2(d-1)"; Egbert's entries 5.2.9 and 5.2.10, which give (c) as
+    "This is given by 3.13 in Maruyama" and (d) as "By Theorem 1 in Nagata
+    'Self-intersection number'", together with his entry on (b) and his
+    citation of Fuentes--Pedreira's Theorem 4.12(4) for (a); the exercise list
+    of the National Taiwan University Chapter V §2 homework, whose entries are
+    exercises 1, 2, 3, 4 and 6, so that it has none for Exercise 5; and, for
+    absence, Borcherds (through IV.1), Cais (through Chapter 4),
+    Cutrone--Marshburn (Chapters 1 and 2), Ionita--Kumar (Chapter I), Kim
+    (§2.4), Lomont, Okamoto (§II.9), Park (Chapter 4 and §V.5), Saglam--Chris (Chapter III),
+    Sam (through IV.6), Stein (III.7), Troiani (Chapter II) and Reiser
+    (IV.2.5). No statement and no proof step changed in this pass, and the
+    card's own parts remain steps s7 and s8 of (b) and the avoidance count of
+    step s9 of (c), as the preamble and those steps state. Not read in this
+    pass: Gunning's Theorems 13 and 14, Lange and Narasimhan's Proposition
+    1.1 and Lange's §1 and §2 beyond the statements the card quotes; and any
+    printing of Hartshorne, only the text version in tmp/sources.
 ---
 
 ::: {.problem}
@@ -634,4 +662,16 @@ Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
 Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.5, treats all four parts. For (a) it argues that $\Ext^1(\mathcal L,\OO_C)\cong H^0(C,\omega_C\tensor\mathcal L)$ "and $\deg\omega_C\tensor\mathcal L=2g-2-e\ge0$, hence $\Ext^1$ is nontrivial": a line bundle of nonnegative degree on a curve of genus $g$ need not have a section, and the correct bound is $h^0\ge\deg-g+1=g-1-e$, which is negative for $e\ge g-1$. Step [](#s1){.pf-ref} avoids the issue by taking $\mathcal L=\OO_C(A-K_C)$ with $A$ effective, so that $H^0(\OO_C(A))\ne0$ directly. Its (b) is the square of step [](#s6){.pf-ref} written out; its (c) is the dimension count of step [](#s9){.pf-ref}; its (d) is garbled ("all $\ker\xi$ form the Grassmannian $G^{d+1}_d$, which has dimension $d$ ... so we have $d\le2(d-1)$").
 
 Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, has no entry for Exercise 5 of §2.
+
+The remaining retained sets carry no Chapter V §2 exercise: Borcherds, Cais, Cutrone--Marshburn,
+Ionita--Kumar, Kim, Lomont, Okamoto, Park, Saglam--Chris, Sam, Stein, Troiani and Reiser. No retained solution
+set proves all four parts: Egbert's entry proves (b) and cites other sources for (a), (c) and (d),
+and Yang Pi-Yeh's treats all four, with the defects recorded above in (a) and (d). The proof on the
+card is therefore its own arrangement, and it rests on the numbered statements it names part by part:
+Gunning's Theorem 13 and Theorem 14 and Hartshorne's Proposition 2.8, Notation 2.8.1, Theorem 2.12
+and Example 2.11.6 for (a) and (c); Lange and Narasimhan's Proposition 1.1, in the two directions
+steps [](#s7){.pf-ref} and [](#s8){.pf-ref} supply outside its hypotheses; Lange's §1 dimension
+theorem and §2 Lemma for (d); and Riemann--Roch and Serre duality throughout. The parts the card
+supplies itself are steps [](#s7){.pf-ref} and [](#s8){.pf-ref} of (b) and the avoidance count of step
+[](#s9){.pf-ref} of (c).
 :::

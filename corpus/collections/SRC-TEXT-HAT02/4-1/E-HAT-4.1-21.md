@@ -91,6 +91,32 @@ audit:
     homotopy fibres comparable over one base; that the comparison map is an isomorphism on
     $\pi_i$ for $i\le n$; and that both iterands are CW complexes with no homotopy groups when
     $n<m-1$, hence contractible. No vanishing hypothesis on $\pi_i(X)$ is used or needed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.1 Exercise 21. The mathematics is correct: the $(m-1)$-connected cover is
+    the homotopy fibre of $X\to X^{m-1}$ (§4.3), which exists for every connected CW complex; a
+    Postnikov stage is an isomorphism on $\pi_i$ up to $n$ with nothing above; the long exact
+    sequences give the vanishing and the isomorphisms in the two ranges; both iterands therefore have
+    $\pi_i(X)$ for $m\le i\le n$ and nothing else; the comparison map between the two fibres over
+    $X^{m-1}$ is an isomorphism on $\pi_i$ for $i\le n$ and the target vanishes above $n$, so
+    $(X^n)_m$ and $(X_m)^n$ are two $n$th Postnikov stages of $X_m$ and agree by uniqueness; and for
+    $n<m-1$ both are contractible. Two corrections. (1) The live text said Example 4.20 constructs the
+    cover as a homotopy fibre; Example 4.20 constructs the Whitehead tower, and the homotopy-fibre
+    description is the one in §4.3, so the sentence now separates the two. (2) The retained sets'
+    state is recorded. Left as it stands: the steps are cited by hand-typed numbers ("step 1",
+    "step 2"), which STYLE-08 forbids; replacing them by step references is a separate pass over this
+    card and is not done here.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    One correction after an independent reading, in step `ranges`: it said that for $n<m-1$ both
+    iterands "are CW complexes, being built from CW complexes by homotopy fibres". A homotopy fibre of
+    CW complexes is only of CW homotopy type, not a CW complex, so the step now says that both have
+    the homotopy type of CW complexes, and applies Whitehead's theorem to a space of CW homotopy type
+    with vanishing homotopy groups.
 ---
 
 ::: {.problem}
@@ -101,7 +127,7 @@ Thus $\pi_i(X_m^n) \approx \pi_i(X)$ for $m \leq i \leq n$ and all other homotop
 
 ::: {.solution}
 
-The exercise is §4.1 Exercise 21. Throughout $X$ is a connected CW complex, $X^n$ is the $n$th stage of a Postnikov tower for $X$, and $X_m$ is the $(m-1)$-connected cover of $X$.
+The exercise is §4.1 Exercise 21. No retained solution set holds a solution: Sam's §4.1 has no entry for the exercise, and Proudfoot's Homework #6 covers Exercises 4, 11, 12, 14 and 15. Throughout $X$ is a connected CW complex, $X^n$ is the $n$th stage of a Postnikov tower for $X$, and $X_m$ is the $(m-1)$-connected cover of $X$.
 
 ::: pf
 
@@ -109,7 +135,7 @@ The exercise is §4.1 Exercise 21. Throughout $X$ is a connected CW complex, $X^
 The word "covering" names the $(m-1)$-connected cover in the Whitehead tower, not an ordinary covering space: for every connected CW complex $X$ it is the homotopy fibre of $X\to X^{m-1}$.
 
 ::: pf-proof
-Hatcher's Example 4.20 constructs the $n$-connected cover of a space as the homotopy fibre of the map to its $n$th Postnikov stage, and §4.3 identifies the $n$-connected covering of $Y$ with the homotopy fibre of $Y\to Y^n$. So $X_m\simeq\operatorname{hofib}(X\to X^{m-1})$ exists for every connected CW complex. For $m=2$ this is the universal cover; for $m>1$ it need not be a covering map at all, the Hopf map $S^3\to S^2$ being the $2$-connected cover of $S^2$. No vanishing hypothesis on the homotopy groups of $X$ is needed for its existence.
+Hatcher's Example 4.20 constructs the Whitehead tower, in which $Z_n$ is $n$-connected and $Z_n\to X$ is an isomorphism on $\pi_i$ for $i>n$; §4.3 identifies the $n$-connected covering of $Y$ with the homotopy fibre of $Y\to Y^n$. So $X_m\simeq\operatorname{hofib}(X\to X^{m-1})$ exists for every connected CW complex. For $m=2$ this is the universal cover; for $m>1$ it need not be a covering map at all, the Hopf map $S^3\to S^2$ being the $2$-connected cover of $S^2$. No vanishing hypothesis on the homotopy groups of $X$ is needed for its existence.
 :::
 
 :::
@@ -169,7 +195,7 @@ Both sides are homotopy fibres of maps out of $X$ and $X^n$ over the common base
 For $n<m-1$ both iterands are contractible, and for $n=m-1$ the fibre model of step 5 applies; so the notation $X_m^n$ is unambiguous up to homotopy, with the homotopy groups of step 4.
 
 ::: pf-proof
-If $n<m-1$ then both $(X^n)_m$ and $(X_m)^n$ have all homotopy groups zero by step 4, and both are CW complexes, being built from CW complexes by homotopy fibres and by attaching cells that kill homotopy groups; a CW complex with no homotopy groups is contractible by Whitehead's theorem. If $n=m-1$ then $n\ge m-1$, so steps 5 and 6 apply and give the equivalence. The homotopy groups are those of step 4 in every case, which is the second assertion of the exercise.
+If $n<m-1$ then both $(X^n)_m$ and $(X_m)^n$ have all homotopy groups zero by step 4, and both have the homotopy type of CW complexes, a homotopy fibre of CW complexes having CW homotopy type and a Postnikov stage being a CW complex; a space of CW homotopy type with no homotopy groups is contractible by Whitehead's theorem. If $n=m-1$ then $n\ge m-1$, so steps 5 and 6 apply and give the equivalence. The homotopy groups are those of step 4 in every case, which is the second assertion of the exercise.
 :::
 
 :::

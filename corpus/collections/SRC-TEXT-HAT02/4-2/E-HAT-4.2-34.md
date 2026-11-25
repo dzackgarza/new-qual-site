@@ -52,6 +52,14 @@ audit:
     Z^4 and H_1(C_f) = 0, put in by the 2026-11-01 repair, is kept and is what makes the degree 2
     injectivity work. Not claimed: any statement about the homotopy class of pq beyond its not being
     constant.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 34. The proof reads correct. One provenance correction: the
+    solution said that no retained set covers the exercise, and the retained sets' actual coverage is
+    now recorded — Sam's §4.2 numbering is Hatcher's and Proudfoot's homework 7 covers 1, 2, 30, 31
+    and 32, announcing 39 without a solution of it.
 ---
 
 ::: {.problem}
@@ -60,7 +68,7 @@ Show that $pq: T^3 \to S^2$ induces the trivial map on $\pi_*$ and $\tilde{H}_*$
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.2 Exercise 34. It is checked against Hatcher, Algebraic Topology, Section 4.2 Exercise 34, and uses the mapping cone and the cofiber sequence of Section 4.2.
+The argument is the card's own, and a retained solution covers the exercise: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.2 Exercise 34** (`tmp/sources/hatcher-solutions-sam-2008.md`). It is checked against Hatcher, Algebraic Topology, Section 4.2 Exercise 34, and uses the mapping cone and the cofiber sequence of Section 4.2.
 
 ::: pf
 

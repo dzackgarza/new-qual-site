@@ -6,19 +6,20 @@ order: 30
 # Arc estimates
 
 Evaluating a real integral by a closed contour requires the integral over the added arc to tend to a known limit.
-The ML estimate bounds an integral by the length of the curve times the supremum of the integrand; on a semicircle, Jordan's lemma improves this bound for integrands with a factor $e^{i\alpha z}$.
+The [[T-SFXI7|ML estimate]] bounds an integral by the length of the curve times the supremum of the integrand; on a semicircle, [[T-ZO5UU|Jordan's lemma]] improves this bound for integrands with a factor $e^{i\alpha z}$.
 
 ## The ML estimate
 
 [[T-SFXI7]]
 
-::: {.remark title="Circular arcs"}
-If $C_R$ is a circular arc of radius $R$ subtending an angle $\theta$, then $\length(C_R) = R\theta$ and
+::: {.proposition title="Circular arcs"}
+Let $\Gamma_{R,\theta}$ be a circular arc of radius $R$ subtending an angle $\theta$, and let $M \coloneqq \sup_{z\in\Gamma_{R,\theta}}\abs{f(z)}$.
+Then $\length(\Gamma_{R,\theta}) = R\theta$ and
 $$
-\abs{\int_{C_R} f\,} \leq MR\theta
-.$$
-So the arc integral tends to $0$ as $R\to\infty$ when $M = \bigo\qty{1 / R^{1+\varepsilon}}$ for some $\varepsilon>0$, while $M = \bigo(1/R)$ gives only a bounded integral.
-For a rational function $p/q$ with $\deg q\geq \deg p + 2$, $M = \bigo(1/R^2)$; for $\deg q = \deg p + 1$, $M = \bigo(1/R)$, and Jordan's lemma applies when the integrand also has a factor $e^{i\alpha z}$ with $\alpha > 0$ on the upper semicircle.
+\abs{\int_{\Gamma_{R,\theta}} f(z)\dz} \leq MR\theta.
+$$
+So the arc integral tends to $0$ as $R\to\infty$ when $MR\to 0$, in particular when $M = \bigo\qty{1 / R^{1+\delta}}$ for some $\delta>0$, while $M = \bigo(1/R)$ gives only a bounded integral.
+For a rational function $p/q$ with $\deg q\geq \deg p + 2$, $M = \bigo(1/R^2)$; for $\deg q = \deg p + 1$, $M = \bigo(1/R)$, and [[T-ZO5UU|Jordan's lemma]] applies when the integrand also has a factor $e^{i\alpha z}$ with $\alpha > 0$ on the upper semicircle [@Ahl73, ch. 4, §5.3].
 
 :::
 
@@ -38,17 +39,18 @@ On $C_R$, $\abs{e^{iz}} = e^{-\Im z} \leq 1$, while $\abs{\cos z}$ and $\abs{\si
 
 ## Small arcs about a simple pole
 
-The integral over an arc of angle $\theta$ about a simple pole $z_0$, traversed counterclockwise, tends to $i\theta\Res_{z=z_0} f$ as the radius tends to $0$.
-
 [[T-SSNLT]]
 
-A half-circle of radius $\varepsilon$ above a simple pole on $\RR$, traversed clockwise from $z_0-\varepsilon$ to $z_0+\varepsilon$, contributes $-i\pi \Res_{z=z_0} f$ in the limit; these terms give the half-residues in principal-value integrals.
+::: {.example title="Clockwise half-circle above a real pole"}
+A half-circle of radius $\varepsilon$ above a simple pole on $\RR$, traversed clockwise from $z_0-\varepsilon$ to $z_0+\varepsilon$, contributes $-i\pi \Res_{z=z_0} f$ in the limit; these terms give the half-residues in [[D-PV4RQ|principal-value]] integrals.
+
+:::
 
 ## Summary
 
-- Integrand $\bigo(1/R^{2})$ on large arcs: the ML estimate.
+- Integrand $\bigo(1/R^{2})$ on large arcs: the [[T-SFXI7|ML estimate]].
 
-- Integrand $e^{i\alpha z}g(z)$ with $\alpha>0$ and $g = \bigo(1/R)$ on the upper semicircle: Jordan's lemma.
+- Integrand $e^{i\alpha z}g(z)$ with $\alpha>0$ and $g = \bigo(1/R)$ on the upper semicircle: [[T-ZO5UU|Jordan's lemma]].
 
 - Arcs of radius $\varepsilon\to 0$ about a simple pole: [[T-SSNLT]], with limit $i\theta\Res$.
 

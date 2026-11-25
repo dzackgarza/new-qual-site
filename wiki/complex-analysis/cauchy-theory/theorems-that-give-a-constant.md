@@ -25,14 +25,9 @@ Two hypotheses imply boundedness of an entire function $f$:
 
 ## Entire, with polynomial growth
 
-If $f$ is entire and $\abs{f(z)} \leq C\abs{z}^n$ for all large $\abs z$, then for fixed $z_0$ and large $R$ Cauchy's inequality on the circle $C_R$ given by $\abs{z - z_0} = R$ gives
-$$
-\abs{f^{(n+1)}(z_0)} \leq {(n+1)!\, \norm{f}_{C_R} \over R^{n+1}} \leq {(n+1)!\, C(R+\abs{z_0})^n \over R^{n+1}} \to 0
-,$$
-so $f^{(n+1)} \equiv 0$ and $f$ is a polynomial of degree at most $n$.
-Liouville's theorem is the case $n=0$.
-The statement is Exercise 15(a) of [@SS03, ch. 3, §8].
-See [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estimates and Liouville]].
+[[T-PG7ZK]]
+
+Liouville's theorem is the case $k=0$, and the estimates that prove the general case are on [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estimates and Liouville]].
 
 ## $\abs f$ has a local maximum in $\Omega$
 
@@ -67,14 +62,15 @@ See [[complex-analysis/cauchy-theory/the-identity-principle|The identity princip
 
 ## $f'\equiv 0$ on $\Omega$
 
-If $f' \equiv 0$ on the connected open set $\Omega$, then $f$ is constant: $f$ is constant along every segment in $\Omega$, and $\Omega$ is polygonally connected [@SS03, ch. 1, Corollary 3.4].
-The proofs of Liouville's theorem and of the polynomial-growth bound end with this step.
+::: {.proposition}
+If $f'\equiv0$ on a connected open set $\Omega$, then $f$ is constant [@SS03, ch. 1, Corollary 3.4].
+:::
 
 ## $f$ omits values
 
 By the [[T-HWBWI|little Picard theorem]], a nonconstant entire function omits at most one value of $\CC$.
 
-If an entire function $f$ omits every value in a disc $\DD_r(a)$, then $g\coloneqq 1/(f-a)$ is entire with $\abs g\leq 1/r$, so $g$, and hence $f$, is constant by Liouville's theorem.
+An entire function that omits every value in a disc $\DD_r(a)$ omits at least two values, so it is constant by [[T-HWBWI|the little Picard theorem]].
 [[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati--Weierstrass and Picard]] gives the corresponding statements near an essential singularity.
 
 ## Hypotheses

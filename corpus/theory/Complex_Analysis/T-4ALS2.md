@@ -22,9 +22,9 @@ Let $\Omega\subseteq\CC$ be open and let $\mcf$ be a family of [[D-E7A5W|holomor
 
 - $\mcf$ is a [[D-QTJ7T|normal family]].
 
-This is [@SS03, Theorem 3.3 of Chapter 8 (p. 225)], with the two conclusions in the same order.
+This is [@SS03, ch. 8, Theorem 3.3], with the two conclusions in the same order.
 :::
 
 ::: {.remark}
-Montel's second theorem uses the extended convention for normality in the remark on [[D-QTJ7T]], where a subsequence may instead tend to $\infty$ uniformly on compact subsets: a family of meromorphic functions on a region $\Omega$ that omits the same three values of the Riemann sphere is normal in that sense.
+The family in this statement is one of holomorphic functions. The classical convention extends normality to families of meromorphic functions, for which a subsequence may instead tend to $\infty$ uniformly on compact subsets; that convention is [@Ahl73, ch. 5, §4.5, Definition 3].
 :::

@@ -36,14 +36,16 @@ $$
 
 ::: {.proposition title="The case of equality in Hölder's inequality"}
 Let $1<p<\infty$ and let $q$ be its conjugate exponent.
-For $f\in L^p$ and $g\in L^q$, equality holds in [[PR-7BGSE|Hölder's inequality]] exactly when $\alpha\abs f^p=\beta\abs g^q$ almost everywhere for some constants $\alpha,\beta$ with $\alpha\beta\neq0$ [@Fol99, Theorem 6.2].
+For $f\in L^p$ and $g\in L^q$, equality holds in [[PR-7BGSE|Hölder's inequality]] exactly when $\alpha\abs f^p=\beta\abs g^q$ almost everywhere for some constants $\alpha,\beta\geq0$, not both zero [@Fol99, Theorem 6.2].
+
+Folland prints the condition on the constants as $\alpha\beta\neq0$. With that restriction the statement omits the case $f=0$ or $g=0$ almost everywhere, where both sides of Hölder's inequality vanish and equality holds; allowing $\beta=0$ or $\alpha=0$ covers it, and when $\alpha\beta>0$ the two conditions agree.
 :::
 
 
 ## Chebyshev's inequality
 
 A bound on $\norm f_p$ bounds the measure of $\theset{\abs f>t}$ ([[PR-YO7MV]]).
-With the Borel--Cantelli lemma ([[T-OTR5M]]): if $\sum_n\norm{f_n}_p^p<\infty$, then $f_n\to0$ almost everywhere.
+With the Borel--Cantelli lemma ([[T-OTR5M]], which cites Royden--Fitzpatrick, Chapter 17, §17.1 for it): for $1\leq p<\infty$, if $\sum_n\norm{f_n}_p^p<\infty$, then $f_n\to0$ almost everywhere.
 
 ## Particular exponents
 

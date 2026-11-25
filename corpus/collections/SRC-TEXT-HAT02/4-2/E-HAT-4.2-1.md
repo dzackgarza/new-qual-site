@@ -44,6 +44,22 @@ audit:
     which a retraction does exist. The statement is §4.2 Exercise 1, and no retained solution set
     covers it.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 1. The proof is correct. Provenance correction: the earlier
+    event on this card says that no retained solution set covers the exercise, and that is false —
+    Sam's §4.2 Exercise 1 (`tmp/sources/hatcher-solutions-sam-2008.md`) solves it, his §4.2 numbering
+    being Hatcher's. The card's own argument is kept, being correct and independent.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 1. The proof reads correct. One provenance correction: the
+    solution said that no retained set covers the exercise, and the retained sets' actual coverage is
+    now recorded — Sam's §4.2 numbering is Hatcher's and Proudfoot's homework 7 covers 1, 2, 30, 31
+    and 32, announcing 39 without a solution of it.
 ---
 
 ::: {.problem}
@@ -51,7 +67,7 @@ Use homotopy groups to show there is no retraction $\RP^n \to \RP^k$ if $n > k >
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise, so the argument is the card's own; it uses only the homotopy groups of projective spaces and the functoriality of $\pi_*$.
+A retained solution covers this exercise: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.2 Exercise 1** (`tmp/sources/hatcher-solutions-sam-2008.md`), and **Nicholas Proudfoot, *Math 634: Algebraic Topology I*, homework 7, Problem 1** (`tmp/sources/uoregon-proudfoot-634-hw7.md`). The card's own argument is kept; it uses only the homotopy groups of projective spaces and the functoriality of $\pi_*$, and it covers $k=1$ with the others.
 
 ::: pf
 

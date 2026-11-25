@@ -9,7 +9,7 @@ topics:
 
 # Contours and primitives
 
-A contour integral is computed by parameterizing the curve, and it is decided without any computation when the integrand has a primitive: the value depends only on the endpoints, and vanishes over a closed curve.
+A contour integral is computed by parameterizing the curve, and it is decided without any computation when the integrand has a primitive: the value is read off the endpoints by [[D-6RZQN|the primitive]], and a closed curve gives zero.
 
 ## Contours
 
@@ -17,26 +17,23 @@ A contour integral is computed by parameterizing the curve, and it is decided wi
 
 [[D-YKB3V]]
 
-The integral of $f$ along a curve is bounded by the largest value of $\abs f$ on the curve times its length, which is the estimate every arc argument uses.
+The estimate every arc argument uses bounds the integral by the largest value of $\abs f$ on the curve times its length:
 
 [[T-SFXI7]]
 
-A curve that is the boundary of a region oriented positively has an integral that Green's theorem converts into an area integral of $\delbar f$, which is Cauchy's theorem when $f$ is holomorphic ([[T-4M73O]], [[T-2OVCI]]).
+For a curve that bounds a positively oriented region, Green's theorem converts the integral into an area integral of $\delbar f$ ([[T-4M73O]]), which is one route to Cauchy's theorem ([[T-2OVCI]]).
 
 ## Primitives
 
 [[D-6RZQN]]
 
-On a [[D-GFM35|simply connected]] region every holomorphic function has a primitive, since its integrals over closed curves vanish ([[T-2OVCI]]); the primitive is then the integral from a fixed base point, and [[T-NRSFZ]] constructs the logarithm and its powers that way.
+[[T-PRIM]]
+
+[[T-NRSFZ|The logarithm and roots of a nonvanishing function]] are constructed from such a primitive.
 
 [[D-PJ7JM]]
 
-The winding number measures this failure.
-On $\CC\sm\theset{a}$ the function $\inverseof{(z-a)}$ has no primitive, since
-$$
-\int_\gamma{\dz\over z-a} = 2\pi i\,n(\gamma,a)
-$$
-for a closed curve $\gamma$ avoiding $a$, and the right-hand side is not always zero.
+The winding number measures this failure: on $\CC\sm\theset{a}$ the function $\inverseof{(z-a)}$ has no primitive, and its integral over a closed curve is $2\pi i$ times the [[D-PJ7JM|winding number]] of the curve about $a$ ([[D-6RZQN]]).
 
 ## Problems
 

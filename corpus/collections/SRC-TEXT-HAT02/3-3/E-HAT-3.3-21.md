@@ -519,6 +519,44 @@ audit:
     including the two inside the bolded attributions, which now end at the theorem number. The split the card
     draws between published theorems and its own assembly is unchanged, and no step changed. The dated events
     above keep their text, page references included, as QUAL-11 requires. `qualc.authoring check` passes.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Issue #165, the residual sentence of step degree-one: it closed "no argument in
+    degree one can decide the bracketed question", which claims more than the two
+    computations above it give. They give that $H_c^1(\ZZ\times\RR;\ZZ)$ and
+    $H^1(E,\infty;\ZZ)$ are both free abelian on countably many generators, hence
+    abstractly isomorphic, so no invariant of the two groups as abstract groups, and
+    in particular no countability argument, decides whether the evident map is an
+    isomorphism; an argument that computes the map itself is not excluded by them.
+    The sentence now says that and nothing more, and agrees with the claim of the
+    step, with step earring-degree-two's degree-two comparison, and with the closing
+    step's "nothing here asserts that the degree-one map fails". Checked in this
+    pass: the degree-one value of the compactification from Frankland, Theorem 1.3
+    with the sentence after it, and from the exact sequence of the pair
+    $(E,\infty)$; the compactly supported value from the cofinal rectangles $K_N$.
+    Searched the retained sets again for a published solution of the bracketed
+    question, without result: Guanyu Li's set covers Ex. 3.3.1 to 3.3.9 of the
+    section, Koukpari's has no exercises in it, Stanford Math 215C Solution Set 4
+    proves the first part and its paragraph on $\ZZ\times\RR$ is the rejected
+    inference, and Kottke's Problem 2 proves the first part. So the answer to the
+    bracketed question is the card's own assembly from Eda--Kawamura, Wiegold and
+    Frankland, as the closing step says, and no published solution of it was
+    located. Not checked in this pass: no source outside those sets was read.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Issue #165, one refinement of the step's claim: it read "no invariant of the two groups as
+    abstract groups, and in particular no countability argument, can separate the two sides in
+    degree one". What the two computations give is that both groups are free abelian on countably
+    many generators, so every invariant of them as abstract groups agrees, their cardinality
+    included; "no countability argument" was wider than that, since an argument that counts the
+    image of the map is not an invariant of the two groups. The claim now says "no comparison of
+    their cardinalities". The proof's closing sentence and the closing step are unchanged.
 ---
 
 ::: {.problem}
@@ -593,7 +631,7 @@ By **K. Eda and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Th
 
 ::: {.pf-step #degree-one}
 
-For $X=\ZZ\times\RR$ and integer coefficients, $H_c^1(X;\ZZ)$ and $H^1(X^+,\infty;\ZZ)$ are both free abelian on countably many generators, so no invariant of the two groups as abstract groups, and in particular no countability argument, can separate the two sides in degree one.
+For $X=\ZZ\times\RR$ and integer coefficients, $H_c^1(X;\ZZ)$ and $H^1(X^+,\infty;\ZZ)$ are both free abelian on countably many generators, so no invariant of the two groups as abstract groups, and in particular no comparison of their cardinalities, can separate the two sides in degree one.
 
 ::: pf-proof
 
@@ -603,7 +641,7 @@ $$
 H^1(E;\ZZ)\cong\bigoplus_{n\in\NN}\ZZ,
 $$
 
-"a free abelian group on countably many generators": the map $H^1(E;\ZZ)\to\operatorname{Hom}_{\ZZ}(\bigoplus_{\NN}\ZZ,\ZZ)$ induced by $H_1(\iota)$ is injective with image $\bigoplus_{\NN}\ZZ$, and $H^1(E;\ZZ)\cong\operatorname{Hom}_{\ZZ}(H_1(E;\ZZ),\ZZ)$ because $H_0(E;\ZZ)$ is free. That the pair sequence of a one-point subspace identifies the relative group with the absolute one is **answer 4391062 (Thorgott, 2022-02-25) to Math Stack Exchange question 4390308**, which states for singular cohomology that $H^1(X,S)\cong H^1(X)$ for a singleton $S$, from the exact sequence of the pair $(X,S)$. The exact sequence of the pair $(E,\infty)$ then gives $H^1(E,\infty;\ZZ)\cong H^1(E;\ZZ)$: the map $H^0(E;\ZZ)=\ZZ\to H^0(\{\infty\};\ZZ)=\ZZ$ is onto, so the image of $H^0(\{\infty\};\ZZ)$ in $H^1(E,\infty;\ZZ)$ is $H^0(\{\infty\};\ZZ)$ modulo the image of $H^0(E;\ZZ)$, which is zero, and $H^1(E,\infty;\ZZ)\to H^1(E;\ZZ)$ is injective by exactness; while $H^1(\{\infty\};\ZZ)=0$ makes it surjective. The tail of that sequence is thus the short exact sequence $0\to H^1(E,\infty;\ZZ)\to H^1(E;\ZZ)\to0$. Both groups are thus free abelian on countably many generators, and no argument in degree one can decide the bracketed question.
+"a free abelian group on countably many generators": the map $H^1(E;\ZZ)\to\operatorname{Hom}_{\ZZ}(\bigoplus_{\NN}\ZZ,\ZZ)$ induced by $H_1(\iota)$ is injective with image $\bigoplus_{\NN}\ZZ$, and $H^1(E;\ZZ)\cong\operatorname{Hom}_{\ZZ}(H_1(E;\ZZ),\ZZ)$ because $H_0(E;\ZZ)$ is free. That the pair sequence of a one-point subspace identifies the relative group with the absolute one is **answer 4391062 (Thorgott, 2022-02-25) to Math Stack Exchange question 4390308**, which states for singular cohomology that $H^1(X,S)\cong H^1(X)$ for a singleton $S$, from the exact sequence of the pair $(X,S)$. The exact sequence of the pair $(E,\infty)$ then gives $H^1(E,\infty;\ZZ)\cong H^1(E;\ZZ)$: the map $H^0(E;\ZZ)=\ZZ\to H^0(\{\infty\};\ZZ)=\ZZ$ is onto, so the image of $H^0(\{\infty\};\ZZ)$ in $H^1(E,\infty;\ZZ)$ is $H^0(\{\infty\};\ZZ)$ modulo the image of $H^0(E;\ZZ)$, which is zero, and $H^1(E,\infty;\ZZ)\to H^1(E;\ZZ)$ is injective by exactness; while $H^1(\{\infty\};\ZZ)=0$ makes it surjective. The tail of that sequence is thus the short exact sequence $0\to H^1(E,\infty;\ZZ)\to H^1(E;\ZZ)\to0$. Both groups are thus free abelian on countably many generators, so no invariant of theirs as abstract groups decides the bracketed question in degree one.
 
 :::
 

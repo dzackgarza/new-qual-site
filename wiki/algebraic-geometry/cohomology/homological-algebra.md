@@ -18,8 +18,8 @@ Sheaf cohomology is its right derived functor, so computing $H^i(X,\mcf)$ means 
 
 [[D-A7LCT]]
 
-Both $\mods{A}$ for a ring $A$ and $\mods{\OO_X}$ are abelian.
-In $\mods{A}$ the cokernel of $f\colon M\to N$ is the quotient $N/\im f$ on underlying modules, while in $\mods{\OO_X}$ the cokernel of a morphism of sheaves is the sheaf associated to the presheaf cokernel, since that presheaf satisfies neither sheaf axiom in general [@Har77, Section II.1].
+Both $\mods{A}$ and $\mods{\OO_X}$ are abelian ([[D-DEFABCAT]]), and in $\mods{\OO_X}$ the cokernel is the [[D-A7LCT|cokernel sheaf]], the sheafification of $U\mapsto\coker\bigl(f(U)\bigr)$: the presheaf need not be a sheaf, and sheafifying is what gives the universal property [@Har77, Proposition-Definition II.1.2].
+In $\mods{A}$ nothing needs sheafifying and the cokernel is the quotient $N/\im f$.
 
 ## Additive functors and exactness
 

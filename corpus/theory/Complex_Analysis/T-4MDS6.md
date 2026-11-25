@@ -18,5 +18,5 @@ review: draft
 ::: {.theorem}
 Let $\Omega\subsetneq\CC$ be a nonempty simply connected open set.
 Then for every $z_0\in\Omega$ there exists a unique [[D-TM4TE|biholomorphism]] $F\colon\Omega\to\DD$ such that $F(z_0)=0$ and $F'(z_0)>0$.
-In particular, any two nonempty simply connected open sets $\Omega_1,\Omega_2\subsetneq\CC$ are [[D-TM4TE|biholomorphic]] [@SS03, Theorem 3.1 (p. 224)].
+In particular, any two nonempty simply connected open sets $\Omega_1,\Omega_2\subsetneq\CC$ are [[D-TM4TE|biholomorphic]] [@SS03, ch. 8, Theorem 3.1].
 :::

@@ -69,11 +69,18 @@ audit:
     Re-confirmed in this pass rather than copied: PDF p. 400 carries the running head 391.
     The durable part of the locator is that printed page; the file path names this machine's copy and
     `tmp/sources` does not survive a VM reset. No mathematics changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 29. The statement matched the printed exercise, but the
+    problem block carried a non-printed preamble, including a path to
+    `tmp/sources/hatcher-2002-algebraic-topology.pdf`, which does not exist on this machine; the
+    preamble is removed, so the block is the printed statement alone. The proof reads correct; it is
+    the card's own, Sam's set having no §4.2 Exercise 29.
 ---
 
 ::: {.problem}
-This is Exercise 29 of Section 4.2 of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
-
 Finish the homotopy classification of lens spaces begun in Exercise 2 of §3.E by showing that two lens spaces $L_m(\ell_1, \ldots, \ell_n)$ and $L_m(\ell_1', \ldots, \ell_n')$ are homotopy equivalent if $\ell_1 \cdots \ell_n \equiv \pm k^n \ell_1' \cdots \ell_n' \pmod{m}$ for some integer $k$, via the following steps:
 
 (a) Reduce to the case $k = 1$ by showing that $L_m(\ell_1', \ldots, \ell_n') = L_m(k\ell_1', \ldots, k\ell_n')$ if $k$ is relatively prime to $m$. [Rechoose the generator of the $\ZZ_m$ action on $S^{2n-1}$.]

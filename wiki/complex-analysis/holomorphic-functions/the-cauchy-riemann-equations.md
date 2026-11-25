@@ -3,13 +3,12 @@ title: The Cauchy--Riemann equations
 order: 20
 topics:
 - Cauchy-Riemann
-- Cauchy-Riemann Equations
 - Partial Derivatives
 ---
 
 # The Cauchy--Riemann equations
 
-A map $f = u + iv$ that is real differentiable at $z_0$, regarded as a map $\RR^2\to\RR^2$, is complex differentiable at $z_0$ if and only if $u_x = v_y$ and $u_y = -v_x$ at $z_0$.
+The [[D-CREQS|Cauchy--Riemann equations]] are the real form of complex differentiability: they turn one complex derivative into a pair of real first-order equations on $u=\Re f$ and $v=\Im f$.
 
 [[D-V6UQJ]]
 
@@ -17,24 +16,23 @@ A map $f = u + iv$ that is real differentiable at $z_0$, regarded as a map $\RR^
 
 [[D-KLTBZ]]
 
+[[D-CREQS]]
+
 [[PR-37QA5]]
 
 ## Polar form
 
 [[E-SS1.EX-9]]
 
-The polar form applies directly to functions given in terms of $r$ and $\theta$.
-
 ## Wirtinger derivatives
-
-In terms of the Wirtinger derivatives $\del$ and $\delbar$, the Cauchy--Riemann equations are the single equation $\delbar f = 0$.
 
 [[D-OAFF5]]
 
 [[PR-TVPCM]]
 
-::: {.remark title="Computing with Wirtinger derivatives"}
-$\overline{\delbar f(z)} = \del \overline f(z)$, and the basic differentials are $d(cz) = c\dz$ and $d(c\bar z) = c\dzbar$.
+Conjugation interchanges the two operators, $\overline{\delbar f}=\del\bar f$, and for a constant $c$ the basic differentials are $d(cz)=c\dz$ and $d(c\bar z)=c\dzbar$.
+
+::: {.example title="Wirtinger derivatives of $\abs z^2$ and of $e^{-\abs z^2}$"}
 For example,
 $$
 \del \abs z^2 = \del (z\bar z) = \bar z, \qquad \delbar \abs z^2 = z, \qquad d\qty{\abs z^2} = \bar z \dz + z\dzbar
@@ -46,42 +44,11 @@ $$
 
 :::
 
-## Derivatives in coordinates
-
-::: {.fact}
-For a holomorphic $f = u+iv$,
-$$
-f' = \dd{f}{z} = {1\over i}\dd{f}{y} = \dd{f}{x} = \dd{u}{x}+i\dd{v}{x}.
-$$
-
-The first two equalities are [@Ahl73, ch. 2, §1.2, Analytic Functions], which computes the limit of the difference quotient first along real $h$ and then along purely imaginary $ik$, obtaining $f'=\partial f/\partial x$ and $f'=\frac1i\partial f/\partial y$, and then the Cauchy--Riemann equations give $\partial f/\partial x=\partial u/\partial x+i\partial v/\partial x$; that $f'$ is also $\partial f/\partial z$ is [@SS03, ch. 1, Proposition 2.3].
-:::
-
-::: {.fact title="Differentials"}
-$$
-\begin{aligned}
-\dz &= \dx + i\,\dy, \\
-\dzbar &= \dx - i\,\dy, \\
-f_z &= f_x = f_y/i \quad\text{for } f \text{ holomorphic}.
-\end{aligned}
-$$
-
-The first two lines are the notation for the complex-valued $1$-forms whose integrals are the contour integrals of [[D-6DAXB]]: a $1$-form $p\,\dx+q\,\dy$ with complex coefficients is written $\frac12\qty{p-iq}\dz+\frac12\qty{p+iq}\dzbar$, which is the decomposition [@Ahl73, ch. 4, §1.1, Line Integrals] carries out when it separates $\int_\gamma f\,\dz$ and $\int_\gamma f\,\dy$ into $\dz$ and $\overline{\dz}$. The third line repeats the block above.
-:::
-
-::: {.remark title="The Jacobian is $\abs{f'}^2$"}
-Regarding $f$ as a map $\RR^2\to\RR^2$ with $f(x+iy) = u+iv$, the Jacobian determinant is
-$$
-J = u_xv_y -v_x u_y = u_x^2 + v_x^2
-$$
-after applying CR, and on the other hand $\abs{f'(z)}^2 = \abs{u_x + iv_x}^2 = J$.
-So a holomorphic map scales area infinitesimally by $\abs{f'}^2$ and is orientation preserving wherever $f'\neq 0$.
-
-:::
+[[T-JACOB]]
 
 ## Solving real integrals with complex calculus
 
-::: {.remark}
+::: {.example title="An integral by real parts"}
 Since $e^{(3+2i)z}$ has antiderivative $e^{(3+2i)z}/(3+2i)$, restricting to real $z=x$ and taking real parts evaluates a real integral:
 $$
 \begin{aligned}
@@ -89,7 +56,8 @@ $$
 &= \Re \int e^{3x}e^{2ix}\dx \\
 &= \Re \int e^{(3+2i)x} \dx \\
 &= \Re {e^{(3+2i)x} \over 3+2i} + C
-\end{aligned}.$$
+\end{aligned}
+$$.
 
 :::
 

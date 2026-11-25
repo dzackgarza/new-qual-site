@@ -33,7 +33,7 @@ $$
 \beta_{2k} = \sum_{i=k}^{n} (-1)^{i-k} \binom{i}{k} \size \Sigma(n-i) .
 $$
 
-The formula is Cox--Little--Schenck, *Toric Varieties*, Theorem 12.3.12, stated there for a complete simplicial fan — a smooth complete fan being simplicial, this card's hypothesis is the stronger one — together with the symmetry $\beta_{2k}=\beta_{2n-2k}$ that the same theorem records. The vanishing of the odd Betti numbers is Theorem 12.3.11 of the same chapter, whose object is that the cohomology of a complete simplicial toric variety is concentrated in even degrees and computed by the Danilov--Jurkiewicz spectral sequence (12.3.11). Neither work has a key in `vocabularies/references.yaml`, so the attribution is by author, title and statement number.
+The formula is Cox--Little--Schenck, *Toric Varieties*, Theorem 12.3.12, stated there for a complete simplicial fan and with the Betti numbers $b_{2k}=\dim_\QQ H^{2k}(X_\Sigma,\QQ)$ — a smooth complete fan being simplicial, this card's hypothesis is the stronger one — together with the symmetry $b_{2k}=b_{2n-2k}$ that the same theorem records. The vanishing of the odd Betti numbers is Theorem 12.3.11 of the same chapter, whose part (a) reads $H^{2k+1}(X_\Sigma,\QQ)=0$. The two theorems are statements over $\QQ$; over $\ZZ$ they give the same numbers for a smooth $X_\Sigma$, because the spectral sequence (12.3.11) with integer coefficients then degenerates at $E_2$ as well (Franz, recorded in the same section immediately before Theorem 12.3.11), so that $H^\bullet(X_\Sigma(\CC),\ZZ)$ is torsion-free, vanishes in odd degrees, and satisfies $\beta_{2k}=b_{2k}$.
 :::
 
 ::: {.theorem title="Two special cases"}
@@ -42,12 +42,13 @@ $$
 \qquad
 \chi\bigl(X_\Sigma(\CC)\bigr) = \size \Sigma(n),
 $$
-and the first Chern class gives
+the second by the binomial formula above, and the first Chern class gives
 $$
 \Pic(X_\Sigma)\xrightarrow{\sim}H^2(X_\Sigma(\CC),\ZZ),
 \qquad
 \beta_2=\size\Sigma(1)-n.
 $$
+The isomorphism is [*ibid.*, Theorem 12.3.2], which needs every maximal cone of $\Sigma$ to be $n$-dimensional, as completeness gives; $\beta_2=\size\Sigma(1)-n$ is then the rank of $\ZZ^{\Sigma(1)}/M$ computed in [*ibid.*, Theorem 4.1.3], the class group and the Picard group coinciding on a smooth $X_\Sigma$.
 :::
 
 ::: {.remark title="Where the formula comes from"}

@@ -13,8 +13,7 @@ topics:
 If $f\colon U\to W$ and $g\colon V\to W$ are [[D-TM4TE|conformal]] bijections onto a standard region $W$ such as $\HH$ or $\DD$, then $\inverseof g\circ f\colon U\to V$ is a conformal bijection.
 
 The regions named below are
-$\DD\coloneqq\theset{z\st\abs z<1}$, the open unit disc;
-$\HH\coloneqq\theset{z\st\Im z>0}$, the open upper half plane;
+$\DD$ the unit disc and $\HH$ the upper half-plane, as in [[PR-OOHFS]];
 $Q_i$, the $i$th open quadrant, so $Q_1\coloneqq\theset{z\st\Re z>0,\ \Im z>0}$ and $Q_{ij}$ is the interior of $\overline{Q_i\union Q_j}$, so $\HH = Q_{12}$ and $Q_{14}$ is the right half plane;
 and $L\coloneqq\theset{x+iy\st 0<y<\pi}$, the horizontal strip.
 
@@ -27,7 +26,7 @@ and $L\coloneqq\theset{x+iy\st 0<y<\pi}$, the horizontal strip.
 | a sector $0<\Arg z<\pi/n$ | $\HH$ | $z\mapsto z^n$ |
 | a symmetric sector $\abs{\Arg z}<\theta_0$ | the right half plane | a branch of $z\mapsto z^a$ with $a = \pi/(2\theta_0)$ |
 | the strip $L$ | $\HH$ | $z\mapsto e^z$, which maps $\theset{-\pi<\Im z<\pi}$ onto $\CC\sm\RR_{\leq0}$ |
-| a rectangle $\Re z\in[a,b]$, $\Im z\in[c,d]$ | an annular sector | $z\mapsto e^z$, with $\theset{\Re z\in[a,b],\ \Im z\in[c,d]}$ going to $\theset{Re^{i\theta}\st R\in[e^a,e^b],\ \theta\in[c,d]}$ for $b-a>0$ and $0<d-c\leq2\pi$ |
+| a rectangle $a<\Re z<b$, $c<\Im z<d$ | an annular sector | $z\mapsto e^z$, with $\theset{a<\Re z<b,\ c<\Im z<d}$ going to $\theset{Re^{i\theta}\st e^a<R<e^b,\ c<\theta<d}$ for $b>a$ and $0<d-c\leq2\pi$ |
 | the half disc $\DD\intersect\HH$ | a quadrant | the Joukowski map $z\mapsto z+\inverseof z$, which maps $\abs z = 1$ onto $[-2,2]$, $\DD\intersect\HH$ onto $Q_{34}$, and $\overline{\DD}^c$ onto $\CC\sm[-2,2]$ |
 | a region bounded by two circular arcs | a sector, or a strip when the arcs are tangent | [[D-FRVBV|a Möbius transformation]] sending the two intersection points to $0$ and $\infty$, or the point of tangency to $\infty$ |
 | the slit plane $\CC\sm[0,\infty)$ | $\HH$ | the branch of $\sqrt z$ with argument in $(0,\pi)$ |
@@ -63,21 +62,16 @@ The feature of the boundary determines the factor to remove first.
 - Conformal maps preserve angles between curves, including at $\infty$ on $\CP^1$.
   Circles meeting orthogonally map to generalized circles meeting orthogonally, and tangent circles map to tangent circles or parallel lines.
 
-- Möbius transformations map generalized circles to generalized circles, where a line is a circle through $\infty$, and map an arc between two points onto an arc between their images.
+- Möbius transformations map generalized circles to generalized circles, where a line is a circle through $\infty$, and map an arc between two points onto an arc between their images ([[T-QGL7C]]).
 
-- The cross ratio sending $a\mapsto1$, $b\mapsto0$, $c\mapsto\infty$ is
-  $$
-  (z; a, b, c) = \frac{z-b}{z-c}\cdot\frac{a-c}{a-b}.
-  $$
+- The cross ratio $(z;a,b,c)$ sends $a\mapsto1$, $b\mapsto0$ and $c\mapsto\infty$ ([[PR-74KHY]]).
 
-- $t\mapsto\tan t$ is a bijection $(-\pi/2,\pi/2)\to\RR$, which parameterizes the real line by a bounded interval.
-
-The inverse $\inverseof z=\bar z/\abs z^2$ is [@Ahl73, ch. 1, §1.4, Conjugation, Absolute Value]; the conformality of an analytic map with nonvanishing derivative, and the preservation of angles that gives the orthogonal and tangent cases, are [@Ahl73, ch. 3, §2.3, Conformal Mapping]; the statement that a linear transformation carries circles into circles, lines counting as circles through $\infty$, is [@Ahl73, ch. 3, §3.3, Symmetry], Theorem 14 of the chapter; and the cross ratio with its normalisation is [@Ahl73, ch. 3, §3.2, The Cross Ratio], which is also [[FF-W4FFF]]. The last item is the real tangent of [@Ahl73, ch. 2, §3.2, The Trigonometric Functions].
+The inverse $\inverseof z=\bar z/\abs z^2$ is [@Ahl73, ch. 1, §1.4, Conjugation, Absolute Value]; the conformality of an analytic map with nonvanishing derivative, and the preservation of angles that gives the orthogonal and tangent cases, are [@Ahl73, ch. 3, §2.3, Conformal Mapping]; the statement that a linear transformation carries circles into circles, lines counting as circles through $\infty$, is Theorem 14 of [@Ahl73, ch. 3, §3.2, The Cross Ratio]; and the cross ratio with its normalisation is [@Ahl73, ch. 3, §3.2, Definition 12], which is also [[FF-W4FFF]].
 :::
 
 ## Standard maps
 
-The maps from and onto the half plane and the disc are stated on their cards; their composites give the map between any two regions of the table.
+Composing the maps of the table gives the map between any two of its regions.
 
 [[PR-OOHFS]]
 

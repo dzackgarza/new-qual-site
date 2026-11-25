@@ -22,6 +22,9 @@ The sequence $(f_n)$ \dfn{converges uniformly} to $f$ on $S$ if
 $$
 (\forall \varepsilon>0)\,(\exists n_0 = n_0(\varepsilon))\,(\forall x \in S)\,(\forall n>n_0)\quad \abs{f_n(x)-f(x)}<\varepsilon.
 $$
+For functions $f_n\colon S\to\CC$, the series $\sum_{n=1}^{\infty}f_n$ \dfn{converges uniformly} to $f$ on $S$ if the partial sums $\sum_{n=1}^{N}f_n$ converge uniformly to $f$ on $S$ as $N\to\infty$.
+
+This is [@Rud76, ch. 7, Definition 7.7].
 :::
 
 ::: {.remark}
@@ -34,8 +37,4 @@ The point $x$ at which the estimate fails may depend on $n_0$.
 
 ::: {.remark}
 With $\norm{g}_\infty \coloneqq \sup_{x\in S}\abs{g(x)}$ for $g\colon S\to\CC$, the sequence $(f_n)$ converges uniformly to $f$ on $S$ if and only if $\norm{f_n - f}_\infty\to 0$ as $n\to\infty$, where $\norm{f_n-f}_\infty\in[0,\infty]$.
-:::
-
-::: {.remark title="Series"}
-For functions $f_n\colon S\to\CC$, the series $\sum_{n=1}^{\infty}f_n$ \dfn{converges uniformly} to $f$ on $S$ if the partial sums $\sum_{n=1}^{N}f_n$ converge uniformly to $f$ on $S$ as $N\to\infty$.
 :::

@@ -46,6 +46,21 @@ audit:
     restrictions, surjective since compatibility makes the family well defined on the union).
     The card's prose asserted the last equivalence without the two directions. Statement
     unchanged; no retained solution set covers this exercise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read again against Hatcher, §3.F Exercise 5. The proof is correct: $\QQ$ is injective, so
+    $\operatorname{Ext}(A,\QQ)=0$ and the long exact sequence of $\operatorname{Hom}(A,-)$ makes
+    $\operatorname{Ext}(A,\ZZ)$ the cokernel of $\operatorname{Hom}(A,\QQ)\to
+    \operatorname{Hom}(A,\QQ/\ZZ)$; for $A=\ZZ_{p^\infty}$ the first term vanishes because $A$ is
+    torsion and $\QQ$ torsionfree, a map out of $A$ has $p$-power order image and so lands in the
+    $p$-primary part $\ZZ_{p^\infty}$ of $\QQ/\ZZ$, and an endomorphism is a compatible family of
+    multipliers $a_n$ modulo $p^n$ on the cyclic subgroup of order $p^n$, giving
+    $\varprojlim\ZZ/p^n=\widehat\ZZ_p$ in both directions. Two corrections, neither of mathematics:
+    the preamble carried a printed page in its citation, now removed, and its "no retained solution
+    set covers this exercise" is replaced by what the retained sets contain — Koukpari's §3.F
+    heading with nothing under it, Sam beginning at §4.1, the others stopping earlier.
 ---
 
 ::: {.problem}
@@ -54,8 +69,8 @@ Use this to get another proof that $\operatorname{Ext}(\ZZ_{p^\infty}, \ZZ) \app
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §3.F Exercise 5, printed p. 320; the argument below is the card's own.
-Apply $\operatorname{Hom}(A,-)$ to $0\to\ZZ\to\QQ\to\QQ/\ZZ\to0$: the resulting long exact sequence ends $\operatorname{Hom}(A,\QQ)\to\operatorname{Hom}(A,\QQ/\ZZ)\to\operatorname{Ext}(A,\ZZ)\to\operatorname{Ext}(A,\QQ)$, and $\QQ$ being divisible (equivalently, injective) kills the last term, so $\operatorname{Ext}(A,\ZZ)$ is the cokernel. For $A=\ZZ_{p^\infty}$ the first Hom vanishes because $\QQ$ is torsionfree while $A$ is torsion, and the second is $\operatorname{End}(\ZZ_{p^\infty})\cong\varprojlim\ZZ/p^n$ because an endomorphism of the Prüfer group is exactly a compatible family of residues. The argument is this card's own: no retained solution set covers this exercise.
+The statement is Hatcher, §3.F Exercise 5. The argument is the card's own: no retained solution set holds a solution of any exercise of §3.F — Koukpari's set carries the §3.F heading *Limits and Ext* with nothing under it, Sam's begins at §4.1, and the others stop earlier — so there is no published proof of this exercise to transcribe.
+Apply $\operatorname{Hom}(A,-)$ to $0\to\ZZ\to\QQ\to\QQ/\ZZ\to0$: the resulting long exact sequence ends $\operatorname{Hom}(A,\QQ)\to\operatorname{Hom}(A,\QQ/\ZZ)\to\operatorname{Ext}(A,\ZZ)\to\operatorname{Ext}(A,\QQ)$, and $\QQ$ being divisible (equivalently, injective) kills the last term, so $\operatorname{Ext}(A,\ZZ)$ is the cokernel. For $A=\ZZ_{p^\infty}$ the first Hom vanishes because $\QQ$ is torsionfree while $A$ is torsion, and the second is $\operatorname{End}(\ZZ_{p^\infty})\cong\varprojlim\ZZ/p^n$ because an endomorphism of the Prüfer group is exactly a compatible family of residues.
 
 ::: pf
 

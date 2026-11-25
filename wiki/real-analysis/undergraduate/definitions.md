@@ -46,11 +46,6 @@ In the definition of continuity on a set, $\delta$ may depend on both $\varepsil
 
 [[D-PAEDW]]
 
-::: {.remark}
-The set operations parallel the numerical ones, with suprema corresponding to unions and infima to intersections: $x\in\liminf_nE_n$ if and only if $x\in E_n$ for all but finitely many $n$, and $x\in\limsup_nE_n$ if and only if $x\in E_n$ for infinitely many $n$.
-
-:::
-
 [[D-RPOGQ]]
 
 [[FD-V5ISD]]

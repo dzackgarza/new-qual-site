@@ -701,6 +701,159 @@ audit:
     was found, and Dolgachev and Ortland, Point sets in projective spaces and
     theta functions, beyond its introduction.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Issue #165, on this card: the head called the whole solution a transcription and
+    said that it proves (c) for r <= 7, while step bad-locus-proper-closed and step
+    part-c-open say that the proof of (c) is the card's own, and step
+    properness-r-at-most-seven reached r = 7 only through the general-position
+    criterion for eight points, where the printed condition on cubics is a square
+    system whose determinant the step called nonzero because the system is square.
+    Squareness does not give a nonzero determinant. The second proof is therefore
+    restricted to r <= 6, where the criterion is the one printed in Dolgachev,
+    Section 6.3.3: condition (*), no three collinear and no six on a conic, which the
+    fixed tuple satisfies and whose two excluded loci are proper. At N <= 7 the
+    printed fourth condition, that no cubic pass through the points with one of them
+    singular, holds for no configuration at all, since a cubic singular at one of N
+    points and through the other N - 1 meets 3 + (N - 1) <= 9 conditions on the ten
+    coefficients and so exists for every position; the step now says that instead of
+    calling the condition automatic. Part (c) for r <= 8, r = 7 included, is step
+    properness-r-at-most-eight. The head now names the transcribed parts, (a), (b),
+    (d) and (e), with their sources, and says that the proof of (c) is the card's
+    own. The marker in step uncountable-field-lemma read "this step and the two after
+    it are the card's own" and said that no source prints the statement of (c); the
+    card's step part-c-open names two sets that print an argument for (c) and proves
+    neither, so the marker now scopes the card's own work to the steps that carry
+    (c) and states that no source proves it. This supersedes the 2026-11-19 event whose note reads "Part (c) proved for
+    r <= 7, so the sentence above is superseded for those r": the second proof
+    covers r <= 6, and (c) for r <= 8 rests on properness-r-at-most-eight. Read in
+    this pass: Dolgachev, Topics in Classical Algebraic Geometry, the definition of
+    points in general position preceding Proposition 8.1.9, Proposition 8.1.9, and
+    Section 6.3.3 with condition (*); Hartshorne, Exercise V.4.15. Recomputed: the
+    count 3 + (N - 1) at N <= 7, and the square case 10 = 10 at N = 8. Not done: no
+    proof that the determinant is nonzero was found or written, and the step no
+    longer uses one.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Issue #165, the same day, closing what the event above left restricted: the head
+    and step properness-r-at-most-seven are restored to r <= 7, because the
+    properness of the fourth general-position condition at eight points is now
+    proved on the card instead of inferred from the squareness of a system. Fix
+    $P_1,\ldots,P_7$ in general position and a nonsingular cubic $E_0$ through them,
+    which step smooth-cubic supplies. The bad locus $B$, of points $P$ for which a
+    cubic through $P_1,\ldots,P_7,P$ is singular at one of the eight, is closed,
+    being a projection from $\PP^2\times\PP^9$. A cubic $C\ne E_0$ of that kind
+    meets $E_0$ in a divisor of degree $9$ containing the singular point twice and
+    the other seven points once, hence in exactly $2Q+\sum_{R\ne Q}R$; for $Q=P$
+    the class of $2P$ is fixed and has at most four square roots, by Example
+    IV.1.3.7 with Milne, *Abelian Varieties*, Theorem I.7.2, and for $Q=P_j$ the
+    point $P$ is the single point of a fixed class of degree one; a cubic singular
+    at two of the eight points would meet $E_0$ in degree at least $10$. So $B$ is
+    a proper closed subset of $\PP^2$. Read in this pass: Dolgachev, the definition
+    preceding Proposition 8.1.9, Proposition 8.1.9, and Section 6.3.3; Hartshorne,
+    Example IV.1.3.7; Milne, Theorem I.7.2 as the card cites it. Recomputed: the two
+    intersection divisors, $2P+\sum_{i\le7}P_i$ and $2P_j+\sum_{i\ne j,\,i\le7}P_i+P$,
+    both of degree $9$, and the count $3+(N-1)$ at $N\le7$. Not done: no determinant
+    was computed and none is used, and no case of step part-c-open is touched.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Issue #165, third item on this card, found by reading the step claims against
+    their proofs: four claims said that part (c) holds for their range without the
+    hypothesis of part (c), that the ground field is uncountable. What those proofs
+    give in every characteristic is that the bad loci are contained in proper closed
+    subsets; the passage from that to (c) is step dense-general-position-extension,
+    whose statement assumes $k$ uncountable, and over a countable field its
+    countable-union lemma is false. The claims of steps properness-r-at-most-seven,
+    properness-r-at-most-eight, properness-r-nine and effective-root-for-every-point
+    now carry "when $k$ is uncountable", and the head says the same of the range it
+    lists. Read in this pass: the four claims, and the statements of steps
+    dense-general-position-extension and part-c-open; Hartshorne, Exercise V.4.15(c),
+    whose first sentence is that hypothesis. No proof changed.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Issue #165, the condition count withdrawn. On inspection the sentence "a cubic singular at
+    one of $N$ points and through the other $N-1$ meets $3+(N-1)\le9$ conditions on the ten
+    coefficients", and the two conclusions drawn from it — that the printed condition on cubics
+    holds for no configuration below eight points, and that the printed list is read for the
+    maximal case — are removed from step properness-r-at-most-seven. What replaces them is a
+    numbered statement for each range: for $r+1\le6$ points Hartshorne, Theorem V.4.6 with
+    Corollary V.4.7, that with no three of them collinear and no six on a conic the linear system
+    of cubics through them is very ample and the blowup embeds with $\omega\cong\mathcal O(-1)$;
+    for $r+1=7$ points Dolgachev, §6.3.3, the sentence after Proposition 6.3.5, condition (*);
+    and for $r+1=8$ points Proposition 8.1.9, whose fourth condition the residuation argument on
+    $E_0$ makes available. The residuation and $E_0$-intersection argument is kept only at
+    $r+1=8$, where its proof applies, and the step's range $r\le7$ is unchanged. This withdraws,
+    in the rendered text, the count-based clause of the 2026-11-19 event whose note reads "A
+    reading in the step above corrected ... at N <= 7 the fourth is automatic", and the same
+    clause of the 2026-11-22 event whose note reads "Issue #165, on this card: the head called
+    the whole solution a transcription"; both dated events keep their text as QUAL-11 requires.
+    Read in this pass: Hartshorne, Theorem V.4.6 and Corollary V.4.7; Dolgachev, the definition
+    preceding Proposition 8.1.9, Proposition 8.1.9, and §6.3.3 with Proposition 6.3.5. Not done:
+    no hypothesis on the characteristic of the field was added, and the two ranges step
+    part-c-open names stay open.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Issue #165, two corrections to step properness-r-at-most-seven after reading its Dolgachev
+    references again. (1) The Del Pezzo statement for seven points is the unnumbered sentence
+    after Proposition 6.3.5 in §6.3.3, not Proposition 6.3.5 itself, which states the degree-2
+    map and asserts no Del Pezzo property; the step now cites that sentence in both places. (2)
+    Dolgachev fixes $\CC$ as the base field in Chapter 1, so the criteria in Proposition 8.1.9
+    and in §6.3.3 give the Del Pezzo property over $\CC$ only, while Hartshorne's Theorem V.4.6
+    with Corollary V.4.7 is stated over an algebraically closed field of any characteristic and
+    the residuation argument on $E_0$ uses no field hypothesis. The step's claim is therefore
+    stated for $k=\CC$, its proof says so before using the two Dolgachev criteria, and the head
+    and step bad-locus-proper-closed name the second proof as one over $\CC$; the range $r\le7$
+    is unchanged, and part (c) in every characteristic remains step
+    properness-r-at-most-eight. Read in this pass: Dolgachev, Chapter 1 for the base field,
+    §6.3.3 with Proposition 6.3.5 and the sentence after it, and Proposition 8.1.9; Hartshorne,
+    Theorem V.4.6 with Corollary V.4.7 and Remark 4.7.1, where a Del Pezzo surface is a surface
+    of degree $d$ in $\PP^d$ with $\omega=\mathcal O(-1)$. Not done: no characteristic-free
+    statement for seven points was located, and none is claimed.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Issue #165, two items on this card. (1) The residuation sentence states why the intersection
+    divisor is exactly $2Q+\sum_{R\ne Q}R$: for $P\in E_0$ the singular point $Q$ is one of the
+    eight and lies on $E_0$, the divisor has degree $9$ and contains $Q$ at least twice and the
+    other seven at least once, so both multiplicities are exactly what is written; a cubic
+    singular at two of the eight, or with multiplicity three at one of them, would need degree at
+    least $10$. (2) The 2026-11-19 event whose note reads "Part (c) proved for r <= 7, so the
+    sentence above is superseded for those r" still records the closed sets as including "a
+    square system whose determinant is not identically zero". That clause is withdrawn here: no
+    determinant was computed, the step no longer uses one, and the properness of the cubic locus
+    is the residuation argument. Both dated events keep their text as QUAL-11 requires. Read in
+    this pass: the residuation paragraph and Hartshorne, Example IV.1.3.7. Not done: nothing on
+    the two ranges step part-c-open names.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Issue #165, the last record of the condition count: the 2026-11-22 event whose note reads
+    "Issue #165, the same day, closing what the event above left restricted" ends "Recomputed: ...
+    and the count 3+(N-1) at N<=7". That recomputation is withdrawn with the sentence it
+    supported: the rendered step contains no condition count and uses none, and the ranges it
+    covers rest on Hartshorne, Theorem V.4.6 with Corollary V.4.7, on the sentence after
+    Dolgachev, Proposition 6.3.5, and on Dolgachev, Proposition 8.1.9 with the fourth condition
+    supplied by the residuation argument. The dated event keeps its text as QUAL-11 requires, and
+    nothing on the card changes.
+
 ---
 
 ::: {.problem}
@@ -743,7 +896,7 @@ The two conditions the exercise's parts (d) and (e) turn on are Nagata's:
 - a virtual linear system $L$ is exceptional exactly when it is irreducible with $I(L)=-1$ and $vg(L)=0$, by Proposition 2; for an irreducible curve $C$ on $X$ its class is exceptional exactly when $C\cong\PP^1$ and $C^2=-1$, which is the definition of an irreducible curve of the first kind;
 - a numerical type $(d,m_1,\ldots,m_r)$ is *pre-exceptional* when it is similar to $(1,1,1,0,\ldots,0)$ with $r-2$ zeros, which is the type of $r$ base points with $d=1$, $m_1=m_2=1$ and $m_3=\cdots=m_r=0$, the class of a line through two of the points, so that $I=-1$ and $vg=0$; and by Theorem 3a  a virtually connected system with $I=-1$ and $vg=0$ is of pre-exceptional type.
 
-The transcription below proves (a), (b), (d) and (e). It proves (c) for $r\le8$ in every characteristic in step [](#properness-r-at-most-eight){.pf-ref}, with a second proof for $r\le7$ in step [](#properness-r-at-most-seven){.pf-ref}, and for every $r\ge9$ in step [](#properness-on-a-cubic){.pf-ref} when the points lie on a cubic and either $k$ has characteristic $0$ or that cubic is not cuspidal. Nine points always lie on a cubic, and step [](#properness-r-nine){.pf-ref} is a second proof for $r=9$. Part (c) is not proved here in two cases: $r\ge10$ points that lie on no cubic, and, in characteristic $p>0$, $r\ge9$ points that lie on exactly one cubic when that cubic is cuspidal. Step [](#effective-line-class-is-not-general){.pf-ref} turns part (c) into a statement about countably many divisor classes, and step [](#part-c-open){.pf-ref} states it for these two cases. No source listed for the card proves part (c) for any $r$.
+The steps below transcribe (a) from Yang Pi-Yeh, Solution 5.4.15(a), for the "only if" direction, and from the proof of Proposition V.4.10, Case 2, for the "if" direction; (b) from Yang, Solution 5.4.15; and (d) and (e) from Nagata, Theorems 2a and 4a, with the count from Dolgachev, Proposition 8.2.15. The proof of (c) is the card's own, and no source listed for the card proves part (c) for any $r$: it establishes part (c) for $r\le8$ in every characteristic, under the hypothesis of (c) that $k$ is uncountable, in step [](#properness-r-at-most-eight){.pf-ref}, with a second proof for $r\le7$ over $\CC$ in step [](#properness-r-at-most-seven){.pf-ref}, and for every $r\ge9$ in step [](#properness-on-a-cubic){.pf-ref} when the points lie on a cubic and either $k$ has characteristic $0$ or that cubic is not cuspidal. At $r=9$ the cubic hypothesis costs nothing, since nine points always lie on a cubic, and step [](#properness-r-nine){.pf-ref} is a second proof for that case. Part (c) is not proved here in two cases: $r\ge10$ points that lie on no cubic, and, in characteristic $p>0$, $r\ge9$ points that lie on exactly one cubic when that cubic is cuspidal. Step [](#effective-line-class-is-not-general){.pf-ref} turns part (c) into a statement about countably many divisor classes, and step [](#part-c-open){.pf-ref} states it for these two cases.
 
 For part (c), fix $P_1,\ldots,P_r$ in general position, let $X_r$ be their blow-up, and let $U\subseteq\PP^2$ be the complement of the points $P_i$ and of the lines $P_iP_j$; $U$ is open and dense, and it is also an open subset of $X_r$. For $P\in U$ let $Y_P=\Bl_PX_r$, with $\Pic Y_P$ free on $h,e_1,\ldots,e_r,e$, where $e$ is the class of the exceptional curve over $P$, so that $K_{Y_P}=-3h+\sum_ie_i+e$ (Hartshorne, Propositions V.3.2 and V.3.3). A root is a class $\alpha$ with $\alpha^2=-2$ and $K\cdot\alpha=0$, and for a root $\alpha$ we put $Z_\alpha=\{P\in U:\alpha\text{ is the class of an effective divisor on }Y_P\}$.
 
@@ -782,7 +935,7 @@ For the "if" direction, suppose that no three of the six points are collinear an
 Let $k$ be uncountable. A nonempty open subset of $\PP_k^2$ cannot be covered by countably many proper closed subsets.
 
 ::: pf-proof
-This step and the two after it are the card's own: no source listed for this card prints the statement of (c).
+This step and the steps after it that carry (c) are the card's own: no source listed for this card proves (c) for any $r$, and the two that print an argument for it are named in step [](#part-c-open){.pf-ref}.
 
 Let $U\subseteq\PP^2$ be nonempty open and let
 $$
@@ -815,13 +968,13 @@ The proof is by induction on the length of $w$, together with the statement that
 
 $U$ is irreducible, so a nonempty $W_w$ is dense in $\PP^2$, and a closed subset of $W_w$ is dense in $\PP^2$ exactly when it is $W_w$. This gives the criterion for $B(w,T)$ to lie in a proper closed subset of $\PP^2$.
 
-Whether $B(w,T)\ne W_w$ is a separate question, and one case of it is proved here. If no centre triple of $w$ contains the label of $P$, then $w$ acts on the fixed configuration by part (b), so the terminal positions of $P_1,\ldots,P_r$ have no three collinear, and the terminal position of $P$ is $T(P)$ for the composite $T$ of the quadratic transformations of $w$, a birational map of $\PP^2$. A terminal triple not containing $P$ therefore imposes a condition independent of $P$, which is empty; one containing $P$ imposes $T(P)\in L$ for the line $L$ through the other two terminal points, and $T^{-1}(L)$ is a proper closed subset because $T$ is dominant and $L$ is proper. The same conclusion holds if $P$ occurs as a centre only in the last step. Let that step be centred at $Q,X,Y$ with $Q$ the image of $P$ and $X,Y$ the images of fixed labels; by part (b) the configuration before it is $(C_0,Q)$ with $C_0$ in general position and $Q$ a birational function of $P$. In adapted coordinates $Q=(1:0:0)$, $X=(0:1:0)$, $Y=(0:0:1)$, the images of the three centres are $(1:0:0),(0:1:0),(0:0:1)$, and the image of a point $a$ is $(y_az_a:z_ax_a:x_ay_a)$. A terminal triple containing $Q$ and two points $a,b$ of $C_0$ imposes that $a,b,Q$ be collinear, a line in $Q$; one containing $Q,X$ and $a$ imposes $x_a y_a=0$, that is $a\in XY$ or $a\in QY$ --- the first false because $a,X,Y$ are three points of the general-position configuration $C_0$, the second a line in $Q$ --- and one containing $X,Y,a$ imposes $y_a z_a=0$, the same two alternatives with $QX$ in place of $QY$; one containing only points of $C_0$ imposes that $Q$ lie on the conic through those points and $X,Y$, five points of a general-position configuration, which is a conic. Each is a proper closed condition in $Q$, hence in $P$. A word that uses $P$ as a centre and then continues past that step is not treated here. The natural route for it is induction on the length of $w$, pulling a terminal collinearity back through the last quadratic transformation --- a target line meets the inverse images of the three target base points as a conic, so the condition becomes one of a triple of configuration points lying on a conic through three others, of which collinearity is the degenerate case --- and that forces a stronger induction hypothesis, on incidences with curves of every degree, which is not written out here. So this step does not prove in general that $B(w,T)$ lies in a proper closed subset: step [](#dense-general-position-extension){.pf-ref} is complete *given* it, and in the cases of step [](#part-c-open){.pf-ref} part (c) is therefore not proved on this card. The case $r\le7$ is proved in step [](#properness-r-at-most-seven){.pf-ref}, where the Del Pezzo criterion puts every one of these sets in a proper closed subset, the case $r\le8$ in step [](#properness-r-at-most-eight){.pf-ref}, the case $r=9$ in step [](#properness-r-nine){.pf-ref}, and the case of points on a cubic in step [](#properness-on-a-cubic){.pf-ref}. What is proved without it is (a), (b), and everything in (d) and (e).
+Whether $B(w,T)\ne W_w$ is a separate question, and one case of it is proved here. If no centre triple of $w$ contains the label of $P$, then $w$ acts on the fixed configuration by part (b), so the terminal positions of $P_1,\ldots,P_r$ have no three collinear, and the terminal position of $P$ is $T(P)$ for the composite $T$ of the quadratic transformations of $w$, a birational map of $\PP^2$. A terminal triple not containing $P$ therefore imposes a condition independent of $P$, which is empty; one containing $P$ imposes $T(P)\in L$ for the line $L$ through the other two terminal points, and $T^{-1}(L)$ is a proper closed subset because $T$ is dominant and $L$ is proper. The same conclusion holds if $P$ occurs as a centre only in the last step. Let that step be centred at $Q,X,Y$ with $Q$ the image of $P$ and $X,Y$ the images of fixed labels; by part (b) the configuration before it is $(C_0,Q)$ with $C_0$ in general position and $Q$ a birational function of $P$. In adapted coordinates $Q=(1:0:0)$, $X=(0:1:0)$, $Y=(0:0:1)$, the images of the three centres are $(1:0:0),(0:1:0),(0:0:1)$, and the image of a point $a$ is $(y_az_a:z_ax_a:x_ay_a)$. A terminal triple containing $Q$ and two points $a,b$ of $C_0$ imposes that $a,b,Q$ be collinear, a line in $Q$; one containing $Q,X$ and $a$ imposes $x_a y_a=0$, that is $a\in XY$ or $a\in QY$ --- the first false because $a,X,Y$ are three points of the general-position configuration $C_0$, the second a line in $Q$ --- and one containing $X,Y,a$ imposes $y_a z_a=0$, the same two alternatives with $QX$ in place of $QY$; one containing only points of $C_0$ imposes that $Q$ lie on the conic through those points and $X,Y$, five points of a general-position configuration, which is a conic. Each is a proper closed condition in $Q$, hence in $P$. A word that uses $P$ as a centre and then continues past that step is not treated here. The natural route for it is induction on the length of $w$, pulling a terminal collinearity back through the last quadratic transformation --- a target line meets the inverse images of the three target base points as a conic, so the condition becomes one of a triple of configuration points lying on a conic through three others, of which collinearity is the degenerate case --- and that forces a stronger induction hypothesis, on incidences with curves of every degree, which is not written out here. So this step does not prove in general that $B(w,T)$ lies in a proper closed subset: step [](#dense-general-position-extension){.pf-ref} is complete *given* it, and in the cases of step [](#part-c-open){.pf-ref} part (c) is therefore not proved on this card. The case $r\le7$ over $\CC$ is proved in step [](#properness-r-at-most-seven){.pf-ref}, where the Del Pezzo criterion puts every one of these sets in a proper closed subset, the case $r\le8$ in step [](#properness-r-at-most-eight){.pf-ref}, the case $r=9$ in step [](#properness-r-nine){.pf-ref}, and the case of points on a cubic in step [](#properness-on-a-cubic){.pf-ref}. What is proved without it is (a), (b), and everything in (d) and (e).
 :::
 
 :::
 
 ::: {.pf-step #properness-r-at-most-seven}
-If $r\le7$, every set of step [](#bad-locus-proper-closed){.pf-ref} is contained in a proper closed subset of $\PP^2$, and part (c) holds for those $r$.
+If $k=\CC$ and $r\le7$, every set of step [](#bad-locus-proper-closed){.pf-ref} is contained in a proper closed subset of $\PP^2$, and part (c) holds for those $r$.
 
 ::: pf-proof
 Fix a word $w$ and a terminal triple $T=\{a,b,c\}$. The classes on $\operatorname{Bl}_{r+1}\PP^2$ can be followed through the moves of $w$: a quadratic transformation centred at three of the current points replaces $h$ by $2h-c_1-c_2-c_3$ and the three exceptional classes by $h-c_j-c_k$, an integral orthogonal transformation of $\operatorname{Pic}$ which fixes $K=-3h+\sum_ic_i$. So the classes $h_w$ and $c_1,\ldots,c_{r+1}$ attached to the terminal plane depend on $w$ alone and not on $P$, and
@@ -830,7 +983,9 @@ D=h_w-c_a-c_b-c_c,\qquad D^2=1-3=-2,\qquad K\cdot D=0,\qquad D\cdot h_w=1 .
 $$
 The three terminal points are collinear exactly when $\linearsystem{D}\ne\emptyset$: a member of $\linearsystem{D}$ meets each of $c_a,c_b,c_c$ in $1$, so none of them is a component of it, and its image in the terminal plane is a line through the three; conversely the strict transform of that line lies in $\linearsystem{D}$.
 
-Now let $U$ be the complement in $\PP^2$ of the finitely many closed subsets on which the $r+1$ points fail Dolgachev's general-position conditions of the definition preceding Proposition 8.1.9: no three collinear, no six on a conic, and, at $r+1=8$ only, no cubic through the eight singular at one of them. Each is proper: the first two because the fixed tuple is in general position and the lines through its pairs and the conics through its fives are proper closed subsets, the third because eight points impose eight conditions on the ten coefficients of a cubic and the singularity two more, a square system whose determinant is not identically zero. At $r+1\le7$ the printed condition (iv) is automatic --- a cubic singular at one of the points and through the other $N-1$ meets $3+(N-1)\le9$ conditions on $10$ coefficients --- so the criterion at those $N$ is (i)--(iii). At $N=7$ that criterion is printed in the same book, §6.3.3: with condition (*), no three of the points collinear and no six on a conic, the blowup is a Del Pezzo surface of degree 2; for $N<7$ one blows down points lying on no $(-2)$-curve, the lines through three and the conics through five being what (ii) and (iii) exclude, which is the induction the proof of Proposition 8.1.9 carries out. The printed list of four conditions is stated for the maximal case and is read that way here. $U$ is then nonempty. For $P\in U$ the blowup of $\PP^2$ at the $r+1\le8$ points is a Del Pezzo surface by Proposition 8.1.9, so $-K$ is ample and every nonzero effective class has negative $K$-degree; since $K\cdot D=0$ and $D\ne0$, $\linearsystem{D}=\emptyset$.
+The two criteria of Dolgachev used below are stated over $\CC$, the base field the book fixes in Chapter 1, so this proof gives part (c) over $\CC$; the proof in every characteristic is step [](#properness-r-at-most-eight){.pf-ref}.
+
+Now let $U$ be the complement in $\PP^2$ of the finitely many closed subsets on which the $r+1$ points violate the conditions that the criterion for their number requires: some three collinear, some six on a conic, and, at $r+1=8$, a cubic through the eight singular at one of them. Each is proper. For the first two, the fixed tuple is in general position, so the lines through its pairs and the conics through its fives are proper closed subsets. For the third, at $r+1=8$, let $E_0\subseteq\PP^2$ be a nonsingular cubic through $P_1,\ldots,P_7$, which step [](#smooth-cubic){.pf-ref} supplies. The set $B$ of points $P$ for which some cubic through $P_1,\ldots,P_7,P$ is singular at one of the eight points is closed in $\PP^2$, being the projection of a closed subset of $\PP^2\times\PP^9$. Let $P\in E_0$ and let $C\ne E_0$ be a cubic through the eight points singular at one of them, say at $Q$. The point $Q$ lies on $E_0$, since it is one of the eight, and $E_0$ is irreducible of degree $3$, so a cubic $C\ne E_0$ has no component in common with it; the divisor $C\cdot E_0$ has degree $9$ and contains $Q$ with multiplicity at least $2$ and the other seven points with multiplicity at least $1$. Its degree is at least $2+7=9$, so the multiplicities are exactly $2$ and $1$ and $C\cdot E_0=2Q+\sum_{R\ne Q}R$. In particular no cubic through the eight points is singular at two of them, and $C=E_0$ is nonsingular. If $Q=P$, then $\mathcal O_{E_0}(2P)\cong\mathcal O_{E_0}(3)(-\sum_{i\le7}P_i)$ is a fixed class of degree $2$, and at most four points $P$ satisfy it, because $P\mapsto\mathcal O_{E_0}(P-P_0)$ is a bijection onto $\Pic^\circ E_0$ (Example IV.1.3.7) and multiplication by $2$ there has finite kernel (Milne, *Abelian Varieties*, Theorem I.7.2); if $Q=P_j$, then $P$ is the single point of the effective divisor of the fixed class $\mathcal O_{E_0}(3)(-2P_j-\sum_{i\ne j,\,i\le7}P_i)$, of degree one. So $B\cap E_0$ is finite and $B\ne\PP^2$. At $r+1\le6$ the criterion is Hartshorne's Theorem V.4.6 with Corollary V.4.7: for ordinary points, at most six of them, with no three collinear and no six on a conic, the linear system of cubics through them is very ample, and the blowup embeds in $\PP^{9-(r+1)}$ with $\omega\cong\mathcal O(-1)$, so it is a Del Pezzo surface. At $r+1=7$ the criterion is the one printed in Dolgachev, §6.3.3, in the unnumbered sentence after Proposition 6.3.5: with condition (*), no three of the points collinear and no six on a conic, the blowup is a Del Pezzo surface of degree 2. $U$ is then nonempty. For $P\in U$ the blowup of $\PP^2$ at the $r+1\le8$ points is a Del Pezzo surface: at $r+1=8$ by Proposition 8.1.9, at $r+1=7$ by the sentence after Proposition 6.3.5, and at $r+1\le6$ by Theorem V.4.6 with Corollary V.4.7. Hence $-K$ is ample and every nonzero effective class has negative $K$-degree; since $K\cdot D=0$ and $D\ne0$, $\linearsystem{D}=\emptyset$.
 
 Hence no point of $U$ lies in a set of step [](#bad-locus-proper-closed){.pf-ref}: were $w$ defined at $P\in U$ with the terminal triple collinear, $\linearsystem{D}$ would be nonempty there. Each of those sets is therefore contained in the complement of $U$, a proper closed subset of $\PP^2$, and step [](#dense-general-position-extension){.pf-ref} applied to their closures gives (c) for $r\le7$, with $V$ the complement of the countable union of those closures and of the finitely many points and lines. The sets themselves need not be closed, since definedness of a word is an open condition; it is their closures that the density argument uses.
 :::
@@ -913,7 +1068,7 @@ For $r=8$, $\abs{-K_{X_8}}$ is a pencil whose members meet at one point $x$, tra
 :::
 
 ::: {.pf-step #properness-r-at-most-eight}
-If $r\le8$, then $Z_\alpha\ne U$ for every root $\alpha$, and part (c) holds for those $r$ in every characteristic.
+If $r\le8$, then $Z_\alpha\ne U$ for every root $\alpha$ in every characteristic, and, when $k$ is uncountable, part (c) holds for those $r$.
 
 ::: pf-proof
 Take $E_0$ from step [](#smooth-cubic){.pf-ref}. Its strict transform on $X_r$ is irreducible of class $-K_{X_r}$ and square $9-r>0$, so step [](#no-effective-root){.pf-ref} applies to $X_r$. Let $P\in E_0\cap U$; all but finitely many points of $E_0$ qualify. On $Y_P$ the strict transform $E$ of $E_0$ is irreducible, $E\cong E_0$, of class $-K_{Y_P}$ with $E^2=8-r\ge0$. Suppose $D$ is effective of class $\alpha=dh-\sum_im_ie_i-me$ and write $D=aE+D'$ with $D'$ effective and not containing $E$; $0\le a\le d/3$ because $h$ is nef. Then $D'\cdot E=-K\cdot\alpha-aE^2=-a(8-r)$ is $\ge0$, so $D'\cdot E=0$ (and $a=0$ when $r<8$). By Proposition V.1.4, $D'\cap E=\emptyset$, so $\mathcal O_E(D')\cong\mathcal O_E$; restricting $h$, $e_i$, $e$ to $E\cong E_0$ gives $\mathcal O_{E_0}(1)$, $\mathcal O_{E_0}(P_i)$, $\mathcal O_{E_0}(P)$, hence
@@ -928,7 +1083,7 @@ By step [](#bad-locus-root-class){.pf-ref} every set of step [](#bad-locus-prope
 :::
 
 ::: {.pf-step #properness-r-nine}
-Let $r=9$, and suppose that $k$ has characteristic $0$ or that some cubic through $P_1,\ldots,P_9$ is not cuspidal. Then $Z_\alpha\ne U$ for every root $\alpha$, and part (c) holds.
+Let $r=9$, and suppose that $k$ has characteristic $0$ or that some cubic through $P_1,\ldots,P_9$ is not cuspidal. Then $Z_\alpha\ne U$ for every root $\alpha$, and, when $k$ is uncountable, part (c) holds.
 
 ::: pf-proof
 The plane cubics form a $\PP^9$, so some cubic $E_0$ passes through the nine points; in positive characteristic choose it not cuspidal. No three of the points are collinear, and no six lie on a conic: on an irreducible conic by step [](#subset-general-position){.pf-ref} and the "only if" argument of step [](#general-position-six-points){.pf-ref}, on a pair of lines because each line carries at most two. A cubic with a line as a component therefore carries at most $2+5$ of the points, so $E_0$ is irreducible and reduced. $E_0$ is nonsingular at each $P_i$: otherwise its strict transform on the blow-up of eight of the points, $P_i$ among them, is an irreducible curve of class $3h-2e_i-\sum_{j\ne i}e_j$, of square $-2$ and $K$-degree $0$, and the eight points are in general position by step [](#subset-general-position){.pf-ref}, against step [](#no-minus-two-curve){.pf-ref}. So the strict transform $E\subseteq X_9$ of $E_0$ has class $-K_{X_9}$ and $E\cong E_0$.
@@ -1004,7 +1159,7 @@ Let $D$ be an effective divisor of class $\gamma$. The proof of step [](#propern
 :::
 
 ::: {.pf-step #effective-root-for-every-point}
-For every $r\ge15$ there are points $P_1,\ldots,P_r$ in general position and a root $\alpha$ with $Z_\alpha=U$. For such $r$ the statement "$Z_\alpha\ne U$ for every root $\alpha$", which step [](#properness-r-at-most-eight){.pf-ref} proves for $r\le8$ and step [](#properness-r-nine){.pf-ref} for $r=9$ under its hypothesis, is false. The root $\alpha$ is none of the classes $\alpha_{w,T}$ of step [](#effective-line-class-is-not-general){.pf-ref}, and part (c) holds for these points.
+For every $r\ge15$ there are points $P_1,\ldots,P_r$ in general position and a root $\alpha$ with $Z_\alpha=U$. For such $r$ the statement "$Z_\alpha\ne U$ for every root $\alpha$", which step [](#properness-r-at-most-eight){.pf-ref} proves for $r\le8$ and step [](#properness-r-nine){.pf-ref} for $r=9$ under its hypothesis, is false. The root $\alpha$ is none of the classes $\alpha_{w,T}$ of step [](#effective-line-class-is-not-general){.pf-ref}, and, when $k$ is uncountable, part (c) holds for these points.
 
 ::: pf-proof
 Let $E_0$ be a nonsingular plane cubic. Call points $P_1,\ldots,P_r$ of $E_0$ *independent* when $\mathcal O_{E_0}(d)\otimes\mathcal O_{E_0}(-\sum_im_iP_i)$ is not trivial for any nonzero $(d;m_1,\ldots,m_r)\in\ZZ^{r+1}$ with $3d=\sum_im_i$. Since $k$ is uncountable, independent points exist for every $r$: choose them one at a time. If $P_1,\ldots,P_{j-1}$ are independent, a relation with $m_j\ne0$ fixes the class of $\mathcal O(m_jP_j)$, which leaves finitely many $P_j$ (Example IV.1.3.7 and Milne, *Abelian Varieties* v2.00, Theorem I.7.2); there are countably many relations, and one with $m_j=0$ is a relation among the earlier points.

@@ -4,33 +4,15 @@ order: 10
 topics:
 - Complex Numbers
 - Complex Logarithm
-- Trigonometry
-- Hyperbolic Functions
 ---
 
 # Complex arithmetic and the logarithm
 
 ## Roots
 
-::: {.fact title="Complex roots of a number"}
-The $n$th roots of $z \coloneqq r e^{i\theta}\neq 0$ are
-$$
-z = re^{i\theta} = re^{i\qty{\theta + 2k\pi}} \implies z^{1/n} =
-\qty{ re^{i\qty{\theta + 2k\pi}} }^{1\over n} = r^{1\over n} e^{i\qty{\theta + 2k\pi \over n}},
-\qquad
-\theset{ \omega_k \coloneqq r^{1/n} e^{i \qty{ \theta + 2k\pi \over n} } \st 0 \leq k \leq n-1 }.
-$$
-The roots have modulus $r^{1/n}$ and are spaced by angles of $2\pi/n$.
-Writing the argument as $\theta + 2k\pi$ before taking the root produces all $n$ of them.
+[[T-NRT7K]]
 
-These are the $n$th roots of [@Ahl73, ch. 1, §2.2, The Binomial Equation], which solves $z^n=a$ by writing $a=r(\cos\varphi+i\sin\varphi)$ and obtains the $n$ roots $r^{1/n}\qty{\cos\qty{\frac{\varphi+2k\pi}{n}}+i\sin\qty{\frac{\varphi+2k\pi}{n}}}$, $0\le k\le n-1$; de Moivre's formula (20) of that section is the computation the display above performs.
-:::
-
-::: {.fact}
-Since $\CC$ is algebraically closed, every polynomial in $\CC[x]$ factors into linear factors.
-
-This is [[T-6XDRA|the fundamental theorem of algebra]], in the form [@Ahl73, ch. 2, §1.3, Polynomials] gives it: after one root $\alpha_1$ the division gives $P(z)=(z-\alpha_1)P_1(z)$ with $\deg P_1=n-1$, and repetition of the process leads to the complete factorisation $P(z)=a_n(z-\alpha_1)(z-\alpha_2)\cdots(z-\alpha_n)$.
-:::
+[[T-6XDRA]]
 
 ## The logarithm
 
@@ -38,52 +20,35 @@ This is [[T-6XDRA|the fundamental theorem of algebra]], in the form [@Ahl73, ch.
 
 [[D-T6INB]]
 
-::: {.fact}
-For $f$ holomorphic with values in $\CC\sm(-\infty, 0]$, $f^{1/n} \coloneqq e^{{1\over n}\Log f}$ with the principal branch $\Log$ is a holomorphic $n$th root of $f$.
-
-Here $z^{1/n}$ is the branch of [[D-T6INB]] determined by $\Log$, which is the branch of [[D-4CSPM]] on the slit plane; the composite $e^{\frac1n\Log f}$ is holomorphic because $\Log$ is holomorphic on the slit plane and $f$ takes its values there, and it is an $n$th root because $e^{\Log f}=f$.
-:::
-
 [[PR-MWUJS]]
 
-For a nonvanishing holomorphic function $f$ on a domain $\Omega$, a holomorphic logarithm $g$ of $f$ satisfies $g'=f'/f$, so $\int_\gamma f'/f = 0$ for every closed curve $\gamma$ in $\Omega$.
-Conversely, if $\int_\gamma f'/f=0$ for every closed curve $\gamma$ in $\Omega$, then $f'/f$ has a primitive $g$, and adjusting $g$ by a constant gives $e^g = f$.
-On a simply connected domain these integrals vanish by Cauchy's theorem, which gives the existence theorem for logarithms and roots of nonvanishing functions:
+Recall [[P-Y5SS5]]: on a simply connected domain a [[D-E7A5W|holomorphic]] function without zeros is $e^g$, and $e^{g/n}$ is then a holomorphic $n$th root.
 
 [[T-NRSFZ]]
 
 ## Branch cuts and branch points
 
 ::: {.warnings}
-The formula
-$$
-z^{1\over n} \coloneqq (re^{i\theta})^{1\over n} = r^{1\over n} e^{i\theta \over n}
-$$
-depends on the choice of $\theta$, and a choice continuous in $z$ exists only after removing a branch cut.
-
+Recall [[D-T6INB|the branch of $z^{1/n}$]] determined by a continuous branch $L$ of the logarithm: writing $z=re^{i\theta}$ with $\theta=\Im L(z)$, the branch takes the value $r^{1/n}e^{i\theta/n}$.
+A different continuous argument shifts $\theta$ by $2\pi k$ and the value by $e^{2\pi ik/n}$, so on $\CC\sm\theset{0}$ no continuous choice exists, while on a simply connected domain avoiding $0$ one exists by [[PR-MWUJS]].
 :::
 
-::: {.remark title="Where continuity fails"}
-Take $z \coloneqq x + i0$ with $x <0$, and approach it from either side along $z_\pm \coloneqq x \pm i\varepsilon$ as $\varepsilon\to 0^+$.
+::: {.example title="Where continuity fails"}
+Take $\zeta \coloneqq x + i0$ with $x <0$, and approach it from either side along $\zeta_\pm \coloneqq x \pm i\varepsilon$ as $\varepsilon\to 0^+$.
 For the principal branch:
 
-- $\log(z_+) \to \ln\abs x + i\pi$,
-- $\log(z_-) \to \ln\abs x - i\pi$.
+- $\Log(\zeta_+) \to \log\abs x + i\pi$,
+- $\Log(\zeta_-) \to \log\abs x - i\pi$.
 
-So no value at $z$ makes $\log$ continuous across the negative real axis.
-Removing the cut fixes the discontinuity, and the point $z=0$ remains: it is a [[D-9KMTV|branch point]], since $\log$ has no continuous branch on any punctured neighborhood of the origin, whatever cut is chosen.
-
+So no value at $\zeta$ makes $\Log$ continuous across the negative real axis.
+Removing the cut fixes the discontinuity, and the point $0$ remains: it is a [[D-9KMTV|branch point]], since $\Log$ has no continuous branch on any punctured neighborhood of the origin, whatever cut is chosen.
 :::
 
 [[P-Y5SS5]]
 
 ## The quadratic formula over $\CC$
 
-::: {.fact}
-For $a\neq 0$, the roots of $az^2+bz+c$ are $\frac{-b\pm w}{2a}$, where $w$ is either square root of $\Delta\coloneqq b^2-4ac\in\CC$; the two roots coincide exactly when $\Delta = 0$, and over $\CC$ the discriminant always has a square root.
-
-The existence of the square root is [@Ahl73, ch. 1, §1.2, Square Roots], which solves $(x+iy)^2=\alpha+i\beta$ for every complex $\alpha+i\beta$ by reducing it to a system of two equations; the formula itself is completing the square, $az^2+bz+c=a\qty{z+\frac{b}{2a}}^2-\frac{\Delta}{4a}$, and the coincidence of the roots is $\Delta=0$ in that display.
-:::
+[[T-QDRTC]]
 
 ## Exercises
 

@@ -9,7 +9,7 @@ title: "Complex analysis workshop week 2: Cauchy's integral formula and residues
 
 - [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors]]
 
-- Integrals over circles and other simple contours
+- [[complex-analysis/cauchy-theory/contours-and-primitives|Integrals over circles and other simple contours]]
 
 - [[complex-analysis/cauchy-theory/the-integral-formula|Cauchy's integral formula]]
 
@@ -29,7 +29,7 @@ $$
 
 ### Integrals and residues
 
-The function $f(z)=1/z$ has no primitive on $\CC\sm\theset{0}$: for the unit circle $C$ parametrized by $z(t)=e^{it}$, $0\le t\le2\pi$,
+The function $f(z)=1/z$ has no [[D-6RZQN|primitive]] on $\CC\sm\theset{0}$: for the unit circle $C$ parametrized by $z(t)=e^{it}$, $0\le t\le2\pi$,
 $$
 \int_C f(z)\dz=\int_0^{2\pi}\frac{ie^{it}}{e^{it}}\,dt=2\pi i\neq0.
 $$
@@ -39,7 +39,7 @@ $$
 
 ### Residues
 
-The contours used with the residue theorem include the keyhole, the multiple keyhole, the rectangular keyhole, the semicircle, the indented semicircle, the sector and the parallelogram [@SS03, ch. 2, Figure 7].
+The contours used with the residue theorem include the multiple keyhole, the rectangular keyhole, the semicircle, the indented semicircle, the sector and the parallelogram [@SS03, ch. 2, Figure 7].
 
 [[T-HRPNO]]
 
@@ -53,6 +53,8 @@ with $G$ holomorphic near $z_0$ [@SS03, Theorem 1.3 of Chapter 3], the sum of th
 
 [[C-Q6BSL]]
 
+[[D-Q8XRV]]
+
 [[T-WFXQP]]
 
 ### Bounds
@@ -63,21 +65,7 @@ with $G$ holomorphic near $z_0$ [@SS03, Theorem 1.3 of Chapter 3], the sum of th
 
 ### Blaschke factors
 
-The following is [@SS03, ch. 1, Exercise 7].
-
-(a) Let $z,w\in\CC$ with $\bar zw\neq1$. Then
-$$
-\abs{\frac{w-z}{1-\bar wz}}<1\quad\text{if }\abs{z}<1\text{ and }\abs{w}<1,
-\qquad
-\abs{\frac{w-z}{1-\bar wz}}=1\quad\text{if }\abs{z}=1\text{ or }\abs{w}=1.
-$$
-Replacing $z,w$ by $e^{-i\theta}z,e^{-i\theta}w$ reduces both claims to real $z=r$, where
-$$
-(1-rw)(1-r\bar w)-(r-w)(r-\bar w)=(1-r^2)(1-\abs{w}^2).
-$$
-
-(b) Fix $w$ in the unit disc $\DD$ and let $F(z)\coloneqq\dfrac{w-z}{1-\bar wz}$.
-Then $F$ is holomorphic and maps $\DD$ to itself; $F$ interchanges $0$ and $w$, that is, $F(0)=w$ and $F(w)=0$; $\abs{F(z)}=1$ when $\abs z=1$; and $F$ is a bijection $\DD\to\DD$, since $F\circ F=\id$.
+[[E-SS1.EX-7]]
 
 ### Cauchy's integral formula
 

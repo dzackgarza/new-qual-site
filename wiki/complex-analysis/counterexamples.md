@@ -7,9 +7,11 @@ topics:
 
 # Counterexamples
 
-Each section group is a theorem the examples below refute, by dropping one of its hypotheses.
+Each section names a theorem or a topic; the blocks under it show a theorem failing when one of its hypotheses is dropped, or gather the examples that separate the cases.
 
 ## Liouville's theorem
+
+[[T-QHIHJ]]
 
 ::: {.example title="Holomorphy on a proper subset"}
 The function $f(z) = z$ is holomorphic and bounded on $\DD$ and not constant.
@@ -21,10 +23,12 @@ The function $f(z) = \sin z$ is entire and bounded on $\RR$, and $\abs{\sin(iy)}
 :::
 
 ::: {.remark}
-An entire function with $\abs{f(z)}\leq C\abs z^n$ for large $\abs z$ is a polynomial of degree at most $n$ ([[T-22RQZ|Cauchy's inequalities]]), and $f(z) = z^n$ satisfies this bound without being constant.
+The [[T-PG7ZK|polynomial-growth criterion]] does not force constancy: $f(z)=z^n$ satisfies its bound with $k=n$ and is not constant.
 :::
 
 ## The identity principle
+
+[[T-SVF2W]]
 
 ::: {.example title="A limit point outside the domain"}
 The function $f(z) = \sin(\pi/z)$ is holomorphic on $\CC\smz$ and vanishes at the points $1/k$, which accumulate at $0\notin\CC\smz$, while $f\not\equiv 0$.
@@ -35,6 +39,10 @@ Two distinct polynomials of degree at most $n$ can agree at $n$ points, and a fi
 :::
 
 ## The maximum and minimum modulus principles
+
+[[T-BYNL5]]
+
+[[T-YLI6Y]]
 
 ::: {.example title="Zeros in the minimum modulus principle"}
 The function $f(z) = z$ is nonconstant on $\DD$, and $\abs f$ attains its minimum at the interior point $0$, a zero of $f$.
@@ -69,11 +77,6 @@ The function $1/\sin(\pi/z)$ has a non-isolated singularity at $0$.
 :::
 
 ## Convergence
-
-::: {.example title="Pointwise convergence without local uniformity"}
-On $\DD$ the monomials $z^k$ converge pointwise to $0$ and not uniformly, so pointwise convergence does not supply the hypothesis of [[C-TODSQ|the locally uniform limit theorem]].
-The limit here is holomorphic, and that is the point: what fails is the uniformity through which the theorem controls the limit function and its derivatives.
-:::
 
 ::: {.remark}
 [[T-4ALS2|Montel's theorem]] turns a family bounded on compact subsets into a locally uniformly convergent subsequence, so a sequence without such a bound is where a pointwise limit can differ from a locally uniform one.

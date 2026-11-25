@@ -31,6 +31,10 @@ d_X(x_1, x_2) < \delta \implies d_Y(f(x_1), f(x_2)) < \varepsilon.
 $$
 :::
 
+::: {.remark}
+Uniform continuity is [@Rud76, ch. 4, Definition 4.18]; continuity at a point is [@Rud76, ch. 4, Definition 4.5], stated there for metric spaces in the sequential form.
+:::
+
 ::: {.remark title="Variations"}
 For $X\subseteq\RR$ and $Y=\RR$, substituting $y = x_0 + h$ the two conditions read
 $$

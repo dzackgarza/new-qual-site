@@ -4,7 +4,6 @@ order: 10
 topics:
 - Cauchy's Theorem
 - Cauchy Integral Theorem
-- Green's Theorem
 
 ---
 
@@ -21,14 +20,13 @@ topics:
 [[T-2OVCI]]
 
 ::: {.slogan}
-Closed path integrals of holomorphic functions vanish.
+Closed path integrals of holomorphic functions on a [[D-GFM35|simply connected]] region vanish.
 
 :::
 
 [[T-B3BDO]]
 
-Goursat's theorem is the triangle form: it proves $\int_{\bd T} f = 0$ by repeated bisection, with no continuity assumption on $f'$.
-Continuity of $f'$ is then a consequence of [[T-LA2UI|the Cauchy integral formula]].
+Goursat's theorem is the triangle form of [[T-2OVCI|Cauchy's theorem]]: it assumes no continuity of $f'$, and continuity of $f'$ is a consequence of [[T-LA2UI|the Cauchy integral formula]].
 
 ::: {.example title="Holomorphy is what the vanishing uses"}
 On the circle $\abs z = 1$,

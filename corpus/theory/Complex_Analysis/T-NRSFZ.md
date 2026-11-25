@@ -15,14 +15,13 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $\Omega\subseteq\CC$ be a connected open set and let $f$ be [[D-E7A5W|holomorphic]] and nonvanishing on $\Omega$.
-Suppose that $\int_\gamma\frac{f'(z)}{f(z)}\dz=0$ for every piecewise smooth closed curve $\gamma$ in $\Omega$.
+Let $\Omega\subseteq\CC$ be a simply connected region and let $f$ be [[D-E7A5W|holomorphic]] and nonvanishing on $\Omega$.
 Fix $z_0\in\Omega$ and $c\in\CC$ with $e^c=f(z_0)$, and define
 $$
 g(z)\coloneqq c+\int_{z_0}^z\frac{f'(\xi)}{f(\xi)}\dxi,
 $$
-the integral taken along any piecewise smooth path in $\Omega$ from $z_0$ to $z$.
+the integral taken along any piecewise smooth path in $\Omega$ from $z_0$ to $z$, which is independent of the path because $\Omega$ is simply connected.
 Then $g$ is well defined and holomorphic on $\Omega$, $g'=f'/f$, and $e^{g}=f$ on $\Omega$.
 
-This is the construction behind [@SS03, Theorem 6.2 of Chapter 3], which asserts the existence of $g$ under the hypothesis that $\Omega$ is simply connected.
+This is [@SS03, ch. 3, §6, Theorem 6.2], which asserts on a simply connected region the existence of a holomorphic $g$ with $e^g=f$; the displayed integral is the construction its proof gives.
 :::

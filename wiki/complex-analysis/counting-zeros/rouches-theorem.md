@@ -18,8 +18,6 @@ Adding to $M$ a function $m$ with $\abs{m} < \abs{M}$ on the boundary curve does
 
 ## Forms of the hypothesis
 
-[[T-CJCKL]]
-
 ::: {.example title="Zeros of a monic polynomial in a disc"}
 Let $p(z) = z^d + a_1z^{d-1} + \cdots + a_d$ with $\abs{a_i} < R^i/d$ for each $i$.
 Then $p$ has $d$ zeros in $\abs z < R$.
@@ -45,12 +43,6 @@ Set $M(z) = \alpha z$ and $m(z) = -e^{-z}$.
 On $\abs z = 1$, $\abs{m} = e^{-\Re(z)} \leq e < \abs\alpha = \abs{M}$.
 Since $M$ has exactly one zero in $\DD$, so does $M + m$.
 :::
-
-[[C-FRF33]]
-
-[[T-BYNL5]]
-
-[[T-YLI6Y]]
 
 ## Exercises
 

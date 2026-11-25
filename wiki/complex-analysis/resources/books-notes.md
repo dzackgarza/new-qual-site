@@ -1,6 +1,6 @@
 ---
 title: Books and notes
-order: 0
+order: 1
 ---
 
 # Books and notes
@@ -29,35 +29,33 @@ order: 0
 
 ## UGA course notes
 
-- [[attachments/8.3 Riemann Mapping Theorem (1).pdf|Jingzhi Tie, UGA Math 8150 notes on the Riemann mapping theorem (Spring 2020)]]
+- [Jingzhi Tie, UGA Math 8150 notes on the Riemann mapping theorem (Spring 2020)](/assets/attachments/8.3%20Riemann%20Mapping%20Theorem%20(1).pdf)
 
-- [[attachments/8.2.3 Normal family.pdf|Jingzhi Tie, UGA Math 8150 notes on normal families and Montel's theorem (Spring 2020)]]
+- [Jingzhi Tie, UGA Math 8150 notes on normal families and Montel's theorem (Spring 2020)](/assets/attachments/8.2.3%20Normal%20family.pdf)
 
-- [[attachments/8.1.2 Further Examples (1).pdf|Jingzhi Tie, UGA Math 8150 conformal-mapping examples (Spring 2020)]]
+- [Jingzhi Tie, UGA Math 8150 conformal-mapping examples (Spring 2020)](/assets/attachments/8.1.2%20Further%20Examples%20(1).pdf)
 
 ## Summaries
 
-- [[attachments/Eur_ComplexAnalysis_Notes (1).pdf|Chris Eur, complex-analysis notes following Stein--Shakarchi]]
+- [Chris Eur, complex-analysis notes following Stein--Shakarchi](/assets/attachments/Eur_ComplexAnalysis_Notes%20(1).pdf)
 
-- [[attachments/complex.pdf|Douglas N. Arnold, complex-analysis lecture notes (Penn State, Spring 1997)]]
+- [Douglas N. Arnold, complex-analysis lecture notes (Penn State, Spring 1997)](/assets/attachments/complex.pdf)
 
-- [[attachments/ist_ca_2015.pdf|Sameer Chavan, problems in complex analysis]]
+- [Sameer Chavan, problems in complex analysis](/assets/attachments/ist_ca_2015.pdf)
 
 - [Robert Won, UCSD complex-analysis qual review](http://www.math.ucsd.edu/~rwon/files/qualprep/complex.pdf)
 
-- [[attachments/Won_-_Complex_Analysis_Qual_Sheet.pdf|Robert Won, Complex Analysis Qual Sheet]]
+- [Robert Won, Complex Analysis Qual Sheet](/assets/attachments/Won_-_Complex_Analysis_Qual_Sheet.pdf)
 
-- [[attachments/Complex_Qual_Notes.pdf|Josh Swanson, *2013 Complex Prelim Notes* (September 6, 2013)]] — qualifying-exam review notes covering basic mapping theorems, Cauchy and Poisson formulas, analytic extension, root counting, approximation, normal families, harmonic and subharmonic functions, inequalities, series and products, analytic continuation, residues, and conformal maps.
+- [Josh Swanson, *2013 Complex Prelim Notes* (September 6, 2013)](/assets/attachments/Complex_Qual_Notes.pdf) — qualifying-exam review notes covering basic mapping theorems, Cauchy and Poisson formulas, analytic extension, root counting, approximation, normal families, harmonic and subharmonic functions, inequalities, series and products, analytic continuation, residues, and conformal maps.
   The notes name Marshall's notes as their principal source, with Ahlfors, Gamelin, and Rudin also consulted.
 
 - [Cambridge Part IB complex analysis, condensed notes](https://dec41.user.srcf.net/notes/IB_L/complex_analysis_trim.pdf)
 
 ## Course notes
 
-- [Curtis McMullen, Harvard Math 213a course notes](http://people.math.harvard.edu/~ctm/papers/home/text/class/harvard/213a/course/course.pdf)
-
 - [Ko Honda, complex-analysis course notes](https://www.math.ucla.edu/~honda/math520/notes.pdf)
 
 - [Cambridge Part IB complex analysis lecture notes](https://dec41.user.srcf.net/notes/IB_L/complex_analysis.pdf)
 
-- [[attachments/McMullen_-_Advanced_Complex_Analysis.pdf|McMullen, Advanced Complex Analysis]]
+- [McMullen, Advanced Complex Analysis](/assets/attachments/McMullen_-_Advanced_Complex_Analysis.pdf)

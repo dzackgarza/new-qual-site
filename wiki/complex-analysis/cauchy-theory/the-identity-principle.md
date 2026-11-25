@@ -13,12 +13,12 @@ topics:
 [[T-SVF2W]]
 
 ::: {.slogan}
-Two holomorphic functions on a connected open set that agree on a set with a limit point in the set are equal.
+Two holomorphic functions on a connected open set that agree on a set with a limit point in that open set are equal.
 
 :::
 
 ::: {.example title="A limit point outside the domain, and a disconnected domain"}
-The function $\sin(1/z)$ on $\CC\sm\theset{0}$ vanishes at the distinct points $1/(k\pi) \to 0$ and is not identically zero; the limit point $0$ is not in the domain.
+The function $\sin(1/z)$ on $\CC\smz$ vanishes at the distinct points $1/(k\pi) \to 0$ and is not identically zero; the limit point $0$ is not in the domain.
 On the disconnected open set $\DD\cup\DD_1(3)$, the function equal to $0$ on $\DD$ and to $1$ on $\DD_1(3)$ is holomorphic, vanishes on $\DD$, and is not identically zero.
 
 :::

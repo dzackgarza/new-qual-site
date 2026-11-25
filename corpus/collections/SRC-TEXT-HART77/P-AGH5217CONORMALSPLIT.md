@@ -373,6 +373,74 @@ audit:
     stand, and the application at n = 3 is the paper's degree 3, which is the
     card's n = 2 for the twisted cubic. Not checked: the printed journal, only
     the retained PDF.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    One arithmetic sentence repaired, with no change to the computation or the
+    answer. Step s1's closing paragraph compared its degree with "the value
+    deg c_1(N) = 4n-2 that Eisenbud and Van de Ven record for a smooth rational
+    curve of degree n", which mixes two meanings of n: the paper's n is the
+    degree of the curve, while in this card the curve C_n has degree n+1. With
+    deg E_n = -(2n+2) - 2n = -4n-2, the normal bundle has degree 4n+2, which is
+    4(n+1)-2, the paper's value at the card's degree. The sentence now says
+    that. Read for it: the extension 0 -> O(-2n-2) -> E_n -> O(-2n) -> 0 of
+    step s1 and the value 4d-2 from deg c_1(PP^3) = 4 and deg c_1(PP^1) = 2.
+    Not read in this pass: Eisenbud and Van de Ven's Proposition 6 in the
+    original, only as this card records it.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Two open items recorded and closed. (i) As the card stood at 3c27927314,
+    line 520 drew the conormal sequence of C_n in Q in P^3 with no argument
+    for its exactness on the left, though step s2 subtracts the two degrees in
+    it. Step s2 now derives it: the two inclusions are regular immersions of
+    codimension 1 between nonsingular varieties, so Theorem II.8.17 gives
+    0 -> I_Q/I_Q^2 -> Omega_{P^3} tensor O_Q -> Omega_Q -> 0 and the same for
+    C_n exact with locally free left terms, and tensoring the first by O_{C_n}
+    and applying the theorem again to C_n in Q identifies I_Q/I_Q^2 restricted
+    to C_n with the kernel of I_{C_n}/I_{C_n}^2 -> I_{C_n/Q}/I_{C_n/Q}^2. (ii)
+    At line 683 the proof read the extension class (n-1)eta off the transition
+    matrix with no statement of why a matrix entry is the class. Step s3 now
+    gives the two inputs: Chapter III §6 Exercise 1, that extensions are
+    classified by Ext^1 and that on a two-chart cover the class is the Čech
+    class of the transition matrix with the diagonal entries removed; and
+    Theorem III.5.1(c) with its proof, that H^1(P^1, O(-2)) is one-dimensional
+    with basis the negative monomial x_0^{-1}x_1^{-1}, which is s^{-1} in the
+    frame of the diagonal factor s^{-2}; so the class is (n-1)eta with eta
+    nonzero and vanishes exactly when n-1 = 0 in k. Read for this: Theorem
+    II.8.17 and Proposition II.8.12, Chapter III §6 Exercise 1, and Theorem
+    III.5.1 with its proof, in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md. No step's computation
+    changed, and no claim was weakened; the answers O(-7)^2 away from
+    characteristic 2 and O(-6) + O(-8) in characteristic 2 stand. Not read:
+    any printing of the book, only the text version in tmp/sources.
+- event: source-checked
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Published-solution pass for issue #160, on the transcription rule. Part (b)
+    in characteristics 2 and 3 is proved by no retained solution set, and the
+    "Published solution" remark now says so and names the sets searched. Read
+    in this pass, at their own numbering: the printed Exercise V.2.17, both
+    parts, with the printed answer "if char k != 2, then l = m = -7; if
+    char k = 2, then l, m = -6, -8"; Yang Pi-Yeh, Solution 5.2.17, whose
+    Jacobian presentation gives kernel R(-7) + R(-7) when 6 != 0 and
+    R(-8) + R(-6) when char k = 2, 3, so it settles every characteristic but 2
+    and 3; Egbert's entry for Exercise V.2.17, which reads only "starred"; the
+    exercise list of the National Taiwan University Chapter V §2 homework,
+    whose entries are exercises 1, 2, 3, 4 and 6, so that it has none for
+    Exercise 17; and, for absence, Borcherds (through IV.1), Cais (through
+    Chapter 4), Cutrone--Marshburn (Chapters 1 and 2), Ionita--Kumar
+    (Chapter I), Kim (§2.4), Lomont, Okamoto (§II.9), Park (Chapter 4 and §V.5), Saglam--Chris
+    (Chapter III), Sam (through IV.6), Stein (III.7), Troiani (Chapter II) and
+    Reiser (IV.2.5). The remark now states that the argument in characteristics
+    2 and 3 is step s3, the card's own. No statement and no proof step changed
+    in this pass. Not read in this pass: Shifrin's and Elencwajg's answers
+    beyond the sentences the card quotes, Eisenbud and Van de Ven's
+    Proposition 6 other than as the remark records it, and any printing of
+    Hartshorne, only the text version in tmp/sources.
 
 ---
 
@@ -474,7 +542,7 @@ $$
 
 ::: pf-proof
 
-This step and the next two are this card's own general computation for every $n$, and no source carries them; the degree they give agrees with the value $\deg c_1(N)=4n-2$ that Eisenbud and Van de Ven record for a smooth rational curve of degree $n$ in $\PP^3$, from $\deg c_1(\PP^3)=4$ and $\deg c_1(\PP^1)=2$. Here $\deg E_n=-4n-2$, the sum of the two degrees in the displayed sequence.
+This step and the next two are this card's own general computation for every $n$, and no source carries them; the degree they give agrees with the value $\deg c_1(N)=4d-2$ that Eisenbud and Van de Ven record for a smooth rational curve of degree $d$ in $\PP^3$, from $\deg c_1(\PP^3)=4$ and $\deg c_1(\PP^1)=2$, at $d=n+1$: here $\deg E_n=-4n-2$, the sum of the two degrees in the displayed sequence, so $\deg N=4n+2=4(n+1)-2$.
 
 For the regular immersions
 $$
@@ -491,6 +559,20 @@ $$
 \mathcal I_{C_n/Q}/\mathcal I_{C_n/Q}^2
 \longrightarrow0.
 $$
+
+The sequence is exact on the left as well, and its left term is locally free of rank $1$: $C_n$ and
+$Q$ are nonsingular and the two inclusions are regular immersions of codimension $1$, so Theorem
+II.8.17 gives
+$$
+0\to\mathcal I_Q/\mathcal I_Q^2\to\Omega_{\PP^3/k}\tensor\OO_Q\to\Omega_{Q/k}\to0,
+\qquad
+0\to\mathcal I_{C_n}/\mathcal I_{C_n}^2\to\Omega_{\PP^3/k}\tensor\OO_{C_n}\to\Omega_{C_n/k}\to0
+$$
+exact with locally free left terms; tensoring the first by $\OO_{C_n}$, and applying the theorem again
+to $C_n\subset Q$, whose conormal sheaf is $\mathcal I_{C_n/Q}/\mathcal I_{C_n/Q}^2$, identifies
+$\restrictionof{\mathcal I_Q/\mathcal I_Q^2}{C_n}$ with the kernel of
+$\mathcal I_{C_n}/\mathcal I_{C_n}^2\to\mathcal I_{C_n/Q}/\mathcal I_{C_n/Q}^2$, which is the
+displayed sequence.
 
 The quadric is a hypersurface of degree $2$, so
 $$
@@ -644,6 +726,18 @@ $$
 H^1(\PP^1,\OO(-2)).
 $$
 Hence the extension class is $(n-1)\eta$.
+
+The passage from the transition matrix to the class is what makes the computation above a
+computation of the class rather than of a matrix, and it has two parts. First, for an extension of one
+invertible sheaf by another over a two-element affine cover, the extension class in
+$\Ext^1(\OO(-2n),\OO(-2n-2))$ is the Čech class of the transition matrix written in frames of the two
+end terms, with the diagonal entries — the transition functions of those two sheaves — removed: this
+is Chapter III §6 Exercise 1, extensions of $\OO(-2n)$ by $\OO(-2n-2)$ being classified by that
+group, read in Čech cohomology for the cover. Second, that group is $H^1(\PP^1,\OO(-2))$, and in the
+frames of the diagonal factors $s^{-2n-2}$ and $s^{-2n}$ the entry $(n-1)s^{-1}$ is $(n-1)$ times the
+negative monomial $x_0^{-1}x_1^{-1}$, which generates $H^1(\PP^1,\OO(-2))\cong k$ by Theorem
+III.5.1(c) and its proof. So the class is $(n-1)\eta$ with $\eta\ne0$, and it vanishes exactly when
+$n-1=0$ in $k$.
 
 :::
 
@@ -886,4 +980,11 @@ The card's computation is checked against the book's own bracket: $E_n=\varphi_n
 
 Math StackExchange answer 1583486 by Ted Shifrin, to question 1583326 ("Normal bundle of twisted cubic"), gives an argument for part (a) by another route, in a form whose constants need $3$ invertible: from the conormal sequence $0\to N^\vee_{C/\PP^3}\to\restrictionof{\Omega_{\PP^3}}{C}\to\Omega_C\to0$ it writes the two frames of $N^\vee_{C/\PP^3}$ on the overlap of the charts $[1,x,y,z]$ and $[X,Y,Z,1]$ and reads the splitting off the transition matrix, ending at the diagonal $(-3t^{-5},-\frac13t^{-5})$. Step [](#s5){.pf-ref} carries his frames, the change of coordinates $X=1/z$, $Y=x/z$, $Z=y/z$ and the transition matrix, and adds one row operation over $k[t]$ and one column operation over $k[t^{-1}]$ that reduce it to exactly $t^{-5}$ times the identity, an identity over $\ZZ[t,t^{-1}]$ and so one that holds over every field. Georges Elencwajg's answer 569653 to question 569237 records the equivalent statement for the normal bundle, $N=\OO(5)\oplus\OO(5)$, as Proposition 6 of Eisenbud and Van de Ven, *On the normal bundles of smooth rational space curves*. Neither covers part (b).
 
+The remaining retained sets carry no Chapter V §2 exercise: Borcherds, Cais, Cutrone--Marshburn,
+Ionita--Kumar, Kim, Lomont, Okamoto, Park, Saglam--Chris, Sam, Stein, Troiani and Reiser. No retained solution
+set therefore proves part (b) in characteristics $2$ or $3$: Egbert's entry carries no argument and
+Yang Pi-Yeh's treatment is sound only away from those two, as the paragraph above records. The
+argument for those characteristics is step [](#s3){.pf-ref}, the card's own, together with the
+consequence step [](#s4){.pf-ref} draws from it, and the answer it gives agrees with the printed one
+at $\operatorname{char}k=2$ and with Eisenbud and Van de Ven's Proposition 6 at characteristic $0$.
 :::

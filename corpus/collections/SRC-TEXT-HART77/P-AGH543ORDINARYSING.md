@@ -524,6 +524,53 @@ audit:
     edited, and the pages they name remain the record of what was read. Not checked:
     the rendered page, and no printing of Fulton other than the text version
     retained in tmp/sources.
+- event: source-checked
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Published-solution pass for issue #160, on the transcription rule. The
+    exercise's characteristic-p case is proved by Fulton's Appendix A together
+    with the neutrality of its preliminary transformation, and by no retained
+    Hartshorne solution set; the "Other published treatments" remark now says
+    so and names the sets searched. Read in this pass, at their own numbering:
+    the printed exercise in tmp/sources/hartshorne-1977-algebraic-geometry.md,
+    where the number is garbled to "4.." and the wording is the card's
+    statement; Yang Pi-Yeh, Solution 5.4.3, which chooses the two auxiliary
+    points, shows the image point is on neither fundamental line and has
+    smaller multiplicity, and stops, separating no characteristic; Egbert,
+    Exercise V.4.3, which is the sentence citing Hirschfeld's Theorem 3.27;
+    the National Taiwan University Chapter V §4 Exercise 3, by Shuang-Yen Lee,
+    whose local computation through the chart x = (t+mu)y ends "induction on
+    this then we are done" and asserts that the blown-down singularities are
+    ordinary without proving it; and, for absence, the retained sets carrying
+    no Chapter V §4 exercise, Borcherds (through IV.1), Cais (through Chapter
+    4), Cutrone--Marshburn (Chapters 1 and 2), Ionita--Kumar (Chapter I), Kim
+    (§2.4), Lomont, Okamoto (§II.9), Park (Chapter 4 and §V.5), Saglam--Chris (Chapter III),
+    Sam (through IV.6), Stein (III.7), Troiani (Chapter II) and Reiser
+    (IV.2.5). The remark now states that only those three retained sets contain
+    the exercise, that each is incomplete, and that the two passages the card
+    supplies itself are the ordinariness at step excellent-position and the
+    neutrality for N and g*. No statement and no proof step changed in this
+    pass. Not read: Hirschfeld's tract, still not held; any printing of Fulton
+    or Hartshorne, only the text versions in tmp/sources.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    One sentence of step positive-characteristic, part (iii), repaired, with no
+    change of mathematics and no change to any other step. It said that the
+    non-fundamental points of C_1 cap L, L the exceptional line through the two
+    centres of multiplicity 0, "are the points of C cap L", hence of
+    multiplicity 1. That identifies the wrong points: L is contracted by the
+    transformation, and by (7)(c) of Fulton §7.4 the sum of the intersection
+    multiplicities at the non-fundamental points of C_1 cap L is mu_Q(C_1) = m,
+    the multiplicity of the centre Q, so there is at most one such point and
+    its multiplicity is at most 1; the sum (8) subtracts vanishes either way,
+    which is what the step needs. The sentence now says that. Read for it:
+    (6), (7) and (8) of Fulton §7.4 in
+    tmp/sources/fulton-2008-algebraic-curves-pp55-62-86-92-110-115.md, and the
+    clause of step excellent-position that transcribes (7)(c). Not read: any
+    printing of Fulton, only the text version.
 ---
 
 ::: {.problem}
@@ -726,7 +773,7 @@ By step [](#excellent-position-attained){.pf-ref} excellent position at $P$ is a
 
 (ii) $\deg C_1=2n-m$ and $\mu_{P_1}(C_1)=r$ (step [](#algebraic-transform-multiplicities){.pf-ref}), so $\deg\pi_{P_1}=2n-m-r\equiv n-m\pmod p$. Since $p\mid(n-r)$, the choice $m=0$ when $p\nmid r$ and $m=1$ when $p\mid r$ gives $p\nmid(n-m)$, hence $p\nmid\deg\pi_{P_1}$; and an inseparable morphism of curves has degree divisible by $p$. So $\pi_{P_1}$ is separable.
 
-(iii) The points of $C_1$ over $Q$ are smooth, $m$ being $0$ or $1$; the three fundamental points of $C_1$ are ordinary multiple points of multiplicities $n$, $n-m$ and $n-m$, the fundamental lines meeting $C$ transversally at smooth points (step [](#excellent-position){.pf-ref}); and $T$ is an isomorphism near every other point of $C$, all singular points other than $P$ being off the fundamental lines by construction. Hence the non-ordinary points of $C_1$ are exactly those of $C$ other than $P$, together with $P_1$: $N(C_1)=N(C)$. For $g^*$, apply (8) of Fulton in the form step [](#genus-invariant-drops){.pf-ref} states it: the non-fundamental points of $C_1\cap L$, with $L$ the exceptional line through the two centres of multiplicity $0$, are the points of $C\cap L$, which the choice of the fundamental lines makes smooth and transverse, so their multiplicities $r_i$ are all $1$ and the sum $\sum_i\binom{r_i}{2}$ of (8) vanishes; hence $g^*(C_1)=g^*(C)$.
+(iii) The points of $C_1$ over $Q$ are smooth, $m$ being $0$ or $1$; the three fundamental points of $C_1$ are ordinary multiple points of multiplicities $n$, $n-m$ and $n-m$, the fundamental lines meeting $C$ transversally at smooth points (step [](#excellent-position){.pf-ref}); and $T$ is an isomorphism near every other point of $C$, all singular points other than $P$ being off the fundamental lines by construction. Hence the non-ordinary points of $C_1$ are exactly those of $C$ other than $P$, together with $P_1$: $N(C_1)=N(C)$. For $g^*$, apply (8) of Fulton in the form step [](#genus-invariant-drops){.pf-ref} states it, to the curve $C_1$ in excellent position: by (7)(c) of the same section the sum $\sum_iI(P_i,C_1\cap L)$ over the non-fundamental points of $C_1\cap L$ is the multiplicity $\mu_Q(C_1)=m$ of the centre, which is $0$ or $1$, so at most one such point occurs, its intersection multiplicity is $1$, and hence its multiplicity $r_i$ is at most $1$; the sum $\sum_i\binom{r_i}{2}$ of (8) therefore vanishes, and $g^*(C_1)=g^*(C)$.
 
 So $(C_1,P_1)$ has the numbers $N$ and $g^*$ of $(C,P)$, the singularity of $P$, and a separable projection at $P_1$; the descent step of steps [](#excellent-position-attained){.pf-ref} and [](#genus-invariant-drops){.pf-ref} then applies at $P_1$ and drops $N+g^*$ by at least $1$, as step [](#termination){.pf-ref} records. Each descent step is preceded by at most one preliminary transformation, so at most $2(N+g^*(C))$ quadratic transformations suffice, $N+g^*$ being a non-negative integer by step [](#genus-invariant-nonnegative){.pf-ref}. No theorem for characteristic $p$ beyond this count is used: the preliminary transformation is the one Fulton prescribes in Appendix A, and the only thing added here is that it is neutral for $N$ and $g^*$ and that it restores the hypothesis of step [](#excellent-position-attained){.pf-ref}.
 
@@ -756,4 +803,17 @@ Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-L
 Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.4.3, states the termination criterion: with $P_2,P_3$ chosen so that $P_1P_i$ meets $C$ transversally at $P_1$, the image point $R_i$ lies on neither fundamental line and $\mu(R_i)<\mu(P_1)$, so the process stops. It does not show that the images at the three contraction points are ordinary, and it separates no characteristic.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.4.3, is the single sentence "See Algebraic Curves over Finite Fields by Hirschfeld, Theorem 3.27".
+
+No retained solution set proves the exercise, in any characteristic, so the proof above is the
+card's own wherever it goes beyond Fulton and Rüd. Of the retained sets only the three named in this
+remark contain Exercise V.4.3 at all, and each of them is incomplete: the National Taiwan University
+set does not show that the three contracted points are ordinary, Yang Pi-Yeh's entry proves the
+termination criterion alone and separates no characteristic, and Egbert's entry is a citation of a
+book that is not held and was not read. The other retained sets carry no Chapter V §4 exercise:
+Borcherds, Cais, Cutrone--Marshburn, Ionita--Kumar, Kim, Lomont, Okamoto, Park, Saglam--Chris, Sam, Stein,
+Troiani and Reiser. The two passages the card supplies itself are the ordinariness of the three
+fundamental images in step [](#excellent-position){.pf-ref}, where Rüd's Proposition 21 states it and
+its proof reaches only the multiplicities, and the neutrality for $N$ and $g^*$ of the preliminary
+transformation of Fulton's Appendix A in step [](#positive-characteristic){.pf-ref}, where the
+appendix says only that one may then proceed as before.
 :::

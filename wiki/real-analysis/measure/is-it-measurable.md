@@ -10,11 +10,12 @@ topics:
 
 ## Closure properties
 
+[[PR-EWXRO]]
+
 [[PR-552IH]]
 
 ::: {.proposition}
-Let $(X,\mathcal M)$ be a measurable space and $f,g\colon X\to\RR$ [[D-DHFN4|measurable]] functions.
-Then $f+g$ and $fg$ are measurable, and if $(f_n)$ is a sequence of measurable functions converging pointwise to $h$, then $h$ is measurable [@Fol99, Proposition 2.6 and Corollary 2.9].
+Let $(X,\mathcal M)$ be a measurable space and let $h\colon X\to\RR$.
 If $X=\bigcup_{k\geq1}E_k$ with $E_k$ measurable and $h\restrict_{E_k}$ measurable for every $k$, then $h$ is measurable: the preimage of a Borel set is the union of its preimages in the pieces, which is the argument of [@Fol99, Exercise 2.5] applied to the countably many pieces.
 Continuous functions $\RR\to\RR$ are Borel measurable [@Fol99, Corollary 2.2], and a function equal almost everywhere to a Lebesgue measurable function is Lebesgue measurable, Lebesgue measure being complete [@Fol99, Proposition 2.11].
 

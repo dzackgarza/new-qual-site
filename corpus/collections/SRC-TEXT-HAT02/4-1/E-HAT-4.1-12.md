@@ -59,6 +59,23 @@ audit:
     and a nullhomotopic homotopy equivalence has contractible source and target. Not claimed: that
     the printed set states the dimension hypothesis.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.1 Exercise 12. The card's proof is correct: at $n=0$ a $0$-dimensional
+    CW complex is discrete and $0$-connected, so a point; for $n\ge1$, if $m>n$ is the least degree
+    with $\pi_m(X)\ne0$ then $X$ is $(m-1)$-connected with $m\ge2$, so Hurewicz (Theorem 4.32) makes
+    $\pi_m(X)\to H_m(X;\ZZ)$ an isomorphism, while $C_m(X)=0$ above dimension $n$; the contradiction
+    gives $\pi_i(X)=0$ in every degree and Whitehead's theorem makes $X\to\ast$ a homotopy
+    equivalence. The proof is independent of the published one and is kept; Proudfoot's Problem 12 of
+    Homework #6 does cover the exercise and is quoted, with its two qualifications. Three corrections
+    to the live text. (1) The citation of Proudfoot carried a printed page and a `.pdf` path; it now
+    names the Markdown file `tmp/sources/uoregon-proudfoot-634-hw6.md`, with no page. (2) So did the
+    citation of Proposition 4.15. (3) The sentence that the errata's renumbering table moves an
+    earlier Corollary 4.16 to 4.15 is not supported by the retained errata, which lists no such
+    entry; the held printing has no Corollary 4.16, and the statement Proudfoot uses is Proposition
+    4.15, which is what the card now says.
 ---
 
 ::: {.problem}
@@ -67,7 +84,7 @@ Show that an $n$-connected, $n$-dimensional CW complex is contractible.
 
 ::: {.solution}
 
-The argument is the card's own: Hurewicz in the least degree above $n$ where homotopy survives, against the vanishing of cellular homology above the dimension, then Whitehead.
+The proof below is the card's own — Hurewicz in the least degree above $n$ where a homotopy group survives, against the vanishing of cellular homology above the dimension, then Whitehead — and it is kept because it is correct. A retained published solution covers the exercise and is quoted in the second part: **Andrew Proudfoot, *Math 634: Algebraic Topology I*, Partial Solutions to Homework #6, Problem 12** (`tmp/sources/uoregon-proudfoot-634-hw6.md`), Problem 12 there being Hatcher's §4.1 Exercise 12; the two qualifications that argument needs are recorded with it.
 
 Let $X$ be an $n$-connected, $n$-dimensional CW complex, so that $\pi_{i}(X)=0$ for $0\le i\le n$.
 
@@ -108,11 +125,11 @@ Steps [](#hurewicz){.pf-ref} and [](#homology){.pf-ref} contradict each other un
 $$
 \boxed{X\text{ is contractible}.}
 $$
-*A second, published route.* Andrew Proudfoot, *Math 634: Algebraic Topology I*, Partial Solutions to Homework #6, Problem 12, printed p. 1 of `tmp/sources/uoregon-proudfoot-634-hw6.pdf`, argues from the cell structure instead of from Hurewicz:
+*The published route.* Andrew Proudfoot, *Math 634: Algebraic Topology I*, Partial Solutions to Homework #6, Problem 12 (`tmp/sources/uoregon-proudfoot-634-hw6.md`), argues from the cell structure instead of from Hurewicz:
 
 > Let $X$ be an $n$-connected CW complex. Applying Corollary 4.16 when $A$ is a single $0$-cell, we see that there exists a CW complex $Z$ which is homotopy equivalent to $X$ and has the property that $Z$ has one $0$-cell and no $k$-cells for $1\leq k\leq n$. Let $f:X\to Z$ be a homotopy equivalence. By cellular approximation, we may assume that the image of $f$ lies in the $n$-skeleton of $Z$, which is a single point! Hence $f$ is a nullhomotopic homotopy equivalence, which implies that $X$ and $Z$ are contractible.
 
-Two points of the printed argument need attention before it is used. (1) The statement it cites is **Proposition 4.15, printed p. 353** of the book held here: if $(X,A)$ is an $n$-connected CW pair then there is a CW pair $(Z,A)\simeq(X,A)$ rel $A$ with all cells of $Z-A$ of dimension greater than $n$. With $A=\{x_0\}$ this is Proudfoot's $Z$; his "Corollary 4.16" is that statement in the earlier numbering, which the book's errata renumbers to 4.15, and the book calls it a proposition. (2) The step "the image of $f$ lies in the $n$-skeleton of $Z$, which is a single point" uses that $X$ is $n$-dimensional, which the exercise's hypothesis supplies and Proudfoot's sentence does not: a cellular map carries $X_n$ into $Z_n$, and $X=X_n$ only under that hypothesis. With it restored the argument is complete — $f$ is homotopic to a cellular map with image the single $0$-cell, hence nullhomotopic, and a nullhomotopic homotopy equivalence has contractible source and target.
+Two points of the printed argument need attention before it is used. (1) The statement it cites is **Proposition 4.15** of the book held here: if $(X,A)$ is an $n$-connected CW pair then there is a CW pair $(Z,A)\simeq(X,A)$ rel $A$ with all cells of $Z-A$ of dimension greater than $n$. With $A=\{x_0\}$ this is Proudfoot's $Z$; his "Corollary 4.16" is not a statement of the held printing, which has no corollary at that number, and the statement he uses is Proposition 4.15. (2) The step "the image of $f$ lies in the $n$-skeleton of $Z$, which is a single point" uses that $X$ is $n$-dimensional, which the exercise's hypothesis supplies and Proudfoot's sentence does not: a cellular map carries $X_n$ into $Z_n$, and $X=X_n$ only under that hypothesis. With it restored the argument is complete — $f$ is homotopic to a cellular map with image the single $0$-cell, hence nullhomotopic, and a nullhomotopic homotopy equivalence has contractible source and target.
 
 :::
 

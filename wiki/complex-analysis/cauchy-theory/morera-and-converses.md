@@ -8,8 +8,7 @@ topics:
 
 # Morera and converses
 
-By Goursat's theorem, a holomorphic function has vanishing integrals over triangles.
-Morera's theorem is the converse for continuous functions, and it shows that [[D-AIQG3|locally uniform]] limits and series of holomorphic functions are holomorphic.
+By [[T-B3BDO|Goursat's theorem]], every holomorphic function satisfies the hypothesis of [[T-LHSMY|Morera's theorem]], which is the converse for continuous functions; it also gives the holomorphy of [[D-AIQG3|locally uniform]] limits of holomorphic functions.
 
 ## Morera's theorem
 
@@ -20,14 +19,12 @@ A continuous function whose integral over every triangle vanishes is holomorphic
 
 :::
 
-[[T-LHSMY]]
-
 ## Locally uniform limits
 
 [[C-TODSQ]]
 
 ::: {.remark}
-Applied to partial sums, [[C-TODSQ|the holomorphy of locally uniform limits]] shows that a series $\sum_k f_k$ of holomorphic functions converging uniformly on compact subsets of $\Omega$ is holomorphic and can be differentiated term by term.
+For series, apply [[C-TODSQ|the holomorphy of locally uniform limits]] to the partial sums; the term-by-term derivative is the second conclusion of that card.
 
 :::
 

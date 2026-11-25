@@ -13,7 +13,7 @@ On a projective variety over an algebraically closed field $k$, the ring of glob
 
 [[D-VARREG]]
 
-For an affine variety $X$, $A(X)$ consists of the functions regular on all of $X$; for any variety $X$, $\OO_{X,p}$ consists of germs of functions regular near $p$, and $k(X)$ of rational functions regular on some nonempty open set.
+For an affine variety $X$ the ring $A(X)$ of functions regular on all of $X$ is $\OO_X(X)$; on any variety the local ring at $p$ is $\OO_{X,p}$ and the field of rational functions is $k(X)$ ([[D-VARREG]]).
 
 ## Affine, quasi-affine, projective, and quasi-projective varieties
 

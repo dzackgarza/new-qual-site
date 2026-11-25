@@ -26,13 +26,12 @@ while for $n=0,1$ the same circle gives $2\pi i\cos 0 = 2\pi i$ and $2\pi i\cos'
 
 ## The mean value property
 
-For a circle centered at the point, the integral formula expresses $f$ at the center as the average of $f$ over the circle.
+For a circle centered at the point, the integral formula gives the mean value property:
 
 [[T-5BLYU]]
 
 ::: {.remark title="Mean value property and the maximum principle"}
-The mean value property above is the mechanism behind the [[T-BYNL5|maximum modulus principle]]: a local maximum of $\abs f$ at $z_0$ makes $\abs f$ equal to $\abs{f(z_0)}$ on every small circle about $z_0$, because the average of a function bounded above by its maximum equals the maximum only when the function is constant there.
-The same argument, with the mean value property of a real harmonic function $u$ in place of that of $f$, gives the strict maximum principle for $u$ ([[PR-6WOTK]]).
+The mean value property is the mechanism behind [[T-BYNL5|the maximum modulus principle]], and its analogue for a real harmonic function $u$ is behind the strict maximum principle for $u$ ([[PR-6WOTK]]).
 
 :::
 

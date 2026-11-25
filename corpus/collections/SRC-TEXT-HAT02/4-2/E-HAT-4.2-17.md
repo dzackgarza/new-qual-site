@@ -42,6 +42,13 @@ audit:
     of Section 4.3, which is used at the level of the statements Hatcher proves there rather than
     re-derived.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 17. One citation slip repaired: the step called Proposition
+    1B.9 a theorem; the book states it as a proposition, and the step now does too. The proof reads
+    correct.
 ---
 
 ::: {.problem}
@@ -59,7 +66,7 @@ The argument is the card's own; no retained solution set in `tmp/sources` covers
 For $n=1$ the map $\langle X,Y\rangle\to\operatorname{Hom}\bigl(\pi_{1}(X),\pi_{1}(Y)\bigr)$ is a bijection.
 
 ::: pf-proof
-Here $X$ is a path-connected CW complex and $Y$ is path-connected with $\pi_{i}(Y)=0$ for $i>1$, so $Y$ is a $K(\pi_{1}(Y),1)$. Hatcher's Theorem 1B.9 states that for such $Y$ the assignment $[f]\mapsto f_{*}$ is a bijection from based homotopy classes $\langle X,Y\rangle$ to homomorphisms $\pi_{1}(X)\to\pi_{1}(Y)$.
+Here $X$ is a path-connected CW complex and $Y$ is path-connected with $\pi_{i}(Y)=0$ for $i>1$, so $Y$ is a $K(\pi_{1}(Y),1)$. Hatcher's Proposition 1B.9 states that for such $Y$ the assignment $[f]\mapsto f_{*}$ is a bijection from based homotopy classes $\langle X,Y\rangle$ to homomorphisms $\pi_{1}(X)\to\pi_{1}(Y)$.
 :::
 
 :::

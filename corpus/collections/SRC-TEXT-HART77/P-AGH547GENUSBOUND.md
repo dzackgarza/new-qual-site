@@ -368,6 +368,77 @@ audit:
     system d' = |pi^*3L - E_1 - ... - E_r| embeds the blowup of P^2 at r
     points in P^{9-r}, and r = 5 is the case used. Not checked: any printing
     of the book, only the text version retained in tmp/sources.
+- event: source-checked
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Published-solution pass for issue #160, on the transcription rule. The
+    exercise's second request, attainment of the bound by an irreducible
+    nonsingular curve, is proved by no retained solution set, and the
+    "Published solution" remark now says so and names the sets searched.
+    Read for that, each at its own numbering: Egbert, entry 5.4.8, which
+    states the bound and then the existence of a smooth connected curve of
+    each degree and genus as a claim whose numerical conditions it verifies,
+    taking the curves from Harris--Eisenbud, Curves in Projective Space,
+    Theorem 3.13, for the cubic surfaces not on a quadric, and whose genus
+    range at d=4, g > 8/sqrt(3) - 3 and g <= 5/3, contains no integer; Yang
+    Pi-Yeh, Solution 5.4.7, and the National Taiwan University
+    Algebraic Geometry II (2020 Spring), Chapter V §4 Exercise 7, by Yi-Tsung
+    Wang, which prove the bound and say only that the listed classes achieve
+    it; and, for absence, the retained sets that carry no Chapter V §4
+    exercise, Borcherds (through IV.1), Cais (through Chapter 4),
+    Cutrone--Marshburn (Chapters 1 and 2), Ionita--Kumar (Chapter I), Kim
+    (§2.4), Lomont, Okamoto (§II.9), Park (Chapter 4 and §V.5), Saglam--Chris (Chapter III),
+    Sam (through IV.6), Stein (III.7), Troiani (Chapter II), Reiser (IV.2.5)
+    and the Chapter 1 notes of btg. Also read: Corollary V.4.13 with its
+    proof, that part (b) is a consequence of II.8.18 and III.7.9.1; Theorem
+    II.8.18, stated for a nonsingular closed subvariety of PP^n_k with no
+    hypothesis on the characteristic; and Remark III.7.9.1, that the section
+    is connected, hence irreducible, and regular, hence nonsingular, when
+    dim X >= 2. Two citations are corrected in the same pass, on the proof of
+    step intersection-data: its p_a line now cites the virtual arithmetic
+    genus of Chapter V §1 Exercise 3(c), 2p_a(D)-2 = D.(D+K_X), for a class
+    that need not be effective, with items (e) and (g) of Proposition 4.8
+    kept as the effective case, and its degree line cites (c) with the
+    pairing of (b) rather than (e), whose hypothesis is effectiveness. Read
+    for that: Exercise V.1.3(a), (b) and (c) in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, and the proof of
+    Proposition 4.8, which reads (g) off the adjunction formula of Ex. 1.3.
+    Third, the degree 4 paragraph now proves what it asserts about sections:
+    pi is the monoidal transformation of Chapter V §3 at the sixth point, so
+    pi_*O_X = O_{X'} by Proposition V.3.4, and the projection formula gives
+    H^0(X, H+E_6) = H^0(X', d'). Read for that: Proposition V.3.4, pi_*O = O
+    and R^i pi_* O = 0 for a monoidal transformation, and the intersection
+    (H+E_6).E_6 = 1 - 1 = 0. No statement changed and no proof step's
+    mathematics changed. Not read: any printing of the book, only the text
+    version in tmp/sources.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    The coordinates of step intersection-data are now sited. As the card stood,
+    D ~ a l - sum_ib_ie_i was written with no statement that a smooth cubic
+    surface over an algebraically closed field of characteristic p is the
+    blowup of P^2 at six points, which is what Proposition 4.8 and Notation
+    4.7.3 assume and what Theorem V.4.9 does not supply for an arbitrary cubic
+    surface. The solution's opening sentence now names a geometric marking,
+    cites Dolgachev and Duncan, Automorphisms of cubic surfaces in positive
+    characteristic (2017), §2, over an algebraically closed field of arbitrary
+    characteristic, and Castelnuovo's criterion, Theorem V.5.7, and points at
+    step geometric-marking of P-AGH548IRREDCLASSES, which gives the argument in
+    full. Read for this: the same two sources, at the places that card's event
+    of this date records. No step changed and no claim was weakened.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    The event above of this date names Dolgachev and Duncan, §2, and
+    Castelnuovo's criterion, Theorem V.5.7, as what the opening sentence cites
+    for the geometric marking. That attribution is withdrawn on this card too:
+    P-AGH548IRREDCLASSES now proves its step geometric-marking from R. Vakil,
+    The Rising Sea (21 October 2025), Theorem 27.0.2, and this card's opening
+    sentence cites the same numbered statement and points at that step. Nothing
+    in the argument of this card changes and no claim is added or weakened.
 ---
 
 ::: {.problem}
@@ -381,7 +452,14 @@ Show furthermore that for every $d>0$, this maximum is achieved by some irreduci
 ::: {.solution}
 
 Write $X$ for the cubic surface over an algebraically closed field $k$, with $-K_X=H$ its hyperplane
-class and $H^2=3$, and let $D$ be a divisor of degree $d=D\cdot H$.
+class and $H^2=3$, and let $D$ be a divisor of degree $d=D\cdot H$. The expression $D\sim a\ell-\sum_ib_ie_i$
+below is taken in a geometric marking of $X$: a set of six mutually skew lines, whose existence and
+whose blowdown to $\PP^2$ hold over an algebraically closed field of any characteristic, so that $X$ is
+the blowup of $\PP^2$ at six points with $\Pic X$ free on $\ell,e_1,\ldots,e_6$ (R. Vakil, *The Rising Sea* (21 October 2025),
+Theorem 27.0.2, over an algebraically closed field with no hypothesis on the characteristic; step
+geometric-marking of [[P-AGH548IRREDCLASSES]] gives the argument, with the general position of the six
+points).
+The class $H$ of a hyperplane section is then $3\ell-\sum_ie_i$.
 
 ::: pf
 
@@ -402,9 +480,12 @@ p_a(D)=\tfrac12(D^2-d)+1 .
 $$
 
 ::: pf-proof
-The line bundle computations are items (c), (d), (e), (f) and (g) of Proposition 4.8 of the book: the degree is $D\cdot h=d$, the self-intersection is $a^2-\sum_ib_i^2$ because
-$\ell^2=1$ and $e_i^2=-1$ with all other pairings zero, $D\cdot K_X=-D\cdot h=-d$, and (g) is
-$2p_a(D)-2=D\cdot(D+K_X)$. Chapter V §4 Exercise 7 of the National Taiwan University *Algebraic
+The line bundle computations are items (b), (c), (d) and (f) of Proposition 4.8 of the book: the degree is $D\cdot h=3a-\sum_ib_i$ by (c) and the pairing of (b), the self-intersection is $a^2-\sum_ib_i^2$ because
+$\ell^2=1$ and $e_i^2=-1$ with all other pairings zero, and $D\cdot K_X=-D\cdot h=-d$ by (d). A class
+need not be effective, so the genus is the virtual arithmetic genus of Chapter V §1 Exercise 3(c),
+$2p_a(D)-2=D\cdot(D+K_X)$, which is the ordinary arithmetic genus when $D$ is effective; items (e) and
+(g) of Proposition 4.8 are that case, and the book's proof of (g) reads it off the same adjunction
+formula of Exercise 1.3. Chapter V §4 Exercise 7 of the National Taiwan University *Algebraic
 Geometry II* homework (2020 Spring), by Yi-Tsung Wang writes $D=D_1-D_2$ with
 $D_1,D_2$ effective and reads $\deg D=3a-\sum_ib_i$ and $D^2=a^2-\sum_ib_i^2$ off (4.8)(b) and (e),
 which the book states for effective divisors; it then writes "$2p_a(D)=D^2+D\cdot K=a^2-\sum
@@ -558,9 +639,11 @@ degrees are attained over every algebraically closed field $k$.
 The classes of degrees $1$ and $2$ are the line and the conic of step
 [](#small-degrees){.pf-ref}. The class of degree $4$ is $H+E_6=\pi^*(3L)-E_1-\cdots-E_5$, the pullback of
 the class $\mathfrak d'$ of Corollary 4.7 of the book, with $r=5$, which that corollary
-proves very ample and which embeds the blowup of $\PP^2$ at five points in $\PP^4$; since
-$H+E_6$ meets $E_6$ in $0$, its sections are the pullbacks of the sections of $\mathfrak d'$, so a
-general member of $\linearsystem{H+E_6}$ is the pullback of a general member of $\linearsystem{\mathfrak d'}$ and is isomorphic to
+proves very ample and which embeds the blowup of $\PP^2$ at five points in $\PP^4$. The morphism
+$\pi$ is the monoidal transformation of Chapter V §3 at the sixth point, so
+$\pi_*\OO_X=\OO_{X'}$ with $X'$ that blowup, by Proposition V.3.4, and the projection formula gives
+$H^0(X,H+E_6)=H^0(X',\mathfrak d')$; since $H+E_6$ meets $E_6$ in $0$, a general member of
+$\linearsystem{H+E_6}$ is the pullback of a general member of $\linearsystem{\mathfrak d'}$ and is isomorphic to
 it. And
 $$
 (H+E_6)^2=9-5=4,\qquad (H+E_6)\cdot K_X=-9+5=-4,\qquad p_a(H+E_6)=\tfrac12(4-4)+1=1,
@@ -629,6 +712,20 @@ solution's printed one has degree $d+2$, so the correction recorded above is con
 source. Of those classes the source says only that they "achieve the bound", computing $p_a$; it says
 nothing of an irreducible nonsingular member of one, so the exercise's second request is not proved
 there and remains the card's own step.
+
+The retained solution sets were searched for this exercise, and none proves the second request. Three
+of them contain an exercise of Chapter V §4: Egbert's entry 5.4.8, which states the bound, states the
+existence of a smooth connected curve of each degree and genus as a claim whose numerical conditions
+it then verifies, and takes the curves themselves from Harris--Eisenbud, *Curves in Projective
+Space*, Theorem 3.13, for the cubic surfaces not lying on a quadric; its genus range at $d=4$, which
+is $g>\frac{8}{\sqrt3}-3$ and $g\le\frac53$, contains no integer, so it establishes nothing at that
+degree; and Yang Pi-Yeh's Solution 5.4.7 and the National Taiwan University Chapter V §4 Exercise 7,
+which prove the bound alone. The other retained sets carry no Chapter V §4 exercise: Borcherds, Cais,
+Cutrone--Marshburn, Ionita--Kumar, Kim, Lomont, Okamoto, Park, Saglam--Chris, Sam, Stein, Troiani, Reiser and
+the Chapter 1 notes of btg. The argument of step
+[](#nonsingular-members){.pf-ref} is therefore the card's own: Corollary 4.13(b) of the book for the
+ample classes, Corollary 4.7 with Theorem II.8.18 and Remark III.7.9.1 at $d=4$, and, for the second
+route at that degree, condition (c) of Exercise V.4.8 as [[P-AGH548IRREDCLASSES]] proves it.
 
 For the curves in those classes: Corollary 4.13(a),(b) of Hartshorne for the ample
 ones, and, at $d=4$, condition (c) of Exercise V.4.8, whose sufficiency is proved on

@@ -17,7 +17,9 @@ Over an algebraically closed field $k$, $I\mapsto V(I)$ and $Z\mapsto I(Z)$ are 
 
 [[PR-7OT2Z]]
 
+::: {.example title="The same zero set and different subschemes"}
 The ideals $(x)$ and $(x^2)$ cut out the same closed subset of $\AA^1$; as closed subschemes of $\AA^1$, $V(x)$ and $V(x^2)$ are distinct, $V(x)$ being the reduced structure on the closed point ([[D-SCHRED]]).
+:::
 
 ## Irreducibility, and decomposition
 
@@ -25,7 +27,7 @@ The ideals $(x)$ and $(x^2)$ cut out the same closed subset of $\AA^1$; as close
 
 [[PR-TNVSI]]
 
-In an irreducible space any two nonempty open subsets meet, so an irreducible Hausdorff space has at most one point ([[D-9DIKB]]).
+In an irreducible space any two nonempty open subsets meet ([[D-9DIKB]]).
 
 [[FE-ISIPR]]
 

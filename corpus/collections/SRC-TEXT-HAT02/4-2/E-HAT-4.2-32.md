@@ -45,8 +45,15 @@ audit:
     the two cases treated are exactly the meaningful ones. The published solution cited for the
     upper bound is Proudfoot, Homework #7, Problem 32, whose text stops at $k\le n-1$; the lower
     bound is the card's own and was checked directly.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 32. One false provenance sentence repaired: the card said
+    Proudfoot's retained Problem 32 stops at $k\le n-1$ and does not reach the reverse inequality.
+    His solution does reach $k=n-1$, and the paragraph now says so and leaves the sequence's two
+    inequalities to step `lower`, which is where the card checks them.
 review: draft
-
 ---
 
 ::: {.problem}
@@ -56,7 +63,7 @@ Show that if $S^k \to S^m \to S^n$ is a fiber bundle, then $k = n-1$ and $m = 2n
 ::: {.solution}
 The exercise is §4.2 Exercise 32.
 
-The argument is the card's own: the homotopy exact sequence of the bundle in two degrees pins $k$ between $n-1$ and $n-1$. A published solution exists and is cited here for the two steps it does carry: Proudfoot, *Math 634: Algebraic Topology I*, Fall 2015, Homework #7, Problem 32, which derives $k<n$ and $\pi_{n-1}(S^{k})\cong\ZZ$ from the long exact sequence and stops at $k\le n-1$; the reverse inequality, which his retained text does not reach, is step [](#lower){.pf-ref} below, and both inequalities are read off the same exact sequence of Theorem 4.41. Throughout $S^{k}\to S^{m}\to S^{n}$ is a fibre bundle with connected total space $S^{m}$.
+The argument is the card's own: the homotopy exact sequence of the bundle in two degrees pins $k$ between $n-1$ and $n-1$. A published solution covers the exercise: Proudfoot, *Math 634: Algebraic Topology I*, Fall 2015, Homework #7, Problem 32, which derives $k<n$ and $\pi_{n-1}(S^{k})\cong\ZZ$ from the long exact sequence and reaches $k=n-1$; both inequalities are read off that sequence of Theorem 4.41, and step [](#lower){.pf-ref} below records the second one. Throughout $S^{k}\to S^{m}\to S^{n}$ is a fibre bundle with connected total space $S^{m}$.
 
 ::: pf
 

@@ -10,7 +10,7 @@ topics:
 # Pushforward and pullback
 
 A continuous map $f\colon X\to Y$ carries sheaves in two directions: $f_*$ pushes a sheaf forward along $f$, $f^{-1}$ pulls one back along it, and $f^*$ corrects the pullback so that it acts on $\OO_X$-modules.
-These are the two functors that every continuous map has. Extension by zero $j_!$ along an open immersion, its derived proper-support functor $Rf_!$, and the dualizing functor $f^!$ exist under hypotheses on $f$ or on the coefficients, and they are treated where those hypotheses are in force ([[D-SHFSIX]], [[T-LADICPROPER]]).
+Every continuous map has the adjoint pair $\inverseof{f}\dashv f_*$. Extension by zero $j_!$ along an open immersion, its derived proper-support functor $Rf_!$, and the dualizing functor $f^!$ exist under hypotheses on $f$ or on the coefficients, and they are treated where those hypotheses are in force ([[D-SHFSIX]], [[T-LADICPROPER]]).
 
 ## The two functors
 
@@ -26,20 +26,20 @@ The module-theoretic pullback $f^*$ base changes the exact $f^{-1}$ along $\inve
 
 The pair $\inverseof{f}\dashv f_*$ is an adjunction of additive functors between abelian categories, so general facts about adjoint pairs apply without further hypotheses: the left adjoint preserves colimits and the right adjoint preserves limits ([[T-DEFRAPL]]).
 So $f^{-1}$ preserves direct sums and cokernels, and $f_*$ preserves products, kernels, and fibre products ([[T-DEFRAPL]]).
-The right adjoint need not preserve coproducts: a direct sum of pushforwards need not be the pushforward of the direct sum, since a coproduct is not a limit ([[T-DEFRAPL]]).
+The right adjoint need not preserve coproducts: for an infinite set $I$, $X=\coprod_{i\in I}\{i\}$ with $f\colon X\to\{\mathrm{pt}\}$ and $\mcf_i$ the sheaf $\ZZ$ on the $i$th point, $\bigl(f_*(\bigoplus_i\mcf_i)\bigr)(\mathrm{pt})=\prod_i\ZZ$ while $\bigl(\bigoplus_i f_*\mcf_i\bigr)(\mathrm{pt})=\bigoplus_i\ZZ$.
 
 ## Exactness of the two functors
 
 [[PR-SHFPUSHEX]]
 
 For a closed immersion $f_*$ is exact, so the cohomology of a closed subscheme can be computed in the ambient scheme.
-For a proper morphism $f$ and a coherent $\mcf$ the higher direct images $R^if_*\mcf$ are coherent, and the base-change theorems compare $(R^if_*\mcf)\otimes\kappa(y)$ with $H^i(X_y,\mcf_y)$ over points $y\in Y$ ([[T-BASECHANGE]]); the Leray spectral sequence computes $H^*(X,\mcf)$ from the higher direct images ([[T-COHLERAY]]).
+For a proper morphism $f\colon X\to Y$ of noetherian schemes and a coherent $\mcf$, every $R^if_*\mcf$ is coherent ([[D-MODPULL]]), and the base-change theorems compare $(R^if_*\mcf)\otimes\kappa(y)$ with $H^i(X_y,\mcf_y)$ over points $y\in Y$ ([[T-BASECHANGE]]); the Leray spectral sequence computes $H^*(X,\mcf)$ from the higher direct images ([[T-COHLERAY]]).
 
 ## The projection formula
 
 [[PR-SCHPROJFORM]]
 
-The projection formula is the compatibility of the two functors with tensor: $f_*(\mcf\tensor f^*\mcg)\cong f_*\mcf\tensor\mcg$.
+The projection formula is the compatibility of the two functors with tensor: for $\mcg$ locally free of finite rank on $Y$, $f_*(\mcf\tensor f^*\mcg)\cong f_*\mcf\tensor\mcg$ [@Har77, Exercise II.5.1(d)], the finite local freeness being a hypothesis of the statement and not a convenience.
 It is what makes pullback a map of $\OO_Y$-module categories rather than merely of abelian categories, and it is used whenever a twist is moved past a pushforward.
 
 ## Extension by zero

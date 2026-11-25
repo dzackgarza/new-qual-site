@@ -55,6 +55,6 @@ The criterion applies when the image curve $f\circ\gamma$ or the change of $\arg
 
 [[T-FZWEC]]
 
-Consequently a limit of nowhere-zero functions is nowhere zero or identically zero, and a limit of univalent functions is univalent or constant ([[T-SULVA]]).
+Consequently, on a connected open set, a limit of nowhere-zero functions is nowhere zero or identically zero, and a limit of univalent functions is univalent or constant ([[T-SULVA]]).
 Applying [[T-CJCKL|Rouché's theorem]] to $f-w$ counts the solutions of $f(z) = w$ in $\Omega$ for each $w$, and [[complex-analysis/counting-zeros/the-argument-principle#Solutions of an equation|the argument principle]] shows the count is constant on each component of $\CC\sm f(\bd\Omega)$.
 

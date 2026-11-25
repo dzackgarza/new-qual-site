@@ -41,6 +41,15 @@ audit:
     CW complex lies in a finite subcomplex (Hatcher, Proposition A.1), for the passage to the direct
     limit, and that each bonding map inserts the trivial factor pi_n(K(G_{n+1}, n+1)) = 0 and is
     therefore an isomorphism. The conclusion, pi_n(X) = G_n, is unchanged.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 21. One false provenance sentence repaired: the card said
+    Sam's entry for this exercise is not a proof of it and described an argument about
+    $H_{n+1}(X)/h(\pi_{n+1}(X))$, which is Sam's Exercise 23. Sam's §4.2 Exercise 21 does prove the
+    exercise, by the compactness argument that a map $S^n\to X$ lands in some $X_m$ and then
+    $\pi_n(X_m)\cong G_n$, and the step now says so; the card's own argument is kept.
 ---
 
 ::: {.problem}
@@ -49,7 +58,7 @@ Show $\pi_n(X) \approx G_n$ for all $n$.
 :::
 
 ::: {.solution}
-Hatcher, *Algebraic Topology*, §4.2 Exercise 21. The retained set of Steven V. Sam has an entry for this exercise but not a proof of it: it builds a $K(\pi_{n}(X),n)$ from $X$ by attaching cells and computes $H_{n+1}(X)/h(\pi_{n+1}(X))$, and never identifies $\pi_{n}(X)$ with $G_{n}$, so it is not used below. The argument is the card's own, from the product formula and compactness. Write $X_{N}=\prod_{i=1}^{N}K(G_{i},i)$ and $X=\bigcup_{N}X_{N}$.
+Hatcher, *Algebraic Topology*, §4.2 Exercise 21. The retained set of Steven V. A retained solution covers this exercise: Sam's §4.2 Exercise 21 proves it, by the compactness argument that a map $S^n\to X$ lands in some single $X_m$ and then $\pi_n(X_m)\cong G_n$. The card's own argument is kept. The argument is the card's own, from the product formula and compactness. Write $X_{N}=\prod_{i=1}^{N}K(G_{i},i)$ and $X=\bigcup_{N}X_{N}$.
 
 ::: pf
 

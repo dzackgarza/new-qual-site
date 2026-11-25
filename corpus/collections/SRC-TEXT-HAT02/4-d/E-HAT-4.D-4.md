@@ -39,6 +39,65 @@ audit:
     H^*(F_n) free over H^*(F_{n-1}) on 1, x_n, ..., x_n^{n-1}; the monomials with 0 <= a_i <= n-i are
     the Artin basis, n! of them; and surjectivity plus equality of Poincare polynomials forces the
     isomorphism. The pair (x_{n-i+1}, i-1) in the proof matches the bound a_i <= n-i.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.D Exercise 4. One false sentence repaired: the step said that
+    "forgetting the last line of a flag gives a fiber bundle $F_n\to F_{n-1}$ with fiber
+    $\CP^{n-1}$". Forgetting the last line of a full flag in $\C^n$ does not land in $F_{n-1}$; the
+    bundle is $\CP^{n-1}\to F_n(\C^n)\to F_{n-1}(\C^{n-1})$, dividing out the first line, whose
+    fibre over a flag is the set of lines $L_1\subset\C^n$. The step now says that, and the
+    generation of the fibre cohomology by $x_n$ is attributed to the computation of projective-space
+    cohomology in §3.2 rather than to Corollary 4D.3, which is the statement about $H^*(U(n))$ and
+    says nothing of the kind.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Correction to the preceding event. The bundle it described, dividing out the first line to get
+    $\CP^{n-1}\to F_n(\C^n)\to F_{n-1}(\C^{n-1})$, is a genuine bundle but not the one the argument
+    needs: $H^*(F_n)$ is not free over $H^*(F_{n-1})$, since for $n=3$ every nonzero class in
+    $H^2(F_3)$ has nonzero square while the generator of $H^2(F_2)$ squares to zero, so there is no
+    ring map from $H^*(F_2)=\ZZ[y]/(y^2)$ into $H^*(F_3)$ to serve as the base of a free module. The
+    step now uses the bundle $F_{n-1}(\C^{n-1})\to F_n(\C^n)\to\CP^{n-1}$ given by the first line,
+    over whose base $H^*(\CP^{n-1})=\ZZ[x_1]/(x_1^n)$ Leray--Hirsch applies, and concludes that
+    $H^*(F_n)$ is free over $\ZZ[x_1]/(x_1^n)$ on the monomials $x_2^{a_2}\cdots x_n^{a_n}$ with
+    $0\le a_i\le n-i$ — the correct statement, and the one that yields the Poincaré polynomial.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Two further corrections in step `algebra`, from independent readings. The sentence justifying
+    regularity said $\sigma_k$ "involves the variable $x_{n-k+1}$ to the first power"; that is not what
+    makes the sequence regular. It now runs the triangular argument: as a polynomial in $x_n$,
+    $\sigma_n=x_n\sigma_{n-1}(x_1,\dots,x_{n-1})$ is linear with leading coefficient
+    $\sigma_{n-1}(x_1,\dots,x_{n-1})$, and the same holds one variable at a time for
+    $\sigma_{n-1},\dots,\sigma_1$ after quotienting by the later ones.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Third correction to this card, in step `algebra`. The triangular justification of the monomial
+    basis is false: for $n=2$ one has $\sigma_2\equiv -x_2^2$ modulo $\sigma_1$, so the elementary
+    symmetric functions are not a Gröbner basis and successive reduction by them does not produce the
+    stated exponents. The step now names the statement for what it is — the Artin basis theorem for
+    the coinvariant ring of the symmetric group, whose standard monomials are
+    $x_1^{a_1}\cdots x_n^{a_n}$ with $0\le a_i\le n-i$, $n!$ of them — cites it rather than
+    reproving it, and records the counterexample to the reduction argument it replaces. The Poincaré
+    polynomial and the rank $n!$ follow from the basis as before.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    The ring-theoretic inputs are stated for what they are, from a referee report. The step now names
+    the two standard facts it uses — the integral fundamental theorem of symmetric polynomials, that
+    $\ZZ[x_1,\dots,x_n]$ is free over $\ZZ[\sigma_1,\dots,\sigma_n]$ of rank $n!$, with the
+    algebraic-independence, integrality and Galois-rank ingredients; and the identification of the
+    quotient with the coinvariant ring and its standard monomial basis — and records that no retained
+    source gives a numbered statement of either. The projective-space computation used for the fibre
+    is cited in §3.2 and the H*(U(n)) statement Corollary 4D.3 is no longer cited anywhere in the live
+    text.
 ---
 
 ::: {.problem}
@@ -74,7 +133,7 @@ By step [](#relations){.pf-ref} the elementary symmetric polynomials lie in the 
 $H^*(F_n;\ZZ)$ is free abelian, with Poincaré polynomial $\prod_{j=1}^n\bigl(1+t^2+\cdots+t^{2(j-1)}\bigr)$, and $\Phi$ is surjective.
 
 ::: pf-proof
-Forgetting the last line of a flag gives a fiber bundle $F_n\to F_{n-1}$ with fiber $\CP^{n-1}$, the projectivization of the tautological rank-$(n-1)$ quotient over $F_{n-1}$; its cohomology is generated over that of the base by the restriction of $x_n$, by Corollary 4D.3. The Leray--Hirsch theorem, Theorem 4D.1, then gives that $H^*(F_n;\ZZ)$ is a free module over $H^*(F_{n-1};\ZZ)$ on $1,x_n,\dots,x_n^{n-1}$, so by induction on $n$ from $F_1=\ast$ it is free abelian with the stated Poincaré polynomial, the factor $1+t^2+\cdots+t^{2(n-1)}$ being contributed at the $n$-th step. Since each stage is generated by the classes $x_i$ together with the base, the $x_i$ generate $H^*(F_n;\ZZ)$ as a ring, which is the surjectivity of $\Phi$.
+Taking the first line of a flag gives a fiber bundle $F_{n-1}(\C^{n-1})\to F_n(\C^n)\xrightarrow{p}\CP^{n-1}$: the fibre over $L_1$ is the set of full flags whose first line is $L_1$, which is the flag manifold of $\C^n/L_1\cong\C^{n-1}$. The class $x_1$ restricts to a generator of $H^2(\CP^{n-1};\ZZ)$ and $H^*(\CP^{n-1};\ZZ)=\ZZ[x_1]/(x_1^n)$, the computation of projective-space cohomology in §3.2. By induction on $n$ from $F_1=\ast$, $H^*(F_{n-1};\ZZ)$ is free on the monomials $x_2^{a_2}\cdots x_n^{a_n}$ with $0\le a_i\le n-i$, and these classes restrict to a basis of the cohomology of the fibre, so the Leray--Hirsch theorem, Theorem 4D.1, gives that $H^*(F_n;\ZZ)$ is a free module over $\ZZ[x_1]/(x_1^n)$ on those monomials. Hence it is free abelian with the stated Poincaré polynomial, the factor $1+t^2+\cdots+t^{2(n-1)}$ being contributed by the base at the $n$-th step, and the classes $x_1,\dots,x_n$ generate $H^*(F_n;\ZZ)$ as a ring, which is the surjectivity of $\Phi$. (The bundle with base $F_{n-1}$ and fibre $\CP^{n-1}$, obtained by dividing out the first line, is not the one to use: $H^*(F_n)$ is not free over $H^*(F_{n-1})$, since for $n=3$ every nonzero class in $H^2(F_3)$ has nonzero square, whereas the generator of $H^2(F_2)$ squares to zero.)
 :::
 
 :::
@@ -83,7 +142,7 @@ Forgetting the last line of a flag gives a fiber bundle $F_n\to F_{n-1}$ with fi
 $\ZZ[x_1,\dots,x_n]/(\sigma_1,\dots,\sigma_n)$ is free abelian with basis $x_1^{a_1}\cdots x_n^{a_n}$, $0\le a_i\le n-i$, hence with the same Poincaré polynomial and total rank $n!$.
 
 ::: pf-proof
-The $\sigma_k$ form a regular sequence: $\sigma_k$ involves the variable $x_{n-k+1}$ to the first power and no other variable of lower index does in $\sigma_k$ once the earlier relations have been used, which is the usual triangular form of the elementary symmetric functions. Reducing successively by the monic relations $\sigma_1,\dots,\sigma_n$ therefore leaves a free abelian group on the monomials whose exponents satisfy $0\le a_i\le n-i$: the $i$-th reduction caps the exponent of $x_{n-i+1}$ at $i-1$. The number of such monomials in degree $2d$ gives the polynomial $\prod_{j=1}^n(1+t^2+\cdots+t^{2(j-1)})$, and its value at $t=1$ is $\prod_{j=1}^n j=n!$.
+Two standard facts are used, and neither is proved here because no retained source gives a numbered statement of them. The first is the integral fundamental theorem of symmetric polynomials: $\ZZ[x_1,\dots,x_n]$ is free over $\ZZ[\sigma_1,\dots,\sigma_n]$ of rank $n!$. It follows from algebraic independence of the $\sigma_k$, from integrality — each $x_i$ satisfies the monic equation $\prod_j(t-x_j)=\sum_k(-1)^k\sigma_kt^{n-k}$ — and from the rank being $n!$ over $\QQ$, where the extension is Galois with group $S_n$. The second is the identification of the quotient by $(\sigma_1,\dots,\sigma_n)$ with the coinvariant ring of $S_n$, whose standard monomial basis is the set of $x_1^{a_1}\cdots x_n^{a_n}$ with $0\le a_i\le n-i$, again $n!$ in number; this is the statement sometimes named for Artin, and it is what the Poincaré-polynomial comparison below uses. A triangular reduction by the $\sigma$'s is not available: for $n=2$ one has $\sigma_2\equiv -x_2^2$ modulo $\sigma_1$, so the elementary symmetric functions are not a Gröbner basis in any variable order, and the basis statement is genuinely a theorem about the quotient. Given it, the monomials in degree $2d$ give the polynomial $\prod_{j=1}^n(1+t^2+\cdots+t^{2(j-1)})$, and its value at $t=1$ is $\prod_{j=1}^n j=n!$.
 :::
 
 :::

@@ -22,5 +22,5 @@ Then there exists a [[D-E7A5W|holomorphic]] function $F\colon\Omega\to\CC$ such 
 
 - $F(r)=\log r$ for all real $r$ in some neighborhood of $1$ in $\Omega$.
 
-This is [@SS03, Theorem 6.1 of Chapter 3 (p. 98)].
+This is [@SS03, ch. 3, Theorem 6.1].
 :::

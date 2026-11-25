@@ -10,9 +10,9 @@ topics:
 # Continuity
 
 ::: {.proposition}
-For $f\colon I\to\RR$ on an interval $I$:
+For a differentiable $f\colon I\to\RR$ on an interval $I$:
 $$
-f \text{ differentiable with bounded } f' \iff f \text{ Lipschitz} \implies f \text{ uniformly continuous} \implies f \text{ continuous}.
+f \text{ Lipschitz} \iff f' \text{ bounded} \implies f \text{ uniformly continuous} \implies f \text{ continuous}.
 $$
 
 The equivalence is [[PR-LTRLV]], the middle implication [[PR-SX6NO]], and the last the definition of [[D-WGYSB|uniform continuity]].

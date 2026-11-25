@@ -49,7 +49,7 @@ If two maximal cones give the same vertex, the support function is linear across
 
 [[FE-FULAVA]]
 
-Very ampleness is not visible from the fan alone; the [[FE-FULAVA|example of an ample divisor that is not very ample]] gives a strictly convex support function and an ample divisor whose associated map is two-to-one rather than an embedding.
+Very ampleness is not read off the normal fan: $D$ is very ample exactly when it is ample and, at every maximal cone $\sigma$ with Cartier datum $m_\sigma$, the translated semigroup $\NN(P_D\cap M-m_\sigma)$ equals the local semigroup $S_\sigma=\sigma^\vee\cap M$, that is, is saturated ([[PR-TORPOS]]); without the shift by $m_\sigma$ the statement is false, and the [[FE-FULAVA|example of an ample divisor that is not very ample]] has a strictly convex support function and an associated map that is two-to-one rather than an embedding.
 
 ## Fano and Calabi-Yau
 

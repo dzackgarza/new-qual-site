@@ -24,6 +24,8 @@ prompts:
 Let $C$ be a smooth projective geometrically integral curve of genus $0$ over a field $k$.
 
 - If $C$ has a $k$-rational point, then $C \cong \PP^1_k$.
+Over an algebraically closed $k$ this is the statement that a curve of genus $0$ is rational, hence isomorphic to $\PP^1$ [@Har77, Example IV.1.3.5], where a curve is by that chapter's standing hypothesis complete and nonsingular over an algebraically closed field, and no rational point is assumed.
+Over a general field the rational point is what supplies the divisor of degree one, and the argument for that case is the card's own, given in the proof below.
 
 - The anticanonical line bundle $\omega_C^{-1}$ has degree $2$ and
 $$
@@ -34,12 +36,13 @@ $$
 C\hookrightarrow\PP^2_k
 $$
 whose image is a smooth plane conic.
+For algebraically closed $k$ the very ampleness is the genus-zero case of the ample-implies-very-ample criterion, a divisor of positive degree on a curve of genus $0$ being very ample [@Har77, Example IV.3.3.1]; for general $k$ the embedding is descended from $\bar k$ in the proof below.
 
 - If $k$ is algebraically closed or finite, then $C(k)\ne\varnothing$, so $C\cong\PP^1_k$.
 :::
 
 ::: {.proof}
-Suppose first that $p\in C(k)$. Riemann--Roch gives
+Suppose first that $p\in C(k)$. Riemann--Roch [@Har77, Theorem IV.1.3] gives
 $$
 h^0(C,\OO_C(p))=2,
 $$
@@ -53,7 +56,7 @@ C\longrightarrow\PP^1_k
 $$
 defined by $\abs p$ becomes an isomorphism after the faithfully flat extension $k\subseteq\bar k$, and is therefore itself an isomorphism.
 
-For the anticanonical system, Riemann--Roch gives
+For the anticanonical system, Riemann--Roch [@Har77, Theorem IV.1.3] gives
 $$
 h^0(C,\omega_C^{-1})
 =\deg(\omega_C^{-1})+1
@@ -61,7 +64,7 @@ h^0(C,\omega_C^{-1})
 $$
 since $\deg\omega_C^{-1}=2$ and $H^0(C,\omega_C^{\otimes2})=0$. After base change to $\bar k$, the line bundle becomes $\OO_{\PP^1}(2)$, whose complete linear system is the quadratic Veronese embedding into $\PP^2_{\bar k}$. Closed immersion descends under faithfully flat base change, so the anticanonical morphism embeds $C$ in $\PP^2_k$. Its image has degree $2$, hence is a smooth conic.
 
-If $k$ is algebraically closed, $C$ has a $k$-point. If $k=\FF_q$, the anticanonical conic is defined by one homogeneous quadratic equation in three variables. Chevalley--Warning gives a nonzero solution over $\FF_q$, hence a $k$-rational point on $C$.
+If $k$ is algebraically closed, $C$ has a $k$-point. If $k=\FF_q$, the anticanonical conic is defined by one homogeneous quadratic form $q$ in the three variables $x,y,z$: the sum of the degrees of the defining polynomials is $2<3$, and $q$ has no constant term. By Chevalley--Warning the common zeros of $q$ in $\FF_q^3$ have cardinality divisible by $p$; the origin is one of them, so there are at least $p\ge2$ and hence a nonzero zero, which is a $k$-rational point of $C$ [@Ser73, Chapter I, §2.2, Theorem 3].
 :::
 
 ::: {.example}

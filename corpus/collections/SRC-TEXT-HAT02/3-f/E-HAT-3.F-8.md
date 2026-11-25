@@ -39,6 +39,20 @@ audit:
     the connecting map C -> H^1(M;A) is zero. That case is now argued. (3) The
     vanishing range is stated for i >= 1 with the two exceptional degrees. Statement
     unchanged. Not checked: nothing outside this exercise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read again against Hatcher, §3.F Exercise 8. The proof is correct: the universal coefficient
+    theorem puts $\operatorname{Hom}(G,-)$ in degree $n$ and $\operatorname{Ext}(G,-)$ in degree
+    $n+1$ for a Moore space $M(G,n)$ with nothing in the other degrees $\ge1$; the Bockstein sequence
+    for $0\to A\to B\to C\to0$ collapses to those six groups; and the collapse is exact at both ends,
+    through $B\to C$ onto when $n=1$ and through the vanishing of $H^{n+2}$ of the space. Three
+    corrections, none of mathematics. The left end attributed "$B\to C$ onto" to the injectivity of
+    $A\to B$; it follows from exactness of the coefficient sequence, and the step now says so. The
+    trailing `pf-qed` only restated that the earlier steps answered the question, which STYLE-08
+    forbids, and is removed: step `s5` states the required sequence and is the QED step. The retained
+    sets' state is now recorded in the preamble.
 ---
 
 ::: {.problem}
@@ -48,7 +62,7 @@ $$0 \to \operatorname{Hom}(G,A) \to \operatorname{Hom}(G,B) \to \operatorname{Ho
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §3.F Exercise 8; the argument below is the card's own.
+The statement is Hatcher, §3.F Exercise 8. The argument is the card's own: no retained solution set holds a solution of any exercise of §3.F — Koukpari's set carries the §3.F heading *Limits and Ext* with nothing under it, Sam's begins at §4.1, and the others stop earlier — so there is no published proof to transcribe.
 
 ::: pf
 
@@ -100,7 +114,7 @@ $$0 \to H^n(M;A) \to H^n(M;B) \to H^n(M;C) \to H^{n+1}(M;A) \to H^{n+1}(M;B) \to
 
 ::: pf-proof
 
-By step [](#s2){.pf-ref} the six displayed groups are the only ones in degrees $\ge1$ that can be nonzero, and the sequence of step [](#s3){.pf-ref} restricts to an exact sequence through them. At the left end: for $n\ge2$ the preceding term is $H^{n-1}(M;A)=0$; for $n=1$ it is $H^0(M;A)=A$, and $A\to B$ injective makes $B\to C$ onto, so the connecting map $C\to H^1(M;A)$ is zero and the sequence begins $0\to H^1(M;A)$. At the right end the next term is $H^{n+2}(M;A)=0$ in both cases, since $n+2\ge3$.
+By step [](#s2){.pf-ref} the six displayed groups are the only ones in degrees $\ge1$ that can be nonzero, and the sequence of step [](#s3){.pf-ref} restricts to an exact sequence through them. At the left end: for $n\ge2$ the preceding term is $H^{n-1}(M;A)=0$; for $n=1$ it is $H^0(M;A)=A$, and $B\to C$ is onto by exactness of the coefficient sequence, so the map $H^0(M;B)\to H^0(M;C)$, which is $B\to C$ again, is onto and the connecting map $H^0(M;C)\to H^1(M;A)$ is zero; hence the sequence begins $0\to H^1(M;A)$. At the right end the next term is $H^{n+2}(M;A)=0$ in both cases, since $n+2\ge3$.
 
 :::
 
@@ -119,11 +133,6 @@ In step [](#s4){.pf-ref} replace $H^n(M;-)$ by $\operatorname{Hom}(G,-)$ and $H^
 
 :::
 
-::: {.pf-qed}
-
-The sequence of step [](#s5){.pf-ref} is exact and is the sequence the exercise asks for.
-
-:::
 
 :::
 :::

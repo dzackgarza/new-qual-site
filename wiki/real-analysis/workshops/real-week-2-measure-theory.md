@@ -20,7 +20,7 @@ To prove $x=y$ in a metric space it suffices to show $\rho(x,y)<\varepsilon$ for
 [[D-YZC3C]] [[D-IYDZU]]
 
 ::: {.example}
-Uniform convergence implies pointwise convergence, and $x^n$ on $[0,1]$ converges pointwise but not uniformly.
+Uniform convergence implies pointwise convergence, and $x^n$ on $[0,1]$ converges pointwise but not uniformly ([[PR-SCTER]]).
 
 Pointwise convergence is [@Rud76, ch. 7, Definition 7.1]; for $x^n$ the limit is $0$ on $[0,1)$ and $1$ at $1$, so the limit is discontinuous while every $x^n$ is continuous, and uniform convergence would preserve continuity by [@Rud76, ch. 7, Theorem 7.12].
 :::
@@ -55,11 +55,7 @@ For $A\subseteq X$ let
 $$
 \mu^*(A)\coloneqq\inf\theset{\sum_{j\geq1}\rho(E_j) \st E_j\in\mathcal E,\ A\subseteq\bigcup_{j\geq1}E_j}.
 $$
-Then $\mu^*$ is an [[D-79EWM|outer measure]] [@Fol99, §1.4].
-:::
-
-::: {.remark}
-The three defining properties are checked directly: $\mu^*(\varnothing)=0$ from the empty cover, monotonicity because a cover of a larger set covers a subset, and countable subadditivity by choosing for each $A_j$ a cover whose total $\rho$-sum is within $2^{-j}\varepsilon$ of the infimum and summing over $j$.
+Then $\mu^*$ is an [[D-79EWM|outer measure]] [@Fol99, Proposition 1.10].
 :::
 
 [[D-3XE77]]
@@ -80,8 +76,8 @@ The three defining properties are checked directly: $\mu^*(\varnothing)=0$ from 
 
 [[PR-6NDTF]]
 
-::: {.example title="A set with measurable slices that is not measurable"}
-The converse fails: a set whose slices are all measurable need not be measurable.
+::: {.example title="A set with measurable $x$-slices that is not measurable"}
+The converse fails: a set all of whose $x$-slices are measurable need not be measurable.
 For a non-measurable $\mathcal N\subseteq[0,1]$, let $E\coloneqq\mathcal N\times[0,1]$.
 Every slice $E_x$ is $[0,1]$ or $\varnothing$, hence measurable, but $E$ is not measurable: if it were, [[PR-6NDTF]] would make $x\mapsto m(E_x)=\chi_{\mathcal N}(x)$ measurable.
 
@@ -95,7 +91,7 @@ The direction from $f$ to $\mathcal A$ and the identity of the two integrals are
 :::
 
 ::: {.remark}
-The slices $\mathcal A_x=[0,f(x)]$ being intervals does not by itself make $\mathcal A$ measurable: the non-measurable $E$ above has every slice measurable.
+The slices $\mathcal A_x=[0,f(x)]$ being intervals does not by itself make $\mathcal A$ measurable: the non-measurable $E$ above has every $x$-slice measurable.
 :::
 
 ## Qual problems

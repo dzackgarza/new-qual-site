@@ -9,7 +9,7 @@ topics:
 
 # Examples
 
-A fan $\Sigma$ gives a normal toric variety $X_\Sigma$ ([[D-Q7Q2N]]), and the dictionary is read off the fans of a few examples.
+A fan $\Sigma$ gives a normal toric variety $X_\Sigma$ ([[D-Q7Q2N]], [[PR-TORSMAFF]]), and the dictionary is read off the fans of a few examples.
 
 ## The torus and affine space
 
@@ -37,19 +37,21 @@ Every $a$ has four rays and four maximal cones, so the combinatorics of the fan 
 
 [[FE-TORDUAL]]
 
-The cone $\sigma=\Cone((2,1),(1,4))$ has determinant $2\cdot4-1\cdot1=7$, so $X_\sigma$ is singular ([[PR-FULCRIT]]); its minimal resolution is a star subdivision by rays at lattice distance one ([[FE-TORMINRES]]).
+The cone $\sigma=\Cone((2,1),(1,4))$ has determinant $2\cdot4-1\cdot1=7$, so $X_\sigma$ is singular ([[PR-FULCRIT]]); its minimal resolution is the fan with rays $(2,1),(1,1),(1,2),(1,3),(1,4)$, whose consecutive determinants are $1$, so the three new divisors are exceptional curves with self-intersections $-3,-2,-2$ ([[FE-TORMINRES]], [[T-TORSURF]]).
 
 ## The cuspidal cubic
 
 The cuspidal cubic $V(x^3-y^2)$ is the spectrum of the semigroup algebra of $\generators{2,3}\subseteq\NN$, and that semigroup is not saturated: its saturation is the cone $\Cone(1)$, and the normalization is the inclusion $\AA^1\to V(x^3-y^2)$ of semigroup algebras ([[D-FULSAT]]).
-It is therefore not of the form $X_\Sigma$, whose coordinate rings are spectra of saturated semigroup algebras.
+It is therefore not of the form $X_\Sigma$, whose affine charts $\Spec k[S_\sigma]$ are spectra of saturated semigroup algebras ([[D-FULSAT]]).
 
 ## Weighted projective space
 
 [[FE-TORWPS]]
 
 Weighted projective space $\PP(q_0,\ldots,q_n)$ is the quotient lattice construction: $N=\ZZ^{n+1}/\ZZ(q_0,\ldots,q_n)$, and the rays are the images of the standard basis vectors, so the weighted scaling relation is part of the lattice rather than part of the grading.
-Its singularities are cyclic quotient singularities at the points where a ray is not primitive ([[FE-FULQUOT]]), and $\PP(1,\ldots,1)$ is $\PP^n$.
+Its singular locus is the union of the orbit closures $V(\sigma)$ over the cones of its fan that are not smooth ([[D-FULSTAR]]): $U_\sigma$ is smooth exactly when $\sigma$ is ([[PR-FULCRIT]]), and a simplicial chart is the quotient of a smooth affine toric variety by the finite diagonalizable group $\Hom(M'/M,\GG_m)$, which is trivial exactly then ([[PR-TORSMAFF]]).
+A ray generator that is not primitive forces every cone through it to be non-smooth, but the converse fails: $\PP(1,1,2)$ has three primitive ray generators and is singular at the fixed point of the cone on the images of the first two basis vectors ([[FE-TORWPS]]).
+Each singular point is a cyclic quotient singularity ([[FE-FULQUOT]]), and $\PP(1,\ldots,1)$ is $\PP^n$.
 
 ## Products and blowups
 

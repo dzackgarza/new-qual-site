@@ -49,6 +49,14 @@ audit:
   date: 2026-11-18
   note: >-
     Lamport structure for the two directions, which is what Queue D asks for on this card. The necessity uses the cell-attachment killing of higher homotopy groups and Exercise 23; the sufficiency is split into the 2-skeleton (free H_2 and the surjectivity of the Hurewicz map, which is what makes a basis of H_2 representable by spheres), the cell attachment with the resulting chain computation, and the torus example. The step from a basis of H_2(A) to 3-cells now says why it is available (Exercise 23 gives h(pi_2(A)) = H_2(A)) and why d_3 is injective with image ker d_2, which the prose asserted in one sentence. No retained set covers this exercise; the card now says so. Locators: the exercise on printed p. 391; Proudfoot's Homework #7 holds §4.2 exercises 1, 2, 30, 31, 32, 39 and not this one. No statement repair.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 24. The proof reads correct. One provenance correction: the
+    solution said that no retained set covers the exercise, and the retained sets' actual coverage is
+    now recorded — Sam's §4.2 numbering is Hatcher's and Proudfoot's homework 7 covers 1, 2, 30, 31
+    and 32, announcing 39 without a solution of it.
 ---
 
 ::: {.problem}
@@ -57,7 +65,7 @@ In particular, there is no $M(\ZZ^n, 1)$ with fundamental group $\ZZ^n$, free ab
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: of the two §4.2 sets in the checkout, Sam's covers exercises 1, 4, 6, 8, 9, 10, 12, 13, 15, 16, 18, 20, 21, 22, 23, 26, 27, 28, 31 and 32 and Proudfoot's Homework #7 covers 1, 2, 30, 31, 32 and 39, so neither reaches 24. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 24, and it uses §4.2 Exercise 23, which identifies $H_2$ of a $K(G,1)$ with a quotient of $H_2$ of a complex with the same fundamental group by the image of the Hurewicz map.
+No retained solution set covers this exercise: Sam's §4.2 covers exercises 1, 4, 6, 8, 9, 10, 12, 13, 15, 16, 18, 20, 21, 22, 23, 26, 27, 28, 31, 32, 33 and 34, and Proudfoot's homework 7 covers 1, 2, 30, 31 and 32 — its coverage line announces 39, but no solution of 39 is present — so neither reaches 24. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 24, and it uses §4.2 Exercise 23, which identifies $H_2$ of a $K(G,1)$ with a quotient of $H_2$ of a complex with the same fundamental group by the image of the Hurewicz map.
 
 Here $G$ is abelian, as in the definition of a Moore space: $H_1(M(G,1))\cong G$ and $\widetilde H_i(M(G,1))=0$ for $i\ne1$.
 

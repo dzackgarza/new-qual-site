@@ -41,12 +41,6 @@ $$
 
 :::
 
-::: {.remark}
-A Möbius transformation $z\mapsto (az+b)/(cz+d)$ fixing three distinct points of $\CC$ is the identity: its fixed points in $\CC$ are the roots of $cz^2 + (d-a)z - b = 0$, and a polynomial of degree at most $2$ with three roots is zero, so $c=b=0$ and $a=d$.
-This gives the uniqueness in [[PR-74KHY]].
-
-:::
-
 [[PR-74KHY]]
 
 ## The cross ratio
@@ -64,12 +58,9 @@ This gives the uniqueness in [[PR-74KHY]].
 
 ## Classification and standard images
 
-Möbius transformations map generalized circles to generalized circles, and hence map discs and half-planes onto discs and half-planes.
-A branch of $z\mapsto z^\alpha$ on a sector of opening $\theta$ at $0$, with $\alpha\theta\leq 2\pi$, maps it onto a sector of opening $\alpha\theta$.
-A branch of $\log$ maps the sector $\theset{\theta_1<\arg z<\theta_2}$ onto the strip $\theset{\theta_1<\Im w<\theta_2}$, and $\exp$ is its inverse.
+[[T-QGL7C]]
 
 The Cayley transform $z\mapsto {z-i\over z+i}$ maps $\HH$ onto $\DD$ ([[PR-OOHFS]]), and the map $z\mapsto {i-z\over i+z}$ is its composition with $w\mapsto -w$ ([[PR-FL6T7]]).
-Any two biholomorphisms of an open set onto $\DD$ differ by an automorphism of $\DD$, and the Riemann mapping theorem gives the existence of one for every simply connected open $\Omega\subsetneq\CC$.
 
 [[PR-FL6T7]]
 

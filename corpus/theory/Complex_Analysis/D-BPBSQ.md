@@ -16,4 +16,6 @@ review: draft
 Let $R\ge0$ and let $f$ be [[D-E7A5W|holomorphic]] on $\{z\in\CC:\abs{z}>R\}$.
 Put $g(w)\coloneqq f(1/w)$, a holomorphic function on the punctured disc $\{w:0<\abs{w}<1/R\}$ (on $\CC\setminus\{0\}$ if $R=0$).
 Then $f$ has a \dfn{removable singularity at $\infty$}, a \dfn{pole of order $n$ at $\infty$}, or an \dfn{essential singularity at $\infty$} if $g$ has, respectively, a [[D-BQLJV|removable singularity]], a [[D-AUD6K|pole of order $n$]], or an [[D-VKP6N|essential singularity]] at $w=0$.
+
+This is the convention of [@Ahl73, ch. 4, §3.2], which treats $\infty$ as an isolated singularity of a function analytic on $\abs z>R$ and gives it the character of $g(z)=f(1/z)$ at $0$.
 :::

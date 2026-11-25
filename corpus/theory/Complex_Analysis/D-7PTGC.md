@@ -26,7 +26,11 @@ and such that $f$ is holomorphic at $\infty$: writing $q\coloneqq e^{2\pi iz}$, 
 A modular form is a \dfn{cusp form} if moreover $a_0 = 0$ [@Ser73, ch. 7].
 :::
 
+::: {.proposition}
+There is no nonzero modular form of odd weight.
+:::
+
 ::: {.remark}
-Because $-I\in\SL_2(\ZZ)$ acts trivially on $\HH$ and the factor $(cz+d)^k$ becomes $(-1)^k$, there is no modular form of odd weight.
-The $q$-expansion is the Fourier expansion of $f$ in the local coordinate $q = e^{2\pi iz}$ at $\infty$, and the condition on it is what makes $f$ a section of a line bundle on the quotient $\SL_2(\ZZ)\backslash\HH$.
+Because $-I\in\SL_2(\ZZ)$ acts trivially on $\HH$ and the factor $(cz+d)^k$ becomes $(-1)^k$, a function satisfying the transformation law for an odd $k$ satisfies $f=-f$, hence vanishes.
+The $q$-expansion is the Fourier expansion of $f$ in the local coordinate $q = e^{2\pi iz}$ at $\infty$.
 :::

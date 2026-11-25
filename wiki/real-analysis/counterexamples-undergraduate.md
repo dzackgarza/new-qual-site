@@ -117,7 +117,7 @@ $$
 while along irrationals $y\to x$ the difference quotient is $0$.
 So the quotient is unbounded and has no limit, and $f$ is not differentiable at $x$.
 
-Since $D_f$ is countable, hence null, and $f$ is bounded, $f$ is Riemann integrable on every $[a,b]$ by the Lebesgue criterion, with $\int_a^b f = 0$; it is also Lebesgue integrable on $\RR$ with integral $0$.
+Since $D_f$ is countable, hence null, and $f$ is bounded, $f$ is Riemann integrable on every $[a,b]$ by the [[PR-TDH2A|Lebesgue criterion]], with $\int_a^b f = 0$; it is also Lebesgue integrable on $\RR$ with integral $0$.
 
 This is Thomae's function: the continuity and differentiability sets are computed above, and the Riemann integrability is the Lebesgue criterion of [@Rud76, ch. 11, Theorem 11.33(b)], since the set of discontinuities is countable and hence of measure zero.
 

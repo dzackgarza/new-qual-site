@@ -5,17 +5,17 @@ order: 20
 
 # Solutions
 
-- [UCSD complex analysis qualifying exam, Spring 2014, with solutions](http://www.math.ucsd.edu/~jagler/courses/220-S14/pdf/Qual%20(version%202)%20Solutions.pdf)
+- [UCSD complex analysis qualifying exam, Spring 2014, with solutions](http://www.math.ucsd.edu/~jagler/courses/220-S14/pdf/Qual%20%28version%202%29%20Solutions.pdf)
 
 - [NYU complex analysis midterm solutions](https://cims.nyu.edu/~yu3/files/teaching/complex/midterm_solutions.pdf)
 
 - [Indian Statistical Institute complex-analysis solutions, 2009–10](https://www.isibang.ac.in/~statmath/oldqp/Sol/Complex%20Analysis%20Sol%202009-10)
 
-- [[attachments/Complex_Analysis_Exam_Prep_Solutions.pdf|Complex-analysis exam-prep solutions]] — sixteen numbered practice problems with worked solutions.
+- [Complex-analysis exam-prep solutions](/assets/attachments/Complex_Analysis_Exam_Prep_Solutions.pdf) — sixteen numbered practice problems with worked solutions.
 
-- [Berkeley Math 185 problem set 7 solutions, Fall 2009](attachments/math185f09-hw7sol.pdf)
+- [Berkeley Math 185 problem set 7 solutions, Fall 2009](/assets/attachments/math185f09-hw7sol.pdf)
 
-- [[attachments/complex_prelim.pdf|Bahran, Solutions to Complex Prelim Problems (Minnesota)]]
+- [Bahran, Solutions to Complex Prelim Problems (Minnesota)](/assets/attachments/complex_prelim.pdf)
 
 - [Berkeley Math 185, Fall 2015, final exam solutions](https://math.berkeley.edu/~nikhil/courses/185.f15/finalsol.pdf)
 

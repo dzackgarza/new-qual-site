@@ -29,7 +29,7 @@ The pushforward $f_*$ preserves quasicoherent sheaves when $f$ is quasicompact a
 
 ## The four functors for abelian sheaves
 
-For $f \colon X \to Y$ continuous, the direct image $f_*$ and the inverse image $f^{-1}$ are adjoint, $f^{-1}\dashv f_*$, with $f^{-1}$ exact, and $f_!$ is the direct image with proper supports, whose right adjoint on derived categories is the exceptional inverse image $f^!$ ([[D-SHFSIX]]).
+For $f \colon X \to Y$ continuous, the direct image $f_*$ and the inverse image $f^{-1}$ are adjoint, $f^{-1}\dashv f_*$, with $f^{-1}$ exact. For a continuous map of locally compact Hausdorff spaces, the direct image with proper supports $f_!$ has the exceptional inverse image $f^!$ as right adjoint on derived categories ([[D-SHFSIX]]).
 For an open immersion $j$, $j_!$ is extension by zero, exact and left adjoint to $j^{-1}$; for a closed immersion $i$, $i_!=i_*$ and $i^!\mcf$ is the sections supported in $Z$ ([[D-SHFSIX]]).
 $f_!$ and $f^!$ use the zero section of an abelian sheaf, so they do not transfer to sheaves of sets.
 Together with $\otimes$ and internal $\mathcal{H}om$ these are the six operations ([[D-SHFSIX]], [[D-MODOX]]).

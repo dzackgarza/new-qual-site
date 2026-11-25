@@ -55,6 +55,32 @@ audit:
   date: 2026-11-18
   note: >-
     Lamport structure for the smash-product computation and the conclusion, which is what Queue D asks for on this card. The reduced Kunneth description is now derived (the Kunneth theorem for the product plus the long exact sequence of the pair), the vanishing is argued from the cyclic case rather than asserted, and the two Whitehead applications name Corollary 4.33 on printed p. 367. No retained set covers this exercise; the card now says so. Locators checked: Theorem 3B.6 on printed p. 275, Corollary 4.33 on p. 367, the exercise on p. 390. No statement repair.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Item 8 of the current #163 repair split. Repaired the algebra: finite abelian groups
+    decompose into prime-power cyclic summands, not prime-order ones. Every pair now uses
+    $\ZZ_m\otimes\ZZ_n\cong\operatorname{Tor}(\ZZ_m,\ZZ_n)\cong\ZZ_{\gcd(m,n)}$ from
+    §3.A, and $\ZZ/2\otimes\ZZ/4\cong\ZZ/2$ records why prime-order summands would be
+    insufficient. The quotient computations were rechecked: the relative Künneth formula
+    following Theorem 3B.6 applies directly to $(X,x_0)$ and $(Y,y_0)$, Proposition 2.22
+    identifies its relative homology with reduced homology of the smash product, and
+    Proposition 4.28 supplies simple connectivity of that quotient. The two conclusions
+    still use Corollary 4.33, as in Sam's §4.2 Exercise 18, with these hypotheses made
+    explicit.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Verification of the preceding event against the body, and one citation repair: the
+    cyclic formulas for tensor products are the elementary properties listed in §3.2,
+    while the Tor formula is property (5) of the Tor list in §3.A; the step now names both
+    sections instead of attributing both formulas to §3.A. Re-read and unchanged: the
+    relative Künneth formula following Theorem 3B.6 with its split short exact sequences,
+    Proposition 2.22 identifying $H_*(X\times Y,X\vee Y)$ with $\widetilde H_*(X\wedge Y)$,
+    the vanishing of every tensor and Tor summand from the coprime orders, Proposition
+    4.28 giving $\pi_1(X\wedge Y)=0$, and the two Corollary 4.33 applications.
 ---
 
 ::: {.problem}
@@ -70,7 +96,7 @@ A published solution covers this exercise: **Steven V. Sam, *Solutions to Hatche
 The reduced homology of the smash product is built from the groups $\widetilde H_i(X;\ZZ)\otimes\widetilde H_j(Y;\ZZ)$ and $\operatorname{Tor}\bigl(\widetilde H_i(X;\ZZ),\widetilde H_j(Y;\ZZ)\bigr)$: $\widetilde H_k(X\wedge Y;\ZZ)$ is a direct sum of copies of those groups over the relevant index pairs.
 
 ::: pf-proof
-$X\vee Y$ is a subcomplex of $X\times Y$, and $X\wedge Y=(X\times Y)/(X\vee Y)$, so $H_k(X\wedge Y)=H_k(X\times Y,X\vee Y)$ by excision. The Künneth theorem, Theorem 3B.6 printed p. 275, computes $H_*(X\times Y)$ from the homology of the factors, and the long exact sequence of the pair identifies the relative groups with the summands complementary to $H_*(X\vee Y)=H_*(X)\oplus H_*(Y)$; the complementary summands are exactly the tensor and Tor terms over the reduced groups, which is the reduced Künneth formula.
+Choose basepoints $x_0\in X$ and $y_0\in Y$. Since $X\wedge Y=(X\times Y)/(X\vee Y)$ and $(X\times Y,X\vee Y)$ is a CW pair, Proposition 2.22 gives $\widetilde H_k(X\wedge Y)\cong H_k(X\times Y,X\vee Y)$. Apply the relative Künneth formula stated immediately after Theorem 3B.6 to the pairs $(X,x_0)$ and $(Y,y_0)$. Its split short exact sequences express $H_k(X\times Y,X\times\{y_0\}\cup\{x_0\}\times Y)$, which is $H_k(X\times Y,X\vee Y)$, as a direct sum of tensor and Tor terms over $H_i(X,x_0)=\widetilde H_i(X)$ and $H_j(Y,y_0)=\widetilde H_j(Y)$, which is the claim.
 :::
 
 :::
@@ -79,7 +105,12 @@ $X\vee Y$ is a subcomplex of $X\times Y$, and $X\wedge Y=(X\times Y)/(X\vee Y)$,
 Both kinds of term vanish, so $\widetilde H_k(X\wedge Y;\ZZ)=0$ for every $k$.
 
 ::: pf-proof
-A finite abelian group whose order is $m$ tensored with one whose order is $n$ with $\gcd(m,n)=1$ is zero, and so is $\operatorname{Tor}$ of the two: it suffices to check this on cyclic groups, where $\ZZ_p\otimes\ZZ_q=0$ and $\operatorname{Tor}(\ZZ_p,\ZZ_q)=0$ for distinct primes $p\ne q$, and a finite abelian group is a sum of such. By hypothesis every $\widetilde H_i(X)$ is finite and of order coprime to the finite order of every $\widetilde H_j(Y)$, and a group that is zero contributes nothing, so all the terms of step [](#kunneth){.pf-ref} vanish.
+Decompose each finite abelian reduced homology group into prime-power cyclic summands. For arbitrary positive integers $m$ and $n$, the formulas for tensor products in §3.2 and for Tor in §3.A give
+$$
+\ZZ_m\otimes\ZZ_n\cong\ZZ_{\gcd(m,n)},\qquad
+\operatorname{Tor}(\ZZ_m,\ZZ_n)\cong\ZZ_{\gcd(m,n)}.
+$$
+The prime-power qualification is essential: $\ZZ/2\otimes\ZZ/4\cong\ZZ/2$, not $0$. Here, if one summand comes from $\widetilde H_i(X)$ and another from $\widetilde H_j(Y)$, their orders divide $\cardinality{\widetilde H_i(X)}$ and $\cardinality{\widetilde H_j(Y)}$ respectively, so their gcd is $1$ by the coprime-order hypothesis. Every tensor and Tor summand in step [](#kunneth){.pf-ref} therefore vanishes, and so does its direct sum.
 :::
 
 :::
@@ -88,7 +119,7 @@ A finite abelian group whose order is $m$ tensored with one whose order is $n$ w
 $X\wedge Y$ is contractible.
 
 ::: pf-proof
-$X\wedge Y$ is a CW complex, being a quotient of the CW pair $(X\times Y,X\vee Y)$ by a subcomplex, and it is simply connected: $X$ and $Y$ are simply connected, so $X\times Y$ is, and a quotient of a simply connected space by a connected subcomplex is simply connected because the quotient map is a homotopy equivalence away from the collapsed part. Its reduced homology vanishes by step [](#vanish){.pf-ref}, so the map $X\wedge Y\to\ast$ is a homology equivalence between simply connected CW complexes, and Corollary 4.33, makes it a homotopy equivalence.
+The wedge $X\vee Y$ is simply connected by van Kampen's theorem, Theorem 1.20, so the pair $(X\times Y,X\vee Y)$ is $1$-connected by its homotopy exact sequence. Proposition 4.28 with $r=s=1$ then gives $\pi_1(X\wedge Y)\cong\pi_1(X\times Y,X\vee Y)=0$. The smash product is a CW complex because it is the quotient of a CW pair by its subcomplex, and its reduced homology vanishes by step [](#vanish){.pf-ref}. Hence the map $X\wedge Y\to\ast$ is a homology isomorphism between simply connected CW complexes, and Corollary 4.33 makes it a homotopy equivalence.
 :::
 
 :::

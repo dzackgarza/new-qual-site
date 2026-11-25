@@ -10,32 +10,31 @@ title: Techniques
 - $\DD_r(a) \coloneqq \theset{z\in \CC \st \abs{z-a}< r}$, the open disc of radius $r$ about $a$.
 - $\bar{\DD}_r(a) \coloneqq \theset{z\in \CC \st \abs{z-a} \leq r}$, the closed disc of radius $r$ about $a$.
 - $\DD_r^*(a) \coloneqq \theset{z\in \CC \st 0 < \abs{z-a} < r}$, the punctured disc of radius $r$ about $a$.
-- $\Delta \coloneqq \DD_1(0)$, the open unit disc; $\bar\Delta \coloneqq \bar{\DD}_1(0)$, the closed unit disc; $\Delta^* \coloneqq \DD_1^*(0)$, the punctured unit disc.
 - $\Omega$ denotes an open subset of $\CC$; it is a domain (connected) when the statement needs one, and simply connected when the statement needs primitives.
-- $\OO(\Omega) = \Hol(\Omega) = \Hol(\Omega, \CC)$ denotes the $\CC$-algebra of holomorphic functions $f\colon\Omega \to \CC$.
+- $\OO(\Omega)$ denotes the $\CC$-algebra of [[D-E7A5W|holomorphic]] functions $f\colon\Omega \to \CC$.
 
 ## Principal results
 
-- Estimates for derivatives: [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy's inequality]]
-- [[complex-analysis/cauchy-theory/cauchys-theorem|Cauchy's theorem]]
-- [[complex-analysis/cauchy-theory/the-integral-formula|Cauchy's integral formula and the mean value property]]
-- [[complex-analysis/cauchy-theory/morera-and-converses|Morera's theorem]]
-- [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Liouville's theorem]]
-- [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|The maximum modulus principle and the open mapping theorem]]
-- [[complex-analysis/counting-zeros/rouches-theorem|Rouché's theorem]]
-- [[complex-analysis/cauchy-theory/schwarz-reflection|The Schwarz reflection principle]]
-- [[complex-analysis/conformal-maps/the-schwarz-lemma|The Schwarz lemma]]
-- [[complex-analysis/singularities/casorati-weierstrass-and-picard|The Casorati--Weierstrass theorem and the Picard theorems]]
-- [[complex-analysis/conformal-maps/build-me-a-map|Conformal maps]]
-- [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Automorphisms of the disc and the plane]]
-- [[complex-analysis/cauchy-theory/the-identity-principle|The identity principle]]
+- Estimates for derivatives: [[T-22RQZ|Cauchy's inequality]]
+- [[T-2OVCI|Cauchy's theorem]]
+- [[T-LA2UI|The Cauchy integral formula]] and [[T-5BLYU|the mean value property]]
+- [[T-LHSMY|Morera's theorem]]
+- [[T-QHIHJ|Liouville's theorem]]
+- [[T-BYNL5|The maximum modulus principle]] and [[C-FRF33|the open mapping theorem]]
+- [[T-CJCKL|Rouché's theorem]]
+- [[T-Q3GGF|The Schwarz reflection principle]]
+- [[T-DAETF|The Schwarz lemma]]
+- [[T-C5VEI|The Casorati--Weierstrass theorem]] and the [[T-HWBWI|little]] and [[T-DDOWW|great]] Picard theorems
+- [[D-TM4TE|Conformal maps]]
+- [[T-W26VL|Automorphisms of the disc]] and [[T-VGDFW|of the upper half-plane]]
+- [[T-SVF2W|The identity principle]]
 - [[complex-analysis/residues-and-contours/computing-residues|Computing residues]]
 - [[T-ZO5UU|Jordan's lemma]]
-- [[complex-analysis/holomorphic-functions/the-cauchy-riemann-equations|The Cauchy--Riemann equations]]
-- [[complex-analysis/counting-zeros/the-argument-principle|The argument principle]]
-- [[complex-analysis/conformal-maps/the-riemann-mapping-theorem|The Riemann mapping theorem]]
-- [[complex-analysis/singularities/removable-poles-essential|Riemann's removable singularity theorem]]
-- [[complex-analysis/holomorphic-functions/harmonic-functions|Harmonic functions and the mean value property]]
+- [[D-CREQS|The Cauchy--Riemann equations]]
+- [[T-JXDQT|The argument principle]]
+- [[T-4MDS6|The Riemann mapping theorem]]
+- [[T-ZZJDP|Riemann's removable singularity theorem]]
+- [[D-CFBSA|Harmonic functions]] and [[T-5BLYU|the mean value property]]
 
 [[attachments/ComplexAnalysisNotes.pdf|Complex analysis theorem summary]] is a compact statement sheet.
 
@@ -52,7 +51,8 @@ $$
 0 & \ell\neq 0,
 \end{cases}
 $$
-and the differentials $\dz = \dx+i\,\dy$ and $\dzbar = \dx-i\,\dy$, together with $f_z = f_x = f_y/i$ for holomorphic $f$, are on [[complex-analysis/holomorphic-functions/the-cauchy-riemann-equations#Derivatives in coordinates|the Cauchy--Riemann equations]].
+and the complex differentials $\dz = \dx+i\,\dy$ and $\dzbar = \dx-i\,\dy$ give the differential of a $C^1$ function as
+$dF=\frac{\partial F}{\partial z}\dz+\frac{\partial F}{\partial\bar z}\dzbar$ ([[D-OAFF5|the Wirtinger operators]]).
 
 :::
 
@@ -78,11 +78,11 @@ The first two items are [@Ahl73, ch. 1, §1.4, Conjugation, Absolute Value], whi
 ::: {.fact title="Sufficient conditions for holomorphy"}
 A function $f$ on an open set $U$ is holomorphic if any of the following holds:
 
-- $f$ is continuous and $\int_{\bd T} f = 0$ for every closed triangle $T\subseteq U$ ([[complex-analysis/cauchy-theory/morera-and-converses|Morera's theorem]]);
+- $f$ is continuous and $\int_{\bd T} f = 0$ for every closed triangle $T\subseteq U$ ([[T-LHSMY|Morera's theorem]]);
 - $f$ has a holomorphic primitive on $U$;
 - $f$ is locally the sum of a convergent power series.
 
-The first is [[complex-analysis/cauchy-theory/morera-and-converses|Morera's theorem]]; the second holds because the derivative of a holomorphic function is holomorphic, which is [@Ahl73, ch. 4, §2.3, Higher Derivatives], so a primitive of $f$ is holomorphic and hence so is $f$; the third is part (iii) of [@Ahl73, ch. 2, §2.2, Theorem 2], that a power series is an analytic function on its disc of convergence.
+The first is [[T-LHSMY|Morera's theorem]]; the second holds because the derivative of a holomorphic function is holomorphic, which is [@Ahl73, ch. 4, §2.3, Higher Derivatives], so a primitive of $f$ is holomorphic and hence so is $f$; the third is part (iii) of [@Ahl73, ch. 2, §2.4, Theorem 2], that a power series is an analytic function on its disc of convergence.
 :::
 
 ::: {.fact}
@@ -90,10 +90,10 @@ The first is [[complex-analysis/cauchy-theory/morera-and-converses|Morera's theo
 
 - If $f$ is holomorphic with no zeros, then $1/f$ is holomorphic; applying the maximum modulus principle or Liouville's theorem to $1/f$ gives the minimum modulus principle and constancy of entire functions bounded below by a positive constant.
 - If $f$ is holomorphic and nonvanishing on a simply connected domain $\Omega$, then $f = e^g$ for some holomorphic $g$ on $\Omega$, and $f^{1/n} \coloneqq \exp\qty{{1\over n}g}$ is a holomorphic $n$th root.
-- If $f$ is holomorphic on a neighborhood of $\bar\DD$ and $\abs{f} = 1$ on $\bd \DD$, then $f$ is a unimodular constant times a finite Blaschke product.
+- If $f$ is holomorphic on a neighborhood of $\bar\DD$ and $\abs{f} = 1$ on $\bd \DD$, then $f$ is a unimodular constant times a finite Blaschke product ([[P-OOVED]]).
 - The substitutions $z\mapsto 1/z$, $f\mapsto 1/f$, and $w = e^z$ transfer statements between $0$ and $\infty$, between zeros and poles, and between strips and annuli.
 
-The first item is [@Ahl73, ch. 4, §3.2, Zeros and Poles], which notes that $g=1/f$ is defined and analytic where $f\neq0$; the minimum principle is the maximum principle applied to that $1/f$, and the constancy follows as for Liouville. The second is [@Ahl73, ch. 4, §4.3, Exact Differentials in Simply Connected Regions], which constructs a single-valued logarithm of a nonvanishing function on a simply connected region; the $n$th root is $e^{g/n}$ as in [[D-T6INB]]. The third is [@Ahl73, ch. 6, §1.2, Boundary Behavior] for the unimodular-on-the-circle case, which is the finite Blaschke product [[T-W26VL]] describes.
+The first item is [@Ahl73, ch. 4, §3.2, Zeros and Poles], which notes that $g=1/f$ is defined and analytic where $f\neq0$; the minimum principle is the maximum principle applied to that $1/f$, and the constancy follows as for Liouville. The second is [@Ahl73, ch. 4, §4.3, Exact Differentials in Simply Connected Regions], which constructs a single-valued logarithm of a nonvanishing function on a simply connected region; the $n$th root is $e^{g/n}$ as in [[D-T6INB]]. The third is [[P-OOVED]], the factorisation of a function of modulus one on the circle into a unimodular constant and a finite product of [[D-MFPYG|Blaschke factors]].
 :::
 
 ## Constancy
@@ -105,18 +105,18 @@ Then $f$ is constant if any of the following holds:
 - $f' = 0$ on $U$; by the Cauchy--Riemann equations it suffices that $u_x = u_y = 0$ for $u = \Re f$.
 - One of $\Re f$, $\Im f$, $\abs{f}$, or $\arg f$ (for a continuous branch) is constant.
 - $\abs f$ attains a maximum in $U$, or $f$ is nonvanishing and $\abs f$ attains a minimum in $U$.
-- $f(U)$ is not open, for instance $f(U)\subseteq\RR$ or $f(U)\subseteq \bd\DD_r(0)$ ([[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|open mapping theorem]]).
+- $f(U)$ is not open, for instance $f(U)\subseteq\RR$ or $f(U)\subseteq \bd\DD_r(0)$ ([[C-FRF33|open mapping theorem]]).
 - $U$ is bounded, $f$ extends continuously to $\bar U$, $f$ has no zeros in $U$, and $\abs f$ is constant on $\bd U$: the maximum modulus principle applied to $f$ and to $1/f$ shows $\abs f$ is constant.
 
 If moreover $U = \CC$, then $f$ is constant if any of the following holds:
 
-- $f$ is bounded ([[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Liouville's theorem]]); if also $f(z)\to 0$ as $z\to\infty$, then $f\equiv 0$.
+- $f$ is bounded ([[T-QHIHJ|Liouville's theorem]]); if also $f(z)\to 0$ as $z\to\infty$, then $f\equiv 0$.
 - $\abs f\geq M$ for some $M>0$, by Liouville's theorem applied to $1/f$.
 - $e^f$ or $e^{-f}$ is bounded, since $\abs{e^{f}} = e^{\Re f}$.
 - $f$ is periodic with two $\RR$-linearly independent periods, since then $f$ is bounded by its bound on a closed fundamental parallelogram.
 - $f$ omits two values of $\CC$, for instance when $f(\CC)$ misses an open set ([[T-HWBWI|little Picard theorem]]).
 
-If $f$ and $g$ are holomorphic on a domain $U$ and $f-g$ has a zero set with a limit point in $U$, then $f = g$ ([[complex-analysis/cauchy-theory/the-identity-principle|identity principle]]).
+If $f$ and $g$ are holomorphic on a domain $U$ and $f-g$ has a zero set with a limit point in $U$, then $f = g$ ([[T-SVF2W|identity principle]]).
 
 :::
 
@@ -125,10 +125,10 @@ If $f$ and $g$ are holomorphic on a domain $U$ and $f-g$ has a zero set with a l
 ::: {.fact title="Classifying an isolated singularity"}
 Let $f$ be holomorphic on a punctured disc about $z_0$.
 
-- $z_0$ is removable if and only if $f$ is bounded near $z_0$.
-- $z_0$ is a pole if and only if $\abs{f(z)}\to\infty$ as $z\to z_0$.
-- $z_0$ is a pole of order $m$ if and only if $f(z) = (z-z_0)^{-m}g(z)$ with $g$ holomorphic near $z_0$ and $g(z_0)\neq 0$, equivalently if $1/f$ has a zero of order $m$ at $z_0$, equivalently if the Laurent expansion at $z_0$ has lowest term of degree $-m$.
-- $z_0$ is essential if and only if $\lim_{z\to z_0} f(z)$ exists neither in $\CC$ nor as $\infty$, equivalently if the Laurent expansion at $z_0$ has infinitely many terms of negative degree.
+- $z_0$ is [[D-BQLJV|removable]] if and only if $f$ is bounded near $z_0$.
+- $z_0$ is a [[D-AUD6K|pole]] if and only if $\abs{f(z)}\to\infty$ as $z\to z_0$.
+- $z_0$ is a [[D-AUD6K|pole of order $m$]] if and only if $f(z) = (z-z_0)^{-m}g(z)$ with $g$ holomorphic near $z_0$ and $g(z_0)\neq 0$, equivalently if $1/f$ has a zero of order $m$ at $z_0$, equivalently if the Laurent expansion at $z_0$ has lowest term of degree $-m$.
+- $z_0$ is [[D-VKP6N|essential]] if and only if $\lim_{z\to z_0} f(z)$ exists neither in $\CC$ nor as $\infty$, equivalently if the Laurent expansion at $z_0$ has infinitely many terms of negative degree.
   Two sequences $z_k\to z_0$ along which $f$ has different limits show this.
 
 A meromorphic function $f$ and its derivative $f'$ have the same poles, and at such a pole the order of $f'$ is one more than the order of $f$.
@@ -138,7 +138,6 @@ The three classifications are [@Ahl73, ch. 4, §3.1, Removable Singularities. Ta
 
 ::: {.fact}
 If $h$ has an essential singularity at $z_0$, then by the [[T-DDOWW|great Picard theorem]], in every punctured neighborhood of $z_0$, $h$ takes every value of $\CC$ infinitely often with at most one exception.
-With $h \coloneqq f/g$, this shows $f(z) = cg(z)$ for infinitely many $z$ near $z_0$, for all but at most one $c\in\CC$.
 
 :::
 
@@ -151,7 +150,7 @@ Let $f$ be holomorphic near $z_0$.
 - If $f(z_0)\neq 0$, then $f$ is nonzero on a neighborhood of $z_0$ by continuity.
 - If $f(z_0) = 0$ and $f$ is not identically zero near $z_0$, then $f$ is nonzero on a punctured neighborhood of $z_0$.
 - Dividing by a finite Blaschke product with the same zeros in $\DD$ gives a function without zeros in $\DD$ with the same modulus on $\bd\DD$.
-- Zeros in a region are counted by [[complex-analysis/counting-zeros/rouches-theorem|Rouché's theorem]] and [[complex-analysis/counting-zeros/the-argument-principle|the argument principle]].
+- Zeros in a region are counted by [[T-CJCKL|Rouché's theorem]] and [[T-JXDQT|the argument principle]].
 
 :::
 
@@ -164,12 +163,13 @@ Let $f$ be holomorphic near $z_0$.
 $$
 {1\over \abs{a\pm b}} \leq {1\over \abs{\abs{a} - \abs{b} } }.
 $$
-- [[T-LA2UI|The Cauchy integral formula]] bounds derivatives of $f$ by the maximum of $\abs f$ on a circle, and bounds $\abs{f}$ at interior points by an integral of $\abs f$ over a curve.
+- [[T-LA2UI|The Cauchy integral formula]] bounds $\abs{f}$ at an interior point by an integral of $\abs f$ over the curve.
+- [[T-22RQZ|Cauchy's inequalities]] bound the derivatives, $\abs{f^{(n)}(z_0)} \leq n!M/R^n$ for $M = \max_{\abs{z-z_0} = R}\abs f$.
 - If $u_n$ are harmonic on a bounded domain $U$, continuous on $\bar U$, and $u_n$ converges uniformly on $\bd U$, then $u_n$ converges uniformly on $\bar U$, by the maximum principle applied to $u_n - u_m$.
 - For $f\colon[a,b]\to\RR$ differentiable with $\abs{f'} \leq M$, the mean value theorem gives $\abs{f(x) - f(y)} \leq M\abs{x-y}$.
-- If $h$ is holomorphic on $\DD$ with $\abs h\leq 1$ and $h(0) = 0$, then $\abs{h(z)}\leq\abs z$ by the [[complex-analysis/conformal-maps/the-schwarz-lemma|Schwarz lemma]]; applied to $h \coloneqq f/g$ this gives $\abs{f(z)}\leq\abs{z}\abs{g(z)}$.
+- If $h$ is holomorphic on $\DD$ with $\abs h\leq 1$ and $h(0) = 0$, then $\abs{h(z)}\leq\abs z$ by the [[T-DAETF|Schwarz lemma]].
 
-The first inequality is the reverse triangle inequality of [@Ahl73, ch. 1, §1.5, Inequalities]; the third is the maximum principle applied to the harmonic difference, [@Ahl73, ch. 4, §6, Theorem 23]; the fourth is the mean value theorem, [@Rud76, ch. 5, Theorem 5.10], applied to each coordinate of $f$.
+The first inequality is the reverse triangle inequality of [@Ahl73, ch. 1, §1.5, Inequalities]; the fourth is the maximum principle applied to the harmonic difference, [@Ahl73, ch. 4, §6, Theorem 23]; the fifth is the mean value theorem, [@Rud76, ch. 5, Theorem 5.10], applied to each coordinate of $f$.
 :::
 
 ::: {.example}

@@ -40,6 +40,25 @@ audit:
     Recorded in the first step that the construction of the bracket itself is not re-derived here,
     only the dependence on the two nullhomotopies; the card does not claim a proof of the
     existence of the bracket. Statement unchanged; the card says the argument is its own.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    One degree corrected, from an independent review. The step wrote the composite $hg$ as
+    $hg\colon S^{i+j}\to\bullet$ while calling the torsor of nullhomotopies a $\pi_{j+k+1}$-torsor;
+    $hg$ has degree $j+k$, so its source is $S^{j+k}$, and the step now says so. The graded sign in
+    the stable ring, $\beta h=(-1)^{|\beta||h|}h\beta$, and the two indeterminacy subgroups,
+    $f\cdot\pi^s_{j+k+1}$ and $h\cdot\pi^s_{i+j+1}$, are unchanged and correct.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    The construction is rewritten in Hatcher's own terms, from a referee report: a nullhomotopy of
+    $gf$ gives $F\colon CW\to Y$ and a nullhomotopy of $hg$ gives $G\colon CX\to Z$, and
+    $\langle f,g,h\rangle\colon SW\to Z$ is $hF$ on one cone and $G(Cf)$ on the other, $Cf$ being
+    the cone on $f$ inside $CX$. The earlier phrases about extending over "the cone on $f$" and "the
+    cone on $h$" were ill typed. The indeterminacy steps now attribute the change of $G$ to the
+    second cone $G(Cf)$ and the change to $f\alpha$ to composing with $f$.
 ---
 
 ::: {.problem}
@@ -55,7 +74,7 @@ A Toda bracket is well defined only up to the choices of the two nullhomotopies,
 A representative of $\langle f,g,h\rangle$ is obtained by choosing nullhomotopies of $hg$ and of $gf$ and gluing the resulting extensions across the two cones; on the level of spectra, the choices are a nullhomotopy of $hg$ and a nullhomotopy of $gf$.
 
 ::: pf-proof
-This is the standard construction of the Toda bracket: if $gf\simeq\ast$ and $hg\simeq\ast$, the composite $hgf$ can be built in two ways, one extending $hg$ over the cone on $f$ and one extending $gf$ over the cone on $h$, and the difference of the two yields a class in the next degree. In the stable range all the constructions commute with suspension, so the bracket is a stable operation and its values form a coset of a subgroup of $\pi^s_{i+j+k+1}$. Nothing more about the construction is used below than that it depends on exactly these two nullhomotopies.
+Hatcher's construction, which the card follows: given $W\xrightarrow{f}X\xrightarrow{g}Y\xrightarrow{h}Z$ with $gf\simeq\ast$ and $hg\simeq\ast$, a nullhomotopy of $gf$ gives an extension $F\colon CW\to Y$ of $gf$, and a nullhomotopy of $hg$ gives an extension $G\colon CX\to Z$ of $hg$. The suspension $SW$ is the union of two copies of $CW$ glued along $W$ through $f$, and $\langle f,g,h\rangle\colon SW\to Z$ is $hF$ on the first cone and $G(Cf)$ on the second, where $Cf$ is the cone on $f$ sitting inside $CX$. In the stable range all of this commutes with suspension, so the bracket is a stable operation whose values form a coset of a subgroup of $\pi^s_{i+j+k+1}$, and it depends on exactly the two nullhomotopies chosen.
 :::
 
 :::
@@ -65,7 +84,7 @@ This is the standard construction of the Toda bracket: if $gf\simeq\ast$ and $hg
 Two choices of nullhomotopy of $hg$ differing by $\alpha\in\pi^s_{j+k+1}$ give representatives differing by $f\alpha\in f\cdot\pi^s_{j+k+1}$.
 
 ::: pf-proof
-The nullhomotopies of $hg\colon S^{i+j}\to\bullet$ — equivalently of a map to a point after suspension — form a torsor over $\pi_{j+k+1}$: the difference of two nullhomotopies of the same map is the class of a map on the cone, i.e. of $S^{j+k+1}$, and in the stable range that group is $\pi^s_{j+k+1}$ with no dependence on $i$. Replacing the nullhomotopy of $hg$ by another changes the gluing only in the part of the construction that extends over the cone on $f$, which is composing on the left with $f$; hence the representative changes by $f\alpha$.
+The nullhomotopies of $hg$ — a map of degree $j+k$, so of the sphere $S^{j+k}$ — form a torsor over $\pi_{j+k+1}$: the difference of two nullhomotopies of the same map is the class of a map on the cone $CX/X\cong SX$ restricted to the suspended sphere, i.e. an element of $\pi_{j+k+1}$, and in the stable range that group is $\pi^s_{j+k+1}$ with no dependence on $i$. Replacing $G$ by another extension changes only the second cone $G(Cf)$, and since $Cf$ lies over $f(W)$, the change is composing with $f$: the representative changes by $f\alpha$.
 :::
 
 :::

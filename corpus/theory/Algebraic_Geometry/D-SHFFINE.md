@@ -77,9 +77,14 @@ t_x=\sum_i(\eta_i)_x(s_x)=(\textstyle\sum_i\eta_i)_x(s_x)=s_x .
 $$
 Hence $t$ restricts to $s$, and $\mathcal{F}$ is soft.
 
-**(3) and (4) are stated here without proof.**
-Neither is proved on any card in the corpus, and the standard treatments are not retained: `vocabularies/references.yaml` has no key for Godement, Bredon or Warner, and `tmp/sources` holds no text of theirs, so no numbered statement could be read and none is cited.
-No converse is claimed: a soft sheaf need not be flasque, the sheaf of smooth functions on a manifold being soft and not flasque, and (3) uses paracompactness of the space rather than any property of the sheaf beyond softness.
+**(3) and (4) are not argued here.** They are the two instances in use of a theorem on families of supports, stated in the remark below.
+No converse is claimed: a soft sheaf need not be flasque, the sheaf of smooth functions on a manifold being soft and not flasque.
+:::
+
+::: {.remark title="Support for (3) and (4)"}
+Let $\Phi$ be a paracompactifying family of supports on $X$ and $\mathcal{A}$ a sheaf of abelian groups; then $H_\Phi^n(X,\mathcal{A})=0$ for every $n\ge1$ if $\mathcal{A}$ is flasque, and also if $\mathcal{A}$ is $\Phi$-soft (Godement, *Topologie algébrique et théorie des faisceaux*, Chapitre II, Théorème 4.4.3).
+Taking $\Phi$ to be the family of all closed subsets, $\Phi$-soft means soft and $H_\Phi$ is ordinary sheaf cohomology, which gives (3); taking $\Phi$ to be the relatively compact subsets, $\Phi$-soft means $c$-soft and $H_\Phi$ is the cohomology of $\Gamma_c$, which gives (4) and asks only for local compactness of $X$.
+A resolution by $\Phi$-soft sheaves computes $H_\Phi$ (Godement, Chapitre II, Théorème 4.6.2 and §4.7), so a fine resolution computes ordinary cohomology and a $c$-soft resolution computes compactly supported cohomology.
 :::
 
 ::: {.example}

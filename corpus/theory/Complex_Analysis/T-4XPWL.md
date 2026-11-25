@@ -31,7 +31,7 @@ $$
 for any $r<\rho<R$, independent of $\rho$.
 The expansion is unique.
 
-The existence of the expansion on an annulus is [@SS03, Exercise 3 of Chapter 3], where it is stated with the proof sketched from the Cauchy integral formula on the two boundary circles.
+The existence of the expansion on an annulus is [@SS03, ch. 3, §9, Problem 3], where it is stated with the proof sketched from the Cauchy integral formula on the two boundary circles.
 
 If $r=0$, so that $z_0$ is an [[D-IWIA5|isolated singularity]] of $f$, then the [[D-C3JIU|principal part]] $\sum_{n<0}c_n(z-z_0)^n$ has no nonzero terms if and only if $z_0$ is [[D-BQLJV|removable]], finitely many if and only if $z_0$ is a [[D-AUD6K|pole]], and infinitely many if and only if $z_0$ is [[D-VKP6N|essential]] [@Ahl79, Chapter 5, Section 1.3].
 :::

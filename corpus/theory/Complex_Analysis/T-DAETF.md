@@ -22,5 +22,5 @@ Then
 
 2. $\abs{f'(0)}\leq1$.
 
-If $\abs{f(z_0)}=\abs{z_0}$ for some $z_0\in\DD\setminus\{0\}$, or if $\abs{f'(0)}=1$, then $f$ is a rotation: there is $\lambda\in\CC$ with $\abs{\lambda}=1$ such that $f(z)=\lambda z$ for all $z\in\DD$ [@SS03, Lemma 2.1 of Chapter 8 (p. 218)].
+If $\abs{f(z_0)}=\abs{z_0}$ for some $z_0\in\DD\setminus\{0\}$, or if $\abs{f'(0)}=1$, then $f$ is a rotation: there is $\lambda\in\CC$ with $\abs{\lambda}=1$ such that $f(z)=\lambda z$ for all $z\in\DD$ [@SS03, ch. 8, Lemma 2.1].
 :::

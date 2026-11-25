@@ -21,7 +21,7 @@ Then the integral of $f$ over the boundary of $T$ vanishes:
 $$
 \int_{\bd T}f(z)\dz=0.
 $$
-See [@SS03].
+This is [@SS03, ch. 2, Theorem 1.1].
 :::
 
 ::: {.remark}

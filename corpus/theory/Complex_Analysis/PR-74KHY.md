@@ -18,9 +18,9 @@ review: draft
 Let $z_1, z_2, z_3\in\CC$ be distinct.
 The [[D-FRVBV|Möbius transformation]]
 $$
-T(z) \coloneqq { (z-z_1) (z_2-z_3) \over (z-z_3) (z_2 - z_1)}
+T(z) \coloneqq { (z-z_2) (z_1-z_3) \over (z-z_3) (z_1 - z_2)}
 $$
-satisfies $T(z_1)=0$, $T(z_2)=1$, and $T(z_3)=\infty$, and it is the unique Möbius transformation with these values.
+satisfies $T(z_1)=1$, $T(z_2)=0$, and $T(z_3)=\infty$, and it is the unique Möbius transformation with these values.
 It is denoted $(z; z_1, z_2, z_3)$.
 
 Consequently, for distinct $w_1,w_2,w_3\in\CC$, the map
@@ -32,13 +32,13 @@ is the unique Möbius transformation with $S(z_j)=w_j$ for $j=1,2,3$.
 
 ::: {.remark}
 In [@Ahl79, Chapter 3, Section 3.2, Definition 12], the cross ratio $(z_1,z_2,z_3,z_4)$ has four arguments: it is the image of $z_1$ under the Möbius transformation carrying $z_2, z_3, z_4$ to $1, 0, \infty$.
-In that notation, $(z;z_1,z_2,z_3)=(z,z_2,z_1,z_3)$.
+In that notation, $(z;z_1,z_2,z_3)=(z,z_1,z_2,z_3)$: the three-argument form is the four-argument cross ratio with the evaluation point first.
 :::
 
 ::: {.remark}
 The construction extends to triples in $\CC\cup\theset{\infty}$: when one of $z_1,z_2,z_3$ is $\infty$, delete the two factors containing it, giving
 $$
-(z;\infty,z_2,z_3)={z_2-z_3\over z-z_3},\qquad (z;z_1,\infty,z_3)={z-z_1\over z-z_3},\qquad (z;z_1,z_2,\infty)={z-z_1\over z_2-z_1}.
+(z;\infty,z_2,z_3)={z-z_2\over z-z_3},\qquad (z;z_1,\infty,z_3)={z_1-z_3\over z-z_3},\qquad (z;z_1,z_2,\infty)={z-z_2\over z_1-z_2}.
 $$
-Each is a Möbius transformation with the values $0,1,\infty$ at the three points, so the composite $S$ is defined for distinct triples in $\CC\cup\theset{\infty}$.
+Each is a Möbius transformation with the values $1,0,\infty$ at the three points, so the composite $S$ is defined for distinct triples in $\CC\cup\theset{\infty}$.
 :::

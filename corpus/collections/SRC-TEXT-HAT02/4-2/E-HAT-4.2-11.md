@@ -66,6 +66,28 @@ audit:
     section exists because a homomorphism out of a free group is determined by arbitrary images of a free
     basis. The RP^2 case is right: pi_2'(RP^2) = Z/2 and pi_2'(RP^2, (RP^2)^1) = Z, so no injective
     homomorphism exists.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 11. One false step repaired: `abelian` claimed that
+    $\pi_2(X,X^1)$ is abelian for every connected CW complex, by the Eckmann--Hilton argument. The
+    relative $\pi_2$ need not be abelian — for $X=T^2$ it is $\pi_2(\RR^2,\text{grid})\cong
+    \pi_1(\text{grid})$, free of countable rank — and the card's own prose already said so, so the
+    step contradicted it. The printed exercise asks only for a bijection
+    $\pi_2(X,X^1)\approx\pi_2(X)\times K$; the step now proves that: $K$, a subgroup of the free
+    group $\pi_1(X^1)$, is free, a loop representing an element of $K$ bounds a disc in $X$ and so
+    gives a homomorphic section of $\partial$, and a split surjection of groups has the asserted
+    bijection. The step `rp2` and the rest of the argument are unchanged and correct.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Strengthening of the preceding event's repair, from an independent reading: the step proved a
+    bijection where the printed exercise asserts an isomorphism. The image of $\pi_2(X)$ is central in
+    $\pi_2(X,X^1)$ — Lemma 4.39, which is the content of Exercise 27 — so $i(a)$ and $s(k)$ commute
+    and $(a,k)\mapsto i(a)s(k)$ is a homomorphism; the step now says this and concludes the
+    isomorphism, with no abelianness of $\pi_2(X,X^1)$ used.
 ---
 
 ::: {.problem}
@@ -137,10 +159,10 @@ Define $\Psi(a,k)=a+s(k)\in G$. It is a homomorphism because $G$ is abelian, it 
 
 
 ::: {.pf-step #abelian}
-$\pi_2(X,X^1)$ is abelian, so step [](#split-exact){.pf-ref} applies and $\pi_2(X,X^1)\cong\pi_2(X)\times K$.
+$\pi_2(X,X^1)$ is in bijection with $\pi_2(X)\times K$, and the bijection is the one that sends $(a,k)$ to the product of the image of $a$ with the chosen lift of $k$.
 
 ::: pf-proof
-$\pi_n$ of a pair is abelian for $n\ge2$: the group structure comes from juxtaposition of maps of the $n$-disk and the two juxtapositions satisfy the interchange law, which forces commutativity when $n\ge2$ (the Eckmann--Hilton argument). With the section of step [](#split){.pf-ref} this gives the direct product decomposition. Exercise 27's statement that the image of $\pi_2(X)$ is central in $\pi_2(X,X^1)$ is a stronger fact and is automatic here, centrality being trivial in an abelian group.
+The group $\pi_2(X,X^1)$ need not be abelian — for $X=T^2$ it is $\pi_2(\RR^2,\text{grid})\cong\pi_1(\text{grid})$, free of countable rank — so what is used is the section, not commutativity. The kernel $K$ of $\pi_1(X^1)\to\pi_1(X)$ is free: it is a subgroup of the free group $\pi_1(X^1)$. A loop in $X^1$ representing an element of $K$ is nullhomotopic in $X$, so it bounds a map of the $2$-disc into $X$ and hence defines an element of $\pi_2(X,X^1)$ mapping to it; choosing such elements for the generators of $K$ and extending linearly gives a homomorphism $s\colon K\to\pi_2(X,X^1)$ with $\partial s=\mathrm{id}_K$. The map $(a,k)\mapsto i(a)\,s(k)$ from $\pi_2(X)\times K$ to $\pi_2(X,X^1)$ is an isomorphism of groups: it is surjective because $g\,s(\partial g)^{-1}$ lies in the kernel of $\partial$, which is the image of $i$, and injective because $i(a)s(k)=1$ forces $k=\partial i(a)s(k)=1$ and then $a=1$; and it is a homomorphism because the image of $i$ lies in the centre of $\pi_2(X,X^1)$ — that is Lemma 4.39, the statement of Exercise 27 — so that $i(a)$ and $s(k)$ commute for every $a$ and $k$. This is the isomorphism the exercise asserts, and no abelianness of $\pi_2(X,X^1)$ enters.
 :::
 
 :::

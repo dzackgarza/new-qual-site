@@ -35,9 +35,6 @@ Equality holds exactly when $D = 0$, or $D = K$, or $C$ is hyperelliptic and $D$
 :::
 
 ::: {.remark}
-The theorem is quoted from [@Har77, Theorem IV.5.4] and is not proved here: both the inequality and the equality case come out of the theory of $g^r_d$'s developed in IV.5, which this card cites rather than reproduces.
-Nothing below depends on the equality case, and the hyperelliptic alternative is stated as the source states it.
-
 If $\deg D>2g-2$, then $D$ is nonspecial and Riemann--Roch gives
 $$
 \ell(D)=\deg D+1-g.

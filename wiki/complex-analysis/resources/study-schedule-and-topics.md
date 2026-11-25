@@ -1,15 +1,17 @@
 ---
-order: 0
-title: "Topics"
+order: 2
+title: "Topic index"
 ---
 
-# Topics
+# Topic index
 
-The [UGA complex analysis prelim review topic list](attachments/Complex_Analysis_Prelim_Review.pdf) groups the material as follows; each topic links the page that treats it.
+The chapter's syllabus, section by section with its references, is on [[complex-analysis/index#The syllabus|the chapter index]]; this page groups the same material by theme, and each topic links the page that treats it. The [UGA complex analysis prelim review topic list (R. Varley, rev. 2007)](/assets/attachments/Complex_Analysis_Prelim_Review.pdf) is a separate resource.
 
 ## Preliminaries
 
-- $\CC$, $\DD$, $\HH$, $\CP^1$: [[complex-analysis/basics/the-riemann-sphere|the Riemann sphere]]
+- $\CC$, $\CP^1$: [[complex-analysis/basics/the-riemann-sphere|the Riemann sphere]]
+- $\DD$: [[complex-analysis/conformal-maps/the-hyperbolic-metric|the unit disc]]
+- $\HH$: [[complex-analysis/conformal-maps/sl2-and-modular-forms|the upper half-plane]]
 - [[complex-analysis/basics/complex-arithmetic|Complex arithmetic]]
 - [[complex-analysis/holomorphic-functions/complex-arithmetic-and-log|Arguments, branch cuts, and the complex logarithm]]
 - [[complex-analysis/basics/precalculus|Elementary geometry and conic sections]]
@@ -36,18 +38,18 @@ The [UGA complex analysis prelim review topic list](attachments/Complex_Analysis
 - [[complex-analysis/cauchy-theory/cauchys-theorem|Cauchy's theorem]] and [[complex-analysis/cauchy-theory/morera-and-converses|Morera's theorem]]
 - [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|The maximum modulus principle]]
 - [[complex-analysis/cauchy-theory/schwarz-reflection|The Schwarz reflection principle]]
-- [[complex-analysis/cauchy-theory/the-integral-formula|The mean value property]]
+- [[complex-analysis/cauchy-theory/the-integral-formula#The mean value property|The mean value property]]
 - [[complex-analysis/residues-and-contours/computing-residues|Residues]]
 - [[complex-analysis/residues-and-contours/which-contour-do-i-close|Contour integration]]
 
 ## Entire functions
 
-- [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Liouville's theorem]]
+- [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville#Liouville|Liouville's theorem]]
 - [[complex-analysis/appendices/appendix-fta-proofs|The fundamental theorem of algebra]]
 
 ## Zeros
 
-- [[complex-analysis/counting-zeros/the-argument-principle|The argument principle]]
+- [[complex-analysis/counting-zeros/the-argument-principle#The statement|The argument principle]]
 - [[complex-analysis/counting-zeros/rouches-theorem|Rouché's theorem]]
 - [[complex-analysis/counting-zeros/hurwitz|Hurwitz's theorem]]
 
@@ -71,7 +73,7 @@ The [UGA complex analysis prelim review topic list](attachments/Complex_Analysis
 
 ## Further topics
 
-- $\SL_2(\RR)$, modular forms, and elliptic curves: [[complex-analysis/conformal-maps/sl2-and-modular-forms|modular forms]] and [[complex-analysis/appendices/special-functions#Elliptic functions|elliptic functions]]
+- $\SL_2(\RR)$ and modular forms: [[complex-analysis/conformal-maps/sl2-and-modular-forms|modular forms]] and [[complex-analysis/appendices/special-functions#Elliptic functions|elliptic functions]]
 - [[complex-analysis/conformal-maps/the-hyperbolic-metric|The hyperbolic metric]]
 - [[complex-analysis/conformal-maps/riemann-surfaces-and-uniformization|Riemann surfaces]] and [[complex-analysis/conformal-maps/riemann-surfaces-and-uniformization#Uniformization|uniformization]]
 - [[complex-analysis/appendices/special-functions|Special functions]] — the [[complex-analysis/appendices/special-functions#The Gamma function|Gamma function]], the [[complex-analysis/appendices/special-functions#The Riemann zeta function|zeta function]], and [[complex-analysis/appendices/special-functions#Elliptic functions|elliptic functions]]

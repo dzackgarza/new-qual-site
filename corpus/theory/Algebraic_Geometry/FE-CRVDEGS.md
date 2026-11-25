@@ -49,7 +49,8 @@ The hyperplane section $K - P$ is special, in accordance with $g \geq \tfrac{1}{
 :::
 
 ::: {.proposition}
-For $g \geq 2$, a curve of genus $g$ has a nonspecial very ample divisor of degree $d$ exactly when $d \geq g+3$, and then it embeds in $\PP^3$.
+For $g \geq 2$, a curve of genus $g$ has a nonspecial very ample divisor of degree $d$ exactly when $d \geq g+3$ [@Har77, Proposition IV.6.1].
+For such a divisor Riemann--Roch gives $\dim\linearsystem{D}=d-g$, so $\linearsystem{D}$ embeds $C$ in $\PP^{d-g}$; degree $g+3$ is the case of an embedding in $\PP^3$, and the higher degrees embed in higher projective spaces.
 If the hyperplane section is special and $C$ is not planar, then $d \geq 6$ and $g \geq \tfrac{1}{2}d + 1$; the only such curve with $d=6$ is the canonical genus-$4$ curve.
 :::
 

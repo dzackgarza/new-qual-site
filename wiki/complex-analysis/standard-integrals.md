@@ -16,8 +16,14 @@ The arc contributes $\bigo(1/R)$ by the [[T-SFXI7|ML estimate]], so it vanishes 
 The integrand has a simple pole at $z=i$ with residue $1/(2i)$, and $2\pi i\cdot{1\over 2i} = \pi$.
 :::
 
-::: {.remark}
-The same contour evaluates every rational integrand whose denominator has no real zeros and degree at least two more than the numerator: the integrand is $\bigo(R^{-2})$ on the arc, so the arc integral is $\bigo(R^{-1})$, and the enclosed residues are the poles in $\HH$.
+::: {.proposition title="Rational integrands with denominator two degrees higher"}
+If $f = p/q$ is rational, $q$ is free of real zeros, and $\deg q\geq\deg p+2$, then
+$$
+\int_\RR f(x)\dx = 2\pi i\sum_{z_0\in\HH}\Res_{z=z_0}f,
+$$
+the sum over the [[D-AUD6K|poles]] in $\HH$, the arc integral being $\bigo(R^{-1})$ by the [[T-SFXI7|ML estimate]].
+
+This is item 2 of [@Ahl73, ch. 4, §5.3], which states the criterion and that the integral over the semicircle tends to $0$.
 :::
 
 ::: {.example title="$\displaystyle\int_\RR {\cos x\over 1+x^2}\dx = {\pi\over e}$"}
@@ -31,10 +37,10 @@ Integrate $e^{iz}/z$ over the semicircle in $\HH$ indented above the pole at the
 [[T-ZO5UU|Jordan's lemma]] kills the large arc, and the small clockwise half-circle contributes $-i\pi\Res_{z=0}(e^{iz}/z) = -i\pi$ in the limit.
 No pole lies inside the indented contour, so the closed integral vanishes and
 $$
-\operatorname{PV}\int_\RR {e^{ix}\over x}\dx = i\pi,
+\PV\int_\RR {e^{ix}\over x}\dx = i\pi,
 $$
 whose imaginary part is $\pi$.
-The principal value is needed for $e^{ix}/x$, whose real part $\cos x/x$ is not integrable near $0$; the integral of $\sin x/x$ converges as an improper integral, while $\int_\RR \abs{\sin x/x}\dx$ diverges.
+The [[D-PV4RQ|principal value]] is needed for $e^{ix}/x$, whose real part $\cos x/x$ is not integrable near $0$; the integral of $\sin x/x$ converges as an improper integral, while $\int_\RR \abs{\sin x/x}\dx$ diverges.
 :::
 
 ::: {.example title="$\displaystyle\int_0^{2\pi} {\dtheta\over a+b\cos\theta} = {2\pi\over\sqrt{a^2-b^2}}$, $a>\abs b$"}

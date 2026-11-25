@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.definition}
-For $a\in\DD$, the \dfn{Blaschke factor}, or \dfn{hyperbolic translation}, at $a$ is
+For $a\in\DD$, the \dfn{Blaschke factor} at $a$ is
 $$
 \psi_a(z)\coloneqq\frac{a-z}{1-\bar a z},\qquad z\in\CC,\ \bar a z\neq1.
 $$

@@ -33,5 +33,4 @@ order: 10
 
 - [[attachments/JHU Years of Analysis Exams.pdf|JHU analysis exams]]
 
-- [Utah Math 6220 assignments](http://www.math.utah.edu/~astephan/134.pdf)
 

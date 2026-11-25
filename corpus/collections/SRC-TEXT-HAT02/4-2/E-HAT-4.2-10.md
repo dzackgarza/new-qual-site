@@ -38,6 +38,16 @@ audit:
   date: 2026-11-18
   note: >-
     Lamport structure for the computation and the four examples, which is what Queue D asks for on this card. The coinvariant description of pi_n', the computation Z/(p(1)), the order statement and the four examples are separate steps. The prose's identification of pi_n'(X) with R/(p, t-1) is now a step that says the generator acts as t and that imposing the relations for the generator suffices, and the evaluation map R -> Z with kernel (t-1) is written out rather than assumed. No retained set covers this exercise; the card now says so. Locator: the exercise on printed p. 389. No statement repair.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.2 Exercise 10. The computation and the four examples are correct. One
+    correction: the solution said no retained set covers the exercise, which is false — Sam's §4.2
+    Exercise 10 is retained — and it said that the retained sets reach §4.2 only in Proudfoot's
+    homework 7, which is also false, Sam's set covering twenty-two §4.2 exercises. The paragraph now
+    names Sam's solution and records that Sam's example $p(t)=t^2+t+1$ is not correct and is not used
+    here: $\ZZ[t,t^{-1}]/(t^2+t+1)$ is free of rank two as an abelian group.
 ---
 
 ::: {.problem}
@@ -47,7 +57,7 @@ Give examples showing that the group $\pi_n(X)$ can be finitely generated or not
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: the Hatcher sets in the checkout reach §4.2 only in Proudfoot's Homework #7, whose coverage line reads "Chapter 4.2, Problems 1, 2, 30, 31, 32, 39". The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 10.
+A retained solution covers this exercise: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.2 Exercise 10** (`tmp/sources/hatcher-solutions-sam-2008.md`). Sam's example $p(t)=t^2+t+1$, which he calls not finitely generated, is not used below and is not correct — $\ZZ[t,t^{-1}]/(t^2+t+1)$ is free of rank two as an abelian group — and the four examples on this card are its own, as is the argument, checked against Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 10.
 
 Let $R=\ZZ[t,t^{-1}]$ and $M=\pi_n(X)\cong R/(p(t))$, which is a module over $R$ because $\pi_n(S^1\vee S^n)$ is free on one generator as a $\ZZ[t,t^{-1}]$-module.
 

@@ -560,6 +560,166 @@ audit:
     E^2 = -1, the value (H + E_1)^2 = 4, the intersections of H + E_1 with the other 26 lines, and
     the corresponding values (H + F_56)^2 = 4 and (H + F_56).F_56 = 0. Not checked: no source was
     read for this event, and neither intersection table was recomputed from a printed copy.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Citation repairs on the third condition's argument, and one sentence of
+    justification added, with no change of mathematics. (i) The Hodge index
+    inequality was cited as Theorem V.1.9 itself, which the book states only
+    for a divisor meeting the ample class in 0. The three places that use
+    (D.H)^2 >= 3D^2 now name the divisor (H^2)D - (D.H)H, which does meet H in
+    0, so the inequality is the theorem at its own number. (ii) The image of
+    the morphism defined by the complete system was called a surface without
+    argument; the sentence now adds that D^2 > 0 excludes an image of
+    dimension at most 1, whose pullback of an ample class has square 0. Read
+    for (i): Theorem V.1.9 and its proof in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md. Not read: Remark
+    1.9.1, which is about the signature and states no inequality, and no
+    printing of the book. The card's own parts and the characteristic-free
+    claim are unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    The open item recorded for this card is closed, and its being open is
+    recorded here first. As the card stood at 081eb8789f, line 774 read
+    "writing D ~ a l - sum_ib_ie_i as in Proposition 4.8", and that notation is
+    used from step negative-square-is-a-line on: the proof presupposed that X,
+    a smooth cubic surface over an algebraically closed field of
+    characteristic p, is the blowup of P^2 at six points, which is what
+    Notation V.4.7.3 and Proposition V.4.8 assume and what their numbers do
+    not supply for an arbitrary smooth cubic surface. The characteristic claim
+    of the card therefore rested on an unproved identification, and that is now
+    a step of the proof, geometric-marking, placed first. It cites Dolgachev
+    and Duncan, Automorphisms of cubic surfaces in positive characteristic
+    (2017), §2, over an algebraically closed field of arbitrary characteristic:
+    27 lines, each an exceptional curve of the first kind; a smooth cubic
+    surface obtained by blowing up six points of P^2 in general position;
+    conversely six mutually skew lines blown down to six points, a geometric
+    marking; the remaining 21 lines as the strict transforms of the 15 lines
+    and 6 conics. Each blowdown is the contraction of a curve isomorphic to P^1
+    of self-intersection -1, which exists by Castelnuovo's criterion, Theorem
+    V.5.7. Read for this: Dolgachev--Duncan §2 in
+    tmp/sources/dolgachev-duncan-2017-automorphisms-cubic-surfaces-char-p.md,
+    and Theorem V.5.7 with its preamble in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md. No other step changed
+    and no claim was weakened: the proof now applies to a smooth cubic surface
+    in every characteristic, which before this step it did only under an
+    assumption. Not read: any printing of either work, only the text versions
+    in tmp/sources; and Dolgachev--Duncan's own proof of the 27-line count,
+    which §2 states without proof.
+- event: source-corrected
+  by: claude
+  date: 2026-11-22
+  note: >-
+    The attribution in the preceding event of this date is withdrawn: it
+    described step geometric-marking as citing Dolgachev and Duncan,
+    Automorphisms of cubic surfaces in positive characteristic (2017), §2. That
+    section carries no numbered statement — its numbered results are Theorem
+    2.1, Theorem 2.4 and Remark 2.5, none of them about lines or blowups — and
+    its prose sentence that a smooth cubic surface "can be obtained by blowing
+    up six points in general position" states neither a field range as a
+    hypothesis nor the two general-position conditions as conclusions, so it
+    could not discharge the step. The step now cites numbered statements of R.
+    Vakil, The Rising Sea (21 October 2025): Theorem 27.0.2, "Every smooth
+    cubic surface over k is isomorphic to P^2 blown up at six points", whose
+    field convention §27.0.3 fixes as "X will be a smooth cubic surface over an
+    algebraically closed field k", with no hypothesis on the characteristic in
+    the statement; Exercise 27.1.B, that a curve on a smooth cubic surface is a
+    line if and only if it is an exceptional curve of the first kind; and
+    Exercise 27.3.E, whose conclusion is that blowing up six points gives a
+    smooth cubic surface only when the points are distinct, no three on a line
+    and not all on a conic. The card derives the second and the third itself as
+    well, from the adjunction formula (II, 8.20), H = -K_X, Proposition V.3.3
+    and the ampleness of H. What Vakil's own proof of Theorem 27.0.2 uses is
+    disclosed here: §27.3 reduces it to Exercise 27.2.J, two disjoint lines with
+    exactly five lines meeting both, and §27.2 proves 27.2.J under the
+    assumption char k = 0, "which carries through without change if char k != 3",
+    the one required check being Exercise 27.1.C, the 27 lines of the Fermat
+    cubic, which is smooth in every characteristic but 3; the case p = 3 is
+    Vakil's starred Exercise 27.2.K, stated and not worked out. So in
+    characteristic 3 the card rests on Theorem 27.0.2 as stated rather than on
+    its printed proof, and Dolgachev and Duncan's prose remains the only
+    assertion for that characteristic among the retained sources. Read in this
+    pass: Vakil's Theorem 27.0.1 and Theorem 27.0.2, §27.0.3, §27.1 Exercises
+    27.1.A to 27.1.C, §27.2 to Exercise 27.2.K, and §27.3 through the proof of
+    Theorem 27.0.2, in tmp/sources/vakil-rising-sea-2025-10-21.md;
+    Dolgachev--Duncan §2 and its numbering; and the adjunction formula (II,
+    8.20) with Proposition V.3.3 in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md. No other step changed.
+- event: source-checked
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Corroboration of the numbered statement, and the unheld references it does
+    not use. Hartshorne asserts the same identification, in prose and without a
+    number, in Remark V.4.7.1: that every Del Pezzo surface is either one given
+    by (4.7) for a suitable choice of points or the 2-uple embedding of a
+    quadric, that "in particular, every nonsingular cubic surface in P^3 can be
+    obtained by blowing up 6 points in the plane", that for a cubic surface the
+    condition omega_X = O_X(-1) is automatic by Chapter II Exercise 8.4, and
+    that proofs are in Manin, Cubic Forms, §24, or Nagata, I, Theorem 8. Read
+    for this: Remark V.4.7.1 in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, and Chapter II Exercise
+    8.4, which is not read here. Neither Manin nor Nagata is held in
+    tmp/sources, so neither was read and neither is cited by number on the
+    card; the numbered statement the step uses remains Vakil's Theorem 27.0.2.
+    This event adds no claim to the mathematics.
+- event: source-checked
+  by: claude
+  date: 2026-11-22
+  note: >-
+    What the characteristic-3 caveat leaves open, and what closes part of it.
+    The 27 lines themselves are available in every characteristic by a proof
+    that uses no separability, no discriminant and no vanishing theorem: the
+    Fano scheme of lines of X is the zero scheme in the Grassmannian G(1,3) of
+    the section of Sym^3 S^* given by the cubic form; by adjunction N_{L/X} is
+    a line bundle of degree 2 - 3 = -1, hence O(-1), so h^0 = h^1 = 0 and every
+    point of the zero scheme is isolated and reduced; and c_4(Sym^3 S^*) = 27.
+    That last number, checked by hand in this pass: the Chern roots of
+    Sym^3 S^* are -3x, -2x-y, -x-2y, -3y, so
+    c_4 = 9xy(2x^2+5xy+2y^2) = 9(2c_1^2c_2+c_2^2), and on G(2,4) the Pieri
+    products give c_1^2 c_2 and c_2^2 both equal to the class of a point. The
+    zero scheme therefore has length 27 and consists of 27 reduced points,
+    which is the 27-lines theorem in every characteristic. This is not the
+    route the step uses and it is not written out on the card; it is recorded
+    because it is the characteristic-free substitute for the one part of
+    Theorem 27.0.2 that Vakil's printed proof leaves to characteristic != 3. It
+    does not by itself give the six mutually skew lines nor the identification
+    of the surface as a blowup, which remain where the step says they are.
+- event: source-checked
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Published-solution pass for issue #160, on the transcription rule: the
+    nonsingularity of the member of alternative (c) is proved by no retained
+    solution set, in any characteristic, and the "Published solution" remark
+    now says so and names the sets searched. Read for that, each at its own
+    numbering: Egbert's entry 5.4.8, which quotes the statement and gives no
+    solution; Yang Pi-Yeh's Solution 5.4.8, whose (*) supplies an irreducible
+    nonsingular member only for a class meeting every line strictly
+    positively, its (i) implies (iii) direction contracts to X_r without
+    excluding D^2 = 0 from the third alternative, and the hypothesis
+    D^2 > 0 of the exercise is never used; the National Taiwan University
+    Algebraic Geometry II (2020 Spring) Chapter V §4 homework, whose
+    exercises are 1, 2, 3, 4, 5, 7, 10, 11, 12, 14 and 16 and which therefore
+    does not treat this one; and, for absence, the sets that carry no
+    Chapter V §4 exercise, Borcherds (through IV.1), Cais (through Chapter 4),
+    Cutrone--Marshburn (Chapters 1 and 2), Ionita--Kumar (Chapter I), Kim
+    (§2.4), Lomont, Okamoto (§II.9), Park (Chapter 4 and §V.5), Saglam--Chris (Chapter III),
+    Sam (through IV.6), Stein (III.7), Troiani (Chapter II) and Reiser
+    (IV.2.5). Read in this pass: the printed text of Exercise V.4.8 in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, which asks for the two
+    equivalences and the three alternatives; Yang's Solution 5.4.8 in
+    tmp/sources/lfwin-hartshorne-solutions.md; Egbert's entry 5.4.8; and the
+    exercise list of the NTU file. Not read in this pass: Hartshorne's
+    Theorem 4.9, Theorem 4.11, Theorem V.1.6, Theorem V.1.9, Corollary
+    III.7.7 and Theorem II.8.6A, whose statements the steps cite and whose
+    numbered statements earlier events record; Harbourne's and Vakil's
+    statements only as the card records them; and any printing of the book,
+    only the text version in tmp/sources. No proof step and no statement
+    changed on the card in this pass.
 ---
 
 ::: {.problem}
@@ -580,6 +740,19 @@ Write $X$ for the cubic surface, so that $-K_X=H$ is the hyperplane class, and l
 algebraically closed.
 
 ::: pf
+
+::: {.pf-step #geometric-marking}
+$X$ admits a geometric marking: six mutually skew lines whose blowdown is a morphism $\pi\colon X\to\PP^2$ making $X$ the blowup of $\PP^2$ at six distinct points, no three collinear and not all six on a conic. With it, every divisor class is written $D\sim a\ell-\sum_ib_ie_i$, and the intersection numbers used below are those of Proposition 4.8.
+
+::: pf-proof
+R. Vakil, *The Rising Sea* (21 October 2025), Theorem 27.0.2, states over an algebraically closed field $k$, with no hypothesis on the characteristic, that every smooth cubic surface over $k$ is isomorphic to $\PP^2$ blown up at six points; §27.0.3 of the same book fixes that convention for the chapter, and the surface is the smooth cubic surface of that chapter. Let $\pi\colon X\to\PP^2$ be the resulting morphism and $E_1,\ldots,E_6$ its exceptional curves, and let $H$ be the class of a hyperplane section. By the adjunction formula (II, 8.20), $K_X=(K_{\PP^3}\tensor\OO_{\PP^3}(X))\restriction_X=(-4H+3H)\restriction_X=-H$, so $H=-K_X$. Each $E_i$ is isomorphic to $\PP^1$ with $E_i^2=-1$ and $E_i\cdot K_X=-1$, so $E_i\cdot H=-E_i\cdot K_X=1$, and $E_i$ is a line of the cubic surface by Vakil's Exercise 27.1.B, a curve on a smooth cubic surface being a line exactly when it is an exceptional curve of the first kind. Distinct exceptional curves of a blowup are disjoint, so the six are mutually skew.
+
+The six points $\pi(E_1),\ldots,\pi(E_6)$ are in general position. By Proposition V.3.3 applied to the six blowups, $K_X=\pi^*K_{\PP^2}+\sum_iE_i=-3\ell+\sum_ie_i$, so $H=3\ell-\sum_ie_i$. If three of the points lay on a line $M$, the strict transform of $M$ would be an effective curve of class $\ell-e_1-e_2-e_3$ and of $H$-degree $3-3=0$; if all six lay on a conic $C$, the strict transform of $C$ would be an effective curve of class $2\ell-\sum_ie_i$ and of $H$-degree $6-6=0$. An effective curve on the surface $X$ has positive degree in the class $H$ of a hyperplane section, so neither curve exists: no three of the points are collinear, and not all six lie on a conic. This is the conclusion of Vakil's Exercise 27.3.E, drawn there from the existence of a curve of nonnegative degree.
+
+After the marking $\Pic X$ is free on $\ell,e_1,\ldots,e_6$ with the intersection numbers of Proposition V.4.8(a) and (b): that proposition and Notation V.4.7.3 phrase these for the surface obtained by blowing up the six points, and the marking is an isomorphism from $X$ to that surface, so the classes and their pairings carry over.
+:::
+
+:::
 
 ::: {.pf-step #negative-square-is-a-line}
 If $D$ contains an irreducible curve $C$ with $C^2<0$, then $C$ is one of the $27$ lines, so $D$ is
@@ -671,8 +844,10 @@ the left side is negative for $n>H\cdot E$. So $D$ meets every effective class n
 Second, $D$ is effective: by B. Harbourne, *Anticanonical Rational Surfaces* (24 January 1996,
 arXiv:alg-geom/9509001v2), Corollary II.3, a numerically effective divisor meeting the
 anticanonical class nonnegatively lies in $\mathrm{Eff}$, and here $-K_X\cdot D=D\cdot H>0$, while
-$D\cdot H\ge2$: the Hodge index inequality, Theorem V.1.9 of the book, gives
-$3D^2\le(D\cdot H)^2$ with $D^2>0$, so $(D\cdot H)^2\ge4$ and $D\cdot H$ is a positive integer.
+$D\cdot H\ge2$: Theorem V.1.9, the Hodge index theorem, applied to the divisor
+$(H^2)D-(D\cdot H)H$, which meets the ample class $H$ in $0$, gives
+$3D^2\le(D\cdot H)^2$, and $D^2>0$ makes $(D\cdot H)^2\ge3$, so $D\cdot H$ is a positive integer of
+absolute value at least $2$.
 
 Third, the system is base point free and $h^1$ vanishes: since $-K_X\cdot D=D\cdot H\ge2$,
 Harbourne's Theorem III.1(a) gives $h^1(X,\OO_X(D))=0$ and that the sections of $D$
@@ -685,8 +860,9 @@ of $D$ is reduced and irreducible.
 Finally, it is nonsingular, in every characteristic. Put
 $H=\OO_X(1)=-K_X$, so $H^2=3$. Since $X$ is a cubic surface in $\PP^3$, the sequence
 $0\to\OO_{\PP^3}(-3)\to\OO_{\PP^3}\to\OO_X\to0$ gives $q(X)=h^1(\OO_X)=0$, and
-$p_g(X)=h^0(K_X)=h^0(\OO_X(-1))=0$. Also $D\cdot H\ge2$: the Hodge index theorem, Theorem V.1.9,
-gives $3D^2\le(D\cdot H)^2$ with $H^2=3$, and $D^2>0$ makes $(D\cdot H)^2\ge3$, so
+$p_g(X)=h^0(K_X)=h^0(\OO_X(-1))=0$. Also $D\cdot H\ge2$: Theorem V.1.9, applied to
+$(H^2)D-(D\cdot H)H$, which meets $H$ in $0$, gives $3D^2\le(D\cdot H)^2$ with $H^2=3$, and $D^2>0$
+makes $(D\cdot H)^2\ge3$, so
 the integer $D\cdot H$ has absolute value at least $2$ and is positive because $D$ is nef and $H$
 is ample. And $h^2(X,\OO_X(D))=0$: Serre duality, Corollary III.7.7, gives
 $h^2(D)=h^0(K_X-D)=h^0(-H-D)$, and $(-H-D)\cdot H=-3-D\cdot H<0$ with $H$ ample, so $-H-D$ is not
@@ -703,7 +879,8 @@ h^0(\OO_X(D))=\chi(\OO_X(D))=\frac{1}{2}D\cdot(D-K_X)+1=\frac{1}{2}(D^2+D\cdot H
 \qquad\text{so}\qquad
 N=\frac{1}{2}(D^2+D\cdot H).
 $$
-Let $Y=\varphi(X)$ be the image, a surface spanning $\PP^N$ because the system is complete, and let
+Let $Y=\varphi(X)$ be the image, a surface spanning $\PP^N$ because the system is complete and
+$D^2>0$, an image of dimension at most $1$ giving $D^2=0$; and let
 $q=[k(X):k(Y)]$ be the degree of $\varphi$; then $D^2=q\deg Y$ by the projection formula. A surface
 in $\PP^N$ that spans $\PP^N$ has degree at least $N-1$: a surface spanning $\PP^2$ is $\PP^2$
 itself, of degree $1$; a surface spanning $\PP^3$ is not a plane,
@@ -757,8 +934,8 @@ $H^0(\OO_X(D))$; $W_0$ defines the morphism $\psi=\restrictionof{\varphi}{X_0}$ 
 $d\psi_x=0$, every quotient $s/t$ of members of $W_0$ with $t(x)\ne0$ has zero derivative at $x$, so
 the image of $W_0$ in the two-dimensional space $L(x)\otimes\OO_{X_0}/\mathfrak m_x^2$ is
 one-dimensional; hence every $s\in W_0$ with $s(x)=0$ has $ds_x=0$, that is,
-$\ker(\operatorname{ev}_x)\subseteq H^0(L(-2x))$. Now $\delta\ge3$: the Hodge index theorem,
-Theorem V.1.9, gives $(D\cdot H)^2\ge3D^2$, so $D\cdot H\ge2$, and $D\cdot H=2$ would give $D^2=1$
+$\ker(\operatorname{ev}_x)\subseteq H^0(L(-2x))$. Now $\delta\ge3$: Theorem V.1.9, applied to
+$(H^2)D-(D\cdot H)H$, gives $(D\cdot H)^2\ge3D^2$, so $D\cdot H\ge2$, and $D\cdot H=2$ would give $D^2=1$
 and $2N=D^2+D\cdot H=3$, which is impossible. The curve $X_0$ is elliptic, so $h^0(L(-2x))=\delta-2$; with
 $\dim\ker(\operatorname{ev}_x)=\dim W_0-1$ this gives $\dim W_0\le\delta-1$.
 
@@ -912,4 +1089,19 @@ $27$ lines nonnegatively
 and has square $4$, so (c) gives it an irreducible nonsingular member while the strict criterion the
 entry invokes does not apply. The card's own proof, Harbourne's Lemma II.6 and Theorem III.1(a) with
 Hartshorne's Theorem 4.11 in place of any cone description, does not depend on the entry.
+
+The retained solution sets were searched for this exercise and none proves what the third
+alternative needs in characteristic $p$. Two of them contain it: Egbert's entry 5.4.8, which quotes
+the statement and gives no solution, and Yang Pi-Yeh's Solution 5.4.8, the entry whose gap the
+preceding paragraph records. The National Taiwan University Chapter V §4 homework treats exercises
+1, 2, 3, 4, 5, 7, 10, 11, 12, 14 and 16 and not this one, and Borcherds, Cais, Cutrone--Marshburn,
+Ionita--Kumar, Kim, Lomont, Okamoto, Park, Saglam--Chris, Sam, Stein, Troiani and Reiser carry no Chapter V §4
+exercise. The argument on this card is therefore the card's own. Its inputs, each cited by numbered
+statement, are: Harbourne's Lemma II.6(b) for a reduced irreducible general section and Theorem
+III.1(a) for base point freeness and the vanishing of $h^1$; Hartshorne's Theorem 4.9 for the $27$
+lines, Theorem 4.11 for the very ampleness of $D_n$, Theorem V.1.9 for the Hodge index inequality,
+Theorem V.1.6 and Corollary III.7.7 for the cohomology of $D$, Theorem I.5.1 and Theorem II.8.6A for
+the nonsingularity of a general member; Dolgachev's Lemma 8.1.3 for the computation at $C^2=0$; and
+the incidence count of Vakil's Theorem 13.4.2, carried out for the morphism $\varphi$ rather than for
+a closed subvariety of $\PP^N$.
 :::

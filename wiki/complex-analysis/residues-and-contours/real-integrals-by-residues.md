@@ -14,7 +14,7 @@ The evaluations every qual expects are on [[complex-analysis/standard-integrals|
 Upper semicircle; the arc integral tends to $0$ by the [[T-SFXI7|ML estimate]].
 
 ::: {.example title="$\displaystyle\int_\RR{\dx\over 1+x^4} = {\pi\over\sqrt 2}$"}
-The poles of $1/(1+z^4)$ are the fourth roots of $-1$, of which $e^{i\pi/4}$ and $e^{3i\pi/4}$ lie in $\HH$, and the residue at a simple pole $z_0$ is $1/(4z_0^3) = -z_0/4$, since $z_0^4 = -1$.
+The [[D-AUD6K|poles]] of $1/(1+z^4)$ are the fourth roots of $-1$, of which $e^{i\pi/4}$ and $e^{3i\pi/4}$ lie in $\HH$, and the [[D-C3JIU|residue]] at a [[D-AUD6K|simple pole]] $z_0$ is $1/(4z_0^3) = -z_0/4$ by [[PR-L4Y5F]], since $z_0^4 = -1$.
 The two residues sum to $-\qty{e^{i\pi/4}+e^{3i\pi/4}}/4 = -i\sqrt2/4$, so the integral is $2\pi i\cdot(-i\sqrt2/4) = \pi\sqrt2/2 = \pi/\sqrt2$.
 :::
 
@@ -50,7 +50,9 @@ Sectors and rectangles, determined by a rotation or translation symmetry of the 
 
 ## Singularities on the line: principal values
 
-Semicircles indented above each real simple pole, each of which contributes $i\pi$ times its residue.
+[[T-SSNLT]]
+
+[[D-PV4RQ]]
 
 [[E-ZGZYQ]]
 [[E-DUK6M]]
@@ -108,9 +110,9 @@ $$
 ## Square roots and slits
 
 ::: {.concept}
-For $f(z) = \sqrt{(z-z_1)(z-z_2)\cdots(z-z_n)}$, a branch exists on the complement of slits that prevent closed curves from winding around an odd number of the branch points $z_k$; for $n$ odd, $z=\infty$ is also a branch point.
+For $f(z) = \sqrt{(z-z_1)(z-z_2)\cdots(z-z_n)}$, a branch exists on the complement of slits that prevent closed curves from winding around an odd number of the [[D-9KMTV|branch points]] $z_k$; for $n$ odd, $z=\infty$ is also a branch point.
 
-Continuation once around a branch point multiplies $\sqrt{\cdot}$ by $-1$: for $f(z) = \sqrt z$ and $\gamma(t) = e^{2\pi i t}$ on $[0,1]$, $f(\gamma(0)) = \sqrt z$ while $f(\gamma(1)) = \sqrt{e^{2\pi i}z} = e^{i\pi}\sqrt z = -\sqrt z$.
+Continuing the germ of $\sqrt{z}$ at $z_0$ once counterclockwise about $0$ along $\gamma(t) = z_0e^{2\pi it}$, $t\in[0,1]$, returns $-\sqrt{z_0}$: the continuation is $\sqrt{z_0e^{2\pi i}} = e^{i\pi}\sqrt{z_0}$, because the argument has grown by $2\pi$ while the modulus returns to $\abs{z_0}$.
 
 :::
 

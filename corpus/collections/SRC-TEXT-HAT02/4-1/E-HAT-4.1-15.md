@@ -85,6 +85,28 @@ audit:
     is what makes $f_1^{-1}(q)$ finite with invertible local models; that the radial collapse
     $g$ is homotopic to the identity; that the pinch splits the class as a sum; and that
     $GL_n(\RR)$ has two components distinguished by the sign of the determinant.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-22
+  note: >-
+    Read against Hatcher, §4.1 Exercise 15, and against Sam, §4.1 Exercise 14, which is this
+    exercise under Sam's numbering: his list omits Hatcher's Exercise 12 and does not shift the
+    labels after it, so his 13 is Hatcher's 14 and his 14 is Hatcher's 15. Two repairs. (1) The
+    last step took a path of invertible matrices $A_t$, applied it "inside the ball $B_1$ and kept
+    the map fixed outside", and called the result a homotopy of $h_1$. That map is not continuous
+    at $\partial B_1$ for $t>0$: $h_1$ carries $\partial B_1$ to $\partial B$, not to the collapsed
+    point, so the inside and outside prescriptions disagree there. The step now uses the
+    one-point compactification $\widehat A$ of the linear map, which is what the local-degree map
+    is once $p_1$ and $q$ are read as $0$ and $\infty$; $A\mapsto\widehat A$ is continuous because
+    $\norm{A_tx}\ge c\norm{x}$ with $c=\min_t\norm{A_t^{-1}}^{-1}>0$ on the compact interval, so a matrix
+    path to $I$ or to the reflection gives a homotopy of $\widehat A$, and $\deg h_1$ is compared
+    with $\deg\widehat A$ through the local degree at the single preimage of $q$
+    (Proposition 2.30). (2) The collapse step asserted $gf_1$ constant off the local linearity
+    balls $B_i$, which need not exhaust $f_1^{-1}(B)$; the components $U_i$ of $f_1^{-1}(B)$ are
+    now chosen by a compactness argument and the wedge decomposition uses them. Also corrected
+    the claim $gf\simeq f_1$ to $gf_1\simeq f_1$, and replaced "by step N" by step references. The
+    provenance sentence now cites Sam as the source of the argument and says what the card adds;
+    steps `lemma`, `generic` and `gl` are unchanged.
 
 ---
 
@@ -100,62 +122,61 @@ Use this to reduce (a) further to the case $k = 1$.
 :::
 
 ::: {.solution}
-
-Let $f:S^n\to S^n$.
+Let $f:S^n\to S^n$. The argument is that of retained solutions: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.1 Exercise 14** (`tmp/sources/hatcher-solutions-sam-2008.pdf`), which is this exercise under Sam's numbering, his list omitting Hatcher's Exercise 12 without shifting the labels of the exercises after it. Sam's closing step, that "thinking of $p$ and $q$ as points at infinity" a path of matrices "gives a homotopy", is expanded below into the one-point compactification of an invertible linear map and the continuity of a path of such compactifications. The choice of the preimage components in part (b) and the degree bookkeeping are the card's.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #lemma}
 (a) Give $S^n$ the CW structure with one $0$-cell $W$ and one $n$-cell $e^n$. Lemma 4.10 homotopes $f$, relative to $f^{-1}(W)$, to a map $f_1$ for which there is a polyhedron $K\subset S^n$ with $f_1(K)\subset e^n$, $f_1\restriction_K$ piecewise linear, and $K\supset f_1^{-1}(U)$ for some nonempty open $U\subset e^n$.
 
 ::: pf-proof
-Apply the lemma with $Z=S^n$, with the polyhedron pair $(W,e^n)$, and on the domain the characteristic map of $e^n$: it produces a homotopy of the restriction to $I^n$, fixed on the preimage of $W$, hence on $\partial I^n$, to a map that is piecewise linear on a polyhedron and whose image lies in $e^n$ on that polyhedron. Because the homotopy is fixed on $f^{-1}(W)\supset\partial I^n$, it glues across the $0$-cell to a homotopy of $f$ on all of $S^n$. Lemma 4.10 is the cellular-approximation statement of the book, and Theorem 2C.1 is the simplicial alternative named in the exercise.
+Apply Lemma 4.10 with $Z=S^n$, with the pair $(W,e^n)$, and on the domain the characteristic map of $e^n$: it produces a homotopy of that map, fixed on the preimage of $W$, hence on $\partial I^n$, to a map that is piecewise linear on a polyhedron and whose image on that polyhedron lies in $e^n$. Because the homotopy is fixed on $f^{-1}(W)\supset\partial I^n$, it glues across the $0$-cell to a homotopy of $f$ on all of $S^n$, and the polyhedron descends to the quotient $I^n/\partial I^n=S^n$. Theorem 2C.1 is the simplicial alternative the exercise names.
 :::
 
 :::
 
-::: pf-step
-(a) Identify $e^n$ with $\RR^n$ and write $K$ as a finite polyhedral complex on each piece of which $f_1$ is affine. The union $N$ of the images of the pieces of dimension less than $n$ and of the images of the singular sets of the $n$-dimensional pieces is a finite union of proper affine subspaces, so $U\setminus N$ is nonempty.
+::: {.pf-step #generic}
+(a) Write $K$ as a finite polyhedral complex on each piece of which $f_1$ is affine. The union $N$ of the images of the pieces of dimension less than $n$ and of the images of the singular sets of the $n$-dimensional pieces is a finite union of proper affine subspaces, so $U\setminus N$ is nonempty.
 
 ::: pf-proof
-A polyhedron in $\RR^n$ is a finite union of convex polyhedra closed under taking faces, and a piecewise linear map is affine on each such piece. A piece of dimension $<n$ lies in an affine subspace of dimension $<n$, and its image under an affine map lies in one as well. On an $n$-dimensional piece the affine map is singular exactly on the preimage of a proper affine subspace, whose image is a proper affine subspace of $\RR^n$. A finite union of proper affine subspaces has empty interior, so its complement is dense and, $U$ being nonempty and open, $U\setminus N\ne\varnothing$.
+A polyhedron in $\RR^n$ is a finite union of convex polyhedra closed under taking faces, and a piecewise linear map is affine on each piece of a sufficiently fine subdivision of it, which one takes. A piece of dimension less than $n$ lies in an affine subspace of dimension less than $n$, and its image under an affine map lies in one as well. On an $n$-dimensional piece the affine map is singular exactly on the preimage of a proper affine subspace, whose image is a proper affine subspace of $\RR^n$. A finite union of proper affine subspaces has empty interior, so its complement is dense and, $U$ being nonempty and open, $U\setminus N\ne\varnothing$.
 :::
 
 :::
 
-::: pf-step
-(a) Choose $q\in U\setminus N$. Then $f_1^{-1}(q)=\{p_1,\dots,p_k\}$ is finite, and near each $p_i$ the map $f_1$ agrees with an invertible affine map on a ball $B_i$ inside the piece through $p_i$, carried onto a ball $B$ about $q$.
+::: {.pf-step #preimages}
+(a) Choose $q\in U\setminus N$, a ball $B$ about $q$, and for each $i$ an open set $U_i$ containing $p_i$ such that $f_1^{-1}(q)=\{p_1,\dots,p_k\}$, the $U_i$ are pairwise disjoint, $f_1$ carries $U_i$ homeomorphically onto $B$, and $f_1$ agrees on $U_i$ with an invertible affine map.
 
 ::: pf-proof
-Since $q\in U$ and $K\supset f_1^{-1}(U)$, every preimage of $q$ lies in $K$. On an $n$-dimensional piece the affine map is nonsingular by the choice of $q\notin N$, hence injective, so it has at most one preimage, and one exactly when $q$ lies in its image; on a lower-dimensional piece it has none, again by $q\notin N$. The interiors of the pieces are disjoint and cover $K$ minus the lower-dimensional pieces, so each preimage lies in the interior of a unique $n$-dimensional piece, and there a whole ball about it lies in that piece and is carried injectively and affinely. Taking the balls small enough makes them pairwise disjoint and their images inside $B$. Since $f\simeq f_1$, it suffices to prove the theorem for $f_1$.
+Since $q\in U$ and $K\supset f_1^{-1}(U)$, every preimage of $q$ lies in $K$. On an $n$-dimensional piece the affine map is nonsingular by the choice of $q\notin N$, hence injective, so $q$ has at most one preimage in that piece, and one exactly when $q$ lies in its image; on a lower-dimensional piece it has none, again by $q\notin N$. The interiors of the pieces are disjoint and cover $K$ minus the lower-dimensional pieces, so each preimage $p_i$ lies in the interior of a unique $n$-dimensional piece, on which $f_1$ is an invertible affine map; choose pairwise disjoint balls $V_i$ about the $p_i$, each inside its piece and inside a ball on which $f_1$ is injective. Then $V=\bigcup_iV_i$ is open and $S^n\setminus V$ is compact, so $f_1(S^n\setminus V)$ is compact and does not contain $q$, since $f_1^{-1}(q)=\{p_i\}\subset V$; hence there is a ball $B$ about $q$ disjoint from $f_1(S^n\setminus V)$, and then $f_1^{-1}(B)\subset V$. Each component of $f_1^{-1}(B)$ is connected and lies in one of the pairwise disjoint open sets $V_i$, on which $f_1$ is injective, and its image is open because $f_1$ is a local homeomorphism and closed in $B$ because the component is closed in the compact space $S^n$; $B$ being connected, that image is all of $B$. So the components $U_i$ of $f_1^{-1}(B)$ are pairwise disjoint, each contains exactly one $p_i$, and $f_1$ carries $U_i$ homeomorphically onto $B$, agreeing there with the affine map of the piece. Since $f\simeq f_1$ by step [](#lemma){.pf-ref}, it suffices to prove the theorem for $f_1$.
 :::
 
 :::
 
-::: pf-step
-(b) Let $g:S^n\to S^n$ collapse the complement of the interior of $B$ to the antipode $q'$ of $q$. Then $gf\simeq f_1$.
+::: {.pf-step #collapse}
+(b) Let $g:S^n\to S^n$ collapse the complement of the interior of $B$ to the antipode $q'$ of $q$. Then $gf_1\simeq f_1$.
 
 ::: pf-proof
-Use spherical coordinates about $q$, in which $B$ is a polar ball of radius $\rho$. The map $g$ preserves each radial direction, carries the radial coordinate of $B$ onto the whole interval from $q$ to $q'$, and sends every point outside $B$ to $q'$. Interpolating linearly between the identity radial coordinate and this stretched one, and keeping the angular coordinates fixed, is a homotopy from $\operatorname{id}_{S^n}$ to $g$; composing it with $f_1$ gives $gf_1\simeq f_1$, and $f_1\simeq f$ by step 3.
+Use spherical coordinates about $q$, in which $B$ is a polar ball of radius $\rho$. The map $g$ preserves each radial direction, carries the radial coordinate of $B$ onto the whole interval from $q$ to $q'$, and sends every point outside $B$ to $q'$. Interpolating linearly between the identity radial coordinate and this stretched one, and keeping the angular coordinates fixed, is a homotopy from $\operatorname{id}_{S^n}$ to $g$; composing it with $f_1$ gives $gf_1\simeq f_1$.
 :::
 
 :::
 
-::: pf-step
-(b) $gf_1$ is constant off the union of the $B_i$, so collapsing the complement of their interiors exhibits the domain as a wedge of $k$ spheres and $gf_1$ as a composite
+::: {.pf-step #pinch}
+(b) $gf_1$ is constant off the union of the $U_i$. Collapsing that union's complement gives the pinch map $p:S^n\to\bigvee_{i=1}^kS^n$, and $gf_1=(h_1\vee\dots\vee h_k)\circ p$, where $h_i$ is the map that agrees with $f_1$ on $U_i$ and is constant elsewhere. Each $h_i$ has exactly one preimage of $q$, at which it agrees with an invertible affine map, and
 $$
-S^n\xrightarrow{\text{pinch}}\bigvee_{i=1}^kS^n\xrightarrow{h_1\vee\dots\vee h_k}S^n,
+[f]=\sum_{i=1}^k[h_i]\quad\text{in }\pi_n(S^n),
 $$
-each $h_i$ having exactly one preimage of $q$ and being linear near it. In $\pi_n(S^n)$ this gives $[f]=\sum_i[h_i]$, so it suffices to treat the case $k=1$.
+so it suffices to treat the case $k=1$.
 
 ::: pf-proof
-Off the union of the $B_i$ the map $f_1$ has no preimage of $q$; since $g$ collapses everything outside the interior of $B$ and the $B_i$ map into $B$, the composite is constant on the complement of the union of the open balls $B_i$. Collapsing that complement to a point turns $S^n$ into the wedge of the $k$ spheres $S^n/B_i$-quotients, and $gf_1$ into a map on the wedge, which is a wedge of maps $h_i$ because a map on a wedge is determined by its restrictions to the summands. Each $h_i$ agrees with $f_1$ on $B_i$, so it has a unique preimage of $q$ there and is linear near it, and its class in $\pi_n$ is the class of that restriction. The pinch map sends the fundamental class to the sum of the fundamental classes of the summands, so $[gf_1]=\sum_i[h_i]$, and $[f]=[gf_1]$ by step 4.
+Off the union of the $U_i$ the map $f_1$ has no preimage of $q$, and $B$ is a neighbourhood of $q$, so $gf_1$ takes the value $q'$ there; on $U_i$ the map $f_1$ takes values in $B$, where $g$ is a homeomorphism onto $S^n\setminus\{q'\}$. Collapsing $S^n\setminus\bigcup_iU_i$ to a point turns $S^n$ into the wedge of the $k$ spheres $S^n/(S^n\setminus U_i)$, and $gf_1$ into the map on the wedge whose $i$-th component is $h_i$, because a map on a wedge is determined by its restrictions to the summands. Each $h_i$ is $f_1$ on $U_i$, so it has exactly one preimage of $q$ there and agrees near it with the invertible affine map of step [](#preimages){.pf-ref}. The pinch map $p$ carries the fundamental class to the sum of the fundamental classes of the summands, so $\deg(gf_1)=\sum_i\deg h_i$; this is Hatcher's Proposition 2.30, that the degree of a map with finite $f^{-1}(q)$ is the sum of its local degrees, applied to $gf_1$ and the value $q$. Passing from degrees to homotopy classes uses that $\pi_n(S^n)$ is infinite cyclic, generated by the class of the identity (Corollary 4.25), so $[gf_1]=\sum_i[h_i]$; and $[f]=[gf_1]$ by step [](#collapse){.pf-ref}.
 :::
 
 :::
 
-::: pf-step
-(c) For $k=1$ the local model near the unique preimage is an invertible matrix $A\in GL_n(\RR)$. The group $GL_n(\RR)$ has exactly two path components, distinguished by the sign of the determinant, so there is a path from $A$ to $I$ when $\det A>0$ and to the reflection $\operatorname{diag}(-1,1,\dots,1)$ when $\det A<0$.
+::: {.pf-step #gl}
+(c) $GL_n(\RR)$ has exactly two path components, distinguished by the sign of the determinant, so a matrix $A\in GL_n(\RR)$ is joined by a path of invertible matrices to $I$ when $\det A>0$ and to the reflection $\operatorname{diag}(-1,1,\dots,1)$ when $\det A<0$.
 
 ::: pf-proof
 $GL_n(\RR)$ is an open subset of $M_n(\RR)$, and $\det$ is continuous and nonzero on it, so the sign of the determinant is constant on each path component and there are at least two. For the converse, Gaussian elimination writes a nonsingular matrix as a product of elementary matrices and a diagonal matrix with nonzero entries; elementary matrices other than a single scaling are connected to the identity by $t\mapsto$ the elementary matrix with the off-diagonal entry scaled by $t$, and a diagonal matrix with $r$ negative entries is connected to $\operatorname{diag}(-1,\dots,-1,1,\dots,1)$ with $r$ minus signs by scaling each negative entry along a path in $\RR\setminus\{0\}$. The matrices with precisely those $r$ negative entries form one component, and a product of $r$ reflections is connected to $\operatorname{diag}(-1,\dots,-1,1,\dots,1)$; taking $r$ even gives a path to $I$.
@@ -163,16 +184,29 @@ $GL_n(\RR)$ is an open subset of $M_n(\RR)$, and $\det$ is continuous and nonzer
 
 :::
 
-::: pf-step
-(c) Using such a path inside $B_1$ and keeping the map fixed outside gives a homotopy of $h_1$ to the identity when $\det A>0$ and to a reflection when $\det A<0$, the latter representing $-[\operatorname{id}_{S^n}]$; hence
-$$
-[f]=\sum_{i=1}^k\varepsilon_i[\operatorname{id}_{S^n}]=d\,[\operatorname{id}_{S^n}],
-\qquad\varepsilon_i=\operatorname{sign}\det D(f_1)_{p_i},\quad d=\sum_i\varepsilon_i\in\ZZ,
-$$
-so $f\simeq d\cdot\operatorname{id}_{S^n}$.
+::: {.pf-step #compactification}
+(c) Let $A$ be an invertible $n\times n$ matrix and $\widehat A:S^n\to S^n$ its one-point compactification, $\widehat A(x)=Ax$ for $x\in\RR^n$ and $\widehat A(\infty)=\infty$. If $A_t$, $t\in[0,1]$, is a path of invertible matrices, then $t\mapsto\widehat{A_t}$ is a continuous homotopy. Consequently $\widehat A\simeq\operatorname{id}_{S^n}$ when $\det A>0$ and $\widehat A\simeq\widehat R$ when $\det A<0$, where $R=\operatorname{diag}(-1,1,\dots,1)$; and $\deg\widehat A=\operatorname{sign}\det A$.
 
 ::: pf-proof
-The homotopy of matrices, applied in the coordinates of step 3 on the ball $B_1$ and extended by the identity outside, is a homotopy through maps that are the identity off $B_1$, hence a homotopy of $h_1$ to the linear map $I$ or to the reflection $R$. The reflection fixes the equator and reverses the remaining coordinate, so it has degree $-1$, that is it represents the negative of the class of the identity in $\pi_n(S^n)\cong\ZZ$. Summing over the $k$ summands by step 5 gives the displayed formula, and a map whose class is $d$ times the generator is homotopic to $d$ times the identity because $\pi_n(S^n)$ is infinite cyclic, generated by the class of the identity.
+Continuity in $(t,x)$ at a finite $x$ is continuity of matrix multiplication, and at $x=\infty$ it is the assertion that for every compact $K\subset\RR^n$ the set of $(t,x)$ with $A_tx\in K$ is bounded in $x$. Since $t\mapsto\norm{A_t^{-1}}$ is continuous and never zero on the compact interval $[0,1]$, the number $c=\min_t\norm{A_t^{-1}}^{-1}$ is positive, and $\norm{A_tx}\ge c\norm{x}$ for all $t$ and $x$; so $\norm{x}>\max_{y\in K}\norm{y}/c$ forces $A_tx\notin K$ for every $t$. Hence a path $A_t$ from $A$ to $I$ or to $R$, which exists by step [](#gl){.pf-ref}, gives a homotopy from $\widehat A$ to $\widehat I=\operatorname{id}_{S^n}$ or to $\widehat R$. The map $\widehat I$ is the identity, of degree $1$, and $\widehat R$ is the reflection of $S^n$ in the hyperplane $x_1=0$, of degree $-1$, so the degree of $\widehat A$ is $\operatorname{sign}\det A$ in the two cases.
+:::
+
+:::
+
+::: {.pf-step #local}
+(c) For $k=1$, $\deg h_1=\operatorname{sign}\det A$ for the linear map $A$ that $f_1$ is near $p_1$, so $[h_1]=[\operatorname{id}_{S^n}]$ or $-[\operatorname{id}_{S^n}]$ according as $\det A>0$ or $\det A<0$, and in either case $f\simeq\pm\operatorname{id}_{S^n}$.
+
+::: pf-proof
+Read $A$ in local coordinates at $p_1$ and at $q$ carrying $p_1$ to $0$ and $q$ to $\infty$; in them $h_1$ agrees with the linear map $A$ on a neighbourhood of $0$ and is constant at $\infty$ off a compact set, and $\widehat A$ is $A$ everywhere. So $h_1$ and $\widehat A$ have $q$ as a value with the single preimage $p_1$, and agree on a neighbourhood of it; by the definition of the local degree and Proposition 2.30 applied with a single preimage, their degrees agree, so $\deg h_1=\deg\widehat A=\operatorname{sign}\det A$ by step [](#compactification){.pf-ref}. A map of $S^n$ of degree $d$ is homotopic to $d$ times the identity because $\pi_n(S^n)$ is infinite cyclic, generated by the class of the identity (Corollary 4.25), so $[h_1]=\operatorname{sign}\det A\,[\operatorname{id}_{S^n}]$.
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+(c) Consequently $[f]=d\,[\operatorname{id}_{S^n}]$ with $d=\sum_i\operatorname{sign}\det D(f_1)_{p_i}\in\ZZ$, that is, $f$ is homotopic to the multiple $d\cdot\operatorname{id}_{S^n}$ of the identity.
+
+::: pf-proof
+By step [](#pinch){.pf-ref}, $[f]=\sum_i[h_i]$; by step [](#local){.pf-ref} each $[h_i]$ is $\operatorname{sign}\det A_i$ times $[\operatorname{id}_{S^n}]$, where $A_i$ is the linear map that $f_1$ is near $p_i$; summing gives the displayed class, and $\pi_n(S^n)$ being infinite cyclic with generator $[\operatorname{id}_{S^n}]$ (Corollary 4.25), the class $d[\operatorname{id}_{S^n}]$ is the class of the map $d\cdot\operatorname{id}_{S^n}$, which is $f$ up to homotopy.
 :::
 
 :::

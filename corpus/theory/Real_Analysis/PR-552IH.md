@@ -2,25 +2,21 @@
 schema: qual/card@1
 id: PR-552IH
 kind: proposition
-title: Closure properties of Lebesgue measurable functions
-slogan: 'Measurability is preserved by absolute values, countable suprema, infima, and limits, finite sums and differences, extension to a product space, invertible linear changes of variable, and $(x,y)\mapsto f(x-y)$.'
+title: Measurability under product extension, invertible linear maps and the difference map
+slogan: 'A Lebesgue measurable function stays measurable when extended to a product space, composed with an invertible linear map, or composed with the difference map $(x,y)\mapsto x-y$.'
 classification:
   areas:
   - real-analysis
   topics:
   - Measure Theory
-relations: []
+relations:
+- kind: related-to
+  target: PR-EWXRO
 review: draft
 ---
 
 ::: {.proposition}
 Throughout, measurable means [[D-DHFN4|Lebesgue measurable]].
-
-- For a [[D-MDJII|Lebesgue measurable]] set $E\subseteq\RR^d$, the characteristic function $\chi_E$ is measurable.
-
-- If $f_n\colon\RR^d\to[-\infty,\infty]$ are measurable for $n\geq1$, then $\abs{f_n}$, $\sup_n f_n$, $\inf_n f_n$, $\limsup_n f_n$, and $\liminf_n f_n$ are measurable; if $(f_n)$ converges pointwise everywhere, then $\lim_n f_n$ is measurable.
-
-- If $f,g\colon\RR^d\to\RR$ are measurable and finite-valued, then $f+g$ and $f-g$ are measurable.
 
 - If $f\colon\RR^{d_1}\to[-\infty,\infty]$ is measurable, then $F\colon\RR^{d_1}\times\RR^{d_2}\to[-\infty,\infty]$, $F(x,y)\coloneqq f(x)$, is measurable.
 
