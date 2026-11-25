@@ -24,7 +24,7 @@ prompts:
 
 ::: {.definition title="Quasicoherent"}
 For an $A$-module $M$, let $\tilde{M}$ be the sheaf on $\Spec A$ with $\tilde{M}(D_f) = M_f$.
-An $\OO_X$-module $\mcf$ is \dfn{quasicoherent} if $X$ has a cover by affine opens $U_i = \Spec A_i$ with $\mcf\restrict_{U_i} \cong \tilde{M_i}$ for $A_i$-modules $M_i$.
+An $\OO_X$-module $\mcf$ is \dfn{quasicoherent} if $X$ has a cover by affine opens $U_i = \Spec A_i$ with $\mcf\restrict_{U_i} \cong \widetilde{M_i}$ for $A_i$-modules $M_i$.
 :::
 
 ::: {.definition title="Coherent module"}
@@ -33,7 +33,7 @@ An $A$-module $M$ is \dfn{coherent} if it is finitely generated and for every $n
 :::
 
 ::: {.definition title="Coherent sheaf"}
-An $\OO_X$-module $\mcf$ is \dfn{coherent} if $X$ has a cover by affine opens $U_i = \Spec A_i$ with $\mcf\restrict_{U_i} \cong \tilde{M_i}$ for coherent $A_i$-modules $M_i$.
+An $\OO_X$-module $\mcf$ is \dfn{coherent} if $X$ has a cover by affine opens $U_i = \Spec A_i$ with $\mcf\restrict_{U_i} \cong \widetilde{M_i}$ for coherent $A_i$-modules $M_i$.
 :::
 
 ::: {.proposition}
