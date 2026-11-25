@@ -81,7 +81,7 @@ If $X$ is a locally compact Hausdorff space, then a subspace $\mathcal{F}$ of $\
 ::: {.solution}
 The exercise is Munkres, *Topology* (2000), Section 47, Exercise 2. See [Yang Di's solution, §47, Exercise 2](https://hexo.yougi.top/2025/01/15/Munkres-Topology-Solution-Chapter-7/#Ex-47-2), using the general Ascoli theorem (Munkres, Theorem 47.1).
 
-Write $\mathcal F_x=\{f(x):f\in\mathcal F\}$ for each $x\in X$. For either standard metric on $\RR^n$, Heine--Borel (Munkres, Theorem 28.2) gives
+Write $\mathcal F_x=\{f(x):f\in\mathcal F\}$ for each $x\in X$. For either standard metric on $\RR^n$, Heine--Borel (Munkres, Theorem 27.3) gives
 $$
 \mathcal F_x\text{ is bounded}\iff \overline{\mathcal F_x}\text{ is compact in }\RR^n.
 $$
