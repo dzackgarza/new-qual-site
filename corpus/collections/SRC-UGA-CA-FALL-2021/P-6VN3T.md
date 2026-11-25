@@ -21,7 +21,7 @@ Prove that $f(z)=e^{i \theta} z^{n}$, where $\theta$ is a real number and $n$ a 
 
 > Suggestion: First use the maximum and minimum modulus theorem to show
 $$
-f(z)=e^{i \theta} \prod_{k=1}^{n} \frac{z-z_{k}}{1-\bar{z_{k}} z}
+f(z)=e^{i \theta} \prod_{k=1}^{n} \frac{z-z_{k}}{1-\overline{z_{k}} z}
 $$ 
 if $f$ has zeros.
 

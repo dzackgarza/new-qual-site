@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IOUZO
 kind: problem
-title: "Polynomial approximation on $\bar\\DD$, entire functions with a vanishing Taylor coefficient, a two-pole circle integral, a limit of vertical-segment integrals, and the reflection $\\overline{f(\bar z)}$"
+title: "Polynomial approximation on $\\overline\\DD$, entire functions with a vanishing Taylor coefficient, a two-pole circle integral, a limit of vertical-segment integrals, and the reflection $\\overline{f(\bar z)}$"
 classification:
   areas:
     - complex-analysis

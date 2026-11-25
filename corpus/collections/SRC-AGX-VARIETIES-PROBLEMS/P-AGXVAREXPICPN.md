@@ -124,7 +124,7 @@ $$
 on projective space is well defined because numerator and denominator are
 homogeneous of the same degree. Its divisor is
 $$
-\div\left(\frac{F}{x_0^d}\right)
+\divisorof\left(\frac{F}{x_0^d}\right)
 =
 D-dH.
 $$
@@ -180,15 +180,15 @@ $$
 with $F$ and $G$ homogeneous of the same degree $d$. Factoring them into
 irreducible homogeneous polynomials gives
 $$
-\deg\div(F)=d
+\deg\divisorof(F)=d
 \qquad\text{and}\qquad
-\deg\div(G)=d.
+\deg\divisorof(G)=d.
 $$
 Therefore
 $$
-\deg\div(r)
+\deg\divisorof(r)
 =
-\deg\div(F)-\deg\div(G)
+\deg\divisorof(F)-\deg\divisorof(G)
 =0.
 $$
 So degree descends to $\Cl(X)$.

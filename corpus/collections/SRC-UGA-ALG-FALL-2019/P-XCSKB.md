@@ -60,7 +60,7 @@ $0 \in \operatorname{tor}(M)$ because $1 \cdot 0 = 0$ and $1 \ne 0$. For closure
 (b) For $R = \ZZ/6\ZZ$ and $M = R$ the set $\operatorname{tor}(M)$ is not closed under addition, so it is not a submodule.
 
 ::: pf-proof
-Here $R = \ZZ/6\ZZ$ is not a domain: $\bar 2 \cdot \bar 3 = \bar 0$ with both factors nonzero. The element $\bar 2$ is torsion because $\bar 3 \cdot \bar 2 = \bar 0$ with $\bar 3 \ne \bar 0$, and $\bar 3$ is torsion because $\bar 2 \cdot \bar 3 = \bar 0$ with $\bar 2 \ne \bar 0$. Their sum is $\bar 5$, and $\bar 5$ is a unit, since $\bar 5 \cdot \bar 5 = \bar{25} = \bar 1$. If $r \bar 5 = \bar 0$ then $r = r\bar 5\bar 5 = \bar 0$, so no nonzero $r$ kills $\bar 5$ and $\bar 5 \notin \operatorname{tor}(M)$. Hence $\operatorname{tor}(M)$ contains $\bar 2$ and $\bar 3$ but not their sum.
+Here $R = \ZZ/6\ZZ$ is not a domain: $\bar 2 \cdot \bar 3 = \bar 0$ with both factors nonzero. The element $\bar 2$ is torsion because $\bar 3 \cdot \bar 2 = \bar 0$ with $\bar 3 \ne \bar 0$, and $\bar 3$ is torsion because $\bar 2 \cdot \bar 3 = \bar 0$ with $\bar 2 \ne \bar 0$. Their sum is $\bar 5$, and $\bar 5$ is a unit, since $\bar 5 \cdot \bar 5 = \overline{25} = \bar 1$. If $r \bar 5 = \bar 0$ then $r = r\bar 5\bar 5 = \bar 0$, so no nonzero $r$ kills $\bar 5$ and $\bar 5 \notin \operatorname{tor}(M)$. Hence $\operatorname{tor}(M)$ contains $\bar 2$ and $\bar 3$ but not their sum.
 
 :::
 

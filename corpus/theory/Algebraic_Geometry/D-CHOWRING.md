@@ -22,7 +22,7 @@ prompts:
 ::: {.definition title="Chow groups"}
 Let $X$ be a variety.
 The group $Z_k(X)$ of $k$-cycles is the free abelian group on $k$-dimensional subvarieties.
-For a $(k+1)$-dimensional subvariety $W$ and $f \in k(W)^\times$, the cycle $\div(f) \in Z_k(X)$ is \dfn{rationally equivalent to zero}.
+For a $(k+1)$-dimensional subvariety $W$ and $f \in k(W)^\times$, the cycle $\divisorof(f) \in Z_k(X)$ is \dfn{rationally equivalent to zero}.
 The \dfn{Chow group} $A_k(X)$ is $Z_k(X)$ modulo these cycles, and for $X$ of pure dimension $n$ one writes $A^k(X) = A_{n-k}(X)$.
 :::
 

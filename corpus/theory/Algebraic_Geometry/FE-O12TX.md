@@ -40,7 +40,7 @@ So $\varphi = 5/6$ is a regular function on $D(6)$, and its value at a point is 
 - At $(0)$, the value is $5/6 \in \QQ = \kappa((0))$.
 
 - At $(p)$ with $p \neq 2, 3$, the value is $\bar{5} \cdot \bar{6}^{-1} \in \FF_p = \kappa((p))$.
-  Hence $\varphi$ vanishes at $(5)$, and $\varphi((11)) = \bar{5} \cdot \bar{2} = \bar{10} \in \FF_{11}$, since $\bar{6} \cdot \bar{2} = \bar{1}$ in $\FF_{11}$.
+  Hence $\varphi$ vanishes at $(5)$, and $\varphi((11)) = \bar{5} \cdot \bar{2} = \overline{10} \in \FF_{11}$, since $\bar{6} \cdot \bar{2} = \bar{1}$ in $\FF_{11}$.
 :::
 
 ::: {.example title="A nonreduced multiple structure"}

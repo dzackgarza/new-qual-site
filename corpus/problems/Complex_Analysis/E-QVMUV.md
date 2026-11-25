@@ -24,7 +24,7 @@ Show that if $f(z) = \sum_{k\in \ZZ} c_k (z-z_0)^k$, then
 $$
 c_k = {1\over 2\pi i}\int_\gamma {f(z) \over (z-z_0)^{k+1}}\dz
 $$
-for every positively oriented circle $\gamma$ centered at $z_0$ in the annulus of convergence, and that the series converges in the annulus $D_R(z_0)\sm \bar{D_r(z_0)}$, where
+for every positively oriented circle $\gamma$ centered at $z_0$ in the annulus of convergence, and that the series converges in the annulus $D_R(z_0)\sm \overline{D_r(z_0)}$, where
 $$
 r=\limsup _{n \to \infty} \sqrt[n]{\abs{c_{-n}}} \quad \text{ and } \quad R=\frac{1}{\limsup _{n \to \infty} \sqrt[n]{\abs{c_{n}}}}.
 $$

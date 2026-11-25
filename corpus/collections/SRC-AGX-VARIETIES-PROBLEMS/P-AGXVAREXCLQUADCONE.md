@@ -120,7 +120,7 @@ This is a UFD, so every Weil divisor on $D(x)$ is principal.
 Let $D$ be any Weil divisor on $X$. Its restriction to $D(x)$ is therefore
 the divisor of some rational function $g\in k(X)^\times$. Hence
 $$
-D-\div_X(g)
+D-\divisorof_X(g)
 $$
 is supported on
 $$
@@ -142,7 +142,7 @@ for some $n\in\ZZ$. Thus $[P]$ generates $\Cl(X)$.
 ::: {.pf-step #div-x-two-p}
 The principal divisor of $x$ is
 $$
-\boxed{\div_X(x)=2P.}
+\boxed{\divisorof_X(x)=2P.}
 $$
 
 ::: pf-proof
@@ -168,7 +168,7 @@ $$
 =2.
 $$
 Step [](#p-generates-cl){.pf-ref} showed that $P$ is the only prime divisor in $V(x)$, so $x$ has no
-other divisorial zeros. Therefore $\div_X(x)=2P$.
+other divisorial zeros. Therefore $\divisorof_X(x)=2P$.
 :::
 
 :::

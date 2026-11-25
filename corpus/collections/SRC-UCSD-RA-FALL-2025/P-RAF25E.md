@@ -29,7 +29,7 @@ audit:
 Let $f \in L^2(\RR^n)$ such that $\hat{f}(\xi) \neq 0$ for a.e. $\xi \in \RR^n$.
 For $a \in \RR^n$, let $f_a \in L^2(\RR^n)$ be given by $f_a(x) = f(x - a)$.
 
-(1) Prove that if $a \in \RR^n$, then $\hat{f_a}(\xi) = e^{-2\pi i \xi \cdot a} \hat{f}(\xi)$ for a.e. $\xi \in \RR^n$.
+(1) Prove that if $a \in \RR^n$, then $\widehat{f_a}(\xi) = e^{-2\pi i \xi \cdot a} \hat{f}(\xi)$ for a.e. $\xi \in \RR^n$.
 (You can use without proof the fact that this identity holds if $f \in L^1(\RR)$.)
 
 (2) Prove that the linear span of $\{f_a : a \in \RR^n\}$ is dense in $L^2(\RR^n)$.

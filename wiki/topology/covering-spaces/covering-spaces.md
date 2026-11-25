@@ -20,7 +20,7 @@ In each diagram the group on the left is the deck group of the covering map on t
 2\pi \ZZ \cong \ZZ
   \ar[r] 
 & 
-\hat{S^1} = \RR
+\widehat{S^1} = \RR
   \ar[d, "t\mapsto e^{i t}"] 
 \\
 & 
@@ -30,8 +30,8 @@ S^1
 Any subgroup $H \leq \pi_1(S^1; 1) = \ZZ$ is of the form $H = n\ZZ$, and the corresponding cover is $\RR/2\pi n\ZZ \cong S^1\to \RR/2\pi\ZZ\cong S^1$, a quotient of the universal cover:
 
 \begin{tikzcd}
-	& \ZZ && {\hat{S^1} = \RR} \\
-	n\ZZ && {\hat{S^1}/n\ZZ \cong S^1} \\
+	& \ZZ && {\widehat{S^1} = \RR} \\
+	n\ZZ && {\widehat{S^1}/n\ZZ \cong S^1} \\
 	&&& {S^1} \\
 	&& {S^1}
 	\arrow[from=1-2, to=1-4]
@@ -58,7 +58,7 @@ S^1
 2\pi i \ZZ \cong \ZZ
   \ar[r] 
 & 
-\hat{\units{\CC}} = \CC
+\widehat{\units{\CC}} = \CC
   \ar[d, "z\mapsto e^{z}"] 
 \\
 & 
@@ -80,7 +80,7 @@ T^n
 \ZZ/2
   \ar[r] 
 & 
-\hat{\RP^n} = S^n
+\widehat{\RP^n} = S^n
   \ar[d] 
 \\
 & 
