@@ -1,4 +1,3 @@
-# ai-review-ci contract variables consumed by doctor and workflow installers.
 ai_review_ci_schema_version := "1"
 ai_review_ci_profile := "python"
 ai_review_ci_ref := "main"
@@ -7,142 +6,134 @@ ai_review_ci_workflow_template_version := "1"
 ai_review_ci_local_delegation := "global-justfile"
 ai_review_ci_default_branch := "main"
 
-# List available recipes
+[doc("List available recipes")]
 default:
     @just --list
 
-# Validate every card against the schema and the registries
+[doc("Validate every card against the schema and the registries")]
 check:
     uv run qualc check
 
-# Validate the YAML and schema of every changed card staged in the Git index
+[doc("Validate the YAML and schema of every changed card staged in the Git index")]
 check-staged:
     @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring check-staged
 
-# Resolve a card ID or path to its current editable corpus path
+[doc("Resolve a card ID or path to its current editable corpus path")]
 path-card card:
     @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring path {{quote(card)}}
 
-# Parse one card by ID or path (no cross-card or mathematical review)
+[doc("Parse one card by ID or path (no cross-card or mathematical review)")]
 check-card card:
     @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring check {{quote(card)}}
 
-# List authored collection appearances in source order, optionally in one section
+[doc("List authored collection appearances in source order, optionally in one section")]
 list-cards collection section="":
     @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring list {{quote(collection)}} {{quote(section)}}
 
-# List collection appearances without solution sections, in authored source order
+[doc("List collection appearances without solution sections, in authored source order")]
 unsolved-in collection section="":
     @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring unsolved {{quote(collection)}} {{quote(section)}}
 
-# Read a card by ID or path, with its recorded appearances and source resources
+[doc("Read a card by ID or path, with its recorded appearances and source resources")]
 read-card card:
     @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring read {{quote(card)}}
 
-# Inspect one card's changes against its last commit, including staged edits
+[doc("Inspect one card's changes against its last commit, including staged edits")]
 diff-card card:
     @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring diff {{quote(card)}}
 
-# Validate one reviewed card's YAML and schema, then commit it with the sanctioned
-# hook-free route. Other staged work is preserved; only this card is committed.
-# Mathematical review of the card is a reading obligation, not a parser output.
+[doc("Validate one reviewed card's YAML and schema, then commit only that card by the sanctioned hook-free route, keeping other staged work")]
 commit-card card message:
     @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring commit {{quote(card)}} {{quote(message)}}
 
-# Report wiki filesystem measurements as candidates to read (not a gate)
+[doc("Report wiki filesystem measurements as candidates to read (not a gate)")]
 doctor *args:
     uv run python tools/wiki_doctor.py {{ args }}
 
-# List collections with empty provenance, unresolved hrefs, shared hrefs, markdown hrefs, image hrefs, forbidden hrefs, and collection areas with no problem cards (not a gate)
+[doc("List collections with empty provenance, unresolved hrefs, shared hrefs, markdown hrefs, image hrefs, forbidden hrefs, and collection areas with no problem cards (not a gate)")]
 provenance *args:
     uv run python -m qualc.provenance_hrefs {{ args }}
 
-# Compile the corpus: catalog.sqlite + QMD and static HTML projections
+[doc("Compile the corpus: catalog.sqlite + QMD and static HTML projections")]
 build:
     uv run qualc build
 
-# Build and render the site to build/quarto/_site
+[doc("Build and render the site to build/quarto/_site")]
 site: build
 
-# Report pages the home page cannot reach, and links to pages that are not there
+[doc("Report pages the home page cannot reach, and links to pages that are not there")]
 crawl: build
     uv run python tools/crawl.py
 
-# Build the current working tree and publish it to the one canonical local preview URL
+[doc("Build the current working tree and publish it to the one canonical local preview URL")]
 preview: build
     @uv run python tools/preview.py
 
-# Prove the architectural invariants hold
+[doc("Prove the architectural invariants hold")]
 test:
     uv run --group dev pytest -q
 
-# Query the catalog directly (e.g. just query "select id, title from cards limit 5")
+[doc('Query the catalog directly (e.g. just query "select id, title from cards limit 5")')]
 query sql: build
     @sqlite3 -box build/catalog.sqlite {{ quote(sql) }}
 
-# Lint prose for handwaving and weak reasoning (pass files, or defaults to corpus)
+[doc("Lint prose for handwaving and weak reasoning (pass files, or defaults to corpus)")]
 vale *args:
     vale --config .vale.ini {{ if args == '' { 'corpus/problems/**/*.md corpus/collections/**/*.md' } else { args } }}
 
-# Report problem/exercise cards missing metadata (title, areas, topics, body)
+[doc("Report problem/exercise cards missing metadata (title, areas, topics, body)")]
 complete *args:
     uv run python -m qualc.card_completeness {{ args }}
 
-# Regenerate corpus measurements in CI
+[doc("Regenerate corpus measurements in CI")]
 backlog:
     uv run python tools/backlog.py
 
-# Sample up to n unsolved card IDs and show their appearances in source order
+[doc("Sample up to n unsolved card IDs and show their appearances in source order")]
 sample-unsolved collection n="5" section="":
     @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring sample {{quote(collection)}} {{quote(n)}} {{quote(section)}}
 
-# Refresh the MathJax macro set from the author's pandoc preamble
+[doc("Refresh the MathJax macro set from the author's pandoc preamble")]
 macros:
     uv run python tools/sync_macros.py
 
-# Refresh the command set the site's MathJax build defines (checked against authored mathematics)
+[doc("Refresh the command set the site's MathJax build defines (checked against authored mathematics)")]
 mathjax-commands:
     bun tools/mathjax_commands.mjs
 
-# Rewrite the unsolved-cards queue from the corpus
+[doc("Rewrite the unsolved-cards queue from the corpus")]
 unsolved:
     uv run python tools/unsolved_queue.py
 
-# Rewrite the prose-only-solutions queue from the corpus (solution has no numbered step)
+[doc("Rewrite the prose-only-solutions queue from the corpus (solution has no numbered step)")]
 prose-only:
     uv run python tools/prose_queue.py
 
-# Extract a PDF to Markdown with Mistral OCR, writing <markdown>.provenance.json beside it
+[doc("Extract a PDF to Markdown with Mistral OCR, writing <markdown>.provenance.json beside it")]
 ocr-pdf pdf markdown:
     bash -c 'source "$HOME/.envrc" && exec uv run --script tools/mistral_ocr.py "$1" "$2"' _ {{quote(pdf)}} {{quote(markdown)}}
 
-# Report problem cards whose statements still contain Unicode mathematics outside LaTeX
+[doc("Report problem cards whose statements still contain Unicode mathematics outside LaTeX")]
 extraction-detector:
     uv run python tools/extraction_detector.py
 
-# Refuse a push whose cards introduce or increase raw extraction mathematics
 [private]
+[doc("Refuse a push whose cards introduce or increase raw extraction mathematics")]
 _extraction-detector-push:
     uv run python tools/extraction_detector.py --range-gate "$(git merge-base HEAD @{upstream})"
 
-# The committed macro mirror matches a fresh read of pandoc-config.
 [private]
+[doc("Check that the committed macro mirror matches a fresh read of pandoc-config")]
 _macros-push:
     uv run python tools/sync_macros.py --check
 
-# Generate downloadable measurements from the CI checkout
 [private]
+[doc("Generate downloadable measurements from the CI checkout")]
 _reports-ci:
     uv run python tools/backlog.py --with-queues
 
-# Fail if any worktree exists (QUAL-09: one checkout, one branch)
-#
-# Documentation alone did not hold. The rule was written down and the fleet rebuilt
-# 27 worktrees anyway, each copying the 353MB tracked assets/ tree, filling the volume
-# on 2026-09-10 while holding a megabyte of authored prose between them. This is the
-# enforcement: a stream that opens a worktree finds out at its very next commit,
-# instead of the volume finding out first.
 [private]
+[doc("Fail if any worktree exists (QUAL-09: one checkout, one branch)")]
 _no-worktrees:
     #!/usr/bin/env bash
     set -euo pipefail
@@ -154,70 +145,51 @@ _no-worktrees:
         exit 1
     fi
 
-# Reject a commit whose only content is a queue tick
-#
-# AGENTS.md, "A disposition is not a unit of work": a queue disposition rides in the commit
-# carrying the cards it describes. A one-line tick committed alone spends a full gate run to
-# move a marker and reports progress the corpus did not make. Real queue filings are large and
-# pass; this only catches the bare tick.
 [private]
+[doc("Reject a commit whose only content is a queue tick or a bare collection index change")]
 _no-bare-disposition:
     #!/usr/bin/env bash
     set -euo pipefail
     staged=$(git diff --cached --name-only)
     [ -z "$staged" ] && exit 0
-    # A collection index marked `completion: complete` with no card touched is the same
-    # species as a queue tick — a marker moved, nothing authored. Treat queue files and
-    # bare index.md the same way; an index change riding with card work is fine and passes.
     outside=$(printf '%s\n' "$staged" | grep -vE '^queues/|(^|/)index\.md$' || true)
     [ -n "$outside" ] && exit 0
-    # Size is the wrong test: a six-line reconciliation note committed alone is still a
-    # disposition committed alone. What distinguishes a real queue filing is who writes it —
-    # the steward files work into queues with the maintainer noreply address, while a worker
-    # commits under the account address and should never be committing queue state by itself.
     author=$(git config user.email)
     case "$author" in
         *users.noreply.github.com) exit 0 ;;
     esac
     echo "Refusing a commit that changes only queue files and collection indexes." >&2
     echo "" >&2
-    echo "AGENTS.md, 'A disposition is not a unit of work': a disposition, a reconciliation note" >&2
-    echo "or queue tick rides in the commit carrying the cards it describes. Stage the card work" >&2
-    echo "alongside it, or leave the queue edit uncommitted until the cards it describes land." >&2
+    echo "AGENTS.md, 'Sources and gaps': what the corpus lacks is added in an ordinary commit of the" >&2
+    echo "cards themselves, so a reconciliation note or queue tick rides in the commit carrying the" >&2
+    echo "cards it describes. Stage the card work alongside it, or leave the queue edit uncommitted" >&2
+    echo "until the cards it describes land." >&2
     exit 1
 
-# Run immediate commit-tier quality checks
+[doc("Run immediate commit-tier quality checks")]
 test-commit: _no-worktrees _no-bare-disposition
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-commit
     @uv run --no-sync python -m qualc.authoring check-staged
 
-# Explicit files keep site builds and corpus scans in CI. One worker avoids
-# starting a process per CPU for this small test selection.
-# Run immediate checks and small parser tests before pushing
+[doc("Run immediate checks and small parser tests before pushing")]
 test-push:
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-push
     @uv run --no-sync python -m qualc.authoring check-changes --mode push </dev/null
     @just _extraction-detector-push _macros-push
     @uv run --group dev pytest -q -n 0 tests/test_front_matter_keys.py tests/test_extraction_detector.py tests/test_card_git_validation.py tests/test_push_gate_dependencies.py
 
-# Read the duration records of past runs and of past `qualc` runs (issue #145)
+[doc("Read the duration records of past runs and of past `qualc` runs")]
 timings *args:
     uv run python -m qualc.runrecord {{ args }}
 
-# Run the CI acceptance gate and hand this run's duration record to the QC artifact
+[doc("Run the CI acceptance gate and hand this run's duration record to the QC artifact")]
 test-ci:
     #!/usr/bin/env bash
     set -euo pipefail
-    # The record of this run is the point of the run past the gate itself
-    # (issue #145); the tier below is unchanged.
     records="$(uv run --frozen python -m qualc.runrecord --dir)"
     before="$(ls -1 "$records" 2>/dev/null || true)"
     status=0
     PYTEST_ADDOPTS="" just -f ~/ai-review-ci/justfiles/python.just -d . test-ci || status=$?
-    # The test tier runs inside the shared QC workflow, and a workflow that
-    # calls another cannot add a step to it. `.qc-triage/` is the one directory
-    # that workflow uploads with `always()`, so the records of the run that just
-    # happened — the failing one included — ride out with it.
     after="$(ls -1 "$records" 2>/dev/null || true)"
     fresh="$(comm -13 <(printf '%s\n' "$before" | sort) <(printf '%s\n' "$after" | sort) | sed '/^$/d')"
     if [[ -n "$fresh" ]]; then
@@ -226,14 +198,13 @@ test-ci:
     fi
     exit "$status"
 
-# Provision the mathematical document toolchain used by the hosted test suite
 [private]
+[doc("Provision the mathematical document toolchain used by the hosted test suite")]
 _ci-setup:
     #!/usr/bin/env bash
     set -euo pipefail
     sudo apt-get update
     sudo apt-get install -y pdf2svg
-    # Full TeX Live, restored from the qc-ci setup cache keyed on ci/texlive.profile.
     if [[ ! -x "$HOME/texlive/bin/x86_64-linux/lualatex" ]]; then
         curl -sSL https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz | tar -xz -C "$RUNNER_TEMP"
         "$RUNNER_TEMP"/install-tl-*/install-tl --profile ci/texlive.profile --texdir "$HOME/texlive"
@@ -241,6 +212,6 @@ _ci-setup:
     echo "$HOME/texlive/bin/x86_64-linux" >> "$GITHUB_PATH"
     git clone --depth 1 https://github.com/dzackgarza/pandoc-config.git "$HOME/.pandoc"
 
-# Run the scheduled whole-tree audit (semgrep and debt scans) through the central implementation.
+[doc("Run the scheduled whole-tree audit (semgrep and debt scans) through the central implementation")]
 ambient:
     @just -f ~/ai-review-ci/justfiles/python.just -d . ambient

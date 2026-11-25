@@ -66,3 +66,39 @@ uv run python -m qualc.runrecord --tool pytest --limit 3
 
 A record is a measurement and nothing acts on it: it is not a gate, and `qualc check` does not
 fail because a check was slow.
+
+## The gates the `justfile` adds
+
+The `ai_review_ci_*` variables at the top of the `justfile` are the ai-review-ci contract that
+its doctor and workflow installers read.
+
+`test-commit` runs two repository gates before the shared syntax check.
+
+`_no-worktrees` enforces QUAL-09: one checkout, one branch. Documentation alone did not hold.
+The rule was written down and the fleet rebuilt 27 worktrees anyway, each copying the 353MB
+tracked `assets/` tree, and they filled the volume on 2026-09-10 while they held a megabyte of
+authored prose between them. With the gate, a stream that opens a worktree finds out at its next
+commit, before the volume does.
+
+`_no-bare-disposition` enforces [Sources and gaps](../../AGENTS.md#sources-and-gaps): what the
+corpus lacks is added in an ordinary commit of the cards themselves. A queue tick or a
+reconciliation note rides in the commit that carries the cards it describes. Committed alone, it
+spends a full gate run to move a marker and reports progress that the corpus did not make. A
+collection `index.md` marked `completion: complete` with no card touched is the same kind of
+commit, so the gate treats queue files and a bare `index.md` alike; an index change that rides
+with card work passes. Size does not separate the cases: a six-line reconciliation note
+committed alone is still a disposition committed alone. The author does: the steward files work
+into the queues under the maintainer's `users.noreply.github.com` address, and a worker commits
+under the account address and never commits queue state by itself.
+
+`test-push` names its pytest files explicitly, so site builds and corpus scans stay in CI, and
+runs them with `-n 0`, so this small selection does not start one process per CPU.
+
+`test-ci` writes this run's duration record (issue #145), the point of the run past the gate
+itself. The test tier runs inside the shared QC workflow, and a workflow that calls another
+cannot add a step to it. `.qc-triage/` is the one directory that workflow uploads with
+`always()`, so `test-ci` copies the records of the run that just happened there, the record of a
+failing run included.
+
+`_ci-setup` restores full TeX Live from the qc-ci setup cache, keyed on `ci/texlive.profile`,
+and installs it only when the cache did not supply `lualatex`.
