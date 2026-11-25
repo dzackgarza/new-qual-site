@@ -487,8 +487,8 @@ the full acceptance checks.
 ## A red gate is the current task
 
 When a gate you run — a code commit gate, or the push gate — goes red, stop and diagnose it:
-root-cause and fix the gate, or report it as a blocker with a reproducer. Do not push behind a red
-gate, and do not accumulate unpushed work around one. A gate that is red on two consecutive
+root-cause and fix the gate, or report it as a blocker with a reproducer. Do not accumulate
+unpushed work around a red gate. A gate that is red on two consecutive
 attempts is a defect to diagnose, not an environment condition to wait out.
 
 ## Every run leaves a duration record
