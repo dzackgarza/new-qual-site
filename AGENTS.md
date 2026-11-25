@@ -130,7 +130,7 @@ the mathematics.
 A check may report a measurement, named for exactly the measurement it took.
 `audit.py`'s `duplicate-bodies` reports that two cards hold the same bytes. That
 is a true statement about bytes and a *candidate* for someone to read. It is not
-a finding that the two cards are the same statement, and it must never be wired
+a finding that the two cards are the same statement. Do not wire it
 to anything that acts on that reading. A check whose name claims more than it
 measured is the same defect in smaller form.
 
@@ -178,7 +178,7 @@ Before you write, split, merge, move, or retitle a page under `wiki/`, read [doc
 
 ## Work one item at a time
 
-Never create or edit authored data in batches. This rule applies especially to
+Create and edit authored data one item at a time, not in batches. This rule applies especially to
 problem cards. It also applies to titles, statements, classifications,
 relations, solutions, hints, and remarks.
 
@@ -188,7 +188,7 @@ relevant existing cards before each change. Make an independent curation
 decision for that item. Verify the completed item before starting the next one.
 
 Do not use scripts, loops, templates, bulk edits, or generators to produce
-authored data. Never derive a title, create a card, fill a field, or change
+authored data. Do not derive a title, create a card, fill a field, or change
 mathematical content automatically. Each result must come from intelligent
 reading and mathematical judgment.
 
@@ -337,7 +337,7 @@ A tool may render and transport: build the site, sync an external file into the
 repo, check that the corpus is internally consistent. A check may report a
 measurement — two cards hold the same bytes, a card has no solution, a title is
 unreadable — named for exactly what it measured. The measurement is a candidate
-for a human to read. It must never be wired to anything that acts on it.
+for a human to read. Do not wire it to anything that acts on it.
 
 The build reads authored content and renders it. It does not derive fields. A
 build that derives titles, classifications, relations, or any other field is
@@ -391,8 +391,8 @@ since the list was produced. Never author the same card as a sibling.
 
 # One checkout, one branch
 
-**Streams work directly on `main` in the single clone. Do not create worktrees and
-do not create branches.**
+Streams work directly on `main` in the single clone, without worktrees or
+branches.
 
 This repository is authored content. A stream writes solutions, hints and wiki prose
 into card files it selected off a queue, and two streams never hold the same card —
