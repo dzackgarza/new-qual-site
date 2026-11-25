@@ -1,0 +1,80 @@
+{
+  "rulebook_version": 1,
+  "name": "one-checkout",
+  "version": "1.0.0",
+  "description": "Enforces QUAL-09: one checkout, one branch.",
+  "author": "project",
+  "allowed_commands": [
+    "git"
+  ],
+  "rules": [
+    {
+      "name": "block-worktree-add",
+      "command": "git",
+      "subcommand": "worktree",
+      "block_args": [
+        "add"
+      ],
+      "reason": "Work on main in the single clone: commit straight to main, and pick card files from the queue so streams never overlap. No worktrees or branches (QUAL-09)."
+    },
+    {
+      "name": "block-checkout-new-branch",
+      "command": "git",
+      "subcommand": "checkout",
+      "block_args": [
+        "-b",
+        "-B",
+        "--orphan"
+      ],
+      "reason": "Work on main in the single clone: commit straight to main, and pick card files from the queue so streams never overlap. No worktrees or branches (QUAL-09)."
+    },
+    {
+      "name": "block-switch-new-branch",
+      "command": "git",
+      "subcommand": "switch",
+      "block_args": [
+        "-c",
+        "-C",
+        "--create",
+        "--force-create",
+        "--orphan"
+      ],
+      "reason": "Work on main in the single clone: commit straight to main, and pick card files from the queue so streams never overlap. No worktrees or branches (QUAL-09)."
+    }
+  ],
+  "tests": [
+    {
+      "command": "git worktree add ../wt",
+      "expect": "blocked",
+      "rule": "block-worktree-add"
+    },
+    {
+      "command": "git checkout -b feature",
+      "expect": "blocked",
+      "rule": "block-checkout-new-branch"
+    },
+    {
+      "command": "git checkout -B feature",
+      "expect": "blocked",
+      "rule": "block-checkout-new-branch"
+    },
+    {
+      "command": "git switch -c feature",
+      "expect": "blocked",
+      "rule": "block-switch-new-branch"
+    },
+    {
+      "command": "git switch -C feature",
+      "expect": "blocked",
+      "rule": "block-switch-new-branch"
+    },
+    {
+      "command": "git status",
+      "expect": "allowed"
+    },
+    {
+      "command": "git commit -m x",
+      "expect": "allowed"
+    }
+  ]
+}

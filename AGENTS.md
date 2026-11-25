@@ -394,6 +394,8 @@ since the list was produced. Never author the same card as a sibling.
 Streams work directly on `main` in the single clone, without worktrees or
 branches.
 
+The project cc-safety-net rulebook `one-checkout` (`.cc-safety-net/rules/one-checkout/`) blocks `git worktree add`, `git checkout -b`/`-B`, and `git switch -c`/`-C`.
+
 This repository is authored content. A stream writes solutions, hints and wiki prose
 into card files it selected off a queue, and two streams never hold the same card —
 so there is nothing for a branch to isolate and nothing for a merge to resolve. The
