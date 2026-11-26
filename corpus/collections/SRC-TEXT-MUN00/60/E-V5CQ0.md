@@ -95,8 +95,8 @@ $g$ is surjective: a point of $P^2$ is $p(x)$ for some $x\in S^2$, and
 $x$ or $-x$ has non-negative third coordinate, say $x$; then $x=\hat b$ for
 $b=(x_1,x_2)\in B^2$ and $p(x)=g(q(b))$.
 
-$g$ is injective: if $g(q(b))=g(q(b'))$ then $p(\hat b)=p(\hat{b'})$, so
-$\hat{b'}=\hat b$ or $\hat{b'}=-\hat b$. In the first case $b'=b$. In the second,
+$g$ is injective: if $g(q(b))=g(q(b'))$ then $p(\hat b)=p(\widehat{b'})$, so
+$\widehat{b'}=\hat b$ or $\widehat{b'}=-\hat b$. In the first case $b'=b$. In the second,
 the third coordinates satisfy $\sqrt{1-\norm{b'}^2}=-\sqrt{1-\norm b^2}$, so both
 are $0$, $b,b'\in S^1$, and $b'=-b$; hence $q(b')=q(b)$.
 :::

@@ -30,7 +30,7 @@ The [[D-CREQS|Cauchy--Riemann equations]] are the real form of complex different
 
 [[PR-TVPCM]]
 
-Conjugation interchanges the two operators, $\bar{\delbar f}=\del\bar f$, and for a constant $c$ the basic differentials are $d(cz)=c\dz$ and $d(c\bar z)=c\dzbar$.
+Conjugation interchanges the two operators, $\overline{\delbar f}=\del\bar f$, and for a constant $c$ the basic differentials are $d(cz)=c\dz$ and $d(c\bar z)=c\dzbar$.
 
 ::: {.example title="Wirtinger derivatives of $\abs z^2$ and of $e^{-\abs z^2}$"}
 For example,

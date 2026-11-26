@@ -88,7 +88,7 @@ $$
 For each finite point $p=a\in\CC$, the rational function $t-a$ has
 divisor
 $$
-\div(t-a)=[a]-[\infty].
+\divisorof(t-a)=[a]-[\infty].
 $$
 Therefore
 $$
@@ -237,9 +237,9 @@ $$
 ::: pf-proof
 The character $\chi^m$ is a section of $\OO(D)$ exactly when
 $$
-\div(\chi^m)+D\ge0.
+\divisorof(\chi^m)+D\ge0.
 $$
-Since the coefficient of $D_\rho$ in $\div(\chi^m)$ is
+Since the coefficient of $D_\rho$ in $\divisorof(\chi^m)$ is
 $$
 \langle m,u_\rho\rangle,
 $$

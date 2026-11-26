@@ -71,7 +71,7 @@ This is Cox--Little--Schenck, *Toric Varieties*, Theorem 12.4.4 (Jurkiewicz--Dan
 
 ::: {.remark}
 The Stanley--Reisner relation $D_{i_1}\cdots D_{i_k}=0$ says that invariant divisors whose rays span no cone have empty common intersection, since their orbit closures do not meet.
-The linear relations are $\div(\chi^m) \sim 0$ from the class-group sequence.
+The linear relations are $\divisorof(\chi^m) \sim 0$ from the class-group sequence.
 :::
 
 ::: {.example}

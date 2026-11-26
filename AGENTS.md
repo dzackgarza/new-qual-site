@@ -58,7 +58,6 @@ agent-memory maintain move <key> --to global/advice
 ```
 <!-- agent-memory:end -->
 
-
 # This project is not automatable
 
 Read this before writing anything in this repository.
@@ -131,7 +130,7 @@ the mathematics.
 A check may report a measurement, named for exactly the measurement it took.
 `audit.py`'s `duplicate-bodies` reports that two cards hold the same bytes. That
 is a true statement about bytes and a *candidate* for someone to read. It is not
-a finding that the two cards are the same statement, and it must never be wired
+a finding that the two cards are the same statement. Do not wire it
 to anything that acts on that reading. A check whose name claims more than it
 measured is the same defect in smaller form.
 
@@ -175,116 +174,11 @@ tooling problem.
 
 ## The wiki is a textbook
 
-`wiki/` is an authored study guide for graduate students preparing for these
-exams. Treat it as an online textbook that is still being written. It has an
-author making editorial decisions: what a reader needs to read, in what order,
-and what has to sit next to what. It is a living document and it is meant to
-grow.
-
-Every organizing decision answers one question: **what does someone studying
-for this exam need, and what must be adjacent to it?** Nothing else decides
-where a page goes. Not the folder it is in now, not the chapter a textbook put
-it in, not any property of the files.
-
-That question produces page shapes with no counterpart in the data:
-
-- A technique drilldown. "Which contour do I close?" is a decision procedure
-  keyed on the shape of the integrand — semicircle, keyhole for a branch cut,
-  rectangle for a periodic integrand, indented semicircle for a pole on the
-  line. It is one of the most valuable pages a complex analysis guide can have.
-  "How do I show a group of order n is not simple?" is the same page in algebra.
-
-- A compendium. Counterexamples get their own page for the reason
-  *Counterexamples in Topology* is a book: when the question is "is this true",
-  you want the standard pathologies in one place. The standard contour integrals
-  are another. So is a page of proof sketches of the big theorems, for the last
-  week of review.
-
-- A grouping by conclusion. Liouville, maximum modulus, the open mapping
-  theorem, and the identity theorem belong together on a page about theorems
-  that hand you a constant function, because on an exam you work backwards from
-  the conclusion you need. This cuts across four textbook chapters.
-
-- A toolkit. The Schwarz lemma, Blaschke factors, and Möbius maps go on one
-  page because you use them in one breath.
-
-Definitions, theorems, examples, and counterexamples are the **content of a
-page**, inlined where the exposition needs them. Card ids are an addressing
-layer: they let a statement be cited, reused, collected into a guide, and
-located. The Stacks Project is a book whose statements carry tags. It is not a
-tag collection with a book laid over it. This wiki is the same.
-
-Whether a standard definition or theorem keeps a local statement card or resolves to an
-external oracle is `SOURCE-02` in [CONTRIBUTING.md](CONTRIBUTING.md); how localization
-prerequisites are phrased is `DEF-35`.
-
-### Where agents get this wrong
-
-**Do not score a reorganization by page count.** Reorganization relocates and
-splits prose; it cannot reduce how much is written. The expected direction is
-up, because the commonest editorial move is splitting one page that holds
-several concepts into one page per concept. A page count that falls is evidence
-that something was destroyed, not that the work went well.
-
-**Do not derive the organization from the corpus.** Topic strings, card kinds,
-tag frequencies, guide section lists, and the current folder names describe
-storage. None of them is a table of contents. Reaching for them is reaching for
-something countable because authorship is not countable, and it produces a
-filing system rather than a book.
-
-**Do not normalize the tree like a codebase.** One-axis-per-level, depth caps,
-and deduplication by name are instincts for source code. Two pages that share a
-name are not the same subject until someone reads both. Six complex analysis
-pages carry "Schwarz" in the title and they are three different subjects: the
-lemma, the reflection principle, and — under a heading that names neither —
-Blaschke factors. Merging those on the name files the automorphism material
-under a lemma it is not about.
-
-**Do not remove a thin or empty section.** It is a chapter not yet written, not
-a folder to tidy away. Write the chapter.
-
-**Do not treat a merge as an improvement in itself.** A merge is only ever a
-correction to a duplicate, and the duplication has to be proved by reading both
-pages and finding the same mathematics.
-
-### What good work looks like
-
-Read the mathematics. Decide what a student needs. Write the page. Group,
-split, collect, and drill down as the exposition requires, and justify each
-move by what it does for a reader.
-
-### Two concerns, and the test that separates them
-
-The wiki has an engineering side and an authoring side. Both are real work and
-neither substitutes for the other.
-
-The engineering side measures the file. Does the page parse; does its
-mathematics typeset; do its links resolve; does it carry a title and an integer
-`order`; does its directory carry an `index.md`; is Obsidian syntax reaching
-the reader as literal text; do two pages in one folder render the same text
-twice in the sidebar. These are mechanical, they have exact answers, and a
-checker should be strict about them. `just doctor` is that checker and it earns
-its place. The rules in "What a tool may do" apply to it unchanged: it reports
-a measurement named for exactly what it measured, and nothing acts on the
-measurement.
-
-The authoring side decides what the text says and how it is arranged. What a
-reader needs, what belongs on one page, which pages a chapter has, what has to
-sit next to what.
-
-The test: **can the answer be wrong in a way only a mathematician reading the
-page would notice?** If yes, it is authoring, and no checker gets a vote. "This
-directory holds one page" is a fact about the filesystem; whether that is a
-chapter with one section written or a page in the wrong place is a reading.
-"These two pages share a title" is a fact; whether they hold the same
-mathematics is a reading — six complex analysis pages titled Schwarz are three
-different subjects.
-
-Report the fact under its own name. Leave the reading to a reader.
+Before you write, split, merge, move, or retitle a page under `wiki/`, read [docs/agents/wiki.md](docs/agents/wiki.md).
 
 ## Work one item at a time
 
-Never create or edit authored data in batches. This rule applies especially to
+Create and edit authored data one item at a time, not in batches. This rule applies especially to
 problem cards. It also applies to titles, statements, classifications,
 relations, solutions, hints, and remarks.
 
@@ -294,7 +188,7 @@ relevant existing cards before each change. Make an independent curation
 decision for that item. Verify the completed item before starting the next one.
 
 Do not use scripts, loops, templates, bulk edits, or generators to produce
-authored data. Never derive a title, create a card, fill a field, or change
+authored data. Do not derive a title, create a card, fill a field, or change
 mathematical content automatically. Each result must come from intelligent
 reading and mathematical judgment.
 
@@ -396,35 +290,11 @@ to create a collection card. Applied Algebra is not numerical analysis.
 
 ## Screenshots of notes
 
-The QualBot PNGs, and any similar crop, are screenshots of the author's
-typeset notes. They are not source documents. They are not assets.
-
-The notes are a compilation of real exam problems: they label which exam
-and problem number each statement came from. That label is curation metadata,
-not collection provenance. Provenance is the exam paper — department PDF,
-homework sheet, or packet under `assets/attachments/`.
-
-Do not store note screenshots under `assets/`. Do not list them as collection
-`provenance`. Do not keep a collection card whose only job is to wrap a
-screenshot.
-
-After the statement is on a problem card and linked to its exam collection,
-delete the screenshot. Do not delete an unmatched screenshot to tidy the tree:
-until the exam is identified, the image may be the only copy of the label.
+Before you store, match, or delete a screenshot of the author's typeset notes (the QualBot PNGs or a similar crop), read [Screenshots of notes](docs/agents/collection-provenance.md#screenshots-of-notes).
 
 ## Migration archives are history, not assets
 
-Snapshots of repositories that fed the migration are historical transport
-material. Git history preserves them; they do not remain as a second live source
-tree and they must not be kept under `assets/` merely because an importer once
-read them there.
-
-`assets/` is for material the built corpus actually uses as an asset: source
-documents such as exam PDFs under `assets/attachments/`, figures used by cards or
-wiki pages, and the checked-in Markdown extractions of those PDFs. If a live card
-still points into a migration snapshot, move or copy the needed figure/source
-document into the appropriate subject or attachment asset location and point the
-card there; do not retain the migration snapshot to satisfy the link.
+Before you keep, add, or remove a migration snapshot or a file under `assets/` that a card points into, read [Migration archives are history, not assets](docs/agents/collection-provenance.md#migration-archives-are-history-not-assets).
 
 ## Heuristics have no place in this repo
 
@@ -444,91 +314,7 @@ recipe. Its output is committed corpus content; the tool itself is fossil.
 
 ## PDF extraction
 
-PDF intake has one epistemic baseline: a **high-quality machine extraction** checked into the repository.
-Two methods are valid. Use MinerU Flash first:
-
-```bash
-mineru-open-api flash-extract myfile.pdf --language en
-```
-
-When MinerU Flash fails on a source (timeouts, parse failures, or garbled output at an
-identified location), extract it with the Mistral OCR API, which writes the extraction and its
-provenance file:
-
-```bash
-just ocr-pdf assets/attachments/myfile.pdf assets/attachments/myfile_extracted.md
-```
-
-Do not use `pdftotext`, Tesseract, PyMuPDF/`fitz`, or any other text extractor in place of
-these two. A transient MinerU failure (upload timeout, `-60007`, `-60010`) is retried, with
-page ranges when a whole-file upload times out, before it counts as a failure.
-
-Rendering a page to PNG and reading it is the method for an identified defect the extraction
-cannot carry: a figure, a garbled matrix or glyph, a cropped choice. Transcribe that location
-from the render and record on the card and provenance file that it was read from the page
-image. Rendered output is also how authored cards and pages are spot-checked.
-
-Every problem-bearing PDF consumed by intake must therefore have a checked-in MinerU Flash or
-Mistral OCR Markdown extraction. The extraction is the auditable transcription baseline from which cards
-are produced. An existing `*_extracted.md` or `assets/attachments/extracted/*.md` file may be
-reused only when repository evidence establishes that it came from one of these two paths.
-**Unknown extraction provenance is not acceptable evidence:** regenerate the extraction before
-using it for intake.
-
-Model work begins only *after* the machine extraction exists. Its role
-is limited to transcription cleanup and resolving concrete extractor errors or ambiguities. If a
-specific extraction defect must be resolved against the original PDF, inspect only that disputed
-location and record the correction as such; do not turn source inspection into an independent
-second transcription pass or a claim that the rest of the extraction has been verified. If
-neither extractor can run, intake of that PDF is blocked rather than falling back to another
-extraction path.
-
-A genuine source that exists only as a retained raster image is not a separate extraction case.
-Preserve the original image as provenance, wrap it losslessly and deterministically into a PDF
-container, record the image hash and derived-PDF hash, and run the same extraction on
-that PDF. The conversion step must not OCR, resample, enhance, redraw, or otherwise interpret the
-image. If the image itself is missing (for example the lost Anki
-`collection.media` figures), there is nothing to convert or extract; that remains missing-source
-recovery work.
-
-Never extract PDFs to `/tmp`, `.tmp`, or any other temp directory. Temp
-files are not tracked by git and vanish between sessions. Always extract
-into the repository so the output is versioned and persistent.
-
-Source PDFs live under `assets/attachments/`. Their checked-in extractions live
-under `assets/attachments/` as `<stem>_extracted.md` beside the PDF or as
-`assets/attachments/extracted/<stem>.md`. Example:
-
-```bash
-mineru-open-api flash-extract assets/attachments/exam.pdf > assets/attachments/exam_extracted.md
-```
-
-Commit the final extraction with the intake work. If you need intermediate files while resolving
-a specific extraction defect, stage them in the repo — for example
-`assets/attachments/intermediate/` — and delete them when the final extraction/correction is
-committed.
-
-### Extraction output is an input, not a card
-
-What comes out of an extractor is a transcription source. It becomes a card when its
-mathematics has been written as LaTeX and reads as the source reads — not when it has been
-pasted between `::: {.problem}` fences. A statement carrying unicode mathematics outside any
-`$`-delimiter has not been transcribed: `∂u ∂x (0, 0)` is a lost derivative, a bare `Z` where
-an integral belongs is a lost integral, and a nested radical flattened to `v u s r Z 9u √ q t`
-is a lost problem. The card looks finished, `just unsolved` offers it, and a worker writes a
-proof of something nobody asked.
-
-Never run a whitespace or line normalizer over unconverted extraction output. The column
-layout in a raw extraction is the last surviving record of the fraction bar, the integral
-bound, and the superscript; joining the lines is not a cleanup, it is the step that makes the
-card unrecoverable without going back to the PDF. On 2026-09-13 a normalization pass did
-exactly this to three freshly ingested collections, one commit after ingesting them.
-
-Two consequences for a turn. An ingest that needs a follow-up normalization commit did not
-land cards, it landed extraction residue — fix the pipeline rather than paying it by hand on
-every source. And where the source cannot settle what a statement said, mark the card as
-unrecovered and say so; an invented plausible problem is the one outcome worse than a gap,
-because nothing downstream can tell it from the real thing.
+Before you extract, re-extract, or transcribe a PDF or a retained raster source for intake, read [docs/agents/pdf-extraction.md](docs/agents/pdf-extraction.md).
 
 ## Bank before you wait
 
@@ -551,7 +337,7 @@ A tool may render and transport: build the site, sync an external file into the
 repo, check that the corpus is internally consistent. A check may report a
 measurement — two cards hold the same bytes, a card has no solution, a title is
 unreadable — named for exactly what it measured. The measurement is a candidate
-for a human to read. It must never be wired to anything that acts on it.
+for a human to read. Do not wire it to anything that acts on it.
 
 The build reads authored content and renders it. It does not derive fields. A
 build that derives titles, classifications, relations, or any other field is
@@ -564,151 +350,7 @@ card that carries `provenance:`. A problem carries no provenance; where a
 problem comes from follows from backlinks — every collection whose
 `source.problems` lists it. Collection cards live in `corpus/collections/`.
 
-## One problem browser
-
-`problems.html` is the only reader-facing implementation that displays a
-metadata-selected family of problem rows. It owns filtering, source-scoped
-ordering, random sampling, and print/PDF. Do not add a second metadata-query or
-practice-set renderer to guides, wiki pages, or another site route. A
-collection's authored `source.problems` / `source.sections` list is not a query:
-it is the collection's intrinsic contents and is rendered on the collection
-page itself.
-
-The catalog UI itself is standard infrastructure: Problems and Sources are
-DataTables 2 tables with SearchPanes for faceted filtering and RowGroup where
-source sections need grouping. Do not hand-roll pagination, facet controls,
-facet counts, table search, or result-row lifecycle in `app.js`; `app.js` owns
-site-wide Pagefind search only. Project code may adapt corpus rows into the
-library and add domain actions such as sampling the currently filtered problem
-set.
-
-- A guide section or topical wiki page owns ordinary `topics:` metadata. The
-  renderer automatically adds one `problems.html` link with the page's subject
-  area and topics prefilled. Do not add `query:` items to guide manifests or a
-  `problems:` query block to wiki front matter.
-- A subject wiki landing page represents the whole area, so it automatically
-  links to `problems.html?area=<subject>` even when it has no narrower topics.
-  Resources, workshop indexes, and other non-topical pages may omit `topics:`
-  and therefore get no automatic problem link.
-- A collection page keeps source identity, provenance, completion state, and
-  **enumerates the authored source contents in source order**, preserving
-  section structure, problem links, and authored appearance locators. This is
-  the principal purpose of the collection page. Collection classification and
-  status use the same metadata band as every other card. Provenance resources
-  belong there too as compact typed links (PDF, Markdown extraction, source
-  page); never expose a repository-relative asset path as reader-facing prose.
-  The page may additionally deep-link with `collection=SRC-...` so the same
-  problems can be searched, filtered, sampled, or printed in the browser. That
-  browser link supplements rather than replaces the collection's own contents.
-- `generate.html` is compatibility-only: old URLs redirect to `problems.html`
-  with `sample=8`. It must not acquire controls, query logic, or a second
-  problem data path.
-- `E-*` and `P-*` are stable addresses. Every posed mathematical card is
-  `kind: problem`; whether a source called one an exercise, homework problem,
-  or qualifying-exam problem belongs to its collection appearance.
-
-A source's ordered problem membership is authored corpus data and the source
-page materializes it directly. The central browser is a second view of that
-same authored membership for filtering, sampling, and print; it does not own or
-replace the collection's source-order presentation.
-
-A collection is a source document, not an exam event. One PDF is one
-collection. If that PDF *is* a single exam's problem set, the collection is
-that exam. If the PDF is a compilation of several papers, the collection is
-the compilation; the exams inside it are `sections` of that card, not
-separate collections. Do not split a compilation PDF into one collection per
-exam. (A workshop that is several sheet PDFs is already one compilation
-with one href per sheet and one section per sheet. A section that
-is another source — an exam paper that is its own collection — lists that
-collection instead of copying its problem list. The exam collection owns
-that sheet's provenance href.)
-
-Collection membership follows the mathematical statements present in the
-available source document. It does not follow the historical exam that the
-document describes. Blank pages, missing pages, score tables, and gaps in
-problem numbering do not create missing collection items. Do not invent
-expected cards, mark the collection incomplete, or create recovery work for
-statements that are absent from every available source.
-
-## Provenance means external oracles
-
-Provenance is any externally authored source: textbooks, problem sheets, exams,
-external notes, or PDFs from other institutions. The entire point of provenance
-is to have an oracle that can be trusted more than self-authored content —
-something written by someone else, against which problem correctness can be
-checked and "blamed" if the problem is ill-defined or otherwise problematic.
-
-Provenance is NOT:
-- PDFs authored by the project maintainer
-- PDFs on the to-be-archived source repos being migrated into this repo (e.g.
-  MMAQ)
-- This project's wiki or any content derived from our own cards
-- Solution writeups, regardless of authorship
-
-On a **collection** card, `provenance:` is a YAML list of hrefs (`https://` or
-repo-relative paths). Each href is the document the problems were extracted
-from: the official paper, the homework sheet, or — for a textbook collection —
-the book. A markdown file is not that document. A reader following the link
-must be able to verify the list against that document.
-
-Origin notes that are not links belong in a `::: remark` block on the card body,
-not in frontmatter.
-
-`just provenance` measures empty lists, hrefs that do not resolve, hrefs
-listed on more than one collection, hrefs whose path is a markdown file,
-hrefs whose path is an image file, hrefs whose path is under a forbidden
-source tree (`make-me-a-qual`, wiki copies, importer wrappers, and the
-like), and collections whose area appears on no problem card.
-It is not a gate. Filling the list so the measurement is quieter is
-fabricating a source.
-
-## What must not appear as a collection href
-
-None of the following is provenance, even if the file is in this repository or
-the wiki once named it as the source.
-
-- This project's wiki (`wiki/…`), wiki exam-term headings, or any page generated
-  from our cards. Grouping in the vault is not an independent document. Qual
-  notes record which exam a problem came from; they are not the exam
-  paper.
-- Qual-review-and-solutions compiled notes, generated TeX, pandoc tempfiles, or
-  a copy of wiki or QRS content parked under `assets/`. Same rule: use them to
-  identify the exam; list the paper in `provenance`.
-- A solution writeup. A writeup of solutions is not the exam, the homework
-  sheet, or the source document.
-- A figure that appears inside a writeup.
-- A standalone problem image (`.png`, `.jpg`, and the like). An image file is
-  not the exam paper. Screenshots of the author's notes are not assets;
-  see Screenshots of notes.
-- An importer wrapper: markdown generated from a PDF, authored MMAQ `.md`,
-  generated MMAQ `.tex`, or `Combined_Questions.pdf`. A markdown file is not
-  a collection href.
-- Any `dzackgarza` repository is not an independent source. A GitHub URL
-  under `dzackgarza`, a sibling clone, or a copy of that repo under `assets/`
-  is not a collection href. That includes `make-me-a-qual` and
-  `Combined_Questions.yaml`. This site's wiki is the same. An exam paper
-  stored in `assets/attachments/` is the paper, not the repo.
-- A file that is a different exam than the card claims.
-- A textbook catalog page or ISBN on a homework or exam collection. The
-  collection's document is the sheet. (A textbook collection may cite the book.)
-- Another collection card. Reprints of a published exam go in `relations`
-  (`related-to`), not in `provenance`.
-- A dead GitHub URL to a deleted upstream. Vendor the actual source file into
-  this repo and point at that file.
-- Directory listings, pirated copies, or a live URL that does not serve the
-  paper.
-
-A compilation of photocopied exam papers (for example
-`algebra_2010-2015_prelims.pdf`) is a source of truth if we did not compile it.
-The href is the packet. Unlabeled is fine: provenance is not a university.
-Read the pages for what they actually contain (heading, date, instructions,
-which exam occupies which pages). Do not invent a department website, a
-compiler, or an institution the pages do not name. Do not treat the wiki
-attachments folder as a second source.
-
-An empty collection `provenance` list means no qualifying href is listed yet.
-Leave it empty. Hunt in this repo, sibling clones, and distinctive problem text
-on the web; if the exam document is not found, the list stays empty.
+Before you edit a collection card, its `provenance:` list or `source.problems` list, a collection page, or the problem browser (`problems.html`), read [docs/agents/collection-provenance.md](docs/agents/collection-provenance.md).
 
 ## Problems may appear in multiple collections
 
@@ -749,8 +391,10 @@ since the list was produced. Never author the same card as a sibling.
 
 # One checkout, one branch
 
-**Streams work directly on `main` in the single clone. Do not create worktrees and
-do not create branches.**
+Streams work directly on `main` in the single clone, without worktrees or
+branches.
+
+The project cc-safety-net rulebook `one-checkout` (`.cc-safety-net/rules/one-checkout/`) blocks `git worktree add`, `git checkout -b`/`-B`, and `git switch -c`/`-C`.
 
 This repository is authored content. A stream writes solutions, hints and wiki prose
 into card files it selected off a queue, and two streams never hold the same card —
@@ -759,11 +403,11 @@ isolation apparatus was not protecting the work; it was protecting against a fea
 
 The fear is `git commit -a` sweeping in a sibling stream's concurrent edit. That is
 not a conflict and not lost work: the other stream's change is already on disk and
-already correct, and the only thing wrong is the message describing it. Fix the
-message:
+already correct, and the only thing wrong is the message describing it. When your
+commit swept in a sibling's card, fix the message:
 
 ```bash
-git commit --amend        # your commit swept in a sibling's card
+git commit --amend
 ```
 
 Or commit the paths you meant in the first place, which `QUAL-07` already requires:
@@ -787,36 +431,7 @@ anywhere.
 
 ## Worktrees from before this rule
 
-`git worktree list` reports only the main checkout, and `test-commit` runs `_no-worktrees`.
-If a worktree from before this rule is found, it is not debris and must not be removed on
-sight: another stream's authoring is live until three readings say otherwise, taken
-immediately before the removal and never carried over from an earlier survey.
-
-```bash
-git -C PATH --no-optional-locks status --short                     # 1. clean
-git merge-base --is-ancestor "$(git -C PATH rev-parse HEAD)" HEAD  # 2. reachable
-pgrep -a -f PATH                                                   # 3. no process
-```
-
-Reading 1 fails on any output at all — staged or unstaged, tracked or untracked. An
-uncommitted card is somebody's unbanked authoring, and a `.orig` file beside it is the
-evidence of a merge they are still resolving. Reading 2 asks whether every commit on
-that worktree's branch is already in `main`; run it from the main checkout, whose
-`HEAD` is the reference. Reading 3 discards the checking shell's own PID, and
-`pgrep -f` matches on substring, so a probe for `sp19` also matches `sp19-audit2` —
-read the command lines it prints rather than counting them.
-
-When all three pass:
-
-```bash
-git worktree remove .worktrees/<name>
-git worktree prune
-```
-
-When any one fails, leave it in place and report it. Re-take all three for each
-worktree at the point of removal rather than acting on a list. Worktrees outside the
-repository are outside this rule; report them and do not remove them.
-
+Before you remove a worktree that `git worktree list` reports beside the main checkout, read [docs/agents/retiring-worktrees.md](docs/agents/retiring-worktrees.md).
 
 ## Merge and reconciliation snapshots
 
@@ -857,19 +472,7 @@ The same changed-card validation obligation holds at each supported content rout
   parser and Git-boundary tests. It is not how cards are normally committed; it is the command to run when
   you want the fast local checks plus their focused tests in one place.
 
-The push path compiles nothing and writes no queue. `build`, `site`, `crawl` and `preview` all reach the
-whole-corpus compile, so none of them is on the push path: `.github/workflows/development.yml` builds,
-crawls and deploys on a push to `main`, and its `corpus-reports` job runs `just _reports-ci` for
-`BACKLOG.md`, `queues/C-unsolved-cards.md` and `queues/D-prose-only-solutions.md`. `tests/test_push_gate_dependencies.py` holds that shape —
-it reads the `justfile` and fails if a recipe a commit or push reaches compiles the corpus, renders the
-site, or writes the queue, which is the defect issue #100 recorded when a push ran a full build with
-eight Pandoc servers and the queue refusal made it run a second time.
-
-The fan-out of that build is `QUALC_PARALLEL_WORKERS`, a validated integer in 1..8
-(`tools/qualc/pandoc_batch.py`). Left unset, the count is the CPU count reduced by the one-minute load
-average, rounded up, and by one reserved core, so a machine already carrying work gets fewer Pandoc
-servers and a loaded machine gets one. A gate run that does build sets the value explicitly for its
-machine instead of taking whatever the default gives there.
+Before you change a commit or push recipe, set `QUALC_PARALLEL_WORKERS`, or download CI reports or a built site, read [docs/agents/running-checks.md](docs/agents/running-checks.md).
 
 Checks follow `QUAL-06` in [CONTRIBUTING.md](CONTRIBUTING.md#named-policies). Content work — copy,
 prose, mathematics, solutions, statement corrections, and new cards or ingested collections — is
@@ -879,22 +482,6 @@ regeneration for content work. The cheap validation that guards outgoing content
 YAML and schema check plus the shared syntax checks; it runs on staged or committed blobs, not on a
 whole-corpus load, and it is independent of Pandoc, site emission, and broad audits.
 
-Push hooks validate committed card blobs selected for every outgoing ref, including cards committed
-without hooks, and run the shared syntax checks. The `test-commit` and `test-push` recipes run `qualc.authoring check-staged` and `check-changes --mode push`
-on the exact Git blob identities. `just test-push` additionally runs the extraction detector, macro
-mirror check, and focused parser and Git-boundary tests. It is the explicit project diagnostic command;
-the shared Git hooks own the automatic syntax and card-data checks.
-The full test suite and report generation run in CI. Download the
-`corpus-reports` workflow artifact for current `BACKLOG.md`,
-`queues/C-unsolved-cards.md` and `queues/D-prose-only-solutions.md` measurements. Select the run for the revision under review:
-`gh run view <run-id> --json headSha,status,conclusion`, then download its reports with
-`gh run download <run-id> -n corpus-reports -D /tmp/qual-reports-<run-id>`.
-Check `corpus-reports-revision.txt` against that run's `headSha` before reading the reports.
-Checked-in reports describe their last regeneration; use the selected run's artifact for
-that revision's measurements. The site is never
-built locally: `.github/workflows/development.yml` builds, crawls and deploys it on every push to
-`main`, and `gh run download <run-id> -n github-pages` fetches a built site.
-
 Code, renderer, schema, executable configuration, and mixed code/content changes use the normal
 commit and push gates. Use focused checks while investigating a specific defect; CI runs
 the full acceptance checks.
@@ -902,45 +489,13 @@ the full acceptance checks.
 ## A red gate is the current task
 
 When a gate you run — a code commit gate, or the push gate — goes red, stop and diagnose it:
-root-cause and fix the gate, or report it as a blocker with a reproducer. Do not push behind a red
-gate, and do not accumulate unpushed work around one. A gate that is red on two consecutive
+root-cause and fix the gate, or report it as a blocker with a reproducer. Do not accumulate
+unpushed work around a red gate. A gate that is red on two consecutive
 attempts is a defect to diagnose, not an environment condition to wait out.
 
 ## Every run leaves a duration record
 
-A run of the suite and a run of `qualc` each write one record of what took the time — per test,
-per check — named by the commit the run was against and the UTC instant it started, so two runs
-are two files and no later run overwrites either. The directory is outside the checkout and
-outside git: `build/` is rewritten by every build and `tmp/` and `.scratch/` are scratch, so the
-records live in
-
-```
-$XDG_STATE_HOME/new-qual-site/run-records     # ~/.local/state/new-qual-site/run-records when unset
-```
-
-as `<commit12>-<YYYYMMDD>T<HHMMSS>.<mmm>Z-<tool>.json`. `QUALC_RUN_RECORD_DIR` moves the store,
-which is how CI puts a run's records where its upload step can reach them, and every CI workflow
-uploads that run's records as an artifact with `if: always()` and 90-day retention. A run whose
-root is not a git work tree has no commit to be named by and writes none.
-
-The durations are the ones the tool already reports, not a second measurement over it.
-`pytest` keeps every report's duration (`TestReport.duration`, the controller's when xdist is
-running) and keeps pytest's own `--junit-xml` report beside them; the hooks are in
-`tests/conftest.py`, the writer is `tools/qualc/runrecord.py`. `qualc` reports no duration of its
-own, so it times each check as it runs — `parse-cards`, `validate-index`, the wiki link passes,
-`lamport-proofs`, and a build's catalog, site and search-index steps — and records that check's
-wall time with the number of diagnostics it raised.
-
-Read a record; do not re-run the work to watch a total split:
-
-```sh
-just timings                                           # the ten most recent runs
-uv run python -m qualc.runrecord --tool qualc-check --latest
-uv run python -m qualc.runrecord --tool pytest --limit 3
-```
-
-A record is a measurement and nothing acts on it: it is not a gate, and `qualc check` does not
-fail because a check was slow.
+Before you read or change a run's duration record (stored in `$XDG_STATE_HOME/new-qual-site/run-records`, or `~/.local/state/new-qual-site/run-records` when that variable is unset), read [Every run leaves a duration record](docs/agents/running-checks.md#every-run-leaves-a-duration-record).
 
 # Citations, collection references, and titles
 
@@ -987,60 +542,4 @@ source order.
 
 # Proof status: the three words a problem page states
 
-Solution status says whether a solution is written. Proof status says what
-backs it, and every rendered problem page states one of three:
-
-- **certified** — `proofs/README.md` lists a certificate row for the card, in
-  section 1 (a Lean declaration on lean-categories main) or section 2 (an exact
-  finite computation in this repository: Sage, GAP), and that row says it
-  covers the card's **whole statement**. A certificate that proves one claim of
-  a card whose statement has several says `part` and does not certify it.
-- **reviewed** — no certificate covering the whole statement, and the card's
-  `review:` field is `reviewed`.
-- **draft** — neither.
-
-The status is derived at build time and stored nowhere. The two authored
-sources are the card's `review:` field and the certificate tables of
-`proofs/README.md`, so adding a certificate means adding its row to one of
-those tables and nothing on the card. A second `certificate:` field on the card
-would drift from the file; `qualc check` reads the tables instead, and fails on
-a row naming a card no card carries, a file that is not there, or a row whose
-`Covers` cell neither says `the statement` nor says `part`. The certificate file
-is published beside the pages and linked from the status line, which names the
-tool that checks it; a card that is not certified but has rows says on its page
-that the certificates cover part of its statement only.
-
-Nothing in the tables outside sections 1 and 2 certifies a card: section 6's
-repairs table names certificate files while saying no certificate exists for
-what it lists. A card's audit events (`audit:`) render on its page with their
-dates, at the foot, under `Audit trail`. An event dated before the commit that
-carries it is a record, not a draft: the local gate refuses a commit that
-changes or deletes one, so a correction is a new event dated the commit's date
-(`QUAL-11`, issue #147). Events dated the commit's own day are still in flight.
-A correction of a card's *mathematics* is recorded with the event kind
-`solution-corrected`, which is what makes issue #111's "every correction arrives with its
-certificate" checkable: the commit gate refuses that event on a card no row of
-`proofs/README.md` covers for the whole statement.
-The rule also runs the other way: an event a later commit rewrote in place is
-restored to the text it carried on its day, and the gate accepts that
-restoration when the replacement text stands in an earlier revision of the same
-path — the text is the evidence, so a session cannot write new words into a
-dated event. `STYLE-02`, `STYLE-03` and `STYLE-04` are not applied to the
-`audit:` block for the same reason: a record keeps the symbols of its day.
-`COMPLAINTS.md`'s dated records are held to the same rule, and a record a session
-writes states its own day first: a section heading begins with it
-(`## 2026-11-16: …`), and the bold or italic lead that opens a paragraph or
-numbered item carries it, a numbered item being one record with its continuation
-line and the blocks indented under it. Deleting a card or that file deletes the
-records it holds, and the gate reads the deletion from Git's own diff because the
-shared hook's payload lists only the paths that survive a change. The three headings
-named by `RESTORED_SECTIONS` in `tools/qualc/authoring.py` are the exception to the
-date-first format: the day each restored heading carries mid-title dates its record and
-keeps it append-only. A push replays each published commit against its own parent and
-its own committer day, and replays
-the pushed tip even when the payload names no path, so a sanctioned `--no-verify`
-content commit is still judged by the day it was written. A merge commit (`git pull
---no-rebase` of the published `main`) is judged only on the paths it authored — those
-whose merged blob differs from every parent and from Git's automatic merge of the two —
-against each parent in turn; every other change it carries belongs to the commit that
-made it, which was judged when it was published or earlier in the same replay.
+Before you add a certificate row to `proofs/README.md`, change a card's `review:` field, or add or correct an `audit:` event or a dated `COMPLAINTS.md` record (`QUAL-11`), read [docs/agents/proof-status.md](docs/agents/proof-status.md).

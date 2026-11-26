@@ -71,7 +71,7 @@ The even and odd partial sums are monotone and bounded, so they converge, and $S
 
 - For $f$ differentiable and a differentiable curve $\gamma$, the chain rule gives $\frac{d}{dt} (f\circ \gamma)(t) = \inner{ (\grad f)(\gamma(t))} {\gamma'(t)}$.
 
-- For $F(x, y) = \thevector{M(x, y), N(x, y)}$, $\curl F = \dd{N}{x} - \dd{M}{y}$ and $\div F = \dd{M}{x} + \dd{N}{y}$.
+- For $F(x, y) = \thevector{M(x, y), N(x, y)}$, $\curl F = \dd{N}{x} - \dd{M}{y}$ and $\divergence F = \dd{M}{x} + \dd{N}{y}$.
 
 - For $\gamma\colon[a,b]\to\RR^2$ piecewise $C^1$, $\int_\gamma F\cdot \dr = \int_a^b F(\gamma(t))\cdot \gamma'(t) \dt$.
 

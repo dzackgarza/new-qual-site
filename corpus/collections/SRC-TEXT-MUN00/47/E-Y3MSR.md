@@ -54,6 +54,20 @@ audit:
     maps into a Hausdorff space, and the gluing step in which local compactness is what makes
     the glued function continuous. No statement was changed. Not claimed: a retained solution
     set; the collection's provenance is the Munkres textbook, whose text is not retained here.
+
+- event: solution-written
+  by: GPT-6.2
+  date: 2026-11-25
+  note: >-
+    Issue #169. Located Yang Di's Chapter 7 solution, §47 Exercise 2,
+    and checked Munkres's printed Exercise 2 on p. 293 and general Ascoli
+    Theorem 47.1 on p. 290. The earlier proof cited Theorem 46.7 for an
+    initial-topology description which that theorem does not state.
+    Use the actual general Ascoli theorem in both directions, with the
+    compact-convergence Hausdorff argument and Heine-Borel. The two
+    standard metrics are uniformly equivalent. The statement and prior
+    audit records are unchanged.
+
 ---
 
 ::: {.exercise}
@@ -65,99 +79,19 @@ If $X$ is a locally compact Hausdorff space, then a subspace $\mathcal{F}$ of $\
 :::
 
 ::: {.solution}
-Throughout $X$ is a locally compact Hausdorff space, $\mathcal{C}(X,\RR^{n})$ carries the topology of compact convergence, and $\mathcal{F}$ is a subspace of it: pointwise bounded means that for each $x \in X$ the set $\theset{f(x) \mid f \in \mathcal{F}}$ is bounded in $\RR^{n}$, and equicontinuous means that for each $x$ and each $\varepsilon > 0$ there is a neighbourhood $U$ of $x$ with $d\bigl(f(y),f(x)\bigr) < \varepsilon$ for every $y \in U$ and every $f \in \mathcal{F}$, where $d$ is either of the standard metrics on $\RR^{n}$. For a compact subspace $K$ write $\rho_{K}\colon\mathcal{C}(X,\RR^{n}) \to \mathcal{C}(K,\RR^{n})$ for restriction, the target carrying the uniform metric. The exercise is Munkres, *Topology* (2000), §47.
+The exercise is Munkres, *Topology* (2000), Section 47, Exercise 2. See [Yang Di's solution, §47, Exercise 2](https://hexo.yougi.top/2025/01/15/Munkres-Topology-Solution-Chapter-7/#Ex-47-2), using the general Ascoli theorem (Munkres, Theorem 47.1).
 
-::: pf
+Write $\mathcal F_x=\{f(x):f\in\mathcal F\}$ for each $x\in X$. For either standard metric on $\RR^n$, Heine--Borel (Munkres, Theorem 27.3) gives
+$$
+\mathcal F_x\text{ is bounded}\iff \overline{\mathcal F_x}\text{ is compact in }\RR^n.
+$$
+Moreover, the compact-convergence topology on $\mathcal C(X,\RR^n)$ is Hausdorff: for distinct functions $f,g$, choose a point at which they differ, and separate their values by disjoint metric neighbourhoods. Evaluation there is continuous since a singleton is compact. Thus a subset of $\mathcal C(X,\RR^n)$ has compact closure precisely when it is contained in a compact subspace: the reverse implication holds because that compact subspace is closed.
 
-::: {.pf-step #evaluation}
-If $\overline{\mathcal{F}}$ is compact in the topology of compact convergence, then $\mathcal{F}$ is pointwise bounded.
+If $\mathcal F$ is pointwise bounded and equicontinuous, its pointwise value sets have compact closure by Heine--Borel. Theorem 47.1(a) places $\mathcal F$ in a compact subspace, hence its closure is compact. Conversely, if $\mathcal F$ has compact closure, it is contained in a compact subspace; since $X$ is locally compact Hausdorff, Theorem 47.1(b) implies equicontinuity and compact closure of each $\mathcal F_x$, hence pointwise boundedness.
 
-::: pf-proof
-For fixed $x$ the evaluation $\operatorname{ev}_{x}\colon\mathcal{C}(X,\RR^{n}) \to \RR^{n}$, $f \mapsto f(x)$, is continuous in the topology of compact convergence, because that topology is finer than the topology of pointwise convergence, which is the initial topology of all the evaluations. Hence $\operatorname{ev}_{x}(\overline{\mathcal{F}})$ is compact, and a compact subset of $\RR^{n}$ is bounded, so it contains $\theset{f(x) \mid f \in \mathcal{F}}$ inside a bounded set.
-
-:::
-
-:::
-
-::: {.pf-step #restriction-continuous}
-For every compact $K \subseteq X$ the map $\rho_{K}$ is continuous.
-
-::: pf-proof
-A basic neighbourhood in the uniform topology of $\mathcal{C}(K,\RR^{n})$ is determined by $\varepsilon > 0$ and asks that the supremum of $d$ over $K$ be small; the corresponding condition on $\mathcal{C}(X,\RR^{n})$, uniformity on the compact set $K$ within $\varepsilon$, is one of the defining conditions of the topology of compact convergence.
-
-:::
-
-:::
-
-::: {.pf-step #equicontinuous}
-If $\overline{\mathcal{F}}$ is compact then $\mathcal{F}$ is equicontinuous.
-
-::: pf-proof
-Let $x \in X$. Since $X$ is locally compact and Hausdorff, $x$ has a compact neighbourhood $K$: the compact neighbourhoods form a base of neighbourhoods at each point, as in §29 of the book. By step [](#restriction-continuous){.pf-ref} the image $\rho_{K}(\overline{\mathcal{F}})$ is compact in $\mathcal{C}(K,\RR^{n})$ with the uniform metric, which is the topology of compact convergence there because $K$ is itself compact. A compact subset of a metric space is totally bounded, so $\rho_{K}(\overline{\mathcal{F}})$ is totally bounded; by the equicontinuity half of Ascoli's theorem (Lemma 45.2 of the book), a totally bounded family in $\mathcal{C}(K,\RR^{n})$ is equicontinuous. Hence for $\varepsilon > 0$ there is a set $U$, open in $K$ and containing $x$, with $d(f(y),f(x)) < \varepsilon$ for all $y \in U$ and $f \in \mathcal{F}$; and $U$ is a neighbourhood of $x$ in $X$ because $K$ is one.
-
-:::
-
-:::
-
-::: {.pf-step #initial}
-The topology of compact convergence on $\mathcal{C}(X,\RR^{n})$ is the initial topology of the family $\theset{\rho_{K}}$ over all compact $K \subseteq X$.
-
-::: pf-proof
-A net $f_{\alpha}$ converges to $f$ in the topology of compact convergence exactly when the numbers $\sup_{y \in K}d(f_{\alpha}(y),f(y))$ tend to $0$ for every compact $K$, that is exactly when $\rho_{K}(f_{\alpha}) \to \rho_{K}(f)$ in the uniform metric for every compact $K$. Agreement of the convergent nets is agreement of the topologies, so the given topology is the initial one; this is the book's Theorem 46.7.
-
-:::
-
-:::
-
-::: {.pf-step #factor}
-Conversely, if $\mathcal{F}$ is pointwise bounded and equicontinuous, then $\rho_{K}(\mathcal{F})$ has compact closure in $\mathcal{C}(K,\RR^{n})$ for every compact $K$.
-
-::: pf-proof
-The restricted family is pointwise bounded, because $\rho_{K}(f)(x) = f(x)$ and $\mathcal{F}$ is pointwise bounded at each $x \in K$; and it is equicontinuous, because the neighbourhoods witnessing equicontinuity of $\mathcal{F}$ serve their restrictions. Ascoli's theorem for the compact space $K$ then gives that its closure is compact in the uniform topology.
-
-:::
-
-:::
-
-::: {.pf-step #product}
-The image of $\mathcal{F}$ under $\rho \coloneqq \prod_{K}\rho_{K}$ has compact closure in $\prod_{K}\mathcal{C}(K,\RR^{n})$, and the space of compatible families is a closed subset of that product.
-
-::: pf-proof
-By step [](#factor){.pf-ref} the closure of the image lies in $\prod_{K}\overline{\rho_{K}(\mathcal{F})}$, a product of compact spaces, which is compact by Tychonoff's theorem; a closed subset of a compact space is compact, so the closure of the image is compact. A family $(g_{K})$ is compatible when $g_{K}$ and $g_{K'}$ agree on $K \cap K'$ for all compact $K, K'$. Each condition is the equality of two continuous maps on the whole product, and the product is Hausdorff, so the set where two continuous maps agree is closed; the compatible families are the intersection of these closed sets, hence closed.
-
-:::
-
-:::
-
-::: {.pf-step #glue}
-Gluing gives an inverse: a compatible family $(g_{K})$ is the family of restrictions of exactly one continuous $g \in \mathcal{C}(X,\RR^{n})$, and $\rho$ is a homeomorphism of $\mathcal{C}(X,\RR^{n})$ onto the compatible families.
-
-::: pf-proof
-Given a compatible family, define $g(x) \coloneqq g_{K}(x)$ for any compact $K$ containing $x$; compatibility makes this independent of $K$, and any two choices agree. For continuity at $x$ take a compact neighbourhood $N$ of $x$; on $N$ the function $g$ equals $g_{N}$, which is continuous, so $g$ is continuous at $x$. Uniqueness is clear, and every continuous $g$ gives a compatible family, so $\rho$ is a bijection onto the compatible families. It is continuous because each $\rho_{K}$ is, by definition of the initial topology; a continuous bijection onto its image that is an initial map has continuous inverse, so $\rho$ is a homeomorphism onto that image.
-
-:::
-
-:::
-
-::: {.pf-step #converse}
-If $\mathcal{F}$ is pointwise bounded and equicontinuous then $\overline{\mathcal{F}}$ is compact in the topology of compact convergence.
-
-::: pf-proof
-$\rho$ is a homeomorphism by step [](#glue){.pf-ref}, so $\rho(\overline{\mathcal{F}})$ is the closure in the compatible families of $\rho(\mathcal{F})$, hence closed in the compact space of step [](#product){.pf-ref} intersected with the compatible families; a closed subset of a compact space is compact. Therefore $\overline{\mathcal{F}}$, its homeomorphic preimage, is compact.
-
-:::
-
-:::
-
-::: pf-step
-The theorem holds: $\overline{\mathcal{F}}$ is compact in the topology of compact convergence if and only if $\mathcal{F}$ is pointwise bounded and equicontinuous.
-
-::: pf-proof
-Steps [](#evaluation){.pf-ref} and [](#equicontinuous){.pf-ref} give the two conditions under the hypothesis of compact closure, and step [](#converse){.pf-ref} gives compact closure under the two conditions. Replacing the metric on $\RR^{n}$ by the other standard one changes neither pointwise boundedness nor equicontinuity, since the two metrics are uniformly equivalent, so the criterion is the same for either.
-
-:::
-
-:::
-
-:::
+Finally, writing $d_\infty$ and $d_2$ for the square and Euclidean metrics, respectively,
+$$
+d_\infty(u,v)\le d_2(u,v)\le\sqrt n\,d_\infty(u,v).
+$$
+These inequalities give both the same bounded subsets and the same equicontinuous families, and also the same compact-convergence topology. The asserted equivalence is therefore independent of the chosen standard metric.
 :::

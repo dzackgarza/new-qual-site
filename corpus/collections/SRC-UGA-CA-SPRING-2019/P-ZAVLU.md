@@ -33,7 +33,7 @@ Write the RHS as $a$, we then want something in the form $\abs{F(a)}\leq \abs{a}
 The choice $a=\psi_w(z)$ is forced, so $z= \inverseof{\psi_w}(a)$.
 This forces the choice for the LHS
 $$
-{ f(w) - (f\circ \inverseof{\psi_w})(a) \over 1 - \bar{f(w)} (f\circ \inverseof{\psi_w})(a) }
+{ f(w) - (f\circ \inverseof{\psi_w})(a) \over 1 - \overline{f(w)} (f\circ \inverseof{\psi_w})(a) }
 = (\psi_{f(w)} \circ f \circ \inverseof{\psi_w})(a) \coloneqq F(a)
 .$$
 

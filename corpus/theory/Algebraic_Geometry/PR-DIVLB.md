@@ -61,9 +61,9 @@ Let $X$ be an integral separated Noetherian scheme with function field $K$, and 
 1. $\Div_{\mathrm{Ca}}(X) \to \mathcal{P}(X)$, $D = \{(U_i, f_i)\} \mapsto (\OO_X(D), 1)$, is an isomorphism, with inverse $(\mathcal{L}, s) \mapsto \{(U_i, \phi_i(s))\}$ for local trivializations $\phi_i\colon\mathcal L\restrict_{U_i}\iso\OO_{U_i}$.
    For an effective $D$ with invertible ideal sheaf $\mci_D$, $\OO_X(D) = \mci_D^{\vee}$ and $1$ is the canonical section vanishing on $D$.
 
-2. If $X$ is regular in codimension one, $\Div_{\mathrm{Ca}}(X) \to \Div(X)$, $\{(U_i, f_i)\} \mapsto \sum_Y v_Y(f_i) Y$ with $U_i \cap Y \neq \emptyset$, is a homomorphism, and $(\mathcal{L}, s) \mapsto \div s$ is the composite with the inverse of part 1.
+2. If $X$ is regular in codimension one, $\Div_{\mathrm{Ca}}(X) \to \Div(X)$, $\{(U_i, f_i)\} \mapsto \sum_Y v_Y(f_i) Y$ with $U_i \cap Y \neq \emptyset$, is a homomorphism, and $(\mathcal{L}, s) \mapsto \divisorof s$ is the composite with the inverse of part 1.
 
-3. Under these maps, $t \in \units{K}$ goes to the principal Cartier divisor $\{(X, t)\}$, the pair $(\OO_X, t)$, and the principal Weil divisor $\div t$, so they descend to $\CaCl(X) \to \Cl(X)$ and $\CaCl(X) \cong \Pic(X)$.
+3. Under these maps, $t \in \units{K}$ goes to the principal Cartier divisor $\{(X, t)\}$, the pair $(\OO_X, t)$, and the principal Weil divisor $\divisorof t$, so they descend to $\CaCl(X) \to \Cl(X)$ and $\CaCl(X) \cong \Pic(X)$.
 
 4. If every local ring $\OO_{X,x}$ is a unique factorization domain, then $\CaCl(X) \cong \Cl(X) \cong \Pic(X)$, with inverse $D \mapsto (\OO_X(D), 1)$ [@Har77, Proposition II.6.11].
 :::

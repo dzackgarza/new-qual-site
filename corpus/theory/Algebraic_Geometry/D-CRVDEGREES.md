@@ -66,7 +66,7 @@ For rank $1$ locally free $\mathcal{F}$ the two definitions agree.
 ::: {.proposition}
 Let $C$ be a regular projective integral curve over $k$.
 
-1. For a divisor $D = \sum_i n_i p_i$, $\deg \OO_C(D) = \deg D = \sum_i n_i \deg p_i$ ([[PR-Y5S7V]]); so if $s$ is a nonzero rational section of $\mathcal{L}$, then $\deg \mathcal{L} = \deg \div s$.
+1. For a divisor $D = \sum_i n_i p_i$, $\deg \OO_C(D) = \deg D = \sum_i n_i \deg p_i$ ([[PR-Y5S7V]]); so if $s$ is a nonzero rational section of $\mathcal{L}$, then $\deg \mathcal{L} = \deg \divisorof s$.
 
 2. For a locally free sheaf $\mathcal{E}$ of rank $r$ and an invertible sheaf $\mathcal{L}$, $\chi(\mathcal{E} \tensor_{\OO_C} \mathcal{L}) = \chi(\mathcal{E}) + r \deg \mathcal{L}$.
 

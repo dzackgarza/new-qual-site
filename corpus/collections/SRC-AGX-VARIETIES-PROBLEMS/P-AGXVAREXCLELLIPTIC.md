@@ -151,11 +151,11 @@ g\in k(X)^\times=k(\overline X)^\times
 $$
 one has
 $$
-D\restrict_X=\div_X(g).
+D\restrict_X=\divisorof_X(g).
 $$
 Consequently,
 $$
-D-\div_{\overline X}(g)
+D-\divisorof_{\overline X}(g)
 $$
 is supported on the single missing point $O$, so it equals $mO$ for some
 $m\in\ZZ$. Thus

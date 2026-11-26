@@ -9074,7 +9074,7 @@ all three answers: an étale cover of an elliptic curve is unramified hence of g
 $\pi_1=\varprojlim\Gal(n_E)$; and each case then reads off $\Gal(n_E)$. In characteristic zero,
 $\Gal(n_E)=\ker n_E\cong(\ZZ/n\ZZ)^2$ because $n_E\circ f=n_E$ forces $\deg f=1$; with Hasse
 invariant zero, $n_E$ is étale exactly for $p\nmid n$ so the limit is over those indices; with Hasse
-invariant nonzero, $\Gal(n_E\circ\hat{\mathrm{Frob}}^r)\cong(\ZZ/n\ZZ)^2\times(\ZZ/p^r\ZZ)$ by
+invariant nonzero, $\Gal(n_E\circ\widehat{\mathrm{Frob}}^r)\cong(\ZZ/n\ZZ)^2\times(\ZZ/p^r\ZZ)$ by
 4.4.15 and the limit is $\ZZ_p\times\prod_{\ell\ne p}(\ZZ_\ell\times\ZZ_\ell)$. The one step left
 implicit is that the dual of a finite étale map of elliptic curves is again finite étale, which is
 what lets 4.4.7 apply; the printed $\characteristic(K)$ for $\characteristic(k)$ in cases 2 and 3 is
@@ -11750,3 +11750,13 @@ The same page's ST.1 opens "Use the SF package to compute the two scalar product
 **Impact and owner.** This narrows the open question of the 2026-11-19, eleventh item entry ("the rest are not measured") for the CH10 and CH13 outlines: the offset is not constant within a chapter, so every further card of these two collections needs its own reading of the printed exercise. No card id was renumbered; each of the six now names the outline entry and the printed exercise.
 
 **Repair needed.** `vocabularies/references.yaml` has no entry for Gallian's seventh edition, so these six cards cite it by edition and numbered exercise in prose, as the rest of the seven CH collections do; a Zotero item and key (the `Gal10` named to the orchestrator in earlier sessions) would turn those into citations.
+
+
+## 2026-11-25 (#169): correction to the §46--§47 reading of E-0HGNK
+
+**Evidence and repair.** In the earlier §43--§50 record containing E-0HGNK, the search did not find Yang Di's Chapter 7 solution (2025-01-15), §46 Exercise 8, https://hexo.yougi.top/2025/01/15/Munkres-Topology-Solution-Chapter-7/#Ex-46-8. Checked Munkres (2000), Theorem 46.11 (printed p. 287) and Exercise 8 (printed p. 289), on the actual UCR PDF pages. The first direction of Theorem 46.11 needs no local compactness hypothesis. The older proof omitted the restriction of the evaluation preimage to the product with the compact subspace C before invoking the Tube Lemma. The corrected direct proof uses C × C'(X,Y); the shorter published solution uses the induced continuous identity to the compact-open topology. Both prove the original statement without new hypotheses. The earlier audit and exercise are unchanged. Repair: https://github.com/dzackgarza/new-qual-site/commit/38f88fa6f805fcb81de9ca7695d1b02763032177. No unresolved mathematical issue for this card.
+
+
+## 2026-11-25 (#169): correction to the §46--§47 reading of E-Y3MSR
+
+**Evidence and repair.** The earlier §43--§50 record did not locate Yang Di's Chapter 7 solution, §47 Exercise 2, https://hexo.yougi.top/2025/01/15/Munkres-Topology-Solution-Chapter-7/#Ex-47-2. The actual Exercise 2 (printed p. 293) and Ascoli Theorem 47.1 (printed p. 290) were checked on the rendered textbook pages. The earlier proof cited Theorem 46.7 for a restriction-initial-topology statement, which is not what that theorem says. The revised solution applies Ascoli directly in both directions, proves the compact-convergence Hausdorff property by singleton evaluations, and uses Theorem 27.3 (Heine--Borel, not Theorem 28.2). The metric inequalities give equivalence of pointwise boundedness and equicontinuity for both standard metrics. Exact statement and previous audit records unchanged. Repair: https://github.com/dzackgarza/new-qual-site/commit/cee6c8c1744c9f4e9e82d41bc3f3fa97422cc020. No remaining proof obligation on this card.

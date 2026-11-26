@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rulebooks": [
+    {
+      "spec": "one-checkout",
+      "kind": "local-directory",
+      "path": "one-checkout",
+      "name": "one-checkout",
+      "version": "1.0.0",
+      "digest": "sha256:0b8af6bdefd4860fedca7eaaafbdd9f399ef06268c14ca6944c32b20d65fa5d0"
+    }
+  ]
+}
