@@ -47,6 +47,23 @@ audit:
     The card now carries a published-solution remark naming Yang Pi-Yeh's
     Solution 4.5.2 at printed p. 95; it had none before. No
     step, statement or hypothesis of the card changes.
+- event: source-corrected
+  by: chatgpt
+  date: 2026-11-27
+  note: >-
+    Re-read Hartshorne, Exercise IV.5.2 (printed p. 348), and Yang Pi-Yeh,
+    Solution 4.5.2 (printed p. 95), in their online text reproductions.
+    The latter has two gaps: the hyperelliptic involution fixes every
+    ramification point, and the canonical hyperosculation formula is the
+    degree of a weighted divisor, not a count of distinct points. The
+    existing step s2 correctly uses the quadratic function-field extension;
+    steps s4 and s5 correctly prove the strict lower bound for distinct
+    Weierstrass points in the nonhyperelliptic case. Step s3 now uses the
+    characteristic-zero Weierstrass divisor theorem of Dembélé, Algebra &
+    Number Theory 14 (2020), Theorem 2.2 (printed p. 2716), applicable also
+    to genus three, where the canonical embedding is in the plane. The
+    gap-sequence calculation is made explicit and the source remark no
+    longer endorses either invalid inference. The prior audit is retained.
 ---
 
 ::: {.problem}
@@ -202,27 +219,18 @@ $$
 
 ::: pf-proof
 
-A nonhyperelliptic curve of genus $g\ge2$ has very ample canonical bundle, so the complete canonical system gives the stated embedding.
-Here
+By Hartshorne, Proposition IV.5.2, the canonical bundle of a nonhyperelliptic curve is very ample. In the canonical embedding, hyperplane sections correspond to nonzero canonical sections, and their intersection multiplicities at $P$ are the vanishing orders of those sections. Hence a hyperosculation point is precisely a point at which some canonical section vanishes to order at least $g$, i.e. a Weierstrass point.
+
+For the strictly increasing canonical vanishing orders $a_1,\ldots,a_g$ at $P$, write $w(P)=\sum_{i=1}^g(a_i-i+1)$ for its Weierstrass weight. The characteristic-zero Weierstrass divisor theorem (Dembélé, [*An intriguing hyperelliptic Shimura curve quotient of genus 16*](https://doi.org/10.2140/ant.2020.14.2713), Theorem 2.2) gives the effective divisor
 $$
-n=g-1,
-\qquad
-d=\deg K=2g-2.
+W=\sum_{P\in X}w(P)P
+\sim\frac{g(g+1)}2 K.
 $$
-Applying [[P-AGH446HYPEROSCULATIONPOINTS|Exercise IV.4.6(b)]] gives
+Since $\deg K=2g-2$, this gives
 $$
-\begin{aligned}
-\deg W
-&=
-n(n+1)(g-1)+(n+1)d\\
-&=
-(g-1)g(g-1)+g(2g-2)\\
-&=
-g(g-1)(g+1)\\
-&=
-g^3-g.
-\end{aligned}
+\deg W=\frac{g(g+1)}2(2g-2)=g^3-g.
 $$
+In particular $W$ has finite support, and this formula counts points with their weights, not as distinct points. It applies also when $g=3$ and the canonical curve is a plane quartic.
 
 :::
 
@@ -248,8 +256,13 @@ Let
 $$
 1=n_1<n_2<\cdots<n_g\le2g-1
 $$
-be the gap sequence at $P$.
-The vanishing orders of the canonical series are
+be the gap sequence at $P$. By Riemann--Roch, $\ell((2g-1)P)=g$, and $\ell(nP)-\ell((n-1)P)=1$ for every $n\ge2g$. Each jump in dimension is either zero or one, and $\ell(0)=1$, so there are exactly $g$ positive gaps, all at most $2g-1$. The first integer is a gap because a function with one simple pole would give a degree-one map to $\PP^1$.
+
+Subtracting the two Riemann--Roch formulas for $nP$ and $(n-1)P$ shows that $n$ is a gap exactly when
+$$
+\ell(K-(n-1)P)-\ell(K-nP)=1.
+$$
+Thus the vanishing orders of the canonical series are
 $$
 n_1-1,\ldots,n_g-1,
 $$
@@ -394,5 +407,7 @@ These exhaust all curves of genus at least $2$.
 :::
 
 ::: {.remark title="Published solution"}
-Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.5.2, splits as the hint does. In the hyperelliptic case it takes the unique degree-two $f:X\to\PP^1$, notes the $2g+2$ ramified points, and observes that $f\circ\phi$ is again of degree two, hence differs from $f$ by an automorphism of $\PP^1$ by uniqueness of the $g^1_2$, so $\phi$ permutes the ramified points and $\#\Aut X$ is bounded by $(2g+2)!$. The last sentence of that case is wrong as printed: 'if $\phi$ fixed all $2g+2$ ramified points, by Lefschetz's theorem it is just identity' --- the hyperelliptic involution fixes exactly those $2g+2$ points, which is the extremal case of the very bound the sentence invokes. The conclusion survives, with the kernel of $\Aut X\to\Sigma_{2g+2}$ of order at most $2$ rather than trivial. In the nonhyperelliptic case it embeds $X$ canonically in $\PP^{g-1}$ and counts hyperosculation points by 4.4.6: with $n=g-1$ and $d=2g-2$ their number is $n(n+1)(g-1)+(n+1)d=g(g-1)^2+2g(g-1)$, which exceeds $2g+2$ for $g\ge3$, so an automorphism fixing all of them is the identity by Lefschetz and $\Aut X$ embeds in a finite symmetric group. That second use of Lefschetz is legitimate, since the count is strictly larger than the bound; it is only the first, where the count equals the bound, that is not.
+Yang Pi-Yeh, [*Hartshorne Solutions*](https://github.com/lfwin/Hartshorne-Solutions/blob/master/Hartshorne_Solution.pdf), Solution 4.5.2, separates the two cases as the hint suggests. In the hyperelliptic case, the unique degree-two pencil makes the automorphism group act on the branch points. The kernel of the action is not trivial: the hyperelliptic involution fixes all $2g+2$ ramification points. Step [](#s2){.pf-ref} supplies the missing argument: the kernel has order at most two, as it acts by automorphisms of a separable quadratic function-field extension, and the image is finite.
+
+In the nonhyperelliptic case, the source uses the canonical embedding and a fixed-point bound. But $g^3-g$ is the total Weierstrass weight, not necessarily the number of distinct hyperosculation points. The conclusion follows only after bounding each point's weight, as in steps [](#s4){.pf-ref} and [](#s5){.pf-ref}. These show that there are strictly more than $2g+2$ distinct points, so the fixed-point argument of step [](#s1){.pf-ref} proves faithfulness. Neither case assumes the automorphism group is already finite.
 :::
