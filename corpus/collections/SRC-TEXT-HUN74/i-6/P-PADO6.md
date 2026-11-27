@@ -35,9 +35,18 @@ audit:
     cyclically, and at the points outside {tau(i_j)}, where tau^{-1} lands
     outside {i_j} so sigma fixes the point. A complete pointwise identification
     of two permutations; no defect.
+- event: source-corrected
+  by: chatgpt
+  date: 2026-11-27
+  note: >-
+    The conjugation-of-cycles exercise is Hungerford I.6.3. Its numbered
+    citation supersedes the obsolete extraction-line locator recorded on
+    November 6 (issue #186); the statement and proof are unchanged.
 ---
 
 ::: {.problem}
+[@Hun74, chapter I, §6, Exercise 3]
+
 If $\sigma = (i_1 i_2 \cdots i_r) \in S_n$ and $\tau \in S_n$, then show that $\tau\sigma\tau^{-1} = (\tau(i_1) \tau(i_2) \cdots \tau(i_r))$.
 :::
 

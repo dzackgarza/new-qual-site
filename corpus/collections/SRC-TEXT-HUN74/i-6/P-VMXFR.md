@@ -36,9 +36,18 @@ audit:
     tau^k (12) tau^{-k} = (1 tau^k(2)) and tau^k(2) runs through 2, ..., n, so
     all (1 j) lie in the subgroup, and (ij) = (1i)(1j)(1i) gives the rest. Both
     halves are complete; no defect.
+- event: source-corrected
+  by: chatgpt
+  date: 2026-11-27
+  note: >-
+    The two generating pairs for the symmetric group are Hungerford I.6.4.
+    This numbered citation supersedes the obsolete extraction-line locator
+    recorded on November 6 (issue #186); the statement and proof are unchanged.
 ---
 
 ::: {.problem}
+[@Hun74, chapter I, §6, Exercise 4]
+
 Show that $S_n = \left\langle (12), (123\cdots n)\right\rangle$ and also that $S_n = \left\langle (12), (23\cdots n)\right\rangle$.
 :::
 
