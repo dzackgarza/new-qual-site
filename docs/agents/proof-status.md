@@ -45,8 +45,12 @@ writes states its own day first: a section heading begins with it
 (`## 2026-11-16: …`), and the bold or italic lead that opens a paragraph or
 numbered item carries it, a numbered item being one record with its continuation
 line and the blocks indented under it. Deleting a card or that file deletes the
-records it holds, and the gate reads the deletion from Git's own diff because the
-shared hook's payload lists only the paths that survive a change. The three headings
+records it holds unless a `CARD-04` merge carries all of the retired card's protected
+dated events into one surviving card in the same commit. Existing events on the survivor
+are reserved for its own history: the transfer must add every retired occurrence,
+with its date, kind, author and note unchanged. The gate reads the deletion from
+Git's own diff because the shared hook's payload lists only the paths that survive
+a change. The three headings
 named by `RESTORED_SECTIONS` in `tools/qualc/authoring.py` are the exception to the
 date-first format: the day each restored heading carries mid-title dates its record and
 keeps it append-only. A push replays each published commit against its own parent and

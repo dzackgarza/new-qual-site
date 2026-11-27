@@ -975,6 +975,102 @@ def test_deleting_a_card_deletes_its_dated_events(repo: Path, monkeypatch: pytes
     assert git(repo, "rev-parse", "HEAD") == recorded
 
 
+@pytest.mark.parametrize("mode", ["staged", "push"])
+@pytest.mark.parametrize("transfer", ["complete", "missing", "rewritten", "unchanged-copy"])
+def test_card_merge_preserves_retired_dated_events(repo: Path, monkeypatch: pytest.MonkeyPatch, mode: str, transfer: str) -> None:
+    """CARD-04 retires a card, not the records it carries (QUAL-11)."""
+    survivor = repo / "corpus/one card.md"
+    retired = repo / "corpus/retired.md"
+    note = "The local group is Hatcher's `M|x` on printed p. 234."
+    original = RECORDED if transfer != "unchanged-copy" else TWICE_RECORDED
+    survivor.write_text(original)
+    retired.write_text(RECORDED.replace("PRB-INDEXP", "PRB-RETIRED").replace("The statement matches the printed exercise.", note))
+    git(repo, "add", "-A")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-15T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record both cards")
+    if mode == "push":
+        track(repo, git(repo, "rev-parse", "HEAD").strip())
+
+    git(repo, "rm", "corpus/retired.md")
+    if transfer == "complete":
+        survivor.write_text(TWICE_RECORDED)
+    elif transfer == "rewritten":
+        survivor.write_text(TWICE_RECORDED.replace(note, "A different historical observation."))
+    else:
+        survivor.write_text(original + "\nMerged the statements.\n")
+    git(repo, "add", "corpus/one card.md")
+    if mode == "staged":
+        # Worktree text must not rescue an incomplete transfer in the staged blob.
+        survivor.write_text(TWICE_RECORDED)
+
+    result = validate_candidate(repo, mode, monkeypatch, "2026-11-16T09:00:00 +0000", "corpus/one card.md")
+    if transfer == "complete":
+        assert result.returncode == 0, result.stderr
+    else:
+        assert result.returncode == 1, result.stdout
+        assert "corpus/retired.md: the source-checked event by claude dated 2026-11-11" in result.stderr
+        assert "was changed or deleted" in result.stderr
+
+
+@pytest.mark.parametrize("copies", [1, 2])
+def test_card_merge_counts_identical_events_from_each_retired_card(repo: Path, monkeypatch: pytest.MonkeyPatch, copies: int) -> None:
+    survivor = repo / "corpus/one card.md"
+    for name in ("A", "B"):
+        (repo / f"corpus/retired-{name}.md").write_text(RECORDED.replace("PRB-INDEXP", f"PRB-RETIRED-{name}"))
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-15T09:00:00 +0000")
+    git(repo, "add", "-A")
+    git(repo, "commit", "-qm", "record two retired cards")
+    git(repo, "rm", "corpus/retired-A.md", "corpus/retired-B.md")
+    extra = RECORDED.split("audit:\n", 1)[1].split("---\n", 1)[0]
+    survivor.write_text(CARD.replace("review: draft\n", "review: draft\naudit:\n" + extra * copies))
+    git(repo, "add", "corpus/one card.md")
+    result = validate_candidate(repo, "staged", monkeypatch, "2026-11-16T09:00:00 +0000")
+    assert result.returncode == (0 if copies == 2 else 1), result.stderr
+    if copies == 1:
+        assert "without reusing an occurrence (QUAL-11)" in result.stderr
+
+
+def test_card_merge_does_not_split_one_retired_history_across_survivors(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    survivor = repo / "corpus/one card.md"
+    other = repo / "corpus/other.md"
+    other.write_text(CARD.replace("PRB-INDEXP", "PRB-OTHER"))
+    (repo / "corpus/retired.md").write_text(TWICE_RECORDED.replace("PRB-INDEXP", "PRB-RETIRED"))
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-15T09:00:00 +0000")
+    git(repo, "add", "-A")
+    git(repo, "commit", "-qm", "record two events on the retired card")
+    git(repo, "rm", "corpus/retired.md")
+    survivor.write_text(RECORDED)
+    other.write_text(RECORDED.replace("PRB-INDEXP", "PRB-OTHER").replace("The statement matches the printed exercise.", "The local group is Hatcher's `M|x` on printed p. 234."))
+    git(repo, "add", "-A")
+    result = validate_candidate(repo, "staged", monkeypatch, "2026-11-16T09:00:00 +0000")
+    assert result.returncode == 1, result.stdout
+    assert "corpus/retired.md:" in result.stderr
+    assert "QUAL-11" in result.stderr
+
+
+@pytest.mark.parametrize("preserve_survivor", [False, True])
+def test_card_merge_with_moved_survivor_reserves_its_history(repo: Path, monkeypatch: pytest.MonkeyPatch, preserve_survivor: bool) -> None:
+    old_survivor = repo / "corpus/one card.md"
+    other_note = "The local group is Hatcher's `M|x` on printed p. 234."
+    retired = repo / "corpus/retired.md"
+    old_survivor.write_text(RECORDED.replace("The statement matches the printed exercise.", other_note).replace("by: claude", "by: reader") + "\nDifferent exposition.\n" * 100)
+    retired.write_text(RECORDED.replace("PRB-INDEXP", "PRB-RETIRED"))
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-15T09:00:00 +0000")
+    git(repo, "add", "-A")
+    git(repo, "commit", "-qm", "record both cards")
+    git(repo, "rm", "corpus/one card.md", "corpus/retired.md")
+    moved = repo / "corpus/moved.md"
+    merged = TWICE_RECORDED.replace("- event: source-checked\n  by: claude\n  date: 2026-11-11\n  note: " + other_note, "- event: source-checked\n  by: reader\n  date: 2026-11-11\n  note: " + other_note)
+    moved.write_text(merged if preserve_survivor else RECORDED)
+    git(repo, "add", "corpus/moved.md")
+    diff = git(repo, "diff", "--cached", "--find-renames", "--name-status")
+    assert re.search(r"R\d+\s+corpus/retired.md\s+corpus/moved.md", diff), diff
+    result = validate_candidate(repo, "staged", monkeypatch, "2026-11-16T09:00:00 +0000")
+    assert result.returncode == (0 if preserve_survivor else 1), result.stderr
+    if not preserve_survivor:
+        assert "QUAL-11" in result.stderr
+
+
 def test_a_renamed_card_keeps_the_audit_text_of_its_earlier_path(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     """A card's earlier text follows the path Git records as the source of the move."""
     card = repo / "corpus/one card.md"

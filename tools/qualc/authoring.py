@@ -662,69 +662,125 @@ def version_source(path: Path, version: str) -> str:
     return subprocess.run(["git", "show", f"{revision}:{path.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout
 
 
-def surviving_card_ids(version: str, base: str) -> set[str]:
-    """The card ids this version carries at the Markdown paths it keeps, adds or renames to.
-
-    A card moved with most of its text rewritten falls below Git's similarity threshold,
-    so the move is recorded as a deletion and an addition: the added Markdown path
-    carries the card, and the deletion is the other half of the move rather than a card
-    deleted. A non-Markdown blob cannot carry on a card or shield its deleted events:
-    audit comparison reads Markdown cards only.
-    """
-    command = ["git", "diff", "--find-renames", "--name-status", "-z"]
+def changed_card_sources(version: str, base: str, scope: tuple[str, ...] = ("corpus/", "wiki/")) -> dict[Path, str]:
+    """Surviving Markdown card blobs changed in the candidate, including moves."""
+    command = ["git", "diff", "--no-renames", "--name-only", "--diff-filter=ACM", "-z"]
     command.extend(["--cached", base] if version == "index" else [base, version])
-    fields = subprocess.run([*command, "--", "corpus/", "wiki/"], check=True, stdout=subprocess.PIPE, text=True).stdout.split("\0")
-    ids: set[str] = set()
-    index = 0
-    while index < len(fields) and fields[index]:
-        status = fields[index]
-        if status[0] in "RC":
-            path = Path(fields[index + 2])
-            index += 3
-        else:
-            path = Path(fields[index + 1])
-            index += 2
-        if status[0] == "D" or path.suffix != ".md":
+    names = subprocess.run([*command, "--", *scope], check=True, stdout=subprocess.PIPE, text=True).stdout
+    cards: dict[Path, str] = {}
+    for name in names.split("\0"):
+        if not name:
             continue
-        if (card_id := source_identity(version_source(path, version))) is not None:
-            ids.add(card_id)
-    return ids
+        path = Path(name)
+        if path.suffix == ".md" and path.parts[0] in ("corpus", "wiki"):
+            source = version_source(path, version)
+            if source_identity(source) is not None:
+                cards[path] = source
+    return cards
+
+
+AuditKey = tuple[date, str, str, str]
+
+
+def dated_audit_counts(source: str, day: date) -> Counter[AuditKey]:
+    """Protected events, counting repeated identical records separately."""
+    return Counter(
+        (record.day, record.text[0], record.text[1], _folded(record.text[3]))
+        for record in audit_records(source)
+        if record.day is not None and record.day < day
+    )
+
+
+def added_audit_counts(path: Path, before: str, after: str, base: str, day: date) -> Counter[AuditKey]:
+    """The surviving card's newly carried records, after reserving its own history."""
+    old = dated_audit_counts(before, day)
+    new = dated_audit_counts(after, day)
+    # A restored event belongs to this card already. Do not credit the same
+    # occurrence both as a restoration and as a transfer from a retired card.
+    changed = {key[:3] for key in old - new}
+    for identity in changed:
+        record_day, kind, by = identity
+        previous = introduced_event_notes(path, base, (record_day, kind, by))
+        reserved = Counter({(record_day, kind, by, note): count for note, count in previous.items()})
+        if reserved and reserved <= new:
+            for key in list(old):
+                if key[:3] == identity:
+                    del old[key]
+            old.update(reserved)
+        else:
+            # No transfer can excuse loss of the surviving card's own history.
+            # This also covers a move whose Git similarity pairing names a
+            # different retired card rather than the surviving id's old path.
+            return Counter()
+    return new - old
+
+
+def transfers_fit(requirements: list[Counter[AuditKey]], available: list[Counter[AuditKey]]) -> bool:
+    """Assign each retired card's entire history to one survivor, without double use."""
+    # Most merges have one destination. If several are possible, try them all:
+    # choosing the first greedily can reject a valid simultaneous pair of merges.
+    pending = [(0, available)]
+    while pending:
+        position, capacities = pending.pop()
+        if position == len(requirements):
+            return True
+        required = requirements[position]
+        for index, capacity in enumerate(capacities):
+            if required <= capacity:
+                residual = capacities.copy()
+                residual[index] = capacity - required
+                pending.append((position + 1, residual))
+    return False
 
 
 def removal_errors(version: str, base: str, scope: tuple[str, ...]) -> list[str]:
     """Dated records a commit deletes, with the path that held them (QUAL-11).
 
-    A deletion is read from Git's own diff and not from the caller's path list: the
-    shared hook lists only the paths that survive a change, so a commit that deletes
-    `COMPLAINTS.md` or a card presents it nothing to compare. Deleting the file deletes
-    every dated record it states, and deleting a card deletes its dated events. A move
-    is not a deletion: Git's similarity search finds most of them, and a card moved with
-    most of its text rewritten is found through the id of the path that carries it on,
-    which `changed_audit_events` compares against the retired path. Only a path whose
-    card no surviving path carries is a card deleted, and only then are its events gone.
-    `scope` is the pathspec the deletions are read under.
+    Git's diff supplies the deleted paths even when the hook has no surviving
+    path to check. A moved card retains its id and is checked at the new path.
+    A CARD-04 merge retires an id but must carry its protected events into one
+    surviving card; neither a pre-existing copy nor one occurrence shared by
+    two retired cards constitutes a transfer. COMPLAINTS is not a card.
     """
-    # Select every retired path before rename pairing. A move to Markdown is excused by
-    # the surviving card id below; a rename to a non-Markdown blob is still a card deletion.
     command = ["git", "diff", "--no-renames", "--name-only", "--diff-filter=D", "-z"]
     command.extend(["--cached", base] if version == "index" else [base, version])
     listing = subprocess.run([*command, "--", *scope], check=True, stdout=subprocess.PIPE, text=True).stdout
     if not listing:
         return []
     day = commit_day(version)
-    survivors = surviving_card_ids(version, base)
-    errors: list[str] = []
-    for name in listing.split("\0"):
-        if not name:
+    survivors = changed_card_sources(version, base)
+    surviving_ids = {source_identity(source) for source in survivors.values()}
+    deleted = {Path(name): previous_source(Path(name), base) for name in listing.split("\0") if name}
+    moved = {source_identity(source): path for path, source in deleted.items() if path.suffix == ".md" and source_identity(source) is not None}
+    available: list[Counter[AuditKey]] = []
+    for path, after in changed_card_sources(version, base, scope).items():
+        if path.parts[0] != "corpus":
             continue
-        path = Path(name)
+        card_id = source_identity(after)
+        earlier = path
         before = previous_source(path, base)
-        if (card_id := source_identity(before)) is not None and card_id in survivors:
+        if source_identity(before) != card_id and card_id in moved:
+            earlier = moved[card_id]
+            before = deleted[earlier]
+        # CARD-04 keeps an existing card and id, rather than creating a new card.
+        if source_identity(before) == card_id:
+            available.append(added_audit_counts(earlier, before, after, base, day))
+    errors: list[str] = []
+    pending: dict[Path, Counter[AuditKey]] = {}
+    for path, before in deleted.items():
+        card_id = source_identity(before)
+        if card_id is not None and card_id in surviving_ids:
             continue
         if path == COMPLAINTS:
             errors.extend(rewritten_complaint_records(path, before, "", day, lambda record_day, path=path: introduced_complaint_records(path, base, record_day)))
         elif path.suffix == ".md":
-            errors.extend(rewritten_audit_events(path, before, "", day, lambda identity, path=path: introduced_event_notes(path, base, identity)))
+            required = dated_audit_counts(before, day)
+            if path.parts[0] == "corpus" and card_id is not None and required and any(required <= capacity for capacity in available):
+                pending[path] = required
+            else:
+                errors.extend(rewritten_audit_events(path, before, "", day, lambda identity, path=path: introduced_event_notes(path, base, identity)))
+    if not transfers_fit(list(pending.values()), available):
+        errors.append(f"{', '.join(str(path) for path in pending)}: retired cards' dated events cannot all be transferred to surviving cards without reusing an occurrence (QUAL-11)")
     return errors
 
 
