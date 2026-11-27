@@ -44,17 +44,25 @@ audit:
     the printed page is the one the card's earlier event claimed. The durable part of the locator is
     that printed page; the file path names this machine's copy and `tmp/sources` does not survive a VM
     reset. No mathematics changed.
+- event: source-corrected
+  by: chatgpt
+  date: 2026-11-27
+  note: >-
+    The author's PDF confirms the statement and hint as §4.I Exercise 1.
+    The page and local-copy locators in the November 18 and 19 events
+    are superseded by that numbered citation (issue #186). The mathematical
+    statement and proof are unchanged.
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 4.I of Hatcher, *Algebraic Topology* (2002), printed p. 462, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+[@Hat02, §4.I, Exercise 1]
 
 If a connected CW complex $X$ retracts onto a subcomplex $A$, show that $\Sigma X \simeq \Sigma A \lor \Sigma(X/A)$.
 [One approach: Show the map $\Sigma r + \Sigma q: \Sigma X \to \Sigma A \lor \Sigma(X/A)$ induces an isomorphism on homology, where $r: X \to A$ is the retraction and $q: X \to X/A$ is the quotient map.]
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise; the argument is the card's own, following the bracketed approach Hatcher suggests on printed p. 462, and checked against that page.
+We use the map suggested in the exercise's hint.
 
 ::: pf
 
@@ -70,7 +78,7 @@ $r\circ i=\mathrm{id}_A$ because $r$ is a retraction, so $r_*\circ i_*=\mathrm{i
 For each $j$ there is a split short exact sequence $0\to\widetilde H_j(A)\xrightarrow{i_*}\widetilde H_j(X)\xrightarrow{q_*}\widetilde H_j(X/A)\to0$.
 
 ::: pf-proof
-In the long exact sequence of the pair $(X,A)$ (Theorem 2.16, p. 117) the connecting map vanishes because $i_*$ is injective, so the sequence breaks into short exact sequences; each is split by step [](#split){.pf-ref}, using that a retraction makes the connecting map zero.
+In the long exact sequence of the pair $(X,A)$ [@Hat02, Theorem 2.16] the connecting map vanishes because $i_*$ is injective, so the sequence breaks into short exact sequences; each is split by step [](#split){.pf-ref}, using that a retraction makes the connecting map zero.
 :::
 :::
 
@@ -94,7 +102,7 @@ Suspension is natural, so $(\Sigma r)_*$ and $(\Sigma q)_*$ correspond under the
 $\Sigma X\simeq\Sigma A\vee\Sigma(X/A)$.
 
 ::: pf-proof
-$X$ is connected, so $\Sigma X$ and $\Sigma A\vee\Sigma(X/A)$ are simply connected CW complexes; a map between simply connected CW complexes inducing an isomorphism on all homology groups is a homotopy equivalence (Corollary 4.33, p. 367), which step [](#F){.pf-ref} supplies.
+$X$ is connected, so $\Sigma X$ and $\Sigma A\vee\Sigma(X/A)$ are simply connected CW complexes; a map between simply connected CW complexes inducing an isomorphism on all homology groups is a homotopy equivalence [@Hat02, Corollary 4.33], which step [](#F){.pf-ref} supplies.
 :::
 :::
 

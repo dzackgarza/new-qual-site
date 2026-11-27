@@ -33,9 +33,18 @@ audit:
     a reduced word is conjugated to a cyclically reduced one, g = u v u^{-1}
     with v nonempty, and v^m is reduced and nonempty for every m >= 1, so g^m is
     never the identity. Complete; no defect.
+- event: source-corrected
+  by: chatgpt
+  date: 2026-11-27
+  note: >-
+    The infinite-order exercise is Hungerford I.9.1. Its numbered citation
+    supersedes the obsolete extraction-line locator recorded on November 6
+    (issue #186); the statement and proof are unchanged.
 ---
 
 ::: {.problem}
+[@Hun74, chapter I, §9, Exercise 1]
+
 Show that every non-identity element in a free group $F$ has infinite order.
 :::
 
