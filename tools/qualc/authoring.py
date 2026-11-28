@@ -28,27 +28,16 @@ from .tex import mark_definienda
 
 CARD_ADAPTER: TypeAdapter[Card] = TypeAdapter(Card)
 ID_FIELD = re.compile(r"^(id|'id'|\"id\")\s*:")
-# A card's dated events, whose text QUAL-11 makes a record rather than authored prose.
 AUDIT_BLOCK = re.compile(r"^(?P<indent>[ \t]*)audit:[ \t]*$", re.MULTILINE)
 TIKZCD = re.compile(r"\\begin\{tikzcd\}.*?\\end\{tikzcd\}", re.DOTALL)
-# STYLE-03: every blackboard-bold object has a semantic macro in vocabularies/macros.json,
-# so the display choice for each meaning is made once in the preamble.
 RAW_BLACKBOARD = re.compile(r"\\(?:mathbb|Bbb)(?![A-Za-z])")
-# STYLE-02: math is delimited with dollars; `\\[` (a line break with spacing) is not a delimiter.
 BACKSLASH_DELIMITER = re.compile(r"(?<!\\)\\[\[\]()]")
-# STYLE-04: a definitional equality is `\coloneqq`; `\definedas` is its alias.
 DEFINEDAS = re.compile(r"\\definedas(?![A-Za-z])")
-# STYLE-04: a bar in mathematics has one semantic macro per meaning (`\abs`, `\norm`,
-# `\cardinality`, `\st`, `\divides`, ...), so a raw bar glyph is never authored.
 BAR_GLYPHS = frozenset({"|", "\\|", "\\vert", "\\Vert", "\\lvert", "\\rvert", "\\lVert", "\\rVert"})
 BAR_SIZES = frozenset({"\\left", "\\right", "\\middle"} | {f"\\{size}{side}" for size in ("big", "Big", "bigg", "Bigg") for side in ("", "l", "r", "m")})
-# Pandoc's tex_math_dollars: `$$` displays, and `$` spans whose opener is not followed and
-# whose closer is not preceded by whitespace, and whose closer is not followed by a digit.
 MATH_SPAN = re.compile(r"\$\$(?P<display>.+?)\$\$|\$(?![\s$])(?P<inline>(?:[^$\\]|\\.)+?)(?<!\s)\$(?!\d)", re.DOTALL)
 CODE = re.compile(r"^(?P<fence>```+|~~~+).*?^(?P=fence)[ \t]*$|(?P<ticks>`+)(?!`).+?(?<!`)(?P=ticks)(?!`)", re.DOTALL | re.MULTILINE)
 TEX_TOKEN = re.compile(r"\\(?:[A-Za-z]+|.)|.", re.DOTALL)
-# A link target the wiki resolver reads as a card id: a bare name, no directory, in the
-# uppercase-prefix shape every corpus id has (`P-QJ7MD`, `E-SS1.EX-19`, `SRC-UCLA-RA-FALL-2010`).
 LINK_TARGET = re.compile(r"\[\[(?P<wiki>[^\]|#]+)|\]\((?P<markdown>[^)\s#]+)")
 CARD_ID_SHAPE = re.compile(r"^[A-Z][A-Z0-9]*-[A-Za-z0-9._-]+$")
 
@@ -63,7 +52,11 @@ class BarToken:
 
 
 def math_spans(text: str) -> list[tuple[int, int]]:
-    """Offsets of the contents of each dollar-delimited math span outside code."""
+    """Offsets of dollar-delimited math spans outside code.
+
+    Pandoc tex_math_dollars uses double dollars for displays; an inline opener
+    cannot precede whitespace, and its closer cannot follow whitespace or precede a digit.
+    """
     spans: list[tuple[int, int]] = []
     position = 0
     while (match := MATH_SPAN.search(text, position)) is not None:
@@ -122,7 +115,12 @@ def bar_tokens(math: str) -> list[BarToken]:
 
 
 def raw_notation(source: str) -> str | None:
-    """The first STYLE-04 raw form in a card or page source, or None."""
+    """The first STYLE-04 raw form in a card or page source, or None.
+
+    Definitional equality is written ``\\coloneqq``, not its alias ``\\definedas``.
+    Mathematical bars use the semantic macro for their meaning (absolute value,
+    norm, cardinality, set-builder or divisibility), not raw glyphs.
+    """
     if raw := DEFINEDAS.search(source):
         return f"{raw.group()} is written \\coloneqq (STYLE-04)"
     for start, end in math_spans(source):
@@ -161,20 +159,13 @@ class GitChange(Strict):
     version: str
 
 
-# `model.AuditEvent`'s fields, in the order a refusal names them.
 AUDIT_FIELDS = ("event", "by", "date", "note")
-# Dated records outside the corpus: the root complaints file's sections and paragraphs.
 COMPLAINTS = Path("COMPLAINTS.md")
-# The paths whose blobs the card gate validates and whose deletions it reads.
 CHECKED_PATHS = ("corpus/", "wiki/", COMPLAINTS.as_posix())
 DAY = re.compile(r"\b(\d{4}-\d{2}-\d{2})\b")
 HEADING = re.compile(r"^(?P<marks>#{1,6})\s")
-# A section record begins with its own day; a paragraph or numbered item states it
-# first in the bold or italic lead that opens it.
 SECTION_DAY = re.compile(r"^#{1,6}\s+(\d{4}-\d{2}-\d{2}):")
 NUMBERED = re.compile(r"^(?P<indent>[ \t]*)\d+\.\s")
-# The three restored section headings carry their own day mid-title. No other heading
-# is read this way: every other section record states its day first.
 RESTORED_SECTIONS: dict[str, date] = {
     "## `SRC-TEXT-HART77`: the #121 pass of 2026-11-15, the cards listed, and what the sources outside the retained sets proved": date(2026, 11, 15),
     "## `SRC-TEXT-HART77` #121: the remaining cards against the MinerU text versions, second pass (2026-11-15)": date(2026, 11, 15),
@@ -249,7 +240,8 @@ def audit_records(source: str) -> list[AuditRecord]:
 
     A card the gate accepted carries a `date` its schema parsed, so an event with no
     readable day can only come from a commit made outside the gate: it has no day to
-    compare, and the commit that touches that card reports the header defect instead.
+    compare, and card_header reports invalid YAML or schema. The text tuple follows
+    the AuditEvent fields: event, author, date and note.
     """
     match = FRONT_MATTER.match(source)
     if match is None:
@@ -257,7 +249,6 @@ def audit_records(source: str) -> list[AuditRecord]:
     try:
         front = load_front_matter(match["front"])
     except yaml.YAMLError:
-        # A header that is not YAML is `card_header`'s to report; nothing is compared here.
         return []
     events = front.get("audit") if isinstance(front, dict) else None
     if not isinstance(events, list):
@@ -327,8 +318,6 @@ def introduced_record_texts(
                     rewritten += 1
                 else:
                     unused.remove(match)
-            # The remaining old records pair one-to-one with replacement texts. Count growth
-            # leaves at least this many new records, and exactly those left over are introduced.
             for index in sorted(unused)[:rewritten]:
                 unused.remove(index)
             introduced += Counter(current[index] for index in sorted(unused))
@@ -384,7 +373,6 @@ def unmatched_record_indices(
     restored: set[RecordIdentity] = set()
     for identity in lost_identities:
         introduced_texts = introduced(identity)
-        # No earlier introduction is no evidence that replacement text is a restoration.
         if introduced_texts and introduced_texts <= after_texts.get(identity, Counter()):
             restored.add(identity)
     ambiguous = [identity for identity in lost_identities if identity not in restored and (before_counts[identity] > 1 or after_counts[identity] > 1)]
@@ -607,14 +595,14 @@ def merge_authored_paths(commit: str, parents: list[str]) -> list[str]:
     `git diff-tree -c` lists the paths that differ from every parent (git-diff-tree,
     "combined diff format"). Of those, a path that Git's own automatic merge of the two
     parents (`git merge-tree --write-tree`, git-merge-tree) resolves to the same blob was
-    merged textually, each hunk taken from one side, so it is carried too. What is left
+    merged textually, each hunk taken from one side, so it is carried too. Git writes
+    the automatic tree even on exit status 1, with conflict markers. What is left
     is a conflict resolution or an edit made in the merge, and that is the merge's own.
     """
     combined = subprocess.run(["git", "diff-tree", "-c", "-r", "--no-commit-id", "--name-only", "-z", commit, "--", *CHECKED_PATHS], check=True, stdout=subprocess.PIPE, text=True).stdout
     paths = [name for name in combined.split("\0") if name]
     if len(parents) != 2 or not paths:
         return paths
-    # Exit status 1 is a conflicted automatic merge; its tree, with markers, is still written.
     automatic = subprocess.run(["git", "merge-tree", "--write-tree", *parents], stdout=subprocess.PIPE, text=True)
     if automatic.returncode not in (0, 1):
         raise ValueError(f"git merge-tree could not merge the parents of {commit}")
@@ -662,122 +650,155 @@ def version_source(path: Path, version: str) -> str:
     return subprocess.run(["git", "show", f"{revision}:{path.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout
 
 
-def surviving_card_ids(version: str, base: str) -> set[str]:
-    """The card ids this version carries at the Markdown paths it keeps, adds or renames to.
-
-    A card moved with most of its text rewritten falls below Git's similarity threshold,
-    so the move is recorded as a deletion and an addition: the added Markdown path
-    carries the card, and the deletion is the other half of the move rather than a card
-    deleted. A non-Markdown blob cannot carry on a card or shield its deleted events:
-    audit comparison reads Markdown cards only.
-    """
-    command = ["git", "diff", "--find-renames", "--name-status", "-z"]
+def changed_card_sources(version: str, base: str, scope: tuple[str, ...] = ("corpus/", "wiki/"), *, previous: bool = False) -> dict[Path, str]:
+    """Changed Markdown card blobs on either side of the diff, without similarity pairing."""
+    command = ["git", "diff", "--no-renames", "--name-only", "--diff-filter=DMT" if previous else "--diff-filter=ACMT", "-z"]
     command.extend(["--cached", base] if version == "index" else [base, version])
-    fields = subprocess.run([*command, "--", "corpus/", "wiki/"], check=True, stdout=subprocess.PIPE, text=True).stdout.split("\0")
-    ids: set[str] = set()
-    index = 0
-    while index < len(fields) and fields[index]:
-        status = fields[index]
-        if status[0] in "RC":
-            path = Path(fields[index + 2])
-            index += 3
-        else:
-            path = Path(fields[index + 1])
-            index += 2
-        if status[0] == "D" or path.suffix != ".md":
+    names = subprocess.run([*command, "--", *scope], check=True, stdout=subprocess.PIPE, text=True).stdout
+    cards: dict[Path, str] = {}
+    for name in names.split("\0"):
+        if not name:
             continue
-        if (card_id := source_identity(version_source(path, version))) is not None:
-            ids.add(card_id)
-    return ids
+        path = Path(name)
+        if path.suffix == ".md" and path.parts[0] in ("corpus", "wiki"):
+            source = previous_source(path, base) if previous else version_source(path, version)
+            if source_identity(source) is not None:
+                cards[path] = source
+    return cards
+
+
+AuditKey = tuple[date, str, str, str]
+
+
+def dated_audit_counts(source: str, day: date) -> Counter[AuditKey]:
+    """Protected events, counting repeated identical records separately."""
+    return Counter(
+        (record.day, record.text[0], record.text[1], _folded(record.text[3]))
+        for record in audit_records(source)
+        if record.day is not None and record.day < day
+    )
+
+
+def added_audit_counts(path: Path, before: str, after: str, base: str, day: date) -> Counter[AuditKey]:
+    """The surviving card's new records after reserving its own history.
+
+    Restored occurrences belong to the survivor; none may also pay for a retired
+    card. A survivor that loses its own history has no transfer capacity.
+    """
+    old = dated_audit_counts(before, day)
+    new = dated_audit_counts(after, day)
+    changed = {key[:3] for key in old - new}
+    for identity in changed:
+        record_day, kind, by = identity
+        previous = introduced_event_notes(path, base, (record_day, kind, by))
+        reserved = Counter({(record_day, kind, by, note): count for note, count in previous.items()})
+        if reserved and reserved <= new:
+            for key in list(old):
+                if key[:3] == identity:
+                    del old[key]
+            old.update(reserved)
+        else:
+            return Counter()
+    return new - old
+
+
+def transfers_fit(requirements: list[Counter[AuditKey]], available: list[Counter[AuditKey]]) -> bool:
+    """Assign each retired card's entire history to one survivor, without double use.
+
+    Consider all sufficient destinations; a greedy first choice may wrongly reject
+    simultaneous merges.
+    """
+    pending = [(0, available)]
+    while pending:
+        position, capacities = pending.pop()
+        if position == len(requirements):
+            return True
+        required = requirements[position]
+        for index, capacity in enumerate(capacities):
+            if required <= capacity:
+                residual = capacities.copy()
+                residual[index] = capacity - required
+                pending.append((position + 1, residual))
+    return False
 
 
 def removal_errors(version: str, base: str, scope: tuple[str, ...]) -> list[str]:
     """Dated records a commit deletes, with the path that held them (QUAL-11).
 
-    A deletion is read from Git's own diff and not from the caller's path list: the
-    shared hook lists only the paths that survive a change, so a commit that deletes
-    `COMPLAINTS.md` or a card presents it nothing to compare. Deleting the file deletes
-    every dated record it states, and deleting a card deletes its dated events. A move
-    is not a deletion: Git's similarity search finds most of them, and a card moved with
-    most of its text rewritten is found through the id of the path that carries it on,
-    which `changed_audit_events` compares against the retired path. Only a path whose
-    card no surviving path carries is a card deleted, and only then are its events gone.
-    `scope` is the pathspec the deletions are read under.
+    Git's diff supplies the deleted paths even when the hook has no surviving
+    path to check. An id can also be retired when its old path is reused.
+    A moved card retains its id and is checked at the new path.
+    A CARD-04 merge retires an id but must carry its protected events into one
+    surviving card; neither a pre-existing copy nor one occurrence shared by
+    two retired cards constitutes a transfer. COMPLAINTS is not a card.
     """
-    # Select every retired path before rename pairing. A move to Markdown is excused by
-    # the surviving card id below; a rename to a non-Markdown blob is still a card deletion.
     command = ["git", "diff", "--no-renames", "--name-only", "--diff-filter=D", "-z"]
     command.extend(["--cached", base] if version == "index" else [base, version])
     listing = subprocess.run([*command, "--", *scope], check=True, stdout=subprocess.PIPE, text=True).stdout
-    if not listing:
+    old_scoped = changed_card_sources(version, base, scope, previous=True)
+    if not listing and not old_scoped:
         return []
     day = commit_day(version)
-    survivors = surviving_card_ids(version, base)
-    errors: list[str] = []
-    for name in listing.split("\0"):
-        if not name:
+    survivors = changed_card_sources(version, base)
+    surviving_ids = {source_identity(source) for source in survivors.values()}
+    deleted = {Path(name): previous_source(Path(name), base) for name in listing.split("\0") if name}
+    deleted.update({path: source for path, source in old_scoped.items() if source_identity(source) not in surviving_ids})
+    if not deleted:
+        return []
+    predecessors = {source_identity(source): (path, source) for path, source in changed_card_sources(version, base, previous=True).items()}
+    available: list[Counter[AuditKey]] = []
+    for path, after in changed_card_sources(version, base, scope).items():
+        if path.parts[0] != "corpus":
             continue
-        path = Path(name)
-        before = previous_source(path, base)
-        if (card_id := source_identity(before)) is not None and card_id in survivors:
+        card_id = source_identity(after)
+        if card_id in predecessors:
+            earlier, before = predecessors[card_id]
+            available.append(added_audit_counts(earlier, before, after, base, day))
+    errors: list[str] = []
+    pending: dict[Path, Counter[AuditKey]] = {}
+    for path, before in deleted.items():
+        card_id = source_identity(before)
+        if card_id is not None and card_id in surviving_ids:
             continue
         if path == COMPLAINTS:
             errors.extend(rewritten_complaint_records(path, before, "", day, lambda record_day, path=path: introduced_complaint_records(path, base, record_day)))
         elif path.suffix == ".md":
-            errors.extend(rewritten_audit_events(path, before, "", day, lambda identity, path=path: introduced_event_notes(path, base, identity)))
+            required = dated_audit_counts(before, day)
+            if path.parts[0] == "corpus" and card_id is not None and required and any(required <= capacity for capacity in available):
+                pending[path] = required
+            else:
+                errors.extend(rewritten_audit_events(path, before, "", day, lambda identity, path=path: introduced_event_notes(path, base, identity)))
+    if not transfers_fit(list(pending.values()), available):
+        errors.append(f"{', '.join(str(path) for path in pending)}: retired cards' dated events cannot all be transferred to surviving cards without reusing an occurrence (QUAL-11)")
     return errors
-
-
-def changed_paths(version: str, base: str) -> tuple[dict[Path, Path], list[Path]]:
-    """Git's rename records and deletions for one version's diff against `base`.
-
-    A rename is one change at its new path, so the earlier text of a moved card is read
-    from the path Git names as its source. The deleted paths let a move whose content
-    changed below Git's similarity threshold keep the earlier text through the card's
-    own id.
-    """
-    command = ["git", "diff", "--find-renames", "--name-status", "-z"]
-    command.extend(["--cached", base] if version == "index" else [base, version])
-    listing = subprocess.run([*command, "--", "corpus/", "wiki/"], check=True, stdout=subprocess.PIPE, text=True).stdout
-    fields = listing.split("\0")
-    moves: dict[Path, Path] = {}
-    deleted: list[Path] = []
-    index = 0
-    while index < len(fields) and fields[index]:
-        status = fields[index]
-        if status[0] in "RC":
-            if status[0] == "R":
-                moves[Path(fields[index + 2])] = Path(fields[index + 1])
-            index += 3
-        else:
-            if status[0] == "D":
-                deleted.append(Path(fields[index + 1]))
-            index += 2
-    return moves, deleted
 
 
 def changed_audit_events(selected: list[tuple[GitChange, str]], base: str) -> list[str]:
-    """Refuse a commit that rewrites an audit event dated before it (QUAL-11)."""
+    """Validate each surviving id's own history independently of transfers.
+
+    Another id previously occupying the path is moved or retired; that id has a
+    separate obligation, rather than being this card's predecessor. Restoration
+    is checked against the actual predecessor's path history.
+    """
     errors: list[str] = []
     for version in dict.fromkeys(change.version for change, _ in selected):
         day = commit_day(version)
-        moves, deleted = changed_paths(version, base)
-        retired = {card_id: path for path in deleted if (card_id := source_identity(previous_source(path, base))) is not None}
+        predecessors = {source_identity(source): (path, source) for path, source in changed_card_sources(version, base, previous=True).items()}
         for change, source in selected:
             if change.version != version:
                 continue
-            earlier = moves.get(change.path, change.path)
-            if earlier == change.path and not previous_source(earlier, base) and (card_id := source_identity(source)) is not None:
-                earlier = retired.get(card_id, change.path)
-            errors.extend(rewritten_audit_events(change.path, previous_source(earlier, base), source, day, lambda identity, path=change.path: introduced_event_notes(path, base, identity)))
+            card_id = source_identity(source)
+            if card_id in predecessors:
+                earlier, before = predecessors[card_id]
+            else:
+                earlier = change.path
+                before = previous_source(earlier, base)
+                if source_identity(before) is not None and source_identity(before) != card_id:
+                    continue
+            errors.extend(rewritten_audit_events(change.path, before, source, day, lambda identity, path=earlier: introduced_event_notes(path, base, identity)))
     return errors
 
 
-# The audit event that records a correction of a card's mathematics (issue #111). It is
-# the machine-readable marker the acceptance criterion needs: a corrected claim is
-# settled only by a certificate of it, so the refusal belongs where the correction is
-# recorded rather than in a reviewer's recollection, and a change that records one on a
-# card no row covers for its whole statement does not commit.
 SOLUTION_CORRECTED = "solution-corrected"
 REGISTRY = Path("proofs/README.md")
 
@@ -847,6 +868,9 @@ def check_git_changes(changes: list[GitChange], base: str, versions: tuple[str, 
 
     Diagrams are compiled here because the site build is the only other place
     that compiles them, and a malformed one otherwise first fails the deploy.
+    Dated audit events (QUAL-11) are historical records, not authored prose.
+    STYLE-02 requires dollar delimiters; STYLE-03 requires the semantic macro for
+    blackboard-bold objects in vocabularies/macros.json, where display choices live.
 
     `base` is the revision every changed blob is compared with: the parent of the staged
     index, or the base of an outgoing range. The caller names it, because the two
@@ -868,7 +892,6 @@ def check_git_changes(changes: list[GitChange], base: str, versions: tuple[str, 
         try:
             if change.path.parts[0] == "corpus":
                 card_header(source, change.path)
-                # A header that parses is the one holding the events this commit may not rewrite.
                 selected.append((change, source))
             for diagram in TIKZCD.findall(source):
                 compile_tikzcd_block(diagram)
@@ -918,8 +941,10 @@ def dangling_references(revision: str) -> list[str]:
 
     The full build reports the same references (index.validate: relations and collection
     members; emit._manifest_card: guide items; wiki.resolve_links: page links) after Pandoc
-    has read every card. Here only front matter is parsed, so a card deleted by a merge
-    is caught before the push instead of in the deploy.
+    has read every card. Only the id line is read from most headers; a header with
+    references to other cards is validated whole. Link targets are bare card ids
+    with an uppercase prefix (for example P-QJ7MD, E-SS1.EX-19, or SRC-UCLA-RA-FALL-2010).
+    A card deleted by a merge is caught before the push instead of in the deploy.
     """
     sources = tree_sources(revision)
     ids: set[str] = set()
@@ -927,8 +952,6 @@ def dangling_references(revision: str) -> list[str]:
     for path, text in sources.items():
         if path.parts[0] != "corpus" or (match := FRONT_MATTER.match(text)) is None:
             continue
-        # Only the id line is read from most headers, as `identity` does; a header that
-        # names other cards is validated whole. Other header defects are the diff check's.
         lines = match["front"].splitlines()
         ids.update(yaml.load(line, Loader=yaml.CSafeLoader)["id"] for line in lines if ID_FIELD.match(line))
         if "kind: collection" in lines or any(line.startswith("relations:") and line != "relations: []" for line in lines):
@@ -1165,6 +1188,11 @@ def _refuse_secondary_worktrees() -> None:
 
 
 def main(argv: list[str] | None = None) -> int:
+    """Authoring CLI. The push payload omits deletions, so replay HEAD even if empty.
+
+    The content-only commit validates the working-tree path against its base blob
+    before git commit --only preserves the other staged work.
+    """
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
     commands.add_parser("check-staged", help="validate changed card YAML and schema from the Git index")
@@ -1198,8 +1226,6 @@ def main(argv: list[str] | None = None) -> int:
                 raise ValueError("Git blob versions must match the requested validation mode")
             if args.mode == "staged":
                 return check_git_changes(changes, head_commit(), ("index",))
-            # The shared hook's payload omits deletions, and the pushed tip is HEAD on main (QUAL-09),
-            # so the tip is replayed even when the payload holds no path at all.
             versions = list(dict.fromkeys([*[change.version for change in changes], "HEAD"]))
             failed = 0
             for version in versions:
@@ -1252,9 +1278,6 @@ def main(argv: list[str] | None = None) -> int:
         elif args.command == "commit":
             _refuse_secondary_worktrees()
             subprocess.run(["git", "--literal-pathspecs", "ls-files", "--error-unmatch", "--", relative], check=True, stdout=subprocess.DEVNULL)
-            # --only commits this working-tree path, preserving other staged work.
-            # Validate that same source before taking the content-only commit route; the
-            # comparison reads the base blob by its repository-relative path.
             corpus.header(path)
             rewritten = rewritten_audit_events(
                 Path(relative),
