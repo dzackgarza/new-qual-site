@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://www.wiley.com/en-us/Abstract+Algebra%2C+3rd+Edition-p-9780471433347
+- https://books.google.com/books?id=KIGbCgAAQBAJ
 source:
   source_kind: textbook
   textbook: dummit-foote
@@ -24,3 +24,10 @@ source:
     - id: P-MMAQ-WV7QEYSPXM
       comment: 5.5.6
 ---
+
+::: {.remark}
+The document is David S. Dummit and Richard M. Foote, *Abstract Algebra*,
+3rd edition, Wiley, ISBN 978-0-471-43334-7. The book-specific Google Books
+record identifies that same edition and ISBN; the publisher product URL
+returned HTTP 403.
+:::
